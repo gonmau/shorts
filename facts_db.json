@@ -1360,7 +1360,7 @@
     "twist": "공공 달력에는 이름 날이 표시되어 있어, 직장 동료도 서로의 이름 날을 쉽게 확인할 수 있습니다.",
     "verify_note": "Czech name day tradition, české jmeniny, name day celebration Czech Republic",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "체코에서는 생일보다 이름 날을 더 크게 축하한다는 사실, 알고 계셨나요? 체코 전역에서 매일이 누군가의 이름 날이에요. 친구와 가족은 그 날을 맞아 카드와 작은 선물을 건네고, 축하의 말을 전합니다. 많은 사람들은 생일보다 이름 날에 파티를 열고 케이크까지 준비합니다. 흥미롭게도 공공 달력에 모든 이름 날이 표시돼 있어, 직장 동료끼리도 서로의 이름 날을 손쉽게 확인할 수 있답니다. 이렇게 이름 날은 일상 속 작은 축제로 자리 잡고 있습니다. 오늘도 누군가의 이름 날을 기억하고, 따뜻한 인사를 건네보세요! 구독과 좋아요, 알림 설정도 잊지 마세요!",
     "title_line1": "체코 이름날 축하",
     "title_line2": "생일보다 크게?",
@@ -1389,7 +1389,46 @@
       "friends celebrating with balloons",
       "family around table cake",
       "Czech village street market"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0062_Czech Republic_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0062_Czech Republic_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Irina_kukuts",
+        "page": "https://pixabay.com/photos/prague-zoo-giraffe-animals-nature-4484517/"
+      },
+      {
+        "scene": 2,
+        "user": "BenediktGeyer",
+        "page": "https://pixabay.com/photos/business-card-hand-jacket-2918333/"
+      },
+      {
+        "scene": 3,
+        "user": "kaboompics",
+        "page": "https://pixabay.com/photos/new-year-background-organizer-791939/"
+      },
+      {
+        "scene": 4,
+        "user": "ptksgc",
+        "page": "https://pixabay.com/photos/women-friends-young-friendship-2143813/"
+      },
+      {
+        "scene": 5,
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/birthday-cake-candles-bithday-cake-2338813/"
+      },
+      {
+        "scene": 6,
+        "user": "Leonhard_Niederwimmer",
+        "page": "https://pixabay.com/photos/christmas-market-budweis-budejovice-7664171/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0062_Czech Republic.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Madagascar",
@@ -1399,7 +1438,7 @@
     "twist": "심지어 레무르를 사진으로만 촬영해도, 보호구역 내에서는 플래시 사용이 금지되어 있어 몰래 촬영이 어렵습니다.",
     "verify_note": "Madagascar lemur pet ownership law, Madagascar wildlife protection act lemur permit",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "마다가스카르에서는 레무르를 애완동물로 키우려면 특별 허가가 필요합니다! 이 섬은 레무르가 자연에 사는 유일한 나라라서, 멸종 위기 보호법에 따라 레무르를 잡거나 사육하려면 환경부가 발급하는 허가증이 반드시 있어야 합니다. 허가 없이 키우면 높은 벌금과 함께 레무르를 반드시 반환하라는 명령을 받게 됩니다. 또 한 가지 흥미로운 점은, 보호구역 안에서는 플래시를 사용한 촬영이 금지돼 레무르를 사진으로만 찍는 것도 쉽지 않다는 겁니다. 그래서 자연 그대로의 모습을 보려면 인내가 필요하죠. 오늘도 자연을 지키는 법을 기억해 주세요! 구독과 좋아요, 알림 설정도 잊지 마세요!",
     "title_line1": "마다가스카르 레무르 규제",
     "title_line2": "허가 없이 키우면?",
@@ -1428,7 +1467,46 @@
       "No flash sign reserve",
       "Lemur perched on tree branch",
       "Madagascar coastal cliff sunrise"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0063_Madagascar_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0063_Madagascar_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "RoyBuri",
+        "page": "https://pixabay.com/photos/lemur-ring-tailed-lemur-wildlife-3394482/"
+      },
+      {
+        "scene": 2,
+        "user": "MarkThomas",
+        "page": "https://pixabay.com/photos/ring-tailed-lemur-lemur-catta-1809663/"
+      },
+      {
+        "scene": 3,
+        "user": "Chuotanhls",
+        "page": "https://pixabay.com/photos/vietnam-couple-love-lovers-8560196/"
+      },
+      {
+        "scene": 4,
+        "user": "anaterate",
+        "page": "https://pixabay.com/photos/sign-traffic-sign-caution-ducks-2828278/"
+      },
+      {
+        "scene": 5,
+        "user": "NickyPe",
+        "page": "https://pixabay.com/photos/ring-tailed-lemur-lemur-group-cub-6954076/"
+      },
+      {
+        "scene": 6,
+        "user": "ddzphoto",
+        "page": "https://pixabay.com/photos/rock-beach-ocean-coast-sky-rocks-4739036/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0063_Madagascar.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Finland",
@@ -1438,7 +1516,71 @@
     "twist": "게다가 사우나 안에서는 스마트폰 사용도 금지라, 온전한 ‘디지털 디톡스’가 강제된다!",
     "verify_note": "Finland sauna etiquette nudity rule",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "핀란드 사우나에서는 수영복을 입고 들어가면 큰일 난다! 여기서는 사우나를 완전한 ‘벌거벗은 공간’으로 생각합니다. 옷이나 수영복을 입고 들어가면 다른 사람에게 불쾌감을 주는 행동으로 간주돼, 대부분의 공공 사우나는 전면 금지하고 있죠. 사우나는 땀을 흘리며 몸을 정화하는 순수한 장소이기 때문에, 옷은 집에 두고 온몸을 그대로 내보이는 것이 원칙입니다. 그리고 사우나 안에서는 스마트폰 사용도 금지됩니다. 그래서 온전히 몸과 마음을 쉬게 하는 ‘디지털 디톡스’가 강제로 이루어지는 셈이죠. 이런 특별한 에티켓을 지키면, 핀란드 사람들과 함께 편안하고 진정한 사우나 문화를 경험할 수 있습니다. 지금 바로 시도해 보세요!",
+    "title_line1": "핀란드 사우나 금수",
+    "title_line2": "수영복이면퇴장?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "수영복 *금지*!"
+      },
+      {
+        "s": 2,
+        "text": "완전 *벌거벗음*!"
+      },
+      {
+        "s": 4,
+        "text": "옷은 *집에* 두고"
+      }
+    ],
+    "image_queries": [
+      "Finnish sauna interior",
+      "naked sauna bench Finland",
+      "Helsinki public sauna",
+      "steam rising wooden sauna",
+      "phone free sauna",
+      "Finnish sauna stone heater"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0064_Finland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0064_Finland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "EsaRiutta",
+        "page": "https://pixabay.com/photos/sauna-finnish-heat-steam-hot-1265002/"
+      },
+      {
+        "scene": 2,
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/river-sauna-cottage-forest-finland-6787137/"
+      },
+      {
+        "scene": 3,
+        "user": "jennyfriedrichs",
+        "page": "https://pixabay.com/photos/wood-house-tree-garden-sauna-3336957/"
+      },
+      {
+        "scene": 4,
+        "user": "Zerocool",
+        "page": "https://pixabay.com/photos/woman-sauna-spa-wellness-beauty-936549/"
+      },
+      {
+        "scene": 5,
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/boy-young-phone-relaxation-spring-5207984/"
+      },
+      {
+        "scene": 6,
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-heater-8238837/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0064_Finland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Iceland",
@@ -1448,7 +1590,32 @@
     "twist": "심지어 ‘Apple’ 같은 영문 이름은 아이슬란드식 ‘Aplí’ 로 바꾸어야 할 수도 있다!",
     "verify_note": "Iceland naming committee law allowed names",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아이슬란드에서는 아기의 이름을 정부에 승인 받아야 해요! 아이슬란드에는 ‘이름 위원회’가 존재합니다. 새로 짓는 이름이 아이슬란드 알파벳과 전통에 맞는지 꼼꼼히 검토하죠. 외국식 이름이나 특수문자, 그리고 ‘C’·‘Q’ 같은 글자는 사용이 제한됩니다. 허가받지 않은 이름은 공식 서류에 기재할 수 없어요. 그래서 예를 들어 ‘Apple’ 같은 영문 이름을 쓰고 싶다면, 아이슬란드식으로 ‘Aplí’ 로 바꾸어야 할 수도 있습니다. 이렇게 이름 하나까지도 문화와 언어를 보호하려는 노력이 있답니다. 아이슬란드의 독특한 이름 제도, 궁금하시다면 좋아요와 구독 잊지 마세요!",
+    "title_line1": "아이슬란드 이름 승인제",
+    "title_line2": "내 이름도 바뀔까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "이름 *승인* 필수!"
+      },
+      {
+        "s": 4,
+        "text": "*특수* 문자 금지"
+      },
+      {
+        "s": 6,
+        "text": "영문 이름 *변형*"
+      }
+    ],
+    "image_queries": [
+      "Icelandic countryside landscape",
+      "Reykjavik colorful houses street",
+      "Iceland parliament building exterior",
+      "ancient Icelandic rune stone",
+      "paper handwritten name list",
+      "old wooden desk ink bottle"
+    ]
   },
   {
     "country": "Singapore",
@@ -1458,7 +1625,36 @@
     "twist": "하지만 무설탕 캔디를 씹는 건 합법이라, 껌 대신 캔디를 씹는 사람들이 늘었다!",
     "verify_note": "Singapore chewing gum ban 1992",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "싱가포르에서는 껌을 사면 벌금을 물어요! 1992년, 정부는 공공장소 청결을 위해 껌 판매를 전면 금지했어요. 거리나 지하철에 남은 껌 자국을 없애기 위한 조치였죠. 그래서 일반 가게에서는 껌을 살 수 없고, 치료용 껌도 의사 처방이 있어야 약국에서만 구입할 수 있습니다. 그런데 흥미로운 점은, 무설탕 캔디를 씹는 건 여전히 합법이라는 사실이에요. 그래서 많은 사람들이 껌 대신 캔디를 씹으며 스트레스를 풀고 있답니다. 싱가포르의 깨끗한 거리 비결, 여러분도 한번 생각해 보세요!  \n\n더 알고 싶다면 구독과 좋아요 잊지 마세요!",
+    "title_line1": "싱가포르껌금지",
+    "title_line2": "벌금대신캔디?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "껌 사면 *벌금*!"
+      },
+      {
+        "s": 2,
+        "text": "1992년 *금지* 껌"
+      },
+      {
+        "s": 5,
+        "text": "*무설탕* 캔디"
+      },
+      {
+        "s": 7,
+        "text": "깨끗한 거리 *비결*"
+      }
+    ],
+    "image_queries": [
+      "Singapore street cleanliness",
+      "Marina Bay subway platform",
+      "Singapore pharmacy candy aisle",
+      "gum wrapper on sidewalk",
+      "sugar-free candy pieces",
+      "person chewing candy"
+    ]
   },
   {
     "country": "Namibia",
