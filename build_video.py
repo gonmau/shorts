@@ -617,6 +617,8 @@ def build_one(idx, item):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--index", type=int, default=None)
+    parser.add_argument("--start", type=int, default=0,
+                        help="이 번호 이후의 소재만 처리 (PC에서 이미 만든 옛 소재 건너뛰기)")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--channel", default=LAYOUT_CFG["channel"], help="채널명")
     parser.add_argument("--handle", default=LAYOUT_CFG["handle"], help="@핸들")
@@ -646,7 +648,14 @@ def main():
         targets = [(args.index, items[args.index])]
     else:
         for idx, item in enumerate(items):
-            if item.get("status_tts_v2") == "done" and item.get("status_v6") != "video_done":
+            if idx < args.start:
+                continue
+            if (
+                item.get("status_tts_v2") == "done"
+                and item.get("status_v6") != "video_done"
+                and not item.get("video_path_v6")
+                and get_audio_path(item, idx)  # 오디오가 실제로 있는 소재만
+            ):
                 targets.append((idx, item))
 
         if args.limit:

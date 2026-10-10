@@ -174,6 +174,8 @@ def main():
                         help="항목당 최대 대기 시간(초). 기본 90")
     parser.add_argument("--retries", type=int, default=3,
                         help="항목당 재시도 횟수. 기본 3")
+    parser.add_argument("--start", type=int, default=0,
+                        help="이 번호 이후의 소재만 처리 (PC에서 이미 만든 옛 소재 건너뛰기)")
     parser.add_argument("--force", action="store_true",
                         help="이미 TTS가 끝난 항목도 다시 생성")
     args = parser.parse_args()
@@ -188,6 +190,10 @@ def main():
     else:
         targets = []
         for i, f in enumerate(db):
+            if i < args.start:
+                continue
+            if f.get("video_path_v6"):
+                continue  # 영상이 이미 만들어진 소재
             if f.get("status") not in ("scripted", "tts_done"):
                 continue  # video_done 등 이미 영상까지 끝난 항목은 건너뜀
             if f.get("status_v6") == "video_done":
