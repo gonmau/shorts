@@ -967,10 +967,16 @@
     "twist": "심지어 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함(≈ 140,000 USD)의 벌금을 부과받을 수 있습니다.",
     "verify_note": "UAE exotic animal license law, Dubai municipality wildlife permit",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "두바이에서는 코끼리를 집에 들이고 싶다면, 먼저 면허를 받아야 합니다! 아랍에미리트에서는 사자, 호랑이, 코끼리 같은 대형 야생동물을 개인이 키우려면 환경부와 동물복지부의 허가를 꼭 받아야 해요. 허가 없이 이런 동물을 기르면 높은 벌금은 물론, 동물까지 압류당할 수 있습니다. 그리고 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함, 즉 약 140,000 달러에 달하는 벌금을 부과받게 됩니다. 이렇게 엄격한 규제는 동물 복지와 공공 안전을 동시에 지키기 위한 것이죠. 여러분도 혹시 특이한 애완동물을 생각하고 있다면, 먼저 해당 국가의 허가 절차를 꼭 확인하세요! 구독과 좋아요, 알림 설정까지 잊지 마세요.",
     "title_line1": "두바이코끼리면허",
-    "title_line2": "벌금·압류 위험!"
+    "title_line2": "벌금·압류 위험!",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0056_United Arab Emirates_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0056_United Arab Emirates_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0056_United Arab Emirates.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "India",
@@ -993,7 +999,8 @@
     "twist": "하지만 같은 법에 따라, 집에서 만든 전통 와인인 ‘토카이’를 야외 피크닉에 가져가면 예외가 적용됩니다.",
     "verify_note": "Romania public drinking ban 2017, Romanian Penal Code article on public intoxication",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "루마니아에서는 공원에선 술을 마시면 바로 티켓을 받는다니, 믿어지나요? 2017년부터 수도 부쿠레슈티와 주요 도시의 공원·광장·거리에서는 알코올 음료를 마시는 것이 금지됐습니다. 이 규정을 어기면 현행법에 따라 150에서 300레우, 즉 약 30–60 달러의 벌금을 물게 됩니다. 그런데 흥미로운 점이 하나 더 있습니다. 같은 법에 따르면, 집에서 직접 만든 전통 와인, ‘토카이’를 야외 피크닉에 가져갈 때는 예외가 적용된다고 합니다. 즉, 직접 만든 토카이 한 병이면 공원에서도 마실 수 있다는 것이죠. 루마니아의 공공 음주 규제, 생각보다 세밀하죠? 더 궁금한 문화 이야기가 있다면 좋아요와 구독 잊지 마세요!"
   },
   {
     "country": "United States",
