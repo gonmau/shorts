@@ -19,8 +19,8 @@
 name: culture-shorts-pipeline
 
 on:
- # schedule:
- #   - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
+  schedule:
+    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
   workflow_dispatch:
     inputs:
       stage:
@@ -154,24 +154,4 @@ jobs:
           ART_URL: ${{ steps.art.outputs.artifact-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/review.txt
-        run: |
-          python - <<'PY'
-          import glob, json, os, urllib.request
-          st, stage = os.environ["JOB_STATUS"], os.environ["STAGE"]
-          vids = sorted(glob.glob("videos/*.mp4"))
-          if st != "success":
-              msg = f"❌ 쇼츠 파이프라인 실패 ({stage})\n로그: {os.environ['RUN_URL']}"
-          elif stage == "prepare":
-              msg = f"📝 준비 완료 - review.txt에서 제목/핵심 문구를 고친 뒤 render 실행\n{os.environ['REVIEW_URL']}\n실행: {os.environ['RUN_URL']}"
-          else:
-              art = os.environ.get("ART_URL") or os.environ["RUN_URL"]
-              names = "\n".join("- " + v.split("/")[-1] for v in vids[:10]) or "(생성된 영상 없음)"
-              msg = f"✅ 영상 {len(vids)}개 완료 ({stage})\n{names}\n다운로드(14일 보관): {art}\n실행: {os.environ['RUN_URL']}"
-          req = urllib.request.Request(os.environ["DISCORD_WEBHOOK_URL"],
-              data=json.dumps({"content": msg[:1900]}).encode(),
-              headers={"Content-Type": "application/json", "User-Agent": "culture-shorts-bot"})
-          try:
-              urllib.request.urlopen(req, timeout=20)
-          except Exception as e:
-              print("디스코드 전송 실패:", e)
-          PY
+        run: python notify_discord.py
