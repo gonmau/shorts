@@ -8,6 +8,8 @@ from pathlib import Path
 
 from groq import Groq, RateLimitError
 
+from common import split_sentences, strip_marks, pending_render
+
 
 DB_FILE = Path("facts_db.json")
 
@@ -374,6 +376,224 @@ def generate_title(client, models, fact, narration, retries=3):
     return None
 
 
+
+# ============================================================
+# 핵심 문구(highlights) / 이미지 검색어(image_queries)
+# ============================================================
+
+HL_MAX_CHARS = 16  # 프롬프트는 12자 이내를 요청하되 16자까지 허용
+
+
+def extract_json(text):
+    """응답에서 JSON(객체 또는 배열)을 뽑는다. 실패하면 None."""
+    if not text:
+        return None
+    text = text.strip()
+    for open_c, close_c in (("{", "}"), ("[", "]")):
+        a, b = text.find(open_c), text.rfind(close_c)
+        if a != -1 and b > a:
+            try:
+                return json.loads(text[a:b + 1])
+            except json.JSONDecodeError:
+                continue
+    return None
+
+
+def ask_models(client, models, system, prompt, tokens, retries, parse):
+    """모델을 순서대로 시도해 parse(text)가 None이 아닌 첫 결과를 돌려준다."""
+    for model in models:
+        for attempt in range(1, retries + 1):
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": system},
+                        {"role": "user", "content": prompt},
+                    ],
+                    temperature=0.7,
+                    **completion_kwargs(model, tokens),
+                )
+                if not response.choices:
+                    continue
+                result = parse(response.choices[0].message.content or "")
+                if result:
+                    return result
+            except RateLimitError as e:
+                if attempt >= retries:
+                    break
+                time.sleep(get_retry_seconds(e, attempt))
+            except Exception:
+                if attempt >= retries:
+                    break
+                time.sleep(min(2.0 * attempt, 10.0))
+    return None
+
+
+def build_highlight_prompt(fact, narration):
+    sents = split_sentences(narration)
+    numbered = "\n".join(f"{i}. {x}" for i, x in enumerate(sents, 1))
+    return f"""
+당신은 한국어 유튜브 쇼츠의 화면 자막 디자이너입니다.
+아래 대본을 읽고, 영상 화면에 크게 띄울 '핵심 문구'를 뽑으세요.
+
+[국가] {fact.get("country", "")}
+[주제] {fact.get("topic", "")}
+
+[대본 - 문장 번호]
+{numbered}
+
+규칙:
+1. 핵심 문구는 3~6개입니다. 대본 흐름 순서대로, 문장 번호(s)는 오름차순이며 같은 번호를 두 번 쓰지 않습니다.
+2. 각 문구는 공백 포함 12자 이내로 짧게, 한글로만 씁니다. (영어 알파벳 금지, 숫자는 허용)
+3. 대본 문장을 그대로 베끼지 말고, 시청자 눈에 박히는 단어나 짧은 구로 압축합니다.
+4. 문구마다 가장 중요한 단어 하나를 *별표*로 감쌉니다. 예: 길에서 *사자* 키우면?
+5. 대본에 없는 사실이나 숫자를 만들지 않습니다.
+6. 아래 JSON만 출력합니다. 다른 설명은 쓰지 않습니다.
+
+{{"highlights": [{{"s": 1, "text": "문구"}}, {{"s": 3, "text": "문구"}}]}}
+""".strip()
+
+
+def parse_highlights(text, n_sent):
+    obj = extract_json(text)
+    items = obj.get("highlights") if isinstance(obj, dict) else obj
+    if not isinstance(items, list):
+        return None
+
+    found = {}
+    for it in items:
+        try:
+            num = int(it.get("s"))
+            raw = str(it.get("text", "")).strip()
+        except (AttributeError, TypeError, ValueError):
+            continue
+        plain = strip_marks(raw)
+        if not (1 <= num <= n_sent) or num in found:
+            continue
+        if not plain or len(plain) > HL_MAX_CHARS or not is_korean_title(plain):
+            continue
+        if raw.count("*") != 2:
+            raw = raw.replace("*", "")  # 강조 표시가 어긋나면 표시만 제거
+        found[num] = raw
+
+    if len(found) < 3:
+        return None
+    return [{"s": n, "text": found[n]} for n in sorted(found)][:7]
+
+
+def generate_highlights(client, models, fact, narration, retries=3):
+    n = len(split_sentences(narration))
+    if n < 3:
+        return None
+    return ask_models(
+        client, models,
+        "당신은 짧고 강렬한 한국어 자막을 만드는 편집자입니다.",
+        build_highlight_prompt(fact, narration), 600, retries,
+        lambda t: parse_highlights(t, n),
+    )
+
+
+def build_query_prompt(fact, narration):
+    return f"""
+You pick stock photos for a short vertical video. Read the Korean narration and
+write 6 English search queries for a free stock photo site (Pexels), one per scene,
+following the story order.
+
+[Country] {fact.get("country", "")}
+[Topic] {fact.get("topic", "")}
+[Narration]
+{narration}
+
+Rules:
+1. Exactly 6 queries, 2 to 5 words each, plain English.
+2. Each query must describe something concrete that exists in a real photo
+   (place, object, animal, food, activity). No abstract words like "freedom" or "culture".
+3. Include the country or a well-known city/landmark name in at least 3 of the queries.
+4. No people's names, brands, or things that need readable text (signs, posters).
+5. Output only JSON: {{"queries": ["...", "...", "...", "...", "...", "..."]}}
+""".strip()
+
+
+def parse_queries(text):
+    obj = extract_json(text)
+    items = obj.get("queries") if isinstance(obj, dict) else obj
+    if not isinstance(items, list):
+        return None
+    out = []
+    for q in items:
+        q = " ".join(str(q).split())
+        if 3 <= len(q) <= 60 and re.fullmatch(r"[A-Za-z0-9 ,'\-]+", q):
+            out.append(q)
+    return out[:6] if len(out) >= 6 else None
+
+
+def generate_queries(client, models, fact, narration, retries=3):
+    return ask_models(
+        client, models,
+        "You are a careful photo editor. Output JSON only.",
+        build_query_prompt(fact, narration), 500, retries, parse_queries,
+    )
+
+
+def title_ok(fact):
+    l1, l2 = fact.get("title_line1"), fact.get("title_line2")
+    return bool(l1 and l2 and is_korean_title(l1) and is_korean_title(l2))
+
+
+def ensure_extras(client, models, fact, retries=3):
+    """제목 2줄 / 핵심 문구 / 이미지 검색어 중 없는 것만 만든다. 바뀐 게 있으면 True."""
+    narration = fact.get("narration", "")
+    changed = False
+    if not title_ok(fact):
+        titles = generate_title(client, models, fact, narration, retries)
+        if titles:
+            fact["title_line1"], fact["title_line2"] = titles
+            changed = True
+            print(f"  [제목] {titles[0]} / {titles[1]}")
+        else:
+            print("  [제목 생성 실패] 영상 제작 시 topic을 자동 분할해서 사용합니다.")
+    if fact.get("highlights") is None:  # 빈 리스트([])는 "표시 안 함"이라는 사용자의 선택
+        hl = generate_highlights(client, models, fact, narration, retries)
+        if hl:
+            fact["highlights"] = hl
+            changed = True
+            print("  [핵심 문구] " + " / ".join(strip_marks(h["text"]) for h in hl))
+        else:
+            print("  [핵심 문구 생성 실패] 영상 제작 시 대본 문장을 짧게 줄여 대체합니다.")
+    if not fact.get("image_queries"):
+        qs = generate_queries(client, models, fact, narration, retries)
+        if qs:
+            fact["image_queries"] = qs
+            changed = True
+            print("  [이미지 검색어] " + " | ".join(qs))
+        else:
+            print("  [이미지 검색어 생성 실패] 국가명으로 대체 검색합니다.")
+    return changed
+
+
+def run_extras(client, models, db, limit, start, delay, retries):
+    """이미 대본이 있는 소재 중 영상 대상(앞에서 limit개)의 빠진 항목을 보충한다."""
+    targets = []
+    for index, fact in pending_render(db, start):
+        if is_bad_narration(fact.get("narration", "")):
+            continue
+        targets.append((index, fact))
+        if len(targets) >= limit:
+            break
+
+    todo = [
+        (i, f) for i, f in targets
+        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries"))
+    ]
+    print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")
+    for number, (index, fact) in enumerate(todo, start=1):
+        print(f"[{number}/{len(todo)}] DB index={index} {fact.get('country', '')}")
+        if ensure_extras(client, models, fact, retries):
+            save_db(db)
+        if delay > 0 and number < len(todo):
+            time.sleep(delay)
+
+
 def find_title_targets(db, limit):
     """대본은 있는데 제목 2줄이 아직 없는 항목."""
     targets = []
@@ -606,6 +826,19 @@ def main():
     )
 
     parser.add_argument(
+        "--start",
+        type=int,
+        default=0,
+        help="이 번호 이후의 소재만 보충 대상으로 삼음 (PC에서 만든 옛 소재 건너뛰기)",
+    )
+
+    parser.add_argument(
+        "--extras-only",
+        action="store_true",
+        help="대본은 건드리지 않고 제목/핵심 문구/이미지 검색어만 보충",
+    )
+
+    parser.add_argument(
         "--titles-only",
         action="store_true",
         help="대본이 이미 있는 항목에 화면 상단 제목 2줄(title_line1/2)만 생성",
@@ -641,6 +874,10 @@ def main():
         run_titles_only(client, models, db, args.limit, args.delay, args.retries)
         return
 
+    if args.extras_only:
+        run_extras(client, models, db, args.limit, args.start, args.delay, args.retries)
+        return
+
     targets = find_targets(db, args.limit)
 
     print("=" * 70)
@@ -658,6 +895,7 @@ def main():
 
     if not targets:
         print("\n생성/재생성할 대본이 없습니다.")
+        run_extras(client, models, db, args.limit, args.start, args.delay, args.retries)
         return
 
     success_count = 0
@@ -685,15 +923,10 @@ def main():
             fact["narration"] = narration
             fact["status"] = "scripted"  # TTS 단계(generate_tts_v2.py)가 이 상태를 찾습니다.
 
-            # 대본이 새로 바뀌었으므로 이전 제목은 지우고 새로 만든다
-            fact.pop("title_line1", None)
-            fact.pop("title_line2", None)
-            titles = generate_title(client, models, fact, narration, args.retries)
-            if titles:
-                fact["title_line1"], fact["title_line2"] = titles
-                print(f"  [제목] {titles[0]} / {titles[1]}")
-            else:
-                print("  [제목 생성 실패] 영상 제작 시 topic을 자동 분할해서 사용합니다.")
+            # 대본이 새로 바뀌었으므로 이전 제목/핵심 문구/검색어는 지우고 새로 만든다
+            for key in ("title_line1", "title_line2", "highlights", "image_queries"):
+                fact.pop(key, None)
+            ensure_extras(client, models, fact, args.retries)
 
             # 성공 즉시 저장
             save_db(db)
@@ -714,6 +947,8 @@ def main():
 
         if args.delay > 0 and number < len(targets):
             time.sleep(args.delay)
+
+    run_extras(client, models, db, args.limit, args.start, args.delay, args.retries)
 
     print("\n" + "=" * 70)
     print("작업 완료")

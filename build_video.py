@@ -25,6 +25,7 @@ from moviepy.editor import (
 )
 
 from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
+from common import split_sentences, strip_marks, visual_dir
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -153,24 +154,13 @@ def get_timing_path(item, idx):
     return None
 
 
-def get_visual_paths(idx, country):
-    dirs = [
-        VISUAL_DIR / f"{idx:04d}_{country}",
-        VISUAL_DIR / f"{idx:04d}_{country}_clean",
-    ]
-
-    for d in dirs:
-        paths = []
-        for n in range(1, SCENE_COUNT + 1):
-            p = d / f"scene_{n:02d}.png"
-            if p.exists():
-                paths.append(p)
-
-        if len(paths) == SCENE_COUNT:
+def get_visual_paths(idx, item):
+    """scene_01~06.png 경로 목록 (없는 파일도 경로는 돌려줌 - 장면별로 대체 카드 사용)."""
+    d = visual_dir(BASE_DIR, idx, item)
+    for cand in (d, d.parent / (d.name + "_clean")):
+        paths = [cand / f"scene_{n:02d}.png" for n in range(1, SCENE_COUNT + 1)]
+        if all(p.exists() for p in paths):
             return paths
-
-    # 정확히 6장이 없어도 개별 파일을 찾아서 알려주기 위한 경로
-    d = dirs[0]
     return [d / f"scene_{n:02d}.png" for n in range(1, SCENE_COUNT + 1)]
 
 
@@ -272,75 +262,139 @@ def find_font(size, bold=False):
     return None
 
 
-def make_caption_image(text):
-    """
-    ImageMagick 없이 Pillow로 자막 PNG를 만들어 사용합니다.
-    """
-    img = Image.new("RGBA", (980, 250), (0, 0, 0, 0))
+HL_COLOR = (255, 226, 0)      # 강조 단어 (노랑)
+HL_BASE = (255, 255, 255)     # 나머지 단어 (흰색)
+CAP_W, CAP_H = IMG_BOX[2] - IMG_BOX[0], 360
+
+
+def parse_marked(text):
+    """'길에서 *사자* 키우면?' -> [('길에서', False), ('사자', True), ('키우면?', False)]"""
+    words = []
+    for part in re.split(r"(\*[^*]+\*)", str(text)):
+        if not part:
+            continue
+        hl = len(part) > 2 and part.startswith("*") and part.endswith("*")
+        for w in part.strip("*").split():
+            words.append((w, hl))
+    return words
+
+
+def make_highlight_image(text):
+    """핵심 문구를 크게 (최대 2줄, 글자 수가 달라도 자동으로 크기 조절) 그린 RGBA 배열.
+    *별표* 단어는 노랑, 나머지는 흰색 (별표가 없으면 전부 노랑). 굵은 검정 테두리."""
+    img = Image.new("RGBA", (CAP_W, CAP_H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
+    words = parse_marked(text)
+    if not words:
+        return np.array(img)
 
-    font_path = find_font(58, bold=True)
-    font = ImageFont.truetype(font_path, 58) if font_path else ImageFont.load_default()
+    any_hl = any(hl for _, hl in words)
+    max_w = CAP_W - 110
 
-    # 2줄까지 자동 줄바꿈
-    words = list(text)
-    lines = []
-    line = ""
+    def wrap(font, items, space):
+        lines, cur, cur_w = [], [], 0.0
+        for w, hl in items:
+            ww = draw.textlength(w, font=font)
+            add = ww if not cur else space + ww
+            if cur and cur_w + add > max_w:
+                lines.append(cur)
+                cur, cur_w = [(w, hl)], ww
+            else:
+                cur.append((w, hl))
+                cur_w += add
+        if cur:
+            lines.append(cur)
+        return lines
 
-    for ch in words:
-        test = line + ch
-        bbox = draw.textbbox((0, 0), test, font=font, stroke_width=1)
-        if bbox[2] <= 900:
-            line = test
-        else:
-            if line:
-                lines.append(line)
-            line = ch
+    font, size, lines, space = None, 0, [], 0
+    for size in range(124, 55, -4):
+        fp = find_font(size, bold=True)
+        font = ImageFont.truetype(fp, size) if fp else ImageFont.load_default()
+        space = draw.textlength(" ", font=font)
+        lines = wrap(font, words, space)
+        if len(lines) <= 2 and all(draw.textlength(w, font=font) <= max_w for w, _ in words):
+            break
+    else:
+        # 공백 없이 아주 긴 문구: 글자 단위로 줄바꿈
+        space = 0
+        lines = wrap(font, [(ch, hl) for w, hl in words for ch in w], 0)[:2]
 
-    if line:
-        lines.append(line)
+    stroke = max(7, size // 9)
+    asc, desc = font.getmetrics()
+    lh = asc + desc + 6
+    y = CAP_H - lh * len(lines) - 16  # 아래쪽 기준으로 정렬 (1줄/2줄 모두 바닥선 일정)
 
-    lines = lines[:2]
-
-    if len(lines) == 2:
-        # 두 줄이면 더 짧게
-        pass
-
-    line_heights = []
     for line in lines:
-        bbox = draw.textbbox((0, 0), line, font=font, stroke_width=2)
-        line_heights.append(bbox[3] - bbox[1])
-
-    total_h = sum(line_heights) + max(0, len(lines) - 1) * 15
-    y = (250 - total_h) // 2
-
-    for line, lh in zip(lines, line_heights):
-        bbox = draw.textbbox((0, 0), line, font=font, stroke_width=2)
-        tw = bbox[2] - bbox[0]
-        x = (980 - tw) // 2
-
-        # 반투명 검정 박스는 자막 가독성용
-        pad = 20
-        box = (
-            x - pad,
-            y - 8,
-            x + tw + pad,
-            y + lh + 8,
-        )
-        draw.rounded_rectangle(box, radius=18, fill=(0, 0, 0, 165))
-
-        draw.text(
-            (x, y),
-            line,
-            font=font,
-            fill=(255, 255, 255, 255),
-            stroke_width=3,
-            stroke_fill=(0, 0, 0, 255),
-        )
-
-        y += lh + 15
-
+        total = sum(draw.textlength(w, font=font) for w, _ in line) + space * (len(line) - 1)
+        x = (CAP_W - total) / 2
+        for w, hl in line:
+            color = HL_COLOR if (hl or not any_hl) else HL_BASE
+            draw.text((x, y), w, font=font, fill=color + (255,),
+                      stroke_width=stroke, stroke_fill=(0, 0, 0, 255))
+            x += draw.textlength(w, font=font) + space
+        y += lh
     return np.array(img)
+
+
+def make_scrim(h=470, max_alpha=165):
+    """이미지 아래쪽을 살짝 어둡게 (사진이 밝아도 큰 글자가 읽히도록)."""
+    bw = IMG_BOX[2] - IMG_BOX[0]
+    arr = np.zeros((h, bw, 4), dtype=np.uint8)
+    alpha = (np.linspace(0, 1, h) ** 1.7 * max_alpha).astype(np.uint8)
+    arr[..., 3] = alpha[:, None]
+    return arr
+
+
+def _nospace(t):
+    return len(re.sub(r"\s+", "", str(t)))
+
+
+def time_at_fraction(frac, timings):
+    """대본 글자 수 비율(0~1) -> 실제 음성 시간(초). TTS 문장 경계 안에서는 선형 보간."""
+    total = sum(_nospace(t["text"]) for t in timings)
+    if total == 0 or not timings:
+        return 0.0
+    target, acc = frac * total, 0
+    for t in timings:
+        n = _nospace(t["text"])
+        if acc + n >= target and n > 0:
+            return t["start"] + (target - acc) / n * (t["end"] - t["start"])
+        acc += n
+    return timings[-1]["end"]
+
+
+def highlight_cues(item, timings, audio_duration, narration):
+    """[(시작, 끝, 문구)] 목록. highlights가 있으면 그 문구가 해당 문장이 읽히는 동안 나온다.
+    highlights가 아예 없으면(None) 문장을 짧게 줄여 대체하고, 빈 리스트([])면 표시하지 않는다."""
+    hl = item.get("highlights")
+    if hl is None:
+        print("  핵심 문구 없음 -> 대본 문장을 짧게 줄여 표시")
+        return [
+            (max(0.0, t["start"]), min(audio_duration, t["end"]), short_caption(t["text"], 14))
+            for t in timings if t["end"] > t["start"]
+        ]
+    if not hl:
+        return []
+
+    sents = split_sentences(narration)
+    total = sum(_nospace(x) for x in sents) or 1
+    cum = [0]
+    for x in sents:
+        cum.append(cum[-1] + _nospace(x))
+
+    cues = []
+    for h in sorted(hl, key=lambda h: h["s"]):
+        n = h["s"]
+        if not (1 <= n <= len(sents)):
+            continue
+        st = time_at_fraction(cum[n - 1] / total, timings)
+        en = time_at_fraction(cum[n] / total, timings)
+        cues.append([st, en, h["text"]])
+
+    for k, c in enumerate(cues):  # 최소 1.4초는 보이게, 다음 문구 시작 전까지
+        nxt = cues[k + 1][0] if k + 1 < len(cues) else audio_duration
+        c[1] = min(max(c[1], c[0] + 1.4), nxt, audio_duration)
+    return [tuple(c) for c in cues if c[1] > c[0]]
 
 
 def prepare_scene_image(path):
@@ -430,20 +484,28 @@ def make_placeholder_scene(n, country, topic):
         return f
 
     f1 = fit(country, 150)
-    d.text(((bw - d.textlength(country, font=f1)) / 2, bh * 0.36), country, font=f1,
+    d.text(((bw - d.textlength(country, font=f1)) / 2, bh * 0.14), country, font=f1,
            fill=(255, 255, 255), stroke_width=3, stroke_fill=(0, 0, 0))
     if topic:
         f2 = fit(topic, 60, bold=False)
-        d.text(((bw - d.textlength(topic, font=f2)) / 2, bh * 0.36 + 190), topic, font=f2,
+        d.text(((bw - d.textlength(topic, font=f2)) / 2, bh * 0.14 + 180), topic, font=f2,
                fill=(235, 235, 245))
     return im
 
 
 def load_scene_sources(visual_paths, country, topic):
-    """scene_01~06.png가 다 있으면 그 이미지를, 하나라도 없으면 대체 카드를 사용."""
-    if all(p.exists() for p in visual_paths):
-        return [Image.fromarray(prepare_scene_image(p)) for p in visual_paths], False
-    return [make_placeholder_scene(n, country, topic) for n in range(1, SCENE_COUNT + 1)], True
+    """장면마다 이미지가 있으면 사용하고, 없거나 깨졌으면 그 장면만 대체 카드로 채운다."""
+    srcs, real = [], 0
+    for n, p in enumerate(visual_paths, start=1):
+        if p.exists():
+            try:
+                srcs.append(Image.fromarray(prepare_scene_image(p)))
+                real += 1
+                continue
+            except Exception as e:
+                print(f"  scene_{n:02d} 이미지 읽기 실패 -> 대체 카드: {e}")
+        srcs.append(make_placeholder_scene(n, country, topic))
+    return srcs, real
 
 
 def make_image_box_clip(srcs, audio_duration, zoom=None, xfade=None):
@@ -482,14 +544,14 @@ def build_one(idx, item):
         raise FileNotFoundError(f"오디오 파일을 찾지 못했습니다: {idx:04d}")
 
     timing_path = get_timing_path(item, idx)
-    visual_paths = get_visual_paths(idx, country)
+    visual_paths = get_visual_paths(idx, item)
 
     print(f"오디오: {audio_path}")
     print(f"타이밍: {timing_path}")
-    srcs, used_placeholder = load_scene_sources(
+    srcs, real_images = load_scene_sources(
         visual_paths, country, str(item.get("topic") or "")
     )
-    print("이미지: 대체 카드 사용" if used_placeholder else "이미지: visuals 폴더 사용")
+    print(f"이미지: {real_images}/{SCENE_COUNT}장 사용 (나머지는 대체 카드)")
 
     audio = AudioFileClip(str(audio_path))
     audio_duration = float(audio.duration)
@@ -522,7 +584,8 @@ def build_one(idx, item):
     title1, title2 = split_title(item)
     template = make_template(
         title1, title2,
-        LAYOUT_CFG["credit"] or country,
+        LAYOUT_CFG["credit"]
+        or ("Photos: Pixabay" if (item.get("image_source") == "pixabay" and real_images) else country),
         None,
         channel_name=LAYOUT_CFG["channel"],
         handle=LAYOUT_CFG["handle"],
@@ -535,32 +598,30 @@ def build_one(idx, item):
         .set_position((IMG_BOX[0], IMG_BOX[1]))
     )
 
+    scrim_arr = make_scrim()
+    scrim = (
+        ImageClip(scrim_arr)
+        .set_duration(audio_duration)
+        .set_position((IMG_BOX[0], IMG_BOX[3] - scrim_arr.shape[0]))
+    )
+
     base = CompositeVideoClip(
-        [bg_clip] + scene_clips + [corner],
+        [bg_clip] + scene_clips + [scrim, corner],
         size=(W, H),
     ).set_duration(audio_duration)
 
-    # 자막
+    # 핵심 문구 (대본 문장 대신, 눈에 띄게)
     caption_clips = []
-
-    for s in timings:
-        start = max(0.0, float(s["start"]))
-        end = min(audio_duration, float(s["end"]))
-
-        if end <= start:
-            continue
-
-        caption = short_caption(s["text"])
-
-        caption_arr = make_caption_image(caption)
-
+    cues = highlight_cues(item, timings, audio_duration, script)
+    for start, end, text in cues:
+        print(f"  문구 {start:5.1f}s~{end:5.1f}s: {strip_marks(text)}")
         cc = (
-            ImageClip(caption_arr)
+            ImageClip(make_highlight_image(text))
             .set_start(start)
             .set_duration(end - start)
-            .set_position(("center", SUBTITLE_Y - 125))
+            .set_position((IMG_BOX[0], IMG_BOX[3] - CAP_H - 20))
+            .crossfadein(0.1)
         )
-
         caption_clips.append(cc)
 
     final = CompositeVideoClip(
@@ -598,6 +659,11 @@ def build_one(idx, item):
     final.close()
     base.close()
     audio.close()
+    for c in (scrim, corner, bg_clip):
+        try:
+            c.close()
+        except Exception:
+            pass
 
     for c in scene_clips:
         try:
@@ -622,7 +688,7 @@ def main():
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--channel", default=LAYOUT_CFG["channel"], help="채널명")
     parser.add_argument("--handle", default=LAYOUT_CFG["handle"], help="@핸들")
-    parser.add_argument("--avatar", default=None, help="프로필 이미지 경로")
+    parser.add_argument("--avatar", default="avatar.png", help="프로필 이미지 경로 (기본: avatar.png)")
     parser.add_argument("--credit", default="", help="이미지 아래 크레딧 (기본: country)")
     parser.add_argument("--zoom", type=float, default=None,
                         help="Ken Burns 최대 확대 비율 (기본 0.12 = 12%%, 0이면 정지)")

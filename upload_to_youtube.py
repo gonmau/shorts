@@ -45,7 +45,9 @@ def main():
         body = {
             "snippet": {
                 "title": f"{title} #shorts"[:100],
-                "description": f"{item.get('hook', '')}\n\n#shorts #세계문화 #상식",
+                "description": f"{item.get('hook', '')}\n\n"
+                + ("Photos: Pixabay (pixabay.com)\n" if item.get("image_source") == "pixabay" else "")
+                + "#shorts #세계문화 #상식",
                 "categoryId": "27",
             },
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},

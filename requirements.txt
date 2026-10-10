@@ -3,5 +3,6 @@ edge-tts
 moviepy==1.0.3
 numpy<2
 Pillow>=10
+requests
 google-api-python-client
 google-auth
