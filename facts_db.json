@@ -967,7 +967,10 @@
     "twist": "심지어 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함(≈ 140,000 USD)의 벌금을 부과받을 수 있습니다.",
     "verify_note": "UAE exotic animal license law, Dubai municipality wildlife permit",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "두바이에서는 코끼리를 집에 들이고 싶다면, 먼저 면허를 받아야 합니다! 아랍에미리트에서는 사자, 호랑이, 코끼리 같은 대형 야생동물을 개인이 키우려면 환경부와 동물복지부의 허가를 꼭 받아야 해요. 허가 없이 이런 동물을 기르면 높은 벌금은 물론, 동물까지 압류당할 수 있습니다. 그리고 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함, 즉 약 140,000 달러에 달하는 벌금을 부과받게 됩니다. 이렇게 엄격한 규제는 동물 복지와 공공 안전을 동시에 지키기 위한 것이죠. 여러분도 혹시 특이한 애완동물을 생각하고 있다면, 먼저 해당 국가의 허가 절차를 꼭 확인하세요! 구독과 좋아요, 알림 설정까지 잊지 마세요.",
+    "title_line1": "두바이코끼리면허",
+    "title_line2": "벌금·압류 위험!"
   },
   {
     "country": "India",
@@ -1037,6 +1040,126 @@
     "twist": "심지어 레무르를 사진으로만 촬영해도, 보호구역 내에서는 플래시 사용이 금지되어 있어 몰래 촬영이 어렵습니다.",
     "verify_note": "Madagascar lemur pet ownership law, Madagascar wildlife protection act lemur permit",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "Sauna etiquette – mandatory nudity",
+    "hook": "핀란드 사우나에서는 수영복을 입고 들어가면 큰일 난다!",
+    "body": "핀란드 사람들은 사우나를 ‘벌거벗은 공간’으로 생각한다. 옷이나 수영복을 입고 들어가면 불쾌감을 주는 것으로 여겨지며, 대부분의 공공 사우나는 전면 금지한다. 사우나는 순수하게 땀을 흘리며 몸을 정화하는 장소이기 때문에 옷은 집에 두는 것이 원칙이다.",
+    "twist": "게다가 사우나 안에서는 스마트폰 사용도 금지라, 온전한 ‘디지털 디톡스’가 강제된다!",
+    "verify_note": "Finland sauna etiquette nudity rule",
+    "created_at": "2026-10-10T10:19:24.459203+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Iceland",
+    "topic": "Naming Committee – government‑approved baby names",
+    "hook": "아이슬란드에서는 아기의 이름을 정부에 승인 받아야 해요!",
+    "body": "아이슬란드에는 ‘이름 위원회’가 있어 새 이름이 아이슬란드 알파벳과 전통에 맞는지 검토한다. 외국식 이름이나 특수문자, ‘C’·‘Q’ 같은 글자는 사용이 제한되며, 허가받지 않은 이름은 공식 서류에 기재할 수 없다.",
+    "twist": "심지어 ‘Apple’ 같은 영문 이름은 아이슬란드식 ‘Aplí’ 로 바꾸어야 할 수도 있다!",
+    "verify_note": "Iceland naming committee law allowed names",
+    "created_at": "2026-10-10T10:19:24.459203+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Singapore",
+    "topic": "Chewing‑gum ban",
+    "hook": "싱가포르에서는 껌을 사면 벌금을 물어요!",
+    "body": "1992년부터 공공장소 청결을 위해 껌 판매가 전면 금지됐으며, 치료용 껌은 의사의 처방이 있을 때만 약국에서 구입할 수 있다. 이 조치는 거리와 지하철에 붙은 껌 자국을 없애기 위해 도입되었다.",
+    "twist": "하지만 무설탕 캔디를 씹는 건 합법이라, 껌 대신 캔디를 씹는 사람들이 늘었다!",
+    "verify_note": "Singapore chewing gum ban 1992",
+    "created_at": "2026-10-10T10:19:24.459203+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Namibia",
+    "topic": "Mandatory wildlife‑distance rule in national parks",
+    "hook": "나미비아에서는 사파리 중에 사자를 20미터 이상 떨어져야 해요!",
+    "body": "나미비아의 국립공원 관리법은 관광객이 사자·코끼리·표범 등 대형 야생동물과 최소 20 m 이상 거리를 유지하도록 규정한다. 이는 동물의 스트레스를 최소화하고 사고를 예방하기 위한 조치이며, 공원 입구에서 안내와 표지판으로 강조된다.",
+    "twist": "위반 시 10,000 나미비아 달러(약 700 USD) 이상의 벌금이 부과된다!",
+    "verify_note": "Namibia wildlife distance law national parks",
+    "created_at": "2026-10-10T10:19:24.459203+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Switzerland",
+    "topic": "Guinea pig companionship law – must keep at least two together",
+    "hook": "스위스에서는 기니피그를 혼자 기를 수 없어요!",
+    "body": "스위스 동물복지법에 따르면, 기니피그는 사회성이 높은 동물로 간주돼 최소 두 마리 이상을 함께 키워야 합니다. 혼자 기르는 경우 벌금이 부과될 수 있어요.",
+    "twist": "게다가, 일부 주에서는 기니피그를 전용 침대까지 제공해야 한다는 규정까지 있어요!",
+    "verify_note": "Switzerland guinea pig law, animal welfare legislation, canton of Zurich guinea pig companionship",
+    "created_at": "2026-10-10T10:19:36.500124+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Colombia",
+    "topic": "Ciclovía – weekly car‑free streets for cyclists and pedestrians",
+    "hook": "콜롬비아에서는 매주 일요일마다 도로가 차단돼요!",
+    "body": "보고타를 비롯한 여러 도시에서는 일요일 아침에 주요 도로 120km 이상을 차 없는 거리로 바꾸어 자전거 타기와 걷기, 조깅을 즐깁니다. 이 행사는 1974년 시작돼 현재 매주 200만 명 이상이 참여합니다.",
+    "twist": "이때 거리에서 열린 플래시몹 댄스와 라이브 음악 공연도 동시 진행돼요!",
+    "verify_note": "Ciclovía Bogotá, Colombia weekly car‑free event, 1974, 120 km",
+    "created_at": "2026-10-10T10:19:36.500124+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Ecuador",
+    "topic": "Constitutional rights of nature – suing on behalf of ecosystems",
+    "hook": "에콰도르에서는 강을 고소할 수 있습니다!",
+    "body": "2008년 개정된 에콰도르 헌법은 자연을 ‘권리’가 있는 존재로 인정해, 시민들이 강, 산, 숲 등을 대신해 법정에 제소할 수 있게 했습니다. 이는 세계 최초의 ‘자연권’ 헌법 조항입니다.",
+    "twist": "실제로 2011년, 아마존 강이 오염으로 인해 법정에 제소된 적이 있어요!",
+    "verify_note": "Ecuador rights of nature constitution 2008, lawsuit against Amazon river, legal personhood for nature",
+    "created_at": "2026-10-10T10:19:36.500124+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Malta",
+    "topic": "Gostra – pole‑climbing tradition during village feasts",
+    "hook": "몰타에서는 마을 축제에 나무 기둥을 타고 깃발을 잡아야 해요!",
+    "body": "몰타의 전통 축제인 festa에서 ‘ġostra’라는 행사가 열리는데, 기름칠한 긴 나무 기둥을 달려 위에 매달린 깃발을 잡는 경기입니다. 성공하면 행운과 명예를 얻는다고 믿어요.",
+    "twist": "가장 높은 기록은 1998년 한 청년이 10번 연속 성공한 기록이에요!",
+    "verify_note": "Malta Gostra tradition, festa pole climbing, Maltese village festival",
+    "created_at": "2026-10-10T10:19:36.500124+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Papua New Guinea",
+    "topic": "전통 신부 가격(브라이드 프라이스) – 돼지 지급",
+    "hook": "여기선 신부에게 돼지로 결혼 비용을 지불한다!",
+    "body": "파푸아 뉴기니 고지대에서는 전통적인 신부 가격인 ‘모카’를 돼지로 지급한다. 돼지 수가 많을수록 신부와 신랑 가문의 사회적 지위가 높아진다.",
+    "twist": "최대 100마리 이상의 돼지를 한 번에 선물받은 사례도 있다.",
+    "verify_note": "Papua New Guinea bride price pigs Moka tradition",
+    "created_at": "2026-10-10T10:20:41.161741+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Rwanda",
+    "topic": "플라스틱 봉투 전면 금지",
+    "hook": "루와다에서는 비닐봉투가 전혀 없어!",
+    "body": "2008년부터 루와다 정부는 일회용 플라스틱 백을 전면 금지했고, 위반 시 높은 벌금을 부과한다. 전국 모든 상점은 재사용 가능한 가방만 제공한다.",
+    "twist": "이 정책 덕분에 루와다의 야생동물 사망률이 30% 이상 감소했다.",
+    "verify_note": "Rwanda plastic bag ban 2008 wildlife deaths reduction",
+    "created_at": "2026-10-10T10:20:41.161741+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Qatar",
+    "topic": "반려동물 수입 제한 규정",
+    "hook": "카타르에 개를 데려가려면 허가가 필수!",
+    "body": "카타르는 반려동물 수입을 엄격히 관리한다. 개는 특정 품종만 허가가 가능하고, 모든 동물은 수입 전 검역과 허가서를 받아야 한다.",
+    "twist": "심지어 고양이도 특정 국가에서만 입국이 허용된다.",
+    "verify_note": "Qatar pet import regulations dog breed permit",
+    "created_at": "2026-10-10T10:20:41.161741+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Saudi Arabia",
+    "topic": "여성 운전 금지 해제",
+    "hook": "사우디, 2018년부터 여성 운전이 허용됐어요!",
+    "body": "오랜 금지령을 깨고 2018년 6월, 사우디아라비아는 여성에게 운전 면허를 발급하기 시작했다. 이는 세계에서 마지막 남은 여성 운전 금지 국가였던 사우디를 변화시킨 사건이다.",
+    "twist": "첫 달에만 200,000명 이상의 여성들이 운전 면허를 신청했다.",
+    "verify_note": "Saudi Arabia women driving law 2018 first month applications",
+    "created_at": "2026-10-10T10:20:41.161741+00:00",
     "status": "unverified"
   }
 ]
