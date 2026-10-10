@@ -12,7 +12,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-from common import youtube_meta
+from common import youtube_meta, youtube_tags
 
 DB = Path("facts_db.json")
 
@@ -45,7 +45,7 @@ def main():
             continue
         title, description = youtube_meta(item)
         body = {
-            "snippet": {"title": title, "description": description, "categoryId": "27"},
+            "snippet": {"title": title, "description": description, "categoryId": "27", "tags": youtube_tags(item)},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
         }
         media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)

@@ -60,11 +60,52 @@ def pending_render(db, start=0):
     return out
 
 
+FIXED_TAGS = ["세계문화", "해외여행", "이색상식", "문화차이", "세계여행"]
+CHANNEL_BLURB = "🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!"
+CTA = "👍 구독과 좋아요, 알림 설정도 잊지 마세요!"
+
+
+def _tagify(text):
+    return re.sub(r"[^0-9A-Za-z가-힣]", "", str(text or ""))
+
+
+def youtube_tags(item):
+    """해시태그 목록(# 없이): 나라 + 주제 키워드 + 고정 태그, 중복 제거."""
+    tags = [_tagify(item.get("country"))]
+    for w in str(item.get("topic", "")).replace("/", " ").replace(",", " ").split():
+        w = _tagify(w)
+        if len(w) >= 2:
+            tags.append(w)
+    tags += FIXED_TAGS
+    out, seen = [], set()
+    for t in tags:
+        if t and t.lower() not in seen and len(t) <= 30:
+            seen.add(t.lower())
+            out.append(t)
+    return out[:9]
+
+
 def youtube_meta(item):
-    """유튜브에 올릴 제목/설명 (자동 업로드와 디스코드 알림이 같은 문구를 쓴다)."""
+    """유튜브에 올릴 제목/설명. 자동 업로드와 디스코드 알림이 같은 문구를 쓴다.
+    제목: 나라 이름이 없으면 앞에 붙여 검색에 걸리게 함. 설명: 훅 -> 본문 -> 반전 -> 채널 소개 -> 구독 유도 -> 해시태그.
+    """
     title = " ".join(filter(None, [item.get("title_line1"), item.get("title_line2")])) or item.get("topic", "")
-    desc = f"{item.get('hook', '')}\n\n"
+    country = str(item.get("country", "")).strip()
+    if country and country not in title:
+        title = f"{country} {title}"
+    title = f"{title[:88].rstrip()} #Shorts"
+
+    parts = []
+    if item.get("hook"):
+        parts.append(f"🎯 {item['hook']}")
+    if item.get("body"):
+        parts.append(str(item["body"]).strip())
+    if item.get("twist"):
+        parts.append(f"💡 {str(item['twist']).strip()}")
+    parts.append(CHANNEL_BLURB)
+    parts.append(CTA)
     if item.get("image_source") == "pixabay":
-        desc += "Photos: Pixabay (pixabay.com)\n"
-    desc += "#shorts #세계문화 #상식"
-    return f"{title} #shorts"[:100], desc
+        parts.append("Photos: Pixabay (pixabay.com)")
+    tags = youtube_tags(item)
+    parts.append(" ".join("#" + t for t in tags) + " #Shorts")
+    return title, "\n\n".join(parts)
