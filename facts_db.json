@@ -986,10 +986,71 @@
     "twist": "이 법 적용 첫 해에만 1억 5천만 개 이상의 플라스틱 쓰레기가 해변에서 사라진 것으로 추정됩니다.",
     "verify_note": "India single-use plastic ban 2022 states list, Ministry of Environment, Forest and Climate Change",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "인도에서는 한 번 쓰고 버리는 플라스틱 빨대가 완전히 사라졌어요! 2022년부터 인도 12개 주와 연방 직할지에서는 일회용 플라스틱, 즉 빨대, 컵, 식기류 등을 전면 금지했답니다. 이제 판매자는 재사용 가능한 대체품만 제공해야 하고, 규정을 어기면 벌금이 부과됩니다. 특히 눈에 띄는 점은, 이 법이 시행된 첫 해에만 해변에서 1억 5천만 개가 넘는 플라스틱 쓰레기가 사라진 것으로 추정된다는 사실이에요. 플라스틱 없는 일상이 얼마나 큰 변화를 만들 수 있는지 직접 확인해 보세요. 더 많은 환경 이야기가 궁금하시다면 구독과 좋아요 잊지 마세요!",
     "title_line1": "인도 플라스틱 금지",
-    "title_line2": "해변 쓰레기 1억5천만 사라져"
+    "title_line2": "해변 쓰레기 1억5천만 사라져",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*플라스틱* 빨대 사라져"
+      },
+      {
+        "s": 2,
+        "text": "*일회용* 플라스틱 금지"
+      },
+      {
+        "s": 4,
+        "text": "*해변* 플라스틱 사라짐"
+      }
+    ],
+    "image_queries": [
+      "Indian beach cleanup",
+      "Reusable metal straw",
+      "Mumbai street market without plastic",
+      "Plastic-free dinner table",
+      "Kerala coastal sunrise",
+      "Eco-friendly coffee shop India"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0057_India_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0057_India_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "jarmoluk",
+        "page": "https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/"
+      },
+      {
+        "scene": 2,
+        "user": "rainerh11",
+        "page": "https://pixabay.com/photos/harvest-straw-bales-straw-barley-8118900/"
+      },
+      {
+        "scene": 3,
+        "user": "mxwegele",
+        "page": "https://pixabay.com/photos/man-cart-street-food-culture-rain-5524488/"
+      },
+      {
+        "scene": 4,
+        "user": "JoelFazhari",
+        "page": "https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/"
+      },
+      {
+        "scene": 5,
+        "user": "ddzphoto",
+        "page": "https://pixabay.com/photos/lighthouse-sunrise-sky-landscape-5082316/"
+      },
+      {
+        "scene": 6,
+        "user": "HiteshHtSharma",
+        "page": "https://pixabay.com/photos/srishti-textile-9876622/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0057_India.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Romania",
@@ -1010,7 +1071,32 @@
     "twist": "법은 실제로 ‘동물의 안전’뿐 아니라 보행자의 안전을 위해 제정됐으며, 이 조항은 1971년 한 서커스가 코끼리를 시내 퍼레이드에 데려가던 사건을 계기로 만들어졌습니다.",
     "verify_note": "Florida Statutes 823.03 elephant on sidewalks, Florida animal welfare law",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "플로리다에서는 코끼리를 거리로 데려가면 체포될 수 있다는 사실, 알고 계셨나요? 플로리다 주법 제823.03조에 따르면 공공 인도 위에 코끼리, 낙타, 혹은 다른 대형 동물을 걷는 것이 금지돼 있습니다. 위반하면 동물 주인에게 최대 500달러까지 벌금이 부과됩니다. 이 법은 단순히 동물의 안전만을 위한 것이 아니라 보행자의 안전을 보호하기 위해 만든 것이죠. 실제 제정 배경은 1971년, 한 서커스가 코끼리를 시내 퍼레이드에 데려가던 사건에서 비롯되었습니다. 그때 거리의 혼란과 위험을 경험한 뒤, 입법자는 대형 동물이 인도를 가로지르는 것을 금지하는 조항을 만들었습니다. 오늘도 플로리다에서는 이 규정이 살아 숨 쉬고 있으니, 혹시 여행 중이라면 코끼리와 산책은 삼가세요! 더 궁금한 법 이야기, 댓글에 남겨 주세요.",
+    "title_line1": "플로리다 코끼리 금지",
+    "title_line2": "걸으면 체포?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "코끼리 *체포*"
+      },
+      {
+        "s": 2,
+        "text": "대형동물 *금지*"
+      },
+      {
+        "s": 5,
+        "text": "*서커스* 사건"
+      }
+    ],
+    "image_queries": [
+      "Florida sidewalk street",
+      "elephant on city sidewalk",
+      "Florida circus parade 1970s",
+      "large animal crossing road",
+      "Florida pedestrian safety sign",
+      "captive elephant walking outdoors"
+    ]
   },
   {
     "country": "Croatia",
