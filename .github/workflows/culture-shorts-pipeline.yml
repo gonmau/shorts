@@ -1,20 +1,32 @@
 # 세계 문화 상식 쇼츠 - 클라우드 자동화 (아이폰에서 실행/검수)
 #
-# 아이폰: GitHub 앱 > Actions > culture-shorts-pipeline > Run workflow
-#   count         : 이번에 만들 영상 개수
-#   auto_verify   : true면 미검증 소재를 사람 검수 없이 verified 처리 (기본 false)
-# 결과: (YT_REFRESH_TOKEN 등록 시) 유튜브에 비공개 업로드 -> YouTube Studio 앱에서 확인 후 공개
-#       (미등록 시) Actions 아티팩트로 mp4 보관
+# 아이폰: GitHub 앱(또는 Safari) > Actions > culture-shorts-pipeline > Run workflow
 #
-# Secrets: GROQ_API_KEY (필수) / YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (업로드용, 선택)
+#   stage = prepare : 소재 -> 대본 -> 제목/핵심 문구/이미지 검색어 까지 만들고 review.txt 생성 (영상은 안 만듦)
+#           -> 레포의 review.txt를 열어 제목/핵심 문구를 고치고 저장(Commit)
+#   stage = render  : review.txt의 수정 사항을 반영해서 음성 -> 이미지 -> 영상(-> 유튜브 비공개 업로드)
+#   stage = all     : 위 두 단계를 한 번에 (검수 없이 바로 제작)
+#
+#   count        : 이번에 만들 영상 개수
+#   start_index  : 이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)
+#   auto_verify  : true면 미검증 소재를 팩트체크 없이 자동 승인 (기본 false)
+#
+# Secrets: GROQ_API_KEY (필수)
+#          PIXABAY_API_KEY (장면 이미지, 없으면 색 카드로 대체)
+#          YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (유튜브 업로드, 선택)
 
 name: culture-shorts-pipeline
 
 on:
   schedule:
-    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST
+    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
   workflow_dispatch:
     inputs:
+      stage:
+        description: "단계 (prepare=대본/제목 준비, render=영상 제작, all=한 번에)"
+        type: choice
+        options: [all, prepare, render]
+        default: all
       count:
         description: "만들 영상 개수"
         default: "3"
@@ -32,11 +44,13 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     env:
+      STAGE: ${{ github.event.inputs.stage || 'all' }}
       COUNT: ${{ github.event.inputs.count || '3' }}
       START: ${{ github.event.inputs.start_index || '56' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -53,7 +67,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 소재 보충 (미검증+검증 대기 소재가 적을 때)
+      # ---------- 검수 파일에서 고친 내용 반영 ----------
+      - name: review.txt 수정 사항 반영
+        run: python apply_review.py
+
+      # ---------- 준비 단계 (prepare / all) ----------
+      - name: 소재 보충 (대기 소재가 적을 때)
+        if: ${{ env.STAGE != 'render' }}
         run: |
           python - <<'PY' > pending.txt
           import json, os
@@ -64,7 +84,7 @@ jobs:
           if [ "$PENDING" -lt 10 ]; then python generate_culture_facts.py --count 12; fi
 
       - name: 자동 승인 (선택)
-        if: ${{ github.event.inputs.auto_verify == 'true' }}
+        if: ${{ env.STAGE != 'render' && github.event.inputs.auto_verify == 'true' }}
         run: |
           python - <<'PY'
           import json, os
@@ -76,29 +96,49 @@ jobs:
           print(f'{k}개 자동 승인')
           PY
 
-      - run: python generate_script.py --limit "$COUNT"
-      - run: python generate_tts.py --limit "$COUNT" --start "$START"
-      - run: python build_video.py --limit "$COUNT" --start "$START" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
+      - name: 대본 + 제목 + 핵심 문구 + 이미지 검색어 생성
+        if: ${{ env.STAGE != 'render' }}
+        run: python generate_script.py --limit "$COUNT" --start "$START"
+
+      - name: review.txt 만들기 (제목/핵심 문구 검수용)
+        if: ${{ env.STAGE != 'render' }}
+        run: python export_review.py --limit "$COUNT" --start "$START"
+
+      # ---------- 제작 단계 (render / all) ----------
+      - name: 음성(TTS)
+        if: ${{ env.STAGE != 'prepare' }}
+        run: python generate_tts.py --limit "$COUNT" --start "$START"
+
+      - name: 장면 이미지 6장 (Pixabay)
+        if: ${{ env.STAGE != 'prepare' }}
+        run: python fetch_images.py --limit "$COUNT" --start "$START"
+
+      - name: 영상 합성
+        if: ${{ env.STAGE != 'prepare' }}
+        run: python build_video.py --limit "$COUNT" --start "$START" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
       - name: 유튜브 비공개 업로드
-        if: ${{ env.YT_REFRESH_TOKEN != '' }}
+        if: ${{ env.STAGE != 'prepare' && env.YT_REFRESH_TOKEN != '' }}
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python upload_to_youtube.py --limit "$COUNT"
 
-      - name: facts_db.json 커밋
+      # ---------- 저장 ----------
+      - name: facts_db.json / review.txt 커밋
         run: |
           git config user.name "culture-shorts-bot"
           git config user.email "bot@users.noreply.github.com"
           git add facts_db.json
+          [ -f review.txt ] && git add review.txt || true
           git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
           git push
 
       - name: mp4 아티팩트 보관
+        if: ${{ env.STAGE != 'prepare' }}
         uses: actions/upload-artifact@v4
         with:
           name: culture-shorts-videos
           path: videos/*.mp4
           retention-days: 14
+          if-no-files-found: warn
