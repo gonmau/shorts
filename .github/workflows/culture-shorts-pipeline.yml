@@ -19,8 +19,8 @@
 name: culture-shorts-pipeline
 
 on:
-  schedule:
-    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
+ # schedule:
+ #   - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
   workflow_dispatch:
     inputs:
       stage:
