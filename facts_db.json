@@ -1138,7 +1138,7 @@
     "twist": "법은 실제로 ‘동물의 안전’뿐 아니라 보행자의 안전을 위해 제정됐으며, 이 조항은 1971년 한 서커스가 코끼리를 시내 퍼레이드에 데려가던 사건을 계기로 만들어졌습니다.",
     "verify_note": "Florida Statutes 823.03 elephant on sidewalks, Florida animal welfare law",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "플로리다에서는 코끼리를 거리로 데려가면 체포될 수 있다는 사실, 알고 계셨나요? 플로리다 주법 제823.03조에 따르면 공공 인도 위에 코끼리, 낙타, 혹은 다른 대형 동물을 걷는 것이 금지돼 있습니다. 위반하면 동물 주인에게 최대 500달러까지 벌금이 부과됩니다. 이 법은 단순히 동물의 안전만을 위한 것이 아니라 보행자의 안전을 보호하기 위해 만든 것이죠. 실제 제정 배경은 1971년, 한 서커스가 코끼리를 시내 퍼레이드에 데려가던 사건에서 비롯되었습니다. 그때 거리의 혼란과 위험을 경험한 뒤, 입법자는 대형 동물이 인도를 가로지르는 것을 금지하는 조항을 만들었습니다. 오늘도 플로리다에서는 이 규정이 살아 숨 쉬고 있으니, 혹시 여행 중이라면 코끼리와 산책은 삼가세요! 더 궁금한 법 이야기, 댓글에 남겨 주세요.",
     "title_line1": "플로리다 코끼리 금지",
     "title_line2": "걸으면 체포?",
@@ -1163,7 +1163,46 @@
       "large animal crossing road",
       "Florida pedestrian safety sign",
       "captive elephant walking outdoors"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0059_United States_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0059_United States_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "svazquez",
+        "page": "https://pixabay.com/photos/orlando-trees-orlando-florida-245118/"
+      },
+      {
+        "scene": 2,
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/bokeh-lights-wet-gutter-2592859/"
+      },
+      {
+        "scene": 3,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/tv-television-retro-classic-old-1844964/"
+      },
+      {
+        "scene": 4,
+        "user": "Andre-H",
+        "page": "https://pixabay.com/photos/elephant-crossing-road-mammal-5632008/"
+      },
+      {
+        "scene": 5,
+        "user": "652234",
+        "page": "https://pixabay.com/photos/bicycle-path-road-sign-bicycle-sign-3444914/"
+      },
+      {
+        "scene": 6,
+        "user": "Eliyaphilip47",
+        "page": "https://pixabay.com/photos/nature-wildlife-animals-portrait-10019029/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0059_United States.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Croatia",
@@ -1173,7 +1212,7 @@
     "twist": "심지어 전통적인 ‘Croatian 치즈’도 원산지 인증을 받지 못하면 수출이 제한됩니다.",
     "verify_note": "Croatian origin labeling law, EU protected designation of origin Croatia",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이 나라에서는 ‘Croatian’이라고 적힌 제품이 실제로 현지에서 만든 것일 때만 팔 수 있습니다! EU의 원산지 보호 규정에 따라, 크로아티아는 자국산 제품에만 ‘Croatian’ 표기를 허용합니다. 그래서 외국에서 만든 와인이나 올리브 오일에 이 라벨을 붙이면 법적으로 금지되고, 벌금을 물게 됩니다. 흥미롭게도 전통적인 ‘Croatian 치즈’조차도 원산지 인증을 받지 못하면 수출이 제한됩니다. 즉, 라벨 하나가 그 제품의 진짜 출처를 증명하는 중요한 증거가 되는 셈이죠. 여러분도 해외에서 구매할 때 라벨을 한 번쯤 확인해 보세요! 구독과 좋아요 잊지 마시고, 다음에 또 만나요.",
     "title_line1": "크로아티아 라벨 규정",
     "title_line2": "진짜 현지 제품일까?",
@@ -1198,7 +1237,46 @@
       "Dubrovnik harbor sunrise",
       "Croatian flag on market stall",
       "Stone street in Split"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0060_Croatia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0060_Croatia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "WolfBlur",
+        "page": "https://pixabay.com/photos/wine-retro-wine-glass-wine-bottle-2408620/"
+      },
+      {
+        "scene": 2,
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/olive-oil-oil-food-carafe-1596417/"
+      },
+      {
+        "scene": 3,
+        "user": "guvo59",
+        "page": "https://pixabay.com/photos/tomatoes-pizza-food-meal-cheese-8278168/"
+      },
+      {
+        "scene": 4,
+        "user": "2109DSGN",
+        "page": "https://pixabay.com/photos/dubrovnik-croatia-europe-islands-1644994/"
+      },
+      {
+        "scene": 5,
+        "user": "19306",
+        "page": "https://pixabay.com/photos/croatia-flag-croatian-flag-103110/"
+      },
+      {
+        "scene": 6,
+        "user": "aszak",
+        "page": "https://pixabay.com/photos/cross-stone-against-sky-8192852/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0060_Croatia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Malaysia",
@@ -1208,7 +1286,71 @@
     "twist": "벌금은 최대 10,000링깃으로, 위반 업체는 급격히 감소하고 있습니다.",
     "verify_note": "Malaysia single-use plastic ban 2023, Ministry of Environment Malaysia",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "말레이시아에서는 2023년부터 모든 일회용 플라스틱 사용이 금지됩니다! 정부는 2020년 플라스틱 쓰레기 문제를 해결하고자, 비닐봉투, 플라스틱 빨대, 일회용 식기 등을 전면 금지했어요. 이제 상점과 식당은 재사용 가능한 대체품을 제공해야 합니다. 위반하면 최대 10,000링깃까지 벌금을 물게 되는데, 실제로 벌금을 부과받은 업체가 크게 줄어들고 있다는 소식도 있습니다. 말레이시아의 이런 강력한 조치가 환경 보호에 어떤 변화를 가져올지, 여러분도 눈여겨봐 주세요. 구독하고 더 많은 환경 이야기를 만나보세요!",
+    "title_line1": "말레이시아 일회용 금지",
+    "title_line2": "벌금 1만링깃 실제는",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*플라스틱* 금지!"
+      },
+      {
+        "s": 2,
+        "text": "*빨대* 금지!"
+      },
+      {
+        "s": 4,
+        "text": "*벌금* 최대10천"
+      }
+    ],
+    "image_queries": [
+      "Kuala Lumpur street market",
+      "Reusable shopping bags Kuala Lumpur",
+      "Plastic straw alternative cafe Malaysia",
+      "Recycling bin on sidewalk",
+      "Stainless steel cutlery restaurant",
+      "Beach cleanup Malaysia"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0061_Malaysia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0061_Malaysia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "peterng1618",
+        "page": "https://pixabay.com/photos/kuala-lumpur-petronas-twin-towers-170985/"
+      },
+      {
+        "scene": 2,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/kuala-lumpur-twin-tower-city-lights-1283140/"
+      },
+      {
+        "scene": 3,
+        "user": "danymena88",
+        "page": "https://pixabay.com/photos/dessert-drink-ice-cream-beverage-2199271/"
+      },
+      {
+        "scene": 4,
+        "user": "AndrzejRembowski",
+        "page": "https://pixabay.com/photos/recycle-bin-recycling-recycle-4173651/"
+      },
+      {
+        "scene": 5,
+        "user": "Foundry",
+        "page": "https://pixabay.com/photos/fork-silverware-restaurant-eat-839244/"
+      },
+      {
+        "scene": 6,
+        "user": "jarmoluk",
+        "page": "https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0061_Malaysia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Czech Republic",
@@ -1218,7 +1360,36 @@
     "twist": "공공 달력에는 이름 날이 표시되어 있어, 직장 동료도 서로의 이름 날을 쉽게 확인할 수 있습니다.",
     "verify_note": "Czech name day tradition, české jmeniny, name day celebration Czech Republic",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "체코에서는 생일보다 이름 날을 더 크게 축하한다는 사실, 알고 계셨나요? 체코 전역에서 매일이 누군가의 이름 날이에요. 친구와 가족은 그 날을 맞아 카드와 작은 선물을 건네고, 축하의 말을 전합니다. 많은 사람들은 생일보다 이름 날에 파티를 열고 케이크까지 준비합니다. 흥미롭게도 공공 달력에 모든 이름 날이 표시돼 있어, 직장 동료끼리도 서로의 이름 날을 손쉽게 확인할 수 있답니다. 이렇게 이름 날은 일상 속 작은 축제로 자리 잡고 있습니다. 오늘도 누군가의 이름 날을 기억하고, 따뜻한 인사를 건네보세요! 구독과 좋아요, 알림 설정도 잊지 마세요!",
+    "title_line1": "체코 이름날 축하",
+    "title_line2": "생일보다 크게?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "이름 날을 *축하*한다"
+      },
+      {
+        "s": 4,
+        "text": "생일보다 *파티* 준비"
+      },
+      {
+        "s": 5,
+        "text": "달력에 *이름* 표시"
+      },
+      {
+        "s": 7,
+        "text": "오늘도 *인사* 잊지마"
+      }
+    ],
+    "image_queries": [
+      "Czech Republic birthday cake",
+      "handing gift card",
+      "Prague calendar office desk",
+      "friends celebrating with balloons",
+      "family around table cake",
+      "Czech village street market"
+    ]
   },
   {
     "country": "Madagascar",
@@ -1228,7 +1399,36 @@
     "twist": "심지어 레무르를 사진으로만 촬영해도, 보호구역 내에서는 플래시 사용이 금지되어 있어 몰래 촬영이 어렵습니다.",
     "verify_note": "Madagascar lemur pet ownership law, Madagascar wildlife protection act lemur permit",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "마다가스카르에서는 레무르를 애완동물로 키우려면 특별 허가가 필요합니다! 이 섬은 레무르가 자연에 사는 유일한 나라라서, 멸종 위기 보호법에 따라 레무르를 잡거나 사육하려면 환경부가 발급하는 허가증이 반드시 있어야 합니다. 허가 없이 키우면 높은 벌금과 함께 레무르를 반드시 반환하라는 명령을 받게 됩니다. 또 한 가지 흥미로운 점은, 보호구역 안에서는 플래시를 사용한 촬영이 금지돼 레무르를 사진으로만 찍는 것도 쉽지 않다는 겁니다. 그래서 자연 그대로의 모습을 보려면 인내가 필요하죠. 오늘도 자연을 지키는 법을 기억해 주세요! 구독과 좋아요, 알림 설정도 잊지 마세요!",
+    "title_line1": "마다가스카르 레무르 규제",
+    "title_line2": "허가 없이 키우면?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*레무르* 허가필수"
+      },
+      {
+        "s": 3,
+        "text": "벌금·*반환* 명령"
+      },
+      {
+        "s": 4,
+        "text": "*플래시* 촬영 금지"
+      },
+      {
+        "s": 6,
+        "text": "자연보호 *법* 기억"
+      }
+    ],
+    "image_queries": [
+      "Madagascar forest lemur",
+      "Madagascar wildlife sanctuary",
+      "Lemur hand holding permit",
+      "No flash sign reserve",
+      "Lemur perched on tree branch",
+      "Madagascar coastal cliff sunrise"
+    ]
   },
   {
     "country": "Finland",
