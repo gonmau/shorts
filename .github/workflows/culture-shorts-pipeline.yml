@@ -18,6 +18,9 @@ on:
       count:
         description: "만들 영상 개수"
         default: "3"
+      start_index:
+        description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
+        default: "56"
       auto_verify:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
@@ -32,6 +35,7 @@ jobs:
     timeout-minutes: 60
     env:
       COUNT: ${{ github.event.inputs.count || '3' }}
+      START: ${{ github.event.inputs.start_index || '56' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
@@ -73,8 +77,8 @@ jobs:
           PY
 
       - run: python generate_script.py --limit "$COUNT"
-      - run: python generate_tts.py --limit "$COUNT"
-      - run: python build_video.py --limit "$COUNT" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
+      - run: python generate_tts.py --limit "$COUNT" --start "$START"
+      - run: python build_video.py --limit "$COUNT" --start "$START" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
       - name: 유튜브 비공개 업로드
         if: ${{ env.YT_REFRESH_TOKEN != '' }}
