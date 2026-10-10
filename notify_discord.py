@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""디스코드 알림: 상태 + 아티팩트 링크 + 영상별 유튜브 제목/설명(복사해서 붙여넣기용).
+"""디스코드 알림: 상태 + 아티팩트 링크 + 영상별 유튜브 제목/설명(각각 별도 메시지라 길게 눌러 바로 복사).
 
 환경변수: DISCORD_WEBHOOK_URL, JOB_STATUS, STAGE, RUN_URL, ART_URL, REVIEW_URL
 """
@@ -58,7 +58,9 @@ def main():
               f"다운로드(zip, 14일 보관): {art}\n실행: {run_url}")
     for name, item in items:
         title, desc = youtube_meta(item)
-        post(url, f"🎬 **{name}**\n**제목**\n```\n{title}\n```\n**설명**\n```\n{desc}\n```")
+        post(url, f"🎬 {name} - 아래 두 메시지를 길게 눌러 '텍스트 복사'")
+        post(url, title)   # 제목만
+        post(url, desc)    # 설명만
 
 
 if __name__ == "__main__":
