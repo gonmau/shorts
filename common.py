@@ -58,3 +58,13 @@ def pending_render(db, start=0):
             continue
         out.append((i, f))
     return out
+
+
+def youtube_meta(item):
+    """유튜브에 올릴 제목/설명 (자동 업로드와 디스코드 알림이 같은 문구를 쓴다)."""
+    title = " ".join(filter(None, [item.get("title_line1"), item.get("title_line2")])) or item.get("topic", "")
+    desc = f"{item.get('hook', '')}\n\n"
+    if item.get("image_source") == "pixabay":
+        desc += "Photos: Pixabay (pixabay.com)\n"
+    desc += "#shorts #세계문화 #상식"
+    return f"{title} #shorts"[:100], desc

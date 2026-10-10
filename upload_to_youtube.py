@@ -12,6 +12,8 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
+from common import youtube_meta
+
 DB = Path("facts_db.json")
 
 
@@ -41,15 +43,9 @@ def main():
         path = item.get("video_path_v6")
         if item.get("status_v6") != "video_done" or item.get("youtube_id") or not path or not Path(path).exists():
             continue
-        title = " ".join(filter(None, [item.get("title_line1"), item.get("title_line2")])) or item.get("topic", "")
+        title, description = youtube_meta(item)
         body = {
-            "snippet": {
-                "title": f"{title} #shorts"[:100],
-                "description": f"{item.get('hook', '')}\n\n"
-                + ("Photos: Pixabay (pixabay.com)\n" if item.get("image_source") == "pixabay" else "")
-                + "#shorts #세계문화 #상식",
-                "categoryId": "27",
-            },
+            "snippet": {"title": title, "description": description, "categoryId": "27"},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
         }
         media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)
