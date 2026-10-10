@@ -1,0 +1,100 @@
+# 세계 문화 상식 쇼츠 - 클라우드 자동화 (아이폰에서 실행/검수)
+#
+# 아이폰: GitHub 앱 > Actions > culture-shorts-pipeline > Run workflow
+#   count         : 이번에 만들 영상 개수
+#   auto_verify   : true면 미검증 소재를 사람 검수 없이 verified 처리 (기본 false)
+# 결과: (YT_REFRESH_TOKEN 등록 시) 유튜브에 비공개 업로드 -> YouTube Studio 앱에서 확인 후 공개
+#       (미등록 시) Actions 아티팩트로 mp4 보관
+#
+# Secrets: GROQ_API_KEY (필수) / YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (업로드용, 선택)
+
+name: culture-shorts-pipeline
+
+on:
+  schedule:
+    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "만들 영상 개수"
+        default: "3"
+      auto_verify:
+        description: "미검증 소재 자동 승인 (팩트체크 생략)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      COUNT: ${{ github.event.inputs.count || '3' }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 시스템 의존성 (ffmpeg, 한글 폰트)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+
+      - run: pip install -r requirements.txt
+
+      - name: 소재 보충 (미검증+검증 대기 소재가 적을 때)
+        run: |
+          python - <<'PY' > pending.txt
+          import json, os
+          db = json.load(open('facts_db.json', encoding='utf-8')) if os.path.exists('facts_db.json') else []
+          print(sum(1 for f in db if f.get('status') in ('unverified', 'verified')))
+          PY
+          PENDING=$(cat pending.txt); echo "대기 소재: $PENDING"
+          if [ "$PENDING" -lt 10 ]; then python generate_culture_facts.py --count 12; fi
+
+      - name: 자동 승인 (선택)
+        if: ${{ github.event.inputs.auto_verify == 'true' }}
+        run: |
+          python - <<'PY'
+          import json, os
+          n = int(os.environ['COUNT']); db = json.load(open('facts_db.json', encoding='utf-8')); k = 0
+          for f in db:
+              if f.get('status') == 'unverified' and k < n:
+                  f['status'] = 'verified'; k += 1
+          json.dump(db, open('facts_db.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+          print(f'{k}개 자동 승인')
+          PY
+
+      - run: python generate_script.py --limit "$COUNT"
+      - run: python generate_tts.py --limit "$COUNT"
+      - run: python build_video.py --limit "$COUNT" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
+
+      - name: 유튜브 비공개 업로드
+        if: ${{ env.YT_REFRESH_TOKEN != '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python upload_to_youtube.py --limit "$COUNT"
+
+      - name: facts_db.json 커밋
+        run: |
+          git config user.name "culture-shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add facts_db.json
+          git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
+          git push
+
+      - name: mp4 아티팩트 보관
+        uses: actions/upload-artifact@v4
+        with:
+          name: culture-shorts-videos
+          path: videos/*.mp4
+          retention-days: 14
