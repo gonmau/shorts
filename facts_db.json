@@ -109,8 +109,8 @@
     "created_at": "2026-09-14T05:07:22.472303+00:00",
     "status": "scripted",
     "narration": "일본에서는 새벽 1시가 되면 춤을 추면 체포될 수 있다고? 사실은 1948년에 제정된 ‘풍속법’ 때문에 밤 12시 이후 클럽에서 춤을 추는 것이 불법이었어요. 이 규제는 무려 2015년까지 이어져, 많은 클럽이 영업을 포기하거나 문을 닫아야 했죠. 2015년에 법이 완화되면서 춤은 다시 허용됐지만, 일부 지방자치단체는 아직도 새벽 시간대에 춤을 금지하거나 제한하고 있습니다. 그래서 도쿄와는 달리 지방에서는 시계가 울면 음악이 멈추는 풍경을 볼 수 있죠. 흥미롭지 않나요? 팔로우하면 더 많은 문화 상식 알려드릴게요.",
-    "audio_path_v2": "audio\\0005_일본_v2.mp3",
-    "timing_path_v2": "audio\\0005_일본_v2_timing.json",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0005_일본_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0005_일본_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0005_일본_v5.mp4",
@@ -958,5 +958,85 @@
     "status_tts_v2": "done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0055_Paraguay_v6.mp4",
     "status_v6": "video_done"
+  },
+  {
+    "country": "United Arab Emirates",
+    "topic": "Exotic pet licensing requirement",
+    "hook": "두바이에서는 코끼리를 집에 들이고 싶다면, 먼저 면허를 받아야 합니다!",
+    "body": "UAE에서는 사자, 호랑이, 코끼리 등 특정 야생동물을 개인이 소유하려면 환경부와 동물복지부의 허가를 받아야 합니다. 허가 없이 키우면 높은 벌금과 동물 압류가 이루어집니다.",
+    "twist": "심지어 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함(≈ 140,000 USD)의 벌금을 부과받을 수 있습니다.",
+    "verify_note": "UAE exotic animal license law, Dubai municipality wildlife permit",
+    "created_at": "2026-10-10T10:13:43.995037+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "India",
+    "topic": "전국 단일 사용 플라스틱 전면 금지",
+    "hook": "인도에서는 한 번 쓰고 버리는 플라스틱 빨대가 완전히 사라졌어요!",
+    "body": "2022년부터 인도 12개 주와 연방 직할지에서 일회용 플라스틱(빨대, 컵, 식기류 등) 사용을 전면 금지했습니다. 판매자는 재사용 가능한 대체품을 제공해야 하며, 위반 시 벌금이 부과됩니다.",
+    "twist": "이 법 적용 첫 해에만 1억 5천만 개 이상의 플라스틱 쓰레기가 해변에서 사라진 것으로 추정됩니다.",
+    "verify_note": "India single-use plastic ban 2022 states list, Ministry of Environment, Forest and Climate Change",
+    "created_at": "2026-10-10T10:13:43.995037+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Romania",
+    "topic": "공공장소 음주 금지 규정",
+    "hook": "루마니아에서는 공원에선 술을 마시면 바로 티켓을 받는다니, 믿어지나요?",
+    "body": "루마니아는 2017년부터 수도 부쿠레슈티와 주요 도시의 공원·광장· 거리에서 알코올 음료를 소비하는 것을 금지했습니다. 위반자는 현행법에 따라 150~300레우(약 30–60 USD)의 벌금을 물게 됩니다.",
+    "twist": "하지만 같은 법에 따라, 집에서 만든 전통 와인인 ‘토카이’를 야외 피크닉에 가져가면 예외가 적용됩니다.",
+    "verify_note": "Romania public drinking ban 2017, Romanian Penal Code article on public intoxication",
+    "created_at": "2026-10-10T10:13:43.995037+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "United States",
+    "topic": "플로리다주 코끼리 보행 금지법",
+    "hook": "플로리다에서는 코끼리를 거리로 데려가면 체포될 수 있다는 사실, 알고 계셨나요?",
+    "body": "플로리다 주법 제823.03조는 공공 인도 위에 코끼리, 낙타, 혹은 다른 대형 동물을 걷는 것을 금지하고 있습니다. 위반 시 동물 주인에게 최대 500달러의 벌금이 부과됩니다.",
+    "twist": "법은 실제로 ‘동물의 안전’뿐 아니라 보행자의 안전을 위해 제정됐으며, 이 조항은 1971년 한 서커스가 코끼리를 시내 퍼레이드에 데려가던 사건을 계기로 만들어졌습니다.",
+    "verify_note": "Florida Statutes 823.03 elephant on sidewalks, Florida animal welfare law",
+    "created_at": "2026-10-10T10:13:43.995037+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Croatia",
+    "topic": "원산지 표기법 – ‘Croatian’ 라벨 사용 제한",
+    "hook": "이 나라에서는 ‘Croatian’이라고 적힌 제품이 실제로 현지에서 만든 것일 때만 팔 수 있습니다!",
+    "body": "EU의 원산지 보호 규정에 따라, 크로아티아는 자국산 제품에만 ‘Croatian’ 표기를 허용합니다. 외국에서 만든 와인이나 올리브 오일에 이 라벨을 붙이면 벌금을 물게 됩니다.",
+    "twist": "심지어 전통적인 ‘Croatian 치즈’도 원산지 인증을 받지 못하면 수출이 제한됩니다.",
+    "verify_note": "Croatian origin labeling law, EU protected designation of origin Croatia",
+    "created_at": "2026-10-10T10:14:24.297660+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Malaysia",
+    "topic": "일회용 플라스틱 전면 금지",
+    "hook": "말레이시아에서는 2023년부터 모든 일회용 플라스틱 사용이 금지됩니다!",
+    "body": "말레이시아 정부는 2020년 플라스틱 쓰레기 문제를 해결하기 위해 2023년부터 비닐봉투, 플라스틱 빨대, 일회용 식기 등을 전면 금지했습니다. 상점과 식당은 재사용 가능한 대체품을 제공해야 합니다.",
+    "twist": "벌금은 최대 10,000링깃으로, 위반 업체는 급격히 감소하고 있습니다.",
+    "verify_note": "Malaysia single-use plastic ban 2023, Ministry of Environment Malaysia",
+    "created_at": "2026-10-10T10:14:24.297660+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Czech Republic",
+    "topic": "이름 날(스바니니) 문화, 생일보다 중요한 축하",
+    "hook": "체코에서는 생일보다 이름 날을 더 크게 축하한다는 사실, 알고 계셨나요?",
+    "body": "체코는 매일이 누군가의 이름 날에 해당하며, 친구와 가족은 카드와 작은 선물을 주고 축하합니다. 많은 사람들은 생일보다 이름 날에 파티를 열고 케이크를 준비합니다.",
+    "twist": "공공 달력에는 이름 날이 표시되어 있어, 직장 동료도 서로의 이름 날을 쉽게 확인할 수 있습니다.",
+    "verify_note": "Czech name day tradition, české jmeniny, name day celebration Czech Republic",
+    "created_at": "2026-10-10T10:14:24.297660+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Madagascar",
+    "topic": "여우원숭이(레무르) 애완동물 소유 규제",
+    "hook": "마다가스카르에서는 레무르를 애완동물로 키우려면 특별 허가가 필요합니다!",
+    "body": "마다가스카르는 세계에서 유일하게 레무르가 서식하는 국가이며, 멸종 위기 보호법에 따라 레무르를 잡거나 사육하려면 환경부에서 발급하는 허가증이 필요합니다. 무허가 소유자는 높은 벌금과 동물 반환 명령을 받게 됩니다.",
+    "twist": "심지어 레무르를 사진으로만 촬영해도, 보호구역 내에서는 플래시 사용이 금지되어 있어 몰래 촬영이 어렵습니다.",
+    "verify_note": "Madagascar lemur pet ownership law, Madagascar wildlife protection act lemur permit",
+    "created_at": "2026-10-10T10:14:24.297660+00:00",
+    "status": "unverified"
   }
 ]
