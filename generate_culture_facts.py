@@ -3,7 +3,7 @@
 
 기능:
 1. Claude API로 국가별 흥미로운 문화 상식 소재를 배치 생성
-2. facts_db.json에 누적 저장, 이미 쓴 소재(국가+주제)는 중복 방지
+2. facts_db.json에 누적 저장, 이미 쓴 소재(국가+주제)는 중복 방지 (같은 나라도 주제가 다르면 허용)
 3. 각 소재는 훅 문장 + 본문 설명 + 반전/추가정보 구조로 생성되어
    바로 다음 단계(스크립트→TTS) 파이프라인에 넣을 수 있는 형태
 
@@ -67,7 +67,7 @@ def save_db(db: list[dict]) -> None:
         json.dump(db, f, ensure_ascii=False, indent=2)
 
 
-def used_summary(db: list[dict], limit: int = 60) -> str:
+def used_summary(db: list[dict], limit: int = 80) -> str:
     """최근 사용한 국가+주제 조합을 프롬프트용 텍스트로 요약"""
     recent = db[-limit:]
     if not recent:
@@ -79,7 +79,8 @@ def build_prompt(count: int, used: str) -> str:
     return f"""세계 각국의 흥미로운 문화/관습/법 상식을 유튜브 쇼츠 소재로 {count}개 생성해줘.
 
 조건:
-- 각 소재는 서로 다른 나라를 다룰 것 (같은 나라 중복 금지)
+- 같은 나라가 다시 나와도 되지만, 이미 쓴 주제와 겹치면 안 됨 (같은 나라라면 완전히 다른 관습/법/음식/언어 소재로)
+- 한 번에 생성하는 소재끼리는 되도록 서로 다른 나라로 다양하게
 - 시청자가 "어?" 하고 멈출 만큼 의외성이 있을 것
 - 종교/전쟁/정치적으로 민감한 내용은 제외 (관습, 법, 음식, 언어, 생활문화 위주)
 - 사실 기반이어야 하며, 확인 가능한 정보일 것 (불확실하면 넣지 말 것)
@@ -168,6 +169,19 @@ def generate_facts(
 
         # 실제 반환 개수만큼 진행
         batch = batch[:batch_count]
+        seen = {(str(f.get("country", "")).strip().lower(), str(f.get("topic", "")).strip().lower()) for f in db}
+        uniq = []
+        for f in batch:
+            k = (str(f.get("country", "")).strip().lower(), str(f.get("topic", "")).strip().lower())
+            if k in seen:
+                print(f"  중복 제외: {f.get('country')} / {f.get('topic')}")
+                continue
+            seen.add(k)
+            uniq.append(f)
+        batch = uniq
+        if not batch:
+            remaining -= batch_count
+            continue
         all_facts.extend(batch)
 
         now = datetime.now(timezone.utc).isoformat()
