@@ -14,6 +14,7 @@
 # Secrets: GROQ_API_KEY (필수)
 #          PIXABAY_API_KEY (장면 이미지, 없으면 색 카드로 대체)
 #          YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (유튜브 업로드, 선택)
+#          DISCORD_WEBHOOK_URL (완료/실패 알림 + 아티팩트 링크, 선택)
 
 name: culture-shorts-pipeline
 
@@ -52,6 +53,7 @@ jobs:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v4
 
@@ -135,6 +137,7 @@ jobs:
           git push
 
       - name: mp4 아티팩트 보관
+        id: art
         if: ${{ env.STAGE != 'prepare' }}
         uses: actions/upload-artifact@v4
         with:
@@ -142,3 +145,33 @@ jobs:
           path: videos/*.mp4
           retention-days: 14
           if-no-files-found: warn
+
+      # ---------- 디스코드 알림 ----------
+      - name: 디스코드 알림
+        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          JOB_STATUS: ${{ job.status }}
+          ART_URL: ${{ steps.art.outputs.artifact-url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/review.txt
+        run: |
+          python - <<'PY'
+          import glob, json, os, urllib.request
+          st, stage = os.environ["JOB_STATUS"], os.environ["STAGE"]
+          vids = sorted(glob.glob("videos/*.mp4"))
+          if st != "success":
+              msg = f"❌ 쇼츠 파이프라인 실패 ({stage})\n로그: {os.environ['RUN_URL']}"
+          elif stage == "prepare":
+              msg = f"📝 준비 완료 - review.txt에서 제목/핵심 문구를 고친 뒤 render 실행\n{os.environ['REVIEW_URL']}\n실행: {os.environ['RUN_URL']}"
+          else:
+              art = os.environ.get("ART_URL") or os.environ["RUN_URL"]
+              names = "\n".join("- " + v.split("/")[-1] for v in vids[:10]) or "(생성된 영상 없음)"
+              msg = f"✅ 영상 {len(vids)}개 완료 ({stage})\n{names}\n다운로드(14일 보관): {art}\n실행: {os.environ['RUN_URL']}"
+          req = urllib.request.Request(os.environ["DISCORD_WEBHOOK_URL"],
+              data=json.dumps({"content": msg[:1900]}).encode(),
+              headers={"Content-Type": "application/json", "User-Agent": "culture-shorts-bot"})
+          try:
+              urllib.request.urlopen(req, timeout=20)
+          except Exception as e:
+              print("디스코드 전송 실패:", e)
+          PY
