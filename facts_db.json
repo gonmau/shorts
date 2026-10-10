@@ -1060,8 +1060,75 @@
     "twist": "하지만 같은 법에 따라, 집에서 만든 전통 와인인 ‘토카이’를 야외 피크닉에 가져가면 예외가 적용됩니다.",
     "verify_note": "Romania public drinking ban 2017, Romanian Penal Code article on public intoxication",
     "created_at": "2026-10-10T10:13:43.995037+00:00",
-    "status": "scripted",
-    "narration": "루마니아에서는 공원에선 술을 마시면 바로 티켓을 받는다니, 믿어지나요? 2017년부터 수도 부쿠레슈티와 주요 도시의 공원·광장·거리에서는 알코올 음료를 마시는 것이 금지됐습니다. 이 규정을 어기면 현행법에 따라 150에서 300레우, 즉 약 30–60 달러의 벌금을 물게 됩니다. 그런데 흥미로운 점이 하나 더 있습니다. 같은 법에 따르면, 집에서 직접 만든 전통 와인, ‘토카이’를 야외 피크닉에 가져갈 때는 예외가 적용된다고 합니다. 즉, 직접 만든 토카이 한 병이면 공원에서도 마실 수 있다는 것이죠. 루마니아의 공공 음주 규제, 생각보다 세밀하죠? 더 궁금한 문화 이야기가 있다면 좋아요와 구독 잊지 마세요!"
+    "status": "video_done",
+    "narration": "루마니아에서는 공원에선 술을 마시면 바로 티켓을 받는다니, 믿어지나요? 2017년부터 수도 부쿠레슈티와 주요 도시의 공원·광장·거리에서는 알코올 음료를 마시는 것이 금지됐습니다. 이 규정을 어기면 현행법에 따라 150에서 300레우, 즉 약 30–60 달러의 벌금을 물게 됩니다. 그런데 흥미로운 점이 하나 더 있습니다. 같은 법에 따르면, 집에서 직접 만든 전통 와인, ‘토카이’를 야외 피크닉에 가져갈 때는 예외가 적용된다고 합니다. 즉, 직접 만든 토카이 한 병이면 공원에서도 마실 수 있다는 것이죠. 루마니아의 공공 음주 규제, 생각보다 세밀하죠? 더 궁금한 문화 이야기가 있다면 좋아요와 구독 잊지 마세요!",
+    "title_line1": "루마니아 공원 음주",
+    "title_line2": "티켓받고 토카이 예외",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "공원서 *술* 마시면?"
+      },
+      {
+        "s": 2,
+        "text": "공원*음주*금지"
+      },
+      {
+        "s": 5,
+        "text": "직제*토카이*가능"
+      },
+      {
+        "s": 6,
+        "text": "공원*토카이*한병"
+      }
+    ],
+    "image_queries": [
+      "Bucharest park bench",
+      "Bucharest city square",
+      "Romanian countryside vineyard picnic",
+      "Traditional Romanian wine bottle",
+      "Romanian park fence",
+      "Romanian homemade wine glass"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0058_Romania_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0058_Romania_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "pepperminting",
+        "page": "https://pixabay.com/photos/benches-autumn-park-rest-sit-560435/"
+      },
+      {
+        "scene": 2,
+        "user": "ArvidO",
+        "page": "https://pixabay.com/photos/bucharest-romania-square-building-2711816/"
+      },
+      {
+        "scene": 3,
+        "user": "MARTINOPHUC",
+        "page": "https://pixabay.com/photos/autumn-town-vineyard-7543217/"
+      },
+      {
+        "scene": 4,
+        "user": "WolfBlur",
+        "page": "https://pixabay.com/photos/wine-retro-wine-glass-wine-bottle-2408620/"
+      },
+      {
+        "scene": 5,
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/trees-flags-national-romanian-6963985/"
+      },
+      {
+        "scene": 6,
+        "user": "Quadronet_Webdesign",
+        "page": "https://pixabay.com/photos/red-wine-glass-drink-wine-glass-1004255/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0058_Romania.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "United States",
@@ -1106,7 +1173,32 @@
     "twist": "심지어 전통적인 ‘Croatian 치즈’도 원산지 인증을 받지 못하면 수출이 제한됩니다.",
     "verify_note": "Croatian origin labeling law, EU protected designation of origin Croatia",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "이 나라에서는 ‘Croatian’이라고 적힌 제품이 실제로 현지에서 만든 것일 때만 팔 수 있습니다! EU의 원산지 보호 규정에 따라, 크로아티아는 자국산 제품에만 ‘Croatian’ 표기를 허용합니다. 그래서 외국에서 만든 와인이나 올리브 오일에 이 라벨을 붙이면 법적으로 금지되고, 벌금을 물게 됩니다. 흥미롭게도 전통적인 ‘Croatian 치즈’조차도 원산지 인증을 받지 못하면 수출이 제한됩니다. 즉, 라벨 하나가 그 제품의 진짜 출처를 증명하는 중요한 증거가 되는 셈이죠. 여러분도 해외에서 구매할 때 라벨을 한 번쯤 확인해 보세요! 구독과 좋아요 잊지 마시고, 다음에 또 만나요.",
+    "title_line1": "크로아티아 라벨 규정",
+    "title_line2": "진짜 현지 제품일까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*현지* 제품만"
+      },
+      {
+        "s": 3,
+        "text": "*와인* 라벨 금지"
+      },
+      {
+        "s": 5,
+        "text": "라벨이 *증거* 된다"
+      }
+    ],
+    "image_queries": [
+      "Croatian wine bottle",
+      "Olive oil jar Croatia",
+      "Traditional cheese on wooden board",
+      "Dubrovnik harbor sunrise",
+      "Croatian flag on market stall",
+      "Stone street in Split"
+    ]
   },
   {
     "country": "Malaysia",
