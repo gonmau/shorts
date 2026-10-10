@@ -1590,7 +1590,7 @@
     "twist": "심지어 ‘Apple’ 같은 영문 이름은 아이슬란드식 ‘Aplí’ 로 바꾸어야 할 수도 있다!",
     "verify_note": "Iceland naming committee law allowed names",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아이슬란드에서는 아기의 이름을 정부에 승인 받아야 해요! 아이슬란드에는 ‘이름 위원회’가 존재합니다. 새로 짓는 이름이 아이슬란드 알파벳과 전통에 맞는지 꼼꼼히 검토하죠. 외국식 이름이나 특수문자, 그리고 ‘C’·‘Q’ 같은 글자는 사용이 제한됩니다. 허가받지 않은 이름은 공식 서류에 기재할 수 없어요. 그래서 예를 들어 ‘Apple’ 같은 영문 이름을 쓰고 싶다면, 아이슬란드식으로 ‘Aplí’ 로 바꾸어야 할 수도 있습니다. 이렇게 이름 하나까지도 문화와 언어를 보호하려는 노력이 있답니다. 아이슬란드의 독특한 이름 제도, 궁금하시다면 좋아요와 구독 잊지 마세요!",
     "title_line1": "아이슬란드 이름 승인제",
     "title_line2": "내 이름도 바뀔까?",
@@ -1615,7 +1615,46 @@
       "ancient Icelandic rune stone",
       "paper handwritten name list",
       "old wooden desk ink bottle"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0065_Iceland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0065_Iceland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "TheDigitalArtist",
+        "page": "https://pixabay.com/photos/horses-grazing-pastures-equines-2427513/"
+      },
+      {
+        "scene": 2,
+        "user": "nextvoyage",
+        "page": "https://pixabay.com/photos/iceland-city-reykjavik-architecture-4768893/"
+      },
+      {
+        "scene": 3,
+        "user": "therongexperiment",
+        "page": "https://pixabay.com/photos/church-building-mood-black-simple-3460420/"
+      },
+      {
+        "scene": 4,
+        "user": "Engin_Akyurt",
+        "page": "https://pixabay.com/photos/bust-head-sculpture-art-hellenic-5524961/"
+      },
+      {
+        "scene": 5,
+        "user": "stempow",
+        "page": "https://pixabay.com/photos/invitation-typography-calligraphy-2110452/"
+      },
+      {
+        "scene": 6,
+        "user": "mozlase__",
+        "page": "https://pixabay.com/photos/school-work-write-still-life-851328/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0065_Iceland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Singapore",
@@ -1625,7 +1664,7 @@
     "twist": "하지만 무설탕 캔디를 씹는 건 합법이라, 껌 대신 캔디를 씹는 사람들이 늘었다!",
     "verify_note": "Singapore chewing gum ban 1992",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "싱가포르에서는 껌을 사면 벌금을 물어요! 1992년, 정부는 공공장소 청결을 위해 껌 판매를 전면 금지했어요. 거리나 지하철에 남은 껌 자국을 없애기 위한 조치였죠. 그래서 일반 가게에서는 껌을 살 수 없고, 치료용 껌도 의사 처방이 있어야 약국에서만 구입할 수 있습니다. 그런데 흥미로운 점은, 무설탕 캔디를 씹는 건 여전히 합법이라는 사실이에요. 그래서 많은 사람들이 껌 대신 캔디를 씹으며 스트레스를 풀고 있답니다. 싱가포르의 깨끗한 거리 비결, 여러분도 한번 생각해 보세요!  \n\n더 알고 싶다면 구독과 좋아요 잊지 마세요!",
     "title_line1": "싱가포르껌금지",
     "title_line2": "벌금대신캔디?",
@@ -1654,7 +1693,46 @@
       "gum wrapper on sidewalk",
       "sugar-free candy pieces",
       "person chewing candy"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0066_Singapore_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0066_Singapore_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "sgxp",
+        "page": "https://pixabay.com/photos/women-bicycle-street-geylang-street-6781342/"
+      },
+      {
+        "scene": 2,
+        "user": "binmassam",
+        "page": "https://pixabay.com/photos/subway-businessman-walk-walking-4807266/"
+      },
+      {
+        "scene": 3,
+        "user": "jarmoluk",
+        "page": "https://pixabay.com/photos/library-books-bookcases-bookshelves-488690/"
+      },
+      {
+        "scene": 4,
+        "user": "WOKANDAPIX",
+        "page": "https://pixabay.com/photos/gum-vintage-advertisement-retro-654238/"
+      },
+      {
+        "scene": 5,
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/tea-fruit-tea-sugar-candy-sugar-598346/"
+      },
+      {
+        "scene": 6,
+        "user": "GiselaFotografie",
+        "page": "https://pixabay.com/photos/chewing-gum-child-candy-dirty-1359237/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0066_Singapore.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Namibia",
@@ -1664,7 +1742,57 @@
     "twist": "위반 시 10,000 나미비아 달러(약 700 USD) 이상의 벌금이 부과된다!",
     "verify_note": "Namibia wildlife distance law national parks",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "나미비아에서는 사파리 중에 사자를 20미터 이상 떨어져야 해요! 나미비아 국립공원 관리법에 따르면, 사자·코끼리·표범 같은 대형 야생동물과는 최소 20 m 거리를 유지해야 합니다. 이는 동물에게 스트레스를 주지 않고, 예기치 않은 사고를 막기 위한 조치죠. 공원 입구에서 안내 직원이 직접 설명하고, 곳곳에 ‘20 m 거리 유지’ 표지판도 설치돼 있어요. 만약 이 규칙을 어기면 10,000 나미비아 달러, 즉 약 700 달러 이상의 벌금을 물게 됩니다. 이렇게 엄격하게 관리하는 덕분에 관광객도 안전하고, 야생동물도 평온하게 살아갈 수 있습니다. 나미비아 사파리를 계획 중이라면, 꼭 거리 규칙을 기억해주세요!  \n좋아요와 구독, 알림 설정도 잊지 마세요!",
+    "title_line1": "나미비아 사파리 거리",
+    "title_line2": "벌금 1만 나미비아?",
+    "image_queries": [
+      "lion in Namibian savanna",
+      "elephant herd Namibia",
+      "leopard on tree branch Namibia",
+      "national park ranger briefing",
+      "20 meter distance marker sign",
+      "tourist vehicle safari landscape"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0067_Namibia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0067_Namibia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Sponchia",
+        "page": "https://pixabay.com/photos/lions-couple-safari-pair-577104/"
+      },
+      {
+        "scene": 2,
+        "user": "TeeFarm",
+        "page": "https://pixabay.com/photos/elephant-namibia-infant-water-5015964/"
+      },
+      {
+        "scene": 3,
+        "user": "strichpunkt",
+        "page": "https://pixabay.com/photos/snow-leopard-leopard-big-cat-snow-1985510/"
+      },
+      {
+        "scene": 4,
+        "user": "Gruendercoach",
+        "page": "https://pixabay.com/photos/yellowstone-national-park-geyser-6729237/"
+      },
+      {
+        "scene": 5,
+        "user": "Paul_Henri",
+        "page": "https://pixabay.com/photos/church-christianity-religion-5400318/"
+      },
+      {
+        "scene": 6,
+        "user": "onenkint12",
+        "page": "https://pixabay.com/photos/adventure-jeep-br-car-trip-travel-2938233/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0067_Namibia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Switzerland",
@@ -1674,7 +1802,32 @@
     "twist": "게다가, 일부 주에서는 기니피그를 전용 침대까지 제공해야 한다는 규정까지 있어요!",
     "verify_note": "Switzerland guinea pig law, animal welfare legislation, canton of Zurich guinea pig companionship",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "스위스에서는 기니피그를 혼자 기를 수 없어요! 스위스 동물복지법에 따르면 기니피그는 사회성이 높은 동물로 인정돼 최소 두 마리 이상을 함께 키워야 합니다. 혼자 두면 법을 위반한 것이 되고, 벌금이 부과될 수 있다는 점, 기억하세요. 특히 취리히 주 같은 일부 지역에서는 기니피그에게 전용 침대까지 제공하도록 규정하고 있습니다. 작은 침대라도 준비해 주면, 두 마리 친구가 편안하게 쉴 수 있죠. 여러분도 반려동물을 키울 때, 그들의 사회적 필요를 꼭 챙겨 주세요. 도움이 되셨다면 좋아요와 구독, 알림 설정까지 잊지 마세요!",
+    "title_line1": "스위스 기니피그 규정",
+    "title_line2": "혼자키면 벌금?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "기니피그 *혼자* 금지"
+      },
+      {
+        "s": 2,
+        "text": "두 마리 *필수* 법"
+      },
+      {
+        "s": 3,
+        "text": "위반 시 *벌금* 부과"
+      }
+    ],
+    "image_queries": [
+      "two guinea pigs together",
+      "guinea pig bed wooden",
+      "Swiss alpine meadow",
+      "Zurich city street",
+      "Swiss farm cottage",
+      "guinea pig cage interior"
+    ]
   },
   {
     "country": "Colombia",
@@ -1684,7 +1837,28 @@
     "twist": "이때 거리에서 열린 플래시몹 댄스와 라이브 음악 공연도 동시 진행돼요!",
     "verify_note": "Ciclovía Bogotá, Colombia weekly car‑free event, 1974, 120 km",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "콜롬비아에서는 매주 일요일마다 도로가 차단돼요! 보고타를 포함한 여러 도시에서는 일요일 아침에 120km가 넘는 주요 도로를 차 없는 거리로 바꾸고, 시민들은 자전거를 타거나 걷고, 조깅을 즐깁니다. 이 행사는 1974년에 시작돼 지금은 매주 200만 명 이상이 참여할 정도로 커졌어요. 거리 한가운데서는 플래시몹 댄스와 라이브 음악 공연이 동시에 펼쳐져, 평범한 도로가 순간 문화 축제로 변신합니다. 여러분도 일요일엔 차를 내리고, 자유로운 거리에서 몸을 움직여 보세요. 구독과 좋아요, 알림 설정도 잊지 마세요!",
+    "title_line1": "콜롬비아 일요일 무차",
+    "title_line2": "거리엔 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*일요일* 차단!"
+      },
+      {
+        "s": 3,
+        "text": "*참여* 200만명"
+      },
+      {
+        "s": 4,
+        "text": "거리 *축제* 변신!"
+      },
+      {
+        "s": 5,
+        "text": "*자유* 일요일 움직여"
+      }
+    ]
   },
   {
     "country": "Ecuador",
@@ -1744,6 +1918,126 @@
     "twist": "첫 달에만 200,000명 이상의 여성들이 운전 면허를 신청했다.",
     "verify_note": "Saudi Arabia women driving law 2018 first month applications",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Estonia",
+    "topic": "e‑Residency digital citizenship program",
+    "hook": "에스토니아에서는 인터넷만 있으면 유럽 회사를 설립할 수 있다!",
+    "body": "2014년에 시작된 e‑Residency는 전 세계 누구에게나 디지털 신분증을 제공해, 현지 방문 없이도 회사를 등록하고, 은행 계좌를 열고, 전자 서명을 할 수 있게 한다. 이 제도는 디지털 노마드와 창업자를 위한 혁신적인 법제다.",
+    "twist": "이 디지털 시민권을 가진 사람 중 30%는 실제 에스토니아에 거주하지 않는다.",
+    "verify_note": "Estonia e‑Residency official website",
+    "created_at": "2026-10-10T23:40:10.814759+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Philippines",
+    "topic": "Boodle fight communal eating tradition",
+    "hook": "필리핀 군인들이 식탁을 바닥으로 뒤집어 놓고 밥을 먹는다고?",
+    "body": "Boodle fight은 음식들을 바나나 잎 위에 펼쳐 놓고, 손으로 모두가 동시에 먹으며 섞어 먹는 방식이다. 원래 필리핀 군대에서 대규모 병사에게 빠르게 식사를 제공하기 위해 시작됐으며, 현재는 축하 행사와 파티에서 널리 퍼졌다.",
+    "twist": "이 전통은 이제 국제 요리 대회에서도 심사 기준으로 채택되고 있다.",
+    "verify_note": "Boodle fight Philippines tradition",
+    "created_at": "2026-10-10T23:40:10.814759+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Netherlands",
+    "topic": "Fietsstraat – bicycle‑priority streets",
+    "hook": "네덜란드 도로에서는 차보다 자전거가 먼저 간다!",
+    "body": "네덜란드 도시들은 일부 도로를 ‘fietsstraat’(자전거 도로)로 지정해 자전거에게 법적 우선권을 부여한다. 자동차는 속도를 낮추고 자전거가 없을 때만 진입할 수 있어, 안전한 자전거 이용과 교통 흐름을 촉진한다.",
+    "twist": "이러한 도로에서는 사고율이 일반 도로보다 40% 낮다.",
+    "verify_note": "Netherlands fietsstraat traffic rule statistics",
+    "created_at": "2026-10-10T23:40:10.814759+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Quiet cars on trains (静かな車)",
+    "hook": "일본 신칸센에선 '조용히' 타야만 탈 수 있다!",
+    "body": "일본의 여러 신칸센 및 통근 열차에는 ‘조용한 차’가 지정돼 승객이 휴대폰을 무음으로 하고 대화를 삼가야 한다. 이 제도는 통근자들의 집중과 휴식을 위해 도입됐으며, 표지판과 안내 방송으로 명확히 표시된다.",
+    "twist": "조용한 차에 들어가면 위반 시 최대 30분까지 정차가 제한될 수 있다.",
+    "verify_note": "Japan quiet car train policy",
+    "created_at": "2026-10-10T23:40:10.814759+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Wales",
+    "topic": "Mandatory bilingual Welsh–English public signage",
+    "hook": "웰스에서는 모든 거리 표지판이 두 언어로 적혀 있어야 한대!",
+    "body": "2011년 웰스 언어법에 따라 공공기관, 도로 표지판, 학교 등 모든 공식 표지판을 웨일스어와 영어로 동시에 표시해야 합니다. 위반 시 벌금이 부과될 수 있어요.",
+    "twist": "심지어 새로운 건물도 입주 전, 외관에 웨일스어 표지판을 설치해야 승인받을 수 있습니다.",
+    "verify_note": "Welsh Language Act 2011 bilingual signage requirement",
+    "created_at": "2026-10-10T23:40:20.861540+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Onsen bathing etiquette: no towels in the water",
+    "hook": "일본 온천에서는 수건을 물에 넣으면 큰 실수!",
+    "body": "온천에 들어가기 전 몸을 깨끗이 씻고, 물에 들어갈 때는 작은 수건을 머리 위에 얹어 두는 것이 기본 예절입니다. 수건을 물속에 넣으면 온천 물을 오염시킨다고 여겨져 강력히 금지됩니다.",
+    "twist": "수건을 물에 빠뜨리면 온천 주인에게 직접 청소비를 물어야 할 수도 있습니다.",
+    "verify_note": "Japanese onsen etiquette towel in water prohibition",
+    "created_at": "2026-10-10T23:40:20.861540+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "Everyman's right to pick wild berries and mushrooms",
+    "hook": "핀란드에서는 숲에서 베리와 버섯을 따는 게 법으로 보장돼!",
+    "body": "핀란드의 '자연 이용권'(Everyman's Right) 덕분에 누구든지 공공 산림에서 베리, 버섯, 허브 등을 자유롭게 채집할 수 있습니다. 단, 상업적 목적이 아니고 자연을 훼손하지 않아야 합니다.",
+    "twist": "하지만 같은 날 같은 장소에서 같은 종류를 너무 많이 따면 지역 주민에게 경고를 받을 수 있어요.",
+    "verify_note": "Finland Everyman's Right berry picking law",
+    "created_at": "2026-10-10T23:40:20.861540+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Argentina",
+    "topic": "Mate drinking ritual: passing the gourd clockwise",
+    "hook": "아르헨티나에서는 마테를 마실 때 반드시 시계 방향으로 넘겨야 해!",
+    "body": "마테는 큰 호박에 차를 끓인 물을 부어 마시는 전통 음료로, 친구들 사이에서 순서대로 마시며 'cebador'가 물을 부어 줍니다. 가루가 남은 마테는 다음 사람이 받으며, 항상 시계 방향으로 넘기는 것이 예의입니다.",
+    "twist": "한 번에 마시고 남은 마테를 다시 끓여 마시는 're-cimarrón'은 실수로 여겨져, 같은 사람에게 연속으로 주면 실례가 됩니다.",
+    "verify_note": "Argentinian mate drinking etiquette clockwise passing",
+    "created_at": "2026-10-10T23:40:20.861540+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Iceland",
+    "topic": "Patronymic and matronymic naming system",
+    "hook": "이곳에서는 성이 없고, 아버지 이름에 ‘son’이나 ‘dóttir’가 붙어요!",
+    "body": "아이의 성은 부모 중 한 사람의 이름에 ‘son’(아들) 또는 ‘dóttir’(딸)를 붙여 만든다. 가족 전체가 같은 성을 쓰는 것이 아니라 세대마다 이름이 바뀌어 혈통을 바로 알 수 있다. 이 규칙은 법으로 보호받으며, 외국식 성을 쓰려면 이름 위원회의 허가가 필요하다.",
+    "twist": "하지만 최근에는 외국에서 온 가족이 고유 성을 유지하도록 허용되는 경우도 늘고 있다.",
+    "verify_note": "Iceland patronymic naming law, Iceland Naming Committee",
+    "created_at": "2026-10-10T23:40:55.301359+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Portugal",
+    "topic": "Voting age lowered to 16 for all elections",
+    "hook": "포르투갈에서는 16살도 국회의원에 투표할 수 있다니?",
+    "body": "2015년 개정된 헌법에 따라 포르투갈은 16세부터 지방·지역·전국 선거에 투표할 수 있게 되었다. 정부는 청년 참여를 높이고 정치 교육을 강화하기 위해 이 조치를 도입했다. 16·17세 청년들은 투표권을 가짐과 동시에 일부 지방 선거에 후보로 출마할 수도 있다.",
+    "twist": "16세 청년이 지방 자치단체 의회에 직접 입후보할 수 있는 유럽 최저 연령이다.",
+    "verify_note": "Portugal voting age 16 law 2015, Portuguese electoral reforms",
+    "created_at": "2026-10-10T23:40:55.301359+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Crying rooms (Nakai Shitsu) for mothers in public places",
+    "hook": "일본 지하철역에 '울음방'이 있다는 거, 들어보셨나요?",
+    "body": "도쿄·오사카 등 주요 역과 공항, 대형 쇼핑몰에는 소음 차단 설계된 ‘울음방’이 마련돼 있다. 엄마들은 이 방에서 아기를 안아 달래거나 모유 수유를 할 수 있으며, 기저귀 교환대와 소형 냉장고까지 구비돼 있다. 2000년대 초부터 출산·육아 친화 정책의 일환으로 확대되었다.",
+    "twist": "일부 울음방에는 ‘아기 울음소리 자동 재생’ 기능이 있어 주변 소음과 섞어 아이를 진정시키는 데 도움을 준다.",
+    "verify_note": "Japan crying rooms public facilities, Nakai Shitsu Japan",
+    "created_at": "2026-10-10T23:40:55.301359+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Lithuania",
+    "topic": "Užgavėnės – pancake and devil festival",
+    "hook": "리투아니아에서는 겨울을 쫓아내기 위해 악마 복장을 입고 팬케이크를 던진다!",
+    "body": "매년 사순절 전 화요일에 열리는 우즈가베네스는 전통적인 이교도 축제로, 사람들은 악마 가면을 쓰고 버드나무 가지로 서로를 휘두른다. 가장 중요한 음식은 ‘바레네스’라 불리는 얇은 팬케이크로, 햇빛과 따뜻함을 상징한다. 이 행사는 겨울을 몰아내고 봄을 맞이한다는 의미를 담고 있다.",
+    "twist": "빌뉴스 시에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끌며, 왕관 대신 큰 팬케이크를 머리에 얹는다.",
+    "verify_note": "Lithuania Užgavėnės festival tradition, Užgavėnės pancakes",
+    "created_at": "2026-10-10T23:40:55.301359+00:00",
     "status": "unverified"
   }
 ]
