@@ -3778,7 +3778,7 @@
     "twist": "독수리는 주인이 사망하면 가족에게 물려받아 세대를 이어 사용됩니다.",
     "verify_note": "Kyrgyz eagle hunting tradition berkutchi child training golden eagle",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이 아이는 5살에 금독수리를 잡아 훈련시켜요! 키르기스스탄 고산 마을에서는 5~7살이 된 소년들이 새끼 금독수리를 직접 손으로 잡아 길러요. 겨울이 오면 눈밭으로 나가, 산 정상에서 조용히 독수리를 띄우면, 마치 낙하산처럼 사냥감이 내려옵니다. 이렇게 훈련된 독수리는 눈밭에서 빠르게 움직이는 토끼나 작은 사슴을 잡아 주인에게 가져다 줍니다. 가장 놀라운 점은, 주인이 세상을 떠나면 그 금독수리를 가족에게 물려준다는 사실이에요. 한 마리의 독수리가 세대를 이어가며 전통을 이어가는 모습은 마치 살아있는 유산과도 같습니다. 이렇게 어린 시절부터 시작되는 금독수리 사냥은 자연과 인간이 한 몸이 되는 특별한 문화, 여러분도 한번 떠올려 보세요.",
     "title_line1": "키르기스탄 금독수리",
     "title_line2": "5살아이 직접 길러요!",
@@ -3807,7 +3807,46 @@
       "Kyrgyzstan high altitude landscape",
       "eagle delivering rabbit",
       "traditional falconry equipment"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0094_Kyrgyzstan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0094_Kyrgyzstan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/kyrgyzstan-mountains-valley-hill-4661907/"
+      },
+      {
+        "scene": 2,
+        "user": "sharkolot",
+        "page": "https://pixabay.com/photos/golden-eagle-eagle-bird-nature-7555959/"
+      },
+      {
+        "scene": 3,
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/white-tailed-eagle-fish-hunting-2015098/"
+      },
+      {
+        "scene": 4,
+        "user": "YaoMuyu",
+        "page": "https://pixabay.com/photos/machhapuchhre-fishtail-10489623/"
+      },
+      {
+        "scene": 5,
+        "user": "Kathy_Büscher",
+        "page": "https://pixabay.com/photos/adler-eagle-bird-white-tailed-eagle-2386314/"
+      },
+      {
+        "scene": 6,
+        "user": "jackmac34",
+        "page": "https://pixabay.com/photos/raptor-falcon-hunt-chaperone-2368749/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0094_Kyrgyzstan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Argentina",
@@ -3817,7 +3856,7 @@
     "twist": "이 퍼레이드에서 쓰이는 드럼은 매년 새로 만들지 않고, 30년 이상 된 고대 드럼을 복원해 사용합니다.",
     "verify_note": "Buenos Aires Candombe drumming tradition La Plata neighborhood",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아르헨티나 거리엔 아프리카식 드럼이 울려 퍼진다! 부에노스아이레스 라 플라타 지역에서는 매주 토요일 저녁, 주민들이 오래된 배럴을 재활용해 만든 거대한 드럼을 끌고 ‘캔도밥’ 퍼레이드를 엽니다. 드럼을 두드리며 화려한 색 옷을 입고, 아이들은 작은 깃털을 달아 리듬에 맞춰 신나게 춤을 춰요. 흥미로운 점은 이 퍼레이드에 쓰이는 드럼이 새로 만든 것이 아니라, 30년 이상 된 고대 드럼을 복원해 매년 사용한다는 사실입니다. 오래된 악기가 살아 숨 쉬며 오늘도 거리 곳곳에 울려 퍼지는 그 소리는, 시간과 전통이 하나가 된 순간을 선사합니다. 그 울림 뒤엔 과연 또 어떤 이야기가 숨겨져 있을까요?",
     "title_line1": "부에노스아이레스 드럼",
     "title_line2": "30년 드럼이 살아나요",
@@ -3842,7 +3881,46 @@
       "old restored drum Argentina",
       "children dancing with feathers",
       "La Plata Saturday night celebration"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0095_Argentina_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0095_Argentina_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Vladvictoria",
+        "page": "https://pixabay.com/photos/marching-band-band-parade-school-4223023/"
+      },
+      {
+        "scene": 2,
+        "user": "KAVOWO",
+        "page": "https://pixabay.com/photos/paper-texture-wrapping-paper-3155438/"
+      },
+      {
+        "scene": 3,
+        "user": "489327",
+        "page": "https://pixabay.com/photos/carnival-woman-costume-orange-red-476816/"
+      },
+      {
+        "scene": 4,
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/ford-mustang-car-vehicle-red-car-2705402/"
+      },
+      {
+        "scene": 5,
+        "user": "2147792",
+        "page": "https://pixabay.com/photos/mama-children-to-dance-fun-family-5098862/"
+      },
+      {
+        "scene": 6,
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/ecuador-blue-footed-boobies-wildlife-4259426/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0095_Argentina.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Spain",
@@ -3852,7 +3930,36 @@
     "twist": "이 의식은 1620년부터 이어져 왔으며, 오늘날에도 참가비는 전통적인 ‘소금과 빵’으로 지급된다.",
     "verify_note": "El Colacho baby jumping festival Castrillo de Murcia 1620 tradition",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "스페인 작은 마을에서 악마가 아기를 뛰어넘는다! 매년 6월, 카스트릴로 데 무르시아의 ‘엘 콜라초’ 행사에선 남자들이 악마 복장을 하고 매트 위에 누워 있는 신생아 위를 뛰어넘습니다. 전통적으로 이 의식은 아기를 악령으로부터 보호하고 죄악을 씻어낸다고 믿어 왔죠. 주민 수백 명이 모여 축제를 지켜보지만, 아기들은 전혀 다치지 않습니다. 이 독특한 풍습은 1620년부터 이어져 온 오래된 전통이며, 오늘도 참가비는 전통적인 ‘소금과 빵’으로 지급됩니다. 악마가 뛰어넘은 뒤, 마치 새 힘을 얻은 듯 아기에게 남는 미소는 이 축제가 여전히 살아 숨쉬는 이유를 말해줍니다. 과연 다음 해에도 악마는 또다시 뛰어넘을까요?",
+    "title_line1": "스페인 악마, 아기 위",
+    "title_line2": "다음엔 또 뛰어볼까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "악마가 *뛰어넘는다*"
+      },
+      {
+        "s": 2,
+        "text": "악마 복장 *점프*"
+      },
+      {
+        "s": 3,
+        "text": "아기 보호 *악령*"
+      },
+      {
+        "s": 4,
+        "text": "수백 명이 *축제*"
+      }
+    ],
+    "image_queries": [
+      "Spain village festival",
+      "baby on mat",
+      "demon costume jumper",
+      "crowd watching ceremony",
+      "salt and bread offering",
+      "Castile la Mancha streets"
+    ]
   },
   {
     "country": "Japan",
@@ -3862,7 +3969,32 @@
     "twist": "법 개정 이후 첫 여성 양조사가 만든 사케는 국제 대회에서 금메달을 휩쓸었다.",
     "verify_note": "Japan 2018 sake brewing women law gender restriction removed",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "일본에서 300년간 금지됐던 여성 양조사가 드디어 허용됐어요! 전통적으로 사케 양조는 남성만 할 수 있다는 ‘온마’ 규정이 있었지만, 2018년 일본 정부가 양조 면허 신청 시 성별 제한을 없애는 법을 통과시켰습니다. 그 결과, 이제 여성도 정식으로 사케 양조사가 될 수 있게 되었고, 도쿄와 교토 곳곳에 여성 양조장이 새롭게 늘어나고 있습니다. 특히 법 개정 이후 첫 여성 양조사가 만든 사케가 국제 대회에서 금메달을 휩쓸면서, 여성 양조사의 가능성을 전 세계에 입증했죠. 과연 앞으로 사케 세계는 어떤 변화를 맞이할까요?",
+    "title_line1": "300년 금지 사케",
+    "title_line2": "여성 양조사 금메달?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "300년 금지 *여성*"
+      },
+      {
+        "s": 2,
+        "text": "면허 *성별* 해제"
+      },
+      {
+        "s": 4,
+        "text": "첫 여성 *금메달*"
+      }
+    ],
+    "image_queries": [
+      "Japanese sake brewing equipment",
+      "Tokyo sake brewery interior",
+      "Kyoto traditional fermentation vat",
+      "Female brewer holding sake bottle",
+      "Sake barrels stacked in warehouse",
+      "Gold medal award ceremony sake"
+    ]
   },
   {
     "country": "Finland",
@@ -3872,7 +4004,7 @@
     "twist": "하지만 2022년부터는 2일 이상 연속 캠핑 시 현지 주민에게 작은 기부금을 내야 하는 새로운 규정이 추가되었다.",
     "verify_note": "Finland Jokamiehen oikeus camping two nights law 2022",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Kenya",
@@ -3882,7 +4014,7 @@
     "twist": "전통적으로 새 전사들은 첫 사냥을 성공시켜야만 완전한 전사로 인정받으며, 최근에는 이 의식을 관광객에게 공개해 지역 경제를 활짝 열고 있다.",
     "verify_note": "Maasai Eunoto warrior initiation ceremony jump over log Kenya",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Mongolia",
