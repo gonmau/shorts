@@ -62,7 +62,6 @@ def pending_render(db, start=0):
 
 FIXED_TAGS = ["세계문화", "해외여행", "이색상식", "문화차이", "세계여행"]
 CHANNEL_BLURB = "🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!"
-CTA = "👍 구독과 좋아요, 알림 설정도 잊지 마세요!"
 
 
 def _tagify(text):
@@ -87,7 +86,7 @@ def youtube_tags(item):
 
 def youtube_meta(item):
     """유튜브에 올릴 제목/설명. 자동 업로드와 디스코드 알림이 같은 문구를 쓴다.
-    제목: 나라 이름이 없으면 앞에 붙여 검색에 걸리게 함. 설명: 훅 -> 본문 -> 반전 -> 채널 소개 -> 구독 유도 -> 해시태그.
+    제목: 나라 이름이 없으면 앞에 붙여 검색에 걸리게 함. 설명: 훅 -> 본문 -> 반전 -> 채널 소개 -> 해시태그.
     """
     title = " ".join(filter(None, [item.get("title_line1"), item.get("title_line2")])) or item.get("topic", "")
     country = str(item.get("country", "")).strip()
@@ -103,7 +102,6 @@ def youtube_meta(item):
     if item.get("twist"):
         parts.append(f"💡 {str(item['twist']).strip()}")
     parts.append(CHANNEL_BLURB)
-    parts.append(CTA)
     if item.get("image_source") == "pixabay":
         parts.append("Photos: Pixabay (pixabay.com)")
     tags = youtube_tags(item)
