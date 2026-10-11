@@ -3256,7 +3256,7 @@
     "twist": "빌뉴스 시에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끌며, 왕관 대신 큰 팬케이크를 머리에 얹는다.",
     "verify_note": "Lithuania Užgavėnės festival tradition, Užgavėnės pancakes",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "리투아니아에서는 겨울을 쫓아내기 위해 악마 복장을 입고 팬케이크를 던진다고 합니다! 매년 사순절 전 화요일, ‘우즈가베네스’라는 전통 이교도 축제가 열리는데요. 사람들은 악마 가면을 쓰고 버드나무 가지를 휘두르며 거리로 나섭니다. 이때 가장 중요한 음식은 ‘바레네스’라는 얇은 팬케이크인데, 햇빛과 따뜻함을 상징한다죠. 이렇게 팬케이크와 악마 놀이를 통해 겨울을 몰아내고 봄을 맞이한다는 의미가 담겨 있습니다. 특히 빌뉴스에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끕니다. 왕관 대신 큰 팬케이크를 머리에 얹고 행진하는 모습은 정말 눈길을 사로잡습니다. 악마와 팬케이크, 그리고 왕의 독특한 조합이 만든 이 축제는 겨울을 물리치는 리투아니아 사람들의 뜨거운 열망을 그대로 보여줍니다. 과연 다음 해에도 같은 방식으로 겨울을 몰아낼 수 있을까요?",
     "title_line1": "리투아니아 악마 축제",
     "title_line2": "겨울을 어떻게 몰아낼까",
@@ -3281,7 +3281,46 @@
       "Vilnius parade festival",
       "pancake crown costume",
       "wild willow branches"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0087_Lithuania_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0087_Lithuania_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "fernandozhiminaicela",
+        "page": "https://pixabay.com/photos/parade-carnival-women-4879243/"
+      },
+      {
+        "scene": 2,
+        "user": "NickyPe",
+        "page": "https://pixabay.com/photos/krampus-devil-mask-tradition-7573319/"
+      },
+      {
+        "scene": 3,
+        "user": "misskursovie2013",
+        "page": "https://pixabay.com/photos/food-holiday-shrovetide-pancakes-4895773/"
+      },
+      {
+        "scene": 4,
+        "user": "picsbyjameslee",
+        "page": "https://pixabay.com/photos/christmas-winter-merry-christmas-4705290/"
+      },
+      {
+        "scene": 5,
+        "user": "jackmac34",
+        "page": "https://pixabay.com/photos/galette-des-rois-crown-pancake-1119699/"
+      },
+      {
+        "scene": 6,
+        "user": "Wolfgang_Hasselmann",
+        "page": "https://pixabay.com/photos/bird-winter-nature-10368043/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0087_Lithuania.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Nepal",
@@ -3291,7 +3330,7 @@
     "twist": "정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었습니다.",
     "verify_note": "Kumari living goddess Nepal selection criteria, Kumari tradition Kathmandu, Kumari temple health checks",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "네팔에서는 아직도 살아있는 여신을 왕궁에 모신다! 카트만두 쿠마리 사원에선 사춘기 전 소녀를 ‘쿠마리’로 선정해 일 년 내내 궁전에서 생활하게 합니다. 그녀는 국가 행사와 축제에 등장해 신성한 존재로 숭배받으며, 일반 사람들은 눈을 마주치지 못하도록 조심합니다. 흥미롭게도 정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었죠. 그만큼 완벽함을 요구하는 전통이란, 살아있는 여신을 지키는 엄격한 관리 체계가 뒤에 숨겨져 있다는 사실, 생각보다 깊은 이야기 아닐까요?",
     "title_line1": "네팔 살아 여신",
     "title_line2": "왕궁에서 교체될까?",
@@ -3316,7 +3355,46 @@
       "royal procession Kathmandu",
       "government health checkup",
       "festival crowd Nepal"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0088_Nepal_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0088_Nepal_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "sachinMitl",
+        "page": "https://pixabay.com/photos/old-building-building-india-delhi-7130386/"
+      },
+      {
+        "scene": 2,
+        "user": "chandanlosr",
+        "page": "https://pixabay.com/photos/janaki-temple-temple-building-388863/"
+      },
+      {
+        "scene": 3,
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/boat-river-woman-young-lake-6551183/"
+      },
+      {
+        "scene": 4,
+        "user": "photodrishti",
+        "page": "https://pixabay.com/photos/kathmandu-polluted-kathmandu-4944427/"
+      },
+      {
+        "scene": 5,
+        "user": "drshohmelian",
+        "page": "https://pixabay.com/photos/dentist-dental-care-dentistry-teeth-2530990/"
+      },
+      {
+        "scene": 6,
+        "user": "suman",
+        "page": "https://pixabay.com/photos/culture-festival-child-nepal-101671/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0088_Nepal.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Iceland",
@@ -3326,7 +3404,71 @@
     "twist": "우회 설계로 인해 도로 길이가 2km 늘고 비용이 120만 달러가 추가됐지만, 이후 해당 구역은 문화유산 보호구역으로 지정되었습니다.",
     "verify_note": "Iceland elf rock road reroute 2015, Huldufólk road project, Icelandic planning authority elf rock",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "아이슬란드에서는 도로를 바꾸면 요정이 울어! 2015년 고속도로 건설 현장에서 작업팀이 ‘숨은 요정 바위’를 발견했다는 보고를 받자, 현장은 즉시 멈추었습니다. 아이슬란드에는 요정 서식지를 보호한다는 비공식 지침이 있어, 그 바위가 있는 구역을 피하도록 설계해야 했습니다. 그래서 원래 계획보다 도로를 우회시키게 되었고, 결과적으로 도로 길이가 약 2km 늘어났습니다. 추가 비용은 무려 120만 달러에 달했지만, 그 지역은 이후 문화유산 보호구역으로 지정되었습니다. 요정 바위 하나 때문에 길이와 비용이 크게 늘었지만, 오늘도 그곳은 요정들의 고향으로 남아 있습니다. 결국 인간이 만든 길보다 요정의 이야기가 더 오래 기억될지도 모르겠네요.",
+    "title_line1": "아이슬란드 도로 변경",
+    "title_line2": "요정이 울어 비용↑",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*요정* 울면 멈춰"
+      },
+      {
+        "s": 3,
+        "text": "*요정* 서식지 보호"
+      },
+      {
+        "s": 7,
+        "text": "*요정* 이야기가 오래"
+      }
+    ],
+    "image_queries": [
+      "Icelandic highway construction",
+      "rock formation Iceland",
+      "detour road Iceland",
+      "mountain road Iceland",
+      "construction equipment on road",
+      "protected natural area Iceland"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0089_Iceland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0089_Iceland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "nextvoyage",
+        "page": "https://pixabay.com/photos/waterfall-iceland-landscape-water-4774207/"
+      },
+      {
+        "scene": 2,
+        "user": "Susan1111",
+        "page": "https://pixabay.com/photos/beach-cliff-rock-mist-fog-sea-6203278/"
+      },
+      {
+        "scene": 3,
+        "user": "00luvicecream",
+        "page": "https://pixabay.com/photos/signpost-closed-road-sign-end-stop-5274077/"
+      },
+      {
+        "scene": 4,
+        "user": "kiwibu",
+        "page": "https://pixabay.com/photos/house-field-rural-meadow-landscape-6387074/"
+      },
+      {
+        "scene": 5,
+        "user": "dimitrisvetsikas1969",
+        "page": "https://pixabay.com/photos/bulldozer-excavator-heavy-machine-2195329/"
+      },
+      {
+        "scene": 6,
+        "user": "ReneGossner",
+        "page": "https://pixabay.com/photos/volcano-sulfur-bach-sand-stones-6487743/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0089_Iceland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "South Korea",
@@ -3336,7 +3478,75 @@
     "twist": "몇몇 해녀는 국제 자유잠수 대회에 출전해 남성 선수들의 절반 나이에도 뒤지지 않는 기록을 세우며 세계 무대에 도전하고 있습니다.",
     "verify_note": "Jeju haenyeo pension law, South Korea haenyeo cultural heritage, haenyeo health insurance",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "제주 해녀, 80세에도 바다에 뛰어들어 연금까지! 1960년대부터 물속에서 해산물을 채취해 온 제주 해녀들은 2011년 문화유산으로 지정된 뒤, 정부가 특별 연금과 맞춤형 건강보험을 마련하면서 삶의 기반을 확고히 했습니다. 이제 정해진 연금으로 생활을 유지하면서도, 여전히 새벽 물속에 몸을 담그며 일합니다. 놀라운 점은, 몇몇 해녀가 국제 자유잠수 대회에 도전해 남성 선수들의 절반 나이와 맞먹는 기록을 세우며 세계 무대에 도전하고 있다는 사실입니다. 연금과 보험으로 든든해진 삶이지만, 바다에 대한 열정은 여전합니다. 그들의 물결 같은 의지는 언제나 새로움을 향해 뛰어오릅니다.",
+    "title_line1": "제주해녀연금보험",
+    "title_line2": "80세에도바다도전",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "80세 *바다* 도전"
+      },
+      {
+        "s": 2,
+        "text": "특별 *연금* 보장"
+      },
+      {
+        "s": 3,
+        "text": "새벽 *물속* 일터"
+      },
+      {
+        "s": 4,
+        "text": "국제 *대회* 도전"
+      }
+    ],
+    "image_queries": [
+      "Jeju female diver underwater",
+      "South Korea pension documents",
+      "elderly woman snorkeling Jeju",
+      "health insurance card South Korea",
+      "free diving competition underwater",
+      "traditional Jeju stone walls"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0090_South Korea_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0090_South Korea_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "joakant",
+        "page": "https://pixabay.com/photos/diver-scuba-divers-dive-underwater-668777/"
+      },
+      {
+        "scene": 2,
+        "user": "Seoulinspired",
+        "page": "https://pixabay.com/photos/city-metropolitan-sunset-building-4119806/"
+      },
+      {
+        "scene": 3,
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/woman-dive-bikini-snorkeling-15840/"
+      },
+      {
+        "scene": 4,
+        "user": "blickpixel",
+        "page": "https://pixabay.com/photos/health-card-health-wallet-491714/"
+      },
+      {
+        "scene": 5,
+        "user": "seth0s",
+        "page": "https://pixabay.com/photos/dive-old-under-water-underwater-677990/"
+      },
+      {
+        "scene": 6,
+        "user": "monstar6",
+        "page": "https://pixabay.com/photos/jeju-island-traditional-house-2261291/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0090_South Korea.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -3346,7 +3556,71 @@
     "twist": "최근 미술관에서도 킨츠기 작품을 현대 미술 전시의 일환으로 선보이며, 수리된 도자기를 원래 가격의 두 배 이상에 판매하는 사례가 늘고 있습니다.",
     "verify_note": "Kintsugi gold repair tradition Japan, kintsugi workshops Tokyo, value of repaired pottery",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "일본에서는 깨진 그릇을 고치면 더 비싸진다! 바로 킨츠기, 금으로 채워진 도자기 복원 전통입니다. 도쿄의 킨츠기 워크숍에 가면, 가정에서 가져온 깨진 그릇을 금가루를 섞은 옥으로 균열을 메꿔줍니다. 금빛이 드러난 선이 균열을 강조해 “흠이 아름다움”이라는 철학을 눈으로 보여 주죠. 수리된 그릇은 원래보다 높은 가치를 인정받아, 심지어 원래 가격의 두 배 이상에 팔리기도 합니다. 최근에는 미술관에서도 킨츠기 작품을 현대 미술 전시의 일환으로 선보이며, 그 가치는 더욱 빛을 발하고 있습니다. 결국, 부서진 조각조차도 새로운 이야기를 품고 다시 빛날 수 있다는 사실, 생각해 보셨나요?",
+    "title_line1": "일본 금빛 도자기",
+    "title_line2": "수리하면 두 배 가격?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "깨진 그릇 *가치*"
+      },
+      {
+        "s": 4,
+        "text": "금빛 *흠*"
+      },
+      {
+        "s": 5,
+        "text": "두 배 *가격*"
+      }
+    ],
+    "image_queries": [
+      "Tokyo pottery workshop",
+      "Japanese gold-filled bowl",
+      "Kintsugi repaired vase",
+      "traditional ceramics studio",
+      "Tokyo art museum interior",
+      "closeup gold crack pottery"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0091_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0091_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "MrHà",
+        "page": "https://pixabay.com/photos/pottery-handcraft-ceramic-vessel-10258355/"
+      },
+      {
+        "scene": 2,
+        "user": "Wow_Pho",
+        "page": "https://pixabay.com/photos/food-japanese-asian-bowl-dish-eat-715542/"
+      },
+      {
+        "scene": 3,
+        "user": "MARTYSEB",
+        "page": "https://pixabay.com/photos/vase-bowl-kintsugi-art-resilience-5557369/"
+      },
+      {
+        "scene": 4,
+        "user": "tehzeebkazmii",
+        "page": "https://pixabay.com/photos/ceramics-potter-clay-craft-studio-10479174/"
+      },
+      {
+        "scene": 5,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/woman-art-creative-relaxation-girl-1283009/"
+      },
+      {
+        "scene": 6,
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/pottery-clay-craft-hobby-potters-8026823/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0091_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -3356,7 +3630,32 @@
     "twist": "쓰레기를 올바르게 분류하지 않으면, 다음 달에 마을 축제에서 ‘쓰레기 벌칙 무용’ 공연을 해야 합니다.",
     "verify_note": "Kamikatsu 45 waste categories, zero waste town Japan",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "이 마을은 쓰레기를 45가지 종류로 나눠야 해요! 일본 가와구치현 카미카츠는 ‘제로‑웨이스트’를 목표로, 각 가정에 45개의 서로 다른 쓰레기통을 배치했습니다. 주민들은 매일 부엌, 욕실, 정원에서 나오는 쓰레기를 색과 라벨에 맞춰 정확히 분류합니다. 분리수거가 끝나면 마을 회의에서 각 가구의 ‘분리수거 점수’를 공개하고, 점수가 높을수록 모두가 자랑스럽게 생각합니다. 그런데 여기서 한 가지 규칙이 더 있죠. 쓰레기를 제대로 분류하지 못하면 다음 달 마을 축제에서 ‘쓰레기 벌칙 무용’ 공연을 해야 합니다. 무대 위에서 잘못된 분류를 웃음으로 풀어내는 모습은, 마을 사람들에게 큰 동기부여가 됩니다. 이렇게 작은 실천이 모여 카미카츠는 진정한 제로‑웨이스트 마을로 거듭나고 있습니다. 여러분도 한 번쯤은 45가지 분류에 도전해 보고 싶지 않나요?",
+    "title_line1": "카미카츠 45분리수거",
+    "title_line2": "틀리면 축제 벌칙 무용",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*45가지* 분리!"
+      },
+      {
+        "s": 2,
+        "text": "가정에 *45통* 배치"
+      },
+      {
+        "s": 6,
+        "text": "*벌칙* 공연 꼭!"
+      }
+    ],
+    "image_queries": [
+      "Japanese recycling bins",
+      "Kamikatsu waste sorting",
+      "Japan village festival stage",
+      "Colorful trash cans Japan",
+      "Garden compost bin",
+      "Japanese kitchen waste separation"
+    ]
   },
   {
     "country": "Finland",
@@ -3366,7 +3665,32 @@
     "twist": "우승 상금은 아내 몸무게 킬로그램당 맥주 1병, 즉 60kg이면 60병!",
     "verify_note": "Finland wife carrying world championship Sonkajärvi prize beer weight",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "핀란드에서는 남편이 아내를 안고 장애물 코스를 달린다고 들어보셨나요? 소니카리비에 매년 열리는 ‘남편 안아라’ 대회에서는 남성 참가자들이 아내나 여자친구를 어깨에 메고 253미터 길이의 코스를 2분 안에 완주해야 합니다. 코스에는 빙판, 물통, 나무 통 같은 장애물이 놓여 있어 관중들의 열띤 응원이 이어집니다. 가장 흥미로운 점은 우승 상금이 바로 아내 몸무게 킬로그램당 맥주 1병이라는 사실인데요. 예를 들어 몸무게가 60 kg이면 60병의 맥주를 받게 됩니다. 이렇게 독특한 상금 제도 때문에 대회는 매년 큰 관심을 모으며, 참가자들은 사랑과 체력을 동시에 시험합니다. 과연 다음 해엔 어떤 커플이 가장 많은 맥주를 손에 넣을지, 기대가 멈추지 않네요.",
+    "title_line1": "핀란드 남편 안아라",
+    "title_line2": "맥주 60병 받을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "남편이 *아내* 안는다"
+      },
+      {
+        "s": 4,
+        "text": "우승은 *맥주*"
+      },
+      {
+        "s": 7,
+        "text": "누가 *맥주*?"
+      }
+    ],
+    "image_queries": [
+      "Finland obstacle race",
+      "husband carrying wife",
+      "ice water barrel course",
+      "spectators cheering Finland",
+      "beer bottles prize",
+      "rural Finnish village"
+    ]
   },
   {
     "country": "Kyrgyzstan",
@@ -3376,7 +3700,7 @@
     "twist": "독수리는 주인이 사망하면 가족에게 물려받아 세대를 이어 사용됩니다.",
     "verify_note": "Kyrgyz eagle hunting tradition berkutchi child training golden eagle",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Argentina",
@@ -3386,7 +3710,7 @@
     "twist": "이 퍼레이드에서 쓰이는 드럼은 매년 새로 만들지 않고, 30년 이상 된 고대 드럼을 복원해 사용합니다.",
     "verify_note": "Buenos Aires Candombe drumming tradition La Plata neighborhood",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Spain",
