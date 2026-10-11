@@ -1802,7 +1802,7 @@
     "twist": "게다가, 일부 주에서는 기니피그를 전용 침대까지 제공해야 한다는 규정까지 있어요!",
     "verify_note": "Switzerland guinea pig law, animal welfare legislation, canton of Zurich guinea pig companionship",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스위스에서는 기니피그를 혼자 기를 수 없어요! 스위스 동물복지법에 따르면 기니피그는 사회성이 높은 동물로 인정돼 최소 두 마리 이상을 함께 키워야 합니다. 혼자 두면 법을 위반한 것이 되고, 벌금이 부과될 수 있다는 점, 기억하세요. 특히 취리히 주 같은 일부 지역에서는 기니피그에게 전용 침대까지 제공하도록 규정하고 있습니다. 작은 침대라도 준비해 주면, 두 마리 친구가 편안하게 쉴 수 있죠. 여러분도 반려동물을 키울 때, 그들의 사회적 필요를 꼭 챙겨 주세요. 도움이 되셨다면 좋아요와 구독, 알림 설정까지 잊지 마세요!",
     "title_line1": "스위스 기니피그 규정",
     "title_line2": "혼자키면 벌금?",
@@ -1827,7 +1827,46 @@
       "Zurich city street",
       "Swiss farm cottage",
       "guinea pig cage interior"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0068_Switzerland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0068_Switzerland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "ii7017",
+        "page": "https://pixabay.com/photos/guinea-pig-few-hagenbeck-hamburg-5269324/"
+      },
+      {
+        "scene": 2,
+        "user": "Myagi",
+        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287749/"
+      },
+      {
+        "scene": 3,
+        "user": "narya",
+        "page": "https://pixabay.com/photos/flowers-meadow-grass-bloom-blossom-1516734/"
+      },
+      {
+        "scene": 4,
+        "user": "Sonyuser",
+        "page": "https://pixabay.com/photos/bridge-city-river-zurich-4636745/"
+      },
+      {
+        "scene": 5,
+        "user": "pasja1000",
+        "page": "https://pixabay.com/photos/chicken-coop-5230394/"
+      },
+      {
+        "scene": 6,
+        "user": "Myagi",
+        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287747/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0068_Switzerland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Colombia",
@@ -1837,7 +1876,7 @@
     "twist": "이때 거리에서 열린 플래시몹 댄스와 라이브 음악 공연도 동시 진행돼요!",
     "verify_note": "Ciclovía Bogotá, Colombia weekly car‑free event, 1974, 120 km",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "콜롬비아에서는 매주 일요일마다 도로가 차단돼요! 보고타를 포함한 여러 도시에서는 일요일 아침에 120km가 넘는 주요 도로를 차 없는 거리로 바꾸고, 시민들은 자전거를 타거나 걷고, 조깅을 즐깁니다. 이 행사는 1974년에 시작돼 지금은 매주 200만 명 이상이 참여할 정도로 커졌어요. 거리 한가운데서는 플래시몹 댄스와 라이브 음악 공연이 동시에 펼쳐져, 평범한 도로가 순간 문화 축제로 변신합니다. 여러분도 일요일엔 차를 내리고, 자유로운 거리에서 몸을 움직여 보세요. 구독과 좋아요, 알림 설정도 잊지 마세요!",
     "title_line1": "콜롬비아 일요일 무차",
     "title_line2": "거리엔 축제?",
@@ -1858,7 +1897,46 @@
         "s": 5,
         "text": "*자유* 일요일 움직여"
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0069_Colombia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0069_Colombia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/colombia-cartagena-city-city-square-4941269/"
+      },
+      {
+        "scene": 2,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/colombia-cartagena-city-4941270/"
+      },
+      {
+        "scene": 3,
+        "user": "hectordavid1022",
+        "page": "https://pixabay.com/photos/train-transportation-travel-metro-6485753/"
+      },
+      {
+        "scene": 4,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/colombia-cartagena-city-4936995/"
+      },
+      {
+        "scene": 5,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/colombia-province-of-cauca-mountains-3529024/"
+      },
+      {
+        "scene": 6,
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/colombia-santa-marta-building-3529273/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0069_Colombia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Ecuador",
@@ -1868,7 +1946,75 @@
     "twist": "실제로 2011년, 아마존 강이 오염으로 인해 법정에 제소된 적이 있어요!",
     "verify_note": "Ecuador rights of nature constitution 2008, lawsuit against Amazon river, legal personhood for nature",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "에콰도르에서는 강을 고소할 수 있습니다! 2008년에 개정된 에콰도르 헌법은 자연을 ‘권리’를 가진 존재로 인정했어요. 그래서 시민들은 강, 산, 숲 같은 생태계를 대신해 법정에 제소할 수 있게 되었죠. 이는 세계 최초로 자연권을 명시한 헌법 조항이라 큰 의미를 갖습니다. 흥미롭게도 2011년, 아마존 강이 오염 문제로 실제 법정에 제소된 사례가 있었답니다. 자연도 사람처럼 법적 보호를 받을 수 있다는 사실, 놀랍지 않나요? 여러분도 자연을 지키는 방법을 생각해 보세요. 좋아요와 구독, 알림 설정 잊지 마세요!",
+    "title_line1": "에콰도르, 강 고소",
+    "title_line2": "자연도 법정에?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "강을 *고소*한다!"
+      },
+      {
+        "s": 2,
+        "text": "*자연* 권리 인정"
+      },
+      {
+        "s": 3,
+        "text": "생태계 *대표* 소송"
+      },
+      {
+        "s": 5,
+        "text": "아마존 *제소*"
+      }
+    ],
+    "image_queries": [
+      "Ecuador river",
+      "Amazon rainforest Ecuador",
+      "mountain forest Ecuador",
+      "courtroom gavel",
+      "river pollution water",
+      "legal documents on table"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0070_Ecuador_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0070_Ecuador_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Keishpixl",
+        "page": "https://pixabay.com/photos/lake-wetland-mountains-landscape-6791971/"
+      },
+      {
+        "scene": 2,
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/ecuador-rainforest-butterfly-4292267/"
+      },
+      {
+        "scene": 3,
+        "user": "Keishpixl",
+        "page": "https://pixabay.com/photos/lake-forest-nature-mountain-flora-6791973/"
+      },
+      {
+        "scene": 4,
+        "user": "qimono",
+        "page": "https://pixabay.com/photos/gavel-auction-law-hammer-symbol-2492011/"
+      },
+      {
+        "scene": 5,
+        "user": "MilanKullu",
+        "page": "https://pixabay.com/photos/man-pollution-garbage-trash-travel-7902570/"
+      },
+      {
+        "scene": 6,
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/binding-contract-contract-secure-948442/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0070_Ecuador.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Malta",
@@ -1878,7 +2024,32 @@
     "twist": "가장 높은 기록은 1998년 한 청년이 10번 연속 성공한 기록이에요!",
     "verify_note": "Malta Gostra tradition, festa pole climbing, Maltese village festival",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "몰타에서는 마을 축제에 나무 기둥을 타고 깃발을 잡아야 해요! 매년 열리는 festa, 즉 전통 축제에서 ‘ġostra’라는 행사가 펼쳐집니다. 기름칠을 한 긴 나무 기둥을 달려 올라가 위에 매달린 깃발을 손에 쥐면 행운과 명예를 얻는다고 믿는 전통이죠. 주민들은 어린 시절부터 이 도전을 연습하고, 관객들은 긴장된 숨을 죽이며 지켜봅니다. 특히 1998년 한 청년이 10번 연속 깃발을 잡아 가장 높은 기록을 세운 일은 아직도 회자되는 전설입니다. 여러분도 몰타의 뜨거운 열기와 함께 ‘ġostra’에 도전해 보는 건 어떨까요? 좋아요와 구독, 알림 설정 잊지 마세요!",
+    "title_line1": "몰타 마을 축제 전통",
+    "title_line2": "깃발 잡으면 행운?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "축제 *기둥* 타기"
+      },
+      {
+        "s": 3,
+        "text": "깃발 잡고 *행운*"
+      },
+      {
+        "s": 5,
+        "text": "10번 연속 *전설*"
+      }
+    ],
+    "image_queries": [
+      "Maltese festa pole climbing",
+      "wooden pole with flag Malta",
+      "Maltese crowd watching festival",
+      "traditional wooden pole Malta",
+      "village festival celebration Malta",
+      "young climber on pole"
+    ]
   },
   {
     "country": "Papua New Guinea",
@@ -1888,7 +2059,32 @@
     "twist": "최대 100마리 이상의 돼지를 한 번에 선물받은 사례도 있다.",
     "verify_note": "Papua New Guinea bride price pigs Moka tradition",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "여기선 신부에게 돼지로 결혼 비용을 지불한다! 파푸아 뉴기니 고지대에서는 전통적인 신부 가격, 일명 ‘모카’를 돼지로 지급합니다. 신랑 가문이 신부에게 몇 마리의 돼지를 바치느냐가 바로 그 가문의 사회적 지위를 가늠하게 하는 중요한 기준이죠. 돼지 한 마리 한 마리가 곧 명예와 영향력의 상징이 됩니다. 그래서 결혼식이 다가오면 양가가 모여 돼지를 모으고, 그 수가 많을수록 두 가문 모두 더 높은 위상을 얻습니다. 놀라운 사실은, 한 번에 백 마리 넘는 돼지를 선물받은 사례도 있다는 점입니다. 이렇게 거대한 규모의 ‘모카’를 주고받는 순간, 마을 전체가 축제 분위기에 휩싸이며 전통이 살아 숨쉬는 모습을 직접 체험할 수 있습니다. 파푸아 뉴기니의 독특한 결혼 풍습, 정말 흥미롭지 않나요? 더 많은 문화 이야기가 궁금하다면 구독과 좋아요 잊지 마세요!",
+    "title_line1": "파푸아 뉴기니 결혼",
+    "title_line2": "돼지 몇 마리 줄까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "돼지로 *결혼* 비용!"
+      },
+      {
+        "s": 3,
+        "text": "돼지로 *위치* 판단"
+      },
+      {
+        "s": 6,
+        "text": "백마리 *돼지* 선물!"
+      }
+    ],
+    "image_queries": [
+      "Papua New Guinea wedding pigs",
+      "highland village ceremony Papua New Guinea",
+      "Papua New Guinea pig tribute",
+      "pig herd in tropical forest",
+      "villagers gathering with pigs",
+      "mountain village celebration Papua New Guinea"
+    ]
   },
   {
     "country": "Rwanda",
