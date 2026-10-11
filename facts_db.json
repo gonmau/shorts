@@ -2024,7 +2024,7 @@
     "twist": "가장 높은 기록은 1998년 한 청년이 10번 연속 성공한 기록이에요!",
     "verify_note": "Malta Gostra tradition, festa pole climbing, Maltese village festival",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "몰타에서는 마을 축제에 나무 기둥을 타고 깃발을 잡아야 해요! 매년 열리는 festa, 즉 전통 축제에서 ‘ġostra’라는 행사가 펼쳐집니다. 기름칠을 한 긴 나무 기둥을 달려 올라가 위에 매달린 깃발을 손에 쥐면 행운과 명예를 얻는다고 믿는 전통이죠. 주민들은 어린 시절부터 이 도전을 연습하고, 관객들은 긴장된 숨을 죽이며 지켜봅니다. 특히 1998년 한 청년이 10번 연속 깃발을 잡아 가장 높은 기록을 세운 일은 아직도 회자되는 전설입니다. 여러분도 몰타의 뜨거운 열기와 함께 ‘ġostra’에 도전해 보는 건 어떨까요? 좋아요와 구독, 알림 설정 잊지 마세요!",
     "title_line1": "몰타 마을 축제 전통",
     "title_line2": "깃발 잡으면 행운?",
@@ -2049,7 +2049,46 @@
       "traditional wooden pole Malta",
       "village festival celebration Malta",
       "young climber on pole"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0071_Malta_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0071_Malta_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "ariesa66",
+        "page": "https://pixabay.com/photos/climb-climbing-frame-kindergarten-3368388/"
+      },
+      {
+        "scene": 2,
+        "user": "Alehandra13",
+        "page": "https://pixabay.com/photos/cliff-travel-sea-landscape-nature-7930586/"
+      },
+      {
+        "scene": 3,
+        "user": "westphotoandvideo",
+        "page": "https://pixabay.com/photos/band-music-live-music-concert-4671748/"
+      },
+      {
+        "scene": 4,
+        "user": "sdg_Rai",
+        "page": "https://pixabay.com/photos/vietnam-woman-everyday-life-8420600/"
+      },
+      {
+        "scene": 5,
+        "user": "Magdalenalena",
+        "page": "https://pixabay.com/photos/popeye-village-malta-architecture-4158038/"
+      },
+      {
+        "scene": 6,
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/mountaineer-climb-rock-climber-2100050/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0071_Malta.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Papua New Guinea",
@@ -2059,7 +2098,7 @@
     "twist": "최대 100마리 이상의 돼지를 한 번에 선물받은 사례도 있다.",
     "verify_note": "Papua New Guinea bride price pigs Moka tradition",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "여기선 신부에게 돼지로 결혼 비용을 지불한다! 파푸아 뉴기니 고지대에서는 전통적인 신부 가격, 일명 ‘모카’를 돼지로 지급합니다. 신랑 가문이 신부에게 몇 마리의 돼지를 바치느냐가 바로 그 가문의 사회적 지위를 가늠하게 하는 중요한 기준이죠. 돼지 한 마리 한 마리가 곧 명예와 영향력의 상징이 됩니다. 그래서 결혼식이 다가오면 양가가 모여 돼지를 모으고, 그 수가 많을수록 두 가문 모두 더 높은 위상을 얻습니다. 놀라운 사실은, 한 번에 백 마리 넘는 돼지를 선물받은 사례도 있다는 점입니다. 이렇게 거대한 규모의 ‘모카’를 주고받는 순간, 마을 전체가 축제 분위기에 휩싸이며 전통이 살아 숨쉬는 모습을 직접 체험할 수 있습니다. 파푸아 뉴기니의 독특한 결혼 풍습, 정말 흥미롭지 않나요? 더 많은 문화 이야기가 궁금하다면 구독과 좋아요 잊지 마세요!",
     "title_line1": "파푸아 뉴기니 결혼",
     "title_line2": "돼지 몇 마리 줄까?",
@@ -2084,7 +2123,46 @@
       "pig herd in tropical forest",
       "villagers gathering with pigs",
       "mountain village celebration Papua New Guinea"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0072_Papua New Guinea_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0072_Papua New Guinea_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "ii7017",
+        "page": "https://pixabay.com/photos/guinea-pig-few-hagenbeck-hamburg-5269324/"
+      },
+      {
+        "scene": 2,
+        "user": "BeaAmaya",
+        "page": "https://pixabay.com/photos/highlands-papua-new-guinea-tribes-2267369/"
+      },
+      {
+        "scene": 3,
+        "user": "Kaufdex",
+        "page": "https://pixabay.com/photos/papua-new-guinea-banner-flag-2697301/"
+      },
+      {
+        "scene": 4,
+        "user": "suju-foto",
+        "page": "https://pixabay.com/photos/pig-dog-inner-pig-dog-dog-pig-2613125/"
+      },
+      {
+        "scene": 5,
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/good-luck-handful-happiness-piggy-1993688/"
+      },
+      {
+        "scene": 6,
+        "user": "Jarka21",
+        "page": "https://pixabay.com/photos/papua-new-guinea-house-boys-kids-6751167/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0072_Papua New Guinea.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Rwanda",
@@ -2094,7 +2172,40 @@
     "twist": "이 정책 덕분에 루와다의 야생동물 사망률이 30% 이상 감소했다.",
     "verify_note": "Rwanda plastic bag ban 2008 wildlife deaths reduction",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "루와다에서는 비닐봉투가 전혀 없어! 2008년부터 루와드 정부는 일회용 플라스틱 백을 완전히 금지하고, 위반하면 높은 벌금을 부과했어요. 그래서 전국 모든 상점은 이제 재사용 가능한 가방만 제공하고, 플라스틱 봉투는 찾아볼 수 없죠. 이 정책 덕분에 루와드의 야생동물 사망률이 무려 30% 이상 감소했습니다. 플라스틱 없는 거리에서 동물들이 더 안전하게 살아갈 수 있게 된 거죠. 여러분도 일회용 플라스틱을 줄이는 작은 실천을 해보세요! 구독과 좋아요 잊지 마시고, 다음에도 흥미로운 이야기로 찾아뵙겠습니다.",
+    "title_line1": "루와다 비닐봉투 금지",
+    "title_line2": "동물 사망 30% 감소",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "비닐봉투 *없음*!"
+      },
+      {
+        "s": 2,
+        "text": "플라스틱 *금지* 2008"
+      },
+      {
+        "s": 4,
+        "text": "동물 *사망* 30%↓"
+      },
+      {
+        "s": 5,
+        "text": "*플라스틱* 없는 거리"
+      },
+      {
+        "s": 6,
+        "text": "플라스틱 *줄이자*"
+      }
+    ],
+    "image_queries": [
+      "Rwanda market street",
+      "Rwanda reusable shopping bag",
+      "plastic free grocery aisle",
+      "Rwanda wildlife crossing road",
+      "Rwanda city park bench",
+      "reusable bag checkout"
+    ]
   },
   {
     "country": "Qatar",
@@ -2104,7 +2215,36 @@
     "twist": "심지어 고양이도 특정 국가에서만 입국이 허용된다.",
     "verify_note": "Qatar pet import regulations dog breed permit",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "카타르에 개를 데려가려면 허가가 필수! 카타르는 반려동물 수입을 아주 엄격하게 관리합니다. 개는 지정된 품종만 허가를 받을 수 있고, 모든 동물은 입국 전에 검역 절차와 공식 허가서를 반드시 받아야 합니다. 허가 없이 들여오면 입국이 거부됩니다. 그리고 놀라운 점은, 고양이도 마찬가지로 특정 국가에서만 입국이 허용된다는 사실입니다. 즉, 고양이의 경우에도 출발 국가가 제한돼 있어, 허가받은 국가가 아니면 카타르에 들어올 수 없습니다. 반려동물을 해외로 데려가려는 분들은 반드시 사전에 해당 품종과 국가가 허가 대상인지 확인하고, 검역 및 허가 절차를 꼼꼼히 준비하시길 바랍니다. 궁금한 점이 있으면 댓글로 남겨 주세요!",
+    "title_line1": "카타르 반려동물 규정",
+    "title_line2": "허가 없이 입국 불가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "개 데려가려면 *허가*"
+      },
+      {
+        "s": 3,
+        "text": "지정 품종만 *허가* 가능"
+      },
+      {
+        "s": 4,
+        "text": "허가 없으면 입국 *거부*"
+      },
+      {
+        "s": 5,
+        "text": "고양이도 *제한* 국가"
+      }
+    ],
+    "image_queries": [
+      "Qatar airport quarantine",
+      "dog passport paperwork",
+      "approved dog breed Qatar",
+      "cat travel crate",
+      "Qatar customs officer",
+      "pet inspection desk"
+    ]
   },
   {
     "country": "Saudi Arabia",
