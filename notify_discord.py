@@ -8,6 +8,8 @@ import os
 import urllib.request
 from pathlib import Path
 
+import requests
+
 from common import load_db, youtube_meta
 
 
@@ -21,6 +23,15 @@ def post(url, text):
         urllib.request.urlopen(req, timeout=20)
     except Exception as e:
         print("디스코드 전송 실패:", e)
+
+
+def post_image(url, path, text=""):
+    """썸네일 PNG를 디스코드에 첨부 전송 (길게 눌러 저장)."""
+    try:
+        with open(path, "rb") as f:
+            requests.post(url, data={"content": text[:1900]}, files={"file": (Path(path).name, f, "image/png")}, timeout=60)
+    except Exception as e:
+        print("썸네일 전송 실패:", e)
 
 
 def built_items():
@@ -61,6 +72,9 @@ def main():
         post(url, f"🎬 {name} - 아래 두 메시지를 길게 눌러 '텍스트 복사'")
         post(url, title)   # 제목만
         post(url, desc)    # 설명만
+        th = Path("thumbnails") / (Path(name).stem + ".png")
+        if th.exists():
+            post_image(url, th, "🖼 썸네일 (길게 눌러 저장)")
 
 
 if __name__ == "__main__":
