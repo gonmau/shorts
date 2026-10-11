@@ -3100,7 +3100,7 @@
     "twist": "16세 청년이 지방 자치단체 의회에 직접 입후보할 수 있는 유럽 최저 연령이다.",
     "verify_note": "Portugal voting age 16 law 2015, Portuguese electoral reforms",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "포르투갈에서는 16살도 국회의원에 투표할 수 있다니? 2015년에 헌법이 개정되면서, 이제 16세부터 지방·지역·전국 선거에 직접 투표할 수 있게 되었어요. 정부는 청년들의 정치 참여를 높이고, 어릴 때부터 정치 교육을 강화하고 싶어 이 제도를 도입했습니다. 16·17세 청년들은 투표권을 가질 뿐 아니라, 일부 지방 선거에서는 후보로 나설 수도 있답니다. 실제로 유럽에서 가장 낮은 연령으로, 16세 청년이 지방 자치단체 의회에 직접 입후보할 수 있는 나라가 바로 포르투갈이에요. 이렇게 젊은 세대가 직접 정책을 만들고 선택할 수 있다면, 우리 사회는 어떤 변화를 맞이할까요?",
     "title_line1": "포르투갈, 16세 투표",
     "title_line2": "정치에 직접 참여?",
@@ -3129,7 +3129,46 @@
       "hand holding ballot paper",
       "Portugal town hall exterior",
       "teenager casting vote"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0085_Portugal_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0085_Portugal_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "PatrickLFC93",
+        "page": "https://pixabay.com/photos/phone-booth-phone-english-uk-7728783/"
+      },
+      {
+        "scene": 2,
+        "user": "planet_fox",
+        "page": "https://pixabay.com/photos/ballot-box-democracy-politics-poll-4933481/"
+      },
+      {
+        "scene": 3,
+        "user": "franky1st",
+        "page": "https://pixabay.com/photos/bridge-city-river-portugal-tourism-4441037/"
+      },
+      {
+        "scene": 4,
+        "user": "Chuotanhls",
+        "page": "https://pixabay.com/photos/vietnam-couple-love-lovers-8560196/"
+      },
+      {
+        "scene": 5,
+        "user": "Annabel_P",
+        "page": "https://pixabay.com/photos/fountain-building-illuminations-4661162/"
+      },
+      {
+        "scene": 6,
+        "user": "Mokajou",
+        "page": "https://pixabay.com/photos/skate-skateboard-skateboarding-7403432/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0085_Portugal.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -3139,7 +3178,7 @@
     "twist": "일부 울음방에는 ‘아기 울음소리 자동 재생’ 기능이 있어 주변 소음과 섞어 아이를 진정시키는 데 도움을 준다.",
     "verify_note": "Japan crying rooms public facilities, Nakai Shitsu Japan",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본 지하철역에 ‘울음방’이 있다는 거, 들어보셨나요? 도쿄와 오사카를 비롯한 주요 역, 공항, 대형 쇼핑몰에 소음 차단 설계된 방이 마련돼 있습니다. 엄마들은 그곳에서 아기를 안아 달래거나 모유 수유를 할 수 있고, 기저귀 교환대와 소형 냉장고까지 구비돼 있어 편리합니다. 2000년대 초부터 출산·육아 친화 정책의 일환으로 점차 확대돼 왔죠. 흥미로운 점은 일부 울음방에 ‘아기 울음소리 자동 재생’ 기능이 있다는 것입니다. 주변 소음과 섞여 아이를 진정시키는 데 도움을 준다고 합니다. 이렇게 작은 공간이지만, 엄마와 아기의 휴식처가 되어 주는 일본의 배려, 생각보다 더 따뜻하지 않나요?",
     "title_line1": "일본 지하철 울음방",
     "title_line2": "숨은 휴식처가?",
@@ -3168,7 +3207,46 @@
       "Quiet baby room interior",
       "Japanese diaper changing station",
       "Tokyo train platform signage"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0086_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0086_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Activedia",
+        "page": "https://pixabay.com/photos/escalator-stairs-metro-subway-769790/"
+      },
+      {
+        "scene": 2,
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/snow-monkey-wild-animal-wildlife-4809479/"
+      },
+      {
+        "scene": 3,
+        "user": "strohmi",
+        "page": "https://pixabay.com/photos/japan-osaka-city-urban-neon-night-9826328/"
+      },
+      {
+        "scene": 4,
+        "user": "macmao",
+        "page": "https://pixabay.com/photos/child-childhood-joy-summer-happy-2345435/"
+      },
+      {
+        "scene": 5,
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/satellite-spacecraft-space-67718/"
+      },
+      {
+        "scene": 6,
+        "user": "asd14235714",
+        "page": "https://pixabay.com/photos/subway-metro-subway-station-4823909/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0086_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Lithuania",
@@ -3178,7 +3256,32 @@
     "twist": "빌뉴스 시에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끌며, 왕관 대신 큰 팬케이크를 머리에 얹는다.",
     "verify_note": "Lithuania Užgavėnės festival tradition, Užgavėnės pancakes",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "리투아니아에서는 겨울을 쫓아내기 위해 악마 복장을 입고 팬케이크를 던진다고 합니다! 매년 사순절 전 화요일, ‘우즈가베네스’라는 전통 이교도 축제가 열리는데요. 사람들은 악마 가면을 쓰고 버드나무 가지를 휘두르며 거리로 나섭니다. 이때 가장 중요한 음식은 ‘바레네스’라는 얇은 팬케이크인데, 햇빛과 따뜻함을 상징한다죠. 이렇게 팬케이크와 악마 놀이를 통해 겨울을 몰아내고 봄을 맞이한다는 의미가 담겨 있습니다. 특히 빌뉴스에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끕니다. 왕관 대신 큰 팬케이크를 머리에 얹고 행진하는 모습은 정말 눈길을 사로잡습니다. 악마와 팬케이크, 그리고 왕의 독특한 조합이 만든 이 축제는 겨울을 물리치는 리투아니아 사람들의 뜨거운 열망을 그대로 보여줍니다. 과연 다음 해에도 같은 방식으로 겨울을 몰아낼 수 있을까요?",
+    "title_line1": "리투아니아 악마 축제",
+    "title_line2": "겨울을 어떻게 몰아낼까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "악마 *팬케이크*"
+      },
+      {
+        "s": 4,
+        "text": "*바레네스*"
+      },
+      {
+        "s": 7,
+        "text": "왕 *팬케이크*"
+      }
+    ],
+    "image_queries": [
+      "Lithuania street carnival",
+      "devil mask tradition",
+      "thin pancake food",
+      "Vilnius parade festival",
+      "pancake crown costume",
+      "wild willow branches"
+    ]
   },
   {
     "country": "Nepal",
@@ -3188,7 +3291,32 @@
     "twist": "정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었습니다.",
     "verify_note": "Kumari living goddess Nepal selection criteria, Kumari tradition Kathmandu, Kumari temple health checks",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "네팔에서는 아직도 살아있는 여신을 왕궁에 모신다! 카트만두 쿠마리 사원에선 사춘기 전 소녀를 ‘쿠마리’로 선정해 일 년 내내 궁전에서 생활하게 합니다. 그녀는 국가 행사와 축제에 등장해 신성한 존재로 숭배받으며, 일반 사람들은 눈을 마주치지 못하도록 조심합니다. 흥미롭게도 정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었죠. 그만큼 완벽함을 요구하는 전통이란, 살아있는 여신을 지키는 엄격한 관리 체계가 뒤에 숨겨져 있다는 사실, 생각보다 깊은 이야기 아닐까요?",
+    "title_line1": "네팔 살아 여신",
+    "title_line2": "왕궁에서 교체될까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "살아있는 여신 *왕궁*"
+      },
+      {
+        "s": 2,
+        "text": "쿠마리 *소녀* 궁전"
+      },
+      {
+        "s": 4,
+        "text": "건강 *검진* 교체"
+      }
+    ],
+    "image_queries": [
+      "Kathmandu palace interior",
+      "Nepal temple courtyard",
+      "young girl in traditional dress",
+      "royal procession Kathmandu",
+      "government health checkup",
+      "festival crowd Nepal"
+    ]
   },
   {
     "country": "Iceland",
@@ -3198,7 +3326,7 @@
     "twist": "우회 설계로 인해 도로 길이가 2km 늘고 비용이 120만 달러가 추가됐지만, 이후 해당 구역은 문화유산 보호구역으로 지정되었습니다.",
     "verify_note": "Iceland elf rock road reroute 2015, Huldufólk road project, Icelandic planning authority elf rock",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "South Korea",
@@ -3208,7 +3336,7 @@
     "twist": "몇몇 해녀는 국제 자유잠수 대회에 출전해 남성 선수들의 절반 나이에도 뒤지지 않는 기록을 세우며 세계 무대에 도전하고 있습니다.",
     "verify_note": "Jeju haenyeo pension law, South Korea haenyeo cultural heritage, haenyeo health insurance",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Japan",
