@@ -2948,7 +2948,7 @@
     "twist": "한 번에 마시고 남은 마테를 다시 끓여 마시는 're-cimarrón'은 실수로 여겨져, 같은 사람에게 연속으로 주면 실례가 됩니다.",
     "verify_note": "Argentinian mate drinking etiquette clockwise passing",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아르헨티나에서는 마테를 마실 때 반드시 시계 방향으로 넘겨야 해! 마테는 큰 호박에 차를 끓인 물을 부어 마시는 전통 음료인데, 친구들 사이에서는 순서대로 마시면서 ‘cebador’가 물을 채워 줍니다. 가루가 남은 마테는 다음 사람에게 전달하고, 그때도 반드시 시계 방향으로 넘기는 것이 예의입니다. 이렇게 돌려가며 마시면 모두가 차례를 존중한다는 뜻이죠. 그런데 한 번에 마시고 남은 마테를 다시 끓여 마시는 ‘re‑cimarrón’이라는 행동은 실수로 간주됩니다. 같은 사람에게 연속으로 주면 예절에 어긋나는 것이니 조심해야 합니다. 시계 방향으로 흐르는 작은 의식이, 바로 아르헨티나 사람들의 우정과 배려를 보여주는 순간이죠.",
     "title_line1": "아르헨티나 마테",
     "title_line2": "시계방향을 어기면?",
@@ -2973,7 +2973,46 @@
       "Argentinian friends sharing mate",
       "mate tea brewing kettle",
       "group passing mate clockwise"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0083_Argentina_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0083_Argentina_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "amrothman",
+        "page": "https://pixabay.com/photos/mate-drink-beverage-straw-herbs-5616550/"
+      },
+      {
+        "scene": 2,
+        "user": "brunettilautarojoel",
+        "page": "https://pixabay.com/photos/mate-drink-refreshment-herbs-5976225/"
+      },
+      {
+        "scene": 3,
+        "user": "kaosnoff",
+        "page": "https://pixabay.com/photos/yerba-mate-terer%C3%A9-mate-leaf-plant-4472772/"
+      },
+      {
+        "scene": 4,
+        "user": "pixelia",
+        "page": "https://pixabay.com/photos/dance-argentinian-tango-couple-661553/"
+      },
+      {
+        "scene": 5,
+        "user": "DiDeeChen",
+        "page": "https://pixabay.com/photos/coffee-drip-coffee-drink-caffeine-5252373/"
+      },
+      {
+        "scene": 6,
+        "user": "13748526",
+        "page": "https://pixabay.com/photos/mate-tea-tea-drink-yerba-mate-6259745/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0083_Argentina.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Iceland",
@@ -2983,7 +3022,7 @@
     "twist": "하지만 최근에는 외국에서 온 가족이 고유 성을 유지하도록 허용되는 경우도 늘고 있다.",
     "verify_note": "Iceland patronymic naming law, Iceland Naming Committee",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이곳에서는 성이 없고, 아버지 이름에 ‘son’이나 ‘dóttir’가 붙어요! 아이의 성은 아버지 혹은 어머니 이름 뒤에 ‘son’(아들)이나 ‘dóttir’(딸)를 붙여 만들어요. 그래서 형제들은 같은 이름을 공유하지만, 세대가 바뀔 때마다 성도 바뀝니다. 혈통을 바로 알 수 있게 해 주는 시스템이죠. 이 규칙은 아이슬란드 법으로 보호받고, 외국식 성을 쓰려면 이름 위원회의 허가를 받아야 합니다. 그런데 요즘은 외국에서 온 가족이 고유 성을 유지하도록 허용되는 경우가 늘고 있어요. 전통과 현대가 교차하는 아이슬란드 이름 문화, 생각보다 더 유연하다는 점이 흥미롭지 않나요?",
     "title_line1": "아이슬란드 이름법",
     "title_line2": "성은 매번 바뀔까",
@@ -3012,7 +3051,46 @@
       "Family holding handwritten name tag",
       "Icelandic volcanic landscape",
       "Traditional Icelandic knitting pattern"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0084_Iceland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0084_Iceland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "kiwibu",
+        "page": "https://pixabay.com/photos/house-field-rural-meadow-landscape-6387074/"
+      },
+      {
+        "scene": 2,
+        "user": "Ronile",
+        "page": "https://pixabay.com/photos/reykjavik-iceland-longship-267960/"
+      },
+      {
+        "scene": 3,
+        "user": "therongexperiment",
+        "page": "https://pixabay.com/photos/church-building-mood-black-simple-3460420/"
+      },
+      {
+        "scene": 4,
+        "user": "Moroznaya_Photo",
+        "page": "https://pixabay.com/photos/mom-family-woman-daughter-portrait-9034408/"
+      },
+      {
+        "scene": 5,
+        "user": "ReneGossner",
+        "page": "https://pixabay.com/photos/lake-nature-travel-landscape-6476212/"
+      },
+      {
+        "scene": 6,
+        "user": "Larysa_Shche",
+        "page": "https://pixabay.com/photos/knitting-hands-woman-hobby-7238657/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0084_Iceland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Portugal",
@@ -3022,7 +3100,36 @@
     "twist": "16세 청년이 지방 자치단체 의회에 직접 입후보할 수 있는 유럽 최저 연령이다.",
     "verify_note": "Portugal voting age 16 law 2015, Portuguese electoral reforms",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "포르투갈에서는 16살도 국회의원에 투표할 수 있다니? 2015년에 헌법이 개정되면서, 이제 16세부터 지방·지역·전국 선거에 직접 투표할 수 있게 되었어요. 정부는 청년들의 정치 참여를 높이고, 어릴 때부터 정치 교육을 강화하고 싶어 이 제도를 도입했습니다. 16·17세 청년들은 투표권을 가질 뿐 아니라, 일부 지방 선거에서는 후보로 나설 수도 있답니다. 실제로 유럽에서 가장 낮은 연령으로, 16세 청년이 지방 자치단체 의회에 직접 입후보할 수 있는 나라가 바로 포르투갈이에요. 이렇게 젊은 세대가 직접 정책을 만들고 선택할 수 있다면, 우리 사회는 어떤 변화를 맞이할까요?",
+    "title_line1": "포르투갈, 16세 투표",
+    "title_line2": "정치에 직접 참여?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "16살도 *투표* 가능?"
+      },
+      {
+        "s": 3,
+        "text": "청년 *참여* 확대"
+      },
+      {
+        "s": 4,
+        "text": "16·17세 *후보* 가능"
+      },
+      {
+        "s": 6,
+        "text": "젊은 세대가 *정책* 만든다"
+      }
+    ],
+    "image_queries": [
+      "Lisbon voting booth interior",
+      "Portuguese ballot box street",
+      "young voter Portugal",
+      "hand holding ballot paper",
+      "Portugal town hall exterior",
+      "teenager casting vote"
+    ]
   },
   {
     "country": "Japan",
@@ -3032,7 +3139,36 @@
     "twist": "일부 울음방에는 ‘아기 울음소리 자동 재생’ 기능이 있어 주변 소음과 섞어 아이를 진정시키는 데 도움을 준다.",
     "verify_note": "Japan crying rooms public facilities, Nakai Shitsu Japan",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "일본 지하철역에 ‘울음방’이 있다는 거, 들어보셨나요? 도쿄와 오사카를 비롯한 주요 역, 공항, 대형 쇼핑몰에 소음 차단 설계된 방이 마련돼 있습니다. 엄마들은 그곳에서 아기를 안아 달래거나 모유 수유를 할 수 있고, 기저귀 교환대와 소형 냉장고까지 구비돼 있어 편리합니다. 2000년대 초부터 출산·육아 친화 정책의 일환으로 점차 확대돼 왔죠. 흥미로운 점은 일부 울음방에 ‘아기 울음소리 자동 재생’ 기능이 있다는 것입니다. 주변 소음과 섞여 아이를 진정시키는 데 도움을 준다고 합니다. 이렇게 작은 공간이지만, 엄마와 아기의 휴식처가 되어 주는 일본의 배려, 생각보다 더 따뜻하지 않나요?",
+    "title_line1": "일본 지하철 울음방",
+    "title_line2": "숨은 휴식처가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "지하철에 *울음방*?"
+      },
+      {
+        "s": 3,
+        "text": "*모유* 수유·냉장고"
+      },
+      {
+        "s": 5,
+        "text": "*자동* 아기 울음"
+      },
+      {
+        "s": 7,
+        "text": "일본식 *배려*"
+      }
+    ],
+    "image_queries": [
+      "Tokyo subway station hallway",
+      "Japanese mother nursing baby",
+      "Osaka airport waiting lounge",
+      "Quiet baby room interior",
+      "Japanese diaper changing station",
+      "Tokyo train platform signage"
+    ]
   },
   {
     "country": "Lithuania",
@@ -3042,7 +3178,7 @@
     "twist": "빌뉴스 시에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끌며, 왕관 대신 큰 팬케이크를 머리에 얹는다.",
     "verify_note": "Lithuania Užgavėnės festival tradition, Užgavėnės pancakes",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Nepal",
@@ -3052,7 +3188,7 @@
     "twist": "정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었습니다.",
     "verify_note": "Kumari living goddess Nepal selection criteria, Kumari tradition Kathmandu, Kumari temple health checks",
     "created_at": "2026-10-11T02:10:26.231948+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Iceland",
