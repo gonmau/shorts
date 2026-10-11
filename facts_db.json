@@ -2332,32 +2332,71 @@
     "twist": "첫 달에만 200,000명 이상의 여성들이 운전 면허를 신청했다.",
     "verify_note": "Saudi Arabia women driving law 2018 first month applications",
     "created_at": "2026-10-10T10:20:41.161741+00:00",
-    "status": "scripted",
-    "narration": "사우디, 2018년부터 여성 운전이 허용됐어요! 오랫동안 금지됐던 운전 면허가 마침내 열렸습니다. 2018년 6월, 사우디아라비아는 세계에서 마지막으로 여성 운전을 금지하고 있던 국가였는데, 드디어 여성에게도 면허를 발급하기 시작했죠. 이 변화는 사회 전반에 큰 파장을 일으켰습니다. 특히 첫 달에만 20만 명이 넘는 여성들이 면허 신청을 했다는 사실, 놀랍지 않나요? 그만큼 여성들의 기대와 열망이 컸던 것이죠. 이제 사우디의 거리에는 여성 운전자가 점점 늘어나고, 교통 문화도 서서히 바뀌고 있습니다. 여러분도 이런 변화가 어떻게 일어났는지 궁금하시다면, 좋아요와 구독 잊지 마세요!",
+    "status": "video_done",
+    "narration": "사우디, 2018년부터 여성 운전이 허용됐어요! 오랫동안 금지됐던 운전 면허가 마침내 풀리면서, 2018년 6월 사우디아라비아는 여성에게 운전 면허를 발급하기 시작했습니다. 그때까지 세계에서 마지막으로 여성 운전이 금지된 나라였던 것이죠. 이 변화는 단순한 정책 개정이 아니라 사회 전반에 큰 파장을 일으켰습니다. 특히 첫 달에만 20만 명이 넘는 여성들이 면허를 신청했다는 사실은, 억눌렸던 수요가 얼마나 컸는지를 단번에 보여줍니다. 길 위에 처음으로 등장한 여성 운전자의 모습은 많은 사람들에게 새로운 가능성을 제시했고, 사우디 사회가 점차 열린 방향으로 나아가고 있다는 기대감을 심어주었습니다. 이제는 그때의 첫 발걸음이 어떻게 일상의 풍경을 바꾸었는지, 또 어떤 이야기가 이어질지 궁금하지 않으신가요?",
     "title_line1": "사우디 여성 운전 허용",
-    "title_line2": "첫 달 20만 신청!",
+    "title_line2": "첫 달 20만 신청?",
     "highlights": [
       {
         "s": 1,
-        "text": "여성 운전 *허용*"
-      },
-      {
-        "s": 3,
-        "text": "마지막 금지 국가 *끝*"
+        "text": "사우디 *여성* 운전!"
       },
       {
         "s": 5,
-        "text": "첫 달에 *20만* 신청"
+        "text": "첫 달 *20만* 신청"
+      },
+      {
+        "s": 6,
+        "text": "길 위 *첫* 여성"
       }
     ],
     "image_queries": [
-      "Saudi Arabian woman driving",
+      "Saudi Arabia woman driving",
       "Riyadh city street",
-      "Saudi Arabia car license",
-      "woman holding driver's license",
-      "Saudi Arabian traffic light",
-      "women entering driving school"
-    ]
+      "Saudi Arabian license plate",
+      "Desert road Saudi Arabia",
+      "Woman holding driver license",
+      "Saudi Arabia traffic light"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0075_Saudi Arabia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0075_Saudi Arabia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Kaufdex",
+        "page": "https://pixabay.com/photos/saudi-arabia-flag-banner-2697320/"
+      },
+      {
+        "scene": 2,
+        "user": "SLPix",
+        "page": "https://pixabay.com/photos/riyadh-saudi-arabia-city-2375435/"
+      },
+      {
+        "scene": 3,
+        "user": "thestorychef",
+        "page": "https://pixabay.com/photos/classic-car-automobile-car-retro-584118/"
+      },
+      {
+        "scene": 4,
+        "user": "1139623",
+        "page": "https://pixabay.com/photos/saudi-arabia-mountain-pass-highway-881550/"
+      },
+      {
+        "scene": 5,
+        "user": "planet_fox",
+        "page": "https://pixabay.com/photos/truck-driver-transport-traffic-4933514/"
+      },
+      {
+        "scene": 6,
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/iraq-dictator-president-67653/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0075_Saudi Arabia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Estonia",
@@ -2367,10 +2406,10 @@
     "twist": "이 디지털 시민권을 가진 사람 중 30%는 실제 에스토니아에 거주하지 않는다.",
     "verify_note": "Estonia e‑Residency official website",
     "created_at": "2026-10-10T23:40:10.814759+00:00",
-    "status": "scripted",
-    "narration": "에스토니아에서는 인터넷만 있으면 유럽 회사를 설립할 수 있다! 2014년에 시작된 e‑Residency는 전 세계 누구에게나 디지털 신분증을 제공해요. 이 신분증만 있으면 현지에 직접 가지 않아도 회사를 등록하고, 은행 계좌를 열고, 전자 서명까지 할 수 있습니다. 디지털 노마드와 창업자를 위한 혁신적인 제도라죠. 그런데 흥미로운 점은, 이 디지털 시민권을 가진 사람 중 무려 30%는 실제로 에스토니아에 거주하지 않는다는 사실이에요. 즉, 물리적인 국경을 넘어 전 세계가 하나의 비즈니스 허브가 된 겁니다. 여러분도 언제든지 온라인으로 사업을 시작하고 싶다면, 에스토니아 e‑Residency를 한 번 살펴보세요! 구독과 좋아요, 알림 설정도 잊지 마시고요.",
-    "title_line1": "에스토니아디지털시민",
-    "title_line2": "인터넷만으로유럽회사",
+    "status": "video_done",
+    "narration": "에스토니아에서는 인터넷만 있으면 유럽 회사를 설립할 수 있다! 2014년부터 시작된 e‑Residency 프로그램은 전 세계 누구에게나 디지털 신분증을 제공합니다. 이 신분증만 있으면 현지에 직접 방문할 필요 없이 회사를 등록하고, 은행 계좌를 열며, 전자 서명까지 할 수 있죠. 디지털 노마드와 창업자를 위해 만든 혁신적인 제도라 할 수 있습니다. 흥미로운 점은, 이 디지털 시민권을 가진 사람 중 무려 30%가 실제로 에스토니아에 거주하지 않는다는 사실입니다. 물리적인 경계가 사라진 시대, 여러분도 클릭 한 번으로 세계 무대에 뛰어들 수 있다는 생각, 어떠신가요?",
+    "title_line1": "에스토니아 디지털",
+    "title_line2": "클릭 한 번으로 설립?",
     "highlights": [
       {
         "s": 1,
@@ -2378,29 +2417,60 @@
       },
       {
         "s": 3,
-        "text": "*신분증* 하나면!"
+        "text": "*은행* 바로 개설"
       },
       {
         "s": 5,
-        "text": "30%는 *거주* 안해"
-      },
-      {
-        "s": 6,
-        "text": "전 세계가 *허브*!"
-      },
-      {
-        "s": 7,
-        "text": "*온라인* 시작!"
+        "text": "30%는 *거주* 안 해"
       }
     ],
     "image_queries": [
-      "Estonia Tallinn skyline",
-      "laptop with digital ID card",
-      "online business registration form",
-      "remote worker coffee shop",
-      "global map with network lines",
-      "Estonia countryside road"
-    ]
+      "Estonia Tallinn cityscape",
+      "digital passport illustration",
+      "laptop with online registration form",
+      "remote work coffee shop",
+      "bank account online dashboard",
+      "global nomad traveling with laptop"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0076_Estonia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0076_Estonia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Jecqan",
+        "page": "https://pixabay.com/photos/sparrow-fence-estonia-tallinn-7984807/"
+      },
+      {
+        "scene": 2,
+        "user": "621hjmit",
+        "page": "https://pixabay.com/photos/sella-capital-4101893/"
+      },
+      {
+        "scene": 3,
+        "user": "27707",
+        "page": "https://pixabay.com/photos/laptop-coffee-arm-desktop-notebook-1205256/"
+      },
+      {
+        "scene": 4,
+        "user": "Peggy_Marco",
+        "page": "https://pixabay.com/photos/digital-nomads-lifestyle-remote-work-4875466/"
+      },
+      {
+        "scene": 5,
+        "user": "TheDigitalWay",
+        "page": "https://pixabay.com/photos/credit-cards-denim-jeans-blue-jeans-1583534/"
+      },
+      {
+        "scene": 6,
+        "user": "Peggy_Marco",
+        "page": "https://pixabay.com/photos/man-laptop-work-digital-nomad-4749237/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0076_Estonia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Philippines",
@@ -2488,7 +2558,7 @@
     "twist": "조용한 차에 들어가면 위반 시 최대 30분까지 정차가 제한될 수 있다.",
     "verify_note": "Japan quiet car train policy",
     "created_at": "2026-10-10T23:40:10.814759+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Wales",
@@ -2498,7 +2568,7 @@
     "twist": "심지어 새로운 건물도 입주 전, 외관에 웨일스어 표지판을 설치해야 승인받을 수 있습니다.",
     "verify_note": "Welsh Language Act 2011 bilingual signage requirement",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Japan",
@@ -2568,6 +2638,126 @@
     "twist": "빌뉴스 시에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드와 함께 도시 전체를 이끌며, 왕관 대신 큰 팬케이크를 머리에 얹는다.",
     "verify_note": "Lithuania Užgavėnės festival tradition, Užgavėnės pancakes",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Nepal",
+    "topic": "Living goddess Kumari tradition",
+    "hook": "네팔에서는 아직도 살아있는 여신을 왕궁에 모신다!",
+    "body": "카트만두의 쿠마리 사원에서는 사춘기 전의 소녀를 신성한 ‘쿠마리’로 선정해 일년 내내 궁전에서 살아가게 합니다. 그녀는 중요한 국가 행사와 축제에 등장해 신성한 존재로 숭배받으며, 일반인들은 그녀를 볼 때는 눈을 마주치지 못하도록 조심합니다.",
+    "twist": "정부는 쿠마리의 건강을 매일 검진하고, 작은 흉터라도 생기면 즉시 교체하도록 규정해 두었습니다.",
+    "verify_note": "Kumari living goddess Nepal selection criteria, Kumari tradition Kathmandu, Kumari temple health checks",
+    "created_at": "2026-10-11T02:10:26.231948+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Iceland",
+    "topic": "Elf‑rock protection influencing road construction",
+    "hook": "아이슬란드에서는 도로를 바꾸면 요정이 울어!",
+    "body": "2015년 한 고속도로 건설 현장에서 조사팀이 ‘숨은 요정 바위(elf rock)’가 있다는 보고를 받자, 현장 작업이 즉시 중단되었습니다. 아이슬란드에서는 전통적으로 요정 서식지를 보호하는 비공식 지침이 있어, 도로는 바위가 있는 구역을 우회하도록 설계되었습니다.",
+    "twist": "우회 설계로 인해 도로 길이가 2km 늘고 비용이 120만 달러가 추가됐지만, 이후 해당 구역은 문화유산 보호구역으로 지정되었습니다.",
+    "verify_note": "Iceland elf rock road reroute 2015, Huldufólk road project, Icelandic planning authority elf rock",
+    "created_at": "2026-10-11T02:10:26.231948+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "South Korea",
+    "topic": "Jeju haenyeo (female divers) pension and health‑insurance law",
+    "hook": "제주 해녀, 80세에도 바다에 뛰어들어 연금까지!",
+    "body": "제주도 해녀들은 1960년대부터 바다에 잠수해 해산물을 채취해 왔으며, 2011년 문화유산 지정 이후 정부는 이들을 위한 특별 연금과 맞춤형 건강보험 제도를 도입했습니다. 해녀들은 이제 정해진 연금으로 생활을 유지하면서도 여전히 바다에 몸을 담급니다.",
+    "twist": "몇몇 해녀는 국제 자유잠수 대회에 출전해 남성 선수들의 절반 나이에도 뒤지지 않는 기록을 세우며 세계 무대에 도전하고 있습니다.",
+    "verify_note": "Jeju haenyeo pension law, South Korea haenyeo cultural heritage, haenyeo health insurance",
+    "created_at": "2026-10-11T02:10:26.231948+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Kintsugi – gold‑filled pottery repair tradition",
+    "hook": "일본에서는 깨진 그릇을 고치면 더 비싸진다!",
+    "body": "일본의 금수공예인 킨츠기 워크숍에서는 가정의 깨진 도자기를 가져와 금가루를 섞은 옥을 사용해 균열을 메꿉니다. 금빛이 드러난 금이 균열을 강조하면서 ‘흠이 아름다움’이라는 철학을 시각화하고, 수리된 그릇은 원래보다 더 높은 가치를 인정받게 됩니다.",
+    "twist": "최근 미술관에서도 킨츠기 작품을 현대 미술 전시의 일환으로 선보이며, 수리된 도자기를 원래 가격의 두 배 이상에 판매하는 사례가 늘고 있습니다.",
+    "verify_note": "Kintsugi gold repair tradition Japan, kintsugi workshops Tokyo, value of repaired pottery",
+    "created_at": "2026-10-11T02:10:26.231948+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Zero‑waste 45‑category recycling law in Kamikatsu",
+    "hook": "이 마을은 쓰레기를 45가지 종류로 나눠야 해요!",
+    "body": "일본 가와구치현 카미카츠는 ‘제로‑웨이스트’ 목표로 가정마다 45개의 서로 다른 쓰레기통을 배치합니다. 주민들은 매일 부엌, 욕실, 정원 쓰레기를 색과 라벨에 맞춰 분류하고, 마을 회의에서 ‘분리수거 점수’를 공개합니다.",
+    "twist": "쓰레기를 올바르게 분류하지 않으면, 다음 달에 마을 축제에서 ‘쓰레기 벌칙 무용’ 공연을 해야 합니다.",
+    "verify_note": "Kamikatsu 45 waste categories, zero waste town Japan",
+    "created_at": "2026-10-11T02:10:57.946598+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "World Wife‑Carrying Championship (Sonkajärvi)",
+    "hook": "핀란드에서는 남편이 아내를 안고 장애물 코스를 달려요!",
+    "body": "소니카리비에 있는 매년 열리는 ‘남편 안아라’ 대회에서는 남성들이 아내나 여자친구를 어깨에 메고 253미터 길이의 장애물 코스를 2분 안에 완주해야 합니다. 관중들은 빙판, 물통, 그리고 나무 통을 넘어가며 응원합니다.",
+    "twist": "우승 상금은 아내 몸무게 킬로그램당 맥주 1병, 즉 60kg이면 60병!",
+    "verify_note": "Finland wife carrying world championship Sonkajärvi prize beer weight",
+    "created_at": "2026-10-11T02:10:57.946598+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "topic": "Traditional golden‑eagle hunting (Berkutchi) apprenticeship",
+    "hook": "이 아이는 5살에 금독수리를 잡아 훈련시켜요!",
+    "body": "키르기스스탄의 고산 마을에서 소년들은 5~7살에 금독수리 새끼를 잡아 손으로 길러, 겨울이면 눈밭에서 사냥을 돕게 합니다. 사냥은 조용히 산 정상에서 시작해, 독수리가 사냥감을 낙하산처럼 내려오게 합니다.",
+    "twist": "독수리는 주인이 사망하면 가족에게 물려받아 세대를 이어 사용됩니다.",
+    "verify_note": "Kyrgyz eagle hunting tradition berkutchi child training golden eagle",
+    "created_at": "2026-10-11T02:10:57.946598+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Argentina",
+    "topic": "Candombe drum parades in Buenos Aires",
+    "hook": "아르헨티나 거리엔 아프리카식 드럼이 울려 퍼진다!",
+    "body": "부에노스아이레스의 라 플라타 지역에서는 매주 토요일 저녁, 주민들이 오래된 배럴을 재활용해 만든 큰 드럼을 두고 ‘캔도밥’ 퍼레이드를 엽니다. 드럼을 치며 옷을 화려한 색으로 입고, 어린이들은 작은 깃털 깃털을 달아 춤을 춥니다.",
+    "twist": "이 퍼레이드에서 쓰이는 드럼은 매년 새로 만들지 않고, 30년 이상 된 고대 드럼을 복원해 사용합니다.",
+    "verify_note": "Buenos Aires Candombe drumming tradition La Plata neighborhood",
+    "created_at": "2026-10-11T02:10:57.946598+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Spain",
+    "topic": "El Colacho – baby‑jumping festival",
+    "hook": "스페인 작은 마을에서 악마가 아기를 뛰어넘는다!",
+    "body": "매년 6월, 스페인 카스트릴로 데 무르시아의 ‘엘 콜라초’ 행사에서 남자들이 악마 복장을 하고 매트 위에 누워 있는 신생아 위로 뛰어넘는다. 전통적으로 이 의식은 아기를 악령으로부터 보호하고 죄악을 씻어낸다고 믿는다. 주민들은 수백 명이 모여 축제를 지켜보며, 아기들은 전혀 다치지 않는다.",
+    "twist": "이 의식은 1620년부터 이어져 왔으며, 오늘날에도 참가비는 전통적인 ‘소금과 빵’으로 지급된다.",
+    "verify_note": "El Colacho baby jumping festival Castrillo de Murcia 1620 tradition",
+    "created_at": "2026-10-11T02:11:46.268005+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Japan",
+    "topic": "Women brewers legalised – break of 300‑year sake ban",
+    "hook": "일본에서 300년간 금지됐던 여성 양조사가 드디어 허용됐어요!",
+    "body": "전통적으로 사케 양조는 남성만 할 수 있다는 ‘온마’ 규정이 있었지만, 2018년 일본 정부는 양조 면허 신청 시 성별 제한을 없애는 법을 통과시켰다. 이제 여성도 정식으로 사케 양조사가 될 수 있어, 도쿄와 교토에 여성 양조장이 늘어나고 있다.",
+    "twist": "법 개정 이후 첫 여성 양조사가 만든 사케는 국제 대회에서 금메달을 휩쓸었다.",
+    "verify_note": "Japan 2018 sake brewing women law gender restriction removed",
+    "created_at": "2026-10-11T02:11:46.268005+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "Every‑man's right to camp anywhere for two nights",
+    "hook": "핀란드에서는 숲속에 텐트 치는 게 법으로 허용돼!",
+    "body": "‘Jokamiehen oikeus’(모두의 권리) 덕분에 핀란드 주민과 관광객은 사유지가 아닌 자연 속에서 최대 2일간 텐트를 치고 불을 피할 수 있다. 캠핑장은 미리 예약할 필요 없이, 단지 쓰레기와 자연을 보호하면 된다.",
+    "twist": "하지만 2022년부터는 2일 이상 연속 캠핑 시 현지 주민에게 작은 기부금을 내야 하는 새로운 규정이 추가되었다.",
+    "verify_note": "Finland Jokamiehen oikeus camping two nights law 2022",
+    "created_at": "2026-10-11T02:11:46.268005+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Kenya",
+    "topic": "Maasai warrior initiation (Eunoto) ceremony",
+    "hook": "케냐 마사이 청년들이 나무 위를 뛰어넘으며 전사로 변신한다!",
+    "body": "마사이 부족의 ‘Eunoto’ 의식에서는 소년들이 2년간의 교육을 마친 뒤, 전통적인 나무 장대를 뛰어넘으며 성인 전사로 인정받는다. 이 의식은 마을 전체가 모여 축하하고, 새 전사들은 이제 가축을 관리하고 전투에 참여한다.",
+    "twist": "전통적으로 새 전사들은 첫 사냥을 성공시켜야만 완전한 전사로 인정받으며, 최근에는 이 의식을 관광객에게 공개해 지역 경제를 활짝 열고 있다.",
+    "verify_note": "Maasai Eunoto warrior initiation ceremony jump over log Kenya",
+    "created_at": "2026-10-11T02:11:46.268005+00:00",
     "status": "unverified"
   }
 ]
