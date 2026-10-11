@@ -2636,7 +2636,7 @@
     "twist": "조용한 차에 들어가면 위반 시 최대 30분까지 정차가 제한될 수 있다.",
     "verify_note": "Japan quiet car train policy",
     "created_at": "2026-10-10T23:40:10.814759+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본 신칸센에선 ‘조용히’ 타야만 탈 수 있다!  \n신칸센과 통근 열차에는 ‘조용한 차’가 따로 지정돼 있습니다. 이 차에 들어가면 휴대폰은 무음으로, 대화는 가급적 삼가야 하죠. 차 안에는 “Quiet Car” 표지판과 안내 방송이 흐르고, 승객 모두가 집중과 휴식을 위해 조용히 이용합니다.  \n\n특히 이 규칙을 어기면 어떻게 될까요? 위반 시 열차가 최대 30분까지 정차가 제한될 수 있다는 사실, 알고 계셨나요? 짧은 정차라도 일정을 크게 흔들 수 있으니, 조용한 차에서는 꼭 규칙을 지키는 것이 좋습니다.  \n\n조용히 타면 더 편안한 여행, 여러분도 한 번 경험해 보세요.",
     "title_line1": "신칸센 조용한 차",
     "title_line2": "위반하면 30분 정차",
@@ -2669,7 +2669,46 @@
       "Train carriage muted lighting",
       "Japanese passenger reading book",
       "Train aisle empty seats"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0079_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0079_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/nissan-figaro-car-interior-vehicle-4368962/"
+      },
+      {
+        "scene": 2,
+        "user": "Fang_Y_M",
+        "page": "https://pixabay.com/photos/woman-platform-waiting-train-5477042/"
+      },
+      {
+        "scene": 3,
+        "user": "ArminEP",
+        "page": "https://pixabay.com/photos/shinkansen-bullet-train-5237269/"
+      },
+      {
+        "scene": 4,
+        "user": "Shutterbug26",
+        "page": "https://pixabay.com/photos/blur-commute-commuting-locomotive-1239439/"
+      },
+      {
+        "scene": 5,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/blonde-girl-book-reading-sit-1866951/"
+      },
+      {
+        "scene": 6,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/blur-chairs-empty-floor-hallway-1868346/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0079_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Wales",
@@ -2679,7 +2718,7 @@
     "twist": "심지어 새로운 건물도 입주 전, 외관에 웨일스어 표지판을 설치해야 승인받을 수 있습니다.",
     "verify_note": "Welsh Language Act 2011 bilingual signage requirement",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "웰스에서는 모든 거리 표지판이 두 언어로 적혀 있어야 한대! 2011년 웨일스 언어법이 제정되면서, 공공기관, 도로 표지판, 학교 같은 공식 장소의 모든 표지판을 웨일스어와 영어를 동시에 표시하도록 의무화되었습니다. 이 규정을 어기면 벌금이 부과될 수 있어요. 특히 새로 짓는 건물도 입주 전에 외관에 웨일스어 표지판을 설치해야만 허가를 받을 수 있습니다. 이렇게 언어가 일상에 스며들다 보니, 길을 걷다 보면 자연스럽게 두 언어가 조화를 이루는 풍경을 만나게 됩니다. 결국, 한눈에 보는 표지판 하나가 웨일스의 문화와 정체성을 지키는 작은 방패가 되는 셈이죠.",
     "title_line1": "웰스 표지판 이중언어",
     "title_line2": "벌금? 표지판이 문화",
@@ -2704,7 +2743,46 @@
       "Snowdonia mountain trail",
       "Welsh lighthouse coast",
       "Welsh village stone house"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0080_Wales_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0080_Wales_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "RyanMcGuire",
+        "page": "https://pixabay.com/photos/road-landscape-countryside-pavement-238458/"
+      },
+      {
+        "scene": 2,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/architecture-avenue-buildings-city-1846023/"
+      },
+      {
+        "scene": 3,
+        "user": "terimakasih0",
+        "page": "https://pixabay.com/photos/castle-fort-landmark-architecture-1194887/"
+      },
+      {
+        "scene": 4,
+        "user": "diego_torres",
+        "page": "https://pixabay.com/photos/mountains-bridge-a-river-snowdonia-1608681/"
+      },
+      {
+        "scene": 5,
+        "user": "EdWhiteImages",
+        "page": "https://pixabay.com/photos/lighthouse-mumbles-coast-swansea-4730211/"
+      },
+      {
+        "scene": 6,
+        "user": "ptrabattoni",
+        "page": "https://pixabay.com/photos/spain-spanish-europe-house-4967963/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0080_Wales.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -2714,7 +2792,36 @@
     "twist": "수건을 물에 빠뜨리면 온천 주인에게 직접 청소비를 물어야 할 수도 있습니다.",
     "verify_note": "Japanese onsen etiquette towel in water prohibition",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "일본 온천에서는 수건을 물에 넣으면 큰 실수! 온천에 들어가기 전, 먼저 몸을 깨끗이 씻어야 합니다. 샤워 공간에서 비누와 물로 충분히 씻은 뒤, 온천 물에 들어갈 때는 작은 수건을 머리 위에 얹어 두는 것이 기본 예절이에요. 절대로 수건을 물속에 넣으면 안 됩니다. 온천 물은 깨끗함을 유지해야 하는데, 수건이 물에 닿으면 오염된다고 여기기 때문이죠. 만약 실수로 수건을 물에 빠뜨리면, 온천 주인에게 직접 청소비를 물어야 할 수도 있습니다. 그래서 현지인들은 항상 수건을 물 밖에 두고, 몸을 닦을 때만 사용합니다. 작은 실수 하나가 큰 비용으로 이어질 수 있다는 점, 기억해 두세요. 온천을 즐기면서도 예절을 지키면, 더 깊은 휴식을 느낄 수 있을 겁니다. 다음 번엔 어떤 실수가 또 있을지, 생각해 보세요.",
+    "title_line1": "온천 수건 금지",
+    "title_line2": "넣으면 큰 벌금",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "수건 *물* 금지!"
+      },
+      {
+        "s": 4,
+        "text": "절대 *수건* 넣으면 안돼"
+      },
+      {
+        "s": 6,
+        "text": "*청소비* 물어볼 수도"
+      },
+      {
+        "s": 8,
+        "text": "작은 실수 *큰비용* 주의"
+      }
+    ],
+    "image_queries": [
+      "Japanese onsen shower area",
+      "small towel on head Japan",
+      "onsen water without towel",
+      "Japanese hot spring bath",
+      "towel hanging outside onsen",
+      "Kyoto ryokan bathroom"
+    ]
   },
   {
     "country": "Finland",
@@ -2724,7 +2831,36 @@
     "twist": "하지만 같은 날 같은 장소에서 같은 종류를 너무 많이 따면 지역 주민에게 경고를 받을 수 있어요.",
     "verify_note": "Finland Everyman's Right berry picking law",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "핀란드에서는 숲에서 베리와 버섯을 따는 게 법으로 보장돼! 바로 ‘자연 이용권’, 즉 Everyman's Right 덕분인데요. 공공 산림에 들어가면 누구나 블루베리, 라즈베리, 사과버섯, 야생 허브 등을 자유롭게 채집할 수 있습니다. 단, 상업적인 목적이 아니라면 언제든지 가능하고, 자연을 훼손하지 않는 선에서만 허용돼요. 그래서 아이와 함께 소풍을 가도 작은 바구니에 딸기 같은 걸 넣어 돌아올 수 있답니다. 하지만 같은 날 같은 장소에서 같은 종류를 너무 많이 따면, 주변 주민들이 “그거 너무 많이 따갔어요”라며 조심하라고 경고할 수 있다는 점, 기억해 주세요. 자연을 즐기면서도 서로 배려하는 작은 규칙, 바로 그게 핀란드 사람들의 숲 사랑이죠. 결국, 숲은 우리 모두의 것이지만, 그 안에서 조심스레 손을 뻗는 것이 진짜 자유라는 걸 보여줍니다.",
+    "title_line1": "핀란드 숲 자유채집",
+    "title_line2": "얼마나 따도 괜찮을까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "숲에서 *베리* 채집"
+      },
+      {
+        "s": 3,
+        "text": "공공산림 *버섯* 자유"
+      },
+      {
+        "s": 5,
+        "text": "아이와 *소풍* 베리"
+      },
+      {
+        "s": 6,
+        "text": "과다 *채집* 주의"
+      }
+    ],
+    "image_queries": [
+      "Finland forest berries picking",
+      "Finnish pine forest mushrooms",
+      "Family picnic basket berries Finland",
+      "Wild blueberry bush closeup",
+      "Raspberry picking in Nordic woods",
+      "Mushroom foraging trail Finland"
+    ]
   },
   {
     "country": "Argentina",
@@ -2734,7 +2870,7 @@
     "twist": "한 번에 마시고 남은 마테를 다시 끓여 마시는 're-cimarrón'은 실수로 여겨져, 같은 사람에게 연속으로 주면 실례가 됩니다.",
     "verify_note": "Argentinian mate drinking etiquette clockwise passing",
     "created_at": "2026-10-10T23:40:20.861540+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Iceland",
@@ -2744,7 +2880,7 @@
     "twist": "하지만 최근에는 외국에서 온 가족이 고유 성을 유지하도록 허용되는 경우도 늘고 있다.",
     "verify_note": "Iceland patronymic naming law, Iceland Naming Committee",
     "created_at": "2026-10-10T23:40:55.301359+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Portugal",
