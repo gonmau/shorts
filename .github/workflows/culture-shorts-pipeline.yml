@@ -19,8 +19,8 @@
 name: culture-shorts-pipeline
 
 on:
-#  schedule:
-#    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
+  schedule:
+    - cron: "0 21 * * 1,4"   # 월/목 06:00 KST (stage=all)
   workflow_dispatch:
     inputs:
       stage:
@@ -29,8 +29,8 @@ on:
         options: [all, prepare, render]
         default: all
       count:
-        description: "만들 영상 개수"
-        default: "3"
+        description: "만들 영상 개수 (하루 1~2개 권장)"
+        default: "2"
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
         default: "56"
@@ -48,7 +48,7 @@ jobs:
     timeout-minutes: 90
     env:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
-      COUNT: ${{ github.event.inputs.count || '3' }}
+      COUNT: ${{ github.event.inputs.count || '2' }}
       START: ${{ github.event.inputs.start_index || '56' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -119,6 +119,10 @@ jobs:
         if: ${{ env.STAGE != 'prepare' }}
         run: python build_video.py --limit "$COUNT" --start "$START" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
+      - name: 썸네일 만들기
+        if: ${{ env.STAGE != 'prepare' }}
+        run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
+
       - name: 유튜브 비공개 업로드
         if: ${{ env.STAGE != 'prepare' && env.YT_REFRESH_TOKEN != '' }}
         env:
@@ -142,7 +146,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: culture-shorts-videos
-          path: videos/*.mp4
+          path: |
+            videos/*.mp4
+            thumbnails/*.png
           retention-days: 14
           if-no-files-found: warn
 
