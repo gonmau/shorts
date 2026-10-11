@@ -38,6 +38,11 @@ on:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
         default: false
+      cta_check:
+        description: "대본의 구독/좋아요 문구 (off=안 함, scan=점검만, fix=미제작 소재 대본 다시 만들기)"
+        type: choice
+        options: [off, scan, fix]
+        default: off
 
 permissions:
   contents: write
@@ -50,6 +55,7 @@ jobs:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
       COUNT: ${{ github.event.inputs.count || '2' }}
       START: ${{ github.event.inputs.start_index || '56' }}
+      CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
@@ -97,6 +103,11 @@ jobs:
           json.dump(db, open('facts_db.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
           print(f'{k}개 자동 승인')
           PY
+
+      - name: 구독/좋아요 문구 점검 (선택)
+        if: ${{ env.CTA_MODE != 'off' }}
+        run: |
+          if [ "$CTA_MODE" = "fix" ]; then python reset_cta.py --start "$START" --apply; else python reset_cta.py --start "$START"; fi
 
       - name: 대본 + 제목 + 핵심 문구 + 이미지 검색어 생성
         if: ${{ env.STAGE != 'render' }}
