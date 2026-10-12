@@ -25,7 +25,7 @@ on:
         description: "이미 만든 영상 다시 제작할 DB 번호 (예: 98,99 / 비워두면 안 함)"
         default: ""
       redo_script:
-        description: "대본부터 다시 만들 DB 번호 (예: 101 / 폐기된 소재 재시도도 가능 / 비워두면 안 함)"
+        description: "대본부터 다시 만들 DB 번호 (예: 101 / 번호 뒤에 !를 붙이면(101!) 대본은 두고 검수 대기열로 되살림 / 비워두면 안 함)"
         default: ""
       stage:
         description: "단계 (prepare=대본/제목 준비, render=영상 제작, all=한 번에)"
