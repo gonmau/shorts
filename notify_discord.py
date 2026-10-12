@@ -76,7 +76,7 @@ def main():
         notes = item.get("fact_issues") or []
         if r or notes:
             icon = {"low": "🟢", "medium": "🟡", "high": "🔴"}.get(r, "⚪")
-            post(url, f"{icon} 사실 검수 위험도: {r or '-'}" + ("\n⚠️ 고친/의심한 점:\n" + "\n".join(f"- {n}" for n in notes) if notes else "")
+            post(url, f"{icon} 사실 검수 위험도: {r or '-'} / 확인도: {item.get('fact_verifiability', '-')} / " + ("교정 적용됨" if item.get("fact_applied") else "교정 없음/미적용") + ("\n⚠️ 고친/의심한 점:\n" + "\n".join(f"- {n}" for n in notes) if notes else "")
                  + (f"\n🔎 확인 검색어: {item['verify_note']}" if item.get("verify_note") else ""))
         th = Path("thumbnails") / (Path(name).stem + ".png")
         if th.exists():

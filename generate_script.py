@@ -575,6 +575,7 @@ def build_factcheck_prompt(fact, narration):
 순수 JSON 객체만 출력:
 {{"issues": ["고친 점 또는 여전히 불확실한 점을 한 줄씩"],
   "risk": "low, medium, high 중 하나 (원문에 사실 오류가 있었을 가능성)",
+  "verifiability": "documented = 이 관습/사실이 실제로 존재하고 문서로 확인된다고 알고 있음, unverified = 존재 여부를 확인할 수 없음, fabricated = 지어낸 것 같거나 존재하지 않는다고 생각함. 솔직하게: 들어본 적 없으면 unverified",
   "hook": "...", "body": "...", "twist": "...", "narration": "..."}}"""
 
 
@@ -595,26 +596,42 @@ def factcheck_fact(client, models, fact, retries=3):
     )
     fact["fact_checked"] = True
     if not data:
-        print("  [사실 검수 실패] 원본 대본을 그대로 사용합니다. review.txt에서 직접 확인하세요.")
+        print("  [사실 검수 실패] 검수 없이는 영상으로 만들지 않습니다 (소재 폐기).")
         fact["fact_risk"] = "unchecked"
+        fact["fact_verifiability"] = "unchecked"
+        fact["status"] = "rejected"
+        fact["reject_reason"] = "사실 검수 실패"
         return True
     issues = [str(x).strip() for x in (data.get("issues") or []) if str(x).strip()]
     fact["fact_issues"] = issues
     fact["fact_risk"] = str(data.get("risk", "low")).strip().lower()
+    fact["fact_verifiability"] = str(data.get("verifiability", "unverified")).strip().lower()
     new_narr = clean_narration(str(data.get("narration", "")))
     ok, why = validate_narration(new_narr)
+    fact["fact_applied"] = False
     if issues and ok:
         fact["narration_original"] = narration
         fact["narration"] = new_narr
+        fact["fact_applied"] = True
         for k in ("hook", "body", "twist"):
             v = str(data.get(k, "")).strip()
             if v:
                 fact[k] = v
+    # 근거가 불확실한 소재는 고쳐 쓰지 않고 폐기한다 (말투만 부드럽게 해도 지어낸 내용이면 소용없음)
+    reason = None
+    if fact["fact_verifiability"] != "documented":
+        reason = f"확인 불가/조작 의심 ({fact['fact_verifiability']})"
+    elif fact["fact_risk"] in ("medium", "high"):
+        reason = f"사실 오류 위험 {fact['fact_risk']}"
     elif issues and not ok:
-        print(f"  [사실 검수] 수정본이 기준에 안 맞아 원본 유지 ({why})")
-    print(f"  [사실 검수] 위험도 {fact['fact_risk']} / 교정 {len(issues)}건")
+        reason = f"교정본이 기준에 안 맞아 적용 못 함 ({why})"
+    print(f"  [사실 검수] 위험도 {fact['fact_risk']} / 확인도 {fact['fact_verifiability']} / 교정 {len(issues)}건 / 적용 {fact['fact_applied']}")
     for i in issues:
         print(f"    - {i}")
+    if reason:
+        fact["status"] = "rejected"
+        fact["reject_reason"] = reason
+        print(f"  [폐기] 이 소재는 영상으로 만들지 않습니다: {reason}")
     return True
 
 
@@ -626,8 +643,10 @@ def title_ok(fact):
 def ensure_extras(client, models, fact, retries=3):
     """제목 2줄 / 핵심 문구 / 이미지 검색어 중 없는 것만 만든다. 바뀐 게 있으면 True."""
     changed = False
-    if not fact.get("fact_checked") and fact.get("narration"):
+    if not fact.get("fact_verifiability") and fact.get("narration"):
         changed = factcheck_fact(client, models, fact, retries) or changed
+        if fact.get("status") == "rejected":
+            return True
     narration = fact.get("narration", "")
     if not title_ok(fact):
         titles = generate_title(client, models, fact, narration, retries)
@@ -668,7 +687,7 @@ def run_extras(client, models, db, limit, start, delay, retries):
 
     todo = [
         (i, f) for i, f in targets
-        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries") and f.get("fact_checked"))
+        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries") and f.get("fact_verifiability"))
     ]
     print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")
     for number, (index, fact) in enumerate(todo, start=1):
@@ -1009,7 +1028,7 @@ def main():
             fact["status"] = "scripted"  # TTS 단계(generate_tts_v2.py)가 이 상태를 찾습니다.
 
             # 대본이 새로 바뀌었으므로 이전 제목/핵심 문구/검색어는 지우고 새로 만든다
-            for key in ("title_line1", "title_line2", "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "narration_original"):
+            for key in ("title_line1", "title_line2", "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "fact_verifiability", "fact_applied", "reject_reason", "narration_original"):
                 fact.pop(key, None)
             ensure_extras(client, models, fact, args.retries)
 
