@@ -164,7 +164,13 @@ jobs:
           git add facts_db.json
           [ -f review.txt ] && git add review.txt || true
           git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
-          git push
+          # 실행 중에 다른 커밋(README 등)이 올라와도 push가 거절되지 않게 합친 뒤 올림
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "push 실패"; exit 1
 
       - name: mp4 아티팩트 보관
         id: art
