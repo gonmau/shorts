@@ -165,6 +165,7 @@ def build_prompt(fact):
     body = fact.get("body", "")
     twist = fact.get("twist", "")
     verify_note = fact.get("verify_note", "")
+    caveat = fact.get("caveat", "")
 
     return f"""
 당신은 한국어 유튜브 쇼츠 전문 대본 작가입니다.
@@ -186,6 +187,9 @@ def build_prompt(fact):
 
 [반전/흥미로운 포인트]
 {twist}
+
+[이 사실의 한계]
+{caveat}
 
 [검증 메모]
 {verify_note}
@@ -209,6 +213,7 @@ def build_prompt(fact):
 15. 구독, 좋아요, 알림 설정, 댓글을 요청하는 말은 절대 넣지 않습니다. 마지막은 여운이 남는 한 문장이나 반전으로 끝내고, 가능하면 첫 문장의 궁금증과 이어지게 해서 다시 보고 싶게 만듭니다.
 16. 제목, 번호, "내레이션:", "대본:" 같은 라벨은 출력하지 않습니다.
 17. 대본만 출력합니다.
+18. 정확성이 우선입니다. 과장하지 말고 차분하게 사실만 전달합니다. "모두", "항상", "절대", "불법", "유일", "세계 최대/최초" 같은 단정 표현을 쓰지 않고, "많은", "일부", "대체로" 등으로 범위를 한정하며 지역·대상을 밝힙니다. 일부의 관습을 나라 전체의 규칙처럼 말하지 말고, [이 사실의 한계]를 존중합니다.
 
 중요:
 자료가 이미 제공되어 있으므로 절대로
@@ -305,7 +310,7 @@ def build_title_prompt(fact, narration):
 2. 1줄은 상황이나 주제를 제시하고, 2줄은 궁금증을 만드는 결과나 반전을 씁니다.
 3. 각 줄은 공백 포함 12자 이내로 짧게 씁니다.
 4. 자료에 없는 사실이나 숫자를 만들지 않습니다.
-5. 낚시성 과장 없이 자료 내용과 일치해야 합니다.
+5. 낚시성 과장 없이 자료 내용과 일치해야 합니다. "모두/항상/절대/불법/유일" 같은 단정은 대본이 정확히 그렇게 말할 때만 씁니다.
 6. 제목은 반드시 한글로만 씁니다. 영어 알파벳은 쓰지 않습니다.
    국가명과 고유명사도 한국어 표기로 씁니다. (예: Uruguay → 우루과이)
    [주제]나 [훅]이 영어여도 자연스러운 한국어로 옮겨 씁니다.
@@ -535,6 +540,84 @@ def generate_queries(client, models, fact, narration, retries=3):
     )
 
 
+# ============================================================
+# 사실 검수(과장/일반화 교정) 패스
+# ============================================================
+
+def build_factcheck_prompt(fact, narration):
+    return f"""당신은 한국어 유튜브 쇼츠 대본의 엄격한 팩트체크 편집자입니다.
+아래 글에서 과장, 지나친 일반화, 단정 표현, 자극적 표현, 사실과 다를 가능성이 있는 내용을 찾아 고치세요.
+
+[국가] {fact.get("country", "")}
+[주제] {fact.get("topic", "")}
+[이 사실의 한계] {fact.get("caveat", "")}
+
+[hook]
+{fact.get("hook", "")}
+[body]
+{fact.get("body", "")}
+[twist]
+{fact.get("twist", "")}
+[narration]
+{narration}
+
+찾을 것:
+- 단정: 모든/누구나/항상/절대/불법/금지/유일/세계 최초·최대
+- 일부 지역·업체·사람의 관습을 나라 전체의 규칙처럼 쓴 것
+- 확인되지 않았거나 틀렸을 가능성이 있는 통계·금액·날짜·수치
+- 근거보다 강한 주장, 고정관념, 낚시성 표현
+- 사실이 아니라고 판단되는 내용
+
+한정어(많은/일부/대체로)와 분명한 범위로 고치거나, 고칠 수 없으면 해당 내용을 삭제하세요.
+문체(존댓말, 짧은 문장, 이모지 없음)와 분량(350~500자)은 유지하고 구독/좋아요 요청은 넣지 마세요.
+이미 정확하고 차분하면 원문을 그대로 두고 issues를 빈 배열로 두세요.
+
+순수 JSON 객체만 출력:
+{{"issues": ["고친 점 또는 여전히 불확실한 점을 한 줄씩"],
+  "risk": "low, medium, high 중 하나 (원문에 사실 오류가 있었을 가능성)",
+  "hook": "...", "body": "...", "twist": "...", "narration": "..."}}"""
+
+
+def parse_factcheck(text):
+    data = extract_json(text)
+    if not isinstance(data, dict) or not str(data.get("narration", "")).strip():
+        return None
+    return data
+
+
+def factcheck_fact(client, models, fact, retries=3):
+    """대본/설명(hook,body,twist)의 과장·일반화를 교정한다. 교정 내용은 fact_issues에 남긴다."""
+    narration = fact.get("narration", "")
+    data = ask_models(
+        client, models,
+        "당신은 꼼꼼한 팩트체크 편집자입니다. JSON만 출력합니다.",
+        build_factcheck_prompt(fact, narration), 3000, retries, parse_factcheck,
+    )
+    fact["fact_checked"] = True
+    if not data:
+        print("  [사실 검수 실패] 원본 대본을 그대로 사용합니다. review.txt에서 직접 확인하세요.")
+        fact["fact_risk"] = "unchecked"
+        return True
+    issues = [str(x).strip() for x in (data.get("issues") or []) if str(x).strip()]
+    fact["fact_issues"] = issues
+    fact["fact_risk"] = str(data.get("risk", "low")).strip().lower()
+    new_narr = clean_narration(str(data.get("narration", "")))
+    ok, why = validate_narration(new_narr)
+    if issues and ok:
+        fact["narration_original"] = narration
+        fact["narration"] = new_narr
+        for k in ("hook", "body", "twist"):
+            v = str(data.get(k, "")).strip()
+            if v:
+                fact[k] = v
+    elif issues and not ok:
+        print(f"  [사실 검수] 수정본이 기준에 안 맞아 원본 유지 ({why})")
+    print(f"  [사실 검수] 위험도 {fact['fact_risk']} / 교정 {len(issues)}건")
+    for i in issues:
+        print(f"    - {i}")
+    return True
+
+
 def title_ok(fact):
     l1, l2 = fact.get("title_line1"), fact.get("title_line2")
     return bool(l1 and l2 and is_korean_title(l1) and is_korean_title(l2))
@@ -542,8 +625,10 @@ def title_ok(fact):
 
 def ensure_extras(client, models, fact, retries=3):
     """제목 2줄 / 핵심 문구 / 이미지 검색어 중 없는 것만 만든다. 바뀐 게 있으면 True."""
-    narration = fact.get("narration", "")
     changed = False
+    if not fact.get("fact_checked") and fact.get("narration"):
+        changed = factcheck_fact(client, models, fact, retries) or changed
+    narration = fact.get("narration", "")
     if not title_ok(fact):
         titles = generate_title(client, models, fact, narration, retries)
         if titles:
@@ -583,7 +668,7 @@ def run_extras(client, models, db, limit, start, delay, retries):
 
     todo = [
         (i, f) for i, f in targets
-        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries"))
+        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries") and f.get("fact_checked"))
     ]
     print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")
     for number, (index, fact) in enumerate(todo, start=1):
@@ -924,7 +1009,7 @@ def main():
             fact["status"] = "scripted"  # TTS 단계(generate_tts_v2.py)가 이 상태를 찾습니다.
 
             # 대본이 새로 바뀌었으므로 이전 제목/핵심 문구/검색어는 지우고 새로 만든다
-            for key in ("title_line1", "title_line2", "highlights", "image_queries"):
+            for key in ("title_line1", "title_line2", "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "narration_original"):
                 fact.pop(key, None)
             ensure_extras(client, models, fact, args.retries)
 

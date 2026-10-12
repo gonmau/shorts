@@ -26,6 +26,12 @@ def main():
         if not item.get("narration"):
             continue
         lines = [f"=== [{idx}] {item.get('country', '')} ==="]
+        if item.get("fact_risk"):
+            lines.append(f"(사실 검수 위험도) {item['fact_risk']}")
+        for n, t in enumerate(item.get("fact_issues") or [], start=1):
+            lines.append(f"(검수 메모 {n}) {t}")
+        if item.get("verify_note"):
+            lines.append(f"(사실 확인용 검색어) {item['verify_note']}")
         lines.append(f"제목1: {item.get('title_line1', '')}")
         lines.append(f"제목2: {item.get('title_line2', '')}")
         for h in item.get("highlights") or []:

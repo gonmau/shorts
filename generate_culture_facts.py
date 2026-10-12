@@ -87,6 +87,11 @@ def build_prompt(count: int, used: str) -> str:
 - 이미 너무 유명한 소재(토마토 축제, 산페르민 소몰이 등)는 피할 것
 - 종교/전쟁/정치적으로 민감한 내용은 제외 (관습, 법, 음식, 언어, 생활문화 위주)
 - 사실 기반이어야 하며, 확인 가능한 정보일 것 (불확실하면 넣지 말 것)
+- 정확성이 최우선: 놀라움이 과장이 되면 안 됨. 적용 범위(어디서/누가/언제)를 분명히 쓸 것
+  * "모든", "누구나", "항상", "절대", "불법", "금지", "유일한 나라", "세계 최초/최대" 같은 단정 표현은 확실한 근거가 있을 때만
+  * 일부 지역·일부 업체·일부 사람의 관습을 그 나라 전체의 규칙처럼 쓰지 말 것 ("일부 지역에서는", "많은 경우" 등으로 한정)
+  * 통계·금액·연도는 정확히 확신할 때만, 아니면 정성적으로 표현
+  * 특정 민족·국민에 대한 일반화나 비하, 자극적 낚시 표현 금지
 
 아래는 최근에 이미 사용한 국가+주제 목록이야. 이것과 겹치지 않게 생성해줘:
 {used}
@@ -99,6 +104,8 @@ def build_prompt(count: int, used: str) -> str:
     "hook": "영상 시작 3초용 후킹 문장 (예: '이 나라에서는 시계를 선물하면 절교당합니다')",
     "body": "본문 설명 (2~3문장, 왜 그런지 배경 포함)",
     "twist": "반전이나 추가로 놀랄 만한 정보 1문장",
+    "caveat": "이 사실의 한계 한 문장 (어디서/누구에게/언제 적용되는지, 모든 경우는 아닌 점)",
+    "confidence": "정확하고 문서로 잘 확인되는 확신이 있을 때만 high, 아니면 medium 또는 low",
     "verify_note": "사실 확인 시 참고할 키워드 (사람이 검수할 때 검색할 용도)"
   }}
 ]"""
@@ -133,7 +140,11 @@ def generate_batch(client: Groq, model: str, count: int, used: str) -> list[dict
     if not text.strip():
         raise ValueError(f"응답이 비어있음 (finish_reason={finish_reason})")
 
-    return extract_json_array(text)
+    items = extract_json_array(text)
+    kept = [f for f in items if str(f.get("confidence", "")).strip().lower() == "high"]
+    if len(kept) < len(items):
+        print(f"  확신도 낮은 소재 {len(items) - len(kept)}개 제외 (과장/오류 방지)")
+    return kept
 
 
 def generate_facts(

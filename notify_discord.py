@@ -72,6 +72,12 @@ def main():
         post(url, f"🎬 {name} - 아래 두 메시지를 길게 눌러 '텍스트 복사'")
         post(url, title)   # 제목만
         post(url, desc)    # 설명만
+        r = item.get("fact_risk")
+        notes = item.get("fact_issues") or []
+        if r or notes:
+            icon = {"low": "🟢", "medium": "🟡", "high": "🔴"}.get(r, "⚪")
+            post(url, f"{icon} 사실 검수 위험도: {r or '-'}" + ("\n⚠️ 고친/의심한 점:\n" + "\n".join(f"- {n}" for n in notes) if notes else "")
+                 + (f"\n🔎 확인 검색어: {item['verify_note']}" if item.get("verify_note") else ""))
         th = Path("thumbnails") / (Path(name).stem + ".png")
         if th.exists():
             post_image(url, th, "🖼 썸네일 (길게 눌러 저장)")
