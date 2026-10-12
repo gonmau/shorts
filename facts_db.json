@@ -3930,7 +3930,7 @@
     "twist": "이 의식은 1620년부터 이어져 왔으며, 오늘날에도 참가비는 전통적인 ‘소금과 빵’으로 지급된다.",
     "verify_note": "El Colacho baby jumping festival Castrillo de Murcia 1620 tradition",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스페인 작은 마을에서 악마가 아기를 뛰어넘는다! 매년 6월, 카스트릴로 데 무르시아의 ‘엘 콜라초’ 행사에선 남자들이 악마 복장을 하고 매트 위에 누워 있는 신생아 위를 뛰어넘습니다. 전통적으로 이 의식은 아기를 악령으로부터 보호하고 죄악을 씻어낸다고 믿어 왔죠. 주민 수백 명이 모여 축제를 지켜보지만, 아기들은 전혀 다치지 않습니다. 이 독특한 풍습은 1620년부터 이어져 온 오래된 전통이며, 오늘도 참가비는 전통적인 ‘소금과 빵’으로 지급됩니다. 악마가 뛰어넘은 뒤, 마치 새 힘을 얻은 듯 아기에게 남는 미소는 이 축제가 여전히 살아 숨쉬는 이유를 말해줍니다. 과연 다음 해에도 악마는 또다시 뛰어넘을까요?",
     "title_line1": "스페인 악마, 아기 위",
     "title_line2": "다음엔 또 뛰어볼까?",
@@ -3959,7 +3959,46 @@
       "crowd watching ceremony",
       "salt and bread offering",
       "Castile la Mancha streets"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0096_Spain_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0096_Spain_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "kiko_mago",
+        "page": "https://pixabay.com/photos/night-candles-pe%C3%B1aranda-philippines-1579065/"
+      },
+      {
+        "scene": 2,
+        "user": "stux",
+        "page": "https://pixabay.com/photos/vacations-travel-fun-on-the-way-2490023/"
+      },
+      {
+        "scene": 3,
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/costume-cute-demon-devil-evil-15770/"
+      },
+      {
+        "scene": 4,
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/outdoor-bihar-ganges-celebration-6615900/"
+      },
+      {
+        "scene": 5,
+        "user": "Quangpraha",
+        "page": "https://pixabay.com/photos/salt-harvesting-vietnam-water-salt-3060093/"
+      },
+      {
+        "scene": 6,
+        "user": "falco",
+        "page": "https://pixabay.com/photos/toledo-historic-center-historical-510618/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0096_Spain.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -3969,7 +4008,7 @@
     "twist": "법 개정 이후 첫 여성 양조사가 만든 사케는 국제 대회에서 금메달을 휩쓸었다.",
     "verify_note": "Japan 2018 sake brewing women law gender restriction removed",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본에서 300년간 금지됐던 여성 양조사가 드디어 허용됐어요! 전통적으로 사케 양조는 남성만 할 수 있다는 ‘온마’ 규정이 있었지만, 2018년 일본 정부가 양조 면허 신청 시 성별 제한을 없애는 법을 통과시켰습니다. 그 결과, 이제 여성도 정식으로 사케 양조사가 될 수 있게 되었고, 도쿄와 교토 곳곳에 여성 양조장이 새롭게 늘어나고 있습니다. 특히 법 개정 이후 첫 여성 양조사가 만든 사케가 국제 대회에서 금메달을 휩쓸면서, 여성 양조사의 가능성을 전 세계에 입증했죠. 과연 앞으로 사케 세계는 어떤 변화를 맞이할까요?",
     "title_line1": "300년 금지 사케",
     "title_line2": "여성 양조사 금메달?",
@@ -3994,7 +4033,46 @@
       "Female brewer holding sake bottle",
       "Sake barrels stacked in warehouse",
       "Gold medal award ceremony sake"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0097_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0097_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "DeltaWorks",
+        "page": "https://pixabay.com/photos/pottery-sake-cup-sake-bottle-180555/"
+      },
+      {
+        "scene": 2,
+        "user": "guoguogaoyu88",
+        "page": "https://pixabay.com/photos/cup-bowls-vase-ceramics-old-687147/"
+      },
+      {
+        "scene": 3,
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/kombucha-fermented-drink-8478515/"
+      },
+      {
+        "scene": 4,
+        "user": "AestheticlyAdmired804",
+        "page": "https://pixabay.com/photos/bottle-sake-asian-luxury-4498632/"
+      },
+      {
+        "scene": 5,
+        "user": "SZimmermann_DE",
+        "page": "https://pixabay.com/photos/shrine-tokyo-japan-asia-city-2576477/"
+      },
+      {
+        "scene": 6,
+        "user": "michalnavrat",
+        "page": "https://pixabay.com/photos/tournament-victory-match-target-3529744/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0097_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Finland",
@@ -4004,7 +4082,36 @@
     "twist": "하지만 2022년부터는 2일 이상 연속 캠핑 시 현지 주민에게 작은 기부금을 내야 하는 새로운 규정이 추가되었다.",
     "verify_note": "Finland Jokamiehen oikeus camping two nights law 2022",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "핀란드에서는 숲속에 텐트 치는 게 법으로 허용돼! ‘Jokamiehen oikeus’, 즉 모두의 권리 덕분에 사유지가 아닌 자연 어디서든 최대 이틀 동안 텐트를 치고 작은 불까지 피울 수 있습니다. 주민도 관광객도 미리 캠핑장을 예약할 필요가 없죠. 단, 쓰레기는 반드시 챙겨가고 자연을 훼손하지 않으면 됩니다. 그런데 2022년부터는 조금 바뀌었습니다. 같은 장소에서 2일을 넘겨 연속으로 머무르면 현지 주민에게 작은 기부금을 내야 한다는 규정이 추가된 겁니다. 그래서 오늘도 자연을 즐기려면, 두 밤만 충분히 즐기고 다음엔 다른 곳으로 이동하거나, 기부금을 준비하면 된다는 사실, 기억해 두세요. 자연과 사람, 그리고 작은 약속이 어우러지는 핀란드의 캠핑 문화, 다음엔 어디가 좋을까요?",
+    "title_line1": "핀란드 숲속 캠핑",
+    "title_line2": "2밤만 허용, 기부는?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "숲속에 *텐트* 허가!"
+      },
+      {
+        "s": 2,
+        "text": "*이틀* 자유 캠핑"
+      },
+      {
+        "s": 6,
+        "text": "2일 초과 *기부금*"
+      },
+      {
+        "s": 7,
+        "text": "*두밤* 즐겨 이동"
+      }
+    ],
+    "image_queries": [
+      "Finnish forest campsite",
+      "Tent by lake Finland",
+      "Campfire in wilderness Finland",
+      "Mushroom foraging in forest",
+      "Northern lights over campsite",
+      "Kayak on Finnish river"
+    ]
   },
   {
     "country": "Kenya",
@@ -4014,7 +4121,32 @@
     "twist": "전통적으로 새 전사들은 첫 사냥을 성공시켜야만 완전한 전사로 인정받으며, 최근에는 이 의식을 관광객에게 공개해 지역 경제를 활짝 열고 있다.",
     "verify_note": "Maasai Eunoto warrior initiation ceremony jump over log Kenya",
     "created_at": "2026-10-11T02:11:46.268005+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "케냐 마사이 청년들이 나무 위를 뛰어넘으며 전사로 변신한다! 마사이 부족의 ‘Eunoto’ 의식은 2년간의 교육을 마친 소년들이 전통 나무 장대를 힘껏 뛰어넘는 순간, 성인 전사로 인정받는 중요한 순간입니다. 마을 전체가 모여 축하하고, 새 전사는 이제 가축을 관리하고 전투에 참여하게 됩니다. 그런데 여기서 끝이 아닙니다. 새 전사가 되려면 첫 사냥을 성공시켜야 완전한 전사로 인정받는다는 전통이 남아 있습니다. 최근에는 이 의식을 관광객에게 공개해 지역 경제를 활짝 열고 있는데, 관객들은 마사이 청년들의 힘찬 점프와 함께 그들의 문화와 전통을 직접 체험할 수 있습니다. 나무를 뛰어넘는 순간, 그들의 눈빛은 어린 시절을 뒤로하고 새로운 책임을 떠안은 전사의 모습으로 바뀝니다. 그 한 번의 점프가 얼마나 큰 의미인지, 다시 한 번 떠올려 보세요.",
+    "title_line1": "마사이 전사 의식",
+    "title_line2": "나무 점프 뒤엔?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "청년 *점프*!"
+      },
+      {
+        "s": 2,
+        "text": "교육 끝, *전사*!"
+      },
+      {
+        "s": 5,
+        "text": "첫 사냥, *완전*"
+      }
+    ],
+    "image_queries": [
+      "Kenya Maasai warriors jumping",
+      "Eunoto ceremony tree jump",
+      "Kenyan village celebration fire",
+      "Maasai youth with spears",
+      "Kenya savanna wildlife herd",
+      "Tourists watching Maasai rite"
+    ]
   },
   {
     "country": "Mongolia",
@@ -4024,7 +4156,7 @@
     "twist": "경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사 인사를 전한다.",
     "verify_note": "Mongolia Naadam children's horse race tradition 5-year-old riders bareback",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Germany",
@@ -4034,7 +4166,7 @@
     "twist": "일부 지역에서는 콘 안에 작은 퍼즐을 넣어 아이가 직접 풀어야만 안에 들어있는 선물을 얻을 수 있다.",
     "verify_note": "Germany Schultüte tradition first day of school cone sweets",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Ethiopia",
