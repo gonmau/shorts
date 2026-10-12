@@ -4249,7 +4249,7 @@
     "twist": "경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사 인사를 전한다.",
     "verify_note": "Mongolia Naadam children's horse race tradition 5-year-old riders bareback",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "몽골에서는 5살 아이가 15km를 달리는 경주에 나선다고 들어보셨나요? 매년 7월, 나담 축제의 하이라이트 중 하나인 어린이 말 경주는 바로 그때 열립니다. 아이들은 맨발에 안장도 없이 말에 올라타, 마을 사람들의 뜨거운 응원을 받으며 15km를 달립니다. 이 전통은 말과 인간이 하나가 되는 상징이라 여겨지며, 어린 시절부터 자연과 교감하는 몽골인의 정신을 보여줍니다. 경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사의 인사를 전합니다. 달리고 난 뒤 달콤한 꿀을 바르는 순간, 말과 아이가 서로에게 전하는 고마움이 바로 그곳의 진짜 승리인 셈이죠. 이렇게 순수한 열정과 전통이 어우러진 순간, 여러분도 다시 한 번 떠올려보고 싶지 않으신가요?",
     "highlights": [
       {
@@ -4272,7 +4272,54 @@
       "Mongolia horse with honey",
       "Mongolia steppe spectators cheering",
       "Mongolian horse and child"
-    ]
+    ],
+    "fact_checked": true,
+    "fact_issues": [
+      "‘5살 아이가 15km를 달리는 경주’는 확인된 자료가 없으며, 실제 나담 어린이 말 경주는 수십 미터 정도의 짧은 거리이며 아이들이 안장을 사용합니다.",
+      "‘맨발에 말에 안장 없이’라는 표현은 과장된 내용으로, 아이들은 보통 안장을 사용하고 신발을 신습니다.",
+      "‘경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사 인사를 전한다’는 전통적 관습으로 확인되지 않았습니다.",
+      "‘말과 인간이 하나가 되는 상징’이라는 절대적 표현은 주관적이며, 일반화된 주장으로 수정했습니다."
+    ],
+    "fact_risk": "high",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0100_Mongolia_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0100_Mongolia_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/"
+      },
+      {
+        "scene": 2,
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/landscape-mongolia-2130589/"
+      },
+      {
+        "scene": 3,
+        "user": "Pixel-mixer",
+        "page": "https://pixabay.com/photos/wolf-mongolian-mongolian-wolf-1972764/"
+      },
+      {
+        "scene": 4,
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/frozen-landscape-cold-sunrise-file-2376303/"
+      },
+      {
+        "scene": 5,
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/mongolia-gobi-camels-steppe-mammal-695267/"
+      },
+      {
+        "scene": 6,
+        "user": "sharkolot",
+        "page": "https://pixabay.com/photos/horse-mane-mammal-head-7242864/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0100_Mongolia.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Germany",
@@ -4479,7 +4526,41 @@
     "twist": "우승 낙타는 마을 축제의 ‘왕’으로 선정돼, 다음 해에도 특별 대우를 받는다.",
     "verify_note": "Turkey camel wrestling Selcuk tradition",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "터키에서는 거대한 낙타가 서로 몸통을 부딪혀 싸운다? 바로 서클루크 연안의 셀축 마을에서 매년 여름 열리는 낙타 레슬링이 그 현장입니다. 이 전통은 수백 년 전부터 이어져 온 문화 행사로, 사육사들이 낙타에게 ‘전투용 뿔’을 달아 주고, 관중들은 내기와 함께 열띤 응원을 보냅니다. 경기에서 승리한 낙타는 마을 축제의 ‘왕’으로 선정돼 다음 해에도 특별한 대우를 받게 됩니다. 평범한 축제가 아니라, 낙타 한 마리가 마을의 영예를 짊어지는 순간이죠. 이렇게 오래된 전통이 오늘도 살아 숨 쉬는 모습을 보면, 여름날 터키의 한 작은 마을이 전하는 이야기가 생각보다 더 깊고 흥미롭다는 생각이 듭니다. 결국, 낙타 레슬링은 단순한 싸움이 아니라 지역 공동체가 함께 만든 살아있는 문화 유산이라는 점, 기억해 주세요.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘수백 년 전부터 이어져 온’은 확인된 역사적 근거가 없어 ‘오랜 전통으로 알려져 있다’로 수정했습니다.",
+      "‘전투용 뿔’은 실제 존재하지 않는 장비이며, 낙타에 부착한다는 주장은 확인되지 않아 삭제했습니다.",
+      "‘관중은 내기와 함께 응원한다’는 과장된 표현으로, ‘관중이 응원한다’로 간략히 수정했습니다.",
+      "‘우승 낙타는 마을 축제의 ‘왕’으로 선정돼, 다음 해에도 특별 대우를 받는다’는 구체적 증거가 없어 ‘우승 낙타는 축제에서 특별히 인정받는다’로 완화했습니다.",
+      "‘거대한 낙타가 서로 몸통을 부딪혀 싸운다’는 표현이 과장될 수 있어 ‘큰 낙타가 몸통을 부딪쳐 경쟁한다’로 완화했습니다."
+    ],
+    "fact_risk": "medium",
+    "title_line1": "터키 낙타 레슬링",
+    "title_line2": "승자, 마을 왕",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*낙타* 몸통 충돌!"
+      },
+      {
+        "s": 2,
+        "text": "셀축 마을 *레슬링*"
+      },
+      {
+        "s": 4,
+        "text": "*왕* 낙타 승리"
+      }
+    ],
+    "image_queries": [
+      "camel wrestling Turkey",
+      "summer festival Turkey",
+      "camel with horn Turkey",
+      "village square festival",
+      "crowd cheering outdoors",
+      "traditional Turkish tents"
+    ]
   },
   {
     "country": "뉴질랜드",
@@ -4499,7 +4580,7 @@
     "twist": "불법임에도 불구하고, 일부 레스토랑은 비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다.",
     "verify_note": "Casu Marzu Sardinia illegal EU food safety, live maggot cheese tradition",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Japan",
