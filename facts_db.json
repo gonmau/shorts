@@ -4216,7 +4216,40 @@
     "twist": "마지막 차를 마신 후에는 남은 찌꺼기를 손에 문질러 행운을 빌기도 한다.",
     "verify_note": "Ethiopia coffee ceremony roasting beans in pan three rounds",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "에티오피아 가정에서는 커피를 직접 볶아 마시며 하루를 시작한다! 아침이면 온 가족이 작은 팬에 원두를 넣고 고르게 볶기 시작합니다. 고소한 향이 집 안을 가득 메우면, 그 순간부터 차례대로 세 번에 나눠 마시는 커피 의식이 펼쳐지죠. 첫 번째 차는 진하고 강렬하고, 두 번째 차는 조금 부드러워집니다. 마지막 세 번째 차는 가장 부드럽고 은은한 맛을 내며, 손님을 대접하는 중요한 순간이 됩니다. 그리고 마지막 차를 마신 뒤에는 남은 커피 찌꺼기를 손에 문질러 행운을 빌어보는 전통이 전해져 내려옵니다. 이렇게 향긋한 연기와 함께 시작되는 하루는, 에티오피아 사람들에게는 단순한 음료를 넘어 가족과 공동체를 이어주는 소중한 의식이 됩니다. 그 향과 의식이 남긴 여운은, 또다시 커피를 끓이고 싶게 만들죠.",
+    "title_line1": "에티오피아 커피 의식",
+    "title_line2": "왜 세 번을 마실까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*커피*로 시작!"
+      },
+      {
+        "s": 3,
+        "text": "*의식*이 펼쳐져"
+      },
+      {
+        "s": 5,
+        "text": "세 번째 *손님* 대접"
+      },
+      {
+        "s": 6,
+        "text": "*찻잎*에 행운을"
+      },
+      {
+        "s": 7,
+        "text": "하루는 *연기*와 함께"
+      }
+    ],
+    "image_queries": [
+      "Ethiopia coffee roasting pan",
+      "Ethiopian family kitchen morning",
+      "coffee beans steaming pot Ethiopia",
+      "traditional coffee ceremony cup",
+      "coffee grounds hand rubbing ritual",
+      "Ethiopia sunrise village coffee"
+    ]
   },
   {
     "country": "Bangladesh",
@@ -4226,7 +4259,32 @@
     "twist": "가장 높은 연을 만든 사람은 '하늘의 왕'이라 불리며, 마을 전체가 그를 위한 축하 공연을 연다.",
     "verify_note": "Bangladesh Shakrain kite festival end of Ramadan kite fighting fireworks",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "방글라데시의 하늘은 저녁마다 수백 개의 색색깔 연기로 뒤덮인다! 라마단이 끝나고 바로 찾아오는 샤크레인 축제, 거리마다 거대한 연이 휘날리며 사람들은 열띤 연줄 싸움에 몰두합니다. 연을 끊기 위해 불꽃을 터뜨리기도 하고, 하늘을 가득 메운 불빛과 연소리는 마치 전쟁 같은 흥분을 선사합니다. 이때 가장 높은 연을 만든 사람은 ‘하늘의 왕’이라 불리며, 마을 전체가 그를 위한 축하 공연을 엽니다. 연줄이 끊어지는 순간의 환호와 불꽃이 어우러져, 밤하늘은 마치 살아 숨 쉬는 캔버스가 됩니다. 그 순간, 당신도 그 하늘을 올려다보며 ‘다음엔 내가 하늘의 왕이 될까?’ 하는 설렘을 느끼게 될 것입니다.",
+    "title_line1": "샤크레인 연축제",
+    "title_line2": "누가하늘의왕이될까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "색연기로 *하늘* 뒤덮여"
+      },
+      {
+        "s": 2,
+        "text": "샤크레인 축제, *연줄* 전쟁!"
+      },
+      {
+        "s": 4,
+        "text": "가장 높은 연, *왕* 탄생!"
+      }
+    ],
+    "image_queries": [
+      "Bangladesh night kite festival",
+      "Dhaka streets colorful kites",
+      "Bangladesh fireworks sky",
+      "kite battle rope cutting",
+      "crowd cheering festival night",
+      "illuminated sky canvas"
+    ]
   },
   {
     "country": "일본",
@@ -4236,7 +4294,7 @@
     "twist": "최근에는 치킨 대신 ‘크리스마스 파티 플래터’까지 주문해, 케이크와 함께 즐기는 가정도 늘고 있다.",
     "verify_note": "Japan KFC Christmas tradition, ‘Kentucky for Christmas’ campaign",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "카자흐스탄",
@@ -4246,7 +4304,7 @@
     "twist": "승리 팀은 승리 깃발을 들고 전통 악기를 연주하며 마을 전체에 축하 파티를 연다.",
     "verify_note": "Kokpar Kazakhstan traditional game, Buzkashi goat carcass",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "터키",
