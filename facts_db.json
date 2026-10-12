@@ -4156,7 +4156,30 @@
     "twist": "경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사 인사를 전한다.",
     "verify_note": "Mongolia Naadam children's horse race tradition 5-year-old riders bareback",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "몽골에서는 5살 아이가 15km를 달리는 경주에 나선다고 들어보셨나요? 매년 7월, 나담 축제의 하이라이트 중 하나인 어린이 말 경주는 바로 그때 열립니다. 아이들은 맨발에 안장도 없이 말에 올라타, 마을 사람들의 뜨거운 응원을 받으며 15km를 달립니다. 이 전통은 말과 인간이 하나가 되는 상징이라 여겨지며, 어린 시절부터 자연과 교감하는 몽골인의 정신을 보여줍니다. 경주가 끝나면 아이들은 말에게 직접 꿀을 발라 주며 감사의 인사를 전합니다. 달리고 난 뒤 달콤한 꿀을 바르는 순간, 말과 아이가 서로에게 전하는 고마움이 바로 그곳의 진짜 승리인 셈이죠. 이렇게 순수한 열정과 전통이 어우러진 순간, 여러분도 다시 한 번 떠올려보고 싶지 않으신가요?",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "*어린이 말경주*"
+      },
+      {
+        "s": 3,
+        "text": "맨발에 *안장* 없이"
+      },
+      {
+        "s": 5,
+        "text": "말에 *꿀* 발라 감사"
+      }
+    ],
+    "image_queries": [
+      "Mongolia children horse race",
+      "Ulaanbaatar Naadam festival",
+      "Mongolian barefoot rider",
+      "Mongolia horse with honey",
+      "Mongolia steppe spectators cheering",
+      "Mongolian horse and child"
+    ]
   },
   {
     "country": "Germany",
@@ -4166,7 +4189,24 @@
     "twist": "일부 지역에서는 콘 안에 작은 퍼즐을 넣어 아이가 직접 풀어야만 안에 들어있는 선물을 얻을 수 있다.",
     "verify_note": "Germany Schultüte tradition first day of school cone sweets",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "독일에서는 첫 등교 날, 아이가 거대한 사탕 콘을 머리에 얹고 교실에 들어갑니다! 바로 그 ‘Schultüte’가 주인공이죠. 높이 8~10 cm 정도 되는 커다란 종이 콘 안에는 달콤한 사탕은 물론, 연필, 작은 장난감 같은 학용품과 간식이 가득 들어 있습니다. 이 전통은 부모와 학교가 함께 준비해 아이에게 학업의 시작을 축하해 주는 의미를 담고 있죠. 흥미로운 점은, 일부 지역에서는 콘 안에 작은 퍼즐을 넣어 아이가 직접 풀어야만 안에 숨겨진 선물을 얻을 수 있다는 것입니다. 퍼즐을 맞추는 순간, 아이는 스스로 작은 성공을 경험하고, 그 기쁨은 교실 안으로 퍼져 나갑니다. 이렇게 작은 콘 하나가 아이에게는 큰 기대와 즐거움을 안겨 주는, 독일만의 특별한 첫날 풍경입니다. 끝까지 풀어야 할 선물이 남아 있다는 사실, 다시 한 번 생각해 보세요.",
+    "title_line1": "독일 첫 등교날",
+    "title_line2": "콘안에퍼즐?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "거대한 *사탕* 콘"
+      },
+      {
+        "s": 3,
+        "text": "속에 가득 *학용품*"
+      },
+      {
+        "s": 5,
+        "text": "*퍼즐*로 선물 얻기"
+      }
+    ]
   },
   {
     "country": "Ethiopia",
@@ -4176,7 +4216,7 @@
     "twist": "마지막 차를 마신 후에는 남은 찌꺼기를 손에 문질러 행운을 빌기도 한다.",
     "verify_note": "Ethiopia coffee ceremony roasting beans in pan three rounds",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Bangladesh",
@@ -4186,7 +4226,7 @@
     "twist": "가장 높은 연을 만든 사람은 '하늘의 왕'이라 불리며, 마을 전체가 그를 위한 축하 공연을 연다.",
     "verify_note": "Bangladesh Shakrain kite festival end of Ramadan kite fighting fireworks",
     "created_at": "2026-10-11T21:13:34.856906+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "일본",
