@@ -105,21 +105,30 @@ async def _synthesize(text, voice, rate, volume, pitch, audio_tmp):
     return boundaries
 
 
+EDGE_BROKEN = False  # 한 번 막히면(403 등) 이번 실행에서는 Edge를 다시 시도하지 않음
+
+
+def _fallback(text, audio_path, voice, rate, reason):
+    from tts_fallback import synthesize
+    log(f"    [대체 음성] Edge TTS 사용 불가({reason[:60]}) -> gTTS로 생성")
+    return synthesize(text, audio_path, voice, rate)
+
+
 def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
                  timeout=90, retries=3):
+    global EDGE_BROKEN
     try:
         import edge_tts  # noqa: F401
     except ImportError:
-        raise SystemExit(
-            "edge-tts가 설치되어 있지 않습니다.\n"
-            "먼저 실행하세요:\n"
-            "    pip install -U edge-tts"
-        )
+        EDGE_BROKEN = True
 
     audio_tmp = audio_path.with_suffix(".part")
     last_error = None
+    boundaries = None
 
     for attempt in range(1, retries + 1):
+        if EDGE_BROKEN:
+            break
         try:
             boundaries = asyncio.run(
                 asyncio.wait_for(
@@ -140,12 +149,20 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
             except OSError:
                 pass
 
+        if "403" in str(last_error) or "Handshake" in str(last_error):
+            EDGE_BROKEN = True  # 서버가 거부 중이라 재시도해도 소용없음
+            break
         if attempt < retries:
             wait = 5 * attempt
-            log(f"    [재시도 {attempt}/{retries}] {last_error} → {wait}초 후 다시 시도")
+            log(f"    [재시도 {attempt}/{retries}] {last_error} -> {wait}초 후 다시 시도")
             time.sleep(wait)
-    else:
-        raise RuntimeError(last_error)
+
+    if boundaries is None:
+        try:
+            boundaries = _fallback(text, audio_path, voice, rate, last_error or "edge-tts 없음")
+            voice = "gTTS-" + voice.split("-")[0]
+        except Exception as e:
+            raise RuntimeError(f"Edge: {last_error} / 대체 음성 실패: {type(e).__name__}: {e}")
 
     timing_data = {
         "voice": voice,
