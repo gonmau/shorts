@@ -7,3 +7,5 @@ requests
 google-api-python-client
 google-auth
 gTTS
+supertonic
+soundfile

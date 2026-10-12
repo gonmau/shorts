@@ -109,9 +109,20 @@ EDGE_BROKEN = False  # 한 번 막히면(403 등) 이번 실행에서는 Edge를
 
 
 def _fallback(text, audio_path, voice, rate, reason):
-    from tts_fallback import synthesize
-    log(f"    [대체 음성] Edge TTS 사용 불가({reason[:60]}) -> gTTS로 생성")
-    return synthesize(text, audio_path, voice, rate)
+    """Edge 불가 시: Google Cloud TTS(키가 있으면) -> gTTS 순서로 시도. (boundaries, 엔진이름) 반환."""
+    from tts_fallback import google_available, synthesize
+    if google_available():
+        try:
+            log(f"    [대체 음성] Edge 불가({reason[:50]}) -> Google Cloud TTS")
+            return synthesize(text, audio_path, voice, rate, engine="google"), "google"
+        except Exception as e:
+            log(f"    [Google TTS 실패] {str(e)[:150]} -> gTTS로 전환")
+    try:
+        log(f"    [대체 음성] Edge 불가({reason[:50]}) -> Supertonic 3")
+        return synthesize(text, audio_path, voice, rate, engine="supertonic"), "supertonic"
+    except Exception as e:
+        log(f"    [Supertonic 실패] {type(e).__name__}: {str(e)[:150]} -> gTTS로 전환")
+    return synthesize(text, audio_path, voice, rate, engine="gtts"), "gtts"
 
 
 def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
@@ -159,8 +170,8 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
 
     if boundaries is None:
         try:
-            boundaries = _fallback(text, audio_path, voice, rate, last_error or "edge-tts 없음")
-            voice = "gTTS-" + voice.split("-")[0]
+            boundaries, engine = _fallback(text, audio_path, voice, rate, last_error or "edge-tts 없음")
+            voice = f"{engine}-" + voice.split("-")[0]
         except Exception as e:
             raise RuntimeError(f"Edge: {last_error} / 대체 음성 실패: {type(e).__name__}: {e}")
 
