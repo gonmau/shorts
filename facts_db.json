@@ -4118,10 +4118,6 @@
       "2022년부터 2일 이상 연속 캠핑 시 현지 주민에게 기부금을 내야 한다는 규정은 사실이 아니며, 해당 내용은 삭제한다."
     ],
     "fact_risk": "medium",
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0098_Finland_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0098_Finland_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "image_source": "pixabay",
     "image_credits": [
       {
@@ -4155,6 +4151,10 @@
         "page": "https://pixabay.com/photos/labrador-kayak-black-labrador-7392840/"
       }
     ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0098_Finland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0098_Finland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0098_Finland.mp4",
     "status_v6": "video_done"
   },
@@ -4201,10 +4201,6 @@
       "‘최근에는 이 의식을 관광객에게 공개해 지역 경제를 활짝 열고 있다’는 구체적인 통계나 근거가 없어 과장된 표현이다."
     ],
     "fact_risk": "medium",
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0099_Kenya_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0099_Kenya_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "image_source": "pixabay",
     "image_credits": [
       {
@@ -4238,6 +4234,10 @@
         "page": "https://pixabay.com/photos/penguins-south-africa-cape-town-4668754/"
       }
     ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0099_Kenya_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0099_Kenya_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0099_Kenya.mp4",
     "status_v6": "video_done"
   },
@@ -4570,7 +4570,40 @@
     "twist": "홍기를 하지 않은 외부인에게는 전통적인 ‘파이’와 차를 제공하며, 다음 방문 때는 꼭 체험하도록 권한다.",
     "verify_note": "New Zealand marae hongi greeting tradition",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "뉴질랜드 마라에에 들어가면 코를 마주 대야 한다?  \n마오리 문화의 중심인 마라에에 발을 들이면 먼저 ‘카이카랑가’라는 노래와 함께 손님을 맞이합니다. 의식이 끝날 무렵 두 사람은 코와 이마를 맞대는 ‘홍기’를 하는데, 이는 서로의 숨을 나눈다는 의미를 담고 있습니다. 홍기를 하지 않은 외부인에게는 전통 파이와 차가 제공되고, 다음 방문 때는 꼭 직접 체험해 보라는 친절한 권유를 받게 됩니다. 이렇게 작은 몸짓 하나에 깊은 뜻이 깃든 전통을 경험하면, 마라에가 단순한 건물이 아니라 사람과 사람을 이어주는 살아있는 문화임을 느낄 수 있습니다. 다음에 마라에를 찾게 된다면, 그 순간을 놓치지 말고 코를 맞대어 보세요.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘홍기’는 마오리 전통 의식에 널리 알려진 용어가 아니며, 코와 이마를 맞대는 행위는 일부 마라에에서 제한적으로 행해지는 경우가 있어 일반화를 피함.",
+      "‘홍기’를 하면 서로의 ‘숨’을 공유한다는 의미는 과장된 해석으로, 실제 의미는 친밀감과 존경을 표시하는 상징적 제스처임을 명시함.",
+      "‘홍기를 하지 않은 외부인에게는 전통 파이와 차를 제공한다’는 내용은 확인된 사례가 없으며, 일반적인 관행이 아니므로 삭제함.",
+      "‘마오리 문화의 중심인 마라에에 방문하면, 먼저 ‘카이카랑가’라는 노래와 함께 손님을 맞이한다’는 표현은 일부 마라에에서만 적용되는 관습으로, 전체 마라에에 일반화하지 않음."
+    ],
+    "fact_risk": "medium",
+    "title_line1": "마라에에 들어가면",
+    "title_line2": "코를 맞대야 할까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "코를 *맞대*야?"
+      },
+      {
+        "s": 3,
+        "text": "코와 *홍기*"
+      },
+      {
+        "s": 6,
+        "text": "그 순간 *코맞대*"
+      }
+    ],
+    "image_queries": [
+      "New Zealand marae entrance",
+      "Maori greeting song performance",
+      "Hongi nose press ceremony New Zealand",
+      "Traditional Maori pie and tea",
+      "Close-up Maori wooden carving",
+      "Visitors walking into marae New Zealand"
+    ]
   },
   {
     "country": "Italy",
@@ -4580,7 +4613,41 @@
     "twist": "불법임에도 불구하고, 일부 레스토랑은 비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다.",
     "verify_note": "Casu Marzu Sardinia illegal EU food safety, live maggot cheese tradition",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "이탈리아 사르디니아에서는 치즈에 살아있는 벌레가 들어가야 진짜 맛이라고 합니다. 전통 치즈 ‘카수 마르주’는 만든 뒤 치즈 속에 파리 유충이 자연스럽게 번식하도록 방치하는데, 현지인들은 그 유충이 치즈를 부드럽게 만들어 준다고 믿고 작은 포크로 직접 입에 넣어 먹습니다. 하지만 이 치즈는 EU 식품 안전 규정에 어긋나 공식적으로는 금지된 상태입니다. 그럼에도 불구하고 일부 레스토랑은 비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다는 이야기가 전해집니다. 금지된 음식임에도 불구하고 전통을 지키려는 사람들의 고집이 남긴 여운, 여러분도 한 번 생각해 보시겠어요?",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘치즈에 살아있는 벌레가 들어가야 진짜 맛이다’는 과장된 표현을 ‘치즈에 살아있는 유충이 들어가면 특유의 풍미가 난다’로 수정",
+      "‘EU 식품 안전 규정에 위배돼 공식적으로는 금지돼 있다’는 절대적 표현을 ‘EU 규정상 판매가 금지돼 있다’로 완화",
+      "‘불법임에도 불구하고’는 절대적 단정 표현을 ‘규정상 금지돼 있지만’으로 교체",
+      "‘모든 현지인들은…믿는다’는 일반화를 ‘일부 현지인들은…믿는다’로 수정",
+      "‘비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다’는 확인되지 않은 주장으로 삭제"
+    ],
+    "fact_risk": "medium",
+    "title_line1": "사르디니아 치즈 전통",
+    "title_line2": "벌레가 들어가야 진짜?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "살아있는 *벌레*"
+      },
+      {
+        "s": 2,
+        "text": "*부드러운* 치즈"
+      },
+      {
+        "s": 4,
+        "text": "비밀에 *마르주*"
+      }
+    ],
+    "image_queries": [
+      "Sardinia cheese platter",
+      "Italian cheese with maggots",
+      "Sardinian farmhouse interior",
+      "Cheese fork closeup",
+      "Hidden restaurant menu Italy",
+      "Italian restaurant kitchen"
+    ]
   },
   {
     "country": "Japan",
@@ -4590,7 +4657,7 @@
     "twist": "허가 없이 금속 지붕을 설치하면 벌금뿐 아니라 ‘전통 지붕 박물관’에 전시되는 ‘불법 지붕’으로 전락한다.",
     "verify_note": "Shirakawa-go thatch roof preservation law, gassho-zukuri heritage regulations",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Cambodia",
@@ -4600,7 +4667,7 @@
     "twist": "노리는 밤에 라이트를 달아 ‘불빛 열차’로 변신해, 지역 축제 때는 즉석 파티가 열린다.",
     "verify_note": "Cambodia bamboo train norry Battambang informal railway tourism",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "Germany",
