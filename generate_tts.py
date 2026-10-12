@@ -106,40 +106,17 @@ async def _synthesize(text, voice, rate, volume, pitch, audio_tmp):
 
 
 EDGE_BROKEN = False  # 한 번 막히면(403 등) 이번 실행에서는 Edge를 다시 시도하지 않음
+BROKEN = set()       # 이번 실행에서 실패한 엔진은 다시 시도하지 않음
+DEFAULT_ORDER = "supertonic,edge,google,gtts"  # 환경변수 TTS_ORDER 로 바꿀 수 있음
 
 
-def _fallback(text, audio_path, voice, rate, reason):
-    """Edge 불가 시: Google Cloud TTS(키가 있으면) -> gTTS 순서로 시도. (boundaries, 엔진이름) 반환."""
-    from tts_fallback import google_available, synthesize
-    if google_available():
-        try:
-            log(f"    [대체 음성] Edge 불가({reason[:50]}) -> Google Cloud TTS")
-            return synthesize(text, audio_path, voice, rate, engine="google"), "google"
-        except Exception as e:
-            log(f"    [Google TTS 실패] {str(e)[:150]} -> gTTS로 전환")
-    try:
-        log(f"    [대체 음성] Edge 불가({reason[:50]}) -> Supertonic 3")
-        return synthesize(text, audio_path, voice, rate, engine="supertonic"), "supertonic"
-    except Exception as e:
-        log(f"    [Supertonic 실패] {type(e).__name__}: {str(e)[:150]} -> gTTS로 전환")
-    return synthesize(text, audio_path, voice, rate, engine="gtts"), "gtts"
-
-
-def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
-                 timeout=90, retries=3):
-    global EDGE_BROKEN
-    try:
-        import edge_tts  # noqa: F401
-    except ImportError:
-        EDGE_BROKEN = True
+def _edge(text, audio_path, voice, rate, volume, pitch, timeout, retries):
+    """Edge TTS. 성공하면 문장 타이밍 목록을 돌려주고, 실패하면 예외를 던진다."""
+    import edge_tts  # noqa: F401  (없으면 ImportError)
 
     audio_tmp = audio_path.with_suffix(".part")
     last_error = None
-    boundaries = None
-
     for attempt in range(1, retries + 1):
-        if EDGE_BROKEN:
-            break
         try:
             boundaries = asyncio.run(
                 asyncio.wait_for(
@@ -148,7 +125,7 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
                 )
             )
             audio_tmp.replace(audio_path)  # 성공했을 때만 최종 파일로 교체
-            break
+            return boundaries
         except asyncio.TimeoutError:
             last_error = f"{timeout}초 안에 응답이 없습니다 (서버 무응답)"
         except Exception as e:
@@ -161,19 +138,44 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
                 pass
 
         if "403" in str(last_error) or "Handshake" in str(last_error):
-            EDGE_BROKEN = True  # 서버가 거부 중이라 재시도해도 소용없음
-            break
+            break  # 서버가 거부 중이라 재시도해도 소용없음
         if attempt < retries:
             wait = 5 * attempt
             log(f"    [재시도 {attempt}/{retries}] {last_error} -> {wait}초 후 다시 시도")
             time.sleep(wait)
+    raise RuntimeError(last_error)
 
-    if boundaries is None:
+
+def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
+                 timeout=90, retries=3):
+    """엔진 순서대로 시도한다: Supertonic -> Edge -> Google(키가 있을 때) -> gTTS."""
+    import os
+    from tts_fallback import google_available, synthesize
+
+    order = [e.strip() for e in os.environ.get("TTS_ORDER", DEFAULT_ORDER).split(",") if e.strip()]
+    errors = []
+    boundaries, used = None, None
+    for engine in order:
+        if engine in BROKEN:
+            continue
+        if engine == "google" and not google_available():
+            continue
         try:
-            boundaries, engine = _fallback(text, audio_path, voice, rate, last_error or "edge-tts 없음")
-            voice = f"{engine}-" + voice.split("-")[0]
+            log(f"    [음성 엔진] {engine}")
+            if engine == "edge":
+                boundaries = _edge(text, audio_path, voice, rate, volume, pitch, timeout, retries)
+            else:
+                boundaries = synthesize(text, audio_path, voice, rate, engine=engine)
+            used = engine
+            break
         except Exception as e:
-            raise RuntimeError(f"Edge: {last_error} / 대체 음성 실패: {type(e).__name__}: {e}")
+            BROKEN.add(engine)
+            errors.append(f"{engine}: {type(e).__name__}: {str(e)[:120]}")
+            log(f"    [{engine} 실패] {str(e)[:150]} -> 다음 엔진으로")
+    if boundaries is None:
+        raise RuntimeError("모든 음성 엔진 실패 / " + " | ".join(errors))
+    if used != "edge":
+        voice = f"{used}-" + voice.split("-")[0]
 
     timing_data = {
         "voice": voice,

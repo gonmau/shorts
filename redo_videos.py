@@ -12,15 +12,39 @@ from common import load_db, save_db
 CLEAR = ("audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "video_path_v6", "status_v6")
 
 
+SCRIPT_CLEAR = ("narration", "narration_original", "narration_user_edited", "title_line1", "title_line2",
+                "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "fact_verifiability",
+                "fact_applied", "reject_reason", "ko_title", "ko_description", "ko_narration", "ko_issues", "ko_src")
+
+
+def redo_script(db, idxs):
+    """대본부터 다시: 대본/제목/핵심 문구/검색어/팩트체크/번역/음성/영상 기록을 지우고 소재 단계(verified)로 되돌린다.
+    폐기(rejected)된 소재도 다시 시도할 수 있다. 소재(hook/body/twist)는 그대로 둔다."""
+    for i in idxs:
+        if not (0 <= i < len(db)):
+            print(f"  [{i}] 범위 밖 - 건너뜀")
+            continue
+        f = db[i]
+        for k in CLEAR + SCRIPT_CLEAR:
+            f.pop(k, None)
+        f["status"] = "verified"
+        print(f"  [{i}] {f.get('country', '')}: 대본부터 다시 생성 대기")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--indexes", default="", help="쉼표로 구분한 DB 번호 (예: 98,99)")
+    ap.add_argument("--script", action="store_true", help="대본부터 다시 만들기")
     args = ap.parse_args()
     idxs = [int(x) for x in args.indexes.replace(" ", "").split(",") if x.strip().isdigit()]
     if not idxs:
         print("redo 대상 없음")
         return
     db = load_db()
+    if args.script:
+        redo_script(db, idxs)
+        save_db(db)
+        return
     for i in idxs:
         if not (0 <= i < len(db)):
             print(f"  [{i}] 범위 밖 - 건너뜀")

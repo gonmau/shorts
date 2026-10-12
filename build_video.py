@@ -268,14 +268,25 @@ CAP_W, CAP_H = IMG_BOX[2] - IMG_BOX[0], 360
 
 
 def parse_marked(text):
-    """'길에서 *사자* 키우면?' -> [('길에서', False), ('사자', True), ('키우면?', False)]"""
+    """'Chicken to a *bench*?' -> [('Chicken', False), ('to', False), ('a', False), ('bench?', True)]
+    별표 바로 뒤에 공백 없이 붙은 글자(물음표 등)는 앞 단어에 붙인다."""
     words = []
+    glue = False  # 앞 조각이 공백 없이 끝났는가
     for part in re.split(r"(\*[^*]+\*)", str(text)):
         if not part:
             continue
         hl = len(part) > 2 and part.startswith("*") and part.endswith("*")
-        for w in part.strip("*").split():
-            words.append((w, hl))
+        body = part.strip("*") if hl else part
+        toks = body.split()
+        if not toks:
+            glue = False
+            continue
+        if glue and words and not body[:1].isspace():
+            w0, h0 = words[-1]
+            words[-1] = (w0 + toks[0], h0 or hl)
+            toks = toks[1:]
+        words.extend((w, hl) for w in toks)
+        glue = not body[-1:].isspace()
     return words
 
 
