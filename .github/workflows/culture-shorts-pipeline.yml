@@ -42,8 +42,8 @@ on:
       cta_check:
         description: "대본의 구독/좋아요 문구 (off=안 함, scan=점검만, fix=미제작 소재 대본 다시 만들기)"
         type: choice
-        options: [off, scan, fix]
-        default: off
+        options: ["off", "scan", "fix"]
+        default: "off"
 
 permissions:
   contents: write
