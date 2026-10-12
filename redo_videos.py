@@ -12,9 +12,25 @@ from common import load_db, save_db
 CLEAR = ("audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "video_path_v6", "status_v6")
 
 
+REVIVE = set()
 SCRIPT_CLEAR = ("narration", "narration_original", "narration_user_edited", "title_line1", "title_line2",
                 "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "fact_verifiability",
                 "fact_applied", "reject_reason", "ko_title", "ko_description", "ko_narration", "ko_issues", "ko_src")
+
+
+def revive(db, i):
+    """폐기됐거나 다시 손보고 싶은 소재를 대본은 그대로 둔 채 검수 대기열(review.txt)로 되살린다.
+    review.txt에서 대본/후크/본문/반전을 직접 고쳐 render 하면 된다(AI 검수가 덮어쓰지 않음)."""
+    f = db[i]
+    if not f.get("narration"):
+        print(f"  [{i}] 대본이 없어 되살릴 수 없음 (번호만 넣어 대본부터 다시 만드세요)")
+        return
+    for k in CLEAR + ("reject_reason",):
+        f.pop(k, None)
+    f["status"] = "scripted"
+    f["fact_verifiability"] = "user"
+    f["fact_risk"] = "user-pending"
+    print(f"  [{i}] {f.get('country', '')}: 검수 대기열로 되살림 (review.txt에서 직접 고치세요)")
 
 
 def redo_script(db, idxs):
@@ -23,6 +39,9 @@ def redo_script(db, idxs):
     for i in idxs:
         if not (0 <= i < len(db)):
             print(f"  [{i}] 범위 밖 - 건너뜀")
+            continue
+        if i in REVIVE:
+            revive(db, i)
             continue
         f = db[i]
         for k in CLEAR + SCRIPT_CLEAR:
@@ -36,7 +55,9 @@ def main():
     ap.add_argument("--indexes", default="", help="쉼표로 구분한 DB 번호 (예: 98,99)")
     ap.add_argument("--script", action="store_true", help="대본부터 다시 만들기")
     args = ap.parse_args()
-    idxs = [int(x) for x in args.indexes.replace(" ", "").split(",") if x.strip().isdigit()]
+    toks = [x.strip() for x in args.indexes.replace(" ", "").split(",") if x.strip()]
+    idxs = [int(x.rstrip("!")) for x in toks if x.rstrip("!").isdigit()]
+    REVIVE.update(int(x.rstrip("!")) for x in toks if x.endswith("!") and x.rstrip("!").isdigit())
     if not idxs:
         print("redo 대상 없음")
         return
