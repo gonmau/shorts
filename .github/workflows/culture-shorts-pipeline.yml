@@ -21,6 +21,9 @@ name: culture-shorts-pipeline
 on:
   workflow_dispatch:
     inputs:
+      redo:
+        description: "이미 만든 영상 다시 제작할 DB 번호 (예: 98,99 / 비워두면 안 함)"
+        default: ""
       stage:
         description: "단계 (prepare=대본/제목 준비, render=영상 제작, all=한 번에)"
         type: choice
@@ -51,11 +54,13 @@ jobs:
     timeout-minutes: 90
     env:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
+      REDO: ${{ github.event.inputs.redo || '' }}
       COUNT: ${{ github.event.inputs.count || '2' }}
       START: ${{ github.event.inputs.start_index || '56' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
     steps:
@@ -76,6 +81,10 @@ jobs:
       # ---------- 검수 파일에서 고친 내용 반영 ----------
       - name: review.txt 수정 사항 반영
         run: python apply_review.py
+
+      - name: 영상 다시 제작 대상 되돌리기 (선택)
+        if: ${{ env.REDO != '' }}
+        run: python redo_videos.py --indexes "$REDO"
 
       # ---------- 준비 단계 (prepare / all) ----------
       - name: 소재 보충 (대기 소재가 적을 때)
