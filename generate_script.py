@@ -20,6 +20,7 @@ PREFERRED_MODELS = [
     "llama-3.1-70b-versatile",
     "gemma2-9b-it",
     "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",  # 120b의 하루 한도가 차면 대신 사용 (모델별로 한도가 따로 있음)
 ]
 
 MAX_COMPLETION_TOKENS = 1200
@@ -39,6 +40,7 @@ def completion_kwargs(model, max_tokens):
         }
     return {"max_completion_tokens": max_tokens}
 DEFAULT_LIMIT = 15
+MAX_RUN_SECONDS = 15 * 60  # 대본 생성 단계 최대 시간(초). 넘으면 남은 소재는 다음 실행으로
 DEFAULT_DELAY = 1.5
 DEFAULT_RETRIES = 5
 
@@ -808,6 +810,11 @@ def generate_with_model(client, model, fact, retries):
             if attempt >= retries:
                 return None, "Rate Limit 재시도 초과"
 
+            msg = str(e).lower()
+            if "per day" in msg or "tpd" in msg or "rpd" in msg:
+                # 하루 한도는 기다려도 안 풀리므로 바로 다음 모델로 넘어간다
+                return None, "하루 한도 초과 (Groq 일일 토큰/요청 한도)"
+
             wait_seconds = get_retry_seconds(e, attempt)
 
             print(
@@ -961,7 +968,7 @@ def main():
         print("[오류] GROQ_API_KEY 환경변수가 없습니다.")
         sys.exit(1)
 
-    client = Groq(api_key=api_key)
+    client = Groq(api_key=api_key, timeout=90.0)  # 응답 없는 연결에 무한 대기하지 않게
 
     try:
         models = pick_models(client, args.model)
@@ -1002,7 +1009,12 @@ def main():
     success_count = 0
     fail_count = 0
 
+    started_at = time.time()
     for number, (db_index, fact) in enumerate(targets, start=1):
+        if time.time() - started_at > MAX_RUN_SECONDS:
+            print(f"\n[중단] 대본 생성이 {MAX_RUN_SECONDS // 60}분을 넘어 남은 소재는 다음 실행으로 미룹니다. "
+                  "(Groq 한도/지연 가능성: console.groq.com 사용량 확인)")
+            break
         country = fact.get("country", "")
         topic = fact.get("topic", "")
 
