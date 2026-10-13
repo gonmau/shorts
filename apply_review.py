@@ -11,6 +11,7 @@ TITLE = re.compile(r"^제목\s*([12])\s*[:：]\s*(.*)$")
 NARR = re.compile(r"^대본\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 FIELD = re.compile(r"^(후크|본문|반전)\s*[:：]\s*(.*)$")
 FIELD_KEY = {"후크": "hook", "본문": "body", "반전": "twist"}
+IMG = re.compile(r"^이미지\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 HL = re.compile(r"^핵심\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 
 
@@ -22,7 +23,7 @@ def parse(text):
             continue
         m = HEAD.match(line)
         if m:
-            cur = blocks.setdefault(int(m.group(1)), {"t1": None, "t2": None, "hl": [], "narr": {}, "fields": {}})
+            cur = blocks.setdefault(int(m.group(1)), {"t1": None, "t2": None, "hl": [], "narr": {}, "fields": {}, "img": {}})
             continue
         if cur is None:
             continue
@@ -33,6 +34,10 @@ def parse(text):
         m = NARR.match(line)
         if m:
             cur["narr"][int(m.group(1))] = m.group(2).strip()
+            continue
+        m = IMG.match(line)
+        if m:
+            cur["img"][int(m.group(1))] = m.group(2).strip()
             continue
         m = FIELD.match(line)
         if m:
@@ -70,6 +75,7 @@ def main():
         if hl or item.get("highlights") is not None:
             item["highlights"] = hl  # 빈 리스트 = 핵심 문구 표시 안 함
         edited = False
+        narr_changed = False
         if b["narr"]:
             old = split_sentences(item.get("narration", ""))
             new = [t for _, t in sorted(b["narr"].items()) if t]
@@ -79,10 +85,21 @@ def main():
                 for k in ("audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2"):
                     item.pop(k, None)  # 대본이 바뀌었으니 음성을 다시 만든다
                 edited = True
+                narr_changed = True
         for k, v in b["fields"].items():
             if v and v != " ".join(str(item.get(k, "")).split()):
                 item[k] = v
                 edited = True
+        # 이미지 검색어: review.txt의 '이미지[N]' 줄을 직접 고쳤으면 그대로 쓰고,
+        # 대본만 고쳤으면 새 대본 기준으로 다시 만들게 비워 둔다(이미지도 다시 받음)
+        new_q = [t for _, t in sorted(b["img"].items()) if t]
+        if new_q and new_q != (item.get("image_queries") or []):
+            item["image_queries"] = new_q
+            print(f"  [{idx}] {item.get('country', '')}: 이미지 검색어 직접 수정 반영 (이미지 다시 받음)")
+            changed += 1
+        elif narr_changed and item.get("image_queries"):
+            item.pop("image_queries", None)
+            print(f"  [{idx}] {item.get('country', '')}: 대본이 바뀌어 이미지 검색어를 새로 만듭니다")
         if edited:
             # 사람이 직접 고친 소재: AI 검수가 덮어쓰지 않게 하고 새 대본 기준으로 번역을 다시 한다
             item["fact_verifiability"] = "user"

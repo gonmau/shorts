@@ -643,10 +643,7 @@ def title_ok(fact):
 def ensure_extras(client, models, fact, retries=3):
     """제목 2줄 / 핵심 문구 / 이미지 검색어 중 없는 것만 만든다. 바뀐 게 있으면 True."""
     changed = False
-    if not fact.get("fact_verifiability") and fact.get("narration"):
-        changed = factcheck_fact(client, models, fact, retries) or changed
-        if fact.get("status") == "rejected":
-            return True
+    # AI 사실검수는 하지 않는다 (사실 확인은 사람이 직접 한다)
     narration = fact.get("narration", "")
     if not title_ok(fact):
         titles = generate_title(client, models, fact, narration, retries)
@@ -687,7 +684,7 @@ def run_extras(client, models, db, limit, start, delay, retries):
 
     todo = [
         (i, f) for i, f in targets
-        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries") and f.get("fact_verifiability"))
+        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries"))
     ]
     print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")
     for number, (index, fact) in enumerate(todo, start=1):

@@ -75,6 +75,11 @@ def fetch_item(session, key, idx, item, force):
         base = queries[0] if queries else f"{country} travel"
         queries = (queries + [base] * SCENE_COUNT)[:SCENE_COUNT]
 
+    # 검색어가 바뀌었으면(대본 수정 등) 예전 이미지를 지우고 새로 받는다
+    done = item.get("image_queries_done")
+    if done is not None and done != queries:
+        force = True
+        print("    이미지 검색어가 바뀌어 새로 받습니다")
     used, credits, got = set(), [], 0
     for n, query in enumerate(queries, start=1):
         dest = folder / f"scene_{n:02d}.png"
@@ -95,6 +100,7 @@ def fetch_item(session, key, idx, item, force):
             print(f"    scene_{n:02d}: 실패 ({type(e).__name__}: {e}) -> 대체 카드")
         time.sleep(0.7)
 
+    item["image_queries_done"] = list(queries)
     if credits:
         item["image_source"] = "pixabay"
         item["image_credits"] = credits

@@ -12,8 +12,9 @@ HEADER = """# 영상 제작 전 검수 파일 (고친 뒤 저장/Commit 하고 r
 # - 후크/본문/반전: 유튜브 설명에 들어가는 문구입니다. 고치면 설명과 디스코드에 반영됩니다.
 # - 핵심[번호]: 화면 하단에 크게 띄울 문구입니다. 번호는 '대본[N]'의 문장 번호입니다.
 #   *별표*로 감싼 단어는 노란색으로 강조됩니다. 줄을 지우면 그 문구는 영상에서 빠집니다.
+# - 이미지[번호]: 장면 이미지 6장의 영어 검색어(Pixabay)입니다. 고치면 그 검색어로 이미지를 다시 받습니다.
+#   대본을 고치고 이미지 줄은 그대로 두면, 새 대본에 맞춰 검색어를 자동으로 다시 만듭니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
-# - 직접 고친 소재는 AI 사실검수를 다시 하지 않고 고친 내용을 그대로 씁니다.
 """
 
 
@@ -42,6 +43,8 @@ def main():
         lines.append(f"제목2: {item.get('title_line2', '')}")
         for h in item.get("highlights") or []:
             lines.append(f"핵심[{h['s']}]: {h['text']}")
+        for n, q in enumerate(item.get("image_queries") or [], start=1):
+            lines.append(f"이미지[{n}]: {q}")
         for n, sent in enumerate(split_sentences(item["narration"]), start=1):
             lines.append(f"대본[{n}]: {sent}")
         blocks.append("\n".join(lines))
