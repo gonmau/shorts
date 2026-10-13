@@ -5870,7 +5870,7 @@
     "confidence": "medium",
     "verify_note": "Rwanda Umuganda last Saturday morning community work 8am noon participation",
     "created_at": "2026-10-12T10:36:14.786326+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "르완다에서는 매달 마지막 토요일 오전, 많은 사람이 공공 청소와 공공 작업에 참여합니다. 이를 ‘우무간다’라고 합니다. 시민들은 도로 청소, 배수로 정비, 나무 심기, 공공시설 보수 등에 참여합니다. 18세에서 65세 사이의 건강한 성인은 참여가 요구됩니다. 사업체와 학교는 보통 오전 늦게까지 문을 닫습니다. 우무간다는 단순한 청소일이 아닙니다. 주민들이 지역 문제를 함께 논의하고 해결책을 만드는 시간이기도 합니다. 우무간다 이후에는 지역사회 회의나 대화가 이어지기도 합니다. 참여 범위와 집행 방식은 지방자치단체와 시기에 따라 다를 수 있습니다. 하지만 공동체가 함께 지역을 가꾸는 르완다의 대표적 전통입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5899,7 +5899,61 @@
         "text": "지역 문제 *함께 논의*"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Rwanda Saturday morning",
+      "Rwanda road and public facility",
+      "Rwanda community meeting",
+      "Rwanda residents discussing",
+      "Rwanda community gathering",
+      "Rwanda neighborhood cleanup"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0120_Rwanda_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0120_Rwanda_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Rwanda Saturday morning",
+      "Rwanda road and public facility",
+      "Rwanda community meeting",
+      "Rwanda residents discussing",
+      "Rwanda community gathering",
+      "Rwanda neighborhood cleanup"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Dannypro1",
+        "page": "https://pixabay.com/photos/flower-dandelion-wildflower-nature-7700011/"
+      },
+      {
+        "scene": 2,
+        "user": "8moments",
+        "page": "https://pixabay.com/photos/road-tram-transport-system-city-3036620/"
+      },
+      {
+        "scene": 3,
+        "user": "uh_yeah_20101995",
+        "page": "https://pixabay.com/photos/space-interior-design-architecture-4660847/"
+      },
+      {
+        "scene": 4,
+        "user": "Dannypro1",
+        "page": "https://pixabay.com/photos/tea-drink-rwanda-7784533/"
+      },
+      {
+        "scene": 5,
+        "user": "ua_Bob_Dmyt_ua",
+        "page": "https://pixabay.com/photos/team-friendship-group-hands-4529717/"
+      },
+      {
+        "scene": 6,
+        "user": "chaiyananuwatmongkolchai",
+        "page": "https://pixabay.com/photos/volunteer-pollution-bottle-plastic-7788809/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0120_Rwanda.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -5911,7 +5965,7 @@
     "confidence": "medium",
     "verify_note": "Nagoro doll village Tokushima Tsukimi Ayano population decline art project",
     "created_at": "2026-10-12T10:36:14.786326+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본 시코쿠의 작은 마을에는 사람 대신 인형이 마을 풍경을 채웁니다. 이곳은 도쿠시마현 나가로 마을입니다. 인구 감소가 심한 시코쿠의 작은 마을입니다. 주민 츠키미 아야노는 떠나거나 세상을 떠난 사람들을 떠올리기 위해 실물 크기의 인형을 만들기 시작했습니다. 인형들은 학교 교실, 버스정류장, 들판, 작업장 등 마을 곳곳에 배치됐습니다. 인형들은 일상의 장면을 재현합니다. 이 프로젝트는 공식적인 마을 정책이 아니라 한 주민의 창작 활동에서 시작됐습니다. 인형은 단순한 관광 소품이 아닙니다. 사라져 가는 마을의 기억과 사람들의 이야기를 남기려는 시도로 알려져 있습니다. 다만 인형의 수와 배치는 시기에 따라 달라집니다. 나가로는 일본 전역의 풍경이 아니라, 특정 마을의 특수한 사례입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5940,7 +5994,61 @@
         "text": "사라지는 *마을 기억*"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Shikoku Nagoro village",
+      "life-size doll",
+      "Nagoro village doll bus stop",
+      "Nagoro village daily life dolls",
+      "doll tourist souvenir",
+      "Nagoro doll arrangement"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0121_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0121_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Shikoku Nagoro village",
+      "life-size doll",
+      "Nagoro village doll bus stop",
+      "Nagoro village daily life dolls",
+      "doll tourist souvenir",
+      "Nagoro doll arrangement"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/landscape-evening-onaruto-bridge-7438429/"
+      },
+      {
+        "scene": 2,
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/babies-three-sleep-eyes-closed-869264/"
+      },
+      {
+        "scene": 3,
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/city-transport-stop-road-5251533/"
+      },
+      {
+        "scene": 4,
+        "user": "dhatchina",
+        "page": "https://pixabay.com/photos/elderly-woman-countryside-10463655/"
+      },
+      {
+        "scene": 5,
+        "user": "NguyenDo",
+        "page": "https://pixabay.com/photos/hoi-an-vietnam-lanterns-store-shop-6564496/"
+      },
+      {
+        "scene": 6,
+        "user": "bongbabyhousevn",
+        "page": "https://pixabay.com/photos/newborn-camera-photography-sweet-5036843/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0121_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
@@ -5952,7 +6060,7 @@
     "confidence": "medium",
     "verify_note": "Yukigassen snowball fight Japan Hokkaido Sobetsu Showa Shinzan rules 7 players flags",
     "created_at": "2026-10-12T10:36:40.992529+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본 홋카이도에서는 눈싸움도 규칙과 심판이 있는 경기로 치릅니다. 이를 ‘유키가센’이라고 합니다. 유키가센은 홋카이도 소베쓰정 쇼와신잔 일대에서 시작된 조직적인 눈덩이 경기입니다. 7인 팀이 헬멧 등 보호장비를 착용합니다. 정해진 경기장에서 제한 시간 동안 승부를 겨룹니다. 상대 선수를 눈덩이로 맞히면 탈락시킬 수 있습니다. 또는 상대 팀의 깃발을 빼앗아 승리할 수도 있습니다. 눈덩이 개수와 크기, 경기장 구조, 심판 규칙이 정해져 있습니다. 그래서 단순한 눈싸움과는 다른 스포츠입니다. 유키가센은 홋카이도를 중심으로 발전한 겨울 스포츠입니다. 일본 전역에서 일상적으로 행해지는 종목은 아닙니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5982,7 +6090,61 @@
         "text": "깃발을 *빼앗으면* 승리"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Hokkaido Yukigassen",
+      "Hokkaido 7 player snowball",
+      "Japan snowball capture flag",
+      "Japan snowball hit opponent",
+      "Japan snowball equipment",
+      "Hokkaido winter sport"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0122_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0122_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Hokkaido Yukigassen",
+      "Hokkaido 7 player snowball",
+      "Japan snowball capture flag",
+      "Japan snowball hit opponent",
+      "Japan snowball equipment",
+      "Hokkaido winter sport"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/bear-brown-bear-hokkaido-brown-bear-9201157/"
+      },
+      {
+        "scene": 2,
+        "user": "Dragon77",
+        "page": "https://pixabay.com/photos/ice-artificial-ice-studio-ice-macro-6215207/"
+      },
+      {
+        "scene": 3,
+        "user": "Mollyroselee",
+        "page": "https://pixabay.com/photos/cherry-blossoms-tree-japan-map-8436420/"
+      },
+      {
+        "scene": 4,
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/chess-metaphor-board-business-316657/"
+      },
+      {
+        "scene": 5,
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/snowball-bay-leafed-7833739/"
+      },
+      {
+        "scene": 6,
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/snow-winter-nature-landscape-frost-10476274/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0122_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Switzerland",
@@ -5994,7 +6156,7 @@
     "confidence": "high",
     "verify_note": "Switzerland Alpabzug cow parade, Alpabzug tradition Appenzell, Swiss cattle descent festival",
     "created_at": "2026-10-13T03:55:22.381972+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스위스 알프스에서 소들이 마을을 행진한다?! 가을이 찾아오면 고산 초원의 풀을 뜯던 소들을 농부들이 천천히 내려와 마을을 가로지르는 축제, 바로 Alpabzug가 시작됩니다. 소들은 큰 종과 화려한 꽃으로 장식되고, 주민들은 전통 음악에 맞춰 길을 따라 걸으며 축하합니다. 특히 몇몇 마을에서는 가장 아름답게 꾸민 소에게 상을 수여하는데, 그 수상 소는 다음 해 시장에서 프리미엄 가격을 받아 판매된다고 합니다. 이 행사는 주로 독일어권 주, 예를 들어 앱펜첼과 베른 등에서 9~10월에 열리는 전통이며, 스위스 전역에 동일하게 적용되는 것은 아니라는 점을 기억해 주세요. 알프스의 가을 풍경과 함께 울려 퍼지는 종소리, 그리고 꽃으로 물든 소들의 행진은 잠시라도 일상의 틈을 넘어 자연과 전통이 어우러지는 특별한 순간을 선사합니다. 다음 가을, 또 어떤 풍경이 우리를 기다릴지 궁금하지 않으신가요?",
     "title_line1": "스위스 알프스 소 행진",
     "title_line2": "꽃과 종으로 축제?",
@@ -6016,7 +6178,61 @@
         "text": "꽃 *소* 행진!"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Alps cow parade",
+      "decorated cows with flowers",
+      "award winning cow",
+      "Appenzell autumn festival",
+      "flower cow parade",
+      "Swiss autumn landscape"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0123_Switzerland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0123_Switzerland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Alps cow parade",
+      "decorated cows with flowers",
+      "award winning cow",
+      "Appenzell autumn festival",
+      "flower cow parade",
+      "Swiss autumn landscape"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Pixel-mixer",
+        "page": "https://pixabay.com/photos/cattle-show-appenzell-village-1715040/"
+      },
+      {
+        "scene": 2,
+        "user": "ongchinonn",
+        "page": "https://pixabay.com/photos/cow-holy-sacred-india-hinduism-2610663/"
+      },
+      {
+        "scene": 3,
+        "user": "michalnavrat",
+        "page": "https://pixabay.com/photos/tournament-victory-match-target-3529744/"
+      },
+      {
+        "scene": 4,
+        "user": "GernotBra",
+        "page": "https://pixabay.com/photos/alps-alpstein-appenzell-switzerland-8128537/"
+      },
+      {
+        "scene": 5,
+        "user": "Juncala",
+        "page": "https://pixabay.com/photos/cow-switzerland-alp-output-bell-jar-2750335/"
+      },
+      {
+        "scene": 6,
+        "user": "TBeissel",
+        "page": "https://pixabay.com/photos/hot-air-balloon-ballon-sky-fly-9070079/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0123_Switzerland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Brazil",
@@ -6028,7 +6244,7 @@
     "confidence": "high",
     "verify_note": "Brazil Festa Junina quadrilha dance, quadrilha folk dance, Festa Junina mock wedding",
     "created_at": "2026-10-13T03:55:22.381972+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "브라질에서 결혼식 대신 춤추는 마을 축제가 있다! 6월에 열리는 Festa Junina, 특히 동북부 농촌과 학교에서 ‘quadrilha’라는 전통 무용이 펼쳐집니다. 참가자들은 시골 풍복을 입고 커플을 이루어, 정해진 스텝으로 가짜 결혼식을 재현하죠. 음악은 포호(Forró) 리듬에 맞춰 흥겨운 분위기를 만들고, 모두가 한마음으로 발을 맞춥니다.  \n\n이때 신랑 역할인 ‘noivo’가 신부 ‘noiva’를 잡아가려다 ‘padeiro’(제빵사)에게 잡히면, 제빵사는 달콤한 간식을 나눠줍니다. 바로 그 순간, 관객들은 웃음과 함께 달콤함을 맛보게 되죠.  \n\n하지만 이 행사는 주로 농촌 지역과 도시 학교에서 6월 축제 기간에만 열리는 특별한 행사이며, 일상 생활 속 문화는 아닙니다. 가짜 결혼식이 주는 유쾌함, 그리고 제빵사의 달콤한 ‘구출’이 남긴 여운을 생각하면, 다시 한 번 보고 싶어지는 이유가 분명합니다.",
     "title_line1": "브라질 가짜 결혼춤",
     "title_line2": "제빵사 달콤 구출?",
@@ -6050,7 +6266,61 @@
         "text": "*유쾌함*다시보고"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Brazil wedding dance festival",
+      "Brazil fake wedding ceremony",
+      "Forro musicians Brazil",
+      "Brazil baker handing sweets",
+      "Brazil rural school festival",
+      "Brazil joyful folk dance"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0124_Brazil_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0124_Brazil_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Brazil wedding dance festival",
+      "Brazil fake wedding ceremony",
+      "Forro musicians Brazil",
+      "Brazil baker handing sweets",
+      "Brazil rural school festival",
+      "Brazil joyful folk dance"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "murtaza_ali",
+        "page": "https://pixabay.com/photos/holi-girl-indian-india-dance-fun-2416686/"
+      },
+      {
+        "scene": 2,
+        "user": "OlcayErtem",
+        "page": "https://pixabay.com/photos/happy-valentines-day-couple-wedding-4615557/"
+      },
+      {
+        "scene": 3,
+        "user": "kenahlobo",
+        "page": "https://pixabay.com/photos/brazilianwoman-percussion-bodhr%C3%A1n-4817012/"
+      },
+      {
+        "scene": 4,
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/baker-cook-coffee-cupcake-frog-1194428/"
+      },
+      {
+        "scene": 5,
+        "user": "AdinaVoicu",
+        "page": "https://pixabay.com/photos/woman-dancer-dance-dancing-dress-1505407/"
+      },
+      {
+        "scene": 6,
+        "user": "picsbyjameslee",
+        "page": "https://pixabay.com/photos/christmas-winter-merry-christmas-4705290/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0124_Brazil.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Sweden",
