@@ -4554,13 +4554,13 @@
   {
     "country": "카자흐스탄",
     "topic": "전통 승마 경기 ‘코크파르’(goat carcass wrestling)",
-    "hook": "카자흐스탄에서는 말 위에서 염소 시체를 잡아채는 경기!",
-    "body": "코크파르는 카자흐 전통 스포츠로, 말에 탄 선수들이 염소 시체를 골대에 넣으려 몸부림친다. 경기장은 보통 여름 축제와 함께 열리며, 관중은 격렬한 승부에 열광한다.",
-    "twist": "승리 팀은 승리 깃발을 들고 전통 악기를 연주하며 마을 전체에 축하 파티를 연다.",
+    "hook": "카자흐스탄에서는 말에 탄 선수들이 염소 시체를 두고 격돌하는 경기를 한다!",
+    "body": "코크파르는 카자흐스탄의 전통 승마 스포츠로, 말에 탄 선수들이 염소 시체를 잡아 상대 팀의 득점권에 가져가는 방식으로 경쟁한다. 전통적으로는 염소 시체를 사용하지만, 현대 공식 경기에서는 비슷한 무게의 인조 물체를 쓰기도 한다.",
+    "twist": "이 경기는 단순히 힘으로 시체를 뺏는 게임이 아니다. 말타기 실력, 균형 감각, 팀워크가 모두 필요해 ‘말 위의 럭비’라고도 불린다.",
     "verify_note": "Kokpar Kazakhstan traditional game, Buzkashi goat carcass",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "scripted",
-    "narration": "카자흐스탄에서는 말 위에서 염소 시체를 잡아채는 경기, 코크파르가 열립니다. 전통 스포츠인 코크파르는 말에 탄 선수들이 무게감 있는 염소 시체를 골대에 넣으려 몸부림치는 모습이 특징입니다. 보통 여름 축제와 함께 경기장이 마련되고, 관중들은 격렬한 승부에 열광합니다. 경기 내내 말과 선수, 그리고 시체가 뒤섞인 혼란스러운 장면이 펼쳐지지만, 승리 팀이 골대를 통과시키면 바로 승리 깃발을 들어 올립니다. 그 뒤엔 전통 악기가 울려 퍼지며 마을 전체가 축하 파티를 벌이는데, 이때 들리는 북소리와 관악은 마치 승리를 알리는 신호처럼 들립니다. 이렇게 코크파르는 단순한 경기 그 이상으로, 공동체가 함께 어우러지는 문화적 순간을 만들어냅니다. 말 위에서의 격투가 끝난 뒤, 남은 여운은 마치 또다시 그 흥분을 체험하고 싶게 만들죠.",
+    "status": "video_done",
+    "narration": "카자흐스탄에서는 말에 탄 선수들이 염소 시체를 잡아 상대 팀의 득점권으로 가져가는 경기, 코크파르가 열립니다. 전통 스포츠인 코크파르는 말에 탄 선수들이 무게감 있는 염소 시체를 상대 진영의 득점권에 넣으려 경쟁하는 모습이 특징입니다. 전통적으로는 염소 시체를 사용하지만, 현대 공식 경기에서는 비슷한 무게의 인조 물체를 사용하기도 합니다. 이 경기는 단순히 힘으로 시체를 뺏는 게임이 아닙니다. 말을 다루는 실력, 균형 감각, 그리고 팀워크가 모두 필요하기 때문입니다. 그래서 코크파르는 ‘말 위의 럭비’라고도 불리며, 카자흐스탄의 유목 문화와 승마 전통을 보여주는 대표적인 스포츠입니다.",
     "fact_checked": true,
     "fact_issues": [
       "‘말 위에서 염소 시체를 잡아채는 경기’라는 표현을 ‘말에 탄 선수들이 염소 시체를 잡아 골대로 가져가는 경기’로 완화했습니다.",
@@ -4569,7 +4569,7 @@
       "‘경기 내내 말과 선수, 그리고 시체가 뒤섞인 혼란스러운 장면이 펼쳐지지만’은 과장된 묘사라 삭제했습니다.",
       "‘남은 여운은 마치 또다시 그 흥분을 체험하고 싶게 만든다’는 주관적 표현이라 삭제했습니다."
     ],
-    "fact_risk": "medium",
+    "fact_risk": "user-reviewed",
     "title_line1": "카자흐스탄말위경기",
     "title_line2": "염소시체를 잡아넣을까?",
     "highlights": [
@@ -4579,11 +4579,11 @@
       },
       {
         "s": 2,
-        "text": "*염소*시체골대투척"
+        "text": "*염소*시체득점권"
       },
       {
         "s": 4,
-        "text": "승리*깃발*올리기"
+        "text": "말위*럭비*격돌"
       }
     ],
     "image_queries": [
@@ -4593,18 +4593,60 @@
       "traditional Kazakh flag raising",
       "Kazakhstan drummers and trumpets",
       "horseback wrestling competition"
-    ]
+    ],
+    "narration_original": "카자흐스탄에서는 말 위에서 염소 시체를 잡아채는 경기, 코크파르가 열립니다. 전통 스포츠인 코크파르는 말에 탄 선수들이 무게감 있는 염소 시체를 골대에 넣으려 몸부림치는 모습이 특징입니다. 보통 여름 축제와 함께 경기장이 마련되고, 관중들은 격렬한 승부에 열광합니다. 경기 내내 말과 선수, 그리고 시체가 뒤섞인 혼란스러운 장면이 펼쳐지지만, 승리 팀이 골대를 통과시키면 바로 승리 깃발을 들어 올립니다. 그 뒤엔 전통 악기가 울려 퍼지며 마을 전체가 축하 파티를 벌이는데, 이때 들리는 북소리와 관악은 마치 승리를 알리는 신호처럼 들립니다. 이렇게 코크파르는 단순한 경기 그 이상으로, 공동체가 함께 어우러지는 문화적 순간을 만들어냅니다. 말 위에서의 격투가 끝난 뒤, 남은 여운은 마치 또다시 그 흥분을 체험하고 싶게 만들죠.",
+    "fact_verifiability": "user",
+    "fact_applied": true,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0105_카자흐스탄_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0105_카자흐스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "RonaldPlett",
+        "page": "https://pixabay.com/photos/horse-rider-rodeo-cowboy-show-8209523/"
+      },
+      {
+        "scene": 2,
+        "user": "ulleo",
+        "page": "https://pixabay.com/photos/goats-young-pasture-meadow-brown-2719445/"
+      },
+      {
+        "scene": 3,
+        "user": "Andy_Bay",
+        "page": "https://pixabay.com/photos/mountains-snow-slope-cold-forest-8446221/"
+      },
+      {
+        "scene": 4,
+        "user": "Vladvictoria",
+        "page": "https://pixabay.com/photos/marching-band-band-parade-school-4223023/"
+      },
+      {
+        "scene": 5,
+        "user": "Buzurnyuk",
+        "page": "https://pixabay.com/photos/travel-nature-landscape-kazakhstan-8785493/"
+      },
+      {
+        "scene": 6,
+        "user": "RyanMcGuire",
+        "page": "https://pixabay.com/photos/arm-wrestling-bet-monochrome-sport-567950/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0105_카자흐스탄.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "터키",
     "topic": "여름 축제의 낙타 레슬링",
-    "hook": "터키에서는 거대한 낙타가 서로 몸통을 부딪혀 싸운다?",
-    "body": "에게 해 연안의 셀축 마을에서 매년 여름에 열리는 낙타 레슬링은 수백 년 전부터 이어져 온 전통이다. 사육사는 낙타에게 ‘전투용 뿔’을 달아 주고, 관중은 내기와 함께 응원한다.",
-    "twist": "우승 낙타는 마을 축제의 ‘왕’으로 선정돼, 다음 해에도 특별 대우를 받는다.",
+    "hook": "터키에서는 거대한 낙타들이 겨울마다 서로 몸싸움을 벌인다?",
+    "body": "에게 해 연안의 셀축에서는 매년 1월 셋째 주말에 낙타 레슬링 축제가 열린다. 수백 년 전부터 이어져 온 것으로 알려진 이 전통에서는, 낙타가 서로 물지 못하도록 입에 끈이나 마구리를 채우고 경기에 참가한다.",
+    "twist": "낙타 레슬링은 단순한 구경거리가 아니다. 낙타가 상대를 쓰러뜨리거나 도망가게 만들어야 승부가 나며, 경기에는 상금이 없을 수도 있다.",
     "verify_note": "Turkey camel wrestling Selcuk tradition",
     "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "scripted",
-    "narration": "터키에서는 거대한 낙타가 서로 몸통을 부딪혀 싸운다? 바로 서클루크 연안의 셀축 마을에서 매년 여름 열리는 낙타 레슬링이 그 현장입니다. 이 전통은 수백 년 전부터 이어져 온 문화 행사로, 사육사들이 낙타에게 ‘전투용 뿔’을 달아 주고, 관중들은 내기와 함께 열띤 응원을 보냅니다. 경기에서 승리한 낙타는 마을 축제의 ‘왕’으로 선정돼 다음 해에도 특별한 대우를 받게 됩니다. 평범한 축제가 아니라, 낙타 한 마리가 마을의 영예를 짊어지는 순간이죠. 이렇게 오래된 전통이 오늘도 살아 숨 쉬는 모습을 보면, 여름날 터키의 한 작은 마을이 전하는 이야기가 생각보다 더 깊고 흥미롭다는 생각이 듭니다. 결국, 낙타 레슬링은 단순한 싸움이 아니라 지역 공동체가 함께 만든 살아있는 문화 유산이라는 점, 기억해 주세요.",
+    "status": "video_done",
+    "narration": "터키에서는 거대한 낙타들이 겨울마다 서로 몸싸움을 벌이는 특별한 축제가 열립니다. 에게 해 연안의 셀축에서는 매년 1월 셋째 주말에 낙타 레슬링 축제가 열립니다. 이 전통은 수백 년 전부터 이어져 온 것으로 알려져 있으며, 낙타들이 서로 물지 못하도록 입에 끈이나 마구리를 채우고 경기에 참가합니다. 낙타들은 목과 몸을 이용해 서로를 밀어내고, 상대를 쓰러뜨리거나 도망가게 만들면 승부가 결정됩니다. 흥미로운 점은, 이 경기가 단순한 구경거리가 아니라는 점입니다. 다만 화려한 전통 뒤에는 동물 복지를 우려하는 목소리도 있어, 낙타 레슬링은 논란과 함께 이어지고 있는 문화 행사이기도 합니다. 결국 셀축의 낙타 레슬링은 단순한 싸움이 아니라, 오랜 역사와 지역 문화, 그리고 현대적 논의가 얽힌 복합적인 전통이라고 할 수 있습니다.",
     "fact_checked": true,
     "fact_issues": [
       "‘수백 년 전부터 이어져 온’은 확인된 역사적 근거가 없어 ‘오랜 전통으로 알려져 있다’로 수정했습니다.",
@@ -4613,21 +4655,21 @@
       "‘우승 낙타는 마을 축제의 ‘왕’으로 선정돼, 다음 해에도 특별 대우를 받는다’는 구체적 증거가 없어 ‘우승 낙타는 축제에서 특별히 인정받는다’로 완화했습니다.",
       "‘거대한 낙타가 서로 몸통을 부딪혀 싸운다’는 표현이 과장될 수 있어 ‘큰 낙타가 몸통을 부딪쳐 경쟁한다’로 완화했습니다."
     ],
-    "fact_risk": "medium",
+    "fact_risk": "user-reviewed",
     "title_line1": "터키 낙타 레슬링",
-    "title_line2": "승자, 마을 왕",
+    "title_line2": "겨울에 열리는 거대한 몸싸움",
     "highlights": [
       {
         "s": 1,
-        "text": "*낙타* 몸통 충돌!"
+        "text": "*낙타* 겨울 몸싸움"
       },
       {
         "s": 2,
-        "text": "셀축 마을 *레슬링*"
+        "text": "셀축 *1월* 축제"
       },
       {
         "s": 4,
-        "text": "*왕* 낙타 승리"
+        "text": "상대를 *쓰러뜨리면* 승리"
       }
     ],
     "image_queries": [
@@ -4637,7 +4679,49 @@
       "village square festival",
       "crowd cheering outdoors",
       "traditional Turkish tents"
-    ]
+    ],
+    "narration_original": "터키에서는 거대한 낙타가 서로 몸통을 부딪혀 싸운다? 바로 서클루크 연안의 셀축 마을에서 매년 여름 열리는 낙타 레슬링이 그 현장입니다. 이 전통은 수백 년 전부터 이어져 온 문화 행사로, 사육사들이 낙타에게 ‘전투용 뿔’을 달아 주고, 관중들은 내기와 함께 열띤 응원을 보냅니다. 경기에서 승리한 낙타는 마을 축제의 ‘왕’으로 선정돼 다음 해에도 특별한 대우를 받게 됩니다. 평범한 축제가 아니라, 낙타 한 마리가 마을의 영예를 짊어지는 순간이죠. 이렇게 오래된 전통이 오늘도 살아 숨 쉬는 모습을 보면, 여름날 터키의 한 작은 마을이 전하는 이야기가 생각보다 더 깊고 흥미롭다는 생각이 듭니다. 결국, 낙타 레슬링은 단순한 싸움이 아니라 지역 공동체가 함께 만든 살아있는 문화 유산이라는 점, 기억해 주세요.",
+    "fact_verifiability": "user",
+    "fact_applied": true,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0106_터키_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0106_터키_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "Wphoto",
+        "page": "https://pixabay.com/photos/camel-galaxy-dubai-darkness-4948299/"
+      },
+      {
+        "scene": 2,
+        "user": "RezaAskarii",
+        "page": "https://pixabay.com/photos/sky-nature-clouds-travel-beach-7328573/"
+      },
+      {
+        "scene": 3,
+        "user": "smuldur",
+        "page": "https://pixabay.com/photos/galata-istanbul-marine-tower-4043037/"
+      },
+      {
+        "scene": 4,
+        "user": "ErikDevlies",
+        "page": "https://pixabay.com/photos/village-flags-bank-holiday-summer-988068/"
+      },
+      {
+        "scene": 5,
+        "user": "RahulPandit",
+        "page": "https://pixabay.com/photos/fireworks-people-festival-night-4768501/"
+      },
+      {
+        "scene": 6,
+        "user": "luckyhand2010",
+        "page": "https://pixabay.com/photos/food-eastern-sweets-baklava-sweet-5158702/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0106_터키.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "뉴질랜드",
