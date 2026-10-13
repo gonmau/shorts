@@ -198,5 +198,6 @@ jobs:
           JOB_STATUS: ${{ job.status }}
           ART_URL: ${{ steps.art.outputs.artifact-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          START: ${{ github.event.inputs.start_index || '106' }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/review.txt
         run: python notify_discord.py
