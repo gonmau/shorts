@@ -5678,7 +5678,7 @@
     "confidence": "high",
     "verify_note": "Namahage Oga Akita New Year's Eve UNESCO Raiho-shin straw costume demon masks",
     "created_at": "2026-10-12T10:35:50.032118+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아키타현 오가반도에서는 새해 전날 밤, 귀신 모습의 방문자가 집집마다 찾아옵니다. 이 전통을 ‘남아게’라고 합니다. 남성들이 귀신 같은 가면과 짚으로 만든 전통 의복을 입습니다. 그리고 집집마다 찾아가 게으름이나 나쁜 행동을 꾸짖습니다. ‘우는 아이는 없나? 나쁜 아이는 없나?’라고 외치기도 합니다. 남아게는 신의 사자로 여겨집니다. 잘못을 경계하고 액운을 쫓아 새해의 행운을 가져온다고 믿어집니다. 가족은 손님을 보호한다는 뜻에서 남아게에게 술과 음식을 대접합니다. 남아게의 짚 의상에서 떨어진 짚은 가족이 조심스럽게 모아 건강과 행운을 기원하는 데 사용하기도 합니다. 2018년에는 유네스코 인류무형문화유산에 등재됐습니다. 남아게는 아키타현 오가반도를 중심으로 이어지는 특별한 지역 전통입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5708,7 +5708,61 @@
         "text": "액운을 *쫓는* 의례"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Namahage ghost mask",
+      "straw costume wooden sword",
+      "Namahage ritual",
+      "family offering food Namahage",
+      "collected straw bundles",
+      "UNESCO heritage plaque"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0118_Japan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0118_Japan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Namahage ghost mask",
+      "straw costume wooden sword",
+      "Namahage ritual",
+      "family offering food Namahage",
+      "collected straw bundles",
+      "UNESCO heritage plaque"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "educadormarcossv",
+        "page": "https://pixabay.com/photos/girl-child-face-mask-covid-kid-5760039/"
+      },
+      {
+        "scene": 2,
+        "user": "REFLEX_PRODUCTION",
+        "page": "https://pixabay.com/photos/torii-traditional-japanese-gate-7256271/"
+      },
+      {
+        "scene": 3,
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boy-monk-river-buddhist-water-1807518/"
+      },
+      {
+        "scene": 4,
+        "user": "smpratt90",
+        "page": "https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/"
+      },
+      {
+        "scene": 5,
+        "user": "YaoMuyu",
+        "page": "https://pixabay.com/photos/nepal-himalayas-annapurna-10512839/"
+      },
+      {
+        "scene": 6,
+        "user": "Wolfgang-1958",
+        "page": "https://pixabay.com/photos/night-eve-warehouse-building-8573855/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0118_Japan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Canada",
