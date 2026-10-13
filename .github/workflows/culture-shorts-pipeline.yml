@@ -57,6 +57,7 @@ jobs:
     timeout-minutes: 90
     env:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
+      PYTHONUNBUFFERED: "1"  # 로그가 실시간으로 보이게 함
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}
       COUNT: ${{ github.event.inputs.count || '2' }}
