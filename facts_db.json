@@ -5487,7 +5487,7 @@
     "confidence": "high",
     "verify_note": "Night of the Radishes Oaxaca December 23 radish carving contest official",
     "created_at": "2026-10-12T10:34:55.946978+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "멕시코 오악사카에서는 12월 23일, 거대한 무를 조각해 예술 작품을 만듭니다. 이 행사는 ‘라 노체 데 로스 라바노스’, 즉 무의 밤입니다. 오악사카시 소광장에서 열리는 무 조각 대회입니다. 참가자들은 평소보다 크게 재배한 무를 사용합니다. 탄생 장면, 전설, 민속 춤, 건축물 등을 조각합니다. 무뿐 아니라 옥수수 껍질과 말린 꽃도 함께 사용됩니다. 작품은 하룻밤 동안 전시됩니다. 이 행사는 19세기 말 농산물 판촉 행사에서 시작됐습니다. 오늘날에는 오악사카의 대표적인 크리스마스 전통이 됐습니다. 사용되는 무는 먹기 위한 작물이 아니라 조각용으로 특별히 키운 것입니다. 일부는 3킬로그램 이상 나가기도 합니다. 천연 재료로 만든 작품은 오래 보존되지 않지만, 그 한계가 오히려 특별한 매력이 됩니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5523,7 +5523,54 @@
       "Giant radish carving Mexico",
       "Oaxaca traditional festival",
       "Mexican folk art radish sculpture"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0116_Mexico_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0116_Mexico_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Noche de los Rabanos Oaxaca radish carving",
+      "Night of the Radishes Mexico",
+      "Oaxaca Zocalo Christmas festival",
+      "Giant radish carving Mexico",
+      "Oaxaca traditional festival",
+      "Mexican folk art radish sculpture"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "ELG21",
+        "page": "https://pixabay.com/photos/cave-landscape-marine-sea-cliff-9817865/"
+      },
+      {
+        "scene": 2,
+        "user": "Walkerssk",
+        "page": "https://pixabay.com/photos/chichen-itza-mexico-pyramid-1025099/"
+      },
+      {
+        "scene": 3,
+        "user": "Taboadahdez",
+        "page": "https://pixabay.com/photos/people-portrait-one-clothing-adult-3253048/"
+      },
+      {
+        "scene": 4,
+        "user": "DerWeg",
+        "page": "https://pixabay.com/photos/asian-giant-hornet-hornet-insect-8335577/"
+      },
+      {
+        "scene": 5,
+        "user": "jcax2",
+        "page": "https://pixabay.com/photos/dance-regional-mexico-girl-757570/"
+      },
+      {
+        "scene": 6,
+        "user": "LoggaWiggler",
+        "page": "https://pixabay.com/photos/fabric-cambaya-cloth-textile-43354/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0116_Mexico.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Spain",
@@ -5535,7 +5582,7 @@
     "confidence": "high",
     "verify_note": "Patios de Cordoba festival May UNESCO Intangible Cultural Heritage 2012 free entry",
     "created_at": "2026-10-12T10:34:55.946978+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스페인 코르도바에서는 5월에 집 마당을 꽃으로 가득 채워 경쟁합니다. 이 축제는 ‘파티오스 데 코르도바’입니다. 주민들은 개인 마당에 꽃과 화분, 분수, 전통 장식을 더합니다. 그리고 방문객에게 마당을 개방합니다. 심사를 통해 우수 마당도 선정합니다. 심사는 꽃과 식물의 다양성, 관리 상태, 건축 보존, 물 활용, 이웃 협력 등을 기준으로 이뤄집니다. 2026년 행사는 5월 4일부터 17일까지 열렸습니다. 참가 마당은 무료로 관람할 수 있습니다. 이 축제는 2012년 유네스코 인류무형문화유산에 등재됐습니다. 정확한 개최일은 매년 달라지지만, 보통 5월 초부터 약 2주간 이어집니다. 좁은 골목과 화사한 마당이 어우러진 코르도바의 5월은 스페인에서 가장 아름다운 축제 season 중 하나로 꼽힙니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5572,7 +5619,54 @@
       "Cordoba historic quarter patio",
       "Andalusian white walls flowers",
       "Cordoba May festival patio"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0117_Spain_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0117_Spain_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Patios de Cordoba festival flowers",
+      "Cordoba patio Andalusia flowers",
+      "Spanish courtyard flowers Cordoba",
+      "Cordoba historic quarter patio",
+      "Andalusian white walls flowers",
+      "Cordoba May festival patio"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "laurentgraphiste",
+        "page": "https://pixabay.com/photos/mezquita-cordoba-andalusia-spain-4572094/"
+      },
+      {
+        "scene": 2,
+        "user": "1204479",
+        "page": "https://pixabay.com/photos/ladder-floors-patios-of-cordoba-1520503/"
+      },
+      {
+        "scene": 3,
+        "user": "1204479",
+        "page": "https://pixabay.com/photos/cars-motorcycle-racing-1520509/"
+      },
+      {
+        "scene": 4,
+        "user": "bogitw",
+        "page": "https://pixabay.com/photos/church-interiors-architecture-756150/"
+      },
+      {
+        "scene": 5,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/ancient-arch-architecture-art-1835865/"
+      },
+      {
+        "scene": 6,
+        "user": "VinnyCiro",
+        "page": "https://pixabay.com/photos/snowman-town-urban-321034/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0117_Spain.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
