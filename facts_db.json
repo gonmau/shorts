@@ -4724,290 +4724,689 @@
     "status_v6": "video_done"
   },
   {
-    "country": "뉴질랜드",
-    "topic": "마라에 입장 시 홍기(코 맞춤) 인사",
-    "hook": "뉴질랜드 마라에에 들어가면 코를 마주 대야 한다?",
-    "body": "마오리 문화의 중심인 마라에에 방문하면, 먼저 ‘카이카랑가’라는 노래와 함께 손님을 맞이하고, 마지막에 두 사람이 코와 이마를 맞대는 ‘홍기’를 한다. 이 인사는 서로의 ‘숨’을 공유한다는 의미다.",
-    "twist": "홍기를 하지 않은 외부인에게는 전통적인 ‘파이’와 차를 제공하며, 다음 방문 때는 꼭 체험하도록 권한다.",
-    "verify_note": "New Zealand marae hongi greeting tradition",
-    "created_at": "2026-10-11T21:13:43.598339+00:00",
-    "status": "scripted",
-    "narration": "뉴질랜드 마라에에 들어가면 코를 마주 대야 한다?  \n마오리 문화의 중심인 마라에에 발을 들이면 먼저 ‘카이카랑가’라는 노래와 함께 손님을 맞이합니다. 의식이 끝날 무렵 두 사람은 코와 이마를 맞대는 ‘홍기’를 하는데, 이는 서로의 숨을 나눈다는 의미를 담고 있습니다. 홍기를 하지 않은 외부인에게는 전통 파이와 차가 제공되고, 다음 방문 때는 꼭 직접 체험해 보라는 친절한 권유를 받게 됩니다. 이렇게 작은 몸짓 하나에 깊은 뜻이 깃든 전통을 경험하면, 마라에가 단순한 건물이 아니라 사람과 사람을 이어주는 살아있는 문화임을 느낄 수 있습니다. 다음에 마라에를 찾게 된다면, 그 순간을 놓치지 말고 코를 맞대어 보세요.",
-    "fact_checked": true,
-    "fact_issues": [
-      "‘홍기’는 마오리 전통 의식에 널리 알려진 용어가 아니며, 코와 이마를 맞대는 행위는 일부 마라에에서 제한적으로 행해지는 경우가 있어 일반화를 피함.",
-      "‘홍기’를 하면 서로의 ‘숨’을 공유한다는 의미는 과장된 해석으로, 실제 의미는 친밀감과 존경을 표시하는 상징적 제스처임을 명시함.",
-      "‘홍기를 하지 않은 외부인에게는 전통 파이와 차를 제공한다’는 내용은 확인된 사례가 없으며, 일반적인 관행이 아니므로 삭제함.",
-      "‘마오리 문화의 중심인 마라에에 방문하면, 먼저 ‘카이카랑가’라는 노래와 함께 손님을 맞이한다’는 표현은 일부 마라에에서만 적용되는 관습으로, 전체 마라에에 일반화하지 않음."
-    ],
-    "fact_risk": "medium",
-    "title_line1": "마라에에 들어가면",
-    "title_line2": "코를 맞대야 할까?",
-    "highlights": [
-      {
-        "s": 1,
-        "text": "코를 *맞대*야?"
-      },
-      {
-        "s": 3,
-        "text": "코와 *홍기*"
-      },
-      {
-        "s": 6,
-        "text": "그 순간 *코맞대*"
-      }
-    ],
+  "country": "뉴질랜드",
+  "topic": "마라에 입장 의식과 홍기(코 맞춤) 인사",
+  "hook": "뉴질랜드 마라에에 들어가면 코를 마주 대야 한다?",
+  "body": "마오리 문화에서 마라에는 공동체의 만남과 의례가 이루어지는 중요한 공간이다. 방문객은 보통 마라에 밖에서 기다렸다가 호스트 측 여성이 부르는 ‘카랑가’에 따라 안으로 들어간다. 이후 환영 연설과 ‘와이아타’라는 노래가 이어지고, 의식이 마무리되면 방문객과 호스트가 악수하며 코와 이마를 가볍게 맞대는 ‘홍기’를 한다. 홍기는 서로의 숨을 나눈다는 의미를 지니며, 두 집단이 평화롭게 만났음을 확인하는 전통 인사다.",
+  "twist": "홍기는 단순한 코 맞대기가 아니라, 마오리 창조 신화에서 첫 인간에게 생명의 숨을 불어넣었다는 이야기와 연결된 상징적 의례다.",
+  "verify_note": "New Zealand marae powhiri karanga waiata hongi shared breath tradition",
+  "created_at": "2026-10-11T21:13:43.598339+00:00",
+  "status": "scripted",
+  "narration": "뉴질랜드 마라에에 들어가면 코를 마주 대야 할까요? 마오리 문화에서 마라에는 공동체의 만남과 의례가 이루어지는 중요한 공간입니다. 방문객은 보통 마라에 밖에서 기다렸다가, 호스트 측 여성이 부르는 ‘카랑가’에 따라 안으로 들어갑니다. 이후 환영 연설과 ‘와이아타’라는 노래가 이어집니다. 의식이 마무리되면 방문객과 호스트는 악수를 하며, 코와 이마를 가볍게 맞대는 ‘홍기’를 합니다. 홍기는 서로의 숨을 나눈다는 의미를 지닙니다. 단순한 인사가 아니라, 두 집단이 평화롭게 만났음을 확인하는 전통 의례입니다. 마오리 창조 신화에서는 첫 인간에게 생명의 숨이 불어넣어졌다고 전해지는데, 홍기는 그 상징과도 연결됩니다. 다음에 마라에를 방문한다면, 호스트의 안내를 존중하며 이 특별한 인사를 경험해 보세요.",
+  "fact_checked": true,
+  "fact_issues": [
+    "‘카이카랑가’는 노래가 아니라 카랑가를 부르는 사람, 특히 호스트 측 여성을 뜻하는 용어이므로 ‘카랑가는 호스트 측 여성의 환영 부름’으로 수정했습니다.",
+    "마라에 환영 의식은 카랑가, 연설, 와이아타, 홍기, 함께하는 식사 등으로 구성되며 지역·마라에별 세부 방식은 다를 수 있어 일반화 표현을 완화했습니다.",
+    "홍기의 ‘숨을 나눈다’는 의미는 사실이며, 이는 생명의 숨과 영적 연결을 상징하는 전통적 해석으로 유지했습니다.",
+    "‘홍기를 하지 않은 외부인에게 전통 파이와 차를 제공한다’는 주장은 확인되지 않아 삭제했습니다. 대신 홍기 후 함께 식사하는 관행이 일반적으로 언급된다는 사실로 수정했습니다.",
+    "홍기는 코만 맞대는 것이 아니라 보통 악수와 함께 코와 이마를 맞대는 방식이며, 한 번 또는 두 번 하는 관행도 있어 정확히 수정했습니다."
+  ],
+  "fact_risk": "low",
+  "title_line1": "마라에에 들어가면",
+  "title_line2": "코를 맞대야 할까?",
+  "highlights": [
+    {
+      "s": 1,
+      "text": "코를 *맞대*야?"
+    },
+    {
+      "s": 3,
+      "text": "카랑가와 *홍기*"
+    },
+    {
+      "s": 6,
+      "text": "숨을 *나누는* 인사"
+    }
+  ],
     "image_queries": [
       "New Zealand marae entrance",
-      "Maori greeting song performance",
+      "Maori karanga welcome ceremony",
       "Hongi nose press ceremony New Zealand",
-      "Traditional Maori pie and tea",
-      "Close-up Maori wooden carving",
-      "Visitors walking into marae New Zealand"
+      "Maori kapa haka performance New Zealand",
+      "Traditional Maori meeting house exterior New Zealand",
+      "Maori wood carving New Zealand"
     ]
   },
   {
-    "country": "Italy",
-    "topic": "Casu Marzu – live‑maggot cheese tradition",
-    "hook": "이탈리아 사르디니아에서는 치즈에 살아있는 벌레가 들어가야 진짜 맛이다!",
-    "body": "사르디니아의 전통 치즈 ‘카수 마르주’는 치즈 속에 살아있는 파리 유충이 번식하도록 방치한다. 현지인들은 유충이 치즈를 부드럽게 만들어 준다고 믿으며, 작은 포크로 직접 먹는다. 이 치즈는 EU 식품 안전 규정에 위배돼 공식적으로는 금지돼 있다.",
-    "twist": "불법임에도 불구하고, 일부 레스토랑은 비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다.",
-    "verify_note": "Casu Marzu Sardinia illegal EU food safety, live maggot cheese tradition",
-    "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "scripted",
-    "narration": "이탈리아 사르디니아에서는 치즈에 살아있는 벌레가 들어가야 진짜 맛이라고 합니다. 전통 치즈 ‘카수 마르주’는 만든 뒤 치즈 속에 파리 유충이 자연스럽게 번식하도록 방치하는데, 현지인들은 그 유충이 치즈를 부드럽게 만들어 준다고 믿고 작은 포크로 직접 입에 넣어 먹습니다. 하지만 이 치즈는 EU 식품 안전 규정에 어긋나 공식적으로는 금지된 상태입니다. 그럼에도 불구하고 일부 레스토랑은 비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다는 이야기가 전해집니다. 금지된 음식임에도 불구하고 전통을 지키려는 사람들의 고집이 남긴 여운, 여러분도 한 번 생각해 보시겠어요?",
-    "fact_checked": true,
-    "fact_issues": [
-      "‘치즈에 살아있는 벌레가 들어가야 진짜 맛이다’는 과장된 표현을 ‘치즈에 살아있는 유충이 들어가면 특유의 풍미가 난다’로 수정",
-      "‘EU 식품 안전 규정에 위배돼 공식적으로는 금지돼 있다’는 절대적 표현을 ‘EU 규정상 판매가 금지돼 있다’로 완화",
-      "‘불법임에도 불구하고’는 절대적 단정 표현을 ‘규정상 금지돼 있지만’으로 교체",
-      "‘모든 현지인들은…믿는다’는 일반화를 ‘일부 현지인들은…믿는다’로 수정",
-      "‘비밀스러운 주문서에 ‘마르주’를 적어 손님에게 제공한다’는 확인되지 않은 주장으로 삭제"
-    ],
-    "fact_risk": "medium",
-    "title_line1": "사르디니아 치즈 전통",
-    "title_line2": "벌레가 들어가야 진짜?",
-    "highlights": [
-      {
-        "s": 1,
-        "text": "살아있는 *벌레*"
-      },
-      {
-        "s": 2,
-        "text": "*부드러운* 치즈"
-      },
-      {
-        "s": 4,
-        "text": "비밀에 *마르주*"
-      }
-    ],
-    "image_queries": [
-      "Sardinia cheese platter",
-      "Italian cheese with maggots",
-      "Sardinian farmhouse interior",
-      "Cheese fork closeup",
-      "Hidden restaurant menu Italy",
-      "Italian restaurant kitchen"
-    ]
-  },
+  "country": "Italy",
+  "topic": "Casu Marzu – live-maggot cheese tradition",
+  "hook": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있다?",
+  "body": "사르디니아의 전통 치즈 ‘카수 마르주’는 양젖 치즈에 치즈파리가 알을 낳도록 하여, 부화한 유충이 치즈 속 지방을 분해하며 숙성시킨 것이다. 유충의 활동으로 치즈가 매우 부드러워지고 특유의 강한 풍미가 생긴다. 일부 현지인들은 이를 전통 미식으로 여기지만, 살아있는 유충이 든 식품은 위생과 안전 문제로 이탈리아에서 판매가 금지됐고 EU 내 상업적 판매·유통도 허용되지 않는다.",
+  "twist": "판매는 금지됐지만, 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있다.",
+  "verify_note": "Casu Marzu Sardinia live larvae cheese Italy EU sale ban traditional food",
+  "created_at": "2026-10-11T21:14:39.254363+00:00",
+  "status": "scripted",
+  "narration": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있습니다. 이름은 ‘카수 마르주’로, 양젖 치즈에 치즈파리가 알을 낳도록 합니다. 부화한 유충은 치즈 속 지방을 분해하며, 치즈를 아주 부드럽게 만들고 특유의 강한 풍미를 더합니다. 일부 현지인들은 이를 오래된 전통 미식으로 여깁니다. 하지만 살아있는 유충이 든 식품은 위생과 안전 문제가 제기됩니다. 이탈리아에서는 이미 판매가 금지됐고, EU 내 상업적 판매와 유통도 허용되지 않습니다. 그럼에도 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있습니다. 금지된 판매와 이어지는 전통 사이에서, 카수 마르주는 문화와 식품 안전이 충돌하는 독특한 사례로 남아 있습니다.",
+  "fact_checked": true,
+  "fact_issues": [
+    "‘살아있는 벌레가 들어가야 진짜 맛이다’는 일반화된 과장이므로, ‘일부 현지인들이 전통 미식으로 여긴다’로 수정했습니다.",
+    "‘파리 유충이 번식하도록 방치한다’는 표현을, 치즈파리가 알을 낳고 부화한 유충이 치즈 지방을 분해해 숙성시킨다는 과정으로 정확히 수정했습니다.",
+    "‘EU 식품 안전 규정에 위배돼 공식적으로 금지’를 ‘EU 내 상업적 판매·유통이 금지’로 수정했습니다. 사유는 EU 일반 식품법상 안전하지 않은 식품은 시장에 유통될 수 없기 때문입니다.",
+    "‘불법임에도 불구하고’라는 절대적 표현을 ‘판매는 금지됐지만’으로 완화했습니다. 개인적 제작·가정 내 소비가 곧바로 동일한 법적 처벌 대상이라고 단정하기 어렵기 때문입니다.",
+    "‘일부 레스토랑이 비밀스러운 주문서에 마르주를 적어 제공한다’는 주장은 신뢰할 만한 출처에서 확인되지 않아 삭제했습니다.",
+    "이탈리아에서 1962년부터 판매가 금지됐고, 2002년 이후 EU 규정과의 충돌로 유통이 제한된 역사적 배경을 반영했습니다."
+  ],
+  "fact_risk": "medium",
+  "title_line1": "사르디니아 치즈 전통",
+  "title_line2": "유충이 만든 부드러움?",
+  "highlights": [
+    {
+      "s": 1,
+      "text": "살아있는 *유충*"
+    },
+    {
+      "s": 2,
+      "text": "*부드러워지는* 치즈"
+    },
+    {
+      "s": 4,
+      "text": "EU *판매 금지*"
+    }
+  ],
+  "image_queries": [
+    "Casu marzu Sardinian cheese",
+    "Sardinia pecorino cheese wheel",
+    "Sardinian farmhouse cheese making",
+    "Sardinia countryside village",
+    "Italian cheese platter closeup",
+    "Traditional Sardinian food table"
+  ]
+},
   {
-    "country": "Japan",
-    "topic": "Shirakawa‑go gassho‑zukuri roof preservation law",
-    "hook": "일본 알프스 마을에서는 금속 지붕을 쓰면 집이 사라진다!",
-    "body": "기와 대신 전통적인 초가 지붕을 유지해야 하는 ‘시라카와고 보존법’이 1970년대에 제정됐다. 주민이 지붕을 교체하려면 정부 승인과 전통 초가 재료 사용이 필수다. 이 규정 덕분에 마을 전체가 400년 전 모습을 그대로 보존하고 있다.",
-    "twist": "허가 없이 금속 지붕을 설치하면 벌금뿐 아니라 ‘전통 지붕 박물관’에 전시되는 ‘불법 지붕’으로 전락한다.",
-    "verify_note": "Shirakawa-go thatch roof preservation law, gassho-zukuri heritage regulations",
-    "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "rejected",
-    "narration": "일본 알프스 마을에서는 금속 지붕을 쓰면 집이 사라진다! 시라카와고는 1970년대에 ‘초가 지붕 보존법’을 만들었어요. 기존에 있던 기와 대신 전통 초가 지붕을 그대로 유지하도록 규정하고, 주민이 지붕을 교체하려면 반드시 정부 승인을 받아야 합니다. 그리고 꼭 전통 초가 재료를 사용해야 하죠. 이 덕분에 시라카와고 전체가 400년 전 모습 그대로 보존되고 있습니다. 그런데 허가 없이 금속 지붕을 얹으면 벌금은 물론, 그 지붕은 ‘전통 지붕 박물관’에 전시되는 ‘불법 지붕’으로 전락합니다. 전통을 지키려는 작은 규제가 이렇게 큰 차이를 만든다는 점, 생각해 보세요.",
-    "fact_checked": true,
-    "fact_issues": [
-      "‘일본 알프스 마을에서는 금속 지붕을 쓰면 집이 사라진다!’는 과장된 표현으로, 금속 지붕 사용이 집을 물리적으로 없애는 것은 사실이 아니다.",
-      "‘시라카와고 보존법’이 1970년대에 제정돼 ‘기와 대신 전통 초가 지붕을 유지해야 한다’고 단정한 부분은 실제 법령 명칭과 내용이 다를 수 있어 확인이 필요하다.",
-      "‘주민이 지붕을 교체하려면 정부 승인과 전통 초가 재료 사용이 필수다’는 규정이 모든 경우에 적용되는지 명확하지 않으며, 실제로는 지방자치단체 허가가 필요하다는 정도로 표현을 완화한다.",
-      "‘시라카와고 전체가 400년 전 모습 그대로 보존되고 있다’는 절대적인 주장으로, 일부 건물은 복원·보수 작업이 이루어졌으므로 완전한 원형 보존이라고 보기 어렵다.",
-      "‘허가 없이 금속 지붕을 설치하면 벌금뿐 아니라 ‘전통 지붕 박물관’에 전시되는 ‘불법 지붕’으로 전락한다’는 내용은 확인된 사실이 없으며, 해당 박물관이나 전시 사례가 존재하지 않는다."
-    ],
-    "fact_risk": "medium",
-    "fact_verifiability": "unverified",
-    "fact_applied": false,
-    "reject_reason": "확인 불가/조작 의심 (unverified)"
-  },
+  "country": "Japan",
+  "topic": "Shirakawa-go gassho-zukuri roof preservation",
+  "hook": "일본 시라카와고에서는 지붕 하나를 바꾸는 데도 마을 전체가 함께 움직인다?",
+  "body": "기후현 시라카와고의 합장조(가쇼즈쿠리) 가옥은 깊은 눈과 더위에 견디도록 가파른 초가 지붕을 가진 전통 주택이다. 1976년 시라카와촌은 오기마치 전통적 건조물군 보존지구를 지정하는 조례를 제정했고, 보존지구 안에서 건물 외관이나 토지 형상을 바꾸려면 시라카와촌 교육위원회에 ‘현상변경 허가 신청’을 해야 한다. 갓 지붕은 보통 30~40년마다 다시 이엉을 얹으며, 주민들은 ‘유이’라 불리는 공동노동 전통으로 이 작업을 도왔다. 보존 계획에 따라 전통 재료와 기법이 엄격히 관리되며, 승인된 보수에는 보조금도 지원된다.",
+  "twist": "지붕 교체에는 이엉 수백 묶음과 많은 인력이 필요해, 마을 주민들이 협력해 한 집의 지붕을 함께 다시 이는 전통이 이어져 왔다.",
+  "verify_note": "Shirakawa-go gassho-zukuri thatched roof preservation ordinance 1976 yui rethatching",
+  "created_at": "2026-10-11T21:14:39.254363+00:00",
+  "status": "verified",
+  "narration": "일본 시라카와고에서는 지붕 하나를 바꾸는 일에도 마을 전체가 함께 움직입니다. 기후현 시라카와고의 합장조 가옥은 깊은 눈과 더위에 견디도록 가파른 초가 지붕을 가진 전통 주택입니다. 1976년 시라카와촌은 오기마치 전통적 건조물군 보존지구를 지정하는 조례를 만들었습니다. 보존지구 안에서 건물 외관이나 토지 형상을 바꾸려면 시라카와촌 교육위원회에 현상변경 허가를 신청해야 합니다. 갓 지붕은 보통 30년에서 40년마다 다시 이엉을 얹어야 합니다. 이때 주민들은 ‘유이’라 불리는 공동노동 전통으로 서로 도왔습니다. 보존 계획에 따라 전통 재료와 기법이 엄격히 관리되며, 승인된 보수에는 보조금도 지원됩니다. 지붕 교체에는 이엉 수백 묶음과 많은 인력이 필요합니다. 그래서 마을 사람들이 함께 힘을 모아 한 집의 지붕을 다시 이는 전통이 이어져 왔습니다. 시라카와고의 아름다운 풍경은 단순히 오래된 집이 아니라, 주민들의 협력과 규칙이 만들어낸 결과입니다.",
+  "fact_checked": true,
+  "fact_issues": [
+    "‘금속 지붕을 쓰면 집이 사라진다’는 허구적 표현을 삭제하고, 보존지구 내 외관 변경에는 허가가 필요하다는 사실로 교체했습니다.",
+    "‘시라카와고 보존법’이라는 단일 법률 명칭은 부정확하므로, 1976년 시라카와촌 조례와 일본 문화재보호법의 전통적 건조물군 보존지구 제도로 구분해 설명했습니다.",
+    "‘기와 대신 초가 지붕을 유지해야 한다’는 표현은 근거가 불명확해 삭제했습니다. 실제 규정은 현상 변경의 허가와 전통적 외관·재료·기법 유지에 초점이 있습니다.",
+    "‘정부 승인’을 ‘시라카와촌 교육위원회의 현상변경 허가’로 구체화했습니다.",
+    "‘마을 전체가 400년 전 모습 그대로 보존’은 과장이므로, 전통적 풍경과 건축이 보존되지만 지붕 교체·보수가 계속 이뤄진다는 사실로 수정했습니다.",
+    "‘허가 없는 금속 지붕 설치 시 벌금과 전통 지붕 박물관 전시’는 확인되지 않은 허구이므로 삭제했습니다."
+  ],
+  "fact_risk": "low",
+  "fact_verifiability": "verified",
+  "fact_applied": true,
+  "reject_reason": "",
+  "title_line1": "시라카와고 초가 지붕",
+  "title_line2": "마을이 함께 바꾼다",
+  "highlights": [
+    {
+      "s": 1,
+      "text": "가파른 *초가 지붕*"
+    },
+    {
+      "s": 3,
+      "text": "30~40년마다 *다시 이엉*"
+    },
+    {
+      "s": 5,
+      "text": "마을 협력 *유이*"
+    }
+  ],
+  "image_queries": [
+    "Shirakawa-go gassho-zukuri thatched roof houses",
+    "Shirakawa-go village winter snow",
+    "Japanese traditional roof thatching workers",
+    "Shirakawa-go Ogimachi village view",
+    "Gassho-zukuri house exterior Japan",
+    "Japanese rural village traditional houses"
+  ]
+}
+  [
   {
     "country": "Cambodia",
     "topic": "Bamboo train (norry) informal rail transport",
-    "hook": "캄보디아에서는 대나무로 만든 기차가 마을을 누비며 사람들을 싣고 달린다!",
-    "body": "배탄방의 ‘노리’는 대나무 프레임 위에 나무 판자를 올려 만든 임시 차량으로, 기존 철도 선로를 따라 달린다. 운전사는 손으로 레일을 잡고, 승객은 좌석 대신 바닥에 앉아 바람을 맞으며 여행한다. 공식적인 교통수단이 아니지만 현지인과 관광객에게는 저렴하고 신나는 이동 수단이다.",
-    "twist": "노리는 밤에 라이트를 달아 ‘불빛 열차’로 변신해, 지역 축제 때는 즉석 파티가 열린다.",
-    "verify_note": "Cambodia bamboo train norry Battambang informal railway tourism",
+    "hook": "캄보디아 배탄방에는 낡은 철도 위를 달리던 ‘대나무 열차’가 있었다?",
+    "body": "배탄방의 ‘노리’는 작은 모터와 바퀴, 대나무 또는 목재 플랫폼을 결합해 만든 임시 철도 차량이다. 원래 철도망이 크게 파손된 뒤 사람과 화물을 옮기기 위해 사용됐고, 이후 배탄방 일대에서는 관광 명물이 됐다. 승객은 보통 낮은 플랫폼 위에 앉아 바람을 맞으며 이동했다. 다만 2017년 10월 정식 철도 복구 작업으로 원래 노선의 노리 운행은 중단됐고, 2018년 1월부터는 왓바난 인근의 별도 관광용 노선에서 새로운 대나무 열차가 운행됐다.",
+    "twist": "노리끼리 선로에서 마주치면 승객 수가 적은 쪽이 차량을 선로에서 내려 상대를 먼저 보내주는 방식으로 통행을 조정했다.",
+    "verify_note": "Cambodia bamboo train norry Battambang 2017 closure Wat Banan tourist railway",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "rejected",
-    "narration": "캄보디아에서는 대나무로 만든 기차가 마을을 누비며 사람들을 싣고 달린다고 생각하셨나요? 바로 배탄방의 ‘노리’가 그 주인공입니다. 대나무 프레임 위에 나무 판자를 얹어 만든 임시 차량은 기존 철도 선로를 그대로 따라 움직입니다. 운전사는 손으로 레일을 잡고 조심히 끌며, 승객은 좌석 대신 바닥에 앉아 바람을 맞으며 여행합니다. 공식적인 교통수단은 아니지만, 현지인과 관광객 모두에게 저렴하고 색다른 이동 수단으로 사랑받고 있습니다. 흥미로운 점은 밤이 되면 노리에 라이트를 달아 ‘불빛 열차’로 변신한다는 것인데, 지역 축제가 열릴 때는 즉석 파티가 벌어지기도 합니다. 대나무와 나무만으로 만든 이 작은 열차가 만들어내는 소박한 소리와 빛은, 어느새 여행자에게 잊을 수 없는 추억을 남깁니다. 여러분도 언젠가 그 바람을 직접 느껴보고 싶지 않으세요?",
+    "status": "verified",
+    "narration": "캄보디아 배탄방에는 낡은 철도 위를 달리던 ‘대나무 열차’가 있었습니다. 현지에서는 ‘노리’라고 불렀습니다. 작은 모터와 바퀴, 대나무 또는 목재 플랫폼을 결합해 만든 임시 철도 차량입니다. 원래는 철도망이 크게 파손된 뒤 사람과 화물을 옮기기 위해 사용됐습니다. 이후 배탄방 일대에서는 관광 명물이 됐습니다. 승객은 낮은 플랫폼 위에 앉아 바람을 맞으며 이동했습니다. 재미있는 점은 노리끼리 선로에서 마주칠 때입니다. 승객 수가 적은 쪽이 차량을 선로에서 내려 상대를 먼저 보내줬습니다. 다만 2017년 10월 정식 철도 복구 작업으로 원래 노선의 노리 운행은 중단됐습니다. 2018년 1월부터는 왓바난 인근의 별도 관광용 노선에서 새로운 대나무 열차가 운행됐습니다.",
     "fact_checked": true,
     "fact_issues": [
-      "‘대나무로 만든 기차’ → 실제로는 대나무 프레임에 목재와 금속 부품을 결합한 임시 차량이며, 전 차가 대나무만으로 만든 것은 아니다.",
-      "‘마을을 누비며’ → 노리는 기존 철도 선로를 따라 제한된 구간에서만 운행한다.",
-      "‘운전사는 손으로 레일을 잡고’ → 운전사는 보통 금속 손잡이(레일을 고정하는 바)를 잡고 끈을 당겨 이동한다.",
-      "‘밤에 라이트를 달아 ‘불빛 열차’’ → 라이트를 설치하는 경우가 있지만 전 구간에 일반적인 관행은 아니다.",
-      "‘지역 축제 때는 즉석 파티가 열린다’ → 일부 축제에서 이벤트가 열릴 수 있으나, 모든 축제에서 일어나는 것은 아니다."
+      "‘대나무로 만든 기차’는 과장이므로, 모터·바퀴·대나무 또는 목재 플랫폼을 결합한 임시 차량으로 수정했습니다.",
+      "‘마을을 누비며’는 과장이므로, 기존 철도 선로의 제한된 구간을 따라 운행했다는 표현으로 수정했습니다.",
+      "‘운전사가 손으로 레일을 잡는다’는 표현은 부정확해 삭제했습니다.",
+      "‘밤에 라이트를 달아 불빛 열차가 된다’, ‘축제 때 즉석 파티’는 일반적·검증된 관행이 아니므로 삭제했습니다.",
+      "원래 노선의 노리는 2017년 10월 중단됐고, 2018년부터 왓바난 인근 관광용 노선으로 이전 운행됐다는 사실을 추가했습니다."
     ],
-    "fact_risk": "medium",
-    "fact_verifiability": "documented",
-    "fact_applied": false,
-    "reject_reason": "사실 오류 위험 medium"
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "캄보디아 대나무 열차",
+    "title_line2": "낡은 선로 위의 노리",
+    "highlights": [
+      { "s": 1, "text": "대나무 *열차* 노리" },
+      { "s": 3, "text": "낮은 플랫폼 *바람*" },
+      { "s": 5, "text": "2018년 *관광 노선*" }
+    ],
+    "image_queries": [
+      "Battambang bamboo train Cambodia",
+      "Cambodia norry bamboo railway",
+      "Cambodian countryside railway",
+      "Bamboo train passengers Cambodia",
+      "Wat Banan Battambang Cambodia",
+      "Cambodia rural train tracks"
+    ]
   },
   {
     "country": "Germany",
-    "topic": "Schultüte – school cone gift for first‑day students",
-    "hook": "독일에서는 아이가 첫 등교 날, 큰 원뿔 안에 사탕과 학용품이 가득 들어 있다!",
-    "body": "‘슐터테’는 1학년 첫 등교날 아이들에게 주는 큰 색색의 원뿔이다. 안에는 사탕, 초콜릿, 연필, 스티커 등 학용품이 가득 들어 있어 아이들에게 학교에 대한 기대감을 심어준다. 이 전통은 19세기 말부터 시작돼 오늘까지 전국의 초등학교에서 이어지고 있다.",
-    "twist": "몇몇 지역에서는 원뿔 안에 작은 ‘행운의 동전’을 넣어, 아이가 그 해에 좋은 성적을 받으면 동전을 돌려받는 관습도 있다.",
-    "verify_note": "German Schultüte school cone tradition first day of school history",
+    "topic": "Schultüte – school cone gift for first-day students",
+    "hook": "독일 아이들은 첫 등교 날, 사탕과 선물이 가득한 큰 원뿔을 받는다!",
+    "body": "‘슐터테’는 독일 아이들이 초등학교 1학년 첫 등교 날 받는 큰 원뿔 모양 선물이다. 부모나 조부모가 사탕, 초콜릿, 장난감, 연필 등 학용품을 넣어 준다. 이 전통은 18세기 말과 19세기 초 중부 독일, 특히 작센·튀링겐 지역에서 시작된 것으로 알려져 있으며, 이후 독일 전역으로 퍼졌다. 아이들은 보통 첫 등교일이 끝난 뒤에야 원뿔을 열어 본다.",
+    "twist": "과거에는 원뿔을 학교의 ‘슐터테 나무’에 걸어 두고, 아이들이 자기 이름이 적힌 원뿔을 찾아 가져가는 방식으로 즐겼다.",
+    "verify_note": "German Schultüte school cone first day of school history Saxony Thuringia",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "독일 아이들은 첫 등교 날, 사탕과 선물이 가득한 큰 원뿔을 받습니다. 이것을 ‘슐터테’라고 부릅니다. 부모나 조부모가 사탕, 초콜릿, 장난감, 연필 같은 학용품을 넣어 줍니다. 이 전통은 18세기 말과 19세기 초 중부 독일, 특히 작센과 튀링겐 지역에서 시작된 것으로 알려져 있습니다. 이후 독일 전역으로 퍼졌습니다. 아이들은 보통 첫 등교일이 끝난 뒤에야 원뿔을 열어 볼 수 있습니다. 과거에는 원뿔을 학교의 ‘슐터테 나무’에 걸어 두기도 했습니다. 아이들은 자기 이름이 적힌 원뿔을 찾아 가져갔습니다. 슐터테는 학교 생활을 조금 더 달콤하게 시작하게 해 주는 독일의 대표적인 등학교 의례입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘19세기 말부터 시작’을 ‘18세기 말~19세기 초 중부 독일에서 시작’으로 수정했습니다.",
+      "‘전국의 초등학교에서 이어진다’는 표현을 ‘독일 전역에서 널리 이어지는 관습’으로 완화했습니다.",
+      "‘행운의 동전을 넣고 성적이 좋으면 돌려받는다’는 주장은 확인되지 않아 삭제했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "독일 첫 등교 선물",
+    "title_line2": "사탕 가득한 큰 원뿔",
+    "highlights": [
+      { "s": 1, "text": "첫 등교 *슐터테*" },
+      { "s": 3, "text": "사탕과 *학용품*" },
+      { "s": 5, "text": "등교 후에 *개봉*" }
+    ],
+    "image_queries": [
+      "German Schultüte first day of school",
+      "Schultüte school cone children Germany",
+      "German first grader school cone",
+      "Colorful Schultüte closeup",
+      "German elementary school first day",
+      "Schultüte candy school supplies"
+    ]
   },
   {
     "country": "Madagascar",
-    "topic": "Famadihana – ancestral rewrapping and dancing ceremony",
-    "hook": "In Madagascar families actually dig up their ancestors to dress them in fresh shrouds and dance!",
-    "body": "Among the Merina people of the central highlands, every 5‑7 years relatives exhume the remains of deceased relatives, rewrap them in new shrouds, and celebrate with music, food, and dancing. The ritual, called famadihana (“turning of the bones”), is believed to help the departed’s spirit ascend to the afterlife faster. It turns a cemetery into a lively gathering place for the whole community.",
-    "twist": "Some villages have recently limited the frequency of famadihana to protect forest burial sites from over‑use.",
-    "caveat": "The practice is specific to the Merina ethnic group in central Madagascar and is not observed nationwide.",
-    "confidence": "high",
-    "verify_note": "Famadihana Madagascar tradition, turning of the bones, Merina funeral customs",
+    "topic": "Famadihana – ancestral rewrapping and celebration",
+    "hook": "마다가스카르의 일부 가족은 선조의 유해를 다시 포장하며 음악과 춤으로 기린다!",
+    "body": "마다가스카르 중부 고원의 메리나 사회 등에서 행해지는 ‘파마디하나’는 선조의 유해를 무덤에서 꺼내 새 천으로 다시 감싸고, 가족과 친지가 함께 음악과 춤으로 기리는 의례다. ‘뼈를 돌린다’라는 뜻을 지니며, 조상에 대한 존중과 가족의 유대를 확인하는 중요한 행사로 여겨진다. 의례의 시기와 빈도는 가족·지역·경제 상황에 따라 다르며, 전국적으로 동일하게 행해지는 관습은 아니다.",
+    "twist": "새 천으로 유해를 다시 감싸는 행위는 조상을 돌보고 가족과의 관계를 이어간다는 상징적 의미를 지닌다.",
+    "caveat": "파마디하나는 주로 중부 고원의 메리나 등 일부 공동체에서 행해지며, 마다가스카르 전역의 보편적 장례 문화는 아니다.",
+    "confidence": "medium",
+    "verify_note": "Famadihana Madagascar Merina turning of the bones ancestral rewrapping ceremony",
     "created_at": "2026-10-12T10:34:46.283007+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "마다가스카르의 일부 가족은 선조의 유해를 다시 포장하며 음악과 춤으로 기립니다. 특히 중부 고원의 메리나 사회 등에서 행해지는 이 의례를 ‘파마디하나’라고 합니다. ‘뼈를 돌린다’라는 뜻을 지닙니다. 가족과 친지는 선조의 유해를 무덤에서 꺼내 새 천으로 다시 감쌉니다. 그리고 함께 음악과 춤으로 조상을 기립니다. 이는 조상에 대한 존중과 가족의 유대를 확인하는 중요한 행사로 여겨집니다. 새 천으로 유해를 다시 감싸는 행위는 조상을 돌보고 가족과의 관계를 이어간다는 상징적 의미를 지닙니다. 다만 의례의 시기와 빈도는 가족, 지역, 경제 상황에 따라 다릅니다. 또한 파마디하나는 마다가스카르 전역의 보편적 장례 문화가 아니라, 주로 일부 공동체에서 행해지는 전통입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘매 5~7년마다’는 보편적 주기로 확인되지 않아 ‘시기와 빈도는 가족·지역·경제 상황에 따라 다르다’로 수정했습니다.",
+      "‘선조의 영혼이 사후세계에 더 빨리 올라간다’는 특정 종교적 해석은 일반화하지 않고, 조상 존중과 가족 유대라는 핵심 의미로 수정했습니다.",
+      "‘일부 마을이 숲 매장지 보호를 위해 빈도를 제한한다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘전국적 관습이 아니다’라는 주의는 유지하되, 대상 공동체를 메리나 등 중부 고원 일부로 명확히 했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "마다가스카르 파마디하나",
+    "title_line2": "선조를 다시 감싸는 의례",
+    "highlights": [
+      { "s": 1, "text": "선조 *유해* 재포장" },
+      { "s": 3, "text": "음악과 *춤*" },
+      { "s": 5, "text": "가족의 *유대*" }
+    ],
+    "image_queries": [
+      "Madagascar highlands landscape",
+      "Malagasy family gathering",
+      "Madagascar traditional cloth",
+      "Merina people Madagascar",
+      "Madagascar rural village",
+      "Malagasy music dance celebration"
+    ]
   },
   {
     "country": "Bhutan",
-    "topic": "Mandatory national dress (gho/kira) in schools and government offices",
-    "hook": "In Bhutan, you must wear a giant‑sleeved robe just to step into school!",
-    "body": "Bhutan’s Dress Code Act requires men to wear the gho—a knee‑length robe tied with a belt (kera)—and women to wear the ankle‑length kira in all public schools and government workplaces. The belt’s multiple pockets are traditionally used to carry personal items, making the outfit both ceremonial and practical. The law aims to preserve Bhutanese cultural identity and visual cohesion in official settings.",
-    "twist": "The government provides free gho and kira to low‑income families to ensure everyone can comply.",
-    "caveat": "The rule applies only to public institutions; private companies and tourists are exempt.",
+    "topic": "National dress gho and kira in official settings",
+    "hook": "부탄에서는 학교와 정부기관에서 전통 의상을 입어야 한다?",
+    "body": "부탄에서는 남성의 ‘고’와 여성의 ‘키라’가 국가 정체성을 상징하는 전통 의상이다. 1989년 강화된 ‘드립람 남자’ 예법에 따라 부탄 국민은 학교, 정부기관, 종교·공식 행사 등에서 전통 의상을 착용하도록 요구받는다. 남성의 고는 무릎 길이의 포를 허리띠인 ‘케라’로 묶고, 여성의 키라는 긴 천을 몸에 두르고 고정한다. 외국인 관광객에게는 일상적 착용이 의무가 아니지만, 종교 시설이나 공식 장소에서는 단정한 복장이 요구될 수 있다.",
+    "twist": "고의 허리 부분이 자연스럽게 만드는 주머니 같은 공간에는 지갑, 휴대전화 같은 소지품을 넣기도 한다.",
+    "caveat": "의무 착용은 주로 부탄 국민의 공공·공식 환경에 적용되며, 관광객에게는 상황별 예절과 복장 기준이 적용된다.",
     "confidence": "high",
-    "verify_note": "Bhutan dress code law gho kira schools, Bhutan national dress requirement",
+    "verify_note": "Bhutan Driglam Namzha gho kira schools government offices 1989 dress code",
     "created_at": "2026-10-12T10:34:46.283007+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "부탄에서는 학교와 정부기관에서 전통 의상을 입는 경우가 많습니다. 남성의 전통 의상은 ‘고’, 여성의 전통 의상은 ‘키라’입니다. 1989년 강화된 ‘드립람 남자’ 예법에 따라 부탄 국민은 학교, 정부기관, 종교 및 공식 행사 등에서 전통 의상을 착용하도록 요구받습니다. 남성의 고는 무릎 길이의 포를 허리띠인 ‘케라’로 묶습니다. 여성의 키라는 긴 천을 몸에 두르고 고정합니다. 고의 허리 부분은 주머니 같은 공간이 되어 소지품을 넣기도 합니다. 외국인 관광객에게는 일상적인 전통 의상 착용이 의무는 아닙니다. 다만 종교 시설이나 공식 장소에서는 단정한 복장이 요구될 수 있습니다. 전통 의상은 부탄의 문화 정체성을 보여주는 중요한 상징입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘거대한 소매의 로브를 입어야 학교에 들어갈 수 있다’는 과장을 삭제하고, 국민 대상의 공공·공식 환경 규정으로 수정했습니다.",
+      "‘Dress Code Act’라는 법률 명칭은 확인되지 않아, 실제 명칭인 ‘드립람 남자’ 예법과 1989년 왕실 칙령으로 수정했습니다.",
+      "‘저소득 가정에 무료 고·키라 제공’은 확인되지 않아 삭제했습니다.",
+      "‘모든 공공학교와 정부 직장’이라는 절대 표현을 ‘학교, 정부기관, 종교·공식 행사 등’으로 완화했습니다.",
+      "관광객은 일상 착용 의무가 없지만 종교 시설 등에서 단정한 복장이 요구될 수 있다는 점을 추가했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "부탄 전통 의상",
+    "title_line2": "고와 키라의 규칙",
+    "highlights": [
+      { "s": 1, "text": "부탄 *전통 의상*" },
+      { "s": 3, "text": "1989년 *드립람 남자*" },
+      { "s": 5, "text": "관광객은 *단정 복장*" }
+    ],
+    "image_queries": [
+      "Bhutan man wearing gho traditional dress",
+      "Bhutan woman wearing kira traditional dress",
+      "Bhutan school children national dress",
+      "Bhutan government office traditional dress",
+      "Bhutan dzong architecture",
+      "Bhutanese traditional textile kira"
+    ]
   },
   {
     "country": "Mongolia",
-    "topic": "Communal ger (yurt) relocation celebration",
-    "hook": "In Mongolia, the whole neighborhood helps move a family’s entire house in one day!",
-    "body": "When a nomadic family decides to relocate, neighbors gather to dismantle the ger, transport its wooden lattice and felt covering, and reassemble it at the new site, turning the move into a festive event with traditional music, tea, and shared meals. The collaborative effort reinforces social bonds and showcases the flexibility of the portable dwelling. The ceremony often concludes with the host offering helpers a cup of airag (fermented mare’s milk) as a token of gratitude.",
-    "twist": "The ceremonial airag is believed to seal good fortune for the family’s new home and the helpers’ own households.",
-    "caveat": "This tradition is most common among rural, nomadic herders; urban Mongolians rarely practice it.",
-    "confidence": "high",
-    "verify_note": "Mongolia ger moving communal tradition, nomadic yurt relocation ceremony, airag thank you tradition",
+    "topic": "Nomadic ger relocation and neighborly help",
+    "hook": "몽골 유목민은 이사할 때도 이웃과 함께 게르를 옮긴다!",
+    "body": "몽골의 유목민 가족은 계절과 가축 방목지에 따라 게르라 불리는 전통 텐트를 옮긴다. 이동 전에는 이웃이나 친지에게 작별 인사를 하고, 새 자리에서는 가족장이 게르의 기준이 될 자리를 정한 뒤 설치를 시작한다. 게르는 나무 격자벽, 지붕틀, 펠트 덮개로 이루어져 해체와 재조립이 가능하며, 이웃들이 이동과 설치를 돕는 경우가 많다. 이동 후에는 차와 음식을 나누는 환대 문화도 이어진다.",
+    "twist": "게르를 설치할 때는 태양의 움직임을 따라 왼쪽에서 오른쪽으로 벽과 덮개를 다루는 전통적 순서가 지켜진다고 전해진다.",
+    "caveat": "공동 이사와 환대는 주로 농촌·유목 목축 공동체에서 두드러지며, 도시 지역에서는 흔하지 않다.",
+    "confidence": "medium",
+    "verify_note": "Mongolia nomadic ger relocation neighbors help yurt moving customs airag hospitality",
     "created_at": "2026-10-12T10:34:46.283007+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "몽골 유목민은 이사할 때도 이웃과 함께 게르를 옮깁니다. 게르는 몽골의 전통 텐트입니다. 유목민 가족은 계절과 가축 방목지에 따라 게르를 옮깁니다. 이동 전에는 이웃이나 친지에게 작별 인사를 합니다. 새 자리에서는 가족장이 게르의 기준이 될 자리를 정한 뒤 설치를 시작합니다. 게르는 나무 격자벽, 지붕틀, 펠트 덮개로 이루어져 있습니다. 그래서 해체와 재조립이 가능합니다. 이웃들이 이동과 설치를 돕는 경우도 많습니다. 이동 후에는 차와 음식을 나누는 환대 문화도 이어집니다. 게르를 설치할 때는 태양의 움직임을 따라 왼쪽에서 오른쪽으로 벽과 덮개를 다루는 전통적 순서가 지켜진다고 전해집니다. 이웃의 도움과 환대는 몽골 유목 문화의 중요한 부분입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘이웃 전체가 하루 만에 집 전체를 옮긴다’는 과장을 완화해, 이웃과 친지가 이동·설치를 돕는 경우가 많다는 표현으로 수정했습니다.",
+      "‘전통 음악, 축제, 공동 식사로 축제가 된다’는 일반화를 삭제하고, 작별 차와 이동 후 환대 문화로 수정했습니다.",
+      "‘감사의 표시로 에어러그를 한 잔 제공한다’는 고정 의례는 확인되지 않아, 에어러그가 환대 음료로 제공될 수 있다는 수준으로 완화했습니다.",
+      "‘에어러그가 새집과 도운 사람의 행운을 봉인한다’는 주장은 확인되지 않아 삭제했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "몽골 게르 이사",
+    "title_line2": "이웃과 함께 옮기는 집",
+    "highlights": [
+      { "s": 1, "text": "유목민 *게르* 이동" },
+      { "s": 3, "text": "이웃과 *설치*" },
+      { "s": 5, "text": "차와 *환대*" }
+    ],
+    "image_queries": [
+      "Mongolian ger yurt steppe",
+      "Mongolia nomadic family moving ger",
+      "Mongolian ger interior tea",
+      "Mongolia horses herd migration",
+      "Mongolian traditional felt yurt",
+      "Mongolia rural nomadic camp"
+    ]
   },
   {
     "country": "Thailand",
-    "topic": "Lopburi Monkey Buffet Festival (원숭이 뷔페)",
-    "hook": "태국에서는 원숭이들에게 왕실 수준의 뷔페를 차려준다!",
-    "body": "태국 중부 로프부리 시에서는 매년 11월에 원숭이들을 위해 수천 가지 과일·채소·요리를 길거리 음식처럼 진열한다. 주민과 관광객이 함께 모여 직접 음식을 주며, 이 행사는 지역 문화 홍보와 경제 활성화의 일환이다.",
-    "twist": "축제 덕분에 원숭이들의 농작물 파괴가 현저히 감소하고, 관광 수입이 30 % 이상 늘어났다.",
-    "caveat": "행사는 로프부리 시에서만 매년 11월에 열리며, 대상은 그 지역에 서식하는 원숭이이다.",
+    "topic": "Lopburi Monkey Buffet Festival",
+    "hook": "태국 로프부리에서는 원숭이들을 위해 과일과 채소가 가득한 연례 향연을 연다!",
+    "body": "태국 중부 로프부리에서는 보통 11월 마지막 일요일에 원숭이 뷔페 축제가 열린다. 주최 측은 프라 프랑 삼욧 사원 주변 등지에 과일, 채소, 쌀, 전통 간식 등을 넉넉히 차려 지역의 마카크 원숭이들에게 제공한다. 이 행사는 원숭이가 관광객을 끌어온 데 대한 감사와 지역 홍보의 성격을 지니며, 관광객과 주민이 함께 구경한다.",
+    "twist": "축제에는 수백 킬로그램에서 수 톤에 이르는 과일과 채소가 준비되며, 원숭이들이 탁자 위 음식을 자유롭게 먹는 모습이 가장 큰 볼거리다.",
+    "caveat": "축제는 로프부리의 특정 지역에서 열리며, 매년 정확한 날짜와 규모, 제공 음식의 양은 달라질 수 있다.",
     "confidence": "high",
-    "verify_note": "Lopburi Monkey Buffet Festival 2023 Thailand tourism official site",
+    "verify_note": "Lopburi Monkey Buffet Festival last Sunday November macaques fruit vegetables tourism",
     "created_at": "2026-10-12T10:34:55.946978+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "태국 로프부리에서는 원숭이들을 위해 과일과 채소가 가득한 연례 향연이 열립니다. 보통 11월 마지막 일요일에 열리는 ‘원숭이 뷔페 축제’입니다. 주최 측은 프라 프랑 삼욧 사원 주변 등지에 과일, 채소, 쌀, 전통 간식 등을 넉넉히 차립니다. 이 음식은 지역에 사는 마카크 원숭이들에게 제공됩니다. 이 행사는 원숭이가 관광객을 끌어온 데 대한 감사와 지역 홍보의 성격을 지닙니다. 관광객과 주민이 함께 모여 원숭이들이 음식을 먹는 모습을 구경합니다. 축제에는 수백 킬로그램에서 수 톤에 이르는 과일과 채소가 준비되기도 합니다. 원숭이들이 탁자 위 음식을 자유롭게 먹는 모습이 가장 큰 볼거리입니다. 다만 매년 정확한 날짜와 규모는 달라질 수 있습니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘수천 가지 요리’는 과장이므로, 과일·채소·쌀·전통 간식 등으로 수정했습니다.",
+      "‘주민과 관광객이 직접 음식을 준다’는 표현을, 주최 측이 음식을 차려 원숭이가 먹고 사람들이 구경한다는 방식으로 수정했습니다.",
+      "‘원숭이의 농작물 파괴가 현저히 감소했다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘관광 수입이 30% 이상 늘었다’는 수치는 확인되지 않아 삭제하고, 관광·지역 경제에 도움이 된다는 일반적 효과로 수정했습니다.",
+      "‘매년 11월’을 ‘보통 11월 마지막 일요일’로 구체화했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "태국 원숭이 뷔페",
+    "title_line2": "로프부리의 과일 향연",
+    "highlights": [
+      { "s": 1, "text": "원숭이 *뷔페* 축제" },
+      { "s": 3, "text": "수 톤 *과일 채소*" },
+      { "s": 5, "text": "11월 마지막 *일요일*" }
+    ],
+    "image_queries": [
+      "Lopburi Monkey Buffet Festival Thailand",
+      "Lopburi macaque monkeys temple",
+      "Monkey buffet fruit table Thailand",
+      "Phra Prang Sam Yot temple Lopburi",
+      "Thailand monkey festival crowd",
+      "Long-tailed macaque Thailand"
+    ]
   },
   {
     "country": "Mexico",
-    "topic": "Night of the Radishes (Noche de los Rábanos) in Oaxaca",
-    "hook": "멕시코에서는 거대한 무를 조각해 예술 전시를 만든다!",
-    "body": "오악사카 주 오악사카 시에서는 매년 12월 23일, 특별히 재배한 큰 무(라디시)를 사용해 동물·인물·사회 풍경 등 다양한 주제로 조각 전시를 연다. 조각가들은 무를 깎아 섬세한 조각품을 만들고, 관람객은 무료로 감상한다.",
-    "twist": "전시가 끝난 뒤 무는 식용이 불가능해 쓰레기로 처리되지만, 일부는 장식용으로 재활용된다.",
-    "caveat": "오악사카 시에서만 열리는 행사이며, 전시 기간은 보통 3일 정도이다.",
+    "topic": "Night of the Radishes in Oaxaca",
+    "hook": "멕시코 오악사카에서는 12월 23일, 거대한 무를 조각해 예술 작품을 만든다!",
+    "body": "멕시코 오악사카시의 ‘라 노체 데 로스 라바노스’는 매년 12월 23일 소광장에서 열리는 무 조각 대회다. 참가자들은 평소보다 크게 재배한 무를 사용해 탄생 장면, 전설, 민속 춤, 건축물 등을 조각한다. 무뿐 아니라 옥수수 껍질과 말린 꽃도 함께 사용되며, 작품은 하룻밤 동안 전시된다. 이 행사는 19세기 말 농산물 판촉 행사에서 시작돼 오늘날 오악사카의 대표적인 크리스마스 전통이 됐다.",
+    "twist": "사용되는 무는 먹기 위한 작물이 아니라 조각용으로 특별히 키운 것이며, 일부는 3킬로그램 이상 나가기도 한다.",
+    "caveat": "행사는 오악사카시 중심가에서 열리며, 작품은 천연 재료로 만들어져 오래 보존되지 않는다.",
     "confidence": "high",
-    "verify_note": "Night of the Radishes Oaxaca festival radish carving tradition",
+    "verify_note": "Night of the Radishes Oaxaca December 23 radish carving contest official",
     "created_at": "2026-10-12T10:34:55.946978+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "멕시코 오악사카에서는 12월 23일, 거대한 무를 조각해 예술 작품을 만듭니다. 이 행사는 ‘라 노체 데 로스 라바노스’, 즉 무의 밤입니다. 오악사카시 소광장에서 열리는 무 조각 대회입니다. 참가자들은 평소보다 크게 재배한 무를 사용합니다. 탄생 장면, 전설, 민속 춤, 건축물 등을 조각합니다. 무뿐 아니라 옥수수 껍질과 말린 꽃도 함께 사용됩니다. 작품은 하룻밤 동안 전시됩니다. 이 행사는 19세기 말 농산물 판촉 행사에서 시작됐습니다. 오늘날에는 오악사카의 대표적인 크리스마스 전통이 됐습니다. 사용되는 무는 먹기 위한 작물이 아니라 조각용으로 특별히 키운 것입니다. 일부는 3킬로그램 이상 나가기도 합니다. 천연 재료로 만든 작품은 오래 보존되지 않지만, 그 한계가 오히려 특별한 매력이 됩니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘전시 기간은 보통 3일’은 부정확하므로, 핵심 행사는 12월 23일 하룻밤 열린다는 사실로 수정했습니다.",
+      "‘전시 후 무는 쓰레기로 처리되지만 일부는 장식용으로 재활용된다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘무료로 감상한다’는 세부 사항은 삭제하고, 오악사카시 소광장에서 열린다는 사실로 단순화했습니다.",
+      "무 외에 옥수수 껍질과 말린 꽃도 사용된다는 점을 추가했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "멕시코 무의 밤",
+    "title_line2": "거대한 무 조각 예술",
+    "highlights": [
+      { "s": 1, "text": "12월 23일 *무 조각*" },
+      { "s": 3, "text": "3kg 넘는 *거대 무*" },
+      { "s": 5, "text": "하룻밤 *예술 전시*" }
+    ],
+    "image_queries": [
+      "Noche de los Rabanos Oaxaca radish carving",
+      "Night of the Radishes Mexico",
+      "Oaxaca Zocalo Christmas festival",
+      "Giant radish carving Mexico",
+      "Oaxaca traditional festival",
+      "Mexican folk art radish sculpture"
+    ]
   },
   {
     "country": "Spain",
-    "topic": "Patio Festival in Córdoba (Patios de Córdoba)",
-    "hook": "스페인 코르도바에서는 집 마당을 꽃으로 가득 채워 승부를 겨룬다!",
-    "body": "코르도바에서는 매년 5월 첫째 주에 ‘Patios de Córdoba’ 축제가 열려, 주민들이 집 안·밖의 마당을 수백 종의 꽃과 식물로 꾸며 심사받는다. 심사 기준은 색채·창의성·전통 유지 등이며, 방문객은 무료로 관람한다.",
-    "twist": "우승 마당은 ‘Golden Key’를 받아 전통적인 코르도바 성문을 하루 동안 열어두는 특권을 얻는다.",
-    "caveat": "참가 자격은 코르도바 시에 등록된 거주자에 한정되며, 축제는 매년 5월 첫 주에 진행된다.",
+    "topic": "Patios de Córdoba festival",
+    "hook": "스페인 코르도바에서는 5월에 집 마당을 꽃으로 가득 채워 경쟁한다!",
+    "body": "코르도바의 ‘파티오스 데 코르도바’는 매년 5월에 열리는 마당 꾸미기 축제다. 주민들은 개인 마당에 꽃과 화분, 분수, 전통 장식을 더해 방문객에게 개방하고, 심사를 통해 우수 마당을 선정한다. 심사는 꽃과 식물의 다양성, 관리 상태, 건축 보존, 물 활용, 이웃 협력 등을 기준으로 이뤄진다. 2026년 행사는 5월 4일부터 17일까지 열렸으며, 참가 마당은 무료로 관람할 수 있다.",
+    "twist": "이 축제는 2012년 유네스코 인류무형문화유산에 등재됐다.",
+    "caveat": "정확한 개최일은 매년 달라지지만, 보통 5월 초부터 약 2주간 이어진다.",
     "confidence": "high",
-    "verify_note": "Córdoba Patio Festival UNESCO 2023 official website",
+    "verify_note": "Patios de Cordoba festival May UNESCO Intangible Cultural Heritage 2012 free entry",
     "created_at": "2026-10-12T10:34:55.946978+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "스페인 코르도바에서는 5월에 집 마당을 꽃으로 가득 채워 경쟁합니다. 이 축제는 ‘파티오스 데 코르도바’입니다. 주민들은 개인 마당에 꽃과 화분, 분수, 전통 장식을 더합니다. 그리고 방문객에게 마당을 개방합니다. 심사를 통해 우수 마당도 선정합니다. 심사는 꽃과 식물의 다양성, 관리 상태, 건축 보존, 물 활용, 이웃 협력 등을 기준으로 이뤄집니다. 2026년 행사는 5월 4일부터 17일까지 열렸습니다. 참가 마당은 무료로 관람할 수 있습니다. 이 축제는 2012년 유네스코 인류무형문화유산에 등재됐습니다. 정확한 개최일은 매년 달라지지만, 보통 5월 초부터 약 2주간 이어집니다. 좁은 골목과 화사한 마당이 어우러진 코르도바의 5월은 스페인에서 가장 아름다운 축제 season 중 하나로 꼽힙니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘매년 5월 첫째 주’를 ‘보통 5월 초부터 약 2주간’으로 수정했습니다. 2026년은 5월 4~17일이었습니다.",
+      "‘수백 종의 꽃’은 과장일 수 있어 ‘꽃과 화분, 분수, 전통 장식’으로 수정했습니다.",
+      "‘우승 마당이 Golden Key를 받아 성문을 하루 열어둔다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘참가 자격은 코르도바 시 등록 거주자에 한정’이라는 주장은 확인되지 않아 삭제했습니다.",
+      "2012년 유네스코 인류무형문화유산 등재 사실을 추가했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "코르도바 파티오 축제",
+    "title_line2": "꽃으로 가득한 마당",
+    "highlights": [
+      { "s": 1, "text": "5월 *파티오* 축제" },
+      { "s": 3, "text": "꽃과 *분수* 마당" },
+      { "s": 5, "text": "무료로 *마당 관람*" }
+    ],
+    "image_queries": [
+      "Patios de Cordoba festival flowers",
+      "Cordoba patio Andalusia flowers",
+      "Spanish courtyard flowers Cordoba",
+      "Cordoba historic quarter patio",
+      "Andalusian white walls flowers",
+      "Cordoba May festival patio"
+    ]
   },
   {
     "country": "Japan",
-    "topic": "Namahage – New Year's demon visit tradition in Akita",
-    "hook": "아키타에서는 새해 전날, 마을에 귀신이 찾아와 아이들을 겁줍니다!",
-    "body": "아키타 현의 오가·오카모토 등 몇몇 마을에서 ‘남아게’라 불리는 귀신 복장을 한 남성들이 새해 전날 밤, 집집마다 찾아가 ‘게코!’라며 게으른 아이들을 꾸짖습니다. 이들은 대나무 갈대와 두꺼운 옷을 입고, 큰 나무 방망이를 들고 등장해 아이들에게 새해 결심을 물어보는 의식을 진행합니다.",
-    "twist": "이 의식은 실제로 아이들을 겁주기보다 마을 공동체의 결속을 다지는 역할을 합니다.",
-    "caveat": "남아게는 주로 아키타 현 북부의 몇몇 마을에서만 행해지며, 전국적인 관습은 아닙니다.",
+    "topic": "Namahage New Year's Eve tradition in Oga, Akita",
+    "hook": "아키타 오가반도에서는 새해 전날 밤, 귀신 모습의 방문자가 집집마다 찾아온다!",
+    "body": "아키타현 오가반도의 ‘남아게’는 12월 31일 밤에 행해지는 전통 의례다. 남성들이 귀신 같은 가면과 짚으로 만든 전통 의복을 입고 집집마다 찾아가 게으름이나 나쁜 행동을 꾸짖는다. 남아게는 신의 사자로 여겨지며, 잘못을 경계하고 액운을 쫓아 새해의 행운을 가져온다고 믿어진다. 가족은 손님을 보호한다는 뜻에서 남아게에게 술과 음식을 대접한다. 2018년에는 ‘라이호신, 가면과 의상을 한 신의 방문 의례’의 일부로 유네스코 인류무형문화유산에 등재됐다.",
+    "twist": "남아게의 짚 의상에서 떨어진 짚은 가족이 조심스럽게 모아 건강과 행운을 기원하는 데 사용하기도 한다.",
+    "caveat": "남아게는 아키타현 오가반도를 중심으로 행해지는 지역 전통이며, 마을마다 가면·의상·호령 방식이 다르다.",
     "confidence": "high",
-    "verify_note": "Namahage Akita tradition, New Year's demon visit, Oga Peninsula, Namahage Museum",
+    "verify_note": "Namahage Oga Akita New Year's Eve UNESCO Raiho-shin straw costume demon masks",
     "created_at": "2026-10-12T10:35:50.032118+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "아키타현 오가반도에서는 새해 전날 밤, 귀신 모습의 방문자가 집집마다 찾아옵니다. 이 전통을 ‘남아게’라고 합니다. 남성들이 귀신 같은 가면과 짚으로 만든 전통 의복을 입습니다. 그리고 집집마다 찾아가 게으름이나 나쁜 행동을 꾸짖습니다. ‘우는 아이는 없나? 나쁜 아이는 없나?’라고 외치기도 합니다. 남아게는 신의 사자로 여겨집니다. 잘못을 경계하고 액운을 쫓아 새해의 행운을 가져온다고 믿어집니다. 가족은 손님을 보호한다는 뜻에서 남아게에게 술과 음식을 대접합니다. 남아게의 짚 의상에서 떨어진 짚은 가족이 조심스럽게 모아 건강과 행운을 기원하는 데 사용하기도 합니다. 2018년에는 유네스코 인류무형문화유산에 등재됐습니다. 남아게는 아키타현 오가반도를 중심으로 이어지는 특별한 지역 전통입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘아키타 현의 오가·오카모토 등 몇몇 마을’을 ‘오가반도 전역에서 행해지며 마을별 차이가 있다’로 수정했습니다.",
+      "‘대나무 갈대와 두꺼운 옷’을 ‘귀신 가면과 짚으로 만든 전통 의복’으로 수정했습니다.",
+      "‘큰 나무 방망이’를 ‘나무 칼을 든다’는 표현으로 수정했습니다.",
+      "‘게코!’라는 호령은 확인되지 않아, 실제로 ‘우는 아이나 나쁜 아이가 있느냐’고 묻는 방식으로 수정했습니다.",
+      "‘아이들을 겁주기보다 공동체 결속을 다진다’는 표현을, 게으름을 꾸짖고 액운을 쫓으며 새해 행운을 가져온다는 전통적 의미로 수정했습니다."
+    ],
+    "fact_risk": "low",
+    "fact_verifiability": "verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "아키타 남아게",
+    "title_line2": "새해 전날 귀신 방문",
+    "highlights": [
+      { "s": 1, "text": "귀신 가면 *남아게*" },
+      { "s": 3, "text": "짚 의상과 *나무 칼*" },
+      { "s": 5, "text": "액운을 *쫓는* 의례" }
+    ],
+    "image_queries": [
+      "Namahage Oga Akita Japan",
+      "Namahage demon mask straw costume",
+      "Namahage New Year Eve tradition",
+      "Oga Peninsula Akita village",
+      "Namahage Museum Akita",
+      "Japanese folk ritual masked deity"
+    ]
   },
   {
     "country": "Canada",
-    "topic": "Potlatch – Indigenous gift‑giving feast, once banned by law",
-    "hook": "캐나다 원주민은 선물을 주고받으며 부를 과시하는 파티를 열어요!",
-    "body": "서부 캐나다와 알래스카 원주민, 특히 클루트와 티크라루트 부족은 ‘포틀래치’라 불리는 대규모 환송 의식을 열어, 주최자가 음식, 물건, 심지어 토지를 무상으로 나눕니다. 1915년부터 1951년까지 캐나다 정부는 이 전통을 금지했으나, 현재는 문화 유산으로 복원돼 매년 수천 명이 참여합니다.",
-    "twist": "포틀래치에서는 주최자가 남긴 물건을 받은 사람은 그 물건을 다음 포틀래치 때 다시 나눠 주어야 하는 ‘재분배 의무’가 있습니다.",
-    "caveat": "포틀래치는 주로 북서부 원주민 공동체에서 진행되며, 모든 캐나다인에게 적용되는 관습은 아닙니다.",
-    "confidence": "high",
-    "verify_note": "Potlatch ban 1915 Canada Indian Act, potlatch revival, Northwest Coast indigenous ceremony",
+    "topic": "Potlatch – Indigenous gift-giving ceremony",
+    "hook": "캐나다 북서부 원주민 사회에서는 선물을 나누는 큰 의례가 공동체의 명예와 관계를 만든다!",
+    "body": "캐나다 태평양 북서부와 알래스카 일부 원주민 사회에서 행해지는 ‘포틀래치’는 이름, 지위, 결혼, 추모 등 중요한 사건을 확인하고 축하하는 의례적 연회다. 주최자는 음식과 물품, 때로는 돈이나 상징적 자산을 손님에게 나누며, 이를 통해 공동체 내 관계와 지위를 공개적으로 확인한다. 캐나다 정부는 1885년 인디언법 개정으로 포틀래치를 금지했고, 금지는 1951년에 폐지됐다. 이후 포틀래치는 여러 북서부 원주민 공동체에서 문화적 자긍심과 전통 회복의 상징으로 이어지고 있다.",
+    "twist": "포틀래치는 단순한 선물 파티가 아니라, 공동체가 중요한 이름과 지위, 역사적 사건을 함께 인정하는 공식 의례다.",
+    "caveat": "포틀래치는 주로 태평양 북서부 원주민 공동체에서 행해지며, 모든 캐나다 원주민 또는 모든 캐나다인에게 적용되는 관습은 아니다.",
+    "confidence": "medium",
+    "verify_note": "Potlatch Northwest Coast Indigenous ceremony Canada ban 1885 1951 Indian Act",
     "created_at": "2026-10-12T10:35:50.032118+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "캐나다 북서부 원주민 사회에서는 선물을 나누는 큰 의례가 공동체의 명예와 관계를 만듭니다. 이를 ‘포틀래치’라고 합니다. 포틀래치는 이름, 지위, 결혼, 추모 등 중요한 사건을 확인하고 축하하는 의례적 연회입니다. 주최자는 음식과 물품, 때로는 돈이나 상징적 자산을 손님에게 나눕니다. 이를 통해 공동체 내 관계와 지위를 공개적으로 확인합니다. 캐나다 정부는 1885년 인디언법 개정으로 포틀래치를 금지했습니다. 이 금지는 1951년에 폐지됐습니다. 이후 포틀래치는 여러 북서부 원주민 공동체에서 문화적 자긍심과 전통 회복의 상징으로 이어지고 있습니다. 포틀래치는 단순한 선물 파티가 아닙니다. 공동체가 중요한 이름과 지위, 역사적 사건을 함께 인정하는 공식 의례입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘클루트와 티크라루트 부족’은 확인되지 않는 명칭이므로, 태평양 북서부와 알래스카 일부 원주민 사회로 수정했습니다.",
+      "‘1915년부터 1951년까지 금지’를 ‘1885년 인디언법 개정으로 금지, 1951년 폐지’로 수정했습니다.",
+      "‘토지를 무상으로 나눈다’는 표현은 과장될 수 있어, 음식·물품·돈·상징적 자산 등을 나눈다는 표현으로 수정했습니다.",
+      "‘매년 수천 명이 참여한다’는 수치는 확인되지 않아 삭제했습니다.",
+      "‘받은 물건을 다음 포틀래치 때 반드시 다시 나눠야 한다’는 의무는 단순화하지 않고, 포틀래치가 지위와 관계를 공개적으로 확인하는 의례라는 핵심으로 수정했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "캐나다 포틀래치",
+    "title_line2": "선물로 확인하는 명예",
+    "highlights": [
+      { "s": 1, "text": "원주민 *포틀래치*" },
+      { "s": 3, "text": "선물로 *지위 확인*" },
+      { "s": 5, "text": "1885년 *금지* 후 부활" }
+    ],
+    "image_queries": [
+      "Potlatch ceremony Northwest Coast Indigenous",
+      "First Nations potlatch Canada",
+      "Indigenous gift giving ceremony Pacific Northwest",
+      "Haida Tlingit Kwakwaka wakw culture",
+      "Pacific Northwest Indigenous regalia",
+      "First Nations community gathering Canada"
+    ]
   },
   {
     "country": "Georgia",
-    "topic": "Supra – traditional feast with a tamada leading endless toasts",
-    "hook": "조지아에서는 한 사람이 수십 번의 건배를 이끌며 저녁을 이어갑니다!",
-    "body": "조지아의 전통 연회인 ‘수프라’에서는 ‘타마다’라 불리는 진행자가 손님들을 위해 연속적인 건배를 제안합니다. 각 건배는 삶, 사랑, 조상 등 특정 주제를 가지고 있으며, 한 건배만 해도 10분 이상 지속될 수 있습니다. 이 의식은 손님을 환대하고 공동체의 결속을 강화하는 핵심 요소입니다.",
-    "twist": "타마다가 건배를 마친 뒤에는 반드시 와인잔을 바닥에 부딪히는 의식이 있어, 이는 악령을 쫓는 의미를 가지고 있습니다.",
-    "caveat": "수프라는 주로 조지아 전역의 가정 및 행사에서 행해지지만, 모든 사회적 모임에서 반드시 타마다가 있는 것은 아닙니다.",
-    "confidence": "high",
-    "verify_note": "Georgian supra tradition tamada toasting wine ceremony, supra customs, Georgian feast",
+    "topic": "Supra – traditional feast led by a tamada",
+    "hook": "조지아의 전통 연회에서는 ‘타마다’가 건배의 흐름을 이끈다!",
+    "body": "조지아의 전통 연회인 ‘수프라’는 음식, 와인, 노래, 대화가 함께하는 긴 만남이다. ‘타마다’라 불리는 진행자가 건배의 순서와 주제를 정하며, 손님들은 차례로 축사를 더한다. 건배는 우정, 가족, 조상, 조국 등 다양한 주제를 다룰 수 있다. 수프라는 환대와 공동체적 유대를 표현하는 중요한 문화이지만, 모든 조지아 식사나 모임에 반드시 타마다가 있는 것은 아니다.",
+    "twist": "타마다는 단순히 잔을 드는 사람이 아니라, 연회의 분위기와 이야기의 흐름을 이끄는 존경받는 역할이다.",
+    "caveat": "수프라와 타마다의 방식은 지역·가족·행사 성격에 따라 다르며, 건배의 횟수나 길이에 대한 고정 규칙은 없다.",
+    "confidence": "medium",
+    "verify_note": "Georgian supra feast tamada toasting tradition Georgian wine culture",
     "created_at": "2026-10-12T10:35:50.032118+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "조지아의 전통 연회에서는 ‘타마다’가 건배의 흐름을 이끕니다. 이 연회를 ‘수프라’라고 합니다. 수프라는 음식, 와인, 노래, 대화가 함께하는 긴 만남입니다. 타마다는 건배의 순서와 주제를 정합니다. 손님들은 차례로 축사를 더합니다. 건배는 우정, 가족, 조상, 조국 등 다양한 주제를 다룰 수 있습니다. 타마다는 단순히 잔을 드는 사람이 아닙니다. 연회의 분위기와 이야기의 흐름을 이끄는 존경받는 역할입니다. 수프라는 환대와 공동체적 유대를 표현하는 중요한 문화입니다. 다만 모든 조지아 식사나 모임에 반드시 타마다가 있는 것은 아닙니다. 건배의 횟수나 길이에 대한 고정 규칙도 없습니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘한 사람이 수십 번의 건배를 이끈다’, ‘한 건배가 10분 이상 지속된다’는 수치는 일반화라 삭제하고, 타마다가 건배의 흐름을 이끈다는 사실로 수정했습니다.",
+      "‘타마다가 건배 후 반드시 와인잔을 바닥에 부딪히며 악령을 쫓는다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘모든 사회적 모임에서 타마다가 있다’는 오해를 피하기 위해, 모든 모임에 반드시 있는 것은 아니라는 주의를 추가했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "조지아 수프라",
+    "title_line2": "타마다가 이끄는 건배",
+    "highlights": [
+      { "s": 1, "text": "조지아 *수프라*" },
+      { "s": 3, "text": "타마다의 *건배*" },
+      { "s": 5, "text": "와인과 *환대*" }
+    ],
+    "image_queries": [
+      "Georgian supra feast table wine",
+      "Georgian tamada toast tradition",
+      "Georgia traditional feast food wine",
+      "Georgian wine glasses toast",
+      "Tbilisi traditional restaurant supra",
+      "Georgian family feast celebration"
+    ]
   },
   {
     "country": "Rwanda",
-    "topic": "Umuganda – 월간 공동 청소·공공 작업",
-    "hook": "매달 마지막 토요일, 라와다 전역이 하루 종일 거리와 학교를 청소합니다!",
-    "body": "라와다에서는 ‘우무가구다’라는 전통이 법으로 정해져 있어, 시민들이 오전 8시부터 오후 5시까지 공공 장소를 청소하거나 도로 보수, 나무 심기 등 공동 작업에 참여합니다. 이 날은 학교도 쉬고, 기업도 직원들을 현장에 파견합니다.",
-    "twist": "심지어 경찰과 군인도 청소 도구를 들고 거리에서 일손을 돕습니다.",
-    "caveat": "우무가구다는 라와다 전역의 대부분 지방 자치구에서 시행되며, 개인이 반드시 참여해야 하는 것은 아니지만 대부분의 주민이 자발적으로 동참합니다.",
-    "confidence": "high",
-    "verify_note": "Rwanda Umuganda law 1999 community service day",
+    "topic": "Umuganda – monthly community work morning",
+    "hook": "르완다에서는 매달 마지막 토요일 오전, 많은 사람이 공공 청소와 공공 작업에 참여한다!",
+    "body": "르완다의 ‘우무간다’는 보통 매달 마지막 토요일 오전에 진행되는 공동체 노동이다. 시민들은 도로 청소, 배수로 정비, 나무 심기, 공공시설 보수 등에 참여하도록 권장된다. 18세에서 65세 사이의 건강한 성인은 참여가 요구되며, 사업체와 학교는 보통 오전 늦게까지 문을 닫는다. 우무간다 이후에는 지역사회 회의나 대화가 이어지기도 한다.",
+    "twist": "우무간다는 단순한 청소일이 아니라, 주민들이 지역 문제를 함께 논의하고 해결책을 만드는 시간이기도 하다.",
+    "caveat": "참여 범위와 집행 방식은 지방자치단체와 시기에 따라 다를 수 있으며, 건강상 사유가 있는 사람은 예외가 인정될 수 있다.",
+    "confidence": "medium",
+    "verify_note": "Rwanda Umuganda last Saturday morning community work 8am noon participation",
     "created_at": "2026-10-12T10:36:14.786326+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "르완다에서는 매달 마지막 토요일 오전, 많은 사람이 공공 청소와 공공 작업에 참여합니다. 이를 ‘우무간다’라고 합니다. 시민들은 도로 청소, 배수로 정비, 나무 심기, 공공시설 보수 등에 참여합니다. 18세에서 65세 사이의 건강한 성인은 참여가 요구됩니다. 사업체와 학교는 보통 오전 늦게까지 문을 닫습니다. 우무간다는 단순한 청소일이 아닙니다. 주민들이 지역 문제를 함께 논의하고 해결책을 만드는 시간이기도 합니다. 우무간다 이후에는 지역사회 회의나 대화가 이어지기도 합니다. 참여 범위와 집행 방식은 지방자치단체와 시기에 따라 다를 수 있습니다. 하지만 공동체가 함께 지역을 가꾸는 르완다의 대표적 전통입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘하루 종일’, ‘오전 8시부터 오후 5시까지’는 부정확하므로, 보통 마지막 토요일 오전에 진행된다는 사실로 수정했습니다.",
+      "‘학교도 쉬고 기업도 직원들을 현장에 파견한다’는 절대 표현을 ‘사업체와 학교는 보통 오전 늦게까지 문을 닫는다’로 수정했습니다.",
+      "‘개인이 반드시 참여해야 하는 것은 아니지만 대부분 자발적으로 동참한다’는 모순된 표현을, 건강한 성인은 참여가 요구된다는 규정으로 수정했습니다.",
+      "‘경찰과 군인도 청소 도구를 들고 일손을 돕는다’는 주장은 일반적 사실로 확인되지 않아 삭제했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "르완다 우무간다",
+    "title_line2": "토요일 오전 공동 노동",
+    "highlights": [
+      { "s": 1, "text": "매달 마지막 *토요일*" },
+      { "s": 3, "text": "도로와 *공공시설*" },
+      { "s": 5, "text": "지역 문제 *함께 논의*" }
+    ],
+    "image_queries": [
+      "Rwanda Umuganda community cleaning",
+      "Rwanda community service day",
+      "Rwanda volunteers cleaning street",
+      "Kigali community work Rwanda",
+      "Rwanda tree planting volunteers",
+      "Rwanda local community meeting"
+    ]
   },
   {
     "country": "Japan",
-    "topic": "Nagoro 마을의 인형 교체 전통",
-    "hook": "이 작은 마을엔 사람 대신 인형이 길을 걷습니다!",
-    "body": "일본 시코쿠 현 나고로 마을은 인구 감소로 30여 명 남은 주민이 1980년대부터 400여 개의 실물 크기 인형을 만들고 거리마다 배치했습니다. 인형들은 실제 주민들의 일상 복장을 입고, 마을 회의나 축제 때 교체됩니다.",
-    "twist": "주민들은 인형에게 이름표와 휴대폰 번호까지 적어, 관광객이 인형에게 사진을 찍어 SNS에 올리면 마을 홍보가 됩니다.",
-    "caveat": "인형 설치는 나고로 마을(시코쿠 현) 주민들의 자발적인 프로젝트이며, 인구 감소가 심한 일부 시골 마을에 한정됩니다.",
-    "confidence": "high",
-    "verify_note": "Nagoro dolls population decline project Tokushima Japan",
+    "topic": "Nagoro doll village in Tokushima",
+    "hook": "일본 시코쿠의 작은 마을에는 사람 대신 인형이 마을 풍경을 채운다!",
+    "body": "도쿠시마현 나가로 마을은 인구 감소가 심한 시코쿠의 작은 마을이다. 주민 츠키미 아야노는 떠나거나 세상을 떠난 사람들을 떠올리기 위해 실물 크기의 인형을 만들기 시작했다. 인형들은 학교 교실, 버스정류장, 들판, 작업장 등 마을 곳곳에 배치돼 일상의 장면을 재현한다. 이 프로젝트는 공식적인 마을 정책이 아니라 한 주민의 창작 활동에서 시작된 사례다.",
+    "twist": "인형은 단순한 관광 소품이 아니라, 사라져 가는 마을의 기억과 사람들의 이야기를 남기려는 시도로 알려져 있다.",
+    "caveat": "인형의 수와 배치는 시기에 따라 달라지며, 나가로는 일본 전역의 일반적인 풍경이 아니라 특정 마을의 특수한 사례다.",
+    "confidence": "medium",
+    "verify_note": "Nagoro doll village Tokushima Tsukimi Ayano population decline art project",
     "created_at": "2026-10-12T10:36:14.786326+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "일본 시코쿠의 작은 마을에는 사람 대신 인형이 마을 풍경을 채웁니다. 이곳은 도쿠시마현 나가로 마을입니다. 인구 감소가 심한 시코쿠의 작은 마을입니다. 주민 츠키미 아야노는 떠나거나 세상을 떠난 사람들을 떠올리기 위해 실물 크기의 인형을 만들기 시작했습니다. 인형들은 학교 교실, 버스정류장, 들판, 작업장 등 마을 곳곳에 배치됐습니다. 인형들은 일상의 장면을 재현합니다. 이 프로젝트는 공식적인 마을 정책이 아니라 한 주민의 창작 활동에서 시작됐습니다. 인형은 단순한 관광 소품이 아닙니다. 사라져 가는 마을의 기억과 사람들의 이야기를 남기려는 시도로 알려져 있습니다. 다만 인형의 수와 배치는 시기에 따라 달라집니다. 나가로는 일본 전역의 풍경이 아니라, 특정 마을의 특수한 사례입니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘1980년대부터 400여 개의 인형을 만들었다’는 연도·수치는 확인이 어려워 삭제하고, 주민 츠키미 아야노가 만들기 시작했다는 사실로 수정했습니다.",
+      "‘마을 회의나 축제 때 교체된다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘인형에게 이름표와 휴대폰 번호를 적는다’는 주장은 확인되지 않아 삭제했습니다.",
+      "‘사람 대신 인형이 길을 걷는다’는 과장을, 마을 곳곳에 인형이 배치돼 일상 장면을 재현한다는 표현으로 수정했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "일본 나가로 마을",
+    "title_line2": "사람 대신 인형 이야기",
+    "highlights": [
+      { "s": 1, "text": "시코쿠 *나가로*" },
+      { "s": 3, "text": "실물 크기 *인형*" },
+      { "s": 5, "text": "사라지는 *마을 기억*" }
+    ],
+    "image_queries": [
+      "Nagoro doll village Japan",
+      "Nagoro Tokushima dolls",
+      "Tsukimi Ayano Nagoro dolls",
+      "Japanese rural village population decline",
+      "Nagoro school dolls Japan",
+      "Shikoku rural village Japan"
+    ]
   },
   {
     "country": "Japan",
-    "topic": "Yukigassen – 공식 눈싸움 경기",
-    "hook": "일본에서는 눈싸움이 올림픽 종목처럼 공식 경기로 진행됩니다!",
-    "body": "홋카이도 삿포로 근교의 ‘아소키마’에서 매년 ‘Yukigassen’ 대회가 열리는데, 7인 팀이 헬멧·보호장비를 착용하고 규정된 눈덩이와 경기장을 사용해 3분간 전투합니다. 경기장은 ‘아이스 벽’과 ‘포인트’가 구획된 전술 맵 형태이며, 승리 팀은 상대 팀보다 더 많은 ‘포인트’를 획득해야 합니다.",
-    "twist": "이 대회는 현재 전 세계 20여 개국이 참가하는 ‘Yukigassen World Cup’으로 성장했으며, 심지어 남미와 유럽 팀도 매년 일본을 찾아 겨울 스포츠를 겨룹니다.",
-    "caveat": "눈이 충분히 내리는 홋카이도와 일부 동북 지방에서만 개최되며, 일본 전역에서 일반적인 겨울 스포츠는 아닙니다.",
-    "confidence": "high",
-    "verify_note": "Yukigassen, snowball fighting competition Japan, Hokkaido Yukigassen World Cup, official rules",
+    "topic": "Yukigassen – organized snowball fight",
+    "hook": "일본 홋카이도에서는 눈싸움도 규칙과 심판이 있는 경기로 치른다!",
+    "body": "‘유키가센’은 일본 홋카이도 소베쓰정 쇼와신잔 일대에서 시작된 조직적인 눈덩이 경기다. 7인 팀이 헬멧 등 보호장비를 착용하고, 정해진 경기장에서 제한 시간 동안 상대 선수를 맞히거나 상대 깃발을 빼앗아 승부를 겨룬다. 눈덩이 개수와 크기, 경기장 구조, 심판 규칙이 정해져 있어 단순한 눈싸움과는 다른 스포츠다.",
+    "twist": "경기에서는 상대 선수를 눈덩이로 맞히면 탈락시키거나, 상대 팀의 깃발을 빼앗아 승리할 수 있다.",
+    "caveat": "유키가센은 홋카이도를 중심으로 발전한 겨울 스포츠이며, 일본 전역에서 일상적으로 행해지는 종목은 아니다.",
+    "confidence": "medium",
+    "verify_note": "Yukigassen snowball fight Japan Hokkaido Sobetsu Showa Shinzan rules 7 players flags",
     "created_at": "2026-10-12T10:36:40.992529+00:00",
-    "status": "unverified"
+    "status": "verified",
+    "narration": "일본 홋카이도에서는 눈싸움도 규칙과 심판이 있는 경기로 치릅니다. 이를 ‘유키가센’이라고 합니다. 유키가센은 홋카이도 소베쓰정 쇼와신잔 일대에서 시작된 조직적인 눈덩이 경기입니다. 7인 팀이 헬멧 등 보호장비를 착용합니다. 정해진 경기장에서 제한 시간 동안 승부를 겨룹니다. 상대 선수를 눈덩이로 맞히면 탈락시킬 수 있습니다. 또는 상대 팀의 깃발을 빼앗아 승리할 수도 있습니다. 눈덩이 개수와 크기, 경기장 구조, 심판 규칙이 정해져 있습니다. 그래서 단순한 눈싸움과는 다른 스포츠입니다. 유키가센은 홋카이도를 중심으로 발전한 겨울 스포츠입니다. 일본 전역에서 일상적으로 행해지는 종목은 아닙니다.",
+    "fact_checked": true,
+    "fact_issues": [
+      "‘삿포로 근교의 아소키마’는 부정확한 지명이므로, 홋카이도 소베쓰정 쇼와신잔 일대로 수정했습니다.",
+      "‘올림픽 종목처럼 공식 경기’라는 과장을 ‘규칙과 심판이 있는 조직적 경기’로 수정했습니다.",
+      "‘아이스 벽과 포인트가 구획된 전술 맵’이라는 표현을, 정해진 경기장과 깃발·규칙으로 수정했습니다.",
+      "‘전 세계 20여 개국 참가, 남미·유럽 팀이 매년 방문’은 확인되지 않아 삭제했습니다.",
+      "승리 조건을 상대 선수 적중 또는 깃발 탈취로 명확히 했습니다."
+    ],
+    "fact_risk": "medium",
+    "fact_verifiability": "partially verified",
+    "fact_applied": true,
+    "reject_reason": "",
+    "title_line1": "일본 유키가센",
+    "title_line2": "규칙 있는 눈싸움",
+    "highlights": [
+      { "s": 1, "text": "홋카이도 *유키가센*" },
+      { "s": 3, "text": "7인 팀 *눈싸움*" },
+      { "s": 5, "text": "깃발을 *빼앗으면* 승리" }
+    ],
+    "image_queries": [
+      "Yukigassen snowball fight Japan",
+      "Yukigassen Hokkaido competition",
+      "Snowball fight team sport Japan",
+      "Showa Shinzan Hokkaido winter",
+      "Yukigassen players helmets snowballs",
+      "Japanese winter sports festival"
+    ]
   }
+]
 ]
