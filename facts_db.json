@@ -5774,7 +5774,7 @@
     "confidence": "medium",
     "verify_note": "Potlatch Northwest Coast Indigenous ceremony Canada ban 1885 1951 Indian Act",
     "created_at": "2026-10-12T10:35:50.032118+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "캐나다 북서부 원주민 사회에서는 선물을 나누는 큰 의례가 공동체의 명예와 관계를 만듭니다. 이를 ‘포틀래치’라고 합니다. 포틀래치는 이름, 지위, 결혼, 추모 등 중요한 사건을 확인하고 축하하는 의례적 연회입니다. 주최자는 음식과 물품, 때로는 돈이나 상징적 자산을 손님에게 나눕니다. 이를 통해 공동체 내 관계와 지위를 공개적으로 확인합니다. 캐나다 정부는 1885년 인디언법 개정으로 포틀래치를 금지했습니다. 이 금지는 1951년에 폐지됐습니다. 이후 포틀래치는 여러 북서부 원주민 공동체에서 문화적 자긍심과 전통 회복의 상징으로 이어지고 있습니다. 포틀래치는 단순한 선물 파티가 아닙니다. 공동체가 중요한 이름과 지위, 역사적 사건을 함께 인정하는 공식 의례입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5804,7 +5804,61 @@
         "text": "1885년 *금지* 후 부활"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Indigenous potlatch ceremony",
+      "Potlatch gift exchange",
+      "Potlatch revival after ban",
+      "19th century Canadian law book",
+      "Potlatch cultural celebration",
+      "Potlatch ceremonial gathering"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0119_Canada_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0119_Canada_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Indigenous potlatch ceremony",
+      "Potlatch gift exchange",
+      "Potlatch revival after ban",
+      "19th century Canadian law book",
+      "Potlatch cultural celebration",
+      "Potlatch ceremonial gathering"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "MARXCINE",
+        "page": "https://pixabay.com/photos/man-farmer-harvest-indigenous-corn-8548692/"
+      },
+      {
+        "scene": 2,
+        "user": "ua_Bob_Dmyt_ua",
+        "page": "https://pixabay.com/photos/christmas-background-4669449/"
+      },
+      {
+        "scene": 3,
+        "user": "Katerwursty",
+        "page": "https://pixabay.com/photos/castle-monument-park-building-6566978/"
+      },
+      {
+        "scene": 4,
+        "user": "profnshst",
+        "page": "https://pixabay.com/photos/poetry-literature-candle-pen-table-7509085/"
+      },
+      {
+        "scene": 5,
+        "user": "MichaelCatadman",
+        "page": "https://pixabay.com/photos/festival-dance-costume-culture-10332845/"
+      },
+      {
+        "scene": 6,
+        "user": "jatocreate",
+        "page": "https://pixabay.com/photos/church-catholic-cathedral-aisle-7744547/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0119_Canada.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Rwanda",
@@ -6066,7 +6120,7 @@
     ],
     "image_queries": []
   },
- {
+  {
     "country": "Russia",
     "topic": "Banya (러시아 사우나) – 베니크(venik)로 몸을 두드리는 전통",
     "hook": "러시아 사우나에서는 나무가지로 몸을 두드린다?",
