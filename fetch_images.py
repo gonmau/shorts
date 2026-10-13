@@ -43,12 +43,14 @@ def search(session, key, query, min_size):
     return r.json().get("hits", [])
 
 
-def pick(session, key, query, used):
+def pick(session, key, query, used, anchor=""):
     """검색어 -> 아직 안 쓴 사진 1장 (hit). 결과가 없으면 검색어를 줄여서 다시 시도."""
     words = query.split()
     attempts = [(query, 800), (query, 0)]
     if len(words) > 2:
         attempts.append((" ".join(words[:2]), 0))
+    if anchor and anchor != query:  # 그래도 없으면 소재 핵심어로 찾아 최소한 주제와 관련된 사진을 쓴다
+        attempts.append((anchor, 0))
     for q, min_size in attempts:
         for hit in search(session, key, q, min_size):
             if hit["id"] not in used and hit.get("largeImageURL"):
@@ -80,6 +82,7 @@ def fetch_item(session, key, idx, item, force):
     if done is not None and done != queries:
         force = True
         print("    이미지 검색어가 바뀌어 새로 받습니다")
+    anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
     used, credits, got = set(), [], 0
     for n, query in enumerate(queries, start=1):
         dest = folder / f"scene_{n:02d}.png"
@@ -87,7 +90,7 @@ def fetch_item(session, key, idx, item, force):
             got += 1
             continue
         try:
-            hit = pick(session, key, query, used)
+            hit = pick(session, key, query, used, anchor)
             if not hit:
                 print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
                 continue

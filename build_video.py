@@ -26,6 +26,7 @@ from moviepy.editor import (
 
 from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
 from common import split_sentences, strip_marks, visual_dir
+from scenes import scene_groups
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -519,19 +520,51 @@ def load_scene_sources(visual_paths, country, topic):
     return srcs, real
 
 
-def make_image_box_clip(srcs, audio_duration, zoom=None, xfade=None):
-    """6장면 전체를 하나의 클립으로 만든다 (장면별 모션 + 장면 전환 크로스페이드)."""
+def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6):
+    """장면 시작 시각 목록. 장면 k는 대본의 k번째 문장 묶음을 읽는 동안 보인다.
+    (핵심 문구와 같은 방식으로 글자 수 비율 -> 실제 음성 시간으로 환산)"""
+    sents = split_sentences(narration)
+    groups = scene_groups(sents, n)
+    if not groups or not timings:
+        return [i * audio_duration / n for i in range(n)]
+    total = sum(_nospace(x) for x in sents) or 1
+    cum = [0]
+    for x in sents:
+        cum.append(cum[-1] + _nospace(x))
+    starts = [0.0]
+    for a, _b in groups[1:]:
+        starts.append(time_at_fraction(cum[a - 1] / total, timings))
+    # 너무 짧은 장면 방지 (단조 증가 + 최소 길이)
+    for i in range(1, len(starts)):
+        starts[i] = max(starts[i], starts[i - 1] + min_len)
+    over = starts[-1] - (audio_duration - min_len)
+    if over > 0:  # 뒤쪽이 넘치면 전체를 균등하게 당긴다
+        starts = [i * audio_duration / len(starts) for i in range(len(starts))]
+    return starts
+
+
+def make_image_box_clip(srcs, audio_duration, zoom=None, xfade=None, starts=None):
+    """장면 전체를 하나의 클립으로 만든다 (장면별 모션 + 장면 전환 크로스페이드).
+    starts가 있으면 그 시각에 장면이 바뀌고, 없으면 같은 길이로 나눈다."""
     zoom = ZOOM if zoom is None else zoom
     xfade = XFADE if xfade is None else xfade
 
     n = len(srcs)
-    sd = audio_duration / n
-    xf = min(max(xfade, 0.0), sd * 0.4)
+    if not starts or len(starts) < n:
+        starts = [i * audio_duration / n for i in range(n)]
+    starts = list(starts[:n])
+    ends = starts[1:] + [audio_duration]
 
     def frame(t):
-        i = min(int(t / sd), n - 1)
-        local = t - i * sd
-        cur = render_motion_frame(srcs[i], i, local / sd, zoom)
+        i = n - 1
+        for k in range(n):
+            if t < ends[k]:
+                i = k
+                break
+        sd = max(ends[i] - starts[i], 0.01)
+        local = t - starts[i]
+        xf = min(max(xfade, 0.0), sd * 0.4)
+        cur = render_motion_frame(srcs[i], i, min(local / sd, 1.0), zoom)
         if i > 0 and xf > 0 and local < xf:
             w = _smooth(local / xf)
             prev = render_motion_frame(srcs[i - 1], i - 1, 1.0, zoom)
@@ -577,19 +610,21 @@ def build_one(idx, item):
 
     timings = load_timings(timing_path, audio_duration, script)
 
-    # 6개 장면을 정확히 전체 오디오에 배분
-    scene_duration = audio_duration / SCENE_COUNT
+    # 장면(이미지)은 대본 문장 묶음에 맞춰 바뀐다 (그 문장을 읽는 동안 그 장면 이미지)
+    starts = scene_starts(script, timings, audio_duration, SCENE_COUNT)
+    n_scenes = len(starts)
+    srcs = srcs[:n_scenes]
+    scene_duration = audio_duration / max(n_scenes, 1)
 
     print(f"오디오 길이: {audio_duration:.2f}초")
-    print(f"장면당 길이: {scene_duration:.2f}초")
     print(f"모션: 줌 {ZOOM*100:.0f}% / 크로스페이드 {XFADE:.2f}초")
 
-    for i in range(SCENE_COUNT):
-        start = i * scene_duration
-        end = audio_duration if i == SCENE_COUNT - 1 else start + scene_duration
+    for i in range(n_scenes):
+        start = starts[i]
+        end = audio_duration if i == n_scenes - 1 else starts[i + 1]
         print(f"  장면 {i+1}: {start:.2f}s ~ {end:.2f}s")
 
-    scene_clips = [make_image_box_clip(srcs, audio_duration)]
+    scene_clips = [make_image_box_clip(srcs, audio_duration, starts=starts)]
 
     # 배경 템플릿(프로필/제목/크레딧/하단바) + 이미지 박스 + 모서리 오버레이
     title1, title2 = split_title(item)

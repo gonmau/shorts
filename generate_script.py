@@ -9,6 +9,7 @@ from pathlib import Path
 from groq import Groq, RateLimitError
 
 from common import split_sentences, strip_marks, pending_render
+from scenes import scene_groups
 
 
 DB_FILE = Path("facts_db.json")
@@ -501,27 +502,44 @@ def generate_highlights(client, models, fact, narration, retries=3):
 
 
 def build_query_prompt(fact, narration):
+    sents = split_sentences(narration)
+    groups = scene_groups(sents, 6)
+    hl = {h.get("s"): strip_marks(h.get("text", "")) for h in (fact.get("highlights") or []) if isinstance(h, dict)}
+    blocks = []
+    for k, (a, b) in enumerate(groups, start=1):
+        text = " ".join(sents[a - 1:b])
+        marks = [hl[n] for n in range(a, b + 1) if n in hl]
+        line = f"Scene {k} (sentences {a}-{b}): {text}"
+        if marks:
+            line += f"\n   On-screen key phrase while this is read: {' / '.join(marks)}"
+        blocks.append(line)
+    subject = str(fact.get("verify_note") or fact.get("topic") or "").strip()
     return f"""
-You pick stock photos for a short vertical video. Read the Korean narration and
-write 6 English search queries for a free stock photo site (Pexels), one per scene,
-following the story order.
+You pick stock photos for a short vertical video. The narration is split into scenes;
+each scene's photo is shown WHILE that scene's sentences are being read, so the photo
+must show what those sentences are about. Write one English search query per scene
+for a free stock photo site (Pixabay).
 
 [Country] {fact.get("country", "")}
 [Topic] {fact.get("topic", "")}
-[Narration]
-{narration}
+[Main subject keywords] {subject}
+
+{chr(10).join(blocks)}
 
 Rules:
-1. Exactly 6 queries, 2 to 5 words each, plain English.
+1. Exactly {len(groups)} queries, one per scene, in order. 2 to 5 words each, plain English.
 2. Each query must describe something concrete that exists in a real photo
    (place, object, animal, food, activity). No abstract words like "freedom" or "culture".
-3. Include the country or a well-known city/landmark name in at least 3 of the queries.
-4. No people's names, brands, or things that need readable text (signs, posters).
-5. Output only JSON: {{"queries": ["...", "...", "...", "...", "...", "..."]}}
+3. The query must match what THAT scene's sentences say. If a scene has an on-screen key
+   phrase, its query must name that key phrase's main subject literally.
+4. Use the main subject (or the country/landmark) in at least 4 of the queries so the topic
+   is recognizable in most scenes; vary the rest with related concrete things.
+5. No people's names, brands, or things that need readable text (signs, posters).
+6. Output only JSON: {{"queries": [{", ".join('"..."' for _ in groups)}]}}
 """.strip()
 
 
-def parse_queries(text):
+def parse_queries(text, n=6):
     obj = extract_json(text)
     items = obj.get("queries") if isinstance(obj, dict) else obj
     if not isinstance(items, list):
@@ -531,14 +549,15 @@ def parse_queries(text):
         q = " ".join(str(q).split())
         if 3 <= len(q) <= 60 and re.fullmatch(r"[A-Za-z0-9 ,'\-]+", q):
             out.append(q)
-    return out[:6] if len(out) >= 6 else None
+    return out[:n] if len(out) >= n else None
 
 
 def generate_queries(client, models, fact, narration, retries=3):
     return ask_models(
         client, models,
         "You are a careful photo editor. Output JSON only.",
-        build_query_prompt(fact, narration), 500, retries, parse_queries,
+        build_query_prompt(fact, narration), 600, retries,
+        lambda t: parse_queries(t, len(scene_groups(split_sentences(narration), 6)) or 6),
     )
 
 
