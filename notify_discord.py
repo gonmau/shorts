@@ -50,7 +50,7 @@ def built_items():
     return out
 
 
-def main():
+def _main():
     url = os.environ["DISCORD_WEBHOOK_URL"]
     st, stage = os.environ.get("JOB_STATUS", ""), os.environ.get("STAGE", "")
     run_url = os.environ.get("RUN_URL", "")
@@ -81,6 +81,18 @@ def main():
         th = Path("thumbnails") / (Path(name).stem + ".png")
         if th.exists():
             post_image(url, th, "🖼 썸네일 (길게 눌러 저장)")
+
+
+def main():
+    try:
+        _main()
+    finally:
+        # 실행 결과 뒤에 "지금 render/prepare 가능한 개수" 현황을 붙인다
+        try:
+            from status_report import summary
+            post(os.environ["DISCORD_WEBHOOK_URL"], summary(load_db(), int(os.environ.get("START", "0") or 0)))
+        except Exception as e:
+            print("현황 전송 실패:", e)
 
 
 if __name__ == "__main__":
