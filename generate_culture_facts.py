@@ -23,6 +23,7 @@
 """
 
 import json
+import time
 import os
 import argparse
 from datetime import datetime, timezone
@@ -112,7 +113,7 @@ def build_prompt(count: int, used: str) -> str:
 
 
 BATCH_SIZE = 4  # Groq TPM 8,000 제한을 고려해 요청 크기를 줄임
-MAX_COMPLETION_TOKENS = 6000
+MAX_COMPLETION_TOKENS = 5000
 
 
 def extract_json_array(text: str) -> list[dict]:
@@ -127,12 +128,30 @@ def extract_json_array(text: str) -> list[dict]:
 
 def generate_batch(client: Groq, model: str, count: int, used: str) -> list[dict]:
     """작은 배치로 소재를 생성한다."""
-    completion = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": build_prompt(count, used)}],
-        max_completion_tokens=MAX_COMPLETION_TOKENS,
-        temperature=0.8,
-    )
+    # 요청 토큰(프롬프트 + 최대 출력)이 Groq 분당 한도(8,000)를 넘으면 413이 나므로
+    # 이미 쓴 소재 목록을 최근 것만 쓰고, 그래도 크면 더 줄여서 한 번 더 시도한다.
+    completion = None
+    last_err = None
+    for lines, max_tok in ((40, MAX_COMPLETION_TOKENS), (20, 3500)):
+        ctx = "\n".join(used.splitlines()[-lines:])
+        try:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": build_prompt(count, ctx)}],
+                max_completion_tokens=max_tok,
+                temperature=0.8,
+            )
+            break
+        except Exception as e:  # 한도 초과/일시 오류는 배치 실패로 처리해 전체 실행이 죽지 않게 한다
+            last_err = e
+            msg = str(e)
+            if "413" in msg or "rate_limit" in msg or "429" in msg:
+                print(f"  [Groq 한도] 요청을 줄여 다시 시도합니다: {msg[:120]}")
+                time.sleep(20)
+                continue
+            raise ValueError(f"Groq 호출 실패: {msg[:200]}")
+    if completion is None:
+        raise ValueError(f"Groq 호출 실패: {str(last_err)[:200]}")
 
     text = completion.choices[0].message.content or ""
     finish_reason = completion.choices[0].finish_reason
