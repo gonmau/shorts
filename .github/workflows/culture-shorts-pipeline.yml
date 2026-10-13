@@ -107,7 +107,7 @@ jobs:
           print(sum(1 for f in db if f.get('status') in ('unverified', 'verified')))
           PY
           PENDING=$(cat pending.txt); echo "대기 소재: $PENDING"
-          if [ "$PENDING" -lt 10 ]; then python generate_culture_facts.py --count 12; fi
+          if [ "$PENDING" -lt 10 ]; then python generate_culture_facts.py --count 12 || echo "소재 보충 실패 - 이번 실행은 계속 진행합니다"; fi
 
       - name: 자동 승인 (선택)
         if: ${{ env.STAGE != 'render' && github.event.inputs.auto_verify == 'true' }}
