@@ -37,7 +37,7 @@ on:
         default: "2"
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
-        default: "56"
+        default: "106"
       auto_verify:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
