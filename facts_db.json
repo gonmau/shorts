@@ -5011,7 +5011,7 @@
     "twist": "과거에는 원뿔을 학교의 ‘슐터테 나무’에 걸어 두고, 아이들이 자기 이름이 적힌 원뿔을 찾아 가져가는 방식으로 즐겼다.",
     "verify_note": "German Schultüte school cone first day of school history Saxony Thuringia",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "독일 아이들은 첫 등교 날, 사탕과 선물이 가득한 큰 원뿔을 받습니다. 이것을 ‘슐터테’라고 부릅니다. 부모나 조부모가 사탕, 초콜릿, 장난감, 연필 같은 학용품을 넣어 줍니다. 이 전통은 18세기 말과 19세기 초 중부 독일, 특히 작센과 튀링겐 지역에서 시작된 것으로 알려져 있습니다. 이후 독일 전역으로 퍼졌습니다. 아이들은 보통 첫 등교일이 끝난 뒤에야 원뿔을 열어 볼 수 있습니다. 과거에는 원뿔을 학교의 ‘슐터테 나무’에 걸어 두기도 했습니다. 아이들은 자기 이름이 적힌 원뿔을 찾아 가져갔습니다. 슐터테는 학교 생활을 조금 더 달콤하게 시작하게 해 주는 독일의 대표적인 등학교 의례입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5046,7 +5046,54 @@
       "Colorful Schultüte closeup",
       "German elementary school first day",
       "Schultüte candy school supplies"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0111_Germany_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0111_Germany_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "German Schultüte first day of school",
+      "Schultüte school cone children Germany",
+      "German first grader school cone",
+      "Colorful Schultüte closeup",
+      "German elementary school first day",
+      "Schultüte candy school supplies"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499055/"
+      },
+      {
+        "scene": 2,
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/school-back-to-school-1655324/"
+      },
+      {
+        "scene": 3,
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499049/"
+      },
+      {
+        "scene": 4,
+        "user": "Kodl68",
+        "page": "https://pixabay.com/photos/forest-sapling-bokeh-new-growth-10394495/"
+      },
+      {
+        "scene": 5,
+        "user": "rawpixel",
+        "page": "https://pixabay.com/photos/kids-painting-school-drawing-draw-2985782/"
+      },
+      {
+        "scene": 6,
+        "user": "AlexanderStein",
+        "page": "https://pixabay.com/photos/colorful-papers-hues-colors-182220/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0111_Germany.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Madagascar",
@@ -5058,7 +5105,7 @@
     "confidence": "medium",
     "verify_note": "Famadihana Madagascar Merina turning of the bones ancestral rewrapping ceremony",
     "created_at": "2026-10-12T10:34:46.283007+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "마다가스카르의 일부 가족은 선조의 유해를 다시 포장하며 음악과 춤으로 기립니다. 특히 중부 고원의 메리나 사회 등에서 행해지는 이 의례를 ‘파마디하나’라고 합니다. ‘뼈를 돌린다’라는 뜻을 지닙니다. 가족과 친지는 선조의 유해를 무덤에서 꺼내 새 천으로 다시 감쌉니다. 그리고 함께 음악과 춤으로 조상을 기립니다. 이는 조상에 대한 존중과 가족의 유대를 확인하는 중요한 행사로 여겨집니다. 새 천으로 유해를 다시 감싸는 행위는 조상을 돌보고 가족과의 관계를 이어간다는 상징적 의미를 지닙니다. 다만 의례의 시기와 빈도는 가족, 지역, 경제 상황에 따라 다릅니다. 또한 파마디하나는 마다가스카르 전역의 보편적 장례 문화가 아니라, 주로 일부 공동체에서 행해지는 전통입니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -5094,7 +5141,54 @@
       "Merina people Madagascar",
       "Madagascar rural village",
       "Malagasy music dance celebration"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0112_Madagascar_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0112_Madagascar_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Madagascar highlands landscape",
+      "Malagasy family gathering",
+      "Madagascar traditional cloth",
+      "Merina people Madagascar",
+      "Madagascar rural village",
+      "Malagasy music dance celebration"
+    ],
+    "image_source": "pixabay",
+    "image_credits": [
+      {
+        "scene": 1,
+        "user": "LOULOUA",
+        "page": "https://pixabay.com/photos/madagascar-dune-valley-mountains-1711082/"
+      },
+      {
+        "scene": 2,
+        "user": "Michael_Pointner",
+        "page": "https://pixabay.com/photos/xmas-christmas-fondue-eating-7677696/"
+      },
+      {
+        "scene": 3,
+        "user": "LoggaWiggler",
+        "page": "https://pixabay.com/photos/fabric-cambaya-cloth-textile-43354/"
+      },
+      {
+        "scene": 4,
+        "user": "aga2rk",
+        "page": "https://pixabay.com/photos/madagascar-africa-women-island-see-4601287/"
+      },
+      {
+        "scene": 5,
+        "user": "LEVESQUE",
+        "page": "https://pixabay.com/photos/children-school-kindergarten-1608266/"
+      },
+      {
+        "scene": 6,
+        "user": "ktphotography",
+        "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/"
+      }
+    ],
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0112_Madagascar.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Bhutan",
@@ -5639,7 +5733,36 @@
     "confidence": "high",
     "verify_note": "Switzerland Alpabzug cow parade, Alpabzug tradition Appenzell, Swiss cattle descent festival",
     "created_at": "2026-10-13T03:55:22.381972+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "스위스 알프스에서 소들이 마을을 행진한다?! 가을이 찾아오면 고산 초원의 풀을 뜯던 소들을 농부들이 천천히 내려와 마을을 가로지르는 축제, 바로 Alpabzug가 시작됩니다. 소들은 큰 종과 화려한 꽃으로 장식되고, 주민들은 전통 음악에 맞춰 길을 따라 걸으며 축하합니다. 특히 몇몇 마을에서는 가장 아름답게 꾸민 소에게 상을 수여하는데, 그 수상 소는 다음 해 시장에서 프리미엄 가격을 받아 판매된다고 합니다. 이 행사는 주로 독일어권 주, 예를 들어 앱펜첼과 베른 등에서 9~10월에 열리는 전통이며, 스위스 전역에 동일하게 적용되는 것은 아니라는 점을 기억해 주세요. 알프스의 가을 풍경과 함께 울려 퍼지는 종소리, 그리고 꽃으로 물든 소들의 행진은 잠시라도 일상의 틈을 넘어 자연과 전통이 어우러지는 특별한 순간을 선사합니다. 다음 가을, 또 어떤 풍경이 우리를 기다릴지 궁금하지 않으신가요?",
+    "title_line1": "스위스 알프스 소 행진",
+    "title_line2": "꽃과 종으로 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "알프스에 *소* 행진!"
+      },
+      {
+        "s": 2,
+        "text": "가을 *축제* 시작"
+      },
+      {
+        "s": 4,
+        "text": "수상 *소*, 프리미엄"
+      },
+      {
+        "s": 6,
+        "text": "꽃 *소* 행진!"
+      }
+    ],
+    "image_queries": [
+      "Swiss Alps cattle parade",
+      "Bern autumn mountain landscape",
+      "Appenzell decorated cows",
+      "Alpine meadow with grazing cattle",
+      "Swiss village street festival",
+      "Autumn Alps with church bells"
+    ]
   },
   {
     "country": "Brazil",
@@ -5651,7 +5774,36 @@
     "confidence": "high",
     "verify_note": "Brazil Festa Junina quadrilha dance, quadrilha folk dance, Festa Junina mock wedding",
     "created_at": "2026-10-13T03:55:22.381972+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "브라질에서 결혼식 대신 춤추는 마을 축제가 있다! 6월에 열리는 Festa Junina, 특히 동북부 농촌과 학교에서 ‘quadrilha’라는 전통 무용이 펼쳐집니다. 참가자들은 시골 풍복을 입고 커플을 이루어, 정해진 스텝으로 가짜 결혼식을 재현하죠. 음악은 포호(Forró) 리듬에 맞춰 흥겨운 분위기를 만들고, 모두가 한마음으로 발을 맞춥니다.  \n\n이때 신랑 역할인 ‘noivo’가 신부 ‘noiva’를 잡아가려다 ‘padeiro’(제빵사)에게 잡히면, 제빵사는 달콤한 간식을 나눠줍니다. 바로 그 순간, 관객들은 웃음과 함께 달콤함을 맛보게 되죠.  \n\n하지만 이 행사는 주로 농촌 지역과 도시 학교에서 6월 축제 기간에만 열리는 특별한 행사이며, 일상 생활 속 문화는 아닙니다. 가짜 결혼식이 주는 유쾌함, 그리고 제빵사의 달콤한 ‘구출’이 남긴 여운을 생각하면, 다시 한 번 보고 싶어지는 이유가 분명합니다.",
+    "title_line1": "브라질 가짜 결혼춤",
+    "title_line2": "제빵사 달콤 구출?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*결혼식*대신춤"
+      },
+      {
+        "s": 3,
+        "text": "*가짜*결혼재현"
+      },
+      {
+        "s": 5,
+        "text": "*제빵사*달콤구출"
+      },
+      {
+        "s": 8,
+        "text": "*유쾌함*다시보고"
+      }
+    ],
+    "image_queries": [
+      "Brazil countryside festival dancers",
+      "quadrilha folk dance couples",
+      "Brazil rural wedding costume",
+      "forro music band Brazil",
+      "Brazil baker handing sweets",
+      "June village celebration Brazil"
+    ]
   },
   {
     "country": "Mongolia",
