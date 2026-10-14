@@ -6706,7 +6706,7 @@
     "confidence": "high",
     "verify_note": "South Korea international age law June 28 2023 Korean age official documents",
     "created_at": "2026-10-13T03:55:57.688338+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "한국에서는 예전에 아기가 태어나자마자 1살로 계산됐다는 얘기, 들어보셨나요? 전통적인 한국식 나이 계산법은 출생 순간을 1세로 잡고, 매년 1월 1일에 한 살씩 더합니다. 그래서 같은 해에 태어난 형제도 나이가 다를 수 있었죠. 그런데 2023년 6월 28일부터 법이 바뀌었습니다. 계약·법률·행정 문서에서는 이제 국제 나이를 사용하도록 원칙이 정해졌습니다. 국제 나이는 출생일을 0세로 시작해, 생일이 지날 때마다 한 살씩 올리는 방식이죠. 이 개정은 한국식 나이와 국제 나이 사이의 혼란을 줄이기 위해 도입되었습니다. 법이 바뀌었지만, 일상 대화나 친목 모임에서는 아직도 한국식 나이를 쓰는 사람을 만나볼 수 있습니다. 다만, 공식적인 서류에서는 국제 나이가 기본이 되니, 두 체계가 동시에 존재한다는 점, 기억해 두시면 좋겠습니다. 결국, 우리 삶 속에서는 두 나이가 공존하고, 상황에 따라 달라진다는 사실이 흥미롭지 않나요?",
     "title_line1": "한국 나이, 출생부터",
     "title_line2": "법은 국제 나이로?",
@@ -6739,7 +6739,62 @@
       "South Korean parliament interior",
       "Korean family gathering",
       "South Korean household living room"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0129_South Korea_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0129_South Korea_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Korean newborn baby",
+      "South Korean government building",
+      "Korean birth certificate",
+      "South Korean parliament interior",
+      "Korean family gathering",
+      "South Korean household living room"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "nowcica79",
+        "page": "https://pixabay.com/photos/child-children-model-girl-cute-4775023/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "LoboStudioHamburg",
+        "page": "https://pixabay.com/photos/federal-chancellery-637999/"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "中华人民共和国国家卫生和计划生育委员会 National Health and Family Planning Commission of the People",
+        "license": "Public domain",
+        "title": "Chinese Medical Certificate of Birth.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Chinese_Medical_Certificate_of_Birth.jpg"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "HeungSoon",
+        "page": "https://pixabay.com/photos/pinwheel-south-korean-flag-flag-5790090/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/frogs-lots-group-collection-cute-1413787/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "zhangliams",
+        "page": "https://pixabay.com/photos/house-living-room-stairs-furnish-7609267/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0129_South Korea.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Peru",
