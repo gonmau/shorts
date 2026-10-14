@@ -6332,7 +6332,7 @@
     "confidence": "high",
     "verify_note": "Sweden Allemansrätten camping 24 hour rule",
     "created_at": "2026-10-13T03:55:28.885876+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스웨덴에서는 숲속에 텐트를 치면 경찰이 와도 괜찮다고 생각하시나요? 실제로 스웨덴의 ‘알렘안스레텐’은 사유지가 아닌 자연을 누구나 자유롭게 이용할 수 있게 해 주는 권리입니다. 집에서 200 미터 이상 떨어진 비경작지라면 하루 동안 텐트를 치고 잠을 잘 수 있습니다. 단, 캠핑하면서 쓰레기를 남기지 않고, 소음이나 불은 최소화해야 법적으로 문제가 되지 않죠.  \n\n그런데 밤새 불을 피우면 현지 주민들이 ‘불 피우지 마’라는 작은 표지를 남겨 두는 경우가 있습니다. 이는 주변 이웃의 안전을 위해 스스로 만든 작은 규칙이죠.  \n\n하지만 이 권리는 사유지·농경지·보호구역을 제외한 비경작지에만 적용되며, 연속 24시간을 초과하는 캠핑은 허용되지 않으니, 자연을 즐기되 규칙을 기억해 주세요. 결국, 자유로운 숲속 캠핑도 책임감과 조심스러움이 함께할 때 비로소 완성됩니다.",
     "title_line1": "스웨덴 숲속 캠핑",
     "title_line2": "경찰 와도 괜찮을까?",
@@ -6350,7 +6350,67 @@
         "text": "*24시간* 금지"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Swedish forest with tent and police car",
+      "Swedish forest clearing campsite",
+      "clean campsite no litter",
+      "campfire in Swedish forest night",
+      "tent with 24 hour clock",
+      "Swedish camper cleaning site"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0125_Sweden_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0125_Sweden_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Swedish forest with tent and police car",
+      "Swedish forest clearing campsite",
+      "clean campsite no litter",
+      "campfire in Swedish forest night",
+      "tent with 24 hour clock",
+      "Swedish camper cleaning site"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/policewoman-police-police-car-986047/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Bazela",
+        "page": "https://pixabay.com/photos/forest-trees-deforestation-clearing-7198607/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "ignartonosbg",
+        "page": "https://pixabay.com/photos/ground-camping-family-camp-picnic-8260968/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chulmin1700",
+        "page": "https://pixabay.com/photos/people-camping-tent-lifestyle-4817872/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/the-eleventh-hour-time-to-rethink-3101625/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "manfredrichter",
+        "page": "https://pixabay.com/photos/broom-bristles-house-broom-4762980/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0125_Sweden.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Ireland",
@@ -6362,7 +6422,7 @@
     "confidence": "high",
     "verify_note": "Ireland Wren Day tradition St Stephen's Day dead wren",
     "created_at": "2026-10-13T03:55:28.885876+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아일랜드에서는 새 한 마리로 동네 전체가 축제를 연다고 들어보셨나요?  \n성 스티븐 날인 12월 26일 새벽, 아이들은 오래된 옷을 입고 ‘위렌 케이지’에 작은 새, 전통적으로는 죽은 위렌을 넣습니다. 그 케이지를 들고 마을을 돌며 전통 노래를 부르고, 지나가는 사람들에게 기부금을 모으죠. 모인 돈은 지역 자선단체에 전달돼 겨울 이웃을 돕는 데 쓰입니다.  \n\n하지만 최근 동물보호법이 강화되면서 실제 새를 잡는 경우는 거의 사라졌습니다. 대부분의 마을에서는 대신 인형 위렌을 사용해 같은 행사를 진행하고 있습니다. 이 전통은 주로 코크·케리·키어리와 같은 시골 카운티에서 아직도 살아 숨쉬지만, 실제 위렌 사냥은 현재 불법이라는 점을 기억해 주세요.  \n\n새 한 마리 대신 인형이 울리는 소리, 그 안에 담긴 따뜻한 마음은 변하지 않으니, 다음 스티븐스 데이에 또 어떤 이야기가 펼쳐질지 기대해 보세요.",
     "title_line1": "아일랜드 위렌 데이",
     "title_line2": "새 대신 인형, 마음은 그대로",
@@ -6388,7 +6448,67 @@
         "text": "울음도 *따뜻함*"
       }
     ],
-    "image_queries": []
+    "image_queries": [
+      "Ireland bird festival",
+      "wren cage Ireland",
+      "protected bird Ireland",
+      "wren doll Ireland",
+      "cork county village",
+      "wren doll crying"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0126_Ireland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0126_Ireland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Ireland bird festival",
+      "wren cage Ireland",
+      "protected bird Ireland",
+      "wren doll Ireland",
+      "cork county village",
+      "wren doll crying"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "hhach",
+        "page": "https://pixabay.com/photos/pheasant-road-bird-grass-poultry-3795233/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/superb-fairywren-wren-blue-wren-6075839/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Móricz",
+        "page": "https://pixabay.com/photos/hungary-protected-bird-animal-4733703/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Gruendercoach",
+        "page": "https://pixabay.com/photos/eurasian-wren-bird-bird-photography-10022157/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "KlausHausmann",
+        "page": "https://pixabay.com/photos/road-ireland-irish-village-schull-1480689/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/superb-fairywren-fairywren-blue-wren-10069195/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0126_Ireland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Russia",
