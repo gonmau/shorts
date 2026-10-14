@@ -7645,6 +7645,47 @@
     "status": "rejected"
   },
   {
+  "country": "Japan",
+  "topic": "Omakase: entrusting the menu to the chef",
+  "hook": "메뉴판 없이, 셰프에게 식사를 맡기는 일본 오마카세!",
+  "body": "오마카세(お任せ)는 일본어로 ‘맡기겠습니다’라는 뜻입니다. 손님이 메뉴를 일일이 고르는 대신, 셰프에게 그날의 요리 구성을 맡기는 식사 방식이죠. 특히 스시 오마카세에서는 셰프가 계절과 당일 들어온 식재료, 손님의 알레르기와 선호를 고려해 작은 요리, 초밥, 롤 등을 순서대로 준비합니다.",
+  "twist": "오마카세의 핵심은 ‘비싼 코스를 먹는 것’이 아니라, 그날 가장 좋은 재료를 셰프의 판단과 손님과의 대화 속에서 즐기는 것입니다.",
+  "caveat": "오마카세는 스시집에서 흔히 쓰이지만 스시 전용 용어는 아니며, 가격·코스 수·제공 방식은 가게마다 크게 다릅니다.",
+  "confidence": "high",
+  "verify_note": "omakase meaning chef chooses menu, omakase seasonal ingredients sushi etiquette, Japan tipping culture restaurant",
+  "created_at": "2026-10-14T14:11:00+00:00",
+  "status": "scripted",
+  "narration": "메뉴판 없이, 셰프에게 식사를 맡기는 일본 오마카세! 오마카세는 일본어로 ‘맡기겠습니다’라는 뜻이에요. 손님이 메뉴를 하나씩 고르는 대신, 셰프에게 그날의 요리 구성을 맡기는 방식이죠. 특히 스시 오마카세에서는 셰프가 계절과 당일 들어온 식재료를 살펴, 손님의 알레르기와 선호까지 고려해 요리를 준비합니다. 작은 요리와 초밥, 롤이 순서대로 이어지며, 어떤 재료가 나올지는 셰프와 손님의 대화 속에서 조금씩 조정되기도 해요. 그래서 오마카세의 핵심은 단순히 비싼 코스를 먹는 것이 아니라, 그날 가장 좋은 재료를 셰프의 판단으로 즐기는 데 있습니다. 다만 오마카세는 스시집에서 흔히 쓰이지만 스시 전용 용어는 아니에요. 가격과 코스 수, 제공 방식은 가게마다 크게 다르니, 예약할 때 알레르기와 예산을 미리 말하는 것이 가장 중요합니다.",
+  "title_line1": "일본 오마카세",
+  "title_line2": "메뉴는 셰프가 정한다",
+  "highlights": [
+    {
+      "s": 1,
+      "text": "메뉴는 *셰프*가 정한다"
+    },
+    {
+      "s": 3,
+      "text": "그날의 *최고 재료*"
+    },
+    {
+      "s": 5,
+      "text": "알레르기·선호 *반영*"
+    },
+    {
+      "s": 6,
+      "text": "핵심은 *셰프와의 대화*"
+    }
+  ],
+  "image_queries": [
+    "Japanese sushi omakase counter chef serving nigiri",
+    "Japanese sushi chef selecting fresh fish ingredients",
+    "Japanese seasonal omakase dishes plated elegantly",
+    "Omakase sushi course nigiri sashimi roll Japanese restaurant",
+    "Customer talking with sushi chef at Japanese sushi counter",
+    "Japanese sushi restaurant counter interior warm lighting"
+  ]
+},
+  {
     "country": "Finland",
     "topic": "Newborn sauna ceremony (vauvan sauna)",
     "hook": "핀란드에서는 아기 첫 목욕이 뜨거운 사우나!",
@@ -7928,7 +7969,7 @@
     "confidence": "high",
     "verify_note": "Wodaabe Gerewol festival Niger courtship dance men makeup red ochre",
     "created_at": "2026-10-14T08:49:10.366883+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "이 사막 마을에서는 남자들이 화려한 메이크업을 하고, 여성들이 남자들을 ‘구매’한다! 매년 9월, 사헬 사막에 사는 와다베족은 ‘게레볼’이라는 특별한 의식을 엽니다. 남성들은 빨간 토양을 얼굴에 바르고 은목걸이를 걸어 눈에 띄게 꾸밉니다. 그리고 리듬에 맞춰 활기찬 춤을 추며 자신의 매력을 뽐내죠. 관중석에 앉은 여성들은 남자들의 움직임, 턱수염, 눈빛을 세심히 살펴 보면서 결혼 상대를 고릅니다. 가장 아름다운 수염을 가진 남자는 ‘모든 여성의 왕’으로 선정돼 일주일 동안 특별한 대우를 받게 됩니다. 이 전통은 주로 니제르와 차드에 사는 와다베족 사회에서 이어지고, 국가 전체 인구에게 적용되는 것은 아니라는 점을 기억해 주세요. 사막의 붉은 먼지와 은빛 목걸이가 만들어내는 독특한 풍경 속에서, 사랑과 경쟁이 어떻게 펼쳐지는지 상상해 보세요. 끝까지 보셨다면, 그 매혹적인 순간이 다시 떠오르지 않을까요?",
     "title_line1": "와다베게레볼 축제",
     "title_line2": "여성은 남자를 사?",
@@ -7963,6 +8004,77 @@
       "desert red dust necklace"
     ]
   },
+  {
+  "country": "Japan",
+  "topic": "Omakase dining culture",
+  "title1": "일본 오마카세",
+  "title2": "메뉴는 셰프가 정한다",
+  "hook": "일본 오마카세는 ‘메뉴를 고르지 않는’ 식사 방식입니다!",
+  "narration": [
+    "오마카세는 일본어로 ‘맡기겠습니다’라는 뜻이에요.",
+    "손님이 메뉴판을 보고 고르는 대신, 셰프에게 그날의 요리를 맡기는 방식이죠.",
+    "셰프는 계절과 그날 들어온 식재료, 손님의 알레르기나 선호를 고려해 요리를 구성합니다.",
+    "스시 오마카세라면 보통 여러 코스로 진행되며, 초밥뿐 아니라 작은 요리와 롤까지 함께 나올 수 있어요.",
+    "예약할 때 알레르기와 예산, 먹지 못하는 재료를 미리 말하는 것이 가장 중요한 예절입니다.",
+    "일본에서는 기본적으로 팁을 주지 않는 문화라, 오마카세도 서비스 요금이 포함된 가격을 확인하면 됩니다."
+  ],
+  "images": [
+    {
+      "no": 1,
+      "duration": "0-3초",
+      "image_query": "Japanese sushi omakase counter chef serving nigiri",
+      "overlay": "메뉴는 *셰프*가 정한다",
+      "caption": "오마카세는 ‘맡기겠습니다’라는 뜻"
+    },
+    {
+      "no": 2,
+      "duration": "3-8초",
+      "image_query": "Japanese sushi chef selecting fresh fish market ingredients",
+      "overlay": "그날의 *최고 재료*로 구성",
+      "caption": "손님은 메뉴판 대신 셰프에게 맡깁니다"
+    },
+    {
+      "no": 3,
+      "duration": "8-14초",
+      "image_query": "Japanese seasonal omakase dishes plated elegantly",
+      "overlay": "계절 + 그날의 재료",
+      "caption": "계절과 식재료, 손님의 선호를 반영해 구성합니다"
+    },
+    {
+      "no": 4,
+      "duration": "14-20초",
+      "image_query": "Omakase sushi course nigiri sashimi roll Japanese restaurant",
+      "overlay": "초밥만이 아니다",
+      "caption": "여러 코스로 작은 요리·초밥·롤이 이어질 수 있어요"
+    },
+    {
+      "no": 5,
+      "duration": "20-26초",
+      "image_query": "Customer talking with sushi chef at Japanese sushi counter",
+      "overlay": "예약 때 *알레르기·예산* 말하기",
+      "caption": "가장 중요한 예절은 예약 단계에서 미리 알려주는 것"
+    },
+    {
+      "no": 6,
+      "duration": "26-30초",
+      "image_query": "Japanese restaurant bill payment no tipping culture",
+      "overlay": "일본에서는 *팁 기본 아님*",
+      "caption": "서비스 요금 포함 여부를 확인하면 됩니다"
+    }
+  ],
+  "description_hook": "일본 오마카세는 손님이 메뉴를 고르지 않고 셰프에게 식사를 맡기는 방식이에요!",
+  "description_body": "오마카세(お任せ)는 ‘맡기겠습니다’라는 뜻으로, 셰프가 계절과 그날의 식재료, 손님의 알레르기·선호를 고려해 요리를 구성합니다. 스시 오마카세는 보통 여러 코스로 진행되며, 예약 시 알레르기와 예산을 미리 전하는 것이 좋습니다. 일본에서는 팁을 주는 것이 기본 문화가 아니므로, 서비스 요금 포함 여부를 확인하면 됩니다.",
+  "description_twist": "오마카세의 핵심은 ‘비싸게 먹는 것’이 아니라, 그날 가장 좋은 재료를 셰프의 판단으로 즐기는 것입니다.",
+  "hashtags": "#Japan #Omakase #JapaneseFood #Sushi #FoodCulture #JapaneseCulture #Shorts",
+  "fact_risk": "low",
+  "fact_verifiability": "verified",
+  "fact_applied": true,
+  "review_notes": [
+    "‘오마카세는 고급 스시 전용’이라는 표현은 피했습니다. 스시집에서 흔히 쓰이지만, 일본 음식점에서 셰프에게 선택을 맡기는 주문 방식을 넓게 가리킵니다. [48][51]",
+    "‘10~20코스’처럼 횟수를 단정하지 않고 ‘여러 코스’로 완화했습니다. 코스 수와 가격은 가게·예산·재료에 따라 달라집니다. [50][61]",
+    "‘팁을 주면 무례하다’는 강한 표현 대신 ‘기본적으로 팁 문화가 아니다’로 표현했습니다. [58][59]"
+  ]
+}
   {
     "country": "Ethiopia",
     "topic": "전통 커피 의식과 점술",
