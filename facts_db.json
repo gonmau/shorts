@@ -8046,7 +8046,7 @@
     "confidence": "high",
     "verify_note": "Ghana fantasy coffins, Kofi Antubam, Paa Joe, Ga funeral customs",
     "created_at": "2026-10-14T08:49:01.336946+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이 나라에서는 죽음이 예술이 됩니다! 가나 아크라 근교 가시 마을에선 장인들이 고인의 직업이나 취미를 닮은 나무 관을 만듭니다. 어부는 물고기 모양, 운전사는 자동차 형태, 농부는 쌀단지 모양 관을 선택하고, 그 관에 시신을 넣어 마을을 돌며 퍼레이드처럼 행진합니다. 마을 사람들은 그 독특한 관을 바라보며 고인의 삶을 기억하고, 동시에 눈길을 사로잡는 장면을 즐깁니다. 흥미롭게도, 일부 부유한 가족은 이런 관을 완성된 예술품처럼 집에 전시하고, 때로는 경매에 내놓기도 합니다. 하지만 이 풍습은 주로 가시와 테시 지역의 가족·장인 사이에서만 이어지는 전통이며, 가나 전체 인구가 다 사용하는 관습은 아니라는 점을 기억해 주세요. 죽음이 이렇게 화려하게 표현되는 모습을 보면, 삶과 사후 세계에 대한 우리의 시각도 조금은 달라질지도 모릅니다.",
     "title_line1": "가나, 판타지 관",
     "title_line2": "죽음이 예술이 될까?",
@@ -8075,7 +8075,60 @@
       "Ghana coffin art display",
       "Ghana coastal village funeral",
       "Ghana funeral ceremony"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0148_Ghana_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0148_Ghana_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Ghana funeral art coffin",
+      "Ghana coffin parade",
+      "Ghana villagers viewing coffins",
+      "Ghana coffin art display",
+      "Ghana coastal village funeral",
+      "Ghana funeral ceremony"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "emkanicepic",
+        "page": "https://pixabay.com/photos/vehicle-automobile-hearse-funeral-3198100/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "antoniollerena",
+        "page": "https://pixabay.com/photos/woman-parade-moors-and-christians-7767045/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Photochief_",
+        "page": "https://pixabay.com/photos/africa-ghana-child-water-5032076/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "dendoktoor",
+        "page": "https://pixabay.com/photos/statue-woman-sculpture-work-of-art-7083746/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "oleg_mit",
+        "page": "https://pixabay.com/photos/coastal-village-sea-cliffs-steep-5527726/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ernie114",
+        "page": "https://pixabay.com/photos/us-flag-navy-burial-ceremony-4804257/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0148_Ghana.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Mali",
@@ -8087,7 +8140,7 @@
     "confidence": "high",
     "verify_note": "Dogon Dama mask dance, Mali funeral rites, Dogon mask tradition",
     "created_at": "2026-10-14T08:49:01.336946+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "죽은 영혼을 달래는 거대한 나무 가면 쇼! 말리 남부 사헬 사막의 도곤 마을에서는 누군가가 세상을 떠나면 며칠간 ‘다마’ 의식을 엽니다. 남자들은 손에 불을 든 채, 조상이나 동물 형상의 거대한 목각 가면을 쓰고 밤새도록 춤을 춥니다. 그 춤은 영혼을 저승으로 인도한다는 믿음에서 시작됩니다. 마을 전체가 북쪽 하늘을 바라보며 북소리와 북을 맞춰 울려 퍼지면, 고요한 사막에도 울림이 가득합니다. 흥미로운 점은 그 가면이 보통 1년 이상 걸려 만든다는 것인데, 한 번 만든 가면을 여러 차례 의식에 사용해 세대를 이어 전한다는 전통이 있습니다. 하지만 이 의식은 도곤 문화권 일부 마을에서만 행해지며, 현대 도시 생활을 하는 도곤인들은 참여가 제한됩니다. 그래서 오늘도 사헬의 밤하늘 아래, 불빛과 가면이 만든 신비로운 춤이 조용히 이어지고 있습니다.",
     "title_line1": "도곤 마을 가면 의식",
     "title_line2": "불빛 속 영혼은?",
@@ -8116,7 +8169,64 @@
       "handcrafted Dogon mask year",
       "Dogon village funeral rite",
       "Sahara night dancing masks"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0149_Mali_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0149_Mali_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Dogon mask spirit ceremony",
+      "men fire masks night dance",
+      "Dogon drums night sky",
+      "handcrafted Dogon mask year",
+      "Dogon village funeral rite",
+      "Sahara night dancing masks"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "evekolor",
+        "page": "https://pixabay.com/photos/venice-disguise-the-ceremony-mask-3151223/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/asia-dance-bangkok-cambodia-1807558/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Lenzatic",
+        "page": "https://pixabay.com/photos/nevada-desert-nature-landscape-8338929/"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC BY 3.0",
+        "title": "Brooklyn Museum 70.178.1 Sagana Mask for Dama Ceremony.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_70.178.1_Sagana_Mask_for_Dama_Ceremony.jpg"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC BY 3.0",
+        "title": "Brooklyn Museum 1995.171.11a-c Kanaga Mask in Three Pieces.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_1995.171.11a-c_Kanaga_Mask_in_Three_Pieces.jpg"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Wolfgang_Hasselmann",
+        "page": "https://pixabay.com/photos/night-milky-way-time-warehouse-10094398/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0149_Mali.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Turkey",
@@ -8566,7 +8676,7 @@
     "verify_note": "Law of the European Union",
     "confidence": "source",
     "created_at": "2026-10-14T22:15:58.158954+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "유럽 연합 법, 동네 빵집 레시피까지 바꾼다?  \nEU는 27개 회원국 모두에 적용되는 초국가적 규칙 체계로, 주된 목표는 환경 보호입니다. 이 규칙은 유럽 연합 사법재판소가 해석하고 적용합니다. 그래서 환경 기준을 맞추기 위해 일부 회원국에서는 빵집이 기존 레시피를 수정해야 할 상황이 생깁니다. 예를 들어, 헝가리의 한 작은 빵집이 EU 환경 규제로 인해 사용하던 재료 비율을 바꾸거나 포장 방식을 바꾸어야 할 수도 있다는 이야기죠. 하지만 이 규제는 오직 EU 회원국 내에서만 적용됩니다. 즉, EU 외 지역의 빵집에는 영향을 미치지 않으며, 규제 범위가 제한된다는 점을 기억해 주세요. 결국, 국제적인 환경 정책이 우리 일상의 작은 식탁까지 스며들 수 있다는 사실, 생각보다 가까이 다가와 있습니다.",
     "title_line1": "헝가리 빵집 규제",
     "title_line2": "레시피까지 바뀔까?",
@@ -8591,7 +8701,62 @@
       "Hungarian bakery interior",
       "fresh bread loaf",
       "dinner table with bread"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0170_헝가리_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0170_헝가리_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "European Union flag",
+      "European Court of Justice building",
+      "bakery ingredients on table",
+      "Hungarian bakery interior",
+      "fresh bread loaf",
+      "dinner table with bread"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/banner-europe-flag-eu-european-2608475/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "marcschneider",
+        "page": "https://pixabay.com/photos/eu-court-of-justice-kirchberg-213379/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "JESHOOTS-com",
+        "page": "https://pixabay.com/photos/croissants-jam-breakfast-knife-569075/"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Jókai Tímea",
+        "license": "CC0",
+        "title": "Kutyapekseg.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kutyapekseg.jpg"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/bread-baked-loaf-bakery-4183225/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/thanksgiving-thanksgiving-dinner-8396731/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0170_헝가리.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "아이슬란드 집 안에서 신발을 벗는 이유는?",
