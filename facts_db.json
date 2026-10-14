@@ -7647,43 +7647,96 @@
   {
     "country": "Finland",
     "topic": "Newborn sauna ceremony (vauvan sauna)",
-    "hook": "벨기에 Binche에서는 오렌지를 던지는 광란의 축제가 열린다!",
-    "body": "2년마다 열리는 Binche 카니발에서 ‘질레’라 불리는 남자들이 전통적인 황색 와크와 목재 신발, 그리고 밀랍 마스크를 쓰고 거리로 나선다. 그들은 관중에게 오렌지를 던지며, 관중은 헬멧과 방패를 착용해 맞받는다.",
-    "twist": "사용되는 오렌지는 실제 과일이 아니라, 껍질이 두껍고 튼튼하도록 특별히 재배된 품종으로, 부상 위험을 최소화하기 위해 미리 준비한다.",
+    "hook": "핀란드에서는 아기 첫 목욕이 뜨거운 사우나!",
+    "body": "핀란드 가정에서는 출생 후 몇 주 안에 신생아를 짧게(5~10분) 사우나에 데려가 ‘아기 사우나’를 진행한다. 이 전통은 아기의 혈액순환을 돕고 면역력을 높인다고 믿으며, 가족 모두가 함께 사우나에 들어가 축하한다.",
+    "twist": "사우나를 마친 뒤에는 부모가 바로 차가운 호수나 얼음물에 몸을 뛰어들어 몸을 식히는 것이 관례다.",
     "caveat": "특히 라플란드와 남부 지방의 전통 가정에서 흔히 행해지며, 도시 아파트에서는 선택적으로 시행된다.",
     "confidence": "high",
     "verify_note": "Finnish baby sauna tradition, vauvan sauna",
     "created_at": "2026-10-14T03:45:53.836730+00:00",
-    "status": "scripted",
-    "narration": "벨기에 Binche에서는 오렌지를 던지는 광란의 축제가 열린다! 2년마다 열리는 Binche 카니발에선 ‘질레’라 불리는 남자들이 전통적인 황색 와크와 목재 신발을 신고, 밀랍으로 만든 무표정 마스크를 쓰고 거리로 나섭니다. 그들은 관중에게 오렌지를 던지고, 관중은 헬멧과 방패를 착용해 맞받으며 소리와 색채가 뒤섞인 퍼레이드가 펼쳐집니다. 여기서 흥미로운 점은, 사용되는 오렌지가 일반 과일이 아니라 껍질이 두껍고 튼튼하도록 특별히 재배된 품종이라는 사실입니다. 이렇게 준비된 오렌지는 부상 위험을 최소화하면서도 던지는 재미를 살려줍니다. 이 전통은 벨기에 남부 Binche와 인근 마을에서만, 매 2년마다 카니발 기간에만 진행된다는 점을 기억해 주세요. 그럼 다음 카니발엔 어떤 색의 오렌지가 날아올지, 또 어떤 이야기가 이어질지 궁금하지 않으신가요?",
-    "title_line1": "벨기에 빈체 카니발",
-    "title_line2": "오렌지 폭풍의 비밀?",
+    "status": "video_done",
+    "narration": "핀란드에서는 아기 첫 목욕이 뜨거운 사우나! 출생 후 몇 주가 지나면 신생아를 짧게(5~10분) 사우나에 데려가 ‘아기 사우나’를 합니다. 가족 모두가 함께 들어가 아기의 혈액순환을 돕고 면역력을 높인다고 믿으며, 따뜻한 증기로 아이를 감싸는 순간이 바로 전통의 핵심이죠. 사우나를 마친 뒤엔 부모가 바로 차가운 호수나 얼음물에 몸을 뛰어들어 식히는 것이 관례라, 온도 차이가 크게 느껴지는 반전이 있습니다. 이 전통은 특히 라플란드와 남부 지방의 전통 가정에서 흔히 행해지며, 도시 아파트에서는 선택적으로 시행됩니다. 뜨거운 김과 차가운 물이 교차하는 순간, 세대가 이어온 작은 의식이 살아 숨쉬는 모습을 떠올려 보세요.",
+    "title_line1": "핀란드 아기 첫 사우나",
+    "title_line2": "뜨거운 뒤 차가운 물",
     "highlights": [
       {
         "s": 1,
-        "text": "오렌지 *광란*!"
+        "text": "아기 첫 *사우나*"
       },
       {
         "s": 2,
-        "text": "질레 *마스크*"
+        "text": "신생아 *목욕* 5분"
       },
       {
-        "s": 3,
-        "text": "오렌지 *던지기*"
+        "s": 4,
+        "text": "뜨거운 뒤 *냉수*"
       }
     ],
     "image_queries": [
-      "orange throwing festival Belgium",
-      "Gilles mask Binche",
-      "people throwing oranges Binche",
-      "thick orange fruit",
-      "carnival crowd Binche",
-      "colorful oranges carnival"
+      "baby sauna Finland",
+      "newborn sauna Finland",
+      "family sauna Finland",
+      "hot sauna cold lake",
+      "Lapland traditional sauna home",
+      "steam and icy water sauna"
     ],
     "narration_original": "핀란드에서는 아기 첫 목욕이 뜨거운 사우나! 출생 후 몇 주가 지나면 신생아를 짧게(5~10분) 사우나에 데려가 ‘아기 사우나’를 합니다. 가족 모두가 함께 들어가 아기의 혈액순환을 돕고 면역력을 높인다고 믿으며, 따뜻한 증기로 아이를 감싸는 순간이 바로 전통의 핵심이죠. 사우나를 마친 뒤엔 부모가 바로 차가운 호수나 얼음물에 몸을 뛰어들어 식히는 것이 관례라, 온도 차이가 크게 느껴지는 반전이 있습니다. 이 전통은 특히 라플란드와 남부 지방의 전통 가정에서 흔히 행해지며, 도시 아파트에서는 선택적으로 시행됩니다. 뜨거운 김과 차가운 물이 교차하는 순간, 세대가 이어온 작은 의식이 살아 숨쉬는 모습을 떠올려 보세요.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0143_Finland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0143_Finland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "baby sauna Finland",
+      "newborn sauna Finland",
+      "family sauna Finland",
+      "hot sauna cold lake",
+      "Lapland traditional sauna home",
+      "steam and icy water sauna"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/river-sauna-cottage-forest-finland-6787137/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "reijotelaranta",
+        "page": "https://pixabay.com/photos/water-lake-forest-sauna-summer-4483470/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/river-rapids-sauna-cottage-7325043/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "jennyfriedrichs",
+        "page": "https://pixabay.com/photos/wood-house-tree-garden-sauna-3336957/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "pasja1000",
+        "page": "https://pixabay.com/photos/lapland-reindeer-snow-parish-dec-4688371/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-heater-sauna-stones-9863847/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0143_Finland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Belgium",
@@ -7966,8 +8019,8 @@
       "Wodaabe festival Niger",
       "desert red dust necklace"
     ]
-   },
-   {
+  },
+  {
     "country": "Ethiopia",
     "topic": "전통 커피 의식과 점술",
     "hook": "에티오피아에서는 커피 한 잔이 미래를 알려준다고 믿는다!",
