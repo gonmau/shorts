@@ -14,6 +14,8 @@ HEADER = """# 영상 제작 전 검수 파일 (고친 뒤 저장/Commit 하고 r
 #   *별표*로 감싼 단어는 노란색으로 강조됩니다. 줄을 지우면 그 문구는 영상에서 빠집니다.
 # - 이미지[번호]: 장면 이미지 6장의 영어 검색어(Pixabay)입니다. 고치면 그 검색어로 이미지를 다시 받습니다.
 #   대본을 고치고 이미지 줄은 그대로 두면, 새 대본에 맞춰 검색어를 자동으로 다시 만듭니다.
+# - 제외: 이 소재를 영상으로 만들지 않으려면 뒤에 사유(또는 '예')를 적으세요. 비워 두면 그대로 제작합니다.
+#   제외한 소재는 폐기(rejected)로 바뀌어 render에서 건너뛰고, 나중에 'redo_script=번호!'로 되살릴 수 있습니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 """
 
@@ -39,6 +41,7 @@ def main():
             lines.append(f"(사실 확인용 검색어) {item['verify_note']}")
         for key, label in (("hook", "후크"), ("body", "본문"), ("twist", "반전")):
             lines.append(f"{label}: {' '.join(str(item.get(key, '')).split())}")
+        lines.append("제외:")
         lines.append(f"제목1: {item.get('title_line1', '')}")
         lines.append(f"제목2: {item.get('title_line2', '')}")
         for h in item.get("highlights") or []:

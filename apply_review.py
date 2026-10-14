@@ -12,6 +12,7 @@ NARR = re.compile(r"^대본\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 FIELD = re.compile(r"^(후크|본문|반전)\s*[:：]\s*(.*)$")
 FIELD_KEY = {"후크": "hook", "본문": "body", "반전": "twist"}
 IMG = re.compile(r"^이미지\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
+SKIP = re.compile(r"^(제외|건너뛰기)\s*[:：]\s*(.*)$")
 HL = re.compile(r"^핵심\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 
 
@@ -23,7 +24,7 @@ def parse(text):
             continue
         m = HEAD.match(line)
         if m:
-            cur = blocks.setdefault(int(m.group(1)), {"t1": None, "t2": None, "hl": [], "narr": {}, "fields": {}, "img": {}})
+            cur = blocks.setdefault(int(m.group(1)), {"t1": None, "t2": None, "hl": [], "narr": {}, "fields": {}, "img": {}, "skip": None})
             continue
         if cur is None:
             continue
@@ -34,6 +35,10 @@ def parse(text):
         m = NARR.match(line)
         if m:
             cur["narr"][int(m.group(1))] = m.group(2).strip()
+            continue
+        m = SKIP.match(line)
+        if m:
+            cur["skip"] = m.group(2).strip()
             continue
         m = IMG.match(line)
         if m:
@@ -62,10 +67,17 @@ def main():
     blocks = parse(path.read_text(encoding="utf-8"))
     db = load_db()
     changed = 0
+    strip_img = set()
     for idx, b in blocks.items():
         if not (0 <= idx < len(db)):
             continue
         item = db[idx]
+        if b["skip"]:  # '제외: 사유' 처럼 내용이 있으면 이 소재는 영상으로 만들지 않고 건너뛴다
+            item["status"] = "rejected"
+            item["reject_reason"] = b["skip"] if b["skip"] not in ("예", "y", "Y", "o", "O", "x", "X") else "검수에서 제외"
+            changed += 1
+            print(f"  [{idx}] {item.get('country', '')}: 제외 처리 ({item['reject_reason']})")
+            continue
         before = (item.get("title_line1"), item.get("title_line2"), item.get("highlights"))
         if b["t1"]:
             item["title_line1"] = b["t1"]
@@ -99,6 +111,7 @@ def main():
             changed += 1
         elif narr_changed and item.get("image_queries"):
             item.pop("image_queries", None)
+            strip_img.add(idx)  # review.txt의 예전 이미지 줄이 다음 실행 때 검색어를 되돌리지 않게 지운다
             print(f"  [{idx}] {item.get('country', '')}: 대본이 바뀌어 이미지 검색어를 새로 만듭니다")
         if edited:
             # 사람이 직접 고친 소재: AI 검수가 덮어쓰지 않게 하고 새 대본 기준으로 번역을 다시 한다
@@ -110,6 +123,16 @@ def main():
         if before != (item.get("title_line1"), item.get("title_line2"), item.get("highlights")):
             changed += 1
             print(f"  [{idx}] {item.get('country', '')}: 수정 반영")
+    if strip_img:
+        out, cur_idx = [], None
+        for raw in path.read_text(encoding="utf-8").splitlines():
+            m = HEAD.match(raw.strip())
+            if m:
+                cur_idx = int(m.group(1))
+            if cur_idx in strip_img and IMG.match(raw.strip()):
+                continue
+            out.append(raw)
+        path.write_text("\n".join(out) + "\n", encoding="utf-8")
     if changed:
         save_db(db)
     print(f"review.txt 반영: {changed}개 소재 수정")

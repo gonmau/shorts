@@ -100,17 +100,19 @@ def fetch_item(session, key, idx, item, force):
         base = queries[0] if queries else f"{country} travel"
         queries = (queries + [base] * SCENE_COUNT)[:SCENE_COUNT]
 
-    # 검색어가 바뀌었으면(대본 수정 등) 예전 이미지를 지우고 새로 받는다
+    # 검색어가 바뀐 장면만(대본 수정 등) 예전 이미지를 지우고 새로 받는다. 안 바뀐 장면은 그대로 둔다
     done = item.get("image_queries_done")
-    if done is not None and done != queries:
-        force = True
-        print("    이미지 검색어가 바뀌어 새로 받습니다")
+    changed_scenes = set()
+    if done is not None and list(done) != list(queries):
+        changed_scenes = {n for n, q in enumerate(queries, start=1) if n > len(done) or done[n - 1] != q}
+        print(f"    이미지 검색어가 바뀐 장면만 새로 받습니다: {sorted(changed_scenes)}")
     anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
     old = {} if force else {c.get("scene"): c for c in (item.get("image_credits") or [])}
     new_credits, used, got = {}, set(), 0
     for n, query in enumerate(queries, start=1):
         dest = folder / f"scene_{n:02d}.png"
-        if dest.exists() and not force:
+        redo_scene = force or n in changed_scenes
+        if dest.exists() and not redo_scene:
             got += 1
             continue
         if dest.exists():
@@ -155,7 +157,7 @@ def fetch_item(session, key, idx, item, force):
         time.sleep(0.7)
 
     item["image_queries_done"] = list(queries)
-    merged = {**{k: v for k, v in old.items() if (folder / f"scene_{int(k):02d}.png").exists()}, **new_credits}
+    merged = {**{k: v for k, v in old.items() if k not in changed_scenes and (folder / f"scene_{int(k):02d}.png").exists()}, **new_credits}
     if merged:
         item["image_credits"] = [merged[k] for k in sorted(merged)]
         item["image_source"] = "pixabay" if any(c.get("source", "pixabay") == "pixabay" for c in merged.values()) else "commons"

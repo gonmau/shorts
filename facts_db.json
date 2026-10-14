@@ -7540,7 +7540,7 @@
     "confidence": "high",
     "verify_note": "Elfstedentocht 200 km ice skating eleven cities Friesland last race 1997",
     "created_at": "2026-10-14T03:45:35.989700+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "네덜란드에서는 겨울에 얼음이 충분히 두껍다면 200 km 스케이트 대회가 열린다! 프리슬란 주의 운하와 호수를 따라 11개의 도시를 잇는 ‘엘프스테덴도흐트’는 자연 얼음이 최소 15 cm 이상 굳어야만 시작됩니다. 코스 전체는 약 200 km에 달하고, 마지막 공식 레이스는 1997년에 치러졌습니다. 그 이후로 매년 얼음 두께를 관찰해 대회 가능 여부를 판단하고 있죠. 만약 얼음이 충분히 좋다면 전 국민이 출발선에 모여 일시적인 ‘얼음 휴일’이 선언됩니다. 학교와 기업이 문을 닫히고, 사람들은 스케이트를 신고 길을 나섭니다. 하지만 이 행사는 프리슬란 주에만 한정되며, 안전 기준을 충족할 때만 열릴 수 있다는 점을 기억해 주세요. 언제 다시 열릴지는 얼음이 말해줄 때까지 기다려야 할까요?",
     "highlights": [
       {
@@ -7565,7 +7565,60 @@
       "Friesland safe ice skating"
     ],
     "title_line1": "네덜란드 얼음 대회",
-    "title_line2": "얼음 두께만 겨울 끝?"
+    "title_line2": "얼음 두께만 겨울 끝?",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0140_Netherlands_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0140_Netherlands_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Netherlands frozen canal ice skating",
+      "Friesland ice-covered canals",
+      "1997 Elfstedentocht race",
+      "Netherlands ice holiday crowd",
+      "Closed schools skating streets",
+      "Friesland safe ice skating"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "12923",
+        "page": "https://pixabay.com/photos/ice-natural-ice-pastime-ice-skating-65491/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "troubletrace_ux",
+        "page": "https://pixabay.com/photos/snow-mountain-winter-mountain-peak-3274952/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "mibro",
+        "page": "https://pixabay.com/photos/car-racing-race-track-n%C3%BCrburgring-4394450/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "svseckin",
+        "page": "https://pixabay.com/photos/street-buildings-people-crowd-5439185/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Chikilino",
+        "page": "https://pixabay.com/photos/skateboard-skater-skating-outdoors-7270418/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "995645",
+        "page": "https://pixabay.com/photos/skating-skates-winter-sports-3817358/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0140_Netherlands.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Mongolia",
