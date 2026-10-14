@@ -7344,7 +7344,7 @@
     "confidence": "high",
     "verify_note": "Baci ceremony Laos white thread ritual",
     "created_at": "2026-10-14T03:44:51.323816+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "라오스에서는 새끼에게 실을 묶어 행운을 부른다고 들어보셨나요?  \n출산이나 결혼 같은 중요한 순간마다 라오족과 일부 타이족이 ‘바시’ 의식을 합니다.  \n흰 실을 손목에 매어 영혼이 몸을 떠돌지 않게 하고, 복을 기원하는 것이죠.  \n보통 하루 정도 실을 유지하고, 시간이 지나면 자연스럽게 풀립니다.  \n특히 이 실을 그냥 버리기보다는 집 안에 걸어두는 경우가 많습니다.  \n그럼 가족 전체의 복을 지키는 작은 부적처럼 역할을 하게 되죠.  \n하지만 이 의식은 전통 라오식 종교를 따르는 라오족 및 일부 타이족 커뮤니티에서 주로 행해진다는 점, 기억해 주세요.  \n실 하나에 담긴 깊은 의미, 다시 한 번 생각해보게 됩니다.",
     "title_line1": "라오스 바시 의식",
     "title_line2": "실 하나에 행운?",
@@ -7377,7 +7377,62 @@
       "White thread hanging home",
       "Laos traditional ceremony",
       "Closeup white thread"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0138_Laos_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0138_Laos_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Laos baby white thread",
+      "Laos wedding baci ceremony",
+      "White thread wrist Laos",
+      "White thread hanging home",
+      "Laos traditional ceremony",
+      "Closeup white thread"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/baby-newborn-father-fatherhood-man-21249/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "OlcayErtem",
+        "page": "https://pixabay.com/photos/happy-valentines-day-couple-wedding-4615557/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "neelam279",
+        "page": "https://pixabay.com/photos/petal-tulip-white-pollen-4956252/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "ptrabattoni",
+        "page": "https://pixabay.com/photos/dublin-home-house-ireland-europe-4955342/"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Captain Lovimer Reyes, Philippine Army, Camp Murphy, Quezon City, Philippines.",
+        "license": "Public domain",
+        "title": "VA066359 Photograph Drinking rice alcohol (choum-choum) out of a communal jar.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:VA066359_Photograph_Drinking_rice_alcohol_(choum-choum)_out_of_a_communal_jar.jpg"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "PDPics",
+        "page": "https://pixabay.com/photos/thread-spool-needle-sew-white-166859/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0138_Laos.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Finland",
@@ -7389,7 +7444,7 @@
     "confidence": "high",
     "verify_note": "Finland wife carrying world championships Sonkajärvi rules wife weight in beer",
     "created_at": "2026-10-14T03:45:35.989700+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "핀란드에서는 남자가 아내를 안고 장애물 코스를 달리면 상금이… 라는 말, 궁금하시죠? 매년 7월, 소니아르비에 있는 ‘Wife Carrying’ 대회가 열립니다. 남성 참가자들은 아내 혹은 무게가 20 kg인 인형을 들어 253 미터 길이의 울퉁불퉁한 코스를 달리는데요. 코스에는 모래 구덩이, 물 웅덩이, 나무 장벽 같은 다양한 장애물이 놓여 있습니다. 이 행사는 전설적인 목동이 아내를 안고 달리던 이야기를 기념해 시작된 전통 행사라고 합니다. 가장 흥미로운 점은 우승자가 받는 상금이 바로 아내의 체중만큼의 맥주라는 사실입니다. 예전부터 전통적으로 그 무게에 해당하는 양의 맥주가 상금으로 제공돼 왔죠. 다만, 이 규칙은 소니아르비 공식 대회에만 적용되며, 지역별 비공식 경기에서는 상금이 다를 수 있다는 점을 기억해 주세요. 아내를 안고 달리는 그 순간, 과연 얼마나 무거운 맥주가 기다리고 있을까요?",
     "title_line1": "핀란드 아내 달리기",
     "title_line2": "우승 맥주는 체중만큼?",
@@ -7418,7 +7473,62 @@
       "legendary shepherd wife beer",
       "beer barrel prize Finland",
       "heavy beer barrels"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0139_Finland_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0139_Finland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Finland wife carrying prize",
+      "Finland 253 meter obstacle",
+      "sand pit water obstacle",
+      "legendary shepherd wife beer",
+      "beer barrel prize Finland",
+      "heavy beer barrels"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "U.S. Army Reserve photo by Sgt. Tamie Norris",
+        "license": "Public domain",
+        "title": "Know Your Defender - Brig Gen Christopher Samulski (8399934).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Know_Your_Defender_-_Brig_Gen_Christopher_Samulski_(8399934).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/toad-frog-animal-character-pond-8298947/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "javierAlamo",
+        "page": "https://pixabay.com/photos/quarry-gravel-pit-gravel-sand-4786257/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/beers-glasses-of-beer-drink-alcohol-1283566/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/beer-barrel-keg-cask-oak-barrel-956322/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ReinhardThrainer",
+        "page": "https://pixabay.com/photos/barrel-barrels-wine-barrel-3943965/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0139_Finland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Netherlands",
