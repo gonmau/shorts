@@ -6520,7 +6520,36 @@
     "confidence": "high",
     "verify_note": "Russian banya venik birch oak parilka parenie tradition",
     "created_at": "2026-10-13T03:55:28.885876+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "러시아 사우나에서는 나무가지로 몸을 두드린다고 들어보셨나요? 바로 그 전통이 ‘바냐’입니다. 뜨거운 습식 증기실, 즉 ‘파릴카’에 들어가 땀을 흘린 뒤, 자작나무나 참나무 가지를 엮어 만든 ‘베니크’를 따뜻한 물에 적십니다. 그 베니크를 손에 잡고 몸 위에 뜨거운 증기를 끌어내며 가볍게 두드리거나 쓸어주는 과정을 ‘파레니예’라고 부릅니다. 이때 피부가 자극을 받아 혈액순환이 촉진되고, 근육이 이완되는 효과를 느낄 수 있죠. 흥미로운 점은 베니크가 단순히 두드리는 도구가 아니라, 뜨거운 공기를 몸 쪽으로 모아주고 향과 습기를 전달해 주는 역할도 한다는 것입니다. 하지만 베니크 사용은 선택 사항이며, 바냐 종류나 개인 취향, 지역에 따라 강도와 방식이 달라집니다. 모든 러시아 사우나에서 필수적인 것은 아니니, 체험할 때는 현지 분위기에 맞춰 즐겨 보세요. 결국, 나뭇가지를 휘두르는 그 순간이 바로 전통과 교류가 만나는 순간이 아닐까요?",
+    "title_line1": "러시아 사우나 비밀",
+    "title_line2": "나뭇가지로 두드린다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "나뭇가지로 *두드리기*"
+      },
+      {
+        "s": 3,
+        "text": "베니크로 *증기*"
+      },
+      {
+        "s": 4,
+        "text": "*파레니예* 몸 풀기"
+      },
+      {
+        "s": 5,
+        "text": "피부 자극·*혈액순환*"
+      }
+    ],
+    "image_queries": [
+      "Russian banya branch beating",
+      "Russian banya venik steam",
+      "Russian banya parenie massage",
+      "Birch venik airflow",
+      "Russian banya interior",
+      "Russian sauna steam room"
+    ]
   },
   {
     "country": "Norway",
@@ -6532,7 +6561,32 @@
     "confidence": "high",
     "verify_note": "Norway reflective vest car requirement emergency stop CE marked 2007",
     "created_at": "2026-10-13T03:55:57.688338+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "노르웨이에서는 차가 멈추고 차 밖으로 나올 때, 반사조끼를 입어야 한다는 얘기를 들어보셨나요? 실제로 노르웨이 법은 운전자가 쉽게 꺼낼 수 있는 위치에 CE 인증을 받은 반사조끼를 최소 한 개 비치하도록 규정하고 있습니다. 긴급 정차나 사고 현장에서 차문을 열고 나올 때, 어두운 도로나 비오는 날씨에도 운전자와 보행자를 눈에 띄게 보호하기 위한 조치입니다. 이 조끼는 2007년부터 의무 비치 대상이 되었으며, 단순히 트렁크에 넣어 두는 것이 아니라 운전석 근처, 즉 손쉽게 잡을 수 있는 곳에 보관해야 합니다. 다만, 이 착용 의무는 차 밖으로 나오는 긴급 상황에만 적용되며, 일반 주행 중이나 평소 주차 상태에서는 항상 입어야 한다는 뜻은 아닙니다. 그래서 비상시에만 꺼내 입으면 되는 것이죠. 결국, 어두운 길에서도 눈에 잘 띄는 반사조끼 하나가 안전을 크게 높여준다는 점, 생각해 보시면 흥미롭지 않나요?",
+    "title_line1": "노르웨이 차 정차 시",
+    "title_line2": "반사조끼 꼭 입어야?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "반사조끼 *필수*?"
+      },
+      {
+        "s": 2,
+        "text": "차에 *비치* 규정"
+      },
+      {
+        "s": 3,
+        "text": "어두운 길 *눈에*"
+      }
+    ],
+    "image_queries": [
+      "Norway reflective vest",
+      "Norway car safety vest",
+      "Norway dark road vest",
+      "Norway car interior vest",
+      "emergency car reflective vest",
+      "reflective vest night road"
+    ]
   },
   {
     "country": "South Korea",
@@ -6593,5 +6647,149 @@
     "verify_note": "Norway Personal Names Act Skatteetaten name registration six months rejected names appeal",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
     "status": "verified"
+  },
+  {
+    "country": "Iceland",
+    "topic": "National naming committee that approves baby names",
+    "hook": "아이 이름, 아이슬란드에서는 정부가 직접 승인합니다!",
+    "body": "아이슬란드에는 ‘Mannanafnanefnd’라는 국가 이름 위원회가 있어, 새로 태어난 아기의 이름을 공식 등록하기 전에 검토합니다. 이름이 아이에게 해를 끼치거나 언어 규칙에 맞지 않으면 거절되며, ‘Apple’, ‘Hazel’ 같은 외래식 이름은 흔히 거절됩니다.",
+    "twist": "2019년 한 부부가 ‘Mona Lisa’라는 이름을 신청했을 때 위원회가 거부했고, 거절된 이름을 사용하면 벌금이 부과될 수 있습니다.",
+    "caveat": "이 규정은 아이슬란드 주민에 한해 적용되며, 외국인 거주자는 현지 관습에 따라 다른 이름을 사용할 수 있습니다.",
+    "confidence": "high",
+    "verify_note": "Iceland naming committee approved names list 2023",
+    "created_at": "2026-10-14T03:44:43.286530+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Uruguay",
+    "topic": "Mate‑sharing circle in public spaces",
+    "hook": "우루과이 거리에서는 남녀노소가 같은 컵을 나눠 마신다!",
+    "body": "우루과이인들은 공원이나 광장에 모여 원형으로 앉아 ‘mate’라는 허브 차를 공유합니다. 한 사람이 뜨거운 물을 부어 ‘cimarrón’에 담고, 빨대를 통해 마시고 나면 “¡Gracias!”를 외치며 다음 사람에게 넘깁니다. 이 순환은 대화를 이어가게 하고, 낯선 사람도 자연스럽게 친해지는 매개체가 됩니다.",
+    "twist": "같은 mate가 몇 시간 동안 수십 번이나 전달되는데, 마지막까지 마신 사람은 행운이 따른다고 믿습니다.",
+    "caveat": "사회적 모임이나 카페에서 흔히 행해지지만, 공식적인 의식이나 학교에서는 필수 사항은 아닙니다.",
+    "confidence": "high",
+    "verify_note": "Uruguay mate sharing ritual circle tradition",
+    "created_at": "2026-10-14T03:44:43.286530+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Philippines",
+    "topic": "Bayanihan – communal house moving tradition",
+    "hook": "필리핀에서는 이웃이 집 전체를 들어 옮겨요!",
+    "body": "필리핀 시골 마을에서, 가족이 새 땅에 집을 짓고 싶을 때 이웃들이 대나무 기둥을 끼워 집을 들어 옮긴다. 모두가 힘을 합쳐 집을 들고 몇 블록을 걸어가며, 하루에 몇 킬로미터를 이동하기도 한다.",
+    "twist": "심지어 현대에도 일부 마을은 트럭 대신 이 전통을 고수해, SNS에 올라와 화제가 되었다.",
+    "caveat": "주로 루손 섬의 농촌 지역, 특히 전통을 중시하는 공동체에서 시행된다.",
+    "confidence": "high",
+    "verify_note": "Bayanihan house moving Philippines tradition",
+    "created_at": "2026-10-14T03:44:51.323816+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Indonesia",
+    "topic": "Toraja funeral rites – prolonged home keeping and Rambu Solo celebration",
+    "hook": "인도네시아 토라자에서는 죽은 사람을 집에 두고 살아요!",
+    "body": "수마트라 남부 토라자족은 고인의 시신을 방에 보관하고 몇 달, 때로는 1년까지 두었다가 ‘Rambu Solo’라는 대형 장례식을 연다. 이때 소를 희생하고, 시신을 전통 복장으로 입힌 뒤 음악과 춤으로 길을 보내며 죽은 이를 마을 공동체에 다시 맞이한다.",
+    "twist": "시신을 옮길 때는 살아 있는 사람처럼 행진에 참여해 마을 전체가 함께 축하한다.",
+    "caveat": "토라자 지역의 전통 토착 종교를 따르는 마을에서 주로 행해지며, 기독교 신자들은 일부 요소를 생략한다.",
+    "confidence": "high",
+    "verify_note": "Toraja funeral rites Rambu Solo buffalo sacrifice",
+    "created_at": "2026-10-14T03:44:51.323816+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Laos",
+    "topic": "Baci ceremony – tying white threads for blessings",
+    "hook": "라오스에서는 새끼에게 실을 묶어 행운을 부른다!",
+    "body": "라오스에서는 출산이나 결혼 같은 중요한 순간에 ‘바시’라는 의식을 행한다. 사람들은 흰 실을 손목에 묶으며 영혼이 몸을 떠돌지 않게 하고 복을 기원한다. 이 실은 보통 하루 정도 남아 있다가 풀린다.",
+    "twist": "바시 실은 종종 집 안에 걸어두어 가족 전체의 복을 지키는 부적처럼 쓰인다.",
+    "caveat": "라오스 전역의 라오족 및 일부 타이족 커뮤니티에서, 전통 라오식 종교를 따르는 경우에 행해진다.",
+    "confidence": "high",
+    "verify_note": "Baci ceremony Laos white thread ritual",
+    "created_at": "2026-10-14T03:44:51.323816+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "Wife Carrying World Championships",
+    "hook": "핀란드에서는 남자가 아내를 안고 장애물 코스를 달리면 상금이…",
+    "body": "매년 7월, 소니아르비에 위치한 ‘Wife Carrying’ 대회에서 남성들은 아내 혹은 20 kg짜리 인형을 안고 253 m 길이의 울퉁불퉁한 코스를 달린다. 코스에는 모래 구덩이, 물 웅덩이, 나무 장벽 등이 있다. 전설적인 목동이 아내를 안고 달리던 이야기를 기념해 시작된 행사다.",
+    "twist": "우승자는 아내의 체중만큼의 맥주(전통적으로는 그 무게에 해당하는 양의 맥주)를 상금으로 받는다.",
+    "caveat": "이 규칙은 소니아르비 공식 대회에만 적용되며, 지역별 비공식 경기에서는 상금이 다를 수 있다.",
+    "confidence": "high",
+    "verify_note": "Finland wife carrying world championships Sonkajärvi rules wife weight in beer",
+    "created_at": "2026-10-14T03:45:35.989700+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Netherlands",
+    "topic": "Elfstedentocht – 11‑city ice skating marathon",
+    "hook": "네덜란드에서는 겨울에 얼음이 충분히 두껍다면 200km 스케이트 대회가 열린다!",
+    "body": "프리슬란 주의 운하와 호수를 따라 11개의 도시를 연결한 200 km 코스인 엘프스테덴도흐트는 자연 얼음이 15 cm 이상 두껍게 얼어야만 개최된다. 마지막 공식 레이스는 1997년에 있었고, 그때부터 매년 얼음 상황을 관찰하며 대회 가능 여부를 판단한다.",
+    "twist": "얼음이 충분히 좋을 경우, 전 국민이 출발선에 몰려들어 일시적인 ‘얼음 휴일’이 선언되고, 학교와 기업이 문을 닫는다.",
+    "caveat": "행사는 프리슬란 주에 한정되며, 안전 기준을 충족하는 경우에만 열릴 수 있다; 매년 열리는 행사는 아니다.",
+    "confidence": "high",
+    "verify_note": "Elfstedentocht 200 km ice skating eleven cities Friesland last race 1997",
+    "created_at": "2026-10-14T03:45:35.989700+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Mongolia",
+    "topic": "Kazakh eagle hunting tradition",
+    "hook": "몽골의 카자흐족은 400년 전통으로 황금독수리를 훈련시켜 눈사람을 사냥한다!",
+    "body": "서부 알타이 산맥에 사는 카자흐족 가정은 5~7살 된 새끼 황금독수리를 잡아 훈련시킨다. 사냥꾼은 가죽 장갑에 독수리를 얹고, 새가 급강하해 토끼·여우를 잡아 다시 손에 가져온다. 이 전통은 아버지에서 아들로 전해지며, 매년 바얀-올기이에서 열리는 ‘골든 이글 페스티벌’에서 공개 시연된다.",
+    "twist": "독수리는 사냥이 끝난 뒤에도 30년 가량 가족과 함께 살아가며, 사냥 능력이 떨어지면 은퇴해 가족의 일원으로 남는다.",
+    "caveat": "이 관습은 서부 몽골의 카자흐족에게만 제한되며, 야생동물 보호법에 따라 사냥 대상과 방법이 규제된다.",
+    "confidence": "high",
+    "verify_note": "Mongolia Kazakh eagle hunting golden eagle festival Bayan-Ölgii",
+    "created_at": "2026-10-14T03:45:35.989700+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Georgia",
+    "topic": "Supra feast with tamada (toastmaster) tradition",
+    "hook": "조용한 식탁이 30분 만에 2시간짜리 토스트 마라톤으로 변한다!",
+    "body": "조지아의 전통적인 연회인 ‘수프라’에서는 주인공인 타마다가 연속으로 20~30번 정도 토스트를 올리며, 각 토스트마다 손님들은 일어나 술을 마시고 축하의 말을 해야 한다. 토스트는 보통 2~3분 정도 길게 이어지며, 손님들은 토스트 내용에 맞춰 웃거나 감동을 표한다.",
+    "twist": "외국인 손님이라도 한 번도 술을 마시지 않았다고 해도 최소 10번 이상의 토스트에 끼어야 하는 암묵적인 규칙이 있다.",
+    "caveat": "주로 전통 가정이나 문화 행사에서, 특히 수도 트빌리시와 주요 도시의 레스토랑에서 주로 볼 수 있다.",
+    "confidence": "high",
+    "verify_note": "Georgian supra tamada toast tradition",
+    "created_at": "2026-10-14T03:45:53.836730+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Finland",
+    "topic": "Newborn sauna ceremony (vauvan sauna)",
+    "hook": "핀란드에서는 아기 첫 목욕이 뜨거운 사우나!",
+    "body": "핀란드 가정에서는 출생 후 몇 주 안에 신생아를 짧게(5~10분) 사우나에 데려가 ‘아기 사우나’를 진행한다. 이 전통은 아기의 혈액순환을 돕고 면역력을 높인다고 믿으며, 가족 모두가 함께 사우나에 들어가 축하한다.",
+    "twist": "사우나를 마친 뒤에는 부모가 바로 차가운 호수나 얼음물에 몸을 뛰어들어 몸을 식히는 것이 관례다.",
+    "caveat": "특히 라플란드와 남부 지방의 전통 가정에서 흔히 행해지며, 도시 아파트에서는 선택적으로 시행된다.",
+    "confidence": "high",
+    "verify_note": "Finnish baby sauna tradition, vauvan sauna",
+    "created_at": "2026-10-14T03:45:53.836730+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Belgium",
+    "topic": "Binche Carnival – Gilles wearing wax masks and throwing oranges",
+    "hook": "벨기에 Binche에서는 오렌지를 던지는 광란의 축제가 열린다!",
+    "body": "2년마다 열리는 Binche 카니발에서 ‘질레’라 불리는 남자들이 전통적인 황색 와크와 목재 신발, 그리고 밀랍 마스크를 쓰고 거리로 나선다. 그들은 관중에게 오렌지를 던지며, 관중은 헬멧과 방패를 착용해 맞받는다.",
+    "twist": "사용되는 오렌지는 실제 과일이 아니라, 껍질이 두껍고 튼튼하도록 특별히 재배된 품종으로, 부상 위험을 최소화하기 위해 미리 준비한다.",
+    "caveat": "이 전통은 벨기에 남부의 Binche와 인근 마을에서만 행해지며, 매 2년마다 열리는 카니발 기간에만 적용된다.",
+    "confidence": "high",
+    "verify_note": "Binche Gilles carnival orange throwing",
+    "created_at": "2026-10-14T03:45:53.836730+00:00",
+    "status": "unverified"
+  },
+  {
+    "country": "Singapore",
+    "topic": "Therapeutic chewing gum permit despite the gum ban",
+    "hook": "싱가포르에서 껌을 사려다 5분 동안 구속당할 뻔했다!",
+    "body": "1992년부터 싱가포르는 껌 판매를 전면 금지했지만, 2004년 이후 의료용 껌(니코틴·구강 위생용)만은 의사의 처방과 보건당국 허가를 받아 약국에서 구입할 수 있다. 관광객이 일반 가게에서 껌을 사려 하면 판매가 거부되고, 직원은 정중히 이유를 설명한다.",
+    "twist": "치과 의사는 환자에게 껌을 제공하면서도, 진료실 안에서만 씹도록 제한하고, 껌을 다 씹은 뒤에는 바로 폐기하도록 지시한다.",
+    "caveat": "이 규정은 2004년 이후 전 싱가포르 전역에 적용되며, 의료용 껌은 지정된 약국에서만 제한적으로 판매된다.",
+    "confidence": "high",
+    "verify_note": "Singapore chewing gum ban therapeutic gum permit",
+    "created_at": "2026-10-14T03:45:53.836730+00:00",
+    "status": "unverified"
   }
 ]
