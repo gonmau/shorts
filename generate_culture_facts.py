@@ -2,7 +2,7 @@
 세계 문화 상식 쇼츠 - 소재 자동 생성 스크립트
 
 기능:
-1. Claude API로 국가별 흥미로운 문화 상식 소재를 배치 생성
+1. 위키백과 발췌문(나라 x 분야)을 근거로 LLM(Groq)이 문화 상식 소재를 만든다. 접속 실패 시 모델 기억 방식으로 대체
 2. facts_db.json에 누적 저장, 이미 쓴 소재(국가+주제)는 중복 방지 (같은 나라도 주제가 다르면 허용)
 3. 각 소재는 훅 문장 + 본문 설명 + 반전/추가정보 구조로 생성되어
    바로 다음 단계(스크립트→TTS) 파이프라인에 넣을 수 있는 형태
@@ -29,7 +29,11 @@ import argparse
 from datetime import datetime, timezone
 from pathlib import Path
 
+import re
+import requests
 from groq import Groq
+
+import wiki_source
 
 DB_PATH = Path("facts_db.json")
 
@@ -80,6 +84,7 @@ def build_prompt(count: int, used: str) -> str:
     return f"""세계 각국의 흥미로운 문화/관습/법 상식을 유튜브 쇼츠 소재로 {count}개 생성해줘.
 
 조건:
+- 모든 필드는 한국어로 쓰고, 고유명사는 한국어 표기 뒤에 괄호로 원어를 적을 것 (영어 문장 금지)
 - 같은 나라가 다시 나와도 되지만, 이미 쓴 주제와 겹치면 안 됨 (같은 나라라면 완전히 다른 관습/법/음식/언어 소재로)
 - 한 번에 생성하는 소재끼리는 되도록 서로 다른 나라로 다양하게
 - 시청자가 "어?" 하고 멈출 만큼 의외성이 있을 것
@@ -110,6 +115,154 @@ def build_prompt(count: int, used: str) -> str:
     "verify_note": "사실 확인 시 참고할 키워드 (사람이 검수할 때 검색할 용도)"
   }}
 ]"""
+
+
+# ---------- 품질 필터: 한국어 확인 / 같은 나라 안에서 주제 중복 방지 ----------
+def _hangul_ratio(text: str) -> float:
+    letters = re.findall(r"[A-Za-z가-힣]", str(text or ""))
+    if not letters:
+        return 0.0
+    return sum(1 for c in letters if "가" <= c <= "힣") / len(letters)
+
+
+def is_korean(f: dict) -> bool:
+    """한국어 채널이므로 주제/훅/본문이 한국어여야 한다 (영어로 나온 소재는 버린다)."""
+    if not re.search(r"[가-힣]", str(f.get("topic", ""))):
+        return False
+    return _hangul_ratio(f"{f.get('topic', '')} {f.get('hook', '')} {f.get('body', '')}") >= 0.5
+
+
+def _grams(text: str) -> set:
+    t = re.sub(r"[^0-9a-z가-힣]", "", str(text or "").lower())
+    return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) > 1 else {t}
+
+
+def _sim(a: str, b: str) -> float:
+    ga, gb = _grams(a), _grams(b)
+    return len(ga & gb) / len(ga | gb) if ga and gb else 0.0
+
+
+def is_duplicate(f: dict, pool: list) -> bool:
+    """같은 위키 문서이거나, 같은 나라에서 주제/훅이 비슷하면 중복. (같은 나라라도 주제가 다르면 허용)"""
+    wt = wiki_source._norm(f.get("wiki_title", ""))
+    c = str(f.get("country", "")).strip().lower()
+    for o in pool:
+        if wt and wt == wiki_source._norm(o.get("wiki_title", "")):
+            return True
+        if str(o.get("country", "")).strip().lower() != c:
+            continue
+        if max(_sim(f.get("topic"), o.get("topic")), _sim(f.get("hook"), o.get("hook"))) >= 0.5:
+            return True
+    return False
+
+
+def filter_new(batch: list, db: list) -> list:
+    kept, pool = [], list(db)
+    for f in batch:
+        if not is_korean(f):
+            print(f"  한국어가 아니어서 제외: {str(f.get('country'))} / {str(f.get('topic'))[:40]}")
+            continue
+        if is_duplicate(f, pool):
+            print(f"  중복(같은 나라+비슷한 주제) 제외: {f.get('country')} / {f.get('topic')}")
+            continue
+        pool.append(f)
+        kept.append(f)
+    return kept
+
+
+# ---------- 위키백과 근거 기반 생성 ----------
+def build_wiki_prompt(cands: list) -> str:
+    blocks = "\n\n".join(
+        f"[{i}] 나라: {c['country']} / 분야: {c['theme']} / 위키 문서: {c['title']}\n발췌: {c['extract'][:700]}"
+        for i, c in enumerate(cands, start=1)
+    )
+    return f"""아래는 위키백과 발췌문 {len(cands)}개야. 각 발췌문에서 유튜브 쇼츠 소재를 최대 1개씩 만들어줘.
+
+규칙:
+- 반드시 발췌문에 적힌 사실만 사용. 발췌문에 없는 내용, 숫자, 연도를 추가하지 말 것
+- 모든 필드는 한국어로 쓰고, 고유명사는 한국어 표기 뒤에 괄호로 원어를 적을 것 (영어 문장 금지)
+- 시청자가 "어?" 하고 멈출 의외의 장면/상황/규칙 하나를 골라 사람이 곤란하거나 놀라는 장면으로 풀 것
+- 개요 설명, 단순 정의, 지루하거나 너무 일반적인 내용, 종교/전쟁/정치적으로 민감한 내용이면 그 번호는 건너뛸 것
+- "모든", "항상", "세계 최초" 같은 단정은 발췌문이 분명히 말할 때만. 일부 지역/일부 사람의 관습이면 범위를 한정할 것
+- 한 소재는 한 가지 사실에 집중할 것
+
+{blocks}
+
+JSON 배열로만 응답 (설명/마크다운 금지). src는 위 번호:
+[
+  {{"src": 1, "topic": "주제 한 줄 요약", "hook": "영상 시작 3초용 후킹 문장", "body": "본문 2~3문장 (배경 포함)",
+    "twist": "반전이나 추가 정보 1문장", "caveat": "이 사실의 한계 한 문장 (어디서/누구에게/언제)"}}
+]"""
+
+
+def generate_wiki_batch(client: Groq, model: str, cands: list) -> list:
+    last_err = None
+    completion = None
+    for max_tok in (3000, 2000):
+        try:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": build_wiki_prompt(cands)}],
+                max_completion_tokens=max_tok,
+                temperature=0.6,
+            )
+            break
+        except Exception as e:
+            last_err = e
+            msg = str(e)
+            if "413" in msg or "rate_limit" in msg or "429" in msg:
+                print(f"  [Groq 한도] 요청을 줄여 다시 시도합니다: {msg[:120]}")
+                time.sleep(20)
+                continue
+            raise ValueError(f"Groq 호출 실패: {msg[:200]}")
+    if completion is None:
+        raise ValueError(f"Groq 호출 실패: {str(last_err)[:200]}")
+    text = completion.choices[0].message.content or ""
+    if not text.strip():
+        raise ValueError("응답이 비어있음")
+    out = []
+    for f in extract_json_array(text):
+        try:
+            c = cands[int(f.get("src")) - 1]
+        except (TypeError, ValueError, IndexError):
+            continue
+        f.pop("src", None)
+        f.update({
+            "country": c["country"], "theme": c["theme"], "wiki_title": c["title"], "source_url": c["url"],
+            "verify_note": c["title"],            # 영어 위키 제목: 사람이 검수/이미지 검색할 때 쓰는 키워드
+            "confidence": "source",               # 위키백과 발췌문 기반 (LLM 기억 기반 아님)
+        })
+        out.append(f)
+    return out
+
+
+def generate_wiki_facts(client: Groq, model: str, count: int, db: list) -> list:
+    session = requests.Session()
+    cands = wiki_source.gather(session, db, count)
+    print(f"위키백과 후보 {len(cands)}개 수집")
+    all_new: list = []
+    BATCH = 3
+    for i in range(0, len(cands), BATCH):
+        if len(all_new) >= count:
+            break
+        chunk = cands[i:i + BATCH]
+        try:
+            batch = generate_wiki_batch(client, model, chunk)
+        except (ValueError, json.JSONDecodeError) as e:
+            print(f"  배치 실패, 건너뜀: {e}")
+            continue
+        batch = filter_new(batch, db)[: count - len(all_new)]
+        if not batch:
+            continue
+        now = datetime.now(timezone.utc).isoformat()
+        for fact in batch:
+            fact["created_at"] = now
+            fact["status"] = "unverified"
+        db.extend(batch)
+        save_db(db)
+        all_new.extend(batch)
+        print(f"  진행: {len(all_new)}/{count} (DB 즉시 저장 완료)")
+    return all_new
 
 
 BATCH_SIZE = 4  # Groq TPM 8,000 제한을 고려해 요청 크기를 줄임
@@ -202,16 +355,7 @@ def generate_facts(
 
         # 실제 반환 개수만큼 진행
         batch = batch[:batch_count]
-        seen = {(str(f.get("country", "")).strip().lower(), str(f.get("topic", "")).strip().lower()) for f in db}
-        uniq = []
-        for f in batch:
-            k = (str(f.get("country", "")).strip().lower(), str(f.get("topic", "")).strip().lower())
-            if k in seen:
-                print(f"  중복 제외: {f.get('country')} / {f.get('topic')}")
-                continue
-            seen.add(k)
-            uniq.append(f)
-        batch = uniq
+        batch = filter_new(batch, db)
         if not batch:
             remaining -= batch_count
             continue
@@ -246,6 +390,8 @@ def generate_facts(
 def main():
     parser = argparse.ArgumentParser(description="세계 문화 상식 소재 자동 생성")
     parser.add_argument("--count", type=int, default=20, help="생성할 소재 개수 (기본 20)")
+    parser.add_argument("--source", choices=["wiki", "llm"], default="wiki",
+                        help="wiki=위키백과 발췌문 기반(기본), llm=모델 기억 기반(위키 접속 실패 시 자동 대체)")
     args = parser.parse_args()
 
     api_key = os.environ.get("GROQ_API_KEY")
@@ -260,13 +406,17 @@ def main():
     print(f"기존 DB: {len(db)}개 소재 보유")
     print(f"신규 생성 요청: {args.count}개")
 
-    new_facts = generate_facts(
-        client,
-        model,
-        args.count,
-        used_summary(db),
-        db,
-    )
+    new_facts = []
+    if args.source == "wiki":
+        try:
+            new_facts = generate_wiki_facts(client, model, args.count, db)
+        except Exception as e:
+            print(f"위키백과 방식 실패 ({type(e).__name__}: {str(e)[:120]}) -> 모델 기억 방식으로 대체")
+        if len(new_facts) < args.count:
+            print(f"위키 방식으로 {len(new_facts)}개 생성, 부족분은 모델 기억 방식으로 보충합니다")
+    left = args.count - len(new_facts)
+    if left > 0:
+        new_facts += generate_facts(client, model, left, used_summary(db), db)
 
     print(f"완료: {len(new_facts)}개 추가, 총 {len(db)}개 소재 보유")
     print(f"저장 위치: {DB_PATH.resolve()}")
