@@ -7188,7 +7188,32 @@
     "confidence": "high",
     "verify_note": "Iceland naming committee approved names list 2023",
     "created_at": "2026-10-14T03:44:43.286530+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아이 이름, 아이슬란드에서는 정부가 직접 승인합니다! 아이슬란드에는 ‘Mannanafnanefnd’, 즉 국가 이름 위원회가 있습니다. 새로 태어난 아기의 이름을 공식 등록하기 전에 이 위원회가 꼼꼼히 검토하죠. 이름이 아이에게 해를 끼칠 우려가 있거나 아이슬란드어 언어 규칙에 맞지 않으면 거절됩니다. 그래서 ‘Apple’이나 ‘Hazel’ 같은 외래식 이름은 흔히 받아들여지지 않아요.  \n\n특히 기억에 남는 사례가 있습니다. 2019년 한 부부가 ‘Mona Lisa’라는 이름을 신청했는데, 위원회는 이를 거부했어요. 만약 거절된 이름을 그대로 사용한다면 벌금이 부과될 수 있습니다.  \n\n하지만 이 규정은 아이슬란드 주민에게만 적용됩니다. 외국인 거주자는 현지 관습에 따라 다른 이름을 사용할 수 있죠. 이름 하나에 담긴 문화와 규칙, 생각해 보셨나요?",
+    "title_line1": "아이슬란드 이름 심사",
+    "title_line2": "이름이 거절될까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "정부가 *승인*해요"
+      },
+      {
+        "s": 4,
+        "text": "해를 *끼칠* 금지"
+      },
+      {
+        "s": 7,
+        "text": "모나리자 *거부*"
+      }
+    ],
+    "image_queries": [
+      "Iceland government building",
+      "Iceland naming committee",
+      "Iceland warning sign",
+      "Iceland official desk",
+      "Iceland fine notice",
+      "Iceland foreign resident"
+    ]
   },
   {
     "country": "Uruguay",
@@ -7200,7 +7225,32 @@
     "confidence": "high",
     "verify_note": "Uruguay mate sharing ritual circle tradition",
     "created_at": "2026-10-14T03:44:43.286530+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "우루과이 거리에서는 남녀노소가 같은 컵을 나눠 마신다! 공원이나 광장에 모이면 사람들은 원형으로 앉아 ‘mate’라는 허브 차를 함께 나눕니다. 한 사람이 뜨거운 물을 부어 ‘cimarrón’에 담고, 빨대로 마신 뒤 “¡Gracias!”라고 외치며 다음 사람에게 넘깁니다. 이렇게 순환이 이어지면 자연스럽게 대화가 이어지고, 처음 보는 사람도 금방 친해집니다. 흥미로운 점은 같은 mate가 몇 시간 동안 수십 번이나 전달된다고 하는데, 마지막까지 마신 사람에게는 행운이 따른다고 믿는다는 겁니다. 이 풍습은 공공 장소에서 흔히 볼 수 있지만, 공식적인 의식이나 학교 같은 곳에서는 필수 사항은 아니니, 자유롭게 즐기는 문화라고 할 수 있습니다. 한 번의 차가 만들어내는 따뜻한 연결고리가, 거리 곳곳에 남는 여운처럼 오래도록 기억될지도 모릅니다.",
+    "title_line1": "우루과이 거리 마테",
+    "title_line2": "같은 컵에 행운?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "같은 컵에 *마시기*"
+      },
+      {
+        "s": 2,
+        "text": "원형으로 *공유*"
+      },
+      {
+        "s": 5,
+        "text": "마지막에 *행운*"
+      }
+    ],
+    "image_queries": [
+      "Uruguay mate sharing circle",
+      "Uruguay person pouring mate",
+      "Uruguay mate conversation circle",
+      "Uruguay last mate luck",
+      "informal mate gathering public",
+      "warm mate connection street"
+    ]
   },
   {
     "country": "Philippines",
@@ -7212,7 +7262,32 @@
     "confidence": "high",
     "verify_note": "Bayanihan house moving Philippines tradition",
     "created_at": "2026-10-14T03:44:51.323816+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "필리핀에서는 이웃이 집 전체를 들어 옮겨요! 시골 마을에 새 땅을 잡으면, 가족이 직접 새 집을 짓기 전 이웃들이 대나무 기둥을 삽입해 집을 들어 올립니다. 모두가 힘을 모아 몇 블록을 걸어가며, 하루에 몇 킬로미터까지 이동하기도 합니다. 흥미롭게도, 현대에도 일부 마을은 트럭 대신 이 전통 방식을 고수해요. 그 모습이 SNS에 올라오면서 큰 화제가 되었죠. 다만 이런 행사는 주로 루손 섬의 농촌 지역, 전통을 중시하는 공동체에서 주로 이루어진다는 점을 기억해 주세요. 옛날 방식이 오늘도 살아 숨 쉬는 모습을 보면, 공동체의 힘이 얼마나 큰지 다시 한 번 느껴지지 않나요?",
+    "title_line1": "필리핀 집 옮기기",
+    "title_line2": "얼마나 멀리 움직일까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "이웃이 *집* 들어옮겨"
+      },
+      {
+        "s": 2,
+        "text": "새 땅에 *대나무* 지탱"
+      },
+      {
+        "s": 4,
+        "text": "현대에도 *전통* 고수"
+      }
+    ],
+    "image_queries": [
+      "neighbors moving house Philippines",
+      "bamboo pillars house Philippines",
+      "traditional house moving Philippines",
+      "villagers watching house move",
+      "rural Luzon village Philippines",
+      "community teamwork house moving"
+    ]
   },
   {
     "country": "Indonesia",
@@ -7224,7 +7299,40 @@
     "confidence": "high",
     "verify_note": "Toraja funeral rites Rambu Solo buffalo sacrifice",
     "created_at": "2026-10-14T03:44:51.323816+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "인도네시아 토라자에서는 죽은 사람을 집에 두고 살아요! 수마트라 남부에 사는 토라자족은 고인의 시신을 방에 보관하고 몇 달, 때로는 1년까지 두어요. 그 기간이 끝나면 ‘Rambu Solo’라는 대형 장례식을 엽니다. 소를 희생하고, 시신을 전통 복장으로 입힌 뒤 음악과 춤으로 길을 보내죠. 흥미로운 점은 시신을 옮길 때 마치 살아 있는 사람처럼 행진에 참여한다는 겁니다. 마을 전체가 함께 축하하며 고인을 마을 공동체에 다시 맞이합니다. 다만 이 의식은 전통 토착 종교를 따르는 마을에서 주로 행해지고, 기독교 신자들은 일부 요소를 생략합니다. 죽음과 삶을 동시에 기념하는 토라자의 독특한 문화, 생각보다 더 오래도록 기억될까요?",
+    "title_line1": "토라자, 시신을 집에 보관",
+    "title_line2": "왜 1년째 장례식?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "죽은 이 집에 *보관*"
+      },
+      {
+        "s": 2,
+        "text": "시신을 몇 *달* 보관"
+      },
+      {
+        "s": 4,
+        "text": "소희생 *전통복*"
+      },
+      {
+        "s": 5,
+        "text": "시신 행진 *생존*처럼"
+      },
+      {
+        "s": 6,
+        "text": "전체 *축하* 고인"
+      }
+    ],
+    "image_queries": [
+      "Toraja house with corpse",
+      "Rambu Solo funeral ceremony",
+      "Toraja buffalo sacrifice",
+      "Toraja funeral procession",
+      "Toraja village traditional ritual",
+      "Indonesian Toraja cultural celebration"
+    ]
   },
   {
     "country": "Laos",
@@ -7236,7 +7344,40 @@
     "confidence": "high",
     "verify_note": "Baci ceremony Laos white thread ritual",
     "created_at": "2026-10-14T03:44:51.323816+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "라오스에서는 새끼에게 실을 묶어 행운을 부른다고 들어보셨나요?  \n출산이나 결혼 같은 중요한 순간마다 라오족과 일부 타이족이 ‘바시’ 의식을 합니다.  \n흰 실을 손목에 매어 영혼이 몸을 떠돌지 않게 하고, 복을 기원하는 것이죠.  \n보통 하루 정도 실을 유지하고, 시간이 지나면 자연스럽게 풀립니다.  \n특히 이 실을 그냥 버리기보다는 집 안에 걸어두는 경우가 많습니다.  \n그럼 가족 전체의 복을 지키는 작은 부적처럼 역할을 하게 되죠.  \n하지만 이 의식은 전통 라오식 종교를 따르는 라오족 및 일부 타이족 커뮤니티에서 주로 행해진다는 점, 기억해 주세요.  \n실 하나에 담긴 깊은 의미, 다시 한 번 생각해보게 됩니다.",
+    "title_line1": "라오스 바시 의식",
+    "title_line2": "실 하나에 행운?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새끼에 *실* 묶어 행운?"
+      },
+      {
+        "s": 2,
+        "text": "중요 순간 *바시*"
+      },
+      {
+        "s": 3,
+        "text": "흰 *실* 복 기원"
+      },
+      {
+        "s": 5,
+        "text": "실을 *걸어* 부적"
+      },
+      {
+        "s": 8,
+        "text": "*실* 하나에 의미"
+      }
+    ],
+    "image_queries": [
+      "Laos baby white thread",
+      "Laos wedding baci ceremony",
+      "White thread wrist Laos",
+      "White thread hanging home",
+      "Laos traditional ceremony",
+      "Closeup white thread"
+    ]
   },
   {
     "country": "Finland",
