@@ -8173,7 +8173,36 @@
     "confidence": "high",
     "verify_note": "El Colacho baby jumping festival Castrillo de Murcia 2024 news",
     "created_at": "2026-10-14T12:12:57.248167+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "스페인에서는 악마가 아기를 뛰어넘으며 축복을 빕니다! 매년 6월, 북부 작은 마을 카스트릴로 데 무르시아에선 남자들이 악마 복장을 하고, 아기들을 매트 위에 눕힌 뒤 그 위를 뛰어넘는 의식을 진행합니다. 이 전통은 1620년부터 이어져 온 오래된 관습으로, 악마가 아이들을 ‘지워’ 악령을 쫓는 의미라고 전해집니다. 의식이 끝나면 마을 사람들은 같은 빵을 나눠 먹으며 행운을 기원합니다. 다만 이 행사는 카스트릴로 데 무르시아와 인근 몇몇 마을에서만 열리며, 스페인 전체가 참여하는 것은 아닙니다. 악마가 뛰어넘은 뒤 남은 빵 조각처럼, 우리의 일상에도 작은 축복이 남아 있기를.",
+    "title_line1": "스페인 악마, 아기 위",
+    "title_line2": "축복은 어떻게",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*뛰어넘는* 축복"
+      },
+      {
+        "s": 2,
+        "text": "*악마* 복장"
+      },
+      {
+        "s": 3,
+        "text": "*악마* 퇴치"
+      },
+      {
+        "s": 4,
+        "text": "같은 빵으로 *행운*"
+      }
+    ],
+    "image_queries": [
+      "baby jumping blessing Spain",
+      "devil costume festival",
+      "devil chasing babies",
+      "shared bread festival",
+      "Castrillo de Murcia village",
+      "bread crumbs blessing"
+    ]
   },
   {
     "country": "Mexico",
@@ -8185,7 +8214,32 @@
     "confidence": "high",
     "verify_note": "Noche de los Rábanos Oaxaca radish sculpture festival history",
     "created_at": "2026-10-14T12:12:57.248167+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "멕시코에서는 무시무시한 라디시로 거대한 조각을 만든다? 사실은 매년 12월 23일, 오악사카 주 라구나스 시장에 모여 라디시를 깎아 전통 인물·동물·종교 장면을 재현합니다. 1897년에 시작된 이 행사는 지금은 수백 명의 조각가가 참여해 화려한 전시를 만들죠. 완성된 라디시는 전날 밤 물에 담가 보관하고, 전시가 끝나면 지역 주민들에게 나눠 줘 모두가 먹을 수 있게 합니다. 이 독특한 라디시 조각 전시는 라구나스에서만 열리며, 다른 멕시코 지역에서는 찾아볼 수 없습니다. 물에 담가 보관한다는 점, 그리고 전시 후 바로 나눠 먹는다는 점이 바로 이 축제의 매력입니다. 과연 다음 해에도 또 어떤 라디시 이야기가 펼쳐질지 기대되지 않나요?",
+    "title_line1": "오악사카 라디시축제",
+    "title_line2": "거대한 조각이 살아?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*라디시* 조각?"
+      },
+      {
+        "s": 3,
+        "text": "수백 *조각가*"
+      },
+      {
+        "s": 6,
+        "text": "바로 *나눠* 먹기"
+      }
+    ],
+    "image_queries": [
+      "radish sculpture Mexico",
+      "Oaxaca radish carving festival",
+      "hundred radish sculptors",
+      "radish sculptures in water",
+      "people eating radish sculptures",
+      "night market radish display"
+    ]
   },
   {
     "country": "United States (Alaska)",
@@ -8197,7 +8251,32 @@
     "confidence": "high",
     "verify_note": "Whittier Alaska single building town 14‑story building residents",
     "created_at": "2026-10-14T12:12:57.248167+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "알래스카의 한 마을은 14층 건물 하나에 전부가 살아! 휘티어는 남동부 해안에 자리한 작은 마을로, 1970년대에 세워진 ‘베어 트리’라는 14층 건물에 약 200명의 주민이 모두 모여 삽니다. 건물 안에는 학교, 상점, 병원, 교회까지 들어서 있어 외부와 연결되는 통로는 오직 하나, 터널 하나뿐이죠. 겨울이 오면 눈보라가 몰아쳐서 주민들은 건물 안에서만 생활합니다. 실제로 차를 몰고 밖으로 나가면 눈에 파묻혀 길을 잃는 경우가 흔하다고 합니다. 이렇게 한 건물에 삶을 온전히 담은 휘티어는 약 200명 정도가 거주하는 특별한 곳이며, 이 생활 방식은 휘티어에만 적용된다는 점을 기억해 주세요. 눈보라가 몰아치는 밤, 건물 안에서만 이어지는 일상이 과연 얼마나 평온할까요?",
+    "title_line1": "휘티어 14층에 전부",
+    "title_line2": "눈보라 속 생활은?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "14층에 *전부* 살아!"
+      },
+      {
+        "s": 3,
+        "text": "학교·병원·교회 *한곳*에!"
+      },
+      {
+        "s": 4,
+        "text": "눈보라 속 *실내* 생활"
+      }
+    ],
+    "image_queries": [
+      "14-story building interior",
+      "Whittier Alaska 14-story building",
+      "school hospital church inside building",
+      "indoor living during snowstorm",
+      "Whittier Alaska single building town",
+      "Whittier night snowstorm inside"
+    ]
   },
   {
     "country": "Finland",
