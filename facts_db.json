@@ -6806,7 +6806,7 @@
     "confidence": "high",
     "verify_note": "Peru cuy guinea pig traditional Andean dish cuy al horno cuy chactado celebrations",
     "created_at": "2026-10-13T03:55:57.688338+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "페루 안데스 지방에서는 기니피그를 전통 요리로 먹는다? 바로 ‘쿠이’인데요, 고산지역에서 오랜 역사를 지닌 특별한 음식입니다. 쿠이는 명절이나 결혼식, 가족 모임 같은 중요한 자리에서 주로 제공됩니다. 손님에게 쿠이를 대접하는 것은 환대와 존중의 의미를 담고 있죠. 대표적인 조리법은 통째로 굽는 ‘쿠이 알 오르노’와 얇게 눌러 튀긴 ‘쿠이 차크타도’가 있습니다. 이 두 가지 방식 모두 안데스 사람들의 식문화와 정체성을 보여주는 대표적인 예입니다. 흥미롭게도 페루에서는 매년 10월 둘째 금요일을 ‘국가 쿠이의 날’로 지정해 기념합니다. 하지만 쿠이는 안데스 지역과 일부 도시 식당에서만 흔히 찾아볼 수 있고, 페루 전역의 모든 식당에서 일상적으로 먹는 음식은 아니라는 점, 기억해 주세요. 전통과 축제가 어우러진 쿠이, 다시 한 번 생각해 보면 안데스의 깊은 문화가 눈앞에 펼쳐집니다.",
     "title_line1": "페루 안데스 전통 요리",
     "title_line2": "쿠이, 정말 먹는 건가?",
@@ -6835,7 +6835,66 @@
       "Peru cuy national day",
       "cuy restaurant Peru",
       "cuy traditional Andean feast"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0130_Peru_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0130_Peru_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "cuy guinea pig Peru",
+      "cuy celebration serving",
+      "cuy al horno roasted",
+      "Peru cuy national day",
+      "cuy restaurant Peru",
+      "cuy traditional Andean feast"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ilona721",
+        "page": "https://pixabay.com/photos/cavia-caviidae-guinea-pig-7318119/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/drinks-alcohol-glasses-champagne-1283608/"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "David Berkowitz from New York, NY, USA",
+        "license": "CC BY 2.0",
+        "title": "Cuy - guinea pig - at food festival Lima Peru (4869824759).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cuy_-_guinea_pig_-_at_food_festival_Lima_Peru_(4869824759).jpg"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Camera-man",
+        "page": "https://pixabay.com/photos/mountain-river-torrent-scenic-8517546/"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Thomas Quine",
+        "license": "CC BY 2.0",
+        "title": "Roasted Guinea Pig (92501489).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Roasted_Guinea_Pig_(92501489).jpg"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Jason Hollinger",
+        "license": "CC BY 2.0",
+        "title": "Ex-guinea pigs - Flickr - pellaea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ex-guinea_pigs_-_Flickr_-_pellaea.jpg"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0130_Peru.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Bhutan",
