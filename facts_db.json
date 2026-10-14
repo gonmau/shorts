@@ -6906,7 +6906,7 @@
     "confidence": "medium",
     "verify_note": "Bhutan Tobacco Control Act 2010 sale import ban tourist cigarette allowance tax",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "부탄에서는 담배 판매가 금지돼 있을 정도로 담배 규제가 엄격하다고 들으셨나요? 실제로 부탄은 2010년에 시행된 담배통제법에 따라 담배의 재배·제조·유통·판매를 모두 금지했습니다. 개인이 담배를 소지하거나 수입하려면 정해진 절차와 높은 세금을 납부해야 하며, 허가 없이 수입·판매하면 처벌 대상이 됩니다. 이 법은 공공장소 흡연 제한과 함께 담배로 인한 건강 피해를 최소화하려는 목적을 가지고 있습니다. 흥미롭게도 외국인 관광객은 일정량까지 담배를 반입할 수 있지만, 역시 높은 세금을 내야 하고 규정을 어기면 벌금을 물게 됩니다. 다만, 담배 관련 규정과 벌금·반입 한도는 시행령과 시기에 따라 변동될 수 있으니, 부탄을 방문하기 전 최신 정보를 꼭 확인하시길 권합니다. 규제가 이렇게 강한 나라에서, 여러분은 담배 없이도 여행을 즐길 수 있을까요?",
     "title_line1": "부탄, 담배 금지",
     "title_line2": "관광객은 어떻게?",
@@ -6931,7 +6931,60 @@
       "Bhutan tourist cigarette allowance",
       "Bhutan travel information",
       "Bhutan smoke-free travel"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0131_Bhutan_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0131_Bhutan_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Bhutan tobacco ban",
+      "Bhutan 2010 tobacco law",
+      "Bhutan tobacco tax",
+      "Bhutan tourist cigarette allowance",
+      "Bhutan travel information",
+      "Bhutan smoke-free travel"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "sarahj1",
+        "page": "https://pixabay.com/photos/vaping-vape-smoke-e-cigarette-4508935/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "NoblePrime",
+        "page": "https://pixabay.com/photos/cigarette-tobacco-smoke-smoking-8547965/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/taxes-tax-evasion-police-handcuffs-1027103/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "mamun_here",
+        "page": "https://pixabay.com/photos/man-tourist-leisure-traveler-5501617/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "czheng_care",
+        "page": "https://pixabay.com/photos/bhutan-landscape-mountain-travel-5188306/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "peteranta",
+        "page": "https://pixabay.com/photos/heaven-nature-travel-mountain-3297032/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0131_Bhutan.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Italy",
@@ -6943,7 +6996,7 @@
     "confidence": "high",
     "verify_note": "Ivrea Battle of the Oranges Carnival February three days 500 tonnes oranges history",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이탈리아 피에몬테주 이브레아에서는 카니발 기간에 수백 톤의 오렌지가 전쟁 무기가 됩니다! 매년 2월, 사순절 전 화요일인 재의 수요일 전날까지 약 3일 동안 ‘오렌지 전투’가 펼쳐지죠. 전통에 따르면 폭군에 맞선 도시 반란을 재현하는 행사라서, 오렌지를 든 보행자 팀과 말이 끄는 수레에 탄 ‘폭군 군대’ 역할 참가자들이 서로 오렌지를 던지며 격돌합니다. 전투에 사용되는 오렌지는 수백 톤에 달하고, 전투가 끝난 뒤 남은 오렌지 찌꺼기는 수거돼 퇴비와 에너지 자원으로 재활용됩니다. 이 행사는 이브레아에서만 열리며, 정확한 날짜는 매년 카니발 일정에 따라 달라집니다. 참가자들은 보통 보호 장비를 착용하고, 오렌지 비가 쏟아지는 광경은 보는 이에게 강렬한 여운을 남깁니다. 과연 다음 해에도 또다시 오렌지 비가 내릴까요?",
     "title_line1": "이브레아 오렌지 전투",
     "title_line2": "오렌지는 어디로?",
@@ -6968,7 +7021,62 @@
       "orange recycling",
       "Ivrea carnival street",
       "orange rain festival"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0132_Italy_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0132_Italy_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Ivrea orange battle",
+      "February orange battle",
+      "people throwing oranges",
+      "orange recycling",
+      "Ivrea carnival street",
+      "orange rain festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Laurom",
+        "license": "Public domain",
+        "title": "Ivrea Carnevale Mugnaia 01.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Ivrea_Carnevale_Mugnaia_01.JPG"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "BLACK17BG",
+        "page": "https://pixabay.com/photos/february-sunset-the-sea-greece-sky-4822456/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Yolanda_Jost",
+        "page": "https://pixabay.com/photos/flower-meadow-happiness-freedom-7704516/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "FlorinBirj",
+        "page": "https://pixabay.com/photos/building-rubble-brick-roof-tiles-3700752/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Tho-Ge",
+        "page": "https://pixabay.com/photos/masquerade-carnival-disguise-8575709/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ELG21",
+        "page": "https://pixabay.com/photos/castle-tower-dust-orange-weather-7160603/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0132_Italy.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Norway",
@@ -6980,7 +7088,7 @@
     "confidence": "high",
     "verify_note": "Norway Personal Names Act Skatteetaten name registration six months rejected names appeal",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "노르웨이에서는 아이 이름을 정하면 바로 국가 인구등록 시스템에 신고해야 한다는 사실, 알고 계셨나요? 부모는 아이가 생후 6개월이 되기 전까지 이름을 등록해야 하고, 이 업무는 노르웨이 세무청이 담당합니다. 이름이 아이에게 심각한 불이익을 줄 수 있거나 명백히 불쾌하거나 부적절하면 신청이 거부됩니다. 예를 들어 욕설, 왕·공주 같은 칭호, 약품·질병 이름 등은 허용되지 않죠. 만약 거부당하면 다른 이름을 다시 신청하거나 주지사 사무소에 이의를 제기할 수 있습니다. 흥미롭게도 대부분의 경우 이름은 별다른 문제 없이 자동 승인되지만, 심사가 필요할 때는 별도 통지를 받게 됩니다. 이름 규정은 노르웨이 전역에 적용되지만, 실제 승인 여부는 각 신청과 법률 기준에 따라 달라진다는 점을 기억해 주세요. 결국, 이름 하나에도 꼼꼼한 검토가 필요하다는 점, 생각보다 신경 써야 할 부분이 많다는 점이 새롭게 다가오지 않나요?",
     "title_line1": "노르웨이이름등록",
     "title_line2": "거부될까?",
@@ -7013,7 +7121,62 @@
       "Norway approval stamp",
       "Map of Norway",
       "Norway paperwork desk"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0133_Norway_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0133_Norway_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Norway birth registration desk",
+      "Norwegian tax office building",
+      "Norwegian medicine bottle",
+      "Norway approval stamp",
+      "Map of Norway",
+      "Norway paperwork desk"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Gary Bembridge from London, UK",
+        "license": "CC BY 2.0",
+        "title": "Gary Bembridge Oslo Norway Holland America (52217537343).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Gary_Bembridge_Oslo_Norway_Holland_America_(52217537343).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "DAVID_UNDERLAND",
+        "page": "https://pixabay.com/photos/building-architecture-office-4884852/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "analogicus",
+        "page": "https://pixabay.com/photos/pharmacy-antique-old-chemicals-3377670/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "winvcf",
+        "page": "https://pixabay.com/photos/stamp-secret-important-official-3406367/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/holidays-car-map-travel-route-1283014/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "advogadoaguilar",
+        "page": "https://pixabay.com/photos/man-lawyer-office-desk-computer-5806011/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0133_Norway.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Iceland",
