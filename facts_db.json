@@ -8042,7 +8042,32 @@
     "confidence": "high",
     "verify_note": "Iceland Jólabókaflóð Christmas book flood tradition",
     "created_at": "2026-10-14T08:49:10.366883+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아이슬란드에서는 크리스마스 이브에 선물 대신 책을 쏟아붓니다! 12월 24일 저녁, 가족들이 모여 서로 새 책을 주고받고, 촛불과 난로 옆에서 밤새 페이지를 넘깁니다. 이 전통은 1940년대 전쟁 시절, 서적이 귀했지만 전쟁이 끝난 뒤에도 이어져 ‘책을 선물하는 밤’이 되었죠. 재미있는 점은, 그날 산 책을 최소 한 장이라도 읽어야 새해 복이 온다고 믿는다는 겁니다. 오늘날 아이슬란드 전역의 많은 가정이 여전히 이 풍습을 실천하지만, 일부 현대 가정에서는 전자책으로 대신하기도 합니다. 책이 흘러넘치는 그 밤, 여러분도 한 페이지를 넘겨볼까요?",
+    "title_line1": "아이슬란드 책밤",
+    "title_line2": "선물 대신 책, 왜?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "책을 *쏟아*"
+      },
+      {
+        "s": 2,
+        "text": "새 책 *교환* 밤"
+      },
+      {
+        "s": 4,
+        "text": "*한 장* 읽어야 복"
+      }
+    ],
+    "image_queries": [
+      "books spilling on table Iceland",
+      "family exchanging new books night",
+      "vintage books wartime Iceland",
+      "open book page Iceland",
+      "e-reader Christmas Iceland",
+      "hand turning page night"
+    ]
   },
   {
     "country": "Armenia",
@@ -8054,7 +8079,36 @@
     "confidence": "high",
     "verify_note": "Armenian khash tradition men gathering winter early morning",
     "created_at": "2026-10-14T08:49:32.549206+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아르메니아에서는 새벽 4시, 남자들만 모여 끈적한 수프를 마신다고 합니다! 이 수프는 ‘카시’라고 불리며, 소나 양의 발과 다리를 수십 시간 끓여 만든 진한 육수입니다. 추운 겨울, 남성들은 보통 지하실 같은 차가운 공간에 모여, 마늘과 보드카를 곁들여 한 그릇씩 뜨겁게 나눠 마시며 하루를 시작합니다. 전통적으로는 남성들만의 의식이었지만, 최근 몇몇 레스토랑에서는 여성 고객도 카시를 주문할 수 있게 메뉴에 올렸다고 하니, 조금씩 변화가 보이는 것이죠. 이 관습은 아르메니아 전역의 남성 모임, 특히 겨울철 새벽에 진행되는 경우가 많습니다. 남성들만의 특별한 아침, 이제는 누구에게든 열려 있을지도 모릅니다. 그 끈적한 맛과 따뜻함이 남겨주는 여운, 다시 한 번 떠올려 보고 싶지 않으신가요?",
+    "title_line1": "아르메니아새벽수프",
+    "title_line2": "남자만 마시는 이유?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새벽 *남자* 수프"
+      },
+      {
+        "s": 2,
+        "text": "진한 *카시* 육수"
+      },
+      {
+        "s": 3,
+        "text": "지하실 *보드카*"
+      },
+      {
+        "s": 4,
+        "text": "여성도 *카시* 가능"
+      }
+    ],
+    "image_queries": [
+      "Armenia early morning men soup",
+      "Armenian khash broth",
+      "Armenian basement vodka gathering",
+      "Armenian women ordering khash",
+      "Armenian winter men gathering",
+      "Armenian traditional soup ceremony"
+    ]
   },
   {
     "country": "Italy",
@@ -8066,7 +8120,36 @@
     "confidence": "high",
     "verify_note": "caffè sospeso napoli tradition, suspended coffee Naples",
     "created_at": "2026-10-14T08:49:50.880692+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "이탈리아에서는 커피 한 잔이 무언가를 ‘보류’한다는 사실, 알고 계셨나요? 나폴리의 오래된 바에서는 손님이 에스프레소를 주문하고, 추가로 한 잔을 더 결제합니다. 그 한 잔은 ‘보류 커피’로 기록돼, 다음에 돈이 부족한 손님이 오면 무료로 제공됩니다. 어려운 이웃에게 작은 위로를 전하려는 사회적 연대의 표시죠. 최근엔 바마다 ‘보류 커피’ 전용 디지털 앱을 도입해, 모바일 결제로도 쉽게 참여할 수 있게 되었습니다. 하지만 이 문화는 주로 나폴리와 주변 카페에서 볼 수 있는 관습이며, 이탈리아 전역에 일관된 제도는 아니라는 점을 기억해 주세요. 보류된 커피 한 잔이 언제, 누군가의 하루를 바꿀지 모른다는 생각, 꽤 따뜻하지 않나요?",
+    "title_line1": "이탈리아 보류 커피",
+    "title_line2": "다음 손님을 위해?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "커피가 *보류*된다고?"
+      },
+      {
+        "s": 2,
+        "text": "한 잔을 *선물*해요"
+      },
+      {
+        "s": 5,
+        "text": "디지털 *앱*으로 쉽다"
+      },
+      {
+        "s": 7,
+        "text": "하루를 바꾸는 *커피*"
+      }
+    ],
+    "image_queries": [
+      "espresso cup",
+      "hand holding espresso",
+      "Naples coffee bar interior",
+      "smartphone ordering coffee",
+      "street cafe Naples",
+      "person holding coffee"
+    ]
   },
   {
     "country": "South Korea",
