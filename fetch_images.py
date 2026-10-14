@@ -13,8 +13,12 @@ import os
 import time
 from pathlib import Path
 
+import re
+
 import requests
 from PIL import Image
+
+import commons
 
 from common import load_db, save_db, pending_render, visual_dir
 
@@ -43,24 +47,43 @@ def search(session, key, query, min_size):
     return r.json().get("hits", [])
 
 
-def pick(session, key, query, used, anchor=""):
-    """검색어 -> 아직 안 쓴 사진 1장 (hit). 결과가 없으면 검색어를 줄여서 다시 시도."""
+STOP = {"the", "and", "with", "for", "from", "near", "view", "traditional"}
+
+
+def _words(q):
+    return [w for w in re.findall(r"[a-z0-9]+", q.lower()) if len(w) >= 3 and w not in STOP]
+
+
+def _score(hit, qwords):
+    tags = set(re.findall(r"[a-z0-9]+", str(hit.get("tags", "")).lower()))
+    return sum(1 for w in qwords if w in tags)
+
+
+def pick(session, key, query, used):
+    """검색어 -> (사진, 주제와 맞는지). Pixabay 태그가 검색어 단어와 충분히 겹치면 '맞는' 사진.
+    맞는 사진이 없으면 가장 비슷한 사진을 돌려주되 맞지 않는다고 표시한다(Commons를 먼저 시도하게)."""
     words = query.split()
+    qw = _words(query)
+    need = min(2, len(qw)) or 1
     attempts = [(query, 800), (query, 0)]
     if len(words) > 2:
         attempts.append((" ".join(words[:2]), 0))
-    if anchor and anchor != query:  # 그래도 없으면 소재 핵심어로 찾아 최소한 주제와 관련된 사진을 쓴다
-        attempts.append((anchor, 0))
+    best, best_score = None, -1
     for q, min_size in attempts:
         for hit in search(session, key, q, min_size):
-            if hit["id"] not in used and hit.get("largeImageURL"):
-                return hit
+            if hit["id"] in used or not hit.get("largeImageURL"):
+                continue
+            sc = _score(hit, qw)
+            if sc >= need:
+                return hit, True
+            if sc > best_score:
+                best, best_score = hit, sc
         time.sleep(0.7)
-    return None
+    return best, False
 
 
-def download(session, url, dest):
-    r = session.get(url, headers=HEADERS, timeout=60)
+def download(session, url, dest, headers=None):
+    r = session.get(url, headers=headers or HEADERS, timeout=60)
     r.raise_for_status()
     im = Image.open(io.BytesIO(r.content)).convert("RGB")
     if min(im.size) < 400:
@@ -83,30 +106,59 @@ def fetch_item(session, key, idx, item, force):
         force = True
         print("    이미지 검색어가 바뀌어 새로 받습니다")
     anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
-    used, credits, got = set(), [], 0
+    old = {} if force else {c.get("scene"): c for c in (item.get("image_credits") or [])}
+    new_credits, used, got = {}, set(), 0
     for n, query in enumerate(queries, start=1):
         dest = folder / f"scene_{n:02d}.png"
         if dest.exists() and not force:
             got += 1
             continue
+        if dest.exists():
+            dest.unlink()  # 검색어가 바뀐 경우 예전 사진이 남지 않게 한다
         try:
-            hit = pick(session, key, query, used, anchor)
-            if not hit:
-                print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
-                continue
-            used.add(hit["id"])
-            download(session, hit["largeImageURL"], dest)
-            credits.append({"scene": n, "user": hit.get("user", ""), "page": hit.get("pageURL", "")})
+            hit, relevant = pick(session, key, query, used)
+            credit = None
+            if hit and relevant:  # 1순위: Pixabay에서 주제와 맞는 사진
+                used.add(hit["id"])
+                download(session, hit["largeImageURL"], dest)
+                credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", "")}
+            else:  # 2순위: Wikimedia Commons (CC0/퍼블릭도메인/CC BY만)
+                c = None
+                for q in (query, anchor):
+                    if not q:
+                        continue
+                    try:
+                        c = commons.search(session, q, used)
+                    except Exception as e:
+                        print(f"    scene_{n:02d}: Commons 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
+                        c = None
+                    if c:
+                        break
+                    time.sleep(1.0)
+                if c:
+                    used.add(c["id"])
+                    download(session, c["url"], dest, {"User-Agent": commons.UA})
+                    credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
+                              "title": c["title"], "page": c["page"]}
+                elif hit:  # 3순위: 주제와 덜 맞아도 Pixabay에서 가장 비슷한 사진
+                    used.add(hit["id"])
+                    download(session, hit["largeImageURL"], dest)
+                    credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", "")}
+                else:
+                    print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
+                    continue
+            new_credits[n] = credit
             got += 1
-            print(f"    scene_{n:02d}: {query} -> {hit['id']}")
+            print(f"    scene_{n:02d}: {query} -> {credit['source']}" + (f" ({credit['license']})" if credit.get("license") else ""))
         except Exception as e:  # 한 장 실패해도 나머지는 계속
             print(f"    scene_{n:02d}: 실패 ({type(e).__name__}: {e}) -> 대체 카드")
         time.sleep(0.7)
 
     item["image_queries_done"] = list(queries)
-    if credits:
-        item["image_source"] = "pixabay"
-        item["image_credits"] = credits
+    merged = {**{k: v for k, v in old.items() if (folder / f"scene_{int(k):02d}.png").exists()}, **new_credits}
+    if merged:
+        item["image_credits"] = [merged[k] for k in sorted(merged)]
+        item["image_source"] = "pixabay" if any(c.get("source", "pixabay") == "pixabay" for c in merged.values()) else "commons"
     return got
 
 

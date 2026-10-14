@@ -25,7 +25,7 @@ from moviepy.editor import (
 )
 
 from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
-from common import split_sentences, strip_marks, visual_dir
+from common import split_sentences, strip_marks, visual_dir, credit_label
 from scenes import scene_groups
 
 
@@ -631,7 +631,7 @@ def build_one(idx, item):
     template = make_template(
         title1, title2,
         LAYOUT_CFG["credit"]
-        or ("Photos: Pixabay" if (item.get("image_source") == "pixabay" and real_images) else country),
+        or ((credit_label(item) or "Photos: Pixabay") if (item.get("image_source") in ("pixabay", "commons") and real_images) else country),
         None,
         channel_name=LAYOUT_CFG["channel"],
         handle=LAYOUT_CFG["handle"],
