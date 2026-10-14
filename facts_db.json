@@ -7465,7 +7465,7 @@
     "confidence": "high",
     "verify_note": "Mongolia Kazakh eagle hunting golden eagle festival Bayan-Ölgii",
     "created_at": "2026-10-14T03:45:35.989700+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Georgia",
@@ -7477,7 +7477,7 @@
     "confidence": "high",
     "verify_note": "Georgian supra tamada toast tradition",
     "created_at": "2026-10-14T03:45:53.836730+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Finland",
@@ -7513,7 +7513,7 @@
     "confidence": "high",
     "verify_note": "Singapore chewing gum ban therapeutic gum permit",
     "created_at": "2026-10-14T03:45:53.836730+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Romania",
@@ -7573,7 +7573,7 @@
     "confidence": "high",
     "verify_note": "Turkish coffee fortune reading, kahve falı, Turkish coffee culture",
     "created_at": "2026-10-14T08:49:01.336946+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Mongolia",
@@ -7585,7 +7585,7 @@
     "confidence": "high",
     "verify_note": "Mongolia Naadam horse racing children, Naadam festival child riders, Mongolian horse race tradition",
     "created_at": "2026-10-14T08:49:01.336946+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Niger",
@@ -7609,7 +7609,7 @@
     "confidence": "high",
     "verify_note": "Ethiopian coffee ceremony jebena coffee grounds fortune telling",
     "created_at": "2026-10-14T08:49:10.366883+00:00",
-    "status": "unverified"
+    "status": "rejected"
   },
   {
     "country": "Iceland",
@@ -7657,6 +7657,6 @@
     "confidence": "high",
     "verify_note": "Jeju haenyeo tradition, female divers Jeju Island UNESCO",
     "created_at": "2026-10-14T08:49:50.880692+00:00",
-    "status": "unverified"
+    "status": "rejected"
   }
 ]
