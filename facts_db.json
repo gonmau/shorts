@@ -6706,7 +6706,40 @@
     "confidence": "high",
     "verify_note": "South Korea international age law June 28 2023 Korean age official documents",
     "created_at": "2026-10-13T03:55:57.688338+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "한국에서는 예전에 아기가 태어나자마자 1살로 계산됐다는 얘기, 들어보셨나요? 전통적인 한국식 나이 계산법은 출생 순간을 1세로 잡고, 매년 1월 1일에 한 살씩 더합니다. 그래서 같은 해에 태어난 형제도 나이가 다를 수 있었죠. 그런데 2023년 6월 28일부터 법이 바뀌었습니다. 계약·법률·행정 문서에서는 이제 국제 나이를 사용하도록 원칙이 정해졌습니다. 국제 나이는 출생일을 0세로 시작해, 생일이 지날 때마다 한 살씩 올리는 방식이죠. 이 개정은 한국식 나이와 국제 나이 사이의 혼란을 줄이기 위해 도입되었습니다. 법이 바뀌었지만, 일상 대화나 친목 모임에서는 아직도 한국식 나이를 쓰는 사람을 만나볼 수 있습니다. 다만, 공식적인 서류에서는 국제 나이가 기본이 되니, 두 체계가 동시에 존재한다는 점, 기억해 두시면 좋겠습니다. 결국, 우리 삶 속에서는 두 나이가 공존하고, 상황에 따라 달라진다는 사실이 흥미롭지 않나요?",
+    "title_line1": "한국 나이, 출생부터",
+    "title_line2": "법은 국제 나이로?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "태어나자마자 *1살*?"
+      },
+      {
+        "s": 4,
+        "text": "법이 *바뀌다*"
+      },
+      {
+        "s": 5,
+        "text": "서류는 *국제나이*"
+      },
+      {
+        "s": 6,
+        "text": "생일에 *한살*"
+      },
+      {
+        "s": 9,
+        "text": "공식은 *국제* 기본"
+      }
+    ],
+    "image_queries": [
+      "Korean newborn baby",
+      "South Korean government building",
+      "Korean birth certificate",
+      "South Korean parliament interior",
+      "Korean family gathering",
+      "South Korean household living room"
+    ]
   },
   {
     "country": "Peru",
@@ -6718,7 +6751,36 @@
     "confidence": "high",
     "verify_note": "Peru cuy guinea pig traditional Andean dish cuy al horno cuy chactado celebrations",
     "created_at": "2026-10-13T03:55:57.688338+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "페루 안데스 지방에서는 기니피그를 전통 요리로 먹는다? 바로 ‘쿠이’인데요, 고산지역에서 오랜 역사를 지닌 특별한 음식입니다. 쿠이는 명절이나 결혼식, 가족 모임 같은 중요한 자리에서 주로 제공됩니다. 손님에게 쿠이를 대접하는 것은 환대와 존중의 의미를 담고 있죠. 대표적인 조리법은 통째로 굽는 ‘쿠이 알 오르노’와 얇게 눌러 튀긴 ‘쿠이 차크타도’가 있습니다. 이 두 가지 방식 모두 안데스 사람들의 식문화와 정체성을 보여주는 대표적인 예입니다. 흥미롭게도 페루에서는 매년 10월 둘째 금요일을 ‘국가 쿠이의 날’로 지정해 기념합니다. 하지만 쿠이는 안데스 지역과 일부 도시 식당에서만 흔히 찾아볼 수 있고, 페루 전역의 모든 식당에서 일상적으로 먹는 음식은 아니라는 점, 기억해 주세요. 전통과 축제가 어우러진 쿠이, 다시 한 번 생각해 보면 안데스의 깊은 문화가 눈앞에 펼쳐집니다.",
+    "title_line1": "페루 안데스 전통 요리",
+    "title_line2": "쿠이, 정말 먹는 건가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "기니피그 *쿠이*?"
+      },
+      {
+        "s": 3,
+        "text": "행사에 *쿠이* 제공"
+      },
+      {
+        "s": 5,
+        "text": "*쿠이 알 오르노*"
+      },
+      {
+        "s": 7,
+        "text": "*쿠이의 날* 기념"
+      }
+    ],
+    "image_queries": [
+      "cuy guinea pig Peru",
+      "cuy celebration serving",
+      "cuy al horno roasted",
+      "Peru cuy national day",
+      "cuy restaurant Peru",
+      "cuy traditional Andean feast"
+    ]
   },
   {
     "country": "Bhutan",
@@ -6730,7 +6792,32 @@
     "confidence": "medium",
     "verify_note": "Bhutan Tobacco Control Act 2010 sale import ban tourist cigarette allowance tax",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "부탄에서는 담배 판매가 금지돼 있을 정도로 담배 규제가 엄격하다고 들으셨나요? 실제로 부탄은 2010년에 시행된 담배통제법에 따라 담배의 재배·제조·유통·판매를 모두 금지했습니다. 개인이 담배를 소지하거나 수입하려면 정해진 절차와 높은 세금을 납부해야 하며, 허가 없이 수입·판매하면 처벌 대상이 됩니다. 이 법은 공공장소 흡연 제한과 함께 담배로 인한 건강 피해를 최소화하려는 목적을 가지고 있습니다. 흥미롭게도 외국인 관광객은 일정량까지 담배를 반입할 수 있지만, 역시 높은 세금을 내야 하고 규정을 어기면 벌금을 물게 됩니다. 다만, 담배 관련 규정과 벌금·반입 한도는 시행령과 시기에 따라 변동될 수 있으니, 부탄을 방문하기 전 최신 정보를 꼭 확인하시길 권합니다. 규제가 이렇게 강한 나라에서, 여러분은 담배 없이도 여행을 즐길 수 있을까요?",
+    "title_line1": "부탄, 담배 금지",
+    "title_line2": "관광객은 어떻게?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "부탄, *담배* 금지!"
+      },
+      {
+        "s": 2,
+        "text": "2010년 *전면* 금"
+      },
+      {
+        "s": 3,
+        "text": "*고액* 세금 제한"
+      }
+    ],
+    "image_queries": [
+      "Bhutan tobacco ban",
+      "Bhutan 2010 tobacco law",
+      "Bhutan tobacco tax",
+      "Bhutan tourist cigarette allowance",
+      "Bhutan travel information",
+      "Bhutan smoke-free travel"
+    ]
   },
   {
     "country": "Italy",
@@ -6742,7 +6829,32 @@
     "confidence": "high",
     "verify_note": "Ivrea Battle of the Oranges Carnival February three days 500 tonnes oranges history",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "이탈리아 피에몬테주 이브레아에서는 카니발 기간에 수백 톤의 오렌지가 전쟁 무기가 됩니다! 매년 2월, 사순절 전 화요일인 재의 수요일 전날까지 약 3일 동안 ‘오렌지 전투’가 펼쳐지죠. 전통에 따르면 폭군에 맞선 도시 반란을 재현하는 행사라서, 오렌지를 든 보행자 팀과 말이 끄는 수레에 탄 ‘폭군 군대’ 역할 참가자들이 서로 오렌지를 던지며 격돌합니다. 전투에 사용되는 오렌지는 수백 톤에 달하고, 전투가 끝난 뒤 남은 오렌지 찌꺼기는 수거돼 퇴비와 에너지 자원으로 재활용됩니다. 이 행사는 이브레아에서만 열리며, 정확한 날짜는 매년 카니발 일정에 따라 달라집니다. 참가자들은 보통 보호 장비를 착용하고, 오렌지 비가 쏟아지는 광경은 보는 이에게 강렬한 여운을 남깁니다. 과연 다음 해에도 또다시 오렌지 비가 내릴까요?",
+    "title_line1": "이브레아 오렌지 전투",
+    "title_line2": "오렌지는 어디로?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*오렌지* 전투"
+      },
+      {
+        "s": 2,
+        "text": "2월 *오렌지* 전투"
+      },
+      {
+        "s": 4,
+        "text": "오렌지 *재활용*"
+      }
+    ],
+    "image_queries": [
+      "Ivrea orange battle",
+      "February orange battle",
+      "people throwing oranges",
+      "orange recycling",
+      "Ivrea carnival street",
+      "orange rain festival"
+    ]
   },
   {
     "country": "Norway",
@@ -6754,7 +6866,40 @@
     "confidence": "high",
     "verify_note": "Norway Personal Names Act Skatteetaten name registration six months rejected names appeal",
     "created_at": "2026-10-13T03:56:43.106850+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "노르웨이에서는 아이 이름을 정하면 바로 국가 인구등록 시스템에 신고해야 한다는 사실, 알고 계셨나요? 부모는 아이가 생후 6개월이 되기 전까지 이름을 등록해야 하고, 이 업무는 노르웨이 세무청이 담당합니다. 이름이 아이에게 심각한 불이익을 줄 수 있거나 명백히 불쾌하거나 부적절하면 신청이 거부됩니다. 예를 들어 욕설, 왕·공주 같은 칭호, 약품·질병 이름 등은 허용되지 않죠. 만약 거부당하면 다른 이름을 다시 신청하거나 주지사 사무소에 이의를 제기할 수 있습니다. 흥미롭게도 대부분의 경우 이름은 별다른 문제 없이 자동 승인되지만, 심사가 필요할 때는 별도 통지를 받게 됩니다. 이름 규정은 노르웨이 전역에 적용되지만, 실제 승인 여부는 각 신청과 법률 기준에 따라 달라진다는 점을 기억해 주세요. 결국, 이름 하나에도 꼼꼼한 검토가 필요하다는 점, 생각보다 신경 써야 할 부분이 많다는 점이 새롭게 다가오지 않나요?",
+    "title_line1": "노르웨이이름등록",
+    "title_line2": "거부될까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*신고* 바로 해야"
+      },
+      {
+        "s": 2,
+        "text": "6개월 *전* 등록"
+      },
+      {
+        "s": 3,
+        "text": "불쾌·부적절 *거부*"
+      },
+      {
+        "s": 6,
+        "text": "대부분 *자동* 승인"
+      },
+      {
+        "s": 8,
+        "text": "이름에 *꼼꼼* 검토"
+      }
+    ],
+    "image_queries": [
+      "Norway birth registration desk",
+      "Norwegian tax office building",
+      "Norwegian medicine bottle",
+      "Norway approval stamp",
+      "Map of Norway",
+      "Norway paperwork desk"
+    ]
   },
   {
     "country": "Iceland",
