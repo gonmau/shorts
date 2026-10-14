@@ -8385,5 +8385,239 @@
     "verify_note": "Yoro Honduras rain of fish, Lluvia de Peces, weather phenomenon explanation, local festival",
     "created_at": "2026-10-14T12:13:48.492273+00:00",
     "status": "rejected"
+  },
+  {
+    "topic": "EU 법이 현지 빵집까지 규제한다?",
+    "hook": "유럽 연합 법, 동네 빵집 레시피까지 바꾼다?",
+    "body": "유럽 연합 (European Union) 법은 27개 회원국 전역에 적용되는 초국가적 규칙 체계이며, 환경 보호를 목표로 한다. 이 법은 유럽 연합 사법재판소 (Court of Justice of the European Union) 가 해석한다.",
+    "twist": "그 결과, 한 회원국의 빵집은 EU 환경 규제로 레시피를 수정해야 할 수도 있다.",
+    "caveat": "이 규제는 유럽 연합 회원국 내에서만 적용된다.",
+    "country": "헝가리",
+    "theme": "법/제도",
+    "wiki_title": "Law of the European Union",
+    "source_url": "https://en.wikipedia.org/wiki/Law_of_the_European_Union",
+    "verify_note": "Law of the European Union",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:15:58.158954+00:00",
+    "status": "scripted",
+    "narration": "유럽 연합 법, 동네 빵집 레시피까지 바꾼다?  \nEU는 27개 회원국 모두에 적용되는 초국가적 규칙 체계로, 주된 목표는 환경 보호입니다. 이 규칙은 유럽 연합 사법재판소가 해석하고 적용합니다. 그래서 환경 기준을 맞추기 위해 일부 회원국에서는 빵집이 기존 레시피를 수정해야 할 상황이 생깁니다. 예를 들어, 헝가리의 한 작은 빵집이 EU 환경 규제로 인해 사용하던 재료 비율을 바꾸거나 포장 방식을 바꾸어야 할 수도 있다는 이야기죠. 하지만 이 규제는 오직 EU 회원국 내에서만 적용됩니다. 즉, EU 외 지역의 빵집에는 영향을 미치지 않으며, 규제 범위가 제한된다는 점을 기억해 주세요. 결국, 국제적인 환경 정책이 우리 일상의 작은 식탁까지 스며들 수 있다는 사실, 생각보다 가까이 다가와 있습니다.",
+    "title_line1": "헝가리 빵집 규제",
+    "title_line2": "레시피까지 바뀔까?",
+    "highlights": [
+      {
+        "s": 4,
+        "text": "레시피 *바꾸라*"
+      },
+      {
+        "s": 5,
+        "text": "*헝가리* 빵집"
+      },
+      {
+        "s": 8,
+        "text": "환경 *정책* 식탁"
+      }
+    ],
+    "image_queries": [
+      "European Union flag",
+      "European Court of Justice building",
+      "bakery ingredients on table",
+      "Hungarian bakery interior",
+      "fresh bread loaf",
+      "dinner table with bread"
+    ]
+  },
+  {
+    "topic": "아이슬란드 집 안에서 신발을 벗는 이유는?",
+    "hook": "아이슬란드 손님, 집에 들어서자마자 신발을 벗어야 하는 순간!",
+    "body": "아이슬란드 (Iceland)에서는 집에 들어오거나 남의 집을 방문할 때 신발을 벗는 전통이 다양하게 존재한다. 신발 대신 실내에서 신는 신발이나 양말을 착용한다.",
+    "twist": "어떤 가정에서는 실내에서 플립플랍을 신으라는 독특한 규칙까지 있다.",
+    "caveat": "이 관습은 문화마다 다르고 모든 가정에 적용되는 것은 아니다.",
+    "country": "아이슬란드",
+    "theme": "관습/예절",
+    "wiki_title": "Removal of footwear indoors",
+    "source_url": "https://en.wikipedia.org/wiki/Removal_of_footwear_indoors",
+    "verify_note": "Removal of footwear indoors",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:15:58.158954+00:00",
+    "status": "scripted",
+    "narration": "아이슬란드에 초대받으셨다면, 문을 열고 바로 신발을 벗어야 하는 순간을 상상해 보세요. 현지에서는 집에 들어오거나 남의 집을 방문할 때, 바깥에서 신던 신발을 벗는 것이 일반적인 예절입니다. 이렇게 하면 실내를 깨끗하게 유지할 수 있고, 바닥에 남은 눈이나 진흙을 방지할 수 있죠. 신발 대신 실내 전용 신발이나 양말을 신고 다니는 가정이 많습니다. 심지어 어떤 집에서는 실내에서 플립플랍을 신으라는 독특한 규칙까지 존재합니다. 물론 이 관습이 모든 아이슬란드 가정에 동일하게 적용되는 것은 아니며, 문화마다 차이가 있을 수 있습니다. 하지만 “신발을 벗어야 한다”는 순간, 그곳 사람들의 일상적인 배려와 청결에 대한 생각을 엿볼 수 있습니다. 다음에 아이슬란드를 방문하게 된다면, 문앞에서 조용히 신발을 벗어보세요. 그 작은 행동이 현지인과의 거리감을 한층 좁혀줄 테니까요.",
+    "title_line1": "아이슬란드 집에",
+    "title_line2": "왜 신발을 벗을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "문 앞에 *신발*"
+      },
+      {
+        "s": 3,
+        "text": "실내를 *깨끗*하게"
+      },
+      {
+        "s": 5,
+        "text": "*플립플랍*?"
+      },
+      {
+        "s": 8,
+        "text": "문앞에서 *조용히*"
+      }
+    ],
+    "image_queries": [
+      "shoes by door Iceland",
+      "clean indoor floor Iceland",
+      "indoor flip flops Iceland",
+      "Icelandic living room interior",
+      "Icelandic home interior",
+      "removing shoes at door Iceland"
+    ]
+  },
+  {
+    "topic": "포르투갈어 이름, 공식 인사는 마지막 성만?",
+    "hook": "포르투갈어 이름, 공식 인사는 마지막 성만 부른다?",
+    "body": "포르투갈어 (Portuguese) 이름은 보통 개인 이름, 어머니 성, 아버지 성을 모두 포함한다. 공식 인사에서는 전치사가 없는 마지막 성을 주로 사용한다.",
+    "twist": "따라서 공식 자리에서는 어머니 성을 절대 부르지 않는다.",
+    "caveat": "이는 일반적인 포르투갈어 이름 문화에 해당한다.",
+    "country": "브라질",
+    "theme": "언어/이름",
+    "wiki_title": "Portuguese name",
+    "source_url": "https://en.wikipedia.org/wiki/Portuguese_name",
+    "verify_note": "Portuguese name",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:15:58.158954+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "마다가스카르, 세계에서 네 번째로 큰 섬",
+    "hook": "마다가스카르가 아프리카와 180 백만 년 전 완전히 갈라졌다는 사실, 알고 계셨나요?",
+    "body": "마다가스카르(Madagascar)는 인도양에 위치한 섬나라로, 섬 자체가 세계 네 번째로 큰 섬이자 두 번째로 큰 섬 국가예요. 초기 쥐라기 시대에 아프리카에서 떨어지고, 이후 인도 대륙에서도 분리돼 고립된 환경이 형성됐죠.",
+    "twist": "그 고립 덕분에 여기서는 전 세계 어디에서도 볼 수 없는 특이한 식물과 동물이 진화했어요.",
+    "caveat": "이 내용은 지질학적 관점에서 본 오래된 지형 변화를 기반으로 하며, 현재의 생태계와는 직접적인 인과관계가 아닐 수 있습니다.",
+    "country": "마다가스카르",
+    "theme": "생활문화",
+    "wiki_title": "Madagascar",
+    "source_url": "https://en.wikipedia.org/wiki/Madagascar",
+    "verify_note": "Madagascar",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:03.246663+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이슬람 국가의 성별 분리, 상황에 따라 달라져",
+    "hook": "이슬람 국가에서는 남녀가 절대 같은 공간에 못 들어간다고 생각했나요?",
+    "body": "이슬람법과 관습에서는 남성과 여성, 특히 친척이 아닌 사람 사이의 가까운 접촉을 제한하는 경우가 있어요. 하지만 실제 적용 정도는 각 나라의 법과 문화에 따라 크게 달라집니다.",
+    "twist": "특히 미디어와 비즈니스 현장에서는 성별 구분이 비교적 느슨하게 적용된답니다.",
+    "caveat": "이 규범은 국가별, 지역별 차이가 크기 때문에 모든 이슬람 국가에 동일하게 적용되지 않습니다.",
+    "country": "카자흐스탄",
+    "theme": "관습/예절",
+    "wiki_title": "Islam and gender segregation",
+    "source_url": "https://en.wikipedia.org/wiki/Islam_and_gender_segregation",
+    "verify_note": "Islam and gender segregation",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:03.246663+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "에티오피아의 독특한 식사 문화와 금식 전통",
+    "hook": "에티오피아 사람들은 매주 수요일과 금요일에 금식한다는 사실, 믿기 힘드시죠?",
+    "body": "에티오피아 요리는 매운 고기와 채소를 넣은 와트(wat) 스튜를 큰 인제라(injera) 위에 얹어 먹는 것이 일반적이에요. 인제라는 50 센티미터 정도의 원형 빵으로, 테프 가루를 발효시켜 만든답니다.",
+    "twist": "게다가 에티오피아 정교회(Ethiopian Orthodox Tewahedo Church)는 매주 수요일과 금요일, 그리고 사순절 전체를 포함한 여러 기간에 금식을 권장하고 있어요.",
+    "caveat": "금식 규정은 주로 에티오피아 정교회 신자에게 적용되며, 모든 에티오피아인에게 동일하게 적용되지는 않습니다.",
+    "country": "에티오피아",
+    "theme": "음식문화",
+    "wiki_title": "Ethiopian cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Ethiopian_cuisine",
+    "verify_note": "Ethiopian cuisine",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:03.246663+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "플럼 빌리지 전통(Plum Village Tradition)의 일상 속 수행법",
+    "hook": "불교 승려들이 사무실에서 명상을 한다면?",
+    "body": "플럼 빌리지 전통은 프랑스의 플럼 빌리지 수도원에서 시작된 수행 공동체예요. 틱낙한(Thích Nhất Hạnh)과 찬 콩(Chân Không) 등 인터빙 회원들이 만든 이 전통은 일상 생활과 일에 직접 적용하는 ‘참여 불교’를 강조합니다. 명상과 마음챙김을 단순히 앉아서 하는 것이 아니라, 일하는 순간에도 실천하도록 가르쳐요.",
+    "twist": "심지어 회의 시간에도 ‘숨 고르기’ 명상을 하며 팀 분위기를 바꾸는 사례가 있답니다.",
+    "caveat": "이 내용은 플럼 빌리지 공동체가 제시한 원칙에 기반하며, 다른 불교 전통에는 적용되지 않을 수 있습니다.",
+    "country": "네팔",
+    "theme": "생활문화",
+    "wiki_title": "Plum Village Tradition",
+    "source_url": "https://en.wikipedia.org/wiki/Plum_Village_Tradition",
+    "verify_note": "Plum Village Tradition",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:05.835987+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "손해배상 제도 개혁( Tort reform )",
+    "hook": "법원에 고소를 못하게 하는 비밀 무기가 있다?",
+    "body": "공통법 국가에서 원고가 소송을 제기하거나 받을 수 있는 손해액을 제한하도록 제도 자체를 바꾸는 움직임이다. 이는 소송이 비효율적이고, 불필요한 소송이 법원을 어수선하게 만든다는 주장과, 소송 두려움이 혁신을 억제하고 서비스 비용을 올린다는 이유로 정당화된다.",
+    "twist": "즉, 기업은 혁신보다 소송 위험을 더 두려워한다.",
+    "caveat": "이 설명은 뉴질랜드 등 일부 영미권 국가에 적용되는 일반적인 설명이다.",
+    "country": "뉴질랜드",
+    "theme": "법/제도",
+    "wiki_title": "Tort reform",
+    "source_url": "https://en.wikipedia.org/wiki/Tort_reform",
+    "verify_note": "Tort reform",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:21.759321+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "볼리비아 악마춤 Diablada( Diablada )",
+    "hook": "광산에서 악마가 파티를 연다고?",
+    "body": "1789년 오루로의 소카본 광산에서 시작된 이 춤은 악마와 식민지 이후 신학·신화 인물을 마스크와 의상으로 표현한다. 스페인·기독교 요소가 더해져 독특한 혼합양식을 만든다.",
+    "twist": "행진은 산티아고 대천사( San Miguel Archangel )가 앞장서며 진행된다.",
+    "caveat": "이 내용은 볼리비아 오루로 지역의 전통 행사에 국한된다.",
+    "country": "볼리비아",
+    "theme": "축제/의례",
+    "wiki_title": "Diablada",
+    "source_url": "https://en.wikipedia.org/wiki/Diablada",
+    "verify_note": "Diablada",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:21.759321+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "EU 개인정보 보호 규정 GDPR( GDPR )",
+    "hook": "당신의 데이터, 유럽 밖에서도 감시당한다?",
+    "body": "EU와 EEA 내에서 개인정보를 보호하기 위한 규정으로, 개인이 자신의 정보에 대한 통제권을 강화하고 국제 비즈니스 규제를 단순화한다. 또한 EU·EEA 외부로의 데이터 이전도 관리한다.",
+    "twist": "GDPR는 이전의 데이터 보호 지침( Data Protection Directive 95/46/EC )을 대체하면서 용어까지 쉽게 만든다.",
+    "caveat": "이 규정은 EU·EEA 회원국에만 직접 적용된다.",
+    "country": "노르웨이",
+    "theme": "법/제도",
+    "wiki_title": "General Data Protection Regulation",
+    "source_url": "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation",
+    "verify_note": "General Data Protection Regulation",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:21.759321+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "영국(United Kingdom) 수확 축제(Harvest Festival)",
+    "hook": "교회 안에 과일 바구니가 가득! 왜?",
+    "body": "수확이 끝난 시기에 영국(United Kingdom)에서는 가족·공동체가 모여 풍성한 곡식을 나눠 먹어요. 전통적으로 찬송가를 부르고 기도하며 교회를 과일과 식품으로 장식합니다.",
+    "twist": "이 관습은 이교도 시절부터 이어져 온 오래된 감사 의식이에요.",
+    "caveat": "영국(United Kingdom) 일부 지역에서만 현재도 활발히 열립니다.",
+    "country": "영국",
+    "theme": "축제/의례",
+    "wiki_title": "Harvest festival",
+    "source_url": "https://en.wikipedia.org/wiki/Harvest_festival",
+    "verify_note": "Harvest festival",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:27.406570+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "몽골(Mongolia) 새해 첫날 축제 Tsagaan Sar(Цагаан сар)",
+    "hook": "새해 첫날, 하얀 달을 보고 사람들이 갑자기 멈춰 서는 이유는?",
+    "body": "몽골(Mongolia)에서는 음력 새해 첫날을 ‘Tsagaan Sar(Цагаан сар)’라 부르며, 가족·친구와 함께 새해 인사를 나눠요. 이때 전통 음식과 함께 샤머니즘적인 의식도 진행됩니다.",
+    "twist": "샤머니즘 요소가 섞여 있어 축하와 동시에 영적 정화 의식이 이루어진답니다.",
+    "caveat": "몽골(Mongolia)과 일부 투르크계 민족이 주로 기념합니다.",
+    "country": "몽골",
+    "theme": "언어/이름",
+    "wiki_title": "Tsagaan Sar",
+    "source_url": "https://en.wikipedia.org/wiki/Tsagaan_Sar",
+    "verify_note": "Tsagaan Sar",
+    "confidence": "source",
+    "created_at": "2026-10-14T22:16:27.406570+00:00",
+    "status": "unverified"
   }
 ]
