@@ -72,6 +72,13 @@ GitHub Actions(`culture-shorts-pipeline`)를 수동 실행(Run workflow)해서 �
 ## 음성(TTS) 엔진
 
 순서: **Supertonic → Edge → Google(키가 있을 때) → gTTS**. 앞 엔진이 실패하면 다음으로 넘어가며, 한 번 실패한 엔진은 그 실행에서 다시 시도하지 않습니다. 환경변수 `TTS_ORDER`로 순서를 바꿀 수 있습니다(예: `edge,supertonic,gtts`). Edge는 2026-10 Microsoft 측 변경으로 막혀 있습니다(edge-tts 이슈 #490).
+## 이미지 출처와 저작권
+
+- 장면 이미지는 **Pixabay 우선**입니다. 검색어와 Pixabay 태그가 충분히 겹치지 않으면(주제와 안 맞는 사진이면) **Wikimedia Commons**에서 찾고, 거기도 없으면 Pixabay에서 가장 비슷한 사진을 씁니다.
+- Commons 사진은 **CC0, 퍼블릭 도메인, CC BY만** 허용합니다(CC BY-SA, NC, ND는 제외). 별도 제한(초상권/상표 표시)이 있는 파일, 로고/지도/깃발, 작성자 없는 CC BY 파일도 제외합니다.
+- 쓴 사진의 작성자/라이선스/링크는 `image_credits`에 저장되고 **유튜브 설명란에 자동으로 추가**됩니다("cropped/zoomed" 표시 포함). 화면 이미지 아래 출처 문구도 "Photos: Pixabay · Wikimedia Commons"로 바뀝니다.
+- 설명란 크레딧은 지우지 마세요. 라이선스 오류나 사람이 크게 나온 사진은 영상을 확인할 때 직접 걸러 주세요(`이미지[N]` 검색어를 고치면 그 장면을 다시 받습니다).
+
 
 ## DB 상태값 (facts_db.json)
 
