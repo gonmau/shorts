@@ -8801,10 +8801,6 @@
       "Icelandic home interior",
       "removing shoes at door Iceland"
     ],
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "image_queries_done": [
       "shoes by door Iceland",
       "clean indoor floor Iceland",
@@ -8852,6 +8848,10 @@
       }
     ],
     "image_source": "pixabay",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0171_아이슬란드.mp4",
     "status_v6": "video_done"
   },
@@ -8902,10 +8902,6 @@
       "Brazil city street scene",
       "Family hierarchy diagram"
     ],
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "image_queries_done": [
       "Brazil family name order chart",
       "Brazilian name badge example",
@@ -8953,6 +8949,10 @@
       }
     ],
     "image_source": "pixabay",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0172_브라질.mp4",
     "status_v6": "video_done"
   },
@@ -9068,7 +9068,32 @@
     "verify_note": "Islam and gender segregation",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "이슬람 국가에서는 남녀가 절대 같은 공간에 못 들어간다고 생각했나요? 실제로는 이슬람법과 관습이 남성과 여성, 특히 친척이 아닌 사람 사이의 가까운 접촉을 제한하는 경우가 있습니다. 하지만 그 적용 정도는 나라마다 크게 다릅니다. 카자흐스탄처럼 법률이 비교적 관대한 곳에서는 일상 생활에서 성별 구분이 느슨하게 이루어집니다. 특히 미디어 현장이나 비즈니스 회의에서는 남녀가 같은 방에 앉아 이야기를 나누는 모습이 흔합니다. 이런 차이는 지역·문화적 배경에 따라 달라지기 때문에, 모든 이슬람 국가에 동일하게 적용된다고 보기는 어렵습니다. 결국 성별 분리는 규범과 현실 사이에서 유연하게 움직이며, 상황에 따라 그 경계가 달라진다는 점, 기억해 두시면 좋겠습니다.",
+    "title_line1": "카자흐스탄 성별 구분",
+    "title_line2": "같은 방, 실제는?",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "접촉 *제한*"
+      },
+      {
+        "s": 4,
+        "text": "법률 *관대*"
+      },
+      {
+        "s": 7,
+        "text": "*유연*하게 움직여"
+      }
+    ],
+    "image_queries": [
+      "Islamic prayer hall interior",
+      "handshake prohibited sign",
+      "Kazakhstan courtroom interior",
+      "mixed gender business meeting",
+      "map of Islamic countries",
+      "flexible workspace layout"
+    ]
   },
   {
     "topic": "에티오피아의 독특한 식사 문화와 금식 전통",
@@ -9083,7 +9108,36 @@
     "verify_note": "Ethiopian cuisine",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "에티오피아 사람들은 매주 수요일과 금요일에 금식한다는 사실, 믿기 힘드시죠? 에티오피아 식탁에서는 매운 고기와 채소를 듬뿍 넣은 와트(wat) 스튜를 큰 인제라(injera) 위에 얹어 먹는 것이 일상입니다. 인제라는 직경이 약 50 센티미터 정도 되는 원형 빵으로, 테프 가루를 발효시켜 만든답니다. 흥미로운 점은, 에티오피아 정교회가 매주 수요일·금요일은 물론 사순절 전체 등 여러 기간에 금식을 권장한다는 겁니다. 다만 이 금식 규정은 주로 정교회 신자에게 적용되며, 모든 에티오피아인에게 동일하게 적용되는 것은 아니라는 점을 기억해 주세요. 그래서 금식일에도 인제라와 와트를 곁들인 가벼운 식사로 하루를 마무리하는 모습이 종종 보이는데, 바로 그때가 에티오피아 식문화의 독특함을 가장 잘 느낄 수 있는 순간입니다.",
+    "title_line1": "에티오피아 식탁",
+    "title_line2": "수·금요일 금식?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "수요일·금요일 *금식*"
+      },
+      {
+        "s": 2,
+        "text": "와트·인제라 *함께*"
+      },
+      {
+        "s": 4,
+        "text": "정교회 *금식* 권장"
+      },
+      {
+        "s": 6,
+        "text": "가벼운 *식사* 순간"
+      }
+    ],
+    "image_queries": [
+      "Ethiopian Wednesday fasting",
+      "Ethiopian wat injera",
+      "Ethiopian injera bread",
+      "Ethiopian Orthodox fasting",
+      "Ethiopian fasting practice",
+      "Ethiopian light meal"
+    ]
   },
   {
     "topic": "플럼 빌리지 전통(Plum Village Tradition)의 일상 속 수행법",
@@ -9173,6 +9227,186 @@
     "verify_note": "Tsagaan Sar",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:27.406570+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "아르헨티나(Argentina) 시민을 위한 별도 총기 면허 종류",
+    "hook": "아르헨티나에서는 사냥, 스포츠 사격, 자기방어 등 각각 다른 총기 면허가 존재한다?",
+    "body": "총기 면허는 사냥, 스포츠 사격, 자기방어, 수집, 은폐 휴대 등 용도별로 구분되며, 각각 요구조건과 권한이 다르다.",
+    "twist": "하지만 같은 사람이라도 모든 면허를 동시에 취득하기는 거의 불가능하다.",
+    "caveat": "이 내용은 아르헨티나에 한정된 것이 아니라 전 세계 여러 국가의 일반적인 총기 규제 방식을 요약한 것이다.",
+    "country": "아르헨티나",
+    "theme": "법/제도",
+    "wiki_title": "Overview of gun laws by nation",
+    "source_url": "https://en.wikipedia.org/wiki/Overview_of_gun_laws_by_nation",
+    "verify_note": "Overview of gun laws by nation",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "인도네시아",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
+    "hook": "태국 거리의 나무에 걸린 삼색 천, 그 이유가 뭘까?",
+    "body": "태국에서는 큰 나무에 노랑·핑크·초록·흰색·빨강·파랑 등 삼색 천을 감아 전통·영성·역사를 상징한다. 경우에 따라 일곱 색이 쓰이기도 하고, 음식이나 동물 조각이 함께 놓인다.",
+    "twist": "하지만 이 색들은 힌두교와도 깊은 연관이 있다는 사실을 모르는 사람이 많다.",
+    "caveat": "색상과 사용 방식은 지역마다 차이가 있을 수 있다.",
+    "country": "태국",
+    "theme": "생활문화",
+    "wiki_title": "Three-color fabric belief",
+    "source_url": "https://en.wikipedia.org/wiki/Three-color_fabric_belief",
+    "verify_note": "Three-color fabric belief",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Padstow(패드스타우)에서 매년 5월 1일 열리는 'Obby 'Oss 축제",
+    "hook": "밤 12시, 마을 전체가 조용해지면 거대한 말 모양 인형이 등장한다!",
+    "body": "축제는 4월 30일 자정에 Golden Lion Inn(골든 라이온 인) 앞에서 'Night Song'(나이트 송)을 부르며 시작된다. 새벽이 되면 마을은 휘감은 녹색과 꽃으로 장식된 메이폴 주위로 변하고, 두 개의 행진이 'Obby 'Oss'를 끌고 돌아다닌다.",
+    "twist": "남성 무용수들은 'Old'(올드)와 'Blue Ribbon'(블루 리본) 또는 'Methodist'(메소디스트)라는 두 종류의 'Obby 'Oss' 중 하나로 분장한다.",
+    "caveat": "이 전통은 영국 코른월(코른월) 패드스타우 마을에서만 매년 5월 1일에 행해진다.",
+    "country": "프랑스",
+    "theme": "축제/의례",
+    "wiki_title": "'Obby 'Oss festival",
+    "source_url": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival",
+    "verify_note": "'Obby 'Oss festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:22.935974+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "전 세계 여러 지역에서 주식으로 쓰이는 뿌리채소 타로",
+    "hook": "아프리카부터 동남아까지, 밥보다 먼저 나오는 뿌리채소가 있다!",
+    "body": "타로(Colocasia esculenta)는 'dasheen'(다시엔)이라고도 불리는 뿌리채소이며, Araceae(아라세아)과에 속한다. 이 식물은 알뿌리, 잎, 줄기, 잎자루까지 모두 식용으로 활용된다.",
+    "twist": "타로는 아프리카, 카리브해, 오세아니아, 동아시아·동남아·남아시아 등 다양한 문화권에서 주식으로 자리 잡고 있다.",
+    "caveat": "하지만 타로가 주식인 지역은 위에 열거된 문화권에 한정된다.",
+    "country": "사모아",
+    "theme": "음식문화",
+    "wiki_title": "Taro",
+    "source_url": "https://en.wikipedia.org/wiki/Taro",
+    "verify_note": "Taro",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:22.935974+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Coldplay(콜드플레이)의 8번째 정규 앨범 'Everyday Life'",
+    "hook": "앨범을 틀면 실제 일출과 일몰 소리가 들린다?",
+    "body": "이 앨범은 22 November 2019에 발매된 더블 앨범으로, 첫 번째 반은 'Sunrise'(선라이즈), 두 번째 반은 'Sunset'(선셋)이라는 제목을 가지고 있다. 발매와 동시에 Amman Citadel(암만 시타델)에서 일출과 일몰에 맞춰 방송된 'Everyday Life – Live in Jordan' 공연과 맞물렸다.",
+    "twist": "앨범 전체가 일출과 일몰이라는 테마를 음악과 사운드로 구분해 담았다.",
+    "caveat": "이 내용은 Coldplay(콜드플레이)의 'Everyday Life' 앨범에만 해당된다.",
+    "country": "폴란드",
+    "theme": "생활문화",
+    "wiki_title": "Everyday Life (Coldplay album)",
+    "source_url": "https://en.wikipedia.org/wiki/Everyday_Life_(Coldplay_album)",
+    "verify_note": "Everyday Life (Coldplay album)",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:22.935974+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "친구에게 행운을 주는 입맞춤 문화",
+    "hook": "친구에게 행운을 주려면 입술을 맞춘다?!",
+    "body": "몇몇 사회에서는 친구에게 행운을 빌며 입맞춤을 한다고 해. 입맞춤은 기쁨을 나타내거나 인사로도 쓰인다.",
+    "twist": "심지어 손이나 머리에도 입을 대는 등 다양한 부위에 적용돼.",
+    "caveat": "이 관습은 특정 사회에만 존재하고 보편적인 습관은 아니다.",
+    "country": "터키",
+    "theme": "언어/이름",
+    "wiki_title": "Kissing traditions",
+    "source_url": "https://en.wikipedia.org/wiki/Kissing_traditions",
+    "verify_note": "Kissing traditions",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:47.920029+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Offal(오프얼)도 고급 요리와 일상 식탁에 동시에 존재한다",
+    "hook": "내가 오늘 먹은 건… 내장!",
+    "body": "Offal(오프얼)은 도축된 동물의 내부 장기를 말한다. 일부 문화에서는 일상 식재료로, 또 다른 문화에서는 푸아그라나 파테처럼 고급 요리로 다루어진다.",
+    "twist": "전통 명절에도 장을 활용한 요리가 빠지지 않는다.",
+    "caveat": "이러한 관습은 특정 지역과 문화권에 한정된다",
+    "country": "조지아",
+    "theme": "음식문화",
+    "wiki_title": "Offal",
+    "source_url": "https://en.wikipedia.org/wiki/Offal",
+    "verify_note": "Offal",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:51.553484+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "할로윈 밤, 현관등 하나가 사탕을 부른다",
+    "hook": "현관등을 켜면 사탕이 온다?",
+    "body": "할로윈은 10월 31일 밤에 아이들이 ‘Trick-or-treating(트릭오어트리팅)’을 외치며 집집을 돌아다닌다. 사탕이 기본이며, 장식을 내걸면 사탕을 줄 준비가 된 신호가 된다. 현관등을 켜두는 것도 사탕을 받겠다는 보편적인 표시다.",
+    "twist": "하지만 사탕 대신 현금을 건네는 문화도 존재한다.",
+    "caveat": "이 풍습은 할로윈을 기념하는 일부 국가에만 널리 퍼져 있다",
+    "country": "아일랜드",
+    "theme": "언어/이름",
+    "wiki_title": "Trick-or-treating",
+    "source_url": "https://en.wikipedia.org/wiki/Trick-or-treating",
+    "verify_note": "Trick-or-treating",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:51.553484+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "크리스마스 카프(Christmas carp) 목욕탕 보관 비밀",
+    "hook": "크리스마스 전날, 물고기가 욕조에 들어가면 무슨 일이?",
+    "body": "중부 유럽에서는 크리스마스 카프를 준비하기 전에 욕조에 넣어 진흙 맛을 없앤다. 보통은 튀기거나 게필테 피시 같은 요리로 만든다.",
+    "twist": "남은 뼈는 과일 나무에 심어 봄에 더 풍성하게 자라게 하고, 비늘은 행운을 가져온다.",
+    "caveat": "이 관습은 일부 지역에 한정된 전통이며, 모든 가정이 따르는 것은 아니다.",
+    "country": "체코",
+    "theme": "음식문화",
+    "wiki_title": "Christmas carp",
+    "source_url": "https://en.wikipedia.org/wiki/Christmas_carp",
+    "verify_note": "Christmas carp",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:59.234598+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "헌법재판소(ศาลรัฐธรรมนูญ)의 2006년 쿠데타 후 소멸",
+    "hook": "태국 헌법재판소, 쿠데타 직후 눈앞에서 사라졌다?",
+    "body": "1997년 헌법으로 설립된 헌법재판소는 입법·행정·정당 문제를 심판했으며, 15명의 재판관으로 구성돼 있었다. 2006년 쿠데타가 일어나자 이 법원은 해체되고 헌법재판소 대신 헌법재판관(Constitutional Tribunal)이 설치되었다.",
+    "twist": "해체된 뒤에도 기존 판결은 그대로 유지돼, 법적 공백이 생기지 않았다.",
+    "caveat": "이 사건은 태국 내에서만 일어난 일이며, 다른 국가의 헌법재판소에는 적용되지 않는다.",
+    "country": "태국",
+    "theme": "법/제도",
+    "wiki_title": "Constitutional Court of Thailand",
+    "source_url": "https://en.wikipedia.org/wiki/Constitutional_Court_of_Thailand",
+    "verify_note": "Constitutional Court of Thailand",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:21:12.890720+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "‘모레스(Mores)’라는 사회 규범 용어의 기원",
+    "hook": "우리 일상 속 ‘모레스’, 라틴어에서 온 단어라는 사실, 알고 계셨나요?",
+    "body": "‘모레스’는 라틴어 mōrēs에서 유래했으며, 사회에서 도덕적으로 옳고 그름을 구분하는 규범을 의미한다. 미국 사회학자 윌리엄 그레이엄 서머(William Graham Sumner)가 1898년에 이 용어를 현대 사회학에 도입했다.",
+    "twist": "서머는 같은 해에 ‘포크웨이(folkways)’라는 또 다른 사회 규범 용어도 만들었다.",
+    "caveat": "‘모레스’는 학술적 개념으로, 일상 대화에서 흔히 쓰이는 표현은 아니다.",
+    "country": "콜롬비아",
+    "theme": "관습/예절",
+    "wiki_title": "Mores",
+    "source_url": "https://en.wikipedia.org/wiki/Mores",
+    "verify_note": "Mores",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:21:12.890720+00:00",
     "status": "unverified"
   }
 ]
