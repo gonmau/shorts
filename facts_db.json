@@ -9456,7 +9456,7 @@
     "verify_note": "Diablada",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "광산에서 악마가 파티를 연다고요? 1789년 볼리비아 오루로의 소카본 광산에서 시작된 ‘디아블라다’는 바로 그 이야기를 담고 있습니다. 춤꾼들은 악마와 식민지 이후 신학·신화 인물을 화려한 가면과 의상으로 표현합니다. 스페인과 기독교의 요소가 더해져 전통적인 토착 문화와 독특한 혼합양식을 만들죠. 그런데 행진의 앞장서는 사람은 악마가 아니라 산티아고 대천사, 즉 San Miguel Archangel이라는 점, 기억하셨나요? 그는 대열을 이끌며 악마 무리를 제압합니다. 이 풍성한 퍼포먼스는 오루로 지역의 전통 행사에만 한정된 것이니, 그곳을 찾는다면 직접 눈으로 확인해 보세요. 광산 속 악마 파티, 결국 천사가 마무리한다는 반전이 남습니다.",
     "title_line1": "볼리비아 광산 악마춤",
     "title_line2": "천사가 무리를 막아",
@@ -9485,7 +9485,62 @@
       "San Miguel archangel lead",
       "Diablada procession leaders",
       "Archangel ending parade"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0178_볼리비아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0178_볼리비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Bolivia mining celebration",
+      "Diablada devil mask",
+      "Bolivia colonial church",
+      "San Miguel archangel lead",
+      "Diablada procession leaders",
+      "Archangel ending parade"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Organization of American States (OAS)",
+        "license": "CC0",
+        "title": "Diablada in the Carnival of Oruro - Bolivia (1970).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Diablada_in_the_Carnival_of_Oruro_-_Bolivia_(1970).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "192635",
+        "page": "https://pixabay.com/photos/carnival-monster-mask-costume-326495/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "jovanel",
+        "page": "https://pixabay.com/photos/bolivia-landscape-church-sunset-2533226/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "leandro_monsieur",
+        "page": "https://pixabay.com/photos/angel-archangel-michael-satan-5703828/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "valerioerrani",
+        "page": "https://pixabay.com/photos/torch-torchlight-editorial-people-7010119/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "antoniollerena",
+        "page": "https://pixabay.com/photos/woman-parade-moors-and-christians-7767045/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0178_볼리비아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "EU 개인정보 보호 규정 GDPR( GDPR )",
@@ -9540,7 +9595,40 @@
     "verify_note": "Harvest festival",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:27.406570+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "교회 안에 과일 바구니가 가득! 왜 그런지 궁금하시죠? 영국에서는 수확이 끝나는 가을에 가족과 이웃이 모여 풍성한 곡식을 나눕니다. 전통적으로 교회 안을 과일과 식품으로 가득 채우고, 찬송가를 부르며 감사 기도를 올려요. 이때 사람들은 서로 손에 든 사과나 배를 나누며 한 해의 수확을 축하합니다. 흥미로운 점은, 이 풍성한 의식이 이교도 시절부터 이어져 온 오래된 감사 의식이라는 사실입니다. 즉, 오늘날의 교회 행사도 과거 토착 문화와 연결된 것이죠. 다만 영국 전역이 아닌 일부 지역에서만 아직 활발히 열리고 있습니다. 과일 바구니가 가득한 교회 안, 그 안에 담긴 감사의 의미를 떠올리면, 우리도 작은 풍요를 나눠보고 싶어지지 않나요?",
+    "title_line1": "영국 수확 축제 현장",
+    "title_line2": "과일 바구니 이유?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "교회에 *과일* 바구니"
+      },
+      {
+        "s": 3,
+        "text": "가을에 *수확* 나눔"
+      },
+      {
+        "s": 4,
+        "text": "찬송가와 *감사* 기도"
+      },
+      {
+        "s": 5,
+        "text": "사과·배로 *축하*"
+      },
+      {
+        "s": 6,
+        "text": "이교도부터 *감사* 의식"
+      }
+    ],
+    "image_queries": [
+      "British church interior fruit basket",
+      "British church hymn prayer",
+      "British people sharing apples pears",
+      "pagan harvest altar",
+      "English countryside harvest festival",
+      "church interior fruit basket"
+    ]
   },
   {
     "topic": "몽골(Mongolia) 새해 첫날 축제 Tsagaan Sar(Цагаан сар)",
