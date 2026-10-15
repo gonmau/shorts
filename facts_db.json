@@ -9266,7 +9266,7 @@
     "verify_note": "Plum Village Tradition",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:05.835987+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "불교 승려들이 사무실에서 명상을 한다면 어떨까요? 프랑스 플럼 빌리지 수도원에서 시작된 플럼 빌리지 전통은 틱낙한 스님과 찬 콩 스님이 만든 수행 공동체로, 일상과 업무에 ‘참여 불교’를 적용합니다. 앉아서만 하는 명상이 아니라, 커피를 타는 순간, 이메일을 쓰는 순간에도 마음챙김을 실천하도록 가르치죠. 실제로 이 전통을 도입한 기업에서는 회의 시작 전 30초 정도 숨 고르기 명상을 진행합니다. 그 짧은 시간에 팀 분위기가 부드러워지고, 집중력이 높아지는 효과를 보고했다고 합니다. 물론 이런 방법은 플럼 빌리지 공동체가 제시한 원칙에 기반한 것이며, 다른 불교 전통에는 그대로 적용되지 않을 수도 있습니다. 일상의 작은 순간에도 마음을 들여다보는 습관, 여러분도 한번 시도해 보세요. 결국, 사무실이 작은 수도원이 될 수도 있겠네요.",
     "title_line1": "플럼 빌리지 일상 수행",
     "title_line2": "사무실이 명상실?",
@@ -9299,7 +9299,60 @@
       "focused team meeting",
       "Plum Village guidelines",
       "mindful office moments"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0176_네팔_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0176_네팔_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Plum Village monk office",
+      "Plum Village monastery",
+      "mindful coffee brewing",
+      "focused team meeting",
+      "Plum Village guidelines",
+      "mindful office moments"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "YHBae",
+        "page": "https://pixabay.com/photos/plum-village-gwangyang-travel-4915010/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "YHBae",
+        "page": "https://pixabay.com/photos/plum-village-gwangyang-travel-4915007/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Ernest_Roy",
+        "page": "https://pixabay.com/photos/french-press-coffee-brewing-method-4335998/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "kzw86",
+        "page": "https://pixabay.com/photos/gwangyang-plum-blossoms-sunrise-3764479/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "DAVID_UNDERLAND",
+        "page": "https://pixabay.com/photos/building-architecture-office-4884852/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0176_네팔.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "손해배상 제도 개혁( Tort reform )",
@@ -9314,7 +9367,7 @@
     "verify_note": "Tort reform",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "법원에 고소를 못하게 하는 비밀 무기가 있다? 바로 손해배상 제도 개혁, 즉 ‘Tort reform’입니다. 영미권, 특히 뉴질랜드와 같은 공통법 국가에서는 원고가 청구할 수 있는 손해액을 제한하려는 움직임이 일어나고 있습니다. 소송이 비효율적이고 불필요한 분쟁으로 법원을 어수선하게 만든다는 주장, 그리고 소송에 대한 두려움이 기업의 혁신을 억제해 서비스 비용을 올린다는 이유가 그 배경입니다. 이렇게 제도를 바꾸면 기업은 큰 손해배상 위험보다 소송 자체를 더 두려워하게 됩니다. 결국 혁신보다 소송 위험을 우선시하게 되는 것이죠. 물론 이 설명은 뉴질랜드 등 일부 영미권 국가에 적용되는 일반적인 현상이라는 점을 기억해 주세요. 결국, 법이 만든 ‘보호막’이 오히려 새로운 문제를 만들고 있다는 점, 생각해 보셨나요?",
     "title_line1": "뉴질랜드손해배상",
     "title_line2": "법원고소막는비밀?",
@@ -9339,7 +9392,56 @@
       "corporate office lawsuit fear",
       "innovation lightbulb with tort reform gavel",
       "shield cracking over New Zealand law book"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0177_뉴질랜드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0177_뉴질랜드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "courtroom door blocking lawsuit",
+      "New Zealand courthouse damage limit",
+      "courtroom chaos tort reform",
+      "corporate office lawsuit fear",
+      "innovation lightbulb with tort reform gavel",
+      "shield cracking over New Zealand law book"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "sergeitokmakov",
+        "page": "https://pixabay.com/photos/gavel-justice-judge-courtroom-7499911/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/new-zealand-volcano-crater-3018634/"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Աբգարյան Անի",
+        "license": "CC0",
+        "title": "Torte 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Torte_01.jpg"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "StartupStockPhotos",
+        "page": "https://pixabay.com/photos/entrepreneur-startup-start-up-man-593378/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Juncala",
+        "page": "https://pixabay.com/photos/snow-winter-wintry-new-zealand-7641544/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0177_뉴질랜드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "볼리비아 악마춤 Diablada( Diablada )",
@@ -9354,7 +9456,36 @@
     "verify_note": "Diablada",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "광산에서 악마가 파티를 연다고요? 1789년 볼리비아 오루로의 소카본 광산에서 시작된 ‘디아블라다’는 바로 그 이야기를 담고 있습니다. 춤꾼들은 악마와 식민지 이후 신학·신화 인물을 화려한 가면과 의상으로 표현합니다. 스페인과 기독교의 요소가 더해져 전통적인 토착 문화와 독특한 혼합양식을 만들죠. 그런데 행진의 앞장서는 사람은 악마가 아니라 산티아고 대천사, 즉 San Miguel Archangel이라는 점, 기억하셨나요? 그는 대열을 이끌며 악마 무리를 제압합니다. 이 풍성한 퍼포먼스는 오루로 지역의 전통 행사에만 한정된 것이니, 그곳을 찾는다면 직접 눈으로 확인해 보세요. 광산 속 악마 파티, 결국 천사가 마무리한다는 반전이 남습니다.",
+    "title_line1": "볼리비아 광산 악마춤",
+    "title_line2": "천사가 무리를 막아",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "광산 *악마* 파티"
+      },
+      {
+        "s": 3,
+        "text": "가면에 *악마* 등장"
+      },
+      {
+        "s": 5,
+        "text": "*천사* 앞선"
+      },
+      {
+        "s": 8,
+        "text": "천사가 *마무리*"
+      }
+    ],
+    "image_queries": [
+      "Bolivia mining celebration",
+      "Diablada devil mask",
+      "Bolivia colonial church",
+      "San Miguel archangel lead",
+      "Diablada procession leaders",
+      "Archangel ending parade"
+    ]
   },
   {
     "topic": "EU 개인정보 보호 규정 GDPR( GDPR )",
@@ -9369,7 +9500,32 @@
     "verify_note": "General Data Protection Regulation",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "당신의 데이터, 유럽 밖에서도 감시당한다?  \nEU와 EEA 안에서 개인 정보를 보호하기 위해 만든 GDPR은, 개인이 자신의 정보에 대해 더 큰 통제권을 갖게 합니다. 기업 입장에서도 국제 비즈니스 규제가 간소화돼, 데이터를 어떻게 쓰고 어디로 옮길지 명확히 해야 합니다. 특히 EU·EEA 외부로 데이터를 이전할 때도 엄격히 관리됩니다.  \n\n흥미로운 점은, GDPR이 이전의 데이터 보호 지침(1995년 지침) 95/46/EC을 완전히 대체하면서, 복잡했던 용어들을 쉽게 바꿨다는 것입니다. 그래서 이제는 “개인정보 보호”라는 말을 들으면 바로 GDPR을 떠올리게 되죠.  \n\n하지만 이 규정은 EU·EEA 회원국에만 직접 적용됩니다. 그 외 지역에서는 직접적인 효력은 없지만, EU와 거래할 경우 간접적으로 영향을 받을 수 있습니다. 결국, 우리 데이터가 어디에 있든, 유럽의 눈길을 피하기는 어려워졌다는 점, 생각해 보셨나요?",
+    "title_line1": "노르웨이와 개인정보보호",
+    "title_line2": "데이터도 유럽 감시?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "데이터, *감시*받는다?"
+      },
+      {
+        "s": 2,
+        "text": "내 정보, *통제*권"
+      },
+      {
+        "s": 9,
+        "text": "*피하기* 힘들다"
+      }
+    ],
+    "image_queries": [
+      "locked laptop screen",
+      "GDPR compliance checklist",
+      "GDPR logo badge",
+      "GDPR document folder",
+      "Norwegian fjord landscape",
+      "surveillance camera lens"
+    ]
   },
   {
     "topic": "영국(United Kingdom) 수확 축제(Harvest Festival)",
