@@ -8771,7 +8771,7 @@
     "verify_note": "Removal of footwear indoors",
     "confidence": "source",
     "created_at": "2026-10-14T22:15:58.158954+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아이슬란드에 초대받으셨다면, 문을 열고 바로 신발을 벗어야 하는 순간을 상상해 보세요. 현지에서는 집에 들어오거나 남의 집을 방문할 때, 바깥에서 신던 신발을 벗는 것이 일반적인 예절입니다. 이렇게 하면 실내를 깨끗하게 유지할 수 있고, 바닥에 남은 눈이나 진흙을 방지할 수 있죠. 신발 대신 실내 전용 신발이나 양말을 신고 다니는 가정이 많습니다. 심지어 어떤 집에서는 실내에서 플립플랍을 신으라는 독특한 규칙까지 존재합니다. 물론 이 관습이 모든 아이슬란드 가정에 동일하게 적용되는 것은 아니며, 문화마다 차이가 있을 수 있습니다. 하지만 “신발을 벗어야 한다”는 순간, 그곳 사람들의 일상적인 배려와 청결에 대한 생각을 엿볼 수 있습니다. 다음에 아이슬란드를 방문하게 된다면, 문앞에서 조용히 신발을 벗어보세요. 그 작은 행동이 현지인과의 거리감을 한층 좁혀줄 테니까요.",
     "title_line1": "아이슬란드 집에",
     "title_line2": "왜 신발을 벗을까",
@@ -8800,7 +8800,60 @@
       "Icelandic living room interior",
       "Icelandic home interior",
       "removing shoes at door Iceland"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0171_아이슬란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "shoes by door Iceland",
+      "clean indoor floor Iceland",
+      "indoor flip flops Iceland",
+      "Icelandic living room interior",
+      "Icelandic home interior",
+      "removing shoes at door Iceland"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ALEXNEWWORLD",
+        "page": "https://pixabay.com/photos/shoes-shoe-store-door-door-handle-4931099/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "qimono",
+        "page": "https://pixabay.com/photos/home-office-interior-room-modern-2804083/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "AlkeMade",
+        "page": "https://pixabay.com/photos/feet-flip-flops-sandals-foot-shoe-3614862/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "4787421",
+        "page": "https://pixabay.com/photos/interior-living-room-furniture-2685521/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "justinedgecreative",
+        "page": "https://pixabay.com/photos/home-kitchen-interior-5835289/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/woman-young-dress-shoes-building-8085691/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0171_아이슬란드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "포르투갈어 이름, 공식 인사는 마지막 성만?",
@@ -8815,7 +8868,93 @@
     "verify_note": "Portuguese name",
     "confidence": "source",
     "created_at": "2026-10-14T22:15:58.158954+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "포르투갈어 이름, 공식 인사는 마지막 성만 부른다? 라는 질문, 궁금하시죠? 브라질에서는 이름을 보통 개인 이름 뒤에 어머니 성, 그리고 아버지 성 순으로 적습니다. 예를 들어 “마리아 실바 코스타”라면 마리아가 이름이고, 실바는 어머니 성, 코스타는 아버지 성이죠. 그런데 공식적인 자리에서는 전치사 없이 마지막 성, 즉 아버지 성만을 사용합니다. 그래서 “코스타 씨”라고 부르는 것이 일반적입니다. 흥미로운 점은, 이렇게 공식 인사를 할 때는 절대로 어머니 성을 언급하지 않는다는 겁니다. 이는 브라질 전반에 걸친 포르투갈어 이름 문화의 일반적인 관습이며, 모든 경우에 적용되는 절대적인 규칙은 아니라는 점만 기억해 주세요. 마지막 성만 부르는 이 방식, 생각보다 단순하면서도 이름에 담긴 가족 구조를 살짝 드러내는 특징이 아닐까요?",
+    "title_line1": "브라질 이름 규칙",
+    "title_line2": "마지막 성만 부른다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*마지막*만 부른다?"
+      },
+      {
+        "s": 3,
+        "text": "어머니·아버지 *성* 순서"
+      },
+      {
+        "s": 5,
+        "text": "*전치사* 없이 성만"
+      },
+      {
+        "s": 6,
+        "text": "\"*코스타* 씨\" 부른다"
+      },
+      {
+        "s": 9,
+        "text": "*구조* 드러내?"
+      }
+    ],
+    "image_queries": [
+      "Brazil family name order chart",
+      "Brazilian name badge example",
+      "Brazil passport surname page",
+      "Formal greeting handshake Brazil",
+      "Brazil city street scene",
+      "Family hierarchy diagram"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0172_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Brazil family name order chart",
+      "Brazilian name badge example",
+      "Brazil passport surname page",
+      "Formal greeting handshake Brazil",
+      "Brazil city street scene",
+      "Family hierarchy diagram"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/case-letters-lead-set-brief-417703/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "coombesy",
+        "page": "https://pixabay.com/photos/chain-jewellery-silver-ivy-message-477541/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Pamjpat",
+        "page": "https://pixabay.com/photos/passport-map-world-trip-tourism-2714675/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "RahulPandit",
+        "page": "https://pixabay.com/photos/street-rain-traffic-umbrella-4768502/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "4421146",
+        "page": "https://pixabay.com/photos/human-hierarchy-employee-boss-man-5099089/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0172_브라질.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "마다가스카르, 세계에서 네 번째로 큰 섬",
@@ -8830,7 +8969,36 @@
     "verify_note": "Madagascar",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "마다가스카르가 아프리카와 180 백만 년 전 완전히 갈라졌다는 사실, 알고 계셨나요? 인도양에 자리한 이 섬은 세계에서 네 번째로 큰 섬이면서 두 번째로 큰 섬 국가이기도 합니다. 초기 쥐라기 시절, 대륙판이 움직이면서 아프리카에서 떨어졌고, 이후 인도 대륙에서도 분리되었습니다. 이렇게 오래전부터 고립된 환경 덕분에 여기서는 전 세계 어디에서도 찾아볼 수 없는 특이한 식물과 동물이 진화했습니다. 예를 들어, 마다가스카르만의 고유종인 여우원숭이와 아이아이 같은 동물들이 그 대표적인 사례죠. 하지만 이 이야기는 지질학적 관점에서 본 오래된 지형 변화에 기반한 것이며, 현재의 생태계와 직접적인 인과관계를 단정짓기는 어렵습니다. 고대의 판 구분이 만든 오늘의 독특함, 다시 한 번 생각해 보세요.",
+    "title_line1": "마다가스카르, 네섬",
+    "title_line2": "180만년전갈라졌나요?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*마다가스카르* 갈라짐"
+      },
+      {
+        "s": 2,
+        "text": "세계 네번째 *섬*"
+      },
+      {
+        "s": 4,
+        "text": "*고립* 진화"
+      },
+      {
+        "s": 5,
+        "text": "*여우원숭이*"
+      }
+    ],
+    "image_queries": [
+      "Madagascar continental split",
+      "Madagascar fourth largest island",
+      "Madagascar isolated evolution",
+      "Madagascar sifaka lemur",
+      "Madagascar ancient rock formation",
+      "Madagascar tectonic plates"
+    ]
   },
   {
     "topic": "이슬람 국가의 성별 분리, 상황에 따라 달라져",
