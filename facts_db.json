@@ -8969,7 +8969,7 @@
     "verify_note": "Madagascar",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "마다가스카르가 아프리카와 180 백만 년 전 완전히 갈라졌다는 사실, 알고 계셨나요? 인도양에 자리한 이 섬은 세계에서 네 번째로 큰 섬이면서 두 번째로 큰 섬 국가이기도 합니다. 초기 쥐라기 시절, 대륙판이 움직이면서 아프리카에서 떨어졌고, 이후 인도 대륙에서도 분리되었습니다. 이렇게 오래전부터 고립된 환경 덕분에 여기서는 전 세계 어디에서도 찾아볼 수 없는 특이한 식물과 동물이 진화했습니다. 예를 들어, 마다가스카르만의 고유종인 여우원숭이와 아이아이 같은 동물들이 그 대표적인 사례죠. 하지만 이 이야기는 지질학적 관점에서 본 오래된 지형 변화에 기반한 것이며, 현재의 생태계와 직접적인 인과관계를 단정짓기는 어렵습니다. 고대의 판 구분이 만든 오늘의 독특함, 다시 한 번 생각해 보세요.",
     "title_line1": "마다가스카르, 네섬",
     "title_line2": "180만년전갈라졌나요?",
@@ -8998,7 +8998,62 @@
       "Madagascar sifaka lemur",
       "Madagascar ancient rock formation",
       "Madagascar tectonic plates"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0173_마다가스카르_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0173_마다가스카르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Madagascar continental split",
+      "Madagascar fourth largest island",
+      "Madagascar isolated evolution",
+      "Madagascar sifaka lemur",
+      "Madagascar ancient rock formation",
+      "Madagascar tectonic plates"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Satellite image of Madagascar in September 2003.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Satellite_image_of_Madagascar_in_September_2003.jpg"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "aga2rk",
+        "page": "https://pixabay.com/photos/madagascar-africa-women-island-see-4601287/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "diema",
+        "page": "https://pixabay.com/photos/primeval-times-dinosaur-lizard-4564683/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "MarkThomas",
+        "page": "https://pixabay.com/photos/lemur-wildlife-madagascar-1794519/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "nils-art",
+        "page": "https://pixabay.com/photos/canyon-usa-nature-landscape-9765223/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "meipakk",
+        "page": "https://pixabay.com/photos/crater-fissure-earths-crust-dorsal-5016132/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0173_마다가스카르.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "이슬람 국가의 성별 분리, 상황에 따라 달라져",
