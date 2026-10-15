@@ -9068,7 +9068,7 @@
     "verify_note": "Islam and gender segregation",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "이슬람 국가에서는 남녀가 절대 같은 공간에 못 들어간다고 생각했나요? 실제로는 이슬람법과 관습이 남성과 여성, 특히 친척이 아닌 사람 사이의 가까운 접촉을 제한하는 경우가 있습니다. 하지만 그 적용 정도는 나라마다 크게 다릅니다. 카자흐스탄처럼 법률이 비교적 관대한 곳에서는 일상 생활에서 성별 구분이 느슨하게 이루어집니다. 특히 미디어 현장이나 비즈니스 회의에서는 남녀가 같은 방에 앉아 이야기를 나누는 모습이 흔합니다. 이런 차이는 지역·문화적 배경에 따라 달라지기 때문에, 모든 이슬람 국가에 동일하게 적용된다고 보기는 어렵습니다. 결국 성별 분리는 규범과 현실 사이에서 유연하게 움직이며, 상황에 따라 그 경계가 달라진다는 점, 기억해 두시면 좋겠습니다.",
     "title_line1": "카자흐스탄 성별 구분",
     "title_line2": "같은 방, 실제는?",
@@ -9093,7 +9093,64 @@
       "mixed gender business meeting",
       "map of Islamic countries",
       "flexible workspace layout"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0174_카자흐스탄_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0174_카자흐스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Islamic prayer hall interior",
+      "handshake prohibited sign",
+      "Kazakhstan courtroom interior",
+      "mixed gender business meeting",
+      "map of Islamic countries",
+      "flexible workspace layout"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "semtiyar",
+        "page": "https://pixabay.com/photos/cami-prayer-mosque-islamic-islam-2079740/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "sweetlouise",
+        "page": "https://pixabay.com/photos/yacht-luxury-sea-nautica-sail-boat-3700207/"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Tim Sheerman-Chase",
+        "license": "CC BY 2.0",
+        "title": "Gender segregated prayer rooms, Hurghada International Airport.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Gender_segregated_prayer_rooms,_Hurghada_International_Airport.jpg"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "MabelAmber",
+        "page": "https://pixabay.com/photos/europe-countries-map-continent-3483539/"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Press Information Department",
+        "license": "Public domain",
+        "title": "Education Minister Nurul Islam Nahid speaking at seminar on gender based violence in secon",
+        "page": "https://commons.wikimedia.org/wiki/File:Education_Minister_Nurul_Islam_Nahid_speaking_at_seminar_on_gender_based_violence_in_secondary_schools_2017-10-08_(PID-0047442).jpg"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0174_카자흐스탄.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "에티오피아의 독특한 식사 문화와 금식 전통",
@@ -9108,7 +9165,7 @@
     "verify_note": "Ethiopian cuisine",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "에티오피아 사람들은 매주 수요일과 금요일에 금식한다는 사실, 믿기 힘드시죠? 에티오피아 식탁에서는 매운 고기와 채소를 듬뿍 넣은 와트(wat) 스튜를 큰 인제라(injera) 위에 얹어 먹는 것이 일상입니다. 인제라는 직경이 약 50 센티미터 정도 되는 원형 빵으로, 테프 가루를 발효시켜 만든답니다. 흥미로운 점은, 에티오피아 정교회가 매주 수요일·금요일은 물론 사순절 전체 등 여러 기간에 금식을 권장한다는 겁니다. 다만 이 금식 규정은 주로 정교회 신자에게 적용되며, 모든 에티오피아인에게 동일하게 적용되는 것은 아니라는 점을 기억해 주세요. 그래서 금식일에도 인제라와 와트를 곁들인 가벼운 식사로 하루를 마무리하는 모습이 종종 보이는데, 바로 그때가 에티오피아 식문화의 독특함을 가장 잘 느낄 수 있는 순간입니다.",
     "title_line1": "에티오피아 식탁",
     "title_line2": "수·금요일 금식?",
@@ -9137,7 +9194,64 @@
       "Ethiopian Orthodox fasting",
       "Ethiopian fasting practice",
       "Ethiopian light meal"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0175_에티오피아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0175_에티오피아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Ethiopian Wednesday fasting",
+      "Ethiopian wat injera",
+      "Ethiopian injera bread",
+      "Ethiopian Orthodox fasting",
+      "Ethiopian fasting practice",
+      "Ethiopian light meal"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Amplitudy",
+        "page": "https://pixabay.com/photos/great-post-calcine-ash-wednesday-4808839/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "OrnaW",
+        "page": "https://pixabay.com/photos/woman-hair-hairstyle-braids-4215064/"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Craig Dugas",
+        "license": "CC BY 2.0",
+        "title": "Ethiopia- Tibs Fitfit.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ethiopia-_Tibs_Fitfit.jpg"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Afrikit",
+        "page": "https://pixabay.com/photos/ethiopia-church-christianity-634225/"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "President's Malaria Initiative",
+        "license": "Public domain",
+        "title": "Distributing Zanzira bed nets in Amhara State (41559680760).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Distributing_Zanzira_bed_nets_in_Amhara_State_(41559680760).jpg"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "scholty1970",
+        "page": "https://pixabay.com/photos/l%C3%BCbeck-road-restaurant-city-4081316/"
+      }
+    ],
+    "image_source": "pixabay",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0175_에티오피아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "플럼 빌리지 전통(Plum Village Tradition)의 일상 속 수행법",
@@ -9152,7 +9266,40 @@
     "verify_note": "Plum Village Tradition",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:05.835987+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "불교 승려들이 사무실에서 명상을 한다면 어떨까요? 프랑스 플럼 빌리지 수도원에서 시작된 플럼 빌리지 전통은 틱낙한 스님과 찬 콩 스님이 만든 수행 공동체로, 일상과 업무에 ‘참여 불교’를 적용합니다. 앉아서만 하는 명상이 아니라, 커피를 타는 순간, 이메일을 쓰는 순간에도 마음챙김을 실천하도록 가르치죠. 실제로 이 전통을 도입한 기업에서는 회의 시작 전 30초 정도 숨 고르기 명상을 진행합니다. 그 짧은 시간에 팀 분위기가 부드러워지고, 집중력이 높아지는 효과를 보고했다고 합니다. 물론 이런 방법은 플럼 빌리지 공동체가 제시한 원칙에 기반한 것이며, 다른 불교 전통에는 그대로 적용되지 않을 수도 있습니다. 일상의 작은 순간에도 마음을 들여다보는 습관, 여러분도 한번 시도해 보세요. 결국, 사무실이 작은 수도원이 될 수도 있겠네요.",
+    "title_line1": "플럼 빌리지 일상 수행",
+    "title_line2": "사무실이 명상실?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*승려* 사무실 명상?"
+      },
+      {
+        "s": 3,
+        "text": "*마음* 커피에도"
+      },
+      {
+        "s": 4,
+        "text": "회의 전 *숨고르기*"
+      },
+      {
+        "s": 5,
+        "text": "*집중* 상승 효과"
+      },
+      {
+        "s": 7,
+        "text": "작은 순간 *마음*"
+      }
+    ],
+    "image_queries": [
+      "Plum Village monk office",
+      "Plum Village monastery",
+      "mindful coffee brewing",
+      "focused team meeting",
+      "Plum Village guidelines",
+      "mindful office moments"
+    ]
   },
   {
     "topic": "손해배상 제도 개혁( Tort reform )",
@@ -9167,7 +9314,32 @@
     "verify_note": "Tort reform",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "법원에 고소를 못하게 하는 비밀 무기가 있다? 바로 손해배상 제도 개혁, 즉 ‘Tort reform’입니다. 영미권, 특히 뉴질랜드와 같은 공통법 국가에서는 원고가 청구할 수 있는 손해액을 제한하려는 움직임이 일어나고 있습니다. 소송이 비효율적이고 불필요한 분쟁으로 법원을 어수선하게 만든다는 주장, 그리고 소송에 대한 두려움이 기업의 혁신을 억제해 서비스 비용을 올린다는 이유가 그 배경입니다. 이렇게 제도를 바꾸면 기업은 큰 손해배상 위험보다 소송 자체를 더 두려워하게 됩니다. 결국 혁신보다 소송 위험을 우선시하게 되는 것이죠. 물론 이 설명은 뉴질랜드 등 일부 영미권 국가에 적용되는 일반적인 현상이라는 점을 기억해 주세요. 결국, 법이 만든 ‘보호막’이 오히려 새로운 문제를 만들고 있다는 점, 생각해 보셨나요?",
+    "title_line1": "뉴질랜드손해배상",
+    "title_line2": "법원고소막는비밀?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "고소 막는 *비밀*"
+      },
+      {
+        "s": 3,
+        "text": "손해액 *제한* 움직임"
+      },
+      {
+        "s": 5,
+        "text": "기업, *소송* 두려워"
+      }
+    ],
+    "image_queries": [
+      "courtroom door blocking lawsuit",
+      "New Zealand courthouse damage limit",
+      "courtroom chaos tort reform",
+      "corporate office lawsuit fear",
+      "innovation lightbulb with tort reform gavel",
+      "shield cracking over New Zealand law book"
+    ]
   },
   {
     "topic": "볼리비아 악마춤 Diablada( Diablada )",
