@@ -1,0 +1,117 @@
+# 세계 문화 상식 쇼츠 (@gonmauY) - 롱폼 만들기 (쇼츠 여러 개를 묶어 가로 영상 1개)
+#
+# 쇼츠 파이프라인과 별도 액션입니다. facts_db.json 은 바꿔서 커밋하지 않고, 기록은 longform_db.json 에만 남깁니다.
+#
+#   mode = auto   : 영상이 끝난 소재 중 아직 롱폼에 안 쓴 것을 번호순으로 count개 (theme으로 분야/나라/주제 키워드 지정 가능)
+#   mode = manual : indexes 에 적은 번호들을 묶음 (예: 109,110,115-118)
+#   개수는 3~10개, 전체 예상 길이 15분 이하
+#   dry_run = true : 어떤 소재가 묶일지 목록만 보고 끝 (영상 안 만듦)
+#
+# 결과: 아티팩트(longform_out)에 mp4 / 썸네일 / 제목+설명(챕터 포함). 디스코드로 제목/설명/썸네일 전송. 업로드는 직접.
+
+name: culture-longform
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "선택 방식 (auto=자동, manual=번호 직접)"
+        type: choice
+        options: [auto, manual]
+        default: auto
+      indexes:
+        description: "manual일 때 묶을 번호 (예: 109,110,115-118 / 3~10개)"
+        default: ""
+      theme:
+        description: "auto일 때 분야/나라/주제 키워드 (비우면 번호순)"
+        default: ""
+      count:
+        description: "auto일 때 묶을 개수 (3~10)"
+        default: "6"
+      start_index:
+        description: "auto일 때 이 번호 이상만 후보"
+        default: "106"
+      title:
+        description: "롱폼 제목 (비우면 자동)"
+        default: ""
+      dry_run:
+        description: "목록만 보기 (영상 안 만듦)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  longform:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      PYTHONUNBUFFERED: "1"
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      MODE: ${{ github.event.inputs.mode || 'auto' }}
+      INDEXES: ${{ github.event.inputs.indexes || '' }}
+      THEME: ${{ github.event.inputs.theme || '' }}
+      COUNT: ${{ github.event.inputs.count || '6' }}
+      START: ${{ github.event.inputs.start_index || '106' }}
+      TITLE: ${{ github.event.inputs.title || '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 시스템 의존성 (ffmpeg, 한글 폰트)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+
+      - run: pip install -r requirements.txt
+
+      - name: 묶을 소재 미리 보기
+        if: ${{ github.event.inputs.dry_run == 'true' }}
+        run: |
+          python build_longform.py --dry-run --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START"
+
+      - name: 롱폼 만들기
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          python build_longform.py --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" --title "$TITLE" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "${{ vars.CHANNEL_HANDLE || '@gonmauY' }}"
+
+      # facts_db.json 은 음성/이미지 경로가 바뀌었을 수 있어도 저장하지 않는다 (longform_db.json 만 커밋)
+      - name: longform_db.json 커밋
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git checkout -- facts_db.json 2>/dev/null || true
+          git config user.name "culture-shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          [ -f longform_db.json ] && git add longform_db.json || true
+          git diff --cached --quiet || git commit -m "chore: update longform_db.json [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "push 실패"; exit 1
+
+      - name: 롱폼 아티팩트
+        id: art
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: longform
+          path: longform_out/*
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: 디스코드 알림
+        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' && github.event.inputs.dry_run != 'true' }}
+        env:
+          JOB_STATUS: ${{ job.status }}
+          ART_URL: ${{ steps.art.outputs.artifact-url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python notify_longform.py
