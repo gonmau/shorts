@@ -21,5 +21,28 @@
     "video": "longform_001.mp4",
     "status": "video_done",
     "created_at": "2026-10-15T12:03:08.189604+00:00"
+  },
+  {
+    "id": 2,
+    "mode": "manual",
+    "theme": "",
+    "members": [
+      79,
+      81,
+      86,
+      91,
+      92,
+      97,
+      109,
+      118,
+      121,
+      122
+    ],
+    "title": "일본의 이색 문화",
+    "description": "00:00 오프닝\n00:03 1. Japan - 신칸센 조용한 차 위반하면 30분 정차\n00:50 2. Japan - 온천 수건 금지 넣으면 큰 벌금\n01:54 3. Japan - 일본 지하철 울음방 숨은 휴식처가?\n02:45 4. Japan - 일본 금빛 도자기 수리하면 두 배 가격?\n03:36 5. Japan - 카미카츠 45분리수거 틀리면 축제 벌칙 무용\n04:41 6. Japan - 300년 금지 사케 여성 양조사 금메달?\n05:26 7. Japan - 시라카와고 초가 지붕 마을이 함께 바꾼다\n06:42 8. Japan - 아키타 남아게 새해 전날 귀신 방문\n07:47 9. Japan - 일본 나가로 마을 사람 대신 인형 이야기\n08:50 10. Japan - 일본 유키가센 규칙 있는 눈싸움\n\nPhotos: Pixabay (pixabay.com)\nPhotos from Wikimedia Commons (cropped/zoomed):\n- \"Straw namahage.2.jpg\" by Douglas P Perkins ( Douglaspperkins ( talk )), CC BY 3.0 - https://commons.wikimedia.org/wiki/File:Straw_namahage.2.jpg\n- \"Koets van Mangkoe Nagoro door Pieter Alardus Haaxman (1814-1887).jpg\" by Pieter Alardus Haaxman, Public domain - https://commons.wikimedia.org/wiki/File:Koets_van_Mangkoe_Nagoro_door_Pieter_Alardus_Haaxman_(1814-1887).jpg\n- \"Kokoschka Alma Mahler doll (1919).jpg\" by Doll: Hermine Moos (1888-1928). Photo: Unknown author Unknown author, Public domain - https://commons.wikimedia.org/wiki/File:Kokoschka_Alma_Mahler_doll_(1919).jpg\n- \"UonumaPhoto Yukigassen Koide Snowball Fight Meet 201802.jpg\" by 魚沼市観光協会, CC BY 4.0 - https://commons.wikimedia.org/wiki/File:UonumaPhoto_Yukigassen_Koide_Snowball_Fight_Meet_201802.jpg\n- \"Water Dropper (suiteki) with Three Chinese Boys (karako), Snowball, and Blossoming Plum Br\" by Public domain / CC0, Public domain - https://commons.wikimedia.org/wiki/File:Water_Dropper_(suiteki)_with_Three_Chinese_Boys_(karako),_Snowball,_and_Blossoming_Plum_Branch_LACMA_AC1998.115.30.jpg\n\n🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!\n\n#Japan #Quiet #Onsen #Crying #Kintsugi #Zerowaste #Women #Shirakawago #Namahage #Nagoro #세계문화 #해외여행 #이색상식",
+    "duration_sec": 585.4,
+    "video": "longform_002.mp4",
+    "status": "video_done",
+    "created_at": "2026-10-15T14:54:38.054528+00:00"
   }
 ]
