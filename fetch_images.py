@@ -169,6 +169,7 @@ def main():
     ap.add_argument("--limit", type=int, default=5)
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--force", action="store_true", help="이미 받은 이미지도 다시 받기")
+    ap.add_argument("--index", type=int, default=None, help="이 번호 소재 하나만 처리 (상태와 상관없이. 롱폼 합치기용)")
     args = ap.parse_args()
 
     key = os.environ.get("PIXABAY_API_KEY", "").strip()
@@ -178,12 +179,17 @@ def main():
 
     db = load_db()
     targets = []
-    for idx, item in pending_render(db, args.start):
-        ap_ = item.get("audio_path_v2")
-        if item.get("status_tts_v2") == "done" and ap_ and Path(ap_).exists():
-            targets.append((idx, item))
-        if len(targets) >= args.limit:
-            break
+    if args.index is not None:
+        if not (0 <= args.index < len(db)):
+            raise SystemExit(f"--index {args.index} 범위 오류")
+        targets = [(args.index, db[args.index])]
+    else:
+        for idx, item in pending_render(db, args.start):
+            ap_ = item.get("audio_path_v2")
+            if item.get("status_tts_v2") == "done" and ap_ and Path(ap_).exists():
+                targets.append((idx, item))
+            if len(targets) >= args.limit:
+                break
 
     print(f"이미지 다운로드 대상: {len(targets)}개")
     session = requests.Session()

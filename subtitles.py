@@ -18,8 +18,6 @@ PAD_X, PAD_Y = 38, 22   # 패널 안쪽 여백
 MAX_TEXT_W = BOX_W - 2 * 64
 LINE_GAP = 8
 MIN_SHOW = 0.85         # 한 조각 최소 표시 시간(초)
-CAP_H = MAX_LINES * (FONT_SIZE + LINE_GAP + 14) + 2 * PAD_Y + 10
-
 _FONT_CACHE = {}
 
 
@@ -40,6 +38,8 @@ def _font(size=FONT_SIZE):
 
 
 _DRAW = ImageDraw.Draw(Image.new("RGB", (4, 4)))
+_asc, _desc = _font().getmetrics()
+CAP_H = MAX_LINES * (_asc + _desc + LINE_GAP) + 2 * PAD_Y + 14   # 2줄 패널이 잘리지 않는 높이
 
 
 def _w(text, font=None):
