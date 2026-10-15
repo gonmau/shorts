@@ -27,6 +27,7 @@ from moviepy.editor import (
 from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
 from common import split_sentences, strip_marks, visual_dir, credit_label
 from scenes import scene_groups
+import subtitles
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -644,7 +645,8 @@ def build_one(idx, item):
         .set_position((IMG_BOX[0], IMG_BOX[1]))
     )
 
-    scrim_arr = make_scrim()
+    caption_mode = os.environ.get("CAPTION_MODE", "script")  # script=대본 자막(기본), highlight=예전 핵심 문구
+    scrim_arr = make_scrim() if caption_mode == "highlight" else make_scrim(h=300, max_alpha=60)
     scrim = (
         ImageClip(scrim_arr)
         .set_duration(audio_duration)
@@ -656,19 +658,37 @@ def build_one(idx, item):
         size=(W, H),
     ).set_duration(audio_duration)
 
-    # 핵심 문구 (대본 문장 대신, 눈에 띄게)
     caption_clips = []
-    cues = highlight_cues(item, timings, audio_duration, script)
-    for start, end, text in cues:
-        print(f"  문구 {start:5.1f}s~{end:5.1f}s: {strip_marks(text)}")
-        cc = (
-            ImageClip(make_highlight_image(text))
-            .set_start(start)
-            .set_duration(end - start)
-            .set_position((IMG_BOX[0], IMG_BOX[3] - CAP_H - 20))
-            .crossfadein(0.1)
-        )
-        caption_clips.append(cc)
+    if caption_mode == "highlight":
+        # 핵심 문구 (예전 방식)
+        cues = highlight_cues(item, timings, audio_duration, script)
+        for start, end, text in cues:
+            print(f"  문구 {start:5.1f}s~{end:5.1f}s: {strip_marks(text)}")
+            cc = (
+                ImageClip(make_highlight_image(text))
+                .set_start(start)
+                .set_duration(end - start)
+                .set_position((IMG_BOX[0], IMG_BOX[3] - CAP_H - 20))
+                .crossfadein(0.1)
+            )
+            caption_clips.append(cc)
+    else:
+        # 대본 자막: 음성 속도에 맞춰 2줄 이내 조각으로 나눠 보여주고, 사진 밝기에 따라 패널 진하기를 조절
+        stats = [subtitles.region_stats(im) for im in srcs]
+        cap_y = IMG_BOX[3] - subtitles.CAP_H - 18
+        for start, end, text in subtitles.make_cues(timings, audio_duration):
+            idxs = [k for k in range(n_scenes)
+                    if starts[k] < end and (k == n_scenes - 1 or starts[k + 1] > start)] or [0]
+            luma = max(stats[k][0] for k in idxs)
+            std = max(stats[k][1] for k in idxs)
+            print(f"  자막 {start:5.1f}s~{end:5.1f}s (밝기 {luma:3.0f}): {text}")
+            cc = (
+                ImageClip(subtitles.render_caption(text, luma, std))
+                .set_start(start)
+                .set_duration(end - start)
+                .set_position((IMG_BOX[0], cap_y))
+            )
+            caption_clips.append(cc)
 
     final = CompositeVideoClip(
         [base] + caption_clips,
