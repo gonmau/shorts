@@ -966,6 +966,19 @@ def main():
     )
 
     parser.add_argument(
+        "--index",
+        type=int,
+        default=None,
+        help="--extras-only와 함께: 이 번호 소재 하나만 (영상이 이미 있어도) 빠진 제목/검색어를 보충",
+    )
+
+    parser.add_argument(
+        "--regen-queries",
+        action="store_true",
+        help="--index와 함께: 기존 이미지 검색어를 지우고 대본 기준으로 새로 만듦",
+    )
+
+    parser.add_argument(
         "--titles-only",
         action="store_true",
         help="대본이 이미 있는 항목에 화면 상단 제목 2줄(title_line1/2)만 생성",
@@ -999,6 +1012,18 @@ def main():
 
     if args.titles_only:
         run_titles_only(client, models, db, args.limit, args.delay, args.retries)
+        return
+
+    if args.extras_only and args.index is not None:
+        if not (0 <= args.index < len(db)):
+            print(f"[오류] --index {args.index} 범위 오류")
+            sys.exit(1)
+        fact = db[args.index]
+        if args.regen_queries:
+            fact.pop("image_queries", None)
+        print(f"[{args.index}] {fact.get('country', '')}: 빠진 제목/검색어 보충")
+        if ensure_extras(client, models, fact, args.retries):
+            save_db(db)
         return
 
     if args.extras_only:

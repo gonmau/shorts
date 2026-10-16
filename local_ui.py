@@ -82,7 +82,10 @@ render = pre + [S("generate_script.py", "--extras-only", *a), S("generate_tts.py
                 S("fetch_images.py", *a), S("build_video.py", *a, "--channel", CH, "--handle", HD),
                 S("make_thumbnail.py", "--channel", CH, "--handle", HD)]
 
-b1, b2, b3, b4 = st.columns(4)
+b1, b2, b3, b4, b5 = st.columns(5)
+n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="'소재 만들기' 버튼으로 만들 개수. 한 번에 12개 이하 권장 (Groq 한도)")
+if b5.button("소재 만들기", help="위키백과 기반으로 새 소재(unverified)를 추가. 대본은 prepare에서 만듦"):
+    run("generate_culture_facts.py" if not EN else "generate_topics.py", "--count", str(int(n_topics)))
 if b1.button("① prepare (대본+review.txt)", help="대본/제목/핵심문구/이미지 검색어까지 만들고 review.txt 생성. 영상은 안 만듦"): chain(prepare)
 if b2.button("③ render (영상 제작)", help="review.txt 수정을 반영해 음성→이미지→영상→썸네일 제작. 먼저 review.txt를 저장하세요"): chain(render)
 if b3.button("현황", help="소재 상태별 개수와 render 가능 개수 보기"): run("status_report.py")
@@ -130,33 +133,61 @@ new = st.text_area("review.txt", txt, height=400, label_visibility="collapsed", 
 if st.button("review.txt 저장"):
     write_review(new); st.success("저장됨 (render 때 자동 반영)")
 
-tab_s, tab_i, tab_m, tab_v = st.tabs(["📝 대본 전체 보기/수정", "🖼 이미지 검수/교체", "📋 제목/설명 (디스코드·유튜브)", "🎬 만든 영상"])
+tab_s, tab_i, tab_m, tab_v, tab_l = st.tabs(["📝 대본 전체 보기/수정", "🖼 이미지 검수/교체", "📋 제목/설명 (디스코드·유튜브)", "🎬 만든 영상", "🎞 롱폼 묶기"])
 
 with tab_s:
-    ids = review_indexes()
-    if not ids:
-        st.info("review.txt에 소재가 없습니다. 먼저 ① prepare를 실행하세요.")
+    from common import load_db as _ldb, split_sentences as _ss
+    ids_rev = review_indexes()
+    db_s = _ldb()
+    cand_s = [i for i, f in enumerate(db_s) if str(f.get("narration", "")).strip() and f.get("status") != "rejected"]
+    cand_s = sorted(set(cand_s) | set(ids_rev), reverse=True)  # 최신 번호가 위로
+    if not cand_s:
+        st.info("대본이 있는 소재가 없습니다. 먼저 ① prepare를 실행하세요.")
     else:
-        sel = st.selectbox("소재 번호", ids, key="script_sel", help="review.txt에 있는 소재만 수정할 수 있습니다")
-        lines = read_review().splitlines()
-        a_, b_ = block_range(lines, sel)
-        blk = lines[a_:b_]
-        narr = [re.sub(r"^대본\s*\[\s*\d+\s*\]\s*[:：]\s*", "", l.strip()) for l in blk if re.match(r"^대본\s*\[", l.strip())]
-        hls = [l.strip() for l in blk if re.match(r"^핵심\s*\[", l.strip())]
-        title = [l.strip() for l in blk if re.match(r"^제목\s*[12]", l.strip())]
-        st.caption(" / ".join(title))
+        sel = st.selectbox("소재 번호", cand_s, key="script_sel",
+                           format_func=lambda i: f"{i} {db_s[i].get('country', '') if i < len(db_s) else ''} "
+                                                 f"({db_s[i].get('status', '') if i < len(db_s) else ''})"
+                                                 + (" · review.txt" if i in ids_rev else ""),
+                           help="review.txt에 있는 소재는 거기에 저장되고, 없는 소재는 facts_db.json에 바로 저장됩니다")
+        if sel in ids_rev:
+            lines = read_review().splitlines()
+            a_, b_ = block_range(lines, sel)
+            blk = lines[a_:b_]
+            narr = [re.sub(r"^대본\s*\[\s*\d+\s*\]\s*[:：]\s*", "", l.strip()) for l in blk if re.match(r"^대본\s*\[", l.strip())]
+            hls = [l.strip() for l in blk if re.match(r"^핵심\s*\[", l.strip())]
+            title = [l.strip() for l in blk if re.match(r"^제목\s*[12]", l.strip())]
+            st.caption(" / ".join(title))
+        else:
+            narr = _ss(db_s[sel].get("narration", ""))
+            hls = []
+            st.caption(f"{db_s[sel].get('title_line1', '')} {db_s[sel].get('title_line2', '')}".strip()
+                       + "  (review.txt에 없는 소재: facts_db.json에 바로 저장)")
         st.markdown("**대본 (한 줄 = 한 문장, 줄을 지우면 문장이 빠지고 번호는 다시 매겨집니다)**")
         n_txt = st.text_area("대본", "\n".join(narr), height=260, key=f"n_{sel}", label_visibility="collapsed")
-        st.markdown("**핵심 문구 (`핵심[N]: *강조* 문구`, N=문장 번호. 대본 줄 수를 바꿨다면 번호도 맞춰 주세요)**")
-        h_txt = st.text_area("핵심", "\n".join(hls), height=140, key=f"h_{sel}", label_visibility="collapsed")
-        st.caption("대본을 고치면 음성이 다시 만들어지고, 이미지 검색어는 새 대본 기준으로 다시 만들어집니다(이미지 탭에서 확인).")
-        if st.button("대본/핵심 저장", key=f"save_s_{sel}"):
+        h_txt = ""
+        if sel in ids_rev:
+            st.markdown("**핵심 문구** (`CAPTION_MODE=highlight`일 때만 쓰임. 기본 자막 방식에서는 화면에 안 나옵니다)")
+            h_txt = st.text_area("핵심", "\n".join(hls), height=100, key=f"h_{sel}", label_visibility="collapsed")
+        st.caption("대본을 고치면 음성이 다시 만들어지고, 이미지 검색어는 새 대본 기준으로 다시 만들어집니다(이미지 탭에서 확인). "
+                   "이미 영상이 만들어진 소재는 수정 후 redo에 번호를 넣고 render를 해야 영상에 반영됩니다.")
+        if st.button("대본 저장", key=f"save_s_{sel}"):
             ns = [x.strip() for x in n_txt.splitlines() if x.strip()]
-            hs = [x.strip() for x in h_txt.splitlines() if x.strip()]
-            replace_lines(sel, r"^대본\s*\[", [f"대본[{i}]: {t}" for i, t in enumerate(ns, 1)])
-            replace_lines(sel, r"^핵심\s*\[", hs)
-            apply_quiet()
-            st.success(f"저장 및 DB 반영 완료 (대본 {len(ns)}문장, 핵심 {len(hs)}개)")
+            if sel in ids_rev:
+                hs = [x.strip() for x in h_txt.splitlines() if x.strip()]
+                replace_lines(sel, r"^대본\s*\[", [f"대본[{i}]: {t}" for i, t in enumerate(ns, 1)])
+                replace_lines(sel, r"^핵심\s*\[", hs)
+                apply_quiet()
+            else:
+                tmp = "review_tmp_edit.txt"
+                with open(tmp, "w", encoding="utf-8") as f_:
+                    f_.write(f"=== [{sel}] ===\n" + "\n".join(f"대본[{i}]: {t}" for i, t in enumerate(ns, 1)) + "\n")
+                subprocess.run([sys.executable, "apply_review.py", "--file", tmp], capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+                try:
+                    os.remove(tmp)
+                except OSError:
+                    pass
+            st.success(f"저장 및 DB 반영 완료 (대본 {len(ns)}문장)")
             st.rerun()
 
 with tab_i:
@@ -179,12 +210,69 @@ with tab_i:
         cA, cB = st.columns(2)
         if cA.button("빠진 이미지 받기 / 검색어 생성", key=f"fill_{idx}", help="검색어가 없으면 대본 기준으로 만들고, 없는 장면의 이미지를 받습니다"):
             if not qs:
-                run("generate_script.py", "--extras-only", "--limit", "1", "--start", str(idx))
+                run("generate_script.py", "--extras-only", "--index", str(idx))
             if pix:
                 run("-c", fetch_code)
             else:
                 st.warning("PIXABAY_API_KEY가 없어 이미지를 받을 수 없습니다.")
             st.rerun()
+        regen = st.checkbox("검색어도 대본 기준으로 새로 만들기 (Groq 호출 1회)", key=f"regen_{idx}",
+                            help="체크하면 현재 검색어를 지우고 대본 내용으로 다시 만든 뒤 이미지를 받습니다. 체크 해제는 지금 검색어 그대로 사진만 새로 받음")
+        if cB.button("이 소재 이미지 6장 전부 새로 받기", key=f"all_{idx}", help="영상이 이미 만들어진 소재도 됩니다. 영상에 반영하려면 redo에 번호를 넣고 render를 다시 하세요"):
+            if not pix:
+                st.warning("PIXABAY_API_KEY가 없어 받을 수 없습니다.")
+            else:
+                if regen:
+                    run("generate_script.py", "--extras-only", "--index", str(idx), "--regen-queries")
+                run("fetch_images.py", "--index", str(idx), "--force")
+                st.rerun()
+        done_idx = [i for i, f in enumerate(db_) if f.get("status") == "video_done"]
+        no_q = [i for i in done_idx if not db_[i].get("image_queries")]
+        with st.expander(f"⚡ 영상 있는 모든 소재({len(done_idx)}개) 이미지 원클릭 새로 받기"):
+            st.caption(f"영상이 만들어진 모든 소재(video_done {len(done_idx)}개)의 사진 6장을 전부 다시 받습니다. 영상은 안 바뀝니다(반영하려면 redo+render). "
+                       f"그중 이미지 검색어가 없는 소재는 {len(no_q)}개입니다(없으면 나라 이름으로만 검색해 사진이 덜 맞을 수 있음). "
+                       "소재 1개에 보통 10~20초 걸립니다. 기존 사진은 전부 덮어씁니다.")
+            fill_q = st.checkbox(f"검색어 없는 {len(no_q)}개는 대본 기준으로 먼저 만들기 (Groq {len(no_q)}회)", value=False, key="all_fill_q", disabled=not no_q)
+            ok_all = st.checkbox("전부 덮어써도 됩니다", key="all_ok")
+            if st.button("전체 원클릭 새로 받기", key="all_go", disabled=not ok_all):
+                if not pix:
+                    st.warning("PIXABAY_API_KEY가 없어 받을 수 없습니다.")
+                else:
+                    TIMES.clear()
+                    prog = st.progress(0.0)
+                    for k_, n_ in enumerate(done_idx, start=1):
+                        st.write(f"**[{k_}/{len(done_idx)}] {n_} {db_[n_].get('country', '')}**")
+                        if fill_q and n_ in no_q:
+                            run("generate_script.py", "--extras-only", "--index", str(n_))
+                        run("fetch_images.py", "--index", str(n_), "--force")
+                        prog.progress(k_ / len(done_idx))
+                    st.success("전체 완료. 영상에 반영하려면 redo에 번호를 넣고 render하세요 (예: 번호를 쉼표로).")
+        with st.expander("🔁 여러 소재 일괄 새로 받기 (기존 영상 포함)"):
+            st.caption("영상이 이미 만들어진 소재도 사진을 전부 다시 받습니다. 영상 자체는 안 바뀌므로, 반영하려면 redo에 같은 번호를 넣고 render를 다시 하세요. "
+                       "검색어를 새로 만들면 소재당 Groq 1회가 듭니다.")
+            bulk = st.text_input("소재 번호 (예: 109-115,120)", key="bulk_idx")
+            bulk_regen = st.checkbox("검색어도 대본 기준으로 새로 만들기", key="bulk_regen")
+            if st.button("일괄 새로 받기", key="bulk_go"):
+                nums = []
+                for part in re.split(r"[,\s]+", bulk.strip()):
+                    m_ = re.fullmatch(r"(\d+)-(\d+)", part)
+                    if m_:
+                        nums += list(range(int(m_.group(1)), int(m_.group(2)) + 1))
+                    elif part.isdigit():
+                        nums.append(int(part))
+                nums = [n_ for n_ in dict.fromkeys(nums) if 0 <= n_ < len(db_)]
+                if not nums:
+                    st.warning("번호를 입력하세요.")
+                elif not pix:
+                    st.warning("PIXABAY_API_KEY가 없어 받을 수 없습니다.")
+                else:
+                    TIMES.clear()
+                    for n_ in nums:
+                        st.write(f"**{n_} {db_[n_].get('country', '')}**")
+                        if bulk_regen:
+                            run("generate_script.py", "--extras-only", "--index", str(n_), "--regen-queries")
+                        run("fetch_images.py", "--index", str(n_), "--force")
+                    st.success(f"{len(nums)}개 소재 완료. 영상에 반영하려면 redo에 번호를 넣고 render하세요.")
         if not qs:
             st.warning("이미지 검색어가 아직 없습니다. 위 버튼을 누르세요.")
         else:
@@ -244,3 +332,30 @@ with tab_v:
                 st.caption(f); st.video(os.path.join("videos", f))
     else:
         st.info("아직 만든 영상이 없습니다.")
+
+with tab_l:
+    st.caption("영상이 끝난 쇼츠를 묶어 가로 롱폼 1개로 만듭니다. 소재마다 음성/이미지를 다시 만들어서 시간이 걸립니다. 개수는 3~10개, 예상 15분 이하. facts_db.json과 별도로 longform_db.json에 기록됩니다.")
+    lm = st.radio("선택 방식", ["auto (자동)", "manual (번호 직접)"], horizontal=True, key="lf_mode",
+                  help="auto: 영상이 끝나고 롱폼에 안 쓴 소재를 번호순으로 / manual: 아래 번호들을 묶음")
+    l1, l2, l3 = st.columns(3)
+    lcount = l1.number_input("auto 개수", 3, 10, 6, key="lf_count")
+    lstart = l2.number_input("auto 시작 번호", 0, 9999, 0 if EN else 106, key="lf_start", help="이 번호 이상인 소재만 후보")
+    ltheme = l3.text_input("auto 분야/나라/주제 키워드", key="lf_theme", help="비우면 번호순. 소재의 theme/topic/country에 이 글자가 들어 있으면 후보")
+    lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
+    ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
+    base_args = ["build_longform.py", "--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
+                 "--count", str(int(lcount)), "--start", str(int(lstart)), "--channel", CH, "--handle", HD]
+    c1, c2 = st.columns(2)
+    if c1.button("목록만 보기", key="lf_dry", help="어떤 소재가 묶일지만 보여줌 (영상 안 만듦)"):
+        run(*base_args, "--dry-run")
+    if c2.button("롱폼 만들기", key="lf_run", help="음성/이미지를 다시 만들고 가로 영상으로 합성 (오래 걸림)"):
+        TIMES.clear(); run(*base_args, "--title", ltitle)
+    if os.path.isdir("longform_out"):
+        vids = sorted(f for f in os.listdir("longform_out") if f.endswith(".mp4"))
+        if vids:
+            last = vids[-1]
+            st.markdown(f"**최근 롱폼: {last}**")
+            tp = os.path.join("longform_out", last.replace(".mp4", ".txt"))
+            if os.path.exists(tp):
+                st.code(open(tp, encoding="utf-8").read(), language=None)
+            st.video(os.path.join("longform_out", last))
