@@ -8,20 +8,93 @@
     "verify_note": "Switzerland guinea pig companionship law, Swiss Animal Protection Act, two guinea pigs required",
     "created_at": "2026-09-14T05:07:16.403222+00:00",
     "status": "video_done",
-    "narration": "스위스에서는 기니피그를 혼자 두면 벌금을 물어요! 왜 그런지 궁금하시죠?  \n스위스 동물보호법에 따르면, 기니피그는 정말 사교적인 동물이에요. 그래서 최소 두 마리 이상을 같이 키워야 해요.  \n한 마리만 키우면 ‘동물복지 위반’으로 간주돼요. 적발되면 과태료를 내야 하고, 경우에 따라 사육 환경을 개선하라는 명령까지 받을 수 있죠.  \n생각보다 엄격하죠? 그런데 이 법, 실제로 시행되고 있답니다. 조사에서 혼자 사육된 기니피그를 발견하면 바로 벌금 부과가 이루어진다고 해요. 애완동물을 키우는 분들은 꼭 두 마리씩 챙기세요!  \n팔로우하면 더 많은 문화 상식 알려드릴게요.",
     "audio_path": "audio\\0000_Switzerland.mp3",
     "video_path": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland.mp4",
     "video_path_v2": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland_v2.mp4",
     "video_path_v3": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland_v3.mp4",
     "status_v3": "video_done",
-    "audio_path_v2": "audio\\0000_Switzerland_v2.mp3",
-    "timing_path_v2": "audio\\0000_Switzerland_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "video_path_v4": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland_v4.mp4",
     "status_v4": "video_done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "image_queries_done": [
+      "two guinea pigs Switzerland",
+      "Switzerland guinea pig fine",
+      "Switzerland guinea pig habitat",
+      "Swiss animal protection law",
+      "Switzerland guinea pigs playing",
+      "Switzerland guinea pig companionship"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Bad_Bear_Pictures",
+        "page": "https://pixabay.com/photos/mammal-cute-portrait-animal-3223359/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "furbymama",
+        "page": "https://pixabay.com/photos/guinea-pig-animal-pet-rodent-6839832/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Myagi",
+        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287749/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "adege",
+        "page": "https://pixabay.com/photos/jura-hike-equestrian-law-swiss-jura-5181990/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "BiancaVanDijk",
+        "page": "https://pixabay.com/photos/guinea-pigs-pets-basket-animals-6018472/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "vantagepointfl",
+        "page": "https://pixabay.com/photos/guinea-pig-cavy-pet-guinea-rodent-242520/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration": "스위스에서는 기니피그를 혼자 두면 벌금을 물어요! 스위스 동물보호법에 따르면 기니피그는 사회적 동물이라 최소 두 마리 이상을 함께 키워야 합니다. 혼자 사육하면 동물복지 위반으로 과태료가 부과됩니다. 이때 사육자는 단순히 벌금을 내는 것에 그치지 않고, 사육 환경을 개선하라는 명령을 받을 수도 있습니다. 즉, 한 마리만 키우면 법적으로 문제가 되고, 그 해결을 위해 추가적인 조치를 해야 할 수도 있다는 점이 흥미롭습니다. 기니피그가 서로 어울려야 하는 이유를 생각해 보면, 작은 동물도 사회적 관계가 필요하다는 점을 다시 한 번 깨닫게 됩니다. 결국, 스위스에서는 작은 친구에게도 ‘혼자 있지 말라’는 강력한 메시지를 전하고 있는 셈이죠.",
+    "title_line1": "스위스 기니피그 규정",
+    "title_line2": "혼자두면 벌금?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "기니피그 *혼자* 금지"
+      },
+      {
+        "s": 2,
+        "text": "두 마리 *필수*"
+      },
+      {
+        "s": 3,
+        "text": "위반 시 *벌금* 부과"
+      }
+    ],
+    "image_queries": [
+      "two guinea pigs Switzerland",
+      "Switzerland guinea pig fine",
+      "Switzerland guinea pig habitat",
+      "Swiss animal protection law",
+      "Switzerland guinea pigs playing",
+      "Switzerland guinea pig companionship"
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0000_Switzerland_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0000_Switzerland_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0000_Switzerland.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Finland",
@@ -31,16 +104,89 @@
     "twist": "이 상자는 실제로 아기의 첫 침대로 사용되는 경우가 90% 이상이라고 합니다.",
     "verify_note": "Finland baby box program, Finnish maternity package, maternity grant Finland",
     "created_at": "2026-09-14T05:07:16.403222+00:00",
-    "status": "video_done",
-    "narration": "핀란드에서는 출산하면 정부가 ‘아기 상자’를 선물합니다.  \n신생아가 태어나면 바로 집으로 배송되는 큰 상자, 안에 뭐가 있을까요?  \n기저귀, 옷, 목욕용품, 식기까지 생활에 필요한 모든 것이 들어 있어요.  \n게다가 상자는 접이식 침대로도 변신해서 아기의 첫 잠자리를 제공한답니다.  \n이 제도는 출산율을 끌어올리고, 초기 복지를 확실히 지원하려 만든 정책이에요.  \n놀라운 사실 하나 알려드릴게요. 이 상자를 실제 침대로 쓰는 가정이 90%가 넘는다고 합니다!  \n팔로우하면 더 많은 문화 상식 알려드릴게요.",
+    "status": "scripted",
     "audio_path": "audio\\0001_Finland.mp3",
     "video_path": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0001_Finland.mp4",
-    "audio_path_v2": "audio\\0001_Finland_v2.mp3",
-    "timing_path_v2": "audio\\0001_Finland_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0001_Finland_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "image_queries_done": [
+      "Finland baby box gift",
+      "baby box delivery package",
+      "Finland baby box bed",
+      "Finland maternity grant program",
+      "baby box statistics",
+      "baby box used as bed"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "image4you",
+        "page": "https://pixabay.com/photos/gift-present-wood-package-gift-box-1420830/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "harshahars",
+        "page": "https://pixabay.com/photos/parcels-packages-delivery-box-2484036/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/baby-bed-lying-sheets-pillows-7388054/"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Scottish Government",
+        "license": "CC BY 4.0",
+        "title": "Baby Box aka Maternity Package in Scotland.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Baby_Box_aka_Maternity_Package_in_Scotland.jpg"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "codervn",
+        "page": "https://pixabay.com/photos/baby-hat-wood-box-brown-box-3517620/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/bed-baby-newborn-child-blanket-1839564/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration": "핀란드에서는 출산하면 정부가 ‘아기 상자’를 선물합니다. 이 상자는 생활용품과 옷, 그리고 침대로도 쓸 수 있는 큰 박스로, 모든 신생아에게 무료로 제공됩니다. 정부는 출산율을 높이고 초기에 필요한 복지를 지원하기 위해 이 제도를 도입했죠. 흥미로운 점은, 이 상자가 실제로 아기의 첫 침대로 사용되는 경우가 90% 이상이라는 사실입니다. 즉, 대부분의 부모가 바로 이 상자 안에서 아기를 재우며 첫날을 시작합니다. 이렇게 실용적인 선물이 출산을 맞이한 가정에 작은 안심과 편리함을 주는 모습을 보면, 작은 상자 하나가 얼마나 큰 의미를 갖는지 생각하게 됩니다. 여러분도 혹시 이런 제도가 있다면, 어떻게 활용될지 궁금하지 않으신가요?",
+    "title_line1": "핀란드 출산 선물",
+    "title_line2": "아기 침대 90% 활용",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "정부가 *아기 상자* 선물"
+      },
+      {
+        "s": 2,
+        "text": "신생아에게 *무료* 제공"
+      },
+      {
+        "s": 3,
+        "text": "출산율 *올리기* 목표"
+      },
+      {
+        "s": 4,
+        "text": "첫 침대로 *90%* 사용"
+      }
+    ],
+    "image_queries": [
+      "Finland baby box gift",
+      "Finland newborn baby box",
+      "baby box as crib Finland",
+      "parents with baby box",
+      "practical baby box gift",
+      "baby box usage idea"
+    ]
   },
   {
     "country": "Singapore",
@@ -59,7 +205,82 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0002_Singapore_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "싱가포르껌금지",
+    "title_line2": "왜지하철이깨끗해?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "껌 *불법*"
+      },
+      {
+        "s": 2,
+        "text": "청소·*고장*"
+      },
+      {
+        "s": 3,
+        "text": "*껌* 판매 금지"
+      },
+      {
+        "s": 6,
+        "text": "*200만* 달러 절감"
+      }
+    ],
+    "image_queries": [
+      "Singapore gum ban",
+      "Singapore street gum litter",
+      "gum stuck on subway door",
+      "Singapore subway cleaning cost",
+      "Singapore dental chewing gum allowed",
+      "follow button icon"
+    ],
+    "image_queries_done": [
+      "Singapore gum ban",
+      "Singapore street gum litter",
+      "gum stuck on subway door",
+      "Singapore subway cleaning cost",
+      "Singapore dental chewing gum allowed",
+      "follow button icon"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "sonharam0",
+        "page": "https://pixabay.com/photos/ferris-wheel-singapore-pliers-9861805/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "RyanMcGuire",
+        "page": "https://pixabay.com/photos/bubble-gum-shoes-glue-dirt-438404/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "igorovsyannykov",
+        "page": "https://pixabay.com/photos/subway-metro-train-interior-empty-2893851/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "foursummers",
+        "page": "https://pixabay.com/photos/escalator-stairway-metro-metal-5521611/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/chewing-gum-sweetness-dental-care-115162/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "monicore",
+        "page": "https://pixabay.com/photos/follow-us-facebook-google-plus-2395640/"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "Iceland",
@@ -78,7 +299,90 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0003_Iceland_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "아이슬란드 이름 승인",
+    "title_line2": "애플도 공식 명칭!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "이름은 *승인* 필요"
+      },
+      {
+        "s": 2,
+        "text": "이름 *위원회* 신청"
+      },
+      {
+        "s": 3,
+        "text": "*체크* 필수"
+      },
+      {
+        "s": 4,
+        "text": "규칙 위반 *금지*"
+      },
+      {
+        "s": 5,
+        "text": "2020년*애플*승인"
+      }
+    ],
+    "image_queries": [
+      "Iceland government approval stamp",
+      "Iceland naming committee application",
+      "Icelandic language grammar book",
+      "Apple name approval Iceland 2020",
+      "Fruit name approval Iceland",
+      "Iceland cultural facts illustration"
+    ],
+    "image_queries_done": [
+      "Iceland government approval stamp",
+      "Iceland naming committee application",
+      "Icelandic language grammar book",
+      "Apple name approval Iceland 2020",
+      "Fruit name approval Iceland",
+      "Iceland cultural facts illustration"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "TayebMEZAHDIA",
+        "page": "https://pixabay.com/photos/secret-top-stamp-spy-army-3037639/"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "óskar elías sigurðsson",
+        "license": "CC BY 2.0",
+        "title": "Have you ever captured a rainbow.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Have_you_ever_captured_a_rainbow.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "libellule789",
+        "page": "https://pixabay.com/photos/girl-english-dictionary-read-2771936/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "jorono",
+        "page": "https://pixabay.com/photos/em-2020-iceland-romania-4916096/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "list6633",
+        "page": "https://pixabay.com/photos/grape-gift-fruit-freshness-half-2519017/"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "EU2017EE Estonian Presidency",
+        "license": "CC BY 2.0",
+        "title": "Informal meeting of justice and home affairs ministers. Tour de table Sigridur A. Andersen",
+        "page": "https://commons.wikimedia.org/wiki/File:Informal_meeting_of_justice_and_home_affairs_ministers._Tour_de_table_Sigridur_A._Andersen_and_Claude_Moraes_(35620129721).jpg"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "스웨덴",
@@ -97,7 +401,82 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0004_스웨덴_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "스웨덴 숲, 자유 캠핑",
+    "title_line2": "벌금 없이 불 피워?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "숲에서 *캠핑* 자유"
+      },
+      {
+        "s": 3,
+        "text": "24시간 *텐트* 가능"
+      },
+      {
+        "s": 4,
+        "text": "*사유지*도 자유"
+      },
+      {
+        "s": 6,
+        "text": "자연은 *보호* 필수"
+      }
+    ],
+    "image_queries": [
+      "Sweden forest campsite",
+      "Sweden wilderness tent",
+      "Swedish lake shoreline",
+      "campfire ashes forest",
+      "Swedish nature trail",
+      "Swedish forest path"
+    ],
+    "image_queries_done": [
+      "Sweden forest campsite",
+      "Sweden wilderness tent",
+      "Swedish lake shoreline",
+      "campfire ashes forest",
+      "Swedish nature trail",
+      "Swedish forest path"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ylvers",
+        "page": "https://pixabay.com/photos/forest-fire-trees-burning-forest-432870/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "SSidde",
+        "page": "https://pixabay.com/photos/beer-can-camp-beer-can-log-5928141/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "nextvoyage",
+        "page": "https://pixabay.com/photos/stockholm-sweden-architecture-sea-4736962/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Artem_Apukhtin",
+        "page": "https://pixabay.com/photos/koster-firewood-stones-pair-hands-2576522/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "dannaragrim",
+        "page": "https://pixabay.com/photos/path-walking-trail-forest-dark-7140970/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "dannaragrim",
+        "page": "https://pixabay.com/photos/path-walking-trail-childrens-shoes-7140969/"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "일본",
@@ -114,7 +493,35 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0005_일본_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "일본 새벽 춤 금지",
+    "title_line2": "1시엔 체포될까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새벽 *춤* 체포?"
+      },
+      {
+        "s": 2,
+        "text": "풍속법 *밤춤* 금지"
+      },
+      {
+        "s": 3,
+        "text": "*문닫힘* 2015"
+      },
+      {
+        "s": 4,
+        "text": "*새벽춤* 제한"
+      }
+    ],
+    "image_queries": [
+      "police arrest dancer night Japan",
+      "nightclub interior empty Japan",
+      "closed club sign 2015 Japan",
+      "empty dance floor dawn Japan",
+      "clock tower silent night Tokyo",
+      "cultural trivia illustration"
+    ]
   },
   {
     "country": "대한민국",
@@ -176,7 +583,78 @@
     "audio_path_v2": "audio\\0009_New Zealand_v2.mp3",
     "timing_path_v2": "audio\\0009_New Zealand_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "title_line1": "뉴질랜드 이름 자유",
+    "title_line2": "다스베이더도 가능?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*다스베이더* 가능!"
+      },
+      {
+        "s": 3,
+        "text": "*공공질서*만 지키면"
+      },
+      {
+        "s": 6,
+        "text": "*왕*은 이름불가"
+      }
+    ],
+    "image_queries": [
+      "Darth Vader costume New Zealand",
+      "Court building New Zealand",
+      "Batman mask New Zealand",
+      "No entry sign New Zealand",
+      "Crown prop New Zealand",
+      "Thumbs up hand"
+    ],
+    "image_queries_done": [
+      "Darth Vader costume New Zealand",
+      "Court building New Zealand",
+      "Batman mask New Zealand",
+      "No entry sign New Zealand",
+      "Crown prop New Zealand",
+      "Thumbs up hand"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "BioSteak",
+        "page": "https://pixabay.com/photos/lego-star-wars-storm-troopers-6610354/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "xiSerge",
+        "page": "https://pixabay.com/photos/city-skyscrapers-buildings-skyline-7596379/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "timjl",
+        "page": "https://pixabay.com/photos/mountain-south-island-new-zealand-10442505/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Andrew-Art",
+        "page": "https://pixabay.com/photos/eagle-mountains-lake-reflection-1450672/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "MayaGorsky",
+        "page": "https://pixabay.com/photos/queenstown-new-zealand-crown-range-3169703/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "leopoldboettcher",
+        "page": "https://pixabay.com/photos/thumbs-up-positive-gesture-thumb-4589867/"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "Ethiopia",
@@ -195,7 +673,78 @@
     "audio_path_v2": "audio\\0010_Ethiopia_v2.mp3",
     "timing_path_v2": "audio\\0010_Ethiopia_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "title_line1": "에티오피아 손님 환영",
+    "title_line2": "거절하면 계약 무효?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "손님 오면 *커피* 의식!"
+      },
+      {
+        "s": 3,
+        "text": "세 번 내는 *존경* 의미"
+      },
+      {
+        "s": 5,
+        "text": "*신뢰*와 약속, 커피"
+      }
+    ],
+    "image_queries": [
+      "guest coffee ceremony Ethiopia",
+      "Ethiopian coffee ceremony setup",
+      "three coffee servings Ethiopia",
+      "refusing coffee ceremony Ethiopia",
+      "coffee trust promise Ethiopia",
+      "Ethiopian coffee discussion"
+    ],
+    "image_queries_done": [
+      "guest coffee ceremony Ethiopia",
+      "Ethiopian coffee ceremony setup",
+      "three coffee servings Ethiopia",
+      "refusing coffee ceremony Ethiopia",
+      "coffee trust promise Ethiopia",
+      "Ethiopian coffee discussion"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Limboko",
+        "page": "https://pixabay.com/photos/religious-orthodox-ethiopia-timkat-978837/"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "SeeTheMan",
+        "page": "https://pixabay.com/photos/coffee-roasted-coffee-5499658/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "_magdita",
+        "page": "https://pixabay.com/photos/coffee-cafe-lovers-focus-ethiopia-7574762/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "john-i",
+        "page": "https://pixabay.com/photos/coffee-map-ethiopia-beans-africa-549630/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "sunny8520",
+        "page": "https://pixabay.com/photos/dessert-food-coffee-4462771/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ammarhreib",
+        "page": "https://pixabay.com/photos/coffee-ethiopian-drink-cafe-food-2895730/"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "Portugal",
@@ -976,7 +1525,86 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0056_United Arab Emirates.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "코끼리 *면허* 필수"
+      },
+      {
+        "s": 2,
+        "text": "대형 야생동물 *허가* 필요"
+      },
+      {
+        "s": 3,
+        "text": "무허가 시 *벌금*·압류"
+      },
+      {
+        "s": 4,
+        "text": "원숭이 *벌금* 대폭"
+      },
+      {
+        "s": 5,
+        "text": "규제는 *안전*과 복지"
+      }
+    ],
+    "image_queries": [
+      "elephant with license Dubai",
+      "lion tiger elephant permit UAE",
+      "confiscated exotic animal UAE",
+      "monkey fine UAE",
+      "Dubai wildlife enforcement",
+      "exotic pet paperwork"
+    ],
+    "image_queries_done": [
+      "elephant with license Dubai",
+      "lion tiger elephant permit UAE",
+      "confiscated exotic animal UAE",
+      "monkey fine UAE",
+      "Dubai wildlife enforcement",
+      "exotic pet paperwork"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "shankar s. from Dubai, united arab emirates",
+        "license": "CC BY 2.0",
+        "title": "Elephant cows with calf (7568621146).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Elephant_cows_with_calf_(7568621146).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "garten-gg",
+        "page": "https://pixabay.com/photos/animals-religion-noahs-ark-flood-6963987/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/chameleon-reptile-animal-nature-10507841/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Mart_pictures",
+        "page": "https://pixabay.com/photos/monkey-mammal-animal-primate-furs-8078840/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Javaistan",
+        "page": "https://pixabay.com/photos/bird-traffic-light-urban-bird-9563848/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "gayleenfroese2",
+        "page": "https://pixabay.com/photos/snake-reptile-pet-rosy-boa-exotic-4852421/"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "India",
@@ -1020,37 +1648,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "jarmoluk",
-        "page": "https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/"
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/surf-surfing-big-wave-surfer-5493649/"
       },
       {
         "scene": 2,
-        "user": "rainerh11",
-        "page": "https://pixabay.com/photos/harvest-straw-bales-straw-barley-8118900/"
+        "source": "pixabay",
+        "user": "manfredrichter",
+        "page": "https://pixabay.com/photos/bottle-caps-lid-closure-bottle-3153653/"
       },
       {
         "scene": 3,
-        "user": "mxwegele",
-        "page": "https://pixabay.com/photos/man-cart-street-food-culture-rain-5524488/"
+        "source": "pixabay",
+        "user": "anngadpandey",
+        "page": "https://pixabay.com/photos/fruit-seller-fruit-seller-market-7593634/"
       },
       {
         "scene": 4,
-        "user": "JoelFazhari",
-        "page": "https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/"
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/dinner-table-home-table-setting-1433494/"
       },
       {
         "scene": 5,
-        "user": "ddzphoto",
-        "page": "https://pixabay.com/photos/lighthouse-sunrise-sky-landscape-5082316/"
+        "source": "pixabay",
+        "user": "Yeskay1211",
+        "page": "https://pixabay.com/photos/sunset-india-kerala-goa-nature-5444216/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "HiteshHtSharma",
         "page": "https://pixabay.com/photos/srishti-textile-9876622/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0057_India.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Indian beach cleanup",
+      "Reusable metal straw",
+      "Mumbai street market without plastic",
+      "Plastic-free dinner table",
+      "Kerala coastal sunrise",
+      "Eco-friendly coffee shop India"
+    ]
   },
   {
     "country": "Romania",
@@ -1098,37 +1740,45 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "pepperminting",
-        "page": "https://pixabay.com/photos/benches-autumn-park-rest-sit-560435/"
+        "source": "pixabay",
+        "user": "Eu_eugen",
+        "page": "https://pixabay.com/photos/springtime-flowers-blooming-tree-2831695/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "ArvidO",
         "page": "https://pixabay.com/photos/bucharest-romania-square-building-2711816/"
       },
       {
         "scene": 3,
-        "user": "MARTINOPHUC",
-        "page": "https://pixabay.com/photos/autumn-town-vineyard-7543217/"
-      },
-      {
-        "scene": 4,
-        "user": "WolfBlur",
-        "page": "https://pixabay.com/photos/wine-retro-wine-glass-wine-bottle-2408620/"
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/vineyard-field-rural-burgundy-6399505/"
       },
       {
         "scene": 5,
-        "user": "Surprising_Media",
-        "page": "https://pixabay.com/photos/trees-flags-national-romanian-6963985/"
+        "source": "pixabay",
+        "user": "Pamjpat",
+        "page": "https://pixabay.com/photos/black-cat-fence-trees-park-4507309/"
       },
       {
         "scene": 6,
-        "user": "Quadronet_Webdesign",
-        "page": "https://pixabay.com/photos/red-wine-glass-drink-wine-glass-1004255/"
+        "source": "pixabay",
+        "user": "Anrita1705",
+        "page": "https://pixabay.com/photos/wine-drink-alcohol-glasses-4931923/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0058_Romania.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Bucharest park bench",
+      "Bucharest city square",
+      "Romanian countryside vineyard picnic",
+      "Traditional Romanian wine bottle",
+      "Romanian park fence",
+      "Romanian homemade wine glass"
+    ]
   },
   {
     "country": "United States",
@@ -1172,37 +1822,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "svazquez",
         "page": "https://pixabay.com/photos/orlando-trees-orlando-florida-245118/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "StockSnap",
         "page": "https://pixabay.com/photos/bokeh-lights-wet-gutter-2592859/"
       },
       {
         "scene": 3,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/tv-television-retro-classic-old-1844964/"
+        "source": "pixabay",
+        "user": "20252177",
+        "page": "https://pixabay.com/photos/girl-fashion-portrait-tennis-8011974/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "Andre-H",
         "page": "https://pixabay.com/photos/elephant-crossing-road-mammal-5632008/"
       },
       {
         "scene": 5,
-        "user": "652234",
-        "page": "https://pixabay.com/photos/bicycle-path-road-sign-bicycle-sign-3444914/"
+        "source": "pixabay",
+        "user": "TheOtherKev",
+        "page": "https://pixabay.com/photos/exit-sign-light-exit-light-8443453/"
       },
       {
         "scene": 6,
-        "user": "Eliyaphilip47",
-        "page": "https://pixabay.com/photos/nature-wildlife-animals-portrait-10019029/"
+        "source": "pixabay",
+        "user": "Nel_Botha",
+        "page": "https://pixabay.com/photos/herd-elephants-mother-calves-4889366/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0059_United States.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Florida sidewalk street",
+      "elephant on city sidewalk",
+      "Florida circus parade 1970s",
+      "large animal crossing road",
+      "Florida pedestrian safety sign",
+      "captive elephant walking outdoors"
+    ]
   },
   {
     "country": "Croatia",
@@ -1245,38 +1909,46 @@
     "image_source": "pixabay",
     "image_credits": [
       {
-        "scene": 1,
-        "user": "WolfBlur",
-        "page": "https://pixabay.com/photos/wine-retro-wine-glass-wine-bottle-2408620/"
-      },
-      {
         "scene": 2,
-        "user": "Couleur",
-        "page": "https://pixabay.com/photos/olive-oil-oil-food-carafe-1596417/"
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/"
       },
       {
         "scene": 3,
-        "user": "guvo59",
-        "page": "https://pixabay.com/photos/tomatoes-pizza-food-meal-cheese-8278168/"
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/cheese-wheels-wheels-of-cheese-2785/"
       },
       {
         "scene": 4,
-        "user": "2109DSGN",
-        "page": "https://pixabay.com/photos/dubrovnik-croatia-europe-islands-1644994/"
+        "source": "pixabay",
+        "user": "fjaka",
+        "page": "https://pixabay.com/photos/dubrovnik-croatia-kings-landing-512798/"
       },
       {
         "scene": 5,
-        "user": "19306",
-        "page": "https://pixabay.com/photos/croatia-flag-croatian-flag-103110/"
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/lights-christmas-market-christmas-4705882/"
       },
       {
         "scene": 6,
-        "user": "aszak",
-        "page": "https://pixabay.com/photos/cross-stone-against-sky-8192852/"
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/stone-ball-stone-bullet-split-stone-4442580/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0060_Croatia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Croatian wine bottle",
+      "Olive oil jar Croatia",
+      "Traditional cheese on wooden board",
+      "Dubrovnik harbor sunrise",
+      "Croatian flag on market stall",
+      "Stone street in Split"
+    ]
   },
   {
     "country": "Malaysia",
@@ -1320,37 +1992,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "peterng1618",
         "page": "https://pixabay.com/photos/kuala-lumpur-petronas-twin-towers-170985/"
       },
       {
         "scene": 2,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/kuala-lumpur-twin-tower-city-lights-1283140/"
+        "source": "pixabay",
+        "user": "Walkerssk",
+        "page": "https://pixabay.com/photos/kuala-lumpur-petronas-twin-towers-1820944/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "danymena88",
         "page": "https://pixabay.com/photos/dessert-drink-ice-cream-beverage-2199271/"
       },
       {
         "scene": 4,
-        "user": "AndrzejRembowski",
-        "page": "https://pixabay.com/photos/recycle-bin-recycling-recycle-4173651/"
+        "source": "pixabay",
+        "user": "nikofendi",
+        "page": "https://pixabay.com/photos/trash-bin-garbage-recycle-waste-4358272/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "Foundry",
         "page": "https://pixabay.com/photos/fork-silverware-restaurant-eat-839244/"
       },
       {
         "scene": 6,
-        "user": "jarmoluk",
-        "page": "https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/"
+        "source": "pixabay",
+        "user": "TheMagrey",
+        "page": "https://pixabay.com/photos/beach-sunset-nature-boat-ocean-7853770/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0061_Malaysia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Kuala Lumpur street market",
+      "Reusable shopping bags Kuala Lumpur",
+      "Plastic straw alternative cafe Malaysia",
+      "Recycling bin on sidewalk",
+      "Stainless steel cutlery restaurant",
+      "Beach cleanup Malaysia"
+    ]
   },
   {
     "country": "Czech Republic",
@@ -1398,37 +2084,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Irina_kukuts",
-        "page": "https://pixabay.com/photos/prague-zoo-giraffe-animals-nature-4484517/"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/birthday-cake-candles-birthday-cake-1835443/"
       },
       {
         "scene": 2,
-        "user": "BenediktGeyer",
-        "page": "https://pixabay.com/photos/business-card-hand-jacket-2918333/"
+        "source": "pixabay",
+        "user": "Mohamed_hassan",
+        "page": "https://pixabay.com/photos/newyear-present-gift-happy-new-year-3799980/"
       },
       {
         "scene": 3,
-        "user": "kaboompics",
-        "page": "https://pixabay.com/photos/new-year-background-organizer-791939/"
+        "source": "pixabay",
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/apple-computer-browser-business-2568755/"
       },
       {
         "scene": 4,
-        "user": "ptksgc",
-        "page": "https://pixabay.com/photos/women-friends-young-friendship-2143813/"
+        "source": "commons",
+        "user": "Tammy Anthony Baker",
+        "license": "CC BY 2.0",
+        "title": "Party in Hammond Louisiana - 30 is the new 20 - Tricia Mylet Anthony.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Party_in_Hammond_Louisiana_-_30_is_the_new_20_-_Tricia_Mylet_Anthony.jpg"
       },
       {
         "scene": 5,
-        "user": "JillWellington",
-        "page": "https://pixabay.com/photos/birthday-cake-candles-bithday-cake-2338813/"
+        "source": "pixabay",
+        "user": "karriezhu",
+        "page": "https://pixabay.com/photos/cake-dessert-coffee-snacks-treats-1589012/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "Leonhard_Niederwimmer",
-        "page": "https://pixabay.com/photos/christmas-market-budweis-budejovice-7664171/"
+        "page": "https://pixabay.com/photos/christmas-market-advent-market-fair-6849578/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0062_Czech Republic.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Czech Republic birthday cake",
+      "handing gift card",
+      "Prague calendar office desk",
+      "friends celebrating with balloons",
+      "family around table cake",
+      "Czech village street market"
+    ]
   },
   {
     "country": "Madagascar",
@@ -1476,37 +2178,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "RoyBuri",
-        "page": "https://pixabay.com/photos/lemur-ring-tailed-lemur-wildlife-3394482/"
+        "source": "pixabay",
+        "user": "jansedlon",
+        "page": "https://pixabay.com/photos/lemur-animal-wilderness-nature-6762935/"
       },
       {
         "scene": 2,
-        "user": "MarkThomas",
-        "page": "https://pixabay.com/photos/ring-tailed-lemur-lemur-catta-1809663/"
+        "source": "pixabay",
+        "user": "MichaLoibl",
+        "page": "https://pixabay.com/photos/bird-cardinal-ornithology-species-8336583/"
       },
       {
         "scene": 3,
-        "user": "Chuotanhls",
-        "page": "https://pixabay.com/photos/vietnam-couple-love-lovers-8560196/"
+        "source": "commons",
+        "user": "Mathias Appel",
+        "license": "CC0",
+        "title": "Lemur (33966222098).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lemur_(33966222098).jpg"
       },
       {
         "scene": 4,
-        "user": "anaterate",
-        "page": "https://pixabay.com/photos/sign-traffic-sign-caution-ducks-2828278/"
+        "source": "pixabay",
+        "user": "analogicus",
+        "page": "https://pixabay.com/photos/landscape-reserve-nature-5036313/"
       },
       {
         "scene": 5,
-        "user": "NickyPe",
-        "page": "https://pixabay.com/photos/ring-tailed-lemur-lemur-group-cub-6954076/"
+        "source": "pixabay",
+        "user": "yeshayadinerstein",
+        "page": "https://pixabay.com/photos/lemur-mammal-tree-branches-5442927/"
       },
       {
         "scene": 6,
-        "user": "ddzphoto",
-        "page": "https://pixabay.com/photos/rock-beach-ocean-coast-sky-rocks-4739036/"
+        "source": "pixabay",
+        "user": "g5fighter",
+        "page": "https://pixabay.com/photos/sea-cliffs-ocean-waves-10489987/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0063_Madagascar.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Madagascar forest lemur",
+      "Madagascar wildlife sanctuary",
+      "Lemur hand holding permit",
+      "No flash sign reserve",
+      "Lemur perched on tree branch",
+      "Madagascar coastal cliff sunrise"
+    ]
   },
   {
     "country": "Finland",
@@ -1550,37 +2268,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "EsaRiutta",
-        "page": "https://pixabay.com/photos/sauna-finnish-heat-steam-hot-1265002/"
+        "source": "pixabay",
+        "user": "ThMilherou",
+        "page": "https://pixabay.com/photos/sauna-heat-drink-take-it-easy-4863340/"
       },
       {
         "scene": 2,
-        "user": "LTapsaH",
-        "page": "https://pixabay.com/photos/river-sauna-cottage-forest-finland-6787137/"
+        "source": "pixabay",
+        "user": "oleg_mit",
+        "page": "https://pixabay.com/photos/lake-platform-wooden-platform-woman-5488121/"
       },
       {
         "scene": 3,
-        "user": "jennyfriedrichs",
-        "page": "https://pixabay.com/photos/wood-house-tree-garden-sauna-3336957/"
+        "source": "pixabay",
+        "user": "Emil02050",
+        "page": "https://pixabay.com/photos/transport-train-travel-track-3296369/"
       },
       {
         "scene": 4,
-        "user": "Zerocool",
-        "page": "https://pixabay.com/photos/woman-sauna-spa-wellness-beauty-936549/"
+        "source": "pixabay",
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-heater-sauna-stones-9863847/"
       },
       {
         "scene": 5,
-        "user": "Surprising_Media",
-        "page": "https://pixabay.com/photos/boy-young-phone-relaxation-spring-5207984/"
+        "source": "pixabay",
+        "user": "tommyzwartjes",
+        "page": "https://pixabay.com/photos/to-call-phone-old-hands-free-1542594/"
       },
       {
         "scene": 6,
-        "user": "huumsauna",
-        "page": "https://pixabay.com/photos/sauna-sauna-heater-8238837/"
+        "source": "pixabay",
+        "user": "solskin",
+        "page": "https://pixabay.com/photos/finnish-sauna-wellness-spa-776997/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0064_Finland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Finnish sauna interior",
+      "naked sauna bench Finland",
+      "Helsinki public sauna",
+      "steam rising wooden sauna",
+      "phone free sauna",
+      "Finnish sauna stone heater"
+    ]
   },
   {
     "country": "Iceland",
@@ -1624,37 +2356,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "TheDigitalArtist",
-        "page": "https://pixabay.com/photos/horses-grazing-pastures-equines-2427513/"
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/iceland-horse-pony-wild-landscape-2420768/"
       },
       {
         "scene": 2,
-        "user": "nextvoyage",
-        "page": "https://pixabay.com/photos/iceland-city-reykjavik-architecture-4768893/"
+        "source": "pixabay",
+        "user": "sharonang",
+        "page": "https://pixabay.com/photos/top-view-icelandic-houses-1098216/"
       },
       {
         "scene": 3,
-        "user": "therongexperiment",
-        "page": "https://pixabay.com/photos/church-building-mood-black-simple-3460420/"
+        "source": "pixabay",
+        "user": "Leonhard_Niederwimmer",
+        "page": "https://pixabay.com/photos/hungarian-parliament-building-danube-6933621/"
       },
       {
         "scene": 4,
-        "user": "Engin_Akyurt",
-        "page": "https://pixabay.com/photos/bust-head-sculpture-art-hellenic-5524961/"
+        "source": "pixabay",
+        "user": "Camera-man",
+        "page": "https://pixabay.com/photos/stone-wall-rocks-rustic-construction-8317167/"
       },
       {
         "scene": 5,
-        "user": "stempow",
-        "page": "https://pixabay.com/photos/invitation-typography-calligraphy-2110452/"
+        "source": "pixabay",
+        "user": "Pezibear",
+        "page": "https://pixabay.com/photos/letter-envelope-flowers-stamps-1390463/"
       },
       {
         "scene": 6,
-        "user": "mozlase__",
-        "page": "https://pixabay.com/photos/school-work-write-still-life-851328/"
+        "source": "pixabay",
+        "user": "Felix-Mittermeier",
+        "page": "https://pixabay.com/photos/globe-ink-rustic-still-life-map-3441673/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0065_Iceland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Icelandic countryside landscape",
+      "Reykjavik colorful houses street",
+      "Iceland parliament building exterior",
+      "ancient Icelandic rune stone",
+      "paper handwritten name list",
+      "old wooden desk ink bottle"
+    ]
   },
   {
     "country": "Singapore",
@@ -1702,37 +2448,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "sgxp",
         "page": "https://pixabay.com/photos/women-bicycle-street-geylang-street-6781342/"
       },
       {
         "scene": 2,
-        "user": "binmassam",
-        "page": "https://pixabay.com/photos/subway-businessman-walk-walking-4807266/"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/city-singapore-marina-bay-sands-1283634/"
       },
       {
         "scene": 3,
-        "user": "jarmoluk",
-        "page": "https://pixabay.com/photos/library-books-bookcases-bookshelves-488690/"
+        "source": "pixabay",
+        "user": "sonharam0",
+        "page": "https://pixabay.com/photos/ferris-wheel-singapore-pliers-9861805/"
       },
       {
         "scene": 4,
-        "user": "WOKANDAPIX",
-        "page": "https://pixabay.com/photos/gum-vintage-advertisement-retro-654238/"
+        "source": "pixabay",
+        "user": "athree23",
+        "page": "https://pixabay.com/photos/chewing-gum-table-scattered-3671507/"
       },
       {
         "scene": 5,
-        "user": "congerdesign",
-        "page": "https://pixabay.com/photos/tea-fruit-tea-sugar-candy-sugar-598346/"
+        "source": "pixabay",
+        "user": "Daria-Yakovleva",
+        "page": "https://pixabay.com/photos/candy-sweetmeats-jar-candy-jar-1961538/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "GiselaFotografie",
         "page": "https://pixabay.com/photos/chewing-gum-child-candy-dirty-1359237/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0066_Singapore.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Singapore street cleanliness",
+      "Marina Bay subway platform",
+      "Singapore pharmacy candy aisle",
+      "gum wrapper on sidewalk",
+      "sugar-free candy pieces",
+      "person chewing candy"
+    ]
   },
   {
     "country": "Namibia",
@@ -1762,37 +2522,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Sponchia",
-        "page": "https://pixabay.com/photos/lions-couple-safari-pair-577104/"
+        "source": "pixabay",
+        "user": "chillervirus",
+        "page": "https://pixabay.com/photos/lion-cub-feline-animal-1305797/"
       },
       {
         "scene": 2,
-        "user": "TeeFarm",
-        "page": "https://pixabay.com/photos/elephant-namibia-infant-water-5015964/"
+        "source": "pixabay",
+        "user": "kolibri5",
+        "page": "https://pixabay.com/photos/elephants-trunks-1170111/"
       },
       {
         "scene": 3,
-        "user": "strichpunkt",
-        "page": "https://pixabay.com/photos/snow-leopard-leopard-big-cat-snow-1985510/"
+        "source": "pixabay",
+        "user": "Artvan93",
+        "page": "https://pixabay.com/photos/leopard-animal-africa-safari-7527425/"
       },
       {
         "scene": 4,
-        "user": "Gruendercoach",
-        "page": "https://pixabay.com/photos/yellowstone-national-park-geyser-6729237/"
+        "source": "pixabay",
+        "user": "Sonyuser",
+        "page": "https://pixabay.com/photos/river-trees-mountains-water-flow-5662292/"
       },
       {
         "scene": 5,
-        "user": "Paul_Henri",
-        "page": "https://pixabay.com/photos/church-christianity-religion-5400318/"
+        "source": "pixabay",
+        "user": "ElisaRiva",
+        "page": "https://pixabay.com/photos/distance-hands-meter-coronavirus-4917124/"
       },
       {
         "scene": 6,
-        "user": "onenkint12",
-        "page": "https://pixabay.com/photos/adventure-jeep-br-car-trip-travel-2938233/"
+        "source": "pixabay",
+        "user": "MariLari",
+        "page": "https://pixabay.com/photos/game-drive-vehicle-animals-mammals-5730684/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0067_Namibia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "lion in Namibian savanna",
+      "elephant herd Namibia",
+      "leopard on tree branch Namibia",
+      "national park ranger briefing",
+      "20 meter distance marker sign",
+      "tourist vehicle safari landscape"
+    ]
   },
   {
     "country": "Switzerland",
@@ -1836,37 +2610,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "ii7017",
-        "page": "https://pixabay.com/photos/guinea-pig-few-hagenbeck-hamburg-5269324/"
+        "source": "pixabay",
+        "user": "carlosftw",
+        "page": "https://pixabay.com/photos/dog-guinea-pig-love-cute-funny-3491286/"
       },
       {
         "scene": 2,
-        "user": "Myagi",
-        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287749/"
+        "source": "pixabay",
+        "user": "furbymama",
+        "page": "https://pixabay.com/photos/guinea-pig-animal-pet-rodent-6839832/"
       },
       {
         "scene": 3,
-        "user": "narya",
-        "page": "https://pixabay.com/photos/flowers-meadow-grass-bloom-blossom-1516734/"
+        "source": "pixabay",
+        "user": "mariellasigg",
+        "page": "https://pixabay.com/photos/cow-alm-alpine-meadow-mountains-7615865/"
       },
       {
         "scene": 4,
-        "user": "Sonyuser",
-        "page": "https://pixabay.com/photos/bridge-city-river-zurich-4636745/"
+        "source": "pixabay",
+        "user": "widmerinsurance4you",
+        "page": "https://pixabay.com/photos/tram-switzerland-street-sunset-7212423/"
       },
       {
         "scene": 5,
-        "user": "pasja1000",
-        "page": "https://pixabay.com/photos/chicken-coop-5230394/"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/rice-field-cottage-farm-farmland-1866498/"
       },
       {
         "scene": 6,
-        "user": "Myagi",
-        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287747/"
+        "source": "pixabay",
+        "user": "MAX4869",
+        "page": "https://pixabay.com/photos/guinea-pig-cage-pet-6612427/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0068_Switzerland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "two guinea pigs together",
+      "guinea pig bed wooden",
+      "Swiss alpine meadow",
+      "Zurich city street",
+      "Swiss farm cottage",
+      "guinea pig cage interior"
+    ]
   },
   {
     "country": "Colombia",
@@ -1906,37 +2694,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Makalu",
-        "page": "https://pixabay.com/photos/colombia-cartagena-city-city-square-4941269/"
-      },
-      {
-        "scene": 2,
+        "source": "pixabay",
         "user": "Makalu",
         "page": "https://pixabay.com/photos/colombia-cartagena-city-4941270/"
       },
       {
-        "scene": 3,
+        "scene": 2,
+        "source": "pixabay",
         "user": "hectordavid1022",
         "page": "https://pixabay.com/photos/train-transportation-travel-metro-6485753/"
       },
       {
-        "scene": 4,
+        "scene": 3,
+        "source": "pixabay",
         "user": "Makalu",
-        "page": "https://pixabay.com/photos/colombia-cartagena-city-4936995/"
+        "page": "https://pixabay.com/photos/colombia-santa-marta-building-3529273/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "luiyisalcie01",
+        "page": "https://pixabay.com/photos/medellin-colombia-city-travel-7140474/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "Makalu",
-        "page": "https://pixabay.com/photos/colombia-province-of-cauca-mountains-3529024/"
+        "page": "https://pixabay.com/photos/colombia-landscape-mountains-travel-3551193/"
       },
       {
         "scene": 6,
-        "user": "Makalu",
-        "page": "https://pixabay.com/photos/colombia-santa-marta-building-3529273/"
+        "source": "pixabay",
+        "user": "hilderi",
+        "page": "https://pixabay.com/photos/cafe-nature-travel-exploration-7048346/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0069_Colombia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Colombia travel",
+      "Colombia travel",
+      "Colombia travel",
+      "Colombia travel",
+      "Colombia travel",
+      "Colombia travel"
+    ]
   },
   {
     "country": "Ecuador",
@@ -1984,37 +2786,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Keishpixl",
-        "page": "https://pixabay.com/photos/lake-wetland-mountains-landscape-6791971/"
+        "page": "https://pixabay.com/photos/lake-wetland-mountains-landscape-6791975/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "hbieser",
         "page": "https://pixabay.com/photos/ecuador-rainforest-butterfly-4292267/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Keishpixl",
         "page": "https://pixabay.com/photos/lake-forest-nature-mountain-flora-6791973/"
       },
       {
         "scene": 4,
-        "user": "qimono",
-        "page": "https://pixabay.com/photos/gavel-auction-law-hammer-symbol-2492011/"
+        "source": "pixabay",
+        "user": "sergeitokmakov",
+        "page": "https://pixabay.com/photos/gavel-justice-judge-courtroom-7499911/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "MilanKullu",
         "page": "https://pixabay.com/photos/man-pollution-garbage-trash-travel-7902570/"
       },
       {
         "scene": 6,
-        "user": "stevepb",
-        "page": "https://pixabay.com/photos/binding-contract-contract-secure-948442/"
+        "source": "pixabay",
+        "user": "rawpixel",
+        "page": "https://pixabay.com/photos/desk-work-business-office-finance-3139127/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0070_Ecuador.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Ecuador river",
+      "Amazon rainforest Ecuador",
+      "mountain forest Ecuador",
+      "courtroom gavel",
+      "river pollution water",
+      "legal documents on table"
+    ]
   },
   {
     "country": "Malta",
@@ -2058,37 +2874,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "ariesa66",
         "page": "https://pixabay.com/photos/climb-climbing-frame-kindergarten-3368388/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
+        "user": "Aleafar",
+        "page": "https://pixabay.com/photos/flag-greece-flag-pole-sun-sunlight-7167064/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "ktphotography",
+        "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
         "user": "Alehandra13",
         "page": "https://pixabay.com/photos/cliff-travel-sea-landscape-nature-7930586/"
       },
       {
-        "scene": 3,
-        "user": "westphotoandvideo",
-        "page": "https://pixabay.com/photos/band-music-live-music-concert-4671748/"
-      },
-      {
-        "scene": 4,
-        "user": "sdg_Rai",
-        "page": "https://pixabay.com/photos/vietnam-woman-everyday-life-8420600/"
-      },
-      {
         "scene": 5,
+        "source": "pixabay",
         "user": "Magdalenalena",
         "page": "https://pixabay.com/photos/popeye-village-malta-architecture-4158038/"
       },
       {
         "scene": 6,
-        "user": "cocoparisienne",
-        "page": "https://pixabay.com/photos/mountaineer-climb-rock-climber-2100050/"
+        "source": "pixabay",
+        "user": "10255718",
+        "page": "https://pixabay.com/photos/girl-a-woman-young-people-barley-4626874/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0071_Malta.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Maltese festa pole climbing",
+      "wooden pole with flag Malta",
+      "Maltese crowd watching festival",
+      "traditional wooden pole Malta",
+      "village festival celebration Malta",
+      "young climber on pole"
+    ]
   },
   {
     "country": "Papua New Guinea",
@@ -2132,37 +2962,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "ii7017",
-        "page": "https://pixabay.com/photos/guinea-pig-few-hagenbeck-hamburg-5269324/"
+        "source": "pixabay",
+        "user": "Jarka21",
+        "page": "https://pixabay.com/photos/papua-new-guinea-house-boys-kids-6751167/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "BeaAmaya",
         "page": "https://pixabay.com/photos/highlands-papua-new-guinea-tribes-2267369/"
       },
       {
         "scene": 3,
-        "user": "Kaufdex",
-        "page": "https://pixabay.com/photos/papua-new-guinea-banner-flag-2697301/"
+        "source": "pixabay",
+        "user": "JulesR",
+        "page": "https://pixabay.com/photos/rabaul-volcano-papua-new-guinea-4380826/"
       },
       {
         "scene": 4,
-        "user": "suju-foto",
-        "page": "https://pixabay.com/photos/pig-dog-inner-pig-dog-dog-pig-2613125/"
+        "source": "pixabay",
+        "user": "JerzyGórecki",
+        "page": "https://pixabay.com/photos/sunset-sheep-mountains-grazing-3645639/"
       },
       {
         "scene": 5,
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/good-luck-handful-happiness-piggy-1993688/"
+        "source": "pixabay",
+        "user": "Lichtsammler",
+        "page": "https://pixabay.com/photos/animals-pigs-mammal-species-fauna-4028140/"
       },
       {
         "scene": 6,
-        "user": "Jarka21",
-        "page": "https://pixabay.com/photos/papua-new-guinea-house-boys-kids-6751167/"
+        "source": "pixabay",
+        "user": "JulesR",
+        "page": "https://pixabay.com/photos/papua-new-guinea-alotau-child-4380816/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0072_Papua New Guinea.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Papua New Guinea wedding pigs",
+      "highland village ceremony Papua New Guinea",
+      "Papua New Guinea pig tribute",
+      "pig herd in tropical forest",
+      "villagers gathering with pigs",
+      "mountain village celebration Papua New Guinea"
+    ]
   },
   {
     "country": "Rwanda",
@@ -2214,37 +3058,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Dannypro1",
-        "page": "https://pixabay.com/photos/flower-dandelion-wildflower-nature-7700011/"
+        "source": "pixabay",
+        "user": "anngadpandey",
+        "page": "https://pixabay.com/photos/fruit-seller-fruit-seller-market-7593634/"
       },
       {
         "scene": 2,
-        "user": "9159032",
-        "page": "https://pixabay.com/photos/non-woven-bags-eco-friendly-bags-3917805/"
+        "source": "pixabay",
+        "user": "SMsavaliya07",
+        "page": "https://pixabay.com/photos/paper-bag-shopping-shop-mall-8557551/"
       },
       {
         "scene": 3,
-        "user": "ElasticComputeFarm",
-        "page": "https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/"
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/fruits-grocery-store-supermarket-6771933/"
       },
       {
         "scene": 4,
-        "user": "wal_172619",
-        "page": "https://pixabay.com/photos/crossing-crosswalk-transition-road-4860035/"
+        "source": "pixabay",
+        "user": "Bertsz",
+        "page": "https://pixabay.com/photos/zebra-south-africa-africa-animal-3564956/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "pepperminting",
         "page": "https://pixabay.com/photos/benches-autumn-park-rest-sit-560435/"
       },
       {
         "scene": 6,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/bag-leather-messenger-bag-classic-1854148/"
+        "source": "pixabay",
+        "user": "CreativesMart",
+        "page": "https://pixabay.com/photos/eco-friendly-cloth-bag-10514176/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0073_Rwanda.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Rwanda market street",
+      "Rwanda reusable shopping bag",
+      "plastic free grocery aisle",
+      "Rwanda wildlife crossing road",
+      "Rwanda city park bench",
+      "reusable bag checkout"
+    ]
   },
   {
     "country": "Qatar",
@@ -2292,37 +3150,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "mariohagen",
-        "page": "https://pixabay.com/photos/person-suit-medical-protection-5441453/"
+        "source": "pixabay",
+        "user": "staffanekstrand",
+        "page": "https://pixabay.com/photos/woman-doha-qatar-arab-colorful-2863788/"
       },
       {
         "scene": 2,
-        "user": "AymaneJed",
-        "page": "https://pixabay.com/photos/laptop-office-hand-writing-3196481/"
+        "source": "pixabay",
+        "user": "JoshuaWoroniecki",
+        "page": "https://pixabay.com/photos/usa-passport-flag-patriot-5305985/"
       },
       {
         "scene": 3,
-        "user": "Lichtpuenktchen",
-        "page": "https://pixabay.com/photos/dog-dalmatian-animal-portrait-1772759/"
+        "source": "pixabay",
+        "user": "JACLOU-DL",
+        "page": "https://pixabay.com/photos/dog-canine-pet-friend-breed-7991199/"
       },
       {
         "scene": 4,
-        "user": "GumiKutya",
-        "page": "https://pixabay.com/photos/pet-dog-adopted-adoption-animal-10072662/"
+        "source": "pixabay",
+        "user": "petfoto",
+        "page": "https://pixabay.com/photos/cat-sphynx-cat-pet-animal-bambino-8213331/"
       },
       {
         "scene": 5,
-        "user": "18531141",
-        "page": "https://pixabay.com/photos/woman-rituals-tradition-bali-7790612/"
+        "source": "pixabay",
+        "user": "RAS_RNS",
+        "page": "https://pixabay.com/photos/qatar-doha-metro-qatar-metro-4696596/"
       },
       {
         "scene": 6,
-        "user": "JessBaileyDesign",
-        "page": "https://pixabay.com/photos/notebook-desk-paper-desktop-3820634/"
+        "source": "pixabay",
+        "user": "RaniRamli",
+        "page": "https://pixabay.com/photos/poster-frame-cat-toys-desk-wall-4109365/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0074_Qatar.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Qatar airport quarantine",
+      "dog passport paperwork",
+      "approved dog breed Qatar",
+      "cat travel crate",
+      "Qatar customs officer",
+      "pet inspection desk"
+    ]
   },
   {
     "country": "Saudi Arabia",
@@ -2366,37 +3238,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Kaufdex",
-        "page": "https://pixabay.com/photos/saudi-arabia-flag-banner-2697320/"
+        "source": "pixabay",
+        "user": "Pix-Off",
+        "page": "https://pixabay.com/photos/mountains-sandstone-israel-city-7562015/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "SLPix",
         "page": "https://pixabay.com/photos/riyadh-saudi-arabia-city-2375435/"
       },
       {
         "scene": 3,
-        "user": "thestorychef",
-        "page": "https://pixabay.com/photos/classic-car-automobile-car-retro-584118/"
+        "source": "pixabay",
+        "user": "Ralphs_Fotos",
+        "page": "https://pixabay.com/photos/license-plate-car-shield-2438214/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "1139623",
         "page": "https://pixabay.com/photos/saudi-arabia-mountain-pass-highway-881550/"
       },
       {
         "scene": 5,
-        "user": "planet_fox",
-        "page": "https://pixabay.com/photos/truck-driver-transport-traffic-4933514/"
+        "source": "pixabay",
+        "user": "Moroznaya_Photo",
+        "page": "https://pixabay.com/photos/mom-family-woman-daughter-portrait-9034408/"
       },
       {
         "scene": 6,
-        "user": "WikiImages",
-        "page": "https://pixabay.com/photos/iraq-dictator-president-67653/"
+        "source": "pixabay",
+        "user": "apriltan18",
+        "page": "https://pixabay.com/photos/riyadh-saudi-arabia-city-night-2197496/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0075_Saudi Arabia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Saudi Arabia woman driving",
+      "Riyadh city street",
+      "Saudi Arabian license plate",
+      "Desert road Saudi Arabia",
+      "Woman holding driver license",
+      "Saudi Arabia traffic light"
+    ]
   },
   {
     "country": "Estonia",
@@ -2440,37 +3326,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Jecqan",
         "page": "https://pixabay.com/photos/sparrow-fence-estonia-tallinn-7984807/"
       },
       {
         "scene": 2,
-        "user": "621hjmit",
-        "page": "https://pixabay.com/photos/sella-capital-4101893/"
+        "source": "pixabay",
+        "user": "Peggy_Marco",
+        "page": "https://pixabay.com/photos/carry-on-baggage-4915097/"
       },
       {
         "scene": 3,
-        "user": "27707",
-        "page": "https://pixabay.com/photos/laptop-coffee-arm-desktop-notebook-1205256/"
+        "source": "pixabay",
+        "user": "BiljaST",
+        "page": "https://pixabay.com/photos/register-sign-up-password-username-2819608/"
       },
       {
         "scene": 4,
-        "user": "Peggy_Marco",
-        "page": "https://pixabay.com/photos/digital-nomads-lifestyle-remote-work-4875466/"
+        "source": "pixabay",
+        "user": "rawpixel",
+        "page": "https://pixabay.com/photos/beard-business-business-people-cafe-2326422/"
       },
       {
         "scene": 5,
-        "user": "TheDigitalWay",
-        "page": "https://pixabay.com/photos/credit-cards-denim-jeans-blue-jeans-1583534/"
+        "source": "pixabay",
+        "user": "QuinceCreative",
+        "page": "https://pixabay.com/photos/piggy-bank-money-save-finance-3608365/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "Peggy_Marco",
         "page": "https://pixabay.com/photos/man-laptop-work-digital-nomad-4749237/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0076_Estonia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Estonia Tallinn cityscape",
+      "digital passport illustration",
+      "laptop with online registration form",
+      "remote work coffee shop",
+      "bank account online dashboard",
+      "global nomad traveling with laptop"
+    ]
   },
   {
     "country": "Philippines",
@@ -2518,37 +3418,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Gemack",
-        "page": "https://pixabay.com/photos/leaf-banana-leaf-banana-plant-plant-50020/"
+        "source": "pixabay",
+        "user": "Ralphs_Fotos",
+        "page": "https://pixabay.com/photos/banana-leaf-leaf-botany-macro-4613057/"
       },
       {
         "scene": 2,
-        "user": "MarienFlipse",
-        "page": "https://pixabay.com/photos/military-branch-vehicle-war-fight-3198298/"
+        "source": "pixabay",
+        "user": "MULTIMEDIOSDS",
+        "page": "https://pixabay.com/photos/soldier-military-soldiers-war-army-3922408/"
       },
       {
         "scene": 3,
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/buffet-indian-food-spices-lunch-315691/"
+        "source": "commons",
+        "user": "Shubert Ciencia",
+        "license": "CC BY 2.0",
+        "title": "Boodle Fight (Baler, Aurora).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Boodle_Fight_(Baler,_Aurora).jpg"
       },
       {
         "scene": 4,
-        "user": "congerdesign",
-        "page": "https://pixabay.com/photos/pasta-spaghetti-farfalle-noodles-560657/"
+        "source": "pixabay",
+        "user": "nad_dyagileva",
+        "page": "https://pixabay.com/photos/breakfast-food-oatmeal-table-3551420/"
       },
       {
         "scene": 5,
-        "user": "MOHANN",
-        "page": "https://pixabay.com/photos/bananas-fruits-plantains-nature-7840213/"
+        "source": "pixabay",
+        "user": "XuanHai2022",
+        "page": "https://pixabay.com/photos/banana-banana-leaves-foliage-nature-7492672/"
       },
       {
         "scene": 6,
-        "user": "ChrisHumphrey",
-        "page": "https://pixabay.com/photos/party-food-snacks-tasty-delicious-1225687/"
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/buffet-fixed-celebration-meal-974742/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0077_Philippines.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Philippines banana leaf feast",
+      "Manila soldiers Boodle fight",
+      "Philippines communal dining spread",
+      "Boodle fight food layout",
+      "Military banquet banana leaves",
+      "Celebration party food spread"
+    ]
   },
   {
     "country": "Netherlands",
@@ -2596,37 +3512,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "ClickerHappy",
-        "page": "https://pixabay.com/photos/girls-bicycle-helmets-bicycle-lane-4582899/"
+        "source": "pixabay",
+        "user": "vydumka",
+        "page": "https://pixabay.com/photos/amsterdam-bike-holland-flowers-3964198/"
       },
       {
         "scene": 2,
-        "user": "mel_88",
-        "page": "https://pixabay.com/photos/amsterdam-historical-old-town-5367020/"
+        "source": "pixabay",
+        "user": "Jhnndy",
+        "page": "https://pixabay.com/photos/bicycle-street-street-photography-4496443/"
       },
       {
         "scene": 3,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/bike-blur-cars-city-cyclist-urban-1836934/"
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/bicycle-traffic-light-9432977/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "Pexels",
         "page": "https://pixabay.com/photos/asia-street-bicycle-bike-busy-2181892/"
       },
       {
         "scene": 5,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/bicycle-bike-pavement-bokeh-lights-1839005/"
+        "source": "pixabay",
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/motorcycle-motorbike-street-parked-4132168/"
       },
       {
         "scene": 6,
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/alley-street-night-evening-city-89197/"
+        "source": "pixabay",
+        "user": "16692474",
+        "page": "https://pixabay.com/photos/sunset-roads-traffic-cars-vehicles-5809870/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0078_Netherlands.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Amsterdam bicycle lane",
+      "Dutch bike priority street",
+      "Rotterdam bike traffic",
+      "bicycle crossing narrow street",
+      "street with parked bikes",
+      "quiet traffic street Netherlands"
+    ]
   },
   {
     "country": "Japan",
@@ -2678,37 +3608,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/nissan-figaro-car-interior-vehicle-4368962/"
+        "source": "pixabay",
+        "user": "Louise_S",
+        "page": "https://pixabay.com/photos/japanese-garden-water-garden-summer-4459774/"
       },
       {
         "scene": 2,
-        "user": "Fang_Y_M",
-        "page": "https://pixabay.com/photos/woman-platform-waiting-train-5477042/"
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/sit-architecture-inner-space-4300448/"
       },
       {
         "scene": 3,
-        "user": "ArminEP",
-        "page": "https://pixabay.com/photos/shinkansen-bullet-train-5237269/"
+        "source": "pixabay",
+        "user": "devinedsel",
+        "page": "https://pixabay.com/photos/woman-train-kyoto-japan-people-9189442/"
       },
       {
         "scene": 4,
-        "user": "Shutterbug26",
-        "page": "https://pixabay.com/photos/blur-commute-commuting-locomotive-1239439/"
+        "source": "commons",
+        "user": "Nelo Hotsuma",
+        "license": "CC BY 2.0",
+        "title": "おめでとう 福地元春投手 2015 (16500758425).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8%E3%81%86_%E7%A6%8F%E5%9C%B0%E5%85%83%E6%98%A5%E6%8A%95%E6%89%8B_2015_(16500758425).jpg"
       },
       {
         "scene": 5,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/blonde-girl-book-reading-sit-1866951/"
+        "source": "pixabay",
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/glasses-book-phone-iphone-1052023/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "Pexels",
-        "page": "https://pixabay.com/photos/blur-chairs-empty-floor-hallway-1868346/"
+        "page": "https://pixabay.com/photos/handlebars-metro-seats-train-1840592/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0079_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Japanese Shinkansen quiet car",
+      "Tokyo train platform empty seat",
+      "Kyoto commuter train interior",
+      "Train carriage muted lighting",
+      "Japanese passenger reading book",
+      "Train aisle empty seats"
+    ]
   },
   {
     "country": "Wales",
@@ -2752,37 +3698,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "RyanMcGuire",
-        "page": "https://pixabay.com/photos/road-landscape-countryside-pavement-238458/"
+        "source": "pixabay",
+        "user": "TobiasBrunner",
+        "page": "https://pixabay.com/photos/road-street-winding-winding-road-6175186/"
       },
       {
         "scene": 2,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/architecture-avenue-buildings-city-1846023/"
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/carousel-old-town-urban-dijon-6402074/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "terimakasih0",
         "page": "https://pixabay.com/photos/castle-fort-landmark-architecture-1194887/"
       },
       {
         "scene": 4,
-        "user": "diego_torres",
-        "page": "https://pixabay.com/photos/mountains-bridge-a-river-snowdonia-1608681/"
+        "source": "pixabay",
+        "user": "foxycoxy",
+        "page": "https://pixabay.com/photos/wales-snowdon-snowdonia-uk-welsh-2629248/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "EdWhiteImages",
         "page": "https://pixabay.com/photos/lighthouse-mumbles-coast-swansea-4730211/"
       },
       {
         "scene": 6,
-        "user": "ptrabattoni",
-        "page": "https://pixabay.com/photos/spain-spanish-europe-house-4967963/"
+        "source": "pixabay",
+        "user": "Chikilino",
+        "page": "https://pixabay.com/photos/architecture-historian-house-borgo-4437756/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0080_Wales.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Welsh countryside road",
+      "Cardiff city street",
+      "Welsh castle exterior",
+      "Snowdonia mountain trail",
+      "Welsh lighthouse coast",
+      "Welsh village stone house"
+    ]
   },
   {
     "country": "Japan",
@@ -2830,37 +3790,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "pen_ash",
         "page": "https://pixabay.com/photos/snow-monkey-wild-animal-wildlife-4809479/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "cnyizhao",
         "page": "https://pixabay.com/photos/towel-small-towel-cotton-towel-4945972/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "pen_ash",
         "page": "https://pixabay.com/photos/eggs-onsen-tamago-cooking-4820458/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "3503898",
-        "page": "https://pixabay.com/photos/animal-monkey-3892151/"
+        "page": "https://pixabay.com/photos/animal-monkey-3892156/"
       },
       {
         "scene": 5,
-        "user": "congerdesign",
-        "page": "https://pixabay.com/photos/chicks-young-birds-animals-fluffy-573377/"
+        "source": "pixabay",
+        "user": "Curious_Collectibles",
+        "page": "https://pixabay.com/photos/washing-wind-breeze-fresh-cloth-4833060/"
       },
       {
         "scene": 6,
-        "user": "NoName_13",
-        "page": "https://pixabay.com/photos/woman-girl-curler-hairstyle-3170568/"
+        "source": "pixabay",
+        "user": "sharonang",
+        "page": "https://pixabay.com/photos/ryokan-traditional-japanese-house-249560/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0081_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Japanese onsen shower area",
+      "small towel on head Japan",
+      "onsen water without towel",
+      "Japanese hot spring bath",
+      "towel hanging outside onsen",
+      "Kyoto ryokan bathroom"
+    ]
   },
   {
     "country": "Finland",
@@ -2908,37 +3882,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "aileino",
         "page": "https://pixabay.com/photos/blueberry-blueberry-toad-hand-1579046/"
       },
       {
         "scene": 2,
-        "user": "jggrz",
-        "page": "https://pixabay.com/photos/mushrooms-lamellar-mushrooms-moss-8401590/"
+        "source": "pixabay",
+        "user": "Πασκαλ",
+        "page": "https://pixabay.com/photos/pine-cone-coniferous-pine-tree-8454689/"
       },
       {
         "scene": 3,
-        "user": "Moroznaya_Photo",
-        "page": "https://pixabay.com/photos/bouquet-basket-decorations-7948558/"
+        "source": "pixabay",
+        "user": "margarita_kochneva",
+        "page": "https://pixabay.com/photos/picnic-vacation-cups-tray-pillow-6928258/"
       },
       {
         "scene": 4,
-        "user": "KostkaCZ",
-        "page": "https://pixabay.com/photos/blueberries-forest-blueberry-2516431/"
+        "source": "pixabay",
+        "user": "Goumbik",
+        "page": "https://pixabay.com/photos/hand-berry-nature-bush-natural-2717117/"
       },
       {
         "scene": 5,
-        "user": "buzukis",
-        "page": "https://pixabay.com/photos/raspberries-yellow-raspberries-5547660/"
+        "source": "pixabay",
+        "user": "lenanicholson",
+        "page": "https://pixabay.com/photos/raspberry-picking-berries-handful-4876960/"
       },
       {
         "scene": 6,
-        "user": "adege",
-        "page": "https://pixabay.com/photos/mushroom-mushrooms-beech-slime-root-7570693/"
+        "source": "pixabay",
+        "user": "DavidReed",
+        "page": "https://pixabay.com/photos/mushroom-fungus-nature-forest-4513766/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0082_Finland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Finland forest berries picking",
+      "Finnish pine forest mushrooms",
+      "Family picnic basket berries Finland",
+      "Wild blueberry bush closeup",
+      "Raspberry picking in Nordic woods",
+      "Mushroom foraging trail Finland"
+    ]
   },
   {
     "country": "Argentina",
@@ -2982,37 +3970,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "amrothman",
         "page": "https://pixabay.com/photos/mate-drink-beverage-straw-herbs-5616550/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "brunettilautarojoel",
         "page": "https://pixabay.com/photos/mate-drink-refreshment-herbs-5976225/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "kaosnoff",
         "page": "https://pixabay.com/photos/yerba-mate-terer%C3%A9-mate-leaf-plant-4472772/"
       },
       {
         "scene": 4,
-        "user": "pixelia",
-        "page": "https://pixabay.com/photos/dance-argentinian-tango-couple-661553/"
+        "source": "pixabay",
+        "user": "Scottslm",
+        "page": "https://pixabay.com/photos/pigeon-preening-mate-two-pigeons-4586014/"
       },
       {
         "scene": 5,
-        "user": "DiDeeChen",
-        "page": "https://pixabay.com/photos/coffee-drip-coffee-drink-caffeine-5252373/"
+        "source": "pixabay",
+        "user": "Engin_Akyurt",
+        "page": "https://pixabay.com/photos/electric-kettle-tea-boiling-water-6966011/"
       },
       {
         "scene": 6,
-        "user": "13748526",
-        "page": "https://pixabay.com/photos/mate-tea-tea-drink-yerba-mate-6259745/"
+        "source": "pixabay",
+        "user": "pasja1000",
+        "page": "https://pixabay.com/photos/ski-zermatt-ski-run-skiers-winter-3304792/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0083_Argentina.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Argentinian mate gourd",
+      "Buenos Aires cafe mate",
+      "hand passing mate",
+      "Argentinian friends sharing mate",
+      "mate tea brewing kettle",
+      "group passing mate clockwise"
+    ]
   },
   {
     "country": "Iceland",
@@ -3060,37 +4062,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "kiwibu",
-        "page": "https://pixabay.com/photos/house-field-rural-meadow-landscape-6387074/"
+        "source": "pixabay",
+        "user": "TobiasBrunner",
+        "page": "https://pixabay.com/photos/road-street-winding-winding-road-6175186/"
       },
       {
         "scene": 2,
-        "user": "Ronile",
-        "page": "https://pixabay.com/photos/reykjavik-iceland-longship-267960/"
+        "source": "pixabay",
+        "user": "strikers",
+        "page": "https://pixabay.com/photos/boats-port-sunrise-sunset-1802340/"
       },
       {
         "scene": 3,
-        "user": "therongexperiment",
-        "page": "https://pixabay.com/photos/church-building-mood-black-simple-3460420/"
+        "source": "pixabay",
+        "user": "TheDigitalArtist",
+        "page": "https://pixabay.com/photos/church-lake-building-architecture-2464899/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "Moroznaya_Photo",
         "page": "https://pixabay.com/photos/mom-family-woman-daughter-portrait-9034408/"
       },
       {
         "scene": 5,
-        "user": "ReneGossner",
-        "page": "https://pixabay.com/photos/lake-nature-travel-landscape-6476212/"
+        "source": "pixabay",
+        "user": "ceetje",
+        "page": "https://pixabay.com/photos/storm-nature-clouds-sky-prairie-10288198/"
       },
       {
         "scene": 6,
-        "user": "Larysa_Shche",
-        "page": "https://pixabay.com/photos/knitting-hands-woman-hobby-7238657/"
+        "source": "pixabay",
+        "user": "Gromutter",
+        "page": "https://pixabay.com/photos/knitting-wool-handwork-yellow-4933443/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0084_Iceland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Icelandic countryside road",
+      "Reykjavik harbor sunrise",
+      "Icelandic wooden church exterior",
+      "Family holding handwritten name tag",
+      "Icelandic volcanic landscape",
+      "Traditional Icelandic knitting pattern"
+    ]
   },
   {
     "country": "Portugal",
@@ -3138,37 +4154,55 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "PatrickLFC93",
-        "page": "https://pixabay.com/photos/phone-booth-phone-english-uk-7728783/"
+        "source": "commons",
+        "user": "Pedro Ribeiro Simões from Lisboa, Portugal",
+        "license": "CC BY 2.0",
+        "title": "European autonomies (Galicia Spain) - Reasons? (15182647885).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:European_autonomies_(Galicia_Spain)_-_Reasons%3F_(15182647885).jpg"
       },
       {
         "scene": 2,
-        "user": "planet_fox",
-        "page": "https://pixabay.com/photos/ballot-box-democracy-politics-poll-4933481/"
+        "source": "pixabay",
+        "user": "8385",
+        "page": "https://pixabay.com/photos/ballot-box-choice-federal-election-2586565/"
       },
       {
         "scene": 3,
-        "user": "franky1st",
-        "page": "https://pixabay.com/photos/bridge-city-river-portugal-tourism-4441037/"
+        "source": "commons",
+        "user": "Pedro Ribeiro Simões from Lisboa, Portugal",
+        "license": "CC BY 2.0",
+        "title": "Democracy (19163579120).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Democracy_(19163579120).jpg"
       },
       {
         "scene": 4,
-        "user": "Chuotanhls",
-        "page": "https://pixabay.com/photos/vietnam-couple-love-lovers-8560196/"
+        "source": "pixabay",
+        "user": "andibreit",
+        "page": "https://pixabay.com/photos/opinion-poll-opinion-polling-survey-1594962/"
       },
       {
         "scene": 5,
-        "user": "Annabel_P",
-        "page": "https://pixabay.com/photos/fountain-building-illuminations-4661162/"
+        "source": "pixabay",
+        "user": "Kookay",
+        "page": "https://pixabay.com/photos/new-town-hall-building-illuminated-4152279/"
       },
       {
         "scene": 6,
-        "user": "Mokajou",
-        "page": "https://pixabay.com/photos/skate-skateboard-skateboarding-7403432/"
+        "source": "pixabay",
+        "user": "Anemone123",
+        "page": "https://pixabay.com/photos/desperate-sad-depressed-feet-hands-2293377/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0085_Portugal.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Lisbon voting booth interior",
+      "Portuguese ballot box street",
+      "young voter Portugal",
+      "hand holding ballot paper",
+      "Portugal town hall exterior",
+      "teenager casting vote"
+    ]
   },
   {
     "country": "Japan",
@@ -3216,37 +4250,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Activedia",
-        "page": "https://pixabay.com/photos/escalator-stairs-metro-subway-769790/"
+        "source": "pixabay",
+        "user": "strohmi",
+        "page": "https://pixabay.com/photos/tokyo-japan-city-urban-subway-9826329/"
       },
       {
         "scene": 2,
-        "user": "pen_ash",
-        "page": "https://pixabay.com/photos/snow-monkey-wild-animal-wildlife-4809479/"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/mother-baby-woman-child-little-1866621/"
       },
       {
         "scene": 3,
-        "user": "strohmi",
-        "page": "https://pixabay.com/photos/japan-osaka-city-urban-neon-night-9826328/"
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/airport-tokyo-haneda-ana-jet-5387490/"
       },
       {
         "scene": 4,
-        "user": "macmao",
-        "page": "https://pixabay.com/photos/child-childhood-joy-summer-happy-2345435/"
+        "source": "pixabay",
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/library-setup-books-read-stately-5219747/"
       },
       {
         "scene": 5,
-        "user": "WikiImages",
-        "page": "https://pixabay.com/photos/satellite-spacecraft-space-67718/"
+        "source": "pixabay",
+        "user": "PIX1861",
+        "page": "https://pixabay.com/photos/changing-station-wrap-small-child-548407/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "asd14235714",
         "page": "https://pixabay.com/photos/subway-metro-subway-station-4823909/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0086_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Tokyo subway station hallway",
+      "Japanese mother nursing baby",
+      "Osaka airport waiting lounge",
+      "Quiet baby room interior",
+      "Japanese diaper changing station",
+      "Tokyo train platform signage"
+    ]
   },
   {
     "country": "Lithuania",
@@ -3290,37 +4338,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "fernandozhiminaicela",
-        "page": "https://pixabay.com/photos/parade-carnival-women-4879243/"
+        "source": "pixabay",
+        "user": "Tho-Ge",
+        "page": "https://pixabay.com/photos/masquerade-carnival-disguise-8575709/"
       },
       {
         "scene": 2,
-        "user": "NickyPe",
-        "page": "https://pixabay.com/photos/krampus-devil-mask-tradition-7573319/"
+        "source": "pixabay",
+        "user": "192635",
+        "page": "https://pixabay.com/photos/carnival-monster-mask-costume-326495/"
       },
       {
         "scene": 3,
-        "user": "misskursovie2013",
-        "page": "https://pixabay.com/photos/food-holiday-shrovetide-pancakes-4895773/"
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pancakes-crepe-pancake-s%C3%BCsspeise-2020863/"
       },
       {
         "scene": 4,
-        "user": "picsbyjameslee",
-        "page": "https://pixabay.com/photos/christmas-winter-merry-christmas-4705290/"
+        "source": "pixabay",
+        "user": "MichaelCatadman",
+        "page": "https://pixabay.com/photos/festival-dance-costume-culture-10332845/"
       },
       {
         "scene": 5,
-        "user": "jackmac34",
-        "page": "https://pixabay.com/photos/galette-des-rois-crown-pancake-1119699/"
+        "source": "pixabay",
+        "user": "OlyaLole",
+        "page": "https://pixabay.com/photos/queen-woman-female-fantasy-fashion-4481549/"
       },
       {
         "scene": 6,
-        "user": "Wolfgang_Hasselmann",
-        "page": "https://pixabay.com/photos/bird-winter-nature-10368043/"
+        "source": "pixabay",
+        "user": "valentinhintikka",
+        "page": "https://pixabay.com/photos/willow-bird-animals-little-bird-5534810/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0087_Lithuania.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Lithuania street carnival",
+      "devil mask tradition",
+      "thin pancake food",
+      "Vilnius parade festival",
+      "pancake crown costume",
+      "wild willow branches"
+    ]
   },
   {
     "country": "Nepal",
@@ -3364,37 +4426,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "sachinMitl",
-        "page": "https://pixabay.com/photos/old-building-building-india-delhi-7130386/"
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/india-mysore-palace-architecture-10514028/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "chandanlosr",
         "page": "https://pixabay.com/photos/janaki-temple-temple-building-388863/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Sunriseforever",
         "page": "https://pixabay.com/photos/boat-river-woman-young-lake-6551183/"
       },
       {
         "scene": 4,
-        "user": "photodrishti",
-        "page": "https://pixabay.com/photos/kathmandu-polluted-kathmandu-4944427/"
+        "source": "commons",
+        "user": "Mandy",
+        "license": "CC BY 2.0",
+        "title": "Kumari Bahal.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kumari_Bahal.jpg"
       },
       {
         "scene": 5,
-        "user": "drshohmelian",
-        "page": "https://pixabay.com/photos/dentist-dental-care-dentistry-teeth-2530990/"
+        "source": "pixabay",
+        "user": "kumarsu6745_",
+        "page": "https://pixabay.com/photos/cardiology-md-diagnostic-arrhythmia-10217198/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "suman",
         "page": "https://pixabay.com/photos/culture-festival-child-nepal-101671/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0088_Nepal.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Kathmandu palace interior",
+      "Nepal temple courtyard",
+      "young girl in traditional dress",
+      "royal procession Kathmandu",
+      "government health checkup",
+      "festival crowd Nepal"
+    ]
   },
   {
     "country": "Iceland",
@@ -3438,37 +4516,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "nextvoyage",
-        "page": "https://pixabay.com/photos/waterfall-iceland-landscape-water-4774207/"
+        "source": "pixabay",
+        "user": "Bru-nO",
+        "page": "https://pixabay.com/photos/construction-site-traffic-road-4364451/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "Susan1111",
         "page": "https://pixabay.com/photos/beach-cliff-rock-mist-fog-sea-6203278/"
       },
       {
         "scene": 3,
-        "user": "00luvicecream",
-        "page": "https://pixabay.com/photos/signpost-closed-road-sign-end-stop-5274077/"
+        "source": "pixabay",
+        "user": "TobiasBrunner",
+        "page": "https://pixabay.com/photos/road-street-winding-winding-road-6175186/"
       },
       {
         "scene": 4,
-        "user": "kiwibu",
-        "page": "https://pixabay.com/photos/house-field-rural-meadow-landscape-6387074/"
+        "source": "pixabay",
+        "user": "Ludo-Photos",
+        "page": "https://pixabay.com/photos/iceland-sea-ocean-nature-water-4957449/"
       },
       {
         "scene": 5,
-        "user": "dimitrisvetsikas1969",
-        "page": "https://pixabay.com/photos/bulldozer-excavator-heavy-machine-2195329/"
+        "source": "pixabay",
+        "user": "RonaldPlett",
+        "page": "https://pixabay.com/photos/compactor-construction-equipment-3248717/"
       },
       {
         "scene": 6,
-        "user": "ReneGossner",
-        "page": "https://pixabay.com/photos/volcano-sulfur-bach-sand-stones-6487743/"
+        "source": "pixabay",
+        "user": "NUNZG",
+        "page": "https://pixabay.com/photos/waterfall-godafoss-iceland-10378041/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0089_Iceland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Icelandic highway construction",
+      "rock formation Iceland",
+      "detour road Iceland",
+      "mountain road Iceland",
+      "construction equipment on road",
+      "protected natural area Iceland"
+    ]
   },
   {
     "country": "South Korea",
@@ -3516,37 +4608,51 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "joakant",
-        "page": "https://pixabay.com/photos/diver-scuba-divers-dive-underwater-668777/"
+        "page": "https://pixabay.com/photos/underwater-diver-helmet-diver-378216/"
       },
       {
         "scene": 2,
-        "user": "Seoulinspired",
-        "page": "https://pixabay.com/photos/city-metropolitan-sunset-building-4119806/"
+        "source": "pixabay",
+        "user": "Kim_Sung_Chan",
+        "page": "https://pixabay.com/photos/maisan-provincial-park-wildflowers-6693310/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "PublicDomainPictures",
         "page": "https://pixabay.com/photos/woman-dive-bikini-snorkeling-15840/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "blickpixel",
         "page": "https://pixabay.com/photos/health-card-health-wallet-491714/"
       },
       {
         "scene": 5,
-        "user": "seth0s",
-        "page": "https://pixabay.com/photos/dive-old-under-water-underwater-677990/"
+        "source": "pixabay",
+        "user": "Franziska_Stier",
+        "page": "https://pixabay.com/photos/diver-barracuda-school-of-fish-10408812/"
       },
       {
         "scene": 6,
-        "user": "monstar6",
-        "page": "https://pixabay.com/photos/jeju-island-traditional-house-2261291/"
+        "source": "pixabay",
+        "user": "HeungSoon",
+        "page": "https://pixabay.com/photos/stone-day-bag-jeju-island-4279378/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0090_South Korea.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Jeju female diver underwater",
+      "South Korea pension documents",
+      "elderly woman snorkeling Jeju",
+      "health insurance card South Korea",
+      "free diving competition underwater",
+      "traditional Jeju stone walls"
+    ]
   },
   {
     "country": "Japan",
@@ -3590,37 +4696,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "MrHà",
-        "page": "https://pixabay.com/photos/pottery-handcraft-ceramic-vessel-10258355/"
+        "source": "pixabay",
+        "user": "LubosHouska",
+        "page": "https://pixabay.com/photos/clay-pottery-hands-potter-1139098/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "Wow_Pho",
         "page": "https://pixabay.com/photos/food-japanese-asian-bowl-dish-eat-715542/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "MARTYSEB",
         "page": "https://pixabay.com/photos/vase-bowl-kintsugi-art-resilience-5557369/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "tehzeebkazmii",
         "page": "https://pixabay.com/photos/ceramics-potter-clay-craft-studio-10479174/"
       },
       {
         "scene": 5,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/woman-art-creative-relaxation-girl-1283009/"
+        "source": "pixabay",
+        "user": "KirillProduction",
+        "page": "https://pixabay.com/photos/versailles-castle-hall-museum-6469580/"
       },
       {
         "scene": 6,
-        "user": "wal_172619",
-        "page": "https://pixabay.com/photos/pottery-clay-craft-hobby-potters-8026823/"
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/jugs-pottery-ceramic-earthenware-64975/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0091_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Tokyo pottery workshop",
+      "Japanese gold-filled bowl",
+      "Kintsugi repaired vase",
+      "traditional ceramics studio",
+      "Tokyo art museum interior",
+      "closeup gold crack pottery"
+    ]
   },
   {
     "country": "Japan",
@@ -3664,37 +4784,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "AndrzejRembowski",
-        "page": "https://pixabay.com/photos/recycle-bin-recycling-recycle-4173651/"
+        "source": "pixabay",
+        "user": "analogicus",
+        "page": "https://pixabay.com/photos/garbage-garbage-can-waste-disposal-4090382/"
       },
       {
         "scene": 2,
-        "user": "geralt",
-        "page": "https://pixabay.com/photos/glass-glasses-bottles-255281/"
+        "source": "pixabay",
+        "user": "phtorxp",
+        "page": "https://pixabay.com/photos/plastic-lids-waste-recycling-5527525/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Pexels",
-        "page": "https://pixabay.com/photos/audience-band-concert-crowd-1853662/"
+        "page": "https://pixabay.com/photos/audience-band-celebration-concert-1867754/"
       },
       {
         "scene": 4,
-        "user": "suju-foto",
-        "page": "https://pixabay.com/photos/spray-cans-colour-paint-cans-3349588/"
+        "source": "pixabay",
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/cans-drink-pollution-trash-1679022/"
       },
       {
         "scene": 5,
-        "user": "dmoreaurh",
-        "page": "https://pixabay.com/photos/green-waste-composting-recycling-486011/"
+        "source": "pixabay",
+        "user": "Antranias",
+        "page": "https://pixabay.com/photos/compost-garden-waste-bio-nature-419261/"
       },
       {
         "scene": 6,
-        "user": "analogicus",
-        "page": "https://pixabay.com/photos/energy-saving-recycling-garbage-7437499/"
+        "source": "pixabay",
+        "user": "Colemay",
+        "page": "https://pixabay.com/photos/garbage-can-disposal-sand-desert-7010059/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0092_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Japanese recycling bins",
+      "Kamikatsu waste sorting",
+      "Japan village festival stage",
+      "Colorful trash cans Japan",
+      "Garden compost bin",
+      "Japanese kitchen waste separation"
+    ]
   },
   {
     "country": "Finland",
@@ -3738,37 +4872,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "mibro",
-        "page": "https://pixabay.com/photos/car-racing-race-track-n%C3%BCrburgring-4394450/"
+        "source": "pixabay",
+        "user": "KeithJJ",
+        "page": "https://pixabay.com/photos/hurdles-track-race-competition-1503753/"
       },
       {
         "scene": 2,
-        "user": "8090666",
-        "page": "https://pixabay.com/photos/marriage-couple-wedding-love-4226896/"
+        "source": "pixabay",
+        "user": "tientoanmaimai10",
+        "page": "https://pixabay.com/photos/bride-groom-wedding-6388640/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "8moments",
         "page": "https://pixabay.com/photos/ice-iceberg-ice-floes-winter-cold-2062433/"
       },
       {
         "scene": 4,
-        "user": "webentwicklerin",
-        "page": "https://pixabay.com/photos/floating-stage-grandstand-5327879/"
+        "source": "pixabay",
+        "user": "wal_172619_II",
+        "page": "https://pixabay.com/photos/hands-marathon-gesture-running-8297611/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "Pexels",
         "page": "https://pixabay.com/photos/bottles-beer-bottles-bottle-caps-1866945/"
       },
       {
         "scene": 6,
-        "user": "Jupilu",
-        "page": "https://pixabay.com/photos/countryside-harvest-farmer-6700296/"
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/mountains-nature-forest-village-10506841/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0093_Finland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Finland obstacle race",
+      "husband carrying wife",
+      "ice water barrel course",
+      "spectators cheering Finland",
+      "beer bottles prize",
+      "rural Finnish village"
+    ]
   },
   {
     "country": "Kyrgyzstan",
@@ -3816,37 +4964,55 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Makalu",
-        "page": "https://pixabay.com/photos/kyrgyzstan-mountains-valley-hill-4661907/"
+        "page": "https://pixabay.com/photos/kyrgyzstan-horses-mountains-4675649/"
       },
       {
         "scene": 2,
-        "user": "sharkolot",
-        "page": "https://pixabay.com/photos/golden-eagle-eagle-bird-nature-7555959/"
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boys-outdoor-thailand-baby-mammal-1807545/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "cocoparisienne",
         "page": "https://pixabay.com/photos/white-tailed-eagle-fish-hunting-2015098/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "YaoMuyu",
         "page": "https://pixabay.com/photos/machhapuchhre-fishtail-10489623/"
       },
       {
         "scene": 5,
-        "user": "Kathy_Büscher",
-        "page": "https://pixabay.com/photos/adler-eagle-bird-white-tailed-eagle-2386314/"
+        "source": "commons",
+        "user": "tjabeljan",
+        "license": "CC BY 2.0",
+        "title": "2013-09-07 Falconer with his eagle in Barskoon valley, Kyrgyzstan 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2013-09-07_Falconer_with_his_eagle_in_Barskoon_valley,_Kyrgyzstan_02.jpg"
       },
       {
         "scene": 6,
-        "user": "jackmac34",
-        "page": "https://pixabay.com/photos/raptor-falcon-hunt-chaperone-2368749/"
+        "source": "commons",
+        "user": "tjabeljan",
+        "license": "CC BY 2.0",
+        "title": "2013-09-07 Falconer with his eagle in Barskoon valley, Kyrgyzstan 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2013-09-07_Falconer_with_his_eagle_in_Barskoon_valley,_Kyrgyzstan_01.jpg"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0094_Kyrgyzstan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Kyrgyzstan mountain village child",
+      "young boy holding golden eagle",
+      "snowy field eagle hunting",
+      "Kyrgyzstan high altitude landscape",
+      "eagle delivering rabbit",
+      "traditional falconry equipment"
+    ]
   },
   {
     "country": "Argentina",
@@ -3890,37 +5056,55 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Vladvictoria",
         "page": "https://pixabay.com/photos/marching-band-band-parade-school-4223023/"
       },
       {
         "scene": 2,
-        "user": "KAVOWO",
-        "page": "https://pixabay.com/photos/paper-texture-wrapping-paper-3155438/"
+        "source": "commons",
+        "user": "Gobierno de la Ciudad de Buenos Aires from Ciudad Autónoma de Buenos Aires, Arge",
+        "license": "CC BY 2.0",
+        "title": "6ta. Llamada de Candombe (6575111901).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:6ta._Llamada_de_Candombe_(6575111901).jpg"
       },
       {
         "scene": 3,
-        "user": "489327",
-        "page": "https://pixabay.com/photos/carnival-woman-costume-orange-red-476816/"
+        "source": "commons",
+        "user": "Gobierno de la Ciudad de Buenos Aires from Ciudad Autónoma de Buenos Aires, Arge",
+        "license": "CC BY 2.0",
+        "title": "6ta. Llamada de Candombe (6575097609).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:6ta._Llamada_de_Candombe_(6575097609).jpg"
       },
       {
         "scene": 4,
-        "user": "Tama66",
-        "page": "https://pixabay.com/photos/ford-mustang-car-vehicle-red-car-2705402/"
+        "source": "pixabay",
+        "user": "JosepMonter",
+        "page": "https://pixabay.com/photos/home-farmhouse-rural-house-rustic-2252301/"
       },
       {
         "scene": 5,
-        "user": "2147792",
-        "page": "https://pixabay.com/photos/mama-children-to-dance-fun-family-5098862/"
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/children-little-girls-happy-playing-6845817/"
       },
       {
         "scene": 6,
-        "user": "hbieser",
-        "page": "https://pixabay.com/photos/ecuador-blue-footed-boobies-wildlife-4259426/"
+        "source": "pixabay",
+        "user": "Ri_Lens",
+        "page": "https://pixabay.com/photos/fireworks-night-celebration-festive-10444646/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0095_Argentina.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Buenos Aires street drum parade",
+      "Argentina recycled barrel drum",
+      "Candombe dancers colorful costumes",
+      "old restored drum Argentina",
+      "children dancing with feathers",
+      "La Plata Saturday night celebration"
+    ]
   },
   {
     "country": "Spain",
@@ -3968,37 +5152,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "kiko_mago",
-        "page": "https://pixabay.com/photos/night-candles-pe%C3%B1aranda-philippines-1579065/"
+        "source": "pixabay",
+        "user": "Tho-Ge",
+        "page": "https://pixabay.com/photos/sea-port-village-boats-8254024/"
       },
       {
         "scene": 2,
-        "user": "stux",
-        "page": "https://pixabay.com/photos/vacations-travel-fun-on-the-way-2490023/"
+        "source": "commons",
+        "user": "Hahifuheho",
+        "license": "CC0",
+        "title": "Baby care space on JR251.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Baby_care_space_on_JR251.JPG"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/costume-cute-demon-devil-evil-15770/"
+        "page": "https://pixabay.com/photos/costume-cute-demon-devil-evil-15829/"
       },
       {
         "scene": 4,
-        "user": "yogendras31",
-        "page": "https://pixabay.com/photos/outdoor-bihar-ganges-celebration-6615900/"
+        "source": "pixabay",
+        "user": "yazidnasuha",
+        "page": "https://pixabay.com/photos/parade-festival-cultural-malioboro-10433348/"
       },
       {
         "scene": 5,
-        "user": "Quangpraha",
-        "page": "https://pixabay.com/photos/salt-harvesting-vietnam-water-salt-3060093/"
+        "source": "pixabay",
+        "user": "Bru-nO",
+        "page": "https://pixabay.com/photos/wheat-grain-ear-flour-water-yeast-5416896/"
       },
       {
         "scene": 6,
-        "user": "falco",
-        "page": "https://pixabay.com/photos/toledo-historic-center-historical-510618/"
+        "source": "pixabay",
+        "user": "Carlos_Bonilla_Miranda",
+        "page": "https://pixabay.com/photos/windmill-wind-tourism-landscape-1745186/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0096_Spain.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Spain village festival",
+      "baby on mat",
+      "demon costume jumper",
+      "crowd watching ceremony",
+      "salt and bread offering",
+      "Castile la Mancha streets"
+    ]
   },
   {
     "country": "Japan",
@@ -4042,37 +5242,51 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "DeltaWorks",
-        "page": "https://pixabay.com/photos/pottery-sake-cup-sake-bottle-180555/"
+        "source": "pixabay",
+        "user": "djedj",
+        "page": "https://pixabay.com/photos/sake-drink-alcohol-liquor-beverage-5412527/"
       },
       {
         "scene": 2,
-        "user": "guoguogaoyu88",
-        "page": "https://pixabay.com/photos/cup-bowls-vase-ceramics-old-687147/"
+        "source": "pixabay",
+        "user": "auntmasako",
+        "page": "https://pixabay.com/photos/meiji-jingu-dedication-sake-liquor-1665217/"
       },
       {
         "scene": 3,
-        "user": "Nennieinszweidrei",
-        "page": "https://pixabay.com/photos/kombucha-fermented-drink-8478515/"
+        "source": "pixabay",
+        "user": "Tomasz_Mikolajczyk",
+        "page": "https://pixabay.com/photos/brewery-tey-vats-vat-silo-377023/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "AestheticlyAdmired804",
         "page": "https://pixabay.com/photos/bottle-sake-asian-luxury-4498632/"
       },
       {
         "scene": 5,
-        "user": "SZimmermann_DE",
-        "page": "https://pixabay.com/photos/shrine-tokyo-japan-asia-city-2576477/"
+        "source": "pixabay",
+        "user": "mipla71a",
+        "page": "https://pixabay.com/photos/barrels-whiskey-b%C3%BCttner-b%C3%BCttnerei-4991523/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "michalnavrat",
         "page": "https://pixabay.com/photos/tournament-victory-match-target-3529744/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0097_Japan.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Japanese sake brewing equipment",
+      "Tokyo sake brewery interior",
+      "Kyoto traditional fermentation vat",
+      "Female brewer holding sake bottle",
+      "Sake barrels stacked in warehouse",
+      "Gold medal award ceremony sake"
+    ]
   },
   {
     "country": "Finland",
@@ -4122,33 +5336,39 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "ignartonosbg",
-        "page": "https://pixabay.com/photos/ground-camping-family-camp-picnic-8260968/"
+        "source": "pixabay",
+        "user": "jbooba",
+        "page": "https://pixabay.com/photos/finnish-forest-reindeer-reindeer-8056489/"
       },
       {
         "scene": 2,
-        "user": "kerttu",
-        "page": "https://pixabay.com/photos/dock-lake-sunset-dusk-reflection-1365387/"
+        "source": "pixabay",
+        "user": "reijotelaranta",
+        "page": "https://pixabay.com/photos/lake-ridge-punkaharju-finland-road-7415097/"
       },
       {
         "scene": 3,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/bonfire-camping-people-fire-1867275/"
+        "source": "pixabay",
+        "user": "NZKGB",
+        "page": "https://pixabay.com/photos/man-mountain-snow-camping-tent-5983064/"
       },
       {
         "scene": 4,
-        "user": "Barbroforsberg",
-        "page": "https://pixabay.com/photos/fungus-mushroom-sponge-basket-1194380/"
+        "source": "pixabay",
+        "user": "StefleiFotografie",
+        "page": "https://pixabay.com/photos/mushroom-autumn-growth-edible-3587888/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "suju-foto",
         "page": "https://pixabay.com/photos/aurora-borealis-nature-10491028/"
       },
       {
         "scene": 6,
-        "user": "jatocreate",
-        "page": "https://pixabay.com/photos/labrador-kayak-black-labrador-7392840/"
+        "source": "pixabay",
+        "user": "JityPix",
+        "page": "https://pixabay.com/photos/river-kayak-team-few-on-water-4741935/"
       }
     ],
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0098_Finland_v2.mp3",
@@ -4156,7 +5376,15 @@
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0098_Finland.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Finnish forest campsite",
+      "Tent by lake Finland",
+      "Campfire in wilderness Finland",
+      "Mushroom foraging in forest",
+      "Northern lights over campsite",
+      "Kayak on Finnish river"
+    ]
   },
   {
     "country": "Kenya",
@@ -4286,37 +5514,55 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Kanenori",
         "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/"
       },
       {
         "scene": 2,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/landscape-mongolia-2130589/"
+        "source": "commons",
+        "user": "user:InvictaHOG",
+        "license": "Public domain",
+        "title": "Naadam rider 2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Naadam_rider_2.jpg"
       },
       {
         "scene": 3,
-        "user": "Pixel-mixer",
-        "page": "https://pixabay.com/photos/wolf-mongolian-mongolian-wolf-1972764/"
+        "source": "commons",
+        "user": "user:InvictaHOG",
+        "license": "Public domain",
+        "title": "Naadam rider 1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Naadam_rider_1.jpg"
       },
       {
         "scene": 4,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/frozen-landscape-cold-sunrise-file-2376303/"
+        "source": "pixabay",
+        "user": "Erdenebayar",
+        "page": "https://pixabay.com/photos/horse-graze-pasture-grazing-grass-5167802/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "hbieser",
         "page": "https://pixabay.com/photos/mongolia-gobi-camels-steppe-mammal-695267/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "sharkolot",
         "page": "https://pixabay.com/photos/horse-mane-mammal-head-7242864/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0100_Mongolia.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Mongolia children horse race",
+      "Ulaanbaatar Naadam festival",
+      "Mongolian barefoot rider",
+      "Mongolia horse with honey",
+      "Mongolia steppe spectators cheering",
+      "Mongolian horse and child"
+    ]
   },
   {
     "country": "Germany",
@@ -4367,37 +5613,59 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Leonhard_Niederwimmer",
-        "page": "https://pixabay.com/photos/frankfurt-to-travel-tourism-7092736/"
+        "source": "pixabay",
+        "user": "ponce_photography",
+        "page": "https://pixabay.com/photos/crayons-coloring-book-coloring-hand-1445053/"
       },
       {
         "scene": 2,
-        "user": "2857440",
-        "page": "https://pixabay.com/photos/hamburg-landungsbr%C3%BCcken-elbe-port-4767149/"
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499054/"
       },
       {
         "scene": 3,
-        "user": "Helmut_Kroiss",
-        "page": "https://pixabay.com/photos/neuschwanstein-castle-germany-2602208/"
+        "source": "pixabay",
+        "user": "image4you",
+        "page": "https://pixabay.com/photos/gift-present-wood-package-gift-box-1420830/"
       },
       {
         "scene": 4,
-        "user": "Makalu",
-        "page": "https://pixabay.com/photos/germany-bavaria-swiss-francs-7534750/"
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499057/"
       },
       {
         "scene": 5,
-        "user": "jplenio",
-        "page": "https://pixabay.com/photos/architecture-neuschwanstein-castle-3095716/"
+        "source": "pixabay",
+        "user": "Willgard",
+        "page": "https://pixabay.com/photos/fantasy-heaven-clouds-child-4850743/"
       },
       {
         "scene": 6,
-        "user": "derwiki",
-        "page": "https://pixabay.com/photos/fairytale-neuschwanstein-castle-532850/"
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499053/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0101_Germany.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries": [
+      "child holding paper cone school",
+      "cone with candies and pencils",
+      "parents preparing school gift",
+      "cone unopened until school day",
+      "child curious about cone contents",
+      "school cone gift excitement"
+    ],
+    "image_queries_done": [
+      "child holding paper cone school",
+      "cone with candies and pencils",
+      "parents preparing school gift",
+      "cone unopened until school day",
+      "child curious about cone contents",
+      "school cone gift excitement"
+    ]
   },
   {
     "country": "Ethiopia",
@@ -4605,37 +5873,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "RonaldPlett",
-        "page": "https://pixabay.com/photos/horse-rider-rodeo-cowboy-show-8209523/"
+        "source": "pixabay",
+        "user": "Vladimir_Fayl",
+        "page": "https://pixabay.com/photos/steppe-horse-sky-horses-kazakhstan-4102069/"
       },
       {
         "scene": 2,
-        "user": "ulleo",
-        "page": "https://pixabay.com/photos/goats-young-pasture-meadow-brown-2719445/"
+        "source": "pixabay",
+        "user": "xxmiros",
+        "page": "https://pixabay.com/photos/farm-horse-meadow-animal-goat-5048837/"
       },
       {
         "scene": 3,
-        "user": "Andy_Bay",
-        "page": "https://pixabay.com/photos/mountains-snow-slope-cold-forest-8446221/"
+        "source": "pixabay",
+        "user": "1857643",
+        "page": "https://pixabay.com/photos/seat-concert-audience-entertainment-6809719/"
       },
       {
         "scene": 4,
-        "user": "Vladvictoria",
-        "page": "https://pixabay.com/photos/marching-band-band-parade-school-4223023/"
+        "source": "commons",
+        "user": "NASA/Alexander Vysotsky",
+        "license": "Public domain",
+        "title": "Soyuz MS-01 crew and backup crewmembers conduct the traditional raising of the flags.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Soyuz_MS-01_crew_and_backup_crewmembers_conduct_the_traditional_raising_of_the_flags.jpg"
       },
       {
         "scene": 5,
-        "user": "Buzurnyuk",
-        "page": "https://pixabay.com/photos/travel-nature-landscape-kazakhstan-8785493/"
+        "source": "pixabay",
+        "user": "Andy_Bay",
+        "page": "https://pixabay.com/photos/canyon-mountains-river-kazakhstan-1740973/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "RyanMcGuire",
         "page": "https://pixabay.com/photos/arm-wrestling-bet-monochrome-sport-567950/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0105_카자흐스탄.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "Kazakhstan horse riders",
+      "horse with goat carcass",
+      "Kazakhstan festival arena",
+      "traditional Kazakh flag raising",
+      "Kazakhstan drummers and trumpets",
+      "horseback wrestling competition"
+    ]
   },
   {
     "country": "터키",
@@ -4691,37 +5975,53 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Wphoto",
-        "page": "https://pixabay.com/photos/camel-galaxy-dubai-darkness-4948299/"
+        "source": "pixabay",
+        "user": "SAVA86",
+        "page": "https://pixabay.com/photos/camel-turkey-animals-nature-animal-4561665/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "RezaAskarii",
         "page": "https://pixabay.com/photos/sky-nature-clouds-travel-beach-7328573/"
       },
       {
         "scene": 3,
-        "user": "smuldur",
-        "page": "https://pixabay.com/photos/galata-istanbul-marine-tower-4043037/"
+        "source": "pixabay",
+        "user": "soultrain",
+        "page": "https://pixabay.com/photos/turkey-istanbul-city-metro-halic-8103602/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "ErikDevlies",
         "page": "https://pixabay.com/photos/village-flags-bank-holiday-summer-988068/"
       },
       {
         "scene": 5,
-        "user": "RahulPandit",
-        "page": "https://pixabay.com/photos/fireworks-people-festival-night-4768501/"
+        "source": "pixabay",
+        "user": "OrnaW",
+        "page": "https://pixabay.com/photos/hands-crowd-dancing-eurovision-4212584/"
       },
       {
         "scene": 6,
-        "user": "luckyhand2010",
-        "page": "https://pixabay.com/photos/food-eastern-sweets-baklava-sweet-5158702/"
+        "source": "commons",
+        "user": "Edward Daniel Clarke",
+        "license": "CC BY 4.0",
+        "title": "\"Laplanders, having prepared their Winter Tents\". Wellcome L0027514.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%22Laplanders,_having_prepared_their_Winter_Tents%22._Wellcome_L0027514.jpg"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0106_터키.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_queries_done": [
+      "camel wrestling Turkey",
+      "summer festival Turkey",
+      "camel with horn Turkey",
+      "village square festival",
+      "crowd cheering outdoors",
+      "traditional Turkish tents"
+    ]
   },
   {
     "country": "뉴질랜드",
@@ -4877,31 +6177,37 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Kanenori",
         "page": "https://pixabay.com/photos/thatched-roof-house-architecture-6991698/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "pen_ash",
         "page": "https://pixabay.com/photos/shirakawa-go-traditional-japan-gifu-3968395/"
       },
       {
         "scene": 3,
-        "user": "experimentMR",
-        "page": "https://pixabay.com/photos/house-thatched-roof-dune-sky-10316785/"
+        "source": "pixabay",
+        "user": "shell_ghostcage",
+        "page": "https://pixabay.com/photos/japan-landscape-japanese-style-3812703/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "pen_ash",
         "page": "https://pixabay.com/photos/shirakawa-go-traditional-japan-gifu-3968396/"
       },
       {
         "scene": 5,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/city-home-winter-season-cold-6999499/"
+        "source": "pixabay",
+        "user": "JordyMeow",
+        "page": "https://pixabay.com/photos/japan-shirakawa-go-gifu-heritage-725802/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "xegxef",
         "page": "https://pixabay.com/photos/kyoto-ohara-old-town-houses-5772122/"
       }
@@ -4971,33 +6277,41 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "KEAR_770",
-        "page": "https://pixabay.com/photos/woman-portrait-model-fashion-10009803/"
+        "source": "pixabay",
+        "user": "StephenStudio101",
+        "page": "https://pixabay.com/photos/railway-station-city-train-tracks-6887012/"
       },
       {
         "scene": 2,
-        "user": "mtorrazzina",
-        "page": "https://pixabay.com/photos/lotus-flowers-cambodia-woman-farmer-4933604/"
+        "source": "commons",
+        "user": "shankar s. from Dubai, united arab emirates",
+        "license": "CC BY 2.0",
+        "title": "I am actually on the Norry now (14265275608).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:I_am_actually_on_the_Norry_now_(14265275608).jpg"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Larisa-K",
         "page": "https://pixabay.com/photos/railroad-landscape-countryside-rail-163518/"
       },
       {
         "scene": 4,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/train-station-adult-wait-waiting-1868256/"
+        "source": "pixabay",
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/train-railroad-station-passengers-7859021/"
       },
       {
         "scene": 5,
-        "user": "Simon",
-        "page": "https://pixabay.com/photos/angkor-wat-cambodia-temple-428/"
+        "source": "pixabay",
+        "user": "8moments",
+        "page": "https://pixabay.com/photos/angkor-wat-statue-architecture-4193769/"
       },
       {
         "scene": 6,
-        "user": "thilina_alagiyawanna",
-        "page": "https://pixabay.com/photos/railway-track-sun-sunset-landscape-10442256/"
+        "source": "pixabay",
+        "user": "Torfi007",
+        "page": "https://pixabay.com/photos/rails-tracks-railroad-tracks-416460/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0110_Cambodia.mp4",
@@ -5063,31 +6377,39 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "anncapictures",
         "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499055/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "Alexas_Fotos",
         "page": "https://pixabay.com/photos/school-back-to-school-1655324/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "anncapictures",
-        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499049/"
+        "page": "https://pixabay.com/photos/school-cone-sugar-bag-back-to-school-1499053/"
       },
       {
         "scene": 4,
-        "user": "Kodl68",
-        "page": "https://pixabay.com/photos/forest-sapling-bokeh-new-growth-10394495/"
+        "source": "commons",
+        "user": "U.S. Army USAGW by Nadine Bower",
+        "license": "Public domain",
+        "title": "What is a German “Schultüte”? (6778947).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:What_is_a_German_%E2%80%9CSchult%C3%BCte%E2%80%9D%3F_(6778947).jpg"
       },
       {
         "scene": 5,
-        "user": "rawpixel",
-        "page": "https://pixabay.com/photos/kids-painting-school-drawing-draw-2985782/"
+        "source": "pixabay",
+        "user": "AlisaDyson",
+        "page": "https://pixabay.com/photos/school-bus-school-bus-child-boy-10428798/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "AlexanderStein",
         "page": "https://pixabay.com/photos/colorful-papers-hues-colors-182220/"
       }
@@ -5158,31 +6480,39 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "LOULOUA",
         "page": "https://pixabay.com/photos/madagascar-dune-valley-mountains-1711082/"
       },
       {
         "scene": 2,
-        "user": "Michael_Pointner",
-        "page": "https://pixabay.com/photos/xmas-christmas-fondue-eating-7677696/"
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/frogs-lots-group-collection-cute-1413787/"
       },
       {
         "scene": 3,
-        "user": "LoggaWiggler",
-        "page": "https://pixabay.com/photos/fabric-cambaya-cloth-textile-43354/"
+        "source": "commons",
+        "user": "Chirocca77",
+        "license": "CC BY 4.0",
+        "title": "International women day 2025 06.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:International_women_day_2025_06.jpg"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "aga2rk",
         "page": "https://pixabay.com/photos/madagascar-africa-women-island-see-4601287/"
       },
       {
         "scene": 5,
-        "user": "LEVESQUE",
-        "page": "https://pixabay.com/photos/children-school-kindergarten-1608266/"
+        "source": "pixabay",
+        "user": "NikkyS",
+        "page": "https://pixabay.com/photos/cottages-houses-village-madagascar-7687138/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "ktphotography",
         "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/"
       }
@@ -5254,33 +6584,39 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Pexels",
-        "page": "https://pixabay.com/photos/couple-fashion-hugging-love-man-1853499/"
+        "page": "https://pixabay.com/photos/adult-beads-blur-ceremony-dress-2178608/"
       },
       {
         "scene": 2,
-        "user": "sasint",
-        "page": "https://pixabay.com/photos/kimono-woman-umbrella-parasol-1822520/"
+        "source": "pixabay",
+        "user": "TieuBaoTruong",
+        "page": "https://pixabay.com/photos/woman-model-portrait-white-dress-6493189/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Blue_Photographer",
         "page": "https://pixabay.com/photos/bhutan-monastery-tea-monk-5009076/"
       },
       {
         "scene": 4,
-        "user": "TieuBaoTruong",
-        "page": "https://pixabay.com/photos/ao-dai-asian-model-asian-woman-6182834/"
+        "source": "pixabay",
+        "user": "LoboStudioHamburg",
+        "page": "https://pixabay.com/photos/federal-chancellery-637999/"
       },
       {
         "scene": 5,
+        "source": "pixabay",
         "user": "ycchen",
         "page": "https://pixabay.com/photos/bhutan-punakha-dzong-asia-travel-2825919/"
       },
       {
         "scene": 6,
-        "user": "1857643",
-        "page": "https://pixabay.com/photos/woman-african-people-black-girl-4685862/"
+        "source": "pixabay",
+        "user": "LoggaWiggler",
+        "page": "https://pixabay.com/photos/fabric-cambaya-cloth-textile-43354/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0113_Bhutan.mp4",
@@ -5349,33 +6685,39 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "LoggaWiggler",
-        "page": "https://pixabay.com/photos/writing-characters-mongolia-4322/"
+        "source": "pixabay",
+        "user": "jontej26",
+        "page": "https://pixabay.com/photos/mongolia-landscape-gobi-desert-5184298/"
       },
       {
         "scene": 2,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/cow-grassland-grazing-nomad-7200409/"
+        "source": "pixabay",
+        "user": "Erdenebayar",
+        "page": "https://pixabay.com/photos/horse-alpha-horse-stallion-animal-2504686/"
       },
       {
         "scene": 3,
-        "user": "Sophkins",
-        "page": "https://pixabay.com/photos/coffee-book-flowers-setting-2390136/"
+        "source": "pixabay",
+        "user": "OleksandrPidvalnyi",
+        "page": "https://pixabay.com/photos/christmas-wallpaper-woman-fireplace-6795381/"
       },
       {
         "scene": 4,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/"
+        "source": "pixabay",
+        "user": "ratucette",
+        "page": "https://pixabay.com/photos/horses-herd-water-running-1401707/"
       },
       {
         "scene": 5,
-        "user": "REIGNCONCEPT",
-        "page": "https://pixabay.com/photos/woman-model-fashion-pose-portrait-9398011/"
+        "source": "pixabay",
+        "user": "lolorun",
+        "page": "https://pixabay.com/photos/yurts-kyrgyzstan-yurt-kyrgyz-felt-5001390/"
       },
       {
         "scene": 6,
-        "user": "jackmac34",
-        "page": "https://pixabay.com/photos/yurt-mongolia-steppe-altai-486866/"
+        "source": "pixabay",
+        "user": "Red_Raccoon",
+        "page": "https://pixabay.com/photos/yurt-mongolia-steppe-nomads-travel-1798218/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0114_Mongolia.mp4",
@@ -5445,31 +6787,37 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "tathanhtuan",
-        "page": "https://pixabay.com/photos/yipeng-light-night-chiangmai-4670044/"
+        "source": "pixabay",
+        "user": "romanticfatman",
+        "page": "https://pixabay.com/photos/monkey-animal-wildlife-mammal-2500919/"
       },
       {
         "scene": 2,
-        "user": "Polymanu",
-        "page": "https://pixabay.com/photos/monkey-thai-lop-buri-naughty-1609782/"
+        "source": "pixabay",
+        "user": "blickpixel",
+        "page": "https://pixabay.com/photos/barbary-macaques-monkeys-450149/"
       },
       {
         "scene": 3,
-        "user": "silviarita",
-        "page": "https://pixabay.com/photos/salad-fruit-berry-healthy-vitamins-2756467/"
+        "source": "pixabay",
+        "user": "MakaraEk",
+        "page": "https://pixabay.com/photos/salad-fruit-berry-healthy-vitamins-7040875/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "Waratharn",
         "page": "https://pixabay.com/photos/lop-buri-phra-prang-sam-yot-monkey-1710827/"
       },
       {
         "scene": 5,
-        "user": "westphotoandvideo",
-        "page": "https://pixabay.com/photos/band-music-live-music-concert-4671748/"
+        "source": "pixabay",
+        "user": "tathanhtuan",
+        "page": "https://pixabay.com/photos/yipeng-light-night-chiangmai-4670044/"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "Erik_Karits",
         "page": "https://pixabay.com/photos/crab-eating-macaque-6727434/"
       }
@@ -5540,33 +6888,43 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "ELG21",
-        "page": "https://pixabay.com/photos/cave-landscape-marine-sea-cliff-9817865/"
+        "source": "commons",
+        "user": "Carnaval.com Studios from The Inner Mission San Francisco, Earth",
+        "license": "CC BY 2.0",
+        "title": "59 Oaxaca En SF Danza De Diablos STG Juxtlahuaca (53748769764).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:59_Oaxaca_En_SF_Danza_De_Diablos_STG_Juxtlahuaca_(53748769764).jpg"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "Walkerssk",
         "page": "https://pixabay.com/photos/chichen-itza-mexico-pyramid-1025099/"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "Taboadahdez",
         "page": "https://pixabay.com/photos/people-portrait-one-clothing-adult-3253048/"
       },
       {
         "scene": 4,
-        "user": "DerWeg",
-        "page": "https://pixabay.com/photos/asian-giant-hornet-hornet-insect-8335577/"
+        "source": "pixabay",
+        "user": "ImaArtist",
+        "page": "https://pixabay.com/photos/castle-columns-princess-clouds-4905474/"
       },
       {
         "scene": 5,
-        "user": "jcax2",
-        "page": "https://pixabay.com/photos/dance-regional-mexico-girl-757570/"
+        "source": "commons",
+        "user": "Carnaval.com Studios from The Inner Mission San Francisco, Earth",
+        "license": "CC BY 2.0",
+        "title": "59 Oaxaca En SF Danza De Diablos STG Juxtlahuaca (53748769539).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:59_Oaxaca_En_SF_Danza_De_Diablos_STG_Juxtlahuaca_(53748769539).jpg"
       },
       {
         "scene": 6,
-        "user": "LoggaWiggler",
-        "page": "https://pixabay.com/photos/fabric-cambaya-cloth-textile-43354/"
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/art-sculpture-scrap-sculpture-human-1699977/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0116_Mexico.mp4",
@@ -5636,33 +6994,39 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "laurentgraphiste",
-        "page": "https://pixabay.com/photos/mezquita-cordoba-andalusia-spain-4572094/"
+        "source": "pixabay",
+        "user": "1204479",
+        "page": "https://pixabay.com/photos/courtyards-cordoba-patios-of-cordoba-1520500/"
       },
       {
         "scene": 2,
+        "source": "pixabay",
         "user": "1204479",
         "page": "https://pixabay.com/photos/ladder-floors-patios-of-cordoba-1520503/"
       },
       {
         "scene": 3,
-        "user": "1204479",
-        "page": "https://pixabay.com/photos/cars-motorcycle-racing-1520509/"
+        "source": "pixabay",
+        "user": "ptrabattoni",
+        "page": "https://pixabay.com/photos/spain-cordoba-architecture-4961665/"
       },
       {
         "scene": 4,
-        "user": "bogitw",
-        "page": "https://pixabay.com/photos/church-interiors-architecture-756150/"
+        "source": "pixabay",
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/spain-andalusia-province-of-cordoba-7771933/"
       },
       {
         "scene": 5,
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/ancient-arch-architecture-art-1835865/"
+        "source": "pixabay",
+        "user": "oliviacastillo",
+        "page": "https://pixabay.com/photos/andalusian-andalusian-horse-horse-2137546/"
       },
       {
         "scene": 6,
-        "user": "VinnyCiro",
-        "page": "https://pixabay.com/photos/snowman-town-urban-321034/"
+        "source": "pixabay",
+        "user": "1204479",
+        "page": "https://pixabay.com/photos/rosario-flowerpot-courtyard-spain-1527216/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0117_Spain.mp4",
@@ -5732,33 +7096,41 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "educadormarcossv",
-        "page": "https://pixabay.com/photos/girl-child-face-mask-covid-kid-5760039/"
+        "source": "pixabay",
+        "user": "Terranaut",
+        "page": "https://pixabay.com/photos/halloween-horror-carnival-zombie-6835308/"
       },
       {
         "scene": 2,
-        "user": "REFLEX_PRODUCTION",
-        "page": "https://pixabay.com/photos/torii-traditional-japanese-gate-7256271/"
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/carnival-fasnet-swabian-alemannic-2092819/"
       },
       {
         "scene": 3,
-        "user": "sasint",
-        "page": "https://pixabay.com/photos/boy-monk-river-buddhist-water-1807518/"
+        "source": "commons",
+        "user": "Douglas P Perkins ( Douglaspperkins ( talk ))",
+        "license": "CC BY 3.0",
+        "title": "Straw namahage.2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Straw_namahage.2.jpg"
       },
       {
         "scene": 4,
-        "user": "smpratt90",
-        "page": "https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/"
+        "source": "pixabay",
+        "user": "artemieixari",
+        "page": "https://pixabay.com/photos/hands-nuts-food-nut-peanuts-4654922/"
       },
       {
         "scene": 5,
-        "user": "YaoMuyu",
-        "page": "https://pixabay.com/photos/nepal-himalayas-annapurna-10512839/"
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/straw-rice-grain-field-farm-rural-230112/"
       },
       {
         "scene": 6,
-        "user": "Wolfgang-1958",
-        "page": "https://pixabay.com/photos/night-eve-warehouse-building-8573855/"
+        "source": "pixabay",
+        "user": "Anestiev",
+        "page": "https://pixabay.com/photos/acropolis-athens-greece-ancient-2725918/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0118_Japan.mp4",
@@ -5828,33 +7200,45 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "MARXCINE",
-        "page": "https://pixabay.com/photos/man-farmer-harvest-indigenous-corn-8548692/"
+        "source": "pixabay",
+        "user": "7523944",
+        "page": "https://pixabay.com/photos/maasai-tribe-africa-ceremony-6792709/"
       },
       {
         "scene": 2,
-        "user": "ua_Bob_Dmyt_ua",
-        "page": "https://pixabay.com/photos/christmas-background-4669449/"
+        "source": "commons",
+        "user": "James Gilchrist Swan (1818–1900)",
+        "license": "Public domain",
+        "title": "Klallam people at Port Townsend.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Klallam_people_at_Port_Townsend.jpg"
       },
       {
         "scene": 3,
-        "user": "Katerwursty",
-        "page": "https://pixabay.com/photos/castle-monument-park-building-6566978/"
+        "source": "commons",
+        "user": "Eden, Janine and Jim from New York City",
+        "license": "CC BY 2.0",
+        "title": "Potlatch Figures (42570120624).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Potlatch_Figures_(42570120624).jpg"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "profnshst",
         "page": "https://pixabay.com/photos/poetry-literature-candle-pen-table-7509085/"
       },
       {
         "scene": 5,
-        "user": "MichaelCatadman",
-        "page": "https://pixabay.com/photos/festival-dance-costume-culture-10332845/"
+        "source": "pixabay",
+        "user": "balouriarajesh",
+        "page": "https://pixabay.com/photos/diwali-diya-deepawali-deepavali-4545501/"
       },
       {
         "scene": 6,
-        "user": "jatocreate",
-        "page": "https://pixabay.com/photos/church-catholic-cathedral-aisle-7744547/"
+        "source": "commons",
+        "user": "Eden, Janine and Jim from New York City",
+        "license": "CC BY 2.0",
+        "title": "Potlatch Bowl I (43288372721).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Potlatch_Bowl_I_(43288372721).jpg"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0119_Canada.mp4",
@@ -5923,33 +7307,41 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "Dannypro1",
         "page": "https://pixabay.com/photos/flower-dandelion-wildflower-nature-7700011/"
       },
       {
         "scene": 2,
-        "user": "8moments",
-        "page": "https://pixabay.com/photos/road-tram-transport-system-city-3036620/"
+        "source": "pixabay",
+        "user": "marcinjozwiak",
+        "page": "https://pixabay.com/photos/production-facility-logistic-4408573/"
       },
       {
         "scene": 3,
-        "user": "uh_yeah_20101995",
-        "page": "https://pixabay.com/photos/space-interior-design-architecture-4660847/"
+        "source": "commons",
+        "user": "SuSanA Secretariat",
+        "license": "CC BY 2.0",
+        "title": "Working group 7 meeting (schools, rural, community sanitation), Guy Mbayo (UNICEF Rwanda) ",
+        "page": "https://commons.wikimedia.org/wiki/File:Working_group_7_meeting_(schools,_rural,_community_sanitation),_Guy_Mbayo_(UNICEF_Rwanda)_(5954951550).jpg"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "Dannypro1",
         "page": "https://pixabay.com/photos/tea-drink-rwanda-7784533/"
       },
       {
         "scene": 5,
-        "user": "ua_Bob_Dmyt_ua",
-        "page": "https://pixabay.com/photos/team-friendship-group-hands-4529717/"
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/education-classroom-participation-10165350/"
       },
       {
         "scene": 6,
-        "user": "chaiyananuwatmongkolchai",
-        "page": "https://pixabay.com/photos/volunteer-pollution-bottle-plastic-7788809/"
+        "source": "pixabay",
+        "user": "jarmoluk",
+        "page": "https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0120_Rwanda.mp4",
@@ -6018,33 +7410,43 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/landscape-evening-onaruto-bridge-7438429/"
+        "source": "commons",
+        "user": "Leiden University Library / Royal Netherlands Institute of Southeast Asian and C",
+        "license": "CC BY 4.0",
+        "title": "Raden Mas Saroso Notosoeparto, de latere Mangkoe Nagoro VIII.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Raden_Mas_Saroso_Notosoeparto,_de_latere_Mangkoe_Nagoro_VIII.jpg"
       },
       {
         "scene": 2,
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/babies-three-sleep-eyes-closed-869264/"
+        "source": "commons",
+        "user": "Doll: Hermine Moos (1888-1928). Photo: Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Kokoschka Alma Mahler doll (1919).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kokoschka_Alma_Mahler_doll_(1919).jpg"
       },
       {
         "scene": 3,
+        "source": "pixabay",
         "user": "wal_172619",
         "page": "https://pixabay.com/photos/city-transport-stop-road-5251533/"
       },
       {
         "scene": 4,
-        "user": "dhatchina",
-        "page": "https://pixabay.com/photos/elderly-woman-countryside-10463655/"
+        "source": "pixabay",
+        "user": "PhanAnh51",
+        "page": "https://pixabay.com/photos/street-vietnam-saigon-daily-7392734/"
       },
       {
         "scene": 5,
-        "user": "NguyenDo",
-        "page": "https://pixabay.com/photos/hoi-an-vietnam-lanterns-store-shop-6564496/"
+        "source": "pixabay",
+        "user": "didssph",
+        "page": "https://pixabay.com/photos/matryoshka-doll-doll-souvenir-6039267/"
       },
       {
         "scene": 6,
-        "user": "bongbabyhousevn",
-        "page": "https://pixabay.com/photos/newborn-camera-photography-sweet-5036843/"
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/babies-three-sleep-eyes-closed-869264/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0121_Japan.mp4",
@@ -6114,33 +7516,43 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "pen_ash",
-        "page": "https://pixabay.com/photos/bear-brown-bear-hokkaido-brown-bear-9201157/"
+        "source": "commons",
+        "user": "魚沼市観光協会",
+        "license": "CC BY 4.0",
+        "title": "UonumaPhoto Yukigassen Koide Snowball Fight Meet 201802.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:UonumaPhoto_Yukigassen_Koide_Snowball_Fight_Meet_201802.jpg"
       },
       {
         "scene": 2,
-        "user": "Dragon77",
-        "page": "https://pixabay.com/photos/ice-artificial-ice-studio-ice-macro-6215207/"
+        "source": "pixabay",
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/snow-winter-nature-landscape-frost-10476274/"
       },
       {
         "scene": 3,
-        "user": "Mollyroselee",
-        "page": "https://pixabay.com/photos/cherry-blossoms-tree-japan-map-8436420/"
+        "source": "pixabay",
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/snowball-bay-leafed-7833739/"
       },
       {
         "scene": 4,
+        "source": "pixabay",
         "user": "PublicDomainPictures",
         "page": "https://pixabay.com/photos/chess-metaphor-board-business-316657/"
       },
       {
         "scene": 5,
-        "user": "Nennieinszweidrei",
-        "page": "https://pixabay.com/photos/snowball-bay-leafed-7833739/"
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Water Dropper (suiteki) with Three Chinese Boys (karako), Snowball, and Blossoming Plum Br",
+        "page": "https://commons.wikimedia.org/wiki/File:Water_Dropper_(suiteki)_with_Three_Chinese_Boys_(karako),_Snowball,_and_Blossoming_Plum_Branch_LACMA_AC1998.115.30.jpg"
       },
       {
         "scene": 6,
+        "source": "pixabay",
         "user": "pen_ash",
-        "page": "https://pixabay.com/photos/snow-winter-nature-landscape-frost-10476274/"
+        "page": "https://pixabay.com/photos/snow-winter-nature-landscape-cold-10134653/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0122_Japan.mp4",
@@ -6202,31 +7614,37 @@
     "image_credits": [
       {
         "scene": 1,
-        "user": "Pixel-mixer",
-        "page": "https://pixabay.com/photos/cattle-show-appenzell-village-1715040/"
+        "source": "pixabay",
+        "user": "StudioFriluma",
+        "page": "https://pixabay.com/photos/cow-pasture-nature-meadow-trees-10441555/"
       },
       {
         "scene": 2,
-        "user": "ongchinonn",
-        "page": "https://pixabay.com/photos/cow-holy-sacred-india-hinduism-2610663/"
-      },
-      {
-        "scene": 3,
-        "user": "michalnavrat",
-        "page": "https://pixabay.com/photos/tournament-victory-match-target-3529744/"
-      },
-      {
-        "scene": 4,
-        "user": "GernotBra",
-        "page": "https://pixabay.com/photos/alps-alpstein-appenzell-switzerland-8128537/"
-      },
-      {
-        "scene": 5,
+        "source": "pixabay",
         "user": "Juncala",
         "page": "https://pixabay.com/photos/cow-switzerland-alp-output-bell-jar-2750335/"
       },
       {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Kyraxys",
+        "page": "https://pixabay.com/photos/apple-wood-dark-light-shadow-10440950/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "CedarCreation",
+        "page": "https://pixabay.com/photos/mooncake-mid-autumn-festival-7349281/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Storme22k",
+        "page": "https://pixabay.com/photos/cow-cattle-bull-calf-animal-9049115/"
+      },
+      {
         "scene": 6,
+        "source": "pixabay",
         "user": "TBeissel",
         "page": "https://pixabay.com/photos/hot-air-balloon-ballon-sky-fly-9070079/"
       }
@@ -6290,33 +7708,43 @@
     "image_credits": [
       {
         "scene": 1,
+        "source": "pixabay",
         "user": "murtaza_ali",
         "page": "https://pixabay.com/photos/holi-girl-indian-india-dance-fun-2416686/"
       },
       {
         "scene": 2,
-        "user": "OlcayErtem",
-        "page": "https://pixabay.com/photos/happy-valentines-day-couple-wedding-4615557/"
+        "source": "pixabay",
+        "user": "ekohikmawan",
+        "page": "https://pixabay.com/photos/couple-hands-wedding-ring-love-10397634/"
       },
       {
         "scene": 3,
-        "user": "kenahlobo",
-        "page": "https://pixabay.com/photos/brazilianwoman-percussion-bodhr%C3%A1n-4817012/"
+        "source": "commons",
+        "user": "Leandro Neumann Ciuffo",
+        "license": "CC BY 2.0",
+        "title": "Festa Junina (9062891212).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Festa_Junina_(9062891212).jpg"
       },
       {
         "scene": 4,
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/baker-cook-coffee-cupcake-frog-1194428/"
+        "source": "commons",
+        "user": "Rui T. Pinto",
+        "license": "CC0",
+        "title": "Igreja de São João Batista, na Vila de São João de Ver, iluminada durante a festa de São J",
+        "page": "https://commons.wikimedia.org/wiki/File:Igreja_de_S%C3%A3o_Jo%C3%A3o_Batista,_na_Vila_de_S%C3%A3o_Jo%C3%A3o_de_Ver,_iluminada_durante_a_festa_de_S%C3%A3o_Jo%C3%A3o.jpg"
       },
       {
         "scene": 5,
-        "user": "AdinaVoicu",
-        "page": "https://pixabay.com/photos/woman-dancer-dance-dancing-dress-1505407/"
+        "source": "pixabay",
+        "user": "soualexandrerocha",
+        "page": "https://pixabay.com/photos/oktoberfest-blumenau-brazil-parade-4566791/"
       },
       {
         "scene": 6,
-        "user": "picsbyjameslee",
-        "page": "https://pixabay.com/photos/christmas-winter-merry-christmas-4705290/"
+        "source": "pixabay",
+        "user": "delo",
+        "page": "https://pixabay.com/photos/folklore-dance-russian-dance-3514259/"
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0124_Brazil.mp4",
@@ -6380,14 +7808,14 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Bazela",
-        "page": "https://pixabay.com/photos/forest-trees-deforestation-clearing-7198607/"
+        "user": "Republica",
+        "page": "https://pixabay.com/photos/forest-trees-light-dust-clearing-653448/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "ignartonosbg",
-        "page": "https://pixabay.com/photos/ground-camping-family-camp-picnic-8260968/"
+        "user": "jwvein",
+        "page": "https://pixabay.com/photos/mushroom-forest-toadstool-nature-7494046/"
       },
       {
         "scene": 4,
@@ -6398,14 +7826,14 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/the-eleventh-hour-time-to-rethink-3101625/"
+        "user": "Icons8_team",
+        "page": "https://pixabay.com/photos/time-clock-alarm-clock-3435879/"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "manfredrichter",
-        "page": "https://pixabay.com/photos/broom-bristles-house-broom-4762980/"
+        "user": "mariya_m",
+        "page": "https://pixabay.com/photos/road-garbage-man-profession-7356556/"
       }
     ],
     "image_source": "pixabay",
@@ -6478,8 +7906,8 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "pen_ash",
-        "page": "https://pixabay.com/photos/superb-fairywren-wren-blue-wren-6075839/"
+        "user": "Gruendercoach",
+        "page": "https://pixabay.com/photos/eurasian-wren-bird-bird-photography-10022157/"
       },
       {
         "scene": 3,
@@ -6490,8 +7918,8 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Gruendercoach",
-        "page": "https://pixabay.com/photos/eurasian-wren-bird-bird-photography-10022157/"
+        "user": "pen_ash",
+        "page": "https://pixabay.com/photos/superb-fairywren-fairywren-blue-wren-10069195/"
       },
       {
         "scene": 5,
@@ -6503,7 +7931,7 @@
         "scene": 6,
         "source": "pixabay",
         "user": "pen_ash",
-        "page": "https://pixabay.com/photos/superb-fairywren-fairywren-blue-wren-10069195/"
+        "page": "https://pixabay.com/photos/superb-fairywren-fairywren-blue-wren-10069243/"
       }
     ],
     "image_source": "pixabay",
@@ -6566,34 +7994,32 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "analogicus",
-        "page": "https://pixabay.com/photos/russian-orthodox-church-church-paris-8018200/"
+        "user": "delo",
+        "page": "https://pixabay.com/photos/folklore-dance-russian-dance-3514259/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "WikiImages",
-        "page": "https://pixabay.com/photos/train-railroad-transportation-60539/"
+        "user": "Géo",
+        "page": "https://pixabay.com/photos/locomotive-train-transport-rail-10084813/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "whitesession",
-        "page": "https://pixabay.com/photos/woman-massage-therapy-physiotherapy-2722936/"
+        "user": "graceie",
+        "page": "https://pixabay.com/photos/head-massage-treatment-relaxation-650878/"
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "gosiak1980",
-        "page": "https://pixabay.com/photos/nature-plants-trees-branches-5016245/"
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/birch-bark-sugar-birch-tree-bark-6935442/"
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "Главархив Москвы",
-        "license": "CC BY 4.0",
-        "title": "History of banyas in Moscow 05.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:History_of_banyas_in_Moscow_05.jpg"
+        "source": "pixabay",
+        "user": "dimitrisvetsikas1969",
+        "page": "https://pixabay.com/photos/tamassos-bishop-russian-church-4624404/"
       },
       {
         "scene": 6,
@@ -6658,20 +8084,20 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Zachtleven",
-        "page": "https://pixabay.com/photos/river-flowing-waterfall-nature-8279466/"
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/woman-model-portrait-builder-6190431/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Rico_Loeb",
-        "page": "https://pixabay.com/photos/fire-fighters-police-accident-1857993/"
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/holidays-car-map-travel-route-1283014/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Herrte",
-        "page": "https://pixabay.com/photos/street-buildings-town-village-5030692/"
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/road-norway-tundra-landscape-sky-6576857/"
       },
       {
         "scene": 4,
@@ -6688,8 +8114,8 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "cskkkk",
-        "page": "https://pixabay.com/photos/night-view-bridge-river-building-7603847/"
+        "user": "EvgeniT",
+        "page": "https://pixabay.com/photos/road-night-stars-milky-way-galaxy-4055838/"
       }
     ],
     "image_source": "pixabay",
@@ -6762,8 +8188,8 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "LoboStudioHamburg",
-        "page": "https://pixabay.com/photos/federal-chancellery-637999/"
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/bar-restaurant-shield-night-life-5475279/"
       },
       {
         "scene": 3,
@@ -6776,8 +8202,8 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "HeungSoon",
-        "page": "https://pixabay.com/photos/pinwheel-south-korean-flag-flag-5790090/"
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/business-bar-restaurant-shield-5475283/"
       },
       {
         "scene": 5,
@@ -6788,8 +8214,8 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "zhangliams",
-        "page": "https://pixabay.com/photos/house-living-room-stairs-furnish-7609267/"
+        "user": "27688818",
+        "page": "https://pixabay.com/photos/table-furniture-interior-design-7225001/"
       }
     ],
     "image_source": "pixabay",
@@ -6852,14 +8278,14 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Ilona721",
-        "page": "https://pixabay.com/photos/cavia-caviidae-guinea-pig-7318119/"
+        "user": "furbymama",
+        "page": "https://pixabay.com/photos/guinea-pig-animal-pet-rodent-6839832/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/drinks-alcohol-glasses-champagne-1283608/"
+        "user": "difotolife",
+        "page": "https://pixabay.com/photos/table-serving-glasses-celebration-4216787/"
       },
       {
         "scene": 3,
@@ -6872,8 +8298,8 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Camera-man",
-        "page": "https://pixabay.com/photos/mountain-river-torrent-scenic-8517546/"
+        "user": "giovannibg",
+        "page": "https://pixabay.com/photos/christ-ballestas-islands-paracas-1809774/"
       },
       {
         "scene": 5,
@@ -6954,8 +8380,8 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "NoblePrime",
-        "page": "https://pixabay.com/photos/cigarette-tobacco-smoke-smoking-8547965/"
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/expo-2010-shanghai-structure-642689/"
       },
       {
         "scene": 3,
@@ -7146,8 +8572,8 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "DAVID_UNDERLAND",
-        "page": "https://pixabay.com/photos/building-architecture-office-4884852/"
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/coins-currency-investment-insurance-948603/"
       },
       {
         "scene": 3,
@@ -7394,14 +8820,14 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/baby-newborn-father-fatherhood-man-21249/"
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/bed-baby-newborn-child-blanket-1839564/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "OlcayErtem",
-        "page": "https://pixabay.com/photos/happy-valentines-day-couple-wedding-4615557/"
+        "user": "ekohikmawan",
+        "page": "https://pixabay.com/photos/couple-hands-wedding-ring-love-10397634/"
       },
       {
         "scene": 3,
@@ -7412,8 +8838,8 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "ptrabattoni",
-        "page": "https://pixabay.com/photos/dublin-home-house-ireland-europe-4955342/"
+        "user": "Van3ssa_",
+        "page": "https://pixabay.com/photos/embroidery-thread-colorful-yarn-5248183/"
       },
       {
         "scene": 5,
@@ -7498,20 +8924,20 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "LTapsaH",
-        "page": "https://pixabay.com/photos/toad-frog-animal-character-pond-8298947/"
+        "user": "reijotelaranta",
+        "page": "https://pixabay.com/photos/lake-ridge-punkaharju-finland-road-7415097/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "javierAlamo",
-        "page": "https://pixabay.com/photos/quarry-gravel-pit-gravel-sand-4786257/"
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/beach-island-ocean-sea-seascape-1836335/"
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/beers-glasses-of-beer-drink-alcohol-1283566/"
+        "user": "5598375",
+        "page": "https://pixabay.com/photos/beer-glass-drink-beer-garden-3378136/"
       },
       {
         "scene": 5,
@@ -7522,8 +8948,8 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "ReinhardThrainer",
-        "page": "https://pixabay.com/photos/barrel-barrels-wine-barrel-3943965/"
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/beer-car-barrels-beer-922676/"
       }
     ],
     "image_source": "pixabay",
@@ -7595,25 +9021,25 @@
         "scene": 3,
         "source": "pixabay",
         "user": "mibro",
-        "page": "https://pixabay.com/photos/car-racing-race-track-n%C3%BCrburgring-4394450/"
+        "page": "https://pixabay.com/photos/race-car-sports-car-motorsport-7624025/"
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "svseckin",
-        "page": "https://pixabay.com/photos/street-buildings-people-crowd-5439185/"
+        "user": "Irina_kukuts",
+        "page": "https://pixabay.com/photos/red-square-ice-rink-moscow-holiday-8569243/"
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Chikilino",
-        "page": "https://pixabay.com/photos/skateboard-skater-skating-outdoors-7270418/"
+        "user": "Hermann",
+        "page": "https://pixabay.com/photos/books-stack-literature-knowledge-5937823/"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "995645",
-        "page": "https://pixabay.com/photos/skating-skates-winter-sports-3817358/"
+        "user": "Mariakray",
+        "page": "https://pixabay.com/photos/skating-boots-ice-skates-ice-rink-6657330/"
       }
     ],
     "image_source": "pixabay",
@@ -7700,20 +9126,20 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "LTapsaH",
-        "page": "https://pixabay.com/photos/river-sauna-cottage-forest-finland-6787137/"
-      },
-      {
-        "scene": 2,
-        "source": "pixabay",
         "user": "reijotelaranta",
         "page": "https://pixabay.com/photos/water-lake-forest-sauna-summer-4483470/"
       },
       {
-        "scene": 3,
+        "scene": 2,
         "source": "pixabay",
         "user": "LTapsaH",
         "page": "https://pixabay.com/photos/river-rapids-sauna-cottage-7325043/"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "ellakuuselaphotography",
+        "page": "https://pixabay.com/photos/cottage-house-snow-winter-sauna-7010884/"
       },
       {
         "scene": 4,
@@ -7724,8 +9150,8 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "pasja1000",
-        "page": "https://pixabay.com/photos/lapland-reindeer-snow-parish-dec-4688371/"
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/sauna-raft-sauna-river-fog-woods-6809986/"
       },
       {
         "scene": 6,
@@ -7998,38 +9424,38 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "dsc62",
-        "page": "https://pixabay.com/photos/desert-camels-ride-cameleers-5781437/"
+        "user": "Rawlight",
+        "page": "https://pixabay.com/photos/camel-animal-desert-dubai-uae-5348837/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Sammy-Sander",
-        "page": "https://pixabay.com/photos/headphones-laptop-dj-music-4595492/"
+        "user": "RonaldPlett",
+        "page": "https://pixabay.com/photos/american-quarter-horse-horse-8221846/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Wphoto",
-        "page": "https://pixabay.com/photos/camel-galaxy-dubai-darkness-4948299/"
+        "user": "NamibianHeart",
+        "page": "https://pixabay.com/photos/camel-desert-namib-desert-4785794/"
       },
       {
         "scene": 4,
         "source": "pixabay",
         "user": "mibro",
-        "page": "https://pixabay.com/photos/car-racing-race-track-n%C3%BCrburgring-4394450/"
+        "page": "https://pixabay.com/photos/race-car-sports-car-motorsport-7624025/"
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "stofinho",
-        "page": "https://pixabay.com/photos/camel-sahara-sand-dunes-desert-8430227/"
+        "user": "8moments",
+        "page": "https://pixabay.com/photos/desert-camel-sand-pyramid-dry-3217765/"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Rawlight",
-        "page": "https://pixabay.com/photos/camel-animal-desert-dubai-uae-5348837/"
+        "user": "RajeshVattekat",
+        "page": "https://pixabay.com/photos/camel-dubai-desert-uae-sand-6784107/"
       }
     ],
     "image_source": "pixabay",
@@ -8104,8 +9530,8 @@
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Photochief_",
-        "page": "https://pixabay.com/photos/africa-ghana-child-water-5032076/"
+        "user": "senyoletsa",
+        "page": "https://pixabay.com/photos/student-woman-smile-portrait-7468801/"
       },
       {
         "scene": 4,
@@ -8116,14 +9542,14 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "oleg_mit",
-        "page": "https://pixabay.com/photos/coastal-village-sea-cliffs-steep-5527726/"
+        "user": "0xCoffe",
+        "page": "https://pixabay.com/photos/city-mountains-coast-houses-6328941/"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "ernie114",
-        "page": "https://pixabay.com/photos/us-flag-navy-burial-ceremony-4804257/"
+        "user": "carolynabooth",
+        "page": "https://pixabay.com/photos/funeral-coffin-mourning-ceremony-2421820/"
       }
     ],
     "image_source": "pixabay",
@@ -8192,14 +9618,14 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "sasint",
-        "page": "https://pixabay.com/photos/asia-dance-bangkok-cambodia-1807558/"
+        "user": "Greza",
+        "page": "https://pixabay.com/photos/fire-man-circus-performer-4605815/"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Lenzatic",
-        "page": "https://pixabay.com/photos/nevada-desert-nature-landscape-8338929/"
+        "user": "jwvein",
+        "page": "https://pixabay.com/photos/moon-sky-clouds-night-cosmos-7021271/"
       },
       {
         "scene": 4,
@@ -8744,8 +10170,8 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/bread-baked-loaf-bakery-4183225/"
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/bread-loaf-white-bread-baked-food-4642686/"
       },
       {
         "scene": 6,
@@ -8819,8 +10245,8 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "qimono",
-        "page": "https://pixabay.com/photos/home-office-interior-room-modern-2804083/"
+        "user": "dazzleology",
+        "page": "https://pixabay.com/photos/wall-gallery-studio-exhibition-751342/"
       },
       {
         "scene": 3,
@@ -8831,8 +10257,8 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "4787421",
-        "page": "https://pixabay.com/photos/interior-living-room-furniture-2685521/"
+        "user": "jeanvdmeulen",
+        "page": "https://pixabay.com/photos/dining-room-living-room-modern-3108037/"
       },
       {
         "scene": 5,
@@ -8938,8 +10364,8 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "RahulPandit",
-        "page": "https://pixabay.com/photos/street-rain-traffic-umbrella-4768502/"
+        "user": "SnapwireSnaps",
+        "page": "https://pixabay.com/photos/london-street-road-uk-city-urban-598182/"
       },
       {
         "scene": 6,
@@ -9029,8 +10455,8 @@
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "diema",
-        "page": "https://pixabay.com/photos/primeval-times-dinosaur-lizard-4564683/"
+        "user": "creposucre",
+        "page": "https://pixabay.com/photos/island-deserted-landscape-sea-4599531/"
       },
       {
         "scene": 4,
@@ -9211,14 +10637,14 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Amplitudy",
-        "page": "https://pixabay.com/photos/great-post-calcine-ash-wednesday-4808839/"
+        "user": "OrnaW",
+        "page": "https://pixabay.com/photos/woman-hair-hairstyle-braids-4215064/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "OrnaW",
-        "page": "https://pixabay.com/photos/woman-hair-hairstyle-braids-4215064/"
+        "user": "suc",
+        "page": "https://pixabay.com/photos/dhammakaya-pagoda-budha-gold-472496/"
       },
       {
         "scene": 3,
@@ -9245,8 +10671,8 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "scholty1970",
-        "page": "https://pixabay.com/photos/l%C3%BCbeck-road-restaurant-city-4081316/"
+        "user": "analogicus",
+        "page": "https://pixabay.com/photos/ninety-date-of-birth-candle-4682295/"
       }
     ],
     "image_source": "pixabay",
@@ -9410,13 +10836,13 @@
         "scene": 1,
         "source": "pixabay",
         "user": "sergeitokmakov",
-        "page": "https://pixabay.com/photos/gavel-justice-judge-courtroom-7499911/"
+        "page": "https://pixabay.com/photos/gavel-flag-america-law-courtroom-8101388/"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Julius_Silver",
-        "page": "https://pixabay.com/photos/new-zealand-volcano-crater-3018634/"
+        "user": "RachelleChristensen",
+        "page": "https://pixabay.com/photos/vintage-mirror-broken-mirror-4052203/"
       },
       {
         "scene": 3,
@@ -9430,13 +10856,19 @@
         "scene": 4,
         "source": "pixabay",
         "user": "StartupStockPhotos",
-        "page": "https://pixabay.com/photos/entrepreneur-startup-start-up-man-593378/"
+        "page": "https://pixabay.com/photos/entrepreneur-start-up-man-planning-593371/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/lightbulb-energy-nature-environment-5244001/"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Juncala",
-        "page": "https://pixabay.com/photos/snow-winter-wintry-new-zealand-7641544/"
+        "user": "felix_w",
+        "page": "https://pixabay.com/photos/a-book-paper-document-poetry-side-3101151/"
       }
     ],
     "image_source": "pixabay",
@@ -9528,8 +10960,8 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "valerioerrani",
-        "page": "https://pixabay.com/photos/torch-torchlight-editorial-people-7010119/"
+        "user": "MemoryCatcher",
+        "page": "https://pixabay.com/photos/ceremony-christianity-procession-6822707/"
       },
       {
         "scene": 6,

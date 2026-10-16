@@ -5,10 +5,17 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.chdir(HERE)
-EN = os.path.exists("generate_topics.py")
+_has_en, _has_ko = os.path.exists("generate_topics.py"), os.path.exists("generate_culture_facts.py")
+EN = _has_en and not _has_ko
+if _has_en and _has_ko:  # 두 채널 파일이 섞인 폴더: 파일 안의 언어로 판별 (channel.txt로 강제 지정 가능)
+    try:
+        EN = open("channel.txt", encoding="utf-8").read().strip().lower() == "en"
+    except Exception:
+        EN = "ko-KR-SunHiNeural" not in open("generate_tts.py", encoding="utf-8").read()
 CH, HD = ("KoreaAtoZ", "@KoreaA2Z") if EN else ("gonmauY", "@gonmauY")
 st.set_page_config(page_title="Shorts 로컬", layout="wide")
 st.title("Shorts 로컬 실행 - " + CH)
+st.caption(f"폴더: {HERE}  |  채널: {'영어 (KoreaAtoZ)' if EN else '한국어 (gonmauY)'}")
 
 with st.sidebar:
     st.header("상황별 사용법")
@@ -42,11 +49,29 @@ facts_db.json에 narration 입력 → render만
 
 TIMES = []
 
+# ---- 목소리/속도 설정 (tts_settings.json에 저장, 모든 단계에 환경변수로 전달) ----
+LANG = "en" if EN else "ko"
+ST_VOICES = ["F1", "F2", "F3", "F4", "F5", "M1", "M2", "M3", "M4", "M5"]
+EDGE_VOICES = (["en-US-AndrewNeural", "en-US-AriaNeural", "en-US-GuyNeural", "en-US-JennyNeural", "en-GB-RyanNeural"] if EN
+               else ["ko-KR-SunHiNeural", "ko-KR-InJoonNeural", "ko-KR-JiMinNeural", "ko-KR-SeoHyeonNeural"])
+TTS_FILE = "tts_settings.json"
+try:
+    TTS_CFG = json.load(open(TTS_FILE, encoding="utf-8"))
+except Exception:
+    TTS_CFG = {}
+TTS_CFG.setdefault("voice", "M1" if EN else "F1")
+TTS_CFG.setdefault("rate", 8 if EN else -3)
+TTS_CFG.setdefault("edge", EDGE_VOICES[0])
+
+def tts_env():
+    return {f"SUPERTONIC_VOICE_{LANG.upper()}": TTS_CFG["voice"], "TTS_RATE": f"{int(TTS_CFG['rate']):+d}%",
+            "TTS_EDGE_VOICE": TTS_CFG["edge"]}
+
 def run(*args):
     t0 = time.time()
     st.write("▶ `python " + " ".join(args) + "`")
     box = st.empty(); buf = []
-    env = dict(os.environ, PYTHONUNBUFFERED="1", PYTHONIOENCODING="utf-8")
+    env = dict(os.environ, PYTHONUNBUFFERED="1", PYTHONIOENCODING="utf-8", **tts_env())
     p = subprocess.Popen([sys.executable, *args], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                          text=True, encoding="utf-8", errors="replace", env=env)
     for line in p.stdout:
@@ -81,6 +106,28 @@ prepare = pre + [S("generate_script.py", *a), S("export_review.py", *a)]
 render = pre + [S("generate_script.py", "--extras-only", *a), S("generate_tts.py", *a),
                 S("fetch_images.py", *a), S("build_video.py", *a, "--channel", CH, "--handle", HD),
                 S("make_thumbnail.py", "--channel", CH, "--handle", HD)]
+
+with st.expander("🎙 목소리 / 속도 (음성 만들기 전에 정하세요)"):
+    t1, t2, t3 = st.columns(3)
+    TTS_CFG["voice"] = t1.selectbox("Supertonic 목소리 (F=여성, M=남성)", ST_VOICES, ST_VOICES.index(TTS_CFG["voice"]) if TTS_CFG["voice"] in ST_VOICES else 0,
+                                    help="기본 음성 엔진. 아래 '미리듣기'로 들어보고 고르세요")
+    TTS_CFG["rate"] = t2.slider("속도 (%)", -20, 30, int(TTS_CFG["rate"]), 1,
+                                help="0=기본. 느리게는 -, 빠르게는 +. 빠를수록 영상이 짧아집니다")
+    TTS_CFG["edge"] = t3.selectbox("Edge 음성 (Supertonic 실패 시 대체)", EDGE_VOICES, EDGE_VOICES.index(TTS_CFG["edge"]) if TTS_CFG["edge"] in EDGE_VOICES else 0)
+    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    sample = st.text_input("미리듣기 문장", "프랑스에서는 빵을 거꾸로 놓으면 불길하다고 여겼습니다." if not EN else "In Korea, you never stick chopsticks upright in a bowl of rice.")
+    if st.button("▶ 미리듣기", help="선택한 목소리와 속도로 위 문장을 한 번 만들어 들어봅니다 (처음엔 모델 다운로드로 오래 걸림)"):
+        code = ("import os,sys;from tts_fallback import supertonic_sentence,speed_from_rate;"
+                "supertonic_sentence(sys.argv[1],'_preview.wav',sys.argv[2],speed_from_rate(os.environ['TTS_RATE']))")
+        r = subprocess.run([sys.executable, "-c", code, sample, LANG], capture_output=True, text=True, encoding="utf-8",
+                           errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8", **tts_env()))
+        if r.returncode == 0 and os.path.exists("_preview.wav"):
+            st.audio("_preview.wav")
+        else:
+            st.error("미리듣기 실패: " + (r.stderr or r.stdout)[-400:])
+    st.caption("영상/자막/장면 전환은 만들어진 음성의 실제 길이·문장 타이밍을 따라 자동으로 맞춰집니다. "
+               "대본은 글자 수 기준이라 속도를 늦추면 영상이 길어지고(58초 초과 시 경고), 빠르게 하면 짧아집니다. "
+               "이미 만든 영상에 적용하려면 redo 칸에 번호를 넣고(체크 해제) render 하세요.")
 
 b1, b2, b3, b4, b5 = st.columns(5)
 n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="'소재 만들기' 버튼으로 만들 개수. 한 번에 12개 이하 권장 (Groq 한도)")

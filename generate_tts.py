@@ -33,6 +33,7 @@ v2 변경점:
 import argparse
 import asyncio
 import json
+import os
 import re
 import time
 import unicodedata
@@ -174,7 +175,10 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
             log(f"    [{engine} 실패] {str(e)[:150]} -> 다음 엔진으로")
     if boundaries is None:
         raise RuntimeError("모든 음성 엔진 실패 / " + " | ".join(errors))
-    if used != "edge":
+    if used == "supertonic":
+        lang = voice.split("-")[0].lower()
+        voice = "supertonic-" + (os.environ.get(f"SUPERTONIC_VOICE_{lang.upper()}") or "default")
+    elif used != "edge":
         voice = f"{used}-" + voice.split("-")[0]
 
     timing_data = {
@@ -196,8 +200,10 @@ def main():
     )
     parser.add_argument("--index", type=int, default=None)
     parser.add_argument("--limit", type=int, default=5)
-    parser.add_argument("--voice", default="ko-KR-SunHiNeural")
-    parser.add_argument("--rate", default="-3%")
+    parser.add_argument("--voice", default=os.environ.get("TTS_EDGE_VOICE") or "ko-KR-SunHiNeural",
+                        help="Edge 음성 이름 (환경변수 TTS_EDGE_VOICE로도 지정)")
+    parser.add_argument("--rate", default=os.environ.get("TTS_RATE") or "-3%",
+                        help="말 속도. 예: -10%% / +8%% (환경변수 TTS_RATE로도 지정). Supertonic도 이 값을 따름")
     parser.add_argument("--volume", default="+0%")
     parser.add_argument("--pitch", default="+0Hz")
     parser.add_argument("--timeout", type=int, default=90,
@@ -288,6 +294,14 @@ def main():
             log(f"    audio: {audio_path}")
             log(f"    timing: {timing_path}")
             log(f"    sentence boundaries: {count}")
+            try:
+                from tts_fallback import _duration
+                dur = _duration(audio_path)
+                log(f"    음성 길이: {dur:.1f}초 / 음성: {json.load(open(timing_path, encoding='utf-8')).get('voice')} / 속도: {args.rate}")
+                if dur > 58:
+                    log("    [주의] 58초를 넘습니다. 쇼츠 1분 제한이 있으니 속도를 올리거나 대본을 줄이세요.")
+            except Exception:
+                pass
             if count == 0:
                 log("    [주의] 문장 타이밍이 0개입니다. 영상 제작 시 글자 수 비례로 대체됩니다.")
 
