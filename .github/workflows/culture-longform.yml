@@ -39,6 +39,13 @@ on:
         type: boolean
         default: false
 
+      voice:
+        description: "목소리 (Supertonic: F1~F5 여성, M1~M5 남성 / 비우면 기본 F1)"
+        default: ""
+      speed:
+        description: "말 속도 (예: -5% / +10% / 비우면 기본)"
+        default: ""
+
 permissions:
   contents: write
 
@@ -49,6 +56,8 @@ jobs:
     env:
       PYTHONUNBUFFERED: "1"
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
+      TTS_RATE: ${{ github.event.inputs.speed || '' }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       MODE: ${{ github.event.inputs.mode || 'auto' }}

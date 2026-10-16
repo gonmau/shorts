@@ -48,6 +48,13 @@ on:
         options: ["off", "scan", "fix"]
         default: "off"
 
+      voice:
+        description: "목소리 (Supertonic: F1~F5 여성, M1~M5 남성 / 비우면 기본 F1)"
+        default: ""
+      speed:
+        description: "말 속도 (예: -5% / +10% / 비우면 기본)"
+        default: ""
+
 permissions:
   contents: write
 
@@ -63,6 +70,8 @@ jobs:
       COUNT: ${{ github.event.inputs.count || '2' }}
       START: ${{ github.event.inputs.start_index || '106' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
+      SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
+      TTS_RATE: ${{ github.event.inputs.speed || '' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
