@@ -5,6 +5,7 @@
 영상 제작(build_video)이 끝난 소재(video_path_v6가 있는 것)가 대상.
 """
 import argparse
+import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
@@ -88,18 +89,30 @@ def main():
     ap.add_argument("--handle", default="@gonmauY")
     ap.add_argument("--avatar", default="avatar.png")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--start", type=int, default=0, help="이 번호 이상 소재의 썸네일만 만듦")
+    ap.add_argument("--style", choices=["pop", "classic"], default=os.environ.get("THUMB_STYLE", "pop"),
+                    help="pop: 국기+노란 붓터치 나라 이름 / classic: 예전 노란 띠")
+    ap.add_argument("--only", default="", help="이 번호들(쉼표)의 썸네일만 만듦. 예: 183,184")
     args = ap.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
+    only = {int(x) for x in args.only.replace(" ", "").split(",") if x.isdigit()}
     n = 0
     for idx, item in enumerate(load_db()):
+        if idx < args.start or (only and idx not in only):
+            continue
         vp = item.get("video_path_v6")
         if not vp or not Path(vp).exists():
             continue
         out = OUT_DIR / f"{Path(vp).stem}.png"
         if out.exists() and not args.force:
             continue
-        make(idx, item, args.channel, args.handle, args.avatar).save(out)
+        if args.style == "classic":
+            im = make(idx, item, args.channel, args.handle, args.avatar)
+        else:
+            import thumb_pop
+            im = thumb_pop.make(idx, item, args.channel, args.handle, args.avatar, background)
+        im.save(out)
         print("썸네일:", out.name)
         n += 1
     print(f"완료: {n}개")

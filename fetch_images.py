@@ -25,6 +25,7 @@ from common import load_db, save_db, pending_render, visual_dir
 BASE_DIR = Path(__file__).resolve().parent
 API_URL = "https://pixabay.com/api/"
 SCENE_COUNT = 6
+IMAGE_TYPE = "photo"  # Pixabay image_type: photo / illustration / vector (--scene 단독 실행에서만 바뀜)
 HEADERS = {"User-Agent": "culture-shorts-bot/1.0"}
 
 
@@ -32,7 +33,7 @@ def search(session, key, query, min_size):
     params = {
         "key": key,
         "q": query[:100],
-        "image_type": "photo",
+        "image_type": IMAGE_TYPE,
         "safesearch": "true",
         "per_page": 20,
         "order": "popular",
@@ -123,7 +124,7 @@ def fetch_item(session, key, idx, item, force):
             if hit and relevant:  # 1순위: Pixabay에서 주제와 맞는 사진
                 used.add(hit["id"])
                 download(session, hit["largeImageURL"], dest)
-                credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", "")}
+                credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
             else:  # 2순위: Wikimedia Commons (CC0/퍼블릭도메인/CC BY만)
                 c = None
                 for q in (query, anchor):
@@ -141,11 +142,11 @@ def fetch_item(session, key, idx, item, force):
                     used.add(c["id"])
                     download(session, c["url"], dest, {"User-Agent": commons.UA})
                     credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
-                              "title": c["title"], "page": c["page"]}
+                              "title": c["title"], "page": c["page"], "id": c["id"]}
                 elif hit:  # 3순위: 주제와 덜 맞아도 Pixabay에서 가장 비슷한 사진
                     used.add(hit["id"])
                     download(session, hit["largeImageURL"], dest)
-                    credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", "")}
+                    credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
                 else:
                     print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
                     continue
@@ -164,16 +165,63 @@ def fetch_item(session, key, idx, item, force):
     return got
 
 
+def refetch_scene(session, key, idx, item, n, source):
+    """한 장면만 지정한 출처(pixabay / commons)에서 다시 받는다. 현재 사진은 제외하고 다른 사진을 고른다.
+    실패하면 기존 사진을 그대로 둔다. 성공하면 True"""
+    folder = visual_dir(BASE_DIR, idx, item)
+    queries = item.get("image_queries") or []
+    if not (1 <= n <= len(queries)):
+        print(f"장면 {n}: 이미지 검색어가 없습니다.")
+        return False
+    query = queries[n - 1]
+    dest = folder / f"scene_{n:02d}.png"
+    cur = next((c for c in (item.get("image_credits") or []) if c.get("scene") == n), {})
+    used = {cur["id"]} if cur.get("id") else set()
+    if source == "commons":
+        anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
+        c = None
+        for q in (query, anchor):
+            if not q:
+                continue
+            c = commons.search(session, q, used)
+            if c:
+                break
+            time.sleep(1.0)
+        if not c:
+            print(f"장면 {n}: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 ({query}). 기존 사진 유지")
+            return False
+        download(session, c["url"], dest, {"User-Agent": commons.UA})
+        credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
+                  "title": c["title"], "page": c["page"], "id": c["id"]}
+    else:
+        hit, _ = pick(session, key, query, used)
+        if not hit:
+            print(f"장면 {n}: Pixabay에서 사진을 못 찾았습니다 ({query}). 기존 사진 유지")
+            return False
+        download(session, hit["largeImageURL"], dest)
+        credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"], "type": IMAGE_TYPE}
+    merged = {c_.get("scene"): c_ for c_ in (item.get("image_credits") or []) if (folder / f"scene_{int(c_.get('scene', 0)):02d}.png").exists()}
+    merged[n] = credit
+    item["image_credits"] = [merged[k] for k in sorted(merged)]
+    item["image_source"] = "pixabay" if any(c_.get("source", "pixabay") == "pixabay" for c_ in merged.values()) else "commons"
+    print(f"장면 {n}: {source}" + (f"({IMAGE_TYPE})" if source == "pixabay" else "") + "에서 새로 받음" + (f" ({credit['license']}, {credit['user']})" if source == "commons" else ""))
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=5)
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--force", action="store_true", help="이미 받은 이미지도 다시 받기")
     ap.add_argument("--index", type=int, default=None, help="이 번호 소재 하나만 처리 (상태와 상관없이. 롱폼 합치기용)")
+    ap.add_argument("--scene", type=int, default=None, help="--index 와 함께: 이 장면 하나만 다시 받기")
+    ap.add_argument("--type", dest="img_type", choices=["photo", "illustration", "vector"], default="photo", help="--source pixabay 일 때 이미지 종류")
+    ap.add_argument("--source", choices=["pixabay", "commons"], default="pixabay", help="--scene 과 함께: 받을 출처")
+    ap.add_argument("--any", action="store_true", help="음성이 아직 없어도 대본이 끝난 소재의 이미지를 받음 (이미지를 먼저 확인할 때)")
     args = ap.parse_args()
 
     key = os.environ.get("PIXABAY_API_KEY", "").strip()
-    if not key:
+    if not key and not (args.scene is not None and args.source == "commons"):
         print("PIXABAY_API_KEY가 없어 이미지 다운로드를 건너뜁니다. (대체 카드로 영상 제작)")
         return
 
@@ -186,10 +234,20 @@ def main():
     else:
         for idx, item in pending_render(db, args.start):
             ap_ = item.get("audio_path_v2")
-            if item.get("status_tts_v2") == "done" and ap_ and Path(ap_).exists():
+            if args.any or (item.get("status_tts_v2") == "done" and ap_ and Path(ap_).exists()):
                 targets.append((idx, item))
             if len(targets) >= args.limit:
                 break
+
+    if args.scene is not None:
+        global IMAGE_TYPE
+        IMAGE_TYPE = args.img_type
+        if args.index is None:
+            raise SystemExit("--scene 은 --index 와 함께 써야 합니다")
+        ok = refetch_scene(requests.Session(), key, args.index, db[args.index], args.scene, args.source)
+        if ok:
+            save_db(db)
+        raise SystemExit(0 if ok else 1)
 
     print(f"이미지 다운로드 대상: {len(targets)}개")
     session = requests.Session()

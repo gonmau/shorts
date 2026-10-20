@@ -189,3 +189,32 @@ def render_caption(text, luma=90.0, std=30.0):
         d.text((x, y), l, font=font, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
         y += lh
     return np.asarray(img, dtype=np.uint8).copy()
+
+
+# ------------------------------------------------------------------ SRT / 자막 모드
+def caption_mode():
+    """CAPTION_MODE: script(영상에 자막 입힘, 기본) / srt(.srt 파일만, 영상엔 자막 없음) / both(둘 다) / highlight(예전 핵심 문구)"""
+    import os
+    m = (os.environ.get("CAPTION_MODE") or "script").strip().lower()
+    return m if m in ("script", "srt", "both", "highlight") else "script"
+
+
+def burn_in(mode):
+    return mode in ("script", "both")
+
+
+def _srt_time(t):
+    ms = int(round(max(0.0, t) * 1000))
+    h, ms = divmod(ms, 3600_000)
+    m, ms = divmod(ms, 60_000)
+    s, ms = divmod(ms, 1000)
+    return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
+
+
+def to_srt(cues, offset=0.0, start_no=1):
+    """[(시작, 끝, 텍스트)] -> SRT 문자열 (자막은 최대 2줄)."""
+    out = []
+    for n, (a, b, text) in enumerate(cues, start=start_no):
+        lines = wrap(text)[:MAX_LINES] or [str(text)]
+        out.append(f"{n}\n{_srt_time(a + offset)} --> {_srt_time(b + offset)}\n" + "\n".join(lines) + "\n")
+    return "\n".join(out)

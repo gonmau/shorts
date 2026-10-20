@@ -50,6 +50,19 @@ MIN_CHARS = 280
 TARGET_MIN_CHARS = 350
 TARGET_MAX_CHARS = 500
 
+# 목표 길이(초): 환경변수 SCRIPT_TARGET_SEC 이 있으면 분량 기준을 거기에 맞춘다 (UI 2단계에서 지정). 없으면 아래 기본값.
+def _rate_mult():
+    m = re.match(r"\s*([+-]?\d+)", os.environ.get("TTS_RATE", ""))
+    return 1.0 + (int(m.group(1)) / 100.0 if m else 0.0)
+
+
+_SEC = os.environ.get("SCRIPT_TARGET_SEC", "").strip()
+if _SEC.replace(".", "", 1).isdigit() and float(_SEC) > 0:
+    _c = float(_SEC) * 8.0 * _rate_mult()  # 한국어 약 8자/초 (속도 설정 반영)
+    TARGET_MIN_CHARS = max(60, int(round(_c * 0.88, -1)))
+    TARGET_MAX_CHARS = max(TARGET_MIN_CHARS + 20, int(round(_c * 1.12, -1)))
+    MIN_CHARS = int(TARGET_MIN_CHARS * 0.8)
+
 
 # ============================================================
 # DB
@@ -209,8 +222,8 @@ def build_prompt(fact):
 8. 법률, 벌금, 날짜, 수치 등은 제공된 자료에 있는 범위에서만 말합니다.
 9. 자료의 내용을 단순히 복사하지 말고 쇼츠 내레이션처럼 자연스럽게 연결합니다.
 10. 짧은 문장을 사용해 TTS로 읽기 좋게 만듭니다.
-11. 전체 분량은 반드시 350~500자 사이를 목표로 합니다.
-12. 최소 280자보다 짧게 작성하지 마세요.
+11. 전체 분량은 반드시 {TARGET_MIN_CHARS}~{TARGET_MAX_CHARS}자 사이를 목표로 합니다.
+12. 최소 {MIN_CHARS}자보다 짧게 작성하지 마세요.
 13. 자료가 짧더라도 제공된 사실의 의미와 맥락을 자연스럽게 풀어 설명하여 분량을 확보하세요.
 14. 없는 사실을 추가해서 분량을 채우지 마세요.
 15. 구독, 좋아요, 알림 설정, 댓글을 요청하는 말은 절대 넣지 않습니다. 마지막은 여운이 남는 한 문장이나 반전으로 끝내고, 가능하면 첫 문장의 궁금증과 이어지게 해서 다시 보고 싶게 만듭니다.
@@ -590,7 +603,7 @@ def build_factcheck_prompt(fact, narration):
 - 사실이 아니라고 판단되는 내용
 
 한정어(많은/일부/대체로)와 분명한 범위로 고치거나, 고칠 수 없으면 해당 내용을 삭제하세요.
-문체(존댓말, 짧은 문장, 이모지 없음)와 분량(350~500자)은 유지하고 구독/좋아요 요청은 넣지 마세요.
+문체(존댓말, 짧은 문장, 이모지 없음)와 분량({TARGET_MIN_CHARS}~{TARGET_MAX_CHARS}자)은 유지하고 구독/좋아요 요청은 넣지 마세요.
 이미 정확하고 차분하면 원문을 그대로 두고 issues를 빈 배열로 두세요.
 
 순수 JSON 객체만 출력:

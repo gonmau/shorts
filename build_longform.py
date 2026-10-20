@@ -3,7 +3,7 @@
 
 - 소재 선택: --mode auto (영상이 끝난 소재 중 아직 롱폼에 안 쓴 것을 번호순으로 / --theme 으로 분야 지정)
              --mode manual --indexes "109,110,115-118"
-- 개수 제한: 3~10개 (--min/--max), 전체 예상 길이 15분 이하
+- 개수 제한: 3~30개 (--min/--max), 전체 예상 길이 40분 이하
 - 음성/이미지는 소재마다 다시 만든다(Actions에는 예전 파일이 없으므로). facts_db.json 은 바꾸지 않아도 되고 커밋하지 않는다.
 - 결과: longform_out/longform_<번호>.mp4 / .png(썸네일) / .txt(제목+설명+챕터), 기록은 longform_db.json (쇼츠 DB와 별도)
 """
@@ -32,7 +32,7 @@ PANEL_X = 1120                 # 오른쪽 패널 시작 x
 PANEL_W = W - PANEL_X - 60
 BG = (250, 250, 252)
 COLOR2 = (200, 0, 255)
-MIN_N, MAX_N, MAX_MIN = 3, 10, 15
+MIN_N, MAX_N, MAX_MIN = 3, 30, 40   # 개수 3~30, 예상 길이 40분 이하
 IS_EN = (BASE / "generate_topics.py").exists()
 
 
@@ -66,6 +66,15 @@ def parse_indexes(text):
 
 
 def est_seconds(item):
+    # 음성이 이미 만들어져 있으면 실제 길이(타이밍 파일의 마지막 문장 끝)를 사용
+    try:
+        tp = item.get("timing_path_v2")
+        if tp and os.path.exists(tp):
+            sents = json.load(open(tp, encoding="utf-8")).get("sentences") or []
+            if sents:
+                return float(sents[-1]["end"]) + 0.5
+    except Exception:
+        pass
     n = len(re.sub(r"\s+", "", str(item.get("narration", ""))))
     return n / (6.0 if not IS_EN else 13.0)   # 한국어 약 6자/초, 영어 약 13자/초(공백 제외)
 
@@ -114,6 +123,11 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
     return chosen
 
 
+def subtitles_mode():
+    import subtitles
+    return subtitles.caption_mode()
+
+
 # ---------------------------------------------------------------- 재료 준비
 def run_py(*args):
     print("  $ python", " ".join(args), flush=True)
@@ -123,6 +137,8 @@ def run_py(*args):
 
 def prepare_assets(idx):
     """음성 + 이미지를 (다시) 만든다. 이미 있으면 각 스크립트가 알아서 건너뜀/재사용."""
+    # 대본을 고쳐서 이미지 검색어가 지워진 소재는 새 대본 기준으로 검색어를 다시 만든다 (이미 있으면 그대로)
+    run_py("generate_script.py", "--extras-only", "--index", str(idx))
     ok = run_py("generate_tts.py", "--index", str(idx))
     run_py("fetch_images.py", "--index", str(idx))   # 키가 없으면 대체 카드로 진행
     return ok
@@ -196,6 +212,9 @@ def segment_background(no, total, title1, title2, country, credit, channel, hand
     return img
 
 
+SEG_CUES = {}   # 구간 번호 -> 자막 조각 (롱폼 SRT 만들 때 사용)
+
+
 def build_segment(idx, item, no, total, out_path, channel, handle, avatar):
     import build_video as B
     import subtitles
@@ -225,7 +244,9 @@ def build_segment(idx, item, no, total, out_path, channel, handle, avatar):
     caps = []
     stats = [subtitles.region_stats(im) for im in srcs]
     cap_y = BOX[1] + 1000 - subtitles.CAP_H - 18
-    for st, en, text in subtitles.make_cues(timings, dur):
+    cues = subtitles.make_cues(timings, dur)
+    SEG_CUES[no] = cues
+    for st, en, text in (cues if subtitles.caption_mode() != "srt" else []):   # 롱폼은 핵심 문구 방식이 없어 highlight도 대본 자막으로
         idxs = [k for k in range(n_scenes) if starts[k] < en and (k == n_scenes - 1 or starts[k + 1] > st)] or [0]
         luma = max(stats[k][0] for k in idxs)
         std = max(stats[k][1] for k in idxs)
@@ -432,6 +453,16 @@ def main():
     desc = make_description(db, members, durations, intro_len, title)
     (OUT / f"longform_{lf_id:03d}.txt").write_text(f"{title}\n\n{desc}\n", encoding="utf-8")
     make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png")
+    if True:
+        import subtitles as _sub
+        t_off, n_no, chunks = intro_len, 1, []
+        for no, dur in enumerate(durations, start=1):
+            cs = SEG_CUES.get(no, [])
+            chunks.append(_sub.to_srt(cs, offset=t_off, start_no=n_no))
+            n_no += len(cs)
+            t_off += dur
+        (OUT / f"longform_{lf_id:03d}.srt").write_text("\n".join(c for c in chunks if c), encoding="utf-8")
+        print(f"자막 파일(SRT): longform_{lf_id:03d}.srt")
 
     lf_db.append({
         "id": lf_id, "mode": args.mode, "theme": args.theme, "members": members, "title": title,

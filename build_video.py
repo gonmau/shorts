@@ -28,6 +28,7 @@ from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
 from common import split_sentences, strip_marks, visual_dir, credit_label
 from scenes import scene_groups
 import subtitles
+import overlays
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -645,7 +646,8 @@ def build_one(idx, item):
         .set_position((IMG_BOX[0], IMG_BOX[1]))
     )
 
-    caption_mode = os.environ.get("CAPTION_MODE", "script")  # script=대본 자막(기본), highlight=예전 핵심 문구
+    # script=영상에 대본 자막(기본) / srt=.srt 파일만(영상엔 자막 없음) / both=둘 다 / highlight=예전 핵심 문구
+    caption_mode = subtitles.caption_mode()
     scrim_arr = make_scrim() if caption_mode == "highlight" else make_scrim(h=300, max_alpha=60)
     scrim = (
         ImageClip(scrim_arr)
@@ -653,12 +655,12 @@ def build_one(idx, item):
         .set_position((IMG_BOX[0], IMG_BOX[3] - scrim_arr.shape[0]))
     )
 
-    base = CompositeVideoClip(
-        [bg_clip] + scene_clips + [scrim, corner],
-        size=(W, H),
-    ).set_duration(audio_duration)
+    layers = [bg_clip] + scene_clips + ([] if caption_mode == "srt" else [scrim]) + [corner]
+    base = CompositeVideoClip(layers, size=(W, H)).set_duration(audio_duration)
 
     caption_clips = []
+    all_cues = subtitles.make_cues(timings, audio_duration)   # 대본 자막 조각 (SRT는 어떤 방식이든 같이 만든다)
+    srt_text = subtitles.to_srt(all_cues)
     if caption_mode == "highlight":
         # 핵심 문구 (예전 방식)
         cues = highlight_cues(item, timings, audio_duration, script)
@@ -676,7 +678,7 @@ def build_one(idx, item):
         # 대본 자막: 음성 속도에 맞춰 2줄 이내 조각으로 나눠 보여주고, 사진 밝기에 따라 패널 진하기를 조절
         stats = [subtitles.region_stats(im) for im in srcs]
         cap_y = IMG_BOX[3] - subtitles.CAP_H - 18
-        for start, end, text in subtitles.make_cues(timings, audio_duration):
+        for start, end, text in (all_cues if subtitles.burn_in(caption_mode) else []):
             idxs = [k for k in range(n_scenes)
                     if starts[k] < end and (k == n_scenes - 1 or starts[k + 1] > start)] or [0]
             luma = max(stats[k][0] for k in idxs)
@@ -690,8 +692,13 @@ def build_one(idx, item):
             )
             caption_clips.append(cc)
 
+    # 직접 넣은 문구(overlays): UI '문구 넣기' 탭에서 입력한 시점/위치/효과대로 자막 위에 합성
+    overlay_clips = overlays.make_clips(item.get("overlays"), audio_duration)
+    if overlay_clips:
+        print(f"문구 오버레이 {len(item.get('overlays') or [])}개 적용")
+
     final = CompositeVideoClip(
-        [base] + caption_clips,
+        [base] + caption_clips + overlay_clips,
         size=(W, H),
     ).set_duration(audio_duration)
 
@@ -700,6 +707,11 @@ def build_one(idx, item):
     VIDEO_DIR.mkdir(exist_ok=True)
 
     out_path = VIDEO_DIR / f"{idx:04d}_{safe_filename(country)}.mp4"
+    if True:
+        srt_path = out_path.with_suffix(".srt")
+        srt_path.write_text(srt_text, encoding="utf-8")
+        item["srt_path"] = str(srt_path)
+        print(f"자막 파일(SRT): {srt_path}")
 
     print(f"렌더링 시작: {out_path}")
 
@@ -737,7 +749,7 @@ def build_one(idx, item):
         except Exception:
             pass
 
-    for c in caption_clips:
+    for c in caption_clips + overlay_clips:
         try:
             c.close()
         except Exception:
