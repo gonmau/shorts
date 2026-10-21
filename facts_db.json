@@ -11301,7 +11301,43 @@
     "verify_note": "Overview of gun laws by nation",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아르헨티나에서는 사냥, 스포츠 사격, 자기방어 등 각각 다른 총기 면허가 존재한다? 네, 맞습니다. 총기 면허는 사냥용, 스포츠용, 자기방어용, 수집용, 은폐 휴대용 등으로 구분됩니다. 각 면허마다 신청 자격, 검증 절차, 보유 권한이 다릅니다. 예를 들어 사냥 면허는 사냥 경험과 안전 교육이 필요하고, 스포츠 사격 면허는 대회 참가 기록이 요구됩니다. 하지만 같은 사람이라도 모든 면허를 동시에 취득하기는 거의 불가능합니다. 이는 아르헨티나뿐 아니라 전 세계 여러 국가에서 흔히 볼 수 있는 총기 규제 방식입니다. 결국 한 개인이 한 면허만을 목표로 하는 것이 현실적이라고 할 수 있겠네요.",
+    "title_line1": "아르헨티나 총기 면허",
+    "title_line2": "얼마나 다를까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "다양한 *면허* 존재"
+      },
+      {
+        "s": 3,
+        "text": "*면허* 종류 구분"
+      },
+      {
+        "s": 4,
+        "text": "각 *조건* 다름"
+      },
+      {
+        "s": 6,
+        "text": "모두 *동시* 불가"
+      },
+      {
+        "s": 8,
+        "text": "한 *면허* 목표"
+      }
+    ],
+    "image_queries": [
+      "Argentina gun license documents",
+      "thumbs up hand",
+      "Argentina gun license categories",
+      "Argentina gun permit forms",
+      "Argentina hunting safety training",
+      "single gun license",
+      "global gun regulations",
+      "single firearm license goal"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -11316,7 +11352,40 @@
     "verify_note": "Nine Emperor Gods Festival",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 그곳에서 매년 9일간 열리는 구황제신축제, 즉 Nine Emperor Gods Festival을 만나보세요. 이 도교 의식은 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라 축제가 가장 활발히 진행돼요. 매일 새벽부터 사원 앞에 긴 행렬이 서고, 색색의 제단과 향이 도시 곳곳을 채웁니다. 태국에서는 ‘테사칸 킨체’라는 이름으로도 알려져 있죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 즉, 퍼라낙인 공동체가 밀집한 곳에만 전해지는 특별한 문화라는 점, 기억해 주세요. 이렇게 지역에 따라 크게 차이가 나는 축제, 여러분도 한 번 직접 체험해보고 싶지 않으신가요?",
+    "title_line1": "푸껏 구황제신축제",
+    "title_line2": "도시가 뒤덮힌다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*뒤덮는* 축제"
+      },
+      {
+        "s": 2,
+        "text": "*구황제* 축제"
+      },
+      {
+        "s": 4,
+        "text": "*퍼라낙인* 절반"
+      },
+      {
+        "s": 5,
+        "text": "새벽 *행렬* 가득"
+      }
+    ],
+    "image_queries": [
+      "Phuket street festival",
+      "Nine Emperor Gods Festival Phuket",
+      "Taoist ceremony Phuket",
+      "Peranakan community Phuket",
+      "Dawn procession temple Phuket",
+      "Tesakan Kin Che celebration",
+      "Quiet town festival",
+      "Peranakan cultural hub",
+      "Tourist experiencing festival"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -11331,7 +11400,45 @@
     "verify_note": "Three-color fabric belief",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "태국 거리의 나무에 걸린 삼색 천, 그 이유가 뭘까? 여러분도 궁금하시죠. 태국에서는 큰 나무에 노랑, 핑크, 초록, 흰색, 빨강, 파랑 등 여러 색을 겹쳐 감습니다. 이 색들은 전통, 영성, 역사를 상징하고, 경우에 따라 일곱 색이 함께 쓰이기도 합니다. 천 주위엔 음식이나 동물 조각을 놓아 풍요와 보호를 기원합니다. 흥미로운 점은, 이 색채 조합이 힌두교와 깊은 연관이 있다는 사실인데, 많은 사람은 눈치채지 못합니다. 힌두교에서 각 색은 신과 우주의 원리를 나타내며, 그 의미가 태국의 삼색 천 신앙에 스며든 것이죠. 다만 색상의 종류와 배치는 지역마다 차이가 있을 수 있습니다. 그래서 같은 도시에서도 색 조합이 조금씩 다를 수 있답니다. 결국, 나무에 매달린 그 화려한 천은 단순한 장식이 아니라, 문화와 종교가 뒤섞인 살아있는 이야기라는 점, 기억해 주세요.",
+    "title_line1": "태국 거리 나무 천",
+    "title_line2": "왜 그렇게 달았을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*삼색* 천, 이유는?"
+      },
+      {
+        "s": 3,
+        "text": "*색*으로 전통·영성"
+      },
+      {
+        "s": 5,
+        "text": "*풍요*·보호 조각"
+      },
+      {
+        "s": 6,
+        "text": "*힌두교*와 연결"
+      },
+      {
+        "s": 10,
+        "text": "*문화*·종교 이야기"
+      }
+    ],
+    "image_queries": [
+      "Thai three-color fabric tree",
+      "Tree with hanging fabric Thailand",
+      "Colorful fabric Thai tree tradition",
+      "Seven colored fabric Thailand",
+      "Food and animal sculpture Thailand",
+      "Hindu influence Thai fabric",
+      "Thai fabric religious symbols",
+      "Regional fabric color variations Thailand",
+      "City fabric color differences Thailand",
+      "Cultural religious story Thailand"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "Padstow(패드스타우)에서 매년 5월 1일 열리는 'Obby 'Oss 축제",
@@ -11346,7 +11453,33 @@
     "verify_note": "'Obby 'Oss festival",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:22.935974+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "밤 12시, 마을 전체가 조용해지면 거대한 말 모양 인형이 모습을 드러냅니다. 바로 영국 코른월의 패드스타우 마을에서 매년 5월 1일 새벽에 열리는 ‘Obby ’Oss’ 축제의 시작이죠. 축제는 전날인 4월 30일 자정, 골든 라이온 인 앞에서 ‘Night Song’이라는 노래를 부르며 시작됩니다. 새벽이 되면 마을은 녹색과 꽃으로 휘감긴 메이폴 주변으로 변하고, 두 개의 행진대가 ‘Obby ’Oss’를 끌고 돌아다닙니다. 특히 남성 무용수들은 ‘Old’와 ‘Blue Ribbon’ 혹은 ‘Methodist’라는 두 종류의 ‘Obby ’Oss’ 중 하나로 분장합니다. 이렇게 한 해에 한 번, 오직 패드스타우에서만 이어지는 전통은 밤의 정적을 깨고 말 인형이 나타나는 순간, 다시 찾고 싶어지는 신비로운 매력을 남깁니다.",
+    "title_line1": "패드스타우 밤 12시",
+    "title_line2": "거대한 말 인형 등장",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*말* 인형이 나타남"
+      },
+      {
+        "s": 2,
+        "text": "5월1일 새벽 *축제*"
+      },
+      {
+        "s": 4,
+        "text": "녹색 꽃 *메이폴*"
+      }
+    ],
+    "image_queries": [
+      "horse puppet at night",
+      "Padstow May 1 festival",
+      "Golden Lion inn night",
+      "green flower meadow",
+      "Obby Oss costume",
+      "horse puppet tradition"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "전 세계 여러 지역에서 주식으로 쓰이는 뿌리채소 타로",
@@ -11361,7 +11494,38 @@
     "verify_note": "Taro",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:22.935974+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "아프리카부터 동남아까지, 밥보다 먼저 나오는 뿌리채소가 있다! 바로 타로, 학명은 Colocasia esculenta이며 ‘다시엔’이라고도 불리는 식물입니다. 타로는 아라세아과에 속하고, 알뿌리뿐 아니라 잎, 줄기, 잎자루까지 모두 식용으로 활용됩니다. 이처럼 활용 부위가 다양해 한 번에 여러 요리를 만들 수 있죠. 흥미로운 점은 타로가 아프리카, 카리브해, 오세아니아, 동아시아·동남아·남아시아 등 여러 문화권에서 주식처럼 자리 잡고 있다는 것입니다. 하지만 타로가 주식인 지역은 이들 문화권에 한정됩니다. 이렇게 세계 곳곳에서 중요한 식재료가 되면서도, 여전히 그 한계 안에서만 사랑받고 있다는 점, 생각해 보셨나요?",
+    "title_line1": "사모아 타로가 주식?",
+    "title_line2": "아프리카부터동남아까지",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "먼저 나오는 *뿌리채소*"
+      },
+      {
+        "s": 2,
+        "text": "*타로*, ‘다시엔’"
+      },
+      {
+        "s": 5,
+        "text": "여러 문화권의 *주식*"
+      },
+      {
+        "s": 7,
+        "text": "한계 안에서만 *사랑*"
+      }
+    ],
+    "image_queries": [
+      "taro root emerging soil",
+      "taro plant Colocasia esculenta",
+      "taro leaves stem corm",
+      "taro dishes variety",
+      "taro staple food cultures",
+      "taro cultivation regions",
+      "taro limited popularity"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "Coldplay(콜드플레이)의 8번째 정규 앨범 'Everyday Life'",
@@ -11376,7 +11540,34 @@
     "verify_note": "Everyday Life (Coldplay album)",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:22.935974+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "앨범을 틀면 실제 일출과 일몰 소리가 들린다? Coldplay가 2019년 11월 22일에 공개한 더블 정규 ‘Everyday Life’는 바로 그 현장을 담아냈습니다. 첫 번째 디스크는 ‘Sunrise’, 두 번째 디스크는 ‘Sunset’이라는 제목으로, 각각 일출과 일몰을 테마로 구성돼 있죠. 발매와 동시에 요르단 암만 시타델에서 일출·일몰에 맞춰 진행된 ‘Everyday Life – Live in Jordan’ 공연과 연결돼, 현장의 빛과 소리를 그대로 옮겨 놓은 듯합니다. 앨범 전체가 하루의 시작과 끝, 즉 일출과 일몰이라는 자연 현상을 음악과 사운드로 구분해 담아냈다는 점이 가장 흥미로운 포인트입니다. 이 독특한 구성이 바로 ‘Everyday Life’만의 특징이며, 다른 앨범에서는 찾아볼 수 없는 경험이죠. 그래서 귀에 익숙한 멜로디 뒤에 숨은 실제 새벽과 석양의 소리를 떠올리면, 마치 시간 여행을 하는 듯한 여운이 남습니다.",
+    "title_line1": "폴란드 콜드플레이 앨범",
+    "title_line2": "일출·일몰 소리 들릴까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "일출·일몰 *소리*"
+      },
+      {
+        "s": 3,
+        "text": "일출·일몰 *테마*"
+      },
+      {
+        "s": 5,
+        "text": "하루 시작·끝 *음악*"
+      }
+    ],
+    "image_queries": [
+      "sunrise horizon",
+      "Everyday Life album artwork",
+      "sunset horizon",
+      "Everyday Life live Jordan sunrise",
+      "sunrise sunset speakers",
+      "Everyday Life album vinyl",
+      "Everyday Life time travel sunrise"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "친구에게 행운을 주는 입맞춤 문화",
@@ -11391,7 +11582,40 @@
     "verify_note": "Kissing traditions",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:47.920029+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "친구에게 행운을 주려면 입술을 맞춘다?! 터키의 몇몇 사회에서는 이렇게 입맞춤을 합니다. 친구에게 “행운을 빌어”라며 가볍게 입술을 맞추면, 기쁨과 축복의 뜻을 전한다는 것이죠. 이때 입맞춤은 단순한 인사나 애정 표현을 넘어, 특별히 좋은 일만 가득하길 바라는 의미를 담고 있습니다. 흥미로운 점은 입술을 대는 부위가 꼭 입만은 아니라는 겁니다. 손이나 머리에도 살짝 입을 대며 행운을 전하는 경우가 있어, 상황에 따라 다양한 방식으로 축복을 나눕니다. 하지만 이런 관습은 터키 전체가 아닌 일부 사회에만 존재한다는 점을 기억해야 합니다. 보편적인 습관은 아니니, 문화적 차이를 존중하며 바라보는 것이 중요하겠죠. 결국, 작은 입맞춤 하나가 친구에게 큰 행운을 선물할 수 있다는 점, 생각해볼 만하지 않나요?",
+    "title_line1": "터키 친구에게 행운",
+    "title_line2": "입술 한 번이면?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "행운을 *입맞춤*한다?"
+      },
+      {
+        "s": 3,
+        "text": "친구에 *축복* 전해"
+      },
+      {
+        "s": 5,
+        "text": "*입술*만이 아니야"
+      },
+      {
+        "s": 6,
+        "text": "손·머리에도 *입*"
+      }
+    ],
+    "image_queries": [
+      "kiss for luck",
+      "Turkish traditional kiss",
+      "blessing friend kiss",
+      "Turkish kiss good fortune",
+      "not just lips kiss",
+      "kiss hand head",
+      "Turkish community tradition",
+      "respect cultural differences",
+      "small kiss big luck"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "Offal(오프얼)도 고급 요리와 일상 식탁에 동시에 존재한다",
@@ -11406,7 +11630,28 @@
     "verify_note": "Offal",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:51.553484+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "내가 오늘 먹은 건… 내장! 조지아에서는 ‘오프얼’이라 부르는 동물의 내부 장기가 일상 식탁과 고급 요리 모두에 등장합니다. 일부 문화에서는 그냥 반찬처럼 흔히 쓰지만, 또 다른 문화에서는 푸아그라나 파테처럼 섬세하게 가공해 특별한 맛을 내죠. 특히 조지아 전통 명절엔 장을 활용한 요리가 빠지지 않아, 가족이 모여 함께 나누는 풍습이 이어집니다. 물론 이런 관습은 조지아 내 특정 지역과 문화권에 한정된 사례이며, 모든 사람이 같은 방식으로 즐기는 것은 아닙니다. 내장이 이렇게 두 얼굴을 가진다는 사실, 생각보다 더 흥미롭지 않나요?",
+    "title_line1": "조지아의 오프얼 일상",
+    "title_line2": "고급 요리엔 왜?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*내장*이 오늘 주인공"
+      },
+      {
+        "s": 2,
+        "text": "*오프얼* 일상"
+      },
+      {
+        "s": 3,
+        "text": "고급 요리엔 *파테*"
+      },
+      {
+        "s": 4,
+        "text": "명절엔 *내장* 풍습"
+      }
+    ]
   },
   {
     "topic": "할로윈 밤, 현관등 하나가 사탕을 부른다",
@@ -11421,7 +11666,40 @@
     "verify_note": "Trick-or-treating",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:51.553484+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "현관등을 켜면 사탕이 온다? 할로윈 밤, 10월 31일이면 아이들은 “Trick‑or‑treat!” 외치며 동네를 누볐습니다. 집 앞에 사탕을 기대하며 문을 두드리죠. 그때 집 안에 걸린 장식이 사탕을 줄 준비가 됐다는 신호가 됩니다. 특히 현관등을 켜 두면, “여긴 사탕을 줍니다”라는 보편적인 표시가 되죠. 그래서 많은 가정이 어두운 밤에 등불을 밝히고, 아이들에게 달콤한 간식을 건네줍니다. 그런데 흥미로운 점은, 일부 지역에서는 사탕 대신 현금을 건네는 문화도 있다는 사실입니다. 물론 이런 풍습은 할로윈을 기념하는 일부 국가에만 널리 퍼져 있죠. 현관등이 사탕을 부른다, 혹은 현금을 부른다… 어느 쪽이든, 그 불빛이 아이들의 웃음소리를 끌어내는 순간은 변함없습니다.",
+    "title_line1": "아일랜드 할로윈 밤",
+    "title_line2": "불빛이 사탕을 부른다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "현관등에 *사탕*?"
+      },
+      {
+        "s": 5,
+        "text": "*현관등*은 사탕신호"
+      },
+      {
+        "s": 7,
+        "text": "*현금*도 건네는 할로윈"
+      },
+      {
+        "s": 9,
+        "text": "*웃음* 부르는 불빛"
+      }
+    ],
+    "image_queries": [
+      "doorway light candy",
+      "Irish kids trick-or-treating",
+      "children knocking door candy",
+      "Irish Halloween decorations",
+      "door lantern candy signal",
+      "Irish Halloween lantern sweets",
+      "Halloween cash giveaway",
+      "Halloween tradition Ireland",
+      "laughing light Halloween"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "크리스마스 카프(Christmas carp) 목욕탕 보관 비밀",
@@ -11436,7 +11714,34 @@
     "verify_note": "Christmas carp",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:59.234598+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "크리스마스 전날, 욕조에 물고기가 들어가면 무슨 일이 일어날까요? 중부 유럽, 특히 체코에서는 크리스마스 카프를 준비하기 전에 물고기를 욕조에 담가 진흙 맛을 없앤답니다. 이렇게 물에 담가 두면 비린내가 사라지고, 이후에 튀기거나 게필테 피시 같은 요리로 바꿔 먹게 되죠. 흥미로운 점은 남은 뼈를 과일 나무에 심어 두면 봄에 더 풍성한 열매를 기대할 수 있다는 겁니다. 또, 물고기의 비늘을 보관하면 행운을 가져온다고 전해지죠. 다만, 이 전통은 일부 지역에만 전해지는 관습이라 모든 가정이 따르는 것은 아닙니다. 욕조에 들어간 카프가 남긴 작은 흔적이, 새해에 행운과 풍요를 불러올지도 모른다는 생각, 떠오르시나요?",
+    "title_line1": "체코 크리스마스 카프",
+    "title_line2": "욕조에 물고기, 행운?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "욕조에 *카프*?"
+      },
+      {
+        "s": 2,
+        "text": "진흙맛 *제거* 비법"
+      },
+      {
+        "s": 4,
+        "text": "뼈를 *나무*에 심어"
+      }
+    ],
+    "image_queries": [
+      "carp in bathtub",
+      "carp soaking tub",
+      "soaked carp without odor",
+      "fish bones in tree",
+      "fish scales jar",
+      "Czech kitchen tradition",
+      "carp bathtub trace"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "헌법재판소(ศาลรัฐธรรมนูญ)의 2006년 쿠데타 후 소멸",
