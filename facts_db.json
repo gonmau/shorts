@@ -10987,7 +10987,7 @@
     "verify_note": "General Data Protection Regulation",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:21.759321+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "당신의 데이터, 유럽 밖에서도 감시당한다?  \nEU와 EEA 안에서 개인 정보를 보호하기 위해 만든 GDPR은, 개인이 자신의 정보에 대해 더 큰 통제권을 갖게 합니다. 기업 입장에서도 국제 비즈니스 규제가 간소화돼, 데이터를 어떻게 쓰고 어디로 옮길지 명확히 해야 합니다. 특히 EU·EEA 외부로 데이터를 이전할 때도 엄격히 관리됩니다.  \n\n흥미로운 점은, GDPR이 이전의 데이터 보호 지침(1995년 지침) 95/46/EC을 완전히 대체하면서, 복잡했던 용어들을 쉽게 바꿨다는 것입니다. 그래서 이제는 “개인정보 보호”라는 말을 들으면 바로 GDPR을 떠올리게 되죠.  \n\n하지만 이 규정은 EU·EEA 회원국에만 직접 적용됩니다. 그 외 지역에서는 직접적인 효력은 없지만, EU와 거래할 경우 간접적으로 영향을 받을 수 있습니다. 결국, 우리 데이터가 어디에 있든, 유럽의 눈길을 피하기는 어려워졌다는 점, 생각해 보셨나요?",
     "title_line1": "노르웨이와 개인정보보호",
     "title_line2": "데이터도 유럽 감시?",
@@ -11012,7 +11012,69 @@
       "GDPR document folder",
       "Norwegian fjord landscape",
       "surveillance camera lens"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0179_노르웨이_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0179_노르웨이_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "locked laptop screen",
+      "GDPR compliance checklist",
+      "GDPR logo badge",
+      "GDPR document folder",
+      "Norwegian fjord landscape",
+      "surveillance camera lens"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Danny144",
+        "page": "https://pixabay.com/photos/laptop-screen-table-plant-clock-5444931/",
+        "id": 5444931
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Dooffy",
+        "license": "CC0",
+        "title": "Gdpr Europe.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Gdpr_Europe.jpg",
+        "id": "c:77165450"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "woodengrafis",
+        "page": "https://pixabay.com/photos/mountains-logo-badge-adventure-6736975/",
+        "id": 6736975
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Angelo_Giordano",
+        "page": "https://pixabay.com/photos/collector-documents-office-folder-3930337/",
+        "id": 3930337
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Peaktural_photo",
+        "page": "https://pixabay.com/photos/norway-flag-mountain-fjord-travel-7916632/",
+        "id": 7916632
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Peggy_Marco",
+        "page": "https://pixabay.com/photos/camera-monitoring-security-1124585/",
+        "id": 1124585
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0179_노르웨이.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0179_노르웨이.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "영국(United Kingdom) 수확 축제(Harvest Festival)",
@@ -11075,7 +11137,36 @@
     "verify_note": "Tsagaan Sar",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:27.406570+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "새해 첫날, 하얀 달을 보고 사람들이 갑자기 멈춰 서는 이유가 궁금하시죠?  \n\n몽골에서는 음력 새해 첫날을 “Tsagaan Sar(Цагаан сар)”라고 부릅니다. 가족과 친척, 친구들을 모아 새해 인사를 나누는 중요한 날이죠. 이때 전통 음식들을 함께 나누며 따뜻한 정을 전합니다.  \n\n하지만 축하만 있는 건 아닙니다. Tsagaan Sar에는 샤머니즘적인 의식이 섞여 있어, 축하와 동시에 영적 정화를 위한 의식이 진행됩니다. 그래서 사람들은 새해를 맞이하며 과거의 나쁜 기운을 씻어낸다고 믿습니다.  \n\n이 전통은 주로 몽골과 일부 투르크계 민족이 기념합니다. 하얀 달빛 아래, 새해를 맞이하는 그 순간이 바로 영혼을 정화하는 특별한 시간이라는 점, 기억해 주세요.  \n\n다음 해에도 같은 달빛이 뜨면, 또 어떤 이야기가 펼쳐질지 기대되지 않나요?",
+    "title_line1": "몽골 새해 첫날",
+    "title_line2": "왜 사람들은 멈춰?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "하얀 달에 *멈춤*"
+      },
+      {
+        "s": 3,
+        "text": "*가족* 모여 새해인사"
+      },
+      {
+        "s": 6,
+        "text": "*샤머니즘* 의식"
+      },
+      {
+        "s": 9,
+        "text": "달빛 아래 *정화*"
+      }
+    ],
+    "image_queries": [
+      "white moon over Mongolian steppe",
+      "Mongolian family celebrating New Year",
+      "Mongolian Tsagaan Sar feast",
+      "Mongolian shamanic New Year ceremony",
+      "moonlit purification ceremony Mongolia",
+      "Mongolian full moon night"
+    ]
   },
   {
     "topic": "아르헨티나(Argentina) 시민을 위한 별도 총기 면허 종류",
