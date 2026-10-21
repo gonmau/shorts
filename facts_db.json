@@ -11089,7 +11089,7 @@
     "verify_note": "Harvest festival",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:27.406570+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "교회 안에 과일 바구니가 가득! 왜 그런지 궁금하시죠? 영국에서는 수확이 끝나는 가을에 가족과 이웃이 모여 풍성한 곡식을 나눕니다. 전통적으로 교회 안을 과일과 식품으로 가득 채우고, 찬송가를 부르며 감사 기도를 올려요. 이때 사람들은 서로 손에 든 사과나 배를 나누며 한 해의 수확을 축하합니다. 흥미로운 점은, 이 풍성한 의식이 이교도 시절부터 이어져 온 오래된 감사 의식이라는 사실입니다. 즉, 오늘날의 교회 행사도 과거 토착 문화와 연결된 것이죠. 다만 영국 전역이 아닌 일부 지역에서만 아직 활발히 열리고 있습니다. 과일 바구니가 가득한 교회 안, 그 안에 담긴 감사의 의미를 떠올리면, 우리도 작은 풍요를 나눠보고 싶어지지 않나요?",
     "title_line1": "영국 수확 축제 현장",
     "title_line2": "과일 바구니 이유?",
@@ -11122,7 +11122,67 @@
       "pagan harvest altar",
       "English countryside harvest festival",
       "church interior fruit basket"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0180_영국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0180_영국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "British church interior fruit basket",
+      "British church hymn prayer",
+      "British people sharing apples pears",
+      "pagan harvest altar",
+      "English countryside harvest festival",
+      "church interior fruit basket"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/plums-fruits-basket-fruit-basket-1649316/",
+        "id": 1649316
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Ralf1403",
+        "page": "https://pixabay.com/photos/book-melody-song-religion-7642093/",
+        "id": 7642093
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "diapicard",
+        "page": "https://pixabay.com/photos/fruits-fresh-basket-fresh-fruits-1114060/",
+        "id": 1114060
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Desertrose7",
+        "page": "https://pixabay.com/photos/candle-illuminated-light-altar-3133631/",
+        "id": 3133631
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "lumix2004",
+        "page": "https://pixabay.com/photos/apples-orchard-apple-trees-1873078/",
+        "id": 1873078
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/plums-fruits-basket-fruit-basket-1649602/",
+        "id": 1649602
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0180_영국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0180_영국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "몽골(Mongolia) 새해 첫날 축제 Tsagaan Sar(Цагаан сар)",
@@ -11137,7 +11197,7 @@
     "verify_note": "Tsagaan Sar",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:27.406570+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "새해 첫날, 하얀 달을 보고 사람들이 갑자기 멈춰 서는 이유가 궁금하시죠?  \n\n몽골에서는 음력 새해 첫날을 “Tsagaan Sar(Цагаан сар)”라고 부릅니다. 가족과 친척, 친구들을 모아 새해 인사를 나누는 중요한 날이죠. 이때 전통 음식들을 함께 나누며 따뜻한 정을 전합니다.  \n\n하지만 축하만 있는 건 아닙니다. Tsagaan Sar에는 샤머니즘적인 의식이 섞여 있어, 축하와 동시에 영적 정화를 위한 의식이 진행됩니다. 그래서 사람들은 새해를 맞이하며 과거의 나쁜 기운을 씻어낸다고 믿습니다.  \n\n이 전통은 주로 몽골과 일부 투르크계 민족이 기념합니다. 하얀 달빛 아래, 새해를 맞이하는 그 순간이 바로 영혼을 정화하는 특별한 시간이라는 점, 기억해 주세요.  \n\n다음 해에도 같은 달빛이 뜨면, 또 어떤 이야기가 펼쳐질지 기대되지 않나요?",
     "title_line1": "몽골 새해 첫날",
     "title_line2": "왜 사람들은 멈춰?",
@@ -11166,7 +11226,67 @@
       "Mongolian shamanic New Year ceremony",
       "moonlit purification ceremony Mongolia",
       "Mongolian full moon night"
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0181_몽골_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0181_몽골_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "white moon over Mongolian steppe",
+      "Mongolian family celebrating New Year",
+      "Mongolian Tsagaan Sar feast",
+      "Mongolian shamanic New Year ceremony",
+      "moonlit purification ceremony Mongolia",
+      "Mongolian full moon night"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "MartinPhotography",
+        "page": "https://pixabay.com/photos/theatre-eve-moon-lighting-5368958/",
+        "id": 5368958
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/family-parents-kids-mom-sons-7638962/",
+        "id": 7638962
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "CaiHuuThanh",
+        "page": "https://pixabay.com/photos/mongolian-girl-traditional-clothes-7336271/",
+        "id": 7336271
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/fireworks-sylvester-new-years-day-4734640/",
+        "id": 4734640
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/frozen-landscape-cold-sunrise-file-2376303/",
+        "id": 2376303
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "rkarkowski",
+        "page": "https://pixabay.com/photos/moon-full-moon-sky-night-sky-lunar-1859616/",
+        "id": 1859616
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0181_몽골.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0181_몽골.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "아르헨티나(Argentina) 시민을 위한 별도 총기 면허 종류",
