@@ -8,6 +8,7 @@
 - 결과: longform_out/longform_<번호>.mp4 / .png(썸네일) / .txt(제목+설명+챕터), 기록은 longform_db.json (쇼츠 DB와 별도)
 """
 import argparse
+from scenes import item_scene_count
 import json
 import os
 import re
@@ -230,10 +231,10 @@ def build_segment(idx, item, no, total, out_path, channel, handle, avatar):
     dur = float(audio.duration)
     script = item.get("narration") or ""
     timings = B.load_timings(B.get_timing_path(item, idx), dur, script)
-    starts = B.scene_starts(script, timings, dur, B.SCENE_COUNT)
+    starts = B.scene_starts(script, timings, dur, item_scene_count(item))
     n_scenes = len(starts)
     srcs = srcs[:n_scenes]
-    print(f"  [{no}/{total}] {idx} {country}: {dur:.1f}초, 이미지 {real}/{B.SCENE_COUNT}장", flush=True)
+    print(f"  [{no}/{total}] {idx} {country}: {dur:.1f}초, 이미지 {real}/{item_scene_count(item)}장", flush=True)
 
     t1, t2 = B.split_title(item)
     credit = (B.credit_label(item) if real else "") or ""

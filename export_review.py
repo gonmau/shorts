@@ -37,6 +37,10 @@ def main():
             lines.append(f"(사실 검수 위험도) {item['fact_risk']}")
         for n, t in enumerate(item.get("fact_issues") or [], start=1):
             lines.append(f"(검수 메모 {n}) {t}")
+        if item.get("cross_verdict"):
+            lines.append(f"(교차검증) {item['cross_verdict']}")
+        for n, t in enumerate(item.get("cross_notes") or [], start=1):
+            lines.append(f"(교차검증 메모 {n}) {t}")
         if item.get("verify_note"):
             lines.append(f"(사실 확인용 검색어) {item['verify_note']}")
         for key, label in (("hook", "후크"), ("body", "본문"), ("twist", "반전")):

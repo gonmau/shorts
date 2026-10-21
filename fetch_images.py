@@ -21,6 +21,7 @@ from PIL import Image
 import commons
 
 from common import load_db, save_db, pending_render, visual_dir
+from scenes import item_scene_count
 
 BASE_DIR = Path(__file__).resolve().parent
 API_URL = "https://pixabay.com/api/"
@@ -96,10 +97,10 @@ def download(session, url, dest, headers=None):
 def fetch_item(session, key, idx, item, force):
     folder = visual_dir(BASE_DIR, idx, item)
     queries = item.get("image_queries") or []
-    if len(queries) < SCENE_COUNT:
+    n_slots = item_scene_count(item)
+    if not queries:
         country = str(item.get("country", "")).strip()
-        base = queries[0] if queries else f"{country} travel"
-        queries = (queries + [base] * SCENE_COUNT)[:SCENE_COUNT]
+        queries = [f"{country} travel"] * n_slots
 
     # 검색어가 바뀐 장면만(대본 수정 등) 예전 이미지를 지우고 새로 받는다. 안 바뀐 장면은 그대로 둔다
     done = item.get("image_queries_done")
@@ -255,7 +256,7 @@ def main():
         print(f"[{n}/{len(targets)}] {idx:04d} {item.get('country', '')}")
         try:
             got = fetch_item(session, key, idx, item, args.force)
-            print(f"  완료: {got}/{SCENE_COUNT}장")
+            print(f"  완료: {got}/{item_scene_count(item)}장")
             save_db(db)
         except Exception as e:
             print(f"  실패: {type(e).__name__}: {e} (대체 카드로 제작)")

@@ -9,7 +9,8 @@ from pathlib import Path
 from groq import Groq, RateLimitError
 
 from common import split_sentences, strip_marks, pending_render
-from scenes import scene_groups
+from scenes import scene_groups, default_scene_count
+import crosscheck
 
 
 DB_FILE = Path("facts_db.json")
@@ -516,7 +517,7 @@ def generate_highlights(client, models, fact, narration, retries=3):
 
 def build_query_prompt(fact, narration):
     sents = split_sentences(narration)
-    groups = scene_groups(sents, 6)
+    groups = scene_groups(sents, default_scene_count())
     hl = {h.get("s"): strip_marks(h.get("text", "")) for h in (fact.get("highlights") or []) if isinstance(h, dict)}
     blocks = []
     for k, (a, b) in enumerate(groups, start=1):
@@ -570,7 +571,7 @@ def generate_queries(client, models, fact, narration, retries=3):
         client, models,
         "You are a careful photo editor. Output JSON only.",
         build_query_prompt(fact, narration), 600, retries,
-        lambda t: parse_queries(t, len(scene_groups(split_sentences(narration), 6)) or 6),
+        lambda t: parse_queries(t, len(scene_groups(split_sentences(narration), default_scene_count())) or 6),
     )
 
 
@@ -679,6 +680,10 @@ def ensure_extras(client, models, fact, retries=3):
     changed = False
     # AI 사실검수는 하지 않는다 (사실 확인은 사람이 직접 한다)
     narration = fact.get("narration", "")
+    if crosscheck.enabled() and not fact.get("cross_checked") and fact.get("status") != "rejected":
+        changed = crosscheck.cross_check(client, models, fact) or changed
+        if fact.get("status") == "rejected":
+            return True
     if not title_ok(fact):
         titles = generate_title(client, models, fact, narration, retries)
         if titles:
@@ -699,6 +704,7 @@ def ensure_extras(client, models, fact, retries=3):
         qs = generate_queries(client, models, fact, narration, retries)
         if qs:
             fact["image_queries"] = qs
+            fact["scene_count"] = default_scene_count()
             changed = True
             print("  [이미지 검색어] " + " | ".join(qs))
         else:
@@ -719,6 +725,7 @@ def run_extras(client, models, db, limit, start, delay, retries):
     todo = [
         (i, f) for i, f in targets
         if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries"))
+        or (crosscheck.enabled() and not f.get("cross_checked"))
     ]
     print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")
     for number, (index, fact) in enumerate(todo, start=1):
@@ -1094,7 +1101,7 @@ def main():
             fact["status"] = "scripted"  # TTS 단계(generate_tts_v2.py)가 이 상태를 찾습니다.
 
             # 대본이 새로 바뀌었으므로 이전 제목/핵심 문구/검색어는 지우고 새로 만든다
-            for key in ("title_line1", "title_line2", "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "fact_verifiability", "fact_applied", "reject_reason", "narration_original"):
+            for key in ("title_line1", "title_line2", "highlights", "image_queries", "fact_checked", "fact_issues", "fact_risk", "fact_verifiability", "fact_applied", "reject_reason", "narration_original", "cross_checked", "cross_notes", "cross_verdict", "cross_model", "cross_sources"):
                 fact.pop(key, None)
             ensure_extras(client, models, fact, args.retries)
 

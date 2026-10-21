@@ -5,6 +5,7 @@
 - 이미지 검색어는 그룹마다(그 그룹의 문장 내용 + 그 문장의 핵심 문구) 만들고,
 - 영상에서는 그 그룹의 문장을 읽는 동안 그 장면 이미지를 보여 준다.
 """
+import os
 import re
 
 
@@ -37,3 +38,22 @@ def scene_groups(sentences, n=6):
         groups.append((start + 1, end))
         start = end
     return groups
+
+
+def default_scene_count():
+    """새로 만드는 소재의 장면(이미지) 수. 환경변수 SCENE_COUNT, 기본 10, 6~20의 짝수로 맞춤."""
+    try:
+        n = int(float(os.environ.get("SCENE_COUNT", "10")))
+    except ValueError:
+        n = 10
+    n = max(6, min(20, n))
+    return n + (n % 2)
+
+
+def item_scene_count(item):
+    """이 소재의 장면 수. 대본/검색어를 만들 때 정해 item['scene_count']에 저장 (예전 소재는 6장)."""
+    try:
+        n = int((item or {}).get("scene_count") or 0)
+    except (TypeError, ValueError):
+        n = 0
+    return n if 1 <= n <= 30 else 6
