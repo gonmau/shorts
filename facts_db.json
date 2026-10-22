@@ -11588,7 +11588,7 @@
     "verify_note": "Kissing traditions",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:47.920029+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "친구에게 행운을 주려면 입술을 맞춘다?! 터키의 몇몇 사회에서는 이렇게 입맞춤을 합니다. 친구에게 “행운을 빌어”라며 가볍게 입술을 맞추면, 기쁨과 축복의 뜻을 전한다는 것이죠. 이때 입맞춤은 단순한 인사나 애정 표현을 넘어, 특별히 좋은 일만 가득하길 바라는 의미를 담고 있습니다. 흥미로운 점은 입술을 대는 부위가 꼭 입만은 아니라는 겁니다. 손이나 머리에도 살짝 입을 대며 행운을 전하는 경우가 있어, 상황에 따라 다양한 방식으로 축복을 나눕니다. 하지만 이런 관습은 터키 전체가 아닌 일부 사회에만 존재한다는 점을 기억해야 합니다. 보편적인 습관은 아니니, 문화적 차이를 존중하며 바라보는 것이 중요하겠죠. 결국, 작은 입맞춤 하나가 친구에게 큰 행운을 선물할 수 있다는 점, 생각해볼 만하지 않나요?",
     "title_line1": "터키 친구에게 행운",
     "title_line2": "입술 한 번이면?",
@@ -11621,7 +11621,8 @@
       "respect cultural differences",
       "small kiss big luck"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "제작"
   },
   {
     "topic": "Offal(오프얼)도 고급 요리와 일상 식탁에 동시에 존재한다",
@@ -11636,7 +11637,7 @@
     "verify_note": "Offal",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:51.553484+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "내가 오늘 먹은 건… 내장! 조지아에서는 ‘오프얼’이라 부르는 동물의 내부 장기가 일상 식탁과 고급 요리 모두에 등장합니다. 일부 문화에서는 그냥 반찬처럼 흔히 쓰지만, 또 다른 문화에서는 푸아그라나 파테처럼 섬세하게 가공해 특별한 맛을 내죠. 특히 조지아 전통 명절엔 장을 활용한 요리가 빠지지 않아, 가족이 모여 함께 나누는 풍습이 이어집니다. 물론 이런 관습은 조지아 내 특정 지역과 문화권에 한정된 사례이며, 모든 사람이 같은 방식으로 즐기는 것은 아닙니다. 내장이 이렇게 두 얼굴을 가진다는 사실, 생각보다 더 흥미롭지 않나요?",
     "title_line1": "조지아의 오프얼 일상",
     "title_line2": "고급 요리엔 왜?",
@@ -11657,7 +11658,8 @@
         "s": 4,
         "text": "명절엔 *내장* 풍습"
       }
-    ]
+    ],
+    "reject_reason": "으"
   },
   {
     "topic": "할로윈 밤, 현관등 하나가 사탕을 부른다",
@@ -11672,7 +11674,7 @@
     "verify_note": "Trick-or-treating",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:51.553484+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "현관등을 켜면 사탕이 온다? 할로윈 밤, 10월 31일이면 아이들은 “Trick‑or‑treat!” 외치며 동네를 누볐습니다. 집 앞에 사탕을 기대하며 문을 두드리죠. 그때 집 안에 걸린 장식이 사탕을 줄 준비가 됐다는 신호가 됩니다. 특히 현관등을 켜 두면, “여긴 사탕을 줍니다”라는 보편적인 표시가 되죠. 그래서 많은 가정이 어두운 밤에 등불을 밝히고, 아이들에게 달콤한 간식을 건네줍니다. 그런데 흥미로운 점은, 일부 지역에서는 사탕 대신 현금을 건네는 문화도 있다는 사실입니다. 물론 이런 풍습은 할로윈을 기념하는 일부 국가에만 널리 퍼져 있죠. 현관등이 사탕을 부른다, 혹은 현금을 부른다… 어느 쪽이든, 그 불빛이 아이들의 웃음소리를 끌어내는 순간은 변함없습니다.",
     "title_line1": "아일랜드 할로윈 밤",
     "title_line2": "불빛이 사탕을 부른다?",
@@ -11705,7 +11707,8 @@
       "Halloween tradition Ireland",
       "laughing light Halloween"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "만듬"
   },
   {
     "topic": "크리스마스 카프(Christmas carp) 목욕탕 보관 비밀",
@@ -11720,7 +11723,7 @@
     "verify_note": "Christmas carp",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:59.234598+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "크리스마스 전날, 욕조에 물고기가 들어가면 무슨 일이 일어날까요? 중부 유럽, 특히 체코에서는 크리스마스 카프를 준비하기 전에 물고기를 욕조에 담가 진흙 맛을 없앤답니다. 이렇게 물에 담가 두면 비린내가 사라지고, 이후에 튀기거나 게필테 피시 같은 요리로 바꿔 먹게 되죠. 흥미로운 점은 남은 뼈를 과일 나무에 심어 두면 봄에 더 풍성한 열매를 기대할 수 있다는 겁니다. 또, 물고기의 비늘을 보관하면 행운을 가져온다고 전해지죠. 다만, 이 전통은 일부 지역에만 전해지는 관습이라 모든 가정이 따르는 것은 아닙니다. 욕조에 들어간 카프가 남긴 작은 흔적이, 새해에 행운과 풍요를 불러올지도 모른다는 생각, 떠오르시나요?",
     "title_line1": "체코 크리스마스 카프",
     "title_line2": "욕조에 물고기, 행운?",
@@ -11747,7 +11750,8 @@
       "Czech kitchen tradition",
       "carp bathtub trace"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "잉어"
   },
   {
     "topic": "헌법재판소(ศาลรัฐธรรมนูญ)의 2006년 쿠데타 후 소멸",
@@ -11762,7 +11766,7 @@
     "verify_note": "Constitutional Court of Thailand",
     "confidence": "source",
     "created_at": "2026-10-15T04:21:12.890720+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "태국 헌법재판소, 쿠데타 직후 눈앞에서 사라졌다? 1997년 헌법에 따라 설립된 이 재판소는 입법·행정·정당 문제를 심판했으며, 15명의 재판관으로 구성돼 있었습니다. 그런데 2006년 군사 쿠데타가 발생하자, 바로 해체되었습니다. 그 자리를 대신해 만든 것이 헌법재판관(Constitutional Tribunal)인데요, 흥미로운 점은 해체된 뒤에도 기존에 내린 판결들은 그대로 유지된다는 겁니다. 그래서 법적 공백이 생기지 않았습니다. 이 사건은 태국 내부에서만 일어난 일이며, 다른 나라의 헌법재판소와는 직접적인 연관이 없습니다. 쿠데타가 일어난 순간, 사라진 듯 보였던 헌법재판소가 남긴 흔적은 여전히 법률 체계 안에 살아 있습니다.",
     "title_line1": "태국 헌법재판소 사라짐",
     "title_line2": "쿠데타 후에도 판결은?",
@@ -11793,7 +11797,8 @@
       "Thai government building exterior",
       "Thai judicial system remnants"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "제외"
   },
   {
     "topic": "‘모레스(Mores)’라는 사회 규범 용어의 기원",
@@ -11984,7 +11989,7 @@
     "verify_note": "Lawyer",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:29.672439+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "그리스와 로마 시대에도 변호사가 있었고, 오늘날엔 다섯 종류가 있다는 사실, 알고 계셨나요? 고대부터 법률 자문과 문서 작성, 소송 대리를 맡던 사람들은 현대의 변호사와 연결됩니다. 오늘날 변호사는 법 체계와 관할 구역에 따라 역할이 달라집니다. 영미법 국가에서는 주로 배리스터, 솔리시터, 컨베이어, 노타리, 그리고 교회법 변호사로 구분됩니다. 배리스터는 법정에서 직접 변론을 담당하고, 솔리시터는 고객에게 법률 자문을 제공하며 서류를 준비합니다. 컨베이어는 부동산 거래와 같은 특수한 문서 작성을 전문으로 하고, 노타리는 공증을 통해 문서의 법적 효력을 보증합니다. 특히 교회법 변호사는 종교 법률을 전담한다는 점이 눈에 띕니다. 이 구분은 주로 영미법 계통 국가에서 적용되는 일반적인 사례이며, 각 나라마다 차이가 있다는 점을 기억해 주세요. 고대 그리스와 로마의 법률 전문가가 오늘날 이렇게 다양한 형태로 이어지고 있다는 사실, 생각보다 흥미롭지 않나요?",
     "title_line1": "그리스·로마 변호사",
     "title_line2": "오늘은다섯직종!",
@@ -12021,7 +12026,8 @@
       "lawyer map of jurisdiction",
       "ancient law scrolls"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "제작"
   },
   {
     "topic": "부활절에 전 세계 교회가 쓰는 공통 인사",
@@ -12270,6 +12276,186 @@
     "verify_note": "Korean cuisine",
     "confidence": "source",
     "created_at": "2026-10-21T23:55:05.988019+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "계약 위반 시 법원이 물건을 직접 반환하도록 명령할 수 있다",
+    "hook": "계약 깨면 물건을 바로 돌려받을 수 있다?",
+    "body": "계약은 두 명 이상이 법적으로 구속되는 약속이며, 위반 시 손해배상뿐 아니라 물건을 원상복구하도록 하는 ‘특정 이행’을 요구할 수 있다. 이는 계약 당사자의 권리를 직접 보호한다.",
+    "twist": "특정 이행은 물건을 실제로 반환받는 형태의 구제이다.",
+    "caveat": "이 내용은 일반적인 계약법 원칙이며, 국가마다 적용 방식이 다를 수 있다.",
+    "country": "싱가포르",
+    "theme": "법/제도",
+    "wiki_title": "Contract",
+    "source_url": "https://en.wikipedia.org/wiki/Contract",
+    "verify_note": "Contract",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "덴마크",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
+    "hook": "고등학생이 이미 레코드사와 사인받았다?",
+    "body": "미국 록밴드 Slightly Stoopid(스라이트리 스투피드)는 샌디에이고(San Diego) 오션 비치(Ocean Beach)에서 결성됐으며, 고등학생 시절 브래들리 노웰(Bradley Nowell)이 이끄는 서브라임(Sublime)의 스쿙 레코드(Skunk Records)와 계약했다.",
+    "twist": "브래들리 노웰은 자신이 속한 밴드 서브라임의 레이블에서 직접 사인을 해줬다.",
+    "caveat": "이 내용은 밴드가 고등학교에 다닐 때의 상황을 말한다.",
+    "country": "덴마크",
+    "theme": "생활문화",
+    "wiki_title": "Slightly Stoopid",
+    "source_url": "https://en.wikipedia.org/wiki/Slightly_Stoopid",
+    "verify_note": "Slightly Stoopid",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "인도(India) 동북부의 개고기(Dog meat) 소비",
+    "hook": "‘향긋한 고기’라 불리는 개고기, 인도에서도 먹는다고?",
+    "body": "21세기에 인도 동북부 일부 지역에서 개고기를 식문화의 일환으로 제한적으로 섭취한다. 이때 개고기는 ‘향긋한 고기(Fragrant meat)’라고도 불린다.",
+    "twist": "법적으로 금지되지 않거나 전면 금지 조항이 없어, 법의 허점으로 남아 있다.",
+    "caveat": "이 현상은 21세기에 해당 지역에 한정된 경우이다.",
+    "country": "인도",
+    "theme": "음식문화",
+    "wiki_title": "Dog meat",
+    "source_url": "https://en.wikipedia.org/wiki/Dog_meat",
+    "verify_note": "Dog meat",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:38.518500+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이란(Iran) 타아로프(Taarof) 예절",
+    "hook": "이란에서 ‘아니에요’는 진짜 거절일까?",
+    "body": "타아로프는 이란 사회에서 예의를 중시하며, 친구나 주인과 손님 사이에 ‘아니에요’라고 말해도 실제 의도와 다를 수 있다.",
+    "twist": "때로는 상대를 혼란스럽게 하여 불리한 상황으로 몰아가는 사회·정치적 무기로도 쓰인다.",
+    "caveat": "이 규칙은 주로 이란 문화권에서 적용된다.",
+    "country": "이란",
+    "theme": "관습/예절",
+    "wiki_title": "Taarof",
+    "source_url": "https://en.wikipedia.org/wiki/Taarof",
+    "verify_note": "Taarof",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:38.518500+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "샘 유킬리스(Sam Youkilis)의 아이폰 일상 촬영",
+    "hook": "아이폰 한 대로 유럽 전역을 담는다?",
+    "body": "샘 유킬리스는 아이폰으로 사진과 영상을 제작해 인스타그램에 올리며, 일상의 순간과 음식, 문화 전통을 기록한다.",
+    "twist": "그의 작품은 특히 이탈리아(Italy)에서 촬영된 것이 많아, 유럽 일상의 ‘제네럴 인덱스’ 역할을 한다.",
+    "caveat": "그의 활동은 주로 유럽, 특히 이탈리아에 초점을 맞춘다.",
+    "country": "독일",
+    "theme": "생활문화",
+    "wiki_title": "Sam Youkilis",
+    "source_url": "https://en.wikipedia.org/wiki/Sam_Youkilis",
+    "verify_note": "Sam Youkilis",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:38.518500+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "봄·여름에 귀족들의 도시 이주와 파티 시즌",
+    "hook": "봄이 오면 귀족들이 갑자기 도시로 이사 와서 파티만 연다고?",
+    "body": "전통적으로 사회 엘리트들은 봄과 여름에 볼, 디너 파티, 자선 행사를 열기 위해 도시, 즉 런던(London)과 더블린(Dublin)으로 이주했습니다.",
+    "twist": "전쟁 전까지는 이런 도시 거주가 필수였지만, 지금은 영국에서 주로 접근 가능한 행사로 바뀌었어요.",
+    "caveat": "이 관습은 제1차 세계대전 전까지였고, 현재는 영국에서 주로 유지됩니다.",
+    "country": "아일랜드",
+    "theme": "관습/예절",
+    "wiki_title": "Social season",
+    "source_url": "https://en.wikipedia.org/wiki/Social_season",
+    "verify_note": "Social season",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:41.663635+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "문화마다 다른 악수 동작",
+    "hook": "악수할 때 손을 위아래로 흔든다고?",
+    "body": "악수는 두 사람이 서로의 손을 잡고 흔히 위아래로 움직이는 짧은 인사·작별 전통이며, 문화마다 악수 시기와 방식이 다릅니다.",
+    "twist": "어떤 문화에서는 악수를 거의 하지 않거나 전혀 다른 동작을 쓰기도 합니다.",
+    "caveat": "악수 방식은 문화와 상황에 따라 크게 달라집니다.",
+    "country": "벨기에",
+    "theme": "관습/예절",
+    "wiki_title": "Handshake",
+    "source_url": "https://en.wikipedia.org/wiki/Handshake",
+    "verify_note": "Handshake",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:41.663635+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "청명절의 이중 의미",
+    "hook": "청명절엔 무덤을 청소하면서도 봄을 축하한다니?",
+    "body": "청명절(Qingming Festival)은 봄을 기념하는 전통 명절로, 5번째 절기의 첫날이자 춘분 이후 15번째 날에 열리며, 가족들은 조상의 무덤을 찾아가 청소합니다.",
+    "twist": "같은 날에 조상을 기리고 새봄을 맞이한다는 두 가지 의미가 동시에 담겨 있어요.",
+    "caveat": "이 전통은 중국계 사람들 사이에서 주로 지켜집니다.",
+    "country": "대만",
+    "theme": "축제/의례",
+    "wiki_title": "Qingming Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Qingming_Festival",
+    "verify_note": "Qingming Festival",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:41.663635+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "베이비 샤워 (Baby shower) 파티",
+    "hook": "아기 선물만 줄 거라 생각했나요? 실제로는…",
+    "body": "베이비 샤워는 아이가 태어나거나 곧 태어날 때 축하하는 파티예요. 나라마다 방식이 다르지만, 선물을 주고 함께 시간을 보내는 의례가 공통돼요.",
+    "twist": "미국·캐나다식이라고만 알려졌지만, 이집트 등 여러 사회에도 비슷한 전통이 존재한답니다.",
+    "caveat": "이 내용은 위키백과 발췌문에 근거한 것으로, 구체적인 이집트식 관습은 별도 기록이 없습니다.",
+    "country": "이집트",
+    "theme": "관습/예절",
+    "wiki_title": "Baby shower",
+    "source_url": "https://en.wikipedia.org/wiki/Baby_shower",
+    "verify_note": "Baby shower",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:44.146839+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "말랑카 (Malanka) 새해 전야 의식",
+    "hook": "새해 전날, 남자들이 복장을 입고 집을 돌며…?",
+    "body": "말랑카는 12월 31일에 지키는 우크라이나 전통 명절로, 젊은 남성들이 전통 복장을 하고 이웃집을 방문해 축하합니다. 특별한 음식과 음료도 함께 나눠요.",
+    "twist": "원래는 1월 13일(율리우스력)에도 같은 날에 열렸다는 사실, 즉 ‘구 새해’와 연결돼요.",
+    "caveat": "현재는 일부 요소만 남아 있어, 전통 전체가 그대로 유지되는 것은 아닙니다.",
+    "country": "루마니아",
+    "theme": "축제/의례",
+    "wiki_title": "Malanka",
+    "source_url": "https://en.wikipedia.org/wiki/Malanka",
+    "verify_note": "Malanka",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:44.146839+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "차와 다과가 어우러진 유럽식 티 파티",
+    "hook": "차 한 잔에 세계 여행이 숨어 있다?!",
+    "body": "티 파티(Tea party)는 차와 가벼운 다과를 함께 즐기는 사회적 모임이다. 이 풍습은 중국에서 시작돼 유럽으로 퍼졌으며, 유럽에서는 오후에 차를 티포트에 담아 우유와 설탕을 넣고 샌드위치·스콘·케이크 등과 함께한다.",
+    "twist": "유럽식 티 파티가 사실은 중국에서 온 전통이라는 점이 놀랍다.",
+    "caveat": "이 관습은 주로 중국과 유럽 문화권에서 나타난다.",
+    "country": "인도",
+    "theme": "관습/예절",
+    "wiki_title": "Tea party",
+    "source_url": "https://en.wikipedia.org/wiki/Tea_party",
+    "verify_note": "Tea party",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:57.507853+00:00",
     "status": "unverified"
   }
 ]
