@@ -13559,7 +13559,8 @@
     "verify_note": "Slightly Stoopid",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:34.345706+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "인도(India) 동북부의 개고기(Dog meat) 소비",
@@ -13574,7 +13575,8 @@
     "verify_note": "Dog meat",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:38.518500+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "이란(Iran) 타아로프(Taarof) 예절",
@@ -13589,7 +13591,8 @@
     "verify_note": "Taarof",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:38.518500+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "샘 유킬리스(Sam Youkilis)의 아이폰 일상 촬영",
@@ -13604,7 +13607,8 @@
     "verify_note": "Sam Youkilis",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:38.518500+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "봄·여름에 귀족들의 도시 이주와 파티 시즌",
@@ -13634,7 +13638,8 @@
     "verify_note": "Handshake",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "청명절의 이중 의미",
@@ -13664,7 +13669,8 @@
     "verify_note": "Baby shower",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:44.146839+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "부적합"
   },
   {
     "topic": "말랑카 (Malanka) 새해 전야 의식",
