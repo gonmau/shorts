@@ -12823,7 +12823,99 @@
     "verify_note": "Legal status of fictional pornography depicting minors",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:37.550529+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "잠깐, 가짜 아이 사진도 실제와 같은 처벌을 받을 수 있다? 독일을 비롯한 몇몇 국가에서는 실제 아이가 아닌 디지털 조작 이미지, 즉 딥페이크와 완전히 허구인 그림·AI 생성 이미지까지 모두 ‘가상 아동 포르노’로 규정합니다. 이런 콘텐츠는 실제 아동이 전혀 등장하지 않아도 법적으로 금지됩니다. 따라서 가상의 이미지라도 제작·배포하면 형사 처벌 대상이 될 수 있죠. 다만 이 규정은 독일 등 해당 법률을 채택한 국가에만 적용된다는 점을 기억해 주세요. 현실과 가상의 경계가 무너지는 순간, 법은 어디까지 보호할 수 있을지 생각해 보게 됩니다.",
+    "title_line1": "독일 가상 아동 포르노",
+    "title_line2": "가짜 사진도 처벌받는다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*가짜* 아이 사진도 처벌?"
+      },
+      {
+        "s": 2,
+        "text": "*디지털* 이미지 금지"
+      },
+      {
+        "s": 4,
+        "text": "*가상* 배포 형사처벌"
+      },
+      {
+        "s": 6,
+        "text": "*경계* 붕괴, 법은?"
+      }
+    ],
+    "image_queries": [
+      "fake child photograph",
+      "digital image ban",
+      "computer-generated child illustration",
+      "virtual distribution punishment",
+      "German law book",
+      "collapsed border fence"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0202_독일_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0202_독일_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "fake child photograph",
+      "digital image ban",
+      "computer-generated child illustration",
+      "virtual distribution punishment",
+      "German law book",
+      "collapsed border fence"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ArturSkoniecki",
+        "page": "https://pixabay.com/photos/boy-fake-mustache-portrait-child-7097685/",
+        "id": 7097685
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Snap_it",
+        "page": "https://pixabay.com/photos/sign-character-image-round-3112100/",
+        "id": 3112100
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "finelightarts",
+        "page": "https://pixabay.com/photos/child-girl-young-caucasian-1073638/",
+        "id": 1073638
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Lidistat67",
+        "license": "CC BY 4.0",
+        "title": "Legal status of cocaine possession.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Legal_status_of_cocaine_possession.png",
+        "id": "c:112878756"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Peggychoucair",
+        "page": "https://pixabay.com/photos/throughts-notebook-a-book-paper-3937313/",
+        "id": 3937313
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "MarcVanduffel",
+        "page": "https://pixabay.com/photos/fence-border-closed-structure-1073604/",
+        "id": 1073604
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0202_독일.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0202_독일.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "아이슬란드의 음식 금기 중 물고기 금지",
@@ -12838,7 +12930,101 @@
     "verify_note": "Food and drink prohibitions",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:37.550529+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "잠깐, 아이슬란드에서는 물고기 고기도 먹지 못한다? 실은 아이슬란드에서 종교·문화·법 등 여러 이유로 포유류, 파충류, 양서류는 물론 물고기, 연체동물, 갑각류, 심지어 곤충까지 특정 고기를 금지하는 경우가 있습니다. 그 금기는 전체 국민에게 적용되는 것이 아니라, 일부 사람들에게만 해당됩니다. 특히 어떤 사람들은 동물의 특정 부위나 배설물까지도 먹지 않는다고 하니, 단순히 “물고기만 금지”라고 보기엔 훨씬 복잡합니다. 이처럼 아이슬란드의 식문화 금기는 다양하고 세밀하게 적용되며, 그 범위가 사람마다 다르다는 점을 기억해 주세요. 그럼, 다음엔 또 어떤 음식이 금지될지 궁금하지 않으신가요?",
+    "title_line1": "아이슬란드 음식 금기",
+    "title_line2": "물고기도 못 먹는다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "물고기 *금지*?"
+      },
+      {
+        "s": 3,
+        "text": "*일부*만 적용"
+      },
+      {
+        "s": 4,
+        "text": "부위·배설물 *금지*"
+      },
+      {
+        "s": 5,
+        "text": "금기 *다양*해요"
+      }
+    ],
+    "image_queries": [
+      "fish ban sign",
+      "Iceland seafood restriction",
+      "partial dietary restriction",
+      "animal parts prohibition",
+      "Iceland food taboo variety",
+      "mysterious food ban Iceland"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0203_아이슬란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0203_아이슬란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "fish ban sign",
+      "Iceland seafood restriction",
+      "partial dietary restriction",
+      "animal parts prohibition",
+      "Iceland food taboo variety",
+      "mysterious food ban Iceland"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ildigo",
+        "page": "https://pixabay.com/photos/sign-round-character-bicycle-3344698/",
+        "id": 3344698
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Gary Todd from Xinzheng, China",
+        "license": "CC0",
+        "title": "Food and Drink (10112849623).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Food_and_Drink_(10112849623).jpg",
+        "id": "c:90466368"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Abhishekkumar2955",
+        "license": "CC0",
+        "title": "Food and Drink by AKRM.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Food_and_Drink_by_AKRM.jpg",
+        "id": "c:195852474"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "ivabalk",
+        "page": "https://pixabay.com/photos/mark-prohibition-input-dogs-4002082/",
+        "id": 4002082
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ClaroCafe",
+        "page": "https://pixabay.com/photos/coffee-beans-coffee-variety-food-6487104/",
+        "id": 6487104
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "4421146",
+        "page": "https://pixabay.com/photos/turnip-giant-huge-nature-organic-5061201/",
+        "id": 5061201
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0203_아이슬란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0203_아이슬란드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "차와 함께하는 식사의 다양한 형태",
@@ -12853,7 +13039,115 @@
     "verify_note": "Tea (meal)",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:37.550529+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "잠깐, 차 한 잔이 식사가 될 수 있다? 노르웨이에서도 ‘티’라는 개념이 존재합니다. 여기서 ‘티’는 차와 함께 제공되는 여러 종류의 식사를 뜻하는데요, 보통 중·후반 오후부터 저녁 초반까지 즐깁니다. 차 한 잔에 작은 빵이나 케이크를 곁들이는 가벼운 간식으로 먹는 사람도 있고, 반대로 차와 함께 스프, 샌드위치, 심지어는 따뜻한 메인 요리까지 포함해 저녁 식사처럼 즐기는 경우도 있습니다. 흥미로운 점은 사회 계층에 따라 그 형태가 달라진다는 점입니다. 상류층에서는 차와 함께 정성 듬뿍 올린 디저트와 작은 요리를 즐기며 한 끼 식사로 여기는 반면, 일반 가정에서는 차와 간단한 간식을 가볍게 즐깁니다. 다만, ‘티’라는 용어와 그 의미는 주로 영국과 일부 연방 국가에서 쓰이는 표현이라는 점을 기억해 주세요. 차 한 잔이 이렇게 다양한 식사 형태가 될 수 있다니, 생각보다 우리 일상에 숨은 문화가 많네요.",
+    "title_line1": "노르웨이 차식",
+    "title_line2": "한 잔이 식사가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "차 한 잔이 *식사*?"
+      },
+      {
+        "s": 3,
+        "text": "오후부터 *티*시간"
+      },
+      {
+        "s": 4,
+        "text": "*메인*까지 티"
+      },
+      {
+        "s": 6,
+        "text": "상류층은 *디저트*"
+      }
+    ],
+    "image_queries": [
+      "tea cup",
+      "Norway tea",
+      "afternoon tea",
+      "tea with main dish",
+      "tea set",
+      "luxury tea dessert",
+      "British tea tradition",
+      "tea and snacks"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0204_노르웨이_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0204_노르웨이_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "tea cup",
+      "Norway tea",
+      "afternoon tea",
+      "tea with main dish",
+      "tea set",
+      "luxury tea dessert",
+      "British tea tradition",
+      "tea and snacks"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Myriams-Fotos",
+        "page": "https://pixabay.com/photos/teacup-cup-of-tea-peppermint-tea-2325722/",
+        "id": 2325722
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "lin2015",
+        "page": "https://pixabay.com/photos/tea-tea-garden-tea-tree-green-7331591/",
+        "id": 7331591
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/tea-party-tea-pour-pouring-tea-1001654/",
+        "id": 1001654
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/goulash-beef-pig-flesh-meat-dish-4999166/",
+        "id": 4999166
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "JennyKorn",
+        "page": "https://pixabay.com/photos/tea-tea-set-teacups-teapot-5533178/",
+        "id": 5533178
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "esarnika",
+        "page": "https://pixabay.com/photos/high-tea-cake-tea-dessert-sweet-4644623/",
+        "id": 4644623
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ShirleyHoy",
+        "page": "https://pixabay.com/photos/scones-valentine-scones-sweet-treats-4988041/",
+        "id": 4988041
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/tea-biscuit-still-life-cookie-6101059/",
+        "id": 6101059
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0204_노르웨이.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0204_노르웨이.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "반찬 개수로 정해지는 한국 전통 식사 이름",
@@ -12868,7 +13162,128 @@
     "verify_note": "Korean cuisine",
     "confidence": "source",
     "created_at": "2026-10-21T23:55:05.988019+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "반찬이 몇 개냐고? 이름이 바로 바뀝니다! 한국 전통 식사에서는 밥과 함께 나오는 반찬의 개수에 따라 식사 이름이 정해집니다. 반찬이 두 가지면 ‘두반찬밥’, 세 가지면 ‘세반찬밥’처럼 부르는 것이죠. 이렇게 반찬 수를 기준으로 명명하는 문화는 남한의 전통 식단에서 주로 찾아볼 수 있습니다. 흥미롭게도, 이런 식사에는 유제품이 거의 들어가지 않는다는 점도 눈에 띕니다. 전통적인 한 끼는 고기, 채소, 김치 등으로 구성되고, 우유나 치즈 같은 유제품은 거의 사용되지 않죠. 반찬 개수에 따라 이름이 바뀌는 재미있는 규칙, 그리고 유제품이 빠진 식단이 어우러져 한국 전통 식사의 독특한 모습을 보여줍니다. 결국, 반찬 하나하나가 식사의 정체성을 결정한다는 사실, 생각보다 신기하지 않나요?",
+    "title_line1": "반찬 개수로 식사명",
+    "title_line2": "이름이 바로 바뀐다!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*반찬* 몇 개?"
+      },
+      {
+        "s": 3,
+        "text": "반찬수 *식사명*"
+      },
+      {
+        "s": 4,
+        "text": "*두반찬밥*"
+      },
+      {
+        "s": 6,
+        "text": "유제품 *거의* 안함"
+      },
+      {
+        "s": 9,
+        "text": "*반찬*이 식사 정체성"
+      }
+    ],
+    "image_queries": [
+      "Korean side dishes",
+      "Korean food menu",
+      "Korean side dishes meal name",
+      "Two side dishes Korean rice",
+      "Traditional Korean table setting",
+      "Dairy-free Korean meal",
+      "Korean meat vegetable kimchi",
+      "Korean side dishes assortment",
+      "Side dishes defining Korean meal"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0205_프랑스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0205_프랑스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Korean side dishes",
+      "Korean food menu",
+      "Korean side dishes meal name",
+      "Two side dishes Korean rice",
+      "Traditional Korean table setting",
+      "Dairy-free Korean meal",
+      "Korean meat vegetable kimchi",
+      "Korean side dishes assortment",
+      "Side dishes defining Korean meal"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "cskkkk",
+        "page": "https://pixabay.com/photos/dumpling-food-republic-of-korea-7719497/",
+        "id": 7719497
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "joelmarrinan",
+        "page": "https://pixabay.com/photos/food-snack-street-food-korean-food-4701098/",
+        "id": 4701098
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "lpegasu",
+        "page": "https://pixabay.com/photos/kimchi-meal-dish-cuisine-food-7613333/",
+        "id": 7613333
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "allybally4b",
+        "page": "https://pixabay.com/photos/salmon-salmon-plate-with-rice-4647406/",
+        "id": 4647406
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "lpegasu",
+        "page": "https://pixabay.com/photos/food-crock-chopsticks-spoon-3205654/",
+        "id": 3205654
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "maeda_sion",
+        "page": "https://pixabay.com/photos/korean-food-meal-seoul-bibimbap-3263032/",
+        "id": 3263032
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "lpegasu",
+        "page": "https://pixabay.com/photos/kimchi-meal-dish-cuisine-food-7613314/",
+        "id": 7613314
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "fudowakira0",
+        "page": "https://pixabay.com/photos/side-dish-mart-exhibition-shopping-638660/",
+        "id": 638660
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "lpegasu",
+        "page": "https://pixabay.com/photos/kimchi-meal-dish-cuisine-food-7613335/",
+        "id": 7613335
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0205_프랑스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0205_프랑스.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "계약 위반 시 법원이 물건을 직접 반환하도록 명령할 수 있다",
@@ -12883,7 +13298,90 @@
     "verify_note": "Contract",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:34.345706+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "계약을 깨면 물건을 바로 돌려받을 수 있을까요? 싱가포르에서는 계약 위반 시 손해배상뿐 아니라 물건을 원래 상태로 되돌리라는 ‘특정 이행’ 명령을 법원이 내릴 수 있습니다. 이는 계약 당사자의 권리를 직접 보호하는 조치인데요, 실제로 물건을 실제로 반환받는 형태의 구제이기 때문에 피해자는 손해액을 받는 것보다 더 확실하게 손해를 복구할 수 있습니다. 다만, 이런 원칙은 일반적인 계약법에 기반한 것이며, 적용 방식은 국가마다 차이가 있을 수 있다는 점을 기억해 주세요. 계약이 깨졌을 때, 물건을 다시 손에 넣을 수 있다는 사실, 생각보다 가까운 현실일지도 모릅니다.",
+    "title_line1": "싱가포르 계약 위반",
+    "title_line2": "물건 바로 반환?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "계약파기*즉시*반환"
+      },
+      {
+        "s": 2,
+        "text": "법원 *특정이행* 명령"
+      },
+      {
+        "s": 3,
+        "text": "피해자 *확실* 복구"
+      },
+      {
+        "s": 5,
+        "text": "물건 *다시* 손에"
+      }
+    ],
+    "image_queries": [
+      "contract paper hand",
+      "court building Singapore",
+      "returned items on table",
+      "Singapore office building",
+      "hand holding contract"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0206_싱가포르_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0206_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "contract paper hand",
+      "court building Singapore",
+      "returned items on table",
+      "Singapore office building",
+      "hand holding contract"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "AymaneJed",
+        "page": "https://pixabay.com/photos/laptop-office-hand-writing-3196481/",
+        "id": 3196481
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "exxposures",
+        "page": "https://pixabay.com/photos/architecture-modern-geometric-10479523/",
+        "id": 10479523
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Europeana staff photographer",
+        "license": "Public domain",
+        "title": "Oriental Table Runner, item 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Oriental_Table_Runner,_item_5.jpg",
+        "id": "c:40901951"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "cegoh",
+        "page": "https://pixabay.com/photos/skyline-cityscape-buildings-255116/",
+        "id": 255116
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "truthseeker08",
+        "page": "https://pixabay.com/photos/hands-team-united-together-people-1917895/",
+        "id": 1917895
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0206_싱가포르.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0206_싱가포르.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -12898,7 +13396,121 @@
     "verify_note": "Punjabi festivals",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:34.345706+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
