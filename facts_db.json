@@ -11813,7 +11813,7 @@
     "verify_note": "Mores",
     "confidence": "source",
     "created_at": "2026-10-15T04:21:12.890720+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "우리 일상 속 ‘모레스’, 라틴어에서 온 단어라는 사실, 알고 계셨나요? ‘모레스’는 라틴어 mōrēs에서 유래했으며, 사회에서 도덕적으로 옳고 그름을 구분하는 규범을 뜻합니다. 이 용어를 현대 사회학에 도입한 사람은 미국 사회학자 윌리엄 그레이엄 서머(William Graham Sumner)인데요, 그는 1898년에 ‘모레스’를 학술적으로 정의했습니다. 흥미로운 점은, 같은 해에 서머가 또 다른 사회 규범 용어인 ‘포크웨이(folkways)’도 만들었다는 사실입니다. 다만 ‘모레스’는 학술적인 개념이라 일상 대화에서 흔히 쓰이는 표현은 아닙니다. 그래서 우리 주변에서 눈에 띄지는 않지만, 사회 규범을 연구할 때 중요한 기준이 된다는 점, 기억해 두시면 좋겠습니다. 결국, 라틴어 뿌리를 가진 ‘모레스’가 오늘날까지도 사회를 들여다보는 렌즈가 되고 있다는 점, 생각해 보세요.",
     "title_line1": "콜롬비아의 모레스 기원",
     "title_line2": "라틴어에서 왔나요?",
@@ -11840,7 +11840,79 @@
       "social research library",
       "mores Latin inscription"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0193_콜롬비아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0193_콜롬비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Latin mores manuscript",
+      "mores rulebook",
+      "mores sociology book 1898",
+      "folk customs scene",
+      "academic lecture hall",
+      "social research library",
+      "mores Latin inscription"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "1.° Jacobi, Abbatis monasterii Aquae-Nigrae, florinus ; sive excerpta è Poëtarum et Philos",
+        "page": "https://commons.wikimedia.org/wiki/File:1.%C2%B0_Jacobi,_Abbatis_monasterii_Aquae-Nigrae,_florinus_;_sive_excerpta_%C3%A8_Po%C3%ABtarum_et_Philosophorum_scriptis,_ad_mores_informandos_idonca._%E2%80%94_2.%C2%B0_Plutarchi_apophthegmata._-_btv1b9067993w_(088_of_162).jpg",
+        "id": "c:199015366"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Olgerts V",
+        "license": "CC BY 4.0",
+        "title": "Mores iela (08).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mores_iela_(08).jpg",
+        "id": "c:142034686"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "kerttu",
+        "page": "https://pixabay.com/photos/book-wall-books-wall-decorative-1151405/",
+        "id": 1151405
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Aviavlad",
+        "page": "https://pixabay.com/photos/duo-sing-singers-music-tool-scene-3551134/",
+        "id": 3551134
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "WOKANDAPIX",
+        "page": "https://pixabay.com/photos/classroom-lecture-hall-college-1699745/",
+        "id": 1699745
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ElasticComputeFarm",
+        "page": "https://pixabay.com/photos/library-books-bookshelves-bookcases-1147815/",
+        "id": 1147815
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/fountain-mythical-creatures-4303696/",
+        "id": 4303696
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0193_콜롬비아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0193_콜롬비아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "가나(Ghana) 가 사람들의 Homowo(홈오워) 축제",
