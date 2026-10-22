@@ -11927,7 +11927,7 @@
     "verify_note": "Homowo",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:25.153923+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "수확을 앞두고 굶주림을 기념한다면?! 가나 서부의 가 사람들은 4월 말에서 5월 사이에 기장을 심으며 Homowo, 즉 ‘홈오워’ 축제를 시작합니다. 이 축제는 과거 식량 부족을 겪었던 역사를 기억하고, 풍요를 기원하는 연례 행사죠. 흥미롭게도 행사는 비가 오기 전, 곡물을 심는 의식으로 시작됩니다. 씨앗을 뿌리는 순간, 사람들은 과거의 고난을 떠올리며 새로운 수확을 기대합니다. 이렇게 땅에 심은 작은 씨앗이 곧 풍성한 식탁이 될 것을 믿으며, 공동체는 함께 노래하고 춤추며 미래의 풍요를 축복합니다. 결국 Homowo는 굶주림을 기억하면서도, 곧 올 풍요를 향한 희망을 심는 축제라는 점, 기억해 주세요.",
     "title_line1": "가나 홈오워 축제",
     "title_line2": "굶주림을 기념한다?",
@@ -11958,7 +11958,77 @@
       "Homowo community dancing Ghana",
       "Homowo hopeful harvest"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0194_가나_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0194_가나_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "empty bowl",
+      "Homowo festival planting Ghana",
+      "Homowo remembering food shortage",
+      "rainy season field planting",
+      "hand planting seed",
+      "Homowo community dancing Ghana",
+      "Homowo hopeful harvest"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "pamelasichel",
+        "page": "https://pixabay.com/photos/bowl-dish-yellow-ceramic-dishware-469295/",
+        "id": 469295
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ArminEP",
+        "page": "https://pixabay.com/photos/woman-singing-concert-music-7359057/",
+        "id": 7359057
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Accra Homowo um1900 300dpi.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Accra_Homowo_um1900_300dpi.jpg",
+        "id": "c:10582626"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/tibet-landscape-river-valley-4538357/",
+        "id": 4538357
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Mojpe",
+        "page": "https://pixabay.com/photos/seeds-planting-apple-seed-hands-1217133/",
+        "id": 1217133
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "atsu_tettey",
+        "page": "https://pixabay.com/photos/beautiful-girl-beautiful-woman-10045687/",
+        "id": 10045687
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "jhenning",
+        "page": "https://pixabay.com/photos/plums-fruits-harvest-produce-8932336/",
+        "id": 8932336
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0194_가나.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0194_가나.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "피지(Fiji)의 330여 섬 중 2개 섬에 인구 집중",
