@@ -13623,7 +13623,8 @@
     "verify_note": "Social season",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "status_v6": "video_done"
   },
   {
     "topic": "문화마다 다른 악수 동작",
@@ -13654,7 +13655,8 @@
     "verify_note": "Qingming Festival",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "status_v6": "video_done"
   },
   {
     "topic": "베이비 샤워 (Baby shower) 파티",
@@ -13701,6 +13703,7 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "status_v6": "video_done"
   }
 ]
