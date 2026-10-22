@@ -1070,7 +1070,7 @@
     "twist": "이 제도는 비상시에는 즉시 해제돼, 급한 상황에서도 차를 몰 수 있게 된다.",
     "verify_note": "Mexico City Hoy No Circula program",
     "created_at": "2026-09-20T04:24:28.149870+00:00",
-    "status": "video_done",
+    "status": "verified",
     "narration": "멕시코시티에서는 차 번호가 오늘이면 운전 금지! 오늘은 어떤 번호가 운행을 못 하는지 궁금하시죠? 멕시코시티와 몇몇 주에서는 대기오염을 줄이기 위해 차량 번호판 마지막 숫자를 기준으로 하루에 한 번씩 운행을 제한합니다. 이 제도는 ‘Hoy No Circula’라는 이름으로 운영되고, 대기질이 나쁠 때 특히 강하게 적용됩니다. 오늘 지정된 번호라면 차를 거리 밖에 두어야 하고, 그날은 도로에 올릴 수 없습니다. 하지만 비상 상황이 발생하면 바로 제도가 해제돼 급한 일에도 차를 몰 수 있다는 점, 기억해 두세요. 여러분도 혹시 이런 제도를 경험해 본 적 있나요? 댓글로 알려 주세요! 구독과 좋아요도 잊지 마세요!",
     "audio_path_v2": "audio\\0029_Mexico_v2.mp3",
     "timing_path_v2": "audio\\0029_Mexico_v2_timing.json",
@@ -13623,7 +13623,7 @@
     "verify_note": "Social season",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "video_done",
+    "status": "verified",
     "status_v6": "video_done"
   },
   {
@@ -13655,7 +13655,7 @@
     "verify_note": "Qingming Festival",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "video_done",
+    "status": "verified",
     "status_v6": "video_done"
   },
   {
@@ -13703,7 +13703,7 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "video_done",
+    "status": "verified",
     "status_v6": "video_done"
   }
 ]
