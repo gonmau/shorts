@@ -13685,7 +13685,8 @@
     "verify_note": "Malanka",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:44.146839+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "status_v6": "video_done"
   },
   {
     "topic": "차와 다과가 어우러진 유럽식 티 파티",
