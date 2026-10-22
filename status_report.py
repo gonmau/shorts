@@ -2,7 +2,7 @@
 """facts_db.json 현황 요약 (디스코드 알림 끝에 붙임). 단독 실행하면 화면에 출력."""
 import argparse
 
-from common import load_db
+from common import load_db, upload_state
 
 MIN_CHARS = 60
 
@@ -19,7 +19,24 @@ def rng(nums):
     return ", ".join(out) or "-"
 
 
-def summary(db, start=0):
+def label(db, i, reason=False):
+    f = db[i]
+    t = " ".join(x for x in (f.get("title_line1"), f.get("title_line2")) if x) or str(f.get("topic") or "")
+    t = " ".join(t.split())[:40]
+    r = f" [{str(f.get('reject_reason'))[:25]}]" if reason and f.get("reject_reason") else ""
+    return f"  {i} {f.get('label') or f.get('country', '')} - {t}{r}"
+
+
+def listing(db, title, nums, reason=False, cap=30):
+    if not nums:
+        return ""
+    lines = [label(db, i, reason) for i in nums[:cap]]
+    if len(nums) > cap:
+        lines.append(f"  ... 외 {len(nums) - cap}개")
+    return f"\n{title}\n" + "\n".join(lines)
+
+
+def summary(db, start=0, detail=True):
     def has_narr(f):
         return len(str(f.get("narration") or "").strip()) >= MIN_CHARS
 
@@ -33,14 +50,21 @@ def summary(db, start=0):
     need = [i for i, f in idx if not has_narr(f) and f.get("status") in ("unverified", "verified")]
     rej = [i for i, f in idx if f.get("status") == "rejected"]
     done = [i for i, f in idx if not no_video(f)]
-    return (
+    head = (
         f"📊 현황 (start_index={start} 기준)\n"
         f"• render 바로 가능: {len(ready)}개 ({rng(ready)})\n"
         f"• prepare로 대본 만들 소재: {len(need)}개 ({rng(need)})\n"
         f"• 폐기(rejected): {len(rej)}개 ({rng(rej)}) → 번호! 로 되살림\n"
-        f"• 영상 완료: {len(done)}개\n"
+        f"• 영상 완료: {len(done)}개 (업로드 {sum(1 for i in done if db[i].get('youtube_id'))} / 미업로드 {sum(1 for i in done if not db[i].get('youtube_id'))})\n"
         f"권장: render count=3 정도씩, prepare count=5 정도부터"
     )
+    if not detail:
+        return head
+    return (head
+            + listing(db, "▶ render 가능 소재", ready)
+            + listing(db, "▶ 대본 만들 소재", need)
+            + listing(db, "▶ 영상 완료했지만 아직 안 올린 소재", [i for i in done if not db[i].get("youtube_id")])
+            + listing(db, "▶ 폐기 소재", rej, reason=True))
 
 
 if __name__ == "__main__":

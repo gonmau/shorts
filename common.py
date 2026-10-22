@@ -46,6 +46,16 @@ def visual_dir(base_dir, idx, item):
     return Path(base_dir) / "visuals" / f"{idx:04d}_{safe_dirname(safe_country(item))}"
 
 
+def upload_state(item):
+    """업로드 구분: 업로드(공개/비공개/일부공개) · 영상완료(미업로드) · '' (영상 없음)"""
+    if item.get("youtube_id"):
+        pv = {"public": "공개", "private": "비공개", "unlisted": "일부공개"}.get(item.get("youtube_privacy"), "")
+        return f"업로드({pv})" if pv else "업로드"
+    if item.get("video_path_v6") or item.get("status_v6") == "video_done":
+        return "영상완료(미업로드)"
+    return ""
+
+
 def pending_render(db, start=0):
     """영상이 아직 안 만들어진, 대본이 끝난 소재의 (index, item) 목록 (DB 순서)."""
     out = []

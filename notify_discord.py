@@ -25,6 +25,18 @@ def post(url, text):
         print("디스코드 전송 실패:", e)
 
 
+def post_long(url, text):
+    """2000자 제한 때문에 길면 줄 단위로 나눠 여러 메시지로 보낸다."""
+    chunk = ""
+    for line in str(text).splitlines() or [""]:
+        if len(chunk) + len(line) + 1 > 1800:
+            post(url, chunk)
+            chunk = ""
+        chunk += line + "\n"
+    if chunk.strip():
+        post(url, chunk)
+
+
 def post_image(url, path, text=""):
     """썸네일 PNG를 디스코드에 첨부 전송 (길게 눌러 저장)."""
     try:
@@ -90,7 +102,7 @@ def main():
         # 실행 결과 뒤에 "지금 render/prepare 가능한 개수" 현황을 붙인다
         try:
             from status_report import summary
-            post(os.environ["DISCORD_WEBHOOK_URL"], summary(load_db(), int(os.environ.get("START", "0") or 0)))
+            post_long(os.environ["DISCORD_WEBHOOK_URL"], summary(load_db(), int(os.environ.get("START", "0") or 0)))
         except Exception as e:
             print("현황 전송 실패:", e)
 
