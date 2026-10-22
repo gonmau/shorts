@@ -792,15 +792,109 @@
     "twist": "관광지에서도 프랑스어 표지판만 있으면, 영어 안내는 별도 요청을 해야만 제공됩니다.",
     "verify_note": "Quebec French language signage law Bill 101 public signs",
     "created_at": "2026-09-14T05:07:50.626050+00:00",
-    "status": "tts_done",
+    "status": "video_done",
     "narration": "퀘벡에서는 영어 표지판을 보면 벌금을 물게 됩니다! 여기서 왜 그런지 궁금하시죠? 퀘벡 주는 ‘프랑스어를 우선시한다’는 법, 즉 Bill 101에 따라 모든 공공 표지와 상점 안내판을 반드시 프랑스어로 표시하도록 규정하고 있습니다. 영어는 부수적인 정보로만 허용돼, 실제 표기에 영어를 넣으면 기업에 과태료가 부과됩니다. 심지어 관광지에서도 마찬가지인데요, 프랑스어 표지판만 있으면 방문객이 별도로 요청해야 영어 안내를 받을 수 있습니다. 이렇게 언어 정책이 일상에까지 스며들어 있답니다. 오늘도 새로운 문화 상식, 재밌게 보셨다면 좋아요와 구독 잊지 마세요!",
     "audio_path": "audio\\0013_Canada (Quebec).mp3",
-    "audio_path_v2": "audio\\0013_Canada (Quebec)_v2.mp3",
-    "timing_path_v2": "audio\\0013_Canada (Quebec)_v2_timing.json",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0013_Canada (Quebec)_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0013_Canada (Quebec)_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0013_Canada (Quebec)_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "퀘벡 표지판 규정",
+    "title_line2": "영어 표지판에 벌금?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "영어표지판 *벌금*!"
+      },
+      {
+        "s": 3,
+        "text": "프랑스어 *우선* 법"
+      },
+      {
+        "s": 4,
+        "text": "영어는 *부수* 정보"
+      },
+      {
+        "s": 5,
+        "text": "관광지도 *프랑스어*만"
+      }
+    ],
+    "image_queries": [
+      "English road sign Quebec",
+      "curious tourist looking",
+      "French language sign Quebec",
+      "English subtitle on sign",
+      "Quebec tourist sign French",
+      "Quebec street everyday life",
+      "hand pressing like button"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "English road sign Quebec",
+      "curious tourist looking",
+      "French language sign Quebec",
+      "English subtitle on sign",
+      "Quebec tourist sign French",
+      "Quebec street everyday life",
+      "hand pressing like button"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "00luvicecream",
+        "page": "https://pixabay.com/photos/signpost-closed-road-sign-end-stop-5274077/",
+        "id": 5274077
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tookapic",
+        "page": "https://pixabay.com/photos/baby-child-toddler-girl-childhood-933097/",
+        "id": 933097
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "OrnaW",
+        "page": "https://pixabay.com/photos/book-dictionary-french-language-3986093/",
+        "id": 3986093
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "photosforyou",
+        "page": "https://pixabay.com/photos/sign-saying-wisdom-smart-dream-1519642/",
+        "id": 1519642
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "JoeBreuer",
+        "page": "https://pixabay.com/photos/road-pavement-city-urban-travel-3176980/",
+        "id": 3176980
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "cubajuan",
+        "page": "https://pixabay.com/photos/cuba-architecture-street-133489/",
+        "id": 133489
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "leopoldboettcher",
+        "page": "https://pixabay.com/photos/thumbs-up-positive-gesture-thumb-4589867/",
+        "id": 4589867
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0013_Canada (Quebec).srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0013_Canada (Quebec).mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Argentina",
@@ -826,15 +920,118 @@
     "twist": "해변에 표시된 ‘Dog Off‑Leash’ 표지판이 실제로는 ‘Dog Prohibited’ 표지판으로 바뀐 경우가 많아, 방문 전 꼭 확인이 필요합니다.",
     "verify_note": "Queensland Australia dog beach ban turtle nesting season law",
     "created_at": "2026-09-14T05:07:50.626050+00:00",
-    "status": "tts_done",
+    "status": "video_done",
     "narration": "퀸즐랜드 해변에서는 개를 데리고 갈 수 없다고요? 바로 알겠죠. 퀸즐랜드 주는 매년 11월부터 2월까지 바다거북이 알을 낳는 기간 동안 해변에서 개를 산책시키는 것을 금지합니다. 이는 알과 부화된 새끼를 보호하기 위한 환경법이며, 위반 시 벌금이 부과됩니다. 그런데 종종 해변에 보이는 ‘Dog Off‑Leash’ 표지판이 실제로는 ‘Dog Prohibited’ 표지판으로 바뀐 경우가 많아요. 그래서 방문 전에 표지판을 꼭 확인하셔야 합니다. 퀸즐랜드의 아름다운 해변을 지키는 작은 실천, 여러분도 동참해 주세요! 구독과 좋아요 잊지 마세요!",
     "audio_path": "audio\\0015_Australia (Queensland).mp3",
-    "audio_path_v2": "audio\\0015_Australia (Queensland)_v2.mp3",
-    "timing_path_v2": "audio\\0015_Australia (Queensland)_v2_timing.json",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0015_Australia (Queensland)_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0015_Australia (Queensland)_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0015_Australia (Queensland)_v5.mp4",
-    "status_v5": "video_done"
+    "status_v5": "video_done",
+    "title_line1": "퀸즐랜드해변금개",
+    "title_line2": "거북이 알은 안전할까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "개 *출입 금지*"
+      },
+      {
+        "s": 3,
+        "text": "거북이 알 기간 *금지*"
+      },
+      {
+        "s": 5,
+        "text": "*표지판* 확인 필수"
+      },
+      {
+        "s": 7,
+        "text": "해변 *보호* 동참"
+      }
+    ],
+    "image_queries": [
+      "Queensland beach no dogs sign",
+      "Queensland shoreline sunrise",
+      "Queensland turtle nesting beach",
+      "Queensland coastal wildlife protection",
+      "Queensland dog prohibited beach sign",
+      "Queensland beach sign closeup",
+      "Queensland beach conservation volunteers",
+      "Queensland ocean waves"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Queensland beach no dogs sign",
+      "Queensland shoreline sunrise",
+      "Queensland turtle nesting beach",
+      "Queensland coastal wildlife protection",
+      "Queensland dog prohibited beach sign",
+      "Queensland beach sign closeup",
+      "Queensland beach conservation volunteers",
+      "Queensland ocean waves"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "MannyDream",
+        "page": "https://pixabay.com/photos/sea-waves-coast-surfing-surfers-5106327/",
+        "id": 5106327
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "YCreative",
+        "page": "https://pixabay.com/photos/sunrise-fingal-heads-fingal-2404998/",
+        "id": 2404998
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/turtle-baby-turtle-beach-chick-2201433/",
+        "id": 2201433
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "sandid",
+        "page": "https://pixabay.com/photos/pelicans-sea-beach-birds-pair-446864/",
+        "id": 446864
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ivabalk",
+        "page": "https://pixabay.com/photos/mark-prohibition-input-dogs-4002082/",
+        "id": 4002082
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "moremilu",
+        "page": "https://pixabay.com/photos/mission-beach-australia-palm-trees-4337407/",
+        "id": 4337407
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "stanbalik",
+        "page": "https://pixabay.com/photos/queensland-beach-sky-landscape-3973681/",
+        "id": 3973681
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Freesally",
+        "page": "https://pixabay.com/photos/panoramic-landscape-clouds-rain-949448/",
+        "id": 949448
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0015_Australia (Queensland).srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0015_Australia (Queensland).mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Mongolia",
@@ -895,15 +1092,123 @@
     "twist": "특히 2024년에는 ‘8’이 행운의 숫자로 여겨져, 800,000 ₫(베트남 동) 같은 큰 금액이 인기였습니다.",
     "verify_note": "Vietnam Tet lì xì even number tradition 2024 lucky number 8",
     "created_at": "2026-09-14T05:08:16.951297+00:00",
-    "status": "tts_done",
+    "status": "video_done",
     "narration": "베트남 설날, 빨간 봉투에 반드시 짝수 금액만 넣어야 한다? Tết, 즉 베트남의 새해에는 어른이 어린이에게 ‘lì xì’라고 부르는 빨간 봉투에 돈을 넣어 줍니다. 여기서 중요한 점은 금액을 짝수로 맞추는 것이 관습이라는 것인데요, 짝수는 행운을, 홀수는 불운을 의미한다고 믿습니다. 그래서 대부분 2,000₫, 4,000₫, 6,000₫ 같은 금액이 흔히 들어갑니다.  \n\n특히 2024년에는 숫자 ‘8’이 행운의 숫자로 강조돼, 800,000₫ 같은 큰 금액을 넣는 경우가 인기를 끌었습니다. ‘8’은 부와 번영을 상징하기 때문에, 아이들에게 더 큰 복을 빌어 주는 의미가 담겨 있죠.  \n\n이렇게 베트남의 설날 전통은 작은 빨간 봉투 하나에 담긴 금액까지도 의미를 담고 있습니다. 여러분도 기회가 된다면 직접 체험해 보세요.  \n\n팔로우하면 더 많은 문화 상식 알려드릴게요.",
     "audio_path": "audio\\0019_Vietnam.mp3",
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0019_Vietnam_v5.mp4",
     "status_v5": "video_done",
-    "audio_path_v2": "audio\\0019_Vietnam_v2.mp3",
-    "timing_path_v2": "audio\\0019_Vietnam_v2_timing.json",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0019_Vietnam_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0019_Vietnam_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "title_line1": "베트남 설날 빨간봉투",
+    "title_line2": "짝수만 넣어야 할까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "빨간 봉투 *짝수*"
+      },
+      {
+        "s": 3,
+        "text": "*짝수*는 행운"
+      },
+      {
+        "s": 5,
+        "text": "2024 *8* 행운"
+      }
+    ],
+    "image_queries": [
+      "red envelope even number",
+      "Vietnam Tet red envelope",
+      "even number lucky red envelope",
+      "red envelope 2000 dong",
+      "red envelope 2024 lucky 8",
+      "red envelope with number 8",
+      "Vietnam Tet red envelope tradition",
+      "hand holding red envelope",
+      "Tet celebration lantern"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "red envelope even number",
+      "Vietnam Tet red envelope",
+      "even number lucky red envelope",
+      "red envelope 2000 dong",
+      "red envelope 2024 lucky 8",
+      "red envelope with number 8",
+      "Vietnam Tet red envelope tradition",
+      "hand holding red envelope",
+      "Tet celebration lantern"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Van3ssa_",
+        "page": "https://pixabay.com/photos/christmas-gift-present-winter-snow-7652081/",
+        "id": 7652081
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Duong_Dinh_Luc",
+        "page": "https://pixabay.com/photos/little-girl-vietnam-farmers-market-7868485/",
+        "id": 7868485
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/ladybug-figure-fun-lucky-bug-800896/",
+        "id": 800896
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "ulleo",
+        "page": "https://pixabay.com/photos/envelope-letter-love-letter-love-2898268/",
+        "id": 2898268
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "HelgaKa",
+        "page": "https://pixabay.com/photos/beetle-ladybug-red-beetles-with-dots-4246602/",
+        "id": 4246602
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Darkmoon_Art",
+        "page": "https://pixabay.com/photos/heart-paper-key-envelope-letter-3094261/",
+        "id": 3094261
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "PHAMgraphy",
+        "page": "https://pixabay.com/photos/woman-beauty-portrait-fashion-9354692/",
+        "id": 9354692
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/apple-red-hand-apple-plantation-2788662/",
+        "id": 2788662
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "uyenhqvn",
+        "page": "https://pixabay.com/photos/tet-vietnamese-tradition-spring-10106277/",
+        "id": 10106277
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0019_Vietnam.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0019_Vietnam.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Bhutan",
@@ -13623,8 +13928,40 @@
     "verify_note": "Social season",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "verified",
-    "status_v6": "video_done"
+    "status": "scripted",
+    "status_v6": "video_done",
+    "narration": "봄이 오면 귀족들이 갑자기 도시로 이사 와서 파티만 연다고? 실제로 19세기부터 20세기 초까지 영국과 아일랜드의 사회 엘리트들은 봄·여름이 되면 런던과 더블린으로 이동했습니다. 그곳에서 볼, 디너 파티, 자선 행사 등을 열며 ‘소셜 시즌’이라 불리는 일정을 즐겼죠. 이때문에 귀족들의 생활이 도시 중심으로 바뀌었고, 계절마다 화려한 연회가 이어졌습니다. 하지만 제1차 세계대전이 발발하면서 이런 도시 거주와 파티 문화는 크게 줄어들었습니다. 오늘날엔 비슷한 행사들이 주로 영국에서 열리며, 아일랜드에서는 과거만큼 필수적인 관습은 아니게 되었어요. 그럼에도 불구하고, 여전히 ‘소셜 시즌’이라는 이름만 남아 과거 귀족들의 화려한 봄·여름 풍경을 떠올리게 합니다. 어느새 사라진 전통이지만, 그 흔적은 여전히 우리 눈앞에 남아 있습니다.",
+    "title_line1": "아일랜드 귀족 시즌",
+    "title_line2": "봄에 파티만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "귀족들 *도시* 이주?"
+      },
+      {
+        "s": 2,
+        "text": "봄 *시즌* 시작"
+      },
+      {
+        "s": 4,
+        "text": "화려한 *연회* 연속"
+      },
+      {
+        "s": 5,
+        "text": "전쟁으로 *파티* 종결"
+      }
+    ],
+    "image_queries": [
+      "noble family moving city",
+      "spring season start London",
+      "dinner party social season",
+      "lavish banquet hall",
+      "empty ballroom after war",
+      "modern charity event London",
+      "old ballroom spring decorations",
+      "antique ballroom chandelier"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "문화마다 다른 악수 동작",
@@ -13655,8 +13992,40 @@
     "verify_note": "Qingming Festival",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "verified",
-    "status_v6": "video_done"
+    "status": "scripted",
+    "status_v6": "video_done",
+    "narration": "청명절엔 무덤을 청소하면서도 봄을 축하한다니? 바로 그 이유가 있습니다. 청명절은 5번째 절기의 첫날이자 춘분 이후 15번째 날에 찾아오는 전통 명절로, 봄이 깊어지는 시점을 기념합니다. 이날 가족들은 조상의 묘를 찾아가 흙을 털고, 꽃과 음식을 올리며 무덤을 정리합니다. 동시에 따뜻한 햇살과 새싹이 돋는 새봄을 맞이하는 축제이기도 하죠. 같은 날에 조상을 기리고 새봄을 맞이한다는 두 가지 의미가 동시에 담겨 있다는 점, 바로 청명절만의 독특한 이중성입니다. 다만 이 전통은 주로 중국계 사람들 사이에서 지켜지는 관습이라는 점을 기억해 주세요. 조상의 기억을 새롭게 정리하고, 또 새로운 시작을 맞이하는 청명절, 그 균형 잡힌 의미가 오늘도 사람들의 마음을 울립니다.",
+    "title_line1": "청명절, 이중 의미",
+    "title_line2": "무덤 청소와 봄 축하?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*무덤* 청소?"
+      },
+      {
+        "s": 4,
+        "text": "가족과 *묘* 정리"
+      },
+      {
+        "s": 5,
+        "text": "*새봄* 축제 시작"
+      },
+      {
+        "s": 6,
+        "text": "청명 *이중성*"
+      }
+    ],
+    "image_queries": [
+      "grave cleaning Taiwan",
+      "Qingming Festival tradition",
+      "spring season Taiwan landscape",
+      "family grave cleaning",
+      "spring festival start",
+      "Qingming dual meaning",
+      "Chinese ancestral rite",
+      "spring renewal ceremony"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "베이비 샤워 (Baby shower) 파티",
@@ -13703,7 +14072,219 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "verified",
-    "status_v6": "video_done"
+    "status": "scripted",
+    "status_v6": "video_done",
+    "narration": "차 한 잔에 세계 여행이 숨어 있다?! 티 파티는 차와 가벼운 다과를 함께 즐기는 사회적 모임입니다. 원래는 중국에서 시작돼 유럽으로 전파되었죠. 유럽에서는 오후에 티포트에 차를 붓고, 우유와 설탕을 넣어 마십니다. 그와 동시에 샌드위치, 스콘, 케이크 같은 작은 디저트를 곁들여요. 놀라운 점은, 오늘날 우리가 ‘유럽식’이라 부르는 티 파티가 사실은 중국 전통에서 온 관습이라는 사실입니다. 이 문화는 주로 중국과 유럽 문화권에서 나타나며, 두 지역의 사교 생활에 색다른 여유를 선사합니다. 차 한 잔이 이렇게 긴 여정을 거쳐 우리 일상에 스며들었다는 생각, 다시 한 번 떠올려 보세요.",
+    "title_line1": "인도, 유럽식 티파티",
+    "title_line2": "차 한 잔에 여행?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "차 한 잔에 *여행*!"
+      },
+      {
+        "s": 3,
+        "text": "티 파티는 *중국*에서"
+      },
+      {
+        "s": 5,
+        "text": "작은 디저트와 *스콘*"
+      },
+      {
+        "s": 6,
+        "text": "*유럽식* 티 파티는"
+      }
+    ],
+    "image_queries": [
+      "tea cup on map",
+      "elegant tea party setting",
+      "Chinese tea ceremony",
+      "European afternoon tea pot",
+      "scones and small desserts",
+      "European style tea party",
+      "social gathering with tea",
+      "traveling tea cup concept"
+    ],
+    "scene_count": 10
+  },
+  {
+    "topic": "베트남 (Vietnam) 개고기 소비 현황",
+    "hook": "베트남에서 매년 5백만 마리 개가 고기로 사라진다!",
+    "body": "베트남에서는 개고기 소비가 합법이며, 설문에 따르면 40%가 먹어본 적 있다. 하지만 최근 조사에서는 91%가 금지를 원하고, 95%는 문화가 아니라고 답했다.",
+    "twist": "그럼에도 실제로 개고기를 먹는 사람은 전체 인구 중 소수에 불과하다.",
+    "caveat": "이 수치는 Four Paws 2020 보고서와 2021년 설문을 기반으로 한다.",
+    "country": "베트남",
+    "theme": "생활문화",
+    "wiki_title": "Dog meat consumption in Vietnam",
+    "source_url": "https://en.wikipedia.org/wiki/Dog_meat_consumption_in_Vietnam",
+    "verify_note": "Dog meat consumption in Vietnam",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:10.938651+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Songkran (Songkran), 태국 (Thailand) 새해는 4월",
+    "hook": "태국 새해가 1월이 아니라 4월이라면?",
+    "body": "Songkran(สงกรานต์)은 4월 13일에 시작해 14·15일까지 이어지는 전통 새해 축제다. 원래는 1월이 공식 새해였지만 1888년에 4월 1일로, 1940년에 1월 1일로 바뀌었다.",
+    "twist": "하지만 공식 새해와는 별개로 Songkran은 전통적으로 기념된다.",
+    "caveat": "이 내용은 태국 연혁과 공식 연도 변경 기록을 바탕으로 한다.",
+    "country": "모로코",
+    "theme": "축제/의례",
+    "wiki_title": "Songkran (Thailand)",
+    "source_url": "https://en.wikipedia.org/wiki/Songkran_(Thailand)",
+    "verify_note": "Songkran (Thailand)",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:10.938651+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "필리핀 (Philippines) 사진의 서양 시작",
+    "hook": "필리핀 최초 사진관을 연 사람은 서양인이라고?",
+    "body": "필리핀에서 사진술은 1840년대부터 1890년대 사이에 서양 사진가들이 도입했다. 초기 사진관은 식민지 소식, 관광, 인류학 등 다양한 목적에 사용되었다.",
+    "twist": "그때 사진은 사회적 지위 과시 수단이기도 했다.",
+    "caveat": "이 정보는 스페인 식민지 시기의 기록에 근거한다.",
+    "country": "필리핀",
+    "theme": "생활문화",
+    "wiki_title": "Photography in the Philippines",
+    "source_url": "https://en.wikipedia.org/wiki/Photography_in_the_Philippines",
+    "verify_note": "Photography in the Philippines",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:10.938651+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
+    "hook": "레게가 대마 없이 탄생했을까요?",
+    "body": "자메이카(Jamaica)의 라스타파리(Rastafari) 운동과 밥 말리(Bob Marley)는 대마초를 영적 도구로 사용하며 레게 음악을 세계에 알렸습니다.",
+    "twist": "대마초는 고대 인도에서부터 영적 의식에 쓰였던 오래된 전통이었습니다.",
+    "caveat": "이 해석은 라스타파리 신자와 레게 팬 사이에서 주로 받아들여집니다.",
+    "country": "자메이카",
+    "theme": "관습/예절",
+    "wiki_title": "Cannabis culture",
+    "source_url": "https://en.wikipedia.org/wiki/Cannabis_culture",
+    "verify_note": "Cannabis culture",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:14.283401+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "불가리아 장미 축제, 도시 전체가 휴일",
+    "hook": "도시 전체가 장미 따기 위해 쉬는 날이 있다면?",
+    "body": "불가리아(Bulgaria)에서는 5월 말부터 6월 중순까지 카잔라크(Kazanlak) 등 여러 도시에서 장미 축제(Rose Festival)가 열리며, 공식 휴일로 지정됩니다.",
+    "twist": "축제에서는 장미 여왕을 crown하고, 수천 명이 퍼레이드에 참여합니다.",
+    "caveat": "휴일은 카잔라크, 칼로보, 구르코보 등 특정 도시에서만 적용됩니다.",
+    "country": "불가리아",
+    "theme": "축제/의례",
+    "wiki_title": "Rose Festival, Bulgaria",
+    "source_url": "https://en.wikipedia.org/wiki/Rose_Festival,_Bulgaria",
+    "verify_note": "Rose Festival, Bulgaria",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:14.283401+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
+    "hook": "페루 음식이 사실은 세계 여행을 한 요리라고?",
+    "body": "페루(Peru) 요리는 원주민 전통에 스페인, 이탈리아, 독일, 중국, 일본, 중동, 아프리카 등 다양한 이민자들의 영향을 받아 현지 재료와 결합했습니다.",
+    "twist": "재료가 부족했을 때 이민자들은 현지 식재료로 레시피를 재창조했습니다.",
+    "caveat": "이 혼합은 식민지 시대 이후 수세기에 걸쳐 서서히 형성되었습니다.",
+    "country": "페루",
+    "theme": "음식문화",
+    "wiki_title": "Peruvian cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Peruvian_cuisine",
+    "verify_note": "Peruvian cuisine",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:14.283401+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "절(굽히기)의 다양한 문화적 형태",
+    "hook": "아시아뿐 아니라 유럽 귀족도 절을 한다니, 믿어지나요?",
+    "body": "절은 몸통과 머리를 낮추는 사회적 제스처로, 베트남(Vietnam) 등 아시아 전역에서 흔하고, 유럽의 귀족과 귀족층에서도 전통적으로 행해졌어요.",
+    "twist": "인도네시아(Indonesia)에서는 머리만 숙이는 것으로도 절이 인정된답니다.",
+    "caveat": "이 관습은 전통적인 사회적·문화적 맥락에 한정돼요.",
+    "country": "베트남",
+    "theme": "언어/이름",
+    "wiki_title": "Bowing",
+    "source_url": "https://en.wikipedia.org/wiki/Bowing",
+    "verify_note": "Bowing",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:18.330558+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "핀 교환의 숨은 세계",
+    "hook": "디즈니 파크에서만 주는 비밀 핀, 당신은 가지고 있나요?",
+    "body": "핀 거래와 수집은 에나멜 핀을 사고 팔고 교환하며 취미로 즐기는 활동으로, 월트 디즈니 월드(Walt Disney World)·디즈니랜드(Disneyland)·시월드(SeaWorld)·유니버설 리조트(Universal Resorts) 같은 테마파크와 올림픽 게임스(Olympic Games)·리틀 리그 월드 시리즈(Little League World Series) 같은 스포츠 행사에서도 이뤄져요.",
+    "twist": "대부분의 핀은 평평하고 광택이 나는 디자인이라는 점, 알고 계셨나요?",
+    "caveat": "핀이 교환되는 장소와 이벤트에 따라 제한이 있어요.",
+    "country": "싱가포르",
+    "theme": "관습/예절",
+    "wiki_title": "Pin trading and collecting",
+    "source_url": "https://en.wikipedia.org/wiki/Pin_trading_and_collecting",
+    "verify_note": "Pin trading and collecting",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:18.330558+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "미국식 중식, 실제로는 중국 음식이 아니다",
+    "hook": "미국 중식당 메뉴, 과연 진짜 중국 요리일까?",
+    "body": "미국식 중식(American Chinese cuisine)은 중국계 미국인들이 만든 요리 스타일이며, 손님 입맛에 맞게 변형돼 중국 본토의 요리와 많이 다릅니다.",
+    "twist": "20세기 후반에는 미국 내 하나의 지역 요리로 인정받았습니다.",
+    "caveat": "미국 내 중식당을 중심으로 한 사실이며, 중국 본토에서는 다르게 인식됩니다.",
+    "country": "미국",
+    "theme": "음식문화",
+    "wiki_title": "American Chinese cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/American_Chinese_cuisine",
+    "verify_note": "American Chinese cuisine",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:23.746550+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "과일박쥐, 괜찮은 별미?",
+    "hook": "과일박쥐가 고급 요리 재료라면?",
+    "body": "아시아·아프리카·태평양 연안 등 여러 지역에서 사람들은 박쥐를 식재료로 사용하고, 특히 과일박쥐(멜라바트) 종의 절반이 식용으로 사냥됩니다.",
+    "twist": "괌에서는 마리아나 과일박쥐(Pteropus mariannus)가 진미로 여겨집니다.",
+    "caveat": "식용은 해당 지역 문화에 한정된 관습이며, 전 세계적으로 일반적이지 않습니다.",
+    "country": "볼리비아",
+    "theme": "음식문화",
+    "wiki_title": "Bat as food",
+    "source_url": "https://en.wikipedia.org/wiki/Bat_as_food",
+    "verify_note": "Bat as food",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:23.746550+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "미국 출신 교황, 남미에서 사역",
+    "hook": "시카고 태생 교황이 남미에서 일한다니?",
+    "body": "레오 14세 교황(Pope Leo XIV)은 시카고(Chicago) 출신으로, 1977년 성 아우구스티누스 수도회(Order of Saint Augustine)에서 수사 생활을 시작하고 1982년 사제로 서품받았습니다.",
+    "twist": "그는 1980·90년대에 페루(Peru)에서 광범위한 선교 활동을 펼쳤어요.",
+    "caveat": "이 내용은 교황의 초기 사역과 교육 경력에 초점을 둔 사실이며, 현재 직무와는 별개입니다.",
+    "country": "쿠바",
+    "theme": "언어/이름",
+    "wiki_title": "Pope Leo XIV",
+    "source_url": "https://en.wikipedia.org/wiki/Pope_Leo_XIV",
+    "verify_note": "Pope Leo XIV",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:23.746550+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "자살과 법: 시신·재산까지 영향을 미치는 규제",
+    "hook": "자살이 범죄라면, 남은 것은 무엇을 법이 잡을까?",
+    "body": "자살은 일부 지역에서 범죄로 남아 있지만, 대부분 국가에서 비범죄화되었고 여전히 사회적 낙인이 있다. 고대 로마(ancient Rome), 중세 일본(medieval Japan), 오늘날 티베트 자치구(Tibet Autonomous Region)에서는 자살을 극단적 자유 표현으로 사용한 사례가 있다.",
+    "twist": "시신 자체는 법의 손이 닿지 않지만, 시신 처리와 재산·가족에 대한 법적 제재가 존재한다.",
+    "caveat": "이 내용은 자살이 아직 범죄인 지역에 한정된다.",
+    "country": "칠레",
+    "theme": "법/제도",
+    "wiki_title": "Suicide legislation",
+    "source_url": "https://en.wikipedia.org/wiki/Suicide_legislation",
+    "verify_note": "Suicide legislation",
+    "confidence": "source",
+    "created_at": "2026-10-22T11:28:56.601427+00:00",
+    "status": "unverified"
   }
 ]
