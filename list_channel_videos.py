@@ -10,6 +10,7 @@
 import argparse
 import csv
 import json
+import sys
 import re
 from pathlib import Path
 
@@ -59,7 +60,17 @@ def secs(iso):
     return h * 3600 + mi * 60 + s
 
 
+def _utf8_out():
+    """윈도우 cp949 콘솔/리다이렉트(>)에서 ✔ ⚠ 같은 문자가 에러 나지 않게"""
+    for st in (sys.stdout, sys.stderr):
+        try:
+            st.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 def main():
+    _utf8_out()
     ap = argparse.ArgumentParser()
     ap.add_argument("secret")
     ap.add_argument("--token", default="yt_readonly_token.json")

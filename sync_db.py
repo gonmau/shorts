@@ -10,10 +10,11 @@
 병합 규칙
  - 한쪽에만 있는 값은 그대로 가져온다. 업로드 정보(youtube_id 등)는 있는 쪽을 쓴다.
  - 상태(status)는 더 진행된 쪽 (unverified < verified < scripted < tts_done < video_done).
-   폐기(rejected)는 진행 순서로 비교할 수 없어 '충돌'로 표시하고 --prefer 쪽을 따른다.
+   폐기(rejected)와 영상완료가 갈리면 영상완료, 그 밖의 폐기 충돌은 '충돌'로 표시하고 --prefer 쪽을 따른다.
  - 영상/음성 파일 경로(PC·GitHub 환경마다 다름)는 비교하지 않고 각자 값을 유지한다.
+ - 폐기(rejected)와 영상완료(video_done)가 갈리면 영상완료를 따른다 (이미 만든 영상이 있으므로).
  - 그 밖의 칸(대본/제목 등)이 서로 다르면 '충돌'로 표시하고 --prefer 쪽을 따른다.
- - 소재 순서(번호)는 영상 파일명에 쓰이므로 바꾸지 않는다. 양쪽에 서로 다른 새 소재가 추가됐으면 뒤에 이어 붙이고 경고한다.
+ - 소재 순서(번호)는 영상 파일명에 쓰이므로 --base(기본 PC) 쪽 번호를 유지하고, 상대쪽에만 있는 소재는 맨 뒤에 붙인다.
 GitHub 읽기: GITHUB_TOKEN 이 있으면 API로, 없으면 공개 저장소의 raw 주소로 읽는다.
 """
 import argparse
@@ -61,31 +62,34 @@ def push_github(repo, branch, token, db, sha, msg):
     r.raise_for_status()
 
 
-def align(G, L):
-    """[(g 또는 None, l 또는 None)] — 앞에서부터 소재 키가 같은 구간은 위치로, 나머지는 키로 맞춘다. 경고도 돌려준다."""
-    p = 0
-    while p < min(len(G), len(L)) and key(G[p]) == key(L[p]):
-        p += 1
-    pairs = [(G[i], L[i]) for i in range(p)]
+def align(G, L, base="local"):
+    """[(g 또는 None, l 또는 None)] — base 쪽의 순서(번호)를 그대로 유지하고, 상대쪽에만 있는 소재는 맨 뒤에 붙인다."""
+    P, S = (L, G) if base == "local" else (G, L)
+    sm = {}
+    for x in S:
+        sm.setdefault(key(x), []).append(x)
+    used, pairs = set(), []
+    moved = 0
+    for i, p in enumerate(P):
+        x = next((c for c in sm.get(key(p), []) if id(c) not in used), None)
+        if x is not None:
+            used.add(id(x))
+            if i >= len(S) or key(S[i]) != key(p):
+                moved += 1
+        pairs.append((p, x))
+    only_s = [x for x in S if id(x) not in used]
+    pairs += [(None, x) for x in only_s]
+    if base == "local":
+        pairs = [(x, p) for p, x in pairs]
+    else:
+        pairs = [(p, x) for p, x in pairs]
+    # pairs 는 이제 (g, l)
     warns = []
-    lm = {}
-    for l in L[p:]:
-        lm.setdefault(key(l), []).append(l)
-    used = set()
-    rest = []
-    for g in G[p:]:
-        l = next((c for c in lm.get(key(g), []) if id(c) not in used), None)
-        if l is not None:
-            used.add(id(l))
-        rest.append((g, l))
-    rest += [(None, l) for l in L[p:] if id(l) not in used]
-    pairs += rest
-    g_only = sum(1 for g, l in rest if l is None)
-    l_only = sum(1 for g, l in rest if g is None)
-    if any(g is not None and l is not None for g, l in rest):
-        warns.append(f"앞 {p}개 이후 소재 순서가 서로 달라 (국가,주제) 키로 맞췄습니다. 번호가 바뀐 소재가 있을 수 있으니 확인하세요.")
-    if g_only and l_only:
-        warns.append(f"양쪽에 서로 다른 새 소재가 추가됨 (GitHub {g_only}개 / PC {l_only}개): 뒤에 이어 붙이며 번호가 밀립니다. 영상 파일명(번호)을 확인하세요.")
+    if moved:
+        warns.append(f"양쪽 소재 순서가 달라 {moved}개 소재의 번호가 다릅니다. {'PC' if base == 'local' else 'GitHub'} 번호를 기준으로 유지합니다.")
+    if only_s:
+        warns.append(f"{'GitHub' if base == 'local' else 'PC'}에만 있는 소재 {len(only_s)}개는 맨 뒤에 번호가 새로 붙습니다 "
+                     f"({len(P)}번부터). 그쪽에서 이미 영상 파일을 만들었다면 파일명 번호가 달라집니다.")
     return pairs, warns
 
 
@@ -109,12 +113,17 @@ def merge_item(g, l, side, prefer):
             out[k] = gv
         elif k in KEEP_NONEMPTY:
             out[k] = lv
+        elif k == "status" and {gv, lv} == {"rejected", "video_done"}:
+            out[k] = "video_done"   # 이미 영상을 만든 소재는 폐기 표시보다 영상완료를 우선 (UI에서 언제든 다시 폐기 가능)
+            conf.append((k, gv, lv, "video_done 우선"))
         elif k in ("status", "status_v6") and gv in RANK and lv in RANK:
             out[k] = gv if RANK[gv] > RANK[lv] else lv
         else:
             pick = lv if prefer == "local" else gv
             out[k] = pick
             conf.append((k, gv, lv, "PC" if prefer == "local" else "GitHub"))
+    if out.get("status") != "rejected":
+        out.pop("reject_reason", None)
     # 상태 일관성: 영상이 끝난 쪽의 status_v6 가 이겼는데 status 가 뒤처지면 맞춘다
     return out, conf
 
@@ -124,8 +133,8 @@ def short(v, n=40):
     return s if len(s) <= n else s[:n] + "…"
 
 
-def merge_all(G, L, side, prefer):
-    pairs, warns = align(G, L)
+def merge_all(G, L, side, prefer, base="local"):
+    pairs, warns = align(G, L, base)
     merged, report = [], []
     for g, l in pairs:
         m, conf = merge_item(g, l, side, prefer)
@@ -141,12 +150,24 @@ def merge_all(G, L, side, prefer):
     return merged, report, warns
 
 
+def _utf8_out():
+    """윈도우 cp949 콘솔/리다이렉트(>)에서 ✔ ⚠ 같은 문자가 에러 나지 않게"""
+    for st in (sys.stdout, sys.stderr):
+        try:
+            st.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 def main():
+    _utf8_out()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo", required=True)
     ap.add_argument("--branch", default="main")
     ap.add_argument("--local", default="facts_db.json")
     ap.add_argument("--prefer", choices=["local", "github"], default="local")
+    ap.add_argument("--base", choices=["local", "github"], default="local", help="소재 번호(순서)를 어느 쪽 기준으로 유지할지 (기본 PC)")
+    ap.add_argument("--detail", action="store_true", help="상태 충돌과, 영상/업로드가 걸린 대본 충돌을 소재별로 자세히 출력")
     ap.add_argument("--apply", action="store_true", help="PC 파일을 병합본으로 갱신")
     ap.add_argument("--push", action="store_true", help="병합본을 GitHub에도 커밋 (--apply 와 함께)")
     a = ap.parse_args()
@@ -155,7 +176,7 @@ def main():
     L = json.load(open(a.local, encoding="utf-8")) if os.path.exists(a.local) else []
     G, sha = fetch_github(a.repo, a.branch, token)
     print(f"PC {len(L)}개 / GitHub {len(G)}개 소재")
-    merged, report, warns = merge_all(G, L, "local", a.prefer)
+    merged, report, warns = merge_all(G, L, "local", a.prefer, a.base)
     for w in warns:
         print("⚠️ " + w)
     if not report:
@@ -165,7 +186,33 @@ def main():
         g_, l_ = None, None
         for k, gv, lv, pick in conf:
             print(f"   ⚔ {k}: GitHub={short(gv)} | PC={short(lv)} → {pick} 선택")
+    if a.detail:
+        gm = {key(g): g for g in G}
+        lm = {key(l): l for l in L}
+        print("\n[상세] 상태 충돌 + 영상/업로드가 걸린 대본 충돌")
+        for idx, ref, kind, conf in report:
+            g, l = gm.get(key(ref)), lm.get(key(ref))
+            if not g or not l:
+                continue
+            ck = {c[0] for c in conf}
+            risky = any(x.get("youtube_id") or x.get("status_v6") == "video_done" for x in (g, l))
+            if "status" in ck or ("narration" in ck and risky):
+                def st(x):
+                    return f"{x.get('status')}{'/영상' if x.get('status_v6') == 'video_done' else ''}{'/업로드' if x.get('youtube_id') else ''}"
+                print(f"[PC번호 {idx}] {ref.get('country', '')} - {str(ref.get('topic', ''))[:25]}")
+                print(f"   GitHub: {st(g)} | 대본 {len(str(g.get('narration') or ''))}자 '{str(g.get('narration') or '')[:22]}'")
+                print(f"   PC    : {st(l)} | 대본 {len(str(l.get('narration') or ''))}자 '{str(l.get('narration') or '')[:22]}'")
     n_conf = sum(len(c) for *_, c in report)
+    from collections import Counter
+    kinds = Counter(k for _, _, kind, _ in report for k in [kind])
+    fields = Counter(c[0] for *_, cf in report for c in cf)
+    print("\n[요약] " + " · ".join(f"{k} {n}" for k, n in kinds.items()))
+    if fields:
+        print("[충돌 칸 종류] " + " · ".join(f"{k} {n}" for k, n in fields.most_common()))
+    # 값만 다르고 의미는 같은 흔한 경우(예: status 가 한쪽만 다름)를 보기 쉽게
+    stat = Counter((c[1], c[2]) for *_, cf in report for c in cf if c[0] == "status")
+    for (gv, lv), n in stat.most_common(8):
+        print(f"   status GitHub={gv} / PC={lv}: {n}개")
     print(f"\n차이 {len(report)}개 소재 · 충돌 {n_conf}칸 (--prefer {a.prefer})")
     if not a.apply:
         print("미리보기입니다. 적용하려면 --apply (GitHub에도 올리려면 --apply --push)")
@@ -176,7 +223,7 @@ def main():
     if a.push:
         if not token:
             sys.exit("GITHUB_TOKEN 환경변수가 없어 GitHub에는 올리지 못했습니다.")
-        merged_gh, _, _ = merge_all(G, L, "github", a.prefer)
+        merged_gh, _, _ = merge_all(G, L, "github", a.prefer, a.base)
         _, sha = fetch_github(a.repo, a.branch, token)   # 가장 최신 sha
         push_github(a.repo, a.branch, token, merged_gh, sha, "chore: sync facts_db.json from PC [skip ci]")
         print("✔ GitHub에 커밋했습니다.")

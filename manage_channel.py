@@ -27,14 +27,15 @@ from pathlib import Path
 PRIV_KO = {"public": "공개", "private": "비공개", "unlisted": "일부공개"}
 PRIV_EN = {v: k for k, v in PRIV_KO.items()}
 SCOPES = ["https://www.googleapis.com/auth/youtube"]
-OLD_BEFORE = "2026-09-01"   # 이 날짜 이전 업로드는 쇼츠 채널 소재가 아닌 기존 영상으로 취급
-COLS = ["영상ID", "현재공개", "현재제목", "업로드일", "종류", "소재번호", "매칭근거", "메모", "새제목", "새공개", "삭제", "링크"]
+OLD_BEFORE = "2026-09-01"   # 이 날짜 이전 업로드는 쇼츠 채널 소재가 아닌 기존 영상으로 취급 (plan --old-before 로 변경)
+COLS = ["영상ID", "현재공개", "현재제목", "업로드일", "종류", "길이(초)", "조회수", "소재번호", "매칭근거", "메모", "새제목", "새공개", "삭제", "링크"]
 
 
 # ---------- 순수 함수 (테스트 가능) ----------
 def clean_title(t):
     """번호 접두사(0044 )와 한글 앞의 영어 나라명(Japan 일본…)을 떼어 한글 제목으로 통일."""
-    n = re.sub(r"^\d{4}\s+", "", t.strip())
+    n = re.sub(r"#shorts\b", "", t, flags=re.I)          # 제목의 #Shorts 제거 (다른 해시태그는 유지)
+    n = re.sub(r"^\d{4}\s+", "", n.strip())
     n = re.sub(r"^[A-Za-z][A-Za-z.'’ -]*?\s+(?=[가-힣])", "", n)
     n = " ".join(n.split())
     return n[:100].rstrip() if n else t
@@ -55,9 +56,15 @@ def db_title(item):
 def match_video(title, db, used):
     """(소재번호, 근거) 또는 ("", "")"""
     m = re.match(r"^(\d{4})\s", title)
-    if m and int(m.group(1)) < len(db):
-        return int(m.group(1)), "번호"
     nt = norm(title)
+    num_bad = None
+    if m and int(m.group(1)) < len(db):
+        n = int(m.group(1))
+        cand = norm(db_title(db[n]))
+        # PC/GitHub 에서 번호가 달라졌을 수 있으므로, 번호 소재의 제목이 영상 제목과 닮았을 때만 번호를 믿는다
+        if cand and nt and (cand in nt or nt in cand or difflib.SequenceMatcher(None, nt, cand).ratio() >= 0.45):
+            return n, "번호"
+        num_bad = n
     best, second, bi = 0.0, 0.0, None
     for i, f in enumerate(db):
         cand = norm(db_title(f))
@@ -69,7 +76,9 @@ def match_video(title, db, used):
         elif r > second:
             second = r
     if bi is not None and best >= 0.72 and best - second >= 0.08:
-        return bi, f"제목유사 {best:.2f}"
+        return bi, f"제목유사 {best:.2f}" + (f" (번호 {num_bad} 불일치)" if num_bad is not None else "")
+    if num_bad is not None:
+        return "", f"번호 {num_bad} 와 제목이 달라 보류 — 소재번호를 직접 채우세요"
     return "", ""
 
 
@@ -100,10 +109,16 @@ def find_duplicates(rows):
 
 def build_rows(videos, db):
     rows = []
+    linked = {}   # 이전에 sync-db 로 기록된 영상ID → 소재번호 (직접 채운 소재번호도 여기 남는다)
+    for i, f in enumerate(db):
+        if f.get("youtube_id"):
+            linked.setdefault(f["youtube_id"], i)
     for v in videos:
         sn, st = v["snippet"], v["status"]
         title, date = sn["title"], sn["publishedAt"][:10]
-        if date >= OLD_BEFORE:
+        if v["id"] in linked:
+            idx, why = linked[v["id"]], "DB기록"
+        elif date >= OLD_BEFORE:
             idx, why = match_video(title, db, None)
         else:
             idx, why = "", ""
@@ -111,6 +126,7 @@ def build_rows(videos, db):
         rows.append({
             "영상ID": v["id"], "현재공개": PRIV_KO.get(st.get("privacyStatus"), st.get("privacyStatus")),
             "현재제목": title, "업로드일": date, "종류": "쇼츠" if _secs(v["contentDetails"].get("duration")) <= 180 else "롱폼",
+            "길이(초)": _secs(v["contentDetails"].get("duration")), "조회수": v.get("statistics", {}).get("viewCount", ""),
             "소재번호": idx, "매칭근거": why, "메모": "기존/개인 영상(쇼츠 채널 소재 아님)" if date < OLD_BEFORE else "",
             "새제목": new if new != title else "", "새공개": "", "삭제": "", "링크": f"https://youtu.be/{v['id']}",
         })
@@ -159,7 +175,7 @@ def fetch_all(yt):
             break
     out = []
     for i in range(0, len(ids), 50):
-        out += yt.videos().list(part="snippet,status,contentDetails", id=",".join(ids[i:i + 50])).execute()["items"]
+        out += yt.videos().list(part="snippet,status,contentDetails,statistics", id=",".join(ids[i:i + 50])).execute()["items"]
     return out
 
 
@@ -168,12 +184,21 @@ def load_db(path="facts_db.json"):
 
 
 def read_csv(path):
+    """엑셀이 '-vtk…' 처럼 -로 시작하는 영상ID를 수식(#NAME?)으로 망가뜨리는 일이 있어, 링크 칸에서 ID를 다시 뽑는다."""
     with open(path, encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    for r in rows:
+        mm = re.search(r"(?:youtu\.be/|v=)([\w-]{11})", r.get("링크") or "")
+        if mm:
+            r["영상ID"] = mm.group(1)
+    return rows
 
 
 # ---------- 명령 ----------
 def cmd_plan(a):
+    global OLD_BEFORE
+    if a.old_before:
+        OLD_BEFORE = a.old_before
     yt = get_yt(a.secret, a.token)
     rows = build_rows(fetch_all(yt), load_db(a.db))
     with open(a.out, "w", newline="", encoding="utf-8-sig") as f:
@@ -292,12 +317,23 @@ def cmd_sync_db(a):
     print(f"{a.db} 갱신: 변경 {n}건" + (f" / 연결 해제 {pruned}건" if a.prune else "") + f" · 업로드됨 {up}개 · 영상완료지만 미업로드 {done_no}개 (백업: {a.db}.bak)")
 
 
+def _utf8_out():
+    """윈도우 cp949 콘솔/리다이렉트(>)에서 ✔ ⚠ 같은 문자가 에러 나지 않게"""
+    for st in (sys.stdout, sys.stderr):
+        try:
+            st.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 def main():
+    _utf8_out()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("plan")
     p.add_argument("secret"); p.add_argument("--token", default="yt_rw_token.json")
     p.add_argument("--out", default="channel_plan.csv"); p.add_argument("--db", default="facts_db.json")
+    p.add_argument("--old-before", default=None, help="이 날짜(YYYY-MM-DD) 이전 업로드는 채널 소재가 아닌 기존 영상으로 취급 (기본 2026-09-01)")
     p.set_defaults(fn=cmd_plan)
     p = sub.add_parser("apply")
     p.add_argument("csv"); p.add_argument("secret"); p.add_argument("--token", default="yt_rw_token.json")
