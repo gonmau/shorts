@@ -21781,7 +21781,11 @@
         "scene": 7,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0296_불가리아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0296_불가리아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-HyunsuMultilingualNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
