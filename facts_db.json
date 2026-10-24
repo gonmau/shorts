@@ -21615,7 +21615,168 @@
       "specific Bulgarian towns holiday",
       "rose scented day"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "city rose holiday",
+      "Bulgaria rose festival",
+      "May June holiday Bulgaria",
+      "people walking to rose fields",
+      "thousands parade roses",
+      "specific Bulgarian towns holiday",
+      "rose scented day"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "demsi3art",
+        "page": "https://pixabay.com/photos/beautiful-holiday-city-summer-4917134/",
+        "id": 4917134,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "HeungSoon",
+        "page": "https://pixabay.com/photos/rose-petal-flower-beautiful-4228704/",
+        "id": 4228704
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Apostelgreek2",
+        "license": "CC0",
+        "title": "Holiday Park crasno celo.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Holiday_Park_crasno_celo.jpg",
+        "id": "c:193319896"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "B_Me",
+        "page": "https://pixabay.com/photos/pedestrians-people-busy-movement-400811/",
+        "id": 400811,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Pacific Southwest Region 5",
+        "license": "Public domain",
+        "title": "Huge Crowds at Rose Parade Float Viewing Event (16358667088).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Huge_Crowds_at_Rose_Parade_Float_Viewing_Event_(16358667088).jpg",
+        "id": "c:68909550"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Anestiev",
+        "page": "https://pixabay.com/photos/harvest-summer-nature-food-2460135/",
+        "id": 2460135
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "suju-foto",
+        "page": "https://pixabay.com/photos/roses-fragrance-pink-bush-roses-4297463/",
+        "id": 4297463
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.1835,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b932da8ba976",
+        "at": "2026-10-24 21:13",
+        "scene": 1,
+        "rejected_ids": [
+          3876991,
+          4552028,
+          4917134,
+          "c:158236137",
+          "c:158236139"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2768,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b981d90a7388",
+        "at": "2026-10-24 21:13",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2222,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a4def430e229",
+        "at": "2026-10-24 21:14",
+        "scene": 3,
+        "rejected_ids": [
+          5308943,
+          "c:193319896"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2268,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0885e203b2df",
+        "at": "2026-10-24 21:14",
+        "scene": 4,
+        "rejected_ids": [
+          400811,
+          5696492,
+          9170093,
+          "c:41708779",
+          "c:41708878"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2719,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "70add115c9ec",
+        "at": "2026-10-24 21:13",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2583,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "78d76c087cb7",
+        "at": "2026-10-24 21:13",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2861,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7d6243e074df",
+        "at": "2026-10-24 21:13",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
