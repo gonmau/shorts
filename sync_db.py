@@ -29,6 +29,7 @@ import requests
 ENV_KEYS = {"video_path_v6", "audio_path_v2", "timing_path_v2"}
 RANK = {"unverified": 0, "verified": 1, "scripted": 2, "tts_done": 3, "video_done": 4}
 KEEP_NONEMPTY = {"youtube_id", "youtube_privacy", "uploaded_at"}
+REJECT_WINS = False   # --reject-wins: 폐기와 영상완료가 갈리면 폐기를 따른다
 
 
 def key(f):
@@ -114,8 +115,12 @@ def merge_item(g, l, side, prefer):
         elif k in KEEP_NONEMPTY:
             out[k] = lv
         elif k == "status" and {gv, lv} == {"rejected", "video_done"}:
-            out[k] = "video_done"   # 이미 영상을 만든 소재는 폐기 표시보다 영상완료를 우선 (UI에서 언제든 다시 폐기 가능)
-            conf.append((k, gv, lv, "video_done 우선"))
+            if REJECT_WINS:
+                out[k] = "rejected"
+                conf.append((k, gv, lv, "폐기 우선"))
+            else:   # 이미 영상을 만든 소재는 폐기 표시보다 영상완료를 우선 (UI에서 언제든 다시 폐기 가능)
+                out[k] = "video_done"
+                conf.append((k, gv, lv, "video_done 우선"))
         elif k in ("status", "status_v6") and gv in RANK and lv in RANK:
             out[k] = gv if RANK[gv] > RANK[lv] else lv
         else:
@@ -168,10 +173,14 @@ def main():
     ap.add_argument("--prefer", choices=["local", "github"], default="local")
     ap.add_argument("--base", choices=["local", "github"], default="local", help="소재 번호(순서)를 어느 쪽 기준으로 유지할지 (기본 PC)")
     ap.add_argument("--detail", action="store_true", help="상태 충돌과, 영상/업로드가 걸린 대본 충돌을 소재별로 자세히 출력")
+    ap.add_argument("--reject-wins", action="store_true", help="폐기와 영상완료가 갈리면 폐기를 따른다 (기본은 영상완료)")
+    ap.add_argument("--auto", action="store_true", help="UI 자동 동기화용: GitHub에만 있는 소재가 10개를 넘으면(번호/제목이 어긋났을 가능성) 적용하지 않고 멈춘다")
     ap.add_argument("--apply", action="store_true", help="PC 파일을 병합본으로 갱신")
     ap.add_argument("--push", action="store_true", help="병합본을 GitHub에도 커밋 (--apply 와 함께)")
     a = ap.parse_args()
     token = os.environ.get("GITHUB_TOKEN")
+    global REJECT_WINS
+    REJECT_WINS = a.reject_wins
 
     L = json.load(open(a.local, encoding="utf-8")) if os.path.exists(a.local) else []
     G, sha = fetch_github(a.repo, a.branch, token)
@@ -214,6 +223,11 @@ def main():
     for (gv, lv), n in stat.most_common(8):
         print(f"   status GitHub={gv} / PC={lv}: {n}개")
     print(f"\n차이 {len(report)}개 소재 · 충돌 {n_conf}칸 (--prefer {a.prefer})")
+    if a.auto:
+        gh_only = sum(1 for *_, kind, _c in report if kind == "GitHub에만 있는 소재")
+        if gh_only > 10:
+            print(f"자동 동기화 보류: GitHub에만 있는 소재가 {gh_only}개입니다 (소재 제목이 어긋났을 수 있음). 동기화 탭의 '차이 보기'로 확인한 뒤 수동으로 가져오세요.")
+            sys.exit(2)
     if not a.apply:
         print("미리보기입니다. 적용하려면 --apply (GitHub에도 올리려면 --apply --push)")
         return
@@ -224,7 +238,10 @@ def main():
         if not token:
             sys.exit("GITHUB_TOKEN 환경변수가 없어 GitHub에는 올리지 못했습니다.")
         merged_gh, _, _ = merge_all(G, L, "github", a.prefer, a.base)
-        _, sha = fetch_github(a.repo, a.branch, token)   # 가장 최신 sha
+        G2, sha = fetch_github(a.repo, a.branch, token)   # 가장 최신 sha
+        if json.dumps(G2, ensure_ascii=False, sort_keys=True) == json.dumps(merged_gh, ensure_ascii=False, sort_keys=True):
+            print("✔ GitHub와 내용이 같아 커밋하지 않았습니다.")
+            return
         push_github(a.repo, a.branch, token, merged_gh, sha, "chore: sync facts_db.json from PC [skip ci]")
         print("✔ GitHub에 커밋했습니다.")
 

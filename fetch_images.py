@@ -163,6 +163,14 @@ def fetch_item(session, key, idx, item, force):
     if merged:
         item["image_credits"] = [merged[k] for k in sorted(merged)]
         item["image_source"] = "pixabay" if any(c.get("source", "pixabay") == "pixabay" for c in merged.values()) else "commons"
+    if new_credits:  # 로컬에서 IMAGE_CHECK=1이면 새로 받은 장면이 검색어와 맞는지 검증하고, 불일치는 다른 사진으로 교체
+        try:
+            import image_check as IC
+            if IC.enabled():
+                print("    이미지 검증 중 (CLIP/Ollama)...")
+                IC.check_and_fix(session, key, idx, item, sorted(new_credits))
+        except Exception as e:
+            print(f"    [이미지검증] 건너뜀 ({type(e).__name__}: {e})")
     return got
 
 

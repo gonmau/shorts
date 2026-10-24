@@ -681,7 +681,7 @@ def ensure_extras(client, models, fact, retries=3):
     # AI 사실검수는 하지 않는다 (사실 확인은 사람이 직접 한다)
     narration = fact.get("narration", "")
     if crosscheck.enabled() and not fact.get("cross_checked") and fact.get("status") != "rejected":
-        changed = crosscheck.cross_check(client, models, fact) or changed
+        changed = crosscheck.cross_check(client, models, fact, fix=(clean_narration, validate_narration, (TARGET_MIN_CHARS, TARGET_MAX_CHARS))) or changed
         if fact.get("status") == "rejected":
             return True
     if not title_ok(fact):
