@@ -21574,7 +21574,7 @@
     "verify_note": "Rose Festival, Bulgaria",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:14.283401+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_notes": [
@@ -21829,7 +21829,10 @@
     "status_tts_v2": "done",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0296_불가리아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0296_불가리아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
