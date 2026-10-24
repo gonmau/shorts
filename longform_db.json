@@ -95,5 +95,23 @@
     "video": "longform_004.mp4",
     "status": "video_done",
     "created_at": "2026-10-24T12:01:41.945985+00:00"
+  },
+  {
+    "id": 5,
+    "mode": "manual",
+    "theme": "",
+    "members": [
+      98,
+      139,
+      143
+    ],
+    "title": "핀란드의 이색문화 탐험",
+    "style": "rich",
+    "expanded": true,
+    "description": "00:00 Intro\n00:15 1. Finland - 핀란드 숲속 캠핑 2밤만 허용, 기부는?\n02:09 2. Finland - 핀란드 아내 달리기 우승 맥주는 체중만큼?\n03:30 3. Finland - 핀란드 아기 첫 사우나 뜨거운 뒤 차가운 물\n04:46 Recap\n\nPhotos: Pixabay (pixabay.com)\nPhotos from Wikimedia Commons (cropped/zoomed):\n- \"Know Your Defender - Brig Gen Christopher Samulski (8399934).jpg\" by U.S. Army Reserve photo by Sgt. Tamie Norris, Public domain - https://commons.wikimedia.org/wiki/File:Know_Your_Defender_-_Brig_Gen_Christopher_Samulski_(8399934).jpg\n\n🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!\n\n#Finland #Everymans #Wife #Newborn #세계문화 #해외여행 #이색상식",
+    "duration_sec": 315.8,
+    "video": "longform_005.mp4",
+    "status": "video_done",
+    "created_at": "2026-10-24T12:39:30.466516+00:00"
   }
 ]
