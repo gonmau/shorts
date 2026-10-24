@@ -6975,7 +6975,16 @@
       "Mushroom foraging in forest",
       "Northern lights over campsite",
       "Kayak on Finnish river"
-    ]
+    ],
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_notes": [
+      "[contradicted] 5번 문장: No legal change in 2022 regarding camping duration",
+      "[contradicted] 6번 문장: No donation fee is required after two days",
+      "[contradicted] 7번 문장: Statement relies on the false donation rule"
+    ],
+    "cross_verdict": "contradicted"
   },
   {
     "country": "Kenya",
@@ -10797,7 +10806,15 @@
     "status_v6": "video_done",
     "youtube_id": "kzSNV77j6RY",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_notes": [
+      "[contradicted] 3번 문장: The dummy weight is 49 kg (not 20 kg); other details are correct",
+      "[unsupported] 8번 문장: No specific evidence that the beer‑weight rule applies only to the official Sonkajärvi event"
+    ],
+    "cross_verdict": "contradicted"
   },
   {
     "country": "Netherlands",
@@ -11008,7 +11025,18 @@
     "status_v6": "video_done",
     "youtube_id": "2njBXGF3gMM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_notes": [
+      "[contradicted] 1번 문장: No evidence that the first bath for Finnish babies is a hot sauna; Finnish newborn bathing customs differ.",
+      "[unsupported] 2번 문장: A short baby sauna exists in some families, but the claim about timing (weeks after birth) and duration lacks reliable confirmation.",
+      "[unsupported] 3번 문장: The belief about improving circulation and immunity is not documented as a widespread or verified claim.",
+      "[contradicted] 4번 문장: Parents typically do not plunge into cold water immediately after a baby sauna; this is not a recognized practice.",
+      "[unsupported] 5번 문장: Geographic prevalence (Lapland and southern regions) and apartment practice are not substantiated."
+    ],
+    "cross_verdict": "contradicted"
   },
   {
     "country": "Belgium",
