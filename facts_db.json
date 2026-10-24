@@ -21588,7 +21588,7 @@
     ],
     "cross_model": "openai/gpt-oss-120b",
     "cross_verdict": "unsupported",
-    "narration": "도시 전체가 장미 따기 위해 쉬는 날이 있다면? 불가리아에서는 5월 말부터 6월 중순까지 카잔라크(Kazanlak) 등 몇몇 도시에서 장미 축제(Rose Festival)가 열리며, 이 기간 동안 일부 지역에서는 휴일처럼 여겨지기도 합니다. 많은 주민들이 일상 업무를 잠시 멈추고 장미 밭을 찾기도 합니다. 축제의 하이라이트는 바로 ‘장미 여왕’에게 왕관을 씌우는 순간인데요, 이때 수천 명이 거리 퍼레이드에 참여해 꽃향기 가득한 행진을 펼칩니다. 하지만 이 휴일이 적용되는 것은 앞서 언급한 특정 도시들에 주로 해당된다는 점을 기억해 두세요. 장미 향이 가득한 하루, 그 여운은 언제까지나 남을 겁니다.",
+    "narration": "불가리아에는 장미를 따고 퍼레이드까지 펼치는 축제가 있습니다! 장미의 계곡으로 유명한 카잔라크에서는 매년 장미가 피는 5월 말부터 6월 초, 화려한 장미 축제가 열리는데요. 사람들은 직접 장미를 수확하고, 장미를 증류해 향기로운 장미 오일을 만드는 전통도 선보입니다. 축제의 하이라이트는 바로 ‘장미 여왕’의 대관식과 화려한 거리 퍼레이드! 1903년 처음 시작된 이 축제는 이제 전 세계 관광객이 찾아오는 불가리아의 대표 행사로 자리 잡았습니다. 도시 전체가 장미 향기로 물드는 순간, 직접 보고 싶지 않으신가요?",
     "narration_original": "도시 전체가 장미 따기 위해 쉬는 날이 있다면? 불가리아에서는 바로 그런 날이 존재합니다. 매년 5월 말부터 6월 중순까지 카잔라크를 비롯해 칼로보, 구르코보 등 몇몇 도시에서 ‘장미 축제’가 열리며, 해당 기간은 공식 휴일로 지정됩니다. 그래서 주민들은 일상 업무를 멈추고 장미 밭으로 나갑니다. 축제의 하이라이트는 바로 ‘장미 여왕’에게 왕관을 씌우는 순간인데요, 이때 수천 명이 거리 퍼레이드에 참여해 꽃향기 가득한 행진을 펼칩니다. 하지만 이 휴일이 적용되는 것은 앞서 언급한 특정 도시들에 한정된다는 점, 기억해 두세요. 장미 향이 가득한 하루, 그 여운은 언제까지나 남을 겁니다.",
     "highlights": [
       {
@@ -21617,70 +21617,103 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "rose city",
-      "Bulgaria rose festival",
-      "May June holiday Bulgaria",
-      "people walking to rose fields",
-      "thousands parade roses",
-      "specific Bulgarian towns holiday",
-      "rose scented day"
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel",
+      "불가리아 travel"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Notorious4life ( talk ) ( Uploads )",
-        "license": "CC0",
-        "title": "Rose City, Michigan (August 2021).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Rose_City,_Michigan_(August_2021).jpg",
-        "id": "c:112940608"
+        "source": "pixabay",
+        "user": "JoshuaWoroniecki",
+        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
+        "id": 5219496
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "HeungSoon",
-        "page": "https://pixabay.com/photos/rose-petal-flower-beautiful-4228704/",
-        "id": 4228704
+        "user": "822640",
+        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/",
+        "id": 1828079
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Apostelgreek2",
-        "license": "CC0",
-        "title": "Holiday Park crasno celo.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Holiday_Park_crasno_celo.jpg",
-        "id": "c:193319896"
+        "source": "pixabay",
+        "user": "took_a_snap",
+        "page": "https://pixabay.com/photos/road-fog-mist-asphalt-travel-8687668/",
+        "id": 8687668
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "B_Me",
-        "page": "https://pixabay.com/photos/pedestrians-people-busy-movement-400811/",
-        "id": 400811,
-        "type": "photo"
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-terminal-man-travel-1822133/",
+        "id": 1822133
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "Pacific Southwest Region 5",
-        "license": "Public domain",
-        "title": "Huge Crowds at Rose Parade Float Viewing Event (16358667088).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Huge_Crowds_at_Rose_Parade_Float_Viewing_Event_(16358667088).jpg",
-        "id": "c:68909550"
+        "source": "pixabay",
+        "user": "igorovsyannykov",
+        "page": "https://pixabay.com/photos/adult-asia-asian-bangkok-beautiful-2693054/",
+        "id": 2693054
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Anestiev",
-        "page": "https://pixabay.com/photos/harvest-summer-nature-food-2460135/",
-        "id": 2460135
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/camera-photographs-souvenir-1130731/",
+        "id": 1130731
       },
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "suju-foto",
-        "page": "https://pixabay.com/photos/roses-fragrance-pink-bush-roses-4297463/",
-        "id": 4297463
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-walking-waiting-gate-walk-4120835/",
+        "id": 4120835
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "NanduVasudevan",
+        "page": "https://pixabay.com/photos/mountain-nature-landscape-travel-9247240/",
+        "id": 9247240
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "makabera",
+        "page": "https://pixabay.com/photos/boat-water-lake-alone-blue-calm-10467229/",
+        "id": 10467229
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "alessandrodanchini",
+        "page": "https://pixabay.com/photos/girl-window-sea-cruise-travel-4411707/",
+        "id": 4411707
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/journey-adventure-photo-map-old-1130732/",
+        "id": 1130732
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "SplitShire",
+        "page": "https://pixabay.com/photos/photographer-tourist-snapshot-407068/",
+        "id": 407068
       }
     ],
     "image_source": "pixabay",
@@ -21785,7 +21818,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0296_불가리아_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0296_불가리아_v2_timing.json",
     "tts_voice_v2": "ko-KR-HyunsuMultilingualNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
