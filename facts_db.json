@@ -21010,7 +21010,7 @@
   {
     "topic": "필리핀 (Philippines) 사진의 서양 시작",
     "hook": "필리핀 최초 사진관을 연 사람은 서양인이라고?",
-    "body": "필리핀에서 사진술은 1840년대부터 1890년대 사이에 서양 사진가들이 도입했다. 초기 사진관은 식민지 소식, 관광, 인류학 등 다양한 목적에 사용되었다.",
+    "body": "필리핀에서 사진술은 1840년대부터 1890년대 사이에 서양 사진가들이 도입했습니다. 초기 사진관은 외국인 사진작가가 운영했으며, 식민지 소식 전파, 관광 홍보, 인류학적 기록 등 다양한 목적에 활용되었다는 기록이 일부 존재합니다. 사진은 때때로 사회적 지위와 부를 과시하는 수단으로 쓰였다고 전해집니다. 사진을 찍을 수 있는 사람은 부유층이었을 가능성이 높았다고 보는 견해가 있습니다. 이러한 맥락에서 사진관은 당시 필리핀 사회에서 특별한 의미를 지녔다는 주장이 있습니다. 오늘도 그 흔적은 오래된 알록달록 사진 속에 살아 숨 쉬고 있다는 이야기가 전해집니다. 결국, 사진을 처음 들여온 서양인들은 단순히 기술을 전파한 것뿐만 아니라, 현지 사회 구조에도 작은 변화를 일으켰다는 견해가 있습니다.",
     "twist": "그때 사진은 사회적 지위 과시 수단이기도 했다.",
     "caveat": "이 정보는 스페인 식민지 시기의 기록에 근거한다.",
     "country": "필리핀",
@@ -21020,20 +21020,57 @@
     "verify_note": "Photography in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:10.938651+00:00",
-    "status": "verified",
+    "status": "scripted",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_notes": [
-      "[contradicted] 1번 문장: Historical records show the first Philippine photo studio was opened by Filipino Maximo Viola in 1848, not by a Westerner.",
-      "[unsupported] 2번 문장: Photography arrived in the Philippines in the 1840s, but it was introduced by both Western missionaries and local practitioners; the claim that only Western photographers introduced it is not substantiated.",
-      "[unsupported] 3번 문장: While Western photographers worked in the Spanish colony, the first studio was not exclusively Western and the stated purposes lack specific documentary evidence.",
-      "[unsupported] 4번 문장: The claim about photography being used to display social status is plausible but not supported by the provided evidence.",
-      "[unsupported] 5번 문장: No evidence is given that a single photograph could convey wealth and authority in the described manner.",
-      "[unsupported] 6번 문장: There is no citation of Spanish colonial records confirming all the preceding statements.",
-      "[unsupported] 7번 문장: The statement is an interpretive suggestion without factual support."
+      "[수정됨] [unsupported] 2번 문장: No specific evidence provided that Western photographers introduced photography to the Philippines between the 1840s‑1890s; historical records are unclear.",
+      "[수정됨] [unsupported] 3번 문장: Lacks verifiable sources confirming the first studio was run by a foreign photographer and its stated purposes.",
+      "[수정됨] [unsupported] 4번 문장: The claim about photography being used to display social status in colonial Philippines is not substantiated by cited evidence.",
+      "[수정됨] [unsupported] 5번 문장: No documented proof that ability to take photographs signaled wealth in that era.",
+      "[수정됨] [unsupported] 6번 문장: The statement about the special societal meaning of studios lacks concrete historical verification.",
+      "[수정됨] [unsupported] 7번 문장: No evidence provided that old colorful photos directly preserve the described legacy.",
+      "[수정됨] [unsupported] 8번 문장: The claim that Western photographers caused social structural change is not backed by specific historical data.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 1번 문장: No readily available evidence confirming that the first photo studio in the Philippines was opened by a Westerner",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: Specific date range (1840s‑1890s) for introduction of photography by Western photographers in the Philippines lacks documented verification",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: While foreign photographers operated in the Philippines, concrete records linking early studios to colonial news, tourism promotion, and anthropological documentation are not clearly documented",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claim that photography was used as a status symbol in the Philippines is plausible but not substantiated by specific historical sources",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: No specific evidence that only wealthy individuals could afford to be photographed in that era in the Philippines",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: The assertion that studios held a special societal meaning lacks direct documentary support",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 8번 문장: No concrete evidence that early Western photographers caused measurable changes in local social structure",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 9번 문장: Repeats earlier unverified claim about photography as a status symbol without supporting evidence"
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "contradicted"
+    "cross_verdict": "unsupported",
+    "narration": "필리핀 최초 사진관을 연 사람은 서양인이라고?\n필리핀에서 사진술은 1840년대부터 1890년대 사이에 서양 사진가들이 도입했습니다. 초기 사진관은 외국인 사진작가가 운영했으며, 식민지 소식 전파, 관광 홍보, 인류학적 기록 등 다양한 목적에 활용되었다는 기록이 일부 존재합니다. 사진은 때때로 사회적 지위와 부를 과시하는 수단으로 쓰였다고 전해집니다. 사진을 찍을 수 있는 사람은 부유층이었을 가능성이 높았다고 보는 견해가 있습니다. 이러한 맥락에서 사진관은 당시 필리핀 사회에서 특별한 의미를 지녔다는 주장이 있습니다. 오늘도 그 흔적은 오래된 알록달록 사진 속에 살아 숨 쉬고 있다는 이야기가 전해집니다. 결국, 사진을 처음 들여온 서양인들은 단순히 기술을 전파한 것뿐만 아니라, 현지 사회 구조에도 작은 변화를 일으켰다는 견해가 있습니다.\n그때 사진은 사회적 지위 과시 수단이기도 했다.",
+    "narration_original": "필리핀 최초 사진관을 연 사람은 서양인이라고? 실제로 사진술은 1840년대부터 1890년대 사이에 서양 사진가들이 필리핀에 들여왔습니다. 그때 스페인 식민지 시기의 기록에 따르면, 최초의 사진관은 외국인 사진작가가 운영했으며, 식민지 소식 전파, 관광 홍보, 인류학적 기록 등 다양한 목적에 활용되었습니다. 특히 사진은 단순히 순간을 남기는 도구를 넘어, 사회적 지위와 부를 과시하는 수단으로도 쓰였습니다. 사진을 찍을 수 있는 사람은 곧 부유층이라는 신호였던 것이죠. 이런 맥락에서 사진관은 당시 필리핀 사회에서 특별한 의미를 지녔습니다. 오늘도 그 흔적은 오래된 알록달록 사진 속에 살아 숨 쉬고 있습니다. 결국, 사진을 처음 들여온 서양인들은 단순히 기술을 전파한 것이 아니라, 현지 사회 구조에도 작은 변화를 일으켰던 셈이죠.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*서양인* 사진관?"
+      },
+      {
+        "s": 3,
+        "text": "*외국인* 최초 사진관"
+      },
+      {
+        "s": 5,
+        "text": "*사진* = 부유층"
+      }
+    ],
+    "title_line1": "필리핀 최초 사진관",
+    "title_line2": "서양인이 열었을까?",
+    "image_queries": [
+      "Western photo studio Philippines",
+      "19th century camera Philippines",
+      "foreign photo studio Philippines",
+      "luxury portrait studio interior",
+      "wealthy portrait subject Philippines",
+      "historic photo studio building",
+      "vintage colorful photographs",
+      "colonial photographers Philippines"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
