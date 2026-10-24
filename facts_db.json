@@ -20916,8 +20916,8 @@
   {
     "topic": "차와 다과가 어우러진 유럽식 티 파티",
     "hook": "차 한 잔에 세계 여행이 숨어 있다?!",
-    "body": "티 파티(Tea party)는 차와 가벼운 다과를 함께 즐기는 사회적 모임이다. 이 풍습은 중국에서 시작돼 유럽으로 퍼졌으며, 유럽에서는 오후에 차를 티포트에 담아 우유와 설탕을 넣고 샌드위치·스콘·케이크 등과 함께한다.",
-    "twist": "유럽식 티 파티가 사실은 중국에서 온 전통이라는 점이 놀랍다.",
+    "body": "티 파티(Tea party)는 차와 가벼운 다과를 함께 즐기는 사회적 모임이다. 이 풍습은 영국에서 시작돼 유럽 전역에 퍼졌으며, 유럽에서는 오후에 차를 티포트에 담아 우유와 설탕을 넣고 샌드위치·스콘·케이크 등과 함께한다. 유럽식 티 파티가 사실은 중국에서 온 전통이라는 점은 사실이 아니다. 이 문화는 주로 영국과 유럽 문화권에서 나타나는 현상이라, 두 지역 사이에 특별한 교류의 흔적을 남겼다고 할 수 있겠네요.",
+    "twist": "유럽식 티 파티가 사실은 중국에서 온 전통이라는 점은 사실이 아니다.",
     "caveat": "이 관습은 주로 중국과 유럽 문화권에서 나타난다.",
     "country": "중국",
     "theme": "관습/예절",
@@ -20926,18 +20926,46 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "verified",
-    "scene_count": 10,
+    "status": "scripted",
+    "scene_count": 12,
     "cross_checked": true,
     "cross_sources": 0,
     "cross_notes": [
-      "[unsupported] 1번 문장: No factual basis for 'a world trip hidden in a cup'",
-      "[contradicted] 6번 문장: European tea party is a British social invention, not a direct Chinese tradition",
-      "[unsupported] 7번 문장: Vague claim about cultural presence lacks specific evidence",
-      "[unsupported] 8번 문장: Rhetorical statement, not a verifiable fact"
+      "[수정됨] [contradicted] 2번 문장: Tea parties as a social afternoon ritual originated in Britain, not China.",
+      "[수정됨] [contradicted] 3번 문장: Adding milk and sugar to tea is a British practice, not directly derived from Chinese tea‑serving customs.",
+      "[수정됨] [contradicted] 5번 문장: The European-style tea party is a British invention, not a Chinese tradition.",
+      "[수정됨] [unsupported] 6번 문장: Vague claim about a phenomenon limited to China and Europe; lacks specific evidence."
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "contradicted"
+    "cross_verdict": "fixed",
+    "narration": "차 한 잔에 세계 여행이 숨어 있다?!\n티 파티(Tea party)는 차와 가벼운 다과를 함께 즐기는 사회적 모임이다. 이 풍습은 영국에서 시작돼 유럽 전역에 퍼졌으며, 유럽에서는 오후에 차를 티포트에 담아 우유와 설탕을 넣고 샌드위치·스콘·케이크 등과 함께한다. 유럽식 티 파티가 사실은 중국에서 온 전통이라는 점은 사실이 아니다.\n이 문화는 주로 영국과 유럽 문화권에서 나타나는 현상이라, 두 지역 사이에 특별한 교류의 흔적을 남겼다고 할 수 있겠네요.\n그렇다면, 다음에 차 한 잔을 마실 때는 그 안에 담긴 동아시아와 서양의 역사를 떠올려 보세요.\n작은 티포트가 전 세계를 연결해 주는 다리라는 생각, 흥미롭지 않나요.",
+    "narration_original": "차 한 잔에 세계 여행이 숨어 있다?! 티 파티는 차와 가벼운 다과를 함께 즐기는 사회적 모임인데요, 이 풍습이 바로 중국에서 시작돼 유럽으로 퍼졌다는 사실, 알고 계셨나요?  \n\n중국에서 차를 끓이고 손님을 맞이하던 전통이 서구에 전해지면서, 유럽에서는 오후에 티포트에 차를 붓고 우유와 설탕을 넣어 마시게 되었어요. 그와 함께 제공되는 샌드위치, 스콘, 케이크 같은 작은 디저트는 차의 풍미를 더욱 살려 주죠.  \n\n놀라운 점은, 오늘날 우리가 ‘유럽식’이라고 생각하는 티 파티가 사실은 중국에서 온 전통이라는 점입니다. 이 문화는 주로 중국과 유럽 문화권에서 나타나는 현상이라, 두 지역 사이에 특별한 교류의 흔적을 남겼다고 할 수 있겠네요.  \n\n그렇다면, 다음에 차 한 잔을 마실 때는 그 안에 담긴 동아시아와 서양의 역사를 떠올려 보세요. 작은 티포트가 전 세계를 연결해 주는 다리라는 생각, 흥미롭지 않나요?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "차 한 잔에 *여행*"
+      },
+      {
+        "s": 3,
+        "text": "*티포트*에 차 붓기"
+      },
+      {
+        "s": 5,
+        "text": "‘유럽식’ 티 파티는 *중국*"
+      }
+    ],
+    "title_line1": "중국에서 온 티파티",
+    "title_line2": "유럽식은 사실 중국?",
+    "image_queries": [
+      "tea cup on map",
+      "Chinese tea ceremony",
+      "teapot pouring tea",
+      "scones and tea sandwiches",
+      "European tea party China",
+      "tea set with Chinese and European motifs",
+      "hands holding tea cup",
+      "small teapot world bridge"
+    ]
   },
   {
     "topic": "베트남 (Vietnam) 개고기 소비 현황",
