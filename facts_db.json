@@ -22274,7 +22274,7 @@
     "verify_note": "Bat as food",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:23.746550+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_notes": [
@@ -22315,7 +22315,189 @@
       "cultural food perception",
       "exotic ingredient challenge"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "fruit bat gourmet ingredient",
+      "bat used as food",
+      "global bat cooking",
+      "fruit bat hunting",
+      "Mariana fruit bat dish",
+      "regional food customs",
+      "cultural food perception",
+      "exotic ingredient challenge"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Arawolf",
+        "page": "https://pixabay.com/photos/bat-old-world-fruit-bat-mammal-7970839/",
+        "id": 7970839
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "John Pavelka",
+        "license": "CC BY 2.0",
+        "title": "Barbecued Bat at Udomxai Bus Station in Laos.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Barbecued_Bat_at_Udomxai_Bus_Station_in_Laos.jpg",
+        "id": "c:27622135"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "shankar s. from Dubai, united arab emirates",
+        "license": "CC BY 2.0",
+        "title": "Bats flying out for their food (14265903789).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bats_flying_out_for_their_food_(14265903789).jpg",
+        "id": "c:68232869"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "parkineer",
+        "page": "https://pixabay.com/photos/rodrigues-fruit-bat-bat-tree-5983434/",
+        "id": 5983434
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "khw80",
+        "page": "https://pixabay.com/photos/flying-fox-megabat-fruit-bat-6533266/",
+        "id": 6533266
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "John Pavelka",
+        "license": "CC BY 2.0",
+        "title": "Barbecued Bat at Udomxai Bus Station in Laos.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Barbecued_Bat_at_Udomxai_Bus_Station_in_Laos.jpg",
+        "id": "c:27622135"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "katetrysh",
+        "page": "https://pixabay.com/photos/spice-market-dubai-souq-9060102/",
+        "id": 9060102
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "chrisad85",
+        "page": "https://pixabay.com/photos/star-fruit-fruit-yellow-food-1557438/",
+        "id": 1557438,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2962,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ca9210deeb01",
+        "at": "2026-10-25 00:28",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2844,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "07a319e706a7",
+        "at": "2026-10-25 00:28",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2224,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a7d89ccb3896",
+        "at": "2026-10-25 00:28",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3512,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a291f65335ae",
+        "at": "2026-10-25 00:28",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3096,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dce6e418e9b4",
+        "at": "2026-10-25 00:28",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2234,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4bfa865e2f10",
+        "at": "2026-10-25 00:28",
+        "scene": 6,
+        "rejected_ids": [
+          4009969,
+          "c:27622135"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2837,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7298a6a8501d",
+        "at": "2026-10-25 00:28",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2103,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7bd17fc29d41",
+        "at": "2026-10-25 00:28",
+        "scene": 8,
+        "rejected_ids": [
+          10089952,
+          1557438,
+          5000523,
+          "c:27622135",
+          "c:68232869"
+        ]
+      }
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0301_볼리비아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0301_볼리비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-HyunsuMultilingualNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0301_볼리비아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0301_볼리비아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "미국 출신 교황, 남미에서 사역",
