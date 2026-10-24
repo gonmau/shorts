@@ -18645,7 +18645,7 @@
     "verify_note": "Hamzah bin Hussein",
     "confidence": "source",
     "created_at": "2026-10-22T13:48:15.298523+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_notes": [
@@ -18690,7 +18690,107 @@
       "former crown prince reflection",
       "choice remains quote"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "crown prince confinement",
+      "Jordan royal palace",
+      "Jordan royal family portrait",
+      "crown prince appointment ceremony",
+      "royal heir removal confinement",
+      "restricted royal quarters",
+      "prince title relinquishment",
+      "solitary contemplation room",
+      "former crown prince reflection",
+      "choice remains quote"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "NickyPe",
+        "page": "https://pixabay.com/photos/frog-figure-frog-prince-fairy-tales-5428516/",
+        "id": 5428516
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "nonmisvegliate",
+        "page": "https://pixabay.com/photos/great-gallery-monument-architecture-4293985/",
+        "id": 4293985
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Moroznaya_Photo",
+        "page": "https://pixabay.com/photos/mom-family-woman-daughter-portrait-9034408/",
+        "id": 9034408
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/frog-frog-prince-crown-figure-cute-5073324/",
+        "id": 5073324
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Kambui",
+        "license": "CC BY 2.0",
+        "title": "Royal Jordanian Airline Cargo Airbus A310-304(F) JY-AGQ \"Prince Hamzah bin Al-Hussein\" (27",
+        "page": "https://commons.wikimedia.org/wiki/File:Royal_Jordanian_Airline_Cargo_Airbus_A310-304(F)_JY-AGQ_%22Prince_Hamzah_bin_Al-Hussein%22_(27010907420).jpg",
+        "id": "c:58128316"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "William John Huggins",
+        "license": "Public domain",
+        "title": "William John Huggins - The Royal Navy brig H.M.S. Pantaloon and Waterwitch of the Royal Ya",
+        "page": "https://commons.wikimedia.org/wiki/File:William_John_Huggins_-_The_Royal_Navy_brig_H.M.S._Pantaloon_and_Waterwitch_of_the_Royal_Yacht_Squadron_in_close_quarters_at_sea_CSK_2013.jpg",
+        "id": "c:111693751"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Lucas Cranach the Elder",
+        "license": "Public domain",
+        "title": "1532 Cranach d.Ä. Die sächsischen Kurfürsten anagoria.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:1532_Cranach_d.%C3%84._Die_s%C3%A4chsischen_Kurf%C3%BCrsten_anagoria.JPG",
+        "id": "c:27185323"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "TerriAnneAllen",
+        "page": "https://pixabay.com/photos/sunset-rocks-view-nature-landscape-4761561/",
+        "id": 4761561
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/waterdrop-drops-raindrop-597109/",
+        "id": 597109
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Ignacio Coyne Lapetra (1872-1912, the photographer of the exhibition in 1908 )",
+        "license": "Public domain",
+        "title": "Guardia de Corps soldier depicted in a 1908 commemorative postcard (Exposición Hispano-Fra",
+        "page": "https://commons.wikimedia.org/wiki/File:Guardia_de_Corps_soldier_depicted_in_a_1908_commemorative_postcard_(Exposici%C3%B3n_Hispano-Francesa_de_Zaragoza).png",
+        "id": "c:192760840"
+      }
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0265_요르단_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0265_요르단_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0265_요르단.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0265_요르단.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "이스라엘 동쪽에 지구 최저점이 있다?",
@@ -20926,7 +21026,7 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "scene_count": 12,
     "cross_checked": true,
     "cross_sources": 0,
@@ -20965,7 +21065,83 @@
       "tea set with Chinese and European motifs",
       "hands holding tea cup",
       "small teapot world bridge"
-    ]
+    ],
+    "image_queries_done": [
+      "tea cup on map",
+      "Chinese tea ceremony",
+      "teapot pouring tea",
+      "scones and tea sandwiches",
+      "European tea party China",
+      "tea set with Chinese and European motifs",
+      "hands holding tea cup",
+      "small teapot world bridge"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Myriams-Fotos",
+        "page": "https://pixabay.com/photos/teacup-cup-of-tea-peppermint-tea-2325722/",
+        "id": 2325722
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "mirkostoedter",
+        "page": "https://pixabay.com/photos/teapots-tea-tea-leaf-green-tea-6082825/",
+        "id": 6082825
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/tea-party-tea-pour-pouring-tea-1001654/",
+        "id": 1001654
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "xandra71",
+        "page": "https://pixabay.com/photos/scones-applepie-high-tea-1496185/",
+        "id": 1496185
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ahuanzuishuai111",
+        "page": "https://pixabay.com/photos/teacup-white-and-blue-tea-set-10283355/",
+        "id": 10283355
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "mirkostoedter",
+        "page": "https://pixabay.com/photos/green-tea-lung-ching-teacup-cup-6078275/",
+        "id": 6078275
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "janice123oo",
+        "page": "https://pixabay.com/photos/coffee-hand-drink-cup-holding-3676911/",
+        "id": 3676911
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "dianakuehn30010",
+        "page": "https://pixabay.com/photos/miniature-model-refugees-world-war-4308103/",
+        "id": 4308103
+      }
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0291_중국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0291_중국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0291_중국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0291_중국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "베트남 (Vietnam) 개고기 소비 현황",
@@ -21020,7 +21196,7 @@
     "verify_note": "Photography in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:10.938651+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_notes": [
@@ -21070,7 +21246,85 @@
       "vintage colorful photographs",
       "colonial photographers Philippines"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "Western photo studio Philippines",
+      "19th century camera Philippines",
+      "foreign photo studio Philippines",
+      "luxury portrait studio interior",
+      "wealthy portrait subject Philippines",
+      "historic photo studio building",
+      "vintage colorful photographs",
+      "colonial photographers Philippines"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/photography-studio-photo-shoot-1850469/",
+        "id": 1850469
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/woman-ball-gown-fan-know-9770658/",
+        "id": 9770658
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "asundermeier",
+        "page": "https://pixabay.com/photos/ring-light-light-photo-studio-7005443/",
+        "id": 7005443
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Nissor",
+        "page": "https://pixabay.com/photos/woman-model-portrait-fashion-600238/",
+        "id": 600238
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Bunchiochi",
+        "page": "https://pixabay.com/photos/portrait-fashion-minimalism-style-9759750/",
+        "id": 9759750
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "fietzfotos",
+        "page": "https://pixabay.com/photos/building-fog-channel-venice-italy-7579247/",
+        "id": 7579247
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/photographs-old-antique-market-52703/",
+        "id": 52703
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "5 phot. de la visite du gouverneur général de l'Indochine en 1931 à Khouang Tcheou Wan et ",
+        "page": "https://commons.wikimedia.org/wiki/File:5_phot._de_la_visite_du_gouverneur_g%C3%A9n%C3%A9ral_de_l%27Indochine_en_1931_%C3%A0_Khouang_Tcheou_Wan_et_aux_Philippines._Don_du_Monde_colonial_illustr%C3%A9_en_1932_-_btv1b53228903w_(10_of_10).jpg",
+        "id": "c:162456599"
+      }
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0294_필리핀_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0294_필리핀_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
@@ -21341,13 +21595,54 @@
     "verify_note": "American Chinese cuisine",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:23.746550+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "미국 중식당 메뉴, 과연 진짜 중국 요리일까? 미국식 중식은 중국계 미국인들이 현지 입맛에 맞춰 만든 요리 스타일입니다. 전통 중국 요리와는 재료·양념, 심지어 조리법까지 많이 달라요. 예를 들어, 짜장면은 한국식과 다르게 달콤하고 걸쭉하게 변형됐고, 오렌지 치킨 같은 메뉴는 전혀 중국 본토에서는 찾아볼 수 없습니다. 이렇게 손님이 좋아할 만한 맛으로 바꾸다 보니, 20세기 후반에는 미국 내 하나의 지역 요리로 인정받게 되었죠. 하지만 이 이야기는 미국에 있는 중식당을 중심으로 한 현상이며, 중국 본토에서는 전혀 다른 인식이 존재합니다. 결국 우리가 익숙하게 즐기는 ‘중식’은 미국만의 특별한 문화, 바로 American Chinese cuisine이라는 점, 기억해 두시면 좋겠습니다. 다음에 또 다른 음식 이야기가 궁금하시다면, 이 현상이 어떻게 시작됐는지 다시 떠올려 보세요.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "미국 중식, 이렇게",
+    "title_line2": "진짜 중국 요리일까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "미국 *중식* 진짜?"
+      },
+      {
+        "s": 2,
+        "text": "*중식* 현지맛"
+      },
+      {
+        "s": 3,
+        "text": "*재료*·양념·조리"
+      },
+      {
+        "s": 4,
+        "text": "오렌지 치킨 *없다*"
+      },
+      {
+        "s": 7,
+        "text": "*특별* 중식, 미국만"
+      }
+    ],
+    "image_queries": [
+      "American Chinese restaurant menu",
+      "American Chinese dish adaptation",
+      "American Chinese cooking ingredients",
+      "Orange chicken dish",
+      "American Chinese takeout box",
+      "Chinese restaurant interior USA",
+      "Unique American Chinese cuisine",
+      "Chinese restaurant storefront USA"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "과일박쥐, 괜찮은 별미?",
     "hook": "과일박쥐가 고급 요리 재료라면?",
-    "body": "아시아·아프리카·태평양 연안 등 여러 지역에서 사람들은 박쥐를 식재료로 사용하고, 특히 과일박쥐(멜라바트) 종의 절반이 식용으로 사냥됩니다.",
-    "twist": "괌에서는 마리아나 과일박쥐(Pteropus mariannus)가 진미로 여겨집니다.",
+    "body": "여러 지역에서 박쥐를 식재료로 쓰는 사실, 알고 계셨나요? 아시아·아프리카·태평양 연안 등에서 사람들은 박쥐를 잡아 요리합니다. 과일박쥐, 즉 멜라바트 종 중 일부는 식용으로 사냥된다고 알려져 있습니다.",
+    "twist": "몇몇 지역에서는 과일박쥐를 이용한 전통 요리가 전해진다는 이야기가 있습니다.",
     "caveat": "식용은 해당 지역 문화에 한정된 관습이며, 전 세계적으로 일반적이지 않습니다.",
     "country": "볼리비아",
     "theme": "음식문화",
@@ -21356,18 +21651,48 @@
     "verify_note": "Bat as food",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:23.746550+00:00",
-    "status": "verified",
+    "status": "scripted",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_notes": [
-      "[unsupported] 1번 문장: Rhetorical question, not a factual claim.",
-      "[unsupported] 2번 문장: Subjective statement, no factual basis.",
-      "[unsupported] 4번 문장: No reliable data that about half of Melaba (fruit bat) species are hunted for food.",
-      "[unsupported] 5번 문장: Taste description is subjective and not verifiable.",
-      "[unsupported] 8번 문장: Speculative statement about cultural stories, not a verifiable fact."
+      "[수정됨] [unsupported] 4번 문장: Specific claim about half of Melabat species being hunted lacks evidence",
+      "[수정됨] [contradicted] 5번 문장: No reliable evidence that Guam treats Pteropus mariannus as a delicacy; bats are protected there"
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "unsupported"
+    "cross_verdict": "fixed",
+    "narration": "과일박쥐가 고급 요리 재료라면? 여러 지역에서 박쥐를 식재료로 쓰는 사실, 알고 계셨나요? 아시아·아프리카·태평양 연안 등에서 사람들은 박쥐를 잡아 요리합니다. 과일박쥐, 즉 멜라바트 종 중 일부는 식용으로 사냥된다고 알려져 있습니다. 몇몇 지역에서는 과일박쥐를 이용한 전통 요리가 전해진다는 이야기가 있습니다. 하지만 이런 식용 관습은 해당 지역 문화에 국한된 것이며, 전 세계적으로 일반적인 식문화는 아닙니다. 지역마다 음식에 대한 인식이 다르듯, 과일박쥐가 별미가 되는 이유도 문화적 배경에서 비롯된 것이죠. 과연 여러분은 이런 특별한 식재료를 접해볼 용기가 있나요?",
+    "narration_original": "과일박쥐가 고급 요리 재료라면? 여러 지역에서 박쥐를 식재료로 쓰는 사실, 알고 계셨나요? 아시아·아프리카·태평양 연안 등에서 사람들은 박쥐를 잡아 요리합니다. 특히 과일박쥐, 즉 멜라바트 종의 절반 정도가 식용으로 사냥된다고 해요. 흥미로운 점은 괌에서는 마리아나 과일박쥐(Pteropus mariannus)를 진미로 여기며, 특별한 요리법으로 즐긴다는 사실입니다. 하지만 이런 식용 관습은 해당 지역 문화에 국한된 것이며, 전 세계적으로 일반적인 식문화는 아닙니다. 지역마다 음식에 대한 인식이 다르듯, 과일박쥐가 별미가 되는 이유도 문화적 배경에서 비롯된 것이죠. 과연 여러분은 이런 특별한 식재료를 접해볼 용기가 있나요?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*과일박쥐* 고급 재료?"
+      },
+      {
+        "s": 3,
+        "text": "전 세계 *박쥐* 요리"
+      },
+      {
+        "s": 5,
+        "text": "괌 진미 *마리아나*"
+      },
+      {
+        "s": 8,
+        "text": "도전 *특별* 식재료?"
+      }
+    ],
+    "title_line1": "볼리비아 과일박쥐",
+    "title_line2": "진미일까",
+    "image_queries": [
+      "fruit bat gourmet ingredient",
+      "bat used as food",
+      "global bat cooking",
+      "fruit bat hunting",
+      "Mariana fruit bat dish",
+      "regional food customs",
+      "cultural food perception",
+      "exotic ingredient challenge"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "미국 출신 교황, 남미에서 사역",
