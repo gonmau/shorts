@@ -18645,7 +18645,7 @@
     "verify_note": "Hamzah bin Hussein",
     "confidence": "source",
     "created_at": "2026-10-22T13:48:15.298523+00:00",
-    "status": "verified",
+    "status": "scripted",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_notes": [
@@ -18656,7 +18656,41 @@
       "[unsupported] 10번 문장: Speculative question, not a verifiable factual claim"
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "contradicted"
+    "cross_verdict": "ok",
+    "narration": "왕세자였던 그가 갑자기 집에 감금됐다고? 요르단의 하셈 왕가 이야기를 들어보세요. 함자 빈 알 후세인 왕자는 히센 왕과 누르 왕비 사이에서 태어난 네 번째 아들입니다. 1999년 2월 7일, 그는 공식적으로 왕세자에 임명되었습니다. 하지만 2004년 11월 28일, 형인 압둘라 2세에게 왕위 계승권을 박탈당하면서 갑작스러운 감금 생활을 시작했습니다. 그 이후로 그는 왕실 내에서 큰 제한을 받으며 살아야 했습니다. 놀라운 점은, 2022년 4월에 스스로 왕자 칭호를 포기했다는 사실입니다. 이는 그가 오랜 갈등과 압박 속에서 결국 스스로 선택한 결정이었음을 보여줍니다. 이렇게 한때 왕세자였던 그의 이야기는, 권력의 변화가 개인에게 어떤 영향을 미치는지를 생각하게 합니다. 이제, 그가 남긴 여운은 “왕위는 빼앗길 수 있어도, 스스로 내린 선택은 언제나 남는다”는 말처럼 다가옵니다.",
+    "title_line1": "요르단 왕세자 감금",
+    "title_line2": "왜 왕위 박탈?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "왕세자 *감금*?"
+      },
+      {
+        "s": 5,
+        "text": "왕위 *박탈* 후 감금"
+      },
+      {
+        "s": 7,
+        "text": "*왕자* 칭호 포기"
+      },
+      {
+        "s": 10,
+        "text": "선택은 *남는다*"
+      }
+    ],
+    "image_queries": [
+      "crown prince confinement",
+      "Jordan royal palace",
+      "Jordan royal family portrait",
+      "crown prince appointment ceremony",
+      "royal heir removal confinement",
+      "restricted royal quarters",
+      "prince title relinquishment",
+      "solitary contemplation room",
+      "former crown prince reflection",
+      "choice remains quote"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "이스라엘 동쪽에 지구 최저점이 있다?",
