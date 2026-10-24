@@ -21607,7 +21607,7 @@
     "title_line1": "불가리아 장미축제",
     "title_line2": "하루만에 도시가 쉬다",
     "image_queries": [
-      "city rose holiday",
+      "city rose",
       "Bulgaria rose festival",
       "May June holiday Bulgaria",
       "people walking to rose fields",
@@ -21628,12 +21628,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Teasdale, Sara, 1884-1933",
-        "license": "Public domain",
-        "title": "Letter signed Sara, New York, to Ernst, New York City, December 30, 1929 - DPLA - e567504d",
-        "page": "https://commons.wikimedia.org/wiki/File:Letter_signed_Sara,_New_York,_to_Ernst,_New_York_City,_December_30,_1929_-_DPLA_-_e567504d38227f76b69da2599dd5a36c_(page_2).jpg",
-        "id": "c:158236139"
+        "source": "pixabay",
+        "user": "HeungSoon",
+        "page": "https://pixabay.com/photos/rose-rose-tree-rose-city-thorn-4063148/",
+        "id": 4063148,
+        "type": "photo"
       },
       {
         "scene": 2,
