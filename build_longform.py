@@ -66,7 +66,14 @@ def parse_indexes(text):
     return uniq
 
 
+EST_SCALE = 1.0   # 롱폼 확장 대본은 쇼츠보다 길어서(약 2배) 길이 예상에 곱한다
+
+
 def est_seconds(item):
+    return _est_seconds(item) * EST_SCALE
+
+
+def _est_seconds(item):
     # 음성이 이미 만들어져 있으면 실제 길이(타이밍 파일의 마지막 문장 끝)를 사용
     try:
         tp = item.get("timing_path_v2")
@@ -332,7 +339,7 @@ def make_title(db, members, theme, custom):
     return base[:95]
 
 
-def make_description(db, members, durations, intro_len, title):
+def make_description(db, members, durations, intro_len, title, extra=None):
     import common
     lines = []
     t = intro_len
@@ -343,6 +350,8 @@ def make_description(db, members, durations, intro_len, title):
         name = f"{no}. {str(it.get('country', '')).strip()} - {(t1 + ' ' + t2).strip() or it.get('topic', '')}"
         chapters.append((fmt_time(t), name[:90]))
         t += dur
+    for et, en_ in (extra or []):
+        chapters.append((fmt_time(et), en_))
     lines.append("\n".join(f"{a} {b}" for a, b in chapters))
     credits, seen = [], set()
     for idx in members:
@@ -390,6 +399,142 @@ def make_thumbnail(db, members, title, out_path):
     base.convert("RGB").save(out_path)
 
 
+# ---------------------------------------------------------------- 새 화면(rich) 파이프라인
+def _next_info(db, members, k):
+    if k + 1 >= len(members):
+        return None
+    it = db[members[k + 1]]
+    return str(it.get("topic") or it.get("title_line1") or it.get("country") or "") if IS_EN else str(it.get("country") or "")
+
+
+def run_rich(args, db, lf_db, members):
+    import longform_render as R
+    import longform_script as LS
+    import build_video as B
+    import subtitles as _sub
+    OUT.mkdir(exist_ok=True)
+    WORK.mkdir(exist_ok=True)
+    t0 = time.time()
+    client = models = None
+    if args.no_expand:
+        print("확장 대본 사용 안 함 (--no-expand): 쇼츠 대본과 음성을 그대로 사용합니다", flush=True)
+    elif LS.enabled():
+        try:
+            client, models = LS.client_models()
+        except Exception as e:
+            print(f"AI 연결 실패 -> 쇼츠 대본으로 대신합니다 ({type(e).__name__}: {e})", flush=True)
+    else:
+        print("GROQ_API_KEY가 없거나 LF_EXPAND=0 -> 쇼츠 대본으로 대신합니다", flush=True)
+
+    # 1) 이미지 + 확장 대본 + 음성
+    recs, countries_all = {}, [str(db[i].get("country", "")).strip() for i in members]
+    for k, idx in enumerate(members):
+        print(f"\n== 재료 준비 {idx} {db[idx].get('country', '')}", flush=True)
+        run_py("generate_script.py", "--extras-only", "--index", str(idx))
+        run_py("fetch_images.py", "--index", str(idx))
+        db = load_json(BASE / "facts_db.json", db)
+        item = db[idx]
+        rec = None
+        if client:
+            me = str(item.get("country", "")).strip()
+            cands = (LS.EN_PARTNERS if IS_EN else [c for c in dict.fromkeys(countries_all) if c and c != me] + ([] if me == "한국" else ["한국"]))
+            try:
+                rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands, force=args.regen)
+            except Exception as e:
+                print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
+        if rec is None:
+            if client:
+                print("  확장 대본을 만들지 못해 이 소재는 쇼츠 대본으로 대신합니다", flush=True)
+            if not run_py("generate_tts.py", "--index", str(idx)):
+                pass
+            db = load_json(BASE / "facts_db.json", db)
+            item = db[idx]
+            ap_ = item.get("audio_path_v2")
+            if ap_ and Path(ap_).exists():
+                rec = {"narration": item.get("narration", ""), "audio": ap_, "timing": item.get("timing_path_v2"),
+                       "keywords": [], "compare": None,
+                       "recap": (str(item.get("title_line1", "")) + " " + str(item.get("title_line2", ""))).strip()}
+        if rec:
+            recs[idx] = rec
+        else:
+            print(f"  !! {idx}: 음성이 없어 롱폼에서 제외합니다", flush=True)
+    members = [i for i in members if i in recs]
+    if len(members) < args.min:
+        raise SystemExit(f"준비된 소재가 {len(members)}개뿐이라 롱폼을 만들 수 없습니다 (최소 {args.min}개).")
+    total = len(members)
+    countries = [str(db[i].get("country", "")).strip() for i in members]
+
+    lf_id = (max([r.get("id", 0) for r in lf_db] or [0])) + 1
+    title = make_title(db, members, args.theme, args.title)
+    burn = _sub.caption_mode() != "srt"
+
+    # 2) 인트로 (사진 몽타주 + 소개 음성)
+    imgs = []
+    for layer_n in range(3):
+        for idx in members:
+            paths = B.get_visual_paths(idx, db[idx])
+            if layer_n < len(paths) and Path(paths[layer_n]).exists():
+                try:
+                    imgs.append(R.load_sources([paths[layer_n]], "")[0][0])
+                except Exception:
+                    pass
+    if not imgs:
+        imgs = [R.placeholder(0, countries[0])]
+    intro_rec = LS.prepare_extra("lf_intro", LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])) if (client or LS.enabled()) and not args.no_expand else None
+    parts, durs, seg_cues = [], [], {}
+    intro_path = WORK / "seg_00_intro.mp4"
+    intro_len = R.intro([title.split("|")[0].strip()], total, imgs, (intro_rec or {}).get("audio"), args.channel, args.handle, args.avatar, intro_path)
+    parts.append(intro_path)
+
+    # 3) 챕터 카드 + 본편
+    t_acc = intro_len
+    chapter_starts, bg_last = [], imgs[0]
+    for no, idx in enumerate(members, start=1):
+        item = db[idx]
+        t1, t2 = B.split_title(item)
+        cp = WORK / f"seg_{no:02d}_card.mp4"
+        sp = WORK / f"seg_{no:02d}.mp4"
+        card_len = R.chapter_card(no, total, B.safe_country(item), t1, t2, imgs[(no - 1) % len(imgs)], cp)
+        dur, cues, first_img = R.segment(idx, item, recs[idx], no, total, sp, args.channel, args.handle, args.avatar, burn=burn)
+        bg_last = first_img
+        parts += [cp, sp]
+        durs.append(card_len + dur)
+        seg_cues[no] = (t_acc + card_len, cues)
+        t_acc += card_len + dur
+
+    # 4) 요약 + 엔딩
+    items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
+    out_rec = LS.prepare_extra("lf_outro", LS.outro_text([x[2] for x in items])) if (client or LS.enabled()) and not args.no_expand else None
+    rp = WORK / "seg_99_recap.mp4"
+    recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
+    parts.append(rp)
+    recap_start = t_acc
+
+    # 5) 합치기 + 설명/썸네일/자막
+    out_mp4 = OUT / f"longform_{lf_id:03d}.mp4"
+    concat(parts, out_mp4)
+    desc = make_description(db, members, durs, intro_len, title, extra=[(recap_start, "요약" if not IS_EN else "Recap")])
+    (OUT / f"longform_{lf_id:03d}.txt").write_text(f"{title}\n\n{desc}\n", encoding="utf-8")
+    make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png")
+    chunks, n_no = [], 1
+    for no in sorted(seg_cues):
+        off, cs = seg_cues[no]
+        chunks.append("\n".join(f"{n_no + k}\n{_sub._srt_time(a_ + off)} --> {_sub._srt_time(b_ + off)}\n{tx}\n" for k, (a_, b_, tx) in enumerate(cs)))
+        n_no += len(cs)
+    (OUT / f"longform_{lf_id:03d}.srt").write_text("\n".join(c for c in chunks if c), encoding="utf-8")
+    total_len = intro_len + sum(durs) + recap_len
+    lf_db.append({
+        "id": lf_id, "mode": args.mode, "theme": args.theme, "members": members, "title": title, "style": "rich",
+        "expanded": bool(client), "description": desc, "duration_sec": round(total_len, 1),
+        "video": str(out_mp4.name), "status": "video_done", "created_at": datetime.now(timezone.utc).isoformat(),
+    })
+    with open(LF_DB, "w", encoding="utf-8") as f:
+        json.dump(lf_db, f, ensure_ascii=False, indent=2)
+    shutil.rmtree(WORK, ignore_errors=True)
+    print(f"\n완료: {out_mp4} ({total_len / 60:.1f}분, {time.time() - t0:.0f}초 걸림)")
+    print(f"제목: {title}")
+
+
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description="쇼츠를 묶어 가로 롱폼 만들기")
@@ -404,8 +549,15 @@ def main():
     ap.add_argument("--channel", default="채널명")
     ap.add_argument("--handle", default="@handle")
     ap.add_argument("--avatar", default="avatar.png")
+    ap.add_argument("--style", choices=["rich", "classic"], default=os.environ.get("LF_STYLE", "rich"),
+                    help="rich: 풀스크린 사진+챕터 카드+키워드+비교 카드+인트로/요약 (기본) / classic: 예전 화면(오른쪽 흰 패널)")
+    ap.add_argument("--no-expand", action="store_true", help="rich 인데 확장 대본을 쓰지 않고 쇼츠 대본/음성을 그대로 사용")
+    ap.add_argument("--regen", action="store_true", help="저장된 확장 대본이 있어도 다시 만든다")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
     args = ap.parse_args()
+    global EST_SCALE
+    if args.style == "rich" and not args.no_expand and os.environ.get("GROQ_API_KEY", "").strip() and os.environ.get("LF_EXPAND", "1") != "0":
+        EST_SCALE = 2.2
 
     db = load_json(BASE / "facts_db.json", [])
     lf_db = load_json(LF_DB, [])
@@ -416,6 +568,8 @@ def main():
           ", ".join(f"{i} {db[i].get('country', '')}" for i in members), flush=True)
     if args.dry_run:
         return
+    if args.style == "rich":
+        return run_rich(args, db, lf_db, members)
 
     OUT.mkdir(exist_ok=True)
     WORK.mkdir(exist_ok=True)
