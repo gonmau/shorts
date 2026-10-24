@@ -22251,7 +22251,11 @@
         "scene": 8,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0300_미국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0300_미국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-HyunsuMultilingualNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "과일박쥐, 괜찮은 별미?",
