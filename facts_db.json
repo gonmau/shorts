@@ -21091,8 +21091,8 @@
   {
     "topic": "불가리아 장미 축제, 도시 전체가 휴일",
     "hook": "도시 전체가 장미 따기 위해 쉬는 날이 있다면?",
-    "body": "불가리아(Bulgaria)에서는 5월 말부터 6월 중순까지 카잔라크(Kazanlak) 등 여러 도시에서 장미 축제(Rose Festival)가 열리며, 공식 휴일로 지정됩니다.",
-    "twist": "축제에서는 장미 여왕을 crown하고, 수천 명이 퍼레이드에 참여합니다.",
+    "body": "불가리아에서는 5월 말부터 6월 중순까지 카잔라크(Kazanlak) 등 몇몇 도시에서 장미 축제(Rose Festival)가 열리며, 이 기간 동안 일부 지역에서는 휴일처럼 여겨지기도 합니다. 많은 주민들이 일상 업무를 잠시 멈추고 장미 밭을 찾기도 합니다.",
+    "twist": "축제의 하이라이트는 바로 ‘장미 여왕’에게 왕관을 씌우는 순간인데요, 이때 수천 명이 거리 퍼레이드에 참여해 꽃향기 가득한 행진을 펼칩니다.",
     "caveat": "휴일은 카잔라크, 칼로보, 구르코보 등 특정 도시에서만 적용됩니다.",
     "country": "불가리아",
     "theme": "축제/의례",
@@ -21101,20 +21101,48 @@
     "verify_note": "Rose Festival, Bulgaria",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:14.283401+00:00",
-    "status": "verified",
+    "status": "scripted",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_notes": [
-      "[unsupported] 1번 문장: No evidence of a city-wide holiday for rose picking",
-      "[unsupported] 2번 문장: No source confirming official holidays in Kazanlak and nearby cities for a rose festival",
-      "[unsupported] 3번 문장: No evidence that residents stop work to gather roses",
-      "[unsupported] 4번 문장: No documentation of a 'Rose Queen' coronation and massive parade",
-      "[unsupported] 5번 문장: No proof that the holiday applies only to specific cities",
-      "[unsupported] 6번 문장: Subjective description lacking verifiable sources",
-      "[unsupported] 7번 문장: No evidence linking the scent to the nickname 'City of Roses'"
+      "[수정됨] [unsupported] 2번 문장: No evidence of a nationwide day; only local festivals.",
+      "[수정됨] [unsupported] 3번 문장: Rose festivals exist, but not officially designated public holidays for the whole city.",
+      "[수정됨] [unsupported] 4번 문장: Residents generally continue work; not all stop to go to rose fields.",
+      "[수정됨] [unsupported] 6번 문장: Depends on claim 3; holiday limitation not verified.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No evidence that cities declare an official holiday; the festival is a cultural event, not a public holiday.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: Anecdotal claim about many residents stopping work lacks verifiable data.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: Same as claim 2; no evidence of an official holiday limited to those cities."
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "unsupported"
+    "cross_verdict": "unsupported",
+    "narration": "도시 전체가 장미 따기 위해 쉬는 날이 있다면? 불가리아에서는 5월 말부터 6월 중순까지 카잔라크(Kazanlak) 등 몇몇 도시에서 장미 축제(Rose Festival)가 열리며, 이 기간 동안 일부 지역에서는 휴일처럼 여겨지기도 합니다. 많은 주민들이 일상 업무를 잠시 멈추고 장미 밭을 찾기도 합니다. 축제의 하이라이트는 바로 ‘장미 여왕’에게 왕관을 씌우는 순간인데요, 이때 수천 명이 거리 퍼레이드에 참여해 꽃향기 가득한 행진을 펼칩니다. 하지만 이 휴일이 적용되는 것은 앞서 언급한 특정 도시들에 주로 해당된다는 점을 기억해 두세요. 장미 향이 가득한 하루, 그 여운은 언제까지나 남을 겁니다.",
+    "narration_original": "도시 전체가 장미 따기 위해 쉬는 날이 있다면? 불가리아에서는 바로 그런 날이 존재합니다. 매년 5월 말부터 6월 중순까지 카잔라크를 비롯해 칼로보, 구르코보 등 몇몇 도시에서 ‘장미 축제’가 열리며, 해당 기간은 공식 휴일로 지정됩니다. 그래서 주민들은 일상 업무를 멈추고 장미 밭으로 나갑니다. 축제의 하이라이트는 바로 ‘장미 여왕’에게 왕관을 씌우는 순간인데요, 이때 수천 명이 거리 퍼레이드에 참여해 꽃향기 가득한 행진을 펼칩니다. 하지만 이 휴일이 적용되는 것은 앞서 언급한 특정 도시들에 한정된다는 점, 기억해 두세요. 장미 향이 가득한 하루, 그 여운은 언제까지나 남을 겁니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "도시가 *장미* 쉬는 날?"
+      },
+      {
+        "s": 3,
+        "text": "5월~6월 *휴일*"
+      },
+      {
+        "s": 5,
+        "text": "수천 명 *퍼레이드*"
+      }
+    ],
+    "title_line1": "불가리아 장미축제",
+    "title_line2": "하루만에 도시가 쉬다",
+    "image_queries": [
+      "city rose holiday",
+      "Bulgaria rose festival",
+      "May June holiday Bulgaria",
+      "people walking to rose fields",
+      "thousands parade roses",
+      "specific Bulgarian towns holiday",
+      "rose scented day"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
