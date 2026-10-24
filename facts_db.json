@@ -21628,11 +21628,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "demsi3art",
-        "page": "https://pixabay.com/photos/beautiful-holiday-city-summer-4917134/",
-        "id": 4917134,
-        "type": "photo"
+        "source": "commons",
+        "user": "Teasdale, Sara, 1884-1933",
+        "license": "Public domain",
+        "title": "Letter signed Sara, New York, to Ernst, New York City, December 30, 1929 - DPLA - e567504d",
+        "page": "https://commons.wikimedia.org/wiki/File:Letter_signed_Sara,_New_York,_to_Ernst,_New_York_City,_December_30,_1929_-_DPLA_-_e567504d38227f76b69da2599dd5a36c_(page_2).jpg",
+        "id": "c:158236139"
       },
       {
         "scene": 2,
