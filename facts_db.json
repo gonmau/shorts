@@ -7680,42 +7680,227 @@
     "twist": "판매는 금지됐지만, 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있다.",
     "verify_note": "Casu Marzu Sardinia live larvae cheese Italy EU sale ban traditional food",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "rejected",
-    "narration": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있습니다. 이름은 ‘카수 마르주’로, 양젖 치즈에 치즈파리가 알을 낳게 합니다. 부화한 유충은 치즈 속 지방을 분해하며, 치즈를 아주 부드럽게 만들고 특유의 강한 풍미를 더합니다. 일부 현지인들은 이를 오래된 전통 미식으로 여깁니다. 하지만 살아있는 유충이 든 식품은 위생과 안전 문제가 제기됩니다. 이탈리아에서는 상업적 판매가 금지됐으며, EU 내에서도 상업적 판매와 유통이 허용되지 않습니다. 그럼에도 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있습니다. 금지된 판매와 이어지는 전통 사이에서, 카수 마르주는 문화와 식품 안전이 충돌하는 독특한 사례로 남아 있습니다.",
+    "status": "video_done",
+    "narration": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있다? 바로 ‘카수 마르주’입니다. 양젖으로 만든 이 치즈에 치즈파리가 알을 낳게 하면, 부화한 유충이 치즈 속 지방을 분해하면서 숙성이 진행됩니다. 유충이 활동할수록 치즈는 점점 부드러워지고, 특유의 강한 풍미가 살아납니다. 현지 일부 사람들은 이를 전통 미식으로 여기며 가정이나 지역 사회에서 여전히 만들고 먹습니다. 하지만 살아있는 유충이 들어간 식품은 위생·안전 문제로 이탈리아 내에서 상업적 판매가 금지돼 있으며, EU 전체에서도 유통이 허용되지 않습니다. 금지된 상황에서도 사르디니아의 작은 마을에서는 오늘도 전통을 이어가고 있다는 점, 바로 이곳이 카수 마르주의 숨은 매력입니다. 과연 그 독특한 맛을 직접 경험해볼 용기가 있으신가요?",
     "fact_checked": true,
     "fact_issues": [
       "‘판매가 금지됐고’를 ‘상업적 판매가 금지됐으며’ 로 수정하여 규제 범위를 명확히 함",
       "‘EU 내 상업적 판매·유통도 허용되지 않는다’는 사실이 맞지만, 개인용으로는 허용될 수 있음을 명시 필요"
     ],
     "fact_risk": "medium",
-    "title_line1": "사르디니아 치즈 전통",
-    "title_line2": "유충이 만든 부드러움?",
+    "title_line1": "사르디니아 살아치즈",
+    "title_line2": "유충과 함께 맛볼까",
     "highlights": [
       {
         "s": 1,
-        "text": "살아있는 *유충*"
+        "text": "살아있는 *유충* 치즈?"
       },
       {
-        "s": 2,
-        "text": "*부드러워지는* 치즈"
+        "s": 3,
+        "text": "치즈 파리 *알* 낳아?"
       },
       {
-        "s": 4,
-        "text": "EU *판매 금지*"
+        "s": 6,
+        "text": "*금지*된 판매"
+      },
+      {
+        "s": 8,
+        "text": "용기 *있나요*?"
       }
     ],
     "image_queries": [
-      "Casu marzu Sardinian cheese",
-      "Sardinia pecorino cheese wheel",
-      "Sardinian farmhouse cheese making",
-      "Sardinia countryside village",
-      "Italian cheese platter closeup",
-      "Traditional Sardinian food table"
+      "live maggot cheese",
+      "Casu Marzu cheese",
+      "cheese fly eggs",
+      "soft maggot cheese",
+      "Sardinia cheese making",
+      "banned cheese sale",
+      "Sardinian village cheese",
+      "cheese tasting courage"
     ],
     "fact_verifiability": "documented",
     "fact_applied": true,
     "narration_original": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있습니다. 이름은 ‘카수 마르주’로, 양젖 치즈에 치즈파리가 알을 낳도록 합니다. 부화한 유충은 치즈 속 지방을 분해하며, 치즈를 아주 부드럽게 만들고 특유의 강한 풍미를 더합니다. 일부 현지인들은 이를 오래된 전통 미식으로 여깁니다. 하지만 살아있는 유충이 든 식품은 위생과 안전 문제가 제기됩니다. 이탈리아에서는 이미 판매가 금지됐고, EU 내 상업적 판매와 유통도 허용되지 않습니다. 그럼에도 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있습니다. 금지된 판매와 이어지는 전통 사이에서, 카수 마르주는 문화와 식품 안전이 충돌하는 독특한 사례로 남아 있습니다.",
-    "reject_reason": "사실 오류 위험 medium"
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "scene_count": 12,
+    "image_queries_done": [
+      "live maggot cheese",
+      "Casu Marzu cheese",
+      "cheese fly eggs",
+      "soft maggot cheese",
+      "Sardinia cheese making",
+      "banned cheese sale",
+      "Sardinian village cheese",
+      "cheese tasting courage"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Wounds_and_Cracks",
+        "page": "https://pixabay.com/photos/cheese-grater-grated-grated-cheese-8379082/",
+        "id": 8379082
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/fig-cheese-bread-food-cream-cheese-3640553/",
+        "id": 3640553
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Smacznadietetyka",
+        "page": "https://pixabay.com/photos/healthy-breakfast-food-dish-meal-7213383/",
+        "id": 7213383,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "mariya_m",
+        "page": "https://pixabay.com/photos/cheese-platter-food-snack-grapes-6153716/",
+        "id": 6153716
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Wounds_and_Cracks",
+        "page": "https://pixabay.com/photos/cheese-grater-grated-grated-cheese-8379082/",
+        "id": 8379082,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Daria-Yakovleva",
+        "page": "https://pixabay.com/photos/cheese-snacks-appetizer-nutrition-1887233/",
+        "id": 1887233
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "sweetlouise",
+        "page": "https://pixabay.com/photos/cheese-food-kitchen-italian-cheese-4324718/",
+        "id": 4324718
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "mike_ramirez_mx",
+        "page": "https://pixabay.com/photos/cheese-tasting-alcohol-7188313/",
+        "id": 7188313
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2683,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c85361472b81",
+        "at": "2026-10-24 15:23",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2287,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "58cc4b8d2f3d",
+        "at": "2026-10-24 15:23",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2286,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6c7073e9c346",
+        "at": "2026-10-24 15:23",
+        "scene": 3,
+        "rejected_ids": [
+          7213383,
+          "c:167985805"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.231,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "177d7f579fbd",
+        "at": "2026-10-24 15:23",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2304,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f32539219ae9",
+        "at": "2026-10-24 15:23",
+        "scene": 5,
+        "rejected_ids": [
+          5155257,
+          8379082
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2218,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "83010a9cab2d",
+        "at": "2026-10-24 15:23",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2767,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e52eac076ae9",
+        "at": "2026-10-24 15:23",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2691,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7dc310785f04",
+        "at": "2026-10-24 15:23",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0108_Italy_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0108_Italy_v2_timing.json",
+    "tts_voice_v2": "ko-KR-JiMinNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "Japan",
