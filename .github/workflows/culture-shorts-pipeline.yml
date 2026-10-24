@@ -54,6 +54,11 @@ on:
       speed:
         description: "말 속도 (예: -5% / +10% / 비우면 기본)"
         default: ""
+      caption_mode:
+        description: "자막 방식 (script=대본 자막 입힘, highlight=핵심 문구 표시(롱폼은 대본 자막), srt=SRT 파일만(영상엔 자막 없음), both=대본 자막+SRT)"
+        type: choice
+        options: [script, highlight, srt, both]
+        default: script
 
 permissions:
   contents: write
@@ -71,6 +76,7 @@ jobs:
       START: ${{ github.event.inputs.start_index || '106' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
+      CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -121,16 +127,7 @@ jobs:
 
       - name: 자동 승인 (선택)
         if: ${{ env.STAGE != 'render' && github.event.inputs.auto_verify == 'true' }}
-        run: |
-          python - <<'PY'
-          import json, os
-          n = int(os.environ['COUNT']); db = json.load(open('facts_db.json', encoding='utf-8')); k = 0
-          for f in db:
-              if f.get('status') == 'unverified' and k < n:
-                  f['status'] = 'verified'; k += 1
-          json.dump(db, open('facts_db.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
-          print(f'{k}개 자동 승인')
-          PY
+        run: python approve.py --limit "$COUNT" --start "$START"
 
       - name: 구독/좋아요 문구 점검 (선택)
         if: ${{ env.CTA_MODE != 'off' }}
@@ -189,6 +186,20 @@ jobs:
           done
           echo "push 실패"; exit 1
 
+      - name: 구글 드라이브 저장 (영상·음성·이미지·썸네일·자막)
+        if: ${{ env.STAGE != 'prepare' }}
+        continue-on-error: true
+        env:
+          DRIVE_CLIENT_ID: ${{ secrets.DRIVE_CLIENT_ID }}
+          DRIVE_CLIENT_SECRET: ${{ secrets.DRIVE_CLIENT_SECRET }}
+          DRIVE_REFRESH_TOKEN: ${{ secrets.DRIVE_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$DRIVE_REFRESH_TOKEN" ]; then
+            python drive_sync.py push --only thumbs,subs,audio,images,videos
+          else
+            echo "DRIVE_REFRESH_TOKEN Secret이 없어 드라이브 저장을 건너뜁니다."
+          fi
+
       - name: mp4 아티팩트 보관
         id: art
         if: ${{ env.STAGE != 'prepare' }}
@@ -197,6 +208,7 @@ jobs:
           name: culture-shorts-videos
           path: |
             videos/*.mp4
+            videos/*.srt
             thumbnails/*.png
           retention-days: 14
           if-no-files-found: warn

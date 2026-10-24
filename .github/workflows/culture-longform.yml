@@ -4,7 +4,7 @@
 #
 #   mode = auto   : 영상이 끝난 소재 중 아직 롱폼에 안 쓴 것을 번호순으로 count개 (theme으로 분야/나라/주제 키워드 지정 가능)
 #   mode = manual : indexes 에 적은 번호들을 묶음 (예: 109,110,115-118)
-#   개수는 3~10개, 전체 예상 길이 15분 이하
+#   개수는 3~30개, 전체 예상 길이 40분 이하
 #   dry_run = true : 어떤 소재가 묶일지 목록만 보고 끝 (영상 안 만듦)
 #
 # 결과: 아티팩트(longform_out)에 mp4 / 썸네일 / 제목+설명(챕터 포함). 디스코드로 제목/설명/썸네일 전송. 업로드는 직접.
@@ -20,13 +20,13 @@ on:
         options: [auto, manual]
         default: auto
       indexes:
-        description: "manual일 때 묶을 번호 (예: 109,110,115-118 / 3~10개)"
+        description: "manual일 때 묶을 번호 (예: 109,110,115-118 / 3~30개)"
         default: ""
       theme:
         description: "auto일 때 분야/나라/주제 키워드 (비우면 번호순)"
         default: ""
       count:
-        description: "auto일 때 묶을 개수 (3~10)"
+        description: "auto일 때 묶을 개수 (3~30)"
         default: "6"
       start_index:
         description: "auto일 때 이 번호 이상만 후보"
@@ -45,6 +45,11 @@ on:
       speed:
         description: "말 속도 (예: -5% / +10% / 비우면 기본)"
         default: ""
+      caption_mode:
+        description: "자막 방식 (script=대본 자막 입힘, highlight=핵심 문구 표시(롱폼은 대본 자막), srt=SRT 파일만(영상엔 자막 없음), both=대본 자막+SRT)"
+        type: choice
+        options: [script, highlight, srt, both]
+        default: script
 
 permissions:
   contents: write
@@ -52,11 +57,12 @@ permissions:
 jobs:
   longform:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     env:
       PYTHONUNBUFFERED: "1"
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
+      CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -106,6 +112,20 @@ jobs:
             sleep 3
           done
           echo "push 실패"; exit 1
+
+      - name: 구글 드라이브 저장 (롱폼)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        continue-on-error: true
+        env:
+          DRIVE_CLIENT_ID: ${{ secrets.DRIVE_CLIENT_ID }}
+          DRIVE_CLIENT_SECRET: ${{ secrets.DRIVE_CLIENT_SECRET }}
+          DRIVE_REFRESH_TOKEN: ${{ secrets.DRIVE_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$DRIVE_REFRESH_TOKEN" ]; then
+            python drive_sync.py push --only longform
+          else
+            echo "DRIVE_REFRESH_TOKEN Secret이 없어 드라이브 저장을 건너뜁니다."
+          fi
 
       - name: 롱폼 아티팩트
         id: art
