@@ -21617,68 +21617,71 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel",
-      "불가리아 travel"
+      "rose city",
+      "Bulgaria rose festival",
+      "May June holiday Bulgaria",
+      "people walking to rose fields",
+      "thousands parade roses",
+      "specific Bulgarian towns holiday",
+      "rose scented day"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "JoshuaWoroniecki",
-        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
-        "id": 5219496
+        "source": "commons",
+        "user": "Notorious4life ( talk ) ( Uploads )",
+        "license": "CC0",
+        "title": "Rose City, Michigan city hall.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rose_City,_Michigan_city_hall.jpg",
+        "id": "c:112940616"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "822640",
-        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/",
-        "id": 1828079
+        "user": "HeungSoon",
+        "page": "https://pixabay.com/photos/rose-petal-flower-beautiful-4228704/",
+        "id": 4228704
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "took_a_snap",
-        "page": "https://pixabay.com/photos/road-fog-mist-asphalt-travel-8687668/",
-        "id": 8687668
+        "source": "commons",
+        "user": "Moni Monev",
+        "license": "CC BY 3.0",
+        "title": "Kazanluk(BULGARIA) - panoramio - Moni Monev (4).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kazanluk(BULGARIA)_-_panoramio_-_Moni_Monev_(4).jpg",
+        "id": "c:41708878"
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "ClickerHappy",
-        "page": "https://pixabay.com/photos/airport-terminal-man-travel-1822133/",
-        "id": 1822133
+        "source": "commons",
+        "user": "Moni Monev",
+        "license": "CC BY 3.0",
+        "title": "Kazanluk(BULGARIA) - panoramio - Moni Monev (3).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kazanluk(BULGARIA)_-_panoramio_-_Moni_Monev_(3).jpg",
+        "id": "c:41708871"
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "igorovsyannykov",
-        "page": "https://pixabay.com/photos/adult-asia-asian-bangkok-beautiful-2693054/",
-        "id": 2693054
+        "source": "commons",
+        "user": "Pacific Southwest Region 5",
+        "license": "Public domain",
+        "title": "Huge Crowds at Rose Parade Float Viewing Event (16358667088).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Huge_Crowds_at_Rose_Parade_Float_Viewing_Event_(16358667088).jpg",
+        "id": "c:68909550"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "DariuszSankowski",
-        "page": "https://pixabay.com/photos/camera-photographs-souvenir-1130731/",
-        "id": 1130731
+        "user": "Anestiev",
+        "page": "https://pixabay.com/photos/harvest-summer-nature-food-2460135/",
+        "id": 2460135
       },
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "ClickerHappy",
-        "page": "https://pixabay.com/photos/airport-walking-waiting-gate-walk-4120835/",
-        "id": 4120835
+        "user": "suju-foto",
+        "page": "https://pixabay.com/photos/roses-fragrance-pink-bush-roses-4297463/",
+        "id": 4297463
       },
       {
         "scene": 8,
@@ -21720,12 +21723,12 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2621,
+        "clip": 0.2377,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a21bc62d5b7b",
-        "at": "2026-10-24 22:00",
+        "sig": "6f7d18f6ac48",
+        "at": "2026-10-24 22:32",
         "scene": 1,
         "rejected_ids": [
           3876991,
@@ -21734,6 +21737,7 @@
           4914938,
           4917134,
           "c:112940608",
+          "c:112940616",
           "c:158236137",
           "c:158236139",
           "c:68080722"
@@ -21745,39 +21749,43 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b981d90a7388",
-        "at": "2026-10-24 21:13",
+        "sig": "62ba36b6c750",
+        "at": "2026-10-24 22:32",
         "scene": 2,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2222,
+        "clip": 0.26,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a4def430e229",
-        "at": "2026-10-24 21:14",
+        "sig": "4e224c18b609",
+        "at": "2026-10-24 22:32",
         "scene": 3,
         "rejected_ids": [
           5308943,
-          "c:193319896"
+          "c:193319896",
+          "c:41708878"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2268,
+        "clip": 0.2364,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "0885e203b2df",
-        "at": "2026-10-24 21:14",
+        "sig": "aa3325e4cdcd",
+        "at": "2026-10-24 22:32",
         "scene": 4,
         "rejected_ids": [
           400811,
+          458491,
           5696492,
           9170093,
+          "c:41708729",
           "c:41708779",
+          "c:41708871",
           "c:41708878"
         ]
       },
@@ -21787,8 +21795,8 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "70add115c9ec",
-        "at": "2026-10-24 21:13",
+        "sig": "d9a507a407bb",
+        "at": "2026-10-24 22:32",
         "scene": 5,
         "rejected_ids": []
       },
@@ -21798,8 +21806,8 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "78d76c087cb7",
-        "at": "2026-10-24 21:13",
+        "sig": "0b86704d903e",
+        "at": "2026-10-24 22:32",
         "scene": 6,
         "rejected_ids": []
       },
@@ -21809,8 +21817,8 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7d6243e074df",
-        "at": "2026-10-24 21:13",
+        "sig": "1c7efc83d5c8",
+        "at": "2026-10-24 22:32",
         "scene": 7,
         "rejected_ids": []
       }
