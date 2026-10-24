@@ -22075,7 +22075,183 @@
       "Unique American Chinese cuisine",
       "Chinese restaurant storefront USA"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "American Chinese restaurant menu",
+      "American Chinese dish adaptation",
+      "American Chinese cooking ingredients",
+      "Orange chicken dish",
+      "American Chinese takeout box",
+      "Chinese restaurant interior USA",
+      "Unique American Chinese cuisine",
+      "Chinese restaurant storefront USA"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "King of Hearts",
+        "license": "Public domain",
+        "title": "Museum of Chinese in America New York July 2013 002.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Museum_of_Chinese_in_America_New_York_July_2013_002.jpg",
+        "id": "c:90806151"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Anilsharma26",
+        "page": "https://pixabay.com/photos/dish-meal-food-gastronomy-7279403/",
+        "id": 7279403,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/tomatoes-rosemary-basil-salt-10368988/",
+        "id": 10368988
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "tarasov1984",
+        "page": "https://pixabay.com/photos/orange-dish-fricassee-2541476/",
+        "id": 2541476
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "jamesoladujoye",
+        "page": "https://pixabay.com/photos/pizza-food-takeout-box-pepperoni-1702652/",
+        "id": 1702652
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/interior-design-restaurant-diner-6998378/",
+        "id": 6998378
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "MYCCF",
+        "page": "https://pixabay.com/photos/stew-chinese-food-seafood-6577764/",
+        "id": 6577764,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "scottwebb",
+        "page": "https://pixabay.com/photos/urban-montreal-downtown-streetscape-2004494/",
+        "id": 2004494
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3478,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "020aa01677cb",
+        "at": "2026-10-24 23:10",
+        "scene": 1,
+        "rejected_ids": [
+          8190047,
+          "c:90806151"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2332,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "42c65b08c548",
+        "at": "2026-10-24 23:11",
+        "scene": 2,
+        "rejected_ids": [
+          7279398,
+          7279403
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2287,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f7cc5a520b2c",
+        "at": "2026-10-24 23:10",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2674,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2dd9b84f5522",
+        "at": "2026-10-24 23:10",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2192,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "20112eef5e4c",
+        "at": "2026-10-24 23:10",
+        "scene": 5,
+        "rejected_ids": [
+          1702652,
+          7279398,
+          8256028
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2994,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "97a5fa1aa293",
+        "at": "2026-10-24 23:10",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2611,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eeba1593eba1",
+        "at": "2026-10-24 23:11",
+        "scene": 7,
+        "rejected_ids": [
+          6577764,
+          7864270
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2232,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0a894a0eb6ec",
+        "at": "2026-10-24 23:10",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "과일박쥐, 괜찮은 별미?",
