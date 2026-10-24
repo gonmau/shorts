@@ -22202,13 +22202,13 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2192,
+        "verdict": "ok",
+        "clip": 0.2912,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "20112eef5e4c",
-        "at": "2026-10-24 23:10",
+        "sig": "26afe0c18dec",
+        "at": "2026-10-24 23:37",
         "scene": 5,
         "rejected_ids": [
           1702652,
