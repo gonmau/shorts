@@ -21617,7 +21617,7 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "city rose holiday",
+      "rose city",
       "Bulgaria rose festival",
       "May June holiday Bulgaria",
       "people walking to rose fields",
@@ -21628,11 +21628,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "giselaatje",
-        "page": "https://pixabay.com/photos/rose-street-leave-city-4914938/",
-        "id": 4914938,
-        "type": "photo"
+        "source": "commons",
+        "user": "Notorious4life ( talk ) ( Uploads )",
+        "license": "CC0",
+        "title": "Rose City, Michigan (August 2021).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rose_City,_Michigan_(August_2021).jpg",
+        "id": "c:112940608"
       },
       {
         "scene": 2,
@@ -21685,20 +21686,24 @@
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "bad",
-        "clip": 0.1835,
+        "verdict": "ok",
+        "clip": 0.2621,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b932da8ba976",
-        "at": "2026-10-24 21:13",
+        "sig": "a21bc62d5b7b",
+        "at": "2026-10-24 22:00",
         "scene": 1,
         "rejected_ids": [
           3876991,
+          4063148,
           4552028,
+          4914938,
           4917134,
+          "c:112940608",
           "c:158236137",
-          "c:158236139"
+          "c:158236139",
+          "c:68080722"
         ]
       },
       {
