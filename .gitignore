@@ -1,0 +1,5 @@
+.local_secrets.json
+token_drive.json
+client_secret*.json
+_backup/
+__pycache__/
