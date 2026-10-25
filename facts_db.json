@@ -1235,7 +1235,144 @@
     "status_v6": "video_done",
     "youtube_id": "gtVOi0DUzOA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-23"
+    "uploaded_at": "2026-09-23",
+    "title_line1": "포트와인 숙성 규정",
+    "title_line2": "2년 미만은 이름?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "포트와인 *2년* 미만"
+      },
+      {
+        "s": 2,
+        "text": "와인 *2년* 숙성"
+      },
+      {
+        "s": 5,
+        "text": "빈티지 포트 *50년*"
+      }
+    ],
+    "image_queries": [
+      "Port wine under 2 years",
+      "Portuguese wine cellar 2 years",
+      "Portuguese wine barrel",
+      "Aged port wine bottles",
+      "Vintage port 50 years",
+      "Glass of aged port wine",
+      "Thumbs up icon"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Port wine under 2 years",
+      "Portuguese wine cellar 2 years",
+      "Portuguese wine barrel",
+      "Aged port wine bottles",
+      "Vintage port 50 years",
+      "Glass of aged port wine",
+      "Thumbs up icon"
+    ],
+    "image_credits": [
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "RichardMc",
+        "page": "https://pixabay.com/photos/port-big-bottle-lisbon-portuguese-2661062/",
+        "id": 2661062
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/wines-bottles-caps-bottle-caps-1652455/",
+        "id": 1652455
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Around the Kiirun port 1930s.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Around_the_Kiirun_port_1930s.jpg",
+        "id": "c:70755190"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Sponchia",
+        "page": "https://pixabay.com/photos/glass-wine-drops-red-wine-drink-3077869/",
+        "id": 3077869
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Wikimedia Foundation staff and contractors",
+        "license": "CC BY 4.0",
+        "title": "WP25 Thumbs Up - white.png",
+        "page": "https://commons.wikimedia.org/wiki/File:WP25_Thumbs_Up_-_white.png",
+        "id": "c:179321920"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3508,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bc4192f1fd77",
+        "at": "2026-10-25 15:19",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7a867ca4190b",
+        "at": "2026-10-25 15:19",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2453,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "85192e7f849e",
+        "at": "2026-10-25 15:19",
+        "scene": 5,
+        "rejected_ids": [
+          3878042,
+          "c:70755190"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2972,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b367205d295c",
+        "at": "2026-10-25 15:19",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3137,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8ed650aee1fb",
+        "at": "2026-10-25 15:19",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "country": "Germany",
@@ -1406,30 +1543,34 @@
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "OrnaW",
-        "page": "https://pixabay.com/photos/book-dictionary-french-language-3986093/",
-        "id": 3986093
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/shopping-street-quebec-city-quebec-56632/",
+        "id": 56632
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "photosforyou",
-        "page": "https://pixabay.com/photos/sign-saying-wisdom-smart-dream-1519642/",
-        "id": 1519642
+        "source": "commons",
+        "user": "cogdogblog",
+        "license": "CC BY 2.0",
+        "title": "For those who cannot read Secwepmctsin it is subtitled in English (15640180206).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:For_those_who_cannot_read_Secwepmctsin_it_is_subtitled_in_English_(15640180206).jpg",
+        "id": "c:56971256"
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "JoeBreuer",
-        "page": "https://pixabay.com/photos/road-pavement-city-urban-travel-3176980/",
-        "id": 3176980
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/shopping-street-quebec-city-quebec-56632/",
+        "id": 56632,
+        "type": "photo"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "cubajuan",
-        "page": "https://pixabay.com/photos/cuba-architecture-street-133489/",
-        "id": 133489
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/urban-black-and-white-elderly-woman-10240499/",
+        "id": 10240499,
+        "type": "photo"
       },
       {
         "scene": 7,
@@ -1445,7 +1586,105 @@
     "status_v6": "video_done",
     "youtube_id": "myYI37osZyI",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-19"
+    "uploaded_at": "2026-09-19",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2453,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cf54ffb60b0d",
+        "at": "2026-10-25 15:21",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2055,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d1389abecc9d",
+        "at": "2026-10-25 15:21",
+        "scene": 2,
+        "rejected_ids": [
+          1197100,
+          5328304,
+          933097,
+          "c:125416700",
+          "c:140789553"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2556,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eeefd8f137e2",
+        "at": "2026-10-25 15:21",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2421,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "47d0f9d9f1b6",
+        "at": "2026-10-25 15:21",
+        "scene": 4,
+        "rejected_ids": [
+          1519642,
+          "c:56971256"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2555,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "019076a160d2",
+        "at": "2026-10-25 15:21",
+        "scene": 5,
+        "rejected_ids": [
+          56632,
+          7356527,
+          "c:140789553"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.212,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "119d291890e3",
+        "at": "2026-10-25 15:21",
+        "scene": 6,
+        "rejected_ids": [
+          10240499,
+          133489,
+          7033509,
+          "c:125416700",
+          "c:140789553"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2817,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "648096d2c928",
+        "at": "2026-10-25 15:21",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "country": "Argentina",
@@ -1461,7 +1700,240 @@
     "timing_path_v2": "audio\\0014_Argentina_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "title_line1": "아르헨티나이름제한",
+    "title_line2": "신청하면바로거절?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "이름 자유 *불가*"
+      },
+      {
+        "s": 3,
+        "text": "*금지* 이름 신청"
+      },
+      {
+        "s": 5,
+        "text": "유명 캐릭터도 *제한*"
+      },
+      {
+        "s": 7,
+        "text": "이름 *리스트* 확인"
+      }
+    ],
+    "image_queries": [
+      "Argentina name restriction",
+      "civil registry office Argentina",
+      "prohibited name application",
+      "English name symbols Argentina",
+      "famous character name Argentina",
+      "Mickey Mouse trademark",
+      "name list verification",
+      "follow for culture tips"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Argentina name restriction",
+      "civil registry office Argentina",
+      "prohibited name application",
+      "English name symbols Argentina",
+      "famous character name Argentina",
+      "Mickey Mouse trademark",
+      "name list verification",
+      "follow for culture tips"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Paul_Reuß",
+        "page": "https://pixabay.com/photos/patagonia-argentina-nature-glacier-10020972/",
+        "id": 10020972,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "U.S. Department of State",
+        "license": "Public domain",
+        "title": "Secretary Pompeo With Local Law Enforcement in Argentina.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Secretary_Pompeo_With_Local_Law_Enforcement_in_Argentina.jpg",
+        "id": "c:80623588"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "fancycrave1",
+        "page": "https://pixabay.com/photos/code-programming-hacking-html-web-820275/",
+        "id": 820275,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "jmarti20",
+        "page": "https://pixabay.com/photos/mountain-glacier-winter-peak-cliff-4827387/",
+        "id": 4827387,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "derwiki",
+        "page": "https://pixabay.com/photos/glacier-argentina-south-america-583419/",
+        "id": 583419
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Abhi_Jacob",
+        "page": "https://pixabay.com/photos/mouse-disney-mic-mickey-funny-5340137/",
+        "id": 5340137,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "DCG_MAK",
+        "page": "https://pixabay.com/photos/checklist-list-ticked-off-hook-2945401/",
+        "id": 2945401,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/colored-pencils-colour-pencils-374771/",
+        "id": 374771,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2595,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "37a3e2b348fb",
+        "at": "2026-10-25 15:24",
+        "scene": 1,
+        "rejected_ids": [
+          10020972,
+          610101,
+          "c:11908931",
+          "c:66485612"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.234,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1868bc4dfe24",
+        "at": "2026-10-25 15:24",
+        "scene": 2,
+        "rejected_ids": [
+          4736613,
+          "c:80623588"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.176,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f1a9f6a5d7b8",
+        "at": "2026-10-25 15:24",
+        "scene": 3,
+        "rejected_ids": [
+          610101,
+          820275,
+          "c:158699355",
+          "c:195306259",
+          "c:80623588"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2107,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7731e6b6ad5a",
+        "at": "2026-10-25 15:24",
+        "scene": 4,
+        "rejected_ids": [
+          10020972,
+          4827387,
+          5596865,
+          "c:95394114",
+          "c:95394116"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2543,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "73af6c0d1d47",
+        "at": "2026-10-25 15:24",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2943,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "efdf18e79808",
+        "at": "2026-10-25 15:24",
+        "scene": 6,
+        "rejected_ids": [
+          4716403,
+          5340137,
+          5516423,
+          "c:158699355",
+          "c:80623588"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2388,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0509709363e4",
+        "at": "2026-10-25 15:25",
+        "scene": 7,
+        "rejected_ids": [
+          2945401,
+          "c:35697104"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1804,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bf399276a068",
+        "at": "2026-10-25 15:25",
+        "scene": 8,
+        "rejected_ids": [
+          2178164,
+          374771,
+          "c:17124116",
+          "c:187624939",
+          "c:80623588"
+        ]
+      }
+    ]
   },
   {
     "country": "Australia (Queensland)",
@@ -1524,10 +1996,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "MannyDream",
-        "page": "https://pixabay.com/photos/sea-waves-coast-surfing-surfers-5106327/",
-        "id": 5106327
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Queensland Heeler 1892.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Queensland_Heeler_1892.jpg",
+        "id": "c:171856700"
       },
       {
         "scene": 2,
@@ -1567,9 +2041,10 @@
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "stanbalik",
-        "page": "https://pixabay.com/photos/queensland-beach-sky-landscape-3973681/",
-        "id": 3973681
+        "user": "MannyDream",
+        "page": "https://pixabay.com/photos/sea-waves-coast-surfing-surfers-5106327/",
+        "id": 5106327,
+        "type": "photo"
       },
       {
         "scene": 8,
@@ -1585,7 +2060,115 @@
     "status_v6": "video_done",
     "youtube_id": "FOJ6j2xj_ds",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-20"
+    "uploaded_at": "2026-09-20",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.1938,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "187c485ec019",
+        "at": "2026-10-25 15:26",
+        "scene": 1,
+        "rejected_ids": [
+          4337407,
+          446864,
+          5106327,
+          "c:167943569",
+          "c:171856700"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2418,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a7826b116351",
+        "at": "2026-10-25 15:26",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2729,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ffea79442a62",
+        "at": "2026-10-25 15:26",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2527,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2e69dc37577f",
+        "at": "2026-10-25 15:26",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2881,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "12cc3cb4a4b9",
+        "at": "2026-10-25 15:26",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2007,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f71373c55862",
+        "at": "2026-10-25 15:26",
+        "scene": 6,
+        "rejected_ids": [
+          4337407,
+          446864,
+          5106327,
+          "c:167943569",
+          "c:171856700"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2079,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "11080e6f9515",
+        "at": "2026-10-25 15:26",
+        "scene": 7,
+        "rejected_ids": [
+          446864,
+          4844787,
+          5106327,
+          "c:17077488",
+          "c:171856700"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2841,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "42722330b7dd",
+        "at": "2026-10-25 15:26",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "country": "Mongolia",
@@ -1606,7 +2189,193 @@
     "status_v6": "video_done",
     "youtube_id": "v5TTX_AHJNA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-24"
+    "uploaded_at": "2026-09-24",
+    "title_line1": "몽골 나담 말경주",
+    "title_line2": "5세 아이, 70킬로",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "5살 아이 *말*"
+      },
+      {
+        "s": 2,
+        "text": "어린 기수 *달린다*"
+      },
+      {
+        "s": 5,
+        "text": "*청소년* 스포츠"
+      }
+    ],
+    "image_queries": [
+      "5 year old child on horse",
+      "young jockey riding horse Mongolia",
+      "Mongolian child horseback training",
+      "galloping horse at speed",
+      "youth horse racing sport Mongolia",
+      "hand holding horse reins",
+      "Mongolian festival audience"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "5 year old child on horse",
+      "young jockey riding horse Mongolia",
+      "Mongolian child horseback training",
+      "galloping horse at speed",
+      "youth horse racing sport Mongolia",
+      "hand holding horse reins",
+      "Mongolian festival audience"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Uki_71",
+        "page": "https://pixabay.com/photos/pony-girl-horse-child-animal-2595144/",
+        "id": 2595144
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/",
+        "id": 7143682
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Naadam horse race cropped.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Naadam_horse_race_cropped.jpg",
+        "id": "c:90606145"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Rencie",
+        "page": "https://pixabay.com/photos/animal-horse-mammal-species-fauna-4071342/",
+        "id": 4071342
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Naadam horse race cropped.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Naadam_horse_race_cropped.jpg",
+        "id": "c:90606145"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Unknown author Unknown author or not provided",
+        "license": "Public domain",
+        "title": "Boy holding reins for a team of two horses - NARA - 285502.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Boy_holding_reins_for_a_team_of_two_horses_-_NARA_-_285502.jpg",
+        "id": "c:17410226"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Naadam horse race cropped.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Naadam_horse_race_cropped.jpg",
+        "id": "c:90606145"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2947,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5a68a3326d6a",
+        "at": "2026-10-25 15:28",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3582,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "664dffe628b0",
+        "at": "2026-10-25 15:28",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3628,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "da15bc049885",
+        "at": "2026-10-25 15:28",
+        "scene": 3,
+        "rejected_ids": [
+          6777855,
+          "c:90606145"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3035,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e10f2b98da41",
+        "at": "2026-10-25 15:28",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3547,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e38dfda08f7f",
+        "at": "2026-10-25 15:28",
+        "scene": 5,
+        "rejected_ids": [
+          5167802,
+          "c:90606145"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2448,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d7e711b28371",
+        "at": "2026-10-25 15:28",
+        "scene": 6,
+        "rejected_ids": [
+          1917895,
+          "c:17410226"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2701,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7b6f125c6461",
+        "at": "2026-10-25 15:28",
+        "scene": 7,
+        "rejected_ids": [
+          2527495,
+          "c:90606145"
+        ]
+      }
+    ]
   },
   {
     "country": "Spain",
@@ -1626,7 +2395,80 @@
     "status_v6": "video_done",
     "youtube_id": "UTbi5gKV4Hc",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-09"
+    "uploaded_at": "2026-10-09",
+    "title_line1": "스페인 토마토전쟁",
+    "title_line2": "1시간만 전투?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "토마토 *전쟁* 1시간!"
+      },
+      {
+        "s": 3,
+        "text": "토마토 *던짐* 1시간"
+      },
+      {
+        "s": 5,
+        "text": "시간 *멈춤*!"
+      },
+      {
+        "s": 6,
+        "text": "토마토 *비료* 재활용"
+      }
+    ],
+    "image_queries_done": [
+      "Spain travel",
+      "Spain travel",
+      "Spain travel",
+      "Spain travel",
+      "Spain travel",
+      "Spain travel"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ELG21",
+        "page": "https://pixabay.com/photos/lake-mountains-nature-sky-clouds-10122559/",
+        "id": 10122559
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "anne1234567890",
+        "page": "https://pixabay.com/photos/sunset-views-canary-islands-sea-8670540/",
+        "id": 8670540
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Złapane_Chwile",
+        "page": "https://pixabay.com/photos/tenerife-sunset-harbor-coast-10088999/",
+        "id": 10088999
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "MANOLOBLASCO",
+        "page": "https://pixabay.com/photos/cathedral-town-travel-europe-7278228/",
+        "id": 7278228
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "BernhardJaeck",
+        "page": "https://pixabay.com/photos/dune-desert-sand-nature-landscape-9933020/",
+        "id": 9933020
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "franky1st",
+        "page": "https://pixabay.com/photos/spain-granada-alhambra-andalusia-4522800/",
+        "id": 4522800
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "South Africa",
@@ -1642,7 +2484,230 @@
     "timing_path_v2": "audio\\0018_South Africa_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "title_line1": "남아프리카 바베큐 규칙",
+    "title_line2": "벌금은 바로?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "허가 없는 *바베큐*"
+      },
+      {
+        "s": 3,
+        "text": "구역 밖 *벌금*"
+      },
+      {
+        "s": 5,
+        "text": "앱으로 *예약*"
+      },
+      {
+        "s": 7,
+        "text": "구역 *확인*하고"
+      }
+    ],
+    "image_queries": [
+      "illegal braai South Africa",
+      "designated braai area park",
+      "braai fine outside zone",
+      "park fire safety measures",
+      "braai permit app South Africa",
+      "reserved braai spot",
+      "check braai zone South Africa",
+      "cultural tip illustration"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "illegal braai South Africa",
+      "designated braai area park",
+      "braai fine outside zone",
+      "park fire safety measures",
+      "braai permit app South Africa",
+      "reserved braai spot",
+      "check braai zone South Africa",
+      "cultural tip illustration"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Braai Wood Sekelbos.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Braai_Wood_Sekelbos.jpg",
+        "id": "c:172843397"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Ossewa",
+        "license": "CC BY 4.0",
+        "title": "Engogo braai fire.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Engogo_braai_fire.jpg",
+        "id": "c:169862674"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/sketchbook-sketch-marker-455698/",
+        "id": 455698,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2811,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1086b2d27d83",
+        "at": "2026-10-25 15:31",
+        "scene": 1,
+        "rejected_ids": [
+          9985148,
+          "c:169862674"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2221,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "317d6b9b37cb",
+        "at": "2026-10-25 15:31",
+        "scene": 2,
+        "rejected_ids": [
+          6729237,
+          "c:169862674"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2302,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0735c1559734",
+        "at": "2026-10-25 15:31",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2383,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7504f23042f5",
+        "at": "2026-10-25 15:31",
+        "scene": 4,
+        "rejected_ids": [
+          5716038,
+          "c:169862674"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2593,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4adb5962fd54",
+        "at": "2026-10-25 15:31",
+        "scene": 5,
+        "rejected_ids": [
+          9944593,
+          "c:169862674"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2454,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5bbfd867bf47",
+        "at": "2026-10-25 15:31",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2529,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "770396213372",
+        "at": "2026-10-25 15:31",
+        "scene": 7,
+        "rejected_ids": [
+          8054175,
+          "c:169862674"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2297,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fd3aa4ab95de",
+        "at": "2026-10-25 15:31",
+        "scene": 8,
+        "rejected_ids": [
+          455698,
+          "c:174050086"
+        ]
+      }
+    ]
   },
   {
     "country": "Vietnam",
@@ -1704,23 +2769,28 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Van3ssa_",
-        "page": "https://pixabay.com/photos/christmas-gift-present-winter-snow-7652081/",
-        "id": 7652081
+        "user": "ulleo",
+        "page": "https://pixabay.com/photos/envelope-letter-love-letter-love-2898268/",
+        "id": 2898268,
+        "type": "photo"
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "Duong_Dinh_Luc",
-        "page": "https://pixabay.com/photos/little-girl-vietnam-farmers-market-7868485/",
-        "id": 7868485
+        "source": "commons",
+        "user": "Phương Huy",
+        "license": "CC0",
+        "title": "Trang trí Tết 2024 ở SG ng27th1n2024 (gà rán và bao lì xì) (1).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Trang_tr%C3%AD_T%E1%BA%BFt_2024_%E1%BB%9F_SG_ng27th1n2024_(g%C3%A0_r%C3%A1n_v%C3%A0_bao_l%C3%AC_x%C3%AC)_(1).jpg",
+        "id": "c:147343819"
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/ladybug-figure-fun-lucky-bug-800896/",
-        "id": 800896
+        "source": "commons",
+        "user": "Phương Huy",
+        "license": "CC0",
+        "title": "Trang trí Tết 2024 ở SG ng27th1n2024 (gà rán và bao lì xì) (1).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Trang_tr%C3%AD_T%E1%BA%BFt_2024_%E1%BB%9F_SG_ng27th1n2024_(g%C3%A0_r%C3%A1n_v%C3%A0_bao_l%C3%AC_x%C3%AC)_(1).jpg",
+        "id": "c:147343819"
       },
       {
         "scene": 4,
@@ -1731,17 +2801,19 @@
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "HelgaKa",
-        "page": "https://pixabay.com/photos/beetle-ladybug-red-beetles-with-dots-4246602/",
-        "id": 4246602
+        "source": "commons",
+        "user": "Phương Huy",
+        "license": "CC0",
+        "title": "Trang trí Tết 2024 ở SG ng27th1n2024 (gà rán và bao lì xì) (2).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Trang_tr%C3%AD_T%E1%BA%BFt_2024_%E1%BB%9F_SG_ng27th1n2024_(g%C3%A0_r%C3%A1n_v%C3%A0_bao_l%C3%AC_x%C3%AC)_(2).jpg",
+        "id": "c:147343821"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Darkmoon_Art",
-        "page": "https://pixabay.com/photos/heart-paper-key-envelope-letter-3094261/",
-        "id": 3094261
+        "user": "ulleo",
+        "page": "https://pixabay.com/photos/envelope-letter-love-letter-love-2898277/",
+        "id": 2898277
       },
       {
         "scene": 7,
@@ -1753,9 +2825,10 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "NoName_13",
-        "page": "https://pixabay.com/photos/apple-red-hand-apple-plantation-2788662/",
-        "id": 2788662
+        "user": "andrewlloydgordon",
+        "page": "https://pixabay.com/photos/hand-man-watch-work-desk-1076597/",
+        "id": 1076597,
+        "type": "photo"
       },
       {
         "scene": 9,
@@ -1768,7 +2841,132 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0019_Vietnam.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0019_Vietnam.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2594,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1d8c6c4406ad",
+        "at": "2026-10-25 15:32",
+        "scene": 1,
+        "rejected_ids": [
+          2898268,
+          7652081,
+          "c:15504166"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2313,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "56c30b02d1be",
+        "at": "2026-10-25 15:33",
+        "scene": 2,
+        "rejected_ids": [
+          7868485,
+          9354692,
+          "c:147343819",
+          "c:147343821"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2181,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4c5ef719741e",
+        "at": "2026-10-25 15:33",
+        "scene": 3,
+        "rejected_ids": [
+          4246602,
+          5404500,
+          800896,
+          "c:147343819",
+          "c:147343821"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2202,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b46dfd2d5136",
+        "at": "2026-10-25 15:32",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.225,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c94fe4d64b54",
+        "at": "2026-10-25 15:33",
+        "scene": 5,
+        "rejected_ids": [
+          4246602,
+          "c:147343821"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2242,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "130631be4322",
+        "at": "2026-10-25 15:32",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2227,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "70c3aff751c2",
+        "at": "2026-10-25 15:32",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2101,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "934cdbc89943",
+        "at": "2026-10-25 15:33",
+        "scene": 8,
+        "rejected_ids": [
+          1076597,
+          1917895,
+          2391,
+          "c:147343821",
+          "c:32073921"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2555,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "179b2b595d2f",
+        "at": "2026-10-25 15:32",
+        "scene": 9,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "country": "Bhutan",
@@ -1790,7 +2988,230 @@
     "status_v6": "video_done",
     "youtube_id": "PWPnkTwabsw",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "title_line1": "부탄, 담배 금지",
+    "title_line2": "벌금은 바로 10만",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "세계 최초 *담배* 금지"
+      },
+      {
+        "s": 3,
+        "text": "*소지*도 금지"
+      },
+      {
+        "s": 4,
+        "text": "최대 *10만* 벌금"
+      },
+      {
+        "s": 6,
+        "text": "공항*담배*가능"
+      }
+    ],
+    "image_queries": [
+      "Bhutan street cigarettes",
+      "World first tobacco ban",
+      "Bhutan no smoking area",
+      "Bhutan fine penalty",
+      "Bhutan tourist site",
+      "Bhutan airport duty free cigarettes",
+      "Bhutan travel map",
+      "Bhutan anti-smoking sign",
+      "hand clicking like button"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Bhutan street cigarettes",
+      "World first tobacco ban",
+      "Bhutan no smoking area",
+      "Bhutan fine penalty",
+      "Bhutan tourist site",
+      "Bhutan airport duty free cigarettes",
+      "Bhutan travel map",
+      "Bhutan anti-smoking sign",
+      "hand clicking like button"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/cigarettes-ashtray-smoking-nicotine-4780548/",
+        "id": 4780548
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "sarahj1",
+        "page": "https://pixabay.com/photos/vaping-vape-smoke-e-cigarette-4508935/",
+        "id": 4508935
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "donvikro",
+        "page": "https://pixabay.com/photos/temple-monastery-cliff-cliffside-171377/",
+        "id": 171377
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "succo",
+        "page": "https://pixabay.com/photos/hammer-dish-dollar-dollar-sign-1537123/",
+        "id": 1537123
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "paljordawa",
+        "page": "https://pixabay.com/photos/paro-taktsang-bhutan-7879797/",
+        "id": 7879797
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "jplenio",
+        "page": "https://pixabay.com/photos/smoking-ashtray-cigarettes-8561797/",
+        "id": 8561797,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Joa70",
+        "page": "https://pixabay.com/photos/travel-boat-ship-sea-blue-9755525/",
+        "id": 9755525
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "donvikro",
+        "page": "https://pixabay.com/photos/temple-monastery-cliff-cliffside-171377/",
+        "id": 171377,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "leopoldboettcher",
+        "page": "https://pixabay.com/photos/thumbs-up-positive-gesture-thumb-4589867/",
+        "id": 4589867
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2627,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1ad52796600d",
+        "at": "2026-10-25 15:35",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2355,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7daf9b5bc890",
+        "at": "2026-10-25 15:35",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2834,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dc4f4eb02abe",
+        "at": "2026-10-25 15:35",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1456,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "55ca40b91911",
+        "at": "2026-10-25 15:35",
+        "scene": 4,
+        "rejected_ids": [
+          1537123,
+          6894532,
+          6895477
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3193,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2c47ed85ff72",
+        "at": "2026-10-25 15:35",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2824,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "203eedbc4ada",
+        "at": "2026-10-25 15:35",
+        "scene": 6,
+        "rejected_ids": [
+          1362587,
+          8561797
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2409,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7f35b3456a43",
+        "at": "2026-10-25 15:35",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2142,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f78a4c4e9d3c",
+        "at": "2026-10-25 15:35",
+        "scene": 8,
+        "rejected_ids": [
+          171377,
+          1853924,
+          634941
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2523,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f43392e1b7ec",
+        "at": "2026-10-25 15:35",
+        "scene": 9,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "country": "France",
