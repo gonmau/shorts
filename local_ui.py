@@ -26,26 +26,12 @@ st.caption(f"폴더: {HERE}  |  채널: {'영어 (KoreaAtoZ)' if EN else '한국
 with st.sidebar:
     st.header("사용법")
     st.markdown("""
-**기본 흐름 (아래 '작업 순서')**
-1 소재 → 2 대본 → 3 이미지 → 4 음성 → 5 렌더링 → 6 업로드
-각 단계 결과를 확인하고 다음으로. 확인 없이 한 번에 하려면 *⚡ 자동 진행*.
+**📖 기능 찾기·작업 순서는 위쪽 '🏠 시작·가이드' 탭**
+1 소재 → 2 대본 → 3 이미지 → 4 음성 → 5 영상 → 6 업로드
+(각 단계 탭 안에 *실행*과 *보기·수정*이 같이 있습니다)
 
-**공통 입력**
-- count: 한 번에 처리할 개수 / start_index: 이 번호 이상만 처리
-
-**고치기**
-- 대본: 탭 *대본 전체 보기/수정* 또는 *review.txt* (고치면 음성·이미지 검색어는 지워짐 → 3·4단계 다시)
-- 이미지: 탭 *이미지 검수/교체*
-- 소재 건너뛰기: review.txt의 `제외:` 뒤에 사유
-- 문구 넣기 / 롱폼: 각 탭
-
-**이미 만든 영상 다시 만들기 (redo)**
-- 영상만: redo `98,99` (체크 해제) → 5단계
-- 대본부터: redo `101` + *redo_script 체크* → 2단계
-- 폐기 소재 되살리기: `101!` + 체크
-
-**주의**
-- redo 칸은 작업이 끝나면 비우세요 (매번 적용됨)
+- **count / start_index**: 맨 위 공통 입력. 이 개수·번호 이상만 처리
+- **redo** (맨 위): 영상만 `98,99` / 대본부터 `101`+체크 / 폐기 되살리기 `101!`+체크. 작업이 끝나면 비우세요
 - 검은 cmd 창을 닫으면 UI가 꺼집니다
 """)
 
@@ -239,7 +225,44 @@ pre = [S("promote_ready.py", "--start", str(start)), S("apply_review.py")]
 if redo:
     pre.append(S("redo_videos.py", *(["--script"] if redo_script else []), "--indexes", redo))
 
-with st.expander("🎙 음성 · 자막 설정 (음성 만들기 전에 정하세요)"):
+# ================= 화면 구성: 단계 탭 (각 단계 안에 '실행'과 '보기·수정'을 함께 둠) =================
+def _sync_line():
+    ps = []
+    ps.append("GitHub 자동동기화 " + ("켜짐" if (TTS_CFG.get("gh_auto") and _gh_token()) else ("꺼짐 (토큰 없음)" if TTS_CFG.get("gh_auto") else "꺼짐")))
+    last = st.session_state.get("gh_last")
+    if last:
+        ps.append(("✅ " if last[0] else "⚠️ ") + f"마지막 {last[1]} {last[2][:60]}")
+    ps.append("드라이브 자동 " + ("켜짐" if (TTS_CFG.get("drive_auto") and os.path.exists("token_drive.json")) else "꺼짐"))
+    ps.append("디스코드 알림 " + ("켜짐" if (TTS_CFG.get("discord_notify") and os.environ.get("DISCORD_WEBHOOK_URL")) else "꺼짐"))
+    if st.session_state.get("code_chk"):
+        ps.append("🔄 " + st.session_state["code_chk"])
+    return "☁️ " + " · ".join(ps) + "  — 자세한 설정은 '⚙ 관리·동기화' 탭"
+
+st.caption(_sync_line())
+TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
+with T1:
+    st.caption("새 소재를 만들고 승인/제외합니다. 직접 소재를 넣거나, 상태·폐기·업로드 기록도 여기서 봅니다.")
+    T1a, T1b, T1c = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록"])
+with T2:
+    st.caption("대본을 만들고 읽어 보며 고칩니다. 제목·핵심 문구·이미지 검색어는 review.txt에서도 고칠 수 있습니다.")
+    T2a, T2b, T2c = st.tabs(["⚙ 대본 만들기", "📝 대본 보기·수정", "📄 review.txt"])
+with T3:
+    st.caption("장면 이미지를 받고(자동 검증 옵션), 장면별로 확인하거나 검색어·내 사진으로 교체합니다.")
+    T3a, T3b = st.tabs(["⚙ 이미지 받기", "🖼 검수·교체"])
+with T4:
+    st.caption("목소리·속도·자막 방식을 정하고 음성을 만들어 들어봅니다. 음성 설정은 음성을 만들기 전에 정하세요.")
+    T4a, T4b = st.tabs(["🎙 음성·자막 설정", "⚙ 음성 만들기·듣기"])
+with T5:
+    st.caption("영상과 썸네일을 만들고, 만든 영상 확인·문구 넣기·편집 포인트를 다룹니다.")
+    T5a, T5b, T5c, T5d = st.tabs(["⚙ 렌더링", "🎬 만든 영상", "✍ 문구 넣기", "🎞 편집 포인트"])
+with T6:
+    st.caption("비공개로 업로드하고, 제목/설명을 복사하거나 디스코드로 보냅니다.")
+    T6a, T6b = st.tabs(["⚙ 업로드", "📋 제목·설명 (디스코드·유튜브)"])
+with TH:
+    H_main = st.container()
+    H_auto = st.expander("⚡ 자동 진행 (확인 없이 이어서 실행)", expanded=False)
+
+with T4a:
     t1, t2, t3 = st.columns(3)
     TTS_CFG["voice"] = t1.selectbox("Supertonic 목소리 (F=여성, M=남성)", ST_VOICES, ST_VOICES.index(TTS_CFG["voice"]) if TTS_CFG["voice"] in ST_VOICES else 0,
                                     help="기본 음성 엔진. 아래 '미리듣기'로 들어보고 고르세요")
@@ -301,12 +324,8 @@ def _img_state(i, f):
     n = len(list(_vd(HERE, i, f).glob("scene_*.png"))) if _vd(HERE, i, f).exists() else 0
     return n, bool(f.get("image_queries_done"))
 
-st.markdown("### 작업 순서  (1 소재 → 2 대본 → 3 이미지 → 4 음성 → 5 렌더링 → 6 업로드)")
-st.caption("단계마다 결과를 확인하고 다음으로 넘어가세요. 위의 count/start_index는 모든 단계에 공통으로 적용됩니다.")
-if st.button("현황 보기", help="소재 상태별 개수와 render 가능 개수"):
-    run("status_report.py")
 
-with st.expander("1단계 · 소재 만들기 / 확인 / 승인", expanded=False):
+with T1a:
     n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="위키백과 기반으로 새 소재(unverified)를 만듭니다. 한 번에 12개 이하 권장 (Groq 한도)")
     if st.button("소재 만들기", key="st1_make"):
         run(GEN, "--count", str(int(n_topics)))
@@ -331,7 +350,7 @@ with st.expander("1단계 · 소재 만들기 / 확인 / 승인", expanded=False
         if x3.button("앞에서 count개 자동 승인", key="st1_auto"):
             run("approve.py", "--limit", str(int(count)), "--start", str(int(start)))
 
-with st.expander("2단계 · 대본 만들기 → 확인/수정", expanded=False):
+with T2a:
     TTS_CFG["target_sec"] = st.slider("목표 대본 길이 (초, 0 = 기본)", 0, 58, int(TTS_CFG.get("target_sec") or 0), 1, key="target_sec",
                                       help="새로 만드는 대본의 분량을 음성 길이 기준으로 맞춥니다. 0이면 기본 분량(한국어 350~500자 / 영어 90~115단어). 음성 속도 설정도 반영됩니다. 이미 만든 대본은 안 바뀌니 '대본부터 다시'로 다시 만드세요")
     if int(TTS_CFG["target_sec"]) > 0:
@@ -350,7 +369,7 @@ with st.expander("2단계 · 대본 만들기 → 확인/수정", expanded=False
         chain(script_steps(auto_ok))
     st.caption("끝나면 아래 review.txt 또는 '📝 대본 전체 보기/수정' 탭에서 대본·제목을 확인하고 저장하세요. 대본이 마음에 안 들면 redo 칸에 번호! 를 넣어 다시 만들 수 있습니다.")
 
-with st.expander("3단계 · 이미지 받기 → 확인/교체", expanded=False):
+with T3a:
     tg = _targets()
     st.caption("대본이 끝난 소재 중 앞에서 count개: " + (", ".join(map(str, tg)) or "없음") + "   (이미지 검색어도 이때 대본 기준으로 만들어집니다)")
     if st.button("이미지 받기 (검색어 생성 + 장면 이미지)", key="st3_go", help="음성보다 먼저 이미지를 받아 확인할 수 있습니다. 이미 받은 장면은 건드리지 않습니다"):
@@ -361,7 +380,7 @@ def _audio_ok(f):
     ap_ = f.get("audio_path_v2")
     return bool(f.get("status_tts_v2") == "done" and ap_ and os.path.exists(ap_))
 
-with st.expander("4단계 · 음성 만들기 → 들어보기", expanded=False):
+with T4b:
     dv = _ld()
     allv = _ready_all()
     st.caption("대본이 끝난 소재의 음성만 따로 만듭니다 (영상은 안 만듦). 목소리/속도/엔진은 위 '🎙 음성 · 자막 설정' 패널에서 정합니다. 대본을 고치면 음성은 지워지니 대본 확정 후에 만드세요.")
@@ -390,7 +409,7 @@ with st.expander("4단계 · 음성 만들기 → 들어보기", expanded=False)
             st.write(f"{i} {f.get('country', '')} - {dur:.1f}초 · {vname}" + ("  ⚠ 58초 초과 (쇼츠 1분 제한)" if dur > 58 else ""))
             st.audio(f["audio_path_v2"])
 
-with st.expander("5단계 · 렌더링 (영상 + 썸네일, 음성이 없으면 같이 생성)", expanded=False):
+with T5a:
     d4 = _ld()
     allr = _ready_all()
     st.caption(f"렌더링 대기 {len(allr)}개 (start_index {int(start)} 이상, 번호순). 아래에서 만들 소재를 직접 고르세요. 기본은 앞에서 count개입니다.")
@@ -425,14 +444,14 @@ with st.expander("5단계 · 렌더링 (영상 + 썸네일, 음성이 없으면 
             steps.append(S("make_thumbnail.py", "--channel", CH, "--handle", HD, "--only", ",".join(map(str, pick4))))
         chain(steps)
 
-with st.expander("6단계 · 유튜브 업로드 (비공개)", expanded=False):
+with T6a:
     if st.button("업로드", key="up_go", help="만든 영상을 비공개로 올립니다. YT_REFRESH_TOKEN 환경변수가 필요합니다") :
         if os.environ.get("YT_REFRESH_TOKEN"):
             run("upload_to_youtube.py", "--limit", str(count))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")
 
-with st.expander("⚡ 자동 진행 (확인 없이 이어서 실행)", expanded=False):
+with H_auto:
     upto = st.radio("어디까지 자동으로 이어서 할까요", ["2 대본까지", "3 이미지까지", "4 렌더링까지"], index=0, horizontal=True, key="auto_upto",
                     help="중간 확인 없이 선택한 단계까지 한 번에 실행합니다. 검수를 하려면 위 단계별 버튼을 쓰세요")
     if st.button("자동 진행 시작", key="auto_go"):
@@ -478,9 +497,73 @@ def apply_quiet():
     subprocess.run([sys.executable, "apply_review.py"], capture_output=True, text=True, encoding="utf-8", errors="replace",
                    env=dict(os.environ, PYTHONIOENCODING="utf-8"))
 
-tab_s, tab_add, tab_st, tab_r, tab_i, tab_v, tab_o, tab_ep, tab_m, tab_l, tab_sy = st.tabs(["📝 대본 보기/수정", "➕ 소재 추가", "🗂 소재 상태/폐기", "📄 review.txt", "🖼 이미지 검수/교체", "🎬 만든 영상", "✍ 문구 넣기", "🎞 편집 포인트", "📋 제목/설명 (디스코드·유튜브)", "🎞 롱폼 묶기", "☁️ 동기화 (GitHub·드라이브)"])
+# ---------------- 🏠 시작·가이드 ----------------
+FEATURES = [
+    # (분류, 기능, 어디서, 설명, 새기능)
+    ("공통", "처리 개수 · 시작 번호", "맨 위 count / start_index", "한 번에 처리할 개수와, 이 번호 이상만 처리. 모든 단계에 적용", ""),
+    ("공통", "다시 만들기 (redo)", "맨 위 redo 칸", "영상만 `98,99` / 대본부터 `101` + 체크 / 폐기 되살리기 `101!` + 체크. 끝나면 칸을 비우세요", ""),
+    ("공통", "현황 (단계별 개수)", "왼쪽 사이드바 / 이 탭의 '현황 보기'", "승인대기·대본·음성·영상·업로드·폐기 개수", ""),
+    ("1 소재", "새 소재 만들기 · 승인 · 제외", "1 소재 › 만들기·승인", "위키 기반 소재 생성 → 선택 승인 / 제외 (제외 = 폐기, 사유 'UI에서 제외')", ""),
+    ("1 소재", "직접 소재 추가", "1 소재 › 직접 추가", "내가 정한 주제나 대본으로 소재 추가", ""),
+    ("1 소재", "상태 확인 · 폐기 되살리기 · 업로드 기록", "1 소재 › 상태·폐기·업로드 기록", "소재별 상태, 폐기 사유/되살리기, 유튜브 영상 주소 기록, 교차검증 일괄 해제", ""),
+    ("2 대본", "대본 만들기 (+목표 길이·장면 수)", "2 대본 › 대본 만들기", "목표 길이(초)·장면(이미지) 수 설정 후 대본/제목/이미지 검색어 생성", ""),
+    ("2 대본", "대본 교차검증", "2 대본 › 대본 만들기의 🔍 체크", "위키 근거로 문장 검증. 모순은 폐기 전에 먼저 고쳐 씀, 근거 없음만으로는 폐기 안 함", "🆕"),
+    ("2 대본", "대본 보기 · 수정 · 일괄 수정", "2 대본 › 대본 보기·수정", "소재별 대본 읽고 고치기, 여러 개 한 번에 수정", ""),
+    ("2 대본", "제목 · 핵심 문구 · 이미지 검색어 · 제외", "2 대본 › review.txt", "review.txt를 보고 고침 (제외: 뒤에 사유를 쓰면 건너뜀)", ""),
+    ("3 이미지", "이미지 받기", "3 이미지 › 이미지 받기", "검색어 생성 + 장면 이미지 다운로드", ""),
+    ("3 이미지", "이미지 자동 검증 (CLIP+Ollama)", "3 이미지 › 검수·교체 안의 옵션", "받을 때 내용과 다른 사진을 걸러 다른 사진으로 교체, 수동 검증도 가능", "🆕"),
+    ("3 이미지", "이미지 검수 · 교체", "3 이미지 › 검수·교체", "장면별 확인, 검색어 바꿔 다시 받기, 내 사진으로 교체", ""),
+    ("4 음성", "목소리 · 속도 · 자막 방식", "4 음성 › 음성·자막 설정", "Supertonic/Edge 음성, 속도, 자막 방식. 미리듣기 가능", ""),
+    ("4 음성", "음성 만들기 · 듣기", "4 음성 › 음성 만들기·듣기", "선택한 소재 음성 생성 후 바로 들어보기", ""),
+    ("5 영상", "렌더링 (영상+썸네일)", "5 영상 › 렌더링", "영상·썸네일 합성. 음성이 없으면 같이 생성", ""),
+    ("5 영상", "만든 영상 보기", "5 영상 › 만든 영상", "완성된 영상 재생/확인", ""),
+    ("5 영상", "문구 넣기 · 편집 포인트", "5 영상 › 문구 넣기 / 편집 포인트", "영상 위 글자, 장면 전환 등 세부 조정", ""),
+    ("6 업로드", "유튜브 비공개 업로드", "6 업로드 › 업로드", "YT_REFRESH_TOKEN 필요. 비공개로 올림", ""),
+    ("6 업로드", "제목 · 설명 복사 / 디스코드", "6 업로드 › 제목·설명", "유튜브에 붙여넣을 제목/설명, 디스코드 전송", ""),
+    ("롱폼", "롱폼 만들기 (rich 스타일)", "🎞 롱폼", "소재 3~30개를 묶어 가로 영상으로. 챕터 카드·키워드 팝업·비교 카드·인트로/요약", "🆕"),
+    ("롱폼", "롱폼 대본·시나리오 확인/수정", "🎞 롱폼 › ① 대본·시나리오 → ② 수정 → ③ 만들기", "나레이션·키워드·비교 카드·화면 지정을 고쳐 반영. 챕터별 AI 재작성 지시 가능", "🆕"),
+    ("롱폼", "스톡 영상 (Pexels/Pixabay)", "🎞 롱폼 체크박스", "분위기용 짧은 영상을 일부 장면에 사용 (Pixabay 키 필요)", "🆕"),
+    ("롱폼", "렌더링 진행률", "🎞 롱폼 실행 로그", "10%마다 진행률과 남은 시간 표시", "🆕"),
+    ("자동", "자동 진행", "이 탭 아래 '⚡ 자동 진행'", "확인 없이 대본/이미지/렌더링까지 한 번에", ""),
+    ("동기화", "GitHub DB 동기화", "⚙ 관리·동기화 › GitHub", "UI 열 때 가져오고 작업 후 자동 올림. PC와 GitHub 번호 병합", "🆕"),
+    ("동기화", "코드 업데이트 (GitHub → PC)", "⚙ 관리·동기화 › 코드 업데이트", "zip 없이 이 채널 저장소 코드만 받아 덮어씀. 채널이 다르면 멈춤", "🆕"),
+    ("동기화", "구글 드라이브 저장", "⚙ 관리·동기화 › 구글 드라이브", "썸네일·이미지·음성·영상·자막을 드라이브에 업로드/받기 (외부에서도 작업)", "🆕"),
+    ("이력", "작업 이력 · 요약 파일", "⚙ 관리·동기화 › 작업 이력", "언제 무슨 작업이 성공/실패했는지, 소재별 현황(csv). PC와 GitHub Actions 합산", "🆕"),
+    ("이력", "디스코드 알림", "⚙ 관리·동기화 › 작업 이력 · 디스코드", "오래 걸리는 작업이 끝나면(실패는 항상) 한 줄 알림", "🆕"),
+]
+TASKS = [
+    ("대본이 마음에 안 들어요", "2 대본 › 대본 보기·수정 (고친 뒤 3·4단계 다시)"),
+    ("제목/핵심 문구만 고치고 싶어요", "2 대본 › review.txt"),
+    ("이미지가 내용과 달라요", "3 이미지 › 검수·교체 (자동 검증 옵션도 있음)"),
+    ("이미 만든 영상을 다시 만들고 싶어요", "맨 위 redo 칸에 번호 입력 → 5 영상 › 렌더링 (대본부터면 체크)"),
+    ("폐기한 소재를 되살리고 싶어요", "맨 위 redo 칸에 `번호!` + 체크 (또는 1 소재 › 상태·폐기)"),
+    ("롱폼 대본을 미리 보고 고치고 싶어요", "🎞 롱폼 › ① 대본·시나리오 만들기 → ② 수정"),
+    ("PC와 GitHub 데이터가 다른 것 같아요", "⚙ 관리·동기화 › GitHub 동기화 › 차이 보기"),
+    ("새 코드를 받고 싶어요", "⚙ 관리·동기화 › 코드 업데이트 › 최신 코드로 업데이트 (끝나면 bat 재실행)"),
+    ("지금까지 뭘 했는지 보고 싶어요", "⚙ 관리·동기화 › 작업 이력"),
+]
+with H_main:
+    st.markdown("#### 작업 순서")
+    _fc = st.columns(6)
+    for _c_, (_t_, _d_) in zip(_fc, (("1 소재", "만들기·승인"), ("2 대본", "만들기→고치기"), ("3 이미지", "받기→검수"), ("4 음성", "설정→듣기"), ("5 영상", "렌더링"), ("6 업로드", "비공개 업로드"))):
+        _c_.markdown(f"**{_t_}**  \n{_d_}")
+    st.caption("각 단계 탭에는 '⚙ 실행'과 '보기·수정'이 같이 있습니다. 위쪽 count / start_index / redo는 모든 단계에 공통입니다. 확인 없이 한 번에 하려면 아래 '⚡ 자동 진행'.")
+    if st.button("현황 보기", help="소재 상태별 개수와 render 가능 개수", key="home_status"):
+        run("status_report.py")
+    st.markdown("#### 자주 하는 일")
+    st.table([{"하고 싶은 일": a_, "여기서": b_} for a_, b_ in TASKS])
+    st.markdown("#### 기능 찾기")
+    _q = st.text_input("검색 (예: 이미지, 동기화, 롱폼, 알림, 이력)", key="feat_q")
+    _only_new = st.checkbox("🆕 최근에 추가된 기능만", False, key="feat_new")
+    _rows = [r_ for r_ in FEATURES if (not _q.strip() or _q.strip().lower() in " ".join(r_).lower()) and (not _only_new or r_[4])]
+    st.dataframe([{"": r_[4], "분류": r_[0], "기능": r_[1], "어디서": r_[2], "설명": r_[3]} for r_ in _rows], use_container_width=True, hide_index=True,
+                 column_config={"": st.column_config.TextColumn(width="small"), "분류": st.column_config.TextColumn(width="small"), "기능": st.column_config.TextColumn(width="medium"),
+                                "어디서": st.column_config.TextColumn(width="medium"), "설명": st.column_config.TextColumn(width="large")})
+    if not _rows:
+        st.caption("검색 결과가 없습니다.")
 
-with tab_add:
+
+with T1b:
     def run_cap(*args):
         """add_topic.py 같은 짧은 작업: 실행하고 출력 마지막의 'CREATED: 번호,...' 를 돌려준다"""
         st.write("▶ `python " + " ".join(a_[:60] for a_ in args) + "`")
@@ -585,7 +668,7 @@ with tab_add:
             ids_ = run_cap("add_topic.py", "text", "--text", p_txt, *(["--url", p_url] if p_url.strip() else []), *(["--approve"] if p_ok else []))
             after_create(ids_, go_script and p_ok)
 
-with tab_st:
+with T1c:
     import redo_videos as RV
     ST_LABEL = {"unverified": "승인 대기", "verified": "승인됨(대본 만들 차례)", "scripted": "대본 완료", "tts_done": "음성 완료",
                 "video_done": "영상 완료", "rejected": "폐기"}
@@ -760,7 +843,7 @@ with tab_st:
             st.success(f"{len(_tg_x)}개 해제했습니다. 교차검증을 켠 채로 '2 대본' 단계를 실행하세요 (start_index가 소재 번호 이하여야 합니다).")
             st.rerun()
 
-with tab_r:
+with T2c:
     st.caption("대본·제목·검색어를 한 파일에서 고칩니다 (위 대본 탭과 같은 내용)")
     st.caption("대본[N]·핵심[N]·이미지[N]·제목 수정 가능 / 소재를 건너뛰려면 `제외:` 뒤에 사유 / ( 로 시작하는 줄은 참고용 / === [번호] === 줄은 수정 금지")
     txt = read_review()
@@ -770,7 +853,7 @@ with tab_r:
 
 
 
-with tab_s:
+with T2b:
     from common import load_db as _ldb, split_sentences as _ss
     ids_rev = review_indexes()
     db_s = _ldb()
@@ -897,7 +980,7 @@ with tab_s:
                 st.success(f"{len(changed)}개 소재 저장 완료: {', '.join(map(str, changed)) or '변경 없음'}"
                            + ("  → 이미지 탭의 '일괄 새로 받기'(검색어도 새로 만들기 체크)로 이미지를 받으세요" if changed else ""))
 
-with tab_i:
+with T3b:
     from common import load_db, save_db, visual_dir
     db_ = load_db()
     cand = [i for i, f in enumerate(db_) if f.get("status") in ("scripted", "tts_done", "video_done") and i >= start]
@@ -1096,7 +1179,7 @@ with tab_i:
                         st.success(f"장면 {n} 교체 완료 (저작권은 직접 확인하세요)")
                         st.rerun()
 
-with tab_ep:
+with T5d:
     import edit_points as EPm
     st.caption("영상 편집 지시를 글로 적으면 그대로 반영합니다 (쇼츠 전용). 예: 첫 화면에 갈색 치즈를 크게 보여주고, \"초콜릿이 아니라 치즈\" 대목에서 일반 치즈와 교차 편집하세요. "
                "지시는 소재마다 따로 저장되고 언제든 바꿔 다시 해석할 수 있습니다. 순서: ① 해석하기 → ② 이미지 받기 → ③ 영상 다시 만들기 (음성은 그대로 씀).")
@@ -1166,7 +1249,7 @@ with tab_ep:
             if not ok_a:
                 st.caption("음성이 아직 없어 영상을 만들 수 없습니다. 4단계에서 음성을 먼저 만드세요.")
 
-with tab_m:
+with T6b:
     from common import load_db as _ld, youtube_meta
     dbm = _ld()
     candm = [i for i, f in enumerate(dbm) if f.get("status") in ("scripted", "tts_done", "video_done") and i >= start]
@@ -1183,7 +1266,7 @@ with tab_m:
         st.code(md, language=None)
         st.caption("제목은 review.txt의 `제목1/제목2`, 설명은 `후크/본문/반전`을 고치면 바뀝니다. 사진 출처 줄은 이미지를 받은 뒤에 생깁니다. 코드 상자 오른쪽 위 아이콘으로 복사할 수 있습니다.")
 
-with tab_v:
+with T5b:
     if os.path.isdir("videos"):
         for f in sorted(os.listdir("videos"))[-3:]:
             if f.endswith(".mp4"):
@@ -1194,7 +1277,7 @@ with tab_v:
     else:
         st.info("아직 만든 영상이 없습니다.")
 
-with tab_o:
+with T5c:
     import pandas as pd
     import overlays as OV
     st.caption("영상 특정 시점에 문구를 넣습니다 (쇼츠). 시작/지속은 초 단위. 위치는 x,y(화면 가로·세로 %, 문구 중심)로 원하는 곳 어디든 지정합니다. 미리보기의 격자(10% 간격)를 보고 정하세요. "
@@ -1280,7 +1363,7 @@ with tab_o:
             except Exception as e:
                 st.error(f"미리보기 실패: {type(e).__name__}: {e}")
 
-with tab_l:
+with TL:
     st.caption("영상이 끝난 쇼츠를 묶어 가로 롱폼 1개로 만듭니다. 소재마다 음성/이미지를 다시 만들어서 시간이 걸립니다. 개수는 3~30개, 예상 40분 이하. facts_db.json과 별도로 longform_db.json에 기록됩니다.")
     lm = st.radio("선택 방식", ["auto (자동)", "manual (번호 직접)"], horizontal=True, key="lf_mode",
                   help="auto: 영상이 끝나고 롱폼에 안 쓴 소재를 번호순으로 / manual: 아래 번호들을 묶음")
@@ -1462,115 +1545,113 @@ with tab_l:
             if os.path.exists(sp):
                 st.download_button("롱폼 SRT 자막 받기", open(sp, "rb").read(), file_name=last[:-4] + ".srt", key="lf_srt")
 
-with tab_sy:
-    st.subheader("GitHub 동기화 (DB)")
-    TTS_CFG["gh_repo"] = st.text_input("저장소 (소유자/이름)", TTS_CFG.get("gh_repo", ""), key="gh_repo_in")
-    _tk = st.text_input("GITHUB_TOKEN (이 실행 동안만 사용, 저장 안 됨)", type="password", key="gh_tok_in",
-                        help="환경변수로 미리 설정했다면 비워 두세요. 해당 저장소 Contents 읽기/쓰기 권한이 있는 토큰")
-    if _tk.strip():
-        os.environ["GITHUB_TOKEN"] = _tk.strip()
-    st.caption("GITHUB_TOKEN: " + ("**설정됨**" if _gh_token() else "**없음** (자동 동기화는 꺼진 상태. 가져오기는 공개 저장소만 가능)"))
-    TTS_CFG["gh_auto"] = st.checkbox("UI를 열 때 GitHub DB를 먼저 가져오고, 작업이 끝나면 자동으로 올리기", bool(TTS_CFG.get("gh_auto")), key="gh_auto_cb",
-                                     help="병합 방식입니다: 소재 번호는 PC 기준을 유지하고, GitHub(자동 제작)에만 있는 소재는 뒤에 붙이고, 영상/업로드 기록은 앞선 쪽을 따릅니다. 새 GitHub 소재가 10개를 넘으면 자동으로는 멈추고 수동 확인을 요청합니다")
-    if st.session_state.get("gh_boot"):
-        _okb, _outb = st.session_state["gh_boot"]
-        st.caption(("✅ 시작 시 가져오기 완료: " if _okb else "⚠️ 시작 시 가져오기 보류: ") + (_outb.splitlines()[-1] if _outb else ""))
-    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
-    g1, g2, g3 = st.columns(3)
-    if g1.button("📥 가져오기 (병합만)", key="gh_pull", help="GitHub DB를 PC DB에 병합합니다. GitHub에는 쓰지 않음"):
-        run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply"); st.rerun()
-    if g2.button("📤 쇼츠 DB 올리기 (병합 후)", key="gh_push", disabled=not _gh_token(), help="GitHub와 병합한 DB를 PC와 GitHub에 모두 반영 (facts_db.json)"):
-        run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--push"); st.rerun()
-    if g3.button("📤 롱폼 DB 올리기", key="gh_push_lf", disabled=not (_gh_token() and os.path.exists("longform_db.json")), help="longform_db.json을 그대로 GitHub에 커밋 (롱폼은 PC에서만 만들어 병합 없이 덮어씀)"):
-        run("gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json", *(["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []))
-    with st.expander("차이 미리보기 (아무것도 바꾸지 않음)"):
-        if st.button("PC ↔ GitHub 차이 보기", key="gh_diff"):
-            run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--detail")
+with TS:
+    st.caption("평소에는 자동으로 동기화되므로 여기를 열어 볼 일은 거의 없습니다. 설정을 바꾸거나 수동으로 실행할 때만 펼치세요. (맨 위 줄에 현재 상태가 요약돼 있습니다)")
+    with st.expander("☁️ GitHub 동기화 (DB)", expanded=False):
+        TTS_CFG["gh_repo"] = st.text_input("저장소 (소유자/이름)", TTS_CFG.get("gh_repo", ""), key="gh_repo_in")
+        _tk = st.text_input("GITHUB_TOKEN (이 실행 동안만 사용, 저장 안 됨)", type="password", key="gh_tok_in",
+                            help="환경변수로 미리 설정했다면 비워 두세요. 해당 저장소 Contents 읽기/쓰기 권한이 있는 토큰")
+        if _tk.strip():
+            os.environ["GITHUB_TOKEN"] = _tk.strip()
+        st.caption("GITHUB_TOKEN: " + ("**설정됨**" if _gh_token() else "**없음** (자동 동기화는 꺼진 상태. 가져오기는 공개 저장소만 가능)"))
+        TTS_CFG["gh_auto"] = st.checkbox("UI를 열 때 GitHub DB를 먼저 가져오고, 작업이 끝나면 자동으로 올리기", bool(TTS_CFG.get("gh_auto")), key="gh_auto_cb",
+                                         help="병합 방식입니다: 소재 번호는 PC 기준을 유지하고, GitHub(자동 제작)에만 있는 소재는 뒤에 붙이고, 영상/업로드 기록은 앞선 쪽을 따릅니다. 새 GitHub 소재가 10개를 넘으면 자동으로는 멈추고 수동 확인을 요청합니다")
+        if st.session_state.get("gh_boot"):
+            _okb, _outb = st.session_state["gh_boot"]
+            st.caption(("✅ 시작 시 가져오기 완료: " if _okb else "⚠️ 시작 시 가져오기 보류: ") + (_outb.splitlines()[-1] if _outb else ""))
+        json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+        g1, g2, g3 = st.columns(3)
+        if g1.button("📥 가져오기 (병합만)", key="gh_pull", help="GitHub DB를 PC DB에 병합합니다. GitHub에는 쓰지 않음"):
+            run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply"); st.rerun()
+        if g2.button("📤 쇼츠 DB 올리기 (병합 후)", key="gh_push", disabled=not _gh_token(), help="GitHub와 병합한 DB를 PC와 GitHub에 모두 반영 (facts_db.json)"):
+            run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--push"); st.rerun()
+        if g3.button("📤 롱폼 DB 올리기", key="gh_push_lf", disabled=not (_gh_token() and os.path.exists("longform_db.json")), help="longform_db.json을 그대로 GitHub에 커밋 (롱폼은 PC에서만 만들어 병합 없이 덮어씀)"):
+            run("gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json", *(["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []))
+        with st.expander("차이 미리보기 (아무것도 바꾸지 않음)"):
+            if st.button("PC ↔ GitHub 차이 보기", key="gh_diff"):
+                run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--detail")
 
-    st.divider()
-    st.subheader("코드 업데이트 (GitHub → 이 PC)")
-    st.caption("zip을 풀어 넣을 필요 없이, 이 채널 저장소의 최신 코드(*.py, requirements.txt)만 받아 덮어씁니다. 소재 DB·설정·토큰·영상은 건드리지 않고, 바뀐 파일은 _backup 폴더에 보관합니다. 채널이 다른 저장소면 멈춥니다. 끝나면 창을 닫고 bat을 다시 실행하세요.")
-    _u1, _u2, _u3 = st.columns(3)
-    if _u3.button("⬆️ 이 PC 코드를 GitHub에 올리기", key="uc_push", disabled=not _gh_token(), help="zip으로 받은 코드를 PC에 넣은 뒤 이 버튼 한 번이면 GitHub 저장소에도 반영됩니다 (채널이 다른 저장소면 멈춤)"):
-        run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--push")
-    if _u1.button("🔍 바뀔 파일 확인", key="uc_check"):
-        run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--check")
-    if _u2.button("⬇️ 최신 코드로 업데이트", key="uc_apply", type="primary"):
-        if run("update_code.py", "--repo", TTS_CFG["gh_repo"]):
-            st.session_state["code_chk"] = ""
-            st.warning("코드를 받았습니다. 이 창과 터미널을 닫고 run_shorts.bat을 다시 실행해 주세요.")
+    with st.expander("🔄 코드 업데이트 (GitHub → 이 PC)", expanded=False):
+        st.caption("zip을 풀어 넣을 필요 없이, 이 채널 저장소의 최신 코드(*.py, requirements.txt)만 받아 덮어씁니다. 소재 DB·설정·토큰·영상은 건드리지 않고, 바뀐 파일은 _backup 폴더에 보관합니다. 채널이 다른 저장소면 멈춥니다. 끝나면 창을 닫고 bat을 다시 실행하세요.")
+        _u1, _u2, _u3 = st.columns(3)
+        if _u3.button("⬆️ 이 PC 코드를 GitHub에 올리기", key="uc_push", disabled=not _gh_token(), help="zip으로 받은 코드를 PC에 넣은 뒤 이 버튼 한 번이면 GitHub 저장소에도 반영됩니다 (채널이 다른 저장소면 멈춤)"):
+            run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--push")
+        if _u1.button("🔍 바뀔 파일 확인", key="uc_check"):
+            run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--check")
+        if _u2.button("⬇️ 최신 코드로 업데이트", key="uc_apply", type="primary"):
+            if run("update_code.py", "--repo", TTS_CFG["gh_repo"]):
+                st.session_state["code_chk"] = ""
+                st.warning("코드를 받았습니다. 이 창과 터미널을 닫고 run_shorts.bat을 다시 실행해 주세요.")
 
-    st.divider()
-    st.subheader("작업 이력 · 디스코드 알림")
-    TTS_CFG["discord_notify"] = st.checkbox("오래 걸리는 작업이 끝나면 디스코드로 알림 (실패는 시간과 상관없이 알림)", bool(TTS_CFG.get("discord_notify")), key="dc_notify")
-    _dc1, _dc2 = st.columns([3, 1])
-    _wh = _dc1.text_input("디스코드 웹훅 URL (비우면 환경변수 DISCORD_WEBHOOK_URL 사용)", _SEC.get("discord_webhook", ""), type="password", key="dc_hook")
-    if _wh.strip() != _SEC.get("discord_webhook", ""):
-        _SEC["discord_webhook"] = _wh.strip()
-        json.dump(_SEC, open(SECRET_FILE, "w", encoding="utf-8"))
-    if _wh.strip():
-        os.environ["DISCORD_WEBHOOK_URL"] = _wh.strip()
-    TTS_CFG["discord_min_secs"] = _dc2.number_input("알림 최소 시간(초)", 0, 7200, int(TTS_CFG.get("discord_min_secs") or 60), key="dc_min")
-    st.caption("웹훅: " + ("**설정됨**" if os.environ.get("DISCORD_WEBHOOK_URL") else "**없음**") + "  (디스코드 채널 설정 → 연동 → 웹훅에서 URL 복사. 입력한 URL은 이 PC의 .local_secrets.json에만 저장되고 GitHub에는 올라가지 않습니다)")
-    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
-    _h1, _h2, _h3 = st.columns(3)
-    if _h1.button("🔔 테스트 알림 보내기", key="dc_test", disabled=not os.environ.get("DISCORD_WEBHOOK_URL")):
-        import history as _H
-        st.success("전송했습니다") if _H.notify(f"🔔 테스트 알림 [{_H.CHANNEL} PC] 정상 연결") else st.error("전송 실패 (URL 확인)")
-    if _h2.button("🔄 이력 GitHub와 동기화", key="hist_sync", disabled=not _gh_token(), help="PC와 GitHub Actions의 이력을 합치고 요약(run_history.md)·소재표(history_items.csv)도 올립니다"):
-        _okh, _mh = _hist_sync()
-        (st.success if _okh else st.error)(_mh)
-    if _h3.button("📝 요약 파일 다시 만들기", key="hist_report"):
-        run("history.py", "report")
-    if st.button("📚 과거 이력 가져오기 (GitHub Actions 실행 + DB 커밋, 처음 한 번)", key="hist_backfill", help="저장소의 Actions 실행 기록(성공/실패·소요시간)과 DB 커밋 기록을 이력에 채웁니다. 여러 번 눌러도 중복되지 않고 기존 기록은 그대로입니다"):
-        run("history.py", "backfill", "--repo", TTS_CFG["gh_repo"])
-    try:
-        import history as _H
-        _recs = _H.read()
-    except Exception:
-        _recs = []
-    st.caption(f"기록 {len(_recs)}건 (PC에서 실행한 작업 + 동기화로 가져온 GitHub Actions 작업)")
-    if _recs:
-        st.dataframe([{"시각": r["time"], "곳": r.get("source", ""), "종류": r["kind"], "작업": r["title"], "결과": r["status"],
-                       "소요": _H._fmt_secs(r.get("secs")), "비고": r.get("detail", "")[:80]} for r in reversed(_recs[-200:])],
-                     use_container_width=True, hide_index=True)
-        _dl1, _dl2 = st.columns(2)
-        if os.path.exists("run_history.md"):
-            _dl1.download_button("run_history.md 받기", open("run_history.md", "rb").read(), file_name="run_history.md", key="dl_hist_md")
-        if os.path.exists("history_items.csv"):
-            _dl2.download_button("history_items.csv 받기 (소재별 현황)", open("history_items.csv", "rb").read(), file_name="history_items.csv", key="dl_hist_csv")
+    with st.expander("🧾 작업 이력 · 디스코드 알림", expanded=False):
+        TTS_CFG["discord_notify"] = st.checkbox("오래 걸리는 작업이 끝나면 디스코드로 알림 (실패는 시간과 상관없이 알림)", bool(TTS_CFG.get("discord_notify")), key="dc_notify")
+        _dc1, _dc2 = st.columns([3, 1])
+        _wh = _dc1.text_input("디스코드 웹훅 URL (비우면 환경변수 DISCORD_WEBHOOK_URL 사용)", _SEC.get("discord_webhook", ""), type="password", key="dc_hook")
+        if _wh.strip() != _SEC.get("discord_webhook", ""):
+            _SEC["discord_webhook"] = _wh.strip()
+            json.dump(_SEC, open(SECRET_FILE, "w", encoding="utf-8"))
+        if _wh.strip():
+            os.environ["DISCORD_WEBHOOK_URL"] = _wh.strip()
+        TTS_CFG["discord_min_secs"] = _dc2.number_input("알림 최소 시간(초)", 0, 7200, int(TTS_CFG.get("discord_min_secs") or 60), key="dc_min")
+        st.caption("웹훅: " + ("**설정됨**" if os.environ.get("DISCORD_WEBHOOK_URL") else "**없음**") + "  (디스코드 채널 설정 → 연동 → 웹훅에서 URL 복사. 입력한 URL은 이 PC의 .local_secrets.json에만 저장되고 GitHub에는 올라가지 않습니다)")
+        json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+        _h1, _h2, _h3 = st.columns(3)
+        if _h1.button("🔔 테스트 알림 보내기", key="dc_test", disabled=not os.environ.get("DISCORD_WEBHOOK_URL")):
+            import history as _H
+            st.success("전송했습니다") if _H.notify(f"🔔 테스트 알림 [{_H.CHANNEL} PC] 정상 연결") else st.error("전송 실패 (URL 확인)")
+        if _h2.button("🔄 이력 GitHub와 동기화", key="hist_sync", disabled=not _gh_token(), help="PC와 GitHub Actions의 이력을 합치고 요약(run_history.md)·소재표(history_items.csv)도 올립니다"):
+            _okh, _mh = _hist_sync()
+            (st.success if _okh else st.error)(_mh)
+        if _h3.button("📝 요약 파일 다시 만들기", key="hist_report"):
+            run("history.py", "report")
+        if st.button("📚 과거 이력 가져오기 (GitHub Actions 실행 + DB 커밋, 처음 한 번)", key="hist_backfill", help="저장소의 Actions 실행 기록(성공/실패·소요시간)과 DB 커밋 기록을 이력에 채웁니다. 여러 번 눌러도 중복되지 않고 기존 기록은 그대로입니다"):
+            run("history.py", "backfill", "--repo", TTS_CFG["gh_repo"])
+        try:
+            import history as _H
+            _recs = _H.read()
+        except Exception:
+            _recs = []
+        st.caption(f"기록 {len(_recs)}건 (PC에서 실행한 작업 + 동기화로 가져온 GitHub Actions 작업)")
+        if _recs:
+            st.dataframe([{"시각": r["time"], "곳": r.get("source", ""), "종류": r["kind"], "작업": r["title"], "결과": r["status"],
+                           "소요": _H._fmt_secs(r.get("secs")), "비고": r.get("detail", "")[:80]} for r in reversed(_recs[-200:])],
+                         use_container_width=True, hide_index=True)
+            _dl1, _dl2 = st.columns(2)
+            if os.path.exists("run_history.md"):
+                _dl1.download_button("run_history.md 받기", open("run_history.md", "rb").read(), file_name="run_history.md", key="dl_hist_md")
+            if os.path.exists("history_items.csv"):
+                _dl2.download_button("history_items.csv 받기 (소재별 현황)", open("history_items.csv", "rb").read(), file_name="history_items.csv", key="dl_hist_csv")
 
-    st.divider()
-    st.subheader("구글 드라이브 (썸네일·이미지·음성·영상·자막 등)")
-    _DL = {"thumbs": "썸네일", "subs": "자막(SRT)", "audio": "음성", "images": "이미지", "videos": "영상(mp4)", "longform": "롱폼", "db": "DB·설정 백업"}
-    _tok_ok = os.path.exists("token_drive.json")
-    st.caption("인증: " + ("**완료** (token_drive.json)" if _tok_ok else "**필요** — 아래 '처음 한 번' 안내를 따라 하세요"))
-    TTS_CFG["drive_cats"] = st.multiselect("대상 종류", list(_DL), [c for c in TTS_CFG.get("drive_cats", list(_DL)) if c in _DL],
-                                           format_func=lambda k: _DL[k], key="dr_cats", help="영상(mp4)은 용량이 큽니다. 처음엔 빼고 시작해도 됩니다")
-    _dr_idx = st.text_input("소재 번호 범위 (비우면 전체, 예: 100-120,130)", key="dr_idx")
-    _dr_only = ",".join(TTS_CFG["drive_cats"]) or "thumbs"
-    _dr_idx_args = ["--index", _dr_idx.strip()] if _dr_idx.strip() else []
-    TTS_CFG["drive_auto"] = st.checkbox("작업이 끝나면 자동으로 드라이브에 올리기 (바뀐 파일만)", bool(TTS_CFG.get("drive_auto")), key="dr_auto", disabled=not _tok_ok)
-    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
-    d1, d2, d3, d4 = st.columns(4)
-    if d1.button("현황", key="dr_status"):
-        run("drive_sync.py", "status", "--only", _dr_only)
-    if d2.button("올릴 것 미리보기", key="dr_dry", disabled=not _tok_ok):
-        run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args, "--dry-run")
-    if d3.button("⬆ 드라이브로 올리기", key="dr_push", disabled=not _tok_ok):
-        run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args)
-    if d4.button("⬇ 드라이브에서 받기", key="dr_pull", disabled=not _tok_ok, help="이 PC에 없는(또는 크기가 다른) 파일만 받습니다. DB는 받지 않음 (DB는 GitHub로)"):
-        run("drive_sync.py", "pull", "--only", _dr_only, *_dr_idx_args)
-    with st.expander("처음 한 번 (인증)"):
-        st.markdown("""
-1. [Google Cloud 콘솔](https://console.cloud.google.com/) → 유튜브 업로드용으로 만든 같은 프로젝트에서 **API 및 서비스 → 라이브러리 → Google Drive API → 사용**
-2. OAuth 동의 화면의 **테스트 사용자**에 드라이브를 쓸 구글 계정이 있어야 합니다 (유튜브 때와 같은 방식)
-3. 이 폴더에서: `python drive_sync.py auth client_secret.json` → 브라우저에서 허용 → `token_drive.json` 생성
-4. 다른 PC에서 이어서 작업하려면 코드 폴더 + `client_secret.json` + `token_drive.json`을 그 PC로 복사하고 '⬇ 드라이브에서 받기'
-- **GitHub Actions 결과도 같은 드라이브 폴더에 저장**: 저장소 Settings → Secrets에 `DRIVE_CLIENT_ID`, `DRIVE_CLIENT_SECRET`, `DRIVE_REFRESH_TOKEN`을 추가 (값은 `token_drive.json` 안의 client_id / client_secret / refresh_token). 워크플로의 '구글 드라이브 저장' 단계가 영상·음성·이미지·썸네일·자막(롱폼은 롱폼)을 올립니다. Secret이 없으면 건너뜁니다.
-- 권한은 `drive.file`(이 프로그램이 만든 파일만 접근)이라 드라이브의 다른 파일은 볼 수 없습니다.
-- 영어/한국어 채널은 드라이브 루트 폴더가 따로 만들어집니다 (`culture-shorts-ko` / `korea-shorts-en`).
-""")
+    with st.expander("📁 구글 드라이브 (썸네일·이미지·음성·영상·자막 등)", expanded=False):
+        _DL = {"thumbs": "썸네일", "subs": "자막(SRT)", "audio": "음성", "images": "이미지", "videos": "영상(mp4)", "longform": "롱폼", "db": "DB·설정 백업"}
+        _tok_ok = os.path.exists("token_drive.json")
+        st.caption("인증: " + ("**완료** (token_drive.json)" if _tok_ok else "**필요** — 아래 '처음 한 번' 안내를 따라 하세요"))
+        TTS_CFG["drive_cats"] = st.multiselect("대상 종류", list(_DL), [c for c in TTS_CFG.get("drive_cats", list(_DL)) if c in _DL],
+                                               format_func=lambda k: _DL[k], key="dr_cats", help="영상(mp4)은 용량이 큽니다. 처음엔 빼고 시작해도 됩니다")
+        _dr_idx = st.text_input("소재 번호 범위 (비우면 전체, 예: 100-120,130)", key="dr_idx")
+        _dr_only = ",".join(TTS_CFG["drive_cats"]) or "thumbs"
+        _dr_idx_args = ["--index", _dr_idx.strip()] if _dr_idx.strip() else []
+        TTS_CFG["drive_auto"] = st.checkbox("작업이 끝나면 자동으로 드라이브에 올리기 (바뀐 파일만)", bool(TTS_CFG.get("drive_auto")), key="dr_auto", disabled=not _tok_ok)
+        json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+        d1, d2, d3, d4 = st.columns(4)
+        if d1.button("현황", key="dr_status"):
+            run("drive_sync.py", "status", "--only", _dr_only)
+        if d2.button("올릴 것 미리보기", key="dr_dry", disabled=not _tok_ok):
+            run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args, "--dry-run")
+        if d3.button("⬆ 드라이브로 올리기", key="dr_push", disabled=not _tok_ok):
+            run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args)
+        if d4.button("⬇ 드라이브에서 받기", key="dr_pull", disabled=not _tok_ok, help="이 PC에 없는(또는 크기가 다른) 파일만 받습니다. DB는 받지 않음 (DB는 GitHub로)"):
+            run("drive_sync.py", "pull", "--only", _dr_only, *_dr_idx_args)
+        with st.expander("처음 한 번 (인증)"):
+            st.markdown("""
+    1. [Google Cloud 콘솔](https://console.cloud.google.com/) → 유튜브 업로드용으로 만든 같은 프로젝트에서 **API 및 서비스 → 라이브러리 → Google Drive API → 사용**
+    2. OAuth 동의 화면의 **테스트 사용자**에 드라이브를 쓸 구글 계정이 있어야 합니다 (유튜브 때와 같은 방식)
+    3. 이 폴더에서: `python drive_sync.py auth client_secret.json` → 브라우저에서 허용 → `token_drive.json` 생성
+    4. 다른 PC에서 이어서 작업하려면 코드 폴더 + `client_secret.json` + `token_drive.json`을 그 PC로 복사하고 '⬇ 드라이브에서 받기'
+    - **GitHub Actions 결과도 같은 드라이브 폴더에 저장**: 저장소 Settings → Secrets에 `DRIVE_CLIENT_ID`, `DRIVE_CLIENT_SECRET`, `DRIVE_REFRESH_TOKEN`을 추가 (값은 `token_drive.json` 안의 client_id / client_secret / refresh_token). 워크플로의 '구글 드라이브 저장' 단계가 영상·음성·이미지·썸네일·자막(롱폼은 롱폼)을 올립니다. Secret이 없으면 건너뜁니다.
+    - 권한은 `drive.file`(이 프로그램이 만든 파일만 접근)이라 드라이브의 다른 파일은 볼 수 없습니다.
+    - 영어/한국어 채널은 드라이브 루트 폴더가 따로 만들어집니다 (`culture-shorts-ko` / `korea-shorts-en`).
+    """)
 
 # ---- 작업 후 자동 동기화 (화면을 다 그린 뒤 한 번)
 if st.session_state.get("gh_dirty"):
@@ -1587,7 +1668,9 @@ if st.session_state.get("gh_dirty"):
                                      capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
                 _ok1 = _ok1 and _r2.returncode == 0
                 _msg += " | " + ((_r2.stdout + _r2.stderr).strip().splitlines() or [""])[-1]
-            _stt.update(label=("✅ GitHub 동기화 완료: " if _ok1 else "⚠️ GitHub 동기화 보류/실패: ") + _msg, state="complete" if _ok1 else "error")
-            st.code(_o1[-1500:])
+            _stt.update(label=("✅ GitHub 동기화 완료: " if _ok1 else "⚠️ GitHub 동기화 보류/실패: ") + _msg, state="complete" if _ok1 else "error", expanded=not _ok1)
+            st.session_state["gh_last"] = (_ok1, time.strftime("%H:%M"), _msg)
+            if not _ok1:
+                st.code(_o1[-1500:])
     if TTS_CFG.get("drive_auto") and os.path.exists("token_drive.json"):
         run("drive_sync.py", "push", "--only", ",".join(TTS_CFG.get("drive_cats") or ["thumbs"]))
