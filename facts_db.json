@@ -635,49 +635,57 @@
     "status_v5": "video_done",
     "status_v6": "video_done",
     "image_queries_done": [
-      "네덜란드 travel",
-      "네덜란드 travel",
-      "네덜란드 travel",
-      "네덜란드 travel",
-      "네덜란드 travel",
-      "네덜란드 travel"
+      "bike traffic light Netherlands",
+      "green bike traffic light",
+      "bike crossing separate signal",
+      "bike priority intersection Netherlands",
+      "high bike usage Netherlands",
+      "hand tapping follow icon"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "JoshuaWoroniecki",
-        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/"
+        "source": "commons",
+        "user": "PierreSelim",
+        "license": "CC BY 3.0",
+        "title": "Feu pour Velo Amsterdam.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Feu_pour_Velo_Amsterdam.jpg",
+        "id": "c:15260571"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "StuBaileyPhoto",
-        "page": "https://pixabay.com/photos/plane-seats-window-aviation-6511878/"
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/pedestrian-lights-pedestrian-cyclist-49704/",
+        "id": 49704
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Kranich17",
-        "page": "https://pixabay.com/photos/globe-ship-exploration-to-travel-7939725/"
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/bicycle-traffic-light-9432977/",
+        "id": 9432977
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "took_a_snap",
-        "page": "https://pixabay.com/photos/road-fog-mist-asphalt-travel-8687668/"
+        "user": "Jhnndy",
+        "page": "https://pixabay.com/photos/bicycle-street-street-photography-4496443/",
+        "id": 4496443
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "822640",
-        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/"
+        "user": "FotoRieth",
+        "page": "https://pixabay.com/photos/sunrise-bicycle-grandmas-bike-3893333/",
+        "id": 3893333
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "kamilasmrekovska",
-        "page": "https://pixabay.com/photos/cathedral-london-architecture-6539937/"
+        "user": "monicore",
+        "page": "https://pixabay.com/photos/follow-us-facebook-google-plus-2395640/",
+        "id": 2395640
       }
     ],
     "image_source": "pixabay",
@@ -724,6 +732,77 @@
         "effect": "팝",
         "bg": ""
       }
+    ],
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3354,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f56de02fbb00",
+        "at": "2026-10-25 12:37",
+        "scene": 1,
+        "rejected_ids": [
+          2685005,
+          "c:15260571"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.326,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5524b9a2e7ff",
+        "at": "2026-10-25 12:37",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3221,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "84192038443f",
+        "at": "2026-10-25 12:37",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2349,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "048b207ebfcd",
+        "at": "2026-10-25 12:37",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2731,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "21e7757c56e9",
+        "at": "2026-10-25 12:37",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2605,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "97518d5909dc",
+        "at": "2026-10-25 12:37",
+        "scene": 6,
+        "rejected_ids": []
+      }
     ]
   },
   {
@@ -745,7 +824,214 @@
     "status_v6": "video_done",
     "youtube_id": "mz646iHwDZU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-21"
+    "uploaded_at": "2026-09-21",
+    "title_line1": "베네치아비둘기금지",
+    "title_line2": "벌금은 즉시 150유로",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*벌금* 즉시 부과!"
+      },
+      {
+        "s": 3,
+        "text": "*배설물* 건물 손상"
+      },
+      {
+        "s": 4,
+        "text": "*150~500* 벌금"
+      },
+      {
+        "s": 6,
+        "text": "*작은* 행동 큰 역할"
+      },
+      {
+        "s": 7,
+        "text": "*비둘기* 먹이 금지"
+      }
+    ],
+    "image_queries": [
+      "immediate fine Venice",
+      "Venice historic buildings",
+      "pigeon droppings building damage",
+      "150 to 500 euro fine",
+      "cash payment only",
+      "small action big role",
+      "no pigeon feeding",
+      "subscribe like icon"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "immediate fine Venice",
+      "Venice historic buildings",
+      "pigeon droppings building damage",
+      "150 to 500 euro fine",
+      "cash payment only",
+      "small action big role",
+      "no pigeon feeding",
+      "subscribe like icon"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Donald Judge",
+        "license": "CC BY 2.0",
+        "title": "1963 Venice Robert feeding pigeons Granmas in background (50874992613).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1963_Venice_Robert_feeding_pigeons_Granmas_in_background_(50874992613).jpg",
+        "id": "c:115111846"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "fietzfotos",
+        "page": "https://pixabay.com/photos/building-fog-channel-venice-italy-7579247/",
+        "id": 7579247
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/roof-roof-tiles-roof-damage-5217069/",
+        "id": 5217069
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Ralphs_Fotos",
+        "page": "https://pixabay.com/photos/money-dollar-bill-banknote-cash-3115984/",
+        "id": 3115984
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/coins-banknotes-money-currency-1726618/",
+        "id": 1726618
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/miniature-miniature-figure-painter-1700629/",
+        "id": 1700629,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "balouriarajesh",
+        "page": "https://pixabay.com/photos/pigeon-bird-dove-wings-feeding-6823571/",
+        "id": 6823571
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "TheDigitalArtist",
+        "page": "https://pixabay.com/photos/twitter-tweet-social-media-icon-2815914/",
+        "id": 2815914,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2498,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "94d27aabbb3d",
+        "at": "2026-10-25 12:38",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2982,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b858d4ffd614",
+        "at": "2026-10-25 12:38",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2688,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c54c70a90286",
+        "at": "2026-10-25 12:38",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2812,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "739cf81d1637",
+        "at": "2026-10-25 12:38",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2514,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0387c8c1698d",
+        "at": "2026-10-25 12:38",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2268,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4bb58f938981",
+        "at": "2026-10-25 12:38",
+        "scene": 6,
+        "rejected_ids": [
+          1700629,
+          4319839,
+          5298086,
+          "c:115111846",
+          "c:174211751"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2932,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ef2d6937d168",
+        "at": "2026-10-25 12:38",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2282,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "15aac10d2d65",
+        "at": "2026-10-25 12:38",
+        "scene": 8,
+        "rejected_ids": [
+          2815914,
+          "c:53583320"
+        ]
+      }
+    ]
   },
   {
     "country": "New Zealand",
