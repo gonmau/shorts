@@ -1,0 +1,799 @@
+{
+ "98": {
+  "narration": "Did you know you can pitch a tent in the Finnish forest without a permit? In Finland, the law calls this \"Jokamiehen oikeus\" – the every‑man's right to roam. It lets anyone, locals or tourists, set up a small campsite on public or private land that isn’t a protected area. You may stay up to two nights in one spot and even light a modest fire, as long as you leave no trace. This tradition goes back centuries, rooted in a culture that respects nature as a shared resource. The idea is simple: the land belongs to everyone, but it also belongs to the forest. So you must pack out every piece of rubbish, avoid damaging plants, and keep noise low. The rule works in practice every summer. Hikers walking the Lakeland trail often stop beside a lake, spread a tarp, and cook a quick meal. Families on a weekend getaway might set up a tent near a berry‑laden clearing, enjoying the midnight sun. No reservation, no fee, just common sense. Why does this right exist? Historically, Finnish people relied on the wild for food, firewood, and shelter. Over time, the law formalised a mutual respect: you can use nature, but you must protect it. This balance keeps the forests pristine and the public happy. For many foreigners, the surprise is how open and trusting the system is. In some countries, you need a permit or you’re limited to designated campsites. Here, the whole countryside is your backyard, as long as you act responsibly. If you ever visit Finland, remember the two‑night limit, clean up your trash, and consider the small donation if you linger longer. It’s a beautiful example of how a nation can share its wild spaces with everyone. Next, we’ll see how Finns celebrate another quirky tradition – the Wife Carrying World Championships.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "Jokamiehen oikeus"
+   },
+   {
+    "sentence": 3,
+    "text": "two‑night limit"
+   },
+   {
+    "sentence": 5,
+    "text": "small donation"
+   },
+   {
+    "sentence": 7,
+    "text": "midnight sun"
+   },
+   {
+    "sentence": 9,
+    "text": "Wife Carrying"
+   }
+  ],
+  "compare": {
+   "title": "Korea vs United States",
+   "left": "Korea",
+   "right": "United States",
+   "rows": [
+    {
+     "label": "Camping freedom",
+     "left": "restricted",
+     "right": "varies by state"
+    },
+    {
+     "label": "Permit needed",
+     "left": "rare",
+     "right": "common in parks"
+    },
+    {
+     "label": "Fire rules",
+     "left": "strict in cities",
+     "right": "relaxed in forests"
+    }
+   ]
+  },
+  "recap": "Finland lets anyone camp two nights anywhere, just respect nature and ",
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 0,
+   "unsupported": 4,
+   "notes": [
+    "[unsupported] 9번 문장: Anecdotal claim about hikers on the Lakeland trail lacks verifiable evidence",
+    "[unsupported] 10번 문장: Anecdotal claim about families camping near berry clearings is not documented",
+    "[contradicted] 12번 문장: No law adds a donation requirement for stays longer than two days",
+    "[contradicted] 13번 문장: There is no tax or mandatory donation linked to the right",
+    "[unsupported] 17번 문장: Claim about keeping forests pristine is evaluative, not proven",
+    "[unsupported] 25번 문장: Specific claim about permit rarity in Korea and commonness in US parks lacks citation"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "47f2b0a77d2c",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-24 21:15",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0098_Finland.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0098_Finland_timing.json",
+  "tts_hash": "c70d38d74868"
+ },
+ "139": {
+  "narration": "Every July, the small town of Sonkajärvi hosts the quirky Wife Carrying World Championships. Competitors sprint through a 250‑meter obstacle course while carrying either their spouse or a 20‑kilogram dummy. The track is littered with sand pits, water troughs, hay bales and low walls, demanding both speed and balance. That story turned into a festive tradition in the early 1990s, and the race quickly spread across Finland and even abroad. The most eye‑catching rule is the prize: the winner receives a barrel of beer equal in weight to his wife’s mass. Historically, this meant dozens of bottles, enough to fill a small keg. The rule applies strictly to the official Sonkajärvi competition; unofficial regional races sometimes award cash or other treats instead. For many Finns, the sport is a playful test of strength, humor and teamwork, and it draws crowds who cheer loudly as couples tumble over the hurdles. It may sound odd to visitors, but the event reflects Finland’s love of quirky contests and community spirit. In Korea, carrying a partner through a marathon would be unheard of, yet both cultures cherish unique festivals that bring people together. Speaking of Finnish traditions, next we’ll explore a gentle Finnish rite that welcomes newborns: the newborn sauna ceremony.",
+  "keywords": [
+   {
+    "sentence": 2,
+    "text": "250‑meter obstacle"
+   },
+   {
+    "sentence": 5,
+    "text": "community spirit"
+   }
+  ],
+  "compare": {
+   "title": "Korea vs Japan",
+   "left": "Korea",
+   "right": "Japan",
+   "rows": [
+    {
+     "label": "Traditional festivals",
+     "left": "many, varied",
+     "right": "many, seasonal"
+    },
+    {
+     "label": "Couple competitions",
+     "left": "rare",
+     "right": "rare"
+    },
+    {
+     "label": "Public drinking prizes",
+     "left": "strict rules",
+     "right": "relaxed norms"
+    }
+   ]
+  },
+  "recap": "Finland’s Wife Carrying race mixes legend, obstacles, and a beer‑weigh",
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 0,
+   "unsupported": 4,
+   "notes": [
+    "[contradicted] 1번 문장: Prize is a barrel of beer, not cash",
+    "[contradicted] 5번 문장: Legend involves a brigand/warrior, not a shepherd",
+    "[unsupported] 12번 문장: Comparative claim about Korean customs lacks verifiable evidence",
+    "[unsupported] 14번 문장: Broad, vague comparison without specific evidence",
+    "[unsupported] 15번 문장: Broad, vague comparison without specific evidence",
+    "[unsupported] 16번 문장: Broad, vague comparison without specific evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "eb0c9abcc195",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-24 21:16",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0139_Finland.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0139_Finland_timing.json",
+  "tts_hash": "7d36f5894cf5"
+ },
+ "143": {
+  "narration": "Did you know that a newborn’s first bath in Finland can be a hot sauna? In many Finnish families, when a baby is a few weeks old, the whole family steps into the sauna for a short 5‑10 minute session. The steam is believed to boost the infant’s circulation and strengthen the immune system. The practice is most common in traditional homes of Lapland and the southern countryside, but even city apartments sometimes follow it on a voluntary basis. Finns see the sauna as a natural extension of daily life, not a special occasion, so the baby sauna fits seamlessly into their routine. It also reflects a deep respect for nature’s extremes – heat and cold – that shapes Finnish health habits. Compared to Korea’s jjimjilbang culture, where families might visit a public bath together, the Finnish ceremony is a private, family‑focused event. Foreign visitors often find the sudden plunge after the sauna surprising, yet they admire the calm confidence Finns have about the cold. The ritual passes from generation to generation, keeping a quiet, comforting tradition alive in modern life. As you picture the gentle steam surrounding a tiny newborn, remember how simple rituals can bind families across the world. Warm wishes and happy exploring.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "Newborn sauna"
+   },
+   {
+    "sentence": 3,
+    "text": "Boost circulation"
+   },
+   {
+    "sentence": 4,
+    "text": "Cold plunge"
+   },
+   {
+    "sentence": 7,
+    "text": "Family tradition"
+   },
+   {
+    "sentence": 10,
+    "text": "Finnish health"
+   }
+  ],
+  "compare": null,
+  "recap": "Finnish newborns get a brief sauna, then a cold dip, boosting health a",
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 3,
+   "unsupported": 3,
+   "notes": [
+    "[unsupported] 2번 문장: No reliable data that whole families regularly sauna with newborns for 5‑10 min",
+    "[contradicted] 4번 문장: Newborns are not traditionally plunged into icy water after sauna",
+    "[contradicted] 5번 문장: Sharp temperature swing is not a core element of the Finnish newborn sauna tradition",
+    "[unsupported] 6번 문장: No evidence that the practice is most common in Lapland and southern countryside",
+    "[unsupported] 10번 문장: Anecdotal claim about foreign visitors lacks verifiable evidence",
+    "[contradicted] 14번 문장: Incorrectly attributes newborn sauna to Japan and mixes Korean practices",
+    "[contradicted] 15번 문장: Misstates Korean and Japanese bathing contexts",
+    "[contradicted] 16번 문장: Incorrectly claims cold plunge is standard in Japan after sauna"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "15df75e61583",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-24 21:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0143_Finland.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0143_Finland_timing.json",
+  "tts_hash": "15aebdd2e86c"
+ },
+ "0": {
+  "narration": "스위치에서 기니피그를 한 마리만 키우면 과태료를 물린다는 사실, 알고 계셨나요? 스위스 동물보호법은 기니피그를 ‘사회적 동물’로 정의하고, 최소 두 마리를 함께 키우도록 규정합니다. 이는 이 작은 포유류가 서로에게 사회적 자극을 주고 스트레스를 완화한다는 과학적 근거에서 비롯되었습니다. 실제로 한 마리만 보관하면 우울증 비슷한 행동을 보이며, 이는 동물복지 위반으로 간주됩니다. 위반 시 벌금은 물론, 사육 환경을 개선하라는 명령까지 내려질 수 있습니다. 스위스 가정에서는 보통 두 마리를 한 케이지에 넣고, 서로를 돌보게 하여 자연스러운 사회구조를 유지합니다. 이와 달리 다른 나라에서는 이런 법적 의무가 없거나, 최소 한 마리만 키워도 허용되는 경우가 많습니다. 예를 들어, 영국에서는 권고사항에 그칠 뿐이며, 미국에서는 주마다 규제가 크게 다릅니다. 스위스의 엄격한 규정은 동물 복지를 국가 차원에서 보호하려는 철학을 반영합니다. 작은 친구가 외롭게 지내지 않도록 두 마리를 함께 돌보는 것이 법이 요구하는 기본적인 책임이라는 점, 기억해 두세요. 다음엔 핀란드의 독특한 교육 제도를 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "스위치에서 기니피그를 한 마리"
+   },
+   {
+    "sentence": 2,
+    "text": "사회적 동물"
+   },
+   {
+    "sentence": 4,
+    "text": "우울증 비슷한 행동"
+   },
+   {
+    "sentence": 6,
+    "text": "두 마리를 한 케이지에"
+   }
+  ],
+  "compare": {
+   "title": "Switzerland vs Finland",
+   "left": "Switzerland",
+   "right": "Finland",
+   "rows": [
+    {
+     "label": "동물복지 법제",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "사회적 동물 인식",
+     "left": "법으로 규정",
+     "right": "주로 권고"
+    },
+    {
+     "label": "교육·복지 연계",
+     "left": "동물법 중심",
+     "right": "교육 정책 중심"
+    }
+   ]
+  },
+  "recap": "스위스는 기니피그를 두 마리 이상 키우게 법으로 강제합니다.",
+  "broll": [
+   "guinea pig pair cage",
+   "Swiss countryside home",
+   "animal welfare inspection"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 5,
+   "notes": [
+    "[unsupported] 6번 문장: General claim about typical household practice lacks verifiable data.",
+    "[unsupported] 9번 문장: Attribution of philosophical motive is interpretive, not a verifiable fact.",
+    "[unsupported] 12번 문장: Broad comparison lacks specific evidence; Finland's regulations are not clearly classified as 'loose'.",
+    "[unsupported] 13번 문장: Comparative claim about legal vs. advisory status not substantiated.",
+    "[unsupported] 14번 문장: Generalized contrast without supporting data."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "9ae1f6a61fde",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:27"
+ },
+ "1": {
+  "narration": "출산하면 바로 ‘아기 상자’를 받는다고 생각해 보셨나요? 핀란드에서는 정부가 모든 신생아에게 큰 박스를 선물합니다. 이 박스 안에는 옷, 기저귀, 침구, 아기용 타월 등 일상에 꼭 필요한 물품이 가득 들어 있죠. 1930년대 저소득 가정 지원 차원으로 시작돼, 현재는 임신 4개월 이내에 산전 검진을 받은 모든 부모에게 무상 제공됩니다. 박스는 단순한 선물이 아니라, 실제로 아기의 첫 침대로 쓰이는 비율이 90%가 넘습니다. 부모들은 박스를 펼쳐 바로 아기를 눕히고, 옷을 입히며, 필요한 물품을 꺼내 쓰는 모습을 흔히 볼 수 있습니다. 이 제도는 출산율을 높이고 초기 양육 부담을 줄이는 데 큰 역할을 했으며, 현금 대신 박스를 선택하는 비율이 압도적으로 높습니다. 다른 나라에서는 현금 지원이나 의료 혜택만 제공하는 경우가 많지만, 핀란드처럼 실물로 직접 지원하는 사례는 드뭅니다. 이렇게 실용적인 선물이 가족에게 안심과 편리함을 주는 모습을 보면, 작은 상자 하나가 사회 전체에 미치는 영향이 얼마나 큰지 새삼 느껴집니다. 다음에는 싱가포르의 독특한 복지 정책을 살펴볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "아기 상자"
+   },
+   {
+    "sentence": 2,
+    "text": "정부 선물"
+   },
+   {
+    "sentence": 4,
+    "text": "첫 침대"
+   },
+   {
+    "sentence": 6,
+    "text": "출산율 상승"
+   },
+   {
+    "sentence": 8,
+    "text": "현금보다 박스"
+   }
+  ],
+  "compare": {
+   "title": "Finland vs Singapore",
+   "left": "Finland",
+   "right": "Singapore",
+   "rows": [
+    {
+     "label": "지원 형태",
+     "left": "실물 박스 제공",
+     "right": "현금·주거 지원"
+    },
+    {
+     "label": "문화 영향",
+     "left": "아기 첫 침대로 활용",
+     "right": "보육센터 이용 선호"
+    }
+   ]
+  },
+  "recap": "핀란드 아기 상자는 출산 가정에 실질적 안심을 주는 복지 아이템입니다.",
+  "broll": [
+   "Finnish baby box opening",
+   "parents using baby box as crib",
+   "Finnish maternity clinic interior"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 0,
+   "removed_rows": 1,
+   "unsupported": 5,
+   "notes": [
+    "[unsupported] 5번 문장: No evidence provided for >90% usage as first crib",
+    "[unsupported] 6번 문장: Claim about common parental behavior lacks verifiable data",
+    "[unsupported] 7번 문장: Causal link to higher fertility not substantiated; only box choice rate is known",
+    "[unsupported] 8번 문장: Broad comparison to other countries is unverified",
+    "[contradicted] 12번 문장: Singapore's baby benefits are not limited to low‑income families",
+    "[unsupported] 13번 문장: Second part about Singapore preferring childcare centers lacks evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "ddf5168b4436",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:27"
+ },
+ "2": {
+  "narration": "1990년대 초, 거리와 지하철 역에 껌이 남겨져 청소 비용이 급증하고, 전동문 센서가 껌 때문에 고장 나는 일이 빈번했습니다. 정부는 이를 해결하기 위해 1992년부터 껌의 수입·판매를 전면 금지했죠. 일반인들은 껌을 사도 처벌받지만, 의사 처방을 받은 의료용 껌은 예외로 허용됩니다. 이 정책 덕분에 지하철 청소 비용은 매년 수백만 달러를 절감했고, 도시 미관도 크게 개선되었습니다. 2004년에는 치과 치료용 특수 껌만 다시 허용했지만, 기본 골격은 변하지 않았습니다. 오늘날에도 껌을 무단으로 버리면 벌금이 부과되며, 관광객이 소량을 개인 용도로 반입하는 것은 허용됩니다. 이렇게 엄격한 규제는 깨끗한 도시 이미지를 유지하려는 싱가포리의 철학을 보여줍니다. 다음에는 아이슬란드의 독특한 문화 이야기를 살펴볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "1992년 껌 수입·판매 전면"
+   },
+   {
+    "sentence": 3,
+    "text": "의료용 껌은 처방전 필요"
+   },
+   {
+    "sentence": 4,
+    "text": "청소 비용 매년 수백만 달러 "
+   },
+   {
+    "sentence": 5,
+    "text": "2004년 치과용 껌만 재허용"
+   }
+  ],
+  "compare": {
+   "title": "Singapore vs Iceland",
+   "left": "Singapore",
+   "right": "Iceland",
+   "rows": [
+    {
+     "label": "규제 강도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "관광객 제한",
+     "left": "반입 제한",
+     "right": "제한 적음"
+    },
+    {
+     "label": "청소 비용",
+     "left": "높음 절감",
+     "right": "낮음"
+    }
+   ]
+  },
+  "recap": "싱가포리의 껌 금지는 청결 유지와 비용 절감의 대표적 사례입니다.",
+  "broll": [
+   "Singapore city clean streets",
+   "subway maintenance crew",
+   "pharmacy counter chewing gum"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 4,
+   "notes": [
+    "[contradicted] 1번 문장: Chewing gum itself is not illegal in Singapore; only import and sale are banned.",
+    "[unsupported] 5번 문장: No evidence provided for yearly multi‑million‑dollar savings or quantified aesthetic improvement.",
+    "[unsupported] 10번 문장: No evidence comparing regulatory strictness of Singapore and Iceland.",
+    "[unsupported] 11번 문장: Claims about tourist import limits lack supporting data for Iceland.",
+    "[unsupported] 12번 문장: No evidence for relative cleaning cost levels in Singapore vs Iceland."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "b4853dea05d0",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:28"
+ },
+ "3": {
+  "narration": "아이슬란드에서 새 이름을 쓰려면 정부 승인을 받아야 한다는 사실, 알고 계셨나요? 아이슬란드어는 발음과 어미 규칙이 아주 까다롭습니다. 그래서 ‘이름위원회’가 존재합니다. 이 위원회는 신청된 이름이 아이슬란드어 문법에 맞는지, 발음이 자연스러운지, 문화적 의미가 부정적이지 않은지를 검토합니다. 규칙을 어기면 법원이 사용을 금지할 수 있습니다. 예를 들어, 외래어를 그대로 쓰면 어색한 발음이 되거나, 성별 구분이 모호해질 경우 거절됩니다. 아이슬란드 사람들은 대부분 이름이 ‘아들’이면 -son, ‘딸’이면 -dóttir 로 끝나는 전통적인 방식을 유지합니다. 이런 전통은 스칸디나비아 국가들 중에서도 가장 보수적으로 남아 있습니다. 이처럼 작은 변화도 위원회의 철저한 심사를 거쳐야 합니다. 일상에서도 아이슬란드인들은 이름을 바꿀 때마다 서류를 제출하고, 아이디 카드와 여권까지 수정해야 합니다. 다른 나라에서는 보통 이름을 자유롭게 바꾸지만, 아이슬란드에서는 문화와 언어를 보호하려는 강한 의지가 깃쳐 있습니다. 다음에는 스웨덴의 이름 문화가 어떻게 다른지 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "아이슬란드에서 새 이름을 쓰려"
+   },
+   {
+    "sentence": 5,
+    "text": "‘Apple’이라는 이름이 처"
+   }
+  ],
+  "compare": {
+   "title": "Iceland vs Sweden",
+   "left": "Iceland",
+   "right": "Sweden",
+   "rows": [
+    {
+     "label": "이름 승인 제도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "외래어 허용",
+     "left": "제한적",
+     "right": "다양함"
+    }
+   ]
+  },
+  "recap": "아이슬란드, 이름도 문화 보호의 일환이다",
+  "broll": [
+   "Icelandic landscape sunrise",
+   "government office interior",
+   "people signing documents"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 1,
+   "unsupported": 4,
+   "notes": [
+    "[unsupported] 2번 문장: Vague claim about strictness of pronunciation rules",
+    "[unsupported] 8번 문장: Comparative claim of being most conservative is opinion",
+    "[contradicted] 9번 문장: No record of 'Apple' being approved in 2020",
+    "[contradicted] 10번 문장: Based on false premise of sentence 9",
+    "[unsupported] 13번 문장: Broad comparison to other countries is unverified",
+    "[unsupported] 15번 문장: Simplified comparison of strictness lacks specific evidence",
+    "[contradicted] 16번 문장: Swedish naming suffixes are not -sson / -dotter for given names"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "35df212c9faa",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:28"
+ },
+ "4": {
+  "narration": "스웨덴의 숲에 들어가면 텐트를 친 뒤 하루 밤을 보낼 수 있다는 사실, 알고 계셨나요? 이 자유는 ‘알렘스라텐’이라는 전통적인 법에서 비롯됩니다. 오래전부터 스웨덴 사람들은 자연을 공동 자산으로 여기며, 사유지라도 일정 조건만 지키면 자유롭게 이용할 수 있게 했습니다. 그래서 낚시를 하든, 버섯을 따든, 혹은 작은 캠프파이어를 하든 24시간 안에 마무리하면 벌금 없이 즐길 수 있죠. 다만, 자연을 훼손하면 안 된다는 원칙은 엄격합니다. 불을 피우면 남은 재는 반드시 수거하고, 불씨가 남지 않도록 완전히 끄는 것이 필수입니다. 이처럼 책임감 있게 이용한다면, 스웨덴 전역의 숲·호수·산을 마음껏 탐험할 수 있습니다. 반면, 많은 나라에서는 사유지에 무단 침입이 법적으로 금지돼 캠핑이 제한됩니다. 스웨덴만큼 자연을 일상에 녹여낸 사례는 드물죠. 알렘스라텐은 단순히 자유를 주는 것이 아니라, 자연을 보호하고 공유하는 문화적 가치까지 담고 있습니다. 이제 여러분도 다음 여행 계획에 스웨덴의 숲을 넣어보세요. 다음에는 이탈리아의 숨은 문화 이야기를 만나봅시다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "알렘스라텐"
+   },
+   {
+    "sentence": 2,
+    "text": "24시간 안에"
+   },
+   {
+    "sentence": 3,
+    "text": "자연을 훼손하면 안"
+   },
+   {
+    "sentence": 4,
+    "text": "불씨가 남지 않게"
+   },
+   {
+    "sentence": 5,
+    "text": "스웨덴 전역"
+   }
+  ],
+  "compare": {
+   "title": "스웨덴 vs 이탈리아",
+   "left": "스웨덴",
+   "right": "이탈리아",
+   "rows": [
+    {
+     "label": "자연 이용 자유",
+     "left": "높음",
+     "right": "낮음"
+    },
+    {
+     "label": "캠핑 규제",
+     "left": "느슨",
+     "right": "엄격"
+    },
+    {
+     "label": "법적 보호",
+     "left": "전통법",
+     "right": "주로 지방조례"
+    }
+   ]
+  },
+  "recap": "알렘스라텐, 24시간 안에 자연을 책임감 있게 즐기자",
+  "broll": [
+   "Swedish forest campsite",
+   "mushroom picking in Scandinavia",
+   "sunset over lake Sweden"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 3,
+   "notes": [
+    "[contradicted] 8번 문장: Lapland is not in Stockholm’s outskirts",
+    "[unsupported] 14번 문장: Comparative rating lacks objective basis",
+    "[unsupported] 15번 문장: Vague comparative claim about regulation strictness",
+    "[unsupported] 16번 문장: Simplifies legal status; Sweden’s right is constitutional, not merely traditional"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "ed9d6332d69c",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:29"
+ },
+ "8": {
+  "narration": "베네치아에서 비둘기에게 빵을 주면 바로 벌금이 부과된다는 사실, 알고 계셨나요? 2000년대 초반부터 시청은 도심의 고풍스러운 건축물을 보호하기 위해 비둘기 먹이 주기를 전면 금지했어요. 비둘기가 빵을 먹고 남긴 배설물은 석회석 외벽에 부식성을 띠어, 복원 비용을 크게 늘립니다. 관광객들은 종종 광장이나 산마르코 광장에서 빵을 던지려 하는데, 이때마다 순찰 경찰이 즉시 제재합니다. 비둘기는 원래 바위 절벽에 사는 야생 비둘기의 후예라 건물 옥상이나 벽을 새 보금자리로 삼지만, 도시 환경에 적응하면서 수가 급증했죠. 이처럼 작은 행동 하나가 수백 년 된 도시를 지키는 데 큰 역할을 합니다. 베네치아를 방문하실 땐 비둘기에게 먹이를 주지 말고, 물 위에 비치는 고전 건축의 아름다움을 감상해 주세요. 다음에는 에티오피아의 독특한 문화 이야기를 전해드리겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "베네치아에서 비둘기에게 빵을 "
+   },
+   {
+    "sentence": 3,
+    "text": "석회석 외벽에 부식성 배설물"
+   },
+   {
+    "sentence": 5,
+    "text": "관광객이 빵을 던지는 광장"
+   },
+   {
+    "sentence": 7,
+    "text": "수백 년 된 도시를 지키는 작"
+   }
+  ],
+  "compare": {
+   "title": "Italy vs Switzerland",
+   "left": "Italy",
+   "right": "Switzerland",
+   "rows": [
+    {
+     "label": "보호 정책",
+     "left": "엄격한 비둘기 금지",
+     "right": "자연 보호 중심"
+    },
+    {
+     "label": "벌금 형태",
+     "left": "현금만",
+     "right": "벌점·교육"
+    },
+    {
+     "label": "관광객 행동",
+     "left": "제재 즉시 적용",
+     "right": "자율 권고"
+    }
+   ]
+  },
+  "recap": "베네치아는 비둘기 먹이 금지로 유산을 지키고 있습니다.",
+  "broll": [
+   "Venice historic buildings",
+   "pigeons on city squares",
+   "tourists walking canals"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 0,
+   "unsupported": 3,
+   "notes": [
+    "[contradicted] 4번 문장: Official fine is lower (around €100‑€200), not €150‑€500",
+    "[contradicted] 5번 문장: Fines can be paid by other means; not cash‑only",
+    "[unsupported] 11번 문장: Specific comparative policy details lack evidence",
+    "[unsupported] 12번 문장: Details about fine types and Swiss system not verified",
+    "[unsupported] 13번 문장: Comparative enforcement description not substantiated"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "be9167ee5a0e",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:29"
+ },
+ "10": {
+  "narration": "에티오피아에선 손님이 오면 반드시 커피 의식을 해야 한다는 사실, 알고 계셨나요? 먼저 생콩을 직접 불에 굽고, 그 향이 퍼지면 손으로 직접 갈아 물에 끓입니다. 이 세 번의 순서는 거부하거나 거절하면 무례로 여겨집니다. 제베라 의식은 단순히 음료를 마시는 것이 아니라, 손님과 주인 사이에 깊은 유대를 만드는 사회적 의례입니다. 현대 에티오피아 가정에서도 여전히 아침에 가족이 모여 원두를 굽고, 향긋한 연기가 집안을 가득 채우면 모두가 함께 차례로 커피를 나눕니다. 이때 사용되는 토기와 전통적인 도구들은 세대를 이어오며 전해 내려온 문화유산이죠. 두 나라의 커피 문화는 각각의 생활 방식과 가치관을 반영합니다. 이제 다음 이야기, United Arab Emirates로 넘어가 보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "손님이 오면 반드시 커피 의식"
+   },
+   {
+    "sentence": 2,
+    "text": "제베라 전통 의식"
+   },
+   {
+    "sentence": 6,
+    "text": "신뢰와 약속"
+   },
+   {
+    "sentence": 8,
+    "text": "코피브루"
+   }
+  ],
+  "compare": null,
+  "recap": "에티오피아의 제베라, 커피 한 잔에 담긴 신뢰와 전통",
+  "broll": [
+   "Ethiopian coffee ceremony",
+   "traditional roasting beans",
+   "family gathering coffee"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 4,
+   "removed_rows": 3,
+   "unsupported": 2,
+   "notes": [
+    "[unsupported] 1번 문장: No evidence that Ethiopian hosts are required to perform a coffee ceremony for every guest",
+    "[contradicted] 2번 문장: The ceremony is called a \"buna\" or \"coffee ceremony\", not \"제베라\"",
+    "[contradicted] 4번 문장: The three servings are not called \"아보카\", \"다르카\", \"베레다\"; traditional names differ",
+    "[unsupported] 5번 문장: No reliable source confirming that refusing the three‑round order is considered rude",
+    "[contradicted] 6번 문장: There is no basis for the claim that skipping the ceremony invalidates a business contract",
+    "[contradicted] 10번 문장: Finland’s coffee break is called \"fika\" (Swedish) or simply a coffee break, not \"코피브루\"",
+    "[contradicted] 13번 문장: Contains inaccurate terms for both Ethiopia and Finland",
+    "[contradicted] 14번 문장: Misstates Finnish coffee culture and uses incorrect Ethiopian terminology"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "103bb58b4cc6",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:30"
+ },
+ "56": {
+  "narration": "두바이에서 코끼리를 집에 들이고 싶다면 먼저 면허를 받아야 한다는 사실, 알고 계셨나요? 아랍에미리트 전역에서는 사자·호랑이·코끼리 같은 대형 야생동물을 개인이 키우려면 환경부와 동물복지부의 허가가 필수입니다. 허가 없이 이런 동물을 기르면 높은 벌금은 물론, 동물까지 압류당할 수 있습니다. 심지어 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함, 즉 약 140,000달러에 달하는 벌금을 부과받게 되죠. 이런 엄격한 규제는 동물 복지와 공공 안전을 동시에 보호하기 위해 도입되었습니다. 실제로 두바이 시청에서는 불법 애완동물 신고를 위한 핫라인을 운영하고, 위반 사례가 적발되면 현장 조사와 함께 즉각적인 조치를 취합니다. 반면, 유럽의 일부 국가에서는 애완동물 등록 제도는 있지만, 대형 포유류에 대한 허가 절차는 비교적 느슨하거나 아예 없기도 합니다. 따라서 특이한 애완동물을 생각하고 있다면, 해당 국가의 허가 절차와 벌칙 수준을 반드시 확인해야 합니다. 다음에는 인도의 독특한 애완동물 문화에 대해 알아보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "두바이에서 코끼리를 집에 들이"
+   },
+   {
+    "sentence": 3,
+    "text": "허가 없이 이런 동물을 기르면"
+   },
+   {
+    "sentence": 5,
+    "text": "최대 500,000디르함"
+   },
+   {
+    "sentence": 7,
+    "text": "동물 복지와 공공 안전"
+   }
+  ],
+  "compare": {
+   "title": "United Arab Emirates vs India",
+   "left": "United Arab Emirates",
+   "right": "India",
+   "rows": [
+    {
+     "label": "허가 제도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "벌금 수준",
+     "left": "높음",
+     "right": "보통"
+    },
+    {
+     "label": "동물 종류",
+     "left": "대형 야생동물",
+     "right": "주로 파충류·새"
+    }
+   ]
+  },
+  "recap": "UAE는 대형 야생동물에 엄격한 허가와 높은 벌금을 부과합니다.",
+  "broll": [
+   "Dubai desert wildlife",
+   "government office interior",
+   "exotic pet enclosure"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 7,
+   "notes": [
+    "[unsupported] 2번 문장: Specific ministries and nationwide permit requirement not verified",
+    "[unsupported] 3번 문장: Details of fines and seizure not confirmed",
+    "[unsupported] 4번 문장: Exact fine amount for a monkey not documented",
+    "[unsupported] 7번 문장: Generalization about European countries lacks evidence",
+    "[unsupported] 10번 문장: Comparative assessment without specific evidence",
+    "[unsupported] 11번 문장: Comparative fine level claim not substantiated",
+    "[unsupported] 12번 문장: Specific animal category comparison lacks verification"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "7eedc3fc544a",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:30"
+ },
+ "57": {
+  "narration": "플라스틱 빨대가 사라진 걸 본 적 있나요? 인도는 2022년부터 일회용 플라스틱을 전면 금지했어요. 12개 주와 연방 직할구역이 먼저 적용됐죠. 금지 대상은 빨대, 일회용 컵, 플라스틱 식기 등 일상에서 흔히 쓰이는 제품이에요. 판매자는 재사용 가능한 대체품만 제공해야 하고, 위반 시 벌금이 부과됩니다. 사람들은 금속 빨대, 유리컵, 대나무 식기 등 친환경 제품을 선택하고 있죠. 도시 거리의 노점도 플라스틱 대신 종이와 천 소재 포장으로 바뀌었습니다. 인도와 달리 스위스는 플라스틱 사용을 제한하기보단 재활용 인프라에 집중합니다. 인도는 규제와 벌금으로 빠른 변화를 이끌었고, 스위스는 자발적 참여와 높은 재활용률로 차이를 보이죠. 이런 정책은 환경 의식을 높이고, 새로운 비즈니스 기회를 만들어요. 다음에는 루마니아의 지속 가능한 에너지 정책을 살펴볼게요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "플라스틱 빨대가 사라진 걸 본"
+   },
+   {
+    "sentence": 2,
+    "text": "일회용 플라스틱 전면 금지"
+   },
+   {
+    "sentence": 5,
+    "text": "1억 5천만 개 플라스틱 사라"
+   },
+   {
+    "sentence": 6,
+    "text": "친환경 대체품 선택"
+   },
+   {
+    "sentence": 8,
+    "text": "재활용 인프라 집중"
+   }
+  ],
+  "compare": {
+   "title": "India vs Switzerland",
+   "left": "India",
+   "right": "Switzerland",
+   "rows": [
+    {
+     "label": "정책 방식",
+     "left": "규제·벌금",
+     "right": "자발적·재활용"
+    },
+    {
+     "label": "플라스틱 사용량",
+     "left": "많음→감소",
+     "right": "적음·안정"
+    },
+    {
+     "label": "시장 변화",
+     "left": "새 친환경 제품 급증",
+     "right": "재활용 기술 선진"
+    }
+   ]
+  },
+  "recap": "인도, 일회용 플라스틱 금지로 해변 쓰레기 대폭 감소",
+  "broll": [
+   "plastic waste beach cleanup",
+   "Indian street market reusable cups",
+   "environmental protest India"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 9,
+   "notes": [
+    "[unsupported] 2번 문장: India announced a phased ban on single‑use plastics starting 2022, but not a complete, nationwide ban of all single‑use plastic.",
+    "[unsupported] 3번 문장: No evidence that exactly 12 states and union territories were the first to implement such a ban.",
+    "[partially supported] 4번 문장: Straws, single‑use cups and plastic cutlery are among items targeted by India's phased restrictions, but the ban is not absolute for all listed products.",
+    "[unsupported] 5번 문장: The law requires producers to phase out certain items; it does not obligate sellers to offer only reusable alternatives, and penalty details differ across states.",
+    "[contradicted] 6번 문장: No credible data shows that 150 million plastic items vanished from Indian beaches in the first year of the policy.",
+    "[unsupported] 7번 문장: While some consumers use metal straws, glass cups, bamboo cutlery, there is no nationwide evidence that this is the dominant trend.",
+    "[unsupported] 8번 문장: No documented shift of street‑vendor packaging from plastic to paper or cloth across Indian cities as a direct result of the policy.",
+    "[unsupported] 10번 문장: Comparative claim about speed of change lacks verifiable evidence; both countries use mixed approaches."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "ca053ca6799a",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:31"
+ },
+ "58": {
+  "narration": "루마니아에서 공원에선 술 한 잔도 못 마신다고 하면 믿으시겠어요? 이는 도시 미관과 시민 안전을 지키려는 조치였죠. 하지만 한 가지 예외가 있습니다. 현지 주민들은 이 규정을 일상에 녹여, 주말엔 토카이와 함께 야외 식사를 즐깁니다. 반면, 외국인 관광객이 술을 들고 산책하면 바로 경고를 받습니다. 이처럼 루마니아는 공공 음주를 엄격히 관리하지만, 전통을 존중하는 독특한 균형을 잡고 있습니다. 다른 나라와 비교하면, 예를 들어 싱가포르는 공공 장소에서의 음주 자체를 거의 금지하고 있어 규제가 더 강합니다. 루마니아의 규정은 문화적 특성을 반영하면서도 시민의 편의를 고려한 점이 인상적입니다. 여러분도 여행 시 현지 규정을 꼭 확인하고, 현지 문화를 존중하는 태도를 잊지 마세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "루마니아에서 공원에선 술 한 "
+   },
+   {
+    "sentence": 3,
+    "text": "벌금 150~300레우"
+   },
+   {
+    "sentence": 5,
+    "text": "싱가포르와 비교"
+   }
+  ],
+  "compare": null,
+  "recap": "루마니아는 공공 음주를 제한하되 전통 토카이는 허용합니다.",
+  "broll": [
+   "Bucharest park people",
+   "Romanian wine making",
+   "city street signs"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 4,
+   "removed_rows": 3,
+   "unsupported": 3,
+   "notes": [
+    "[contradicted] 2번 문장: No evidence of a 2017 ban on alcohol in Bucharest parks",
+    "[contradicted] 4번 문장: No law specifying a 150–300 lei fine for public drinking",
+    "[contradicted] 6번 문장: No exemption for homemade \"tokay\" in public spaces",
+    "[contradicted] 7번 문장: Same as above; such exemption does not exist",
+    "[unsupported] 8번 문장: No data confirming locals regularly picnic with tokay",
+    "[unsupported] 9번 문장: No evidence that tourists are immediately warned for carrying alcohol",
+    "[unsupported] 11번 문장: Statement about Singapore's rules is vague and not precisely documented",
+    "[contradicted] 14번 문장: Claims an exception in Romania that does not exist"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "f6d4942acd0f",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 11:31"
+ }
+}
