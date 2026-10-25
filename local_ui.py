@@ -111,6 +111,14 @@ def _code_check():
 if "code_chk" not in st.session_state and os.path.exists("update_code.py"):
     st.session_state["code_chk"] = _code_check()
 
+def _lf_extra_files():
+    """롱폼 DB와 함께 올릴 파일들 (고친 대본, 채널 표시 설정/이미지)"""
+    out = []
+    for f_ in ("longform_scripts.json", "longform_brand.json", "channel_avatar.png"):
+        if os.path.exists(f_):
+            out += ["--file", f_]
+    return out
+
 def _hist_sync():
     """run_history.jsonl 을 GitHub와 양방향 병합 (+요약 md/csv 갱신). -> (성공, 한 줄)"""
     try:
@@ -522,6 +530,10 @@ FEATURES = [
     ("6 업로드", "제목 · 설명 복사 / 디스코드", "6 업로드 › 제목·설명", "유튜브에 붙여넣을 제목/설명, 디스코드 전송", ""),
     ("롱폼", "롱폼 만들기 (rich 스타일)", "🎞 롱폼", "소재 3~30개를 묶어 가로 영상으로. 챕터 카드·키워드 팝업·비교 카드·인트로/요약", "🆕"),
     ("롱폼", "롱폼 대본·시나리오 확인/수정", "🎞 롱폼 › ① 대본·시나리오 → ② 수정 → ③ 만들기", "나레이션·키워드·비교 카드·화면 지정을 고쳐 반영. 챕터별 AI 재작성 지시 가능", "🆕"),
+    ("롱폼", "채널 표시 (이름·주소·이미지·켜기/끄기·문구)", "🎞 롱폼 › 🎨 채널 표시", "오른쪽 위 채널 이름/주소/이미지를 각각 끄고 켜기, 문구 직접 입력, 채널 이미지 올리기, 인트로·엔딩 문구", "🆕"),
+    ("롱폼", "오프닝 · 엔딩 멘트 수정", "🎞 롱폼 › ② › 🎤 오프닝·엔딩 멘트", "영상 앞 소개와 요약 화면에서 읽는 멘트를 고쳐 그 문구로 음성 생성", "🆕"),
+    ("롱폼", "사진·영상 확인 (빠진 사진 점검)", "🎞 롱폼 › ② 챕터 안 '사진 · 영상 확인'", "챕터별 사진 미리보기, 빠진 사진 받기, 스톡 영상 미리보고 끄기. 빠진 사진이 있으면 합성 전에 멈춤", "🆕"),
+    ("롱폼", "고친 대본에 맞춰 키워드·비교 다시 만들기", "🎞 롱폼 › ② 챕터 안 🔁 버튼", "나레이션을 고친 뒤 AI가 키워드 팝업·비교 카드·요약·영상 검색어를 새 글에 맞춰 다시 만듦 (대본은 그대로)", "🆕"),
     ("롱폼", "스톡 영상 (Pexels/Pixabay)", "🎞 롱폼 체크박스", "분위기용 짧은 영상을 일부 장면에 사용 (Pixabay 키 필요)", "🆕"),
     ("롱폼", "렌더링 진행률", "🎞 롱폼 실행 로그", "10%마다 진행률과 남은 시간 표시", "🆕"),
     ("자동", "자동 진행", "이 탭 아래 '⚡ 자동 진행'", "확인 없이 대본/이미지/렌더링까지 한 번에", ""),
@@ -1387,6 +1399,52 @@ with TL:
     if lf_clips:
         _pk = [n_ for n_ in ("PEXELS_API_KEY", "PIXABAY_API_KEY") if os.environ.get(n_, "").strip()]
         st.caption("스톡 영상 키: " + (", ".join(_pk) if _pk else "없음 → 사진만 사용됩니다 (PEXELS_API_KEY 환경변수 설정)"))
+    with st.expander("🎨 채널 표시 (이름 · 주소 · 이미지 · 켜기/끄기 · 문구)", expanded=False):
+        import longform_render as _R
+        _bf = _R.BRAND_FILE
+        _B = _R.load_brand()
+        st.caption("롱폼 화면 오른쪽 위(채널 이름·주소·이미지), 인트로, 엔딩의 채널 표시를 정합니다. 비워 두면 기본값(위쪽 채널 이름)을 씁니다. 저장하면 다음 롱폼부터 적용됩니다.")
+        b1, b2 = st.columns(2)
+        _B["channel"] = b1.text_input("표시할 채널 이름", _B.get("channel") or "", placeholder=CH, key="br_ch", help="화면에 나오는 이름. 영상 설명·제목에는 영향 없음")
+        _B["handle"] = b2.text_input("채널 주소 (@…)", _B.get("handle") or "", placeholder=HD, key="br_hd")
+        _up = st.file_uploader("채널 이미지 올리기 (png/jpg, 정사각형 권장)", type=["png", "jpg", "jpeg", "webp"], key="br_up")
+        if _up is not None:
+            from PIL import Image as _PI
+            _im = _PI.open(_up).convert("RGB")
+            _im.save("channel_avatar.png")
+            _B["avatar"] = "channel_avatar.png"
+            st.success("channel_avatar.png 로 저장했습니다. 아래 '저장'을 눌러 확정하세요.")
+        _cur = _R.avatar_file(_B.get("avatar") or None)
+        a1, a2 = st.columns([1, 4])
+        if _cur:
+            a1.image(_cur, width=96)
+            a2.caption(f"현재 이미지: {_cur}")
+        else:
+            a1.image(_R.avatar(None, 96, _B.get("channel") or CH), width=96)
+            a2.warning("채널 이미지 파일이 없어 이름 첫 글자 원으로 대신 나옵니다. 위에서 이미지를 올려 주세요. (이전에 파란 원만 나온 이유)")
+        t1_, t2_, t3_ = st.columns(3)
+        _B["hud"] = t1_.checkbox("오른쪽 위 채널 표시 켜기", bool(_B.get("hud", True)), key="br_hud")
+        _B["hud_avatar"] = t1_.checkbox("└ 이미지", bool(_B.get("hud_avatar", True)), key="br_hav", disabled=not _B["hud"])
+        _B["hud_name"] = t2_.checkbox("└ 채널 이름", bool(_B.get("hud_name", True)), key="br_hnm", disabled=not _B["hud"])
+        _B["hud_handle"] = t2_.checkbox("└ 채널 주소", bool(_B.get("hud_handle", True)), key="br_hhd", disabled=not _B["hud"])
+        _B["hud_pill"] = t3_.checkbox("뒤에 반투명 띠 깔기", bool(_B.get("hud_pill", True)), key="br_pill", disabled=not _B["hud"])
+        _B["hud_text"] = st.text_input("오른쪽 위 문구 직접 입력 (비우면 이름 + 주소)", _B.get("hud_text") or "", key="br_htx", disabled=not _B["hud"])
+        i1_, i2_ = st.columns(2)
+        _B["intro_logo"] = i1_.checkbox("인트로에 채널 이미지 표시", bool(_B.get("intro_logo", True)), key="br_il")
+        _B["intro_name"] = i2_.checkbox("인트로에 채널 이름 표시", bool(_B.get("intro_name", True)), key="br_in")
+        _B["cta"] = st.text_input("엔딩 하단 문구 (비우면 '구독 · 좋아요 · 채널이름')", _B.get("cta") or "", key="br_cta")
+        try:   # 미리보기: 오른쪽 위 표시
+            _R.BRAND.update(_B)
+            from PIL import Image as _PI2
+            _hud = _R.make_hud(1, 6, "Japan" if EN else "일본", _B.get("channel") or CH, _B.get("handle") or HD, _B.get("avatar") or None, "")
+            _bg = _PI2.new("RGBA", _hud.size, (92, 120, 150, 255))
+            _bg.alpha_composite(_hud)
+            st.image(_bg.crop((0, 0, _hud.size[0], 190)).convert("RGB"), caption="미리보기 (화면 윗부분)")
+        except Exception as _e:
+            st.caption(f"미리보기 실패: {type(_e).__name__}: {_e}")
+        if st.button("💾 채널 표시 저장", key="br_save", type="primary"):
+            json.dump(_B, open(_bf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            st.success("저장했습니다. 다음 롱폼부터 적용됩니다. (GitHub Actions에서도 쓰려면 동기화 탭에서 올리세요)")
     common_args = ["--channel", CH, "--handle", HD, "--style", "classic" if lf_style.startswith("classic") else "rich"] \
         + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else [])
     base_args = ["build_longform.py"] + sel_args + common_args + (["--regen"] if lf_regen else [])
@@ -1410,6 +1468,10 @@ with TL:
     render_args = list(base_args)
     if plan and use_plan:
         render_args = ["build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"])] + common_args
+    lf_nomiss = st.checkbox("이미지가 빠진 소재가 있어도 그냥 진행 (빠진 자리는 색 카드)", False, key="lf_nomiss",
+                            help="끄면 사진이 빠진 소재가 있을 때 합성 전에 멈추고 어느 소재인지 알려줍니다. ②의 챕터별 '사진 확인'에서 미리 볼 수 있어요")
+    if not lf_nomiss:
+        render_args += ["--require-images"]
     if st.button("③ 롱폼 만들기 (음성 + 영상 합성)", key="lf_run", type="primary",
                  help="수정한 대본으로 음성을 새로 만들고 영상으로 합성합니다 (오래 걸림, 진행률이 10%마다 표시됨)"):
         TIMES.clear(); run(*render_args, "--title", ltitle)
@@ -1424,6 +1486,47 @@ with TL:
         st.caption(f"소재 {len(plan['members'])}개 (만든 시각 {plan.get('created', '')}). 고친 내용은 '저장'을 눌러야 반영되고, 저장한 대본은 ③에서 AI가 덮어쓰지 않습니다(잠금). 나레이션을 고치면 ③에서 음성이 새로 만들어집니다.")
         if os.path.exists("longform_plan.txt"):
             st.download_button("시나리오 전체 txt 받기", open("longform_plan.txt", "rb").read(), file_name="longform_plan.txt", key="lf_plan_dl")
+
+        _recs_all = {i_: LS.get_rec(i_) for i_ in plan["members"]}
+        _cn = [str(_dbl[i_].get("country", "")).strip() for i_ in plan["members"] if 0 <= i_ < len(_dbl)]
+        _auto_in = LS.intro_text(_cn, len(plan["members"]), [str((_recs_all[i_].get("compare") or {}).get("right") or "") for i_ in plan["members"]])
+        _auto_out = LS.outro_text([(_recs_all[i_].get("recap") or str(_dbl[i_].get("topic", ""))) for i_ in plan["members"] if 0 <= i_ < len(_dbl)])
+        with st.expander("🎤 오프닝 · 엔딩 멘트 (수정 가능)", expanded=False):
+            st.caption("오프닝은 영상 맨 앞 소개, 엔딩은 '오늘의 요약' 화면에서 읽는 멘트입니다. 고치면 ③에서 이 문구로 음성을 새로 만듭니다. 비우거나 '자동 문구로 되돌리기'를 누르면 자동 문구를 씁니다.")
+            _in_t = st.text_area("오프닝 멘트", plan.get("intro_text") or _auto_in, height=110, key=f"lf_intro_txt_{abs(hash(str(plan.get('intro_text'))))}")
+            _out_t = st.text_area("엔딩 멘트 (요약 + 인사)", plan.get("outro_text") or _auto_out, height=170, key=f"lf_outro_txt_{abs(hash(str(plan.get('outro_text'))))}")
+            _cps = 13.0 if EN else 6.0
+            st.caption(f"예상 길이: 오프닝 약 {int(len(re.sub(chr(32), '', _in_t)) / _cps)}초 · 엔딩 약 {int(len(re.sub(chr(32), '', _out_t)) / _cps)}초. 마지막에 인사까지 끝나도록 문장을 마침표로 끝내세요.")
+            m1, m2 = st.columns(2)
+            if m1.button("💾 멘트 저장", key="lf_txt_save", type="primary"):
+                _pl = _lf_plan() or {}
+                for _k, _v, _a in (("intro_text", _in_t.strip(), _auto_in), ("outro_text", _out_t.strip(), _auto_out)):
+                    if _v and _v != _a.strip():
+                        _pl[_k] = _v
+                    else:
+                        _pl.pop(_k, None)
+                json.dump(_pl, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.success("저장했습니다."); st.rerun()
+            if m2.button("↩ 자동 문구로 되돌리기", key="lf_txt_reset"):
+                _pl = _lf_plan() or {}
+                _pl.pop("intro_text", None); _pl.pop("outro_text", None)
+                json.dump(_pl, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.rerun()
+        try:
+            import build_video as _BV0
+            _lack = []
+            for i_ in plan["members"]:
+                if 0 <= i_ < len(_dbl):
+                    _ps = _BV0.get_visual_paths(i_, _dbl[i_])
+                    _ms = [n_ + 1 for n_, p_ in enumerate(_ps) if not os.path.exists(p_)]
+                    if _ms or not _ps:
+                        _lack.append(f"{i_} {_dbl[i_].get('country', '')} ({', '.join(map(str, _ms)) or '전부'}번 없음)")
+            if _lack:
+                st.warning("🖼 사진이 빠진 소재: " + " / ".join(_lack) + "  — 챕터를 펼쳐 '빠진 사진 받기'를 누르거나 '3 이미지' 탭에서 받으세요. 이대로 ③을 누르면 멈춥니다(위 '그냥 진행'을 켜지 않았다면).")
+            else:
+                st.success("🖼 모든 소재의 사진이 있습니다.")
+        except Exception:
+            pass
 
         def _nan(v):
             try:
@@ -1456,6 +1559,11 @@ with TL:
                 sents_ = LS.split_sentences(narr_)
                 chars_ = len(re.sub(r"\s+", "", narr_))
                 est_ = chars_ / (13.0 if EN else 6.0)
+                if narr_.strip() != rec_["narration"].strip():
+                    _was = len(LS.split_sentences(rec_["narration"]))
+                    st.info("✏️ 대본을 고치는 중입니다. 저장하면 이 대본으로 음성을 새로 만듭니다. 키워드 팝업·화면 지정은 '문장 번호' 기준이라 자동으로 바뀌지 않습니다"
+                            + (f" (문장 수 {_was}→{len(sents_)}개로 바뀌어 번호가 어긋날 수 있어요)" if _was != len(sents_) else "")
+                            + ". 저장한 뒤 아래 '🔁 이 대본에 맞춰 다시 만들기'를 누르면 AI가 키워드·비교 카드·요약·영상 검색어를 새 글에 맞춰 다시 만듭니다.")
                 st.caption(f"문장 {len(sents_)}개 · {chars_}자 · 예상 {int(est_ // 60)}분 {int(est_ % 60)}초 (음성을 만들면 정확한 길이가 나옵니다)")
                 t1c, t2c = st.columns(2)
                 import build_video as _BV
@@ -1479,6 +1587,35 @@ with TL:
                 cu0 = [{"문장번호": c.get("sentence"), "사진번호": c.get("scene"), "영상번호": c.get("clip")} for c in (rec_.get("images") or []) if isinstance(c, dict)]
                 cdf = st.data_editor(pd.DataFrame(cu0 or [{"문장번호": None, "사진번호": None, "영상번호": None}]), num_rows="dynamic",
                                      key=f"lfcue_{k_}", use_container_width=True, hide_index=True)
+                st.markdown("**사진 · 영상 확인**")
+                try:
+                    import build_video as _BV1
+                    _pp = _BV1.get_visual_paths(idx_, it_)
+                except Exception:
+                    _pp = []
+                _have = [(n_ + 1, p_) for n_, p_ in enumerate(_pp) if os.path.exists(p_)]
+                _no = [n_ + 1 for n_, p_ in enumerate(_pp) if not os.path.exists(p_)]
+                if _have:
+                    _gc = st.columns(min(6, len(_have)))
+                    for _j, (_n, _p) in enumerate(_have):
+                        _gc[_j % len(_gc)].image(_p, caption=f"사진 {_n}", use_container_width=True)
+                if _no or not _pp:
+                    st.error(f"사진 {', '.join(map(str, _no)) or '전부'}번이 없습니다 (이대로 합성하면 색 카드로 대신 들어갑니다).")
+                    if st.button("🖼 빠진 사진 받기", key=f"lfimg_{k_}"):
+                        run("fetch_images.py", "--index", str(idx_)); st.rerun()
+                elif _pp:
+                    st.caption(f"사진 {len(_pp)}장 모두 있음. 마음에 안 들면 '3 이미지 › 검수·교체'에서 바꾸세요.")
+                _clips_cur = [dict(c_) for c_ in (rec_.get("clips") or []) if isinstance(c_, dict)]
+                _clip_use = []
+                if _clips_cur:
+                    _cc = st.columns(min(3, len(_clips_cur)))
+                    for _j, _c in enumerate(_clips_cur):
+                        with _cc[_j % len(_cc)]:
+                            if _c.get("path") and os.path.exists(_c["path"]):
+                                st.video(_c["path"])
+                            _clip_use.append(st.checkbox(f"영상 {_j + 1} 사용" + (f" ({_c.get('query', '')[:20]})" if _c.get("query") else ""), bool(_c.get("use", True)), key=f"lfcu{_j}_{k_}"))
+                elif lf_clips:
+                    st.caption("스톡 영상: 아직 없음 (③을 실행하면 받아 옵니다. 한 번 받은 뒤 여기서 미리 보고 끌 수 있어요)")
                 if qs_:
                     st.caption("사진 검색어: " + " / ".join(f"{i + 1}. {q}" for i, q in enumerate(qs_)) + "  (사진 교체는 '이미지 검수/교체' 탭)")
                 cq0 = list(rec_.get("clip_queries") or rec_.get("broll") or [])
@@ -1514,12 +1651,19 @@ with TL:
                 if sv1.button("💾 저장 (이 대본으로 잠금)", key=f"lfsave_{k_}", type="primary"):
                     LS.update_rec(idx_, {"narration": narr_.strip(), "keywords": kws_, "compare": compare_, "compare_at": tmp_["compare_at"],
                                          "recap": tmp_["recap"], "images": cues_, "title1": tmp_["title1"], "title2": tmp_["title2"],
-                                         "clip_queries": [q.strip() for q in clipq_ if q.strip()]})
+                                         "clip_queries": [q.strip() for q in clipq_ if q.strip()],
+                                         **({"clips": [{**c_, "use": bool(u_)} for c_, u_ in zip(_clips_cur, _clip_use)]} if _clips_cur and len(_clip_use) == len(_clips_cur) else {})})
                     st.success("저장했습니다. ③에서 이 대본으로 음성을 만들고 합성합니다.")
                     st.rerun()
                 if sv2.button("🔓 잠금 해제 (자동 상태로)", key=f"lfunlock_{k_}", disabled=not rec_.get("locked"),
                               help="소재 구성이 바뀌면 AI가 대본을 다시 쓸 수 있게 합니다 (내용은 그대로 남음)"):
                     LS.update_rec(idx_, {"locked": False}, lock=False)
+                    st.rerun()
+                if st.button("🔁 이 대본에 맞춰 키워드·비교·요약·영상 검색어 다시 만들기 (AI, 대본은 그대로)", key=f"lfsync_{k_}",
+                             help="현재 입력한 나레이션을 저장한 뒤, 그 글에 맞는 키워드 팝업/비교 카드/요약/영상 검색어를 AI가 새로 만듭니다. 화면 지정(사진·영상 큐)은 자동 배치로 초기화됩니다"):
+                    LS.update_rec(idx_, {"narration": narr_.strip()})
+                    run("build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"]), *common_args,
+                        "--plan-only", "--only", str(idx_), "--resync")
                     st.rerun()
                 ins_ = st.text_input("AI에게 다시 쓰게 하기 — 추가 지시 (예: 한국과 비교를 더 자세히 / 더 쉬운 말로 / 숫자는 줄이기)", key=f"lfins_{k_}")
                 if st.button("🤖 이 챕터만 지시대로 AI가 다시 쓰기", key=f"lfai_{k_}", disabled=not ins_.strip(),
@@ -1566,7 +1710,7 @@ with TS:
         if g2.button("📤 쇼츠 DB 올리기 (병합 후)", key="gh_push", disabled=not _gh_token(), help="GitHub와 병합한 DB를 PC와 GitHub에 모두 반영 (facts_db.json)"):
             run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--push"); st.rerun()
         if g3.button("📤 롱폼 DB 올리기", key="gh_push_lf", disabled=not (_gh_token() and os.path.exists("longform_db.json")), help="longform_db.json을 그대로 GitHub에 커밋 (롱폼은 PC에서만 만들어 병합 없이 덮어씀)"):
-            run("gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json", *(["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []))
+            run("gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json", *_lf_extra_files())
         with st.expander("차이 미리보기 (아무것도 바꾸지 않음)"):
             if st.button("PC ↔ GitHub 차이 보기", key="gh_diff"):
                 run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--detail")
@@ -1664,7 +1808,7 @@ if st.session_state.get("gh_dirty"):
             _msg = _lines[-1] if _lines else ""
             if os.path.exists("longform_db.json"):
                 _r2 = subprocess.run([sys.executable, "gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json"]
-                                     + (["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []),
+                                     + _lf_extra_files(),
                                      capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
                 _ok1 = _ok1 and _r2.returncode == 0
                 _msg += " | " + ((_r2.stdout + _r2.stderr).strip().splitlines() or [""])[-1]

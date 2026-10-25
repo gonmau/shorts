@@ -428,6 +428,12 @@ def run_rich(args, db, lf_db, members):
     OUT.mkdir(exist_ok=True)
     WORK.mkdir(exist_ok=True)
     t0 = time.time()
+    R.BRAND.update(R.load_brand())
+    if R.BRAND.get("channel"):
+        args.channel = R.BRAND["channel"]
+    if R.BRAND.get("handle"):
+        args.handle = R.BRAND["handle"]
+    print(f"채널 표시: {args.channel} {args.handle} / 이미지 {R.avatar_file(args.avatar) or '없음(이름 첫 글자 원으로 대신)'} / 오른쪽 위 표시 {'켬' if R.BRAND.get('hud', True) else '끔'}", flush=True)
     client = models = None
     if args.no_expand:
         print("확장 대본 사용 안 함 (--no-expand): 쇼츠 대본과 음성을 그대로 사용합니다", flush=True)
@@ -457,7 +463,8 @@ def run_rich(args, db, lf_db, members):
             target = (not only) or (idx in only)
             try:
                 rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands,
-                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=args.plan_only)
+                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=args.plan_only,
+                                      resync=bool(args.resync and target))
             except Exception as e:
                 print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
         if args.plan_only:
@@ -499,8 +506,17 @@ def run_rich(args, db, lf_db, members):
             print(f"  !! {idx}: 음성이 없어 롱폼에서 제외합니다", flush=True)
     members = [i for i in members if i in recs]
     if args.plan_only:
+        countries_ = [str(db[i].get("country", "")).strip() for i in members]
+        partners_ = [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members]
+        old_plan = load_json(BASE / "longform_plan.json", {})
         plan = {"members": members, "mode": args.mode, "theme": args.theme, "title": args.title, "clips": clips_on,
-                "created": time.strftime("%Y-%m-%d %H:%M")}
+                "created": time.strftime("%Y-%m-%d %H:%M"),
+                "intro_auto": LS.intro_text(countries_, len(members), partners_),
+                "outro_auto": LS.outro_text([recs[i].get("recap") or str(db[i].get("topic", "")) for i in members])}
+        if old_plan.get("members") == members:      # 사람이 고친 오프닝/엔딩 멘트는 유지
+            for k_ in ("intro_text", "outro_text"):
+                if old_plan.get(k_):
+                    plan[k_] = old_plan[k_]
         (BASE / "longform_plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1), encoding="utf-8")
         (BASE / "longform_plan.txt").write_text("\n\n".join(LS.scenario_text(db[i], recs[i], n) for n, i in enumerate(members, 1)), encoding="utf-8")
         print(f"\n대본/시나리오 준비 완료: {len(members)}개 (longform_plan.txt). UI에서 확인/수정한 뒤 '롱폼 만들기'를 누르세요.", flush=True)
@@ -509,6 +525,21 @@ def run_rich(args, db, lf_db, members):
         raise SystemExit(f"준비된 소재가 {len(members)}개뿐이라 롱폼을 만들 수 없습니다 (최소 {args.min}개).")
     total = len(members)
     countries = [str(db[i].get("country", "")).strip() for i in members]
+
+    # 사진 점검: 빠진 사진이 있으면 (색 카드로 대신 들어가기 전에) 알리고, --require-images 면 멈춘다
+    lack = []
+    for i in members:
+        ps_ = B.get_visual_paths(i, db[i])
+        miss_ = [n_ + 1 for n_, p_ in enumerate(ps_) if not Path(p_).exists()]
+        if miss_ or not ps_:
+            lack.append((i, str(db[i].get("country", "")), miss_ or ["전부"], len(ps_)))
+    if lack:
+        print("\n⚠️ 사진이 빠진 소재:", flush=True)
+        for i, c_, m_, n_ in lack:
+            print(f"   {i} {c_}: {n_}장 중 {', '.join(str(x) for x in m_)}번 없음", flush=True)
+        if args.require_images:
+            raise SystemExit("사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요. (--require-images)")
+        print("   -> 빠진 자리는 색 카드로 들어갑니다", flush=True)
 
     lf_id = (max([r.get("id", 0) for r in lf_db] or [0])) + 1
     title = make_title(db, members, args.theme, args.title)
@@ -526,7 +557,12 @@ def run_rich(args, db, lf_db, members):
                     pass
     if not imgs:
         imgs = [R.placeholder(0, countries[0])]
-    intro_rec = LS.prepare_extra("lf_intro", LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])) if (client or LS.enabled()) and not args.no_expand else None
+    plan_ = load_json(BASE / "longform_plan.json", {})
+    custom_ = plan_ if plan_.get("members") == members else {}
+    intro_txt = (custom_.get("intro_text") or "").strip() or LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])
+    if custom_.get("intro_text"):
+        print("오프닝 멘트: 직접 고친 문구 사용", flush=True)
+    intro_rec = LS.prepare_extra("lf_intro", intro_txt) if (client or LS.enabled()) and not args.no_expand else None
     parts, durs, seg_cues = [], [], {}
     intro_path = WORK / "seg_00_intro.mp4"
     n_stage = total + 2
@@ -554,7 +590,10 @@ def run_rich(args, db, lf_db, members):
 
     # 4) 요약 + 엔딩
     items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
-    out_rec = LS.prepare_extra("lf_outro", LS.outro_text([x[2] for x in items])) if (client or LS.enabled()) and not args.no_expand else None
+    outro_txt = (custom_.get("outro_text") or "").strip() or LS.outro_text([x[2] for x in items])
+    if custom_.get("outro_text"):
+        print("엔딩 멘트: 직접 고친 문구 사용", flush=True)
+    out_rec = LS.prepare_extra("lf_outro", outro_txt) if (client or LS.enabled()) and not args.no_expand else None
     rp = WORK / "seg_99_recap.mp4"
     R.stage("요약 화면", n_stage, n_stage)
     recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
@@ -594,6 +633,8 @@ def run_rich(args, db, lf_db, members):
     with open(LF_DB, "w", encoding="utf-8") as f:
         json.dump(lf_db, f, ensure_ascii=False, indent=2)
     shutil.rmtree(WORK, ignore_errors=True)
+    if R.MISSING:
+        print("\n⚠️ 사진이 색 카드로 대신 들어간 챕터: " + ", ".join(f"{i} {c_} ({r_}/{n_}장)" for i, c_, r_, n_ in R.MISSING), flush=True)
     print(f"\n완료: {out_mp4} ({total_len / 60:.1f}분, {time.time() - t0:.0f}초 걸림)")
     print(f"제목: {title}")
 
@@ -619,6 +660,8 @@ def main():
     ap.add_argument("--plan-only", action="store_true", help="대본/시나리오만 만들고 끝 (음성/영상 안 만듦). 결과: longform_scripts.json, longform_plan.json/.txt")
     ap.add_argument("--instruction", default="", help="--only(없으면 전체) 소재 대본을 이 지시를 반영해 다시 씀 (예: 한국과 비교를 더 자세히)")
     ap.add_argument("--only", default="", help="--regen/--instruction 을 적용할 소재 번호 (비우면 전체)")
+    ap.add_argument("--resync", action="store_true", help="--only 소재의 (고친) 나레이션은 두고 키워드/비교 카드/요약/영상 검색어만 그 글에 맞게 다시 만든다")
+    ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
     args = ap.parse_args()

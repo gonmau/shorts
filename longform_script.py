@@ -194,6 +194,32 @@ def _normalize(d, n_sent_min=6):
     return {"narration": narr, "keywords": kws[:5], "compare": compare, "recap": clean(d.get("recap"))[:70], "broll": broll}
 
 
+def _resync_prompt(item, narr, candidates, next_info):
+    """고쳐 쓴 나레이션은 그대로 두고, 그에 맞는 키워드/비교 카드/요약/영상 검색어만 새로 만든다"""
+    country = str(item.get("country", "")).strip()
+    sents = split_sentences(narr)
+    numbered = "\n".join(f"{i}. {x}" for i, x in enumerate(sents, 1))
+    if IS_EN:
+        return f"""Below is the FINAL voice-over of one chapter (sentences are numbered). Do NOT change it. Create the on-screen helpers that match THIS text.
+{numbered}
+
+- keywords: 3-5 short on-screen phrases (<=24 chars) taken from the text, each tied to the sentence number (1-{len(sents)}) where it is spoken.
+- compare: Korea is ALWAYS the left side; choose ONE country from: {', '.join(candidates)}; 3 rows (label <=22 chars, values <=28 chars). Use only facts that appear in the text, or soft qualitative words.
+- recap: ONE short line (<=60 chars) summarising the chapter.
+- broll: 3 short English stock-footage search queries (2-5 words) that fit the text. No brand names or specific people.
+Return pure JSON only:
+{{"keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"Korea vs <country>","left":"Korea","right":"<country>","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"...","broll":["...","...","..."]}}"""
+    return f"""아래는 한 챕터의 최종 나레이션입니다 (문장에 번호가 있음). 내용을 바꾸지 말고, 이 글에 맞는 화면 보조 요소만 새로 만드세요.
+{numbered}
+
+- keywords: 글에 나온 말 중 화면에 크게 띄울 짧은 문구(14자 이내) 3~5개와, 그 말이 나오는 문장 번호(1~{len(sents)}).
+- compare(비교 카드): 왼쪽은 '{country}'. 오른쪽은 다음 중 하나: {', '.join(candidates)}. 3줄 (항목 12자 이내, 값 각 16자 이내). 글에 나온 사실이나 '많음/적음' 같은 정성 표현만 쓰세요.
+- recap: 마지막 요약 화면용 한 줄(30자 이내).
+- broll: 이 글에 어울리는 일반적인 스톡 영상 검색어 3개 (영어, 2~5단어). 브랜드/특정 인물 금지.
+순수 JSON만 출력:
+{{"keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"{country} vs 나라","left":"{country}","right":"나라","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"...","broll":["...","...","..."]}}"""
+
+
 # ---------------------------------------------------------------- 검증
 def verify(client, models, item, ev, res):
     """모순 문장/비교 줄을 뺀다. 검증 호출이 실패하면 그대로 두고 '미검증' 기록."""
@@ -282,10 +308,11 @@ def update_rec(idx, fields, lock=True):
     return rec
 
 
-def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False):
+def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False, resync=False):
     """확장 대본 (+ 음성). 성공하면 dict(narration, keywords, compare, recap, audio, timing, ...) 아니면 None.
     - 사람이 고쳐서 잠근(locked) 대본은 force 가 아니면 그대로 쓴다. 지시문(instruction)이 있으면 그 지시를 반영해 다시 쓴다.
-    - plan_only=True 면 음성은 만들지 않는다 (대본/시나리오 미리보기용)."""
+    - plan_only=True 면 음성은 만들지 않는다 (대본/시나리오 미리보기용).
+    - resync=True 면 저장된(고친) 나레이션은 그대로 두고 키워드/비교 카드/요약/영상 검색어만 그 글에 맞게 다시 만든다."""
     import crosscheck as C
     store = load_scripts()
     key = str(idx)
@@ -298,7 +325,24 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
         if (_ko < 0.2) != IS_EN:
             print(f"    [확장대본] {idx}: 저장된 대본의 언어가 채널과 달라 다시 만듭니다", flush=True)
             rec = {k: v for k, v in rec.items() if k in KEEP_FIELDS}
-    if rec.get("narration") and rec.get("locked") and not regen:
+    if resync and rec.get("narration") and not regen:
+        if client is None:
+            print(f"    [확장대본] {idx}: AI에 연결할 수 없어 화면 요소를 다시 만들지 못했습니다", flush=True)
+        else:
+            d, used = _chat(client, models, "You create on-screen helpers for a fixed voice-over. Output JSON only.",
+                            _resync_prompt(item, rec["narration"], candidates, next_info))
+            res = _normalize({**(d or {}), "narration": rec["narration"]}, n_sent_min=1) if d else None
+            if res:
+                now_ = time.strftime("%Y-%m-%d %H:%M")
+                rec = {**rec, "keywords": res["keywords"], "compare": res["compare"], "recap": res["recap"] or rec.get("recap", ""), "broll": res["broll"],
+                       "clip_queries": res["broll"] or rec.get("clip_queries", []), "clips": [], "images": [], "compare_at": 0,
+                       "locked": True, "edited": now_, "resynced": now_}
+                store[key] = rec
+                save_scripts(store)
+                print(f"    [확장대본] {idx}: 고친 대본에 맞춰 키워드 {len(res['keywords'])}개, 비교 {'O' if res['compare'] else 'X'}, 영상 검색어 {len(res['broll'])}개를 다시 만들었습니다", flush=True)
+            else:
+                print(f"    [확장대본] {idx}: 화면 요소 재생성 실패 - 기존 값을 유지합니다", flush=True)
+    elif rec.get("narration") and rec.get("locked") and not regen:
         print(f"    [확장대본] {idx}: 편집/잠금된 대본 사용 ({rec.get('edited', '')})", flush=True)
     elif regen or rec.get("sig") != sig or not rec.get("narration"):
         if client is None:
@@ -456,11 +500,20 @@ def intro_text(countries, n, partners=None):
             f"나라마다 무엇이 어떻게 다른지 비교해 보겠습니다. 끝까지 보시면 세상이 조금 다르게 보일 거예요. 지금 시작합니다.")
 
 
+_KO_ORD = ["첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열", "열한", "열두", "열세", "열네", "열다섯", "열여섯", "열일곱", "열여덟", "열아홉", "스물",
+           "스물한", "스물두", "스물세", "스물네", "스물다섯", "스물여섯", "스물일곱", "스물여덟", "스물아홉", "서른"]
+
+
+def ko_ord(n):
+    """1 -> '첫', 2 -> '두' ... ('{n}번째'로 쓰면 음성이 '일번째, 이번째'로 읽는다)"""
+    return _KO_ORD[n - 1] if 1 <= n <= len(_KO_ORD) else f"{n}"
+
+
 def outro_text(recaps):
     if IS_EN:
         body = " ".join(f"Number {i}: {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r)
         return f"That is our list. Quick recap. {body} If you enjoyed this, please subscribe and see you in the next video."
-    body = " ".join(f"{i}번째, {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r)
+    body = " ".join(f"{ko_ord(i)} 번째, {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r)
     return f"오늘 이야기를 한 번에 정리해 볼게요. {body} 재미있게 보셨다면 구독과 좋아요 부탁드립니다. 다음 영상에서 만나요."
 
 

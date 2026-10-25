@@ -2,6 +2,7 @@
 """롱폼(16:9) 새 화면: 사진을 화면 전체에 쓰고(천천히 확대/이동), 번호/나라/채널은 작은 표시로, 자막은 아래 가운데,
 핵심 키워드 팝업, 비교 카드, 챕터 카드, 인트로(사진 몽타주), 마지막 요약 화면을 만든다.
 build_longform.py 의 --style rich (기본) 에서 쓴다. (옛 'ppt 같은' 화면은 --style classic)"""
+import json
 import os
 import re
 from pathlib import Path
@@ -54,11 +55,54 @@ def arr(im):
     return np.asarray(im, dtype=np.uint8).copy()
 
 
-def avatar(path, size):
-    if path and os.path.exists(path):
-        im = ImageOps.fit(Image.open(path).convert("RGB"), (size, size))
-    else:
-        im = Image.new("RGB", (size, size), (60, 90, 200))
+BRAND_FILE = Path(__file__).resolve().parent / "longform_brand.json"
+BRAND_DEFAULT = {"channel": "", "handle": "", "avatar": "", "hud": True, "hud_avatar": True, "hud_name": True, "hud_handle": True,
+                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": ""}
+
+
+def load_brand():
+    """longform_brand.json (UI '채널 표시' 설정). 없거나 깨져도 기본값"""
+    b = dict(BRAND_DEFAULT)
+    try:
+        b.update({k: v for k, v in json.loads(BRAND_FILE.read_text(encoding="utf-8")).items() if k in BRAND_DEFAULT})
+    except Exception:
+        pass
+    return b
+
+
+BRAND = load_brand()
+
+
+def avatar_file(path=None):
+    """쓸 채널 이미지 파일: 설정한 이미지 > 인자 > channel_avatar.png > avatar.png (코드 폴더/현재 폴더). 없으면 None"""
+    base = Path(__file__).resolve().parent
+    for c in (BRAND.get("avatar"), path, "channel_avatar.png", "avatar.png"):
+        if not c:
+            continue
+        for q in (Path(c), base / c):
+            if q.is_file():
+                return str(q)
+    return None
+
+
+def avatar(path, size, label=""):
+    f_ = avatar_file(path)
+    if f_:
+        try:
+            im = ImageOps.fit(Image.open(f_).convert("RGB"), (size, size), Image.Resampling.LANCZOS)
+        except Exception:
+            f_ = None
+    if not f_:        # 이미지가 없으면 파란 원 대신 채널 이름 첫 글자를 넣은 그라데이션 원
+        im = Image.new("RGB", (size, size))
+        px = np.zeros((size, size, 3), np.uint8)
+        for c_, (a_, b_) in enumerate(zip((120, 70, 230), (60, 110, 255))):
+            px[..., c_] = np.linspace(a_, b_, size)[:, None]
+        im = Image.fromarray(px)
+        ch = (str(label or BRAND.get("channel") or "?").strip() or "?")[0].upper()
+        d_ = ImageDraw.Draw(im)
+        ft = font(int(size * 0.55))
+        tw = d_.textlength(ch, font=ft)
+        d_.text(((size - tw) / 2, size * 0.14), ch, font=ft, fill="white")
     mask = Image.new("L", (size * 4, size * 4), 0)
     ImageDraw.Draw(mask).ellipse((0, 0, size * 4 - 1, size * 4 - 1), fill=255)
     out = im.convert("RGBA")
@@ -99,6 +143,17 @@ def silent(seconds):
     from moviepy.editor import AudioClip
     return AudioClip(lambda t: np.zeros((np.size(t), 2)) if np.ndim(t) else np.zeros(2), duration=seconds, fps=44100)
 
+
+def padded_audio(audio, dur, start):
+    """음성을 start초에 시작해 전체 길이를 dur로 맞춘 오디오 (뒤는 무음). 그냥 set_start 만 하면 시작이 밀리지 않고 길이도 어긋나
+    이어붙일 때 앞 구간 음성이 잘리거나 소리가 먼저 나올 수 있다."""
+    from moviepy.editor import CompositeAudioClip
+    comp = CompositeAudioClip([silent(dur), audio.set_start(start)]).set_duration(dur)
+    comp.fps = 44100
+    return comp
+
+
+MISSING = []          # (소재 번호, 나라, 실제 사진 수, 필요한 수) - 사진이 빠진 챕터 기록 (build_longform 이 끝에 알려줌)
 
 STAGE = {"label": "", "n": 0, "total": 0}   # build_longform 이 진행 단계를 알려준다 (진행률 표시용)
 
@@ -261,14 +316,25 @@ def make_hud(no, total, country, channel, handle, av_path, credit):
     text_c(d, 56 + 52, 62, f"{no}", nf, "white")
     d.text((184, 54), f"/ {total}", font=sf, fill=(235, 235, 245), stroke_width=2, stroke_fill=(0, 0, 0))
     d.text((184, 94), str(country)[:24], font=cf, fill="white", stroke_width=3, stroke_fill=(0, 0, 0))
-    # 오른쪽 위: 채널
-    av = avatar(av_path, 64)
-    name = f"{channel}  {handle}".strip()
-    f2 = font(30, False)
-    tw = d.textlength(name, font=f2)
-    x = W - 56 - 64 - 16 - tw
-    im.paste(av, (W - 56 - 64, 52), av)
-    d.text((x, 66), name, font=f2, fill=(255, 255, 255, 235), stroke_width=2, stroke_fill=(0, 0, 0))
+    # 오른쪽 위: 채널 (이름 / 주소 / 이미지를 각각 켜고 끄고, 문구도 바꿀 수 있음 - UI '채널 표시')
+    if BRAND.get("hud", True):
+        show_av = BRAND.get("hud_avatar", True)
+        if BRAND.get("hud_text"):
+            name = str(BRAND["hud_text"]).strip()
+        else:
+            name = "  ".join(x for x in (channel if BRAND.get("hud_name", True) else "", handle if BRAND.get("hud_handle", True) else "") if x).strip()
+        f2 = font(30, False)
+        tw = d.textlength(name, font=f2) if name else 0
+        right = W - 56
+        left = right - (64 if show_av else 0) - ((16 if show_av else 0) + tw if name else 0)
+        if BRAND.get("hud_pill", True) and (name or show_av):
+            rrect(im, (int(left) - 22, 40, right + 18, 128), 44, (8, 8, 14, 150))
+            d = ImageDraw.Draw(im)
+        if show_av:
+            av = avatar(av_path, 64, channel)
+            im.paste(av, (right - 64, 52), av)
+        if name:
+            d.text((left, 66), name, font=f2, fill=(255, 255, 255, 240), stroke_width=2, stroke_fill=(0, 0, 0))
     # 아래: 진행 막대 + 사진 출처
     d.rectangle((0, H - 8, W, H), fill=(255, 255, 255, 60))
     d.rectangle((0, H - 8, int(W * no / max(1, total)), H), fill=PURPLE)
@@ -469,7 +535,7 @@ def chapter_card(no, total, country, title1, title2, bg_img, out_path, seconds=2
 def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
     from moviepy.editor import AudioFileClip, CompositeVideoClip, ImageClip
     audio = AudioFileClip(str(audio_path)) if audio_path and Path(audio_path).exists() else None
-    dur = max(10.0, (audio.duration if audio else 0) + 1.2)
+    dur = max(10.0, (audio.duration if audio else 0) + 1.5)
     k = max(1, min(len(imgs), int(dur // 1.4)))
     cut = dur / k
     srcs = [imgs[i % len(imgs)] for i in range(k)]
@@ -478,9 +544,11 @@ def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
     shade[..., 3] = 150
     layer = Image.fromarray(shade, "RGBA")
     d = ImageDraw.Draw(layer)
-    av = avatar(av_path, 110)
-    layer.paste(av, (W // 2 - 55, 90), av)
-    text_c(d, W // 2, 218, channel, font(42), "white", 2)
+    if BRAND.get("intro_logo", True):
+        av = avatar(av_path, 110, channel)
+        layer.paste(av, (W // 2 - 55, 90), av)
+    if BRAND.get("intro_name", True) and channel:
+        text_c(d, W // 2, 218, channel, font(42), "white", 2)
     y = 380
     for j, t in enumerate(title_lines):
         f, ls = fit_lines(d, t, W - 300, 120, 62, 2)
@@ -491,7 +559,7 @@ def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
     text_c(d, W // 2, y + 56, L["stories"](n), font(52), "white")
     title_clip = ImageClip(arr(layer)).set_duration(dur - 0.6).set_start(0.6).crossfadein(0.5)
     final = CompositeVideoClip([bg, title_clip], size=(W, H)).set_duration(dur)
-    final = final.set_audio(audio.set_start(0.5) if audio else silent(dur))
+    final = final.set_audio(padded_audio(audio, dur, 0.5) if audio else silent(dur))
     write_clip(final, out_path)
     close_all(final, audio) if audio else close_all(final)
     return dur
@@ -532,10 +600,11 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
     end = new_layer()
     de = ImageDraw.Draw(end)
     rrect(end, (W // 2 - 420, 900, W // 2 + 420, 1010), 50, PURPLE + (255,))
-    text_c(de, W // 2, 918, f"{L['sub']}  ·  {channel}", font(46), "white")
+    cta = str(BRAND.get("cta") or "").strip() or f"{L['sub']}  ·  {channel}"
+    text_c(de, W // 2, 918, cta, font(46), "white")
     clips.append(ImageClip(arr(end)).set_start(max(0.5, dur - 4.5)).set_duration(4.5).crossfadein(0.4))
     final = CompositeVideoClip([bg] + clips, size=(W, H)).set_duration(dur).fadeout(0.5)
-    final = final.set_audio(audio.set_start(0.4) if audio else silent(dur))
+    final = final.set_audio(padded_audio(audio, dur, 0.4) if audio else silent(dur))
     write_clip(final, out_path)
     close_all(final, audio) if audio else close_all(final)
     return dur
@@ -603,7 +672,9 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     def sent_time(n_):
         return 0.0 if n_ <= 1 else B.time_at_fraction(cum[n_ - 1] / total_chars, timings)
 
-    clips = [c for c in (rec.get("clips") or []) if c.get("path") and Path(c["path"]).exists()]
+    if real < len(srcs):
+        MISSING.append((idx, country, real, len(srcs)))
+    clips = [c for c in (rec.get("clips") or []) if c.get("path") and Path(c["path"]).exists() and c.get("use", True) is not False]
     entries = [("img", srcs[i], i) for i in range(len(srcs))]
     starts_bg = list(starts[:len(srcs)])
     cues_img = [c for c in (rec.get("images") or []) if isinstance(c, dict)]
@@ -618,7 +689,8 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
                 continue
             if c.get("clip"):
                 k_ = int(c["clip"])
-                if 1 <= k_ <= len(rec.get("clips") or []) and (rec["clips"][k_ - 1] or {}).get("path") and Path(rec["clips"][k_ - 1]["path"]).exists():
+                if 1 <= k_ <= len(rec.get("clips") or []) and (rec["clips"][k_ - 1] or {}).get("path") and Path(rec["clips"][k_ - 1]["path"]).exists() \
+                        and (rec["clips"][k_ - 1] or {}).get("use", True) is not False:
                     seq.append((sent_time(s_), ("vid", rec["clips"][k_ - 1]["path"])))
             elif c.get("scene"):
                 k_ = int(c["scene"])
