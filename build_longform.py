@@ -125,10 +125,14 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
     used = used_indexes(lf_db)
     pool = [i for i, f in enumerate(db)
             if i >= start and f.get("status") == "video_done" and str(f.get("narration", "")).strip() and i not in used]
-    if theme:
-        t = theme.strip().lower()
-        pool = [i for i in pool if t in str(db[i].get("theme", "")).lower()
-                or t in str(db[i].get("topic", "")).lower() or t in str(db[i].get("country", "")).lower()]
+    if theme and theme.strip():
+        ts = [x.strip().lower() for x in re.split(r"[,;/|]", theme) if x.strip()]   # 쉼표로 여러 키워드: 하나라도 들어 있으면 후보
+
+        def _hit(i):
+            f_ = db[i]
+            hay = " ".join(str(f_.get(k, "")) for k in ("theme", "topic", "country", "title_line1", "title_line2")).lower()
+            return any(t in hay for t in ts)
+        pool = [i for i in pool if _hit(i)]
     chosen, total = [], 0.0
     for i in pool:
         s = est_seconds(db[i])
@@ -344,9 +348,9 @@ def make_title(db, members, theme, custom):
     n = len(members)
     first = str(db[members[0]].get("country", "")).strip()
     if IS_EN:
-        base = f"{n} {theme.title() + ' ' if theme else ''}Korean Culture Facts That Surprise Foreigners"
+        base = f"{n} {' & '.join(x.strip().title() for x in re.split(r'[,;/|]', theme) if x.strip()) + ' ' if theme else ''}Korean Culture Facts That Surprise Foreigners"
     elif theme:
-        base = f"세계의 {theme} {n}가지 | {first} 외"
+        base = f"세계의 {' · '.join(x.strip() for x in re.split(r'[,;/|]', theme) if x.strip())} {n}가지 | {first} 외"
     else:
         base = f"세계 문화 상식 {n}가지 | {first}부터 {str(db[members[-1]].get('country', '')).strip()}까지"
     return base[:95]

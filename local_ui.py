@@ -1447,7 +1447,36 @@ with TL:
     l1, l2, l3 = st.columns(3)
     lcount = l1.number_input("auto 개수", 3, 30, 6, key="lf_count")
     lstart = l2.number_input("auto 시작 번호", 0, 9999, 0 if EN else 106, key="lf_start", help="이 번호 이상인 소재만 후보")
-    ltheme = l3.text_input("auto 분야/나라/주제 키워드", key="lf_theme", help="비우면 번호순. 소재의 theme/topic/country에 이 글자가 들어 있으면 후보")
+    ltheme_free = l3.text_input("직접 입력 키워드 (쉼표로 여러 개)", key="lf_theme",
+                                help="나라·분야·주제에 이 글자가 하나라도 들어 있으면 후보. 예: 음식, 일본. 비우면 조건 없이 번호순")
+    ltheme = ltheme_free
+    if lm.startswith("auto"):
+        # 지금 롱폼 후보(영상 완료 + 아직 롱폼에 안 쓴 소재)에서 고를 수 있는 키워드를 보여줌
+        _fdb = _ld()
+        try:
+            _used = {m_ for r_ in json.load(open("longform_db.json", encoding="utf-8")) for m_ in r_.get("members", [])}
+        except Exception:
+            _used = set()
+        _pool = [i_ for i_, f_ in enumerate(_fdb) if i_ >= int(lstart) and f_.get("status") == "video_done" and str(f_.get("narration", "")).strip() and i_ not in _used]
+        from collections import Counter
+        _cc = Counter(str(_fdb[i_].get("country", "")).strip() for i_ in _pool)
+        _tc = Counter(str(_fdb[i_].get("theme", "")).strip() for i_ in _pool)
+        _wc = Counter()
+        for i_ in _pool:
+            for w_ in set(re.findall(r"[가-힣A-Za-z]{2,}", str(_fdb[i_].get("topic", "")))):
+                _wc[w_] += 1
+        _cc.pop("", None); _tc.pop("", None)
+        st.caption(f"지금 후보 소재: **{len(_pool)}개** (영상 완료 · 아직 롱폼에 안 쓴 · 시작 번호 {int(lstart)} 이상). 아래에서 고르면 그 키워드가 들어간 소재만 후보가 됩니다. 아무것도 안 고르면 번호순.")
+        k1, k2, k3 = st.columns(3)
+        _pc = k1.multiselect("나라/대상", [c_ for c_, _ in _cc.most_common()], key="lf_kw_c", format_func=lambda c_: f"{c_} ({_cc[c_]})")
+        _pt = k2.multiselect("분야", [t_ for t_, _ in _tc.most_common()], key="lf_kw_t", format_func=lambda t_: f"{t_} ({_tc[t_]})")
+        _pw = k3.multiselect("자주 나온 주제 단어", [w_ for w_, n_ in _wc.most_common(40) if n_ >= 2], key="lf_kw_w", format_func=lambda w_: f"{w_} ({_wc[w_]})")
+        _kws = [x.strip() for x in _pc + _pt + _pw + ltheme_free.split(",") if x.strip()]
+        ltheme = ",".join(dict.fromkeys(_kws))
+        if _kws:
+            _lw = [x.lower() for x in _kws]
+            _hit = [i_ for i_ in _pool if any(t_ in " ".join(str(_fdb[i_].get(k_, "")) for k_ in ("theme", "topic", "country", "title_line1", "title_line2")).lower() for t_ in _lw)]
+            st.caption(f"선택한 키워드({', '.join(_kws)})에 맞는 후보: **{len(_hit)}개** " + ("→ " + ", ".join(f"{i_} {str(_fdb[i_].get('country', ''))[:10]}" for i_ in _hit[:12]) + (" …" if len(_hit) > 12 else "") if _hit else "(없음: 키워드를 바꾸세요)"))
     lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
     ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
     sel_args = ["--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
