@@ -498,70 +498,73 @@
   "created": "2026-10-25 11:29"
  },
  "8": {
-  "narration": "베네치아에서 비둘기에게 빵을 주면 바로 벌금이 부과된다는 사실, 알고 계셨나요? 2000년대 초반부터 시청은 도심의 고풍스러운 건축물을 보호하기 위해 비둘기 먹이 주기를 전면 금지했어요. 비둘기가 빵을 먹고 남긴 배설물은 석회석 외벽에 부식성을 띠어, 복원 비용을 크게 늘립니다. 관광객들은 종종 광장이나 산마르코 광장에서 빵을 던지려 하는데, 이때마다 순찰 경찰이 즉시 제재합니다. 비둘기는 원래 바위 절벽에 사는 야생 비둘기의 후예라 건물 옥상이나 벽을 새 보금자리로 삼지만, 도시 환경에 적응하면서 수가 급증했죠. 이처럼 작은 행동 하나가 수백 년 된 도시를 지키는 데 큰 역할을 합니다. 베네치아를 방문하실 땐 비둘기에게 먹이를 주지 말고, 물 위에 비치는 고전 건축의 아름다움을 감상해 주세요. 다음에는 에티오피아의 독특한 문화 이야기를 전해드리겠습니다.",
+  "narration": "베네치아에 오면 비둘기에게 빵을 주면 안 된다는 사실, 알고 계셨나요? 2008년부터 시청은 역사 건물 보호를 위해 비둘기 먹이 주기를 전면 금지했어요. 관광객이 빵을 던지면 비둘기가 남긴 배설물이 석조 외벽에 쌓여 물러나기 어렵게 만들고, 복원 비용이 크게 늘어나기 때문이죠. 위반 시 현금 벌금은 최소 150유로에서 최고 500유로까지 부과됩니다. 현금만 받는다는 점도 기억해 주세요. 비둘기는 원래 바위 절벽에 사는 야생 비둘기의 후손이라 건물 외벽을 둥지처럼 활용합니다. 그래서 도심 곳곳에 서식하면서도 건물에 큰 피해를 주게 되었죠. 베네치아는 세계 유산 도시라 보존 비용이 막대합니다. 그래서 작은 행동 하나가 전체 도시를 지키는 데 큰 역할을 합니다. 방문하실 땐 빵 대신 물을 마시며 운하 풍경을 감상해 주세요. 비둘기에게 먹이를 주지 않는 것이 가장 친절한 관광 방법입니다. 여러분의 작은 배려가 베네치아를 오래도록 아름답게 유지합니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "베네치아에서 비둘기에게 빵을 "
+    "text": "베네치아에 오면 비둘기에게 빵"
    },
    {
-    "sentence": 3,
-    "text": "석회석 외벽에 부식성 배설물"
+    "sentence": 2,
+    "text": "2008년부터 비둘기 먹이 금"
    },
    {
-    "sentence": 5,
-    "text": "관광객이 빵을 던지는 광장"
+    "sentence": 4,
+    "text": "벌금 150~500유로"
    },
    {
-    "sentence": 7,
-    "text": "수백 년 된 도시를 지키는 작"
+    "sentence": 6,
+    "text": "비둘기는 건물 외벽을 둥지처럼"
+   },
+   {
+    "sentence": 9,
+    "text": "빵 대신 물을 마시며 운하 감"
    }
   ],
   "compare": {
-   "title": "Italy vs Switzerland",
+   "title": "Italy vs Netherlands",
    "left": "Italy",
-   "right": "Switzerland",
+   "right": "Netherlands",
    "rows": [
     {
-     "label": "보호 정책",
-     "left": "엄격한 비둘기 금지",
-     "right": "자연 보호 중심"
-    },
-    {
-     "label": "벌금 형태",
-     "left": "현금만",
-     "right": "벌점·교육"
+     "label": "법규 엄격성",
+     "left": "엄격",
+     "right": "느슨"
     },
     {
      "label": "관광객 행동",
-     "left": "제재 즉시 적용",
+     "left": "제재 강함",
      "right": "자율 권고"
+    },
+    {
+     "label": "도시 보존 비용",
+     "left": "높음",
+     "right": "보통"
     }
    ]
   },
   "recap": "베네치아는 비둘기 먹이 금지로 유산을 지키고 있습니다.",
   "broll": [
-   "Venice historic buildings",
-   "pigeons on city squares",
-   "tourists walking canals"
+   "Venice canals sunrise",
+   "pigeons on historic building",
+   "tourist walking with guide"
   ],
   "verify": {
-   "status": "fixed",
-   "removed_sentences": 2,
+   "status": "ok",
+   "removed_sentences": 0,
    "removed_rows": 0,
-   "unsupported": 3,
+   "unsupported": 4,
    "notes": [
-    "[contradicted] 4번 문장: Official fine is lower (around €100‑€200), not €150‑€500",
-    "[contradicted] 5번 문장: Fines can be paid by other means; not cash‑only",
-    "[unsupported] 11번 문장: Specific comparative policy details lack evidence",
-    "[unsupported] 12번 문장: Details about fine types and Swiss system not verified",
-    "[unsupported] 13번 문장: Comparative enforcement description not substantiated"
+    "[unsupported] 5번 문장: No clear evidence that fines are payable only in cash",
+    "[unsupported] 13번 문장: Comparative strictness of Italy vs Netherlands lacks specific evidence",
+    "[unsupported] 14번 문장: Claims about enforcement strength vs self‑regulation are not substantiated",
+    "[unsupported] 15번 문장: Cost comparison between Italy and Netherlands is not backed by data"
    ],
    "model": "openai/gpt-oss-120b"
   },
-  "sig": "be9167ee5a0e",
+  "sig": "dfcd7ff86c81",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 11:29"
+  "created": "2026-10-25 12:27"
  },
  "10": {
   "narration": "에티오피아에선 손님이 오면 반드시 커피 의식을 해야 한다는 사실, 알고 계셨나요? 먼저 생콩을 직접 불에 굽고, 그 향이 퍼지면 손으로 직접 갈아 물에 끓입니다. 이 세 번의 순서는 거부하거나 거절하면 무례로 여겨집니다. 제베라 의식은 단순히 음료를 마시는 것이 아니라, 손님과 주인 사이에 깊은 유대를 만드는 사회적 의례입니다. 현대 에티오피아 가정에서도 여전히 아침에 가족이 모여 원두를 굽고, 향긋한 연기가 집안을 가득 채우면 모두가 함께 차례로 커피를 나눕니다. 이때 사용되는 토기와 전통적인 도구들은 세대를 이어오며 전해 내려온 문화유산이죠. 두 나라의 커피 문화는 각각의 생활 방식과 가치관을 반영합니다. 이제 다음 이야기, United Arab Emirates로 넘어가 보겠습니다.",
@@ -795,5 +798,137 @@
   "sig": "f6d4942acd0f",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-25 11:31"
+ },
+ "5": {
+  "narration": "혹시 일본에서 밤 12시 이후 클럽에서 춤을 추는 것이 금지됐다는 걸 알고 계셨나요? 1948년 제정된 ‘풍속영업법’은 댄스홀을 ‘풍속영업소’로 규정했고, 자정 이후 춤을 허용하려면 특별 허가가 필요했습니다. 그 결과 많은 클럽이 새벽 영업을 포기했고, 일본의 밤문화는 ‘조용한 밤’으로 제한되었습니다. 이 규정은 약 70년간 지속되었고, 클럽 운영자들은 허가, 조명, 소음 제한 등 까다로운 조건을 맞춰야 했습니다. 2015년 개정된 법은 조건을 충족하는 클럽에 심야 춤 허용을 열어주었지만, 여전히 허가 절차와 소음 기준은 남아 있습니다. 도쿄의 밤거리에서 조용히 흐르는 사람들의 발걸음은 그 시절 규제의 흔적을 여전히 품고 있습니다. 이제는 새로운 규제와 함께 일본 클럽 문화가 조금씩 변해가고 있지만, 그 역사는 여전히 밤의 정적 속에 남아 있습니다. 다음은 네덜란드의 자유로운 밤문화와 비교해볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "밤 12시 이후 춤 금지"
+   },
+   {
+    "sentence": 2,
+    "text": "풍속영업법"
+   },
+   {
+    "sentence": 3,
+    "text": "70년간 지속"
+   },
+   {
+    "sentence": 4,
+    "text": "2015년 법 개정"
+   },
+   {
+    "sentence": 5,
+    "text": "조용한 밤거리"
+   }
+  ],
+  "compare": {
+   "title": "일본 vs 네덜란드",
+   "left": "일본",
+   "right": "네덜란드",
+   "rows": [
+    {
+     "label": "법적 규제",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "밤문화 길이",
+     "left": "짧음",
+     "right": "길음"
+    },
+    {
+     "label": "음악 소음",
+     "left": "낮음",
+     "right": "높음"
+    }
+   ]
+  },
+  "recap": "일본의 밤은 과거 규제로 조용했고, 지금은 조금씩 변해가고 있다",
+  "broll": [
+   "night club Tokyo",
+   "late night street Tokyo",
+   "silent night city"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 11번 문장: Noise level comparison lacks concrete data and is subjective"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "b27296357bef",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-25 12:27"
+ },
+ "7": {
+  "narration": "네덜란드 거리에서 자전거 전용 신호등을 본 적 있나요? 암스테르담을 비롯한 대부분의 도시에서는 교차로마다 자동차와는 별도인 자전거 신호등이 설치돼 있습니다. 빨간불이면 자전거는 멈추고, 초록불이면 바로 달려 나가죠. 차량이 정지해도 자전거는 자체 신호에 따라 움직이기 때문에 흐름이 겹치지 않습니다. 특히 일부 도로는 자전거가 먼저 지나가도록 설계돼 있어, 차가 자전거가 통과할 때까지 기다리는 모습이 일상입니다. 이런 구조 덕분에 네덜란드의 자전거 이용률은 세계 최고 수준을 유지합니다. 자전거 전용 신호등은 보행자 신호와 비슷하게 작동하지만, 색상이 별도로 표시돼 있어 운전자는 자전거 전용 신호만 보면 됩니다. 교차로마다 설치된 작은 원형 신호등은 눈에 잘 띄고, 자전거 전용 차선과 함께 배치돼 있어 안전성을 높입니다. 네덜란드와 달리 일본에서는 자전거와 자동차가 같은 신호를 공유하는 경우가 많아, 교통 흐름이 복잡해지는 경우가 있습니다. 이처럼 신호 체계가 다르면 자전거 문화에도 큰 차이가 생깁니다. 다음에는 이탈리아의 독특한 교통 문화에 대해 알아볼게요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "네덜란드 거리에서 자전거 전용"
+   },
+   {
+    "sentence": 3,
+    "text": "빨간불이면 자전거는 멈추고"
+   },
+   {
+    "sentence": 5,
+    "text": "차가 자전거가 통과할 때까지 "
+   },
+   {
+    "sentence": 7,
+    "text": "자전거 이용률은 세계 최고 수"
+   },
+   {
+    "sentence": 9,
+    "text": "자전거 전용 차선과 함께 배치"
+   }
+  ],
+  "compare": {
+   "title": "네덜란드 vs Italy",
+   "left": "네덜란드",
+   "right": "Italy",
+   "rows": [
+    {
+     "label": "신호등 구분",
+     "left": "자전거 전용",
+     "right": "공용"
+    },
+    {
+     "label": "자전거 비중",
+     "left": "높음",
+     "right": "보통"
+    },
+    {
+     "label": "교통 정책",
+     "left": "우선권 부여",
+     "right": "보행자 중심"
+    }
+   ]
+  },
+  "recap": "네덜란드의 자전거 전용 신호등은 교통 흐름을 분리해 안전과 효율을 높인다.",
+  "broll": [
+   "bicycle traffic lights",
+   "Amsterdam intersection",
+   "urban bike lane"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 6번 문장: Causal link between bike‑only signals and highest bike‑usage not directly evidenced"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "816ceb4af627",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 12:27"
  }
 }
