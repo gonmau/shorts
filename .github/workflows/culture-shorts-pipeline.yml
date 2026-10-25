@@ -223,3 +223,23 @@ jobs:
           START: ${{ github.event.inputs.start_index || '106' }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/review.txt
         run: python notify_discord.py
+
+      # ---------- 작업 이력 (run_history.jsonl / run_history.md / history_items.csv) ----------
+      - name: 작업 이력 기록
+        if: ${{ always() }}
+        continue-on-error: true
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python history.py add --kind "쇼츠" --title "${{ github.workflow }} #${{ github.run_number }}" --status "${{ job.status }}" --detail "$RUN_URL"
+          git config user.name "culture-shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          echo "run_history.jsonl merge=union" >> .git/info/attributes
+          git add run_history.jsonl run_history.md history_items.csv
+          git diff --cached --quiet || git commit -m "chore: run history [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 4
+          done
+          exit 1
