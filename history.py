@@ -9,6 +9,7 @@
   python history.py add --kind 롱폼 --title "롱폼 3개" --status success [--secs 600] [--detail "..."] [--source Actions]
   python history.py report            # run_history.md, history_items.csv 다시 만들기
   python history.py sync --repo gonmau/shorts    # GitHub와 양방향 병합 (GITHUB_TOKEN 필요)
+  python history.py backfill --repo gonmau/shorts   # GitHub Actions 실행·DB 커밋의 과거 기록을 한 번 채우기 (여러 번 해도 중복 없음)
   python history.py show [--n 30]
 """
 import argparse
@@ -211,6 +212,71 @@ def sync(repo, branch="main", token=None):
     return msg
 
 
+def _kst(iso):
+    return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(KST)
+
+
+def backfill(repo, branch="main", token=None, max_runs=1000):
+    """GitHub의 과거 기록을 이력으로 채운다: ① Actions 실행(성공/실패, 시작 시각, 소요) ② DB 파일 커밋(Actions 자동 커밋 / PC 업로드).
+    id가 실행·커밋 번호로 고정이라 여러 번 돌려도 중복되지 않는다. 기존 기록은 건드리지 않고 없는 것만 추가한다. -> (추가한 건수, 설명)"""
+    import requests
+    token = token or os.environ.get("GITHUB_TOKEN", "").strip()
+    h = {"Accept": "application/vnd.github+json", **({"Authorization": f"Bearer {token}"} if token else {})}
+    have = parse(FILE.read_text(encoding="utf-8")) if FILE.exists() else {}
+    new = []
+    n_run = 0
+    page = 1
+    while n_run < max_runs:
+        r = requests.get(f"https://api.github.com/repos/{repo}/actions/runs", params={"per_page": 100, "page": page}, headers=h, timeout=60)
+        r.raise_for_status()
+        runs = r.json().get("workflow_runs", [])
+        if not runs:
+            break
+        for w in runs:
+            n_run += 1
+            rid = f"gh-run-{w['id']}"
+            if w.get("status") != "completed" or rid in have:
+                continue
+            try:
+                t0, t1 = _kst(w.get("run_started_at") or w["created_at"]), _kst(w["updated_at"])
+            except Exception:
+                continue
+            name = w.get("name") or ""
+            kind = "롱폼" if "longform" in name.lower() else ("쇼츠" if "shorts" in name.lower() else name[:20])
+            new.append({"id": rid, "time": t0.strftime("%Y-%m-%d %H:%M:%S"), "channel": CHANNEL, "source": "Actions(과거)", "kind": kind,
+                        "title": f"{name} #{w.get('run_number')} ({w.get('event', '')})", "status": w.get("conclusion") or "unknown",
+                        "secs": max(0.0, round((t1 - t0).total_seconds(), 1)), "detail": w.get("html_url", "")})
+        page += 1
+    n_commit = 0
+    for path in ("facts_db.json", "longform_db.json"):
+        page = 1
+        while page <= 10:
+            r = requests.get(f"https://api.github.com/repos/{repo}/commits", params={"path": path, "sha": branch, "per_page": 100, "page": page}, headers=h, timeout=60)
+            if r.status_code != 200:
+                break
+            cs = r.json()
+            if not cs:
+                break
+            for c in cs:
+                cid = f"gh-commit-{c['sha'][:10]}-{path[:5]}"
+                msg = (c["commit"]["message"] or "").splitlines()[0]
+                if cid in have or "run history" in msg:
+                    continue
+                who = (c["commit"]["author"] or {}).get("name", "")
+                bot = "bot" in who.lower() or "github-actions" in who.lower()
+                new.append({"id": cid, "time": _kst(c["commit"]["author"]["date"]).strftime("%Y-%m-%d %H:%M:%S"), "channel": CHANNEL,
+                            "source": "Actions(과거)" if bot else "PC(과거)", "kind": "DB커밋", "title": f"{path}: {msg}"[:200], "status": "success",
+                            "secs": None, "detail": c.get("html_url", "")})
+                n_commit += 1
+            page += 1
+    if new:
+        with open(FILE, "a", encoding="utf-8") as f:
+            for rec in new:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    report()
+    return len(new), f"Actions 실행 {sum(1 for x in new if x['id'].startswith('gh-run'))}건, DB 커밋 {n_commit}건 추가 (이미 있던 기록 {len(have)}건은 그대로)"
+
+
 def main():
     _utf8()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -228,6 +294,10 @@ def main():
     s.add_argument("--branch", default="main")
     sh = sub.add_parser("show")
     sh.add_argument("--n", type=int, default=30)
+    b = sub.add_parser("backfill")
+    b.add_argument("--repo", required=True)
+    b.add_argument("--branch", default="main")
+    b.add_argument("--max", type=int, default=1000)
     n = sub.add_parser("notify")
     n.add_argument("text")
     x = ap.parse_args()
@@ -242,6 +312,8 @@ def main():
     elif x.cmd == "show":
         for r in read()[-x.n:]:
             print(f"{r['time']} [{r.get('source', '')}] {r['kind']:<8} {r['status']:<8} {_fmt_secs(r.get('secs')):<10} {r['title']}")
+    elif x.cmd == "backfill":
+        print("과거 이력:", backfill(x.repo, x.branch, max_runs=x.max)[1])
     elif x.cmd == "notify":
         print("전송" if notify(x.text) else "실패(웹훅 없음?)")
 
