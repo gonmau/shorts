@@ -17,11 +17,13 @@ st.set_page_config(page_title="Shorts 로컬", layout="wide")
 _NOTRANS_JS = ("<script>try{var d=window.parent.document.documentElement;d.setAttribute('lang','ko');d.setAttribute('translate','no');"
                "var m=window.parent.document.createElement('meta');m.name='google';m.content='notranslate';window.parent.document.head.appendChild(m);}catch(e){}</script>")
 try:  # 브라우저 자동 번역(크롬 번역 등)이 화면을 건드려 생기는 'removeChild' 오류 방지
-    if hasattr(st, "iframe"):          # 새 Streamlit: components.v1.html 은 곧 없어진다는 경고가 나와서 st.iframe 사용
-        st.iframe(_NOTRANS_JS, height=1)
+    _js = ("<script>try{var d=window.parent.document.documentElement;d.setAttribute('lang','ko');d.setAttribute('translate','no');"
+           "var m=window.parent.document.createElement('meta');m.name='google';m.content='notranslate';window.parent.document.head.appendChild(m);}catch(e){}</script>")
+    if hasattr(st, "iframe"):          # 최신 Streamlit (components.v1.html 은 곧 제거됨)
+        st.iframe(_js, height=1)
     else:
         import streamlit.components.v1 as _cmp
-        _cmp.html(_NOTRANS_JS, height=0)
+        _cmp.html(_js, height=0)
 except Exception:
     pass
 st.title("Shorts 로컬 실행 - " + CH)
