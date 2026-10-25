@@ -1,13 +1,13 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-25 12:26:55 (KST) · 기록 221건 · 소재 305개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-25 12:27:55 (KST) · 기록 222건 · 소재 305개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
 | DB커밋 | 129 | 0 | 0초 |
-| 롱폼 | 6 | 0 | 47분 56초 |
+| 롱폼 | 7 | 0 | 48분 44초 |
 | 쇼츠 | 80 | 6 | 12시간 17분 |
 
 ## 날짜별 작업 (최근 30일)
@@ -16,6 +16,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:27 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only | ✅ | 47초 |  |
 | 12:26 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
 | 11:31 | PC | 롱폼 | build_longform.py --mode manual --indexes 0,1,2,3,4,8,10,56,57,58 --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --cli | ✅ | 4분 18초 |  |
 | 00:35 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/e5dbe10b6e665374debaf826ba90cb52e6384f8a |
