@@ -325,7 +325,7 @@ def concat(parts, out_path):
         exe = imageio_ffmpeg.get_ffmpeg_exe()
     lst = WORK / "list.txt"
     lst.write_text("".join(f"file '{Path(p).resolve().as_posix()}'\n" for p in parts), encoding="utf-8")
-    cmd = [exe, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy",
+    cmd = [exe, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", str(out_path)]
     r = subprocess.run(cmd)
     if r.returncode != 0:

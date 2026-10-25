@@ -139,6 +139,32 @@ def text_c(d, cx, y, text, f, fill, stroke=0):
     d.text((cx - tw / 2, y), text, font=f, fill=fill, stroke_width=stroke, stroke_fill=(0, 0, 0))
 
 
+def exact_audio(path):
+    """음성 파일의 '진짜' 길이를 쓰기 위해 wav로 풀어서 쓴다. edge-tts 등 mp3는 헤더 길이가 실제보다 짧게 읽혀
+    (moviepy가 그 길이만큼만 쓰면) 문장 끝/인사말이 잘리는 일이 있다. 임시 폴더에 캐시."""
+    import hashlib
+    import shutil
+    import subprocess
+    import tempfile
+    p = Path(path)
+    try:
+        key = hashlib.md5(f"{p.resolve()}|{p.stat().st_mtime_ns}|{p.stat().st_size}".encode()).hexdigest()[:16]
+        out = Path(tempfile.gettempdir()) / "lf_wav" / f"{key}.wav"
+        if out.exists() and out.stat().st_size > 1000:
+            return str(out)
+        out.parent.mkdir(exist_ok=True)
+        exe = shutil.which("ffmpeg")
+        if not exe:
+            import imageio_ffmpeg
+            exe = imageio_ffmpeg.get_ffmpeg_exe()
+        r = subprocess.run([exe, "-y", "-loglevel", "error", "-i", str(p), "-ar", "44100", "-ac", "2", str(out)], capture_output=True)
+        if r.returncode == 0 and out.exists() and out.stat().st_size > 1000:
+            return str(out)
+    except Exception:
+        pass
+    return str(p)
+
+
 def silent(seconds):
     from moviepy.editor import AudioClip
     return AudioClip(lambda t: np.zeros((np.size(t), 2)) if np.ndim(t) else np.zeros(2), duration=seconds, fps=44100)
@@ -534,7 +560,7 @@ def chapter_card(no, total, country, title1, title2, bg_img, out_path, seconds=2
 
 def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
     from moviepy.editor import AudioFileClip, CompositeVideoClip, ImageClip
-    audio = AudioFileClip(str(audio_path)) if audio_path and Path(audio_path).exists() else None
+    audio = AudioFileClip(exact_audio(audio_path)) if audio_path and Path(audio_path).exists() else None
     dur = max(10.0, (audio.duration if audio else 0) + 1.5)
     k = max(1, min(len(imgs), int(dur // 1.4)))
     cut = dur / k
@@ -568,7 +594,7 @@ def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
 def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
     """items = [(번호, 나라, 한 줄 요약)]"""
     from moviepy.editor import AudioFileClip, CompositeVideoClip, ImageClip
-    audio = AudioFileClip(str(audio_path)) if audio_path and Path(audio_path).exists() else None
+    audio = AudioFileClip(exact_audio(audio_path)) if audio_path and Path(audio_path).exists() else None
     dur = max(10.0, (audio.duration if audio else 0) + 4.0)
     bg = ImageClip(arr(blurred(bg_img, 0.62))).set_duration(dur)
     n = len(items)
@@ -651,7 +677,7 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     from moviepy.editor import AudioFileClip, VideoClip
     country = B.safe_country(item)
     narr, ap, tp = rec["narration"], Path(rec["audio"]), (Path(rec["timing"]) if rec.get("timing") else None)
-    audio = AudioFileClip(str(ap))
+    audio = AudioFileClip(exact_audio(ap))
     dur = float(audio.duration)
     paths = B.get_visual_paths(idx, item)
     srcs, real = load_sources(paths, country)
