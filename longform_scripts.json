@@ -546,7 +546,7 @@
    "historic building close-up",
    "tourist feeding pigeons"
   ],
-  "locked": true,
+  "locked": false,
   "edited": "2026-10-25 13:18",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0008_Italy.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0008_Italy_timing.json",
@@ -869,7 +869,7 @@
    "Japanese street at midnight",
    "crowd dancing in club"
   ],
-  "locked": true,
+  "locked": false,
   "edited": "2026-10-25 13:15",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0005_일본.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0005_일본_timing.json",
@@ -955,7 +955,7 @@
    "Amsterdam bike lane crossing",
    "urban cyclists waiting green"
   ],
-  "locked": true,
+  "locked": false,
   "edited": "2026-10-25 13:17",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0007_네덜란드.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0007_네덜란드_timing.json",
@@ -989,5 +989,199 @@
     "check": "ok"
    }
   ]
+ },
+ "11": {
+  "narration": "포트와인이 2년 미만 숙성돼서는 ‘Vinho do Porto’라고 부를 수 있다는 사실, 알고 계셨나요? 포르투갈 법은 1930년대 초부터 이 규정을 엄격히 적용해 왔습니다. 포트와인은 도루 지역에서 수확한 포도로 만들고, 발효 초기에 높은 알코올의 아구아르덴테를 첨가해 발효를 멈춥니다. 이렇게 하면 당분이 남아 달콤함과 높은 알코올 도수가 동시에 유지됩니다. 여기서 최소 2년을 숙성해야만 ‘포트와인’이라는 명칭을 사용할 수 있습니다. 이 기간은 와인의 풍미가 균형을 이루게 하고, 원산지 표시를 보호합니다. 실제로 포트와인 바에서 주문하면, 바텐더가 바로 2년 이상 숙성된 와인만 제공한다는 점을 확인할 수 있습니다. 고급 ‘빈티지 포트’는 20년, 심지어 50년 이상 숙성된 뒤에도 병에 담아 판매됩니다. 오래 숙성될수록 견고한 구조와 복합적인 향이 살아나요. 이런 전통은 독일의 와인 규제와는 다르게, 포트와인만을 위한 특별한 규정이라 할 수 있습니다. 다음에는 독일 와인의 독특한 품질 관리에 대해 알아보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "포트와인이 2년 미만 숙성돼서"
+   },
+   {
+    "sentence": 3,
+    "text": "아구아르덴테를 첨가해 발효를 "
+   },
+   {
+    "sentence": 8,
+    "text": "빈티지 포트는 20년 이상 숙"
+   }
+  ],
+  "compare": {
+   "title": "Portugal vs Germany",
+   "left": "Portugal",
+   "right": "Germany",
+   "rows": [
+    {
+     "label": "숙성 최소 기간",
+     "left": "2년 이상",
+     "right": "보통 6개월"
+    },
+    {
+     "label": "법적 규제 강도",
+     "left": "엄격",
+     "right": "적당"
+    },
+    {
+     "label": "전통 저장 방식",
+     "left": "카베(동굴)",
+     "right": "오크통"
+    }
+   ]
+  },
+  "recap": "포트와인은 최소 2년 숙성, 빈티지는 수십 년 숙성",
+  "broll": [
+   "port wine cellar interior",
+   "douro valley vineyards",
+   "wine barrel aging"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 2,
+   "notes": [
+    "[contradicted] 5번 문장: Port cellars are in Vila Nova de Gaia, not on the Lisboaa River.",
+    "[unsupported] 14번 문장: Describing regulatory strictness as ‘엄격’ vs ‘적당’ is subjective.",
+    "[unsupported] 15번 문장: Germany uses various storage methods; not solely oak barrels."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "f86a9a31f99d",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 13:36"
+ },
+ "12": {
+  "narration": "밤 10시가 지나면 독일 거리엔 조용함이 흐른다는 사실, 알고 계셨나요? 독일에서는 ‘나흐트루에(Nachtruhe)’라 부르는 야간 정숙 시간이 법으로 정해져 있습니다. 일반적으로 오후 10시부터 다음날 아침 6시까지이며, 이때 큰 음악 소리나 시끄러운 파티는 이웃에게 불편을 주면 신고·과태료 대상이 됩니다. 하지만 모든 소음이 금지되는 것은 아닙니다. 창문을 닫고 조용히 대화하는 정도는 허용되고, 지역마다 허용 소음 기준이 다릅니다. 일부 주거단지에서는 ‘스위스 규정’처럼 10시 이후에도 일정 수준 이하의 소음은 허용하기도 합니다. 일요일과 공휴일에도 별도의 정숙 규정이 적용돼, 낮이라도 새벽까지 이어지는 파티는 어려울 수 있습니다. 이런 규정은 단순히 전통이 아니라, 이웃의 휴식을 공동으로 보호하려는 사회적 합의에서 비롯되었습니다. 실제로 베를린의 한 아파트에서는 새벽 1시까지 음악을 틀면 이웃이 직접 방문해 조용히 해달라고 요청하고, 이를 무시하면 관리 사무소가 벌금을 부과합니다. 이처럼 독일은 소음 관리가 일상 생활에 깊이 스며들어 있어, 다른 나라와 비교했을 때 규제가 꽤 엄격합니다. 예를 들어 캐나다 퀘벡에서는 정해진 ‘조용한 시간’이 없고, 개인의 판단에 맡기는 경우가 많아 분위기가 다소 느슨합니다. 독일의 나흐트루에, 우리 일상에 어떤 영향을 미칠까요? 다음은 캐나다(퀘벡)의 소음 규정 이야기로 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "밤 10시가 지나면 독일 거리"
+   },
+   {
+    "sentence": 2,
+    "text": "‘나흐트루에(Nachtruhe"
+   },
+   {
+    "sentence": 3,
+    "text": "오후 10시부터 아침 6시까지"
+   },
+   {
+    "sentence": 5,
+    "text": "이웃에게 불편을 주면 신고·과"
+   },
+   {
+    "sentence": 8,
+    "text": "일요일과 공휴일에도 정숙 규정"
+   }
+  ],
+  "compare": {
+   "title": "Germany vs Canada (Quebec)",
+   "left": "Germany",
+   "right": "Canada (Quebec)",
+   "rows": [
+    {
+     "label": "정숙 시간",
+     "left": "10시~6시",
+     "right": "없음"
+    },
+    {
+     "label": "법적 강제성",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "위반 시 처벌",
+     "left": "과태료",
+     "right": "경고·협의"
+    }
+   ]
+  },
+  "recap": "독일의 나흐트루에, 이웃을 배려하는 법적 정숙 시간입니다.",
+  "broll": [
+   "German residential street at night",
+   "Quiet apartment interior",
+   "Police officer writing a noise complaint"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 2,
+   "notes": [
+    "[unsupported] 6번 문장: No reliable source for a \"Swiss regulation\" in German residential complexes",
+    "[unsupported] 9번 문장: Specific anecdote about a Berlin apartment cannot be verified"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "b3e10ef5a11f",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 13:37"
+ },
+ "13": {
+  "narration": "퀘벡 거리에서 영어 표지판을 보면 과태료를 물게 된다는 사실, 알고 계셨나요? 1970년대에 제정된 Bill 101은 프랑스어를 공공 생활의 기본 언어로 지정했습니다. 영어는 부가 설명으로만 허용되며, 실제 표기에 영어를 넣으면 벌금을 부과받습니다. 관광지에서도 마찬가지입니다. 프랑스어 표지만 보이면, 방문객은 별도로 요청해야 영어 안내를 받을 수 있습니다. 레스토랑 메뉴, 버스 정류장, 공공 화장실까지 모두 프랑스어가 기본입니다. 위반 사례가 적지 않아, 기업들은 표지판 디자인 단계부터 프랑스어를 최우선으로 고려합니다. 이 정책은 퀘벡 주민들의 문화 정체성을 보호한다는 목표도 담고 있습니다. 다른 캐나다 주와는 달리, 퀘벡은 언어 규제가 일상에 깊게 스며들어 있습니다. 프랑스어 사용이 일상화된 퀘벡의 모습은, 언어 정책이 사회 전반에 미치는 영향을 보여줍니다. 오늘도 새로운 문화 이야기를 전해드렸습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "퀘벡 거리에서 영어 표지판"
+   },
+   {
+    "sentence": 2,
+    "text": "Bill 101"
+   },
+   {
+    "sentence": 3,
+    "text": "프랑스어 표지만 보이면"
+   },
+   {
+    "sentence": 6,
+    "text": "언어 정체성 보호"
+   }
+  ],
+  "compare": {
+   "title": "Canada (Quebec) vs 한국",
+   "left": "Canada (Quebec)",
+   "right": "한국",
+   "rows": [
+    {
+     "label": "언어 정책 강도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "공공 표지 언어",
+     "left": "프랑스어 우선",
+     "right": "한국어 기본"
+    },
+    {
+     "label": "위반 시 벌금",
+     "left": "있음",
+     "right": "대체로 없음"
+    }
+   ]
+  },
+  "recap": "퀘벡은 프랑스어를 일상에 강제하는 특별한 지역입니다.",
+  "broll": [
+   "Quebec street signs",
+   "bilingual signage Canada",
+   "tourists asking for translation"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 5,
+   "notes": [
+    "[contradicted] 3번 문장: Law requires French predominance, not that all signs be exclusively French",
+    "[unsupported] 4번 문장: Overstates that any English on signs automatically incurs a fine",
+    "[unsupported] 6번 문장: No legal requirement for visitors to request English; practice varies",
+    "[unsupported] 8번 문장: Claim about frequency of violations and design practices lacks verifiable evidence",
+    "[unsupported] 10번 문장: Comparative statement about other provinces is vague and not specifically evidenced",
+    "[unsupported] 13번 문장: Subjective rating of policy intensity lacks objective metric"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "60df00aa4a3a",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 13:37"
  }
 }
