@@ -24299,7 +24299,119 @@
     "verify_note": "Fish and chips",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:33.976730+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "전쟁 때도 배달되는 피시앤칩스, 믿으시겠어요?  \n피시앤칩스는 19세기 영국에서 탄생한 튀김 요리입니다. 바삭한 생선 튀김에 두툼한 감자 튀김을 얹어 먹는 이 음식은, 제1차와 제2차 세계대전 동안에도 정부 차원에서 공급이 보호되었습니다. 전시 상황에서도 군인과 시민들에게 드물게 제공된 것이죠.  \n\n놀라운 점은, 전쟁 중에 이렇게 식품 공급을 특별히 보호받은 경우가 매우 적었다는 사실입니다. 피시앤칩스는 그 중 몇 안 되는 음식 중 하나였으며, 전쟁이 끝난 뒤에도 영국 사람들의 사랑을 계속받았습니다.  \n\n하지만 이 보호 조치는 제1·제2차 세계대전 시기에만 적용됐다는 점, 기억해 주세요. 전쟁 속에서도 바삭한 감자와 고소한 생선이 전하는 작은 위안, 생각해 보면 또 다른 이야기가 떠오르지 않나요?",
+    "title_line1": "전쟁에도 배달 피시칩",
+    "title_line2": "왜 보호받았을까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전쟁에도 *피시*?"
+      },
+      {
+        "s": 3,
+        "text": "전시 *보호* 음식"
+      },
+      {
+        "s": 5,
+        "text": "*드물게* 보호된 사례"
+      },
+      {
+        "s": 7,
+        "text": "보호는 *전시*에만"
+      }
+    ],
+    "image_queries": [
+      "wartime fish and chips",
+      "19th century fish and chips",
+      "wartime protected fish and chips",
+      "soldiers receiving fish and chips",
+      "rare protected food wartime",
+      "postwar British fish and chips",
+      "wartime only food protection",
+      "crispy fish and chips comfort"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0305_네덜란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0305_네덜란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "wartime fish and chips",
+      "19th century fish and chips",
+      "wartime protected fish and chips",
+      "soldiers receiving fish and chips",
+      "rare protected food wartime",
+      "postwar British fish and chips",
+      "wartime only food protection",
+      "crispy fish and chips comfort"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Timbigger",
+        "page": "https://pixabay.com/photos/fish-and-chips-cod-and-chips-8645438/",
+        "id": 8645438
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/woman-ball-gown-fan-know-9770658/",
+        "id": 9770658
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Gvjekoslav",
+        "license": "CC0",
+        "title": "Fish and Chips Bath, UK.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_Bath,_UK.jpg",
+        "id": "c:145029331"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "kariwil",
+        "page": "https://pixabay.com/photos/fish-dinner-chips-fish-and-chips-1684828/",
+        "id": 1684828
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/flower-edelweiss-alpine-edelwei%C3%9F-2399639/",
+        "id": 2399639
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "chongodog",
+        "page": "https://pixabay.com/photos/food-fish-chips-fish-and-chips-3687804/",
+        "id": 3687804
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Ministry of Information Photo Division Photographer",
+        "license": "Public domain",
+        "title": "A Day in the Life of a Wartime Housewife- Everyday Life in London, England, 1941 D2373.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_Day_in_the_Life_of_a_Wartime_Housewife-_Everyday_Life_in_London,_England,_1941_D2373.jpg",
+        "id": "c:24367505"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "fudowakira0",
+        "page": "https://pixabay.com/photos/fish-and-chips-french-fries-tartar-656223/",
+        "id": 656223
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -24314,7 +24426,119 @@
     "verify_note": "Ancient Greek religion",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:33.976730+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "그리스인들은 ‘종교’라는 말을 전혀 쓰지 않았다니? 고대 그리스의 신앙은 다신교였지만, 현대적인 “religion” 개념은 없었습니다. 그들은 신들을 별개의 체계가 아니라, 공동의 신전과 제사라는 문화적 관습으로 보았죠. 헤로도투스조차 신들을 구분하지 않고 “공동 신전과 제사”라고 표현했습니다. 흥미로운 점은, 신들을 별도 체계가 아닌 우리 일상 속에 스며든 관습으로 여겼다는 것입니다. 이런 인식은 고대 그리스 전반에 걸친 일반적인 관행을 반영합니다. 결국 그들은 신들을 구분된 종교가 아니라, 모두가 함께 공유하는 문화적 풍경의 일부로 생각했을 뿐, 오늘 우리가 말하는 ‘종교’라는 틀은 존재하지 않았던 셈이죠. 그럼에도 불구하고, 그들의 신앙은 공동체를 묶는 강력한 힘이었음을 잊지 마세요.",
+    "title_line1": "고대 그리스는",
+    "title_line2": "종교’란 말이 없었다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "‘종교’? *없었다*"
+      },
+      {
+        "s": 3,
+        "text": "신들을 *문화*로"
+      },
+      {
+        "s": 5,
+        "text": "신앙은 *일상*에"
+      },
+      {
+        "s": 7,
+        "text": "‘종교’ 틀 *없었다*"
+      }
+    ],
+    "image_queries": [
+      "Greek temple ruins",
+      "ancient Greek pantheon statue",
+      "Greek altar ceremony",
+      "Herodotus scroll illustration",
+      "Greek household shrine",
+      "ancient Greek marketplace",
+      "Greek agora gathering",
+      "Greek community feast"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0306_그리스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0306_그리스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Greek temple ruins",
+      "ancient Greek pantheon statue",
+      "Greek altar ceremony",
+      "Herodotus scroll illustration",
+      "Greek household shrine",
+      "ancient Greek marketplace",
+      "Greek agora gathering",
+      "Greek community feast"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "nonbirinonko",
+        "page": "https://pixabay.com/photos/greece-parthenon-temple-ruins-1594689/",
+        "id": 1594689
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/monument-statue-greek-gods-figures-2011140/",
+        "id": 2011140
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "jatocreate",
+        "page": "https://pixabay.com/photos/church-catholic-cathedral-aisle-7744547/",
+        "id": 7744547
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "kalhh",
+        "page": "https://pixabay.com/photos/papyrus-pharaoh-old-hieroglyphs-289277/",
+        "id": 289277
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "fietzfotos",
+        "page": "https://pixabay.com/photos/tree-chairs-table-shrine-greek-6732358/",
+        "id": 6732358
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Anestiev",
+        "page": "https://pixabay.com/photos/acropolis-athens-greece-ancient-2725918/",
+        "id": 2725918
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Jorge Láscar from Australia",
+        "license": "CC BY 2.0",
+        "title": "Lascar Remains of West Gate - Agora (4517117427).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lascar_Remains_of_West_Gate_-_Agora_(4517117427).jpg",
+        "id": "c:31951910"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "שלמה רודד",
+        "license": "CC BY 2.5",
+        "title": "105319 tarshikha - greek orthodox church PikiWiki Israel.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:105319_tarshikha_-_greek_orthodox_church_PikiWiki_Israel.jpg",
+        "id": "c:145248194"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0306_그리스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0306_그리스.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "핀란드 헌법(Constitution of Finland)의 역사와 현황",
@@ -24329,7 +24553,114 @@
     "verify_note": "Constitution of Finland",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:37.528107+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "1919년에 만든 헌법이 2000년에야 현재 모습으로 바뀐다는 사실, 알고 계셨나요? 핀란드 헌법은 국가 법의 최고 원천으로, 정부 구조와 헌법 기관 간 관계, 그리고 시민의 기본권을 정의합니다. 원본은 1919년에 제정됐고, 오늘 우리가 보는 초안은 2000년 3월 1일에 발효되었습니다. 흥미로운 점은, 80년이 넘는 시간 동안 원래 191답에 담긴 조문들이 여전히 핵심을 이루고 있다는 것입니다. 즉, 기본 틀은 그대로 유지하면서도 시대에 맞게 보완된 형태라고 할 수 있죠. 이처럼 핀란드 헌법은 과거와 현재가 조화를 이룬 사례라 할 수 있습니다. 여러분도 그 균형을 떠올리며, 역사가 현재에 어떻게 살아 숨 쉬는지 생각해 보세요.",
+    "title_line1": "핀란드 헌법 이야기",
+    "title_line2": "80년 뒤 바뀐 모습?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*헌법*1919→2000"
+      },
+      {
+        "s": 3,
+        "text": "*발효* 2000 초안"
+      },
+      {
+        "s": 4,
+        "text": "80년*핵심*조문유지"
+      },
+      {
+        "s": 5,
+        "text": "*기본* 틀 그대로"
+      },
+      {
+        "s": 6,
+        "text": "과거·현재 *조화* 사례"
+      }
+    ],
+    "image_queries": [
+      "1919 Finland constitution document",
+      "Finnish parliament building interior",
+      "2000 Finnish constitution draft paper",
+      "historic Finnish legal book",
+      "original Finnish constitution manuscript",
+      "Finnish historic and modern law books",
+      "Finnish landscape sunrise"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0307_핀란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0307_핀란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "1919 Finland constitution document",
+      "Finnish parliament building interior",
+      "2000 Finnish constitution draft paper",
+      "historic Finnish legal book",
+      "original Finnish constitution manuscript",
+      "Finnish historic and modern law books",
+      "Finnish landscape sunrise"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/constitution-united-states-usa-62943/",
+        "id": 62943
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Thibaud",
+        "page": "https://pixabay.com/photos/building-architecture-modern-279769/",
+        "id": 279769
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/paper-ball-of-paper-crumpled-up-5309229/",
+        "id": 5309229
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "C. G. E. Mannerheim",
+        "license": "Public domain",
+        "title": "Hallitusmuoto-1919.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Hallitusmuoto-1919.jpg",
+        "id": "c:32858964"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Daderot",
+        "license": "CC0",
+        "title": "The Constitution of 1772, Sweden, by K. J. Schwendimann - National Museum of Finland - DSC",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Constitution_of_1772,_Sweden,_by_K._J._Schwendimann_-_National_Museum_of_Finland_-_DSC04101.JPG",
+        "id": "c:22969797"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "succo",
+        "page": "https://pixabay.com/photos/hammer-books-law-dish-lawyer-620011/",
+        "id": 620011
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Maria_Domnina",
+        "page": "https://pixabay.com/photos/finland-helsinki-pier-boat-ship-4897961/",
+        "id": 4897961
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0307_핀란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0307_핀란드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "교황 자동차(Popemobile)의 디자인 변천",
