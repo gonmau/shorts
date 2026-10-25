@@ -69,9 +69,73 @@ TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
 TTS_CFG.setdefault("scenes", 10)
 TTS_CFG.setdefault("cross", False)
+TTS_CFG.setdefault("imgchk", False)          # 이미지 받을 때 자동 검증(+불일치 교체)
+TTS_CFG.setdefault("imgchk_ollama", True)    # CLIP이 애매할 때 Ollama 비전 모델로 2차 확인
+TTS_CFG.setdefault("imgchk_ollama_all", False)
+TTS_CFG.setdefault("imgchk_model", "qwen2.5vl:3b")
+TTS_CFG.setdefault("imgchk_thr", 0.22)
+TTS_CFG.setdefault("imgchk_retry", 2)
+TTS_CFG.setdefault("gh_repo", "gonmau/shortsEN" if EN else "gonmau/shorts")
+TTS_CFG.setdefault("gh_auto", True)        # 시작 시 GitHub에서 먼저 가져오고(병합), 작업 후 자동으로 올림 (GITHUB_TOKEN이 있을 때만)
+TTS_CFG.setdefault("discord_notify", False)  # 오래 걸리는 작업이 끝나면 디스코드로 알림
+TTS_CFG.setdefault("discord_min_secs", 60)   # 이 시간(초) 이상 걸린 작업만 알림 (실패는 항상 알림)
+SECRET_FILE = ".local_secrets.json"          # 웹훅 URL은 GitHub에 올라갈 수 있는 tts_settings.json 대신 여기(.gitignore 대상)에 저장
+try:
+    _SEC = json.load(open(SECRET_FILE, encoding="utf-8"))
+except Exception:
+    _SEC = {}
+TTS_CFG.pop("discord_webhook", None)
+if _SEC.get("discord_webhook") and not os.environ.get("DISCORD_WEBHOOK_URL"):
+    os.environ["DISCORD_WEBHOOK_URL"] = _SEC["discord_webhook"]
+TTS_CFG.setdefault("drive_auto", False)    # 작업 후 구글 드라이브에 자동 업로드 (바뀐 파일만)
+TTS_CFG.setdefault("drive_cats", ["thumbs", "subs", "audio", "images", "videos", "longform", "db"])
 ENGINE_LABELS = {"auto": "Supertonic 우선, 실패하면 Edge 등 (기본)", "edge": "Edge 우선, 실패하면 Supertonic 등", "supertonic": "Supertonic만 (실패하면 중단)", "edge_only": "Edge만 (실패하면 중단)"}
 ENGINE_ORDER = {"auto": "supertonic,edge,google,gtts", "edge": "edge,supertonic,google,gtts", "supertonic": "supertonic", "edge_only": "edge"}
 CAP_LABELS = {"script": "대본 자막 (기본)", "highlight": "핵심 문구 표시 (예전 방식)", "srt": "SRT 파일만 (영상엔 자막 없음)", "both": "대본 자막 + SRT"}
+
+def _gh_token():
+    return os.environ.get("GITHUB_TOKEN", "").strip()
+
+def _gh_sync(push):
+    """sync_db.py 로 GitHub DB와 병합 (push=True면 병합본을 GitHub에도 커밋). -> (성공, 출력)"""
+    cmd = [sys.executable, "sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--auto"] + (["--push"] if push else [])
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300,
+                           env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        return r.returncode == 0, (r.stdout + r.stderr).strip()
+    except Exception as e:
+        return False, f"{type(e).__name__}: {e}"
+
+if TTS_CFG.get("gh_auto") and _gh_token() and "gh_boot" not in st.session_state:   # UI를 열 때마다(새 세션) 먼저 GitHub DB를 가져와 병합
+    with st.spinner("GitHub에서 DB를 가져와 병합하는 중..."):
+        _ok_b, _out_b = _gh_sync(False)
+    st.session_state["gh_boot"] = (_ok_b, _out_b)
+    if not _ok_b:
+        st.warning("GitHub DB 자동 가져오기 실패/보류: " + "\n".join(_out_b.splitlines()[-4:]))
+
+def _code_check():
+    """GitHub에 새 코드가 있는지 점검 (세션당 1번, 실패해도 조용히 넘어감). -> 안내 문구 또는 ''"""
+    try:
+        r = subprocess.run([sys.executable, "update_code.py", "--repo", TTS_CFG["gh_repo"], "--check", "--quiet"], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=20, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        return r.stdout.strip() if r.returncode == 0 else ""
+    except Exception:
+        return ""
+
+if "code_chk" not in st.session_state and os.path.exists("update_code.py"):
+    st.session_state["code_chk"] = _code_check()
+
+def _hist_sync():
+    """run_history.jsonl 을 GitHub와 양방향 병합 (+요약 md/csv 갱신). -> (성공, 한 줄)"""
+    try:
+        r = subprocess.run([sys.executable, "history.py", "sync", "--repo", TTS_CFG["gh_repo"]], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=180, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        return r.returncode == 0, ((r.stdout + r.stderr).strip().splitlines() or [""])[-1]
+    except Exception as e:
+        return False, f"{type(e).__name__}: {e}"
+
+if TTS_CFG.get("gh_auto") and _gh_token() and "hist_boot" not in st.session_state and os.path.exists("history.py"):
+    st.session_state["hist_boot"] = _hist_sync()
 
 def tts_env():
     return {f"SUPERTONIC_VOICE_{LANG.upper()}": TTS_CFG["voice"], "TTS_RATE": f"{int(TTS_CFG['rate']):+d}%",
@@ -79,6 +143,12 @@ def tts_env():
             "TTS_ORDER": ENGINE_ORDER.get(TTS_CFG["engine"], ENGINE_ORDER["auto"]),
             "SCENE_COUNT": str(int(TTS_CFG.get("scenes") or 10)),
             "CROSS_CHECK": "1" if TTS_CFG.get("cross") else "0",
+            "IMAGE_CHECK": "1" if TTS_CFG.get("imgchk") else "0",
+            "IMG_OLLAMA": "1" if TTS_CFG.get("imgchk_ollama") else "0",
+            "IMG_OLLAMA_ALL": "1" if TTS_CFG.get("imgchk_ollama_all") else "0",
+            "IMG_OLLAMA_MODEL": str(TTS_CFG.get("imgchk_model") or "qwen2.5vl:3b"),
+            "IMG_CLIP_THR": str(TTS_CFG.get("imgchk_thr") or 0.22),
+            "IMG_RETRY": str(int(TTS_CFG.get("imgchk_retry") if TTS_CFG.get("imgchk_retry") is not None else 2)),
             **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {})}
 
 def run(*args):
@@ -91,7 +161,21 @@ def run(*args):
     for line in p.stdout:
         buf.append(line.rstrip()); box.code("\n".join(buf[-25:]))
     ok = p.wait() == 0
+    if ok and args and args[0] not in ("sync_db.py", "gh_push.py", "drive_sync.py", "list_channel_videos.py", "tts_preview.py", "status_report.py", "notify_discord.py", "notify_longform.py", "update_code.py", "history.py"):
+        st.session_state["gh_dirty"] = True   # 이 실행이 끝나면 아래에서 자동 동기화
     sec = time.time() - t0
+    _skip = ("sync_db.py", "gh_push.py", "drive_sync.py", "list_channel_videos.py", "tts_preview.py", "status_report.py", "notify_discord.py", "notify_longform.py", "history.py", "update_code.py")
+    if args and args[0] not in _skip:
+        try:
+            import history as _H
+            _kind = {"build_longform.py": "롱폼"}.get(args[0], args[0].replace(".py", ""))
+            _title = " ".join(args)[:150]
+            _H.add(_kind, _title, "success" if ok else "failed", sec, "" if ok else "\n".join(buf[-3:]))
+            st.session_state["gh_dirty"] = True
+            if TTS_CFG.get("discord_notify") and os.environ.get("DISCORD_WEBHOOK_URL") and (not ok or sec >= float(TTS_CFG.get("discord_min_secs") or 60)):
+                _H.notify(f"{'✅ 완료' if ok else '❌ 실패'} [{_H.CHANNEL} PC] {_title[:100]} — {int(sec // 60)}분 {int(sec % 60)}초" + ("" if ok else "\n" + "\n".join(buf[-3:])[:600]))
+        except Exception:
+            pass
     TIMES.append((" ".join(args)[:60], round(sec, 1), "완료" if ok else "실패"))
     (st.success if ok else st.error)(f"{'완료' if ok else '실패 (코드 ' + str(p.returncode) + ')'} - {sec:.0f}초")
     return ok
@@ -136,6 +220,8 @@ def _status_counts():
     return d_, c_
 
 with st.sidebar:
+    if st.session_state.get("code_chk"):
+        st.warning("🔄 " + st.session_state["code_chk"] + " → '☁️ 동기화' 탭에서 코드 업데이트")
     st.divider()
     st.subheader("현황 (항상 표시)")
     _d, _c = _status_counts()
@@ -255,8 +341,9 @@ with st.expander("2단계 · 대본 만들기 → 확인/수정", expanded=False
     TTS_CFG["scenes"] = st.select_slider("장면(이미지) 수", options=list(range(6, 21, 2)), value=int(TTS_CFG.get("scenes") or 10), key="scene_n",
                                          help="새로 만드는 소재의 이미지 장수입니다. 길이 50초면 10장 ≈ 5초마다 전환. 많을수록 이미지 받기·검색어 생성이 늘어납니다. 이미 만든 소재는 원래 장수(6장 등)를 유지하고, 대본부터 다시 만들면 새 장수가 적용됩니다")
     TTS_CFG["cross"] = st.checkbox("🔍 대본 교차검증 (위키백과 근거 + 다른 모델이 문장별 검증)", bool(TTS_CFG.get("cross")), key="cross_chk",
-                                   help="대본/제목/이미지 검색어를 만들 때 자동으로 검증합니다. 모순이 있거나 근거 없는 문장이 절반 이상이면 소재를 폐기(rejected)합니다. Groq 호출이 소재당 1~2회 늘어납니다. 오류를 줄일 뿐 100% 보장은 아니니 review.txt의 (교차검증 메모)는 직접 확인하세요. GitHub Actions에는 적용되지 않습니다(로컬 실행 전용)")
+                                   help="대본/제목/이미지 검색어를 만들 때 자동으로 검증합니다. 모순/근거 없는 문장은 먼저 고쳐 쓰고(바로잡기·한정어 추가·삭제) 다시 검증하며, 원문은 narration_original에 보관합니다. 2번 고쳐도 모순이 남거나 문장 절반 이상이 근거 없음이면 소재를 폐기(rejected)합니다. Groq 호출이 소재당 1~6회 늘어납니다. 오류를 줄일 뿐 100% 보장은 아니니 review.txt의 (교차검증 메모)는 직접 확인하세요. GitHub Actions에는 적용되지 않습니다(로컬 실행 전용)")
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    st.caption("🖼️ 이미지 자동 검증: " + ("**켜짐** (이미지를 받을 때 검색어와 맞는지 확인하고 불일치는 교체)" if TTS_CFG.get("imgchk") else "꺼짐") + " — 설정은 '이미지' 탭에서")
     auto_ok = st.checkbox("승인 안 된 소재는 count개까지 자동 승인하고 진행", True, key="auto_ok2",
                           help="끄면 1단계에서 승인한 소재(verified)만 대본을 만듭니다")
     if st.button("대본 만들기 (제목/이미지 검색어 포함, review.txt 생성)", key="st2_go"):
@@ -391,7 +478,7 @@ def apply_quiet():
     subprocess.run([sys.executable, "apply_review.py"], capture_output=True, text=True, encoding="utf-8", errors="replace",
                    env=dict(os.environ, PYTHONIOENCODING="utf-8"))
 
-tab_s, tab_add, tab_st, tab_r, tab_i, tab_v, tab_o, tab_ep, tab_m, tab_l = st.tabs(["📝 대본 보기/수정", "➕ 소재 추가", "🗂 소재 상태/폐기", "📄 review.txt", "🖼 이미지 검수/교체", "🎬 만든 영상", "✍ 문구 넣기", "🎞 편집 포인트", "📋 제목/설명 (디스코드·유튜브)", "🎞 롱폼 묶기"])
+tab_s, tab_add, tab_st, tab_r, tab_i, tab_v, tab_o, tab_ep, tab_m, tab_l, tab_sy = st.tabs(["📝 대본 보기/수정", "➕ 소재 추가", "🗂 소재 상태/폐기", "📄 review.txt", "🖼 이미지 검수/교체", "🎬 만든 영상", "✍ 문구 넣기", "🎞 편집 포인트", "📋 제목/설명 (디스코드·유튜브)", "🎞 롱폼 묶기", "☁️ 동기화 (GitHub·드라이브)"])
 
 with tab_add:
     def run_cap(*args):
@@ -642,6 +729,37 @@ with tab_st:
                     d_u[i].pop(k, None)
             _sd(d_u); st.success("해제됨"); st.rerun()
 
+    with st.expander("🔁 교차검증 다시 돌리기 (일괄 해제)"):
+        from common import load_db as _ldx, save_db as _sdx
+        _dx = _ldx()
+        _rej_x = [i for i, f in enumerate(_dx) if f.get("status") == "rejected" and str(f.get("reject_reason", "")).startswith("교차검증")]
+        _done_x = [i for i, f in enumerate(_dx) if f.get("cross_checked")]
+        st.caption(f"교차검증으로 폐기된 소재 {len(_rej_x)}개 · 검증 결과가 있는 소재 {len(_done_x)}개. 해제하면 다음 '대본(2단계)' 실행 때 (음성·자막 설정에서 교차검증을 켠 상태여야 함) 새 기준으로 다시 검증하고, 모순 문장은 고쳐 씁니다.")
+        _sc_x = st.radio("대상", ["교차검증으로 폐기된 소재 (복구 + 다시 검증)", "검증 결과가 있는 소재 전부", "번호 직접 입력"], key="xr_scope")
+        _nums_x = st.text_input("번호 (예: 265,290-294)", key="xr_nums", disabled=not _sc_x.startswith("번호"))
+        if _sc_x.startswith("교차검증으로"):
+            _tg_x = list(_rej_x)
+        elif _sc_x.startswith("검증 결과"):
+            _tg_x = list(_done_x)
+        else:
+            _tg_x = []
+            for _p in re.split(r"[,\s]+", _nums_x.strip()):
+                _m = re.fullmatch(r"(\d+)-(\d+)", _p)
+                _tg_x += list(range(int(_m.group(1)), int(_m.group(2)) + 1)) if _m else ([int(_p)] if _p.isdigit() else [])
+            _tg_x = [i for i in dict.fromkeys(_tg_x) if 0 <= i < len(_dx)]
+        st.write(f"대상 {len(_tg_x)}개: " + (", ".join(f"{i} {_dx[i].get('country', '')}" for i in _tg_x[:30]) + (" ..." if len(_tg_x) > 30 else "")))
+        if st.button("교차검증 결과 해제", key="xr_go", disabled=not _tg_x):
+            for i in _tg_x:
+                f = _dx[i]
+                if f.get("status") == "rejected" and str(f.get("reject_reason", "")).startswith("교차검증"):
+                    f["status"] = "scripted" if f.get("narration") else "verified"
+                    f.pop("reject_reason", None)
+                for k in ("cross_checked", "cross_verdict", "cross_notes", "cross_model", "cross_sources"):
+                    f.pop(k, None)
+            _sdx(_dx)
+            st.success(f"{len(_tg_x)}개 해제했습니다. 교차검증을 켠 채로 '2 대본' 단계를 실행하세요 (start_index가 소재 번호 이하여야 합니다).")
+            st.rerun()
+
 with tab_r:
     st.caption("대본·제목·검색어를 한 파일에서 고칩니다 (위 대본 탭과 같은 내용)")
     st.caption("대본[N]·핵심[N]·이미지[N]·제목 수정 가능 / 소재를 건너뛰려면 `제외:` 뒤에 사유 / ( 로 시작하는 줄은 참고용 / === [번호] === 줄은 수정 금지")
@@ -852,6 +970,59 @@ with tab_i:
                         prog.progress(k_ / len(nums))
                     sync_desc(nums)
                     st.success(f"{len(nums)}개 소재 완료. 영상에 반영하려면 redo에 번호를 넣고 5단계를 하세요.")
+        with st.expander("🖼️ 이미지 검증 (CLIP + Ollama) 설정 · 검증 실행", expanded=bool(TTS_CFG.get("imgchk"))):
+            st.caption("사진이 장면 검색어와 맞는지 PC에서 확인합니다. CLIP(빠름)이 먼저 보고, 애매하면 Ollama 비전 모델이 2차 판정합니다. "
+                       "점수는 참고값이며 라이선스·사실 확인은 대신하지 않습니다. GitHub Actions에서는 동작하지 않습니다(로컬 전용).")
+            TTS_CFG["imgchk"] = st.checkbox("이미지를 받을 때 자동으로 검증하고 불일치 사진은 다른 사진으로 교체", bool(TTS_CFG.get("imgchk")), key="imgchk_auto",
+                                            help="5단계(이미지 받기) 및 '빠진 이미지 받기/전부 새로 받기'에 적용됩니다. 소재당 시간이 늘어납니다")
+            g1, g2, g3 = st.columns(3)
+            TTS_CFG["imgchk_ollama"] = g1.checkbox("Ollama 2차 확인", bool(TTS_CFG.get("imgchk_ollama")), key="imgchk_ol",
+                                                   help="CLIP 점수가 기준 근처이거나 미달인 장면만 비전 모델로 다시 봅니다")
+            TTS_CFG["imgchk_ollama_all"] = g2.checkbox("모든 장면을 Ollama로", bool(TTS_CFG.get("imgchk_ollama_all")), key="imgchk_olall",
+                                                       disabled=not TTS_CFG["imgchk_ollama"], help="가장 정확하지만 CPU에서는 이미지당 수십 초")
+            TTS_CFG["imgchk_retry"] = g3.number_input("불일치 시 교체 시도", 0, 5, int(TTS_CFG.get("imgchk_retry") or 0), key="imgchk_rt",
+                                                      help="0이면 판정만 하고 교체는 안 합니다")
+            h1, h2 = st.columns(2)
+            TTS_CFG["imgchk_model"] = h1.text_input("Ollama 모델", str(TTS_CFG.get("imgchk_model") or "qwen2.5vl:3b"), key="imgchk_mdl")
+            TTS_CFG["imgchk_thr"] = h2.slider("CLIP 기준값", 0.10, 0.40, float(TTS_CFG.get("imgchk_thr") or 0.22), 0.01, key="imgchk_thr_s",
+                                              help="이 값 미만이면 불일치 의심. 실제 결과를 보며 조정하세요 (일치인데 자꾸 불일치로 나오면 낮추기)")
+            json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+            v1, v2 = st.columns(2)
+            if v1.button("🔍 이 소재 이미지 검증", key=f"ic_{idx}", disabled=not qs):
+                run("image_check.py", "--index", str(idx))
+                st.rerun()
+            if v2.button("🔍 검증 + 불일치 자동 교체", key=f"icf_{idx}", disabled=not qs,
+                         help="불일치 장면만 Commons/Pixabay의 다른 사진으로 바꿉니다. 맞는 사진이 없으면 가장 나은 사진을 남깁니다"):
+                if run("image_check.py", "--index", str(idx), "--fix", "--force"):
+                    sync_desc([idx])
+                st.rerun()
+            bulk_ic = st.text_input("여러 소재 일괄 검증 (예: 109-115,120)", key="ic_bulk")
+            bfix = st.checkbox("불일치는 자동 교체까지", True, key="ic_bulk_fix")
+            if st.button("일괄 검증 시작", key="ic_bulk_go", disabled=not bulk_ic.strip()):
+                nums = []
+                for part in re.split(r"[,\s]+", bulk_ic.strip()):
+                    m_ = re.fullmatch(r"(\d+)-(\d+)", part)
+                    if m_:
+                        nums += list(range(int(m_.group(1)), int(m_.group(2)) + 1))
+                    elif part.isdigit():
+                        nums.append(int(part))
+                nums = [n_ for n_ in dict.fromkeys(nums) if 0 <= n_ < len(db_)]
+                TIMES.clear()
+                prog = st.progress(0.0)
+                for k_, n_ in enumerate(nums, start=1):
+                    st.write(f"**[{k_}/{len(nums)}] {n_} {db_[n_].get('country', '')}**")
+                    run("image_check.py", "--index", str(n_), *(["--fix"] if bfix else []))
+                    prog.progress(k_ / len(nums))
+                if bfix:
+                    sync_desc(nums)
+                st.success(f"{len(nums)}개 소재 검증 완료. 교체한 소재는 redo에 번호를 넣고 5단계로 영상에 반영하세요.")
+        checks = {e.get("scene"): e for e in (item.get("image_check") or []) if isinstance(e, dict)}
+        _ic_badge = {"ok": "✅ 일치", "doubt": "⚠️ 애매", "bad": "❌ 불일치", "unknown": "➖ 미검증"}
+        if checks:
+            _cn = {}
+            for e_ in checks.values():
+                _cn[e_.get("verdict")] = _cn.get(e_.get("verdict"), 0) + 1
+            st.caption("검증 결과: " + " · ".join(f"{_ic_badge.get(k, k)} {v}" for k, v in _cn.items()))
         if not qs:
             st.warning("이미지 검색어가 아직 없습니다. 위 버튼을 누르세요.")
         else:
@@ -861,6 +1032,20 @@ with tab_i:
                     f_ = folder / f"scene_{n:02d}.png"
                     if f_.exists():
                         st.image(str(f_), caption=f"장면 {n}", use_container_width=True)
+                        _e = checks.get(n)
+                        try:
+                            import image_check as _IC
+                            if _e and _e.get("sig") != _IC._sig(f_, qs[n - 1] if n - 1 < len(qs) else ""):
+                                st.caption("➖ 미검증 (사진 또는 검색어가 바뀜)"); _e = None
+                        except Exception:
+                            pass
+                        if _e:
+                            _t = _ic_badge.get(_e.get("verdict"), "")
+                            if _e.get("clip") is not None:
+                                _t += f" · CLIP {_e['clip']:.3f}"
+                            if _e.get("ollama"):
+                                _t += f" · Ollama {'맞음' if _e['ollama'].get('match') else '다름'}({_e['ollama'].get('conf')})"
+                            (st.error if _e.get("verdict") == "bad" else st.warning if _e.get("verdict") == "doubt" else st.caption)(_t + (f"\n\n사진 내용: {_e['seen']}" if _e.get("seen") else ""))
                     else:
                         st.warning(f"장면 {n}: 이미지 없음 (색 카드로 대체)")
                     c_ = credits.get(n)
@@ -897,6 +1082,9 @@ with tab_i:
                                 st.stop()
                             if ok_:
                                 st.rerun()
+                    if f_.exists() and st.button("🔍 이 장면 검증", key=f"icsc_{idx}_{n}"):
+                        run("image_check.py", "--index", str(idx), "--scene", str(n), "--force")
+                        st.rerun()
                     up = st.file_uploader("사진 올리기", type=["png", "jpg", "jpeg", "webp"], key=f"up_{idx}_{n}")
                     if up is not None and st.button("이 사진으로 교체", key=f"rep_{idx}_{n}"):
                         from PIL import Image
@@ -1102,13 +1290,165 @@ with tab_l:
     ltheme = l3.text_input("auto 분야/나라/주제 키워드", key="lf_theme", help="비우면 번호순. 소재의 theme/topic/country에 이 글자가 들어 있으면 후보")
     lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
     ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
-    base_args = ["build_longform.py", "--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
-                 "--count", str(int(lcount)), "--start", str(int(lstart)), "--channel", CH, "--handle", HD]
-    c1, c2 = st.columns(2)
+    sel_args = ["--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
+                "--count", str(int(lcount)), "--start", str(int(lstart))]
+    o1, o2, o3 = st.columns(3)
+    lf_style = o1.selectbox("화면 스타일", ["rich (풀스크린·챕터카드·키워드·비교카드·인트로/요약)", "classic (예전: 오른쪽 흰 패널)"], key="lf_style")
+    lf_expand = o2.checkbox("롱폼 전용 확장 대본 만들기 (Groq + 음성 새로 생성)", True, key="lf_expand", disabled=lf_style.startswith("classic"),
+                            help="끄면 쇼츠 대본/음성을 그대로 이어 붙입니다. 켜면 소재마다 약 100~130초로 자세히 풀어 쓰고, 한국어는 나라끼리 / 영어는 한국 vs 다른 나라 비교 카드를 만듭니다")
+    lf_regen = o3.checkbox("확장 대본 전부 다시 만들기", False, key="lf_regen", disabled=lf_style.startswith("classic") or not lf_expand,
+                           help="저장된 확장 대본(longform_scripts.json)이 있어도 새로 씁니다. 직접 고친 대본도 덮어쓰니 주의")
+    lf_clips = st.checkbox("🎞 스톡 영상(Pexels / Pixabay)을 일부 장면에 사용 (분위기용 B-roll, 소재당 최대 3개)", False, key="lf_clips",
+                           disabled=lf_style.startswith("classic"),
+                           help="PEXELS_API_KEY(무료) 또는 PIXABAY_API_KEY 필요. 검색어와 안 맞거나 못 받으면 사진을 씁니다. 용량과 합성 시간이 늘어납니다")
+    if lf_clips:
+        _pk = [n_ for n_ in ("PEXELS_API_KEY", "PIXABAY_API_KEY") if os.environ.get(n_, "").strip()]
+        st.caption("스톡 영상 키: " + (", ".join(_pk) if _pk else "없음 → 사진만 사용됩니다 (PEXELS_API_KEY 환경변수 설정)"))
+    common_args = ["--channel", CH, "--handle", HD, "--style", "classic" if lf_style.startswith("classic") else "rich"] \
+        + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else [])
+    base_args = ["build_longform.py"] + sel_args + common_args + (["--regen"] if lf_regen else [])
+
+    def _lf_plan():
+        try:
+            return json.load(open("longform_plan.json", encoding="utf-8"))
+        except Exception:
+            return None
+    plan = _lf_plan()
+    st.markdown("##### ① 대본·시나리오 만들기 → ② 확인/수정 → ③ 롱폼 만들기")
+    c1, c2, c3 = st.columns(3)
     if c1.button("목록만 보기", key="lf_dry", help="어떤 소재가 묶일지만 보여줌 (영상 안 만듦)"):
         run(*base_args, "--dry-run")
-    if c2.button("롱폼 만들기", key="lf_run", help="음성/이미지를 다시 만들고 가로 영상으로 합성 (오래 걸림)"):
-        TIMES.clear(); run(*base_args, "--title", ltitle)
+    if c2.button("① 대본·시나리오 만들기", key="lf_plan_go", disabled=lf_style.startswith("classic") or not lf_expand,
+                 help="음성/영상 없이 대본만 AI로 쓰고(이미 있으면 재사용) 아래에 시나리오로 보여줍니다. 몇 초 ~ 1분 정도"):
+        run(*base_args, "--plan-only")
+        st.rerun()
+    use_plan = c3.checkbox("③에서 아래 확인한 소재 구성을 사용", bool(plan), key="lf_use_plan", disabled=not plan,
+                           help="① 때 정해진 소재 목록(번호 순서)으로 만듭니다. 끄면 위의 선택 방식(auto/manual)을 다시 적용합니다")
+    render_args = list(base_args)
+    if plan and use_plan:
+        render_args = ["build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"])] + common_args
+    if st.button("③ 롱폼 만들기 (음성 + 영상 합성)", key="lf_run", type="primary",
+                 help="수정한 대본으로 음성을 새로 만들고 영상으로 합성합니다 (오래 걸림, 진행률이 10%마다 표시됨)"):
+        TIMES.clear(); run(*render_args, "--title", ltitle)
+
+    # ---------------- ② 대본·시나리오 확인/수정
+    if plan and not lf_style.startswith("classic"):
+        import pandas as pd
+        import longform_script as LS
+        from common import load_db as _ldl
+        _dbl = _ldl()
+        st.markdown("### ② 대본 · 시나리오 확인/수정")
+        st.caption(f"소재 {len(plan['members'])}개 (만든 시각 {plan.get('created', '')}). 고친 내용은 '저장'을 눌러야 반영되고, 저장한 대본은 ③에서 AI가 덮어쓰지 않습니다(잠금). 나레이션을 고치면 ③에서 음성이 새로 만들어집니다.")
+        if os.path.exists("longform_plan.txt"):
+            st.download_button("시나리오 전체 txt 받기", open("longform_plan.txt", "rb").read(), file_name="longform_plan.txt", key="lf_plan_dl")
+
+        def _nan(v):
+            try:
+                return None if v is None or (isinstance(v, float) and v != v) else v
+            except Exception:
+                return v
+
+        def _int(v, lo=1, hi=999):
+            v = _nan(v)
+            try:
+                n_ = int(float(v))
+            except (TypeError, ValueError):
+                return None
+            return n_ if lo <= n_ <= hi else None
+
+        for no_, idx_ in enumerate(plan["members"], 1):
+            if not (0 <= idx_ < len(_dbl)):
+                continue
+            it_ = _dbl[idx_]
+            rec_ = LS.get_rec(idx_)
+            if not rec_.get("narration"):
+                st.warning(f"{idx_} {it_.get('country', '')}: 저장된 대본이 없습니다. ①을 다시 눌러 주세요.")
+                continue
+            ver_ = abs(hash(str(rec_.get("created", "")) + str(rec_.get("edited", "")))) % 100000
+            k_ = f"{idx_}_{ver_}"
+            n_scn = max(1, int(it_.get("scene_count") or 6))
+            qs_ = list(it_.get("image_queries") or [])
+            with st.expander(f"{no_}. [{idx_}] {it_.get('country', '')} — {it_.get('topic', '')}   ·   {len(rec_['narration'])}자" + ("   ✏️ 수정됨(잠금)" if rec_.get("locked") else ""), expanded=(no_ == 1)):
+                narr_ = st.text_area("나레이션 (문장은 마침표/물음표로 끝내세요. 마지막 문장은 다음 챕터로 넘어가는 연결 멘트)", rec_["narration"], height=260, key=f"lfn_{k_}")
+                sents_ = LS.split_sentences(narr_)
+                chars_ = len(re.sub(r"\s+", "", narr_))
+                est_ = chars_ / (13.0 if EN else 6.0)
+                st.caption(f"문장 {len(sents_)}개 · {chars_}자 · 예상 {int(est_ // 60)}분 {int(est_ % 60)}초 (음성을 만들면 정확한 길이가 나옵니다)")
+                t1c, t2c = st.columns(2)
+                import build_video as _BV
+                _d1, _d2 = _BV.split_title(it_)
+                title1_ = t1c.text_input("챕터 제목 1줄 (화면 왼쪽 아래 박스)", rec_.get("title1") or _d1, key=f"lft1_{k_}")
+                title2_ = t2c.text_input("챕터 제목 2줄 (강조색)", rec_.get("title2") or _d2, key=f"lft2_{k_}")
+                st.markdown("**키워드 팝업** — 몇 번째 문장이 읽힐 때 어떤 큰 글자를 띄울지 (표에서 추가/삭제 가능)")
+                kdf = pd.DataFrame([{"문장번호": k["sentence"], "문구": k["text"]} for k in (rec_.get("keywords") or [])] or [{"문장번호": 1, "문구": ""}])
+                kdf = st.data_editor(kdf, num_rows="dynamic", key=f"lfk_{k_}", use_container_width=True, hide_index=True)
+                st.markdown("**비교 카드**")
+                cmp0 = rec_.get("compare") or {}
+                use_cmp = st.checkbox("비교 카드 사용", bool(cmp0.get("rows")), key=f"lfcu_{k_}")
+                cc1, cc2, cc3, cc4 = st.columns([2, 1, 1, 1])
+                cmp_title = cc1.text_input("카드 제목", cmp0.get("title", ""), key=f"lfct_{k_}", disabled=not use_cmp)
+                cmp_left = cc2.text_input("왼쪽", cmp0.get("left", "Korea" if EN else it_.get("country", "")), key=f"lfcl_{k_}", disabled=not use_cmp)
+                cmp_right = cc3.text_input("오른쪽", cmp0.get("right", ""), key=f"lfcr_{k_}", disabled=not use_cmp)
+                cmp_at = cc4.number_input("나올 문장 번호 (0=자동)", 0, max(1, len(sents_)), int(rec_.get("compare_at") or 0), key=f"lfca_{k_}", disabled=not use_cmp)
+                rdf = pd.DataFrame([{"항목": r["label"], "왼쪽": r["left"], "오른쪽": r["right"]} for r in (cmp0.get("rows") or [])] or [{"항목": "", "왼쪽": "", "오른쪽": ""}])
+                rdf = st.data_editor(rdf, num_rows="dynamic", key=f"lfcrw_{k_}", use_container_width=True, hide_index=True, disabled=not use_cmp)
+                st.markdown(f"**화면(사진/영상) 지정** — 비워 두면 자동 배치. 문장번호부터 해당 사진(1~{n_scn}) 또는 영상(1~3)을 보여줍니다")
+                cu0 = [{"문장번호": c.get("sentence"), "사진번호": c.get("scene"), "영상번호": c.get("clip")} for c in (rec_.get("images") or []) if isinstance(c, dict)]
+                cdf = st.data_editor(pd.DataFrame(cu0 or [{"문장번호": None, "사진번호": None, "영상번호": None}]), num_rows="dynamic",
+                                     key=f"lfcue_{k_}", use_container_width=True, hide_index=True)
+                if qs_:
+                    st.caption("사진 검색어: " + " / ".join(f"{i + 1}. {q}" for i, q in enumerate(qs_)) + "  (사진 교체는 '이미지 검수/교체' 탭)")
+                cq0 = list(rec_.get("clip_queries") or rec_.get("broll") or [])
+                cq_cols = st.columns(3)
+                clipq_ = [cq_cols[i].text_input(f"영상 {i + 1} 검색어 (영어)", cq0[i] if i < len(cq0) else "", key=f"lfcq{i}_{k_}") for i in range(3)]
+                recap_ = st.text_input("마지막 요약 화면 한 줄", rec_.get("recap", ""), key=f"lfrc_{k_}")
+
+                # 현재 입력값으로 만든 임시 rec (저장 전에도 시나리오 표에 바로 반영)
+                kws_ = []
+                for r in kdf.to_dict("records"):
+                    n_ = _int(r.get("문장번호"), 1, max(1, len(sents_)))
+                    t_ = str(_nan(r.get("문구")) or "").strip()
+                    if n_ and t_:
+                        kws_.append({"sentence": n_, "text": t_[:28]})
+                rows_ = []
+                for r in rdf.to_dict("records"):
+                    a_, b_, c_ = (str(_nan(r.get(x)) or "").strip() for x in ("항목", "왼쪽", "오른쪽"))
+                    if a_ and b_ and c_:
+                        rows_.append({"label": a_[:24], "left": b_[:30], "right": c_[:30]})
+                compare_ = ({"title": cmp_title.strip()[:40], "left": ("Korea" if EN else cmp_left.strip()[:24]), "right": cmp_right.strip()[:24], "rows": rows_[:4]}
+                            if use_cmp and len(rows_) >= 2 and cmp_right.strip() else None)
+                cues_ = []
+                for r in cdf.to_dict("records"):
+                    n_ = _int(r.get("문장번호"), 1, max(1, len(sents_)))
+                    sc_, cl_ = _int(r.get("사진번호"), 1, n_scn), _int(r.get("영상번호"), 1, 3)
+                    if n_ and cl_:
+                        cues_.append({"sentence": n_, "clip": cl_})
+                    elif n_ and sc_:
+                        cues_.append({"sentence": n_, "scene": sc_})
+                tmp_ = {**rec_, "narration": narr_, "keywords": kws_, "compare": compare_, "compare_at": int(cmp_at) if compare_ else 0,
+                        "recap": recap_.strip(), "images": cues_, "title1": title1_.strip(), "title2": title2_.strip()}
+                sv1, sv2, sv3 = st.columns(3)
+                if sv1.button("💾 저장 (이 대본으로 잠금)", key=f"lfsave_{k_}", type="primary"):
+                    LS.update_rec(idx_, {"narration": narr_.strip(), "keywords": kws_, "compare": compare_, "compare_at": tmp_["compare_at"],
+                                         "recap": tmp_["recap"], "images": cues_, "title1": tmp_["title1"], "title2": tmp_["title2"],
+                                         "clip_queries": [q.strip() for q in clipq_ if q.strip()]})
+                    st.success("저장했습니다. ③에서 이 대본으로 음성을 만들고 합성합니다.")
+                    st.rerun()
+                if sv2.button("🔓 잠금 해제 (자동 상태로)", key=f"lfunlock_{k_}", disabled=not rec_.get("locked"),
+                              help="소재 구성이 바뀌면 AI가 대본을 다시 쓸 수 있게 합니다 (내용은 그대로 남음)"):
+                    LS.update_rec(idx_, {"locked": False}, lock=False)
+                    st.rerun()
+                ins_ = st.text_input("AI에게 다시 쓰게 하기 — 추가 지시 (예: 한국과 비교를 더 자세히 / 더 쉬운 말로 / 숫자는 줄이기)", key=f"lfins_{k_}")
+                if st.button("🤖 이 챕터만 지시대로 AI가 다시 쓰기", key=f"lfai_{k_}", disabled=not ins_.strip(),
+                             help="이 챕터 대본·키워드·비교 카드를 새로 만듭니다 (화면 지정은 초기화). 다른 챕터는 그대로"):
+                    run("build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"]), *common_args,
+                        "--plan-only", "--only", str(idx_), "--instruction", ins_.strip())
+                    st.rerun()
+                st.markdown("**시나리오 (저장 전 입력값 기준 미리보기)**")
+                sc_rows = LS.scenario_rows(it_, tmp_)
+                st.dataframe(pd.DataFrame([{"문장": r["n"], "시간(초)": r["t"], "화면": (f"영상 {r['scene']}" if r["kind"] == "clip" else f"사진 {r['scene']}"),
+                                            "효과": " · ".join(r["events"]), "대사": r["text"]} for r in sc_rows]),
+                             use_container_width=True, hide_index=True)
     if os.path.isdir("longform_out"):
         vids = sorted(f for f in os.listdir("longform_out") if f.endswith(".mp4"))
         if vids:
@@ -1121,3 +1461,133 @@ with tab_l:
             sp = os.path.join("longform_out", last[:-4] + ".srt")
             if os.path.exists(sp):
                 st.download_button("롱폼 SRT 자막 받기", open(sp, "rb").read(), file_name=last[:-4] + ".srt", key="lf_srt")
+
+with tab_sy:
+    st.subheader("GitHub 동기화 (DB)")
+    TTS_CFG["gh_repo"] = st.text_input("저장소 (소유자/이름)", TTS_CFG.get("gh_repo", ""), key="gh_repo_in")
+    _tk = st.text_input("GITHUB_TOKEN (이 실행 동안만 사용, 저장 안 됨)", type="password", key="gh_tok_in",
+                        help="환경변수로 미리 설정했다면 비워 두세요. 해당 저장소 Contents 읽기/쓰기 권한이 있는 토큰")
+    if _tk.strip():
+        os.environ["GITHUB_TOKEN"] = _tk.strip()
+    st.caption("GITHUB_TOKEN: " + ("**설정됨**" if _gh_token() else "**없음** (자동 동기화는 꺼진 상태. 가져오기는 공개 저장소만 가능)"))
+    TTS_CFG["gh_auto"] = st.checkbox("UI를 열 때 GitHub DB를 먼저 가져오고, 작업이 끝나면 자동으로 올리기", bool(TTS_CFG.get("gh_auto")), key="gh_auto_cb",
+                                     help="병합 방식입니다: 소재 번호는 PC 기준을 유지하고, GitHub(자동 제작)에만 있는 소재는 뒤에 붙이고, 영상/업로드 기록은 앞선 쪽을 따릅니다. 새 GitHub 소재가 10개를 넘으면 자동으로는 멈추고 수동 확인을 요청합니다")
+    if st.session_state.get("gh_boot"):
+        _okb, _outb = st.session_state["gh_boot"]
+        st.caption(("✅ 시작 시 가져오기 완료: " if _okb else "⚠️ 시작 시 가져오기 보류: ") + (_outb.splitlines()[-1] if _outb else ""))
+    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    g1, g2, g3 = st.columns(3)
+    if g1.button("📥 가져오기 (병합만)", key="gh_pull", help="GitHub DB를 PC DB에 병합합니다. GitHub에는 쓰지 않음"):
+        run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply"); st.rerun()
+    if g2.button("📤 쇼츠 DB 올리기 (병합 후)", key="gh_push", disabled=not _gh_token(), help="GitHub와 병합한 DB를 PC와 GitHub에 모두 반영 (facts_db.json)"):
+        run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--push"); st.rerun()
+    if g3.button("📤 롱폼 DB 올리기", key="gh_push_lf", disabled=not (_gh_token() and os.path.exists("longform_db.json")), help="longform_db.json을 그대로 GitHub에 커밋 (롱폼은 PC에서만 만들어 병합 없이 덮어씀)"):
+        run("gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json", *(["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []))
+    with st.expander("차이 미리보기 (아무것도 바꾸지 않음)"):
+        if st.button("PC ↔ GitHub 차이 보기", key="gh_diff"):
+            run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--detail")
+
+    st.divider()
+    st.subheader("코드 업데이트 (GitHub → 이 PC)")
+    st.caption("zip을 풀어 넣을 필요 없이, 이 채널 저장소의 최신 코드(*.py, requirements.txt)만 받아 덮어씁니다. 소재 DB·설정·토큰·영상은 건드리지 않고, 바뀐 파일은 _backup 폴더에 보관합니다. 채널이 다른 저장소면 멈춥니다. 끝나면 창을 닫고 bat을 다시 실행하세요.")
+    _u1, _u2, _u3 = st.columns(3)
+    if _u3.button("⬆️ 이 PC 코드를 GitHub에 올리기", key="uc_push", disabled=not _gh_token(), help="zip으로 받은 코드를 PC에 넣은 뒤 이 버튼 한 번이면 GitHub 저장소에도 반영됩니다 (채널이 다른 저장소면 멈춤)"):
+        run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--push")
+    if _u1.button("🔍 바뀔 파일 확인", key="uc_check"):
+        run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--check")
+    if _u2.button("⬇️ 최신 코드로 업데이트", key="uc_apply", type="primary"):
+        if run("update_code.py", "--repo", TTS_CFG["gh_repo"]):
+            st.session_state["code_chk"] = ""
+            st.warning("코드를 받았습니다. 이 창과 터미널을 닫고 run_shorts.bat을 다시 실행해 주세요.")
+
+    st.divider()
+    st.subheader("작업 이력 · 디스코드 알림")
+    TTS_CFG["discord_notify"] = st.checkbox("오래 걸리는 작업이 끝나면 디스코드로 알림 (실패는 시간과 상관없이 알림)", bool(TTS_CFG.get("discord_notify")), key="dc_notify")
+    _dc1, _dc2 = st.columns([3, 1])
+    _wh = _dc1.text_input("디스코드 웹훅 URL (비우면 환경변수 DISCORD_WEBHOOK_URL 사용)", _SEC.get("discord_webhook", ""), type="password", key="dc_hook")
+    if _wh.strip() != _SEC.get("discord_webhook", ""):
+        _SEC["discord_webhook"] = _wh.strip()
+        json.dump(_SEC, open(SECRET_FILE, "w", encoding="utf-8"))
+    if _wh.strip():
+        os.environ["DISCORD_WEBHOOK_URL"] = _wh.strip()
+    TTS_CFG["discord_min_secs"] = _dc2.number_input("알림 최소 시간(초)", 0, 7200, int(TTS_CFG.get("discord_min_secs") or 60), key="dc_min")
+    st.caption("웹훅: " + ("**설정됨**" if os.environ.get("DISCORD_WEBHOOK_URL") else "**없음**") + "  (디스코드 채널 설정 → 연동 → 웹훅에서 URL 복사. 입력한 URL은 이 PC의 .local_secrets.json에만 저장되고 GitHub에는 올라가지 않습니다)")
+    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    _h1, _h2, _h3 = st.columns(3)
+    if _h1.button("🔔 테스트 알림 보내기", key="dc_test", disabled=not os.environ.get("DISCORD_WEBHOOK_URL")):
+        import history as _H
+        st.success("전송했습니다") if _H.notify(f"🔔 테스트 알림 [{_H.CHANNEL} PC] 정상 연결") else st.error("전송 실패 (URL 확인)")
+    if _h2.button("🔄 이력 GitHub와 동기화", key="hist_sync", disabled=not _gh_token(), help="PC와 GitHub Actions의 이력을 합치고 요약(run_history.md)·소재표(history_items.csv)도 올립니다"):
+        _okh, _mh = _hist_sync()
+        (st.success if _okh else st.error)(_mh)
+    if _h3.button("📝 요약 파일 다시 만들기", key="hist_report"):
+        run("history.py", "report")
+    if st.button("📚 과거 이력 가져오기 (GitHub Actions 실행 + DB 커밋, 처음 한 번)", key="hist_backfill", help="저장소의 Actions 실행 기록(성공/실패·소요시간)과 DB 커밋 기록을 이력에 채웁니다. 여러 번 눌러도 중복되지 않고 기존 기록은 그대로입니다"):
+        run("history.py", "backfill", "--repo", TTS_CFG["gh_repo"])
+    try:
+        import history as _H
+        _recs = _H.read()
+    except Exception:
+        _recs = []
+    st.caption(f"기록 {len(_recs)}건 (PC에서 실행한 작업 + 동기화로 가져온 GitHub Actions 작업)")
+    if _recs:
+        st.dataframe([{"시각": r["time"], "곳": r.get("source", ""), "종류": r["kind"], "작업": r["title"], "결과": r["status"],
+                       "소요": _H._fmt_secs(r.get("secs")), "비고": r.get("detail", "")[:80]} for r in reversed(_recs[-200:])],
+                     use_container_width=True, hide_index=True)
+        _dl1, _dl2 = st.columns(2)
+        if os.path.exists("run_history.md"):
+            _dl1.download_button("run_history.md 받기", open("run_history.md", "rb").read(), file_name="run_history.md", key="dl_hist_md")
+        if os.path.exists("history_items.csv"):
+            _dl2.download_button("history_items.csv 받기 (소재별 현황)", open("history_items.csv", "rb").read(), file_name="history_items.csv", key="dl_hist_csv")
+
+    st.divider()
+    st.subheader("구글 드라이브 (썸네일·이미지·음성·영상·자막 등)")
+    _DL = {"thumbs": "썸네일", "subs": "자막(SRT)", "audio": "음성", "images": "이미지", "videos": "영상(mp4)", "longform": "롱폼", "db": "DB·설정 백업"}
+    _tok_ok = os.path.exists("token_drive.json")
+    st.caption("인증: " + ("**완료** (token_drive.json)" if _tok_ok else "**필요** — 아래 '처음 한 번' 안내를 따라 하세요"))
+    TTS_CFG["drive_cats"] = st.multiselect("대상 종류", list(_DL), [c for c in TTS_CFG.get("drive_cats", list(_DL)) if c in _DL],
+                                           format_func=lambda k: _DL[k], key="dr_cats", help="영상(mp4)은 용량이 큽니다. 처음엔 빼고 시작해도 됩니다")
+    _dr_idx = st.text_input("소재 번호 범위 (비우면 전체, 예: 100-120,130)", key="dr_idx")
+    _dr_only = ",".join(TTS_CFG["drive_cats"]) or "thumbs"
+    _dr_idx_args = ["--index", _dr_idx.strip()] if _dr_idx.strip() else []
+    TTS_CFG["drive_auto"] = st.checkbox("작업이 끝나면 자동으로 드라이브에 올리기 (바뀐 파일만)", bool(TTS_CFG.get("drive_auto")), key="dr_auto", disabled=not _tok_ok)
+    json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    d1, d2, d3, d4 = st.columns(4)
+    if d1.button("현황", key="dr_status"):
+        run("drive_sync.py", "status", "--only", _dr_only)
+    if d2.button("올릴 것 미리보기", key="dr_dry", disabled=not _tok_ok):
+        run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args, "--dry-run")
+    if d3.button("⬆ 드라이브로 올리기", key="dr_push", disabled=not _tok_ok):
+        run("drive_sync.py", "push", "--only", _dr_only, *_dr_idx_args)
+    if d4.button("⬇ 드라이브에서 받기", key="dr_pull", disabled=not _tok_ok, help="이 PC에 없는(또는 크기가 다른) 파일만 받습니다. DB는 받지 않음 (DB는 GitHub로)"):
+        run("drive_sync.py", "pull", "--only", _dr_only, *_dr_idx_args)
+    with st.expander("처음 한 번 (인증)"):
+        st.markdown("""
+1. [Google Cloud 콘솔](https://console.cloud.google.com/) → 유튜브 업로드용으로 만든 같은 프로젝트에서 **API 및 서비스 → 라이브러리 → Google Drive API → 사용**
+2. OAuth 동의 화면의 **테스트 사용자**에 드라이브를 쓸 구글 계정이 있어야 합니다 (유튜브 때와 같은 방식)
+3. 이 폴더에서: `python drive_sync.py auth client_secret.json` → 브라우저에서 허용 → `token_drive.json` 생성
+4. 다른 PC에서 이어서 작업하려면 코드 폴더 + `client_secret.json` + `token_drive.json`을 그 PC로 복사하고 '⬇ 드라이브에서 받기'
+- **GitHub Actions 결과도 같은 드라이브 폴더에 저장**: 저장소 Settings → Secrets에 `DRIVE_CLIENT_ID`, `DRIVE_CLIENT_SECRET`, `DRIVE_REFRESH_TOKEN`을 추가 (값은 `token_drive.json` 안의 client_id / client_secret / refresh_token). 워크플로의 '구글 드라이브 저장' 단계가 영상·음성·이미지·썸네일·자막(롱폼은 롱폼)을 올립니다. Secret이 없으면 건너뜁니다.
+- 권한은 `drive.file`(이 프로그램이 만든 파일만 접근)이라 드라이브의 다른 파일은 볼 수 없습니다.
+- 영어/한국어 채널은 드라이브 루트 폴더가 따로 만들어집니다 (`culture-shorts-ko` / `korea-shorts-en`).
+""")
+
+# ---- 작업 후 자동 동기화 (화면을 다 그린 뒤 한 번)
+if st.session_state.get("gh_dirty"):
+    st.session_state["gh_dirty"] = False
+    if TTS_CFG.get("gh_auto") and _gh_token():
+        _hist_sync()
+        with st.status("☁️ GitHub로 자동 동기화 중...", expanded=False) as _stt:
+            _ok1, _o1 = _gh_sync(True)
+            _lines = _o1.splitlines()
+            _msg = _lines[-1] if _lines else ""
+            if os.path.exists("longform_db.json"):
+                _r2 = subprocess.run([sys.executable, "gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json"]
+                                     + (["--file", "longform_scripts.json"] if os.path.exists("longform_scripts.json") else []),
+                                     capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+                _ok1 = _ok1 and _r2.returncode == 0
+                _msg += " | " + ((_r2.stdout + _r2.stderr).strip().splitlines() or [""])[-1]
+            _stt.update(label=("✅ GitHub 동기화 완료: " if _ok1 else "⚠️ GitHub 동기화 보류/실패: ") + _msg, state="complete" if _ok1 else "error")
+            st.code(_o1[-1500:])
+    if TTS_CFG.get("drive_auto") and os.path.exists("token_drive.json"):
+        run("drive_sync.py", "push", "--only", ",".join(TTS_CFG.get("drive_cats") or ["thumbs"]))
