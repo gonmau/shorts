@@ -1,13 +1,13 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-25 14:02:06 (KST) · 기록 231건 · 소재 305개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-25 16:21:06 (KST) · 기록 232건 · 소재 305개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
 | DB커밋 | 129 | 0 | 0초 |
-| 롱폼 | 16 | 0 | 1시간 24분 |
+| 롱폼 | 17 | 0 | 2시간 26분 |
 | 쇼츠 | 80 | 6 | 12시간 17분 |
 
 ## 날짜별 작업 (최근 30일)
@@ -16,6 +16,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:21 | PC | 롱폼 | build_longform.py --mode manual --indexes 11,12,13,14,15,16,17,18,19,20 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 1시간 2분 |  |
 | 14:02 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only | ✅ | 4분 0초 |  |
 | 13:57 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
 | 13:57 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
