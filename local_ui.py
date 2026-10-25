@@ -1349,12 +1349,36 @@ with T5c:
         else:
             st.caption("아직 음성이 없어 문장별 시간을 보여줄 수 없습니다. (음성을 만든 뒤 보입니다. 쇼츠는 보통 30~50초)")
         cols = ["text", "start", "dur", "x", "y", "size", "color", "stroke", "bold", "effect", "bg"]
-        df0 = pd.DataFrame(OV.clean_list(it_o.get("overlays") or []), columns=cols)
+        # 색은 코드(#RRGGBB) 대신 이름으로 고른다. 목록에 없는 색은 아래 '색 직접 고르기'로 추가 (이미 쓴 코드는 자동으로 목록에 들어감)
+        _PRESET = [("흰색", "#FFFFFF"), ("노랑", "#FFE200"), ("주황", "#FF8A00"), ("빨강", "#FF3B30"), ("분홍", "#FF5FA2"), ("보라", "#8A5CFF"),
+                   ("파랑", "#2F80FF"), ("하늘", "#5CD6FF"), ("초록", "#2ECC71"), ("연두", "#B6F23A"), ("검정", "#000000"), ("회색", "#808080")]
+        _n2h = {n_: h_ for n_, h_ in _PRESET}
+        _h2n = {h_.lower(): n_ for n_, h_ in _PRESET}
+        _custom = st.session_state.setdefault("ov_custom_colors", [])
+        _ov0 = OV.clean_list(it_o.get("overlays") or [])
+        for _r in _ov0:
+            for _c in ("color", "stroke", "bg"):
+                _v = str(_r.get(_c) or "").strip()
+                if _v.startswith("#") and _v.lower() not in _h2n and _v.upper() not in _custom:
+                    _custom.append(_v.upper())
+
+        def _to_name(v):
+            v = str(v or "").strip()
+            return "" if not v else _h2n.get(v.lower(), v.upper() if v.startswith("#") else v)
+
+        def _to_hex(v):
+            v = str(v or "").strip()
+            return "" if v in ("", "없음") else _n2h.get(v, v)
+        _opts_c = [n_ for n_, _ in _PRESET] + _custom
+        _opts_o = ["없음"] + _opts_c
+        df0 = pd.DataFrame(_ov0, columns=cols)
+        for _c, _dflt in (("color", "흰색"), ("stroke", "없음"), ("bg", "없음")):
+            df0[_c] = df0[_c].map(lambda v, _d=_dflt: _to_name(v) or _d) if len(df0) else df0[_c]
         for c_ in ("text", "color", "stroke", "effect", "bg"):
             df0[c_] = df0[c_].astype(str) if len(df0) else df0[c_].astype(object)
         if df0.empty:
-            df0 = pd.DataFrame([{"text": "", "start": 0.0, "dur": 2.0, "x": 50, "y": 50, "size": 80, "color": "#FFFFFF",
-                                 "stroke": "#000000", "bold": True, "effect": "팝", "bg": ""}], columns=cols)
+            df0 = pd.DataFrame([{"text": "", "start": 0.0, "dur": 2.0, "x": 50, "y": 50, "size": 80, "color": "흰색",
+                                 "stroke": "검정", "bold": True, "effect": "팝", "bg": "없음"}], columns=cols)
         df0["bold"] = df0["bold"].astype(bool)
         ed = st.data_editor(
             df0, num_rows="dynamic", key=f"ov_ed_{sel_o}", use_container_width=True, hide_index=True,
@@ -1365,13 +1389,22 @@ with T5c:
                 "x": st.column_config.NumberColumn("x(%)", min_value=0, max_value=100, step=1, help="문구 중심의 가로 위치 (0=왼쪽 끝, 50=가운데, 100=오른쪽 끝)"),
                 "y": st.column_config.NumberColumn("y(%)", min_value=0, max_value=100, step=1, help="문구 중심의 세로 위치 (0=맨 위, 50=가운데, 100=맨 아래). 이미지 영역은 약 23~76%"),
                 "size": st.column_config.NumberColumn("크기(px)", min_value=20, max_value=220, step=2),
-                "color": st.column_config.TextColumn("글자색", help="#RRGGBB 예: #FFE200"),
-                "stroke": st.column_config.TextColumn("외곽선색", help="#RRGGBB, 비우면 외곽선 없음"),
+                "color": st.column_config.SelectboxColumn("글자색", options=_opts_c, help="목록에서 고르세요. 없는 색은 아래 '색 직접 고르기'로 추가"),
+                "stroke": st.column_config.SelectboxColumn("외곽선색", options=_opts_o, help="'없음'이면 외곽선 없음"),
                 "bold": st.column_config.CheckboxColumn("굵게"),
                 "effect": st.column_config.SelectboxColumn("효과", options=OV.EFFECTS),
-                "bg": st.column_config.TextColumn("배경박스색", help="#RRGGBB, 비우면 없음"),
+                "bg": st.column_config.SelectboxColumn("배경박스색", options=_opts_o, help="'없음'이면 배경 박스 없음"),
             })
         rows_o = [{k: (None if (isinstance(v, float) and v != v) else v) for k, v in r.items()} for r in ed.to_dict("records")]
+        for _r in rows_o:
+            for _c in ("color", "stroke", "bg"):
+                _r[_c] = _to_hex(_r.get(_c))
+        _pk1, _pk2 = st.columns([1, 3])
+        _pick = _pk1.color_picker("색 직접 고르기", "#FFFFFF", key="ov_pick")
+        if _pk2.button("이 색을 위 목록에 추가", key="ov_pick_add", help="추가한 색은 글자색/외곽선색/배경박스색 칸에서 고를 수 있습니다 (코드가 #RRGGBB로 자동 입력됨)"):
+            if _pick.upper() not in _custom and _pick.lower() not in _h2n:
+                _custom.append(_pick.upper())
+            st.rerun()
         o1, o2 = st.columns(2)
         if o1.button("저장", key=f"ov_save_{sel_o}", type="primary"):
             clean = OV.clean_list(rows_o)

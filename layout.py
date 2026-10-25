@@ -20,6 +20,7 @@
 """
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageOps
+import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대신 안전한 글자로)
 
 W, H = 1080, 1920
 IMG_BOX = (40, 450, 1040, 1450)      # (x0, y0, x1, y1) 이미지 영역 1000x1000

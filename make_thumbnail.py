@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
+import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대신 안전한 글자로)
 
 import layout
 from layout import W, H, _font, _fit_font, _circle_avatar

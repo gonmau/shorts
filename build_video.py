@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대신 안전한 글자로)
 
 # Pillow compatibility
 if not hasattr(Image, "ANTIALIAS"):

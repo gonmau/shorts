@@ -12,6 +12,7 @@ import os
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대신 안전한 글자로)
 
 W, H = 1080, 1920
 PRESET_Y = {"화면맨위": 240, "상단": 560, "중앙": 950, "하단": 1120, "화면맨아래": 1700}   # 문구 중심 y(px)

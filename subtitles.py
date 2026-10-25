@@ -10,6 +10,7 @@ import re
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대신 안전한 글자로)
 
 BOX_W = 1000            # 이미지 박스 폭
 FONT_SIZE = 58
