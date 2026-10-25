@@ -1718,5 +1718,417 @@
     "check": "ok"
    }
   ]
+ },
+ "21": {
+  "narration": "프랑스에서 사망한 연인과도 결혼할 수 있다는 사실, 알고 계셨나요? 이 제도는 ‘사후 결혼’이라 불리며, 민법 제171조에 명시돼 있습니다. 사후 결혼을 신청하려면 살아 있는 배우자가 대통령에게 특별 허가를 받아야 합니다. 허가를 받은 뒤에는 지방 법원의 승인을 받아 결혼 신고를 마칩니다. 제도가 도입된 배경은 1995년 지라크 대통령이 내린 특별령 때문이며, 당시 비극적인 사고로 연인을 잃은 여성의 요청이 계기가 되었습니다. 실제 사례로는 파리 외곽에서 한 남성이 전쟁으로 사망한 연인과 결혼식을 올린 이야기가 전해집니다. 그러나 법적으로는 사후 결혼 후 자녀를 가질 수 없다는 제한이 있습니다. 이 제도는 프랑스가 몇 안 되는 사후 결혼을 허용하는 나라 중 하나임을 보여줍니다. 다른 나라에서는 대부분 사후 결혼이 금지돼 있어 프랑스만의 독특한 문화라 할 수 있습니다. 사후 결혼 절차는 서류 준비와 가족 동의가 필수이며, 실제 진행 과정은 일반 결혼과 크게 다르지 않습니다. 이처럼 프랑스는 사랑을 법적으로 보호하려는 특별한 방식을 유지하고 있습니다. 다음 이야기는 우루과이의 독특한 제도와 연결됩니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "프랑스에서 사망한 연인과도 결"
+   },
+   {
+    "sentence": 3,
+    "text": "대통령에게 특별 허가"
+   },
+   {
+    "sentence": 5,
+    "text": "1995년 지라크 대통령"
+   },
+   {
+    "sentence": 8,
+    "text": "자녀를 가질 수 없음"
+   }
+  ],
+  "compare": {
+   "title": "France vs Uruguay",
+   "left": "France",
+   "right": "Uruguay",
+   "rows": [
+    {
+     "label": "법적 허용 여부",
+     "left": "사후 결혼 허용",
+     "right": "사후 결혼 금지"
+    },
+    {
+     "label": "절차 복잡성",
+     "left": "대통령·법원 승인 필요",
+     "right": "절차 간단 혹은 없음"
+    },
+    {
+     "label": "세제 혜택",
+     "left": "세금 감면 가능",
+     "right": "특별 혜택 없음"
+    }
+   ]
+  },
+  "recap": "프랑스는 사후 결혼을 법적으로 인정합니다.",
+  "broll": [
+   "French civil ceremony",
+   "historic town hall interior",
+   "legal documents signing"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 3,
+   "notes": [
+    "[unsupported] 6번 문장: No documented case of a man marrying a war‑dead partner in Paris suburbs",
+    "[contradicted] 7번 문장: French law does not grant tax benefits for posthumous marriages",
+    "[unsupported] 11번 문장: Procedure differs notably from ordinary marriage (e.g., presidential decree)",
+    "[unsupported] 15번 문장: Uruguay has no procedure because it is prohibited; claim of simple procedure is vague"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "34c98ff59257",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 21:48",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0021_France.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0021_France_timing.json",
+  "tts_hash": "13f4b4d3aa6d"
+ },
+ "22": {
+  "narration": "우루과이에서는 집에서 대마초를 직접 재배할 수 있다는 사실, 알고 계셨나요? 2013년, 우루과이는 세계 최초로 대마초를 국가 차원에서 규제하고 합법화했습니다. 연간 수확량은 약 480그램으로 제한돼, 과다 재배를 방지합니다. 재배 허가를 받으려면 국가 온라인 시스템에 등록하고, 식물의 종류와 수량을 신고해야 합니다. 실제로 수도 몬테비데오의 한 아파트에서는 작은 화분에 대마초를 키우며, 수확한 잎을 직접 요리하거나 의료용으로 활용하는 주민들이 있습니다. 우루과이의 정책은 단순히 사용을 허용하는 것이 아니라, 재배부터 유통까지 전 과정을 국가가 관리한다는 점에서 독특합니다. 예를 들어, 허가된 약국에서는 정해진 품질 기준을 충족한 제품만 판매하고, 회원제 클럽에서는 정기적인 검사를 받으며 대마초를 공급받습니다. 이러한 체계는 불법 시장을 축소하고, 사용자의 안전을 확보하려는 목적이 있습니다. 반면, 많은 나라에서는 재배 자체를 금지하거나, 의료 목적에만 제한하고 있습니다. 우루과이의 접근 방식은 규제와 자유 사이의 균형을 찾으려는 시도로 평가받고 있습니다. 다음 이야기는 에스토니아의 디지털 혁신을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "우루과이에서는 집에서 대마초를"
+   },
+   {
+    "sentence": 2,
+    "text": "2013년 세계 최초 대마초 "
+   },
+   {
+    "sentence": 3,
+    "text": "연간 수확량 480그램 제한"
+   },
+   {
+    "sentence": 5,
+    "text": "허가받은 약국과 회원제 클럽"
+   },
+   {
+    "sentence": 7,
+    "text": "불법 시장 축소와 안전 확보"
+   }
+  ],
+  "compare": {
+   "title": "Uruguay vs Estonia",
+   "left": "Uruguay",
+   "right": "Estonia",
+   "rows": [
+    {
+     "label": "재배 허가",
+     "left": "가능",
+     "right": "불가"
+    },
+    {
+     "label": "디지털 관리",
+     "left": "온라인 등록",
+     "right": "e-Residency"
+    },
+    {
+     "label": "규제 강도",
+     "left": "중간",
+     "right": "느슨"
+    }
+   ]
+  },
+  "recap": "우루과이는 집에서 대마초 재배를 허용하는 독특한 국가입니다.",
+  "broll": [
+   "Montevideo apartment balcony garden",
+   "government cannabis registration portal",
+   "licensed pharmacy cannabis display"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 4,
+   "notes": [
+    "[contradicted] 3번 문장: Law allows up to 6 plants with no 6‑week limit; the time restriction is incorrect",
+    "[unsupported] 6번 문장: Anecdotal claim about a specific Montevideo apartment lacks verifiable evidence",
+    "[unsupported] 7번 문장: Statement about uniqueness is a qualitative assessment without concrete evidence",
+    "[unsupported] 8번 문장: Details on pharmacies and clubs are not fully accurate for Uruguay’s system",
+    "[unsupported] 15번 문장: Regulation strength comparison is subjective and not objectively measured"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "e56d87bf0dfe",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 21:49",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay_timing.json",
+  "tts_hash": "1d97d3cd7664"
+ },
+ "23": {
+  "narration": "스마트폰 하나로 투표한다면 믿으시겠어요? 에스토니아는 2005년부터 전자 주민등록증과 모바일 ID를 활용해 전국 선거를 온라인으로 진행합니다. 시민은 스마트폰에 설치된 앱으로 신분을 인증하고, 암호화된 디지털 서명을 찍어 표를 던집니다. 인증 절차는 카드에 내장된 칩과 국가 인증 서버가 실시간으로 검증해 보안성을 확보합니다. 2023년 대통령 선거에서는 전체 투표의 절반에 가까운 44%가 전자 방식으로 집계돼, 전통적인 투표소 방문이 크게 줄었습니다. 해외에 거주하는 에스토니아인도 동일한 절차로 투표에 참여할 수 있어, 물리적 거리와 관계없이 국가 결정에 목소리를 낼 수 있습니다. 이 시스템은 전자 신분증(eID)의 확장형으로, 디지털 서명과 온라인 인증을 일상 생활에 자연스럽게 녹여냈습니다. 은행 계좌 개설, 세금 신고, 공공 서비스 신청 등에서도 같은 카드가 사용돼, 시민은 하나의 신분증으로 다양한 서비스를 이용합니다. 다른 나라와 비교하면, 에스토니아는 전자 투표 인프라가 가장 오래되고 포괄적인 편이며, 투표 과정의 투명성과 접근성을 동시에 높인 사례로 평가받습니다. 디지털 시대에 민주주의가 어떻게 변하고 있는지 직접 체험해 보는 셈이죠. 다음에는 볼리비아의 독특한 선거 문화가 어떤 모습인지 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "스마트폰 하나로 투표"
+   },
+   {
+    "sentence": 3,
+    "text": "디지털 서명"
+   },
+   {
+    "sentence": 5,
+    "text": "44% 전자 투표"
+   },
+   {
+    "sentence": 7,
+    "text": "해외 시민도 참여"
+   },
+   {
+    "sentence": 9,
+    "text": "eID 활용"
+   }
+  ],
+  "compare": {
+   "title": "Estonia vs Philippines",
+   "left": "Estonia",
+   "right": "Philippines",
+   "rows": [
+    {
+     "label": "투표 방식",
+     "left": "온라인·오프라인",
+     "right": "주로 오프라인"
+    },
+    {
+     "label": "eID 보급",
+     "left": "전국 필수",
+     "right": "제한적 사용"
+    },
+    {
+     "label": "해외 투표",
+     "left": "가능",
+     "right": "제한적"
+    }
+   ]
+  },
+  "recap": "에스토니아, 디지털 신분증으로 온라인 투표 실현",
+  "broll": [
+   "digital voting process",
+   "smartphone authentication",
+   "citizens using eID abroad"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 9번 문장: Comparative superlative (\"oldest and most comprehensive\") lacks specific evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "f23af3bc3a36",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 21:50",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia_timing.json",
+  "tts_hash": "3db263ea0f4a"
+ },
+ "24": {
+  "narration": "볼리비아 사람들은 아침마다 코카잎을 한 줌씩 씹거나 차로 마신다. 이 습관은 고산병 예방과 피로 회복에 도움을 주는 전통적 사용에서 비롯됐다. 코카잎은 인카 시대부터 노동자와 신자에게 신성한 식물로 여겨졌으며, 스페인 정복자도 노동력 유지에 이용했다. 오늘날 볼리비아 정부는 코카잎 판매와 유통을 국가 차원에서 관리해 농가와 지역사회에 경제적 이익을 제공한다. 하지만 코카잎을 해외로 수출하거나 국제 공항에 반입하면 마약으로 분류돼 엄격히 처벌된다. 국내에서는 합법이지만 국경을 넘으면 완전히 다른 법이 적용된다. 현지 사람들은 코카잎을 ‘자연의 에너지’라고 부르며, 마치 커피처럼 일상 속에서 사용한다. 코카잎을 씹는 모습은 마치 고대의 의식과 현대의 일상이 뒤섞인 듯하다. 코카잎을 차로 우려 마시는 사람들은 고산지대에서의 체력 회복을 위해 끊임없이 물을 보충한다. 이처럼 볼리비아는 코카잎을 문화와 경제, 건강의 세 축으로 삼고 있다. 다음에는 필리핀에서의 ‘바레트’와 같은 전통적 식물 사용을 살펴보겠다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "코카잎 씹기"
+   },
+   {
+    "sentence": 3,
+    "text": "인카 시대"
+   },
+   {
+    "sentence": 5,
+    "text": "국가 관리"
+   },
+   {
+    "sentence": 8,
+    "text": "자연 에너지"
+   }
+  ],
+  "compare": {
+   "title": "Bolivia vs Philippines",
+   "left": "Bolivia",
+   "right": "Philippines",
+   "rows": [
+    {
+     "label": "법적 지위",
+     "left": "국내 합법",
+     "right": "국내 제한"
+    },
+    {
+     "label": "주요 사용",
+     "left": "피로 회복",
+     "right": "전통 의식"
+    },
+    {
+     "label": "수출 규제",
+     "left": "엄격",
+     "right": "엄격"
+    }
+   ]
+  },
+  "recap": "코카잎은 볼리비아에서 일상과 문화, 경제를 연결하는 핵심 식물이다",
+  "broll": [
+   "Andean highland market",
+   "Coca leaf chewing ceremony",
+   "Mountain tea preparation"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 7,
+   "notes": [
+    "[unsupported] 1번 문장: General claim that all Bolivians chew a handful each morning lacks specific evidence",
+    "[contradicted] 7번 문장: Regulation is due to cocaine alkaloid content, not because coca acts like alcohol",
+    "[unsupported] 8번 문장: No verifiable source that locals commonly call coca 'nature's energy'",
+    "[unsupported] 10번 문장: Broad claim about constant water replenishment while drinking coca tea lacks specific evidence",
+    "[unsupported] 11번 문장: Overgeneralized claim that coca forms three societal pillars in Bolivia",
+    "[unsupported] 13번 문장: Philippines' legal status for similar plants is not clearly documented as 'limited'",
+    "[unsupported] 14번 문장: Specific primary uses for each country are not substantiated",
+    "[unsupported] 15번 문장: Export regulation details for Philippines are not verified"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "a3edebe4dd6a",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-25 21:51",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia_timing.json",
+  "tts_hash": "30ab5db63420"
+ },
+ "25": {
+  "narration": "필리핀에 사는 사람들은 이웃이 직접 집을 옮겨 주는 ‘바야니한’ 전통을 알고 계신가요? 공동체가 함께 일하면 큰 무게도 쉽게 움직일 수 있다는 실용적인 이유와, 서로 돕는 정신을 강조하고자 했던 문화적 배경이 깔려 있습니다. 실제로 농촌 마을에서는 집을 옮길 때 주민들이 나무 기둥을 끼워 고정하고, 남성·여성·노년층까지 모두 줄을 서서 힘을 주었습니다. 이 과정은 마을 축제처럼 활기차며, 옛날 사진에서는 수십 명이 동시에 끌어올리는 모습이 선명히 보입니다. 도시화가 진행되면서 전통 방식은 사라졌지만, 최근에는 전동 지게차와 같은 현대 장비를 이용해 바야니한 정신을 이어가고 있습니다. 트럭 대신 전동 지게차가 통나무 위에 집을 올려 이동시키는 장면은 과거와 현재가 조화된 모습을 보여줍니다. 여전히 이웃의 손길이 핵심이라는 점은 변함이 없으며, 작은 도움이라도 서로 나누는 문화가 오늘날에도 살아 숨쉬고 있습니다. 다음 이야기는 폴란드의 전통을 살펴보며 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "바야니한"
+   },
+   {
+    "sentence": 3,
+    "text": "마을 축제"
+   },
+   {
+    "sentence": 5,
+    "text": "전동 지게차"
+   },
+   {
+    "sentence": 6,
+    "text": "이웃의 손길"
+   }
+  ],
+  "compare": {
+   "title": "Philippines vs Poland",
+   "left": "Philippines",
+   "right": "Poland",
+   "rows": [
+    {
+     "label": "현대 적용",
+     "left": "전동 지게차",
+     "right": "트럭·크레인"
+    },
+    {
+     "label": "공동체 역할",
+     "left": "전체 마을 참여",
+     "right": "주민·자원봉사"
+    }
+   ]
+  },
+  "recap": "바야니한은 이웃이 함께 집을 옮기는 전통입니다.",
+  "broll": [
+   "traditional Filipino house moving",
+   "community members lifting house",
+   "modern forklift lifting house"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 1,
+   "unsupported": 3,
+   "notes": [
+    "[contradicted] 2번 문장: Traditional bayanihan lifts houses on bamboo poles, not on logs placed on timber.",
+    "[unsupported] 6번 문장: No reliable evidence that modern forklifts are used to continue the tradition.",
+    "[unsupported] 7번 문장: Specific scene of a forklift on logs lacks documented evidence.",
+    "[contradicted] 10번 문장: Traditional Philippine house‑moving uses bamboo poles, not logs; the comparison is inaccurate.",
+    "[unsupported] 11번 문장: No documented use of electric forklifts for traditional house moving in the Philippines."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "cf842ffb405a",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 21:51",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines_timing.json",
+  "tts_hash": "9e2680d8af4b"
+ },
+ "26": {
+  "narration": "폴란드에서는 이름 날이 생일보다 큰 축하를 받습니다. 교회 달력에 성인의 이름이 매일 적혀 있어, 그 날이 자신의 이름과 맞으면 가족·친구·동료가 선물과 축하를 보냅니다. 전통적으로 이름 날은 사제의 축일과 연결돼, 이름을 딴 성인의 기념일을 기념하는 것이 시작이었습니다. 오늘날에도 직장에서는 작은 케이크와 꽃을 놓고 동료에게 초콜릿이나 작은 선물을 주는 것이 일상입니다. 학교에서는 아이들이 같은 이름을 가진 친구에게 사탕을 나눠 주며, 이름 날을 기억하는 습관이 자연스럽게 자리 잡았습니다. 이름이 같은 사람은 하루에 두 번, 즉 생일과 이름 날 두 차례 축하를 받을 수 있어, 사회적 유대가 강화됩니다. 폴란드 남부와 카슈비아 지역을 제외하고는 거의 모든 가정이 달력에 적힌 이름 날을 확인하고, 그날을 ‘주인공’으로 대접합니다. 이 전통은 서구의 생일 문화와 달리, 개인보다 공동체의 연결을 강조합니다. 이름 날을 기억하고 축하하는 작은 행동이 사람들을 더 가깝게 만든다는 점, 기억해 두세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "이름 날이 생일보다 큰 축하"
+   },
+   {
+    "sentence": 2,
+    "text": "교회 달력에 성인의 이름"
+   },
+   {
+    "sentence": 5,
+    "text": "직장에서는 작은 케이크와 꽃"
+   },
+   {
+    "sentence": 7,
+    "text": "사회적 유대가 강화됩니다"
+   }
+  ],
+  "compare": {
+   "title": "Poland vs 한국",
+   "left": "Poland",
+   "right": "한국",
+   "rows": [
+    {
+     "label": "축하 대상",
+     "left": "이름 날·생일",
+     "right": "생일 위주"
+    },
+    {
+     "label": "공공 인식",
+     "left": "달력에 이름 표기",
+     "right": "달력에 별도 표기 없음"
+    },
+    {
+     "label": "직장 문화",
+     "left": "작은 파티·선물",
+     "right": "생일 파티는 드물음"
+    }
+   ]
+  },
+  "recap": "폴란드의 이름 날은 공동체를 잇는 따뜻한 전통입니다.",
+  "broll": [
+   "Polish family celebration",
+   "office birthday cake",
+   "traditional calendar with saints"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 8번 문장: Interpretive claim about community vs individual emphasis is opinion",
+    "[contradicted] 9번 문장: Many other countries also have strong name‑day traditions"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "e91e0786d6a7",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 21:52",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland_timing.json",
+  "tts_hash": "18106cf49fb4"
  }
 }
