@@ -1,13 +1,13 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-25 12:32:43 (KST) · 기록 223건 · 소재 305개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-25 12:33:27 (KST) · 기록 224건 · 소재 305개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
 | DB커밋 | 129 | 0 | 0초 |
-| 롱폼 | 8 | 0 | 48분 53초 |
+| 롱폼 | 9 | 0 | 49분 3초 |
 | 쇼츠 | 80 | 6 | 12시간 17분 |
 
 ## 날짜별 작업 (최근 30일)
@@ -16,6 +16,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:33 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 7 --instruction 복잡한 교통 공학적 | ✅ | 9초 |  |
 | 12:32 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 5 --instruction "풍속영업법" 같은 | ✅ | 9초 |  |
 | 12:27 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only | ✅ | 47초 |  |
 | 12:26 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
