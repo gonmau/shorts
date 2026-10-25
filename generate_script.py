@@ -46,28 +46,23 @@ MAX_RUN_SECONDS = 15 * 60  # 대본 생성 단계 최대 시간(초). 넘으면 
 DEFAULT_DELAY = 1.5
 DEFAULT_RETRIES = 5
 
-# 30~50초 영어 TTS(약 90~120단어)용으로 너무 짧은 결과는 성공으로 인정하지 않습니다.
-MIN_CHARS = 380
-TARGET_MIN_CHARS = 520
-TARGET_MAX_CHARS = 900   # 이보다 길면 재생성
-HARD_MAX_CHARS = 1050    # 재시도가 모두 실패하면 이 길이까지는 마지막 후보를 그대로 사용
+# 30~50초 TTS용으로 너무 짧은 결과는 성공으로 인정하지 않습니다.
+MIN_CHARS = 280
+TARGET_MIN_CHARS = 350
+TARGET_MAX_CHARS = 500
 
-# 목표 길이(초): 환경변수 SCRIPT_TARGET_SEC 이 있으면 단어 수 기준을 거기에 맞춘다 (UI 2단계에서 지정). 없으면 아래 기본값(90~115단어).
+# 목표 길이(초): 환경변수 SCRIPT_TARGET_SEC 이 있으면 분량 기준을 거기에 맞춘다 (UI 2단계에서 지정). 없으면 아래 기본값.
 def _rate_mult():
     m = re.match(r"\s*([+-]?\d+)", os.environ.get("TTS_RATE", ""))
     return 1.0 + (int(m.group(1)) / 100.0 if m else 0.0)
 
 
-W_LO, W_HI, W_HARD_MAX, W_HARD_MIN = 90, 115, 120, 80
 _SEC = os.environ.get("SCRIPT_TARGET_SEC", "").strip()
 if _SEC.replace(".", "", 1).isdigit() and float(_SEC) > 0:
-    _w = float(_SEC) * 2.2 * _rate_mult()  # 영어 약 2.2단어/초 (속도 설정 반영)
-    W_LO, W_HI = max(20, round(_w * 0.88)), max(25, round(_w * 1.12))
-    W_HARD_MAX, W_HARD_MIN = round(_w * 1.2), max(15, round(_w * 0.8))
-    MIN_CHARS = int(W_HARD_MIN * 4.75)
-    TARGET_MIN_CHARS = int(W_LO * 5.8)
-    TARGET_MAX_CHARS = int(W_HARD_MAX * 7.5)
-    HARD_MAX_CHARS = int(TARGET_MAX_CHARS * 1.17)
+    _c = float(_SEC) * 8.0 * _rate_mult()  # 한국어 약 8자/초 (속도 설정 반영)
+    TARGET_MIN_CHARS = max(60, int(round(_c * 0.88, -1)))
+    TARGET_MAX_CHARS = max(TARGET_MIN_CHARS + 20, int(round(_c * 1.12, -1)))
+    MIN_CHARS = int(TARGET_MIN_CHARS * 0.8)
 
 
 # ============================================================
@@ -138,16 +133,20 @@ def pick_models(client, requested_model=None):
 # ============================================================
 
 BAD_PATTERNS = [
-    "i'm sorry",
-    "i am sorry",
-    "i cannot",
-    "i can't",
-    "not enough information",
-    "insufficient information",
-    "please provide",
-    "could you provide",
-    "as an ai",
-    "unable to write",
+    "제공해 주신 문화 상식 정보가 비어 있습니다",
+    "제공해 주신 문화 상식 정보가 부족해",
+    "제공해 주신 정보가 부족합니다",
+    "제공해 주신 문화 상식 정보가 비어 있어",
+    "제공해주신 내용에 국가와 주제만 있고",
+    "제공해주신 정보가 부족합니다",
+    "죄송합니다, 제공해 주신",
+    "죄송합니다, 해당 영상에 사용할",
+    "정확한 대본을 작성하기 어렵습니다",
+    "정확한 스크립트를 작성하기 어렵습니다",
+    "스크립트를 작성할 수 없습니다",
+    "필요한 정보를 알려주시면",
+    "주제와 내용, 출처를 알려주시면",
+    "해당 정보를 채워 주시면",
 ]
 
 
@@ -161,9 +160,8 @@ def is_bad_narration(text):
 
     normalized = normalize_text(text)
 
-    low = normalized.lower()
     for pattern in BAD_PATTERNS:
-        if pattern in low:
+        if pattern in normalized:
             return True
 
     # 기존에 생성된 너무 짧은 대본도 재생성 대상
@@ -178,7 +176,7 @@ def is_bad_narration(text):
 # ============================================================
 
 def build_prompt(fact):
-    label = fact.get("label") or fact.get("country", "")
+    country = fact.get("country", "")
     topic = fact.get("topic", "")
     hook = fact.get("hook", "")
     body = fact.get("body", "")
@@ -187,51 +185,59 @@ def build_prompt(fact):
     caveat = fact.get("caveat", "")
 
     return f"""
-You are a scriptwriter for English YouTube Shorts about Korean culture and daily life,
-written for an international audience who has never been to Korea.
+당신은 한국어 유튜브 쇼츠 전문 대본 작가입니다.
 
-Write a 35-50 second voice-over using ONLY the verified material below.
+아래의 '검증된 문화 상식 자료'만 사용하여
+30~50초 분량의 쇼츠 내레이션을 작성하세요.
 
-[Subject]
-{label}
+[국가]
+{country}
 
-[Topic]
+[주제]
 {topic}
 
-[Hook]
+[훅]
 {hook}
 
-[Key facts]
+[핵심 내용]
 {body}
 
-[Twist / surprising point]
+[반전/흥미로운 포인트]
 {twist}
 
-[Limits of this fact]
+[이 사실의 한계]
 {caveat}
 
-[Verification note]
+[검증 메모]
 {verify_note}
 
-Rules:
-1. Write in natural, conversational American English, as if talking to a friend.
-2. Open with a strong first sentence built from the [Hook]. No greetings, no "Hey guys".
-3. Explain the key facts, then work in the twist.
-4. Do not invent facts, numbers, dates, or prices that are not in the material.
-   ACCURACY OVER DRAMA: stay calm and factual, never exaggerate. No absolutes ("everyone", "always", "never", "all Koreans", "illegal", "the only country", "the most/biggest").
-   Use qualifiers such as "many", "often", "in some places", "at many cafes" and name the scope (for example "in Seoul"). Never turn a common practice into a universal rule.
-   Respect the [Limits of this fact] and mention the limit briefly when it matters.
-5. Use short sentences that are easy to read aloud with TTS. Avoid parentheses, emoji, hashtags, and abbreviations.
-6. Write Korean words in plain English letters (for example "banchan", "jeonse"), and briefly explain them. No Hangul.
-7. Total length: {W_LO} to {W_HI} words. Hard limit: never more than {W_HARD_MAX} words, never fewer than {W_HARD_MIN}. Count the words before you answer and cut if you are over.
-8. If the material is short, explain its meaning and context without adding new facts.
-9. Never ask people to subscribe, like, follow, turn on notifications, or comment.
-   End on a lingering line or a twist, ideally connected to the opening question so people want to watch again.
-10. Do not include a title, numbering, or labels like "Narration:" or "Script:".
-11. Output only the narration.
+작성 규칙:
 
-Important: the material is already provided. Never answer with "not enough information"
-or ask for more details.
+1. 반드시 한국어로 작성합니다.
+2. 실제 유튜브 쇼츠에서 사람이 말하는 것처럼 자연스럽게 작성합니다.
+3. 존댓말을 사용합니다.
+4. 첫 문장은 [훅]을 살려 강하게 시작합니다.
+5. [핵심 내용]에 있는 사실을 설명합니다.
+6. [반전/흥미로운 포인트]를 자연스럽게 포함합니다.
+7. 제공된 자료에 없는 새로운 사실이나 숫자를 만들지 않습니다.
+8. 법률, 벌금, 날짜, 수치 등은 제공된 자료에 있는 범위에서만 말합니다.
+9. 자료의 내용을 단순히 복사하지 말고 쇼츠 내레이션처럼 자연스럽게 연결합니다.
+10. 짧은 문장을 사용해 TTS로 읽기 좋게 만듭니다.
+11. 전체 분량은 반드시 {TARGET_MIN_CHARS}~{TARGET_MAX_CHARS}자 사이를 목표로 합니다.
+12. 최소 {MIN_CHARS}자보다 짧게 작성하지 마세요.
+13. 자료가 짧더라도 제공된 사실의 의미와 맥락을 자연스럽게 풀어 설명하여 분량을 확보하세요.
+14. 없는 사실을 추가해서 분량을 채우지 마세요.
+15. 구독, 좋아요, 알림 설정, 댓글을 요청하는 말은 절대 넣지 않습니다. 마지막은 여운이 남는 한 문장이나 반전으로 끝내고, 가능하면 첫 문장의 궁금증과 이어지게 해서 다시 보고 싶게 만듭니다.
+16. 제목, 번호, "내레이션:", "대본:" 같은 라벨은 출력하지 않습니다.
+17. 대본만 출력합니다.
+18. 정확성이 우선입니다. 과장하지 말고 차분하게 사실만 전달합니다. "모두", "항상", "절대", "불법", "유일", "세계 최대/최초" 같은 단정 표현을 쓰지 않고, "많은", "일부", "대체로" 등으로 범위를 한정하며 지역·대상을 밝힙니다. 일부의 관습을 나라 전체의 규칙처럼 말하지 말고, [이 사실의 한계]를 존중합니다.
+
+중요:
+자료가 이미 제공되어 있으므로 절대로
+"정보가 부족합니다"
+"주제와 내용을 알려주세요"
+"정확한 대본을 작성하기 어렵습니다"
+같은 답변을 하지 마세요.
 """.strip()
 
 
@@ -246,7 +252,7 @@ def clean_narration(text):
     text = text.strip()
 
     text = re.sub(
-        r"^```(?:text|english|en)?\s*",
+        r"^```(?:text|korean|ko)?\s*",
         "",
         text,
         flags=re.IGNORECASE,
@@ -254,7 +260,7 @@ def clean_narration(text):
     text = re.sub(r"\s*```$", "", text)
 
     text = re.sub(
-        r"^(narration|script|voice-?over)\s*[:：]\s*",
+        r"^(내레이션|나레이션|대본)\s*[:：]\s*",
         "",
         text,
         flags=re.IGNORECASE,
@@ -279,7 +285,7 @@ def validate_narration(text):
         normalized = normalize_text(text)
 
         if len(normalized) < MIN_CHARS:
-            return False, f"too short ({len(normalized)} chars)"
+            return False, f"너무 짧음 ({len(normalized)}자)"
 
         return False, "정보 부족/거절 응답"
 
@@ -296,44 +302,46 @@ def validate_narration(text):
 # 화면 상단 제목 2줄 (title_line1 / title_line2)
 # ============================================================
 
-TITLE_MAX_CHARS = 24  # 프롬프트는 20자 이내를 요청하되, 24자까지 허용
+TITLE_MAX_CHARS = 16  # 프롬프트는 12자 이내를 요청하되, 16자까지 허용
 
 
 def build_title_prompt(fact, narration):
     return f"""
-You write on-screen titles for English YouTube Shorts about Korean culture.
-Write a 2-line title that will be shown big at the top of the video.
+당신은 한국어 유튜브 쇼츠 제목 작가입니다.
+아래 자료를 바탕으로 화면 상단에 크게 들어갈 2줄 제목을 만드세요.
 
-[Subject]
-{fact.get("label") or fact.get("country", "")}
+[국가]
+{fact.get("country", "")}
 
-[Topic]
+[주제]
 {fact.get("topic", "")}
 
-[Hook]
+[훅]
 {fact.get("hook", "")}
 
-[Narration]
+[대본]
 {narration}
 
-Rules:
-1. Output exactly 2 lines.
-2. Line 1 sets up the situation or subject. Line 2 creates curiosity with the result or the twist.
-3. Each line is at most 20 characters including spaces. Short and punchy.
-4. Do not invent facts or numbers that are not in the material.
-5. No clickbait exaggeration. It must match the content. No absolutes such as "Everyone", "Always", "Never", "Illegal", "Only" unless the narration states it exactly that way.
-6. English only. No Hangul. Korean words in plain English letters.
-7. No emoji, quotation marks, periods, numbering, or labels. Just the two lines.
+규칙:
+1. 정확히 2줄만 출력합니다.
+2. 1줄은 상황이나 주제를 제시하고, 2줄은 궁금증을 만드는 결과나 반전을 씁니다.
+3. 각 줄은 공백 포함 12자 이내로 짧게 씁니다.
+4. 자료에 없는 사실이나 숫자를 만들지 않습니다.
+5. 낚시성 과장 없이 자료 내용과 일치해야 합니다. "모두/항상/절대/불법/유일" 같은 단정은 대본이 정확히 그렇게 말할 때만 씁니다.
+6. 제목은 반드시 한글로만 씁니다. 영어 알파벳은 쓰지 않습니다.
+   국가명과 고유명사도 한국어 표기로 씁니다. (예: Uruguay → 우루과이)
+   [주제]나 [훅]이 영어여도 자연스러운 한국어로 옮겨 씁니다.
+7. 이모지, 따옴표, 마침표, 번호, 라벨 없이 두 줄의 텍스트만 출력합니다.
 
-Output format:
-(line 1)
-(line 2)
+출력 형식:
+(1줄)
+(2줄)
 """.strip()
 
 
-def is_english_title(line):
-    """영문 알파벳이 있고 한글이 없는 제목/문구 줄인지."""
-    return bool(re.search(r"[A-Za-z]", line)) and not re.search(r"[가-힣]", line)
+def is_korean_title(line):
+    """한글이 있고 영문 알파벳이 없는 제목 줄인지 (숫자는 허용)."""
+    return bool(re.search(r"[가-힣]", line)) and not re.search(r"[A-Za-z]", line)
 
 
 def parse_title(text):
@@ -343,7 +351,7 @@ def parse_title(text):
 
     lines = []
     for raw in text.strip().splitlines():
-        line = re.sub(r"^\s*(\d+[.)]|[-*•]|\(?(?:line\s*)?[12]\)?\s*[:：]?)\s*", "", raw)
+        line = re.sub(r"^\s*(\d+[.)]|[-*•]|\(?[12]줄\)?\s*[:：]?)\s*", "", raw)
         line = line.strip().strip("\"'“”‘’`").rstrip(".。").strip()
         if line:
             lines.append(line)
@@ -352,8 +360,8 @@ def parse_title(text):
         return None
     if any(len(x) > TITLE_MAX_CHARS for x in lines):
         return None
-    if not all(is_english_title(x) for x in lines):
-        return None  # 한글이 섞이면 재시도
+    if not all(is_korean_title(x) for x in lines):
+        return None  # 영어가 섞이면 재시도
     return lines[0], lines[1]
 
 
@@ -367,7 +375,7 @@ def generate_title(client, models, fact, narration, retries=3):
                 response = client.chat.completions.create(
                     model=model,
                     messages=[
-                        {"role": "system", "content": "You are a fact-faithful English Shorts title writer."},
+                        {"role": "system", "content": "당신은 사실에 충실한 한국어 쇼츠 제목 작가입니다."},
                         {"role": "user", "content": prompt},
                     ],
                     temperature=0.7,
@@ -395,7 +403,7 @@ def generate_title(client, models, fact, narration, retries=3):
 # 핵심 문구(highlights) / 이미지 검색어(image_queries)
 # ============================================================
 
-HL_MAX_CHARS = 28  # 프롬프트는 22자 이내를 요청하되 28자까지 허용
+HL_MAX_CHARS = 16  # 프롬프트는 12자 이내를 요청하되 16자까지 허용
 
 
 def extract_json(text):
@@ -447,24 +455,24 @@ def build_highlight_prompt(fact, narration):
     sents = split_sentences(narration)
     numbered = "\n".join(f"{i}. {x}" for i, x in enumerate(sents, 1))
     return f"""
-You are a caption designer for English YouTube Shorts.
-Read the narration and pick the key phrases to show BIG on screen.
+당신은 한국어 유튜브 쇼츠의 화면 자막 디자이너입니다.
+아래 대본을 읽고, 영상 화면에 크게 띄울 '핵심 문구'를 뽑으세요.
 
-[Subject] {fact.get("label") or fact.get("country", "")}
-[Topic] {fact.get("topic", "")}
+[국가] {fact.get("country", "")}
+[주제] {fact.get("topic", "")}
 
-[Narration - sentence numbers]
+[대본 - 문장 번호]
 {numbered}
 
-Rules:
-1. Pick 3 to 6 key phrases, in story order. Sentence numbers (s) must be ascending and never repeated.
-2. Each phrase is at most 22 characters including spaces. English only, no Hangul. Numbers are fine.
-3. Do not copy the sentence. Compress it into a punchy word or short phrase that sticks.
-4. Wrap the single most important word of each phrase in *asterisks*. Example: Buses are *free*?
-5. Do not invent facts or numbers that are not in the narration.
-6. Output only this JSON, nothing else:
+규칙:
+1. 핵심 문구는 3~6개입니다. 대본 흐름 순서대로, 문장 번호(s)는 오름차순이며 같은 번호를 두 번 쓰지 않습니다.
+2. 각 문구는 공백 포함 12자 이내로 짧게, 한글로만 씁니다. (영어 알파벳 금지, 숫자는 허용)
+3. 대본 문장을 그대로 베끼지 말고, 시청자 눈에 박히는 단어나 짧은 구로 압축합니다.
+4. 문구마다 가장 중요한 단어 하나를 *별표*로 감쌉니다. 예: 길에서 *사자* 키우면?
+5. 대본에 없는 사실이나 숫자를 만들지 않습니다.
+6. 아래 JSON만 출력합니다. 다른 설명은 쓰지 않습니다.
 
-{{"highlights": [{{"s": 1, "text": "phrase"}}, {{"s": 3, "text": "phrase"}}]}}
+{{"highlights": [{{"s": 1, "text": "문구"}}, {{"s": 3, "text": "문구"}}]}}
 """.strip()
 
 
@@ -484,7 +492,7 @@ def parse_highlights(text, n_sent):
         plain = strip_marks(raw)
         if not (1 <= num <= n_sent) or num in found:
             continue
-        if not plain or len(plain) > HL_MAX_CHARS or not is_english_title(plain):
+        if not plain or len(plain) > HL_MAX_CHARS or not is_korean_title(plain):
             continue
         if raw.count("*") != 2:
             raw = raw.replace("*", "")  # 강조 표시가 어긋나면 표시만 제거
@@ -501,7 +509,7 @@ def generate_highlights(client, models, fact, narration, retries=3):
         return None
     return ask_models(
         client, models,
-        "You are an editor who writes short, punchy English captions.",
+        "당신은 짧고 강렬한 한국어 자막을 만드는 편집자입니다.",
         build_highlight_prompt(fact, narration), 600, retries,
         lambda t: parse_highlights(t, n),
     )
@@ -572,12 +580,12 @@ def generate_queries(client, models, fact, narration, retries=3):
 # ============================================================
 
 def build_factcheck_prompt(fact, narration):
-    return f"""You are a strict fact-checker and editor for English YouTube Shorts about Korea.
-Review the texts below and fix anything exaggerated, over-generalized, absolute, sensationalized, or likely inaccurate.
+    return f"""당신은 한국어 유튜브 쇼츠 대본의 엄격한 팩트체크 편집자입니다.
+아래 글에서 과장, 지나친 일반화, 단정 표현, 자극적 표현, 사실과 다를 가능성이 있는 내용을 찾아 고치세요.
 
-[Subject] {fact.get("label") or fact.get("country", "")}
-[Topic] {fact.get("topic", "")}
-[Limits of this fact] {fact.get("caveat", "")}
+[국가] {fact.get("country", "")}
+[주제] {fact.get("topic", "")}
+[이 사실의 한계] {fact.get("caveat", "")}
 
 [hook]
 {fact.get("hook", "")}
@@ -588,21 +596,21 @@ Review the texts below and fix anything exaggerated, over-generalized, absolute,
 [narration]
 {narration}
 
-What to look for:
-- absolutes: everyone, all Koreans, always, never, illegal, banned, the only/first/biggest/most
-- a trend, a company's or one city's practice presented as a nationwide rule
-- statistics, prices, dates or numbers that are unverified or likely wrong
-- claims stronger than the evidence, stereotypes, shock-bait wording
-- anything you believe is factually wrong
+찾을 것:
+- 단정: 모든/누구나/항상/절대/불법/금지/유일/세계 최초·최대
+- 일부 지역·업체·사람의 관습을 나라 전체의 규칙처럼 쓴 것
+- 확인되지 않았거나 틀렸을 가능성이 있는 통계·금액·날짜·수치
+- 근거보다 강한 주장, 고정관념, 낚시성 표현
+- 사실이 아니라고 판단되는 내용
 
-Fix them with qualified, calm wording (many / often / in some places / typically) and a clear scope, or delete the claim if it cannot be fixed.
-Keep the same style, make the narration still {W_LO} to {W_HI} words, short sentences, no emoji, no subscribe/like requests.
-If everything is already accurate and calm, return the texts unchanged with an empty issues list.
+한정어(많은/일부/대체로)와 분명한 범위로 고치거나, 고칠 수 없으면 해당 내용을 삭제하세요.
+문체(존댓말, 짧은 문장, 이모지 없음)와 분량({TARGET_MIN_CHARS}~{TARGET_MAX_CHARS}자)은 유지하고 구독/좋아요 요청은 넣지 마세요.
+이미 정확하고 차분하면 원문을 그대로 두고 issues를 빈 배열로 두세요.
 
-Respond with a pure JSON object only:
-{{"issues": ["short English description of each problem you fixed or that remains uncertain"],
-  "risk": "low, medium or high (how likely the ORIGINAL contained a factual error)",
-  "verifiability": "documented = you know this practice/fact genuinely exists and is documented; unverified = you cannot confirm it exists; fabricated = it seems invented or you believe it does not exist. Be honest: if you have never heard of it, answer unverified",
+순수 JSON 객체만 출력:
+{{"issues": ["고친 점 또는 여전히 불확실한 점을 한 줄씩"],
+  "risk": "low, medium, high 중 하나 (원문에 사실 오류가 있었을 가능성)",
+  "verifiability": "documented = 이 관습/사실이 실제로 존재하고 문서로 확인된다고 알고 있음, unverified = 존재 여부를 확인할 수 없음, fabricated = 지어낸 것 같거나 존재하지 않는다고 생각함. 솔직하게: 들어본 적 없으면 unverified",
   "hook": "...", "body": "...", "twist": "...", "narration": "..."}}"""
 
 
@@ -618,7 +626,7 @@ def factcheck_fact(client, models, fact, retries=3):
     narration = fact.get("narration", "")
     data = ask_models(
         client, models,
-        "You are a careful fact-checking editor. Output JSON only.",
+        "당신은 꼼꼼한 팩트체크 편집자입니다. JSON만 출력합니다.",
         build_factcheck_prompt(fact, narration), 3000, retries, parse_factcheck,
     )
     fact["fact_checked"] = True
@@ -664,7 +672,7 @@ def factcheck_fact(client, models, fact, retries=3):
 
 def title_ok(fact):
     l1, l2 = fact.get("title_line1"), fact.get("title_line2")
-    return bool(l1 and l2 and is_english_title(l1) and is_english_title(l2))
+    return bool(l1 and l2 and is_korean_title(l1) and is_korean_title(l2))
 
 
 def ensure_extras(client, models, fact, retries=3):
@@ -734,7 +742,7 @@ def find_title_targets(db, limit):
     for index, fact in enumerate(db):
         l1, l2 = fact.get("title_line1"), fact.get("title_line2")
         # 이미 한글 제목이 있으면 건너뜀 (영어가 섞인 기존 제목은 다시 생성)
-        if l1 and l2 and is_english_title(l1) and is_english_title(l2):
+        if l1 and l2 and is_korean_title(l1) and is_korean_title(l2):
             continue
         if is_bad_narration(fact.get("narration", "")):
             continue
@@ -799,7 +807,6 @@ def get_retry_seconds(error, attempt):
 
 def generate_with_model(client, model, fact, retries):
     prompt = build_prompt(fact)
-    best = None  # '너무 김'으로 거절됐지만 HARD_MAX_CHARS 이내인 마지막 후보
 
     for attempt in range(1, retries + 1):
         try:
@@ -809,8 +816,8 @@ def generate_with_model(client, model, fact, retries):
                     {
                         "role": "system",
                         "content": (
-                            "You are a fact-faithful scriptwriter "
-                            "for English YouTube Shorts."
+                            "당신은 사실에 충실한 한국어 "
+                            "유튜브 쇼츠 대본 작가입니다."
                         ),
                     },
                     {
@@ -836,9 +843,6 @@ def generate_with_model(client, model, fact, retries):
             if valid:
                 return narration, None
 
-            if "너무 김" in reason and len(normalize_text(narration)) <= HARD_MAX_CHARS:
-                best = narration
-
             raise RuntimeError(reason)
 
         except RateLimitError as e:
@@ -861,9 +865,6 @@ def generate_with_model(client, model, fact, retries):
 
         except Exception as e:
             if attempt >= retries:
-                if best:
-                    print(f"  [길이 초과 대본 사용] {len(normalize_text(best))}자 (재시도 모두 소진)")
-                    return best, None
                 return None, str(e)
 
             wait_seconds = min(3.0 * attempt, 15.0)

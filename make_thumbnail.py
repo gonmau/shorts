@@ -85,8 +85,8 @@ def make(idx, item, channel, handle, avatar):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--channel", default="KoreaAtoZ")
-    ap.add_argument("--handle", default="@KoreaA2Z")
+    ap.add_argument("--channel", default="gonmauY")
+    ap.add_argument("--handle", default="@gonmauY")
     ap.add_argument("--avatar", default="avatar.png")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--start", type=int, default=0, help="이 번호 이상 소재의 썸네일만 만듦")

@@ -15,7 +15,7 @@ build_video 단계에서 자막과 장면 전환을 실제 음성에 맞춥니�
     python generate_tts.py --timeout 60 --retries 3
 
 음성:
-    기본: en-US-AndrewNeural (대안: en-US-AriaNeural, en-US-GuyNeural, en-US-JennyNeural, en-GB-RyanNeural)
+    기본: ko-KR-SunHiNeural
     예:   ko-KR-InJoonNeural
           ko-KR-JiMinNeural
           ko-KR-SeoHyeonNeural
@@ -196,13 +196,13 @@ def generate_tts(text, audio_path, timing_path, voice, rate, volume, pitch,
 
 def main():
     parser = argparse.ArgumentParser(
-        description="무료 Neural 영어 TTS + 실제 발화 타이밍 생성"
+        description="무료 Neural 한국어 TTS + 실제 발화 타이밍 생성"
     )
     parser.add_argument("--index", type=int, default=None)
     parser.add_argument("--limit", type=int, default=5)
-    parser.add_argument("--voice", default=os.environ.get("TTS_EDGE_VOICE") or "en-US-AndrewNeural",
+    parser.add_argument("--voice", default=os.environ.get("TTS_EDGE_VOICE") or "ko-KR-SunHiNeural",
                         help="Edge 음성 이름 (환경변수 TTS_EDGE_VOICE로도 지정)")
-    parser.add_argument("--rate", default=os.environ.get("TTS_RATE") or "+8%",
+    parser.add_argument("--rate", default=os.environ.get("TTS_RATE") or "-3%",
                         help="말 속도. 예: -10%% / +8%% (환경변수 TTS_RATE로도 지정). Supertonic도 이 값을 따름")
     parser.add_argument("--volume", default="+0%")
     parser.add_argument("--pitch", default="+0Hz")

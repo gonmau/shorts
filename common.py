@@ -109,34 +109,38 @@ def credit_label(item):
     return ("Photos: " + " · ".join(names)) if names else ""
 
 
-FIXED_TAGS = ["Korea", "SouthKorea", "KoreanCulture", "KoreaTravel", "CultureShock"]
-CHANNEL_BLURB = "🇰🇷 Real Korea in under a minute: everyday life, food, etiquette and surprising facts."
+FIXED_TAGS = ["세계문화", "해외여행", "이색상식", "문화차이", "세계여행"]
+CHANNEL_BLURB = "🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!"
 
 
 def _tagify(text):
-    return re.sub(r"[^0-9A-Za-z]", "", str(text or ""))
+    return re.sub(r"[^0-9A-Za-z가-힣]", "", str(text or ""))
 
 
 def youtube_tags(item):
-    """해시태그 목록(# 없이): 소재 라벨(CamelCase 한 단어) + 고정 태그, 중복 제거."""
-    label = str(item.get("label") or item.get("country") or "")
-    camel = "".join(w[:1].upper() + w[1:] for w in re.split(r"[^0-9A-Za-z]+", label) if w)
+    """해시태그 목록(# 없이): 나라 + 주제 키워드 + 고정 태그, 중복 제거."""
+    tags = [_tagify(item.get("country"))]
+    for w in str(item.get("topic", "")).replace("/", " ").replace(",", " ").split():
+        w = _tagify(w)
+        if len(w) >= 2:
+            tags.append(w)
+    tags += FIXED_TAGS
     out, seen = [], set()
-    for t in [camel] + FIXED_TAGS:
-        t = _tagify(t)
+    for t in tags:
         if t and t.lower() not in seen and len(t) <= 30:
             seen.add(t.lower())
             out.append(t)
-    return out[:8]
+    return out[:9]
 
 
 def youtube_meta(item):
-    """유튜브에 올릴 제목/설명 (자동 업로드와 디스코드 알림이 같은 문구를 쓴다).
-    제목: 'Korea'가 없으면 앞에 붙여 검색에 걸리게 함.
-    설명: 훅 -> 본문 -> 반전 -> 채널 소개 -> (사진 크레딧) -> 해시태그."""
+    """유튜브에 올릴 제목/설명. 자동 업로드와 디스코드 알림이 같은 문구를 쓴다.
+    제목: 나라 이름이 없으면 앞에 붙여 검색에 걸리게 함. 설명: 훅 -> 본문 -> 반전 -> 채널 소개 -> 해시태그.
+    """
     title = " ".join(filter(None, [item.get("title_line1"), item.get("title_line2")])) or item.get("topic", "")
-    if "korea" not in title.lower():
-        title = f"Korea: {title}"
+    country = str(item.get("country", "")).strip()
+    if country and country not in title:
+        title = f"{country} {title}"
     title = title[:100].rstrip()   # 제목에는 #Shorts 를 붙이지 않는다 (설명 끝 해시태그에만 둔다)
 
     parts = []
@@ -150,5 +154,6 @@ def youtube_meta(item):
     credit = image_credit_lines(item)
     if credit:
         parts.append("\n".join(credit))
-    parts.append(" ".join("#" + t for t in youtube_tags(item)) + " #Shorts")
+    tags = youtube_tags(item)
+    parts.append(" ".join("#" + t for t in tags) + " #Shorts")
     return title, "\n\n".join(parts)

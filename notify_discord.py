@@ -10,14 +10,14 @@ from pathlib import Path
 
 import requests
 
-from common import load_db, pending_render, youtube_meta
+from common import load_db, youtube_meta
 
 
 def post(url, text):
     req = urllib.request.Request(
         url,
         data=json.dumps({"content": text[:1990]}).encode("utf-8"),
-        headers={"Content-Type": "application/json", "User-Agent": "korea-shorts-bot"},
+        headers={"Content-Type": "application/json", "User-Agent": "culture-shorts-bot"},
     )
     try:
         urllib.request.urlopen(req, timeout=20)
@@ -35,34 +35,6 @@ def post_long(url, text):
         chunk += line + "\n"
     if chunk.strip():
         post(url, chunk)
-
-
-def risk_line(item):
-    r = item.get("fact_risk")
-    if not r:
-        return ""
-    icon = {"low": "🟢", "medium": "🟡", "high": "🔴"}.get(r, "⚪")
-    ap = "교정 적용됨" if item.get("fact_applied") else "교정 없음/미적용"
-    return f"{icon} 사실 검수 위험도: {r} / 확인도: {item.get('fact_verifiability', '-')} / {ap}"
-
-
-def post_crosscheck(url, item):
-    """영어 원문과 한글 번역을 나란히 확인할 수 있게 보낸다."""
-    ko_title = item.get("ko_title")
-    if not ko_title:
-        post(url, "🇰🇷 한글 번역이 없습니다 (번역 단계 실패). review.txt의 영어 대본을 직접 확인하세요.")
-        return
-    head = ["🇰🇷 교차확인 (한글)", f"제목: {ko_title}"]
-    if risk_line(item):
-        head.append(risk_line(item))
-    notes = item.get("ko_issues") or []
-    if notes:
-        head.append("⚠️ 검수에서 고친/의심한 점:")
-        head += [f"- {n}" for n in notes]
-    post_long(url, "\n".join(head))
-    post_long(url, "📄 설명(한글)\n" + item.get("ko_description", ""))
-    post_long(url, "📝 대본(한글)\n" + item.get("ko_narration", ""))
-    post_long(url, "📝 대본(영어 원문)\n" + item.get("narration", ""))
 
 
 def post_image(url, path, text=""):
@@ -101,18 +73,6 @@ def _main():
     if stage == "prepare":
         post(url, f"📝 준비 완료 - review.txt에서 제목/핵심 문구를 고친 뒤 render 실행\n"
                   f"{os.environ.get('REVIEW_URL', '')}\n실행: {run_url}")
-        try:
-            limit = int(os.environ.get("COUNT", "2"))
-            start = int(os.environ.get("START", "0"))
-            for idx, item in pending_render(load_db(), start)[:limit]:
-                if not item.get("narration"):
-                    continue
-                post(url, f"=== [{idx}] {item.get('label') or item.get('country', '')} ===")
-                title, _ = youtube_meta(item)
-                post(url, f"🇺🇸 제목: {title}")
-                post_crosscheck(url, item)
-        except Exception as e:
-            print("교차확인 전송 실패:", e)
         return
 
     items = built_items()
@@ -124,10 +84,15 @@ def _main():
         post(url, f"🎬 {name} - 아래 두 메시지를 길게 눌러 '텍스트 복사'")
         post(url, title)   # 제목만
         post(url, desc)    # 설명만
+        r = item.get("fact_risk")
+        notes = item.get("fact_issues") or []
+        if r or notes:
+            icon = {"low": "🟢", "medium": "🟡", "high": "🔴"}.get(r, "⚪")
+            post(url, f"{icon} 사실 검수 위험도: {r or '-'} / 확인도: {item.get('fact_verifiability', '-')} / " + ("교정 적용됨" if item.get("fact_applied") else "교정 없음/미적용") + ("\n⚠️ 고친/의심한 점:\n" + "\n".join(f"- {n}" for n in notes) if notes else "")
+                 + (f"\n🔎 확인 검색어: {item['verify_note']}" if item.get("verify_note") else ""))
         th = Path("thumbnails") / (Path(name).stem + ".png")
         if th.exists():
             post_image(url, th, "🖼 썸네일 (길게 눌러 저장)")
-        post_crosscheck(url, item)
 
 
 def main():

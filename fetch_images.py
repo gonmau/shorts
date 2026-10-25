@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent
 API_URL = "https://pixabay.com/api/"
 SCENE_COUNT = 6
 IMAGE_TYPE = "photo"  # Pixabay image_type: photo / illustration / vector (--scene 단독 실행에서만 바뀜)
-HEADERS = {"User-Agent": "korea-shorts-bot/1.0"}
+HEADERS = {"User-Agent": "culture-shorts-bot/1.0"}
 
 
 def search(session, key, query, min_size):

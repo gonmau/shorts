@@ -53,7 +53,7 @@ def main():
             continue
         title, description = youtube_meta(item)
         body = {
-            "snippet": {"title": title, "description": description, "categoryId": "27", "tags": youtube_tags(item), "defaultLanguage": "en", "defaultAudioLanguage": "en"},
+            "snippet": {"title": title, "description": description, "categoryId": "27", "tags": youtube_tags(item)},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
         }
         media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)

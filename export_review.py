@@ -33,18 +33,16 @@ def main():
         if not item.get("narration"):
             continue
         lines = [f"=== [{idx}] {item.get('country', '')} ==="]
+        if item.get("fact_risk"):
+            lines.append(f"(사실 검수 위험도) {item['fact_risk']}")
+        for n, t in enumerate(item.get("fact_issues") or [], start=1):
+            lines.append(f"(검수 메모 {n}) {t}")
         if item.get("cross_verdict"):
             lines.append(f"(교차검증) {item['cross_verdict']}")
         for n, t in enumerate(item.get("cross_notes") or [], start=1):
             lines.append(f"(교차검증 메모 {n}) {t}")
         if item.get("verify_note"):
             lines.append(f"(사실 확인용 검색어) {item['verify_note']}")
-        if item.get("fact_risk"):
-            lines.append(f"(사실 검수 위험도) {item['fact_risk']}")
-        for n, t in enumerate(item.get("ko_issues") or item.get("fact_issues") or [], start=1):
-            lines.append(f"(검수 메모 {n}) {t}")
-        if item.get("ko_title"):
-            lines.append(f"(한글 제목) {item['ko_title']}")
         for key, label in (("hook", "후크"), ("body", "본문"), ("twist", "반전")):
             lines.append(f"{label}: {' '.join(str(item.get(key, '')).split())}")
         lines.append("제외:")
@@ -56,8 +54,6 @@ def main():
             lines.append(f"이미지[{n}]: {q}")
         for n, sent in enumerate(split_sentences(item["narration"]), start=1):
             lines.append(f"대본[{n}]: {sent}")
-        if item.get("ko_narration"):
-            lines.append(f"(한글 대본) {item['ko_narration']}")
         blocks.append("\n".join(lines))
         if len(blocks) >= args.limit:
             break
