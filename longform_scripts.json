@@ -800,27 +800,23 @@
   "created": "2026-10-25 11:31"
  },
  "5": {
-  "narration": "혹시 일본에서 밤 12시 이후 클럽에서 춤을 추는 것이 금지됐다는 걸 알고 계셨나요? 1948년 제정된 ‘풍속영업법’은 댄스홀을 ‘풍속영업소’로 규정했고, 자정 이후 춤을 허용하려면 특별 허가가 필요했습니다. 그 결과 많은 클럽이 새벽 영업을 포기했고, 일본의 밤문화는 ‘조용한 밤’으로 제한되었습니다. 이 규정은 약 70년간 지속되었고, 클럽 운영자들은 허가, 조명, 소음 제한 등 까다로운 조건을 맞춰야 했습니다. 2015년 개정된 법은 조건을 충족하는 클럽에 심야 춤 허용을 열어주었지만, 여전히 허가 절차와 소음 기준은 남아 있습니다. 도쿄의 밤거리에서 조용히 흐르는 사람들의 발걸음은 그 시절 규제의 흔적을 여전히 품고 있습니다. 이제는 새로운 규제와 함께 일본 클럽 문화가 조금씩 변해가고 있지만, 그 역사는 여전히 밤의 정적 속에 남아 있습니다. 다음은 네덜란드의 자유로운 밤문화와 비교해볼까요?",
+  "narration": "우리나라의 옛날 야간 통행금지 문화처럼, 일본에도 밤 문화를 꽁꽁 얼어붙게 만든 규제가 있었습니다. 혹시 밤 12시가 지나면 클럽에서 춤을 출 수 없던 법이 있었다는 사실, 알고 계셨나요? 1948년 제정된 ‘풍속영업법’은 클럽을 ‘풍속 영업소’로 규정했고, 자정 이후에 춤을 허용하려면 특별 허가가 필요했습니다. 허가를 받지 못한 곳은 새벽 영업이 불가능했죠. 그래서 70년 넘게 도쿄의 밤거리엔 조용한 바와 라운지만 남아 있었습니다. 2015년 법이 개정되면서 조건을 갖춘 클럽은 2016년부터 심야에도 춤을 출 수 있게 되었지만, 여전히 조명·소음·허가 기준이 남아 있어 모든 클럽이 자유롭게 영업하는 것은 아닙니다. 예를 들어, 일부 유명 클럽은 소음 제한 때문에 방음 설비를 대폭 강화했고, 허가를 받지 못한 작은 바는 영업 시간을 새벽 1시까지로 제한받았습니다. 이처럼 일본의 밤 문화는 법적 장벽을 넘어 서서히 변하고 있습니다. 다음엔 네덜란드의 자유로운 밤 문화 이야기를 들어볼까요?",
   "keywords": [
    {
     "sentence": 1,
-    "text": "밤 12시 이후 춤 금지"
+    "text": "밤 12시가 지나면 클럽에서 "
    },
    {
     "sentence": 2,
     "text": "풍속영업법"
    },
    {
-    "sentence": 3,
-    "text": "70년간 지속"
-   },
-   {
     "sentence": 4,
-    "text": "2015년 법 개정"
+    "text": "심야에도 춤을 허용"
    },
    {
     "sentence": 5,
-    "text": "조용한 밤거리"
+    "text": "조명·소음·허가 기준"
    }
   ],
   "compare": {
@@ -829,41 +825,47 @@
    "right": "네덜란드",
    "rows": [
     {
-     "label": "법적 규제",
+     "label": "법적 제한",
      "left": "엄격",
      "right": "느슨"
     },
     {
-     "label": "밤문화 길이",
-     "left": "짧음",
-     "right": "길음"
+     "label": "야간 영업시간",
+     "left": "제한적",
+     "right": "자유"
     },
     {
-     "label": "음악 소음",
-     "left": "낮음",
-     "right": "높음"
+     "label": "클럽 문화",
+     "left": "조용함",
+     "right": "활발함"
     }
    ]
   },
-  "recap": "일본의 밤은 과거 규제로 조용했고, 지금은 조금씩 변해가고 있다",
+  "recap": "밤 12시 이후 춤 금지는 70년간 일본 클럽을 제약했으며, 최근 완화됐습니다.",
   "broll": [
-   "night club Tokyo",
-   "late night street Tokyo",
-   "silent night city"
+   "Tokyo night club interior",
+   "Japanese street at midnight",
+   "crowd dancing in club"
   ],
   "verify": {
    "status": "ok",
    "removed_sentences": 0,
    "removed_rows": 0,
-   "unsupported": 1,
+   "unsupported": 6,
    "notes": [
-    "[unsupported] 11번 문장: Noise level comparison lacks concrete data and is subjective"
+    "[unsupported] 1번 문장: Vague claim about a Japanese regulation similar to Korean night travel bans lacks specific evidence",
+    "[unsupported] 5번 문장: Statement that Tokyo’s night streets were quiet for over 70 years is not substantiated",
+    "[unsupported] 7번 문장: Specific examples of clubs adding soundproofing and bars limited to 1 am are not verified",
+    "[unsupported] 10번 문장: Comparative rating of legal strictness lacks cited evidence",
+    "[unsupported] 11번 문장: Comparative statement about night‑business hours is not backed by data",
+    "[unsupported] 12번 문장: General comparison of club culture without supporting sources"
    ],
    "model": "openai/gpt-oss-120b"
   },
   "sig": "b27296357bef",
-  "model": "openai/gpt-oss-20b",
-  "created": "2026-10-25 12:27"
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 12:32",
+  "instruction": "\"풍속영업법\" 같은 딱딱한 법률 용어를 \"밤 12시가 넘으면 클럽에서 춤을 출 수 없었던 독특한 법\" 같은 쉬운 구어체로 풀어줍니다.   도입부에 \"우리나라의 옛날 야간 통행금지 문화처럼, 일본에도 밤 문화를 꽁꽁 얼어붙게 만든 규제가 있었습니다\" 같은 한국식 비교를 한 줄 얹어주면 공감대가 훨씬 커집니다."
  },
  "7": {
   "narration": "네덜란드 거리에서 자전거 전용 신호등을 본 적 있나요? 암스테르담을 비롯한 대부분의 도시에서는 교차로마다 자동차와는 별도인 자전거 신호등이 설치돼 있습니다. 빨간불이면 자전거는 멈추고, 초록불이면 바로 달려 나가죠. 차량이 정지해도 자전거는 자체 신호에 따라 움직이기 때문에 흐름이 겹치지 않습니다. 특히 일부 도로는 자전거가 먼저 지나가도록 설계돼 있어, 차가 자전거가 통과할 때까지 기다리는 모습이 일상입니다. 이런 구조 덕분에 네덜란드의 자전거 이용률은 세계 최고 수준을 유지합니다. 자전거 전용 신호등은 보행자 신호와 비슷하게 작동하지만, 색상이 별도로 표시돼 있어 운전자는 자전거 전용 신호만 보면 됩니다. 교차로마다 설치된 작은 원형 신호등은 눈에 잘 띄고, 자전거 전용 차선과 함께 배치돼 있어 안전성을 높입니다. 네덜란드와 달리 일본에서는 자전거와 자동차가 같은 신호를 공유하는 경우가 많아, 교통 흐름이 복잡해지는 경우가 있습니다. 이처럼 신호 체계가 다르면 자전거 문화에도 큰 차이가 생깁니다. 다음에는 이탈리아의 독특한 교통 문화에 대해 알아볼게요.",
