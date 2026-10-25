@@ -498,27 +498,19 @@
   "created": "2026-10-25 11:29"
  },
  "8": {
-  "narration": "베네치아에 오면 비둘기에게 빵을 주면 안 된다는 사실, 알고 계셨나요? 2008년부터 시청은 역사 건물 보호를 위해 비둘기 먹이 주기를 전면 금지했어요. 관광객이 빵을 던지면 비둘기가 남긴 배설물이 석조 외벽에 쌓여 물러나기 어렵게 만들고, 복원 비용이 크게 늘어나기 때문이죠. 위반 시 현금 벌금은 최소 150유로에서 최고 500유로까지 부과됩니다. 현금만 받는다는 점도 기억해 주세요. 비둘기는 원래 바위 절벽에 사는 야생 비둘기의 후손이라 건물 외벽을 둥지처럼 활용합니다. 그래서 도심 곳곳에 서식하면서도 건물에 큰 피해를 주게 되었죠. 베네치아는 세계 유산 도시라 보존 비용이 막대합니다. 그래서 작은 행동 하나가 전체 도시를 지키는 데 큰 역할을 합니다. 방문하실 땐 빵 대신 물을 마시며 운하 풍경을 감상해 주세요. 비둘기에게 먹이를 주지 않는 것이 가장 친절한 관광 방법입니다. 여러분의 작은 배려가 베네치아를 오래도록 아름답게 유지합니다.",
+  "narration": "베네치아에서 비둘기에게 빵을 주면 바로 벌금이 부과된다는 사실, 알고 계셨나요? 2008년부터 시청은 역사적인 건물 보호를 위해 도시 전역에서 비둘기 먹이 주기를 전면 금지했습니다. 관광객이 빵을 던지면 비둘기의 배설물이 석조 외벽에 쌓여 부식이 가속화되고, 복원 비용이 크게 늘어나기 때문이죠. 비둘기는 원래 바위 절벽에 서식하던 비둘기의 후예로, 인간이 만든 건물을 새 보금자리로 삼아 도시 곳곳에 늘어섭니다. 그러나 대량 번식과 배설물 때문에 공공 위생과 건축 보존에 큰 문제를 일으킵니다. 베네치아와 달리 네덜란드에서는 비둘기에게 먹이를 주는 문화가 아직도 흔하고, 벌금 제도는 거의 없습니다. 이처럼 각 도시는 역사와 환경에 따라 다른 정책을 선택합니다. 작은 행동 하나가 도시 전체를 지키는 데 큰 역할을 합니다. 베네치아를 방문하실 땐 비둘기에게 먹이를 주지 말고, 빵 대신 물을 마시며 운하를 감상해 주세요.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "베네치아에 오면 비둘기에게 빵"
+    "text": "베네치아에서 비둘기에게 빵을 "
    },
    {
     "sentence": 2,
-    "text": "2008년부터 비둘기 먹이 금"
+    "text": "2008년부터 시청은 전면 금"
    },
    {
-    "sentence": 4,
-    "text": "벌금 150~500유로"
-   },
-   {
-    "sentence": 6,
-    "text": "비둘기는 건물 외벽을 둥지처럼"
-   },
-   {
-    "sentence": 9,
-    "text": "빵 대신 물을 마시며 운하 감"
+    "sentence": 3,
+    "text": "150~500유로 현금 벌금"
    }
   ],
   "compare": {
@@ -527,44 +519,40 @@
    "right": "Netherlands",
    "rows": [
     {
-     "label": "법규 엄격성",
+     "label": "규제 강도",
      "left": "엄격",
      "right": "느슨"
     },
     {
-     "label": "관광객 행동",
-     "left": "제재 강함",
-     "right": "자율 권고"
-    },
-    {
-     "label": "도시 보존 비용",
-     "left": "높음",
-     "right": "보통"
+     "label": "비둘기 먹이 문화",
+     "left": "금지",
+     "right": "허용"
     }
    ]
   },
-  "recap": "베네치아는 비둘기 먹이 금지로 유산을 지키고 있습니다.",
+  "recap": "비둘기에게 빵을 주면 큰 벌금, 도시 보호는 작은 실천에서 시작됩니다.",
   "broll": [
    "Venice canals sunrise",
-   "pigeons on historic building",
-   "tourist walking with guide"
+   "historic building close-up",
+   "tourist feeding pigeons"
   ],
   "verify": {
-   "status": "ok",
-   "removed_sentences": 0,
-   "removed_rows": 0,
-   "unsupported": 4,
+   "status": "fixed",
+   "removed_sentences": 2,
+   "removed_rows": 1,
+   "unsupported": 1,
    "notes": [
-    "[unsupported] 5번 문장: No clear evidence that fines are payable only in cash",
-    "[unsupported] 13번 문장: Comparative strictness of Italy vs Netherlands lacks specific evidence",
-    "[unsupported] 14번 문장: Claims about enforcement strength vs self‑regulation are not substantiated",
-    "[unsupported] 15번 문장: Cost comparison between Italy and Netherlands is not backed by data"
+    "[contradicted] 4번 문장: Actual fine is lower (around €80), not €150‑500",
+    "[contradicted] 5번 문장: Fines can be paid by other methods, not cash‑only",
+    "[unsupported] 12번 문장: Comparative regulation strength is subjective and not a verifiable fact",
+    "[contradicted] 14번 문장: Italian fine is not €150‑500; Netherlands has no fine, but the Italian fine figure is wrong"
    ],
    "model": "openai/gpt-oss-120b"
   },
   "sig": "dfcd7ff86c81",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 12:27"
+  "created": "2026-10-25 12:34",
+  "instruction": "150~500유로라는 구체적인 숫자를 그대로 두되, *\"자칫하면 여행 경비의 상당 부분을 벌금으로 날릴 수 있는 무서운 규정\"*이라는 뉘앙스를 더해 경각심과 재미를 동시에 줍니다.   마지막의 *\"빵 대신 물을 마시며 운하를 감상해 주세요\"*라는 감성적인 마무리 멘트는 그대로 살리되, 여행 꿀팁처럼 친근한 톤으로 다듬습니다"
  },
  "10": {
   "narration": "에티오피아에선 손님이 오면 반드시 커피 의식을 해야 한다는 사실, 알고 계셨나요? 먼저 생콩을 직접 불에 굽고, 그 향이 퍼지면 손으로 직접 갈아 물에 끓입니다. 이 세 번의 순서는 거부하거나 거절하면 무례로 여겨집니다. 제베라 의식은 단순히 음료를 마시는 것이 아니라, 손님과 주인 사이에 깊은 유대를 만드는 사회적 의례입니다. 현대 에티오피아 가정에서도 여전히 아침에 가족이 모여 원두를 굽고, 향긋한 연기가 집안을 가득 채우면 모두가 함께 차례로 커피를 나눕니다. 이때 사용되는 토기와 전통적인 도구들은 세대를 이어오며 전해 내려온 문화유산이죠. 두 나라의 커피 문화는 각각의 생활 방식과 가치관을 반영합니다. 이제 다음 이야기, United Arab Emirates로 넘어가 보겠습니다.",
