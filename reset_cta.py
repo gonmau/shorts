@@ -10,14 +10,14 @@ import os
 
 from common import load_db, save_db, split_sentences
 
-WORDS = ("구독", "좋아요", "알림 설정", "알림설정", "댓글")
+WORDS = ("subscribe", "hit the like", "like and", "turn on notifications", "notification", "comment below", "follow for", "follow us", "follow me")
 TTS_KEYS = ("status_tts_v2", "audio_path_v2", "timing_path_v2")
 VIDEO_KEYS = ("status_v6", "video_path_v6")
 EXTRA_KEYS = ("title_line1", "title_line2", "highlights", "image_queries", "image_source", "image_credits")
 
 
 def find_cta(item):
-    hits = [s for s in split_sentences(item.get("narration", "")) if any(w in s for w in WORDS)]
+    hits = [s for s in split_sentences(item.get("narration", "")) if any(w in s.lower() for w in WORDS)]
     return hits
 
 

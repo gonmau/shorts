@@ -12,7 +12,7 @@ import requests
 
 from common import split_sentences
 
-LANG = "ko"
+LANG = "en"
 VERIFIERS = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b", "llama-3.1-70b-versatile"]
 
 
