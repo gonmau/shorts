@@ -991,7 +991,7 @@
   ]
  },
  "11": {
-  "narration": "포트와인이 2년 미만 숙성됐다고 생각해 보셨나요? 사실 포르투갈에서는 2년 이하 숙성된 주류를 절대 ‘Vinho do Porto’라고 부를 수 없습니다. 1934년부터 시행된 이 법은 리스보아 강변에 위치한 전통적인 와인 저장고, 즉 ‘cave’에서 최소 24개월을 머무르게 합니다. 이렇게 해야만 포트와인의 원산지와 품질이 보장됩니다. 이런 장기 숙성은 와인에 깊은 견과류와 건과일 향을 부여해, 한 모금만 마셔도 시간의 흐름을 느낄 수 있게 합니다. 일상에서는 레스토랑에서 ‘포트와인’이라고 주문하면, 이미 최소 2년 숙성된 와인이 제공된다는 안심을 얻을 수 있습니다. 이제 포트와인의 진정한 가치를 이해하셨다면, 다음에는 독일의 맥주 문화가 어떻게 세계와 차별화되는지 살펴보겠습니다.",
+  "narration": "포트와인이 2년도 채 안 된 '풋내기' 와인일 수도 있다고 생각해보신 적 있나요? 사실 포르투갈에서는 2년 이하로 숙성된 주류에 절대 ‘Vinho do Porto’라는 공식 명칭을 붙여주지 않는답니다. 여기서 ‘Vinho do Porto’는 직역하면 ‘포르투 도시의 와인’이라는 뜻으로, 포르투갈을 대표하는 항구 도시 포르투를 통해 전 세계로 수출되며 붙은 고유한 이름이죠. 무려 1934년부터 시행된 엄격한 법에 따라, 리스보아 강변의 전통 와인 저장고인 ‘cave’에서 최소 24개월을 묵묵히 머물러야 비로소 이 자랑스러운 이름을 얻게 됩니다. 이렇게 깐깐한 과정을 거쳐야만 포트와인 고유의 원산지와 품질이 든든하게 보장되죠. 오랜 시간 정성스레 숙성된 덕분에 한 모금 머금는 순간 깊은 견과류 향과 건과일 풍미가 은은하게 퍼져, 시간의 흐름을 고스란히 느끼게 해줍니다. 일상에서도 레스토랑에서 포트와인을 주문하면 이미 최소 2년 이상 잘 숙성된 와인이 나올 거라는 안심을 가지게 된답니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1006,28 +1006,7 @@
     "text": "레스토랑에서 포트와인"
    }
   ],
-  "compare": {
-   "title": "Portugal vs Germany",
-   "left": "Portugal",
-   "right": "Germany",
-   "rows": [
-    {
-     "label": "숙성 규정",
-     "left": "최소 2년 고정",
-     "right": "규정 없음"
-    },
-    {
-     "label": "주류 종류",
-     "left": "강화 와인 중심",
-     "right": "맥주 다양"
-    },
-    {
-     "label": "법적 엄격성",
-     "left": "엄격",
-     "right": "느슨"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "포트와인은 최소 2년 숙성, 빈티지는 50년까지 가능합니다.",
   "broll": [
    "port wine cellar aging",
@@ -1053,38 +1032,60 @@
   },
   "sig": "44af095b02a5",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:58"
+  "created": "2026-10-25 13:58",
+  "compare_at": 0,
+  "images": [],
+  "title1": "포트와인",
+  "title2": "숙성 규정",
+  "clip_queries": [
+   "port wine cellar aging",
+   "river Douro vineyards",
+   "tasting glass port wine"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:18",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0011_Portugal.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0011_Portugal_timing.json",
+  "tts_hash": "9cf4df8bb8b4",
+  "clips": [
+   {
+    "query": "port wine cellar aging",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0011_Portugal\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "micegreens",
+    "page": "https://pixabay.com/videos/id-135643/",
+    "id": "pixabay135643",
+    "check": "ok"
+   },
+   {
+    "query": "river Douro vineyards",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0011_Portugal\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Ramiro--",
+    "page": "https://pixabay.com/videos/id-133905/",
+    "id": "pixabay133905",
+    "check": "ok"
+   },
+   {
+    "query": "tasting glass port wine",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0011_Portugal\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Life-Of-Vids",
+    "page": "https://pixabay.com/videos/id-3152/",
+    "id": "pixabay3152",
+    "check": "ok"
+   }
+  ]
  },
  "12": {
-  "narration": "밤 10시가 지나면 독일은 ‘나흐트루에’라는 조용한 시간을 선언합니다. 이 규정은 19세기 산업혁명 이후, 도시가 번잡해지면서 주민들의 휴식을 보호하기 위해 만들어졌습니다. 밤 10시부터 아침 6시까지는 큰 음악, 파티, 공사 소음이 제한됩니다. 하지만 모든 소음이 금지되는 것은 아닙니다. 가벼운 대화나 주방 소리 정도는 허용됩니다. 지역마다 세부 규정이 다르며, 일부 지방은 ‘야간 정숙’ 시간을 더 길게 두기도 합니다. 일요일과 공휴일에는 별도의 ‘주말 정숙’ 규정이 적용되어 낮에도 소음이 제한됩니다. 실제로, 한 아파트 단지에서 파티가 11시까지 이어지자 이웃이 경찰에 신고했고, 주최자는 과태료를 부과받았습니다. 이처럼 규정은 단순한 관습이 아니라 이웃 간의 상호 존중을 강조합니다. 독일 사람들은 ‘조용한 시간’을 지키는 것이 공동체 생활의 기본이라고 생각합니다. 이 규정은 다른 나라와도 차이가 큽니다. 예를 들어, 캐나다 퀘벡은 지역마다 다르게 적용되며, ‘정숙’ 규정이 덜 엄격합니다. 독일의 ‘나흐트루에’는 생활 속에서 실제로 체감되는 규칙이죠. 다음으로 캐나다 퀘벡의 규정을 살펴보겠습니다.",
+  "narration": "이렇게 시간과 정성을 들여 깊은 맛을 지켜가는 포르투갈처럼, 일상 속에서 철저한 규칙으로 서로의 평화를 지키는 또 다른 나라가 있습니다. 바로 밤 10시가 지나면 온 동네가 일시정지 버튼을 누른 것처럼 고요해지는 독일입니다. ‘나흐트루에’라 불리는 이 규정은 1세기 전 산업혁명 이후 바쁜 하루를 보낸 주민들의 휴식을 지켜주기 위해 만들어진 생활 규칙이에요. 밤 10시부터 아침 6시까지는 큰 음악 소리나 파티, 시끄러운 공사 소음이 제한되지만, 그렇다고 집 안에서 숨 쉬는 소리까지 잡는 건 아니니 걱정 마세요. 가벼운 대화나 주방에서 나는 소소한 소리 정도는 자연스럽게 허용된답니다. 지역에 따라 세부적인 규정이 조금씩 다르며, 일요일과 공휴일에는 별도의 ‘주말 정숙’ 규정이 적용되어 낮에도 소음이 차분하게 관리돼요. 실제로 한 아파트에서 신나게 파티를 벌이다 밤 11시까지 이어지는 바람에 이웃의 신고로 경찰이 출동하고 과태료를 물게 된 해프닝도 있답니다. 이 규정은 단순한 딱딱한 관습이 아니라 이웃을 배려하는 따뜻한 상호 존중의 약속에 가까워요.",
   "keywords": [
    {
     "sentence": 1,
     "text": "밤 10시"
    }
   ],
-  "compare": {
-   "title": "Germany vs Canada (Quebec)",
-   "left": "Germany",
-   "right": "Canada (Quebec)",
-   "rows": [
-    {
-     "label": "정숙 시간",
-     "left": "밤 10시-오전 6시",
-     "right": "지역별 다름"
-    },
-    {
-     "label": "규정 엄격도",
-     "left": "엄격",
-     "right": "느슨"
-    },
-    {
-     "label": "과태료 여부",
-     "left": "있음",
-     "right": "일부 지역에서"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "독일의 나흐트루에는 이웃의 휴식을 지키는 생활 규칙이다.",
   "broll": [
    "city night street quiet",
@@ -1109,10 +1110,44 @@
   },
   "sig": "ef3d93f31ecc",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-25 13:58"
+  "created": "2026-10-25 13:58",
+  "compare_at": 0,
+  "images": [],
+  "title1": "독일의 밤 10시 규칙",
+  "title2": "일요일에도 조용해야 한다?",
+  "clip_queries": [
+   "city night street quiet",
+   "apartment building interior",
+   "police station exterior"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:16",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0012_Germany.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0012_Germany_timing.json",
+  "tts_hash": "e949d0237ab0",
+  "clips": [
+   {
+    "query": "city night street quiet",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0012_Germany\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Matthias_Groeneveld",
+    "page": "https://pixabay.com/videos/id-63970/",
+    "id": "pixabay63970",
+    "check": "ok"
+   },
+   {
+    "query": "apartment building interior",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0012_Germany\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "JOHN_EGO",
+    "page": "https://pixabay.com/videos/id-76398/",
+    "id": "pixabay76398",
+    "check": "ok"
+   }
+  ]
  },
  "13": {
-  "narration": "1970년대에 제정된 ‘빌 101’은 프랑스어를 공공 생활의 기본 언어로 지정했습니다. 이 법에 따라 모든 도로 표지, 상점 안내판, 심지어 관광지 안내도 반드시 프랑스어로 표기해야 합니다. 영어는 부수적인 정보로만 허용돼, 실제로 영어를 크게 표시하면 기업에 금액이 큰 벌금이 부과됩니다. 예를 들어, 몬트리올 시내 카페가 메뉴판에 영어를 추가하면 검열을 받고, 위반 시 일일 과태료를 부과받게 됩니다. 주민들은 일상 속에서 프랑스어 표지판을 자연스럽게 접하고, 외국인 방문객은 프랑스어만 보이면 직접 요청해야 영어 안내를 받을 수 있습니다. 이런 언어 정책은 퀘벡 주민들의 정체성을 보호한다는 취지지만, 영어 사용이 제한되는 만큼 기업 운영에 부담이 되기도 합니다. 다른 주와 달리 퀘벡은 언어 규제가 가장 엄격한 편이며, 이는 캐나다 전역에서 독특한 문화적 차이를 만들죠. 다음엔 남미의 언어 정책을 살펴볼까요?",
+  "narration": "이웃을 배려하는 독일의 조용한 규칙처럼, 자국의 고유한 문화와 정체성을 지키기 위해 강력한 법안을 고수하는 곳도 있죠. 바로 캐나다의 퀘벡입니다. 1970년대에 제정된 ‘빌 101’ 법안은 프랑스어를 퀘벡 공공 생활의 기본 언어로 지정했습니다. 이 법에 따라 모든 도로 표지판과 상점 안내판, 심지어 관광지 안내까지 반드시 프랑스어로 표기해야 하죠. 영어는 부수적인 정보로만 허용되어, 만약 영어를 너무 크게 표시했다간 기업에 제법 묵직한 벌금이 부과된답니다. 예를 들어 몬트리올 시내의 한 카페가 메뉴판에 영어를 추가했다가 단속에 걸려 일일 과태료를 물게 된 일화도 있어요. 주민들은 일상 속에서 프랑스어 표지판을 당연하게 접하고, 외국인 방문객은 프랑스어만 보이면 직접 정중히 요청해야 영어 안내를 받을 수 있습니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1125,34 +1160,9 @@
    {
     "sentence": 5,
     "text": "과태료 부과"
-   },
-   {
-    "sentence": 8,
-    "text": "언어 규제 가장 엄격"
    }
   ],
-  "compare": {
-   "title": "Canada (Quebec) vs Argentina",
-   "left": "Canada (Quebec)",
-   "right": "Argentina",
-   "rows": [
-    {
-     "label": "언어 정책",
-     "left": "엄격",
-     "right": "느슨"
-    },
-    {
-     "label": "공공 표지",
-     "left": "프랑스어 우선",
-     "right": "스페인어 주류"
-    },
-    {
-     "label": "벌금 부과",
-     "left": "많음",
-     "right": "적음"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "퀘벡은 프랑스어 표지판을 강제하는 독특한 언어 규제를 시행합니다.",
   "broll": [
    "Quebec street signs French",
@@ -1172,10 +1182,25 @@
   },
   "sig": "0492e871b2ea",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:58"
+  "created": "2026-10-25 13:58",
+  "compare_at": 0,
+  "images": [],
+  "title1": "퀘벡 표지판 규정",
+  "title2": "영어 표지판에 벌금?",
+  "clip_queries": [
+   "Quebec street signs French",
+   "Montreal cafe menu French",
+   "Quebec tourism office signage"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0013_Canada_Quebec_.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0013_Canada_Quebec__timing.json",
+  "tts_hash": "b90b454a56a1",
+  "clips": []
  },
  "14": {
-  "narration": "아르헨티나에서 아이 이름 짓는 일, 생각보다 복잡합니다. 출생 신고는 민사등록소에서 진행되는데, 이곳은 ‘허용되지 않은 이름’ 리스트를 운영합니다. 스페인어가 아닌 외국어 이름, 특수문자, 심지어 발음이 이상하거나 의미가 모호한 이름까지 금지 대상이죠. 예를 들어 ‘Mickey Mouse’처럼 상표권이 있는 이름도 허용되지 않습니다. 부모가 이런 이름을 신청하면 등록이 바로 거절됩니다. 실제로 ‘Jürgen’, ‘X Æ A‑12’ 같은 이름을 제시하면 서류가 반려된 사례가 보고되었습니다. 리스트는 정기적으로 업데이트돼, 새로운 트렌드나 외래어가 추가될 때마다 검토가 필요합니다. 그래서 많은 부모는 이름을 정하기 전에 온라인으로 리스트를 확인하고, 필요하면 변형하거나 스페인어식으로 바꾸어 신청합니다. 이런 제도는 아이가 성장하면서 겪을 수 있는 사회적 불편을 미리 방지한다는 취지이지만, 개인의 자유와 창의성을 제한한다는 비판도 있습니다. 반면, 일부 국가에서는 이름 제한이 거의 없거나 아주 제한적인 경우만 존재합니다. 아르헨티나의 이름 규제는 문화적 정체성을 보호하려는 노력이라고 볼 수 있겠죠. 다음에는 호주 퀸즐랜드의 독특한 이름 관습을 살펴보겠습니다.",
+  "narration": "이렇게 언어로 고유의 색채를 굳건히 지키려는 노력은, 아이의 이름을 짓는 순간까지도 이어집니다. 아르헨티나에서 새로 태어난 아이의 이름을 짓는 일은 생각보다 세심한 과정을 거쳐야 하거든요. 출생 신고를 하는 민사등록소에서는 아주 철저한 ‘허용되지 않은 이름’ 리스트를 운영하고 있습니다. 스페인어가 아닌 외국어 이름, 특수문자, 발음이 이상하거나 의미가 모호한 이름은 물론, ‘Mickey Mouse’처럼 반짝이는 상표권이 걸린 이름도 당연히 허용되지 않아요. 부모가 이런 이름을 신청하면 등록이 곧바로 거절되곤 합니다. 실제로 ‘Jürgen’이나 ‘X Æ A-12’ 같은 독특한 이름을 제시했다가 서류가 반려된 해프닝도 보고되었죠. 이 제도는 아이가 무럭무럭 자라며 겪을 수 있는 사회적 불편을 미리 방지한다는 취지이지만, 개인의 자유나 창의성을 제한한다는 아쉬운 목소리도 공존한답니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1188,34 +1213,9 @@
    {
     "sentence": 5,
     "text": "‘Mickey Mouse’ 같"
-   },
-   {
-    "sentence": 9,
-    "text": "리스트는 정기적으로 업데이트"
    }
   ],
-  "compare": {
-   "title": "Argentina vs Australia (Queensland)",
-   "left": "Argentina",
-   "right": "Australia (Queensland)",
-   "rows": [
-    {
-     "label": "이름 제한 정도",
-     "left": "엄격",
-     "right": "느슨"
-    },
-    {
-     "label": "주요 제한 항목",
-     "left": "외국어·특수문자",
-     "right": "중복·불쾌감"
-    },
-    {
-     "label": "문화적 목적",
-     "left": "정체성 보호",
-     "right": "다양성 존중"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "아르헨티나는 이름 리스트로 아이 이름을 미리 검증합니다.",
   "broll": [
    "civil registry office interior",
@@ -1241,14 +1241,29 @@
   },
   "sig": "ad2f6e9638ec",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:59"
+  "created": "2026-10-25 13:59",
+  "compare_at": 0,
+  "images": [],
+  "title1": "이름 등록",
+  "title2": "제한 제도",
+  "clip_queries": [
+   "civil registry office interior",
+   "parents filling birth certificate",
+   "argentina street with families"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0014_Argentina.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0014_Argentina_timing.json",
+  "tts_hash": "7ffb7f38fbe3",
+  "clips": []
  },
  "15": {
-  "narration": "퀸즐랜드 해변에 개를 데리고 가면 안 된다는 사실, 알고 계셨나요? 매년 11월부터 2월까지는 바다거북이 알을 낳는 중요한 시기라서, 주 정부가 해변에서 개를 산책시키는 것을 전면 금지합니다. 이 규정은 알과 부화한 새끼가 포식자와 인간의 방해 없이 안전하게 성장하도록 돕기 위한 환경법이에요. 위반 시에는 벌금이 부과되는데, 이는 단순한 규제라기보다 생태계를 보호하려는 강력한 의지의 표현이죠. 현장에서 흔히 보이는 ‘Dog Off‑Leash’ 표지판이 실제로는 ‘Dog Prohibited’ 표지판으로 바뀐 경우가 많아, 방문 전 표지판을 꼭 확인해야 합니다. 예를 들어, 골드 코스트의 인기 해변에서는 매일 아침마다 순찰팀이 표지판을 점검하고, 개를 데리고 온 사람에게는 친절히 안내문을 전달합니다. 이런 작은 실천이 모여 바다거북 개체수가 회복되고, 해변의 자연경관도 유지됩니다. 호주 외에도 캐나다 퀘벡에서는 겨울철에 눈 위에서 개를 자유롭게 풀어놓는 문화가 있지만, 퀸즐랜드처럼 해양 생태를 보호하기 위한 엄격한 규제는 드뭅니다. 이런 차이를 통해 각 나라가 어떤 자연을 중시하고, 어떻게 관리하는지 엿볼 수 있죠. 여러분도 퀸즐랜드를 찾을 때는 개를 집에 두고, 깨끗한 해변을 함께 지켜 주세요. 다음은 몽골의 광활한 초원 이야기를 이어갑니다.",
+  "narration": "아이의 미래를 지키려는 아르헨티나의 규칙을 뒤로하고, 이번엔 자연과 생태계를 지키기 위해 해변의 규칙까지 엄격하게 다스리는 호주 퀸즐랜드로 눈을 돌려볼까요? 아름다운 퀸즐랜드 해변에 귀여운 반려견을 데리고 가 신나게 뛰어놀게 해주고 싶은 로망, 잠시 마음속에 접어두셔야 할지도 몰라요. 매년 11월부터 2월까지는 소중한 바다거북이들이 알을 낳으러 찾아오는 특별한 시기라서, 주 정부가 해변에서의 개 산책을 금지하고 있거든요. 이 규정은 알과 부화한 새끼들이 포식자와 사람들의 방해 없이 안전하게 성장하도록 돕는 환경법이랍니다. 위반 시에는 벌금이 부과되는데, 현장에서 흔히 보이던 ‘Dog Off-Leash’ 표지판이 이 시기엔 ‘Dog Prohibited’ 표지판으로 바뀌어 있으니 방문 전에 눈여겨보셔야 합니다. 골드 코스트의 인기 해변에서는 매일 아침 순찰팀이 표지판을 점검하고, 잘 모르고 개를 데려온 분들에게 친절히 안내문을 건네준답니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "퀸즐랜드 해변에 개를 데리고 "
+    "text": "퀸즐랜드 해변에 개를 데리고"
    },
    {
     "sentence": 2,
@@ -1257,34 +1272,9 @@
    {
     "sentence": 4,
     "text": "Dog Prohibited 표"
-   },
-   {
-    "sentence": 7,
-    "text": "골드 코스트 순찰팀"
    }
   ],
-  "compare": {
-   "title": "Australia (Queensland) vs Mongolia",
-   "left": "Australia (Queensland)",
-   "right": "Mongolia",
-   "rows": [
-    {
-     "label": "보호 대상",
-     "left": "바다거북 알",
-     "right": "야생 말"
-    },
-    {
-     "label": "규제 강도",
-     "left": "엄격",
-     "right": "느슨"
-    },
-    {
-     "label": "주요 시기",
-     "left": "11~2월",
-     "right": "연중"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "퀸즐랜드 해변, 개 금지로 바다거북을 지키다.",
   "broll": [
    "Queensland beach turtle nesting",
@@ -1308,10 +1298,44 @@
   },
   "sig": "e96466254238",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:59"
+  "created": "2026-10-25 13:59",
+  "compare_at": 0,
+  "images": [],
+  "title1": "퀸즐랜드해변금개",
+  "title2": "거북이 알은 안전할까?",
+  "clip_queries": [
+   "Queensland beach turtle nesting",
+   "coastal patrol sign checking",
+   "gold coast sunrise waves"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0015_Australia_Queensland_.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0015_Australia_Queensland__timing.json",
+  "tts_hash": "07c8660df1b3",
+  "clips": [
+   {
+    "query": "Queensland beach turtle nesting",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0015_Australia (Queensland)\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "PaulsAdventures",
+    "page": "https://pixabay.com/videos/id-244754/",
+    "id": "pixabay244754",
+    "check": "ok"
+   },
+   {
+    "query": "gold coast sunrise waves",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0015_Australia (Queensland)\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Mario_Krimer",
+    "page": "https://pixabay.com/videos/id-322875/",
+    "id": "pixabay322875",
+    "check": "ok"
+   }
+  ]
  },
  "16": {
-  "narration": "5살 아이가 성인보다 빠른 말 위에 올라간다고 상상해 보셨나요? 매년 열리는 나담 축제는 몽골 전통의 핵심 행사로, 5~7세 어린 기수들이 15km 코스를 질주합니다. 몽골인들은 어릴 때부터 승마를 배우면 용맹함과 인내가 길러진다고 믿습니다. 그래서 아이들은 어릴 때부터 말과 함께 자라며, 일상에서도 말이 생활의 일부가 됩니다. 말은 사계절 내내 야외에 머물며 스스로 먹이를 찾아야 하고, 겨울엔 –40°C까지 떨어지는 추위도 견뎌야 합니다. 이런 환경에서 자란 몽골 말은 강인하고 빠른 체력을 갖추게 되죠. 나담의 말 경주는 단순한 경기 그 이상입니다. 마을 전체가 모여 아이들의 승부를 응원하고, 승리한 기수는 가족에게 명예와 보상을 안겨 줍니다. 이는 현대 스포츠와는 달리 공동체와 전통이 깊게 얽힌 문화 행사라 할 수 있습니다. 이제 우리 눈앞에 펼쳐지는 어린 손에 잡힌 고삐와 바람을 가르는 말의 모습을 떠올려 보세요. 다음에는 스페인의 또 다른 흥미로운 전통을 살펴보겠습니다.",
+  "narration": "바다거북을 품어주는 호주의 청정 해변을 떠나, 이번엔 광활한 초원 위에서 동물과 함께 거친 호흡을 나누며 살아가는 몽골로 향해봅니다. 5살짜리 꼬마 아이가 성인보다 훨씬 빠른 말 위에 올라탄 채 거친 초원을 달린다고 상상해 보셨나요? 매년 열리는 몽골의 전통 최대 축제 ‘나담’에서는 5세부터 7세 사이의 어린 기수들이 무려 15km에 이르는 드넓은 코스를 힘차게 질주합니다. 몽골인들은 어릴 때부터 자연스럽게 승마를 배우며 용맹함과 깊은 인내가 길러진다고 믿어요. 그래서 아이들은 어릴 때부터 말과 함께 어우러져 자라며, 일상 속에서도 말이 삶의 가장 소중한 일부가 된답니다. 사계절 내내 야외에서 스스로 먹이를 찾고 겨울이면 영하 40도까지 떨어지는 매서운 추위도 씩씩하게 견뎌낸 몽골 말들은 저마다 강인하고 빠른 체력을 갖추게 되죠. 마을 전체가 다 함께 모여 아이들의 멋진 달리기를 응원하고, 자랑스럽게 승리한 기수는 가족에게 큰 명예와 기쁨을 안겨주는 생생한 삶의 현장입니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1330,23 +1354,7 @@
     "text": "명예와 보상"
    }
   ],
-  "compare": {
-   "title": "Mongolia vs Spain",
-   "left": "Mongolia",
-   "right": "Spain",
-   "rows": [
-    {
-     "label": "전통 행사",
-     "left": "나담 축제",
-     "right": "산 페르민 축제"
-    },
-    {
-     "label": "경쟁 방식",
-     "left": "말 경주",
-     "right": "불꽃놀이와 퍼레이드"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "몽골 나담, 어린 기수가 달리는 전통 스포츠",
   "broll": [
    "Mongolian horse race",
@@ -1367,10 +1375,44 @@
   },
   "sig": "5063a41823a2",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 14:00"
+  "created": "2026-10-25 14:00",
+  "compare_at": 0,
+  "images": [],
+  "title1": "이곳에서는 5살 아이가 성인보다",
+  "title2": "빠른 말 위에 올라갑니다!",
+  "clip_queries": [
+   "Mongolian horse race",
+   "children jockeys on horses",
+   "steppe landscape sunrise"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0016_Mongolia.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0016_Mongolia_timing.json",
+  "tts_hash": "f49d986bbc9e",
+  "clips": [
+   {
+    "query": "Mongolian horse race",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0016_Mongolia\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Mollyroselee",
+    "page": "https://pixabay.com/videos/id-358278/",
+    "id": "pixabay358278",
+    "check": "ok"
+   },
+   {
+    "query": "steppe landscape sunrise",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0016_Mongolia\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Neugiernase",
+    "page": "https://pixabay.com/videos/id-62017/",
+    "id": "pixabay62017",
+    "check": "ok"
+   }
+  ]
  },
  "17": {
-  "narration": "스페인 부뇰에서 매년 열리는 라 토마티나는 세계 최대의 토마토 전쟁입니다. 8월 마지막 수요일, 수천 명이 거리로 모여 빨간 토마토를 손으로 으깨고 1시간 동안만 던집니다. 시간 제한은 쓰레기와 안전 문제를 줄이기 위해 지방 정부가 만든 규칙입니다. 1시간이 끝나면 모두 동시에 멈추고, 남은 토마토는 바로 비료로 전환됩니다. 이 비료는 지역 농부들에게 무료로 배포돼 농업을 돕습니다. 처음엔 친구들 간의 장난이었지만, 지금은 20,000명까지 제한된 티켓제로 운영됩니다. 참가자는 토마토를 손으로만 잡을 수 있고, 물이나 다른 물건을 사용하면 안 됩니다. 거리 곳곳에 비누와 물이 준비돼 청소가 빠르게 이루어집니다. 토마토는 특수 품종을 사용해 부드럽고 빨갛게 익혀, 부상 위험을 최소화합니다. 이처럼 축제는 파티와 환경 보호가 동시에 이루어지는 독특한 순환 구조를 보여줍니다. 다음 라 토마티나는 언제가 될지 기대되시나요? 이제 남아프리카 공화국의 색다른 축제로 넘어가 보겠습니다.",
+  "narration": "말과 함께 대초원을 달리던 몽골의 뜨거운 축제 열기를 이어받아, 이번엔 스페인의 유쾌한 축제로 떠나볼까요? 스페인 부뇰에서 매년 8월 마지막 수요일에 펼쳐지는 ‘라 토마티나’는 전 세계에서 사랑받는 거대한 토마토 축제입니다. 수천 명의 사람들이 거리로 모여 빨간 토마토를 손으로 부드럽게 으깨며 딱 1시간 동안 유쾌한 전투를 즐기죠. 이렇게 시간을 딱 1시간으로 제한하는 것은 쓰레기를 줄이고 안전을 지키기 위해 지방 정부가 마련한 지혜로운 규칙이랍니다. 1시간의 신나는 난리가 끝나면 모두 동시에 멈추고, 바닥에 남은 토마토들은 곧바로 수거되어 농부들에게 무료 비료로 전달돼요. 파티의 즐거움과 환경 보호라는 가치가 멋지게 어우러진 독특한 순환 구조의 축제예요.",
   "keywords": [
    {
     "sentence": 1,
@@ -1383,34 +1425,9 @@
    {
     "sentence": 5,
     "text": "남은 토마토는 비료로 재활용"
-   },
-   {
-    "sentence": 7,
-    "text": "20,000명까지 티켓제로 운"
    }
   ],
-  "compare": {
-   "title": "Spain vs South Africa",
-   "left": "Spain",
-   "right": "South Africa",
-   "rows": [
-    {
-     "label": "축제 규모",
-     "left": "수천 명",
-     "right": "수백 명"
-    },
-    {
-     "label": "시간 제한",
-     "left": "엄격(1시간)",
-     "right": "느슨(전일)"
-    },
-    {
-     "label": "잔여물 활용",
-     "left": "비료 재활용",
-     "right": "음식 기부"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "라 토마티나는 1시간 전투와 비료 재활용이 특징인 축제입니다.",
   "broll": [
    "tomato fight crowd",
@@ -1436,10 +1453,44 @@
   },
   "sig": "590b432c987e",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 14:00"
+  "created": "2026-10-25 14:00",
+  "compare_at": 0,
+  "images": [],
+  "title1": "스페인 토마토 전쟁, 사실은",
+  "title2": "1시간만 허용된다는 사실!",
+  "clip_queries": [
+   "tomato fight crowd",
+   "street cleanup after festival",
+   "fertilizer spreading fields"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0017_Spain.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0017_Spain_timing.json",
+  "tts_hash": "d70b7392c2d0",
+  "clips": [
+   {
+    "query": "street cleanup after festival",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0017_Spain\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "jimkuehnel",
+    "page": "https://pixabay.com/videos/id-35239/",
+    "id": "pixabay35239",
+    "check": "ok"
+   },
+   {
+    "query": "fertilizer spreading fields",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0017_Spain\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Thomas-Ritter",
+    "page": "https://pixabay.com/videos/id-364401/",
+    "id": "pixabay364401",
+    "check": "ok"
+   }
+  ]
  },
  "18": {
-  "narration": "남아프리카에서 공원에선 바베큐를 어디서 할 수 있을까요? 답은 ‘Braai 전용 구역’에 있습니다. 남아공의 많은 공원과 해변에는 불을 피울 수 있는 지정 구역이 명확히 표시돼 있어요. 이 구역 밖에서 불을 지피면 즉시 벌금이 부과되는데, 이는 산불 위험을 크게 줄이고 자연을 깨끗하게 유지하려는 목적입니다. 특히 건조한 여름철에는 작은 불씨 하나가 큰 재난으로 번질 수 있기 때문에, 관리 당국이 엄격히 규제합니다. 최근 몇몇 도시에서는 ‘Braai Permit’ 모바일 앱을 도입했어요. 사용자는 앱을 통해 현재 사용 가능한 그릴 자리를 실시간으로 확인하고, 원하는 시간에 미리 예약할 수 있습니다. 예약을 하면 현장에서 자리 다툼이나 불법 사용으로 인한 갈등을 예방할 수 있죠. 현지 주민들은 주말마다 가족·친구와 함께 지정된 Braii 장소에 모여 고기와 채소를 구우며 이야기를 나눕니다. 이때 흔히 쓰이는 ‘braai’라는 단어는 남아공만의 고유 문화로, 단순히 요리하는 행위를 넘어 사회적 교류의 장을 의미합니다. 다른 나라에서는 공공 장소에서 바베큐가 비교적 자유로운 경우가 많지만, 남아공은 자연 보호와 공공 질서 유지를 위해 체계적인 관리 시스템을 갖추고 있습니다. 다음에는 베트남의 길거리 음식 문화와 그 독특한 풍미를 살펴볼게요.",
+  "narration": "여럿이 모여 신나게 축제를 즐기는 모습은, 남아프리카 공화국 사람들이 모여서 함께 불을 피우고 음식을 나누는 특별한 일상과도 자연스럽게 연결됩니다. 남아프리카의 공원이나 아름다운 해변에서는 맛있는 바베큐를 과연 어디서 즐길 수 있을까요? 정답은 바로 준비된 ‘Braai 전용 구역’에 있습니다. 남아공의 많은 공원에는 불을 피워도 안전한 지정 구역이 명확하게 표시되어 있어요. 만약 이 구역 밖에서 섣불리 불을 지피면 즉시 벌금이 부과되는데, 이는 건조한 날씨 속에서 산불 위험을 크게 줄이고 소중한 자연을 깨끗하게 지키기 위한 필수적인 조치입니다. 최근에는 ‘Braai Permit’이라는 모바일 앱까지 도입되어 사용자가 앱을 통해 실시간으로 그릴 자리를 예약하고 현장의 갈등을 예방할 수 있죠. 주말마다 소중한 가족, 친구들과 함께 모여 고기를 구우며 마음을 나누는 소중한 교류의 장이랍니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1458,28 +1509,7 @@
     "text": "사회적 교류"
    }
   ],
-  "compare": {
-   "title": "South Africa vs Canada",
-   "left": "South Africa",
-   "right": "Canada",
-   "rows": [
-    {
-     "label": "공공 바베큐 규제",
-     "left": "엄격",
-     "right": "느슨"
-    },
-    {
-     "label": "전용 예약 시스템",
-     "left": "앱 기반",
-     "right": "대부분 없음"
-    },
-    {
-     "label": "문화적 의미",
-     "left": "사회 교류 중심",
-     "right": "레크리에이션 중심"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "공원 Braai 구역은 안전과 문화 보전을 위한 남아공만의 특별한 제도입니다.",
   "broll": [
    "public park barbecue area",
@@ -1505,10 +1535,53 @@
   },
   "sig": "9415377316a2",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 14:01"
+  "created": "2026-10-25 14:01",
+  "compare_at": 0,
+  "images": [],
+  "title1": "남아프리카에서는 허가받지 않은",
+  "title2": "바베큐를 하면 벌금을 물어요!",
+  "clip_queries": [
+   "public park barbecue area",
+   "mobile app reservation screen",
+   "family grilling outdoors"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0018_South_Africa.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0018_South_Africa_timing.json",
+  "tts_hash": "41b6757eb544",
+  "clips": [
+   {
+    "query": "public park barbecue area",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0018_South Africa\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "daniloriba",
+    "page": "https://pixabay.com/videos/id-53140/",
+    "id": "pixabay53140",
+    "check": "ok"
+   },
+   {
+    "query": "mobile app reservation screen",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0018_South Africa\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-3176/",
+    "id": "pixabay3176",
+    "check": "ok"
+   },
+   {
+    "query": "family grilling outdoors",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0018_South Africa\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "srb_films",
+    "page": "https://pixabay.com/videos/id-124831/",
+    "id": "pixabay124831",
+    "check": "ok"
+   }
+  ]
  },
  "19": {
-  "narration": "베트남 설날, 빨간 봉투에 들어가는 돈이 짝수여야 한다는 사실, 알고 계셨나요? Tết, 즉 베트남의 새해에는 어른이 어린이에게 ‘lì xì’라고 부르는 빨간 봉투에 금액을 넣어 줍니다. 여기서 중요한 점은 금액을 짝수로 맞추는 것이 관습이라는 것인데요, 짝수는 행운을, 홀수는 불운을 의미한다는 믿음이 깃혀 있습니다. 그래서 보통 2,000₫, 4,000₫, 6,000₫ 같은 금액이 많이 들어가죠. 최근 몇 년간은 숫자 ‘8’이 행운의 상징으로 강조돼, 800,000₫처럼 큰 금액을 넣는 경우도 인기를 끌고 있습니다. ‘8’은 부와 번영을 뜻해 아이들에게 더 큰 복을 빌어 주는 의미가 담겨 있거든요. 이 전통은 중국의 홍바오와 비슷하지만, 베트남에서는 금액을 짝수로 맞추는 규칙이 특히 강조됩니다. 또, 봉투 색도 빨간색에 국한되지 않고, 금색이나 은색을 쓰는 경우도 있어요. 실제로 베트남 가정에서는 설날 전날, 아이들이 새 옷을 입고 집 안을 돌아다니며 ‘lì xì’를 받는 모습을 흔히 볼 수 있습니다. 작은 봉투 하나에 담긴 금액까지도 복을 전하는 중요한 매개체가 되는 셈이죠. 여러분도 베트남을 방문하거나 설날을 맞이한다면, 이 전통을 직접 체험해 보세요. 다음에는 부탄의 독특한 축제 이야기를 살펴보겠습니다.",
+  "narration": "여럿이 모여 따뜻한 온정을 나누는 풍경은 베트남의 정겨운 설날 문화와도 결을 같이 합니다. 베트남의 설날인 테트(Tết)가 되면, 아이들은 빨간 봉투 속에 담길 용돈을 기대하며 눈을 반짝이곤 합니다. 어른들이 아이들에게 ‘lì xì’라고 부르는 이 빨간 봉투를 건네주거든요. 여기서 아주 흥미롭고 중요한 포인트는 금액을 반드시 ‘짝수’로 맞춰야 한다는 점입니다. 짝수는 행운을 가져다주고 홀수는 불운을 의미한다는 믿음이 담겨 있기 때문이죠. 보통 2,000동이나 4,000동 같은 짝수 단위가 많이 쓰이고, 최근엔 부와 번영을 상징하는 행운의 숫자 ‘8’을 활용해 큼직한 금액을 넣는 센스 있는 어른들도 늘고 있어요. 작은 봉투 하나에 담긴 세심한 금액 속에도 복을 전하고 싶어 하는 따뜻한 마음이 가득 담겨 있는 셈입니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1531,28 +1604,7 @@
     "text": "홍바오와 차이"
    }
   ],
-  "compare": {
-   "title": "Vietnam vs Bhutan",
-   "left": "Vietnam",
-   "right": "Bhutan",
-   "rows": [
-    {
-     "label": "전통 행사",
-     "left": "Tết 설날",
-     "right": "단가 축제"
-    },
-    {
-     "label": "복돈 관습",
-     "left": "짝수 금액 선물",
-     "right": "돈 대신 차례"
-    },
-    {
-     "label": "색상 의미",
-     "left": "빨강·금·은",
-     "right": "다채로운 깃발"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "Tết의 빨간 봉투는 짝수 금액으로 행운을 전합니다.",
   "broll": [
    "Vietnamese New Year celebration",
@@ -1571,10 +1623,35 @@
   },
   "sig": "acb8caec4a5c",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 14:01"
+  "created": "2026-10-25 14:01",
+  "compare_at": 0,
+  "images": [],
+  "title1": "베트남 설날 빨간봉투",
+  "title2": "짝수만 넣어야 할까?",
+  "clip_queries": [
+   "Vietnamese New Year celebration",
+   "red envelope handover",
+   "family gathering street market"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0019_Vietnam.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0019_Vietnam_timing.json",
+  "tts_hash": "082c5cb0e65c",
+  "clips": [
+   {
+    "query": "family gathering street market",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0019_Vietnam\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "RafterJr72",
+    "page": "https://pixabay.com/videos/id-23258/",
+    "id": "pixabay23258",
+    "check": "ok"
+   }
+  ]
  },
  "20": {
-  "narration": "부탄에서는 담배를 사면 바로 벌금을 물게 된다는 사실, 알고 계셨나요? 2004년, 부탄은 세계 최초로 담배 판매를 전면 금지했습니다. 판매는 물론, 개인이 담배를 소지하는 것까지 엄격히 제한하고 있죠. 적발될 경우 최대 100,000뇌툭, 즉 약 1,300달러에 달하는 벌금을 부과합니다. 이런 강력한 정책은 국민의 건강을 최우선으로 생각한 결과입니다. 정부는 금연 교육과 대체품 제공으로 전환을 지원하고, 거리마다 금연 표지판을 설치했습니다. 일상에서는 흡연 구역이 거의 사라져, 카페나 식당에서도 담배 연기를 전혀 보지 못합니다. 그러나 관광객에게는 예외가 있습니다. 부탄 국제공항 면세점에서는 여전히 담배를 구매할 수 있기 때문인데요, 입국 전후에만 제한이 적용됩니다. 이 점만 기억한다면 여행 중 불편함 없이 즐길 수 있습니다. 다른 나라와 비교하면, 부탄의 금연 정책은 그 강도와 범위에서 독특합니다. 하지만 여전히 담배를 완전히 없애지는 못했으며, 면세점 판매가 남아 있다는 점이 흥미롭습니다. 부탄의 사례는 정책이 문화와 생활에 어떻게 스며들 수 있는지를 보여줍니다. 여러분도 건강을 생각하는 작은 실천을 시작해 보세요.",
+  "narration": "새해의 복을 기원하는 베트남의 꼼꼼한 규칙처럼, 국민의 건강과 미래를 위해 국가 차원에서 아주 강력한 금지령을 내린 곳도 있죠. 마지막으로 떠날 곳은 바로 부탄입니다. 부탄에서는 담배 한 갑을 사려고 하면 깜짝 놀랄 만큼 큰 벌금을 마주하게 될 수도 있습니다. 지난 2004년, 부탄은 전 세계에서 유례를 찾기 힘든 과감한 결단으로 담배 판매를 전면 금지했거든요. 판매뿐만 아니라 개인이 담배를 소지하는 것조차 아주 엄격하게 제한하고 있습니다. 만약 적발될 경우에는 최대 10만 뇌툭, 우리 돈으로 환산하면 약 1,300달러에 달하는 무거운 벌금이 부과돼요. 국민 모두의 건강을 최우선으로 아끼고 생각하는 정부의 굳건한 마음에서 비롯된 결과랍니다. 일상 속에서는 흡연 구역이 거의 눈에 띄지 않지만, 외국인 관광객들을 위해 부탄 국제공항 면세점에서는 입국 전후의 짧은 순간에만 예외적으로 담배 구매를 허용하는 밀당도 숨어있죠. 부탄의 사례는 정책이 한 나라의 문화와 생활 속에 얼마나 깊숙이 스며들 수 있는지를 보여주는 멋진 예시랍니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1589,28 +1666,7 @@
     "text": "관광객 면세점 구매 가능"
    }
   ],
-  "compare": {
-   "title": "Bhutan vs Canada (Quebec)",
-   "left": "Bhutan",
-   "right": "Canada (Quebec)",
-   "rows": [
-    {
-     "label": "금연 정책",
-     "left": "전면 판매 금지",
-     "right": "흡연 구역 제한"
-    },
-    {
-     "label": "벌금 수준",
-     "left": "높음(100k뇌툭)",
-     "right": "보통 수준"
-    },
-    {
-     "label": "관광객 예외",
-     "left": "면세점 허용",
-     "right": "전면 금지"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "부탄은 담배 판매를 전면 금지하고, 벌금까지 부과하는 독특한 정책을 시행합니다.",
   "broll": [
    "Bhutan mountain village",
@@ -1627,6 +1683,40 @@
   },
   "sig": "c6b7a2f13a34",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 14:02"
+  "created": "2026-10-25 14:02",
+  "compare_at": 0,
+  "images": [],
+  "title1": "부탄에서는 담배를 사면",
+  "title2": "바로 벌금을 물게 됩니다!",
+  "clip_queries": [
+   "Bhutan mountain village",
+   "airport duty free shop",
+   "people walking smoke-free street"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 15:17",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0020_Bhutan.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0020_Bhutan_timing.json",
+  "tts_hash": "0d8b64672c24",
+  "clips": [
+   {
+    "query": "Bhutan mountain village",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0020_Bhutan\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Kanenori",
+    "page": "https://pixabay.com/videos/id-327388/",
+    "id": "pixabay327388",
+    "check": "ok"
+   },
+   {
+    "query": "people walking smoke-free street",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0020_Bhutan\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "TahaImtiaz16",
+    "page": "https://pixabay.com/videos/id-173333/",
+    "id": "pixabay173333",
+    "check": "ok"
+   }
+  ]
  }
 }
