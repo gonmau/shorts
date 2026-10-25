@@ -18,13 +18,26 @@ import time
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
-IS_EN = (BASE / "generate_topics.py").exists()
+def _detect_en(base):
+    """영어 채널 여부. 두 채널 파일이 섞인 폴더도 local_ui.py와 같은 규칙으로 판별 (channel.txt > 파일 구성 > generate_tts.py 내용)"""
+    has_en, has_ko = (base / "generate_topics.py").exists(), (base / "generate_culture_facts.py").exists()
+    if has_en and has_ko:
+        try:
+            return (base / "channel.txt").read_text(encoding="utf-8").strip().lower() == "en"
+        except Exception:
+            try:
+                return "ko-KR-SunHiNeural" not in (base / "generate_tts.py").read_text(encoding="utf-8")
+            except Exception:
+                return False
+    return has_en and not has_ko
+
+IS_EN = _detect_en(BASE)
 SCRIPTS = BASE / "longform_scripts.json"
 AUDIO_DIR = BASE / "audio"
 LEN_RANGE = (1400, 1900) if IS_EN else (650, 900)     # 확장 대본 글자 수(공백 포함). 한국어 약 100~130초 / 영어 약 100~130초
 MODELS = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "llama-3.1-8b-instant", "openai/gpt-oss-20b"]
 EN_PARTNERS = ["United States", "Japan", "China", "United Kingdom", "France", "Germany", "India", "Australia", "Brazil", "Canada"]
-VERSION = 2
+VERSION = 3
 
 
 def enabled():
@@ -99,8 +112,10 @@ def save_scripts(d):
 
 
 # ---------------------------------------------------------------- 프롬프트
-def _prompt(item, ev, next_info, candidates):
+def _prompt(item, ev, next_info, candidates, instruction=""):
     lo, hi = LEN_RANGE
+    ins = str(instruction or "").strip()
+    extra = (f"- EDITOR'S EXTRA INSTRUCTION (follow it): {ins}\n" if IS_EN else f"- 편집자의 추가 지시 (반드시 반영): {ins}\n") if ins else ""
     country = str(item.get("country", "")).strip()
     topic = str(item.get("topic") or item.get("title_line1") or "").strip()
     short = str(item.get("narration", "")).strip()
@@ -124,8 +139,9 @@ Rules:
 - compare: Korea is ALWAYS the left side. Pick the ONE country (from: {', '.join(candidates)}) whose situation is most different or most relatable for this subject and compare Korea with it in 3 rows. Each row: a short label (<=22 chars) and short values (<=28 chars each). If you are not sure about a number, use qualitative words (common / rare / strict / relaxed).
 - keywords: 3-5 short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken. Choose names, numbers, or key words.
 - recap: ONE short line (<=60 chars) summarising this chapter for the final recap screen.
-Return pure JSON only:
-{{"narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"Korea vs <country>","left":"Korea","right":"<country>","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"..."}}"""
+- broll: 3 short English stock-footage search queries (2-5 words each) for generic atmospheric video that fits this chapter (e.g. "seoul night street", "family dinner table"). No brand names, no specific people.
+{extra}Return pure JSON only:
+{{"narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"Korea vs <country>","left":"Korea","right":"<country>","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"...","broll":["...","...","..."]}}"""
     nxt = (f"마지막 문장은 다음 소재 '{next_info}'로 자연스럽게 넘어가는 한 줄 연결 멘트로 쓰세요."
            if next_info else "마지막 문장은 영상 전체를 정리하는 따뜻한 한 줄 마무리로 쓰세요 (구독/좋아요 요청은 금지).")
     return f"""당신은 '세계 문화 상식' 유튜브 롱폼(여러 나라를 묶은 긴 영상)의 한 챕터 나레이션 작가입니다.
@@ -144,8 +160,9 @@ Return pure JSON only:
 - compare(비교 카드): 왼쪽은 이 챕터의 나라('{country}'). 오른쪽은 다음 후보 중 이 소재와 가장 대비되는(또는 비교하기 좋은) 나라 하나를 고르세요: {', '.join(candidates)}. (특정 나라로 고정하지 말고 소재에 맞게 고르세요.) 3줄 비교. 줄마다 항목 이름(12자 이내)과 값(각 16자 이내). 숫자가 불확실하면 '많음/적음/엄격/느슨' 같은 정성 표현을 쓰세요.
 - keywords: 화면에 크게 띄울 짧은 문구(14자 이내) 3~5개와, 그 말이 나오는 문장 번호(1부터). 이름/숫자/핵심어 위주.
 - recap: 마지막 요약 화면용 한 줄(30자 이내).
-순수 JSON만 출력:
-{{"narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"{country} vs 나라","left":"{country}","right":"나라","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"..."}}"""
+- broll: 이 챕터 분위기에 맞는 일반적인 스톡 영상 검색어 3개 (영어, 2~5단어. 예: "forest lake sunrise", "street market crowd"). 브랜드/특정 인물 금지.
+{extra}순수 JSON만 출력:
+{{"narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"{country} vs 나라","left":"{country}","right":"나라","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"...","broll":["...","...","..."]}}"""
 
 
 def _normalize(d, n_sent_min=6):
@@ -173,7 +190,8 @@ def _normalize(d, n_sent_min=6):
         compare = {"title": clean(cmp_.get("title"))[:40], "left": clean(cmp_["left"])[:24], "right": clean(cmp_["right"])[:24], "rows": rows[:3]}
         if IS_EN:
             compare["left"] = "Korea"
-    return {"narration": narr, "keywords": kws[:5], "compare": compare, "recap": clean(d.get("recap"))[:70]}
+    broll = [clean(x)[:60] for x in (d.get("broll") or []) if isinstance(x, str) and clean(x)][:3]
+    return {"narration": narr, "keywords": kws[:5], "compare": compare, "recap": clean(d.get("recap"))[:70], "broll": broll}
 
 
 # ---------------------------------------------------------------- 검증
@@ -244,34 +262,72 @@ def ensure_audio(rec, key, text):
 
 
 # ---------------------------------------------------------------- 소재 1개
-def prepare_item(client, models, idx, item, next_info, candidates, force=False):
-    """확장 대본 + 음성. 성공하면 dict(narration, keywords, compare, recap, audio, timing, ...) 아니면 None"""
+KEEP_FIELDS = ("title1", "title2", "clip_queries", "clips", "locked_note")
+
+
+def get_rec(idx):
+    return load_scripts().get(str(idx)) or {}
+
+
+def update_rec(idx, fields, lock=True):
+    """사람이 고친 값을 저장한다. lock=True 면 이후 자동 실행이 이 대본을 덮어쓰지 않는다(다시 만들기 요청 제외)."""
+    store = load_scripts()
+    rec = store.get(str(idx)) or {}
+    rec.update(fields)
+    if lock:
+        rec["locked"] = True
+        rec["edited"] = time.strftime("%Y-%m-%d %H:%M")
+    store[str(idx)] = rec
+    save_scripts(store)
+    return rec
+
+
+def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False):
+    """확장 대본 (+ 음성). 성공하면 dict(narration, keywords, compare, recap, audio, timing, ...) 아니면 None.
+    - 사람이 고쳐서 잠근(locked) 대본은 force 가 아니면 그대로 쓴다. 지시문(instruction)이 있으면 그 지시를 반영해 다시 쓴다.
+    - plan_only=True 면 음성은 만들지 않는다 (대본/시나리오 미리보기용)."""
     import crosscheck as C
     store = load_scripts()
     key = str(idx)
     sig = _hash(VERSION, item.get("narration", ""), item.get("country", ""), next_info, ",".join(candidates), LEN_RANGE)
     rec = store.get(key) or {}
-    if force or rec.get("sig") != sig or not rec.get("narration"):
+    regen = force or bool(str(instruction or "").strip())
+    _nr = re.sub(r"\s+", "", rec.get("narration", ""))
+    if _nr and rec.get("locked") and not regen:   # 다른 언어로 만들어진 잠금 대본(채널 판별 오류 때 생김)은 쓰지 않는다
+        _ko = len(re.findall(r"[가-힣]", _nr)) / len(_nr)
+        if (_ko < 0.2) != IS_EN:
+            print(f"    [확장대본] {idx}: 저장된 대본의 언어가 채널과 달라 다시 만듭니다", flush=True)
+            rec = {k: v for k, v in rec.items() if k in KEEP_FIELDS}
+    if rec.get("narration") and rec.get("locked") and not regen:
+        print(f"    [확장대본] {idx}: 편집/잠금된 대본 사용 ({rec.get('edited', '')})", flush=True)
+    elif regen or rec.get("sig") != sig or not rec.get("narration"):
+        if client is None:
+            return None
         topic = f"{item.get('country', '')} {item.get('topic', '')}".strip()
         wl = "en" if IS_EN else "ko"
         ev = C._wiki(topic, wl) or ([] if IS_EN else C._wiki(topic, "en"))
         d, used = None, None
         for attempt in range(2):
-            d, used = _chat(client, models, "You write accurate, engaging voice-over scripts. Output JSON only.", _prompt(item, ev, next_info, candidates))
+            d, used = _chat(client, models, "You write accurate, engaging voice-over scripts. Output JSON only.", _prompt(item, ev, next_info, candidates, instruction))
             res = _normalize(d) if d else None
             if res and len(res["narration"]) >= LEN_RANGE[0] * 0.6:
                 break
             res = None
             print(f"    [확장대본] {idx} 분량/형식이 맞지 않아 다시 시도 ({attempt + 1}/2)", flush=True)
         if not res:
-            return None
+            return rec if rec.get("narration") and not force else None
         res = verify(client, models, item, ev, res)
-        rec = {**res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M")}
+        keep = {k: rec[k] for k in KEEP_FIELDS if k in rec}
+        rec = {**keep, **res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M")}
+        if str(instruction or "").strip():
+            rec["instruction"] = str(instruction).strip()
         store[key] = rec
         save_scripts(store)
         print(f"    [확장대본] {idx} {item.get('country', '')}: {len(rec['narration'])}자, 키워드 {len(rec['keywords'])}, 비교 {'O' if rec.get('compare') else 'X'}, 검증 {rec['verify']['status']}", flush=True)
     else:
         print(f"    [확장대본] {idx}: 저장된 대본 재사용", flush=True)
+    if plan_only:
+        return rec
     name = re.sub(r"[^\w가-힣-]+", "_", str(item.get("country", "x")))[:30]
     if not ensure_audio(rec, f"lf_{idx:04d}_{name}", rec["narration"]):
         return None
@@ -279,6 +335,110 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False):
     store[key] = rec
     save_scripts(store)
     return rec
+
+
+# ---------------------------------------------------------------- 시나리오 (사람이 읽는 설명)
+def scenario_rows(item, rec):
+    """문장별로 '몇 초쯤, 어느 사진/영상, 어떤 화면 효과'가 나오는지 목록으로 돌려준다 (미리보기/수정 화면용).
+    -> [dict(n, text, t, scene, kind('img'|'clip'), events[str])]"""
+    from common import safe_country  # noqa: F401
+    from scenes import scene_groups, item_scene_count
+    sents = split_sentences(rec.get("narration"))
+    if not sents:
+        return []
+    n_scenes = max(1, item_scene_count(item))
+    sz = [len(re.sub(r"\s+", "", x)) for x in sents]
+    total = sum(sz) or 1
+    # 시간: 음성이 있으면 실제 타이밍, 없으면 글자 수로 추정 (한국어 약 6자/초, 영어 약 13자/초)
+    timings = None
+    try:
+        if rec.get("timing") and Path(rec["timing"]).exists():
+            timings = json.loads(Path(rec["timing"]).read_text(encoding="utf-8")).get("sentences")
+    except Exception:
+        timings = None
+    cps = 13.0 if IS_EN else 6.0
+    cum = [0]
+    for z in sz:
+        cum.append(cum[-1] + z)
+
+    def at(n):   # n번째 문장이 시작하는 시각
+        if n <= 1:
+            return 0.0
+        if timings:
+            import build_video as B
+            return float(B.time_at_fraction(cum[n - 1] / total, timings))
+        return cum[n - 1] / cps
+
+    groups = scene_groups(sents, n_scenes)
+    auto_scene = {}
+    for gi, (a, b) in enumerate(groups, 1):
+        for k in range(a, b + 1):
+            auto_scene[k] = gi
+    clips = [c for c in (rec.get("clips") or []) if c.get("path") and Path(c["path"]).exists()]
+    cue_map = {}
+    cues = [c for c in (rec.get("images") or []) if isinstance(c, dict)]
+    for c in sorted(cues, key=lambda c: int(c.get("sentence", 1) or 1)):
+        try:
+            cue_map[int(c.get("sentence", 1))] = c
+        except (TypeError, ValueError):
+            pass
+    clip_scene = {}
+    if not cue_map and clips:
+        for j in range(min(len(clips), 3)):
+            pos = min(n_scenes - 1, max(1, round((j + 1) * n_scenes / (min(len(clips), 3) + 1))))
+            clip_scene[pos + 1] = j + 1
+    rows, cur = [], None
+    kw_at = {}
+    for k in rec.get("keywords") or []:
+        kw_at.setdefault(int(k["sentence"]), []).append(k["text"])
+    cmp_ = rec.get("compare") if (rec.get("compare") or {}).get("rows") else None
+    cmp_n = 0
+    if cmp_:
+        cmp_n = int(rec.get("compare_at") or 0)
+        if cmp_n < 1:
+            cmp_n = next((i for i in range(1, len(sents) + 1) if cum[i] / total >= 0.55), len(sents))
+    for n, text in enumerate(sents, 1):
+        ev = []
+        if cue_map:
+            c = cue_map.get(n)
+            if c:
+                cur = ("clip", int(c["clip"])) if c.get("clip") else ("img", int(c.get("scene") or 1))
+            elif cur is None:
+                cur = ("img", 1)
+        else:
+            sc = auto_scene.get(n, 1)
+            cur = ("clip", clip_scene[sc]) if sc in clip_scene else ("img", sc)
+        for t in kw_at.get(n, []):
+            ev.append(f"키워드 팝업: '{t}'" if not IS_EN else f"Keyword pop-up: '{t}'")
+        if cmp_ and n == cmp_n:
+            ev.append((f"비교 카드: {cmp_.get('title', '')} ({len(cmp_['rows'])}줄)") if not IS_EN else f"Compare card: {cmp_.get('title', '')} ({len(cmp_['rows'])} rows)")
+        rows.append({"n": n, "text": text, "t": round(at(n), 1), "kind": cur[0], "scene": cur[1], "events": ev})
+    return rows
+
+
+def scenario_text(item, rec, no=None):
+    """사람이 읽는 시나리오 설명 (txt로 저장해도 됨)"""
+    lines = []
+    head = f"[{no}] " if no else ""
+    lines.append(f"{head}{item.get('country', '')} - {item.get('topic', '')}")
+    qs = item.get("image_queries") or []
+    prev = None
+    for r in scenario_rows(item, rec):
+        mark = ""
+        if (r["kind"], r["scene"]) != prev:
+            if r["kind"] == "clip":
+                q = ((rec.get("clips") or [{}] * 9)[r["scene"] - 1] or {}).get("query", "")
+                mark = f"  >> 화면: 스톡 영상 {r['scene']} ({q})"
+            else:
+                q = qs[r["scene"] - 1] if 0 < r["scene"] <= len(qs) else ""
+                mark = f"  >> 화면: 사진 {r['scene']} ({q})"
+            prev = (r["kind"], r["scene"])
+        lines.append(f"  {r['n']:>2}. [{int(r['t']) // 60}:{int(r['t']) % 60:02d}] {r['text']}{mark}")
+        for e in r["events"]:
+            lines.append(f"        * {e}")
+    if rec.get("recap"):
+        lines.append(f"  요약 한 줄: {rec['recap']}")
+    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------- 인트로 / 요약

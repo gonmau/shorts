@@ -14,7 +14,20 @@ FPS = 24
 PURPLE = (200, 0, 255)
 YELLOW = (255, 226, 0)
 INK = (14, 14, 22)
-IS_EN = (Path(__file__).resolve().parent / "generate_topics.py").exists()
+def _detect_en(base):
+    """영어 채널 여부. 두 채널 파일이 섞인 폴더도 local_ui.py와 같은 규칙으로 판별 (channel.txt > 파일 구성 > generate_tts.py 내용)"""
+    has_en, has_ko = (base / "generate_topics.py").exists(), (base / "generate_culture_facts.py").exists()
+    if has_en and has_ko:
+        try:
+            return (base / "channel.txt").read_text(encoding="utf-8").strip().lower() == "en"
+        except Exception:
+            try:
+                return "ko-KR-SunHiNeural" not in (base / "generate_tts.py").read_text(encoding="utf-8")
+            except Exception:
+                return False
+    return has_en and not has_ko
+
+IS_EN = _detect_en(Path(__file__).resolve().parent)
 CAP_IMG_H = 190
 CAP_W = 1560
 L = {  # 화면 글자
@@ -87,9 +100,48 @@ def silent(seconds):
     return AudioClip(lambda t: np.zeros((np.size(t), 2)) if np.ndim(t) else np.zeros(2), duration=seconds, fps=44100)
 
 
-def write_clip(clip, path):
+STAGE = {"label": "", "n": 0, "total": 0}   # build_longform 이 진행 단계를 알려준다 (진행률 표시용)
+
+
+def stage(label, step=None, total=None):
+    STAGE["label"] = label
+    if step is not None:
+        STAGE["n"] = step
+    if total is not None:
+        STAGE["total"] = total
+
+
+def _progress_logger(label):
+    """moviepy 합성 중 10%마다 한 줄씩 진행률을 출력한다 (창이 멈춘 것처럼 보이지 않게)"""
+    try:
+        from proglog import ProgressBarLogger
+    except Exception:
+        return None
+    import time as _t
+
+    class P(ProgressBarLogger):
+        def __init__(self):
+            super().__init__()
+            self.last, self.t0 = -1, _t.time()
+
+        def bars_callback(self, bar, attr, value, old_value=None):
+            if bar != "t" or attr != "index":
+                return
+            tot = max(1, self.bars[bar].get("total") or 1)
+            pct = int(value * 100 / tot)
+            if pct // 10 > self.last // 10 or (pct >= 100 and self.last < 100):
+                self.last = pct
+                el = _t.time() - self.t0
+                eta = (el / max(value, 1) * (tot - value)) if value > 5 else 0
+                n, total = STAGE["n"], STAGE["total"]
+                head = f"[{n}/{total}] " if total else ""
+                print(f"    ⏳ {head}{label} 렌더링 {pct}%" + (f" (남은 시간 약 {int(eta // 60)}분 {int(eta % 60)}초)" if eta > 5 and pct < 100 else ""), flush=True)
+    return P()
+
+
+def write_clip(clip, path, label=None):
     clip.write_videofile(str(path), fps=FPS, codec="libx264", audio_codec="aac", audio_fps=44100, preset="fast", threads=4,
-                         ffmpeg_params=["-pix_fmt", "yuv420p", "-ac", "2"], logger=None)
+                         ffmpeg_params=["-pix_fmt", "yuv420p", "-ac", "2"], logger=_progress_logger(label or STAGE["label"] or Path(path).stem))
 
 
 def close_all(*cs):
@@ -134,6 +186,64 @@ def motion_clip(srcs, dur, starts=None, zoom=0.10, xfade=0.5):
     import build_video as B
     c = B.make_image_box_clip(srcs, dur, zoom=zoom, xfade=xfade, starts=starts)
     return c.set_position((0, 0))
+
+
+_VID = {}
+
+
+def _vid_frame(path, t):
+    """스톡 영상 한 프레임 (16:9로 채움). 짧으면 반복. 읽기 실패하면 None"""
+    try:
+        from moviepy.editor import VideoFileClip
+        c = _VID.get(path)
+        if c is None:
+            c = _VID[path] = VideoFileClip(str(path), audio=False)
+        d = max(0.5, float(c.duration) - 0.6)
+        tt = 0.3 + (t % d)
+        im = Image.fromarray(c.get_frame(min(tt, c.duration - 0.05)))
+        return ImageOps.fit(im.convert("RGB"), (W, H), Image.Resampling.BILINEAR, centering=(0.5, 0.5))
+    except Exception:
+        return None
+
+
+def close_videos():
+    for c in list(_VID.values()):
+        close_all(c)
+    _VID.clear()
+
+
+def hybrid_bg(entries, dur, starts, zoom=0.10, xfade=0.5):
+    """entries: [("img", PIL, 번호) | ("vid", 경로)] 가 starts 시각에 바뀌는 배경. 사진은 확대/이동, 영상은 그대로 재생"""
+    import build_video as B
+    from moviepy.editor import VideoClip
+    n = len(entries)
+    ends = list(starts[1:]) + [dur]
+
+    def one(i, local, sd):
+        e = entries[i]
+        if e[0] == "vid":
+            im = _vid_frame(e[1], local)
+            if im is not None:
+                return im
+            return Image.new("RGB", (W, H), (20, 20, 30))
+        return B.render_motion_frame(e[1], e[2], min(local / max(sd, 0.01), 1.0), zoom)
+
+    def frame(t):
+        i = n - 1
+        for k in range(n):
+            if t < ends[k]:
+                i = k
+                break
+        sd = max(ends[i] - starts[i], 0.01)
+        local = t - starts[i]
+        xf = min(max(xfade, 0.0), sd * 0.4)
+        cur = one(i, local, sd)
+        if i > 0 and xf > 0 and local < xf:
+            psd = max(ends[i - 1] - starts[i - 1], 0.01)
+            prev = one(i - 1, (ends[i - 1] - starts[i - 1]) + local, psd)
+            cur = Image.blend(prev, cur, B._smooth(local / xf))
+        return np.asarray(cur, dtype=np.uint8)
+    return VideoClip(frame, duration=dur).set_position((0, 0))
 
 
 # ---------------------------------------------------------------- 항상 보이는 표시 (HUD)
@@ -480,8 +590,57 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     starts = B.scene_starts(narr, timings, dur, len(srcs))
     print(f"  [{no}/{total}] {idx} {country}: {dur:.1f}초, 이미지 {real}/{len(srcs)}장, 키워드 {len(rec.get('keywords') or [])}, 비교 {'O' if rec.get('compare') else 'X'}", flush=True)
     t1, t2 = B.split_title(item)
+    if str(rec.get("title1") or "").strip() or str(rec.get("title2") or "").strip():
+        t1, t2 = str(rec.get("title1") or "").strip(), str(rec.get("title2") or "").strip()
     credit = (B.credit_label(item) if real else "") or ""
-    bg = motion_clip(srcs, dur, starts=starts)
+
+    sents = [x for x in re.split(r"(?<=[.!?。！？])\s+|\n+", narr.strip()) if x.strip()]
+    total_chars = sum(len(re.sub(r"\s+", "", x)) for x in sents) or 1
+    cum = [0]
+    for x in sents:
+        cum.append(cum[-1] + len(re.sub(r"\s+", "", x)))
+
+    def sent_time(n_):
+        return 0.0 if n_ <= 1 else B.time_at_fraction(cum[n_ - 1] / total_chars, timings)
+
+    clips = [c for c in (rec.get("clips") or []) if c.get("path") and Path(c["path"]).exists()]
+    entries = [("img", srcs[i], i) for i in range(len(srcs))]
+    starts_bg = list(starts[:len(srcs)])
+    cues_img = [c for c in (rec.get("images") or []) if isinstance(c, dict)]
+    if cues_img:      # 사람이 지정한 '이 문장부터 이 사진/영상' 큐
+        seq = []
+        for c in sorted(cues_img, key=lambda c: int(c.get("sentence", 1) or 1)):
+            try:
+                s_ = int(c.get("sentence", 1))
+            except (TypeError, ValueError):
+                continue
+            if not 1 <= s_ <= len(sents):
+                continue
+            if c.get("clip"):
+                k_ = int(c["clip"])
+                if 1 <= k_ <= len(rec.get("clips") or []) and (rec["clips"][k_ - 1] or {}).get("path") and Path(rec["clips"][k_ - 1]["path"]).exists():
+                    seq.append((sent_time(s_), ("vid", rec["clips"][k_ - 1]["path"])))
+            elif c.get("scene"):
+                k_ = int(c["scene"])
+                if 1 <= k_ <= len(srcs):
+                    seq.append((sent_time(s_), ("img", srcs[k_ - 1], k_ - 1)))
+        if seq:
+            if seq[0][0] > 0.05:
+                seq.insert(0, (0.0, ("img", srcs[0], 0)))
+            seq[0] = (0.0, seq[0][1])
+            for i in range(1, len(seq)):
+                seq[i] = (max(seq[i][0], seq[i - 1][0] + 1.6), seq[i][1])
+            seq = [x for x in seq if x[0] < dur - 1.0] or seq[:1]
+            starts_bg, entries = [t for t, _ in seq], [e for _, e in seq]
+    elif clips:       # 스톡 영상: 자동 배치 (사진 장면 몇 개를 영상으로 바꿈)
+        n_img = len(entries)
+        for j, c in enumerate(clips[:3]):
+            pos = min(n_img - 1, max(1, round((j + 1) * n_img / (min(len(clips), 3) + 1))))
+            entries[pos] = ("vid", c["path"])
+    if any(e[0] == "vid" for e in entries):
+        bg = hybrid_bg(entries, dur, starts_bg)
+    else:
+        bg = motion_clip([e[1] for e in entries], dur, starts=starts_bg)
 
     # 항상 보이는 표시(위/아래 그라데이션 포함)는 위·아래 띠 영역만 계산한다
     hud = np.asarray(make_hud(no, total, country, channel, handle, av_path, credit), dtype=np.float32)
@@ -494,6 +653,11 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     cmp_ = rec.get("compare")
     if cmp_ and len(cmp_.get("rows") or []) >= 2 and dur > 25:
         t0 = B.time_at_fraction(0.55, timings)
+        try:
+            if int(rec.get("compare_at") or 0) >= 1:
+                t0 = sent_time(min(int(rec["compare_at"]), len(sents)))
+        except (TypeError, ValueError):
+            pass
         cd = min(8.0, max(5.0, 2.2 * len(cmp_["rows"]) + 1.5))
         t0 = max(8.0, min(t0, dur - cd - 3.0))
         cmp_win = (t0, t0 + cd)
@@ -503,11 +667,6 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
             e_ = times[k + 1] if k + 1 < len(stages) else t0 + cd
             ovs.append(Ov(st_, times[k], e_, fi=0.4 if k == 0 else 0.0, fo=0.4 if k == len(stages) - 1 else 0.0))
 
-    sents = [x for x in re.split(r"(?<=[.!?。！？])\s+|\n+", narr.strip()) if x.strip()]
-    total_chars = sum(len(re.sub(r"\s+", "", x)) for x in sents) or 1
-    cum = [0]
-    for x in sents:
-        cum.append(cum[-1] + len(re.sub(r"\s+", "", x)))
     last_end = 0.0
     for kw in sorted(rec.get("keywords") or [], key=lambda k: k["sentence"]):
         n_ = int(kw["sentence"])
@@ -542,4 +701,5 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     final = VideoClip(make_frame, duration=dur).set_audio(audio)
     write_clip(final, out_path)
     close_all(final, audio)
+    close_videos()
     return dur, cues, srcs[0]

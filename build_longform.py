@@ -34,7 +34,20 @@ PANEL_W = W - PANEL_X - 60
 BG = (250, 250, 252)
 COLOR2 = (200, 0, 255)
 MIN_N, MAX_N, MAX_MIN = 3, 30, 40   # 개수 3~30, 예상 길이 40분 이하
-IS_EN = (BASE / "generate_topics.py").exists()
+def _detect_en(base):
+    """영어 채널 여부. 두 채널 파일이 섞인 폴더도 local_ui.py와 같은 규칙으로 판별 (channel.txt > 파일 구성 > generate_tts.py 내용)"""
+    has_en, has_ko = (base / "generate_topics.py").exists(), (base / "generate_culture_facts.py").exists()
+    if has_en and has_ko:
+        try:
+            return (base / "channel.txt").read_text(encoding="utf-8").strip().lower() == "en"
+        except Exception:
+            try:
+                return "ko-KR-SunHiNeural" not in (base / "generate_tts.py").read_text(encoding="utf-8")
+            except Exception:
+                return False
+    return has_en and not has_ko
+
+IS_EN = _detect_en(BASE)
 
 
 # ---------------------------------------------------------------- 선택
@@ -426,22 +439,33 @@ def run_rich(args, db, lf_db, members):
     else:
         print("GROQ_API_KEY가 없거나 LF_EXPAND=0 -> 쇼츠 대본으로 대신합니다", flush=True)
 
+    only = set(parse_indexes(args.only)) if args.only else set()
+    clips_on = bool(args.clips or os.environ.get("LF_CLIPS", "0") == "1")
     # 1) 이미지 + 확장 대본 + 음성
     recs, countries_all = {}, [str(db[i].get("country", "")).strip() for i in members]
     for k, idx in enumerate(members):
-        print(f"\n== 재료 준비 {idx} {db[idx].get('country', '')}", flush=True)
-        run_py("generate_script.py", "--extras-only", "--index", str(idx))
-        run_py("fetch_images.py", "--index", str(idx))
-        db = load_json(BASE / "facts_db.json", db)
+        print(f"\n== {'대본 준비' if args.plan_only else '재료 준비'} {idx} {db[idx].get('country', '')} ({k + 1}/{len(members)})", flush=True)
+        if not args.plan_only:
+            run_py("generate_script.py", "--extras-only", "--index", str(idx))
+            run_py("fetch_images.py", "--index", str(idx))
+            db = load_json(BASE / "facts_db.json", db)
         item = db[idx]
         rec = None
-        if client:
+        if client or (not args.no_expand and LS.get_rec(idx).get("narration")):
             me = str(item.get("country", "")).strip()
             cands = (LS.EN_PARTNERS if IS_EN else [c for c in dict.fromkeys(countries_all) if c and c != me] + ([] if me == "한국" else ["한국"]))
+            target = (not only) or (idx in only)
             try:
-                rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands, force=args.regen)
+                rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands,
+                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=args.plan_only)
             except Exception as e:
                 print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
+        if args.plan_only:
+            if rec:
+                recs[idx] = rec
+            else:
+                print(f"  !! {idx}: 대본을 만들지 못했습니다 (GROQ_API_KEY 확인)", flush=True)
+            continue
         if rec is None:
             if client:
                 print("  확장 대본을 만들지 못해 이 소재는 쇼츠 대본으로 대신합니다", flush=True)
@@ -455,10 +479,32 @@ def run_rich(args, db, lf_db, members):
                        "keywords": [], "compare": None,
                        "recap": (str(item.get("title_line1", "")) + " " + str(item.get("title_line2", ""))).strip()}
         if rec:
+            if clips_on:
+                try:
+                    import longform_clips as LC
+                    if LC.available():
+                        qs_ = rec.get("clip_queries") or rec.get("broll") or []
+                        got_ = LC.fetch_for(idx, item, qs_, old=rec.get("clips"))
+                        rec = {**rec, "clips": got_}
+                        if rec.get("narration") and LS.get_rec(idx).get("narration"):
+                            LS.update_rec(idx, {"clips": got_}, lock=False)
+                    else:
+                        print("  스톡 영상: PEXELS_API_KEY/PIXABAY_API_KEY가 없어 사진만 사용합니다", flush=True)
+                except Exception as e:
+                    print(f"  스톡 영상 건너뜀 ({type(e).__name__}: {e})", flush=True)
+            else:   # 영상 옵션을 껐으면 저장된 영상 배치는 쓰지 않는다
+                rec = {**rec, "clips": [], "images": [c for c in (rec.get("images") or []) if isinstance(c, dict) and not c.get("clip")]}
             recs[idx] = rec
         else:
             print(f"  !! {idx}: 음성이 없어 롱폼에서 제외합니다", flush=True)
     members = [i for i in members if i in recs]
+    if args.plan_only:
+        plan = {"members": members, "mode": args.mode, "theme": args.theme, "title": args.title, "clips": clips_on,
+                "created": time.strftime("%Y-%m-%d %H:%M")}
+        (BASE / "longform_plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1), encoding="utf-8")
+        (BASE / "longform_plan.txt").write_text("\n\n".join(LS.scenario_text(db[i], recs[i], n) for n, i in enumerate(members, 1)), encoding="utf-8")
+        print(f"\n대본/시나리오 준비 완료: {len(members)}개 (longform_plan.txt). UI에서 확인/수정한 뒤 '롱폼 만들기'를 누르세요.", flush=True)
+        return
     if len(members) < args.min:
         raise SystemExit(f"준비된 소재가 {len(members)}개뿐이라 롱폼을 만들 수 없습니다 (최소 {args.min}개).")
     total = len(members)
@@ -483,6 +529,8 @@ def run_rich(args, db, lf_db, members):
     intro_rec = LS.prepare_extra("lf_intro", LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])) if (client or LS.enabled()) and not args.no_expand else None
     parts, durs, seg_cues = [], [], {}
     intro_path = WORK / "seg_00_intro.mp4"
+    n_stage = total + 2
+    R.stage("인트로", 1, n_stage)
     intro_len = R.intro([title.split("|")[0].strip()], total, imgs, (intro_rec or {}).get("audio"), args.channel, args.handle, args.avatar, intro_path)
     parts.append(intro_path)
 
@@ -494,6 +542,8 @@ def run_rich(args, db, lf_db, members):
         t1, t2 = B.split_title(item)
         cp = WORK / f"seg_{no:02d}_card.mp4"
         sp = WORK / f"seg_{no:02d}.mp4"
+        R.stage(f"챕터 {no}/{total} {B.safe_country(item)}", 1 + no, n_stage)
+        print(f"\n== [{1 + no}/{n_stage}] 챕터 {no}/{total} {B.safe_country(item)} 합성 시작 ({time.strftime('%H:%M:%S')})", flush=True)
         card_len = R.chapter_card(no, total, B.safe_country(item), t1, t2, imgs[(no - 1) % len(imgs)], cp)
         dur, cues, first_img = R.segment(idx, item, recs[idx], no, total, sp, args.channel, args.handle, args.avatar, burn=burn)
         bg_last = first_img
@@ -506,6 +556,7 @@ def run_rich(args, db, lf_db, members):
     items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
     out_rec = LS.prepare_extra("lf_outro", LS.outro_text([x[2] for x in items])) if (client or LS.enabled()) and not args.no_expand else None
     rp = WORK / "seg_99_recap.mp4"
+    R.stage("요약 화면", n_stage, n_stage)
     recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
     parts.append(rp)
     recap_start = t_acc
@@ -514,7 +565,19 @@ def run_rich(args, db, lf_db, members):
     out_mp4 = OUT / f"longform_{lf_id:03d}.mp4"
     concat(parts, out_mp4)
     desc = make_description(db, members, durs, intro_len, title, extra=[(recap_start, "요약" if not IS_EN else "Recap")])
+    if clips_on:
+        try:
+            import longform_clips as LC
+            cl_ = LC.credit_lines(list(recs.values()))
+            if cl_:
+                desc += "\n\n" + "\n".join(cl_)
+        except Exception:
+            pass
     (OUT / f"longform_{lf_id:03d}.txt").write_text(f"{title}\n\n{desc}\n", encoding="utf-8")
+    try:
+        (OUT / f"longform_{lf_id:03d}_scenario.txt").write_text("\n\n".join(LS.scenario_text(db[i], recs[i], n) for n, i in enumerate(members, 1)), encoding="utf-8")
+    except Exception:
+        pass
     make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png")
     chunks, n_no = [], 1
     for no in sorted(seg_cues):
@@ -525,7 +588,7 @@ def run_rich(args, db, lf_db, members):
     total_len = intro_len + sum(durs) + recap_len
     lf_db.append({
         "id": lf_id, "mode": args.mode, "theme": args.theme, "members": members, "title": title, "style": "rich",
-        "expanded": bool(client), "description": desc, "duration_sec": round(total_len, 1),
+        "expanded": bool(client), "clips": clips_on, "description": desc, "duration_sec": round(total_len, 1),
         "video": str(out_mp4.name), "status": "video_done", "created_at": datetime.now(timezone.utc).isoformat(),
     })
     with open(LF_DB, "w", encoding="utf-8") as f:
@@ -553,6 +616,10 @@ def main():
                     help="rich: 풀스크린 사진+챕터 카드+키워드+비교 카드+인트로/요약 (기본) / classic: 예전 화면(오른쪽 흰 패널)")
     ap.add_argument("--no-expand", action="store_true", help="rich 인데 확장 대본을 쓰지 않고 쇼츠 대본/음성을 그대로 사용")
     ap.add_argument("--regen", action="store_true", help="저장된 확장 대본이 있어도 다시 만든다")
+    ap.add_argument("--plan-only", action="store_true", help="대본/시나리오만 만들고 끝 (음성/영상 안 만듦). 결과: longform_scripts.json, longform_plan.json/.txt")
+    ap.add_argument("--instruction", default="", help="--only(없으면 전체) 소재 대본을 이 지시를 반영해 다시 씀 (예: 한국과 비교를 더 자세히)")
+    ap.add_argument("--only", default="", help="--regen/--instruction 을 적용할 소재 번호 (비우면 전체)")
+    ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
     args = ap.parse_args()
     global EST_SCALE
