@@ -1,13 +1,13 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-25 13:32:31 (KST) · 기록 227건 · 소재 305개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-25 13:56:49 (KST) · 기록 228건 · 소재 305개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
 | DB커밋 | 129 | 0 | 0초 |
-| 롱폼 | 12 | 0 | 1시간 19분 |
+| 롱폼 | 13 | 0 | 1시간 19분 |
 | 쇼츠 | 80 | 6 | 12시간 17분 |
 
 ## 날짜별 작업 (최근 30일)
@@ -16,6 +16,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 13:56 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
 | 13:32 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 13분 1초 |  |
 | 12:53 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 17분 43초 |  |
 | 12:34 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 8 --instruction 150~500유로라 | ✅ | 11초 |  |
