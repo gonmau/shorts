@@ -112,9 +112,9 @@ if "code_chk" not in st.session_state and os.path.exists("update_code.py"):
     st.session_state["code_chk"] = _code_check()
 
 def _lf_extra_files():
-    """롱폼 DB와 함께 올릴 파일들 (고친 대본, 채널 표시 설정/이미지)"""
+    """롱폼 DB와 함께 올릴 파일들 (고친 대본, 채널 표시 설정/이미지, 내 스타일 지침)"""
     out = []
-    for f_ in ("longform_scripts.json", "longform_brand.json", "channel_avatar.png"):
+    for f_ in ("longform_scripts.json", "longform_brand.json", "channel_avatar.png", "style_profile.json"):
         if os.path.exists(f_):
             out += ["--file", f_]
     return out
@@ -246,6 +246,35 @@ def _sync_line():
         ps.append("🔄 " + st.session_state["code_chk"])
     return "☁️ " + " · ".join(ps) + "  — 자세한 설정은 '⚙ 관리·동기화' 탭"
 
+def _style_panel():
+    """내 성향·스타일 지침 (style_profile.json) - 대본·롱폼·소재 생성 프롬프트에 붙는다"""
+    import style_profile as _SP
+    _P = _SP.load()
+    with st.expander("🎯 내 스타일 · 성향 반영 (대본·롱폼·소재 만들 때 AI에게 전달)", expanded=False):
+        st.caption("'어떻게 말할지'에 대한 내 기준입니다. 켠 항목이 대본(쇼츠·롱폼)과 새 소재 만들기 프롬프트에 붙습니다. 사실 정확성이 항상 우선이며, 이미 만든 대본은 바뀌지 않으니 '대본부터 다시'로 다시 만드세요. 저장하면 GitHub 자동 동기화로 GitHub Actions에도 같이 적용됩니다.")
+        _sel = []
+        _cols = st.columns(2)
+        for _i, (_k, _v) in enumerate(_SP.RULES.items()):
+            if _cols[_i % 2].checkbox(_v[0], _k in _P["rules"], key=f"sp_r_{_k}", help=_v[1]):
+                _sel.append(_k)
+        _P["rules"] = _sel
+        _P["custom"] = st.text_area("추가 지침 (내 말로)", _P.get("custom", ""), height=80, key="sp_custom",
+                                    placeholder="예: 숫자는 단위와 기준 연도를 같이 말하기 / 문장은 15자~40자 사이로")
+        _P["avoid"] = st.text_input("쓰지 말 표현·주제 (쉼표로 구분)", _P.get("avoid", ""), key="sp_avoid", placeholder="예: 충격, 소름, 역대급")
+        st.markdown("**새 소재 만들 때 우선할 분야** (켠 분야를 우선하되 다양성은 유지)")
+        _ta = []
+        _c2 = st.columns(4)
+        for _i, (_k, _v) in enumerate(_SP.TOPIC_AREAS.items()):
+            if _c2[_i % 4].checkbox(_v[0], _k in _P.get("topic_areas", []), key=f"sp_t_{_k}"):
+                _ta.append(_k)
+        _P["topic_areas"] = _ta
+        _P["topic_custom"] = st.text_input("소재 선호 추가 설명", _P.get("topic_custom", ""), key="sp_tcustom", placeholder="예: 제도나 시스템 때문에 생긴 생활 습관 위주")
+        if st.button("💾 스타일 저장", key="sp_save", type="primary"):
+            _SP.save(_P)
+            st.session_state["gh_dirty"] = True
+            st.success("저장했습니다. 다음에 만드는 대본/소재부터 적용됩니다.")
+        st.text_area("AI에게 실제로 전달되는 문장 (대본)", _SP.block("script", _P) or "(없음)", height=170, disabled=True, key="sp_prev")
+
 st.caption(_sync_line())
 TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
 with T1:
@@ -334,6 +363,7 @@ def _img_state(i, f):
 
 
 with T1a:
+    st.caption("🎯 새 소재의 선호 분야는 '2 대본 › 대본 만들기'의 '내 스타일'에서 정합니다.")
     n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="위키백과 기반으로 새 소재(unverified)를 만듭니다. 한 번에 12개 이하 권장 (Groq 한도)")
     if st.button("소재 만들기", key="st1_make"):
         run(GEN, "--count", str(int(n_topics)))
@@ -359,6 +389,7 @@ with T1a:
             run("approve.py", "--limit", str(int(count)), "--start", str(int(start)))
 
 with T2a:
+    _style_panel()
     TTS_CFG["target_sec"] = st.slider("목표 대본 길이 (초, 0 = 기본)", 0, 58, int(TTS_CFG.get("target_sec") or 0), 1, key="target_sec",
                                       help="새로 만드는 대본의 분량을 음성 길이 기준으로 맞춥니다. 0이면 기본 분량(한국어 350~500자 / 영어 90~115단어). 음성 속도 설정도 반영됩니다. 이미 만든 대본은 안 바뀌니 '대본부터 다시'로 다시 만드세요")
     if int(TTS_CFG["target_sec"]) > 0:
@@ -516,6 +547,7 @@ FEATURES = [
     ("1 소재", "상태 확인 · 폐기 되살리기 · 업로드 기록", "1 소재 › 상태·폐기·업로드 기록", "소재별 상태, 폐기 사유/되살리기, 유튜브 영상 주소 기록, 교차검증 일괄 해제", ""),
     ("2 대본", "대본 만들기 (+목표 길이·장면 수)", "2 대본 › 대본 만들기", "목표 길이(초)·장면(이미지) 수 설정 후 대본/제목/이미지 검색어 생성", ""),
     ("2 대본", "대본 교차검증", "2 대본 › 대본 만들기의 🔍 체크", "위키 근거로 문장 검증. 모순은 폐기 전에 먼저 고쳐 씀, 근거 없음만으로는 폐기 안 함", "🆕"),
+    ("2 대본", "내 스타일 · 성향 반영", "2 대본 › 대본 만들기의 🎯 내 스타일", "밀도·구체성·결말·과장 같은 내 기준과 선호 소재 분야를 저장하면 쇼츠/롱폼 대본과 새 소재 생성에 반영 (GitHub Actions에도 동기화)", "🆕"),
     ("2 대본", "대본 보기 · 수정 · 일괄 수정", "2 대본 › 대본 보기·수정", "소재별 대본 읽고 고치기, 여러 개 한 번에 수정", ""),
     ("2 대본", "제목 · 핵심 문구 · 이미지 검색어 · 제외", "2 대본 › review.txt", "review.txt를 보고 고침 (제외: 뒤에 사유를 쓰면 건너뜀)", ""),
     ("3 이미지", "이미지 받기", "3 이미지 › 이미지 받기", "검색어 생성 + 장면 이미지 다운로드", ""),
@@ -1806,7 +1838,7 @@ if st.session_state.get("gh_dirty"):
             _ok1, _o1 = _gh_sync(True)
             _lines = _o1.splitlines()
             _msg = _lines[-1] if _lines else ""
-            if os.path.exists("longform_db.json"):
+            if os.path.exists("longform_db.json") or os.path.exists("style_profile.json"):
                 _r2 = subprocess.run([sys.executable, "gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "longform_db.json"]
                                      + _lf_extra_files(),
                                      capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))

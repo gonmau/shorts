@@ -113,6 +113,11 @@ def save_scripts(d):
 
 # ---------------------------------------------------------------- 프롬프트
 def _prompt(item, ev, next_info, candidates, instruction=""):
+    import style_profile as _sp
+    return _sp.apply(__prompt_base(item, ev, next_info, candidates, instruction), "longform")
+
+
+def __prompt_base(item, ev, next_info, candidates, instruction=""):
     lo, hi = LEN_RANGE
     ins = str(instruction or "").strip()
     extra = (f"- EDITOR'S EXTRA INSTRUCTION (follow it): {ins}\n" if IS_EN else f"- 편집자의 추가 지시 (반드시 반영): {ins}\n") if ins else ""

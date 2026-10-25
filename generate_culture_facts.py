@@ -80,7 +80,12 @@ def used_summary(db: list[dict], limit: int = 80) -> str:
     return "\n".join(f"- {item['country']}: {item['topic']}" for item in recent)
 
 
-def build_prompt(count: int, used: str) -> str:
+def build_prompt(count: int, used: str):
+    import style_profile as _sp
+    return _sp.apply(_build_prompt_base(count, used), "topic")
+
+
+def _build_prompt_base(count: int, used: str) -> str:
     return f"""세계 각국의 흥미로운 문화/관습/법 상식을 유튜브 쇼츠 소재로 {count}개 생성해줘.
 
 조건:
