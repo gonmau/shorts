@@ -113,5 +113,24 @@
     "video": "longform_005.mp4",
     "status": "video_done",
     "created_at": "2026-10-24T12:39:30.466516+00:00"
+  },
+  {
+    "id": 6,
+    "mode": "manual",
+    "theme": "",
+    "members": [
+      5,
+      7,
+      8
+    ],
+    "title": "세계 문화 상식 3가지 | 일본부터 Italy까지",
+    "style": "rich",
+    "expanded": true,
+    "clips": true,
+    "description": "00:00 오프닝\n00:18 1. 일본 - 일본 심야 춤 금지 밤 12시의 규제\n01:18 2. 네덜란드 - 네덜란드 자동차가 손님이 되는 거리\n02:19 3. Italy - 베네치아비둘기금지 벌금은 즉시 150유로\n03:16 요약\n\nPhotos: Pixabay (pixabay.com)\nPhotos from Wikimedia Commons (cropped/zoomed):\n- \"Feu pour Velo Amsterdam.jpg\" by PierreSelim, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) - https://commons.wikimedia.org/wiki/File:Feu_pour_Velo_Amsterdam.jpg\n- \"1963 Venice Robert feeding pigeons Granmas in background (50874992613).jpg\" by Donald Judge, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) - https://commons.wikimedia.org/wiki/File:1963_Venice_Robert_feeding_pigeons_Granmas_in_background_(50874992613).jpg\n\n🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!\n\n#일본 #12시 #네덜란드 #자전거 #Italy #Venice #세계문화 #해외여행 #이색상식\n\nStock videos: Pixabay (pixabay.com)",
+    "duration_sec": 222.6,
+    "video": "longform_006.mp4",
+    "status": "video_done",
+    "created_at": "2026-10-25T03:53:30.169279+00:00"
   }
 ]
