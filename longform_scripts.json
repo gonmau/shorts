@@ -502,7 +502,7 @@
   "keywords": [
    {
     "sentence": 1,
-    "text": "베네치아에서 비둘기에게 빵을 "
+    "text": "베네치아에서 비둘기에게 빵을"
    },
    {
     "sentence": 2,
@@ -552,7 +552,50 @@
   "sig": "dfcd7ff86c81",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-25 12:34",
-  "instruction": "150~500유로라는 구체적인 숫자를 그대로 두되, *\"자칫하면 여행 경비의 상당 부분을 벌금으로 날릴 수 있는 무서운 규정\"*이라는 뉘앙스를 더해 경각심과 재미를 동시에 줍니다.   마지막의 *\"빵 대신 물을 마시며 운하를 감상해 주세요\"*라는 감성적인 마무리 멘트는 그대로 살리되, 여행 꿀팁처럼 친근한 톤으로 다듬습니다"
+  "instruction": "150~500유로라는 구체적인 숫자를 그대로 두되, *\"자칫하면 여행 경비의 상당 부분을 벌금으로 날릴 수 있는 무서운 규정\"*이라는 뉘앙스를 더해 경각심과 재미를 동시에 줍니다.   마지막의 *\"빵 대신 물을 마시며 운하를 감상해 주세요\"*라는 감성적인 마무리 멘트는 그대로 살리되, 여행 꿀팁처럼 친근한 톤으로 다듬습니다",
+  "compare_at": 0,
+  "images": [],
+  "title1": "베네치아에서는 비둘기에게 빵을",
+  "title2": "주면 바로 벌금이 부과됩니다!",
+  "clip_queries": [
+   "Venice canals sunrise",
+   "historic building close-up",
+   "tourist feeding pigeons"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 12:35",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0008_Italy.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0008_Italy_timing.json",
+  "tts_hash": "0edb0c49d838",
+  "clips": [
+   {
+    "query": "Venice canals sunrise",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0008_Italy\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "WhiteHatDesigner",
+    "page": "https://pixabay.com/videos/id-364494/",
+    "id": "pixabay364494",
+    "check": "ok"
+   },
+   {
+    "query": "historic building close-up",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0008_Italy\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "caelan",
+    "page": "https://pixabay.com/videos/id-29224/",
+    "id": "pixabay29224",
+    "check": "ok"
+   },
+   {
+    "query": "tourist feeding pigeons",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0008_Italy\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "glorydays2012pro",
+    "page": "https://pixabay.com/videos/id-8170/",
+    "id": "pixabay8170",
+    "check": "ok"
+   }
+  ]
  },
  "10": {
   "narration": "에티오피아에선 손님이 오면 반드시 커피 의식을 해야 한다는 사실, 알고 계셨나요? 먼저 생콩을 직접 불에 굽고, 그 향이 퍼지면 손으로 직접 갈아 물에 끓입니다. 이 세 번의 순서는 거부하거나 거절하면 무례로 여겨집니다. 제베라 의식은 단순히 음료를 마시는 것이 아니라, 손님과 주인 사이에 깊은 유대를 만드는 사회적 의례입니다. 현대 에티오피아 가정에서도 여전히 아침에 가족이 모여 원두를 굽고, 향긋한 연기가 집안을 가득 채우면 모두가 함께 차례로 커피를 나눕니다. 이때 사용되는 토기와 전통적인 도구들은 세대를 이어오며 전해 내려온 문화유산이죠. 두 나라의 커피 문화는 각각의 생활 방식과 가치관을 반영합니다. 이제 다음 이야기, United Arab Emirates로 넘어가 보겠습니다.",
@@ -792,7 +835,7 @@
   "keywords": [
    {
     "sentence": 1,
-    "text": "밤 12시가 지나면 클럽에서 "
+    "text": "밤 12시가 지나면 클럽에서"
    },
    {
     "sentence": 2,
@@ -853,14 +896,57 @@
   "sig": "b27296357bef",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-25 12:32",
-  "instruction": "\"풍속영업법\" 같은 딱딱한 법률 용어를 \"밤 12시가 넘으면 클럽에서 춤을 출 수 없었던 독특한 법\" 같은 쉬운 구어체로 풀어줍니다.   도입부에 \"우리나라의 옛날 야간 통행금지 문화처럼, 일본에도 밤 문화를 꽁꽁 얼어붙게 만든 규제가 있었습니다\" 같은 한국식 비교를 한 줄 얹어주면 공감대가 훨씬 커집니다."
+  "instruction": "\"풍속영업법\" 같은 딱딱한 법률 용어를 \"밤 12시가 넘으면 클럽에서 춤을 출 수 없었던 독특한 법\" 같은 쉬운 구어체로 풀어줍니다.   도입부에 \"우리나라의 옛날 야간 통행금지 문화처럼, 일본에도 밤 문화를 꽁꽁 얼어붙게 만든 규제가 있었습니다\" 같은 한국식 비교를 한 줄 얹어주면 공감대가 훨씬 커집니다.",
+  "compare_at": 0,
+  "images": [],
+  "title1": "일본 심야 춤 금지",
+  "title2": "밤 12시의 규제",
+  "clip_queries": [
+   "Tokyo night club interior",
+   "Japanese street at midnight",
+   "crowd dancing in club"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 12:35",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0005_일본.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0005_일본_timing.json",
+  "tts_hash": "989b1ad19932",
+  "clips": [
+   {
+    "query": "Tokyo night club interior",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0005_일본\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "carl_watermark",
+    "page": "https://pixabay.com/videos/id-41957/",
+    "id": "pixabay41957",
+    "check": "ok"
+   },
+   {
+    "query": "Japanese street at midnight",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0005_일본\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "FreeCreativeStuff",
+    "page": "https://pixabay.com/videos/id-28860/",
+    "id": "pixabay28860",
+    "check": "ok"
+   },
+   {
+    "query": "crowd dancing in club",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0005_일본\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Vimeo-Free-Videos",
+    "page": "https://pixabay.com/videos/id-1275/",
+    "id": "pixabay1275",
+    "check": "ok"
+   }
+  ]
  },
  "7": {
   "narration": "네덜란드 거리, 자전거 전용 신호등이 별도로 있다는 사실, 알고 계셨나요? 암스테르담을 비롯한 대부분의 도시 교차로마다 자전거만을 위한 빨강·초록 불이 설치돼 있습니다. 특히 일부 도로는 자전거가 먼저 지나가도록 설계돼 있어, 차가 자전거가 완전히 통과할 때까지 기다리는 모습이 일상입니다. 이런 시스템 덕분에 네덜란드의 자전거 이용률은 세계 최고 수준을 유지하고 있습니다. 실제로 아침 출근길, 자전거 전용 신호가 초록이면 수백 명이 동시에 달려 나가고, 빨강이면 조용히 대기합니다. 보행자와 차가 같은 신호를 공유하는 곳과는 달리, 자전거만을 위한 신호는 안전성을 크게 높여 줍니다. 자전거가 먼저 지나가는 풍경을 상상해 보세요. 횡단보도에 서 있으면 자동차보다 자전거가 먼저 당당하게 지나가는 신기한 광경이 펼쳐집니다. 일본의 조용한 밤거리와는 정반대로, 이곳은 자전거가 중심이 되는 역동적인 세상입니다. 다음에는 이탈리아의 독특한 교통 문화에 대해 알아볼게요.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "네덜란드 거리, 자전거 전용 "
+    "text": "네덜란드 거리, 자전거 전용"
    },
    {
     "sentence": 4,
@@ -921,6 +1007,49 @@
   "sig": "816ceb4af627",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-25 12:33",
-  "instruction": "복잡한 교통 공학적 설명 대신, *\"횡단보도에 서 있으면 자동차보다 자전거가 먼저 당당하게 지나가는 신기한 풍경\"*처럼 시청자가 머릿속으로 쉽게 상상할 수 있는 묘사로 다듬습니다.  파트 마지막에 \"일본의 조용한 밤거리와는 정반대로, 이곳은 자전거가 중심이 되는 역동적인 세상입니다\" 같은 자연스러운 브릿지 멘트를 넣으면 다음 파트로 넘어갈 때 이탈률을 막을 수 있습니다."
+  "instruction": "복잡한 교통 공학적 설명 대신, *\"횡단보도에 서 있으면 자동차보다 자전거가 먼저 당당하게 지나가는 신기한 풍경\"*처럼 시청자가 머릿속으로 쉽게 상상할 수 있는 묘사로 다듬습니다.  파트 마지막에 \"일본의 조용한 밤거리와는 정반대로, 이곳은 자전거가 중심이 되는 역동적인 세상입니다\" 같은 자연스러운 브릿지 멘트를 넣으면 다음 파트로 넘어갈 때 이탈률을 막을 수 있습니다.",
+  "compare_at": 0,
+  "images": [],
+  "title1": "네덜란드",
+  "title2": "자동차가 손님이 되는 거리",
+  "clip_queries": [
+   "dutch bike traffic lights",
+   "Amsterdam bike lane crossing",
+   "urban cyclists waiting green"
+  ],
+  "locked": true,
+  "edited": "2026-10-25 12:35",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0007_네덜란드.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0007_네덜란드_timing.json",
+  "tts_hash": "380edb72e65b",
+  "clips": [
+   {
+    "query": "dutch bike traffic lights",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0007_네덜란드\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "PascalBeckmann",
+    "page": "https://pixabay.com/videos/id-37844/",
+    "id": "pixabay37844",
+    "check": "ok"
+   },
+   {
+    "query": "Amsterdam bike lane crossing",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0007_네덜란드\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "useche360",
+    "page": "https://pixabay.com/videos/id-205925/",
+    "id": "pixabay205925",
+    "check": "ok"
+   },
+   {
+    "query": "urban cyclists waiting green",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0007_네덜란드\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Pexels",
+    "page": "https://pixabay.com/videos/id-3579/",
+    "id": "pixabay3579",
+    "check": "ok"
+   }
+  ]
  }
 }
