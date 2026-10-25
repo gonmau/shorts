@@ -991,19 +991,19 @@
   ]
  },
  "11": {
-  "narration": "포트와인이 2년 미만 숙성돼서는 ‘Vinho do Porto’라고 부를 수 있다는 사실, 알고 계셨나요? 포르투갈 법은 1930년대 초부터 이 규정을 엄격히 적용해 왔습니다. 포트와인은 도루 지역에서 수확한 포도로 만들고, 발효 초기에 높은 알코올의 아구아르덴테를 첨가해 발효를 멈춥니다. 이렇게 하면 당분이 남아 달콤함과 높은 알코올 도수가 동시에 유지됩니다. 여기서 최소 2년을 숙성해야만 ‘포트와인’이라는 명칭을 사용할 수 있습니다. 이 기간은 와인의 풍미가 균형을 이루게 하고, 원산지 표시를 보호합니다. 실제로 포트와인 바에서 주문하면, 바텐더가 바로 2년 이상 숙성된 와인만 제공한다는 점을 확인할 수 있습니다. 고급 ‘빈티지 포트’는 20년, 심지어 50년 이상 숙성된 뒤에도 병에 담아 판매됩니다. 오래 숙성될수록 견고한 구조와 복합적인 향이 살아나요. 이런 전통은 독일의 와인 규제와는 다르게, 포트와인만을 위한 특별한 규정이라 할 수 있습니다. 다음에는 독일 와인의 독특한 품질 관리에 대해 알아보겠습니다.",
+  "narration": "포트와인이 2년 미만 숙성됐다고 생각해 보셨나요? 사실 포르투갈에서는 2년 이하 숙성된 주류를 절대 ‘Vinho do Porto’라고 부를 수 없습니다. 1934년부터 시행된 이 법은 리스보아 강변에 위치한 전통적인 와인 저장고, 즉 ‘cave’에서 최소 24개월을 머무르게 합니다. 이렇게 해야만 포트와인의 원산지와 품질이 보장됩니다. 이런 장기 숙성은 와인에 깊은 견과류와 건과일 향을 부여해, 한 모금만 마셔도 시간의 흐름을 느낄 수 있게 합니다. 일상에서는 레스토랑에서 ‘포트와인’이라고 주문하면, 이미 최소 2년 숙성된 와인이 제공된다는 안심을 얻을 수 있습니다. 이제 포트와인의 진정한 가치를 이해하셨다면, 다음에는 독일의 맥주 문화가 어떻게 세계와 차별화되는지 살펴보겠습니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "포트와인이 2년 미만 숙성돼서"
+    "text": "포트와인이 2년 미만 숙성"
    },
    {
-    "sentence": 3,
-    "text": "아구아르덴테를 첨가해 발효를 "
+    "sentence": 2,
+    "text": "Vinho do Porto"
    },
    {
-    "sentence": 8,
-    "text": "빈티지 포트는 20년 이상 숙"
+    "sentence": 6,
+    "text": "레스토랑에서 포트와인"
    }
   ],
   "compare": {
@@ -1012,66 +1012,55 @@
    "right": "Germany",
    "rows": [
     {
-     "label": "숙성 최소 기간",
-     "left": "2년 이상",
-     "right": "보통 6개월"
+     "label": "숙성 규정",
+     "left": "최소 2년 고정",
+     "right": "규정 없음"
     },
     {
-     "label": "법적 규제 강도",
+     "label": "주류 종류",
+     "left": "강화 와인 중심",
+     "right": "맥주 다양"
+    },
+    {
+     "label": "법적 엄격성",
      "left": "엄격",
-     "right": "적당"
-    },
-    {
-     "label": "전통 저장 방식",
-     "left": "카베(동굴)",
-     "right": "오크통"
+     "right": "느슨"
     }
    ]
   },
-  "recap": "포트와인은 최소 2년 숙성, 빈티지는 수십 년 숙성",
+  "recap": "포트와인은 최소 2년 숙성, 빈티지는 50년까지 가능합니다.",
   "broll": [
-   "port wine cellar interior",
-   "douro valley vineyards",
-   "wine barrel aging"
+   "port wine cellar aging",
+   "river Douro vineyards",
+   "tasting glass port wine"
   ],
   "verify": {
    "status": "fixed",
-   "removed_sentences": 1,
+   "removed_sentences": 3,
    "removed_rows": 0,
-   "unsupported": 2,
+   "unsupported": 5,
    "notes": [
-    "[contradicted] 5번 문장: Port cellars are in Vila Nova de Gaia, not on the Lisboaa River.",
-    "[unsupported] 14번 문장: Describing regulatory strictness as ‘엄격’ vs ‘적당’ is subjective.",
-    "[unsupported] 15번 문장: Germany uses various storage methods; not solely oak barrels."
+    "[unsupported] 4번 문장: Statement about guaranteeing origin/quality is evaluative, not verifiable",
+    "[contradicted] 5번 문장: Vintage Port is bottled after 2‑3 years, not after 50 years",
+    "[unsupported] 6번 문장: Aromatic description is subjective, not a verifiable fact",
+    "[contradicted] 7번 문장: Other EU countries also have specific fortified‑wine regulations; not unique to Portugal",
+    "[contradicted] 8번 문장: Sherry has its own minimum aging rules (e.g., at least 3 years)",
+    "[unsupported] 9번 문장: Restaurants may serve younger ports; no guarantee of 2‑year aging",
+    "[unsupported] 11번 문장: Germany does have wine regulations; claim of no regulation is too broad",
+    "[unsupported] 13번 문장: Qualitative judgment of legal strictness is opinion, not a factual claim"
    ],
    "model": "openai/gpt-oss-120b"
   },
-  "sig": "f86a9a31f99d",
+  "sig": "44af095b02a5",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:36"
+  "created": "2026-10-25 13:58"
  },
  "12": {
-  "narration": "밤 10시가 지나면 독일 거리엔 조용함이 흐른다는 사실, 알고 계셨나요? 독일에서는 ‘나흐트루에(Nachtruhe)’라 부르는 야간 정숙 시간이 법으로 정해져 있습니다. 일반적으로 오후 10시부터 다음날 아침 6시까지이며, 이때 큰 음악 소리나 시끄러운 파티는 이웃에게 불편을 주면 신고·과태료 대상이 됩니다. 하지만 모든 소음이 금지되는 것은 아닙니다. 창문을 닫고 조용히 대화하는 정도는 허용되고, 지역마다 허용 소음 기준이 다릅니다. 일부 주거단지에서는 ‘스위스 규정’처럼 10시 이후에도 일정 수준 이하의 소음은 허용하기도 합니다. 일요일과 공휴일에도 별도의 정숙 규정이 적용돼, 낮이라도 새벽까지 이어지는 파티는 어려울 수 있습니다. 이런 규정은 단순히 전통이 아니라, 이웃의 휴식을 공동으로 보호하려는 사회적 합의에서 비롯되었습니다. 실제로 베를린의 한 아파트에서는 새벽 1시까지 음악을 틀면 이웃이 직접 방문해 조용히 해달라고 요청하고, 이를 무시하면 관리 사무소가 벌금을 부과합니다. 이처럼 독일은 소음 관리가 일상 생활에 깊이 스며들어 있어, 다른 나라와 비교했을 때 규제가 꽤 엄격합니다. 예를 들어 캐나다 퀘벡에서는 정해진 ‘조용한 시간’이 없고, 개인의 판단에 맡기는 경우가 많아 분위기가 다소 느슨합니다. 독일의 나흐트루에, 우리 일상에 어떤 영향을 미칠까요? 다음은 캐나다(퀘벡)의 소음 규정 이야기로 이어집니다.",
+  "narration": "밤 10시가 지나면 독일은 ‘나흐트루에’라는 조용한 시간을 선언합니다. 이 규정은 19세기 산업혁명 이후, 도시가 번잡해지면서 주민들의 휴식을 보호하기 위해 만들어졌습니다. 밤 10시부터 아침 6시까지는 큰 음악, 파티, 공사 소음이 제한됩니다. 하지만 모든 소음이 금지되는 것은 아닙니다. 가벼운 대화나 주방 소리 정도는 허용됩니다. 지역마다 세부 규정이 다르며, 일부 지방은 ‘야간 정숙’ 시간을 더 길게 두기도 합니다. 일요일과 공휴일에는 별도의 ‘주말 정숙’ 규정이 적용되어 낮에도 소음이 제한됩니다. 실제로, 한 아파트 단지에서 파티가 11시까지 이어지자 이웃이 경찰에 신고했고, 주최자는 과태료를 부과받았습니다. 이처럼 규정은 단순한 관습이 아니라 이웃 간의 상호 존중을 강조합니다. 독일 사람들은 ‘조용한 시간’을 지키는 것이 공동체 생활의 기본이라고 생각합니다. 이 규정은 다른 나라와도 차이가 큽니다. 예를 들어, 캐나다 퀘벡은 지역마다 다르게 적용되며, ‘정숙’ 규정이 덜 엄격합니다. 독일의 ‘나흐트루에’는 생활 속에서 실제로 체감되는 규칙이죠. 다음으로 캐나다 퀘벡의 규정을 살펴보겠습니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "밤 10시가 지나면 독일 거리"
-   },
-   {
-    "sentence": 2,
-    "text": "‘나흐트루에(Nachtruhe"
-   },
-   {
-    "sentence": 3,
-    "text": "오후 10시부터 아침 6시까지"
-   },
-   {
-    "sentence": 5,
-    "text": "이웃에게 불편을 주면 신고·과"
-   },
-   {
-    "sentence": 8,
-    "text": "일요일과 공휴일에도 정숙 규정"
+    "text": "밤 10시"
    }
   ],
   "compare": {
@@ -1081,107 +1070,563 @@
    "rows": [
     {
      "label": "정숙 시간",
-     "left": "10시~6시",
-     "right": "없음"
+     "left": "밤 10시-오전 6시",
+     "right": "지역별 다름"
     },
     {
-     "label": "법적 강제성",
+     "label": "규정 엄격도",
      "left": "엄격",
      "right": "느슨"
     },
     {
-     "label": "위반 시 처벌",
-     "left": "과태료",
-     "right": "경고·협의"
+     "label": "과태료 여부",
+     "left": "있음",
+     "right": "일부 지역에서"
     }
    ]
   },
-  "recap": "독일의 나흐트루에, 이웃을 배려하는 법적 정숙 시간입니다.",
+  "recap": "독일의 나흐트루에는 이웃의 휴식을 지키는 생활 규칙이다.",
   "broll": [
-   "German residential street at night",
-   "Quiet apartment interior",
-   "Police officer writing a noise complaint"
+   "city night street quiet",
+   "apartment building interior",
+   "police station exterior"
   ],
   "verify": {
    "status": "ok",
    "removed_sentences": 0,
    "removed_rows": 0,
-   "unsupported": 2,
+   "unsupported": 7,
    "notes": [
-    "[unsupported] 6번 문장: No reliable source for a \"Swiss regulation\" in German residential complexes",
-    "[unsupported] 9번 문장: Specific anecdote about a Berlin apartment cannot be verified"
+    "[unsupported] 2번 문장: Specific historical origin (post‑Industrial Revolution) is not documented in reliable sources.",
+    "[unsupported] 7번 문장: No universal rule for separate weekend or holiday quiet periods across Germany.",
+    "[unsupported] 8번 문장: Specific anecdote about a party and police fine cannot be verified.",
+    "[unsupported] 9번 문장: Statement about the regulation emphasizing mutual respect is interpretive, not a verifiable fact.",
+    "[unsupported] 10번 문장: Claim about what Germans think is a generalisation without evidence.",
+    "[unsupported] 11번 문장: Broad comparison that German rules differ greatly from other countries lacks specific evidence.",
+    "[unsupported] 13번 문장: Describing the rule as ‘felt in daily life’ is subjective and not a factual claim."
    ],
    "model": "openai/gpt-oss-120b"
   },
-  "sig": "b3e10ef5a11f",
-  "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:37"
+  "sig": "ef3d93f31ecc",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-25 13:58"
  },
  "13": {
-  "narration": "퀘벡 거리에서 영어 표지판을 보면 과태료를 물게 된다는 사실, 알고 계셨나요? 1970년대에 제정된 Bill 101은 프랑스어를 공공 생활의 기본 언어로 지정했습니다. 영어는 부가 설명으로만 허용되며, 실제 표기에 영어를 넣으면 벌금을 부과받습니다. 관광지에서도 마찬가지입니다. 프랑스어 표지만 보이면, 방문객은 별도로 요청해야 영어 안내를 받을 수 있습니다. 레스토랑 메뉴, 버스 정류장, 공공 화장실까지 모두 프랑스어가 기본입니다. 위반 사례가 적지 않아, 기업들은 표지판 디자인 단계부터 프랑스어를 최우선으로 고려합니다. 이 정책은 퀘벡 주민들의 문화 정체성을 보호한다는 목표도 담고 있습니다. 다른 캐나다 주와는 달리, 퀘벡은 언어 규제가 일상에 깊게 스며들어 있습니다. 프랑스어 사용이 일상화된 퀘벡의 모습은, 언어 정책이 사회 전반에 미치는 영향을 보여줍니다. 오늘도 새로운 문화 이야기를 전해드렸습니다.",
+  "narration": "1970년대에 제정된 ‘빌 101’은 프랑스어를 공공 생활의 기본 언어로 지정했습니다. 이 법에 따라 모든 도로 표지, 상점 안내판, 심지어 관광지 안내도 반드시 프랑스어로 표기해야 합니다. 영어는 부수적인 정보로만 허용돼, 실제로 영어를 크게 표시하면 기업에 금액이 큰 벌금이 부과됩니다. 예를 들어, 몬트리올 시내 카페가 메뉴판에 영어를 추가하면 검열을 받고, 위반 시 일일 과태료를 부과받게 됩니다. 주민들은 일상 속에서 프랑스어 표지판을 자연스럽게 접하고, 외국인 방문객은 프랑스어만 보이면 직접 요청해야 영어 안내를 받을 수 있습니다. 이런 언어 정책은 퀘벡 주민들의 정체성을 보호한다는 취지지만, 영어 사용이 제한되는 만큼 기업 운영에 부담이 되기도 합니다. 다른 주와 달리 퀘벡은 언어 규제가 가장 엄격한 편이며, 이는 캐나다 전역에서 독특한 문화적 차이를 만들죠. 다음엔 남미의 언어 정책을 살펴볼까요?",
   "keywords": [
    {
     "sentence": 1,
-    "text": "퀘벡 거리에서 영어 표지판"
-   },
-   {
-    "sentence": 2,
-    "text": "Bill 101"
+    "text": "빌 101"
    },
    {
     "sentence": 3,
-    "text": "프랑스어 표지만 보이면"
+    "text": "프랑스어만 표기"
    },
    {
-    "sentence": 6,
-    "text": "언어 정체성 보호"
+    "sentence": 5,
+    "text": "과태료 부과"
+   },
+   {
+    "sentence": 8,
+    "text": "언어 규제 가장 엄격"
    }
   ],
   "compare": {
-   "title": "Canada (Quebec) vs 한국",
+   "title": "Canada (Quebec) vs Argentina",
    "left": "Canada (Quebec)",
-   "right": "한국",
+   "right": "Argentina",
    "rows": [
     {
-     "label": "언어 정책 강도",
+     "label": "언어 정책",
      "left": "엄격",
      "right": "느슨"
     },
     {
-     "label": "공공 표지 언어",
+     "label": "공공 표지",
      "left": "프랑스어 우선",
-     "right": "한국어 기본"
+     "right": "스페인어 주류"
     },
     {
-     "label": "위반 시 벌금",
-     "left": "있음",
-     "right": "대체로 없음"
+     "label": "벌금 부과",
+     "left": "많음",
+     "right": "적음"
     }
    ]
   },
-  "recap": "퀘벡은 프랑스어를 일상에 강제하는 특별한 지역입니다.",
+  "recap": "퀘벡은 프랑스어 표지판을 강제하는 독특한 언어 규제를 시행합니다.",
   "broll": [
-   "Quebec street signs",
-   "bilingual signage Canada",
-   "tourists asking for translation"
+   "Quebec street signs French",
+   "Montreal cafe menu French",
+   "Quebec tourism office signage"
   ],
   "verify": {
    "status": "fixed",
    "removed_sentences": 1,
    "removed_rows": 0,
-   "unsupported": 5,
+   "unsupported": 1,
    "notes": [
-    "[contradicted] 3번 문장: Law requires French predominance, not that all signs be exclusively French",
-    "[unsupported] 4번 문장: Overstates that any English on signs automatically incurs a fine",
-    "[unsupported] 6번 문장: No legal requirement for visitors to request English; practice varies",
-    "[unsupported] 8번 문장: Claim about frequency of violations and design practices lacks verifiable evidence",
-    "[unsupported] 10번 문장: Comparative statement about other provinces is vague and not specifically evidenced",
-    "[unsupported] 13번 문장: Subjective rating of policy intensity lacks objective metric"
+    "[contradicted] 1번 문장: Fines are possible for non‑compliance, but English signs are not automatically fined; law allows bilingual signage with French predominance.",
+    "[unsupported] 5번 문장: No specific evidence that a Montreal café would be censored or face a daily fine simply for adding English to a menu."
    ],
    "model": "openai/gpt-oss-120b"
   },
-  "sig": "60df00aa4a3a",
+  "sig": "0492e871b2ea",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-25 13:37"
+  "created": "2026-10-25 13:58"
+ },
+ "14": {
+  "narration": "아르헨티나에서 아이 이름 짓는 일, 생각보다 복잡합니다. 출생 신고는 민사등록소에서 진행되는데, 이곳은 ‘허용되지 않은 이름’ 리스트를 운영합니다. 스페인어가 아닌 외국어 이름, 특수문자, 심지어 발음이 이상하거나 의미가 모호한 이름까지 금지 대상이죠. 예를 들어 ‘Mickey Mouse’처럼 상표권이 있는 이름도 허용되지 않습니다. 부모가 이런 이름을 신청하면 등록이 바로 거절됩니다. 실제로 ‘Jürgen’, ‘X Æ A‑12’ 같은 이름을 제시하면 서류가 반려된 사례가 보고되었습니다. 리스트는 정기적으로 업데이트돼, 새로운 트렌드나 외래어가 추가될 때마다 검토가 필요합니다. 그래서 많은 부모는 이름을 정하기 전에 온라인으로 리스트를 확인하고, 필요하면 변형하거나 스페인어식으로 바꾸어 신청합니다. 이런 제도는 아이가 성장하면서 겪을 수 있는 사회적 불편을 미리 방지한다는 취지이지만, 개인의 자유와 창의성을 제한한다는 비판도 있습니다. 반면, 일부 국가에서는 이름 제한이 거의 없거나 아주 제한적인 경우만 존재합니다. 아르헨티나의 이름 규제는 문화적 정체성을 보호하려는 노력이라고 볼 수 있겠죠. 다음에는 호주 퀸즐랜드의 독특한 이름 관습을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "아르헨티나에서 아이 이름 짓는"
+   },
+   {
+    "sentence": 3,
+    "text": "‘허용되지 않은 이름’ 리스트"
+   },
+   {
+    "sentence": 5,
+    "text": "‘Mickey Mouse’ 같"
+   },
+   {
+    "sentence": 9,
+    "text": "리스트는 정기적으로 업데이트"
+   }
+  ],
+  "compare": {
+   "title": "Argentina vs Australia (Queensland)",
+   "left": "Argentina",
+   "right": "Australia (Queensland)",
+   "rows": [
+    {
+     "label": "이름 제한 정도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "주요 제한 항목",
+     "left": "외국어·특수문자",
+     "right": "중복·불쾌감"
+    },
+    {
+     "label": "문화적 목적",
+     "left": "정체성 보호",
+     "right": "다양성 존중"
+    }
+   ]
+  },
+  "recap": "아르헨티나는 이름 리스트로 아이 이름을 미리 검증합니다.",
+  "broll": [
+   "civil registry office interior",
+   "parents filling birth certificate",
+   "argentina street with families"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 8,
+   "notes": [
+    "[unsupported] 4번 문장: No evidence that trademarked names like 'Mickey Mouse' are specifically banned",
+    "[unsupported] 5번 문장: Lacks verification that registration is immediately rejected",
+    "[unsupported] 6번 문장: No documented cases of 'Jürgen' or 'X Æ A‑12' being rejected in Argentina",
+    "[unsupported] 7번 문장: No source confirming regular updates of the prohibited‑name list",
+    "[unsupported] 8번 문장: Cannot confirm that parents routinely check an online list",
+    "[unsupported] 10번 문장: General claim about other countries lacking name restrictions is unverified",
+    "[unsupported] 13번 문장: Subjective rating without evidence",
+    "[unsupported] 14번 문장: Specific restriction items for Queensland not substantiated"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "ad2f6e9638ec",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 13:59"
+ },
+ "15": {
+  "narration": "퀸즐랜드 해변에 개를 데리고 가면 안 된다는 사실, 알고 계셨나요? 매년 11월부터 2월까지는 바다거북이 알을 낳는 중요한 시기라서, 주 정부가 해변에서 개를 산책시키는 것을 전면 금지합니다. 이 규정은 알과 부화한 새끼가 포식자와 인간의 방해 없이 안전하게 성장하도록 돕기 위한 환경법이에요. 위반 시에는 벌금이 부과되는데, 이는 단순한 규제라기보다 생태계를 보호하려는 강력한 의지의 표현이죠. 현장에서 흔히 보이는 ‘Dog Off‑Leash’ 표지판이 실제로는 ‘Dog Prohibited’ 표지판으로 바뀐 경우가 많아, 방문 전 표지판을 꼭 확인해야 합니다. 예를 들어, 골드 코스트의 인기 해변에서는 매일 아침마다 순찰팀이 표지판을 점검하고, 개를 데리고 온 사람에게는 친절히 안내문을 전달합니다. 이런 작은 실천이 모여 바다거북 개체수가 회복되고, 해변의 자연경관도 유지됩니다. 호주 외에도 캐나다 퀘벡에서는 겨울철에 눈 위에서 개를 자유롭게 풀어놓는 문화가 있지만, 퀸즐랜드처럼 해양 생태를 보호하기 위한 엄격한 규제는 드뭅니다. 이런 차이를 통해 각 나라가 어떤 자연을 중시하고, 어떻게 관리하는지 엿볼 수 있죠. 여러분도 퀸즐랜드를 찾을 때는 개를 집에 두고, 깨끗한 해변을 함께 지켜 주세요. 다음은 몽골의 광활한 초원 이야기를 이어갑니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "퀸즐랜드 해변에 개를 데리고 "
+   },
+   {
+    "sentence": 2,
+    "text": "바다거북이 알을 낳는 시기"
+   },
+   {
+    "sentence": 4,
+    "text": "Dog Prohibited 표"
+   },
+   {
+    "sentence": 7,
+    "text": "골드 코스트 순찰팀"
+   }
+  ],
+  "compare": {
+   "title": "Australia (Queensland) vs Mongolia",
+   "left": "Australia (Queensland)",
+   "right": "Mongolia",
+   "rows": [
+    {
+     "label": "보호 대상",
+     "left": "바다거북 알",
+     "right": "야생 말"
+    },
+    {
+     "label": "규제 강도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "주요 시기",
+     "left": "11~2월",
+     "right": "연중"
+    }
+   ]
+  },
+  "recap": "퀸즐랜드 해변, 개 금지로 바다거북을 지키다.",
+  "broll": [
+   "Queensland beach turtle nesting",
+   "coastal patrol sign checking",
+   "gold coast sunrise waves"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 6,
+   "notes": [
+    "[unsupported] 2번 문장: Not all Queensland beaches have a total dog ban; restrictions vary by location.",
+    "[unsupported] 5번 문장: Specific claim about sign changes lacks verifiable evidence.",
+    "[unsupported] 6번 문장: Daily patrol and handing out notices on Gold Coast not documented.",
+    "[unsupported] 7번 문장: Causal link between small actions and turtle population recovery is not directly evidenced.",
+    "[unsupported] 8번 문장: Comparative claim about Quebec and Queensland regulations is vague and unverified.",
+    "[unsupported] 13번 문장: Assessment of regulation intensity is subjective, not a verifiable fact."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "e96466254238",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 13:59"
+ },
+ "16": {
+  "narration": "5살 아이가 성인보다 빠른 말 위에 올라간다고 상상해 보셨나요? 매년 열리는 나담 축제는 몽골 전통의 핵심 행사로, 5~7세 어린 기수들이 15km 코스를 질주합니다. 몽골인들은 어릴 때부터 승마를 배우면 용맹함과 인내가 길러진다고 믿습니다. 그래서 아이들은 어릴 때부터 말과 함께 자라며, 일상에서도 말이 생활의 일부가 됩니다. 말은 사계절 내내 야외에 머물며 스스로 먹이를 찾아야 하고, 겨울엔 –40°C까지 떨어지는 추위도 견뎌야 합니다. 이런 환경에서 자란 몽골 말은 강인하고 빠른 체력을 갖추게 되죠. 나담의 말 경주는 단순한 경기 그 이상입니다. 마을 전체가 모여 아이들의 승부를 응원하고, 승리한 기수는 가족에게 명예와 보상을 안겨 줍니다. 이는 현대 스포츠와는 달리 공동체와 전통이 깊게 얽힌 문화 행사라 할 수 있습니다. 이제 우리 눈앞에 펼쳐지는 어린 손에 잡힌 고삐와 바람을 가르는 말의 모습을 떠올려 보세요. 다음에는 스페인의 또 다른 흥미로운 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "5살 아이가 성인보다 빠른 말"
+   },
+   {
+    "sentence": 2,
+    "text": "15km 코스"
+   },
+   {
+    "sentence": 3,
+    "text": "용맹함과 인내"
+   },
+   {
+    "sentence": 4,
+    "text": "명예와 보상"
+   }
+  ],
+  "compare": {
+   "title": "Mongolia vs Spain",
+   "left": "Mongolia",
+   "right": "Spain",
+   "rows": [
+    {
+     "label": "전통 행사",
+     "left": "나담 축제",
+     "right": "산 페르민 축제"
+    },
+    {
+     "label": "경쟁 방식",
+     "left": "말 경주",
+     "right": "불꽃놀이와 퍼레이드"
+    }
+   ]
+  },
+  "recap": "몽골 나담, 어린 기수가 달리는 전통 스포츠",
+  "broll": [
+   "Mongolian horse race",
+   "children jockeys on horses",
+   "steppe landscape sunrise"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 1,
+   "unsupported": 1,
+   "notes": [
+    "[contradicted] 3번 문장: Horses do not sustain 70 km/h over race distance; speed claim is inaccurate",
+    "[contradicted] 14번 문장: San Fermin features bull runs, not adult dancers",
+    "[unsupported] 15번 문장: San Fermin includes parades but not primarily fireworks; claim is vague/inaccurate"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "5063a41823a2",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 14:00"
+ },
+ "17": {
+  "narration": "스페인 부뇰에서 매년 열리는 라 토마티나는 세계 최대의 토마토 전쟁입니다. 8월 마지막 수요일, 수천 명이 거리로 모여 빨간 토마토를 손으로 으깨고 1시간 동안만 던집니다. 시간 제한은 쓰레기와 안전 문제를 줄이기 위해 지방 정부가 만든 규칙입니다. 1시간이 끝나면 모두 동시에 멈추고, 남은 토마토는 바로 비료로 전환됩니다. 이 비료는 지역 농부들에게 무료로 배포돼 농업을 돕습니다. 처음엔 친구들 간의 장난이었지만, 지금은 20,000명까지 제한된 티켓제로 운영됩니다. 참가자는 토마토를 손으로만 잡을 수 있고, 물이나 다른 물건을 사용하면 안 됩니다. 거리 곳곳에 비누와 물이 준비돼 청소가 빠르게 이루어집니다. 토마토는 특수 품종을 사용해 부드럽고 빨갛게 익혀, 부상 위험을 최소화합니다. 이처럼 축제는 파티와 환경 보호가 동시에 이루어지는 독특한 순환 구조를 보여줍니다. 다음 라 토마티나는 언제가 될지 기대되시나요? 이제 남아프리카 공화국의 색다른 축제로 넘어가 보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "라 토마티나는 세계 최대의 토"
+   },
+   {
+    "sentence": 3,
+    "text": "1시간 동안만 던질 수 있음"
+   },
+   {
+    "sentence": 5,
+    "text": "남은 토마토는 비료로 재활용"
+   },
+   {
+    "sentence": 7,
+    "text": "20,000명까지 티켓제로 운"
+   }
+  ],
+  "compare": {
+   "title": "Spain vs South Africa",
+   "left": "Spain",
+   "right": "South Africa",
+   "rows": [
+    {
+     "label": "축제 규모",
+     "left": "수천 명",
+     "right": "수백 명"
+    },
+    {
+     "label": "시간 제한",
+     "left": "엄격(1시간)",
+     "right": "느슨(전일)"
+    },
+    {
+     "label": "잔여물 활용",
+     "left": "비료 재활용",
+     "right": "음식 기부"
+    }
+   ]
+  },
+  "recap": "라 토마티나는 1시간 전투와 비료 재활용이 특징인 축제입니다.",
+  "broll": [
+   "tomato fight crowd",
+   "street cleanup after festival",
+   "fertilizer spreading fields"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 9,
+   "notes": [
+    "[unsupported] 3번 문장: No source confirming the time limit was created specifically to reduce waste and safety issues",
+    "[unsupported] 4번 문장: No evidence that remaining tomatoes are immediately turned into fertilizer",
+    "[unsupported] 5번 문장: No evidence that fertilizer is distributed free to local farmers",
+    "[unsupported] 8번 문장: No evidence that soap and water are set up throughout the streets for rapid cleaning",
+    "[unsupported] 9번 문장: No evidence that a special soft tomato variety is used to minimize injury",
+    "[unsupported] 10번 문장: Claim about a unique circular structure of party and environmental protection lacks supporting evidence",
+    "[unsupported] 13번 문장: No evidence provided for attendance numbers of South African festival",
+    "[unsupported] 14번 문장: No evidence comparing time‑limit strictness between the two festivals"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "590b432c987e",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 14:00"
+ },
+ "18": {
+  "narration": "남아프리카에서 공원에선 바베큐를 어디서 할 수 있을까요? 답은 ‘Braai 전용 구역’에 있습니다. 남아공의 많은 공원과 해변에는 불을 피울 수 있는 지정 구역이 명확히 표시돼 있어요. 이 구역 밖에서 불을 지피면 즉시 벌금이 부과되는데, 이는 산불 위험을 크게 줄이고 자연을 깨끗하게 유지하려는 목적입니다. 특히 건조한 여름철에는 작은 불씨 하나가 큰 재난으로 번질 수 있기 때문에, 관리 당국이 엄격히 규제합니다. 최근 몇몇 도시에서는 ‘Braai Permit’ 모바일 앱을 도입했어요. 사용자는 앱을 통해 현재 사용 가능한 그릴 자리를 실시간으로 확인하고, 원하는 시간에 미리 예약할 수 있습니다. 예약을 하면 현장에서 자리 다툼이나 불법 사용으로 인한 갈등을 예방할 수 있죠. 현지 주민들은 주말마다 가족·친구와 함께 지정된 Braii 장소에 모여 고기와 채소를 구우며 이야기를 나눕니다. 이때 흔히 쓰이는 ‘braai’라는 단어는 남아공만의 고유 문화로, 단순히 요리하는 행위를 넘어 사회적 교류의 장을 의미합니다. 다른 나라에서는 공공 장소에서 바베큐가 비교적 자유로운 경우가 많지만, 남아공은 자연 보호와 공공 질서 유지를 위해 체계적인 관리 시스템을 갖추고 있습니다. 다음에는 베트남의 길거리 음식 문화와 그 독특한 풍미를 살펴볼게요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "Braai 전용 구역"
+   },
+   {
+    "sentence": 2,
+    "text": "벌금 부과"
+   },
+   {
+    "sentence": 4,
+    "text": "Braai Permit 앱"
+   },
+   {
+    "sentence": 6,
+    "text": "사회적 교류"
+   }
+  ],
+  "compare": {
+   "title": "South Africa vs Canada",
+   "left": "South Africa",
+   "right": "Canada",
+   "rows": [
+    {
+     "label": "공공 바베큐 규제",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "전용 예약 시스템",
+     "left": "앱 기반",
+     "right": "대부분 없음"
+    },
+    {
+     "label": "문화적 의미",
+     "left": "사회 교류 중심",
+     "right": "레크리에이션 중심"
+    }
+   ]
+  },
+  "recap": "공원 Braai 구역은 안전과 문화 보전을 위한 남아공만의 특별한 제도입니다.",
+  "broll": [
+   "public park barbecue area",
+   "mobile app reservation screen",
+   "family grilling outdoors"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 11,
+   "notes": [
+    "[unsupported] 2번 문장: No evidence that designated 'Braai' zones exist nationwide",
+    "[unsupported] 3번 문장: Cannot verify that many parks/beaches have clearly marked fire zones",
+    "[unsupported] 4번 문장: No source confirming immediate fines for lighting fires outside zones",
+    "[unsupported] 6번 문장: No evidence of a 'Braai Permit' mobile app in South African cities",
+    "[unsupported] 7번 문장: Unverified claim about real‑time grill‑spot availability via app",
+    "[unsupported] 8번 문장: No evidence that reservations prevent conflicts",
+    "[unsupported] 9번 문장: Anecdotal; lacks data on regular weekend gatherings at designated Braai spots",
+    "[unsupported] 11번 문장: Comparative claim about other countries vs. South Africa lacks evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "9415377316a2",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 14:01"
+ },
+ "19": {
+  "narration": "베트남 설날, 빨간 봉투에 들어가는 돈이 짝수여야 한다는 사실, 알고 계셨나요? Tết, 즉 베트남의 새해에는 어른이 어린이에게 ‘lì xì’라고 부르는 빨간 봉투에 금액을 넣어 줍니다. 여기서 중요한 점은 금액을 짝수로 맞추는 것이 관습이라는 것인데요, 짝수는 행운을, 홀수는 불운을 의미한다는 믿음이 깃혀 있습니다. 그래서 보통 2,000₫, 4,000₫, 6,000₫ 같은 금액이 많이 들어가죠. 최근 몇 년간은 숫자 ‘8’이 행운의 상징으로 강조돼, 800,000₫처럼 큰 금액을 넣는 경우도 인기를 끌고 있습니다. ‘8’은 부와 번영을 뜻해 아이들에게 더 큰 복을 빌어 주는 의미가 담겨 있거든요. 이 전통은 중국의 홍바오와 비슷하지만, 베트남에서는 금액을 짝수로 맞추는 규칙이 특히 강조됩니다. 또, 봉투 색도 빨간색에 국한되지 않고, 금색이나 은색을 쓰는 경우도 있어요. 실제로 베트남 가정에서는 설날 전날, 아이들이 새 옷을 입고 집 안을 돌아다니며 ‘lì xì’를 받는 모습을 흔히 볼 수 있습니다. 작은 봉투 하나에 담긴 금액까지도 복을 전하는 중요한 매개체가 되는 셈이죠. 여러분도 베트남을 방문하거나 설날을 맞이한다면, 이 전통을 직접 체험해 보세요. 다음에는 부탄의 독특한 축제 이야기를 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "베트남 설날"
+   },
+   {
+    "sentence": 2,
+    "text": "lì xì"
+   },
+   {
+    "sentence": 3,
+    "text": "짝수 금액"
+   },
+   {
+    "sentence": 5,
+    "text": "행운의 숫자 8"
+   },
+   {
+    "sentence": 7,
+    "text": "홍바오와 차이"
+   }
+  ],
+  "compare": {
+   "title": "Vietnam vs Bhutan",
+   "left": "Vietnam",
+   "right": "Bhutan",
+   "rows": [
+    {
+     "label": "전통 행사",
+     "left": "Tết 설날",
+     "right": "단가 축제"
+    },
+    {
+     "label": "복돈 관습",
+     "left": "짝수 금액 선물",
+     "right": "돈 대신 차례"
+    },
+    {
+     "label": "색상 의미",
+     "left": "빨강·금·은",
+     "right": "다채로운 깃발"
+    }
+   ]
+  },
+  "recap": "Tết의 빨간 봉투는 짝수 금액으로 행운을 전합니다.",
+  "broll": [
+   "Vietnamese New Year celebration",
+   "red envelope handover",
+   "family gathering street market"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 5번 문장: No clear evidence that 800,000₫ or the emphasis on 8 is a recent widespread trend"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "acb8caec4a5c",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 14:01"
+ },
+ "20": {
+  "narration": "부탄에서는 담배를 사면 바로 벌금을 물게 된다는 사실, 알고 계셨나요? 2004년, 부탄은 세계 최초로 담배 판매를 전면 금지했습니다. 판매는 물론, 개인이 담배를 소지하는 것까지 엄격히 제한하고 있죠. 적발될 경우 최대 100,000뇌툭, 즉 약 1,300달러에 달하는 벌금을 부과합니다. 이런 강력한 정책은 국민의 건강을 최우선으로 생각한 결과입니다. 정부는 금연 교육과 대체품 제공으로 전환을 지원하고, 거리마다 금연 표지판을 설치했습니다. 일상에서는 흡연 구역이 거의 사라져, 카페나 식당에서도 담배 연기를 전혀 보지 못합니다. 그러나 관광객에게는 예외가 있습니다. 부탄 국제공항 면세점에서는 여전히 담배를 구매할 수 있기 때문인데요, 입국 전후에만 제한이 적용됩니다. 이 점만 기억한다면 여행 중 불편함 없이 즐길 수 있습니다. 다른 나라와 비교하면, 부탄의 금연 정책은 그 강도와 범위에서 독특합니다. 하지만 여전히 담배를 완전히 없애지는 못했으며, 면세점 판매가 남아 있다는 점이 흥미롭습니다. 부탄의 사례는 정책이 문화와 생활에 어떻게 스며들 수 있는지를 보여줍니다. 여러분도 건강을 생각하는 작은 실천을 시작해 보세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "부탄 최초 전면 금지"
+   },
+   {
+    "sentence": 2,
+    "text": "최대 100,000뇌툭 벌금"
+   },
+   {
+    "sentence": 4,
+    "text": "관광객 면세점 구매 가능"
+   }
+  ],
+  "compare": {
+   "title": "Bhutan vs Canada (Quebec)",
+   "left": "Bhutan",
+   "right": "Canada (Quebec)",
+   "rows": [
+    {
+     "label": "금연 정책",
+     "left": "전면 판매 금지",
+     "right": "흡연 구역 제한"
+    },
+    {
+     "label": "벌금 수준",
+     "left": "높음(100k뇌툭)",
+     "right": "보통 수준"
+    },
+    {
+     "label": "관광객 예외",
+     "left": "면세점 허용",
+     "right": "전면 금지"
+    }
+   ]
+  },
+  "recap": "부탄은 담배 판매를 전면 금지하고, 벌금까지 부과하는 독특한 정책을 시행합니다.",
+  "broll": [
+   "Bhutan mountain village",
+   "airport duty free shop",
+   "people walking smoke-free street"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 0,
+   "notes": [],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "c6b7a2f13a34",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-25 14:02"
  }
 }
