@@ -289,3 +289,4 @@
 {"id": "1793017136497-7dc35d", "time": "2026-10-26 21:18:56", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 175", "status": "success", "secs": 1.6, "detail": ""}
 {"id": "1793017136944-da333a", "time": "2026-10-26 21:18:56", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 175 --any", "status": "success", "secs": 0.4, "detail": ""}
 {"id": "1793018602516-254cb2", "time": "2026-10-26 21:43:22", "channel": "KO", "source": "PC", "kind": "롱폼", "title": "build_longform.py --preview cuts --mode manual --indexes 175,186,247,261,270,277,297,300,301 --min 1 --start 0", "status": "success", "secs": 1345.6, "detail": ""}
+{"id": "1793020820303-f95855", "time": "2026-10-26 22:20:20", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 270", "status": "success", "secs": 25.0, "detail": ""}
