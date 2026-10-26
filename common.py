@@ -84,12 +84,12 @@ def image_credit_lines(item):
     """유튜브 설명란에 넣을 사진 출처. Pixabay는 한 줄, Wikimedia Commons는 사진마다 작성자/라이선스/링크."""
     cr = (item.get("image_credits") or []) + (item.get("edit_credits") or [])
     has_pix = any(c.get("source", "pixabay") == "pixabay" for c in cr) or (not cr and item.get("image_source") == "pixabay")
-    com = sorted((c for c in cr if c.get("source") == "commons"), key=lambda c: c.get("scene", 0))
+    com = sorted((c for c in cr if c.get("source") in ("commons", "openverse")), key=lambda c: c.get("scene", 0))
     lines = []
     if has_pix:
         lines.append("Photos: Pixabay (pixabay.com)")
     if com:
-        lines.append("Photos from Wikimedia Commons (cropped/zoomed):")
+        lines.append("Photos from Wikimedia Commons / Openverse (cropped/zoomed):")
         for c in com:
             lic = c.get("license", "")
             lic_url = license_url(lic)
@@ -106,6 +106,8 @@ def credit_label(item):
         names.append("Pixabay")
     if any(c.get("source") == "commons" for c in cr):
         names.append("Wikimedia Commons")
+    if any(c.get("source") == "openverse" for c in cr):
+        names.append("Openverse")
     return ("Photos: " + " · ".join(names)) if names else ""
 
 

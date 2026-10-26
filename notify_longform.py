@@ -14,7 +14,7 @@ def main():
     pvw = os.environ.get("PREVIEW", "") or ("list" if os.environ.get("DRY_RUN", "") == "true" else "")
     if pvw:
         out = Path("longform_out")
-        names = {"list": "목록", "script": "대본", "images": "사진", "voice": "음성"}
+        names = {"list": "목록", "script": "대본", "images": "사진", "voice": "음성", "cuts": "컷·후보 사진"}
         if os.environ.get("JOB_STATUS", "") != "success":
             post(url, f"❌ 롱폼 {names.get(pvw, pvw)} 미리 보기 실패 (조건에 맞는 소재가 부족하거나 키 확인 필요)\n로그: {run_url}")
             return
@@ -41,6 +41,16 @@ def main():
                 post_image(url, f_, f_.stem.rsplit("_", 1)[1] + "번 소재")
             if art:
                 post(url, f"원본 사진 받기: {art}")
+        elif pvw == "cuts":
+            post(url, "✂️ 이미지 컷 시트 (컷 이름 = 소재번호_컷번호)")
+            f_ = out / "preview_cutsheet.txt"
+            if f_.exists():
+                post_long(url, f_.read_text(encoding="utf-8"))
+            if (out / "preview_cutsheet.csv").exists():
+                post_file(url, out / "preview_cutsheet.csv", "컷 시트 (엑셀로 열기)")
+            post(url, "🖼 컷별 후보 사진 (사진 위 번호가 후보 번호). 마음에 드는 걸 Actions의 pick 칸에 `117_3=2, 118_1=5` 처럼 적고 다시 실행하세요. 직접 올릴 사진은 my_images 폴더에 `117_03.jpg`로 올리면 됩니다.")
+            for f_ in sorted(out.glob("preview_cands_*.jpg"), key=lambda p: int(p.stem.rsplit("_", 1)[1])):
+                post_image(url, f_, f_.stem.rsplit("_", 1)[1] + "번 소재 후보")
         elif pvw == "voice":
             post(url, "🔊 롱폼 음성 미리 보기 (소재별 mp3)")
             sc = out / "preview_script.txt"

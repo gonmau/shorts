@@ -36,10 +36,13 @@ on:
         description: "롱폼 제목 (비우면 자동)"
         default: ""
       preview:
-        description: "영상 만들기 전 한 단계만 미리 보기 (off=영상까지 / list=목록 / script=대본·시나리오 / images=장면 사진 / voice=대본+음성) - 결과는 디스코드로"
+        description: "영상 만들기 전 한 단계만 미리 보기 (off=영상까지 / list=목록 / script=대본·시나리오 / images=장면 사진 / voice=대본+음성 / cuts=컷 시트+후보 사진) - 결과는 디스코드로"
         type: choice
-        options: [off, list, script, images, voice]
+        options: [off, list, script, images, voice, cuts]
         default: "off"
+      pick:
+        description: "후보 사진 고르기 (cuts 결과의 번호. 예: 117_3=2, 118_1=5 / 비우면 안 함). 고른 사진은 my_images에 저장되어 계속 쓰임"
+        default: ""
       dry_run:
         description: "(예전 방식) 목록만 보기 = preview list 와 같음"
         type: boolean
@@ -90,6 +93,7 @@ jobs:
       COUNT: ${{ github.event.inputs.count || '6' }}
       START: ${{ github.event.inputs.start_index || '106' }}
       TITLE: ${{ github.event.inputs.title || '' }}
+      PICK: ${{ github.event.inputs.pick || '' }}
       PREVIEW: ${{ github.event.inputs.preview == 'off' && (github.event.inputs.dry_run == 'true' && 'list' || '') || github.event.inputs.preview }}
     steps:
       - uses: actions/checkout@v4
@@ -105,6 +109,10 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-noto-cjk
 
       - run: pip install -r requirements.txt
+
+      - name: 고른 후보 사진 적용 (pick)
+        if: ${{ env.PICK != '' }}
+        run: python cuts.py --pick "$PICK"
 
       - name: 주제 한국어로 옮기기 (영어로 저장된 주제만)
         if: ${{ env.PREVIEW != '' && env.GROQ_API_KEY != '' }}
@@ -126,7 +134,7 @@ jobs:
 
       # facts_db.json 은 음성/이미지 경로가 바뀌었을 수 있어도 저장하지 않는다 (longform_db.json 만 커밋)
       - name: longform_db.json 커밋
-        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'script' || env.PREVIEW == 'voice' || env.PREVIEW == 'images' }}
+        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'script' || env.PREVIEW == 'voice' || env.PREVIEW == 'images' || env.PREVIEW == 'cuts' }}
         run: |
           git checkout -- facts_db.json 2>/dev/null || true
           git config user.name "culture-shorts-bot"
@@ -134,6 +142,7 @@ jobs:
           [ -f longform_db.json ] && git add longform_db.json || true
           [ -f longform_scripts.json ] && git add longform_scripts.json || true
           [ -f topic_ko.json ] && git add topic_ko.json || true
+          [ -d my_images ] && git add my_images || true
           git diff --cached --quiet || git commit -m "chore: update longform_db.json [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
@@ -158,7 +167,7 @@ jobs:
 
       - name: 롱폼 아티팩트
         id: art
-        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'images' || env.PREVIEW == 'voice' }}
+        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'images' || env.PREVIEW == 'voice' || env.PREVIEW == 'cuts' }}
         uses: actions/upload-artifact@v4
         with:
           name: longform

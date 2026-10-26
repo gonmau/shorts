@@ -156,6 +156,14 @@ def subtitles_mode():
 
 
 # ---------------------------------------------------------------- 재료 준비
+def _mine(db, idx):
+    try:
+        import cuts
+        cuts.apply_my_images(db, idx)
+    except Exception as e:
+        print(f"    내 사진 적용 건너뜀 ({type(e).__name__}: {e})", flush=True)
+
+
 def _topic(i, item):
     """목록에 보일 주제: 한국어 채널이면 topic_ko.json 의 한국어 번역 사용"""
     if IS_EN:
@@ -452,6 +460,17 @@ def _preview_out(args, db, members, recs, LS, R):
         (OUT / "preview_script.txt").write_text("\n\n".join(f"[{i}] {DISP(db[i].get('country', ''))} - {_topic(i, db[i])}\n" + " ".join(str(recs[i].get('narration', '')).split())
                                                                 for i in members), encoding="utf-8")
         (OUT / "preview_scenario.txt").write_text("\n\n".join(blocks), encoding="utf-8")
+    if args.preview == "cuts":
+        import cuts as CU
+        txt, rows = CU.cutsheet(db, members, recs)
+        (OUT / "preview_cutsheet.txt").write_text(txt, encoding="utf-8")
+        import csv
+        with open(OUT / "preview_cutsheet.csv", "w", encoding="utf-8-sig", newline="") as f_:
+            csv.writer(f_).writerows(rows)
+        CU.make_candidates(db, members)
+        for f_ in CU.OUT.glob("cands_*.jpg"):
+            shutil.copy(f_, OUT / ("preview_" + f_.name))
+        print("컷 시트와 후보 사진 시트를 만들었습니다.", flush=True)
     if args.preview == "images":
         W, H, cols = 270, 480, 6
         sheets = []
@@ -522,10 +541,12 @@ def run_rich(args, db, lf_db, members):
     recs, countries_all = {}, [DISP(db[i].get("country", "")) for i in members]
     for k, idx in enumerate(members):
         print(f"\n== {'대본 준비' if args.plan_only else '재료 준비'} {idx} {db[idx].get('country', '')} ({k + 1}/{len(members)})", flush=True)
-        if not args.plan_only and args.preview != "script":
+        if not args.plan_only and args.preview not in ("script", "cuts"):
             run_py("generate_script.py", "--extras-only", "--index", str(idx))
+            _mine(db, idx)                      # 내가 올린/고른 사진(my_images)을 먼저 적용
             run_py("fetch_images.py", "--index", str(idx))
             db = load_json(BASE / "facts_db.json", db)
+            _mine(db, idx)
         item = db[idx]
         rec = None
         if client or (not args.no_expand and LS.get_rec(idx).get("narration")):
@@ -534,11 +555,11 @@ def run_rich(args, db, lf_db, members):
             target = (not only) or (idx in only)
             try:
                 rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands,
-                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=(args.plan_only or args.preview in ('script', 'images')),
+                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=(args.plan_only or args.preview in ('script', 'images', 'cuts')),
                                       resync=bool(args.resync and target))
             except Exception as e:
                 print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
-        if args.plan_only or args.preview in ("script", "images"):
+        if args.plan_only or args.preview in ("script", "images", "cuts"):
             if rec:
                 recs[idx] = rec
             else:
@@ -599,6 +620,8 @@ def run_rich(args, db, lf_db, members):
     total = len(members)
     countries = [DISP(db[i].get("country", "")) for i in members]
 
+    for i_ in members:
+        _mine(db, i_)
     # 사진 점검: 빠진 사진이 있으면 (색 카드로 대신 들어가기 전에) 알리고, --require-images 면 멈춘다
     lack = []
     for i in members:
@@ -614,6 +637,8 @@ def run_rich(args, db, lf_db, members):
             last_ = ((r_.stdout + r_.stderr).strip().splitlines() or [""])[-1]
             print(f"   {i} {c_}: {'받음' if r_.returncode == 0 else '실패'} {last_[:100]}", flush=True)
         db = load_json(BASE / "facts_db.json", db)   # fetch_images 가 갱신한 이미지 경로 반영
+        for i_ in members:
+            _mine(db, i_)
         lack = []
         for i in members:
             ps_ = B.get_visual_paths(i, db[i])
@@ -760,8 +785,8 @@ def main():
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
-    ap.add_argument("--preview", choices=["script", "images", "voice"], default="",
-                    help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3")
+    ap.add_argument("--preview", choices=["script", "images", "voice", "cuts"], default="",
+                    help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3, cuts=컷 시트+후보 사진 시트")
     args = ap.parse_args()
     global EST_SCALE
     if args.style == "rich" and not args.no_expand and os.environ.get("GROQ_API_KEY", "").strip() and os.environ.get("LF_EXPAND", "1") != "0":
