@@ -316,3 +316,5 @@
 {"id": "1793023250211-2fbbef", "time": "2026-10-26 23:00:50", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 317", "status": "success", "secs": 1.7, "detail": ""}
 {"id": "1793023297213-027b9e", "time": "2026-10-26 23:01:37", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 317 --any", "status": "success", "secs": 47.0, "detail": ""}
 {"id": "1793052138497-0d6ea8", "time": "2026-10-27 07:02:18", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 4개 (crosscheck.py, export_review.py, notify_cuts.py, notify_discord.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1793053559147-4d7763", "time": "2026-10-27 07:25:59", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 3개 (ext_script.py, local_ui.py, longform_script.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1793054458635-a88d25", "time": "2026-10-27 07:40:58", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
