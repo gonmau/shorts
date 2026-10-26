@@ -1,0 +1,14 @@
+{
+ "channel": "곤마우",
+ "handle": "",
+ "avatar": "channel_avatar.png",
+ "hud": true,
+ "hud_avatar": true,
+ "hud_name": true,
+ "hud_handle": true,
+ "hud_text": "곤마우",
+ "hud_pill": true,
+ "intro_logo": true,
+ "intro_name": true,
+ "cta": "구독 & 좋아요"
+}
