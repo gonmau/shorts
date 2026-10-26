@@ -1,0 +1,17 @@
+{
+ "rules": [
+  "dense",
+  "concrete",
+  "fact_vs_guess",
+  "why",
+  "no_cliche_end",
+  "no_hype",
+  "visual"
+ ],
+ "custom": "",
+ "avoid": "",
+ "topic_areas": [
+  "economy"
+ ],
+ "topic_custom": ""
+}
