@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 22:32:40 (KST) · 기록 295건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 22:44:10 (KST) · 기록 303건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,9 +11,9 @@
 | apply_review | 3 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 14 | 0 | 3분 3초 |
+| fetch_images | 18 | 0 | 5분 0초 |
 | generate_culture_facts | 1 | 0 | 47초 |
-| generate_script | 3 | 0 | 10분 48초 |
+| generate_script | 7 | 0 | 16분 18초 |
 | image_check | 2 | 0 | 19초 |
 | promote_ready | 3 | 0 | 0초 |
 | 롱폼 | 29 | 0 | 2시간 57분 |
@@ -26,6 +26,14 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:44 | PC | fetch_images | fetch_images.py --index 261 --force | ✅ | 17초 |  |
+| 22:43 | PC | generate_script | generate_script.py --extras-only --index 261 --regen-queries | ✅ | 2분 4초 |  |
+| 22:41 | PC | fetch_images | fetch_images.py --index 247 --force | ✅ | 41초 |  |
+| 22:41 | PC | generate_script | generate_script.py --extras-only --index 247 --regen-queries | ✅ | 3분 9초 |  |
+| 22:37 | PC | fetch_images | fetch_images.py --index 186 --force | ✅ | 33초 |  |
+| 22:37 | PC | generate_script | generate_script.py --extras-only --index 186 --regen-queries | ✅ | 7초 |  |
+| 22:37 | PC | fetch_images | fetch_images.py --index 175 --force | ✅ | 24초 |  |
+| 22:36 | PC | generate_script | generate_script.py --extras-only --index 175 --regen-queries | ✅ | 8초 |  |
 | 22:32 | PC | fetch_images | fetch_images.py --index 261 | ✅ | 0초 |  |
 | 22:29 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --clips --fi | ✅ | 13초 |  |
 | 22:24 | PC | fetch_images | fetch_images.py --index 277 | ✅ | 30초 |  |
