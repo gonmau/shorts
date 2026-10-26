@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 22:24:52 (KST) · 기록 293건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 22:29:46 (KST) · 기록 294건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -16,7 +16,7 @@
 | generate_script | 3 | 0 | 10분 48초 |
 | image_check | 2 | 0 | 19초 |
 | promote_ready | 3 | 0 | 0초 |
-| 롱폼 | 28 | 0 | 2시간 56분 |
+| 롱폼 | 29 | 0 | 2시간 57분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 3 | 0 | 0초 |
 
@@ -26,6 +26,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:29 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --clips --fi | ✅ | 13초 |  |
 | 22:24 | PC | fetch_images | fetch_images.py --index 277 | ✅ | 30초 |  |
 | 22:20 | PC | fetch_images | fetch_images.py --index 270 | ✅ | 25초 |  |
 | 21:43 | PC | 롱폼 | build_longform.py --preview cuts --mode manual --indexes 175,186,247,261,270,277,297,300,301 --min 1 --start 0 | ✅ | 22분 25초 |  |
