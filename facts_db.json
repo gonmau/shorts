@@ -24694,7 +24694,7 @@
       }
     ],
     "image_queries": [
-      "pope standing car",
+      "pope inside mobile",
       "popemobile open view design",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24710,7 +24710,7 @@
     "cross_notes": [],
     "cross_verdict": "ok",
     "image_queries_done": [
-      "pope standing inside car",
+      "pope inside mobile",
       "popemobile open view design",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24722,11 +24722,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "pixel2013",
-        "page": "https://pixabay.com/photos/fiat-500-automobile-trees-4322521/",
-        "id": 4322521,
-        "type": "photo"
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 2,
@@ -24792,7 +24793,7 @@
         "id": "c:201703848"
       }
     ],
-    "image_source": "pixabay",
+    "image_source": "commons",
     "image_check": [
       {
         "verdict": "bad",
