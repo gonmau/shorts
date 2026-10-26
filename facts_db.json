@@ -14216,70 +14216,78 @@
       }
     ],
     "image_queries": [
-      "Ethiopian Wednesday fasting",
-      "Ethiopian wat injera",
-      "Ethiopian injera bread",
-      "Ethiopian Orthodox fasting",
-      "Ethiopian fasting practice",
-      "Ethiopian light meal"
+      "Ethiopian Orthodox church interior",
+      "Ethiopian wat stew on injera",
+      "Injera flatbread closeup",
+      "Ethiopian church altar",
+      "Ethiopian dining table",
+      "Ethiopian simple meal injera"
     ],
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0175_에티오피아_v2.mp3",
     "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0175_에티오피아_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "image_queries_done": [
-      "Ethiopian Wednesday fasting",
-      "Ethiopian wat injera",
-      "Ethiopian injera bread",
-      "Ethiopian Orthodox fasting",
-      "Ethiopian fasting practice",
-      "Ethiopian light meal"
+      "Ethiopian Orthodox church interior",
+      "Ethiopian wat stew on injera",
+      "Injera flatbread closeup",
+      "Ethiopian church altar",
+      "Ethiopian dining table",
+      "Ethiopian simple meal injera"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "OrnaW",
-        "page": "https://pixabay.com/photos/woman-hair-hairstyle-braids-4215064/"
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/st-isaacs-cathedral-church-3710243/",
+        "id": 3710243
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "suc",
-        "page": "https://pixabay.com/photos/dhammakaya-pagoda-budha-gold-472496/"
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/grand-palace-bangkok-temple-night-1822487/",
+        "id": 1822487
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Craig Dugas",
-        "license": "CC BY 2.0",
-        "title": "Ethiopia- Tibs Fitfit.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Ethiopia-_Tibs_Fitfit.jpg"
+        "source": "pixabay",
+        "user": "planet_fox",
+        "page": "https://pixabay.com/photos/flatbread-flat-bread-pita-bread-6993386/",
+        "id": 6993386
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Afrikit",
-        "page": "https://pixabay.com/photos/ethiopia-church-christianity-634225/"
+        "user": "the_iop",
+        "page": "https://pixabay.com/photos/cathedral-gothic-architecture-10424088/",
+        "id": 10424088
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "President's Malaria Initiative",
-        "license": "Public domain",
-        "title": "Distributing Zanzira bed nets in Amhara State (41559680760).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Distributing_Zanzira_bed_nets_in_Amhara_State_(41559680760).jpg"
+        "source": "pixabay",
+        "user": "JoelFazhari",
+        "page": "https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/",
+        "id": 5356682
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "analogicus",
-        "page": "https://pixabay.com/photos/ninety-date-of-birth-candle-4682295/"
+        "user": "tehzeebrokhri",
+        "page": "https://pixabay.com/photos/sandwich-whole-wheat-cucumber-10389326/",
+        "id": 10389326
       }
     ],
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0175_에티오피아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "scene_count": 12
   },
   {
     "topic": "플럼 빌리지 전통(Plum Village Tradition)의 일상 속 수행법",
@@ -15270,68 +15278,81 @@
       }
     ],
     "image_queries": [
-      "taro root vegetables",
-      "taro plant leaves",
-      "taro leaves stems",
-      "taro fields Africa",
-      "taro dishes Caribbean",
-      "taro traditional meal"
+      "African market root vegetables",
+      "Taro plant Colocasia esculenta",
+      "Taro leaves and stems",
+      "Taro boiled dish",
+      "Taro across continents",
+      "Traditional taro cultivation",
+      "Taro served on dinner table"
     ],
-    "scene_count": 10,
+    "scene_count": 12,
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0186_사모아_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0186_사모아_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "image_queries_done": [
-      "taro root vegetables",
-      "taro plant leaves",
-      "taro leaves stems",
-      "taro fields Africa",
-      "taro dishes Caribbean",
-      "taro traditional meal"
+      "African market root vegetables",
+      "Taro plant Colocasia esculenta",
+      "Taro leaves and stems",
+      "Taro boiled dish",
+      "Taro across continents",
+      "Traditional taro cultivation",
+      "Taro served on dinner table"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "WebTechExperts",
-        "page": "https://pixabay.com/photos/taro-healthy-organic-root-vegetable-5367857/"
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/carrots-vegetables-produce-3440368/",
+        "id": 3440368
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "GLady",
-        "page": "https://pixabay.com/photos/leaves-plant-lotus-leaves-foliage-318743/"
+        "user": "manfredrichter",
+        "page": "https://pixabay.com/photos/taro-colocasia-esculenta-leaf-green-4350824/",
+        "id": 4350824
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "NomeVisualizzato",
-        "page": "https://pixabay.com/photos/hay-grass-dry-dried-stem-stems-5042343/"
+        "user": "GrassNguyen",
+        "page": "https://pixabay.com/photos/water-taro-leaves-green-pond-4413376/",
+        "id": 4413376
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Plant pests and diseases",
-        "license": "CC0",
-        "title": "Taro (Colocasia esculenta)- Dasheen mosaic - 28111252585.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Taro_(Colocasia_esculenta)-_Dasheen_mosaic_-_28111252585.jpg"
+        "source": "pixabay",
+        "user": "勇雨掠过",
+        "page": "https://pixabay.com/photos/sichuan-boiled-fish-boiled-fish-food-6368449/",
+        "id": 6368449
       },
       {
         "scene": 5,
         "source": "commons",
-        "user": "စာကလေး",
+        "user": "Plant pests and diseases",
         "license": "CC0",
-        "title": "Taro Root, Eddoe or Colocasia Esculenta.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Taro_Root,_Eddoe_or_Colocasia_Esculenta.jpg"
+        "title": "Taro (Colocasia esculenta)- Dasheen mosaic - 36162083065.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Taro_(Colocasia_esculenta)-_Dasheen_mosaic_-_36162083065.jpg",
+        "id": "c:117107136"
       },
       {
         "scene": 6,
         "source": "commons",
-        "user": "ウィキ太郎 ( Wiki Taro )",
-        "license": "Public domain",
-        "title": "Orizume bentō SETSUGEKKA served by Ningyocho Imahan Co,. Ltd. 01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Orizume_bent%C5%8D_SETSUGEKKA_served_by_Ningyocho_Imahan_Co,._Ltd._01.jpg"
+        "user": "Plant pests and diseases",
+        "license": "CC0",
+        "title": "Taro (Colocasia esculenta)- Dasheen mosaic - 28111251795.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Taro_(Colocasia_esculenta)-_Dasheen_mosaic_-_28111251795.jpg",
+        "id": "c:117106947"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "karriezhu",
+        "page": "https://pixabay.com/photos/food-dishes-restaurant-meal-menu-1050813/",
+        "id": 1050813
       }
     ],
     "image_source": "pixabay",
@@ -15340,7 +15361,14 @@
     "status_v6": "video_done",
     "youtube_id": "sDpIMG24pDY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-18"
+    "uploaded_at": "2026-10-18",
+    "cross_checked": true,
+    "cross_sources": 1,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[unsupported] 5번 문장: While taro is a staple in some Pacific and African regions, it is not widely considered a staple in the Caribbean or all of South Asia; the claim is too broad."
+    ]
   },
   {
     "topic": "Coldplay(콜드플레이)의 8번째 정규 앨범 'Everyday Life'",
@@ -18999,64 +19027,74 @@
       }
     ],
     "image_queries": [
-      "lime on Nepali dal bhat",
-      "warm Nepali tarkari curry",
-      "small Nepali pickles",
-      "gundruk ko achar pickle",
-      "dal bhat with lime",
-      "lime slice Nepali meal"
+      "Lime on Nepali plate",
+      "Traditional Nepali dal bhat",
+      "Warm Nepali tarkari curry",
+      "Nepali pickles",
+      "Gundruk pickle",
+      "Dal bhat with lime",
+      "Lime wedge on Nepali meal"
     ],
     "image_queries_done": [
-      "lime on Nepali dal bhat",
-      "warm Nepali tarkari curry",
-      "small Nepali pickles",
-      "gundruk ko achar pickle",
-      "dal bhat with lime",
-      "lime slice Nepali meal"
+      "Lime on Nepali plate",
+      "Traditional Nepali dal bhat",
+      "Warm Nepali tarkari curry",
+      "Nepali pickles",
+      "Gundruk pickle",
+      "Dal bhat with lime",
+      "Lime wedge on Nepali meal"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "congerdesign",
-        "page": "https://pixabay.com/photos/drink-lime-water-cup-lime-water-1487304/",
-        "id": 1487304
+        "user": "winarti67",
+        "page": "https://pixabay.com/photos/fried-chicken-lime-plate-red-chili-10531078/",
+        "id": 10531078
       },
       {
         "scene": 2,
+        "source": "commons",
+        "user": "SristiAwasthi21",
+        "license": "CC0",
+        "title": "Dal Bhat (Traditional Nepali Lentil Soup and Rice).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dal_Bhat_(Traditional_Nepali_Lentil_Soup_and_Rice).jpg",
+        "id": "c:195351051"
+      },
+      {
+        "scene": 3,
         "source": "pixabay",
         "user": "joannawielgosz",
         "page": "https://pixabay.com/photos/curry-food-dish-meal-cuisine-7249247/",
         "id": 7249247
       },
       {
-        "scene": 3,
+        "scene": 4,
         "source": "pixabay",
-        "user": "drabbitod",
-        "page": "https://pixabay.com/vectors/pickle-jar-pickles-vegetables-6887190/",
-        "id": 6887190,
-        "type": "illustration"
+        "user": "RyanMcGuire",
+        "page": "https://pixabay.com/photos/man-muscle-fitness-workout-641691/",
+        "id": 641691
       },
       {
-        "scene": 4,
+        "scene": 5,
         "source": "pixabay",
         "user": "luiza_83",
         "page": "https://pixabay.com/photos/pickled-cucumbers-vegetable-leaves-6506913/",
         "id": 6506913
       },
       {
-        "scene": 5,
+        "scene": 6,
         "source": "pixabay",
         "user": "632240",
         "page": "https://pixabay.com/photos/dal-toor-dal-toor-asian-india-1740205/",
         "id": 1740205
       },
       {
-        "scene": 6,
+        "scene": 7,
         "source": "pixabay",
-        "user": "stevepb",
-        "page": "https://pixabay.com/photos/glass-drink-water-lime-citrus-3306625/",
-        "id": 3306625
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/salmon-salmon-fillet-fish-fresh-1154410/",
+        "id": 1154410
       }
     ],
     "image_source": "pixabay",
@@ -19069,7 +19107,16 @@
     "status_v6": "video_done",
     "youtube_id": "EbCCkS4TZeY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-19"
+    "uploaded_at": "2026-10-19",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[unsupported] 5번 문장: specific pickles mentioned are not documented as standard",
+      "[unsupported] 6번 문장: use of lime in Nepali meals is not widely documented; claim about everyday consumption is true but lime addition is uncertain"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "기계식 기능이 달린 특수 모자",
@@ -20135,21 +20182,21 @@
       }
     ],
     "image_queries": [
-      "New Zealand mixed cuisine plate",
-      "New Zealand farm fresh seafood",
-      "Fusion olive lemon dish",
-      "1970s New Zealand Asian fusion",
-      "New Zealand nationwide food spread",
-      "World flavors bite New Zealand"
+      "New Zealand diverse plates",
+      "New Zealand farm produce",
+      "Olive lemon fusion",
+      "New Zealand global cuisine",
+      "New Zealand island spread",
+      "Travel bite"
     ],
-    "scene_count": 10,
+    "scene_count": 12,
     "image_queries_done": [
-      "New Zealand mixed cuisine plate",
-      "New Zealand farm fresh seafood",
-      "Fusion olive lemon dish",
-      "1970s New Zealand Asian fusion",
-      "New Zealand nationwide food spread",
-      "World flavors bite New Zealand"
+      "New Zealand diverse plates",
+      "New Zealand farm produce",
+      "Olive lemon fusion",
+      "New Zealand global cuisine",
+      "New Zealand island spread",
+      "Travel bite"
     ],
     "image_credits": [
       {
@@ -20169,30 +20216,32 @@
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Einladung_zum_Essen",
-        "page": "https://pixabay.com/photos/paella-spain-pan-stir-fry-rice-2428933/",
-        "id": 2428933
+        "user": "stux",
+        "page": "https://pixabay.com/photos/vinegar-aceto-raspberry-vinegar-234340/",
+        "id": 234340
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "Ivyluphotography",
-        "page": "https://pixabay.com/photos/water-jetty-ocean-pier-sea-3378639/",
-        "id": 3378639
-      },
-      {
-        "scene": 5,
         "source": "pixabay",
         "user": "JonathanPayne",
         "page": "https://pixabay.com/photos/bird-mountain-kea-10324879/",
         "id": 10324879
       },
       {
-        "scene": 6,
+        "scene": 5,
         "source": "pixabay",
-        "user": "holgerheinze0",
-        "page": "https://pixabay.com/photos/beach-coast-sea-hill-mountain-583172/",
-        "id": 583172
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/new-zealand-volcano-crater-3018634/",
+        "id": 3018634
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Barry Pousman from New York, NY",
+        "license": "CC BY 2.0",
+        "title": "The Beach Bite (6369658535).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Beach_Bite_(6369658535).jpg",
+        "id": "c:75767536"
       }
     ],
     "image_source": "pixabay",
@@ -20202,7 +20251,16 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0261_뉴질랜드.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0261_뉴질랜드.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[unsupported] 3번 문장: fajita fusion not documented in NZ cuisine",
+      "[unsupported] 4번 문장: no evidence of widespread popularity of those cuisines in NZ since 1970s",
+      "[unsupported] 5번 문장: no evidence of even geographic spread of diverse combos"
+    ]
   },
   {
     "topic": "말랑카, 새해 전날 두 번 축하?",
