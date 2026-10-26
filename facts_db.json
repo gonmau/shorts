@@ -24694,7 +24694,7 @@
       }
     ],
     "image_queries": [
-      "hidden throne inside car",
+      "pope car",
       "popemobile open view design",
       "historic papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24710,7 +24710,7 @@
     "cross_notes": [],
     "cross_verdict": "ok",
     "image_queries_done": [
-      "hidden throne inside car",
+      "pope car",
       "popemobile open view design",
       "historic papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24722,11 +24722,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Icsilviu",
-        "page": "https://pixabay.com/photos/inside-car-metro-design-chairs-4775622/",
-        "id": 4775622,
-        "type": "photo"
+        "source": "commons",
+        "user": "Dominic Alves",
+        "license": "CC BY 2.0",
+        "title": "Pope-Toledo, JBG 632, London to Brighton Veteran Car Run 2011, 1904 Rear-Entrance-Tonneau ",
+        "page": "https://commons.wikimedia.org/wiki/File:Pope-Toledo,_JBG_632,_London_to_Brighton_Veteran_Car_Run_2011,_1904_Rear-Entrance-Tonneau_(2996604123).jpg",
+        "id": "c:36933462"
       },
       {
         "scene": 2,
@@ -24792,16 +24793,16 @@
         "id": "c:201703848"
       }
     ],
-    "image_source": "pixabay",
+    "image_source": "commons",
     "image_check": [
       {
-        "verdict": "bad",
-        "clip": 0.2159,
+        "verdict": "ok",
+        "clip": 0.2402,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "191c406bb7e3",
-        "at": "2026-10-26 20:05",
+        "sig": "208ec445d620",
+        "at": "2026-10-26 20:19",
         "scene": 1,
         "rejected_ids": [
           1599527,
