@@ -156,6 +156,17 @@ def subtitles_mode():
 
 
 # ---------------------------------------------------------------- 재료 준비
+def _topic(i, item):
+    """목록에 보일 주제: 한국어 채널이면 topic_ko.json 의 한국어 번역 사용"""
+    if IS_EN:
+        return item.get("topic", "")
+    try:
+        import topic_ko
+        return topic_ko.shown(i, item)
+    except Exception:
+        return item.get("topic", "")
+
+
 def run_py(*args):
     print("  $ python", " ".join(args), flush=True)
     r = subprocess.run([sys.executable, *args], cwd=BASE)
@@ -426,6 +437,60 @@ def _next_info(db, members, k):
     return str(it.get("topic") or it.get("title_line1") or it.get("country") or "") if IS_EN else str(it.get("country") or "")
 
 
+def _preview_out(args, db, members, recs, LS, R):
+    """--preview: 영상 없이 단계별 결과만 longform_out/ 에 저장 (디스코드로 보냄)"""
+    from PIL import Image, ImageDraw
+    import build_video as B
+    OUT.mkdir(exist_ok=True)
+    for old in OUT.glob("preview_*"):
+        old.unlink()
+    scripts_json = BASE / "longform_scripts.json"
+    if args.preview in ("script", "voice"):
+        blocks = []
+        for n, i in enumerate(members, 1):
+            blocks.append(LS.scenario_text(db[i], recs[i], n))
+        (OUT / "preview_script.txt").write_text("\n\n".join(f"[{i}] {DISP(db[i].get('country', ''))} - {_topic(i, db[i])}\n" + " ".join(str(recs[i].get('narration', '')).split())
+                                                                for i in members), encoding="utf-8")
+        (OUT / "preview_scenario.txt").write_text("\n\n".join(blocks), encoding="utf-8")
+    if args.preview == "images":
+        W, H, cols = 270, 480, 6
+        sheets = []
+        for i in members:
+            ps = B.get_visual_paths(i, db[i])
+            tiles, miss = [], 0
+            for p in ps[:12]:
+                try:
+                    im = Image.open(p).convert("RGB")
+                    im.thumbnail((W, H))
+                    tiles.append(im)
+                except Exception:
+                    miss += 1
+            rows = max(1, (len(tiles) + cols - 1) // cols)
+            sh = Image.new("RGB", (cols * W, rows * H + 40), (20, 20, 24))
+            d = ImageDraw.Draw(sh)
+            try:
+                from PIL import ImageFont
+                f = R.font(28) if hasattr(R, "font") else ImageFont.load_default()
+            except Exception:
+                f = None
+            d.text((10, 6), f"{i} {DISP(db[i].get('country', ''))} - 사진 {len(tiles)}장" + (f" (빠짐 {miss})" if miss else ""), fill=(255, 255, 255), font=f)
+            for k, im in enumerate(tiles):
+                sh.paste(im, ((k % cols) * W, 40 + (k // cols) * H))
+            fp = OUT / f"preview_images_{i}.jpg"
+            sh.convert("RGB").save(fp, quality=82)
+            sheets.append(fp)
+        print(f"사진 미리보기 {len(sheets)}장 저장", flush=True)
+    if args.preview == "voice":
+        for i in members:
+            a = recs[i].get("audio")
+            if a and Path(a).exists():
+                import subprocess as sp
+                out = OUT / f"preview_voice_{i}.mp3"
+                sp.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(a), "-b:a", "96k", str(out)])
+        print("음성 미리보기 저장", flush=True)
+    print("미리 보기 완료 (영상은 만들지 않았습니다).", flush=True)
+
+
 def run_rich(args, db, lf_db, members):
     import longform_render as R
     import longform_script as LS
@@ -457,7 +522,7 @@ def run_rich(args, db, lf_db, members):
     recs, countries_all = {}, [DISP(db[i].get("country", "")) for i in members]
     for k, idx in enumerate(members):
         print(f"\n== {'대본 준비' if args.plan_only else '재료 준비'} {idx} {db[idx].get('country', '')} ({k + 1}/{len(members)})", flush=True)
-        if not args.plan_only:
+        if not args.plan_only and args.preview != "script":
             run_py("generate_script.py", "--extras-only", "--index", str(idx))
             run_py("fetch_images.py", "--index", str(idx))
             db = load_json(BASE / "facts_db.json", db)
@@ -469,11 +534,11 @@ def run_rich(args, db, lf_db, members):
             target = (not only) or (idx in only)
             try:
                 rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands,
-                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=args.plan_only,
+                                      force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=(args.plan_only or args.preview in ('script', 'images')),
                                       resync=bool(args.resync and target))
             except Exception as e:
                 print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
-        if args.plan_only:
+        if args.plan_only or args.preview in ("script", "images"):
             if rec:
                 recs[idx] = rec
             else:
@@ -511,6 +576,8 @@ def run_rich(args, db, lf_db, members):
         else:
             print(f"  !! {idx}: 음성이 없어 롱폼에서 제외합니다", flush=True)
     members = [i for i in members if i in recs]
+    if args.preview:
+        return _preview_out(args, db, members, recs, LS, R)
     if args.plan_only:
         countries_ = [DISP(db[i].get("country", "")) for i in members]
         partners_ = [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members]
@@ -693,6 +760,8 @@ def main():
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
+    ap.add_argument("--preview", choices=["script", "images", "voice"], default="",
+                    help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3")
     args = ap.parse_args()
     global EST_SCALE
     if args.style == "rich" and not args.no_expand and os.environ.get("GROQ_API_KEY", "").strip() and os.environ.get("LF_EXPAND", "1") != "0":
@@ -708,7 +777,7 @@ def main():
     prev_lines = [f"제목(안): {make_title(db, members, args.theme, args.title)}", f"소재 {len(members)}개 · 예상 약 {total_est / 60:.1f}분", ""]
     for n_, i in enumerate(members, 1):
         it_ = db[i]
-        line_ = f"{n_}. [{i}] {DISP(it_.get('country', ''))} - {it_.get('topic', '')}  (약 {est_seconds(it_) / 60:.1f}분)"
+        line_ = f"{n_}. [{i}] {DISP(it_.get('country', ''))} - {_topic(i, it_)}  (약 {est_seconds(it_) / 60:.1f}분)"
         print("  " + line_, flush=True)
         prev_lines += [line_, "   " + " ".join(str(it_.get("narration", "")).split()), ""]
     if args.dry_run:

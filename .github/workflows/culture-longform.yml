@@ -5,7 +5,8 @@
 #   mode = auto   : 영상이 끝난 소재 중 아직 롱폼에 안 쓴 것을 번호순으로 count개 (theme으로 분야/나라/주제 키워드 지정 가능)
 #   mode = manual : indexes 에 적은 번호들을 묶음 (예: 109,110,115-118)
 #   개수는 3~30개, 전체 예상 길이 40분 이하
-#   dry_run = true : 어떤 소재가 묶일지 목록만 보고 끝 (영상 안 만듦)
+#   preview = list/script/images/voice : 영상 없이 한 단계만 먼저 확인 (결과는 디스코드). 대본은 저장되어 이후 영상 제작에 그대로 쓰임
+#   dry_run = true : preview list 와 같음 (예전 방식)
 #
 # 결과: 아티팩트(longform_out)에 mp4 / 썸네일 / 제목+설명(챕터 포함). 디스코드로 제목/설명/썸네일 전송. 업로드는 직접.
 
@@ -34,8 +35,13 @@ on:
       title:
         description: "롱폼 제목 (비우면 자동)"
         default: ""
+      preview:
+        description: "영상 만들기 전 한 단계만 미리 보기 (off=영상까지 / list=목록 / script=대본·시나리오 / images=장면 사진 / voice=대본+음성) - 결과는 디스코드로"
+        type: choice
+        options: [off, list, script, images, voice]
+        default: "off"
       dry_run:
-        description: "목록만 보기 (영상 안 만듦)"
+        description: "(예전 방식) 목록만 보기 = preview list 와 같음"
         type: boolean
         default: false
       fill_images:
@@ -84,6 +90,7 @@ jobs:
       COUNT: ${{ github.event.inputs.count || '6' }}
       START: ${{ github.event.inputs.start_index || '106' }}
       TITLE: ${{ github.event.inputs.title || '' }}
+      PREVIEW: ${{ github.event.inputs.preview == 'off' && (github.event.inputs.dry_run == 'true' && 'list' || '') || github.event.inputs.preview }}
     steps:
       - uses: actions/checkout@v4
 
@@ -99,25 +106,34 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 묶을 소재 미리 보기
-        if: ${{ github.event.inputs.dry_run == 'true' }}
+      - name: 주제 한국어로 옮기기 (영어로 저장된 주제만)
+        if: ${{ env.PREVIEW != '' && env.GROQ_API_KEY != '' }}
+        continue-on-error: true
+        run: python topic_ko.py --start "$START"
+
+      - name: 단계별 미리 보기 (영상은 안 만듦)
+        if: ${{ env.PREVIEW != '' }}
         run: |
-          python build_longform.py --dry-run --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START"
+          case "$PREVIEW" in
+            list)   python build_longform.py --dry-run --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" ;;
+            *)      python build_longform.py --preview "$PREVIEW" --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" ;;
+          esac
 
       - name: 롱폼 만들기
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.PREVIEW == '' }}
         run: |
           python build_longform.py --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" --title "$TITLE" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "${{ vars.CHANNEL_HANDLE || '@gonmauY' }}"
 
       # facts_db.json 은 음성/이미지 경로가 바뀌었을 수 있어도 저장하지 않는다 (longform_db.json 만 커밋)
       - name: longform_db.json 커밋
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'script' || env.PREVIEW == 'voice' || env.PREVIEW == 'images' }}
         run: |
           git checkout -- facts_db.json 2>/dev/null || true
           git config user.name "culture-shorts-bot"
           git config user.email "bot@users.noreply.github.com"
           [ -f longform_db.json ] && git add longform_db.json || true
           [ -f longform_scripts.json ] && git add longform_scripts.json || true
+          [ -f topic_ko.json ] && git add topic_ko.json || true
           git diff --cached --quiet || git commit -m "chore: update longform_db.json [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
@@ -127,7 +143,7 @@ jobs:
           echo "push 실패"; exit 1
 
       - name: 구글 드라이브 저장 (롱폼)
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.PREVIEW == '' }}
         continue-on-error: true
         env:
           DRIVE_CLIENT_ID: ${{ secrets.DRIVE_CLIENT_ID }}
@@ -142,7 +158,7 @@ jobs:
 
       - name: 롱폼 아티팩트
         id: art
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.PREVIEW == '' || env.PREVIEW == 'images' || env.PREVIEW == 'voice' }}
         uses: actions/upload-artifact@v4
         with:
           name: longform
@@ -154,6 +170,7 @@ jobs:
         if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
         env:
           JOB_STATUS: ${{ job.status }}
+          PREVIEW: ${{ env.PREVIEW }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           ART_URL: ${{ steps.art.outputs.artifact-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
