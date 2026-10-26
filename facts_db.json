@@ -24703,7 +24703,12 @@
       "special popemobile interior design",
       "future popemobile greeting pose"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_notes": [],
+    "cross_verdict": "ok"
   },
   {
     "topic": "에스토니아(Estonia)의 LGBTQ 권리 변화",
@@ -24989,7 +24994,12 @@
       "community cannabis club gathering",
       "closed door cannabis club"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_verdict": "ok",
+    "cross_notes": []
   },
   {
     "topic": "과테말라(Guatemala) 민속 가톨릭(Folk Catholicism)의 독특한 의식",
@@ -25024,8 +25034,8 @@
   {
     "topic": "스페인(Spain) 충성 토스트(loyal toast)의 유리 파쇄 전통",
     "hook": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요?",
-    "body": "스페인에서는 국가 원수(sovereign monarch)에게 바치는 충성 토스트가 의례화돼 있다. 토스트가 끝나면 사용된 잔을 깨뜨려 더 낮은 토스트가 만들어지지 않게 한다.",
-    "twist": "잔을 깨뜨리는 것은 ‘덜한’ 토스트를 방지하기 위한 의도된 행위다.",
+    "body": "스페인에서는 때때로 왕에게 바치는 ‘충성 토스트’가 비공식적인 의식으로 행해지는 경우가 있습니다. 토스트가 끝난 뒤 잔을 깨뜨리는 경우가 있는데, 이는 남은 잔으로 또 다른 토스트가 이어지는 것을 막고자 하는 의도가 포함될 수 있습니다.",
+    "twist": "이러한 관습은 모든 스페인 행사에 보편적인 것은 아니며, 일부 지역이나 특별한 행사에서만 나타날 수 있습니다.",
     "caveat": "이 전통은 특정 지역·행사에서만 행해진다.",
     "country": "스페인",
     "theme": "관습/예절",
@@ -25034,7 +25044,59 @@
     "verify_note": "Loyal toast",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 때때로 왕에게 바치는 ‘충성 토스트’가 비공식적인 의식으로 행해지는 경우가 있습니다. 토스트가 끝난 뒤 잔을 깨뜨리는 경우가 있는데, 이는 남은 잔으로 또 다른 토스트가 이어지는 것을 막고자 하는 의도가 포함될 수 있습니다. 이러한 관습은 모든 스페인 행사에 보편적인 것은 아니며, 일부 지역이나 특별한 행사에서만 나타날 수 있습니다. 파티가 끝난 뒤 유리 파편이 남아도, 이는 ‘충성의 마지막 한 모금’이 완성됐다는 의미로 해석되기도 합니다. 잔이 깨지는 순간, 모인 사람들은 하나의 충성을 마무리한 셈이라고 느낄 수 있습니다. 이런 작은 의식이 남긴 여운은 다음 번에도 또 다른 ‘충성 토스트’를 기대하게 만들기도 합니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: No reliable evidence of a formal 'loyal toast' ritual to the king in Spain.",
+      "[수정됨] [unsupported] 3번 문장: No documented practice of breaking the glass to prevent further toasts.",
+      "[수정됨] [unsupported] 4번 문장: Explanation of a non‑existent practice; lacks evidence.",
+      "[수정됨] [unsupported] 5번 문장: No source indicating the tradition is limited to certain regions or events.",
+      "[수정됨] [unsupported] 6번 문장: No evidence that glass shards symbolize 'the last sip of loyalty'.",
+      "[수정됨] [unsupported] 7번 문장: Claim about meaning of glass breaking is unsubstantiated.",
+      "[수정됨] [unsupported] 8번 문장: No basis for the claim that this ritual creates anticipation for future 'loyal toasts'.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No reliable evidence of a Spanish 'loyal toast' to the king as an informal ceremony.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No documented tradition of breaking glasses to prevent further toasts in Spain.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claim about prevalence lacks supporting sources.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: Interpretation of glass shards as 'last sip of loyalty' is not attested.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: No evidence that participants view broken glass as completing a loyalty act.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: No source linking this ritual to expectations of future 'loyal toasts'."
+    ],
+    "narration_original": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 왕에게 바치는 ‘충성 토스트’가 정해진 의식으로 진행됩니다. 토스트가 끝나면 바로 그 잔을 깨뜨리는데, 이는 남은 잔으로 또 다른 토스트가 만들어지는 것을 막기 위해서입니다. 즉, 더 낮은 단계의 토스트가 이어지는 것을 방지하려는 의도된 행위죠. 이 전통은 모든 스페인 행사에서 쓰이는 것은 아니고, 특정 지역이나 특별한 행사에서만 찾아볼 수 있습니다. 그래서 파티가 끝난 뒤 유리 파편이 남아도, 그 의미는 ‘충성의 마지막 한 모금’이 완성됐다는 증거가 됩니다. 잔이 깨지는 순간, 그곳에 모인 사람들은 이미 하나의 충성을 마무리한 셈이죠. 이런 작은 의식이 남긴 여운은, 다음 번에도 또 다른 ‘충성 토스트’를 기대하게 만듭니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*잔* 깨는 이유?"
+      },
+      {
+        "s": 2,
+        "text": "*토스트* 의식"
+      },
+      {
+        "s": 3,
+        "text": "*다음* 방지"
+      },
+      {
+        "s": 6,
+        "text": "*마지막* 증거"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "title_line1": "스페인 파티 토스트",
+    "title_line2": "잔을 왜 깨",
+    "image_queries": [
+      "shattered glass toast",
+      "Spanish royal toast ceremony",
+      "broken glass toast ritual",
+      "wine glass on table",
+      "regional Spanish celebration",
+      "glass shards last toast",
+      "clinking wine glasses",
+      "empty wine glass lingering"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "오본(Obon) – 조상 영혼이 찾아오는 가족 재회 축제",
@@ -25064,7 +25126,59 @@
     "verify_note": "Arepa",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:18.707647+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "아레파 하나로 햄버거 대신!?  \n아레파는 옥수수 가루 반죽을 얇게 펴서 만든 평평한 빵입니다. 남미 북부, 특히 콜롬비아와 베네수엘라에서는 선콜럼비아 시대부터 일상 식탁에 올라왔죠. 이 빵은 치즈, 고기, 아보카도 같은 다양한 속재료와 함께 먹습니다. 흔히 반으로 갈라 속을 채워 샌드위치처럼 즐기는데, 그 방법이 바로 오늘 소개할 포인트입니다.  \n\n아레파를 반으로 갈라 디아블리토와 아보카도를 넣으면, 전통적인 풍미는 그대로 유지하면서도 지방 함량을 낮춘 ‘헬시 샌드위치’가 완성됩니다. 디아블리토는 매콤한 햄 스프레드이고, 아보카도는 부드러운 식감과 건강한 지방을 제공하니까요. 이렇게 조합하면 포만감은 충분히 얻으면서도 다이어트에 도움이 되는 한 끼가 됩니다.  \n\n하지만 이 조리법은 주로 콜롬비아와 베네수엘라 등 남미 북부 지역에서 전해 내려오는 방식이라는 점을 기억해 주세요. 전통적인 아레파의 활용이 이렇게 현대적인 변신을 맞이한다는 사실, 생각보다 흥미롭지 않나요?",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_notes": [
+      "[unsupported] 6번 문장: No reliable source confirms a specific “diavoleto” ham spread used with arepas for a low‑fat sandwich.",
+      "[unsupported] 7번 문장: The existence and description of “diavoleto” as a spicy ham spread is not verifiable.",
+      "[unsupported] 8번 문장: Health claim about satiety and diet benefit lacks evidence.",
+      "[unsupported] 9번 문장: No specific evidence that this exact preparation is traditionally from Colombia/Venezuela."
+    ],
+    "cross_verdict": "partial",
+    "title_line1": "남미 평평빵 활용",
+    "title_line2": "햄버거대신아레파",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "아레파로 *햄버거* 대신"
+      },
+      {
+        "s": 3,
+        "text": "남미 전통 *옥수수*"
+      },
+      {
+        "s": 5,
+        "text": "샌드위치처럼 *활용*"
+      },
+      {
+        "s": 6,
+        "text": "헬시 아레파, *지방*"
+      },
+      {
+        "s": 8,
+        "text": "포만감+다이어트 *한끼*"
+      },
+      {
+        "s": 10,
+        "text": "전통이 현대로 *변신*"
+      }
+    ],
+    "image_queries": [
+      "Arepa burger alternative",
+      "Corn dough flatbread",
+      "Colombian traditional corn",
+      "Arepa with cheese and meat",
+      "Arepa sandwich style",
+      "Healthy arepa sandwich",
+      "Spicy ham spread avocado",
+      "Satiating diet meal",
+      "Colombian arepa tradition",
+      "Arepa modern transformation"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "슬라브 수확 축제 Dożynki",
@@ -25079,7 +25193,16 @@
     "verify_note": "Dożynki",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:21.868126+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "narration": "수확이 끝난 뒤, 마을 사람들은 왜 일요일에 모여서 특별한 인사를 할까?  \n체코의 슬라브 수확 축제, Dożynki는 가을 추분에 시작돼, 오늘날엔 수확이 끝난 뒤 일요일 중 하나에 열립니다.  \n이 축제는 원래 식물·나무·농업을 숭배하던 이교적 의식에서 비롯되었습니다.  \n놀랍게도 16세기에 기독교 색을 입어 현재까지 이어지고 있습니다.  \n그러나 축일은 유럽 각 지역마다 다른 일요일에 열리는 것이 특징입니다.  \n즉, 같은 이름을 쓰지만, 지역마다 맞는 일요일이 다르게 정해져 있다는 점이 매력입니다.  \n그렇다면 왜 같은 이름이지만 서로 다른 일요일을 선택할까요?  \n그 답은 지역마다 수확 시기가 조금씩 다르기 때문입니다.  \n결국, Dożynki는 수확의 끝을 기념하고, 자연과 인간의 조화로운 관계를 재확인하는 시간이죠.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_notes": [
+      "[contradicted] 2번 문장: Dożynki is Polish; Czech harvest festival is Dožínky"
+    ],
+    "cross_verdict": "contradicted",
+    "reject_reason": "교차검증: 고쳐 써도 모순 1건 남음"
   },
   {
     "topic": "태국(Thailand)의 놀라운 해상 경계",
