@@ -1,13 +1,18 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 19:51:09 (KST) · 기록 252건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:02:47 (KST) · 기록 257건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
 | DB커밋 | 129 | 0 | 0초 |
+| apply_review | 1 | 0 | 0초 |
+| approve | 1 | 0 | 0초 |
+| export_review | 1 | 0 | 0초 |
 | generate_culture_facts | 1 | 0 | 47초 |
+| generate_script | 1 | 0 | 10분 45초 |
+| promote_ready | 1 | 0 | 0초 |
 | 롱폼 | 22 | 0 | 2시간 26분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 3 | 0 | 0초 |
@@ -18,6 +23,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:02 | PC | export_review | export_review.py --limit 3 --start 106 | ✅ | 0초 |  |
+| 20:02 | PC | generate_script | generate_script.py --limit 3 --start 106 | ✅ | 10분 45초 |  |
+| 19:51 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 19:51 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 19:51 | PC | approve | approve.py --limit 3 --start 106 | ✅ | 0초 |  |
 | 19:34 | PC | 코드업데이트 | gonmau/shorts: 15개 (build_longform.py, common.py, cuts.py, fetch_images.py, fix_tone.py, generate_script.py) | ✅ |  |  |
 | 19:20 | Actions | 쇼츠 | culture-shorts-pipeline #97 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40298462444 |
 | 18:03 | Actions | 쇼츠 | culture-shorts-pipeline #96 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40295951516 |
