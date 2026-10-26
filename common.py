@@ -95,6 +95,15 @@ def image_credit_lines(item):
             lic_url = license_url(lic)
             lines.append(f'- "{c.get("title", "")}" by {c.get("user", "")}, {lic}' + (f" ({lic_url})" if lic_url else "")
                          + f' - {c.get("page", "")}')
+    usr = [c for c in cr if c.get("source") == "user" and str(c.get("license") or "").strip()
+           and not str(c.get("license")).lower().startswith("cc0") and (c.get("user") or c.get("page"))]
+    if usr:
+        lines.append("Other photos (cropped/zoomed):")
+        for c in sorted(usr, key=lambda c: c.get("scene", 0)):
+            lic = c.get("license", "")
+            lic_url = license_url(lic)
+            lines.append(f'- "{c.get("title", "") or "Photo"}" by {c.get("user", "") or "unknown"}, {lic}' + (f" ({lic_url})" if lic_url else "")
+                         + (f' - {c.get("page", "")}' if c.get("page") else ""))
     return lines
 
 

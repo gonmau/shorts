@@ -234,6 +234,77 @@ def pick(spec):
     return ok
 
 
+# ---- 내 사진 출처 입력 (UI 표 <-> credits.json)
+KINDS = ["미입력", "내가 직접 촬영/제작", "CC0 · 퍼블릭 도메인", "CC BY", "Pixabay", "기타(라이선스 직접 입력)", "자동 수집 출처(그대로 둠)"]
+GUIDE = {
+    "내가 직접 촬영/제작": "표기 필요 없음",
+    "CC0 · 퍼블릭 도메인": "표기 필요 없음 (작가·링크를 적으면 참고용으로만 기록)",
+    "CC BY": "작가 + 원본 링크 필수 (제목 권장). 설명란에 라이선스와 '자르기/확대' 변경 표기까지 자동으로 들어갑니다",
+    "Pixabay": "설명란에 'Photos: Pixabay' 한 줄 (작가·링크는 선택)",
+    "기타(라이선스 직접 입력)": "라이선스 이름 + 작가 + 원본 링크 필수. CC BY-SA / NC / ND 는 영상에 쓰기 위험하니 비권장",
+}
+
+
+def kind_of(c):
+    if not c:
+        return "미입력"
+    src, lic = c.get("source"), str(c.get("license") or "")
+    if src in ("commons", "openverse"):
+        return "자동 수집 출처(그대로 둠)"
+    if src == "own":
+        return "내가 직접 촬영/제작"
+    if src == "pixabay":
+        return "Pixabay"
+    if lic.upper().startswith("CC0") or "public domain" in lic.lower():
+        return "CC0 · 퍼블릭 도메인"
+    if lic.upper().replace("-", " ").strip() == "CC BY":
+        return "CC BY"
+    return "기타(라이선스 직접 입력)" if lic else "미입력"
+
+
+def credit_problems(kind, lic="", user="", page=""):
+    if kind == "CC BY" and not (user and page):
+        return "작가와 원본 링크를 적어 주세요"
+    if kind.startswith("기타") and not (lic and user and page):
+        return "라이선스·작가·원본 링크를 적어 주세요"
+    if kind.startswith("기타") and re.search(r"\b(sa|nc|nd)\b|share\s*alike|non.?commercial|no.?deriv", lic, re.I):
+        return "SA/NC/ND 라이선스는 영상에 쓰기 위험합니다"
+    if kind == "미입력":
+        return "출처를 입력하세요 (직접 촬영이면 '내가 직접 촬영/제작')"
+    return ""
+
+
+def credit_from_row(kind, lic="", user="", title="", page="", old=None):
+    user, title, page, lic = (str(x or "").strip() for x in (user, title, page, lic))
+    if kind.startswith("자동"):
+        return old
+    if kind == "내가 직접 촬영/제작":
+        return {"source": "own"}
+    if kind.startswith("CC0"):
+        return {"source": "user", "license": "CC0", "user": user, "title": title, "page": page}
+    if kind == "CC BY":
+        return {"source": "user", "license": "CC BY", "user": user, "title": title, "page": page}
+    if kind == "Pixabay":
+        return {"source": "pixabay", "user": user, "page": page}
+    if kind.startswith("기타"):
+        return {"source": "user", "license": lic, "user": user, "title": title, "page": page}
+    return None
+
+
+def save_credits(rows):
+    """rows: [{파일(컷이름), 출처 구분, 라이선스, 작가, 제목, 원본 링크}] -> credits.json 갱신"""
+    cr = _j(CREDITS, {})
+    for r in rows:
+        k = r["파일"]
+        c = credit_from_row(r.get("출처 구분") or "미입력", r.get("라이선스"), r.get("작가"), r.get("제목"), r.get("원본 링크"), cr.get(k))
+        if c:
+            cr[k] = c
+        else:
+            cr.pop(k, None)
+    MY.mkdir(exist_ok=True)
+    CREDITS.write_text(json.dumps(cr, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def _blob_sha(path):
     import hashlib
     d = Path(path).read_bytes()

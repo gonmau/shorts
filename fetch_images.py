@@ -144,11 +144,31 @@ def fetch_item(session, key, idx, item, force):
                     if c:
                         break
                     time.sleep(1.0)
+                o = None
+                if not c:      # 3순위: Openverse (CC0/퍼블릭도메인/CC BY만)
+                    try:
+                        import openverse
+                        for q in (query, anchor):
+                            if not q:
+                                continue
+                            r_ = openverse.search(session, q, used, 1)
+                            if r_:
+                                o = r_[0]
+                                break
+                            time.sleep(0.5)
+                    except Exception as e:
+                        print(f"    scene_{n:02d}: Openverse 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
+                        o = None
                 if c:
                     used.add(c["id"])
                     download(session, c["url"], dest, {"User-Agent": commons.UA})
                     credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
                               "title": c["title"], "page": c["page"], "id": c["id"]}
+                elif o:
+                    used.add(o["id"])
+                    download(session, o["url"], dest, {"User-Agent": "culture-shorts-bot/1.0"})
+                    credit = {"scene": n, "source": "openverse", "user": o["artist"], "license": o["license"],
+                              "title": o["title"], "page": o["page"], "id": o["id"]}
                 elif hit:  # 3순위: 주제와 덜 맞아도 Pixabay에서 가장 비슷한 사진
                     used.add(hit["id"])
                     download(session, hit["largeImageURL"], dest)

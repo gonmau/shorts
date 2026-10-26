@@ -1683,6 +1683,30 @@ with TL:
                     st.write(f"저장: {_f.name}")
                 else:
                     st.warning(f"{_f.name}: 이름 형식이 맞지 않아 건너뜀 (예: 117_03.jpg)")
+        _mfs = sorted(f_ for f_ in Path("my_images").glob("*") if f_.suffix.lower() in _CU.EXT) if Path("my_images").exists() else []
+        if _mfs:
+            st.markdown("**내 사진 출처 입력** (직접 올린/고른 사진의 출처. 출처 구분에 따라 설명란 표기가 자동으로 들어갑니다)")
+            st.caption("필요한 항목: " + " / ".join(f"**{k_}** → {v_}" for k_, v_ in _CU.GUIDE.items()))
+            _crs = _CU._j(_CU.CREDITS, {})
+            _rows = []
+            for _f in _mfs:
+                _c = _crs.get(_f.stem) or {}
+                _k0 = _CU.kind_of(_c)
+                _rows.append({"파일": _f.stem, "출처 구분": _k0, "라이선스": _c.get("license", "") if _k0.startswith("기타") else "", "작가": _c.get("user", ""),
+                              "제목": _c.get("title", ""), "원본 링크": _c.get("page", ""),
+                              "확인": _CU.credit_problems(_k0, _c.get("license", ""), _c.get("user", ""), _c.get("page", "")) if not _k0.startswith("자동") else ""})
+            _ed = st.data_editor(_rows, hide_index=True, use_container_width=True, key="cut_cr_ed", num_rows="fixed",
+                                 disabled=["파일", "확인"],
+                                 column_config={"출처 구분": st.column_config.SelectboxColumn("출처 구분", options=_CU.KINDS, required=True, width="medium")})
+            _edl = _ed if isinstance(_ed, list) else _ed.to_dict("records")
+            _bad = [f"{r_['파일']}: {_CU.credit_problems(r_['출처 구분'], r_.get('라이선스', ''), r_.get('작가', ''), r_.get('원본 링크', ''))}" for r_ in _edl
+                    if not r_["출처 구분"].startswith("자동") and _CU.credit_problems(r_["출처 구분"], r_.get("라이선스", ""), r_.get("작가", ""), r_.get("원본 링크", ""))
+                    and r_["출처 구분"] != "미입력"]
+            if _bad:
+                st.warning("확인 필요: " + " · ".join(_bad))
+            if st.button("💾 출처 저장", key="cut_cr_save"):
+                _CU.save_credits(_edl)
+                st.success("출처를 저장했습니다. 다음에 영상을 만들 때 설명란에 반영됩니다.")
         _mine_files = sorted(f_.name for f_ in Path("my_images").glob("*") if f_.suffix.lower() in _CU.EXT) if Path("my_images").exists() else []
         st.caption(f"my_images 에 있는 사진 {len(_mine_files)}장" + (": " + ", ".join(_mine_files[:30]) + (" ..." if len(_mine_files) > 30 else "") if _mine_files else ""))
         g1_, g2_ = st.columns(2)
