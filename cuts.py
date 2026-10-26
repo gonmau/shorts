@@ -234,11 +234,75 @@ def pick(spec):
     return ok
 
 
+def _blob_sha(path):
+    import hashlib
+    d = Path(path).read_bytes()
+    return hashlib.sha1(b"blob %d\0" % len(d) + d).hexdigest()
+
+
+def sync_down(repo, branch="main"):
+    """GitHub my_images/ -> 이 PC my_images/ (없거나 다른 파일만 받음. credits.json 은 합침, PC 것이 우선)"""
+    import base64
+    tok = os.environ.get("GITHUB_TOKEN", "").strip()
+    h = {"Accept": "application/vnd.github+json", **({"Authorization": f"Bearer {tok}"} if tok else {})}
+    r = requests.get(f"https://api.github.com/repos/{repo}/contents/my_images", params={"ref": branch}, headers=h, timeout=60)
+    if r.status_code == 404:
+        return 0, 0
+    r.raise_for_status()
+    MY.mkdir(exist_ok=True)
+    got = same = 0
+    for f in r.json():
+        if f.get("type") != "file":
+            continue
+        dst = MY / f["name"]
+        if dst.exists() and f["name"] != "credits.json" and _blob_sha(dst) == f.get("sha"):
+            same += 1
+            continue
+        rr = requests.get(f["url"], params={"ref": branch}, headers=h, timeout=120)
+        rr.raise_for_status()
+        data = base64.b64decode(rr.json().get("content") or "")
+        if f["name"] == "credits.json":
+            merged = {**json.loads(data.decode("utf-8") or "{}"), **_j(CREDITS, {})}
+            CREDITS.write_text(json.dumps(merged, ensure_ascii=False, indent=1), encoding="utf-8")
+        elif f["name"] == "cuts_manifest.json" and dst.exists():
+            merged = {**_j(dst, {}), **json.loads(data.decode("utf-8") or "{}")}   # 후보 정보는 GitHub(최근 실행) 것이 우선
+            dst.write_text(json.dumps(merged, ensure_ascii=False, indent=1), encoding="utf-8")
+        else:
+            dst.write_bytes(data)
+        got += 1
+    return got, same
+
+
+def sync_up(repo, branch="main"):
+    """이 PC my_images/ -> GitHub (같은 파일은 건너뜀). GITHUB_TOKEN 필요"""
+    from gh_push import push_file
+    tok = os.environ.get("GITHUB_TOKEN", "").strip()
+    if not tok:
+        raise SystemExit("GITHUB_TOKEN 환경변수가 없습니다.")
+    n = 0
+    for f in sorted(MY.glob("*")):
+        if f.is_file() and (f.suffix.lower() in EXT or f.name in ("credits.json", "cuts_manifest.json")):
+            if push_file(repo, branch, tok, "my_images/" + f.name, f"my_images: {f.name}") == "pushed":
+                n += 1
+    return n
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--sync", choices=["down", "up"], default="")
+    ap.add_argument("--repo", default="")
     ap.add_argument("--pick", default="")
     ap.add_argument("--cands", default="", help="후보 시트를 만들 소재 번호 (쉼표)")
     a = ap.parse_args()
+    if a.sync:
+        if not a.repo:
+            sys.exit("--repo 가 필요합니다")
+        if a.sync == "down":
+            g, sm = sync_down(a.repo)
+            print(f"GitHub에서 my_images {g}개 받음 (같은 파일 {sm}개)")
+        else:
+            print(f"GitHub로 my_images {sync_up(a.repo)}개 올림")
+        return
     if a.pick:
         pick(a.pick)
     if a.cands:

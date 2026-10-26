@@ -1,6 +1,7 @@
 """PC용 간이 UI (Streamlit). 실행: streamlit run local_ui.py
 코드 폴더(facts_db.json이 있는 곳)에 넣고 실행. 환경변수 GROQ_API_KEY(필수), PIXABAY_API_KEY 등은 미리 설정."""
 import os, re, subprocess, sys, json, time
+from pathlib import Path
 import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -161,7 +162,7 @@ def run(*args):
     for line in p.stdout:
         buf.append(line.rstrip()); box.code("\n".join(buf[-25:]))
     ok = p.wait() == 0
-    if ok and args and args[0] not in ("sync_db.py", "gh_push.py", "drive_sync.py", "list_channel_videos.py", "tts_preview.py", "status_report.py", "notify_discord.py", "notify_longform.py", "update_code.py", "history.py"):
+    if ok and args and args[0] not in ("sync_db.py", "gh_push.py", "drive_sync.py", "list_channel_videos.py", "tts_preview.py", "status_report.py", "notify_discord.py", "notify_longform.py", "update_code.py", "history.py", "cuts.py"):
         st.session_state["gh_dirty"] = True   # 이 실행이 끝나면 아래에서 자동 동기화
     sec = time.time() - t0
     _skip = ("sync_db.py", "gh_push.py", "drive_sync.py", "list_channel_videos.py", "tts_preview.py", "status_report.py", "notify_discord.py", "notify_longform.py", "history.py", "update_code.py")
@@ -546,7 +547,7 @@ def apply_quiet():
 FEATURES = [
     # (분류, 기능, 어디서, 설명, 새기능)
     ("롱폼", "GitHub 단계별 미리 보기", "Actions > longform > preview 선택", "list(목록)/script(대본·시나리오)/images(장면 사진)/voice(음성 mp3)를 영상 없이 따로 실행해 디스코드로 확인. 대본은 저장되어 이후 영상에 그대로 사용. 영어 주제는 자동으로 한국어로 표시", "신규"),
-    ("롱폼", "이미지 컷 시트 · 후보 고르기 · 내 사진", "Actions > longform > preview=cuts, pick / my_images 폴더", "cuts: 컷 이름·대본·검색어 시트 + 컷별 후보 사진(Pixabay/Commons/Openverse) 번호 시트를 디스코드로. pick 칸에 `117_3=2` 처럼 적어 고르거나, `my_images/117_03.jpg` 로 직접 올리면 자동 검색보다 우선 사용(PC도 같은 폴더)", "신규"),
+    ("롱폼", "이미지 컷 시트 · 후보 고르기 · 내 사진", "Actions > longform > preview=cuts, pick / my_images 폴더", "cuts: 컷 이름·대본·검색어 시트 + 컷별 후보 사진(Pixabay/Commons/Openverse) 번호 시트를 디스코드로. pick 칸에 `117_3=2` 처럼 적어 고르거나, `my_images/117_03.jpg` 로 직접 올리면 자동 검색보다 우선 사용. PC는 🎞 롱폼 탭의 '✂️ 이미지 컷' 패널에서 같은 작업 + GitHub my_images 주고받기", "신규"),
     ("공통", "처리 개수 · 시작 번호", "맨 위 count / start_index", "한 번에 처리할 개수와, 이 번호 이상만 처리. 모든 단계에 적용", ""),
     ("공통", "다시 만들기 (redo)", "맨 위 redo 칸", "영상만 `98,99` / 대본부터 `101` + 체크 / 폐기 되살리기 `101!` + 체크. 끝나면 칸을 비우세요", ""),
     ("공통", "현황 (단계별 개수)", "왼쪽 사이드바 / 이 탭의 '현황 보기'", "승인대기·대본·음성·영상·업로드·폐기 개수", ""),
@@ -1521,6 +1522,62 @@ with TL:
     if lf_clips:
         _pk = [n_ for n_ in ("PEXELS_API_KEY", "PIXABAY_API_KEY") if os.environ.get(n_, "").strip()]
         st.caption("스톡 영상 키: " + (", ".join(_pk) if _pk else "없음 → 사진만 사용됩니다 (PEXELS_API_KEY 환경변수 설정)"))
+    with st.expander("✂️ 이미지 컷 · 후보 사진 고르기 · 내 사진 (영상 만들기 전에 사진 확정)", expanded=False):
+        import cuts as _CU
+        st.caption("컷 이름 = 소재번호_컷번호 (예: 117_03). ① 컷 시트·후보 만들기 → ② 후보 번호 고르기 → 적용. 직접 구한 사진은 아래에 올리거나 my_images 폴더에 `117_03.jpg`로 넣으면 "
+                   "자동 검색보다 먼저 쓰입니다. GitHub 실행(Actions)과는 아래 버튼으로 my_images를 주고받습니다.")
+        _ci = st.text_input("대상 소재 번호 (예: 117,118 / 비우면 위 manual 번호)", key="cut_idx")
+        _cidx = (_ci or lidx or "").strip()
+        c1_, c2_ = st.columns(2)
+        if c1_.button("① 컷 시트 · 후보 사진 만들기", key="cut_make", disabled=not _cidx):
+            run("build_longform.py", "--preview", "cuts", "--mode", "manual", "--indexes", _cidx, "--min", "1", "--start", "0")
+        _cs = Path("longform_out/preview_cutsheet.txt")
+        if _cs.exists():
+            with st.expander("컷 시트 (이름 · 대략의 대본 · 검색어)", expanded=False):
+                st.text(_cs.read_text(encoding="utf-8"))
+                if Path("longform_out/preview_cutsheet.csv").exists():
+                    st.download_button("컷 시트 CSV 받기", Path("longform_out/preview_cutsheet.csv").read_bytes(), "cutsheet.csv", key="cut_csv")
+        try:
+            from build_longform import parse_indexes as _pi
+            _cl = _pi(_cidx) if _cidx else []
+        except Exception:
+            _cl = []
+        _man = _CU._j(_CU.MANIFEST, {})
+        _picks = {}
+        for _i in _cl:
+            _imgf = Path(f"longform_out/preview_cands_{_i}.jpg")
+            _ks = sorted([k_ for k_ in _man if k_.startswith(f"{_i}_")], key=lambda k_: int(k_.split("_")[1]))
+            if not _ks:
+                continue
+            st.markdown(f"**소재 {_i}**")
+            if _imgf.exists():
+                st.image(str(_imgf), use_container_width=True)
+            _cols = st.columns(min(6, len(_ks)))
+            for _n, _k in enumerate(_ks):
+                _mine = _CU._my_file(_i, int(_k.split("_")[1]))
+                _nc = len(_man[_k].get("cands", []))
+                _v = _cols[_n % len(_cols)].selectbox(_k + (" ✅내 사진" if _mine else ""), [0] + list(range(1, _nc + 1)), key=f"cut_pick_{_k}",
+                                                      format_func=lambda x: "선택 안 함" if x == 0 else f"후보 {x}")
+                if _v:
+                    _picks[_k] = _v
+        if _picks and c2_.button(f"② 고른 사진 적용 ({len(_picks)}컷)", key="cut_apply"):
+            run("cuts.py", "--pick", ", ".join(f"{k_.split('_')[0]}_{int(k_.split('_')[1])}={v_}" for k_, v_ in _picks.items()))
+        _up = st.file_uploader("내 사진 올리기 (파일 이름이 컷 이름이어야 함: 117_03.jpg)", type=["jpg", "jpeg", "png", "webp"], accept_multiple_files=True, key="cut_up")
+        if _up and st.button("올린 사진을 my_images에 저장", key="cut_up_save"):
+            _my = Path("my_images"); _my.mkdir(exist_ok=True)
+            for _f in _up:
+                if re.fullmatch(r"\d+_\d+\.(jpe?g|png|webp)", _f.name, re.I):
+                    (_my / _f.name).write_bytes(_f.getvalue())
+                    st.write(f"저장: {_f.name}")
+                else:
+                    st.warning(f"{_f.name}: 이름 형식이 맞지 않아 건너뜀 (예: 117_03.jpg)")
+        _mine_files = sorted(f_.name for f_ in Path("my_images").glob("*") if f_.suffix.lower() in _CU.EXT) if Path("my_images").exists() else []
+        st.caption(f"my_images 에 있는 사진 {len(_mine_files)}장" + (": " + ", ".join(_mine_files[:30]) + (" ..." if len(_mine_files) > 30 else "") if _mine_files else ""))
+        g1_, g2_ = st.columns(2)
+        if g1_.button("⬇ GitHub에서 my_images 가져오기", key="cut_down"):
+            run("cuts.py", "--sync", "down", "--repo", TTS_CFG["gh_repo"])
+        if g2_.button("⬆ my_images를 GitHub로 올리기", key="cut_upgh", disabled=not _gh_token(), help="GITHUB_TOKEN 필요"):
+            run("cuts.py", "--sync", "up", "--repo", TTS_CFG["gh_repo"])
     with st.expander("🎨 채널 표시 (이름 · 주소 · 이미지 · 켜기/끄기 · 문구)", expanded=False):
         import longform_render as _R
         _bf = _R.BRAND_FILE
