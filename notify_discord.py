@@ -10,7 +10,7 @@ from pathlib import Path
 
 import requests
 
-from common import load_db, youtube_meta
+from common import load_db, pending_render, youtube_meta
 
 
 def post(url, text):
@@ -71,6 +71,19 @@ def built_items():
     return out
 
 
+def _flags(url):
+    """근거를 못 찾아 '확인 필요'로 남은 문장 목록 (영상에 그대로 들어가므로 직접 확인/수정)"""
+    try:
+        lines = []
+        for idx, item in pending_render(load_db(), int(os.environ.get("START", "0") or 0)):
+            for f_ in item.get("cross_flags") or []:
+                lines.append(f"[{idx}] {item.get('country', '')} {f_.get('n')}번: {f_.get('text')}")
+        if lines:
+            post_long(url, "⚠️ 근거를 못 찾은 문장 (대본에 그대로 들어 있음 - 사실이면 두고, 아니면 review.txt/대본에서 고치세요)\n" + "\n".join(lines))
+    except Exception as e:
+        print("확인 필요 문장 목록 실패:", e)
+
+
 def _main():
     url = os.environ["DISCORD_WEBHOOK_URL"]
     st, stage = os.environ.get("JOB_STATUS", ""), os.environ.get("STAGE", "")
@@ -82,6 +95,7 @@ def _main():
     if stage == "prepare":
         post(url, f"📝 준비 완료 - review.txt에서 제목/핵심 문구를 고친 뒤 render 실행\n"
                   f"{os.environ.get('REVIEW_URL', '')}\n실행: {run_url}")
+        _flags(url)
         return
 
     items = built_items()

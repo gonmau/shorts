@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from notify_discord import post, post_file, post_image, post_long
+from notify_discord import _flags, post, post_file, post_image, post_long
 
 
 def main():
@@ -18,6 +18,7 @@ def main():
     post(url, "🖼 컷별 후보 사진 (사진 위 번호가 후보 번호). 고른 것은 Actions의 pick 칸에 `117_3=2, 118_1=5` 처럼 적고 stage=render 로 실행하세요. 직접 올릴 사진은 my_images 폴더에 `117_03.jpg`로.")
     for p in sorted(out.glob("cands_*.jpg"), key=lambda p: int(p.stem.rsplit("_", 1)[1])):
         post_image(url, p, p.stem.rsplit("_", 1)[1] + "번 소재 후보")
+    _flags(url)
     post(url, "로그: " + os.environ.get("RUN_URL", ""))
 
 

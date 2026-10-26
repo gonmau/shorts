@@ -41,6 +41,8 @@ def main():
             lines.append(f"(교차검증) {item['cross_verdict']}")
         for n, t in enumerate(item.get("cross_notes") or [], start=1):
             lines.append(f"(교차검증 메모 {n}) {t}")
+        for f_ in item.get("cross_flags") or []:
+            lines.append(f"(직접 확인할 문장 {f_.get('n')}번) {f_.get('text')}")
         if item.get("verify_note"):
             lines.append(f"(사실 확인용 검색어) {item['verify_note']}")
         for key, label in (("hook", "후크"), ("body", "본문"), ("twist", "반전")):
