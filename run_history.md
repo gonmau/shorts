@@ -1,17 +1,17 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 20:26:35 (KST) · 기록 276건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:27:04 (KST) · 기록 278건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 6 | 0 | 1분 37초 |
+| -c | 7 | 0 | 1분 40초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 2 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 8 | 0 | 2분 4초 |
+| fetch_images | 9 | 0 | 2분 6초 |
 | generate_culture_facts | 1 | 0 | 47초 |
 | generate_script | 2 | 0 | 10분 46초 |
 | image_check | 2 | 0 | 19초 |
@@ -26,6 +26,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
+| 20:26 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 3초 |  |
 | 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
 | 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 3초 |  |
 | 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
