@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 22:57:45 (KST) · 기록 305건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 22:58:22 (KST) · 기록 307건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 9 | 0 | 1분 50초 |
+| -c | 11 | 0 | 1분 51초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 3 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
@@ -26,6 +26,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:58 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
+| 22:58 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
 | 22:56 | PC | fetch_images | fetch_images.py --index 186 --scene 1 --source commons --type photo | ✅ | 4초 |  |
 | 22:51 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --ti | ❌ failed | 4분 46초 |    247 네팔: 12장 중 8, 9, 10, 11, 12번 없음    261 뉴질랜드: 12장 중 7, 8, 9, 10, 11, 12번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 |
 | 22:44 | PC | fetch_images | fetch_images.py --index 261 --force | ✅ | 17초 |  |
