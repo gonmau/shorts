@@ -24694,7 +24694,7 @@
       }
     ],
     "image_queries": [
-      "pope mobile",
+      "pope standing car",
       "popemobile open view design",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24710,7 +24710,7 @@
     "cross_notes": [],
     "cross_verdict": "ok",
     "image_queries_done": [
-      "pope mobile",
+      "pope standing inside car",
       "popemobile open view design",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24722,12 +24722,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Jebulon",
-        "license": "CC0",
-        "title": "Sedia gestatoria pope Pius VII.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Sedia_gestatoria_pope_Pius_VII.jpg",
-        "id": "c:14684286"
+        "source": "pixabay",
+        "user": "pixel2013",
+        "page": "https://pixabay.com/photos/fiat-500-automobile-trees-4322521/",
+        "id": 4322521,
+        "type": "photo"
       },
       {
         "scene": 2,
@@ -24793,22 +24792,25 @@
         "id": "c:201703848"
       }
     ],
-    "image_source": "commons",
+    "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "ok",
-        "clip": 0.2588,
+        "verdict": "bad",
+        "clip": 0.2088,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "e97a4d82bdb4",
-        "at": "2026-10-26 20:20",
+        "sig": "d42933b18c3c",
+        "at": "2026-10-26 20:26",
         "scene": 1,
         "rejected_ids": [
           1599527,
           4775622,
           731165,
+          8177051,
+          8493246,
           "c:201703848",
+          "c:28985585",
           "c:3915893"
         ]
       },
