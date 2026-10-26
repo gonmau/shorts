@@ -24762,7 +24762,7 @@
     ],
     "image_queries": [
       "pope inside mobile",
-      "popemobile open car",
+      "pope open-mobile",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
@@ -24799,9 +24799,9 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Mybbor",
-        "page": "https://pixabay.com/photos/classic-cars-vintage-car-show-9614046/",
-        "id": 9614046,
+        "user": "leandro_monsieur",
+        "page": "https://pixabay.com/photos/pope-sao-pio-x-pope-saint-pius-8693954/",
+        "id": 8693954,
         "type": "photo"
       },
       {
