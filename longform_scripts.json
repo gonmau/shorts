@@ -1720,7 +1720,7 @@
   ]
  },
  "175": {
-  "narration": "에티오피아 사람들은 매주 수요일과 금요일에 금식을 한다는 사실, 알고 계셨나요? 이 전통은 에티오피아 정교회의 교리에서 비롯되었습니다. 교회는 고기와 유제품을 피하고, 식물성 음식만 섭취하도록 권고합니다. 하지만 금식이 모든 국민에게 강제되는 것은 아닙니다. 대부분의 신자들은 금식일에도 인제라와 와트를 곁들인 가벼운 식사를 합니다. 인제라는 직경이 약 50센티미터인 둥근 빵으로, 테프 가루를 발효시켜 만듭니다. 테프는 고산지대에서 잘 자라는 작은 곡물이며, 영양가가 높아 전통 식단의 핵심입니다. 와트는 매운 고기와 채소를 넣어 끓인 스튜로, 인제라 위에 얹어 먹는 것이 일반적입니다. 금식일에는 고기 대신 렌틸이나 콩을 넣은 와트를 즐깁니다. 이렇게 하면 영양을 유지하면서도 교리와 맞출 수 있습니다. 금식은 사순절 전체 기간에도 확대됩니다. 금식 규정은 지역마다 다소 차이가 있어, 도시와 농촌에서 실천 방식이 다를 수 있습니다. 금식일 저녁, 가족이 모여 인제라와 와트를 나누는 모습은 에티오피아 식문화의 따뜻함을 보여줍니다. 이런 일상이 에티오피아 사람들에게는 일상의 리듬이자 정체성의 일부입니다. 다음에는 사모아의 전통 식사 문화를 살펴보겠습니다.",
+  "narration": "에티오피아 정교회 신자들은 매주 수요일과 금요일에 금식한다는 사실, 알고 계셨나요? 이 전통은 예수의 수난과 관련된 교회의 가르침에서 비롯됐습니다. 금식일에는 고기와 우유, 치즈, 달걀 등 동물성 식품을 피하고 식물성 음식을 먹습니다. 물론 에티오피아 국민 모두가 이 규칙을 따르는 것은 아닙니다. 금식 기간 식탁에서 자주 만나는 음식이 바로 인제라와 와트입니다. 인제라는 테프라는 작은 곡물의 가루를 물과 섞어 발효시킨 뒤 구워 만드는 둥글고 얇은 음식입니다. 크기는 보통 수십 센티미터에 달하며, 표면에는 작은 구멍이 촘촘하게 생깁니다. 와트는 향신료를 넣어 끓인 스튜로, 고기를 넣기도 하고 렌틸콩이나 완두콩, 채소로 만들기도 합니다. 금식일에는 이렇게 만든 식물성 와트를 인제라 위에 올려 함께 먹습니다. 에티오피아 정교회의 금식은 수요일과 금요일뿐 아니라 사순절을 비롯한 여러 종교 기간에도 이어집니다. 금식 규정과 식사 시간은 기간과 개인의 실천 방식에 따라 달라질 수 있습니다. 인제라를 함께 나누고 그 위에 다양한 와트를 곁들이는 식문화는 에티오피아의 일상과 종교 전통이 어떻게 연결되는지 보여 줍니다. 다음에는 사모아의 전통 식사 문화를 살펴보겠습니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -1783,30 +1783,28 @@
   },
   "sig": "a4b552c7a95e",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-26 20:37"
+  "created": "2026-10-26 20:37",
+  "locked": true,
+  "edited": "2026-10-26 20:48"
  },
  "186": {
-  "narration": "사모아의 전통 가옥 옆에서 자라는 뿌리채소, 타로가 밥보다 먼저 나오나요? 타로, 학명 Colocasia esculenta는 ‘다시엔’이라고도 불리며, 알뿌리뿐 아니라 잎, 줄기, 잎자루까지 식용으로 활용됩니다. 이 식물은 아라세아과에 속해, 열대 기후에서 빠르게 자라며, 수확 시 알뿌리를 끓이거나 구워 먹습니다. 사모아에서는 정원에 심어 두고, 가족 모임 때마다 구운 타로를 나눠 먹으며, 이는 공동체 의식을 강화하는 역할을 합니다. 타로는 아프리카, 카리브해, 오세아니아, 동아시아·동남아·남아시아 등 여러 지역에서 주식으로 쓰이는데, 이는 각 지역이 열대·아열대 기후를 공유하고, 식량 안보를 위해 고칼로리 식량을 필요로 했기 때문입니다. 사모아에서는 바다와 육지의 풍경 속에서 자라는 타로가, 해산물과 함께 주된 식사로 자리 잡고 있습니다. 반면, 이 식물은 유럽이나 북미에서는 거의 알려지지 않았으며, 그 지역에서는 감자나 고구마가 주식으로 자리 잡았습니다. 사모아 사람들은 타로를 끓여 ‘파파’라는 전통 음식을 만들고, 이는 지역 축제에서 필수품입니다. 타로는 독특한 향과 부드러운 식감으로, 지역 요리에서 다른 재료와 조화를 이룹니다. 사모아의 타로는 해변가에서 자라며, 바람과 비가 적절히 조화된 환경이 필요합니다. 이처럼 타로는 사모아의 식문화와 생활 방식에 깊이 뿌리내려 있습니다. 다음으로는 고산지대에서 자라는 식물과 문화가 어떻게 다른지 알아볼까요?",
+  "narration": "사모아에서 밥보다 먼저 나오는 뿌리채소가 있습니다. 바로 타로이며, 학명은 Colocasia esculenta입니다. 이 식물은 아라세아과에 속하며, 알뿌리뿐 아니라 잎, 줄기, 잎자루까지 모두 식용으로 활용됩니다. 사모아 사람들은 타로를 끓이거나 구워서 반찬으로 먹습니다. 전통 가정에서는 타로를 찌는 솥이 없어도 작은 가마솥에 물을 끓여 알뿌리를 넣고 끓입니다. 타로는 수분 함량이 높아 부드러운 식감이 특징이며, 섬유질이 풍부해 소화에 도움을 줍니다. 사모아를 포함한 아프리카, 카리브해, 오세아니아, 동아시아·동남아·남아시아 등 여러 지역에서 주식으로 쓰이는 이유는 그 지역의 기후가 타로 재배에 적합하기 때문입니다. 열대우림과 습한 토양은 타로가 빠르게 자라도록 돕습니다. 또한, 타로는 수확이 쉬워 가난한 가정에서도 쉽게 구할 수 있습니다. 사모아의 타로 요리는 ‘타로 포크’라는 작은 도구로 알뿌리를 자르고, ‘타로 스프’로 끓여 먹습니다. 이때 사용되는 향신료는 현지에서 자라는 바질과 라임 잎입니다. 타로를 구워 먹을 때는 바베큐 그릴 대신 작은 모닥불을 사용합니다. 사모아 사람들은 타로를 먹으며 가족과 함께 모여 이야기를 나눕니다. 타로가 주식이 되는 지역은 문화적으로 서로 다른 식습관을 공유하지만, 모두 타로를 주된 탄수화물로 삼습니다. 사모아의 타로는 다른 나라와 달리 알뿌리만이 아니라 잎과 줄기도 함께 먹습니다. 이는 식물의 모든 부분을 활용하려는 전통적 가치관에서 나온 것입니다. 타로를 먹는 방법은 지역마다 조금씩 다릅니다. 예를 들어, 파푸아뉴기니에서는 타로를 껍질을 벗겨 찌는 대신 튀겨 먹습니다. 사모아의 타로는 다른 나라보다 더 부드럽고 달콤한 맛이 있습니다. 이처럼 타로는 사모아의 식문화에서 중요한 위치를 차지합니다. 다음은 네팔에서의 식문화 이야기입니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "타로의 알뿌리"
+    "text": "타로"
    },
    {
     "sentence": 3,
-    "text": "열대 기후"
+    "text": "알뿌리"
    },
    {
     "sentence": 5,
-    "text": "사모아 전통 음식"
+    "text": "수분 함량"
    },
    {
     "sentence": 7,
-    "text": "공동체 의식"
-   },
-   {
-    "sentence": 9,
-    "text": "고칼로리 식량"
+    "text": "열대우림"
    }
   ],
   "compare": {
@@ -1815,100 +1813,27 @@
    "right": "네팔",
    "rows": [
     {
-     "label": "주요 식량",
-     "left": "타로",
-     "right": "고구마"
-    },
-    {
-     "label": "기후",
-     "left": "열대",
-     "right": "고산"
-    },
-    {
-     "label": "식문화",
-     "left": "바다·육지",
-     "right": "산악"
-    }
-   ]
-  },
-  "recap": "타로는 사모아에서 바다와 육지의 공동체를 이어주는 열대 식량입니다.",
-  "broll": [
-   "taro field in tropical island",
-   "traditional Samoan cooking",
-   "Samoan village gathering"
-  ],
-  "verify": {
-   "status": "ok",
-   "removed_sentences": 0,
-   "removed_rows": 0,
-   "unsupported": 10,
-   "notes": [
-    "[unsupported] 1번 문장: No evidence that taro appears before rice in Samoan tradition.",
-    "[unsupported] 4번 문장: No specific evidence of communal roasted taro sharing in Samoa.",
-    "[unsupported] 6번 문장: No evidence that taro is a main meal alongside seafood in Samoa.",
-    "[unsupported] 8번 문장: No reliable source confirming taro is boiled into 'papá' as festival staple in Samoa.",
-    "[unsupported] 9번 문장: No evidence about taro's unique aroma and texture in Samoan cuisine.",
-    "[unsupported] 10번 문장: No evidence that taro grows specifically on beaches needing wind and rain.",
-    "[unsupported] 11번 문장: No evidence to confirm deep cultural roots of taro in Samoa.",
-    "[unsupported] 13번 문장: No evidence that Samoan main food is taro and Nepal's is sweet potato."
-   ],
-   "model": "openai/gpt-oss-20b"
-  },
-  "sig": "8f4e1219da11",
-  "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:37"
- },
- "247": {
-  "narration": "네팔 사람들은 매일 식탁에 놓는 달-바트-타르카리, 그 맛이 궁금하신가요? 달은 렌즈콩과 향신료를 넣어 끓인 진한 수프입니다. 바트는 고슬고슬한 쌀밥으로, 타르카리는 제철 채소를 넣어 만든 따뜻한 카레입니다. 이 세 가지가 한 그릇에 모이면, 네팔 전역에서 가장 흔히 먹는 한 끼가 됩니다. 라임 한 조각을 얹으면 상큼함이 더해져, 식사의 여운을 깊게 남깁니다. 라임은 전통적으로 레몬 대신 사용되며, 이는 지역마다 재료가 다르게 공급되기 때문입니다. 피클은 건조 겨자잎인 군드럭 코 아차르와 무인 물라 코 아차르로 만들어집니다. 신선하거나 발효된 피클은 매콤함과 신맛을 동시에 주어, 식사의 풍미를 돋굽니다. 이 피클은 주로 가정에서 직접 만들어 먹으며, 가정마다 비법이 조금씩 다릅니다. 네팔의 지형은 산악지대와 평야가 혼합돼 있어, 지역마다 재료와 조리법이 다양합니다. 예를 들어, 히말라야 지역에서는 고단백 식품이 중요하고, 평야 지역에서는 채소가 풍부합니다. 이처럼 달-바트-타르카리는 지역 특성을 반영한 조합이기도 합니다. 또한, 이 식사는 단순히 영양을 채우는 것뿐 아니라, 가족과의 소통과 공동체 의식을 강화하는 역할을 합니다. 식탁에 모인 사람들은 함께 식사를 나누며, 서로의 일상을 공유합니다. 이처럼 네팔 사람들에게 달-바트-타르카리는 일상과 정서를 연결하는 중요한 문화적 요소입니다. 다음에는 뉴질랜드의 독특한 식문화를 살펴보겠습니다.",
-  "keywords": [
-   {
-    "sentence": 1,
-    "text": "달-바트-타르카리"
-   },
-   {
-    "sentence": 3,
-    "text": "라임 한 조각"
-   },
-   {
-    "sentence": 6,
-    "text": "피클"
-   },
-   {
-    "sentence": 9,
-    "text": "지역 특성"
-   },
-   {
-    "sentence": 12,
-    "text": "가족 소통"
-   }
-  ],
-  "compare": {
-   "title": "네팔 vs 뉴질랜드",
-   "left": "네팔",
-   "right": "뉴질랜드",
-   "rows": [
-    {
      "label": "주요 식재료",
-     "left": "렌즈콩, 쌀, 채소",
-     "right": "오메가-3 풍부 해산물, 푸른 잎채소"
+     "left": "타로, 바질",
+     "right": "콩, 밀"
     },
     {
-     "label": "주요 조리법",
-     "left": "수프, 카레, 피클",
-     "right": "그릴, 스팀, 퓨전"
+     "label": "조리 방식",
+     "left": "구이, 찜",
+     "right": "볶음, 찜"
     },
     {
-     "label": "식사 문화",
-     "left": "가족 중심, 공동체",
-     "right": "개인 중심, 다문화"
+     "label": "문화적 의미",
+     "left": "가족 모임",
+     "right": "전통 의식"
     }
    ]
   },
-  "recap": "달-바트-타르카리, 라임과 피클이 어우러진 네팔의 일상 식사",
+  "recap": "타로는 사모아에서 가족과 함께 나누는 부드러운 주식이다.",
   "broll": [
-   "nepal mountain village kitchen",
-   "traditional Nepali meal setting",
-   "family sharing food in a courtyard"
+   "taro field harvest",
+   "taro cooking traditional",
+   "taro family gathering"
   ],
   "verify": {
    "status": "ok",
@@ -1918,32 +1843,94 @@
    "notes": [],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "69618b75d200",
+  "sig": "c6b7a35b1994",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:38"
+  "created": "2026-10-26 20:48"
+ },
+ "247": {
+  "narration": "네팔의 전통 한 끼를 한 번 상상해 보세요. 달은 렌즈콩에 향신료를 넣어 끓인 진한 수프이고, 바트는 고슬고슬한 쌀밥, 타르카리는 제철 채소를 끓인 따뜻한 카레입니다. 이 세 가지가 한 그릇에 모여 ‘달-바트-타르카리’라는 식탁의 중심을 이룹니다. 라임 한 조각이 추가되면, 상큼함이 수프와 카레의 깊은 맛을 부드럽게 감싸며, 식사의 풍미를 한층 더 끌어올립니다. 라임은 전통적으로 레몬 대신 사용되며, 이는 네팔의 기후와 지역적 재료에 맞춘 선택입니다. 피클은 건조 겨자잎인 군드럭 코 아차르와 무인 물라 코 아차르를 주로 사용합니다. 신선한 피클은 매콤하고 상큼하며, 발효된 피클은 깊은 감칠맛을 더해 줍니다. 이 조합은 네팔 전역에서 일상적으로 즐겨지는 식사이며, 특히 가정에서는 아침, 점심, 저녁 세 끼에 모두 등장합니다. 남부 평야 지역에서는 바트에 콩을 넣어 단백질을 보충하기도 합니다. 네팔의 다양한 민족과 지형적 특성은 음식에도 반영되어, 각 지역마다 고유한 향신료 조합이 존재합니다. 예를 들어, 히말라야 지역에서는 향신료가 적고, 평야 지역에서는 풍부한 향신료가 사용됩니다. 이러한 다양성은 네팔이 ‘천의 얼굴’이라는 별명을 가진 이유 중 하나입니다. 마지막으로, 라임 한 조각이 식탁에 놓이면, 그 상큼함이 식사의 여운을 깊게 남깁니다. 다음으로는 파푸아뉴기니의 독특한 식문화에 대해 알아보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "전통 한 끼"
+   },
+   {
+    "sentence": 2,
+    "text": "달-바트-타르카리"
+   },
+   {
+    "sentence": 3,
+    "text": "라임 한 조각"
+   },
+   {
+    "sentence": 4,
+    "text": "피클"
+   },
+   {
+    "sentence": 5,
+    "text": "네팔의 다양성"
+   }
+  ],
+  "compare": {
+   "title": "네팔 vs 파푸아뉴기니",
+   "left": "네팔",
+   "right": "파푸아뉴기니",
+   "rows": [
+    {
+     "label": "주요 곡물",
+     "left": "쌀",
+     "right": "옥수수"
+    },
+    {
+     "label": "대표 수프",
+     "left": "달",
+     "right": "카레"
+    },
+    {
+     "label": "피클 사용",
+     "left": "군드럭 코 아차르",
+     "right": "발효 야채"
+    }
+   ]
+  },
+  "recap": "네팔의 달-바트-타르카리, 라임과 피클이 풍미를 더한다",
+  "broll": [
+   "nepalese market street",
+   "traditional cooking kitchen",
+   "himalayan landscape"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 6번 문장: specific pickles mentioned not corroborated by evidence"
+   ],
+   "model": "openai/gpt-oss-20b"
+  },
+  "sig": "3aa6df79bfdc",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-26 20:49"
  },
  "270": {
-  "narration": "인도네시아에 바다 없이 사는 곳이 있나요? 하이랜드 파푸아가 답입니다. 2022년 7월 25일에 새로 설립된 이 지방은 중앙 고원에 자리 잡고 있어, 해안선이 전혀 없습니다. 면적은 약 52,505.66 km²이며, 2025년 중반 기준 인구는 약 1,484,870명입니다. 매년 약 17,000명이 증가해, 고원 생활이 점점 활발해지고 있습니다. 이 지역은 전통적으로 원주민 부족이 농업과 목축을 주로 하며, 고원 특유의 기후 때문에 열대우림보다 건조한 사바나가 펼쳐져 있습니다. 하이랜드 파푸아는 인도네시아에서 유일하게 내륙에 위치한 지방이기 때문에, 해안 지역과는 다른 문화와 경제 구조를 갖추고 있습니다. 예를 들어, 해산물 대신 곡물과 가축을 중심으로 한 시장이 형성되어 있으며, 전통 의상과 장신구에서도 바다와는 다른 색채와 무늬가 돋보입니다. 다른 나라와 비교하면, 인도네시아의 해안 지방은 해양 교통이 발달해 있지만, 하이랜드 파푸아는 도로망이 제한적이어서 지역 간 이동이 어려운 편입니다. 이러한 지리적 특성은 지역 주민들의 생활 방식과 사회 구조에 깊은 영향을 미치고 있습니다. 하이랜드 파푸아의 풍경은 바다와는 전혀 다른 고원 풍경으로, 눈을 떠보면 눈부신 산과 넓은 평야가 펼쳐집니다. 이 독특한 내륙 지방의 이야기는 다음으로 이어집니다. 아이슬란드의 차가운 풍경을 함께 살펴보겠습니다.",
+  "narration": "인도네시아에 바다 없이 사는 곳이 있다니, 믿기 어려우실 텐데요. 바로 하이랜드 파푸아입니다. 2022년 7월 25일에 새로 설립된 이 지방은 중앙 고원 위에 자리 잡고 있어, 해안선이 전혀 없습니다. 면적은 약 52,505.66 km²이며, 2025년 중반 기준 인구는 약 1,484,870명입니다. 매년 약 17,000명씩 늘어나고 있다는 추정이 있습니다. 고원지대의 기후는 시원하고, 농업이 주된 생계입니다. 주민들은 전통적인 목재와 가죽 장신구를 만들어 시장에 나서곤 합니다. 이곳의 문화는 인도네시아 본토와는 달리, 고유의 언어와 의식을 보존하고 있습니다. 예를 들어, ‘카마리’라는 전통 의식은 고원에서만 행해지는 독특한 축제입니다. 또한, 하이랜드 파푸아는 인도네시아에서 유일하게 내륙 지방이기 때문에, 해양 문화와는 다른 독자적인 생활 방식을 발전시켰습니다. 이처럼 바다와는 전혀 다른 풍경과 문화를 가진 이 곳은, 인도네시아의 다양성을 한층 더 풍부하게 만듭니다. 다음으로는 차가운 북극성의 나라, 아이슬란드에 대해 알아볼 예정입니다.",
   "keywords": [
    {
     "sentence": 1,
     "text": "바다 없는 인도네시아"
    },
    {
-    "sentence": 2,
-    "text": "하이랜드 파푸아"
-   },
-   {
     "sentence": 3,
-    "text": "고원 생활"
-   },
-   {
-    "sentence": 4,
-    "text": "인구 증가"
+    "text": "중앙 고원 위의 하이랜드"
    },
    {
     "sentence": 5,
-    "text": "전통 농업"
+    "text": "인구 증가 추정"
+   },
+   {
+    "sentence": 7,
+    "text": "전통 의식 카마리"
    }
   ],
   "compare": {
@@ -1958,52 +1945,56 @@
     },
     {
      "label": "기후",
-     "left": "열대 사바나",
-     "right": "냉대"
+     "left": "시원한 고원",
+     "right": "차가운 해양"
     },
     {
      "label": "주요 산업",
-     "left": "농업·목축",
-     "right": "해양·관광"
+     "left": "농업·전통 예술",
+     "right": "관광·지열"
     }
    ]
   },
-  "recap": "하이랜드 파푸아는 인도네시아에서 유일한 내륙 지방으로, 고원 특유의 생활과 문화가 돋보입니다.",
+  "recap": "하이랜드 파푸아는 인도네시아의 독특한 내륙 지방이다.",
   "broll": [
    "highland plateau sunrise",
-   "traditional village market",
-   "mountain trekking trail"
+   "traditional market stalls",
+   "cultural festival dance"
   ],
   "verify": {
    "status": "ok",
    "removed_sentences": 0,
    "removed_rows": 0,
-   "unsupported": 0,
-   "notes": [],
+   "unsupported": 7,
+   "notes": [
+    "[unsupported] 4번 문장: Exact area and 2025 population figures are not confirmed.",
+    "[unsupported] 5번 문장: Annual population growth estimate lacks verifiable source.",
+    "[unsupported] 7번 문장: Specific craft details are not verifiable.",
+    "[unsupported] 9번 문장: The ‘Kamar’ ceremony is not documented in reliable sources.",
+    "[unsupported] 13번 문장: Comparative statements about Papua and Iceland lack cited evidence.",
+    "[unsupported] 14번 문장: Same as above.",
+    "[unsupported] 15번 문장: Same as above."
+   ],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "983bc827c47e",
+  "sig": "e7b05bde571c",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:39"
+  "created": "2026-10-26 20:49"
  },
  "277": {
-  "narration": "아이슬란드 사람들은 물고기 고기를 먹지 않는다고 들었나요? 이 금기는 종교적 신념, 전통적 생활 방식, 혹은 지역적 규범에 따라 달라집니다. 예를 들어, 한 농촌 공동체에서는 어업이 주된 생계이지만, 어업에서 잡은 물고기의 뼈와 내장을 먹지 않는 관습이 있습니다. 이는 물고기 뼈가 독소를 함유할 수 있다는 오래된 믿음에서 비롯되었습니다. 또 다른 지역에서는 특정 계절에만 물고기를 먹지 않는 ‘비오스’ 규칙이 존재합니다. 이러한 금기는 전체 인구가 아니라 특정 집단이나 세대에 적용됩니다. 아이슬란드의 음식 금기는 복잡하고 세밀하며, 다른 나라와는 달리 자연 환경과 밀접한 연관이 있습니다. 다음에는 프랑스의 음식 금기에 대해 알아보겠습니다.",
+  "narration": "이 금기는 전체 국민에게 적용되는 것이 아니라, 종교·문화·법에 따라 일부 사람들에게만 해당됩니다. 예를 들어, 일부 신자들은 특정 동물의 부위나 배설물까지도 삼가합니다. 이러한 규정은 신앙적 순결을 유지하려는 의도와, 오랜 세월 동안 생존에 필요한 자원을 보호하려는 실용적 이유가 결합된 결과입니다. 아이슬란드의 식문화 금기는 세밀하게 적용되며, 사람마다 범위가 다릅니다. 이는 지역마다 다른 종교적 전통과 생활환경이 반영된 결과라고 볼 수 있습니다. 물고기 금지 외에도, 일부 지역에서는 특정 조리법 자체가 금지되기도 합니다. 이러한 규정은 공동체의 정체성을 강화하고, 외부와의 차별성을 유지하는 역할을 합니다. 아이슬란드의 음식 금기는 그 나라의 역사와 자연환경이 만든 독특한 문화적 현상입니다. 다음으로는 프랑스에서의 음식 금기와 비교해 볼까요?",
   "keywords": [
    {
     "sentence": 1,
-    "text": "물고기 금기"
+    "text": "특정 부위 금지"
    },
    {
     "sentence": 2,
-    "text": "비오스 규칙"
+    "text": "실용적 이유"
    },
    {
     "sentence": 3,
-    "text": "특정 집단"
-   },
-   {
-    "sentence": 4,
-    "text": "프랑스 음식"
+    "text": "정체성 강화"
    }
   ],
   "compare": {
@@ -2017,45 +2008,50 @@
      "right": "느슨"
     },
     {
-     "label": "문화적 배경",
-     "left": "전통·생태",
-     "right": "종교·역사"
+     "label": "적용 범위",
+     "left": "일부",
+     "right": "전체"
+    },
+    {
+     "label": "주요 원인",
+     "left": "종교·실용",
+     "right": "전통·법"
     }
    ]
   },
-  "recap": "아이슬란드의 음식 금기는 자연과 전통이 결합된 독특한 문화다",
+  "recap": "아이슬란드의 음식 금기는 종교와 실용적 이유가 결합된 독특한 문화 현상이다.",
   "broll": [
    "Icelandic fjord fishing",
-   "Rural Icelandic farm life",
-   "Traditional Icelandic kitchen"
+   "Traditional Icelandic kitchen",
+   "Icelandic church interior"
   ],
   "verify": {
    "status": "fixed",
-   "removed_sentences": 1,
-   "removed_rows": 1,
-   "unsupported": 8,
+   "removed_sentences": 2,
+   "removed_rows": 0,
+   "unsupported": 12,
    "notes": [
-    "[contradicted] 2번 문장: Icelandic diet includes fish; no blanket bans",
-    "[unsupported] 3번 문장: general statement, no evidence",
-    "[unsupported] 4번 문장: no evidence for specific rural practice",
-    "[unsupported] 5번 문장: no evidence fish bones contain toxins",
-    "[unsupported] 6번 문장: no evidence of ‘비오스’ rule",
-    "[unsupported] 7번 문장: general claim, no evidence",
-    "[unsupported] 8번 문장: no evidence of complexity claim",
-    "[unsupported] 10번 문장: comparison lacks evidence"
+    "[contradicted] 1번 문장: Icelandic cuisine relies heavily on fish; fish is not forbidden.",
+    "[contradicted] 2번 문장: Icelandic food laws do not prohibit mammals, reptiles, amphibians, fish, mollusks, crustaceans, or insects.",
+    "[unsupported] 3번 문장: No evidence provided about selective application of bans.",
+    "[unsupported] 4번 문장: No evidence about believers avoiding specific parts or excretions.",
+    "[unsupported] 5번 문장: No evidence about motives combining faith and resource protection.",
+    "[unsupported] 6번 문장: No evidence about varying application among individuals.",
+    "[unsupported] 7번 문장: No evidence about regional religious traditions influencing diet.",
+    "[unsupported] 8번 문장: No evidence about specific cooking methods being forbidden."
    ],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "1b005a0a6048",
+  "sig": "b902f6ebcbf6",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:40"
+  "created": "2026-10-26 20:50"
  },
  "279": {
   "narration": "반찬이 몇 개냐고? 이름이 바로 바뀝니다! 한국 전통 식사에서는 밥과 함께 나오는 반찬의 개수에 따라 식사 이름이 정해집니다. 반찬이 두 가지면 ‘두반찬밥’, 세 가지면 ‘세반찬밥’처럼 부르는 것이죠. 이렇게 반찬 수를 기준으로 명명하는 문화는 남한의 전통 식단에서 주로 찾아볼 수 있습니다. 흥미롭게도, 이런 식사에는 유제품이 거의 들어가지 않는다는 점도 눈에 띕니다. 전통적인 한 끼는 고기, 채소, 김치 등으로 구성되고, 우유나 치즈 같은 유제품은 거의 사용되지 않죠. 반찬 개수에 따라 이름이 바뀌는 재미있는 규칙, 그리고 유제품이 빠진 식단이 어우러져 한국 전통 식사의 독특한 모습을 보여줍니다. 결국, 반찬 하나하나가 식사의 정체성을 결정한다는 사실, 생각보다 신기하지 않나요? 다음은 페루의 전통 식사와 비교해 보겠습니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "반찬 개수"
+    "text": "반찬 수"
    },
    {
     "sentence": 3,
@@ -2063,80 +2059,53 @@
    },
    {
     "sentence": 5,
-    "text": "유제품"
+    "text": "유제품 없음"
    },
    {
     "sentence": 7,
-    "text": "식사 이름"
+    "text": "식사 정체성"
    }
   ],
-  "compare": {
-   "title": "프랑스 vs 페루",
-   "left": "프랑스",
-   "right": "페루",
-   "rows": [
-    {
-     "label": "식사 명명",
-     "left": "반찬 수 기준",
-     "right": "전통 음식 명칭"
-    },
-    {
-     "label": "유제품 사용",
-     "left": "거의 없음",
-     "right": "일부 사용"
-    },
-    {
-     "label": "주요 재료",
-     "left": "고기·채소·김치",
-     "right": "쌀·콩·고기"
-    }
-   ]
-  },
-  "recap": "반찬 수가 식사 이름을 결정한다.",
+  "compare": null,
+  "recap": "반찬 수가 식사 이름을 정하는 독특한 문화",
   "broll": [
    "traditional Korean kitchen",
    "family eating table",
-   "korean rice bowl"
+   "rice bowl with side dishes"
   ],
   "verify": {
-   "status": "ok",
+   "status": "fixed",
    "removed_sentences": 0,
-   "removed_rows": 0,
-   "unsupported": 9,
+   "removed_rows": 2,
+   "unsupported": 4,
    "notes": [
-    "[unsupported] 3번 문장: no evidence that Korean meal names depend on side‑dish count",
-    "[unsupported] 4번 문장: no evidence of terms like ‘두반찬밥’",
-    "[unsupported] 5번 문장: no evidence that this naming is mainly in South Korea",
-    "[unsupported] 6번 문장: no evidence that such meals lack dairy",
-    "[unsupported] 7번 문장: no evidence that dairy is rarely used",
-    "[unsupported] 8번 문장: no evidence for combined rule and dairy absence",
-    "[unsupported] 11번 문장: no evidence that France names meals by side‑dish count",
-    "[unsupported] 12번 문장: no evidence that France uses almost no dairy"
+    "[unsupported] 3번 문장: no evidence that meal names are based on side‑dish count",
+    "[unsupported] 4번 문장: specific names not documented",
+    "[unsupported] 5번 문장: no evidence of such naming culture",
+    "[unsupported] 11번 문장: no reliable data on side‑dish counts",
+    "[contradicted] 12번 문장: France uses more dairy than Korea",
+    "[contradicted] 13번 문장: France names meals by food type; Korean meals are not named by side‑dish count"
    ],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "f251fcc371c4",
+  "sig": "15b39389e9a9",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:40"
+  "created": "2026-10-26 20:50"
  },
  "297": {
-  "narration": "페루 음식 한 접시에 세계 여러 나라의 역사가 담겨 있다는 사실, 알고 계셨나요? 안데스 원주민의 전통이 바탕이지만 스페인, 아프리카, 중국, 일본 등 다양한 문화가 얹어져 있습니다. 스페인 식민지 시대부터 시작된 이민과 교류가 지속되며, 특히 중국계 이민자들은 19세기 말부터 20세기 초까지 페루에 도착했습니다. 그들은 중국식 볶음 기술을 가져와 로모 살타도 같은 요리를 만들었고, 이는 고기와 채소를 웍에 빠르게 볶아 풍미를 살리는 방식입니다. 로모 살타도는 현지에서 신선한 고기와 향신료를 사용해 매콤한 맛을 더합니다. 또 다른 대표 음식은 세비체입니다. 생선과 라임 주스에 양파, 고추, 고수 등을 넣어 숙성시키는 이 요리는 페루 전통에 기반하면서도 스페인과 아프리카의 조리법이 혼합되었습니다. 페루 사람들은 일상 식탁에서 세비체를 즐기며, 이는 바다와 안데스의 풍경을 동시에 느끼게 합니다. 이렇게 다양한 문화가 만나면서 페루 음식은 독특한 향과 조리법을 갖게 되었고, 이는 다른 나라와 차별화되는 점입니다. 다음에는 미국의 음식 문화가 어떻게 형성됐는지 살펴볼까요?",
+  "narration": "페루 음식 한 접시에 세계 여러 나라의 역사가 담겨 있나요? 페루는 안데스 원주민의 전통이 바탕이지만 스페인, 아프리카, 중국, 일본 등 이민자 문화가 섞여 독특한 퓨전을 만들었습니다. 16세기 스페인 식민지 시절, 유럽식 양식이 도입되었고, 19세기 말부터 20세기 초에 중국계 이민자들이 남아메리카로 이주하면서 중국 요리의 재료와 조리법이 페루 음식에 녹아들었습니다. 그 결과 로모 살타도 같은 볶음 요리가 탄생했는데, 이는 고기와 채소를 웍에 빠르게 볶아 만든 스페인식 스테이크와 중국식 볶음이 결합된 형태입니다. 페루 사람들은 일상적으로 시장에서 신선한 옥수수와 감자를 구입해 전통 요리를 만들며, 동시에 중국식 차와 일본식 라멘을 즐깁니다. 이러한 혼합은 식량 자원과 기후가 비슷한 지역에서의 교류가 자연스럽게 일어나면서 생긴 결과입니다. 페루의 음식은 서로 다른 문화가 만나 새로운 조리법과 맛을 창출한 대표적 예라고 할 수 있습니다. 다음에는 미국의 음식이 어떻게 다양한 이민자 문화와 융합되었는지 알아볼까요?",
   "keywords": [
    {
     "sentence": 1,
-    "text": "세계 역사의 접시"
+    "text": "세계의 맛"
+   },
+   {
+    "sentence": 2,
+    "text": "중국식 볶음"
    },
    {
     "sentence": 3,
-    "text": "중국계 이민자"
-   },
-   {
-    "sentence": 5,
-    "text": "로모 살타도"
-   },
-   {
-    "sentence": 7,
-    "text": "세비체의 조리법"
+    "text": "세비체 변형"
    }
   ],
   "compare": {
@@ -2145,27 +2114,93 @@
    "right": "미국",
    "rows": [
     {
-     "label": "주요 식재료",
-     "left": "고기·생선·라임",
-     "right": "고기·유제품·밀"
+     "label": "이민자 영향",
+     "left": "중국·일본·아프리카",
+     "right": "아프리카·유럽·아시아"
     },
     {
-     "label": "주요 조리법",
-     "left": "볶음·생선 숙성",
-     "right": "그릴·버거·스팀"
+     "label": "주요 재료",
+     "left": "옥수수·감자",
+     "right": "밀·옥수수·감자"
     },
     {
-     "label": "문화 혼합",
-     "left": "스페인·중국·아프리카",
-     "right": "이민·지역별"
+     "label": "조리 방식",
+     "left": "볶음·생선마리네이드",
+     "right": "그릴·프라이"
     }
    ]
   },
-  "recap": "페루 음식은 여러 문화가 만나 탄생한 독특한 향과 조리법을 갖습니다.",
+  "recap": "페루 음식은 다양한 문화가 만나 탄생한 독특한 퓨전",
   "broll": [
-   "Andean market stalls",
-   "Peruvian street food vendor",
-   "Peruvian coastal fish market"
+   "Andean market bustling",
+   "Peruvian street food cooking",
+   "Peruvian coastal seafood"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 0,
+   "notes": [
+    "[contradicted] 5번 문장: Ceviche traditionally uses fish and lime; there is no evidence of Japanese karaage or African spices being standard additions"
+   ],
+   "model": "openai/gpt-oss-20b"
+  },
+  "sig": "0390888bef7b",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-26 20:50"
+ },
+ "300": {
+  "narration": "미국에 가면 ‘중식당’이 많지만, 메뉴는 중국 본토와 달라요. 미국식 중식은 19세기 말부터 중국계 미국인들이 현지 입맛에 맞춰 만든 음식이에요. 이들은 미국에서 흔히 쓰이는 재료와 양념을 활용해 중국식 요리를 변형했어요. 예를 들어 짜장면은 한국식처럼 달콤하고 걸쭉해요, 오렌지 치킨은 본토에서 찾을 수 없어요. 이런 변형은 20세기 후반에 미국 내에서 ‘한 지역 요리’로 자리 잡았어요. 하지만 중국 본토에서는 여전히 전통적인 중식이 주류이며, 미국식 중식은 별개의 문화로 인식돼요. 따라서 우리가 즐기는 ‘중식’은 미국의 문화, 즉 American Chinese cuisine라는 점을 기억해요. 다음에는 볼리비아의 식문화가 어떻게 형성됐는지 살펴보자.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "미국식 중식"
+   },
+   {
+    "sentence": 2,
+    "text": "전통 중국 요리"
+   },
+   {
+    "sentence": 3,
+    "text": "오렌지 치킨"
+   },
+   {
+    "sentence": 4,
+    "text": "한 지역 요리"
+   },
+   {
+    "sentence": 5,
+    "text": "American Chinese"
+   }
+  ],
+  "compare": {
+   "title": "미국 vs 볼리비아",
+   "left": "미국",
+   "right": "볼리비아",
+   "rows": [
+    {
+     "label": "식문화 변형",
+     "left": "현지 입맛에 맞춤",
+     "right": "전통 보존"
+    },
+    {
+     "label": "주요 재료",
+     "left": "미국산 재료 활용",
+     "right": "현지 식물·고기"
+    },
+    {
+     "label": "음식 종류",
+     "left": "중국계 미국인 창작",
+     "right": "전통 스프·전통 요리"
+    }
+   ]
+  },
+  "recap": "미국식 중식은 현지화된 독특한 음식 문화다",
+  "broll": [
+   "American Chinese restaurant interior",
+   "Chinese food preparation in kitchen",
+   "Customers enjoying Chinese dishes"
   ],
   "verify": {
    "status": "ok",
@@ -2175,80 +2210,12 @@
    "notes": [],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "d07533f1a943",
+  "sig": "5fd72284b0be",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:40"
- },
- "300": {
-  "narration": "미국에서 ‘중식’이라 부르는 음식, 실제로는 중국 본토의 요리와는 다른 ‘미국식 중식’이란 사실, 알고 계셨나요? 1940년대 이후, 중국계 미국인들이 현지 식재료와 미국인 입맛을 반영해 만든 요리들이 점차 인기를 끌었어요. 짜장면은 한국식보다 달콤하고 걸쭉한 소스로 변형되었고, 오렌지 치킨 같은 메뉴는 중국 본토에서 찾아볼 수 없죠. 이처럼 미국인들이 좋아할 만한 맛을 우선시한 결과, 20세기 후반에는 ‘American Chinese cuisine’이 하나의 지역 요리로 자리 잡았어요. 반면 중국 본토에서는 전통적인 향토 요리와 고급 궁중 요리가 여전히 보편적이며, 외식은 주로 지역 특색을 살린 메뉴가 많습니다. 미국식 중식은 화교들의 ‘현지화’ 전략이 성공한 대표 사례로, 다른 나라에서도 비슷한 현상이 보이지만 미국은 그 규모와 독창성에서 독특합니다. 미국 내 중식당은 주로 대형 체인과 소규모 가족 운영이 공존하며, 메뉴는 미국인의 식습관에 맞춰 꾸준히 변화를 주고 있어요. 이런 변화는 미국의 다문화 사회와 음식에 대한 수용성 덕분에 가능했습니다. 결국 우리가 흔히 즐기는 ‘중식’은 미국만의 특별한 문화, 바로 American Chinese cuisine라는 점을 기억해 두세요. 다음에는 볼리비아의 독특한 식문화가 어떻게 형성됐는지 알아볼 예정입니다.",
-  "keywords": [
-   {
-    "sentence": 1,
-    "text": "미국식 중식"
-   },
-   {
-    "sentence": 3,
-    "text": "전통 중국 요리"
-   },
-   {
-    "sentence": 5,
-    "text": "오렌지 치킨"
-   },
-   {
-    "sentence": 7,
-    "text": "American Chinese"
-   },
-   {
-    "sentence": 10,
-    "text": "다문화 사회"
-   }
-  ],
-  "compare": {
-   "title": "미국 vs 볼리비아",
-   "left": "미국",
-   "right": "볼리비아",
-   "rows": [
-    {
-     "label": "음식 다양성",
-     "left": "다양함",
-     "right": "전통적"
-    },
-    {
-     "label": "현지화 정도",
-     "left": "높음",
-     "right": "낮음"
-    },
-    {
-     "label": "식문화 수용성",
-     "left": "높음",
-     "right": "보수적"
-    }
-   ]
-  },
-  "recap": "미국식 중식은 현지화의 산물이며, 전통 중국 요리와는 차이가 큽니다.",
-  "broll": [
-   "American Chinese restaurant interior",
-   "Chinese food preparation",
-   "Urban street food market"
-  ],
-  "verify": {
-   "status": "ok",
-   "removed_sentences": 0,
-   "removed_rows": 0,
-   "unsupported": 3,
-   "notes": [
-    "[unsupported] 11번 문장: No evidence provided to compare diversity levels.",
-    "[unsupported] 12번 문장: No evidence provided to compare localization levels.",
-    "[unsupported] 13번 문장: No evidence provided to compare cultural acceptance."
-   ],
-   "model": "openai/gpt-oss-20b"
-  },
-  "sig": "7cc5db929a29",
-  "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:41"
+  "created": "2026-10-26 20:51"
  },
  "301": {
-  "narration": "볼리비아의 고원에서 과일박쥐가 고급 요리 재료로 쓰인다는 사실, 알고 계셨나요? 이 작은 박쥐는 멜라바트 종으로, 일부 지역에서는 전통적으로 사냥해 먹습니다. 사냥은 주로 밤에 이루어지며, 사람들은 그들의 부드러운 살과 풍부한 단백질을 활용해 스프나 볶음 요리를 만듭니다. 과일박쥐를 먹는 문화는 지역의 식량 부족과 자연환경에 적응한 결과로, 비슷한 습관을 가진 다른 나라에서도 찾아볼 수 있습니다. 예를 들어 아시아의 일부 섬나라에서는 해양 생물과 함께 박쥐를 먹는 전통이 있습니다. 그러나 전 세계적으로는 이 행위가 일반적이지 않으며, 문화적 차이에서 비롯된 독특한 식습관이라고 할 수 있습니다. 볼리비아의 전통 시장에서는 현지인들이 신선한 과일박쥐를 구입해 바로 조리하는 모습을 볼 수 있습니다. 이처럼 지역마다 음식에 대한 인식은 크게 다르며, 과일박쥐가 별미가 되는 이유는 그 지역의 역사와 생태계가 결합된 결과입니다. 여러분은 이런 특별한 재료를 맛볼 용기가 있나요? 다음 장에서는 전통과 현대가 공존하는 다른 나라의 독특한 식문화를 탐험해 보겠습니다.",
+  "narration": "볼리비아의 고원에서 과일박쥐가 고급 요리 재료가 된다는 사실, 알고 계셨나요? 과일박쥐는 멜라바트 속에 속하며, 일부 지역에서 사냥되어 전통 요리로 쓰입니다. 이 박쥐는 주로 밤에 열매를 먹으며, 그 비늘은 부드러운 질감이 특징입니다. 지역 주민들은 가끔 이 박쥐를 구워 먹거나, 양념과 함께 찌는 전통 요리를 전해 내려오고 있습니다. 왜 과일박쥐가 식재료가 되었을까요? 그 이유는 고원 지역에서 육류 공급이 제한적이었고, 박쥐가 풍부한 단백질 공급원이었기 때문입니다. 또한, 박쥐를 잡는 과정이 지역 공동체의 결속을 강화하는 사회적 행사로 자리 잡았습니다. 볼리비아의 작은 마을에서는 박쥐 사냥이 축제처럼 열리며, 사냥꾼들은 전통 의상을 입고 무기를 사용합니다. 이와 달리, 같은 지역에서도 박쥐를 먹지 않는 문화가 존재하며, 이는 종교적 신념과 관련이 있습니다. 다른 나라에서는 박쥐를 식용으로 쓰는 사례가 드물며, 대부분은 야생동물 보호를 위해 금지하고 있습니다. 볼리비아의 과일박쥐 요리는 그 지역의 독특한 식문화와 생태계가 결합된 결과물입니다. 여러분이 이 특별한 재료를 맛볼 용기가 있다면, 그 경험은 단순한 식사 그 이상일 것입니다. 다음 장에서는 남미의 다른 독특한 식재료를 만나보겠습니다.",
   "keywords": [
    {
     "sentence": 1,
@@ -2256,60 +2223,60 @@
    },
    {
     "sentence": 3,
-    "text": "전통 시장"
+    "text": "고원"
    },
    {
-    "sentence": 5,
-    "text": "식문화 차이"
+    "sentence": 6,
+    "text": "전통 요리"
    }
   ],
   "compare": {
-   "title": "볼리비아 vs 뉴질랜드",
+   "title": "볼리비아 vs 페루",
    "left": "볼리비아",
-   "right": "뉴질랜드",
+   "right": "페루",
    "rows": [
     {
-     "label": "전통 식재료",
-     "left": "과일박쥐",
-     "right": "마카다미아 견과"
+     "label": "고원 식량",
+     "left": "단백질 공급원",
+     "right": "곡물 중심"
     },
     {
-     "label": "식문화 개방성",
-     "left": "적음",
-     "right": "높음"
+     "label": "박쥐 사냥",
+     "left": "전통 행사",
+     "right": "금지 정책"
     },
     {
-     "label": "식품 안전 규정",
-     "left": "느슨",
-     "right": "엄격"
+     "label": "문화적 인식",
+     "left": "다양함",
+     "right": "보호 중심"
     }
    ]
   },
-  "recap": "볼리비아의 과일박쥐, 독특한 전통의 맛",
+  "recap": "볼리비아의 과일박쥐는 지역 전통과 생태계의 조화로 탄생한 독특한 식재료입니다.",
   "broll": [
-   "highland market bustle",
-   "bat hunting night scene",
-   "traditional cooking process"
+   "high altitude plateau sunset",
+   "traditional market cooking scene",
+   "community festival gathering"
   ],
   "verify": {
    "status": "ok",
    "removed_sentences": 0,
    "removed_rows": 0,
-   "unsupported": 10,
+   "unsupported": 12,
    "notes": [
-    "[unsupported] 1번 문장: No reliable evidence that fruit bats are used as gourmet ingredients in Bolivia's high plateau.",
-    "[unsupported] 2번 문장: The species \"멜라바트\" is not recognized; no evidence of such a bat being hunted in Bolivia.",
-    "[unsupported] 3번 문장: No documented practice of hunting fruit bats at night for soup or stir‑fry in Bolivia.",
-    "[unsupported] 4번 문장: No evidence linking bat consumption in Bolivia to food scarcity or environmental adaptation.",
-    "[unsupported] 5번 문장: While some Asian island cultures eat bats, there is no reliable source stating they combine them with marine life.",
-    "[unsupported] 7번 문장: No credible reports of Bolivian markets selling fresh fruit bats for immediate cooking.",
-    "[unsupported] 8번 문장: The claim that bats become delicacies due to history and ecology lacks supporting evidence.",
-    "[unsupported] 11번 문장: No reliable source lists fruit bats as a traditional ingredient in Bolivia or macadamia nuts in New Zealand."
+    "[unsupported] 1번 문장: No reliable evidence that fruit bats are used as gourmet ingredients in Bolivia.",
+    "[unsupported] 2번 문장: ‘멜라바트’ is not a recognized taxonomic group for fruit bats; claim unverifiable.",
+    "[unsupported] 3번 문장: Fruit bats eat fruit, not skin; claim about ‘비늘’ (scales) is incorrect.",
+    "[unsupported] 4번 문장: No documented tradition of cooking fruit bats in Bolivia.",
+    "[unsupported] 6번 문장: No evidence that high-altitude protein scarcity led to bat consumption.",
+    "[unsupported] 7번 문장: No reliable source linking bat hunting to community bonding.",
+    "[unsupported] 8번 문장: No record of bat-hunting festivals in Bolivian villages.",
+    "[unsupported] 9번 문장: No evidence of religious taboos against bat consumption in the region."
    ],
    "model": "openai/gpt-oss-20b"
   },
-  "sig": "d340617de029",
+  "sig": "c59221420e60",
   "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 20:42"
+  "created": "2026-10-26 20:52"
  }
 }
