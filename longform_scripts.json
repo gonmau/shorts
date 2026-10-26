@@ -1790,6 +1790,20 @@
    "Ethiopian injera preparation",
    "Ethiopian church fasting ceremony",
    "Ethiopian family dinner"
+  ],
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0175_에티오피아.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0175_에티오피아_timing.json",
+  "tts_hash": "34a5db707144",
+  "clips": [
+   {
+    "query": "Ethiopian church fasting ceremony",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0175_에티오피아\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1636/",
+    "id": "pixabay1636",
+    "check": "ok"
+   }
   ]
  },
  "186": {
@@ -1865,7 +1879,39 @@
    "Family gathering around fire"
   ],
   "locked": true,
-  "edited": "2026-10-26 21:48"
+  "edited": "2026-10-26 21:48",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0186_사모아.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0186_사모아_timing.json",
+  "tts_hash": "7527fcab16c8",
+  "clips": [
+   {
+    "query": "Samoa taro field harvest",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0186_사모아\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Oliverstar",
+    "page": "https://pixabay.com/videos/id-184808/",
+    "id": "pixabay184808",
+    "check": "ok"
+   },
+   {
+    "query": "Traditional Samoan cooking pot",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0186_사모아\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Life-Of-Vids",
+    "page": "https://pixabay.com/videos/id-267/",
+    "id": "pixabay267",
+    "check": "ok"
+   },
+   {
+    "query": "Family gathering around fire",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0186_사모아\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "KlausHausmann",
+    "page": "https://pixabay.com/videos/id-8625/",
+    "id": "pixabay8625",
+    "check": "ok"
+   }
+  ]
  },
  "247": {
   "narration": "네팔의 전통 한 끼, 달-바트-타르카리, 한 입에 담긴 풍경이 궁금하신가요? 달은 렌즈콩을 향신료와 함께 끓여 깊은 맛을 내고, 바트는 고슬고슬한 쌀밥을 뜻합니다. 타르카리는 채소 등을 향신료와 함께 조리한 반찬이며, 피클은 발효한 겨자잎인 군드럭이나 무 등을 활용해 매콤하고 새콤한 맛을 더합니다. 라임이나 레몬을 곁들이면 상큼함이 더해져 익숙한 맛에 작은 변주가 생깁니다. 이 조합은 네팔 전역에서 일상적으로 즐기는 식사이며, 각 가정과 지역마다 사용하는 재료와 조리법이 조금씩 다릅니다. 히말라야 지역을 비롯한 산악 지역에서는 지역에서 구하기 쉬운 채소와 콩류 등을 활용하기도 합니다. 네팔은 다양한 민족과 지형이 만나 다채로운 식문화를 발전시켰으며, 달-바트-타르카리는 그 대표적인 예입니다. 라임을 곁들이는 방식은 개인의 취향과 식사 구성에 따라 달라집니다. 이처럼 재료와 곁들임은 달라져도, 달-바트-타르카리는 네팔의 일상 식문화를 보여 주는 대표적인 음식입니다. 다음에는 뉴질랜드의 독특한 식문화로 넘어가 보겠습니다.",
@@ -1936,7 +1982,39 @@
    "Mountain village dinner"
   ],
   "locked": true,
-  "edited": "2026-10-26 22:14"
+  "edited": "2026-10-26 22:14",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0247_네팔.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0247_네팔_timing.json",
+  "tts_hash": "03b284939459",
+  "clips": [
+   {
+    "query": "Neapolitan street market",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0247_네팔\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1643/",
+    "id": "pixabay1643",
+    "check": "ok"
+   },
+   {
+    "query": "Traditional Nepali kitchen",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0247_네팔\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Joko_Narimo",
+    "page": "https://pixabay.com/videos/id-148542/",
+    "id": "pixabay148542",
+    "check": "ok"
+   },
+   {
+    "query": "Mountain village dinner",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0247_네팔\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "Kanenori",
+    "page": "https://pixabay.com/videos/id-327388/",
+    "id": "pixabay327388",
+    "check": "ok"
+   }
+  ]
  },
  "270": {
   "narration": "인도네시아에 바다 없이 사는 곳이 있다는 건 믿기 어려우셨나요? 인도네시아의 파푸아 고원주는 인도네시아에서 유일하게 해안선이 없는 주입니다. 2022년 7월 25일에 새로 설립된 이 주는 중앙 고원 위에 펼쳐져 있습니다. 면적은 약 52,505.66 km²에 달합니다. 2025년 중반 기준 인구는 약 1,484,870명이며, 매년 약 17,000명씩 증가하고 있습니다. 이 수치는 위키백과에서 추정한 값이므로 참고용으로 보시면 됩니다. 파푸아 고원주는 해안선이 없기 때문에 바다와는 전혀 다른 풍경이 펼쳐집니다. 고원 지대에 자리한 이곳에서는 농경지와 산악 지형, 지역 공동체의 전통문화를 볼 수 있습니다. 주민들은 주로 고지대에서 감자와 고구마 등 작물을 재배하며, 지역과 민족에 따라 전통적인 주거 형태도 다릅니다. 이 주는 인도네시아의 다른 지역과 달리, 고원 특유의 기후와 지형이 농업과 주민들의 생활에 큰 영향을 미칩니다. 또한, 고원에 위치한 만큼 지역마다 기온과 강수량이 달라 물 관리와 농업 환경에도 차이가 있습니다. 파푸아 고원주는 인도네시아의 다른 주와는 달리 해양 문화보다 고산 지역의 생활문화가 두드러집니다. 이 독특한 지리적 특성은 지역 주민들의 생활 방식과 전통을 크게 형성했습니다. 파푸아 고원주의 풍경은 바다와는 다른 푸른 산과 초원, 계곡으로 이루어져 있습니다. 이곳에서 바라보는 일출은 해안선이 없는 고원에서 만나는 독특한 아름다움을 선사합니다. 이제 여러분은 파푸아 고원주가 왜 인도네시아에서 유일하게 해안선이 없는 주인지 이해하셨나요? 다음으로는 차가운 북극의 섬, 아이슬란드로 넘어가 보겠습니다.",
@@ -2386,6 +2464,20 @@
    "Pacific island market"
   ],
   "locked": true,
-  "edited": "2026-10-26 22:32"
+  "edited": "2026-10-26 22:32",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0261_뉴질랜드.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0261_뉴질랜드_timing.json",
+  "tts_hash": "ad506358e503",
+  "clips": [
+   {
+    "query": "Mediterranean seafood dish",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0261_뉴질랜드\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "XiaosKitchen",
+    "page": "https://pixabay.com/videos/id-11682/",
+    "id": "pixabay11682",
+    "check": "ok"
+   }
+  ]
  }
 }
