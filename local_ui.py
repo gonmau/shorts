@@ -419,6 +419,9 @@ def _ext_panel(pfx, default_idx):
         else:
             st.caption("소재 번호를 넣으면 요청문이 만들어집니다.")
         _paste = st.text_area("외부 AI 답변 붙여넣기 (소재마다 '### 번호' 다음 줄에 대본)", height=260, key=pfx + "paste")
+        _redo_ok = False
+        if not _long:
+            _redo_ok = st.checkbox("이미 영상이 있는 소재도 저장 (영상·음성 기록을 지우고 새 대본으로 다시 만들 수 있게 함, 유튜브에 올린 기록은 유지)", True, key=pfx + "redo")
         _blocks = _E.parse_blocks(_paste) if _paste.strip() else {}
         _ok = {}
         if _blocks:
@@ -429,9 +432,9 @@ def _ext_panel(pfx, default_idx):
                     continue
                 n_, pr_ = _E.check(t_, _lo, _hi, en=_unit_en)
                 st_ = _dbx[i_].get("status", "")
-                blocked_ = (not _long) and st_ in ("video_done",)
+                blocked_ = (not _long) and st_ in ("video_done",) and not _redo_ok
                 rows_.append({"번호": i_, "나라": _dbx[i_].get("country", ""), "길이": f"{n_}{'단어' if _unit_en else '자'} (기준 {_lo}~{_hi})",
-                              "상태": ("이미 영상 있음 - 건너뜀(다시 만들기 후 저장)" if blocked_ else "저장 가능") + ((" / 주의: " + ", ".join(pr_)) if pr_ else "")})
+                              "상태": ("이미 영상 있음 - 건너뜀(위 체크를 켜면 저장)" if blocked_ else ("저장 가능 (영상 다시 만들기 필요)" if ((not _long) and st_ == "video_done") else "저장 가능")) + ((" / 주의: " + ", ".join(pr_)) if pr_ else "")})
                 if not blocked_:
                     _ok[i_] = t_
             st.dataframe(rows_, hide_index=True, use_container_width=True)
@@ -448,6 +451,10 @@ def _ext_panel(pfx, default_idx):
                     _s = ",".join(str(i_) for i_ in _ok)
                     run("build_longform.py", "--mode", "manual", "--indexes", _s, "--min", "1", "--start", "0", "--plan-only", "--only", _s, "--resync")
             else:
+                _vd = [i_ for i_ in _ok if _dbx[i_].get("status") == "video_done" or _dbx[i_].get("video_path_v6")]
+                if _vd:
+                    subprocess.run([sys.executable, "redo_videos.py", "--indexes", ",".join(map(str, _vd))], capture_output=True, text=True,
+                                   encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
                 lines_ = []
                 for i_, t_ in _ok.items():
                     lines_.append(f"=== [{i_}] ===\n" + "\n".join(f"대본[{n_}]: {x_}" for n_, x_ in enumerate(_E.sentences(t_), 1)))
