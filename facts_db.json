@@ -24722,12 +24722,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "White House photo by Chris Greenberg",
-        "license": "Public domain",
-        "title": "Popemobile passes the White House.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
-        "id": "c:3915893"
+        "source": "pixabay",
+        "user": "Icsilviu",
+        "page": "https://pixabay.com/photos/inside-car-metro-design-chairs-4775622/",
+        "id": 4775622,
+        "type": "photo"
       },
       {
         "scene": 2,
@@ -24793,7 +24792,7 @@
         "id": "c:201703848"
       }
     ],
-    "image_source": "commons",
+    "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "bad",
