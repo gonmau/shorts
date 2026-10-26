@@ -24708,7 +24708,209 @@
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-20b",
     "cross_notes": [],
-    "cross_verdict": "ok"
+    "cross_verdict": "ok",
+    "image_queries_done": [
+      "hidden throne inside car",
+      "popemobile open view design",
+      "historic papal portable throne",
+      "bulletproof glass popemobile 1981",
+      "popemobile without seat",
+      "pope standing inside car",
+      "special popemobile interior design",
+      "future popemobile greeting pose"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "White House photo by Chris Greenberg",
+        "license": "Public domain",
+        "title": "Popemobile passes the White House.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
+        "id": "c:3915893"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "White House photo by Chris Greenberg",
+        "license": "Public domain",
+        "title": "Popemobile passes the White House.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
+        "id": "c:3915893"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Cupofjoy",
+        "license": "CC0",
+        "title": "Inside the Leyland Popemobile.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Inside_the_Leyland_Popemobile.jpg",
+        "id": "c:81236894"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "White House photo by Chris Greenberg",
+        "license": "Public domain",
+        "title": "Popemobile passes the White House.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
+        "id": "c:3915893"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
+      }
+    ],
+    "image_source": "commons",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.2159,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "191c406bb7e3",
+        "at": "2026-10-26 20:05",
+        "scene": 1,
+        "rejected_ids": [
+          1599527,
+          4775622,
+          731165,
+          "c:201703848",
+          "c:3915893"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2359,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4f58a516c856",
+        "at": "2026-10-26 20:05",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1926,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba287b4b7552",
+        "at": "2026-10-26 20:05",
+        "scene": 3,
+        "rejected_ids": [
+          1894723,
+          820272,
+          "c:201703848",
+          "c:28985585",
+          "c:3915893"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2743,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4f4aaf3ffc47",
+        "at": "2026-10-26 20:05",
+        "scene": 4,
+        "rejected_ids": [
+          4707039,
+          "c:201703848"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2438,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5969ae98dccb",
+        "at": "2026-10-26 20:05",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2667,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "68c6658f1e01",
+        "at": "2026-10-26 20:06",
+        "scene": 6,
+        "rejected_ids": [
+          4775622,
+          8493246,
+          "c:201703848",
+          "c:28985585",
+          "c:3915893"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2318,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6938c056e29b",
+        "at": "2026-10-26 20:06",
+        "scene": 7,
+        "rejected_ids": [
+          2181994,
+          "c:201703848"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2238,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "df70114dd789",
+        "at": "2026-10-26 20:06",
+        "scene": 8,
+        "rejected_ids": [
+          10375568,
+          "c:201703848"
+        ]
+      }
+    ]
   },
   {
     "topic": "에스토니아(Estonia)의 LGBTQ 권리 변화",
