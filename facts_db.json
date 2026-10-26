@@ -24718,7 +24718,36 @@
     "verify_note": "LGBTQ rights in Estonia",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:37.528107+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "에스토니아에서는 동성 관계가 합법이지만, 2002년까지는 연령 차이가 달랐다는 사실! 에스토니아는 전 소련 국가 중 가장 자유로운 LGBTQ 권리를 가지고 있습니다. 남녀 모두 동성 성관계가 법적으로 허용돼요. 그리고 2002년에 연령 동의 연령이 남녀 모두에게 동일하게 조정되었습니다. 그때부터는 동성 커플도 이성 커플과 같은 연령 기준을 적용받게 되었죠. 이 법은 에스토니아에만 적용되는 점을 기억해 주세요. 이제는 성적 지향에 관계없이 같은 기준으로 보호받는다는 점, 생각보다 최근에 바뀐 사실이라는 점이 흥미롭습니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "동성*합법*연령차이"
+      },
+      {
+        "s": 4,
+        "text": "2002년 *동의*연령통일"
+      },
+      {
+        "s": 5,
+        "text": "동성·이성 *동일*기준"
+      },
+      {
+        "s": 7,
+        "text": "*최근*에바뀐보호"
+      }
+    ],
+    "image_queries": [
+      "same-sex legal age difference",
+      "Estonia LGBTQ rights",
+      "Estonia same-sex law",
+      "2002 consent age equal Estonia",
+      "equal age standards Estonia",
+      "Estonia legal code",
+      "recent protection change Estonia"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "부활절 월요일에 물을 뿌리는 폴란드 전통",
