@@ -24696,7 +24696,7 @@
     "image_queries": [
       "pope mobile",
       "popemobile open view design",
-      "historic papal portable throne",
+      "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
       "pope standing inside car",
@@ -24712,7 +24712,7 @@
     "image_queries_done": [
       "pope mobile",
       "popemobile open view design",
-      "historic papal portable throne",
+      "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
       "pope standing inside car",
@@ -24741,11 +24741,11 @@
       {
         "scene": 3,
         "source": "commons",
-        "user": "White House photo by Chris Greenberg",
-        "license": "Public domain",
-        "title": "Popemobile passes the White House.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
-        "id": "c:3915893"
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 4,
@@ -24825,15 +24825,17 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1926,
+        "clip": 0.1254,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ba287b4b7552",
-        "at": "2026-10-26 20:05",
+        "sig": "7dd7ab1d40b4",
+        "at": "2026-10-26 20:21",
         "scene": 3,
         "rejected_ids": [
           1894723,
+          410324,
+          5673901,
           820272,
           "c:201703848",
           "c:28985585",
