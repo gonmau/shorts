@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 22:51:43 (KST) · 기록 304건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 22:57:45 (KST) · 기록 305건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | apply_review | 3 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 18 | 0 | 5분 0초 |
+| fetch_images | 19 | 0 | 5분 4초 |
 | generate_culture_facts | 1 | 0 | 47초 |
 | generate_script | 7 | 0 | 16분 18초 |
 | image_check | 2 | 0 | 19초 |
@@ -26,6 +26,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:56 | PC | fetch_images | fetch_images.py --index 186 --scene 1 --source commons --type photo | ✅ | 4초 |  |
 | 22:51 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --ti | ❌ failed | 4분 46초 |    247 네팔: 12장 중 8, 9, 10, 11, 12번 없음    261 뉴질랜드: 12장 중 7, 8, 9, 10, 11, 12번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 |
 | 22:44 | PC | fetch_images | fetch_images.py --index 261 --force | ✅ | 17초 |  |
 | 22:43 | PC | generate_script | generate_script.py --extras-only --index 261 --regen-queries | ✅ | 2분 4초 |  |
