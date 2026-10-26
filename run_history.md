@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 22:59:54 (KST) · 기록 313건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 23:01:45 (KST) · 기록 317건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,14 +8,14 @@
 |---|---|---|---|
 | -c | 11 | 0 | 1분 51초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 3 | 0 | 0초 |
+| apply_review | 4 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 25 | 0 | 5분 24초 |
+| fetch_images | 26 | 0 | 6분 11초 |
 | generate_culture_facts | 1 | 0 | 47초 |
-| generate_script | 7 | 0 | 16분 18초 |
+| generate_script | 8 | 0 | 16분 20초 |
 | image_check | 2 | 0 | 19초 |
-| promote_ready | 3 | 0 | 0초 |
+| promote_ready | 4 | 0 | 0초 |
 | 롱폼 | 29 | 1 | 3시간 1분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 3 | 0 | 0초 |
@@ -26,6 +26,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:01 | PC | fetch_images | fetch_images.py --limit 1 --start 317 --any | ✅ | 47초 |  |
+| 23:00 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 317 | ✅ | 1초 |  |
+| 23:00 | PC | promote_ready | promote_ready.py --start 317 | ✅ | 0초 |  |
+| 23:00 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 3초 |  |
 | 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 4초 |  |
 | 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 1초 |  |
