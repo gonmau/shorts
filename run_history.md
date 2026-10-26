@@ -1,21 +1,21 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 21:14:34 (KST) · 기록 285건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 21:19:03 (KST) · 기록 290건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 8 | 0 | 1분 49초 |
+| -c | 9 | 0 | 1분 50초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 2 | 0 | 0초 |
+| apply_review | 3 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 10 | 0 | 2분 6초 |
+| fetch_images | 11 | 0 | 2분 7초 |
 | generate_culture_facts | 1 | 0 | 47초 |
-| generate_script | 2 | 0 | 10분 46초 |
+| generate_script | 3 | 0 | 10분 48초 |
 | image_check | 2 | 0 | 19초 |
-| promote_ready | 2 | 0 | 0초 |
+| promote_ready | 3 | 0 | 0초 |
 | 롱폼 | 27 | 0 | 2시간 34분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 3 | 0 | 0초 |
@@ -26,6 +26,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:18 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 175 | ✅ | 1초 |  |
+| 21:18 | PC | fetch_images | fetch_images.py --limit 1 --start 175 --any | ✅ | 0초 |  |
+| 21:18 | PC | promote_ready | promote_ready.py --start 175 | ✅ | 0초 |  |
+| 21:18 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 21:17 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
 | 21:14 | PC | fetch_images | fetch_images.py --index 186 | ✅ | 0초 |  |
 | 20:52 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,270,277,279,297,300,301 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images - | ✅ | 3분 34초 |  |
 | 20:42 | PC | 롱폼 | build_longform.py --mode auto --indexes 175,186,247,261,270,277,297,300,301 --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --st | ✅ | 4분 41초 |  |
