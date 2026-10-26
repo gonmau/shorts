@@ -52,6 +52,11 @@ on:
         options: ["off", "scan", "fix"]
         default: "off"
 
+      cross_check:
+        description: "대본 교차검증 (위키 근거 + 다른 모델 검증, 토큰 많이 씀. 기본 끔 - 직접 검증한 대본을 쓰는 방식)"
+        type: boolean
+        default: false
+
       voice:
         description: "목소리 (Supertonic: F1~F5 여성, M1~M5 남성 / 비우면 기본 F1)"
         default: ""
@@ -74,6 +79,7 @@ jobs:
     env:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
       PICK: ${{ github.event.inputs.pick || '' }}
+      CROSS_CHECK: ${{ github.event.inputs.cross_check == 'true' && '1' || '0' }}
       PYTHONUNBUFFERED: "1"  # 로그가 실시간으로 보이게 함
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}

@@ -388,7 +388,10 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
         if not IS_EN and KT.is_stiff(res["narration"]):
             res["narration"] = soften(client, models, res["narration"])
             print(f"    [확장대본] {idx}: 어투가 딱딱해 존댓말 구어체로 고침", flush=True)
-        res = verify(client, models, item, ev, res)
+        if os.environ.get("CROSS_CHECK", "0") == "1":
+            res = verify(client, models, item, ev, res)
+        else:
+            res["verify"] = {"status": "skipped", "notes": ["교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"]}
         keep = {k: rec[k] for k in KEEP_FIELDS if k in rec}
         rec = {**keep, **res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M")}
         if str(instruction or "").strip():

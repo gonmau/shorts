@@ -61,6 +61,10 @@ TTS_CFG.setdefault("caption", "script")
 TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
 TTS_CFG.setdefault("scenes", 10)
+if not TTS_CFG.get("_verify_off_v1"):      # 한 번만: 교차검증/이미지 자동검증을 기본 꺼짐으로 (직접 검증한 대본을 붙여 쓰는 방식 기본)
+    TTS_CFG["cross"] = False
+    TTS_CFG["imgchk"] = False
+    TTS_CFG["_verify_off_v1"] = True
 TTS_CFG.setdefault("cross", False)
 TTS_CFG.setdefault("imgchk", False)          # 이미지 받을 때 자동 검증(+불일치 교체)
 TTS_CFG.setdefault("imgchk_ollama", True)    # CLIP이 애매할 때 Ollama 비전 모델로 2차 확인
@@ -369,6 +373,104 @@ def _img_state(i, f):
     return n, bool(f.get("image_queries_done"))
 
 
+def _ext_panel(pfx, default_idx):
+    """외부 AI(ChatGPT/Gemini/Perplexity 등)에서 작성·검증한 대본을 붙여넣어 쓰는 패널 (+ 외부 AI에 줄 요청문 만들기)"""
+    import ext_script as _E
+    with st.expander("📥 외부 AI로 대본 작성·검증 → 붙여넣기 (Groq 토큰 절약)", expanded=False):
+        st.caption("① 소재 번호를 넣고 '요청문'을 복사해 외부 AI에 붙여 넣기 → ② 답변(### 번호 + 대본)을 아래에 붙여넣기 → ③ 저장. "
+                   "붙여넣은 대본은 '직접 검증함'으로 표시되어 교차검증을 건너뛰고, 쇼츠는 제목·핵심 문구·이미지 검색어만 자동으로 만듭니다.")
+        _k = st.radio("대상", ["쇼츠 대본", "롱폼 챕터 대본"], index=default_idx, horizontal=True, key=pfx + "kind")
+        _long = _k.startswith("롱폼")
+        _ids_txt = st.text_input("소재 번호 (예: 117,118 / 110-115)", key=pfx + "ids")
+        try:
+            from build_longform import parse_indexes as _pi
+            _ids = _pi(_ids_txt) if _ids_txt.strip() else []
+        except Exception:
+            _ids = []
+        _dbx = _ld()
+        _ids = [i_ for i_ in _ids if 0 <= i_ < len(_dbx)]
+        if _long:
+            import longform_script as _LS
+            _lo, _hi = _LS.LEN_RANGE
+            _unit_en = EN
+        else:
+            _t = int(TTS_CFG.get("target_sec") or 0); _m = 1 + int(TTS_CFG.get("rate") or 0) / 100
+            if EN:
+                _lo, _hi = (round(_t * 2.2 * _m * 0.88), round(_t * 2.2 * _m * 1.12)) if _t > 0 else (90, 115)
+            else:
+                _lo, _hi = (int(_t * 7.04 * _m / 10) * 10, int(_t * 8.96 * _m / 10 + 1) * 10) if _t > 0 else (350, 500)
+            _unit_en = EN
+        _mode = st.radio("요청문 종류", ["새로 작성 + 검증", "내 기존 대본 검증·수정"], horizontal=True, key=pfx + "mode")
+        if _ids:
+            import ko_text as _KT2
+            _items = []
+            for i_ in _ids:
+                f_ = _dbx[i_]
+                cur_ = ((_LS.get_rec(i_).get("narration") if _long else "") or f_.get("narration", "")) if _mode.startswith("내") else ""
+                try:
+                    import topic_ko as _TK
+                    tp_ = _TK.shown(i_, f_) if not EN else f_.get("topic", "")
+                except Exception:
+                    tp_ = f_.get("topic", "")
+                _items.append((i_, (f_.get("country", "") if EN else _KT2.disp_country(f_.get("country", ""))), tp_, cur_))
+            _req = _E.build_request(_items, "long" if _long else "short", "verify" if _mode.startswith("내") else "new", _lo, _hi, en=EN)
+            st.code(_req, language="text")
+            st.download_button("요청문 파일로 받기", _req.encode("utf-8"), f"request_{'long' if _long else 'short'}.txt", key=pfx + "dl")
+        else:
+            st.caption("소재 번호를 넣으면 요청문이 만들어집니다.")
+        _paste = st.text_area("외부 AI 답변 붙여넣기 (소재마다 '### 번호' 다음 줄에 대본)", height=260, key=pfx + "paste")
+        _blocks = _E.parse_blocks(_paste) if _paste.strip() else {}
+        _ok = {}
+        if _blocks:
+            rows_ = []
+            for i_, t_ in sorted(_blocks.items()):
+                if not (0 <= i_ < len(_dbx)):
+                    rows_.append({"번호": i_, "나라": "-", "길이": str(len(t_)), "상태": "DB에 없는 번호 - 건너뜀"})
+                    continue
+                n_, pr_ = _E.check(t_, _lo, _hi, en=_unit_en)
+                st_ = _dbx[i_].get("status", "")
+                blocked_ = (not _long) and st_ in ("video_done",)
+                rows_.append({"번호": i_, "나라": _dbx[i_].get("country", ""), "길이": f"{n_}{'단어' if _unit_en else '자'} (기준 {_lo}~{_hi})",
+                              "상태": ("이미 영상 있음 - 건너뜀(다시 만들기 후 저장)" if blocked_ else "저장 가능") + ((" / 주의: " + ", ".join(pr_)) if pr_ else "")})
+                if not blocked_:
+                    _ok[i_] = t_
+            st.dataframe(rows_, hide_index=True, use_container_width=True)
+        _rs = False
+        if _long:
+            _rs = st.checkbox("저장 후 키워드·비교·요약·영상 검색어를 이 대본에 맞게 AI로 다시 만들기 (챕터당 약 3~4천 토큰)", True, key=pfx + "rs")
+        if st.button(f"💾 붙여넣은 대본 저장 ({len(_ok)}개)", key=pfx + "save", type="primary", disabled=not _ok):
+            if _long:
+                import longform_script as _LS2
+                for i_, t_ in _ok.items():
+                    _LS2.update_rec(i_, {"narration": t_, "verified_by": "manual"})
+                st.success(f"롱폼 대본 {len(_ok)}개 저장·잠금: {', '.join(map(str, _ok))}")
+                if _rs:
+                    _s = ",".join(str(i_) for i_ in _ok)
+                    run("build_longform.py", "--mode", "manual", "--indexes", _s, "--min", "1", "--start", "0", "--plan-only", "--only", _s, "--resync")
+            else:
+                lines_ = []
+                for i_, t_ in _ok.items():
+                    lines_.append(f"=== [{i_}] ===\n" + "\n".join(f"대본[{n_}]: {x_}" for n_, x_ in enumerate(_E.sentences(t_), 1)))
+                with open("review_tmp_edit.txt", "w", encoding="utf-8") as f_:
+                    f_.write("\n\n".join(lines_) + "\n")
+                r_ = subprocess.run([sys.executable, "apply_review.py", "--file", "review_tmp_edit.txt"], capture_output=True, text=True,
+                                    encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+                try:
+                    os.remove("review_tmp_edit.txt")
+                except OSError:
+                    pass
+                subprocess.run([sys.executable, "promote_ready.py", "--start", "0"], capture_output=True, text=True, encoding="utf-8", errors="replace",
+                               env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+                _d2 = _ld()
+                for i_ in _ok:
+                    if 0 <= i_ < len(_d2):
+                        _d2[i_].update({"cross_checked": True, "cross_verdict": "manual", "cross_notes": ["직접 검증한 대본 (외부 AI)"], "cross_flags": []})
+                _sd(_d2)
+                st.session_state["gh_dirty"] = True
+                st.success(f"쇼츠 대본 {len(_ok)}개 저장: {', '.join(map(str, _ok))} → 2단계 '대본 만들기' 또는 5단계에서 제목·핵심 문구·이미지 검색어가 대본 기준으로 채워집니다.")
+                st.code((r_.stdout + r_.stderr).strip()[-600:] or "(apply_review 출력 없음)")
+
+
 with T1a:
     st.caption("🎯 새 소재의 선호 분야는 '2 대본 › 대본 만들기'의 '내 스타일'에서 정합니다.")
     n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="위키백과 기반으로 새 소재(unverified)를 만듭니다. 한 번에 12개 이하 권장 (Groq 한도)")
@@ -396,6 +498,7 @@ with T1a:
             run("approve.py", "--limit", str(int(count)), "--start", str(int(start)))
 
 with T2a:
+    _ext_panel('xs_', 0)
     _style_panel()
     TTS_CFG["target_sec"] = st.slider("목표 대본 길이 (초, 0 = 기본)", 0, 58, int(TTS_CFG.get("target_sec") or 0), 1, key="target_sec",
                                       help="새로 만드는 대본의 분량을 음성 길이 기준으로 맞춥니다. 0이면 기본 분량(한국어 350~500자 / 영어 90~115단어). 음성 속도 설정도 반영됩니다. 이미 만든 대본은 안 바뀌니 '대본부터 다시'로 다시 만드세요")
@@ -405,7 +508,7 @@ with T2a:
                                        else f"약 {round(_t * 2.2 * _m * 0.88)}~{round(_t * 2.2 * _m * 1.12)}단어 (영어)") + " · 실제 음성 길이는 4단계 후 확인")
     TTS_CFG["scenes"] = st.select_slider("장면(이미지) 수", options=list(range(6, 21, 2)), value=int(TTS_CFG.get("scenes") or 10), key="scene_n",
                                          help="새로 만드는 소재의 이미지 장수입니다. 길이 50초면 10장 ≈ 5초마다 전환. 많을수록 이미지 받기·검색어 생성이 늘어납니다. 이미 만든 소재는 원래 장수(6장 등)를 유지하고, 대본부터 다시 만들면 새 장수가 적용됩니다")
-    TTS_CFG["cross"] = st.checkbox("🔍 대본 교차검증 (위키백과 근거 + 다른 모델이 문장별 검증)", bool(TTS_CFG.get("cross")), key="cross_chk",
+    TTS_CFG["cross"] = st.checkbox("🔍 대본 교차검증 (쇼츠 대본 + 롱폼 확장 대본, 위키백과 근거 + 다른 모델이 문장별 검증)", bool(TTS_CFG.get("cross")), key="cross_chk",
                                    help="대본/제목/이미지 검색어를 만들 때 자동으로 검증합니다. 모순/근거 없는 문장은 먼저 고쳐 쓰고(바로잡기·한정어 추가·삭제) 다시 검증하며, 원문은 narration_original에 보관합니다. 2번 고쳐도 모순이 남거나 문장 절반 이상이 근거 없음이면 소재를 폐기(rejected)합니다. Groq 호출이 소재당 1~6회 늘어납니다. 오류를 줄일 뿐 100% 보장은 아니니 review.txt의 (교차검증 메모)는 직접 확인하세요. GitHub Actions에는 적용되지 않습니다(로컬 실행 전용)")
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     st.caption("🖼️ 이미지 자동 검증: " + ("**켜짐** (이미지를 받을 때 검색어와 맞는지 확인하고 불일치는 교체)" if TTS_CFG.get("imgchk") else "꺼짐") + " — 설정은 '이미지' 탭에서")
@@ -548,6 +651,7 @@ FEATURES = [
     # (분류, 기능, 어디서, 설명, 새기능)
     ("롱폼", "GitHub 단계별 미리 보기", "Actions > longform > preview 선택", "list(목록)/script(대본·시나리오)/images(장면 사진)/voice(음성 mp3)를 영상 없이 따로 실행해 디스코드로 확인. 대본은 저장되어 이후 영상에 그대로 사용. 영어 주제는 자동으로 한국어로 표시", "신규"),
     ("롱폼", "이미지 컷 시트 · 후보 고르기 · 내 사진", "Actions > longform > preview=cuts, pick / my_images 폴더", "cuts: 컷 이름·대본·검색어 시트 + 컷별 후보 사진(Pixabay/Commons/Openverse) 번호 시트를 디스코드로. pick 칸에 `117_3=2` 처럼 적어 고르거나, `my_images/117_03.jpg` 로 직접 올리면 자동 검색보다 우선 사용. PC는 🎞 롱폼 탭의 '✂️ 이미지 컷' 패널에서 같은 작업 + GitHub my_images 주고받기", "신규"),
+    ("2 대본", "외부 AI 대본 작성·검증 → 붙여넣기", "2 대본 › 대본 만들기 / 🎞 롱폼 맨 위 📥", "소재 번호로 외부 AI(ChatGPT/Gemini/Perplexity)에 줄 요청문(새로 작성+검증 / 기존 대본 검증·수정)을 만들고, 답변(### 번호 + 대본)을 붙여넣어 쇼츠 대본 또는 롱폼 챕터 대본으로 일괄 저장. 교차검증은 건너뛰고 Groq 토큰을 거의 안 씀 (교차검증은 기본 꺼짐)", "신규"),
     ("공통", "처리 개수 · 시작 번호", "맨 위 count / start_index", "한 번에 처리할 개수와, 이 번호 이상만 처리. 모든 단계에 적용", ""),
     ("공통", "다시 만들기 (redo)", "맨 위 redo 칸", "영상만 `98,99` / 대본부터 `101` + 체크 / 폐기 되살리기 `101!` + 체크. 끝나면 칸을 비우세요", ""),
     ("공통", "현황 (단계별 개수)", "왼쪽 사이드바 / 이 탭의 '현황 보기'", "승인대기·대본·음성·영상·업로드·폐기 개수", ""),
@@ -1470,6 +1574,7 @@ with T5c:
                 st.error(f"미리보기 실패: {type(e).__name__}: {e}")
 
 with TL:
+    _ext_panel('xl_', 1)
     st.caption("영상이 끝난 쇼츠를 묶어 가로 롱폼 1개로 만듭니다. 소재마다 음성/이미지를 다시 만들어서 시간이 걸립니다. 개수는 3~30개, 예상 40분 이하. facts_db.json과 별도로 longform_db.json에 기록됩니다.")
     lm = st.radio("선택 방식", ["auto (자동)", "manual (번호 직접)"], horizontal=True, key="lf_mode",
                   help="auto: 영상이 끝나고 롱폼에 안 쓴 소재를 번호순으로 / manual: 아래 번호들을 묶음")
