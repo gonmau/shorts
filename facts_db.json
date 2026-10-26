@@ -15278,7 +15278,7 @@
       }
     ],
     "image_queries": [
-      "African market root vegetables",
+      "taro root vegetables",
       "Taro plant Colocasia esculenta",
       "Taro leaves and stems",
       "Taro boiled dish",
@@ -15303,10 +15303,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Couleur",
-        "page": "https://pixabay.com/photos/carrots-vegetables-produce-3440368/",
-        "id": 3440368
+        "source": "commons",
+        "user": "စာကလေး",
+        "license": "CC0",
+        "title": "Taro Root, Eddoe or Colocasia Esculenta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Taro_Root,_Eddoe_or_Colocasia_Esculenta.jpg",
+        "id": "c:177388384"
       },
       {
         "scene": 2,
