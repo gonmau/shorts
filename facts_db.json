@@ -24864,7 +24864,43 @@
     "verify_note": "Cannabis Social Club",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:40.690745+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "마리화나를 ‘동호회’처럼 즐긴다면? 남아프리카공화국에선 바로 Cannabis Social Club, 즉 비영리 협동조합 형태의 대마 소매점이 존재합니다. 이 클럽은 회원만이 직접 재배하고, 공유하며, 소비할 수 있게 운영됩니다. 일반 성인에게 개방된 영리 목적의 Dutch coffeeshops와는 달리, 이곳은 수익을 추구하지 않으며 회원제라는 제한된 접근성을 갖습니다. 연구에 따르면, 비영리 운영과 회원제 구조가 공중보건에 긍정적인 영향을 주고, 대마 사용으로 인한 위해를 감소시킬 가능성이 있다고 합니다. 하지만 이러한 효과는 연구 결과에 기반한 것이며, 모든 지역에 동일하게 적용된다고 보기는 어렵습니다. 결국, 전통적인 카페보다 제한된 접근성을 가진 이 클럽이 보여주는 새로운 대마 문화는, 우리에게 ‘공동체와 책임’이라는 새로운 시각을 제시합니다. 그럼에도 불구하고, 그 한계가 존재한다는 점을 기억해야 할 것입니다.",
+    "title_line1": "남아공 비영리 대마클럽",
+    "title_line2": "회원만 즐기는 대마는?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "마리화나 *동호회*?"
+      },
+      {
+        "s": 3,
+        "text": "회원이 직접 *재배*"
+      },
+      {
+        "s": 4,
+        "text": "수익 안 하는 *클럽*"
+      },
+      {
+        "s": 5,
+        "text": "*비영리* 운영 효과"
+      },
+      {
+        "s": 7,
+        "text": "새로운 *공동체* 문화"
+      }
+    ],
+    "image_queries": [
+      "marijuana club meeting",
+      "South Africa cannabis social club",
+      "members cultivating cannabis",
+      "nonprofit cannabis club interior",
+      "nonprofit club research",
+      "cannabis club limitations",
+      "community cannabis club gathering",
+      "closed door cannabis club"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "과테말라(Guatemala) 민속 가톨릭(Folk Catholicism)의 독특한 의식",
