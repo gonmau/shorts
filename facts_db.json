@@ -24763,8 +24763,8 @@
     "confidence": "source",
     "created_at": "2026-10-25T07:49:40.690745+00:00",
     "status": "scripted",
-    "narration": "부활절 월요일, 물총 대신 물을 쏘면 어떻게 될까요? 바로 오늘은 폴란드에서 ‘Śmigus‑dyngus’라는 전통이 펼쳐집니다. 이 날 사람들은 서로에게 물을 뿌리며 기독교가 전해진 것을 기념합니다. 특히 폴란드 디아스포라, 특히 미국에 사는 폴란드계 주민들은 이 행사를 ‘Dyngus Day’라고 부릅니다. 물을 맞은 사람은 다음 해까지 행운을 얻는다고 믿으며, 거리와 학교, 가정 어디서든 물뿌리기가 이어집니다. 흥미롭게도 비슷한 풍습이 헝가리와 슬로바키아에도 있는데, 각각 ‘locsolkodás’와 ‘oblievačka’라는 이름으로 전해지고 있습니다. 그러나 이 전통은 주로 폴란드와 그 디아스포라 커뮤니티에서만 활발히 관찰된다는 점을 기억해 주세요. 물이 튀는 순간, 부활절의 기쁨이 물결처럼 퍼져 나가는 모습, 생각보다 더 즐겁게 다가올지도 모릅니다.",
-    "title_line1": "부활절 월요일 물뿌리기",
+    "narration": "부활절, 물총 대신 물을 쏘면 어떻게 될까요? 폴란드에서 ‘Śmigus‑dyngus’라는 전통이 펼쳐집니다. 이 날 사람들은 서로에게 물을 뿌리며 기독교가 전해진 것을 기념합니다. 특히 폴란드 디아스포라, 특히 미국에 사는 폴란드계 주민들은 이 행사를 ‘Dyngus Day’라고 부릅니다. 물을 맞은 사람은 다음 해까지 행운을 얻는다고 믿으며, 거리와 학교, 가정 어디서든 물뿌리기가 이어집니다. 비슷한 풍습이 헝가리와 슬로바키아에도 있는데, 각각 ‘locsolkodás’와 ‘oblievačka’라는 이름으로 전해지고 있습니다. 물이 튀는 순간, 부활절의 기쁨이 물결처럼 퍼져 나가는 모습, 생각보다 더 즐겁게 다가올지도 모릅니다.",
+    "title_line1": "부활절 물뿌리기",
     "title_line2": "행운은 물에?",
     "highlights": [
       {
@@ -24784,17 +24784,20 @@
         "text": "*물*이 거리·학교"
       }
     ],
+    "scene_count": 10,
+    "narration_original": "부활절 월요일, 물총 대신 물을 쏘면 어떻게 될까요? 바로 오늘은 폴란드에서 ‘Śmigus‑dyngus’라는 전통이 펼쳐집니다. 이 날 사람들은 서로에게 물을 뿌리며 기독교가 전해진 것을 기념합니다. 특히 폴란드 디아스포라, 특히 미국에 사는 폴란드계 주민들은 이 행사를 ‘Dyngus Day’라고 부릅니다. 물을 맞은 사람은 다음 해까지 행운을 얻는다고 믿으며, 거리와 학교, 가정 어디서든 물뿌리기가 이어집니다. 흥미롭게도 비슷한 풍습이 헝가리와 슬로바키아에도 있는데, 각각 ‘locsolkodás’와 ‘oblievačka’라는 이름으로 전해지고 있습니다. 그러나 이 전통은 주로 폴란드와 그 디아스포라 커뮤니티에서만 활발히 관찰된다는 점을 기억해 주세요. 물이 튀는 순간, 부활절의 기쁨이 물결처럼 퍼져 나가는 모습, 생각보다 더 즐겁게 다가올지도 모릅니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
     "image_queries": [
-      "water spray bottle",
+      "person spraying water hose",
       "Poland Easter water tradition",
-      "people splashing water",
-      "Polish diaspora celebration",
-      "water fight street school",
-      "Hungarian water tradition",
-      "Polish community water festival",
-      "water splash celebration"
-    ],
-    "scene_count": 10
+      "Polish children splashing water",
+      "Polish diaspora Easter USA",
+      "water splash street school",
+      "Hungarian Easter water splash",
+      "joyful water splash celebration"
+    ]
   },
   {
     "topic": "법적 허구, 거짓을 진실처럼 쓰는 장치",
@@ -24809,7 +24812,44 @@
     "verify_note": "Legal fiction",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:40.690745+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "법정에서 거짓을 진실로 인정한다면? 법률에서는 ‘Legal fiction’이라는 장치를 사용합니다. 이는 실제와 다르더라도 마치 사실인 것처럼 가정해 특정 결과를 도출하는 구조인데요. 법원이나 입법 과정에서 적용되며, 단순한 추정과는 달리 반증이 필요합니다. 이런 허구는 때때로 비판의 대상이 되기도 합니다. 예를 들어, 영국의 사상가 제레미 벤담은 법적 허구를 강하게 비판한 인물로 알려져 있습니다. 그는 허구가 법의 객관성을 흐린다고 주장했죠. 하지만 이 개념은 중국을 포함한 전 세계 많은 법 체계에서 활용되고 있다는 점을 기억해 주세요. 실제와 다르게 가정된 전제가 어떻게 현실을 바꾸는지, 그 여운을 곱씹어 보세요.",
+    "title_line1": "법정 허구, 거짓 진실",
+    "title_line2": "진실로 인정될까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "법정 *거짓* 진실?"
+      },
+      {
+        "s": 2,
+        "text": "법은 *허구* 사용"
+      },
+      {
+        "s": 3,
+        "text": "전제로 *현실* 바뀜"
+      },
+      {
+        "s": 7,
+        "text": "벤담, *허구* 비판"
+      },
+      {
+        "s": 9,
+        "text": "*전제*가 현실을 바꾼다"
+      }
+    ],
+    "image_queries": [
+      "courtroom gavel",
+      "legal document scroll",
+      "scale balance on desk",
+      "courtroom judge bench",
+      "old law book",
+      "British philosopher portrait",
+      "Jeremy Bentham statue",
+      "Chinese legal building",
+      "courtroom chalkboard diagram"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "비영리형 대마동호회, 일반 카페와는 달라",

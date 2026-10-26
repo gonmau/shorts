@@ -12,6 +12,7 @@
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 
 === [310] 폴란드 ===
+(사실 검수 위험도) user-reviewed
 (사실 확인용 검색어) Śmigus-dyngus
 후크: 부활절 월요일, 물총 대신 물을 쏘면 어떻게 될까?
 본문: Śmigus-dyngus (Śmigus-dyngus)는 부활절 월요일에 중앙유럽을 중심으로 열리는 축제로, 폴란드에서 특히 널리 알려져 있다. 폴란드 디아스포라, 특히 폴란드계 미국인들은 이를 Dyngus Day (Dyngus Day)라 부른다. 이 전통은 기독교가 폴란드에 전해진 것을 기념한다.
@@ -23,14 +24,13 @@
 핵심[2]: *물뿌리기* 전통
 핵심[3]: *행운* 물맞으면
 핵심[5]: *물*이 거리·학교
-이미지[1]: water spray bottle
+이미지[1]: person spraying water hose
 이미지[2]: Poland Easter water tradition
-이미지[3]: people splashing water
-이미지[4]: Polish diaspora celebration
-이미지[5]: water fight street school
-이미지[6]: Hungarian water tradition
-이미지[7]: Polish community water festival
-이미지[8]: water splash celebration
+이미지[3]: Polish children splashing water
+이미지[4]: Polish diaspora Easter USA
+이미지[5]: water splash street school
+이미지[6]: Hungarian Easter water splash
+이미지[7]: joyful water splash celebration
 대본[1]: 부활절, 물총 대신 물을 쏘면 어떻게 될까요?
 대본[2]: 폴란드에서 ‘Śmigus‑dyngus’라는 전통이 펼쳐집니다.
 대본[3]: 이 날 사람들은 서로에게 물을 뿌리며 기독교가 전해진 것을 기념합니다.
