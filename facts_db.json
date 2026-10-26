@@ -24694,7 +24694,7 @@
       }
     ],
     "image_queries": [
-      "pope car",
+      "pope mobile",
       "popemobile open view design",
       "historic papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24710,7 +24710,7 @@
     "cross_notes": [],
     "cross_verdict": "ok",
     "image_queries_done": [
-      "pope car",
+      "pope mobile",
       "popemobile open view design",
       "historic papal portable throne",
       "bulletproof glass popemobile 1981",
@@ -24723,11 +24723,11 @@
       {
         "scene": 1,
         "source": "commons",
-        "user": "Dominic Alves",
-        "license": "CC BY 2.0",
-        "title": "Pope-Toledo, JBG 632, London to Brighton Veteran Car Run 2011, 1904 Rear-Entrance-Tonneau ",
-        "page": "https://commons.wikimedia.org/wiki/File:Pope-Toledo,_JBG_632,_London_to_Brighton_Veteran_Car_Run_2011,_1904_Rear-Entrance-Tonneau_(2996604123).jpg",
-        "id": "c:36933462"
+        "user": "Jebulon",
+        "license": "CC0",
+        "title": "Sedia gestatoria pope Pius VII.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sedia_gestatoria_pope_Pius_VII.jpg",
+        "id": "c:14684286"
       },
       {
         "scene": 2,
@@ -24797,12 +24797,12 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2402,
+        "clip": 0.2588,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "208ec445d620",
-        "at": "2026-10-26 20:19",
+        "sig": "e97a4d82bdb4",
+        "at": "2026-10-26 20:20",
         "scene": 1,
         "rejected_ids": [
           1599527,
