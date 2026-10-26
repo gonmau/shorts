@@ -296,6 +296,13 @@ def validate_narration(text):
 
     length = len(normalize_text(text))
 
+    try:   # '~한다.' 체가 많은 딱딱한 대본은 다시 쓰게 한다 (존댓말 구어체가 아님)
+        import ko_text as _kt
+        if _kt.plain_ratio(text) >= 0.4:
+            return False, "어투가 딱딱함 (~한다. 체)"
+    except Exception:
+        pass
+
     # 너무 긴 경우도 영상 길이가 늘어날 수 있으므로 재생성
     if length > TARGET_MAX_CHARS:
         return False, f"너무 김 ({length}자)"

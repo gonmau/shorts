@@ -48,6 +48,8 @@ def _detect_en(base):
     return has_en and not has_ko
 
 IS_EN = _detect_en(BASE)
+import ko_text as KT  # noqa: E402
+DISP = (lambda x: str(x or "").strip()) if IS_EN else KT.disp_country   # 한국어 채널: 나라 이름을 한국어 표기로 통일 (음성이 영어/한국어로 섞이지 않게)
 
 
 # ---------------------------------------------------------------- 선택
@@ -346,13 +348,13 @@ def make_title(db, members, theme, custom):
     if custom:
         return custom.strip()[:95]
     n = len(members)
-    first = str(db[members[0]].get("country", "")).strip()
+    first = DISP(db[members[0]].get("country", ""))
     if IS_EN:
         base = f"{n} {' & '.join(x.strip().title() for x in re.split(r'[,;/|]', theme) if x.strip()) + ' ' if theme else ''}Korean Culture Facts That Surprise Foreigners"
     elif theme:
         base = f"세계의 {' · '.join(x.strip() for x in re.split(r'[,;/|]', theme) if x.strip())} {n}가지 | {first} 외"
     else:
-        base = f"세계 문화 상식 {n}가지 | {first}부터 {str(db[members[-1]].get('country', '')).strip()}까지"
+        base = f"세계 문화 상식 {n}가지 | {first}부터 {DISP(db[members[-1]].get('country', ''))}까지"
     return base[:95]
 
 
@@ -364,7 +366,7 @@ def make_description(db, members, durations, intro_len, title, extra=None):
     for no, (idx, dur) in enumerate(zip(members, durations), start=1):
         it = db[idx]
         t1, t2 = (it.get("title_line1") or "", it.get("title_line2") or "")
-        name = f"{no}. {str(it.get('country', '')).strip()} - {(t1 + ' ' + t2).strip() or it.get('topic', '')}"
+        name = f"{no}. {DISP(it.get('country', ''))} - {(t1 + ' ' + t2).strip() or it.get('topic', '')}"
         chapters.append((fmt_time(t), name[:90]))
         t += dur
     for et, en_ in (extra or []):
@@ -452,7 +454,7 @@ def run_rich(args, db, lf_db, members):
     only = set(parse_indexes(args.only)) if args.only else set()
     clips_on = bool(args.clips or os.environ.get("LF_CLIPS", "0") == "1")
     # 1) 이미지 + 확장 대본 + 음성
-    recs, countries_all = {}, [str(db[i].get("country", "")).strip() for i in members]
+    recs, countries_all = {}, [DISP(db[i].get("country", "")) for i in members]
     for k, idx in enumerate(members):
         print(f"\n== {'대본 준비' if args.plan_only else '재료 준비'} {idx} {db[idx].get('country', '')} ({k + 1}/{len(members)})", flush=True)
         if not args.plan_only:
@@ -462,7 +464,7 @@ def run_rich(args, db, lf_db, members):
         item = db[idx]
         rec = None
         if client or (not args.no_expand and LS.get_rec(idx).get("narration")):
-            me = str(item.get("country", "")).strip()
+            me = DISP(item.get("country", ""))
             cands = (LS.EN_PARTNERS if IS_EN else [c for c in dict.fromkeys(countries_all) if c and c != me] + ([] if me == "한국" else ["한국"]))
             target = (not only) or (idx in only)
             try:
@@ -510,7 +512,7 @@ def run_rich(args, db, lf_db, members):
             print(f"  !! {idx}: 음성이 없어 롱폼에서 제외합니다", flush=True)
     members = [i for i in members if i in recs]
     if args.plan_only:
-        countries_ = [str(db[i].get("country", "")).strip() for i in members]
+        countries_ = [DISP(db[i].get("country", "")) for i in members]
         partners_ = [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members]
         old_plan = load_json(BASE / "longform_plan.json", {})
         plan = {"members": members, "mode": args.mode, "theme": args.theme, "title": args.title, "clips": clips_on,
@@ -528,7 +530,7 @@ def run_rich(args, db, lf_db, members):
     if len(members) < args.min:
         raise SystemExit(f"준비된 소재가 {len(members)}개뿐이라 롱폼을 만들 수 없습니다 (최소 {args.min}개).")
     total = len(members)
-    countries = [str(db[i].get("country", "")).strip() for i in members]
+    countries = [DISP(db[i].get("country", "")) for i in members]
 
     # 사진 점검: 빠진 사진이 있으면 (색 카드로 대신 들어가기 전에) 알리고, --require-images 면 멈춘다
     lack = []
@@ -537,6 +539,20 @@ def run_rich(args, db, lf_db, members):
         miss_ = [n_ + 1 for n_, p_ in enumerate(ps_) if not Path(p_).exists()]
         if miss_ or not ps_:
             lack.append((i, str(db[i].get("country", "")), miss_ or ["전부"], len(ps_)))
+    if lack and (args.fill_images or os.environ.get("LF_FILL_IMAGES", "0") == "1"):
+        # 빠진 사진을 먼저 받아 채운다 (GitHub Actions 는 PC의 사진이 없어서 꼭 필요). Pixabay/Commons, PIXABAY_API_KEY 필요
+        print(f"\n빠진 사진을 받는 중: {len(lack)}개 소재", flush=True)
+        for i, c_, m_, n_ in lack:
+            r_ = subprocess.run([sys.executable, str(BASE / "fetch_images.py"), "--index", str(i)], capture_output=True, text=True, encoding="utf-8", errors="replace")
+            last_ = ((r_.stdout + r_.stderr).strip().splitlines() or [""])[-1]
+            print(f"   {i} {c_}: {'받음' if r_.returncode == 0 else '실패'} {last_[:100]}", flush=True)
+        db = load_json(BASE / "facts_db.json", db)   # fetch_images 가 갱신한 이미지 경로 반영
+        lack = []
+        for i in members:
+            ps_ = B.get_visual_paths(i, db[i])
+            miss_ = [n_ + 1 for n_, p_ in enumerate(ps_) if not Path(p_).exists()]
+            if miss_ or not ps_:
+                lack.append((i, str(db[i].get("country", "")), miss_ or ["전부"], len(ps_)))
     if lack:
         print("\n⚠️ 사진이 빠진 소재:", flush=True)
         for i, c_, m_, n_ in lack:
@@ -665,6 +681,7 @@ def main():
     ap.add_argument("--instruction", default="", help="--only(없으면 전체) 소재 대본을 이 지시를 반영해 다시 씀 (예: 한국과 비교를 더 자세히)")
     ap.add_argument("--only", default="", help="--regen/--instruction 을 적용할 소재 번호 (비우면 전체)")
     ap.add_argument("--resync", action="store_true", help="--only 소재의 (고친) 나레이션은 두고 키워드/비교 카드/요약/영상 검색어만 그 글에 맞게 다시 만든다")
+    ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")

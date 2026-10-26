@@ -38,6 +38,14 @@ on:
         description: "목록만 보기 (영상 안 만듦)"
         type: boolean
         default: false
+      fill_images:
+        description: "빠진 사진은 Pixabay에서 받아 채우기 (GitHub에는 PC 사진이 없어서 켜 두는 것을 권장)"
+        type: boolean
+        default: true
+      clips:
+        description: "스톡 짧은 영상(Pixabay/Pexels)을 일부 장면에 사용 (시간·용량 늘어남)"
+        type: boolean
+        default: false
 
       voice:
         description: "목소리 (Supertonic: F1~F5 여성, M1~M5 남성 / 비우면 기본 F1)"
@@ -61,6 +69,8 @@ jobs:
     env:
       PYTHONUNBUFFERED: "1"
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}   # 롱폼 확장 대본/교차검증용
+      LF_FILL_IMAGES: ${{ github.event.inputs.fill_images == 'false' && '0' || '1' }}
+      LF_CLIPS: ${{ github.event.inputs.clips == 'true' && '1' || '0' }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}

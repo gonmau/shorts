@@ -32,6 +32,7 @@ def _detect_en(base):
     return has_en and not has_ko
 
 IS_EN = _detect_en(BASE)
+import ko_text as KT  # noqa: E402
 SCRIPTS = BASE / "longform_scripts.json"
 AUDIO_DIR = BASE / "audio"
 LEN_RANGE = (1400, 1900) if IS_EN else (650, 900)     # 확장 대본 글자 수(공백 포함). 한국어 약 100~130초 / 영어 약 100~130초
@@ -121,7 +122,7 @@ def __prompt_base(item, ev, next_info, candidates, instruction=""):
     lo, hi = LEN_RANGE
     ins = str(instruction or "").strip()
     extra = (f"- EDITOR'S EXTRA INSTRUCTION (follow it): {ins}\n" if IS_EN else f"- 편집자의 추가 지시 (반드시 반영): {ins}\n") if ins else ""
-    country = str(item.get("country", "")).strip()
+    country = (str(item.get("country", "")).strip() if IS_EN else KT.disp_country(item.get("country", "")))
     topic = str(item.get("topic") or item.get("title_line1") or "").strip()
     short = str(item.get("narration", "")).strip()
     evidence = "\n".join(ev)[:2400] if ev else "(none)"
@@ -170,9 +171,26 @@ Rules:
 {{"narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"compare":{{"title":"{country} vs 나라","left":"{country}","right":"나라","rows":[{{"label":"...","left":"...","right":"..."}}]}},"recap":"...","broll":["...","...","..."]}}"""
 
 
+def soften(client, models, narr):
+    """'~한다.' 체가 섞인 딱딱한 대본을, 사실·문장 수·순서는 그대로 두고 존댓말 구어체로 고친다 (실패하면 원본)"""
+    n = len(split_sentences(narr))
+    prompt = (f"다음 한국어 유튜브 내레이션을 자연스러운 존댓말 구어체('~합니다', '~해요', '~죠')로 고쳐 쓰세요. "
+              f"문장 수({n}개)와 문장 순서, 사실·숫자·고유명사는 그대로 두고 말투만 바꿉니다. 한 문장은 45자 이내. 순수 JSON만 출력: {{\"narration\":\"...\"}}\n\n{narr}")
+    try:
+        d, _ = _chat(client, models, "You rewrite Korean voice-over scripts into a polite conversational tone. Output JSON only.", prompt)
+        new = clean((d or {}).get("narration"))
+        if new and len(split_sentences(new)) == n and KT.plain_ratio(new) < KT.plain_ratio(narr):
+            return new
+    except Exception:
+        pass
+    return narr
+
+
 def _normalize(d, n_sent_min=6):
     """AI 응답 -> 안전한 형태로 정리 (실패하면 None)"""
     narr = clean(d.get("narration"))
+    if not IS_EN:
+        narr = clean(KT.strip_latin_parens(narr))   # '(Diablada)' 같은 영어 괄호는 음성이 영어로 읽어 어색함
     sents = split_sentences(narr)
     if len(sents) < n_sent_min:
         return None
@@ -349,7 +367,9 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
                 print(f"    [확장대본] {idx}: 화면 요소 재생성 실패 - 기존 값을 유지합니다", flush=True)
     elif rec.get("narration") and rec.get("locked") and not regen:
         print(f"    [확장대본] {idx}: 편집/잠금된 대본 사용 ({rec.get('edited', '')})", flush=True)
-    elif regen or rec.get("sig") != sig or not rec.get("narration"):
+    elif regen or rec.get("sig") != sig or not rec.get("narration") or (not IS_EN and KT.is_stiff(rec.get("narration", ""))):
+        if not regen and rec.get("sig") == sig and rec.get("narration"):
+            print(f"    [확장대본] {idx}: 저장된 대본이 '~한다.' 체로 딱딱해 존댓말로 다시 씁니다", flush=True)
         if client is None:
             return None
         topic = f"{item.get('country', '')} {item.get('topic', '')}".strip()
@@ -365,6 +385,9 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
             print(f"    [확장대본] {idx} 분량/형식이 맞지 않아 다시 시도 ({attempt + 1}/2)", flush=True)
         if not res:
             return rec if rec.get("narration") and not force else None
+        if not IS_EN and KT.is_stiff(res["narration"]):
+            res["narration"] = soften(client, models, res["narration"])
+            print(f"    [확장대본] {idx}: 어투가 딱딱해 존댓말 구어체로 고침", flush=True)
         res = verify(client, models, item, ev, res)
         keep = {k: rec[k] for k in KEEP_FIELDS if k in rec}
         rec = {**keep, **res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M")}

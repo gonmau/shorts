@@ -30,6 +30,8 @@ def _detect_en(base):
     return has_en and not has_ko
 
 IS_EN = _detect_en(Path(__file__).resolve().parent)
+import ko_text as KT  # noqa: E402
+_dc = (lambda x: str(x or "")) if IS_EN else KT.disp_country   # 화면에 보이는 나라 이름은 한국어 표기로
 CAP_IMG_H = 190
 CAP_W = 1560
 L = {  # 화면 글자
@@ -342,7 +344,7 @@ def make_hud(no, total, country, channel, handle, av_path, credit):
     d.ellipse((56, 44, 56 + 104, 44 + 104), fill=PURPLE)
     text_c(d, 56 + 52, 62, f"{no}", nf, "white")
     d.text((184, 54), f"/ {total}", font=sf, fill=(235, 235, 245), stroke_width=2, stroke_fill=(0, 0, 0))
-    d.text((184, 94), str(country)[:24], font=cf, fill="white", stroke_width=3, stroke_fill=(0, 0, 0))
+    d.text((184, 94), _dc(country)[:24], font=cf, fill="white", stroke_width=3, stroke_fill=(0, 0, 0))
     # 오른쪽 위: 채널 (이름 / 주소 / 이미지를 각각 켜고 끄고, 문구도 바꿀 수 있음 - UI '채널 표시')
     if BRAND.get("hud", True):
         show_av = BRAND.get("hud_avatar", True)
@@ -539,7 +541,7 @@ def chapter_card(no, total, country, title1, title2, bg_img, out_path, seconds=2
     d.ellipse((cx - 110, 150, cx + 110, 370), fill=PURPLE)
     text_c(d, cx, 188, f"{no}", font(150), "white")
     text_c(d, cx, 410, f"{no} / {total}", font(46, False), (235, 235, 245))
-    f, ls = fit_lines(d, str(country), 1500, 150, 80, 1)
+    f, ls = fit_lines(d, _dc(country), 1500, 150, 80, 1)
     text_c(d, cx, 480, ls[0], f, "white", 4)
     y = 480 + f.getmetrics()[0] + f.getmetrics()[1] + 24
     for t, col in ((title1, (235, 235, 245)), (title2, YELLOW)):
@@ -617,7 +619,7 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
         rrect(layer, (x0, y0, x0 + colw, y0 + lh - 14), 24, (10, 10, 18, 215))
         d.ellipse((x0 + 14, y0 + (lh - 14) // 2 - 32, x0 + 78, y0 + (lh - 14) // 2 + 32), fill=PURPLE)
         text_c(d, x0 + 46, y0 + (lh - 14) // 2 - 24, str(no), font(44), "white")
-        f, ls = fit_lines(d, f"{country}  ·  {line}", colw - 130, 44, 26, 2, bold=False)
+        f, ls = fit_lines(d, f"{_dc(country)}  ·  {line}", colw - 130, 44, 26, 2, bold=False)
         asc, desc = f.getmetrics()
         yy = y0 + (lh - 14 - (asc + desc) * len(ls)) // 2
         for x in ls:

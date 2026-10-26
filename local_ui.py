@@ -554,6 +554,7 @@ FEATURES = [
     ("2 대본", "대본 만들기 (+목표 길이·장면 수)", "2 대본 › 대본 만들기", "목표 길이(초)·장면(이미지) 수 설정 후 대본/제목/이미지 검색어 생성", ""),
     ("2 대본", "대본 교차검증", "2 대본 › 대본 만들기의 🔍 체크", "위키 근거로 문장 검증. 모순은 폐기 전에 먼저 고쳐 씀, 근거 없음만으로는 폐기 안 함", "🆕"),
     ("2 대본", "내 스타일 · 성향 반영", "2 대본 › 대본 만들기의 🎯 내 스타일", "밀도·구체성·결말·과장 같은 내 기준과 선호 소재 분야를 저장하면 쇼츠/롱폼 대본과 새 소재 생성에 반영 (GitHub Actions에도 동기화)", "🆕"),
+    ("2 대본", "어투 점검 (딱딱한 대본 존댓말로)", "2 대본 › 대본 보기·수정의 🗣 어투 점검", "'~한다.' 체로 나온 대본을 찾아 사실은 그대로 두고 존댓말 구어체로 고침 (한국어 채널)", "🆕"),
     ("2 대본", "대본 보기 · 수정 · 일괄 수정", "2 대본 › 대본 보기·수정", "소재별 대본 읽고 고치기, 여러 개 한 번에 수정", ""),
     ("2 대본", "제목 · 핵심 문구 · 이미지 검색어 · 제외", "2 대본 › review.txt", "review.txt를 보고 고침 (제외: 뒤에 사유를 쓰면 건너뜀)", ""),
     ("3 이미지", "이미지 받기", "3 이미지 › 이미지 받기", "검색어 생성 + 장면 이미지 다운로드", ""),
@@ -904,6 +905,25 @@ with T2c:
 
 
 with T2b:
+    if not EN:
+        with st.expander("🗣 어투 점검 (딱딱한 '~한다.' 체 대본 찾기·고치기)", expanded=False):
+            import ko_text as _KT
+            _dbt = _ld()
+            _st = [(i_, _KT.plain_ratio(f_.get("narration", ""))) for i_, f_ in enumerate(_dbt)
+                   if i_ >= int(start) and f_.get("status") != "rejected" and str(f_.get("narration", "")).strip() and _KT.plain_ratio(f_.get("narration", "")) >= 0.3]
+            st.caption("대본은 '~합니다/~해요' 존댓말 구어체여야 하는데, '~한다.' 체로 나온 소재를 찾습니다 (start_index 이상). 고치면 사실·문장 수·순서는 그대로 두고 말투만 바꾸며, 그 소재의 음성은 지워지니 음성부터 다시 만드세요. 새로 만드는 대본은 딱딱하면 자동으로 다시 쓰게 해 두었습니다.")
+            if not _st:
+                st.success("딱딱한 어투의 대본이 없습니다.")
+            else:
+                st.dataframe([{"번호": i_, "나라": _dbt[i_].get("country", ""), "주제": _dbt[i_].get("topic", ""), "딱딱한 문장 비율": f"{r_:.0%}",
+                               "대본 앞부분": str(_dbt[i_].get("narration", ""))[:50]} for i_, r_ in _st], use_container_width=True, hide_index=True)
+                _pick_t = st.multiselect("고칠 소재", [i_ for i_, _ in _st], default=[i_ for i_, _ in _st][:10], key="tone_pick",
+                                         format_func=lambda i_: f"{i_} {_dbt[i_].get('country', '')} - {str(_dbt[i_].get('topic', ''))[:20]}")
+                _t1, _t2 = st.columns(2)
+                if _t1.button("미리보기 (저장 안 함)", key="tone_dry", disabled=not _pick_t):
+                    run("fix_tone.py", "--indexes", ",".join(map(str, _pick_t)), "--dry-run")
+                if _t2.button("존댓말로 고치기 (Groq)", key="tone_go", type="primary", disabled=not _pick_t):
+                    run("fix_tone.py", "--indexes", ",".join(map(str, _pick_t)))
     from common import load_db as _ldb, split_sentences as _ss
     ids_rev = review_indexes()
     db_s = _ldb()
@@ -1545,8 +1565,10 @@ with TL:
         if st.button("💾 채널 표시 저장", key="br_save", type="primary"):
             json.dump(_B, open(_bf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
             st.success("저장했습니다. 다음 롱폼부터 적용됩니다. (GitHub Actions에서도 쓰려면 동기화 탭에서 올리세요)")
+    lf_fill = st.checkbox("🖼 빠진 사진은 합성 전에 자동으로 받아 채우기 (Pixabay/Commons)", True, key="lf_fill",
+                          help="사진이 비어 있으면 색 카드로 대신 들어가므로, 먼저 받아서 채웁니다. PIXABAY_API_KEY 필요. 끄면 빠진 채로(또는 아래 설정에 따라 멈춤)")
     common_args = ["--channel", CH, "--handle", HD, "--style", "classic" if lf_style.startswith("classic") else "rich"] \
-        + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else [])
+        + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else []) + (["--fill-images"] if lf_fill else [])
     base_args = ["build_longform.py"] + sel_args + common_args + (["--regen"] if lf_regen else [])
 
     def _lf_plan():
