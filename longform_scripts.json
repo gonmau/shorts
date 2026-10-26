@@ -2130,5 +2130,981 @@
   "audio": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland.mp3",
   "timing": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland_timing.json",
   "tts_hash": "18106cf49fb4"
+ },
+ "106": {
+  "narration": "터키의 에게 해 연안 셀축, 겨울이면 거대한 낙타가 몸싸움을 벌입니다. 매년 1월 셋째 주말, 마을 사람들은 광장을 가득 메우고 축제를 기다립니다. 경기 시작이면 낙타는 목과 몸을 힘껏 밀어 상대를 넘어뜨리려 합니다. 승자는 상대를 바닥에 눕히거나 도망가게 만든 낙타입니다. 관중들은 함성을 지르며 승부를 응원하고, 승리한 낙타는 특별한 장식과 함께 마을을 돌아다닙니다. 이 축제는 단순한 구경거리가 아니라 지역 경제에도 큰 영향을 미칩니다. 관광객이 늘어나 숙박업과 식당 매출이 급증하기 때문입니다. 그러나 동물 복지 논란도 함께합니다. 일부 단체는 끈이 낙타에게 스트레스를 줄 수 있다며 비판합니다. 그래서 최근엔 끈 대신 부드러운 마구리를 사용하는 시도가 늘고 있습니다. 전통을 보존하면서도 동물 보호를 고민하는 모습이 인상적입니다. 셀축의 낙타 레슬링은 역사와 문화, 현대적 논의가 얽힌 복합적인 행사라 할 수 있습니다. 다음 이야기는 이탈리아의 여름 축제로 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "터키의 에게 해 연안 셀축"
+   },
+   {
+    "sentence": 2,
+    "text": "1월 셋째 주말"
+   },
+   {
+    "sentence": 3,
+    "text": "입에 끈을 넣어"
+   },
+   {
+    "sentence": 6,
+    "text": "관중들은 함성"
+   },
+   {
+    "sentence": 11,
+    "text": "동물 복지 논란"
+   }
+  ],
+  "compare": {
+   "title": "터키 vs 몽골",
+   "left": "터키",
+   "right": "몽골",
+   "rows": [
+    {
+     "label": "축제 종류",
+     "left": "낙타 레슬링",
+     "right": "말 씨름"
+    },
+    {
+     "label": "주요 동물",
+     "left": "낙타",
+     "right": "말"
+    },
+    {
+     "label": "논란 정도",
+     "left": "동물 복지 우려",
+     "right": "전통 보존 논쟁"
+    }
+   ]
+  },
+  "recap": "셀축 낙타 레슬링, 전통과 현대의 교차점",
+  "broll": [
+   "turkey camel wrestling",
+   "winter festival crowd",
+   "traditional market stalls"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 7,
+   "notes": [
+    "[unsupported] 2번 문장: Specific timing (third weekend of January) and crowd details lack verifiable sources.",
+    "[contradicted] 3번 문장: Traditional practice uses a rope around the camel's neck, not placed in its mouth.",
+    "[unsupported] 7번 문장: No specific evidence provided for economic impact magnitude.",
+    "[unsupported] 8번 문장: Claim of tourism boosting lodging and restaurant sales is unverified.",
+    "[unsupported] 11번 문장: No documented shift to soft halters in recent years.",
+    "[unsupported] 15번 문장: Comparison list lacks verification; Mongolia is not known for horse wrestling.",
+    "[unsupported] 16번 문장: Same as above; animal focus for Mongolia is questionable.",
+    "[unsupported] 17번 문장: Degree of controversy for Mongolia not substantiated."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "451de46ae04f",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:54",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0106_터키.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0106_터키_timing.json",
+  "tts_hash": "6d727b1107e9",
+  "clips": [
+   {
+    "query": "turkey camel wrestling",
+    "path": "/home/runner/work/shorts/shorts/clips/0106_터키/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Eaktas06",
+    "page": "https://pixabay.com/videos/id-112040/",
+    "id": "pixabay112040",
+    "check": "unknown"
+   },
+   {
+    "query": "winter festival crowd",
+    "path": "/home/runner/work/shorts/shorts/clips/0106_터키/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1630/",
+    "id": "pixabay1630",
+    "check": "unknown"
+   },
+   {
+    "query": "traditional market stalls",
+    "path": "/home/runner/work/shorts/shorts/clips/0106_터키/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Close-UpStock",
+    "page": "https://pixabay.com/videos/id-57770/",
+    "id": "pixabay57770",
+    "check": "unknown"
+   }
+  ]
+ },
+ "108": {
+  "narration": "이탈리아 사르디니아에서 살아있는 유충이 들어간 치즈가 만든다는 사실, 알고 계셨나요? 사르디니아 전통 치즈인 카수 마르주는 양젖으로 만든 페코리노에 치즈파리 알을 넣어 숙성합니다. 알이 부화하면 유충이 치즈 지방을 분해해 부드러운 질감과 강렬한 풍미를 만들어냅니다. 유충이 활발할수록 치즈는 점점 물처럼 흐르는 ‘라그리마’가 생기고, 향은 더욱 강해집니다. 현지 주민들은 이를 가족 행사나 마을 축제에서 직접 만들고, 먹는 것을 자랑스러운 미식 문화로 여기며 전통을 이어갑니다. 그러나 유충이 살아있는 식품은 위생 위험이 있어 이탈리아와 EU 전체에서 상업적 판매가 금지돼 있습니다. 금지에도 불구하고 사르디니아의 작은 마을에서는 아직도 비밀스럽게 만들고, 손님에게만 제공한다는 이야기가 전해집니다. 이처럼 카수 마르주는 규제와 전통 사이에서 살아가는 독특한 식문화이며, 그 맛을 직접 체험할 용기가 있는 사람은 드물지만 여전히 존재합니다. 다음에는 동남아시아의 전통 발효 음식, 캄보디아 이야기를 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "카수 마르주"
+   },
+   {
+    "sentence": 2,
+    "text": "양젖 페코리노"
+   },
+   {
+    "sentence": 3,
+    "text": "치즈파리 유충"
+   },
+   {
+    "sentence": 4,
+    "text": "라그리마"
+   },
+   {
+    "sentence": 5,
+    "text": "전통 미식"
+   }
+  ],
+  "compare": {
+   "title": "이탈리아 vs 캄보디아",
+   "left": "이탈리아",
+   "right": "캄보디아",
+   "rows": [
+    {
+     "label": "전통 식품",
+     "left": "카수 마르주",
+     "right": "프놈펜 발효 생선"
+    },
+    {
+     "label": "규제 수준",
+     "left": "엄격 금지",
+     "right": "느슨 제한"
+    },
+    {
+     "label": "주요 재료",
+     "left": "양젖·유충",
+     "right": "생선·소금"
+    }
+   ]
+  },
+  "recap": "사르디니아의 살아있는 유충 치즈, 전통과 규제 사이의 이야기",
+  "broll": [
+   "Sardinia cheese making",
+   "fly larvae on cheese",
+   "traditional Sardinian village festival"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 3,
+   "notes": [
+    "[unsupported] 5번 문장: No evidence provided that locals regularly make it at family events or festivals",
+    "[unsupported] 7번 문장: Anecdotal claim of secret production in villages lacks verification",
+    "[unsupported] 11번 문장: Cambodian regulatory stance on fermented fish not documented in evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "1b5b6f9f16aa",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:55",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0108_Italy.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0108_Italy_timing.json",
+  "tts_hash": "fa80e57b63a6",
+  "clips": [
+   {
+    "query": "Sardinia cheese making",
+    "path": "/home/runner/work/shorts/shorts/clips/0108_Italy/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-139/",
+    "id": "pixabay139",
+    "check": "unknown"
+   },
+   {
+    "query": "fly larvae on cheese",
+    "path": "/home/runner/work/shorts/shorts/clips/0108_Italy/clip_02.mp4",
+    "source": "pixabay",
+    "user": "RaimundoMaciel",
+    "page": "https://pixabay.com/videos/id-273484/",
+    "id": "pixabay273484",
+    "check": "unknown"
+   },
+   {
+    "query": "traditional Sardinian village festival",
+    "path": "/home/runner/work/shorts/shorts/clips/0108_Italy/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Kanenori",
+    "page": "https://pixabay.com/videos/id-327388/",
+    "id": "pixabay327388",
+    "check": "unknown"
+   }
+  ]
+ },
+ "110": {
+  "narration": "베탄방의 낡은 철로 위를 달리던 ‘노리’를 보셨나요? 대나무와 목재, 작은 모터만으로 만든 이 임시 열차는 철도가 크게 파손된 뒤 사람과 화물을 옮기기 위해 탄생했습니다. 차체는 대나무 판자로 만든 낮은 플랫폼에 바퀴가 달려 있어, 승객은 바람을 맞으며 좌석에 앉아 이동합니다. 노리가 마주칠 때는 승객이 적은 쪽이 차를 레일에서 내려 상대를 먼저 지나가게 합니다. 이 독특한 규칙은 충돌을 피하고 시간 낭비를 최소화하려는 실용적 선택이었습니다. 오늘날 노리는 현지 주민과 관광객에게 잊을 수 없는 체험을 제공하며, 캄보디아의 창의적 교통 문화가 살아 숨 쉬는 살아있는 박물관이 되었습니다. 다음 이야기는 독일의 혁신적인 철도 시스템을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "베탄방의 낡은 철로"
+   },
+   {
+    "sentence": 2,
+    "text": "노리"
+   },
+   {
+    "sentence": 4,
+    "text": "승객이 적은 쪽"
+   },
+   {
+    "sentence": 6,
+    "text": "캄보디아의 창의적 교통"
+   }
+  ],
+  "compare": {
+   "title": "캄보디아 vs 독일",
+   "left": "캄보디아",
+   "right": "독일",
+   "rows": [
+    {
+     "label": "교통 방식",
+     "left": "대나무 임시 열차",
+     "right": "고속 전철"
+    },
+    {
+     "label": "운행 방식",
+     "left": "수동·협조",
+     "right": "자동·정시"
+    },
+    {
+     "label": "관광 역할",
+     "left": "주요 체험 요소",
+     "right": "주요 인프라"
+    }
+   ]
+  },
+  "recap": "대나무 노리는 캄보디아의 창의적 교통 유산입니다.",
+  "broll": [
+   "Cambodia bamboo train",
+   "rural railway crossing",
+   "tourists on bamboo platform"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[unsupported] 5번 문장: States a motive (practical choice) that cannot be verified",
+    "[contradicted] 6번 문장: Tourist line operates near Battambang, not Wat Banan; timeline is inaccurate"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "ef5793aa3eae",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:56",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0110_Cambodia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0110_Cambodia_timing.json",
+  "tts_hash": "814c28c97d01",
+  "clips": [
+   {
+    "query": "Cambodia bamboo train",
+    "path": "/home/runner/work/shorts/shorts/clips/0110_Cambodia/clip_01.mp4",
+    "source": "pixabay",
+    "user": "xat-ch",
+    "page": "https://pixabay.com/videos/id-183271/",
+    "id": "pixabay183271",
+    "check": "unknown"
+   },
+   {
+    "query": "rural railway crossing",
+    "path": "/home/runner/work/shorts/shorts/clips/0110_Cambodia/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Ian5152",
+    "page": "https://pixabay.com/videos/id-267248/",
+    "id": "pixabay267248",
+    "check": "unknown"
+   },
+   {
+    "query": "tourists on bamboo platform",
+    "path": "/home/runner/work/shorts/shorts/clips/0110_Cambodia/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1003/",
+    "id": "pixabay1003",
+    "check": "unknown"
+   }
+  ]
+ },
+ "111": {
+  "narration": "첫 등교 날, 아이가 받는 큰 원뿔을 보셨나요? 독일에서는 이를 ‘슐터테’라고 부릅니다. 사탕, 초콜릿, 장난감, 연필 등 다양한 선물이 가득 들어 있죠. 전통은 18세기 말~19세기 초 작센·튀링겐 지역에서 시작됐다고 전해집니다. 슐터테는 곧 독일 전역으로 퍼져 오늘날 거의 모든 초등학교에서 볼 수 있습니다. 아이는 첫 수업이 끝난 뒤에야 원뿔을 열어 볼 수 있어, 설렘을 오래 간직합니다. 과거에는 학교에 ‘슐터테 나무’가 있어, 이름이 적힌 원뿔을 찾아 가져가곤 했습니다. 이렇게 작은 의식이 아이에게 학교 생활을 달콤하게 시작하게 해 줍니다. 오늘날에도 부모와 조부모가 직접 골라 넣은 선물은 아이에게 큰 의미가 됩니다. 독일 외에도 오스트리아·스위스·벨기에 일부 지역에서도 비슷한 풍습이 있지만, 형태와 내용은 독일만큼 화려하지 않은 경우가 많습니다. 이런 전통은 교육에 대한 긍정적 기대와 공동체의 축복을 담고 있습니다. 다음 이야기는 마다가스카르의 독특한 문화로 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "첫 등교 날, 아이가 받는 큰"
+   },
+   {
+    "sentence": 2,
+    "text": "‘슐터테’"
+   },
+   {
+    "sentence": 3,
+    "text": "사탕, 초콜릿, 장난감, 연필"
+   },
+   {
+    "sentence": 4,
+    "text": "작센·튀링겐 지역"
+   }
+  ],
+  "compare": null,
+  "recap": "슐터테는 독일 아이들의 달콤한 첫 학교 의식입니다.",
+  "broll": [
+   "German school hallway",
+   "children opening school cones",
+   "historic German village market"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 3,
+   "unsupported": 0,
+   "notes": [
+    "[contradicted] 5번 문장: Schultüten were not originally seeds but sweets and gifts",
+    "[contradicted] 14번 문장: Italy does not have a comparable nationwide first‑day gift tradition",
+    "[contradicted] 15번 문장: Italian first‑day gifts are not standardized as bags or books",
+    "[contradicted] 16번 문장: The claim about Italian regional prevalence is inaccurate"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "c11e15d44dc3",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:57",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0111_Germany.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0111_Germany_timing.json",
+  "tts_hash": "3efc1d112ae9",
+  "clips": [
+   {
+    "query": "German school hallway",
+    "path": "/home/runner/work/shorts/shorts/clips/0111_Germany/clip_01.mp4",
+    "source": "pixabay",
+    "user": "brixiv",
+    "page": "https://pixabay.com/videos/id-251873/",
+    "id": "pixabay251873",
+    "check": "unknown"
+   },
+   {
+    "query": "children opening school cones",
+    "path": "/home/runner/work/shorts/shorts/clips/0111_Germany/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Vacampbe",
+    "page": "https://pixabay.com/videos/id-215471/",
+    "id": "pixabay215471",
+    "check": "unknown"
+   },
+   {
+    "query": "historic German village market",
+    "path": "/home/runner/work/shorts/shorts/clips/0111_Germany/clip_03.mp4",
+    "source": "pixabay",
+    "user": "EM80",
+    "page": "https://pixabay.com/videos/id-31556/",
+    "id": "pixabay31556",
+    "check": "unknown"
+   }
+  ]
+ },
+ "112": {
+  "narration": "마다가스카르에서 조상을 다시 껍데기로 감싸는 의식, 파마디하나를 들어보셨나요? 이 전통은 주로 중앙 고원의 메리나 사회에서 행해집니다. ‘뼈를 돌린다’는 뜻의 파마디하나는 조상의 유해를 무덤에서 꺼내 새 천으로 다시 포장합니다. 가족과 친지는 새 천을 감싸며 조상의 삶을 기리는 노래와 춤을 추죠. 이때 사용되는 천은 화려한 무늬가 들어간 전통 직물로, 새롭게 감싸는 행위가 조상을 돌보고 가족 유대를 재확인한다는 상징을 담고 있습니다. 파마디하나는 일정한 주기가 정해져 있지는 않으며, 가족의 경제 상황이나 지역 전통에 따라 다르게 진행됩니다. 일부 공동체에서는 5~10년마다, 또 다른 곳에서는 한 세대가 지나면 다시 거행하기도 합니다. 의식이 진행되는 동안 마을 사람들은 모닥불 주변에 모여 전통 악기를 연주하고, 어린이들은 조상의 이야기를 배우며 춤을 배웁니다. 이때 흔히 보이는 장면은 가족이 손에 손을 잡고 천을 들어올리는 모습과, 흙먼지 속에서 울려 퍼지는 마다가스카르 특유의 리듬입니다. 파마디하나는 마다가스카르 전역에 퍼진 일반적인 장례 문화는 아니지만, 해당 지역에서는 조상 숭배와 공동체 결속을 나타내는 중요한 행사로 여겨집니다. 이와 같은 전통은 조상을 단순히 기억하는 것을 넘어, 살아있는 가족과 지속적인 관계를 맺는 방식이라고 할 수 있습니다. 다음 이야기는 부탄의 독특한 축제와 연결됩니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "파마디하나"
+   },
+   {
+    "sentence": 2,
+    "text": "메리나 사회"
+   },
+   {
+    "sentence": 4,
+    "text": "새 천"
+   },
+   {
+    "sentence": 7,
+    "text": "조상 숭배"
+   },
+   {
+    "sentence": 9,
+    "text": "전통 악기"
+   }
+  ],
+  "compare": {
+   "title": "마다가스카르 vs 부탄",
+   "left": "마다가스카르",
+   "right": "부탄",
+   "rows": [
+    {
+     "label": "의식 형태",
+     "left": "조상 재포장",
+     "right": "연기 의식"
+    },
+    {
+     "label": "주기성",
+     "left": "가변적",
+     "right": "정기적"
+    },
+    {
+     "label": "사회 역할",
+     "left": "가족 결속",
+     "right": "국가 정체성"
+    }
+   ]
+  },
+  "recap": "파마디하나는 조상과 가족을 잇는 살아있는 전통입니다.",
+  "broll": [
+   "traditional Malagasy ceremony",
+   "family wrapping cloth",
+   "village dance celebration"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 3,
+   "notes": [
+    "[unsupported] 13번 문장: Comparative claim about Bhutan's 'smoke ceremony' lacks verification",
+    "[unsupported] 14번 문장: Statement about Bhutan's regularity not substantiated",
+    "[unsupported] 15번 문장: Social role comparison for Bhutan is not verified"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "33c5a6b36470",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:58",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0112_Madagascar.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0112_Madagascar_timing.json",
+  "tts_hash": "f44221e11dcd",
+  "clips": [
+   {
+    "query": "traditional Malagasy ceremony",
+    "path": "/home/runner/work/shorts/shorts/clips/0112_Madagascar/clip_01.mp4",
+    "source": "pixabay",
+    "user": "padrinan",
+    "page": "https://pixabay.com/videos/id-38137/",
+    "id": "pixabay38137",
+    "check": "unknown"
+   },
+   {
+    "query": "family wrapping cloth",
+    "path": "/home/runner/work/shorts/shorts/clips/0112_Madagascar/clip_02.mp4",
+    "source": "pixabay",
+    "user": "NickyPe",
+    "page": "https://pixabay.com/videos/id-216696/",
+    "id": "pixabay216696",
+    "check": "unknown"
+   },
+   {
+    "query": "village dance celebration",
+    "path": "/home/runner/work/shorts/shorts/clips/0112_Madagascar/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Stuck1",
+    "page": "https://pixabay.com/videos/id-32938/",
+    "id": "pixabay32938",
+    "check": "unknown"
+   }
+  ]
+ },
+ "113": {
+  "narration": "부탄에서는 학교와 관공서에 전통 복장을 입는 모습을 쉽게 볼 수 있습니다. 남성은 무릎까지 오는 ‘고’를 허리띠 ‘케라’로 매고, 여성은 몸에 두른 긴 천 ‘키라’를 고정합니다. 고의 허리 부분은 주머니처럼 활용돼 작은 소지품을 넣을 수 있어 실용적입니다. 키라는 색과 무늬가 다양해 개인의 신분이나 지역을 나타내는 역할도 합니다. 외국인 관광객은 일상에서는 자유롭지만, 사원이나 정부 건물 등 공식 장소에서는 단정한 복장을 요구받습니다. 이러한 복장은 부탄의 문화 정체성을 시각적으로 보여주는 중요한 상징이며, 현대화와 외부 영향 속에서도 강하게 유지되고 있습니다. 다음 이야기는 몽골의 전통 의복으로 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "전통 복장"
+   },
+   {
+    "sentence": 2,
+    "text": "고와 케라"
+   },
+   {
+    "sentence": 3,
+    "text": "주머니 역할"
+   },
+   {
+    "sentence": 4,
+    "text": "키라 무늬"
+   }
+  ],
+  "compare": {
+   "title": "부탄 vs 몽골",
+   "left": "부탄",
+   "right": "몽골",
+   "rows": [
+    {
+     "label": "복장 의무",
+     "left": "공식 장소 필수",
+     "right": "주로 축제 선택"
+    },
+    {
+     "label": "주요 소재",
+     "left": "면·실크·양모",
+     "right": "양모·가죽"
+    },
+    {
+     "label": "색상 규정",
+     "left": "전통 색상 강조",
+     "right": "다채로운 자유"
+    }
+   ]
+  },
+  "recap": "공식 현장에서 고와 키라를 입는 것이 부탄의 일상입니다.",
+  "broll": [
+   "traditional Bhutanese school uniform",
+   "Bhutanese men tying kera belt",
+   "women wearing colorful kira dress"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 1,
+   "notes": [
+    "[contradicted] 3번 문장: The dress code (Driglam Namzha) was codified earlier; 1989 date is inaccurate.",
+    "[unsupported] 4번 문장: No reliable source confirms the gho waist is used as a pocket."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "941e7805e897",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 02:59",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0113_Bhutan.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0113_Bhutan_timing.json",
+  "tts_hash": "b79279569d88",
+  "clips": [
+   {
+    "query": "traditional Bhutanese school uniform",
+    "path": "/home/runner/work/shorts/shorts/clips/0113_Bhutan/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Joko_Narimo",
+    "page": "https://pixabay.com/videos/id-146052/",
+    "id": "pixabay146052",
+    "check": "unknown"
+   },
+   {
+    "query": "Bhutanese men tying kera belt",
+    "path": "/home/runner/work/shorts/shorts/clips/0113_Bhutan/clip_02.mp4",
+    "source": "pixabay",
+    "user": "socialsudo",
+    "page": "https://pixabay.com/videos/id-27539/",
+    "id": "pixabay27539",
+    "check": "unknown"
+   },
+   {
+    "query": "women wearing colorful kira dress",
+    "path": "/home/runner/work/shorts/shorts/clips/0113_Bhutan/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1006/",
+    "id": "pixabay1006",
+    "check": "unknown"
+   }
+  ]
+ },
+ "114": {
+  "narration": "계절이 바뀌면 몽골 유목민은 또 한 번의 대이동을 준비합니다. 가족은 가축이 찾는 초원을 따라 게르를 해체하고, 이웃이나 친척에게 작별 인사를 건넵니다. 새 터전에서는 가장 연장자인 가족장이 햇빛이 가장 먼저 닿는 남쪽을 기준으로 게르의 중심을 잡습니다. 목재 격자와 말린 양털 천으로 만든 벽은 바람에 맞춰 쉽게 분해되고, 지붕틀 위에 펠트를 씌우면 비를 막을 수 있습니다. 전통적으로 벽을 왼쪽에서 오른쪽으로, 그 다음에 지붕을 같은 순서로 올리는 이유는 태양의 이동을 따라 집 안을 따뜻하게 유지하려는 지혜에서 온 것입니다. 이 과정에서 이웃은 나무를 옮겨 주고, 무거운 프레임을 들어 주며 힘을 보태고, 작업이 끝난 뒤에는 차와 고기, 전통 차를 나누는 환대를 합니다. 이런 공동 작업은 개인이 혼자 감당하기 어려운 무게와 시간을 줄여 주고, 공동체 결속을 강화합니다. 이제 우리는 다음 이야기, 태국의 전통 시장 풍경으로 넘어갑니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "계절이 바뀌면 몽골 유목민은 "
+   },
+   {
+    "sentence": 3,
+    "text": "새 터전에서는 가장 연장자인 "
+   },
+   {
+    "sentence": 6,
+    "text": "전통적으로 벽을 왼쪽에서 오른"
+   },
+   {
+    "sentence": 8,
+    "text": "작업이 끝난 뒤에는 차와 고기"
+   }
+  ],
+  "compare": {
+   "title": "몽골 vs 태국",
+   "left": "몽골",
+   "right": "태국",
+   "rows": [
+    {
+     "label": "주거 형태",
+     "left": "이동식 게르",
+     "right": "고정식 목조 주택"
+    },
+    {
+     "label": "이웃 참여",
+     "left": "이동·설치 공동 작업",
+     "right": "주로 개인·가족 중심"
+    },
+    {
+     "label": "환대 문화",
+     "left": "이동 후 차·음식 공유",
+     "right": "시장·축제에서 음식 나눔"
+    }
+   ]
+  },
+  "recap": "게르 이동은 이웃과 함께하는 공동체 의식입니다.",
+  "broll": [
+   "Mongolian ger relocation",
+   "Nomadic families helping each other",
+   "Traditional Mongolian hospitality"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 2,
+   "notes": [
+    "[unsupported] 5번 문장: No reliable source confirms the specific building order is to follow the sun for warmth.",
+    "[contradicted] 8번 문장: Other nomadic cultures (e.g., Kazakh, Kyrgyz) also fully disassemble yurts and involve neighbors, so the claim of uniqueness is false.",
+    "[unsupported] 12번 문장: Specific comparison of hospitality practices lacks verifiable evidence."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "6fb2873a47b2",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 03:00",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0114_Mongolia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0114_Mongolia_timing.json",
+  "tts_hash": "f8e465556dea",
+  "clips": [
+   {
+    "query": "Mongolian ger relocation",
+    "path": "/home/runner/work/shorts/shorts/clips/0114_Mongolia/clip_01.mp4",
+    "source": "pixabay",
+    "user": "XiaosKitchen",
+    "page": "https://pixabay.com/videos/id-11623/",
+    "id": "pixabay11623",
+    "check": "unknown"
+   },
+   {
+    "query": "Nomadic families helping each other",
+    "path": "/home/runner/work/shorts/shorts/clips/0114_Mongolia/clip_02.mp4",
+    "source": "pixabay",
+    "user": "AnniesPlanet",
+    "page": "https://pixabay.com/videos/id-40347/",
+    "id": "pixabay40347",
+    "check": "unknown"
+   },
+   {
+    "query": "Traditional Mongolian hospitality",
+    "path": "/home/runner/work/shorts/shorts/clips/0114_Mongolia/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Kanenori",
+    "page": "https://pixabay.com/videos/id-327388/",
+    "id": "pixabay327388",
+    "check": "unknown"
+   }
+  ]
+ },
+ "115": {
+  "narration": "로프부리에서 매년 열리는 원숭이 뷔페 축제, 과일이 넘쳐흘러 원숭이들이 식탁을 가득 채우는 모습이 인상적이죠? 이 축제는 11월 마지막 일요일에 개최됩니다. 프라 프랑 삼욧 사원 주변에 과일, 채소, 쌀, 전통 간식이 가득 차려집니다. 지역에 사는 마카크 원숭이 3,000마리 정도가 이 음식을 즐깁니다. 원숭이들이 자유롭게 음식을 먹는 모습은 관광객과 주민 모두가 함께 관람합니다. 축제는 원숭이가 관광객을 끌어온 데 대한 감사와 지역 홍보를 목적으로 시작되었습니다. 원숭이들이 음식을 훔쳐 가는 일도 있지만, 정부는 1,600마리의 원숭이를 포획해 중성화 캠페인을 진행했습니다. 로프부리는 역사적으로 중요한 지역으로, 고대 왕국 Lavo의 흔적이 남아 있습니다. 이곳의 문화는 왕권이 절대적이던 시절의 영향이 남아 있습니다. 원숭이 뷔페는 다른 나라의 축제와 달리 동물과 인간이 함께 식탁을 나누는 독특한 형태를 보여줍니다. 이처럼 동물과 인간이 공존하는 문화는 다른 지역에서는 드물게 볼 수 있습니다. 다음에는 멕시코의 전통 축제와 비교해 보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "원숭이 뷔페"
+   },
+   {
+    "sentence": 3,
+    "text": "프라 프랑 삼욧 사원"
+   },
+   {
+    "sentence": 5,
+    "text": "마카크 원숭이"
+   },
+   {
+    "sentence": 7,
+    "text": "중성화 캠페인"
+   },
+   {
+    "sentence": 9,
+    "text": "Lavo"
+   }
+  ],
+  "compare": {
+   "title": "태국 vs 멕시코",
+   "left": "태국",
+   "right": "멕시코",
+   "rows": [
+    {
+     "label": "축제 규모",
+     "left": "수 톤",
+     "right": "수천 명"
+    },
+    {
+     "label": "주요 동물",
+     "left": "원숭이",
+     "right": "돼지"
+    },
+    {
+     "label": "문화적 의미",
+     "left": "감사와 홍보",
+     "right": "신성함"
+    }
+   ]
+  },
+  "recap": "태국 로프부리의 원숭이 뷔페 축제는 동물과 인간이 함께 즐기는 독특한 문화다.",
+  "broll": [
+   "Lopburi temple courtyard",
+   "monkeys eating fruit",
+   "festival crowd"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 8,
+   "notes": [
+    "[unsupported] 2번 문장: Date of festival not confirmed in evidence",
+    "[unsupported] 3번 문장: Evidence mentions fruit/veg at temple but not rice or traditional snacks",
+    "[unsupported] 5번 문장: No evidence that both tourists and residents watch the feeding",
+    "[unsupported] 6번 문장: Purpose of festival not documented in provided evidence",
+    "[unsupported] 9번 문장: No evidence linking current culture to absolute monarchy",
+    "[unsupported] 13번 문장: No data on festival scale in tons or Mexican attendance",
+    "[unsupported] 14번 문장: No evidence provided for main animal in Mexican festival",
+    "[unsupported] 15번 문장: Cultural meanings not substantiated by evidence"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "c40078246055",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-26 03:01",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0115_Thailand.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0115_Thailand_timing.json",
+  "tts_hash": "0ffb5977a306",
+  "clips": [
+   {
+    "query": "Lopburi temple courtyard",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Kanenori",
+    "page": "https://pixabay.com/videos/id-214940/",
+    "id": "pixabay214940",
+    "check": "unknown"
+   },
+   {
+    "query": "monkeys eating fruit",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_02.mp4",
+    "source": "pixabay",
+    "user": "asifnaveed007",
+    "page": "https://pixabay.com/videos/id-153969/",
+    "id": "pixabay153969",
+    "check": "unknown"
+   },
+   {
+    "query": "festival crowd",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1630/",
+    "id": "pixabay1630",
+    "check": "unknown"
+   }
+  ]
+ },
+ "116": {
+  "narration": "12월 23일, 멕시코 오악사카의 소광장에서 거대한 무를 깎아 만든 예술 작품을 만나보셨나요? 이 행사는 ‘라 노체 데 로스 라바노스’, 즉 무의 밤이라고 불립니다. 스페인 식민지 시절 무가 도입된 뒤, 농부들이 크리스마스 시장에 눈길을 끌기 위해 무를 조각하기 시작했습니다. 1890년대 말, 시청이 공식 대회를 제정하면서 오늘의 형태가 갖춰졌습니다. 참가자들은 일반보다 크게 재배한 무를 사용하며, 무 하나가 3킬로그램을 넘기도 합니다. 작품 주제는 탄생 장면, 전설, 민속 춤, 옛 건축물 등 다양합니다. 무 외에도 옥수수 껍질과 말린 꽃을 활용해 같은 테마를 표현합니다. 조각은 하루만 전시되는데, 무가 금방 시들어 버리기 때문입니다. 그래서 관람객들은 긴 줄을 서서 짧은 시간에 감상합니다. 이 전통은 19세기 말 농산물 판촉 행사에서 시작됐지만, 지금은 오악사카를 대표하는 크리스마스 문화가 되었습니다. 사용되는 무는 식용이 아니라 조각용으로 특별히 재배된 것이며, 자연 재료라 보존이 어려워 그 일시적인 아름다움이 매력으로 작용합니다. 다음 이야기는 스페인의 독특한 축제로 이어집니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "라 노체 데 로스 라바노스"
+   },
+   {
+    "sentence": 2,
+    "text": "무의 밤"
+   },
+   {
+    "sentence": 4,
+    "text": "크리스마스 시장"
+   },
+   {
+    "sentence": 7,
+    "text": "3킬로그램"
+   },
+   {
+    "sentence": 10,
+    "text": "짧은 전시"
+   }
+  ],
+  "compare": {
+   "title": "멕시코 vs 스페인",
+   "left": "멕시코",
+   "right": "스페인",
+   "rows": [
+    {
+     "label": "축제 기간",
+     "left": "하루",
+     "right": "며칠"
+    },
+    {
+     "label": "주요 소재",
+     "left": "무와 옥수수 껍질",
+     "right": "꽃과 조명"
+    },
+    {
+     "label": "전시 지속",
+     "left": "몇 시간",
+     "right": "수 주"
+    }
+   ]
+  },
+  "recap": "오악사카 무의 밤은 일시적 예술과 전통이 만나는 순간입니다.",
+  "broll": [
+   "Oaxaca night market",
+   "radish carving competition",
+   "Christmas street festival"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 2,
+   "notes": [
+    "[unsupported] 5번 문장: no evidence of 3kg size",
+    "[unsupported] 6번 문장: themes not specified in evidence"
+   ],
+   "model": "openai/gpt-oss-20b"
+  },
+  "sig": "815243397b00",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 03:02",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0116_Mexico.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0116_Mexico_timing.json",
+  "tts_hash": "fdd50ddcd742",
+  "clips": [
+   {
+    "query": "Oaxaca night market",
+    "path": "/home/runner/work/shorts/shorts/clips/0116_Mexico/clip_01.mp4",
+    "source": "pixabay",
+    "user": "RafterJr72",
+    "page": "https://pixabay.com/videos/id-23258/",
+    "id": "pixabay23258",
+    "check": "unknown"
+   },
+   {
+    "query": "radish carving competition",
+    "path": "/home/runner/work/shorts/shorts/clips/0116_Mexico/clip_02.mp4",
+    "source": "pixabay",
+    "user": "xat-ch",
+    "page": "https://pixabay.com/videos/id-50109/",
+    "id": "pixabay50109",
+    "check": "unknown"
+   },
+   {
+    "query": "Christmas street festival",
+    "path": "/home/runner/work/shorts/shorts/clips/0116_Mexico/clip_03.mp4",
+    "source": "pixabay",
+    "user": "jeffjacobs1990",
+    "page": "https://pixabay.com/videos/id-56504/",
+    "id": "pixabay56504",
+    "check": "unknown"
+   }
+  ]
+ },
+ "117": {
+  "narration": "코르도바의 골목마다 숨겨진 비밀이 있다니, 놀라지 않으실까요? 5월 초, 이 도시의 주택가에는 수백 개의 마당이 꽃으로 물들기 시작합니다. 이 행사는 ‘파티오스 데 코르도바’라고 불리며, 1921년부터 매년 열려 왔습니다. 주민들은 오래된 건물의 전통적 정원 구조를 보존하면서, 화분, 분수, 전통 장식으로 마당을 꾸밉니다. 꽃과 식물의 다양성은 지역에서 자생하는 식물과 수입 식물의 조화로 이루어집니다. 관리 상태는 물 사용량을 최소화하고, 건축 보존을 위해 전문가의 검토를 받습니다. 이 모든 과정을 통해 마당은 방문객에게 무료로 공개됩니다. 심사는 꽃의 색상, 식물의 건강, 건축 보존, 물 활용, 이웃과의 협력 등을 기준으로 진행됩니다. 2012년, 이 축제는 유네스코 인류무형문화유산에 등재되었습니다. 매년 5월 초부터 약 2주간 이어지며, 2026년 행사는 4일부터 17일까지 열렸습니다. 이 축제는 도시의 역사와 현대가 만나 꽃이 피는 순간을 보여 줍니다. 다른 나라와 비교하면, 이처럼 개인 주택이 공개되는 문화는 드뭅니다. 코르도바의 5월은 스페인에서 가장 아름다운 축제 시즌 중 하나로 꼽힙니다. 이처럼 작은 마당이 모여 하나의 거대한 예술 작품이 되는 순간을 함께 느껴보세요.\\n",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "코르도바의 골목"
+   },
+   {
+    "sentence": 2,
+    "text": "5월 초 꽃"
+   },
+   {
+    "sentence": 3,
+    "text": "파티오스 데 코르도바"
+   },
+   {
+    "sentence": 4,
+    "text": "유네스코 인류무형문화유산"
+   },
+   {
+    "sentence": 5,
+    "text": "개인 마당 공개"
+   }
+  ],
+  "compare": {
+   "title": "스페인 vs 이탈리아",
+   "left": "스페인",
+   "right": "이탈리아",
+   "rows": [
+    {
+     "label": "축제 기간",
+     "left": "5월 초 2주",
+     "right": "7월 1주"
+    },
+    {
+     "label": "공개 여부",
+     "left": "개인 마당 공개",
+     "right": "공공장소 공개"
+    },
+    {
+     "label": "문화적 의미",
+     "left": "전통 보존+현대",
+     "right": "예술·음악 중심"
+    }
+   ]
+  },
+  "recap": "코르도바 마당이 꽃으로 피어나는 순간, 스페인의 전통과 현대가 만나는 축제",
+  "broll": [
+   "Córdoba courtyard flowers",
+   "Spanish May festival",
+   "Historic Andalusian streets"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 1,
+   "removed_rows": 0,
+   "unsupported": 9,
+   "notes": [
+    "[unsupported] 6번 문장: no evidence on water use minimization or expert review",
+    "[unsupported] 8번 문장: no evidence of judging criteria listed",
+    "[unsupported] 10번 문장: specific 2026 dates not provided in evidence",
+    "[contradicted] 11번 문장: Córdoba is capital of its province, not Andalusia",
+    "[unsupported] 12번 문장: no evidence for claim",
+    "[unsupported] 13번 문장: no evidence for rarity of private home opening",
+    "[unsupported] 14번 문장: subjective claim, no evidence",
+    "[unsupported] 16번 문장: no evidence for comparison"
+   ],
+   "model": "openai/gpt-oss-20b"
+  },
+  "sig": "713e0ccfb631",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-26 03:03",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0117_Spain.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0117_Spain_timing.json",
+  "tts_hash": "2ec058330f08",
+  "clips": [
+   {
+    "query": "Córdoba courtyard flowers",
+    "path": "/home/runner/work/shorts/shorts/clips/0117_Spain/clip_01.mp4",
+    "source": "pixabay",
+    "user": "adonyig",
+    "page": "https://pixabay.com/videos/id-16459/",
+    "id": "pixabay16459",
+    "check": "unknown"
+   },
+   {
+    "query": "Spanish May festival",
+    "path": "/home/runner/work/shorts/shorts/clips/0117_Spain/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1630/",
+    "id": "pixabay1630",
+    "check": "unknown"
+   },
+   {
+    "query": "Historic Andalusian streets",
+    "path": "/home/runner/work/shorts/shorts/clips/0117_Spain/clip_03.mp4",
+    "source": "pixabay",
+    "user": "AtKinani",
+    "page": "https://pixabay.com/videos/id-308886/",
+    "id": "pixabay308886",
+    "check": "unknown"
+   }
+  ]
  }
 }
