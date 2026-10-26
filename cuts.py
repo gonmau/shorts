@@ -289,6 +289,9 @@ def sync_up(repo, branch="main"):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--shorts", action="store_true", help="쇼츠: 대본이 끝나고 아직 영상이 없는 소재의 컷 시트+후보 시트를 만든다 (--limit/--start)")
+    ap.add_argument("--limit", type=int, default=2)
+    ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--sync", choices=["down", "up"], default="")
     ap.add_argument("--repo", default="")
     ap.add_argument("--pick", default="")
@@ -305,6 +308,19 @@ def main():
         return
     if a.pick:
         pick(a.pick)
+    if a.shorts:
+        from common import pending_render
+        db = _j(BASE / "facts_db.json", [])
+        mem = [i for i, _ in pending_render(db, a.start)][:a.limit]
+        if not mem:
+            sys.exit("대본이 끝난 소재가 없습니다.")
+        OUT.mkdir(exist_ok=True)
+        txt, rows = cutsheet(db, mem)
+        (OUT / "cutsheet.txt").write_text(txt, encoding="utf-8")
+        import csv
+        with open(OUT / "cutsheet.csv", "w", encoding="utf-8-sig", newline="") as f_:
+            csv.writer(f_).writerows(rows)
+        make_candidates(db, mem)
     if a.cands:
         db = _j(BASE / "facts_db.json", [])
         make_candidates(db, [int(x) for x in a.cands.split(",") if x.strip()])

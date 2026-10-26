@@ -5,6 +5,7 @@
 #   stage = prepare : 소재 -> 대본 -> 제목/핵심 문구/이미지 검색어 까지 만들고 review.txt 생성 (영상은 안 만듦)
 #           -> 레포의 review.txt를 열어 제목/핵심 문구를 고치고 저장(Commit)
 #   stage = render  : review.txt의 수정 사항을 반영해서 음성 -> 이미지 -> 영상(-> 유튜브 비공개 업로드)
+#   stage = cuts    : prepare + 이미지 컷 시트/컷별 후보 사진을 디스코드로 (사진을 직접 고르고 싶을 때). 고른 번호는 pick 칸에 적고 render 실행
 #   stage = all     : 위 두 단계를 한 번에 (검수 없이 바로 제작)
 #
 #   count        : 이번에 만들 영상 개수
@@ -28,9 +29,9 @@ on:
         description: "대본부터 다시 만들 DB 번호 (예: 101 / 번호 뒤에 !를 붙이면(101!) 대본은 두고 검수 대기열로 되살림 / 비워두면 안 함)"
         default: ""
       stage:
-        description: "단계 (prepare=대본/제목 준비, render=영상 제작, all=한 번에)"
+        description: "단계 (prepare=대본/제목 준비, cuts=대본+이미지 컷 시트·후보 사진 시트(디스코드), render=영상 제작, all=한 번에)"
         type: choice
-        options: [all, prepare, render]
+        options: [all, prepare, cuts, render]
         default: all
       count:
         description: "만들 영상 개수 (하루 1~2개 권장)"
@@ -42,6 +43,9 @@ on:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
         default: false
+      pick:
+        description: "후보 사진 고르기 (cuts 결과의 번호. 예: 117_3=2, 118_1=5 / 비우면 안 함). my_images에 저장되어 영상 제작 때 먼저 쓰임"
+        default: ""
       cta_check:
         description: "대본의 구독/좋아요 문구 (off=안 함, scan=점검만, fix=미제작 소재 대본 다시 만들기)"
         type: choice
@@ -69,6 +73,7 @@ jobs:
     timeout-minutes: 90
     env:
       STAGE: ${{ github.event.inputs.stage || 'all' }}
+      PICK: ${{ github.event.inputs.pick || '' }}
       PYTHONUNBUFFERED: "1"  # 로그가 실시간으로 보이게 함
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}
@@ -104,6 +109,10 @@ jobs:
 
       - name: review.txt 수정 사항 반영
         run: python apply_review.py
+
+      - name: 고른 후보 사진 적용 (pick)
+        if: ${{ env.PICK != '' }}
+        run: python cuts.py --pick "$PICK"
 
       - name: 영상 다시 제작 대상 되돌리기 (선택)
         if: ${{ env.REDO != '' }}
@@ -142,29 +151,33 @@ jobs:
         if: ${{ env.STAGE != 'render' }}
         run: python export_review.py --limit "$COUNT" --start "$START"
 
+      - name: 이미지 컷 시트 + 후보 사진 시트 (cuts)
+        if: ${{ env.STAGE == 'cuts' }}
+        run: python cuts.py --shorts --limit "$COUNT" --start "$START"
+
       # ---------- 제작 단계 (render / all) ----------
       - name: 빠진 제목/핵심 문구/이미지 검색어 보충 (대본 기준)
         if: ${{ env.STAGE == 'render' }}
         run: python generate_script.py --extras-only --limit "$COUNT" --start "$START"
 
       - name: 음성(TTS)
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         run: python generate_tts.py --limit "$COUNT" --start "$START"
 
       - name: 장면 이미지 6장 (Pixabay)
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         run: python fetch_images.py --limit "$COUNT" --start "$START"
 
       - name: 영상 합성
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         run: python build_video.py --limit "$COUNT" --start "$START" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
       - name: 썸네일 만들기
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
       - name: 유튜브 비공개 업로드
-        if: ${{ env.STAGE != 'prepare' && env.YT_REFRESH_TOKEN != '' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' && env.YT_REFRESH_TOKEN != '' }}
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -176,6 +189,7 @@ jobs:
           git config user.name "culture-shorts-bot"
           git config user.email "bot@users.noreply.github.com"
           git add facts_db.json
+          [ -d my_images ] && git add my_images || true
           [ -f review.txt ] && git add review.txt || true
           git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
           # 실행 중에 다른 커밋(README 등)이 올라와도 push가 거절되지 않게 합친 뒤 올림
@@ -187,7 +201,7 @@ jobs:
           echo "push 실패"; exit 1
 
       - name: 구글 드라이브 저장 (영상·음성·이미지·썸네일·자막)
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         continue-on-error: true
         env:
           DRIVE_CLIENT_ID: ${{ secrets.DRIVE_CLIENT_ID }}
@@ -200,9 +214,18 @@ jobs:
             echo "DRIVE_REFRESH_TOKEN Secret이 없어 드라이브 저장을 건너뜁니다."
           fi
 
+      - name: 컷 시트·후보 사진 보관
+        if: ${{ env.STAGE == 'cuts' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: shorts-cuts
+          path: cuts_out/*
+          retention-days: 14
+          if-no-files-found: warn
+
       - name: mp4 아티팩트 보관
         id: art
-        if: ${{ env.STAGE != 'prepare' }}
+        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         uses: actions/upload-artifact@v4
         with:
           name: culture-shorts-videos
@@ -214,8 +237,14 @@ jobs:
           if-no-files-found: warn
 
       # ---------- 디스코드 알림 ----------
+      - name: 디스코드 알림 (컷 시트·후보 사진)
+        if: ${{ success() && env.STAGE == 'cuts' && env.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python notify_cuts.py
+
       - name: 디스코드 알림
-        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
+        if: ${{ always() && (env.STAGE != 'cuts' || failure()) && env.DISCORD_WEBHOOK_URL != '' }}
         env:
           JOB_STATUS: ${{ job.status }}
           ART_URL: ${{ steps.art.outputs.artifact-url }}
