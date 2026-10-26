@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 20:25:25 (KST) · 기록 271건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:25:43 (KST) · 기록 272건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | apply_review | 2 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 5 | 0 | 1분 51초 |
+| fetch_images | 6 | 0 | 1분 56초 |
 | generate_culture_facts | 1 | 0 | 47초 |
 | generate_script | 2 | 0 | 10분 46초 |
 | promote_ready | 2 | 0 | 0초 |
@@ -25,6 +25,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 4초 |  |
 | 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 3초 |  |
 | 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
 | 20:24 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
