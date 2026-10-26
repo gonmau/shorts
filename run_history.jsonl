@@ -292,3 +292,4 @@
 {"id": "1793020820303-f95855", "time": "2026-10-26 22:20:20", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 270", "status": "success", "secs": 25.0, "detail": ""}
 {"id": "1793021082591-f05525", "time": "2026-10-26 22:24:42", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 277", "status": "success", "secs": 30.7, "detail": ""}
 {"id": "1793021379608-064565", "time": "2026-10-26 22:29:39", "channel": "KO", "source": "PC", "kind": "롱폼", "title": "build_longform.py --mode manual --indexes 175,186,247,261 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --clips --fi", "status": "success", "secs": 13.6, "detail": ""}
+{"id": "1793021552960-847a3d", "time": "2026-10-26 22:32:32", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 261", "status": "success", "secs": 0.5, "detail": ""}
