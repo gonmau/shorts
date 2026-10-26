@@ -25451,7 +25451,100 @@
       "Colombian arepa tradition",
       "Arepa modern transformation"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "Arepa burger alternative",
+      "Corn dough flatbread",
+      "Colombian traditional corn",
+      "Arepa with cheese and meat",
+      "Arepa sandwich style",
+      "Healthy arepa sandwich",
+      "Spicy ham spread avocado",
+      "Satiating diet meal",
+      "Colombian arepa tradition",
+      "Arepa modern transformation"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Muago",
+        "license": "CC0",
+        "title": "Arepa frita.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepa_frita.jpg",
+        "id": "c:115625869"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "matthiasboeckel",
+        "page": "https://pixabay.com/photos/flatbread-dough-dough-rollers-4523399/",
+        "id": 4523399
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Anaepg86",
+        "license": "CC0",
+        "title": "Sancocho en Bogota.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sancocho_en_Bogota.jpg",
+        "id": "c:153202688"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "8664447",
+        "page": "https://pixabay.com/photos/grill-arepas-cheese-lunch-3419524/",
+        "id": 3419524
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Debray05",
+        "license": "CC0",
+        "title": "Arepas 1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepas_1.jpg",
+        "id": "c:179357422"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Heribertoaguirrefotograf",
+        "page": "https://pixabay.com/photos/toast-vegan-sandwich-vegan-breakfast-7009956/",
+        "id": 7009956
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "waichi2021",
+        "page": "https://pixabay.com/photos/toast-food-flat-lay-breakfast-6011147/",
+        "id": 6011147
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/salad-fresh-veggies-vegetables-791891/",
+        "id": 791891
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "mapricor",
+        "page": "https://pixabay.com/photos/meal-dish-plate-arepa-sausage-5486525/",
+        "id": 5486525
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Steven Depolo from Grand Rapids, MI, USA",
+        "license": "CC BY 2.0",
+        "title": "Arepitas Food Macro.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
+        "id": "c:18240237"
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "슬라브 수확 축제 Dożynki",
