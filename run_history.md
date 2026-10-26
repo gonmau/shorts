@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 20:42:27 (KST) · 기록 283건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:52:13 (KST) · 기록 284건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -16,7 +16,7 @@
 | generate_script | 2 | 0 | 10분 46초 |
 | image_check | 2 | 0 | 19초 |
 | promote_ready | 2 | 0 | 0초 |
-| 롱폼 | 26 | 0 | 2시간 30분 |
+| 롱폼 | 27 | 0 | 2시간 34분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 3 | 0 | 0초 |
 
@@ -26,6 +26,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:52 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,270,277,279,297,300,301 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images - | ✅ | 3분 34초 |  |
 | 20:42 | PC | 롱폼 | build_longform.py --mode auto --indexes 175,186,247,261,270,277,297,300,301 --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --st | ✅ | 4분 41초 |  |
 | 20:36 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dr | ✅ | 0초 |  |
 | 20:30 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dr | ✅ | 0초 |  |
