@@ -710,7 +710,7 @@ def main():
         it_ = db[i]
         line_ = f"{n_}. [{i}] {DISP(it_.get('country', ''))} - {it_.get('topic', '')}  (약 {est_seconds(it_) / 60:.1f}분)"
         print("  " + line_, flush=True)
-        prev_lines += [line_, "   " + " ".join(str(it_.get("narration", "")).split())[:160], ""]
+        prev_lines += [line_, "   " + " ".join(str(it_.get("narration", "")).split()), ""]
     if args.dry_run:
         (OUT / "longform_preview.txt").parent.mkdir(exist_ok=True)
         (OUT / "longform_preview.txt").write_text("\n".join(prev_lines), encoding="utf-8")
