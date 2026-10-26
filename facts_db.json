@@ -24675,7 +24675,35 @@
     "verify_note": "Popemobile",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:37.528107+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "교황이 차에 앉아도 서 있어도, 실제로는 차 안에 ‘왕좌’가 숨겨져 있다는 사실!  \n교황 자동차는 대중 앞에 나타날 때 시야를 확보하도록 특별히 만든 차량입니다. 옛날엔 이동식 왕좌 sedia gestatoria를 사용했지만, 차량이 그 역할을 대신하게 되었죠.  \n1981년 교황 요한 바오로 2세에 대한 암살 시도 이후, 방탄 유리를 둘러싼 모델이 도입돼 안전성이 크게 강화되었습니다.  \n흥미로운 점은 일부 모델은 교황이 앉을 자리를 전혀 두지 않아도 됩니다. 차 안에 서서 인사할 수 있도록 설계돼, 교황이 서서도 행사에 참여할 수 있죠.  \n이 설계는 교황 자동차에만 적용되는 특수한 경우이며, 일반 차량에는 해당되지 않는다는 점을 기억해 주세요.  \n그렇다면, 다음에 보게 될 교황 자동차는 과연 어느 자세로 인사할까요?",
+    "title_line1": "싱가포르 교황 자동차",
+    "title_line2": "왕좌는 차 안에 숨겨진다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "차 안에 *왕좌* 숨김"
+      },
+      {
+        "s": 4,
+        "text": "암살 뒤 *방탄* 도입"
+      },
+      {
+        "s": 6,
+        "text": "서서 *인사* 가능"
+      }
+    ],
+    "image_queries": [
+      "hidden throne inside car",
+      "popemobile open view design",
+      "historic papal portable throne",
+      "bulletproof glass popemobile 1981",
+      "popemobile without seat",
+      "pope standing inside car",
+      "special popemobile interior design",
+      "future popemobile greeting pose"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "에스토니아(Estonia)의 LGBTQ 권리 변화",
