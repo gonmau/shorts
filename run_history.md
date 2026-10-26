@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 20:25:55 (KST) · 기록 273건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:26:35 (KST) · 기록 276건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,9 +11,10 @@
 | apply_review | 2 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 7 | 0 | 2분 1초 |
+| fetch_images | 8 | 0 | 2분 4초 |
 | generate_culture_facts | 1 | 0 | 47초 |
 | generate_script | 2 | 0 | 10분 46초 |
+| image_check | 2 | 0 | 19초 |
 | promote_ready | 2 | 0 | 0초 |
 | 롱폼 | 22 | 0 | 2시간 26분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
@@ -25,6 +26,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
+| 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 3초 |  |
+| 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
 | 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 4초 |  |
 | 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 4초 |  |
 | 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 3초 |  |
