@@ -24762,7 +24762,7 @@
     ],
     "image_queries": [
       "pope inside mobile",
-      "popemobile open view design",
+      "popemobile open car",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
@@ -24798,12 +24798,11 @@
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "source": "pixabay",
+        "user": "Mybbor",
+        "page": "https://pixabay.com/photos/classic-cars-vintage-car-show-9614046/",
+        "id": 9614046,
+        "type": "photo"
       },
       {
         "scene": 3,
@@ -24860,7 +24859,7 @@
         "id": "c:201703848"
       }
     ],
-    "image_source": "commons",
+    "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "bad",
