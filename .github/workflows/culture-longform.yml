@@ -151,9 +151,10 @@ jobs:
           if-no-files-found: warn
 
       - name: 디스코드 알림
-        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' && github.event.inputs.dry_run != 'true' }}
+        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
         env:
           JOB_STATUS: ${{ job.status }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
           ART_URL: ${{ steps.art.outputs.artifact-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python notify_longform.py

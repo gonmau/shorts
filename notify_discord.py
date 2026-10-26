@@ -46,6 +46,15 @@ def post_image(url, path, text=""):
         print("썸네일 전송 실패:", e)
 
 
+def post_file(url, path, text=""):
+    """텍스트 등 임의 파일을 디스코드에 첨부 전송."""
+    try:
+        with open(path, "rb") as f:
+            requests.post(url, data={"content": text[:1900]}, files={"file": (Path(path).name, f)}, timeout=60)
+    except Exception as e:
+        print("파일 전송 실패:", e)
+
+
 def built_items():
     out = []
     if not Path("videos").exists():

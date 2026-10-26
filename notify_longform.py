@@ -5,12 +5,21 @@ import json
 import os
 from pathlib import Path
 
-from notify_discord import post, post_image
+from notify_discord import post, post_file, post_image, post_long
 
 
 def main():
     url = os.environ["DISCORD_WEBHOOK_URL"]
     run_url = os.environ.get("RUN_URL", "")
+    if os.environ.get("DRY_RUN", "") == "true":     # 목록만 보기: 고른 소재와 제목(안)을 알려줌
+        pv = Path("longform_out") / "longform_preview.txt"
+        if os.environ.get("JOB_STATUS", "") != "success" or not pv.exists():
+            post(url, f"❌ 롱폼 목록 보기 실패 (조건에 맞는 소재가 부족할 수 있음)\n로그: {run_url}")
+            return
+        post(url, "📋 롱폼 목록 (영상은 만들지 않았습니다)")
+        post_long(url, pv.read_text(encoding="utf-8"))
+        post(url, f"로그: {run_url}")
+        return
     if os.environ.get("JOB_STATUS", "") != "success":
         post(url, f"❌ 롱폼 만들기 실패\n로그: {run_url}")
         return
@@ -24,6 +33,13 @@ def main():
     post(url, f"🎞 롱폼 #{rec['id']} 완료 ({len(rec['members'])}개 묶음, {mins:.1f}분)\n영상 받기: {art or run_url}")
     post(url, rec["title"])
     post(url, rec["description"])
+    sc = Path("longform_out") / f"longform_{rec['id']:03d}_script.txt"
+    if sc.exists():
+        post(url, "📝 대본 (오프닝 · 챕터별 · 엔딩)")
+        post_long(url, sc.read_text(encoding="utf-8"))
+    sn = Path("longform_out") / f"longform_{rec['id']:03d}_scenario.txt"
+    if sn.exists():
+        post_file(url, sn, "시나리오 (문장별 화면·효과)")
     png = Path("longform_out") / f"longform_{rec['id']:03d}.png"
     if png.exists():
         post_image(url, png, "썸네일")

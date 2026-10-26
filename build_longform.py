@@ -637,6 +637,14 @@ def run_rich(args, db, lf_db, members):
         (OUT / f"longform_{lf_id:03d}_scenario.txt").write_text("\n\n".join(LS.scenario_text(db[i], recs[i], n) for n, i in enumerate(members, 1)), encoding="utf-8")
     except Exception:
         pass
+    try:   # 디스코드 등으로 읽기 쉬운 대본 (오프닝 + 챕터별 나레이션 + 엔딩)
+        sl_ = [f"[제목] {title}", "", "[오프닝]", intro_txt, ""]
+        for n_, i in enumerate(members, 1):
+            sl_ += [f"[{n_}. {DISP(db[i].get('country', ''))}] {db[i].get('topic', '')}", recs[i].get("narration", ""), ""]
+        sl_ += ["[엔딩]", outro_txt]
+        (OUT / f"longform_{lf_id:03d}_script.txt").write_text("\n".join(sl_), encoding="utf-8")
+    except Exception:
+        pass
     make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png")
     chunks, n_no = [], 1
     for no in sorted(seg_cues):
@@ -696,8 +704,16 @@ def main():
                              args.min, args.max)
     total_est = sum(est_seconds(db[i]) for i in members)
     print(f"롱폼 소재 {len(members)}개 (예상 약 {total_est / 60:.1f}분): " +
-          ", ".join(f"{i} {db[i].get('country', '')}" for i in members), flush=True)
+          ", ".join(f"{i} {DISP(db[i].get('country', ''))}" for i in members), flush=True)
+    prev_lines = [f"제목(안): {make_title(db, members, args.theme, args.title)}", f"소재 {len(members)}개 · 예상 약 {total_est / 60:.1f}분", ""]
+    for n_, i in enumerate(members, 1):
+        it_ = db[i]
+        line_ = f"{n_}. [{i}] {DISP(it_.get('country', ''))} - {it_.get('topic', '')}  (약 {est_seconds(it_) / 60:.1f}분)"
+        print("  " + line_, flush=True)
+        prev_lines += [line_, "   " + " ".join(str(it_.get("narration", "")).split())[:160], ""]
     if args.dry_run:
+        (OUT / "longform_preview.txt").parent.mkdir(exist_ok=True)
+        (OUT / "longform_preview.txt").write_text("\n".join(prev_lines), encoding="utf-8")
         return
     if args.style == "rich":
         return run_rich(args, db, lf_db, members)
