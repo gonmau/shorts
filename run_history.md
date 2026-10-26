@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-26 20:27:04 (KST) · 기록 278건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-26 20:27:31 (KST) · 기록 279건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 7 | 0 | 1분 40초 |
+| -c | 8 | 0 | 1분 49초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 2 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
@@ -26,6 +26,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:27 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 8초 |  |
 | 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
 | 20:26 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 3초 |  |
 | 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
