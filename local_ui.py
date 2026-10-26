@@ -1553,7 +1553,7 @@ with TL:
         i1_, i2_ = st.columns(2)
         _B["intro_logo"] = i1_.checkbox("인트로에 채널 이미지 표시", bool(_B.get("intro_logo", True)), key="br_il")
         _B["intro_name"] = i2_.checkbox("인트로에 채널 이름 표시", bool(_B.get("intro_name", True)), key="br_in")
-        _B["cta"] = st.text_input("엔딩 하단 문구 (비우면 '구독 · 좋아요 · 채널이름')", _B.get("cta") or "", key="br_cta")
+        _B["cta"] = st.text_input("엔딩 하단 띠 문구 (비우면 띠 안 나옴)", _B.get("cta") or "", key="br_cta")
         try:   # 미리보기: 오른쪽 위 표시
             _R.BRAND.update(_B)
             from PIL import Image as _PI2

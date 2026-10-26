@@ -13,7 +13,7 @@ import textfix  # noqa: F401  (글꼴에 없는 하이픈 등을 네모칸 대�
 
 W, H = 1920, 1080
 FPS = 24
-PURPLE = (200, 0, 255)
+PURPLE = (56, 189, 248)   # 하늘색 (예전 분홍/보라 대신. 변수 이름은 그대로)
 YELLOW = (255, 226, 0)
 INK = (14, 14, 22)
 def _detect_en(base):
@@ -626,12 +626,13 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
             d.text((x0 + 100, yy), x, font=f, fill="white")
             yy += asc + desc
         clips.append(ImageClip(arr(layer)).set_start(0.8 + i * t_line).set_duration(max(0.5, dur - 0.8 - i * t_line)).crossfadein(0.35))
-    end = new_layer()
-    de = ImageDraw.Draw(end)
-    rrect(end, (W // 2 - 420, 900, W // 2 + 420, 1010), 50, PURPLE + (255,))
-    cta = str(BRAND.get("cta") or "").strip() or f"{L['sub']}  ·  {channel}"
-    text_c(de, W // 2, 918, cta, font(46), "white")
-    clips.append(ImageClip(arr(end)).set_start(max(0.5, dur - 4.5)).set_duration(4.5).crossfadein(0.4))
+    cta = str(BRAND.get("cta") or "").strip()      # 마지막 구독/좋아요 띠는 직접 문구를 넣었을 때만 표시
+    if cta:
+        end = new_layer()
+        de = ImageDraw.Draw(end)
+        rrect(end, (W // 2 - 420, 900, W // 2 + 420, 1010), 50, PURPLE + (255,))
+        text_c(de, W // 2, 918, cta, font(46), "white")
+        clips.append(ImageClip(arr(end)).set_start(max(0.5, dur - 4.5)).set_duration(4.5).crossfadein(0.4))
     final = CompositeVideoClip([bg] + clips, size=(W, H)).set_duration(dur).fadeout(0.5)
     final = final.set_audio(padded_audio(audio, dur, 0.4) if audio else silent(dur))
     write_clip(final, out_path)
