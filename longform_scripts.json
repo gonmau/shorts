@@ -1976,7 +1976,7 @@
     }
    ]
   },
-  "recap": "파푸아 뉴기니는 인도네시아에서 유일한 내륙 고원 지방이다.",
+  "recap": "파푸아 뉴기니는 인도네시아에서 유일한 내륙 고원 지방입니다.",
   "broll": [
    "highland Papua sunrise",
    "mountainous village life",
@@ -2012,7 +2012,7 @@
    "traditional Papuan market"
   ],
   "locked": true,
-  "edited": "2026-10-26 22:21"
+  "edited": "2026-10-26 22:25"
  },
  "277": {
   "narration": "아이슬란드 사람들은 물고기 고기를 먹지 않는다고 들었나요? 사실, 이 금기는 종교적·문화적·법적 배경이 복합적으로 얽혀 있습니다. 고대 바이킹 시대부터 신앙과 자연 보호가 결합해, 특정 지역 주민은 물고기와 연체동물, 갑각류, 심지어 곤충까지 금지했습니다. 이 규정은 전 국민이 아니라, 예를 들어 사제나 특정 종교 단체에 속한 사람들에게만 적용됩니다. 그 이유는 신성한 동물의 일부를 거부함으로써 영적 순결을 유지하려는 믿음 때문입니다. 생활 속에서는 물고기 대신 양고기, 소고기, 닭고기를 주로 섭취하며, 바다에서 잡은 생선은 주로 해산물 대신 조개나 조개류로 대체합니다. 또한, 물고기 부위 중에서도 뼈와 내장을 피하는 경우가 많아, 식탁에서 흔히 보이는 ‘스키프라그’ 같은 전통 요리는 부위별 금기를 반영한 결과입니다. 이처럼 아이슬란드의 식문화 금기는 세밀하고 개인별로 다르게 적용되며, 다른 나라와는 달리 법적 제재가 명확히 존재합니다. 다음에는 페루의 독특한 식문화 금기에 대해 알아볼까요?",
@@ -2313,72 +2313,67 @@
   "created": "2026-10-26 21:24"
  },
  "261": {
-  "narration": "뉴질랜드 식탁이 한 번에 영국식 파스타와 마오리 전통 파이, 지중해 올리브와 태평양 해산물 파히타를 담아내는 이유는, 섬나라의 농업과 해양 생산이 풍부하기 때문이죠. 1970년대 이후 이민자들이 남미, 동남아, 동아시아에서 온 음식들을 끌어들여, 식탁에 새로운 향과 질감을 더했습니다. 이로 인해 한 끼가 여러 대륙의 맛을 동시에 느낄 수 있게 되었어요. 영국식 요리는 오랜 식민지 역사를 반영하고, 마오리 전통은 토착 문화의 정수를 보여줍니다. 뉴질랜드는 식탁을 통해 ‘작은 세계 여행’을 제공하며, 이는 지역마다 일관되게 나타나는 현상입니다. 다음에는 파푸아뉴기니의 독특한 식문화로 넘어가 보겠습니다.",
+  "narration": "뉴질랜드 식탁에 영국식 파이와 마오리 전통 푸드가 기본이라면, 이제 올리브와 레몬, 해산물 파히타가 함께한다는 사실, 알고 계셨나요? 영국 식민지 시절 도입된 로스트 비프와 파이는 여전히 가정식에 자리 잡고 있습니다. 하지만 뉴질랜드는 세계적인 농업 강국이기에, 신선한 양고기와 양파, 토마토가 풍부합니다. 최근 몇 년간 해안가 레스토랑에서는 올리브 오일에 마리네이드한 새우와 레몬즙을 곁들인 퓨전 요리를 선보이고 있습니다. 이때문에 한 접시 안에 지중해의 향과 태평양의 바다 내음이 동시에 느껴집니다. 1970년대 이후 이민이 늘면서 뉴 아메리칸, 동남아, 동아시아, 남아시아 요리도 메뉴에 추가됐습니다. 하지만 이런 다양성은 특정 도시만이 아니라 섬 전체에 고르게 퍼져 있습니다. 예를 들어 오클랜드의 카페에서는 아보카도 토스트 위에 훈제 연어와 파프리카를 올리고, 그 옆에 마오리 전통인 파이와 함께 제공합니다. 또 남섬의 작은 마을에서는 라임을 뿌린 피시 타코와 함께 라무와 같은 전통 빵을 곁들여 먹습니다. 이렇게 한 입에 여러 대륙의 풍미가 담긴 식사는 뉴질랜드가 작은 세계 여행이라는 느낌을 줍니다. 결국, 뉴질랜드 식탁은 전통과 현대, 그리고 다양한 문화가 조화롭게 어우러진 살아있는 문화 지도라고 할 수 있습니다.",
   "keywords": [
    {
     "sentence": 1,
-    "text": "식탁이 한 번에"
-   },
-   {
-    "sentence": 2,
-    "text": "영국식 파스타"
+    "text": "뉴질랜드 식탁에 영국식 파이와"
    },
    {
     "sentence": 3,
-    "text": "마오리 전통 파이"
+    "text": "신선한 양고기와 양파, 토마토"
    },
    {
-    "sentence": 4,
-    "text": "지중해 올리브"
+    "sentence": 5,
+    "text": "올리브와 레몬, 해산물 파히타"
+   },
+   {
+    "sentence": 9,
+    "text": "한 입에 여러 대륙의 풍미가 "
    }
   ],
   "compare": {
-   "title": "뉴질랜드 vs 파푸아뉴기니",
+   "title": "뉴질랜드 vs 사모아",
    "left": "뉴질랜드",
-   "right": "파푸아뉴기니",
+   "right": "사모아",
    "rows": [
     {
-     "label": "주요 재료",
-     "left": "신선한 농산물·해산물",
-     "right": "열대 과일·해산물"
+     "label": "요리 영향",
+     "left": "영국·지중해·아시아",
+     "right": "폴리네시아·태평양"
     },
     {
-     "label": "식문화 기원",
-     "left": "영국·마오리·이민",
-     "right": "토착·전통"
-    },
-    {
-     "label": "음식 다양성",
-     "left": "다양한 대륙 혼합",
-     "right": "전통 중심"
+     "label": "다양성 정도",
+     "left": "많음",
+     "right": "적음"
     }
    ]
   },
-  "recap": "뉴질랜드 식탁은 한 끼에 여러 대륙의 맛을 담은 작은 세계 여행",
+  "recap": "뉴질랜드 식탁은 전통과 세계 요리가 어우러진 작은 세계 여행입니다.",
   "broll": [
-   "New Zealand coastal farm",
-   "Mediterranean olive grove",
-   "Pacific seafood market"
+   "New Zealand farm landscape",
+   "Mediterranean seafood dish",
+   "Pacific island market"
   ],
   "verify": {
    "status": "fixed",
-   "removed_sentences": 2,
-   "removed_rows": 0,
-   "unsupported": 6,
+   "removed_sentences": 0,
+   "removed_rows": 1,
+   "unsupported": 7,
    "notes": [
-    "[unsupported] 1번 문장: No evidence about NZ menu items",
-    "[unsupported] 2번 문장: No evidence of 1970s immigration patterns",
-    "[unsupported] 3번 문장: Vague claim about taste",
-    "[contradicted] 5번 문장: Olives and lemons are not abundant in Pacific regions",
-    "[contradicted] 6번 문장: Fajita is Mexican, not Pacific seafood + Mediterranean spices",
-    "[unsupported] 7번 문장: No evidence of consistent 'small world travel' phenomenon",
-    "[unsupported] 10번 문장: No evidence of origins",
-    "[unsupported] 11번 문장: No evidence of diversity claim"
+    "[unsupported] 1번 문장: No evidence that olives, lemon, and seafood fajitas are common on NZ tables",
+    "[unsupported] 4번 문장: Specific recent trend of olive‑oil‑marinated shrimp with lemon lacks documented evidence",
+    "[unsupported] 5번 문장: Claim about a single plate simultaneously delivering Mediterranean and Pacific aromas is subjective and not verifiable",
+    "[unsupported] 7번 문장: Distribution of culinary diversity across the whole country is not uniformly documented",
+    "[unsupported] 8번 문장: Specific menu example from an Auckland café cannot be verified",
+    "[unsupported] 9번 문장: Specific dish and traditional bread claim lacks evidence",
+    "[contradicted] 12번 문장: Olives are not a primary NZ ingredient; the list is inaccurate",
+    "[unsupported] 13번 문장: Mediterranean influence on NZ cuisine is not a major documented factor"
    ],
-   "model": "openai/gpt-oss-20b"
+   "model": "openai/gpt-oss-120b"
   },
-  "sig": "1a901263a2e1",
-  "model": "openai/gpt-oss-20b",
-  "created": "2026-10-26 21:22"
+  "sig": "a9ceb4edc03d",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-26 22:29"
  }
 }
