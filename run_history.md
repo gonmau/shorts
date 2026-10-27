@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-27 12:28:47 (KST) · 기록 331건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-27 12:36:13 (KST) · 기록 343건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,9 +11,9 @@
 | apply_review | 4 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 27 | 0 | 6분 20초 |
+| fetch_images | 33 | 0 | 10분 36초 |
 | generate_culture_facts | 1 | 0 | 47초 |
-| generate_script | 8 | 0 | 16분 20초 |
+| generate_script | 14 | 0 | 16분 46초 |
 | image_check | 2 | 0 | 19초 |
 | promote_ready | 4 | 0 | 0초 |
 | 롱폼 | 38 | 1 | 3시간 2분 |
@@ -26,6 +26,18 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:36 | PC | fetch_images | fetch_images.py --index 115 --force | ✅ | 1분 0초 |  |
+| 12:35 | PC | generate_script | generate_script.py --extras-only --index 115 --regen-queries | ✅ | 2초 |  |
+| 12:35 | PC | fetch_images | fetch_images.py --index 100 --force | ✅ | 12초 |  |
+| 12:34 | PC | generate_script | generate_script.py --extras-only --index 100 --regen-queries | ✅ | 11초 |  |
+| 12:34 | PC | fetch_images | fetch_images.py --index 93 --force | ✅ | 28초 |  |
+| 12:34 | PC | generate_script | generate_script.py --extras-only --index 93 --regen-queries | ✅ | 2초 |  |
+| 12:34 | PC | fetch_images | fetch_images.py --index 71 --force | ✅ | 57초 |  |
+| 12:33 | PC | generate_script | generate_script.py --extras-only --index 71 --regen-queries | ✅ | 2초 |  |
+| 12:33 | PC | fetch_images | fetch_images.py --index 47 --force | ✅ | 32초 |  |
+| 12:32 | PC | generate_script | generate_script.py --extras-only --index 47 --regen-queries | ✅ | 2초 |  |
+| 12:32 | PC | fetch_images | fetch_images.py --index 40 --force | ✅ | 1분 5초 |  |
+| 12:31 | PC | generate_script | generate_script.py --extras-only --index 40 --regen-queries | ✅ | 3초 |  |
 | 12:28 | PC | fetch_images | fetch_images.py --index 40 | ✅ | 9초 |  |
 | 12:28 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
 | 12:27 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
