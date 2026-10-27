@@ -12,5 +12,5 @@
  "intro_name": true,
  "cta": "구독 & 좋아요",
  "recap": true,
- "recap_cards": false
+ "recap_cards": true
 }
