@@ -3795,58 +3795,109 @@
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-09",
     "image_queries_done": [
-      "United Kingdom travel",
-      "United Kingdom travel",
-      "United Kingdom travel",
-      "United Kingdom travel",
-      "United Kingdom travel",
-      "United Kingdom travel"
+      "cheese rolling sprint",
+      "Cooper's Hill cheese roll",
+      "hill sprint participants",
+      "historic cheese rolling event",
+      "cheese rolling injuries",
+      "cheese rolling thrill seekers",
+      "cheese rolling challenge",
+      "cheese rolling audience applause"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Julius_Silver",
-        "page": "https://pixabay.com/photos/london-landmark-tower-bridge-3078109/",
-        "id": 3078109
+        "source": "commons",
+        "user": "Pete Verdon",
+        "license": "Public domain",
+        "title": "A view from the top of Cooper's Hill, Gloucestershire, on 3 October 2005.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_view_from_the_top_of_Cooper%27s_Hill,_Gloucestershire,_on_3_October_2005.jpg",
+        "id": "c:84865621"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "fietzfotos",
-        "page": "https://pixabay.com/photos/tower-bridge-bridge-river-landmark-5727975/",
-        "id": 5727975
+        "user": "by_xez",
+        "page": "https://pixabay.com/photos/car-engine-retro-classic-red-auto-7665910/",
+        "id": 7665910
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "jplenio",
-        "page": "https://pixabay.com/photos/woman-sea-cliffs-rocks-coast-4172859/",
-        "id": 4172859
+        "user": "Gerry_spm",
+        "page": "https://pixabay.com/photos/wheel-road-bike-run-group-sprint-4676003/",
+        "id": 4676003
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "PublicCo",
-        "page": "https://pixabay.com/photos/natural-history-museum-london-2203648/",
-        "id": 2203648
+        "source": "commons",
+        "user": "michael warren from Bristol, UK",
+        "license": "CC BY 2.0",
+        "title": "Cheese Rolling 2006 - Ice Cream Van.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cheese_Rolling_2006_-_Ice_Cream_Van.jpg",
+        "id": "c:192843875"
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "Leonhard_Niederwimmer",
-        "page": "https://pixabay.com/photos/big-ben-london-clock-tower-uk-4728199/",
-        "id": 4728199
+        "source": "commons",
+        "user": "michael warren from Bristol, UK",
+        "license": "CC BY 2.0",
+        "title": "Cheese Rolling 2006 - Mountain rescue person.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cheese_Rolling_2006_-_Mountain_rescue_person.jpg",
+        "id": "c:192843876"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "hurk",
-        "page": "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
-        "id": 458321
+        "user": "Wounds_and_Cracks",
+        "page": "https://pixabay.com/photos/cheese-grater-grated-grated-cheese-8379082/",
+        "id": 8379082
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Daria-Yakovleva",
+        "page": "https://pixabay.com/photos/cheese-snacks-appetizer-nutrition-1887233/",
+        "id": 1887233
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Gigxels",
+        "page": "https://pixabay.com/photos/hands-clapping-applause-audience-6133151/",
+        "id": 6133151
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*전력질주* 치즈!"
+      },
+      {
+        "s": 3,
+        "text": "언덕을 *전력질주*!"
+      },
+      {
+        "s": 5,
+        "text": "*부상*이 빈번!"
+      },
+      {
+        "s": 6,
+        "text": "다시 찾는 *스릴*!"
+      }
+    ],
+    "image_queries": [
+      "cheese rolling sprint",
+      "Cooper's Hill cheese roll",
+      "hill sprint participants",
+      "historic cheese rolling event",
+      "cheese rolling injuries",
+      "cheese rolling thrill seekers",
+      "cheese rolling challenge",
+      "cheese rolling audience applause"
+    ],
+    "scene_count": 12
   },
   {
     "country": "Luxembourg",
@@ -4244,57 +4295,61 @@
     "status_tts_v2": "done",
     "status_v6": "video_done",
     "image_queries_done": [
-      "슬로베니아",
-      "Kurent costume",
-      "Kurent parade village",
-      "Kurent bell",
-      "spring",
-      "bell sound"
+      "Kurent mask Slovenia",
+      "Kurent costume bell",
+      "Kurent dancing village",
+      "Kurent bell ringing",
+      "Spring sunrise after carnival",
+      "Slovenian villagers celebration"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "commons",
-        "user": "User:Mateus2019",
-        "license": "CC BY 3.0 de",
-        "title": "SLO — Ljubljana (Blick auf Burg) 2020.JPG",
-        "page": "https://commons.wikimedia.org/wiki/File:SLO_%E2%80%94_Ljubljana_(Blick_auf_Burg)_2020.JPG"
+        "user": "Danilo Škofič",
+        "license": "Public domain",
+        "title": "Kurentovanje na Ptuju 1964.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kurentovanje_na_Ptuju_1964.jpg",
+        "id": "c:29410001"
       },
       {
         "scene": 2,
         "source": "commons",
-        "user": "Sailko",
-        "license": "CC BY 3.0",
-        "title": "Slovenia, ptuj, maschera kurent, 1999, 01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Slovenia,_ptuj,_maschera_kurent,_1999,_01.jpg"
-      },
-      {
-        "scene": 3,
-        "source": "commons",
         "user": "Ekke from Durham, United Kingdom",
         "license": "CC BY 2.0",
         "title": "Kurentovanje Ptuj 2009 (3312754235).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Kurentovanje_Ptuj_2009_(3312754235).jpg"
+        "page": "https://commons.wikimedia.org/wiki/File:Kurentovanje_Ptuj_2009_(3312754235).jpg",
+        "id": "c:47863370"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "johnnyclezmayoma9",
+        "page": "https://pixabay.com/photos/man-dance-monochrome-street-5983899/",
+        "id": 5983899
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Ekke from Durham, United Kingdom",
-        "license": "CC BY 2.0",
-        "title": "Kurents, Kurentovanje Ptuj 2009 (3313547740).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Kurents,_Kurentovanje_Ptuj_2009_(3313547740).jpg"
+        "source": "pixabay",
+        "user": "SarahRichterArt",
+        "page": "https://pixabay.com/photos/tact-clock-deadline-alarm-clock-3036245/",
+        "id": 3036245
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "shogun",
-        "page": "https://pixabay.com/photos/nature-landscape-tree-lake-blossom-7152461/"
+        "user": "stills_by_suki",
+        "page": "https://pixabay.com/photos/sunrise-lavender-flower-spring-8380468/",
+        "id": 8380468
       },
       {
         "scene": 6,
-        "source": "pixabay",
-        "user": "SwastikArora",
-        "page": "https://pixabay.com/photos/bell-decoration-sound-festive-gold-6904304/"
+        "source": "commons",
+        "user": "Jože Gal",
+        "license": "Public domain",
+        "title": "Ptujski pustni karneval in kurentovanje 1961 (46).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ptujski_pustni_karneval_in_kurentovanje_1961_(46).jpg",
+        "id": "c:29753761"
       }
     ],
     "image_source": "pixabay",
@@ -4321,14 +4376,15 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries": [
-      "슬로베니아",
-      "Kurent costume",
-      "Kurent parade village",
-      "Kurent bell",
-      "spring",
-      "bell sound"
+      "Kurent mask Slovenia",
+      "Kurent costume bell",
+      "Kurent dancing village",
+      "Kurent bell ringing",
+      "Spring sunrise after carnival",
+      "Slovenian villagers celebration"
     ],
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0047_Slovenia.mp4"
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0047_Slovenia.mp4",
+    "scene_count": 12
   },
   {
     "country": "China",
@@ -6122,11 +6178,11 @@
     ],
     "image_queries": [
       "Maltese festa pole climbing",
-      "wooden pole with flag Malta",
-      "Maltese crowd watching festival",
-      "traditional wooden pole Malta",
-      "village festival celebration Malta",
-      "young climber on pole"
+      "Malta festa celebration",
+      "Maltese pole with flag",
+      "Maltese children practicing pole",
+      "Maltese pole climbing record",
+      "Maltese festa atmosphere"
     ],
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0071_Malta_v2.mp3",
     "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0071_Malta_v2_timing.json",
@@ -6137,49 +6193,55 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "ariesa66",
-        "page": "https://pixabay.com/photos/climb-climbing-frame-kindergarten-3368388/"
+        "user": "Pezibear",
+        "page": "https://pixabay.com/photos/maltese-dog-puppy-small-dog-1123016/",
+        "id": 1123016
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Aleafar",
-        "page": "https://pixabay.com/photos/flag-greece-flag-pole-sun-sunlight-7167064/"
+        "user": "NakNakNak",
+        "page": "https://pixabay.com/photos/drum-percussion-instrument-music-3177236/",
+        "id": 3177236
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "ktphotography",
-        "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/"
+        "user": "Pix-Off",
+        "page": "https://pixabay.com/photos/flag-israel-jewish-flag-pole-sky-7527081/",
+        "id": 7527081
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Alehandra13",
-        "page": "https://pixabay.com/photos/cliff-travel-sea-landscape-nature-7930586/"
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/penguin-bird-watercolor-north-pole-6868033/",
+        "id": 6868033
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Magdalenalena",
-        "page": "https://pixabay.com/photos/popeye-village-malta-architecture-4158038/"
+        "user": "whitedaemon",
+        "page": "https://pixabay.com/photos/stripper-pole-dancer-girl-pylon-1221639/",
+        "id": 1221639
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "10255718",
-        "page": "https://pixabay.com/photos/girl-a-woman-young-people-barley-4626874/"
+        "user": "Jeanine_S",
+        "page": "https://pixabay.com/photos/dog-maltese-poodle-pet-canine-5223096/",
+        "id": 5223096
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0071_Malta.mp4",
     "status_v6": "video_done",
     "image_queries_done": [
       "Maltese festa pole climbing",
-      "wooden pole with flag Malta",
-      "Maltese crowd watching festival",
-      "traditional wooden pole Malta",
-      "village festival celebration Malta",
-      "young climber on pole"
+      "Malta festa celebration",
+      "Maltese pole with flag",
+      "Maltese children practicing pole",
+      "Maltese pole climbing record",
+      "Maltese festa atmosphere"
     ],
     "narration_original": "몰타에서는 마을 축제에 나무 기둥을 타고 깃발을 잡아야 해요! 매년 열리는 festa, 즉 전통 축제에서 ‘ġostra’라는 행사가 펼쳐집니다. 기름칠을 한 긴 나무 기둥을 달려 올라가 위에 매달린 깃발을 손에 쥐면 행운과 명예를 얻는다고 믿는 전통이죠. 주민들은 어린 시절부터 이 도전을 연습하고, 관객들은 긴장된 숨을 죽이며 지켜봅니다. 특히 1998년 한 청년이 10번 연속 깃발을 잡아 가장 높은 기록을 세운 일은 아직도 회자되는 전설입니다. 여러분도 몰타의 뜨거운 열기와 함께 ‘ġostra’에 도전해 보는 건 어떨까요? 좋아요와 구독, 알림 설정 잊지 마세요!",
     "fact_verifiability": "user",
@@ -6187,7 +6249,8 @@
     "fact_applied": true,
     "youtube_id": "trQJ9EXDFLE",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "scene_count": 12
   },
   {
     "country": "Papua New Guinea",
@@ -8197,12 +8260,15 @@
       }
     ],
     "image_queries": [
-      "Nordic village",
-      "wife carrying race",
-      "running couple",
-      "muddy run",
-      "weight penalty wife carrying",
-      "finish line celebration"
+      "husband carrying wife",
+      "couple running obstacle course Finland",
+      "young male and female runners Finland",
+      "253 meter race course beer prize",
+      "water obstacle dry terrain Finland",
+      "team carrying partner race Finland",
+      "weight requirement beer prize",
+      "balance running in water Finland",
+      "breathing together race Finland"
     ],
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0093_Finland_v2.mp3",
     "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0093_Finland_v2_timing.json",
@@ -8213,56 +8279,87 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "monicore",
-        "page": "https://pixabay.com/photos/lofoten-norway-islands-986912/"
+        "user": "sonamabcd",
+        "page": "https://pixabay.com/photos/wedding-couple-husband-wife-4795066/",
+        "id": 4795066
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "U.S. Air Force photo by Cortney Paxton",
-        "license": "Public domain",
-        "title": "Malmstrom wife carry.JPG",
-        "page": "https://commons.wikimedia.org/wiki/File:Malmstrom_wife_carry.JPG"
+        "source": "pixabay",
+        "user": "hamperium",
+        "page": "https://pixabay.com/photos/girl-woman-lady-obstacle-run-2175843/",
+        "id": 2175843
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Icsilviu",
-        "page": "https://pixabay.com/photos/couple-young-people-running-alley-4893851/"
+        "user": "Stevebidmead",
+        "page": "https://pixabay.com/photos/runners-male-sport-run-athlete-373099/",
+        "id": 373099
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "rihaij",
-        "page": "https://pixabay.com/photos/motocross-mud-sports-enduro-quad-2262325/"
+        "user": "herbert2512",
+        "page": "https://pixabay.com/photos/dog-race-dog-racing-sport-dog-5570839/",
+        "id": 5570839
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "balouriarajesh",
-        "page": "https://pixabay.com/photos/farmer-load-rural-agricultural-4373374/"
+        "user": "oleg_mit",
+        "page": "https://pixabay.com/photos/soil-cracks-clay-earth-dry-desert-5342049/",
+        "id": 5342049
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Stewardesign",
-        "page": "https://pixabay.com/photos/athletes-marathon-finish-line-6759145/"
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/cyclists-race-bicycles-bikes-1851269/",
+        "id": 1851269
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Army Reserve photo by Sgt. Tamie Norris",
+        "license": "Public domain",
+        "title": "Know Your Defender - Brig Gen Christopher Samulski (8399934).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Know_Your_Defender_-_Brig_Gen_Christopher_Samulski_(8399934).jpg",
+        "id": "c:156073226"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Manuel-H",
+        "page": "https://pixabay.com/photos/forest-autumn-lake-birch-trees-10519674/",
+        "id": 10519674
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "cruznaira",
+        "page": "https://pixabay.com/photos/friendship-young-water-together-5969085/",
+        "id": 5969085
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0093_Finland.mp4",
     "status_v6": "video_done",
     "image_queries_done": [
-      "Nordic village",
-      "wife carrying race",
-      "running couple",
-      "muddy run",
-      "weight penalty wife carrying",
-      "finish line celebration"
+      "husband carrying wife",
+      "couple running obstacle course Finland",
+      "young male and female runners Finland",
+      "253 meter race course beer prize",
+      "water obstacle dry terrain Finland",
+      "team carrying partner race Finland",
+      "weight requirement beer prize",
+      "balance running in water Finland",
+      "breathing together race Finland"
     ],
     "narration_original": "핀란드에서는 남편이 아내를 안고 장애물 코스를 달린다고 들어보셨나요? 소니카리비에 매년 열리는 ‘남편 안아라’ 대회에서는 남성 참가자들이 아내나 여자친구를 어깨에 메고 253미터 길이의 코스를 2분 안에 완주해야 합니다. 코스에는 빙판, 물통, 나무 통 같은 장애물이 놓여 있어 관중들의 열띤 응원이 이어집니다. 가장 흥미로운 점은 우승 상금이 바로 아내 몸무게 킬로그램당 맥주 1병이라는 사실인데요. 예를 들어 몸무게가 60 kg이면 60병의 맥주를 받게 됩니다. 이렇게 독특한 상금 제도 때문에 대회는 매년 큰 관심을 모으며, 참가자들은 사랑과 체력을 동시에 시험합니다. 과연 다음 해엔 어떤 커플이 가장 많은 맥주를 손에 넣을지, 기대가 멈추지 않네요.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "scene_count": 12
   },
   {
     "country": "Kyrgyzstan",
@@ -8854,12 +8951,13 @@
       }
     ],
     "image_queries": [
-      "Mongolia children horse race",
-      "Ulaanbaatar Naadam festival",
-      "Mongolian barefoot rider",
-      "Mongolia horse with honey",
-      "Mongolia steppe spectators cheering",
-      "Mongolian horse and child"
+      "Mongolia child horse race",
+      "Naadam children's horse race",
+      "barefoot child riding horse",
+      "Mongolian horse and rider",
+      "child applying honey horse",
+      "honey on horse after race",
+      "Mongolia Naadam festival crowd"
     ],
     "fact_checked": true,
     "fact_issues": [
@@ -8879,56 +8977,67 @@
         "scene": 1,
         "source": "pixabay",
         "user": "Kanenori",
-        "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/"
+        "page": "https://pixabay.com/photos/boy-horse-riding-galloping-horse-7143682/",
+        "id": 7143682
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "user:InvictaHOG",
-        "license": "Public domain",
-        "title": "Naadam rider 2.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Naadam_rider_2.jpg"
+        "source": "pixabay",
+        "user": "Bergadder",
+        "page": "https://pixabay.com/photos/horses-horse-tradition-rider-394205/",
+        "id": 394205
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "user:InvictaHOG",
-        "license": "Public domain",
-        "title": "Naadam rider 1.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Naadam_rider_1.jpg"
+        "source": "pixabay",
+        "user": "kudybadorota",
+        "page": "https://pixabay.com/photos/horse-nature-forest-enchanted-4273438/",
+        "id": 4273438
       },
       {
         "scene": 4,
         "source": "pixabay",
         "user": "Erdenebayar",
-        "page": "https://pixabay.com/photos/horse-graze-pasture-grazing-grass-5167802/"
+        "page": "https://pixabay.com/photos/men-horsemen-rider-horse-male-1266738/",
+        "id": 1266738
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "hbieser",
-        "page": "https://pixabay.com/photos/mongolia-gobi-camels-steppe-mammal-695267/"
+        "user": "Uki_71",
+        "page": "https://pixabay.com/photos/pony-girl-horse-child-animal-2595144/",
+        "id": 2595144
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "sharkolot",
-        "page": "https://pixabay.com/photos/horse-mane-mammal-head-7242864/"
+        "user": "Anilsharma26",
+        "page": "https://pixabay.com/photos/horse-horse-race-jockey-7863940/",
+        "id": 7863940
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "westphotoandvideo",
+        "page": "https://pixabay.com/photos/band-music-live-music-concert-4671748/",
+        "id": 4671748
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0100_Mongolia.mp4",
     "status_v6": "video_done",
     "image_queries_done": [
-      "Mongolia children horse race",
-      "Ulaanbaatar Naadam festival",
-      "Mongolian barefoot rider",
-      "Mongolia horse with honey",
-      "Mongolia steppe spectators cheering",
-      "Mongolian horse and child"
+      "Mongolia child horse race",
+      "Naadam children's horse race",
+      "barefoot child riding horse",
+      "Mongolian horse and rider",
+      "child applying honey horse",
+      "honey on horse after race",
+      "Mongolia Naadam festival crowd"
     ],
     "youtube_id": "qR1gFJ3T8M8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-12"
+    "uploaded_at": "2026-10-12",
+    "scene_count": 12
   },
   {
     "country": "Germany",
@@ -10335,69 +10444,105 @@
       }
     ],
     "image_queries": [
-      "Lopburi Monkey Buffet Festival Thailand",
-      "Lopburi macaque monkeys temple",
-      "Monkey buffet fruit table Thailand",
-      "Phra Prang Sam Yot temple Lopburi",
-      "Thailand monkey festival crowd",
-      "Long-tailed macaque Thailand"
+      "Lopburi monkey buffet festival",
+      "Thailand Lopburi November festival",
+      "tons of fruit and vegetables",
+      "Thailand macaque feeding",
+      "November last Sunday festival",
+      "Thailand tourists watching monkeys eat",
+      "hundreds kilograms fruit pile",
+      "monkeys eating from table",
+      "Thailand festival date varies"
     ],
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0115_Thailand_v2.mp3",
     "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0115_Thailand_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
     "image_queries_done": [
-      "Lopburi Monkey Buffet Festival Thailand",
-      "Lopburi macaque monkeys temple",
-      "Monkey buffet fruit table Thailand",
-      "Phra Prang Sam Yot temple Lopburi",
-      "Thailand monkey festival crowd",
-      "Long-tailed macaque Thailand"
+      "Lopburi monkey buffet festival",
+      "Thailand Lopburi November festival",
+      "tons of fruit and vegetables",
+      "Thailand macaque feeding",
+      "November last Sunday festival",
+      "Thailand tourists watching monkeys eat",
+      "hundreds kilograms fruit pile",
+      "monkeys eating from table",
+      "Thailand festival date varies"
     ],
     "image_source": "pixabay",
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "romanticfatman",
-        "page": "https://pixabay.com/photos/monkey-animal-wildlife-mammal-2500919/"
+        "user": "pandapotter",
+        "page": "https://pixabay.com/photos/ape-monkey-sweet-cute-animal-2647016/",
+        "id": 2647016
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "blickpixel",
-        "page": "https://pixabay.com/photos/barbary-macaques-monkeys-450149/"
+        "user": "tathanhtuan",
+        "page": "https://pixabay.com/photos/yipeng-light-night-chiangmai-4670044/",
+        "id": 4670044
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "MakaraEk",
-        "page": "https://pixabay.com/photos/salad-fruit-berry-healthy-vitamins-7040875/"
+        "user": "ElasticComputeFarm",
+        "page": "https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/",
+        "id": 949913
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Waratharn",
-        "page": "https://pixabay.com/photos/lop-buri-phra-prang-sam-yot-monkey-1710827/"
+        "user": "Erik_Karits",
+        "page": "https://pixabay.com/photos/nature-animal-animals-in-the-wild-10100089/",
+        "id": 10100089
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "tathanhtuan",
-        "page": "https://pixabay.com/photos/yipeng-light-night-chiangmai-4670044/"
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/puzzle-last-part-joining-together-3223941/",
+        "id": 3223941
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Erik_Karits",
-        "page": "https://pixabay.com/photos/crab-eating-macaque-6727434/"
+        "user": "romanticfatman",
+        "page": "https://pixabay.com/photos/monkeys-pair-primates-mammals-2500916/",
+        "id": 2500916
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "silvyn",
+        "page": "https://pixabay.com/photos/mirabelle-plum-fruit-organic-pink-7605256/",
+        "id": 7605256
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "British Museum (Natural History).; Gray, John Edward",
+        "license": "Public domain",
+        "title": "Catalogue of monkeys, lemurs, and fruit-eating bats in the ... Museum BHL8412515.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Catalogue_of_monkeys,_lemurs,_and_fruit-eating_bats_in_the_..._Museum_BHL8412515.jpg",
+        "id": "c:44668281"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/ramayana-festival-dancer-woman-1807516/",
+        "id": 1807516
       }
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0115_Thailand.mp4",
     "status_v6": "video_done",
     "youtube_id": "DMAmgaLsOqM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "scene_count": 12
   },
   {
     "country": "Mexico",
