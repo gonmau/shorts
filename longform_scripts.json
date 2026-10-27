@@ -2523,29 +2523,36 @@
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:16",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom_timing.json",
-  "tts_hash": "8bb54b366d44",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0040_United_Kingdom.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0040_United_Kingdom_timing.json",
+  "tts_hash": "d998889b629c",
   "clips": [
    {
+    "query": "cheese rolling hill",
+    "path": "/home/runner/work/shorts/shorts/clips/0040_United Kingdom/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Macb3t",
+    "page": "https://pixabay.com/videos/id-16160/",
+    "id": "pixabay16160",
+    "check": "unknown"
+   },
+   {
     "query": "crowd cheering festival",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0040_United Kingdom\\clip_02.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0040_United Kingdom/clip_02.mp4",
     "source": "pixabay",
     "user": "Coverr-Free-Footage",
     "page": "https://pixabay.com/videos/id-1630/",
     "id": "pixabay1630",
-    "check": "ok",
-    "use": true
+    "check": "unknown"
    },
    {
     "query": "historic village market",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0040_United Kingdom\\clip_03.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0040_United Kingdom/clip_03.mp4",
     "source": "pixabay",
     "user": "EM80",
-    "page": "https://pixabay.com/videos/id-31974/",
-    "id": "pixabay31974",
-    "check": "ok",
-    "use": true
+    "page": "https://pixabay.com/videos/id-31556/",
+    "id": "pixabay31556",
+    "check": "unknown"
    }
   ],
   "compare_at": 0,
@@ -2601,10 +2608,38 @@
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:16",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia_timing.json",
-  "tts_hash": "816d57266c95",
-  "clips": [],
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0047_Slovenia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0047_Slovenia_timing.json",
+  "tts_hash": "86daff45d1d1",
+  "clips": [
+   {
+    "query": "Slovenian carnival parade",
+    "path": "/home/runner/work/shorts/shorts/clips/0047_Slovenia/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Engin_Akyurt",
+    "page": "https://pixabay.com/videos/id-27057/",
+    "id": "pixabay27057",
+    "check": "unknown"
+   },
+   {
+    "query": "Sheepskin costume closeup",
+    "path": "/home/runner/work/shorts/shorts/clips/0047_Slovenia/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Jari-Lobo",
+    "page": "https://pixabay.com/videos/id-150875/",
+    "id": "pixabay150875",
+    "check": "unknown"
+   },
+   {
+    "query": "Traditional bell ringing",
+    "path": "/home/runner/work/shorts/shorts/clips/0047_Slovenia/clip_03.mp4",
+    "source": "pixabay",
+    "user": "PremswaroopKasukurthi",
+    "page": "https://pixabay.com/videos/id-99350/",
+    "id": "pixabay99350",
+    "check": "unknown"
+   }
+  ],
   "compare_at": 0,
   "images": [],
   "title1": "슬로베니아 카니발",
@@ -2664,19 +2699,36 @@
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:17",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland_timing.json",
-  "tts_hash": "b77ac1036de3",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0093_Finland.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0093_Finland_timing.json",
+  "tts_hash": "7989d9aafbf8",
   "clips": [
    {
+    "query": "wife carrying race Finland",
+    "path": "/home/runner/work/shorts/shorts/clips/0093_Finland/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Pavlofox",
+    "page": "https://pixabay.com/videos/id-4534/",
+    "id": "pixabay4534",
+    "check": "unknown"
+   },
+   {
     "query": "obstacle course water",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0093_Finland\\clip_02.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0093_Finland/clip_02.mp4",
     "source": "pixabay",
     "user": "NickyPe",
     "page": "https://pixabay.com/videos/id-167469/",
     "id": "pixabay167469",
-    "check": "ok",
-    "use": true
+    "check": "unknown"
+   },
+   {
+    "query": "Finnish village festival",
+    "path": "/home/runner/work/shorts/shorts/clips/0093_Finland/clip_03.mp4",
+    "source": "pixabay",
+    "user": "aerialglimpses",
+    "page": "https://pixabay.com/videos/id-200025/",
+    "id": "pixabay200025",
+    "check": "unknown"
    }
   ],
   "compare_at": 0,
@@ -2732,39 +2784,36 @@
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:17",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia_timing.json",
-  "tts_hash": "d4f1d4c562c4",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0100_Mongolia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0100_Mongolia_timing.json",
+  "tts_hash": "f891a1cf5586",
   "clips": [
    {
     "query": "Mongolian steppe race",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0100_Mongolia\\clip_01.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0100_Mongolia/clip_01.mp4",
     "source": "pixabay",
-    "user": "Kanenori",
-    "page": "https://pixabay.com/videos/id-351028/",
-    "id": "pixabay351028",
-    "check": "ok",
-    "use": true
+    "user": "Vimeo-Free-Videos",
+    "page": "https://pixabay.com/videos/id-1295/",
+    "id": "pixabay1295",
+    "check": "unknown"
    },
    {
     "query": "children riding horses barefoot",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0100_Mongolia\\clip_02.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0100_Mongolia/clip_02.mp4",
     "source": "pixabay",
-    "user": "RoyBuri",
-    "page": "https://pixabay.com/videos/id-133581/",
-    "id": "pixabay133581",
-    "check": "ok",
-    "use": true
+    "user": "EvaRetana",
+    "page": "https://pixabay.com/videos/id-41155/",
+    "id": "pixabay41155",
+    "check": "unknown"
    },
    {
     "query": "applying honey to horse",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0100_Mongolia\\clip_03.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0100_Mongolia/clip_03.mp4",
     "source": "pixabay",
-    "user": "Josh_Malic",
-    "page": "https://pixabay.com/videos/id-39116/",
-    "id": "pixabay39116",
-    "check": "ok",
-    "use": false
+    "user": "NickyPe",
+    "page": "https://pixabay.com/videos/id-178049/",
+    "id": "pixabay178049",
+    "check": "unknown"
    }
   ],
   "compare_at": 0,
@@ -2820,39 +2869,36 @@
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:18",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand_timing.json",
-  "tts_hash": "0f7c7dcb9cf7",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0115_Thailand.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0115_Thailand_timing.json",
+  "tts_hash": "e3cf6997f653",
   "clips": [
    {
     "query": "Thai monkey buffet",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0115_Thailand\\clip_01.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_01.mp4",
     "source": "pixabay",
-    "user": "Coverr-Free-Footage",
-    "page": "https://pixabay.com/videos/id-5637/",
-    "id": "pixabay5637",
-    "check": "ok",
-    "use": true
+    "user": "Vimeo-Free-Videos",
+    "page": "https://pixabay.com/videos/id-1192/",
+    "id": "pixabay1192",
+    "check": "unknown"
    },
    {
     "query": "crowd watching monkeys eat",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0115_Thailand\\clip_02.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_02.mp4",
     "source": "pixabay",
-    "user": "tahagem_nin",
-    "page": "https://pixabay.com/videos/id-180691/",
-    "id": "pixabay180691",
-    "check": "ok",
-    "use": true
+    "user": "robert_arangol",
+    "page": "https://pixabay.com/videos/id-47437/",
+    "id": "pixabay47437",
+    "check": "unknown"
    },
    {
     "query": "fruit market stalls",
-    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0115_Thailand\\clip_03.mp4",
+    "path": "/home/runner/work/shorts/shorts/clips/0115_Thailand/clip_03.mp4",
     "source": "pixabay",
     "user": "ThierryBEUVE",
     "page": "https://pixabay.com/videos/id-58490/",
     "id": "pixabay58490",
-    "check": "ok",
-    "use": true
+    "check": "unknown"
    }
   ],
   "compare_at": 0,
@@ -2905,10 +2951,38 @@
   "sig": "2b096c7e973c",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-27 12:44",
-  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0071_Malta.mp3",
-  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0071_Malta_timing.json",
-  "tts_hash": "d6a30eeeb2f1",
-  "clips": [],
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0071_Malta.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0071_Malta_timing.json",
+  "tts_hash": "8e25f5201f9a",
+  "clips": [
+   {
+    "query": "Maltese festa pole climbing",
+    "path": "/home/runner/work/shorts/shorts/clips/0071_Malta/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Vimeo-Free-Videos",
+    "page": "https://pixabay.com/videos/id-1409/",
+    "id": "pixabay1409",
+    "check": "unknown"
+   },
+   {
+    "query": "crowd cheering Malta",
+    "path": "/home/runner/work/shorts/shorts/clips/0071_Malta/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-1630/",
+    "id": "pixabay1630",
+    "check": "unknown"
+   },
+   {
+    "query": "traditional wooden pole oiling",
+    "path": "/home/runner/work/shorts/shorts/clips/0071_Malta/clip_03.mp4",
+    "source": "pixabay",
+    "user": "NickyPe",
+    "page": "https://pixabay.com/videos/id-177474/",
+    "id": "pixabay177474",
+    "check": "unknown"
+   }
+  ],
   "verified_by": "manual",
   "locked": true,
   "edited": "2026-10-28 06:16",
