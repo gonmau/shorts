@@ -305,6 +305,71 @@ def save_credits(rows):
     CREDITS.write_text(json.dumps(cr, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+_LIC_RE = re.compile(r"(CC0(?:\s*1\.0)?|Public\s*domain|No restrictions|CC[\s-]*BY(?:[\s-]*(?:SA|NC|ND))*(?:[\s-]*\d\.\d)?)", re.I)
+
+
+def parse_credit_text(txt, link=""):
+    """'Pete Verdon, Public domain, via Wikimedia Commons' 같은 한 줄 -> {"license","user","title","page"} (못 읽으면 None)"""
+    t = re.sub(r",?\s*via\s+Wikimedia\s+Commons\s*$", "", str(txt or "").strip(), flags=re.I).strip(" ,")
+    if not t:
+        return None
+    ms = list(_LIC_RE.finditer(t))
+    if not ms:
+        return None
+    m = ms[-1]
+    lic = re.sub(r"\s+", " ", m.group(1)).strip().upper().replace("PUBLIC DOMAIN", "Public domain").replace("NO RESTRICTIONS", "No restrictions")
+    lic = re.sub(r"CC[\s-]*BY", "CC BY", lic).replace("CC BY SA", "CC BY-SA").replace("CC BY NC", "CC BY-NC").replace("CC BY ND", "CC BY-ND")
+    user = t[:ms[0].start()].strip(" ,") or t[:m.start()].strip(" ,")
+    user = re.sub(r",?\s*Wikimedia Commons\s*$", "", user, flags=re.I).strip(" ,")
+    page = str(link or "").strip()
+    title = ""
+    mm = re.search(r"/wiki/File:([^?#]+)", page)
+    if mm:
+        from urllib.parse import unquote
+        title = re.sub(r"\.[A-Za-z]{3,4}$", "", unquote(mm.group(1))).replace("_", " ")[:90]
+    return {"source": "user", "license": lic, "user": user, "title": title, "page": page}
+
+
+def parse_paste(text):
+    """탭/여러 칸 공백으로 나눈 '컷 / 저작권 / 원본링크' 표 붙여넣기 -> (credits dict, 건너뜀/주의 목록)"""
+    out, notes = {}, []
+    for line in str(text or "").splitlines():
+        if not line.strip() or line.lower().startswith("컷"):
+            continue
+        parts = [x.strip() for x in re.split(r"\t+|\s{2,}", line.strip())]
+        m = re.fullmatch(r"(\d+)_(\d+)", parts[0]) if parts else None
+        if not m:
+            notes.append(f"{parts[0] if parts else line[:20]}: 컷 이름 형식이 아님 (예: 40_01)")
+            continue
+        name = f"{int(m.group(1))}_{int(m.group(2)):02d}"
+        rest = parts[1:]
+        link = next((x for x in rest if x.startswith("http")), "")
+        cred = next((x for x in rest if not x.startswith("http")), "")
+        if not cred:
+            notes.append(f"{name}: 출처가 비어 있음")
+            continue
+        c = parse_credit_text(cred, link)
+        if not c:
+            notes.append(f"{name}: 라이선스를 못 읽음 ('{cred[:40]}')")
+            continue
+        if "/wiki/File:" not in link:
+            notes.append(f"{name}: 원본 링크가 파일 페이지가 아님 (검색 페이지) - 파일 페이지 주소로 바꾸면 좋음")
+        if re.search(r"NC|ND", c["license"]):
+            notes.append(f"{name}: {c['license']} 는 영상에 쓰기 위험")
+        out[name] = c
+    return out, notes
+
+
+def save_pasted(text):
+    """붙여넣은 표를 credits.json 에 병합 저장 -> (저장 개수, 주의 목록)"""
+    got, notes = parse_paste(text)
+    cr = _j(CREDITS, {})
+    cr.update(got)
+    MY.mkdir(exist_ok=True)
+    CREDITS.write_text(json.dumps(cr, ensure_ascii=False, indent=1), encoding="utf-8")
+    return len(got), notes
+
+
 def _blob_sha(path):
     import hashlib
     d = Path(path).read_bytes()
@@ -366,6 +431,7 @@ def main():
     ap.add_argument("--sync", choices=["down", "up"], default="")
     ap.add_argument("--repo", default="")
     ap.add_argument("--pick", default="")
+    ap.add_argument("--paste", default="", help="컷/저작권/원본링크 표(텍스트 파일)를 읽어 my_images/credits.json 에 저장")
     ap.add_argument("--cands", default="", help="후보 시트를 만들 소재 번호 (쉼표)")
     a = ap.parse_args()
     if a.sync:
@@ -376,6 +442,12 @@ def main():
             print(f"GitHub에서 my_images {g}개 받음 (같은 파일 {sm}개)")
         else:
             print(f"GitHub로 my_images {sync_up(a.repo)}개 올림")
+        return
+    if a.paste:
+        n_, notes_ = save_pasted(Path(a.paste).read_text(encoding="utf-8"))
+        print(f"출처 {n_}개 저장")
+        for x in notes_:
+            print("  확인 필요:", x)
         return
     if a.pick:
         pick(a.pick)

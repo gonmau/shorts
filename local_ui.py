@@ -1685,6 +1685,15 @@ with TL:
                     st.write(f"저장: {_f.name}")
                 else:
                     st.warning(f"{_f.name}: 이름 형식이 맞지 않아 건너뜀 (예: 117_03.jpg)")
+        with st.expander("📋 출처 한 번에 붙여넣기 (컷 / 저작권 / 원본링크 표)", expanded=False):
+            st.caption("스프레드시트에서 3칸(컷 · 저작권 · 원본링크)을 복사해 붙여넣으세요. 컷 이름은 `40_01` 형식, 저작권 칸은 `작가, 라이선스, via Wikimedia Commons` 형식이면 "
+                       "작가·라이선스·파일 제목을 자동으로 나눠 저장합니다. 이미 있는 출처는 같은 컷만 덮어씁니다. 비어 있는 줄은 건너뜁니다.")
+            _pt_ = st.text_area("붙여넣기", height=160, key="cut_paste")
+            if st.button("붙여넣은 출처 저장", key="cut_paste_save", disabled=not _pt_.strip()):
+                _n_, _notes_ = _CU.save_pasted(_pt_)
+                st.success(f"{_n_}개 컷의 출처를 저장했습니다.")
+                if _notes_:
+                    st.warning("확인 필요: " + " · ".join(_notes_[:40]))
         _mfs = sorted(f_ for f_ in Path("my_images").glob("*") if f_.suffix.lower() in _CU.EXT) if Path("my_images").exists() else []
         if _mfs:
             st.markdown("**내 사진 출처 입력** (직접 올린/고른 사진의 출처. 출처 구분에 따라 설명란 표기가 자동으로 들어갑니다)")
