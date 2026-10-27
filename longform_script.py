@@ -341,6 +341,16 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
     key = str(idx)
     sig = _hash(VERSION, item.get("narration", ""), item.get("country", ""), next_info, ",".join(candidates), LEN_RANGE)
     rec = store.get(key) or {}
+    try:   # 외부 AI 답변의 '현재 대본:' 같은 머리말이 저장돼 있으면 지운다 (음성이 읽지 않게)
+        import ext_script as _ES
+        _n2 = _ES.strip_labels(rec.get("narration", ""))
+        if rec.get("narration") and _n2 != rec["narration"].strip():
+            rec = {**rec, "narration": _n2}
+            store[key] = rec
+            save_scripts(store)
+            print(f"    [확장대본] {idx}: 대본 앞의 '현재 대본:' 같은 머리말을 지웠습니다", flush=True)
+    except Exception:
+        pass
     regen = force or bool(str(instruction or "").strip())
     _nr = re.sub(r"\s+", "", rec.get("narration", ""))
     if _nr and rec.get("locked") and not regen:   # 다른 언어로 만들어진 잠금 대본(채널 판별 오류 때 생김)은 쓰지 않는다

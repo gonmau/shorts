@@ -10,7 +10,16 @@ HEAD2 = re.compile(r"^\s*#{1,4}\s*\[?(\d+)\]?")
 STOP_LINE = re.compile(r"^\s*(?:#{1,4}\s*)?(?:\**\s*)?(검증\s*메모|검증\s*결과|출처|참고|notes?|sources?|verification)\b", re.I)
 
 
+LABEL = re.compile(r"^\s*(?:\**\s*)?(?:(?:현재|기존|수정(?:된)?|검증(?:된)?|최종|새)\s*(?:대본|나레이션)|(?:current|revised|final|new|original|corrected)\s*(?:script|narration))\s*\**\s*[:：]\s*\**\s*", re.I | re.M)
+
+
+def strip_labels(t):
+    """'현재 대본:' / 'Current script:' 같은 요청문 머리말이 답변에 섞여 들어온 것을 지운다 (음성이 그대로 읽는 것을 막음)"""
+    return LABEL.sub("", str(t or "")).strip()
+
+
 def clean_text(t):
+    t = strip_labels(t)
     t = re.sub(r"\[\s*\d+(?:\s*[,\-–]\s*\d+)*\s*\]", "", t)            # 각주 [1] [2,3]
     t = re.sub(r"【[^】]*】|\(\s*출처[^)]*\)|\[출처[^\]]*\]", "", t)
     t = re.sub(r"\[([^\]]+)\]\((?:https?://)[^)]*\)", r"\1", t)         # 마크다운 링크
