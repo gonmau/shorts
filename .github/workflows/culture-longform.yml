@@ -13,6 +13,8 @@
 name: culture-longform
 
 on:
+  schedule:
+    - cron: "0 11 * * 6"   # UTC 기준 (한국 시간 = UTC+9)
   workflow_dispatch:
     inputs:
       mode:
@@ -97,6 +99,7 @@ permissions:
 
 jobs:
   longform:
+    if: ${{ github.event_name != 'schedule' || vars.AUTO_RUN != 'off' }}   # 저장소 변수 AUTO_RUN=off 로 자동 실행 일시 중지
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:

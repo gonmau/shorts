@@ -2,12 +2,13 @@
 """Wikimedia Commons 사진 검색 (Pixabay에서 소재 사진을 못 찾을 때만 보조로 사용).
 
 안전 기준 (영상/수익화 채널에서 쓰기 위해 보수적으로):
-- 라이선스: CC0, 퍼블릭 도메인, CC BY 만 허용. CC BY-SA(동일조건), NC, ND 는 제외.
+- 라이선스: CC0, 퍼블릭 도메인, CC BY, CC BY-SA(환경변수 ALLOW_SA=0 이면 SA 제외) 허용. NC, ND 는 제외.
 - 별도 제한(Restrictions: 초상권/상표 등)이 표시된 파일, 비자유(NonFree) 파일, 작성자 표기가 없는 CC BY 파일은 제외.
 - 로고/지도/깃발/도표 같은 파일 이름은 제외, JPEG/PNG 만 사용.
 사용한 사진의 작성자/라이선스/링크는 image_credits에 저장되어 유튜브 설명란에 자동으로 들어간다.
 """
 import html
+import os
 import re
 import time
 
@@ -24,7 +25,7 @@ def _clean(s, n=120):
 
 
 def license_ok(name):
-    """CC0 / 퍼블릭 도메인 / CC BY(동일조건·비영리·변경금지 아님)만 True."""
+    """CC0 / 퍼블릭 도메인 / CC BY / CC BY-SA(ALLOW_SA 기본 켬, 출처 표기) 만 True. NC·ND 는 제외."""
     n = (name or "").lower().strip()
     if not n:
         return False
@@ -32,7 +33,8 @@ def license_ok(name):
         return True
     tokens = re.split(r"[^a-z0-9]+", n)
     if tokens[:2] == ["cc", "by"]:
-        return not any(t in ("sa", "nc", "nd") for t in tokens)
+        bad = ("nc", "nd") if os.environ.get("ALLOW_SA", "1") != "0" else ("sa", "nc", "nd")   # ALLOW_SA=0 이면 동일조건(SA)도 제외
+        return not any(t in bad for t in tokens)
     return False
 
 
