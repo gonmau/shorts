@@ -78,6 +78,36 @@ def apply_my_images(db, idx):
     return used
 
 
+def freeze(db, indexes):
+    """지금 쓰는 장면 사진(visuals/…/scene_NN.png)을 my_images/<번호>_<NN>.png 로 복사하고 사진 출처도 credits.json 에 옮긴다.
+    -> GitHub 에서 같은 사진으로 다시 만들 수 있다. 이미 my_images 에 있는 컷은 건드리지 않는다. -> (복사한 장수, 건너뜀 장수)"""
+    from common import visual_dir
+    from scenes import item_scene_count
+    cr = _j(CREDITS, {})
+    made = skipped = 0
+    MY.mkdir(exist_ok=True)
+    for idx in indexes:
+        if not (0 <= idx < len(db)):
+            continue
+        item = db[idx]
+        folder = visual_dir(BASE, idx, item)
+        by_scene = {c.get("scene"): c for c in (item.get("image_credits") or []) if isinstance(c, dict)}
+        for n in range(1, item_scene_count(item) + 1):
+            src = folder / f"scene_{n:02d}.png"
+            if not src.exists():
+                continue
+            if _my_file(idx, n):
+                skipped += 1
+                continue
+            shutil.copy2(src, MY / (cut_name(idx, n) + ".png"))
+            c = by_scene.get(n)
+            if c and cut_name(idx, n) not in cr:
+                cr[cut_name(idx, n)] = {k_: v_ for k_, v_ in c.items() if k_ != "scene"}
+            made += 1
+    CREDITS.write_text(json.dumps(cr, ensure_ascii=False, indent=1), encoding="utf-8")
+    return made, skipped
+
+
 def _chunks(text, k):
     s = [x.strip() for x in re.split(r"(?<=[.!?。])\s+", " ".join(str(text or "").split())) if x.strip()]
     if not s:
@@ -431,6 +461,7 @@ def main():
     ap.add_argument("--sync", choices=["down", "up"], default="")
     ap.add_argument("--repo", default="")
     ap.add_argument("--pick", default="")
+    ap.add_argument("--freeze", default="", help="소재 번호(예: 40,47,71-73)의 현재 장면 사진을 my_images 로 복사 (GitHub 에서 같은 사진으로 다시 만들 때)")
     ap.add_argument("--paste", default="", help="컷/저작권/원본링크 표(텍스트 파일)를 읽어 my_images/credits.json 에 저장")
     ap.add_argument("--cands", default="", help="후보 시트를 만들 소재 번호 (쉼표)")
     a = ap.parse_args()
@@ -442,6 +473,12 @@ def main():
             print(f"GitHub에서 my_images {g}개 받음 (같은 파일 {sm}개)")
         else:
             print(f"GitHub로 my_images {sync_up(a.repo)}개 올림")
+        return
+    if a.freeze:
+        from build_longform import parse_indexes as _pi
+        db_ = _j(BASE / "facts_db.json", [])
+        m_, sk_ = freeze(db_, _pi(a.freeze))
+        print(f"현재 사진 {m_}장을 my_images 로 복사 (이미 있던 {sk_}장은 그대로)")
         return
     if a.paste:
         n_, notes_ = save_pasted(Path(a.paste).read_text(encoding="utf-8"))

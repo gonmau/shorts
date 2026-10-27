@@ -1770,6 +1770,10 @@ with TL:
                 st.success("출처를 저장했습니다. 다음에 영상을 만들 때 설명란에 반영됩니다.")
         _mine_files = sorted(f_.name for f_ in Path("my_images").glob("*") if f_.suffix.lower() in _CU.EXT) if Path("my_images").exists() else []
         st.caption(f"my_images 에 있는 사진 {len(_mine_files)}장" + (": " + ", ".join(_mine_files[:30]) + (" ..." if len(_mine_files) > 30 else "") if _mine_files else ""))
+        if st.button("📥 현재 사진을 my_images에 담기 (위 대상 소재 번호)", key="cut_freeze", disabled=not _cidx,
+                     help="지금 PC에서 쓰는 장면 사진(visuals)을 컷 이름(40_09.png)으로 my_images에 복사하고 출처도 옮깁니다. 이미 my_images에 있는 컷은 그대로. "
+                          "이걸 한 뒤 아래 ⬆ 버튼으로 GitHub에 올리면 GitHub에서도 같은 사진으로 다시 만들 수 있습니다"):
+            run("cuts.py", "--freeze", _cidx)
         g1_, g2_ = st.columns(2)
         if g1_.button("⬇ GitHub에서 my_images 가져오기", key="cut_down"):
             run("cuts.py", "--sync", "down", "--repo", TTS_CFG["gh_repo"])
