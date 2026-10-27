@@ -50,6 +50,7 @@ DEFAULT_RETRIES = 5
 MIN_CHARS = 280
 TARGET_MIN_CHARS = 350
 TARGET_MAX_CHARS = 500
+HARD_MAX_CHARS = 600     # 재시도가 모두 실패하면 이 길이까지는 마지막 후보를 그대로 사용
 
 # 목표 길이(초): 환경변수 SCRIPT_TARGET_SEC 이 있으면 분량 기준을 거기에 맞춘다 (UI 2단계에서 지정). 없으면 아래 기본값.
 def _rate_mult():
@@ -63,6 +64,7 @@ if _SEC.replace(".", "", 1).isdigit() and float(_SEC) > 0:
     TARGET_MIN_CHARS = max(60, int(round(_c * 0.88, -1)))
     TARGET_MAX_CHARS = max(TARGET_MIN_CHARS + 20, int(round(_c * 1.12, -1)))
     MIN_CHARS = int(TARGET_MIN_CHARS * 0.8)
+    HARD_MAX_CHARS = int(TARGET_MAX_CHARS * 1.2)
 
 
 # ============================================================
@@ -819,6 +821,7 @@ def get_retry_seconds(error, attempt):
 
 def generate_with_model(client, model, fact, retries):
     prompt = build_prompt(fact)
+    best = None  # '너무 김'으로 거절됐지만 HARD_MAX_CHARS 이내인 마지막 후보
 
     for attempt in range(1, retries + 1):
         try:
@@ -855,6 +858,9 @@ def generate_with_model(client, model, fact, retries):
             if valid:
                 return narration, None
 
+            if "너무 김" in reason and len(normalize_text(narration)) <= HARD_MAX_CHARS:
+                best = narration
+
             raise RuntimeError(reason)
 
         except RateLimitError as e:
@@ -877,6 +883,9 @@ def generate_with_model(client, model, fact, retries):
 
         except Exception as e:
             if attempt >= retries:
+                if best:
+                    print(f"  [길이 초과 대본 사용] {len(normalize_text(best))}자 (재시도 모두 소진)")
+                    return best, None
                 return None, str(e)
 
             wait_seconds = min(3.0 * attempt, 15.0)

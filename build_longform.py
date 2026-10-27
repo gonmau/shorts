@@ -671,6 +671,8 @@ def run_rich(args, db, lf_db, members):
         imgs = [R.placeholder(0, countries[0])]
     plan_ = load_json(BASE / "longform_plan.json", {})
     custom_ = plan_ if plan_.get("members") == members else {}
+    if getattr(args, "deep_plan", None):
+        custom_ = args.deep_plan
     intro_txt = (custom_.get("intro_text") or "").strip() or LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])
     if custom_.get("intro_text"):
         print("오프닝 멘트: 직접 고친 문구 사용", flush=True)
@@ -700,22 +702,27 @@ def run_rich(args, db, lf_db, members):
         seg_cues[no] = (t_acc + card_len, cues)
         t_acc += card_len + dur
 
-    # 4) 요약 + 엔딩
-    items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
-    outro_txt = (custom_.get("outro_text") or "").strip() or LS.outro_text([x[2] for x in items])
-    if custom_.get("outro_text"):
-        print("엔딩 멘트: 직접 고친 문구 사용", flush=True)
-    out_rec = LS.prepare_extra("lf_outro", outro_txt) if (client or LS.enabled()) and not args.no_expand else None
-    rp = WORK / "seg_99_recap.mp4"
-    R.stage("요약 화면", n_stage, n_stage)
-    recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
-    parts.append(rp)
-    recap_start = t_acc
+    # 4) 요약 + 엔딩 (채널 표시 설정의 '요약 화면' 또는 --no-recap / LF_RECAP=0 으로 끌 수 있음)
+    recap_on = bool(R.BRAND.get("recap", True)) and not args.no_recap and os.environ.get("LF_RECAP", "1") != "0"
+    outro_txt, recap_len, recap_start = "", 0.0, None
+    if recap_on:
+        items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
+        outro_txt = (custom_.get("outro_text") or "").strip() or LS.outro_text([x[2] for x in items])
+        if custom_.get("outro_text"):
+            print("엔딩 멘트: 직접 고친 문구 사용", flush=True)
+        out_rec = LS.prepare_extra("lf_outro", outro_txt) if (client or LS.enabled()) and not args.no_expand else None
+        rp = WORK / "seg_99_recap.mp4"
+        R.stage("요약 화면", n_stage, n_stage)
+        recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
+        parts.append(rp)
+        recap_start = t_acc
+    else:
+        print("요약 화면 꺼짐: 마지막 챕터에서 바로 끝납니다", flush=True)
 
     # 5) 합치기 + 설명/썸네일/자막
     out_mp4 = OUT / f"longform_{lf_id:03d}.mp4"
     concat(parts, out_mp4)
-    desc = make_description(db, members, durs, intro_len, title, extra=[(recap_start, "요약" if not IS_EN else "Recap")])
+    desc = make_description(db, members, durs, intro_len, title, extra=([(recap_start, "요약" if not IS_EN else "Recap")] if recap_start is not None else None))
     if clips_on:
         try:
             import longform_clips as LC
@@ -733,7 +740,8 @@ def run_rich(args, db, lf_db, members):
         sl_ = [f"[제목] {title}", "", "[오프닝]", intro_txt, ""]
         for n_, i in enumerate(members, 1):
             sl_ += [f"[{n_}. {DISP(db[i].get('country', ''))}] {db[i].get('topic', '')}", recs[i].get("narration", ""), ""]
-        sl_ += ["[엔딩]", outro_txt]
+        if outro_txt:
+            sl_ += ["[엔딩]", outro_txt]
         (OUT / f"longform_{lf_id:03d}_script.txt").write_text("\n".join(sl_), encoding="utf-8")
     except Exception:
         pass
@@ -749,6 +757,7 @@ def run_rich(args, db, lf_db, members):
         "id": lf_id, "mode": args.mode, "theme": args.theme, "members": members, "title": title, "style": "rich",
         "expanded": bool(client), "clips": clips_on, "description": desc, "duration_sec": round(total_len, 1),
         "video": str(out_mp4.name), "status": "video_done", "created_at": datetime.now(timezone.utc).isoformat(),
+        **({"deep_of": args.deep_src, "members": [args.deep_src]} if getattr(args, "deep_src", None) is not None else {}),
     })
     with open(LF_DB, "w", encoding="utf-8") as f:
         json.dump(lf_db, f, ensure_ascii=False, indent=2)
@@ -757,6 +766,54 @@ def run_rich(args, db, lf_db, members):
         print("\n⚠️ 사진이 색 카드로 대신 들어간 챕터: " + ", ".join(f"{i} {c_} ({r_}/{n_}장)" for i, c_, r_, n_ in R.MISSING), flush=True)
     print(f"\n완료: {out_mp4} ({total_len / 60:.1f}분, {time.time() - t0:.0f}초 걸림)")
     print(f"제목: {title}")
+
+
+def run_deep(args, db, lf_db):
+    """심층편: 소재 1개 -> 소주제 섹션 대본 -> 가상 소재로 붙여 롱폼 파이프라인 실행 -> 정리"""
+    import deep as D
+    import longform_script as LS
+    src_l = parse_indexes(args.indexes)
+    if len(src_l) != 1:
+        raise SystemExit("심층편은 소재 번호를 1개만 넣어 주세요 (예: --indexes 117)")
+    src = src_l[0]
+    if not (0 <= src < len(db)):
+        raise SystemExit(f"소재 번호 {src} 가 없습니다")
+    item = db[src]
+    if not str(item.get("narration", "")).strip():
+        raise SystemExit(f"소재 {src} 에 쇼츠 대본이 없습니다. 먼저 대본을 만드세요.")
+    n = max(3, min(8, int(args.sections)))
+    minutes = max(5.0, min(12.0, float(args.minutes)))
+    print(f"심층편: [{src}] {DISP(item.get('country', ''))} - {item.get('topic', '')} / 소주제 {n}개 · 목표 약 {minutes:g}분", flush=True)
+    if args.dry_run:
+        return
+    if not LS.enabled():
+        raise SystemExit("심층편은 AI 대본이 필요합니다 (GROQ_API_KEY 확인)")
+    client, models = LS.client_models()
+    only = set(parse_indexes(args.only)) if args.only else set()   # 섹션 번호(1부터)
+    force = set(range(1, n + 1)) if (args.regen and not only) else (only or None)
+    data = D.generate(client, models, src, item, n=n, minutes=minutes, instruction=args.instruction, only=force)
+    OUT.mkdir(exist_ok=True)
+    (BASE / "longform_plan.txt").write_text(D.script_text(src, item, data), encoding="utf-8")
+    if args.plan_only or args.preview == "script":
+        tot = sum(len(s.get("narration", "")) for s in data["sections"])
+        print(f"\n심층편 대본 준비 완료: 섹션 {len(data['sections'])}개 · {tot}자 (약 {tot / (14.5 if IS_EN else 6.7) / 60:.1f}분). 확인/수정한 뒤 '심층편 만들기'를 누르세요.", flush=True)
+        return
+    if args.dry_run:
+        return
+    new = D.materialize(src, data)
+    try:
+        db = load_json(BASE / "facts_db.json", db)
+        args.deep_src = src
+        args.deep_plan = {"intro_text": D.intro_text(item, len(new), IS_EN),
+                          "outro_text": D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN)}
+        args.title = args.title or D.title(item, minutes, IS_EN)
+        args.min = 1
+        args.mode = "manual"
+        args.theme = ""
+        return run_rich(args, db, lf_db, new)
+    finally:
+        k = D.cleanup()
+        print(f"심층편 임시 소재 {k}개 정리", flush=True)
 
 
 # ---------------------------------------------------------------- main
@@ -784,6 +841,10 @@ def main():
     ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
+    ap.add_argument("--no-recap", action="store_true", help="마지막 요약 화면(+엔딩 멘트)을 만들지 않는다")
+    ap.add_argument("--deep", action="store_true", help="심층편: --indexes 의 소재 1개를 소주제 여러 개로 나눠 긴 영상 1편으로 만든다")
+    ap.add_argument("--sections", type=int, default=5, help="심층편 소주제 개수 (3~8)")
+    ap.add_argument("--minutes", type=float, default=8.0, help="심층편 목표 길이(분, 5~12)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
     ap.add_argument("--preview", choices=["script", "images", "voice", "cuts"], default="",
                     help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3, cuts=컷 시트+후보 사진 시트")
@@ -794,6 +855,8 @@ def main():
 
     db = load_json(BASE / "facts_db.json", [])
     lf_db = load_json(LF_DB, [])
+    if args.deep:
+        return run_deep(args, db, lf_db)
     members = select_members(db, lf_db, args.mode, args.indexes, args.theme, args.count, args.start,
                              args.min, args.max)
     total_est = sum(est_seconds(db[i]) for i in members)

@@ -60,7 +60,7 @@ def arr(im):
 
 BRAND_FILE = Path(__file__).resolve().parent / "longform_brand.json"
 BRAND_DEFAULT = {"channel": "", "handle": "", "avatar": "", "hud": True, "hud_avatar": True, "hud_name": True, "hud_handle": True,
-                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": ""}
+                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": "", "recap": True}
 
 
 def load_brand():

@@ -125,7 +125,7 @@ if "code_chk" not in st.session_state and os.path.exists("update_code.py"):
 def _lf_extra_files():
     """롱폼 DB와 함께 올릴 파일들 (고친 대본, 채널 표시 설정/이미지, 내 스타일 지침)"""
     out = []
-    for f_ in ("longform_scripts.json", "longform_brand.json", "channel_avatar.png", "style_profile.json"):
+    for f_ in ("longform_scripts.json", "longform_brand.json", "channel_avatar.png", "style_profile.json", "deep_db.json"):
         if os.path.exists(f_):
             out += ["--file", f_]
     return out
@@ -687,6 +687,8 @@ FEATURES = [
     ("롱폼", "오프닝 · 엔딩 멘트 수정", "🎞 롱폼 › ② › 🎤 오프닝·엔딩 멘트", "영상 앞 소개와 요약 화면에서 읽는 멘트를 고쳐 그 문구로 음성 생성", "🆕"),
     ("롱폼", "사진·영상 확인 (빠진 사진 점검)", "🎞 롱폼 › ② 챕터 안 '사진 · 영상 확인'", "챕터별 사진 미리보기, 빠진 사진 받기, 스톡 영상 미리보고 끄기. 빠진 사진이 있으면 합성 전에 멈춤", "🆕"),
     ("롱폼", "고친 대본에 맞춰 키워드·비교 다시 만들기", "🎞 롱폼 › ② 챕터 안 🔁 버튼", "나레이션을 고친 뒤 AI가 키워드 팝업·비교 카드·요약·영상 검색어를 새 글에 맞춰 다시 만듦 (대본은 그대로)", "🆕"),
+    ("롱폼", "심층편 (소재 1개 → 긴 영상 1편)", "🎞 롱폼 › 🔭 심층편 / Actions > longform > deep", "소재 번호 1개를 소주제 3~8개(기본 5)로 나눠 5~12분(기본 8분) 영상 1편으로. 섹션 대본은 확인·수정·잠금 가능(deep_db.json). GitHub는 manual + 번호 1개 + deep 체크", "신규"),
+    ("롱폼", "마지막 요약 화면 켜고 끄기", "🎞 롱폼 › 🎨 채널 표시 '마지막 요약 화면' / 심층편 체크박스 / Actions recap", "끄면 요약 화면과 엔딩 멘트 없이 마지막 챕터에서 바로 끝. 설명란 '요약' 챕터도 빠짐. 심층편에도 동일 적용", "신규"),
     ("롱폼", "스톡 영상 (Pexels/Pixabay)", "🎞 롱폼 체크박스", "분위기용 짧은 영상을 일부 장면에 사용 (Pixabay 키 필요)", "🆕"),
     ("롱폼", "렌더링 진행률", "🎞 롱폼 실행 로그", "10%마다 진행률과 남은 시간 표시", "🆕"),
     ("자동", "자동 진행", "이 탭 아래 '⚡ 자동 진행'", "확인 없이 대본/이미지/렌더링까지 한 번에", ""),
@@ -1762,9 +1764,55 @@ with TL:
             st.success("저장했습니다. 다음 롱폼부터 적용됩니다. (GitHub Actions에서도 쓰려면 동기화 탭에서 올리세요)")
     lf_fill = st.checkbox("🖼 빠진 사진은 합성 전에 자동으로 받아 채우기 (Pixabay/Commons)", True, key="lf_fill",
                           help="사진이 비어 있으면 색 카드로 대신 들어가므로, 먼저 받아서 채웁니다. PIXABAY_API_KEY 필요. 끄면 빠진 채로(또는 아래 설정에 따라 멈춤)")
+    try:
+        R_BRAND_RECAP = bool(json.load(open("longform_brand.json", encoding="utf-8")).get("recap", True))
+    except Exception:
+        R_BRAND_RECAP = True
+    lf_nomiss_deep = False
     common_args = ["--channel", CH, "--handle", HD, "--style", "classic" if lf_style.startswith("classic") else "rich"] \
         + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else []) + (["--fill-images"] if lf_fill else [])
     base_args = ["build_longform.py"] + sel_args + common_args + (["--regen"] if lf_regen else [])
+
+    with st.expander("🔭 심층편 (소재 1개 → 소주제 여러 개로 나눠 긴 영상 1편)", expanded=False):
+        st.caption("소재 번호 1개를 넣으면 소주제(배경·생활·비교·디테일·여행자 팁…)로 나눠 한 편으로 만듭니다. 소주제 개수와 목표 길이로 섹션당 글자 수가 정해져서 "
+                   "AI가 그 분량에 맞춰 씁니다. ① 대본 만들기 → 아래에서 확인/수정(잠금) → ② 심층편 만들기.")
+        d1, d2, d3 = st.columns(3)
+        _dsrc = d1.number_input("소재 번호", min_value=0, value=0, step=1, key="deep_src")
+        _dsec = d2.slider("소주제 개수", 3, 8, 5, key="deep_sec")
+        _dmin = d3.slider("목표 길이 (분)", 5, 12, 8, key="deep_min")
+        _drecap = st.checkbox("마지막 요약 화면 + 엔딩 멘트 넣기", bool(R_BRAND_RECAP), key="deep_recap", help="끄면 마지막 소주제에서 바로 끝납니다 (채널 표시 설정과 별개로 이번 실행에만 적용)")
+        _dins = st.text_input("AI 추가 지시 (선택, 예: 한국과 비교를 더 자세히)", key="deep_ins")
+        _dargs = ["build_longform.py", "--deep", "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
+        e1, e2 = st.columns(2)
+        if e1.button("① 심층편 대본 만들기", key="deep_plan_go", help="음성/영상 없이 섹션 대본만 AI로 씁니다. 이미 있는 대본(잠금 포함)은 재사용"):
+            run(*_dargs, "--plan-only", *(["--instruction", _dins] if _dins else []))
+            st.rerun()
+        if e2.button("② 심층편 만들기 (음성 + 영상 합성)", key="deep_run", type="primary"):
+            TIMES.clear()
+            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), "--title", ltitle)
+        try:
+            import deep as _DP
+            _dd = _DP.load().get(str(int(_dsrc)))
+        except Exception:
+            _dd = None
+        if _dd:
+            import pandas as pd
+            st.caption(f"저장된 심층편 대본: 소주제 {len(_dd['sections'])}개 · 만든 때 {_dd.get('created', '')}  (개수/길이를 바꾸면 ①이 새로 씁니다. 잠금된 섹션은 유지)")
+            _df = pd.DataFrame([{"잠금": bool(x.get("locked")), "소제목": x.get("title", ""), "요약": x.get("recap", ""), "나레이션": x.get("narration", ""),
+                                 "글자수": len(x.get("narration", ""))} for x in _dd["sections"]])
+            _ed = st.data_editor(_df, key=f"deep_ed_{int(_dsrc)}", use_container_width=True, hide_index=True, disabled=["글자수"],
+                                 column_config={"나레이션": st.column_config.TextColumn(width="large")})
+            if st.button("수정한 대본 저장 · 잠금", key="deep_save"):
+                for k_, r_ in _ed.iterrows():
+                    x_ = _dd["sections"][k_]
+                    if r_["나레이션"] != x_.get("narration"):
+                        x_["narration"] = str(r_["나레이션"]).strip(); x_["keywords"] = [kw for kw in x_.get("keywords", []) if True]; x_["locked"] = True
+                    else:
+                        x_["locked"] = bool(r_["잠금"])
+                    x_["title"] = str(r_["소제목"]).strip() or x_.get("title", "")
+                    x_["recap"] = str(r_["요약"]).strip()
+                _all = _DP.load(); _all[str(int(_dsrc))] = _dd; _DP.save(_all)
+                st.success("저장했습니다 (수정한 섹션은 잠금)."); st.rerun()
 
     def _lf_plan():
         try:

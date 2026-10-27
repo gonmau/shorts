@@ -56,6 +56,21 @@ on:
         type: boolean
         default: false
 
+      recap:
+        description: "롱폼 마지막에 요약 화면 + 엔딩 멘트 넣기 (끄면 마지막 챕터에서 바로 끝)"
+        type: boolean
+        default: true
+      deep:
+        description: "심층편 (manual + 번호 1개: 그 소재 하나를 소주제 여러 개로 나눠 긴 영상 1편으로)"
+        type: boolean
+        default: false
+      sections:
+        description: "심층편 소주제 개수 (3~8)"
+        default: "5"
+      minutes:
+        description: "심층편 목표 길이 분 (5~12)"
+        default: "8"
+
       cross_check:
         description: "대본 교차검증 (위키 근거 + 다른 모델 검증, 토큰 많이 씀. 기본 끔 - 직접 검증한 대본을 쓰는 방식)"
         type: boolean
@@ -81,6 +96,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
+      LF_RECAP: ${{ github.event.inputs.recap == 'false' && '0' || '1' }}
+      DEEPARGS: ${{ github.event.inputs.deep == 'true' && format('--deep --sections {0} --minutes {1}', github.event.inputs.sections || '5', github.event.inputs.minutes || '8') || '' }}
       CROSS_CHECK: ${{ github.event.inputs.cross_check == 'true' && '1' || '0' }}
       PYTHONUNBUFFERED: "1"
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}   # 롱폼 확장 대본/교차검증용
@@ -129,14 +146,14 @@ jobs:
         if: ${{ env.PREVIEW != '' }}
         run: |
           case "$PREVIEW" in
-            list)   python build_longform.py --dry-run --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" ;;
-            *)      python build_longform.py --preview "$PREVIEW" --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" ;;
+            list)   python build_longform.py --dry-run --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" $DEEPARGS ;;
+            *)      python build_longform.py --preview "$PREVIEW" --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" $DEEPARGS ;;
           esac
 
       - name: 롱폼 만들기
         if: ${{ env.PREVIEW == '' }}
         run: |
-          python build_longform.py --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" --title "$TITLE" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "${{ vars.CHANNEL_HANDLE || '@gonmauY' }}"
+          python build_longform.py --mode "$MODE" --indexes "$INDEXES" --theme "$THEME" --count "$COUNT" --start "$START" --title "$TITLE" $DEEPARGS --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "${{ vars.CHANNEL_HANDLE || '@gonmauY' }}"
 
       # facts_db.json 은 음성/이미지 경로가 바뀌었을 수 있어도 저장하지 않는다 (longform_db.json 만 커밋)
       - name: longform_db.json 커밋
@@ -147,6 +164,7 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           [ -f longform_db.json ] && git add longform_db.json || true
           [ -f longform_scripts.json ] && git add longform_scripts.json || true
+          [ -f deep_db.json ] && git add deep_db.json || true
           [ -f topic_ko.json ] && git add topic_ko.json || true
           [ -d my_images ] && git add my_images || true
           git diff --cached --quiet || git commit -m "chore: update longform_db.json [skip ci]"
