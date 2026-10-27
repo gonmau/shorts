@@ -2504,28 +2504,7 @@
     "text": "작은 상금"
    }
   ],
-  "compare": {
-   "title": "영국 vs 핀란드",
-   "left": "영국",
-   "right": "핀란드",
-   "rows": [
-    {
-     "label": "전통 행사",
-     "left": "치즈 굴리기",
-     "right": "스키 경기"
-    },
-    {
-     "label": "참가자 규모",
-     "left": "수백 명",
-     "right": "소규모"
-    },
-    {
-     "label": "부상 위험",
-     "left": "높음",
-     "right": "낮음"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "치즈 굴리기는 영국 고유의 스릴 넘치는 전통입니다.",
   "broll": [
    "cheese rolling hill",
@@ -2543,7 +2522,7 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11",
+  "edited": "2026-10-28 06:16",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom_timing.json",
   "tts_hash": "8bb54b366d44",
@@ -2555,7 +2534,8 @@
     "user": "Coverr-Free-Footage",
     "page": "https://pixabay.com/videos/id-1630/",
     "id": "pixabay1630",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    },
    {
     "query": "historic village market",
@@ -2564,8 +2544,18 @@
     "user": "EM80",
     "page": "https://pixabay.com/videos/id-31974/",
     "id": "pixabay31974",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    }
+  ],
+  "compare_at": 0,
+  "images": [],
+  "title1": "영국 치즈 굴리기",
+  "title2": "누가 먼저 잡을까?",
+  "clip_queries": [
+   "cheese rolling hill",
+   "crowd cheering festival",
+   "historic village market"
   ]
  },
  "47": {
@@ -2592,28 +2582,7 @@
     "text": "유네스코 무형문화유산"
    }
   ],
-  "compare": {
-   "title": "슬로베니아 vs 영국",
-   "left": "슬로베니아",
-   "right": "영국",
-   "rows": [
-    {
-     "label": "카니발 규모",
-     "left": "수만 명",
-     "right": "수천 명"
-    },
-    {
-     "label": "전통 기원",
-     "left": "중세 전설",
-     "right": "중세 의식"
-    },
-    {
-     "label": "유네스코 등재",
-     "left": "있음",
-     "right": "없음"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "Kurent와 종소리로 겨울을 쫓는 슬로베니아 카니발",
   "broll": [
    "Slovenian carnival parade",
@@ -2631,11 +2600,20 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11",
+  "edited": "2026-10-28 06:16",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia_timing.json",
   "tts_hash": "816d57266c95",
-  "clips": []
+  "clips": [],
+  "compare_at": 0,
+  "images": [],
+  "title1": "슬로베니아 카니발",
+  "title2": "겨울을 쫓는 비밀?",
+  "clip_queries": [
+   "Slovenian carnival parade",
+   "Sheepskin costume closeup",
+   "Traditional bell ringing"
+  ]
  },
  "48": {
   "narration": "몰타의 성줄리안스에서는 여름 축제에 바다 위로 길게 뻗은 장대가 등장합니다. 이 전통 놀이의 이름은 고스트라입니다. 긴 나무 장대를 비스듬히 세우고, 표면에 돼지기름을 듬뿍 발라 미끄럽게 만듭니다. 장대 끝에는 깃발이 걸려 있습니다. 참가자들은 맨발로 달려 올라가 그 깃발을 잡으려 합니다. 하지만 기름이 발린 장대는 상상 이상으로 미끄럽습니다. 몇 걸음 가다가 균형을 잃고 바다로 빠지는 사람이 많습니다. 그래서 관객들의 웃음과 함성이 끊이지 않습니다. 깃발을 잡은 사람은 상품을 받고, 마을의 영웅이 됩니다. 고스트라는 성줄리안스의 수호성인 축제와 깊이 연결되어 있습니다. 이 마을의 축제는 대체로 8월 마지막 주말에 열립니다. 이 놀이는 1800년대부터 성줄리안스 축제의 일부로 이어져 왔다는 기록이 있습니다. 이름은 이탈리아어에서 왔으며, 나폴리 지역의 장대 오르기 놀이와 연관이 있다고 알려져 있습니다. 장대 끝의 세 깃발에는 각각 의미가 담겨 있습니다. 파란색과 흰색 깃발은 성모 마리아를, 노란색과 흰색 깃발은 바티칸을 상징합니다. 벨기에 삼색기는 성 줄리안과 연결된 상징으로 쓰입니다. 참가자들은 단순히 힘세면 되는 것이 아닙니다. 발바닥 감각, 균형, 속도, 그리고 무엇보다 담력이 필요합니다. 너무 천천히 가면 미끄러지고, 너무 빨리 가면 중심을 잃습니다. 물에 빠져도 다치지 않도록 안전 요원과 구조 준비가 함께 이루어집니다. 최근에는 아이들도 참여할 수 있는 난이도 낮은 형태가 마련되기도 했습니다. 지역 주민에게 고스트라는 관광 쇼가 아니라 축제의 자존심입니다. 물에 빠진 사람도 웃으며 다시 도전하고, 관객은 그 모습을 함께 응원합니다. 다음 이야기에서는 아내를 업고 장애물 코스를 달리는 핀란드의 독특한 선수권을 만나 보겠습니다.",
@@ -2667,28 +2645,7 @@
     "text": "공동체 의식"
    }
   ],
-  "compare": {
-   "title": "핀란드 vs 몽골",
-   "left": "핀란드",
-   "right": "몽골",
-   "rows": [
-    {
-     "label": "경기 형태",
-     "left": "장애물 달리기",
-     "right": "말 타기 경기"
-    },
-    {
-     "label": "참가 연령",
-     "left": "17~18세 이상",
-     "right": "대체로 성인"
-    },
-    {
-     "label": "규칙 엄격성",
-     "left": "무게·시간 제한",
-     "right": "규칙 느슨함"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "핸드폰을 들고 무게를 보충하며 달리는 핀란드의 독특한 경기",
   "broll": [
    "wife carrying race Finland",
@@ -2706,7 +2663,7 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11",
+  "edited": "2026-10-28 06:17",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland_timing.json",
   "tts_hash": "b77ac1036de3",
@@ -2718,8 +2675,18 @@
     "user": "NickyPe",
     "page": "https://pixabay.com/videos/id-167469/",
     "id": "pixabay167469",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    }
+  ],
+  "compare_at": 0,
+  "images": [],
+  "title1": "핀란드",
+  "title2": "사람을 업고 달리는 세계선수권",
+  "clip_queries": [
+   "wife carrying race Finland",
+   "obstacle course water",
+   "Finnish village festival"
   ]
  },
  "100": {
@@ -2746,28 +2713,7 @@
     "text": "자연과 조화"
    }
   ],
-  "compare": {
-   "title": "몽골 vs 태국",
-   "left": "몽골",
-   "right": "태국",
-   "rows": [
-    {
-     "label": "경주 방식",
-     "left": "맨발·안장없음",
-     "right": "전통 무용·보트"
-    },
-    {
-     "label": "주요 행사",
-     "left": "나담 축제",
-     "right": "송크란 물놀이"
-    },
-    {
-     "label": "참가 연령",
-     "left": "어린이 중심",
-     "right": "전 연령층"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "어린이와 말이 함께 만든 나담의 감동",
   "broll": [
    "Mongolian steppe race",
@@ -2785,7 +2731,7 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11",
+  "edited": "2026-10-28 06:17",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia_timing.json",
   "tts_hash": "d4f1d4c562c4",
@@ -2797,7 +2743,8 @@
     "user": "Kanenori",
     "page": "https://pixabay.com/videos/id-351028/",
     "id": "pixabay351028",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    },
    {
     "query": "children riding horses barefoot",
@@ -2806,7 +2753,8 @@
     "user": "RoyBuri",
     "page": "https://pixabay.com/videos/id-133581/",
     "id": "pixabay133581",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    },
    {
     "query": "applying honey to horse",
@@ -2815,8 +2763,18 @@
     "user": "Josh_Malic",
     "page": "https://pixabay.com/videos/id-39116/",
     "id": "pixabay39116",
-    "check": "ok"
+    "check": "ok",
+    "use": false
    }
+  ],
+  "compare_at": 0,
+  "images": [],
+  "title1": "5살 아이 말경주",
+  "title2": "꿀로 감사 전해요",
+  "clip_queries": [
+   "Mongolian steppe race",
+   "children riding horses barefoot",
+   "applying honey to horse"
   ]
  },
  "115": {
@@ -2843,28 +2801,7 @@
     "text": "자연과 공존"
    }
   ],
-  "compare": {
-   "title": "태국 vs 핀란드",
-   "left": "태국",
-   "right": "핀란드",
-   "rows": [
-    {
-     "label": "축제 성격",
-     "left": "동물 감사·관광",
-     "right": "자연 보호·전통"
-    },
-    {
-     "label": "주요 대상",
-     "left": "마카크 원숭이",
-     "right": "곰·사슴"
-    },
-    {
-     "label": "음식 규모",
-     "left": "수 톤 과일",
-     "right": "소규모 지역식"
-    }
-   ]
-  },
+  "compare": null,
   "recap": "원숭이와 사람, 자연이 함께하는 로프부리 축제",
   "broll": [
    "Thai monkey buffet",
@@ -2882,7 +2819,7 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11",
+  "edited": "2026-10-28 06:18",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand_timing.json",
   "tts_hash": "0f7c7dcb9cf7",
@@ -2894,7 +2831,8 @@
     "user": "Coverr-Free-Footage",
     "page": "https://pixabay.com/videos/id-5637/",
     "id": "pixabay5637",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    },
    {
     "query": "crowd watching monkeys eat",
@@ -2903,7 +2841,8 @@
     "user": "tahagem_nin",
     "page": "https://pixabay.com/videos/id-180691/",
     "id": "pixabay180691",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    },
    {
     "query": "fruit market stalls",
@@ -2912,8 +2851,18 @@
     "user": "ThierryBEUVE",
     "page": "https://pixabay.com/videos/id-58490/",
     "id": "pixabay58490",
-    "check": "ok"
+    "check": "ok",
+    "use": true
    }
+  ],
+  "compare_at": 0,
+  "images": [],
+  "title1": "태국 원숭이 뷔페",
+  "title2": "로프부리의 과일 향연",
+  "clip_queries": [
+   "Thai monkey buffet",
+   "crowd watching monkeys eat",
+   "fruit market stalls"
   ]
  },
  "71": {
@@ -2940,29 +2889,8 @@
     "text": "공동체 결속"
    }
   ],
-  "compare": {
-   "title": "몰타 vs 핀란드",
-   "left": "몰타",
-   "right": "핀란드",
-   "rows": [
-    {
-     "label": "축제 성격",
-     "left": "종교·해양",
-     "right": "겨울·스포츠"
-    },
-    {
-     "label": "주요 활동",
-     "left": "기둥 오르기",
-     "right": "스키·라플라"
-    },
-    {
-     "label": "관객 분위기",
-     "left": "열정·함성",
-     "right": "차분·조용"
-    }
-   ]
-  },
-  "recap": "‘ġostra’는 몰타 축제의 핵심 전통입니다.",
+  "compare": null,
+  "recap": "‘gostra’는 몰타 축제의 핵심 전통입니다.",
   "broll": [
    "Maltese festa pole climbing",
    "crowd cheering Malta",
@@ -2983,7 +2911,16 @@
   "clips": [],
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-28 00:11"
+  "edited": "2026-10-28 06:16",
+  "compare_at": 0,
+  "images": [],
+  "title1": "몰타 마을 축제 전통",
+  "title2": "깃발 잡으면 행운?",
+  "clip_queries": [
+   "Maltese festa pole climbing",
+   "crowd cheering Malta",
+   "traditional wooden pole oiling"
+  ]
  },
  "106": {
   "narration": "터키에서 겨울이면 거대한 낙타들이 몸싸움을 벌이는 축제가 열립니다. 에게 해 연안 셀축 마을에서는 매년 1월 셋째 주말에 낙타 레슬링을 개최합니다. 이 전통은 수백 년 전부터 이어져 온 것으로 알려져 있습니다. 경기 전에 낙타 입에 끈이나 마구리를 넣어 물지 못하게 합니다. 사육사는 낙타를 목과 몸으로 밀어내며 상대를 넘어뜨리게 합니다. 승자는 상대를 바닥에 눕히거나 도망치게 만든 낙타입니다. 관중들은 흥분된 함성으로 응원하고, 지역 상인들은 따뜻한 차와 전통 간식을 판매합니다. 낙타 레슬링은 단순한 구경거리를 넘어 지역 정체성을 보여주는 행사로 자리 잡았습니다. 그러나 동물 복지를 우려하는 목소리도 커지고 있어, 최근에는 안전 규정을 강화하려는 움직임이 있습니다. 이런 논란에도 불구하고 축제는 여전히 많은 관광객을 끌어모으며, 셀축의 겨울 풍경과 어우러져 독특한 문화 체험을 제공합니다. 다음에는 이탈리아의 여름 축제 이야기를 살펴볼게요.",
