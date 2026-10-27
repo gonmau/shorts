@@ -125,9 +125,18 @@ jobs:
       START: ${{ github.event.inputs.start_index || '106' }}
       TITLE: ${{ github.event.inputs.title || '' }}
       PICK: ${{ github.event.inputs.pick || '' }}
-      PREVIEW: ${{ github.event.inputs.preview == 'off' && (github.event.inputs.dry_run == 'true' && 'list' || '') || github.event.inputs.preview }}
+      PREVIEW: ${{ github.event.inputs.preview || '' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: 미리 보기 값 정리 (off = 영상까지 만들기)
+        run: |
+          P="$PREVIEW"
+          if [ "$P" = "off" ]; then P=""; fi
+          if [ -z "$P" ] && [ "$DRY_RUN" = "true" ]; then P="list"; fi
+          echo "PREVIEW=$P" >> "$GITHUB_ENV"
+          echo "미리 보기 모드: '${P:-없음(영상까지)}'"
 
       - uses: actions/setup-python@v5
         with:
