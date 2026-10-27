@@ -368,3 +368,4 @@
 {"id": "1793135536918-988d47", "time": "2026-10-28 06:12:16", "channel": "KO", "source": "PC", "kind": "cuts", "title": "cuts.py --freeze 40,47,71,93,100,115", "status": "success", "secs": 0.7, "detail": ""}
 {"id": "1793137194691-0bcdc1", "time": "2026-10-28 06:39:54", "channel": "KO", "source": "Actions", "kind": "롱폼", "title": "culture-longform #10", "status": "failure", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/40588262670"}
 {"id": "1793140637383-f99326", "time": "2026-10-28 07:37:17", "channel": "KO", "source": "Actions", "kind": "롱폼", "title": "culture-longform #11", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/40589469657"}
+{"id": "1793142656271-1dc0be", "time": "2026-10-28 08:10:56", "channel": "KO", "source": "Actions", "kind": "롱폼", "title": "culture-longform #12", "status": "failure", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/40599946338"}
