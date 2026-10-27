@@ -40,7 +40,7 @@ on:
       preview:
         description: "영상 만들기 전 한 단계만 미리 보기 (off=영상까지 / list=목록 / script=대본·시나리오 / images=장면 사진 / voice=대본+음성 / cuts=컷 시트+후보 사진) - 결과는 디스코드로"
         type: choice
-        options: [off, list, script, images, voice, cuts]
+        options: ["off", list, script, images, voice, cuts]
         default: "off"
       pick:
         description: "후보 사진 고르기 (cuts 결과의 번호. 예: 117_3=2, 118_1=5 / 비우면 안 함). 고른 사진은 my_images에 저장되어 계속 쓰임"
