@@ -803,7 +803,10 @@
         "scene": 6,
         "rejected_ids": []
       }
-    ]
+    ],
+    "youtube_id": "PBuCLp-sPkE",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "country": "Italy",
@@ -20610,7 +20613,10 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0264_이란.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0264_이란.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "1YR-OI7Ye70",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "하셈족 왕가의 왕자, 갑작스런 감금과 퇴위",
@@ -22904,7 +22910,10 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0288_대만.srt",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0288_대만.mp4"
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0288_대만.mp4",
+    "youtube_id": "JBhiSDdRDjM",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "베이비 샤워 (Baby shower) 파티",
@@ -23606,7 +23615,10 @@
     "fact_applied": true,
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0296_불가리아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0296_불가리아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "69UfZp0y-Fo",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
@@ -24478,7 +24490,10 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "4ysuccV7ne0",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -24605,7 +24620,10 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0306_그리스.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0306_그리스.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "yIpudp8DRho",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "핀란드 헌법(Constitution of Finland)의 역사와 현황",
@@ -24727,7 +24745,10 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0307_핀란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0307_핀란드.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "sPnl4kbhQZI",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "교황 자동차(Popemobile)의 디자인 변천",
@@ -25164,7 +25185,10 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0310_폴란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0310_폴란드.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "LjBOevXZMxg",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "법적 허구, 거짓을 진실처럼 쓰는 장치",
