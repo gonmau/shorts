@@ -72,6 +72,8 @@ def pending_render(db, start=0):
 
 def license_url(lic):
     """CC 라이선스 이름('CC BY 2.0', 'CC BY-SA 4.0')을 라이선스 문서 링크로. CC0/퍼블릭도메인/모르면 빈 문자열."""
+    if re.search(r"(?:[ -])(sa|nc|nd)\b", str(lic or ""), re.I):   # SA/NC/ND 는 BY 문서 링크를 붙이면 틀리므로 링크 없음
+        return ""
     m = re.match(r"\s*cc[ -]by(?:[ -](\d\.\d))?", str(lic or ""), re.I)
     if m:
         return f"https://creativecommons.org/licenses/by/{m.group(1) or '4.0'}/"
