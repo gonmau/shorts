@@ -241,7 +241,7 @@ GUIDE = {
     "CC0 · 퍼블릭 도메인": "표기 필요 없음 (작가·링크를 적으면 참고용으로만 기록)",
     "CC BY": "작가 + 원본 링크 필수 (제목 권장). 설명란에 라이선스와 '자르기/확대' 변경 표기까지 자동으로 들어갑니다",
     "Pixabay": "설명란에 'Photos: Pixabay' 한 줄 (작가·링크는 선택)",
-    "기타(라이선스 직접 입력)": "라이선스 이름 + 작가 + 원본 링크 필수. CC BY-SA / NC / ND 는 영상에 쓰기 위험하니 비권장",
+    "기타(라이선스 직접 입력)": "라이선스 이름 + 작가 + 원본 링크 필수. NC / ND 는 영상에 쓰기 위험하니 비권장 (SA 는 출처 표기)",
 }
 
 
@@ -267,8 +267,8 @@ def credit_problems(kind, lic="", user="", page=""):
         return "작가와 원본 링크를 적어 주세요"
     if kind.startswith("기타") and not (lic and user and page):
         return "라이선스·작가·원본 링크를 적어 주세요"
-    if kind.startswith("기타") and re.search(r"\b(sa|nc|nd)\b|share\s*alike|non.?commercial|no.?deriv", lic, re.I):
-        return "SA/NC/ND 라이선스는 영상에 쓰기 위험합니다"
+    if kind.startswith("기타") and re.search(r"\b(nc|nd)\b|non.?commercial|no.?deriv", lic, re.I):
+        return "NC/ND 라이선스는 영상에 쓰기 위험합니다 (SA는 출처 표기로 사용)"
     if kind == "미입력":
         return "출처를 입력하세요 (직접 촬영이면 '내가 직접 촬영/제작')"
     return ""
