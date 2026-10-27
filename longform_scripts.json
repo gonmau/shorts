@@ -2543,10 +2543,10 @@
   "created": "2026-10-27 12:44",
   "verified_by": "manual",
   "locked": true,
-  "edited": "2026-10-27 23:09",
+  "edited": "2026-10-27 23:16",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0040_United_Kingdom_timing.json",
-  "tts_hash": "82bbb239a236",
+  "tts_hash": "8bb54b366d44",
   "clips": [
    {
     "query": "crowd cheering festival",
@@ -2634,7 +2634,7 @@
   "edited": "2026-10-27 23:09",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0047_Slovenia_timing.json",
-  "tts_hash": "c456ecb36dd2",
+  "tts_hash": "816d57266c95",
   "clips": []
  },
  "48": {
@@ -2709,7 +2709,7 @@
   "edited": "2026-10-27 23:09",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0093_Finland_timing.json",
-  "tts_hash": "20d17daaaa68",
+  "tts_hash": "b77ac1036de3",
   "clips": [
    {
     "query": "obstacle course water",
@@ -2788,7 +2788,7 @@
   "edited": "2026-10-27 23:09",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0100_Mongolia_timing.json",
-  "tts_hash": "2e685bd8457a",
+  "tts_hash": "d4f1d4c562c4",
   "clips": [
    {
     "query": "Mongolian steppe race",
@@ -2885,7 +2885,7 @@
   "edited": "2026-10-27 23:09",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0115_Thailand_timing.json",
-  "tts_hash": "7221c86ce530",
+  "tts_hash": "0f7c7dcb9cf7",
   "clips": [
    {
     "query": "Thai monkey buffet",
@@ -2979,7 +2979,7 @@
   "created": "2026-10-27 12:44",
   "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0071_Malta.mp3",
   "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0071_Malta_timing.json",
-  "tts_hash": "dead583cbc86",
+  "tts_hash": "d6a30eeeb2f1",
   "clips": [],
   "verified_by": "manual",
   "locked": true,
