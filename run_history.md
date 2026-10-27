@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 06:10:46 (KST) · 기록 367건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 06:12:23 (KST) · 기록 368건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,7 +10,7 @@
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 4 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
-| cuts | 1 | 0 | 9초 |
+| cuts | 2 | 0 | 10초 |
 | export_review | 1 | 0 | 0초 |
 | fetch_images | 34 | 0 | 10분 37초 |
 | generate_culture_facts | 1 | 0 | 47초 |
@@ -27,6 +27,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 06:12 | PC | cuts | cuts.py --freeze 40,47,71,93,100,115 | ✅ | 0초 |  |
 | 06:10 | PC | 코드업데이트 | gonmau/shorts: 5개 (cuts.py, ext_script.py, local_ui.py, longform_script.py, tts_fallback.py) | ✅ |  |  |
 | 00:11 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --min 1 --start 0 --plan-only --only 40,47,71,93,100,115 --resync | ✅ | 21초 |  |
 | 00:00 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --fill-images --require-images --title  | ✅ | 36분 44초 |  |
