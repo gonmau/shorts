@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-27 20:39:54 (KST) · 기록 355건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-27 20:42:42 (KST) · 기록 356건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -17,7 +17,7 @@
 | generate_script | 14 | 0 | 16분 46초 |
 | image_check | 2 | 0 | 19초 |
 | promote_ready | 4 | 0 | 0초 |
-| 롱폼 | 41 | 3 | 3시간 19분 |
+| 롱폼 | 42 | 3 | 3시간 19분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
 | 코드업데이트 | 12 | 0 | 0초 |
 
@@ -27,6 +27,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:42 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips -- | ✅ | 3초 |  |
 | 20:39 | PC | 롱폼 | build_longform.py --mode manual --indexes  --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --title  | ❌ failed | 0초 | manual 모드는 번호(indexes)가 필요합니다. 예: 109,110,115-118 |
 | 20:39 | PC | cuts | cuts.py --pick 47_12=8, 93_3=1, 93_4=3, 93_9=1, 93_10=2, 115_1=1, 115_4=1, 115_5=3, 115_6=2, 115_7=1, 115_8=5, 115_9=3, 115_10=3, 115_11=4, 115_12=1 | ✅ | 9초 |  |
 | 20:36 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
