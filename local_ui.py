@@ -507,13 +507,15 @@ with T1a:
 with T2a:
     _ext_panel('xs_', 0)
     _style_panel()
-    TTS_CFG["target_sec"] = st.slider("목표 대본 길이 (초, 0 = 기본)", 0, 58, int(TTS_CFG.get("target_sec") or 0), 1, key="target_sec",
+    TTS_CFG["target_sec"] = st.slider("목표 대본 길이 (초, 0 = 기본)", 0, 170, int(TTS_CFG.get("target_sec") or 0), 1, key="target_sec",
                                       help="새로 만드는 대본의 분량을 음성 길이 기준으로 맞춥니다. 0이면 기본 분량(한국어 350~500자 / 영어 90~115단어). 음성 속도 설정도 반영됩니다. 이미 만든 대본은 안 바뀌니 '대본부터 다시'로 다시 만드세요")
     if int(TTS_CFG["target_sec"]) > 0:
         _t = int(TTS_CFG["target_sec"]); _m = 1 + int(TTS_CFG["rate"]) / 100
         st.caption(f"목표 {_t}초 → " + (f"약 {int(_t * 7.04 * _m / 10) * 10}~{int(_t * 8.96 * _m / 10 + 1) * 10}자 (한국어)" if not EN
                                        else f"약 {round(_t * 2.2 * _m * 0.88)}~{round(_t * 2.2 * _m * 1.12)}단어 (영어)") + " · 실제 음성 길이는 4단계 후 확인")
-    TTS_CFG["scenes"] = st.select_slider("장면(이미지) 수", options=list(range(6, 21, 2)), value=int(TTS_CFG.get("scenes") or 10), key="scene_n",
+        if _t > 60:
+            st.caption("ℹ️ 유튜브 쇼츠는 최대 3분(세로 영상)까지 쇼츠로 인정됩니다. 60초를 넘기면 시청 유지율이 떨어질 수 있으니 내용이 촘촘할 때만 쓰고, 장면(이미지) 수도 늘리세요 (5초마다 1장 기준).")
+    TTS_CFG["scenes"] = st.select_slider("장면(이미지) 수", options=list(range(6, 31, 2)), value=int(TTS_CFG.get("scenes") or 10), key="scene_n",
                                          help="새로 만드는 소재의 이미지 장수입니다. 길이 50초면 10장 ≈ 5초마다 전환. 많을수록 이미지 받기·검색어 생성이 늘어납니다. 이미 만든 소재는 원래 장수(6장 등)를 유지하고, 대본부터 다시 만들면 새 장수가 적용됩니다")
     TTS_CFG["cross"] = st.checkbox("🔍 대본 교차검증 (쇼츠 대본 + 롱폼 확장 대본, 위키백과 근거 + 다른 모델이 문장별 검증)", bool(TTS_CFG.get("cross")), key="cross_chk",
                                    help="대본/제목/이미지 검색어를 만들 때 자동으로 검증합니다. 모순/근거 없는 문장은 먼저 고쳐 쓰고(바로잡기·한정어 추가·삭제) 다시 검증하며, 원문은 narration_original에 보관합니다. 2번 고쳐도 모순이 남거나 문장 절반 이상이 근거 없음이면 소재를 폐기(rejected)합니다. Groq 호출이 소재당 1~6회 늘어납니다. 오류를 줄일 뿐 100% 보장은 아니니 review.txt의 (교차검증 메모)는 직접 확인하세요. GitHub Actions에는 적용되지 않습니다(로컬 실행 전용)")
@@ -1774,6 +1776,10 @@ with TL:
             a1.image(_R.avatar(None, 96, _B.get("channel") or CH), width=96)
             a2.warning("채널 이미지 파일이 없어 이름 첫 글자 원으로 대신 나옵니다. 위에서 이미지를 올려 주세요. (이전에 파란 원만 나온 이유)")
         t1_, t2_, t3_ = st.columns(3)
+        _B["recap"] = st.checkbox("마지막 요약 화면 + 엔딩 멘트 넣기", bool(_B.get("recap", True)), key="br_recap",
+                                  help="끄면 마지막 챕터가 끝나고 바로 영상이 끝납니다 (요약 음성도 안 만들어 시간 절약). 깃허브에도 이 설정이 함께 올라갑니다")
+        _B["recap_cards"] = st.checkbox("└ 챕터별 요약 카드 표시", bool(_B.get("recap_cards", True)), key="br_rcards", disabled=not _B["recap"],
+                                        help="끄면 요약 카드(번호·나라·한 줄 요약 목록)는 화면에 안 나오고, 흐린 배경에 채널 이름만 보이면서 엔딩 멘트 음성만 나옵니다. 요약 화면 자체를 빼려면 위 체크를 끄세요")
         _B["hud"] = t1_.checkbox("오른쪽 위 채널 표시 켜기", bool(_B.get("hud", True)), key="br_hud")
         _B["hud_avatar"] = t1_.checkbox("└ 이미지", bool(_B.get("hud_avatar", True)), key="br_hav", disabled=not _B["hud"])
         _B["hud_name"] = t2_.checkbox("└ 채널 이름", bool(_B.get("hud_name", True)), key="br_hnm", disabled=not _B["hud"])
@@ -1815,6 +1821,7 @@ with TL:
         _dsec = d2.slider("소주제 개수", 3, 8, 5, key="deep_sec")
         _dmin = d3.slider("목표 길이 (분)", 5, 12, 8, key="deep_min")
         _drecap = st.checkbox("마지막 요약 화면 + 엔딩 멘트 넣기", bool(R_BRAND_RECAP), key="deep_recap", help="끄면 마지막 소주제에서 바로 끝납니다 (채널 표시 설정과 별개로 이번 실행에만 적용)")
+        _dcards = st.checkbox("└ 챕터별 요약 카드 표시 (끄면 엔딩 멘트 음성만)", True, key="deep_cards", disabled=not _drecap)
         _dins = st.text_input("AI 추가 지시 (선택, 예: 한국과 비교를 더 자세히)", key="deep_ins")
         _dargs = ["build_longform.py", "--deep", "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
         e1, e2 = st.columns(2)
@@ -1823,7 +1830,7 @@ with TL:
             st.rerun()
         if e2.button("② 심층편 만들기 (음성 + 영상 합성)", key="deep_run", type="primary"):
             TIMES.clear()
-            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), "--title", ltitle)
+            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
         try:
             import deep as _DP
             _dd = _DP.load().get(str(int(_dsrc)))

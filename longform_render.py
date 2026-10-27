@@ -60,7 +60,7 @@ def arr(im):
 
 BRAND_FILE = Path(__file__).resolve().parent / "longform_brand.json"
 BRAND_DEFAULT = {"channel": "", "handle": "", "avatar": "", "hud": True, "hud_avatar": True, "hud_name": True, "hud_handle": True,
-                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": "", "recap": True}
+                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": "", "recap": True, "recap_cards": True}
 
 
 def load_brand():
@@ -594,7 +594,7 @@ def intro(title_lines, n, imgs, audio_path, channel, handle, av_path, out_path):
     return dur
 
 
-def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
+def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path, cards=True):
     """items = [(번호, 나라, 한 줄 요약)]"""
     from moviepy.editor import AudioFileClip, CompositeVideoClip, ImageClip
     audio = AudioFileClip(exact_audio(audio_path)) if audio_path and Path(audio_path).exists() else None
@@ -607,10 +607,15 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path):
     lh = min(112, (800 // max(1, per)))
     clips = []
     head = new_layer()
-    text_c(ImageDraw.Draw(head), W // 2, 70, L["recap"], font(86), "white", 3)
+    if cards:
+        text_c(ImageDraw.Draw(head), W // 2, 70, L["recap"], font(86), "white", 3)
+    else:   # 요약 카드 없이 엔딩 멘트만: 흐린 배경 + 채널 이름
+        text_c(ImageDraw.Draw(head), W // 2, H // 2 - 70, str(channel or ""), font(96), "white", 3)
+        if handle:
+            text_c(ImageDraw.Draw(head), W // 2, H // 2 + 50, str(handle), font(52), "white", 2)
     clips.append(ImageClip(arr(head)).set_duration(dur).crossfadein(0.4))
     t_line = max(1.2, (dur - 6.0) / max(1, n))
-    for i, (no, country, line) in enumerate(items):
+    for i, (no, country, line) in enumerate(items if cards else []):
         col, row = (i // per, i % per) if two else (0, i)
         x0 = (W - 2 * colw - 60) // 2 + col * (colw + 60) if two else (W - colw) // 2
         y0 = 210 + row * lh

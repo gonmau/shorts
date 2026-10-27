@@ -704,6 +704,7 @@ def run_rich(args, db, lf_db, members):
 
     # 4) 요약 + 엔딩 (채널 표시 설정의 '요약 화면' 또는 --no-recap / LF_RECAP=0 으로 끌 수 있음)
     recap_on = bool(R.BRAND.get("recap", True)) and not args.no_recap and os.environ.get("LF_RECAP", "1") != "0"
+    cards_on = bool(R.BRAND.get("recap_cards", True)) and not args.no_recap_cards and os.environ.get("LF_RECAP_CARDS", "1") != "0"
     outro_txt, recap_len, recap_start = "", 0.0, None
     if recap_on:
         items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
@@ -713,7 +714,7 @@ def run_rich(args, db, lf_db, members):
         out_rec = LS.prepare_extra("lf_outro", outro_txt) if (client or LS.enabled()) and not args.no_expand else None
         rp = WORK / "seg_99_recap.mp4"
         R.stage("요약 화면", n_stage, n_stage)
-        recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp)
+        recap_len = R.recap_screen(items, bg_last, (out_rec or {}).get("audio"), args.channel, args.handle, args.avatar, rp, cards=cards_on)
         parts.append(rp)
         recap_start = t_acc
     else:
@@ -841,6 +842,7 @@ def main():
     ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
+    ap.add_argument("--no-recap-cards", action="store_true", help="요약 화면은 두되 챕터별 요약 카드는 표시하지 않고 엔딩 멘트 음성만 낸다")
     ap.add_argument("--no-recap", action="store_true", help="마지막 요약 화면(+엔딩 멘트)을 만들지 않는다")
     ap.add_argument("--deep", action="store_true", help="심층편: --indexes 의 소재 1개를 소주제 여러 개로 나눠 긴 영상 1편으로 만든다")
     ap.add_argument("--sections", type=int, default=5, help="심층편 소주제 개수 (3~8)")
