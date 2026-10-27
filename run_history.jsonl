@@ -341,3 +341,4 @@
 {"id": "1793072104567-3ad7d8", "time": "2026-10-27 12:35:04", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 100 --force", "status": "success", "secs": 12.8, "detail": ""}
 {"id": "1793072107476-28216d", "time": "2026-10-27 12:35:07", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --index 115 --regen-queries", "status": "success", "secs": 2.9, "detail": ""}
 {"id": "1793072167540-83a909", "time": "2026-10-27 12:36:07", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 115 --force", "status": "success", "secs": 60.1, "detail": ""}
+{"id": "1793072760774-bae5d8", "time": "2026-10-27 12:46:00", "channel": "KO", "source": "PC", "kind": "롱폼", "title": "build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync", "status": "success", "secs": 56.6, "detail": ""}
