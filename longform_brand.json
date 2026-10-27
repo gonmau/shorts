@@ -10,5 +10,7 @@
  "hud_pill": true,
  "intro_logo": true,
  "intro_name": true,
- "cta": "구독 & 좋아요"
+ "cta": "구독 & 좋아요",
+ "recap": true,
+ "recap_cards": false
 }
