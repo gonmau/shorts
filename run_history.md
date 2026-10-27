@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-27 22:33:10 (KST) · 기록 358건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-27 22:48:00 (KST) · 기록 359건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | promote_ready | 4 | 0 | 0초 |
 | 롱폼 | 43 | 4 | 4시간 13분 |
 | 쇼츠 | 91 | 6 | 12시간 17분 |
-| 코드업데이트 | 12 | 0 | 0초 |
+| 코드업데이트 | 13 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -27,6 +27,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:47 | PC | 코드업데이트 | gonmau/shorts: 2개 (commons.py, openverse.py) | ✅ |  |  |
 | 22:33 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images  | ✅ | 45분 33초 |  |
 | 20:53 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images  | ❌ failed | 8분 23초 | ⚠️ 사진이 빠진 소재:    47 Slovenia: 12장 중 12번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요. (--require-im |
 | 20:42 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips -- | ✅ | 3초 |  |
