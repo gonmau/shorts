@@ -15,6 +15,27 @@ if _has_en and _has_ko:  # 두 채널 파일이 섞인 폴더: 파일 안의 언
         EN = "ko-KR-SunHiNeural" not in open("generate_tts.py", encoding="utf-8").read()
 CH, HD = ("KoreaAtoZ", "@KoreaA2Z") if EN else ("gonmauY", "@gonmauY")
 st.set_page_config(page_title="Shorts 로컬", layout="wide")
+
+# 다시 켜도 입력했던 소재 번호·제목·선택 방식을 기억 (ui_state.json)
+_UI_STATE = "ui_state.json"
+_UI_KEYS = ("lf_mode", "lf_theme", "lf_idx", "lf_title", "cut_idx")
+def _ui_keep(k_):
+    return k_ in _UI_KEYS or (k_.endswith("_ids") and isinstance(st.session_state.get(k_), str))
+try:
+    _ui_old = json.load(open(_UI_STATE, encoding="utf-8"))
+except Exception:
+    _ui_old = {}
+if "_ui_restored" not in st.session_state:
+    st.session_state["_ui_restored"] = True
+    for _uk, _uv in _ui_old.items():
+        st.session_state.setdefault(_uk, _uv)
+else:
+    try:
+        _ui_new = {k_: v_ for k_, v_ in st.session_state.items() if _ui_keep(k_) and isinstance(v_, (str, int, float))}
+        if _ui_new != {k_: v_ for k_, v_ in _ui_old.items() if k_ in _ui_new} or set(_ui_new) - set(_ui_old):
+            json.dump({**_ui_old, **_ui_new}, open(_UI_STATE, "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception:
+        pass
 _NOTRANS_JS = ("<script>try{var d=window.parent.document.documentElement;d.setAttribute('lang','ko');d.setAttribute('translate','no');"
                "var m=window.parent.document.createElement('meta');m.name='google';m.content='notranslate';window.parent.document.head.appendChild(m);}catch(e){}</script>")
 try:  # 브라우저 자동 번역(크롬 번역 등)이 화면을 건드려 생기는 'removeChild' 오류 방지
