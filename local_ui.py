@@ -1640,6 +1640,15 @@ with TL:
         import cuts as _CU
         st.caption("컷 이름 = 소재번호_컷번호 (예: 117_03). ① 컷 시트·후보 만들기 → ② 후보 번호 고르기 → 적용. 직접 구한 사진은 아래에 올리거나 my_images 폴더에 `117_03.jpg`로 넣으면 "
                    "자동 검색보다 먼저 쓰입니다. GitHub 실행(Actions)과는 아래 버튼으로 my_images를 주고받습니다.")
+        _DRAFT = Path("cut_picks_draft.json")
+        try:
+            _dr = json.loads(_DRAFT.read_text(encoding="utf-8"))
+        except Exception:
+            _dr = {}
+        if "cut_idx" not in st.session_state and _dr.get("idx"):
+            st.session_state["cut_idx"] = _dr["idx"]
+        for _dk, _dv in (_dr.get("picks") or {}).items():          # 다시 켜도 고른 후보 번호를 복원
+            st.session_state.setdefault(f"cut_pick_{_dk}", int(_dv))
         _ci = st.text_input("대상 소재 번호 (예: 117,118 / 비우면 위 manual 번호)", key="cut_idx")
         _cidx = (_ci or lidx or "").strip()
         c1_, c2_ = st.columns(2)
@@ -1670,12 +1679,28 @@ with TL:
             for _n, _k in enumerate(_ks):
                 _mine = _CU._my_file(_i, int(_k.split("_")[1]))
                 _nc = len(_man[_k].get("cands", []))
+                if st.session_state.get(f"cut_pick_{_k}", 0) > _nc:
+                    st.session_state[f"cut_pick_{_k}"] = 0
                 _v = _cols[_n % len(_cols)].selectbox(_k + (" ✅내 사진" if _mine else ""), [0] + list(range(1, _nc + 1)), key=f"cut_pick_{_k}",
                                                       format_func=lambda x: "선택 안 함" if x == 0 else f"후보 {x}")
                 if _v:
                     _picks[_k] = _v
+        try:   # 고른 후보 번호를 저장 (적용 전에 창을 닫아도 유지)
+            _vis = {k_[len("cut_pick_"):]: v_ for k_, v_ in st.session_state.items() if k_.startswith("cut_pick_") and isinstance(v_, int)}
+            _new = {"idx": _ci, "picks": {**(_dr.get("picks") or {}), **{k_: v_ for k_, v_ in _vis.items() if v_}}}
+            for k_, v_ in _vis.items():
+                if not v_:
+                    _new["picks"].pop(k_, None)
+            if _new != _dr:
+                _DRAFT.write_text(json.dumps(_new, ensure_ascii=False), encoding="utf-8")
+        except Exception:
+            pass
         if _picks and c2_.button(f"② 고른 사진 적용 ({len(_picks)}컷)", key="cut_apply"):
             run("cuts.py", "--pick", ", ".join(f"{k_.split('_')[0]}_{int(k_.split('_')[1])}={v_}" for k_, v_ in _picks.items()))
+            try:
+                _DRAFT.unlink()
+            except Exception:
+                pass
         _up = st.file_uploader("내 사진 올리기 (파일 이름이 컷 이름이어야 함: 117_03.jpg)", type=["jpg", "jpeg", "png", "webp"], accept_multiple_files=True, key="cut_up")
         if _up and st.button("올린 사진을 my_images에 저장", key="cut_up_save"):
             _my = Path("my_images"); _my.mkdir(exist_ok=True)
