@@ -25198,7 +25198,7 @@
     "verify_note": "Popemobile",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:37.528107+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "교황이 차에 앉아도 서 있어도, 실제로는 차 안에 ‘왕좌’가 숨겨져 있다는 사실!  \n교황 자동차는 대중 앞에 나타날 때 시야를 확보하도록 특별히 만든 차량입니다. 옛날엔 이동식 왕좌 sedia gestatoria를 사용했지만, 차량이 그 역할을 대신하게 되었죠.  \n1981년 교황 요한 바오로 2세에 대한 암살 시도 이후, 방탄 유리를 둘러싼 모델이 도입돼 안전성이 크게 강화되었습니다.  \n흥미로운 점은 일부 모델은 교황이 앉을 자리를 전혀 두지 않아도 됩니다. 차 안에 서서 인사할 수 있도록 설계돼, 교황이 서서도 행사에 참여할 수 있죠.  \n이 설계는 교황 자동차에만 적용되는 특수한 경우이며, 일반 차량에는 해당되지 않는다는 점을 기억해 주세요.  \n그렇다면, 다음에 보게 될 교황 자동차는 과연 어느 자세로 인사할까요?",
     "title_line1": "싱가포르 교황 자동차",
     "title_line2": "왕좌는 차 안에 숨겨진다",
@@ -25234,7 +25234,7 @@
     "cross_verdict": "ok",
     "image_queries_done": [
       "pope inside mobile",
-      "popemobile open view design",
+      "pope open-mobile",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
@@ -25246,37 +25246,36 @@
       {
         "scene": 1,
         "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "user": "Nitro101",
+        "license": "CC BY-SA 2.5",
+        "title": "Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg",
+        "id": "c:202076983"
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "leandro_monsieur",
-        "page": "https://pixabay.com/photos/pope-sao-pio-x-pope-saint-pius-8693954/",
-        "id": 8693954,
-        "type": "photo"
+        "source": "commons",
+        "user": "Roger Cornfoot",
+        "license": "CC BY-SA 2.0",
+        "title": "Leyland 'Pope-mobile' - geograph.org.uk - 4534770.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Leyland_%27Pope-mobile%27_-_geograph.org.uk_-_4534770.jpg",
+        "id": "c:129712269"
       },
       {
         "scene": 3,
         "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "user": "Somerset County Council, Robert Webley, 2013-10-29 13:41:59",
+        "license": "CC BY-SA 2.0",
+        "title": "Medieval papal bulla (Paul II) (FindID 583102).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Medieval_papal_bulla_(Paul_II)_(FindID_583102).jpg",
+        "id": "c:55425107"
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "source": "pixabay",
+        "user": "dayamay",
+        "page": "https://pixabay.com/photos/warthog-windscreen-glass-canopy-4707039/",
+        "id": 4707039
       },
       {
         "scene": 5,
@@ -25289,30 +25288,24 @@
       },
       {
         "scene": 6,
-        "source": "commons",
-        "user": "White House photo by Chris Greenberg",
-        "license": "Public domain",
-        "title": "Popemobile passes the White House.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
-        "id": "c:3915893"
+        "source": "pixabay",
+        "user": "Icsilviu",
+        "page": "https://pixabay.com/photos/inside-car-metro-design-chairs-4775622/",
+        "id": 4775622
       },
       {
         "scene": 7,
-        "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/chairs-conference-room-contemporary-2181994/",
+        "id": 2181994
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
-        "license": "CC0",
-        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
-        "id": "c:201703848"
+        "source": "pixabay",
+        "user": "HoggyArt",
+        "page": "https://pixabay.com/photos/cartoon-character-greeting-woman-10375568/",
+        "id": 10375568
       }
     ],
     "image_source": "pixabay",
@@ -25437,7 +25430,14 @@
           "c:201703848"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0308_싱가포르_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0308_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0308_싱가포르.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0308_싱가포르.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "에스토니아(Estonia)의 LGBTQ 권리 변화",
@@ -26069,7 +26069,44 @@
     "confidence": "high",
     "verify_note": "라오스 바시 의식, Baci ceremony, 파신(pha sin), Lao tradition, 실 묶기 의식",
     "created_at": "2026-10-25T12:17:44.440653+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 파신이라고 부르는 하얀 실을 여러 번 감아 줍니다. 그 실은 아이의 영혼을 보호하고 조상과의 연결을 상징한다는 뜻입니다. 가족 모두가 모여 전통 노래와 춤을 추며 축복을 빌죠. 흥미롭게도 그 실은 정확히 일주일 뒤에 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 행해지며, 도시 지역에서는 현대식 행사로 대체되는 경우가 있습니다. 실이 끊어지는 순간, 축복이 새롭게 시작된다는 생각이 남습니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "라오스 아기 결속 의식",
+    "title_line2": "실은 언제 끊길까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*실*로 영혼 잡아!"
+      },
+      {
+        "s": 2,
+        "text": "*파신* 실 감아"
+      },
+      {
+        "s": 5,
+        "text": "*실* 자르면 영원"
+      },
+      {
+        "s": 7,
+        "text": "실 끊어지면 *축복*"
+      }
+    ],
+    "image_queries": [
+      "Laos baby wrist string",
+      "white pha sin string",
+      "Lao baby spirit string",
+      "Lao family traditional dance",
+      "cutting ceremonial string",
+      "Lao village ceremony",
+      "broken ceremonial string"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
