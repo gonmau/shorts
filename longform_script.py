@@ -298,7 +298,7 @@ def synth(text, key):
 
 def ensure_audio(rec, key, text):
     """rec(dict)에 audio/timing 경로를 채운다. 글이 같고 파일이 있으면 재사용. 성공 True"""
-    h = _hash(text, os.environ.get("TTS_EDGE_VOICE", ""), os.environ.get("TTS_RATE", ""), os.environ.get("SUPERTONIC_VOICE_EN" if IS_EN else "SUPERTONIC_VOICE_KO", ""))
+    h = _hash(text, os.environ.get("TTS_EDGE_VOICE", ""), os.environ.get("TTS_RATE", ""), os.environ.get("SUPERTONIC_VOICE_EN" if IS_EN else "SUPERTONIC_VOICE_KO", ""), "stcap" + os.environ.get("SUPERTONIC_MAX_SPEED", "1.2"))
     if rec.get("tts_hash") == h and rec.get("audio") and Path(rec["audio"]).exists():
         return True
     try:

@@ -337,6 +337,8 @@ with T4a:
                                     help="기본 음성 엔진. 아래 '미리듣기'로 들어보고 고르세요")
     TTS_CFG["rate"] = t2.slider("속도 (%)", -20, 30, int(TTS_CFG["rate"]), 1,
                                 help="0=기본. 느리게는 -, 빠르게는 +. 빠를수록 영상이 짧아집니다")
+    if int(TTS_CFG["rate"]) > 10:
+        st.caption("⚠️ 속도를 +10% 넘게 올리면 Supertonic 음성의 문장 끝이 잘리거나 덜 발음될 수 있습니다 (내부적으로 1.2배 상한을 둡니다). 0~+5% 권장.")
     TTS_CFG["edge"] = t3.selectbox("Edge 음성", EDGE_VOICES, EDGE_VOICES.index(TTS_CFG["edge"]) if TTS_CFG["edge"] in EDGE_VOICES else 0)
     _ek = list(ENGINE_LABELS)
     TTS_CFG["engine"] = st.radio("음성 엔진", _ek, _ek.index(TTS_CFG["engine"]) if TTS_CFG["engine"] in _ek else 0, horizontal=True,

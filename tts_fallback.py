@@ -74,7 +74,10 @@ def supertonic_sentence(text, out_path, lang, speed):
     tts = _ST["tts"]
     name = os.environ.get(f"SUPERTONIC_VOICE_{lang.upper()}") or DEFAULT_ST_VOICES.get(lang, "M1")
     style = _ST.setdefault("style_" + name, tts.get_voice_style(voice_name=name))
-    wav, _ = tts.synthesize(text, voice_style=style, lang=lang, speed=round(1.05 * speed, 3))
+    # 너무 빠르면 문장 끝 음절이 잘리거나 덜 발음되어 상한을 둔다 (SUPERTONIC_MAX_SPEED, 기본 1.2)
+    cap = float(os.environ.get("SUPERTONIC_MAX_SPEED") or 1.2)
+    sp = round(min(1.05 * speed, cap), 3)
+    wav, _ = tts.synthesize(text, voice_style=style, lang=lang, speed=sp)
     tts.save_audio(wav, str(out_path))
 
 
