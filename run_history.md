@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-27 12:28:14 (KST) · 기록 330건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-27 12:28:47 (KST) · 기록 331건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | apply_review | 4 | 0 | 0초 |
 | approve | 1 | 0 | 0초 |
 | export_review | 1 | 0 | 0초 |
-| fetch_images | 26 | 0 | 6분 11초 |
+| fetch_images | 27 | 0 | 6분 20초 |
 | generate_culture_facts | 1 | 0 | 47초 |
 | generate_script | 8 | 0 | 16분 20초 |
 | image_check | 2 | 0 | 19초 |
@@ -26,6 +26,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:28 | PC | fetch_images | fetch_images.py --index 40 | ✅ | 9초 |  |
 | 12:28 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
 | 12:27 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
 | 12:27 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync | ✅ | 15초 |  |
