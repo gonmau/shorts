@@ -3793,7 +3793,60 @@
     "status_v6": "video_done",
     "youtube_id": "xN7nFOO3nWc",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-09"
+    "uploaded_at": "2026-10-09",
+    "image_queries_done": [
+      "United Kingdom travel",
+      "United Kingdom travel",
+      "United Kingdom travel",
+      "United Kingdom travel",
+      "United Kingdom travel",
+      "United Kingdom travel"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/london-landmark-tower-bridge-3078109/",
+        "id": 3078109
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "fietzfotos",
+        "page": "https://pixabay.com/photos/tower-bridge-bridge-river-landmark-5727975/",
+        "id": 5727975
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "jplenio",
+        "page": "https://pixabay.com/photos/woman-sea-cliffs-rocks-coast-4172859/",
+        "id": 4172859
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "PublicCo",
+        "page": "https://pixabay.com/photos/natural-history-museum-london-2203648/",
+        "id": 2203648
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Leonhard_Niederwimmer",
+        "page": "https://pixabay.com/photos/big-ben-london-clock-tower-uk-4728199/",
+        "id": 4728199
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "hurk",
+        "page": "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
+        "id": 458321
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "country": "Luxembourg",
