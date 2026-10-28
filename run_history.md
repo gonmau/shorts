@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 22:14:59 (KST) · 기록 441건 · 소재 337개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 22:19:38 (KST) · 기록 442건 · 소재 349개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -14,7 +14,7 @@
 | cuts | 2 | 0 | 10초 |
 | export_review | 12 | 0 | 1초 |
 | fetch_images | 36 | 1 | 14분 22초 |
-| generate_culture_facts | 2 | 0 | 1분 3초 |
+| generate_culture_facts | 3 | 0 | 3분 5초 |
 | generate_script | 26 | 0 | 28분 55초 |
 | generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
@@ -31,6 +31,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 2초 |  |
 | 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source commons --type illustration | ❌ failed | 4초 | 장면 1: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Laos baby wrist string). 기존 사진 유지 |
 | 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source pixabay --type illustration | ✅ | 4초 |  |
 | 22:14 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 3분 3초 |  |
