@@ -26722,50 +26722,52 @@
     "country": "라오스 (Laos)",
     "topic": "바시(Baci) 결속 의식",
     "hook": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다!",
-    "body": "아기가 첫 달을 맞이하면 마을 승려가 파신(pha sin)이라고 부르는 흰 실을 아기의 손목에 여러 번 묶어 줍니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징하며, 가족 모두가 함께 노래와 춤을 추며 축복을 빌어요.",
-    "twist": "묶인 실은 정확히 일주일 뒤에 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다.",
+    "body": "아기가 태어난 뒤 어느 시점에 마을 어른들이 ‘파신’이라고 부르는 흰 실을 손목에 감아 주는 전통이 있습니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 라오족 공동체에서 많이 전해 내려오고, 도시 지역에서도 가끔 현대식 행사와 함께 진행되는 경우가 있습니다.",
+    "twist": "실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
     "caveat": "주로 라오스 전역의 라오족 공동체에서 행해지며, 도시 지역에서는 현대식 행사로 대체되는 경우가 있습니다.",
     "confidence": "high",
     "verify_note": "라오스 바시 의식, Baci ceremony, 파신(pha sin), Lao tradition, 실 묶기 의식",
     "created_at": "2026-10-25T12:17:44.440653+00:00",
     "status": "scripted",
-    "narration": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 파신이라고 부르는 하얀 실을 여러 번 감아 줍니다. 그 실은 아이의 영혼을 보호하고 조상과의 연결을 상징한다는 뜻입니다. 가족 모두가 모여 전통 노래와 춤을 추며 축복을 빌죠. 흥미롭게도 그 실은 정확히 일주일 뒤에 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 행해지며, 도시 지역에서는 현대식 행사로 대체되는 경우가 있습니다. 실이 끊어지는 순간, 축복이 새롭게 시작된다는 생각이 남습니다.",
+    "narration": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 태어난 뒤 어느 시점에 마을 어른들이 ‘파신’이라고 부르는 흰 실을 손목에 감아 주는 전통이 있습니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 라오족 공동체에서 많이 전해 내려오고, 도시 지역에서도 가끔 현대식 행사와 함께 진행되는 경우가 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-120b",
-    "cross_flags": null,
-    "cross_verdict": "ok",
-    "cross_notes": null,
-    "title_line1": "라오스 아기 결속 의식",
-    "title_line2": "실은 언제 끊길까",
+    "cross_flags": [],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [unsupported] 5번 문장: No reliable source confirms that the ceremony is mainly limited to Lao ethnic communities or that urban areas replace it with modern events."
+    ],
+    "title_line1": "라오스바시결속의식",
+    "title_line2": "실을 끊으면 축복은?",
     "highlights": [
       {
         "s": 1,
-        "text": "*실*로 영혼 잡아!"
+        "text": "손목에 *실* 묶어"
       },
       {
         "s": 2,
-        "text": "*파신* 실 감아"
+        "text": "승려가 *파신* 감는다"
       },
       {
-        "s": 5,
-        "text": "*실* 자르면 영원"
+        "s": 4,
+        "text": "일주일 뒤 *실* 자르면"
       },
       {
-        "s": 7,
-        "text": "실 끊어지면 *축복*"
+        "s": 6,
+        "text": "실 끊어질 때 *축복* 완성"
       }
     ],
     "image_queries": [
-      "Laos baby wrist string",
-      "white pha sin string",
-      "Lao baby spirit string",
-      "Lao family traditional dance",
-      "cutting ceremonial string",
+      "baby wrist string Laos",
+      "Laos monk tying white string",
+      "Lao Baci ceremony string",
+      "cutting white string Laos",
       "Lao village ceremony",
-      "broken ceremonial string"
+      "broken string blessing Laos"
     ],
-    "scene_count": 10
+    "scene_count": 12,
+    "narration_original": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 ‘파신’이라 부르는 흰 실을 여러 번 손목에 감아 줍니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 전해 내려오지만, 도시 지역에서는 현대식 행사로 대체되는 경우도 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다."
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
