@@ -5,6 +5,7 @@
 - 나라는 여러 번 나와도 되지만, 같은 위키 문서(wiki_title)나 같은 주제는 다시 쓰지 않는다.
 - 위키백과 API 하나만 쓴다(키 불필요).
 """
+import os
 import random
 import re
 import time
@@ -57,6 +58,16 @@ def used_titles(db):
     return {_norm(f.get("wiki_title")) for f in db if f.get("wiki_title")}
 
 
+# 한국 시청자가 관심 많은 나라일수록 자주 고르는 가중치 (데이터로 검증된 값이 아니라 가정이므로 낮게 잡음: 나머지 나라도 계속 나온다)
+# 끄려면 환경변수 COUNTRY_INTEREST=0
+INTEREST = {}
+for _k in ("일본 미국 중국 영국 프랑스 독일 이탈리아 스페인 태국 베트남 호주 캐나다 터키").split():
+    INTEREST[_k] = 3.0
+for _k in ("스위스 인도 러시아 인도네시아 필리핀 네덜란드 대만 브라질 멕시코 포르투갈 그리스 이집트 싱가포르 뉴질랜드 "
+           "핀란드 노르웨이 스웨덴 덴마크 몽골 아이슬란드 이스라엘").split():
+    INTEREST[_k] = 2.0
+
+
 def pick_targets(db, n, rng=random):
     """(한국어 나라, 영어 나라, 분야, 검색어) n개. 덜 쓴 나라/분야를 더 자주 고르되 같은 나라가 다시 나와도 된다."""
     by_country, by_pair = {}, {}
@@ -68,6 +79,8 @@ def pick_targets(db, n, rng=random):
     for ko in COUNTRIES:
         for theme, terms in THEMES:
             w = 1.0 / (1 + by_country.get(ko, 0)) / (1 + 2 * by_pair.get((ko, theme), 0))
+            if os.environ.get("COUNTRY_INTEREST", "1") != "0":
+                w *= INTEREST.get(ko, 1.0)
             pairs.append((w, ko, theme, terms))
     out, seen = [], set()
     tries = 0
