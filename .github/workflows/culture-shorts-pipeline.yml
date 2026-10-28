@@ -185,11 +185,12 @@ jobs:
         if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
         run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
-      - name: 유튜브 비공개 업로드
+      - name: 유튜브 업로드 (비공개 + 예약 공개)
         if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' && env.YT_REFRESH_TOKEN != '' }}
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          PUBLISH_SLOTS: ${{ vars.PUBLISH_SLOTS || '07:00,19:30' }}   # 한국시간 예약 공개 시각 (끄려면 저장소 변수 PUBLISH_SLOTS=off)
         run: python upload_to_youtube.py --limit "$COUNT"
 
       # ---------- 저장 ----------
