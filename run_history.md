@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 22:23:43 (KST) · 기록 448건 · 소재 349개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 22:24:31 (KST) · 기록 454건 · 소재 349개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,8 +8,8 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 17 | 0 | 2초 |
-| approve | 8 | 0 | 1초 |
+| apply_review | 19 | 0 | 2초 |
+| approve | 10 | 0 | 1초 |
 | build_video | 1 | 0 | 24분 28초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 13 | 0 | 1초 |
@@ -19,7 +19,7 @@
 | generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 1 | 0 | 3초 |
-| promote_ready | 17 | 0 | 2초 |
+| promote_ready | 19 | 0 | 2초 |
 | redo_videos | 6 | 0 | 1초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
@@ -31,6 +31,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:24 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
+| 22:24 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 22:24 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
+| 22:23 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
+| 22:23 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 22:23 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
 | 22:23 | PC | export_review | export_review.py --limit 1 --start 340 | ✅ | 0초 |  |
 | 22:23 | PC | generate_script | generate_script.py --limit 1 --start 340 | ✅ | 9초 |  |
 | 22:23 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
