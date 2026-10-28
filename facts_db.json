@@ -27009,5 +27009,50 @@
     "confidence": "source",
     "created_at": "2026-10-26T10:20:15.814439+00:00",
     "status": "unverified"
+  },
+  {
+    "topic": "사우디아라비아( Saudi Arabia )의 법체계는 성경과 전통에 근거한 무코드 샤리아 적용",
+    "hook": "샤리아가 전혀 적힌 법전 없이도 국가 전반을 지배한다면?",
+    "body": "사우디아라비아는 쿠란과 선지자 무함마드( Muhammad )의 전통인 순나에서 파생된 샤리아를 근간으로 삼는다. 판결은 중세 한발리( Hanbili ) 학파의 문자주의 텍스트와 사후 학자들의 합의에 크게 의존한다. 그러나 법전이 없고 판례도 없어 법의 적용 범위가 크게 불확실하다.",
+    "twist": "정부는 2010년에 샤리아를 성문화하겠다고 발표했고, 2018년에 관련 자료집을 공개했다.",
+    "caveat": "이 불확실성은 사우디아라비아 내부에만 해당되는 상황이다.",
+    "country": "이집트",
+    "theme": "법/제도",
+    "wiki_title": "Legal system of Saudi Arabia",
+    "source_url": "https://en.wikipedia.org/wiki/Legal_system_of_Saudi_Arabia",
+    "verify_note": "Legal system of Saudi Arabia",
+    "confidence": "source",
+    "created_at": "2026-10-28T10:36:27.616859+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "탄자니아( Tanzania ) 마쿤두치( Makunduchi )에 동독(East Germany) 지원으로 세워진 아파트",
+    "hook": "동독이 아프리카 어촌에 아파트를 짓다니?",
+    "body": "마쿤두치는 쿠시니 구역의 행정 중심지이며, 동쪽에 있는 ‘구 마쿤두치’는 인도양 해안의 작은 어촌이다. 반대쪽 ‘신 마쿤두치’에는 1970년대 동독의 원조로 건설된 아파트 단지가 있다. 이 아파트는 당시 탄자니아 정치적 지원에 대한 보답으로 제공되었다.",
+    "twist": "두 정착지는 약 2km 정도 떨어져 서로 다른 시대와 분위기를 보여준다.",
+    "caveat": "아파트 건설에 관한 상세 내용은 1970년대 동독 원조에 한정된다.",
+    "country": "탄자니아",
+    "theme": "축제/의례",
+    "wiki_title": "Makunduchi",
+    "source_url": "https://en.wikipedia.org/wiki/Makunduchi",
+    "verify_note": "Makunduchi",
+    "confidence": "source",
+    "created_at": "2026-10-28T10:36:27.616859+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "미국( United States )의 외설법은 연방·주 차원에서 포르노와 아동 성범죄를 규제",
+    "hook": "외설이 아니라도 아동 포르노는 절대 허용되지 않는다?",
+    "body": "미국의 외설법은 제1수정조항에 보호되지 않는 표현을 억제한다. 연방 차원에서는 외설 자체와 실제 아동이 촬영된 아동 포르노를 모두 금지한다. 주마다 외설에 대한 정의와 적용이 다르지만, 아동 포르노는 주법과 관계없이 금지된다.",
+    "twist": "연방법은 방송을 금지하지만 케이블이나 위성 방송은 예외로 둔다.",
+    "caveat": "외설에 대한 구체적 판단은 각 주의 법령에 따라 달라진다.",
+    "country": "미국",
+    "theme": "법/제도",
+    "wiki_title": "United States obscenity law",
+    "source_url": "https://en.wikipedia.org/wiki/United_States_obscenity_law",
+    "verify_note": "United States obscenity law",
+    "confidence": "source",
+    "created_at": "2026-10-28T10:36:27.616859+00:00",
+    "status": "unverified"
   }
 ]
