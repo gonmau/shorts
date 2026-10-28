@@ -31,6 +31,8 @@ COUNTRIES = {
     "자메이카": "Jamaica", "콜롬비아": "Colombia", "페루": "Peru", "볼리비아": "Bolivia", "칠레": "Chile",
     "브라질": "Brazil", "에콰도르": "Ecuador", "캐나다": "Canada", "미국": "United States", "호주": "Australia",
     "뉴질랜드": "New Zealand", "피지": "Fiji", "사모아": "Samoa", "파푸아뉴기니": "Papua New Guinea",
+    "크로아티아": "Croatia", "오스트리아": "Austria", "캄보디아": "Cambodia", "라오스": "Laos", "스리랑카": "Sri Lanka",
+    "우즈베키스탄": "Uzbekistan", "아랍에미리트": "United Arab Emirates", "몰디브": "Maldives",
 }
 EN2KO = {v.lower(): k for k, v in COUNTRIES.items()}
 
@@ -64,7 +66,8 @@ INTEREST = {}
 for _k in ("일본 미국 중국 영국 프랑스 독일 이탈리아 스페인 태국 베트남 호주 캐나다 터키").split():
     INTEREST[_k] = 3.0
 for _k in ("스위스 인도 러시아 인도네시아 필리핀 네덜란드 대만 브라질 멕시코 포르투갈 그리스 이집트 싱가포르 뉴질랜드 "
-           "핀란드 노르웨이 스웨덴 덴마크 몽골 아이슬란드 이스라엘").split():
+           "핀란드 노르웨이 스웨덴 덴마크 몽골 아이슬란드 이스라엘 "
+           "크로아티아 오스트리아 캄보디아 라오스 스리랑카 우즈베키스탄 아랍에미리트 몰디브").split():
     INTEREST[_k] = 2.0
 
 
