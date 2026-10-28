@@ -26655,8 +26655,8 @@
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
     "hook": "배심원제, 사실은 민법 국가에서도 쓰인다고?",
-    "body": "배심원제는 배심원이 사실관계를 판단하고 평결을 내리는 절차이며, 판사가 모든 결정을 내리는 벤치 트라이얼과 구분된다. 이 제도는 관습법 국가뿐 아니라 많은 민법 국가에서도 형사 사건에 도입돼 있다.",
-    "twist": "미국(United States)에서도 배심원제 도입이 민·형사 절차 전반에 큰 영향을 미쳤다.",
+    "body": "배심원은 사실관계를 판단하고 평결을 내리는 역할을 합니다. 반면 판사가 모든 결정을 내리는 벤치 트라이얼과는 구분되죠. 이 제도는 관습법 국가뿐 아니라 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국에서도 배심원제가 도입되면서 민·형사 절차 전반에 큰 영향을 미쳤지만, 모든 심각한 형사 사건에 배심원제가 적용되는 것은 아닙니다.",
+    "twist": "즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점을 기억해 주세요.",
     "caveat": "하지만 모든 심각한 형사 사건에 배심원제가 적용되는 것은 아니다.",
     "country": "말레이시아",
     "theme": "법/제도",
@@ -26666,39 +26666,45 @@
     "confidence": "source",
     "created_at": "2026-10-25T12:17:27.398744+00:00",
     "status": "scripted",
-    "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 배심원은 사건의 사실관계를 직접 판단하고 평결을 내립니다. 반면 판사가 모든 결정을 내리는 벤치 트라이얼과는 구분됩니다. 이 제도는 관습법 국가뿐 아니라 많은 민법 국가에서도 형사 사건에 도입돼 있습니다. 미국에서도 배심원제 도입이 민·형사 절차 전반에 큰 영향을 미쳤죠. 하지만 모든 심각한 형사 사건에 배심원제가 적용되는 것은 아니며, 적용 범위는 제한됩니다. 결국 배심원제는 법관과 일반 시민이 함께 사실을 판단하도록 하는 절차라는 점, 기억해 두시면 좋겠습니다.",
+    "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 배심원은 사실관계를 판단하고 평결을 내리는 역할을 합니다. 반면 판사가 모든 결정을 내리는 벤치 트라이얼과는 구분되죠. 이 제도는 관습법 국가뿐 아니라 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국에서도 배심원제가 도입되면서 민·형사 절차 전반에 큰 영향을 미쳤지만, 모든 심각한 형사 사건에 배심원제가 적용되는 것은 아닙니다. 즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점을 기억해 주세요.",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_model": "openai/gpt-oss-120b",
     "cross_flags": [],
-    "cross_verdict": "ok",
-    "cross_notes": [],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 4번 문장: Most civil law (민법) countries do not use juries in criminal cases; the claim is false."
+    ],
     "title_line1": "말레이시아 배심원제",
-    "title_line2": "민법 국가에도 쓰인다?",
+    "title_line2": "민법 국가에도?",
     "highlights": [
       {
         "s": 1,
-        "text": "*배심원제*, 민법에도?"
+        "text": "배심원, *사실* 판단"
       },
       {
         "s": 2,
-        "text": "시민이 *사실* 판단"
+        "text": "판사는 *벤치*"
       },
       {
         "s": 4,
-        "text": "민법국가도 *도입*"
+        "text": "*민법* 국가에서도"
+      },
+      {
+        "s": 6,
+        "text": "제한적 *적용* 기억"
       }
     ],
     "image_queries": [
-      "jury trial courtroom",
-      "citizens deliberating jury",
+      "jury deliberation room",
       "judge bench courtroom",
-      "civil law jury trial",
-      "American jury trial",
-      "courtroom gavel",
-      "judge with jury"
+      "bench trial courtroom",
+      "civil law courtroom Malaysia",
+      "American courtroom jury box",
+      "limited jury application"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "narration_original": "배심원제, 사실은 민법 국가에서도 쓰인다고? 배심원은 사실관계를 판단하고 평결을 내리는 역할을 합니다. 반면 판사가 모든 결정을 내리는 벤치 트라이얼과는 구분되죠. 이 제도는 관습법 국가뿐 아니라 많은 민법 국가에서도 형사 사건에 적용됩니다. 미국에서도 배심원제가 도입되면서 민·형사 절차 전반에 큰 영향을 미쳤지만, 모든 심각한 형사 사건에 배심원제가 적용되는 것은 아닙니다. 즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점을 기억해 주세요."
   },
   {
     "country": "라오스 (Laos)",
