@@ -25234,7 +25234,7 @@
     "cross_verdict": "ok",
     "image_queries_done": [
       "pope inside mobile",
-      "pope open-mobile",
+      "popemobile open view design",
       "papal portable throne",
       "bulletproof glass popemobile 1981",
       "popemobile without seat",
@@ -25246,36 +25246,37 @@
       {
         "scene": 1,
         "source": "commons",
-        "user": "Nitro101",
-        "license": "CC BY-SA 2.5",
-        "title": "Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg",
-        "id": "c:202076983"
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Roger Cornfoot",
-        "license": "CC BY-SA 2.0",
-        "title": "Leyland 'Pope-mobile' - geograph.org.uk - 4534770.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Leyland_%27Pope-mobile%27_-_geograph.org.uk_-_4534770.jpg",
-        "id": "c:129712269"
+        "source": "pixabay",
+        "user": "leandro_monsieur",
+        "page": "https://pixabay.com/photos/pope-sao-pio-x-pope-saint-pius-8693954/",
+        "id": 8693954,
+        "type": "photo"
       },
       {
         "scene": 3,
         "source": "commons",
-        "user": "Somerset County Council, Robert Webley, 2013-10-29 13:41:59",
-        "license": "CC BY-SA 2.0",
-        "title": "Medieval papal bulla (Paul II) (FindID 583102).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Medieval_papal_bulla_(Paul_II)_(FindID_583102).jpg",
-        "id": "c:55425107"
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "dayamay",
-        "page": "https://pixabay.com/photos/warthog-windscreen-glass-canopy-4707039/",
-        "id": 4707039
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 5,
@@ -25288,24 +25289,30 @@
       },
       {
         "scene": 6,
-        "source": "pixabay",
-        "user": "Icsilviu",
-        "page": "https://pixabay.com/photos/inside-car-metro-design-chairs-4775622/",
-        "id": 4775622
+        "source": "commons",
+        "user": "White House photo by Chris Greenberg",
+        "license": "Public domain",
+        "title": "Popemobile passes the White House.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Popemobile_passes_the_White_House.jpg",
+        "id": "c:3915893"
       },
       {
         "scene": 7,
-        "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/chairs-conference-room-contemporary-2181994/",
-        "id": 2181994
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "HoggyArt",
-        "page": "https://pixabay.com/photos/cartoon-character-greeting-woman-10375568/",
-        "id": 10375568
+        "source": "commons",
+        "user": "https://commons.wikimedia.org/wiki/User:Jebulon",
+        "license": "CC0",
+        "title": "Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Papamobile-Fiat-1107-Nuova-Campagnola-Musee-Vatican-01.jpg",
+        "id": "c:201703848"
       }
     ],
     "image_source": "pixabay",
@@ -26074,9 +26081,9 @@
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-120b",
-    "cross_flags": [],
+    "cross_flags": null,
     "cross_verdict": "ok",
-    "cross_notes": [],
+    "cross_notes": null,
     "title_line1": "라오스 아기 결속 의식",
     "title_line2": "실은 언제 끊길까",
     "highlights": [
