@@ -85,14 +85,19 @@ def main():
         body = {
             "snippet": {"title": title, "description": description, "categoryId": "27", "tags": youtube_tags(item)},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False,
-                       "containsSyntheticMedia": True,                                   # '변경되거나 합성된 콘텐츠(AI 사용)': 예
-                       "paidProductPlacementDetails": {"hasPaidProductPlacement": False}},   # 유료 프로모션: 아니요
+                       "containsSyntheticMedia": True},                                  # '변경되거나 합성된 콘텐츠(AI 사용)': 예. 유료 프로모션은 기본값(아니요)
         }
         slot = next_slot(slots, used, now, kst) if slots else None
         if slot:
             body["status"]["publishAt"] = slot      # private + publishAt = 그 시각에 자동 공개
         media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)
-        res = yt.videos().insert(part="snippet,status", body=body, media_body=media).execute()
+        try:
+            res = yt.videos().insert(part="snippet,status", body=body, media_body=media).execute()
+        except Exception as e:      # 새 필드(합성 콘텐츠 표시)를 못 받으면 그 필드만 빼고 다시 올린다
+            print(f"업로드 실패({e}) -> containsSyntheticMedia 없이 재시도")
+            body["status"].pop("containsSyntheticMedia", None)
+            media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)
+            res = yt.videos().insert(part="snippet,status", body=body, media_body=media).execute()
         item["youtube_id"] = res["id"]
         item["uploaded_at"] = datetime.now(kst).isoformat()
         if slot:
