@@ -1,0 +1,64 @@
+# 유튜브 성과 리포트 (Analytics API) - 영상 제작 개선용
+#
+# 영상별 조회수/평균 시청 비율/구독 증가/유지율을 소재 정보(나라·분야·길이)와 묶어 요약합니다.
+# 결과: yt_report.md, yt_stats.json 커밋 + 디스코드 전송. 매주 월요일 오전(한국시간)에 자동 실행, 수동 실행도 가능.
+# 필요: Secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (yt-analytics.readonly 권한이 포함된 토큰 - get_refresh_token.py)
+#       DISCORD_WEBHOOK_URL (선택)
+
+name: culture-yt-report
+
+on:
+  schedule:
+    - cron: "30 0 * * 1"   # UTC 기준 (한국 시간 월요일 09:30)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "분석 기간 (일)"
+        default: "28"
+      top:
+        description: "상위/하위 영상 표시 개수"
+        default: "5"
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    if: ${{ github.event_name != 'schedule' || vars.AUTO_RUN != 'off' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUNBUFFERED: "1"
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      DAYS: ${{ github.event.inputs.days || '28' }}
+      TOP: ${{ github.event.inputs.top || '5' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install google-api-python-client google-auth requests
+
+      - name: 성과 리포트 만들기 (토큰이 없으면 건너뜀)
+        if: ${{ env.YT_REFRESH_TOKEN != '' }}
+        run: python yt_report.py --days "$DAYS" --top "$TOP"
+
+      - name: 리포트 커밋
+        if: ${{ env.YT_REFRESH_TOKEN != '' }}
+        run: |
+          git config user.name "culture-shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add yt_report.md yt_stats.json
+          git diff --cached --quiet || git commit -m "chore: youtube report [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "push 실패"; exit 1
