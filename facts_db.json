@@ -26666,7 +26666,7 @@
     "confidence": "source",
     "created_at": "2026-10-25T12:17:27.398744+00:00",
     "status": "scripted",
-    "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 말레이시아를 보면 1995년부터 배심원제가 완전히 폐지됐습니다. 이제 판사가 증언과 증거를 검토해 사실관계를 판단하고 평결을 내리죠. 벤치 트라이얼처럼 판사만 결정하는 것이 아니라, 배심원은 직접 “유죄·무죄”를 판단합니다. 흥미로운 점은 이 제도가 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용된다는 사실입니다. 미국이 배심원제를 도입하면서 전 세계 절차에 영향을 주었지만, 말레이시아처럼 모든 중대한 형사 사건에 배심원제가 쓰이는 것은 아니라는 점을 기억해 주세요. 결국 배심원제는 특정 사건에만 제한적으로 활용되는 제도라는 점이 가장 큰 차이점입니다.",
+    "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 말레이시아는 1995년부터 배심원제를 없애고 판사가 직접 사실관계를 판단해 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정합니다. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 바로 그 제한적인 적용이 배심원제의 흥미로운 차이점입니다.",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_model": "openai/gpt-oss-120b",
@@ -26676,37 +26676,28 @@
       "[수정됨] [contradicted] 2번 문장: Malaysia abolished jury trials in 1995; juries do not decide facts there."
     ],
     "title_line1": "말레이시아 배심원제",
-    "title_line2": "민법 국가에도 쓰여?",
+    "title_line2": "민법에도 쓰인다고?",
     "highlights": [
       {
         "s": 1,
-        "text": "배심원, *민법*에도?"
+        "text": "배심원, *민법*에서도?"
       },
       {
         "s": 2,
-        "text": "배심원제 *폐지*"
+        "text": "말레이시아*배심원*금지"
       },
       {
         "s": 4,
-        "text": "판사·배심원 *공동*"
-      },
-      {
-        "s": 5,
-        "text": "*민법*도 쓰는 배심원"
-      },
-      {
-        "s": 7,
-        "text": "*활용* 배심원"
+        "text": "제한 *적용* 차이"
       }
     ],
     "image_queries": [
-      "courtroom bench Malaysia",
-      "closed courtroom sign Malaysia",
-      "judge reviewing evidence",
-      "judge and jury together",
-      "courtroom scene civil law",
-      "global courtroom comparison",
-      "jury deliberation closeup"
+      "jury in civil courtroom",
+      "Malaysia courtroom without jury",
+      "jury reviewing evidence",
+      "Malaysian civil law courtroom",
+      "American courtroom jury box",
+      "jury trial limited application"
     ],
     "scene_count": 12,
     "narration_original": "배심원제, 사실은 민법 국가에서도 쓰인다고?  \n말레이시아에서는 배심원이 사건의 사실관계를 판단하고 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정하죠. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점, 바로 그 점이 흥미로운 차이입니다."
