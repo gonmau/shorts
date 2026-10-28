@@ -1,0 +1,54 @@
+# 이미 유튜브에 올라간 영상(수동 업로드 포함)을 facts_db.json 의 '미업로드' 소재와 연결 + 공개 상태 새로 고침
+# 수동 실행: Actions > culture-sync-uploads > Run workflow (dry=true 면 결과만 보고 저장 안 함)
+# 필요: Secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
+
+name: culture-sync-uploads
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "true면 결과만 확인하고 저장하지 않음"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUNBUFFERED: "1"
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      DRY: ${{ github.event.inputs.dry }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install google-api-python-client google-auth
+
+      - name: 업로드 상태 연결
+        run: |
+          if [ "$DRY" = "true" ]; then python sync_uploads.py --dry; else python sync_uploads.py; fi
+
+      - name: facts_db.json 커밋
+        if: ${{ env.DRY != 'true' }}
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add facts_db.json
+          git diff --cached --quiet || git commit -m "chore: sync upload status [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "push 실패"; exit 1
