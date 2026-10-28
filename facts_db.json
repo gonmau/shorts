@@ -27865,9 +27865,9 @@
   },
   {
     "topic": "‘샬롬’이 전 세계 인사말이 된 이유",
-    "hook": "스페인 거리에서 ‘샬롬(שָׁלוֹם)’이 울려 퍼진다면, 무슨 뜻일까?",
-    "body": "‘샬롬(שָׁלוֹם)’은 히브리어로 평화를 뜻하지만, 인사와 작별 인사로도 쓰인다. 이 단어는 아랍어(salaam)·몰타어(sliem)·네오아라믹어(Shlama)·에티오피아 세미어(sälam) 등 다양한 언어에서도 같은 뿌리를 가진다.",
-    "twist": "한 마디로 전 세계 5개 언어에서 같은 의미로 통한다.",
+    "hook": "스페인 거리에서 “샬롬(שָׁלוֹם)”이 울려 퍼진다면, 과연 무슨 뜻일까요?",
+    "body": "히브리어로 ‘평화’를 의미하는 이 단어는 인사와 작별 인사로도 쓰입니다. 흥미롭게도 같은 어근이 아랍어 salaam, 몰타어 sliem, 네오아라믹어 Shlama, 에티오피아 세미어 sälam 등 네 개 언어에 그대로 남아 있어, 전 세계 여러 지역에서 비슷한 의미로 통합니다. ‘샬롬’이 스페인에서 쓰이는 정도는 지역마다 다를 수 있어요. 어떤 골목에서 들리는 인사는 평화와 친절을 전하려는 작은 연결 고리일 수 있지만, 모든 스페인 사람에게 일상적인 표현은 아닐 수도 있어요.",
+    "twist": "결국, 한 마디가 여러 문화에 뿌리를 두고 있다는 사실이 바로 오늘의 답입니다.",
     "caveat": "‘샬롬’이 실제로 스페인 일상에서 널리 쓰이는지는 지역마다 차이가 있다.",
     "country": "스페인",
     "theme": "언어/이름",
@@ -27876,7 +27876,59 @@
     "verify_note": "Shalom",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "스페인 거리에서 “샬롬(שָׁלוֹם)”이 울려 퍼진다면, 과연 무슨 뜻일까요? 히브리어로 ‘평화’를 의미하는 이 단어는 인사와 작별 인사로도 쓰입니다. 흥미롭게도 같은 어근이 아랍어 salaam, 몰타어 sliem, 네오아라믹어 Shlama, 에티오피아 세미어 sälam 등 네 개 언어에 그대로 남아 있어, 전 세계 여러 지역에서 비슷한 의미로 통합니다. ‘샬롬’이 스페인에서 쓰이는 정도는 지역마다 다를 수 있어요. 어떤 골목에서 들리는 인사는 평화와 친절을 전하려는 작은 연결 고리일 수 있지만, 모든 스페인 사람에게 일상적인 표현은 아닐 수도 있어요. 결국, 한 마디가 여러 문화에 뿌리를 두고 있다는 사실이 바로 오늘의 답입니다.",
+    "cross_checked": true,
+    "cross_sources": 3,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 4,
+        "text": "‘샬롬’이 스페인에서 쓰이는 정도는 지역마다 다를 수 있어요."
+      },
+      {
+        "n": 5,
+        "text": "어떤 골목에서 들리는 인사는 평화와 친절을 전하려는 작은 연결 고리일 수 있지만, 모든 스페인 사람에게 일상적인 표현은 아닐 수도 있어요."
+      }
+    ],
+    "narration_original": "스페인 거리에서 “샬롬(שָׁלוֹם)”이 울려 퍼진다면, 과연 무슨 뜻일까요? 히브리어로 ‘평화’를 의미하는 이 단어는 인사와 작별 인사로도 쓰입니다. 흥미롭게도 같은 어근이 아랍어 salaam, 몰타어 sliem, 네오아라믹어 Shlama, 에티오피아 세미어 sälam 등 다섯 개 언어에 그대로 남아 있어, 전 세계 여러 지역에서 비슷한 의미로 통합니다. 그런데 ‘샬롬’이 스페인 일상에 널리 퍼졌는지는 지역마다 차이가 있습니다. 어느 골목에서 들리는 그 인사는, 평화와 친절을 전하려는 작은 연결 고리일 뿐, 모든 스페인 사람에게 일상적인 표현은 아니라는 점을 기억해 주세요. 결국, 한 마디가 여러 문화에 뿌리를 두고 있다는 사실이 바로 오늘의 답입니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "스페인에 울리는 *샬롬*"
+      },
+      {
+        "s": 2,
+        "text": "히브리어로 *평화*"
+      },
+      {
+        "s": 3,
+        "text": "다섯 언어에 *공통*"
+      },
+      {
+        "s": 6,
+        "text": "한마디가 *문화* 연결"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [contradicted] 3번 문장: Lists four languages but says five; the count is inaccurate.",
+      "[수정됨] [unsupported] 4번 문장: Claim about regional variation of 'shalom' usage in Spain lacks verifiable evidence.",
+      "[수정됨] [unsupported] 5번 문장: Statement about non‑universality of the greeting in Spain is not substantiated.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: no evidence on regional usage in Spain",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: no evidence on everyday usage among all Spaniards"
+    ],
+    "title_line1": "스페인 거리, 샬롬",
+    "title_line2": "평화가 의미?",
+    "image_queries": [
+      "Spanish street shalom",
+      "Hebrew peace word",
+      "Five languages common",
+      "Spanish neighborhood greeting",
+      "Spanish alleyway greeting",
+      "One word cultural link"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "미얀마의 지위·지역별 예절 차이",
@@ -27906,7 +27958,8 @@
     "verify_note": "Human cannibalism",
     "confidence": "source",
     "created_at": "2026-10-28T13:58:29.356724+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "UI에서 제외"
   },
   {
     "topic": "에스더 왕비가 막은 하만의 대량 학살 계획",
