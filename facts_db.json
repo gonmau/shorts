@@ -27447,7 +27447,174 @@
       "remote Tibetan mountain tea",
       "Tibetan plateau tea"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "tea with butter and salt",
+      "Tibetan butter tea",
+      "butter and salt tea",
+      "steaming mug of butter tea",
+      "creamy smooth tea",
+      "high altitude butter tea",
+      "remote Tibetan mountain tea",
+      "Tibetan plateau tea"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Yosomono",
+        "license": "CC BY 2.0",
+        "title": "Tibetan butter tea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Tibetan_butter_tea.jpg",
+        "id": "c:27932634"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ymyphoto",
+        "page": "https://pixabay.com/photos/tibetan-collectors-tibetan-buddhism-6599277/",
+        "id": 6599277
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Yosomono",
+        "license": "CC BY 2.0",
+        "title": "Tibetan butter tea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Tibetan_butter_tea.jpg",
+        "id": "c:27932634"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/cup-mug-steaming-smoke-coffee-tea-2619216/",
+        "id": 2619216
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "tehzeebhud",
+        "page": "https://pixabay.com/photos/flan-creme-caramel-caramel-pudding-10455212/",
+        "id": 10455212
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "YaoMuyu",
+        "page": "https://pixabay.com/photos/nepal-himalayas-annapurna-porter-10489603/",
+        "id": 10489603
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Oliver_Nguyen",
+        "page": "https://pixabay.com/photos/hill-green-nature-mountain-5419527/",
+        "id": 5419527
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "SwidaAlba",
+        "page": "https://pixabay.com/photos/clouds-mountains-grass-plateau-8283168/",
+        "id": 8283168
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.276,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba967a572c12",
+        "at": "2026-10-28 22:27",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2663,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3f876e7f913b",
+        "at": "2026-10-28 22:27",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2859,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6f940994f553",
+        "at": "2026-10-28 22:27",
+        "scene": 3,
+        "rejected_ids": [
+          5880136,
+          "c:193819104",
+          "c:27932634"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2944,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eb7ef4670bfd",
+        "at": "2026-10-28 22:27",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2235,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "36b2425e6a29",
+        "at": "2026-10-28 22:27",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2231,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "73e93a786c60",
+        "at": "2026-10-28 22:27",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2505,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4e61a72242d9",
+        "at": "2026-10-28 22:27",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2239,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "adfaca715883",
+        "at": "2026-10-28 22:27",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "불꽃 춤 ‘차하르샨베 수리’",
