@@ -113,6 +113,9 @@ jobs:
       - run: pip install -r requirements.txt
 
       # ---------- 검수 파일에서 고친 내용 반영 ----------
+      - name: 성/민감 소재 제외 (아직 안 만든 소재)
+        run: python exclude_sensitive.py
+
       - name: 직접 넣은 대본 인식 (facts_db.json에 대본을 넣은 소재)
         run: python promote_ready.py --start "$START"
 

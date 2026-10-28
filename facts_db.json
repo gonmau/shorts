@@ -27231,7 +27231,7 @@
     "verify_note": "Adam G. Ciongoli",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "9·11 현장에 법률 고문까지 있었던 이유는? 그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다. 그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다. 그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다. 그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다. 이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다. 그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -27293,7 +27293,8 @@
       "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about his purpose lacks supporting evidence."
     ],
     "title_line1": "이탈리아 아담 시옹올리",
-    "title_line2": "9·11현장법무고문?"
+    "title_line2": "9·11현장법무고문?",
+    "reject_reason": "성/민감 소재 자동 제외(고문)"
   },
   {
     "topic": "필리핀(Philippines) 부족들의 이색적인 장례 방식",
@@ -27308,7 +27309,8 @@
     "verify_note": "Funeral practices and burial customs in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(시신)"
   },
   {
     "topic": "선례가 법정 판결을 좌우한다? 하지만…",
@@ -27585,7 +27587,8 @@
     "verify_note": "United States obscenity law",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(포르노)"
   },
   {
     "topic": "종교 정의는 학자마다 달라",
@@ -27961,7 +27964,8 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(혐오)"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -28051,7 +28055,8 @@
     "verify_note": "Prostitution in Europe",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(성매매)"
   },
   {
     "topic": "가나 국가 상징, 한 화가가 만든 아프리카 전통 문양",
@@ -28209,6 +28214,7 @@
     "verify_note": "Purim",
     "confidence": "source",
     "created_at": "2026-10-28T13:58:29.356724+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(학살)"
   }
 ]
