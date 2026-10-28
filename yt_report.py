@@ -95,6 +95,28 @@ def load_lf():
         return []
 
 
+IS_EN = (BASE / "generate_topics.py").exists()      # 영어 채널: country 칸이 소재 제목이라 나라별 집계가 의미 없음
+NOT_THEME = {"manual", "keyword", "직접 입력", "키워드", ""}
+
+
+def ko_country(name):
+    """'Wales'/'미국'처럼 섞인 나라 표기를 한국어 하나로 통일 (영어 채널은 그대로)"""
+    if IS_EN or not name:
+        return name
+    UK = {"wales": "웨일스", "웨일스": "웨일스", "scotland": "스코틀랜드", "스코틀랜드": "스코틀랜드",
+          "england": "잉글랜드", "잉글랜드": "잉글랜드", "northern ireland": "북아일랜드", "북아일랜드": "북아일랜드"}
+    if str(name).strip().lower() in UK:
+        return UK[str(name).strip().lower()]
+    try:
+        from country_codes import country_code, NAMES
+        c = country_code(name)
+        if c and c in NAMES:
+            return NAMES[c][0]
+    except Exception:
+        pass
+    return name
+
+
 def attach(videos, db, lf):
     by_id = {f.get("youtube_id"): f for f in db if f.get("youtube_id")}
     lf_titles = {re.sub(r"\s+", "", str(r.get("title", "")).split("|")[0]): r for r in lf}
@@ -102,11 +124,12 @@ def attach(videos, db, lf):
         f = by_id.get(v["id"])
         v["kind"] = "short" if (v.get("sec") or 0) <= 180 else "long"
         if f:
-            v.update({"country": f.get("country", ""), "theme": f.get("theme", ""), "topic": f.get("topic", ""),
+            v.update({"own": True, "country": ko_country(f.get("country", "")), "theme": f.get("theme", ""), "topic": f.get("topic", ""),
                       "idx": db.index(f), "chars": len(str(f.get("narration", "")))})
         elif v["kind"] == "long":
             r = lf_titles.get(re.sub(r"\s+", "", str(v.get("title", "")).split("|")[0]))
             if r:
+                v["own"] = True
                 v["members"] = r.get("members", [])
     return videos
 
@@ -137,7 +160,7 @@ def retention_summary(videos):
         r = v.get("ret") or []
         if len(r) < 20:
             continue
-        early.append(r[min(len(r) - 1, 3)])
+        early.append(min(1.0, r[min(len(r) - 1, 3)]))      # 재시청으로 100% 넘는 값은 100%로
         h = next((i / len(r) for i, x in enumerate(r) if x < 0.5), None)
         half.append(h if h is not None else 1.0)
     return (st.median(early) if early else None, st.median(half) if half else None, len(early))
@@ -150,11 +173,19 @@ def fmt_sec(s):
 
 def build_report(data, db, lf, days, top):
     vids = attach(data["videos"], db, lf)
+    all_n = len(vids)
+    if any(v.get("own") for v in vids):      # 채널의 다른 영상(음악, 현장 영상 등)은 비교에서 제외
+        vids_all = vids
+        vids = [v for v in vids if v.get("own")]
+    else:
+        vids_all = vids
     sh = [v for v in vids if v["kind"] == "short"]
     lg = [v for v in vids if v["kind"] == "long"]
     L = [f"# 유튜브 성과 리포트 ({data['start']} ~ {data['end']}, {days}일)", ""]
     tv = sum(float(v.get("views", 0)) for v in vids)
     L.append(f"영상 {len(vids)}개 (쇼츠 {len(sh)} · 롱폼 {len(lg)}) · 조회수 합계 {int(tv):,} · 구독 증가 {int(sum(float(v.get('subscribersGained', 0)) for v in vids)):,}")
+    if all_n > len(vids):
+        L.append(f"(자동 제작 영상만 집계: 채널의 다른 영상 {all_n - len(vids)}개는 제외)")
     if data.get("traffic"):
         tt = sum(float(t["views"]) for t in data["traffic"]) or 1
         L.append("유입: " + " · ".join(f"{t['insightTrafficSourceType']} {float(t['views']) / tt * 100:.0f}%" for t in data["traffic"][:5]))
@@ -175,7 +206,13 @@ def build_report(data, db, lf, days, top):
         L.append("")
     notes = []
     for key, label in (("theme", "분야"), ("country", "나라")):
+        if key == "country" and IS_EN:
+            continue
         rows = group(vids, key)
+        if key == "theme":
+            rows = [r for r in rows if r["key"] not in NOT_THEME]
+        if key == "country":                 # 나라는 1편짜리가 대부분이라 2편 이상인 나라만 비교
+            rows = [r for r in rows if r["n"] >= 2]
         if rows:
             L.append(f"## 쇼츠 {label}별 평균 (표본 {MIN_N}개 미만은 참고용 *)")
             for r in rows[:8]:
