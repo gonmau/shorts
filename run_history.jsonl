@@ -452,3 +452,5 @@
 {"id": "1793193869299-e46712", "time": "2026-10-28 22:24:29", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 340", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1793193869469-ae902a", "time": "2026-10-28 22:24:29", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1793193869638-23c725", "time": "2026-10-28 22:24:29", "channel": "KO", "source": "PC", "kind": "approve", "title": "approve.py --limit 1 --start 340", "status": "success", "secs": 0.2, "detail": ""}
+{"id": "1793193938004-05f9ea", "time": "2026-10-28 22:25:38", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 1 --start 340", "status": "success", "secs": 68.4, "detail": ""}
+{"id": "1793193939029-8fd242", "time": "2026-10-28 22:25:39", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 1 --start 340", "status": "success", "secs": 0.1, "detail": ""}
