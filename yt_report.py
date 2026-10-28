@@ -49,10 +49,20 @@ def fetch(an, yt, days, top):
                                    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,subscribersGained,shares").execute())
     meta = {}
     ids = [v["video"] for v in vids]
-    for i in range(0, len(ids), 50):
-        for it in yt.videos().list(part="snippet,contentDetails", id=",".join(ids[i:i + 50])).execute().get("items", []):
-            meta[it["id"]] = {"title": it["snippet"]["title"], "published": it["snippet"]["publishedAt"][:10],
-                              "sec": iso_seconds(it["contentDetails"].get("duration"))}
+    try:
+        for i in range(0, len(ids), 50):
+            for it in yt.videos().list(part="snippet,contentDetails", id=",".join(ids[i:i + 50])).execute().get("items", []):
+                meta[it["id"]] = {"title": it["snippet"]["title"], "published": it["snippet"]["publishedAt"][:10],
+                                  "sec": iso_seconds(it["contentDetails"].get("duration"))}
+    except Exception as e:   # youtube.readonly 권한이 없어도 동작: 길이는 (평균 시청 시간 / 평균 시청 비율)로 추정, 제목은 DB에서
+        print(f"  영상 정보 조회 불가({type(e).__name__}) -> 분석 데이터로 길이를 추정하고 제목은 DB에서 찾습니다", flush=True)
+        titles = {f.get("youtube_id"): (f.get("title_line1", "") + " " + f.get("title_line2", "")).strip() or f.get("topic", "")
+                  for f in load_db() if f.get("youtube_id")}
+        for v in vids:
+            pct = float(v.get("averageViewPercentage") or 0)
+            dur = float(v.get("averageViewDuration") or 0)
+            meta[v["video"]] = {"title": titles.get(v["video"]) or v["video"], "published": "",
+                                "sec": int(round(dur / (pct / 100))) if pct > 1 else 0}
     traffic = _rows(an.reports().query(**q, dimensions="insightTrafficSourceType", metrics="views,estimatedMinutesWatched", sort="-views").execute())
     out = []
     for v in vids:
@@ -160,8 +170,8 @@ def build_report(data, db, lf, days, top):
         L += [f"## {name} 상위 {min(top, len(vs))} / 하위 {min(top, max(0, len(vs) - top))}"]
         L += [line(v) for v in vs[:top]]
         if len(vs) > top * 2:
-            L.append("  …")
-        L += [line(v) for v in vs[-top:]] if len(vs) > top else []
+            L.append("  … (중간 생략)")
+        L += [line(v) for v in vs[max(top, len(vs) - top):]]
         L.append("")
     notes = []
     for key, label in (("theme", "분야"), ("country", "나라")):
