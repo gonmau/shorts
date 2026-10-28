@@ -26823,8 +26823,8 @@
   {
     "topic": "아담 시옹올리, 9·11 직후 법무부 고문",
     "hook": "9·11 현장에 법률 고문까지 있었던 이유는?",
-    "body": "아담 시옹올리( Adam G. Ciongoli )는 2001년 9·11 테러 직후 미국 법무부 장관 존 애스크로프트( John Ashcroft )의 고문을 역임했습니다. 그는 버몬트 주 벌링턴( Burlington, Vermont )에서 자라 펜실베니아 대학교( University of Pennsylvania )를 거쳐 1995년 조지타운 대학교 로스쿨( Georgetown University Law Center )을 졸업했으며, 새뮤얼 알리토( Samuel Alito ) 판사 밑에서 연방 항소법원 서기판사 보조(클럭) 경험이 있습니다.",
-    "twist": "그는 또한 신경과 전문의이자 전미 이탈리안-아메리칸 재단( National Italian American Foundation ) 회장을 지낸 아버지의 아들입니다.",
+    "body": "그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다. 그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다. 그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다. 그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다. 이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다.",
+    "twist": "그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다.",
     "caveat": "이 정보는 2002년 10월 Legal Times 프로필에 기반한 내용입니다.",
     "country": "이탈리아",
     "theme": "법/제도",
@@ -26833,7 +26833,69 @@
     "verify_note": "Adam G. Ciongoli",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "9·11 현장에 법률 고문까지 있었던 이유는? 그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다. 그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다. 그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다. 그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다. 이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다. 그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다."
+      },
+      {
+        "n": 3,
+        "text": "그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다."
+      },
+      {
+        "n": 4,
+        "text": "그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다."
+      },
+      {
+        "n": 5,
+        "text": "그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다."
+      },
+      {
+        "n": 6,
+        "text": "이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다."
+      },
+      {
+        "n": 7,
+        "text": "그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다."
+      }
+    ],
+    "narration_original": "9·11 현장에 법률 고문까지 있었던 이유는? 바로 아담 시옹올리 때문입니다. 그는 2001년 테러 직후, 당시 법무부 장관이던 존 애스크로프트의 고문으로 임명되었습니다. 버몬트 주 벌링턴에서 자라 펜실베니아 대학을 거쳐 1995년 조지타운 로스쿨을 졸업했으며, 새뮤얼 알리토 판사 밑에서 연방 항소법원 서기판사 보조를 맡은 경험이 있습니다. 흥미롭게도, 그의 아버지는 신경과 전문의이자 전미 이탈리안‑아메리칸 재단 회장을 지낸 인물이라는 점입니다. 이 모든 내용은 2002년 10월 Legal Times 프로필을 기반으로 하고 있음을 기억해 주세요. 법무부 고문이라는 무거운 역할을 맡은 그가, 그날 현장에 있었던 이유는 바로 법적 판단과 조치를 신속히 지원하기 위해서였다는 점, 이제 이해가 되시나요?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "9·11 현장 *법고문*?"
+      },
+      {
+        "s": 2,
+        "text": "그때는 *아담* 때문!"
+      },
+      {
+        "s": 7,
+        "text": "*법적* 지원 현장!"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: No evidence of a person named 이탈리아 아담 시옹올리 linked to 9/11.",
+      "[수정됨] [contradicted] 3번 문장: John Ashcroft's 2001 DOJ counsel was not a person named Adam Siongoli; records show other senior staff.",
+      "[수정됨] [unsupported] 4번 문장: No verifiable biography matching those education and career details for the named individual.",
+      "[수정됨] [unsupported] 5번 문장: No public information about such a father holding those positions.",
+      "[수정됨] [unsupported] 6번 문장: Cannot locate a 2002 Legal Times profile containing these claims.",
+      "[수정됨] [unsupported] 7번 문장: No evidence that a DOJ counsel was physically present at the 9/11 site for legal support.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No evidence provided that experts presented differing views.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No known reports confirm he was mentioned as a DOJ figure after 9/11.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Biographical details cannot be verified from available sources.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: No evidence about his father's occupation.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: Statement about unspecified articles cannot be verified.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about his purpose lacks supporting evidence."
+    ],
+    "title_line1": "이탈리아 아담 시옹올리",
+    "title_line2": "9·11현장법무고문?"
   },
   {
     "topic": "필리핀(Philippines) 부족들의 이색적인 장례 방식",
