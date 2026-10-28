@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 22:21:33 (KST) · 기록 442건 · 소재 349개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 22:22:29 (KST) · 기록 443건 · 소재 349개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -23,7 +23,7 @@
 | redo_videos | 6 | 0 | 1초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
-| 코드업데이트 | 16 | 0 | 0초 |
+| 코드업데이트 | 17 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -31,6 +31,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:22 | PC | 코드업데이트 | gonmau/shorts: 3개 (generate_culture_facts.py, generate_script.py, wiki_source.py) | ✅ |  |  |
 | 22:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 2초 |  |
 | 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source commons --type illustration | ❌ failed | 4초 | 장면 1: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Laos baby wrist string). 기존 사진 유지 |
 | 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source pixabay --type illustration | ✅ | 4초 |  |
