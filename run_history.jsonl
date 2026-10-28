@@ -469,3 +469,4 @@
 {"id": "1793196256292-cff5e3", "time": "2026-10-28 23:04:16", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.1, "detail": ""}
 {"id": "1793196449046-ffd305", "time": "2026-10-28 23:07:29", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 1 --start 357", "status": "success", "secs": 192.8, "detail": ""}
 {"id": "1793196449732-f17596", "time": "2026-10-28 23:07:29", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 1 --start 357", "status": "success", "secs": 0.1, "detail": ""}
+{"id": "1793203597718-017fd2", "time": "2026-10-29 01:06:37", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #99", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/40719308325"}
