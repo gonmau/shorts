@@ -410,6 +410,12 @@ def make_description(db, members, durations, intro_len, title, extra=None):
 
 
 def make_thumbnail(db, members, title, out_path):
+    try:   # 사진 콜라주 + 국기 + 지구본 + 큰 제목 (실패하면 아래 예전 방식으로)
+        import lf_thumb
+        lf_thumb.make(db, members, title, out_path, en=IS_EN)
+        return
+    except Exception as e:
+        print(f"  새 썸네일 실패 -> 예전 방식으로 만듭니다 ({type(e).__name__}: {e})", flush=True)
     import build_video as B
     it = db[members[0]]
     paths = B.get_visual_paths(members[0], it)
