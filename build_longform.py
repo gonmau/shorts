@@ -397,16 +397,53 @@ def make_description(db, members, durations, intro_len, title, extra=None):
             if l not in seen:
                 seen.add(l)
                 credits.append(l)
-    if credits:
-        lines.append("\n".join(credits))
-    lines.append(common.CHANNEL_BLURB)
     tags = []
     for idx in members:
         for tg in common.youtube_tags(db[idx])[:2]:
             if tg not in tags:
                 tags.append(tg)
-    lines.append(" ".join("#" + x for x in (tags[:10] + list(common.FIXED_TAGS)[:3])))
-    return "\n\n".join(lines)
+    tail = [common.CHANNEL_BLURB, " ".join("#" + x for x in (tags[:10] + list(common.FIXED_TAGS)[:3]))]
+    head = "\n".join(f"{a} {b}" for a, b in chapters)
+    make_description.full_credits = ""
+    LIMIT = 4900      # 유튜브 설명란은 5000 바이트 제한 (한글은 글자당 3바이트)
+
+    def _b(txt):
+        return len(txt.encode("utf-8"))
+    full = "\n\n".join([head] + (["\n".join(credits)] if credits else []) + tail)
+    if _b(full) <= LIMIT:
+        return full
+    # 너무 길면: 설명란에는 작가(라이선스)만 소재별로 짧게, 링크가 있는 전체 출처는 따로 저장 (고정 댓글에 붙여넣기)
+    make_description.full_credits = "\n".join(credits)
+    compact = []
+    for no, idx in enumerate(members, start=1):
+        it = db[idx]
+        cr = (it.get("image_credits") or []) + (it.get("edit_credits") or [])
+        names, got = [], set()
+        for c in sorted(cr, key=lambda c: c.get("scene", 0)):
+            lic = str(c.get("license") or "").strip()
+            usr = str(c.get("user") or "").strip()
+            if c.get("source") in ("commons", "openverse") or (c.get("source") == "user" and lic and not lic.lower().startswith("cc0") and (usr or c.get("page"))):
+                key = (usr, lic)
+                if key not in got:
+                    got.add(key)
+                    names.append(f"{usr or 'unknown'} ({lic})" if lic else (usr or "unknown"))
+        pix = any(c.get("source", "pixabay") == "pixabay" for c in cr)
+        if pix:
+            names.append("Pixabay")
+        if names:
+            compact.append(f"[{no}] {DISP(it.get('country', ''))}: " + ", ".join(names))
+    note = ("Photo credits (cropped/zoomed). Full source links are in the pinned comment:" if IS_EN
+            else "사진 출처 (자르기/확대 사용). 원본 링크 전체는 고정 댓글에 있습니다:")
+    body = [head, note]
+    fixed = _b("\n\n".join([head, note] + tail)) + 4
+    room = LIMIT - fixed
+    used = []
+    for ln in compact:
+        if _b("\n".join(used + [ln])) > room:
+            used.append("…")
+            break
+        used.append(ln)
+    return "\n\n".join([head, note + "\n" + "\n".join(used)] + tail)
 
 
 def make_thumbnail(db, members, title, out_path):
@@ -739,6 +776,21 @@ def run_rich(args, db, lf_db, members):
         except Exception:
             pass
     (OUT / f"longform_{lf_id:03d}.txt").write_text(f"{title}\n\n{desc}\n", encoding="utf-8")
+    _fc = getattr(make_description, "full_credits", "")
+    if _fc:   # 설명란이 5000바이트를 넘어 짧게 줄였을 때: 링크가 있는 전체 출처를 고정 댓글용으로 저장 (댓글은 10000자까지)
+        _parts, _cur = [], ""
+        for _ln in _fc.split("\n"):          # 댓글 1개는 10000자 제한 -> 9000자 안팎으로 나눠 '댓글 1/2' 식으로 저장
+            if len(_cur) + len(_ln) + 1 > 9000 and _cur:
+                _parts.append(_cur)
+                _cur = ""
+            _cur += _ln + "\n"
+        if _cur:
+            _parts.append(_cur)
+        _head = "Photo credits (full links)" if IS_EN else "사진 출처 전체 (원본 링크 포함)"
+        _txt = "\n\n".join((f"===== {'Comment' if IS_EN else '고정 댓글'} {i + 1}/{len(_parts)} =====\n" if len(_parts) > 1 else "") + _head + ":\n" + p_
+                            for i, p_ in enumerate(_parts))
+        (OUT / f"longform_{lf_id:03d}_credits.txt").write_text(_txt, encoding="utf-8")
+        print(f"설명란이 길어 사진 출처를 줄였습니다 -> 전체 출처는 longform_{lf_id:03d}_credits.txt (고정 댓글에 붙여넣기)", flush=True)
     try:
         (OUT / f"longform_{lf_id:03d}_scenario.txt").write_text("\n\n".join(LS.scenario_text(db[i], recs[i], n) for n, i in enumerate(members, 1)), encoding="utf-8")
     except Exception:

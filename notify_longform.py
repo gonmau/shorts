@@ -80,6 +80,10 @@ def main():
     sn = Path("longform_out") / f"longform_{rec['id']:03d}_scenario.txt"
     if sn.exists():
         post_file(url, sn, "시나리오 (문장별 화면·효과)")
+    cf = Path("longform_out") / f"longform_{rec['id']:03d}_credits.txt"
+    if cf.exists():
+        post(url, "📎 설명란이 길어 사진 출처를 줄였습니다. 아래 전체 출처(링크 포함)를 고정 댓글에 붙여넣으세요")
+        post_long(url, cf.read_text(encoding="utf-8"))
     png = Path("longform_out") / f"longform_{rec['id']:03d}.png"
     if png.exists():
         post_image(url, png, "썸네일")
