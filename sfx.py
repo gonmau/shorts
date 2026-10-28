@@ -3,7 +3,7 @@
 
 - 장면이 바뀌는 곳에 '휙'(whoosh), 마지막 장면(반전) 시작에 '딩'(ding).
 - 효과음은 음성과 겹치지 않도록 문장 사이 쉬는 구간(장면 시작 직전)에 끝나게 놓는다. 최대 4개, 서로 3초 이상 간격, 첫 2초는 비움.
-- 끄려면 환경변수 SFX=off. 볼륨은 SFX_VOL (기본 1.0, 0.5=절반)."""
+- 켜려면 환경변수 SFX=on (기본은 꺼짐). 볼륨은 SFX_VOL (기본 1.0, 0.5=절반)."""
 import os
 
 import numpy as np
@@ -82,7 +82,7 @@ def build_track(events, audio_duration, vol=1.0):
 
 def mix(audio, starts, audio_duration, mode=None):
     """moviepy 오디오 클립에 효과음을 얹어 돌려준다. 끄면 원래 클립 그대로."""
-    mode = (mode if mode is not None else os.environ.get("SFX", "on")).strip().lower()
+    mode = (mode if mode is not None else os.environ.get("SFX", "off")).strip().lower()
     if mode in ("off", "0", "false", "no", ""):
         return audio, []
     events = plan(starts, audio_duration)
