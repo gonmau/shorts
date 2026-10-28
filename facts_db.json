@@ -26759,7 +26759,7 @@
       }
     ],
     "image_queries": [
-      "baby wrist string Laos",
+      "Laos baby wrist string",
       "Laos monk tying white string",
       "Lao Baci ceremony string",
       "cutting white string Laos",
@@ -26767,7 +26767,152 @@
       "broken string blessing Laos"
     ],
     "scene_count": 12,
-    "narration_original": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 ‘파신’이라 부르는 흰 실을 여러 번 손목에 감아 줍니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 전해 내려오지만, 도시 지역에서는 현대식 행사로 대체되는 경우도 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다."
+    "narration_original": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 ‘파신’이라 부르는 흰 실을 여러 번 손목에 감아 줍니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 전해 내려오지만, 도시 지역에서는 현대식 행사로 대체되는 경우도 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
+    "image_queries_done": [
+      "baby wrist string Laos",
+      "Laos monk tying white string",
+      "Lao Baci ceremony string",
+      "cutting white string Laos",
+      "Lao village ceremony",
+      "broken string blessing Laos"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Denny_Sam",
+        "page": "https://pixabay.com/vectors/guitar-music-instrument-sound-9546520/",
+        "id": 9546520,
+        "type": "illustration"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Matte1974",
+        "page": "https://pixabay.com/photos/man-monk-buddhism-laos-people-7040002/",
+        "id": 7040002,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Robert_le",
+        "page": "https://pixabay.com/photos/rice-agriculture-vietnam-nature-9717641/",
+        "id": 9717641,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "coyot",
+        "page": "https://pixabay.com/photos/guitar-musician-music-instrument-2428921/",
+        "id": 2428921,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Basile Morin",
+        "license": "CC BY-SA 4.0",
+        "title": "Crowd at temple for Lao New Year.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Crowd_at_temple_for_Lao_New_Year.jpg",
+        "id": "c:62025770"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ml991",
+        "page": "https://pixabay.com/photos/violin-bow-musical-instrument-music-924349/",
+        "id": 924349,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3532,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d592bcdc1b1a",
+        "at": "2026-10-28 22:13",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2954,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1a70508e11f2",
+        "at": "2026-10-28 22:13",
+        "scene": 2,
+        "rejected_ids": [
+          2428921,
+          7040002
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2346,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7e4e3a532225",
+        "at": "2026-10-28 22:13",
+        "scene": 3,
+        "rejected_ids": [
+          3989110,
+          9717641
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1909,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b6bfe861acf8",
+        "at": "2026-10-28 22:13",
+        "scene": 4,
+        "rejected_ids": [
+          2428921,
+          2589863,
+          4407747
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3426,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f38af66563ab",
+        "at": "2026-10-28 22:14",
+        "scene": 5,
+        "rejected_ids": [
+          1505000,
+          "c:62025770"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2095,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f6af8f49cb65",
+        "at": "2026-10-28 22:14",
+        "scene": 6,
+        "rejected_ids": [
+          238488,
+          4214358,
+          924349
+        ]
+      }
+    ]
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
