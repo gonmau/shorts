@@ -27088,7 +27088,44 @@
     "verify_note": "Precedent",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "법원 판결이 이전 사건을 그대로 따라야 할까요? 선례, 즉 Precedent는 같은 종류의 사건을 판단할 때 법원이 참고하는 권위 있는 판결입니다. 영미법 체계에서는 ‘stare decisis’ 원칙에 따라 일관성과 예측 가능성을 높이죠. 그런데 선례가 반드시 따라야 하는 구속력이 있는지, 아니면 설득력만 갖는지에 따라 판결 결과가 달라질 수 있습니다. 실제로 영미법을 채택한 국가에서는 구속력이 강한 경우도 있지만, 법원이 상황에 따라 선례를 재해석하거나 무시할 여지도 있습니다. 따라서 선례가 법정 판결을 좌우한다는 말은 일부 국가와 상황에 한정된다는 점, 기억해 두세요. 결국 법원은 선례를 ‘참고’하지만, 절대적인 규칙은 아니라는 점이 핵심입니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "케냐 법원, 선례는?",
+    "title_line2": "그럼에도 바뀔까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*선례* 꼭 따라야?"
+      },
+      {
+        "s": 3,
+        "text": "*일관성*·예측 가능?"
+      },
+      {
+        "s": 5,
+        "text": "*재해석* 가능?"
+      },
+      {
+        "s": 7,
+        "text": "*아니다* 절대 규칙?"
+      }
+    ],
+    "image_queries": [
+      "precedent law book",
+      "precedent court decision",
+      "scales of justice",
+      "judge weighing legal books",
+      "open precedent textbook",
+      "Kenya courthouse exterior",
+      "broken chain of law"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "다사라(Vijayadashami)의 10번째 날",
@@ -27373,7 +27410,7 @@
     "verify_note": "Tea culture",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:41.846189+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "불꽃 춤 ‘차하르샨베 수리’",
