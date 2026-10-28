@@ -26343,9 +26343,9 @@
   },
   {
     "topic": "과테말라(Guatemala) 민속 가톨릭(Folk Catholicism)의 독특한 의식",
-    "hook": "과테말라 교회에서 사제가 아닌 마야 무용수가 미사를 인도한다?",
-    "body": "과테말라에서는 가톨릭 신앙이 토착 종교와 뒤섞여 다양한 민족적 표현으로 나타난다. 이때 전통 의식이 공식 교리와 충돌하기도 한다.",
-    "twist": "그 의식은 공식 교회의 교리와 정면으로 모순될 수 있다.",
+    "hook": "과테말라 교회에서는 사제가 미사를 인도하고, 마야 무용수는 종종 성가나 의식 중에 전통 춤을 선보입니다.",
+    "body": "실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 예배에서는 성가와 함께 전통 악기가 울리고, 마야 무용수가 춤을 추어 분위기를 더합니다. 이 의식은 때때로 교회 교리와 긴장이 있을 수 있습니다. 전통적인 제물이나 조상 숭배 요소가 직접 미사에 포함되지는 않지만, 마야 문화와 가톨릭 의식이 함께 어우러지는 모습을 볼 수 있습니다. 이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다.",
+    "twist": "사제가 미사를 주관하지만, 마야 무용수의 참여가 지역 사회에서는 문화적 조화로 여겨집니다.",
     "caveat": "이 현상은 과테말라 일부 지역의 공동체에서만 관찰된다.",
     "country": "과테말라",
     "theme": "관습/예절",
@@ -26354,7 +26354,131 @@
     "verify_note": "Folk Catholicism",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "과테말라 교회에서는 사제가 미사를 인도하고, 마야 무용수는 종종 성가나 의식 중에 전통 춤을 선보입니다. 실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 예배에서는 성가와 함께 전통 악기가 울리고, 마야 무용수가 춤을 추어 분위기를 더합니다. 이 의식은 때때로 교회 교리와 긴장이 있을 수 있습니다. 전통적인 제물이나 조상 숭배 요소가 직접 미사에 포함되지는 않지만, 마야 문화와 가톨릭 의식이 함께 어우러지는 모습을 볼 수 있습니다. 이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다. 사제가 미사를 주관하지만, 마야 무용수의 참여가 지역 사회에서는 문화적 조화로 여겨집니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "과테말라 교회에서 사제가 아닌 마야 무용수가 미사를 인도한다는 이야기를 들어보셨나요? 실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 여기서는 성가 대신 전통 악기가 울리고, 제대 대신 마야 무용수가 신성한 춤을 추며 예배를 이끕니다.  \n\n그런데 이 의식은 교회의 공식 교리와 정면으로 충돌하기도 합니다. 전통적인 제물이나 조상 숭배 요소가 미사에 포함되면서, 교황청이 인정하는 가톨릭 의식과는 다른 모습을 보이죠.  \n\n이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다. 결국, 사제가 아닌 마야 무용수가 이끄는 미사는 그 지역 사람들에게는 신성한 조화이지만, 교리적으로는 여전히 논란의 여지를 남깁니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "마야 무용수 *미사*"
+      },
+      {
+        "s": 2,
+        "text": "가톨릭·마야 *혼합*"
+      },
+      {
+        "s": 3,
+        "text": "전통 악기 *연주*"
+      },
+      {
+        "s": 8,
+        "text": "사제 대신 *무용수*"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 1번 문장: Mass in Guatemala is led by priests; Maya dancers do not officiate the liturgy.",
+      "[수정됨] [unsupported] 3번 문장: While traditional instruments are used, there is no reliable evidence that a Maya dancer leads the worship as the primary officiant.",
+      "[수정됨] [unsupported] 5번 문장: No credible sources confirm that actual sacrificial or ancestor‑worship elements are incorporated into the Catholic Mass in Guatemala.",
+      "[수정됨] [contradicted] 8번 문장: Masses are not led by Maya dancers; priests remain the officiants, making the claim false."
+    ],
+    "title_line1": "과테말라민속가톨릭",
+    "title_line2": "마야무용수가미사?",
+    "image_queries": [
+      "Mayan dancer leading mass",
+      "Catholic Maya ritual",
+      "Traditional Mayan musical instruments",
+      "Guatemala church interior",
+      "Guatemala altar with offerings",
+      "Guatemalan village ceremony",
+      "Guatemala indigenous worship",
+      "Mayan dancer priest substitute"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0313_과테말라_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0313_과테말라_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Mayan dancer leading mass",
+      "Catholic Maya ritual",
+      "Traditional Mayan musical instruments",
+      "Guatemala church interior",
+      "Guatemala altar with offerings",
+      "Guatemalan village ceremony",
+      "Guatemala indigenous worship",
+      "Mayan dancer priest substitute"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "WikimediaImages",
+        "page": "https://pixabay.com/photos/ballet-dancer-male-man-male-dancer-835757/",
+        "id": 835757
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Carlos_Bonilla_Miranda",
+        "page": "https://pixabay.com/photos/aztec-pre-columbian-mexico-peru-195134/",
+        "id": 195134
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michael_Fotofreund",
+        "page": "https://pixabay.com/photos/keys-accordion-piano-music-scale-6090560/",
+        "id": 6090560
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "josephhill",
+        "page": "https://pixabay.com/photos/antigua-guatemala-architecture-883165/",
+        "id": 883165
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Simon Burchell",
+        "license": "CC BY-SA 4.0",
+        "title": "Altar Maya El Calvario, San Andrés Xecul 03.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Altar_Maya_El_Calvario,_San_Andr%C3%A9s_Xecul_03.jpg",
+        "id": "c:118478028"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "HAROLDPH",
+        "page": "https://pixabay.com/photos/culture-traditional-costume-6380756/",
+        "id": 6380756
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "JancickaL",
+        "page": "https://pixabay.com/photos/sunrise-water-dawn-morning-country-4987384/",
+        "id": 4987384
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "israyosoy",
+        "page": "https://pixabay.com/photos/ballerina-ballet-dance-dancer-9258598/",
+        "id": 9258598
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0313_과테말라.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0313_과테말라.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "RLF3Fvzv7Ws",
+    "uploaded_at": "2026-10-29T01:04:35.767581+09:00"
   },
   {
     "topic": "스위스(Switzerland) 인구는 알프스(Swiss Alps)가 아닌 고원(Swiss Plateau)에 집중",
@@ -26369,7 +26493,118 @@
     "verify_note": "Switzerland",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "스위스 알프스에 사는 사람이 전부라고 생각했나요? 실제로는 인구 9백만 명 중 대부분이 알프스가 아닌 스위스 고원, 즉 플래토 지역에 모여 있습니다. 고원은 평야와 호수가 어우러진 넓은 땅으로, 취리히, 제네바, 베른 같은 주요 도시와 경제 중심이 자리하고 있죠. 그래서 스위스의 인구와 산업은 이곳에 집중됩니다. 그런데 알프스는 넓지만 사람들은 거의 그곳에 살지 않습니다. 산악 지대는 관광과 레저가 활발하지만, 거주지는 제한적이기 때문이죠. 결국 스위스 인구는 고원에 집중돼 있다는 점, 바로 그 점이 스위스 지형을 이해하는 핵심입니다.",
+    "cross_checked": true,
+    "cross_sources": 1,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "스위스 인구는 고원에",
+    "title_line2": "알프스가 전부?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "알프스 전부? *오해*"
+      },
+      {
+        "s": 2,
+        "text": "대다수는 *고원*에"
+      },
+      {
+        "s": 3,
+        "text": "주요는 *플래토*"
+      },
+      {
+        "s": 4,
+        "text": "인구·산업 *집중*"
+      },
+      {
+        "s": 7,
+        "text": "핵심은 *고원* 인구"
+      }
+    ],
+    "image_queries": [
+      "Swiss Alps mountain village",
+      "Swiss Plateau city skyline",
+      "Zurich downtown skyline",
+      "Swiss industrial cityscape",
+      "Alpine mountain landscape",
+      "Alpine ski resort",
+      "Swiss Plateau population map"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0314_스위스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0314_스위스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Swiss Alps mountain village",
+      "Swiss Plateau city skyline",
+      "Zurich downtown skyline",
+      "Swiss industrial cityscape",
+      "Alpine mountain landscape",
+      "Alpine ski resort",
+      "Swiss Plateau population map"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ChiemSeherin",
+        "page": "https://pixabay.com/photos/mountain-village-houses-alps-8190836/",
+        "id": 8190836
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Ferdinand-Feng",
+        "page": "https://pixabay.com/photos/huangpu-river-pudong-shanghai-china-5501210/",
+        "id": 5501210
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "kingmaphotos",
+        "page": "https://pixabay.com/photos/alps-cathedral-church-city-5083618/",
+        "id": 5083618
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "manuelsechi",
+        "page": "https://pixabay.com/photos/train-railway-station-train-station-5638568/",
+        "id": 5638568
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "YaoMuyu",
+        "page": "https://pixabay.com/photos/machhapuchhre-fishtail-10489623/",
+        "id": 10489623
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/snowboarding-ski-resort-slopes-4763731/",
+        "id": 4763731
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/earth-world-lighting-night-globe-74015/",
+        "id": 74015
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0314_스위스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0314_스위스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "38rEAebh02w",
+    "uploaded_at": "2026-10-29T01:04:37.098309+09:00"
   },
   {
     "topic": "스페인(Spain) 충성 토스트(loyal toast)의 유리 파쇄 전통",

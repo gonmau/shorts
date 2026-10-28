@@ -11,31 +11,65 @@
 #   제외한 소재는 폐기(rejected)로 바뀌어 render에서 건너뛰고, 나중에 'redo_script=번호!'로 되살릴 수 있습니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 
-=== [308] 싱가포르 ===
-(교차검증) ok
-(사실 확인용 검색어) Popemobile
-후크: 교황이 차에 앉아도 서 있어도, 실제로는 차 안에 ‘왕좌’가 숨겨져 있다는 사실!
-본문: 교황 자동차는 교황이 대중 앞에 나타날 때 시야를 확보하도록 특별 설계된 차량으로, 이동식 왕좌인 sedia gestatoria를 대체했습니다. 1981년 교황 요한 바오로 2세에 대한 암살 시도 이후 방탄 유리로 둘러싸인 모델도 등장했습니다.
-반전: 일부 모델은 교황이 서서 인사할 수 있도록 설계돼 있어, 앉는 자리 없이도 행사에 참여할 수 있습니다.
+=== [313] 과테말라 ===
+(교차검증) fixed
+(교차검증 메모 1) [수정됨] [contradicted] 1번 문장: Mass in Guatemala is led by priests; Maya dancers do not officiate the liturgy.
+(교차검증 메모 2) [수정됨] [unsupported] 3번 문장: While traditional instruments are used, there is no reliable evidence that a Maya dancer leads the worship as the primary officiant.
+(교차검증 메모 3) [수정됨] [unsupported] 5번 문장: No credible sources confirm that actual sacrificial or ancestor‑worship elements are incorporated into the Catholic Mass in Guatemala.
+(교차검증 메모 4) [수정됨] [contradicted] 8번 문장: Masses are not led by Maya dancers; priests remain the officiants, making the claim false.
+(사실 확인용 검색어) Folk Catholicism
+후크: 과테말라 교회에서는 사제가 미사를 인도하고, 마야 무용수는 종종 성가나 의식 중에 전통 춤을 선보입니다.
+본문: 실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 예배에서는 성가와 함께 전통 악기가 울리고, 마야 무용수가 춤을 추어 분위기를 더합니다. 이 의식은 때때로 교회 교리와 긴장이 있을 수 있습니다. 전통적인 제물이나 조상 숭배 요소가 직접 미사에 포함되지는 않지만, 마야 문화와 가톨릭 의식이 함께 어우러지는 모습을 볼 수 있습니다. 이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다.
+반전: 사제가 미사를 주관하지만, 마야 무용수의 참여가 지역 사회에서는 문화적 조화로 여겨집니다.
 제외:
-제목1: 싱가포르 교황 자동차
-제목2: 왕좌는 차 안에 숨겨진다
-핵심[1]: 차 안에 *왕좌* 숨김
-핵심[4]: 암살 뒤 *방탄* 도입
-핵심[6]: 서서 *인사* 가능
-이미지[1]: pope inside mobile
-이미지[2]: pope open-mobile
-이미지[3]: papal portable throne
-이미지[4]: bulletproof glass popemobile 1981
-이미지[5]: popemobile without seat
-이미지[6]: pope standing inside car
-이미지[7]: special popemobile interior design
-이미지[8]: future popemobile greeting pose
-대본[1]: 교황이 차에 앉아도 서 있어도, 실제로는 차 안에 ‘왕좌’가 숨겨져 있다는 사실!
-대본[2]: 교황 자동차는 대중 앞에 나타날 때 시야를 확보하도록 특별히 만든 차량입니다.
-대본[3]: 옛날엔 이동식 왕좌 sedia gestatoria를 사용했지만, 차량이 그 역할을 대신하게 되었죠.
-대본[4]: 1981년 교황 요한 바오로 2세에 대한 암살 시도 이후, 방탄 유리를 둘러싼 모델이 도입돼 안전성이 크게 강화되었습니다.
-대본[5]: 흥미로운 점은 일부 모델은 교황이 앉을 자리를 전혀 두지 않아도 됩니다.
-대본[6]: 차 안에 서서 인사할 수 있도록 설계돼, 교황이 서서도 행사에 참여할 수 있죠.
-대본[7]: 이 설계는 교황 자동차에만 적용되는 특수한 경우이며, 일반 차량에는 해당되지 않는다는 점을 기억해 주세요.
-대본[8]: 그렇다면, 다음에 보게 될 교황 자동차는 과연 어느 자세로 인사할까요?
+제목1: 과테말라민속가톨릭
+제목2: 마야무용수가미사?
+핵심[1]: 마야 무용수 *미사*
+핵심[2]: 가톨릭·마야 *혼합*
+핵심[3]: 전통 악기 *연주*
+핵심[8]: 사제 대신 *무용수*
+이미지[1]: Mayan dancer leading mass
+이미지[2]: Catholic Maya ritual
+이미지[3]: Traditional Mayan musical instruments
+이미지[4]: Guatemala church interior
+이미지[5]: Guatemala altar with offerings
+이미지[6]: Guatemalan village ceremony
+이미지[7]: Guatemala indigenous worship
+이미지[8]: Mayan dancer priest substitute
+대본[1]: 과테말라 교회에서는 사제가 미사를 인도하고, 마야 무용수는 종종 성가나 의식 중에 전통 춤을 선보입니다.
+대본[2]: 실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다.
+대본[3]: 예배에서는 성가와 함께 전통 악기가 울리고, 마야 무용수가 춤을 추어 분위기를 더합니다.
+대본[4]: 이 의식은 때때로 교회 교리와 긴장이 있을 수 있습니다.
+대본[5]: 전통적인 제물이나 조상 숭배 요소가 직접 미사에 포함되지는 않지만, 마야 문화와 가톨릭 의식이 함께 어우러지는 모습을 볼 수 있습니다.
+대본[6]: 이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다.
+대본[7]: 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다.
+대본[8]: 사제가 미사를 주관하지만, 마야 무용수의 참여가 지역 사회에서는 문화적 조화로 여겨집니다.
+
+=== [314] 스위스 ===
+(교차검증) ok
+(사실 확인용 검색어) Switzerland
+후크: 스위스 알프스에 사는 사람이 전부라고 생각했나요?
+본문: 스위스는 알프스가 대부분을 차지하지만, 인구 9백만 명 중 대다수는 스위스 고원(플래토) 지역에 살고 있다. 주요 도시와 경제 중심도 이곳에 모여 있다.
+반전: 알프스는 넓지만 사람들은 거의 그곳에 살지 않는다.
+제외:
+제목1: 스위스 인구는 고원에
+제목2: 알프스가 전부?
+핵심[1]: 알프스 전부? *오해*
+핵심[2]: 대다수는 *고원*에
+핵심[3]: 주요는 *플래토*
+핵심[4]: 인구·산업 *집중*
+핵심[7]: 핵심은 *고원* 인구
+이미지[1]: Swiss Alps mountain village
+이미지[2]: Swiss Plateau city skyline
+이미지[3]: Zurich downtown skyline
+이미지[4]: Swiss industrial cityscape
+이미지[5]: Alpine mountain landscape
+이미지[6]: Alpine ski resort
+이미지[7]: Swiss Plateau population map
+대본[1]: 스위스 알프스에 사는 사람이 전부라고 생각했나요?
+대본[2]: 실제로는 인구 9백만 명 중 대부분이 알프스가 아닌 스위스 고원, 즉 플래토 지역에 모여 있습니다.
+대본[3]: 고원은 평야와 호수가 어우러진 넓은 땅으로, 취리히, 제네바, 베른 같은 주요 도시와 경제 중심이 자리하고 있죠.
+대본[4]: 그래서 스위스의 인구와 산업은 이곳에 집중됩니다.
+대본[5]: 그런데 알프스는 넓지만 사람들은 거의 그곳에 살지 않습니다.
+대본[6]: 산악 지대는 관광과 레저가 활발하지만, 거주지는 제한적이기 때문이죠.
+대본[7]: 결국 스위스 인구는 고원에 집중돼 있다는 점, 바로 그 점이 스위스 지형을 이해하는 핵심입니다.
