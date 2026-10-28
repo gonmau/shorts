@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 17:29:49 (KST) · 기록 374건 · 소재 334개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 19:16:30 (KST) · 기록 384건 · 소재 334개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,15 +8,18 @@
 |---|---|---|---|
 | -c | 11 | 0 | 1분 51초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 4 | 0 | 0초 |
-| approve | 1 | 0 | 0초 |
+| apply_review | 5 | 0 | 0초 |
+| approve | 2 | 0 | 0초 |
+| build_video | 1 | 0 | 24분 28초 |
 | cuts | 2 | 0 | 10초 |
-| export_review | 1 | 0 | 0초 |
-| fetch_images | 34 | 0 | 10분 37초 |
+| export_review | 2 | 0 | 0초 |
+| fetch_images | 35 | 0 | 14분 13초 |
 | generate_culture_facts | 1 | 0 | 47초 |
-| generate_script | 14 | 0 | 16분 46초 |
+| generate_script | 16 | 0 | 21분 21초 |
+| generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
-| promote_ready | 4 | 0 | 0초 |
+| make_thumbnail | 1 | 0 | 3초 |
+| promote_ready | 5 | 0 | 0초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
 | 코드업데이트 | 16 | 0 | 0초 |
@@ -27,6 +30,16 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 19:16 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 106 | ✅ | 3초 |  |
+| 19:16 | PC | build_video | build_video.py --limit 3 --start 106 --channel gonmauY --handle @gonmauY | ✅ | 24분 28초 |  |
+| 18:51 | PC | generate_tts | generate_tts.py --limit 3 --start 106 | ✅ | 55초 |  |
+| 18:50 | PC | fetch_images | fetch_images.py --limit 3 --start 106 --any | ✅ | 3분 36초 |  |
+| 18:47 | PC | generate_script | generate_script.py --extras-only --limit 3 --start 106 | ✅ | 1초 |  |
+| 18:47 | PC | export_review | export_review.py --limit 3 --start 106 | ✅ | 0초 |  |
+| 18:47 | PC | generate_script | generate_script.py --limit 3 --start 106 | ✅ | 4분 34초 |  |
+| 18:42 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 18:42 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 18:42 | PC | approve | approve.py --limit 3 --start 106 | ✅ | 0초 |  |
 | 17:29 | PC | 코드업데이트 | gonmau/shorts: 1개 (yt_report.py) | ✅ |  |  |
 | 16:59 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, get_refresh_token.py, lf_thumb.py, notify_longform.py, yt_report.py) | ✅ |  |  |
 | 08:42 | Actions | 쇼츠 | culture-shorts-pipeline #98 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40603324880 |
