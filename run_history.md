@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 21:51:51 (KST) · 기록 421건 · 소재 337개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 21:55:05 (KST) · 기록 426건 · 소재 337개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 11 | 0 | 1분 51초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 13 | 0 | 1초 |
-| approve | 4 | 0 | 0초 |
+| apply_review | 14 | 0 | 1초 |
+| approve | 5 | 0 | 0초 |
 | build_video | 1 | 0 | 24분 28초 |
 | cuts | 2 | 0 | 10초 |
-| export_review | 9 | 0 | 0초 |
+| export_review | 10 | 0 | 1초 |
 | fetch_images | 35 | 0 | 14분 13초 |
 | generate_culture_facts | 2 | 0 | 1분 3초 |
-| generate_script | 23 | 0 | 22분 49초 |
+| generate_script | 24 | 0 | 25분 37초 |
 | generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 1 | 0 | 3초 |
-| promote_ready | 13 | 0 | 1초 |
+| promote_ready | 14 | 0 | 1초 |
 | redo_videos | 4 | 0 | 0초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
@@ -31,6 +31,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:54 | PC | export_review | export_review.py --limit 1 --start 106 | ✅ | 0초 |  |
+| 21:54 | PC | generate_script | generate_script.py --limit 1 --start 106 | ✅ | 2분 47초 |  |
+| 21:52 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 21:52 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 21:52 | PC | approve | approve.py --limit 1 --start 106 | ✅ | 0초 |  |
 | 21:50 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
 | 21:50 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 21:50 | PC | approve | approve.py --limit 1 --start 106 | ✅ | 0초 |  |
