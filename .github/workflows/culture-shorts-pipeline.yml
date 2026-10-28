@@ -92,6 +92,8 @@ jobs:
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
       CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
+      SFX: ${{ vars.SFX || 'on' }}              # 효과음 (끄려면 저장소 변수 SFX=off)
+      SFX_VOL: ${{ vars.SFX_VOL || '1.0' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}

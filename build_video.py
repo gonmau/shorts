@@ -748,7 +748,15 @@ def build_one(idx, item):
         size=(W, H),
     ).set_duration(audio_duration)
 
-    final = final.set_audio(audio)
+    try:
+        import sfx
+        mixed, sfx_events = sfx.mix(audio, starts, audio_duration)
+        if sfx_events:
+            print("효과음: " + ", ".join(f"{t:.1f}s {k}" for t, k in sfx_events))
+        final = final.set_audio(mixed)
+    except Exception as e:      # 효과음 때문에 영상 제작이 멈추면 안 됨
+        print(f"효과음 건너뜀: {e}")
+        final = final.set_audio(audio)
 
     VIDEO_DIR.mkdir(exist_ok=True)
 
@@ -766,6 +774,7 @@ def build_one(idx, item):
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
+        audio_fps=44100,
         preset="medium",
         threads=4,
         ffmpeg_params=[
