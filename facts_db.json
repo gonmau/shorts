@@ -26688,10 +26688,6 @@
         "text": "그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다."
       }
     ],
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2_timing.json",
-    "tts_voice_v2": "ko-KR-SunHiNeural",
-    "status_tts_v2": "done",
     "image_queries_done": [
       "Spanish party glass breaking",
       "Spanish royal toast ceremony",
@@ -26754,6 +26750,10 @@
     ],
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0315_스페인.srt",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0315_스페인.mp4",
     "status_v6": "video_done"
   },
