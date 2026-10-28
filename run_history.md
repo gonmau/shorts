@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 22:22:54 (KST) · 기록 443건 · 소재 349개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 22:23:43 (KST) · 기록 448건 · 소재 349개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 16 | 0 | 2초 |
-| approve | 7 | 0 | 1초 |
+| apply_review | 17 | 0 | 2초 |
+| approve | 8 | 0 | 1초 |
 | build_video | 1 | 0 | 24분 28초 |
 | cuts | 2 | 0 | 10초 |
-| export_review | 12 | 0 | 1초 |
+| export_review | 13 | 0 | 1초 |
 | fetch_images | 36 | 1 | 14분 22초 |
 | generate_culture_facts | 3 | 0 | 3분 5초 |
-| generate_script | 26 | 0 | 28분 55초 |
+| generate_script | 27 | 0 | 29분 4초 |
 | generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 1 | 0 | 3초 |
-| promote_ready | 16 | 0 | 2초 |
+| promote_ready | 17 | 0 | 2초 |
 | redo_videos | 6 | 0 | 1초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
@@ -31,6 +31,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:23 | PC | export_review | export_review.py --limit 1 --start 340 | ✅ | 0초 |  |
+| 22:23 | PC | generate_script | generate_script.py --limit 1 --start 340 | ✅ | 9초 |  |
+| 22:23 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
+| 22:23 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 22:23 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
 | 22:22 | PC | 코드업데이트 | gonmau/shorts: 3개 (generate_culture_facts.py, generate_script.py, wiki_source.py) | ✅ |  |  |
 | 22:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 2초 |  |
 | 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source commons --type illustration | ❌ failed | 4초 | 장면 1: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Laos baby wrist string). 기존 사진 유지 |
