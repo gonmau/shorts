@@ -26374,8 +26374,8 @@
   {
     "topic": "스페인(Spain) 충성 토스트(loyal toast)의 유리 파쇄 전통",
     "hook": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요?",
-    "body": "스페인에서는 때때로 왕에게 바치는 ‘충성 토스트’가 비공식적인 의식으로 행해지는 경우가 있습니다. 토스트가 끝난 뒤 잔을 깨뜨리는 경우가 있는데, 이는 남은 잔으로 또 다른 토스트가 이어지는 것을 막고자 하는 의도가 포함될 수 있습니다.",
-    "twist": "이러한 관습은 모든 스페인 행사에 보편적인 것은 아니며, 일부 지역이나 특별한 행사에서만 나타날 수 있습니다.",
+    "body": "스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다. 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다. 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다. 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다.",
+    "twist": "그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.",
     "caveat": "이 전통은 특정 지역·행사에서만 행해진다.",
     "country": "스페인",
     "theme": "관습/예절",
@@ -26385,58 +26385,74 @@
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
     "status": "scripted",
-    "narration": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 때때로 왕에게 바치는 ‘충성 토스트’가 비공식적인 의식으로 행해지는 경우가 있습니다. 토스트가 끝난 뒤 잔을 깨뜨리는 경우가 있는데, 이는 남은 잔으로 또 다른 토스트가 이어지는 것을 막고자 하는 의도가 포함될 수 있습니다. 이러한 관습은 모든 스페인 행사에 보편적인 것은 아니며, 일부 지역이나 특별한 행사에서만 나타날 수 있습니다. 파티가 끝난 뒤 유리 파편이 남아도, 이는 ‘충성의 마지막 한 모금’이 완성됐다는 의미로 해석되기도 합니다. 잔이 깨지는 순간, 모인 사람들은 하나의 충성을 마무리한 셈이라고 느낄 수 있습니다. 이런 작은 의식이 남긴 여운은 다음 번에도 또 다른 ‘충성 토스트’를 기대하게 만들기도 합니다.",
+    "narration": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다. 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다. 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다. 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다. 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.",
     "cross_checked": true,
-    "cross_sources": 0,
+    "cross_sources": 4,
     "cross_model": "openai/gpt-oss-120b",
     "cross_notes": [
-      "[수정됨] [unsupported] 2번 문장: No reliable evidence of a formal 'loyal toast' ritual to the king in Spain.",
-      "[수정됨] [unsupported] 3번 문장: No documented practice of breaking the glass to prevent further toasts.",
-      "[수정됨] [unsupported] 4번 문장: Explanation of a non‑existent practice; lacks evidence.",
-      "[수정됨] [unsupported] 5번 문장: No source indicating the tradition is limited to certain regions or events.",
-      "[수정됨] [unsupported] 6번 문장: No evidence that glass shards symbolize 'the last sip of loyalty'.",
-      "[수정됨] [unsupported] 7번 문장: Claim about meaning of glass breaking is unsubstantiated.",
-      "[수정됨] [unsupported] 8번 문장: No basis for the claim that this ritual creates anticipation for future 'loyal toasts'.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No reliable evidence of a Spanish 'loyal toast' to the king as an informal ceremony.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No documented tradition of breaking glasses to prevent further toasts in Spain.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claim about prevalence lacks supporting sources.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: Interpretation of glass shards as 'last sip of loyalty' is not attested.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: No evidence that participants view broken glass as completing a loyalty act.",
-      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: No source linking this ritual to expectations of future 'loyal toasts'."
+      "[수정됨] [unsupported] 2번 문장: No evidence of a 'loyal toast' tradition in Spain.",
+      "[수정됨] [unsupported] 3번 문장: No documented practice of breaking glasses to prevent further toasts.",
+      "[수정됨] [unsupported] 4번 문장: Claim about limited applicability lacks supporting evidence.",
+      "[수정됨] [unsupported] 5번 문장: No sources confirming regional specificity of such a custom.",
+      "[수정됨] [unsupported] 6번 문장: No evidence that breaking glasses creates a declared atmosphere of loyalty.",
+      "[수정됨] [unsupported] 7번 문장: No documented meaning of glass breaking as a quiet signal for a new start.",
+      "[수정됨] [삭제] 근거 없는 건강/기원 문장 1개 (4번)",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No evidence of a Spanish 'loyal toast' to the king.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No documented tradition of breaking glasses to prevent another toast.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: Same as above; no regional or special-event basis documented.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: Subjective interpretation of a non‑existent practice.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about a symbolic signal without supporting evidence."
     ],
-    "narration_original": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 왕에게 바치는 ‘충성 토스트’가 정해진 의식으로 진행됩니다. 토스트가 끝나면 바로 그 잔을 깨뜨리는데, 이는 남은 잔으로 또 다른 토스트가 만들어지는 것을 막기 위해서입니다. 즉, 더 낮은 단계의 토스트가 이어지는 것을 방지하려는 의도된 행위죠. 이 전통은 모든 스페인 행사에서 쓰이는 것은 아니고, 특정 지역이나 특별한 행사에서만 찾아볼 수 있습니다. 그래서 파티가 끝난 뒤 유리 파편이 남아도, 그 의미는 ‘충성의 마지막 한 모금’이 완성됐다는 증거가 됩니다. 잔이 깨지는 순간, 그곳에 모인 사람들은 이미 하나의 충성을 마무리한 셈이죠. 이런 작은 의식이 남긴 여운은, 다음 번에도 또 다른 ‘충성 토스트’를 기대하게 만듭니다.",
+    "narration_original": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요?  \n스페인에서는 가끔 왕에게 바치는 ‘충성 토스트’가 비공식 의식으로 진행됩니다. 토스트가 끝난 뒤 남은 잔을 깨뜨리는 행위가 있는데, 이는 그 잔으로 또 다른 토스트가 이어지는 것을 막고자 하는 의미가 담겨 있습니다.  \n하지만 이 전통이 모든 스페인 행사에 적용되는 것은 아닙니다. 실제로는 특정 지역이나 특별한 행사에서만 나타나는 관습이며, 전국적으로 보편적인 풍습이라고 보기는 어렵습니다.  \n잔이 부서지는 순간, 그 자리에는 이미 토스트의 충성심을 선언한 분위기가 남아 있습니다. 바로 그때, 파티는 새로운 시작을 알리는 조용한 신호가 되는 것이죠.",
     "highlights": [
       {
         "s": 1,
-        "text": "*잔* 깨는 이유?"
-      },
-      {
-        "s": 2,
-        "text": "*토스트* 의식"
+        "text": "왜 잔을 *깨뜨릴*까?"
       },
       {
         "s": 3,
-        "text": "*다음* 방지"
+        "text": "다음 토스트 *막는* 잔 파쇄"
       },
       {
         "s": 6,
-        "text": "*마지막* 증거"
+        "text": "잔 부서질 때 *충성* 분위기"
       }
     ],
     "cross_verdict": "unsupported",
-    "title_line1": "스페인 파티 토스트",
-    "title_line2": "잔을 왜 깨",
+    "title_line1": "스페인 파티 잔 파쇄",
+    "title_line2": "왜 토스트를 깨뜨릴까?",
     "image_queries": [
-      "shattered glass toast",
+      "Spanish party glass breaking",
       "Spanish royal toast ceremony",
-      "broken glass toast ritual",
-      "wine glass on table",
-      "regional Spanish celebration",
-      "glass shards last toast",
-      "clinking wine glasses",
-      "empty wine glass lingering"
+      "broken glass preventing next toast",
+      "Spanish festival without glass breaking",
+      "regional Spanish celebration tradition",
+      "glass shattering loyalty atmosphere",
+      "quiet signal new party start"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다."
+      },
+      {
+        "n": 3,
+        "text": "토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다."
+      },
+      {
+        "n": 4,
+        "text": "실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다."
+      },
+      {
+        "n": 5,
+        "text": "잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다."
+      },
+      {
+        "n": 6,
+        "text": "그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다."
+      }
+    ]
   },
   {
     "topic": "오본(Obon) – 조상 영혼이 찾아오는 가족 재회 축제",
