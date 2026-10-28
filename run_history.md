@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 19:36:36 (KST) · 기록 385건 · 소재 337개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 19:39:16 (KST) · 기록 389건 · 소재 337개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 11 | 0 | 1분 51초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 5 | 0 | 0초 |
+| apply_review | 6 | 0 | 0초 |
 | approve | 2 | 0 | 0초 |
 | build_video | 1 | 0 | 24분 28초 |
 | cuts | 2 | 0 | 10초 |
-| export_review | 2 | 0 | 0초 |
+| export_review | 3 | 0 | 0초 |
 | fetch_images | 35 | 0 | 14분 13초 |
 | generate_culture_facts | 2 | 0 | 1분 3초 |
-| generate_script | 16 | 0 | 21분 21초 |
+| generate_script | 17 | 0 | 21분 23초 |
 | generate_tts | 1 | 0 | 55초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 1 | 0 | 3초 |
-| promote_ready | 5 | 0 | 0초 |
+| promote_ready | 6 | 0 | 0초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
 | 코드업데이트 | 16 | 0 | 0초 |
@@ -30,6 +30,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 19:39 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 1초 |  |
+| 19:39 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
+| 19:39 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
+| 19:39 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 19:36 | PC | generate_culture_facts | generate_culture_facts.py --count 3 | ✅ | 15초 |  |
 | 19:16 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 106 | ✅ | 3초 |  |
 | 19:16 | PC | build_video | build_video.py --limit 3 --start 106 --channel gonmauY --handle @gonmauY | ✅ | 24분 28초 |  |
