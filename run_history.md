@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-28 22:27:53 (KST) · 기록 460건 · 소재 349개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-28 22:39:32 (KST) · 기록 466건 · 소재 349개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 20 | 0 | 2초 |
+| apply_review | 21 | 0 | 2초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 1 | 0 | 24분 28초 |
+| build_video | 2 | 0 | 34분 3초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 14 | 0 | 1초 |
 | fetch_images | 37 | 1 | 15분 16초 |
 | generate_culture_facts | 3 | 0 | 3분 5초 |
-| generate_script | 29 | 0 | 30분 15초 |
-| generate_tts | 1 | 0 | 55초 |
+| generate_script | 30 | 0 | 30분 17초 |
+| generate_tts | 2 | 0 | 1분 17초 |
 | image_check | 2 | 0 | 19초 |
-| make_thumbnail | 1 | 0 | 3초 |
-| promote_ready | 20 | 0 | 3초 |
+| make_thumbnail | 2 | 0 | 5초 |
+| promote_ready | 21 | 0 | 3초 |
 | redo_videos | 6 | 0 | 1초 |
 | 롱폼 | 51 | 6 | 4시간 51분 |
 | 쇼츠 | 92 | 6 | 12시간 17분 |
@@ -31,6 +31,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:39 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 340 | ✅ | 1초 |  |
+| 22:39 | PC | build_video | build_video.py --index 340 --channel gonmauY --handle @gonmauY | ✅ | 9분 35초 |  |
+| 22:29 | PC | generate_tts | generate_tts.py --index 340 | ✅ | 22초 |  |
+| 22:29 | PC | generate_script | generate_script.py --extras-only --index 340 | ✅ | 1초 |  |
+| 22:29 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 22:29 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
 | 22:27 | PC | fetch_images | fetch_images.py --limit 1 --start 340 --any | ✅ | 54초 |  |
 | 22:26 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 340 | ✅ | 1초 |  |
 | 22:26 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
