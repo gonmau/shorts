@@ -84,7 +84,9 @@ def main():
         title, description = youtube_meta(item)
         body = {
             "snippet": {"title": title, "description": description, "categoryId": "27", "tags": youtube_tags(item)},
-            "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
+            "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False,
+                       "containsSyntheticMedia": True,                                   # '변경되거나 합성된 콘텐츠(AI 사용)': 예
+                       "paidProductPlacementDetails": {"hasPaidProductPlacement": False}},   # 유료 프로모션: 아니요
         }
         slot = next_slot(slots, used, now, kst) if slots else None
         if slot:
