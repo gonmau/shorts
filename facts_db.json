@@ -26619,7 +26619,7 @@
     "verify_note": "Loyal toast",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다. 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다. 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다. 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다. 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -26687,7 +26687,75 @@
         "n": 6,
         "text": "그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다."
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0315_스페인_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Spanish party glass breaking",
+      "Spanish royal toast ceremony",
+      "broken glass preventing next toast",
+      "Spanish festival without glass breaking",
+      "regional Spanish celebration tradition",
+      "glass shattering loyalty atmosphere",
+      "quiet signal new party start"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "bridgesward",
+        "page": "https://pixabay.com/photos/happy-holidays-cocktails-drinks-2578446/",
+        "id": 2578446
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/wedding-ceremony-champagne-glasses-1868868/",
+        "id": 1868868
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/champagner-toasting-new-years-eve-1071356/",
+        "id": 1071356
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/thanksgiving-thanksgiving-dinner-8396731/",
+        "id": 8396731
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "MalvarrosaDesigns",
+        "page": "https://pixabay.com/photos/spanish-dancer-dancer-flamenco-7521585/",
+        "id": 7521585
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/lost-places-broken-window-glass-1798639/",
+        "id": 1798639
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472673/",
+        "id": 8472673
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0315_스페인.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0315_스페인.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "오본(Obon) – 조상 영혼이 찾아오는 가족 재회 축제",
