@@ -221,5 +221,27 @@
     "video": "longform_010.mp4",
     "status": "video_done",
     "created_at": "2026-10-27T15:00:15.441238+00:00"
+  },
+  {
+    "id": 11,
+    "mode": "auto",
+    "theme": "음식문화,축제/의례,생활문화",
+    "members": [
+      44,
+      69,
+      87,
+      106,
+      112,
+      117
+    ],
+    "title": "세계의 음식문화 · 축제 · 의례 · 생활문화 6가지 | 라트비아 외",
+    "style": "rich",
+    "expanded": true,
+    "clips": true,
+    "description": "00:00 오프닝\n00:21 1. 라트비아 - 라트비아 불꽃 축제 연인이 불을 뛰어넘는 이유\n01:34 2. 콜롬비아 - 콜롬비아 일요일 무차 거리엔 축제?\n02:35 3. 리투아니아 - 리투아니아 악마 축제 겨울을 어떻게 몰아낼까\n03:30 4. 터키 - 터키 낙타 레슬링 겨울에 열리는 거대한 몸싸움\n04:35 5. 마다가스카르 - 마다가스카르 파마디하나 선조를 다시 감싸는 의례\n05:43 6. 스페인 - 코르도바 파티오 축제 꽃으로 가득한 마당\n\nPhotos: Pixabay (pixabay.com)\nPhotos from Wikimedia Commons / Openverse (cropped/zoomed):\n- \"\"Laplanders, having prepared their Winter Tents\". Wellcome L0027514.jpg\" by Edward Daniel Clarke, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) - https://commons.wikimedia.org/wiki/File:%22Laplanders,_having_prepared_their_Winter_Tents%22._Wellcome_L0027514.jpg\n- \"International women day 2025 06.jpg\" by Chirocca77, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) - https://commons.wikimedia.org/wiki/File:International_women_day_2025_06.jpg\n\n🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!\n\n#Latvia #Midsummer #Colombia #Ciclova #Lithuania #Ugavns #터키 #여름 #Madagascar #Famadihana #세계문화 #해외여행 #이색상식\n\nStock videos: Pixabay (pixabay.com)",
+    "duration_sec": 412.3,
+    "video": "longform_011.mp4",
+    "status": "video_done",
+    "created_at": "2026-10-29T11:08:33.799514+00:00"
   }
 ]
