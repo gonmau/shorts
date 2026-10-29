@@ -281,9 +281,15 @@ def main():
     url = os.environ.get("DISCORD_WEBHOOK_URL")
     if url and not a.no_discord:
         try:
-            from notify_discord import post_long
             ch = "KoreaAtoZ" if (BASE / "generate_topics.py").exists() else "세계문화"
-            post_long(url, f"📈 [{ch}] 유튜브 성과 리포트\n\n" + rep)
+            from notify_discord import post_file
+            lines = rep.splitlines()
+            cut = next((i for i, x in enumerate(lines) if x.startswith("## ")), len(lines))
+            head = [x for x in lines[:cut] if x.strip()]
+            if "## 제안 (참고용: 표본이 적으면 우연일 수 있음)" in lines:        # 제안은 메시지에도 보여줌
+                k = lines.index("## 제안 (참고용: 표본이 적으면 우연일 수 있음)")
+                head += [""] + [x for x in lines[k:] if x.strip()][:6]
+            post_file(url, BASE / "yt_report.md", f"📈 [{ch}] 유튜브 성과 리포트\n" + "\n".join(head)[:1500] + "\n📎 전체 리포트는 첨부 파일")
         except Exception as e:
             print("디스코드 전송 실패:", e)
 

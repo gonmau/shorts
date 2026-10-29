@@ -125,7 +125,10 @@ def main():
         # 실행 결과 뒤에 "지금 render/prepare 가능한 개수" 현황을 붙인다
         try:
             from status_report import summary
-            post_long(os.environ["DISCORD_WEBHOOK_URL"], summary(load_db(), int(os.environ.get("START", "0") or 0)))
+            start = int(os.environ.get("START", "0") or 0)
+            head = summary(load_db(), start, detail=False)          # 핵심 몇 줄만 메시지로
+            Path("status.txt").write_text(summary(load_db(), start), encoding="utf-8")   # 소재 번호 목록 등 자세한 내용은 파일로
+            post_file(os.environ["DISCORD_WEBHOOK_URL"], "status.txt", head + "\n📎 자세한 소재 목록은 첨부 파일(status.txt)")
         except Exception as e:
             print("현황 전송 실패:", e)
 
