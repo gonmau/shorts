@@ -27482,7 +27482,8 @@
     "verify_note": "Nazi salute",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:13.950910+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "별로"
   },
   {
     "topic": "사회 규범은 행동을 좌우한다",
@@ -27662,7 +27663,8 @@
     "verify_note": "United States obscenity law",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성관련 폐기"
   },
   {
     "topic": "종교 정의는 학자마다 달라",
@@ -28068,7 +28070,8 @@
     "verify_note": "Problems of Everyday Life",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:26.500738+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성관련 폐기"
   },
   {
     "topic": "몰디브 무슬림 여성, 문화 차이 속 공통 정체성",
@@ -28083,7 +28086,8 @@
     "verify_note": "Women in Islam",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:26.500738+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성관련 폐기"
   },
   {
     "topic": "프랑스 거리, 사람들은 일상 속에서 문화에 손을 댄다",
@@ -28128,7 +28132,8 @@
     "verify_note": "Prostitution in Europe",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성관련 폐기"
   },
   {
     "topic": "가나 국가 상징, 한 화가가 만든 아프리카 전통 문양",
@@ -28286,7 +28291,8 @@
     "verify_note": "Purim",
     "confidence": "source",
     "created_at": "2026-10-28T13:58:29.356724+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "자극적"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
