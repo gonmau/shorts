@@ -15465,7 +15465,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15560,7 +15560,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -21661,7 +21662,7 @@
     "body": "하이랜드 파푸아(Highland Papua)는 인도네시아에서 유일하게 내륙에 위치한 지방으로, 중앙 고원에 자리 잡고 있다. 2022년 7월 25일에 설립되었으며, 면적은 약 52,505.66 km²이다.",
     "twist": "인구는 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 증가한다.",
     "caveat": "인구와 면적 수치는 위키백과 발췌문에 따른 추정치이다.",
-    "country": "파푸아뉴기니",
+    "country": "인도네시아",
     "theme": "음식문화",
     "wiki_title": "Highland Papua",
     "source_url": "https://en.wikipedia.org/wiki/Highland_Papua",
@@ -21763,7 +21764,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "파푸아뉴기니"
   },
   {
     "topic": "고대 그리스·로마부터 이어진 변호사의 다양한 직종",
@@ -22910,7 +22912,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23031,7 +23033,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -24878,7 +24881,7 @@
     "body": "피시앤칩스는 19세기에 영국에서 시작된 튀김 요리로, 전쟁 중에도 영국 정부가 공급을 보호했습니다. 제1·제2차 세계대전 동안 이 음식은 드물게도 계속 제공되었습니다.",
     "twist": "전쟁 중에 보호된 식품 중 몇 안 되는 음식 중 하나였다는 점이 놀랍습니다.",
     "caveat": "보호 조치는 제1·제2차 세계대전 시기에만 적용되었습니다.",
-    "country": "네덜란드",
+    "country": "영국",
     "theme": "음식문화",
     "wiki_title": "Fish and chips",
     "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
@@ -25000,7 +25003,8 @@
     "status_v6": "video_done",
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "country_before_fix": "네덜란드"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -26844,7 +26848,131 @@
     "verify_note": "Obon",
     "confidence": "source",
     "created_at": "2026-10-25T07:50:08.045388+00:00",
-    "status": "unverified"
+    "status": "video_done",
+    "narration": "조상 영혼이 집에 들어오면 온 가족이 갑자기 본오도리(Bon Odori)를 추는 순간, 바로 일본의 오본(Obon)입니다. 오본은 불교와 일본 전통이 합쳐진 명절로, 삼일 동안 조상의 영혼이 돌아온다고 믿습니다. 사람들은 먼저 조상의 묘를 찾아가 청소하고, 영혼이 찾아올 준비를 합니다. 영혼이 돌아오면 저녁에 가족이 모여 밝은 등불을 켜고, 함께 본오도리를 추며 조상을 맞이합니다.  \n\n그런데 오본의 시작일은 지역마다 달라서, 일본 전역에서 같은 날에 모두가 춤을 추지는 않습니다. 각 지방마다 고유한 날짜에 시작해 며칠간 이어지기 때문에, 같은 해에도 지역마다 축제 일정이 엇갈립니다.  \n\n이 전통은 500년 이상 이어져 온 관습으로, 오늘도 많은 가정에서 조상에 대한 감사와 추억을 나누는 소중한 시간으로 이어지고 있습니다. 조상의 발걸음이 들려오는 그 순간, 우리도 잠시 멈춰 그 흔적을 느껴보는 것이 아닐까요?",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "조상 영혼이 찾아온 오본",
+    "title_line2": "가족이 갑자기 본오도리",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "조상 영혼, *본오*"
+      },
+      {
+        "s": 2,
+        "text": "삼일간 *조상* 귀환"
+      },
+      {
+        "s": 4,
+        "text": "가족 등불, *춤*"
+      },
+      {
+        "s": 5,
+        "text": "*지역*마다 날짜 달라"
+      },
+      {
+        "s": 7,
+        "text": "500년 전통, *감사*"
+      }
+    ],
+    "image_queries": [
+      "Bon Odori dance",
+      "Japanese Obon festival",
+      "grave cleaning ceremony",
+      "family lantern dance",
+      "regional Obon dates",
+      "local Obon schedule",
+      "500 year tradition",
+      "ancient footsteps path"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0316_브라질_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0316_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Bon Odori dance",
+      "Japanese Obon festival",
+      "grave cleaning ceremony",
+      "family lantern dance",
+      "regional Obon dates",
+      "local Obon schedule",
+      "500 year tradition",
+      "ancient footsteps path"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "jeniffertn",
+        "page": "https://pixabay.com/photos/japanese-teenager-japanese-girl-861950/",
+        "id": 861950
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "REXANDROS19",
+        "page": "https://pixabay.com/photos/anime-hd-wallpaper-japanese-kimono-8379662/",
+        "id": 8379662
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Darkbatcuddle",
+        "page": "https://pixabay.com/photos/skull-grave-tombstone-ceremony-dig-8629599/",
+        "id": 8629599
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "2147792",
+        "page": "https://pixabay.com/photos/mama-children-to-dance-fun-family-5098862/",
+        "id": 5098862
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "jinkemoole",
+        "license": "CC BY 2.0",
+        "title": "Bon Odori, a style of dancing performed during Obon, Japan; August 2014 (01).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bon_Odori,_a_style_of_dancing_performed_during_Obon,_Japan;_August_2014_(01).jpg",
+        "id": "c:98152554"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "jinkemoole",
+        "license": "CC BY 2.0",
+        "title": "Bon Odori, a style of dancing performed during Obon, Japan; August 2014 (02).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bon_Odori,_a_style_of_dancing_performed_during_Obon,_Japan;_August_2014_(02).jpg",
+        "id": "c:98152555"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "NickyPe",
+        "page": "https://pixabay.com/photos/sylvester-new-years-eve-happiness-4705659/",
+        "id": 4705659
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "3005398",
+        "page": "https://pixabay.com/photos/footsteps-path-green-pink-metal-1697220/",
+        "id": 1697220
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0316_브라질.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0316_브라질.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "ABjAt3sCnU0",
+    "uploaded_at": "2026-10-30T01:19:18.863206+09:00"
   },
   {
     "topic": "아레파, 남미 평평빵의 놀라운 활용법",
@@ -27050,7 +27178,8 @@
     "verify_note": "Thailand",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:24.633182+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "나라와 주제 불일치(파푸아뉴기니 / TH,IN)"
   },
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
@@ -27065,7 +27194,7 @@
     "verify_note": "Jury trial",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:27.398744+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 말레이시아는 1995년부터 배심원제를 없애고 판사가 직접 사실관계를 판단해 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정합니다. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 바로 그 제한적인 적용이 배심원제의 흥미로운 차이점입니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -27100,7 +27229,73 @@
       "jury trial limited application"
     ],
     "scene_count": 12,
-    "narration_original": "배심원제, 사실은 민법 국가에서도 쓰인다고?  \n말레이시아에서는 배심원이 사건의 사실관계를 판단하고 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정하죠. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점, 바로 그 점이 흥미로운 차이입니다."
+    "narration_original": "배심원제, 사실은 민법 국가에서도 쓰인다고?  \n말레이시아에서는 배심원이 사건의 사실관계를 판단하고 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정하죠. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 즉, 배심원제는 특정 사건에만 제한적으로 쓰이는 제도라는 점, 바로 그 점이 흥미로운 차이입니다.",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0320_말레이시아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0320_말레이시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "jury in civil courtroom",
+      "Malaysia courtroom without jury",
+      "jury reviewing evidence",
+      "Malaysian civil law courtroom",
+      "American courtroom jury box",
+      "jury trial limited application"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/courtroom-benches-seats-law-898931/",
+        "id": 898931
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Mariakray",
+        "page": "https://pixabay.com/photos/auditorium-convention-congress-6795422/",
+        "id": 6795422
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Jun at LA",
+        "license": "Public domain",
+        "title": "Jury Summons.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Jury_Summons.jpg",
+        "id": "c:41011096"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "sergeitokmakov",
+        "page": "https://pixabay.com/photos/gavel-justice-judge-courtroom-7499911/",
+        "id": 7499911
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Mariakray",
+        "page": "https://pixabay.com/photos/auditorium-convention-congress-6795425/",
+        "id": 6795425
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "David Henry Friston",
+        "license": "Public domain",
+        "title": "Trial by Jury - Chaos in the Courtroom.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Trial_by_Jury_-_Chaos_in_the_Courtroom.png",
+        "id": "c:3133710"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0320_말레이시아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0320_말레이시아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "bHyYBHq65Ns",
+    "uploaded_at": "2026-10-30T01:19:20.689352+09:00"
   },
   {
     "country": "라오스 (Laos)",
@@ -27112,7 +27307,7 @@
     "confidence": "high",
     "verify_note": "라오스 바시 의식, Baci ceremony, 파신(pha sin), Lao tradition, 실 묶기 의식",
     "created_at": "2026-10-25T12:17:44.440653+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 태어난 뒤 어느 시점에 마을 어른들이 ‘파신’이라고 부르는 흰 실을 손목에 감아 주는 전통이 있습니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 라오족 공동체에서 많이 전해 내려오고, 도시 지역에서도 가끔 현대식 행사와 함께 진행되는 경우가 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -27153,7 +27348,7 @@
     "scene_count": 12,
     "narration_original": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 첫 달을 맞이하면 마을 승려가 ‘파신’이라 부르는 흰 실을 여러 번 손목에 감아 줍니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 주로 라오족 공동체에서 전해 내려오지만, 도시 지역에서는 현대식 행사로 대체되는 경우도 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
     "image_queries_done": [
-      "baby wrist string Laos",
+      "Laos baby wrist string",
       "Laos monk tying white string",
       "Lao Baci ceremony string",
       "cutting white string Laos",
@@ -27164,51 +27359,44 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Denny_Sam",
-        "page": "https://pixabay.com/vectors/guitar-music-instrument-sound-9546520/",
-        "id": 9546520,
-        "type": "illustration"
+        "user": "DEZALB",
+        "page": "https://pixabay.com/photos/laos-town-ethnic-lao-baby-bath-1929921/",
+        "id": 1929921
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Matte1974",
-        "page": "https://pixabay.com/photos/man-monk-buddhism-laos-people-7040002/",
-        "id": 7040002,
-        "type": "photo"
+        "user": "coyot",
+        "page": "https://pixabay.com/photos/guitar-musician-music-instrument-2428921/",
+        "id": 2428921
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Robert_le",
-        "page": "https://pixabay.com/photos/rice-agriculture-vietnam-nature-9717641/",
-        "id": 9717641,
-        "type": "photo"
+        "user": "Olgaozik",
+        "page": "https://pixabay.com/photos/pham-ngu-lao-vietnam-bike-people-3989110/",
+        "id": 3989110
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "coyot",
-        "page": "https://pixabay.com/photos/guitar-musician-music-instrument-2428921/",
-        "id": 2428921,
-        "type": "photo"
+        "user": "karishea",
+        "page": "https://pixabay.com/photos/guitar-instrument-music-string-2589863/",
+        "id": 2589863
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "Basile Morin",
-        "license": "CC BY-SA 4.0",
-        "title": "Crowd at temple for Lao New Year.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Crowd_at_temple_for_Lao_New_Year.jpg",
-        "id": "c:62025770"
+        "source": "pixabay",
+        "user": "nguyenhuynhmai",
+        "page": "https://pixabay.com/photos/mother-son-village-road-landscape-1505000/",
+        "id": 1505000
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "ml991",
-        "page": "https://pixabay.com/photos/violin-bow-musical-instrument-music-924349/",
-        "id": 924349,
-        "type": "photo"
+        "user": "MarcelDominic",
+        "page": "https://pixabay.com/photos/plant-sunlight-tropical-leaves-4214358/",
+        "id": 4214358
       }
     ],
     "image_source": "pixabay",
@@ -27296,7 +27484,16 @@
           924349
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0321_라오스 (Laos)_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0321_라오스 (Laos)_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0321_라오스 (Laos).srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0321_라오스 (Laos).mp4",
+    "status_v6": "video_done",
+    "youtube_id": "9eWvd2LiSnw",
+    "uploaded_at": "2026-10-30T01:19:22.292681+09:00"
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -27304,7 +27501,7 @@
     "body": "전통 와쇼쿠에서는 보통 식사 시작에 된장국을 함께 내기도 합니다. 따뜻한 된장국을 곁들여 밥을 함께 먹는 경우가 많아요. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 때때로 같은 식탁에 회와 템푸라가 함께 제공되기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다.",
     "twist": "일본 식사에서는 된장국이 먼저 나오기도 하지만, 밥이 중심이 되는 경우가 많습니다.",
     "caveat": "이 내용은 전통 와쇼쿠에 해당하며, 현대 퓨전 일본 요리에는 다를 수 있습니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "음식문화",
     "wiki_title": "Japanese cuisine",
     "source_url": "https://en.wikipedia.org/wiki/Japanese_cuisine",
@@ -27350,7 +27547,8 @@
       "traditional washoku meal",
       "miso soup starter"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "country_before_fix": "싱가포르"
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -27365,7 +27563,48 @@
     "verify_note": "Nowruz",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "새해가 겨울이 아니라 봄에 온다면? 이란 달력의 새해, 바로 노루즈입니다. 춘분이 지나고 3월 19일에서 22일 사이에 맞춰지는 이 축제는 3천 년 넘게 이어져 온 전통인데요, 조로아스터교에서 시작된 만큼 오래된 종교적 뿌리를 가지고 있습니다.  \n\n그런데 오늘날 노루즈는 종교와는 무관하게 전 세계 여러 문화권에서 세속적인 행사로 기념됩니다. 북반구의 봄을 맞이하며 가족과 이웃이 함께 식탁을 차리고, 새해를 맞이하는 다양한 풍습을 나누죠.  \n\n축제 날짜와 구체적인 방식은 지역마다, 시대마다 차이가 있을 수 있다는 점만 기억해 주세요. 봄바람과 함께 찾아오는 새해, 그 특별함이 바로 노루즈의 매력입니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "이란 노루즈, 봄 새해",
+    "title_line2": "봄에 시작한다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*봄* 새해 온다면?"
+      },
+      {
+        "s": 2,
+        "text": "*노루즈* 새해"
+      },
+      {
+        "s": 3,
+        "text": "*노루즈* 전통"
+      },
+      {
+        "s": 5,
+        "text": "*식탁* 함께"
+      },
+      {
+        "s": 7,
+        "text": "*새해* 매력"
+      }
+    ],
+    "image_queries": [
+      "spring new year celebration",
+      "Nowruz new year Iran",
+      "ancient Persian spring festival",
+      "global secular spring festival",
+      "family table spring feast",
+      "regional spring festival traditions",
+      "Nowruz new year charm"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "아담 시옹올리, 9·11 직후 법무부 고문",
@@ -27380,7 +27619,7 @@
     "verify_note": "Adam G. Ciongoli",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "9·11 현장에 법률 고문까지 있었던 이유는? 그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다. 그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다. 그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다. 그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다. 이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다. 그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -27442,7 +27681,8 @@
       "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about his purpose lacks supporting evidence."
     ],
     "title_line1": "이탈리아 아담 시옹올리",
-    "title_line2": "9·11현장법무고문?"
+    "title_line2": "9·11현장법무고문?",
+    "reject_reason": "성/민감 소재 자동 제외(고문)"
   },
   {
     "topic": "필리핀(Philippines) 부족들의 이색적인 장례 방식",
@@ -27457,7 +27697,8 @@
     "verify_note": "Funeral practices and burial customs in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(시신)"
   },
   {
     "topic": "선례가 법정 판결을 좌우한다? 하지만…",
@@ -27513,9 +27754,9 @@
   },
   {
     "topic": "다사라(Vijayadashami)의 10번째 날",
-    "hook": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까?",
-    "body": "다사라(Vijayadashami)는 달이 차오르는 10번째 날에 열리며, 두르가 푸자와 나바라트리의 마지막을 기념한다. 인도와 네팔의 남동부·북동부·일부 북부 지역에서 다양하게 축하한다.",
-    "twist": "하지만 같은 날을 남부·동부·북동·일부 북부에서는 전혀 다른 방식으로 기념한다.",
+    "hook": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까요?",
+    "body": "바로 다사라, 즉 Vijayadashami가 열리는 10번째 날이기 때문입니다. 달이 차오르는 10번째 밤, 인도와 네팔에서는 두르가 푸자와 나바라트리의 마지막을 기념합니다. 이때는 제단에 꽃과 과일을 올리고, 평화와 풍요를 기원합니다. 일부 지역에서는 이날을 다르게 기념하는 경우도 있습니다. 그곳에서는 전통 연극이나 무용, 그리고 등불을 밝히며 신에게 감사하는 의식이 진행됩니다. 무기를 내려놓는 행위는 없고, 대신 풍성한 음식과 춤으로 승리를 즐깁니다.",
+    "twist": "그 지역에서는 평화를 기원하며 무기를 내려놓는 전통이 있어, ‘왜 무기를 내려놓을까?’라는 질문이 종종 떠오릅니다.",
     "caveat": "이 전통은 인도와 네팔의 특정 지역에만 적용된다.",
     "country": "인도",
     "theme": "축제/의례",
@@ -27524,7 +27765,19 @@
     "verify_note": "Vijayadashami",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:13.950910+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "narration": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까요? 바로 다사라, 즉 Vijayadashami가 열리는 10번째 날이기 때문입니다. 달이 차오르는 10번째 밤, 인도와 네팔에서는 두르가 푸자와 나바라트리의 마지막을 기념합니다. 이때는 제단에 꽃과 과일을 올리고, 평화와 풍요를 기원합니다. 일부 지역에서는 이날을 다르게 기념하는 경우도 있습니다. 그곳에서는 전통 연극이나 무용, 그리고 등불을 밝히며 신에게 감사하는 의식이 진행됩니다. 무기를 내려놓는 행위는 없고, 대신 풍성한 음식과 춤으로 승리를 즐깁니다. 그 지역에서는 평화를 기원하며 무기를 내려놓는 전통이 있어, ‘왜 무기를 내려놓을까?’라는 질문이 종종 떠오릅니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까요? 바로 다사라, 즉 Vijayadashami가 열리는 날이기 때문입니다. 달이 차오르는 10번째 밤, 인도와 네팔의 남동부·북동부·일부 북부 지역에서는 두르가 푸자와 나바라트리의 마지막을 기념합니다. 이때는 전쟁의 신을 상징하는 무기를 제단에 올리고, 평화와 승리를 기원하며 모두가 무기를 내려놓습니다.  \n\n그런데 같은 날, 남부·동부·북동·일부 북부에서는 전혀 다른 방식으로 축하합니다. 그곳에서는 전통적인 연극과 무용, 그리고 색색의 램프를 밝히며 신에게 감사하는 의식이 중심이 되죠. 무기를 내려놓는 행위는 없고, 대신 풍성한 음식과 춤으로 승리를 즐깁니다.  \n\n이처럼 Vijayadashami는 같은 달의 10번째 날에 열리지만, 지역마다 전통이 달라서 무기를 내려놓는 모습은 일부 지역에만 해당됩니다. 결국, “왜 무기를 내려놓을까?”라는 질문은 그 지역만의 특별한 평화 의식에서 비롯된 것이었습니다.",
+    "highlights": null,
+    "cross_notes": [
+      "[수정 시도 후에도 남음] [contradicted] 8번 문장: No known tradition of weapon‑laying on Vijayadashami; claim conflicts with established practices."
+    ],
+    "cross_verdict": "contradicted",
+    "reject_reason": "교차검증: 고쳐 써도 모순 1건 남음"
   },
   {
     "topic": "퀸세아네라(Quinceañera)의 15번째 생일",
@@ -27698,14 +27951,15 @@
     "body": "사우디아라비아는 쿠란과 선지자 무함마드( Muhammad )의 전통인 순나에서 파생된 샤리아를 근간으로 삼는다. 판결은 중세 한발리( Hanbili ) 학파의 문자주의 텍스트와 사후 학자들의 합의에 크게 의존한다. 그러나 법전이 없고 판례도 없어 법의 적용 범위가 크게 불확실하다.",
     "twist": "정부는 2010년에 샤리아를 성문화하겠다고 발표했고, 2018년에 관련 자료집을 공개했다.",
     "caveat": "이 불확실성은 사우디아라비아 내부에만 해당되는 상황이다.",
-    "country": "이집트",
+    "country": "사우디아라비아",
     "theme": "법/제도",
     "wiki_title": "Legal system of Saudi Arabia",
     "source_url": "https://en.wikipedia.org/wiki/Legal_system_of_Saudi_Arabia",
     "verify_note": "Legal system of Saudi Arabia",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "이집트"
   },
   {
     "topic": "탄자니아( Tanzania ) 마쿤두치( Makunduchi )에 동독(East Germany) 지원으로 세워진 아파트",
@@ -28112,7 +28366,8 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "성/민감 소재 자동 제외(혐오)"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -28182,14 +28437,15 @@
     "body": "아잔 문 부리다또(Ajahn Mun Bhuridatto)는 초기에 동남아 최초의 불교 승려 규범을 따르며 북동부 태국을 떠돌았다. 그는 아잔 사오 칸타실로(Ajahn Sao Kantasīlo)와 수련하고, 초창기 불교를 부활시키려 엄격한 승려 규율을 고수했다.",
     "twist": "그는 전생을 초월한 ‘아나가미(Anāgāmi)’가 되었다는 전설이 전해진다.",
     "caveat": "이 전통은 약 1900년경에 시작된 것으로 알려져 있다.",
-    "country": "스리랑카",
+    "country": "태국",
     "theme": "관습/예절",
     "wiki_title": "Thai Forest Tradition",
     "source_url": "https://en.wikipedia.org/wiki/Thai_Forest_Tradition",
     "verify_note": "Thai Forest Tradition",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:29.967345+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "스리랑카"
   },
   {
     "topic": "유럽에서 성매매는 합법, 하지만 브로델은 금지",
@@ -28213,14 +28469,15 @@
     "body": "코피 안투밤(1922–1964)은 가나의 공식 “국가 예술가”로 임명돼 새로운 독립 국가의 정체성을 형성했고, 아칸(아칸) 아딘크라(아딘크라) 문양을 국가 상징에 도입했다.",
     "twist": "그는 단순히 그림만 그린 것이 아니라, 전통을 현대 국가 이미지에 녹여냈다.",
     "caveat": "이 작업은 가나 초창기 독립 시기에 진행된 것이며, 당시 정부와 협력했다.",
-    "country": "나이지리아",
+    "country": "가나",
     "theme": "생활문화",
     "wiki_title": "Kofi Antubam",
     "source_url": "https://en.wikipedia.org/wiki/Kofi_Antubam",
     "verify_note": "Kofi Antubam",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "나이지리아"
   },
   {
     "topic": "크메르 제국, 물 관리로 이룬 거대한 도시",
@@ -28325,14 +28582,15 @@
     "body": "미얀마의 예절 코드는 테라와다 불교에서 파생돼 사람 간 상호작용을 규정한다. 지위에 따라 인사 방식이 크게 달라지고, 지역마다 적용되는 관습도 다를 수 있다.",
     "twist": "같은 나라 안에서도 동네마다 ‘예의’가 전혀 다른 규칙으로 살아간다.",
     "caveat": "이 규칙은 현대 미얀마 전역에 일반적으로 적용되는 경우에 한한다.",
-    "country": "라오스",
+    "country": "미얀마",
     "theme": "관습/예절",
     "wiki_title": "Etiquette in Myanmar",
     "source_url": "https://en.wikipedia.org/wiki/Etiquette_in_Myanmar",
     "verify_note": "Etiquette in Myanmar",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "라오스"
   },
   {
     "topic": "고대 이집트 기근 시 인간 고기 판매",
