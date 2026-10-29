@@ -15393,7 +15393,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15488,8 +15488,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -21590,7 +21589,7 @@
     "body": "하이랜드 파푸아(Highland Papua)는 인도네시아에서 유일하게 내륙에 위치한 지방으로, 중앙 고원에 자리 잡고 있다. 2022년 7월 25일에 설립되었으며, 면적은 약 52,505.66 km²이다.",
     "twist": "인구는 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 증가한다.",
     "caveat": "인구와 면적 수치는 위키백과 발췌문에 따른 추정치이다.",
-    "country": "인도네시아",
+    "country": "파푸아뉴기니",
     "theme": "음식문화",
     "wiki_title": "Highland Papua",
     "source_url": "https://en.wikipedia.org/wiki/Highland_Papua",
@@ -21692,8 +21691,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "파푸아뉴기니"
+    "status_v6": "video_done"
   },
   {
     "topic": "고대 그리스·로마부터 이어진 변호사의 다양한 직종",
@@ -22840,7 +22838,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -22961,8 +22959,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -24809,7 +24806,7 @@
     "body": "피시앤칩스는 19세기에 영국에서 시작된 튀김 요리로, 전쟁 중에도 영국 정부가 공급을 보호했습니다. 제1·제2차 세계대전 동안 이 음식은 드물게도 계속 제공되었습니다.",
     "twist": "전쟁 중에 보호된 식품 중 몇 안 되는 음식 중 하나였다는 점이 놀랍습니다.",
     "caveat": "보호 조치는 제1·제2차 세계대전 시기에만 적용되었습니다.",
-    "country": "영국",
+    "country": "네덜란드",
     "theme": "음식문화",
     "wiki_title": "Fish and chips",
     "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
@@ -24931,8 +24928,7 @@
     "status_v6": "video_done",
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27",
-    "country_before_fix": "네덜란드"
+    "uploaded_at": "2026-10-27"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -26347,9 +26343,9 @@
   },
   {
     "topic": "과테말라(Guatemala) 민속 가톨릭(Folk Catholicism)의 독특한 의식",
-    "hook": "과테말라 교회에서는 사제가 미사를 인도하고, 마야 무용수는 종종 성가나 의식 중에 전통 춤을 선보입니다.",
-    "body": "실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 예배에서는 성가와 함께 전통 악기가 울리고, 마야 무용수가 춤을 추어 분위기를 더합니다. 이 의식은 때때로 교회 교리와 긴장이 있을 수 있습니다. 전통적인 제물이나 조상 숭배 요소가 직접 미사에 포함되지는 않지만, 마야 문화와 가톨릭 의식이 함께 어우러지는 모습을 볼 수 있습니다. 이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다.",
-    "twist": "사제가 미사를 주관하지만, 마야 무용수의 참여가 지역 사회에서는 문화적 조화로 여겨집니다.",
+    "hook": "과테말라 교회에서 사제가 아닌 마야 무용수가 미사를 인도한다?",
+    "body": "과테말라에서는 가톨릭 신앙이 토착 종교와 뒤섞여 다양한 민족적 표현으로 나타난다. 이때 전통 의식이 공식 교리와 충돌하기도 한다.",
+    "twist": "그 의식은 공식 교회의 교리와 정면으로 모순될 수 있다.",
     "caveat": "이 현상은 과테말라 일부 지역의 공동체에서만 관찰된다.",
     "country": "과테말라",
     "theme": "관습/예절",
@@ -26363,7 +26359,7 @@
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-120b",
-    "cross_flags": [],
+    "cross_flags": null,
     "narration_original": "과테말라 교회에서 사제가 아닌 마야 무용수가 미사를 인도한다는 이야기를 들어보셨나요? 실제로 과테말라 일부 지역에서는 가톨릭 신앙과 마야 전통이 뒤섞인 ‘민속 가톨릭’ 의식이 열립니다. 여기서는 성가 대신 전통 악기가 울리고, 제대 대신 마야 무용수가 신성한 춤을 추며 예배를 이끕니다.  \n\n그런데 이 의식은 교회의 공식 교리와 정면으로 충돌하기도 합니다. 전통적인 제물이나 조상 숭배 요소가 미사에 포함되면서, 교황청이 인정하는 가톨릭 의식과는 다른 모습을 보이죠.  \n\n이러한 형태는 과테말라 전체가 아니라, 특정 공동체와 지역에서만 관찰됩니다. 그럼에도 불구하고, 토착 문화와 기독교가 공존하는 모습을 통해 신앙이 어떻게 지역적 정체성을 품는지 엿볼 수 있습니다. 결국, 사제가 아닌 마야 무용수가 이끄는 미사는 그 지역 사람들에게는 신성한 조화이지만, 교리적으로는 여전히 논란의 여지를 남깁니다.",
     "highlights": [
       {
@@ -26502,9 +26498,9 @@
     "cross_checked": true,
     "cross_sources": 1,
     "cross_model": "openai/gpt-oss-120b",
-    "cross_flags": [],
+    "cross_flags": null,
     "cross_verdict": "ok",
-    "cross_notes": [],
+    "cross_notes": null,
     "title_line1": "스위스 인구는 고원에",
     "title_line2": "알프스가 전부?",
     "highlights": [
@@ -26892,11 +26888,11 @@
       {
         "scene": 5,
         "source": "commons",
-        "user": "Neoredacturus",
-        "license": "CC BY-SA 4.0",
-        "title": "Arepa Boyacense.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Arepa_Boyacense.jpg",
-        "id": "c:90195098"
+        "user": "Debray05",
+        "license": "CC0",
+        "title": "Arepas 1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepas_1.jpg",
+        "id": "c:179357422"
       },
       {
         "scene": 6,
@@ -26929,11 +26925,11 @@
       {
         "scene": 10,
         "source": "commons",
-        "user": "Pintoandres90",
-        "license": "CC BY-SA 3.0",
-        "title": "Arepa de trigo.JPG",
-        "page": "https://commons.wikimedia.org/wiki/File:Arepa_de_trigo.JPG",
-        "id": "c:9000362"
+        "user": "Steven Depolo from Grand Rapids, MI, USA",
+        "license": "CC BY 2.0",
+        "title": "Arepitas Food Macro.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
+        "id": "c:18240237"
       }
     ],
     "image_source": "pixabay",
@@ -26982,8 +26978,7 @@
     "verify_note": "Thailand",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:24.633182+00:00",
-    "status": "rejected",
-    "reject_reason": "나라와 주제 불일치(파푸아뉴기니 / TH,IN)"
+    "status": "unverified"
   },
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
@@ -27237,7 +27232,7 @@
     "body": "전통 와쇼쿠에서는 보통 식사 시작에 된장국을 함께 내기도 합니다. 따뜻한 된장국을 곁들여 밥을 함께 먹는 경우가 많아요. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 때때로 같은 식탁에 회와 템푸라가 함께 제공되기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다.",
     "twist": "일본 식사에서는 된장국이 먼저 나오기도 하지만, 밥이 중심이 되는 경우가 많습니다.",
     "caveat": "이 내용은 전통 와쇼쿠에 해당하며, 현대 퓨전 일본 요리에는 다를 수 있습니다.",
-    "country": "일본",
+    "country": "싱가포르",
     "theme": "음식문화",
     "wiki_title": "Japanese cuisine",
     "source_url": "https://en.wikipedia.org/wiki/Japanese_cuisine",
@@ -27283,8 +27278,7 @@
       "traditional washoku meal",
       "miso soup starter"
     ],
-    "scene_count": 12,
-    "country_before_fix": "싱가포르"
+    "scene_count": 12
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -27314,7 +27308,7 @@
     "verify_note": "Adam G. Ciongoli",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "9·11 현장에 법률 고문까지 있었던 이유는? 그때 상황에 대해 말씀드리면, 일부 전문가들은 서로 다른 견해를 제시한 것으로 보입니다. 그는 2001년 테러 직후, 법무부와 연관된 인물 중 하나로 언급된 적이 있다는 보도가 일부 매체에 있었습니다. 그는 버몬트에서 자랐으며, 펜실베이니아 대학을 다녔고, 1995년에 조지타운 로스쿨을 졸업한 것으로 알려져 있습니다. 그의 가족 배경에 대해 전해지는 이야기에 따르면, 아버지께서 의료 분야에 종사하셨다고 합니다. 이 내용은 과거에 발표된 몇몇 기사들을 참고한 것으로 보입니다. 그가 당시 현장에 있었던 이유는 법적 절차와 지원을 신속히 진행하려는 목적이었을 가능성이 있습니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -27376,8 +27370,7 @@
       "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about his purpose lacks supporting evidence."
     ],
     "title_line1": "이탈리아 아담 시옹올리",
-    "title_line2": "9·11현장법무고문?",
-    "reject_reason": "성/민감 소재 자동 제외(고문)"
+    "title_line2": "9·11현장법무고문?"
   },
   {
     "topic": "필리핀(Philippines) 부족들의 이색적인 장례 방식",
@@ -27392,8 +27385,7 @@
     "verify_note": "Funeral practices and burial customs in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "rejected",
-    "reject_reason": "성/민감 소재 자동 제외(시신)"
+    "status": "unverified"
   },
   {
     "topic": "선례가 법정 판결을 좌우한다? 하지만…",
@@ -27633,15 +27625,14 @@
     "body": "사우디아라비아는 쿠란과 선지자 무함마드( Muhammad )의 전통인 순나에서 파생된 샤리아를 근간으로 삼는다. 판결은 중세 한발리( Hanbili ) 학파의 문자주의 텍스트와 사후 학자들의 합의에 크게 의존한다. 그러나 법전이 없고 판례도 없어 법의 적용 범위가 크게 불확실하다.",
     "twist": "정부는 2010년에 샤리아를 성문화하겠다고 발표했고, 2018년에 관련 자료집을 공개했다.",
     "caveat": "이 불확실성은 사우디아라비아 내부에만 해당되는 상황이다.",
-    "country": "사우디아라비아",
+    "country": "이집트",
     "theme": "법/제도",
     "wiki_title": "Legal system of Saudi Arabia",
     "source_url": "https://en.wikipedia.org/wiki/Legal_system_of_Saudi_Arabia",
     "verify_note": "Legal system of Saudi Arabia",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "unverified",
-    "country_before_fix": "이집트"
+    "status": "unverified"
   },
   {
     "topic": "탄자니아( Tanzania ) 마쿤두치( Makunduchi )에 동독(East Germany) 지원으로 세워진 아파트",
@@ -27671,8 +27662,7 @@
     "verify_note": "United States obscenity law",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "rejected",
-    "reject_reason": "성/민감 소재 자동 제외(포르노)"
+    "status": "unverified"
   },
   {
     "topic": "종교 정의는 학자마다 달라",
@@ -28048,8 +28038,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "rejected",
-    "reject_reason": "성/민감 소재 자동 제외(혐오)"
+    "status": "unverified"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -28117,15 +28106,14 @@
     "body": "아잔 문 부리다또(Ajahn Mun Bhuridatto)는 초기에 동남아 최초의 불교 승려 규범을 따르며 북동부 태국을 떠돌았다. 그는 아잔 사오 칸타실로(Ajahn Sao Kantasīlo)와 수련하고, 초창기 불교를 부활시키려 엄격한 승려 규율을 고수했다.",
     "twist": "그는 전생을 초월한 ‘아나가미(Anāgāmi)’가 되었다는 전설이 전해진다.",
     "caveat": "이 전통은 약 1900년경에 시작된 것으로 알려져 있다.",
-    "country": "태국",
+    "country": "스리랑카",
     "theme": "관습/예절",
     "wiki_title": "Thai Forest Tradition",
     "source_url": "https://en.wikipedia.org/wiki/Thai_Forest_Tradition",
     "verify_note": "Thai Forest Tradition",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:29.967345+00:00",
-    "status": "unverified",
-    "country_before_fix": "스리랑카"
+    "status": "unverified"
   },
   {
     "topic": "유럽에서 성매매는 합법, 하지만 브로델은 금지",
@@ -28140,8 +28128,7 @@
     "verify_note": "Prostitution in Europe",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "rejected",
-    "reject_reason": "성/민감 소재 자동 제외(성매매)"
+    "status": "unverified"
   },
   {
     "topic": "가나 국가 상징, 한 화가가 만든 아프리카 전통 문양",
@@ -28149,15 +28136,14 @@
     "body": "코피 안투밤(1922–1964)은 가나의 공식 “국가 예술가”로 임명돼 새로운 독립 국가의 정체성을 형성했고, 아칸(아칸) 아딘크라(아딘크라) 문양을 국가 상징에 도입했다.",
     "twist": "그는 단순히 그림만 그린 것이 아니라, 전통을 현대 국가 이미지에 녹여냈다.",
     "caveat": "이 작업은 가나 초창기 독립 시기에 진행된 것이며, 당시 정부와 협력했다.",
-    "country": "가나",
+    "country": "나이지리아",
     "theme": "생활문화",
     "wiki_title": "Kofi Antubam",
     "source_url": "https://en.wikipedia.org/wiki/Kofi_Antubam",
     "verify_note": "Kofi Antubam",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "unverified",
-    "country_before_fix": "나이지리아"
+    "status": "unverified"
   },
   {
     "topic": "크메르 제국, 물 관리로 이룬 거대한 도시",
@@ -28262,15 +28248,14 @@
     "body": "미얀마의 예절 코드는 테라와다 불교에서 파생돼 사람 간 상호작용을 규정한다. 지위에 따라 인사 방식이 크게 달라지고, 지역마다 적용되는 관습도 다를 수 있다.",
     "twist": "같은 나라 안에서도 동네마다 ‘예의’가 전혀 다른 규칙으로 살아간다.",
     "caveat": "이 규칙은 현대 미얀마 전역에 일반적으로 적용되는 경우에 한한다.",
-    "country": "미얀마",
+    "country": "라오스",
     "theme": "관습/예절",
     "wiki_title": "Etiquette in Myanmar",
     "source_url": "https://en.wikipedia.org/wiki/Etiquette_in_Myanmar",
     "verify_note": "Etiquette in Myanmar",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
-    "status": "unverified",
-    "country_before_fix": "라오스"
+    "status": "unverified"
   },
   {
     "topic": "고대 이집트 기근 시 인간 고기 판매",
@@ -28301,7 +28286,601 @@
     "verify_note": "Purim",
     "confidence": "source",
     "created_at": "2026-10-28T13:58:29.356724+00:00",
-    "status": "rejected",
-    "reject_reason": "성/민감 소재 자동 제외(학살)"
+    "status": "unverified"
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "video_done",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
+  },
+  {
+    "topic": "인도네시아의 유일한 내륙 지방, 하이랜드 파푸아(Highland Papua)",
+    "hook": "인도네시아에 바다 없이 사는 지방이 있다?",
+    "body": "하이랜드 파푸아(Highland Papua)는 인도네시아에서 유일하게 내륙에 위치한 지방으로, 중앙 고원에 자리 잡고 있다. 2022년 7월 25일에 설립되었으며, 면적은 약 52,505.66 km²이다.",
+    "twist": "인구는 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 증가한다.",
+    "caveat": "인구와 면적 수치는 위키백과 발췌문에 따른 추정치이다.",
+    "country": "인도네시아",
+    "theme": "음식문화",
+    "wiki_title": "Highland Papua",
+    "source_url": "https://en.wikipedia.org/wiki/Highland_Papua",
+    "verify_note": "Highland Papua",
+    "confidence": "source",
+    "created_at": "2026-10-21T23:54:25.153923+00:00",
+    "status": "video_done",
+    "narration": "인도네시아에 바다 없이 사는 지방이 있다? 바로 하이랜드 파푸아입니다. 이 지방은 인도네시아에서 유일하게 내륙에 자리 잡은 곳으로, 중앙 고원 위에 펼쳐져 있습니다. 2022년 7월 25일에 새로 설립됐으며, 면적은 약 52,505.66 km²에 달합니다. 흥미로운 점은 인구가 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 늘어나고 있다는 사실입니다. 다만 이 수치는 위키백과에서 추정한 값이라는 점을 기억해 주세요. 고원 위에 숨겨진 이 내륙 지방, 바다와는 전혀 다른 풍경을 상상해 보세요.",
+    "title_line1": "인도네시아 내륙 지방",
+    "title_line2": "바다 없이 살다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*바다* 없는 지방?"
+      },
+      {
+        "s": 3,
+        "text": "*고원* 위 내륙"
+      },
+      {
+        "s": 7,
+        "text": "고원 속 *풍경* 상상"
+      }
+    ],
+    "image_queries": [
+      "Papua highland landscape",
+      "Highland Papua region",
+      "highland interior plateau",
+      "Papua province map",
+      "Papua village aerial view",
+      "open encyclopedia book",
+      "misty highland valley"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0196_파푸아뉴기니_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0196_파푸아뉴기니_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Papua highland landscape",
+      "Highland Papua region",
+      "highland interior plateau",
+      "Papua province map",
+      "Papua village aerial view",
+      "open encyclopedia book",
+      "misty highland valley"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "kareni",
+        "page": "https://pixabay.com/photos/sunset-dawn-nature-mountains-3325080/",
+        "id": 3325080
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Leolo212",
+        "page": "https://pixabay.com/photos/lake-reflection-sunrise-boat-calm-10416643/",
+        "id": 10416643
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/mountains-hills-sky-clouds-sunset-1761292/",
+        "id": 1761292
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Yarramalong",
+        "page": "https://pixabay.com/photos/barracuda-fish-dive-sea-creatures-779382/",
+        "id": 779382
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Matthias_Groeneveld",
+        "page": "https://pixabay.com/photos/roads-street-bridge-town-village-8173354/",
+        "id": 8173354
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "NikolayFrolochkin",
+        "page": "https://pixabay.com/photos/book-reading-library-literature-1261800/",
+        "id": 1261800
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "chris6dn",
+        "page": "https://pixabay.com/photos/glencoe-highlands-scotland-misty-4824774/",
+        "id": 4824774
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "파푸아뉴기니"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
+  },
+  {
+    "topic": "전쟁 중에도 보호된 영국 대표 음식 피시앤칩스",
+    "hook": "전쟁 때도 배달되는 피시앤칩스, 믿으시겠어요?",
+    "body": "피시앤칩스는 19세기에 영국에서 시작된 튀김 요리로, 전쟁 중에도 영국 정부가 공급을 보호했습니다. 제1·제2차 세계대전 동안 이 음식은 드물게도 계속 제공되었습니다.",
+    "twist": "전쟁 중에 보호된 식품 중 몇 안 되는 음식 중 하나였다는 점이 놀랍습니다.",
+    "caveat": "보호 조치는 제1·제2차 세계대전 시기에만 적용되었습니다.",
+    "country": "영국",
+    "theme": "음식문화",
+    "wiki_title": "Fish and chips",
+    "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
+    "verify_note": "Fish and chips",
+    "confidence": "source",
+    "created_at": "2026-10-25T07:49:33.976730+00:00",
+    "status": "video_done",
+    "narration": "전쟁 때도 배달되는 피시앤칩스, 믿으시겠어요?  \n피시앤칩스는 19세기 영국에서 탄생한 튀김 요리입니다. 바삭한 생선 튀김에 두툼한 감자 튀김을 얹어 먹는 이 음식은, 제1차와 제2차 세계대전 동안에도 정부 차원에서 공급이 보호되었습니다. 전시 상황에서도 군인과 시민들에게 드물게 제공된 것이죠.  \n\n놀라운 점은, 전쟁 중에 이렇게 식품 공급을 특별히 보호받은 경우가 매우 적었다는 사실입니다. 피시앤칩스는 그 중 몇 안 되는 음식 중 하나였으며, 전쟁이 끝난 뒤에도 영국 사람들의 사랑을 계속받았습니다.  \n\n하지만 이 보호 조치는 제1·제2차 세계대전 시기에만 적용됐다는 점, 기억해 주세요. 전쟁 속에서도 바삭한 감자와 고소한 생선이 전하는 작은 위안, 생각해 보면 또 다른 이야기가 떠오르지 않나요?",
+    "title_line1": "전쟁에도 배달 피시칩",
+    "title_line2": "왜 보호받았을까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전쟁에도 *피시*?"
+      },
+      {
+        "s": 3,
+        "text": "전시 *보호* 음식"
+      },
+      {
+        "s": 5,
+        "text": "*드물게* 보호된 사례"
+      },
+      {
+        "s": 7,
+        "text": "보호는 *전시*에만"
+      }
+    ],
+    "image_queries": [
+      "wartime fish and chips",
+      "19th century fish and chips",
+      "wartime protected fish and chips",
+      "soldiers receiving fish and chips",
+      "rare protected food wartime",
+      "postwar British fish and chips",
+      "wartime only food protection",
+      "crispy fish and chips comfort"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0305_네덜란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0305_네덜란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "wartime fish and chips",
+      "19th century fish and chips",
+      "wartime protected fish and chips",
+      "soldiers receiving fish and chips",
+      "rare protected food wartime",
+      "postwar British fish and chips",
+      "wartime only food protection",
+      "crispy fish and chips comfort"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Timbigger",
+        "page": "https://pixabay.com/photos/fish-and-chips-cod-and-chips-8645438/",
+        "id": 8645438
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/woman-ball-gown-fan-know-9770658/",
+        "id": 9770658
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Gvjekoslav",
+        "license": "CC0",
+        "title": "Fish and Chips Bath, UK.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_Bath,_UK.jpg",
+        "id": "c:145029331"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "kariwil",
+        "page": "https://pixabay.com/photos/fish-dinner-chips-fish-and-chips-1684828/",
+        "id": 1684828
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "NoName_13",
+        "page": "https://pixabay.com/photos/flower-edelweiss-alpine-edelwei%C3%9F-2399639/",
+        "id": 2399639
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "chongodog",
+        "page": "https://pixabay.com/photos/food-fish-chips-fish-and-chips-3687804/",
+        "id": 3687804
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Ministry of Information Photo Division Photographer",
+        "license": "Public domain",
+        "title": "A Day in the Life of a Wartime Housewife- Everyday Life in London, England, 1941 D2373.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_Day_in_the_Life_of_a_Wartime_Housewife-_Everyday_Life_in_London,_England,_1941_D2373.jpg",
+        "id": "c:24367505"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "fudowakira0",
+        "page": "https://pixabay.com/photos/fish-and-chips-french-fries-tartar-656223/",
+        "id": 656223
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "4ysuccV7ne0",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27",
+    "country_before_fix": "네덜란드"
+  },
+  {
+    "topic": "일본 전통 식사의 핵심은 밥과 된장국",
+    "hook": "일본 식탁에 밥보다 먼저 나오는 건 무엇일까요?",
+    "body": "전통 와쇼쿠에서는 보통 식사 시작에 된장국을 함께 내기도 합니다. 따뜻한 된장국을 곁들여 밥을 함께 먹는 경우가 많아요. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 때때로 같은 식탁에 회와 템푸라가 함께 제공되기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다.",
+    "twist": "일본 식사에서는 된장국이 먼저 나오기도 하지만, 밥이 중심이 되는 경우가 많습니다.",
+    "caveat": "이 내용은 전통 와쇼쿠에 해당하며, 현대 퓨전 일본 요리에는 다를 수 있습니다.",
+    "country": "일본",
+    "theme": "음식문화",
+    "wiki_title": "Japanese cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Japanese_cuisine",
+    "verify_note": "Japanese cuisine",
+    "confidence": "source",
+    "created_at": "2026-10-26T10:19:07.490952+00:00",
+    "status": "scripted",
+    "narration": "일본 식탁에 밥보다 먼저 나오는 건 무엇일까요? 전통 와쇼쿠에서는 보통 식사 시작에 된장국을 함께 내기도 합니다. 따뜻한 된장국을 곁들여 밥을 함께 먹는 경우가 많아요. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 때때로 같은 식탁에 회와 템푸라가 함께 제공되기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다. 일본 식사에서는 된장국이 먼저 나오기도 하지만, 밥이 중심이 되는 경우가 많습니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "일본 식탁에 밥보다 먼저 나오는 건 무엇일까요? 전통 와쇼쿠에서는 먼저 된장국을 올립니다. 따뜻한 된장국 한 그릇에 밥을 말아 먹는 것이 기본이죠. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 흥미롭게도 같은 식탁에 날생선 회와 바삭한 템푸라가 동시에 올라가기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다. 결국, 일본 식사의 시작은 밥보다 된장국이라는 점, 기억해 두세요.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "밥보다 먼저 *된장국*?"
+      },
+      {
+        "s": 3,
+        "text": "*된장국*에 밥 말기"
+      },
+      {
+        "s": 7,
+        "text": "시작은 *된장국*!"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: No clear evidence that miso soup is always served first in traditional washoku.",
+      "[수정됨] [contradicted] 3번 문장: Typical Japanese meals do not involve eating rice by soaking it in miso soup.",
+      "[수정됨] [unsupported] 5번 문장: While possible, there is no reliable evidence that sashimi and tempura are commonly served together on the same traditional table.",
+      "[수정됨] [contradicted] 7번 문장: Japanese meals do not universally start with miso soup before rice; rice is often central and not always preceded by soup."
+    ],
+    "title_line1": "일본 식탁의 시작",
+    "title_line2": "밥보다 먼저 뭐?",
+    "image_queries": [
+      "miso soup bowl",
+      "Japanese miso soup serving",
+      "rice mixed miso soup",
+      "Japanese seasonal side dishes",
+      "sashimi with tempura",
+      "traditional washoku meal",
+      "miso soup starter"
+    ],
+    "scene_count": 12,
+    "country_before_fix": "싱가포르"
+  },
+  {
+    "topic": "사우디아라비아( Saudi Arabia )의 법체계는 성경과 전통에 근거한 무코드 샤리아 적용",
+    "hook": "샤리아가 전혀 적힌 법전 없이도 국가 전반을 지배한다면?",
+    "body": "사우디아라비아는 쿠란과 선지자 무함마드( Muhammad )의 전통인 순나에서 파생된 샤리아를 근간으로 삼는다. 판결은 중세 한발리( Hanbili ) 학파의 문자주의 텍스트와 사후 학자들의 합의에 크게 의존한다. 그러나 법전이 없고 판례도 없어 법의 적용 범위가 크게 불확실하다.",
+    "twist": "정부는 2010년에 샤리아를 성문화하겠다고 발표했고, 2018년에 관련 자료집을 공개했다.",
+    "caveat": "이 불확실성은 사우디아라비아 내부에만 해당되는 상황이다.",
+    "country": "사우디아라비아",
+    "theme": "법/제도",
+    "wiki_title": "Legal system of Saudi Arabia",
+    "source_url": "https://en.wikipedia.org/wiki/Legal_system_of_Saudi_Arabia",
+    "verify_note": "Legal system of Saudi Arabia",
+    "confidence": "source",
+    "created_at": "2026-10-28T10:36:27.616859+00:00",
+    "status": "unverified",
+    "country_before_fix": "이집트"
+  },
+  {
+    "topic": "태국 숲속 승려 전통",
+    "hook": "1900년, 숲에서 살아도 도시를 모른 채 명상만 하는 스님이 있다면?",
+    "body": "아잔 문 부리다또(Ajahn Mun Bhuridatto)는 초기에 동남아 최초의 불교 승려 규범을 따르며 북동부 태국을 떠돌았다. 그는 아잔 사오 칸타실로(Ajahn Sao Kantasīlo)와 수련하고, 초창기 불교를 부활시키려 엄격한 승려 규율을 고수했다.",
+    "twist": "그는 전생을 초월한 ‘아나가미(Anāgāmi)’가 되었다는 전설이 전해진다.",
+    "caveat": "이 전통은 약 1900년경에 시작된 것으로 알려져 있다.",
+    "country": "태국",
+    "theme": "관습/예절",
+    "wiki_title": "Thai Forest Tradition",
+    "source_url": "https://en.wikipedia.org/wiki/Thai_Forest_Tradition",
+    "verify_note": "Thai Forest Tradition",
+    "confidence": "source",
+    "created_at": "2026-10-28T13:57:29.967345+00:00",
+    "status": "unverified",
+    "country_before_fix": "스리랑카"
+  },
+  {
+    "topic": "가나 국가 상징, 한 화가가 만든 아프리카 전통 문양",
+    "hook": "가나의 모든 국가 상징, 한 화가가 직접 디자인했다!",
+    "body": "코피 안투밤(1922–1964)은 가나의 공식 “국가 예술가”로 임명돼 새로운 독립 국가의 정체성을 형성했고, 아칸(아칸) 아딘크라(아딘크라) 문양을 국가 상징에 도입했다.",
+    "twist": "그는 단순히 그림만 그린 것이 아니라, 전통을 현대 국가 이미지에 녹여냈다.",
+    "caveat": "이 작업은 가나 초창기 독립 시기에 진행된 것이며, 당시 정부와 협력했다.",
+    "country": "가나",
+    "theme": "생활문화",
+    "wiki_title": "Kofi Antubam",
+    "source_url": "https://en.wikipedia.org/wiki/Kofi_Antubam",
+    "verify_note": "Kofi Antubam",
+    "confidence": "source",
+    "created_at": "2026-10-28T13:57:37.953452+00:00",
+    "status": "unverified",
+    "country_before_fix": "나이지리아"
+  },
+  {
+    "topic": "미얀마의 지위·지역별 예절 차이",
+    "hook": "미얀마 거리에서 눈을 마주치면 바로 인사법이 바뀐다?",
+    "body": "미얀마의 예절 코드는 테라와다 불교에서 파생돼 사람 간 상호작용을 규정한다. 지위에 따라 인사 방식이 크게 달라지고, 지역마다 적용되는 관습도 다를 수 있다.",
+    "twist": "같은 나라 안에서도 동네마다 ‘예의’가 전혀 다른 규칙으로 살아간다.",
+    "caveat": "이 규칙은 현대 미얀마 전역에 일반적으로 적용되는 경우에 한한다.",
+    "country": "미얀마",
+    "theme": "관습/예절",
+    "wiki_title": "Etiquette in Myanmar",
+    "source_url": "https://en.wikipedia.org/wiki/Etiquette_in_Myanmar",
+    "verify_note": "Etiquette in Myanmar",
+    "confidence": "source",
+    "created_at": "2026-10-28T13:57:52.392059+00:00",
+    "status": "unverified",
+    "country_before_fix": "라오스"
   }
 ]
