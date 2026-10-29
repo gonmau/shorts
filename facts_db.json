@@ -4253,7 +4253,13 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0044_Latvia.mp4",
     "youtube_id": "VBDQVQ8Ux4g",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-16"
+    "uploaded_at": "2026-10-16",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": []
   },
   {
     "country": "Austria",
@@ -6131,7 +6137,20 @@
     "narration_original": "콜롬비아에서는 매주 일요일마다 도로가 차단돼요! 보고타를 포함한 여러 도시에서는 일요일 아침에 120km가 넘는 주요 도로를 차 없는 거리로 바꾸고, 시민들은 자전거를 타거나 걷고, 조깅을 즐깁니다. 이 행사는 1974년에 시작돼 지금은 매주 200만 명 이상이 참여할 정도로 커졌어요. 거리 한가운데서는 플래시몹 댄스와 라이브 음악 공연이 동시에 펼쳐져, 평범한 도로가 순간 문화 축제로 변신합니다. 여러분도 일요일엔 차를 내리고, 자유로운 거리에서 몸을 움직여 보세요. 구독과 좋아요, 알림 설정도 잊지 마세요!",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 4,
+        "text": "거리 한가운데서는 플래시몹 댄스와 라이브 음악 공연이 동시에 펼쳐져, 평범한 도로가 순간 문화 축제로 변신합니다."
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[unsupported] 4번 문장: Specific claim of flash‑mob dances and live music on the streets is not documented in general sources."
+    ]
   },
   {
     "country": "Ecuador",
@@ -7907,7 +7926,18 @@
       "Vilnius parade festival",
       "pancake crown costume",
       "wild willow branches"
-    ]
+    ],
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_notes": [
+      "[contradicted] 1번 문장: Festival involves eating pancakes, not throwing them",
+      "[unsupported] 3번 문장: No evidence of willow branches being used",
+      "[contradicted] 4번 문장: Traditional dish is pancakes, not a named 'barenes'",
+      "[unsupported] 7번 문장: No evidence that a large pancake is worn as a crown"
+    ],
+    "cross_verdict": "contradicted"
   },
   {
     "country": "Nepal",
@@ -9717,7 +9747,25 @@
     ],
     "youtube_id": "OM-L5vkQ0dU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "에게 해 연안의 셀축에서는 매년 1월 셋째 주말에 낙타 레슬링 축제가 열립니다."
+      },
+      {
+        "n": 3,
+        "text": "이 전통은 수백 년 전부터 이어져 온 것으로 알려져 있으며, 낙타들이 서로 물지 못하도록 입에 끈이나 마구리를 채우고 경기에 참가합니다."
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[unsupported] 2번 문장: Exact location and timing (third weekend of January in Selçuk) cannot be confirmed; typical dates differ.",
+      "[unsupported] 3번 문장: Historical length plausible, but specific practice of placing ropes or muzzles in camels' mouths lacks verification."
+    ]
   },
   {
     "country": "뉴질랜드",
@@ -10407,7 +10455,13 @@
     "status_v6": "video_done",
     "youtube_id": "Byw_cSK-Fpw",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": []
   },
   {
     "country": "Bhutan",
@@ -10990,7 +11044,25 @@
     "status_v6": "video_done",
     "youtube_id": "Hdj-jPynh04",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "cross_checked": true,
+    "cross_sources": 4,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 6,
+        "text": "심사는 꽃과 식물의 다양성, 관리 상태, 건축 보존, 물 활용, 이웃 협력 등을 기준으로 이뤄집니다."
+      },
+      {
+        "n": 7,
+        "text": "2026년 행사는 5월 4일부터 17일까지 열렸습니다."
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[unsupported] 6번 문장: Specific judging criteria not documented in evidence",
+      "[unsupported] 7번 문장: No source confirming 2026 dates"
+    ]
   },
   {
     "country": "Japan",
