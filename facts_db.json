@@ -26787,7 +26787,7 @@
     "verify_note": "Arepa",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:18.707647+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "아레파 하나로 햄버거 대신!?  \n아레파는 옥수수 가루 반죽을 얇게 펴서 만든 평평한 빵입니다. 남미 북부, 특히 콜롬비아와 베네수엘라에서는 선콜럼비아 시대부터 일상 식탁에 올라왔죠. 이 빵은 치즈, 고기, 아보카도 같은 다양한 속재료와 함께 먹습니다. 흔히 반으로 갈라 속을 채워 샌드위치처럼 즐기는데, 그 방법이 바로 오늘 소개할 포인트입니다.  \n\n아레파를 반으로 갈라 디아블리토와 아보카도를 넣으면, 전통적인 풍미는 그대로 유지하면서도 지방 함량을 낮춘 ‘헬시 샌드위치’가 완성됩니다. 디아블리토는 매콤한 햄 스프레드이고, 아보카도는 부드러운 식감과 건강한 지방을 제공하니까요. 이렇게 조합하면 포만감은 충분히 얻으면서도 다이어트에 도움이 되는 한 끼가 됩니다.  \n\n하지만 이 조리법은 주로 콜롬비아와 베네수엘라 등 남미 북부 지역에서 전해 내려오는 방식이라는 점을 기억해 주세요. 전통적인 아레파의 활용이 이렇게 현대적인 변신을 맞이한다는 사실, 생각보다 흥미롭지 않나요?",
     "cross_checked": true,
     "cross_sources": 0,
@@ -26888,11 +26888,11 @@
       {
         "scene": 5,
         "source": "commons",
-        "user": "Debray05",
-        "license": "CC0",
-        "title": "Arepas 1.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Arepas_1.jpg",
-        "id": "c:179357422"
+        "user": "Neoredacturus",
+        "license": "CC BY-SA 4.0",
+        "title": "Arepa Boyacense.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepa_Boyacense.jpg",
+        "id": "c:90195098"
       },
       {
         "scene": 6,
@@ -26925,14 +26925,21 @@
       {
         "scene": 10,
         "source": "commons",
-        "user": "Steven Depolo from Grand Rapids, MI, USA",
-        "license": "CC BY 2.0",
-        "title": "Arepitas Food Macro.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
-        "id": "c:18240237"
+        "user": "Pintoandres90",
+        "license": "CC BY-SA 3.0",
+        "title": "Arepa de trigo.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Arepa_de_trigo.JPG",
+        "id": "c:9000362"
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0317_에콰도르_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0317_에콰도르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0317_에콰도르.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0317_에콰도르.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "슬라브 수확 축제 Dożynki",

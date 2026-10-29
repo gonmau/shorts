@@ -11,45 +11,42 @@
 #   제외한 소재는 폐기(rejected)로 바뀌어 render에서 건너뛰고, 나중에 'redo_script=번호!'로 되살릴 수 있습니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 
-=== [315] 스페인 ===
-(교차검증) unsupported
-(교차검증 메모 1) [수정됨] [unsupported] 2번 문장: No evidence of a 'loyal toast' tradition in Spain.
-(교차검증 메모 2) [수정됨] [unsupported] 3번 문장: No documented practice of breaking glasses to prevent further toasts.
-(교차검증 메모 3) [수정됨] [unsupported] 4번 문장: Claim about limited applicability lacks supporting evidence.
-(교차검증 메모 4) [수정됨] [unsupported] 5번 문장: No sources confirming regional specificity of such a custom.
-(교차검증 메모 5) [수정됨] [unsupported] 6번 문장: No evidence that breaking glasses creates a declared atmosphere of loyalty.
-(교차검증 메모 6) [수정됨] [unsupported] 7번 문장: No documented meaning of glass breaking as a quiet signal for a new start.
-(교차검증 메모 7) [수정됨] [삭제] 근거 없는 건강/기원 문장 1개 (4번)
-(교차검증 메모 8) [수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No evidence of a Spanish 'loyal toast' to the king.
-(교차검증 메모 9) [수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No documented tradition of breaking glasses to prevent another toast.
-(교차검증 메모 10) [수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: Same as above; no regional or special-event basis documented.
-(교차검증 메모 11) [수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: Subjective interpretation of a non‑existent practice.
-(교차검증 메모 12) [수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: Speculative claim about a symbolic signal without supporting evidence.
-(직접 확인할 문장 2번) 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다.
-(직접 확인할 문장 3번) 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다.
-(직접 확인할 문장 4번) 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다.
-(직접 확인할 문장 5번) 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다.
-(직접 확인할 문장 6번) 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.
-(사실 확인용 검색어) Loyal toast
-후크: 스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요?
-본문: 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다. 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다. 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다. 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다.
-반전: 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.
+=== [317] 에콰도르 ===
+(교차검증) partial
+(교차검증 메모 1) [unsupported] 6번 문장: No reliable source confirms a specific “diavoleto” ham spread used with arepas for a low‑fat sandwich.
+(교차검증 메모 2) [unsupported] 7번 문장: The existence and description of “diavoleto” as a spicy ham spread is not verifiable.
+(교차검증 메모 3) [unsupported] 8번 문장: Health claim about satiety and diet benefit lacks evidence.
+(교차검증 메모 4) [unsupported] 9번 문장: No specific evidence that this exact preparation is traditionally from Colombia/Venezuela.
+(사실 확인용 검색어) Arepa
+후크: 아레파 하나로 햄버거 대신!?
+본문: 아레파는 옥수수 가루 반죽으로 만든 평평한 빵으로, 선콜럼비아 시대부터 남미 북부에서 먹어왔어요. 콜롬비아와 베네수엘라를 중심으로 치즈, 고기, 아보카도, 디아블리토(데빌드 햄 스프레드) 등 다양한 속재료와 함께 즐기고, 반으로 갈라 샌드위치처럼 먹기도 합니다.
+반전: 그런데 아레파를 반으로 갈라 디아블리토와 아보카도를 넣으면, 전통적인 맛에 다이어트 친화적인 ‘헬시 샌드위치’가 완성됩니다.
 제외:
-제목1: 스페인 파티 잔 파쇄
-제목2: 왜 토스트를 깨뜨릴까?
-핵심[1]: 왜 잔을 *깨뜨릴*까?
-핵심[3]: 다음 토스트 *막는* 잔 파쇄
-핵심[6]: 잔 부서질 때 *충성* 분위기
-이미지[1]: Spanish party glass breaking
-이미지[2]: Spanish royal toast ceremony
-이미지[3]: broken glass preventing next toast
-이미지[4]: Spanish festival without glass breaking
-이미지[5]: regional Spanish celebration tradition
-이미지[6]: glass shattering loyalty atmosphere
-이미지[7]: quiet signal new party start
-대본[1]: 스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요?
-대본[2]: 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다.
-대본[3]: 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다.
-대본[4]: 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다.
-대본[5]: 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다.
-대본[6]: 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.
+제목1: 남미 평평빵 활용
+제목2: 햄버거대신아레파
+핵심[1]: 아레파로 *햄버거* 대신
+핵심[3]: 남미 전통 *옥수수*
+핵심[5]: 샌드위치처럼 *활용*
+핵심[6]: 헬시 아레파, *지방*
+핵심[8]: 포만감+다이어트 *한끼*
+핵심[10]: 전통이 현대로 *변신*
+이미지[1]: Arepa burger alternative
+이미지[2]: Corn dough flatbread
+이미지[3]: Colombian traditional corn
+이미지[4]: Arepa with cheese and meat
+이미지[5]: Arepa sandwich style
+이미지[6]: Healthy arepa sandwich
+이미지[7]: Spicy ham spread avocado
+이미지[8]: Satiating diet meal
+이미지[9]: Colombian arepa tradition
+이미지[10]: Arepa modern transformation
+대본[1]: 아레파 하나로 햄버거 대신!?
+대본[2]: 아레파는 옥수수 가루 반죽을 얇게 펴서 만든 평평한 빵입니다.
+대본[3]: 남미 북부, 특히 콜롬비아와 베네수엘라에서는 선콜럼비아 시대부터 일상 식탁에 올라왔죠.
+대본[4]: 이 빵은 치즈, 고기, 아보카도 같은 다양한 속재료와 함께 먹습니다.
+대본[5]: 흔히 반으로 갈라 속을 채워 샌드위치처럼 즐기는데, 그 방법이 바로 오늘 소개할 포인트입니다.
+대본[6]: 아레파를 반으로 갈라 디아블리토와 아보카도를 넣으면, 전통적인 풍미는 그대로 유지하면서도 지방 함량을 낮춘 ‘헬시 샌드위치’가 완성됩니다.
+대본[7]: 디아블리토는 매콤한 햄 스프레드이고, 아보카도는 부드러운 식감과 건강한 지방을 제공하니까요.
+대본[8]: 이렇게 조합하면 포만감은 충분히 얻으면서도 다이어트에 도움이 되는 한 끼가 됩니다.
+대본[9]: 하지만 이 조리법은 주로 콜롬비아와 베네수엘라 등 남미 북부 지역에서 전해 내려오는 방식이라는 점을 기억해 주세요.
+대본[10]: 전통적인 아레파의 활용이 이렇게 현대적인 변신을 맞이한다는 사실, 생각보다 흥미롭지 않나요?
