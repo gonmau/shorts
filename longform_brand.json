@@ -9,8 +9,8 @@
  "hud_text": "곤마우",
  "hud_pill": true,
  "intro_logo": true,
- "intro_name": true,
+ "intro_name": false,
  "cta": "구독 & 좋아요",
- "recap": true,
- "recap_cards": true
+ "recap": false,
+ "recap_cards": false
 }
