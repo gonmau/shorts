@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-29 18:59:17 (KST) · 기록 477건 · 소재 370개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-29 19:05:42 (KST) · 기록 478건 · 소재 370개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -21,7 +21,7 @@
 | make_thumbnail | 2 | 0 | 5초 |
 | promote_ready | 22 | 0 | 3초 |
 | redo_videos | 6 | 0 | 1초 |
-| 롱폼 | 51 | 6 | 4시간 51분 |
+| 롱폼 | 52 | 6 | 4시간 51분 |
 | 쇼츠 | 97 | 6 | 12시간 17분 |
 | 코드업데이트 | 18 | 0 | 0초 |
 
@@ -31,6 +31,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 19:05 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 법/제도 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
 | 18:52 | PC | 코드업데이트 | gonmau/shorts: 12개 (build_video.py, check_country.py, exclude_sensitive.py, generate_culture_facts.py, get_refresh_token.py, notify_discord.py) | ✅ |  |  |
 | 15:51 | Actions | 쇼츠 | culture-shorts-pipeline #103 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40830579110 |
 | 10:42 | Actions | 쇼츠 | culture-shorts-pipeline #102 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40801619645 |
