@@ -36,8 +36,8 @@ on:
         options: [all, prepare, cuts, render]
         default: all
       count:
-        description: "만들 영상 개수 (하루 1~2개 권장)"
-        default: "2"
+        description: "만들 영상 개수 (기본 3개, 하루 업로드 상한도 3개)"
+        default: "3"
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
         default: "106"
@@ -86,7 +86,7 @@ jobs:
       PYTHONUNBUFFERED: "1"  # 로그가 실시간으로 보이게 함
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}
-      COUNT: ${{ github.event.inputs.count || '2' }}
+      COUNT: ${{ github.event.inputs.count || '3' }}
       START: ${{ github.event.inputs.start_index || '106' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
