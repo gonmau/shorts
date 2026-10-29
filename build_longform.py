@@ -644,7 +644,7 @@ def run_rich(args, db, lf_db, members):
         return _preview_out(args, db, members, recs, LS, R)
     if args.plan_only:
         countries_ = [DISP(db[i].get("country", "")) for i in members]
-        partners_ = [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members]
+        partners_ = [str(((recs[i].get("compare") or {}).get("right") or "")) if LS.compare_on() else "" for i in members]
         old_plan = load_json(BASE / "longform_plan.json", {})
         plan = {"members": members, "mode": args.mode, "theme": args.theme, "title": args.title, "clips": clips_on,
                 "created": time.strftime("%Y-%m-%d %H:%M"),
@@ -716,7 +716,7 @@ def run_rich(args, db, lf_db, members):
     custom_ = plan_ if plan_.get("members") == members else {}
     if getattr(args, "deep_plan", None):
         custom_ = args.deep_plan
-    intro_txt = (custom_.get("intro_text") or "").strip() or LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) for i in members])
+    intro_txt = (custom_.get("intro_text") or "").strip() or LS.intro_text(countries, total, [str(((recs[i].get("compare") or {}).get("right") or "")) if LS.compare_on() else "" for i in members])
     if custom_.get("intro_text"):
         print("오프닝 멘트: 직접 고친 문구 사용", flush=True)
     intro_rec = LS.prepare_extra("lf_intro", intro_txt) if (client or LS.enabled()) and not args.no_expand else None
@@ -900,6 +900,7 @@ def main():
     ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
+    ap.add_argument("--no-compare", action="store_true", help="비교 카드를 쓰지 않는다 (저장된 비교 카드가 있어도 화면·오프닝 멘트에 넣지 않음)")
     ap.add_argument("--no-recap-cards", action="store_true", help="요약 화면은 두되 챕터별 요약 카드는 표시하지 않고 엔딩 멘트 음성만 낸다")
     ap.add_argument("--no-recap", action="store_true", help="마지막 요약 화면(+엔딩 멘트)을 만들지 않는다")
     ap.add_argument("--deep", action="store_true", help="심층편: --indexes 의 소재 1개를 소주제 여러 개로 나눠 긴 영상 1편으로 만든다")
@@ -909,6 +910,12 @@ def main():
     ap.add_argument("--preview", choices=["script", "images", "voice", "cuts"], default="",
                     help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3, cuts=컷 시트+후보 사진 시트")
     args = ap.parse_args()
+    try:        # 비교 카드 전체 끄기: --no-compare, 채널 표시 설정, 또는 환경변수 LF_COMPARE=0
+        import longform_render as _R0
+        if args.no_compare or not _R0.BRAND.get("compare", True):
+            os.environ["LF_COMPARE"] = "0"
+    except Exception:
+        pass
     global EST_SCALE
     if args.style == "rich" and not args.no_expand and os.environ.get("GROQ_API_KEY", "").strip() and os.environ.get("LF_EXPAND", "1") != "0":
         EST_SCALE = 2.2

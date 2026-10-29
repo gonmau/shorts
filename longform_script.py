@@ -331,6 +331,11 @@ def update_rec(idx, fields, lock=True):
     return rec
 
 
+def compare_on():
+    """비교 카드 전체 켜기/끄기 (환경변수 LF_COMPARE=0 이면 끔. 챕터에 저장된 비교 카드가 있어도 쓰지 않음)"""
+    return os.environ.get("LF_COMPARE", "1") != "0"
+
+
 def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False, resync=False):
     """확장 대본 (+ 음성). 성공하면 dict(narration, keywords, compare, recap, audio, timing, ...) 아니면 None.
     - 사람이 고쳐서 잠근(locked) 대본은 force 가 아니면 그대로 쓴다. 지시문(instruction)이 있으면 그 지시를 반영해 다시 쓴다.
@@ -476,7 +481,7 @@ def scenario_rows(item, rec):
     kw_at = {}
     for k in rec.get("keywords") or []:
         kw_at.setdefault(int(k["sentence"]), []).append(k["text"])
-    cmp_ = rec.get("compare") if (rec.get("compare") or {}).get("rows") else None
+    cmp_ = rec.get("compare") if (compare_on() and (rec.get("compare") or {}).get("rows")) else None
     cmp_n = 0
     if cmp_:
         cmp_n = int(rec.get("compare_at") or 0)

@@ -66,6 +66,10 @@ on:
         description: "요약 화면의 챕터별 요약 카드 표시 (끄면 엔딩 멘트 음성만. recap을 끄면 무관)"
         type: boolean
         default: true
+      compare:
+        description: "챕터별 비교 카드 넣기 (끄면 저장된 비교 카드가 있어도 쓰지 않음, 오프닝 멘트의 비교 언급도 뺌)"
+        type: boolean
+        default: true
       deep:
         description: "심층편 (manual + 번호 1개: 그 소재 하나를 소주제 여러 개로 나눠 긴 영상 1편으로)"
         type: boolean
@@ -105,6 +109,7 @@ jobs:
     env:
       LF_RECAP_CARDS: ${{ github.event.inputs.recap_cards == 'false' && '0' || '1' }}
       LF_RECAP: ${{ github.event.inputs.recap == 'false' && '0' || '1' }}
+      LF_COMPARE: ${{ github.event.inputs.compare == 'false' && '0' || '1' }}
       DEEPARGS: ${{ github.event.inputs.deep == 'true' && format('--deep --sections {0} --minutes {1}', github.event.inputs.sections || '5', github.event.inputs.minutes || '8') || '' }}
       CROSS_CHECK: ${{ github.event.inputs.cross_check == 'true' && '1' || '0' }}
       PYTHONUNBUFFERED: "1"

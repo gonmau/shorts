@@ -714,6 +714,7 @@ FEATURES = [
     ("롱폼", "고친 대본에 맞춰 키워드·비교 다시 만들기", "🎞 롱폼 › ② 챕터 안 🔁 버튼", "나레이션을 고친 뒤 AI가 키워드 팝업·비교 카드·요약·영상 검색어를 새 글에 맞춰 다시 만듦 (대본은 그대로)", "🆕"),
     ("롱폼", "심층편 (소재 1개 → 긴 영상 1편)", "🎞 롱폼 › 🔭 심층편 / Actions > longform > deep", "소재 번호 1개를 소주제 3~8개(기본 5)로 나눠 5~12분(기본 8분) 영상 1편으로. 섹션 대본은 확인·수정·잠금 가능(deep_db.json). GitHub는 manual + 번호 1개 + deep 체크", "신규"),
     ("롱폼", "마지막 요약 화면 켜고 끄기", "🎞 롱폼 › 🎨 채널 표시 '마지막 요약 화면' / 심층편 체크박스 / Actions recap", "끄면 요약 화면과 엔딩 멘트 없이 마지막 챕터에서 바로 끝. 설명란 '요약' 챕터도 빠짐. 심층편에도 동일 적용", "신규"),
+    ("롱폼", "비교 카드 켜고 끄기", "🎞 롱폼 › 🎨 채널 표시 '챕터별 비교 카드' / 심층편 체크박스 / Actions compare", "끄면 챕터에 저장된 비교 카드가 있어도 영상과 오프닝 멘트에 넣지 않음. AI가 대본을 다시 만들어도 다시 켜지지 않음", "신규"),
     ("롱폼", "스톡 영상 (Pexels/Pixabay)", "🎞 롱폼 체크박스", "분위기용 짧은 영상을 일부 장면에 사용 (Pixabay 키 필요)", "🆕"),
     ("롱폼", "렌더링 진행률", "🎞 롱폼 실행 로그", "10%마다 진행률과 남은 시간 표시", "🆕"),
     ("자동", "자동 진행", "이 탭 아래 '⚡ 자동 진행'", "확인 없이 대본/이미지/렌더링까지 한 번에", ""),
@@ -1807,6 +1808,8 @@ with TL:
                                   help="끄면 마지막 챕터가 끝나고 바로 영상이 끝납니다 (요약 음성도 안 만들어 시간 절약). 깃허브에도 이 설정이 함께 올라갑니다")
         _B["recap_cards"] = st.checkbox("└ 챕터별 요약 카드 표시", bool(_B.get("recap_cards", True)), key="br_rcards", disabled=not _B["recap"],
                                         help="끄면 요약 카드(번호·나라·한 줄 요약 목록)는 화면에 안 나오고, 흐린 배경에 채널 이름만 보이면서 엔딩 멘트 음성만 나옵니다. 요약 화면 자체를 빼려면 위 체크를 끄세요")
+        _B["compare"] = st.checkbox("챕터별 비교 카드 넣기", bool(_B.get("compare", True)), key="br_compare",
+                                    help="끄면 저장된 비교 카드가 있어도 영상에 넣지 않고 오프닝 멘트의 비교 언급도 뺍니다 (AI가 다시 만들어도 다시 켜지지 않음). 깃허브에도 이 설정이 함께 올라갑니다")
         _B["hud"] = t1_.checkbox("오른쪽 위 채널 표시 켜기", bool(_B.get("hud", True)), key="br_hud")
         _B["hud_avatar"] = t1_.checkbox("└ 이미지", bool(_B.get("hud_avatar", True)), key="br_hav", disabled=not _B["hud"])
         _B["hud_name"] = t2_.checkbox("└ 채널 이름", bool(_B.get("hud_name", True)), key="br_hnm", disabled=not _B["hud"])
@@ -1833,8 +1836,10 @@ with TL:
                           help="사진이 비어 있으면 색 카드로 대신 들어가므로, 먼저 받아서 채웁니다. PIXABAY_API_KEY 필요. 끄면 빠진 채로(또는 아래 설정에 따라 멈춤)")
     try:
         R_BRAND_RECAP = bool(json.load(open("longform_brand.json", encoding="utf-8")).get("recap", True))
+        R_BRAND_COMPARE = bool(json.load(open("longform_brand.json", encoding="utf-8")).get("compare", True))
     except Exception:
         R_BRAND_RECAP = True
+        R_BRAND_COMPARE = True
     lf_nomiss_deep = False
     common_args = ["--channel", CH, "--handle", HD, "--style", "classic" if lf_style.startswith("classic") else "rich"] \
         + ([] if lf_expand else ["--no-expand"]) + (["--clips"] if lf_clips else []) + (["--fill-images"] if lf_fill else [])
@@ -1849,6 +1854,7 @@ with TL:
         _dmin = d3.slider("목표 길이 (분)", 5, 12, 8, key="deep_min")
         _drecap = st.checkbox("마지막 요약 화면 + 엔딩 멘트 넣기", bool(R_BRAND_RECAP), key="deep_recap", help="끄면 마지막 소주제에서 바로 끝납니다 (채널 표시 설정과 별개로 이번 실행에만 적용)")
         _dcards = st.checkbox("└ 챕터별 요약 카드 표시 (끄면 엔딩 멘트 음성만)", True, key="deep_cards", disabled=not _drecap)
+        _dcmp = st.checkbox("소주제별 비교 카드 넣기", bool(R_BRAND_COMPARE), key="deep_compare", help="끄면 이번 실행에만 비교 카드를 쓰지 않습니다 (채널 표시 설정과 별개)")
         _dins = st.text_input("AI 추가 지시 (선택, 예: 한국과 비교를 더 자세히)", key="deep_ins")
         _dargs = ["build_longform.py", "--deep", "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
         e1, e2 = st.columns(2)
@@ -1857,7 +1863,7 @@ with TL:
             st.rerun()
         if e2.button("② 심층편 만들기 (음성 + 영상 합성)", key="deep_run", type="primary"):
             TIMES.clear()
-            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
+            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if _dcmp else ["--no-compare"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
         try:
             import deep as _DP
             _dd = _DP.load().get(str(int(_dsrc)))

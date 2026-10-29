@@ -60,7 +60,7 @@ def arr(im):
 
 BRAND_FILE = Path(__file__).resolve().parent / "longform_brand.json"
 BRAND_DEFAULT = {"channel": "", "handle": "", "avatar": "", "hud": True, "hud_avatar": True, "hud_name": True, "hud_handle": True,
-                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": "", "recap": True, "recap_cards": True}
+                 "hud_text": "", "hud_pill": True, "intro_logo": True, "intro_name": True, "cta": "", "recap": True, "recap_cards": True, "compare": True}
 
 
 def load_brand():
@@ -757,7 +757,7 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
 
     ovs = [Ov(lower_third(t1, t2), 0.6, 0.6 + min(6.0, max(2.0, dur - 1)), fi=0.4, fo=0.4)]
     cmp_win = None
-    cmp_ = rec.get("compare")
+    cmp_ = rec.get("compare") if os.environ.get("LF_COMPARE", "1") != "0" else None     # 비교 카드 전체 끄기
     if cmp_ and len(cmp_.get("rows") or []) >= 2 and dur > 25:
         t0 = B.time_at_fraction(0.55, timings)
         try:
