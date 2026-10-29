@@ -118,6 +118,9 @@ jobs:
       - name: 성/민감 소재 제외 (아직 안 만든 소재)
         run: python exclude_sensitive.py
 
+      - name: 나라와 주제가 안 맞는 소재 정리
+        run: python check_country.py --apply
+
       - name: 직접 넣은 대본 인식 (facts_db.json에 대본을 넣은 소재)
         run: python promote_ready.py --start "$START"
 

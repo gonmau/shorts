@@ -15393,7 +15393,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15488,7 +15488,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -21589,7 +21590,7 @@
     "body": "하이랜드 파푸아(Highland Papua)는 인도네시아에서 유일하게 내륙에 위치한 지방으로, 중앙 고원에 자리 잡고 있다. 2022년 7월 25일에 설립되었으며, 면적은 약 52,505.66 km²이다.",
     "twist": "인구는 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 증가한다.",
     "caveat": "인구와 면적 수치는 위키백과 발췌문에 따른 추정치이다.",
-    "country": "파푸아뉴기니",
+    "country": "인도네시아",
     "theme": "음식문화",
     "wiki_title": "Highland Papua",
     "source_url": "https://en.wikipedia.org/wiki/Highland_Papua",
@@ -21691,7 +21692,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "파푸아뉴기니"
   },
   {
     "topic": "고대 그리스·로마부터 이어진 변호사의 다양한 직종",
@@ -22838,7 +22840,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -22959,7 +22961,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -24806,7 +24809,7 @@
     "body": "피시앤칩스는 19세기에 영국에서 시작된 튀김 요리로, 전쟁 중에도 영국 정부가 공급을 보호했습니다. 제1·제2차 세계대전 동안 이 음식은 드물게도 계속 제공되었습니다.",
     "twist": "전쟁 중에 보호된 식품 중 몇 안 되는 음식 중 하나였다는 점이 놀랍습니다.",
     "caveat": "보호 조치는 제1·제2차 세계대전 시기에만 적용되었습니다.",
-    "country": "네덜란드",
+    "country": "영국",
     "theme": "음식문화",
     "wiki_title": "Fish and chips",
     "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
@@ -24928,7 +24931,8 @@
     "status_v6": "video_done",
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "country_before_fix": "네덜란드"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -26978,7 +26982,8 @@
     "verify_note": "Thailand",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:24.633182+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "나라와 주제 불일치(파푸아뉴기니 / TH,IN)"
   },
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
@@ -27232,7 +27237,7 @@
     "body": "전통 와쇼쿠에서는 보통 식사 시작에 된장국을 함께 내기도 합니다. 따뜻한 된장국을 곁들여 밥을 함께 먹는 경우가 많아요. 계절마다 달라지는 신선한 생선, 절인 채소, 달걀말이, 육수에 끓인 채소가 곁들여집니다. 때때로 같은 식탁에 회와 템푸라가 함께 제공되기도 합니다. 이 모습은 전통 와쇼쿠에 해당하며, 현대 퓨전 요리와는 차이가 있을 수 있습니다.",
     "twist": "일본 식사에서는 된장국이 먼저 나오기도 하지만, 밥이 중심이 되는 경우가 많습니다.",
     "caveat": "이 내용은 전통 와쇼쿠에 해당하며, 현대 퓨전 일본 요리에는 다를 수 있습니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "음식문화",
     "wiki_title": "Japanese cuisine",
     "source_url": "https://en.wikipedia.org/wiki/Japanese_cuisine",
@@ -27278,7 +27283,8 @@
       "traditional washoku meal",
       "miso soup starter"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "country_before_fix": "싱가포르"
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -27627,14 +27633,15 @@
     "body": "사우디아라비아는 쿠란과 선지자 무함마드( Muhammad )의 전통인 순나에서 파생된 샤리아를 근간으로 삼는다. 판결은 중세 한발리( Hanbili ) 학파의 문자주의 텍스트와 사후 학자들의 합의에 크게 의존한다. 그러나 법전이 없고 판례도 없어 법의 적용 범위가 크게 불확실하다.",
     "twist": "정부는 2010년에 샤리아를 성문화하겠다고 발표했고, 2018년에 관련 자료집을 공개했다.",
     "caveat": "이 불확실성은 사우디아라비아 내부에만 해당되는 상황이다.",
-    "country": "이집트",
+    "country": "사우디아라비아",
     "theme": "법/제도",
     "wiki_title": "Legal system of Saudi Arabia",
     "source_url": "https://en.wikipedia.org/wiki/Legal_system_of_Saudi_Arabia",
     "verify_note": "Legal system of Saudi Arabia",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "이집트"
   },
   {
     "topic": "탄자니아( Tanzania ) 마쿤두치( Makunduchi )에 동독(East Germany) 지원으로 세워진 아파트",
@@ -28110,14 +28117,15 @@
     "body": "아잔 문 부리다또(Ajahn Mun Bhuridatto)는 초기에 동남아 최초의 불교 승려 규범을 따르며 북동부 태국을 떠돌았다. 그는 아잔 사오 칸타실로(Ajahn Sao Kantasīlo)와 수련하고, 초창기 불교를 부활시키려 엄격한 승려 규율을 고수했다.",
     "twist": "그는 전생을 초월한 ‘아나가미(Anāgāmi)’가 되었다는 전설이 전해진다.",
     "caveat": "이 전통은 약 1900년경에 시작된 것으로 알려져 있다.",
-    "country": "스리랑카",
+    "country": "태국",
     "theme": "관습/예절",
     "wiki_title": "Thai Forest Tradition",
     "source_url": "https://en.wikipedia.org/wiki/Thai_Forest_Tradition",
     "verify_note": "Thai Forest Tradition",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:29.967345+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "스리랑카"
   },
   {
     "topic": "유럽에서 성매매는 합법, 하지만 브로델은 금지",
@@ -28141,14 +28149,15 @@
     "body": "코피 안투밤(1922–1964)은 가나의 공식 “국가 예술가”로 임명돼 새로운 독립 국가의 정체성을 형성했고, 아칸(아칸) 아딘크라(아딘크라) 문양을 국가 상징에 도입했다.",
     "twist": "그는 단순히 그림만 그린 것이 아니라, 전통을 현대 국가 이미지에 녹여냈다.",
     "caveat": "이 작업은 가나 초창기 독립 시기에 진행된 것이며, 당시 정부와 협력했다.",
-    "country": "나이지리아",
+    "country": "가나",
     "theme": "생활문화",
     "wiki_title": "Kofi Antubam",
     "source_url": "https://en.wikipedia.org/wiki/Kofi_Antubam",
     "verify_note": "Kofi Antubam",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "나이지리아"
   },
   {
     "topic": "크메르 제국, 물 관리로 이룬 거대한 도시",
@@ -28253,14 +28262,15 @@
     "body": "미얀마의 예절 코드는 테라와다 불교에서 파생돼 사람 간 상호작용을 규정한다. 지위에 따라 인사 방식이 크게 달라지고, 지역마다 적용되는 관습도 다를 수 있다.",
     "twist": "같은 나라 안에서도 동네마다 ‘예의’가 전혀 다른 규칙으로 살아간다.",
     "caveat": "이 규칙은 현대 미얀마 전역에 일반적으로 적용되는 경우에 한한다.",
-    "country": "라오스",
+    "country": "미얀마",
     "theme": "관습/예절",
     "wiki_title": "Etiquette in Myanmar",
     "source_url": "https://en.wikipedia.org/wiki/Etiquette_in_Myanmar",
     "verify_note": "Etiquette in Myanmar",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "라오스"
   },
   {
     "topic": "고대 이집트 기근 시 인간 고기 판매",

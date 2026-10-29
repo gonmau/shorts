@@ -172,6 +172,14 @@ def filter_new(batch: list, db: list) -> list:
         if not is_korean(f):
             print(f"  한국어가 아니어서 제외: {str(f.get('country'))} / {str(f.get('topic'))[:40]}")
             continue
+        try:
+            from check_country import analyze as _an
+            _st, _c, _ms = _an(f)
+            if _st != "ok":
+                print(f"  나라와 주제가 안 맞아 제외({f.get('country')} / 언급 {','.join(_ms)}): {str(f.get('topic'))[:40]}")
+                continue
+        except Exception:
+            pass
         _w = is_sensitive(f)
         if _w:
             print(f"  성/민감 소재라 제외({_w}): {f.get('country')} / {str(f.get('topic'))[:40]}")
