@@ -8,6 +8,7 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.readonly",
     "https://www.googleapis.com/auth/yt-analytics.readonly",
+    "https://www.googleapis.com/auth/youtube.force-ssl",   # 썸네일 자동 설정용
 ]
 flow = InstalledAppFlow.from_client_secrets_file(sys.argv[1], SCOPES)
 creds = flow.run_local_server(port=0, access_type="offline", prompt="consent")

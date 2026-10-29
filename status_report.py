@@ -50,11 +50,13 @@ def summary(db, start=0, detail=True):
     need = [i for i, f in idx if not has_narr(f) and f.get("status") in ("unverified", "verified")]
     rej = [i for i, f in idx if f.get("status") == "rejected"]
     done = [i for i, f in idx if not no_video(f)]
+    def nums(x):                    # detail=False(디스코드 메시지)에는 번호를 빼고 개수만, 번호는 첨부 파일에
+        return f" ({rng(x)})" if detail else ""
     head = (
         f"📊 현황 (start_index={start} 기준)\n"
-        f"• render 바로 가능: {len(ready)}개 ({rng(ready)})\n"
-        f"• prepare로 대본 만들 소재: {len(need)}개 ({rng(need)})\n"
-        f"• 폐기(rejected): {len(rej)}개 ({rng(rej)}) → 번호! 로 되살림\n"
+        f"• render 바로 가능: {len(ready)}개{nums(ready)}\n"
+        f"• prepare로 대본 만들 소재: {len(need)}개{nums(need)}\n"
+        f"• 폐기(rejected): {len(rej)}개{nums(rej)} → 번호! 로 되살림\n"
         f"• 영상 완료: {len(done)}개 (업로드 {sum(1 for i in done if db[i].get('youtube_id'))} / 미업로드 {sum(1 for i in done if not db[i].get('youtube_id'))})\n"
         f"권장: render count=3 정도씩, prepare count=5 정도부터"
     )

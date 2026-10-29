@@ -196,6 +196,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           PUBLISH_SLOTS: ${{ vars.PUBLISH_SLOTS || 'off' }}   # 기본: 예약 없이 비공개로만 업로드 (예약 공개를 쓰려면 저장소 변수 PUBLISH_SLOTS=07:00,19:30 처럼 한국시간으로)
+          YT_THUMBNAIL: ${{ vars.YT_THUMBNAIL || '' }}   # on 이면 썸네일도 자동 설정 (토큰을 새 권한으로 다시 발급해야 함)
         run: python upload_to_youtube.py --limit "$COUNT"
 
       # ---------- 저장 ----------

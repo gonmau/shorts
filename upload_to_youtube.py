@@ -52,7 +52,8 @@ def youtube():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=os.environ["YT_CLIENT_ID"],
         client_secret=os.environ["YT_CLIENT_SECRET"],
-        scopes=["https://www.googleapis.com/auth/youtube.upload"],
+        scopes=["https://www.googleapis.com/auth/youtube.upload"]
+        + (["https://www.googleapis.com/auth/youtube.force-ssl"] if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true") else []),
     )
     return build("youtube", "v3", credentials=creds)
 
@@ -99,6 +100,14 @@ def main():
             media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)
             res = yt.videos().insert(part="snippet,status", body=body, media_body=media).execute()
         item["youtube_id"] = res["id"]
+        if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true"):   # 썸네일 자동 설정 (토큰에 youtube.force-ssl 권한이 있어야 함)
+            th = Path("thumbnails") / (Path(path).stem + ".png")
+            if th.exists():
+                try:
+                    yt.thumbnails().set(videoId=res["id"], media_body=MediaFileUpload(str(th), mimetype="image/png")).execute()
+                    print(f"  썸네일 설정: {th.name}")
+                except Exception as e:
+                    print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:200]}")
         item["uploaded_at"] = datetime.now(kst).isoformat()
         if slot:
             item["publish_at"] = slot
