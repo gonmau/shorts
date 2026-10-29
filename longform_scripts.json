@@ -2923,7 +2923,7 @@
   ]
  },
  "106": {
-  "narration": "터키에서 겨울이면 거대한 낙타들이 몸싸움을 벌이는 축제가 열립니다. 에게 해 연안 셀축 마을에서는 매년 1월 셋째 주말에 낙타 레슬링을 개최합니다. 이 전통은 수백 년 전부터 이어져 온 것으로 알려져 있습니다. 경기 전에 낙타 입에 끈이나 마구리를 넣어 물지 못하게 합니다. 사육사는 낙타를 목과 몸으로 밀어내며 상대를 넘어뜨리게 합니다. 승자는 상대를 바닥에 눕히거나 도망치게 만든 낙타입니다. 관중들은 흥분된 함성으로 응원하고, 지역 상인들은 따뜻한 차와 전통 간식을 판매합니다. 낙타 레슬링은 단순한 구경거리를 넘어 지역 정체성을 보여주는 행사로 자리 잡았습니다. 그러나 동물 복지를 우려하는 목소리도 커지고 있어, 최근에는 안전 규정을 강화하려는 움직임이 있습니다. 이런 논란에도 불구하고 축제는 여전히 많은 관광객을 끌어모으며, 셀축의 겨울 풍경과 어우러져 독특한 문화 체험을 제공합니다. 다음에는 이탈리아의 여름 축제 이야기를 살펴볼게요.",
+  "narration": "겨울이면 거대한 낙타가 몸싸움을 벌이는 축제가 있다는 사실, 알고 계셨나요? 에게 해 연안 셀축 마을에서는 매년 1월 셋째 주말에 낙타 레슬링이 열립니다. 이 전통은 수백 년 전부터 이어져 온 것으로 전해지며, 마을 사람들은 축제를 마을의 자부심으로 여깁니다. 경기 전에 낙타의 입에 끈이나 마구리를 넣어 물지 못하게 하고, 목과 몸을 이용해 상대를 밀어내는 방식으로 진행됩니다. 관중들은 낙타가 서로를 넘어뜨리거나 도망치는 순간에 환호성을 지릅니다. 단순한 구경거리라기보다 지역 경제와 문화가 얽힌 행사라 할 수 있습니다. 하지만 최근 동물 복지 논란이 일면서, 일부에서는 안전 장치를 강화하거나 관람 제한을 요구하고 있습니다. 이런 논쟁에도 불구하고, 셀축의 낙타 레슬링은 오랜 역사를 품은 지역 정체성의 상징으로 남아 있습니다. 다음엔 마다가스카르의 독특한 전통을 살펴볼게요.",
   "keywords": [
    {
     "sentence": 1,
@@ -2931,58 +2931,62 @@
    },
    {
     "sentence": 2,
-    "text": "셀축 마을"
+    "text": "셀축"
    },
    {
-    "sentence": 4,
-    "text": "입에 끈"
+    "sentence": 3,
+    "text": "수백 년 전"
    },
    {
-    "sentence": 7,
-    "text": "관중 함성"
+    "sentence": 5,
+    "text": "목과 몸"
    },
    {
-    "sentence": 9,
+    "sentence": 8,
     "text": "동물 복지"
    }
   ],
   "compare": {
-   "title": "터키 vs 이탈리아",
+   "title": "터키 vs 마다가스카르",
    "left": "터키",
-   "right": "이탈리아",
+   "right": "마다가스카르",
    "rows": [
     {
-     "label": "축제 종류",
-     "left": "낙타 레슬링",
-     "right": "와인 축제"
+     "label": "축제 형태",
+     "left": "동물 레슬링",
+     "right": "전통 무용"
     },
     {
-     "label": "동물 사용",
-     "left": "많음",
-     "right": "없음"
+     "label": "계절",
+     "left": "겨울",
+     "right": "여름"
     },
     {
      "label": "논란 정도",
-     "left": "높음",
-     "right": "낮음"
+     "left": "동물 복지",
+     "right": "문화 보존"
     }
    ]
   },
-  "recap": "셀축의 낙타 레슬링, 전통과 현대 논쟁이 공존합니다.",
+  "recap": "셀축 낙타 레슬링, 전통과 논쟁이 공존하는 겨울 축제",
   "broll": [
-   "camel wrestling arena",
-   "winter village market turkey",
-   "traditional Turkish festival crowd"
+   "turkey camel wrestling",
+   "winter festival crowd",
+   "traditional market turkey"
   ],
   "verify": {
-   "status": "skipped",
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 1,
    "notes": [
-    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
-   ]
+    "[unsupported] 4번 문장: Details about tying a rope or muzzle in the camel's mouth are not confirmed by reliable sources."
+   ],
+   "model": "openai/gpt-oss-120b"
   },
-  "sig": "9420681bd067",
+  "sig": "69fc6da1d6e1",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-27 23:10"
+  "created": "2026-10-29 19:16"
  },
  "108": {
   "narration": "이탈리아 사르디니아에 살아있는 유충이 들어간 치즈가 있다는 사실, 알고 계셨나요? 이 치즈는 양젖으로 만든 전통 페코리노에 치즈파리의 알을 넣어 만들어요. 알이 부화하면 유충이 지방을 분해해 치즈가 부드러워지고 특유의 강한 풍미가 살아납니다. 유충이 활동할수록 치즈 표면에 ‘라그리마’라 불리는 눈물 같은 액체가 흐르기도 합니다. 사르디니아의 작은 마을에서는 아직도 가정이나 지역 축제에서 직접 숙성시켜 먹는 전통이 이어지고 있습니다. 그러나 유충이 장내에 살아남아 위장염을 일으킬 위험이 있다는 이유로 이탈리아와 EU 전체에서 상업적 판매는 금지돼 있습니다. 금지에도 불구하고 현지인들은 이 치즈를 ‘맛의 모험’이라 부르며, 손님에게 제공할 때는 유충이 살아있는 모습을 보여 주는 것이 일종의 자부심이 됩니다. 비슷한 전통이 프랑스 코르시카 섬에도 있지만, 사르디니아만큼 오래된 기록과 문화적 의미를 가지고 있지는 않습니다. 오늘도 사르디니아의 한 가정에서는 유충이 살아있는 치즈를 조심스럽게 꺼내어, 빵에 얹어 함께 즐깁니다. 여러분은 이 독특한 맛을 직접 경험해볼 용기가 있나요? 다음에는 캄보디아의 전통 음식 이야기를 살펴보겠습니다.",
@@ -3167,62 +3171,69 @@
   "created": "2026-10-27 23:11"
  },
  "112": {
-  "narration": "선조의 유해를 다시 포장한다는 이야기를 들어보셨나요? 마다가스카르 중부 고원의 메리나 사회에서는 ‘파마디하나’라는 의식을 통해 조상을 기립니다. ‘뼈를 돌린다’는 뜻의 파마디하나는, 가족이 무덤에서 시신을 꺼내 새 천으로 감싸는 과정에서 시작됩니다. 새 천은 조상을 새 옷으로 입힌다는 상징을 담고 있어, 살아있는 가족과의 연결을 강조합니다. 의식에는 전통 악기와 함께 흥겨운 춤이 곁들여져, 마을 전체가 축제로 변합니다. 파마디하나는 조상에 대한 존중과 혈연 유대를 확인하는 중요한 행사이며, 그 빈도는 가계 경제와 지역 전통에 따라 달라집니다. 이 의식은 마다가스카르 전역에 퍼진 일반적인 장례 문화가 아니라, 일부 공동체에서만 유지되고 있습니다. 파마디하나와 달리, 독일에서는 주로 화장 후 유골을 묘비에 안치하는 방식을 선호합니다. 두 문화 모두 사후 세계에 대한 관념을 반영하지만, 표현 방식은 크게 다릅니다. 다음에는 부탄의 독특한 종교 의식 이야기를 살펴보겠습니다.",
+  "narration": "왜 마다가스카르 사람들은 조상의 뼈를 다시 꺼내 춤을 출까요? 중앙 고원의 메리나 지역에서 전해지는 ‘파마디하나’는 조상을 새 천으로 다시 감싸는 의식입니다. 가족과 친지는 무덤에서 유해를 꺼내어 새 천으로 감싼 뒤, 전통 악기 소리에 맞춰 춤을 추며 조상의 삶을 기립니다. 이때 새 천은 조상을 보살피고 가족 간 유대를 이어간다는 상징을 담고 있습니다. 파마디하나는 경제 상황이나 지역 전통에 따라 5년마다 혹은 몇 세대에 한 번씩 열리며, 모든 마다가스카르 가정이 행하는 것은 아닙니다. 그러나 이 의식이 진행되는 마을에서는 마을 전체가 모여 축제 분위기를 만들고, 어린이들은 전통 의상을 입고 참여합니다. 파마디하나는 서구식 장례와는 달리 죽음 이후에도 조상을 살아있는 존재로 여기며, 공동체의 정체성을 강화하는 역할을 합니다. 이런 독특한 전통은 남미나 유럽의 장례 문화와 크게 대비됩니다. 이제 스페인의 또 다른 흥미로운 문화 이야기를 살펴볼까요?",
   "keywords": [
    {
     "sentence": 1,
-    "text": "뼈를 돌린다"
+    "text": "파마디하나"
    },
    {
     "sentence": 2,
     "text": "새 천"
    },
    {
-    "sentence": 4,
-    "text": "전통 악기"
+    "sentence": 3,
+    "text": "조상과 유대"
    },
    {
-    "sentence": 6,
-    "text": "혈연 유대"
+    "sentence": 4,
+    "text": "축제 분위기"
    }
   ],
   "compare": {
-   "title": "마다가스카르 vs 독일",
+   "title": "마다가스카르 vs 스페인",
    "left": "마다가스카르",
-   "right": "독일",
+   "right": "스페인",
    "rows": [
     {
-     "label": "의식 형태",
-     "left": "재포장 축제",
-     "right": "화장·묘비"
+     "label": "전통 의식 빈도",
+     "left": "불규칙",
+     "right": "정기적"
     },
     {
-     "label": "가족 참여",
-     "left": "많음",
-     "right": "적음"
+     "label": "조상에 대한 관념",
+     "left": "활동적 기림",
+     "right": "묘지 방문"
     },
     {
-     "label": "문화 범위",
-     "left": "일부 지역",
-     "right": "전국적"
+     "label": "공동체 참여 정도",
+     "left": "전체 마을",
+     "right": "가족 중심"
     }
    ]
   },
-  "recap": "파마디하나는 조상과 가족을 잇는 전통 의식입니다.",
+  "recap": "파마디하나는 조상을 새 천으로 감싸며 가족 유대를 확인하는 전통 의식입니다.",
   "broll": [
    "traditional Malagasy ceremony",
    "family gathering dance",
-   "ancestral burial site"
+   "handwoven burial cloth"
   ],
   "verify": {
-   "status": "skipped",
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 4,
    "notes": [
-    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
-   ]
+    "[unsupported] 8번 문장: Comparative claim about contrast with South American/European rites is vague and not verifiable",
+    "[unsupported] 10번 문장: Generalization about ritual frequency in Madagascar vs. Spain lacks evidence",
+    "[unsupported] 11번 문장: Broad cultural generalizations about ancestor concepts are not substantiated",
+    "[unsupported] 12번 문장: Comparative claim about community participation levels is unverified"
+   ],
+   "model": "openai/gpt-oss-120b"
   },
-  "sig": "842dde7a3851",
+  "sig": "82eda3e9935f",
   "model": "openai/gpt-oss-120b",
-  "created": "2026-10-27 23:11"
+  "created": "2026-10-29 19:16"
  },
  "113": {
   "narration": "부탄에서는 학교와 관공서에 전통 복장을 입는 모습을 흔히 볼 수 있습니다. 남성은 ‘고’라 부르는 무릎 길이 포를 허리띠 ‘케라’로 맨다. 여성은 ‘키라’라 불리는 긴 천을 몸에 두르고 고정합니다. 1980년대 후반부터 강화된 ‘드립람 남자’ 예법에 따라 모든 시민이 교육·행정·종교·공식 행사에서 전통 복장을 착용하도록 요구받았습니다. 고의 허리 부분은 주머니처럼 활용돼 작은 물건을 넣을 수 있습니다. 키라는 색과 무늬가 다양해 지역마다 차이를 보여줍니다. 외국인 관광객은 일상에서 강제되지 않지만, 사원이나 정부 건물 등 공식 장소에서는 깔끔한 복장을 권장합니다. 이러한 제도는 부탄이 외부 문화 충격을 최소화하고 고유 정체성을 보존하려는 노력의 일환입니다. 다른 나라에서는 전통 의상이 일상 복장보다 행사용으로만 제한되는 경우가 많아, 부탄만큼 일상에 스며든 사례는 드뭅니다. 전통 복장은 부탄인의 자부심을 나타내는 살아있는 문화 유산입니다. 오늘도 거리와 교실에서 고와 키라가 살아 숨 쉬고 있습니다.",
@@ -3285,5 +3296,256 @@
   "sig": "744d02f1f264",
   "model": "openai/gpt-oss-120b",
   "created": "2026-10-27 23:11"
+ },
+ "44": {
+  "narration": "여름밤에 불꽃을 뛰어넘는 라트비아 사람들을 보셨나요? 라트비아의 ‘야니’는 6월 23~24일, 한여름을 맞아 열리는 전통 축제입니다. 고대부터 태양신을 기리며 시작된 이 행사는, 오크잎과 야생화로 만든 화관을 쓰고 모닥불 주변에 모여 노래와 춤을 추는 것이 핵심이죠. 특히 불을 뛰어넘는 의식은 행운과 건강을 부른다고 믿어, 연인들이 손을 잡고 뛰면 사랑이 더욱 깊어진다고 전해집니다. 축제 기간엔 ‘야니 치즈’라 불리는 신맛 나는 산유제품을 곁들인 식탁이 빠지지 않으며, 이는 라트비아인에게 여름의 풍요를 상징합니다. 북유럽의 다른 미드섬머와 달리 라트비아는 화관 제작과 불놀이에 더 큰 비중을 두고, 지역마다 불꽃을 높게 쌓아 올리는 풍경이 다채롭습니다. 이런 전통은 도시에서도 이어져, 젊은 세대가 SNS에 사진을 올리며 현대와 전통이 공존하고 있습니다. 불을 뛰어넘으며 소원을 비는 순간, 라트비아인들은 자연과 인간이 하나 되는 느낌을 즐깁니다. 이제 콜롬비아의 열정적인 카니발 이야기를 만나볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "여름밤에 불꽃을 뛰어넘는 라트"
+   },
+   {
+    "sentence": 2,
+    "text": "야니(Jāņi)"
+   },
+   {
+    "sentence": 4,
+    "text": "불을 뛰어넘는 의식"
+   },
+   {
+    "sentence": 5,
+    "text": "야니 치즈"
+   },
+   {
+    "sentence": 7,
+    "text": "전통과 현대의 공존"
+   }
+  ],
+  "compare": {
+   "title": "라트비아 vs 콜롬비아",
+   "left": "라트비아",
+   "right": "콜롬비아",
+   "rows": [
+    {
+     "label": "주요 의식",
+     "left": "불 뛰어넘기",
+     "right": "춤과 퍼레이드"
+    },
+    {
+     "label": "전통 음식",
+     "left": "야니 치즈",
+     "right": "아레파와 고기"
+    }
+   ]
+  },
+  "recap": "라트비아 야니는 불을 뛰어넘어 행운을 부르는 여름 전통 축제입니다.",
+  "broll": [
+   "Latvian midsummer bonfire",
+   "people jumping over fire",
+   "traditional Latvian flower crown"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 0,
+   "removed_rows": 1,
+   "unsupported": 3,
+   "notes": [
+    "[unsupported] 3번 문장: Specific mention of oak‑leaf crowns is not documented; crowns are generally made of flowers",
+    "[unsupported] 6번 문장: Claim of greater emphasis compared to other Nordic midsummers and high fire stacks lacks evidence",
+    "[unsupported] 7번 문장: Modern urban practice on social media is not verifiable from reliable sources",
+    "[contradicted] 10번 문장: Jāņi occurs late June (23‑24), not early‑mid June"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "a9518c144309",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-29 19:15"
+ },
+ "69": {
+  "narration": "매주 일요일, 콜롬비아 거리엔 차가 사라집니다. 보고타를 비롯한 여러 도시가 새벽부터 120km가 넘는 도로를 자전거와 보행자 전용으로 바꾸죠. 이 전통은 1970년대 초에 시작돼, 오늘날엔 200만 명이 넘는 시민이 참여합니다. 사람들은 자전거를 타고, 조깅을 하며, 아이들과 함께 길을 누빕니다. 거리 한가운데서는 플래시몹 댄스와 라이브 음악이 동시에 펼쳐져, 평범한 차도는 즉석 문화 축제로 변신합니다. 이런 열린 거리 문화는 교통 혼잡을 줄이고, 대기 오염을 낮추는 효과도 있습니다. 시민들은 차 대신 걸음과 페달을 선택하면서 건강과 공동체 의식을 동시에 키우죠. 콜롬비아의 사이클로비아는 도시 계획에 사람 중심을 넣은 사례로, 자동차 중심의 도심과는 확연히 다른 풍경을 보여줍니다. 다음엔 리투아니아의 독특한 문화 행사를 만나보세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "매주 일요일, 콜롬비아 거리엔"
+   },
+   {
+    "sentence": 2,
+    "text": "120km가 넘는 도로를 자전"
+   },
+   {
+    "sentence": 4,
+    "text": "플래시몹 댄스와 라이브 음악"
+   },
+   {
+    "sentence": 6,
+    "text": "대기 오염을 낮추는 효과"
+   }
+  ],
+  "compare": {
+   "title": "콜롬비아 vs 리투아니아",
+   "left": "콜롬비아",
+   "right": "리투아니아",
+   "rows": [
+    {
+     "label": "주요 행사",
+     "left": "주간 차단 거리",
+     "right": "계절 축제"
+    },
+    {
+     "label": "참여 규모",
+     "left": "수백만 명",
+     "right": "수만 명"
+    },
+    {
+     "label": "교통 정책",
+     "left": "차량 제한 강도 높음",
+     "right": "차량 제한 낮음"
+    }
+   ]
+  },
+  "recap": "콜롬비아의 일요일, 차 없는 거리와 문화 축제",
+  "broll": [
+   "Sunday street cyclists",
+   "urban open streets festival",
+   "people dancing in city"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 4,
+   "notes": [
+    "[unsupported] 5번 문장: No widely documented evidence that flash‑mob dances and live music are a regular feature across the routes.",
+    "[unsupported] 10번 문장: Specific claim about Lithuania’s event type lacks corroborating evidence.",
+    "[unsupported] 11번 문장: Participation numbers for Lithuania are not verified; Colombian figure is correct but the comparative claim is unsubstantiated.",
+    "[unsupported] 12번 문장: Comparative statement about traffic‑restriction intensity in Colombia vs. Lithuania is not documented."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "56efb91db50b",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-29 19:15"
+ },
+ "87": {
+  "narration": "겨울을 물리치기 위해 악마에게 팬케이크를 던진다면 믿으시겠어요? 리투아니아에서는 사순절 전 화요일, ‘우즈가베네스’라는 오래된 이교도 축제가 열립니다. 사람들은 검은 악마 가면을 쓰고, 버드나무 가지를 휘두르며 거리로 나섭니다. 빌뉴스에서는 ‘우즈가베네스 왕’이 선출돼 퍼레이드의 중심이 됩니다. 이 전통은 고대 풍작 의식과 기독교 사순절 전야의 결합으로, 지역마다 악마 복장과 춤, 노래가 조금씩 다르게 전해집니다. 주변 국가와 비교하면, 라트비아는 비슷한 시기에 ‘라다’라는 불꽃 축제를 열지만, 악마와 팬케이크를 결합한 형태는 리투아니아만의 독특함이라 할 수 있습니다. 이렇게 겨울을 물리치는 리투아니아 사람들의 열망은 오늘도 이어지고 있습니다. 다음엔 터키의 색다른 전통을 살펴볼게요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "악마에게 팬케이크를 던진다"
+   },
+   {
+    "sentence": 3,
+    "text": "우즈가베네스"
+   },
+   {
+    "sentence": 6,
+    "text": "라트비아 라다"
+   }
+  ],
+  "compare": {
+   "title": "리투아니아 vs 라트비아",
+   "left": "리투아니아",
+   "right": "라트비아",
+   "rows": [
+    {
+     "label": "축제 주제",
+     "left": "악마·팬케이크",
+     "right": "불꽃·음악"
+    },
+    {
+     "label": "왕 선정",
+     "left": "우즈가베네스 왕",
+     "right": "없음"
+    }
+   ]
+  },
+  "recap": "우즈가베네스, 팬케이크와 악마가 겨울을 몰아낸다",
+  "broll": [
+   "Lithuanian street parade",
+   "people wearing masks",
+   "thin pancakes being tossed"
+  ],
+  "verify": {
+   "status": "fixed",
+   "removed_sentences": 3,
+   "removed_rows": 1,
+   "unsupported": 5,
+   "notes": [
+    "[unsupported] 3번 문장: Mask wearing is true, but swinging willow branches is not documented as a typical practice.",
+    "[contradicted] 4번 문장: The key food is pancakes (blynai), not a dish called “barenes”.",
+    "[contradicted] 5번 문장: People eat pancakes; throwing them is not a known tradition.",
+    "[unsupported] 6번 문장: Some local events may name a “Užgavėnės king,” but it is not a universally established feature in Vilnius.",
+    "[contradicted] 7번 문장: No evidence of a crown being replaced by a large “barenes” on the head.",
+    "[unsupported] 9번 문장: Latvia’s comparable festivals are not called “Lada,” and the claim about uniqueness lacks verification.",
+    "[unsupported] 12번 문장: While Lithuania’s theme fits, the description of Latvia’s festival theme is not verified.",
+    "[contradicted] 13번 문장: Lithuanian main food is pancakes, not “barenes”; Latvia does have traditional foods."
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "3706f2be6a62",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-10-29 19:15"
+ },
+ "117": {
+  "narration": "코르도바의 골목길을 걷다 보면, 벽을 따라 피어나는 화려한 꽃들이 눈길을 사로잡습니다. 이곳의 ‘파티오스 데 코르도바’는 1921년부터 매년 5월 초에 열리는 마당 경연입니다. 주민들은 오래된 건물의 전통적 구조를 살리면서, 화분, 분수, 전통 장식을 더해 마당을 예술작품으로 변신시킵니다. 방문객은 무료로 내부를 둘러볼 수 있고, 심사위원은 꽃의 다양성, 관리 상태, 건축 보존, 물 활용, 이웃 협력 등을 종합적으로 평가합니다. 2012년 유네스코 무형문화유산에 등재된 이 축제는 코르도바의 여름을 한층 더 빛나게 합니다. 마당을 꾸미는 과정은 세대 간의 지혜가 이어지는 장면이기도 하며, 지역 공동체가 서로 돕는 모습이 돋보입니다. 코르도바의 좁은 골목과 화사한 마당이 어우러진 5월은 스페인에서 가장 아름다운 축제 시즌 중 하나로 꼽힙니다. 이처럼 작은 공간이 모여 만들어내는 화려함은, 우리 일상에서도 작은 노력이 큰 변화를 이끌 수 있음을 상기시켜 줍니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "코르도바 골목"
+   },
+   {
+    "sentence": 3,
+    "text": "파티오스 데 코르도바"
+   },
+   {
+    "sentence": 5,
+    "text": "유네스코 무형문화유산"
+   }
+  ],
+  "compare": {
+   "title": "스페인 vs 터키",
+   "left": "스페인",
+   "right": "터키",
+   "rows": [
+    {
+     "label": "축제 기간",
+     "left": "5월 초~중순",
+     "right": "여름 초"
+    },
+    {
+     "label": "참가 방식",
+     "left": "무료 관람",
+     "right": "입장료 부과"
+    },
+    {
+     "label": "문화적 요소",
+     "left": "모스크와 카페",
+     "right": "오토만 궁전"
+    }
+   ]
+  },
+  "recap": "코르도바 마당이 전하는 작은 예술의 힘",
+  "broll": [
+   "Spanish courtyard flowers",
+   "Mediterranean balcony garden",
+   "Historic city alleyway"
+  ],
+  "verify": {
+   "status": "ok",
+   "removed_sentences": 0,
+   "removed_rows": 0,
+   "unsupported": 5,
+   "notes": [
+    "[unsupported] 1번 문장: No evidence provided for the described flower displays in alleys",
+    "[unsupported] 4번 문장: Free entry is true, but specific judging criteria (water use, neighbor cooperation) are not documented",
+    "[unsupported] 9번 문장: Spanish dates match evidence; Turkish timing lacks verification",
+    "[unsupported] 10번 문장: Spanish free entry is correct; Turkish admission fee claim unverified",
+    "[unsupported] 11번 문장: No evidence that the festival’s cultural elements include a mosque and café; Turkish claim also unverified"
+   ],
+   "model": "openai/gpt-oss-120b"
+  },
+  "sig": "d3f85af8d348",
+  "model": "openai/gpt-oss-20b",
+  "created": "2026-10-29 19:16"
  }
 }
