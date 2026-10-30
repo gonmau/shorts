@@ -27561,7 +27561,149 @@
     "country_before_fix": "싱가포르",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries_done": [
+      "miso soup bowl",
+      "Japanese miso soup serving",
+      "rice mixed miso soup",
+      "Japanese seasonal side dishes",
+      "sashimi with tempura",
+      "traditional washoku meal",
+      "miso soup starter"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "eak_kkk",
+        "page": "https://pixabay.com/photos/soup-pot-miso-soup-soup-1090137/",
+        "id": 1090137
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tianya1223",
+        "page": "https://pixabay.com/photos/rice-smoked-duck-chopsticks-duck-6877896/",
+        "id": 6877896
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "naturalogy",
+        "page": "https://pixabay.com/photos/japanese-meal-japanese-food-sashimi-1604865/",
+        "id": 1604865
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "HirokazuTouwaku",
+        "page": "https://pixabay.com/photos/new-year-dishes-japanese-food-7709228/",
+        "id": 7709228
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Amatheus",
+        "page": "https://pixabay.com/photos/rolls-sushi-food-restaurant-8735316/",
+        "id": 8735316
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "MichaelMaggs",
+        "license": "CC BY-SA 3.0",
+        "title": "Breakfast at Tamahan Ryokan, Kyoto.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Breakfast_at_Tamahan_Ryokan,_Kyoto.jpg",
+        "id": "c:2870323"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/soup-carrot-soup-carrots-5133674/",
+        "id": 5133674
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3123,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c7f235494cec",
+        "at": "2026-10-30 14:52",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2571,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5119fcbcbcb5",
+        "at": "2026-10-30 14:52",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2447,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ebd8b0489c76",
+        "at": "2026-10-30 14:52",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3113,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c70b2c8f6a1a",
+        "at": "2026-10-30 14:52",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2303,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7c14da220d79",
+        "at": "2026-10-30 14:52",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3306,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eb3f730b40a2",
+        "at": "2026-10-30 14:52",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2563,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f0b38104fb2b",
+        "at": "2026-10-30 14:52",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -27787,7 +27929,7 @@
     "verify_note": "Vijayadashami",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:13.950910+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "narration": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까요? 바로 다사라, 즉 Vijayadashami가 열리는 10번째 날이기 때문입니다. 달이 차오르는 10번째 밤, 인도와 네팔에서는 두르가 푸자와 나바라트리의 마지막을 기념합니다. 이때는 제단에 꽃과 과일을 올리고, 평화와 풍요를 기원합니다. 일부 지역에서는 이날을 다르게 기념하는 경우도 있습니다. 그곳에서는 전통 연극이나 무용, 그리고 등불을 밝히며 신에게 감사하는 의식이 진행됩니다. 무기를 내려놓는 행위는 없고, 대신 풍성한 음식과 춤으로 승리를 즐깁니다. 그 지역에서는 평화를 기원하며 무기를 내려놓는 전통이 있어, ‘왜 무기를 내려놓을까?’라는 질문이 종종 떠오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -28546,7 +28688,7 @@
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
     "status": "scripted",
-    "narration": "만날 때도 “샬롬.” 헤어질 때도 “샬롬.” 같은 말을 쓰는데, 어떻게 둘 다 통할까요? 히브리어 ‘샬롬’은 ‘평화’를 뜻하면서, 인사와 작별 인사로도 쓰이는 말입니다. 누군가를 만나 반가움을 전할 때도, 대화를 마치고 돌아설 때도 사용할 수 있죠. 그런데 아랍어의 ‘살람’과도 소리가 조금 닮지 않았나요? 우연만은 아닙니다. 두 단어는 언어적으로 같은 뿌리를 공유해요. 서로 다른 언어의 인사 속에 ‘평화’라는 뜻이 나란히 남아 있는 겁니다. 다음에 “샬롬”이라는 말을 들으면, 단순한 “안녕” 뒤에 담긴 의미도 함께 들릴지 모르겠네요.",
+    "narration": "만날 때도 “샬롬.” 헤어질 때도 “샬롬.” 같은 말을 쓰는데, 어떻게 둘 다 통할까요? 히브리어 ‘샬롬’은 ‘평화’를 뜻하면서, 인사와 작별 인사로도 쓰이는 말입니다. 누군가를 만나 반가움을 전할 때도. 대화를 마치고 돌아설 때도 사용할 수 있죠. 그런데 아랍어의 ‘살람’과도 소리가 조금 닮지 않았나요? 우연만은 아닙니다. 두 단어는 언어적으로 같은 뿌리를 공유해요. 서로 다른 언어의 인사 속에 ‘평화’라는 뜻이 나란히 남아 있는 겁니다. 다음에 “샬롬”이라는 말을 들으면, 단순한 “안녕” 뒤에 담긴 의미도 함께 들릴지 모르겠네요.",
     "cross_checked": true,
     "cross_sources": 3,
     "cross_model": "openai/gpt-oss-20b",
