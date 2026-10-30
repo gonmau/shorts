@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 22:39:17 (KST) · 기록 645건 · 소재 389개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 22:51:05 (KST) · 기록 646건 · 소재 389개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,6 +12,7 @@
 | approve | 10 | 0 | 1초 |
 | build_video | 18 | 0 | 3시간 10분 |
 | cuts | 2 | 0 | 10초 |
+| discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
 | generate_culture_facts | 5 | 0 | 7분 8초 |
@@ -32,6 +33,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:50 | PC | discover_sns | discover_sns.py --subs todayilearned,travel,Damnthatsinteresting --time week --limit 15 --mastodon-tags culture,Japan --curate | ✅ | 1분 22초 |  |
 | 22:39 | PC | generate_culture_facts | generate_culture_facts.py --count 10 | ✅ | 2분 9초 |  |
 | 22:30 | PC | upload_to_youtube | upload_to_youtube.py --indexes 338,332 --daily-max 2 | ✅ | 0초 |  |
 | 22:08 | PC | 코드업데이트 | gonmau/shorts: 3개 (local_ui.py, sync_db.py, upload_to_youtube.py) | ✅ |  |  |
