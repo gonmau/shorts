@@ -332,7 +332,7 @@
 330,독일,사회 규범은 행동을 좌우한다,video_done,2026-10-26T10:19:34,manual,"[{'verdict': 'bad', ",O,FA1w0ceZ8nI,
 331,네덜란드,Durga Puja(두르가 푸자)의 유네스코 등재,video_done,2026-10-26T10:19:34,fixed,"[{'verdict': 'ok', '",O,,
 332,포르투갈,Careto(카레토) 전통의 겨울 종결 의식,video_done,2026-10-26T10:19:34,fixed,"[{'verdict': 'ok', '",O,,
-333,에콰도르,"뺨에 입맞춤, 인사 방식이 나라별로 다르다",video_done,2026-10-26T10:20:15,manual,"[{'verdict': 'ok', '",O,,
+333,에콰도르,"뺨에 입맞춤, 인사 방식이 나라별로 다르다",rejected,2026-10-26T10:20:15,manual,"[{'verdict': 'ok', '",O,,
 334,이집트,사우디아라비아( Saudi Arabia )의 법체계는 성경과 전통에 근거한 무코드 샤리아 적용,rejected,2026-10-28T10:36:27,,,,,
 335,탄자니아,탄자니아( Tanzania ) 마쿤두치( Makunduchi )에 동독(East Germany) 지원으로 세워진 아파트,video_done,2026-10-28T10:36:27,manual,"[{'verdict': 'bad', ",O,,
 336,미국,미국( United States )의 외설법은 연방·주 차원에서 포르노와 아동 성범죄를 규제,rejected,2026-10-28T10:36:27,,,,,
