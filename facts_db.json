@@ -30298,7 +30298,7 @@
     "verify_note": "Durga Puja",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:34.795014+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "며칠 동안 도시 전체가 거대한 전시장으로 변한다면요? 인도 콜카타에서는 ‘두르가 푸자’가 다가오면 거리 곳곳에 여신상과 임시 축제 공간이 들어섭니다. 사람들은 그 사이를 오가며 구경하고, 함께 기도하고, 음식을 나누죠. 그런데 이 장면은 축제 당일에 갑자기 만들어지는 게 아닙니다. 장인들이 흙으로 상을 빚고, 예술가와 주민들이 공간을 꾸미며 오랫동안 준비합니다. 2021년, ‘콜카타의 두르가 푸자’는 유네스코 인류무형문화유산 대표목록에 올랐습니다. 눈길을 끄는 건 화려한 장식이지만, 그 축제를 이어가는 건 사람들의 손과 협력이에요. 이곳에서는 완성된 작품만 보는 게 아닙니다. 한 도시가 함께 축제를 만들어내는 모습을 보게 되는 거죠.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -30559,7 +30559,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0331_네덜란드_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0331_네덜란드_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0331_네덜란드.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0331_네덜란드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "Careto(카레토) 전통의 겨울 종결 의식",
@@ -30574,7 +30577,7 @@
     "verify_note": "Careto",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:34.795014+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "골목 끝에서 방울 소리가 들립니다. 곧이어 알록달록한 옷을 입은 가면들이 뛰어나오죠. 포르투갈 포덴스 마을의 카니발에 등장하는 ‘카레토’입니다. 옷을 뒤덮은 건 깃털이 아니라 색색의 털실 장식. 허리의 방울은 몸을 움직일 때마다 요란하게 울립니다. 가면 뒤에 얼굴을 숨긴 사람들은 거리를 뛰고, 춤추고, 사람들과 장난스럽게 어울려요. 겨울의 끝과 봄의 시작을 기념하는 이 축제에서는 익숙한 이웃도 잠시 낯선 존재가 됩니다. 평소라면 조용히 지나쳤을 골목이, 이날만큼은 소리와 움직임으로 가득 차는 거죠. 가면 하나를 썼을 뿐인데, 마을의 분위기까지 완전히 달라집니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -30818,7 +30821,14 @@
         "scene": 9,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0332_포르투갈_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0332_포르투갈_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "뺨에 입맞춤, 인사 방식이 나라별로 다르다",
@@ -30833,7 +30843,7 @@
     "verify_note": "Cheek kissing",
     "confidence": "source",
     "created_at": "2026-10-26T10:20:15.814439+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "에콰도르에서는 아는 사람을 만났을 때 뺨에 입맞춤하며 인사하기도 합니다. 하지만 모든 사람에게 똑같이 인사하는 것은 아닙니다. 처음 만난 사람에게는 악수를 하는 경우가 많습니다. 친분이 있는 여성들 사이에서는 뺨에 가볍게 입맞춤하는 인사도 볼 수 있습니다. 가까운 친구나 가족이라면 포옹을 곁들이기도 합니다. 이런 인사는 단순히 반가움을 표현하는 행동이 아닙니다. 상대방과 얼마나 가까운 관계인지 보여주는 사회적 신호이기도 합니다. 물론 지역과 개인의 성향에 따라 차이가 있습니다. 나이와 성별, 친밀도에 따라서도 인사 방식이 달라질 수 있습니다. 다른 나라에서 익숙한 인사법이 에콰도르에서는 조금 다르게 받아들여질 수도 있습니다. 그래서 현지 사람들의 행동을 살펴보는 것이 좋습니다. 상대방이 먼저 어떤 방식으로 인사하는지 확인하면 자연스럽게 대응할 수 있습니다. 같은 반가움도 표현하는 방법은 나라마다 다릅니다. 인사 한 번에도 그 사회의 관계 문화가 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -31153,7 +31163,15 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0333_에콰도르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0333_에콰도르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0333_에콰도르.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0333_에콰도르.mp4",
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기 소재 구림"
   },
   {
     "topic": "사우디아라비아( Saudi Arabia )의 법체계는 성경과 전통에 근거한 무코드 샤리아 적용",
@@ -31184,7 +31202,7 @@
     "verify_note": "Makunduchi",
     "confidence": "source",
     "created_at": "2026-10-28T10:36:27.616859+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "아프리카의 섬에 동독식 아파트가 들어섰다면 믿으시겠나요? 탄자니아의 잔지바르에는 동독의 지원으로 지어진 대형 아파트 단지가 있습니다. 특히 마쿤두치의 신시가지에는 1970년대에 세워진 아파트들이 있습니다. 당시 동독은 잔지바르의 주거 환경 개선을 지원했습니다. 사회주의 국가 사이의 협력이 건축으로 남은 사례입니다. 콘크리트 구조의 아파트는 주변의 전통적인 주택과 다른 모습을 보여줍니다. 익숙한 아프리카의 마을 풍경 속에 유럽식 공동주택이 들어선 것입니다. 잔지바르의 건축은 단순히 현지의 기후와 재료만으로 만들어진 것이 아닙니다. 당시의 정치적 관계와 국제 원조도 도시의 모습을 바꾸었습니다. 이런 건축물은 시간이 지나면서 지역 주민들의 일상적인 주거 공간이 되었습니다. 해외에서 시작된 건축 방식도 현지 생활에 맞게 사용되며 새로운 풍경을 만들어 냅니다. 건물 하나에도 두 지역의 역사와 관계가 함께 남을 수 있습니다.",
     "fact_verifiability": "user",
@@ -31516,7 +31534,14 @@
           "c:87695545"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0335_탄자니아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0335_탄자니아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0335_탄자니아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0335_탄자니아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "미국( United States )의 외설법은 연방·주 차원에서 포르노와 아동 성범죄를 규제",
@@ -31547,7 +31572,7 @@
     "verify_note": "Religion",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "종교란 정확히 무엇일까요? 의외로 학자들 사이에서도 하나의 정의로 합의되지 않았습니다. 종교를 초월적인 존재에 대한 믿음으로 설명하는 학자들이 있습니다. 반면 공동체의 의식과 의례, 상징을 중심으로 설명하기도 합니다. 또 다른 관점에서는 종교가 사회에 어떤 역할을 하는지 살펴봅니다. 사람들에게 소속감을 주고 삶의 의미를 제공한다는 설명입니다. 이처럼 종교를 바라보는 기준은 연구 분야에 따라 달라집니다. 인류학자는 문화와 공동체의 관습을 살펴볼 수 있습니다. 사회학자는 종교와 사회 제도의 관계에 주목합니다. 철학자는 신앙과 존재의 의미를 질문하기도 합니다. 그렇다면 쿠바의 종교 문화를 이해하려면 무엇부터 살펴봐야 할까요? 쿠바에는 가톨릭과 아프리카계 전통 종교 등 다양한 종교적 흐름이 존재합니다. 특히 산테리아는 아프리카계 요루바 전통과 가톨릭 요소가 결합된 종교로 알려져 있습니다. 종교는 단순한 믿음 하나로 설명하기 어렵습니다. 사람들의 역사와 생활까지 함께 살펴봐야 하기 때문입니다.",
     "fact_verifiability": "user",
@@ -31814,7 +31839,14 @@
           "c:87189308"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0337_쿠바_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0337_쿠바_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0337_쿠바.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0337_쿠바.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "파스카 빵은 아람어에서 유래",
@@ -31829,7 +31861,7 @@
     "verify_note": "Paska (bread)",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "부활절에 먹는 빵의 이름에 아람어가 숨어 있다는 사실, 알고 계셨나요? 조지아를 비롯한 여러 동유럽 지역에는 부활절에 특별한 빵을 준비하는 문화가 있습니다. 파스카 또는 파스카와 비슷한 이름으로 불리는 빵입니다. 달걀을 넣거나 반죽을 장식하는 등 지역마다 만드는 방식이 다릅니다. 부활절 식탁에서 중요한 음식으로 여겨지기도 합니다. 그런데 이 이름과 관련된 단어의 뿌리를 살펴보면 흥미로운 역사가 나타납니다. 그리스어 파스카는 아람어 파스하와 연결됩니다. 더 거슬러 올라가면 히브리어 페사흐와 이어집니다. 이는 유월절을 가리키는 말입니다. 기독교에서는 부활절을 뜻하는 이름으로 사용됩니다. 다만 조지아의 빵 이름이 아람어에서 직접 만들어졌다고 단정해서는 안 됩니다. 여러 언어를 거쳐 전해진 종교적 표현이기 때문입니다. 음식의 이름은 단순한 명칭이 아닙니다. 오랜 세월 사람과 종교, 언어가 교류한 흔적이기도 합니다.",
     "fact_verifiability": "user",
@@ -32131,7 +32163,14 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0338_조지아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0338_조지아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "로지 왕국은 라운다 제국에서 이주해 설립",
@@ -32454,7 +32493,11 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
