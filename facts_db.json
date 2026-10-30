@@ -24804,7 +24804,9 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0300_미국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0300_미국.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "TXyVQx46fzM",
+    "uploaded_at": "2026-10-30T20:06:49.873213+09:00"
   },
   {
     "topic": "과일박쥐, 괜찮은 별미?",
@@ -27666,7 +27668,7 @@
     "verify_note": "Thailand",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:24.633182+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "태국과 파푸아뉴기니는 바다를 사이에 두고 어떤 관계일까요? 두 나라는 모두 아시아와 태평양 지역에서 중요한 해양 국가입니다. 태국은 인도양과 연결되는 안다만해와 타이만을 접하고 있습니다. 파푸아뉴기니는 남태평양과 산호해에 면해 있습니다. 두 나라 모두 바다를 통한 무역과 어업이 중요한 역할을 합니다. 해상 경계는 단순히 지도에 그어진 선이 아닙니다. 어업권과 해저 자원, 선박의 이동과도 밀접하게 연결됩니다. 국가마다 바다를 이용하는 권리와 책임이 정해져 있기 때문입니다. 특히 배타적 경제수역은 영해와 다른 개념입니다. 해양 자원을 탐사하고 이용할 수 있는 권리를 정하는 제도입니다. 바다에서는 육지의 국경과는 다른 국제법이 작동합니다. 그런데 바다 위의 선 하나가 국가의 경제와 미래까지 바꿀 수 있다는 사실, 알고 계셨나요?",
     "fact_verifiability": "user",
@@ -27972,7 +27974,14 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0319_파푸아뉴기니_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0319_파푸아뉴기니_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0319_파푸아뉴기니.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0319_파푸아뉴기니.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
@@ -28308,7 +28317,7 @@
     "verify_note": "Japanese cuisine",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본식 밥상을 보면, 왜 음식이 작은 그릇에 나뉘어 나올까요? 밥 한 공기 옆에 국 한 그릇. 그리고 생선이나 채소로 만든 반찬들이 각각 자리를 잡습니다. 이런 상차림을 이해하는 열쇠가 ‘일즙삼채’예요. 밥과 절임을 기본으로 두고, 국 하나와 반찬 세 가지를 곁들이는 구성이죠. 이를테면 생선은 굽고, 채소는 조리고, 다른 반찬은 가볍게 무치는 식입니다. 한 끼 안에서 서로 다른 맛과 조리법을 만나는 거예요. 여기서 중요한 건 된장국이 밥보다 먼저 나오느냐가 아닙니다. 밥을 중심으로 무엇을 함께 먹느냐죠. 작은 그릇이 여럿 놓인 밥상. 그 안에는 한 끼를 구성하는 나름의 질서가 있습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -28598,7 +28607,14 @@
           "c:2870323"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0322_일본_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0322_일본_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0322_일본.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0322_일본.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -28613,7 +28629,7 @@
     "verify_note": "Nowruz",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:07.490952+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "우리에게 새해는 한겨울에 찾아오죠. 그런데 봄이 시작돼야 새해를 맞는 사람들도 있습니다. 이란을 비롯한 여러 지역에서 기념하는 ‘노루즈’입니다. 이름의 뜻부터 ‘새로운 날’이에요. 낮과 밤의 길이가 비슷해지는 춘분 무렵, 사람들은 봄과 함께 새해를 맞습니다. 가족이 모여 음식을 나누고, 이웃과 인사를 주고받으며 새로운 시작을 축하하죠. 3천 년 넘게 이어진 이 전통은 오늘날 여러 나라와 공동체에서 저마다의 모습으로 계속되고 있습니다. 달력의 숫자가 바뀌어서가 아니라, 주변 풍경이 다시 살아나기 시작해서 맞이하는 새해. 노루즈를 생각하면, “새봄”과 “새해”가 같은 말처럼 느껴집니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -28827,7 +28843,14 @@
           "c:2903446"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0323_이란_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0323_이란_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0323_이란.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0323_이란.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "아담 시옹올리, 9·11 직후 법무부 고문",
@@ -28923,7 +28946,7 @@
     "verify_note": "Funeral practices and burial customs in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "죽은 사람을 땅에 묻지 않고 절벽에 매달아 둔다면 믿어지시나요? 필리핀 북부 산악 지역의 사가다에서는 관을 절벽이나 동굴에 안치하는 장례 문화가 알려져 있습니다. 이곳의 칸카나이족을 포함한 이고로트 공동체와 관련된 전통입니다. 관은 높은 절벽의 바위틈이나 동굴 안에 놓입니다. 일부 관은 바위에 고정하거나 매달아 두기도 합니다. 이런 방식은 일반적인 땅속 매장과 상당히 다릅니다. 죽은 사람을 높은 곳에 모시는 이유에는 조상과 영혼에 관한 믿음이 담겨 있습니다. 시신을 태아와 비슷한 자세로 안치하는 사례도 있습니다. 생명이 시작된 모습으로 돌아간다는 상징으로 해석되기도 합니다. 다만 모든 부족이 같은 장례 방식을 사용하는 것은 아닙니다. 오늘날에는 현대식 묘지를 이용하는 주민도 많습니다. 절벽에 남은 작은 관들은 단순한 관광 풍경이 아닙니다. 한 공동체가 죽음과 조상을 바라보는 방식을 보여주는 흔적입니다.",
     "fact_verifiability": "user",
@@ -29259,7 +29282,14 @@
           "c:195598951"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0325_필리핀_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0325_필리핀_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0325_필리핀.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0325_필리핀.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "선례가 법정 판결을 좌우한다? 하지만…",
@@ -29274,7 +29304,7 @@
     "verify_note": "Precedent",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:10.659949+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "“예전에도 이렇게 판결했으니, 이번에도 똑같이 하세요.” 법정에서 이 말은 얼마나 힘이 있을까요? 비슷한 사건을 판단할 때 기준이 되는 과거 판결. 이걸 ‘선례’라고 합니다. 특히 영미법에서는 선례가 중요합니다. 누가 재판을 받느냐에 따라 법의 기준이 제멋대로 달라지면 곤란하니까요. 그런데 모든 옛 판결이 똑같은 힘을 갖는 건 아닙니다. 어떤 판결은 따라야 하는 기준이고, 어떤 판결은 판단에 도움을 주는 참고 자료에 가깝죠. 또 사건의 핵심 조건이 다르다면, 겉보기에 비슷해도 같은 결론이 나오지 않을 수 있습니다. 결국 판사가 따지는 건 단순히 “전에 어떻게 했지?”가 아닙니다. “이번에도 그 기준을 적용해야 할까?” 바로 그 질문인 거죠.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -29543,7 +29573,14 @@
           "c:4699341"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0326_케냐_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0326_케냐_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0326_케냐.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0326_케냐.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "다사라(Vijayadashami)의 10번째 날",
@@ -29558,7 +29595,7 @@
     "verify_note": "Vijayadashami",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:13.950910+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "10번째 날, 사람들은 왜 갑자기 무기를 내려놓을까요? 바로 다사라, 즉 Vijayadashami가 열리는 10번째 날이기 때문입니다. 달이 차오르는 10번째 밤, 인도와 네팔에서는 두르가 푸자와 나바라트리의 마지막을 기념합니다. 이때는 제단에 꽃과 과일을 올리고, 평화와 풍요를 기원합니다. 일부 지역에서는 이날을 다르게 기념하는 경우도 있습니다. 그곳에서는 전통 연극이나 무용, 그리고 등불을 밝히며 신에게 감사하는 의식이 진행됩니다. 무기를 내려놓는 행위는 없고, 대신 풍성한 음식과 춤으로 승리를 즐깁니다. 그 지역에서는 평화를 기원하며 무기를 내려놓는 전통이 있어, ‘왜 무기를 내려놓을까?’라는 질문이 종종 떠오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -29778,7 +29815,14 @@
           "c:87549794"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0327_인도_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0327_인도_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0327_인도.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0327_인도.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "퀸세아네라(Quinceañera)의 15번째 생일",
@@ -29793,7 +29837,7 @@
     "verify_note": "Quinceañera",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:13.950910+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "열다섯 번째 생일을 결혼식처럼 성대하게 치르는 문화가 있습니다. 바로 라틴아메리카의 퀸세아네라입니다. 스페인어로 열다섯 살 소녀를 뜻하는 말이기도 합니다. 이 행사는 소녀의 열다섯 번째 생일을 기념합니다. 단순히 나이가 한 살 더 많아지는 날이 아닙니다. 어린 시절에서 성인기로 넘어가는 상징적인 순간입니다. 콜롬비아를 비롯한 여러 라틴아메리카 지역에서 열립니다. 가족과 친척, 친구들이 함께 모여 축하합니다. 화려한 드레스와 왕관을 착용하기도 합니다. 성당에서 감사 미사를 드린 뒤 파티를 여는 경우도 있습니다. 축하 행사에서는 음악과 춤이 빠지지 않습니다. 아버지와 딸이 춤을 추거나 가족과 함께 특별한 순간을 나누기도 합니다. 지역과 가정에 따라 준비 방식은 크게 달라집니다. 어떤 집은 소박하게 식사를 나누고, 어떤 집은 대규모 연회를 엽니다. 중요한 것은 화려한 의상이 아닙니다. 가족과 공동체가 한 사람의 새로운 출발을 함께 축하한다는 점입니다.",
     "fact_verifiability": "user",
@@ -29881,7 +29925,14 @@
         "id": 4120835
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0328_콜롬비아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0328_콜롬비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0328_콜롬비아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0328_콜롬비아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "나치 경례(Nazi salute)의 손동작",
@@ -29912,7 +29963,7 @@
     "verify_note": "Social norm",
     "confidence": "source",
     "created_at": "2026-10-26T10:19:34.795014+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "사람들은 법으로 금지하지 않아도 왜 특정한 행동을 피할까요? 독일을 비롯한 모든 사회에는 글로 쓰이지 않은 규칙이 있습니다. 바로 사회 규범입니다. 공공장소에서 지켜야 할 예절부터 일상적인 대화 방식까지 다양합니다. 다른 사람과 대화할 때 차례를 지키는 행동도 여기에 포함됩니다. 공공장소에서 지나치게 큰 소리를 내지 않는 것도 하나의 규범입니다. 이런 규칙은 법률과는 다릅니다. 어겼다고 반드시 경찰에 체포되는 것은 아닙니다. 하지만 주변 사람들의 시선이나 비판을 받을 수 있습니다. 사회 규범은 가족과 학교, 직장과 지역사회에서 배워집니다. 시간이 흐르면 새로운 규범이 생기기도 합니다. 과거에는 자연스러웠던 행동이 지금은 부적절하게 받아들여질 수도 있습니다. 반대로 예전에는 낯설었던 행동이 일상으로 자리 잡기도 합니다. 같은 행동이라도 나라와 세대에 따라 평가가 달라집니다. 우리가 당연하게 여기는 행동도 사실은 사회가 함께 만들어 온 약속일 수 있습니다.",
     "fact_verifiability": "user",
@@ -30199,7 +30250,14 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0330_독일_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0330_독일_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0330_독일.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0330_독일.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "Durga Puja(두르가 푸자)의 유네스코 등재",
@@ -30471,7 +30529,11 @@
           "c:82935791"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0331_네덜란드_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0331_네덜란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "Careto(카레토) 전통의 겨울 종결 의식",
