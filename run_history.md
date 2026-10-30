@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 23:14:36 (KST) · 기록 647건 · 소재 401개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 23:19:07 (KST) · 기록 648건 · 소재 413개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -15,7 +15,7 @@
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
-| generate_culture_facts | 6 | 0 | 9분 14초 |
+| generate_culture_facts | 7 | 0 | 11분 45초 |
 | generate_script | 81 | 0 | 37분 5초 |
 | generate_tts | 21 | 0 | 8분 54초 |
 | image_check | 2 | 0 | 19초 |
@@ -33,6 +33,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 31초 |  |
 | 23:14 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 6초 |  |
 | 22:50 | PC | discover_sns | discover_sns.py --subs todayilearned,travel,Damnthatsinteresting --time week --limit 15 --mastodon-tags culture,Japan --curate | ✅ | 1분 22초 |  |
 | 22:39 | PC | generate_culture_facts | generate_culture_facts.py --count 10 | ✅ | 2분 9초 |  |
