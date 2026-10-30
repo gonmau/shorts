@@ -1649,10 +1649,14 @@ with TL:
             st.caption(f"선택한 키워드({', '.join(_kws)})에 맞는 후보: **{len(_hit)}개** " + ("→ " + ", ".join(f"{i_} {str(_fdb[i_].get('country', ''))[:10]}" for i_ in _hit[:12]) + (" …" if len(_hit) > 12 else "") if _hit else "(없음: 키워드를 바꾸세요)"))
     lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
     ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
+    lx1, lx2 = st.columns(2)
+    lf_exc = lx1.text_input("🚫 제외할 번호 (auto/manual 공통, 예: 112,115)", key="lf_exc", help="자동으로 뽑힌 소재 중 원치 않는 번호를 빼고 그 자리는 다음 후보로 채웁니다")
+    lf_add = lx2.text_input("➕ 꼭 넣을 번호 (예: 20,21)", key="lf_add", help="자동 개수에 포함되어 목록 끝에 붙습니다. 대본이 있고 폐기되지 않은 소재만 가능 (이미 롱폼에 쓴 소재도 넣을 수 있음)")
     lf_arr = st.checkbox("🔀 순서 자동 배치 (맨 앞에 가장 재밌는 소재, 중간에 흐름 유지용, 분야·나라가 이어지지 않게)", lm.startswith("auto"), key=f"lf_arr_{'a' if lm.startswith('auto') else 'm'}",
                          help="auto 기본 켜짐 / manual 기본 꺼짐(입력한 번호 순서 그대로). 켜면 manual도 번호 순서를 재배치하고, 끄면 auto도 번호순 그대로 씁니다. 순서는 ② 단계에서 직접 바꿀 수도 있습니다")
     sel_args = ["--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
                 "--count", str(int(lcount)), "--start", str(int(lstart))] \
+               + (["--exclude", lf_exc] if lf_exc.strip() else []) + (["--add", lf_add] if lf_add.strip() else []) \
                + (["--arrange"] if (lf_arr and not lm.startswith("auto")) else []) + (["--no-arrange"] if (not lf_arr and lm.startswith("auto")) else [])
     o1, o2, o3 = st.columns(3)
     lf_style = o1.selectbox("화면 스타일", ["rich (풀스크린·챕터카드·키워드·비교카드·인트로/요약)", "classic (예전: 오른쪽 흰 패널)"], key="lf_style")
@@ -1986,7 +1990,9 @@ with TL:
             for _p, _i in enumerate(_mem):
                 if not (0 <= _i < len(_dbl)):
                     continue
-                _rc = st.columns([10, 1, 1])
+                _rc = st.columns([10, 1, 1, 1])
+                if _rc[3].button("✖", key=f"lf_rm_{_i}", disabled=len(_mem) <= 1, help="이 소재를 롱폼에서 뺍니다"):
+                    _save_order([m_ for m_ in _mem if m_ != _i]); st.rerun()
                 _rc[0].markdown(f"**{_p + 1}.** [{_i}] {_dbl[_i].get('country', '')} — {str(_dbl[_i].get('topic', ''))[:44]}")
                 if _rc[1].button("⬆", key=f"lf_up_{_i}", disabled=_p == 0):
                     _mem[_p - 1], _mem[_p] = _mem[_p], _mem[_p - 1]
@@ -1994,6 +2000,21 @@ with TL:
                 if _rc[2].button("⬇", key=f"lf_dn_{_i}", disabled=_p == len(_mem) - 1):
                     _mem[_p + 1], _mem[_p] = _mem[_p], _mem[_p + 1]
                     _save_order(_mem); st.rerun()
+            _n1, _n2 = st.columns([3, 1])
+            _newn = _n1.text_input("➕ 소재 번호 추가 (예: 20 또는 20,21)", key="lf_addn")
+            if _n2.button("추가", key="lf_addn_btn"):
+                try:
+                    import build_longform as _BL
+                    _ad = [x for x in _BL.parse_indexes(_newn) if x not in _mem]
+                    _BL._check_add(_dbl, _ad)
+                    if _ad:
+                        _save_order(_mem + _ad); st.rerun()
+                    else:
+                        st.info("이미 목록에 있는 번호입니다.")
+                except SystemExit as _e:
+                    st.error(str(_e))
+                except Exception as _e:
+                    st.error(f"추가 실패: {type(_e).__name__}: {_e}")
             _a1, _a2 = st.columns(2)
             if _a1.button("🔀 재미 순서로 자동 배치", key="lf_arr_btn", help="맨 앞에 가장 재밌는 소재, 중간(약 60%)에 다음으로 강한 소재, 마지막에 그다음 소재. 유튜브 성과 데이터가 있으면 그걸, 없으면 훅 문장으로 판단합니다"):
                 try:

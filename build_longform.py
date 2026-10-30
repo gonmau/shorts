@@ -106,9 +106,20 @@ def used_indexes(lf_db):
     return {i for rec in lf_db for i in rec.get("members", [])}
 
 
-def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
+def _check_add(db, idxs):
+    for i in idxs:
+        if not (0 <= i < len(db)) or not str(db[i].get("narration", "")).strip():
+            raise SystemExit(f"{i}번 소재가 없거나 대본이 없습니다.")
+        if db[i].get("status") == "rejected":
+            raise SystemExit(f"{i}번은 폐기(rejected)된 소재입니다.")
+
+
+def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi, exclude=(), add=()):
+    """exclude: 자동/수동 선택 결과에서 빼고 싶은 번호, add: 꼭 넣고 싶은 번호(자동 선택 개수에 포함, 목록 끝에 추가)"""
+    exclude, add = {int(x) for x in exclude}, [int(x) for x in add]
+    _check_add(db, add)
     if mode == "manual":
-        idxs = parse_indexes(indexes)
+        idxs = [i for i in parse_indexes(indexes) if i not in exclude] + [i for i in add if i not in parse_indexes(indexes)]
         if not idxs:
             raise SystemExit("manual 모드는 번호(indexes)가 필요합니다. 예: 109,110,115-118")
         for i in idxs:
@@ -126,7 +137,8 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
     count = max(lo, min(hi, int(count)))
     used = used_indexes(lf_db)
     pool = [i for i, f in enumerate(db)
-            if i >= start and f.get("status") == "video_done" and str(f.get("narration", "")).strip() and i not in used]
+            if i >= start and f.get("status") == "video_done" and str(f.get("narration", "")).strip() and i not in used
+            and i not in exclude and i not in add]
     if theme and theme.strip():
         ts = [x.strip().lower() for x in re.split(r"[,;/|]", theme) if x.strip()]   # 쉼표로 여러 키워드: 하나라도 들어 있으면 후보
 
@@ -142,8 +154,9 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
             break
         chosen.append(i)
         total += s
-        if len(chosen) >= count:
+        if len(chosen) >= max(0, count - len(add)):
             break
+    chosen = chosen + add                       # 꼭 넣을 소재는 목록 끝에 (순서는 자동 배치나 ②에서 조정)
     if len(chosen) < lo:
         raise SystemExit(f"조건에 맞는 소재가 {len(chosen)}개뿐입니다 (최소 {lo}개 필요). "
                          f"영상이 끝나고 롱폼에 안 쓴 소재가 더 필요하거나 theme/start_index를 바꿔 주세요.")
@@ -966,6 +979,8 @@ def main():
     ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
+    ap.add_argument("--exclude", default="", help="자동/수동으로 고른 소재에서 뺄 번호 (예: 12,15)")
+    ap.add_argument("--add", default="", help="꼭 넣을 소재 번호 (예: 20,21). auto 개수에 포함되고 목록 끝에 붙습니다")
     ap.add_argument("--arrange", action="store_true", help="소재 순서를 흐름에 맞게 자동 배치 (맨 앞에 가장 재밌는 소재, 중간에 흐름 유지용, 분야/나라가 이어지지 않게). auto 모드는 기본으로 적용")
     ap.add_argument("--no-arrange", action="store_true", help="auto 모드에서도 번호순 그대로 쓴다")
     ap.add_argument("--relink", action="store_true", help="챕터 순서가 바뀐 뒤 마지막 연결 문장을 새 순서에 맞게 다시 쓴다 (순서가 바뀐 건 자동으로도 감지)")
@@ -994,7 +1009,7 @@ def main():
     if args.deep:
         return run_deep(args, db, lf_db)
     members = select_members(db, lf_db, args.mode, args.indexes, args.theme, args.count, args.start,
-                             args.min, args.max)
+                             args.min, args.max, exclude=parse_indexes(args.exclude), add=parse_indexes(args.add))
     if args.arrange or (args.mode == "auto" and not args.no_arrange and os.environ.get("LF_ARRANGE", "1") != "0"):
         _before = list(members)
         members = order_members(db, members)
