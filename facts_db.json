@@ -12838,7 +12838,7 @@
     "confidence": "high",
     "verify_note": "Baci ceremony Laos white thread ritual",
     "created_at": "2026-10-14T03:44:51.323816+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "라오스에서는 새끼에게 실을 묶어 행운을 부른다고 들어보셨나요?  \n출산이나 결혼 같은 중요한 순간마다 라오족과 일부 타이족이 ‘바시’ 의식을 합니다.  \n흰 실을 손목에 매어 영혼이 몸을 떠돌지 않게 하고, 복을 기원하는 것이죠.  \n보통 하루 정도 실을 유지하고, 시간이 지나면 자연스럽게 풀립니다.  \n특히 이 실을 그냥 버리기보다는 집 안에 걸어두는 경우가 많습니다.  \n그럼 가족 전체의 복을 지키는 작은 부적처럼 역할을 하게 되죠.  \n하지만 이 의식은 전통 라오식 종교를 따르는 라오족 및 일부 타이족 커뮤니티에서 주로 행해진다는 점, 기억해 주세요.  \n실 하나에 담긴 깊은 의미, 다시 한 번 생각해보게 됩니다.",
     "title_line1": "라오스 바시 의식",
     "title_line2": "실 하나에 행운?",
@@ -12926,7 +12926,8 @@
     ],
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0138_Laos.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Finland",
@@ -14705,7 +14706,7 @@
     "verify_note": "Ethiopian cuisine",
     "confidence": "source",
     "created_at": "2026-10-14T22:16:03.246663+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "에티오피아 사람들은 매주 수요일과 금요일에 금식한다는 사실, 믿기 힘드시죠? 에티오피아 식탁에서는 매운 고기와 채소를 듬뿍 넣은 와트(wat) 스튜를 큰 인제라(injera) 위에 얹어 먹는 것이 일상입니다. 인제라는 직경이 약 50 센티미터 정도 되는 원형 빵으로, 테프 가루를 발효시켜 만든답니다. 흥미로운 점은, 에티오피아 정교회가 매주 수요일·금요일은 물론 사순절 전체 등 여러 기간에 금식을 권장한다는 겁니다. 다만 이 금식 규정은 주로 정교회 신자에게 적용되며, 모든 에티오피아인에게 동일하게 적용되는 것은 아니라는 점을 기억해 주세요. 그래서 금식일에도 인제라와 와트를 곁들인 가벼운 식사로 하루를 마무리하는 모습이 종종 보이는데, 바로 그때가 에티오피아 식문화의 독특함을 가장 잘 느낄 수 있는 순간입니다.",
     "title_line1": "에티오피아 식탁",
     "title_line2": "수·금요일 금식?",
@@ -14799,7 +14800,8 @@
     "cross_model": "openai/gpt-oss-120b",
     "cross_verdict": "ok",
     "cross_notes": [],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "플럼 빌리지 전통(Plum Village Tradition)의 일상 속 수행법",
@@ -20240,7 +20242,7 @@
     "twist": "여러분은 달콤한 치즈, 한번 도전해 보고 싶으신가요?",
     "caveat": "",
     "narration": "이 갈색 덩어리, 카라멜이 아니라 치즈입니다! 노르웨이에서 즐겨 먹는 브루노스트라는 치즈인데요. 일반 치즈와 달리 유청을 오랫동안 가열해 만들어 갈색을 띠고, 캐러멜처럼 달콤한 풍미가 납니다. 보통 얇게 썰어 빵이나 와플 위에 올려 먹죠. 그런데 더 신기한 건 색깔만큼이나 맛도 독특하다는 사실! 짭짤한 치즈를 생각했다면 첫입부터 예상이 빗나갈 수 있습니다. 여러분은 달콤한 치즈, 한번 도전해 보고 싶으신가요?",
-    "status": "video_done",
+    "status": "rejected",
     "confidence": "user",
     "verify_note": "직접 입력한 대본",
     "fact_verifiability": "user",
@@ -20386,7 +20388,8 @@
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0258_노르웨이.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0258_노르웨이.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "노르웨이",
@@ -20397,7 +20400,7 @@
     "twist": "여러분은 달콤한 치즈, 한번 도전해 보고 싶으신가요?",
     "caveat": "",
     "narration": "이 갈색 덩어리, 초콜릿이 아니라 치즈입니다! 노르웨이에서 즐겨 먹는 브루노스트라는 치즈인데요. 일반 치즈와 달리 유청을 오랫동안 가열해 만들어 갈색을 띠고, 캐러멜처럼 달콤한 풍미가 납니다. 보통 얇게 썰어 빵이나 와플 위에 올려 먹죠. 그런데 더 신기한 건 색깔만큼이나 맛도 독특하다는 사실! 짭짤한 치즈를 생각했다면 첫입부터 예상이 빗나갈 수 있습니다. 여러분은 달콤한 치즈, 한번 도전해 보고 싶으신가요?",
-    "status": "video_done",
+    "status": "rejected",
     "confidence": "user",
     "verify_note": "직접 입력한 대본",
     "fact_verifiability": "user",
@@ -20555,7 +20558,8 @@
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0259_노르웨이.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0259_노르웨이.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "배리스터는 클라이언트를 직접 만나지 않는다",
@@ -20789,7 +20793,7 @@
     "verify_note": "Malanka",
     "confidence": "source",
     "created_at": "2026-10-21T10:38:40.541582+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "우크라이나에서는 12월 31일에 옛날 달력 때문에 두 번 새해를 기념한다는 이야기를 들어보셨나요? 실제로 31 December, 그레고리력으로 새해 전날에 ‘말랑카(Malanka)’라는 전통 축제가 열립니다. 이 날엔 젊은 남자들이 전통 복장을 입고 이웃집을 돌며 축하 인사를 전합니다. 원래는 13 January, 율리우스력 기준으로 잡혀 있었지만, 현재는 새해 전날인 31 December에 맞춰졌습니다. 다만 이 풍습은 우크라이나 일부 지역에만 남아 있는 전통이니, 전국적인 행사라고 보긴 어렵습니다. 옛 달력과 새 달력 사이에서 이어져 온 말랑카, 그 이중 축하의 의미가 오늘도 살아 숨 쉬고 있습니다.",
     "title_line1": "루마니아 말랑카",
     "title_line2": "새해 두 번",
@@ -20879,7 +20883,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0262_루마니아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0262_루마니아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "변호사의 역할과 다양성",
@@ -21670,7 +21675,7 @@
     "verify_note": "Highland Papua",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:25.153923+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "인도네시아에 바다 없이 사는 지방이 있다? 바로 하이랜드 파푸아입니다. 이 지방은 인도네시아에서 유일하게 내륙에 자리 잡은 곳으로, 중앙 고원 위에 펼쳐져 있습니다. 2022년 7월 25일에 새로 설립됐으며, 면적은 약 52,505.66 km²에 달합니다. 흥미로운 점은 인구가 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 늘어나고 있다는 사실입니다. 다만 이 수치는 위키백과에서 추정한 값이라는 점을 기억해 주세요. 고원 위에 숨겨진 이 내륙 지방, 바다와는 전혀 다른 풍경을 상상해 보세요.",
     "title_line1": "인도네시아 내륙 지방",
     "title_line2": "바다 없이 살다?",
@@ -21765,7 +21770,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "고대 그리스·로마부터 이어진 변호사의 다양한 직종",
@@ -21833,7 +21839,7 @@
     "verify_note": "Paschal greeting",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:29.672439+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "‘Christ is risen!’ 한 마디가 전 세계 수많은 교회에서 동시에 외워진다고 하면 믿으시겠어요? 부활절, 즉 Pascha에 교인들이 서로 인사할 때 바로 이 문장을 외칩니다. 그러면 상대는 “Indeed he is risen!” 혹은 “He is risen indeed!” 라고 답하죠. 동방 정교회, 서방 가톨릭, 성공회, 루터교 등 다양한 교파가 모두 같은 흐름을 따릅니다. 흥미로운 점은 답변이 교파마다 살짝씩 다르게 변형된다는 사실입니다. 예를 들어, 정교회에서는 “He is risen indeed!”를, 개신교 일부에서는 “Indeed he is risen!”를 더 자주 사용합니다. 다만 이 인사는 부활절 기간에만 쓰이는 관습이라는 점을 기억해 주세요. 전 세계가 같은 부활의 기쁨을 나누는 순간, 그 작은 차이가 오히려 풍성한 다양성을 보여줍니다. 결국, “Christ is risen!”이라는 한마디가 얼마나 널리 울려 퍼지는지 다시 생각해 보게 됩니다.",
     "title_line1": "러시아 부활절 인사",
     "title_line2": "전 세계가 동시에?",
@@ -21947,7 +21953,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0198_러시아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0198_러시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "말레이시아 육군의 복장, 베레모가 핵심",
@@ -22686,7 +22693,7 @@
     "verify_note": "Korean cuisine",
     "confidence": "source",
     "created_at": "2026-10-21T23:55:05.988019+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "반찬이 몇 개냐고? 이름이 바로 바뀝니다! 한국 전통 식사에서는 밥과 함께 나오는 반찬의 개수에 따라 식사 이름이 정해집니다. 반찬이 두 가지면 ‘두반찬밥’, 세 가지면 ‘세반찬밥’처럼 부르는 것이죠. 이렇게 반찬 수를 기준으로 명명하는 문화는 남한의 전통 식단에서 주로 찾아볼 수 있습니다. 흥미롭게도, 이런 식사에는 유제품이 거의 들어가지 않는다는 점도 눈에 띕니다. 전통적인 한 끼는 고기, 채소, 김치 등으로 구성되고, 우유나 치즈 같은 유제품은 거의 사용되지 않죠. 반찬 개수에 따라 이름이 바뀌는 재미있는 규칙, 그리고 유제품이 빠진 식단이 어우러져 한국 전통 식사의 독특한 모습을 보여줍니다. 결국, 반찬 하나하나가 식사의 정체성을 결정한다는 사실, 생각보다 신기하지 않나요?",
     "title_line1": "반찬 개수로 식사명",
     "title_line2": "이름이 바로 바뀐다!",
@@ -22807,7 +22814,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0205_프랑스.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0205_프랑스.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "계약 위반 시 법원이 물건을 직접 반환하도록 명령할 수 있다",
@@ -23703,7 +23711,7 @@
     "verify_note": "Malanka",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:44.146839+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "status_v6": "video_done",
     "image_queries_done": [
       "루마니아 travel",
@@ -23769,7 +23777,8 @@
       "[unsupported] 9번 문장: Question rather than a factual claim"
     ],
     "cross_model": "openai/gpt-oss-120b",
-    "cross_verdict": "contradicted"
+    "cross_verdict": "contradicted",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "차와 다과가 어우러진 유럽식 티 파티",
@@ -28141,7 +28150,7 @@
     "confidence": "high",
     "verify_note": "라오스 바시 의식, Baci ceremony, 파신(pha sin), Lao tradition, 실 묶기 의식",
     "created_at": "2026-10-25T12:17:44.440653+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "라오스에서는 아기가 태어나면 손목에 실을 묶어 영혼을 잡는다고 합니다! 아기가 태어난 뒤 어느 시점에 마을 어른들이 ‘파신’이라고 부르는 흰 실을 손목에 감아 주는 전통이 있습니다. 이 실은 영혼을 보호하고 조상과의 연결을 상징한다는 뜻이죠. 가족 모두가 모여 노래와 춤을 추며 축복을 빌고, 일주일 뒤에 그 실을 자르는데, 그때까지 받은 축복이 영원히 남는다고 믿습니다. 이 의식은 라오족 공동체에서 많이 전해 내려오고, 도시 지역에서도 가끔 현대식 행사와 함께 진행되는 경우가 있습니다. 실이 끊어지는 순간, 축복이 완성된다는 믿음이 남긴 여운은, 아직도 많은 이들의 마음에 깊이 새겨져 있습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -28335,7 +28344,8 @@
     "status_v6": "video_done",
     "youtube_id": "9eWvd2LiSnw",
     "uploaded_at": "2026-10-30T01:19:22.292681+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -36893,7 +36903,7 @@
     "verify_note": "Highland Papua",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:25.153923+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "인도네시아에 바다 없이 사는 지방이 있다? 바로 하이랜드 파푸아입니다. 이 지방은 인도네시아에서 유일하게 내륙에 자리 잡은 곳으로, 중앙 고원 위에 펼쳐져 있습니다. 2022년 7월 25일에 새로 설립됐으며, 면적은 약 52,505.66 km²에 달합니다. 흥미로운 점은 인구가 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 늘어나고 있다는 사실입니다. 다만 이 수치는 위키백과에서 추정한 값이라는 점을 기억해 주세요. 고원 위에 숨겨진 이 내륙 지방, 바다와는 전혀 다른 풍경을 상상해 보세요.",
     "title_line1": "인도네시아 내륙 지방",
     "title_line2": "바다 없이 살다?",
@@ -36989,7 +36999,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "파푸아뉴기니"
+    "country_before_fix": "파푸아뉴기니",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -37660,7 +37671,7 @@
     "verify_note": "Highland Papua",
     "confidence": "source",
     "created_at": "2026-10-21T23:54:25.153923+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "인도네시아에 바다 없이 사는 지방이 있다? 바로 하이랜드 파푸아입니다. 이 지방은 인도네시아에서 유일하게 내륙에 자리 잡은 곳으로, 중앙 고원 위에 펼쳐져 있습니다. 2022년 7월 25일에 새로 설립됐으며, 면적은 약 52,505.66 km²에 달합니다. 흥미로운 점은 인구가 2025년 중반 기준으로 약 1,484,870명이며, 매년 약 17,000명씩 늘어나고 있다는 사실입니다. 다만 이 수치는 위키백과에서 추정한 값이라는 점을 기억해 주세요. 고원 위에 숨겨진 이 내륙 지방, 바다와는 전혀 다른 풍경을 상상해 보세요.",
     "title_line1": "인도네시아 내륙 지방",
     "title_line2": "바다 없이 살다?",
@@ -37756,7 +37767,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0196_파푸아뉴기니.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "파푸아뉴기니"
+    "country_before_fix": "파푸아뉴기니",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -37771,7 +37783,7 @@
     "verify_note": "Punjabi festivals",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:34.345706+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
     "title_line1": "펀자브 축제 차이",
     "title_line2": "파키스탄엔 이슬람만?",
@@ -37886,7 +37898,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "country_before_fix": "덴마크",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "전쟁 중에도 보호된 영국 대표 음식 피시앤칩스",
