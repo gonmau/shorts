@@ -12,7 +12,7 @@
  - 상태(status)는 더 진행된 쪽 (unverified < verified < scripted < tts_done < video_done).
    폐기(rejected)와 영상완료가 갈리면 영상완료, 그 밖의 폐기 충돌은 '충돌'로 표시하고 --prefer 쪽을 따른다.
  - 영상/음성 파일 경로(PC·GitHub 환경마다 다름)는 비교하지 않고 각자 값을 유지한다.
- - 폐기(rejected)와 영상완료(video_done)가 갈리면 영상완료를 따른다 (이미 만든 영상이 있으므로).
+ - 폐기(rejected)와 영상완료(video_done)가 갈리면 폐기를 따른다 (PC에서 폐기한 소재가 되살아나지 않도록). 예전처럼 영상완료를 따르려면 --video-wins.
  - 그 밖의 칸(대본/제목 등)이 서로 다르면 '충돌'로 표시하고 --prefer 쪽을 따른다.
  - 소재 순서(번호)는 영상 파일명에 쓰이므로 --base(기본 PC) 쪽 번호를 유지하고, 상대쪽에만 있는 소재는 맨 뒤에 붙인다.
 GitHub 읽기: GITHUB_TOKEN 이 있으면 API로, 없으면 공개 저장소의 raw 주소로 읽는다.
@@ -29,7 +29,7 @@ import requests
 ENV_KEYS = {"video_path_v6", "audio_path_v2", "timing_path_v2"}
 RANK = {"unverified": 0, "verified": 1, "scripted": 2, "tts_done": 3, "video_done": 4}
 KEEP_NONEMPTY = {"youtube_id", "youtube_privacy", "uploaded_at"}
-REJECT_WINS = False   # --reject-wins: 폐기와 영상완료가 갈리면 폐기를 따른다
+REJECT_WINS = True    # 폐기와 영상완료가 갈리면 폐기를 따른다 (PC에서 폐기한 소재가 되살아나지 않게). --video-wins 로 예전 방식
 
 
 def key(f):
@@ -183,14 +183,15 @@ def main():
     ap.add_argument("--prefer", choices=["local", "github"], default="local")
     ap.add_argument("--base", choices=["local", "github"], default="local", help="소재 번호(순서)를 어느 쪽 기준으로 유지할지 (기본 PC)")
     ap.add_argument("--detail", action="store_true", help="상태 충돌과, 영상/업로드가 걸린 대본 충돌을 소재별로 자세히 출력")
-    ap.add_argument("--reject-wins", action="store_true", help="폐기와 영상완료가 갈리면 폐기를 따른다 (기본은 영상완료)")
+    ap.add_argument("--reject-wins", action="store_true", help="(기본값) 폐기와 영상완료가 갈리면 폐기를 따른다")
+    ap.add_argument("--video-wins", action="store_true", help="폐기와 영상완료가 갈리면 영상완료를 따른다 (예전 방식)")
     ap.add_argument("--auto", action="store_true", help="UI 자동 동기화용: GitHub에만 있는 소재가 10개를 넘으면(번호/제목이 어긋났을 가능성) 적용하지 않고 멈춘다")
     ap.add_argument("--apply", action="store_true", help="PC 파일을 병합본으로 갱신")
     ap.add_argument("--push", action="store_true", help="병합본을 GitHub에도 커밋 (--apply 와 함께)")
     a = ap.parse_args()
     token = os.environ.get("GITHUB_TOKEN")
     global REJECT_WINS
-    REJECT_WINS = a.reject_wins
+    REJECT_WINS = not a.video_wins
 
     L = json.load(open(a.local, encoding="utf-8")) if os.path.exists(a.local) else []
     G, sha = fetch_github(a.repo, a.branch, token)
