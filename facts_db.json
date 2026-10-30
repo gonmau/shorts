@@ -38180,7 +38180,292 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "스페인 거리 파에야 주문",
+    "title_line2": "토끼·닭·오리 없으면?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새우·홍합 없는 *파에야*?"
+      },
+      {
+        "s": 3,
+        "text": "발렌시아식 *파에야*"
+      },
+      {
+        "s": 4,
+        "text": "닭·토끼·콩 *핵심*"
+      },
+      {
+        "s": 8,
+        "text": "쌀 넣고 *휘젓지* 마!"
+      },
+      {
+        "s": 10,
+        "text": "*누룽지*층, 소카라트"
+      }
+    ],
+    "image_queries": [
+      "paella without shrimp",
+      "Valencian style paella",
+      "chicken rabbit beans paella",
+      "seafood paella contrast",
+      "traditional Valencian paella ingredients",
+      "paella rice no stirring",
+      "socarrat crust paella",
+      "crispy rice paella texture",
+      "large paella pan sharing",
+      "paella pan center edge",
+      "Valencian paella characteristics",
+      "paella toppings beyond pan"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "paella without shrimp",
+      "Valencian style paella",
+      "chicken rabbit beans paella",
+      "seafood paella contrast",
+      "traditional Valencian paella ingredients",
+      "paella rice no stirring",
+      "socarrat crust paella",
+      "crispy rice paella texture",
+      "large paella pan sharing",
+      "paella pan center edge",
+      "Valencian paella characteristics",
+      "paella toppings beyond pan"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "EstudioWebDoce",
+        "page": "https://pixabay.com/photos/paella-lena-mixed-valencian-1167973/",
+        "id": 1167973
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "EstudioWebDoce",
+        "page": "https://pixabay.com/photos/paella-valencian-seafood-prawns-1168003/",
+        "id": 1168003
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Moby-Dick4000",
+        "license": "CC BY-SA 4.0",
+        "title": "A Valencian paella with red bell peppers.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_Valencian_paella_with_red_bell_peppers.jpg",
+        "id": "c:122483089"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "omisido",
+        "page": "https://pixabay.com/photos/paella-rice-cook-meal-seafood-8380096/",
+        "id": 8380096
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "EstudioWebDoce",
+        "page": "https://pixabay.com/photos/paella-valencian-food-lena-fire-1167971/",
+        "id": 1167971
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Einladung_zum_Essen",
+        "page": "https://pixabay.com/photos/paella-stir-fry-pan-saffron-spain-2428945/",
+        "id": 2428945
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Wilfredor",
+        "license": "CC0",
+        "title": "Paella de fruit de mer.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Paella_de_fruit_de_mer.jpg",
+        "id": "c:107659196"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "TonyPrats",
+        "page": "https://pixabay.com/photos/paella-black-rice-spanish-cuisine-2201193/",
+        "id": 2201193
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "dancepool",
+        "page": "https://pixabay.com/photos/paella-spain-dish-mallorca-2246527/",
+        "id": 2246527
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "El Nuevo Doge",
+        "license": "CC0",
+        "title": "Paella valenciana, Mazatlán, 25 de abril de 2023.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Paella_valenciana,_Mazatl%C3%A1n,_25_de_abril_de_2023.jpg",
+        "id": "c:131148717"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "EstudioWebDoce",
+        "page": "https://pixabay.com/photos/paella-lena-fire-valencian-seafood-1168008/",
+        "id": 1168008
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "2020 kamilo",
+        "license": "CC BY-SA 4.0",
+        "title": "Paella kamilo.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Paella_kamilo.jpg",
+        "id": "c:103817691"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3556,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d16909683340",
+        "at": "2026-10-31 00:18",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3493,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ceb5ba2f6d87",
+        "at": "2026-10-31 00:18",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3364,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "948b4ee8c981",
+        "at": "2026-10-31 00:19",
+        "scene": 3,
+        "rejected_ids": [
+          7221301,
+          "c:122483089"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2677,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "65a9d4b5ed1b",
+        "at": "2026-10-31 00:18",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2876,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d0055963b7be",
+        "at": "2026-10-31 00:18",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2872,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4ad9cabb18a1",
+        "at": "2026-10-31 00:18",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3313,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "47bdc5335933",
+        "at": "2026-10-31 00:18",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2743,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "52ed04c0705e",
+        "at": "2026-10-31 00:18",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2837,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9fddc7fda522",
+        "at": "2026-10-31 00:18",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2528,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "30953c81b6be",
+        "at": "2026-10-31 00:18",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3149,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "258f8bcf0b88",
+        "at": "2026-10-31 00:18",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3165,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8d2f44e64b10",
+        "at": "2026-10-31 00:18",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "부활절(Easter) 빨간 달걀, 예수(Jesus)님의 피를 상징",
@@ -38206,7 +38491,295 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "그리스 부활절 달걀",
+    "title_line2": "예수 피와 무슨 연결?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*부딪히면*?"
+      },
+      {
+        "s": 5,
+        "text": "예수*피*상징"
+      },
+      {
+        "s": 9,
+        "text": "달걀*부딪치기*"
+      },
+      {
+        "s": 12,
+        "text": "*깨지지*행운"
+      },
+      {
+        "s": 16,
+        "text": "기도와*웃음*함께"
+      }
+    ],
+    "image_queries": [
+      "egg tapping",
+      "Greek red boiled egg",
+      "red Easter egg symbolism",
+      "Easter egg new life",
+      "Easter egg multiple symbols",
+      "Greek family preparing eggs",
+      "egg tapping game",
+      "intact egg on table",
+      "uncracked Easter egg luck",
+      "family Easter celebration",
+      "regional Easter egg traditions",
+      "family dinner prayer"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "egg tapping",
+      "Greek red boiled egg",
+      "red Easter egg symbolism",
+      "Easter egg new life",
+      "Easter egg multiple symbols",
+      "Greek family preparing eggs",
+      "egg tapping game",
+      "intact egg on table",
+      "uncracked Easter egg luck",
+      "family Easter celebration",
+      "regional Easter egg traditions",
+      "family dinner prayer"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "L.Kenzel",
+        "license": "CC0",
+        "title": "20180401 Ostereierdotzen.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:20180401_Ostereierdotzen.jpg",
+        "id": "c:67936899"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/egg-sandwich-egg-bread-yolk-2761894/",
+        "id": 2761894
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/easter-easter-festival-1237478/",
+        "id": 1237478
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/onion-sprout-live-new-easter-2013174/",
+        "id": 2013174
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/easter-easter-bunny-egg-rabbit-3204589/",
+        "id": 3204589
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "laterjay",
+        "page": "https://pixabay.com/photos/baking-children-cooking-education-1951256/",
+        "id": 1951256
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Anna reg",
+        "license": "CC BY-SA 3.0 at",
+        "title": "Eierpecken.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Eierpecken.jpg",
+        "id": "c:32479794"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/breakfast-fried-egg-table-4020028/",
+        "id": 4020028
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "WOKANDAPIX",
+        "page": "https://pixabay.com/photos/eggs-easter-easter-eggs-egg-carton-3216877/",
+        "id": 3216877
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Ivana Sokolović",
+        "license": "CC BY 2.0",
+        "title": "Easter eggs (13719857363).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Easter_eggs_(13719857363).jpg",
+        "id": "c:38376442"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "afyny-yeah",
+        "page": "https://pixabay.com/photos/easter-eggs-happy-easter-pysanky-7895901/",
+        "id": 7895901
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Marjory Collins, photographer for Farm Security Administration.",
+        "license": "Public domain",
+        "title": "Thanksgiving grace 1942.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Thanksgiving_grace_1942.jpg",
+        "id": "c:5257824"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2996,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "da3409997759",
+        "at": "2026-10-31 00:19",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3007,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5dc6f367cbe9",
+        "at": "2026-10-31 00:19",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.309,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6ba7f334950d",
+        "at": "2026-10-31 00:19",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b24ab5df43ba",
+        "at": "2026-10-31 00:19",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2279,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7ca0e3846e14",
+        "at": "2026-10-31 00:19",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2849,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5389c2fe97fe",
+        "at": "2026-10-31 00:19",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2884,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a7746c3b550a",
+        "at": "2026-10-31 00:19",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2852,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c30e4b4193ef",
+        "at": "2026-10-31 00:19",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2749,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6efad9ba5310",
+        "at": "2026-10-31 00:19",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2452,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cf7919508266",
+        "at": "2026-10-31 00:19",
+        "scene": 10,
+        "rejected_ids": [
+          7051970,
+          "c:38376442"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3137,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ae8675c00d23",
+        "at": "2026-10-31 00:19",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3168,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "24d44e0d5ffb",
+        "at": "2026-10-31 00:19",
+        "scene": 12,
+        "rejected_ids": [
+          6615124,
+          "c:5257824"
+        ]
+      }
+    ]
   },
   {
     "topic": "일본의 중원절 (Zhongyuan Festival), 조상 귀신이 거리로 나오는 날",
@@ -38248,7 +38821,319 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "사모아 판사 권한은",
+    "title_line2": "빈자리에도 재판은 계속?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "대법원장*공백*,재판?"
+      },
+      {
+        "s": 4,
+        "text": "*판단* 개인 아냐"
+      },
+      {
+        "s": 9,
+        "text": "*규정* 불가능 시"
+      },
+      {
+        "s": 11,
+        "text": "한 사람 없어도 *사법부*"
+      },
+      {
+        "s": 16,
+        "text": "권위보다 *절차* 핵심"
+      }
+    ],
+    "image_queries": [
+      "empty courtroom",
+      "Samoan constitution document",
+      "judge alone thinking",
+      "Samoan prime minister appointment",
+      "judicial appointment paperwork",
+      "Samoan judge appointment ceremony",
+      "courtroom substitution rule",
+      "empty bench judiciary",
+      "Samoan legal authority diagram",
+      "succession clause book",
+      "unexpected legal gap",
+      "procedural authority symbol"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "empty courtroom",
+      "Samoan constitution document",
+      "judge alone thinking",
+      "Samoan prime minister appointment",
+      "judicial appointment paperwork",
+      "Samoan judge appointment ceremony",
+      "courtroom substitution rule",
+      "empty bench judiciary",
+      "Samoan legal authority diagram",
+      "succession clause book",
+      "unexpected legal gap",
+      "procedural authority symbol"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Bjengles3",
+        "license": "CC BY-SA 4.0",
+        "title": "Rochester City Court part 1 courtroom.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rochester_City_Court_part_1_courtroom.jpg",
+        "id": "c:127075652"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/constitution-united-states-usa-62943/",
+        "id": 62943
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Shimabdinzade",
+        "page": "https://pixabay.com/photos/girl-portrait-sad-woman-face-7486911/",
+        "id": 7486911,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "dimitrisvetsikas1969",
+        "page": "https://pixabay.com/photos/statue-sculpture-politician-4229821/",
+        "id": 4229821,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "AymaneJed",
+        "page": "https://pixabay.com/photos/laptop-office-hand-writing-3196481/",
+        "id": 3196481,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Queen Asali",
+        "license": "CC BY 4.0",
+        "title": "Chief Justice Martha K. Koome and Deputy Chief Justice Philomena Mwilu.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Chief_Justice_Martha_K._Koome_and_Deputy_Chief_Justice_Philomena_Mwilu.jpg",
+        "id": "c:145236616"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/hand-write-rule-regulation-4249401/",
+        "id": 4249401,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "AhmadArdity",
+        "page": "https://pixabay.com/photos/bench-seat-social-distance-park-5017748/",
+        "id": 5017748
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "qimono",
+        "page": "https://pixabay.com/photos/gavel-auction-law-hammer-symbol-2492011/",
+        "id": 2492011
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "State postal and telegraph savings administration; individual form and control-s",
+        "license": "Public domain",
+        "title": "Книжка сберегательная почтово-телеграфной государственной сберегательной кассы. С. 18–19--",
+        "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BD%D0%B8%D0%B6%D0%BA%D0%B0_%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D1%84%D0%BD%D0%BE%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%BA%D0%B0%D1%81%D1%81%D1%8B._%D0%A1._18%E2%80%9319--moneymuseum-by.jpg",
+        "id": "c:201832295"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/slip-up-danger-careless-slippery-709045/",
+        "id": 709045,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "QuinceCreative",
+        "page": "https://pixabay.com/photos/gavel-hammer-justice-legal-judge-3577254/",
+        "id": 3577254
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2981,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a8f09d8af6d3",
+        "at": "2026-10-31 00:20",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2909,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4debb9f54980",
+        "at": "2026-10-31 00:20",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2022,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "93071384ad69",
+        "at": "2026-10-31 00:20",
+        "scene": 3,
+        "rejected_ids": [
+          5653215,
+          7243404,
+          7486911,
+          "c:179637877",
+          "c:179637878"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1903,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6424263f84e2",
+        "at": "2026-10-31 00:21",
+        "scene": 4,
+        "rejected_ids": [
+          3601909,
+          4229821,
+          63039,
+          "c:179637877",
+          "c:179637878"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.25,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "857a84f64ede",
+        "at": "2026-10-31 00:21",
+        "scene": 5,
+        "rejected_ids": [
+          3196481,
+          "c:179637878"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2362,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "69e539631b0a",
+        "at": "2026-10-31 00:21",
+        "scene": 6,
+        "rejected_ids": [
+          2492011,
+          410328,
+          "c:145236616",
+          "c:179637877",
+          "c:179637878"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.301,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a5a0d8f966fa",
+        "at": "2026-10-31 00:21",
+        "scene": 7,
+        "rejected_ids": [
+          4249401,
+          "c:145236616"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3195,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3cfcc04d7085",
+        "at": "2026-10-31 00:20",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b905621c231b",
+        "at": "2026-10-31 00:20",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2518,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "01340d8e858e",
+        "at": "2026-10-31 00:20",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2244,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "20321af4269a",
+        "at": "2026-10-31 00:21",
+        "scene": 11,
+        "rejected_ids": [
+          709045,
+          "c:141541459"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2328,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "41639852794f",
+        "at": "2026-10-31 00:20",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "핀란드 사우나는 유네스코 무형문화유산",
@@ -38274,7 +39159,313 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "핀란드 사우나 유네스코",
+    "title_line2": "문 열면 심판관이?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*땀*문화시간"
+      },
+      {
+        "s": 3,
+        "text": "생활 방식 *인정*"
+      },
+      {
+        "s": 5,
+        "text": "공공 사우나 *이웃*"
+      },
+      {
+        "s": 8,
+        "text": "겨울 *대조* 경험"
+      },
+      {
+        "s": 16,
+        "text": "사우나는 *일상* 공유"
+      }
+    ],
+    "image_queries": [
+      "person sweating in sauna",
+      "Finnish sauna lifestyle recognition",
+      "home sauna interior",
+      "people in public sauna",
+      "stepping out of sauna",
+      "sauna with winter snow",
+      "relaxed sauna seating",
+      "sauna heat endurance",
+      "family gathering in sauna",
+      "simple sauna interior",
+      "tourist experiencing Finnish sauna",
+      "family sharing sauna time"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "person sweating in sauna",
+      "Finnish sauna lifestyle recognition",
+      "home sauna interior",
+      "people in public sauna",
+      "stepping out of sauna",
+      "sauna with winter snow",
+      "relaxed sauna seating",
+      "sauna heat endurance",
+      "family gathering in sauna",
+      "simple sauna interior",
+      "tourist experiencing Finnish sauna",
+      "family sharing sauna time"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-heater-sauna-stones-9863851/",
+        "id": 9863851
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "TheUjulala",
+        "page": "https://pixabay.com/photos/sauna-wooden-bench-wooden-sauna-1405973/",
+        "id": 1405973
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-stones-electric-heater-10302280/",
+        "id": 10302280,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Gart Dale",
+        "license": "CC0",
+        "title": "Nude woman in the sauna.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nude_woman_in_the_sauna.jpg",
+        "id": "c:182952963"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Zerocool",
+        "page": "https://pixabay.com/photos/woman-sauna-spa-wellness-beauty-936549/",
+        "id": 936549,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "LTapsaH",
+        "page": "https://pixabay.com/photos/cottage-river-snow-sauna-6819444/",
+        "id": 6819444
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Zerocool",
+        "page": "https://pixabay.com/photos/woman-sauna-spa-wellness-beauty-936549/",
+        "id": 936549,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "huumsauna",
+        "page": "https://pixabay.com/photos/sauna-sauna-stones-electric-heater-10302280/",
+        "id": 10302280
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Eric Koch for Anefo",
+        "license": "CC0",
+        "title": "In de sauna. Slaan met berkentakken, Bestanddeelnr 920-4683.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:In_de_sauna._Slaan_met_berkentakken,_Bestanddeelnr_920-4683.jpg",
+        "id": "c:66390382"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "VirgoStudio",
+        "page": "https://pixabay.com/photos/sauna-wellness-spa-relaxation-10118836/",
+        "id": 10118836
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "ThMilherou",
+        "page": "https://pixabay.com/photos/sauna-heat-drink-take-it-easy-4863340/",
+        "id": 4863340
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "MatlaBrand",
+        "page": "https://pixabay.com/photos/mother-and-daughter-cooking-kitchen-7031077/",
+        "id": 7031077,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.306,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f50c8a427269",
+        "at": "2026-10-31 00:22",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3298,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba44af0b7f06",
+        "at": "2026-10-31 00:22",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2441,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "88f8f8c17a7e",
+        "at": "2026-10-31 00:22",
+        "scene": 3,
+        "rejected_ids": [
+          10195371,
+          10302280,
+          "c:170542597"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3134,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "af344c35bbde",
+        "at": "2026-10-31 00:22",
+        "scene": 4,
+        "rejected_ids": [
+          8893950,
+          "c:182952963"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2942,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a951be57eaff",
+        "at": "2026-10-31 00:22",
+        "scene": 5,
+        "rejected_ids": [
+          936549,
+          "c:29020679"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.261,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f7dccb36be0b",
+        "at": "2026-10-31 00:22",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2689,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d10027c8abc0",
+        "at": "2026-10-31 00:22",
+        "scene": 7,
+        "rejected_ids": [
+          936549,
+          "c:33449717"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2796,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b14e7e635eef",
+        "at": "2026-10-31 00:22",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3221,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "135ac9442cfd",
+        "at": "2026-10-31 00:22",
+        "scene": 9,
+        "rejected_ids": [
+          10123931,
+          7057793,
+          "c:33449717",
+          "c:66390382"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2787,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3e19d3b6f137",
+        "at": "2026-10-31 00:22",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2923,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7c47fb235ec3",
+        "at": "2026-10-31 00:22",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2185,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "40126c2a516a",
+        "at": "2026-10-31 00:22",
+        "scene": 12,
+        "rejected_ids": [
+          3365336,
+          7031077,
+          7057793,
+          "c:170343627",
+          "c:170343633"
+        ]
+      }
+    ]
   },
   {
     "topic": "부하라 유대인, 중앙아시아에 남은 소수",
@@ -38300,7 +39491,318 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "부하리 유대인 이야기",
+    "title_line2": "그들은 어디에 살까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "부하라만*살았*나요?"
+      },
+      {
+        "s": 4,
+        "text": "중앙아시아가*무대*다"
+      },
+      {
+        "s": 7,
+        "text": "*부하리어*가증명"
+      },
+      {
+        "s": 11,
+        "text": "많은사람이*이주*했어요"
+      },
+      {
+        "s": 15,
+        "text": "이름은*도시*지만"
+      }
+    ],
+    "image_queries": [
+      "Bukharan synagogue interior",
+      "Bukharan market street Uzbekistan",
+      "Central Asian stage landscape",
+      "Jewish prayer scrolls",
+      "Bukharian language manuscript",
+      "Persian Hebrew script page",
+      "Bukharan Jewish cuisine",
+      "Migrants with suitcases",
+      "Jewish community gathering Israel",
+      "Family preparing traditional food",
+      "Map showing city name",
+      "Cultural artifacts in suitcase"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Bukharan synagogue interior",
+      "Bukharan market street Uzbekistan",
+      "Central Asian stage landscape",
+      "Jewish prayer scrolls",
+      "Bukharian language manuscript",
+      "Persian Hebrew script page",
+      "Bukharan Jewish cuisine",
+      "Migrants with suitcases",
+      "Jewish community gathering Israel",
+      "Family preparing traditional food",
+      "Map showing city name",
+      "Cultural artifacts in suitcase"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "canesjurij",
+        "page": "https://pixabay.com/photos/st-petersburg-choral-synagogue-95128/",
+        "id": 95128
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Maynard Owen Williams",
+        "license": "Public domain",
+        "title": "Bukharian Jews in the Bukharan Quarter of Jerusalem.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bukharian_Jews_in_the_Bukharan_Quarter_of_Jerusalem.jpg",
+        "id": "c:150658479"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Makalu",
+        "page": "https://pixabay.com/photos/tajikistan-badakhshan-national-park-4740798/",
+        "id": 4740798
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "OcelotsGriblit",
+        "page": "https://pixabay.com/photos/mitzvah-bar-mitzvah-sw-jewish-bat-1531490/",
+        "id": 1531490
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Maynard Owen Williams",
+        "license": "Public domain",
+        "title": "Bukharian Jews in the Bukharan Quarter of Jerusalem.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bukharian_Jews_in_the_Bukharan_Quarter_of_Jerusalem.jpg",
+        "id": "c:150658479"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Republica",
+        "page": "https://pixabay.com/photos/torah-bible-inside-religion-hebrew-89074/",
+        "id": 89074,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "svetlanabar",
+        "page": "https://pixabay.com/photos/bread-bakery-baked-flour-fresh-5470534/",
+        "id": 5470534
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Zoltan Kluger / Adam Cuerden",
+        "license": "Public domain",
+        "title": "A Bukharan dance performed by members of the Rina Nikova ballet in the citadel of Jerusale",
+        "page": "https://commons.wikimedia.org/wiki/File:A_Bukharan_dance_performed_by_members_of_the_Rina_Nikova_ballet_in_the_citadel_of_Jerusalem_-_Restoration.jpg",
+        "id": "c:118416407"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Waldemar_RU",
+        "page": "https://pixabay.com/photos/israel-jerusalem-man-jew-religion-6290611/",
+        "id": 6290611
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Vilkasss",
+        "page": "https://pixabay.com/photos/baking-woman-grandmother-girl-tart-10430860/",
+        "id": 10430860
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/map-syria-aleppo-refugees-asylum-3473138/",
+        "id": 3473138,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
+        "id": 1149289,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3247,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "be1488f6ff29",
+        "at": "2026-10-31 00:23",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2642,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dbeec0d59ef7",
+        "at": "2026-10-31 00:23",
+        "scene": 2,
+        "rejected_ids": [
+          1283306,
+          2879303,
+          "c:118416407",
+          "c:150658479"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.248,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "97158c36ee17",
+        "at": "2026-10-31 00:23",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.245,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c0da2c829efa",
+        "at": "2026-10-31 00:23",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2475,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "15e2dee03483",
+        "at": "2026-10-31 00:23",
+        "scene": 5,
+        "rejected_ids": [
+          2771936,
+          "c:118416407",
+          "c:150658479"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2964,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "aae435861d76",
+        "at": "2026-10-31 00:23",
+        "scene": 6,
+        "rejected_ids": [
+          7637805,
+          89074,
+          "c:87319636"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2277,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d5e397f77c09",
+        "at": "2026-10-31 00:23",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1924,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7e681782fbb2",
+        "at": "2026-10-31 00:23",
+        "scene": 8,
+        "rejected_ids": [
+          8783358,
+          8800553,
+          "c:118416407",
+          "c:148930426",
+          "c:83265466"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2215,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "da4ac5536254",
+        "at": "2026-10-31 00:23",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2598,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7a437929d256",
+        "at": "2026-10-31 00:23",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2415,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "41aba284ce62",
+        "at": "2026-10-31 00:23",
+        "scene": 11,
+        "rejected_ids": [
+          2693054,
+          3473138,
+          "c:113759357"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.255,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "67867958e907",
+        "at": "2026-10-31 00:24",
+        "scene": 12,
+        "rejected_ids": [
+          1149289,
+          7995207,
+          "c:118416407",
+          "c:150658479"
+        ]
+      }
+    ]
   },
   {
     "topic": "새해 맞이 물축제의 물뿌리기 풍경",
@@ -38326,7 +39828,306 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "캄보디아 새해 물축제",
+    "title_line2": "물엔 숨은 의미?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "거대한 *물싸움*"
+      },
+      {
+        "s": 3,
+        "text": "묵은 것 씻고 *새출발*"
+      },
+      {
+        "s": 7,
+        "text": "*불상*에 물"
+      },
+      {
+        "s": 12,
+        "text": "*물* 뿌리는 놀이"
+      },
+      {
+        "s": 15,
+        "text": "물보라보다 넓은 *명절*"
+      }
+    ],
+    "image_queries": [
+      "Cambodia giant water fight",
+      "people washing with water",
+      "Cambodia April water festival",
+      "family cleaning house temple",
+      "water poured on Buddha statue",
+      "serious water ritual",
+      "family sharing meal",
+      "young people dancing",
+      "Cambodia water spraying game",
+      "local water festival rules",
+      "festival larger than water splash",
+      "washing away dust"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Cambodia giant water fight",
+      "people washing with water",
+      "Cambodia April water festival",
+      "family cleaning house temple",
+      "water poured on Buddha statue",
+      "serious water ritual",
+      "family sharing meal",
+      "young people dancing",
+      "Cambodia water spraying game",
+      "local water festival rules",
+      "festival larger than water splash",
+      "washing away dust"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Wigunantara",
+        "license": "CC BY-SA 4.0",
+        "title": "SUWAT WAR OF WATER.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:SUWAT_WAR_OF_WATER.jpg",
+        "id": "c:87590996"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "slavoljubovski",
+        "page": "https://pixabay.com/photos/hand-washing-soap-wash-hygiene-4818792/",
+        "id": 4818792
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Lyda_Phal",
+        "page": "https://pixabay.com/photos/khmer-water-festival-cambodian-khmer-4550646/",
+        "id": 4550646
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Jupilu",
+        "page": "https://pixabay.com/photos/family-love-together-outdoors-10531103/",
+        "id": 10531103,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Mr1900",
+        "page": "https://pixabay.com/photos/buddha-statue-pond-sculpture-1177009/",
+        "id": 1177009
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boy-monk-river-buddhist-water-1807518/",
+        "id": 1807518
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "FernandoZ",
+        "page": "https://pixabay.com/photos/tumpeng-traditional-food-10392533/",
+        "id": 10392533
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/people-activity-dancing-young-8109033/",
+        "id": 8109033
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/children-splash-asia-sunset-1822688/",
+        "id": 1822688
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Wigunantara",
+        "license": "CC BY-SA 4.0",
+        "title": "SUWAT WAR OF WATER.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:SUWAT_WAR_OF_WATER.jpg",
+        "id": "c:87590996"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Wigunantara",
+        "license": "CC BY-SA 4.0",
+        "title": "SUWAT WAR OF WATER.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:SUWAT_WAR_OF_WATER.jpg",
+        "id": "c:87590996"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "MAKY_OREL",
+        "page": "https://pixabay.com/photos/time-ephemeral-running-away-7683178/",
+        "id": 7683178
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3631,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "20f3ac0151ec",
+        "at": "2026-10-31 00:24",
+        "scene": 1,
+        "rejected_ids": [
+          8197012,
+          9845979,
+          "c:87590996"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2722,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9919272130e1",
+        "at": "2026-10-31 00:24",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3209,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "36ce2aa5f3d7",
+        "at": "2026-10-31 00:24",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2851,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "69dc51fd1118",
+        "at": "2026-10-31 00:24",
+        "scene": 4,
+        "rejected_ids": [
+          10531103,
+          10532207,
+          7372288,
+          "c:175993356",
+          "c:87590996"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2925,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b680a9c714c9",
+        "at": "2026-10-31 00:24",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.328,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ae3d18a1621a",
+        "at": "2026-10-31 00:24",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3323,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f31bd9bd40f2",
+        "at": "2026-10-31 00:24",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2881,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "21fe06018403",
+        "at": "2026-10-31 00:24",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2448,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a79c9e42203c",
+        "at": "2026-10-31 00:24",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2849,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4d7d93a210c6",
+        "at": "2026-10-31 00:24",
+        "scene": 10,
+        "rejected_ids": [
+          5166421,
+          7657958,
+          "c:196950275",
+          "c:87590996"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.348,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "91959c8e475d",
+        "at": "2026-10-31 00:25",
+        "scene": 11,
+        "rejected_ids": [
+          2293337,
+          "c:87590996"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2602,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eb0c65ae0b60",
+        "at": "2026-10-31 00:24",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "페루의 마법사 호칭과 성별 유연성",
@@ -38368,7 +40169,313 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "캐나다 신부 파티는",
+    "title_line2": "남자 친구가 사",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*신부*와 파티?"
+      },
+      {
+        "s": 3,
+        "text": "여성을 위한 *스태젯*"
+      },
+      {
+        "s": 6,
+        "text": "*스태그* 앤 도는?"
+      },
+      {
+        "s": 8,
+        "text": "신랑·신부 *함께* 참여"
+      },
+      {
+        "s": 9,
+        "text": "결혼비용 *모금* 목적"
+      }
+    ],
+    "image_queries": [
+      "bride at party",
+      "Canadian stagette gathering",
+      "friends playing games dinner",
+      "travel celebration group",
+      "stag and doe party Canada",
+      "groom and bride participating",
+      "wedding fundraiser ticket raffle",
+      "different party names",
+      "invited guests discussion",
+      "Canadian couples wedding traditions",
+      "friends having fun together",
+      "pre-wedding celebration variations"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "bride at party",
+      "Canadian stagette gathering",
+      "friends playing games dinner",
+      "travel celebration group",
+      "stag and doe party Canada",
+      "groom and bride participating",
+      "wedding fundraiser ticket raffle",
+      "different party names",
+      "invited guests discussion",
+      "Canadian couples wedding traditions",
+      "friends having fun together",
+      "pre-wedding celebration variations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "hitro4ka",
+        "page": "https://pixabay.com/photos/woman-bridal-party-lineup-wedding-4081760/",
+        "id": 4081760
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Declan",
+        "license": "CC BY 2.0",
+        "title": "HenPartyDublinSchoolUniforms.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:HenPartyDublinSchoolUniforms.jpg",
+        "id": "c:2437895"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "vivienviv0",
+        "page": "https://pixabay.com/photos/friends-celebration-dinner-table-581753/",
+        "id": 581753,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Ssemmanda will",
+        "license": "CC BY-SA 4.0",
+        "title": "Ferry Group Celebration 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ferry_Group_Celebration_01.jpg",
+        "id": "c:176893750"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Pike_89",
+        "page": "https://pixabay.com/photos/deer-nature-stag-doe-bradgate-park-7589324/",
+        "id": 7589324
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "toanmda",
+        "page": "https://pixabay.com/photos/couple-wedding-park-newlyweds-443600/",
+        "id": 443600
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "igorovsyannykov",
+        "page": "https://pixabay.com/photos/ticket-coupon-admission-carnival-2974645/",
+        "id": 2974645,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/tea-tea-time-girl-woman-556777/",
+        "id": 556777,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Štěpán Lohr",
+        "license": "CC BY 4.0",
+        "title": "Advocacy discussion - AI meets Wikipedia - WMEU GA 2025 12.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Advocacy_discussion_-_AI_meets_Wikipedia_-_WMEU_GA_2025_12.jpg",
+        "id": "c:164541444"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "lubovlisitsa",
+        "page": "https://pixabay.com/photos/bride-wedding-church-groom-love-5519805/",
+        "id": 5519805
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/boys-brothers-family-friends-7619095/",
+        "id": 7619095
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Declan",
+        "license": "CC BY 2.0",
+        "title": "HenPartyDublinSchoolUniforms.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:HenPartyDublinSchoolUniforms.jpg",
+        "id": "c:2437895"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2c9a8e28be7d",
+        "at": "2026-10-31 00:26",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2318,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2264b0dda1bd",
+        "at": "2026-10-31 00:26",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2788,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dd3e096e8b7c",
+        "at": "2026-10-31 00:26",
+        "scene": 3,
+        "rejected_ids": [
+          2769913,
+          581753,
+          7953757,
+          "c:106468992",
+          "c:106468993"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2232,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "505ec8ed0267",
+        "at": "2026-10-31 00:26",
+        "scene": 4,
+        "rejected_ids": [
+          2103130,
+          "c:176893750"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3128,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "50d5647d6aa4",
+        "at": "2026-10-31 00:26",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2884,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "56a6436087a1",
+        "at": "2026-10-31 00:26",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.268,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fa060ada7f46",
+        "at": "2026-10-31 00:26",
+        "scene": 7,
+        "rejected_ids": [
+          2974645,
+          "c:11032173"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1567,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d41a5b1b6aee",
+        "at": "2026-10-31 00:26",
+        "scene": 8,
+        "rejected_ids": [
+          407081,
+          556777,
+          "c:33628662",
+          "c:33628666",
+          "c:33628668"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2827,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c8d2ade340b5",
+        "at": "2026-10-31 00:26",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2385,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fe06e290df85",
+        "at": "2026-10-31 00:26",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2344,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "edf086ac1892",
+        "at": "2026-10-31 00:26",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2398,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c0ae787b1af5",
+        "at": "2026-10-31 00:27",
+        "scene": 12,
+        "rejected_ids": [
+          9490176,
+          "c:2437895"
+        ]
+      }
+    ]
   },
   {
     "topic": "학생 연합의 전통 사브르 결투",
@@ -38394,7 +40501,317 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "오스트리아 대학생 사브르",
+    "title_line2": "얼굴에 상처는 왜?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "실제 검을 *들면*?"
+      },
+      {
+        "s": 3,
+        "text": "학술 *펜싱* 전통"
+      },
+      {
+        "s": 5,
+        "text": "점수 없이 *이긴다*?"
+      },
+      {
+        "s": 9,
+        "text": "얼굴에 *상처*"
+      }
+    ],
+    "image_queries": [
+      "students holding swords",
+      "Austria academic fencing tradition",
+      "traditional fencing duel",
+      "winning without scoring",
+      "fencing protective gear",
+      "facial fencing injury",
+      "scar as honor",
+      "old honor scar",
+      "German student fencing",
+      "universal student tradition",
+      "debate over tradition",
+      "historic honor today"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "students holding swords",
+      "Austria academic fencing tradition",
+      "traditional fencing duel",
+      "winning without scoring",
+      "fencing protective gear",
+      "facial fencing injury",
+      "scar as honor",
+      "old honor scar",
+      "German student fencing",
+      "universal student tradition",
+      "debate over tradition",
+      "historic honor today"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "U.S. Navy photo by Mass Communication Specialist 1st Class Chad Runge",
+        "license": "Public domain",
+        "title": "US Navy 100823-N-3857R-020 U.S. Naval Academy Midshipman 1st Class Anne Prisk and other st",
+        "page": "https://commons.wikimedia.org/wiki/File:US_Navy_100823-N-3857R-020_U.S._Naval_Academy_Midshipman_1st_Class_Anne_Prisk_and_other_stripers_receive_drill_instruction_in_Techumseh_Court_on_the_school%27s_campus.jpg",
+        "id": "c:11293359"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Tübinger Mensur 1831.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:T%C3%BCbinger_Mensur_1831.jpg",
+        "id": "c:945652"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/people-man-teen-sport-fencing-2588748/",
+        "id": 2588748
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Luis Ávila",
+        "license": "Public domain",
+        "title": "Victorino scores the winning goal for Nacional against Internacional in 1980 Libertadores ",
+        "page": "https://commons.wikimedia.org/wiki/File:Victorino_scores_the_winning_goal_for_Nacional_against_Internacional_in_1980_Libertadores_Final.png",
+        "id": "c:147315137"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/people-man-teen-sport-fencing-2585640/",
+        "id": 2585640
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "silviarita",
+        "page": "https://pixabay.com/photos/woman-beauty-spa-wellness-portrait-3141766/",
+        "id": 3141766,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Army photo by Trish Harris, USASOC News Service",
+        "license": "Public domain",
+        "title": "1stbat75thregSCAR.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1stbat75thregSCAR.jpg",
+        "id": "c:6891672"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Ralphs_Fotos",
+        "page": "https://pixabay.com/photos/tree-knothole-gnarled-tree-eyes-3287180/",
+        "id": 3287180
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Dendrono - Der fechtende Student.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dendrono_-_Der_fechtende_Student.jpg",
+        "id": "c:943178"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "HuyNgan",
+        "page": "https://pixabay.com/photos/yearbook-vietnamese-students-10168363/",
+        "id": 10168363,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Photo by Sgt. 1st Class Jeremy Bunkley, USMA Public Affairs",
+        "license": "Public domain",
+        "title": "2015 USMA-RMC Exchange (16363755942).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2015_USMA-RMC_Exchange_(16363755942).jpg",
+        "id": "c:128068528"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "tazzanderson",
+        "page": "https://pixabay.com/photos/cemetery-national-cemetery-2093999/",
+        "id": 2093999
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2359,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3c54500de37b",
+        "at": "2026-10-31 00:28",
+        "scene": 1,
+        "rejected_ids": [
+          3679745,
+          9034408,
+          "c:11293359",
+          "c:90348640",
+          "c:90348661"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2893,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1305fd0f8195",
+        "at": "2026-10-31 00:28",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3178,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "67880e76c9f1",
+        "at": "2026-10-31 00:28",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2466,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5043fabedffc",
+        "at": "2026-10-31 00:28",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2844,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1e76c04ea61e",
+        "at": "2026-10-31 00:28",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2197,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f1afe2f1f439",
+        "at": "2026-10-31 00:28",
+        "scene": 6,
+        "rejected_ids": [
+          3141766,
+          709045,
+          "c:18582036",
+          "c:945652"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1951,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b5ea2cfa404",
+        "at": "2026-10-31 00:28",
+        "scene": 7,
+        "rejected_ids": [
+          3122001,
+          67636,
+          "c:48390206",
+          "c:6891672",
+          "c:88090371"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2247,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ddd22f72b4b1",
+        "at": "2026-10-31 00:28",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2989,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7a3c1d3758c1",
+        "at": "2026-10-31 00:28",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2548,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ff52c112edf3",
+        "at": "2026-10-31 00:29",
+        "scene": 10,
+        "rejected_ids": [
+          10168363,
+          "c:187768970"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2187,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ca8991ea2c79",
+        "at": "2026-10-31 00:29",
+        "scene": 11,
+        "rejected_ids": [
+          10402213,
+          5310799,
+          "c:128068528",
+          "c:162862693",
+          "c:35678395"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2253,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "13ded274f1d8",
+        "at": "2026-10-31 00:28",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "중추절, 달이 가장 밝은 날의 비밀",
@@ -38420,7 +40837,295 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "라오스 중추절 밤",
+    "title_line2": "달을 왜 먹을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "라오스에 *월병*?"
+      },
+      {
+        "s": 3,
+        "text": "음력 *보름* 기념"
+      },
+      {
+        "s": 7,
+        "text": "대표 *명절* 오해"
+      },
+      {
+        "s": 9,
+        "text": "평범한 날 *특별* 저녁"
+      },
+      {
+        "s": 15,
+        "text": "같은 달 *고향* 생각"
+      }
+    ],
+    "image_queries": [
+      "mooncake market Laos",
+      "full moon family celebration",
+      "people sharing mooncakes",
+      "lantern decorations street",
+      "different regional festivals Laos",
+      "national holiday misconception",
+      "ordinary day special dinner",
+      "holiday food shop display",
+      "family reminiscing dinner",
+      "immigrant community tradition",
+      "street scene changing celebration",
+      "same moon hometown thoughts"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "mooncake market Laos",
+      "full moon family celebration",
+      "people sharing mooncakes",
+      "lantern decorations street",
+      "different regional festivals Laos",
+      "national holiday misconception",
+      "ordinary day special dinner",
+      "holiday food shop display",
+      "family reminiscing dinner",
+      "immigrant community tradition",
+      "street scene changing celebration",
+      "same moon hometown thoughts"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Ji-Elle",
+        "license": "CC BY-SA 4.0",
+        "title": "London-Mid-Autumn Festival.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:London-Mid-Autumn_Festival.jpg",
+        "id": "c:127976569"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Bessi",
+        "page": "https://pixabay.com/photos/tree-cat-silhouette-moon-full-moon-736877/",
+        "id": 736877
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Myriams-Fotos",
+        "page": "https://pixabay.com/photos/sandwich-bread-poverty-homeless-5549852/",
+        "id": 5549852
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "tathanhtuan",
+        "page": "https://pixabay.com/photos/lantern-street-hoi-an-night-4670035/",
+        "id": 4670035
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Shizhao",
+        "license": "CC BY-SA 2.5",
+        "title": "Mid-Autumn Festival-beijing.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mid-Autumn_Festival-beijing.jpg",
+        "id": "c:1297630"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "oohhsnapp",
+        "page": "https://pixabay.com/photos/flag-america-usa-states-1291945/",
+        "id": 1291945
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/sparkling-wine-dinner-celebration-6878162/",
+        "id": 6878162
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "janfried",
+        "page": "https://pixabay.com/photos/farmers-local-market-fruit-7972956/",
+        "id": 7972956
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Ocenam",
+        "page": "https://pixabay.com/photos/dinner-thanksgiving-family-table-7610751/",
+        "id": 7610751
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Solarselle77",
+        "page": "https://pixabay.com/photos/tradition-connection-children-9999499/",
+        "id": 9999499
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "abelalemseged",
+        "page": "https://pixabay.com/photos/traditional-attire-african-style-10269735/",
+        "id": 10269735
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Sergio-sq",
+        "page": "https://pixabay.com/photos/moon-moon-phases-sky-8006703/",
+        "id": 8006703,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2379,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b7720e4e93ea",
+        "at": "2026-10-31 00:29",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3f171b9cb077",
+        "at": "2026-10-31 00:29",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1926,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d0ec2ffe6110",
+        "at": "2026-10-31 00:29",
+        "scene": 3,
+        "rejected_ids": [
+          10363974,
+          1867429,
+          5549852,
+          "c:127976569",
+          "c:1297630"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2882,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "98466174d3a5",
+        "at": "2026-10-31 00:29",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2219,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5bf91edd148f",
+        "at": "2026-10-31 00:29",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2627,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1d3595815ee0",
+        "at": "2026-10-31 00:29",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2602,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a3f83acdd0ed",
+        "at": "2026-10-31 00:29",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2401,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b2fed8b7e3e6",
+        "at": "2026-10-31 00:29",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2424,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4c97ad87368d",
+        "at": "2026-10-31 00:29",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2665,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba1c828cf7fb",
+        "at": "2026-10-31 00:29",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2377,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cc030ff4ef6c",
+        "at": "2026-10-31 00:30",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2768,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1ed4e7031eae",
+        "at": "2026-10-31 00:30",
+        "scene": 12,
+        "rejected_ids": [
+          8006703,
+          "c:82230822"
+        ]
+      }
+    ]
   },
   {
     "topic": "로사르, 지역마다 다른 새해 시작",
@@ -38446,7 +41151,313 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "부탄 로사르 새해",
+    "title_line2": "지역마다 8주 차이",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새해가 *다른* 날?"
+      },
+      {
+        "s": 4,
+        "text": "로사르, *새해* 의미"
+      },
+      {
+        "s": 7,
+        "text": "파로·하에 *롬바*"
+      },
+      {
+        "s": 12,
+        "text": "날마다 *다른* 풍경"
+      },
+      {
+        "s": 15,
+        "text": "지역 *기억* 새해"
+      }
+    ],
+    "image_queries": [
+      "different New Year dates",
+      "Bhutan regional New Year celebration",
+      "Losar Tibetan Buddhist festival",
+      "Bhutan village New Year scene",
+      "Paro Ha Romba celebration",
+      "alternative New Year customs",
+      "family cleaning and cooking",
+      "traditional Bhutanese feast",
+      "changing landscape daily",
+      "weekday holiday contrast",
+      "regional memory New Year",
+      "new beginnings sunrise"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "different New Year dates",
+      "Bhutan regional New Year celebration",
+      "Losar Tibetan Buddhist festival",
+      "Bhutan village New Year scene",
+      "Paro Ha Romba celebration",
+      "alternative New Year customs",
+      "family cleaning and cooking",
+      "traditional Bhutanese feast",
+      "changing landscape daily",
+      "weekday holiday contrast",
+      "regional memory New Year",
+      "new beginnings sunrise"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "flutie8211",
+        "page": "https://pixabay.com/photos/new-year-new-years-day-celebration-6851883/",
+        "id": 6851883
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Timofeytv",
+        "license": "CC BY-SA 4.0",
+        "title": "Lobsang Nyandak, Tibetan Lunar New Year - Losar 2147, New York.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lobsang_Nyandak,_Tibetan_Lunar_New_Year_-_Losar_2147,_New_York.jpg",
+        "id": "c:87751488"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "thatbaldguy",
+        "page": "https://pixabay.com/photos/dragons-twins-tibetan-sign-2743843/",
+        "id": 2743843
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "skylech75",
+        "page": "https://pixabay.com/photos/fields-houses-village-bhutan-6964338/",
+        "id": 6964338
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "donvikro",
+        "page": "https://pixabay.com/photos/temple-monastery-cliff-cliffside-171377/",
+        "id": 171377,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472673/",
+        "id": 8472673
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "MatlaBrand",
+        "page": "https://pixabay.com/photos/mother-and-daughter-cooking-kitchen-7031077/",
+        "id": 7031077
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Timofeytv",
+        "license": "CC BY-SA 4.0",
+        "title": "Lobsang, Nyandak, Tibetan Lunar New Year Losar 2147, New York, Tibet Fund.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lobsang,_Nyandak,_Tibetan_Lunar_New_Year_Losar_2147,_New_York,_Tibet_Fund.jpg",
+        "id": "c:87751280"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "u_pier2nqk5k",
+        "page": "https://pixabay.com/photos/nepali-farmer-traditional-farming-10022443/",
+        "id": 10022443
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "rperucho",
+        "page": "https://pixabay.com/photos/building-architecture-lines-angles-8387276/",
+        "id": 8387276,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "makabera",
+        "page": "https://pixabay.com/photos/fireworks-celebration-new-years-day-6868566/",
+        "id": 6868566
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "KRiemer",
+        "page": "https://pixabay.com/photos/sunrise-sunset-morning-mood-nature-5324379/",
+        "id": 5324379
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3289,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "981832a66988",
+        "at": "2026-10-31 00:30",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.283,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d8ae986cd538",
+        "at": "2026-10-31 00:31",
+        "scene": 2,
+        "rejected_ids": [
+          574739,
+          6868566,
+          "c:87751488",
+          "c:94174831"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2388,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "70c8ccfb0fac",
+        "at": "2026-10-31 00:30",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2803,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "562e1dbb9944",
+        "at": "2026-10-31 00:30",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2482,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dbf23e895b11",
+        "at": "2026-10-31 00:31",
+        "scene": 5,
+        "rejected_ids": [
+          171377,
+          "c:94174831"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2717,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7c593c3f25b0",
+        "at": "2026-10-31 00:30",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3198,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a3f552dfe0fc",
+        "at": "2026-10-31 00:30",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2164,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "db513f24ded9",
+        "at": "2026-10-31 00:31",
+        "scene": 8,
+        "rejected_ids": [
+          2725141,
+          2725142,
+          "c:87751280",
+          "c:87751488",
+          "c:94174831"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2133,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f1f7f60fd6d1",
+        "at": "2026-10-31 00:30",
+        "scene": 9,
+        "rejected_ids": [
+          10022443,
+          4650074,
+          4704971,
+          "c:51659686",
+          "c:63887079"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.195,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "824161e7ca75",
+        "at": "2026-10-31 00:31",
+        "scene": 10,
+        "rejected_ids": [
+          8387276,
+          8802107,
+          "c:87751280",
+          "c:87751488",
+          "c:94174831"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2362,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a72d910ea8a7",
+        "at": "2026-10-31 00:30",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3028,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "69dcc7d20309",
+        "at": "2026-10-31 00:30",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "노로드옴 시하누크(Norodom Sihanouk)의 별명 ‘핑크 프린스(Pink Prince)’",
@@ -38472,7 +41483,312 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "시하누크, 왕에서 총리까지",
+    "title_line2": "핑크 프린스, 옷은?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "왕이 *정치*에 뛰어들다"
+      },
+      {
+        "s": 5,
+        "text": "독립·*핵심* 역할"
+      },
+      {
+        "s": 7,
+        "text": "*왕위* 내려놓고 정치"
+      },
+      {
+        "s": 11,
+        "text": "쿠데타·*내전* 겪다"
+      },
+      {
+        "s": 14,
+        "text": "왕이 *복귀* 다시"
+      }
+    ],
+    "image_queries": [
+      "king entering politics",
+      "Cambodia Norodom Sihanouk portrait",
+      "French colonial Cambodia palace",
+      "Cambodia independence signing",
+      "king abdication ceremony",
+      "prime minister office Cambodia",
+      "royal palace political hall",
+      "coup protest street Cambodia",
+      "exile travel suitcase",
+      "king returns to throne",
+      "Cambodia turbulent era",
+      "Sihanouk titles timeline"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "king entering politics",
+      "Cambodia Norodom Sihanouk portrait",
+      "French colonial Cambodia palace",
+      "Cambodia independence signing",
+      "king abdication ceremony",
+      "prime minister office Cambodia",
+      "royal palace political hall",
+      "coup protest street Cambodia",
+      "exile travel suitcase",
+      "king returns to throne",
+      "Cambodia turbulent era",
+      "Sihanouk titles timeline"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Iraqi Government",
+        "license": "Public domain",
+        "title": "King of Iraq - Faisal II 1953.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:King_of_Iraq_-_Faisal_II_1953.jpg",
+        "id": "c:190354374"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "bunsak",
+        "page": "https://pixabay.com/photos/statue-of-king-father-2613650/",
+        "id": 2613650
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Simon",
+        "page": "https://pixabay.com/photos/cambodia-royal-palace-palace-temple-439/",
+        "id": 439
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "noah4ever",
+        "page": "https://pixabay.com/photos/cambodia-phnom-penh-2322836/",
+        "id": 2322836
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Print made by: Adolphe Jean Baptiste Bayot After: Louis Gallait Printed by: Bert",
+        "license": "Public domain",
+        "title": "Abdication de Charles-Quint (BM 1901,1022.1952).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Abdication_de_Charles-Quint_(BM_1901,1022.1952).jpg",
+        "id": "c:90197481"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Rob Croes for Anefo",
+        "license": "CC0",
+        "title": "Norodom Sihanouk (1983).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_(1983).jpg",
+        "id": "c:27509079"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/india-mysore-palace-architecture-10514028/",
+        "id": 10514028
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Rob Croes for Anefo",
+        "license": "CC0",
+        "title": "Norodom Sihanouk (1983).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_(1983).jpg",
+        "id": "c:27509079"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
+        "id": 1149289,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Galileo Chini (1873-1956)",
+        "license": "Public domain",
+        "title": "Thongduang (Rama I) Returns to Thonburi 1782 Fresco Dusit Palace.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Thongduang_(Rama_I)_Returns_to_Thonburi_1782_Fresco_Dusit_Palace.png",
+        "id": "c:181677580"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Rob Croes for Anefo",
+        "license": "CC0",
+        "title": "Norodom Sihanouk (1983).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_(1983).jpg",
+        "id": "c:27509079"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "(unknown, Abaca Press claims ownership but claim is doubtful)",
+        "license": "Public domain",
+        "title": "Norodom Sihanouk in 1941.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_in_1941.jpg",
+        "id": "c:168035001"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2903,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "68c28f86e02c",
+        "at": "2026-10-31 00:32",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2819,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f123e36b136e",
+        "at": "2026-10-31 00:32",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3329,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7815934feec2",
+        "at": "2026-10-31 00:32",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3067,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "34d6d044c65b",
+        "at": "2026-10-31 00:32",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2768,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3d6c5e15b079",
+        "at": "2026-10-31 00:32",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2552,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4dba9e2e2968",
+        "at": "2026-10-31 00:32",
+        "scene": 6,
+        "rejected_ids": [
+          3601909,
+          "c:27509079"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2664,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7d5df416f35c",
+        "at": "2026-10-31 00:32",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1958,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d8771bedc6dc",
+        "at": "2026-10-31 00:32",
+        "scene": 8,
+        "rejected_ids": [
+          6129239,
+          7289494,
+          8573441,
+          "c:168035001",
+          "c:27509079"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2623,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e6ac9e3d6451",
+        "at": "2026-10-31 00:32",
+        "scene": 9,
+        "rejected_ids": [
+          1149289,
+          5219496,
+          "c:27509079"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2213,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b9da3839db62",
+        "at": "2026-10-31 00:33",
+        "scene": 10,
+        "rejected_ids": [
+          5967267,
+          "c:181677580"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2801,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a6c956ff0a2f",
+        "at": "2026-10-31 00:32",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2622,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0ee0f27d7603",
+        "at": "2026-10-31 00:32",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "마야(Maya)라는 이름의 기원",
@@ -38498,7 +41814,292 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "과테말라 마야 이름",
+    "title_line2": "스스로 만든 이름일까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*마야* 이름은 누가?"
+      },
+      {
+        "s": 4,
+        "text": "*도시*와 이름 연결?"
+      },
+      {
+        "s": 9,
+        "text": "여러 *공동체*와 언어"
+      },
+      {
+        "s": 15,
+        "text": "끝나지 않은 *이야기*"
+      }
+    ],
+    "image_queries": [
+      "Maya stone carving",
+      "Yucatan Maya city ruins",
+      "Maya city ruins connection",
+      "Guatemala ancient city name",
+      "Maya stone symbols similarity",
+      "Maya manuscript page",
+      "Guatemala Maya village market",
+      "Maya language classroom",
+      "Maya temple ruins",
+      "Guatemala contemporary Maya people",
+      "Maya heritage museum interior",
+      "Maya stone staircase story"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Maya stone carving",
+      "Yucatan Maya city ruins",
+      "Maya city ruins connection",
+      "Guatemala ancient city name",
+      "Maya stone symbols similarity",
+      "Maya manuscript page",
+      "Guatemala Maya village market",
+      "Maya language classroom",
+      "Maya temple ruins",
+      "Guatemala contemporary Maya people",
+      "Maya heritage museum interior",
+      "Maya stone staircase story"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "jtyoder",
+        "page": "https://pixabay.com/photos/maya-mayan-ancient-mexico-culture-542096/",
+        "id": 542096
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "laGiuffry",
+        "page": "https://pixabay.com/photos/chich%C3%A9n-itza-mexico-pyramid-maya-3874449/",
+        "id": 3874449
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "DEZALB",
+        "page": "https://pixabay.com/photos/guatemala-sayatche-platform-maya-4943005/",
+        "id": 4943005,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "xiquinhosilva",
+        "license": "CC BY 4.0",
+        "title": "Iconic Maya city of Tikal - Flores Guatemala.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Iconic_Maya_city_of_Tikal_-_Flores_Guatemala.jpg",
+        "id": "c:185521341"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "jtyoder",
+        "page": "https://pixabay.com/photos/temple-maya-pyramid-yucatan-mayan-542082/",
+        "id": 542082
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "FreeCreativeStuff",
+        "page": "https://pixabay.com/photos/vintage-paper-retro-antique-2721100/",
+        "id": 2721100
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "DEZALB",
+        "page": "https://pixabay.com/photos/guatemala-ethnic-painting-art-889752/",
+        "id": 889752
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "BiljaST",
+        "page": "https://pixabay.com/photos/english-english-language-language-2724442/",
+        "id": 2724442
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "RonaldPlett",
+        "page": "https://pixabay.com/photos/mayan-temple-night-milkyway-7708716/",
+        "id": 7708716
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "JancickaL",
+        "page": "https://pixabay.com/photos/pyramid-maya-temple-ruins-prales-5408477/",
+        "id": 5408477
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Dale Cruse from San Francisco, CA, USA",
+        "license": "CC BY 2.0",
+        "title": "British Museum (53516051359).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:British_Museum_(53516051359).jpg",
+        "id": "c:145537475"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "stokpic",
+        "page": "https://pixabay.com/photos/staircase-spiral-architecture-600468/",
+        "id": 600468
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2606,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d09cbbce6d18",
+        "at": "2026-10-31 00:33",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2891,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4353ea9ebe7d",
+        "at": "2026-10-31 00:33",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3046,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "58e44b3f3b9c",
+        "at": "2026-10-31 00:33",
+        "scene": 3,
+        "rejected_ids": [
+          2459465,
+          4943005,
+          "c:113995869"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2853,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1b7c33fdabbf",
+        "at": "2026-10-31 00:33",
+        "scene": 4,
+        "rejected_ids": [
+          7279015,
+          "c:185521341"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2416,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d7f113f57031",
+        "at": "2026-10-31 00:33",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2305,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "831c05772a90",
+        "at": "2026-10-31 00:33",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2753,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5b61162748ea",
+        "at": "2026-10-31 00:33",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2328,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0f1eae7617de",
+        "at": "2026-10-31 00:33",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2936,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3f7c71c1c8b7",
+        "at": "2026-10-31 00:33",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2329,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dea4194e04b9",
+        "at": "2026-10-31 00:33",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2954,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2d58dda991dc",
+        "at": "2026-10-31 00:33",
+        "scene": 11,
+        "rejected_ids": [
+          1850730,
+          "c:145537475"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.295,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f56f48555056",
+        "at": "2026-10-31 00:33",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "필리핀(Philippines)의 세계 최장 크리스마스 시즌",
@@ -38524,7 +42125,319 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "필리핀크리스마스시즌",
+    "title_line2": "8월부터시작한다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*크리스마스*가?"
+      },
+      {
+        "s": 5,
+        "text": "축제는 *먼저* 시작!"
+      },
+      {
+        "s": 6,
+        "text": "별등불 *파롤* 눈길!"
+      },
+      {
+        "s": 16,
+        "text": "연말보다 *먼저* 온다"
+      }
+    ],
+    "image_queries": [
+      "mall Christmas music September",
+      "Philippines early Christmas atmosphere",
+      "store Christmas decorations street lights",
+      "early festival decorations Philippines",
+      "star lantern parol Philippines",
+      "December church service Philippines",
+      "family Christmas mass Philippines",
+      "quiet September street Philippines",
+      "church vs festival decorations Philippines",
+      "varied Christmas celebrations Philippines",
+      "Christmas ornament and song",
+      "anticipation before year end Philippines"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "mall Christmas music September",
+      "Philippines early Christmas atmosphere",
+      "store Christmas decorations street lights",
+      "early festival decorations Philippines",
+      "star lantern parol Philippines",
+      "December church service Philippines",
+      "family Christmas mass Philippines",
+      "quiet September street Philippines",
+      "church vs festival decorations Philippines",
+      "varied Christmas celebrations Philippines",
+      "Christmas ornament and song",
+      "anticipation before year end Philippines"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/shopping-mall-woman-shopping-store-522619/",
+        "id": 522619
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Lotus Head from Johannesburg, Gauteng, South Africa",
+        "license": "CC BY-SA 3.0",
+        "title": "Christmas tree sxc hu.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Christmas_tree_sxc_hu.jpg",
+        "id": "c:32754"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "farago_jozsef",
+        "page": "https://pixabay.com/photos/horses-sculpture-winter-sleigh-6963914/",
+        "id": 6963914
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "MichaelCatadman",
+        "page": "https://pixabay.com/photos/festival-dance-costume-culture-10332845/",
+        "id": 10332845,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "705847",
+        "page": "https://pixabay.com/photos/tea-light-lamp-lantern-candle-639489/",
+        "id": 639489,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Arius1998",
+        "license": "CC BY-SA 4.0",
+        "title": "Entrance of Knox United Methodist Church.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Entrance_of_Knox_United_Methodist_Church.jpg",
+        "id": "c:177285803"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Tlove0523",
+        "page": "https://pixabay.com/photos/family-parents-baby-holiday-5841332/",
+        "id": 5841332
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "title": "DSC 9544 Quiet residential street lined with colorful multi-story houses and potted plants",
+        "page": "https://commons.wikimedia.org/wiki/File:DSC_9544_Quiet_residential_street_lined_with_colorful_multi-story_houses_and_potted_plants_under_a_web_of_overhead_utility_wires.jpg",
+        "id": "c:200006790"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Bernhard_Schuermann",
+        "page": "https://pixabay.com/photos/church-religion-evangelical-7583110/",
+        "id": 7583110,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Lotus Head from Johannesburg, Gauteng, South Africa",
+        "license": "CC BY-SA 3.0",
+        "title": "Christmas tree sxc hu.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Christmas_tree_sxc_hu.jpg",
+        "id": "c:32754"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "neelam279",
+        "page": "https://pixabay.com/photos/violin-sheet-music-fir-branch-8439085/",
+        "id": 8439085
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "eliza28diamonds",
+        "page": "https://pixabay.com/photos/year-end-new-calendar-done-over-4720870/",
+        "id": 4720870,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2948,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "35e0e4d0711f",
+        "at": "2026-10-31 00:34",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2687,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5d4fe32c9bd9",
+        "at": "2026-10-31 00:34",
+        "scene": 2,
+        "rejected_ids": [
+          7216098,
+          "c:32754"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2724,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "84838836fa22",
+        "at": "2026-10-31 00:34",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2968,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "36b94a458232",
+        "at": "2026-10-31 00:34",
+        "scene": 4,
+        "rejected_ids": [
+          10332845,
+          "c:32754"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2172,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8178c24ec42d",
+        "at": "2026-10-31 00:34",
+        "scene": 5,
+        "rejected_ids": [
+          4006343,
+          639489,
+          "c:105370275",
+          "c:32754",
+          "c:65642131"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2553,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f8846ce87aec",
+        "at": "2026-10-31 00:34",
+        "scene": 6,
+        "rejected_ids": [
+          6879475,
+          "c:177285803"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2204,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "67dce84d8236",
+        "at": "2026-10-31 00:34",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.334,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ac8fd7de9465",
+        "at": "2026-10-31 00:34",
+        "scene": 8,
+        "rejected_ids": [
+          3864462,
+          "c:200006790"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2302,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "819da05d68ce",
+        "at": "2026-10-31 00:35",
+        "scene": 9,
+        "rejected_ids": [
+          648430,
+          7583110,
+          "c:32754"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2609,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "405314dc715f",
+        "at": "2026-10-31 00:35",
+        "scene": 10,
+        "rejected_ids": [
+          386607,
+          "c:32754",
+          "c:65642131"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3013,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e318f9dd9f1e",
+        "at": "2026-10-31 00:34",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2618,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "60093fa7c64c",
+        "at": "2026-10-31 00:35",
+        "scene": 12,
+        "rejected_ids": [
+          4720870,
+          7528410,
+          "c:32754"
+        ]
+      }
+    ]
   },
   {
     "topic": "인도 금융 규제의 세 가지 법적 구분",
@@ -38550,7 +42463,308 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "인도 금융 규제 세 가지",
+    "title_line2": "하루에 세 법을?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*기관*이 모두 감독?"
+      },
+      {
+        "s": 3,
+        "text": "*중앙은행*이 핵심"
+      },
+      {
+        "s": 5,
+        "text": "*증권감독* 기관"
+      },
+      {
+        "s": 7,
+        "text": "*보험* 감독 별도"
+      },
+      {
+        "s": 12,
+        "text": "*위험*은 연결"
+      }
+    ],
+    "image_queries": [
+      "India bank and stock exchange",
+      "India central bank building",
+      "Reserve Bank of India interior",
+      "India securities regulator office",
+      "India insurance regulator building",
+      "bank vault interior",
+      "stock exchange trading floor",
+      "insurance policy documents",
+      "domino pieces falling",
+      "pension fund documents",
+      "financial transaction ledger",
+      "stacked safety nets"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "India bank and stock exchange",
+      "India central bank building",
+      "Reserve Bank of India interior",
+      "India securities regulator office",
+      "India insurance regulator building",
+      "bank vault interior",
+      "stock exchange trading floor",
+      "insurance policy documents",
+      "domino pieces falling",
+      "pension fund documents",
+      "financial transaction ledger",
+      "stacked safety nets"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "3844328",
+        "page": "https://pixabay.com/photos/stock-trading-monitor-business-1863880/",
+        "id": 1863880
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "DenisStreltsov",
+        "page": "https://pixabay.com/photos/mumbai-india-the-central-bank-4660039/",
+        "id": 4660039
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "rupixen",
+        "page": "https://pixabay.com/photos/rupee-indian-india-money-bank-note-4395462/",
+        "id": 4395462
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "N509FZ",
+        "license": "CC BY-SA 4.0",
+        "title": "National Administration of Financial Regulation (20230628183842).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:National_Administration_of_Financial_Regulation_(20230628183842).jpg",
+        "id": "c:133704944"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "panoramix11",
+        "page": "https://pixabay.com/photos/architecture-dome-mosque-building-5613376/",
+        "id": 5613376,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ahobbit",
+        "page": "https://pixabay.com/photos/vault-business-bank-vault-bank-1144249/",
+        "id": 1144249
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "fototv",
+        "page": "https://pixabay.com/photos/stock-exchange-financial-institute-2816898/",
+        "id": 2816898
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Q4398124 , Goznak",
+        "license": "Public domain",
+        "title": "Policy of compulsory insurance of the civil liability of vehicle owners in Russia 2021.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Policy_of_compulsory_insurance_of_the_civil_liability_of_vehicle_owners_in_Russia_2021.jpg",
+        "id": "c:114765133"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "isaacnm12",
+        "page": "https://pixabay.com/photos/domino-pieces-perspective-play-5895698/",
+        "id": 5895698
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/piggy-bank-savings-coins-cash-968302/",
+        "id": 968302
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "cpastrick",
+        "page": "https://pixabay.com/photos/ledger-accounting-business-money-1428230/",
+        "id": 1428230
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "A_Different_Perspective",
+        "page": "https://pixabay.com/photos/safety-net-spirit-network-3289548/",
+        "id": 3289548,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2354,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7d72e81c4d1a",
+        "at": "2026-10-31 00:35",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3063,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "de1e37b3e3ce",
+        "at": "2026-10-31 00:35",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2637,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "476085888209",
+        "at": "2026-10-31 00:35",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2492,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d77a944f90e1",
+        "at": "2026-10-31 00:35",
+        "scene": 4,
+        "rejected_ids": [
+          1129949,
+          7406033,
+          "c:133704944",
+          "c:138603234",
+          "c:192581113"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2089,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6a1a9140b8ef",
+        "at": "2026-10-31 00:35",
+        "scene": 5,
+        "rejected_ids": [
+          2857982,
+          5613376,
+          7130382,
+          "c:138603234",
+          "c:192581113"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3487,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "50fcdf8d6bf7",
+        "at": "2026-10-31 00:35",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3436,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "795f4470a8b5",
+        "at": "2026-10-31 00:35",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2455,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9a8c9f26f95c",
+        "at": "2026-10-31 00:36",
+        "scene": 8,
+        "rejected_ids": [
+          5238829,
+          "c:114765133"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3479,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9772f749d515",
+        "at": "2026-10-31 00:35",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2213,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bfb2e121f3f9",
+        "at": "2026-10-31 00:35",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3659,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "de34eaeca0c9",
+        "at": "2026-10-31 00:35",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2516,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "29b5238ab821",
+        "at": "2026-10-31 00:36",
+        "scene": 12,
+        "rejected_ids": [
+          1572408,
+          3289548,
+          6913029,
+          "c:138603234",
+          "c:192581113"
+        ]
+      }
+    ]
   },
   {
     "topic": "예술 음악(클래식)과 일상 음악의 구분",
@@ -38576,7 +42790,311 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "캄보디아 클래식",
+    "title_line2": "궁정과 집, 소리 차이",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "왜 *분위기* 다를까?"
+      },
+      {
+        "s": 3,
+        "text": "*궁정* 의례 합주"
+      },
+      {
+        "s": 6,
+        "text": "*모호리* 다른 악기"
+      },
+      {
+        "s": 10,
+        "text": "장소에 따라 *표정*"
+      },
+      {
+        "s": 12,
+        "text": "*새장르* 전통 악기"
+      }
+    ],
+    "image_queries": [
+      "Cambodian traditional musicians",
+      "Cambodian court orchestra",
+      "xylophone drum ensemble",
+      "Mohori instrument group",
+      "string instrument ensemble",
+      "village folk music festival",
+      "outdoor music performance",
+      "family celebration music",
+      "traditional Cambodian instruments modern",
+      "museum musical instrument exhibit",
+      "close-up traditional instrument",
+      "ceremonial hall music"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Cambodian traditional musicians",
+      "Cambodian court orchestra",
+      "xylophone drum ensemble",
+      "Mohori instrument group",
+      "string instrument ensemble",
+      "village folk music festival",
+      "outdoor music performance",
+      "family celebration music",
+      "traditional Cambodian instruments modern",
+      "museum musical instrument exhibit",
+      "close-up traditional instrument",
+      "ceremonial hall music"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Allan Jay Quesada",
+        "license": "CC BY-SA 4.0",
+        "title": "Traditional Musicians of Angkor Wat by Allan Jay Quesada.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_Musicians_of_Angkor_Wat_by_Allan_Jay_Quesada.jpg",
+        "id": "c:100547681"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Nahid Sultan",
+        "license": "CC BY-SA 4.0",
+        "title": "Bengal-ITC SRA Classical Music Festival 2016.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bengal-ITC_SRA_Classical_Music_Festival_2016.jpg",
+        "id": "c:63300400"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Carlquist, Sherwin John, 1930-2021",
+        "license": "CC BY 4.0",
+        "title": "(Piphat ensemble in Bangkok, Thailand) - DPLA - 8e8d06deb7efe72879836062e8e37c2c.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:(Piphat_ensemble_in_Bangkok,_Thailand)_-_DPLA_-_8e8d06deb7efe72879836062e8e37c2c.jpg",
+        "id": "c:195202946"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Porträt des Komponisten Pjotr I. Tschaikowski (1840-1893).jpg : Nikolay Kuznetso",
+        "license": "CC BY-SA 3.0",
+        "title": "Classical music composers montage.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Classical_music_composers_montage.JPG",
+        "id": "c:12156431"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "RoAll",
+        "page": "https://pixabay.com/photos/instrument-bass-double-bass-music-2460279/",
+        "id": 2460279
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "sirigel",
+        "page": "https://pixabay.com/photos/trumpet-village-festival-437939/",
+        "id": 437939
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Joshwiiieee",
+        "page": "https://pixabay.com/photos/musician-traditional-clothing-10388442/",
+        "id": 10388442
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "RosZie",
+        "page": "https://pixabay.com/photos/christmas-christmas-music-7625952/",
+        "id": 7625952
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "ThaiVanmc",
+        "page": "https://pixabay.com/photos/woman-traditional-dress-cambodian-7208384/",
+        "id": 7208384,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "maxmann",
+        "page": "https://pixabay.com/photos/wing-piano-keyboard-instrument-3721701/",
+        "id": 3721701
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "fotoblend",
+        "page": "https://pixabay.com/photos/instrument-music-guitar-to-play-3130798/",
+        "id": 3130798
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "3d U.S. Infantry Regiment (The Old Guard)",
+        "license": "Public domain",
+        "title": "Department of the Army General Officer retirement ceremony at Conmy Hall on Joint Base Mye",
+        "page": "https://commons.wikimedia.org/wiki/File:Department_of_the_Army_General_Officer_retirement_ceremony_at_Conmy_Hall_on_Joint_Base_Myer%E2%80%93Henderson_Hall,_Virginia_on_January_29,_2026_-_84.jpg",
+        "id": "c:182965827"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3021,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5ebf551dc686",
+        "at": "2026-10-31 00:37",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2107,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "21e5e3e48400",
+        "at": "2026-10-31 00:37",
+        "scene": 2,
+        "rejected_ids": [
+          2385378,
+          5782695,
+          "c:12156431",
+          "c:2227785",
+          "c:63300400"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2679,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "140dc531cf5b",
+        "at": "2026-10-31 00:37",
+        "scene": 3,
+        "rejected_ids": [
+          3128351,
+          "c:195202946"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2365,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "584b02449497",
+        "at": "2026-10-31 00:37",
+        "scene": 4,
+        "rejected_ids": [
+          1836655,
+          "c:12156431",
+          "c:63300400"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3313,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9970a7d80541",
+        "at": "2026-10-31 00:37",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2448,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0fb0bb396253",
+        "at": "2026-10-31 00:37",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2375,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0e4ea81a525a",
+        "at": "2026-10-31 00:37",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2652,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "70ddfdc85b5a",
+        "at": "2026-10-31 00:37",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2404,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "993c36a7e9c8",
+        "at": "2026-10-31 00:37",
+        "scene": 9,
+        "rejected_ids": [
+          7208384,
+          "c:2227785"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3074,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ff474c1bba4f",
+        "at": "2026-10-31 00:37",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2751,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "03c8d8f58b6b",
+        "at": "2026-10-31 00:37",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2777,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "52717016ddab",
+        "at": "2026-10-31 00:37",
+        "scene": 12,
+        "rejected_ids": [
+          8243411,
+          "c:182965827"
+        ]
+      }
+    ]
   },
   {
     "topic": "밤에 눈이 큰 마다가스카르 고유 원숭이",
@@ -38602,7 +43120,341 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "밤에 눈빛 나는 원숭이",
+    "title_line2": "왜 이렇게 빛날까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "손가락으로 *먹이*"
+      },
+      {
+        "s": 3,
+        "text": "큰 *귀*와 눈"
+      },
+      {
+        "s": 6,
+        "text": "손가락으로 *두드려*"
+      },
+      {
+        "s": 11,
+        "text": "*두드림*·청취·추출"
+      },
+      {
+        "s": 13,
+        "text": "*여우원숭이* 밤활동"
+      }
+    ],
+    "image_queries": [
+      "lemur extracting food with finger",
+      "aye-aye large ears eyes",
+      "curious aye-aye close-up",
+      "aye-aye tapping tree with finger",
+      "aye-aye listening for larvae inside wood",
+      "aye-aye gnawing wood with teeth",
+      "aye-aye extracting larvae from crevice",
+      "tapping listening extracting motion",
+      "nocturnal aye-aye in forest",
+      "deforestation threat Madagascar forest",
+      "misunderstood aye-aye appearance",
+      "adapted aye-aye finger adaptation"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "lemur extracting food with finger",
+      "aye-aye large ears eyes",
+      "curious aye-aye close-up",
+      "aye-aye tapping tree with finger",
+      "aye-aye listening for larvae inside wood",
+      "aye-aye gnawing wood with teeth",
+      "aye-aye extracting larvae from crevice",
+      "tapping listening extracting motion",
+      "nocturnal aye-aye in forest",
+      "deforestation threat Madagascar forest",
+      "misunderstood aye-aye appearance",
+      "adapted aye-aye finger adaptation"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Charles J. Sharp",
+        "license": "CC BY-SA 4.0",
+        "title": "Ring-tailed lemur (Lemur catta).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
+        "id": "c:75870154"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Richard Bartz , Munich aka Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "title": "Katta Lemur catta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Katta_Lemur_catta.jpg",
+        "id": "c:3682929"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Charles J. Sharp",
+        "license": "CC BY-SA 4.0",
+        "title": "Ring-tailed lemur (Lemur catta).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
+        "id": "c:75870154"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Charles J. Sharp",
+        "license": "CC BY-SA 4.0",
+        "title": "Ring-tailed lemur (Lemur catta).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
+        "id": "c:75870154"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Richard Bartz , Munich aka Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "title": "Katta Lemur catta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Katta_Lemur_catta.jpg",
+        "id": "c:3682929"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Richard Bartz , Munich aka Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "title": "Katta Lemur catta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Katta_Lemur_catta.jpg",
+        "id": "c:3682929"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Francis C. Franklin",
+        "license": "CC BY-SA 3.0",
+        "title": "Ring tailed lemur portrait.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ring_tailed_lemur_portrait.jpg",
+        "id": "c:35495696"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "whoalice-moore",
+        "page": "https://pixabay.com/photos/girl-music-fashion-listen-1990347/",
+        "id": 1990347,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "thewildprimate",
+        "page": "https://pixabay.com/photos/tarsier-eyes-nocturnal-bohol-10327055/",
+        "id": 10327055
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Richard Bartz , Munich aka Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "title": "Katta Lemur catta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Katta_Lemur_catta.jpg",
+        "id": "c:3682929"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "GabruPawPixels",
+        "page": "https://pixabay.com/photos/aye-aye-lemur-madagascar-primate-10233817/",
+        "id": 10233817
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Sannse at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "title": "Ring tailed lemur and twins.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ring_tailed_lemur_and_twins.jpg",
+        "id": "c:112516"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3125,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4a4a7d816408",
+        "at": "2026-10-31 00:38",
+        "scene": 1,
+        "rejected_ids": [
+          650029,
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.25,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "177f92375864",
+        "at": "2026-10-31 00:39",
+        "scene": 2,
+        "rejected_ids": [
+          10256033,
+          1705112,
+          "c:3682929",
+          "c:75870154",
+          "c:90241290"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1605,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b0bbaa9d98ec",
+        "at": "2026-10-31 00:39",
+        "scene": 3,
+        "rejected_ids": [
+          4098058,
+          7024125,
+          8257177,
+          "c:128540175",
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2344,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dda84a2072cc",
+        "at": "2026-10-31 00:39",
+        "scene": 4,
+        "rejected_ids": [
+          1169896,
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2387,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "934f8769a689",
+        "at": "2026-10-31 00:39",
+        "scene": 5,
+        "rejected_ids": [
+          5350546,
+          "c:3682929",
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2612,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "203d1ed5e9db",
+        "at": "2026-10-31 00:39",
+        "scene": 6,
+        "rejected_ids": [
+          7215754,
+          7886465,
+          "c:3682929",
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2225,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "70687bac1ac5",
+        "at": "2026-10-31 00:39",
+        "scene": 7,
+        "rejected_ids": [
+          4395545,
+          5350546,
+          "c:35495696",
+          "c:3682929",
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.263,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3ec1578cca97",
+        "at": "2026-10-31 00:40",
+        "scene": 8,
+        "rejected_ids": [
+          1990347,
+          "c:35495696"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2923,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5ea81d0041a9",
+        "at": "2026-10-31 00:38",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "416b5a47f64b",
+        "at": "2026-10-31 00:40",
+        "scene": 10,
+        "rejected_ids": [
+          1383616,
+          384957,
+          "c:3682929",
+          "c:75870154"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.319,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c4e653c947dc",
+        "at": "2026-10-31 00:38",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2738,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "645699009350",
+        "at": "2026-10-31 00:38",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "손에 쥐고 바로 먹는 핑거 뷔페",
@@ -38628,7 +43480,322 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "포르투갈 핑거 뷔페",
+    "title_line2": "컵케이크 무제한?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "앉지 말고 *손*"
+      },
+      {
+        "s": 3,
+        "text": "집어 먹는 *핑거*"
+      },
+      {
+        "s": 5,
+        "text": "다양한 작은 *맛*"
+      },
+      {
+        "s": 8,
+        "text": "*음식* 움직임 바꾸다"
+      },
+      {
+        "s": 12,
+        "text": "*다국적* 파티"
+      }
+    ],
+    "image_queries": [
+      "standing party buffet",
+      "hand picking finger food",
+      "mini sandwiches and quiches",
+      "variety of small bites",
+      "no long table seating",
+      "food changes movement",
+      "using small plates",
+      "Portuguese party setup",
+      "multinational party food",
+      "local ingredients snacks",
+      "small portion preparation",
+      "expanded seating space"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "standing party buffet",
+      "hand picking finger food",
+      "mini sandwiches and quiches",
+      "variety of small bites",
+      "no long table seating",
+      "food changes movement",
+      "using small plates",
+      "Portuguese party setup",
+      "multinational party food",
+      "local ingredients snacks",
+      "small portion preparation",
+      "expanded seating space"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/candy-bar-sweet-cupcakes-sweets-3323906/",
+        "id": 3323906
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Lawrence DG, Kuypers HG.",
+        "license": "CC BY 1.0",
+        "title": "Lesion of the pyramidal tract abolishes fine grasping movements.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Lesion_of_the_pyramidal_tract_abolishes_fine_grasping_movements.png",
+        "id": "c:47104192"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "NadineDoerle",
+        "page": "https://pixabay.com/photos/mini-quiches-petit-fours-aperitif-1566259/",
+        "id": 1566259
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/pumpkin-orange-green-variety-10470647/",
+        "id": 10470647,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/furniture-table-chairs-1840463/",
+        "id": 1840463,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "dmncwndrlch",
+        "page": "https://pixabay.com/photos/demonstration-fridays-for-future-4891280/",
+        "id": 4891280,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "MichalPL",
+        "license": "CC BY-SA 4.0",
+        "title": "A cracked plate after inadvertently putting small pieces of metal into the microwave.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_cracked_plate_after_inadvertently_putting_small_pieces_of_metal_into_the_microwave.jpg",
+        "id": "c:115531482"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "aglaya3",
+        "page": "https://pixabay.com/photos/portuguese-custard-tarts-7051327/",
+        "id": 7051327,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "TheUjulala",
+        "page": "https://pixabay.com/photos/skewers-food-party-chunks-1206687/",
+        "id": 1206687
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Rajani Gairshail",
+        "license": "CC BY-SA 4.0",
+        "title": "Traditional Snacks Prepared During Fagli Festival in Lahaul and Spiti,1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_Snacks_Prepared_During_Fagli_Festival_in_Lahaul_and_Spiti,1.jpg",
+        "id": "c:185151083"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Oriel Joyce Flecker",
+        "license": "Public domain",
+        "title": "A setup for preparation of Oxygen.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_setup_for_preparation_of_Oxygen.jpg",
+        "id": "c:85936164"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "The Unitarian Universalist Church of Boulder",
+        "license": "CC BY-SA 4.0",
+        "title": "The Earth Room sanctuary at the UU Church of Boulder, CO.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Earth_Room_sanctuary_at_the_UU_Church_of_Boulder,_CO.jpg",
+        "id": "c:145597748"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2967,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "224e8be201d9",
+        "at": "2026-10-31 00:41",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.225,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "21c5d8252bce",
+        "at": "2026-10-31 00:41",
+        "scene": 2,
+        "rejected_ids": [
+          3911770,
+          "c:47104192"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3324,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "182d919a2e66",
+        "at": "2026-10-31 00:41",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1987,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ae204673cec0",
+        "at": "2026-10-31 00:41",
+        "scene": 4,
+        "rejected_ids": [
+          10470647,
+          2125691,
+          "c:185376907",
+          "c:191340624",
+          "c:40347042"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.239,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "03e1640942c8",
+        "at": "2026-10-31 00:41",
+        "scene": 5,
+        "rejected_ids": [
+          1840463,
+          "c:202380583"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2247,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b4545f1a4523",
+        "at": "2026-10-31 00:41",
+        "scene": 6,
+        "rejected_ids": [
+          4891280,
+          "c:33752486"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2855,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c166bfe39239",
+        "at": "2026-10-31 00:42",
+        "scene": 7,
+        "rejected_ids": [
+          1581807,
+          8032746,
+          "c:115531482",
+          "c:84193831",
+          "c:84855468"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1639,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "409826136f2c",
+        "at": "2026-10-31 00:42",
+        "scene": 8,
+        "rejected_ids": [
+          7051327,
+          7576019,
+          "c:15570483",
+          "c:72605228",
+          "c:81342860"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2812,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c385d77e0dc2",
+        "at": "2026-10-31 00:41",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2854,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "264afe1d4f0d",
+        "at": "2026-10-31 00:41",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2206,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fddee6d87b60",
+        "at": "2026-10-31 00:41",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2577,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "92d818d8ec4f",
+        "at": "2026-10-31 00:41",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "끓는 물에 떠다니는 피에로기(Pierogi)",
@@ -38654,7 +43821,290 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "피에로기 물에 뜬다",
+    "title_line2": "반달 속 비밀",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "반달 모양 *만두*"
+      },
+      {
+        "s": 3,
+        "text": "크로아티아와 혼동"
+      },
+      {
+        "s": 7,
+        "text": "다른 맛이 숨은 *반달*"
+      }
+    ],
+    "image_queries": [
+      "crescent shaped dumplings",
+      "Croatian kitchen ingredients",
+      "pierogi dough filling",
+      "pierogi potato cheese filling",
+      "pierogi fruit filling",
+      "pierogi boiled butter fried",
+      "pierogi with onion sour cream",
+      "pierogi size checking",
+      "neighboring country dumplings",
+      "different dumpling recipes",
+      "familiar dumpling shapes",
+      "pierogi memory table"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "crescent shaped dumplings",
+      "Croatian kitchen ingredients",
+      "pierogi dough filling",
+      "pierogi potato cheese filling",
+      "pierogi fruit filling",
+      "pierogi boiled butter fried",
+      "pierogi with onion sour cream",
+      "pierogi size checking",
+      "neighboring country dumplings",
+      "different dumpling recipes",
+      "familiar dumpling shapes",
+      "pierogi memory table"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/empanadas-dumplings-food-meal-592300/",
+        "id": 592300
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/tomatoes-rosemary-basil-salt-10368988/",
+        "id": 10368988
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "SylwesterL",
+        "page": "https://pixabay.com/photos/pie-baking-pastry-croute-crust-8026562/",
+        "id": 8026562
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/oven-baked-cheese-cheese-baked-2817144/",
+        "id": 2817144
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "title": "Pierogi, Gniezno, Polonia3.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Pierogi,_Gniezno,_Polonia3.jpg",
+        "id": "c:17910612"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "File:Pierogi 07-01.JPG : Piotrus File:Pierogarnia Stary Młyn9.jpg : Kinga1989 de",
+        "license": "CC BY 4.0",
+        "title": "Pierogi 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Pierogi_01.jpg",
+        "id": "c:150085103"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "stu_spivack",
+        "license": "CC BY-SA 2.0",
+        "title": "Plates of pierogi with sour cream and onion.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Plates_of_pierogi_with_sour_cream_and_onion.jpg",
+        "id": "c:4097528"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Piotrus",
+        "license": "CC BY-SA 4.0",
+        "title": "Polish pierogi in a dish.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Polish_pierogi_in_a_dish.jpg",
+        "id": "c:90449555"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "ReinhardThrainer",
+        "page": "https://pixabay.com/photos/dumplings-bacon-dumplings-dough-5237873/",
+        "id": 5237873
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Shaili Sharma",
+        "license": "CC BY-SA 4.0",
+        "title": "Paagi hui Gujiya or Chashni wali Gujiya - Gujarat - SHAILI 002.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Paagi_hui_Gujiya_or_Chashni_wali_Gujiya_-_Gujarat_-_SHAILI_002.jpg",
+        "id": "c:103594806"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "File:Cheese, potato, and onion pierogi.jpg : Mike Peel File:Pierogarnia Stary Mł",
+        "license": "CC BY 4.0",
+        "title": "Pierogi 02b.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Pierogi_02b.jpg",
+        "id": "c:150085391"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "File:Cheese, potato, and onion pierogi.jpg : Mike Peel File:Pierogarnia Stary Mł",
+        "license": "CC BY 4.0",
+        "title": "Pierogi 02a.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Pierogi_02a.jpg",
+        "id": "c:150085383"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3198,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6a4cbf4a8b3e",
+        "at": "2026-10-31 00:43",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3035,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "506299cb95a1",
+        "at": "2026-10-31 00:43",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2911,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b04d66afbb8",
+        "at": "2026-10-31 00:43",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2724,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "63ee51a4902d",
+        "at": "2026-10-31 00:43",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2969,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "92fc7e6da0e7",
+        "at": "2026-10-31 00:43",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3332,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6a53ab8323b7",
+        "at": "2026-10-31 00:43",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3244,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f2bf47136703",
+        "at": "2026-10-31 00:43",
+        "scene": 7,
+        "rejected_ids": [
+          3545167,
+          "c:4097528"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3137,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5bd71eb1bbc9",
+        "at": "2026-10-31 00:43",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2322,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e71bf2109431",
+        "at": "2026-10-31 00:43",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2368,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "550dc0ad1188",
+        "at": "2026-10-31 00:43",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2847,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7ca531a1682f",
+        "at": "2026-10-31 00:43",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2685,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2d93be3df877",
+        "at": "2026-10-31 00:43",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "부탄의 공식 복장·예절 규정",
@@ -38680,7 +44130,290 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "부탄 공식 복장 규정",
+    "title_line2": "옷 차림이 법인가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "옷이 *예절*이 된다"
+      },
+      {
+        "s": 5,
+        "text": "*고*와 키라"
+      },
+      {
+        "s": 9,
+        "text": "모자 *조용히*"
+      },
+      {
+        "s": 12,
+        "text": "복장과 *방문예절* 구분"
+      },
+      {
+        "s": 15,
+        "text": "*존중*을 입다"
+      }
+    ],
+    "image_queries": [
+      "Buddhist dress etiquette",
+      "Traditional Bhutanese dress ceremony",
+      "Greeting gestures Bhutan",
+      "Gho and kira garments",
+      "Community identity clothing",
+      "Monastery respectful posture",
+      "Hat removal quietness",
+      "Visitor traditional attire optional",
+      "Local dress and visitor etiquette",
+      "Contextual clothing significance",
+      "Respectful clothing expression",
+      "Space dependent attire meaning"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Buddhist dress etiquette",
+      "Traditional Bhutanese dress ceremony",
+      "Greeting gestures Bhutan",
+      "Gho and kira garments",
+      "Community identity clothing",
+      "Monastery respectful posture",
+      "Hat removal quietness",
+      "Visitor traditional attire optional",
+      "Local dress and visitor etiquette",
+      "Contextual clothing significance",
+      "Respectful clothing expression",
+      "Space dependent attire meaning"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "maxonline101",
+        "page": "https://pixabay.com/photos/rosary-monk-temple-pagoda-cambodia-7857936/",
+        "id": 7857936
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "bayarts7",
+        "page": "https://pixabay.com/photos/bride-dress-muslim-culture-10427763/",
+        "id": 10427763,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "donvikro",
+        "page": "https://pixabay.com/photos/temple-monastery-cliff-cliffside-171377/",
+        "id": 171377
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "wilhei",
+        "page": "https://pixabay.com/photos/laundry-dry-hang-clothesline-963150/",
+        "id": 963150,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "truthseeker08",
+        "page": "https://pixabay.com/photos/theravada-buddhism-sayalay-nun-4749025/",
+        "id": 4749025
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/woman-brunette-face-hat-head-1845148/",
+        "id": 1845148,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "ahmetyuksek",
+        "page": "https://pixabay.com/photos/tranquil-scene-traditional-attire-9913086/",
+        "id": 9913086
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "summerstock",
+        "page": "https://pixabay.com/photos/young-woman-beach-dress-white-dress-1745173/",
+        "id": 1745173
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/wardrobe-coat-hanger-dressing-room-5961193/",
+        "id": 5961193
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "anaterate",
+        "page": "https://pixabay.com/photos/woman-teenager-stone-stairway-teen-7858552/",
+        "id": 7858552
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "ahmetyuksek",
+        "page": "https://pixabay.com/photos/tranquil-scene-traditional-attire-9913086/",
+        "id": 9913086,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2206,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4c9585aedef3",
+        "at": "2026-10-31 00:49",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1984,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6813b4957f16",
+        "at": "2026-10-31 00:49",
+        "scene": 2,
+        "rejected_ids": [
+          10427763,
+          10499067,
+          1822488
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2237,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b5d0d0693b55",
+        "at": "2026-10-31 00:49",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2101,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bb0f99e8710d",
+        "at": "2026-10-31 00:49",
+        "scene": 4,
+        "rejected_ids": [
+          218801,
+          5963960,
+          963150
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.312,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9f7a72f545b6",
+        "at": "2026-10-31 00:49",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2403,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4cc12cace423",
+        "at": "2026-10-31 00:49",
+        "scene": 7,
+        "rejected_ids": [
+          1509956,
+          1845148
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2429,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e3fee227c3c8",
+        "at": "2026-10-31 00:49",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.153,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5a308274e319",
+        "at": "2026-10-31 00:49",
+        "scene": 9,
+        "rejected_ids": [
+          10258345,
+          1745173,
+          559307
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2797,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "57343d89bcde",
+        "at": "2026-10-31 00:49",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2197,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9562e0ed6882",
+        "at": "2026-10-31 00:49",
+        "scene": 11,
+        "rejected_ids": [
+          7236356,
+          7858552,
+          7858764
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1924,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "feca6f4903b9",
+        "at": "2026-10-31 00:50",
+        "scene": 12,
+        "rejected_ids": [
+          10075296,
+          1619740,
+          9913086
+        ]
+      }
+    ]
   },
   {
     "topic": "싱가포르 전자 팝 스타의 독특한 악기",
@@ -38706,7 +44439,308 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "싱가포르 전자 팝 스타",
+    "title_line2": "손끝으로 소리 만든다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "음악이 *흘러*나오다"
+      },
+      {
+        "s": 3,
+        "text": "손으로 마술을 *연주*"
+      },
+      {
+        "s": 6,
+        "text": "손 위치가 소리로 변화"
+      },
+      {
+        "s": 10,
+        "text": "셀리 옹이 연주"
+      }
+    ],
+    "image_queries": [
+      "music flowing",
+      "hand magic performance",
+      "pitch hand control",
+      "volume hand control",
+      "no keys or strings",
+      "hand position sound change",
+      "no visible keys",
+      "accurate play challenge",
+      "Singapore musician performance",
+      "mysterious film sounds",
+      "movement melody follow",
+      "hand music creation"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "music flowing",
+      "hand magic performance",
+      "pitch hand control",
+      "volume hand control",
+      "no keys or strings",
+      "hand position sound change",
+      "no visible keys",
+      "accurate play challenge",
+      "Singapore musician performance",
+      "mysterious film sounds",
+      "movement melody follow",
+      "hand music creation"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "GuoWuYou",
+        "page": "https://pixabay.com/photos/woman-music-violin-talent-girl-7013145/",
+        "id": 7013145,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "IndyGhostLight",
+        "page": "https://pixabay.com/photos/magician-face-performance-magic-2125834/",
+        "id": 2125834,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "planet_fox",
+        "page": "https://pixabay.com/photos/football-sports-ball-hand-7182751/",
+        "id": 7182751,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/audio-technology-mixer-volume-knob-1839162/",
+        "id": 1839162
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Wingchi Poon",
+        "license": "CC BY-SA 3.0",
+        "title": "Steinway grand piano strings and keys.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Steinway_grand_piano_strings_and_keys.JPG",
+        "id": "c:37504425"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "coyot",
+        "page": "https://pixabay.com/photos/guitar-musician-music-instrument-2428921/",
+        "id": 2428921
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/keys-open-locks-security-unlock-525732/",
+        "id": 525732,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/board-game-checkmate-chess-1846400/",
+        "id": 1846400
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Joshwiiieee",
+        "page": "https://pixabay.com/photos/musician-traditional-clothing-10388442/",
+        "id": 10388442
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Unknown photographer",
+        "license": "Public domain",
+        "title": "The Mysterious Rider (1921) - 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Mysterious_Rider_(1921)_-_5.jpg",
+        "id": "c:76367386"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "MrHà",
+        "page": "https://pixabay.com/photos/dance-trees-white-dress-forest-10258348/",
+        "id": 10258348
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "zhivko",
+        "page": "https://pixabay.com/photos/hand-woman-female-man-touch-3035665/",
+        "id": 3035665
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2662,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "24581d0b726c",
+        "at": "2026-10-31 00:51",
+        "scene": 1,
+        "rejected_ids": [
+          7013145,
+          "c:198383643"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3612,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0b84aadb400b",
+        "at": "2026-10-31 00:51",
+        "scene": 2,
+        "rejected_ids": [
+          1469121,
+          2125834,
+          "c:84960861"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2474,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "77f6e41d8fdf",
+        "at": "2026-10-31 00:51",
+        "scene": 3,
+        "rejected_ids": [
+          571153,
+          7182751,
+          "c:38009925"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2817,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bd4c0e7015fe",
+        "at": "2026-10-31 00:51",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2866,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5016f572f073",
+        "at": "2026-10-31 00:51",
+        "scene": 5,
+        "rejected_ids": [
+          6945098,
+          "c:37504425"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2472,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e40a997e6f6b",
+        "at": "2026-10-31 00:51",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3046,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "206b9d13bba7",
+        "at": "2026-10-31 00:51",
+        "scene": 7,
+        "rejected_ids": [
+          525732,
+          "c:4951866"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2168,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e973a2250fd4",
+        "at": "2026-10-31 00:51",
+        "scene": 8,
+        "rejected_ids": [
+          1846400,
+          5296407,
+          5312406,
+          "c:142429395",
+          "c:198383643"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2392,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7dbe2b97fb50",
+        "at": "2026-10-31 00:51",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "10c2ee193019",
+        "at": "2026-10-31 00:51",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2445,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f59b048671a3",
+        "at": "2026-10-31 00:51",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2454,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "286aa1d56b27",
+        "at": "2026-10-31 00:51",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "보로로(Bororo) 부족의 8개 마을 생활",
