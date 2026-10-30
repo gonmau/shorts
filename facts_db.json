@@ -38501,7 +38501,7 @@
     "verify_note": "Bororo",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
@@ -38516,7 +38516,7 @@
     "verify_note": "Coffee culture",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "고대 그리스 남성 동반자 제도",
@@ -38531,7 +38531,8 @@
     "verify_note": "Pederasty in ancient Greece",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:16.078901+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "UI에서 제외"
   },
   {
     "topic": "일주일 동안 나무 판잣집에서 지내는 유대인 명절",
@@ -38546,7 +38547,7 @@
     "verify_note": "Sukkot",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "베트남 설, 1월 말부터 2월 중순까지",
@@ -38561,7 +38562,7 @@
     "verify_note": "Tết",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "비치 아미시(Beachy Amish)의 교회는 중앙 교단이 없다",
@@ -38576,7 +38577,7 @@
     "verify_note": "Beachy Amish",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "성 발렌타인(Valentine)의 전설, 눈을 되찾다",
@@ -38591,7 +38592,7 @@
     "verify_note": "Valentine's Day",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "춘절(Chinese New Year)의 등불 15일 연속",
@@ -38606,7 +38607,7 @@
     "verify_note": "Chinese New Year",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "콜롬비아 전통 음악, 불레렝게 (Bullerengue)",
@@ -38621,7 +38622,7 @@
     "verify_note": "Bullerengue",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:15.806091+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
@@ -38636,7 +38637,7 @@
     "verify_note": "Greetings from Your Hometown",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:34.594778+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스웨덴의 한밤중 불꽃 축제, 여름 최장일에 열린다",
@@ -38651,7 +38652,7 @@
     "verify_note": "Midsummer",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:34.594778+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "패스오버에 먹는 무교병(마짜)",
@@ -38666,6 +38667,186 @@
     "verify_note": "Matzah",
     "confidence": "source",
     "created_at": "2026-10-30T14:19:00.396404+00:00",
-    "status": "unverified"
+    "status": "verified"
+  },
+  {
+    "topic": "아부다비를 지배하는 단 한 가문의 비밀",
+    "hook": "아부다비에서는 한 가문이 전체를 통치한다?!",
+    "body": "아랍에미리트(United Arab Emirates)는 7개의 토후국으로 이루어졌고, 각 토후국마다 통치 가문이 있다. 아부다비는 바니 야스(Bani Yas) 부족 연합이 거주했으며, 알 나얀(Al Nahyan) 가문이 통치한다.",
+    "twist": "하지만 두바이는 같은 부족에서 갈라진 알 막툼(Al Maktoum) 가문이 다스린다.",
+    "caveat": "이 구조는 현재 아랍에미리트 시민에게만 적용된다.",
+    "country": "아랍에미리트",
+    "theme": "생활문화",
+    "wiki_title": "Emiratis",
+    "source_url": "https://en.wikipedia.org/wiki/Emiratis",
+    "verify_note": "Emiratis",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:23:49.912105+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "등불에 숨은 퀴즈, 아이들은 밤에 뭐하고?",
+    "hook": "등불에 적힌 퀴즈를 푸는 아이들, 정답을 맞히면 뭐가 될까?",
+    "body": "중국(China)의 원소절(元宵節)은 음력 1월 15일 보름달이 뜨는 날에 열리며, 전통적으로 아이들이 종이 등불을 들고 밤에 나선다. 등불에 적힌 수수께끼(猜燈謎)를 풀며 축제를 즐긴다.",
+    "twist": "정답을 맞힌 아이에게는 작은 사탕이 아닌, 다음 해 등불을 직접 만들 기회가 주어진다.",
+    "caveat": "이 전통은 주로 중국 본토와 일부 해외 중국인 공동체에서 지켜진다.",
+    "country": "중국",
+    "theme": "축제/의례",
+    "wiki_title": "Lantern Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Lantern_Festival",
+    "verify_note": "Lantern Festival",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:23:49.912105+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "독일 법, 나치·공산 상징은 ‘예술’이면 OK?",
+    "hook": "독일 거리에서 나치 깃발을 휘날리면 바로 체포? 사실은…",
+    "body": "독일(Germany) 형법 §86a는 ‘헌법 위반 조직’의 상징 사용을 예술·과학·연구·교육 외에 금지합니다. 법은 구체적인 상징을 명시하지 않아 경찰이 판단합니다.",
+    "twist": "냉전 시기에 제정돼 공산당(Communist Party of Germany) 금지(1956)와 사회주의 제국당(Socialist Reich Party) 금지(1952) 등에 주로 적용됐어요.",
+    "caveat": "이 조항은 예술·학술적 맥락에서는 상징 사용을 허용하므로, 전시나 연구에서는 다르게 적용됩니다.",
+    "country": "독일",
+    "theme": "언어/이름",
+    "wiki_title": "Strafgesetzbuch section 86a",
+    "source_url": "https://en.wikipedia.org/wiki/Strafgesetzbuch_section_86a",
+    "verify_note": "Strafgesetzbuch section 86a",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:23:53.358514+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "부활절에 유다 인형을 불태우는 포르투갈 전통",
+    "hook": "부활절 밤, 마을 광장에 놓인 유다 인형을 불꽃이 휙 휘날리는 순간!",
+    "body": "포르투갈의 몇몇 마을에서는 금요일에 유다 이스카리옷(Judas Iscariot) 인형을 매달아 놓고, 일요일 밤에 불태워요. 이 의식은 예수님의 수난 이야기를 재현하는 일환이에요.",
+    "twist": "라틴아메리카에서는 새해 전날에도 같은 인형을 불태워 악을 몰아낸다고 해요.",
+    "caveat": "포르투갈 전역이 아니라 특정 지역에서만 행해집니다.",
+    "country": "포르투갈",
+    "theme": "생활문화",
+    "wiki_title": "Burning of Judas",
+    "source_url": "https://en.wikipedia.org/wiki/Burning_of_Judas",
+    "verify_note": "Burning of Judas",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:23:57.558678+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "태양의 이동을 축하하는 타밀인 포날 축제",
+    "hook": "태양이 북쪽으로 움직이는 순간, 타밀인들이 쌀을 끓이며 춤을 춰요!",
+    "body": "타밀인들은 포날(Pongal) 축제 첫날, 수리야(Surya)에게 감사하며 쌀과 우유를 끓여 큰 솥에 부어요. 이는 겨울 동짓날이 지나고 태양이 캡리콘에 들어가 북쪽으로 이동한다는 의미예요.",
+    "twist": "축제는 하루만이 아니라 네 날에 걸쳐 진행돼, 각 날마다 다른 의미와 전통이 있어요.",
+    "caveat": "주로 타밀인 공동체에서, 특히 인도와 스리랑카에서 지켜집니다.",
+    "country": "캐나다",
+    "theme": "축제/의례",
+    "wiki_title": "Pongal (festival)",
+    "source_url": "https://en.wikipedia.org/wiki/Pongal_(festival)",
+    "verify_note": "Pongal (festival)",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:23:57.558678+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "핀란드(Finland), 언어 기준 인구 통계",
+    "hook": "스웨덴(Sweden)에서 온 사람이 스웨덴어만 쓰면, 핀란드(Finland) 통계에 ‘핀란드인’으로 기록된다고요?",
+    "body": "핀란드(Finland)는 영구 거주자의 첫 번째 언어만을 공식 기록합니다. 그래서 스웨덴어를 쓰는 사람은 스웨덴(Sweden) 출신이든 핀란드(Finland) 출신이든 동일하게 ‘스웨덴어 사용자’로 합산됩니다. 반면, 사미족(Sámi)은 언어가 아니라 민족적 배경 때문에 통계에 거의 반영되지 않습니다.",
+    "twist": "이 때문에 사미족(Sámi) 인구는 실제보다 크게 낮게 집계됩니다.",
+    "caveat": "이 규정은 영구 거주자를 대상으로 한 공식 통계에만 적용됩니다.",
+    "country": "핀란드",
+    "theme": "법/제도",
+    "wiki_title": "Ethnic groups in Finland",
+    "source_url": "https://en.wikipedia.org/wiki/Ethnic_groups_in_Finland",
+    "verify_note": "Ethnic groups in Finland",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:24:02.736983+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "볼가 강 오른쪽 은빛 물가에 사는 메도우 마리 사람들",
+    "hook": "볼가(Volga) 강 오른쪽 은빛 물가에 사는 사람들, 그들은 누구일까?",
+    "body": "러시아(Maria) 마리 엘(Mari El) 공화국에 사는 메도우 마리(Meadow Mari)는 볼가(Volga) 강 오른쪽 은행에 주로 거주합니다. 같은 민족의 힐 마리(Hill Mari)는 강 왼쪽에 살아 구분됩니다.",
+    "twist": "메도우 마리의 언어는 힐 마리보다 널리 퍼져 있어, 같은 지역에서도 두 언어가 공존합니다.",
+    "caveat": "이 구분은 마리 엘 공화국 내에서 관찰되는 현상이며, 14세기 이후 형성되었습니다.",
+    "country": "에스토니아",
+    "theme": "생활문화",
+    "wiki_title": "Meadow Mari people",
+    "source_url": "https://en.wikipedia.org/wiki/Meadow_Mari_people",
+    "verify_note": "Meadow Mari people",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:24:35.854437+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "남부 비전불교(Southern Esoteric Buddhism)의 비밀 의식",
+    "hook": "불교 사원에서 마법 주문이 울려 퍼진다면?",
+    "body": "남부 비전불교는 테라와다 불교 안에서 마법과 의식, 텍스트를 모은 체계로, 종종 ‘에소테릭 테라와다(Esoteric Theravada)’ 혹은 ‘탄트라 테라와다(Tantric Theravada)’라고 불립니다. 하지만 실제 탄트라(탄트라) 자체는 사용하지 않죠.",
+    "twist": "그럼에도 서구 학자들은 이 전통을 탄트라와 연결짓는 독특한 관점을 제시합니다.",
+    "caveat": "이 연구는 프랑스극동학회(École française d'Extrême-Orient)의 프랑수아 비조(François Bizot) 등 서구 학자들에 의해 주로 진행되었습니다.",
+    "country": "스리랑카",
+    "theme": "생활문화",
+    "wiki_title": "Southern Esoteric Buddhism",
+    "source_url": "https://en.wikipedia.org/wiki/Southern_Esoteric_Buddhism",
+    "verify_note": "Southern Esoteric Buddhism",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:24:41.496887+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "포르투갈어 어휘의 20%는 라틴어가 아니다",
+    "hook": "포르투갈어 단어 1/5가 라틴어가 아니라고?",
+    "body": "포르투갈어는 라틴어(Latin)에서 파생된 로맨스어이지만, 13세기 어휘의 약 20%는 고대 갈라에시아어(Gallaecian), 켈티베리안어(Celtiberian), 게르만어(Germanic), 그리스어(Greek), 아라비아어(Arabic) 등 다양한 언어에서 차용되었습니다.",
+    "twist": "이 덕분에 포르투갈어는 라틴어 어근만큼이나 다채로운 발음과 의미를 품고 있습니다.",
+    "caveat": "이 비율은 13세기 포르투갈 어휘에 기반한 것입니다.",
+    "country": "포르투갈",
+    "theme": "언어/이름",
+    "wiki_title": "Portuguese vocabulary",
+    "source_url": "https://en.wikipedia.org/wiki/Portuguese_vocabulary",
+    "verify_note": "Portuguese vocabulary",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:24:41.496887+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "핀란드 로마인(Kàlo)의 인구와 언어",
+    "hook": "핀란드, 인구조사에 민족 묻지 않는데도 로마인 1만 명이 살아!",
+    "body": "핀란드와 스웨덴에 주로 거주하는 로마인(Kàlo)은 핀란드어, 스웨덴어, 그리고 카로(Kalo)를 사용한다. 2004년 추정치로는 핀란드에 약 1만 명, 2020년에는 스웨덴에 약 4,500명이 살고 있다.",
+    "twist": "핀란드가 민족 데이터를 수집하지 않음에도 이런 추정이 가능했다는 점이 놀랍다.",
+    "caveat": "인구 수치는 2004년(핀란드)과 2020년(스웨덴) 추정치이며, 정확한 조사 결과는 아니다.",
+    "country": "핀란드",
+    "theme": "생활문화",
+    "wiki_title": "Finnish Roma",
+    "source_url": "https://en.wikipedia.org/wiki/Finnish_Roma",
+    "verify_note": "Finnish Roma",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:25:16.588542+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "미국 각 주의 교통법과 통일 차량법(UVC)",
+    "hook": "주를 넘었는데 바로 벌금? 미국 교통법의 숨은 함정!",
+    "body": "미국은 주마다 자체 교통 코드를 가지고 있지만, 대부분 비슷한 규칙을 유지한다. 연방 차원의 '통일 차량법'(Uniform Vehicle Code)은 제안됐지만, 어느 주도 전부 채택하지 않았다.",
+    "twist": "일부 주는 UVC의 일부만 채택하거나 자체 법을 만들어 같은 주제를 다룬다.",
+    "caveat": "UVC는 어떤 주에서도 전면 채택되지 않았으며, 적용 여부는 주마다 다르다.",
+    "country": "미국",
+    "theme": "법/제도",
+    "wiki_title": "Traffic law in the United States",
+    "source_url": "https://en.wikipedia.org/wiki/Traffic_law_in_the_United_States",
+    "verify_note": "Traffic law in the United States",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:25:16.588542+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "아이슬란드 겨울빛 축제의 변천",
+    "hook": "겨울빛 축제, 반전은 바로 거리 음식!",
+    "body": "겨울이 끝나고 빛이 시작되는 시기를 기념하는 이 축제는 예술 워크숍, 조명 디자인, 라이브 음악, 그리고 거리 음식으로 구성된다. 원래는 종교적·영적 의미가 있었지만, 현재는 소비주의가 크게 자리 잡았다.",
+    "twist": "축제의 영적 의미는 사라지고, 대신 상업적인 요소가 주를 이룬다.",
+    "caveat": "전통적인 영적 의미는 현재 대부분의 행사에서 사라진 상태이다.",
+    "country": "아이슬란드",
+    "theme": "축제/의례",
+    "wiki_title": "Winter light festival",
+    "source_url": "https://en.wikipedia.org/wiki/Winter_light_festival",
+    "verify_note": "Winter light festival",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:25:16.588542+00:00",
+    "status": "verified"
   }
 ]
