@@ -715,6 +715,7 @@ FEATURES = [
     ("롱폼", "심층편 (소재 1개 → 긴 영상 1편)", "🎞 롱폼 › 🔭 심층편 / Actions > longform > deep", "소재 번호 1개를 소주제 3~8개(기본 5)로 나눠 5~12분(기본 8분) 영상 1편으로. 섹션 대본은 확인·수정·잠금 가능(deep_db.json). GitHub는 manual + 번호 1개 + deep 체크", "신규"),
     ("롱폼", "마지막 요약 화면 켜고 끄기", "🎞 롱폼 › 🎨 채널 표시 '마지막 요약 화면' / 심층편 체크박스 / Actions recap", "끄면 요약 화면과 엔딩 멘트 없이 마지막 챕터에서 바로 끝. 설명란 '요약' 챕터도 빠짐. 심층편에도 동일 적용", "신규"),
     ("롱폼", "비교 카드 켜고 끄기", "🎞 롱폼 › 🎨 채널 표시 '챕터별 비교 카드' / 심층편 체크박스 / Actions compare", "끄면 챕터에 저장된 비교 카드가 있어도 영상과 오프닝 멘트에 넣지 않음. AI가 대본을 다시 만들어도 다시 켜지지 않음", "신규"),
+    ("롱폼", "챕터 순서 자동 배치 / 직접 바꾸기", "🎞 롱폼 › 순서 자동 배치 체크 / ② '↕ 챕터 순서 바꾸기'", "auto는 맨 앞에 가장 재밌는 소재·중간에 흐름 유지·분야/나라 안 겹치게 자동 배치, manual은 입력 순서 그대로. 순서를 바꾸면 각 챕터 마지막 연결 문장만 새 순서에 맞게 다시 씀", "신규"),
     ("롱폼", "스톡 영상 (Pexels/Pixabay)", "🎞 롱폼 체크박스", "분위기용 짧은 영상을 일부 장면에 사용 (Pixabay 키 필요)", "🆕"),
     ("롱폼", "렌더링 진행률", "🎞 롱폼 실행 로그", "10%마다 진행률과 남은 시간 표시", "🆕"),
     ("자동", "자동 진행", "이 탭 아래 '⚡ 자동 진행'", "확인 없이 대본/이미지/렌더링까지 한 번에", ""),
@@ -1648,8 +1649,11 @@ with TL:
             st.caption(f"선택한 키워드({', '.join(_kws)})에 맞는 후보: **{len(_hit)}개** " + ("→ " + ", ".join(f"{i_} {str(_fdb[i_].get('country', ''))[:10]}" for i_ in _hit[:12]) + (" …" if len(_hit) > 12 else "") if _hit else "(없음: 키워드를 바꾸세요)"))
     lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
     ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
+    lf_arr = st.checkbox("🔀 순서 자동 배치 (맨 앞에 가장 재밌는 소재, 중간에 흐름 유지용, 분야·나라가 이어지지 않게)", lm.startswith("auto"), key=f"lf_arr_{'a' if lm.startswith('auto') else 'm'}",
+                         help="auto 기본 켜짐 / manual 기본 꺼짐(입력한 번호 순서 그대로). 켜면 manual도 번호 순서를 재배치하고, 끄면 auto도 번호순 그대로 씁니다. 순서는 ② 단계에서 직접 바꿀 수도 있습니다")
     sel_args = ["--mode", "auto" if lm.startswith("auto") else "manual", "--indexes", lidx, "--theme", ltheme,
-                "--count", str(int(lcount)), "--start", str(int(lstart))]
+                "--count", str(int(lcount)), "--start", str(int(lstart))] \
+               + (["--arrange"] if (lf_arr and not lm.startswith("auto")) else []) + (["--no-arrange"] if (not lf_arr and lm.startswith("auto")) else [])
     o1, o2, o3 = st.columns(3)
     lf_style = o1.selectbox("화면 스타일", ["rich (풀스크린·챕터카드·키워드·비교카드·인트로/요약)", "classic (예전: 오른쪽 흰 패널)"], key="lf_style")
     lf_expand = o2.checkbox("롱폼 전용 확장 대본 만들기 (Groq + 음성 새로 생성)", True, key="lf_expand", disabled=lf_style.startswith("classic"),
@@ -1906,7 +1910,8 @@ with TL:
                            help="① 때 정해진 소재 목록(번호 순서)으로 만듭니다. 끄면 위의 선택 방식(auto/manual)을 다시 적용합니다")
     render_args = list(base_args)
     if plan and use_plan:
-        render_args = ["build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"])] + common_args
+        render_args = ["build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in plan["members"])] + common_args \
+                      + (["--relink"] if plan.get("order_changed") else [])
     lf_nomiss = st.checkbox("이미지가 빠진 소재가 있어도 그냥 진행 (빠진 자리는 색 카드)", False, key="lf_nomiss",
                             help="끄면 사진이 빠진 소재가 있을 때 합성 전에 멈추고 어느 소재인지 알려줍니다. ②의 챕터별 '사진 확인'에서 미리 볼 수 있어요")
     if not lf_nomiss:
@@ -1966,6 +1971,46 @@ with TL:
                 st.success("🖼 모든 소재의 사진이 있습니다.")
         except Exception:
             pass
+
+        def _save_order(_m, changed=True):
+            _pl = _lf_plan() or {}
+            _pl["members"] = list(_m)
+            _pl["order_changed"] = bool(changed)
+            for _k in ("intro_text", "outro_text"):      # 순서가 바뀌면 고쳐 둔 오프닝/엔딩 멘트의 나라 순서도 어긋나므로 자동 문구로 돌린다
+                _pl.pop(_k, None)
+            json.dump(_pl, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+        with st.expander("↕ 챕터 순서 바꾸기 · 자동 배치", expanded=bool(plan.get("order_changed"))):
+            st.caption("⬆⬇로 순서를 바꾸면 각 챕터 마지막의 '다음 소재로 넘어가는' 문장만 새 순서에 맞게 다시 씁니다 (나머지 대본·키워드·사진 지정은 그대로). 바꾼 뒤 '🔗 연결 멘트 다시 쓰기'를 누르거나, ③에서 만들 때 자동으로 맞춥니다. 오프닝/엔딩 멘트는 자동 문구로 돌아갑니다.")
+            _mem = list(plan["members"])
+            for _p, _i in enumerate(_mem):
+                if not (0 <= _i < len(_dbl)):
+                    continue
+                _rc = st.columns([10, 1, 1])
+                _rc[0].markdown(f"**{_p + 1}.** [{_i}] {_dbl[_i].get('country', '')} — {str(_dbl[_i].get('topic', ''))[:44]}")
+                if _rc[1].button("⬆", key=f"lf_up_{_i}", disabled=_p == 0):
+                    _mem[_p - 1], _mem[_p] = _mem[_p], _mem[_p - 1]
+                    _save_order(_mem); st.rerun()
+                if _rc[2].button("⬇", key=f"lf_dn_{_i}", disabled=_p == len(_mem) - 1):
+                    _mem[_p + 1], _mem[_p] = _mem[_p], _mem[_p + 1]
+                    _save_order(_mem); st.rerun()
+            _a1, _a2 = st.columns(2)
+            if _a1.button("🔀 재미 순서로 자동 배치", key="lf_arr_btn", help="맨 앞에 가장 재밌는 소재, 중간(약 60%)에 다음으로 강한 소재, 마지막에 그다음 소재. 유튜브 성과 데이터가 있으면 그걸, 없으면 훅 문장으로 판단합니다"):
+                try:
+                    import build_longform as _BL
+                    _new = _BL.order_members(_dbl, _mem)
+                    if _new != _mem:
+                        _save_order(_new); st.rerun()
+                    else:
+                        st.info("이미 이 순서가 자동 배치 결과와 같습니다.")
+                except Exception as _e:
+                    st.error(f"자동 배치 실패: {type(_e).__name__}: {_e}")
+            if plan.get("order_changed"):
+                st.warning("순서가 바뀌었습니다. 연결 멘트(각 챕터 마지막 문장)를 새 순서에 맞게 다시 써야 합니다.")
+            if _a2.button("🔗 연결 멘트 다시 쓰기", key="lf_relink", type="primary", disabled=not plan.get("order_changed"),
+                          help="순서에 맞게 각 챕터 마지막 문장만 AI로 다시 씁니다 (챕터당 약 400토큰). 음성은 ③에서 다시 만들어집니다"):
+                run("build_longform.py", "--mode", "manual", "--indexes", ",".join(str(i) for i in _mem), *common_args, "--plan-only", "--relink")
+                st.rerun()
 
         def _nan(v):
             try:

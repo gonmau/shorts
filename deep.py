@@ -96,7 +96,7 @@ Rules:
 - {'First sentence: a natural start of the video (hook).' if k == 1 else 'First sentence: a smooth link from the previous section.'} {'Last sentence: a warm wrap-up.' if k == n else 'Last sentence: a one-line lead-in to the next section.'}
 - Never invent specific numbers, dates, names or prices; hedge (about / many / in some places) when unsure. Prefer facts from the reference text or the short script.
 - title: a short on-screen section title (<=24 characters).
-- keywords: 2-4 short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken.
+- keywords: only the core, usually 2-3 (at most 4) short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken.
 - image_queries: exactly {nq} different English stock-photo search queries (2-5 words each) that match the scenes in order, concrete and varied. No brands, no specific people.
 - recap: ONE short line (<=60 chars) summarising this section.{ins}
 Return pure JSON only:
@@ -115,7 +115,7 @@ Return pure JSON only:
 - {'첫 문장은 영상을 여는 자연스러운 후크.' if k == 1 else '첫 문장은 앞 섹션에서 자연스럽게 이어지는 연결.'} {'마지막 문장은 영상 전체를 정리하는 따뜻한 마무리.' if k == n else '마지막 문장은 다음 섹션으로 넘어가는 한 줄 연결.'}
 - 확실하지 않은 숫자·연도·이름·금액은 쓰지 말고 '약', '대체로', '일부 지역에서' 같은 표현을 쓰거나 빼세요. 참고 자료와 쇼츠 대본의 사실을 우선하세요.
 - title: 화면에 띄울 섹션 소제목 (12자 이내).
-- keywords: 화면에 띄울 짧은 문구(14자 이내) 2~4개와, 그 말이 나오는 문장 번호(1부터).
+- keywords: 핵심만 2~3개(최대 4개), 화면에 띄울 짧은 문구(14자 이내)와, 그 말이 나오는 문장 번호(1부터).
 - image_queries: 장면 순서에 맞는 서로 다른 영어 스톡사진 검색어 정확히 {nq}개 (2~5단어, 구체적이고 다양하게). 브랜드/특정 인물 금지.
 - recap: 이 섹션 한 줄 요약 (30자 이내).{ins}
 순수 JSON만 출력:

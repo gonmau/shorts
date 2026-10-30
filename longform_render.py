@@ -774,13 +774,18 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
             e_ = times[k + 1] if k + 1 < len(stages) else t0 + cd
             ovs.append(Ov(st_, times[k], e_, fi=0.4 if k == 0 else 0.0, fo=0.4 if k == len(stages) - 1 else 0.0))
 
+    kws_ = sorted(rec.get("keywords") or [], key=lambda k: int(k["sentence"]))
+    max_kw = max(2, int(round(dur / 35.0)))          # 약 35초에 1개 (110초 챕터면 3개): 필요한 만큼만
+    if len(kws_) > max_kw:                           # 많으면 처음·끝을 포함해 고르게 솎아냄
+        keep_ = sorted({round(i * (len(kws_) - 1) / (max_kw - 1)) for i in range(max_kw)})
+        kws_ = [kws_[i] for i in keep_]
     last_end = 0.0
-    for kw in sorted(rec.get("keywords") or [], key=lambda k: k["sentence"]):
+    for kw in kws_:
         n_ = int(kw["sentence"])
         if not (1 <= n_ <= len(sents)):
             continue
         t0 = B.time_at_fraction(cum[n_ - 1] / total_chars, timings) + 0.25
-        if t0 < last_end + 0.4 or t0 > dur - 2.0:
+        if t0 < last_end + 3.0 or t0 > dur - 2.0:
             continue
         if cmp_win and cmp_win[0] - 1.0 < t0 < cmp_win[1] + 0.3:
             continue

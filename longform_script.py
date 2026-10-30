@@ -143,7 +143,7 @@ Rules:
 - Friendly spoken English, short plain sentences (under 22 words), no emojis, no markdown, no "subscribe/like" requests. First sentence is a hook (question or surprising fact).
 - {nxt}
 - compare: Korea is ALWAYS the left side. Pick the ONE country (from: {', '.join(candidates)}) whose situation is most different or most relatable for this subject and compare Korea with it in 3 rows. Each row: a short label (<=22 chars) and short values (<=28 chars each). If you are not sure about a number, use qualitative words (common / rare / strict / relaxed).
-- keywords: 3-5 short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken. Choose names, numbers, or key words.
+- keywords: only the core of this chapter's subject and lines, as few as needed (usually 2-3, at most 4): short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken. Pick numbers, names or the key twist word only; no repeats of the narration, no decoration, and none within 3 sentences of each other.
 - recap: ONE short line (<=60 chars) summarising this chapter for the final recap screen.
 - broll: 3 short English stock-footage search queries (2-5 words each) for generic atmospheric video that fits this chapter (e.g. "seoul night street", "family dinner table"). No brand names, no specific people.
 {extra}Return pure JSON only:
@@ -164,7 +164,7 @@ Rules:
 - 존댓말 구어체, 짧은 문장(한 문장 45자 이내), 이모지/마크다운/구독 요청 금지. 첫 문장은 시청자를 붙잡는 질문이나 놀라운 사실.
 - {nxt}
 - compare(비교 카드): 왼쪽은 이 챕터의 나라('{country}'). 오른쪽은 다음 후보 중 이 소재와 가장 대비되는(또는 비교하기 좋은) 나라 하나를 고르세요: {', '.join(candidates)}. (특정 나라로 고정하지 말고 소재에 맞게 고르세요.) 3줄 비교. 줄마다 항목 이름(12자 이내)과 값(각 16자 이내). 숫자가 불확실하면 '많음/적음/엄격/느슨' 같은 정성 표현을 쓰세요.
-- keywords: 화면에 크게 띄울 짧은 문구(14자 이내) 3~5개와, 그 말이 나오는 문장 번호(1부터). 이름/숫자/핵심어 위주.
+- keywords: 이 챕터 소재와 대사의 핵심만, 정말 필요한 만큼만 쓰세요 (보통 2~3개, 최대 4개). 화면에 크게 띄울 짧은 문구(14자 이내)와 그 말이 나오는 문장 번호(1부터)를 적습니다. 숫자·고유명사·반전의 핵심어만 고르고, 나레이션을 되풀이하거나 장식용인 문구, 서로 3문장 이내로 가까운 문구는 쓰지 마세요.
 - recap: 마지막 요약 화면용 한 줄(30자 이내).
 - broll: 이 챕터 분위기에 맞는 일반적인 스톡 영상 검색어 3개 (영어, 2~5단어. 예: "forest lake sunrise", "street market crowd"). 브랜드/특정 인물 금지.
 {extra}순수 JSON만 출력:
@@ -214,7 +214,7 @@ def _normalize(d, n_sent_min=6):
         if IS_EN:
             compare["left"] = "Korea"
     broll = [clean(x)[:60] for x in (d.get("broll") or []) if isinstance(x, str) and clean(x)][:3]
-    return {"narration": narr, "keywords": kws[:5], "compare": compare, "recap": clean(d.get("recap"))[:70], "broll": broll}
+    return {"narration": narr, "keywords": kws[:4], "compare": compare, "recap": clean(d.get("recap"))[:70], "broll": broll}
 
 
 def _resync_prompt(item, narr, candidates, next_info):
@@ -226,7 +226,7 @@ def _resync_prompt(item, narr, candidates, next_info):
         return f"""Below is the FINAL voice-over of one chapter (sentences are numbered). Do NOT change it. Create the on-screen helpers that match THIS text.
 {numbered}
 
-- keywords: 3-5 short on-screen phrases (<=24 chars) taken from the text, each tied to the sentence number (1-{len(sents)}) where it is spoken.
+- keywords: only the core of this chapter's subject and lines, as few as needed (usually 2-3, at most 4): short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken. Pick numbers, names or the key twist word only; no repeats of the narration, no decoration, and none within 3 sentences of each other.
 - compare: Korea is ALWAYS the left side; choose ONE country from: {', '.join(candidates)}; 3 rows (label <=22 chars, values <=28 chars). Use only facts that appear in the text, or soft qualitative words.
 - recap: ONE short line (<=60 chars) summarising the chapter.
 - broll: 3 short English stock-footage search queries (2-5 words) that fit the text. No brand names or specific people.
@@ -235,7 +235,7 @@ Return pure JSON only:
     return f"""아래는 한 챕터의 최종 나레이션입니다 (문장에 번호가 있음). 내용을 바꾸지 말고, 이 글에 맞는 화면 보조 요소만 새로 만드세요.
 {numbered}
 
-- keywords: 글에 나온 말 중 화면에 크게 띄울 짧은 문구(14자 이내) 3~5개와, 그 말이 나오는 문장 번호(1~{len(sents)}).
+- keywords: 이 챕터 소재와 대사의 핵심만, 정말 필요한 만큼만 쓰세요 (보통 2~3개, 최대 4개). 화면에 크게 띄울 짧은 문구(14자 이내)와 그 말이 나오는 문장 번호(1부터)를 적습니다. 숫자·고유명사·반전의 핵심어만 고르고, 나레이션을 되풀이하거나 장식용인 문구, 서로 3문장 이내로 가까운 문구는 쓰지 마세요.
 - compare(비교 카드): 왼쪽은 '{country}'. 오른쪽은 다음 중 하나: {', '.join(candidates)}. 3줄 (항목 12자 이내, 값 각 16자 이내). 글에 나온 사실이나 '많음/적음' 같은 정성 표현만 쓰세요.
 - recap: 마지막 요약 화면용 한 줄(30자 이내).
 - broll: 이 글에 어울리는 일반적인 스톡 영상 검색어 3개 (영어, 2~5단어). 브랜드/특정 인물 금지.
@@ -336,7 +336,37 @@ def compare_on():
     return os.environ.get("LF_COMPARE", "1") != "0"
 
 
-def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False, resync=False):
+
+def fix_bridge(client, models, idx, item, rec, next_info):
+    """챕터 순서가 바뀌어 '다음 소재로 넘어가는' 마지막 문장만 다시 쓴다 (나머지 대본은 그대로, 문장 수도 그대로라 키워드/화면 지정이 어긋나지 않는다).
+    -> (rec, 바뀜 여부)"""
+    sents = split_sentences(rec.get("narration"))
+    if client is None or len(sents) < 3:
+        return rec, False
+    body = " ".join(sents[:-1])
+    topic = str(item.get("topic") or item.get("title_line1") or "").strip()
+    if IS_EN:
+        goal = (f"a natural one-line transition to the next story, which is about \"{next_info}\"" if next_info
+                else "a warm one-line wrap-up of the whole video (no 'subscribe' request)")
+        prompt = (f"Chapter subject: {topic}\nThe chapter so far (do not repeat it):\n{body}\n\n"
+                  f"Write ONLY the final sentence: {goal}. Plain spoken English, under 25 words, no emojis.\n"
+                  'Return JSON only: {"sentence":"..."}')
+        sysmsg, maxlen = "You write one transition sentence for a voice-over. Output JSON only.", 200
+    else:
+        goal = (f"다음 소재 '{next_info}'로 자연스럽게 넘어가는 한 줄 연결 멘트" if next_info
+                else "영상 전체를 정리하는 따뜻한 한 줄 마무리 (구독/좋아요 요청 금지)")
+        prompt = (f"챕터 소재: {topic}\n지금까지의 챕터 대본 (반복하지 마세요):\n{body}\n\n"
+                  f"마지막 한 문장만 쓰세요: {goal}. 존댓말 구어체, 45자 이내, 이모지 금지.\n"
+                  '순수 JSON만 출력: {"sentence":"..."}')
+        sysmsg, maxlen = "당신은 나레이션의 연결 멘트 한 문장을 쓰는 작가입니다. JSON만 출력.", 80
+    d, _ = _chat(client, models, sysmsg, prompt, tokens=400)
+    new = clean((d or {}).get("sentence"))
+    if not new or len(new) < 6 or len(new) > maxlen:
+        return rec, False
+    now = time.strftime("%Y-%m-%d %H:%M")
+    return {**rec, "narration": " ".join(sents[:-1] + [new]), "bridge_to": next_info or "", "edited": now, "bridged": now}, True
+
+def prepare_item(client, models, idx, item, next_info, candidates, force=False, instruction="", plan_only=False, resync=False, relink=False):
     """확장 대본 (+ 음성). 성공하면 dict(narration, keywords, compare, recap, audio, timing, ...) 아니면 None.
     - 사람이 고쳐서 잠근(locked) 대본은 force 가 아니면 그대로 쓴다. 지시문(instruction)이 있으면 그 지시를 반영해 다시 쓴다.
     - plan_only=True 면 음성은 만들지 않는다 (대본/시나리오 미리보기용).
@@ -408,7 +438,7 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
         else:
             res["verify"] = {"status": "skipped", "notes": ["교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"]}
         keep = {k: rec[k] for k in KEEP_FIELDS if k in rec}
-        rec = {**keep, **res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M")}
+        rec = {**keep, **res, "sig": sig, "model": used, "created": time.strftime("%Y-%m-%d %H:%M"), "bridge_to": next_info or ""}
         if str(instruction or "").strip():
             rec["instruction"] = str(instruction).strip()
         store[key] = rec
@@ -416,6 +446,16 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
         print(f"    [확장대본] {idx} {item.get('country', '')}: {len(rec['narration'])}자, 키워드 {len(rec['keywords'])}, 비교 {'O' if rec.get('compare') else 'X'}, 검증 {rec['verify']['status']}", flush=True)
     else:
         print(f"    [확장대본] {idx}: 저장된 대본 재사용", flush=True)
+    # 챕터 순서가 바뀌었으면(저장된 연결 대상과 다르면) 마지막 연결 문장만 다시 쓴다. relink=True 면 연결 대상 기록이 없는 예전 대본도 한 번 맞춘다
+    if rec.get("narration") and client is not None:
+        _cur = next_info or ""
+        if ("bridge_to" in rec and rec.get("bridge_to") != _cur) or (relink and "bridge_to" not in rec):
+            rec, _ch = fix_bridge(client, models, idx, item, rec, next_info)
+            if _ch:
+                store = load_scripts()
+                store[key] = rec
+                save_scripts(store)
+                print(f"    [확장대본] {idx}: 순서가 바뀌어 마지막 연결 문장을 '{_cur or '마무리'}' 기준으로 다시 썼습니다", flush=True)
     if plan_only:
         return rec
     name = re.sub(r"[^\w가-힣-]+", "_", str(item.get("country", "x")))[:30]

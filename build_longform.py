@@ -150,6 +150,72 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi):
     return chosen
 
 
+def _fun_scores(db, idxs):
+    """소재별 '재미' 점수. 유튜브 성과(yt_stats.json: 조회수·평균 시청률)가 있으면 그걸 쓰고, 없으면 훅 문장으로 추정한다."""
+    import math
+    stats = {}
+    try:
+        snaps = load_json(BASE / "yt_stats.json", [])
+        for v in (snaps[-1]["videos"] if snaps else []):
+            stats[v.get("id")] = (float(v.get("views", 0) or 0), float(v.get("averageViewPercentage", 0) or 0))
+    except Exception:
+        pass
+    out = {}
+    for i in idxs:
+        f = db[i]
+        st_ = stats.get(f.get("youtube_id"))
+        if st_ and st_[0] >= 20:                                  # 조회가 어느 정도 있는 영상만 실제 성과로 판단
+            out[i] = 3.0 + math.log1p(st_[0]) * 0.5 + st_[1] / 50.0
+            continue
+        hook = str(f.get("hook") or f.get("title_line1") or "")
+        sc = 0.0
+        sc += 1.0 if re.search(r"\d", hook) else 0.0                          # 숫자
+        sc += 0.8 if re.search(r"[?]|까요|다고|대요", hook) else 0.0              # 질문/의외 어투
+        sc += 0.8 if re.search(r"벌금|금지|불법|허용|못|없|돈|값|세금|무료|바로|즉시|Fine|ban|illegal|free|price", hook, re.I) else 0.0
+        sc += 0.4 if 12 <= len(hook) <= 40 else 0.0
+        out[i] = sc
+    return out
+
+
+def order_members(db, idxs):
+    """롱폼 챕터 순서를 흐름에 맞게 정한다: 맨 앞에 가장 재밌는 소재, 중간(약 60% 지점)에 다음으로 강한 소재로 흐름 유지,
+    마지막은 그다음 강한 소재로 마무리. 나머지는 이웃한 챕터의 분야/나라가 겹치지 않게 번갈아 채운다. (수동 순서를 정하려면 manual 번호 순서를 그대로 쓰세요)"""
+    idxs = list(idxs)
+    n = len(idxs)
+    if n < 4:
+        return idxs
+    sc = _fun_scores(db, idxs)
+    ranked = sorted(idxs, key=lambda i: (-sc[i], i))
+    slot = {0: ranked[0], max(1, round((n - 1) * 0.6)): ranked[1], n - 1: ranked[2]}
+    rest = ranked[3:]
+    order = [None] * n
+    for pos, i in slot.items():
+        order[pos] = i
+
+    def tag(i):
+        f = db[i]
+        return str(f.get("theme") or ""), str(f.get("country") or "")
+    for pos in range(n):
+        if order[pos] is not None:
+            continue
+        prev = order[pos - 1] if pos > 0 else None
+        nxt = order[pos + 1] if pos + 1 < n else None
+        pick = None
+        for i in rest:
+            ok = True
+            for nb in (prev, nxt):
+                if nb is not None and (tag(i)[0] and tag(i)[0] == tag(nb)[0] or tag(i)[1] == tag(nb)[1]):
+                    ok = False
+            if ok:
+                pick = i
+                break
+        pick = pick if pick is not None else rest[0]
+        rest.remove(pick)
+        order[pos] = pick
+    return order
+
+
+
 def subtitles_mode():
     import subtitles
     return subtitles.caption_mode()
@@ -599,7 +665,7 @@ def run_rich(args, db, lf_db, members):
             try:
                 rec = LS.prepare_item(client, models, idx, item, _next_info(db, members, k), cands,
                                       force=bool(args.regen and target), instruction=(args.instruction if target else ""), plan_only=(args.plan_only or args.preview in ('script', 'images', 'cuts')),
-                                      resync=bool(args.resync and target))
+                                      resync=bool(args.resync and target), relink=bool(getattr(args, 'relink', False)))
             except Exception as e:
                 print(f"  확장 대본 실패 ({type(e).__name__}: {e})", flush=True)
         if args.plan_only or args.preview in ("script", "images", "cuts"):
@@ -900,6 +966,9 @@ def main():
     ap.add_argument("--fill-images", action="store_true", help="빠진 사진은 합성 전에 Pixabay/Commons에서 받아 채운다 (GitHub Actions 기본, 환경변수 LF_FILL_IMAGES=1)")
     ap.add_argument("--require-images", action="store_true", help="사진이 빠진 챕터가 있으면 합성 전에 멈춘다 (UI 기본)")
     ap.add_argument("--clips", action="store_true", help="스톡 영상(Pexels/Pixabay) B-roll을 일부 장면에 사용 (PEXELS_API_KEY 또는 PIXABAY_API_KEY 필요)")
+    ap.add_argument("--arrange", action="store_true", help="소재 순서를 흐름에 맞게 자동 배치 (맨 앞에 가장 재밌는 소재, 중간에 흐름 유지용, 분야/나라가 이어지지 않게). auto 모드는 기본으로 적용")
+    ap.add_argument("--no-arrange", action="store_true", help="auto 모드에서도 번호순 그대로 쓴다")
+    ap.add_argument("--relink", action="store_true", help="챕터 순서가 바뀐 뒤 마지막 연결 문장을 새 순서에 맞게 다시 쓴다 (순서가 바뀐 건 자동으로도 감지)")
     ap.add_argument("--no-compare", action="store_true", help="비교 카드를 쓰지 않는다 (저장된 비교 카드가 있어도 화면·오프닝 멘트에 넣지 않음)")
     ap.add_argument("--no-recap-cards", action="store_true", help="요약 화면은 두되 챕터별 요약 카드는 표시하지 않고 엔딩 멘트 음성만 낸다")
     ap.add_argument("--no-recap", action="store_true", help="마지막 요약 화면(+엔딩 멘트)을 만들지 않는다")
@@ -926,6 +995,11 @@ def main():
         return run_deep(args, db, lf_db)
     members = select_members(db, lf_db, args.mode, args.indexes, args.theme, args.count, args.start,
                              args.min, args.max)
+    if args.arrange or (args.mode == "auto" and not args.no_arrange and os.environ.get("LF_ARRANGE", "1") != "0"):
+        _before = list(members)
+        members = order_members(db, members)
+        if members != _before:
+            print("순서 자동 배치(재미 순): " + " → ".join(str(i) for i in members), flush=True)
     total_est = sum(est_seconds(db[i]) for i in members)
     print(f"롱폼 소재 {len(members)}개 (예상 약 {total_est / 60:.1f}분): " +
           ", ".join(f"{i} {DISP(db[i].get('country', ''))}" for i in members), flush=True)
