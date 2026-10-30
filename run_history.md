@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 17:54:13 (KST) · 기록 587건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 18:10:38 (KST) · 기록 588건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -24,7 +24,7 @@
 | upload_to_youtube | 3 | 0 | 38초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 98 | 6 | 12시간 17분 |
-| 코드업데이트 | 24 | 0 | 0초 |
+| 코드업데이트 | 25 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -32,6 +32,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:59 | PC | 코드업데이트 | gonmau/shorts: 1개 (common.py) | ✅ |  |  |
 | 17:54 | PC | upload_to_youtube | upload_to_youtube.py --limit 2 --daily-max 6 | ✅ | 25초 |  |
 | 17:52 | PC | upload_to_youtube | upload_to_youtube.py --limit 1 --daily-max 6 | ✅ | 11초 |  |
 | 17:51 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
