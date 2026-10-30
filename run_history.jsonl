@@ -584,3 +584,4 @@
 {"id": "1793350234419-a1124a", "time": "2026-10-30 17:50:34", "channel": "KO", "source": "PC", "kind": "upload_to_youtube", "title": "upload_to_youtube.py --limit 1", "status": "success", "secs": 0.7, "detail": ""}
 {"id": "1793350295048-732f21", "time": "2026-10-30 17:51:35", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1793350353500-39d4a1", "time": "2026-10-30 17:52:33", "channel": "KO", "source": "PC", "kind": "upload_to_youtube", "title": "upload_to_youtube.py --limit 1 --daily-max 6", "status": "success", "secs": 11.8, "detail": ""}
+{"id": "1793350446757-ca539f", "time": "2026-10-30 17:54:06", "channel": "KO", "source": "PC", "kind": "upload_to_youtube", "title": "upload_to_youtube.py --limit 2 --daily-max 6", "status": "success", "secs": 25.8, "detail": ""}
