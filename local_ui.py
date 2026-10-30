@@ -593,8 +593,14 @@ with T4b:
 with T5a:
     d4 = _ld()
     allr = _ready_all()
-    st.caption(f"렌더링 대기 {len(allr)}개 (start_index {int(start)} 이상, 번호순). 아래에서 만들 소재를 직접 고르세요. 기본은 앞에서 count개입니다.")
-    pick4 = st.multiselect("렌더링할 소재", allr, default=allr[:int(count)], key=f"rd_pick_{int(start)}_{int(count)}_{len(allr)}",
+    _rn = []
+    if redo.strip() and not redo_script:               # redo 칸 번호는 start_index와 상관없이 목록에 넣고 기본 선택한다
+        for _t in re.findall(r"\d+", redo.replace("!", "")):
+            if int(_t) < len(d4) and int(_t) not in _rn:
+                _rn.append(int(_t))
+        allr = sorted(set(allr) | set(_rn))
+    st.caption(f"렌더링 대기 {len(allr)}개 (start_index {int(start)} 이상, 번호순). 아래에서 만들 소재를 직접 고르세요. 기본은 앞에서 count개입니다." + (f" redo 번호 {_rn}는 자동 포함됩니다." if _rn else ""))
+    pick4 = st.multiselect("렌더링할 소재", allr, default=(_rn or allr[:int(count)]), key=f"rd_pick_{int(start)}_{int(count)}_{len(allr)}_{'-'.join(map(str, _rn))}",
                            format_func=lambda i: f"{i} {d4[i].get('country', '')} - {d4[i].get('topic', '')}")
     rows = []
     for i in pick4:
