@@ -6,6 +6,7 @@
 유튜브에 이미 올린 소재는 youtube_id를 남겨 둬서 자동 업로드는 다시 하지 않는다(새 영상은 아티팩트에서 받아 수동 업로드).
 """
 import argparse
+import time
 
 from common import load_db, save_db
 
@@ -28,6 +29,7 @@ def revive(db, i):
     for k in CLEAR + ("reject_reason",):
         f.pop(k, None)
     f["status"] = "scripted"
+    f["redo_ts"] = time.time()
     f["fact_verifiability"] = "user"
     f["fact_risk"] = "user-pending"
     print(f"  [{i}] {f.get('country', '')}: 검수 대기열로 되살림 (review.txt에서 직접 고치세요)")
@@ -47,6 +49,7 @@ def redo_script(db, idxs):
         for k in CLEAR + SCRIPT_CLEAR:
             f.pop(k, None)
         f["status"] = "verified"
+        f["redo_ts"] = time.time()   # sync_db가 GitHub의 옛 상태(video_done)로 되돌리지 못하게 하는 표시
         print(f"  [{i}] {f.get('country', '')}: 대본부터 다시 생성 대기")
 
 
@@ -77,6 +80,7 @@ def main():
         for k in CLEAR:
             f.pop(k, None)
         f["status"] = "scripted"
+        f["redo_ts"] = time.time()
         note = " (이미 유튜브에 업로드된 소재: 새 영상은 수동 업로드)" if f.get("youtube_id") else ""
         print(f"  [{i}] {f.get('country', '')}: 다시 제작 대기열로{note}")
     save_db(db)

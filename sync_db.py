@@ -127,6 +127,16 @@ def merge_item(g, l, side, prefer):
             pick = lv if prefer == "local" else gv
             out[k] = pick
             conf.append((k, gv, lv, "PC" if prefer == "local" else "GitHub"))
+    # 다시 만들기(redo) 표시: 더 최근에 redo 한 쪽의 상태를 따른다 (안 그러면 GitHub의 옛 video_done 이 이겨서 redo 가 되돌려짐)
+    gt, lt = float(g.get("redo_ts") or 0), float(l.get("redo_ts") or 0)
+    if gt != lt:
+        win = l if lt > gt else g
+        for k in ("redo_ts", "status", "status_v6", "audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "video_path_v6",
+                  "narration", "title_line1", "title_line2", "highlights", "image_queries", "ko_title", "ko_description"):
+            if k in win:
+                out[k] = win[k]
+            else:
+                out.pop(k, None)
     if out.get("status") != "rejected":
         out.pop("reject_reason", None)
     # 상태 일관성: 영상이 끝난 쪽의 status_v6 가 이겼는데 status 가 뒤처지면 맞춘다
