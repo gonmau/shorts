@@ -292,6 +292,8 @@ def main():
             post_file(url, BASE / "yt_report.md", f"📈 [{ch}] 유튜브 성과 리포트\n" + "\n".join(head)[:1500] + "\n📎 전체 리포트는 첨부 파일")
         except Exception as e:
             print("디스코드 전송 실패:", e)
+    elif not a.no_discord:
+        print("디스코드 전송 건너뜀: DISCORD_WEBHOOK_URL 시크릿이 비어 있습니다")
 
 
 if __name__ == "__main__":

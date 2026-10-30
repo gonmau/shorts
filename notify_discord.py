@@ -50,7 +50,11 @@ def post_file(url, path, text=""):
     """텍스트 등 임의 파일을 디스코드에 첨부 전송."""
     try:
         with open(path, "rb") as f:
-            requests.post(url, data={"content": text[:1900]}, files={"file": (Path(path).name, f)}, timeout=60)
+            r = requests.post(url, data={"content": text[:1900]}, files={"file": (Path(path).name, f)}, timeout=60)
+        if r.status_code >= 300:
+            print(f"파일 전송 실패: 디스코드가 거절했습니다 (HTTP {r.status_code}) {r.text[:200]}")
+        else:
+            print(f"디스코드 파일 전송 완료 (HTTP {r.status_code})")
     except Exception as e:
         print("파일 전송 실패:", e)
 
