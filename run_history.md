@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 15:10:25 (KST) · 기록 498건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 15:49:31 (KST) · 기록 538건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -13,9 +13,9 @@
 | build_video | 2 | 0 | 34분 3초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
-| fetch_images | 38 | 1 | 15분 49초 |
+| fetch_images | 58 | 1 | 44분 21초 |
 | generate_culture_facts | 4 | 0 | 4분 58초 |
-| generate_script | 32 | 0 | 33분 31초 |
+| generate_script | 52 | 0 | 35분 28초 |
 | generate_tts | 2 | 0 | 1분 17초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 2 | 0 | 5초 |
@@ -31,6 +31,46 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:49 | PC | fetch_images | fetch_images.py --index 343 --force | ✅ | 1분 15초 |  |
+| 15:48 | PC | generate_script | generate_script.py --extras-only --index 343 --regen-queries | ✅ | 6초 |  |
+| 15:48 | PC | fetch_images | fetch_images.py --index 342 --force | ✅ | 3분 36초 |  |
+| 15:44 | PC | generate_script | generate_script.py --extras-only --index 342 --regen-queries | ✅ | 4초 |  |
+| 15:44 | PC | fetch_images | fetch_images.py --index 341 --force | ✅ | 1분 16초 |  |
+| 15:43 | PC | generate_script | generate_script.py --extras-only --index 341 --regen-queries | ✅ | 5초 |  |
+| 15:42 | PC | fetch_images | fetch_images.py --index 339 --force | ✅ | 2분 38초 |  |
+| 15:40 | PC | generate_script | generate_script.py --extras-only --index 339 --regen-queries | ✅ | 5초 |  |
+| 15:40 | PC | fetch_images | fetch_images.py --index 338 --force | ✅ | 1분 19초 |  |
+| 15:38 | PC | generate_script | generate_script.py --extras-only --index 338 --regen-queries | ✅ | 5초 |  |
+| 15:38 | PC | fetch_images | fetch_images.py --index 337 --force | ✅ | 1분 8초 |  |
+| 15:37 | PC | generate_script | generate_script.py --extras-only --index 337 --regen-queries | ✅ | 4초 |  |
+| 15:37 | PC | fetch_images | fetch_images.py --index 335 --force | ✅ | 1분 38초 |  |
+| 15:35 | PC | generate_script | generate_script.py --extras-only --index 335 --regen-queries | ✅ | 5초 |  |
+| 15:35 | PC | fetch_images | fetch_images.py --index 333 --force | ✅ | 1분 33초 |  |
+| 15:34 | PC | generate_script | generate_script.py --extras-only --index 333 --regen-queries | ✅ | 4초 |  |
+| 15:34 | PC | fetch_images | fetch_images.py --index 332 --force | ✅ | 1분 17초 |  |
+| 15:32 | PC | generate_script | generate_script.py --extras-only --index 332 --regen-queries | ✅ | 3초 |  |
+| 15:32 | PC | fetch_images | fetch_images.py --index 331 --force | ✅ | 1분 35초 |  |
+| 15:31 | PC | generate_script | generate_script.py --extras-only --index 331 --regen-queries | ✅ | 2초 |  |
+| 15:31 | PC | fetch_images | fetch_images.py --index 330 --force | ✅ | 1분 49초 |  |
+| 15:29 | PC | generate_script | generate_script.py --extras-only --index 330 --regen-queries | ✅ | 12초 |  |
+| 15:29 | PC | fetch_images | fetch_images.py --index 328 --force | ✅ | 9초 |  |
+| 15:29 | PC | generate_script | generate_script.py --extras-only --index 328 --regen-queries | ✅ | 19초 |  |
+| 15:28 | PC | fetch_images | fetch_images.py --index 327 --force | ✅ | 45초 |  |
+| 15:27 | PC | generate_script | generate_script.py --extras-only --index 327 --regen-queries | ✅ | 5초 |  |
+| 15:27 | PC | fetch_images | fetch_images.py --index 326 --force | ✅ | 1분 5초 |  |
+| 15:26 | PC | generate_script | generate_script.py --extras-only --index 326 --regen-queries | ✅ | 2초 |  |
+| 15:26 | PC | fetch_images | fetch_images.py --index 325 --force | ✅ | 2분 25초 |  |
+| 15:24 | PC | generate_script | generate_script.py --extras-only --index 325 --regen-queries | ✅ | 5초 |  |
+| 15:24 | PC | fetch_images | fetch_images.py --index 323 --force | ✅ | 40초 |  |
+| 15:23 | PC | generate_script | generate_script.py --extras-only --index 323 --regen-queries | ✅ | 3초 |  |
+| 15:23 | PC | fetch_images | fetch_images.py --index 322 --force | ✅ | 57초 |  |
+| 15:22 | PC | generate_script | generate_script.py --extras-only --index 322 --regen-queries | ✅ | 2초 |  |
+| 15:22 | PC | fetch_images | fetch_images.py --index 319 --force | ✅ | 56초 |  |
+| 15:21 | PC | generate_script | generate_script.py --extras-only --index 319 --regen-queries | ✅ | 6초 |  |
+| 15:21 | PC | fetch_images | fetch_images.py --index 304 --force | ✅ | 52초 |  |
+| 15:20 | PC | generate_script | generate_script.py --extras-only --index 304 --regen-queries | ✅ | 3초 |  |
+| 15:20 | PC | fetch_images | fetch_images.py --index 286 --force | ✅ | 1분 34초 |  |
+| 15:18 | PC | generate_script | generate_script.py --extras-only --index 286 --regen-queries | ✅ | 5초 |  |
 | 14:52 | PC | fetch_images | fetch_images.py --limit 1 --start 106 --any | ✅ | 32초 |  |
 | 14:51 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 106 | ✅ | 1초 |  |
 | 14:51 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
