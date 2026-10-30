@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 22:30:22 (KST) · 기록 644건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 22:39:17 (KST) · 기록 645건 · 소재 389개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -14,7 +14,7 @@
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
-| generate_culture_facts | 4 | 0 | 4분 58초 |
+| generate_culture_facts | 5 | 0 | 7분 8초 |
 | generate_script | 81 | 0 | 37분 5초 |
 | generate_tts | 21 | 0 | 8분 54초 |
 | image_check | 2 | 0 | 19초 |
@@ -32,6 +32,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:39 | PC | generate_culture_facts | generate_culture_facts.py --count 10 | ✅ | 2분 9초 |  |
 | 22:30 | PC | upload_to_youtube | upload_to_youtube.py --indexes 338,332 --daily-max 2 | ✅ | 0초 |  |
 | 22:08 | PC | 코드업데이트 | gonmau/shorts: 3개 (local_ui.py, sync_db.py, upload_to_youtube.py) | ✅ |  |  |
 | 21:34 | PC | generate_tts | generate_tts.py --index 339 | ✅ | 29초 |  |
