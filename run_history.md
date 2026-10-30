@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 17:18:52 (KST) · 기록 573건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 17:38:31 (KST) · 기록 582건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 27 | 0 | 4초 |
+| apply_review | 28 | 0 | 4초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 2 | 0 | 34분 3초 |
+| build_video | 4 | 0 | 52분 11초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
 | generate_culture_facts | 4 | 0 | 4분 58초 |
-| generate_script | 63 | 0 | 36분 21초 |
-| generate_tts | 3 | 0 | 1분 36초 |
+| generate_script | 65 | 0 | 36분 25초 |
+| generate_tts | 5 | 0 | 2분 19초 |
 | image_check | 2 | 0 | 19초 |
-| make_thumbnail | 2 | 0 | 5초 |
-| promote_ready | 27 | 0 | 4초 |
+| make_thumbnail | 3 | 0 | 7초 |
+| promote_ready | 28 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 98 | 6 | 12시간 17분 |
@@ -31,6 +31,15 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:38 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 286,304 | ✅ | 2초 |  |
+| 17:38 | PC | build_video | build_video.py --index 304 --channel gonmauY --handle @gonmauY | ✅ | 9분 29초 |  |
+| 17:28 | PC | generate_tts | generate_tts.py --index 304 | ✅ | 22초 |  |
+| 17:28 | PC | generate_script | generate_script.py --extras-only --index 304 | ✅ | 1초 |  |
+| 17:28 | PC | build_video | build_video.py --index 286 --channel gonmauY --handle @gonmauY | ✅ | 8분 38초 |  |
+| 17:19 | PC | generate_tts | generate_tts.py --index 286 | ✅ | 20초 |  |
+| 17:19 | PC | generate_script | generate_script.py --extras-only --index 286 | ✅ | 2초 |  |
+| 17:19 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 17:19 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 17:18 | PC | generate_tts | generate_tts.py --index 286 | ✅ | 18초 |  |
 | 17:17 | PC | generate_script | generate_script.py --extras-only --index 286 | ✅ | 1초 |  |
 | 17:17 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
