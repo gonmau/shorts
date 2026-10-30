@@ -38169,7 +38169,7 @@
     "verify_note": "Paella",
     "confidence": "source",
     "created_at": "2026-10-30T13:37:46.102267+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "부활절(Easter) 빨간 달걀, 예수(Jesus)님의 피를 상징",
@@ -38184,7 +38184,7 @@
     "verify_note": "Easter egg",
     "confidence": "source",
     "created_at": "2026-10-30T13:37:46.102267+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "일본의 중원절 (Zhongyuan Festival), 조상 귀신이 거리로 나오는 날",
@@ -38199,7 +38199,8 @@
     "verify_note": "Ghost Festival",
     "confidence": "source",
     "created_at": "2026-10-30T13:37:49.837135+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "UI에서 제외"
   },
   {
     "topic": "사모아 수석 판사의 권한은 헌법에 의해 정해진다",
@@ -38214,7 +38215,7 @@
     "verify_note": "Chief Justice of Samoa",
     "confidence": "source",
     "created_at": "2026-10-30T13:37:54.649695+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "핀란드 사우나는 유네스코 무형문화유산",
@@ -38229,7 +38230,7 @@
     "verify_note": "Finnish sauna",
     "confidence": "source",
     "created_at": "2026-10-30T13:37:54.649695+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "부하라 유대인, 중앙아시아에 남은 소수",
@@ -38244,7 +38245,7 @@
     "verify_note": "Bukharan Jews",
     "confidence": "source",
     "created_at": "2026-10-30T13:38:27.520796+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "새해 맞이 물축제의 물뿌리기 풍경",
@@ -38259,7 +38260,7 @@
     "verify_note": "Water Festival",
     "confidence": "source",
     "created_at": "2026-10-30T13:38:42.265298+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "페루의 마법사 호칭과 성별 유연성",
@@ -38274,7 +38275,8 @@
     "verify_note": "Witchcraft in Latin America",
     "confidence": "source",
     "created_at": "2026-10-30T13:38:42.265298+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "UI에서 제외"
   },
   {
     "topic": "캐나다 신부 파티의 기원",
@@ -38289,7 +38291,7 @@
     "verify_note": "Bachelorette party",
     "confidence": "source",
     "created_at": "2026-10-30T13:38:42.265298+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "학생 연합의 전통 사브르 결투",
@@ -38304,6 +38306,6 @@
     "verify_note": "Academic fencing",
     "confidence": "source",
     "created_at": "2026-10-30T13:39:10.731781+00:00",
-    "status": "unverified"
+    "status": "verified"
   }
 ]
