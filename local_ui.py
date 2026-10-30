@@ -675,6 +675,20 @@ with T6a:
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")
+    with st.expander("🔎 업로드 현황 점검 (삭제된 영상 · 중복 영상)"):
+        st.caption("채널(비공개 포함)의 실제 영상 목록과 DB의 업로드 기록을 비교합니다. ① 채널에 없는 영상(삭제됨) ② 채널 안의 중복 영상 ③ 한 영상이 여러 소재에 연결된 경우. 점검만 하고 DB는 바꾸지 않습니다. 영상 삭제는 유튜브 스튜디오에서 직접 하세요.")
+        _ck1, _ck2 = st.columns(2)
+        if _ck1.button("점검하기 (읽기만)", key="chk_up"):
+            if os.environ.get("YT_REFRESH_TOKEN"):
+                run("check_uploads.py")
+            else:
+                st.error("YT_REFRESH_TOKEN 이 없습니다.")
+        _clr = _ck2.checkbox("채널에 없는 영상의 업로드 기록을 지워 '미업로드'로 되돌리기", False, key="chk_clr")
+        if _ck2.button("삭제된 영상 기록 지우기", key="chk_up_clr", disabled=not _clr, help="DB의 youtube_id 등을 비웁니다. 영상 파일이 있으면 다시 올릴 수 있게 됩니다"):
+            run("check_uploads.py", "--clear-missing")
+        if os.path.exists("upload_check.md"):
+            with st.expander("최근 점검 결과 (upload_check.md)", expanded=True):
+                st.markdown(open("upload_check.md", encoding="utf-8").read())
 
 with H_auto:
     upto = st.radio("어디까지 자동으로 이어서 할까요", ["2 대본까지", "3 이미지까지", "4 렌더링까지"], index=0, horizontal=True, key="auto_upto",
