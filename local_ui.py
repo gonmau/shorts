@@ -105,6 +105,9 @@ except Exception:
 TTS_CFG.pop("discord_webhook", None)
 if _SEC.get("discord_webhook") and not os.environ.get("DISCORD_WEBHOOK_URL"):
     os.environ["DISCORD_WEBHOOK_URL"] = _SEC["discord_webhook"]
+for _sk, _ek in (("yt_refresh_token", "YT_REFRESH_TOKEN"), ("yt_client_id", "YT_CLIENT_ID"), ("yt_client_secret", "YT_CLIENT_SECRET")):
+    if _SEC.get(_sk) and not os.environ.get(_ek):    # get_token.bat 이 저장한 값 (환경변수가 없을 때만)
+        os.environ[_ek] = _SEC[_sk]
 TTS_CFG.setdefault("drive_auto", False)    # 작업 후 구글 드라이브에 자동 업로드 (바뀐 파일만)
 TTS_CFG.setdefault("drive_cats", ["thumbs", "subs", "audio", "images", "videos", "longform", "db"])
 ENGINE_LABELS = {"auto": "Supertonic 우선, 실패하면 Edge 등 (기본)", "edge": "Edge 우선, 실패하면 Supertonic 등", "supertonic": "Supertonic만 (실패하면 중단)", "edge_only": "Edge만 (실패하면 중단)"}
