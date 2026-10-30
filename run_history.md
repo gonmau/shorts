@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 14:45:26 (KST) · 기록 494건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 14:52:19 (KST) · 기록 498건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 22 | 0 | 3초 |
+| apply_review | 23 | 0 | 3초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 2 | 0 | 34분 3초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
-| fetch_images | 37 | 1 | 15분 16초 |
+| fetch_images | 38 | 1 | 15분 49초 |
 | generate_culture_facts | 4 | 0 | 4분 58초 |
-| generate_script | 31 | 0 | 33분 29초 |
+| generate_script | 32 | 0 | 33분 31초 |
 | generate_tts | 2 | 0 | 1분 17초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 2 | 0 | 5초 |
-| promote_ready | 22 | 0 | 3초 |
+| promote_ready | 23 | 0 | 3초 |
 | redo_videos | 6 | 0 | 1초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 98 | 6 | 12시간 17분 |
@@ -31,6 +31,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:52 | PC | fetch_images | fetch_images.py --limit 1 --start 106 --any | ✅ | 32초 |  |
+| 14:51 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 106 | ✅ | 1초 |  |
+| 14:51 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 14:51 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 14:12 | PC | 코드업데이트 | gonmau/shorts: 2개 (build_longform.py, local_ui.py) | ✅ |  |  |
 | 11:36 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, deep.py, local_ui.py, longform_render.py, longform_script.py) | ✅ |  |  |
 | 01:21 | Actions | 쇼츠 | culture-shorts-pipeline #104 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40906342614 |
