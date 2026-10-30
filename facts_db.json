@@ -23110,7 +23110,7 @@
     "verify_note": "Social season",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:41.663635+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "status_v6": "video_done",
     "narration": "봄만 되면 런던으로 몰려온 귀족들. 정말 파티하러 이사까지 온 걸까요? 지방 저택에 살던 상류층도 사교철이 되면 런던에 머물렀습니다. 무도회에 가고, 저녁 모임에 참석하고, 자선 행사에서 얼굴을 비췄죠. 이렇게 만남이 이어지는 시기를 ‘소셜 시즌’이라고 불렀습니다. 오늘은 누구의 초대를 받았는지, 내일은 어느 집 연회에 가는지. 달력 한 장이 파티 일정으로 채워지는 생활이었던 셈이죠. 하지만 제1차 세계대전 이후, 이런 귀족 중심의 사교 문화는 점차 힘을 잃었습니다. 관련 행사는 오늘날에도 이어지지만, 예전과 같은 모습은 아니에요. 귀족들에게 봄은 꽃이 피는 계절이면서, 다시 도시로 나가 사람을 만나는 계절이기도 했습니다.",
     "title_line1": "아일랜드 귀족 시즌",
@@ -23382,7 +23382,14 @@
           "c:58324425"
         ]
       }
-    ]
+    ],
+    "redo_ts": 1793348262.5792906,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0286_아일랜드_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0286_아일랜드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.mp4"
   },
   {
     "topic": "문화마다 다른 악수 동작",
@@ -25076,7 +25083,7 @@
     "verify_note": "Tea party",
     "confidence": "source",
     "created_at": "2026-10-22T00:41:57.507853+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "status_v6": "video_done",
     "narration": "저녁 먹기 전, 배가 고파서 시작한 간식 시간이 우아한 사교 문화가 됐다면요? 영국의 애프터눈 티에는 이런 이야기가 전해집니다. 19세기 베드퍼드 공작부인 안나가 늦은 저녁까지 허기를 달래려고, 오후에 차와 간단한 먹거리를 즐겼다는 거죠. 여기에 사람들을 초대하면서, 혼자 먹던 간식은 함께 즐기는 시간이 됩니다. 차를 따르고, 작은 샌드위치를 집고, 케이크를 먹으며 이야기를 나누는 자리. 우리가 떠올리는 영국식 티타임의 모습이죠. 물론 차 문화의 뿌리는 중국에 있습니다. 하지만 차가 영국으로 건너온 뒤, 그곳의 생활 방식과 만나 새로운 오후 풍경을 만든 거예요. 지금은 우아함의 상징 같은 이 시간. 출발점은 어쩌면 아주 익숙한 한마디였겠네요. “저녁까지 기다리기엔 너무 배고픈데?”",
     "title_line1": "인도, 유럽식 티파티",
@@ -25342,7 +25349,14 @@
         "scene": 11,
         "rejected_ids": []
       }
-    ]
+    ],
+    "redo_ts": 1793348262.5792906,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0304_인도_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0304_인도_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0304_인도.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0304_인도.mp4"
   },
   {
     "topic": "전쟁 중에도 보호된 영국 대표 음식 피시앤칩스",
