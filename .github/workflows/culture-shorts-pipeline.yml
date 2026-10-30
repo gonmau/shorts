@@ -36,7 +36,7 @@ on:
         options: [all, prepare, cuts, render]
         default: all
       count:
-        description: "만들 영상 개수 (기본 3개, 하루 업로드 상한도 3개)"
+        description: "만들 영상 개수 (기본 3개, 하루 업로드 상한 20개)"
         default: "3"
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"

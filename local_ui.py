@@ -635,7 +635,7 @@ with T5a:
         chain(steps)
 
 with T6a:
-    _dmax = st.number_input("하루 업로드 상한 (오늘 올린 개수 포함, 한국시간 기준)", 1, 50, int(os.environ.get("DAILY_MAX", "3") or 3), key="up_dmax",
+    _dmax = st.number_input("하루 업로드 상한 (오늘 올린 개수 포함, 한국시간 기준)", 1, 50, int(os.environ.get("DAILY_MAX", "20") or 20), key="up_dmax",
                             help="오늘 이미 올린 개수가 이 값에 닿으면 더 안 올립니다. 늘리면 그만큼 더 올라갑니다 (유튜브 API 일일 할당량도 고려하세요)")
     if st.button("업로드", key="up_go", help="만든 영상을 비공개로 올립니다. YT_REFRESH_TOKEN 이 필요합니다 (get_refresh_token.py 로 받음)") :
         if os.environ.get("YT_REFRESH_TOKEN"):

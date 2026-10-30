@@ -61,7 +61,7 @@ def youtube():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=5)
-    ap.add_argument("--daily-max", type=int, default=int(os.environ.get("DAILY_MAX", "3") or 3), help="하루(한국시간) 최대 업로드 수")
+    ap.add_argument("--daily-max", type=int, default=int(os.environ.get("DAILY_MAX", "20") or 20), help="하루(한국시간) 최대 업로드 수")
     args = ap.parse_args()
 
     db = json.loads(DB.read_text(encoding="utf-8"))
