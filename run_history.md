@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 20:10:56 (KST) · 기록 620건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 21:40:17 (KST) · 기록 642건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,18 +8,18 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 29 | 0 | 4초 |
+| apply_review | 30 | 0 | 4초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 12 | 0 | 2시간 8분 |
+| build_video | 18 | 0 | 3시간 10분 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
 | generate_culture_facts | 4 | 0 | 4분 58초 |
-| generate_script | 74 | 0 | 36분 52초 |
-| generate_tts | 14 | 0 | 5분 47초 |
+| generate_script | 81 | 0 | 37분 5초 |
+| generate_tts | 21 | 0 | 8분 54초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 3 | 0 | 7초 |
-| promote_ready | 29 | 0 | 4초 |
+| promote_ready | 30 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
 | upload_to_youtube | 5 | 0 | 3분 14초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
@@ -32,6 +32,28 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:34 | PC | generate_tts | generate_tts.py --index 339 | ✅ | 29초 |  |
+| 21:34 | PC | generate_script | generate_script.py --extras-only --index 339 | ✅ | 1초 |  |
+| 21:34 | PC | build_video | build_video.py --index 338 --channel gonmauY --handle @gonmauY | ✅ | 10분 57초 |  |
+| 21:23 | PC | generate_tts | generate_tts.py --index 338 | ✅ | 27초 |  |
+| 21:22 | PC | generate_script | generate_script.py --extras-only --index 338 | ✅ | 1초 |  |
+| 21:22 | PC | build_video | build_video.py --index 337 --channel gonmauY --handle @gonmauY | ✅ | 12분 11초 |  |
+| 21:10 | PC | generate_tts | generate_tts.py --index 337 | ✅ | 32초 |  |
+| 21:10 | PC | generate_script | generate_script.py --extras-only --index 337 | ✅ | 1초 |  |
+| 21:10 | PC | build_video | build_video.py --index 335 --channel gonmauY --handle @gonmauY | ✅ | 11분 5초 |  |
+| 20:59 | PC | generate_tts | generate_tts.py --index 335 | ✅ | 27초 |  |
+| 20:58 | PC | generate_script | generate_script.py --extras-only --index 335 | ✅ | 1초 |  |
+| 20:58 | PC | build_video | build_video.py --index 333 --channel gonmauY --handle @gonmauY | ✅ | 11분 34초 |  |
+| 20:46 | PC | generate_tts | generate_tts.py --index 333 | ✅ | 28초 |  |
+| 20:46 | PC | generate_script | generate_script.py --extras-only --index 333 | ✅ | 1초 |  |
+| 20:46 | PC | build_video | build_video.py --index 332 --channel gonmauY --handle @gonmauY | ✅ | 7분 43초 |  |
+| 20:38 | PC | generate_tts | generate_tts.py --index 332 | ✅ | 19초 |  |
+| 20:38 | PC | generate_script | generate_script.py --extras-only --index 332 | ✅ | 1초 |  |
+| 20:38 | PC | build_video | build_video.py --index 331 --channel gonmauY --handle @gonmauY | ✅ | 8분 35초 |  |
+| 20:29 | PC | generate_tts | generate_tts.py --index 331 | ✅ | 22초 |  |
+| 20:29 | PC | generate_script | generate_script.py --extras-only --index 331 | ✅ | 1초 |  |
+| 20:29 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 20:29 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
 | 20:10 | PC | upload_to_youtube | upload_to_youtube.py --limit 14 --daily-max 20 | ✅ | 2분 23초 |  |
 | 20:06 | PC | upload_to_youtube | upload_to_youtube.py --limit 1 --daily-max 20 | ✅ | 13초 |  |
 | 20:05 | PC | 코드업데이트 | gonmau/shorts: 2개 (notify_discord.py, yt_report.py) | ✅ |  |  |
