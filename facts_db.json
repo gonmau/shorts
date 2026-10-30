@@ -38321,7 +38321,7 @@
     "verify_note": "Mid-Autumn Festival",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:10.959599+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "로사르, 지역마다 다른 새해 시작",
@@ -38336,7 +38336,7 @@
     "verify_note": "Losar",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:10.959599+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "노로드옴 시하누크(Norodom Sihanouk)의 별명 ‘핑크 프린스(Pink Prince)’",
@@ -38351,7 +38351,7 @@
     "verify_note": "Norodom Sihanouk",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:15.828165+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "마야(Maya)라는 이름의 기원",
@@ -38366,7 +38366,7 @@
     "verify_note": "Maya peoples",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:15.828165+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "필리핀(Philippines)의 세계 최장 크리스마스 시즌",
@@ -38381,7 +38381,7 @@
     "verify_note": "Christmas in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:15.828165+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "인도 금융 규제의 세 가지 법적 구분",
@@ -38396,7 +38396,7 @@
     "verify_note": "Financial regulation in India",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:20.539269+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "예술 음악(클래식)과 일상 음악의 구분",
@@ -38411,7 +38411,7 @@
     "verify_note": "Art music",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:20.539269+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "밤에 눈이 큰 마다가스카르 고유 원숭이",
@@ -38426,7 +38426,7 @@
     "verify_note": "Lemur",
     "confidence": "source",
     "created_at": "2026-10-30T14:13:45.060298+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "손에 쥐고 바로 먹는 핑거 뷔페",
@@ -38441,7 +38441,7 @@
     "verify_note": "Buffet",
     "confidence": "source",
     "created_at": "2026-10-30T14:14:02.419996+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "끓는 물에 떠다니는 피에로기(Pierogi)",
@@ -38456,7 +38456,7 @@
     "verify_note": "Pierogi",
     "confidence": "source",
     "created_at": "2026-10-30T14:14:02.419996+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "부탄의 공식 복장·예절 규정",
@@ -38471,7 +38471,7 @@
     "verify_note": "Driglam namzha",
     "confidence": "source",
     "created_at": "2026-10-30T14:14:29.041889+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "싱가포르 전자 팝 스타의 독특한 악기",
@@ -38486,6 +38486,186 @@
     "verify_note": "Jasmine Sokko",
     "confidence": "source",
     "created_at": "2026-10-30T14:14:29.041889+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "보로로(Bororo) 부족의 8개 마을 생활",
+    "hook": "8개의 마을 중 하나에 들어서면, 주민이 바로 보로로어(Borôro)로 인사하라고 요구한다!",
+    "body": "보로로(Bororo) 부족은 브라질 마투 그로소 주와 볼리비아·고이아스까지 퍼져 살며, 서쪽은 자우루(Jauru)·카바살(Cabaçal) 강 주변, 동쪽은 상루르엔소(São Lourenço)·가르사스(Garças)·베르멜루(Vermelho) 강 지역에 거주한다. 그들은 총 8개의 마을에 살고, 인구는 2천 명 이하이며 보로로어(Borôro)라는 언어를 사용한다.",
+    "twist": "보로로어는 국제 ISO 639 코드가 BOR라서 전 세계 언어 데이터베이스에 등재돼 있다.",
+    "caveat": "인구와 마을 수는 보로로(Bororo) 부족 전체에 해당한다.",
+    "country": "브라질",
+    "theme": "언어/이름",
+    "wiki_title": "Bororo",
+    "source_url": "https://en.wikipedia.org/wiki/Bororo",
+    "verify_note": "Bororo",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:13.186433+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "스웨덴의 이동식 에스프레소 바 문화",
+    "hook": "스웨덴 축제 한복판에 갑자기 팝업 에스프레소 바가 등장한다!",
+    "body": "스웨덴에서는 커피가 사회적 윤활제로 자리 잡으며, 특히 에스프레소가 주요 음료다. 최근 도심 시장·축제·소매 행사에 모바일 커피 카트와 팝업 에스프레소 바가 늘어나, 사람들은 길거리에서 바로 특수 커피를 즐긴다.",
+    "twist": "이 모바일 바는 16세기 오스만 제국의 커피하우스 전통을 이어받은 형태다.",
+    "caveat": "주요 도시는 물론 축제 현장에서 주로 관찰된다.",
+    "country": "스웨덴",
+    "theme": "관습/예절",
+    "wiki_title": "Coffee culture",
+    "source_url": "https://en.wikipedia.org/wiki/Coffee_culture",
+    "verify_note": "Coffee culture",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:13.186433+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "고대 그리스 남성 동반자 제도",
+    "hook": "그리스에서는 10대 소년을 군인으로 맞이할 때, ‘연인’이 필요했다!",
+    "body": "고대 그리스에서 에라테스(erastes)라 불리는 나이 든 남성과 에로메노스(eromenos)라 불리는 청소년 사이에 사회적으로 인정된 관계가 있었다. 이 관계는 크레타 섬의 입문 의식과 제우스(Zeus) 숭배와 연결돼 군 생활 진입의 일환으로 여겨졌다.",
+    "twist": "문학에서는 이 관계를 이상화하기도 하고, 동시에 비판하기도 했다.",
+    "caveat": "이 관습은 고대 그리스 사회에만 존재했으며, 현대와는 전혀 다릅니다.",
+    "country": "그리스",
+    "theme": "관습/예절",
+    "wiki_title": "Pederasty in ancient Greece",
+    "source_url": "https://en.wikipedia.org/wiki/Pederasty_in_ancient_Greece",
+    "verify_note": "Pederasty in ancient Greece",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:16.078901+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "일주일 동안 나무 판잣집에서 지내는 유대인 명절",
+    "hook": "일주일 내내 판잣집 안에서 식사한다면?",
+    "body": "수코트(סוכות)는 7일 동안 지키는 유대인 명절로, 임시 목재 판잣집인 sukkah 안에서 축제 식사를 해요.",
+    "twist": "그 집 안에서 네 가지 식물을 손에 들고 기도까지 해야 한답니다.",
+    "caveat": "이 관습은 이스라엘과 전 세계 유대인 공동체에서 시행됩니다.",
+    "country": "이스라엘",
+    "theme": "축제/의례",
+    "wiki_title": "Sukkot",
+    "source_url": "https://en.wikipedia.org/wiki/Sukkot",
+    "verify_note": "Sukkot",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:21.608779+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "베트남 설, 1월 말부터 2월 중순까지",
+    "hook": "새해가 2월 20일까지 기다려야 한다면?",
+    "body": "테트(Tết)는 베트남에서 가장 중요한 명절로, 음력 첫 달 첫날을 기념해 1월 말부터 2월 20일 사이에 열려요.",
+    "twist": "베트남인들은 이때만큼은 ‘축제’라는 말 자체가 설을 의미한다고 생각한답니다.",
+    "caveat": "이 전통은 베트남 본토와 해외 베트남인 사회에 적용됩니다.",
+    "country": "베트남",
+    "theme": "축제/의례",
+    "wiki_title": "Tết",
+    "source_url": "https://en.wikipedia.org/wiki/T%E1%BA%BFt",
+    "verify_note": "Tết",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:21.608779+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "비치 아미시(Beachy Amish)의 교회는 중앙 교단이 없다",
+    "hook": "‘교회마다 목사를 직접 뽑는다’는 사실, 믿어?",
+    "body": "비치 아미시 교인들은 도르드레흐 신앙고백을 따르고 비폭력·평범한 복장을 실천합니다. 그러나 교단 전체를 관장하는 중앙 조직이 없어서 각 교회가 독립적으로 운영됩니다.",
+    "twist": "각 교회가 스스로 규칙을 정하고, 교단 자체가 없기 때문에 교회마다 관행이 다를 수 있습니다.",
+    "caveat": "이 구조는 비치 아미시 교회에만 해당되며, 다른 아미시 그룹에는 다를 수 있습니다.",
+    "country": "케냐",
+    "theme": "생활문화",
+    "wiki_title": "Beachy Amish",
+    "source_url": "https://en.wikipedia.org/wiki/Beachy_Amish",
+    "verify_note": "Beachy Amish",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:42.252013+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "성 발렌타인(Valentine)의 전설, 눈을 되찾다",
+    "hook": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’",
+    "body": "발렌타인 데이는 2월 14일에 기념되며, 로마 제국 시절 기독교인들을 돕다 감옥에 갇힌 성 발렌타인(Valentine)의 이야기가 전해집니다. 전통에 따르면 그는 감옥 안에서 눈이 먼 사람의 시력을 회복시켰다고 전해집니다.",
+    "twist": "감옥 안에서 눈을 고쳐준 이야기가 전해지는 전설입니다.",
+    "caveat": "전통적인 전승이며, 역사적 사실로 증명된 것은 아닙니다.",
+    "country": "우즈베키스탄",
+    "theme": "언어/이름",
+    "wiki_title": "Valentine's Day",
+    "source_url": "https://en.wikipedia.org/wiki/Valentine%27s_Day",
+    "verify_note": "Valentine's Day",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:42.252013+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "춘절(Chinese New Year)의 등불 15일 연속",
+    "hook": "‘15일째까지 등불을 켜야 하는 이유’",
+    "body": "춘절은 음력 새해를 기념하는 가장 큰 명절로, 설날 전날부터 등불 축제인 원형등불축제까지 이어집니다. 첫날은 새 달이 뜨는 날이며, 15일째인 원형등불축제까지 등불을 밝히며 조상과 신을 기립니다.",
+    "twist": "등불을 밝히는 기간이 15일째까지 이어집니다.",
+    "caveat": "등불을 밝히는 관습은 지역마다 차이가 있습니다.",
+    "country": "인도네시아",
+    "theme": "언어/이름",
+    "wiki_title": "Chinese New Year",
+    "source_url": "https://en.wikipedia.org/wiki/Chinese_New_Year",
+    "verify_note": "Chinese New Year",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:17:42.252013+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "콜롬비아 전통 음악, 불레렝게 (Bullerengue)",
+    "hook": "노년 여성들이 드럼을 두드리며 마을 축제를 이끈다면?",
+    "body": "불레렝게는 콜롬비아 카리브 해안과 파나마 다리엔 지방에서 전해지는 전통 음악·춤으로, 주로 연령대가 높은 여성들이 현지 장인 드럼과 함께 부릅니다.",
+    "twist": "공식적인 교육 없이도 마을 축제와 가족 행사에서 세대를 넘어 살아 숨쉬는 문화입니다.",
+    "caveat": "전통 전달 방식은 구전이며, 최근 학술 연구와 문화 사업으로 인지도가 높아진 현 상황을 반영합니다.",
+    "country": "콜롬비아",
+    "theme": "생활문화",
+    "wiki_title": "Bullerengue",
+    "source_url": "https://en.wikipedia.org/wiki/Bullerengue",
+    "verify_note": "Bullerengue",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:18:15.806091+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
+    "hook": "조나스 브라더스 새 앨범, 마시멜로가 직접 만든다!",
+    "body": "2025년에 발매된 조나스 브라더스의 일곱 번째 정규 앨범에는 Dean Lewis와 Switchfoot가 피처링한다. 프로듀싱은 Dean Lewis와 Marshmello가 직접 맡았다.",
+    "twist": "Marshmello는 가수라기보다 전자음악 DJ로 유명하다.",
+    "caveat": "앨범은 미국 레코드사 Republic Records를 통해 공개되었다.",
+    "country": "스페인",
+    "theme": "언어/이름",
+    "wiki_title": "Greetings from Your Hometown",
+    "source_url": "https://en.wikipedia.org/wiki/Greetings_from_Your_Hometown",
+    "verify_note": "Greetings from Your Hometown",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:18:34.594778+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "스웨덴의 한밤중 불꽃 축제, 여름 최장일에 열린다",
+    "hook": "여름 최장일, 스웨덴 사람들은 불을 피운다!",
+    "body": "스웨덴에서는 하지(여름 솔스티스) 근처에 야외 모임을 갖는다. 사람들은 긴 낮을 기념해 모닥불을 피우며 축하한다. 이 전통은 유럽 전역에서 유래한 중간 여름 축제와 연결된다.",
+    "twist": "전통적으로 이 날은 기독교 성 요한 전야와도 맞물려 있다.",
+    "caveat": "축제는 주로 북유럽 국가들에서 관찰된다.",
+    "country": "스웨덴",
+    "theme": "언어/이름",
+    "wiki_title": "Midsummer",
+    "source_url": "https://en.wikipedia.org/wiki/Midsummer",
+    "verify_note": "Midsummer",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:18:34.594778+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "패스오버에 먹는 무교병(마짜)",
+    "hook": "하루만 두면 바로 버려지는 빵, 왜?",
+    "body": "무교병은 이스라엘 전통 음식으로, 유대인들이 패스오버 기간에 효모가 들어간 모든 음식(챠멧)을 금하고 대신 먹는 빵이다. 부드러운 마짜는 하루 정도만 보관 가능하고, 냉동하지 않으면 금방 상한다.",
+    "twist": "하지만 바삭하게 구운 종류는 오래 보관할 수 있다.",
+    "caveat": "부드러운 마짜는 상업 생산이 매우 제한적이다.",
+    "country": "이스라엘",
+    "theme": "음식문화",
+    "wiki_title": "Matzah",
+    "source_url": "https://en.wikipedia.org/wiki/Matzah",
+    "verify_note": "Matzah",
+    "confidence": "source",
+    "created_at": "2026-10-30T14:19:00.396404+00:00",
     "status": "unverified"
   }
 ]
