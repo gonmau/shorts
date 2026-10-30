@@ -62,7 +62,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=5)
     ap.add_argument("--daily-max", type=int, default=int(os.environ.get("DAILY_MAX", "20") or 20), help="하루(한국시간) 최대 업로드 수")
+    ap.add_argument("--indexes", default="", help="이 DB 번호만 업로드 (쉼표, 예: 286,304). 지정하면 --limit 대신 이 목록을 씀")
     args = ap.parse_args()
+    only = {int(x) for x in args.indexes.replace(" ", "").split(",") if x.strip().isdigit()}
 
     db = json.loads(DB.read_text(encoding="utf-8"))
     yt = youtube()
@@ -75,8 +77,10 @@ def main():
     already = sum(1 for f in db if str(f.get("uploaded_at", "")).startswith(today))
     room = max(0, args.daily_max - already)
     print(f"오늘 업로드 {already}개 / 상한 {args.daily_max}개 -> 추가 가능 {room}개")
-    limit = min(args.limit, room)
-    for item in db:
+    limit = min(len(only) if only else args.limit, room)
+    for _n, item in enumerate(db):
+        if only and _n not in only:
+            continue
         if done >= limit:
             break
         path = item.get("video_path_v6")

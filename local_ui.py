@@ -637,7 +637,40 @@ with T5a:
 with T6a:
     _dmax = st.number_input("하루 업로드 상한 (오늘 올린 개수 포함, 한국시간 기준)", 1, 50, int(os.environ.get("DAILY_MAX", "20") or 20), key="up_dmax",
                             help="오늘 이미 올린 개수가 이 값에 닿으면 더 안 올립니다. 늘리면 그만큼 더 올라갑니다 (유튜브 API 일일 할당량도 고려하세요)")
-    if st.button("업로드", key="up_go", help="만든 영상을 비공개로 올립니다. YT_REFRESH_TOKEN 이 필요합니다 (get_refresh_token.py 로 받음)") :
+    _ud = _ld()
+    _upl = []
+    for _i, _f in enumerate(_ud):
+        _vp = _f.get("video_path_v6")
+        if _f.get("status_v6") == "video_done" and not _f.get("youtube_id") and _vp and os.path.exists(_vp):
+            _upl.append(_i)
+    st.markdown(f"**업로드 대기 영상 {len(_upl)}개** (영상 파일이 이 PC에 있고 아직 유튜브에 올리지 않은 것)")
+    if _upl:
+        _rows = []
+        for _i in _upl:
+            _f = _ud[_i]
+            try:
+                _mb = os.path.getsize(_f["video_path_v6"]) / 1048576
+            except Exception:
+                _mb = 0
+            try:
+                _tt = " ".join(filter(None, [_f.get("title_line1"), _f.get("title_line2")])) or _f.get("topic", "")
+            except Exception:
+                _tt = ""
+            _rows.append({"번호": _i, "나라": _f.get("country", ""), "제목": str(_tt)[:40], "크기(MB)": round(_mb, 1), "영상 파일": os.path.basename(_f["video_path_v6"])})
+        st.dataframe(_rows, use_container_width=True, hide_index=True)
+        _all = st.checkbox("목록 전체 선택", False, key="up_all")
+        _pick_u = st.multiselect("올릴 영상", _upl, default=(_upl if _all else []), key=f"up_pick_{'all' if _all else 'sel'}_{len(_upl)}",
+                                 format_func=lambda i: f"{i} {_ud[i].get('country', '')} - {str(_ud[i].get('title_line1', '') or _ud[i].get('topic', ''))[:30]}")
+        if st.button(f"선택한 {len(_pick_u)}개 업로드", key="up_pick_go", type="primary", disabled=not _pick_u,
+                     help="고른 영상만 비공개로 올립니다. 하루 상한을 넘으면 그만큼만 올라갑니다"):
+            if os.environ.get("YT_REFRESH_TOKEN"):
+                run("upload_to_youtube.py", "--indexes", ",".join(map(str, _pick_u)), "--daily-max", str(int(_dmax)))
+                st.rerun()
+            else:
+                st.error("YT_REFRESH_TOKEN 이 없습니다. get_refresh_token.py 로 받아 두세요.")
+    else:
+        st.info("올릴 영상이 없습니다. (이미 업로드했거나, 영상 파일이 이 PC에 없는 경우입니다)")
+    if st.button("앞에서부터 count개 업로드", key="up_go", help="목록 순서대로 count 개수만큼 올립니다 (고르지 않고 빠르게)"):
         if os.environ.get("YT_REFRESH_TOKEN"):
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
