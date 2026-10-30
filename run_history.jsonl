@@ -559,3 +559,6 @@
 {"id": "1793347457320-8b212d", "time": "2026-10-30 17:04:17", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 0", "status": "success", "secs": 0.1, "detail": ""}
 {"id": "1793347457541-120421", "time": "2026-10-30 17:04:17", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1793347457800-eb3b0e", "time": "2026-10-30 17:04:17", "channel": "KO", "source": "PC", "kind": "redo_videos", "title": "redo_videos.py --indexes 286,304", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1793347712506-e01a5d", "time": "2026-10-30 17:08:32", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 106", "status": "success", "secs": 0.1, "detail": ""}
+{"id": "1793347712715-69b06b", "time": "2026-10-30 17:08:32", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.2, "detail": ""}
+{"id": "1793347712915-60a92c", "time": "2026-10-30 17:08:32", "channel": "KO", "source": "PC", "kind": "redo_videos", "title": "redo_videos.py --indexes 286,304", "status": "success", "secs": 0.2, "detail": ""}
