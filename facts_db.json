@@ -33554,7 +33554,305 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "아르헨티나 마테",
+    "title_line2": "금속빨대가뿔?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "빨대 *문화*"
+      },
+      {
+        "s": 4,
+        "text": "호리병에 *마테*"
+      },
+      {
+        "s": 6,
+        "text": "금속 빨대 *봄비야*"
+      },
+      {
+        "s": 10,
+        "text": "함께 *전통*"
+      },
+      {
+        "s": 15,
+        "text": "빨대 하나로 *연결*"
+      }
+    ],
+    "image_queries": [
+      "straw culture South America",
+      "Argentinian mate drink",
+      "mate gourd container",
+      "mate gourd cup",
+      "metal bombilla straw",
+      "hot water mate brew",
+      "refilling mate gourd",
+      "together tradition mate",
+      "passing mate gourd",
+      "mate social gathering",
+      "daily Argentine mate",
+      "straw connecting community"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "straw culture South America",
+      "Argentinian mate drink",
+      "mate gourd container",
+      "mate gourd cup",
+      "metal bombilla straw",
+      "hot water mate brew",
+      "refilling mate gourd",
+      "together tradition mate",
+      "passing mate gourd",
+      "mate social gathering",
+      "daily Argentine mate",
+      "straw connecting community"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Yolanda",
+        "page": "https://pixabay.com/photos/peru-titicaca-lake-bolivia-143876/",
+        "id": 143876
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "amrothman",
+        "page": "https://pixabay.com/photos/mate-drink-beverage-straw-herbs-5616550/",
+        "id": 5616550
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Daderot",
+        "license": "CC0",
+        "title": "Mate container, maker unknown, Peru, 19th century, silver, gourd - De Young Museum - DSC01",
+        "page": "https://commons.wikimedia.org/wiki/File:Mate_container,_maker_unknown,_Peru,_19th_century,_silver,_gourd_-_De_Young_Museum_-_DSC01001.JPG",
+        "id": "c:37173833"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "13748526",
+        "page": "https://pixabay.com/photos/mate-tea-tea-drink-yerba-mate-6259745/",
+        "id": 6259745
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "un-mate-pl",
+        "page": "https://pixabay.com/photos/yerba-mate-yerba-mate-argentina-7372037/",
+        "id": 7372037
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Abbat1",
+        "page": "https://pixabay.com/photos/tea-cup-drink-teacup-tee-hot-5982485/",
+        "id": 5982485
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "MIKEMDP",
+        "license": "CC BY-SA 4.0",
+        "title": "Mate criollo.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Mate_criollo.JPG",
+        "id": "c:37017072"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "laridra",
+        "page": "https://pixabay.com/photos/mate-yerba-mate-beverage-tradition-2465868/",
+        "id": 2465868
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Gonzalo Rivero Gorivero",
+        "license": "CC BY-SA 3.0",
+        "title": "Mate plateado.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mate_plateado.jpg",
+        "id": "c:3379762"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "MIKEMDP",
+        "license": "CC BY-SA 4.0",
+        "title": "Mate criollo.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Mate_criollo.JPG",
+        "id": "c:37017072"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "MIKEMDP",
+        "license": "CC BY-SA 4.0",
+        "title": "Mate criollo.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Mate_criollo.JPG",
+        "id": "c:37017072"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "artellliii72",
+        "page": "https://pixabay.com/photos/straw-bales-straw-round-sheaf-7389396/",
+        "id": 7389396,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3133,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fdb471fb5335",
+        "at": "2026-10-30 16:21",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3974,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4b42dc675793",
+        "at": "2026-10-30 16:21",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.289,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "12a0f5da2982",
+        "at": "2026-10-30 16:21",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.32,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b45cb7cba4b5",
+        "at": "2026-10-30 16:21",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2442,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "851ac1693895",
+        "at": "2026-10-30 16:21",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2869,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c469373a1ed1",
+        "at": "2026-10-30 16:21",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3415,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c651786de5ae",
+        "at": "2026-10-30 16:21",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2553,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "699fb875f5ee",
+        "at": "2026-10-30 16:21",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2714,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "aaa095cb7771",
+        "at": "2026-10-30 16:21",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2044,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bd4ea2894e3b",
+        "at": "2026-10-30 16:21",
+        "scene": 10,
+        "rejected_ids": [
+          1917737,
+          292994,
+          "c:3379762",
+          "c:37017072",
+          "c:84836642"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2708,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "270fe2481e50",
+        "at": "2026-10-30 16:21",
+        "scene": 11,
+        "rejected_ids": [
+          1172463,
+          "c:37017072",
+          "c:56637800"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2839,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f96eb16db125",
+        "at": "2026-10-30 16:21",
+        "scene": 12,
+        "rejected_ids": [
+          7389396,
+          "c:31569088"
+        ]
+      }
+    ]
   },
   {
     "topic": "전 세계를 휘감은 돼지 구이 문화",
@@ -33580,7 +33878,301 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "쿠바의 통돼지 파티",
+    "title_line2": "정말 통째로 구워?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "돼지 *통구이* 파티"
+      },
+      {
+        "s": 3,
+        "text": "레촌 *아사도* 유명"
+      },
+      {
+        "s": 6,
+        "text": "통돼지 *꼬챙이*"
+      },
+      {
+        "s": 10,
+        "text": "*가족* 시간 중심"
+      },
+      {
+        "s": 13,
+        "text": "함께 *나눔* 문화"
+      }
+    ],
+    "image_queries": [
+      "whole pig roast party",
+      "Cuban Christmas pork roast",
+      "Lechon Asado roast",
+      "Cuban marinated pork slow cooking",
+      "whole pig on spit",
+      "Cuban family preparing pork",
+      "pork with yucca banana",
+      "family time centerpiece",
+      "Cuban year end pork sharing",
+      "Caribbean pork roast tradition",
+      "people sharing roasted pork",
+      "simple family meal together"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "whole pig roast party",
+      "Cuban Christmas pork roast",
+      "Lechon Asado roast",
+      "Cuban marinated pork slow cooking",
+      "whole pig on spit",
+      "Cuban family preparing pork",
+      "pork with yucca banana",
+      "family time centerpiece",
+      "Cuban year end pork sharing",
+      "Caribbean pork roast tradition",
+      "people sharing roasted pork",
+      "simple family meal together"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "jdblack",
+        "page": "https://pixabay.com/photos/suckling-pig-pig-roast-rotisserie-3869602/",
+        "id": 3869602
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/roast-pork-pig-roast-crust-rind-4046658/",
+        "id": 4046658
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Elias Tomaras",
+        "license": "Public domain",
+        "title": "Roast Pig 1.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Roast_Pig_1.JPG",
+        "id": "c:10110835"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Elias Tomaras",
+        "license": "Public domain",
+        "title": "Roast Pig 1.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Roast_Pig_1.JPG",
+        "id": "c:10110835"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "title": "DZ3 0976 A street food vendor grilling a whole roasted pig over charcoal at a lively night",
+        "page": "https://commons.wikimedia.org/wiki/File:DZ3_0976_A_street_food_vendor_grilling_a_whole_roasted_pig_over_charcoal_at_a_lively_night_market_stall_in_Pattaya_Thailand.jpg",
+        "id": "c:199935532"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "David Shankbone",
+        "license": "CC BY 2.5",
+        "title": "VinalesFeast.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:VinalesFeast.jpg",
+        "id": "c:4727302"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "leducduy",
+        "page": "https://pixabay.com/photos/banana-fruit-food-green-plant-8719086/",
+        "id": 8719086,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "James St. John",
+        "license": "CC BY 2.0",
+        "title": "Heisey glass (1632 Lodestar candle centerpiece; Dawn) (1955-1957) 1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Heisey_glass_(1632_Lodestar_candle_centerpiece;_Dawn)_(1955-1957)_1.jpg",
+        "id": "c:157632646"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Elias Tomaras",
+        "license": "Public domain",
+        "title": "Roast Pig 1.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Roast_Pig_1.JPG",
+        "id": "c:10110835"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pork-roast-meat-roasted-pork-6175779/",
+        "id": 6175779
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "smpratt90",
+        "page": "https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/",
+        "id": 2610205,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3143,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f89e0e10b987",
+        "at": "2026-10-30 16:22",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.298,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b64503a3d51a",
+        "at": "2026-10-30 16:22",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3429,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4ccca075694a",
+        "at": "2026-10-30 16:22",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2795,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "90bd99947a51",
+        "at": "2026-10-30 16:22",
+        "scene": 4,
+        "rejected_ids": [
+          1440105,
+          "c:10110835"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3094,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "99579f9058db",
+        "at": "2026-10-30 16:22",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2409,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "39c1df403742",
+        "at": "2026-10-30 16:22",
+        "scene": 6,
+        "rejected_ids": [
+          5873359,
+          "c:4727302"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2267,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9ea43f74954e",
+        "at": "2026-10-30 16:22",
+        "scene": 7,
+        "rejected_ids": [
+          8719086,
+          "c:116528316"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1554,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a7847de19dea",
+        "at": "2026-10-30 16:22",
+        "scene": 8,
+        "rejected_ids": [
+          3365336,
+          4723944,
+          7031077,
+          "c:157632646",
+          "c:157632648"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2731,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1d5242cc4d98",
+        "at": "2026-10-30 16:23",
+        "scene": 9,
+        "rejected_ids": [
+          7528410,
+          "c:10110835"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3013,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d30f132b5f0e",
+        "at": "2026-10-30 16:22",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1998,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dde5da1db16e",
+        "at": "2026-10-30 16:23",
+        "scene": 12,
+        "rejected_ids": [
+          2258681,
+          2610205,
+          3104635,
+          "c:10187314",
+          "c:39385920"
+        ]
+      }
+    ]
   },
   {
     "topic": "미국이 주도한 과테말라 매독 실험",
@@ -33606,7 +34198,309 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "미국 과테 매독 실험",
+    "title_line2": "피험자에게 직접 주입?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "동의 없이 *매독* 실험"
+      },
+      {
+        "s": 3,
+        "text": "1946~48 미국 *연구*"
+      },
+      {
+        "s": 6,
+        "text": "군인·*환자* 대상"
+      }
+    ],
+    "image_queries": [
+      "non-consensual syphilis experiment",
+      "Guatemala countryside",
+      "1946 1948 US research",
+      "sexually transmitted disease study",
+      "soldiers and patients",
+      "exposed to syphilis",
+      "violated research ethics",
+      "government funded study",
+      "released historical documents",
+      "US government apology",
+      "medical consent importance",
+      "ethical research boundaries"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "non-consensual syphilis experiment",
+      "Guatemala countryside",
+      "1946 1948 US research",
+      "sexually transmitted disease study",
+      "soldiers and patients",
+      "exposed to syphilis",
+      "violated research ethics",
+      "government funded study",
+      "released historical documents",
+      "US government apology",
+      "medical consent importance",
+      "ethical research boundaries"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Kost9n4",
+        "page": "https://pixabay.com/photos/analysis-biochemistry-biologist-2030265/",
+        "id": 2030265,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "saguzenm",
+        "page": "https://pixabay.com/photos/volcano-fields-farm-grass-5978035/",
+        "id": 5978035
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "NASA Glenn Research Center",
+        "license": "Public domain",
+        "title": "NACA Pilots at the Aircraft Engine Research Laboratory (GRC-1945-C-11397).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:NACA_Pilots_at_the_Aircraft_Engine_Research_Laboratory_(GRC-1945-C-11397).jpg",
+        "id": "c:150078041"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qimono",
+        "page": "https://pixabay.com/photos/bacteria-microbiology-organism-3658992/",
+        "id": 3658992
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Sgt. Armando Monroig",
+        "license": "Public domain",
+        "title": "Soldiers help Iraqi doctor see over 200 patients DVIDS45478.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Soldiers_help_Iraqi_doctor_see_over_200_patients_DVIDS45478.jpg",
+        "id": "c:40771092"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Work Projects Administration Poster Collection",
+        "license": "Public domain",
+        "title": "Whom have you exposed to syphilis LCCN98516759.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Whom_have_you_exposed_to_syphilis_LCCN98516759.jpg",
+        "id": "c:31912469"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ElasticComputeFarm",
+        "page": "https://pixabay.com/photos/library-books-bookshelves-bookcases-1147815/",
+        "id": 1147815,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Felix-Mittermeier",
+        "page": "https://pixabay.com/photos/bundestag-german-flag-parliament-2463236/",
+        "id": 2463236,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Nile",
+        "page": "https://pixabay.com/photos/paper-writing-old-antique-write-623167/",
+        "id": 623167
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Proulain",
+        "page": "https://pixabay.com/photos/us-capitol-washington-dc-government-1273914/",
+        "id": 1273914,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Catkin",
+        "page": "https://pixabay.com/photos/agree-english-consent-contract-1728448/",
+        "id": 1728448,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Elilopes",
+        "license": "CC0",
+        "title": "Etica-ciencia-tecnologia.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Etica-ciencia-tecnologia.png",
+        "id": "c:169250786"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2279,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "97dea375ab6c",
+        "at": "2026-10-30 16:27",
+        "scene": 1,
+        "rejected_ids": [
+          2030265,
+          "c:31824903"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.303,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ff277fabe141",
+        "at": "2026-10-30 16:27",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2552,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bed7cca55045",
+        "at": "2026-10-30 16:27",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2565,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "53c9392fd3bf",
+        "at": "2026-10-30 16:27",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3175,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fddd9fd4258a",
+        "at": "2026-10-30 16:27",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.4104,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "574937f8f951",
+        "at": "2026-10-30 16:27",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2256,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dc1fc9d5781e",
+        "at": "2026-10-30 16:27",
+        "scene": 7,
+        "rejected_ids": [
+          1052010,
+          1147815,
+          "c:31824903"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1939,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ef3b6d7931f5",
+        "at": "2026-10-30 16:27",
+        "scene": 8,
+        "rejected_ids": [
+          2463236,
+          637999,
+          "c:36089152",
+          "c:36089153",
+          "c:36089155"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.269,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "26597db81c51",
+        "at": "2026-10-30 16:27",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.277,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fdc8e4895b9e",
+        "at": "2026-10-30 16:27",
+        "scene": 10,
+        "rejected_ids": [
+          1273914,
+          2463236,
+          637999,
+          "c:31824903"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2623,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "003d81235ace",
+        "at": "2026-10-30 16:28",
+        "scene": 11,
+        "rejected_ids": [
+          1539191,
+          1728448,
+          4986596,
+          "c:31824903"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2214,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ab04bb7a51e8",
+        "at": "2026-10-30 16:27",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "문화 속 금기의 숨은 이유",
@@ -33632,7 +34526,336 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "마다가스카르 금기",
+    "title_line2": "왜 그렇게?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*금기* 차이"
+      },
+      {
+        "s": 3,
+        "text": "*파디*는 금기"
+      },
+      {
+        "s": 8,
+        "text": "조상·공동체 *존중*"
+      },
+      {
+        "s": 9,
+        "text": "*자연* 보호 역할"
+      },
+      {
+        "s": 15,
+        "text": "오래된 *가치*와 기억"
+      }
+    ],
+    "image_queries": [
+      "taboo difference signs",
+      "Madagascar traditional taboo",
+      "padi taboo symbol",
+      "Madagascar animal taboo",
+      "Madagascar restricted ritual",
+      "ancestral community respect",
+      "nature protection ritual",
+      "sacred animal restriction",
+      "Madagascar taboo lifestyle",
+      "taboo origins background",
+      "foreigners misunderstanding taboo",
+      "old values memory"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "taboo difference signs",
+      "Madagascar traditional taboo",
+      "padi taboo symbol",
+      "Madagascar animal taboo",
+      "Madagascar restricted ritual",
+      "ancestral community respect",
+      "nature protection ritual",
+      "sacred animal restriction",
+      "Madagascar taboo lifestyle",
+      "taboo origins background",
+      "foreigners misunderstanding taboo",
+      "old values memory"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Walmart Stores",
+        "license": "CC BY 2.0",
+        "title": "Taboo 2011.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Taboo_2011.jpg",
+        "id": "c:16270065"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "MarkThomas",
+        "page": "https://pixabay.com/photos/lemur-wildlife-madagascar-1794519/",
+        "id": 1794519,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Engin_Akyurt",
+        "page": "https://pixabay.com/photos/peace-symbol-petals-ukraine-7043225/",
+        "id": 7043225,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
+        "id": 8483282
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
+        "id": 8483282,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "RaphaelPoesia",
+        "page": "https://pixabay.com/photos/brazil-man-working-slums-favela-9058041/",
+        "id": 9058041
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boy-monk-river-buddhist-water-1807518/",
+        "id": 1807518
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Daderot",
+        "license": "CC0",
+        "title": "Sacred animal figurine, Restored Le dynasty, 17th-18th century AD, crimson wood - National",
+        "page": "https://commons.wikimedia.org/wiki/File:Sacred_animal_figurine,_Restored_Le_dynasty,_17th-18th_century_AD,_crimson_wood_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05662.JPG",
+        "id": "c:40591219"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
+        "id": 8483282,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/silence-talk-freedom-of-speech-3600555/",
+        "id": 3600555,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Madhana_gopal",
+        "page": "https://pixabay.com/photos/cute-couple-love-misunderstanding-5392897/",
+        "id": 5392897,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "jarmoluk",
+        "page": "https://pixabay.com/photos/photographs-lenses-photography-256888/",
+        "id": 256888,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.1654,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "96e0cab10b28",
+        "at": "2026-10-30 16:29",
+        "scene": 1,
+        "rejected_ids": [
+          1987212,
+          7055475,
+          "c:16270065",
+          "c:57403191",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2349,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a4f02f93e7c3",
+        "at": "2026-10-30 16:29",
+        "scene": 2,
+        "rejected_ids": [
+          1794519,
+          8336583,
+          "c:57403191",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2282,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c7968eba7155",
+        "at": "2026-10-30 16:29",
+        "scene": 3,
+        "rejected_ids": [
+          7043225,
+          "c:16270065"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2452,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9200acb55151",
+        "at": "2026-10-30 16:29",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1812,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7d1dc546165d",
+        "at": "2026-10-30 16:30",
+        "scene": 5,
+        "rejected_ids": [
+          8336583,
+          8483282,
+          "c:57403191",
+          "c:7901854",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2463,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cf7c46504251",
+        "at": "2026-10-30 16:29",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2796,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d919dca13cb2",
+        "at": "2026-10-30 16:29",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2482,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "394615ccaa4a",
+        "at": "2026-10-30 16:30",
+        "scene": 8,
+        "rejected_ids": [
+          10007644,
+          10011476,
+          "c:146619255",
+          "c:40591219"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2081,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "23b6efdde581",
+        "at": "2026-10-30 16:30",
+        "scene": 9,
+        "rejected_ids": [
+          8336583,
+          8483282,
+          "c:57403191",
+          "c:75795692",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2011,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "23ee691a14e6",
+        "at": "2026-10-30 16:30",
+        "scene": 10,
+        "rejected_ids": [
+          3600555,
+          5138899,
+          "c:57403191",
+          "c:92534182",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2475,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "20c8fc39893f",
+        "at": "2026-10-30 16:30",
+        "scene": 11,
+        "rejected_ids": [
+          5392897,
+          "c:92534181"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2488,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "93416e93eaec",
+        "at": "2026-10-30 16:30",
+        "scene": 12,
+        "rejected_ids": [
+          256888,
+          256889,
+          "c:28973464"
+        ]
+      }
+    ]
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -33658,7 +34881,336 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "마다가스카르 새해 음식",
+    "title_line2": "긴 면이 곧 돈?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "어른에*축복*구하기"
+      },
+      {
+        "s": 5,
+        "text": "젊은이 *인사* 전통"
+      },
+      {
+        "s": 8,
+        "text": "선물은 *곡물*·콩·닭"
+      },
+      {
+        "s": 14,
+        "text": "*복*은 나눔에서"
+      }
+    ],
+    "image_queries": [
+      "elder blessing ceremony Madagascar",
+      "Madagascar New Year tradition",
+      "traditional Malagasy New Year celebration",
+      "Madagascar December holiday gathering",
+      "young people greeting elders",
+      "drano ritual gratitude Madagascar",
+      "grain bean chicken gifts",
+      "family gift exchange Madagascar",
+      "thankful New Year gathering",
+      "elders encouraging youth",
+      "family community reunion",
+      "shared blessings together"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "elder blessing ceremony Madagascar",
+      "Madagascar New Year tradition",
+      "traditional Malagasy New Year celebration",
+      "Madagascar December holiday gathering",
+      "young people greeting elders",
+      "drano ritual gratitude Madagascar",
+      "grain bean chicken gifts",
+      "family gift exchange Madagascar",
+      "thankful New Year gathering",
+      "elders encouraging youth",
+      "family community reunion",
+      "shared blessings together"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/ancient-meditation-asia-background-3163325/",
+        "id": 3163325,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Anai171",
+        "license": "CC BY-SA 4.0",
+        "title": "Gardien du \"Afo tsy maty\" - Rovan'Ambohidrabiby - Madagascar 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Gardien_du_%22Afo_tsy_maty%22_-_Rovan%27Ambohidrabiby_-_Madagascar_02.jpg",
+        "id": "c:146925446"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Hopeandlink",
+        "license": "CC BY-SA 4.0",
+        "title": "Typical malagasy costal wearing.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Typical_malagasy_costal_wearing.jpg",
+        "id": "c:146959128"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Derk29",
+        "license": "CC BY-SA 4.0",
+        "title": "New year eve and foods for celebrations.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:New_year_eve_and_foods_for_celebrations.jpg",
+        "id": "c:143240004"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/people-tourists-young-people-self-8274238/",
+        "id": 8274238,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Roderick Suñaz Sumalinog",
+        "license": "CC BY-SA 4.0",
+        "title": "The simple foods during new year eve 2024.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_simple_foods_during_new_year_eve_2024.jpg",
+        "id": "c:143416193"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "PDPics",
+        "page": "https://pixabay.com/photos/mung-beans-vigna-radiata-moong-bean-166996/",
+        "id": 166996
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "OurWhiskyFoundation",
+        "page": "https://pixabay.com/photos/whisky-modern-face-of-whisky-8381774/",
+        "id": 8381774
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Robert Ashworth from Bellingham, WA., USA",
+        "license": "CC BY 2.0",
+        "title": "Happy New Year 2018 (24576513187).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Happy_New_Year_2018_(24576513187).jpg",
+        "id": "c:66739653"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "dhatchina",
+        "page": "https://pixabay.com/photos/elderly-woman-countryside-10463655/",
+        "id": 10463655,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Anemone123",
+        "page": "https://pixabay.com/photos/team-spirit-teamwork-community-2447163/",
+        "id": 2447163
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Sumita Roy Dutta",
+        "license": "CC BY-SA 4.0",
+        "title": "Together in Faith Celebrating Inclusion Through Kumari Puja and Basanti puja at Voice Of W",
+        "page": "https://commons.wikimedia.org/wiki/File:Together_in_Faith_Celebrating_Inclusion_Through_Kumari_Puja_and_Basanti_puja_at_Voice_Of_World_Shalthighata_08.jpg",
+        "id": "c:187202335"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.1612,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "73b13e9b6c5a",
+        "at": "2026-10-30 16:31",
+        "scene": 1,
+        "rejected_ids": [
+          3163325,
+          8336583,
+          "c:143240004",
+          "c:143416193",
+          "c:89661378"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2887,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fa72abb3803e",
+        "at": "2026-10-30 16:32",
+        "scene": 2,
+        "rejected_ids": [
+          5845141,
+          "c:146925446"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3466,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b77a92a201b9",
+        "at": "2026-10-30 16:32",
+        "scene": 3,
+        "rejected_ids": [
+          6939870,
+          "c:146959128"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2698,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7682c5ba8d04",
+        "at": "2026-10-30 16:32",
+        "scene": 4,
+        "rejected_ids": [
+          8336583,
+          9266322,
+          "c:143240004",
+          "c:89661378"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2223,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7114222a4670",
+        "at": "2026-10-30 16:32",
+        "scene": 5,
+        "rejected_ids": [
+          8274238,
+          8365759,
+          8661126,
+          "c:143240004",
+          "c:89661378"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2062,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "201cbe869717",
+        "at": "2026-10-30 16:32",
+        "scene": 6,
+        "rejected_ids": [
+          2243465,
+          8336583,
+          "c:143240004",
+          "c:143416193",
+          "c:89661378"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2479,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fed7bb6b73cc",
+        "at": "2026-10-30 16:31",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2568,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0314ccdb188d",
+        "at": "2026-10-30 16:31",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2365,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "030daaf4cc90",
+        "at": "2026-10-30 16:32",
+        "scene": 9,
+        "rejected_ids": [
+          8472673,
+          "c:66739653"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2066,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "63c5a8c002f3",
+        "at": "2026-10-30 16:32",
+        "scene": 10,
+        "rejected_ids": [
+          10463655,
+          5564731,
+          "c:143240004",
+          "c:70246498",
+          "c:89661378"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2453,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5c96b639ed47",
+        "at": "2026-10-30 16:31",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2432,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "aa9e0041883a",
+        "at": "2026-10-30 16:33",
+        "scene": 12,
+        "rejected_ids": [
+          2258681,
+          2425121,
+          "c:162968263",
+          "c:187202335",
+          "c:187549788"
+        ]
+      }
+    ]
   },
   {
     "topic": "트로츠키, 멕시코에서 여성 해방을 글로 외치다",
@@ -33716,7 +35268,298 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "프랑스 거리의 일상",
+    "title_line2": "표지판에 스티커?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "거리, 삶의 *무대*"
+      },
+      {
+        "s": 3,
+        "text": "카페 테라스는 *풍경*"
+      },
+      {
+        "s": 5,
+        "text": "광장에서 *공연* 열려"
+      },
+      {
+        "s": 8,
+        "text": "시장·광장, *이웃* 만남"
+      },
+      {
+        "s": 13,
+        "text": "평범한 거리에도 *문화*"
+      }
+    ],
+    "image_queries": [
+      "French street scene",
+      "people gathering in street",
+      "French cafe terrace",
+      "French market stalls",
+      "street art and architecture France",
+      "local residents in public space",
+      "market square gathering",
+      "different French towns",
+      "Paris boulevard vs small town",
+      "people interacting in plaza",
+      "city street showing life",
+      "ordinary French street"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "French street scene",
+      "people gathering in street",
+      "French cafe terrace",
+      "French market stalls",
+      "street art and architecture France",
+      "local residents in public space",
+      "market square gathering",
+      "different French towns",
+      "Paris boulevard vs small town",
+      "people interacting in plaza",
+      "city street showing life",
+      "ordinary French street"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Decster1",
+        "page": "https://pixabay.com/photos/street-night-streetlight-lights-7414680/",
+        "id": 7414680
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Antonio_Cansino",
+        "page": "https://pixabay.com/photos/riot-protest-street-crowd-laws-6129239/",
+        "id": 6129239
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "dnovac",
+        "page": "https://pixabay.com/photos/restaurant-paris-france-bistro-4011989/",
+        "id": 4011989
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "babawawa",
+        "page": "https://pixabay.com/photos/fruit-france-market-figs-apples-370103/",
+        "id": 370103
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "thetrebla",
+        "page": "https://pixabay.com/photos/street-art-montpellier-night-lights-4982793/",
+        "id": 4982793
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Press Information Department",
+        "license": "Public domain",
+        "title": "Syeeda Rizwana Hasan Advisor Water Resources Environment Forests Climate Change Speaks Loc",
+        "page": "https://commons.wikimedia.org/wiki/File:Syeeda_Rizwana_Hasan_Advisor_Water_Resources_Environment_Forests_Climate_Change_Speaks_Local_Residents_Alamdanga_Abhaynagar_November_10_2024_Inspects_Waterlogging_Bhodoba_Jessore_(PID-0005355).jpg",
+        "id": "c:175695669"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "sontung57",
+        "page": "https://pixabay.com/photos/dresden-christmas-market-city-5893714/",
+        "id": 5893714
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "JACLOU-DL",
+        "page": "https://pixabay.com/photos/huts-beach-cabins-7483739/",
+        "id": 7483739
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "edmondlafoto",
+        "page": "https://pixabay.com/photos/paris-montmartre-path-pavement-3193674/",
+        "id": 3193674
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Patrick Hoesly",
+        "license": "CC BY 2.0",
+        "title": "Apple Store on Country Club Plaza queue 2010.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Apple_Store_on_Country_Club_Plaza_queue_2010.jpg",
+        "id": "c:179064420"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "AyşegülAytören",
+        "page": "https://pixabay.com/photos/morning-street-city-antalya-turkey-7190996/",
+        "id": 7190996
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Roger Jones",
+        "license": "CC BY-SA 2.0",
+        "title": "French Ordinary Court, Entrance - geograph.org.uk - 3302489.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:French_Ordinary_Court,_Entrance_-_geograph.org.uk_-_3302489.jpg",
+        "id": "c:116015417"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3004,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7ef071860635",
+        "at": "2026-10-30 16:34",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2954,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "754ce6a792bf",
+        "at": "2026-10-30 16:34",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3494,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "46a37daa064e",
+        "at": "2026-10-30 16:34",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2558,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "79fd7a21a8c8",
+        "at": "2026-10-30 16:34",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2352,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b015dc94dfcb",
+        "at": "2026-10-30 16:34",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2404,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b084999a6c87",
+        "at": "2026-10-30 16:34",
+        "scene": 6,
+        "rejected_ids": [
+          8692464,
+          9250868,
+          "c:175695669",
+          "c:182981054"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.237,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cb7cee3ad908",
+        "at": "2026-10-30 16:34",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1916,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "17fd0fe84c8c",
+        "at": "2026-10-30 16:34",
+        "scene": 8,
+        "rejected_ids": [
+          2548827,
+          407081,
+          7483739,
+          "c:127799058",
+          "c:32015536"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3226,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2c0619add0cc",
+        "at": "2026-10-30 16:34",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.279,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c85e6a55af0",
+        "at": "2026-10-30 16:34",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2527,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cba1db3c1d6b",
+        "at": "2026-10-30 16:34",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2423,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7e0d23654e2e",
+        "at": "2026-10-30 16:34",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "태국 숲속 승려 전통",
@@ -33790,7 +35633,304 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "크메르제국 물관리",
+    "title_line2": "도시가 물로 움직인다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "물 관리가 *핵심*?"
+      },
+      {
+        "s": 4,
+        "text": "앙코르 *운하*"
+      },
+      {
+        "s": 9,
+        "text": "*도시*와 왕권"
+      },
+      {
+        "s": 13,
+        "text": "보이지 않는 *물길*"
+      }
+    ],
+    "image_queries": [
+      "water management system",
+      "Cambodia Angkor irrigation",
+      "Angkor temple complex",
+      "Angkor canal",
+      "seasonal water flow control",
+      "agricultural water supply",
+      "large Angkor reservoir",
+      "city and royalty symbolism",
+      "connected water architecture",
+      "Angkor archaeological site aerial",
+      "Khmer Empire city planning",
+      "invisible waterway underground"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "water management system",
+      "Cambodia Angkor irrigation",
+      "Angkor temple complex",
+      "Angkor canal",
+      "seasonal water flow control",
+      "agricultural water supply",
+      "large Angkor reservoir",
+      "city and royalty symbolism",
+      "connected water architecture",
+      "Angkor archaeological site aerial",
+      "Khmer Empire city planning",
+      "invisible waterway underground"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "User:Mattes",
+        "license": "CC BY 2.0 de",
+        "title": "GER — BY — Schwaben — Augsburg — Rathausplatz 1 (engl. Hinweistafel zum UNESCO-Status Augs",
+        "page": "https://commons.wikimedia.org/wiki/File:GER_%E2%80%94_BY_%E2%80%94_Schwaben_%E2%80%94_Augsburg_%E2%80%94_Rathausplatz_1_(engl._Hinweistafel_zum_UNESCO-Status_Augsburger_Wassermanagement-System)_Mattes_2022-11-05.jpg",
+        "id": "c:125106890"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ahmetyuksek",
+        "page": "https://pixabay.com/photos/banteay-srei-pink-sandstone-10460078/",
+        "id": 10460078
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Jonny_Joka",
+        "page": "https://pixabay.com/photos/angkor-wat-siem-reap-cambodia-asia-2452311/",
+        "id": 2452311
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Tonbi ko",
+        "license": "CC BY-SA 4.0",
+        "title": "Angkor borei city today from boat on no15 canal.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Angkor_borei_city_today_from_boat_on_no15_canal.jpg",
+        "id": "c:50049773"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "JonasKIM",
+        "page": "https://pixabay.com/photos/faucet-sink-tap-tap-water-flow-3240211/",
+        "id": 3240211
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Elsemargriet",
+        "page": "https://pixabay.com/photos/sheep-pasture-farm-animal-mammal-6819029/",
+        "id": 6819029
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Angkor Ruins from Space.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Angkor_Ruins_from_Space.jpg",
+        "id": "c:32704"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "thepoorphotographer",
+        "page": "https://pixabay.com/photos/tokyo-woman-market-city-people-4436914/",
+        "id": 4436914,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "JoramO",
+        "page": "https://pixabay.com/photos/canal-bridge-delft-netherlands-old-10393055/",
+        "id": 10393055
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "ahmetyuksek",
+        "page": "https://pixabay.com/photos/angkor-wat-statues-ancient-ruins-10301135/",
+        "id": 10301135
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Thames Mapping",
+        "license": "CC BY-SA 4.0",
+        "title": "Khmer Empire Expansion.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_Expansion.png",
+        "id": "c:99136957"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/cave-cavern-dark-daylight-1835823/",
+        "id": 1835823,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2739,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9afa3920dc20",
+        "at": "2026-10-30 16:35",
+        "scene": 1,
+        "rejected_ids": [
+          7015437,
+          "c:125106890"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2411,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2a10c4a786c1",
+        "at": "2026-10-30 16:35",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3263,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8c935833f912",
+        "at": "2026-10-30 16:35",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3122,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4bd2f46fdd44",
+        "at": "2026-10-30 16:35",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2774,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "362c956ffff5",
+        "at": "2026-10-30 16:35",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2237,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b5b7926d74d1",
+        "at": "2026-10-30 16:35",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2472,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b3e37017a2dc",
+        "at": "2026-10-30 16:35",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2056,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "026591aed4be",
+        "at": "2026-10-30 16:35",
+        "scene": 8,
+        "rejected_ids": [
+          4436914,
+          6924190,
+          "c:113500986",
+          "c:157835171",
+          "c:99136957"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2205,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "303376bb5aa2",
+        "at": "2026-10-30 16:35",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2557,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "af9b76365de5",
+        "at": "2026-10-30 16:35",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3355,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3d2d1375c2b9",
+        "at": "2026-10-30 16:36",
+        "scene": 11,
+        "rejected_ids": [
+          4854718,
+          "c:99136957"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.244,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba96f9a1d0e1",
+        "at": "2026-10-30 16:36",
+        "scene": 12,
+        "rejected_ids": [
+          1035684,
+          1835823,
+          "c:157835171",
+          "c:99136957"
+        ]
+      }
+    ]
   },
   {
     "topic": "다양한 언어와 방언이 섞인 크로아티아 문학(Hrvatska književnost)",
@@ -33816,7 +35956,324 @@
     "cross_notes": [
       "직접 검증한 대본 (외부 AI)"
     ],
-    "cross_flags": []
+    "cross_flags": [],
+    "title_line1": "크로아티아 문학",
+    "title_line2": "라틴·슬라브어도일상?",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "세 방언이 *공존*"
+      },
+      {
+        "s": 8,
+        "text": "카이카비아*전통*"
+      },
+      {
+        "s": 12,
+        "text": "표준어는 *슈토카*"
+      },
+      {
+        "s": 16,
+        "text": "목소리로 *깊이*"
+      }
+    ],
+    "image_queries": [
+      "historic Croatian manuscript",
+      "map showing three dialects Croatia",
+      "Chakavian Kajkavian Shtokavian signs",
+      "regional word differences map",
+      "literature influenced by dialects",
+      "Kajkavian literary tradition book",
+      "coastal island Chakavian poetry",
+      "Shtokavian literary foundation",
+      "standard Croatian Shtokavian text",
+      "preserved dialect literary works",
+      "regional authors using dialects",
+      "voice recording studio microphone"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "historic Croatian manuscript",
+      "map showing three dialects Croatia",
+      "Chakavian Kajkavian Shtokavian signs",
+      "regional word differences map",
+      "literature influenced by dialects",
+      "Kajkavian literary tradition book",
+      "coastal island Chakavian poetry",
+      "Shtokavian literary foundation",
+      "standard Croatian Shtokavian text",
+      "preserved dialect literary works",
+      "regional authors using dialects",
+      "voice recording studio microphone"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "beasternchen",
+        "page": "https://pixabay.com/photos/eyeglasses-world-map-map-8227429/",
+        "id": 8227429,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/book-asia-children-boys-education-1822474/",
+        "id": 1822474
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "dobby_jona",
+        "page": "https://pixabay.com/photos/ocean-sea-rocks-coast-nature-8408693/",
+        "id": 8408693
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "CC0",
+        "title": "Književnik 11 1933.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Knji%C5%BEevnik_11_1933.png",
+        "id": "c:156998533"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Sutthikhun.pha",
+        "license": "CC BY-SA 4.0",
+        "title": "Buddho! in Thai regional dialects.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Buddho!_in_Thai_regional_dialects.png",
+        "id": "c:177621550"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/audio-microphone-1844798/",
+        "id": 1844798
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2307,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a67591c5474c",
+        "at": "2026-10-30 16:39",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.202,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a94e7bddfca4",
+        "at": "2026-10-30 16:39",
+        "scene": 2,
+        "rejected_ids": [
+          2528477,
+          512798,
+          "c:156998533",
+          "c:6088005"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2305,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a8d3c5a1256",
+        "at": "2026-10-30 16:39",
+        "scene": 3,
+        "rejected_ids": [
+          7055475,
+          "c:156998533"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2144,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8b28f68468fa",
+        "at": "2026-10-30 16:40",
+        "scene": 4,
+        "rejected_ids": [
+          2528477,
+          2946959,
+          8227429,
+          "c:156998533",
+          "c:6088005"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2324,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4c06e2c674ec",
+        "at": "2026-10-30 16:39",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2834,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f99e5d85b741",
+        "at": "2026-10-30 16:40",
+        "scene": 6,
+        "rejected_ids": [
+          3984946,
+          "c:156998533"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2473,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e6be7398911c",
+        "at": "2026-10-30 16:39",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2609,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9b6ee439ad50",
+        "at": "2026-10-30 16:40",
+        "scene": 8,
+        "rejected_ids": [
+          1144464,
+          "c:156998533"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "39fd5e614fc4",
+        "at": "2026-10-30 16:40",
+        "scene": 9,
+        "rejected_ids": [
+          8059883,
+          "c:156998533"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2394,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1fcfe11c04f0",
+        "at": "2026-10-30 16:40",
+        "scene": 10,
+        "rejected_ids": [
+          7291259,
+          "c:156998533"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2454,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "130619aeb737",
+        "at": "2026-10-30 16:40",
+        "scene": 11,
+        "rejected_ids": [
+          6789711,
+          "c:177621550",
+          "c:55874712"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3376,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "22978d1d366a",
+        "at": "2026-10-30 16:39",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "‘샬롬’이 전 세계 인사말이 된 이유",
@@ -33876,17 +36333,215 @@
     "title_line1": "스페인 거리, 샬롬",
     "title_line2": "평화가 의미?",
     "image_queries": [
-      "Spanish street shalom",
-      "Hebrew peace word",
-      "Five languages common",
-      "Spanish neighborhood greeting",
-      "Spanish alleyway greeting",
-      "One word cultural link"
+      "Spain street sign Shalom",
+      "Hebrew word peace inscription",
+      "welcome board multiple languages",
+      "Spanish street farewell handshake",
+      "Arabic calligraphy word salam",
+      "Spanish cultural bridge sculpture",
+      "old manuscript pages",
+      "Spanish greeting card peace",
+      "Spanish person hearing Shalom"
     ],
     "scene_count": 12,
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries_done": [
+      "Spain street sign Shalom",
+      "Hebrew word peace inscription",
+      "welcome board multiple languages",
+      "Spanish street farewell handshake",
+      "Arabic calligraphy word salam",
+      "Spanish cultural bridge sculpture",
+      "old manuscript pages",
+      "Spanish greeting card peace",
+      "Spanish person hearing Shalom"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "MarciMarc105",
+        "page": "https://pixabay.com/photos/palma-de-mallorca-alley-buildings-2900559/",
+        "id": 2900559,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "aitoff",
+        "page": "https://pixabay.com/photos/dead-final-end-ending-inscription-1205269/",
+        "id": 1205269
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/warm-welcome-chalk-blackboard-old-3717133/",
+        "id": 3717133
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "joakant",
+        "page": "https://pixabay.com/photos/handshake-hands-welcome-farewell-733239/",
+        "id": 733239
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "sonofara",
+        "page": "https://pixabay.com/photos/ayat-al-kursi-islam-muslims-1207509/",
+        "id": 1207509
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "EtoileOfficial",
+        "page": "https://pixabay.com/photos/statue-woman-spanish-costume-girl-6347584/",
+        "id": 6347584,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "FreeCreativeStuff",
+        "page": "https://pixabay.com/photos/vintage-paper-retro-antique-2721100/",
+        "id": 2721100
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/thank-you-thank-you-card-greeting-6727181/",
+        "id": 6727181,
+        "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Anemone123",
+        "page": "https://pixabay.com/photos/ear-auricle-listen-hearing-2372090/",
+        "id": 2372090
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.2074,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "46a947250094",
+        "at": "2026-10-30 16:41",
+        "scene": 1,
+        "rejected_ids": [
+          2900559,
+          4831013,
+          634941,
+          "c:2065750",
+          "c:78678695"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3118,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ba03ffbcfe81",
+        "at": "2026-10-30 16:41",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2479,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0a65b3ba2f56",
+        "at": "2026-10-30 16:41",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3184,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b59723ccafe0",
+        "at": "2026-10-30 16:41",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2527,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fcb855b77f66",
+        "at": "2026-10-30 16:41",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2513,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "18f9dca83cc1",
+        "at": "2026-10-30 16:41",
+        "scene": 6,
+        "rejected_ids": [
+          10236306,
+          6347584,
+          "c:93135014"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2275,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "69f0675db3d1",
+        "at": "2026-10-30 16:41",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2339,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "160396c1eb42",
+        "at": "2026-10-30 16:41",
+        "scene": 8,
+        "rejected_ids": [
+          4684006,
+          6727181,
+          "c:2065750"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2673,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c6cb8c2d25f0",
+        "at": "2026-10-30 16:41",
+        "scene": 9,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "미얀마의 지위·지역별 예절 차이",
@@ -34457,18 +37112,183 @@
     "title_line2": "밥보다 먼저 뭐?",
     "image_queries": [
       "miso soup bowl",
-      "Japanese miso soup serving",
-      "rice mixed miso soup",
-      "Japanese seasonal side dishes",
-      "sashimi with tempura",
-      "traditional washoku meal",
-      "miso soup starter"
+      "seasonal Japanese ingredients",
+      "rice and miso soup with fish",
+      "Japanese broth simmer pot",
+      "Japanese sashimi and tempura platter",
+      "simple Japanese home meal",
+      "rice bowl with miso soup",
+      "seasonal Japanese table setting"
     ],
     "scene_count": 12,
     "country_before_fix": "싱가포르",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries_done": [
+      "miso soup bowl",
+      "seasonal Japanese ingredients",
+      "rice and miso soup with fish",
+      "Japanese broth simmer pot",
+      "Japanese sashimi and tempura platter",
+      "simple Japanese home meal",
+      "rice bowl with miso soup",
+      "seasonal Japanese table setting"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "eak_kkk",
+        "page": "https://pixabay.com/photos/soup-pot-miso-soup-soup-1090137/",
+        "id": 1090137
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "debannja",
+        "page": "https://pixabay.com/photos/leaves-autumn-fall-maple-10515303/",
+        "id": 10515303
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "naturalogy",
+        "page": "https://pixabay.com/photos/japanese-meal-japanese-food-sashimi-1604865/",
+        "id": 1604865
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/cook-pot-vegetables-vegetable-top-767292/",
+        "id": 767292
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "DesignNPrint",
+        "page": "https://pixabay.com/photos/sushi-japanese-asian-food-raw-354628/",
+        "id": 354628
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "HirokazuTouwaku",
+        "page": "https://pixabay.com/photos/zoni-new-year-dishes-new-year-7709215/",
+        "id": 7709215,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "tianya1223",
+        "page": "https://pixabay.com/photos/rice-smoked-duck-chopsticks-duck-6877896/",
+        "id": 6877896
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "kaboompics",
+        "page": "https://pixabay.com/photos/table-setting-table-preparing-set-791149/",
+        "id": 791149
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3123,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6985a1654837",
+        "at": "2026-10-30 16:41",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2272,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "12568282b5a7",
+        "at": "2026-10-30 16:41",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2986,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b6bc12ff3b3",
+        "at": "2026-10-30 16:41",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3322,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b64f7bf088f6",
+        "at": "2026-10-30 16:41",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2609,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c54c0d23e261",
+        "at": "2026-10-30 16:41",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2741,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7d5db8ccd92a",
+        "at": "2026-10-30 16:41",
+        "scene": 6,
+        "rejected_ids": [
+          7709215,
+          9384171,
+          "c:18824054"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3087,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "611d31a75083",
+        "at": "2026-10-30 16:41",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2529,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "110ed54710f4",
+        "at": "2026-10-30 16:41",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "사우디아라비아( Saudi Arabia )의 법체계는 성경과 전통에 근거한 무코드 샤리아 적용",
