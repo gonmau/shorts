@@ -23391,7 +23391,9 @@
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.srt",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.mp4"
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.mp4",
+    "youtube_id": "UvG_afb8fqI",
+    "uploaded_at": "2026-10-30T17:53:55.098368+09:00"
   },
   {
     "topic": "문화마다 다른 악수 동작",
@@ -24081,7 +24083,9 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "UCozNTUEuDY",
+    "uploaded_at": "2026-10-30T17:54:06.628603+09:00"
   },
   {
     "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
