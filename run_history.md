@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 17:11:33 (KST) · 기록 567건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 17:18:52 (KST) · 기록 573건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,22 +8,22 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 26 | 0 | 3초 |
+| apply_review | 27 | 0 | 4초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 2 | 0 | 34분 3초 |
 | cuts | 2 | 0 | 10초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 68 | 1 | 1시간 5분 |
 | generate_culture_facts | 4 | 0 | 4분 58초 |
-| generate_script | 62 | 0 | 36분 20초 |
-| generate_tts | 2 | 0 | 1분 17초 |
+| generate_script | 63 | 0 | 36분 21초 |
+| generate_tts | 3 | 0 | 1분 36초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 2 | 0 | 5초 |
-| promote_ready | 26 | 0 | 4초 |
-| redo_videos | 9 | 0 | 2초 |
+| promote_ready | 27 | 0 | 4초 |
+| redo_videos | 10 | 0 | 2초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 98 | 6 | 12시간 17분 |
-| 코드업데이트 | 21 | 0 | 0초 |
+| 코드업데이트 | 22 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -31,6 +31,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:18 | PC | generate_tts | generate_tts.py --index 286 | ✅ | 18초 |  |
+| 17:17 | PC | generate_script | generate_script.py --extras-only --index 286 | ✅ | 1초 |  |
+| 17:17 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
+| 17:17 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 17:17 | PC | redo_videos | redo_videos.py --indexes 286,304 | ✅ | 0초 |  |
+| 17:16 | PC | 코드업데이트 | gonmau/shorts: 3개 (local_ui.py, redo_videos.py, sync_db.py) | ✅ |  |  |
 | 17:11 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 17:11 | PC | redo_videos | redo_videos.py --indexes 286,304 | ✅ | 0초 |  |
 | 17:11 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
