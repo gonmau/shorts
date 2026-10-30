@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 23:48:01 (KST) · 기록 649건 · 소재 425개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 00:51:56 (KST) · 기록 653건 · 소재 425개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,19 +8,19 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 30 | 0 | 4초 |
+| apply_review | 31 | 0 | 4초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 18 | 0 | 3시간 10분 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
-| fetch_images | 68 | 1 | 1시간 5분 |
+| fetch_images | 69 | 1 | 1시간 39분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
-| generate_script | 81 | 0 | 37분 5초 |
+| generate_script | 82 | 0 | 1시간 5분 |
 | generate_tts | 21 | 0 | 8분 54초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 3 | 0 | 7초 |
-| promote_ready | 30 | 0 | 4초 |
+| promote_ready | 31 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
 | upload_to_youtube | 6 | 0 | 3분 15초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
@@ -29,10 +29,19 @@
 
 ## 날짜별 작업 (최근 30일)
 
+### 2026-10-31
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 00:51 | PC | fetch_images | fetch_images.py --limit 20 --start 379 --any | ✅ | 33분 52초 |  |
+| 00:17 | PC | generate_script | generate_script.py --extras-only --limit 20 --start 379 | ✅ | 27분 57초 |  |
+
 ### 2026-10-30
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:49 | PC | promote_ready | promote_ready.py --start 379 | ✅ | 0초 |  |
+| 23:49 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 23:25 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 24초 |  |
 | 23:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 31초 |  |
 | 23:14 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 6초 |  |
