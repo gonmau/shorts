@@ -130,12 +130,31 @@ def _tagify(text):
     return re.sub(r"[^0-9A-Za-z가-힣]", "", str(text or ""))
 
 
+_JOSA = ("들의", "들은", "들이", "들을", "들에", "들과", "에서", "으로", "에게", "까지", "부터", "처럼", "보다", "의", "은", "는", "이", "가", "을", "를", "에", "로", "와", "과", "도", "만")
+_NOT_NOUN_END = ("까", "까요", "다", "한", "인", "하는", "되는", "있는", "없는", "같은", "된", "던", "고", "며", "서")
+_STOP = {"왜", "어떻게", "무엇", "어떤", "이상한", "특이한", "사람", "사람들", "나라", "이유", "것", "때", "수", "가장", "정말", "진짜"}
+
+
+def _noun_tag(w):
+    """주제 단어에서 조사를 떼고, 동사/형용사형이나 너무 흔한 말은 버려 '명사 한 단어'만 태그로 쓴다. 못 쓰면 ''."""
+    w = _tagify(w)
+    if not w or re.fullmatch(r"[0-9A-Za-z]+", w):           # 영문/숫자는 그대로 (짧은 것만 제외)
+        return w if len(w) >= 3 else ""
+    for j in _JOSA:
+        if w.endswith(j) and len(w) - len(j) >= 2:
+            w = w[: -len(j)]
+            break
+    if w in _STOP or len(w) < 2 or w.endswith(_NOT_NOUN_END):
+        return ""
+    return w
+
+
 def youtube_tags(item):
     """해시태그 목록(# 없이): 나라 + 주제 키워드 + 고정 태그, 중복 제거."""
     tags = [_tagify(item.get("country"))]
     for w in str(item.get("topic", "")).replace("/", " ").replace(",", " ").split():
-        w = _tagify(w)
-        if len(w) >= 2:
+        w = _noun_tag(w)
+        if w:
             tags.append(w)
     tags += FIXED_TAGS
     out, seen = [], set()
