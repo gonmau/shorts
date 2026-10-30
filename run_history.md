@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-30 16:42:06 (KST) · 기록 558건 · 소재 379개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-30 17:04:23 (KST) · 기록 561건 · 소재 379개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 23 | 0 | 3초 |
+| apply_review | 24 | 0 | 3초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 2 | 0 | 34분 3초 |
 | cuts | 2 | 0 | 10초 |
@@ -19,8 +19,8 @@
 | generate_tts | 2 | 0 | 1분 17초 |
 | image_check | 2 | 0 | 19초 |
 | make_thumbnail | 2 | 0 | 5초 |
-| promote_ready | 23 | 0 | 3초 |
-| redo_videos | 6 | 0 | 1초 |
+| promote_ready | 24 | 0 | 3초 |
+| redo_videos | 7 | 0 | 1초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 98 | 6 | 12시간 17분 |
 | 코드업데이트 | 21 | 0 | 0초 |
@@ -31,6 +31,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:04 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 17:04 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 17:04 | PC | redo_videos | redo_videos.py --indexes 286,304 | ✅ | 0초 |  |
 | 16:42 | PC | fetch_images | fetch_images.py --index 365 --force | ✅ | 31초 |  |
 | 16:41 | PC | generate_script | generate_script.py --extras-only --index 365 --regen-queries | ✅ | 3초 |  |
 | 16:41 | PC | fetch_images | fetch_images.py --index 357 --force | ✅ | 51초 |  |
