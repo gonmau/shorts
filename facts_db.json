@@ -15469,7 +15469,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15564,7 +15564,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22921,7 +22922,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23042,7 +23043,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -25390,7 +25392,7 @@
     "body": "피시앤칩스는 19세기에 영국에서 시작된 튀김 요리로, 전쟁 중에도 영국 정부가 공급을 보호했습니다. 제1·제2차 세계대전 동안 이 음식은 드물게도 계속 제공되었습니다.",
     "twist": "전쟁 중에 보호된 식품 중 몇 안 되는 음식 중 하나였다는 점이 놀랍습니다.",
     "caveat": "보호 조치는 제1·제2차 세계대전 시기에만 적용되었습니다.",
-    "country": "네덜란드",
+    "country": "영국",
     "theme": "음식문화",
     "wiki_title": "Fish and chips",
     "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
@@ -25512,7 +25514,8 @@
     "status_v6": "video_done",
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "country_before_fix": "네덜란드"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -32223,7 +32226,7 @@
     "verify_note": "Lozi kingdom",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "아프리카 남부의 로지 왕국은 어디에서 시작되었을까요? 지금의 잠비아 서부에는 로지족이 형성한 전통 왕국이 있었습니다. 이 지역은 잠베지강을 따라 펼쳐진 넓은 범람원과 연결됩니다. 로지 왕국의 초기 역사는 여러 구전 전통과 역사 연구를 통해 전해집니다. 일부 역사적 설명은 콩고 분지의 룬다 왕국과 관련된 이주를 언급합니다. 하지만 로지족의 기원을 하나의 이주 집단으로만 설명하기는 어렵습니다. 여러 공동체가 오랜 시간 이동하고 교류하며 형성되었기 때문입니다. 전통적으로 로지 사회의 최고 통치자는 리퉁가라고 불립니다. 왕국의 성장에는 지도자의 권위뿐 아니라 지리적 환경도 중요한 역할을 했습니다. 잠베지강의 범람원은 농업과 목축에 유리한 조건을 제공했습니다. 계절에 따라 물이 차오르는 환경은 주민들의 생활 방식에도 영향을 주었습니다. 로지 왕국의 역사는 단순한 정복의 이야기가 아닙니다. 강과 땅, 사람들의 이동이 함께 만들어 낸 역사입니다.",
     "fact_verifiability": "user",
@@ -32535,7 +32538,8 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "reject_reason": "나라와 주제 불일치(영국 / ZM)"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -32780,7 +32784,7 @@
     "verify_note": "Chaharshanbe Suri",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:41.846189+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "불 위를 뛰어넘으며 새해를 맞이하는 축제가 있습니다. 그런데 이 행사는 카자흐스탄이 아니라 이란의 전통문화와 관련이 깊습니다. 이름은 차하르샨베 수리입니다. 페르시아 새해인 노루즈를 앞두고 열리는 불 축제입니다. 참가자들은 해가 질 무렵 불을 피우고 그 위를 뛰어넘습니다. 불을 건너며 건강과 행운을 기원하는 노래를 부르기도 합니다. 이때 전해지는 대표적인 표현은 자신의 창백함을 불에 주고 붉은 기운을 받겠다는 의미입니다. 불은 나쁜 기운을 털어내고 새로운 출발을 맞이하는 상징으로 여겨집니다. 지역에 따라 불을 피우는 방식과 부대 의식은 달라집니다. 축제의 정확한 기원에 대해서는 여러 역사적 해석이 존재합니다. 고대 페르시아의 불 의례와 연결하는 설명도 있습니다. 다만 현재의 수요일 의식이 언제 완성되었는지는 단정하기 어렵습니다. 뜨거운 불길을 넘는 행동에는 묵은 시간을 보내고 새해를 맞이하려는 마음이 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -32863,12 +32867,10 @@
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Azim Azimzade",
-        "license": "Public domain",
-        "title": "Jumping over bonfire.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Jumping_over_bonfire.jpg",
-        "id": "c:9772293"
+        "source": "pixabay",
+        "user": "fancycrave1",
+        "page": "https://pixabay.com/photos/new-year-people-jumping-happiness-821624/",
+        "id": 821624
       },
       {
         "scene": 5,
@@ -32882,11 +32884,11 @@
       {
         "scene": 6,
         "source": "commons",
-        "user": "Philippe Giabbanelli",
-        "license": "CC BY 3.0",
-        "title": "West Vancouver, Chaharshanbe Suri, 19 mars 2008, 2.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:West_Vancouver,_Chaharshanbe_Suri,_19_mars_2008,_2.jpg",
-        "id": "c:6515494"
+        "user": "Mehdi Khanlari",
+        "license": "CC BY 4.0",
+        "title": "Chaharshanbe Suri 2019 in Tehran 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Chaharshanbe_Suri_2019_in_Tehran_01.jpg",
+        "id": "c:77483266"
       },
       {
         "scene": 7,
@@ -33076,7 +33078,16 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0341_카자흐스탄_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0341_카자흐스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0341_카자흐스탄.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0341_카자흐스탄.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "nej0aA4NAvU",
+    "uploaded_at": "2026-10-31T01:24:58.991091+09:00"
   },
   {
     "topic": "의료 과실의 필수 조건",
@@ -33091,7 +33102,7 @@
     "verify_note": "Medical malpractice",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:41.846189+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "의료진의 실수가 있었다면 무조건 의료 과실이 인정될까요? 뉴질랜드에서도 의료 과실을 판단할 때는 여러 법적 요건을 살펴봅니다. 먼저 의료진에게 환자를 돌볼 주의 의무가 있었는지 확인합니다. 다음으로 그 의무를 제대로 지켰는지 검토합니다. 의료진의 행동이 당시 요구되는 기준에 미치지 못했는지가 중요한 쟁점입니다. 하지만 여기서 판단이 끝나는 것은 아닙니다. 실제로 환자에게 손해가 발생했는지도 살펴봐야 합니다. 그리고 그 손해가 의료진의 잘못과 인과관계가 있는지 확인합니다. 단순히 치료 결과가 좋지 않았다는 이유만으로 과실이 성립하는 것은 아닙니다. 의료 현장에서는 예상하지 못한 합병증이나 질병의 진행도 발생할 수 있기 때문입니다. 법원은 사건의 상황과 증거를 종합적으로 검토합니다. 주의 의무와 위반, 손해와 인과관계가 중요한 판단 요소입니다. 결국 의료 과실은 결과만 보고 결정하는 문제가 아닙니다. 당시의 행동과 그로 인해 발생한 손해를 함께 따져야 합니다.",
     "fact_verifiability": "user",
@@ -33159,28 +33170,26 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "geralt",
-        "page": "https://pixabay.com/photos/signpost-waypoint-wood-grain-board-235079/",
-        "id": 235079,
-        "type": "photo"
+        "source": "commons",
+        "user": "Michael Waltz",
+        "license": "Public domain",
+        "title": "Michael Waltz press conference.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Michael_Waltz_press_conference.jpg",
+        "id": "c:156221396"
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Henry Winkelmann",
-        "license": "Public domain",
-        "title": "St Helens Hospital, Pitt Street, Auckland Central, 1922.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:St_Helens_Hospital,_Pitt_Street,_Auckland_Central,_1922.jpg",
-        "id": "c:123465982"
+        "source": "pixabay",
+        "user": "Mampu",
+        "page": "https://pixabay.com/photos/business-new-zealand-building-429341/",
+        "id": 429341
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Andrew-Art",
-        "page": "https://pixabay.com/photos/eagle-mountains-lake-reflection-1450672/",
-        "id": 1450672,
-        "type": "photo"
+        "user": "timjl",
+        "page": "https://pixabay.com/photos/mountain-south-island-new-zealand-10442505/",
+        "id": 10442505
       },
       {
         "scene": 4,
@@ -33194,10 +33203,9 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "timjl",
-        "page": "https://pixabay.com/photos/mountain-south-island-new-zealand-10442505/",
-        "id": 10442505,
-        "type": "photo"
+        "user": "Andrew-Art",
+        "page": "https://pixabay.com/photos/eagle-mountains-lake-reflection-1450672/",
+        "id": 1450672
       },
       {
         "scene": 6,
@@ -33215,36 +33223,42 @@
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "andreas160578",
-        "page": "https://pixabay.com/photos/hands-massage-treatment-fingers-1327811/",
-        "id": 1327811,
-        "type": "photo"
+        "source": "commons",
+        "user": "Senft Injury Advocates",
+        "license": "CC BY 4.0",
+        "title": "United States Tort Claims Filed 2022.png",
+        "page": "https://commons.wikimedia.org/wiki/File:United_States_Tort_Claims_Filed_2022.png",
+        "id": "c:152253253"
       },
       {
         "scene": 9,
         "source": "pixabay",
-        "user": "stevepb",
-        "page": "https://pixabay.com/photos/thermometer-medications-tablets-1539191/",
-        "id": 1539191,
-        "type": "photo"
+        "user": "leo2014",
+        "page": "https://pixabay.com/photos/face-mask-covid-19-epidemic-4986596/",
+        "id": 4986596
       },
       {
         "scene": 10,
-        "source": "commons",
-        "user": "Edmund Evans / After Charles Heaphy",
-        "license": "Public domain",
-        "title": "The New Zealand gold field E-372-f-034-2.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:The_New_Zealand_gold_field_E-372-f-034-2.jpg",
-        "id": "c:78834535"
+        "source": "pixabay",
+        "user": "JonathanPayne",
+        "page": "https://pixabay.com/photos/bird-mountain-kea-10324879/",
+        "id": 10324879
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/thermometer-medications-tablets-1539191/",
+        "id": 1539191
       },
       {
         "scene": 12,
-        "source": "pixabay",
-        "user": "Tumisu",
-        "page": "https://pixabay.com/photos/audit-accounting-ledger-figures-4190945/",
-        "id": 4190945,
-        "type": "photo"
+        "source": "commons",
+        "user": "Win Henderson",
+        "license": "Public domain",
+        "title": "FEMA - 40827 - FEMA performing damage assessment in Arkansas.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:FEMA_-_40827_-_FEMA_performing_damage_assessment_in_Arkansas.jpg",
+        "id": "c:8066326"
       }
     ],
     "image_source": "pixabay",
@@ -33411,7 +33425,16 @@
           "c:8066326"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0342_뉴질랜드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0342_뉴질랜드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0342_뉴질랜드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0342_뉴질랜드.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "jYXEd0xBm6Y",
+    "uploaded_at": "2026-10-31T01:25:01.093209+09:00"
   },
   {
     "topic": "오악사카의 전통 축제 Guelaguetza(게울라게차)",
@@ -33426,7 +33449,7 @@
     "verify_note": "Guelaguetza",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:45.223854+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "무대 위에서 춤을 추는 사람들에게 관객이 선물을 던진다면 어떨까요? 멕시코 오악사카의 대표 축제인 게울라게차에서는 공동체의 나눔 문화가 중요한 의미를 가집니다. 이 축제에는 오악사카 여러 지역의 주민들이 참여합니다. 각 지역은 자신들의 음악과 춤, 의상과 문화를 선보입니다. 화려한 전통 의상과 힘찬 공연이 축제장을 가득 채웁니다. 하지만 이 행사의 핵심은 공연만이 아닙니다. 게울라게차라는 말에는 서로 돕고 나누는 의미가 담겨 있습니다. 공동체 구성원들이 중요한 순간에 선물과 도움을 주고받는 문화입니다. 축제에서는 지역 특산물이나 전통 음식을 나누기도 합니다. 서로 다른 지역의 문화가 한자리에 모이는 기회이기도 합니다. 현재의 공식 축제는 1932년 오악사카에서 시작된 행사와 연결됩니다. 오늘날에는 멕시코를 대표하는 문화 행사 가운데 하나로 자리 잡았습니다. 무대 위의 춤과 음악보다 더 깊은 곳에는 서로 나누며 살아가는 공동체의 정신이 있습니다.",
     "fact_verifiability": "user",
@@ -33500,9 +33523,9 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "CatySalcedo",
-        "page": "https://pixabay.com/photos/handicrafts-handcrafts-craftsman-5123620/",
-        "id": 5123620
+        "user": "RIGOYRBK",
+        "page": "https://pixabay.com/photos/mexico-woman-traditional-clothes-840550/",
+        "id": 840550
       },
       {
         "scene": 3,
@@ -33520,11 +33543,12 @@
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "RIGOYRBK",
-        "page": "https://pixabay.com/photos/mexican-people-guelaguetza-oaxaca-793070/",
-        "id": 793070,
-        "type": "photo"
+        "source": "commons",
+        "user": "Carnaval.com Studios from The Inner Mission San Francisco, Earth",
+        "license": "CC BY 2.0",
+        "title": "59 Oaxaca En SF Danza De Diablos STG Juxtlahuaca (53748769539).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:59_Oaxaca_En_SF_Danza_De_Diablos_STG_Juxtlahuaca_(53748769539).jpg",
+        "id": "c:151689802"
       },
       {
         "scene": 6,
@@ -33721,7 +33745,16 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0343_멕시코_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0343_멕시코_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0343_멕시코.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0343_멕시코.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "VLfiTnmJ7_8",
+    "uploaded_at": "2026-10-31T01:25:03.225743+09:00"
   },
   {
     "topic": "마테 차, 금속 빨대로 마시는 남미 전통 음료",
@@ -34709,7 +34742,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "같은 행동인데 어떤 마을에서는 금기이고 다른 곳에서는 아무렇지 않을 수 있습니다. 마다가스카르에는 파디라고 불리는 전통적인 금기가 있습니다. 파디는 특정 행동이나 음식, 장소 등에 적용되는 금기와 제한을 뜻합니다. 지역과 가족, 공동체에 따라 내용이 다릅니다. 어떤 곳에서는 특정 동물을 먹지 않기도 합니다. 또 어떤 장소에서는 정해진 행동을 삼가야 합니다. 이런 규칙은 단순히 이상한 미신으로만 설명할 수 없습니다. 조상에 대한 존중과 공동체의 역사, 종교적 믿음이 연결되어 있기 때문입니다. 일부 파디는 자연환경을 보호하는 역할도 합니다. 특정 동물을 잡지 못하게 하거나 신성한 장소의 출입을 제한하는 사례가 있습니다. 이런 금기는 지역 주민들의 생활 방식에 영향을 줍니다. 다만 모든 파디가 환경 보호를 목적으로 만들어진 것은 아닙니다. 각각의 규칙에는 서로 다른 배경이 있습니다. 외부인의 눈에는 이해하기 어려운 금기도 있을 수 있습니다. 하지만 그 안에는 공동체가 오랜 시간 지켜온 가치와 기억이 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -35049,7 +35082,8 @@
           "c:28973464"
         ]
       }
-    ]
+    ],
+    "reject_reason": "성/민감 소재 자동 제외(혐오)"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -39480,7 +39514,7 @@
     "verify_note": "Bukharan Jews",
     "confidence": "source",
     "created_at": "2026-10-30T13:38:27.520796+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "부하라 유대인은 모두 부하라에서만 살았을까요? 이름만 보면 그렇게 생각하기 쉽습니다. 하지만 공동체의 삶은 그 도시 밖으로도 이어졌습니다. 우즈베키스탄과 타지키스탄 등 중앙아시아가 무대였죠. 오랜 세월 주변 사람들과 언어와 문화를 나눴습니다. 그러면서도 유대교 전통을 이어갔습니다. 공동체에서 쓰인 부하리어도 그 만남을 보여줍니다. 페르시아어 계통에 히브리어 요소가 더해진 언어죠. 믿음과 생활이 서로 다른 길로만 움직인 건 아닙니다. 음식과 음악, 옷차림에도 지역의 흔적이 남았습니다. 근현대에는 많은 사람이 다른 나라로 이주했습니다. 이스라엘과 미국 등에서도 공동체가 이어지고 있죠. 그렇다고 이동한 순간 과거의 삶이 사라진 건 아닙니다. 익숙한 말과 음식, 의례가 사람을 따라가기도 합니다. 이름에는 한 도시가 남았지만 삶의 지도는 훨씬 넓습니다. 고향은 떠나온 장소이면서 함께 가져가는 문화이기도 합니다.",
     "fact_verifiability": "user",
@@ -39492,317 +39526,7 @@
       "직접 검증한 대본 (외부 AI)"
     ],
     "cross_flags": [],
-    "title_line1": "부하리 유대인 이야기",
-    "title_line2": "그들은 어디에 살까?",
-    "highlights": [
-      {
-        "s": 1,
-        "text": "부하라만*살았*나요?"
-      },
-      {
-        "s": 4,
-        "text": "중앙아시아가*무대*다"
-      },
-      {
-        "s": 7,
-        "text": "*부하리어*가증명"
-      },
-      {
-        "s": 11,
-        "text": "많은사람이*이주*했어요"
-      },
-      {
-        "s": 15,
-        "text": "이름은*도시*지만"
-      }
-    ],
-    "image_queries": [
-      "Bukharan synagogue interior",
-      "Bukharan market street Uzbekistan",
-      "Central Asian stage landscape",
-      "Jewish prayer scrolls",
-      "Bukharian language manuscript",
-      "Persian Hebrew script page",
-      "Bukharan Jewish cuisine",
-      "Migrants with suitcases",
-      "Jewish community gathering Israel",
-      "Family preparing traditional food",
-      "Map showing city name",
-      "Cultural artifacts in suitcase"
-    ],
-    "scene_count": 12,
-    "image_queries_done": [
-      "Bukharan synagogue interior",
-      "Bukharan market street Uzbekistan",
-      "Central Asian stage landscape",
-      "Jewish prayer scrolls",
-      "Bukharian language manuscript",
-      "Persian Hebrew script page",
-      "Bukharan Jewish cuisine",
-      "Migrants with suitcases",
-      "Jewish community gathering Israel",
-      "Family preparing traditional food",
-      "Map showing city name",
-      "Cultural artifacts in suitcase"
-    ],
-    "image_credits": [
-      {
-        "scene": 1,
-        "source": "pixabay",
-        "user": "canesjurij",
-        "page": "https://pixabay.com/photos/st-petersburg-choral-synagogue-95128/",
-        "id": 95128
-      },
-      {
-        "scene": 2,
-        "source": "commons",
-        "user": "Maynard Owen Williams",
-        "license": "Public domain",
-        "title": "Bukharian Jews in the Bukharan Quarter of Jerusalem.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Bukharian_Jews_in_the_Bukharan_Quarter_of_Jerusalem.jpg",
-        "id": "c:150658479"
-      },
-      {
-        "scene": 3,
-        "source": "pixabay",
-        "user": "Makalu",
-        "page": "https://pixabay.com/photos/tajikistan-badakhshan-national-park-4740798/",
-        "id": 4740798
-      },
-      {
-        "scene": 4,
-        "source": "pixabay",
-        "user": "OcelotsGriblit",
-        "page": "https://pixabay.com/photos/mitzvah-bar-mitzvah-sw-jewish-bat-1531490/",
-        "id": 1531490
-      },
-      {
-        "scene": 5,
-        "source": "commons",
-        "user": "Maynard Owen Williams",
-        "license": "Public domain",
-        "title": "Bukharian Jews in the Bukharan Quarter of Jerusalem.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Bukharian_Jews_in_the_Bukharan_Quarter_of_Jerusalem.jpg",
-        "id": "c:150658479"
-      },
-      {
-        "scene": 6,
-        "source": "pixabay",
-        "user": "Republica",
-        "page": "https://pixabay.com/photos/torah-bible-inside-religion-hebrew-89074/",
-        "id": 89074,
-        "type": "photo"
-      },
-      {
-        "scene": 7,
-        "source": "pixabay",
-        "user": "svetlanabar",
-        "page": "https://pixabay.com/photos/bread-bakery-baked-flour-fresh-5470534/",
-        "id": 5470534
-      },
-      {
-        "scene": 8,
-        "source": "commons",
-        "user": "Zoltan Kluger / Adam Cuerden",
-        "license": "Public domain",
-        "title": "A Bukharan dance performed by members of the Rina Nikova ballet in the citadel of Jerusale",
-        "page": "https://commons.wikimedia.org/wiki/File:A_Bukharan_dance_performed_by_members_of_the_Rina_Nikova_ballet_in_the_citadel_of_Jerusalem_-_Restoration.jpg",
-        "id": "c:118416407"
-      },
-      {
-        "scene": 9,
-        "source": "pixabay",
-        "user": "Waldemar_RU",
-        "page": "https://pixabay.com/photos/israel-jerusalem-man-jew-religion-6290611/",
-        "id": 6290611
-      },
-      {
-        "scene": 10,
-        "source": "pixabay",
-        "user": "Vilkasss",
-        "page": "https://pixabay.com/photos/baking-woman-grandmother-girl-tart-10430860/",
-        "id": 10430860
-      },
-      {
-        "scene": 11,
-        "source": "pixabay",
-        "user": "652234",
-        "page": "https://pixabay.com/photos/map-syria-aleppo-refugees-asylum-3473138/",
-        "id": 3473138,
-        "type": "photo"
-      },
-      {
-        "scene": 12,
-        "source": "pixabay",
-        "user": "stux",
-        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
-        "id": 1149289,
-        "type": "photo"
-      }
-    ],
-    "image_source": "pixabay",
-    "image_check": [
-      {
-        "verdict": "ok",
-        "clip": 0.3247,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "be1488f6ff29",
-        "at": "2026-10-31 00:23",
-        "scene": 1,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2642,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "dbeec0d59ef7",
-        "at": "2026-10-31 00:23",
-        "scene": 2,
-        "rejected_ids": [
-          1283306,
-          2879303,
-          "c:118416407",
-          "c:150658479"
-        ]
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.248,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "97158c36ee17",
-        "at": "2026-10-31 00:23",
-        "scene": 3,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.245,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "c0da2c829efa",
-        "at": "2026-10-31 00:23",
-        "scene": 4,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2475,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "15e2dee03483",
-        "at": "2026-10-31 00:23",
-        "scene": 5,
-        "rejected_ids": [
-          2771936,
-          "c:118416407",
-          "c:150658479"
-        ]
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2964,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "aae435861d76",
-        "at": "2026-10-31 00:23",
-        "scene": 6,
-        "rejected_ids": [
-          7637805,
-          89074,
-          "c:87319636"
-        ]
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2277,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "d5e397f77c09",
-        "at": "2026-10-31 00:23",
-        "scene": 7,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "bad",
-        "clip": 0.1924,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "7e681782fbb2",
-        "at": "2026-10-31 00:23",
-        "scene": 8,
-        "rejected_ids": [
-          8783358,
-          8800553,
-          "c:118416407",
-          "c:148930426",
-          "c:83265466"
-        ]
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2215,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "da4ac5536254",
-        "at": "2026-10-31 00:23",
-        "scene": 9,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2598,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "7a437929d256",
-        "at": "2026-10-31 00:23",
-        "scene": 10,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.2415,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "41aba284ce62",
-        "at": "2026-10-31 00:23",
-        "scene": 11,
-        "rejected_ids": [
-          2693054,
-          3473138,
-          "c:113759357"
-        ]
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.255,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "67867958e907",
-        "at": "2026-10-31 00:24",
-        "scene": 12,
-        "rejected_ids": [
-          1149289,
-          7995207,
-          "c:118416407",
-          "c:150658479"
-        ]
-      }
-    ]
+    "reject_reason": "나라와 주제 불일치(아랍에미리트 / UZ,TJ,IL,US)"
   },
   {
     "topic": "새해 맞이 물축제의 물뿌리기 풍경",
@@ -44744,9 +44468,9 @@
   },
   {
     "topic": "보로로(Bororo) 부족의 8개 마을 생활",
-    "hook": "8개의 마을 중 하나에 들어서면, 주민이 바로 보로로어(Borôro)로 인사하라고 요구한다!",
-    "body": "보로로(Bororo) 부족은 브라질 마투 그로소 주와 볼리비아·고이아스까지 퍼져 살며, 서쪽은 자우루(Jauru)·카바살(Cabaçal) 강 주변, 동쪽은 상루르엔소(São Lourenço)·가르사스(Garças)·베르멜루(Vermelho) 강 지역에 거주한다. 그들은 총 8개의 마을에 살고, 인구는 2천 명 이하이며 보로로어(Borôro)라는 언어를 사용한다.",
-    "twist": "보로로어는 국제 ISO 639 코드가 BOR라서 전 세계 언어 데이터베이스에 등재돼 있다.",
+    "hook": "일부 마을에서는 주민이 보로로어로 인사해 달라고 요청할 때가 있다고 합니다.",
+    "body": "보로로 부족은 브라질 마투 그로소 주와 볼리비아·고이아스 지역에 일부 분포해 있으며, 서쪽 자우루·카바살 강과 동쪽 상루르엔소·가르사스·베르멜루 강 유역에 위치해 있다고 전해집니다. 이 지역에는 총 8개의 마을이 모여 살며, 인구가 2천 명 이하일 가능성이 있다고 합니다. 그들은 대부분 보로로어(Borôro)라는 고유 언어를 사용한다고 전해집니다. 이 언어는 아직 국제 ISO 639 코드가 부여되지 않았으며, 전 세계 언어 데이터베이스에 등재돼 있지 않다고 합니다. 보로로어는 공식적인 언어 코드가 부여되지 않았다고 전해집니다.",
+    "twist": "결국, 보로로 부족을 찾으면 ‘보로로어로 인사하라’는 요구가 그들의 정체성을 확인할 수 있는 한 가지 단서가 될 수 있다고 합니다.",
     "caveat": "인구와 마을 수는 보로로(Bororo) 부족 전체에 해당한다.",
     "country": "브라질",
     "theme": "언어/이름",
@@ -44755,7 +44479,85 @@
     "verify_note": "Bororo",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "일부 마을에서는 주민이 보로로어로 인사해 달라고 요청할 때가 있다고 합니다. 보로로 부족은 브라질 마투 그로소 주와 볼리비아·고이아스 지역에 일부 분포해 있으며, 서쪽 자우루·카바살 강과 동쪽 상루르엔소·가르사스·베르멜루 강 유역에 위치해 있다고 전해집니다. 이 지역에는 총 8개의 마을이 모여 살며, 인구가 2천 명 이하일 가능성이 있다고 합니다. 그들은 대부분 보로로어(Borôro)라는 고유 언어를 사용한다고 전해집니다. 이 언어는 아직 국제 ISO 639 코드가 부여되지 않았으며, 전 세계 언어 데이터베이스에 등재돼 있지 않다고 합니다. 보로로어는 공식적인 언어 코드가 부여되지 않았다고 전해집니다. 결국, 보로로 부족을 찾으면 ‘보로로어로 인사하라’는 요구가 그들의 정체성을 확인할 수 있는 한 가지 단서가 될 수 있다고 합니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 1,
+        "text": "일부 마을에서는 주민이 보로로어로 인사해 달라고 요청할 때가 있다고 합니다."
+      },
+      {
+        "n": 2,
+        "text": "보로로 부족은 브라질 마투 그로소 주와 볼리비아·고이아스 지역에 일부 분포해 있으며, 서쪽 자우루·카바살 강과 동쪽 상루르엔소·가르사스·베르멜루 강 유역에 위치해 있다고 전해집니다."
+      },
+      {
+        "n": 3,
+        "text": "이 지역에는 총 8개의 마을이 모여 살며, 인구가 2천 명 이하일 가능성이 있다고 합니다."
+      },
+      {
+        "n": 4,
+        "text": "그들은 대부분 보로로어(Borôro)라는 고유 언어를 사용한다고 전해집니다."
+      },
+      {
+        "n": 5,
+        "text": "이 언어는 아직 국제 ISO 639 코드가 부여되지 않았으며, 전 세계 언어 데이터베이스에 등재돼 있지 않다고 합니다."
+      },
+      {
+        "n": 6,
+        "text": "보로로어는 공식적인 언어 코드가 부여되지 않았다고 전해집니다."
+      },
+      {
+        "n": 7,
+        "text": "결국, 보로로 부족을 찾으면 ‘보로로어로 인사하라’는 요구가 그들의 정체성을 확인할 수 있는 한 가지 단서가 될 수 있다고 합니다."
+      }
+    ],
+    "narration_original": "8개의 마을 중 하나에 들어서면, 주민이 바로 “보로로어로 인사해 주세요!”라고 요구합니다. 브라질 마투 그로소 주와 볼리비아·고이아스까지 퍼진 보로로 부족은 서쪽 자우루·카바살 강, 동쪽 상루르엔소·가르사스·베르멜루 강 유역에 자리하고 있습니다. 이 지역에 총 8개의 마을이 모여 살며, 인구는 2천 명 이하로 비교적 작은 공동체입니다. 그들은 모두 보로로어(Borôro)라는 고유 언어를 사용합니다. 그런데 이 언어는 국제 ISO 639 코드 “BOR”가 부여돼 전 세계 언어 데이터베이스에 등재돼 있다는 점이 흥미롭습니다. 이렇게 작은 마을과 인구에도 불구하고, 보로로어는 공식적인 언어 코드까지 갖춘 드문 사례라 할 수 있겠습니다. 결국, 보로로 부족을 찾으면 “보로로어로 인사하라”는 요구는 그들의 정체성을 바로 확인할 수 있는 가장 확실한 열쇠가 됩니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "보로로어 *인사* 필수!"
+      },
+      {
+        "s": 4,
+        "text": "고유 *언어* 보로로"
+      },
+      {
+        "s": 7,
+        "text": "정체성 *열쇠* 인사"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 1번 문장: No evidence of such greeting practice",
+      "[수정됨] [unsupported] 2번 문장: No source confirming geographic spread",
+      "[수정됨] [unsupported] 3번 문장: Population and village count unverified",
+      "[수정됨] [unsupported] 4번 문장: Language usage not documented",
+      "[수정됨] [contradicted] 5번 문장: ISO 639-3 code 'bor' refers to Boro (Ghana), not Bororo",
+      "[수정됨] [unsupported] 6번 문장: Claim about rarity lacks evidence",
+      "[수정됨] [unsupported] 7번 문장: No evidence that greeting confirms identity",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 1번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: No evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: No evidence available"
+    ],
+    "title_line1": "보로로 부족 8마을 생활",
+    "title_line2": "인사하면 언어코드",
+    "image_queries": [
+      "Bororo village greeting",
+      "Amazon river basin",
+      "small village community",
+      "Bororo language speakers",
+      "ISO language code",
+      "rare language code",
+      "identity greeting key"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
@@ -44801,7 +44603,44 @@
     "verify_note": "Sukkot",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "일주일 내내 판잣집 안에서 식사한다면…  \n이스라엘과 전 세계 유대인 공동체에서 지키는 수코트는 7일 동안 임시 목재 판잣집인 sukkah 안에서 축제 식사를 하는 명절입니다. 하루하루마다 창문을 열어 자연을 느끼며, 가족과 친구들이 모여 따뜻한 음식을 나눕니다.  \n그런데 그 판잣집 안에서 손에 네 가지 식물을 들고 기도까지 해야 한다는 점이 특히 흥미롭습니다. 이 네 식물은 “사마나”라 불리며, 각기 다른 의미를 담고 있어 식사와 기도가 하나의 조화로운 의식이 됩니다.  \n이처럼 일상과 신앙이 결합된 수코트는, 판잣집이라는 작은 공간에서 큰 공동체의 마음을 한데 모으는 순간을 만들어냅니다.  \n판잣집 안에서의 한 끼가 이렇게 깊은 의미를 품고 있다는 사실, 기억해 두세요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "수코트 7일 판잣집",
+    "title_line2": "손에 사마나 들고 기도?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "판잣집 안 *식사*"
+      },
+      {
+        "s": 2,
+        "text": "*수코트* 7일 축제"
+      },
+      {
+        "s": 4,
+        "text": "*식물* 들고 기도"
+      },
+      {
+        "s": 5,
+        "text": "*사마나* 의미 깊어"
+      }
+    ],
+    "image_queries": [
+      "Sukkah interior meal",
+      "Sukkot 7 day celebration",
+      "family sharing food",
+      "prayer with plants",
+      "four holy plants",
+      "community gathering sukkah",
+      "meaningful meal sukkah"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "베트남 설, 1월 말부터 2월 중순까지",
