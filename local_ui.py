@@ -693,6 +693,21 @@ with T6a:
         if _ck2.button("삭제된 영상 기록 지우기", key="chk_up_clr", disabled=not _clr, help="DB의 youtube_id 등을 비웁니다. 영상 파일이 있으면 다시 올릴 수 있게 됩니다"):
             run("check_uploads.py", "--clear-missing")
         st.markdown("---")
+        st.markdown("**🔗 채널 영상을 DB 소재에 연결 (sync_uploads)** — 수동으로 올린 영상 등 연결 안 된 영상을 소재와 이어 줍니다")
+        st.caption("이 PC의 DB에 바로 적용됩니다 (GitHub 쪽 DB를 거치지 않음). 확실한 것(설명에 훅이 그대로 있거나 제목이 거의 같음)만 연결하고, 이미 연결된 소재는 공개 상태만 새로고칩니다. '미리 보기'는 저장하지 않습니다.")
+        _sy1, _sy2 = st.columns(2)
+        if _sy1.button("미리 보기 (저장 안 함)", key="syu_dry"):
+            if os.environ.get("YT_REFRESH_TOKEN"):
+                run("sync_uploads.py", "--dry")
+            else:
+                st.error("YT_REFRESH_TOKEN 이 없습니다.")
+        if _sy2.button("연결하고 저장", key="syu_go", type="primary"):
+            if os.environ.get("YT_REFRESH_TOKEN"):
+                run("sync_uploads.py")
+                st.session_state["gh_dirty"] = True
+            else:
+                st.error("YT_REFRESH_TOKEN 이 없습니다.")
+        st.markdown("---")
         st.markdown("**🔗 공유 연결 정리** (한 유튜브 영상이 여러 소재에 연결된 경우)")
         st.caption("영상은 하나인데 소재가 여러 개 연결돼 있으면 중복 소재이거나 잘못 연결된 것입니다. 남길 소재를 고르면 나머지의 업로드 기록을 지웁니다. 영상 파일과 유튜브 영상은 건드리지 않습니다. 토큰이 있으면 채널 영상과 비교해 남길 소재를 제안합니다.")
         if st.button("공유 연결 찾기", key="fsl_find"):
