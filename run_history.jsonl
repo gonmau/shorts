@@ -815,3 +815,4 @@
 {"id": "1793447186868-e77d46", "time": "2026-10-31 20:46:26", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 5.6, "detail": ""}
 {"id": "1793447362497-6ea312", "time": "2026-10-31 20:49:22", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.9, "detail": ""}
 {"id": "1793447525442-f333e7", "time": "2026-10-31 20:52:05", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 5.8, "detail": ""}
+{"id": "1793447551231-99ef12", "time": "2026-10-31 20:52:31", "channel": "KO", "source": "PC", "kind": "sync_uploads", "title": "sync_uploads.py --dry", "status": "success", "secs": 3.9, "detail": ""}
