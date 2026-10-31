@@ -836,3 +836,4 @@
 {"id": "1793452786314-5511a3", "time": "2026-10-31 22:19:46", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --index 428", "status": "success", "secs": 1.9, "detail": ""}
 {"id": "1793453517798-ff508e", "time": "2026-10-31 22:31:57", "channel": "KO", "source": "PC", "kind": "build_video", "title": "build_video.py --index 428 --channel gonmauY --handle @gonmauY", "status": "success", "secs": 731.5, "detail": ""}
 {"id": "1793453520286-d9f297", "time": "2026-10-31 22:32:00", "channel": "KO", "source": "PC", "kind": "make_thumbnail", "title": "make_thumbnail.py --channel gonmauY --handle @gonmauY --only 428", "status": "success", "secs": 1.8, "detail": ""}
+{"id": "1793453724421-efdd10", "time": "2026-10-31 22:35:24", "channel": "KO", "source": "PC", "kind": "upload_to_youtube", "title": "upload_to_youtube.py --indexes 428 --daily-max 20", "status": "success", "secs": 14.7, "detail": ""}
