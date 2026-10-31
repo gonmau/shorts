@@ -681,6 +681,29 @@ with T6a:
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")
+    with st.expander("🔗 이미 올린 영상을 소재에 직접 연결 (번호 + 영상 주소)"):
+        st.caption("스튜디오에서 직접 올렸거나 제목을 고친 영상을 소재에 이어 줍니다. 연결하면 업로드 대기 목록에서 빠지고 중복 업로드가 막힙니다. 소재에는 업로드 기록(youtube_id)만 추가되고 대본·영상은 그대로입니다.")
+        _mc1, _mc2 = st.columns([1, 3])
+        _mn = _mc1.number_input("소재 번호", 0, 99999, 0, key="mlink_n")
+        _mu = _mc2.text_input("영상 주소 또는 id (예: https://youtu.be/xxxx)", key="mlink_u")
+        if st.button("연결", key="mlink_go", disabled=not _mu.strip()):
+            import re as _re_m
+            _m = _re_m.search(r"(?:youtu\.be/|v=|shorts/|^)([A-Za-z0-9_-]{11})(?:[?&/]|$)", _mu.strip())
+            _dm = _ld()
+            if not _m:
+                st.error("영상 id를 찾지 못했습니다. 주소 전체를 붙여 넣으세요.")
+            elif not (0 <= int(_mn) < len(_dm)):
+                st.error("없는 소재 번호입니다.")
+            else:
+                _o = _dm[int(_mn)]
+                _o["youtube_id"] = _m.group(1)
+                _o["uploaded_manually"] = True
+                _o.setdefault("uploaded_at", time.strftime("%Y-%m-%d"))
+                _o.pop("upload_cleared_ts", None)
+                _sd(_dm)
+                st.session_state["gh_dirty"] = True
+                st.success(f"[{int(_mn)}] {_o.get('country', '')} 에 영상 {_m.group(1)} 을 연결했습니다.")
+                st.rerun()
     with st.expander("🔎 업로드 현황 점검 (삭제된 영상 · 중복 영상)"):
         st.caption("채널(비공개 포함)의 실제 영상 목록과 DB의 업로드 기록을 비교합니다. ① 채널에 없는 영상(삭제됨) ② 채널 안의 중복 영상 ③ 한 영상이 여러 소재에 연결된 경우. 점검만 하고 DB는 바꾸지 않습니다. 영상 삭제는 유튜브 스튜디오에서 직접 하세요.")
         _ck1, _ck2 = st.columns(2)
