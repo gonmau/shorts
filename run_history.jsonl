@@ -725,3 +725,4 @@
 {"id": "1793409713609-5f85fb", "time": "2026-10-31 10:21:53", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1793409715221-341112", "time": "2026-10-31 10:21:55", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 386", "status": "success", "secs": 1.6, "detail": ""}
 {"id": "1793409715716-4011f3", "time": "2026-10-31 10:21:55", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 386 --any", "status": "success", "secs": 0.5, "detail": ""}
+{"id": "1793409827289-190f7b", "time": "2026-10-31 10:23:47", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 388 --scene 8 --source commons --type photo", "status": "success", "secs": 6.0, "detail": ""}
