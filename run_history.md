@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 10:01:01 (KST) · 기록 704건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 10:06:52 (KST) · 기록 708건 · 소재 428개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,20 +8,20 @@
 |---|---|---|---|
 | -c | 12 | 0 | 4분 55초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 31 | 0 | 4초 |
+| apply_review | 32 | 0 | 5초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 18 | 0 | 3시간 10분 |
 | check_uploads | 3 | 0 | 17초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
-| fetch_images | 69 | 1 | 1시간 39분 |
+| fetch_images | 70 | 1 | 1시간 39분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
-| generate_script | 82 | 0 | 1시간 5분 |
+| generate_script | 83 | 0 | 1시간 5분 |
 | generate_tts | 21 | 0 | 8분 54초 |
 | image_check | 42 | 4 | 7분 49초 |
 | make_thumbnail | 3 | 0 | 7초 |
-| promote_ready | 31 | 0 | 4초 |
+| promote_ready | 32 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
 | upload_to_youtube | 6 | 0 | 3분 15초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
@@ -34,6 +34,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:06 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 381 | ✅ | 1초 |  |
+| 10:06 | PC | fetch_images | fetch_images.py --limit 1 --start 381 --any | ✅ | 0초 |  |
+| 10:06 | PC | promote_ready | promote_ready.py --start 381 | ✅ | 0초 |  |
+| 10:06 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 10:00 | PC | image_check | image_check.py --index 400 --fix | ✅ | 15초 |  |
 | 10:00 | PC | image_check | image_check.py --index 399 --fix | ✅ | 56초 |  |
 | 09:59 | PC | image_check | image_check.py --index 398 --fix | ✅ | 0초 |  |
