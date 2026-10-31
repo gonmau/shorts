@@ -39229,7 +39229,7 @@
       "sauna with winter snow",
       "relaxed sauna seating",
       "sauna heat endurance",
-      "family gathering in sauna",
+      "family in sauna",
       "simple sauna interior",
       "tourist experiencing Finnish sauna",
       "family sharing sauna time"
@@ -39244,7 +39244,7 @@
       "sauna with winter snow",
       "relaxed sauna seating",
       "sauna heat endurance",
-      "family gathering in sauna",
+      "family in sauna",
       "simple sauna interior",
       "tourist experiencing Finnish sauna",
       "family sharing sauna time"
@@ -39314,11 +39314,11 @@
       {
         "scene": 9,
         "source": "commons",
-        "user": "Eric Koch for Anefo",
-        "license": "CC0",
-        "title": "In de sauna. Slaan met berkentakken, Bestanddeelnr 920-4683.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:In_de_sauna._Slaan_met_berkentakken,_Bestanddeelnr_920-4683.jpg",
-        "id": "c:66390382"
+        "user": "Maasaak",
+        "license": "CC BY-SA 4.0",
+        "title": "Estonian winter firewood.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Estonian_winter_firewood.jpg",
+        "id": "c:63744986"
       },
       {
         "scene": 10,
@@ -39447,18 +39447,23 @@
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.3221,
+        "verdict": "bad",
+        "clip": 0.1803,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "135ac9442cfd",
-        "at": "2026-10-31 00:22",
+        "sig": "da8ac396d8b3",
+        "at": "2026-10-31 10:13",
         "scene": 9,
         "rejected_ids": [
           10123931,
           7057793,
+          817365,
+          9863851,
+          "c:102278302",
           "c:33449717",
+          "c:3499708",
+          "c:63744986",
           "c:66390382"
         ]
       },
