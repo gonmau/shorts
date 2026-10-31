@@ -4,6 +4,8 @@
  1) 삭제됐거나 없는 영상: DB에는 youtube_id 가 있는데 채널(비공개 포함)에는 없음
  2) 채널 안의 중복 영상: 같은 소재로 보이는 영상이 2개 이상 (제목이 거의 같거나, 같은 소재에 연결됨)
  3) 한 영상 id 가 DB 소재 여러 개에 연결된 경우
+ 4) 채널에는 있는데 DB에 연결 안 된 영상 (DB 소재와 비슷한 것 / 비슷한 소재가 없는 것)
+ 5) DB가 연결한 영상과 내용이 많이 다른 소재 (DB 기록이 틀렸을 가능성)
   python check_uploads.py                  # 점검만 (upload_check.md 저장)
   python check_uploads.py --clear-missing  # 1)의 소재에서 업로드 기록(youtube_id 등)을 지워 '미업로드'로 되돌림
 필요: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (youtube.readonly 권한 포함). 영상 삭제는 유튜브 스튜디오에서 직접 하세요."""
@@ -133,6 +135,41 @@ def main():
     out.append(f"## 3) 한 영상이 여러 소재에 연결된 경우: {len(shared)}개")
     for y, ix in shared.items():
         out.append(f"- https://youtu.be/{y} ← 소재 {', '.join(map(str, ix))}")
+    out.append("")
+
+    have_ids = {f.get("youtube_id") for f in db if f.get("youtube_id")}
+    cand = [(i, f) for i, f in enumerate(db) if f.get("narration")]
+    unl_match, unl_none = [], []
+    for v in vids:
+        if v["id"] in have_ids:
+            continue
+        best, bi = 0.0, None
+        for i, f in cand:
+            sc = score(f, v)[0]
+            if sc > best:
+                best, bi = sc, i
+        (unl_match if (bi is not None and best >= 0.6) else unl_none).append((v, bi, best))
+    out.append(f"## 4) 채널에는 있는데 DB에 연결 안 된 영상: {len(unl_match) + len(unl_none)}개")
+    out.append(f"### 4-1) 내용이 DB 소재와 비슷함 (연결만 안 된 듯, sync_uploads 로 연결 가능): {len(unl_match)}개")
+    for v, bi, sc in sorted(unl_match, key=lambda x: -x[2]):
+        f = db[bi]
+        cur = f" ※ 그 소재는 이미 다른 영상({f['youtube_id']})에 연결됨 → 중복 가능" if f.get("youtube_id") else ""
+        out.append(f"- https://youtu.be/{v['id']} · {PRIV.get(v['privacy'], v['privacy'])} · {v['published'][:10]} · {v['title'][:40]} ≈ DB [{bi}] {f.get('country', '')} {f.get('title_line1', '')} ({sc:.2f}){cur}")
+    out.append(f"### 4-2) 비슷한 DB 소재가 없음 (직접 올린 라이브·옛 영상이거나, DB에서 빠진 소재): {len(unl_none)}개")
+    for v, bi, sc in sorted(unl_none, key=lambda x: x[0]["published"], reverse=True):
+        out.append(f"- https://youtu.be/{v['id']} · {PRIV.get(v['privacy'], v['privacy'])} · {v['published'][:10]} · {v['title'][:50]}")
+    out.append("")
+
+    bad = []
+    for i, f in enumerate(db):
+        v = by_id.get(f.get("youtube_id"))
+        if v and f.get("narration"):
+            sc = score(f, v)[0]
+            if sc < 0.5:
+                bad.append((i, f, v, sc))
+    out.append(f"## 5) DB가 연결한 영상과 내용이 많이 다른 소재 (DB 기록이 틀렸을 수 있음): {len(bad)}개")
+    for i, f, v, sc in sorted(bad, key=lambda x: x[3]):
+        out.append(f"- DB [{i}] {f.get('country', '')} {f.get('title_line1', '')} {f.get('title_line2', '')} ↔ https://youtu.be/{v['id']} 「{v['title'][:40]}」 ({sc:.2f})")
     out.append("")
 
     if a.clear_missing and missing:
