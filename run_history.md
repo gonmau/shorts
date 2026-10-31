@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 01:29:27 (KST) · 기록 841건 · 소재 436개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 01:30:20 (KST) · 기록 843건 · 소재 436개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | apply_review | 39 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 38 | 0 | 6시간 54분 |
-| check_uploads | 18 | 0 | 1분 44초 |
+| check_uploads | 19 | 0 | 1분 51초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
@@ -27,7 +27,7 @@
 | upload_to_youtube | 8 | 0 | 7분 24초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 100 | 6 | 12시간 17분 |
-| 코드업데이트 | 37 | 0 | 0초 |
+| 코드업데이트 | 38 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -35,6 +35,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 01:30 | PC | check_uploads | check_uploads.py | ✅ | 6초 |  |
+| 01:29 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, upload_to_youtube.py) | ✅ |  |  |
 | 01:22 | Actions | 롱폼 | culture-longform #13 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/41217445361 |
 | 00:39 | Actions | 쇼츠 | culture-shorts-pipeline #106 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/41213407859 |
 
