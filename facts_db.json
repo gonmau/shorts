@@ -40581,7 +40581,7 @@
       "winning without scoring",
       "fencing protective gear",
       "facial fencing injury",
-      "scar as honor",
+      "scar",
       "old honor scar",
       "German student fencing",
       "universal student tradition",
@@ -40596,7 +40596,7 @@
       "winning without scoring",
       "fencing protective gear",
       "facial fencing injury",
-      "scar as honor",
+      "scar",
       "old honor scar",
       "German student fencing",
       "universal student tradition",
@@ -40655,12 +40655,10 @@
       },
       {
         "scene": 7,
-        "source": "commons",
-        "user": "Sgt. Ken Scar",
-        "license": "Public domain",
-        "title": "Toast to Honor in Section 60 150722-A-ZU930-021.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Toast_to_Honor_in_Section_60_150722-A-ZU930-021.jpg",
-        "id": "c:58028934"
+        "source": "pixabay",
+        "user": "MabelAmber",
+        "page": "https://pixabay.com/photos/tree-trunk-tree-trunk-bark-scar-3122001/",
+        "id": 3122001
       },
       {
         "scene": 8,
@@ -40785,13 +40783,13 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.2127,
+        "verdict": "ok",
+        "clip": 0.2272,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d13f72281d8a",
-        "at": "2026-10-31 09:56",
+        "sig": "ceeda7969453",
+        "at": "2026-10-31 10:24",
         "scene": 7,
         "rejected_ids": [
           2528659,
