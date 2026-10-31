@@ -39224,7 +39224,7 @@
       "person sweating in sauna",
       "Finnish sauna lifestyle recognition",
       "home sauna interior",
-      "people in public sauna",
+      "people in sauna",
       "stepping out of sauna",
       "sauna with winter snow",
       "relaxed sauna seating",
@@ -39239,7 +39239,7 @@
       "person sweating in sauna",
       "Finnish sauna lifestyle recognition",
       "home sauna interior",
-      "people in public sauna",
+      "people in sauna",
       "stepping out of sauna",
       "sauna with winter snow",
       "relaxed sauna seating",
@@ -39274,11 +39274,12 @@
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "Surprising_Media",
-        "page": "https://pixabay.com/photos/mannequins-uniforms-exhibition-8893950/",
-        "id": 8893950,
-        "type": "photo"
+        "source": "commons",
+        "user": "Gart Dale",
+        "license": "CC0",
+        "title": "Nude woman in the sauna.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nude_woman_in_the_sauna.jpg",
+        "id": "c:182952963"
       },
       {
         "scene": 5,
@@ -39383,12 +39384,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3134,
+        "clip": 0.3124,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "af344c35bbde",
-        "at": "2026-10-31 00:22",
+        "sig": "a03d1c09de05",
+        "at": "2026-10-31 10:14",
         "scene": 4,
         "rejected_ids": [
           8893950,
