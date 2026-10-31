@@ -38929,11 +38929,12 @@
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "dimitrisvetsikas1969",
-        "page": "https://pixabay.com/photos/statue-sculpture-politician-4229821/",
-        "id": 4229821,
-        "type": "photo"
+        "source": "commons",
+        "user": "Queen Asali",
+        "license": "CC BY 4.0",
+        "title": "Chief Justice Martha K. Koome and Deputy Chief Justice Philomena Mwilu.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Chief_Justice_Martha_K._Koome_and_Deputy_Chief_Justice_Philomena_Mwilu.jpg",
+        "id": "c:145236616"
       },
       {
         "scene": 5,
@@ -39029,30 +39030,38 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "93071384ad69",
+        "sig": "be481cf50b41",
         "at": "2026-10-31 00:20",
         "scene": 3,
         "rejected_ids": [
           5653215,
+          6765415,
           7243404,
           7486911,
+          8030286,
+          "c:141541459",
+          "c:145236616",
           "c:179637877",
           "c:179637878"
         ]
       },
       {
         "verdict": "bad",
-        "clip": 0.1903,
+        "clip": 0.2006,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6424263f84e2",
-        "at": "2026-10-31 00:21",
+        "sig": "88429a65a0ff",
+        "at": "2026-10-31 09:54",
         "scene": 4,
         "rejected_ids": [
+          1703330,
           3601909,
+          410328,
           4229821,
           63039,
+          "c:141541459",
+          "c:145236616",
           "c:179637877",
           "c:179637878"
         ]
@@ -39481,15 +39490,19 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "40126c2a516a",
+        "sig": "414755b5b5f0",
         "at": "2026-10-31 00:22",
         "scene": 12,
         "rejected_ids": [
+          10157042,
+          3100647,
           3365336,
           7031077,
           7057793,
           "c:170343627",
-          "c:170343633"
+          "c:170343633",
+          "c:33449717",
+          "c:3499708"
         ]
       }
     ]
@@ -39629,12 +39642,11 @@
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "Zoltan Kluger / Adam Cuerden",
-        "license": "Public domain",
-        "title": "A Bukharan dance performed by members of the Rina Nikova ballet in the citadel of Jerusale",
-        "page": "https://commons.wikimedia.org/wiki/File:A_Bukharan_dance_performed_by_members_of_the_Rina_Nikova_ballet_in_the_citadel_of_Jerusalem_-_Restoration.jpg",
-        "id": "c:118416407"
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
+        "id": 1149289,
+        "type": "photo"
       },
       {
         "scene": 9,
@@ -39761,18 +39773,22 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1924,
+        "clip": 0.2092,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7e681782fbb2",
-        "at": "2026-10-31 00:23",
+        "sig": "2b7b613bf544",
+        "at": "2026-10-31 09:54",
         "scene": 8,
         "rejected_ids": [
+          1149289,
+          1828079,
           8783358,
           8800553,
           "c:118416407",
           "c:148930426",
+          "c:150658479",
+          "c:69726173",
           "c:83265466"
         ]
       },
@@ -40309,9 +40325,9 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "JillWellington",
-        "page": "https://pixabay.com/photos/tea-tea-time-girl-woman-556777/",
-        "id": 556777,
+        "user": "pixel2013",
+        "page": "https://pixabay.com/photos/streamer-carnival-party-2080466/",
+        "id": 2080466,
         "type": "photo"
       },
       {
@@ -40440,17 +40456,21 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1567,
+        "clip": 0.2,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d41a5b1b6aee",
-        "at": "2026-10-31 00:26",
+        "sig": "9d06c89efdd2",
+        "at": "2026-10-31 09:55",
         "scene": 8,
         "rejected_ids": [
+          2080466,
+          2500036,
           407081,
           556777,
           "c:33628662",
+          "c:33628663",
+          "c:33628664",
           "c:33628666",
           "c:33628668"
         ]
@@ -40623,19 +40643,19 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "silviarita",
-        "page": "https://pixabay.com/photos/woman-beauty-spa-wellness-portrait-3141766/",
-        "id": 3141766,
+        "user": "OlyaLole",
+        "page": "https://pixabay.com/photos/spa-woman-facial-beauty-salon-4481538/",
+        "id": 4481538,
         "type": "photo"
       },
       {
         "scene": 7,
         "source": "commons",
-        "user": "U.S. Army photo by Trish Harris, USASOC News Service",
+        "user": "Sgt. Ken Scar",
         "license": "Public domain",
-        "title": "1stbat75thregSCAR.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:1stbat75thregSCAR.jpg",
-        "id": "c:6891672"
+        "title": "Toast to Honor in Section 60 150722-A-ZU930-021.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Toast_to_Honor_in_Section_60_150722-A-ZU930-021.jpg",
+        "id": "c:58028934"
       },
       {
         "scene": 8,
@@ -40742,16 +40762,17 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2197,
+        "verdict": "ok",
+        "clip": 0.2441,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f1afe2f1f439",
-        "at": "2026-10-31 00:28",
+        "sig": "6dfbe4c39275",
+        "at": "2026-10-31 09:55",
         "scene": 6,
         "rejected_ids": [
           3141766,
+          4481538,
           709045,
           "c:18582036",
           "c:945652"
@@ -40759,17 +40780,21 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1951,
+        "clip": 0.2127,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "3b5ea2cfa404",
-        "at": "2026-10-31 00:28",
+        "sig": "d13f72281d8a",
+        "at": "2026-10-31 09:56",
         "scene": 7,
         "rejected_ids": [
+          2528659,
           3122001,
+          3287180,
           67636,
+          "c:41239575",
           "c:48390206",
+          "c:58028934",
           "c:6891672",
           "c:88090371"
         ]
@@ -40816,15 +40841,19 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ca8991ea2c79",
+        "sig": "cacf040b6919",
         "at": "2026-10-31 00:29",
         "scene": 11,
         "rejected_ids": [
           10402213,
+          3206530,
           5310799,
+          8537549,
           "c:128068528",
           "c:162862693",
-          "c:35678395"
+          "c:18582036",
+          "c:35678395",
+          "c:945652"
         ]
       },
       {
@@ -40937,10 +40966,12 @@
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "Myriams-Fotos",
-        "page": "https://pixabay.com/photos/sandwich-bread-poverty-homeless-5549852/",
-        "id": 5549852
+        "source": "commons",
+        "user": "Jennifer Woodard Maderazo from Barcelona, Spain",
+        "license": "CC BY 2.0",
+        "title": "Mooncakes (1434690236).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mooncakes_(1434690236).jpg",
+        "id": "c:89336537"
       },
       {
         "scene": 4,
@@ -41034,20 +41065,21 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1926,
+        "verdict": "ok",
+        "clip": 0.2832,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d0ec2ffe6110",
-        "at": "2026-10-31 00:29",
+        "sig": "e71d7c74e06e",
+        "at": "2026-10-31 09:56",
         "scene": 3,
         "rejected_ids": [
           10363974,
           1867429,
           5549852,
           "c:127976569",
-          "c:1297630"
+          "c:1297630",
+          "c:89336537"
         ]
       },
       {
@@ -41287,12 +41319,11 @@
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "Timofeytv",
-        "license": "CC BY-SA 4.0",
-        "title": "Lobsang, Nyandak, Tibetan Lunar New Year Losar 2147, New York, Tibet Fund.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Lobsang,_Nyandak,_Tibetan_Lunar_New_Year_Losar_2147,_New_York,_Tibet_Fund.jpg",
-        "id": "c:87751280"
+        "source": "pixabay",
+        "user": "buffetcrush",
+        "page": "https://pixabay.com/photos/christmas-wallpaper-platter-food-2009590/",
+        "id": 2009590,
+        "type": "photo"
       },
       {
         "scene": 9,
@@ -41412,15 +41443,16 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2164,
+        "verdict": "ok",
+        "clip": 0.2372,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "db513f24ded9",
-        "at": "2026-10-31 00:31",
+        "sig": "4dfd89c75ade",
+        "at": "2026-10-31 09:56",
         "scene": 8,
         "rejected_ids": [
+          2009590,
           2725141,
           2725142,
           "c:87751280",
@@ -41434,15 +41466,19 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f1f7f60fd6d1",
+        "sig": "ccf711e8a3b7",
         "at": "2026-10-31 00:30",
         "scene": 9,
         "rejected_ids": [
           10022443,
+          10463655,
+          1172463,
           4650074,
           4704971,
+          "c:115268263",
           "c:51659686",
-          "c:63887079"
+          "c:63887079",
+          "c:69658901"
         ]
       },
       {
@@ -41451,14 +41487,18 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "824161e7ca75",
+        "sig": "78f53da1d905",
         "at": "2026-10-31 00:31",
         "scene": 10,
         "rejected_ids": [
+          371238,
           8387276,
           8802107,
+          974271,
+          "c:123872720",
           "c:87751280",
           "c:87751488",
+          "c:92849664",
           "c:94174831"
         ]
       },
@@ -41623,11 +41663,11 @@
       {
         "scene": 8,
         "source": "commons",
-        "user": "Rob Croes for Anefo",
-        "license": "CC0",
-        "title": "Norodom Sihanouk (1983).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_(1983).jpg",
-        "id": "c:27509079"
+        "user": "The Royal Palace of Cambodia",
+        "license": "Public domain",
+        "title": "Norodom Sihanouk coronation colourized.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_coronation_colourized.jpg",
+        "id": "c:177243048"
       },
       {
         "scene": 9,
@@ -41749,18 +41789,22 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1958,
+        "clip": 0.2175,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d8771bedc6dc",
-        "at": "2026-10-31 00:32",
+        "sig": "ae2cc5c82405",
+        "at": "2026-10-31 09:57",
         "scene": 8,
         "rejected_ids": [
           6129239,
           7289494,
           8573441,
+          8799824,
+          8808978,
           "c:168035001",
+          "c:177243048",
+          "c:182985837",
           "c:27509079"
         ]
       },
@@ -42237,9 +42281,9 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "705847",
-        "page": "https://pixabay.com/photos/tea-light-lamp-lantern-candle-639489/",
-        "id": 639489,
+        "user": "millionhope",
+        "page": "https://pixabay.com/photos/stars-lantern-ice-skates-fir-tree-5847758/",
+        "id": 5847758,
         "type": "photo"
       },
       {
@@ -42353,18 +42397,20 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.2172,
+        "verdict": "ok",
+        "clip": 0.2309,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8178c24ec42d",
-        "at": "2026-10-31 00:34",
+        "sig": "47e790fa08ab",
+        "at": "2026-10-31 09:58",
         "scene": 5,
         "rejected_ids": [
           4006343,
+          5847758,
           639489,
           "c:105370275",
+          "c:183771436",
           "c:32754",
           "c:65642131"
         ]
@@ -42577,11 +42623,12 @@
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "panoramix11",
-        "page": "https://pixabay.com/photos/architecture-dome-mosque-building-5613376/",
-        "id": 5613376,
-        "type": "photo"
+        "source": "commons",
+        "user": "N509FZ",
+        "license": "CC BY-SA 4.0",
+        "title": "National Administration of Financial Regulation (20230628183842).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:National_Administration_of_Financial_Regulation_(20230628183842).jpg",
+        "id": "c:133704944"
       },
       {
         "scene": 6,
@@ -42689,18 +42736,19 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.2089,
+        "verdict": "ok",
+        "clip": 0.2457,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6a1a9140b8ef",
-        "at": "2026-10-31 00:35",
+        "sig": "958f572e1972",
+        "at": "2026-10-31 09:58",
         "scene": 5,
         "rejected_ids": [
           2857982,
           5613376,
           7130382,
+          "c:133704944",
           "c:138603234",
           "c:192581113"
         ]
@@ -42884,11 +42932,11 @@
       {
         "scene": 2,
         "source": "commons",
-        "user": "Nahid Sultan",
-        "license": "CC BY-SA 4.0",
-        "title": "Bengal-ITC SRA Classical Music Festival 2016.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Bengal-ITC_SRA_Classical_Music_Festival_2016.jpg",
-        "id": "c:63300400"
+        "user": "Karen Blaha from Charlottesville, VA",
+        "license": "CC BY-SA 2.0",
+        "title": "An Indian classical music performance.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:An_Indian_classical_music_performance.jpg",
+        "id": "c:54162938"
       },
       {
         "scene": 3,
@@ -42982,19 +43030,21 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2107,
+        "verdict": "ok",
+        "clip": 0.3124,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "21e5e3e48400",
-        "at": "2026-10-31 00:37",
+        "sig": "8fa1e5cc5e75",
+        "at": "2026-10-31 09:58",
         "scene": 2,
         "rejected_ids": [
           2385378,
           5782695,
+          6367607,
           "c:12156431",
           "c:2227785",
+          "c:54162938",
           "c:63300400"
         ]
       },
@@ -43223,11 +43273,11 @@
       {
         "scene": 3,
         "source": "commons",
-        "user": "Charles J. Sharp",
-        "license": "CC BY-SA 4.0",
-        "title": "Ring-tailed lemur (Lemur catta).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
-        "id": "c:75870154"
+        "user": "Richard Bartz , Munich aka Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "title": "Katta Lemur catta.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Katta_Lemur_catta.jpg",
+        "id": "c:3682929"
       },
       {
         "scene": 4,
@@ -43340,19 +43390,21 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.1605,
+        "verdict": "ok",
+        "clip": 0.2473,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b0bbaa9d98ec",
-        "at": "2026-10-31 00:39",
+        "sig": "fcb86c4cf84a",
+        "at": "2026-10-31 09:59",
         "scene": 3,
         "rejected_ids": [
           4098058,
+          614141,
           7024125,
           8257177,
           "c:128540175",
+          "c:3682929",
           "c:75870154"
         ]
       },
@@ -43588,9 +43640,9 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Alexas_Fotos",
-        "page": "https://pixabay.com/photos/pumpkin-orange-green-variety-10470647/",
-        "id": 10470647,
+        "user": "Sjnk",
+        "page": "https://pixabay.com/photos/tartlets-desserts-petit-fours-5775346/",
+        "id": 5775346,
         "type": "photo"
       },
       {
@@ -43621,9 +43673,9 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "aglaya3",
-        "page": "https://pixabay.com/photos/portuguese-custard-tarts-7051327/",
-        "id": 7051327,
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/tea-tea-time-girl-woman-556777/",
+        "id": 556777,
         "type": "photo"
       },
       {
@@ -43700,18 +43752,20 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1987,
+        "verdict": "ok",
+        "clip": 0.2515,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ae204673cec0",
-        "at": "2026-10-31 00:41",
+        "sig": "b44e7a31cd5f",
+        "at": "2026-10-31 09:59",
         "scene": 4,
         "rejected_ids": [
           10470647,
           2125691,
+          5775346,
           "c:185376907",
+          "c:185377001",
           "c:191340624",
           "c:40347042"
         ]
@@ -43763,19 +43817,23 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1639,
+        "clip": 0.1885,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "409826136f2c",
-        "at": "2026-10-31 00:42",
+        "sig": "a05f82b77b1b",
+        "at": "2026-10-31 09:59",
         "scene": 8,
         "rejected_ids": [
+          556777,
           7051327,
+          7091494,
           7576019,
+          "c:145769935",
           "c:15570483",
           "c:72605228",
-          "c:81342860"
+          "c:81342860",
+          "c:93133102"
         ]
       },
       {
@@ -44222,9 +44280,9 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "bayarts7",
-        "page": "https://pixabay.com/photos/bride-dress-muslim-culture-10427763/",
-        "id": 10427763,
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/girls-asia-kimono-geishas-ceremony-1822521/",
+        "id": 1822521,
         "type": "photo"
       },
       {
@@ -44237,9 +44295,9 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "wilhei",
-        "page": "https://pixabay.com/photos/laundry-dry-hang-clothesline-963150/",
-        "id": 963150,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/cabinet-clothes-garments-wardrobe-1853504/",
+        "id": 1853504,
         "type": "photo"
       },
       {
@@ -44267,9 +44325,10 @@
       {
         "scene": 9,
         "source": "pixabay",
-        "user": "summerstock",
-        "page": "https://pixabay.com/photos/young-woman-beach-dress-white-dress-1745173/",
-        "id": 1745173
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/exhibition-museum-gallery-art-8431913/",
+        "id": 8431913,
+        "type": "photo"
       },
       {
         "scene": 10,
@@ -44281,16 +44340,17 @@
       {
         "scene": 11,
         "source": "pixabay",
-        "user": "anaterate",
-        "page": "https://pixabay.com/photos/woman-teenager-stone-stairway-teen-7858552/",
-        "id": 7858552
+        "user": "nithinclicks",
+        "page": "https://pixabay.com/photos/face-people-expression-emotion-7218927/",
+        "id": 7218927,
+        "type": "photo"
       },
       {
         "scene": 12,
         "source": "pixabay",
-        "user": "ahmetyuksek",
-        "page": "https://pixabay.com/photos/tranquil-scene-traditional-attire-9913086/",
-        "id": 9913086,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/stars-sky-night-starry-sky-1837306/",
+        "id": 1837306,
         "type": "photo"
       }
     ],
@@ -44308,18 +44368,19 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1984,
+        "verdict": "ok",
+        "clip": 0.2362,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6813b4957f16",
-        "at": "2026-10-31 00:49",
+        "sig": "b74411a61980",
+        "at": "2026-10-31 10:00",
         "scene": 2,
         "rejected_ids": [
           10427763,
           10499067,
-          1822488
+          1822488,
+          1822521
         ]
       },
       {
@@ -44334,15 +44395,16 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2101,
+        "verdict": "ok",
+        "clip": 0.2338,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "bb0f99e8710d",
-        "at": "2026-10-31 00:49",
+        "sig": "e61b49d6d15e",
+        "at": "2026-10-31 10:00",
         "scene": 4,
         "rejected_ids": [
+          1853504,
           218801,
           5963960,
           963150
@@ -44386,17 +44448,19 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.153,
+        "clip": 0.213,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "5a308274e319",
-        "at": "2026-10-31 00:49",
+        "sig": "91ad6db8ce23",
+        "at": "2026-10-31 10:00",
         "scene": 9,
         "rejected_ids": [
           10258345,
+          1283009,
           1745173,
-          559307
+          559307,
+          8431913
         ]
       },
       {
@@ -44411,15 +44475,16 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2197,
+        "verdict": "ok",
+        "clip": 0.2245,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9562e0ed6882",
-        "at": "2026-10-31 00:49",
+        "sig": "2ab21093f06f",
+        "at": "2026-10-31 10:00",
         "scene": 11,
         "rejected_ids": [
+          7218927,
           7236356,
           7858552,
           7858764
@@ -44427,16 +44492,18 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1924,
+        "clip": 0.2129,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "feca6f4903b9",
-        "at": "2026-10-31 00:50",
+        "sig": "706706099aec",
+        "at": "2026-10-31 10:00",
         "scene": 12,
         "rejected_ids": [
           10075296,
           1619740,
+          1837306,
+          3062248,
           9913086
         ]
       }
@@ -44575,9 +44642,10 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/board-game-checkmate-chess-1846400/",
-        "id": 1846400
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/goose-game-dice-board-competition-2806291/",
+        "id": 2806291,
+        "type": "photo"
       },
       {
         "scene": 9,
@@ -44707,16 +44775,17 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.2168,
+        "verdict": "ok",
+        "clip": 0.2663,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "e973a2250fd4",
-        "at": "2026-10-31 00:51",
+        "sig": "b04b330b19c4",
+        "at": "2026-10-31 10:00",
         "scene": 8,
         "rejected_ids": [
           1846400,
+          2806291,
           5296407,
           5312406,
           "c:142429395",
