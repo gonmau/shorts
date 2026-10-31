@@ -39384,12 +39384,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.265,
+        "clip": 0.269,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "4d03d92d18b8",
-        "at": "2026-10-31 10:15",
+        "sig": "a6e611b89a08",
+        "at": "2026-10-31 10:16",
         "scene": 4,
         "rejected_ids": [
           8893950,
