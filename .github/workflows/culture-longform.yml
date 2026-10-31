@@ -33,7 +33,7 @@ on:
         default: "6"
       start_index:
         description: "auto일 때 이 번호 이상만 후보"
-        default: "106"
+        default: "0"
       title:
         description: "롱폼 제목 (비우면 자동)"
         default: ""
@@ -127,7 +127,7 @@ jobs:
       INDEXES: ${{ github.event.inputs.indexes || '' }}
       THEME: ${{ github.event.inputs.theme || '' }}
       COUNT: ${{ github.event.inputs.count || '6' }}
-      START: ${{ github.event.inputs.start_index || '106' }}
+      START: ${{ github.event.inputs.start_index || '0' }}
       TITLE: ${{ github.event.inputs.title || '' }}
       PICK: ${{ github.event.inputs.pick || '' }}
       PREVIEW: ${{ github.event.inputs.preview || '' }}

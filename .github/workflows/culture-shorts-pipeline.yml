@@ -40,7 +40,7 @@ on:
         default: "3"
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
-        default: "106"
+        default: "0"
       auto_verify:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
@@ -87,7 +87,7 @@ jobs:
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}
       COUNT: ${{ github.event.inputs.count || '3' }}
-      START: ${{ github.event.inputs.start_index || '106' }}
+      START: ${{ github.event.inputs.start_index || '0' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
       CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
@@ -268,7 +268,7 @@ jobs:
           JOB_STATUS: ${{ job.status }}
           ART_URL: ${{ steps.art.outputs.artifact-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          START: ${{ github.event.inputs.start_index || '106' }}
+          START: ${{ github.event.inputs.start_index || '0' }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/review.txt
         run: python notify_discord.py
 
