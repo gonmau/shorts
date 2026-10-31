@@ -831,3 +831,8 @@
 {"id": "1793452726054-17d1d3", "time": "2026-10-31 22:18:46", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 0", "status": "success", "secs": 0.1, "detail": ""}
 {"id": "1793452726190-ccd888", "time": "2026-10-31 22:18:46", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.1, "detail": ""}
 {"id": "1793452748321-d2b8d2", "time": "2026-10-31 22:19:08", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 428", "status": "success", "secs": 22.1, "detail": ""}
+{"id": "1793452784326-2882bc", "time": "2026-10-31 22:19:44", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 0", "status": "success", "secs": 0.1, "detail": ""}
+{"id": "1793452784462-2b6de9", "time": "2026-10-31 22:19:44", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.1, "detail": ""}
+{"id": "1793452786314-5511a3", "time": "2026-10-31 22:19:46", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --index 428", "status": "success", "secs": 1.9, "detail": ""}
+{"id": "1793453517798-ff508e", "time": "2026-10-31 22:31:57", "channel": "KO", "source": "PC", "kind": "build_video", "title": "build_video.py --index 428 --channel gonmauY --handle @gonmauY", "status": "success", "secs": 731.5, "detail": ""}
+{"id": "1793453520286-d9f297", "time": "2026-10-31 22:32:00", "channel": "KO", "source": "PC", "kind": "make_thumbnail", "title": "make_thumbnail.py --channel gonmauY --handle @gonmauY --only 428", "status": "success", "secs": 1.8, "detail": ""}
