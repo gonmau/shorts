@@ -2396,9 +2396,6 @@
     "status_tts_v2": "done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0017_Spain_v6.mp4",
     "status_v6": "video_done",
-    "youtube_id": "UTbi5gKV4Hc",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-09",
     "title_line1": "스페인 토마토전쟁",
     "title_line2": "1시간만 전투?",
     "highlights": [
@@ -2472,7 +2469,8 @@
       }
     ],
     "image_source": "pixabay",
-    "reject_reason": "중복 소재"
+    "reject_reason": "중복 소재",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "South Africa",
@@ -2990,9 +2988,6 @@
     "status_v5": "video_done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0020_Bhutan_v6.mp4",
     "status_v6": "video_done",
-    "youtube_id": "PWPnkTwabsw",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28",
     "title_line1": "부탄, 담배 금지",
     "title_line2": "벌금은 바로 10만",
     "highlights": [
@@ -3216,7 +3211,8 @@
         "rejected_ids": []
       }
     ],
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "France",
@@ -3542,10 +3538,8 @@
     "status_v5": "video_done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0027_Thailand_v6.mp4",
     "status_v6": "video_done",
-    "youtube_id": "ulUpBFJPA7k",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Norway",
@@ -3580,10 +3574,8 @@
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0029_Mexico_v5.mp4",
     "status_v5": "video_done",
     "status_v6": "video_done",
-    "youtube_id": "uC0UARI6b8Q",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-24",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Georgia",
@@ -3603,10 +3595,8 @@
     "status_v5": "video_done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0030_Georgia_v6.mp4",
     "status_v6": "video_done",
-    "youtube_id": "FA9DJ0DcOwg",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Kenya",
@@ -3665,10 +3655,8 @@
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0033_Greece_v5.mp4",
     "status_v5": "video_done",
     "status_v6": "video_done",
-    "youtube_id": "ntZiC-P5GIw",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Ireland",
@@ -3687,10 +3675,8 @@
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0034_Ireland_v5.mp4",
     "status_v5": "video_done",
     "status_v6": "video_done",
-    "youtube_id": "lSh5c1-QL6M",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Ghana",
@@ -5395,10 +5381,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "youtube_id": "19OI04I25x4",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Czech Republic",
@@ -5602,10 +5586,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "youtube_id": "0HYEW4jcraM",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Finland",
@@ -5698,10 +5680,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "youtube_id": "-vtkT3qolUo",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Iceland",
@@ -8409,10 +8389,8 @@
       "Garden compost bin",
       "Japanese kitchen waste separation"
     ],
-    "youtube_id": "Ty7Bu3N7x0k",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-11",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Finland",
@@ -10058,9 +10036,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.mp4",
     "status_v6": "video_done",
-    "youtube_id": "iCAJ0X9FiK4",
-    "uploaded_at": "2026-10-30T17:52:33.415987+09:00",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Japan",
@@ -11814,9 +11791,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0124_Brazil.mp4",
     "status_v6": "video_done",
-    "youtube_id": "sePxiTFowT0",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Sweden",
@@ -13042,9 +13017,6 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0139_Finland.mp4",
     "status_v6": "video_done",
-    "youtube_id": "kzSNV77j6RY",
-    "youtube_privacy": "private",
-    "uploaded_at": "2026-10-11",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_model": "openai/gpt-oss-120b",
@@ -13053,7 +13025,8 @@
       "[unsupported] 8번 문장: No specific evidence that the beer‑weight rule applies only to the official Sonkajärvi event"
     ],
     "cross_verdict": "contradicted",
-    "reject_reason": "중복 소재"
+    "reject_reason": "중복 소재",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "Netherlands",
@@ -24114,9 +24087,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.mp4",
     "status_v6": "video_done",
-    "youtube_id": "UCozNTUEuDY",
-    "uploaded_at": "2026-10-30T17:54:06.628603+09:00",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
@@ -25077,9 +25049,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0301_볼리비아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0301_볼리비아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "EobrEXIPFQI",
-    "uploaded_at": "2026-10-30T20:08:37.261442+09:00",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "미국 출신 교황, 남미에서 사역",
@@ -26277,9 +26248,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0309_에스토니아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0309_에스토니아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "26G-Myhsm2A",
-    "uploaded_at": "2026-10-30T20:08:54.871502+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "부활절 월요일에 물을 뿌리는 폴란드 전통",
@@ -26955,9 +26924,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0312_남아프리카공화국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0312_남아프리카공화국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "GYYkiufH__I",
-    "uploaded_at": "2026-10-30T20:09:15.937892+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "과테말라(Guatemala) 민속 가톨릭(Folk Catholicism)의 독특한 의식",
@@ -27376,9 +27343,8 @@
     "status_tts_v2": "done",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0315_스페인.mp4",
     "status_v6": "video_done",
-    "youtube_id": "x2BkgquAM_c",
-    "uploaded_at": "2026-10-29T10:41:59.270896+09:00",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "오본(Obon) – 조상 영혼이 찾아오는 가족 재회 축제",
@@ -28159,9 +28125,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0320_말레이시아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0320_말레이시아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "bHyYBHq65Ns",
-    "uploaded_at": "2026-10-30T01:19:20.689352+09:00",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "country": "라오스 (Laos)",
@@ -28920,9 +28885,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0323_이란.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0323_이란.mp4",
     "status_v6": "video_done",
-    "youtube_id": "igPwqIU2LrE",
-    "uploaded_at": "2026-10-30T20:09:46.562094+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "아담 시옹올리, 9·11 직후 법무부 고문",
@@ -30342,9 +30305,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0330_독일.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0330_독일.mp4",
     "status_v6": "video_done",
-    "youtube_id": "FA1w0ceZ8nI",
-    "uploaded_at": "2026-10-30T20:10:49.839238+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "Durga Puja(두르가 푸자)의 유네스코 등재",
@@ -33115,9 +33076,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0341_카자흐스탄.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0341_카자흐스탄.mp4",
     "status_v6": "video_done",
-    "youtube_id": "nej0aA4NAvU",
-    "uploaded_at": "2026-10-31T01:24:58.991091+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "의료 과실의 필수 조건",
@@ -33460,9 +33419,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0342_뉴질랜드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0342_뉴질랜드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "jYXEd0xBm6Y",
-    "uploaded_at": "2026-10-31T01:25:01.093209+09:00",
-    "youtube_privacy": "private"
+    "upload_cleared_ts": 1793447186.7764242
   },
   {
     "topic": "오악사카의 전통 축제 Guelaguetza(게울라게차)",
