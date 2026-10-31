@@ -137,6 +137,23 @@ def merge_item(g, l, side, prefer):
                 out[k] = win[k]
             else:
                 out.pop(k, None)
+    # 업로드 기록 삭제 표시: 더 최근에 업로드 기록을 지운 쪽을 따른다 (안 그러면 상대쪽의 옛 youtube_id 가 되살아남).
+    # 단, 지운 뒤에 상대쪽에서 새로 업로드한 기록(uploaded_at 이 더 늦음)이 있으면 그 업로드를 지키기 위해 건드리지 않는다.
+    gc, lc = float(g.get("upload_cleared_ts") or 0), float(l.get("upload_cleared_ts") or 0)
+    if gc != lc:
+        win, lose, wts = (l, g, lc) if lc > gc else (g, l, gc)
+        try:
+            from datetime import datetime as _dt
+            ua = str(lose.get("uploaded_at") or "")
+            newer_upload = "T" in ua and _dt.fromisoformat(ua).timestamp() > wts
+        except Exception:
+            newer_upload = False
+        if not newer_upload:
+            for k in ("upload_cleared_ts", "youtube_id", "youtube_privacy", "uploaded_at", "uploaded_manually", "publish_at"):
+                if k in win:
+                    out[k] = win[k]
+                else:
+                    out.pop(k, None)
     if out.get("status") != "rejected":
         out.pop("reject_reason", None)
     # 상태 일관성: 영상이 끝난 쪽의 status_v6 가 이겼는데 status 가 뒤처지면 맞춘다

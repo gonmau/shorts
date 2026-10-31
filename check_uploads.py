@@ -173,9 +173,11 @@ def main():
     out.append("")
 
     if a.clear_missing and missing:
+        import time as _t
         for _i, f in missing:
             for k in UP_KEYS:
                 f.pop(k, None)
+            f["upload_cleared_ts"] = _t.time()     # sync_db 가 GitHub의 옛 youtube_id 로 되돌리지 못하게 하는 표시
         DB.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
         out.append(f"✔ 채널에 없는 영상 {len(missing)}개의 업로드 기록을 지워 '미업로드'로 되돌렸습니다.")
     elif missing:

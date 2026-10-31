@@ -7,6 +7,7 @@
 - 영상 파일과 유튜브 영상은 건드리지 않습니다."""
 import json
 import os
+import time
 from pathlib import Path
 
 UP_KEYS = ("youtube_id", "youtube_privacy", "uploaded_at", "uploaded_manually", "publish_at")
@@ -77,6 +78,7 @@ def apply_plan(db, groups, keeps, reject=True):
             f = db[i]
             for k in UP_KEYS:
                 f.pop(k, None)
+            f["upload_cleared_ts"] = time.time()   # sync_db 가 GitHub의 옛 youtube_id 로 되돌리지 못하게 하는 표시
             if reject:
                 f["status"] = "rejected"
                 f["reject_reason"] = f"중복 소재 (영상 {g['id']} 은 [{keep}] 소재와 연결)"
