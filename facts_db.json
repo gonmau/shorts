@@ -45901,7 +45901,7 @@
     "twist": "일본에서는 첫 주문보다 첫 접시가 먼저 계산을 시작할 수도 있는 거죠.",
     "caveat": "",
     "narration": "주문하지도 않은 반찬이 나왔는데, 계산서에는 돈이 붙어 있다면 어떨까요? 일본 이자카야에서는 이런 일이 생길 수 있습니다. 자리에 앉으면 작은 음식이 먼저 나오는 경우가 있는데요. 이것을 오토시라고 부릅니다. 한국 식당의 기본 반찬을 생각하면 무료라고 느끼기 쉽죠. 하지만 오토시는 보통 자리 요금 성격을 가진 유료 음식입니다. 주문한 요리가 나오기 전에 간단히 먹을 수 있도록 제공되는 거예요. 그렇다고 일본의 모든 식당이 이런 방식을 쓰는 건 아닙니다. 가게마다 운영 방식이 다르니, 메뉴나 안내문을 확인하면 좋습니다. 헷갈린다면 먹기 전에 직원에게 요금이 있는지 물어보세요. 작은 접시 하나 때문에 당황할 수 있지만, 알고 보면 식당 이용 방식의 차이입니다. 일본에서는 첫 주문보다 첫 접시가 먼저 계산을 시작할 수도 있는 거죠.",
-    "status": "scripted",
+    "status": "video_done",
     "confidence": "user",
     "verify_note": "직접 입력한 대본",
     "fact_verifiability": "user",
@@ -46225,6 +46225,96 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0428_일본_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0428_일본_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "edit_points": [
+      {
+        "at": "start",
+        "sentence": 1,
+        "to_sentence": null,
+        "phrase": "",
+        "action": "show",
+        "queries": [
+          "Japanese izakaya side dish bill"
+        ],
+        "dur": null,
+        "interval": 0.9,
+        "note": "첫 장면에 작은 반찬과 계산서를 함께 보여주세요. “주문 안 했는데 유료?”를 크게 표시하세요."
+      },
+      {
+        "at": "sentence",
+        "sentence": 2,
+        "to_sentence": 4,
+        "phrase": "",
+        "action": "sequence",
+        "queries": [
+          "Japanese izakaya interior",
+          "Izakaya small plates"
+        ],
+        "dur": null,
+        "interval": 0.9,
+        "note": "이어서 일본 이자카야의 자동 제공 안주를 설명하세요."
+      },
+      {
+        "at": "phrase",
+        "sentence": 8,
+        "to_sentence": null,
+        "phrase": "모든 일본 식당이 이런 방식을 쓰는 건 아닙니다",
+        "action": "show",
+        "queries": [
+          "Japanese restaurant sign"
+        ],
+        "dur": null,
+        "interval": 0.9,
+        "note": "모든 일본 식당에서 적용되는 것처럼 표현하지 마세요."
+      },
+      {
+        "at": "sentence",
+        "sentence": 12,
+        "to_sentence": null,
+        "phrase": "",
+        "action": "show",
+        "queries": [
+          "restaurant bill extra charge closeup"
+        ],
+        "dur": null,
+        "interval": 0.9,
+        "note": "마지막에는 계산서의 추가 요금 항목을 클로즈업하세요."
+      }
+    ],
+    "edit_credits": [
+      {
+        "source": "pixabay",
+        "user": "HirokazuTouwaku",
+        "page": "https://pixabay.com/photos/pumpkin-vegetable-japanese-food-6634798/",
+        "scene": 110
+      },
+      {
+        "source": "pixabay",
+        "user": "chaliceks",
+        "page": "https://pixabay.com/photos/japanese-ramen-japanese-restaurant-2358861/",
+        "scene": 120
+      },
+      {
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/hedgehog-animal-mammal-hannah-1581807/",
+        "scene": 121
+      },
+      {
+        "source": "pixabay",
+        "user": "Katzen_Tupas",
+        "page": "https://pixabay.com/photos/street-stall-sign-sushi-japan-7517679/",
+        "scene": 130
+      },
+      {
+        "source": "pixabay",
+        "user": "life_is_beautiful",
+        "page": "https://pixabay.com/photos/spoonbill-bird-lake-animal-6346118/",
+        "scene": 140
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0428_일본.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0428_일본.mp4",
+    "status_v6": "video_done"
   }
 ]
