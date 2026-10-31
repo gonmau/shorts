@@ -41254,7 +41254,7 @@
       "alternative New Year customs",
       "family cleaning and cooking",
       "traditional Bhutanese feast",
-      "changing landscape daily",
+      "landscape daily",
       "weekday holiday contrast",
       "regional memory New Year",
       "new beginnings sunrise"
@@ -41269,7 +41269,7 @@
       "alternative New Year customs",
       "family cleaning and cooking",
       "traditional Bhutanese feast",
-      "changing landscape daily",
+      "landscape daily",
       "weekday holiday contrast",
       "regional memory New Year",
       "new beginnings sunrise"
@@ -41337,10 +41337,12 @@
       },
       {
         "scene": 9,
-        "source": "pixabay",
-        "user": "u_pier2nqk5k",
-        "page": "https://pixabay.com/photos/nepali-farmer-traditional-farming-10022443/",
-        "id": 10022443
+        "source": "commons",
+        "user": "Charles-François Daubigny",
+        "license": "Public domain",
+        "title": "'Figures and Cows in a Country Landscape' (1874), by Charles Daubigny.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%27Figures_and_Cows_in_a_Country_Landscape%27_(1874),_by_Charles_Daubigny.jpg",
+        "id": "c:22385846"
       },
       {
         "scene": 10,
@@ -41472,12 +41474,12 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.2133,
+        "clip": 0.2114,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ccf711e8a3b7",
-        "at": "2026-10-31 00:30",
+        "sig": "f4530b2c6f8a",
+        "at": "2026-10-31 10:27",
         "scene": 9,
         "rejected_ids": [
           10022443,
@@ -41485,7 +41487,11 @@
           1172463,
           4650074,
           4704971,
+          4707189,
+          5096227,
+          "c:114282864",
           "c:115268263",
+          "c:22385846",
           "c:51659686",
           "c:63887079",
           "c:69658901"
