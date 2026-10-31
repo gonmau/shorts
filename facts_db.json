@@ -30875,7 +30875,11 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "DaIdt_LDHjE",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-30",
+    "uploaded_manually": true
   },
   {
     "topic": "뺨에 입맞춤, 인사 방식이 나라별로 다르다",
@@ -32217,7 +32221,11 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "youtube_id": "T-EwR7HJMVo",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-30",
+    "uploaded_manually": true
   },
   {
     "topic": "로지 왕국은 라운다 제국에서 이주해 설립",
@@ -33094,7 +33102,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0341_카자흐스탄.mp4",
     "status_v6": "video_done",
     "youtube_id": "nej0aA4NAvU",
-    "uploaded_at": "2026-10-31T01:24:58.991091+09:00"
+    "uploaded_at": "2026-10-31T01:24:58.991091+09:00",
+    "youtube_privacy": "private"
   },
   {
     "topic": "의료 과실의 필수 조건",
@@ -33438,7 +33447,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0342_뉴질랜드.mp4",
     "status_v6": "video_done",
     "youtube_id": "jYXEd0xBm6Y",
-    "uploaded_at": "2026-10-31T01:25:01.093209+09:00"
+    "uploaded_at": "2026-10-31T01:25:01.093209+09:00",
+    "youtube_privacy": "private"
   },
   {
     "topic": "오악사카의 전통 축제 Guelaguetza(게울라게차)",
@@ -33757,7 +33767,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0343_멕시코.mp4",
     "status_v6": "video_done",
     "youtube_id": "VLfiTnmJ7_8",
-    "uploaded_at": "2026-10-31T01:25:03.225743+09:00"
+    "uploaded_at": "2026-10-31T01:25:03.225743+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "마테 차, 금속 빨대로 마시는 남미 전통 음료",
@@ -38514,7 +38525,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0379_스페인.mp4",
     "status_v6": "video_done",
     "youtube_id": "gyRQd4n1z0c",
-    "uploaded_at": "2026-10-31T15:06:16.911681+09:00"
+    "uploaded_at": "2026-10-31T15:06:16.911681+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "부활절(Easter) 빨간 달걀, 예수(Jesus)님의 피를 상징",
@@ -38837,7 +38849,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0380_그리스.mp4",
     "status_v6": "video_done",
     "youtube_id": "p3HJ0_2EE5s",
-    "uploaded_at": "2026-10-31T15:06:27.510591+09:00"
+    "uploaded_at": "2026-10-31T15:06:27.510591+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "일본의 중원절 (Zhongyuan Festival), 조상 귀신이 거리로 나오는 날",
@@ -39209,7 +39222,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0382_사모아.mp4",
     "status_v6": "video_done",
     "youtube_id": "LX6Oag_fbLM",
-    "uploaded_at": "2026-10-31T15:06:41.192647+09:00"
+    "uploaded_at": "2026-10-31T15:06:41.192647+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "핀란드 사우나는 유네스코 무형문화유산",
@@ -39899,7 +39913,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0384_아랍에미리트.mp4",
     "status_v6": "video_done",
     "youtube_id": "yX30PFFwzb4",
-    "uploaded_at": "2026-10-31T15:06:52.516361+09:00"
+    "uploaded_at": "2026-10-31T15:06:52.516361+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "새해 맞이 물축제의 물뿌리기 풍경",
@@ -40233,7 +40248,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0385_캄보디아.mp4",
     "status_v6": "video_done",
     "youtube_id": "d6t8hmmf7mA",
-    "uploaded_at": "2026-10-31T15:07:10.938311+09:00"
+    "uploaded_at": "2026-10-31T15:07:10.938311+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "페루의 마법사 호칭과 성별 유연성",
@@ -40594,7 +40610,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0387_캐나다.mp4",
     "status_v6": "video_done",
     "youtube_id": "J-jyQl4yk5w",
-    "uploaded_at": "2026-10-31T15:07:22.612939+09:00"
+    "uploaded_at": "2026-10-31T15:07:22.612939+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "학생 연합의 전통 사브르 결투",
@@ -40953,7 +40970,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0388_오스트리아.mp4",
     "status_v6": "video_done",
     "youtube_id": "wbPrtWS2Ni8",
-    "uploaded_at": "2026-10-31T15:07:35.499572+09:00"
+    "uploaded_at": "2026-10-31T15:07:35.499572+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "중추절, 달이 가장 밝은 날의 비밀",
@@ -41279,7 +41297,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0389_라오스.mp4",
     "status_v6": "video_done",
     "youtube_id": "0DCUHWfNFwI",
-    "uploaded_at": "2026-10-31T15:07:44.916209+09:00"
+    "uploaded_at": "2026-10-31T15:07:44.916209+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "로사르, 지역마다 다른 새해 시작",
@@ -41634,7 +41653,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0390_부탄.mp4",
     "status_v6": "video_done",
     "youtube_id": "VLzpDX__oeA",
-    "uploaded_at": "2026-10-31T15:07:57.662406+09:00"
+    "uploaded_at": "2026-10-31T15:07:57.662406+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "노로드옴 시하누크(Norodom Sihanouk)의 별명 ‘핑크 프린스(Pink Prince)’",
@@ -41979,7 +41999,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0391_캄보디아.mp4",
     "status_v6": "video_done",
     "youtube_id": "4wwKzMEhmt4",
-    "uploaded_at": "2026-10-31T15:08:12.642257+09:00"
+    "uploaded_at": "2026-10-31T15:08:12.642257+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "마야(Maya)라는 이름의 기원",
@@ -42299,7 +42320,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0392_과테말라.mp4",
     "status_v6": "video_done",
     "youtube_id": "bKCrusuf33s",
-    "uploaded_at": "2026-10-31T15:08:29.062842+09:00"
+    "uploaded_at": "2026-10-31T15:08:29.062842+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "필리핀(Philippines)의 세계 최장 크리스마스 시즌",
@@ -42648,7 +42670,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0393_필리핀.mp4",
     "status_v6": "video_done",
     "youtube_id": "1oidASU4tSE",
-    "uploaded_at": "2026-10-31T15:08:44.576258+09:00"
+    "uploaded_at": "2026-10-31T15:08:44.576258+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "인도 금융 규제의 세 가지 법적 구분",
@@ -42986,7 +43009,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0394_인도.mp4",
     "status_v6": "video_done",
     "youtube_id": "t7C6o9V9Q2U",
-    "uploaded_at": "2026-10-31T15:08:59.359657+09:00"
+    "uploaded_at": "2026-10-31T15:08:59.359657+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "예술 음악(클래식)과 일상 음악의 구분",
@@ -43327,7 +43351,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0395_캄보디아.mp4",
     "status_v6": "video_done",
     "youtube_id": "mKVRVuSQoDk",
-    "uploaded_at": "2026-10-31T15:09:11.747202+09:00"
+    "uploaded_at": "2026-10-31T15:09:11.747202+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "밤에 눈이 큰 마다가스카르 고유 원숭이",
@@ -43698,7 +43723,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0396_마다가스카르.mp4",
     "status_v6": "video_done",
     "youtube_id": "zoNHLlJDV8g",
-    "uploaded_at": "2026-10-31T15:09:22.405560+09:00"
+    "uploaded_at": "2026-10-31T15:09:22.405560+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "손에 쥐고 바로 먹는 핑거 뷔페",
@@ -44058,7 +44084,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0397_포르투갈.mp4",
     "status_v6": "video_done",
     "youtube_id": "8GxO-HQHxvQ",
-    "uploaded_at": "2026-10-31T15:09:33.363325+09:00"
+    "uploaded_at": "2026-10-31T15:09:33.363325+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "끓는 물에 떠다니는 피에로기(Pierogi)",
@@ -44376,7 +44403,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0398_크로아티아.mp4",
     "status_v6": "video_done",
     "youtube_id": "PcY6g0nQwi8",
-    "uploaded_at": "2026-10-31T15:09:45.394260+09:00"
+    "uploaded_at": "2026-10-31T15:09:45.394260+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "부탄의 공식 복장·예절 규정",
@@ -45039,7 +45067,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0400_싱가포르.mp4",
     "status_v6": "video_done",
     "youtube_id": "P8Ge234rqJY",
-    "uploaded_at": "2026-10-31T15:09:55.083398+09:00"
+    "uploaded_at": "2026-10-31T15:09:55.083398+09:00",
+    "youtube_privacy": "public"
   },
   {
     "topic": "보로로(Bororo) 부족의 8개 마을 생활",
