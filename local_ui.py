@@ -692,6 +692,37 @@ with T6a:
         _clr = _ck2.checkbox("채널에 없는 영상의 업로드 기록을 지워 '미업로드'로 되돌리기", False, key="chk_clr")
         if _ck2.button("삭제된 영상 기록 지우기", key="chk_up_clr", disabled=not _clr, help="DB의 youtube_id 등을 비웁니다. 영상 파일이 있으면 다시 올릴 수 있게 됩니다"):
             run("check_uploads.py", "--clear-missing")
+        st.markdown("---")
+        st.markdown("**🔗 공유 연결 정리** (한 유튜브 영상이 여러 소재에 연결된 경우)")
+        st.caption("영상은 하나인데 소재가 여러 개 연결돼 있으면 중복 소재이거나 잘못 연결된 것입니다. 남길 소재를 고르면 나머지의 업로드 기록을 지웁니다. 영상 파일과 유튜브 영상은 건드리지 않습니다. 토큰이 있으면 채널 영상과 비교해 남길 소재를 제안합니다.")
+        if st.button("공유 연결 찾기", key="fsl_find"):
+            import fix_shared_links as _FS
+            _vv = _FS.fetch_videos()
+            st.session_state["fsl_groups"] = _FS.find_groups(_ld(), _vv)
+            st.session_state["fsl_online"] = bool(_vv)
+        _gs = st.session_state.get("fsl_groups")
+        if _gs is not None:
+            import fix_shared_links as _FS
+            _dd = _ld()
+            _gs = [g for g in _gs if sum(1 for x in g["items"] if _dd[x["i"]].get("youtube_id") == g["id"]) >= 2]
+            st.write(f"**{len(_gs)}개** 영상이 여러 소재에 연결됨" + ("" if st.session_state.get("fsl_online") else " (채널 비교 못 함 - 번호가 앞선 소재를 제안)"))
+            _keeps = {}
+            for g in _gs:
+                _ids = [x["i"] for x in g["items"]]
+                _t = g["video"]["title"][:40] if g.get("video") else ""
+                _sc = {x["i"]: x["score"] for x in g["items"]}
+                _keeps[g["id"]] = st.selectbox(f"https://youtu.be/{g['id']} {_t} — 남길 소재", _ids, index=_ids.index(g["keep"]), key=f"fsl_keep_{g['id']}",
+                                               format_func=lambda i, _sc=_sc: f"[{i}] {_dd[i].get('country', '')} {str(_dd[i].get('topic', ''))[:30]} ({_dd[i].get('status', '')}" + (f", 일치 {_sc[i]}" if _sc.get(i) is not None else "") + ")")
+            if _gs:
+                _how = st.radio("나머지 소재 처리", ["폐기 + 업로드 기록 지움 (중복 소재일 때)", "업로드 기록만 지움 (다른 소재가 잘못 연결됐을 때, 미업로드로 돌아가 다시 올릴 수 있음)"], key="fsl_how")
+                if st.button("정리 적용", key="fsl_apply", type="primary"):
+                    _d4 = _ld()
+                    _done = _FS.apply_plan(_d4, _gs, _keeps, reject=_how.startswith("폐기"))
+                    _sd(_d4)
+                    st.session_state["gh_dirty"] = True
+                    st.session_state.pop("fsl_groups", None)
+                    st.success(f"{len(_done)}개 소재 정리: {', '.join(map(str, _done))}. 위 '쇼츠 DB 올리기'로 GitHub에 반영하세요.")
+                    st.rerun()
         if os.path.exists("upload_check.md"):
             with st.expander("최근 점검 결과 (upload_check.md)", expanded=True):
                 st.markdown(open("upload_check.md", encoding="utf-8").read())
