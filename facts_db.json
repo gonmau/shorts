@@ -7001,7 +7001,7 @@
     "twist": "이러한 도로에서는 사고율이 일반 도로보다 40% 낮다.",
     "verify_note": "Netherlands fietsstraat traffic rule statistics",
     "created_at": "2026-10-10T23:40:10.814759+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "네덜란드에는 ‘피츠스트라트’라고 부르는 자전거 중심 거리가 있습니다. 표지판에서 볼 수 있는 ‘아우토 터 하스트’는 자동차가 손님이라는 뜻인데요. 자동차를 완전히 없애는 대신, 자전거가 주로 이용하는 길에 자동차가 조심스럽게 함께 들어오는 개념입니다. 붉은색 포장이나 낮은 속도를 유도하는 도로 설계가 이런 성격을 드러냅니다. 운전자는 자전거 흐름을 고려하며 이동하고, 도로 전체가 빠른 통과보다 느린 혼합 교통에 맞춰지는 거죠. 다만 이 이름의 표지판 하나만으로 모든 교차로에서 자전거에 무조건적인 법적 우선권이 생기는 것은 아닙니다. 네덜란드의 피츠스트라트 자체에는 별도의 법적 지위가 없으며, 실제 통행에는 현장의 교통 표지와 규칙이 적용됩니다. 자동차도 다니지만 자동차 중심은 아닌 길. 도로를 누구에게 맞춰 설계할 것인지 보여주는 사례입니다.",
     "title_line1": "네덜란드 자전거길",
     "title_line2": "사고40%↓비밀",
@@ -7092,7 +7092,8 @@
     "fact_applied": true,
     "youtube_id": "PBuCLp-sPkE",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-21"
+    "uploaded_at": "2026-09-21",
+    "reject_reason": "중복 소재 (영상 PBuCLp-sPkE 은 [7] 소재와 연결)"
   },
   {
     "country": "Japan",
@@ -25404,7 +25405,7 @@
     "verify_note": "Fish and chips",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:33.976730+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "전쟁 때도 배달되는 피시앤칩스, 믿으시겠어요?  \n피시앤칩스는 19세기 영국에서 탄생한 튀김 요리입니다. 바삭한 생선 튀김에 두툼한 감자 튀김을 얹어 먹는 이 음식은, 제1차와 제2차 세계대전 동안에도 정부 차원에서 공급이 보호되었습니다. 전시 상황에서도 군인과 시민들에게 드물게 제공된 것이죠.  \n\n놀라운 점은, 전쟁 중에 이렇게 식품 공급을 특별히 보호받은 경우가 매우 적었다는 사실입니다. 피시앤칩스는 그 중 몇 안 되는 음식 중 하나였으며, 전쟁이 끝난 뒤에도 영국 사람들의 사랑을 계속받았습니다.  \n\n하지만 이 보호 조치는 제1·제2차 세계대전 시기에만 적용됐다는 점, 기억해 주세요. 전쟁 속에서도 바삭한 감자와 고소한 생선이 전하는 작은 위안, 생각해 보면 또 다른 이야기가 떠오르지 않나요?",
     "title_line1": "전쟁에도 배달 피시칩",
     "title_line2": "왜 보호받았을까?",
@@ -25519,7 +25520,8 @@
     "status_v6": "video_done",
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -38081,7 +38083,7 @@
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-27",
     "country_before_fix": "네덜란드",
-    "reject_reason": "중복 소재"
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -45912,6 +45914,6 @@
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-27",
     "country_before_fix": "네덜란드",
-    "reject_reason": "중복 소재"
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
   }
 ]
