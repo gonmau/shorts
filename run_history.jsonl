@@ -813,3 +813,4 @@
 {"id": "1793447133478-02975a", "time": "2026-10-31 20:45:33", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 3개 (check_uploads.py, fix_shared_links.py, sync_db.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1793447177896-01f2b9", "time": "2026-10-31 20:46:17", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.6, "detail": ""}
 {"id": "1793447186868-e77d46", "time": "2026-10-31 20:46:26", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 5.6, "detail": ""}
+{"id": "1793447362497-6ea312", "time": "2026-10-31 20:49:22", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.9, "detail": ""}
