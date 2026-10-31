@@ -19,21 +19,21 @@
 17,Spain,La Tomatina festival rules,rejected,2026-09-14T05:08:16,,,O,UTbi5gKV4Hc,8
 18,South Africa,Designated braai (barbecue) sites in public parks,video_done,2026-09-14T05:08:16,,"[{'verdict': 'ok', '",,,8
 19,Vietnam,Tet red envelope (lì xì) tradition,video_done,2026-09-14T05:08:16,,"[{'verdict': 'ok', '",O,,8
-20,Bhutan,Nationwide tobacco sales ban,video_done,2026-09-20T04:24:09,,"[{'verdict': 'ok', '",O,PWPnkTwabsw,8
+20,Bhutan,Nationwide tobacco sales ban,rejected,2026-09-20T04:24:09,,"[{'verdict': 'ok', '",O,PWPnkTwabsw,8
 21,France,Posthumous marriage (marriage after death),video_done,2026-09-20T04:24:09,,,,cL2o7eBsgTQ,
 22,Uruguay,Home cultivation of cannabis allowed,video_done,2026-09-20T04:24:09,,,,,
 23,Estonia,Online voting using national ID card,video_done,2026-09-20T04:24:09,,,O,,
 24,Bolivia,Legal coca leaf chewing and tea consumption,video_done,2026-09-20T04:24:17,,,,,
 25,Philippines,Bayanihan house‑moving tradition,video_done,2026-09-20T04:24:17,,,O,CxSjUpOfUFA,
 26,Poland,Name‑day (imieniny) celebrations,video_done,2026-09-20T04:24:17,,,,,
-27,Thailand,Legal protection of the King's portrait on currency,video_done,2026-09-20T04:24:17,,,O,ulUpBFJPA7k,
+27,Thailand,Legal protection of the King's portrait on currency,rejected,2026-09-20T04:24:17,,,O,ulUpBFJPA7k,
 28,Norway,Allemannsretten – 자유롭게 자연을 이용할 권리,video_done,2026-09-20T04:24:28,,,,,
-29,Mexico,‘Hoy No Circula’ 차량 번호 제한 제도,video_done,2026-09-20T04:24:28,,,,uC0UARI6b8Q,
-30,Georgia,전통 ‘수프라’ 잔치와 토스트 마스터,video_done,2026-09-20T04:24:28,,,O,FA9DJ0DcOwg,
+29,Mexico,‘Hoy No Circula’ 차량 번호 제한 제도,rejected,2026-09-20T04:24:28,,,,uC0UARI6b8Q,
+30,Georgia,전통 ‘수프라’ 잔치와 토스트 마스터,rejected,2026-09-20T04:24:28,,,O,FA9DJ0DcOwg,
 31,Kenya,야생동물 보호 구역 내 최소 거리 규정,video_done,2026-09-20T04:24:28,,,O,9dgKRUHejBg,
 32,Denmark,법정 이름 승인 제도,video_done,2026-09-20T04:25:07,,,,,
-33,Greece,그리스 커피 찌꺼기 점술,video_done,2026-09-20T04:25:07,,,,ntZiC-P5GIw,
-34,Ireland,세인트 스테판스 데이(위렌 데이) 전통,video_done,2026-09-20T04:25:07,,,,lSh5c1-QL6M,
+33,Greece,그리스 커피 찌꺼기 점술,rejected,2026-09-20T04:25:07,,,,ntZiC-P5GIw,
+34,Ireland,세인트 스테판스 데이(위렌 데이) 전통,rejected,2026-09-20T04:25:07,,,,lSh5c1-QL6M,
 35,Ghana,아칸 요일 이름 문화,video_done,2026-09-20T04:25:07,,,,XfJVCtOjquc,
 36,Costa Rica,플라스틱 사용 전면 금지와 재사용 용기 의무화,video_done,2026-09-20T04:25:17,,,O,,
 37,Sri Lanka,불교 사원 입장 시 신발 착용 금지 관습,video_done,2026-09-20T04:25:17,,,,,
@@ -60,10 +60,10 @@
 58,Romania,공공장소 음주 금지 규정,video_done,2026-10-10T10:13:43,,,O,dom6EAX2ej8,1
 59,United States,플로리다주 코끼리 보행 금지법,video_done,2026-10-10T10:13:43,,,O,fLYCYI4YFW8,3
 60,Croatia,원산지 표기법 – ‘Croatian’ 라벨 사용 제한,video_done,2026-10-10T10:14:24,,,O,NZPZp4x9CjM,3
-61,Malaysia,일회용 플라스틱 전면 금지,video_done,2026-10-10T10:14:24,,,O,19OI04I25x4,3
+61,Malaysia,일회용 플라스틱 전면 금지,rejected,2026-10-10T10:14:24,,,O,19OI04I25x4,3
 62,Czech Republic,"이름 날(스바니니) 문화, 생일보다 중요한 축하",video_done,2026-10-10T10:14:24,,,O,jPcGcY4bpnY,3
-63,Madagascar,여우원숭이(레무르) 애완동물 소유 규제,video_done,2026-10-10T10:14:24,,,O,0HYEW4jcraM,3
-64,Finland,Sauna etiquette – mandatory nudity,video_done,2026-10-10T10:19:24,,,O,-vtkT3qolUo,3
+63,Madagascar,여우원숭이(레무르) 애완동물 소유 규제,rejected,2026-10-10T10:14:24,,,O,0HYEW4jcraM,3
+64,Finland,Sauna etiquette – mandatory nudity,rejected,2026-10-10T10:19:24,,,O,-vtkT3qolUo,3
 65,Iceland,Naming Committee – government‑approved baby names,rejected,2026-10-10T10:19:24,,,O,,
 66,Singapore,Chewing‑gum ban,rejected,2026-10-10T10:19:24,,,O,,
 67,Namibia,Mandatory wildlife‑distance rule in national parks,video_done,2026-10-10T10:19:24,,,O,,
@@ -91,7 +91,7 @@
 89,Iceland,Elf‑rock protection influencing road construction,video_done,2026-10-11T02:10:26,,,O,,3
 90,South Korea,Jeju haenyeo (female divers) pension and health‑insurance law,video_done,2026-10-11T02:10:26,,,O,,
 91,Japan,Kintsugi – gold‑filled pottery repair tradition,video_done,2026-10-11T02:10:26,,,O,2mhM0nuyHo4,2
-92,Japan,Zero‑waste 45‑category recycling law in Kamikatsu,video_done,2026-10-11T02:10:57,,,O,Ty7Bu3N7x0k,2
+92,Japan,Zero‑waste 45‑category recycling law in Kamikatsu,rejected,2026-10-11T02:10:57,,,O,Ty7Bu3N7x0k,2
 93,Finland,World Wife‑Carrying Championship (Sonkajärvi),rejected,2026-10-11T02:10:57,,,O,,"3,9,10"
 94,Kyrgyzstan,Traditional golden‑eagle hunting (Berkutchi) apprenticeship,video_done,2026-10-11T02:10:57,,,O,jvPVLHRqp8w,3
 95,Argentina,Candombe drum parades in Buenos Aires,video_done,2026-10-11T02:10:57,,,O,,3
@@ -107,7 +107,7 @@
 105,카자흐스탄,전통 승마 경기 ‘코크파르’(goat carcass wrestling),video_done,2026-10-11T21:13:43,,,O,QpQ_m_JSNFw,
 106,터키,여름 축제의 낙타 레슬링,video_done,2026-10-11T21:13:43,partial,,O,OM-L5vkQ0dU,11
 107,뉴질랜드,마라에 입장 의식과 홍기(코 맞춤) 인사,rejected,2026-10-11T21:13:43,,,,,
-108,Italy,Casu Marzu – live-maggot cheese tradition,video_done,2026-10-11T21:14:39,ok,"[{'verdict': 'ok', '",O,iCAJ0X9FiK4,
+108,Italy,Casu Marzu – live-maggot cheese tradition,rejected,2026-10-11T21:14:39,ok,"[{'verdict': 'ok', '",O,iCAJ0X9FiK4,
 109,Japan,Shirakawa-go gassho-zukuri roof preservation,video_done,2026-10-11T21:14:39,,,O,11fVh5tQnhc,2
 110,Cambodia,Bamboo train (norry) informal rail transport,video_done,2026-10-11T21:14:39,,,O,d6QA0eql4SM,
 111,Germany,Schultüte – school cone gift for first-day students,video_done,2026-10-11T21:14:39,,,O,U9NZrA6WYpU,
@@ -121,7 +121,7 @@
 119,Canada,Potlatch – Indigenous gift-giving ceremony,video_done,2026-10-12T10:35:50,,,O,tUUYsQDYlmw,
 120,Rwanda,Umuganda – monthly community work morning,video_done,2026-10-12T10:36:14,,,O,jrfWH2JaPrM,
 121,Japan,Nagoro doll village in Tokushima,video_done,2026-10-12T10:36:14,,,O,gEKlp5APi_g,2
-122,Japan,Yukigassen – organized snowball fight,video_done,2026-10-12T10:36:40,,,O,SN4xNfiKeC0,2
+122,Japan,Yukigassen – organized snowball fight,rejected,2026-10-12T10:36:40,,,O,SN4xNfiKeC0,2
 123,Switzerland,Alpabzug – seasonal cattle descent and village parade,video_done,2026-10-13T03:55:22,,,O,nLShbMKnUF8,
 124,Brazil,Quadrilha – mock‑wedding folk dance during Festa Junina,video_done,2026-10-13T03:55:22,,,O,sePxiTFowT0,
 125,Sweden,알렘안스레텐(Allemansrätten) – 숲속에서 24시간 캠핑 가능,video_done,2026-10-13T03:55:28,,,O,RAYEZ2e06TA,
