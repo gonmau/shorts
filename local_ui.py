@@ -467,6 +467,10 @@ def _ext_panel(pfx, default_idx):
         _rs = False
         if _long:
             _rs = st.checkbox("저장 후 키워드·비교·요약·영상 검색어를 이 대본에 맞게 AI로 다시 만들기 (챕터당 약 3~4천 토큰)", True, key=pfx + "rs")
+        _rm = False
+        if not _long:
+            _rm = st.checkbox("저장 후 주제·훅/본문/반전·제목·핵심 문구·이미지 검색어를 새 대본에 맞게 AI로 다시 만들기 (소재당 AI 호출 3~4회, 약 1~2천 토큰)", True, key=pfx + "rm",
+                              help="대본만 바꾸면 제목·핵심 문구·훅(유튜브 설명)·주제가 옛 내용으로 남아 영상과 어긋날 수 있습니다. 켜 두면 새 대본 기준으로 다시 만듭니다. GROQ_API_KEY가 필요합니다")
         if st.button(f"💾 붙여넣은 대본 저장 ({len(_ok)}개)", key=pfx + "save", type="primary", disabled=not _ok):
             if _long:
                 import longform_script as _LS2
@@ -502,6 +506,8 @@ def _ext_panel(pfx, default_idx):
                 st.session_state["gh_dirty"] = True
                 st.success(f"쇼츠 대본 {len(_ok)}개 저장: {', '.join(map(str, _ok))} → 2단계 '대본 만들기' 또는 5단계에서 제목·핵심 문구·이미지 검색어가 대본 기준으로 채워집니다.")
                 st.code((r_.stdout + r_.stderr).strip()[-600:] or "(apply_review 출력 없음)")
+                if _rm:
+                    run("resync_meta.py", "--indexes", ",".join(map(str, _ok)))
 
 
 with T1a:
@@ -932,6 +938,47 @@ with T1c:
         "영상 완료로 (video_done) - 이미 영상을 만들었거나 다른 곳에서 올린 소재를 렌더링 대상에서 뺌": "video_done",
         "대본부터 다시 - 대본/제목/검색어/음성/영상 지움": "redo_script",
     }
+    with st.expander("🧩 중복 소재 찾기 (같은 나라에서 주제·훅이 비슷한 소재 쌍)", expanded=False):
+        st.caption("폐기된 소재는 제외하고, 같은 나라(표기가 달라도 같은 나라로 묶음) 안에서 주제·훅·제목·대본 앞부분이 비슷한 쌍을 찾습니다. 후보일 뿐이라 다른 소재가 잡히거나 표현이 다른 같은 내용은 놓칠 수 있습니다. 남길 쪽은 업로드 > 영상 완료 > 조회수 > 앞 번호 순으로 제안합니다.")
+        _dthr = st.slider("유사도 기준 (낮을수록 더 많이 잡음)", 0.3, 0.9, 0.45, 0.05, key="dup_thr")
+        if st.button("중복 후보 찾기", key="dup_find"):
+            import find_dup_topics as _FD
+            st.session_state["dup_pairs"] = _FD.find_pairs(_ld(), float(_dthr))
+        _pairs = st.session_state.get("dup_pairs")
+        if _pairs is not None:
+            _dd = _ld()
+            import find_dup_topics as _FD
+            st.write(f"**{len(_pairs)}쌍** (현재 DB 기준으로 이미 폐기된 소재가 낀 쌍은 숨깁니다)")
+            _rows, _drop_opts, _safe = [], [], []
+            for p in _pairs:
+                if _dd[p["a"]].get("status") == "rejected" or _dd[p["b"]].get("status") == "rejected":
+                    continue
+                _rows.append({"유사도": p["score"], "A": f"[{p['a']}] {_FD.describe(_dd[p['a']])}", "B": f"[{p['b']}] {_FD.describe(_dd[p['b']])}",
+                              "근거": p["why"], "제안": ("[%d] 폐기" % p["drop"] + (" (안전)" if p["drop_safe"] else " (영상/업로드 있음)")) if p["drop"] is not None else "직접 판단"})
+                for _k in (p["a"], p["b"]):
+                    if _k not in _drop_opts:
+                        _drop_opts.append(_k)
+                if p["drop"] is not None and p["drop_safe"] and p["drop"] not in _safe:
+                    _safe.append(p["drop"])
+            if _rows:
+                st.dataframe(_rows, use_container_width=True, hide_index=True)
+                _useall = st.checkbox("안전한 제안(영상·업로드 없는 쪽)을 모두 선택", False, key="dup_safe_all")
+                _pk = st.multiselect("폐기할 소재", sorted(_drop_opts), default=(sorted(_safe) if _useall else []), key=f"dup_pick_{_useall}_{len(_rows)}",
+                                     format_func=lambda i: f"{i} {_FD.describe(_dd[i])}")
+                _dr = st.text_input("폐기 사유", "중복 소재", key="dup_reason")
+                if st.button(f"선택한 {len(_pk)}개 폐기", key="dup_rej", type="primary", disabled=not _pk,
+                             help="상태만 폐기(rejected)로 바꿉니다. 영상 파일과 유튜브 영상은 그대로입니다"):
+                    _d3 = _ld()
+                    for _i in _pk:
+                        _d3[_i]["status"] = "rejected"
+                        _d3[_i]["reject_reason"] = _dr or "중복 소재"
+                    _sd(_d3)
+                    st.session_state["gh_dirty"] = True
+                    st.session_state.pop("dup_pairs", None)
+                    st.success(f"{len(_pk)}개 폐기: {', '.join(map(str, _pk))}. 위 '쇼츠 DB 올리기'로 GitHub에 반영하세요.")
+                    st.rerun()
+            else:
+                st.info("중복 후보가 없습니다.")
     db_t = _ld()
     st.caption("소재(대본)의 상태를 바꿉니다. 폐기하면 이후 단계에서 건너뜁니다. 영상 파일과 유튜브 업로드 기록(youtube_id)은 지우지 않습니다.")
     f1, f2 = st.columns([2, 1])
@@ -1106,6 +1153,12 @@ with T2c:
 
 
 with T2b:
+    with st.expander("🔄 대본에 맞게 주제·훅·제목·핵심 문구 다시 만들기 (대본을 직접 고친 소재)", expanded=False):
+        st.caption("대본을 직접 바꿨는데 제목·핵심 문구·유튜브 설명(훅/본문/반전)·주제가 옛 내용이면 영상과 어긋납니다. 번호를 넣으면 새 대본 기준으로 다시 만듭니다 (대본·나라·영상·업로드 기록은 그대로). 영상에 반영하려면 그 뒤 redo + 렌더링을 하세요. GROQ_API_KEY 필요, 소재당 AI 호출 3~4회.")
+        _rsn = st.text_input("소재 번호 (예: 286,304)", key="rsm_idx")
+        _rk = st.checkbox("제목은 그대로 두기", False, key="rsm_keep")
+        if st.button("다시 만들기", key="rsm_go", disabled=not _rsn.strip()):
+            run("resync_meta.py", "--indexes", _rsn.replace(" ", ""), *(["--keep-title"] if _rk else []))
     if not EN:
         with st.expander("🗣 어투 점검 (딱딱한 '~한다.' 체 대본 찾기·고치기)", expanded=False):
             import ko_text as _KT
