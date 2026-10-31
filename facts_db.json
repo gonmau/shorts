@@ -39274,12 +39274,11 @@
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Eric Koch for Anefo",
-        "license": "CC0",
-        "title": "In de sauna. Slaan met berkentakken, Bestanddeelnr 920-4683.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:In_de_sauna._Slaan_met_berkentakken,_Bestanddeelnr_920-4683.jpg",
-        "id": "c:66390382"
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/mannequins-uniforms-exhibition-8893950/",
+        "id": 8893950,
+        "type": "photo"
       },
       {
         "scene": 5,
