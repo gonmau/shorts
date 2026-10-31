@@ -805,3 +805,4 @@
 {"id": "1793445559800-6ccef6", "time": "2026-10-31 20:19:19", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (fix_shared_links.py, local_ui.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1793445756859-e5de87", "time": "2026-10-31 20:22:36", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.5, "detail": ""}
 {"id": "1793446124708-03dc63", "time": "2026-10-31 20:28:44", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1793446236962-587cae", "time": "2026-10-31 20:30:36", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (local_ui.py, update_code.py)", "status": "success", "secs": null, "detail": ""}
