@@ -7079,10 +7079,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "youtube_id": "PBuCLp-sPkE",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-09-21",
-    "reject_reason": "중복 소재 (영상 PBuCLp-sPkE 은 [7] 소재와 연결)"
+    "reject_reason": "중복 소재 (영상 PBuCLp-sPkE 은 [7] 소재와 연결)",
+    "upload_cleared_ts": 1793447266.607361
   },
   {
     "country": "Japan",
@@ -25501,10 +25499,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "4ysuccV7ne0",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27",
-    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)",
+    "upload_cleared_ts": 1793447266.607361
   },
   {
     "topic": "고대 그리스인들은 ‘종교’라는 단어를 몰랐다",
@@ -38048,11 +38044,9 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "4ysuccV7ne0",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27",
     "country_before_fix": "네덜란드",
-    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)",
+    "upload_cleared_ts": 1793447266.607361
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -45879,10 +45873,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0305_네덜란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "4ysuccV7ne0",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27",
     "country_before_fix": "네덜란드",
-    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)"
+    "reject_reason": "중복 소재 (영상 4ysuccV7ne0 은 [364] 소재와 연결)",
+    "upload_cleared_ts": 1793447266.607361
   }
 ]
