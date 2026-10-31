@@ -3676,7 +3676,11 @@
     "status_v5": "video_done",
     "status_v6": "video_done",
     "reject_reason": "UI에서 폐기",
-    "upload_cleared_ts": 1793447186.7764242
+    "upload_cleared_ts": 1793447186.7764242,
+    "youtube_id": "2fqcWdMN30s",
+    "youtube_privacy": "private",
+    "uploaded_at": "2026-10-14",
+    "uploaded_manually": true
   },
   {
     "country": "Ghana",
@@ -10035,7 +10039,11 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.mp4",
     "status_v6": "video_done",
     "reject_reason": "UI에서 폐기",
-    "upload_cleared_ts": 1793447186.7764242
+    "upload_cleared_ts": 1793447186.7764242,
+    "youtube_id": "_al9v5Mf0Qs",
+    "youtube_privacy": "public",
+    "uploaded_at": "2026-10-27",
+    "uploaded_manually": true
   },
   {
     "country": "Japan",
