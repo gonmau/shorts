@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,8 +15562,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22920,7 +22919,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23041,8 +23040,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -32221,7 +32219,7 @@
     "verify_note": "Lozi kingdom",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration_original": "",
     "narration": "아프리카 남부의 로지 왕국은 어디에서 시작되었을까요? 지금의 잠비아 서부에는 로지족이 형성한 전통 왕국이 있었습니다. 이 지역은 잠베지강을 따라 펼쳐진 넓은 범람원과 연결됩니다. 로지 왕국의 초기 역사는 여러 구전 전통과 역사 연구를 통해 전해집니다. 일부 역사적 설명은 콩고 분지의 룬다 왕국과 관련된 이주를 언급합니다. 하지만 로지족의 기원을 하나의 이주 집단으로만 설명하기는 어렵습니다. 여러 공동체가 오랜 시간 이동하고 교류하며 형성되었기 때문입니다. 전통적으로 로지 사회의 최고 통치자는 리퉁가라고 불립니다. 왕국의 성장에는 지도자의 권위뿐 아니라 지리적 환경도 중요한 역할을 했습니다. 잠베지강의 범람원은 농업과 목축에 유리한 조건을 제공했습니다. 계절에 따라 물이 차오르는 환경은 주민들의 생활 방식에도 영향을 주었습니다. 로지 왕국의 역사는 단순한 정복의 이야기가 아닙니다. 강과 땅, 사람들의 이동이 함께 만들어 낸 역사입니다.",
     "fact_verifiability": "user",
@@ -32533,8 +32531,7 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
-    "reject_reason": "나라와 주제 불일치(영국 / ZM)"
+    "status_tts_v2": "done"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -34736,7 +34733,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration_original": "",
     "narration": "같은 행동인데 어떤 마을에서는 금기이고 다른 곳에서는 아무렇지 않을 수 있습니다. 마다가스카르에는 파디라고 불리는 전통적인 금기가 있습니다. 파디는 특정 행동이나 음식, 장소 등에 적용되는 금기와 제한을 뜻합니다. 지역과 가족, 공동체에 따라 내용이 다릅니다. 어떤 곳에서는 특정 동물을 먹지 않기도 합니다. 또 어떤 장소에서는 정해진 행동을 삼가야 합니다. 이런 규칙은 단순히 이상한 미신으로만 설명할 수 없습니다. 조상에 대한 존중과 공동체의 역사, 종교적 믿음이 연결되어 있기 때문입니다. 일부 파디는 자연환경을 보호하는 역할도 합니다. 특정 동물을 잡지 못하게 하거나 신성한 장소의 출입을 제한하는 사례가 있습니다. 이런 금기는 지역 주민들의 생활 방식에 영향을 줍니다. 다만 모든 파디가 환경 보호를 목적으로 만들어진 것은 아닙니다. 각각의 규칙에는 서로 다른 배경이 있습니다. 외부인의 눈에는 이해하기 어려운 금기도 있을 수 있습니다. 하지만 그 안에는 공동체가 오랜 시간 지켜온 가치와 기억이 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -35076,8 +35073,7 @@
           "c:28973464"
         ]
       }
-    ],
-    "reject_reason": "성/민감 소재 자동 제외(혐오)"
+    ]
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -35156,49 +35152,55 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "ko:User:쿠도군",
-        "license": "CC BY 2.0 kr",
-        "title": "Korean New Year Food-1.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Korean_New_Year_Food-1.jpg",
-        "id": "c:89661378"
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/ancient-meditation-asia-background-3163325/",
+        "id": 3163325,
+        "type": "photo"
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "Innviertlerin",
-        "page": "https://pixabay.com/photos/lucky-pig-four-leaf-clover-new-year-5845141/",
-        "id": 5845141
+        "source": "commons",
+        "user": "Anai171",
+        "license": "CC BY-SA 4.0",
+        "title": "Gardien du \"Afo tsy maty\" - Rovan'Ambohidrabiby - Madagascar 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Gardien_du_%22Afo_tsy_maty%22_-_Rovan%27Ambohidrabiby_-_Madagascar_02.jpg",
+        "id": "c:146925446"
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "airtank",
-        "page": "https://pixabay.com/photos/lantern-festival-decoration-6939870/",
-        "id": 6939870
+        "source": "commons",
+        "user": "Hopeandlink",
+        "license": "CC BY-SA 4.0",
+        "title": "Typical malagasy costal wearing.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Typical_malagasy_costal_wearing.jpg",
+        "id": "c:146959128"
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "elcroos",
-        "page": "https://pixabay.com/photos/gifts-christmas-holiday-decoration-9266322/",
-        "id": 9266322
-      },
-      {
-        "scene": 5,
-        "source": "pixabay",
-        "user": "Surprising_Media",
-        "page": "https://pixabay.com/photos/couple-young-people-lovers-marriage-8365759/",
-        "id": 8365759
-      },
-      {
-        "scene": 6,
         "source": "commons",
         "user": "Derk29",
         "license": "CC BY-SA 4.0",
         "title": "New year eve and foods for celebrations.jpg",
         "page": "https://commons.wikimedia.org/wiki/File:New_year_eve_and_foods_for_celebrations.jpg",
         "id": "c:143240004"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/people-tourists-young-people-self-8274238/",
+        "id": 8274238,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Roderick Suñaz Sumalinog",
+        "license": "CC BY-SA 4.0",
+        "title": "The simple foods during new year eve 2024.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_simple_foods_during_new_year_eve_2024.jpg",
+        "id": "c:143416193"
       },
       {
         "scene": 7,
@@ -35216,19 +35218,20 @@
       },
       {
         "scene": 9,
-        "source": "pixabay",
-        "user": "Mylene2401",
-        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472673/",
-        "id": 8472673
+        "source": "commons",
+        "user": "Robert Ashworth from Bellingham, WA., USA",
+        "license": "CC BY 2.0",
+        "title": "Happy New Year 2018 (24576513187).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Happy_New_Year_2018_(24576513187).jpg",
+        "id": "c:66739653"
       },
       {
         "scene": 10,
-        "source": "commons",
-        "user": "Fort Rucker",
-        "license": "Public domain",
-        "title": "Profiles in courage --1st WOC commander encourages leaders to invest in youth (5454308284)",
-        "page": "https://commons.wikimedia.org/wiki/File:Profiles_in_courage_--1st_WOC_commander_encourages_leaders_to_invest_in_youth_(5454308284).jpg",
-        "id": "c:70246498"
+        "source": "pixabay",
+        "user": "dhatchina",
+        "page": "https://pixabay.com/photos/elderly-woman-countryside-10463655/",
+        "id": 10463655,
+        "type": "photo"
       },
       {
         "scene": 11,
@@ -35240,11 +35243,11 @@
       {
         "scene": 12,
         "source": "commons",
-        "user": "ABIRM09",
+        "user": "Sumita Roy Dutta",
         "license": "CC BY-SA 4.0",
-        "title": "The blessings of Iftar multiply when it is shared with others.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:The_blessings_of_Iftar_multiply_when_it_is_shared_with_others.jpg",
-        "id": "c:162968263"
+        "title": "Together in Faith Celebrating Inclusion Through Kumari Puja and Basanti puja at Voice Of W",
+        "page": "https://commons.wikimedia.org/wiki/File:Together_in_Faith_Celebrating_Inclusion_Through_Kumari_Puja_and_Basanti_puja_at_Voice_Of_World_Shalthighata_08.jpg",
+        "id": "c:187202335"
       }
     ],
     "image_source": "pixabay",
@@ -35585,11 +35588,11 @@
       {
         "scene": 6,
         "source": "commons",
-        "user": "NASA Johnson Space Center",
+        "user": "Press Information Department",
         "license": "Public domain",
-        "title": "The Greater Tokyo Area in Japan pictured from the International Space Station (iss074e0170",
-        "page": "https://commons.wikimedia.org/wiki/File:The_Greater_Tokyo_Area_in_Japan_pictured_from_the_International_Space_Station_(iss074e0170877).jpg",
-        "id": "c:182981054"
+        "title": "Syeeda Rizwana Hasan Advisor Water Resources Environment Forests Climate Change Speaks Loc",
+        "page": "https://commons.wikimedia.org/wiki/File:Syeeda_Rizwana_Hasan_Advisor_Water_Resources_Environment_Forests_Climate_Change_Speaks_Local_Residents_Alamdanga_Abhaynagar_November_10_2024_Inspects_Waterlogging_Bhodoba_Jessore_(PID-0005355).jpg",
+        "id": "c:175695669"
       },
       {
         "scene": 7,
@@ -35919,10 +35922,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "jggrz",
-        "page": "https://pixabay.com/photos/pump-house-water-management-winter-7015437/",
-        "id": 7015437
+        "source": "commons",
+        "user": "User:Mattes",
+        "license": "CC BY 2.0 de",
+        "title": "GER — BY — Schwaben — Augsburg — Rathausplatz 1 (engl. Hinweistafel zum UNESCO-Status Augs",
+        "page": "https://commons.wikimedia.org/wiki/File:GER_%E2%80%94_BY_%E2%80%94_Schwaben_%E2%80%94_Augsburg_%E2%80%94_Rathausplatz_1_(engl._Hinweistafel_zum_UNESCO-Status_Augsburger_Wassermanagement-System)_Mattes_2022-11-05.jpg",
+        "id": "c:125106890"
       },
       {
         "scene": 2,
@@ -35972,12 +35977,11 @@
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "Thames Mapping",
-        "license": "CC BY-SA 4.0",
-        "title": "Khmer Empire Expansion.png",
-        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_Expansion.png",
-        "id": "c:99136957"
+        "source": "pixabay",
+        "user": "thepoorphotographer",
+        "page": "https://pixabay.com/photos/tokyo-woman-market-city-people-4436914/",
+        "id": 4436914,
+        "type": "photo"
       },
       {
         "scene": 9,
@@ -35995,19 +35999,20 @@
       },
       {
         "scene": 11,
-        "source": "pixabay",
-        "user": "Leonhard_Niederwimmer",
-        "page": "https://pixabay.com/photos/nyc-new-york-city-america-usa-city-4854718/",
-        "id": 4854718
+        "source": "commons",
+        "user": "Thames Mapping",
+        "license": "CC BY-SA 4.0",
+        "title": "Khmer Empire Expansion.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_Expansion.png",
+        "id": "c:99136957"
       },
       {
         "scene": 12,
-        "source": "commons",
-        "user": "DannamEmpire",
-        "license": "CC BY 4.0",
-        "title": "Khmer Empire c.900 (orthographic projection).png",
-        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_c.900_(orthographic_projection).png",
-        "id": "c:157835171"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/cave-cavern-dark-daylight-1835823/",
+        "id": 1835823,
+        "type": "photo"
       }
     ],
     "image_source": "pixabay",
@@ -45162,9 +45167,9 @@
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
-    "hook": "스웨덴의 일부 축제에서는 팝업 형태의 커피 부스를 볼 수 있는 경우가 있어요.",
-    "body": "스웨덴에서는 커피 이야기가 일상 대화에 자주 나오고, 에스프레소를 찾는 사람들도 꽤 있어요. 도심 시장이나 소규모 행사에서 모바일 커피 카트와 팝업 바를 보는 경우가 늘어나면서, 거리에서도 에스프레소를 마시는 사람들이 점점 늘고 있어요. 이 이동식 바는 현대 스웨덴의 카페 문화와 디자인 트렌드를 반영한 형태라고 할 수 있어요. 예전의 길거리 커피 분위기가 오늘날 스웨덴의 거리와 축제에서 다시 떠오르는 듯해요. 주요 도시와 축제에서 자주 보이는 이 문화가 스웨덴만의 커피 풍경을 만들고 있어요.",
-    "twist": "거리마다 퍼지는 에스프레소 향은 사람들을 모아 대화를 시작하게 하는 분위기를 만들곤 해요.",
+    "hook": "스웨덴 축제 한복판에 갑자기 팝업 에스프레소 바가 등장한다!",
+    "body": "스웨덴에서는 커피가 사회적 윤활제로 자리 잡으며, 특히 에스프레소가 주요 음료다. 최근 도심 시장·축제·소매 행사에 모바일 커피 카트와 팝업 에스프레소 바가 늘어나, 사람들은 길거리에서 바로 특수 커피를 즐긴다.",
+    "twist": "이 모바일 바는 16세기 오스만 제국의 커피하우스 전통을 이어받은 형태다.",
     "caveat": "주요 도시는 물론 축제 현장에서 주로 관찰된다.",
     "country": "스웨덴",
     "theme": "관습/예절",
@@ -45355,9 +45360,9 @@
   },
   {
     "topic": "성 발렌타인(Valentine)의 전설, 눈을 되찾다",
-    "hook": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’이라는 이야기를 들어보셨나요?",
-    "body": "2월 14일 발렌타인 데이는 로마 시대에 순교한 성 발렌티노와 관련된 전통에서 유래된 것으로 알려져 있습니다. 전해지는 이야기 중에는 감옥에서 눈이 먼 사람이 시력을 회복한 사례가 있다는 전설이 있습니다. 그런데 이 이야기가 특별한 이유는 감옥이라는 비밀스러운 공간에서 눈을 고쳐줬다는 점입니다. 감옥 안이라는 제한된 환경에서도 기적 같은 치유가 일어났다는 전승은, 사랑과 희생이 어떤 형태로든 나타날 수 있음을 상징합니다. 다만, 이러한 전설은 전통적인 구전이며, 역사적 사실로 입증된 것은 아니라는 점을 기억해 주세요.",
-    "twist": "눈을 되찾은 그 순간, 발렌타인 성인의 이름은 사랑과 치유의 상징으로 남게 됩니다.",
+    "hook": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’",
+    "body": "발렌타인 데이는 2월 14일에 기념되며, 로마 제국 시절 기독교인들을 돕다 감옥에 갇힌 성 발렌타인(Valentine)의 이야기가 전해집니다. 전통에 따르면 그는 감옥 안에서 눈이 먼 사람의 시력을 회복시켰다고 전해집니다.",
+    "twist": "감옥 안에서 눈을 고쳐준 이야기가 전해지는 전설입니다.",
     "caveat": "전통적인 전승이며, 역사적 사실로 증명된 것은 아닙니다.",
     "country": "우즈베키스탄",
     "theme": "언어/이름",
@@ -45448,9 +45453,9 @@
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-120b",
-    "cross_flags": [],
+    "cross_flags": null,
     "cross_verdict": "ok",
-    "cross_notes": [],
+    "cross_notes": null,
     "title_line1": "콜롬비아 전통 불레렝게",
     "title_line2": "노년 여성 드럼 비밀?",
     "highlights": [
@@ -46500,5 +46505,316 @@
     "status_v6": "video_done",
     "youtube_id": "xo5CPR7ZyJ8",
     "uploaded_at": "2026-10-31T22:35:24.251182+09:00"
+  },
+  {
+    "topic": "치앙마이 하늘을 가득 메운 수천 개의 등불, Yi Peng 축제",
+    "hook": "천 개의 등불이 하늘을 가득 메우면, 소원이 날아간다!",
+    "body": "Yi Peng은 라나 전통 축제로, 북부 태국에서 3일간 열립니다. 보름달이 뜨는 날, 사람들은 수천 개의 khom loi(하늘 등불)를 날려 불운을 씻고 소원을 전합니다.",
+    "twist": "축제는 라나 달력 두 번째 달의 보름달에 맞춰 진행됩니다.",
+    "caveat": "이 전통은 주로 치앙마이와 그 주변 지역에서만 행해집니다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Yi Peng festival",
+    "source_url": "https://en.wikipedia.org/wiki/Yi_Peng_festival",
+    "verify_note": "Yi Peng festival",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:37:15.250655+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "올림픽 기간 스위스 팀 전용 숙소, 일반인도 입장 가능",
+    "hook": "반전! 올림픽 기간에만 운영되는 스위스 전용 숙소, 일반인도 들어간다!",
+    "body": "House of Switzerland는 스위스 연방이 올림픽과 패럴림픽 기간 동안 운영하는 공식 게스트하우스입니다. 스위스 올림픽 팀이 모이고 메달 축하 행사가 열리는 장소이며, 일반인도 방문할 수 있습니다.",
+    "twist": "이곳은 올림픽·패럴림픽 기간에만 건설·운영됩니다.",
+    "caveat": "스위스 연방이 올림픽·패럴림픽 기간에만 운영합니다.",
+    "country": "스위스",
+    "theme": "언어/이름",
+    "wiki_title": "House of Switzerland",
+    "source_url": "https://en.wikipedia.org/wiki/House_of_Switzerland",
+    "verify_note": "House of Switzerland",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:37:15.250655+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
+    "hook": "반전! 영국 귀족 자녀도 ‘공작 부인’이라고 부른다!",
+    "body": "영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 호칭을 사용합니다. 이러한 호칭은 법적으로 실제 권한을 갖고 있지는 않지만, 예의상 사용됩니다.",
+    "twist": "예를 들어, 피어의 자녀도 ‘공작 부인’ 같은 호칭을 받을 수 있습니다.",
+    "caveat": "이러한 관습은 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용됩니다.",
+    "country": "영국",
+    "theme": "관습/예절",
+    "wiki_title": "Courtesy titles in the United Kingdom",
+    "source_url": "https://en.wikipedia.org/wiki/Courtesy_titles_in_the_United_Kingdom",
+    "verify_note": "Courtesy titles in the United Kingdom",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:37:15.250655+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "불가리아(Bulgaria)의 공공음주(public intoxication) 법규",
+    "hook": "길거리에서 술에 취해 비틀거리면 바로 체포!",
+    "body": "불가리아에서는 공공장소에서 눈에 띄게 취한 모습을 보이면, 질서를 방해한다는 이유로 요약 범죄로 간주됩니다. 이런 경우 경찰이 즉시 개입해 체포할 수 있습니다.",
+    "twist": "하지만 실제로는 명백히 질서를 방해할 때만 적용되고, 경미한 행동만으로는 기소되지 않습니다.",
+    "caveat": "이 규정은 불가리아 전역에 적용되며, 현지 경찰의 재량에 따라 다를 수 있습니다.",
+    "country": "불가리아",
+    "theme": "법/제도",
+    "wiki_title": "Public intoxication",
+    "source_url": "https://en.wikipedia.org/wiki/Public_intoxication",
+    "verify_note": "Public intoxication",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:38:20.661939+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "소말리아(Somalia)의 최장 해안선과 인구 구성",
+    "hook": "아프리카 본토에서 가장 긴 해안선을 가진 소말리아, 여기서 사람들은 매일 바다에 나갑니다!",
+    "body": "소말리아는 아프리카 동쪽 끝에 위치해 대륙 본토에서 가장 긴 해안선을 가지고 있습니다. 인구는 1900만 명 이상이며, 그 중 85%가 소말리아인(Somali)이고, 공식 언어는 소말리어(Somali), 아랍어가 제2언어로 인정됩니다.",
+    "twist": "그 긴 해안선에도 불구하고, 대부분의 주민은 아직도 전통적인 어업에 의존하고 있습니다.",
+    "caveat": "이 정보는 최신 인구 추정치와 언어 현황을 기반으로 하며, 현지 상황에 따라 변동될 수 있습니다.",
+    "country": "아랍에미리트",
+    "theme": "음식문화",
+    "wiki_title": "Somalia",
+    "source_url": "https://en.wikipedia.org/wiki/Somalia",
+    "verify_note": "Somalia",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:38:20.661939+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "rejected",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아",
+    "reject_reason": "중복 소재"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "rejected",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크",
+    "reject_reason": "UI에서 폐기"
   }
 ]
