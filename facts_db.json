@@ -5968,7 +5968,7 @@
     "twist": "게다가, 일부 주에서는 기니피그를 전용 침대까지 제공해야 한다는 규정까지 있어요!",
     "verify_note": "Switzerland guinea pig law, animal welfare legislation, canton of Zurich guinea pig companionship",
     "created_at": "2026-10-10T10:19:36.500124+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "스위스에서는 기니피그를 혼자 기를 수 없어요! 스위스 동물복지법에 따르면 기니피그는 사회성이 높은 동물로 인정돼 최소 두 마리 이상을 함께 키워야 합니다. 혼자 두면 법을 위반한 것이 되고, 벌금이 부과될 수 있다는 점, 기억하세요. 특히 취리히 주 같은 일부 지역에서는 기니피그에게 전용 침대까지 제공하도록 규정하고 있습니다. 작은 침대라도 준비해 주면, 두 마리 친구가 편안하게 쉴 수 있죠. 여러분도 반려동물을 키울 때, 그들의 사회적 필요를 꼭 챙겨 주세요.",
     "title_line1": "스위스 기니피그 규정",
     "title_line2": "혼자키면 벌금?",
@@ -6050,7 +6050,8 @@
     "narration_original": "스위스에서는 기니피그를 혼자 기를 수 없어요! 스위스 동물복지법에 따르면 기니피그는 사회성이 높은 동물로 인정돼 최소 두 마리 이상을 함께 키워야 합니다. 혼자 두면 법을 위반한 것이 되고, 벌금이 부과될 수 있다는 점, 기억하세요. 특히 취리히 주 같은 일부 지역에서는 기니피그에게 전용 침대까지 제공하도록 규정하고 있습니다. 작은 침대라도 준비해 주면, 두 마리 친구가 편안하게 쉴 수 있죠. 여러분도 반려동물을 키울 때, 그들의 사회적 필요를 꼭 챙겨 주세요. 도움이 되셨다면 좋아요와 구독, 알림 설정까지 잊지 마세요!",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "reject_reason": "중복 소재"
   },
   {
     "country": "Colombia",
