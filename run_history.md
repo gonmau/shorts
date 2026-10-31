@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 09:52:42 (KST) · 기록 682건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 10:01:01 (KST) · 기록 704건 · 소재 428개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 82 | 0 | 1시간 5분 |
 | generate_tts | 21 | 0 | 8분 54초 |
-| image_check | 22 | 2 | 29초 |
+| image_check | 42 | 4 | 7분 49초 |
 | make_thumbnail | 3 | 0 | 7초 |
 | promote_ready | 31 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
@@ -34,6 +34,28 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:00 | PC | image_check | image_check.py --index 400 --fix | ✅ | 15초 |  |
+| 10:00 | PC | image_check | image_check.py --index 399 --fix | ✅ | 56초 |  |
+| 09:59 | PC | image_check | image_check.py --index 398 --fix | ✅ | 0초 |  |
+| 09:59 | PC | image_check | image_check.py --index 397 --fix | ✅ | 34초 |  |
+| 09:59 | PC | image_check | image_check.py --index 396 --fix | ✅ | 21초 |  |
+| 09:58 | PC | image_check | image_check.py --index 395 --fix | ✅ | 19초 |  |
+| 09:58 | PC | image_check | image_check.py --index 394 --fix | ✅ | 14초 |  |
+| 09:58 | PC | image_check | image_check.py --index 393 --fix | ✅ | 19초 |  |
+| 09:57 | PC | image_check | image_check.py --index 392 --fix | ✅ | 0초 |  |
+| 09:57 | PC | image_check | image_check.py --index 391 --fix | ✅ | 21초 |  |
+| 09:57 | PC | image_check | image_check.py --index 390 --fix | ✅ | 47초 |  |
+| 09:56 | PC | image_check | image_check.py --index 389 --fix | ✅ | 14초 |  |
+| 09:56 | PC | image_check | image_check.py --index 388 --fix | ✅ | 53초 |  |
+| 09:55 | PC | image_check | image_check.py --index 387 --fix | ✅ | 27초 |  |
+| 09:55 | PC | image_check | image_check.py --index 384 --fix | ✅ | 26초 |  |
+| 09:55 | PC | image_check | image_check.py --index 385 --fix | ✅ | 0초 |  |
+| 09:55 | PC | image_check | image_check.py --index 386 --fix | ❌ failed | 0초 | 이미지 검증: 0386 페루 (도구: clip, CLIP 기준 0.22) 이미지 검색어가 없습니다. 먼저 이미지를 받으세요. |
+| 09:54 | PC | image_check | image_check.py --index 383 --fix | ✅ | 25초 |  |
+| 09:54 | PC | image_check | image_check.py --index 382 --fix | ✅ | 38초 |  |
+| 09:53 | PC | image_check | image_check.py --index 380 --fix | ✅ | 0초 |  |
+| 09:53 | PC | image_check | image_check.py --index 381 --fix | ❌ failed | 0초 | 이미지 검증: 0381 일본 (도구: clip, CLIP 기준 0.22) 이미지 검색어가 없습니다. 먼저 이미지를 받으세요. |
+| 09:53 | PC | image_check | image_check.py --index 379 --fix | ✅ | 0초 |  |
 | 09:52 | PC | image_check | image_check.py --index 400 | ✅ | 0초 |  |
 | 09:52 | PC | image_check | image_check.py --index 397 | ✅ | 0초 |  |
 | 09:52 | PC | image_check | image_check.py --index 398 | ✅ | 0초 |  |
