@@ -39224,7 +39224,7 @@
       "person sweating in sauna",
       "Finnish sauna lifestyle recognition",
       "home sauna interior",
-      "people in sauna",
+      "man in sauna",
       "stepping out of sauna",
       "sauna with winter snow",
       "relaxed sauna seating",
@@ -39239,7 +39239,7 @@
       "person sweating in sauna",
       "Finnish sauna lifestyle recognition",
       "home sauna interior",
-      "people in sauna",
+      "man in sauna",
       "stepping out of sauna",
       "sauna with winter snow",
       "relaxed sauna seating",
@@ -39275,11 +39275,11 @@
       {
         "scene": 4,
         "source": "commons",
-        "user": "Gart Dale",
-        "license": "CC0",
-        "title": "Nude woman in the sauna.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Nude_woman_in_the_sauna.jpg",
-        "id": "c:182952963"
+        "user": "Igor Horatius",
+        "license": "CC BY-SA 4.0",
+        "title": "Man with scorpion tattoo lying in the sauna.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Man_with_scorpion_tattoo_lying_in_the_sauna.jpg",
+        "id": "c:126812380"
       },
       {
         "scene": 5,
@@ -39384,12 +39384,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3124,
+        "clip": 0.265,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a03d1c09de05",
-        "at": "2026-10-31 10:14",
+        "sig": "4d03d92d18b8",
+        "at": "2026-10-31 10:15",
         "scene": 4,
         "rejected_ids": [
           8893950,
