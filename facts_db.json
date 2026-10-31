@@ -41599,7 +41599,7 @@
       "king abdication ceremony",
       "prime minister office Cambodia",
       "royal palace political hall",
-      "coup protest street Cambodia",
+      "protest street Cambodia",
       "exile travel suitcase",
       "king returns to throne",
       "Cambodia turbulent era",
@@ -41614,7 +41614,7 @@
       "king abdication ceremony",
       "prime minister office Cambodia",
       "royal palace political hall",
-      "coup protest street Cambodia",
+      "protest street Cambodia",
       "exile travel suitcase",
       "king returns to throne",
       "Cambodia turbulent era",
@@ -41679,11 +41679,11 @@
       {
         "scene": 8,
         "source": "commons",
-        "user": "The Royal Palace of Cambodia",
-        "license": "Public domain",
-        "title": "Norodom Sihanouk coronation colourized.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Norodom_Sihanouk_coronation_colourized.jpg",
-        "id": "c:177243048"
+        "user": "DVIDSHUB",
+        "license": "CC BY 2.0",
+        "title": "Flickr - DVIDSHUB - International peacekeepers learn essentials during Khaan Quest 2011 (I",
+        "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_DVIDSHUB_-_International_peacekeepers_learn_essentials_during_Khaan_Quest_2011_(Image_1_of_16).jpg",
+        "id": "c:22422285"
       },
       {
         "scene": 9,
@@ -41804,13 +41804,13 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2175,
+        "verdict": "ok",
+        "clip": 0.2263,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ae2cc5c82405",
-        "at": "2026-10-31 09:57",
+        "sig": "92b8d309c19a",
+        "at": "2026-10-31 10:29",
         "scene": 8,
         "rejected_ids": [
           6129239,
@@ -41821,6 +41821,7 @@
           "c:168035001",
           "c:177243048",
           "c:182985837",
+          "c:22422285",
           "c:27509079"
         ]
       },
