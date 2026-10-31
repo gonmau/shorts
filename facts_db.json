@@ -8410,7 +8410,7 @@
     "twist": "우승 상금은 아내 몸무게 킬로그램당 맥주 1병, 즉 60kg이면 60병!",
     "verify_note": "Finland wife carrying world championship Sonkajärvi prize beer weight",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "핀란드 손카야르비에서는 사람을 업거나 메고 장애물 코스를 달리는 ‘아내 업고 달리기’ 세계선수권이 열립니다. 이름 때문에 반드시 부부만 참가할 것 같지만, 공식 규정상 함께 뛰는 두 사람이 실제 부부일 필요는 없습니다. 업히는 참가자는 최소 17세, 운반하는 참가자는 최소 18세여야 합니다. 코스 길이는 253.5미터. 약 1미터 깊이의 물 장애물 하나와 마른 지형의 장애물 두 개가 있습니다. 정해진 시간 안에만 들어오면 되는 것이 아니라, 상대를 운반하며 최대한 빠르게 완주하는 경기죠. 업히는 사람의 최소 무게는 49킬로그램으로 정해져 있고, 그보다 가벼우면 부족한 만큼 무게를 보충해야 합니다. 보기에는 우스꽝스러워도 속도를 내면서 균형을 잡고, 물속에서도 상대를 놓치지 않아야 합니다. 달리는 사람의 체력만큼이나 두 사람의 호흡이 중요한 경기입니다.",
     "title_line1": "핀란드",
     "title_line2": "사람을 업고 달리는 세계선수권",
@@ -8555,7 +8555,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "중복 소재"
   },
   {
     "country": "Kyrgyzstan",
@@ -12942,7 +12943,7 @@
     "confidence": "high",
     "verify_note": "Finland wife carrying world championships Sonkajärvi rules wife weight in beer",
     "created_at": "2026-10-14T03:45:35.989700+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "핀란드에서는 남자가 아내를 안고 장애물 코스를 달리면 상금이… 라는 말, 궁금하시죠? 매년 7월, 소니아르비에 있는 ‘Wife Carrying’ 대회가 열립니다. 남성 참가자들은 아내 혹은 무게가 20 kg인 인형을 들어 253 미터 길이의 울퉁불퉁한 코스를 달리는데요. 코스에는 모래 구덩이, 물 웅덩이, 나무 장벽 같은 다양한 장애물이 놓여 있습니다. 이 행사는 전설적인 목동이 아내를 안고 달리던 이야기를 기념해 시작된 전통 행사라고 합니다. 가장 흥미로운 점은 우승자가 받는 상금이 바로 아내의 체중만큼의 맥주라는 사실입니다. 예전부터 전통적으로 그 무게에 해당하는 양의 맥주가 상금으로 제공돼 왔죠. 다만, 이 규칙은 소니아르비 공식 대회에만 적용되며, 지역별 비공식 경기에서는 상금이 다를 수 있다는 점을 기억해 주세요. 아내를 안고 달리는 그 순간, 과연 얼마나 무거운 맥주가 기다리고 있을까요?",
     "title_line1": "핀란드 아내 달리기",
     "title_line2": "우승 맥주는 체중만큼?",
@@ -13037,7 +13038,8 @@
       "[contradicted] 3번 문장: The dummy weight is 49 kg (not 20 kg); other details are correct",
       "[unsupported] 8번 문장: No specific evidence that the beer‑weight rule applies only to the official Sonkajärvi event"
     ],
-    "cross_verdict": "contradicted"
+    "cross_verdict": "contradicted",
+    "reject_reason": "중복 소재"
   },
   {
     "country": "Netherlands",
