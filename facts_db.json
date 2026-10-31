@@ -39313,12 +39313,11 @@
       },
       {
         "scene": 9,
-        "source": "commons",
-        "user": "Maasaak",
-        "license": "CC BY-SA 4.0",
-        "title": "Estonian winter firewood.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Estonian_winter_firewood.jpg",
-        "id": "c:63744986"
+        "source": "pixabay",
+        "user": "Saydung",
+        "page": "https://pixabay.com/vectors/mother-daughter-umbrella-rain-mom-5709418/",
+        "id": 5709418,
+        "type": "illustration"
       },
       {
         "scene": 10,
