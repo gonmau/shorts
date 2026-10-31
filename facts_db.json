@@ -45947,6 +45947,278 @@
       "surprised by small plate",
       "first plate charge"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "image_queries_done": [
+      "unrequested side dish",
+      "Japanese izakaya interior",
+      "otashi appetizer",
+      "paid otashi dish",
+      "Japanese side dishes",
+      "otashi seat charge",
+      "small appetizer plate",
+      "Japanese restaurant variety",
+      "restaurant menu board",
+      "ask staff about charge",
+      "surprised by small plate",
+      "first plate charge"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "cskkkk",
+        "page": "https://pixabay.com/photos/dumpling-food-republic-of-korea-7719497/",
+        "id": 7719497,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "chaliceks",
+        "page": "https://pixabay.com/photos/japanese-ramen-japanese-restaurant-2358861/",
+        "id": 2358861
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/restaurant-cooking-chef-kitchen-1284351/",
+        "id": 1284351,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pancakes-crepe-pancake-s%C3%BCsspeise-2020863/",
+        "id": 2020863
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "HirokazuTouwaku",
+        "page": "https://pixabay.com/photos/pumpkin-vegetable-japanese-food-6634798/",
+        "id": 6634798
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/stadium-seats-chairs-sit-1750794/",
+        "id": 1750794
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/restaurant-cooking-chef-kitchen-1284351/",
+        "id": 1284351
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "16944022",
+        "page": "https://pixabay.com/photos/night-tokyo-street-japan-urban-6876155/",
+        "id": 6876155
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Rick Obst",
+        "license": "CC BY 4.0",
+        "title": "Drive thru menu board at Del Taco in Albany, Oregon.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Drive_thru_menu_board_at_Del_Taco_in_Albany,_Oregon.jpg",
+        "id": "c:195447819"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "U.S. Air Force photo by Staff Sgt. Rayna Padgett",
+        "license": "Public domain",
+        "title": "\"War Machine\" Airmen increase mission readiness while gaining new skills at Ramstein (4492",
+        "page": "https://commons.wikimedia.org/wiki/File:%22War_Machine%22_Airmen_increase_mission_readiness_while_gaining_new_skills_at_Ramstein_(4492176).jpg",
+        "id": "c:159047272"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/hedgehog-animal-mammal-hannah-1581807/",
+        "id": 1581807,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Waud, Alfred R. (Alfred Rudolph), 1828-1891, artist",
+        "license": "Public domain",
+        "title": "Battle of Winchester, decisive charge upon the rebels at the stone wall LCCN2004660452.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Winchester,_decisive_charge_upon_the_rebels_at_the_stone_wall_LCCN2004660452.jpg",
+        "id": "c:68386663"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2454,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b62732fb24b7",
+        "at": "2026-10-31 22:13",
+        "scene": 1,
+        "rejected_ids": [
+          7006977,
+          7719497
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2919,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1b50f374d165",
+        "at": "2026-10-31 22:13",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2453,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "253103549426",
+        "at": "2026-10-31 22:13",
+        "scene": 3,
+        "rejected_ids": [
+          1284351,
+          1672505
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2103,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "37f6b6d28876",
+        "at": "2026-10-31 22:13",
+        "scene": 4,
+        "rejected_ids": [
+          2020863,
+          2169305,
+          2652561
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2843,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c00b49e5d7f7",
+        "at": "2026-10-31 22:13",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2501,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "901aeab3d573",
+        "at": "2026-10-31 22:13",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2599,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b86f5c97e4b4",
+        "at": "2026-10-31 22:13",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2535,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6c4a6f31b8ec",
+        "at": "2026-10-31 22:13",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.287,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "be69db10cb94",
+        "at": "2026-10-31 22:14",
+        "scene": 9,
+        "rejected_ids": [
+          258201,
+          "c:195447819"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2169,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c3de09adab5c",
+        "at": "2026-10-31 22:14",
+        "scene": 10,
+        "rejected_ids": [
+          6584891,
+          6585342,
+          "c:154131389",
+          "c:154398445",
+          "c:159047272"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.257,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fa6c1d9d5464",
+        "at": "2026-10-31 22:14",
+        "scene": 11,
+        "rejected_ids": [
+          1581807,
+          "c:77366710"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2416,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "10737fd7303f",
+        "at": "2026-10-31 22:14",
+        "scene": 12,
+        "rejected_ids": [
+          1834984,
+          7105626,
+          "c:110248259",
+          "c:34178833",
+          "c:68386663"
+        ]
+      }
+    ]
   }
 ]
