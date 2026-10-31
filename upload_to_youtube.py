@@ -84,6 +84,10 @@ def main():
         if done >= limit:
             break
         path = item.get("video_path_v6")
+        if item.get("status") == "rejected":      # 폐기한 소재는 영상이 있어도 올리지 않는다
+            continue
+        if item.get("status") == "rejected":      # 폐기한 소재는 영상이 있어도 올리지 않는다
+            continue
         if item.get("status_v6") != "video_done" or item.get("youtube_id") or not path or not Path(path).exists():
             continue
         title, description = youtube_meta(item)

@@ -647,9 +647,9 @@ with T6a:
     _upl = []
     for _i, _f in enumerate(_ud):
         _vp = _f.get("video_path_v6")
-        if _f.get("status_v6") == "video_done" and not _f.get("youtube_id") and _vp and os.path.exists(_vp):
+        if _f.get("status") != "rejected" and _f.get("status_v6") == "video_done" and not _f.get("youtube_id") and _vp and os.path.exists(_vp):
             _upl.append(_i)
-    st.markdown(f"**업로드 대기 영상 {len(_upl)}개** (영상 파일이 이 PC에 있고 아직 유튜브에 올리지 않은 것)")
+    st.markdown(f"**업로드 대기 영상 {len(_upl)}개** (영상 파일이 이 PC에 있고 아직 유튜브에 올리지 않은 것, 폐기한 소재 제외)")
     if _upl:
         _rows = []
         for _i in _upl:
