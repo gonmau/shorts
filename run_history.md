@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 21:51:05 (KST) · 기록 819건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 22:09:15 (KST) · 기록 821건 · 소재 429개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -14,10 +14,10 @@
 | check_uploads | 18 | 0 | 1분 44초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 15 | 0 | 1초 |
+| export_review | 16 | 0 | 1초 |
 | fetch_images | 79 | 1 | 1시간 39분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
-| generate_script | 104 | 0 | 1시간 5분 |
+| generate_script | 105 | 0 | 1시간 5분 |
 | generate_tts | 40 | 0 | 17분 48초 |
 | image_check | 44 | 4 | 8분 7초 |
 | make_thumbnail | 4 | 0 | 22초 |
@@ -35,6 +35,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:09 | PC | generate_script | generate_script.py --extras-only --index 428 | ✅ | 10초 |  |
+| 22:09 | PC | export_review | export_review.py --limit 1 --start 428 | ✅ | 0초 |  |
 | 21:50 | PC | check_uploads | check_uploads.py | ✅ | 5초 |  |
 | 20:52 | PC | sync_uploads | sync_uploads.py --dry | ✅ | 3초 |  |
 | 20:52 | PC | check_uploads | check_uploads.py --clear-missing | ✅ | 5초 |  |
