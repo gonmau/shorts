@@ -2980,7 +2980,7 @@
     "twist": "하지만 관광객은 공항 면세점에서 담배를 구매할 수 있어요.",
     "verify_note": "Bhutan tobacco ban 2004, Royal Government of Bhutan, WHO report",
     "created_at": "2026-09-20T04:24:09.219063+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "부탄에서는 담배를 사면 바로 벌금을 물게 됩니다! 2004년, 부탄이 세계 최초로 담배 판매를 전면 금지했어요. 판매는 물론, 개인이 담배를 소지하는 것조차 엄격히 제한됩니다. 만약 적발되면 최대 100,000 뇌툭, 즉 약 1,300 달러에 달하는 벌금을 내야 하죠. 이렇게 강력한 금연 정책에도 불구하고, 관광객에게는 예외가 있습니다. 부탄 국제공항 면세점에서는 여전히 담배를 구매할 수 있기 때문인데요. 여행 계획하실 때 이 점만 기억하시면 됩니다. 부탄의 독특한 금연 정책, 흥미롭지 않나요? 구독과 좋아요 잊지 마세요!",
     "audio_path_v2": "audio\\0020_Bhutan_v2.mp3",
     "timing_path_v2": "audio\\0020_Bhutan_v2_timing.json",
@@ -3215,7 +3215,8 @@
         "scene": 9,
         "rejected_ids": []
       }
-    ]
+    ],
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "France",
@@ -3531,7 +3532,7 @@
     "twist": "이 법은 외국인에게도 동일하게 적용돼, 관광객도 조심해야 합니다.",
     "verify_note": "Thailand lèse‑majesté law currency disrespect, stepping on Thai money law, legal protection of royal portrait Thailand",
     "created_at": "2026-09-20T04:24:17.089864+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "태국에서는 화폐를 밟는 것이 형법 위반이 될 수 있어요! 태국은 왕실을 모독하는 행위를 금지하는 ‘레세 마제스트(Lèse‑majesté)’ 법을 가지고 있습니다. 이 법은 화폐에 새겨진 왕의 초상까지 보호 대상에 포함시키죠. 그래서 고의로 돈을 밟거나 훼손하면 형사 처벌을 받게 됩니다. 놀라운 점은 이 규정이 외국인에게도 똑같이 적용된다는 사실입니다. 관광객이라도 실수로 화폐를 밟으면 문제가 될 수 있으니, 항상 조심하시는 것이 좋습니다. 오늘도 유익한 정보가 도움이 되셨다면 좋아요와 구독 잊지 마세요!",
     "audio_path_v2": "audio\\0027_Thailand_v2.mp3",
     "timing_path_v2": "audio\\0027_Thailand_v2_timing.json",
@@ -3543,7 +3544,8 @@
     "status_v6": "video_done",
     "youtube_id": "ulUpBFJPA7k",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Norway",
@@ -3569,7 +3571,7 @@
     "twist": "이 제도는 비상시에는 즉시 해제돼, 급한 상황에서도 차를 몰 수 있게 된다.",
     "verify_note": "Mexico City Hoy No Circula program",
     "created_at": "2026-09-20T04:24:28.149870+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "멕시코시티에서는 차 번호가 오늘이면 운전 금지! 오늘은 어떤 번호가 운행을 못 하는지 궁금하시죠? 멕시코시티와 몇몇 주에서는 대기오염을 줄이기 위해 차량 번호판 마지막 숫자를 기준으로 하루에 한 번씩 운행을 제한합니다. 이 제도는 ‘Hoy No Circula’라는 이름으로 운영되고, 대기질이 나쁠 때 특히 강하게 적용됩니다. 오늘 지정된 번호라면 차를 거리 밖에 두어야 하고, 그날은 도로에 올릴 수 없습니다. 하지만 비상 상황이 발생하면 바로 제도가 해제돼 급한 일에도 차를 몰 수 있다는 점, 기억해 두세요. 여러분도 혹시 이런 제도를 경험해 본 적 있나요? 댓글로 알려 주세요! 구독과 좋아요도 잊지 마세요!",
     "audio_path_v2": "audio\\0029_Mexico_v2.mp3",
     "timing_path_v2": "audio\\0029_Mexico_v2_timing.json",
@@ -3580,7 +3582,8 @@
     "status_v6": "video_done",
     "youtube_id": "uC0UARI6b8Q",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-24"
+    "uploaded_at": "2026-09-24",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Georgia",
@@ -3590,7 +3593,7 @@
     "twist": "건배를 거부하면 ‘불명예’라는 사회적 낙인이 찍힌다.",
     "verify_note": "Georgian supra tradition tamada toasts",
     "created_at": "2026-09-20T04:24:28.149870+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "조지아에서는 한 잔에 20번 이상 건배를 해야 한다! 전통적인 수프라 잔치에선 ‘타마다’라는 토스트 마스터가 자리 잡고 있습니다. 타마다가 이끄는 건배는 최소 20번 이상 이어지며, 참석한 모든 손님은 반드시 한 잔씩 들어야 합니다. 이렇게 연속적인 건배는 서로의 친밀감과 존경을 표현하는 중요한 의식이죠. 그런데 건배를 거부하면 ‘불명예’라는 사회적 낙인이 찍히게 됩니다. 주변 사람들의 눈길이 달라지고, 그 자리에서의 위신이 크게 떨어지게 되죠. 조지아 사람들은 이런 전통을 통해 공동체의 결속을 다지고, 손님에게 진심 어린 환대를 보여줍니다. 다음에 기회가 된다면 직접 수프라에 초대받아, 타마다와 함께 건배를 외쳐 보세요. 구독과 좋아요, 알림 설정도 잊지 마세요!",
     "audio_path_v2": "audio\\0030_Georgia_v2.mp3",
     "timing_path_v2": "audio\\0030_Georgia_v2_timing.json",
@@ -3602,7 +3605,8 @@
     "status_v6": "video_done",
     "youtube_id": "FA9DJ0DcOwg",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Kenya",
@@ -3652,7 +3656,7 @@
     "twist": "일부 카페에서는 전문 ‘카피스트’가 직접 찌꺼기를 해석해 주며, 현대에는 플라스틱 잔을 사용해 환경 보호까지 고려하고 있습니다.",
     "verify_note": "Greek coffee fortune telling, kafist tradition Greece",
     "created_at": "2026-09-20T04:25:07.173175+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "그리스에서는 커피 잔에 남은 찌꺼기로 운명을 점칩니다! 그리스식 에스프레소, 즉 ‘프레소’를 마신 뒤 컵을 뒤집어 남은 커피 찌꺼기의 모양을 해석합니다. 찌꺼기가 만든 선과 점, 구름 같은 형상이 앞으로의 일이나 사랑, 건강을 이야기해 주는 것이죠. 이 전통은 친목 모임이나 카페에서 흔히 행해지며, 사람들 사이의 대화와 웃음이 자연스럽게 피어나는 사교 놀이이자 문화적 의식으로 자리 잡았습니다. 특히 일부 카페에서는 전문 ‘카피스트’가 직접 찌꺼기를 읽어 주어 더욱 흥미롭고 신뢰감을 줍니다. 최근에는 일회용 플라스틱 잔을 사용해 환경 보호까지 생각하고 있어, 전통과 현대가 조화롭게 공존하고 있습니다. 여러분도 기회가 된다면 직접 체험해 보세요! 구독과 좋아요, 알림 설정도 잊지 마세요.",
     "audio_path_v2": "audio\\0033_Greece_v2.mp3",
     "timing_path_v2": "audio\\0033_Greece_v2_timing.json",
@@ -3663,7 +3667,8 @@
     "status_v6": "video_done",
     "youtube_id": "ntZiC-P5GIw",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Ireland",
@@ -3673,7 +3678,7 @@
     "twist": "몇몇 마을에서는 위렌 행진을 음악 축제로 확장해, 전통 음악과 댄스를 함께 즐기는 지역 행사로 발전시켰습니다.",
     "verify_note": "Wren Day Ireland tradition, St. Stephen's Day wren parade",
     "created_at": "2026-09-20T04:25:07.173175+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "아일랜드에서는 새 대신 인형을 잡아다니는 전통이 있습니다! 매년 12월 26일, 성 스테판스 데이, 즉 위렌 데이에 아이들은 작은 인형 ‘위렌’을 들고 전통 복장을 입어 거리와 마을을 행진합니다. 옛날엔 실제 작은 새를 잡아 가져갔지만, 오늘은 플라스틱 인형을 사용해 동물을 보호하고 있죠. 행진은 단순 퍼레이드에 머물지 않고, 몇몇 마을에서는 전통 음악과 댄스를 곁들인 축제로 확장되었습니다. 주민들이 피리와 기타, 전통 타악기로 연주하고, 사람들은 함께 춤을 추며 겨울 분위기를 즐깁니다. 이렇게 위렌 데이는 아이들의 놀이와 지역 사회 문화 행사가 어우러진 특별한 날이 되었습니다. 여러분도 아일랜드의 독특한 겨울 풍습, 궁금하지 않으세요? 구독과 좋아요 잊지 말고 알려 주세요!",
     "audio_path_v2": "audio\\0034_Ireland_v2.mp3",
     "timing_path_v2": "audio\\0034_Ireland_v2_timing.json",
@@ -3684,7 +3689,8 @@
     "status_v6": "video_done",
     "youtube_id": "lSh5c1-QL6M",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Ghana",
@@ -5306,7 +5312,7 @@
     "twist": "벌금은 최대 10,000링깃으로, 위반 업체는 급격히 감소하고 있습니다.",
     "verify_note": "Malaysia single-use plastic ban 2023, Ministry of Environment Malaysia",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "말레이시아에서는 모든 일회용 플라스틱이 이미 전면 금지됐을까요? 그렇게 설명하면 실제 정책보다 앞서 나간 이야기가 됩니다. 말레이시아 정부는 2018년부터 2030년까지 이어지는 일회용 플라스틱 감축 로드맵을 마련했습니다. 한날한시에 모든 제품을 금지하기보다는, 여러 단계에 걸쳐 사용을 줄여 나가는 계획입니다. 대표적으로 비닐봉투에 비용을 부과하거나, 빨대를 기본으로 제공하지 않고 요청할 때 주는 방식이 포함됩니다. 무심코 받던 일회용품을 한 번 더 선택하게 만드는 거죠. 주별로 시행 시점이나 구체적인 방식에 차이가 있을 수 있어, 말레이시아 전체에 동일한 전면 금지와 벌금이 적용된다고 말하기는 어렵습니다. 이 소재의 핵심은 플라스틱이 사라진 나라가 아니라, 매장에서 소비자에게 물건을 건네는 방식을 조금씩 바꾸어 가는 정책입니다.",
     "title_line1": "말레이시아",
     "title_line2": "일회용 플라스틱을 줄이는 단계적 계획",
@@ -5391,7 +5397,8 @@
     "fact_applied": true,
     "youtube_id": "19OI04I25x4",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Czech Republic",
@@ -5502,7 +5509,7 @@
     "twist": "심지어 레무르를 사진으로만 촬영해도, 보호구역 내에서는 플래시 사용이 금지되어 있어 몰래 촬영이 어렵습니다.",
     "verify_note": "Madagascar lemur pet ownership law, Madagascar wildlife protection act lemur permit",
     "created_at": "2026-10-10T10:14:24.297660+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "긴 꼬리와 커다란 눈을 가진 레무르. 영상으로 보면 사람에게 잘 다가오고, 어깨에 올라타기도 해서 반려동물처럼 느껴질 수 있습니다. 하지만 마다가스카르에서 레무르를 포획하거나 거래하고, 반려동물로 기르는 것은 불법입니다. 실제로 불법 사육되던 레무르가 몰수되어 보호 시설로 옮겨지는 경우도 있습니다. 이 문제는 단순히 야생동물은 집에서 키우기 어렵다는 데서 끝나지 않습니다. 반려동물 수요가 생기면 숲에서 개체를 데려오는 일이 이어질 수 있고, 그만큼 야생 집단에도 부담이 되죠. 그래서 허가만 받으면 누구나 키울 수 있는 이색 반려동물로 소개하는 것은 적절하지 않습니다. 사람 가까이에서 얌전히 앉아 있는 모습과, 그 동물이 어떻게 그곳까지 왔는지는 전혀 다른 이야기입니다.",
     "title_line1": "마다가스카르",
     "title_line2": "귀여운 레무르를 집으로 데려갈 수 없는 이유",
@@ -5597,7 +5604,8 @@
     "fact_applied": true,
     "youtube_id": "0HYEW4jcraM",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Finland",
@@ -5607,7 +5615,7 @@
     "twist": "게다가 사우나 안에서는 스마트폰 사용도 금지라, 온전한 ‘디지털 디톡스’가 강제된다!",
     "verify_note": "Finland sauna etiquette nudity rule",
     "created_at": "2026-10-10T10:19:24.459203+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "핀란드 사우나에서는 수영복을 입으면 안 된다는 이야기가 있습니다. 하지만 모든 사우나에 적용되는 절대적인 규칙은 아닙니다. 핀란드에서 알몸으로 사우나를 즐기는 것은 자연스러운 문화지만, 핀란드 관광청은 수영복이나 수건을 사용하는 것도 괜찮다고 안내합니다. 특히 남녀가 함께 이용하는 공공 사우나에서는 수영복이나 수건을 사용하는 경우가 있습니다. 가족끼리 가는지, 친구들과 가는지, 남녀가 따로 이용하는 시설인지에 따라 분위기와 방식이 달라질 수 있는 거죠. 핀란드 사우나에서 중요하게 여기는 것은 옷을 벗었다는 사실 자체보다, 편안하게 열기와 휴식을 즐기는 경험입니다. 뜨거운 사우나 돌에 물을 부으면 ‘뢰윌뤼’라고 부르는 증기가 올라오는데, 이때 주변 사람도 함께 그 열기를 느낍니다. 내가 더 뜨겁게 즐기고 싶다고 물을 계속 붓기보다는, 함께 있는 사람을 살피는 배려가 필요합니다.",
     "title_line1": "핀란드",
     "title_line2": "사우나에서 옷을 벗는 것은 의무일까?",
@@ -5692,7 +5700,8 @@
     "fact_applied": true,
     "youtube_id": "-vtkT3qolUo",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Iceland",
@@ -8321,7 +8330,7 @@
     "twist": "쓰레기를 올바르게 분류하지 않으면, 다음 달에 마을 축제에서 ‘쓰레기 벌칙 무용’ 공연을 해야 합니다.",
     "verify_note": "Kamikatsu 45 waste categories, zero waste town Japan",
     "created_at": "2026-10-11T02:10:57.946598+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "이 마을은 쓰레기를 45가지 종류로 나눠야 해요! 일본 가와구치현 카미카츠는 ‘제로‑웨이스트’를 목표로, 각 가정에 45개의 서로 다른 쓰레기통을 배치했습니다. 주민들은 매일 부엌, 욕실, 정원에서 나오는 쓰레기를 색과 라벨에 맞춰 정확히 분류합니다. 분리수거가 끝나면 마을 회의에서 각 가구의 ‘분리수거 점수’를 공개하고, 점수가 높을수록 모두가 자랑스럽게 생각합니다. 그런데 여기서 한 가지 규칙이 더 있죠. 쓰레기를 제대로 분류하지 못하면 다음 달 마을 축제에서 ‘쓰레기 벌칙 무용’ 공연을 해야 합니다. 무대 위에서 잘못된 분류를 웃음으로 풀어내는 모습은, 마을 사람들에게 큰 동기부여가 됩니다. 이렇게 작은 실천이 모여 카미카츠는 진정한 제로‑웨이스트 마을로 거듭나고 있습니다. 여러분도 한 번쯤은 45가지 분류에 도전해 보고 싶지 않나요?",
     "title_line1": "카미카츠 45분리수거",
     "title_line2": "틀리면 축제 벌칙 무용",
@@ -8402,7 +8411,8 @@
     ],
     "youtube_id": "Ty7Bu3N7x0k",
     "youtube_privacy": "private",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Finland",
@@ -9827,7 +9837,7 @@
     "twist": "판매는 금지됐지만, 일부 사르디니아 가정과 지역 사회에서는 여전히 전통 음식으로 만들어 먹는다고 알려져 있다.",
     "verify_note": "Casu Marzu Sardinia live larvae cheese Italy EU sale ban traditional food",
     "created_at": "2026-10-11T21:14:39.254363+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "이탈리아 사르디니아에는 살아있는 유충과 함께 숙성시키는 전통 치즈가 있다? 바로 ‘카수 마르주’입니다. 양젖으로 만든 이 치즈에 치즈파리가 알을 낳게 하면, 부화한 유충이 치즈 속 지방을 분해하면서 숙성이 진행됩니다. 유충이 활동할수록 치즈는 점점 부드러워지고, 특유의 강한 풍미가 살아납니다. 현지 일부 사람들은 이를 전통 미식으로 여기며 가정이나 지역 사회에서 여전히 만들고 먹습니다. 하지만 살아있는 유충이 들어간 식품은 위생·안전 문제로 이탈리아 내에서 상업적 판매가 금지돼 있으며, EU 전체에서도 유통이 허용되지 않습니다. 금지된 상황에서도 사르디니아의 작은 마을에서는 오늘도 전통을 이어가고 있다는 점, 바로 이곳이 카수 마르주의 숨은 매력입니다. 과연 그 독특한 맛을 직접 경험해볼 용기가 있으신가요?",
     "fact_checked": true,
     "fact_issues": [
@@ -10049,7 +10059,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0108_Italy.mp4",
     "status_v6": "video_done",
     "youtube_id": "iCAJ0X9FiK4",
-    "uploaded_at": "2026-10-30T17:52:33.415987+09:00"
+    "uploaded_at": "2026-10-30T17:52:33.415987+09:00",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Japan",
@@ -11510,7 +11521,7 @@
     "confidence": "medium",
     "verify_note": "Yukigassen snowball fight Japan Hokkaido Sobetsu Showa Shinzan rules 7 players flags",
     "created_at": "2026-10-12T10:36:40.992529+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "일본 홋카이도에서는 눈싸움도 규칙과 심판이 있는 경기로 치릅니다. 이를 ‘유키가센’이라고 합니다. 유키가센은 홋카이도 소베쓰정 쇼와신잔 일대에서 시작된 조직적인 눈덩이 경기입니다. 7인 팀이 헬멧 등 보호장비를 착용합니다. 정해진 경기장에서 제한 시간 동안 승부를 겨룹니다. 상대 선수를 눈덩이로 맞히면 탈락시킬 수 있습니다. 또는 상대 팀의 깃발을 빼앗아 승리할 수도 있습니다. 눈덩이 개수와 크기, 경기장 구조, 심판 규칙이 정해져 있습니다. 그래서 단순한 눈싸움과는 다른 스포츠입니다. 유키가센은 홋카이도를 중심으로 발전한 겨울 스포츠입니다. 일본 전역에서 일상적으로 행해지는 종목은 아닙니다.",
     "fact_checked": true,
     "fact_issues": [
@@ -11606,7 +11617,8 @@
     "status_v6": "video_done",
     "youtube_id": "SN4xNfiKeC0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "Switzerland",
