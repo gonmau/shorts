@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 10:24:04 (KST) · 기록 729건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 10:25:01 (KST) · 기록 730건 · 소재 428개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 16 | 0 | 6분 1초 |
+| -c | 17 | 0 | 6분 13초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 34 | 0 | 5초 |
 | approve | 10 | 0 | 1초 |
@@ -34,6 +34,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:24 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 11초 |  |
 | 10:23 | PC | fetch_images | fetch_images.py --index 388 --scene 8 --source pixabay --type photo | ✅ | 2초 |  |
 | 10:23 | PC | fetch_images | fetch_images.py --index 388 --scene 8 --source commons --type photo | ✅ | 6초 |  |
 | 10:21 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 386 | ✅ | 1초 |  |
