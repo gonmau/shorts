@@ -20,12 +20,12 @@
 18,South Africa,Designated braai (barbecue) sites in public parks,video_done,2026-09-14T05:08:16,,"[{'verdict': 'ok', '",,,8
 19,Vietnam,Tet red envelope (lì xì) tradition,video_done,2026-09-14T05:08:16,,"[{'verdict': 'ok', '",O,,8
 20,Bhutan,Nationwide tobacco sales ban,rejected,2026-09-20T04:24:09,,"[{'verdict': 'ok', '",O,,8
-21,France,Posthumous marriage (marriage after death),video_done,2026-09-20T04:24:09,,,,cL2o7eBsgTQ,12
-22,Uruguay,Home cultivation of cannabis allowed,video_done,2026-09-20T04:24:09,,,,,12
-23,Estonia,Online voting using national ID card,video_done,2026-09-20T04:24:09,,,O,,12
-24,Bolivia,Legal coca leaf chewing and tea consumption,video_done,2026-09-20T04:24:17,,,,,12
-25,Philippines,Bayanihan house‑moving tradition,video_done,2026-09-20T04:24:17,,,O,CxSjUpOfUFA,12
-26,Poland,Name‑day (imieniny) celebrations,video_done,2026-09-20T04:24:17,,,,,12
+21,France,Posthumous marriage (marriage after death),video_done,2026-09-20T04:24:09,,,,cL2o7eBsgTQ,
+22,Uruguay,Home cultivation of cannabis allowed,video_done,2026-09-20T04:24:09,,,,,
+23,Estonia,Online voting using national ID card,video_done,2026-09-20T04:24:09,,,O,,
+24,Bolivia,Legal coca leaf chewing and tea consumption,video_done,2026-09-20T04:24:17,,,,,
+25,Philippines,Bayanihan house‑moving tradition,video_done,2026-09-20T04:24:17,,,O,CxSjUpOfUFA,
+26,Poland,Name‑day (imieniny) celebrations,video_done,2026-09-20T04:24:17,,,,,
 27,Thailand,Legal protection of the King's portrait on currency,rejected,2026-09-20T04:24:17,,,O,,
 28,Norway,Allemannsretten – 자유롭게 자연을 이용할 권리,video_done,2026-09-20T04:24:28,,,,,
 29,Mexico,‘Hoy No Circula’ 차량 번호 제한 제도,rejected,2026-09-20T04:24:28,,,,,
@@ -182,7 +182,7 @@
 180,영국,영국(United Kingdom) 수확 축제(Harvest Festival),video_done,2026-10-14T22:16:27,,,O,E_8MGrQkqM4,
 181,몽골,몽골(Mongolia) 새해 첫날 축제 Tsagaan Sar(Цагаан сар),video_done,2026-10-14T22:16:27,,,O,_Yx7-PRDnPc,
 182,아르헨티나,아르헨티나(Argentina) 시민을 위한 별도 총기 면허 종류,rejected,2026-10-15T04:20:18,,,,,
-183,태국,푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival),video_done,2026-10-15T04:20:18,,,O,,
+183,인도네시아,푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival),video_done,2026-10-15T04:20:18,,,O,,
 184,태국,태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식,video_done,2026-10-15T04:20:18,,,O,,
 185,프랑스,Padstow(패드스타우)에서 매년 5월 1일 열리는 'Obby 'Oss 축제,rejected,2026-10-15T04:20:22,,,,,
 186,사모아,전 세계 여러 지역에서 주식으로 쓰이는 뿌리채소 타로,video_done,2026-10-15T04:20:22,partial,,O,sDpIMG24pDY,
@@ -280,7 +280,7 @@
 278,노르웨이,차와 함께하는 식사의 다양한 형태,video_done,2026-10-21T23:54:37,,,O,,
 279,프랑스,반찬 개수로 정해지는 한국 전통 식사 이름,rejected,2026-10-21T23:55:05,,,O,,
 280,싱가포르,계약 위반 시 법원이 물건을 직접 반환하도록 명령할 수 있다,video_done,2026-10-22T00:41:34,,,O,,
-281,파키스탄,펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라,video_done,2026-10-22T00:41:34,,,O,,
+281,덴마크,펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라,video_done,2026-10-22T00:41:34,,,O,,
 282,덴마크,"Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",rejected,2026-10-22T00:41:34,,,,,
 283,인도,인도(India) 동북부의 개고기(Dog meat) 소비,rejected,2026-10-22T00:41:38,,,,,
 284,이란,이란(Iran) 타아로프(Taarof) 예절,rejected,2026-10-22T00:41:38,,,,,
@@ -338,7 +338,7 @@
 336,미국,미국( United States )의 외설법은 연방·주 차원에서 포르노와 아동 성범죄를 규제,rejected,2026-10-28T10:36:27,,,,,
 337,쿠바,종교 정의는 학자마다 달라,video_done,2026-10-28T13:18:36,manual,"[{'verdict': 'ok', '",O,,
 338,조지아,파스카 빵은 아람어에서 유래,video_done,2026-10-28T13:18:36,manual,"[{'verdict': 'ok', '",O,T-EwR7HJMVo,
-339,영국,로지 왕국은 라운다 제국에서 이주해 설립,rejected,2026-10-28T13:18:36,manual,"[{'verdict': 'ok', '",,,
+339,영국,로지 왕국은 라운다 제국에서 이주해 설립,scripted,2026-10-28T13:18:36,manual,"[{'verdict': 'ok', '",,,
 340,칠레,티베트식 소금·버터 차 문화,video_done,2026-10-28T13:18:41,fixed,"[{'verdict': 'ok', '",O,rePjemJVx44,
 341,카자흐스탄,불꽃 춤 ‘차하르샨베 수리’,video_done,2026-10-28T13:18:41,manual,"[{'verdict': 'ok', '",O,,
 342,뉴질랜드,의료 과실의 필수 조건,video_done,2026-10-28T13:18:41,manual,"[{'verdict': 'bad', ",O,,
@@ -346,7 +346,7 @@
 344,아르헨티나,"마테 차, 금속 빨대로 마시는 남미 전통 음료",rejected,2026-10-28T13:18:59,manual,"[{'verdict': 'ok', '",,,
 345,쿠바,전 세계를 휘감은 돼지 구이 문화,rejected,2026-10-28T13:18:59,manual,"[{'verdict': 'ok', '",,,
 346,과테말라,미국이 주도한 과테말라 매독 실험,rejected,2026-10-28T13:19:28,manual,"[{'verdict': 'ok', '",,,
-347,마다가스카르,문화 속 금기의 숨은 이유,rejected,2026-10-28T13:19:28,manual,"[{'verdict': 'bad', ",,,
+347,마다가스카르,문화 속 금기의 숨은 이유,scripted,2026-10-28T13:19:28,manual,"[{'verdict': 'bad', ",,,
 348,마다가스카르,새해 복을 부르는 음식,video_done,2026-10-28T13:19:28,manual,"[{'verdict': 'bad', ",O,uJVHptxcJbs,
 349,멕시코,"트로츠키, 멕시코에서 여성 해방을 글로 외치다",rejected,2026-10-28T13:57:26,,,,,
 350,몰디브,"몰디브 무슬림 여성, 문화 차이 속 공통 정체성",rejected,2026-10-28T13:57:26,,,,,
@@ -428,3 +428,10 @@
 426,파키스탄,펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라,rejected,2026-10-22T00:41:34,,,O,,
 427,영국,전쟁 중에도 보호된 영국 대표 음식 피시앤칩스,rejected,2026-10-25T07:49:33,,,O,,
 428,일본,"일본 이자카야에서 주문하지 않은 작은 안주에 요금이 붙는 이유, 오토시 문화",video_done,2026-10-31T13:08:59,,"[{'verdict': 'ok', '",O,xo5CPR7ZyJ8,
+429,태국,"치앙마이 하늘을 가득 메운 수천 개의 등불, Yi Peng 축제",unverified,2026-10-31T15:37:15,,,,,
+430,스위스,"올림픽 기간 스위스 팀 전용 숙소, 일반인도 입장 가능",unverified,2026-10-31T15:37:15,,,,,
+431,영국,영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭,unverified,2026-10-31T15:37:15,,,,,
+432,불가리아,불가리아(Bulgaria)의 공공음주(public intoxication) 법규,unverified,2026-10-31T15:38:20,,,,,
+433,아랍에미리트,소말리아(Somalia)의 최장 해안선과 인구 구성,unverified,2026-10-31T15:38:20,,,,,
+434,태국,푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival),rejected,2026-10-15T04:20:18,,,O,,
+435,파키스탄,펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라,rejected,2026-10-22T00:41:34,,,O,,
