@@ -23972,7 +23972,7 @@
     "verify_note": "Photography in the Philippines",
     "confidence": "source",
     "created_at": "2026-10-22T11:28:10.938651+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "cross_checked": true,
     "cross_sources": 2,
     "cross_notes": [
@@ -24102,7 +24102,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0294_필리핀.mp4",
     "status_v6": "video_done",
     "youtube_id": "UCozNTUEuDY",
-    "uploaded_at": "2026-10-30T17:54:06.628603+09:00"
+    "uploaded_at": "2026-10-30T17:54:06.628603+09:00",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "라스타파리와 밥 말리, 레게의 상징은 대마 문화",
@@ -27224,7 +27225,7 @@
     "verify_note": "Loyal toast",
     "confidence": "source",
     "created_at": "2026-10-25T07:49:44.604361+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "스페인 파티에서 잔을 깨뜨리는 이유, 궁금하지 않나요? 스페인에서는 일부 모임에서 왕에게 건배하는 비공식적인 ‘충성 토스트’가 언급되는 경우가 있다고 전해집니다. 토스트 후에 남은 잔을 깨뜨리는 풍습이 있다고 하면, 이는 다음 토스트를 방지하려는 의미로 해석될 수도 있습니다. 실제로는 특정 지역이나 특별한 행사에서만 보이는 경우가 많아, 전국적으로 보편적인 풍습이라고 보기엔 어려운 면이 있습니다. 잔이 부서지는 순간, 그 자리에서 토스트에 대한 충성심을 나타내는 분위기가 느껴질 수도 있습니다. 그때 파티가 새로운 시작을 알리는 조용한 신호처럼 느껴지는 경우도 있습니다.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -27362,7 +27363,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0315_스페인.mp4",
     "status_v6": "video_done",
     "youtube_id": "x2BkgquAM_c",
-    "uploaded_at": "2026-10-29T10:41:59.270896+09:00"
+    "uploaded_at": "2026-10-29T10:41:59.270896+09:00",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "오본(Obon) – 조상 영혼이 찾아오는 가족 재회 축제",
@@ -28043,7 +28045,7 @@
     "verify_note": "Jury trial",
     "confidence": "source",
     "created_at": "2026-10-25T12:17:27.398744+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "배심원제, 사실은 민법 국가에서도 쓰인다고? 말레이시아는 1995년부터 배심원제를 없애고 판사가 직접 사실관계를 판단해 평결을 내립니다. 판사가 모든 결정을 내리는 벤치 트라이얼과는 달리, 배심원은 증언과 증거를 직접 검토해 “유죄·무죄”를 결정합니다. 이 제도는 관습법 국가에만 국한되지 않고, 일부 민법 국가에서도 형사 사건에 적용됩니다. 미국이 배심원제를 도입하면서 민·형사 절차 전반에 영향을 미쳤지만, 모든 중대한 형사 사건에 배심원제가 사용되는 것은 아니라는 점을 기억해 주세요. 바로 그 제한적인 적용이 배심원제의 흥미로운 차이점입니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -28144,7 +28146,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0320_말레이시아.mp4",
     "status_v6": "video_done",
     "youtube_id": "bHyYBHq65Ns",
-    "uploaded_at": "2026-10-30T01:19:20.689352+09:00"
+    "uploaded_at": "2026-10-30T01:19:20.689352+09:00",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "country": "라오스 (Laos)",
