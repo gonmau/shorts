@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 20:37:49 (KST) · 기록 812건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 20:46:33 (KST) · 기록 815건 · 소재 428개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | apply_review | 35 | 0 | 5초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 37 | 0 | 6시간 42분 |
-| check_uploads | 13 | 0 | 1분 16초 |
+| check_uploads | 15 | 0 | 1분 27초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
@@ -27,7 +27,7 @@
 | upload_to_youtube | 7 | 0 | 7분 9초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
 | 쇼츠 | 99 | 6 | 12시간 17분 |
-| 코드업데이트 | 36 | 0 | 0초 |
+| 코드업데이트 | 37 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -35,6 +35,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:46 | PC | check_uploads | check_uploads.py --clear-missing | ✅ | 5초 |  |
+| 20:46 | PC | check_uploads | check_uploads.py | ✅ | 5초 |  |
+| 20:45 | PC | 코드업데이트 | gonmau/shorts: 3개 (check_uploads.py, fix_shared_links.py, sync_db.py) | ✅ |  |  |
 | 20:37 | PC | check_uploads | check_uploads.py | ✅ | 6초 |  |
 | 20:36 | PC | sync_uploads | sync_uploads.py | ✅ | 4초 |  |
 | 20:36 | PC | sync_uploads | sync_uploads.py --dry | ✅ | 4초 |  |
