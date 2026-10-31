@@ -2388,7 +2388,7 @@
     "twist": "축제가 끝난 뒤, 남은 토마토는 즉시 비료로 재활용돼 농부들에게 무료로 배포됩니다.",
     "verify_note": "La Tomatina rules 1 hour squash tomatoes recycling",
     "created_at": "2026-09-14T05:08:16.951297+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "스페인 토마토 전쟁, 사실은 1시간만 허용된다는 사실! 매년 8월 마지막 수요일, 스페인 부뇰에서 라 토마티나 축제가 열립니다. 참가자들은 먼저 토마토를 손으로 으깨고, 그 다음 1시간 동안만 던질 수 있어요. 지방 정부가 쓰레기와 안전 문제를 줄이기 위해 만든 규칙이죠. 시간이 다 지나면 모두가 동시에 멈춥니다. 그리고 가장 놀라운 점은, 축제가 끝난 뒤 남은 토마토를 바로 비료로 재활용한다는 사실입니다. 이 비료는 지역 농부들에게 무료로 배포돼요. 이렇게 한 번의 파티가 농업까지 돕는 순환 구조가 완성됩니다. 여러분도 다음 라 토마티나를 기대하시나요? 구독과 좋아요, 알림 설정 잊지 마세요!",
     "audio_path_v2": "audio\\0017_Spain_v2.mp3",
     "timing_path_v2": "audio\\0017_Spain_v2_timing.json",
@@ -2471,7 +2471,8 @@
         "id": 4522800
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "reject_reason": "중복 소재"
   },
   {
     "country": "South Africa",
