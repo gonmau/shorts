@@ -36827,7 +36827,7 @@
     "verify_note": "Nine Emperor Gods Festival",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
     "title_line1": "푸껫 구황제신축제",
     "title_line2": "도시가 온통 축제?",
@@ -36916,7 +36916,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "country_before_fix": "인도네시아",
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "인도네시아의 유일한 내륙 지방, 하이랜드 파푸아(Highland Papua)",
@@ -37596,7 +37597,7 @@
     "verify_note": "Nine Emperor Gods Festival",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
     "title_line1": "푸껫 구황제신축제",
     "title_line2": "도시가 온통 축제?",
@@ -37685,7 +37686,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "country_before_fix": "인도네시아",
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "인도네시아의 유일한 내륙 지방, 하이랜드 파푸아(Highland Papua)",
@@ -45519,7 +45521,7 @@
     "verify_note": "Nine Emperor Gods Festival",
     "confidence": "source",
     "created_at": "2026-10-15T04:20:18.069832+00:00",
-    "status": "video_done",
+    "status": "rejected",
     "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
     "title_line1": "푸껫 구황제신축제",
     "title_line2": "도시가 온통 축제?",
@@ -45608,7 +45610,8 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
     "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "country_before_fix": "인도네시아",
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
