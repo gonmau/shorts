@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -32219,7 +32221,7 @@
     "verify_note": "Lozi kingdom",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "아프리카 남부의 로지 왕국은 어디에서 시작되었을까요? 지금의 잠비아 서부에는 로지족이 형성한 전통 왕국이 있었습니다. 이 지역은 잠베지강을 따라 펼쳐진 넓은 범람원과 연결됩니다. 로지 왕국의 초기 역사는 여러 구전 전통과 역사 연구를 통해 전해집니다. 일부 역사적 설명은 콩고 분지의 룬다 왕국과 관련된 이주를 언급합니다. 하지만 로지족의 기원을 하나의 이주 집단으로만 설명하기는 어렵습니다. 여러 공동체가 오랜 시간 이동하고 교류하며 형성되었기 때문입니다. 전통적으로 로지 사회의 최고 통치자는 리퉁가라고 불립니다. 왕국의 성장에는 지도자의 권위뿐 아니라 지리적 환경도 중요한 역할을 했습니다. 잠베지강의 범람원은 농업과 목축에 유리한 조건을 제공했습니다. 계절에 따라 물이 차오르는 환경은 주민들의 생활 방식에도 영향을 주었습니다. 로지 왕국의 역사는 단순한 정복의 이야기가 아닙니다. 강과 땅, 사람들의 이동이 함께 만들어 낸 역사입니다.",
     "fact_verifiability": "user",
@@ -32531,7 +32533,8 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "reject_reason": "나라와 주제 불일치(영국 / ZM)"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -34733,7 +34736,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "같은 행동인데 어떤 마을에서는 금기이고 다른 곳에서는 아무렇지 않을 수 있습니다. 마다가스카르에는 파디라고 불리는 전통적인 금기가 있습니다. 파디는 특정 행동이나 음식, 장소 등에 적용되는 금기와 제한을 뜻합니다. 지역과 가족, 공동체에 따라 내용이 다릅니다. 어떤 곳에서는 특정 동물을 먹지 않기도 합니다. 또 어떤 장소에서는 정해진 행동을 삼가야 합니다. 이런 규칙은 단순히 이상한 미신으로만 설명할 수 없습니다. 조상에 대한 존중과 공동체의 역사, 종교적 믿음이 연결되어 있기 때문입니다. 일부 파디는 자연환경을 보호하는 역할도 합니다. 특정 동물을 잡지 못하게 하거나 신성한 장소의 출입을 제한하는 사례가 있습니다. 이런 금기는 지역 주민들의 생활 방식에 영향을 줍니다. 다만 모든 파디가 환경 보호를 목적으로 만들어진 것은 아닙니다. 각각의 규칙에는 서로 다른 배경이 있습니다. 외부인의 눈에는 이해하기 어려운 금기도 있을 수 있습니다. 하지만 그 안에는 공동체가 오랜 시간 지켜온 가치와 기억이 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -35073,7 +35076,8 @@
           "c:28973464"
         ]
       }
-    ]
+    ],
+    "reject_reason": "성/민감 소재 자동 제외(혐오)"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -35088,7 +35092,7 @@
     "verify_note": "New Year's food",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "마다가스카르의 새해에는 어른을 찾아가 축복을 구하는 풍습이 있습니다. 마다가스카르의 새해 전통은 한 가지 모습으로만 설명되지 않습니다. 과거에는 알라하마디 베라는 전통적인 새해를 기념하기도 했습니다. 현재는 세계 여러 나라처럼 12월 말과 1월 초에도 새해를 축하합니다. 새해가 되면 젊은 세대가 어른들을 찾아가 인사를 드리는 풍습이 이어지기도 합니다. 이를 초 드라노와 연결해 설명합니다. 감사와 축복을 구하는 의미가 담겨 있습니다. 방문할 때는 곡물이나 콩, 닭 같은 선물을 준비하기도 합니다. 선물은 가족의 형편과 관계에 따라 달라집니다. 단순히 새해 인사를 주고받는 데서 끝나지 않습니다. 한 해 동안 도움을 준 사람에게 감사하는 시간이기도 합니다. 어른들은 젊은 세대에게 격려와 덕담을 전합니다. 이런 만남은 가족과 공동체의 관계를 다시 확인하는 계기가 됩니다. 새해의 복은 혼자 누리는 행운이 아니라 서로 나누는 마음에서 시작될 수도 있습니다.",
     "fact_verifiability": "user",
@@ -35152,55 +35156,49 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "ArtTower",
-        "page": "https://pixabay.com/photos/ancient-meditation-asia-background-3163325/",
-        "id": 3163325,
-        "type": "photo"
+        "source": "commons",
+        "user": "ko:User:쿠도군",
+        "license": "CC BY 2.0 kr",
+        "title": "Korean New Year Food-1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Korean_New_Year_Food-1.jpg",
+        "id": "c:89661378"
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Anai171",
-        "license": "CC BY-SA 4.0",
-        "title": "Gardien du \"Afo tsy maty\" - Rovan'Ambohidrabiby - Madagascar 02.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Gardien_du_%22Afo_tsy_maty%22_-_Rovan%27Ambohidrabiby_-_Madagascar_02.jpg",
-        "id": "c:146925446"
+        "source": "pixabay",
+        "user": "Innviertlerin",
+        "page": "https://pixabay.com/photos/lucky-pig-four-leaf-clover-new-year-5845141/",
+        "id": 5845141
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Hopeandlink",
-        "license": "CC BY-SA 4.0",
-        "title": "Typical malagasy costal wearing.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Typical_malagasy_costal_wearing.jpg",
-        "id": "c:146959128"
+        "source": "pixabay",
+        "user": "airtank",
+        "page": "https://pixabay.com/photos/lantern-festival-decoration-6939870/",
+        "id": 6939870
       },
       {
         "scene": 4,
+        "source": "pixabay",
+        "user": "elcroos",
+        "page": "https://pixabay.com/photos/gifts-christmas-holiday-decoration-9266322/",
+        "id": 9266322
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/couple-young-people-lovers-marriage-8365759/",
+        "id": 8365759
+      },
+      {
+        "scene": 6,
         "source": "commons",
         "user": "Derk29",
         "license": "CC BY-SA 4.0",
         "title": "New year eve and foods for celebrations.jpg",
         "page": "https://commons.wikimedia.org/wiki/File:New_year_eve_and_foods_for_celebrations.jpg",
         "id": "c:143240004"
-      },
-      {
-        "scene": 5,
-        "source": "pixabay",
-        "user": "Surprising_Media",
-        "page": "https://pixabay.com/photos/people-tourists-young-people-self-8274238/",
-        "id": 8274238,
-        "type": "photo"
-      },
-      {
-        "scene": 6,
-        "source": "commons",
-        "user": "Roderick Suñaz Sumalinog",
-        "license": "CC BY-SA 4.0",
-        "title": "The simple foods during new year eve 2024.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:The_simple_foods_during_new_year_eve_2024.jpg",
-        "id": "c:143416193"
       },
       {
         "scene": 7,
@@ -35218,20 +35216,19 @@
       },
       {
         "scene": 9,
-        "source": "commons",
-        "user": "Robert Ashworth from Bellingham, WA., USA",
-        "license": "CC BY 2.0",
-        "title": "Happy New Year 2018 (24576513187).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Happy_New_Year_2018_(24576513187).jpg",
-        "id": "c:66739653"
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472673/",
+        "id": 8472673
       },
       {
         "scene": 10,
-        "source": "pixabay",
-        "user": "dhatchina",
-        "page": "https://pixabay.com/photos/elderly-woman-countryside-10463655/",
-        "id": 10463655,
-        "type": "photo"
+        "source": "commons",
+        "user": "Fort Rucker",
+        "license": "Public domain",
+        "title": "Profiles in courage --1st WOC commander encourages leaders to invest in youth (5454308284)",
+        "page": "https://commons.wikimedia.org/wiki/File:Profiles_in_courage_--1st_WOC_commander_encourages_leaders_to_invest_in_youth_(5454308284).jpg",
+        "id": "c:70246498"
       },
       {
         "scene": 11,
@@ -35243,11 +35240,11 @@
       {
         "scene": 12,
         "source": "commons",
-        "user": "Sumita Roy Dutta",
+        "user": "ABIRM09",
         "license": "CC BY-SA 4.0",
-        "title": "Together in Faith Celebrating Inclusion Through Kumari Puja and Basanti puja at Voice Of W",
-        "page": "https://commons.wikimedia.org/wiki/File:Together_in_Faith_Celebrating_Inclusion_Through_Kumari_Puja_and_Basanti_puja_at_Voice_Of_World_Shalthighata_08.jpg",
-        "id": "c:187202335"
+        "title": "The blessings of Iftar multiply when it is shared with others.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_blessings_of_Iftar_multiply_when_it_is_shared_with_others.jpg",
+        "id": "c:162968263"
       }
     ],
     "image_source": "pixabay",
@@ -35428,7 +35425,16 @@
           "c:187549788"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0348_마다가스카르_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0348_마다가스카르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0348_마다가스카르.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0348_마다가스카르.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "uJVHptxcJbs",
+    "uploaded_at": "2026-11-01T00:38:49.308514+09:00"
   },
   {
     "topic": "트로츠키, 멕시코에서 여성 해방을 글로 외치다",
@@ -35475,7 +35481,7 @@
     "verify_note": "The Practice of Everyday Life",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:26.500738+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "프랑스에서는 거리가 단순히 이동하는 공간만은 아닙니다. 사람들이 만나고 문화를 즐기는 생활의 무대이기도 합니다. 카페 테라스에 앉아 지나가는 사람들을 바라보는 모습은 프랑스의 익숙한 풍경입니다. 시장에서는 지역 주민들이 식재료와 생활용품을 고릅니다. 광장에서는 공연이나 지역 행사가 열리기도 합니다. 거리 곳곳에는 예술 작품과 역사적인 건축물이 함께 자리합니다. 이런 공간은 관광객뿐 아니라 현지 주민에게도 중요합니다. 사람들은 카페에서 대화를 나누고, 시장에서 이웃을 만나며, 광장에서 시간을 보냅니다. 물론 프랑스의 모든 도시가 똑같은 모습을 가진 것은 아닙니다. 파리의 번화가와 작은 지방 도시의 일상은 상당히 다릅니다. 하지만 공공 공간이 사람들의 만남과 문화 활동을 담는다는 점은 공통적으로 살펴볼 만합니다. 거리는 도시의 모습을 보여주는 동시에 그곳에 사는 사람들의 생활을 드러냅니다. 프랑스의 문화를 이해하려면 박물관뿐 아니라 평범한 거리도 들여다봐야 합니다.",
     "fact_verifiability": "user",
@@ -35579,11 +35585,11 @@
       {
         "scene": 6,
         "source": "commons",
-        "user": "Press Information Department",
+        "user": "NASA Johnson Space Center",
         "license": "Public domain",
-        "title": "Syeeda Rizwana Hasan Advisor Water Resources Environment Forests Climate Change Speaks Loc",
-        "page": "https://commons.wikimedia.org/wiki/File:Syeeda_Rizwana_Hasan_Advisor_Water_Resources_Environment_Forests_Climate_Change_Speaks_Local_Residents_Alamdanga_Abhaynagar_November_10_2024_Inspects_Waterlogging_Bhodoba_Jessore_(PID-0005355).jpg",
-        "id": "c:175695669"
+        "title": "The Greater Tokyo Area in Japan pictured from the International Space Station (iss074e0170",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Greater_Tokyo_Area_in_Japan_pictured_from_the_International_Space_Station_(iss074e0170877).jpg",
+        "id": "c:182981054"
       },
       {
         "scene": 7,
@@ -35777,7 +35783,16 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0351_프랑스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0351_프랑스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0351_프랑스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0351_프랑스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "YYaPX-sTQSI",
+    "uploaded_at": "2026-11-01T00:38:51.148203+09:00"
   },
   {
     "topic": "태국 숲속 승려 전통",
@@ -35840,7 +35855,7 @@
     "verify_note": "Khmer Empire",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:37.953452+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "거대한 도시를 유지하려면 물을 어떻게 관리해야 할까요? 캄보디아의 크메르 제국은 물 관리 기술을 도시 발전에 활용했습니다. 대표적인 유적지 앙코르에는 사원만 있는 것이 아닙니다. 저수지와 운하, 제방과 수로 등 다양한 수리 시설이 남아 있습니다. 이런 시설은 계절에 따라 크게 달라지는 물의 흐름을 관리하는 데 활용됐습니다. 농업에 필요한 물을 확보하고 도시의 생활을 유지하는 데도 중요했습니다. 특히 앙코르 지역에는 거대한 저수지가 만들어졌습니다. 이곳은 단순히 물을 저장하는 공간이 아니었습니다. 도시의 구조와 농업 생산, 왕권의 상징성과도 연결됐습니다. 수많은 건축물과 수리 시설이 서로 연결되면서 거대한 도시 경관을 형성했습니다. 앙코르 유적은 약 400제곱킬로미터에 걸쳐 펼쳐져 있습니다. 크메르 제국의 뛰어난 건축 기술뿐 아니라 도시 운영 능력도 보여줍니다. 돌로 만든 사원만큼이나 중요한 유산은 보이지 않는 물의 길이었습니다.",
     "fact_verifiability": "user",
@@ -35904,12 +35919,10 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "User:Mattes",
-        "license": "CC BY 2.0 de",
-        "title": "GER — BY — Schwaben — Augsburg — Rathausplatz 1 (engl. Hinweistafel zum UNESCO-Status Augs",
-        "page": "https://commons.wikimedia.org/wiki/File:GER_%E2%80%94_BY_%E2%80%94_Schwaben_%E2%80%94_Augsburg_%E2%80%94_Rathausplatz_1_(engl._Hinweistafel_zum_UNESCO-Status_Augsburger_Wassermanagement-System)_Mattes_2022-11-05.jpg",
-        "id": "c:125106890"
+        "source": "pixabay",
+        "user": "jggrz",
+        "page": "https://pixabay.com/photos/pump-house-water-management-winter-7015437/",
+        "id": 7015437
       },
       {
         "scene": 2,
@@ -35959,11 +35972,12 @@
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "thepoorphotographer",
-        "page": "https://pixabay.com/photos/tokyo-woman-market-city-people-4436914/",
-        "id": 4436914,
-        "type": "photo"
+        "source": "commons",
+        "user": "Thames Mapping",
+        "license": "CC BY-SA 4.0",
+        "title": "Khmer Empire Expansion.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_Expansion.png",
+        "id": "c:99136957"
       },
       {
         "scene": 9,
@@ -35981,20 +35995,19 @@
       },
       {
         "scene": 11,
-        "source": "commons",
-        "user": "Thames Mapping",
-        "license": "CC BY-SA 4.0",
-        "title": "Khmer Empire Expansion.png",
-        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_Expansion.png",
-        "id": "c:99136957"
+        "source": "pixabay",
+        "user": "Leonhard_Niederwimmer",
+        "page": "https://pixabay.com/photos/nyc-new-york-city-america-usa-city-4854718/",
+        "id": 4854718
       },
       {
         "scene": 12,
-        "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/cave-cavern-dark-daylight-1835823/",
-        "id": 1835823,
-        "type": "photo"
+        "source": "commons",
+        "user": "DannamEmpire",
+        "license": "CC BY 4.0",
+        "title": "Khmer Empire c.900 (orthographic projection).png",
+        "page": "https://commons.wikimedia.org/wiki/File:Khmer_Empire_c.900_(orthographic_projection).png",
+        "id": "c:157835171"
       }
     ],
     "image_source": "pixabay",
@@ -36148,7 +36161,16 @@
           "c:99136957"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0355_캄보디아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0355_캄보디아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0355_캄보디아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0355_캄보디아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "E2Tfeq0tZvI",
+    "uploaded_at": "2026-11-01T00:38:52.982901+09:00"
   },
   {
     "topic": "다양한 언어와 방언이 섞인 크로아티아 문학(Hrvatska književnost)",
@@ -45140,9 +45162,9 @@
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
-    "hook": "스웨덴 축제 한복판에 갑자기 팝업 에스프레소 바가 등장한다!",
-    "body": "스웨덴에서는 커피가 사회적 윤활제로 자리 잡으며, 특히 에스프레소가 주요 음료다. 최근 도심 시장·축제·소매 행사에 모바일 커피 카트와 팝업 에스프레소 바가 늘어나, 사람들은 길거리에서 바로 특수 커피를 즐긴다.",
-    "twist": "이 모바일 바는 16세기 오스만 제국의 커피하우스 전통을 이어받은 형태다.",
+    "hook": "스웨덴의 일부 축제에서는 팝업 형태의 커피 부스를 볼 수 있는 경우가 있어요.",
+    "body": "스웨덴에서는 커피 이야기가 일상 대화에 자주 나오고, 에스프레소를 찾는 사람들도 꽤 있어요. 도심 시장이나 소규모 행사에서 모바일 커피 카트와 팝업 바를 보는 경우가 늘어나면서, 거리에서도 에스프레소를 마시는 사람들이 점점 늘고 있어요. 이 이동식 바는 현대 스웨덴의 카페 문화와 디자인 트렌드를 반영한 형태라고 할 수 있어요. 예전의 길거리 커피 분위기가 오늘날 스웨덴의 거리와 축제에서 다시 떠오르는 듯해요. 주요 도시와 축제에서 자주 보이는 이 문화가 스웨덴만의 커피 풍경을 만들고 있어요.",
+    "twist": "거리마다 퍼지는 에스프레소 향은 사람들을 모아 대화를 시작하게 하는 분위기를 만들곤 해요.",
     "caveat": "주요 도시는 물론 축제 현장에서 주로 관찰된다.",
     "country": "스웨덴",
     "theme": "관습/예절",
@@ -45151,7 +45173,85 @@
     "verify_note": "Coffee culture",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "스웨덴의 일부 축제에서는 팝업 형태의 커피 부스를 볼 수 있는 경우가 있어요. 스웨덴에서는 커피 이야기가 일상 대화에 자주 나오고, 에스프레소를 찾는 사람들도 꽤 있어요. 도심 시장이나 소규모 행사에서 모바일 커피 카트와 팝업 바를 보는 경우가 늘어나면서, 거리에서도 에스프레소를 마시는 사람들이 점점 늘고 있어요. 이 이동식 바는 현대 스웨덴의 카페 문화와 디자인 트렌드를 반영한 형태라고 할 수 있어요. 예전의 길거리 커피 분위기가 오늘날 스웨덴의 거리와 축제에서 다시 떠오르는 듯해요. 주요 도시와 축제에서 자주 보이는 이 문화가 스웨덴만의 커피 풍경을 만들고 있어요. 거리마다 퍼지는 에스프레소 향은 사람들을 모아 대화를 시작하게 하는 분위기를 만들곤 해요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 1,
+        "text": "스웨덴의 일부 축제에서는 팝업 형태의 커피 부스를 볼 수 있는 경우가 있어요."
+      },
+      {
+        "n": 2,
+        "text": "스웨덴에서는 커피 이야기가 일상 대화에 자주 나오고, 에스프레소를 찾는 사람들도 꽤 있어요."
+      },
+      {
+        "n": 3,
+        "text": "도심 시장이나 소규모 행사에서 모바일 커피 카트와 팝업 바를 보는 경우가 늘어나면서, 거리에서도 에스프레소를 마시는 사람들이 점점 늘고 있어요."
+      },
+      {
+        "n": 4,
+        "text": "이 이동식 바는 현대 스웨덴의 카페 문화와 디자인 트렌드를 반영한 형태라고 할 수 있어요."
+      },
+      {
+        "n": 5,
+        "text": "예전의 길거리 커피 분위기가 오늘날 스웨덴의 거리와 축제에서 다시 떠오르는 듯해요."
+      },
+      {
+        "n": 6,
+        "text": "주요 도시와 축제에서 자주 보이는 이 문화가 스웨덴만의 커피 풍경을 만들고 있어요."
+      },
+      {
+        "n": 7,
+        "text": "거리마다 퍼지는 에스프레소 향은 사람들을 모아 대화를 시작하게 하는 분위기를 만들곤 해요."
+      }
+    ],
+    "narration_original": "스웨덴 축제 한복판에 갑자기 팝업 에스프레소 바가 등장한다! 스웨덴에서는 커피가 사회적 윤활제로 자리 잡아, 특히 에스프레소가 가장 많이 찾는 음료입니다. 최근 도심 시장이나 축제, 소규모 행사 현장에 모바일 커피 카트와 팝업 에스프레소 바가 늘어나면서, 사람들은 거리에서 바로 진한 에스프레소 한 잔을 즐깁니다. 그런데 이 이동식 바는 16세기 오스만 제국의 커피하우스 전통을 이어받은 형태라는 점이 흥미롭습니다. 옛날에 길거리에서 사람들을 모아 대화를 나누게 했던 커피하우스가, 오늘날 스웨덴의 거리와 축제 현장에서 다시 살아나는 셈이죠. 주요 도시는 물론 축제 현장에서 주로 볼 수 있는 이 문화는, 스웨덴만의 독특한 커피 풍경을 만든다고 할 수 있습니다. 그때마다 거리마다 퍼지는 향긋한 에스프레소 향은, 과거와 현재가 만나 새로운 사회적 연결고리를 만들고 있음을 보여줍니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "축제에 *팝업* 바!"
+      },
+      {
+        "s": 3,
+        "text": "거리 *진한* 한잔"
+      },
+      {
+        "s": 5,
+        "text": "옛날 *카페* 부활"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 1번 문장: No reliable data on pop‑up espresso bars suddenly appearing at Swedish festivals",
+      "[수정됨] [unsupported] 2번 문장: Sweden has a strong coffee culture, but espresso is not documented as the most‑ordered drink",
+      "[수정됨] [unsupported] 3번 문장: Growth of mobile coffee carts at Swedish urban markets and festivals is not confirmed by sources",
+      "[수정됨] [contradicted] 4번 문장: Swedish mobile espresso bars are not historically linked to 16th‑century Ottoman coffee‑house tradition",
+      "[수정됨] [unsupported] 5번 문장: No evidence that historic street coffee‑houses directly inspire modern Swedish street coffee culture",
+      "[수정됨] [unsupported] 6번 문장: Claim that this is a uniquely Swedish phenomenon lacks verification",
+      "[수정됨] [unsupported] 7번 문장: Aesthetic statement about espresso aroma creating social links is not a verifiable fact",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 1번 문장: No reliable evidence of pop‑up coffee booths at Swedish festivals",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: General coffee talk is known, but no specific data on espresso seekers",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: Lacks evidence that mobile coffee carts are increasingly common in Swedish cities",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claim about reflecting design trends is unverified",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: No evidence of a revival of historic street‑coffee atmosphere",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: No data that this culture uniquely shapes Sweden's coffee landscape",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: No evidence that espresso aroma routinely gathers people for conversation"
+    ],
+    "title_line1": "축제에 뜬 이동식 바",
+    "title_line2": "향이 과거를 깨운다",
+    "image_queries": [
+      "festival popup coffee bar",
+      "Swedish people drinking espresso",
+      "street espresso cup",
+      "Ottoman style coffee house",
+      "revived vintage coffee stall",
+      "Sweden city festival coffee cart",
+      "steam coffee aroma street"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "고대 그리스 남성 동반자 제도",
@@ -45255,9 +45355,9 @@
   },
   {
     "topic": "성 발렌타인(Valentine)의 전설, 눈을 되찾다",
-    "hook": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’",
-    "body": "발렌타인 데이는 2월 14일에 기념되며, 로마 제국 시절 기독교인들을 돕다 감옥에 갇힌 성 발렌타인(Valentine)의 이야기가 전해집니다. 전통에 따르면 그는 감옥 안에서 눈이 먼 사람의 시력을 회복시켰다고 전해집니다.",
-    "twist": "감옥 안에서 눈을 고쳐준 이야기가 전해지는 전설입니다.",
+    "hook": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’이라는 이야기를 들어보셨나요?",
+    "body": "2월 14일 발렌타인 데이는 로마 시대에 순교한 성 발렌티노와 관련된 전통에서 유래된 것으로 알려져 있습니다. 전해지는 이야기 중에는 감옥에서 눈이 먼 사람이 시력을 회복한 사례가 있다는 전설이 있습니다. 그런데 이 이야기가 특별한 이유는 감옥이라는 비밀스러운 공간에서 눈을 고쳐줬다는 점입니다. 감옥 안이라는 제한된 환경에서도 기적 같은 치유가 일어났다는 전승은, 사랑과 희생이 어떤 형태로든 나타날 수 있음을 상징합니다. 다만, 이러한 전설은 전통적인 구전이며, 역사적 사실로 입증된 것은 아니라는 점을 기억해 주세요.",
+    "twist": "눈을 되찾은 그 순간, 발렌타인 성인의 이름은 사랑과 치유의 상징으로 남게 됩니다.",
     "caveat": "전통적인 전승이며, 역사적 사실로 증명된 것은 아닙니다.",
     "country": "우즈베키스탄",
     "theme": "언어/이름",
@@ -45266,7 +45366,53 @@
     "verify_note": "Valentine's Day",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’이라는 이야기를 들어보셨나요? 2월 14일 발렌타인 데이는 로마 시대에 순교한 성 발렌티노와 관련된 전통에서 유래된 것으로 알려져 있습니다. 전해지는 이야기 중에는 감옥에서 눈이 먼 사람이 시력을 회복한 사례가 있다는 전설이 있습니다. 그런데 이 이야기가 특별한 이유는 감옥이라는 비밀스러운 공간에서 눈을 고쳐줬다는 점입니다. 감옥 안이라는 제한된 환경에서도 기적 같은 치유가 일어났다는 전승은, 사랑과 희생이 어떤 형태로든 나타날 수 있음을 상징합니다. 다만, 이러한 전설은 전통적인 구전이며, 역사적 사실로 입증된 것은 아니라는 점을 기억해 주세요. 눈을 되찾은 그 순간, 발렌타인 성인의 이름은 사랑과 치유의 상징으로 남게 됩니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 3,
+        "text": "전해지는 이야기 중에는 감옥에서 눈이 먼 사람이 시력을 회복한 사례가 있다는 전설이 있습니다."
+      }
+    ],
+    "narration_original": "‘눈이 멀었다가 발렌타인 성인에게서 눈이 뜨면?’이라는 이야기를 들어보셨나요? 2월 14일, 발렌타인 데이는 로마 제국 시절 기독교인들을 돕다 감옥에 갇힌 성 발렌타인(Valentine)에게서 시작됩니다. 전해지는 전설에 따르면, 그는 감옥 안에서 눈이 먼 사람의 시력을 회복시켰다고 합니다. 그런데 이 이야기가 특별한 이유는 감옥이라는 비밀스러운 공간에서 눈을 고쳐줬다는 점입니다. 감옥 안이라는 제한된 환경에서도 기적 같은 치유가 일어났다는 전승은, 사랑과 희생이 어떤 형태로든 나타날 수 있음을 상징합니다. 다만, 이러한 전설은 전통적인 구전이며, 역사적 사실로 입증된 것은 아니라는 점을 기억해 주세요. 눈을 되찾은 그 순간, 발렌타인 성인의 이름은 사랑과 치유의 상징으로 남게 됩니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*눈*이 멀었다?"
+      },
+      {
+        "s": 2,
+        "text": "*감옥* 발렌타인"
+      },
+      {
+        "s": 3,
+        "text": "*시력* 회복 전설"
+      },
+      {
+        "s": 7,
+        "text": "*치유* 상징"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [unsupported] 3번 문장: No reliable evidence that such a miracle legend exists.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: No known evidence of such a specific legend; cannot verify."
+    ],
+    "title_line1": "우즈베키스탄 전설",
+    "title_line2": "눈 뜨면 사랑이?",
+    "image_queries": [
+      "blind eyes closeup",
+      "prison cell bars",
+      "eyes opening closeup",
+      "ancient stone prison",
+      "Valentine's Day heart",
+      "old manuscript page",
+      "healing heart illustration"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "춘절(Chinese New Year)의 등불 15일 연속",
@@ -45297,7 +45443,43 @@
     "verify_note": "Bullerengue",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:15.806091+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "노년 여성들이 드럼을 두드리며 마을 축제를 이끈다면, 바로 콜롬비아 카리브 해안과 파나마 다리엔 지방에서 전해지는 전통 음악·춤, 불레렝게를 떠올리게 됩니다. 이 음악은 주로 연령대가 높은 여성들이 현지 장인들이 만든 드럼과 함께 부르며, 리듬은 몸을 흔들게 하는 힘찬 북소리와 함께 흐릅니다.  \n\n그런데 공식적인 교육 없이도 세대를 넘어 마을 축제와 가족 행사에서 살아 숨 쉬는 이유는 구전 방식으로 전해지는 전통 때문입니다. 아이들은 어른들의 연주를 눈앞에서 보며 자연스럽게 몸짓과 노래를 익히고, 그렇게 오늘날까지 이어져 오고 있습니다.  \n\n최근 학술 연구와 문화 사업이 활발해지면서 불레렝게의 인지도는 점점 높아지고 있지만, 여전히 전통 전달은 구전이 중심이라는 점을 기억해야 합니다. 결국, 마을 한 구석에서 울려 퍼지는 드럼 소리는 과거와 현재를 잇는 살아있는 문화의 증거라 할 수 있겠네요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "콜롬비아 전통 불레렝게",
+    "title_line2": "노년 여성 드럼 비밀?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "드럼으로 *축제* 시작"
+      },
+      {
+        "s": 2,
+        "text": "*노년* 여성 드럼"
+      },
+      {
+        "s": 3,
+        "text": "구전으로 *전승*돼"
+      },
+      {
+        "s": 6,
+        "text": "드럼소리 *시간* 연결"
+      }
+    ],
+    "image_queries": [
+      "drum festival start",
+      "elderly women Bullerengue drums",
+      "Bullerengue oral tradition",
+      "children learning dance",
+      "Bullerengue cultural research",
+      "drum sound time connection"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
