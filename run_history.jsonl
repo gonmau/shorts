@@ -801,3 +801,4 @@
 {"id": "1793445260728-ab15a3", "time": "2026-10-31 20:14:20", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 6.1, "detail": ""}
 {"id": "1793445269916-482f9d", "time": "2026-10-31 20:14:29", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 6.3, "detail": ""}
 {"id": "1793445435867-f4c412", "time": "2026-10-31 20:17:15", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.6, "detail": ""}
+{"id": "1793445491871-65563c", "time": "2026-10-31 20:18:11", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 5.5, "detail": ""}
