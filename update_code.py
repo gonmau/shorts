@@ -8,7 +8,7 @@
 
 - 받는 것: 폴더 최상위의 *.py, requirements.txt (+ local_ui.py). 소재 DB, 이력, 설정, 토큰, 영상 등 데이터 파일은 절대 건드리지 않습니다.
 - 채널 안전장치: 이 폴더가 한국어 채널인데 영어 저장소 코드가 오는 것처럼 채널이 다르면 멈춥니다 (--force 로만 무시).
-- 비공개 저장소면 GITHUB_TOKEN 환경변수가 필요합니다. 끝나면 UI(bat)를 다시 실행하세요."""
+- 비공개 저장소면 GITHUB_TOKEN 환경변수가 필요합니다. 끝나면 안내 문구대로 화면 새로고침(Rerun) 또는 bat 재실행을 하세요."""
 import argparse
 import base64
 import hashlib
@@ -152,7 +152,14 @@ def main():
     olds = sorted([d for d in (BASE / "_backup").glob("*") if d.is_dir()]) if (BASE / "_backup").exists() else []
     for d in olds[:-KEEP_BACKUPS]:
         shutil.rmtree(d, ignore_errors=True)
-    print(f"✅ {len(todo)}개 파일을 업데이트했습니다. 이전 파일은 {bk.name if bk.exists() else '(없음)'} 에 보관" + ("\n⚠️ UI를 쓰고 있다면 창을 닫고 bat을 다시 실행하세요." if restart else ""))
+    names = [p for p, _, _ in todo]
+    print(f"✅ {len(todo)}개 파일을 업데이트했습니다. 이전 파일은 {bk.name if bk.exists() else '(없음)'} 에 보관")
+    if "requirements.txt" in names or any(p.endswith(".bat") for p in names):
+        print("⚠️ bat 재실행 필요: 새 패키지(requirements.txt)나 bat 파일이 바뀌었습니다. 창과 터미널을 닫고 bat을 다시 실행하세요. (패키지는 `pip install -r requirements.txt` 도 필요)")
+    elif any(p.endswith(".py") for p in names):
+        print("🔄 화면 새로고침(Rerun)만 하면 됩니다: 브라우저에서 R 키 또는 새로고침. bat 재실행은 필요 없습니다. (UI가 불러다 쓰는 모듈도 Streamlit이 바뀐 것을 자동으로 다시 불러옵니다)")
+    else:
+        print("ℹ️ 재실행 필요 없음 (화면·프로그램에 영향 없는 파일만 바뀌었습니다).")
     try:
         import history
         history.add("코드업데이트", f"{repo}: {len(todo)}개 ({', '.join(p for p, _, _ in todo[:6])})", "success", None, "")

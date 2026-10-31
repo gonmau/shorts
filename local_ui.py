@@ -828,7 +828,7 @@ TASKS = [
     ("폐기한 소재를 되살리고 싶어요", "맨 위 redo 칸에 `번호!` + 체크 (또는 1 소재 › 상태·폐기)"),
     ("롱폼 대본을 미리 보고 고치고 싶어요", "🎞 롱폼 › ① 대본·시나리오 만들기 → ② 수정"),
     ("PC와 GitHub 데이터가 다른 것 같아요", "⚙ 관리·동기화 › GitHub 동기화 › 차이 보기"),
-    ("새 코드를 받고 싶어요", "⚙ 관리·동기화 › 코드 업데이트 › 최신 코드로 업데이트 (끝나면 bat 재실행)"),
+    ("새 코드를 받고 싶어요", "⚙ 관리·동기화 › 코드 업데이트 › 최신 코드로 업데이트 (끝나면 안내대로: .py만 바뀌면 화면 새로고침(Rerun), 새 패키지/bat이 바뀌면 bat 재실행)"),
     ("지금까지 뭘 했는지 보고 싶어요", "⚙ 관리·동기화 › 작업 이력"),
 ]
 with H_main:
@@ -2363,7 +2363,7 @@ with TS:
                 run("sync_db.py", "--repo", TTS_CFG["gh_repo"], "--detail")
 
     with st.expander("🔄 코드 업데이트 (GitHub → 이 PC)", expanded=False):
-        st.caption("zip을 풀어 넣을 필요 없이, 이 채널 저장소의 최신 코드(*.py, requirements.txt)만 받아 덮어씁니다. 소재 DB·설정·토큰·영상은 건드리지 않고, 바뀐 파일은 _backup 폴더에 보관합니다. 채널이 다른 저장소면 멈춥니다. 끝나면 창을 닫고 bat을 다시 실행하세요.")
+        st.caption("zip을 풀어 넣을 필요 없이, 이 채널 저장소의 최신 코드(*.py, requirements.txt)만 받아 덮어씁니다. 소재 DB·설정·토큰·영상은 건드리지 않고, 바뀐 파일은 _backup 폴더에 보관합니다. 채널이 다른 저장소면 멈춥니다. 끝나면 결과 안내를 따르세요: .py만 바뀌면 화면 새로고침(Rerun)이면 되고, 새 패키지(requirements.txt)나 bat이 바뀌었을 때만 bat을 다시 실행합니다.")
         _u1, _u2, _u3 = st.columns(3)
         if _u3.button("⬆️ 이 PC 코드를 GitHub에 올리기", key="uc_push", disabled=not _gh_token(), help="zip으로 받은 코드를 PC에 넣은 뒤 이 버튼 한 번이면 GitHub 저장소에도 반영됩니다 (채널이 다른 저장소면 멈춤)"):
             run("update_code.py", "--repo", TTS_CFG["gh_repo"], "--push")
@@ -2372,7 +2372,7 @@ with TS:
         if _u2.button("⬇️ 최신 코드로 업데이트", key="uc_apply", type="primary"):
             if run("update_code.py", "--repo", TTS_CFG["gh_repo"]):
                 st.session_state["code_chk"] = ""
-                st.warning("코드를 받았습니다. 이 창과 터미널을 닫고 run_shorts.bat을 다시 실행해 주세요.")
+                st.info("코드를 받았습니다. 위 결과의 안내를 따르세요 (보통은 화면 새로고침/Rerun이면 됩니다. 새 패키지나 bat이 바뀐 경우에만 bat 재실행).")
 
     with st.expander("🧾 작업 이력 · 디스코드 알림", expanded=False):
         TTS_CFG["discord_notify"] = st.checkbox("오래 걸리는 작업이 끝나면 디스코드로 알림 (실패는 시간과 상관없이 알림)", bool(TTS_CFG.get("discord_notify")), key="dc_notify")
