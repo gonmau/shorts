@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-10-31 10:31:15 (KST) · 기록 734건 · 소재 428개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-10-31 14:16:53 (KST) · 기록 794건 · 소재 428개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,20 +8,20 @@
 |---|---|---|---|
 | -c | 21 | 0 | 7분 48초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 34 | 0 | 5초 |
+| apply_review | 35 | 0 | 5초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 18 | 0 | 3시간 10분 |
+| build_video | 37 | 0 | 6시간 42분 |
 | check_uploads | 3 | 0 | 17초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 15 | 0 | 1초 |
 | fetch_images | 79 | 1 | 1시간 39분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
-| generate_script | 85 | 0 | 1시간 5분 |
-| generate_tts | 21 | 0 | 8분 54초 |
+| generate_script | 104 | 0 | 1시간 5분 |
+| generate_tts | 40 | 0 | 17분 48초 |
 | image_check | 44 | 4 | 8분 7초 |
-| make_thumbnail | 3 | 0 | 7초 |
-| promote_ready | 34 | 0 | 4초 |
+| make_thumbnail | 4 | 0 | 22초 |
+| promote_ready | 35 | 0 | 4초 |
 | redo_videos | 10 | 0 | 2초 |
 | upload_to_youtube | 6 | 0 | 3분 15초 |
 | 롱폼 | 64 | 6 | 5시간 34분 |
@@ -34,6 +34,66 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:16 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 379,380,382,384,385,387,388,389,390,391,392,393,394,395,396,397,398,399,400 | ✅ | 14초 |  |
+| 14:16 | PC | build_video | build_video.py --index 400 --channel gonmauY --handle @gonmauY | ✅ | 10분 45초 |  |
+| 14:05 | PC | generate_tts | generate_tts.py --index 400 | ✅ | 26초 |  |
+| 14:05 | PC | generate_script | generate_script.py --extras-only --index 400 | ✅ | 1초 |  |
+| 14:05 | PC | build_video | build_video.py --index 399 --channel gonmauY --handle @gonmauY | ✅ | 10분 45초 |  |
+| 13:54 | PC | generate_tts | generate_tts.py --index 399 | ✅ | 27초 |  |
+| 13:54 | PC | generate_script | generate_script.py --extras-only --index 399 | ✅ | 1초 |  |
+| 13:54 | PC | build_video | build_video.py --index 398 --channel gonmauY --handle @gonmauY | ✅ | 10분 13초 |  |
+| 13:43 | PC | generate_tts | generate_tts.py --index 398 | ✅ | 35초 |  |
+| 13:43 | PC | generate_script | generate_script.py --extras-only --index 398 | ✅ | 2초 |  |
+| 13:43 | PC | build_video | build_video.py --index 397 --channel gonmauY --handle @gonmauY | ✅ | 15분 55초 |  |
+| 13:27 | PC | generate_tts | generate_tts.py --index 397 | ✅ | 33초 |  |
+| 13:26 | PC | generate_script | generate_script.py --extras-only --index 397 | ✅ | 1초 |  |
+| 13:26 | PC | build_video | build_video.py --index 396 --channel gonmauY --handle @gonmauY | ✅ | 14분 44초 |  |
+| 13:11 | PC | generate_tts | generate_tts.py --index 396 | ✅ | 34초 |  |
+| 13:11 | PC | generate_script | generate_script.py --extras-only --index 396 | ✅ | 2초 |  |
+| 13:11 | PC | build_video | build_video.py --index 395 --channel gonmauY --handle @gonmauY | ✅ | 15분 30초 |  |
+| 12:55 | PC | generate_tts | generate_tts.py --index 395 | ✅ | 29초 |  |
+| 12:55 | PC | generate_script | generate_script.py --extras-only --index 395 | ✅ | 1초 |  |
+| 12:55 | PC | build_video | build_video.py --index 394 --channel gonmauY --handle @gonmauY | ✅ | 10분 27초 |  |
+| 12:44 | PC | generate_tts | generate_tts.py --index 394 | ✅ | 27초 |  |
+| 12:44 | PC | generate_script | generate_script.py --extras-only --index 394 | ✅ | 1초 |  |
+| 12:44 | PC | build_video | build_video.py --index 393 --channel gonmauY --handle @gonmauY | ✅ | 10분 26초 |  |
+| 12:33 | PC | generate_tts | generate_tts.py --index 393 | ✅ | 26초 |  |
+| 12:33 | PC | generate_script | generate_script.py --extras-only --index 393 | ✅ | 1초 |  |
+| 12:33 | PC | build_video | build_video.py --index 392 --channel gonmauY --handle @gonmauY | ✅ | 10분 15초 |  |
+| 12:23 | PC | generate_tts | generate_tts.py --index 392 | ✅ | 26초 |  |
+| 12:22 | PC | generate_script | generate_script.py --extras-only --index 392 | ✅ | 1초 |  |
+| 12:22 | PC | build_video | build_video.py --index 391 --channel gonmauY --handle @gonmauY | ✅ | 9분 59초 |  |
+| 12:12 | PC | generate_tts | generate_tts.py --index 391 | ✅ | 26초 |  |
+| 12:12 | PC | generate_script | generate_script.py --extras-only --index 391 | ✅ | 1초 |  |
+| 12:12 | PC | build_video | build_video.py --index 390 --channel gonmauY --handle @gonmauY | ✅ | 10분 47초 |  |
+| 12:01 | PC | generate_tts | generate_tts.py --index 390 | ✅ | 28초 |  |
+| 12:00 | PC | generate_script | generate_script.py --extras-only --index 390 | ✅ | 1초 |  |
+| 12:00 | PC | build_video | build_video.py --index 389 --channel gonmauY --handle @gonmauY | ✅ | 10분 38초 |  |
+| 11:50 | PC | generate_tts | generate_tts.py --index 389 | ✅ | 27초 |  |
+| 11:49 | PC | generate_script | generate_script.py --extras-only --index 389 | ✅ | 1초 |  |
+| 11:49 | PC | build_video | build_video.py --index 388 --channel gonmauY --handle @gonmauY | ✅ | 10분 59초 |  |
+| 11:38 | PC | generate_tts | generate_tts.py --index 388 | ✅ | 28초 |  |
+| 11:38 | PC | generate_script | generate_script.py --extras-only --index 388 | ✅ | 2초 |  |
+| 11:38 | PC | build_video | build_video.py --index 387 --channel gonmauY --handle @gonmauY | ✅ | 10분 10초 |  |
+| 11:28 | PC | generate_tts | generate_tts.py --index 387 | ✅ | 26초 |  |
+| 11:27 | PC | generate_script | generate_script.py --extras-only --index 387 | ✅ | 1초 |  |
+| 11:27 | PC | build_video | build_video.py --index 385 --channel gonmauY --handle @gonmauY | ✅ | 9분 51초 |  |
+| 11:17 | PC | generate_tts | generate_tts.py --index 385 | ✅ | 26초 |  |
+| 11:17 | PC | generate_script | generate_script.py --extras-only --index 385 | ✅ | 1초 |  |
+| 11:17 | PC | build_video | build_video.py --index 384 --channel gonmauY --handle @gonmauY | ✅ | 11분 3초 |  |
+| 11:06 | PC | generate_tts | generate_tts.py --index 384 | ✅ | 26초 |  |
+| 11:05 | PC | generate_script | generate_script.py --extras-only --index 384 | ✅ | 1초 |  |
+| 11:05 | PC | build_video | build_video.py --index 382 --channel gonmauY --handle @gonmauY | ✅ | 10분 15초 |  |
+| 10:55 | PC | generate_tts | generate_tts.py --index 382 | ✅ | 26초 |  |
+| 10:54 | PC | generate_script | generate_script.py --extras-only --index 382 | ✅ | 1초 |  |
+| 10:54 | PC | build_video | build_video.py --index 380 --channel gonmauY --handle @gonmauY | ✅ | 9분 31초 |  |
+| 10:45 | PC | generate_tts | generate_tts.py --index 380 | ✅ | 24초 |  |
+| 10:45 | PC | generate_script | generate_script.py --extras-only --index 380 | ✅ | 1초 |  |
+| 10:44 | PC | build_video | build_video.py --index 379 --channel gonmauY --handle @gonmauY | ✅ | 9분 33초 |  |
+| 10:35 | PC | generate_tts | generate_tts.py --index 379 | ✅ | 24초 |  |
+| 10:35 | PC | generate_script | generate_script.py --extras-only --index 379 | ✅ | 1초 |  |
+| 10:34 | PC | promote_ready | promote_ready.py --start 379 | ✅ | 0초 |  |
+| 10:34 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 10:31 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 20초 |  |
 | 10:29 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 17초 |  |
 | 10:27 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 23초 |  |
