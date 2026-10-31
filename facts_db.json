@@ -33758,7 +33758,7 @@
     "verify_note": "Mate (drink)",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:59.770784+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "남미에서는 빨대 하나로 차를 마시는 독특한 문화가 있습니다. 아르헨티나의 대표 음료인 마테입니다. 마테는 마테나무의 잎을 말리고 잘게 만들어 우려낸 음료입니다. 일반적인 찻잔 대신 작은 호리병 모양의 용기에 담아 마십니다. 이 용기는 마테라고도 불립니다. 여기에 금속 빨대를 꽂는데 이름은 봄비야입니다. 봄비야 끝에는 작은 구멍이 있어 찻잎이 입으로 들어오는 것을 막아줍니다. 따뜻한 물을 부어 우려낸 뒤 천천히 마시는 방식입니다. 물을 다시 부어 여러 차례 즐길 수도 있습니다. 마테는 혼자 마시기도 하지만 여럿이 함께 나누는 문화도 발달했습니다. 한 사람이 준비한 용기를 차례로 돌려 마시기도 합니다. 그래서 마테는 단순한 음료 이상의 의미를 갖습니다. 친구와 가족이 모여 대화를 나누는 계기가 되기도 합니다. 아르헨티나의 일상에서 마테는 사람들을 연결하는 작은 매개체입니다. 금속 빨대 하나가 공동체의 문화를 이어주는 셈입니다.",
     "fact_verifiability": "user",
@@ -34067,7 +34067,8 @@
           "c:31569088"
         ]
       }
-    ]
+    ],
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "전 세계를 휘감은 돼지 구이 문화",
@@ -34403,7 +34404,7 @@
     "verify_note": "Guatemala syphilis experiments",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "사람들이 동의하지 않은 상태에서 매독에 감염시키는 실험이 실제로 벌어졌습니다. 장소는 중앙아메리카의 과테말라였습니다. 1946년부터 1948년 사이 미국 공중보건국 연구진이 진행한 사건입니다. 연구진은 매독과 임질 등 성병의 감염과 예방 방법을 연구했습니다. 하지만 연구 대상자들에게 충분한 설명과 동의를 받지 않았습니다. 군인과 교도소 수감자, 정신병원 환자 등이 연구에 포함됐습니다. 일부 대상자는 성병에 직접 노출되기도 했습니다. 이 과정은 인간의 존엄성과 연구 윤리를 심각하게 침해했습니다. 연구는 당시 미국 정부 기관의 지원을 받아 진행됐습니다. 사건은 오랫동안 널리 알려지지 않았습니다. 이후 관련 자료가 공개되면서 국제적인 비판이 일어났습니다. 미국 정부는 뒤늦게 과테말라에 공식 사과했습니다. 이 사건은 의학 연구에서 동의가 얼마나 중요한지 보여주는 사례입니다. 과학적 성과를 내세우더라도 사람의 권리를 침해할 수는 없습니다. 연구의 발전에는 반드시 지켜야 할 선이 있습니다.",
     "fact_verifiability": "user",
@@ -34716,7 +34717,8 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "문화 속 금기의 숨은 이유",
@@ -45232,7 +45234,8 @@
     "verify_note": "Tết",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "비치 아미시(Beachy Amish)의 교회는 중앙 교단이 없다",
@@ -45247,7 +45250,8 @@
     "verify_note": "Beachy Amish",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "성 발렌타인(Valentine)의 전설, 눈을 되찾다",
@@ -45277,7 +45281,8 @@
     "verify_note": "Chinese New Year",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "콜롬비아 전통 음악, 불레렝게 (Bullerengue)",
@@ -45382,7 +45387,8 @@
     "verify_note": "Strafgesetzbuch section 86a",
     "confidence": "source",
     "created_at": "2026-10-30T14:23:53.358514+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "부활절에 유다 인형을 불태우는 포르투갈 전통",
@@ -45397,7 +45403,8 @@
     "verify_note": "Burning of Judas",
     "confidence": "source",
     "created_at": "2026-10-30T14:23:57.558678+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "태양의 이동을 축하하는 타밀인 포날 축제",
