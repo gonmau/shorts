@@ -802,3 +802,4 @@
 {"id": "1793445269916-482f9d", "time": "2026-10-31 20:14:29", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 6.3, "detail": ""}
 {"id": "1793445435867-f4c412", "time": "2026-10-31 20:17:15", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 5.6, "detail": ""}
 {"id": "1793445491871-65563c", "time": "2026-10-31 20:18:11", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 5.5, "detail": ""}
+{"id": "1793445559800-6ccef6", "time": "2026-10-31 20:19:19", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (fix_shared_links.py, local_ui.py)", "status": "success", "secs": null, "detail": ""}
