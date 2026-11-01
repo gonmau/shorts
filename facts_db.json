@@ -46138,13 +46138,13 @@
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.2234,
+        "verdict": "bad",
+        "clip": 0.1824,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "2b4c382b1e6e",
-        "at": "2026-11-01 16:04",
+        "sig": "7507b55f6bc3",
+        "at": "2026-11-01 16:05",
         "scene": 10,
         "rejected_ids": [
           10452104,
