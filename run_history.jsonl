@@ -843,3 +843,8 @@
 {"id": "1793464213787-fb7b9b", "time": "2026-11-01 01:30:13", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 6.6, "detail": ""}
 {"id": "1793506741587-034a54", "time": "2026-11-01 13:19:01", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #107", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41271500707"}
 {"id": "1793515179316-b3e215", "time": "2026-11-01 15:39:39", "channel": "KO", "source": "PC", "kind": "resync_meta", "title": "resync_meta.py --indexes 339,347,404,407,409", "status": "success", "secs": 116.3, "detail": ""}
+{"id": "1793515434984-bb20c1", "time": "2026-11-01 15:43:54", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 409 --force", "status": "success", "secs": 96.1, "detail": ""}
+{"id": "1793515523078-c2007f", "time": "2026-11-01 15:45:23", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 407 --force", "status": "success", "secs": 87.6, "detail": ""}
+{"id": "1793515646260-afb783", "time": "2026-11-01 15:47:26", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 404 --force", "status": "success", "secs": 122.7, "detail": ""}
+{"id": "1793515778220-a15186", "time": "2026-11-01 15:49:38", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 347 --force", "status": "success", "secs": 131.5, "detail": ""}
+{"id": "1793515889106-437d5e", "time": "2026-11-01 15:51:29", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 339 --force", "status": "success", "secs": 110.3, "detail": ""}
