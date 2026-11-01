@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 21:52:28 (KST) · 기록 914건 · 소재 476개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 21:54:03 (KST) · 기록 916건 · 소재 476개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,6 +12,7 @@
 | approve | 10 | 0 | 1초 |
 | build_video | 40 | 0 | 7시간 19분 |
 | check_uploads | 20 | 0 | 1분 58초 |
+| cleanup_media | 1 | 0 | 1초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
@@ -28,7 +29,7 @@
 | upload_to_youtube | 9 | 0 | 7분 49초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 101 | 6 | 12시간 17분 |
-| 코드업데이트 | 38 | 0 | 0초 |
+| 코드업데이트 | 39 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -36,6 +37,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:53 | PC | cleanup_media | cleanup_media.py | ✅ | 1초 |  |
+| 21:52 | PC | 코드업데이트 | gonmau/shorts: 4개 (cleanup_media.py, common.py, local_ui.py, upload_to_youtube.py) | ✅ |  |  |
 | 19:14 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 36초 |  |
 | 17:28 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 1분 48초 |  |
 | 16:56 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 1분 46초 |  |
