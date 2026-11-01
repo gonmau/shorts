@@ -12,6 +12,11 @@ on:
         type: boolean
         default: false
 
+# 같은 작업이 겹쳐 돌면 중복 생성·업로드될 수 있어 한 번에 하나만 실행 (겹치면 앞 실행이 끝날 때까지 대기)
+concurrency:
+  group: culture-sync-uploads
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
