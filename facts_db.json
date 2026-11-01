@@ -48579,7 +48579,7 @@
     "verify_note": "Yhyakh",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:38.707178+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "동물도 의식을 가진다? 코끼리 장례식",
@@ -48594,7 +48594,7 @@
     "verify_note": "Ritual",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:41.979938+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
@@ -48609,7 +48609,7 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "두 사람 이상이 동시에 안아주는 ‘그룹 허그’?",
@@ -48624,7 +48624,7 @@
     "verify_note": "Hug",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -48639,7 +48639,7 @@
     "verify_note": "Samhain",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
@@ -48654,7 +48654,7 @@
     "verify_note": "Taoism",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
@@ -48669,7 +48669,7 @@
     "verify_note": "Denmark–Iceland relations",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "오스만 1세의 작은 영토가 3대 대륙을 지배",
@@ -48684,7 +48684,7 @@
     "verify_note": "Ottoman Empire",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "남극 바로 옆, 세계 최남단 나라 칠레",
@@ -48699,7 +48699,7 @@
     "verify_note": "Chile",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "메뉴 한 장으로 역사를 읽다",
@@ -48714,7 +48714,7 @@
     "verify_note": "Nathalie Cooke",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "레베(Levee) 전통",
@@ -48729,7 +48729,7 @@
     "verify_note": "Levee (ceremony)",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "이드 알-아드하, 모로코에서 4일간 이어지는 양희생 축제",
@@ -48744,6 +48744,6 @@
     "verify_note": "Eid al-Adha",
     "confidence": "source",
     "created_at": "2026-11-01T10:14:25.849204+00:00",
-    "status": "unverified"
+    "status": "verified"
   }
 ]
