@@ -32259,7 +32259,7 @@
       "migration route map",
       "Zambia western landscape",
       "wide river floodplain",
-      "Lozi kingdom region",
+      "Lozi kingdom",
       "Lozi tribal symbols",
       "Lunda migration route",
       "riverbank vegetation",
@@ -32274,7 +32274,7 @@
       "migration route map",
       "Zambia western landscape",
       "wide river floodplain",
-      "Lozi kingdom region",
+      "Lozi kingdom",
       "Lozi tribal symbols",
       "Lunda migration route",
       "riverbank vegetation",
@@ -32309,10 +32309,9 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "FMedic_photography",
-        "page": "https://pixabay.com/photos/church-sunrise-fog-environment-6853164/",
-        "id": 6853164,
-        "type": "photo"
+        "user": "Dlee",
+        "page": "https://pixabay.com/photos/fantasy-castle-cloud-sky-tower-782001/",
+        "id": 782001
       },
       {
         "scene": 5,
@@ -32416,12 +32415,12 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1696,
+        "clip": 0.1422,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "457a460bfc31",
-        "at": "2026-11-01 15:51",
+        "sig": "7d0528144986",
+        "at": "2026-11-01 16:16",
         "scene": 4,
         "rejected_ids": [
           10416643,
@@ -34734,7 +34733,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "같은 행동이 옆 마을에서는 금기가 될 수 있을까요? 마다가스카르의 파디를 보면 그렇습니다. 파디는 행동과 음식, 장소 등에 관한 금기입니다. 나라 전체가 똑같은 규칙을 따르는 건 아닙니다. 지역이나 가족, 혈연 집단에 따라 달라지죠. 어떤 동물을 먹지 않는 규칙도 있습니다. 특정 장소에서 행동을 삼가야 하는 경우도 있고요. 그 배경에는 조상을 존중하는 믿음이 있습니다. 공동체가 전해온 기억과 관계도 연결돼 있죠. 그래서 낯설다는 이유로 미신이라 단정하긴 어렵습니다. 일부 파디는 자연을 보호하는 효과도 냅니다. 동물을 잡지 않으면 그 종을 지키는 데 도움이 되죠. 하지만 모든 파디가 환경 보호를 위해 생긴 건 아닙니다. 조상과의 약속을 지키다가 보호 효과가 나기도 합니다. 금기의 내용과 영향은 지역마다 따로 살펴야 합니다. 겉으로 비슷한 규칙도 그 안의 사연은 다를 수 있죠. 누군가의 금지 목록이 다른 누군가에겐 가족의 기억입니다.",
     "fact_verifiability": "user",
@@ -35109,7 +35108,8 @@
           "c:28973464"
         ]
       }
-    ]
+    ],
+    "reject_reason": "UI에서 폐기 이미지 찾기 실패"
   },
   {
     "topic": "새해 복을 부르는 음식",
