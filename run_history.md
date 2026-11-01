@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 15:57:58 (KST) · 기록 856건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 15:58:42 (KST) · 기록 857건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 26 | 0 | 13분 9초 |
+| -c | 27 | 0 | 13분 36초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 39 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
@@ -36,6 +36,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:58 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 27초 |  |
 | 15:57 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 17초 |  |
 | 15:57 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 12초 |  |
 | 15:57 | PC | fetch_images | fetch_images.py --index 409 --scene 1 --source pixabay --type photo | ✅ | 2초 |  |
