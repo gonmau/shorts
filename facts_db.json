@@ -32219,7 +32219,7 @@
     "verify_note": "Lozi kingdom",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "한 왕국의 시작을 한 번의 이주로 설명할 수 있을까요? 로지 왕국의 역사는 그보다 복잡합니다. 무대는 영국이 아니라 지금의 잠비아 서부입니다. 잠베지강의 넓은 범람원과 깊이 연결된 왕국이죠. 이곳의 로지는 여러 집단을 아우르는 이름입니다. 따라서 모두가 한곳에서 왔다고 단정하면 곤란합니다. 초기 역사에는 구전 전통과 여러 해석이 얽혀 있습니다. 주변 지역과의 이동과 교류도 함께 살펴야 하죠. 룬다에서 이주해 세웠다는 설명만으론 부족합니다. 왕국의 성장에는 강 주변의 환경도 중요했습니다. 비옥한 계곡은 사람들이 모여 살기 좋은 조건이었죠. 농업과 목축도 이 환경과 맞물려 있었습니다. 하지만 범람원은 늘 같은 모습으로 머물지 않습니다. 강물이 불어나면 생활 공간도 달라집니다. 주민들은 범람에 맞춰 평원과 가장자리 사이를 옮겼죠. 왕국의 역사를 보려면 사람뿐 아니라 물도 봐야 합니다. 이 나라의 또 다른 역사책은 해마다 차오르는 강입니다.",
     "fact_verifiability": "user",
@@ -32531,7 +32531,8 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "reject_reason": "UI에서 폐기 이미지 찾기 실패"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -45869,7 +45870,7 @@
     "verify_note": "Valentine's Day",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:42.252013+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "감옥에 갇힌 성인이 누군가의 눈을 뜨게 했다면요? 성 발렌타인에게 붙은 전설 가운데 하나입니다. 다만 우즈베키스탄에서 생긴 이야기는 아닙니다. 로마의 성인에 관한 전승으로 알려져 있습니다. 한 이야기에서는 간수의 딸이 앞을 보지 못합니다. 수감된 발렌타인이 그를 낫게 했다고 하죠. 이별을 앞두고 편지를 남겼다는 이야기도 있습니다. 하지만 여기서 전설과 역사를 나눠야 합니다. 실제로 시력을 되찾았다는 기록은 확인되지 않습니다. 전해지는 이야기들도 서로 다른 내용을 담고 있죠. 같은 이름의 순교자들이 있어 인물 구분도 어렵습니다. 오늘날의 연인 문화도 한 사건으로 설명되진 않습니다. 오랜 세월 여러 이야기와 풍습이 겹쳐진 결과죠. 그러니 이 일화를 치료 사례로 받아들이면 곤란합니다. 기적을 믿는 마음을 담은 전설로 보는 게 맞습니다. 어쩌면 이 이야기가 비추는 건 눈보다 마음일지 모릅니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -46190,7 +46191,14 @@
           "c:4310843"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0407_우즈베키스탄_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0407_우즈베키스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0407_우즈베키스탄.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0407_우즈베키스탄.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "춘절(Chinese New Year)의 등불 15일 연속",
@@ -46221,7 +46229,7 @@
     "verify_note": "Bullerengue",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:15.806091+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "노래를 이끄는 할머니의 목소리가 마을의 기억이라면요? 콜롬비아 카리브 지역의 불레렝게 이야기입니다. 아프리카계 공동체가 이어온 노래와 춤인데요. 북을 치는 연주자와 노래하는 사람들이 함께합니다. 특히 여성 소리꾼들의 역할이 중요합니다. 한 사람이 노래를 시작하면 여럿이 응답하죠. 손뼉과 북소리 사이로 춤도 어우러집니다. 할머니들이 모두 직접 북을 치는 건 아닙니다. 노래와 연주, 춤이 서로 다른 몫을 맡는 거죠. 가사에는 기쁨뿐 아니라 슬픔과 일상도 담깁니다. 가수 페트로나 마르티네스도 가족에게 배웠습니다. 할머니와 증조할머니의 노래를 이어받았죠. 이렇게 사람에게 배우는 전승이 중요합니다. 그렇다고 학교 밖에서만 전해지는 건 아닙니다. 오늘날에는 축제와 문화 활동도 전승을 돕습니다. 무대는 달라져도 함께 노래하는 힘은 남습니다. 북소리 뒤에서 오래된 목소리가 다시 살아납니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -46546,7 +46554,14 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0409_콜롬비아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0409_콜롬비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0409_콜롬비아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0409_콜롬비아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
