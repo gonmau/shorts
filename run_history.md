@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 15:56:25 (KST) · 기록 851건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 15:56:41 (KST) · 기록 853건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -15,7 +15,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 85 | 1 | 1시간 49분 |
+| fetch_images | 87 | 1 | 1시간 49분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 107 | 0 | 1시간 5분 |
 | generate_tts | 42 | 0 | 18분 35초 |
@@ -36,6 +36,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:56 | PC | fetch_images | fetch_images.py --index 409 --scene 1 --source pixabay --type photo | ✅ | 2초 |  |
+| 15:56 | PC | fetch_images | fetch_images.py --index 409 --scene 1 --source commons --type photo | ✅ | 3초 |  |
 | 15:56 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 21초 |  |
 | 15:51 | PC | fetch_images | fetch_images.py --index 339 --force | ✅ | 1분 50초 |  |
 | 15:49 | PC | fetch_images | fetch_images.py --index 347 --force | ✅ | 2분 11초 |  |
