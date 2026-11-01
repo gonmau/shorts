@@ -45512,7 +45512,7 @@
     "image_queries": [
       "outdoor meal temporary shelter",
       "Sukkot",
-      "수코트",
+      "이스라엘 수코트",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45556,11 +45556,12 @@
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "qimono",
-        "page": "https://pixabay.com/photos/buddha-statue-thailand-buddhism-5641534/",
-        "id": 5641534,
-        "type": "photo"
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
       },
       {
         "scene": 4,
@@ -45676,12 +45677,12 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.191,
+        "clip": 0.1712,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "57f67ecdfdf8",
-        "at": "2026-11-01 16:09",
+        "sig": "aa909176075b",
+        "at": "2026-11-01 16:11",
         "scene": 3,
         "rejected_ids": [
           1284085,
