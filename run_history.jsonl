@@ -912,3 +912,5 @@
 {"id": "1793519817056-3a929a", "time": "2026-11-01 16:56:57", "channel": "KO", "source": "PC", "kind": "generate_culture_facts", "title": "generate_culture_facts.py --count 12", "status": "success", "secs": 106.5, "detail": ""}
 {"id": "1793521694392-54d29b", "time": "2026-11-01 17:28:14", "channel": "KO", "source": "PC", "kind": "generate_culture_facts", "title": "generate_culture_facts.py --count 12", "status": "success", "secs": 108.3, "detail": ""}
 {"id": "1793528066134-159aaf", "time": "2026-11-01 19:14:26", "channel": "KO", "source": "PC", "kind": "generate_culture_facts", "title": "generate_culture_facts.py --count 12", "status": "success", "secs": 156.8, "detail": ""}
+{"id": "1793537579845-bb8711", "time": "2026-11-01 21:52:59", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 4개 (cleanup_media.py, common.py, local_ui.py, upload_to_youtube.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1793537636744-5d8bd4", "time": "2026-11-01 21:53:56", "channel": "KO", "source": "PC", "kind": "cleanup_media", "title": "cleanup_media.py", "status": "success", "secs": 1.9, "detail": ""}
