@@ -46244,7 +46244,7 @@
     "image_queries": [
       "grandmother sing",
       "Colombia African dance",
-      "Colombia drummers singers",
+      "Colombia drummers",
       "female singers performing",
       "Colombia handclap drum dance",
       "women playing drums",
@@ -46263,7 +46263,7 @@
     "image_queries_done": [
       "grandmother sing",
       "Colombia African dance",
-      "Colombia drummers singers",
+      "Colombia drummers",
       "female singers performing",
       "Colombia handclap drum dance",
       "women playing drums",
@@ -46294,11 +46294,11 @@
       {
         "scene": 3,
         "source": "commons",
-        "user": "Jessica Cardona Bijalba",
-        "license": "CC BY-SA 4.0",
-        "title": "Bullerengue.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Bullerengue.jpg",
-        "id": "c:129563930"
+        "user": "Artesanias musicales",
+        "license": "CC BY-SA 3.0",
+        "title": "Baterista. Colección Artistas en plastilina de Carlos Vélez. 2005 corferias - Bogotá, Colo",
+        "page": "https://commons.wikimedia.org/wiki/File:Baterista._Colecci%C3%B3n_Artistas_en_plastilina_de_Carlos_V%C3%A9lez._2005_corferias_-_Bogot%C3%A1,_Colombia..JPG",
+        "id": "c:19159830"
       },
       {
         "scene": 4,
@@ -46405,15 +46405,21 @@
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.2372,
+        "verdict": "bad",
+        "clip": 0.1707,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "1930c2fe7eae",
-        "at": "2026-11-01 15:43",
+        "sig": "50ce5bdc054c",
+        "at": "2026-11-01 15:58",
         "scene": 3,
-        "rejected_ids": []
+        "rejected_ids": [
+          10168674,
+          7286907,
+          "c:12098921",
+          "c:155851516",
+          "c:19159830"
+        ]
       },
       {
         "verdict": "ok",
