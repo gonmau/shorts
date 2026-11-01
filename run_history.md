@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 16:02:00 (KST) · 기록 863건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 16:02:12 (KST) · 기록 864건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -15,7 +15,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 92 | 2 | 1시간 49분 |
+| fetch_images | 93 | 2 | 1시간 49분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 107 | 0 | 1시간 5분 |
 | generate_tts | 42 | 0 | 18분 35초 |
@@ -36,6 +36,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:02 | PC | fetch_images | fetch_images.py --index 407 --scene 6 --source pixabay --type photo | ✅ | 1초 |  |
 | 16:01 | PC | fetch_images | fetch_images.py --index 407 --scene 6 --source commons --type photo | ❌ failed | 3초 |   File "C:\Users\seokg\Downloads\latest-cloud\fetch_images.py", line 92, in download     raise RuntimeError(f"이미지가 너무 작음 |
 | 16:01 | PC | fetch_images | fetch_images.py --index 407 --scene 4 --source commons --type illustration | ✅ | 3초 |  |
 | 16:01 | PC | fetch_images | fetch_images.py --index 407 --scene 4 --source pixabay --type illustration | ✅ | 3초 |  |
