@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 16:05:30 (KST) · 기록 867건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 16:06:33 (KST) · 기록 869건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 29 | 0 | 14분 17초 |
+| -c | 30 | 0 | 14분 36초 |
 | DB커밋 | 129 | 0 | 0초 |
 | apply_review | 39 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
@@ -15,7 +15,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 94 | 2 | 1시간 49분 |
+| fetch_images | 95 | 2 | 1시간 49분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 107 | 0 | 1시간 5분 |
 | generate_tts | 42 | 0 | 18분 35초 |
@@ -36,6 +36,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:06 | PC | fetch_images | fetch_images.py --index 404 --scene 2 --source commons --type photo | ✅ | 2초 |  |
+| 16:06 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 19초 |  |
 | 16:05 | PC | image_check | image_check.py --index 407 --scene 10 --force | ✅ | 10초 |  |
 | 16:04 | PC | fetch_images | fetch_images.py --index 407 --scene 10 --source pixabay --type photo | ✅ | 3초 |  |
 | 16:04 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 18초 |  |
