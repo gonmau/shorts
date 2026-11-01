@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 15:39:46 (KST) · 기록 845건 · 소재 439개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 15:51:35 (KST) · 기록 850건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -15,7 +15,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 80 | 1 | 1시간 39분 |
+| fetch_images | 85 | 1 | 1시간 49분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 107 | 0 | 1시간 5분 |
 | generate_tts | 42 | 0 | 18분 35초 |
@@ -36,6 +36,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:51 | PC | fetch_images | fetch_images.py --index 339 --force | ✅ | 1분 50초 |  |
+| 15:49 | PC | fetch_images | fetch_images.py --index 347 --force | ✅ | 2분 11초 |  |
+| 15:47 | PC | fetch_images | fetch_images.py --index 404 --force | ✅ | 2분 2초 |  |
+| 15:45 | PC | fetch_images | fetch_images.py --index 407 --force | ✅ | 1분 27초 |  |
+| 15:43 | PC | fetch_images | fetch_images.py --index 409 --force | ✅ | 1분 36초 |  |
 | 15:39 | PC | resync_meta | resync_meta.py --indexes 339,347,404,407,409 | ✅ | 1분 56초 |  |
 | 13:19 | Actions | 쇼츠 | culture-shorts-pipeline #107 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/41271500707 |
 | 01:30 | PC | check_uploads | check_uploads.py | ✅ | 6초 |  |
