@@ -45511,8 +45511,8 @@
     "title_line2": "집 없이 밥만?",
     "image_queries": [
       "outdoor meal temporary shelter",
-      "Sukkot festival",
-      "seven day Sukkot",
+      "Sukkot",
+      "seven day",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45525,8 +45525,8 @@
     ],
     "image_queries_done": [
       "outdoor meal temporary shelter",
-      "Sukkot festival",
-      "seven day Sukkot",
+      "Sukkot",
+      "seven day",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45549,21 +45549,17 @@
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Silar",
-        "license": "CC BY-SA 4.0",
-        "title": "02021 0032 Sukkot in Galicia.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:02021_0032_Sukkot_in_Galicia.jpg",
-        "id": "c:108921378"
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/pomegranate-fruits-jewish-tradition-6654590/",
+        "id": 6654590
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Zachi Evenor",
-        "license": "CC BY 2.0",
-        "title": "Sukkoth - IZE10160.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
-        "id": "c:43902432"
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/binz-beach-cloudy-day-stormy-day-7360595/",
+        "id": 7360595
       },
       {
         "scene": 4,
@@ -45662,12 +45658,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3097,
+        "clip": 0.2408,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "fee4de5770d3",
-        "at": "2026-11-01 16:06",
+        "sig": "cef8c29ff596",
+        "at": "2026-11-01 16:08",
         "scene": 2,
         "rejected_ids": [
           4927978,
@@ -45679,12 +45675,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3374,
+        "clip": 0.261,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "42c14b86530b",
-        "at": "2026-11-01 15:46",
+        "sig": "7f2957785b0f",
+        "at": "2026-11-01 16:08",
         "scene": 3,
         "rejected_ids": [
           7360595,
