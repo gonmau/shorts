@@ -45511,7 +45511,7 @@
     "title_line2": "집 없이 밥만?",
     "image_queries": [
       "outdoor meal temporary shelter",
-      "Sukkot festival Israel",
+      "Sukkot festival",
       "seven day Sukkot",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
@@ -45525,7 +45525,7 @@
     ],
     "image_queries_done": [
       "outdoor meal temporary shelter",
-      "Sukkot festival Israel",
+      "Sukkot festival",
       "seven day Sukkot",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
@@ -45549,10 +45549,12 @@
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "Ri_Ya",
-        "page": "https://pixabay.com/photos/menorah-hanukkah-dreidel-holiday-7662079/",
-        "id": 7662079
+        "source": "commons",
+        "user": "Silar",
+        "license": "CC BY-SA 4.0",
+        "title": "02021 0032 Sukkot in Galicia.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:02021_0032_Sukkot_in_Galicia.jpg",
+        "id": "c:108921378"
       },
       {
         "scene": 3,
@@ -45659,13 +45661,13 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.1687,
+        "verdict": "ok",
+        "clip": 0.3097,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "4f18af151252",
-        "at": "2026-11-01 15:46",
+        "sig": "fee4de5770d3",
+        "at": "2026-11-01 16:06",
         "scene": 2,
         "rejected_ids": [
           4927978,
