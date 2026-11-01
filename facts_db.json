@@ -46244,7 +46244,7 @@
     "image_queries": [
       "grandmother sing",
       "Colombia African dance",
-      "Colombia drummers",
+      "Colombia drummer",
       "female singers performing",
       "Colombia handclap drum dance",
       "women playing drums",
@@ -46293,12 +46293,11 @@
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Artesanias musicales",
-        "license": "CC BY-SA 3.0",
-        "title": "Baterista. Colección Artistas en plastilina de Carlos Vélez. 2005 corferias - Bogotá, Colo",
-        "page": "https://commons.wikimedia.org/wiki/File:Baterista._Colecci%C3%B3n_Artistas_en_plastilina_de_Carlos_V%C3%A9lez._2005_corferias_-_Bogot%C3%A1,_Colombia..JPG",
-        "id": "c:19159830"
+        "source": "pixabay",
+        "user": "EyeCandyDesignz",
+        "page": "https://pixabay.com/photos/drummer-drums-concert-performance-6869168/",
+        "id": 6869168,
+        "type": "photo"
       },
       {
         "scene": 4,
