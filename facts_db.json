@@ -45556,10 +45556,12 @@
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "Mylene2401",
-        "page": "https://pixabay.com/photos/binz-beach-cloudy-day-stormy-day-7360595/",
-        "id": 7360595
+        "source": "commons",
+        "user": "kallerna",
+        "license": "CC BY-SA 4.0",
+        "title": "Seven Sisters 3.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_3.jpg",
+        "id": "c:129144575"
       },
       {
         "scene": 4,
