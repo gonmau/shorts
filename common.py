@@ -8,9 +8,37 @@ from pathlib import Path
 DB_PATH = Path("facts_db.json")
 
 
+_MEDIA_KEYS = (("video_path_v6", "videos"), ("audio_path_v2", "audio"), ("timing_path_v2", "audio"))
+_DIR_OK = {}
+
+
+def _fix_media_paths(db):
+    """폴더를 다른 곳(외장하드 등)으로 옮기면 DB에 적힌 옛 절대경로(C:\\...)가 틀어진다.
+    옛 폴더가 없으면 이 폴더의 videos/ audio/ 안에 같은 이름의 파일이 있는지 보고 그 경로로 바꾼다 (폴더 존재 여부만 캐시해 느려지지 않음)."""
+    import os
+    for f in db:
+        for k, sub in _MEDIA_KEYS:
+            v = f.get(k)
+            if not v:
+                continue
+            sv = str(v).replace("\\", "/")
+            d = os.path.dirname(sv)
+            if not d:
+                continue
+            ok = _DIR_OK.get(d)
+            if ok is None:
+                ok = _DIR_OK[d] = os.path.isdir(d)
+            if ok:
+                continue
+            cand = os.path.join(sub, os.path.basename(sv))
+            if os.path.exists(cand):
+                f[k] = cand
+    return db
+
+
 def load_db():
     with DB_PATH.open("r", encoding="utf-8") as f:
-        return json.load(f)
+        return _fix_media_paths(json.load(f))
 
 
 def save_db(db):

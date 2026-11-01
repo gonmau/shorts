@@ -74,6 +74,11 @@ on:
         options: [script, highlight, srt, both]
         default: script
 
+# 같은 파이프라인이 겹쳐 돌면 같은 소재를 두 번 만들거나 올릴 수 있어 한 번에 하나만 실행 (겹치면 앞 실행이 끝날 때까지 대기)
+concurrency:
+  group: culture-shorts-pipeline
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

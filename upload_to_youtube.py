@@ -15,7 +15,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-from common import youtube_meta, youtube_tags
+from common import load_db, youtube_meta, youtube_tags
 
 DB = Path("facts_db.json")
 
@@ -66,7 +66,7 @@ def main():
     args = ap.parse_args()
     only = {int(x) for x in args.indexes.replace(" ", "").split(",") if x.strip().isdigit()}
 
-    db = json.loads(DB.read_text(encoding="utf-8"))
+    db = load_db()          # 옛 절대경로를 이 폴더 기준으로 바로잡아 읽는다
     yt = youtube()
     done = 0
     kst = timezone(timedelta(hours=9))
