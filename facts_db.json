@@ -45910,7 +45910,7 @@
       "historical manuscript page",
       "ancient martyr tombstone",
       "couple holding hands outdoors",
-      "traditional folk celebration",
+      "전설",
       "miracle legend illustration",
       "heart over eyes symbolism"
     ],
@@ -45928,7 +45928,7 @@
       "historical manuscript page",
       "ancient martyr tombstone",
       "couple holding hands outdoors",
-      "traditional folk celebration",
+      "전설",
       "miracle legend illustration",
       "heart over eyes symbolism"
     ],
@@ -46003,9 +46003,9 @@
       {
         "scene": 10,
         "source": "pixabay",
-        "user": "yazidnasuha",
-        "page": "https://pixabay.com/photos/cultural-parade-traditional-costume-10452104/",
-        "id": 10452104,
+        "user": "MonikaP",
+        "page": "https://pixabay.com/photos/king-artus-metal-sculpture-bronze-1507392/",
+        "id": 1507392,
         "type": "photo"
       },
       {
@@ -46139,12 +46139,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2935,
+        "clip": 0.2234,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7b53f5b37757",
-        "at": "2026-11-01 15:45",
+        "sig": "2b4c382b1e6e",
+        "at": "2026-11-01 16:04",
         "scene": 10,
         "rejected_ids": [
           10452104,
