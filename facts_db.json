@@ -34771,7 +34771,7 @@
       }
     ],
     "image_queries": [
-      "neighboring village taboo",
+      "금기",
       "Madagascar padi rules",
       "Madagascar village customs",
       "Madagascar family animal taboo",
@@ -34786,7 +34786,7 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "neighboring village taboo",
+      "taboo",
       "Madagascar padi rules",
       "Madagascar village customs",
       "Madagascar family animal taboo",
@@ -34802,12 +34802,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Hunter Kahn",
-        "license": "Public domain",
-        "title": "Taboo at esu concert.JPG",
-        "page": "https://commons.wikimedia.org/wiki/File:Taboo_at_esu_concert.JPG",
-        "id": "c:7901854"
+        "source": "pixabay",
+        "user": "Nika_Akin",
+        "page": "https://pixabay.com/illustrations/hush-silence-quiet-secret-silent-4707795/",
+        "id": 4707795,
+        "type": "illustration"
       },
       {
         "scene": 2,
@@ -34901,21 +34900,25 @@
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "ok",
-        "clip": 0.2201,
+        "verdict": "bad",
+        "clip": 0.1821,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8f243d50a835",
-        "at": "2026-11-01 15:48",
+        "sig": "263d6813fcb2",
+        "at": "2026-11-01 16:13",
         "scene": 1,
         "rejected_ids": [
           1987212,
+          3308001,
+          3600555,
           7055475,
           8254024,
           "c:16270065",
           "c:57403191",
+          "c:75795692",
           "c:7901854",
+          "c:92534181",
           "c:94799888"
         ]
       },
@@ -45478,7 +45481,7 @@
     "verify_note": "Sukkot",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "집을 두고 일주일 동안 임시 거처에서 밥을 먹는다고요? 유대교 명절 수코트에서 볼 수 있는 풍경입니다. 이스라엘과 여러 나라의 유대인들이 지킵니다. 수코트 자체는 칠 일 동안 이어지는 명절입니다. 이때 사용하는 임시 거처를 수카라고 부릅니다. 다만 꼭 나무 판자로만 짓는 집은 아닙니다. 벽에는 천이나 목재 같은 재료를 쓸 수 있습니다. 지붕은 잘라낸 나뭇가지 같은 식물 재료로 덮죠. 하늘 아래 세운 이곳에서 식사하며 명절을 보냅니다. 광야에서 지냈다는 성서의 이야기를 기억하는 거죠. 네 가지 식물을 드는 의식도 있습니다. 대추야자와 도금양, 버드나무의 가지를 씁니다. 여기에 에트로그라는 감귤류 열매를 더합니다. 이들을 함께 아르바 미님이라고 부릅니다. 축복을 낭송하고 여러 방향으로 흔드는데요. 이 의식은 식사 때만 하는 행동은 아닙니다. 평소의 집에서 잠시 벗어나 삶을 돌아보는 시간입니다. 가장 여린 지붕 아래서 소중한 것을 다시 찾는 셈이죠.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -45817,7 +45820,8 @@
         "scene": 12,
         "rejected_ids": []
       }
-    ]
+    ],
+    "reject_reason": "UI에서 폐기 이미지 찾기 실패"
   },
   {
     "topic": "베트남 설, 1월 말부터 2월 중순까지",
