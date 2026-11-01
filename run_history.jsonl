@@ -841,3 +841,4 @@
 {"id": "1793463752947-96efe7", "time": "2026-11-01 01:22:32", "channel": "KO", "source": "Actions", "kind": "롱폼", "title": "culture-longform #13", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41217445361"}
 {"id": "1793464185706-212754", "time": "2026-11-01 01:29:45", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (local_ui.py, upload_to_youtube.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1793464213787-fb7b9b", "time": "2026-11-01 01:30:13", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 6.6, "detail": ""}
+{"id": "1793506741587-034a54", "time": "2026-11-01 13:19:01", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #107", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41271500707"}
