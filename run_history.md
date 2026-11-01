@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 16:10:50 (KST) · 기록 882건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 16:11:18 (KST) · 기록 884건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -15,11 +15,11 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 103 | 2 | 1시간 50분 |
+| fetch_images | 104 | 2 | 1시간 50분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
 | generate_script | 107 | 0 | 1시간 5분 |
 | generate_tts | 42 | 0 | 18분 35초 |
-| image_check | 48 | 4 | 8분 48초 |
+| image_check | 49 | 4 | 8분 58초 |
 | make_thumbnail | 5 | 0 | 24초 |
 | promote_ready | 39 | 0 | 5초 |
 | redo_videos | 10 | 0 | 2초 |
@@ -36,6 +36,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:11 | PC | fetch_images | fetch_images.py --index 404 --scene 3 --source commons --type photo | ✅ | 6초 |  |
+| 16:11 | PC | image_check | image_check.py --index 404 --scene 3 --force | ✅ | 9초 |  |
 | 16:10 | PC | fetch_images | fetch_images.py --index 404 --scene 3 --source pixabay --type photo | ✅ | 3초 |  |
 | 16:10 | PC | fetch_images | fetch_images.py --index 404 --scene 3 --source pixabay --type photo | ✅ | 3초 |  |
 | 16:09 | PC | image_check | image_check.py --index 404 --scene 3 --force | ✅ | 10초 |  |
