@@ -704,6 +704,21 @@ with T6a:
                 st.session_state["gh_dirty"] = True
                 st.success(f"[{int(_mn)}] {_o.get('country', '')} 에 영상 {_m.group(1)} 을 연결했습니다.")
                 st.rerun()
+    with st.expander("🧹 디스크 정리 (업로드 끝난 소재의 영상·음성·사진 지우기)"):
+        st.caption("유튜브에 올라간(youtube_id 있음) 소재의 영상·음성·썸네일·장면 사진 파일을 지워 용량을 확보합니다. 대본·소재 DB, 내가 고른 사진(my_images)은 지우지 않습니다. 지운 소재를 다시 만들려면 이미지부터 다시 받아야 합니다.")
+        _cl_clips = st.checkbox("롱폼 클립(clips/)도 포함 — 아직 롱폼에 안 쓴 소재가 있으면 끄세요", False, key="cl_clips")
+        _cl_rej = st.checkbox("폐기한 소재의 파일도 포함", False, key="cl_rej")
+        _cl_idx = st.text_input("번호 지정 (비우면 전체, 예: 3,5-9)", "", key="cl_idx")
+        _ca = []
+        if _cl_clips: _ca.append("--clips")
+        if _cl_rej: _ca.append("--rejected")
+        if _cl_idx.strip(): _ca += ["--indexes", _cl_idx.strip()]
+        _c1, _c2 = st.columns(2)
+        if _c1.button("용량 확인 (지우지 않음)", key="cl_scan"):
+            run("cleanup_media.py", *_ca)
+        _cl_ok = _c2.checkbox("위 대상을 정말 지웁니다", False, key="cl_ok")
+        if _c2.button("지우기", key="cl_go", disabled=not _cl_ok):
+            run("cleanup_media.py", "--delete", *_ca)
     with st.expander("🔎 업로드 현황 점검 (삭제된 영상 · 중복 영상)"):
         st.caption("채널(비공개 포함)의 실제 영상 목록과 DB의 업로드 기록을 비교합니다. ① 채널에 없는 영상(삭제됨) ② 채널 안의 중복 영상 ③ 한 영상이 여러 소재에 연결된 경우. 점검만 하고 DB는 바꾸지 않습니다. 영상 삭제는 유튜브 스튜디오에서 직접 하세요.")
         _ck1, _ck2 = st.columns(2)
