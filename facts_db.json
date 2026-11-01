@@ -45512,7 +45512,7 @@
     "image_queries": [
       "outdoor meal temporary shelter",
       "Sukkot",
-      "seven day",
+      "달력",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45526,7 +45526,7 @@
     "image_queries_done": [
       "outdoor meal temporary shelter",
       "Sukkot",
-      "seven day",
+      "달력",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45556,12 +45556,11 @@
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "kallerna",
-        "license": "CC BY-SA 4.0",
-        "title": "Seven Sisters 3.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_3.jpg",
-        "id": "c:129144575"
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/desk-laptop-office-notebook-mac-1284085/",
+        "id": 1284085,
+        "type": "photo"
       },
       {
         "scene": 4,
@@ -45676,16 +45675,21 @@
         ]
       },
       {
-        "verdict": "ok",
-        "clip": 0.261,
+        "verdict": "bad",
+        "clip": 0.191,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7f2957785b0f",
-        "at": "2026-11-01 16:08",
+        "sig": "57f67ecdfdf8",
+        "at": "2026-11-01 16:09",
         "scene": 3,
         "rejected_ids": [
+          1284085,
           7360595,
+          791939,
+          "c:144989675",
+          "c:2965793",
+          "c:38421119",
           "c:43902432"
         ]
       },
