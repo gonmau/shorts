@@ -32271,126 +32271,120 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "Lozi kingdom map",
-      "Lozi people Zambia",
-      "Zambezi floodplain",
-      "African oral storytelling",
-      "Lunda kingdom migration",
-      "Lozi tribal artifacts",
-      "Ritunga ruler statue",
-      "Zambezi river valley",
-      "floodplain agriculture",
-      "seasonal flood water",
-      "Lozi kingdom history",
-      "river land people history"
+      "migration route map",
+      "Zambia western landscape",
+      "wide river floodplain",
+      "Lozi kingdom region",
+      "Lozi tribal symbols",
+      "Lunda migration route",
+      "riverbank vegetation",
+      "fertile river valley",
+      "changing floodplain",
+      "rising river water",
+      "river water levels",
+      "annual flood river"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "marcoianna3",
-        "page": "https://pixabay.com/photos/middle-earth-lord-of-the-rings-4760561/",
-        "id": 4760561,
-        "type": "photo"
+        "user": "Joa70",
+        "page": "https://pixabay.com/photos/travel-boat-ship-sea-blue-9755525/",
+        "id": 9755525
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Walusiku Nalishuwa",
-        "license": "CC BY-SA 4.0",
-        "title": "Jj. 2jpg.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Jj._2jpg.jpg",
-        "id": "c:76457321"
+        "source": "pixabay",
+        "user": "8moments",
+        "page": "https://pixabay.com/photos/waterfall-victoria-falls-spray-2227010/",
+        "id": 2227010
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Jethro Chooka",
-        "license": "CC BY-SA 4.0",
-        "title": "Water taxi on the Zambezi river Barotse floodplain western province, Zambia.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Water_taxi_on_the_Zambezi_river_Barotse_floodplain_western_province,_Zambia.jpg",
-        "id": "c:132667362"
+        "source": "pixabay",
+        "user": "LubosHouska",
+        "page": "https://pixabay.com/photos/forest-luhy-floodplain-water-river-835166/",
+        "id": 835166
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Kowal2701",
-        "license": "CC0",
-        "title": "African storytelling.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:African_storytelling.jpg",
-        "id": "c:153512588"
+        "source": "pixabay",
+        "user": "FMedic_photography",
+        "page": "https://pixabay.com/photos/church-sunrise-fog-environment-6853164/",
+        "id": 6853164,
+        "type": "photo"
       },
       {
         "scene": 5,
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/totem-pole-indian-native-culture-467528/",
+        "id": 467528
+      },
+      {
+        "scene": 6,
         "source": "pixabay",
         "user": "StudioFriluma",
         "page": "https://pixabay.com/photos/birds-flight-moon-blue-sky-10492277/",
         "id": 10492277
       },
       {
-        "scene": 6,
-        "source": "pixabay",
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/totem-pole-faces-alaska-american-21040/",
-        "id": 21040,
-        "type": "photo"
-      },
-      {
         "scene": 7,
-        "source": "pixabay",
-        "user": "analogicus",
-        "page": "https://pixabay.com/photos/freeze-frame-sculpture-3562658/",
-        "id": 3562658
+        "source": "commons",
+        "user": "Katmai National Park and Preserve",
+        "license": "Public domain",
+        "title": "Frost on riverbank vegetation (12635724215).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Frost_on_riverbank_vegetation_(12635724215).jpg",
+        "id": "c:45044555"
       },
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "fietzfotos",
-        "page": "https://pixabay.com/photos/waterfall-river-canyon-valley-5971815/",
-        "id": 5971815
+        "user": "CoastalSandpiper",
+        "page": "https://pixabay.com/photos/river-plains-valley-grassland-7342768/",
+        "id": 7342768
       },
       {
         "scene": 9,
         "source": "commons",
-        "user": "Adam C Snape",
-        "license": "CC BY-SA 2.0",
-        "title": "Waterlogged agricultural land on the Ribble floodplain - geograph.org.uk - 4781239.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Waterlogged_agricultural_land_on_the_Ribble_floodplain_-_geograph.org.uk_-_4781239.jpg",
-        "id": "c:132051962"
+        "user": "MBH",
+        "license": "CC BY 4.0",
+        "title": "Brateyevo Floodplain Park 04.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Brateyevo_Floodplain_Park_04.jpg",
+        "id": "c:183384415"
       },
       {
         "scene": 10,
         "source": "pixabay",
-        "user": "sergei_spas",
-        "page": "https://pixabay.com/photos/ice-river-hummocks-melting-nature-4132215/",
-        "id": 4132215
+        "user": "jhenning",
+        "page": "https://pixabay.com/photos/flood-water-pole-flooding-flooded-5978320/",
+        "id": 5978320
       },
       {
         "scene": 11,
         "source": "pixabay",
-        "user": "jamiemusialek",
-        "page": "https://pixabay.com/photos/old-tower-architecture-medieval-5082848/",
-        "id": 5082848,
-        "type": "photo"
+        "user": "xesisex",
+        "page": "https://pixabay.com/photos/water-level-meter-6531617/",
+        "id": 6531617
       },
       {
         "scene": 12,
         "source": "pixabay",
-        "user": "adampyxvideo",
-        "page": "https://pixabay.com/photos/black-and-white-portrait-tradition-10052168/",
-        "id": 10052168
+        "user": "Peggychoucair",
+        "page": "https://pixabay.com/photos/flow-flood-tree-floods-clouds-8642898/",
+        "id": 8642898
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.269,
+        "clip": 0.2771,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8976800ea351",
-        "at": "2026-10-30 15:42",
+        "sig": "e6bda434b551",
+        "at": "2026-11-01 15:51",
         "scene": 1,
         "rejected_ids": [
           2528477,
@@ -32400,115 +32394,122 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2284,
+        "clip": 0.286,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "5c52daafc24d",
-        "at": "2026-10-30 15:42",
+        "sig": "74ab80e07e13",
+        "at": "2026-11-01 15:51",
         "scene": 2,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2217,
+        "clip": 0.2376,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b6bc6203bcd2",
-        "at": "2026-10-30 15:42",
+        "sig": "36aeb5aae416",
+        "at": "2026-11-01 15:51",
         "scene": 3,
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.3048,
+        "verdict": "bad",
+        "clip": 0.1696,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "91df805e3ae6",
-        "at": "2026-10-30 15:42",
+        "sig": "457a460bfc31",
+        "at": "2026-11-01 15:51",
         "scene": 4,
-        "rejected_ids": []
+        "rejected_ids": [
+          10416643,
+          6853164,
+          782001
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.251,
+        "clip": 0.2593,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "64f56279b739",
-        "at": "2026-10-30 15:42",
+        "sig": "dbc54a50b100",
+        "at": "2026-11-01 15:51",
         "scene": 5,
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.2431,
+        "verdict": "bad",
+        "clip": 0.2117,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8e4743cba202",
-        "at": "2026-10-30 15:42",
+        "sig": "16900adb239f",
+        "at": "2026-11-01 15:51",
         "scene": 6,
         "rejected_ids": [
+          10492277,
           21040,
           437423,
+          6650752,
+          7242608,
           7995207
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2692,
+        "clip": 0.2938,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ca52623d162b",
-        "at": "2026-10-30 15:42",
+        "sig": "0a33542f29f7",
+        "at": "2026-11-01 15:51",
         "scene": 7,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2766,
+        "clip": 0.2827,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "1f4b585cb477",
-        "at": "2026-10-30 15:42",
+        "sig": "4acaa4f0993d",
+        "at": "2026-11-01 15:51",
         "scene": 8,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3003,
+        "clip": 0.2362,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "1d21d5d1f15b",
-        "at": "2026-10-30 15:42",
+        "sig": "dceb72c98120",
+        "at": "2026-11-01 15:51",
         "scene": 9,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.254,
+        "clip": 0.2763,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "3f9ed351d357",
-        "at": "2026-10-30 15:42",
+        "sig": "447df7877d94",
+        "at": "2026-11-01 15:51",
         "scene": 10,
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.152,
+        "verdict": "ok",
+        "clip": 0.281,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f3aebe98187f",
-        "at": "2026-10-30 15:42",
+        "sig": "b0e48998957e",
+        "at": "2026-11-01 15:51",
         "scene": 11,
         "rejected_ids": [
           2203648,
@@ -32518,12 +32519,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2231,
+        "clip": 0.2787,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "4080008bffad",
-        "at": "2026-10-30 15:42",
+        "sig": "9b1c632ce806",
+        "at": "2026-11-01 15:51",
         "scene": 12,
         "rejected_ids": []
       }
@@ -34785,44 +34786,43 @@
     ],
     "scene_count": 12,
     "image_queries_done": [
-      "taboo difference signs",
-      "Madagascar traditional taboo",
-      "padi taboo symbol",
-      "Madagascar animal taboo",
-      "Madagascar restricted ritual",
-      "ancestral community respect",
-      "nature protection ritual",
-      "sacred animal restriction",
-      "Madagascar taboo lifestyle",
-      "taboo origins background",
-      "foreigners misunderstanding taboo",
-      "old values memory"
+      "neighboring village taboo",
+      "Madagascar padi rules",
+      "Madagascar village customs",
+      "Madagascar family animal taboo",
+      "ancestor respect belief",
+      "community memory symbol",
+      "traditional ritual object",
+      "Madagascar padi nature",
+      "padi not environmental",
+      "ancestor promise ritual",
+      "regional taboo study",
+      "family memory list"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "commons",
-        "user": "Walmart Stores",
-        "license": "CC BY 2.0",
-        "title": "Taboo 2011.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Taboo_2011.jpg",
-        "id": "c:16270065"
+        "user": "Hunter Kahn",
+        "license": "Public domain",
+        "title": "Taboo at esu concert.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Taboo_at_esu_concert.JPG",
+        "id": "c:7901854"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "MarkThomas",
-        "page": "https://pixabay.com/photos/lemur-wildlife-madagascar-1794519/",
-        "id": 1794519,
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
+        "id": 8483282,
         "type": "photo"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Engin_Akyurt",
-        "page": "https://pixabay.com/photos/peace-symbol-petals-ukraine-7043225/",
-        "id": 7043225,
-        "type": "photo"
+        "user": "NikkyS",
+        "page": "https://pixabay.com/photos/cottages-houses-village-madagascar-7687138/",
+        "id": 7687138
       },
       {
         "scene": 4,
@@ -34834,36 +34834,30 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "ambquinn",
-        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
-        "id": 8483282,
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/man-praying-church-prayer-pews-2179326/",
+        "id": 2179326,
         "type": "photo"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "RaphaelPoesia",
-        "page": "https://pixabay.com/photos/brazil-man-working-slums-favela-9058041/",
-        "id": 9058041
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/paper-figures-paper-man-together-6652452/",
+        "id": 6652452,
+        "type": "photo"
       },
       {
         "scene": 7,
-        "source": "pixabay",
-        "user": "sasint",
-        "page": "https://pixabay.com/photos/boy-monk-river-buddhist-water-1807518/",
-        "id": 1807518
+        "source": "commons",
+        "user": "Jaypro events",
+        "license": "CC BY-SA 4.0",
+        "title": "Traditional Yoruba ritual 3.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_Yoruba_ritual_3.jpg",
+        "id": "c:198194404"
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "Daderot",
-        "license": "CC0",
-        "title": "Sacred animal figurine, Restored Le dynasty, 17th-18th century AD, crimson wood - National",
-        "page": "https://commons.wikimedia.org/wiki/File:Sacred_animal_figurine,_Restored_Le_dynasty,_17th-18th_century_AD,_crimson_wood_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05662.JPG",
-        "id": "c:40591219"
-      },
-      {
-        "scene": 9,
         "source": "pixabay",
         "user": "ambquinn",
         "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
@@ -34871,73 +34865,88 @@
         "type": "photo"
       },
       {
+        "scene": 9,
+        "source": "commons",
+        "user": "Hunter Kahn",
+        "license": "Public domain",
+        "title": "Taboo at esu concert.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Taboo_at_esu_concert.JPG",
+        "id": "c:7901854"
+      },
+      {
         "scene": 10,
         "source": "pixabay",
-        "user": "geralt",
-        "page": "https://pixabay.com/photos/silence-talk-freedom-of-speech-3600555/",
-        "id": 3600555,
+        "user": "u_q0d9i4i6oj",
+        "page": "https://pixabay.com/photos/traditional-dance-masked-dancer-10524720/",
+        "id": 10524720,
         "type": "photo"
       },
       {
         "scene": 11,
         "source": "pixabay",
-        "user": "Madhana_gopal",
-        "page": "https://pixabay.com/photos/cute-couple-love-misunderstanding-5392897/",
-        "id": 5392897,
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/people-girls-women-students-2557396/",
+        "id": 2557396,
         "type": "photo"
       },
       {
         "scene": 12,
         "source": "pixabay",
-        "user": "jarmoluk",
-        "page": "https://pixabay.com/photos/photographs-lenses-photography-256888/",
-        "id": 256888,
+        "user": "klimkin",
+        "page": "https://pixabay.com/photos/retro-photo-album-memory-family-1483781/",
+        "id": 1483781,
         "type": "photo"
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "bad",
-        "clip": 0.1654,
+        "verdict": "ok",
+        "clip": 0.2201,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "96e0cab10b28",
-        "at": "2026-10-30 16:29",
+        "sig": "8f243d50a835",
+        "at": "2026-11-01 15:48",
         "scene": 1,
         "rejected_ids": [
           1987212,
           7055475,
+          8254024,
           "c:16270065",
           "c:57403191",
+          "c:7901854",
           "c:94799888"
         ]
       },
       {
-        "verdict": "ok",
-        "clip": 0.2349,
+        "verdict": "bad",
+        "clip": 0.1617,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a4f02f93e7c3",
-        "at": "2026-10-30 16:29",
+        "sig": "1dcb645f6644",
+        "at": "2026-11-01 15:48",
         "scene": 2,
         "rejected_ids": [
           1794519,
+          6280358,
           8336583,
+          8483282,
+          "c:16270065",
           "c:57403191",
+          "c:7901854",
           "c:94799888"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2282,
+        "clip": 0.2868,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "c7968eba7155",
-        "at": "2026-10-30 16:29",
+        "sig": "a95b546e6a42",
+        "at": "2026-11-01 15:48",
         "scene": 3,
         "rejected_ids": [
           7043225,
@@ -34946,27 +34955,29 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2452,
+        "clip": 0.233,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9200acb55151",
-        "at": "2026-10-30 16:29",
+        "sig": "f54f9c1781e1",
+        "at": "2026-11-01 15:48",
         "scene": 4,
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1812,
+        "verdict": "ok",
+        "clip": 0.2365,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7d1dc546165d",
-        "at": "2026-10-30 16:30",
+        "sig": "ae1eda11ca35",
+        "at": "2026-11-01 15:49",
         "scene": 5,
         "rejected_ids": [
+          2179326,
           8336583,
           8483282,
+          "c:15316290",
           "c:57403191",
           "c:7901854",
           "c:94799888"
@@ -34974,102 +34985,123 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2463,
+        "clip": 0.2299,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "cf7c46504251",
-        "at": "2026-10-30 16:29",
+        "sig": "c0fa752b2500",
+        "at": "2026-11-01 15:49",
         "scene": 6,
-        "rejected_ids": []
+        "rejected_ids": [
+          6652452,
+          7328042,
+          "c:172727151"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2796,
+        "clip": 0.2878,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d919dca13cb2",
-        "at": "2026-10-30 16:29",
+        "sig": "d7eeee0fe51f",
+        "at": "2026-11-01 15:48",
         "scene": 7,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2482,
+        "clip": 0.2402,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "394615ccaa4a",
-        "at": "2026-10-30 16:30",
+        "sig": "a8e7d2df9e22",
+        "at": "2026-11-01 15:49",
         "scene": 8,
         "rejected_ids": [
           10007644,
           10011476,
-          "c:146619255",
-          "c:40591219"
-        ]
-      },
-      {
-        "verdict": "bad",
-        "clip": 0.2081,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "23b6efdde581",
-        "at": "2026-10-30 16:30",
-        "scene": 9,
-        "rejected_ids": [
           8336583,
           8483282,
-          "c:57403191",
-          "c:75795692",
+          "c:146619255",
+          "c:40591219",
           "c:94799888"
         ]
       },
       {
         "verdict": "bad",
-        "clip": 0.2011,
+        "clip": 0.1736,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "23ee691a14e6",
-        "at": "2026-10-30 16:30",
-        "scene": 10,
+        "sig": "01f18abc5742",
+        "at": "2026-11-01 15:49",
+        "scene": 9,
         "rejected_ids": [
-          3600555,
-          5138899,
+          257176,
+          5143015,
+          8336583,
+          8483282,
+          "c:16270065",
           "c:57403191",
+          "c:75795692",
+          "c:7901854",
           "c:92534182",
           "c:94799888"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2475,
+        "clip": 0.2315,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "20c8fc39893f",
-        "at": "2026-10-30 16:30",
+        "sig": "799d28a7382a",
+        "at": "2026-11-01 15:49",
+        "scene": 10,
+        "rejected_ids": [
+          10524720,
+          329329,
+          3600555,
+          5138899,
+          "c:16270065",
+          "c:57403191",
+          "c:7901854",
+          "c:92534182",
+          "c:94799888"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2307,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cdd8aa61c970",
+        "at": "2026-11-01 15:49",
         "scene": 11,
         "rejected_ids": [
+          2557396,
           5392897,
+          "c:75795692",
           "c:92534181"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2488,
+        "clip": 0.2874,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "93416e93eaec",
-        "at": "2026-10-30 16:30",
+        "sig": "e1f5dd4980ac",
+        "at": "2026-11-01 15:49",
         "scene": 12,
         "rejected_ids": [
+          1386235,
+          1483781,
           256888,
           256889,
+          "c:149432196",
           "c:28973464"
         ]
       }
@@ -45490,6 +45522,297 @@
       "shaking lulav blessing",
       "sukkah interior reflection",
       "under fragile sukkah roof"
+    ],
+    "image_queries_done": [
+      "outdoor meal temporary shelter",
+      "Sukkot festival Israel",
+      "seven day Sukkot",
+      "Sukkot sukkah structure",
+      "sukkah wall fabric wood",
+      "sukkah roof branches",
+      "desert wilderness biblical",
+      "four species ritual",
+      "etrog fruit alongside",
+      "shaking lulav blessing",
+      "sukkah interior reflection",
+      "under fragile sukkah roof"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/menorah-hanukkah-dreidel-holiday-7662079/",
+        "id": 7662079
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Gilabrand",
+        "license": "CC BY-SA 3.0",
+        "title": "JerusalemSukka.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:JerusalemSukka.JPG",
+        "id": "c:21874843"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "jdblack",
+        "page": "https://pixabay.com/photos/tabernacle-bible-moses-exodus-4768976/",
+        "id": 4768976
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "വരി വര",
+        "license": "CC BY-SA 4.0",
+        "title": "Olios sp. Family - Sparassidae Huntsman spide at Mechode Padur.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Olios_sp._Family_-_Sparassidae_Huntsman_spide_at_Mechode_Padur.jpg",
+        "id": "c:42523935"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/peaches-fruits-bowl-fruit-bowl-1522680/",
+        "id": 1522680,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "ShlomoAms",
+        "license": "CC BY-SA 4.0",
+        "title": "Sukkot korbanot Page 5.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkot_korbanot_Page_5.png",
+        "id": "c:138396094"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "ShlomoAms",
+        "license": "CC BY-SA 4.0",
+        "title": "Sukkot korbanot Page 5.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkot_korbanot_Page_5.png",
+        "id": "c:138396094"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2925,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "203167043b3b",
+        "at": "2026-11-01 15:46",
+        "scene": 1,
+        "rejected_ids": [
+          7035539,
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1687,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4f18af151252",
+        "at": "2026-11-01 15:46",
+        "scene": 2,
+        "rejected_ids": [
+          4927978,
+          5542457,
+          7662079,
+          "c:138951207",
+          "c:138951210"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3374,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "42c14b86530b",
+        "at": "2026-11-01 15:46",
+        "scene": 3,
+        "rejected_ids": [
+          7360595,
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3527,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7facbbf596f7",
+        "at": "2026-11-01 15:46",
+        "scene": 4,
+        "rejected_ids": [
+          6654590,
+          "c:10288408",
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.311,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "97afc7dd2800",
+        "at": "2026-11-01 15:46",
+        "scene": 5,
+        "rejected_ids": [
+          591631,
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3333,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "48be4feec1b7",
+        "at": "2026-11-01 15:46",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2227,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "db332361473c",
+        "at": "2026-11-01 15:46",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4733f4de7442",
+        "at": "2026-11-01 15:47",
+        "scene": 8,
+        "rejected_ids": [
+          8938007,
+          "c:42523935"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2049,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b59678063d2a",
+        "at": "2026-11-01 15:47",
+        "scene": 9,
+        "rejected_ids": [
+          1522680,
+          1898196,
+          "c:108921378",
+          "c:138396094",
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2054,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e8602eee77c4",
+        "at": "2026-11-01 15:47",
+        "scene": 10,
+        "rejected_ids": [
+          750625,
+          8342040,
+          "c:108921378",
+          "c:138396094",
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.323,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3539255f4476",
+        "at": "2026-11-01 15:47",
+        "scene": 11,
+        "rejected_ids": [
+          1283963,
+          "c:43902432"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2292,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "71725a07d148",
+        "at": "2026-11-01 15:46",
+        "scene": 12,
+        "rejected_ids": []
+      }
     ]
   },
   {
@@ -45594,7 +45917,266 @@
     "scene_count": 12,
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries_done": [
+      "prison cell open eyes",
+      "valentine's day ancient legend",
+      "roman saint relics",
+      "prison guard daughter blind",
+      "hand writing farewell letter",
+      "old parchment scroll",
+      "historical manuscript page",
+      "ancient martyr tombstone",
+      "couple holding hands outdoors",
+      "traditional folk celebration",
+      "miracle legend illustration",
+      "heart over eyes symbolism"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ichigo121212",
+        "page": "https://pixabay.com/photos/prison-prison-cell-jail-crime-553836/",
+        "id": 553836
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "autumnsgoddess0",
+        "page": "https://pixabay.com/photos/balloons-hearts-love-red-romantic-991680/",
+        "id": 991680
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "guy_dugas",
+        "page": "https://pixabay.com/photos/mausoleum-arc-roman-glanum-1035343/",
+        "id": 1035343,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/electric-fence-wire-barbed-security-71378/",
+        "id": 71378,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "A_Different_Perspective",
+        "page": "https://pixabay.com/photos/fountain-pen-filler-ink-write-1393979/",
+        "id": 1393979
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "garten-gg",
+        "page": "https://pixabay.com/photos/certificate-contract-document-proof-3177940/",
+        "id": 3177940
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/a-book-book-page-handwriting-1941299/",
+        "id": 1941299
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/ancient-burial-cemetery-dead-grass-21569/",
+        "id": 21569
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/cliff-beach-holding-hands-arms-1846233/",
+        "id": 1846233
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "yazidnasuha",
+        "page": "https://pixabay.com/photos/cultural-parade-traditional-costume-10452104/",
+        "id": 10452104,
+        "type": "photo"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "CharlVera",
+        "page": "https://pixabay.com/photos/jesus-christ-faith-prayer-worship-10307168/",
+        "id": 10307168,
+        "type": "photo"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "scansven",
+        "page": "https://pixabay.com/photos/ring-heart-wedding-love-romantic-10075059/",
+        "id": 10075059,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3543,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "64a7c59d109a",
+        "at": "2026-11-01 15:44",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2447,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "477d956fe61d",
+        "at": "2026-11-01 15:44",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2493,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0215a5a0dbdd",
+        "at": "2026-11-01 15:45",
+        "scene": 3,
+        "rejected_ids": [
+          1035343,
+          5202966,
+          "c:4310843"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2464,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0d04edd992bc",
+        "at": "2026-11-01 15:45",
+        "scene": 4,
+        "rejected_ids": [
+          70322,
+          71378,
+          "c:4310843"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2358,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0fb0002cb0f7",
+        "at": "2026-11-01 15:44",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2688,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "96d37286b639",
+        "at": "2026-11-01 15:44",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3217,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6af9c3d0b23e",
+        "at": "2026-11-01 15:44",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2921,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5a151d90e021",
+        "at": "2026-11-01 15:44",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2826,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "22f3cb24ce03",
+        "at": "2026-11-01 15:44",
+        "scene": 9,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2935,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7b53f5b37757",
+        "at": "2026-11-01 15:45",
+        "scene": 10,
+        "rejected_ids": [
+          10452104,
+          "c:86539561"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2432,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d8a948c911da",
+        "at": "2026-11-01 15:45",
+        "scene": 11,
+        "rejected_ids": [
+          10307168,
+          1507392,
+          "c:105154689",
+          "c:18829604"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2623,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6f36afc89966",
+        "at": "2026-11-01 15:45",
+        "scene": 12,
+        "rejected_ids": [
+          10075059,
+          "c:4310843"
+        ]
+      }
+    ]
   },
   {
     "topic": "춘절(Chinese New Year)의 등불 15일 연속",
@@ -45677,7 +46259,273 @@
     "narration_original": "노년 여성들이 드럼을 두드리며 마을 축제를 이끈다면, 바로 콜롬비아 카리브 해안과 파나마 다리엔 지방에서 전해지는 전통 음악·춤, 불레렝게를 떠올리게 됩니다. 이 음악은 주로 연령대가 높은 여성들이 현지 장인들이 만든 드럼과 함께 부르며, 리듬은 몸을 흔들게 하는 힘찬 북소리와 함께 흐릅니다.  \n\n그런데 공식적인 교육 없이도 세대를 넘어 마을 축제와 가족 행사에서 살아 숨 쉬는 이유는 구전 방식으로 전해지는 전통 때문입니다. 아이들은 어른들의 연주를 눈앞에서 보며 자연스럽게 몸짓과 노래를 익히고, 그렇게 오늘날까지 이어져 오고 있습니다.  \n\n최근 학술 연구와 문화 사업이 활발해지면서 불레렝게의 인지도는 점점 높아지고 있지만, 여전히 전통 전달은 구전이 중심이라는 점을 기억해야 합니다. 결국, 마을 한 구석에서 울려 퍼지는 드럼 소리는 과거와 현재를 잇는 살아있는 문화의 증거라 할 수 있겠네요.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries_done": [
+      "grandmother singing",
+      "Colombia African dance",
+      "Colombia drummers singers",
+      "female singers performing",
+      "Colombia handclap drum dance",
+      "women playing drums",
+      "expressive singing faces",
+      "family music lesson",
+      "generational song tradition",
+      "community music workshop",
+      "Colombia stage performance",
+      "elderly voice behind drums"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Print made by: Isaac Cruikshank Published by: S W Fores",
+        "license": "Public domain",
+        "title": "My grandmother, alias the Jersey jig, alias the rival widows. (BM 1868,0808.6360).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:My_grandmother,_alias_the_Jersey_jig,_alias_the_rival_widows._(BM_1868,0808.6360).jpg",
+        "id": "c:90072593"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "jump1987",
+        "page": "https://pixabay.com/photos/couple-lovers-dance-dancing-love-7286909/",
+        "id": 7286909
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Jessica Cardona Bijalba",
+        "license": "CC BY-SA 4.0",
+        "title": "Bullerengue.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bullerengue.jpg",
+        "id": "c:129563930"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Rakotovaogael",
+        "license": "CC BY-SA 4.0",
+        "title": "Female Hira Gasy singer performing in Antananarivo, Madagascar.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Female_Hira_Gasy_singer_performing_in_Antananarivo,_Madagascar.jpg",
+        "id": "c:184093564"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/festival-drummers-traditional-dance-10513401/",
+        "id": 10513401
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Umshushima",
+        "license": "CC BY-SA 4.0",
+        "title": "Traditional women playing drums and also singing in a traditional language.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_women_playing_drums_and_also_singing_in_a_traditional_language.jpg",
+        "id": "c:184313466"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ianismel",
+        "page": "https://pixabay.com/photos/singing-to-the-people-2382145/",
+        "id": 2382145,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/teacher-student-guitar-learning-10163007/",
+        "id": 10163007
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Solarselle77",
+        "page": "https://pixabay.com/photos/tradition-connection-children-9999499/",
+        "id": 9999499,
+        "type": "photo"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "endriqstudio",
+        "page": "https://pixabay.com/photos/workshop-instrument-wood-craftsman-4524838/",
+        "id": 4524838
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Wilson Tovar",
+        "license": "CC0",
+        "title": "Guitar Solo (153371737).jpeg",
+        "page": "https://commons.wikimedia.org/wiki/File:Guitar_Solo_(153371737).jpeg",
+        "id": "c:73721652"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/man-elderly-busker-casual-hat-9559497/",
+        "id": 9559497
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.2152,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "df9e838aa59f",
+        "at": "2026-11-01 15:43",
+        "scene": 1,
+        "rejected_ids": [
+          1822560,
+          2906458,
+          "c:47871427",
+          "c:66168654",
+          "c:90072593"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2506,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ec3cf00aa74b",
+        "at": "2026-11-01 15:43",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2372,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1930c2fe7eae",
+        "at": "2026-11-01 15:43",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2338,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f6fbcfd1a7b5",
+        "at": "2026-11-01 15:43",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3335,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7c8de2130f34",
+        "at": "2026-11-01 15:43",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3352,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cbfcac205e7c",
+        "at": "2026-11-01 15:43",
+        "scene": 6,
+        "rejected_ids": [
+          7357487,
+          "c:184313466"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2774,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5ab9caaf5331",
+        "at": "2026-11-01 15:43",
+        "scene": 7,
+        "rejected_ids": [
+          10334304,
+          2382145,
+          "c:129563930"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3296,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fbb5016925e3",
+        "at": "2026-11-01 15:43",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.228,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b3278910f597",
+        "at": "2026-11-01 15:43",
+        "scene": 9,
+        "rejected_ids": [
+          9999499,
+          "c:187572402"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.234,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8dec28f93939",
+        "at": "2026-11-01 15:43",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.259,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5a23ef039171",
+        "at": "2026-11-01 15:43",
+        "scene": 11,
+        "rejected_ids": [
+          1850119,
+          "c:73721652"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2343,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "831a09cd3d3c",
+        "at": "2026-11-01 15:43",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
