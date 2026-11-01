@@ -45512,7 +45512,7 @@
     "image_queries": [
       "outdoor meal temporary shelter",
       "Sukkot",
-      "이스라엘 수코트",
+      "israel sukkot",
       "Sukkot sukkah structure",
       "sukkah wall fabric wood",
       "sukkah roof branches",
@@ -45556,12 +45556,11 @@
       },
       {
         "scene": 3,
-        "source": "commons",
-        "user": "Zachi Evenor",
-        "license": "CC BY 2.0",
-        "title": "Sukkoth - IZE10160.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
-        "id": "c:43902432"
+        "source": "pixabay",
+        "user": "svetlanabar",
+        "page": "https://pixabay.com/photos/dead-sea-sea-israel-sand-nature-4927978/",
+        "id": 4927978,
+        "type": "photo"
       },
       {
         "scene": 4,
@@ -45677,11 +45676,11 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1712,
+        "clip": 0.1253,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "aa909176075b",
+        "sig": "ac2e8cf9cf4f",
         "at": "2026-11-01 16:11",
         "scene": 3,
         "rejected_ids": [
