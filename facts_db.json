@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -32219,7 +32221,7 @@
     "verify_note": "Lozi kingdom",
     "confidence": "source",
     "created_at": "2026-10-28T13:18:36.466421+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "아프리카 남부의 로지 왕국은 어디에서 시작되었을까요? 지금의 잠비아 서부에는 로지족이 형성한 전통 왕국이 있었습니다. 이 지역은 잠베지강을 따라 펼쳐진 넓은 범람원과 연결됩니다. 로지 왕국의 초기 역사는 여러 구전 전통과 역사 연구를 통해 전해집니다. 일부 역사적 설명은 콩고 분지의 룬다 왕국과 관련된 이주를 언급합니다. 하지만 로지족의 기원을 하나의 이주 집단으로만 설명하기는 어렵습니다. 여러 공동체가 오랜 시간 이동하고 교류하며 형성되었기 때문입니다. 전통적으로 로지 사회의 최고 통치자는 리퉁가라고 불립니다. 왕국의 성장에는 지도자의 권위뿐 아니라 지리적 환경도 중요한 역할을 했습니다. 잠베지강의 범람원은 농업과 목축에 유리한 조건을 제공했습니다. 계절에 따라 물이 차오르는 환경은 주민들의 생활 방식에도 영향을 주었습니다. 로지 왕국의 역사는 단순한 정복의 이야기가 아닙니다. 강과 땅, 사람들의 이동이 함께 만들어 낸 역사입니다.",
     "fact_verifiability": "user",
@@ -32531,7 +32533,8 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "reject_reason": "나라와 주제 불일치(영국 / ZM)"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -34733,7 +34736,7 @@
     "verify_note": "Taboo",
     "confidence": "source",
     "created_at": "2026-10-28T13:19:28.027168+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "같은 행동인데 어떤 마을에서는 금기이고 다른 곳에서는 아무렇지 않을 수 있습니다. 마다가스카르에는 파디라고 불리는 전통적인 금기가 있습니다. 파디는 특정 행동이나 음식, 장소 등에 적용되는 금기와 제한을 뜻합니다. 지역과 가족, 공동체에 따라 내용이 다릅니다. 어떤 곳에서는 특정 동물을 먹지 않기도 합니다. 또 어떤 장소에서는 정해진 행동을 삼가야 합니다. 이런 규칙은 단순히 이상한 미신으로만 설명할 수 없습니다. 조상에 대한 존중과 공동체의 역사, 종교적 믿음이 연결되어 있기 때문입니다. 일부 파디는 자연환경을 보호하는 역할도 합니다. 특정 동물을 잡지 못하게 하거나 신성한 장소의 출입을 제한하는 사례가 있습니다. 이런 금기는 지역 주민들의 생활 방식에 영향을 줍니다. 다만 모든 파디가 환경 보호를 목적으로 만들어진 것은 아닙니다. 각각의 규칙에는 서로 다른 배경이 있습니다. 외부인의 눈에는 이해하기 어려운 금기도 있을 수 있습니다. 하지만 그 안에는 공동체가 오랜 시간 지켜온 가치와 기억이 담겨 있습니다.",
     "fact_verifiability": "user",
@@ -35073,7 +35076,8 @@
           "c:28973464"
         ]
       }
-    ]
+    ],
+    "reject_reason": "성/민감 소재 자동 제외(혐오)"
   },
   {
     "topic": "새해 복을 부르는 음식",
@@ -36534,7 +36538,7 @@
     "verify_note": "Shalom",
     "confidence": "source",
     "created_at": "2026-10-28T13:57:52.392059+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "만날 때도 “샬롬.” 헤어질 때도 “샬롬.” 같은 말을 쓰는데, 어떻게 둘 다 통할까요? 히브리어 ‘샬롬’은 ‘평화’를 뜻하면서, 인사와 작별 인사로도 쓰이는 말입니다. 누군가를 만나 반가움을 전할 때도. 대화를 마치고 돌아설 때도 사용할 수 있죠. 그런데 아랍어의 ‘살람’과도 소리가 조금 닮지 않았나요? 우연만은 아닙니다. 두 단어는 언어적으로 같은 뿌리를 공유해요. 서로 다른 언어의 인사 속에 ‘평화’라는 뜻이 나란히 남아 있는 겁니다. 다음에 “샬롬”이라는 말을 들으면, 단순한 “안녕” 뒤에 담긴 의미도 함께 들릴지 모르겠네요.",
     "cross_checked": true,
     "cross_sources": 3,
@@ -36608,10 +36612,9 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "MarciMarc105",
-        "page": "https://pixabay.com/photos/palma-de-mallorca-alley-buildings-2900559/",
-        "id": 2900559,
-        "type": "photo"
+        "user": "knerri61",
+        "page": "https://pixabay.com/photos/stop-sign-traffic-sign-road-sign-634941/",
+        "id": 634941
       },
       {
         "scene": 2,
@@ -36644,10 +36647,9 @@
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "EtoileOfficial",
-        "page": "https://pixabay.com/photos/statue-woman-spanish-costume-girl-6347584/",
-        "id": 6347584,
-        "type": "photo"
+        "user": "KirandeepSingh1971",
+        "page": "https://pixabay.com/photos/temple-pattaya-thailand-10236306/",
+        "id": 10236306
       },
       {
         "scene": 7,
@@ -36659,10 +36661,9 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "Ri_Ya",
-        "page": "https://pixabay.com/photos/thank-you-thank-you-card-greeting-6727181/",
-        "id": 6727181,
-        "type": "photo"
+        "user": "BiljaST",
+        "page": "https://pixabay.com/photos/merry-christmas-merry-christmas-4684006/",
+        "id": 4684006
       },
       {
         "scene": 9,
@@ -36787,7 +36788,16 @@
         "scene": 9,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0357_스페인_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0357_스페인_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0357_스페인.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0357_스페인.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "5JP6vAtm0EQ",
+    "uploaded_at": "2026-11-01T13:18:45.454513+09:00"
   },
   {
     "topic": "미얀마의 지위·지역별 예절 차이",
@@ -45085,7 +45095,7 @@
     "verify_note": "Bororo",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일부 마을에서는 주민이 보로로어로 인사해 달라고 요청할 때가 있다고 합니다. 보로로 부족은 브라질 마투 그로소 주와 볼리비아·고이아스 지역에 일부 분포해 있으며, 서쪽 자우루·카바살 강과 동쪽 상루르엔소·가르사스·베르멜루 강 유역에 위치해 있다고 전해집니다. 이 지역에는 총 8개의 마을이 모여 살며, 인구가 2천 명 이하일 가능성이 있다고 합니다. 그들은 대부분 보로로어(Borôro)라는 고유 언어를 사용한다고 전해집니다. 이 언어는 아직 국제 ISO 639 코드가 부여되지 않았으며, 전 세계 언어 데이터베이스에 등재돼 있지 않다고 합니다. 보로로어는 공식적인 언어 코드가 부여되지 않았다고 전해집니다. 결국, 보로로 부족을 찾으면 ‘보로로어로 인사하라’는 요구가 그들의 정체성을 확인할 수 있는 한 가지 단서가 될 수 있다고 합니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -45163,7 +45173,83 @@
       "rare language code",
       "identity greeting key"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0401_브라질_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0401_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Bororo village greeting",
+      "Amazon river basin",
+      "small village community",
+      "Bororo language speakers",
+      "ISO language code",
+      "rare language code",
+      "identity greeting key"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/christmas-village-christmas-xmas-1088143/",
+        "id": 1088143
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "jbooba",
+        "page": "https://pixabay.com/photos/sara-longwing-butterfly-insect-7813245/",
+        "id": 7813245
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Ben_Kerckx",
+        "page": "https://pixabay.com/photos/village-field-small-town-landscape-7134137/",
+        "id": 7134137
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Zde",
+        "license": "CC BY-SA 4.0",
+        "title": "Feather headdress, pariko, Bororo people, NM Prague, 191522.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Feather_headdress,_pariko,_Bororo_people,_NM_Prague,_191522.jpg",
+        "id": "c:86379395"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Dato (WMAM)",
+        "license": "CC BY-SA 4.0",
+        "title": "Western Armenian Language Get Its Own ISO Code.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Western_Armenian_Language_Get_Its_Own_ISO_Code.png",
+        "id": "c:66860953"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Jeevan Jose, Kerala, India",
+        "license": "CC BY-SA 4.0",
+        "title": "Charaxes psaphon-Aralam-2016-10-29-002.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charaxes_psaphon-Aralam-2016-10-29-002.jpg",
+        "id": "c:52720907"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "pixel2013",
+        "page": "https://pixabay.com/photos/heart-key-rose-sweetheart-love-1809653/",
+        "id": 1809653
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0401_브라질.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0401_브라질.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "UKLseVBl050",
+    "uploaded_at": "2026-11-01T13:18:47.009740+09:00"
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
@@ -45178,7 +45264,7 @@
     "verify_note": "Coffee culture",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:13.186433+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "스웨덴의 일부 축제에서는 팝업 형태의 커피 부스를 볼 수 있는 경우가 있어요. 스웨덴에서는 커피 이야기가 일상 대화에 자주 나오고, 에스프레소를 찾는 사람들도 꽤 있어요. 도심 시장이나 소규모 행사에서 모바일 커피 카트와 팝업 바를 보는 경우가 늘어나면서, 거리에서도 에스프레소를 마시는 사람들이 점점 늘고 있어요. 이 이동식 바는 현대 스웨덴의 카페 문화와 디자인 트렌드를 반영한 형태라고 할 수 있어요. 예전의 길거리 커피 분위기가 오늘날 스웨덴의 거리와 축제에서 다시 떠오르는 듯해요. 주요 도시와 축제에서 자주 보이는 이 문화가 스웨덴만의 커피 풍경을 만들고 있어요. 거리마다 퍼지는 에스프레소 향은 사람들을 모아 대화를 시작하게 하는 분위기를 만들곤 해요.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -45256,7 +45342,81 @@
       "Sweden city festival coffee cart",
       "steam coffee aroma street"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0402_스웨덴_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0402_스웨덴_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "festival popup coffee bar",
+      "Swedish people drinking espresso",
+      "street espresso cup",
+      "Ottoman style coffee house",
+      "revived vintage coffee stall",
+      "Sweden city festival coffee cart",
+      "steam coffee aroma street"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Averyanovphoto",
+        "page": "https://pixabay.com/photos/woman-coffee-phone-portrait-lady-4246954/",
+        "id": 4246954
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Malcolmxl5",
+        "license": "CC0",
+        "title": "Coffee Culture Goodramgate York Apr26.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Coffee_Culture_Goodramgate_York_Apr26.jpg",
+        "id": "c:189601424"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/coffee-pot-coffee-shop-street-cafe-1502532/",
+        "id": 1502532
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Chris Woodrich",
+        "license": "CC BY-SA 4.0",
+        "title": "Coffee Culture Cafe and Eatery, Stratford, Ontario, 2025-08-04.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Coffee_Culture_Cafe_and_Eatery,_Stratford,_Ontario,_2025-08-04.jpg",
+        "id": "c:172699115"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "bbom100892",
+        "page": "https://pixabay.com/photos/cafe-coffee-shop-vintage-aesthetic-7454951/",
+        "id": 7454951
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "mxwegele",
+        "page": "https://pixabay.com/photos/man-cart-street-food-culture-rain-5524488/",
+        "id": 5524488
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "acekreations",
+        "page": "https://pixabay.com/photos/coffee-beans-mug-cup-coffee-cup-1117933/",
+        "id": 1117933
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0402_스웨덴.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0402_스웨덴.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "ciP1v3FDsY8",
+    "uploaded_at": "2026-11-01T13:18:48.475467+09:00"
   },
   {
     "topic": "고대 그리스 남성 동반자 제도",
@@ -46572,14 +46732,15 @@
     "body": "소말리아는 아프리카 동쪽 끝에 위치해 대륙 본토에서 가장 긴 해안선을 가지고 있습니다. 인구는 1900만 명 이상이며, 그 중 85%가 소말리아인(Somali)이고, 공식 언어는 소말리어(Somali), 아랍어가 제2언어로 인정됩니다.",
     "twist": "그 긴 해안선에도 불구하고, 대부분의 주민은 아직도 전통적인 어업에 의존하고 있습니다.",
     "caveat": "이 정보는 최신 인구 추정치와 언어 현황을 기반으로 하며, 현지 상황에 따라 변동될 수 있습니다.",
-    "country": "아랍에미리트",
+    "country": "소말리아",
     "theme": "음식문화",
     "wiki_title": "Somalia",
     "source_url": "https://en.wikipedia.org/wiki/Somalia",
     "verify_note": "Somalia",
     "confidence": "source",
     "created_at": "2026-10-31T15:38:20.661939+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "country_before_fix": "아랍에미리트"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
