@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -46580,7 +46582,99 @@
     "verify_note": "Greetings from Your Hometown",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:34.594778+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "조나스 브라더스 새 앨범, 마시멜로가 직접 만든다! 2025년에 공개된 이 일곱 번째 정규 앨범에는 호주 싱어송라이터 Dean Lewis와 미국 밴드 Switchfoot가 피처링으로 참여했어요. 프로듀싱 역시 Dean Lewis와 전자음악 DJ 마시멜로가 직접 맡아 색다른 사운드를 완성했습니다. 그런데 마시멜로는 가수라기보다 EDM 무대에서 활약하는 DJ로 더 유명하다는 점, 기억하시나요? 이번 앨범은 미국 레코드사 Republic Records를 통해 전 세계에 공개됐습니다. 전통적인 록 밴드와 전자음악 프로듀서가 만나 만든 이 컬래버레이션, 과연 어떤 새로운 매력을 선보일지 기대해 보세요.",
+    "title_line1": "조나스 새 앨범",
+    "title_line2": "마시멜로가 프로듀서?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*마시멜로* 제작!"
+      },
+      {
+        "s": 3,
+        "text": "*마시멜로* 프로듀싱"
+      },
+      {
+        "s": 6,
+        "text": "*컬래버* 기대"
+      }
+    ],
+    "image_queries": [
+      "marshmallow making",
+      "Spanish hometown street",
+      "marshmallow production studio",
+      "Spanish EDM DJ stage",
+      "Spanish vinyl record",
+      "Spanish rock band DJ"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0410_스페인_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0410_스페인_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "marshmallow making",
+      "Spanish hometown street",
+      "marshmallow production studio",
+      "Spanish EDM DJ stage",
+      "Spanish vinyl record",
+      "Spanish rock band DJ"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "User:Scout123mh",
+        "license": "CC BY-SA 3.0",
+        "title": "Container of Marshmallow Fluff.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Container_of_Marshmallow_Fluff.jpg",
+        "id": "c:32353986"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "silver_ms",
+        "page": "https://pixabay.com/photos/street-hometown-telephone-pole-road-6980579/",
+        "id": 6980579
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "OsloMetX",
+        "page": "https://pixabay.com/photos/headphones-clapper-clapperboard-4223911/",
+        "id": 4223911
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Thomas Paar, Darjeeling",
+        "license": "CC BY 4.0",
+        "title": "Greetings from Darjeeling.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Greetings_from_Darjeeling.jpg",
+        "id": "c:117239710"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "chienba",
+        "page": "https://pixabay.com/photos/music-player-record-player-7792956/",
+        "id": 7792956
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "mostafa_meraji",
+        "page": "https://pixabay.com/photos/silhouette-musician-music-performer-9851447/",
+        "id": 9851447
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0410_스페인.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0410_스페인.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "eh_NeT-Uk84",
+    "uploaded_at": "2026-11-02T07:28:56.246471+09:00"
   },
   {
     "topic": "스웨덴의 한밤중 불꽃 축제, 여름 최장일에 열린다",
@@ -46595,7 +46689,117 @@
     "verify_note": "Midsummer",
     "confidence": "source",
     "created_at": "2026-10-30T14:18:34.594778+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "여름 최장일, 스웨덴 사람들은 불을 피운다!  \n스웨덴에서는 하지, 즉 여름 솔스티스가 다가오면 야외에서 모임을 엽니다. 긴 낮을 맞이해 친구와 가족이 모여 풀밭이나 해변에 모닥불을 피우고, 노래와 춤으로 축하하죠. 이 전통은 유럽 전역에서 전해 내려오는 중간 여름 축제와 연결돼, 자연의 풍요를 함께 나누는 의미를 담고 있습니다.  \n\n그런데 이날은 단순한 계절 축제만은 아닙니다. 기독교에서는 성 요한 전야와도 겹쳐, 종교적 의미가 더해져 사람들은 불빛을 통해 새벽을 맞이하고, 새해와 같은 새로운 시작을 기원합니다.  \n\n이러한 불꽃 축제는 스웨덴을 비롯한 북유럽 국가들에서 주로 볼 수 있는 관습이며, 다른 지역에서는 다소 다르게 전해질 수 있습니다. 밤하늘을 밝히는 모닥불이 긴 여름밤을 더욱 따뜻하게 만들어 주는 이유, 이제 알겠죠?",
+    "title_line1": "스웨덴 여름 최장일",
+    "title_line2": "불빛에 숨은 의미?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "여름 최장일 *불꽃*"
+      },
+      {
+        "s": 3,
+        "text": "풀밭·해변 *모닥불*"
+      },
+      {
+        "s": 6,
+        "text": "새벽 *새 시작*"
+      },
+      {
+        "s": 8,
+        "text": "밤하늘 *불빛*"
+      }
+    ],
+    "image_queries": [
+      "Sweden summer solstice fireworks",
+      "Swedish outdoor midsummer gathering",
+      "Swedish meadow bonfire beach",
+      "European midsummer celebration nature",
+      "Swedish midsummer festival night",
+      "Sweden sunrise bonfire celebration",
+      "Nordic midsummer fire tradition",
+      "Swedish night sky bonfire"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0411_스웨덴_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0411_스웨덴_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Sweden summer solstice fireworks",
+      "Swedish outdoor midsummer gathering",
+      "Swedish meadow bonfire beach",
+      "European midsummer celebration nature",
+      "Swedish midsummer festival night",
+      "Sweden sunrise bonfire celebration",
+      "Nordic midsummer fire tradition",
+      "Swedish night sky bonfire"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ri_Lens",
+        "page": "https://pixabay.com/photos/fireworks-night-celebration-festive-10444646/",
+        "id": 10444646
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "LindenP",
+        "page": "https://pixabay.com/photos/midsummer-pole-summer-tradition-2558075/",
+        "id": 2558075
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Danson67",
+        "page": "https://pixabay.com/photos/horse-barn-stable-summer-animals-816667/",
+        "id": 816667
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/fire-flames-embers-glow-hot-heat-142482/",
+        "id": 142482
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/man-human-fire-person-silhouette-142491/",
+        "id": 142491
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "RezaAskarii",
+        "page": "https://pixabay.com/photos/sweden-beach-sunrise-seascape-sea-6834157/",
+        "id": 6834157
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/fire-fire-circle-hot-heat-burn-142514/",
+        "id": 142514
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/fire-bonfire-night-evening-burning-123784/",
+        "id": 123784
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0411_스웨덴.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0411_스웨덴.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "lAvqyKgV0Zg",
+    "uploaded_at": "2026-11-02T07:28:58.581775+09:00"
   },
   {
     "topic": "패스오버에 먹는 무교병(마짜)",
@@ -46610,7 +46814,133 @@
     "verify_note": "Matzah",
     "confidence": "source",
     "created_at": "2026-10-30T14:19:00.396404+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "하루만 두면 바로 버려지는 빵, 왜일까요? 이스라엘 유대인들이 패스오버(유월절) 때 먹는 무교병, 즉 마짜는 효모가 들어간 모든 음식(챠멧)을 금하는 전통 때문에 등장합니다. 그래서 부드러운 마짜는 하루 정도만 보관하면 금방 말라버리죠. 냉동도 금지돼서 바로 먹어야 합니다. 그런데 바삭하게 구운 마짜는 예외입니다. 겉은 바삭하고 속은 살짝 부드러워서 오래 두어도 크게 변질되지 않아요. 다만 부드러운 마짜는 상업 생산이 매우 제한돼 있어 쉽게 구하기 어렵습니다. 한 번 만든 마짜가 금방 사라지는 이유, 이제 이해되셨나요?",
+    "title_line1": "이스라엘 유월절 빵",
+    "title_line2": "하루면 사라지는 이유",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*빵* 왜 버려?"
+      },
+      {
+        "s": 2,
+        "text": "*무교병* 금지 이유"
+      },
+      {
+        "s": 5,
+        "text": "바삭 마짜는 *예외*"
+      },
+      {
+        "s": 6,
+        "text": "오래 두어도 *변질* 안돼"
+      }
+    ],
+    "image_queries": [
+      "discarded bread",
+      "Matzah prohibition",
+      "soft matzah drying",
+      "room temperature matzah",
+      "crispy matzah exception",
+      "crispy matzah lasting",
+      "limited commercial matzah",
+      "vanishing matzah explanation"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0412_이스라엘_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0412_이스라엘_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "discarded bread",
+      "Matzah prohibition",
+      "soft matzah drying",
+      "room temperature matzah",
+      "crispy matzah exception",
+      "crispy matzah lasting",
+      "limited commercial matzah",
+      "vanishing matzah explanation"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Gayest Frogs",
+        "license": "CC BY-SA 4.0",
+        "title": "IMG0683 parking lot E01 - discarded bread.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:IMG0683_parking_lot_E01_-_discarded_bread.jpg",
+        "id": "c:178707528"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Newmila",
+        "license": "CC BY-SA 4.0",
+        "title": "Matzah and haroset.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Matzah_and_haroset.jpg",
+        "id": "c:127970491"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Jacek Proszyk",
+        "license": "CC BY-SA 4.0",
+        "title": "Shmurah Matzah 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Shmurah_Matzah_01.jpg",
+        "id": "c:106792415"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Newmila",
+        "license": "CC BY-SA 4.0",
+        "title": "Soft matzah.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Soft_matzah.jpg",
+        "id": "c:126732442"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Oleg Yunakov",
+        "license": "CC BY-SA 4.0",
+        "title": "Handmade Matzah Shemurah.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Handmade_Matzah_Shemurah.jpg",
+        "id": "c:162060329"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Yoninah",
+        "license": "CC BY-SA 3.0",
+        "title": "Matzah brei serving.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Matzah_brei_serving.jpg",
+        "id": "c:9904974"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Jacek Proszyk",
+        "license": "CC BY-SA 4.0",
+        "title": "Shmurah Matzah 03.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Shmurah_Matzah_03.jpg",
+        "id": "c:106792416"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Jacek Proszyk",
+        "license": "CC BY-SA 4.0",
+        "title": "Shmurah Matzah 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Shmurah_Matzah_02.jpg",
+        "id": "c:106792414"
+      }
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0412_이스라엘.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0412_이스라엘.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "-tqc9TDgchU",
+    "uploaded_at": "2026-11-02T07:29:00.945819+09:00"
   },
   {
     "topic": "아부다비를 지배하는 단 한 가문의 비밀",
