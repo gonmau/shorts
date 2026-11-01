@@ -219,10 +219,22 @@ jobs:
           [ -d my_images ] && git add my_images || true
           [ -f review.txt ] && git add review.txt || true
           git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
-          # 실행 중에 다른 커밋(README 등)이 올라와도 push가 거절되지 않게 합친 뒤 올림
-          for i in 1 2 3; do
-            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
-            git rebase --abort 2>/dev/null || true
+          B="${GITHUB_REF_NAME:-main}"
+          cp facts_db.json /tmp/mine_db.json
+          # 실행 중에 PC에서 올린 DB(폐기·대본 수정 등)를 덮어쓰지 않게 소재 단위로 병합한 뒤 올림
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$B" || { sleep 3; continue; }
+            if git merge-base --is-ancestor "origin/$B" HEAD; then git push && exit 0; fi
+            DB_CHANGED=1
+            git diff --quiet "$(git merge-base HEAD "origin/$B")" "origin/$B" -- facts_db.json && DB_CHANGED=0
+            git show "origin/$B:facts_db.json" > /tmp/theirs_db.json 2>/dev/null || DB_CHANGED=0
+            git pull --rebase -X theirs origin "$B" || { git rebase --abort 2>/dev/null || true; sleep 3; continue; }
+            if [ "$DB_CHANGED" = 1 ]; then
+              python merge_remote_db.py /tmp/theirs_db.json /tmp/mine_db.json || true
+              git add facts_db.json
+              git diff --cached --quiet || git commit -q -m "chore: merge facts_db.json [skip ci]"
+            fi
+            git push && exit 0
             sleep 3
           done
           echo "push 실패"; exit 1
