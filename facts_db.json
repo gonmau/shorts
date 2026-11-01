@@ -34772,7 +34772,7 @@
     ],
     "image_queries": [
       "금기",
-      "Madagascar padi rules",
+      "padi",
       "Madagascar village customs",
       "Madagascar family animal taboo",
       "ancestor respect belief",
@@ -34810,11 +34810,12 @@
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "ambquinn",
-        "page": "https://pixabay.com/photos/gecko-madagascar-day-gecko-reptile-8483282/",
-        "id": 8483282,
-        "type": "photo"
+        "source": "commons",
+        "user": "Muhammad Zimran Arrazi",
+        "license": "CC BY-SA 4.0",
+        "title": "Padi berisi.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Padi_berisi.jpg",
+        "id": "c:193491098"
       },
       {
         "scene": 3,
@@ -34924,12 +34925,12 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.1617,
+        "clip": 0.2077,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "1dcb645f6644",
-        "at": "2026-11-01 15:48",
+        "sig": "ed065d9fc2b6",
+        "at": "2026-11-01 16:15",
         "scene": 2,
         "rejected_ids": [
           1794519,
