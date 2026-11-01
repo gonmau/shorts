@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-01 16:17:28 (KST) · 기록 899건 · 소재 440개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-01 16:45:17 (KST) · 기록 908건 · 소재 440개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,20 +8,20 @@
 |---|---|---|---|
 | -c | 34 | 0 | 16분 1초 |
 | DB커밋 | 129 | 0 | 0초 |
-| apply_review | 39 | 0 | 6초 |
+| apply_review | 40 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 38 | 0 | 6시간 54분 |
+| build_video | 40 | 0 | 7시간 19분 |
 | check_uploads | 19 | 0 | 1분 51초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
 | fetch_images | 112 | 3 | 1시간 50분 |
 | generate_culture_facts | 8 | 0 | 14분 10초 |
-| generate_script | 107 | 0 | 1시간 5분 |
-| generate_tts | 42 | 0 | 18분 35초 |
+| generate_script | 109 | 0 | 1시간 5분 |
+| generate_tts | 44 | 0 | 19분 31초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 5 | 0 | 24초 |
-| promote_ready | 39 | 0 | 5초 |
+| make_thumbnail | 6 | 0 | 26초 |
+| promote_ready | 40 | 0 | 5초 |
 | redo_videos | 10 | 0 | 2초 |
 | resync_meta | 1 | 0 | 1분 56초 |
 | sync_uploads | 3 | 0 | 13초 |
@@ -36,6 +36,15 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:45 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 407,409 | ✅ | 2초 |  |
+| 16:45 | PC | build_video | build_video.py --index 409 --channel gonmauY --handle @gonmauY | ✅ | 11분 59초 |  |
+| 16:33 | PC | generate_tts | generate_tts.py --index 409 | ✅ | 28초 |  |
+| 16:32 | PC | generate_script | generate_script.py --extras-only --index 409 | ✅ | 1초 |  |
+| 16:32 | PC | build_video | build_video.py --index 407 --channel gonmauY --handle @gonmauY | ✅ | 12분 50초 |  |
+| 16:19 | PC | generate_tts | generate_tts.py --index 407 | ✅ | 27초 |  |
+| 16:19 | PC | generate_script | generate_script.py --extras-only --index 407 | ✅ | 1초 |  |
+| 16:19 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 16:19 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 16:17 | PC | fetch_images | fetch_images.py --index 339 --scene 4 --source pixabay --type photo | ❌ failed | 3초 | 장면 4: Pixabay에서 사진을 못 찾았습니다 (Lozi). 기존 사진 유지 |
 | 16:17 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 25초 |  |
 | 16:15 | PC | image_check | image_check.py --index 347 --scene 2 --force | ✅ | 10초 |  |
