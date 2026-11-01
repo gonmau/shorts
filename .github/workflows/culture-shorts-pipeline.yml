@@ -21,7 +21,10 @@ name: culture-shorts-pipeline
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # UTC 기준 (한국 시간 = UTC+9)
+    # 한국시간 06:00 / 11:00 / 17:00 (UTC 기준 전날 21:00 / 당일 02:00 / 당일 08:00), 회당 3개 (COUNT 기본 3)
+    - cron: "0 21 * * *"
+    - cron: "0 2 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
     inputs:
       redo:
