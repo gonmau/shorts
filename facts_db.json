@@ -46242,7 +46242,7 @@
       }
     ],
     "image_queries": [
-      "grandmother singing",
+      "singing grandmother",
       "Colombia African dance",
       "Colombia drummers singers",
       "female singers performing",
@@ -46261,7 +46261,7 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "grandmother singing",
+      "singing grandmother",
       "Colombia African dance",
       "Colombia drummers singers",
       "female singers performing",
@@ -46277,12 +46277,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Print made by: Isaac Cruikshank Published by: S W Fores",
-        "license": "Public domain",
-        "title": "My grandmother, alias the Jersey jig, alias the rival widows. (BM 1868,0808.6360).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:My_grandmother,_alias_the_Jersey_jig,_alias_the_rival_widows._(BM_1868,0808.6360).jpg",
-        "id": "c:90072593"
+        "source": "pixabay",
+        "user": "sabinevanerp",
+        "page": "https://pixabay.com/photos/christmas-wallpaper-hands-old-2906458/",
+        "id": 2906458,
+        "type": "photo"
       },
       {
         "scene": 2,
@@ -46375,17 +46374,19 @@
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "bad",
-        "clip": 0.2152,
+        "verdict": "ok",
+        "clip": 0.2525,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "df9e838aa59f",
-        "at": "2026-11-01 15:43",
+        "sig": "f8ec32cf97d2",
+        "at": "2026-11-01 15:56",
         "scene": 1,
         "rejected_ids": [
           1822560,
           2906458,
+          4051469,
+          "c:129563930",
           "c:47871427",
           "c:66168654",
           "c:90072593"
