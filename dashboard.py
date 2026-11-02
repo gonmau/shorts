@@ -32,7 +32,37 @@ def _has_video(f):
     return bool(f.get("video_path_v6") or f.get("status_v6") == "video_done")
 
 
-def render(st, db, start=0, daily_max=None):
+def _fetch_stats(repo, force=False, max_age_h=6):
+    """yt_stats.json 은 Actions(yt_report)가 GitHub에 올리는 파일이라 PC에는 없다. 없거나 오래되면 GitHub에서 받아 PC에 저장한다.
+    -> (데이터 또는 [], 메모)"""
+    path = "yt_stats.json"
+    try:
+        fresh = os.path.exists(path) and (time.time() - os.path.getmtime(path)) < max_age_h * 3600
+    except OSError:
+        fresh = False
+    note = ""
+    if repo and (force or not fresh):
+        try:
+            import requests
+            url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
+            r = requests.get(url, headers={"User-Agent": "shorts-ui"}, timeout=20)      # 공개 저장소는 토큰 없이
+            tok = os.environ.get("GITHUB_TOKEN", "").strip()
+            if r.status_code in (403, 404) and tok:                                      # 비공개면 토큰으로 재시도
+                r = requests.get(url, headers={"User-Agent": "shorts-ui", "Authorization": f"Bearer {tok}"}, timeout=20)
+            if r.status_code == 200 and isinstance(r.json(), list):
+                open(path, "w", encoding="utf-8").write(r.text)
+                note = f"GitHub({repo})에서 새로 받음"
+            else:
+                note = f"GitHub에서 못 받음 (HTTP {r.status_code})" + (" - 비공개 저장소면 GITHUB_TOKEN 필요" if r.status_code == 404 else "")
+        except Exception as e:
+            note = f"GitHub에서 못 받음 ({type(e).__name__})"
+    try:
+        return json.load(open(path, encoding="utf-8")), note
+    except Exception:
+        return [], note
+
+
+def render(st, db, start=0, daily_max=None, repo=""):
     today = datetime.now(KST).strftime("%Y-%m-%d")
     if start > 0:
         use_si = st.checkbox(f"start_index {start} 이상만 보기 (끄면 전체 DB {len(db)}개 기준)", False, key="dash_si")
@@ -77,12 +107,12 @@ def render(st, db, start=0, daily_max=None):
 
     # ---- 조회수 (yt_stats.json = 마지막 리포트 시점) ----
     st.markdown("**③ 조회수 (마지막 유튜브 리포트 기준)**")
-    try:
-        snaps = json.load(open("yt_stats.json", encoding="utf-8"))
-    except Exception:
-        snaps = []
+    _rf = st.button("🔄 조회수 새로고침 (GitHub에서 받기)", key="dash_stats_rf") if repo else False
+    snaps, _note = _fetch_stats(repo, force=_rf)
+    if _note:
+        st.caption(_note)
     if not snaps:
-        st.info("yt_stats.json 이 없습니다. 유튜브 리포트(yt_report)가 한 번 돌면 여기에 표시됩니다.")
+        st.info("조회수 데이터(yt_stats.json)가 없습니다. 유튜브 리포트(yt_report) 워크플로가 한 번 돌아 GitHub에 올라와야 합니다." + ("" if repo else " (GitHub 저장소 설정이 없어 받지 못했습니다)"))
     else:
         s = snaps[-1]
         vids = [v for v in s.get("videos", []) if v.get("kind", "short") == "short"] or s.get("videos", [])

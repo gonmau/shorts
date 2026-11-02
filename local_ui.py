@@ -334,7 +334,7 @@ with TD:
     try:
         import dashboard as _dash
         from common import load_db as _ldb
-        _dash.render(st, _ldb(), int(start), int(os.environ.get("DAILY_MAX", "20") or 20))
+        _dash.render(st, _ldb(), int(start), int(os.environ.get("DAILY_MAX", "20") or 20), TTS_CFG.get("gh_repo", ""))
     except Exception as _e:
         st.error(f"현황 화면을 그리지 못했습니다: {_e}")
 
