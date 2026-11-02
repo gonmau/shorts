@@ -34,6 +34,9 @@ def _has_video(f):
 
 def render(st, db, start=0, daily_max=None):
     today = datetime.now(KST).strftime("%Y-%m-%d")
+    if start > 0:
+        use_si = st.checkbox(f"start_index {start} 이상만 보기 (끄면 전체 DB {len(db)}개 기준)", False, key="dash_si")
+        start = start if use_si else 0
     items = [(i, f) for i, f in enumerate(db) if i >= start]
     uploaded = [(i, f) for i, f in items if f.get("youtube_id")]
     rejected = [(i, f) for i, f in items if f.get("status") == "rejected"]
@@ -41,7 +44,7 @@ def render(st, db, start=0, daily_max=None):
     waiting_render = [(i, f) for i, f in items if not _has_video(f) and f.get("status") in ("scripted", "tts_done")]
     today_up = sum(1 for _, f in uploaded if _day(f.get("uploaded_at")) == today)
 
-    st.caption(f"start_index {start} 이상 {len(items)}개 기준 (전체 {len(db)}개). 이 탭은 읽기 전용입니다.")
+    st.caption((f"소재 번호 {start} 이상 {len(items)}개 기준" if start > 0 else f"전체 DB {len(db)}개 기준") + " · 이 탭은 읽기 전용입니다.")
     c = st.columns(6)
     c[0].metric("업로드됨", len(uploaded), f"오늘 +{today_up}")
     c[1].metric("업로드 대기", len(waiting_up), help="영상은 있고 아직 안 올린 소재 (폐기 제외)")
