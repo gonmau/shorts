@@ -1,0 +1,158 @@
+# -*- coding: utf-8 -*-
+"""UI '📊 현황' 탭: 소재 진행 · 업로드 · 조회수 · 실행 이력을 표와 그래프로 한눈에. (읽기 전용 — DB를 바꾸지 않습니다)"""
+import json
+import os
+import time
+from datetime import datetime, timedelta, timezone
+
+import pandas as pd
+
+KST = timezone(timedelta(hours=9))
+STAGES = [("unverified", "1 승인 대기"), ("verified", "2 승인됨"), ("scripted", "3 대본 완료"),
+          ("tts_done", "4 음성 완료"), ("video_done", "5 영상 완료"), ("rejected", "폐기")]
+
+
+def _jl(path):
+    out = []
+    if os.path.exists(path):
+        for ln in open(path, encoding="utf-8"):
+            try:
+                out.append(json.loads(ln))
+            except Exception:
+                pass
+    return out
+
+
+def _day(v):
+    s = str(v or "")[:10]
+    return s if len(s) == 10 and s[4] == "-" else ""
+
+
+def _has_video(f):
+    return bool(f.get("video_path_v6") or f.get("status_v6") == "video_done")
+
+
+def render(st, db, start=0, daily_max=None):
+    today = datetime.now(KST).strftime("%Y-%m-%d")
+    items = [(i, f) for i, f in enumerate(db) if i >= start]
+    uploaded = [(i, f) for i, f in items if f.get("youtube_id")]
+    rejected = [(i, f) for i, f in items if f.get("status") == "rejected"]
+    waiting_up = [(i, f) for i, f in items if not f.get("youtube_id") and _has_video(f) and f.get("status") != "rejected"]
+    waiting_render = [(i, f) for i, f in items if not _has_video(f) and f.get("status") in ("scripted", "tts_done")]
+    today_up = sum(1 for _, f in uploaded if _day(f.get("uploaded_at")) == today)
+
+    st.caption(f"start_index {start} 이상 {len(items)}개 기준 (전체 {len(db)}개). 이 탭은 읽기 전용입니다.")
+    c = st.columns(6)
+    c[0].metric("업로드됨", len(uploaded), f"오늘 +{today_up}")
+    c[1].metric("업로드 대기", len(waiting_up), help="영상은 있고 아직 안 올린 소재 (폐기 제외)")
+    c[2].metric("렌더링 대기", len(waiting_render), help="대본·음성은 있고 영상이 없는 소재")
+    c[3].metric("승인 대기", sum(1 for _, f in items if f.get("status") == "unverified"))
+    c[4].metric("폐기", len(rejected))
+    c[5].metric("오늘 업로드 한도", f"{today_up}/{daily_max}" if daily_max else str(today_up))
+
+    left, right = st.columns(2)
+    with left:
+        st.markdown("**① 단계별 소재 수**")
+        cnt = {}
+        for _, f in items:
+            cnt[f.get("status")] = cnt.get(f.get("status"), 0) + 1
+        df = pd.DataFrame({"소재 수": [cnt.get(k, 0) for k, _ in STAGES]}, index=[lb for _, lb in STAGES])
+        st.bar_chart(df)
+    with right:
+        st.markdown("**② 최근 30일 일별 업로드 수**")
+        days = [(datetime.now(KST) - timedelta(days=n)).strftime("%m-%d") for n in range(29, -1, -1)]
+        full = [(datetime.now(KST) - timedelta(days=n)).strftime("%Y-%m-%d") for n in range(29, -1, -1)]
+        per = {}
+        for _, f in uploaded:
+            d = _day(f.get("uploaded_at"))
+            if d:
+                per[d] = per.get(d, 0) + 1
+        st.bar_chart(pd.DataFrame({"업로드": [per.get(d, 0) for d in full]}, index=days))
+        no_date = sum(1 for _, f in uploaded if not _day(f.get("uploaded_at")))
+        if no_date:
+            st.caption(f"업로드 날짜가 기록되지 않은 소재 {no_date}개는 그래프에 없습니다.")
+
+    # ---- 조회수 (yt_stats.json = 마지막 리포트 시점) ----
+    st.markdown("**③ 조회수 (마지막 유튜브 리포트 기준)**")
+    try:
+        snaps = json.load(open("yt_stats.json", encoding="utf-8"))
+    except Exception:
+        snaps = []
+    if not snaps:
+        st.info("yt_stats.json 이 없습니다. 유튜브 리포트(yt_report)가 한 번 돌면 여기에 표시됩니다.")
+    else:
+        s = snaps[-1]
+        vids = [v for v in s.get("videos", []) if v.get("kind", "short") == "short"] or s.get("videos", [])
+        st.caption(f"리포트 {s.get('date', '?')} · 최근 {s.get('days', '?')}일({s.get('start', '')}~{s.get('end', '')}) · 영상 {len(vids)}개")
+        if vids:
+            v = pd.DataFrame(vids)
+            v["published"] = v.get("published")
+            g1, g2 = st.columns(2)
+            with g1:
+                st.markdown("업로드일별 평균 조회수")
+                by = v.groupby("published")["views"].mean().round(0)
+                st.line_chart(by.rename("평균 조회수"))
+            with g2:
+                st.markdown("조회수 vs 평균 시청 비율(%)")
+                if "averageViewPercentage" in v:
+                    st.scatter_chart(v, x="views", y="averageViewPercentage") if hasattr(st, "scatter_chart") else st.line_chart(v.set_index("published")["averageViewPercentage"])
+            top = v.sort_values("views", ascending=False)
+            cols = [c_ for c_ in ("title", "views", "averageViewDuration", "averageViewPercentage", "likes", "subscribersGained", "published") if c_ in top]
+            ren = {"title": "제목", "views": "조회수", "averageViewDuration": "평균 시청(초)", "averageViewPercentage": "평균 시청%",
+                   "likes": "좋아요", "subscribersGained": "구독 증가", "published": "업로드일"}
+            t1, t2 = st.tabs(["상위 10", "하위 10"])
+            t1.dataframe(top[cols].head(10).rename(columns=ren), hide_index=True)
+            t2.dataframe(top[cols].tail(10).iloc[::-1].rename(columns=ren), hide_index=True)
+            st.caption(f"평균 조회수 {v['views'].mean():,.0f} · 중앙값 {v['views'].median():,.0f}" +
+                       (f" · 평균 시청% {v['averageViewPercentage'].mean():.1f}" if "averageViewPercentage" in v else ""))
+
+    # ---- 실행 이력 ----
+    st.markdown("**④ 실행 이력**")
+    hist = _jl("run_history.jsonl")
+    if not hist:
+        st.info("run_history.jsonl 이 없습니다.")
+    else:
+        h = pd.DataFrame(hist)
+        h["day"] = h["time"].astype(str).str[:10]
+        w = h[h["day"] >= (datetime.now(KST) - timedelta(days=7)).strftime("%Y-%m-%d")]
+        a, b = st.columns(2)
+        with a:
+            st.markdown("최근 7일 실행 결과 (출처별)")
+            if len(w):
+                pv = w.pivot_table(index="source", columns="status", values="id", aggfunc="count", fill_value=0)
+                st.dataframe(pv)
+            else:
+                st.caption("최근 7일 기록 없음")
+        with b:
+            st.markdown("작업별 평균 소요시간 (초, 측정된 것만)")
+            t = h[h["secs"].notna()]
+            if len(t):
+                tt = t.groupby("kind")["secs"].agg(["count", "mean"]).round(0).sort_values("mean", ascending=False)
+                tt.columns = ["횟수", "평균(초)"]
+                st.dataframe(tt.head(10))
+            else:
+                st.caption("소요시간 기록 없음")
+        fails = h[h["status"].astype(str).str.lower().isin(["failure", "fail", "failed", "error"])].tail(10)
+        st.markdown("최근 실패 10건" if len(fails) else "최근 실패 없음 ✅")
+        if len(fails):
+            st.dataframe(fails[["time", "channel", "source", "kind", "title"]].iloc[::-1], hide_index=True)
+        with st.expander("최근 실행 20건"):
+            st.dataframe(h.tail(20).iloc[::-1][["time", "channel", "source", "kind", "title", "status", "secs"]], hide_index=True)
+
+    # ---- 확인 필요 ----
+    st.markdown("**⑤ 확인이 필요한 소재**")
+    probs = []
+    for i, f in waiting_up:
+        p = str(f.get("video_path_v6") or "")
+        if p and not os.path.exists(p):
+            probs.append((i, f.get("label") or f.get("country") or "", "업로드 대기인데 영상 파일이 없음"))
+    for i, f in uploaded:
+        if f.get("status") == "rejected":
+            probs.append((i, f.get("label") or f.get("country") or "", "폐기했지만 유튜브에 올라가 있음 (스튜디오에서 삭제 확인)"))
+    for i, f in waiting_render:
+        if not f.get("narration"):
+            probs.append((i, f.get("label") or f.get("country") or "", "렌더링 대기인데 대본이 비어 있음"))
+    if probs:
+        st.dataframe(pd.DataFrame(probs, columns=["번호", "소재", "문제"]), hide_index=True)
+    else:
+        st.success("확인이 필요한 소재가 없습니다.")

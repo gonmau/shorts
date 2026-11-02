@@ -311,7 +311,7 @@ def _style_panel():
         st.text_area("AI에게 실제로 전달되는 문장 (대본)", _SP.block("script", _P) or "(없음)", height=170, disabled=True, key="sp_prev")
 
 st.caption(_sync_line())
-TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
+TD, TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["📊 현황", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
 with T1:
     st.caption("새 소재를 만들고 승인/제외합니다. 직접 소재를 넣거나, 상태·폐기·업로드 기록도 여기서 봅니다.")
     T1a, T1b, T1c = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록"])
@@ -330,6 +330,14 @@ with T5:
 with T6:
     st.caption("비공개로 업로드하고, 제목/설명을 복사하거나 디스코드로 보냅니다.")
     T6a, T6b = st.tabs(["⚙ 업로드", "📋 제목·설명 (디스코드·유튜브)"])
+with TD:
+    try:
+        import dashboard as _dash
+        from common import load_db as _ldb
+        _dash.render(st, _ldb(), int(start), int(os.environ.get("DAILY_MAX", "20") or 20))
+    except Exception as _e:
+        st.error(f"현황 화면을 그리지 못했습니다: {_e}")
+
 with TH:
     H_main = st.container()
     H_auto = st.expander("⚡ 자동 진행 (확인 없이 이어서 실행)", expanded=False)
