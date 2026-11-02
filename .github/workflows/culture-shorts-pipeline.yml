@@ -148,16 +148,20 @@ jobs:
         run: python redo_videos.py --script --indexes "$REDO_SCRIPT"
 
       # ---------- 준비 단계 (prepare / all) ----------
-      - name: 소재 보충 (대기 소재가 적을 때)
+      - name: 소재 보충 (대기 소재가 40개 밑이면 채움, 최대 3회)
         if: ${{ env.STAGE != 'render' }}
         run: |
-          python - <<'PY' > pending.txt
+          for round in 1 2 3; do
+            PENDING=$(python - <<'PY'
           import json, os
           db = json.load(open('facts_db.json', encoding='utf-8')) if os.path.exists('facts_db.json') else []
           print(sum(1 for f in db if f.get('status') in ('unverified', 'verified')))
           PY
-          PENDING=$(cat pending.txt); echo "대기 소재: $PENDING"
-          if [ "$PENDING" -lt 10 ]; then python generate_culture_facts.py --count 12 || echo "소재 보충 실패 - 이번 실행은 계속 진행합니다"; fi
+          )
+            echo "대기 소재: $PENDING (회차 $round)"
+            [ "$PENDING" -ge 40 ] && break
+            python generate_culture_facts.py --count 20 || { echo "소재 보충 실패 - 이번 실행은 계속 진행합니다"; break; }
+          done
 
       - name: 자동 승인 (선택)
         if: ${{ env.STAGE != 'render' && (github.event_name == 'schedule' || github.event.inputs.auto_verify == 'true') }}
