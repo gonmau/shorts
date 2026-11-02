@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-02 20:09:02 (KST) · 기록 923건 · 소재 478개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-02 20:13:45 (KST) · 기록 927건 · 소재 478개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 34 | 0 | 16분 1초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 40 | 0 | 6초 |
+| apply_review | 41 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 40 | 0 | 7시간 19분 |
 | check_uploads | 21 | 0 | 2분 4초 |
@@ -17,13 +17,13 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 16 | 0 | 1초 |
-| fetch_images | 112 | 3 | 1시간 50분 |
+| fetch_images | 113 | 3 | 1시간 51분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
-| generate_script | 109 | 0 | 1시간 5분 |
+| generate_script | 110 | 0 | 1시간 6분 |
 | generate_tts | 44 | 0 | 19분 31초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 6 | 0 | 26초 |
-| promote_ready | 40 | 0 | 5초 |
+| promote_ready | 41 | 0 | 5초 |
 | redo_videos | 10 | 0 | 2초 |
 | resync_meta | 1 | 0 | 1분 56초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -38,6 +38,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:13 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 1분 10초 |  |
+| 20:12 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 7초 |  |
+| 20:12 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 20:12 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 20:08 | PC | ai_prompts | ai_prompts.py --cuts 1 --style clean editorial illustration, soft warm colors, simple composition, vertical 9:16, no text, no letters, no logos, no wa | ✅ | 2초 |  |
 | 19:58 | PC | 코드업데이트 | gonmau/shorts: 6개 (ai_prompts.py, dashboard.py, local_ui.py, merge_remote_db.py, notify_topics.py, web_ui.py) | ✅ |  |  |
 | 18:18 | Actions | 쇼츠 | culture-shorts-pipeline #110 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/41415820066 |
