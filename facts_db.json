@@ -47848,9 +47848,9 @@
   },
   {
     "topic": "포르투갈어 어휘의 20%는 라틴어가 아니다",
-    "hook": "포르투갈어 단어 1/5가 라틴어가 아니라고?",
-    "body": "포르투갈어는 라틴어(Latin)에서 파생된 로맨스어이지만, 13세기 어휘의 약 20%는 고대 갈라에시아어(Gallaecian), 켈티베리안어(Celtiberian), 게르만어(Germanic), 그리스어(Greek), 아라비아어(Arabic) 등 다양한 언어에서 차용되었습니다.",
-    "twist": "이 덕분에 포르투갈어는 라틴어 어근만큼이나 다채로운 발음과 의미를 품고 있습니다.",
+    "hook": "포르투갈어 어휘의 이십 퍼센트는 라틴어가 아닐까요?",
+    "body": "라틴어가 바탕이라는 점입니다. 여기에 아랍어와 게르만계 언어 등의 흔적이 더해졌죠.",
+    "twist": "언어의 역사는 숫자보다 단어 안에 더 구체적으로 남습니다.",
     "caveat": "이 비율은 13세기 포르투갈 어휘에 기반한 것입니다.",
     "country": "포르투갈",
     "theme": "언어/이름",
@@ -47859,13 +47859,57 @@
     "verify_note": "Portuguese vocabulary",
     "confidence": "source",
     "created_at": "2026-10-30T14:24:41.496887+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "포르투갈어 어휘의 이십 퍼센트는 라틴어가 아닐까요? 이 숫자는 그대로 외우기 전에 질문이 필요합니다. 언제의 단어를, 어디까지 센 걸까요? 옛 어휘와 현대 사전은 범위가 다릅니다. 자주 쓰는 말만 세어도 결과가 달라지고요. 분명한 건 라틴어가 바탕이라는 점입니다. 여기에 아랍어와 게르만계 언어 등의 흔적이 더해졌죠. 저는 출처 없는 비율보다 그 단어들이 들어온 과정이 더 흥미롭습니다. 사람은 물건과 지식을 주고받으며 이름도 함께 가져오니까요. 언어의 역사는 숫자보다 단어 안에 더 구체적으로 남습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*20%* 라틴어?"
+      },
+      {
+        "s": 3,
+        "text": "*세었을* 범위?"
+      },
+      {
+        "s": 6,
+        "text": "*라틴어*가 기본!"
+      },
+      {
+        "s": 7,
+        "text": "아랍·게르만 *흔적*?"
+      }
+    ],
+    "title_line1": "포르투갈어 어휘 20%",
+    "title_line2": "라틴어가 아니었을까?",
+    "image_queries": [
+      "Portuguese dictionary page",
+      "hand holding calculator",
+      "ancient manuscript scroll",
+      "old and modern dictionaries",
+      "frequent Portuguese words list",
+      "Latin alphabet textbook",
+      "Arabic and Germanic script letters",
+      "historical language evolution chart",
+      "people exchanging gifts",
+      "vintage language map"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "핀란드 로마인(Kàlo)의 인구와 언어",
-    "hook": "핀란드, 인구조사에 민족 묻지 않는데도 로마인 1만 명이 살아!",
-    "body": "핀란드와 스웨덴에 주로 거주하는 로마인(Kàlo)은 핀란드어, 스웨덴어, 그리고 카로(Kalo)를 사용한다. 2004년 추정치로는 핀란드에 약 1만 명, 2020년에는 스웨덴에 약 4,500명이 살고 있다.",
-    "twist": "핀란드가 민족 데이터를 수집하지 않음에도 이런 추정이 가능했다는 점이 놀랍다.",
+    "hook": "핀란드의 로마 공동체 인구를 알아도 언어 사용자 수는 알 수 없습니다.",
+    "body": "카알레라고도 불리는 이 공동체는 대략 만 명 규모로 추정됩니다. 하지만 그만큼의 사람이 로마니어를 쓰는 건 아니죠. 핀란드어를 일상에서 쓰는 사람이 많습니다.",
+    "twist": "인구 통계에는 공동체가 보이지만, 집 안에서 어떤 말이 오가는지까지 보이진 않습니다.",
     "caveat": "인구 수치는 2004년(핀란드)과 2020년(스웨덴) 추정치이며, 정확한 조사 결과는 아니다.",
     "country": "핀란드",
     "theme": "생활문화",
@@ -47874,13 +47918,55 @@
     "verify_note": "Finnish Roma",
     "confidence": "source",
     "created_at": "2026-10-30T14:25:16.588542+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "핀란드의 로마 공동체 인구를 알아도 언어 사용자 수는 알 수 없습니다. 카알레라고도 불리는 이 공동체는 대략 만 명 규모로 추정됩니다. 하지만 그만큼의 사람이 로마니어를 쓰는 건 아니죠. 핀란드어를 일상에서 쓰는 사람이 많습니다. 공동체의 언어가 다음 세대로 이어지는지는 별개의 문제예요. 저는 이 차이가 중요하게 느껴집니다. 사람이 살아가는 것과 그 사람들의 말이 살아남는 건 같지 않으니까요. 인구 통계에는 공동체가 보이지만, 집 안에서 어떤 말이 오가는지까지 보이진 않습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "인구만으로 *언어*는?"
+      },
+      {
+        "s": 2,
+        "text": "만 명 *커뮤니티*"
+      },
+      {
+        "s": 4,
+        "text": "일상은 *핀란드어*"
+      },
+      {
+        "s": 7,
+        "text": "말은 *살아남지*"
+      }
+    ],
+    "title_line1": "핀란드 로마인 인구",
+    "title_line2": "말은 얼마나 남을까",
+    "image_queries": [
+      "Finland population chart",
+      "Finland community gathering",
+      "Group conversation outdoors",
+      "Finnish living room",
+      "Finnish family teaching child",
+      "Person reflecting by window",
+      "Worn notebook on table",
+      "Family gathering in home"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "미국 각 주의 교통법과 통일 차량법(UVC)",
-    "hook": "주를 넘었는데 바로 벌금? 미국 교통법의 숨은 함정!",
-    "body": "미국은 주마다 자체 교통 코드를 가지고 있지만, 대부분 비슷한 규칙을 유지한다. 연방 차원의 '통일 차량법'(Uniform Vehicle Code)은 제안됐지만, 어느 주도 전부 채택하지 않았다.",
-    "twist": "일부 주는 UVC의 일부만 채택하거나 자체 법을 만들어 같은 주제를 다룬다.",
+    "hook": "통일 차량법이라는 이름인데 미국 전국의 법은 아닙니다.",
+    "body": "UVC는 각 주가 법을 만들 때 참고하도록 마련한 기준이며, 이 문서만으로 운전자에게 벌금을 매길 수 없습니다. 실제 효력은 각 주가 채택한 법률에서 나옵니다. 일부 주는 모델의 일부만 적용하거나 내용을 바꿔 사용합니다.",
+    "twist": "통일은 이미 끝난 상태가 아니라, 이 문서가 지향하는 목표인 셈이죠.",
     "caveat": "UVC는 어떤 주에서도 전면 채택되지 않았으며, 적용 여부는 주마다 다르다.",
     "country": "미국",
     "theme": "법/제도",
@@ -47889,13 +47975,60 @@
     "verify_note": "Traffic law in the United States",
     "confidence": "source",
     "created_at": "2026-10-30T14:25:16.588542+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "통일 차량법이라는 이름인데 미국 전국의 법은 아닙니다. UVC라는 교통법 모델 이야기입니다. 각 주가 법을 만들 때 참고하도록 마련한 기준이죠. 이 문서만으로 운전자에게 벌금을 매길 수는 없습니다. 실제 효력은 각 주가 채택한 법률 등에서 나옵니다. 같은 모델을 보고도 일부만 쓰거나 내용을 바꿀 수 있고요. 그러니 다른 주에서 괜찮았던 행동이 여기서도 허용되진 않습니다. 저는 이름 때문에 오히려 헷갈리기 쉬운 사례라고 봅니다. 통일은 이미 끝난 상태가 아니라, 이 문서가 지향하는 목표인 셈이죠.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "통일차량법*전국*아냐"
+      },
+      {
+        "s": 3,
+        "text": "주마다*기준*참고"
+      },
+      {
+        "s": 5,
+        "text": "효력은*주법*에서"
+      },
+      {
+        "s": 7,
+        "text": "다른주*허용*안돼"
+      },
+      {
+        "s": 9,
+        "text": "목표는*통일*"
+      }
+    ],
+    "title_line1": "미국 주 교통법",
+    "title_line2": "통일 차량법은?",
+    "image_queries": [
+      "unified vehicle law map",
+      "UVC traffic law model",
+      "state traffic law handbook",
+      "traffic violation notice",
+      "state law code book",
+      "customized traffic sign",
+      "state border traffic sign",
+      "confusing legal paperwork",
+      "traffic law unification diagram"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "아이슬란드 겨울빛 축제의 변천",
-    "hook": "겨울빛 축제, 반전은 바로 거리 음식!",
-    "body": "겨울이 끝나고 빛이 시작되는 시기를 기념하는 이 축제는 예술 워크숍, 조명 디자인, 라이브 음악, 그리고 거리 음식으로 구성된다. 원래는 종교적·영적 의미가 있었지만, 현재는 소비주의가 크게 자리 잡았다.",
-    "twist": "축제의 영적 의미는 사라지고, 대신 상업적인 요소가 주를 이룬다.",
+    "hook": "아이슬란드의 겨울빛 축제에서는 수영장도 행사장이 됩니다.",
+    "body": "축제는 거리의 빛 작품뿐 아니라 박물관의 밤과 지열 해변 등 다양한 장소에서 열립니다. 수영장이 행사장으로 활용되어 겨울밤을 새로운 방식으로 경험하게 합니다.",
+    "twist": "축제 현장에 수영장이 포함된다는 점이 의외입니다.",
     "caveat": "전통적인 영적 의미는 현재 대부분의 행사에서 사라진 상태이다.",
     "country": "아이슬란드",
     "theme": "축제/의례",
@@ -47904,7 +48037,54 @@
     "verify_note": "Winter light festival",
     "confidence": "source",
     "created_at": "2026-10-30T14:25:16.588542+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "아이슬란드의 겨울빛 축제에서는 수영장도 행사장이 됩니다. 레이캬비크의 이야기인데요. 거리의 빛 작품뿐 아니라 박물관의 밤도 열립니다. 평소 다니던 시설을 다른 시간, 다른 분위기로 만나는 거죠. 지열 해변이 새롭게 참여한 사례도 있습니다. 그래서 이 축제의 변화는 조명이 얼마나 커졌는지만으로 설명되지 않습니다. 어디까지 축제장이 되느냐도 달라지는 겁니다. 저는 수영장이 들어간다는 점이 특히 좋습니다. 겨울밤을 구경하는 데서 끝내지 않고, 그 안에서 시간을 보내게 하니까요.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "수영장도 *축제장*"
+      },
+      {
+        "s": 3,
+        "text": "박물관도 *밤*"
+      },
+      {
+        "s": 5,
+        "text": "지열 해변 *참여*"
+      },
+      {
+        "s": 7,
+        "text": "축제장 *확장*"
+      },
+      {
+        "s": 9,
+        "text": "수영장 안 *시간*"
+      }
+    ],
+    "title_line1": "아이슬란드 겨울빛",
+    "title_line2": "수영장이 무대!",
+    "image_queries": [
+      "Iceland festival pool",
+      "Reykjavik winter night",
+      "Iceland museum night",
+      "Icelandic indoor venue",
+      "Geothermal beach Iceland",
+      "Iceland winter lights",
+      "Festival grounds expansion",
+      "Icelandic swimming pool",
+      "Indoor pool evening"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -48700,10 +48880,10 @@
     "uploaded_at": "2026-10-31T22:35:24.251182+09:00"
   },
   {
-    "topic": "치앙마이 하늘을 가득 메운 수천 개의 등불, Yi Peng 축제",
-    "hook": "천 개의 등불이 하늘을 가득 메우면, 소원이 날아간다!",
-    "body": "Yi Peng은 라나 전통 축제로, 북부 태국에서 3일간 열립니다. 보름달이 뜨는 날, 사람들은 수천 개의 khom loi(하늘 등불)를 날려 불운을 씻고 소원을 전합니다.",
-    "twist": "축제는 라나 달력 두 번째 달의 보름달에 맞춰 진행됩니다.",
+    "topic": "치앙마이 이펭 축제, 하늘 등불과 지상 등불 이야기",
+    "hook": "치앙마이에서 등불을 띄웠는데 비행기가 영향을 받는다면요?",
+    "body": "이펭 축제에서는 불로 데운 공기로 만든 등불을 하늘에 띄우지만, 비행기에 영향을 줄 수 있어 허용 장소와 시간이 제한됩니다. 또한 집과 사원에 등불을 걸어 지상에서도 축제를 즐깁니다.",
+    "twist": "하늘에 날리지 않아도 집과 사원에 걸어 두는 등불로 축제를 즐길 수 있다.",
     "caveat": "이 전통은 주로 치앙마이와 그 주변 지역에서만 행해집니다.",
     "country": "태국",
     "theme": "축제/의례",
@@ -48712,7 +48892,55 @@
     "verify_note": "Yi Peng festival",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "치앙마이에서 등불을 띄웠는데 비행기가 영향을 받는다면요? 이펭 축제의 아름다운 장면 뒤에는 이런 문제가 있습니다. 불로 데운 공기가 등을 띄우지만, 어디로 갈지는 마음대로 정할 수 없죠. 비행을 방해하거나 내려와 불을 낼 수도 있습니다. 그래서 허용 장소와 시간이 제한됩니다. 사진처럼 보인다고 아무 골목에서 띄우면 안 되는 거예요. 사실 이펭에는 집과 사원에 거는 등도 있습니다. 하늘로 날리지 않아도 축제를 즐길 수 있죠. 저는 그쪽 풍경도 궁금합니다. 떠나는 빛 말고, 동네에 남아 있는 빛은 어떤 모습일까요?",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "등불이 *비행기*에?"
+      },
+      {
+        "s": 3,
+        "text": "*등불* 뜨거운 공기"
+      },
+      {
+        "s": 5,
+        "text": "*제한*된 장소와 시간"
+      },
+      {
+        "s": 8,
+        "text": "*축제*는 하늘 없이"
+      },
+      {
+        "s": 10,
+        "text": "동네에 남은 *빛*은?"
+      }
+    ],
+    "title_line1": "치앙마이 이펭 축제",
+    "title_line2": "비행기 방해될까?",
+    "image_queries": [
+      "Chiang Mai lantern near airplane",
+      "Yi Peng festival crowd view",
+      "hot air lantern glowing",
+      "lantern near aircraft",
+      "restricted lantern release area",
+      "lantern in narrow alley",
+      "lantern hanging temple",
+      "ground lantern festival",
+      "Chiang Mai night scenery",
+      "lanterns left in village"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "올림픽 기간 스위스 팀 전용 숙소, 일반인도 입장 가능",
@@ -48731,10 +48959,10 @@
     "reject_reason": "UI에서 제외"
   },
   {
-    "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
-    "hook": "반전! 영국 귀족 자녀도 ‘공작 부인’이라고 부른다!",
-    "body": "영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 호칭을 사용합니다. 이러한 호칭은 법적으로 실제 권한을 갖고 있지는 않지만, 예의상 사용됩니다.",
-    "twist": "예를 들어, 피어의 자녀도 ‘공작 부인’ 같은 호칭을 받을 수 있습니다.",
+    "topic": "영국 귀족 호칭",
+    "hook": "영국 공작의 딸은 ‘공작 부인’이 아닙니다!",
+    "body": "공작의 딸은 이름 앞에 ‘레이디’라는 호칭을 사용하고, ‘더치스’는 공작의 배우자나 여성 공작에게만 쓰입니다. 아들들의 경우 장남은 아버지의 하위 작위를 예우상 사용하지만 실제 작위를 물려받는 것은 아닙니다.",
+    "twist": "이름 앞 호칭만으로도 가족 안에서의 위치가 드러납니다.",
     "caveat": "이러한 관습은 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용됩니다.",
     "country": "영국",
     "theme": "관습/예절",
@@ -48743,7 +48971,56 @@
     "verify_note": "Courtesy titles in the United Kingdom",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "영국 공작의 딸은 공작 부인일까요? 아닙니다. 보통 이름 앞에 레이디라는 호칭이 붙습니다. 공작 부인을 뜻하는 더치스와는 다른 말이죠. 더치스는 공작의 배우자나 여성 공작에게 쓰입니다. 아들들의 호칭도 모두 공작은 아닙니다. 장남은 아버지의 하위 작위를 예우상 쓰기도 하죠. 그렇다고 그 작위를 실제로 물려받았다는 뜻은 아닙니다. 저는 영국 귀족 이야기가 여기서 추리물처럼 느껴집니다. 이름 앞 호칭만 봐도 가족 안의 위치가 드러나거든요. 높아 보이는 호칭과 실제로 가진 작위는 따로 읽어야 합니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "공작 딸은 *부인*?"
+      },
+      {
+        "s": 3,
+        "text": "이름 앞에 *레이디* 붙어"
+      },
+      {
+        "s": 5,
+        "text": "*더치스*는 배우자용"
+      },
+      {
+        "s": 7,
+        "text": "장남은 *하위작위*"
+      },
+      {
+        "s": 11,
+        "text": "*호칭*과 작위는 별도"
+      }
+    ],
+    "title_line1": "영국 귀족 호칭",
+    "title_line2": "공작 딸은 부인 아니다",
+    "image_queries": [
+      "British duke's daughter",
+      "British aristocratic hallway",
+      "Lady title prefix",
+      "British duchess title distinction",
+      "Duchess spouse usage",
+      "British noble sons",
+      "Eldest son lower title",
+      "No actual inheritance",
+      "Aristocracy mystery story",
+      "Title reveals family rank",
+      "Title and rank separate"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "불가리아(Bulgaria)의 공공음주(public intoxication) 법규",
@@ -49397,10 +49674,10 @@
     "uploaded_at": "2026-11-02T18:17:53.613468+09:00"
   },
   {
-    "topic": "헝가리식 스파에츨레 조리법",
-    "hook": "끓는 물에 반죽을 바로 뿌려버린다면?",
-    "body": "Spätzle(German)는 달걀 반죽을 물에 직접 넣어 익히는 독특한 면 요리다. 헝가리에서는 이를 nokedli(Hungarian)라고 부른다.",
-    "twist": "반죽이 물에 바로 닿아 거친 표면과 구멍이 생겨 소스가 잘 스며든다.",
+    "topic": "헝가리식 노케들리 조리법",
+    "hook": "반죽을 길게 밀지 않고 바로 끓는 물에 떨어뜨린다면?",
+    "body": "헝가리의 노케들리는 밀가루와 달걀, 물을 섞어 작은 조각으로 끓는 물에 떨어뜨립니다. 구멍 난 도구를 사용하면 반죽이 아래로 빠져나와 스파에츨레와 비슷한 방식이 됩니다. 익은 조각을 건져 버터나 기름에 섞어 소스가 있는 고기 요리에 곁들입니다.",
+    "twist": "이 작은 반죽들은 주연보다 조연에 가깝게, 소스를 받아주는 든든한 역할을 합니다.",
     "caveat": "이 조리법은 남부 독일·오스트리아·헝가리 등 일부 지역에서 주로 사용된다.",
     "country": "헝가리",
     "theme": "음식문화",
@@ -49409,12 +49686,47 @@
     "verify_note": "Spätzle",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "헝가리의 노케들리는 반죽을 길게 밀지 않습니다. 밀가루와 달걀, 물을 섞어 작은 조각으로 끓는 물에 떨어뜨리죠. 구멍 난 도구를 쓰면 반죽이 아래로 빠져나옵니다. 스파에츨레와 비슷한 방식이에요. 익은 조각을 건져 버터나 기름에 섞습니다. 소스가 있는 고기 요리에 곁들이기도 하죠. 저는 이 음식이 주연보다 조연에 가깝다고 느낍니다. 혼자 화려하게 맛을 내기보다 옆의 소스를 받아주거든요. 접시에 남은 소스가 아까울 때, 이 작은 반죽들이 꽤 든든한 역할을 합니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "반죽 *밀지* 않아요"
+      },
+      {
+        "s": 3,
+        "text": "도구로 *빠져* 나와"
+      },
+      {
+        "s": 5,
+        "text": "버터에 *섞인* 조각"
+      },
+      {
+        "s": 7,
+        "text": "주연보다 *조연* 느낌"
+      },
+      {
+        "s": 9,
+        "text": "소스에 *득든* 역할"
+      }
+    ],
+    "title_line1": "헝가리 노케들리",
+    "title_line2": "반죽 바로 물에?"
   },
   {
     "topic": "크로아티아 겨울 Koliada 전통",
-    "hook": "크리스마스에 집에 찾아와 노래만 부르면?",
-    "body": "Koliada(Slavic)는 크리스마스부터 주현절까지 이어지는 겨울 축제로, 태양을 기리는 의식이다. koledari(Slavic)라는 그룹이 집을 돌며 캐롤을 부른다.",
+    "hook": "노래를 불러주면 집주인이 먹거리로 맞아줍니다.",
+    "body": "크로아티아 두브로브니크의 콜렌다 풍습으로, 성탄절과 연말에 사람들이 거리를 돌며 노래하고, 집을 찾아가 축하 인사를 전합니다. 노래를 받은 쪽은 음식이나 음료를 내놓습니다.",
     "twist": "이 전통은 기독교 이전부터 전해 내려온다.",
     "caveat": "주로 동유럽 슬라브 문화권에서 행해진다.",
     "country": "크로아티아",
@@ -49424,13 +49736,57 @@
     "verify_note": "Koliada",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "노래를 불러주면 집주인이 먹거리로 맞아줍니다. 크로아티아 두브로브니크의 콜렌다 풍습입니다. 성탄절과 연말에 사람들이 거리를 돌며 노래하죠. 집을 찾아가 축하 인사를 전하기도 합니다. 노래를 받은 쪽은 음식이나 음료를 내놓고요. 공연을 하고 대가를 받는 관계와는 조금 다릅니다. 서로 다른 방식으로 인사를 주고받는 거죠. 저는 이 풍습이 꽤 다정하게 느껴집니다. 먼저 찾아온 사람이 빈손인 것 같아도, 이미 노래를 가져왔으니까요. 이곳에서는 목소리도 연말 선물이 됩니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "노래하면 *음식*"
+      },
+      {
+        "s": 3,
+        "text": "거리에서 *노래* 돌며"
+      },
+      {
+        "s": 5,
+        "text": "받는 사람 *음식*"
+      },
+      {
+        "s": 10,
+        "text": "목소리도 *선물*이야"
+      }
+    ],
+    "title_line1": "크로아티아 겨울 콜레다",
+    "title_line2": "노래하면 음식이?",
+    "image_queries": [
+      "Croatian house food offering",
+      "Dubrovnik Koliada tradition",
+      "people street singing Christmas",
+      "Croatian home greeting visit",
+      "receiving food after song",
+      "informal folk performance exchange",
+      "mutual folk greeting ceremony",
+      "warm festive tradition scene",
+      "visitor empty hands singing",
+      "voice as holiday gift"
+    ],
+    "scene_count": 12
   },
   {
-    "topic": "검은눈완두의 색다른 변종",
-    "hook": "검은 눈 콩이 보라색 껍질을 가졌다면?",
-    "body": "black-eyed pea(English)는 아프리카에서 재배된 콩의 한 종류이며, 미국 남부에서는 다양한 크기와 색상의 변종이 있다. 일반적인 품종은 연한 색에 검은 점이 있다.",
-    "twist": "보라색 껍질을 가진 ‘mud-in-your-eye pea’도 있다.",
+    "topic": "검은눈완두의 다양한 변형",
+    "hook": "검은눈완두의 눈이 분홍색이라면 이름을 바꿔야 할까요?",
+    "body": "검은눈완두는 동부콩의 한 유형이며, 씨앗 배꼽 주변 무늬가 눈처럼 보입니다. 같은 동부콩에도 분홍빛·자줏빛 무늬와 크림색·얼룩이 있는 유형이 있습니다. 남아공 농업 자료에도 이러한 차이가 소개됩니다.",
+    "twist": "전부 검은눈완두가 변한 새 품종은 아니라, 더 큰 동부콩 가족 안에 여러 모습이 존재합니다.",
     "caveat": "이 변종은 주로 미국 남부에서 재배된다.",
     "country": "남아프리카공화국",
     "theme": "음식문화",
@@ -49439,13 +49795,57 @@
     "verify_note": "Black-eyed pea",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "검은눈완두의 눈이 분홍색이라면 이름을 바꿔야 할까요? 사실 검은눈완두는 동부콩의 한 유형입니다. 눈처럼 보이는 건 씨앗의 배꼽 주변 무늬고요. 같은 동부콩에도 분홍빛이나 자줏빛 무늬가 있습니다. 크림색이거나 얼룩이 있는 유형도 있죠. 남아공 농업 자료에도 이런 차이가 소개됩니다. 그러니 전부 검은눈완두가 변한 새 품종은 아닙니다. 더 큰 동부콩 가족 안에 여러 모습이 있는 거예요. 저는 이걸 알고 나니 콩 이름이 조금 억울하게 느껴집니다. 가장 유명한 얼굴 하나로 온 가족을 기억하고 있었거든요.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "눈이 *분홍*?"
+      },
+      {
+        "s": 3,
+        "text": "씨앗 *배꼽* 무늬"
+      },
+      {
+        "s": 7,
+        "text": "새 *품종* 아니다"
+      },
+      {
+        "s": 9,
+        "text": "*콩* 이름 억울"
+      }
+    ],
+    "title_line1": "남아공 검은눈완두",
+    "title_line2": "분홍눈은 새 품종?",
+    "image_queries": [
+      "pink pea seed",
+      "black-eyed pea plant",
+      "pea seed belly button pattern",
+      "purple speckled black-eyed pea",
+      "cream spotted black-eyed pea",
+      "South Africa agriculture field",
+      "black-eyed pea not new variety",
+      "black-eyed pea family beans",
+      "black-eyed pea name controversy",
+      "famous black-eyed pea portrait"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "할로윈(Halloween), 죽은 이를 기리는 날",
-    "hook": "31일 밤, 폴란드 거리엔 무서운 복장보다 성인들을 위한 촛불이 가득!",
-    "body": "할로윈은 서구 기독교의 만성절 전날인 10월 31일에 열리는 축제로, 성인·순교자·고인들을 기억하는 의식이 시작됩니다. 현대엔 공포와 초자연을 즐기는 문화로 변했지만, 그 뿌리는 죽은 이를 기리는 전통에 있습니다.",
-    "twist": "사실, 이 날의 많은 풍습은 켈트족의 수확 축제인 사마인(Samhain)에서 온 것이라는 설이 있습니다.",
+    "hook": "폴란드의 묘지가 밤이 되면 불빛으로 가득 찹니다.",
+    "body": "만성절 무렵, 가족들이 놓고 간 추모등이 묘지를 밝히며 사람들은 묘지를 정돈하고 꽃을 놓습니다. 해가 지면 무덤마다 켜진 빛이 더 선명해집니다.",
+    "twist": "폴란드에서도 할로윈을 즐기지만, 이 불빛은 할로윈 장식이 아니라 떠난 사람을 기억하는 전통적인 추모 의식입니다.",
     "caveat": "이 설명은 서구 기독교 전통을 따르는 국가들의 관습을 기반으로 합니다.",
     "country": "폴란드",
     "theme": "축제/의례",
@@ -49454,13 +49854,57 @@
     "verify_note": "Halloween",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "폴란드의 묘지가 밤이 되면 불빛으로 가득 찹니다. 할로윈 장식은 아닙니다. 만성절 무렵, 가족들이 놓고 간 추모등입니다. 사람들은 묘지를 정돈하고 꽃을 놓습니다. 해가 지면 무덤마다 켜진 빛이 더 선명해지죠. 사진만 보면 아름다운 야경처럼 보일 수 있어요. 그런데 그 빛 하나하나가 누군가를 찾아왔다는 표시입니다. 폴란드에서도 할로윈을 즐기지만 이 풍습과는 다릅니다. 한쪽이 무서운 모습을 빌려 노는 시간이라면, 이쪽은 떠난 사람을 기억하는 시간에 가깝죠. 알고 보면 꽤 다르게 보이는 밤입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "묘지에 *불빛* 가득"
+      },
+      {
+        "s": 3,
+        "text": "*추모등* 밤"
+      },
+      {
+        "s": 5,
+        "text": "무덤마다 *빛*이 선명"
+      },
+      {
+        "s": 9,
+        "text": "*떠난* 이를 기억"
+      }
+    ],
+    "title_line1": "폴란드 묘지 밤",
+    "title_line2": "불빛은 추모등?",
+    "image_queries": [
+      "Poland cemetery night lights",
+      "Polish graveyard decorations",
+      "Poland memorial candle night",
+      "Polish cemetery flowers",
+      "Poland illuminated graves",
+      "Polish night landscape",
+      "Polish candlelight vigil",
+      "Poland Halloween celebration",
+      "Poland remembrance candles",
+      "Polish night scenery"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "선(Chan), 명상의 뿌리",
-    "hook": "명상이 단순히 앉아 있는 게 아니라, 불교의 ‘선(Chan)’에서 시작됐다는 사실, 알고 계셨나요?",
-    "body": "선(Chan)은 산스크리트어 dhyāna(명상)에서 온 마하야나 불교 전통으로, 6세기 이후 중국에서 발전해 당·송 시대에 크게 퍼졌습니다. 명왕·청나라 시기에 가장 영향력 있는 불교 형태가 되었고, 오늘도 중국·대만·홍콩·해외 교포 사회에서 활발히 실천됩니다.",
-    "twist": "이 전통은 동아시아 전역에 여러 불교 파를 낳으며, 일본의 선(禅)도 바로 이에서 유래했습니다.",
+    "hook": "젠, 찬, 선. 다른 말처럼 들리지만 같은 글자를 읽는 방식입니다.",
+    "body": "중국에서 발전한 불교 전통이 퍼지며 이름도 달라진 겁니다. 더 거슬러 가면 명상과 관련된 산스크리트어 디야나와 연결됩니다. 선은 그 위에서 발전한 하나의 흐름입니다.",
+    "twist": "모든 명상이 선에서 시작된 건 아니라는 점과, 짧은 이름 하나에 인도와 동아시아를 잇는 과정이 담겨 있다는 점입니다.",
     "caveat": "이 정보는 주로 중국과 그 문화권에서의 역사적 기록에 근거합니다.",
     "country": "크로아티아",
     "theme": "생활문화",
@@ -49469,13 +49913,57 @@
     "verify_note": "Chan Buddhism",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "젠, 찬, 선. 다른 말처럼 들리지만 같은 글자를 읽는 방식입니다. 일본에서는 젠, 중국에서는 찬, 한국에서는 선이라고 하죠. 중국에서 발전한 불교 전통이 퍼지며 이름도 달라진 겁니다. 더 거슬러 가면 명상과 관련된 산스크리트어 디야나와 연결됩니다. 그렇다고 모든 명상이 선에서 시작된 건 아닙니다. 명상 수행은 그전에도 있었어요. 선은 그 위에서 발전한 하나의 흐름입니다. 짧은 이름 하나에 인도와 중국, 동아시아를 건넌 과정이 들어 있는 거죠. 저는 명상법보다 이 이름의 이동이 먼저 궁금해집니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "젠·찬·선, 같은 *글자*"
+      },
+      {
+        "s": 3,
+        "text": "일본·중국·한국, 한글로 *선*"
+      },
+      {
+        "s": 5,
+        "text": "디야나와 연결된 *명상*"
+      },
+      {
+        "s": 8,
+        "text": "선, 발전한 한 *흐름*"
+      }
+    ],
+    "title_line1": "선·찬·젠, 같은 글자",
+    "title_line2": "어디서부터 시작됐나?",
+    "image_queries": [
+      "Zen meditation posture",
+      "Same character pronunciation",
+      "Japanese Zen garden",
+      "Chinese Chan temple",
+      "Sanskrit mantra chant",
+      "Meditation not all origins",
+      "Ancient meditation ritual",
+      "Chan Buddhist monk study",
+      "Name journey across Asia",
+      "Name migration curiosity"
+    ],
+    "scene_count": 12
   },
   {
-    "topic": "나바라트리(Navaratri) – 9밤·9여신 축제",
-    "hook": "9밤 연속, 9개의 여신을 모시는 장면!",
-    "body": "나바라트리(Navaratri)는 샤크티(Shakti)를 기리며 여신 두르가(Durga)의 9가지 형태를 9밤 동안 모시는 힌두교 연례 축제로, 인도 문화권 전역에서 다양한 방식으로 진행된다.",
-    "twist": "이론적으로는 Magha·Chaitra·Ashadha·Ashvin 네 차례에 열리지만 실제로는 가을 Ashvin의 샤라다 나바라트리(Sharada Navaratri)만이 널리 지켜진다.",
+    "topic": "나바라트리(Navaratri) – 캐나다에서의 9밤 축제",
+    "hook": "캐나다에서 아홉 밤 동안 이어지는 힌두 축제가 있습니다.",
+    "body": "나바라트리(Navaratri)는 아홉 밤 동안 이어지며 두르가 여신의 아홉 모습을 기리는 힌두교 연례 축제입니다. 참여자들은 기도하고 노래하며 둥글게 돌며 춤을 춥니다. 이 축제는 화려한 댄스 행사처럼 보일 수 있지만, 참여하는 사람들에게는 믿음을 나누는 시간이기도 합니다.",
+    "twist": "이주할 때 가져오는 건 짐만이 아니라 함께 기념할 날이기도 합니다.",
     "caveat": "축제 방식은 지역·문화에 따라 차이가 있다.",
     "country": "캐나다",
     "theme": "축제/의례",
@@ -49484,7 +49972,51 @@
     "verify_note": "Navaratri",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "캐나다에서 아홉 밤 동안 이어지는 힌두 축제가 있습니다. 나바라트리인데요. 두르가 여신의 아홉 모습을 기리기도 합니다. 여신 아홉 명을 따로 모신다는 뜻과는 다르죠. 사람들은 기도하고 노래하고, 둥글게 돌며 춤을 춥니다. 밖에서 보면 화려한 댄스 행사처럼 보일 수 있어요. 하지만 참여하는 사람에게는 믿음을 나누는 시간이기도 합니다. 캐나다에서 생긴 축제는 아니지만, 이곳의 삶이 된 거죠. 저는 그 점이 흥미롭습니다. 이주할 때 가져오는 건 짐만이 아니라 함께 기념할 날이기도 하니까요.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "캐나다,*9밤*축제"
+      },
+      {
+        "s": 3,
+        "text": "두르가의 *아홉* 얼굴"
+      },
+      {
+        "s": 5,
+        "text": "기도·노래·*춤*"
+      },
+      {
+        "s": 10,
+        "text": "*짐*과 함께, 기념일"
+      }
+    ],
+    "title_line1": "캐나다 나바라트리",
+    "title_line2": "아홉밤 믿음은?",
+    "image_queries": [
+      "Canada Hindu festival nights",
+      "Navaratri celebration",
+      "Durga nine faces",
+      "Durga nine forms",
+      "Prayer song dance circle",
+      "Colorful dance event",
+      "Faith sharing moment",
+      "Canadian cultural festival",
+      "Interesting cultural blend",
+      "Baggage celebration day"
+    ],
+    "scene_count": 12
   },
   {
     "topic": "몽골 고기 중심 식단",
@@ -50171,5 +50703,80 @@
     "status_v6": "video_done",
     "country_before_fix": "덴마크",
     "reject_reason": "UI에서 폐기"
+  },
+  {
+    "topic": "치앙마이 하늘을 가득 메운 수천 개의 등불, Yi Peng 축제",
+    "hook": "천 개의 등불이 하늘을 가득 메우면, 소원이 날아간다!",
+    "body": "Yi Peng은 라나 전통 축제로, 북부 태국에서 3일간 열립니다. 보름달이 뜨는 날, 사람들은 수천 개의 khom loi(하늘 등불)를 날려 불운을 씻고 소원을 전합니다.",
+    "twist": "축제는 라나 달력 두 번째 달의 보름달에 맞춰 진행됩니다.",
+    "caveat": "이 전통은 주로 치앙마이와 그 주변 지역에서만 행해집니다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Yi Peng festival",
+    "source_url": "https://en.wikipedia.org/wiki/Yi_Peng_festival",
+    "verify_note": "Yi Peng festival",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:37:15.250655+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
+    "hook": "반전! 영국 귀족 자녀도 ‘공작 부인’이라고 부른다!",
+    "body": "영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 호칭을 사용합니다. 이러한 호칭은 법적으로 실제 권한을 갖고 있지는 않지만, 예의상 사용됩니다.",
+    "twist": "예를 들어, 피어의 자녀도 ‘공작 부인’ 같은 호칭을 받을 수 있습니다.",
+    "caveat": "이러한 관습은 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용됩니다.",
+    "country": "영국",
+    "theme": "관습/예절",
+    "wiki_title": "Courtesy titles in the United Kingdom",
+    "source_url": "https://en.wikipedia.org/wiki/Courtesy_titles_in_the_United_Kingdom",
+    "verify_note": "Courtesy titles in the United Kingdom",
+    "confidence": "source",
+    "created_at": "2026-10-31T15:37:15.250655+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "헝가리식 스파에츨레 조리법",
+    "hook": "끓는 물에 반죽을 바로 뿌려버린다면?",
+    "body": "Spätzle(German)는 달걀 반죽을 물에 직접 넣어 익히는 독특한 면 요리다. 헝가리에서는 이를 nokedli(Hungarian)라고 부른다.",
+    "twist": "반죽이 물에 바로 닿아 거친 표면과 구멍이 생겨 소스가 잘 스며든다.",
+    "caveat": "이 조리법은 남부 독일·오스트리아·헝가리 등 일부 지역에서 주로 사용된다.",
+    "country": "헝가리",
+    "theme": "음식문화",
+    "wiki_title": "Spätzle",
+    "source_url": "https://en.wikipedia.org/wiki/Sp%C3%A4tzle",
+    "verify_note": "Spätzle",
+    "confidence": "source",
+    "created_at": "2026-11-01T07:55:53.420186+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "검은눈완두의 색다른 변종",
+    "hook": "검은 눈 콩이 보라색 껍질을 가졌다면?",
+    "body": "black-eyed pea(English)는 아프리카에서 재배된 콩의 한 종류이며, 미국 남부에서는 다양한 크기와 색상의 변종이 있다. 일반적인 품종은 연한 색에 검은 점이 있다.",
+    "twist": "보라색 껍질을 가진 ‘mud-in-your-eye pea’도 있다.",
+    "caveat": "이 변종은 주로 미국 남부에서 재배된다.",
+    "country": "남아프리카공화국",
+    "theme": "음식문화",
+    "wiki_title": "Black-eyed pea",
+    "source_url": "https://en.wikipedia.org/wiki/Black-eyed_pea",
+    "verify_note": "Black-eyed pea",
+    "confidence": "source",
+    "created_at": "2026-11-01T07:55:53.420186+00:00",
+    "status": "verified"
+  },
+  {
+    "topic": "나바라트리(Navaratri) – 9밤·9여신 축제",
+    "hook": "9밤 연속, 9개의 여신을 모시는 장면!",
+    "body": "나바라트리(Navaratri)는 샤크티(Shakti)를 기리며 여신 두르가(Durga)의 9가지 형태를 9밤 동안 모시는 힌두교 연례 축제로, 인도 문화권 전역에서 다양한 방식으로 진행된다.",
+    "twist": "이론적으로는 Magha·Chaitra·Ashadha·Ashvin 네 차례에 열리지만 실제로는 가을 Ashvin의 샤라다 나바라트리(Sharada Navaratri)만이 널리 지켜진다.",
+    "caveat": "축제 방식은 지역·문화에 따라 차이가 있다.",
+    "country": "캐나다",
+    "theme": "축제/의례",
+    "wiki_title": "Navaratri",
+    "source_url": "https://en.wikipedia.org/wiki/Navaratri",
+    "verify_note": "Navaratri",
+    "confidence": "source",
+    "created_at": "2026-11-01T07:56:18.667357+00:00",
+    "status": "verified"
   }
 ]
