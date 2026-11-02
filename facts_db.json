@@ -46955,13 +46955,124 @@
     "verify_note": "Emiratis",
     "confidence": "source",
     "created_at": "2026-10-30T14:23:49.912105+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "아부다비에서는 한 가문이 전체를 통치한다?! 사실 아랍에미리트는 7개의 토후국으로 나뉘고, 각각 고유의 통치 가문을 가지고 있습니다. 그 중 아부다비를 다스리는 가문은 바니 야스 부족 연합에서 나온 알 나얀(Al Nahyan) 가문이며, 현재도 이 가문이 에미리트의 실질적인 권력을 잡고 있습니다.  \n\n그런데 두바이는 같은 바니 야스 부족에서 갈라진 알 막툼(Al Maktoum) 가문이 통치합니다. 같은 뿌리를 공유하지만 두 도시는 서로 다른 가문이 지도자를 맡고 있죠. 이 구조는 현재 아랍에미리트 시민에게만 적용되는 체제로, 외국인 거주자는 같은 규칙을 적용받지 않습니다.  \n\n한 가문이 아부다비를, 또 다른 가문이 두바이를 다스한다는 점, 생각보다 복잡한 권력 구도라는 점이 흥미롭지 않나요?",
+    "cross_checked": true,
+    "cross_sources": 4,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "아부다비 통치 가문",
+    "title_line2": "두 도시 다른 가문?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "아부다비 *한가문*?"
+      },
+      {
+        "s": 3,
+        "text": "알나얀 *실권* 잡아"
+      },
+      {
+        "s": 4,
+        "text": "두바이 *막툼* 통치"
+      },
+      {
+        "s": 7,
+        "text": "복잡한 *권력구도*?"
+      }
+    ],
+    "image_queries": [
+      "Abu Dhabi palace exterior",
+      "UAE seven emirates map",
+      "Abu Dhabi ruling family building",
+      "Dubai Maktoum palace",
+      "UAE twin city skyline",
+      "UAE expatriate visa document",
+      "UAE political hierarchy illustration"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0413_아랍에미리트_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0413_아랍에미리트_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Abu Dhabi palace exterior",
+      "UAE seven emirates map",
+      "Abu Dhabi ruling family building",
+      "Dubai Maktoum palace",
+      "UAE twin city skyline",
+      "UAE expatriate visa document",
+      "UAE political hierarchy illustration"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "SkyBlue_777",
+        "page": "https://pixabay.com/photos/mosque-architecture-islam-arabic-10022821/",
+        "id": 10022821
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "MoustafaHorizon",
+        "page": "https://pixabay.com/photos/uae-dubai-emirates-city-night-4429393/",
+        "id": 4429393
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "jpeter2",
+        "page": "https://pixabay.com/photos/mosque-abu-dhabi-to-travel-white-615415/",
+        "id": 615415
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "David Lienemann",
+        "license": "Public domain",
+        "title": "The Vice President holds a bilateral meeting with His Highness Sheikh Mohammed Bin Rashid ",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Vice_President_holds_a_bilateral_meeting_with_His_Highness_Sheikh_Mohammed_Bin_Rashid_Al_Maktoum_of_the_United_Arab_Emirates.jpg",
+        "id": "c:96918322"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Walkerssk",
+        "page": "https://pixabay.com/photos/kuala-lumpur-petronas-twin-towers-1820944/",
+        "id": 1820944
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/passport-united-states-documentation-315266/",
+        "id": 315266
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Air Force photo by Master Sgt. James Cason",
+        "license": "Public domain",
+        "title": "U S - Emiratis Run Together (9469839).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:U_S_-_Emiratis_Run_Together_(9469839).jpg",
+        "id": "c:181404477"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0413_아랍에미리트.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0413_아랍에미리트.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "0u_CqfuTuIA",
+    "uploaded_at": "2026-11-02T09:48:37.478736+09:00"
   },
   {
     "topic": "등불에 숨은 퀴즈, 아이들은 밤에 뭐하고?",
-    "hook": "등불에 적힌 퀴즈를 푸는 아이들, 정답을 맞히면 뭐가 될까?",
-    "body": "중국(China)의 원소절(元宵節)은 음력 1월 15일 보름달이 뜨는 날에 열리며, 전통적으로 아이들이 종이 등불을 들고 밤에 나선다. 등불에 적힌 수수께끼(猜燈謎)를 풀며 축제를 즐긴다.",
-    "twist": "정답을 맞힌 아이에게는 작은 사탕이 아닌, 다음 해 등불을 직접 만들 기회가 주어진다.",
+    "hook": "등불에 적힌 퀴즈를 풀면 뭐가 될까?",
+    "body": "음력 1월 15일 보름달이 뜨는 날, 중국의 원소절엔 아이들이 종이 등불을 들고 밤거리로 나섭니다. 등불에 적힌 수수께끼를 풀어보는 경우도 있어요. 정답을 맞힌 아이에게는 작은 선물을 드리거나, 다음 해에 등불 만들기 체험을 할 수 있는 경우도 있어요. 아이들은 전통을 배우면서 직접 만든 등불을 가지고 축제에 참여하게 돼요. 이 풍습은 주로 중국 본토와 일부 해외 중국인 공동체에서 이어지고 있습니다.",
+    "twist": "밤하늘에 떠오른 등불처럼, 퀴즈 정답도 아이들의 꿈을 밝히는 작은 불빛이죠.",
     "caveat": "이 전통은 주로 중국 본토와 일부 해외 중국인 공동체에서 지켜진다.",
     "country": "중국",
     "theme": "축제/의례",
@@ -46970,7 +47081,122 @@
     "verify_note": "Lantern Festival",
     "confidence": "source",
     "created_at": "2026-10-30T14:23:49.912105+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "등불에 적힌 퀴즈를 풀면 뭐가 될까? 음력 1월 15일 보름달이 뜨는 날, 중국의 원소절엔 아이들이 종이 등불을 들고 밤거리로 나섭니다. 등불에 적힌 수수께끼를 풀어보는 경우도 있어요. 정답을 맞힌 아이에게는 작은 선물을 드리거나, 다음 해에 등불 만들기 체험을 할 수 있는 경우도 있어요. 아이들은 전통을 배우면서 직접 만든 등불을 가지고 축제에 참여하게 돼요. 이 풍습은 주로 중국 본토와 일부 해외 중국인 공동체에서 이어지고 있습니다. 밤하늘에 떠오른 등불처럼, 퀴즈 정답도 아이들의 꿈을 밝히는 작은 불빛이죠.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 4,
+        "text": "정답을 맞힌 아이에게는 작은 선물을 드리거나, 다음 해에 등불 만들기 체험을 할 수 있는 경우도 있어요."
+      }
+    ],
+    "narration_original": "등불에 적힌 퀴즈를 풀면 뭐가 될까? 음력 1월 15일 보름달이 뜨는 날, 중국의 원소절엔 아이들이 종이 등불을 들고 밤거리로 나섭니다. 등불에 적힌 수수께끼를 하나씩 풀면서 축제를 즐기죠. 그런데 정답을 맞힌 아이에게는 작은 사탕 대신, 다음 해에 직접 등불을 만들 기회가 주어진답니다. 이렇게 아이들은 전통을 배우고, 손수 만든 등불로 또다시 축제의 주인공이 됩니다. 이 풍습은 주로 중국 본토와 일부 해외 중국인 공동체에서 이어지고 있습니다. 밤하늘에 떠오른 등불처럼, 퀴즈 정답도 아이들의 꿈을 밝히는 작은 불빛이죠.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "등불에 *퀴즈* 정답?"
+      },
+      {
+        "s": 2,
+        "text": "보름달 *등불* 출발"
+      },
+      {
+        "s": 4,
+        "text": "맞히면 *등불* 제작"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [unsupported] 4번 문장: No evidence that correct answer yields opportunity to make a lantern next year.",
+      "[수정됨] [unsupported] 5번 문장: Claim about becoming festival's main figure by making lanterns lacks documented support.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Specific practice of giving gifts or next‑year lantern‑making not universally documented."
+    ],
+    "title_line1": "중국 원소절 등불 퀴즈",
+    "title_line2": "맞히면 등불 제작 기회",
+    "image_queries": [
+      "lantern quiz answer",
+      "full moon lantern departure",
+      "Chinese children solving lantern riddles",
+      "lantern making reward",
+      "handmade lantern festival",
+      "Chinese lantern tradition community",
+      "floating lantern night sky"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0414_중국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0414_중국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "lantern quiz answer",
+      "full moon lantern departure",
+      "Chinese children solving lantern riddles",
+      "lantern making reward",
+      "handmade lantern festival",
+      "Chinese lantern tradition community",
+      "floating lantern night sky"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "eslfuntaiwan",
+        "page": "https://pixabay.com/photos/quiz-test-exam-questionnaire-1373314/",
+        "id": 1373314
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Myriams-Fotos",
+        "page": "https://pixabay.com/photos/woman-sit-rocks-lantern-light-2728727/",
+        "id": 2728727
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "ymyphoto",
+        "page": "https://pixabay.com/photos/lantern-festival-light-8818968/",
+        "id": 8818968
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "-Zest",
+        "license": "CC BY-SA 4.0",
+        "title": "Lantern Festival in Taiwan at night 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lantern_Festival_in_Taiwan_at_night_5.jpg",
+        "id": "c:69833447"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "6028523",
+        "page": "https://pixabay.com/photos/lantern-festival-celebration-5557717/",
+        "id": 5557717
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "cuiyulong43829",
+        "page": "https://pixabay.com/photos/chinese-style-lantern-festival-5857819/",
+        "id": 5857819
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "tathanhtuan",
+        "page": "https://pixabay.com/photos/lantern-tradition-couple-love-4670043/",
+        "id": 4670043
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0414_중국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0414_중국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "qsXkxSkYf3Q",
+    "uploaded_at": "2026-11-02T09:48:39.147379+09:00"
   },
   {
     "topic": "독일 법, 나치·공산 상징은 ‘예술’이면 OK?",
@@ -47006,9 +47232,9 @@
   },
   {
     "topic": "태양의 이동을 축하하는 타밀인 포날 축제",
-    "hook": "태양이 북쪽으로 움직이는 순간, 타밀인들이 쌀을 끓이며 춤을 춰요!",
-    "body": "타밀인들은 포날(Pongal) 축제 첫날, 수리야(Surya)에게 감사하며 쌀과 우유를 끓여 큰 솥에 부어요. 이는 겨울 동짓날이 지나고 태양이 캡리콘에 들어가 북쪽으로 이동한다는 의미예요.",
-    "twist": "축제는 하루만이 아니라 네 날에 걸쳐 진행돼, 각 날마다 다른 의미와 전통이 있어요.",
+    "hook": "태양이 북쪽으로 움직이는 순간, 타밀인들이 쌀을 끓이며 춤을 춥니다!",
+    "body": "포날 축제 첫날은 보기(Bhogi)로, 집안을 정리하고 남은 음식을 태우며, 두번째 날인 수리야(Pongal)에서 태양에게 감사하고 쌀과 우유를 큰 솥에 넣어 끓입니다. 겨울 동짓날이 지나고 태양이 캡리콘에 들어가 북쪽으로 이동한다는 의미를 담은 의식이죠. 그런데 이 축제는 하루만이 아니라 네 날에 걸쳐 진행됩니다. 각 날마다 수확을 기원하거나 가축을 위한 의식을 올리며, 가족·친지를 초대해 나눔을 실천하고, 마지막 날에는 풍요와 새로운 시작을 축하하는 분위기가 있습니다. 주로 인도와 스리랑카의 타밀인 공동체에서 지켜지는 전통이지만, 그 의미와 풍경은 전 세계 타밀 디아스포라에서도 이어지고 있습니다.",
+    "twist": "태양의 이동을 맞이한 그들의 따뜻한 환희가 오늘도 계속됩니다.",
     "caveat": "주로 타밀인 공동체에서, 특히 인도와 스리랑카에서 지켜집니다.",
     "country": "캐나다",
     "theme": "축제/의례",
@@ -47017,7 +47243,122 @@
     "verify_note": "Pongal (festival)",
     "confidence": "source",
     "created_at": "2026-10-30T14:23:57.558678+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "태양이 북쪽으로 움직이는 순간, 타밀인들이 쌀을 끓이며 춤을 춥니다! 포날 축제 첫날은 보기(Bhogi)로, 집안을 정리하고 남은 음식을 태우며, 두번째 날인 수리야(Pongal)에서 태양에게 감사하고 쌀과 우유를 큰 솥에 넣어 끓입니다. 겨울 동짓날이 지나고 태양이 캡리콘에 들어가 북쪽으로 이동한다는 의미를 담은 의식이죠. 그런데 이 축제는 하루만이 아니라 네 날에 걸쳐 진행됩니다. 각 날마다 수확을 기원하거나 가축을 위한 의식을 올리며, 가족·친지를 초대해 나눔을 실천하고, 마지막 날에는 풍요와 새로운 시작을 축하하는 분위기가 있습니다. 주로 인도와 스리랑카의 타밀인 공동체에서 지켜지는 전통이지만, 그 의미와 풍경은 전 세계 타밀 디아스포라에서도 이어지고 있습니다. 태양의 이동을 맞이한 그들의 따뜻한 환희가 오늘도 계속됩니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "태양이 북쪽으로 움직이는 순간, 타밀인들이 쌀을 끓이며 춤을 춥니다! 포날(Pongal) 축제 첫날, 타밀 사람들은 새로 떠오르는 수리야(Surya)에게 감사를 전하고, 쌀과 우유를 큰 솥에 넣어 끓입니다. 겨울 동짓날이 지나고 태양이 캡리콘에 들어가 북쪽으로 이동한다는 의미를 담은 의식이죠. 그런데 이 축제는 하루만이 아니라 네 날에 걸쳐 진행됩니다. 첫날은 수확을 기원하고, 둘째 날은 가축을 위한 날, 셋째 날은 가족과 친지를 초대해 나눔을 나누며, 마지막 날은 풍요와 새로운 시작을 축하합니다. 주로 인도와 스리랑카의 타밀인 공동체에서 지켜지는 전통이지만, 그 의미와 풍경은 전 세계 타밀 디아스포라에서도 이어지고 있습니다. 태양의 이동을 맞이한 그들의 따뜻한 환희가 오늘도 계속됩니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "태양 *북쪽* 이동"
+      },
+      {
+        "s": 2,
+        "text": "쌀·우유 *끓여* 감사"
+      },
+      {
+        "s": 5,
+        "text": "가족·친지와 *나눔*"
+      },
+      {
+        "s": 7,
+        "text": "태양 *환희* 지속"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: The first day of Pongal is Bhogi, not the day dedicated to thanking Surya; Surya Pongal is the second day.",
+      "[수정됨] [unsupported] 5번 문장: The description of each day's theme does not match the traditional order and details of the festival."
+    ],
+    "title_line1": "캐나다 포날 축제",
+    "title_line2": "태양 이동에 춤?",
+    "image_queries": [
+      "Pongal sun north",
+      "Pongal rice milk",
+      "Pongal sun ritual",
+      "Pongal multi day",
+      "family sharing Pongal",
+      "Tamil diaspora Pongal",
+      "sun joy Pongal"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0417_캐나다_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0417_캐나다_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Pongal sun north",
+      "Pongal rice milk",
+      "Pongal sun ritual",
+      "Pongal multi day",
+      "family sharing Pongal",
+      "Tamil diaspora Pongal",
+      "sun joy Pongal"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "4379051",
+        "page": "https://pixabay.com/photos/reed-sunset-sun-clouds-7779055/",
+        "id": 7779055
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "KavindaF",
+        "page": "https://pixabay.com/photos/kiribath-dish-food-milk-rice-6314070/",
+        "id": 6314070
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Matthew T Rader",
+        "license": "CC BY-SA 4.0",
+        "title": "A man dancing with fire at a Pongal Festival in Namakkal, Tamil Nadu, India.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_man_dancing_with_fire_at_a_Pongal_Festival_in_Namakkal,_Tamil_Nadu,_India.jpg",
+        "id": "c:118624255"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but p",
+        "license": "CC BY-SA 4.0",
+        "title": "Kolam Pongal 1stMain Uthandi Jan23 A7C 04882.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kolam_Pongal_1stMain_Uthandi_Jan23_A7C_04882.jpg",
+        "id": "c:127994458"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "HoangdungFunny",
+        "page": "https://pixabay.com/photos/gathering-friends-fun-disability-7057793/",
+        "id": 7057793
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Hippo_Lytos",
+        "page": "https://pixabay.com/photos/cow-horns-flowers-flower-crown-5450603/",
+        "id": 5450603
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "RuslanSikunov",
+        "page": "https://pixabay.com/photos/baby-happiness-girl-sun-smile-9920462/",
+        "id": 9920462
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0417_캐나다.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0417_캐나다.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "rwj8NGhcsRs",
+    "uploaded_at": "2026-11-02T09:48:40.877330+09:00"
   },
   {
     "topic": "핀란드(Finland), 언어 기준 인구 통계",
