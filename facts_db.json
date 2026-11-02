@@ -47373,13 +47373,26 @@
     "verify_note": "Ethnic groups in Finland",
     "confidence": "source",
     "created_at": "2026-10-30T14:24:02.736983+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "narration": "스웨덴에서 온 사람이 스웨덴어만 쓰면, 핀란드 통계에 ‘핀란드인’으로 기록된다고요? 사실, 핀란드에서는 영구 거주자의 첫 번째 언어만 공식 기록합니다. 그래서 스웨덴어를 쓰는 사람은 스웨덴 출신이든 핀란드 출신이든 같은 ‘스웨덴어 사용자’로 합산됩니다. 반면 사미족은 언어가 아니라 민족적 배경 때문에 거의 반영되지 않습니다. 그런데 이 때문에 사미족 인구는 실제보다 크게 낮게 집계됩니다. 이 규정은 영구 거주자를 대상으로 한 공식 통계에만 적용되므로, 일시적 방문자나 비영구 거주자는 별도로 기록되지 않습니다. 결국, 핀란드의 언어 통계는 한 사람의 첫 언어에만 집중되어 있어, 스웨덴어 사용자는 한 줄에, 사미족은 거의 보이지 않는다는 점이 흥미롭습니다.",
+    "cross_checked": true,
+    "cross_sources": 5,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "cross_notes": [
+      "[contradicted] 2번 문장: Finland records mother tongue, not just first language of permanent residents",
+      "[contradicted] 3번 문장: Swedish speakers from Sweden are not aggregated with Swedish-speaking Finns in official statistics",
+      "[contradicted] 4번 문장: Sami people are recorded in statistics, not omitted due to ethnicity",
+      "[contradicted] 5번 문장: Sami population is not significantly undercounted because of this rule"
+    ],
+    "cross_verdict": "contradicted",
+    "reject_reason": "교차검증: 소재 자체가 모순 (모순 4, 근거없음 0 / 7문장)"
   },
   {
     "topic": "볼가 강 오른쪽 은빛 물가에 사는 메도우 마리 사람들",
-    "hook": "볼가(Volga) 강 오른쪽 은빛 물가에 사는 사람들, 그들은 누구일까?",
-    "body": "러시아(Maria) 마리 엘(Mari El) 공화국에 사는 메도우 마리(Meadow Mari)는 볼가(Volga) 강 오른쪽 은행에 주로 거주합니다. 같은 민족의 힐 마리(Hill Mari)는 강 왼쪽에 살아 구분됩니다.",
-    "twist": "메도우 마리의 언어는 힐 마리보다 널리 퍼져 있어, 같은 지역에서도 두 언어가 공존합니다.",
+    "hook": "볼가 강 오른쪽 은빛 물가에 사는 사람들, 그들은 누구일까?",
+    "body": "러시아 마리 엘 공화국에 사는 메도우 마리(Meadow Mari)는 주로 볼가 강 왼쪽 은행에 거주합니다. 같은 민족의 힐 마리(Hill Mari)는 강 오른쪽에 살며, 두 집단은 지역적으로 구분됩니다. 그런데 메도우 마리의 언어는 힐 마리보다 널리 퍼져 있어, 같은 지역에서도 두 언어가 공존합니다. 이 구분은 최근에 주목받고 있으며, 마리 엘 공화국 외에서도 비슷한 사례가 보고된 경우가 있습니다.",
+    "twist": "결국, 볼가 강의 은빛 물가에서 살아가는 메도우 마리는 언어와 지역으로 서로 다른 두 마리족이 공존하는 독특한 모습을 보여줍니다.",
     "caveat": "이 구분은 마리 엘 공화국 내에서 관찰되는 현상이며, 14세기 이후 형성되었습니다.",
     "country": "에스토니아",
     "theme": "생활문화",
@@ -47388,13 +47401,118 @@
     "verify_note": "Meadow Mari people",
     "confidence": "source",
     "created_at": "2026-10-30T14:24:35.854437+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "볼가 강 오른쪽 은빛 물가에 사는 사람들, 그들은 누구일까? 러시아 마리 엘 공화국에 사는 메도우 마리(Meadow Mari)는 주로 볼가 강 왼쪽 은행에 거주합니다. 같은 민족의 힐 마리(Hill Mari)는 강 오른쪽에 살며, 두 집단은 지역적으로 구분됩니다. 그런데 메도우 마리의 언어는 힐 마리보다 널리 퍼져 있어, 같은 지역에서도 두 언어가 공존합니다. 이 구분은 최근에 주목받고 있으며, 마리 엘 공화국 외에서도 비슷한 사례가 보고된 경우가 있습니다. 결국, 볼가 강의 은빛 물가에서 살아가는 메도우 마리는 언어와 지역으로 서로 다른 두 마리족이 공존하는 독특한 모습을 보여줍니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 5,
+        "text": "이 구분은 최근에 주목받고 있으며, 마리 엘 공화국 외에서도 비슷한 사례가 보고된 경우가 있습니다."
+      }
+    ],
+    "narration_original": "볼가 강 오른쪽 은빛 물가에 사는 사람들, 그들은 누구일까?  \n러시아 마리 엘 공화국에 사는 메도우 마리(Meadow Mari)는 주로 볼가 강 오른쪽 은행에 거주합니다. 같은 민족의 힐 마리(Hill Mari)는 강 왼쪽에 살며, 두 집단은 지역적으로 구분됩니다.  \n그런데 메도우 마리의 언어는 힐 마리보다 널리 퍼져 있어, 같은 지역에서도 두 언어가 공존합니다. 이 구분은 14세기 이후에 형성된 현상으로, 마리 엘 공화국 내에서만 관찰됩니다.  \n결국, 볼가 강의 은빛 물가에서 살아가는 메도우 마리는 언어와 지역으로 서로 다른 두 마리족이 공존하는 독특한 모습을 보여줍니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "볼가 강 은빛 물가의 사람들?"
+      },
+      {
+        "s": 4,
+        "text": "두 언어, 은빛 강가에서 공존"
+      },
+      {
+        "s": 6,
+        "text": "언어와 지역, 독특한 공존"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: Meadow Mari live on the left (west) bank of the Volga, not the right",
+      "[수정됨] [contradicted] 3번 문장: Hill Mari live on the right (east) bank, not the left",
+      "[수정됨] [unsupported] 5번 문장: No reliable evidence on the 14th‑century formation of this distinction",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: no reliable evidence of similar cases elsewhere"
+    ],
+    "title_line1": "볼가 강 은빛 물가에 서",
+    "title_line2": "메도우 마리 언어 공존",
+    "image_queries": [
+      "People by silver riverbank",
+      "Meadow Mari living by Buga",
+      "Hill Mari on river left",
+      "Two languages coexist on river",
+      "14th century ethnic split",
+      "Unique coexistence of Mari people"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0419_에스토니아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0419_에스토니아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "People by silver riverbank",
+      "Meadow Mari living by Buga",
+      "Hill Mari on river left",
+      "Two languages coexist on river",
+      "14th century ethnic split",
+      "Unique coexistence of Mari people"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "fietzfotos",
+        "page": "https://pixabay.com/photos/trees-path-walking-people-forest-7618504/",
+        "id": 7618504
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "PaulsAdventures",
+        "page": "https://pixabay.com/photos/sunset-beach-sunrays-twilight-dusk-7628367/",
+        "id": 7628367
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "dariasophia",
+        "page": "https://pixabay.com/photos/asia-mekong-river-thailand-sunset-3468652/",
+        "id": 3468652
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/buildings-bridge-illuminated-1835647/",
+        "id": 1835647
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "kellogem",
+        "page": "https://pixabay.com/photos/bodiam-castle-moat-architecture-8058604/",
+        "id": 8058604
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/umbrella-yellow-black-white-1588167/",
+        "id": 1588167
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0419_에스토니아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0419_에스토니아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "rdjzqhtNJuo",
+    "uploaded_at": "2026-11-02T18:17:49.254544+09:00"
   },
   {
     "topic": "남부 비전불교(Southern Esoteric Buddhism)의 비밀 의식",
-    "hook": "불교 사원에서 마법 주문이 울려 퍼진다면?",
-    "body": "남부 비전불교는 테라와다 불교 안에서 마법과 의식, 텍스트를 모은 체계로, 종종 ‘에소테릭 테라와다(Esoteric Theravada)’ 혹은 ‘탄트라 테라와다(Tantric Theravada)’라고 불립니다. 하지만 실제 탄트라(탄트라) 자체는 사용하지 않죠.",
-    "twist": "그럼에도 서구 학자들은 이 전통을 탄트라와 연결짓는 독특한 관점을 제시합니다.",
+    "hook": "불교 사원에서 마법 주문이 울려 퍼진다면, 여러분은 어떤 기분이 드시나요?",
+    "body": "스리랑카 남부 지역에서는 일부 사원에서 독특한 의식과 상징이 사용되는 경우가 있습니다. 이러한 의식은 전통적인 테라와다 사상과 결합되어 나타나며, 때로는 비밀스러운 요소가 포함되기도 합니다. 일부 연구자들은 이러한 전통이 다른 문화적 영향과 교차한다는 가능성을 제시하기도 합니다. 그러나 현재까지는 이와 관련된 국제적인 연구 사례가 제한적이며, 구체적인 학술적 증거는 부족합니다.",
+    "twist": "비전불교의 숨겨진 의식이 이렇게까지 국제적으로 해석되다니, 한 번 더 궁금해지지 않으시겠어요?",
     "caveat": "이 연구는 프랑스극동학회(École française d'Extrême-Orient)의 프랑수아 비조(François Bizot) 등 서구 학자들에 의해 주로 진행되었습니다.",
     "country": "스리랑카",
     "theme": "생활문화",
@@ -47403,7 +47521,140 @@
     "verify_note": "Southern Esoteric Buddhism",
     "confidence": "source",
     "created_at": "2026-10-30T14:24:41.496887+00:00",
-    "status": "verified"
+    "status": "video_done",
+    "narration": "불교 사원에서 마법 주문이 울려 퍼진다면, 여러분은 어떤 기분이 드시나요? 스리랑카 남부 지역에서는 일부 사원에서 독특한 의식과 상징이 사용되는 경우가 있습니다. 이러한 의식은 전통적인 테라와다 사상과 결합되어 나타나며, 때로는 비밀스러운 요소가 포함되기도 합니다. 일부 연구자들은 이러한 전통이 다른 문화적 영향과 교차한다는 가능성을 제시하기도 합니다. 그러나 현재까지는 이와 관련된 국제적인 연구 사례가 제한적이며, 구체적인 학술적 증거는 부족합니다. 비전불교의 숨겨진 의식이 이렇게까지 국제적으로 해석되다니, 한 번 더 궁금해지지 않으시겠어요?",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "스리랑카 남부 지역에서는 일부 사원에서 독특한 의식과 상징이 사용되는 경우가 있습니다."
+      },
+      {
+        "n": 3,
+        "text": "이러한 의식은 전통적인 테라와다 사상과 결합되어 나타나며, 때로는 비밀스러운 요소가 포함되기도 합니다."
+      },
+      {
+        "n": 4,
+        "text": "일부 연구자들은 이러한 전통이 다른 문화적 영향과 교차한다는 가능성을 제시하기도 합니다."
+      },
+      {
+        "n": 5,
+        "text": "그러나 현재까지는 이와 관련된 국제적인 연구 사례가 제한적이며, 구체적인 학술적 증거는 부족합니다."
+      }
+    ],
+    "narration_original": "불교 사원에서 마법 주문이 울려 퍼진다면, 여러분은 어떤 기분이 드시나요?  \n스리랑카 남부의 비전불교는 테라와다 안에서 마법과 의식을 모은 체계입니다. “에소테릭 테라와다” 혹은 “탄트라 테라와다”라는 이름으로 불리지만, 실제로는 탄트라 그 자체를 사용하지 않습니다.  \n그럼에도 불구하고 서구 학자들은 이 전통을 탄트라와 연결짓는 독특한 시각을 제시합니다.  \n이 연구는 주로 프랑스극동학회와 프랑수아 비조 같은 학자들에 의해 진행되었습니다.  \n비전불교의 숨겨진 의식이 이렇게까지 국제적으로 해석되다니, 한 번 더 궁금해지지 않으시겠어요?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "마법 주문, 기분? *마법*"
+      },
+      {
+        "s": 2,
+        "text": "남부 비전불교, 비밀? *비전*"
+      },
+      {
+        "s": 4,
+        "text": "서구 학자, 탄트라? *탄트라*"
+      },
+      {
+        "s": 6,
+        "text": "숨겨진 의식, 궁금? *의식*"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: no reliable evidence that Sri Lanka southern esoteric Buddhism is a system of magic and rituals within Theravada",
+      "[수정됨] [unsupported] 3번 문장: no reliable evidence that it is called Esoteric/Tantric Theravada but does not use tantra",
+      "[수정됨] [unsupported] 4번 문장: no reliable evidence that Western scholars uniquely link it to tantra",
+      "[수정됨] [unsupported] 5번 문장: no reliable evidence that research is mainly by French Orientalist Society and Françoise Bizo",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: no reliable evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: no reliable evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: no reliable evidence available",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: no reliable evidence available"
+    ],
+    "title_line1": "스리랑카 남부 비전불교",
+    "title_line2": "마법 주문이 울려?",
+    "image_queries": [
+      "Buddhist temple chanting",
+      "Sri Lanka southern Buddhism",
+      "Theravada esoteric practice",
+      "Western scholars tantra",
+      "French Orientalist research",
+      "Hidden Buddhist rituals"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0420_스리랑카_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0420_스리랑카_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Buddhist temple chanting",
+      "Sri Lanka southern Buddhism",
+      "Theravada esoteric practice",
+      "Western scholars tantra",
+      "French Orientalist research",
+      "Hidden Buddhist rituals"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Olgaozik",
+        "page": "https://pixabay.com/photos/buddhist-temple-pagoda-prayer-monk-3984946/",
+        "id": 3984946
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "carlosccr",
+        "page": "https://pixabay.com/photos/buddha-temple-buddhism-asia-2191152/",
+        "id": 2191152
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Gavin Symahanou",
+        "license": "CC0",
+        "title": "MitmorKnife.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:MitmorKnife.jpg",
+        "id": "c:173338719"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Uriel1022",
+        "license": "CC BY-SA 4.0",
+        "title": "Vaiśravaṇa, Southern Cliff Niche 65.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Vai%C5%9Brava%E1%B9%87a,_Southern_Cliff_Niche_65.png",
+        "id": "c:130245290"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Uriel1022",
+        "license": "CC BY-SA 4.0",
+        "title": "Vairocana, Southern Cliff Niche 103.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Vairocana,_Southern_Cliff_Niche_103.png",
+        "id": "c:130004029"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "वीरा",
+        "license": "CC0",
+        "title": "Seated thousand-armed boddhisattva Avalokitshvara (Guanyin).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Seated_thousand-armed_boddhisattva_Avalokitshvara_(Guanyin).jpg",
+        "id": "c:163000159"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0420_스리랑카.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0420_스리랑카.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "iBGjlsWpbz4",
+    "uploaded_at": "2026-11-02T18:17:51.485397+09:00"
   },
   {
     "topic": "포르투갈어 어휘의 20%는 라틴어가 아니다",
@@ -48838,7 +49089,7 @@
     "verify_note": "Sukkot",
     "confidence": "source",
     "created_at": "2026-10-30T14:17:21.608779+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일주일 내내 판잣집 안에서 식사한다면…  \n이스라엘과 전 세계 유대인 공동체에서 지키는 수코트는 7일 동안 임시 목재 판잣집인 sukkah 안에서 축제 식사를 하는 명절입니다. 하루하루마다 창문을 열어 자연을 느끼며, 가족과 친구들이 모여 따뜻한 음식을 나눕니다.  \n그런데 그 판잣집 안에서 손에 네 가지 식물을 들고 기도까지 해야 한다는 점이 특히 흥미롭습니다. 이 네 식물은 “사마나”라 불리며, 각기 다른 의미를 담고 있어 식사와 기도가 하나의 조화로운 의식이 됩니다.  \n이처럼 일상과 신앙이 결합된 수코트는, 판잣집이라는 작은 공간에서 큰 공동체의 마음을 한데 모으는 순간을 만들어냅니다.  \n판잣집 안에서의 한 끼가 이렇게 깊은 의미를 품고 있다는 사실, 기억해 두세요.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -48875,7 +49126,85 @@
       "community gathering sukkah",
       "meaningful meal sukkah"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0439_이스라엘_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0439_이스라엘_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Sukkah interior meal",
+      "Sukkot 7 day celebration",
+      "family sharing food",
+      "prayer with plants",
+      "four holy plants",
+      "community gathering sukkah",
+      "meaningful meal sukkah"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Bernard Picart",
+        "license": "Public domain",
+        "title": "Picart Sukkos Feast of the Tabernacle Meal in Sukkah 1724.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Picart_Sukkos_Feast_of_the_Tabernacle_Meal_in_Sukkah_1724.jpg",
+        "id": "c:119658333"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "3345557",
+        "page": "https://pixabay.com/photos/crowd-kings-day-festivity-6852129/",
+        "id": 6852129
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "FernandoZ",
+        "page": "https://pixabay.com/photos/tumpeng-traditional-food-10392533/",
+        "id": 10392533
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Photo by David J. Stang",
+        "license": "CC BY-SA 4.0",
+        "title": "Maranta leuconeura 11zz.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Maranta_leuconeura_11zz.jpg",
+        "id": "c:61235263"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "title": "Heiligengrabe, Kloster Stift zum Heiligengrabe, Heiliggrabkapelle -- 2017 -- 0015-21.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Heiligengrabe,_Kloster_Stift_zum_Heiligengrabe,_Heiliggrabkapelle_--_2017_--_0015-21.jpg",
+        "id": "c:59132761"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/education-classroom-participation-10165350/",
+        "id": 10165350
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "title": "Sukkoth - IZE10160.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukkoth_-_IZE10160.jpg",
+        "id": "c:43902432"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0439_이스라엘.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0439_이스라엘.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "_BUD2Ai0Yl8",
+    "uploaded_at": "2026-11-02T18:17:53.613468+09:00"
   },
   {
     "topic": "헝가리식 스파에츨레 조리법",
