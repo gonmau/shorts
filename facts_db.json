@@ -47371,7 +47371,7 @@
     "verify_note": "Ethnic groups in Finland",
     "confidence": "source",
     "created_at": "2026-10-30T14:24:02.736983+00:00",
-    "status": "verified",
+    "status": "scripted",
     "narration": "스웨덴에서 온 사람이 스웨덴어만 쓰면, 핀란드 통계에 ‘핀란드인’으로 기록된다고요? 사실, 핀란드에서는 영구 거주자의 첫 번째 언어만 공식 기록합니다. 그래서 스웨덴어를 쓰는 사람은 스웨덴 출신이든 핀란드 출신이든 같은 ‘스웨덴어 사용자’로 합산됩니다. 반면 사미족은 언어가 아니라 민족적 배경 때문에 거의 반영되지 않습니다. 그런데 이 때문에 사미족 인구는 실제보다 크게 낮게 집계됩니다. 이 규정은 영구 거주자를 대상으로 한 공식 통계에만 적용되므로, 일시적 방문자나 비영구 거주자는 별도로 기록되지 않습니다. 결국, 핀란드의 언어 통계는 한 사람의 첫 언어에만 집중되어 있어, 스웨덴어 사용자는 한 줄에, 사미족은 거의 보이지 않는다는 점이 흥미롭습니다.",
     "cross_checked": true,
     "cross_sources": 5,
@@ -47383,7 +47383,200 @@
       "[contradicted] 4번 문장: Sami people are recorded in statistics, not omitted due to ethnicity",
       "[contradicted] 5번 문장: Sami population is not significantly undercounted because of this rule"
     ],
-    "cross_verdict": "contradicted"
+    "cross_verdict": "contradicted",
+    "title_line1": "핀란드 언어 통계",
+    "title_line2": "스웨덴어만써도핀란드인?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*스웨덴어*만 쓰면?"
+      },
+      {
+        "s": 3,
+        "text": "*스웨덴어* 합산"
+      },
+      {
+        "s": 4,
+        "text": "*사미족*은 안 보여"
+      },
+      {
+        "s": 5,
+        "text": "인구 *낮게* 집계"
+      },
+      {
+        "s": 7,
+        "text": "첫 *언어*만 기록"
+      }
+    ],
+    "image_queries": [
+      "Swedish language textbook",
+      "Finnish government statistics building",
+      "Swedish language survey sheet",
+      "Sami reindeer herders",
+      "population statistics chart",
+      "temporary visitor passport stamp",
+      "first language questionnaire"
+    ],
+    "scene_count": 12,
+    "image_queries_done": [
+      "Swedish language textbook",
+      "Finnish government statistics building",
+      "Swedish language survey sheet",
+      "Sami reindeer herders",
+      "population statistics chart",
+      "temporary visitor passport stamp",
+      "first language questionnaire"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "monika1607",
+        "page": "https://pixabay.com/photos/a-book-dictionary-swedish-german-3101450/",
+        "id": 3101450
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Paju~commonswiki",
+        "license": "CC BY-SA 3.0",
+        "title": "Tilastokeskus - Kalasatama - Helsinki.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Tilastokeskus_-_Kalasatama_-_Helsinki.jpg",
+        "id": "c:72166666"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "F1Digitals",
+        "page": "https://pixabay.com/photos/man-men-hand-person-people-male-3653346/",
+        "id": 3653346,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "makabera",
+        "page": "https://pixabay.com/photos/reindeer-winter-sami-norway-8611935/",
+        "id": 8611935
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Tumisu",
+        "page": "https://pixabay.com/photos/graph-chart-investment-growth-hand-4737109/",
+        "id": 4737109
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "jaydeep_",
+        "page": "https://pixabay.com/photos/visa-paper-passport-visa-stamp-3109800/",
+        "id": 3109800
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Pasoendan Man",
+        "license": "CC BY-SA 4.0",
+        "title": "Ethnic groups in North Labuhanbatu.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Ethnic_groups_in_North_Labuhanbatu.png",
+        "id": "c:185889261"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2251,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ec0e8a62e8ea",
+        "at": "2026-11-02 20:13",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2733,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "66d433dac133",
+        "at": "2026-11-02 20:13",
+        "scene": 2,
+        "rejected_ids": [
+          2463236,
+          "c:72166666"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2276,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6b18d21db30b",
+        "at": "2026-11-02 20:13",
+        "scene": 3,
+        "rejected_ids": [
+          3101450,
+          3653346,
+          "c:177403929",
+          "c:177403935"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2514,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e4ba36fb9376",
+        "at": "2026-11-02 20:13",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2334,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7c5e8a3fccaf",
+        "at": "2026-11-02 20:13",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2931,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a02dc27ade4",
+        "at": "2026-11-02 20:13",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2067,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "38136bb5b3a8",
+        "at": "2026-11-02 20:13",
+        "scene": 7,
+        "rejected_ids": [
+          2771936,
+          6947262,
+          7105626,
+          "c:150329547",
+          "c:185889261"
+        ]
+      }
+    ]
   },
   {
     "topic": "볼가 강 오른쪽 은빛 물가에 사는 메도우 마리 사람들",
