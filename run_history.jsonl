@@ -917,3 +917,4 @@
 {"id": "1793537665904-f3f96c", "time": "2026-11-01 21:54:25", "channel": "KO", "source": "PC", "kind": "cleanup_media", "title": "cleanup_media.py --delete", "status": "success", "secs": 2.4, "detail": ""}
 {"id": "1793537708396-cd666d", "time": "2026-11-01 21:55:08", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 6.3, "detail": ""}
 {"id": "1793572152137-0abdff", "time": "2026-11-02 07:29:12", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #108", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41355864864"}
+{"id": "1793580531345-563d78", "time": "2026-11-02 09:48:51", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #109", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41367402014"}
