@@ -573,6 +573,23 @@ with T3a:
     if st.button("이미지 받기 (검색어 생성 + 장면 이미지)", key="st3_go", help="음성보다 먼저 이미지를 받아 확인할 수 있습니다. 이미 받은 장면은 건드리지 않습니다"):
         chain(IMAGE_STEP)
     st.caption("끝나면 '🖼 이미지 검수/교체' 탭에서 장면별로 확인하고, 마음에 안 들면 검색어를 바꿔 다시 받거나 내 사진으로 교체하세요.")
+    with st.expander("🎨 AI 이미지(콘티) 프롬프트 만들기 — 테스트 기능"):
+        st.caption("핵심 컷의 이미지 생성용 프롬프트만 만듭니다. 이미지는 Krea·Playground 같은 곳에서 직접 만들어 컷 이름(예: 117_01.png)으로 my_images 폴더에 넣으면 자동 검색 사진보다 먼저 쓰입니다. 사실 확인이 필요한 실제 장소·물건 컷은 사진이 낫고, 상징적인 컷에 쓰기를 권합니다.")
+        if st.checkbox("이 기능 사용", False, key="aip_on"):
+            _a1, _a2 = st.columns(2)
+            _aip_idx = _a1.text_input("소재 번호 (비우면 렌더링 대기 소재 전부)", "", key="aip_idx", help="예: 117,118 또는 117-120")
+            _aip_cuts = _a2.text_input("프롬프트를 만들 컷 번호", "1", key="aip_cuts", help="기본 1 (첫 장면). 예: 1,4")
+            _aip_style = st.text_area("화풍 (프롬프트 뒤에 붙음)", "clean editorial illustration, soft warm colors, simple composition, vertical 9:16, no text, no letters, no logos, no watermark, no recognizable real people", key="aip_style", height=80)
+            _aip_dc = st.checkbox("디스코드로도 보내기 (길게 눌러 복사)", False, key="aip_dc")
+            if st.button("프롬프트 만들기", key="aip_go"):
+                _aa = ["--cuts", _aip_cuts.strip() or "1", "--style", _aip_style.strip()]
+                _aa += ["--indexes", _aip_idx.strip()] if _aip_idx.strip() else ["--pending"]
+                if _aip_dc:
+                    _aa.append("--discord")
+                run("ai_prompts.py", *_aa)
+            if os.path.exists("ai_prompts.md"):
+                with st.expander("만들어 둔 프롬프트 (ai_prompts.md)"):
+                    st.markdown(open("ai_prompts.md", encoding="utf-8").read())
 
 def _audio_ok(f):
     ap_ = f.get("audio_path_v2")
