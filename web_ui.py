@@ -118,8 +118,57 @@ def set_status(item, s, reason=""):
         item["status_v6"] = "video_done"
 
 
+def _grams(t):
+    t = "".join(ch for ch in str(t or "").lower() if ch.isalnum())
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def _similar(db, idxs):
+    """승인 대기 소재마다 가장 비슷한 다른 소재 -> {i: (j, 유사도)}"""
+    gs = {}
+    out = {}
+    for i in idxs:
+        a = gs.setdefault(i, _grams(db[i].get("topic")))
+        if not a:
+            continue
+        best = (None, 0.0)
+        for j, f in enumerate(db):
+            if j == i:
+                continue
+            b = gs.get(j)
+            if b is None:
+                b = gs[j] = _grams(f.get("topic"))
+            if not b:
+                continue
+            sim = len(a & b) / len(a | b)
+            if sim > best[1]:
+                best = (j, sim)
+        if best[0] is not None and best[1] >= 0.45:
+            out[i] = best
+    return out
+
+
 st.title("🎬 쇼츠 관리")
-chan = st.radio("채널", list(REPOS), horizontal=True)
+def _chan_from_query():
+    """디스코드 링크의 ?ch=ko|en (또는 채널 이름)으로 채널을 미리 고른다"""
+    try:
+        q = str(st.query_params.get("ch", "")).strip().lower()
+    except Exception:
+        q = ""
+    if not q:
+        return 0
+    keys = list(REPOS)
+    for n, k in enumerate(keys):
+        if q == k.lower():
+            return n
+    want = ("한", "ko", "culture") if q.startswith(("ko", "kr", "한")) else ("eng", "en", "korea")
+    for n, k in enumerate(keys):
+        if any(w in (k + " " + REPOS[k]).lower() for w in want):
+            return n
+    return 0
+
+
+chan = st.radio("채널", list(REPOS), horizontal=True, index=_chan_from_query())
 repo = REPOS[chan]
 c1, c2 = st.columns([3, 1])
 c1.caption(f"{repo} · {BRANCH}")
@@ -137,7 +186,53 @@ _up = sum(1 for f in db if f.get("youtube_id"))
 _vd = sum(1 for f in db if not f.get("youtube_id") and (f.get("video_path_v6") or f.get("status_v6") == "video_done"))
 st.write(f"업로드됨 {_up} · 영상완료/미업로드 {_vd}")
 
-tab_edit, tab_state, tab_run = st.tabs(["📝 대본 보기/수정", "🗂 상태 변경", "▶ 실행(Actions)"])
+tab_ap, tab_edit, tab_state, tab_run = st.tabs(["✅ 승인 대기", "📝 대본 보기/수정", "🗂 상태 변경", "▶ 실행(Actions)"])
+
+with tab_ap:
+    import pandas as pd
+    pend_i = [i for i, f in enumerate(db) if f.get("status") == "unverified"]
+    verified_n = sum(1 for f in db if f.get("status") == "verified")
+    st.caption(f"승인 대기 {len(pend_i)}개 · 승인됨(대본 대기) {verified_n}개 — 체크하고 아래 버튼을 누르면 GitHub DB에 바로 반영됩니다. 승인 안 한 소재는 그대로 남습니다.")
+    if not pend_i:
+        st.success("승인 대기 소재가 없습니다.")
+    else:
+        sim = _similar(db, pend_i)
+        rows = []
+        for i in pend_i:
+            f = db[i]
+            m = sim.get(i)
+            hint = ""
+            if m:
+                o = db[m[0]]
+                hint = f"⚠ {m[0]}번 {o.get('label') or o.get('country', '')} ({int(m[1] * 100)}%{', 폐기됨' if o.get('status') == 'rejected' else ''})"
+            rows.append({"번호": i, "나라": f.get("label") or f.get("country", ""), "주제": str(f.get("topic") or ""),
+                         "첫 문장": str(f.get("hook") or f.get("narration") or "")[:80], "중복 의심": hint, "승인": False, "폐기": False})
+        df = pd.DataFrame(rows)
+        edited = st.data_editor(
+            df, hide_index=True, use_container_width=True, key=f"ap_{repo}_{len(pend_i)}",
+            disabled=["번호", "나라", "주제", "첫 문장", "중복 의심"],
+            column_config={"번호": st.column_config.NumberColumn(width="small"), "승인": st.column_config.CheckboxColumn(width="small"),
+                           "폐기": st.column_config.CheckboxColumn(width="small"), "주제": st.column_config.TextColumn(width="large")})
+        ok_i = [int(r["번호"]) for _, r in edited.iterrows() if r["승인"] and not r["폐기"]]
+        no_i = [int(r["번호"]) for _, r in edited.iterrows() if r["폐기"] and not r["승인"]]
+        both = [int(r["번호"]) for _, r in edited.iterrows() if r["승인"] and r["폐기"]]
+        if both:
+            st.warning(f"승인과 폐기를 둘 다 체크한 소재는 건너뜁니다: {both}")
+        why = st.text_input("폐기 사유 (폐기 체크한 소재에 공통 적용)", "소재 검수에서 제외", key="ap_why")
+        b1, b2 = st.columns(2)
+        if b1.button(f"✅ 체크한 {len(ok_i)}개 승인·{len(no_i)}개 폐기 적용", disabled=not (ok_i or no_i), type="primary"):
+            ch = [(i, db[i].get("country"), (lambda it: set_status(it, "verified"))) for i in ok_i]
+            ch += [(i, db[i].get("country"), (lambda it, r=why: set_status(it, "rejected", r))) for i in no_i]
+            if apply_changes(repo, ch, f"web: 소재 검수 승인 {len(ok_i)}·폐기 {len(no_i)}"):
+                st.success(f"승인 {len(ok_i)}개 · 폐기 {len(no_i)}개를 반영했습니다.")
+                get_db(repo, force=True)
+                st.rerun()
+        if b2.button(f"앞의 {min(10, len(pend_i))}개 전부 승인", disabled=not pend_i):
+            first = pend_i[:10]
+            if apply_changes(repo, [(i, db[i].get("country"), (lambda it: set_status(it, "verified"))) for i in first], f"web: 소재 {len(first)}개 승인"):
+                st.success(f"{len(first)}개를 승인했습니다.")
+                get_db(repo, force=True)
+                st.rerun()
 
 with tab_edit:
     flt = st.selectbox("상태 필터", ["전체"] + STATUSES, format_func=lambda s: s if s == "전체" else STATUS_KO[s], index=3, key="flt_e")
