@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -49448,7 +49450,7 @@
     "verify_note": "Courtesy titles in the United Kingdom",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "영국 공작의 딸은 공작 부인일까요? 아닙니다. 보통 이름 앞에 레이디라는 호칭이 붙습니다. 공작 부인을 뜻하는 더치스와는 다른 말이죠. 더치스는 공작의 배우자나 여성 공작에게 쓰입니다. 아들들의 호칭도 모두 공작은 아닙니다. 장남은 아버지의 하위 작위를 예우상 쓰기도 하죠. 그렇다고 그 작위를 실제로 물려받았다는 뜻은 아닙니다. 저는 영국 귀족 이야기가 여기서 추리물처럼 느껴집니다. 이름 앞 호칭만 봐도 가족 안의 위치가 드러나거든요. 높아 보이는 호칭과 실제로 가진 작위는 따로 읽어야 합니다.",
     "fact_verifiability": "user",
@@ -49497,7 +49499,129 @@
       "Title reveals family rank",
       "Title and rank separate"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0431_영국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0431_영국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "British duke's daughter",
+      "British aristocratic hallway",
+      "Lady title prefix",
+      "British duchess title distinction",
+      "Duchess spouse usage",
+      "British noble sons",
+      "Eldest son lower title",
+      "No actual inheritance",
+      "Aristocracy mystery story",
+      "Title reveals family rank",
+      "Title and rank separate"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "jameswheeler",
+        "page": "https://pixabay.com/photos/beautiful-british-columbia-canada-2297215/",
+        "id": 2297215
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Bob Harvey",
+        "license": "CC BY-SA 2.0",
+        "title": "Courtesy Shield - geograph.org.uk - 7379125.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Courtesy_Shield_-_geograph.org.uk_-_7379125.jpg",
+        "id": "c:159659341"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Press Information Department",
+        "license": "Public domain",
+        "title": "Mauritius President Rupun and First Lady at Bangabhaban, welcomed by Bangladesh President ",
+        "page": "https://commons.wikimedia.org/wiki/File:Mauritius_President_Rupun_and_First_Lady_at_Bangabhaban,_welcomed_by_Bangladesh_President_Shahabuddin_and_First_Lady,_2023-05-13_(PID-0016035).jpg",
+        "id": "c:176858157"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Oscar Taylor",
+        "license": "CC BY-SA 2.0",
+        "title": "Do your courtesy - geograph.org.uk - 7432495.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Do_your_courtesy_-_geograph.org.uk_-_7432495.jpg",
+        "id": "c:161024462"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Attributed to David von Krafft",
+        "license": "Public domain",
+        "title": "Frederick IV (1671-1702), Duke of Holstein-Gottorp, and his spouse Hedvig Sophia (1681–170",
+        "page": "https://commons.wikimedia.org/wiki/File:Frederick_IV_(1671-1702),_Duke_of_Holstein-Gottorp,_and_his_spouse_Hedvig_Sophia_(1681%E2%80%931708).jpg",
+        "id": "c:59778744"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Leslie Barrie",
+        "license": "CC BY-SA 2.0",
+        "title": "Alexander Noble ^ Sons Ltd, Boatbuilders ^ Repairers, Girvan - geograph.org.uk - 3620779.j",
+        "page": "https://commons.wikimedia.org/wiki/File:Alexander_Noble_%5E_Sons_Ltd,_Boatbuilders_%5E_Repairers,_Girvan_-_geograph.org.uk_-_3620779.jpg",
+        "id": "c:119780389"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Unknown artist – Artist",
+        "license": "Public domain",
+        "title": "Portrait of a Youth (The Painter's Eldest Son) - Google Art Project.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Youth_(The_Painter%27s_Eldest_Son)_-_Google_Art_Project.jpg",
+        "id": "c:22009085"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Lemuel M. Wiles",
+        "license": "Public domain",
+        "title": "Lemuel M. Wiles - Lemuel M Wiles Landscape Ex Chapellier Galleries, Country Houses, oil on",
+        "page": "https://commons.wikimedia.org/wiki/File:Lemuel_M._Wiles_-_Lemuel_M_Wiles_Landscape_Ex_Chapellier_Galleries,_Country_Houses,_oil_on_panel,_artwork_actual_size_6_x_10.jpg",
+        "id": "c:156522103"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Samuel King",
+        "license": "Public domain",
+        "title": "A-10 Firing APKWS (Courtesy Illustration).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A-10_Firing_APKWS_(Courtesy_Illustration).jpg",
+        "id": "c:85453284"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Edgar Degas",
+        "license": "CC0",
+        "title": "Clevelandart 1958.28.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_1958.28.jpg",
+        "id": "c:76000237"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "War Department. The Adjutant General's Office. 3/4/1907-9/18/1947",
+        "license": "Public domain",
+        "title": "Gano, Daniel - State- Missouri - Regiment- Separate Battalion, Missouri Mounted Infantry, ",
+        "page": "https://commons.wikimedia.org/wiki/File:Gano,_Daniel_-_State-_Missouri_-_Regiment-_Separate_Battalion,_Missouri_Mounted_Infantry,_Company_I_-_Enlistment_Rank-_Pvt_-_Discharge_Rank-_(Blank)_-_DPLA_-_d0855a8b9498db11480209dd2b9877f8.jpg",
+        "id": "c:101468437"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0431_영국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0431_영국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "ltBZLqBqjqo",
+    "uploaded_at": "2026-11-03T18:55:21.034082+09:00"
   },
   {
     "topic": "불가리아(Bulgaria)의 공공음주(public intoxication) 법규",
@@ -50163,7 +50287,7 @@
     "verify_note": "Spätzle",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "헝가리의 노케들리는 반죽을 길게 밀지 않습니다. 밀가루와 달걀, 물을 섞어 작은 조각으로 끓는 물에 떨어뜨리죠. 구멍 난 도구를 쓰면 반죽이 아래로 빠져나옵니다. 스파에츨레와 비슷한 방식이에요. 익은 조각을 건져 버터나 기름에 섞습니다. 소스가 있는 고기 요리에 곁들이기도 하죠. 저는 이 음식이 주연보다 조연에 가깝다고 느낍니다. 혼자 화려하게 맛을 내기보다 옆의 소스를 받아주거든요. 접시에 남은 소스가 아까울 때, 이 작은 반죽들이 꽤 든든한 역할을 합니다.",
     "fact_verifiability": "user",
@@ -50198,7 +50322,69 @@
       }
     ],
     "title_line1": "헝가리 노케들리",
-    "title_line2": "반죽 바로 물에?"
+    "title_line2": "반죽 바로 물에?",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0440_헝가리_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0440_헝가리_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "헝가리 travel",
+      "헝가리 travel",
+      "헝가리 travel",
+      "헝가리 travel",
+      "헝가리 travel",
+      "헝가리 travel"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "JoshuaWoroniecki",
+        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
+        "id": 5219496
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "822640",
+        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/",
+        "id": 1828079
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "took_a_snap",
+        "page": "https://pixabay.com/photos/road-fog-mist-asphalt-travel-8687668/",
+        "id": 8687668
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/camera-photographs-souvenir-1130731/",
+        "id": 1130731
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-terminal-man-travel-1822133/",
+        "id": 1822133
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-walking-waiting-gate-walk-4120835/",
+        "id": 4120835
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0440_헝가리.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0440_헝가리.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "o8QpbgFpm_w",
+    "uploaded_at": "2026-11-03T18:55:22.972019+09:00"
   },
   {
     "topic": "크로아티아 겨울 Koliada 전통",
@@ -50213,7 +50399,7 @@
     "verify_note": "Koliada",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "노래를 불러주면 집주인이 먹거리로 맞아줍니다. 크로아티아 두브로브니크의 콜렌다 풍습입니다. 성탄절과 연말에 사람들이 거리를 돌며 노래하죠. 집을 찾아가 축하 인사를 전하기도 합니다. 노래를 받은 쪽은 음식이나 음료를 내놓고요. 공연을 하고 대가를 받는 관계와는 조금 다릅니다. 서로 다른 방식으로 인사를 주고받는 거죠. 저는 이 풍습이 꽤 다정하게 느껴집니다. 먼저 찾아온 사람이 빈손인 것 같아도, 이미 노래를 가져왔으니까요. 이곳에서는 목소리도 연말 선물이 됩니다.",
     "fact_verifiability": "user",
@@ -50257,7 +50443,107 @@
       "visitor empty hands singing",
       "voice as holiday gift"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0441_크로아티아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0441_크로아티아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Croatian house food offering",
+      "Dubrovnik Koliada tradition",
+      "people street singing Christmas",
+      "Croatian home greeting visit",
+      "receiving food after song",
+      "informal folk performance exchange",
+      "mutual folk greeting ceremony",
+      "warm festive tradition scene",
+      "visitor empty hands singing",
+      "voice as holiday gift"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "JESHOOTS-com",
+        "page": "https://pixabay.com/photos/orange-juice-healthy-glass-drink-569064/",
+        "id": 569064
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Івано-Франківська обласна державна адміністрація",
+        "license": "CC BY 4.0",
+        "title": "Коляда на Майзлях.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BB%D1%8F%D0%B4%D0%B0_%D0%BD%D0%B0_%D0%9C%D0%B0%D0%B9%D0%B7%D0%BB%D1%8F%D1%85.jpg",
+        "id": "c:135218373"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "OleksandrPidvalnyi",
+        "page": "https://pixabay.com/photos/christmas-winter-street-tree-6895856/",
+        "id": 6895856
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "pixel2013",
+        "page": "https://pixabay.com/photos/tulips-tulipa-sign-sweet-home-key-2091616/",
+        "id": 2091616
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Гео Коляда (1904-1941)",
+        "license": "Public domain",
+        "title": "Koliada-Futur Extra.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Koliada-Futur_Extra.jpg",
+        "id": "c:46146942"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Alpcem",
+        "page": "https://pixabay.com/photos/folklore-dance-dancers-folk-dance-4914425/",
+        "id": 4914425
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Janbies",
+        "license": "CC BY-SA 4.0",
+        "title": "Ukrainian Orthodox Christmas in Poland Koliada - Koleduvane.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Ukrainian_Orthodox_Christmas_in_Poland_Koliada_-_Koleduvane.JPG",
+        "id": "c:37813313"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "elcroos",
+        "page": "https://pixabay.com/photos/christmas-tree-stockings-fireplace-8451435/",
+        "id": 8451435
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Photography_by_Sebbi",
+        "page": "https://pixabay.com/photos/prayer-book-hymn-book-worship-7842864/",
+        "id": 7842864
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/merry-christmas-christmas-tree-santa-2999722/",
+        "id": 2999722
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0441_크로아티아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0441_크로아티아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "_w8spmrDGbs",
+    "uploaded_at": "2026-11-03T18:55:24.868687+09:00"
   },
   {
     "topic": "검은눈완두의 다양한 변형",
@@ -50390,7 +50676,7 @@
     "verify_note": "Chan Buddhism",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "젠, 찬, 선. 다른 말처럼 들리지만 같은 글자를 읽는 방식입니다. 일본에서는 젠, 중국에서는 찬, 한국에서는 선이라고 하죠. 중국에서 발전한 불교 전통이 퍼지며 이름도 달라진 겁니다. 더 거슬러 가면 명상과 관련된 산스크리트어 디야나와 연결됩니다. 그렇다고 모든 명상이 선에서 시작된 건 아닙니다. 명상 수행은 그전에도 있었어요. 선은 그 위에서 발전한 하나의 흐름입니다. 짧은 이름 하나에 인도와 중국, 동아시아를 건넌 과정이 들어 있는 거죠. 저는 명상법보다 이 이름의 이동이 먼저 궁금해집니다.",
     "fact_verifiability": "user",
@@ -50434,7 +50720,8 @@
       "Name journey across Asia",
       "Name migration curiosity"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(크로아티아 / JP,CN,IN)"
   },
   {
     "topic": "나바라트리(Navaratri) – 캐나다에서의 9밤 축제",
@@ -50638,7 +50925,7 @@
     "verify_note": "Pizza",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에 이름이 남아 있습니다. 시기는 997년입니다. 요리책이 아니라 무엇을 바쳐야 하는지 적은 기록이죠. 성탄절과 부활절에 피자 열두 개씩을 내도록 했습니다. 오래된 음식 이름이 납부 목록에서 발견된 겁니다. 다만 지금의 치즈 피자를 떠올리면 너무 앞서갑니다. 그 기록만으로 당시의 모양과 재료를 알 수는 없습니다. 이름이 같다고 요리법까지 같았다는 뜻은 아니죠. 또 기록이 남은 날이 음식이 처음 생긴 날도 아닙니다. 그전에 사람들이 먹고 불렀을 가능성은 남습니다. 이름의 기록과 음식의 탄생을 따로 봐야 하는 이유입니다. 저는 요리법보다 납부 문서에 남았다는 점이 재미있습니다. 누군가에게 피자는 추억보다 내야 하는 몫이었던 거죠. 오늘은 배달을 기다리지만 그때는 받아야 할 피자를 셌을지도 모릅니다.",
     "fact_verifiability": "user",
@@ -50680,7 +50967,8 @@
       "pizza as debt",
       "old pizza delivery"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(아르헨티나 / IT)"
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
@@ -50756,7 +51044,7 @@
     "verify_note": "Igue festival",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "축제인데 왕을 만나러 가면 안 되는 시간이 있습니다. 나이지리아 베닌 왕국의 이구 의식 이야기입니다. 베닌 왕국은 오늘날의 베냉공화국과 구별해야 하죠. 이곳의 전통 통치자는 오바라고 불립니다. 이구에는 왕과 공동체의 안녕을 비는 의식이 있습니다. 조상에게 감사하고 새해를 준비하는 의미도 담기죠. 그런데 왕의 의식에는 만남을 제한하는 규칙이 있습니다. 외부인은 왕과 대면할 수 없다고 설명됩니다. 여기서 외부인을 외국 여권 소지자만으로 보면 곤란합니다. 현지 공동체에 속하지 않은 사람이라는 맥락이거든요. 축제를 즐기는 일과 왕의 의식에 참여하는 일은 다릅니다. 실제로 축제에는 외부 방문객도 찾아옵니다. 모두를 내쫓는 행사라고 이해하면 정반대가 되는 거죠. 공개적인 잔치와 제한된 의식이 한 축제 안에 있는 겁니다. 어디까지 볼 수 있느냐도 행사마다 달라지는 셈이죠. 축제에 초대받았다고 모든 문이 열리는 건 아닙니다.",
     "fact_verifiability": "user",
@@ -50798,7 +51086,8 @@
       "Public feast contrast",
       "Invitation limited access"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(남아프리카공화국 / NG,BJ)"
   },
   {
     "topic": "탄생 순간에만 존재한 보이지 않는 네덜란드 영토",
@@ -51042,7 +51331,7 @@
     "verify_note": "Onam",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:18.523211+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "해마다 돌아오는 왕을 맞으려고 꽃을 깐다면요? 인도 케랄라의 수확 축제 오남 이야기입니다. 전설 속 왕 마하발리가 백성을 찾아온다고 믿죠. 사람들이 만드는 꽃 장식은 그 귀환을 환영합니다. 푸칼람이라는 꽃무늬를 바닥에 펼쳐놓는 겁니다. 꽃을 모아 색과 모양을 맞추는 손길이 분주해집니다. 그리고 기다려지는 또 하나는 사디아입니다. 바나나 잎 위에 여러 음식을 차려 먹는 잔치죠. 쌀밥과 채소 요리, 달콤한 후식까지 이어집니다. 지역에 따라 음식의 종류와 조합도 달라집니다. 축제 준비와 식사에 가족들이 함께 참여하기도 합니다. 왕을 맞는 전설이 사람들을 모으는 명절이 된 거예요. 저는 왕의 보물보다 꽃과 밥상이 먼저 보인다는 점이 좋습니다. 반가운 손님을 맞을 때의 마음과 닮아 있으니까요. 왕의 귀환은 전설이지만 함께 준비하는 식탁은 현실입니다. 돌아온다는 이야기가 남아 있는 사람들을 다시 만나게 합니다.",
     "fact_verifiability": "user",
@@ -51092,7 +51381,8 @@
       "realistic feast",
       "reunion through story"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(스위스 / IN)"
   },
   {
     "topic": "탄자니아( Tanzania )에서의 기도 전 청결 규칙",
@@ -51471,7 +51761,44 @@
     "verify_note": "Norway",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "남극까지 소유한다면?! 노르웨이는 스발바르와 얀마옌 같은 북극 섬뿐 아니라 남극에도 영유권을 주장합니다. 그 영토는 피터 1세 섬과 퀸 모드랜드인데, 노르웨이 정부 차원에서 공식적으로 선언한 범위입니다. 그런데 이 남극 영토는 실제로는 국제 남극 조약에 따라 제한된 관리만 허용됩니다. 조약은 군사 활동과 자원 채굴을 금지하고, 과학 연구와 환경 보호만을 목표로 하죠. 그래서 노르웨이의 영유권 주장은 서류상으로는 존재하지만, 실질적인 통제는 국제 규정에 얽매여 있습니다. 결국 “남극까지 소유한다”는 말은 법적·실제적 한계가 있는 주장에 불과하다는 점, 기억해 주세요.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "노르웨이, 남극 영유권",
+    "title_line2": "실제 통제는 제한돼?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "남극까지 *소유*한다?"
+      },
+      {
+        "s": 2,
+        "text": "노르웨이, *영유권* 주장"
+      },
+      {
+        "s": 3,
+        "text": "피터1·퀸모드 *영토*"
+      },
+      {
+        "s": 5,
+        "text": "*남극* 조약, 금지"
+      }
+    ],
+    "image_queries": [
+      "Norway Antarctica flag",
+      "Norway sovereignty claim",
+      "Peter I Island",
+      "Antarctic Treaty signs",
+      "Antarctic mining ban",
+      "Norway Antarctic control",
+      "Antarctic claim limits"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "스웨덴 전통 음악, 라디오에서 바이올린만 24시간?",
@@ -51535,9 +51862,9 @@
   },
   {
     "topic": "동물도 의식을 가진다? 코끼리 장례식",
-    "hook": "코끼리, 친구가 죽으면 바로 장례식을 연다!",
-    "body": "의식은 인간뿐 아니라 코끼리와 까마귀 같은 동물에서도 반복적인 행동으로 나타난다. 코끼리는 죽은 동료를 둘러싸고 잎을 놓으며 애도한다.",
-    "twist": "이러한 행동은 과학자들이 ‘의식’이라고 부를 만큼 구조화된 패턴을 보여준다.",
+    "hook": "코끼리는 친구가 죽으면 종종 장례식 같은 행동을 보입니다.",
+    "body": "페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다. 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다. 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다. 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다.",
+    "twist": "코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.",
     "caveat": "관찰은 특정 연구 현장에서 보고된 사례에 한한다.",
     "country": "페루",
     "theme": "축제/의례",
@@ -51546,7 +51873,71 @@
     "verify_note": "Ritual",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:41.979938+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "코끼리는 친구가 죽으면 종종 장례식 같은 행동을 보입니다. 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다. 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다. 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다. 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다. 코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.",
+    "cross_checked": true,
+    "cross_sources": 3,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다."
+      },
+      {
+        "n": 3,
+        "text": "이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다."
+      },
+      {
+        "n": 4,
+        "text": "이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다."
+      },
+      {
+        "n": 5,
+        "text": "관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다."
+      }
+    ],
+    "narration_original": "코끼리, 친구가 죽으면 바로 장례식을 연다!  \n페루의 일부 사파리 연구에서, 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다. 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부릅니다. 그런데 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 합니다. 관찰은 특정 연구 현장에 한정되지만, 동물도 인간처럼 무언가를 기억하고 표현한다는 사실을 상기시켜 줍니다.  \n코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "코끼리의 *장례*"
+      },
+      {
+        "s": 2,
+        "text": "*잎*으로 애도"
+      },
+      {
+        "s": 3,
+        "text": "의식이란 *패턴*"
+      },
+      {
+        "s": 6,
+        "text": "동물의 *의식*?"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 1번 문장: No evidence of elephants holding immediate funerals",
+      "[수정됨] [unsupported] 2번 문장: No documented Peru safari study of elephant mourning",
+      "[수정됨] [unsupported] 3번 문장: No evidence that scientists label it a ritual",
+      "[수정됨] [unsupported] 4번 문장: No evidence of similar funerals in crows",
+      "[수정됨] [unsupported] 5번 문장: No evidence that animals remember and express as humans",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No verifiable evidence of a specific Peru safari study observing such behavior.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: The term ‘ritual’ applied to elephant behavior is not universally accepted; it is a hypothesis rather than confirmed fact.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claims of similar behaviors in crows lack definitive, widely accepted scientific confirmation.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: The assertion that animals remember and express emotions like humans is speculative and not conclusively proven."
+    ],
+    "title_line1": "코끼리 장례식",
+    "title_line2": "동물도 의식이?",
+    "image_queries": [
+      "elephant funeral",
+      "elephant mourning leaves",
+      "elephant ritual pattern",
+      "crow funeral behavior",
+      "elephant memory display",
+      "animal consciousness"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
