@@ -48171,7 +48171,7 @@
     "verify_note": "Traffic law in the United States",
     "confidence": "source",
     "created_at": "2026-10-30T14:25:16.588542+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "통일 차량법이라는 이름인데 미국 전국의 법은 아닙니다. UVC라는 교통법 모델 이야기입니다. 각 주가 법을 만들 때 참고하도록 마련한 기준이죠. 이 문서만으로 운전자에게 벌금을 매길 수는 없습니다. 실제 효력은 각 주가 채택한 법률 등에서 나옵니다. 같은 모델을 보고도 일부만 쓰거나 내용을 바꿀 수 있고요. 그러니 다른 주에서 괜찮았던 행동이 여기서도 허용되진 않습니다. 저는 이름 때문에 오히려 헷갈리기 쉬운 사례라고 봅니다. 통일은 이미 끝난 상태가 아니라, 이 문서가 지향하는 목표인 셈이죠.",
     "fact_verifiability": "user",
@@ -48218,7 +48218,99 @@
       "confusing legal paperwork",
       "traffic law unification diagram"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0423_미국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0423_미국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "unified vehicle law map",
+      "UVC traffic law model",
+      "state traffic law handbook",
+      "traffic violation notice",
+      "state law code book",
+      "customized traffic sign",
+      "state border traffic sign",
+      "confusing legal paperwork",
+      "traffic law unification diagram"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Judgefloro",
+        "license": "CC0",
+        "title": "228Quezon City Roads Station Landmarks 34.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:228Quezon_City_Roads_Station_Landmarks_34.jpg",
+        "id": "c:67745885"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Jeromi Mikhael",
+        "license": "CC0",
+        "title": "Traffic warden in Jakarta 09.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traffic_warden_in_Jakarta_09.jpg",
+        "id": "c:163008380"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "simonfritzfotografie",
+        "page": "https://pixabay.com/photos/munich-hacker-bridge-architecture-8572004/",
+        "id": 8572004
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "manfredrichter",
+        "page": "https://pixabay.com/photos/speed-camera-flash-unit-star-box-3293907/",
+        "id": 3293907
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "succo",
+        "page": "https://pixabay.com/photos/hammer-books-law-dish-lawyer-719066/",
+        "id": 719066
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "knerri61",
+        "page": "https://pixabay.com/photos/stop-sign-traffic-sign-road-sign-634941/",
+        "id": 634941
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "9146123",
+        "page": "https://pixabay.com/photos/road-signs-sign-symbols-warning-7055475/",
+        "id": 7055475
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/binding-contract-contract-secure-948442/",
+        "id": 948442
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Jeromi Mikhael",
+        "license": "CC0",
+        "title": "Traffic warden in Jakarta 15.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Traffic_warden_in_Jakarta_15.jpg",
+        "id": "c:163008392"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0423_미국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0423_미국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "udATRoiEmvQ",
+    "uploaded_at": "2026-11-03T15:41:14.104687+09:00"
   },
   {
     "topic": "아이슬란드 겨울빛 축제의 변천",
@@ -48233,7 +48325,7 @@
     "verify_note": "Winter light festival",
     "confidence": "source",
     "created_at": "2026-10-30T14:25:16.588542+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "아이슬란드의 겨울빛 축제에서는 수영장도 행사장이 됩니다. 레이캬비크의 이야기인데요. 거리의 빛 작품뿐 아니라 박물관의 밤도 열립니다. 평소 다니던 시설을 다른 시간, 다른 분위기로 만나는 거죠. 지열 해변이 새롭게 참여한 사례도 있습니다. 그래서 이 축제의 변화는 조명이 얼마나 커졌는지만으로 설명되지 않습니다. 어디까지 축제장이 되느냐도 달라지는 겁니다. 저는 수영장이 들어간다는 점이 특히 좋습니다. 겨울밤을 구경하는 데서 끝내지 않고, 그 안에서 시간을 보내게 하니까요.",
     "fact_verifiability": "user",
@@ -48280,7 +48372,97 @@
       "Icelandic swimming pool",
       "Indoor pool evening"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0424_아이슬란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0424_아이슬란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Iceland festival pool",
+      "Reykjavik winter night",
+      "Iceland museum night",
+      "Icelandic indoor venue",
+      "Geothermal beach Iceland",
+      "Iceland winter lights",
+      "Festival grounds expansion",
+      "Icelandic swimming pool",
+      "Indoor pool evening"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/iceland-skogafoss-waterfall-falls-2111810/",
+        "id": 2111810
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Geek_Anis_Studio",
+        "page": "https://pixabay.com/photos/space-dark-aurora-stars-sky-9938837/",
+        "id": 9938837
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/iceland-aurora-borealis-2111811/",
+        "id": 2111811
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Bex Walton from London, England",
+        "license": "CC BY 2.0",
+        "title": "Portland Winter Light Festival.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portland_Winter_Light_Festival.jpg",
+        "id": "c:55978256"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/geyser-spring-strokkur-iceland-3242008/",
+        "id": 3242008
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "kamilgrygo",
+        "page": "https://pixabay.com/photos/aurora-borealis-lake-snow-aurora-5599375/",
+        "id": 5599375
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "title": "Berlin, Flughafen Tempelhof, Berlin E-Prix 2019, Greentech Festival, Porsche -- 2019 -- 55",
+        "page": "https://commons.wikimedia.org/wiki/File:Berlin,_Flughafen_Tempelhof,_Berlin_E-Prix_2019,_Greentech_Festival,_Porsche_--_2019_--_5545.jpg",
+        "id": "c:186769785"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Michael_Luenen",
+        "page": "https://pixabay.com/photos/swimming-pool-to-bathe-spa-4743104/",
+        "id": 4743104
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "422737",
+        "page": "https://pixabay.com/photos/indoor-swimming-pool-swimming-pool-735309/",
+        "id": 735309
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0424_아이슬란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0424_아이슬란드.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "P8PprjR03uo",
+    "uploaded_at": "2026-11-03T15:41:15.330477+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -49088,7 +49270,7 @@
     "verify_note": "Yi Peng festival",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "치앙마이에서 등불을 띄웠는데 비행기가 영향을 받는다면요? 이펭 축제의 아름다운 장면 뒤에는 이런 문제가 있습니다. 불로 데운 공기가 등을 띄우지만, 어디로 갈지는 마음대로 정할 수 없죠. 비행을 방해하거나 내려와 불을 낼 수도 있습니다. 그래서 허용 장소와 시간이 제한됩니다. 사진처럼 보인다고 아무 골목에서 띄우면 안 되는 거예요. 사실 이펭에는 집과 사원에 거는 등도 있습니다. 하늘로 날리지 않아도 축제를 즐길 수 있죠. 저는 그쪽 풍경도 궁금합니다. 떠나는 빛 말고, 동네에 남아 있는 빛은 어떤 모습일까요?",
     "fact_verifiability": "user",
@@ -49136,7 +49318,107 @@
       "Chiang Mai night scenery",
       "lanterns left in village"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0429_태국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0429_태국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Chiang Mai lantern near airplane",
+      "Yi Peng festival crowd view",
+      "hot air lantern glowing",
+      "lantern near aircraft",
+      "restricted lantern release area",
+      "lantern in narrow alley",
+      "lantern hanging temple",
+      "ground lantern festival",
+      "Chiang Mai night scenery",
+      "lanterns left in village"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/temple-architecture-building-facade-1670926/",
+        "id": 1670926
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "westphotoandvideo",
+        "page": "https://pixabay.com/photos/band-music-live-music-concert-4671748/",
+        "id": 4671748
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Foto-Rabe",
+        "page": "https://pixabay.com/photos/hot-air-balloon-balloon-ride-4352460/",
+        "id": 4352460
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Takeaway",
+        "license": "CC BY-SA 3.0",
+        "title": "Yi peng sky lantern festival San Sai Thailand.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Yi_peng_sky_lantern_festival_San_Sai_Thailand.jpg",
+        "id": "c:6428107"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Gunn, Thomas Butler, 1826-1903",
+        "license": "Public domain",
+        "title": "Thomas Butler Gunn Diaries- Volume 12, page 43, February 4, 1860.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Thomas_Butler_Gunn_Diaries-_Volume_12,_page_43,_February_4,_1860.jpg",
+        "id": "c:61656544"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "suju-foto",
+        "page": "https://pixabay.com/photos/houses-window-front-alley-4509404/",
+        "id": 4509404
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "djedj",
+        "page": "https://pixabay.com/photos/japanese-lantern-shinto-5568727/",
+        "id": 5568727
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "tathanhtuan",
+        "page": "https://pixabay.com/photos/lantern-tradition-couple-love-4670043/",
+        "id": 4670043
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "xiaolinzi821",
+        "page": "https://pixabay.com/photos/chiang-mai-sky-lantern-festival-2210767/",
+        "id": 2210767
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Solomon203",
+        "license": "CC BY-SA 4.0",
+        "title": "Fortune HS Leasing RCM-0219 left side on Jingtong Street 20200705.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fortune_HS_Leasing_RCM-0219_left_side_on_Jingtong_Street_20200705.jpg",
+        "id": "c:92237364"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0429_태국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0429_태국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "DegTMuPBX20",
+    "uploaded_at": "2026-11-03T15:41:16.660652+09:00"
   },
   {
     "topic": "올림픽 기간 스위스 팀 전용 숙소, 일반인도 입장 가능",
@@ -51143,7 +51425,43 @@
     "verify_note": "Buddhist cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요? 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다. 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.  \n\n그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요. 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다. 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.  \n\n이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요. 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?",
+    "title_line1": "몰디브 축제, 채식만",
+    "title_line2": "왜 비건인가?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "축제날*고기*없이?"
+      },
+      {
+        "s": 3,
+        "text": "아힘사*비폭력*실천"
+      },
+      {
+        "s": 5,
+        "text": "요리=*명상*훈련"
+      },
+      {
+        "s": 6,
+        "text": "식사,*깨달음*길"
+      },
+      {
+        "s": 8,
+        "text": "축제비건이유*이해*?"
+      }
+    ],
+    "image_queries": [
+      "Maldives Buddhist feast",
+      "Maldives monks vegetarian meal",
+      "Ahimsa nonviolence principle",
+      "Maldives ceremonial food",
+      "Meditative cooking practice",
+      "Mindful meal enlightenment",
+      "Monk vegetarian tradition",
+      "Festival vegan practice"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -51173,7 +51491,37 @@
     "verify_note": "Music of Sweden",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 만든 스펠만슬라그 포크 클럽이 그 비밀을 밝혀냈습니다. 그들은 전통 폴스카를 라디오와 TV에 송출했고, 그 순간부터 악기 연주가 가장 큰 장르가 되었습니다. 그런데 1990년대에는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 주었어요. 이 현상은 주로 전통 음악 애호가와 라디오 청취자 중심이지만, 스웨덴의 음악 문화에 깊은 흔적을 남겼습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "title_line1": "스웨덴 라디오 바이올린",
+    "title_line2": "전통이 현대를 잇다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "라디오에*바이올린*?"
+      },
+      {
+        "s": 2,
+        "text": "스펠만슬라그*클럽*발견!"
+      },
+      {
+        "s": 3,
+        "text": "전통*폴스카*라디오!"
+      },
+      {
+        "s": 6,
+        "text": "바이올린*다리*역할?"
+      }
+    ],
+    "image_queries": [
+      "radio with violin",
+      "young Swedish folk club",
+      "Swedish folk radio broadcast",
+      "1990s Swedish music fusion",
+      "Swedish radio listeners",
+      "violin bridge music"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "Yhyakh(Ыһыах): 6월에 열리는 사하공화국 새해 축제",
@@ -51755,5 +52103,245 @@
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
     "status": "verified"
+  },
+  {
+    "topic": "미국 추수감사절, 날짜가 바뀔 수 있다",
+    "hook": "감사절, 가장 이른 날은 11월 22일!",
+    "body": "미국 연방 공휴일인 추수감사절( Thanksgiving )은 11월 네 번째 목요일에 지키며, 그 해에 따라 11월 22일부터 28일 사이에 열립니다.",
+    "twist": "1941년 이전엔 주마다 다른 날짜에 축하했었어요.",
+    "caveat": "현재 날짜 지정은 1941년 이후 연방 정부가 정한 기준입니다.",
+    "country": "미국",
+    "theme": "축제/의례",
+    "wiki_title": "Thanksgiving (United States)",
+    "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)",
+    "verify_note": "Thanksgiving (United States)",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:26.029557+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "스위스(스위스) 요리의 지역별 독특함",
+    "hook": "알프스로 고립된 마을, 여기서만 나는 치즈 냄새!",
+    "body": "스위스(스위스) 요리는 국가·지역·지방 요리가 어우러진다. 알프스(Alps) 때문에 각 지역이 서로 떨어져 있어, 기후가 만든 다양한 토양에서 치즈와 와인이 자란다.",
+    "twist": "그 결과, 같은 나라 안에서도 전혀 다른 풍미의 치즈를 맛볼 수 있다.",
+    "caveat": "이 다양성은 알프스로 고립된 지역에 주로 나타난다.",
+    "country": "스위스",
+    "theme": "음식문화",
+    "wiki_title": "Swiss cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Swiss_cuisine",
+    "verify_note": "Swiss cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:28.523449+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "전 세계 22개 사무소를 둔 변호사 사무실",
+    "hook": "전 세계 22개 사무소를 가진 로펌 사무실에 들어가면…",
+    "body": "HFW는 항공·선박·에너지 등 다양한 산업을 담당하는 글로벌 로펌으로, 현재 700명 이상의 변호사와 190명의 파트너가 22개의 사무소에서 일하고 있습니다.",
+    "twist": "그 사무소마다 해당 산업을 상징하는 모형이 배치돼 있어 마치 박물관을 연상시킵니다.",
+    "caveat": "HFW 자체 소개 자료에 기반한 내용이며, 사무소 내 배치 상황은 변동될 수 있습니다.",
+    "country": "브라질",
+    "theme": "법/제도",
+    "wiki_title": "Holman Fenwick Willan",
+    "source_url": "https://en.wikipedia.org/wiki/Holman_Fenwick_Willan",
+    "verify_note": "Holman Fenwick Willan",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:32.159091+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "코로나·틱톡이 만든 집밥 열풍",
+    "hook": "2020년, 집에서 3분 요리하고 몸무게가 급등한다면?",
+    "body": "TikTok에서 #TikTokFood·#FoodTok 해시태그로 수백만 개의 게시물이 올라오며, 사람들은 단계별 영상을 보며 직접 요리를 시도하고 있습니다.",
+    "twist": "이러한 트렌드가 젊은 세대의 요리 관심을 크게 높이고, 동시에 몸매·식품 마케팅 논쟁을 불러일으켰습니다.",
+    "caveat": "주로 2020년 코로나 팬데믹 시기에 급증한 현상에 대한 설명입니다.",
+    "country": "핀란드",
+    "theme": "음식문화",
+    "wiki_title": "TikTok food trends",
+    "source_url": "https://en.wikipedia.org/wiki/TikTok_food_trends",
+    "verify_note": "TikTok food trends",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:32.159091+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "태어날 때부터 정해지는 인도 카스트",
+    "hook": "태어날 때부터 ‘계급’이 정해진다면 당신은 어떻게 살까요?",
+    "body": "Brahminism은 출생·이름·표식 등으로 전世대에 걸쳐 카스트 권력을 유지하는 배제적 관습을 의미합니다.",
+    "twist": "이와 맞서는 반Brahminism 운동은 ‘비가시계층’인 Dalit·Bahujan 공동체의 권리를 주장합니다.",
+    "caveat": "학술적 정의와 비판적 논의를 바탕으로 한 설명이며, 실제 사회 상황은 지역·시기에 따라 다를 수 있습니다.",
+    "country": "인도",
+    "theme": "생활문화",
+    "wiki_title": "Brahminism",
+    "source_url": "https://en.wikipedia.org/wiki/Brahminism",
+    "verify_note": "Brahminism",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:32.159091+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
+    "hook": "‘tom(Thai: ต้ม)’, ‘yam(Thai: ยำ)’, ‘tam(Thai: ตำ)’, ‘kaeng(Thai: แกง)’ 네 이름만 알면 태국 최고의 음식 7개를 바로 맞출 수 있다!",
+    "body": "태국 요리는 향신료와 매운맛을 살린 가벼운 조리법을 강조한다. 전통 요리는 크게 끓인 요리 ‘tom’, 매운 샐러드 ‘yam’, 빻은 음식 ‘tam’, 그리고 카레 ‘kaeng’ 네 부류로 나뉜다.",
+    "twist": "2011년 CNN Travel이 선정한 ‘World's 50 Best Foods’에 태국 요리가 7개로 가장 많이 올랐다.",
+    "caveat": "‘World's 50 Best Foods’는 35,000명 참여자의 온라인 투표 결과이다.",
+    "country": "태국",
+    "theme": "언어/이름",
+    "wiki_title": "Thai cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Thai_cuisine",
+    "verify_note": "Thai cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:39.023221+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
+    "hook": "부다페스트 거리 표지판을 읽는데, 언어가 전혀 인도유럽어가 아니라고?",
+    "body": "헝가리는 중앙유럽 내 내륙국으로, 다뉴브 강 유역에 자리한다. 인구는 9.5백만 이상이며, 대부분 마자르족 (Magyars)과 로마니족 (Romani)이다.",
+    "twist": "헝가리어는 유럽에서 인도유럽어족에 속하지 않은 몇 안 되는 언어 중 하나다.",
+    "caveat": "‘인도유럽어족이 아니다’는 언어학적 분류이며, 실제 사용 인구는 변동될 수 있다.",
+    "country": "헝가리",
+    "theme": "법/제도",
+    "wiki_title": "Hungary",
+    "source_url": "https://en.wikipedia.org/wiki/Hungary",
+    "verify_note": "Hungary",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:39.023221+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "Thali, 한 판에 온갖 음식이 담긴 남아시아식 대접",
+    "hook": "동남아 시장에서 원형 큰 접시 ‘Thali(थाली)’를 받아 한 번에 온갖 요리를 먹는다!",
+    "body": "Thali는 원형 플래터로, 남아시아·동남아·카리브해 지역에서 식사를 차려 낸다. 한 접시에 여러 가지 반찬과 메인 요리를 함께 제공한다.",
+    "twist": "이름은 힌디어 ‘थाली’에서 유래했으며, ‘접시’ 혹은 ‘트레이’를 의미한다.",
+    "caveat": "Thali는 주로 인도식 식사에 쓰이며, 지역마다 구성은 다를 수 있다.",
+    "country": "캄보디아",
+    "theme": "관습/예절",
+    "wiki_title": "Thali",
+    "source_url": "https://en.wikipedia.org/wiki/Thali",
+    "verify_note": "Thali",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:33:39.023221+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이탈리아(Italy) 부활절(Easter)의 특이한 양 요리 ‘앱바키오(abbacchio)’",
+    "hook": "부활절에 고기 대신 이걸 먹는다?",
+    "body": "이탈리아 로마 지역에서는 부활절에 양고기 요리인 앱바키오를 전통 음식으로 준비합니다.",
+    "twist": "앱바키오는 지역 보호 제품이라 허가받은 곳만 만들 수 있어요.",
+    "caveat": "주로 로마와 그 주변 지역에서만 볼 수 있는 관습입니다.",
+    "country": "이탈리아",
+    "theme": "언어/이름",
+    "wiki_title": "Easter in Italy",
+    "source_url": "https://en.wikipedia.org/wiki/Easter_in_Italy",
+    "verify_note": "Easter in Italy",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:34:15.988350+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "중국 북부 농촌의 새해 축제 ‘Shehuo(社火)’",
+    "hook": "새해에 마을 사람들이 입으로 불을 뿜는다?!",
+    "body": "Shehuo는 중국 새해에 북부 농촌에서 열리는 축제로, 용춤·사자춤·양코춤·전통 오페라·곡예·불뿜기·드럼 등 다양한 민속예술이 펼쳐진다.",
+    "twist": "수백 명이 신·불멸자·불교·현자·영웅·신화 속 생물 등 다양한 인물 역할을 맡아 거리 전체가 살아 움직인다.",
+    "caveat": "Shehuo는 주로 북중국 농촌 지역에서만 전통적으로 행해진다.",
+    "country": "중국",
+    "theme": "축제/의례",
+    "wiki_title": "Shehuo",
+    "source_url": "https://en.wikipedia.org/wiki/Shehuo",
+    "verify_note": "Shehuo",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:34:28.395870+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "라오스에서도 페이스(face)는 생존 규칙",
+    "hook": "얼굴을 잃으면 진짜 사라진다? 라오스 거리에서 보는 페이스(face)의 충격적인 규칙!",
+    "body": "‘페이스(face)’는 개인이나 집단의 도덕·명예·권위를 나타내는 행동·관습으로, 라오스를 포함한 여러 동남아 문화에서 사회적 관계의 핵심이에요.",
+    "twist": "한 번 실수해도 주변 사람들에게서 얼굴을 잃는다고 여겨, 사과와 보상이 필수가 됩니다.",
+    "caveat": "‘페이스(face)’ 개념은 문화마다 미묘하게 다르며, 라오스 전역에 동일하게 적용되는 것은 아닙니다.",
+    "country": "라오스",
+    "theme": "언어/이름",
+    "wiki_title": "Face (sociological concept)",
+    "source_url": "https://en.wikipedia.org/wiki/Face_(sociological_concept)",
+    "verify_note": "Face (sociological concept)",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:34:57.745097+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "라오스의 다문화 문학 전통",
+    "hook": "600년 된 전설을 한 번에 네 개 언어로 들려준다?",
+    "body": "라오스(Lao)는 600년 넘는 문학 전통을 가지고 있으며, 구전 이야기가 아직도 살아 있다. 라오 루옴(Lao Loum) 등 47개 이상의 민족이 모여 각각 라오-타이(Lao–Tai), 몬-크메르(Mon–Khmer), 홍-미엔(Hmong–Mien), 시(Si) 언어로 이야기를 전한다.",
+    "twist": "같은 이야기가 네 개의 서로 다른 언어 계통으로 동시에 전해진다.",
+    "caveat": "이 현상은 라오스 전역이 아니라 특정 다문화 마을에서 관찰된 사례이다.",
+    "country": "라오스",
+    "theme": "생활문화",
+    "wiki_title": "Literature of Laos",
+    "source_url": "https://en.wikipedia.org/wiki/Literature_of_Laos",
+    "verify_note": "Literature of Laos",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:44:32.466183+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "멕시코 거리에서 살아 숨쉬는 옛날 옥수수 처리법",
+    "hook": "길거리 노점에서 바로 옥수수를 물에 담가 옛날 방식으로 끓인다?",
+    "body": "멕시코(Mexico)의 요리는 올멕(Olmec)과 마야(Maya) 등 고대 문명에서 시작돼 옥수수를 가공하는 니크스마리제이션(nixtamalization) 방법을 만든다. 이후 테오티우아칸(Teotihuacanos), 톨텍(Toltec) 등 다양한 문화가 요리법을 더해 오늘날의 풍부한 음식이 된다.",
+    "twist": "그 전통적인 가공 과정을 현대 거리 음식점에서도 직접 눈앞에서 볼 수 있다.",
+    "caveat": "이 장면은 전통을 보존하는 특정 지역에 한정된 사례이다.",
+    "country": "멕시코",
+    "theme": "음식문화",
+    "wiki_title": "Mexican cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Mexican_cuisine",
+    "verify_note": "Mexican cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T05:44:32.466183+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "러시아 음식 이름은 소련 이전부터 그대로",
+    "hook": "음식 이름이 소련 이전부터 바뀌지 않는다?!",
+    "body": "러시아(Russia) 요리는 다양한 지역과 사회계층에서 온 요리와 식재료를 포함한다. 대부분의 요리 명칭은 소련 이전 시절부터 전해 내려오며 오늘까지 사용된다.",
+    "twist": "심지어 현대 레스토랑에서도 옛날 이름을 그대로 메뉴에 올린다.",
+    "caveat": "이 현상은 전체 러시아 요리 중 일부에 해당한다.",
+    "country": "러시아",
+    "theme": "음식문화",
+    "wiki_title": "Russian cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_cuisine",
+    "verify_note": "Russian cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T06:03:10.267706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "모로코에 스페인 영토가 있다",
+    "hook": "모로코 안에 스페인 영토가 존재한다니?",
+    "body": "모로코(Morocco)는 북아프리카에 위치하고, 북쪽은 지중해, 서쪽은 대서양과 맞닿아 있다. 그럼에도 불구하고 모로코 영토 안에 스페인령 세우타(Ceuta), 멜릴라(Melilla), 페뇽 데 벨레즈 데 라 고메라(Peñón de Vélez de la Gomera) 등 작은 섬·도시가 존재한다.",
+    "twist": "모로코는 이 지역을 자국 영토로 주장하며, 서부 사하라를 통해 모리타니와도 경계를 주장한다.",
+    "caveat": "이 영토 주장은 국제적으로 논란이 있는 상황이다.",
+    "country": "모로코",
+    "theme": "생활문화",
+    "wiki_title": "Morocco",
+    "source_url": "https://en.wikipedia.org/wiki/Morocco",
+    "verify_note": "Morocco",
+    "confidence": "source",
+    "created_at": "2026-11-03T06:03:10.267706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "몰디브는 적도를 가로지른다",
+    "hook": "몰디브 전체가 적도 위에 놓여 있다?",
+    "body": "몰디브(Maldives)는 인도양에 위치한 섬나라로, 26개의 환초가 북쪽 이하반드히폴루 환초(Ihavandhippolhu Atoll)부터 남쪽 아두 환초(Addu Atoll)까지 적도를 가로질러 펼쳐진다. 수도 말레(Malé)는 전통적으로 '왕의 섬'이라 불린다.",
+    "twist": "이 섬들은 고대 왕조가 중앙에 자리 잡고 통치했던 곳이다.",
+    "caveat": "적도 위에 위치한다는 것은 주요 섬들 대부분이 적도 근처에 있다는 의미이다.",
+    "country": "몰디브",
+    "theme": "축제/의례",
+    "wiki_title": "Maldives",
+    "source_url": "https://en.wikipedia.org/wiki/Maldives",
+    "verify_note": "Maldives",
+    "confidence": "source",
+    "created_at": "2026-11-03T06:03:10.267706+00:00",
+    "status": "unverified"
   }
 ]
