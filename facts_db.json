@@ -50558,7 +50558,7 @@
     "verify_note": "Black-eyed pea",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "검은눈완두의 눈이 분홍색이라면 이름을 바꿔야 할까요? 사실 검은눈완두는 동부콩의 한 유형입니다. 눈처럼 보이는 건 씨앗의 배꼽 주변 무늬고요. 같은 동부콩에도 분홍빛이나 자줏빛 무늬가 있습니다. 크림색이거나 얼룩이 있는 유형도 있죠. 남아공 농업 자료에도 이런 차이가 소개됩니다. 그러니 전부 검은눈완두가 변한 새 품종은 아닙니다. 더 큰 동부콩 가족 안에 여러 모습이 있는 거예요. 저는 이걸 알고 나니 콩 이름이 조금 억울하게 느껴집니다. 가장 유명한 얼굴 하나로 온 가족을 기억하고 있었거든요.",
     "fact_verifiability": "user",
@@ -50602,7 +50602,101 @@
       "black-eyed pea name controversy",
       "famous black-eyed pea portrait"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0442_남아프리카공화국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0442_남아프리카공화국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "pink pea seed",
+      "black-eyed pea plant",
+      "pea seed belly button pattern",
+      "purple speckled black-eyed pea",
+      "cream spotted black-eyed pea",
+      "South Africa agriculture field",
+      "black-eyed pea not new variety",
+      "black-eyed pea family beans",
+      "black-eyed pea name controversy",
+      "famous black-eyed pea portrait"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/dark-seed-beetles-beetle-3528403/",
+        "id": 3528403
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/black-eyed-susan-flower-yellow-10544216/",
+        "id": 10544216
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "balouriarajesh",
+        "page": "https://pixabay.com/photos/vegetable-peas-green-healthy-food-3959593/",
+        "id": 3959593
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/purple-vetchling-pea-7526831/",
+        "id": 7526831
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pea-soup-soup-starter-soup-plate-2786133/",
+        "id": 2786133
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/landscape-wheat-fields-harvest-1763948/",
+        "id": 1763948
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "soc7",
+        "page": "https://pixabay.com/photos/bean-salad-beans-pinto-beans-936999/",
+        "id": 936999
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/coffee-coffee-cup-cup-drink-beans-2714970/",
+        "id": 2714970
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Andhoj",
+        "page": "https://pixabay.com/photos/flower-black-eyed-susan-yellow-10526501/",
+        "id": 10526501
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "karolinavaverkova",
+        "page": "https://pixabay.com/photos/pea-pod-vegetables-portrait-8323324/",
+        "id": 8323324
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0442_남아프리카공화국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0442_남아프리카공화국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "27eWFJoJR20",
+    "uploaded_at": "2026-11-04T03:26:57.304445+09:00"
   },
   {
     "topic": "할로윈(Halloween), 죽은 이를 기리는 날",
@@ -50617,7 +50711,7 @@
     "verify_note": "Halloween",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "폴란드의 묘지가 밤이 되면 불빛으로 가득 찹니다. 할로윈 장식은 아닙니다. 만성절 무렵, 가족들이 놓고 간 추모등입니다. 사람들은 묘지를 정돈하고 꽃을 놓습니다. 해가 지면 무덤마다 켜진 빛이 더 선명해지죠. 사진만 보면 아름다운 야경처럼 보일 수 있어요. 그런데 그 빛 하나하나가 누군가를 찾아왔다는 표시입니다. 폴란드에서도 할로윈을 즐기지만 이 풍습과는 다릅니다. 한쪽이 무서운 모습을 빌려 노는 시간이라면, 이쪽은 떠난 사람을 기억하는 시간에 가깝죠. 알고 보면 꽤 다르게 보이는 밤입니다.",
     "fact_verifiability": "user",
@@ -50661,7 +50755,107 @@
       "Poland remembrance candles",
       "Polish night scenery"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0443_폴란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0443_폴란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Poland cemetery night lights",
+      "Polish graveyard decorations",
+      "Poland memorial candle night",
+      "Polish cemetery flowers",
+      "Poland illuminated graves",
+      "Polish night landscape",
+      "Polish candlelight vigil",
+      "Poland Halloween celebration",
+      "Poland remembrance candles",
+      "Polish night scenery"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Dragon77",
+        "page": "https://pixabay.com/photos/street-lit-city-travel-light-3205265/",
+        "id": 3205265
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Sillerkiil",
+        "license": "CC BY-SA 4.0",
+        "title": "Halloweeni kõrvits Tartus, Supilinnas, Herne tänaval. 2016. aasta november..jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Halloweeni_k%C3%B5rvits_Tartus,_Supilinnas,_Herne_t%C3%A4naval._2016._aasta_november..jpg",
+        "id": "c:98965484"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/burning-candles-candlestick-night-6768469/",
+        "id": 6768469
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "GoranH",
+        "page": "https://pixabay.com/photos/pink-rose-rose-grave-condolence-5585034/",
+        "id": 5585034
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Toby Ord",
+        "license": "CC BY-SA 2.5",
+        "title": "Jack-o'-Lantern 2003-10-31.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Jack-o%27-Lantern_2003-10-31.jpg",
+        "id": "c:271348"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "akbarnemati",
+        "page": "https://pixabay.com/photos/astronomy-astrophotography-milky-way-10412513/",
+        "id": 10412513
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Maire",
+        "license": "CC BY-SA 3.0",
+        "title": "Cracow after Polish Air Force One crash 11.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cracow_after_Polish_Air_Force_One_crash_11.jpg",
+        "id": "c:9984188"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "catrin-hallowen",
+        "page": "https://pixabay.com/photos/young-woman-halloween-costume-voodoo-7476175/",
+        "id": 7476175
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "PiotrZakrzewski",
+        "page": "https://pixabay.com/photos/cross-headstone-forest-autumn-10522615/",
+        "id": 10522615
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "we-o_rd35hzvammhxh-tu7",
+        "page": "https://pixabay.com/photos/the-scenery-city-night-view-city-8498735/",
+        "id": 8498735
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0443_폴란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0443_폴란드.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "WodO1hdwSds",
+    "uploaded_at": "2026-11-04T03:26:59.420410+09:00"
   },
   {
     "topic": "선(Chan), 명상의 뿌리",
@@ -50736,7 +50930,7 @@
     "verify_note": "Navaratri",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "캐나다에서 아홉 밤 동안 이어지는 힌두 축제가 있습니다. 나바라트리인데요. 두르가 여신의 아홉 모습을 기리기도 합니다. 여신 아홉 명을 따로 모신다는 뜻과는 다르죠. 사람들은 기도하고 노래하고, 둥글게 돌며 춤을 춥니다. 밖에서 보면 화려한 댄스 행사처럼 보일 수 있어요. 하지만 참여하는 사람에게는 믿음을 나누는 시간이기도 합니다. 캐나다에서 생긴 축제는 아니지만, 이곳의 삶이 된 거죠. 저는 그 점이 흥미롭습니다. 이주할 때 가져오는 건 짐만이 아니라 함께 기념할 날이기도 하니까요.",
     "fact_verifiability": "user",
@@ -50780,7 +50974,113 @@
       "Interesting cultural blend",
       "Baggage celebration day"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0445_캐나다_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0445_캐나다_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Canada Hindu festival nights",
+      "Navaratri celebration",
+      "Durga nine faces",
+      "Durga nine forms",
+      "Prayer song dance circle",
+      "Colorful dance event",
+      "Faith sharing moment",
+      "Canadian cultural festival",
+      "Interesting cultural blend",
+      "Baggage celebration day"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Rupeshsarkar",
+        "license": "CC BY-SA 4.0",
+        "title": "Navaratri Celebration at Kasturinagar, Gujarat, India.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Navaratri_Celebration_at_Kasturinagar,_Gujarat,_India.jpg",
+        "id": "c:83990132"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Athulvis",
+        "license": "CC BY-SA 4.0",
+        "title": "Navaratri Khoshayathra 73.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Navaratri_Khoshayathra_73.jpg",
+        "id": "c:175480115"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Adbh266",
+        "license": "CC BY-SA 4.0",
+        "title": "Vidya Vasini Durga.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Vidya_Vasini_Durga.jpg",
+        "id": "c:64964206"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Athulvis",
+        "license": "CC BY-SA 4.0",
+        "title": "Navaratri Khoshayathra 26.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Navaratri_Khoshayathra_26.jpg",
+        "id": "c:175478202"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "ktphotography",
+        "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/",
+        "id": 2527495
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/the-church-cathedral-people-8327080/",
+        "id": 8327080
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Joshwiiieee",
+        "page": "https://pixabay.com/photos/musician-traditional-clothing-10388442/",
+        "id": 10388442
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Ansgar Koreng",
+        "license": "CC BY-SA 3.0 de",
+        "title": "Paul-Löbe-Haus, Westseite, Frontalansicht, Berlin-Mitte, 151223, ako.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Paul-L%C3%B6be-Haus,_Westseite,_Frontalansicht,_Berlin-Mitte,_151223,_ako.jpg",
+        "id": "c:45875162"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Gunn, Thomas Butler, 1826-1903",
+        "license": "Public domain",
+        "title": "Thomas Butler Gunn Diaries- Volume 4, page 189, July 27, 1852.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Thomas_Butler_Gunn_Diaries-_Volume_4,_page_189,_July_27,_1852.jpg",
+        "id": "c:61717773"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0445_캐나다.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0445_캐나다.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "qJ0_AaoLtyU",
+    "uploaded_at": "2026-11-04T03:27:01.640966+09:00"
   },
   {
     "topic": "몽골 계절별 식단",
@@ -51858,7 +52158,40 @@
     "verify_note": "Yhyakh",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:38.707178+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "새해를 6월에 맞이한다면? 사하공화국의 Yhyakh(Ыһыах) 축제!  \nYhyakh는 혹한을 견뎌낸 뒤 자연이 다시 살아나는 것을 기념하고, 삶의 승리를 축하하는 행사예요. 매년 6월 21일, 하지(여름 최장일)날에 새해를 맞이합니다.  \n\n그런데, 한국과 달리 새해가 겨울이 아니라 가장 긴 낮에 시작된다는 점이 매력적이죠. 이 전통은 사하공화국·러시아 일부 지역에서만 현재도 이어지고 있습니다.  \n\n따라서, 여름의 긴 낮에 새해를 맞이하는 사하공화국의 Yhyakh는 자연과 삶의 승리를 한데 모은 독특한 축제라는 사실을 기억해 두세요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "6월 새해, 사하공화국",
+    "title_line2": "가장 긴 낮에 새해?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "새해를 *6월*에 맞이한다면?"
+      },
+      {
+        "s": 3,
+        "text": "하나의 *자연*이 다시 살아난다!"
+      },
+      {
+        "s": 4,
+        "text": "6월 21일, *하지*에 새해를!"
+      }
+    ],
+    "image_queries": [
+      "New year in June",
+      "Sakha Yhyakh festival",
+      "Nature reborn celebration",
+      "June 21 solstice new year",
+      "Long summer day celebration",
+      "Sakha Russian tradition",
+      "Yhyakh nature and life victory"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "동물도 의식을 가진다? 코끼리 장례식",
@@ -51942,8 +52275,8 @@
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
     "hook": "31일 밤, 세계 최초로 새해를 맞는 섬!",
-    "body": "그 섬들은 국제 날짜 변경선 서쪽에 위치한 라인 제도(Line Islands, Kiribati), 사모아(Samoa)와 통가(Tonga)이다. 이곳에서는 새해가 울리고 바로 불꽃놀이와 축제가 시작된다.",
-    "twist": "하지만 뉴질랜드(New Zealand) 같은 대국은 그 뒤를 이어 자정에 축하한다.",
+    "body": "새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요.",
+    "twist": "그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
     "caveat": "새해 맞이 시간은 해당 지역의 현지 시계에 따라 다르다.",
     "country": "뉴질랜드",
     "theme": "축제/의례",
@@ -51952,13 +52285,56 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "31일 밤, 세계 최초로 새해를 맞는 섬! 새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "narration_original": "31일 밤, 세계 최초로 새해를 맞는 섬!  \n새해 첫 불꽃놀이를 가장 먼저 보는 곳은 라인 제도, 사모아, 통가입니다. 이 섬들은 국제 날짜 변경선 서쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이와 축제가 시작됩니다.  \n\n그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다.  \n새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다.  \n\n따라서 새해 첫 불꽃을 보고 싶다면, 먼저 라인 제도나 사모아, 통가를 찾아가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "31일 밤, *세계섬*"
+      },
+      {
+        "s": 2,
+        "text": "새해 첫, *라인*"
+      },
+      {
+        "s": 3,
+        "text": "국제 날짜선, *불꽃*"
+      },
+      {
+        "s": 6,
+        "text": "*라인제도*에서 불꽃"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: Only Kiribati Line Islands are first; Samoa and Tonga are later",
+      "[수정됨] [contradicted] 3번 문장: Line Islands lie east of the International Date Line, not west",
+      "[수정됨] [unsupported] 6번 문장: Recommendation based on incorrect premise",
+      "[수정됨] [contradicted] 7번 문장: Fireworks do not start immediately in Samoa and Tonga"
+    ],
+    "title_line1": "새해 첫 불꽃 섬은?",
+    "title_line2": "라인·사모아·통가!",
+    "image_queries": [
+      "New Year's Eve 31st night",
+      "Line Islands fireworks",
+      "International Date Line fireworks",
+      "New Zealand midnight celebration",
+      "Local time fireworks",
+      "Line Islands fireworks",
+      "New Year's Eve fireworks"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "두 사람 이상이 동시에 안아주는 ‘그룹 허그’?",
     "hook": "두 명이 넘게 안아도 되는 이유, 궁금하지?",
-    "body": "허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위이다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부른다.",
-    "twist": "전 세계 거의 모든 문화에서 허그는 친밀감 표현으로 쓰인다.",
+    "body": "허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 전 세계 대부분의 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다.",
+    "twist": "이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
     "caveat": "허그 방식은 문화마다 약간씩 차이가 있다.",
     "country": "브라질",
     "theme": "관습/예절",
@@ -51967,7 +52343,46 @@
     "verify_note": "Hug",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "두 명이 넘게 안아도 되는 이유, 궁금하지? 허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 전 세계 대부분의 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다. 이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
+    "cross_checked": true,
+    "cross_sources": 1,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "narration_original": "두 명이 넘게 안아도 되는 이유, 궁금하지? 허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 그런데 전 세계 거의 모든 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다. 이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "두 명이 넘는 *허그*?"
+      },
+      {
+        "s": 3,
+        "text": "같이 감싸는 *그룹*?"
+      },
+      {
+        "s": 4,
+        "text": "전 세계가 *친밀감*?"
+      },
+      {
+        "s": 6,
+        "text": "작은 예술, *확인*"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [unsupported] 4번 문장: claim that hug is used in almost all cultures is too broad and unverified"
+    ],
+    "title_line1": "그룹 허그, 브라질?",
+    "title_line2": "왜 허그가 친밀감?",
+    "image_queries": [
+      "two people hugging",
+      "close embrace around neck and back",
+      "group hug together",
+      "people hugging worldwide",
+      "cultural hugging traditions Brazil",
+      "intimate group hug moment"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -52964,6 +53379,291 @@
     "verify_note": "Maldives",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "후안 페론, 세 번 대통령에 오른 유일한 인물",
+    "hook": "한 번도 쓰러지지 않은 대통령? 세 번이나 당선된 비밀!",
+    "body": "후안 페론(Juan Perón)은 1946년부터 1955년까지, 그리고 1973년부터 1974년까지 아르헨티나 대통령을 역임했다. 그는 청정 선거에서 가장 높은 득표율을 기록한 대통령이다.",
+    "twist": "그는 아르헨티나 대통령으로는 유일하게 세 번 선출된 인물이다.",
+    "caveat": "선거 득표율과 ‘청정 선거’ 평가는 해당 시기의 선거 기록에 기반한다.",
+    "country": "아르헨티나",
+    "theme": "언어/이름",
+    "wiki_title": "Juan Perón",
+    "source_url": "https://en.wikipedia.org/wiki/Juan_Per%C3%B3n",
+    "verify_note": "Juan Perón",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:53:55.252996+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "유월절, 피로 문을 표시하면 죽음이 스쳐 지나간다",
+    "hook": "문에 피를 바르면 죽음이 스스로 스쳐 지나간다?!",
+    "body": "유월절(Passover)에서는 모세가 이스라엘 백성에게 양을 잡아 피로 문틀을 표시하라고 명령한다. 그 피가 묻은 집은 하나님이 첫째 아이를 죽이는 재앙을 넘어가게 한다.",
+    "twist": "이때 피가 없는 집은 재앙을 피하지 못한다.",
+    "caveat": "이 이야기는 성경 출애굽기에 기록된 종교적 전통이다.",
+    "country": "탄자니아",
+    "theme": "음식문화",
+    "wiki_title": "Passover",
+    "source_url": "https://en.wikipedia.org/wiki/Passover",
+    "verify_note": "Passover",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:53:55.252996+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "아랍에미리트 라마단 시작 의식",
+    "hook": "Haq al-Laila 밤, 거리 전체가 라마단 파티장으로 변한다!",
+    "body": "라마단 전야인 Sha'ban 중간의 밤, 현지에서는 'Haq al-Laila'(حق الليلة)라 부르는 행사가 열리고, 사람들은 모여 축하와 준비를 시작한다. 그날부터 한 달 내내 엔터테인먼트와 영적·문화 행사가 이어진다.",
+    "twist": "한국처럼 조용히 금식만 하는 게 아니라, 매일 밤 거리엔 대규모 문화 행사가 열린다.",
+    "caveat": "위 내용은 아랍에미리트 라마단 관습에 대한 위키백과 발췌에 근거한다.",
+    "country": "아랍에미리트",
+    "theme": "축제/의례",
+    "wiki_title": "Ramadan in the United Arab Emirates",
+    "source_url": "https://en.wikipedia.org/wiki/Ramadan_in_the_United_Arab_Emirates",
+    "verify_note": "Ramadan in the United Arab Emirates",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:53:59.552099+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "영장류의 무릎 꿇기 행동",
+    "hook": "침팬지가 무릎을 꿇고 '당신이 우두머리'를 인정한다!",
+    "body": "무릎을 바닥에 대는 자세를 kneeling이라 하고, 한쪽 무릎만 꿇는 것은 genuflection이라고 한다. 영장류는 이 자세를 사용해 상대보다 자신을 작게 보여 주며 복종을 표현한다.",
+    "twist": "이 작은 자세가 실제로 우두머리를 더 크게 보이게 만든다.",
+    "caveat": "이 설명은 인간과 영장류의 일반적인 무릎 꿇기 행동에 기반한다.",
+    "country": "에콰도르",
+    "theme": "관습/예절",
+    "wiki_title": "Kneeling",
+    "source_url": "https://en.wikipedia.org/wiki/Kneeling",
+    "verify_note": "Kneeling",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:53:59.552099+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "미국 영토는 두 조각으로 나뉜다",
+    "hook": "미국에 땅이 두 조각이라면? 알래스카가 따로 떨어져 있다는 사실!",
+    "body": "미국은 48개의 인접한 주와 북서쪽에 위치한 알래스카(Alaska), 그리고 태평양에 흩어진 하와이(Hawaii) 제도로 이루어져 있습니다.",
+    "twist": "알래스카는 본토와 직접 연결돼 있지 않아, 미국을 건너뛰고 가야 합니다.",
+    "caveat": "이 내용은 미국 전체 영토에 대한 설명이며, 주별 세부 사항은 제외합니다.",
+    "country": "미국",
+    "theme": "생활문화",
+    "wiki_title": "United States",
+    "source_url": "https://en.wikipedia.org/wiki/United_States",
+    "verify_note": "United States",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:06.416057+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "덴마크의 사탕받기 전통",
+    "hook": "덴마크에서 할로윈보다 먼저 사탕을 받을 수 있다면?",
+    "body": "패스텔라븐(Fastelavn)은 북유럽에서 열리는 카니발 전통으로, 아이들이 복장을 입고 집집마다 노래하며 사탕을 모읍니다.",
+    "twist": "이 행사는 부활절 일곱 주 전, 즉 부활절 일요일보다 일곱 주 앞서 열립니다.",
+    "caveat": "전통은 덴마크와 같은 북유럽 국가에서 주로 행해집니다.",
+    "country": "덴마크",
+    "theme": "축제/의례",
+    "wiki_title": "Fastelavn",
+    "source_url": "https://en.wikipedia.org/wiki/Fastelavn",
+    "verify_note": "Fastelavn",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:06.416057+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이집트 거리의 주식, eish baladi 피타",
+    "hook": "시장 한쪽에서 바로 구워지는 뜨거운 피타, 이게 바로 eish baladi!",
+    "body": "이집트 요리는 나일강 유역의 채소·콩·과일을 듬뿍 사용하고, eish baladi라는 현지 피타가 식사의 기본이에요. 시장에서 바로 구워져 따뜻한 채 손에 쥐고 먹는 모습이 한국과는 달라요.",
+    "twist": "치즈 제조가 이집트 최초 왕조 시절부터 이어져, 오늘날 Domiati 치즈가 가장 인기 있다는 점!",
+    "caveat": "이 내용은 위키피디아 발췌에 근거한 것으로, 지역마다 조리 방식이 다를 수 있습니다.",
+    "country": "이집트",
+    "theme": "음식문화",
+    "wiki_title": "Egyptian cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Egyptian_cuisine",
+    "verify_note": "Egyptian cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:33.533207+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "벨기에에서 시작되는 All Saints' Day 의식",
+    "hook": "10월 31일 밤 11시, 교회 문이 열리면 바로 All Saints' Day가 시작된다!",
+    "body": "벨기에를 포함한 서구 교회에서는 9세기에 정해진 11월 1일을 기념하지만, 실제 의식은 10월 31일 저녁 첫 베스퍼스로 시작해 11월 1일 종야례까지 이어집니다.",
+    "twist": "하루만 축하한다고 생각하지만, 실제로는 10월 31일부터 11월 1일까지, 총 3일간(Allhallowtide) 이어지는 연속 의식이라는 점!",
+    "caveat": "이 사실은 서구 기독교 전통에 기반한 것으로, 지역 교파마다 차이가 있을 수 있습니다.",
+    "country": "벨기에",
+    "theme": "축제/의례",
+    "wiki_title": "All Saints' Day",
+    "source_url": "https://en.wikipedia.org/wiki/All_Saints%27_Day",
+    "verify_note": "All Saints' Day",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:33.533207+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "페루(Peru) 와인 축제",
+    "hook": "포도 한 덩어리를 짜서 바로 와인 한 잔?!",
+    "body": "페루에서는 포도 수확이 끝난 뒤, 마을 광장에서 와인 마시기와 포도 압착 시연이 동시에 열립니다. 지역 음식과 음악도 함께 즐길 수 있죠.",
+    "twist": "축제에는 고대 그리스의 디오니소스 의식 같은 종교 의식도 포함돼요.",
+    "caveat": "와인 축제는 전 세계 여러 지역에서도 비슷하게 열립니다.",
+    "country": "페루",
+    "theme": "축제/의례",
+    "wiki_title": "Wine festival",
+    "source_url": "https://en.wikipedia.org/wiki/Wine_festival",
+    "verify_note": "Wine festival",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:58.863093+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "태국(Thailand) 파타니 말레이인(Patani Malays) 공동체",
+    "hook": "태국 거리에서 말레이어가 들리면? 바로 파타니 말레이인!",
+    "body": "태국 남부 경계 지방인 파탄, 얄라, 나라툰 등에서 말레이어를 쓰는 무슬림 공동체가 살아갑니다. 이들은 말레이시아 북부 켈란탄·테렝가누와 언어·문화·종교가 거의 동일해요.",
+    "twist": "그들의 정체성은 15~18세기 번성했던 파탄 술탄국에서 비롯되었습니다.",
+    "caveat": "주로 남부 경계 지방에만 제한된 현상입니다.",
+    "country": "태국",
+    "theme": "생활문화",
+    "wiki_title": "Patani Malays",
+    "source_url": "https://en.wikipedia.org/wiki/Patani_Malays",
+    "verify_note": "Patani Malays",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:54:58.863093+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "라오스(Laos) 사람들의 연간 171kg 찹쌀밥 소비",
+    "hook": "연간 171kg, 라오스 사람들은 하루에 얼마나 먹을까?",
+    "body": "라오스(Laos)의 주식은 찹쌀밥이며, 1인당 연간 171kg을 소비한다. 이는 세계 최고 수준으로, 찹쌀밥은 문화와 정체성을 이어주는 접착제 역할을 한다.",
+    "twist": "라오스인들은 해외에서도 찹쌀밥이 없으면 고향을 그리워한다는 믿음이 있다.",
+    "caveat": "라오스(Laos) 전체 인구 평균 기준, 연간 소비량.",
+    "country": "라오스",
+    "theme": "음식문화",
+    "wiki_title": "Lao cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Lao_cuisine",
+    "verify_note": "Lao cuisine",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:55:44.305181+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "아시아에서 78.8%가 천주교인 필리핀(Philippines) 성주간",
+    "hook": "아시아에서 천주교 신자가 78.8%라니, 어디일까?",
+    "body": "필리핀(Philippines)에서는 성주간(Holy Week)이 중요한 종교 행사이며, 인구의 78.8%가 천주교 신자다. 이 기간은 금요일부터 부활절까지 일주일 넘게 이어진다.",
+    "twist": "스페인식 전통이 남아 있어, 거리마다 열리는 독특한 행진과 의식이 있다.",
+    "caveat": "2023년 조사 기준, 필리핀(Philippines) 전체 인구 중 비율.",
+    "country": "필리핀",
+    "theme": "언어/이름",
+    "wiki_title": "Holy Week in the Philippines",
+    "source_url": "https://en.wikipedia.org/wiki/Holy_Week_in_the_Philippines",
+    "verify_note": "Holy Week in the Philippines",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:55:44.305181+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이집트 무슬림형제단의 비밀 모임 규모",
+    "hook": "정부가 6번이나 탄압했는데도 2~2.5백만 명이 몰래 모인다?",
+    "body": "무슬림형제단(جماعة الإخوان المسلمين)은 1928년 하산 알-바나(حسن البنا)가 설립했으며, 이집트에서 가장 큰 조직을 유지하고 있다. 1948·1954·1965·1979·1981·2013년에 정부의 탄압을 받았지만 여전히 수백만 명이 신조를 따른다.",
+    "twist": "그들은 정치당인 자유와 정의당을 만들어 선거에 도전하기도 했다.",
+    "caveat": "회원 수는 추정치이며 정확한 인원은 확인되지 않는다.",
+    "country": "이집트",
+    "theme": "언어/이름",
+    "wiki_title": "Muslim Brotherhood in Egypt",
+    "source_url": "https://en.wikipedia.org/wiki/Muslim_Brotherhood_in_Egypt",
+    "verify_note": "Muslim Brotherhood in Egypt",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:55:48.949357+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "일본식 인사의 기원과 의미 변화",
+    "hook": "사무라이는 절대 무릎을 꿇지 않는다! 대신 이렇게 인사한다?",
+    "body": "일본식 인사(お辞儀)는 머리와 상체를 숙이는 행위로, 인사·사과·감사의 의미로 쓰인다. 원래는 무사 계급이 전쟁 시절에 체계화한 예절 매뉴얼에 포함돼 있었다.",
+    "twist": "‘오지기(お時宜)’라는 말은 원래 ‘적절한 시기’를 뜻했으며, 나중에야 현재의 ‘인사’ 의미로 변했다.",
+    "caveat": "현대 일본에서의 인사 방식은 시대에 따라 다양하게 변형되었다.",
+    "country": "일본",
+    "theme": "관습/예절",
+    "wiki_title": "Bowing in Japan",
+    "source_url": "https://en.wikipedia.org/wiki/Bowing_in_Japan",
+    "verify_note": "Bowing in Japan",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:55:48.949357+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "이란 마지막 샤의 다중 칭호",
+    "hook": "‘왕중의왕’이라 스스로 부른 이유는?",
+    "body": "모하마드 레자 팔라비(محمدرضا پهلوی)는 1941년부터 1979년까지 이란을 통치하며 ‘샤왕왕(شاهنشاه)’·‘아리아메흐르(آریامهر)’·‘보즈르고 아르테시탄(بزرگ ارتشداران)’이라는 여러 칭호를 동시에 사용했다.",
+    "twist": "그는 군대 장군까지 자처하며 스스로 ‘대군대장’이라는 뜻을 강조했다.",
+    "caveat": "이 칭호들은 그의 통치 기간에만 공식적으로 사용된 것이다.",
+    "country": "이란",
+    "theme": "언어/이름",
+    "wiki_title": "Mohammad Reza Pahlavi",
+    "source_url": "https://en.wikipedia.org/wiki/Mohammad_Reza_Pahlavi",
+    "verify_note": "Mohammad Reza Pahlavi",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:55:48.949357+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "인형 전시로 전해지는 남인도 신화",
+    "hook": "인형을 짝수 단계에 놓으면 저주받는다?",
+    "body": "남인도에서 가을 축제인 나바라트리(Navaratri) 기간에 Golu(골루)라는 인형 전시를 한다. 농촌 장인이 만든 점토·목재 인형을 화려하게 색칠해 전설, 궁중 생활, 결혼식, 일상 풍경 등을 이야기한다.",
+    "twist": "전시는 반드시 홀수 단계로 쌓아야 전통을 지킬 수 있다.",
+    "caveat": "전시 방식은 남인도 지역의 일부 공동체에서만 일반적이다.",
+    "country": "호주",
+    "theme": "축제/의례",
+    "wiki_title": "Golu (festival)",
+    "source_url": "https://en.wikipedia.org/wiki/Golu_(festival)",
+    "verify_note": "Golu (festival)",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:56:19.868149+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "죽음 기념일, 생일의 반대",
+    "hook": "생일 대신 '죽음 기념일'을 켜는 집이 있다?",
+    "body": "스리랑카를 포함한 여러 아시아 문화권에서는 가족·친지의 사망일을 기념한다. 이는 생일과 정반대로, 고인에게 음식·향을 올리며 기억을 되새긴다.",
+    "twist": "일주일마다 같은 방식으로 추모 의식을 반복하기도 한다.",
+    "caveat": "구체적 의식 내용은 각 가정·지역에 따라 다를 수 있다.",
+    "country": "스리랑카",
+    "theme": "음식문화",
+    "wiki_title": "Death anniversary",
+    "source_url": "https://en.wikipedia.org/wiki/Death_anniversary",
+    "verify_note": "Death anniversary",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:56:19.868149+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "부활절 아침 일출 예배와 여성의 모자",
+    "hook": "여자들이 부활절에 하늘을 향해 모자를 쓰고 일출을 맞이한다?",
+    "body": "에티오피아 등 여러 나라에서는 부활절에 일출 예배나 밤새 기도 예식을 갖는다. 여성들은 특별한 부활절 보닛(Easter bonnet)을 쓰고 교회에 모인다.",
+    "twist": "예배 후에는 교회를 장식하고 공동으로 빵을 부수며 나눈다.",
+    "caveat": "전통은 교파·지역에 따라 차이가 있다.",
+    "country": "에티오피아",
+    "theme": "언어/이름",
+    "wiki_title": "Easter traditions",
+    "source_url": "https://en.wikipedia.org/wiki/Easter_traditions",
+    "verify_note": "Easter traditions",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:56:19.868149+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "미국 국기의 별과 줄 배치 비밀",
+    "hook": "13줄짜리 줄무늬 위에 9줄로 배열된 50개의 별, 직접 셀 수 있다면?",
+    "body": "미국(United States of America)의 국기는 빨간색과 흰색이 번갈아 13줄로 이어지고, 파란 사각형 안에 50개의 흰색 별이 9개의 겹친 가로줄에 배치돼. 별은 6개 줄과 5개 줄이 교차하며 총 50개가 50주(州)를 상징한다.",
+    "twist": "사실 이 국기는 원래 군함과 요새를 구분하기 위한 군용 장비로 만들어졌다는 점!",
+    "caveat": "위 내용은 해당 위키백과 발췌문에 근거한 설명이다.",
+    "country": "미국",
+    "theme": "관습/예절",
+    "wiki_title": "Flag of the United States",
+    "source_url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States",
+    "verify_note": "Flag of the United States",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:56:26.671403+00:00",
     "status": "unverified"
   }
 ]
