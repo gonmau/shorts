@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-03 08:43:37 (KST) · 기록 929건 · 소재 478개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-03 09:29:16 (KST) · 기록 930건 · 소재 483개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -25,7 +25,7 @@
 | make_thumbnail | 6 | 0 | 26초 |
 | promote_ready | 41 | 0 | 5초 |
 | redo_videos | 10 | 0 | 2초 |
-| resync_meta | 2 | 0 | 9분 22초 |
+| resync_meta | 3 | 0 | 38분 5초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 9 | 0 | 7분 49초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
@@ -38,6 +38,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 09:29 | PC | resync_meta | resync_meta.py --indexes 446,447,448,449,450,451,452,453,454,455,456,457,458,459,460 | ✅ | 28분 43초 |  |
 | 08:43 | PC | resync_meta | resync_meta.py --indexes 421,422,423,424,429,431,440,441,442,443,444,445 | ✅ | 7분 25초 |  |
 | 08:01 | PC | 코드업데이트 | gonmau/shorts: 2개 (dashboard.py, local_ui.py) | ✅ |  |  |
 
