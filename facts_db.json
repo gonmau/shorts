@@ -51764,7 +51764,7 @@
     "verify_note": "Extraterritoriality of Princess Margriet's birth",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "캐나다 병실이 잠깐 네덜란드 땅이 됐다는 이야기, 사실일까요? 왕녀의 탄생을 위한 특별 조치는 실제로 있었습니다. 다만 네덜란드 영토를 만든 건 아닙니다. 전쟁 중 캐나다에 피신한 율리아나가 출산을 앞뒀습니다. 태어날 아이는 네덜란드 왕실의 일원이었죠. 캐나다에서 태어나 국적 문제가 생기지 않도록 조치했습니다. 출산 장소에 일시적인 역외 지위를 부여한 겁니다. 그곳에서 태어난 왕녀가 마르흐리트입니다. 출생지는 오타와였지만 네덜란드 국적을 갖게 됐죠. 이 조치가 병실을 다른 나라 땅으로 바꾼 건 아닙니다. 국적을 위한 법적 예외와 영토 이전은 다른 일이거든요. 이야기가 전해지며 그 차이가 사라진 셈입니다. 저는 영토가 생겼다는 전설보다 실제 조치가 더 흥미롭습니다. 아이 한 명의 출생을 위해 법이 세밀하게 움직였으니까요. 지도에 새 땅은 생기지 않았어도 두 나라의 역사에는 남았습니다.",
     "fact_verifiability": "user",
@@ -51806,7 +51806,123 @@
       "law drafting meeting",
       "historical map overlay"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0451_네덜란드_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0451_네덜란드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Canadian hospital room",
+      "royal birth preparation",
+      "military evacuation hospital",
+      "royal family celebration",
+      "nationality law document",
+      "temporary extraterritorial hospital",
+      "Ottawa city skyline",
+      "border control checkpoint",
+      "legal exception paperwork",
+      "myth versus fact debate",
+      "law drafting meeting",
+      "historical map overlay"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/surgery-hospital-1807541/",
+        "id": 1807541
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Harold William John Tomlin",
+        "license": "Public domain",
+        "title": "Christmas Preparations at HMS Drake Royal Naval Barracks, Devonport, December 1940 A2262.j",
+        "page": "https://commons.wikimedia.org/wiki/File:Christmas_Preparations_at_HMS_Drake_Royal_Naval_Barracks,_Devonport,_December_1940_A2262.jpg",
+        "id": "c:25277372"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "bianca-stock-photos",
+        "page": "https://pixabay.com/photos/us-naval-hospital-ship-ship-boat-5048237/",
+        "id": 5048237
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Abdulmadeee1010",
+        "license": "CC BY-SA 4.0",
+        "title": "At Da'abar 2026 celebration royal families paying visit to Emir (King).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:At_Da%27abar_2026_celebration_royal_families_paying_visit_to_Emir_(King).jpg",
+        "id": "c:187501191"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "felix_w",
+        "page": "https://pixabay.com/photos/a-book-paper-document-poetry-side-3101151/",
+        "id": 3101151
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "DarkoStojanovic",
+        "page": "https://pixabay.com/photos/laboratory-test-tubes-563423/",
+        "id": 563423
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "MiniMe-70",
+        "page": "https://pixabay.com/photos/ottawa-canada-city-architecture-3490766/",
+        "id": 3490766
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/corona-coronavirus-virus-2474152/",
+        "id": 2474152
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/binding-contract-contract-secure-948442/",
+        "id": 948442
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "flutie8211",
+        "page": "https://pixabay.com/photos/ai-generated-medusa-mythology-8121362/",
+        "id": 8121362
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Press Information Department",
+        "license": "Public domain",
+        "title": "2025-11-11 Asif Nazrul, Advisor Ministry of Law, Justice and Parliamentary Affairs, addres",
+        "page": "https://commons.wikimedia.org/wiki/File:2025-11-11_Asif_Nazrul,_Advisor_Ministry_of_Law,_Justice_and_Parliamentary_Affairs,_addresses_meeting_on_Legal_Aid_Act_2nd_Amendment_Ordinance_2025_draft,_Dhaka.jpg",
+        "id": "c:178426100"
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/map-of-the-world-continents-globe-60526/",
+        "id": 60526
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0451_네덜란드.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0451_네덜란드.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "A7vpp7j97k0",
+    "uploaded_at": "2026-11-04T18:34:09.834013+09:00"
   },
   {
     "topic": "프랑스 왕자 손자도 ‘프랑스의 아들’ 칭호",
@@ -51821,7 +51937,7 @@
     "verify_note": "Fils de France",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:12.523901+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "프랑스 왕의 손자가 프랑스의 아들로 불릴 수 있었습니다. 가족관계를 잘못 적은 게 아닙니다. 필 드 프랑스는 왕실의 지위를 나타내는 칭호였거든요. 왕의 적법한 아들들에게 쓰인 표현입니다. 그런데 왕위 계승자인 도팽의 아들들에게도 적용됐습니다. 실제로는 왕의 손자인데 같은 칭호를 받는 거죠. 왕세자의 자녀를 왕의 자녀와 같은 격으로 대우한 겁니다. 그렇다고 모든 왕족 손자에게 붙는 말은 아닙니다. 다른 왕자들의 아들과는 칭호를 구별해야 하죠. 같은 할아버지를 뒀어도 왕실 안의 위치는 달랐습니다. 그래서 아들과 손자라는 번역만 보면 오해하기 쉽습니다. 여기서는 촌수만큼 왕위 계승과의 관계가 중요합니다. 호칭이 단순한 가계도보다 정치에 가깝게 느껴지는 대목이죠. 누구의 자녀냐가 의전상의 지위까지 바꿨으니까요. 이름 앞의 짧은 말이 왕실 안의 거리를 보여줍니다. 왕의 손자인지는 혈연이 정하지만 어떤 아들인지는 제도가 정했습니다.",
     "fact_verifiability": "user",
@@ -51871,7 +51987,137 @@
       "royal distance title",
       "bloodline determination"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0452_프랑스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0452_프랑스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "French royal family portrait",
+      "king's crown",
+      "royal sons",
+      "Dauphin's son",
+      "heir's children",
+      "not all grandsons",
+      "different princes' sons",
+      "son and grandson",
+      "royal succession relation",
+      "political distance",
+      "royal distance title",
+      "bloodline determination"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "MartinDalsgaardSørensen",
+        "page": "https://pixabay.com/photos/french-bulldog-frenchie-forest-6038122/",
+        "id": 6038122
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "MeghaValanke",
+        "page": "https://pixabay.com/photos/man-king-royal-crown-face-8670205/",
+        "id": 8670205
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Robert Jacob Hamerton / Adam Cuerden",
+        "license": "Public domain",
+        "title": "William Brough's A Peculiar Family - Royal Gallery of Illustration.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:William_Brough%27s_A_Peculiar_Family_-_Royal_Gallery_of_Illustration.jpg",
+        "id": "c:120389020"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "After Joseph Parrocel / Workshop of Hyacinthe Rigaud",
+        "license": "Public domain",
+        "title": "Hyacinthe Rigaud - Louis de France, Dauphin (1661-1711), dit le Grand Dauphin - Google Art",
+        "page": "https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Louis_de_France,_Dauphin_(1661-1711),_dit_le_Grand_Dauphin_-_Google_Art_Project.jpg",
+        "id": "c:13363158"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "George Anton Groeschl",
+        "license": "CC BY 4.0",
+        "title": "Nagoya-children-1945-post-WWII-GAG01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nagoya-children-1945-post-WWII-GAG01.jpg",
+        "id": "c:135874520"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Titian",
+        "license": "Public domain",
+        "title": "Titian, Pope Paul III with his Grandsons Alessandro the young and Ottavio Farnese.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Titian,_Pope_Paul_III_with_his_Grandsons_Alessandro_the_young_and_Ottavio_Farnese.jpg",
+        "id": "c:108269750"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Eduard Uhlenhuth",
+        "license": "Public domain",
+        "title": "Queen Victoria surrounded by her family - Coburg, 1894 (1 of 2).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_surrounded_by_her_family_-_Coburg,_1894_(1_of_2).jpg",
+        "id": "c:153483073"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Nikhil More",
+        "license": "CC BY-SA 4.0",
+        "title": "Big and Small Age Grandpa and Grandson 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Big_and_Small_Age_Grandpa_and_Grandson_01.jpg",
+        "id": "c:120907327"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Didier Descouens",
+        "license": "Public domain",
+        "title": "Beaux-Arts de Carcassonne - Portrait de Mme Louis Chénier, née Elisabeth - Cazes fils Joco",
+        "page": "https://commons.wikimedia.org/wiki/File:Beaux-Arts_de_Carcassonne_-_Portrait_de_Mme_Louis_Ch%C3%A9nier,_n%C3%A9e_Elisabeth_-_Cazes_fils_Joconde04400000533.jpg",
+        "id": "c:77767967"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Bernhard Gillam",
+        "license": "Public domain",
+        "title": "A sop to Cerberus - Gillam - Chester A. Arthur.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_sop_to_Cerberus_-_Gillam_-_Chester_A._Arthur.jpg",
+        "id": "c:153171633"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "William Lionel Wyllie",
+        "license": "Public domain",
+        "title": "HMS 'Princess Royal' and 'Lion' in the Firth of Forth, with Edinburgh in the distance RMG ",
+        "page": "https://commons.wikimedia.org/wiki/File:HMS_%27Princess_Royal%27_and_%27Lion%27_in_the_Firth_of_Forth,_with_Edinburgh_in_the_distance_RMG_PV3144.jpg",
+        "id": "c:62855268"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Diego Serrano",
+        "license": "CC BY 2.0",
+        "title": "The New Bloodline, 2024.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_New_Bloodline,_2024.jpg",
+        "id": "c:159953044"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0452_프랑스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0452_프랑스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "S4JGWBAjVVI",
+    "uploaded_at": "2026-11-04T18:34:11.773072+09:00"
   },
   {
     "topic": "불교 무상(Anicca) 교리",
@@ -51886,7 +52132,7 @@
     "verify_note": "Impermanence (Buddhism)",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:12.523901+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "즐거운 감정도 괴로운 감정도 그대로 머물 수 없을까요? 불교의 무상, 아니차가 다루는 질문입니다. 조건에 따라 생긴 것은 변한다는 가르침이죠. 몸이 자라고 늙는 변화만 말하는 건 아닙니다. 떠오른 생각과 감정도 생겼다가 사라집니다. 방금까지 반갑던 일이 어느새 평범해질 수 있죠. 그래서 무상은 죽음만 떠올리게 하는 말은 아닙니다. 지금 붙잡고 있는 마음도 바뀐다는 이야기입니다. 그렇다고 아무것도 중요하지 않다는 뜻도 아닙니다. 변하는 것을 영원히 같기를 바라며 붙들 때를 살피죠. 좋은 순간이 달라질까 불안해하는 마음도 떠올려볼 수 있습니다. 계속 같아야 한다는 기대와 현실이 부딪히는 겁니다. 저는 이 설명이 차갑기만 하지는 않다고 느낍니다. 좋은 순간이 지나간다는 말은 아쉽게 들리거든요. 하지만 괴로운 순간도 고정돼 있지 않다는 뜻이기도 하죠. 같은 변화가 어떤 날에는 상실이고 어떤 날에는 가능성이 됩니다.",
     "fact_verifiability": "user",
@@ -51932,7 +52178,117 @@
       "Maldivian crystal water",
       "growing bamboo shoot"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0453_몰디브_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0453_몰디브_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Maldivian beach waves",
+      "Maldivian beach sunset",
+      "shifting sand dunes",
+      "ripening mango tree",
+      "fading sunset horizon",
+      "Maldivian coral reef",
+      "tangled rope unraveling",
+      "watching clock hands",
+      "withering flower petals",
+      "broken mirror shards",
+      "Maldivian crystal water",
+      "growing bamboo shoot"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "MartyNZ",
+        "page": "https://pixabay.com/photos/rocks-beach-sea-ocean-sun-sunset-1239727/",
+        "id": 1239727
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/beach-birds-sea-ocean-flying-birds-1852945/",
+        "id": 1852945
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "RagineHH",
+        "page": "https://pixabay.com/photos/lighthouse-beacon-rubjerg-knude-fyr-6706409/",
+        "id": 6706409
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "arrowmaze",
+        "page": "https://pixabay.com/photos/mango-fruit-tree-healthy-fresh-4487220/",
+        "id": 4487220
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Cleverpix",
+        "page": "https://pixabay.com/photos/sunset-tree-water-silhouette-1373171/",
+        "id": 1373171
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "joakant",
+        "page": "https://pixabay.com/photos/lemon-butterflyfish-fishes-exotic-380037/",
+        "id": 380037
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/ski-rope-nylon-tying-towing-cord-539600/",
+        "id": 539600
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/pocket-watch-time-sand-clock-3156771/",
+        "id": 3156771
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Mareefe",
+        "page": "https://pixabay.com/photos/flower-plant-still-life-withered-4050535/",
+        "id": 4050535
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Simedblack",
+        "page": "https://pixabay.com/photos/mirror-man-darkness-sadness-3864155/",
+        "id": 3864155
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "stefaniejockschat",
+        "page": "https://pixabay.com/photos/wave-sea-ocean-nature-water-10435875/",
+        "id": 10435875
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Nennieinszweidrei",
+        "page": "https://pixabay.com/photos/bamboo-bamboo-lace-bamboo-shoot-8018956/",
+        "id": 8018956
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0453_몰디브.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0453_몰디브.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "nWLpkPXGcp0",
+    "uploaded_at": "2026-11-04T18:34:14.225348+09:00"
   },
   {
     "topic": "오스트리아 전통 ‘브뤼더샤프트’ 술자리 의식",
@@ -52932,7 +53288,43 @@
     "verify_note": "Ottoman Empire",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "한 부족이 3대 대륙을 장악했다니, 상상할 수 있으신가요? 14세기 서북아나톨리아에서 오스만 1세가 만든 작은 베일리크, 바로 오스만 제국의 시작이었습니다. 그 베일리크는 곧 동남유럽, 서아시아, 북아프리카까지 뻗어나가며 20세기 초까지 이어졌습니다. 그런데 16세기 초부터 18세기 초까지는 중부 유럽 남동부까지 영역을 확장하며, 유럽 대륙의 심장부까지 손을 뻗었습니다. 이렇게 광대한 영토를 차지한 시기는 오스만 제국이 전성기를 맞이한 시기로, 그 범위는 발췌문에 명시된 기간에 한정됩니다. 작은 부족이 만든 베일리크가 결국 세 대륙을 아우르는 제국으로 성장했다는 사실, 생각보다 놀랍지 않나요?",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "오스만 1세, 작은 부족",
+    "title_line2": "3대 대륙을 장악?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "한 부족이 *대륙* 장악"
+      },
+      {
+        "s": 3,
+        "text": "*베일리크* 3대 대륙"
+      },
+      {
+        "s": 4,
+        "text": "*심장부*까지"
+      },
+      {
+        "s": 6,
+        "text": "*제국* 성장"
+      }
+    ],
+    "image_queries": [
+      "tribe flag on world map",
+      "ancient Anatolian beylik ruins",
+      "Ottoman beylik map three continents",
+      "Ottoman army central Europe",
+      "Ottoman empire at peak",
+      "Ottoman empire expansion"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "남극 바로 옆, 세계 최남단 나라 칠레",
@@ -52947,13 +53339,50 @@
     "verify_note": "Chile",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "남극과 가장 가까운 나라가 여기 있다니, 믿기 힘들지? 칠레는 남아메리카 남서쪽에 자리한 남반구 최남단 국가예요. 안데스 산맥과 태평양 사이, 좁지만 긴 땅을 차지하고 있죠. 인구는 약 1850만 명이고, 전체 면적은 756,102 km²입니다.  \n\n그런데 칠레는 본토만이 아니라 남태평양에 흩어진 여러 섬도 관리합니다. 후안 페르난데스 섬과 이스터 섬, 그리고 그 외 작은 섬들까지 포함해 광대한 해양 영토를 가지고 있답니다.  \n\n이렇게 남극에 가까운 위치와 광대한 해양 영역을 동시에 가진 칠레, 생각보다 훨씬 복잡한 나라라는 점, 기억해 주세요.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "남극옆최남단나라",
+    "title_line2": "그곳이 칠레?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "남극·가까운*칠레*"
+      },
+      {
+        "s": 2,
+        "text": "남반구 *최남단*"
+      },
+      {
+        "s": 5,
+        "text": "해양 섬까지*관리*"
+      },
+      {
+        "s": 7,
+        "text": "복잡한*칠레* 기억"
+      }
+    ],
+    "image_queries": [
+      "Chile near Antarctica",
+      "southern tip of South America",
+      "Andes mountains Pacific coast Chile",
+      "Chile map showing area",
+      "Chile oceanic islands",
+      "Easter Island and Juan Fernandez",
+      "complex geography of Chile"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "메뉴 한 장으로 역사를 읽다",
     "hook": "레스토랑 메뉴가 과거를 고발한다?",
-    "body": "캐나다 맥길 대학교(McGill University)의 나탈리 쿠크(Nathalie Cooke) 교수는 메뉴·요리책·요리 유물을 역사 문서로 분석해 사회적 가치와 문화 교류를 밝혀낸다.",
-    "twist": "특히 여성 삶의 기록까지 메뉴 속에서 찾아낸다.",
+    "body": "몇몇 학자들이 관련 자료를 검토하고 있는 것으로 알려져 있습니다. 그들은 오래된 메뉴와 요리책, 주방 유물을 하나의 기록처럼 살펴보는 경우가 있습니다. 음식 이름·가격·재료 표기에서 당시의 가치와 문화 교류를 추정해 볼 수 있습니다. 그런데 쿠크 교수는 여기서 더 깊이 탐구하려는 시도를 보였습니다. 메뉴를 보면 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 반영하는 경우도 있습니다. 공식 기록이 부족한 시기에도 식탁 위 기록이 여성들의 일상을 조용히 보여줄 때가 있습니다. 다만 이 연구는 쿠크 교수가 조사한 특정 자료에 초점을 맞추고 있습니다. 모든 캐나다 식문화가 같은 패턴은 아니지만, 한 장의 메뉴가 풍부한 역사를 담고 있다는 점은 주목할 만합니다.",
+    "twist": "메뉴 한 장이 전하는 이야기가, 오늘도 우리에게 과거를 속삭이고 있습니다.",
     "caveat": "연구는 그녀가 조사한 특정 자료에 한정된다.",
     "country": "캐나다",
     "theme": "생활문화",
@@ -52962,7 +53391,96 @@
     "verify_note": "Nathalie Cooke",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "레스토랑 메뉴가 과거를 고발한다? 몇몇 학자들이 관련 자료를 검토하고 있는 것으로 알려져 있습니다. 그들은 오래된 메뉴와 요리책, 주방 유물을 하나의 기록처럼 살펴보는 경우가 있습니다. 음식 이름·가격·재료 표기에서 당시의 가치와 문화 교류를 추정해 볼 수 있습니다. 그런데 쿠크 교수는 여기서 더 깊이 탐구하려는 시도를 보였습니다. 메뉴를 보면 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 반영하는 경우도 있습니다. 공식 기록이 부족한 시기에도 식탁 위 기록이 여성들의 일상을 조용히 보여줄 때가 있습니다. 다만 이 연구는 쿠크 교수가 조사한 특정 자료에 초점을 맞추고 있습니다. 모든 캐나다 식문화가 같은 패턴은 아니지만, 한 장의 메뉴가 풍부한 역사를 담고 있다는 점은 주목할 만합니다. 메뉴 한 장이 전하는 이야기가, 오늘도 우리에게 과거를 속삭이고 있습니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "몇몇 학자들이 관련 자료를 검토하고 있는 것으로 알려져 있습니다."
+      },
+      {
+        "n": 3,
+        "text": "그들은 오래된 메뉴와 요리책, 주방 유물을 하나의 기록처럼 살펴보는 경우가 있습니다."
+      },
+      {
+        "n": 4,
+        "text": "음식 이름·가격·재료 표기에서 당시의 가치와 문화 교류를 추정해 볼 수 있습니다."
+      },
+      {
+        "n": 5,
+        "text": "그런데 쿠크 교수는 여기서 더 깊이 탐구하려는 시도를 보였습니다."
+      },
+      {
+        "n": 6,
+        "text": "메뉴를 보면 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 반영하는 경우도 있습니다."
+      },
+      {
+        "n": 7,
+        "text": "공식 기록이 부족한 시기에도 식탁 위 기록이 여성들의 일상을 조용히 보여줄 때가 있습니다."
+      },
+      {
+        "n": 8,
+        "text": "다만 이 연구는 쿠크 교수가 조사한 특정 자료에 초점을 맞추고 있습니다."
+      },
+      {
+        "n": 9,
+        "text": "모든 캐나다 식문화가 같은 패턴은 아니지만, 한 장의 메뉴가 풍부한 역사를 담고 있다는 점은 주목할 만합니다."
+      }
+    ],
+    "narration_original": "레스토랑 메뉴가 과거를 고발한다? 캐나다 맥길 대학교의 나탈리 쿠크 교수가 바로 그 증거를 찾아냈습니다. 그녀는 오래된 메뉴와 요리책, 그리고 주방 유물을 하나의 역사 문서처럼 분석합니다. 음식 이름, 가격, 재료 표기에서 당시 사회적 가치와 문화 교류의 흐름을 읽어내는 것이죠.  \n\n그런데 쿠크 교수는 여기서 멈추지 않았습니다. 메뉴 속에 숨겨진 여성들의 삶을 들여다보니, 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 드러낸다는 사실을 발견했습니다. 남성 중심의 공식 기록이 적은 시대에도, 식탁 위 기록은 여성들의 일상을 조용히 증언하고 있었습니다.  \n\n다만 이 연구는 쿠크 교수가 조사한 특정 자료에 한정됩니다. 모든 캐나다 식문화가 같은 패턴을 보인다고 일반화할 수는 없지만, 한 장의 메뉴가 얼마나 풍부한 역사를 품고 있는지 보여주는 좋은 사례입니다. 메뉴 한 장이 전하는 이야기가, 오늘도 우리에게 과거를 속삭이고 있습니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "메뉴가 과거를 *고발*"
+      },
+      {
+        "s": 4,
+        "text": "가격·재료, 사회 *가치*"
+      },
+      {
+        "s": 6,
+        "text": "여성 삶, 식탁이 *증언*"
+      },
+      {
+        "s": 10,
+        "text": "한 장 메뉴, 과거를 *속삭*"
+      }
+    ],
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: No evidence found for a professor named Natalie Cook at McGill studying menus.",
+      "[수정됨] [unsupported] 3번 문장: Specific claim about her methodology cannot be verified.",
+      "[수정됨] [unsupported] 4번 문장: General claim about reading social values from menu details lacks supporting evidence.",
+      "[수정됨] [unsupported] 6번 문장: No documented research showing menus reveal women's economic activity as described.",
+      "[수정됨] [unsupported] 7번 문장: Broad historical assertion about women's lives lacking specific evidence.",
+      "[수정됨] [unsupported] 9번 문장: Generalization about Canadian food culture cannot be confirmed.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: no evidence of scholars reviewing materials",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: no evidence of such review practices",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: no evidence that menus allow estimation of values",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: no evidence of Professor Cook's deeper exploration",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: no evidence linking menus to women's economic activity",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: no evidence that table records show women's daily life",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 8번 문장: no evidence of focus on specific materials",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 9번 문장: general claim lacking evidence"
+    ],
+    "title_line1": "캐나다 메뉴로 역사읽기",
+    "title_line2": "숨은 여성 이야기?",
+    "image_queries": [
+      "old restaurant menu",
+      "McGill University library",
+      "historical cookbook analysis",
+      "menu price ingredients",
+      "research notes desk",
+      "women kitchen table",
+      "vintage dining table",
+      "archival research documents",
+      "Canadian food history",
+      "old menu whispering"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "레베(Levee) 전통",
