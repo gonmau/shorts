@@ -139,6 +139,43 @@ def render(st, db, start=0, daily_max=None, repo=""):
             st.caption(f"평균 조회수 {v['views'].mean():,.0f} · 중앙값 {v['views'].median():,.0f}" +
                        (f" · 평균 시청% {v['averageViewPercentage'].mean():.1f}" if "averageViewPercentage" in v else ""))
 
+    # ---- 조회수 원인 분석 ----
+    if snaps:
+        with st.expander("📈 조회수 원인 분석 (출처·길이·목소리·주차별)"):
+            min_age = st.number_input("올린 지 최소 며칠 지난 영상만 (조회수가 쌓일 시간)", 1, 30, 3, key="dash_minage")
+            since = st.text_input("이 날짜 이후 업로드만 (YYYY-MM-DD)", "2026-10-13", key="dash_since")
+            byid = {f.get("youtube_id"): (i, f) for i, f in enumerate(db) if f.get("youtube_id")}
+            today_d = datetime.now(KST).date()
+            rows = []
+            for v in [x for x in snaps[-1].get("videos", []) if x.get("kind", "short") == "short"]:
+                m = byid.get(v.get("id"))
+                if not m or not v.get("published") or str(v["published"]) < since:
+                    continue
+                try:
+                    pub = datetime.strptime(str(v["published"])[:10], "%Y-%m-%d").date()
+                except ValueError:
+                    continue
+                if (today_d - pub).days < min_age:
+                    continue
+                f = m[1]
+                p_ = str(f.get("video_path_v6") or "")
+                src = "GitHub 자동" if p_.startswith("/home/runner") else ("PC" if p_ else "알 수 없음")
+                sec = int(v.get("sec") or 0)
+                rows.append({"views": v.get("views", 0), "출처": src, "길이": (f"{sec // 10 * 10}~{sec // 10 * 10 + 9}초" if sec else "?"),
+                             "목소리": str(f.get("tts_voice_v2") or "?").replace("ko-KR-", "").replace("en-US-", "").replace("Neural", ""),
+                             "주차": f"{pub.isocalendar()[1]}주차"})
+            if not rows:
+                st.info("조건에 맞는 영상이 없습니다.")
+            else:
+                df2 = pd.DataFrame(rows)
+                st.caption(f"영상 {len(df2)}개 · 양호 = 조회 300 이상, 저조 = 50 미만. 편수가 적은 그룹은 참고만 하세요. 출처는 영상 파일 경로로 추정합니다 (/home/runner = GitHub 자동).")
+                for col in ("출처", "목소리", "길이", "주차"):
+                    g = df2.groupby(col)["views"].agg(편수="count", 중앙값="median", 평균="mean",
+                                                      **{"양호%": lambda s: round(100 * (s >= 300).mean()), "저조%": lambda s: round(100 * (s < 50).mean())})
+                    g["평균"] = g["평균"].round(0)
+                    st.markdown(f"**{col}별**")
+                    st.dataframe(g.sort_index())
+
     # ---- 실행 이력 ----
     st.markdown("**④ 실행 이력**")
     hist = _jl("run_history.jsonl")
