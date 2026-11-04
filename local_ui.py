@@ -117,6 +117,22 @@ CAP_LABELS = {"script": "대본 자막 (기본)", "highlight": "핵심 문구 �
 def _gh_token():
     return os.environ.get("GITHUB_TOKEN", "").strip()
 
+def _shared_settings_sync():
+    """음성·자막 설정이 바뀌었으면 pipeline_settings.json(GitHub 자동 실행과 공유하는 설정)을 갱신하고 올릴 표시를 한다"""
+    try:
+        import pipeline_settings as _ps
+        new = _ps.shared(TTS_CFG)
+        try:
+            old = json.load(open(_ps.FILE, encoding="utf-8"))
+        except Exception:
+            old = None
+        if new != old:
+            json.dump(new, open(_ps.FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            st.session_state["gh_dirty"] = True
+            st.session_state["ps_push"] = True
+    except Exception:
+        pass
+
 def _gh_sync(push):
     """sync_db.py 로 GitHub DB와 병합 (push=True면 병합본을 GitHub에도 커밋). -> (성공, 출력)"""
     cmd = [sys.executable, "sync_db.py", "--repo", TTS_CFG["gh_repo"], "--apply", "--auto"] + (["--push"] if push else [])
@@ -360,6 +376,7 @@ with T4a:
                                   format_func=lambda k: CAP_LABELS[k],
                                   help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다")
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    st.caption("☁️ 목소리·속도·음성 엔진·자막 방식은 바뀔 때마다 GitHub에도 자동으로 올라가 자동 실행(Actions)에도 똑같이 적용됩니다 (GitHub 자동동기화가 켜져 있을 때). 워크플로를 수동 실행하며 입력한 값이 있으면 그 값이 우선입니다.")
     sample = st.text_input("미리듣기 문장", "프랑스에서는 빵을 거꾸로 놓으면 불길하다고 여겼습니다." if not EN else "In Korea, you never stick chopsticks upright in a bowl of rice.")
     pe1, pe2 = st.columns([1, 3])
     pv_engine = pe1.radio("미리듣기 엔진", ["Supertonic", "Edge"], horizontal=True, key="pv_engine",
@@ -2523,6 +2540,7 @@ with TS:
     """)
 
 # ---- 작업 후 자동 동기화 (화면을 다 그린 뒤 한 번)
+_shared_settings_sync()
 if st.session_state.get("gh_dirty"):
     st.session_state["gh_dirty"] = False
     if TTS_CFG.get("gh_auto") and _gh_token():
@@ -2537,6 +2555,11 @@ if st.session_state.get("gh_dirty"):
                                      capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
                 _ok1 = _ok1 and _r2.returncode == 0
                 _msg += " | " + ((_r2.stdout + _r2.stderr).strip().splitlines() or [""])[-1]
+            if st.session_state.pop("ps_push", False) and os.path.exists("pipeline_settings.json"):
+                _r3 = subprocess.run([sys.executable, "gh_push.py", "--repo", TTS_CFG["gh_repo"], "--file", "pipeline_settings.json"],
+                                     capture_output=True, text=True, encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+                _ok1 = _ok1 and _r3.returncode == 0
+                _msg += " | 설정: " + ((_r3.stdout + _r3.stderr).strip().splitlines() or [""])[-1]
             _stt.update(label=("✅ GitHub 동기화 완료: " if _ok1 else "⚠️ GitHub 동기화 보류/실패: ") + _msg, state="complete" if _ok1 else "error", expanded=not _ok1)
             st.session_state["gh_last"] = (_ok1, time.strftime("%H:%M"), _msg)
             if not _ok1:

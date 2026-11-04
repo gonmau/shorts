@@ -124,7 +124,7 @@ jobs:
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
-      CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
+      CAPTION_MODE: ${{ github.event.inputs.caption_mode || '' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -159,6 +159,9 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-noto-cjk
 
       - run: pip install -r requirements.txt
+
+      - name: 공유 설정 적용 (PC UI의 목소리·속도·자막 설정, 수동 실행 입력이 있으면 그 값 우선)
+        run: python pipeline_settings.py --github-env >> "$GITHUB_ENV"
 
       - name: 고른 후보 사진 적용 (pick)
         if: ${{ env.PICK != '' }}

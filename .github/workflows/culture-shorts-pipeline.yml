@@ -98,7 +98,7 @@ jobs:
       START: ${{ github.event.inputs.start_index || '0' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
-      CAPTION_MODE: ${{ github.event.inputs.caption_mode || 'script' }}
+      CAPTION_MODE: ${{ github.event.inputs.caption_mode || '' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
       SFX: ${{ vars.SFX || 'off' }}             # 효과음 (기본 꺼짐, 켜려면 저장소 변수 SFX=on)
       SFX_VOL: ${{ vars.SFX_VOL || '1.0' }}
@@ -122,6 +122,9 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-noto-cjk
 
       - run: pip install -r requirements.txt
+
+      - name: 공유 설정 적용 (PC UI의 목소리·속도·자막 설정, 수동 실행 입력이 있으면 그 값 우선)
+        run: python pipeline_settings.py --github-env >> "$GITHUB_ENV"
 
       # ---------- 검수 파일에서 고친 내용 반영 ----------
       - name: 성/민감 소재 제외 (아직 안 만든 소재)
