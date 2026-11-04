@@ -1,8 +1,8 @@
 {
  "voice": "M1",
- "rate": 10,
+ "rate": 5,
  "edge": "ko-KR-InJoonNeural",
- "caption": "script",
+ "caption": "highlight",
  "engine": "auto",
  "scenes": 8,
  "target_sec": 40
