@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 06:15:53 (KST) · 기록 940건 · 소재 530개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 06:16:56 (KST) · 기록 942건 · 소재 530개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -22,12 +22,12 @@
 | generate_script | 110 | 0 | 1시간 6분 |
 | generate_tts | 44 | 0 | 19분 31초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 6 | 0 | 26초 |
+| make_thumbnail | 7 | 0 | 26초 |
 | promote_ready | 41 | 0 | 5초 |
 | redo_videos | 10 | 0 | 2초 |
 | resync_meta | 3 | 0 | 38분 5초 |
 | sync_uploads | 4 | 0 | 18초 |
-| upload_to_youtube | 9 | 0 | 7분 49초 |
+| upload_to_youtube | 10 | 0 | 8분 8초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 111 | 6 | 12시간 17분 |
 | 코드업데이트 | 43 | 0 | 0초 |
@@ -38,6 +38,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 06:16 | PC | upload_to_youtube | upload_to_youtube.py --indexes 399 --daily-max 20 | ✅ | 18초 |  |
+| 06:16 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 399 | ✅ | 0초 |  |
 | 06:15 | PC | 코드업데이트 | gonmau/shorts: 3개 (dashboard.py, local_ui.py, pipeline_settings.py) | ✅ |  |  |
 | 03:25 | Actions | 쇼츠 | culture-shorts-pipeline #117 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/41882624659 |
 
