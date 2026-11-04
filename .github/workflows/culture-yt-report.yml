@@ -9,7 +9,7 @@ name: culture-yt-report
 
 on:
   schedule:
-    - cron: "30 0 * * 1"   # UTC 기준 (한국 시간 월요일 09:30)
+    - cron: "37 0 * * *"   # UTC 기준 (한국 시간 매일 09:37, 전날까지의 기록. 정시는 GitHub이 몰려 밀려서 37분)
   workflow_dispatch:
     inputs:
       days:
