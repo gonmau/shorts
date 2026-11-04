@@ -51095,7 +51095,7 @@
     "verify_note": "Mongolian cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "몽골 사람은 늘 고기만 먹는다고 생각하셨나요? 유목 생활의 식탁은 계절을 따라 달라집니다. 겨울에는 고기의 비중이 커지는 경향이 있습니다. 반대로 여름에는 우유와 유제품이 더 중요해지죠. 가축이 내주는 먹거리도 계절마다 달라지기 때문입니다. 그래서 몽골 음식은 육식이라는 말만으로 부족합니다. 고기와 우유를 어떻게 보관하는지도 봐야 하죠. 우유를 발효하거나 말려 여러 음식으로 만듭니다. 고기를 말려 저장하는 방식도 있습니다. 밀가루 음식도 일상의 중요한 부분이고요. 가축을 기르며 이동하는 생활이 식재료와 조리법에 이어집니다. 긴 겨울과 제한된 재배 환경도 식탁에 영향을 줍니다. 그렇다고 오늘날 모든 가정이 똑같이 먹는 건 아닙니다. 도시의 생활과 유목 가정의 식사는 구별해야 하죠. 고기 요리만 떠올렸다면 여름의 유제품은 의외일 수 있습니다. 이 식탁을 읽는 열쇠는 고기를 얼마나 먹느냐보다 지금이 어느 계절이냐입니다.",
     "fact_verifiability": "user",
@@ -51145,7 +51145,123 @@
       "Summer dairy surprise Mongolia",
       "Season key to meals"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0446_몽골_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0446_몽골_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Mongolian nomad meal",
+      "Winter meat dishes Mongolia",
+      "Summer dairy products Mongolia",
+      "Seasonal livestock feed Mongolia",
+      "Meat and milk storage",
+      "Fermented milk products Mongolia",
+      "Mongolian wheat bread",
+      "Nomadic herding lifestyle",
+      "Long winter kitchen Mongolia",
+      "Urban Mongolian dining",
+      "Summer dairy surprise Mongolia",
+      "Season key to meals"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Satdeep Gill",
+        "license": "CC BY-SA 4.0",
+        "title": "Mongolian Cuisine at World Heritage Cuisine Summit & Food Festival 2018 (13).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mongolian_Cuisine_at_World_Heritage_Cuisine_Summit_%26_Food_Festival_2018_(13).jpg",
+        "id": "c:73584062"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "hbieser",
+        "page": "https://pixabay.com/photos/mongolia-nomads-move-winter-storage-7531216/",
+        "id": 7531216
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/milk-glass-pitcher-fresh-2474993/",
+        "id": 2474993
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Erdenebayar",
+        "page": "https://pixabay.com/photos/cow-grass-green-animal-nature-7643650/",
+        "id": 7643650
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "FotoshopTofs",
+        "page": "https://pixabay.com/photos/healthy-food-food-power-dietetic-1348430/",
+        "id": 1348430
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Anrita1705",
+        "page": "https://pixabay.com/photos/milk-glass-of-milk-glass-drink-5097106/",
+        "id": 5097106
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "sofi5t",
+        "page": "https://pixabay.com/photos/bread-slices-organic-healthy-5671124/",
+        "id": 5671124
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Erdenebayar",
+        "page": "https://pixabay.com/photos/dog-winter-pet-animal-nature-1052756/",
+        "id": 1052756
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "822640",
+        "page": "https://pixabay.com/photos/woman-face-winter-clothes-1123645/",
+        "id": 1123645
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Pauloleong2002",
+        "license": "CC BY-SA 4.0",
+        "title": "Cuisine of Mongolia.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cuisine_of_Mongolia.jpg",
+        "id": "c:86813007"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Nyamdorj",
+        "page": "https://pixabay.com/photos/glacier-ice-summer-nature-mongolia-7495601/",
+        "id": 7495601
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Satdeep Gill",
+        "license": "CC BY-SA 4.0",
+        "title": "Mongolian biscuit Ul boov at World Heritage Cuisine Summit & Food Festival 2018.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mongolian_biscuit_Ul_boov_at_World_Heritage_Cuisine_Summit_%26_Food_Festival_2018.jpg",
+        "id": "c:73584063"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0446_몽골.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0446_몽골.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "ktEdJgdVKVk",
+    "uploaded_at": "2026-11-04T11:10:10.968395+09:00"
   },
   {
     "topic": "우즈베키스탄의 오래된 꾸란은 정말 세계에서 가장 오래됐을까요?",
@@ -51160,7 +51276,7 @@
     "verify_note": "Islam in Uzbekistan",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "우즈베키스탄의 오래된 꾸란은 정말 세계에서 가장 오래됐을까요? 타슈켄트의 우스만 꾸란은 유명한 초기 필사본입니다. 유네스코 세계기록유산에도 이름을 올렸죠. 우스만이 소유했던 책이라는 전승도 있습니다. 하지만 전해지는 이야기와 제작 연대는 나눠 봐야 합니다. 오래됐다는 말만으로 정확한 시기가 정해지진 않거든요. 연구에서는 글자의 형태와 표기 방식 등을 살펴봅니다. 책이 만들어진 때와 후대의 전승이 다를 수 있습니다. 그래서 가장 오래된 책이라는 단정은 신중해야 합니다. 일부 조각과 큰 필사본을 같은 기준으로 비교하기도 어렵죠. 남아 있는 범위가 다르면 오래됐다는 의미도 달라집니다. 그렇다고 이 필사본의 중요성이 줄어드는 건 아닙니다. 초기 꾸란의 기록을 보여주는 귀중한 자료니까요. 저는 가장 오래됐다는 순위가 오히려 시선을 좁힌다고 느낍니다. 누가 먼저였는지 말고 어떻게 전해졌는지도 궁금해지거든요. 이 책의 가치는 기록을 이기는 데만 있지 않습니다.",
     "fact_verifiability": "user",
@@ -51210,7 +51326,133 @@
       "ranking perspective critique",
       "book's lasting value"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0447_우즈베키스탄_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0447_우즈베키스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Uzbekistan mosque interior",
+      "UNESCO heritage monument",
+      "old Quran manuscript",
+      "historical book ownership",
+      "research on calligraphy",
+      "ancient book production",
+      "caution about age claim",
+      "comparing manuscript fragments",
+      "valuable manuscript significance",
+      "historic Quran records",
+      "ranking perspective critique",
+      "book's lasting value"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "johnrauf95",
+        "page": "https://pixabay.com/photos/islam-mosque-white-interior-design-7681492/",
+        "id": 7681492
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Anestiev",
+        "page": "https://pixabay.com/photos/acropolis-athens-greece-ancient-2725918/",
+        "id": 2725918
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Anonymous Unknown author",
+        "license": "Public domain",
+        "title": "Birmingham Quran manuscript full.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Birmingham_Quran_manuscript_full.jpg",
+        "id": "c:163380840"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/bible-book-page-writing-texture-1960635/",
+        "id": 1960635
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Shah Mahmud Nishapuri",
+        "license": "Public domain",
+        "title": "Folio from an Ottoman Album (Muraqqa) with calligraphy by Shah Mahmud Nishapuri (IÜ Ktp. F",
+        "page": "https://commons.wikimedia.org/wiki/File:Folio_from_an_Ottoman_Album_(Muraqqa)_with_calligraphy_by_Shah_Mahmud_Nishapuri_(I%C3%9C_Ktp._FY_5467_f._27a).jpg",
+        "id": "c:117930632"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Darkmoon_Art",
+        "page": "https://pixabay.com/photos/a-book-fire-halloween-pentagram-2743295/",
+        "id": 2743295
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Freeman's Journal 7 January 1863 Restoration of St. Patrick's Cathedral.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Freeman%27s_Journal_7_January_1863_Restoration_of_St._Patrick%27s_Cathedral.png",
+        "id": "c:17275023"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Walters Art Museum Illuminated Manuscripts",
+        "license": "CC0",
+        "title": "Two leaves from the Mirror of human salvation, The Annunciation and Moses and the Burning ",
+        "page": "https://commons.wikimedia.org/wiki/File:Two_leaves_from_the_Mirror_of_human_salvation,_The_Annunciation_and_Moses_and_the_Burning_Bush,_Walters_Manuscript_W.149,_fol._2v.jpg",
+        "id": "c:123387849"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Mrshaxas",
+        "license": "CC BY-SA 4.0",
+        "title": "International islamic academy of Uzbekistan.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:International_islamic_academy_of_Uzbekistan.jpg",
+        "id": "c:148429346"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Bgag",
+        "license": "CC0",
+        "title": "Islam Khodja Minaret 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Islam_Khodja_Minaret_01.jpg",
+        "id": "c:142571749"
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Bgag",
+        "license": "CC0",
+        "title": "Islam Khodja Minaret 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Islam_Khodja_Minaret_02.jpg",
+        "id": "c:142571748"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "Gulab Rai Sajnani",
+        "license": "CC0",
+        "title": "Sukhram.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sukhram.jpg",
+        "id": "c:153589956"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0447_우즈베키스탄.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0447_우즈베키스탄.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "j6dzVKTRleY",
+    "uploaded_at": "2026-11-04T11:10:12.665525+09:00"
   },
   {
     "topic": "피자 이름, 1000년 전 라틴어 문서에 숨겨져 있다",
@@ -51283,7 +51525,7 @@
     "verify_note": "Khat",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다. 일부 지역에서 씹는 카트 잎입니다. 뜨거운 물에 우려 마시는 대신 잎을 씹죠. 사람들이 모여 대화하며 사용하는 모습도 있습니다. 하지만 평범한 나물이나 허브처럼 보면 안 됩니다. 카트에는 카티논 같은 각성 성분이 들어 있습니다. 씹는 동안 성분이 침으로 나오고 몸에 흡수됩니다. 잎이라고 해서 작용까지 순한 건 아닌 거예요. 각성 뒤에 잠들기 어렵거나 기분이 가라앉을 수 있습니다. 혈압이 오르는 등 건강상 위험도 보고돼 있습니다. 그래서 현지 문화라는 설명이 안전하다는 뜻은 아닙니다. 에티오피아 사람들이 모두 사용하는 것도 아니고요. 차 대신 먹는 잎이라는 소개는 그 차이를 너무 줄입니다. 겉모습만으로 음식을 판단하기 어렵다는 사례에 가깝죠. 익숙한 찻잎과 닮았다고 가볍게 생각할 일은 아닙니다. 시장에 놓인 초록 잎이 언제나 가벼운 간식인 건 아닙니다.",
     "fact_verifiability": "user",
@@ -51329,7 +51571,127 @@
       "similar to tea leaves",
       "market green khat leaves"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0449_에티오피아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0449_에티오피아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Ethiopian market leaves",
+      "chewing khat leaves",
+      "people chatting with khat",
+      "khat with cathinone",
+      "khat chewing saliva",
+      "stimulant difficulty sleeping",
+      "high blood pressure risk",
+      "local cultural safety myth",
+      "not all Ethiopians use khat",
+      "khat vs tea comparison",
+      "similar to tea leaves",
+      "market green khat leaves"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "A. Davey from Where I Live Now: Pacific Northwest",
+        "license": "CC BY 2.0",
+        "title": "At the Chat Market (2187402841).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:At_the_Chat_Market_(2187402841).jpg",
+        "id": "c:21919253"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "topochart_app",
+        "page": "https://pixabay.com/photos/panda-bamboo-chewing-forest-china-10495611/",
+        "id": 10495611
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "zhuwei06191973",
+        "page": "https://pixabay.com/photos/men-friends-chatting-afternoon-8364267/",
+        "id": 8364267
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Jynto ( more from this user )",
+        "license": "CC0",
+        "title": "Cathinone molecule ball.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Cathinone_molecule_ball.png",
+        "id": "c:62281262"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Yann ( talk )",
+        "license": "CC BY-SA 4.0",
+        "title": "Nanda Khat in the morning, Uttarakhand, India.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nanda_Khat_in_the_morning,_Uttarakhand,_India.jpg",
+        "id": "c:16952009"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Harshit SR",
+        "license": "CC BY-SA 4.0",
+        "title": "Panwali Dwar and Nanda Khat peaks, Bageshwar-Chamoli, Uttarakhand, India.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Panwali_Dwar_and_Nanda_Khat_peaks,_Bageshwar-Chamoli,_Uttarakhand,_India.jpg",
+        "id": "c:149532410"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/hypertension-high-blood-pressure-867855/",
+        "id": 867855
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Joshwiiieee",
+        "page": "https://pixabay.com/photos/musician-traditional-clothing-10388442/",
+        "id": 10388442
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/man-lonely-alone-dark-blue-mood-7687656/",
+        "id": 7687656
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Elite Volley Athletes & Events",
+        "license": "CC BY 3.0",
+        "title": "Khat Bell, volleyball player.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Khat_Bell,_volleyball_player.png",
+        "id": "c:123035605"
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "highnesser",
+        "page": "https://pixabay.com/photos/tea-leaves-hands-fresh-drying-623796/",
+        "id": 623796
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "PIRO4D",
+        "page": "https://pixabay.com/photos/fruits-pears-green-fresh-ripe-1534494/",
+        "id": 1534494
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0449_에티오피아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0449_에티오피아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "hCtt8f6mug8",
+    "uploaded_at": "2026-11-04T11:10:14.291600+09:00"
   },
   {
     "topic": "이구 축제 기간에 왕이 외국인과 마주치면 안 된다",
@@ -52285,7 +52647,7 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "31일 밤, 세계 최초로 새해를 맞는 섬! 새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -52328,7 +52690,8 @@
       "Line Islands fireworks",
       "New Year's Eve fireworks"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "나라와 주제 불일치(뉴질랜드 / WS,TO)"
   },
   {
     "topic": "두 사람 이상이 동시에 안아주는 ‘그룹 허그’?",
@@ -52387,8 +52750,8 @@
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
     "hook": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면?",
-    "body": "아일랜드(Ireland)와 스코틀랜드(Scotland), 맨 섬(Isle of Man)에서 11월 1일을 앞두고 31일 저녁에 열리는 Samhain은 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이다. 켈트 달은 해가 지면 하루가 시작되므로, 축제는 바로 그 순간부터 시작한다.",
-    "twist": "그때 일부 신석기 통과 무덤이 태양과 정렬돼, 사람들은 하늘의 움직임을 축제와 연결시켰다.",
+    "body": "바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 **Samhain**입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다. 일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다. Samhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서 관찰되는 전통이지만, 비슷한 형태의 수확 축제는 다른 지역에서도 찾아볼 수 있습니다.",
+    "twist": "해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
     "caveat": "이 전통은 주로 아일랜드·스코틀랜드·맨 섬 등 켈트 문화권에서 관찰된 것이다.",
     "country": "아일랜드",
     "theme": "축제/의례",
@@ -52397,7 +52760,60 @@
     "verify_note": "Samhain",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면? 바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 **Samhain**입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다. 일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다. Samhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서 관찰되는 전통이지만, 비슷한 형태의 수확 축제는 다른 지역에서도 찾아볼 수 있습니다. 해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 5,
+        "text": "일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다."
+      },
+      {
+        "n": 6,
+        "text": "이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다."
+      }
+    ],
+    "narration_original": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면? 바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 **Samhain**입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다.  \n\n그런데 일부 신석기 시대 무덤은 해가 지는 방향과 정확히 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이런 천문학적 정렬은 자연과 인간이 시간을 함께 셈하는 방식을 보여줍니다.  \n\nSamhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서만 관찰되는 전통이므로, 다른 지역에서는 같은 형태로 찾아볼 수 없습니다. 해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "31일 저녁, *해*지?"
+      },
+      {
+        "s": 3,
+        "text": "수확 끝, 겨울 시작."
+      },
+      {
+        "s": 4,
+        "text": "새로운 하루, *해*"
+      },
+      {
+        "s": 8,
+        "text": "어둠이 시작, 기억!"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [unsupported] 5번 문장: No reliable evidence that Neolithic tombs align with sunset to link to Samhain",
+      "[수정됨] [unsupported] 6번 문장: General statement about astronomy and timekeeping is not verifiable as a factual claim",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: No reliable evidence that Neolithic tombs are aligned with sunset for Samhain",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: Claim about astronomical alignments reflecting human time perception is speculative"
+    ],
+    "title_line1": "해가 지는 순간",
+    "title_line2": "새로운 축제 시작",
+    "image_queries": [
+      "sunset over horizon",
+      "celtic pumpkin lantern Samhain",
+      "harvest field autumn",
+      "sunrise over landscape",
+      "ancient stone tomb sunset",
+      "stone circle night sky",
+      "celtic stone circle Ireland",
+      "dark forest twilight"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
@@ -52412,13 +52828,46 @@
     "verify_note": "Taoism",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "‘도(道)’를 따라 움직이면 몸도 바뀐다고?  \n도교는 중국에서 시작된 사상으로, ‘도’는 상황에 따라 길, 방법, 기술 등으로 해석됩니다. 이는 의도에 따라 달라지며, 도와의 조화를 강조합니다.  \n그런데 도교는 단순히 철학에 그치지 않습니다. 전통 의학, 명상, 점성술, 기공, 풍수, 내연금술 등 일상 생활 전반에 스며들어 있습니다.  \n‘도’에 대한 해석은 시대와 지역에 따라 다양하게 변해 왔지만, 그 중심에는 여전히 삶의 흐름과 조화가 자리합니다.  \n도와 함께 걸으면, 몸과 마음이 한층 더 유연해지는 듯한 느낌을 받을 수 있겠죠.",
+    "cross_checked": true,
+    "cross_sources": 4,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "도교, 삶에 도 흐름",
+    "title_line2": "몸도 바뀔까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*도* 따라 몸이 바뀌어?"
+      },
+      {
+        "s": 3,
+        "text": "도와 *조화*, 삶"
+      },
+      {
+        "s": 5,
+        "text": "도, *명상*·풍수"
+      }
+    ],
+    "image_queries": [
+      "person practicing tai chi",
+      "traditional Chinese Taoist altar",
+      "balanced stone garden",
+      "interior of Taoist temple",
+      "feng shui interior design",
+      "flowing river landscape China",
+      "person walking mountain path China"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
-    "hook": "덴마크가 아이슬란드 수도에 대사관을 두고 있다니, 믿겠어?",
-    "body": "덴마크(Denmark)와 아이슬란드(Iceland)는 발트해 국가 협의회, 북유럽 의회, NATO 등 다수 국제기구의 정회원이다. 덴마크는 레이캬비크(Reykjavík)에 대사관을 두고, 아이슬란드는 코펜하겐(Copenhagen)에 대사관을 두고 있다.",
-    "twist": "게다가 아이슬란드는 누크(Nuuk)와 투르샤반(Tórshavn)에도 총영사관을 운영한다.",
+    "hook": "덴마크가 아이슬란드 수도에 대사관을 두고 있다니, 믿겠어요?",
+    "body": "실제로 덴마크는 레이캬비크에 대사관을 운영하고, 아이슬란드는 코펜하겐에 대사관을 두고 있습니다. 두 나라는 발트해 국가 협의회, 북유럽 의회, NATO 등 다수 국제기구의 정회원이기도 합니다. 아이슬란드가 누크와 투르샤반에 영사관을 운영한다는 소식은 일부 자료에서 언급되지만, 확실한 증거는 없습니다. 이처럼 서로의 수도에 대사관을 두고, 동시에 다른 도시에도 영사관을 두는 구조는 양국의 외교 관계가 얼마나 다층적인지를 보여줍니다.",
+    "twist": "대사관이 뒤바뀐 이유는 지리적 편의, 국제 기구 참여, 지역 협력의 필요성 등 여러 요인이 복합적으로 작용했을 가능성이 있습니다.",
     "caveat": "이 정보는 양국의 외교관계에 관한 위키피디아 발췌문에 근거한다.",
     "country": "덴마크",
     "theme": "생활문화",
@@ -52427,7 +52876,48 @@
     "verify_note": "Denmark–Iceland relations",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "덴마크가 아이슬란드 수도에 대사관을 두고 있다니, 믿겠어요? 실제로 덴마크는 레이캬비크에 대사관을 운영하고, 아이슬란드는 코펜하겐에 대사관을 두고 있습니다. 두 나라는 발트해 국가 협의회, 북유럽 의회, NATO 등 다수 국제기구의 정회원이기도 합니다. 아이슬란드가 누크와 투르샤반에 영사관을 운영한다는 소식은 일부 자료에서 언급되지만, 확실한 증거는 없습니다. 이처럼 서로의 수도에 대사관을 두고, 동시에 다른 도시에도 영사관을 두는 구조는 양국의 외교 관계가 얼마나 다층적인지를 보여줍니다. 대사관이 뒤바뀐 이유는 지리적 편의, 국제 기구 참여, 지역 협력의 필요성 등 여러 요인이 복합적으로 작용했을 가능성이 있습니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [
+      {
+        "n": 6,
+        "text": "대사관이 뒤바뀐 이유는 지리적 편의, 국제 기구 참여, 지역 협력의 필요성 등 여러 요인이 복합적으로 작용했을 가능성이 있습니다."
+      }
+    ],
+    "narration_original": "덴마크가 아이슬란드 수도에 대사관을 두고 있다니, 믿겠어요? 실제로 덴마크는 레이캬비크에 대사관을 운영하고, 아이슬란드는 코펜하겐에 대사관을 두고 있습니다. 두 나라는 발트해 국가 협의회, 북유럽 의회, NATO 등 다수 국제기구의 정회원이기도 합니다. 그런데 아이슬란드는 누크와 투르샤반에도 총영사관을 운영한다는 점이 놀랍죠. 이처럼 서로의 수도에 대사관을 두고, 동시에 다른 도시에도 영사관을 두는 구조는 양국의 외교 관계가 얼마나 다층적인지를 보여줍니다. 결국, 대사관이 뒤바뀐 이유는 단순히 지리적 편의가 아니라 국제 기구 참여와 지역적 협력의 상호 보완에서 비롯된 것입니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*아이슬란드* 사무소?"
+      },
+      {
+        "s": 3,
+        "text": "국제기구, *북유럽* 의회"
+      },
+      {
+        "s": 6,
+        "text": "대사관 뒤바뀜, *협력*의 결실"
+      }
+    ],
+    "cross_verdict": "partial",
+    "cross_notes": [
+      "[수정됨] [unsupported] 6번 문장: claim about reasons is opinion, not verifiable",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: reason for embassy swap is speculative and not verifiable"
+    ],
+    "title_line1": "덴마크아이슬란드 대사관",
+    "title_line2": "수도 뒤바뀐 이유",
+    "image_queries": [
+      "Iceland office building",
+      "Denmark embassy Reykjavik",
+      "Denmark NATO meeting room",
+      "Consulate building Nuuk",
+      "Iceland embassy Copenhagen",
+      "Diplomatic cooperation ceremony"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "오스만 1세의 작은 영토가 3대 대륙을 지배",
