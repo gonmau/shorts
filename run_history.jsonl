@@ -937,3 +937,4 @@
 {"id": "1793795940371-6c453d", "time": "2026-11-04 21:39:00", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 7.4, "detail": ""}
 {"id": "1793796245059-9be353", "time": "2026-11-04 21:44:05", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (local_ui.py, pipeline_settings.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1793816731395-c34c79", "time": "2026-11-05 03:25:31", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #117", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/41882624659"}
+{"id": "1793826917787-59c987", "time": "2026-11-05 06:15:17", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 3개 (dashboard.py, local_ui.py, pipeline_settings.py)", "status": "success", "secs": null, "detail": ""}
