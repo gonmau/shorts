@@ -81,6 +81,7 @@ TTS_CFG.setdefault("edge", EDGE_VOICES[0])
 TTS_CFG.setdefault("caption", "script")
 TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
+TTS_CFG.setdefault("yt_thumb", False)   # 업로드할 때 썸네일도 같이 올림 (토큰에 youtube.force-ssl 권한 필요)
 TTS_CFG.setdefault("scenes", 10)
 if not TTS_CFG.get("_verify_off_v1"):      # 한 번만: 교차검증/이미지 자동검증을 기본 꺼짐으로 (직접 검증한 대본을 붙여 쓰는 방식 기본)
     TTS_CFG["cross"] = False
@@ -194,7 +195,8 @@ def tts_env():
             "IMG_OLLAMA_MODEL": str(TTS_CFG.get("imgchk_model") or "qwen2.5vl:3b"),
             "IMG_CLIP_THR": str(TTS_CFG.get("imgchk_thr") or 0.22),
             "IMG_RETRY": str(int(TTS_CFG.get("imgchk_retry") if TTS_CFG.get("imgchk_retry") is not None else 2)),
-            **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {})}
+            **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {}),
+            **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {})}
 
 def run(*args):
     t0 = time.time()
@@ -683,6 +685,11 @@ with T5a:
         chain(steps)
 
 with T6a:
+    _yth = st.checkbox("썸네일도 같이 올리기 (업로드 전에 없는 썸네일은 만듦)", bool(TTS_CFG.get("yt_thumb")), key="up_thumb",
+                       help="토큰에 youtube.force-ssl 권한이 있어야 합니다 (get_refresh_token.py 로 새로 받은 토큰은 포함). 권한이 없으면 영상은 올라가고 썸네일만 실패합니다. 켜면 GitHub 자동 업로드에도 같이 적용됩니다. 채널의 사용자 지정 썸네일 권한(전화번호 인증)이 필요할 수 있습니다")
+    if _yth != bool(TTS_CFG.get("yt_thumb")):
+        TTS_CFG["yt_thumb"] = _yth
+        json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     _dmax = st.number_input("하루 업로드 상한 (오늘 올린 개수 포함, 한국시간 기준)", 1, 50, int(os.environ.get("DAILY_MAX", "20") or 20), key="up_dmax",
                             help="오늘 이미 올린 개수가 이 값에 닿으면 더 안 올립니다. 늘리면 그만큼 더 올라갑니다 (유튜브 API 일일 할당량도 고려하세요)")
     _ud = _ld()
@@ -712,6 +719,8 @@ with T6a:
         if st.button(f"선택한 {len(_pick_u)}개 업로드", key="up_pick_go", type="primary", disabled=not _pick_u,
                      help="고른 영상만 비공개로 올립니다. 하루 상한을 넘으면 그만큼만 올라갑니다"):
             if os.environ.get("YT_REFRESH_TOKEN"):
+                if TTS_CFG.get("yt_thumb"):
+                    run("make_thumbnail.py", "--channel", CH, "--handle", HD, "--only", ",".join(map(str, _pick_u)))
                 run("upload_to_youtube.py", "--indexes", ",".join(map(str, _pick_u)), "--daily-max", str(int(_dmax)))
                 st.rerun()
             else:
@@ -720,6 +729,8 @@ with T6a:
         st.info("올릴 영상이 없습니다. (이미 업로드했거나, 영상 파일이 이 PC에 없는 경우입니다)")
     if st.button("앞에서부터 count개 업로드", key="up_go", help="목록 순서대로 count 개수만큼 올립니다 (고르지 않고 빠르게)"):
         if os.environ.get("YT_REFRESH_TOKEN"):
+            if TTS_CFG.get("yt_thumb"):
+                run("make_thumbnail.py", "--channel", CH, "--handle", HD)
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")

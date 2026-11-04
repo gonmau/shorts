@@ -4,7 +4,7 @@
 - UI가 설정을 바꾸면 pipeline_settings.json 을 만들어 GitHub에 자동으로 올린다 (UI 쪽 코드).
 - Actions 는 실행 초기에 `python pipeline_settings.py --github-env >> "$GITHUB_ENV"` 로 이 파일을 읽어 환경변수로 넣는다.
   워크플로를 수동 실행(Run workflow)하며 입력한 목소리/속도/자막 방식이 있으면 그 값이 우선이고, 비워두면 이 파일의 값을 쓴다.
-공유하는 항목: 목소리(Supertonic), 속도, Edge 음성, 음성 엔진 순서, 자막 방식, 장면 수, 목표 길이.
+공유하는 항목: 목소리(Supertonic), 속도, Edge 음성, 음성 엔진 순서, 자막 방식, 장면 수, 목표 길이, 업로드 시 썸네일 설정.
 (교차검증·이미지 자동검증 같은 PC 전용 옵션, 웹훅 주소 등 비밀 값은 올리지 않는다.)"""
 import json
 import os
@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 FILE = Path("pipeline_settings.json")
-KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec")
+KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec", "yt_thumb")
 ENGINE_ORDER = {"auto": "supertonic,edge,google,gtts", "edge": "edge,supertonic,google,gtts", "supertonic": "supertonic", "edge_only": "edge"}
 IS_EN = Path("generate_topics.py").exists()
 
@@ -47,6 +47,8 @@ def env_from(s, is_en=IS_EN):
             e["SCRIPT_TARGET_SEC"] = str(int(s["target_sec"]))
     except (TypeError, ValueError):
         pass
+    if s.get("yt_thumb"):
+        e["YT_THUMBNAIL"] = "on"
     return e
 
 
