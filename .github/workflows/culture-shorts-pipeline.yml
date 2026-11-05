@@ -212,7 +212,7 @@ jobs:
         run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
 
       - name: 유튜브 비공개 업로드
-        if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' && env.YT_REFRESH_TOKEN != '' }}
+        if: ${{ vars.AUTO_UPLOAD == 'on' && env.STAGE != 'prepare' && env.STAGE != 'cuts' && env.YT_REFRESH_TOKEN != '' }}   # 기본 해제: 저장소 변수 AUTO_UPLOAD=on 일 때만 자동 업로드
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
