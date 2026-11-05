@@ -55797,7 +55797,7 @@
     "created_at": "2026-11-03T05:33:26.029557+00:00",
     "status": "scripted",
     "narration_original": "",
-    "narration": "미국의 추수감사절은 매년 날짜가 달라진다는 사실, 알고 계셨나요? 미국에서는 매년 11월 넷째 목요일을 추수감사절로 기념합니다. 그래서 달력에 표시되는 날짜는 해마다 달라집니다. 가족들이 모여 칠면조와 다양한 음식을 나누는 날이죠. 그런데 이 날짜가 항상 지금처럼 정해져 있었던 건 아닙니다. 1939년에는 추수감사절 날짜를 앞당기는 일이 벌어졌습니다. 당시 대통령이 크리스마스 쇼핑 기간을 늘리려는 목적으로 날짜 변경을 선언했기 때문입니다. 하지만 모든 주가 이에 동의한 것은 아니었습니다. 일부 주는 바뀐 날짜를 따랐고, 다른 주는 기존 날짜를 유지했습니다. 같은 추수감사절을 서로 다른 날에 기념하는 혼란이 생긴 겁니다. 결국 1941년 의회는 11월 넷째 목요일을 추수감사절로 정했습니다. 그 후 오늘날까지 이 규칙이 이어지고 있습니다. 날짜는 매년 달라져도, 추수감사절의 자리는 변하지 않았습니다.",
+    "narration": "미국의 추수감사절은 왜 매년 날짜가 달라질까요? 미국에서는 매년 11월 넷째 목요일을 추수감사절로 기념합니다. 그래서 달력에 표시되는 날짜는 해마다 달라집니다. 가족들이 모여 칠면조와 다양한 음식을 나누는 날이죠. 그런데 지금의 날짜가 처음부터 정해져 있었던 것은 아닙니다. 1939년, 당시 루스벨트 대통령은 크리스마스 쇼핑 기간을 늘리기 위해 추수감사절을 일주일 앞당기기로 했습니다. 하지만 모든 주가 이 결정에 동의한 것은 아니었습니다. 일부 주는 바뀐 날짜를 따랐고, 다른 주는 기존 날짜를 유지했습니다. 같은 추수감사절을 서로 다른 날에 기념하는 혼란이 벌어진 겁니다. 결국 1941년 의회는 11월 넷째 목요일을 추수감사절로 법제화했습니다. 마지막으로 정리해볼게요. 1939년 날짜 변경, 주별 혼란을 거쳐 1941년 11월 넷째 목요일로 정착한 것입니다. 매년 날짜는 달라져도 추수감사절은 미국의 중요한 가족 명절로 이어지고 있습니다.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
@@ -55832,25 +55832,25 @@
     "title_line1": "미국 추수감사절 날짜",
     "title_line2": "매년 달라진다?",
     "image_queries": [
-      "November calendar page",
-      "marked Thanksgiving date",
-      "family Thanksgiving turkey",
-      "early November calendar",
-      "state map disagreement",
-      "different Thanksgiving dates",
-      "fourth Thursday November",
-      "Thanksgiving dinner tradition"
+      "Thanksgiving calendar November",
+      "Turkey dinner table",
+      "19th century calendar page",
+      "White House holiday schedule",
+      "State holiday calendar",
+      "Multiple Thanksgiving dates",
+      "Thanksgiving history timeline",
+      "Family Thanksgiving celebration"
     ],
     "scene_count": 8,
     "image_queries_done": [
-      "November calendar page",
-      "marked Thanksgiving date",
-      "family Thanksgiving turkey",
-      "early November calendar",
-      "state map disagreement",
-      "different Thanksgiving dates",
-      "fourth Thursday November",
-      "Thanksgiving dinner tradition"
+      "Thanksgiving calendar November",
+      "Turkey dinner table",
+      "19th century calendar page",
+      "White House holiday schedule",
+      "State holiday calendar",
+      "Multiple Thanksgiving dates",
+      "Thanksgiving history timeline",
+      "Family Thanksgiving celebration"
     ],
     "image_credits": [
       {
@@ -55863,32 +55863,35 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "Basti93",
-        "page": "https://pixabay.com/photos/meeting-calendar-saturday-weekend-273857/",
-        "id": 273857,
-        "type": "photo"
-      },
-      {
-        "scene": 3,
-        "source": "pixabay",
         "user": "HeartlandMom",
         "page": "https://pixabay.com/photos/cranberries-thanksgiving-wine-salad-4658414/",
         "id": 4658414
       },
       {
+        "scene": 3,
+        "source": "commons",
+        "user": "Sukkoria",
+        "license": "CC BY-SA 4.0",
+        "title": "Lune Grand Palais - Calendar (Ruznâme) from Musée du temps.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lune_Grand_Palais_-_Calendar_(Ruzn%C3%A2me)_from_Mus%C3%A9e_du_temps.jpg",
+        "id": "c:80858014"
+      },
+      {
         "scene": 4,
         "source": "pixabay",
-        "user": "geralt",
-        "page": "https://pixabay.com/photos/agenda-calendar-woman-businesswoman-2923057/",
-        "id": 2923057,
+        "user": "sabinevanerp",
+        "page": "https://pixabay.com/photos/doors-indoors-house-wood-window-3117027/",
+        "id": 3117027,
         "type": "photo"
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "Mollyroselee",
-        "page": "https://pixabay.com/photos/state-of-florida-map-design-8629184/",
-        "id": 8629184
+        "source": "commons",
+        "user": "Anonymous Unknown author",
+        "license": "Public domain",
+        "title": "Soviet calendar 1930 color.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Soviet_calendar_1930_color.jpg",
+        "id": "c:4341863"
       },
       {
         "scene": 6,
@@ -55911,32 +55914,32 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/turkey-roast-meal-dish-cuisine-315079/",
-        "id": 315079
+        "user": "Goodfreephotos_com",
+        "page": "https://pixabay.com/photos/thanksgiving-chinese-feast-season-347306/",
+        "id": 347306
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2678,
+        "clip": 0.2507,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a4a351cd2aa1",
-        "at": "2026-11-05 20:38",
+        "sig": "9aceb1fad6e7",
+        "at": "2026-11-05 20:42",
         "scene": 1,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2833,
+        "clip": 0.3378,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "58a98bb18d2f",
-        "at": "2026-11-05 20:38",
+        "sig": "6bf3220ae858",
+        "at": "2026-11-05 20:42",
         "scene": 2,
         "rejected_ids": [
           273857,
@@ -55945,59 +55948,70 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2638,
+        "clip": 0.268,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "bc9425f882cd",
-        "at": "2026-11-05 20:38",
+        "sig": "431f85ca0953",
+        "at": "2026-11-05 20:42",
         "scene": 3,
-        "rejected_ids": []
+        "rejected_ids": [
+          9770658,
+          "c:80858014"
+        ]
       },
       {
-        "verdict": "ok",
-        "clip": 0.2636,
+        "verdict": "bad",
+        "clip": 0.1691,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9d9094ca378b",
-        "at": "2026-11-05 20:38",
+        "sig": "12c295133672",
+        "at": "2026-11-05 20:42",
         "scene": 4,
         "rejected_ids": [
+          2219972,
           2923057,
+          3117027,
+          9706056,
+          "c:121982846",
+          "c:122044125",
           "c:128837425"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2533,
+        "clip": 0.2683,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "df44b66a1192",
-        "at": "2026-11-05 20:38",
+        "sig": "54b9e6e8329d",
+        "at": "2026-11-05 20:42",
         "scene": 5,
-        "rejected_ids": []
+        "rejected_ids": [
+          1848559,
+          "c:4341863"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2613,
+        "clip": 0.2584,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "51b569631ac6",
-        "at": "2026-11-05 20:38",
+        "sig": "dc348641764d",
+        "at": "2026-11-05 20:42",
         "scene": 6,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2318,
+        "clip": 0.2718,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b0aa876e326c",
-        "at": "2026-11-05 20:38",
+        "sig": "9385b58a78ec",
+        "at": "2026-11-05 20:42",
         "scene": 7,
         "rejected_ids": [
           7298417,
@@ -56009,12 +56023,12 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.277,
+        "clip": 0.2412,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "c8605054ea38",
-        "at": "2026-11-05 20:38",
+        "sig": "bea1273d8d14",
+        "at": "2026-11-05 20:42",
         "scene": 8,
         "rejected_ids": []
       }
