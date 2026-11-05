@@ -51502,7 +51502,7 @@
       "pizza delivery box",
       "medieval watermill",
       "pizza on landlord table",
-      "집주인"
+      "house owner"
     ],
     "scene_count": 8,
     "image_queries_done": [
@@ -51513,7 +51513,7 @@
       "pizza delivery box",
       "medieval watermill",
       "pizza on landlord table",
-      "집주인"
+      "house owner"
     ],
     "image_credits": [
       {
@@ -51574,12 +51574,10 @@
       },
       {
         "scene": 8,
-        "source": "commons",
-        "user": "Petar Milošević",
-        "license": "CC BY-SA 4.0",
-        "title": "Vegetarian Pizza.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg",
-        "id": "c:106092414"
+        "source": "pixabay",
+        "user": "Sephelonor",
+        "page": "https://pixabay.com/photos/keys-hands-house-lock-home-estate-2251770/",
+        "id": 2251770
       }
     ],
     "image_source": "pixabay",
@@ -51682,12 +51680,12 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.201,
+        "verdict": "ok",
+        "clip": 0.2415,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "01ae4b067b83",
+        "sig": "b4088774b5a4",
         "at": "2026-11-05 16:14",
         "scene": 8,
         "rejected_ids": [
