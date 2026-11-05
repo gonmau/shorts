@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-06 00:44:28 (KST) · 기록 1068건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-06 00:45:51 (KST) · 기록 1069건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,7 +12,7 @@
 | apply_review | 63 | 0 | 11초 |
 | approve | 15 | 0 | 3초 |
 | build_video | 47 | 0 | 8시간 34분 |
-| check_uploads | 23 | 0 | 2분 19초 |
+| check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
@@ -38,6 +38,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 00:45 | PC | check_uploads | check_uploads.py | ✅ | 7초 |  |
 | 00:44 | PC | upload_to_youtube | upload_to_youtube.py --indexes 496 --daily-max 20 | ✅ | 21초 |  |
 | 00:43 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 496 | ✅ | 1초 |  |
 | 00:36 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 496 | ✅ | 1초 |  |
