@@ -1010,3 +1010,5 @@
 {"id": "1793878113467-499212", "time": "2026-11-05 20:28:33", "channel": "KO", "source": "PC", "kind": "approve", "title": "approve.py --limit 1 --start 491", "status": "success", "secs": 0.3, "detail": ""}
 {"id": "1793878124303-ba80ad", "time": "2026-11-05 20:28:44", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 1 --start 491", "status": "success", "secs": 10.8, "detail": ""}
 {"id": "1793878124562-157a6b", "time": "2026-11-05 20:28:44", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 1 --start 491", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1793878559765-a0a3f1", "time": "2026-11-05 20:35:59", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 3개 (build_video.py, local_ui.py, overlays.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1793878627569-82da1f", "time": "2026-11-05 20:37:07", "channel": "KO", "source": "PC", "kind": "resync_meta", "title": "resync_meta.py --indexes 491", "status": "success", "secs": 7.5, "detail": ""}
