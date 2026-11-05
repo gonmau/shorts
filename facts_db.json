@@ -51468,7 +51468,7 @@
     "created_at": "2026-11-01T07:56:22.456601+00:00",
     "status": "scripted",
     "narration_original": "",
-    "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에 이름이 남아 있습니다. 시기는 997년입니다. 요리책이 아니라 무엇을 바쳐야 하는지 적은 기록이죠. 성탄절과 부활절에 피자 열두 개씩을 내도록 했습니다. 오래된 음식 이름이 납부 목록에서 발견된 겁니다. 다만 지금의 치즈 피자를 떠올리면 너무 앞서갑니다. 그 기록만으로 당시의 모양과 재료를 알 수는 없습니다. 이름이 같다고 요리법까지 같았다는 뜻은 아니죠. 또 기록이 남은 날이 음식이 처음 생긴 날도 아닙니다. 그전에 사람들이 먹고 불렀을 가능성은 남습니다. 이름의 기록과 음식의 탄생을 따로 봐야 하는 이유입니다. 저는 요리법보다 납부 문서에 남았다는 점이 재미있습니다. 누군가에게 피자는 추억보다 내야 하는 몫이었던 거죠. 오늘은 배달을 기다리지만 그때는 받아야 할 피자를 셌을지도 모릅니다.",
+    "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에는 997년이라는 날짜가 남아 있습니다. 이 문서는 당시 물건과 임대료를 기록한 문서였습니다. 그런데 여기에는 꽤 놀라운 내용이 등장합니다. 성탄절과 부활절마다 피자 열두 개씩을 내야 했다는 겁니다. 도대체 누구에게, 왜 피자를 냈던 걸까요? 당시 물레방앗간을 빌려 쓰던 사람들이 가에타의 주교에게 임대료로 낸 것이었습니다. 지금으로 치면 월세 대신 피자를 내는 셈이죠. 그런데 피자 열두 개가 임대료라니, 집주인 입장에서는 꽤 반가운 월세였을지도 모르겠습니다.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
@@ -51495,20 +51495,207 @@
     "title_line1": "피자 997년 문서에",
     "title_line2": "이때의 모양은?",
     "image_queries": [
-      "Ancient pizza slice",
-      "997 pizza parchment",
-      "ritual offering record",
-      "Christmas pizza servings",
-      "tax list pizza",
-      "historic pizza shape",
-      "pizza name history",
-      "early pizza origins",
-      "pizza naming vs cooking",
-      "fun tax record",
-      "pizza as debt",
-      "old pizza delivery"
+      "ancient parchment pizza illustration",
+      "Gaeta ancient Latin document",
+      "historic rent ledger paper",
+      "twelve pizza slices",
+      "pizza delivery box",
+      "medieval watermill Gaeta",
+      "pizza on landlord table",
+      "happy landlord with pizza"
     ],
-    "scene_count": 12
+    "scene_count": 8,
+    "image_queries_done": [
+      "ancient parchment pizza illustration",
+      "Gaeta ancient Latin document",
+      "historic rent ledger paper",
+      "twelve pizza slices",
+      "pizza delivery box",
+      "medieval watermill Gaeta",
+      "pizza on landlord table",
+      "happy landlord with pizza"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Petar Milošević",
+        "license": "CC BY-SA 4.0",
+        "title": "Vegetarian Pizza.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg",
+        "id": "c:106092414"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "MARTINOPHUC",
+        "page": "https://pixabay.com/photos/sea-sunset-sunrise-gaeta-italy-9171049/",
+        "id": 9171049,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/antique-book-business-calligraphy-2178886/",
+        "id": 2178886,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "joshuemd",
+        "page": "https://pixabay.com/photos/pizza-slices-italian-cuisine-329523/",
+        "id": 329523
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "StockSnap",
+        "page": "https://pixabay.com/photos/pizza-boxes-soda-pop-drinks-2618726/",
+        "id": 2618726
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Valerio Capello at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "title": "Eq it-na pizza-margherita sep2005 sml.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "id": "c:372337"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Yakshitha",
+        "license": "CC BY-SA 4.0",
+        "title": "Pizza 2023.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Pizza_2023.jpg",
+        "id": "c:134025925"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "igorovsyannykov",
+        "page": "https://pixabay.com/photos/pizza-italian-homemade-cheese-3007395/",
+        "id": 3007395,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2301,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ad47330f2780",
+        "at": "2026-11-05 16:08",
+        "scene": 1,
+        "rejected_ids": [
+          1442946,
+          "c:106092414"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1607,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0c5ff482a82c",
+        "at": "2026-11-05 16:08",
+        "scene": 2,
+        "rejected_ids": [
+          9171049,
+          9171100,
+          "c:106092414",
+          "c:108799064",
+          "c:372337"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3073,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "554d05e4f4e1",
+        "at": "2026-11-05 16:08",
+        "scene": 3,
+        "rejected_ids": [
+          2178886,
+          4598771,
+          "c:106092414",
+          "c:372337"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2689,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "53aaa67d3c50",
+        "at": "2026-11-05 16:08",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.265,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3ef0476726eb",
+        "at": "2026-11-05 16:08",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1482,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2bc14088efe7",
+        "at": "2026-11-05 16:08",
+        "scene": 6,
+        "rejected_ids": [
+          9171049,
+          9171100,
+          "c:106092414",
+          "c:108799064",
+          "c:372337"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2674,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f5a334daec9c",
+        "at": "2026-11-05 16:08",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2201,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6ff51db003ca",
+        "at": "2026-11-05 16:08",
+        "scene": 8,
+        "rejected_ids": [
+          3007395,
+          "c:154481598"
+        ]
+      }
+    ]
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
@@ -53673,7 +53860,7 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "verified",
+    "status": "scripted",
     "narration": "31일 밤, 세계 최초로 새해를 맞는 섬! 새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
