@@ -56198,9 +56198,9 @@
   },
   {
     "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
-    "hook": "‘tom(Thai: ต้ม)’, ‘yam(Thai: ยำ)’, ‘tam(Thai: ตำ)’, ‘kaeng(Thai: แกง)’ 네 이름만 알면 태국 최고의 음식 7개를 바로 맞출 수 있다!",
-    "body": "태국 요리는 향신료와 매운맛을 살린 가벼운 조리법을 강조한다. 전통 요리는 크게 끓인 요리 ‘tom’, 매운 샐러드 ‘yam’, 빻은 음식 ‘tam’, 그리고 카레 ‘kaeng’ 네 부류로 나뉜다.",
-    "twist": "2011년 CNN Travel이 선정한 ‘World's 50 Best Foods’에 태국 요리가 7개로 가장 많이 올랐다.",
+    "hook": "태국 음식은 모두 맵고 자극적일까요?",
+    "body": "태국 요리는 크게 네 가지 방식인 '똠', '얌', '솜땀', '깽'으로 나뉜다. 2017년 CNN 트래블이 선정한 세계 50대 음식에 태국 음식 7개가 포함됐다.",
+    "twist": "2017년 CNN 트래블이 선정한 ‘World's 50 Best Foods’에 태국 요리가 7개로 가장 많이 올랐다.",
     "caveat": "‘World's 50 Best Foods’는 35,000명 참여자의 온라인 투표 결과이다.",
     "country": "태국",
     "theme": "언어/이름",
@@ -56209,7 +56209,49 @@
     "verify_note": "Thai cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "태국 음식은 모두 맵고 자극적일까요? 사실 태국 요리는 크게 네 가지 방식으로 나눠 볼 수 있습니다. 먼저 '똠'은 국물을 끓이는 요리입니다. 똠얌꿍처럼 새콤하고 매콤한 국물이 대표적이죠. '얌'은 여러 재료를 섞어 만드는 매콤한 샐러드입니다. '솜땀'은 재료를 절구에 찧어 만드는 요리입니다. 마지막으로 '깽'은 다양한 향신료와 재료를 넣어 끓이는 커리 종류입니다. 이렇게 조리법과 재료에 따라 음식의 맛과 모습도 달라집니다. 그렇다면 태국 음식은 세계적으로도 인정받았을까요? 2017년 CNN 트래블이 선정한 세계 50대 음식에는 태국 음식이 무려 7개나 포함됐습니다. 똠얌꿍은 4위, 팟타이는 5위, 솜땀은 6위였습니다. 마사만 커리는 10위, 그린 커리는 19위에 올랐습니다. 태국식 볶음밥은 24위, 무남톡은 36위를 차지했죠. 국물 요리부터 샐러드와 볶음 요리까지 다양합니다. 한 나라의 음식이 이렇게 여러 형태로 세계인의 입맛을 사로잡은 것입니다. 태국 음식의 진짜 매력은 단순히 매운맛이 아니라 다양한 맛의 조화에 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "태국 음식, *맵나요*?"
+      },
+      {
+        "s": 3,
+        "text": "*똠*은 국물 요리"
+      },
+      {
+        "s": 5,
+        "text": "*얌*은 매콤 샐러드"
+      },
+      {
+        "s": 16,
+        "text": "매력은 *조화*"
+      }
+    ],
+    "title_line1": "태국 요리 4가지",
+    "title_line2": "세계 최고 7음식은?",
+    "image_queries": [
+      "Thai tom soup broth",
+      "Thai spicy yam salad",
+      "Thai som tam preparation",
+      "Thai curry ingredients",
+      "Thai dishes ranking",
+      "Thai Tom Yum ranking",
+      "Thai fried rice ranking",
+      "Thai flavor harmony"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
@@ -56224,7 +56266,34 @@
     "verify_note": "Hungary",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "부다페스트 거리 표지판을 읽어 보셨나요? 글자가 전혀 인도유럽어와 닮지 않다면, 바로 헝가리어 때문입니다. 헝가리는 다뉴브 강 유역에 자리한 중앙유럽의 내륙국으로, 인구는 950만 명이 넘으며 대부분 마자르족과 로마니족이 살아갑니다.  \n\n그런데 헝가리어는 유럽에서 인도유럽어족에 속하지 않은 몇 안 되는 언어 중 하나라는 점이 흥미롭습니다. 인도유럽어족이 아닌 언어라는 분류는 순수히 언어학적 기준이며, 실제 사용 인구는 시대에 따라 변동될 수 있다는 점을 기억해 주세요.  \n\n이처럼 헝가리의 거리와 일상 속에 숨겨진 독특한 언어 체계는, 유럽의 대부분이 인도유럽어를 쓰는 상황과는 확연히 다른 색을 보여줍니다. 결국 표지판을 읽을 때 느낀 이질감, 바로 헝가리어가 만든 작은 문화적 퍼즐이었습니다.",
+    "title_line1": "헝가리 거리 표지판",
+    "title_line2": "인도유럽어 아니야?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "표지판, *헝가리*?"
+      },
+      {
+        "s": 2,
+        "text": "글자, *인도* 아니야"
+      },
+      {
+        "s": 4,
+        "text": "헝가리어, *비인도*"
+      }
+    ],
+    "image_queries": [
+      "Budapest street sign",
+      "Hungarian alphabet letters",
+      "Hungarian countryside landscape",
+      "Hungarian language text",
+      "Hungarian language textbook page",
+      "Budapest street view with signs",
+      "Hungarian street sign close-up"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "Thali, 한 판에 온갖 음식이 담긴 남아시아식 대접",
