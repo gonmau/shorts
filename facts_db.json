@@ -56179,7 +56179,41 @@
     "verify_note": "TikTok food trends",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "2020년, 집에서 3분 요리하고 몸무게가 급등한다면 어떨까요? 코로나 팬데믹이 시작되면서 사람들은 집에 머무는 시간이 늘었고, 그때부터 TikTok에 #TikTokFood·#FoodTok 해시태그가 폭발했습니다. 수백만 개의 짧은 영상이 올라오면서, 단계별 레시피를 눈앞에서 바로 확인하고 따라 할 수 있게 되었죠. 간단한 재료와 3분 안에 완성되는 요리들이 특히 인기를 끌었습니다.  \n\n그런데 이 흐름이 젊은 세대에게 큰 변화를 일으켰습니다. 평소 요리에 관심이 적던 사람들도 영상 하나만 보면 직접 도전하게 되었고, 요리 콘텐츠 소비가 급증했습니다. 동시에 “집밥 열풍”이 몸매 논쟁을 불러일으켰습니다. 빠르게 만들다 보니 고칼로리 재료가 자주 사용됐고, 체중 증가와 식품 마케팅에 대한 의견이 엇갈렸죠.  \n\n결국 이 현상은 2020년 코로나 시기에 급격히 나타난 현상이며, 이후에도 온라인 요리 문화가 지속될지는 아직 확실치 않습니다. 하지만 짧은 영상 하나가 우리 식탁을 바꾸고, 몸무게까지 영향을 미칠 수 있다는 점은 분명히 기억해 둘 만합니다.",
+    "title_line1": "핀란드 집밥 열풍",
+    "title_line2": "3분 요리 살찔까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "3분 요리 *몸무게*"
+      },
+      {
+        "s": 4,
+        "text": "3분 *요리* 인기"
+      },
+      {
+        "s": 7,
+        "text": "집밥 *열풍* 몸매"
+      },
+      {
+        "s": 10,
+        "text": "짧은 영상 *식탁* 변신"
+      }
+    ],
+    "image_queries": [
+      "quick meal with kitchen scale",
+      "smartphone filming TikTok cooking",
+      "TikTok step-by-step recipe",
+      "3 minute cooking timer",
+      "Finnish teen cooking at home",
+      "home kitchen novice TikTok cooking",
+      "home cooked meal beside scale",
+      "butter cheese high-calorie ingredients",
+      "2020 pandemic kitchen scene",
+      "smartphone video on dining table"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "태어날 때부터 정해지는 인도 카스트",
