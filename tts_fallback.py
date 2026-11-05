@@ -66,6 +66,25 @@ _ST = {}  # Supertonic 모델은 한 번만 불러온다
 DEFAULT_ST_VOICES = {"ko": "F1", "en": "M1"}  # 한국어=여성, 영어=남성 (SUPERTONIC_VOICE_KO/EN 으로 변경)
 
 
+_D = "영일이삼사오육칠팔구"
+
+
+def _sino(n):
+    """1~9999 를 한자어 수로 (997 -> 구백구십칠)."""
+    out = ""
+    for v, u in ((1000, "천"), (100, "백"), (10, "십")):
+        q, n = divmod(n, v)
+        if q:
+            out += ("" if q == 1 else _D[q]) + u
+    return out + (_D[n] if n else "")
+
+
+def spell_years(text):
+    """'997년' 처럼 숫자+년은 엔진이 앞자리를 빼먹고 읽는 일이 있어 한글로 풀어 준다 (음성에만 적용, 자막은 원문 그대로)."""
+    import re
+    return re.sub(r"(?<![\d,.])(\d{1,4})\s*년", lambda m: _sino(int(m.group(1))) + "년" if int(m.group(1)) else m.group(0), text)
+
+
 def supertonic_sentence(text, out_path, lang, speed):
     """Supertonic 3(키 불필요, CPU에서 직접 합성)로 한 문장을 wav로 저장."""
     if "tts" not in _ST:
@@ -77,6 +96,8 @@ def supertonic_sentence(text, out_path, lang, speed):
     # 너무 빠르면 문장 끝 음절이 잘리거나 덜 발음되어 상한을 둔다 (SUPERTONIC_MAX_SPEED, 기본 1.2)
     cap = float(os.environ.get("SUPERTONIC_MAX_SPEED") or 1.2)
     sp = round(min(1.05 * speed, cap), 3)
+    if lang == "ko":
+        text = spell_years(text)
     wav, _ = tts.synthesize(text, voice_style=style, lang=lang, speed=sp)
     tts.save_audio(wav, str(out_path))
 
