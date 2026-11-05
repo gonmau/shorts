@@ -52,9 +52,16 @@ def youtube():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=os.environ["YT_CLIENT_ID"],
         client_secret=os.environ["YT_CLIENT_SECRET"],
-        scopes=["https://www.googleapis.com/auth/youtube.upload"]
-        + (["https://www.googleapis.com/auth/youtube.force-ssl"] if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true") else []),
-    )
+    )  # scopes는 지정하지 않음: 토큰이 받은 권한 그대로 갱신 (없는 권한을 요청하면 영상 업로드까지 invalid_scope로 실패함)
+    try:
+        if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true"):
+            import google.auth.transport.requests as _gr
+            creds.refresh(_gr.Request())
+            granted = set(getattr(creds, "granted_scopes", None) or [])
+            if granted and "https://www.googleapis.com/auth/youtube.force-ssl" not in granted:
+                print("  ⚠ 이 토큰에는 썸네일 권한(youtube.force-ssl)이 없습니다 → 영상은 올라가지만 썸네일은 실패합니다. get_refresh_token.py 로 토큰을 다시 받으세요.")
+    except Exception as e:
+        print(f"  (권한 확인 건너뜀: {str(e)[:120]})")
     return build("youtube", "v3", credentials=creds)
 
 
