@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -50870,7 +50872,7 @@
     "verify_note": "Chan Buddhism",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "젠, 찬, 선. 다른 말처럼 들리지만 같은 글자를 읽는 방식입니다. 일본에서는 젠, 중국에서는 찬, 한국에서는 선이라고 하죠. 중국에서 발전한 불교 전통이 퍼지며 이름도 달라진 겁니다. 더 거슬러 가면 명상과 관련된 산스크리트어 디야나와 연결됩니다. 그렇다고 모든 명상이 선에서 시작된 건 아닙니다. 명상 수행은 그전에도 있었어요. 선은 그 위에서 발전한 하나의 흐름입니다. 짧은 이름 하나에 인도와 중국, 동아시아를 건넌 과정이 들어 있는 거죠. 저는 명상법보다 이 이름의 이동이 먼저 궁금해집니다.",
     "fact_verifiability": "user",
@@ -50914,7 +50916,8 @@
       "Name journey across Asia",
       "Name migration curiosity"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(크로아티아 / JP,CN,IN)"
   },
   {
     "topic": "나바라트리(Navaratri) – 캐나다에서의 9밤 축제",
@@ -51949,7 +51952,7 @@
     "verify_note": "Igue festival",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "축제인데 왕을 만나러 가면 안 되는 시간이 있습니다. 나이지리아 베닌 왕국의 이구 의식 이야기입니다. 베닌 왕국은 오늘날의 베냉공화국과 구별해야 하죠. 이곳의 전통 통치자는 오바라고 불립니다. 이구에는 왕과 공동체의 안녕을 비는 의식이 있습니다. 조상에게 감사하고 새해를 준비하는 의미도 담기죠. 그런데 왕의 의식에는 만남을 제한하는 규칙이 있습니다. 외부인은 왕과 대면할 수 없다고 설명됩니다. 여기서 외부인을 외국 여권 소지자만으로 보면 곤란합니다. 현지 공동체에 속하지 않은 사람이라는 맥락이거든요. 축제를 즐기는 일과 왕의 의식에 참여하는 일은 다릅니다. 실제로 축제에는 외부 방문객도 찾아옵니다. 모두를 내쫓는 행사라고 이해하면 정반대가 되는 거죠. 공개적인 잔치와 제한된 의식이 한 축제 안에 있는 겁니다. 어디까지 볼 수 있느냐도 행사마다 달라지는 셈이죠. 축제에 초대받았다고 모든 문이 열리는 건 아닙니다.",
     "fact_verifiability": "user",
@@ -51991,7 +51994,8 @@
       "Public feast contrast",
       "Invitation limited access"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(남아프리카공화국 / NG,BJ)"
   },
   {
     "topic": "탄생 순간에만 존재한 보이지 않는 네덜란드 영토",
@@ -52684,7 +52688,7 @@
     "verify_note": "Onam",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:18.523211+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "해마다 돌아오는 왕을 맞으려고 꽃을 깐다면요? 인도 케랄라의 수확 축제 오남 이야기입니다. 전설 속 왕 마하발리가 백성을 찾아온다고 믿죠. 사람들이 만드는 꽃 장식은 그 귀환을 환영합니다. 푸칼람이라는 꽃무늬를 바닥에 펼쳐놓는 겁니다. 꽃을 모아 색과 모양을 맞추는 손길이 분주해집니다. 그리고 기다려지는 또 하나는 사디아입니다. 바나나 잎 위에 여러 음식을 차려 먹는 잔치죠. 쌀밥과 채소 요리, 달콤한 후식까지 이어집니다. 지역에 따라 음식의 종류와 조합도 달라집니다. 축제 준비와 식사에 가족들이 함께 참여하기도 합니다. 왕을 맞는 전설이 사람들을 모으는 명절이 된 거예요. 저는 왕의 보물보다 꽃과 밥상이 먼저 보인다는 점이 좋습니다. 반가운 손님을 맞을 때의 마음과 닮아 있으니까요. 왕의 귀환은 전설이지만 함께 준비하는 식탁은 현실입니다. 돌아온다는 이야기가 남아 있는 사람들을 다시 만나게 합니다.",
     "fact_verifiability": "user",
@@ -52734,7 +52738,8 @@
       "realistic feast",
       "reunion through story"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(스위스 / IN)"
   },
   {
     "topic": "탄자니아( Tanzania )에서의 기도 전 청결 규칙",
@@ -53643,7 +53648,7 @@
     "verify_note": "Buddhist cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요? 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다. 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.  \n\n그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요. 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다. 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.  \n\n이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요. 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?",
     "title_line1": "몰디브 축제, 채식만",
     "title_line2": "왜 비건인가?",
@@ -53679,7 +53684,20 @@
       "Monk vegetarian tradition",
       "Festival vegan practice"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "cross_checked": true,
+    "cross_sources": 3,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_notes": [
+      "[contradicted] 2번 문장: Maldives is a majority Sunni Muslim nation; there is no significant Mahayana Buddhist population practicing such dietary customs.",
+      "[contradicted] 3번 문장: The principle of ahimsa is not a recognized basis for Maldives Buddhist practice, as Buddhism is not prevalent there.",
+      "[contradicted] 5번 문장: No evidence that Maldives Buddhists treat cooking as meditation; Maldives lacks a Buddhist tradition.",
+      "[contradicted] 6번 문장: Claim that food becomes a path to enlightenment for Maldives Buddhists is unsupported and contradicted by the absence of such a tradition.",
+      "[contradicted] 7번 문장: The tradition described does not exist in Maldives, which is not a Buddhist culture."
+    ],
+    "cross_verdict": "contradicted",
+    "reject_reason": "교차검증: 소재 자체가 모순 (모순 5, 근거없음 0 / 8문장)"
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -53694,7 +53712,7 @@
     "verify_note": "Norway",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "남극까지 소유한다면?! 노르웨이는 스발바르와 얀마옌 같은 북극 섬뿐 아니라 남극에도 영유권을 주장합니다. 그 영토는 피터 1세 섬과 퀸 모드랜드인데, 노르웨이 정부 차원에서 공식적으로 선언한 범위입니다. 그런데 이 남극 영토는 실제로는 국제 남극 조약에 따라 제한된 관리만 허용됩니다. 조약은 군사 활동과 자원 채굴을 금지하고, 과학 연구와 환경 보호만을 목표로 하죠. 그래서 노르웨이의 영유권 주장은 서류상으로는 존재하지만, 실질적인 통제는 국제 규정에 얽매여 있습니다. 결국 “남극까지 소유한다”는 말은 법적·실제적 한계가 있는 주장에 불과하다는 점, 기억해 주세요.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -53731,13 +53749,93 @@
       "Norway Antarctic control",
       "Antarctic claim limits"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0462_노르웨이_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0462_노르웨이_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Norway Antarctica flag",
+      "Norway sovereignty claim",
+      "Peter I Island",
+      "Antarctic Treaty signs",
+      "Antarctic mining ban",
+      "Norway Antarctic control",
+      "Antarctic claim limits"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Peaktural_photo",
+        "page": "https://pixabay.com/photos/norway-flag-mountain-fjord-travel-7916632/",
+        "id": 7916632
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Golbez",
+        "license": "CC BY-SA 4.0",
+        "title": "Canada dispute change 1930-11-11.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Canada_dispute_change_1930-11-11.png",
+        "id": "c:55159281"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "owamux",
+        "license": "CC BY 2.0",
+        "title": "Peter I Island.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Peter_I_Island.jpg",
+        "id": "c:151425664"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Mbreen",
+        "license": "CC BY-SA 3.0",
+        "title": "1959 Antarctic Treaty.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1959_Antarctic_Treaty.jpg",
+        "id": "c:18331873"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "David Stanley from Nanaimo, Canada",
+        "license": "CC BY 2.0",
+        "title": "Copper Seams (52319305547).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Copper_Seams_(52319305547).jpg",
+        "id": "c:124423162"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Northrop Aircraft Inc",
+        "license": "CC0",
+        "title": "Northrop Gamma \"Polar Star\" - DPLA - cfd888095f17da46f220fca43885c844 (page 15).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Northrop_Gamma_%22Polar_Star%22_-_DPLA_-_cfd888095f17da46f220fca43885c844_(page_15).jpg",
+        "id": "c:169589474"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Gordon Leggett",
+        "license": "CC BY-SA 4.0",
+        "title": "2016-11-13 01 Kjeungskjær Lighthouse, Sør-Trøndelag, Norway.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2016-11-13_01_Kjeungskj%C3%A6r_Lighthouse,_S%C3%B8r-Tr%C3%B8ndelag,_Norway.jpg",
+        "id": "c:93211401"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0462_노르웨이.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0462_노르웨이.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "스웨덴 전통 음악, 라디오에서 바이올린만 24시간?",
     "hook": "라디오가 바이올린만 틀면?",
-    "body": "스웨덴(Sweden)에서는 1960년대 청년들이 스펠만슬라그(Spelmanslag)라는 포크 클럽을 만들고, 전통 폴스카(pol​ska) 연주를 라디오와 TV에 송출했어요. 그때부터 악기 연주가 가장 큰 장르가 되었죠.",
-    "twist": "1990년대부터는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 줬어요.",
+    "body": "1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다.",
+    "twist": "결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
     "caveat": "이 현상은 주로 전통 음악 애호가와 라디오 청취자를 중심으로 합니다.",
     "country": "스웨덴",
     "theme": "생활문화",
@@ -53746,26 +53844,22 @@
     "verify_note": "Music of Sweden",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "scripted",
-    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 만든 스펠만슬라그 포크 클럽이 그 비밀을 밝혀냈습니다. 그들은 전통 폴스카를 라디오와 TV에 송출했고, 그 순간부터 악기 연주가 가장 큰 장르가 되었습니다. 그런데 1990년대에는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 주었어요. 이 현상은 주로 전통 음악 애호가와 라디오 청취자 중심이지만, 스웨덴의 음악 문화에 깊은 흔적을 남겼습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "status": "video_done",
+    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
     "title_line1": "스웨덴 라디오 바이올린",
     "title_line2": "전통이 현대를 잇다",
     "highlights": [
       {
         "s": 1,
-        "text": "라디오에*바이올린*?"
+        "text": "라디오가 *바이올린*만?"
       },
       {
         "s": 2,
-        "text": "스펠만슬라그*클럽*발견!"
+        "text": "스펠만슬라그 *클럽* 비밀"
       },
       {
         "s": 3,
-        "text": "전통*폴스카*라디오!"
-      },
-      {
-        "s": 6,
-        "text": "바이올린*다리*역할?"
+        "text": "전통 *폴스카* 라디오"
       }
     ],
     "image_queries": [
@@ -53776,7 +53870,109 @@
       "Swedish radio listeners",
       "violin bridge music"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [
+      {
+        "n": 2,
+        "text": "1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다."
+      },
+      {
+        "n": 3,
+        "text": "그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다."
+      },
+      {
+        "n": 4,
+        "text": "1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다."
+      },
+      {
+        "n": 5,
+        "text": "이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다."
+      },
+      {
+        "n": 6,
+        "text": "결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다."
+      }
+    ],
+    "narration_original": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 만든 스펠만슬라그 포크 클럽이 그 비밀을 밝혀냈습니다. 그들은 전통 폴스카를 라디오와 TV에 송출했고, 그 순간부터 악기 연주가 가장 큰 장르가 되었습니다. 그런데 1990년대에는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 주었어요. 이 현상은 주로 전통 음악 애호가와 라디오 청취자 중심이지만, 스웨덴의 음악 문화에 깊은 흔적을 남겼습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "cross_verdict": "unsupported",
+    "cross_notes": [
+      "[수정됨] [unsupported] 2번 문장: No known historical record of a \"스펠만슬라그 포크 클럽\" in 1960s Sweden.",
+      "[수정됨] [contradicted] 3번 문장: Swedish traditional polska was never the dominant genre on radio/TV; instrument‑only music did not become the largest genre.",
+      "[수정됨] [unsupported] 4번 문장: Vague claim about 1990s mixing of vocals and other genres influencing modern music lacks specific evidence.",
+      "[수정됨] [unsupported] 5번 문장: Statement about the phenomenon’s audience and its cultural impact is not substantiated by available sources.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No reliable sources confirm the existence or exact name of a '스펠만슬라그 포크 클럽' in 1960s Sweden.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: There is no evidence that violin‑only performances made folk music the \"biggest genre\" in Sweden.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: While Swedish folk (polska) has mixed with other styles, specific 1990s examples are not documented here.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: The claim about lasting traces in Swedish music culture lacks concrete evidence.",
+      "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: The statement is a broad interpretive claim without verifiable factual support."
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "radio with violin",
+      "young Swedish folk club",
+      "Swedish folk radio broadcast",
+      "1990s Swedish music fusion",
+      "Swedish radio listeners",
+      "violin bridge music"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "EgorovaSvetlana",
+        "license": "CC BY-SA 4.0",
+        "title": "Staff with violins 99.5 WCRB Classical Radio Boston 14th Annual Classical Cartoon Festival",
+        "page": "https://commons.wikimedia.org/wiki/File:Staff_with_violins_99.5_WCRB_Classical_Radio_Boston_14th_Annual_Classical_Cartoon_Festival_at_Boston%E2%80%99s_Symphony_Hall_Fall_2012.jpg",
+        "id": "c:147944109"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ktphotography",
+        "page": "https://pixabay.com/photos/concert-confetti-party-event-club-2527495/",
+        "id": 2527495
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "AlLes",
+        "page": "https://pixabay.com/photos/wireless-microphone-radio-microphone-2907453/",
+        "id": 2907453
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "erwinbosman",
+        "page": "https://pixabay.com/photos/music-concert-performance-musicians-10334304/",
+        "id": 10334304
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Ahmad Ali Karim",
+        "license": "CC0",
+        "title": "The Malaysian-Swedish Music Moments (2).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Malaysian-Swedish_Music_Moments_(2).jpg",
+        "id": "c:158576859"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Ri_Ya",
+        "page": "https://pixabay.com/photos/violin-orchestra-music-7775182/",
+        "id": 7775182
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0463_스웨덴.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0463_스웨덴.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "Yhyakh(Ыһыах): 6월에 열리는 사하공화국 새해 축제",
@@ -53791,7 +53987,7 @@
     "verify_note": "Yhyakh",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:38.707178+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "새해를 6월에 맞이한다면? 사하공화국의 Yhyakh(Ыһыах) 축제!  \nYhyakh는 혹한을 견뎌낸 뒤 자연이 다시 살아나는 것을 기념하고, 삶의 승리를 축하하는 행사예요. 매년 6월 21일, 하지(여름 최장일)날에 새해를 맞이합니다.  \n\n그런데, 한국과 달리 새해가 겨울이 아니라 가장 긴 낮에 시작된다는 점이 매력적이죠. 이 전통은 사하공화국·러시아 일부 지역에서만 현재도 이어지고 있습니다.  \n\n따라서, 여름의 긴 낮에 새해를 맞이하는 사하공화국의 Yhyakh는 자연과 삶의 승리를 한데 모은 독특한 축제라는 사실을 기억해 두세요.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -53824,7 +54020,77 @@
       "Sakha Russian tradition",
       "Yhyakh nature and life victory"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0464_러시아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0464_러시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "New year in June",
+      "Sakha Yhyakh festival",
+      "Nature reborn celebration",
+      "June 21 solstice new year",
+      "Long summer day celebration",
+      "Sakha Russian tradition",
+      "Yhyakh nature and life victory"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472673/",
+        "id": 8472673
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Tenebroid",
+        "license": "CC BY-SA 4.0",
+        "title": "Yhyakh dancers, Sangar, Yakutia.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Yhyakh_dancers,_Sangar,_Yakutia.jpg",
+        "id": "c:100572848"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "bayarts7",
+        "page": "https://pixabay.com/photos/wedding-couple-bride-groom-nature-10075296/",
+        "id": 10075296
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Mylene2401",
+        "page": "https://pixabay.com/photos/french-bulldog-new-years-day-8472657/",
+        "id": 8472657
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "RebaSpike",
+        "page": "https://pixabay.com/photos/girl-child-flag-celebration-6282604/",
+        "id": 6282604
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "delo",
+        "page": "https://pixabay.com/photos/folklore-dance-russian-dance-3514256/",
+        "id": 3514256
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Claudia14",
+        "page": "https://pixabay.com/photos/dolphin-animal-sea-ocean-203875/",
+        "id": 203875
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0464_러시아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0464_러시아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "동물도 의식을 가진다? 코끼리 장례식",
@@ -53918,7 +54184,7 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "31일 밤, 세계 최초로 새해를 맞는 섬! 새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -53961,7 +54227,8 @@
       "Line Islands fireworks",
       "New Year's Eve fireworks"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "나라와 주제 불일치(뉴질랜드 / WS,TO)"
   },
   {
     "topic": "두 사람 이상이 동시에 안아주는 ‘그룹 허그’?",
@@ -54202,7 +54469,7 @@
     "verify_note": "Ottoman Empire",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "한 부족이 3대 대륙을 장악했다니, 상상할 수 있으신가요? 14세기 서북아나톨리아에서 오스만 1세가 만든 작은 베일리크, 바로 오스만 제국의 시작이었습니다. 그 베일리크는 곧 동남유럽, 서아시아, 북아프리카까지 뻗어나가며 20세기 초까지 이어졌습니다. 그런데 16세기 초부터 18세기 초까지는 중부 유럽 남동부까지 영역을 확장하며, 유럽 대륙의 심장부까지 손을 뻗었습니다. 이렇게 광대한 영토를 차지한 시기는 오스만 제국이 전성기를 맞이한 시기로, 그 범위는 발췌문에 명시된 기간에 한정됩니다. 작은 부족이 만든 베일리크가 결국 세 대륙을 아우르는 제국으로 성장했다는 사실, 생각보다 놀랍지 않나요?",
     "cross_checked": true,
     "cross_sources": 2,
@@ -54238,7 +54505,8 @@
       "Ottoman empire at peak",
       "Ottoman empire expansion"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "성/민감 소재 자동 제외(성기)"
   },
   {
     "topic": "남극 바로 옆, 세계 최남단 나라 칠레",
@@ -54958,13 +55226,45 @@
     "verify_note": "Navaratri",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "9밤 연속, 9개의 여신을 모시는 장면! 인도 전역에서 힌두교 신자들이 지키는 나바라트리는 샤크티, 즉 여신의 힘을 기리는 축제입니다. 매 밤마다 두르가 여신의 서로 다른 형태를 모시며, 9가지 모습을 차례로 찬양합니다. 그런데 이 축제는 이론적으로는 Magha·Chaitra·Ashadha·Ashvin 네 차례에 열리지만, 실제로는 가을인 Ashvin에 열리는 샤라다 나바라트리만이 널리 지켜집니다. 지역마다 의식과 춤, 음악이 다르지만, 모두 여신에게 감사와 보호를 기원한다는 점은 같습니다. 결국 9밤 동안 이어지는 이 연속적인 예배가, 우리에게는 한 달에 한 번씩 찾아오는 작은 기적처럼 느껴지지 않나요?",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "cross_verdict": "ok",
+    "cross_notes": [],
+    "title_line1": "캐나다 나바라트리",
+    "title_line2": "9밤에 여신은?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "9밤에 *여신* 모여!"
+      },
+      {
+        "s": 2,
+        "text": "샤크티 *힘* 찬양"
+      },
+      {
+        "s": 3,
+        "text": "가을에 *축제*만"
+      }
+    ],
+    "image_queries": [
+      "nine Hindu goddesses gathering",
+      "Shakti worship celebration",
+      "autumn Navaratri festival decor",
+      "Ashvin Navaratri temple lights",
+      "Navaratri regional dance performance",
+      "monthly ritual candle arrangement"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "몽골 고기 중심 식단",
     "hook": "인구 밀도 2.2명/km², 그런데 식탁엔 고기만!",
-    "body": "몽골 요리는 주로 유제품·고기·동물성 지방으로 구성되고, 시골에서는 삶은 양고기, 도시에서는 고기 소를 넣은 찐만두 부우즈(buuz)가 인기다. 극한 대륙성 기후와 세계 최저 인구 밀도(2.2명/km²)가 식단에 큰 영향을 미친다.",
-    "twist": "아시아 국가 중 드물게 쌀이 주식이 아니라 고기가 주식이다.",
+    "body": "몽골 사람들은 주로 유제품, 고기, 동물성 지방으로 식사를 구성합니다. 광활한 초원과 대륙성 기후 때문에 식량 확보가 어려워 양고기를 삶아 먹는 경우도 있지만, 전통적으로는 양고기를 구워 먹거나 양고기 소를 넣은 부우즈 같은 만두를 즐깁니다. 그런데 아시아 국가 중 드물게 쌀이 주식이 아니라 고기가 주식이라는 점이 놀랍습니다. 도시에서는 최근 중국·러시아 요리의 영향을 받아 약간의 채소와 향신료가 들어가기도 합니다.",
+    "twist": "이렇게 고기가 중심이 된 식단은 넓은 땅과 혹한 날씨가 만든 자연스러운 결과이며, 결국 “고기 없는 몽골은 상상하기 어렵다”는 느낌을 남깁니다.",
     "caveat": "도시에서는 중국·러시아 요리의 영향을 받아 채소와 향신료가 약간 사용되기도 한다.",
     "country": "몽골",
     "theme": "음식문화",
@@ -54973,13 +55273,52 @@
     "verify_note": "Mongolian cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "인구 밀도 2.2명/km², 그런데 식탁엔 고기만! 몽골 사람들은 주로 유제품, 고기, 동물성 지방으로 식사를 구성합니다. 광활한 초원과 대륙성 기후 때문에 식량 확보가 어려워 양고기를 삶아 먹는 경우도 있지만, 전통적으로는 양고기를 구워 먹거나 양고기 소를 넣은 부우즈 같은 만두를 즐깁니다. 그런데 아시아 국가 중 드물게 쌀이 주식이 아니라 고기가 주식이라는 점이 놀랍습니다. 도시에서는 최근 중국·러시아 요리의 영향을 받아 약간의 채소와 향신료가 들어가기도 합니다. 이렇게 고기가 중심이 된 식단은 넓은 땅과 혹한 날씨가 만든 자연스러운 결과이며, 결국 “고기 없는 몽골은 상상하기 어렵다”는 느낌을 남깁니다.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "인구 밀도 2.2명/km², 그런데 식탁엔 고기만! 몽골 사람들은 주로 유제품, 고기, 동물성 지방으로 식사를 구성합니다. 광활한 초원과 극한 대륙성 기후 때문에 식량 확보가 쉽지 않아, 양고기를 삶아 먹는 것이 전통이며, 도시는 고기 소를 넣은 찐만두 ‘부우즈’를 즐깁니다. 그런데 아시아 국가 중 드물게 쌀이 주식이 아니라 고기가 주식이라는 점이 놀랍습니다. 도시에서는 최근 중국·러시아 요리의 영향을 받아 약간의 채소와 향신료가 들어가기도 합니다. 이렇게 고기가 중심이 된 식단은 넓은 땅과 혹한 날씨가 만든 자연스러운 결과이며, 결국 “고기 없는 몽골은 상상하기 어렵다”는 느낌을 남깁니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "인구밀도 2.2, *고기*만!"
+      },
+      {
+        "s": 3,
+        "text": "*양고기* 삶는 전통"
+      },
+      {
+        "s": 4,
+        "text": "쌀보다 *고기*가 주식"
+      },
+      {
+        "s": 6,
+        "text": "*고기* 없는 몽골 상상불가"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 3번 문장: Buuz are steamed dumplings filled with minced mutton, not beef; boiled lamb is not the primary traditional preparation."
+    ],
+    "title_line1": "몽골 인구밀도 2.2",
+    "title_line2": "고기만 먹는 이유?",
+    "image_queries": [
+      "Mongolia meat platter",
+      "Mongolian dairy and meat",
+      "Mongolian boiled lamb",
+      "Mongolia meat feast",
+      "Mongolian street food vegetables",
+      "Mongolia meat landscape"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "우즈베키스탄, 세계에서 가장 오래된 꾸란 보관",
     "hook": "우즈베키스탄에서 하루에 한 번, 가장 오래된 꾸란을 직접 볼 수 있다?",
-    "body": "우즈베키스탄 무슬림 위원회가 무샤프 오스마니(Mushaf Othmani)를 보관하고 있다. 이는 현존하는 가장 초기의 꾸란 사본이다.",
-    "twist": "이 사본은 왕족이 아니라 종교 위원회가 직접 관리한다.",
+    "body": "우즈베키스탄에 보관된 사마르칸트 꾸란은 현존하는 가장 오래된 꾸란 사본 중 하나로 알려져 있습니다. 이 사본은 8~9세기경에 제작된 것으로, 초기 아라비아 문자와 장식이 일부 보존되어 있습니다. 일반인은 특별 허가 없이는 열람하기 어려우며, 관리와 보존은 국가 문화유산 담당 부서가 맡고 있습니다. 제한된 접근 속에서도 해당 기관은 학술 연구와 문화 보존을 위해 엄격히 관리하고 있습니다.",
+    "twist": "그래서 오늘도 그 귀중한 페이지는 조용히 보관된 채, 우리에게 역사의 숨결을 전하고 있습니다.",
     "caveat": "일반인은 특별 허가 없이는 열람이 제한된다.",
     "country": "우즈베키스탄",
     "theme": "생활문화",
@@ -54988,7 +55327,45 @@
     "verify_note": "Islam in Uzbekistan",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "우즈베키스탄에서 하루에 한 번, 가장 오래된 꾸란을 직접 볼 수 있다? 우즈베키스탄에 보관된 사마르칸트 꾸란은 현존하는 가장 오래된 꾸란 사본 중 하나로 알려져 있습니다. 이 사본은 8~9세기경에 제작된 것으로, 초기 아라비아 문자와 장식이 일부 보존되어 있습니다. 일반인은 특별 허가 없이는 열람하기 어려우며, 관리와 보존은 국가 문화유산 담당 부서가 맡고 있습니다. 제한된 접근 속에서도 해당 기관은 학술 연구와 문화 보존을 위해 엄격히 관리하고 있습니다. 그래서 오늘도 그 귀중한 페이지는 조용히 보관된 채, 우리에게 역사의 숨결을 전하고 있습니다.",
+    "cross_checked": true,
+    "cross_sources": 4,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "우즈베키스탄에서 하루에 한 번, 가장 오래된 꾸란을 직접 볼 수 있다? 우즈베키스탄 무슬림 위원회가 보관하고 있는 무샤프 오스마니는 현존하는 가장 초기의 꾸란 사본으로 알려져 있습니다. 이 사본은 7세기 초 이슬람 초기 필사본 중 하나로, 원본에 가까운 아라비아 문자와 장식이 살아 있습니다. 그런데 일반인은 특별 허가 없이는 열람할 수 없으며, 관리와 보존은 왕족이 아니라 종교 위원회가 직접 담당합니다. 제한된 접근 속에서도 위원회는 학술 연구와 문화 보존 차원에서 엄격히 관리하고 있습니다. 그래서 오늘도 그 귀중한 페이지는 조용히 보관된 채, 우리에게 역사의 숨결을 전하고 있습니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*최고* 하루 한 번"
+      },
+      {
+        "s": 2,
+        "text": "*초기* 꾸란"
+      },
+      {
+        "s": 3,
+        "text": "7세기 *아라비아* 문자"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: No known 'Mushaf Osman' in Uzbekistan; the famous ancient Qur'an there is the Samarkand Qur'an, not identified as such.",
+      "[수정됨] [contradicted] 3번 문장: The Samarkand Qur'an dates to the 8th–9th century, not the early 7th century, and its script differs from the earliest Arabic scripts.",
+      "[수정됨] [unsupported] 4번 문장: Limited public access is plausible, but there is no verifiable source confirming the exact permission rules or that a religious committee, not royalty, manages it.",
+      "[수정됨] [unsupported] 5번 문장: No specific evidence found about a committee's strict scholarly management of the manuscript."
+    ],
+    "title_line1": "우즈베키스탄 고대 꾸란",
+    "title_line2": "하루에 한 번만 본다?",
+    "image_queries": [
+      "Uzbekistan mosque interior",
+      "ancient Quran manuscript",
+      "7th century Arabic script",
+      "Uzbekistan religious archive",
+      "Uzbekistan scholars manuscript",
+      "Uzbekistan historic pages"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "에티오피아 고산에서 파는 차 대신 씹는 카트 잎",
