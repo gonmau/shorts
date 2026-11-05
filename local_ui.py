@@ -734,6 +734,29 @@ with T6a:
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")
+    with st.expander("✏️ 제목 수정 (이미 만든 영상의 유튜브 제목·설명)"):
+        st.caption("review.txt에는 아직 영상을 안 만든 소재만 나옵니다. 이미 만든 영상의 제목은 여기서 고치세요. 유튜브 제목과 썸네일 제목이 바뀝니다. "
+                   "영상 화면 위에 이미 들어간 제목은 그대로입니다(바꾸려면 5단계 redo로 다시 만들어야 함).")
+        _te = st.selectbox("소재 번호", sorted(_upl, reverse=True) if _upl else [], key="tedit_sel",
+                           format_func=lambda i: f"{i} {_ud[i].get('country', '')} - {str(_ud[i].get('title_line1', '') or _ud[i].get('topic', ''))[:30]}")
+        if _te is not None and 0 <= _te < len(_ud):
+            _ft = _ud[_te]
+            _t1 = st.text_input("제목 1줄", _ft.get("title_line1", ""), key=f"tedit1_{_te}")
+            _t2 = st.text_input("제목 2줄", _ft.get("title_line2", ""), key=f"tedit2_{_te}")
+            _hk = st.text_area("설명(후크/본문/반전, 한 줄씩)", "\n".join(str(_ft.get(k, "")) for k in ("hook", "body", "twist")), height=110, key=f"tedit3_{_te}")
+            st.caption("대본: " + " ".join(str(_ft.get("narration", "")).split())[:300])
+            if st.button("제목 저장", key=f"tedit_go_{_te}"):
+                _dm = _ld()
+                _dm[_te]["title_line1"] = _t1.strip()
+                _dm[_te]["title_line2"] = _t2.strip()
+                _hl = (_hk.split("\n") + ["", "", ""])[:3]
+                for _k, _v in zip(("hook", "body", "twist"), _hl):
+                    if _v.strip():
+                        _dm[_te][_k] = _v.strip()
+                _sd(_dm)
+                st.session_state["gh_dirty"] = True
+                st.success(f"[{_te}] 제목 저장 완료")
+                st.rerun()
     with st.expander("🔗 이미 올린 영상을 소재에 직접 연결 (번호 + 영상 주소)"):
         st.caption("스튜디오에서 직접 올렸거나 제목을 고친 영상을 소재에 이어 줍니다. 연결하면 업로드 대기 목록에서 빠지고 중복 업로드가 막힙니다. 소재에는 업로드 기록(youtube_id)만 추가되고 대본·영상은 그대로입니다.")
         _mc1, _mc2 = st.columns([1, 3])
