@@ -55784,9 +55784,9 @@
   },
   {
     "topic": "미국 추수감사절, 날짜가 바뀔 수 있다",
-    "hook": "감사절, 가장 이른 날은 11월 22일!",
-    "body": "미국 연방 공휴일인 추수감사절( Thanksgiving )은 11월 네 번째 목요일에 지키며, 그 해에 따라 11월 22일부터 28일 사이에 열립니다.",
-    "twist": "1941년 이전엔 주마다 다른 날짜에 축하했었어요.",
+    "hook": "미국의 추수감사절은 매년 날짜가 달라진다는 사실, 알고 계셨나요?",
+    "body": "미국은 매년 11월 넷째 목요일을 추수감사절로 정하고, 이에 따라 날짜는 매년 달라집니다. 1939년 대통령이 쇼핑 시즌을 늘리려 날짜를 앞당겼지만 주마다 의견이 갈렸습니다. 1941년 의회가 11월 넷째 목요일을 공식 규칙으로 확정했습니다.",
+    "twist": "1939년 대통령이 크리스마스 쇼핑 기간을 늘리기 위해 추수감사절 날짜를 앞당겼다는 점",
     "caveat": "현재 날짜 지정은 1941년 이후 연방 정부가 정한 기준입니다.",
     "country": "미국",
     "theme": "축제/의례",
@@ -55795,7 +55795,53 @@
     "verify_note": "Thanksgiving (United States)",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:26.029557+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration_original": "",
+    "narration": "미국의 추수감사절은 매년 날짜가 달라진다는 사실, 알고 계셨나요? 미국에서는 매년 11월 넷째 목요일을 추수감사절로 기념합니다. 그래서 달력에 표시되는 날짜는 해마다 달라집니다. 가족들이 모여 칠면조와 다양한 음식을 나누는 날이죠. 그런데 이 날짜가 항상 지금처럼 정해져 있었던 건 아닙니다. 1939년에는 추수감사절 날짜를 앞당기는 일이 벌어졌습니다. 당시 대통령이 크리스마스 쇼핑 기간을 늘리려는 목적으로 날짜 변경을 선언했기 때문입니다. 하지만 모든 주가 이에 동의한 것은 아니었습니다. 일부 주는 바뀐 날짜를 따랐고, 다른 주는 기존 날짜를 유지했습니다. 같은 추수감사절을 서로 다른 날에 기념하는 혼란이 생긴 겁니다. 결국 1941년 의회는 11월 넷째 목요일을 추수감사절로 정했습니다. 그 후 오늘날까지 이 규칙이 이어지고 있습니다. 날짜는 매년 달라져도, 추수감사절의 자리는 변하지 않았습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "highlights": [
+      {
+        "s": 1,
+        "text": "날짜가 *바뀐다*"
+      },
+      {
+        "s": 5,
+        "text": "*정해진* 적 없었다"
+      },
+      {
+        "s": 6,
+        "text": "*날짜* 앞당김"
+      },
+      {
+        "s": 11,
+        "text": "*정착* 넷째목"
+      },
+      {
+        "s": 12,
+        "text": "오늘도 *전통* 유지"
+      }
+    ],
+    "title_line1": "미국 추수감사절 날짜",
+    "title_line2": "매년 달라진다?",
+    "image_queries": [
+      "November calendar page",
+      "marked Thanksgiving date",
+      "family Thanksgiving turkey",
+      "early November calendar",
+      "state map disagreement",
+      "different Thanksgiving dates",
+      "fourth Thursday November",
+      "Thanksgiving dinner tradition"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "스위스(스위스) 요리의 지역별 독특함",
