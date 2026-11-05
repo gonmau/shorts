@@ -51496,7 +51496,7 @@
     "title_line2": "이때의 모양은?",
     "image_queries": [
       "ancient parchment pizza illustration",
-      "Gaeta ancient Latin document",
+      "Latin document",
       "historic rent ledger paper",
       "twelve pizza slices",
       "pizza delivery box",
@@ -51507,7 +51507,7 @@
     "scene_count": 8,
     "image_queries_done": [
       "ancient parchment pizza illustration",
-      "Gaeta ancient Latin document",
+      "Latin document",
       "historic rent ledger paper",
       "twelve pizza slices",
       "pizza delivery box",
@@ -51528,10 +51528,9 @@
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "MARTINOPHUC",
-        "page": "https://pixabay.com/photos/sea-sunset-sunrise-gaeta-italy-9171049/",
-        "id": 9171049,
-        "type": "photo"
+        "user": "artyangel",
+        "page": "https://pixabay.com/photos/old-paper-document-charter-latin-3817835/",
+        "id": 3817835
       },
       {
         "scene": 3,
@@ -51599,13 +51598,13 @@
         ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.1607,
+        "verdict": "ok",
+        "clip": 0.3236,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "0c5ff482a82c",
-        "at": "2026-11-05 16:08",
+        "sig": "de04e9414f37",
+        "at": "2026-11-05 16:12",
         "scene": 2,
         "rejected_ids": [
           9171049,
