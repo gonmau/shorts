@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 16:16:30 (KST) · 기록 956건 · 소재 532개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 16:33:26 (KST) · 기록 962건 · 소재 532개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,9 +9,9 @@
 | -c | 38 | 0 | 17분 8초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 43 | 0 | 6초 |
+| apply_review | 44 | 0 | 6초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 40 | 0 | 7시간 19분 |
+| build_video | 41 | 0 | 7시간 26분 |
 | check_uploads | 23 | 0 | 2분 19초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -19,11 +19,11 @@
 | export_review | 16 | 0 | 1초 |
 | fetch_images | 114 | 3 | 1시간 53분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
-| generate_script | 111 | 0 | 1시간 6분 |
-| generate_tts | 45 | 0 | 19분 47초 |
+| generate_script | 112 | 0 | 1시간 6분 |
+| generate_tts | 46 | 0 | 20분 3초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 7 | 0 | 26초 |
-| promote_ready | 43 | 0 | 6초 |
+| make_thumbnail | 8 | 0 | 28초 |
+| promote_ready | 44 | 0 | 6초 |
 | redo_videos | 10 | 0 | 2초 |
 | resync_meta | 3 | 0 | 38분 5초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -38,6 +38,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:33 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 448 | ✅ | 1초 |  |
+| 16:33 | PC | build_video | build_video.py --index 448 --channel gonmauY --handle @gonmauY | ✅ | 6분 56초 |  |
+| 16:26 | PC | generate_tts | generate_tts.py --index 448 | ✅ | 16초 |  |
+| 16:26 | PC | generate_script | generate_script.py --extras-only --index 448 | ✅ | 1초 |  |
+| 16:26 | PC | promote_ready | promote_ready.py --start 448 | ✅ | 0초 |  |
+| 16:26 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 16:14 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 11초 |  |
 | 16:14 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 27초 |  |
 | 16:12 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 16초 |  |
