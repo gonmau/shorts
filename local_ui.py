@@ -1913,7 +1913,7 @@ with T5c:
             else:
                 idf["border"] = idf["border"].map(lambda v: _to_name(v) or "없음")
                 ied = st.data_editor(
-                    idf, num_rows="dynamic", key=f"ovi_ed_{sel_o}_{len(_io)}", use_container_width=True, hide_index=True,
+                    idf, num_rows="dynamic", key=f"ovi_ed_{sel_o}_{abs(hash(str(_io))) % 10**8}", use_container_width=True, hide_index=True,
                     column_config={
                         "image": st.column_config.TextColumn("이미지 파일", disabled=True),
                         "start": st.column_config.NumberColumn("시작(초)", min_value=0.0, step=0.1),
@@ -1960,7 +1960,7 @@ with T5c:
             else:
                 sdf["color"] = sdf["color"].map(lambda v: _to_name(v) or "빨강")
             sed = st.data_editor(
-                sdf, num_rows="dynamic", key=f"ovs_ed_{sel_o}_{len(_so)}", use_container_width=True, hide_index=True,
+                sdf, num_rows="dynamic", key=f"ovs_ed_{sel_o}_{abs(hash(str(_so))) % 10**8}", use_container_width=True, hide_index=True,
                 column_config={
                     "type": st.column_config.SelectboxColumn("도형", options=OV.SHAPES),
                     "start": st.column_config.NumberColumn("시작(초)", min_value=0.0, step=0.1),
@@ -2019,6 +2019,103 @@ with T5c:
                     st.error(f"구간 영상 실패: {type(e).__name__}: {e}")
             if st.session_state.get("ovv_file") and os.path.exists(st.session_state["ovv_file"]):
                 st.video(open(st.session_state["ovv_file"], "rb").read())
+
+        # ---------------- 위치 잡기 (화면을 직접 클릭/드래그) ----------------
+        with st.expander("🎯 위치 잡기 (화면을 클릭·드래그해서 도형·이미지 위치와 크기 정하기)"):
+            try:
+                from streamlit_image_coordinates import streamlit_image_coordinates as _sic
+            except Exception:
+                _sic = None
+            if _sic is None:
+                st.info("이 기능은 'streamlit-image-coordinates' 패키지가 필요합니다.")
+                if st.button("지금 설치", key="sic_install"):
+                    r_ = subprocess.run([sys.executable, "-m", "pip", "install", "streamlit-image-coordinates"], capture_output=True, text=True)
+                    st.code((r_.stdout + r_.stderr)[-600:])
+                    st.success("설치 끝. 화면을 새로고침(F5)하세요.") if r_.returncode == 0 else st.error("설치 실패")
+            else:
+                st.caption("저장된 도형·이미지를 고르고 화면에서 **클릭**하면 그 지점이 중심이 되고, **드래그**하면 상자 크기까지 정해집니다. "
+                           "화살표는 꼬리에서 머리 방향으로 드래그하세요. 파란 상자가 지금 선택한 항목입니다. 적용하면 저장된 값이 바뀝니다 (표는 새로고침됨).")
+                _sh = OV.clean_shapes(it_o.get("shape_overlays") or [])
+                _im = OV.clean_images(it_o.get("image_overlays") or [])
+                _tg = [("도형", i_) for i_ in range(len(_sh))] + [("이미지", i_) for i_ in range(len(_im))]
+                if not _tg:
+                    st.info("저장된 도형이나 이미지가 없습니다. 위에서 먼저 추가하고 저장하세요.")
+                else:
+                    _lab = lambda t_: (f"도형 {t_[1] + 1}: {_sh[t_[1]]['type']} ({_sh[t_[1]]['start']}초~)" if t_[0] == "도형"
+                                       else f"이미지 {t_[1] + 1}: {os.path.basename(_im[t_[1]]['image'])} ({_im[t_[1]]['start']}초~)")
+                    g1, g2, g3 = st.columns([2, 1, 1])
+                    tgt = g1.selectbox("조정할 항목", _tg, format_func=_lab, key=f"pk_t_{sel_o}")
+                    cur = (_sh if tgt[0] == "도형" else _im)[tgt[1]]
+                    pk_t = g2.number_input("확인할 시점(초)", 0.0, 600.0, float(cur["start"]) + 0.5, 0.5, key=f"pk_time_{sel_o}_{tgt[0]}{tgt[1]}",
+                                           help="이 시점에 보이는 화면 위에서 위치를 잡습니다. 다른 이미지 위에 도형을 얹을 땐 둘 다 보이는 시점으로")
+                    pk_sc = g3.number_input("배경 장면", 1, 6, 1, key=f"pk_sc_{sel_o}")
+                    try:
+                        import build_video as BV
+                        from PIL import Image as _I, ImageDraw as _ID
+                        from layout import IMG_BOX
+                        t1_, t2_ = BV.split_title(it_o)
+                        bgp = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png").convert("RGB")
+                        spp = _vd(HERE, sel_o, it_o) / f"scene_{int(pk_sc):02d}.png"
+                        if spp.exists():
+                            sci = _I.open(spp).convert("RGB")
+                            bw_, bh_ = IMG_BOX[2] - IMG_BOX[0], IMG_BOX[3] - IMG_BOX[1]
+                            rr = max(bw_ / sci.width, bh_ / sci.height)
+                            sci = sci.resize((int(sci.width * rr), int(sci.height * rr)))
+                            l_, t_ = (sci.width - bw_) // 2, (sci.height - bh_) // 2
+                            bgp.paste(sci.crop((l_, t_, l_ + bw_, t_ + bh_)), (IMG_BOX[0], IMG_BOX[1]))
+                        # 선택 항목이 그 시점에 항상 보이도록 시작 시간을 맞춰 그린다
+                        def _show(item_list, idx, kind):
+                            out = []
+                            for j_, o_ in enumerate(item_list):
+                                o2 = dict(o_)
+                                if j_ == idx and kind:
+                                    o2["start"], o2["dur"] = 0.0, 999.0
+                                out.append(o2)
+                            return out
+                        shp_l = _show(_sh, tgt[1], tgt[0] == "도형")
+                        img_l = _show(_im, tgt[1], tgt[0] == "이미지")
+                        base_img = OV.preview(OV.clean_list(it_o.get("overlays") or []), float(pk_t), bgp, show_grid=True, images=img_l, shapes=shp_l)
+                        # 선택 항목 테두리(파랑)
+                        if tgt[0] == "도형":
+                            cd_, cx_, cy_ = OV.render_shape(OV.normalize_shape(shp_l[tgt[1]]))
+                        else:
+                            rr_ = OV.render_image(OV.normalize_image(img_l[tgt[1]]))
+                            cd_, cx_, cy_ = rr_ if rr_ else (None, 0, 0)
+                        if cd_ is not None:
+                            _ID.Draw(base_img).rectangle((cx_ - cd_.width / 2, cy_ - cd_.height / 2, cx_ + cd_.width / 2, cy_ + cd_.height / 2), outline=(0, 160, 255), width=6)
+                        val = _sic(base_img, width=480, click_and_drag=True, key=f"pk_img_{sel_o}_{tgt[0]}{tgt[1]}_{int(pk_sc)}")
+                    except Exception as e:
+                        val = None
+                        st.error(f"화면 만들기 실패: {type(e).__name__}: {e}")
+                    if val and val.get("width"):
+                        k_ = 1080.0 / float(val["width"])
+                        x1, y1 = float(val.get("x1", val.get("x", 0))) * k_, float(val.get("y1", val.get("y", 0))) * k_
+                        x2, y2 = float(val.get("x2", val.get("x", 0))) * k_, float(val.get("y2", val.get("y", 0))) * k_
+                        drag = abs(x2 - x1) > 20 or abs(y2 - y1) > 20
+                        new = {"x": round((x1 + x2) / 2 / 1080 * 100, 1), "y": round((y1 + y2) / 2 / 1920 * 100, 1)}
+                        if drag:
+                            if tgt[0] == "도형" and cur["type"] == "화살표":
+                                import math
+                                new["w"] = round(math.hypot(x2 - x1, y2 - y1) / 1080 * 100, 1)
+                                new["angle"] = round(math.degrees(math.atan2(y2 - y1, x2 - x1)), 0)
+                            elif tgt[0] == "도형":
+                                new["w"] = round(abs(x2 - x1) / 1080 * 100, 1)
+                                new["h"] = round(abs(y2 - y1) / 1920 * 100, 1)
+                            else:
+                                new["width"] = round(abs(x2 - x1) / 1080 * 100, 1)
+                        st.write("선택한 값: " + ", ".join(f"{k}={v}" for k, v in new.items()) + ("  (드래그: 크기 포함)" if drag else "  (클릭: 위치만)"))
+                        if st.button("이 값으로 적용·저장", key=f"pk_apply_{sel_o}", type="primary"):
+                            db_o = _ld()
+                            key_ = "shape_overlays" if tgt[0] == "도형" else "image_overlays"
+                            lst = list(db_o[sel_o].get(key_) or [])
+                            # clean_* 이 항목 수를 바꾸지 않았다고 가정하고 같은 순서의 항목을 고침
+                            norm_ = (OV.clean_shapes if tgt[0] == "도형" else OV.clean_images)(lst)
+                            if tgt[1] < len(norm_):
+                                norm_[tgt[1]].update(new)
+                                db_o[sel_o][key_] = norm_
+                                _sd(db_o)
+                                st.success("저장했습니다. 위 표가 새 값으로 바뀝니다.")
+                                st.rerun()
 
 with TL:
     _ext_panel('xl_', 1)
