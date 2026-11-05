@@ -51699,10 +51699,6 @@
         ]
       }
     ],
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "overlays": [
       {
         "text": "997년",
@@ -51745,11 +51741,26 @@
         "bold": true,
         "effect": "깜빡임",
         "bg": "#FFFFFF"
+      },
+      {
+        "text": "피자 열두개면 밑지는거 같은데...",
+        "start": 38.3,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#2F80FF",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "페이드",
+        "bg": "#FFFFFF"
       }
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0448_아르헨티나.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0448_아르헨티나.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "redo_ts": 1793864805.2589285
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
