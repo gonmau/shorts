@@ -55467,7 +55467,39 @@
     "verify_note": "Congee",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:23.439144+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "물처럼 얇은 죽을 한 숟갈에? 중국에서는 쌀을 물에 푹 끓여 만든 짭짤한 죽을 ‘컨지’라 부릅니다. 물과 쌀의 비율을 조절하면 걸쭉함이 달라지는데, 물을 많이 넣어 끓이면 거의 물그릇 같은 투명함이 남습니다. 이런 얇은 죽은 전쟁이나 기근 시기에 주식으로 먹었다는 기록이 전해집니다.  \n\n그런데 오늘 아침, 고급 레스토랑에 들어가 얇은 죽을 주문했더니, 눈앞에 펼쳐진 것은 투명한 물그릇처럼 맑은 한 그릇이었습니다. 전통적인 비상식량이 이제는 미식가들의 새로운 경험으로 변한 것이죠.  \n\n역사 속에서 생존을 위한 식사였던 얇은 죽, 이제는 그 투명함이 주는 신선함을 즐기는 순간이 되었습니다. 물처럼 얇은 죽, 그 이야기가 다시 떠오르는 이유가 바로 여기 있습니다.",
+    "title_line1": "중국 얇은 죽",
+    "title_line2": "한 숟갈에 물처럼",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "물처럼 얇은 *죽*?"
+      },
+      {
+        "s": 3,
+        "text": "투명 *컨지*"
+      },
+      {
+        "s": 5,
+        "text": "고급 레스토랑 *죽*"
+      },
+      {
+        "s": 6,
+        "text": "미식가의 *신선* 경험"
+      }
+    ],
+    "image_queries": [
+      "thin congee spoon",
+      "Chinese rice congee bowl",
+      "transparent congee broth",
+      "historical wartime congee",
+      "gourmet restaurant congee",
+      "gourmet congee experience",
+      "survival congee history",
+      "thin water-like congee"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "수천 년 전부터 이어진 일본(Japan) 예절",
