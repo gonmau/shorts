@@ -55514,7 +55514,37 @@
     "verify_note": "Etiquette in Japan",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "수천 년에 걸쳐 바뀐 일본 예절, 오늘도 전통이 살아있다고? 고대부터 중국과 서양 문화가 스며들었지만, 일본은 기본적인 인사·절, 신발 벗기·음식 앞에 놓는 젓가락 등 고유한 예절을 유지합니다. 이런 전통은 세대와 지역에 따라 조금씩 다르게 전해지죠. 그런데 같은 나라 안에서도 교토와 오키나와처럼 지역마다 인사 방식이나 선물 포장법이 달라서, 거리마다 전혀 다른 예절 풍경을 볼 수 있습니다. 물론 이런 차이는 지역·세대에 따라 다를 수 있다는 점을 기억해 주세요. 결국, 일본 예절은 오래된 뿌리를 바탕으로 끊임없이 흡수와 변화를 겪으며 오늘까지 이어지고 있습니다.",
+    "title_line1": "일본의 오래된 예절",
+    "title_line2": "오늘도 그대로일까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "수천년 *예절* 지속"
+      },
+      {
+        "s": 2,
+        "text": "고유 *인사* 유지"
+      },
+      {
+        "s": 4,
+        "text": "지역 *예절* 다름"
+      },
+      {
+        "s": 6,
+        "text": "*예절* 변천"
+      }
+    ],
+    "image_queries": [
+      "ancient Japanese etiquette",
+      "Japanese bow greeting",
+      "Japanese family teaching etiquette",
+      "Kyoto vs Okinawa greetings",
+      "Japanese gift wrapping",
+      "Japanese etiquette evolution"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
