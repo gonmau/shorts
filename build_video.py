@@ -743,7 +743,10 @@ def build_one(idx, item):
     _img_clips = overlays.make_image_clips(item.get("image_overlays"), audio_duration)   # 이미지 얹기: 문구보다 아래층
     if _img_clips:
         print(f"이미지 얹기 {len(_img_clips)}개 적용")
-    overlay_clips = _img_clips + overlay_clips
+    _shape_clips = overlays.make_shape_clips(item.get("shape_overlays"), audio_duration)   # 도형 강조(원·사각형·화살표)
+    if _shape_clips:
+        print(f"도형 강조 {len(item.get('shape_overlays') or [])}개 적용")
+    overlay_clips = _img_clips + _shape_clips + overlay_clips
     if overlay_clips:
         print(f"문구 오버레이 {len(item.get('overlays') or [])}개 적용")
 

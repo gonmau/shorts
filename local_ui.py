@@ -1881,7 +1881,7 @@ with T5c:
                     sc_img = sc_img.resize((int(sc_img.width * r), int(sc_img.height * r)))
                     l, tp_ = (sc_img.width - bw) // 2, (sc_img.height - bh) // 2
                     bgi.paste(sc_img.crop((l, tp_, l + bw, tp_ + bh)), (IMG_BOX[0], IMG_BOX[1]))
-                shown = OV.preview(OV.clean_list(rows_o), float(t_prev), bgi, show_grid=show_gr, images=it_o.get("image_overlays"))
+                shown = OV.preview(OV.clean_list(rows_o), float(t_prev), bgi, show_grid=show_gr, images=it_o.get("image_overlays"), shapes=it_o.get("shape_overlays"))
                 st.image(shown, caption=f"{t_prev}초 시점 (효과는 최종 모습으로 표시, 자막은 안 보임)", width=480)
             except Exception as e:
                 st.error(f"미리보기 실패: {type(e).__name__}: {e}")
@@ -1906,7 +1906,7 @@ with T5c:
                 _sd(db_o)
                 st.rerun()
             _io = OV.clean_images(it_o.get("image_overlays") or [])
-            icols = ["image", "start", "dur", "x", "y", "width", "opacity", "rotate", "border", "bw", "radius", "shadow", "effect"]
+            icols = ["image", "start", "dur", "x", "y", "width", "crop_l", "crop_t", "crop_r", "crop_b", "opacity", "rotate", "border", "bw", "radius", "shadow", "effect"]
             idf = pd.DataFrame(_io, columns=icols)
             if idf.empty:
                 st.info("올린 이미지가 없습니다. 위에서 이미지를 올리고 '목록에 추가'를 누르세요.")
@@ -1921,6 +1921,10 @@ with T5c:
                         "x": st.column_config.NumberColumn("x(%)", min_value=0, max_value=100, step=1, help="이미지 중심의 가로 위치"),
                         "y": st.column_config.NumberColumn("y(%)", min_value=0, max_value=100, step=1, help="이미지 중심의 세로 위치 (이미지 영역은 약 23~76%)"),
                         "width": st.column_config.NumberColumn("크기(가로 %)", min_value=5, max_value=100, step=5, help="화면 가로 대비 이미지 너비. 60이면 화면의 60%"),
+                        "crop_l": st.column_config.NumberColumn("자르기 왼(%)", min_value=0, max_value=80, step=5, help="이미지 왼쪽을 이 % 만큼 잘라냄 (일부만 확대해 보여줄 때)"),
+                        "crop_t": st.column_config.NumberColumn("자르기 위(%)", min_value=0, max_value=80, step=5),
+                        "crop_r": st.column_config.NumberColumn("자르기 오른(%)", min_value=0, max_value=80, step=5),
+                        "crop_b": st.column_config.NumberColumn("자르기 아래(%)", min_value=0, max_value=80, step=5),
                         "opacity": st.column_config.NumberColumn("투명도", min_value=0.1, max_value=1.0, step=0.1, help="1.0=불투명"),
                         "rotate": st.column_config.NumberColumn("기울기(도)", min_value=-45, max_value=45, step=1),
                         "border": st.column_config.SelectboxColumn("테두리색", options=_opts_o),
@@ -1942,6 +1946,79 @@ with T5c:
                     _sd(db_o)
                     st.success(f"이미지 {len(clean_i)}개 저장. " + ("이미 만든 영상이면 redo에 번호를 넣고 5단계를 하세요." if it_o.get("video_path_v6") else "다음 렌더링에 반영됩니다."))
                     st.rerun()
+
+        # ---------------- 도형 강조 (원·사각형·화살표) ----------------
+        with st.expander("⭕ 도형 강조 (원 · 사각형 · 화살표)", expanded=bool(it_o.get("shape_overlays"))):
+            st.caption("장면이나 얹은 이미지 위에 원/사각형/화살표로 강조합니다. 크기는 w(가로 %)·h(세로 %), 화살표는 w가 길이이고 angle로 방향을 정합니다 (0=오른쪽→, 90=아래↓, 180=왼쪽←, 270=위↑). "
+                       "효과: 그리기(그려지듯 등장)/페이드/팝/맥박(커졌다 작아졌다)/깜빡임. 행을 추가하려면 표 맨 아래 빈 줄을 누르세요.")
+            scols = ["type", "start", "dur", "x", "y", "w", "h", "angle", "color", "thick", "effect"]
+            _so = OV.clean_shapes(it_o.get("shape_overlays") or [])
+            sdf = pd.DataFrame(_so, columns=scols)
+            if sdf.empty:
+                sdf = pd.DataFrame([{"type": "원", "start": 2.0, "dur": 3.0, "x": 50, "y": 45, "w": 40, "h": 12, "angle": 0,
+                                     "color": "빨강", "thick": 10, "effect": "그리기"}], columns=scols)
+            else:
+                sdf["color"] = sdf["color"].map(lambda v: _to_name(v) or "빨강")
+            sed = st.data_editor(
+                sdf, num_rows="dynamic", key=f"ovs_ed_{sel_o}_{len(_so)}", use_container_width=True, hide_index=True,
+                column_config={
+                    "type": st.column_config.SelectboxColumn("도형", options=OV.SHAPES),
+                    "start": st.column_config.NumberColumn("시작(초)", min_value=0.0, step=0.1),
+                    "dur": st.column_config.NumberColumn("지속(초)", min_value=0.2, step=0.1),
+                    "x": st.column_config.NumberColumn("x(%)", min_value=0, max_value=100, step=1),
+                    "y": st.column_config.NumberColumn("y(%)", min_value=0, max_value=100, step=1),
+                    "w": st.column_config.NumberColumn("w 가로(%)", min_value=3, max_value=100, step=1, help="화면 가로 대비 크기 (화살표는 길이)"),
+                    "h": st.column_config.NumberColumn("h 세로(%)", min_value=2, max_value=100, step=1, help="화면 세로 대비 크기 (화살표는 안 씀)"),
+                    "angle": st.column_config.NumberColumn("방향(도)", min_value=-360, max_value=360, step=15, help="화살표만: 0=→ 90=↓ 180=← 270=↑"),
+                    "color": st.column_config.SelectboxColumn("색", options=_opts_c),
+                    "thick": st.column_config.NumberColumn("굵기", min_value=2, max_value=40, step=1),
+                    "effect": st.column_config.SelectboxColumn("효과", options=OV.SHAPE_EFFECTS),
+                })
+            srows = [{k: (None if (isinstance(v, float) and v != v) else v) for k, v in r.items()} for r in sed.to_dict("records")]
+            for _r in srows:
+                _r["color"] = _to_hex(_r.get("color"))
+            if st.button("도형 설정 저장", key=f"ovs_save_{sel_o}", type="primary"):
+                db_o = _ld()
+                clean_s = OV.clean_shapes(srows)
+                if clean_s:
+                    db_o[sel_o]["shape_overlays"] = clean_s
+                else:
+                    db_o[sel_o].pop("shape_overlays", None)
+                _sd(db_o)
+                st.success(f"도형 {len(clean_s)}개 저장. " + ("이미 만든 영상이면 redo에 번호를 넣고 5단계를 하세요." if it_o.get("video_path_v6") else "다음 렌더링에 반영됩니다."))
+                st.rerun()
+
+        # ---------------- 구간 영상 미리보기 (움직이는 효과 확인) ----------------
+        with st.expander("▶ 구간 영상 미리보기 (문구·이미지·도형의 움직임 확인)"):
+            st.caption("지정한 구간만 짧은 영상으로 만들어 효과를 확인합니다 (저장된 문구·이미지·도형 기준, 문구는 위 표의 현재 값). 배경은 정지 화면이고 자막·음성은 없으며 해상도는 절반입니다. 보통 5~20초 걸립니다.")
+            vp1, vp2, vp3 = st.columns(3)
+            v_t0 = vp1.number_input("시작(초)", 0.0, 600.0, 0.0, 0.5, key="ovv_t0")
+            v_t1 = vp2.number_input("끝(초)", 0.5, 600.0, 6.0, 0.5, key="ovv_t1")
+            v_sc = vp3.number_input("배경 장면 번호", 1, 6, 1, key="ovv_sc")
+            if st.button("구간 영상 만들기", key="ovv_go"):
+                try:
+                    import build_video as BV
+                    from PIL import Image as _I
+                    from layout import IMG_BOX
+                    t1_, t2_ = BV.split_title(it_o)
+                    bgv = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png").convert("RGB")
+                    spv = _vd(HERE, sel_o, it_o) / f"scene_{int(v_sc):02d}.png"
+                    if spv.exists():
+                        sci = _I.open(spv).convert("RGB")
+                        bw_, bh_ = IMG_BOX[2] - IMG_BOX[0], IMG_BOX[3] - IMG_BOX[1]
+                        rr = max(bw_ / sci.width, bh_ / sci.height)
+                        sci = sci.resize((int(sci.width * rr), int(sci.height * rr)))
+                        l_, t_ = (sci.width - bw_) // 2, (sci.height - bh_) // 2
+                        bgv.paste(sci.crop((l_, t_, l_ + bw_, t_ + bh_)), (IMG_BOX[0], IMG_BOX[1]))
+                    outp = os.path.join("overlay_images", f"_preview_{sel_o}.mp4")
+                    os.makedirs("overlay_images", exist_ok=True)
+                    with st.spinner("구간 영상 만드는 중..."):
+                        OV.render_preview_video(OV.clean_list(rows_o), it_o.get("image_overlays"), it_o.get("shape_overlays"), bgv, float(v_t0), float(v_t1), outp)
+                    st.session_state["ovv_file"] = outp
+                except Exception as e:
+                    st.error(f"구간 영상 실패: {type(e).__name__}: {e}")
+            if st.session_state.get("ovv_file") and os.path.exists(st.session_state["ovv_file"]):
+                st.video(open(st.session_state["ovv_file"], "rb").read())
 
 with TL:
     _ext_panel('xl_', 1)
