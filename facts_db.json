@@ -51466,9 +51466,9 @@
     "verify_note": "Pizza",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "video_done",
+    "status": "scripted",
     "narration_original": "",
-    "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에는 997년이라는 날짜가 남아 있습니다. 이 문서는 당시 물건과 임대료를 기록한 문서였습니다. 그런데 여기에는 꽤 놀라운 내용이 등장합니다. 성탄절과 부활절마다 피자 열두 개씩을 내야 했다는 겁니다. 도대체 누구에게, 왜 피자를 냈던 걸까요? 당시 물레방앗간을 빌려 쓰던 사람들이 가에타의 주교에게 임대료로 낸 것이었습니다. 지금으로 치면 월세 대신 피자를 내는 셈이죠. 그런데 피자 열두 개가 임대료라니, 집주인 입장에서는 꽤 반가운 월세였을지도 모르겠습니다.",
+    "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에는 997년이라는 날짜가 남아 있습니다. 이 문서는 당시 물건과 임대료를 기록한 문서였습니다. 그런데 여기에는 꽤 놀라운 내용이 등장합니다. 성탄절과 부활절마다 피자 열두 개씩을 내야 했다는 겁니다. 도대체 누구에게, 왜 피자를 냈던 걸까요? 당시 물레방앗간을 빌려 쓰던 사람들이 가에타의 주교에게 임대료로 낸 것이었습니다. 지금으로 치면 임대료 대신 피자를 내는 셈이죠. 그런데 피자 열두 개가 임대료라니, 주교가 그 많은 피자를 어떻게 하려고 했던걸까요?",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
@@ -51478,32 +51478,9 @@
       "직접 검증한 대본 (외부 AI)"
     ],
     "cross_flags": [],
-    "highlights": [
-      {
-        "s": 1,
-        "text": "믿을까? *피자*"
-      },
-      {
-        "s": 3,
-        "text": "997년 *피자*"
-      },
-      {
-        "s": 6,
-        "text": "납부 목록에 *피자*"
-      }
-    ],
+    "highlights": [],
     "title_line1": "997년 문서부터",
     "title_line2": "피자가 등장한다고??",
-    "image_queries": [
-      "ancient parchment pizza illustration",
-      "Latin document",
-      "historic rent ledger paper",
-      "twelve pizza slices",
-      "pizza delivery box",
-      "medieval watermill",
-      "pizza on landlord table",
-      "house owner"
-    ],
     "scene_count": 8,
     "image_queries_done": [
       "ancient parchment pizza illustration",
@@ -51758,9 +51735,11 @@
       }
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0448_아르헨티나.srt",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0448_아르헨티나.mp4",
-    "status_v6": "video_done",
-    "redo_ts": 1793864805.2589285
+    "redo_ts": 1793865791.8048558,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
