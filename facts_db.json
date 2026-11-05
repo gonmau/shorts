@@ -55841,7 +55841,184 @@
       "fourth Thursday November",
       "Thanksgiving dinner tradition"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "image_queries_done": [
+      "November calendar page",
+      "marked Thanksgiving date",
+      "family Thanksgiving turkey",
+      "early November calendar",
+      "state map disagreement",
+      "different Thanksgiving dates",
+      "fourth Thursday November",
+      "Thanksgiving dinner tradition"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/agenda-calendar-woman-businesswoman-2923057/",
+        "id": 2923057
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Basti93",
+        "page": "https://pixabay.com/photos/meeting-calendar-saturday-weekend-273857/",
+        "id": 273857,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "HeartlandMom",
+        "page": "https://pixabay.com/photos/cranberries-thanksgiving-wine-salad-4658414/",
+        "id": 4658414
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/agenda-calendar-woman-businesswoman-2923057/",
+        "id": 2923057,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Mollyroselee",
+        "page": "https://pixabay.com/photos/state-of-florida-map-design-8629184/",
+        "id": 8629184
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Jean Leon Gerome Ferris",
+        "license": "Public domain",
+        "title": "The First Thanksgiving Jean Louis Gerome Ferris.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_First_Thanksgiving_Jean_Louis_Gerome_Ferris.png",
+        "id": "c:227219"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Jennie Augusta Brownscombe",
+        "license": "Public domain",
+        "title": "Thanksgiving-Brownscombe.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Thanksgiving-Brownscombe.jpg",
+        "id": "c:7076653"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/turkey-roast-meal-dish-cuisine-315079/",
+        "id": 315079
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2678,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a4a351cd2aa1",
+        "at": "2026-11-05 20:38",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2833,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "58a98bb18d2f",
+        "at": "2026-11-05 20:38",
+        "scene": 2,
+        "rejected_ids": [
+          273857,
+          "c:179877979"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2638,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bc9425f882cd",
+        "at": "2026-11-05 20:38",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2636,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9d9094ca378b",
+        "at": "2026-11-05 20:38",
+        "scene": 4,
+        "rejected_ids": [
+          2923057,
+          "c:128837425"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2533,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "df44b66a1192",
+        "at": "2026-11-05 20:38",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2613,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "51b569631ac6",
+        "at": "2026-11-05 20:38",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2318,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b0aa876e326c",
+        "at": "2026-11-05 20:38",
+        "scene": 7,
+        "rejected_ids": [
+          7298417,
+          8863338,
+          "c:192024005",
+          "c:227219",
+          "c:7076653"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.277,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c8605054ea38",
+        "at": "2026-11-05 20:38",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "스위스(스위스) 요리의 지역별 독특함",
