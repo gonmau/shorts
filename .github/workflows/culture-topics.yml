@@ -1,0 +1,74 @@
+name: culture-topics
+
+# 소재만 자동으로 채웁니다 (영상 제작·업로드는 안 함). 대기 소재(unverified+verified)가 40개 밑이면 20개씩, 최대 3회 보충
+on:
+  schedule:
+    - cron: "47 20 * * *"   # 한국시간 05:47 (정시는 밀려서 분을 어긋나게)
+  workflow_dispatch:
+
+concurrency:
+  group: culture-shorts-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  topics:
+    if: ${{ github.event_name != 'schedule' || vars.AUTO_TOPICS != 'off' }}   # 저장소 변수 AUTO_TOPICS=off 로 중지
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONUNBUFFERED: "1"
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      WEB_UI_URL: ${{ vars.WEB_UI_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: 소재 보충
+        run: |
+          BEFORE=$(python -c "import json,os;print(len(json.load(open('facts_db.json',encoding='utf-8'))) if os.path.exists('facts_db.json') else 0)")
+          for round in 1 2 3; do
+            PENDING=$(python - <<'PY'
+          import json, os
+          db = json.load(open('facts_db.json', encoding='utf-8')) if os.path.exists('facts_db.json') else []
+          print(sum(1 for f in db if f.get('status') in ('unverified', 'verified')))
+          PY
+          )
+            echo "대기 소재: $PENDING (회차 $round)"
+            [ "$PENDING" -ge 40 ] && break
+            python generate_culture_facts.py --count 20 || { echo "소재 보충 실패"; break; }
+          done
+          python notify_topics.py --before "$BEFORE" --ch ko || true
+
+      - name: facts_db.json 커밋
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add facts_db.json
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "chore: update facts_db.json (topics) [skip ci]"
+          B="${GITHUB_REF_NAME:-main}"
+          cp facts_db.json /tmp/mine_db.json
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$B" || { sleep 3; continue; }
+            if git merge-base --is-ancestor "origin/$B" HEAD; then git push && exit 0; fi
+            DB_CHANGED=1
+            git diff --quiet "$(git merge-base HEAD "origin/$B")" "origin/$B" -- facts_db.json && DB_CHANGED=0
+            git show "origin/$B:facts_db.json" > /tmp/theirs_db.json 2>/dev/null || DB_CHANGED=0
+            git pull --rebase -X theirs origin "$B" || { git rebase --abort 2>/dev/null || true; sleep 3; continue; }
+            if [ "$DB_CHANGED" = 1 ]; then
+              python merge_remote_db.py /tmp/theirs_db.json /tmp/mine_db.json || true
+              git add facts_db.json
+              git diff --cached --quiet || git commit -q -m "chore: merge facts_db.json [skip ci]"
+            fi
+            git push && exit 0
+            sleep 3
+          done
+          echo "push 실패"; exit 1
