@@ -55422,7 +55422,37 @@
     "verify_note": "Hygiene in Christianity",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:23.439144+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "기도 전에 손을 씻지 않으면 교회 입구가 닫힌다고 들으셨나요? 탄자니아에 있는 코프틱 정교회·에티오피아 정교회·에리트레아 정교회 같은 일부 교파는 예배 전 청결을 의무화합니다. 신도들은 입구에 놓인 공동 세면대에서 손과 얼굴을 씻고, 남성은 전통적으로 포경을 마친 뒤에야 들어갑니다. 그런데 외국인 신도가 처음 들어오려 할 때, 모두가 동시에 물을 틀어 손을 씻으며 웃음이 터지는 모습을 볼 수 있습니다. 이 규칙은 해당 교파들의 전통적인 예배 방식에만 적용되는 것이니, 전 세계 모든 교회에 같은 규정이 있는 것은 아닙니다. 결국, 청결을 위한 작은 의식이 예배의 문을 여는 열쇠가 됩니다.",
+    "title_line1": "탄자니아 교회 입구",
+    "title_line2": "손 안 씻으면 문 닫힌다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*문* 닫힘"
+      },
+      {
+        "s": 3,
+        "text": "손·얼굴 *씻기*"
+      },
+      {
+        "s": 4,
+        "text": "동시 물 틀며 *웃음*"
+      },
+      {
+        "s": 6,
+        "text": "청결이 *열쇠*"
+      }
+    ],
+    "image_queries": [
+      "closed church door Tanzania",
+      "Coptic Orthodox church interior Tanzania",
+      "hand face washing basin Tanzania",
+      "group washing hands laughing Tanzania",
+      "traditional church ritual Tanzania",
+      "clean hands open church"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "중국( China )의 얇은 죽(Congee) 경험",
