@@ -416,6 +416,12 @@ def _ready_all():
         if f.get("status") in ("scripted", "tts_done") or (
                 f.get("status") in ("unverified", "verified") and len(str(f.get("narration") or "").strip()) >= 60):
             out.append(i)
+    if redo.strip() and not redo_script:            # redo 칸에 넣은 번호(이미 영상이 있는 소재)도 음성·렌더링 목록에 포함
+        _dbr = _ld()
+        for _t in re.findall(r"\d+", redo.replace("!", "")):
+            if int(_t) < len(_dbr) and int(_t) not in out and _dbr[int(_t)].get("narration"):
+                out.append(int(_t))
+        out.sort()
     return out
 
 def _targets():
@@ -618,13 +624,13 @@ with T4b:
     dv = _ld()
     allv = _ready_all()
     st.caption("대본이 끝난 소재의 음성만 따로 만듭니다 (영상은 안 만듦). 목소리/속도/엔진은 위 '🎙 음성 · 자막 설정' 패널에서 정합니다. 대본을 고치면 음성은 지워지니 대본 확정 후에 만드세요.")
-    pickv = st.multiselect("음성 만들 소재", allv, default=allv[:int(count)], key=f"vo_pick_{int(start)}_{int(count)}_{len(allv)}",
+    pickv = st.multiselect("음성 만들 소재", allv, default=([int(x) for x in re.findall(r"\d+", redo.replace("!", "")) if int(x) in allv] if (redo.strip() and not redo_script) else allv[:int(count)]), key=f"vo_pick_{redo}_{int(start)}_{int(count)}_{len(allv)}",
                            format_func=lambda i: f"{i} {dv[i].get('country', '')} - {dv[i].get('topic', '')}" + ("  [음성 있음]" if _audio_ok(dv[i]) else ""))
     skip_done = st.checkbox("이미 만든 음성은 건너뛰기", True, key="vo_skip", help="끄면 선택한 소재의 음성을 현재 목소리/속도로 다시 만듭니다")
     if st.button("음성 만들기", key="vo_go", disabled=not pickv):
         steps = list(pre)
         for i in pickv:
-            if skip_done and _audio_ok(dv[i]):
+            if skip_done and _audio_ok(dv[i]) and not (redo.strip() and not redo_script and str(i) in re.findall(r"\d+", redo)):
                 continue
             steps.append(S("generate_tts.py", "--index", str(i)))
         chain(steps)
