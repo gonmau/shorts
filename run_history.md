@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 23:39:23 (KST) · 기록 1052건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 23:42:30 (KST) · 기록 1053건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -30,7 +30,7 @@
 | upload_to_youtube | 12 | 0 | 8분 52초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 50 | 0 | 0초 |
+| 코드업데이트 | 51 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -38,6 +38,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:41 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 23:39 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 496 | ✅ | 1초 |  |
 | 23:39 | PC | build_video | build_video.py --index 496 --channel gonmauY --handle @gonmauY | ✅ | 14분 14초 |  |
 | 23:24 | PC | generate_script | generate_script.py --extras-only --index 496 | ✅ | 1초 |  |
