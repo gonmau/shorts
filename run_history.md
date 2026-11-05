@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 16:44:07 (KST) · 기록 963건 · 소재 532개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 16:54:17 (KST) · 기록 969건 · 소재 532개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,9 +9,9 @@
 | -c | 38 | 0 | 17분 8초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 44 | 0 | 6초 |
+| apply_review | 45 | 0 | 7초 |
 | approve | 10 | 0 | 1초 |
-| build_video | 41 | 0 | 7시간 26분 |
+| build_video | 42 | 0 | 7시간 33분 |
 | check_uploads | 23 | 0 | 2분 19초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -19,12 +19,12 @@
 | export_review | 16 | 0 | 1초 |
 | fetch_images | 114 | 3 | 1시간 53분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
-| generate_script | 112 | 0 | 1시간 6분 |
+| generate_script | 113 | 0 | 1시간 6분 |
 | generate_tts | 46 | 0 | 20분 3초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 8 | 0 | 28초 |
-| promote_ready | 44 | 0 | 6초 |
-| redo_videos | 10 | 0 | 2초 |
+| make_thumbnail | 9 | 0 | 28초 |
+| promote_ready | 45 | 0 | 6초 |
+| redo_videos | 11 | 0 | 2초 |
 | resync_meta | 3 | 0 | 38분 5초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 10 | 0 | 8분 8초 |
@@ -38,6 +38,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:54 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 448 | ✅ | 0초 |  |
+| 16:54 | PC | build_video | build_video.py --index 448 --channel gonmauY --handle @gonmauY | ✅ | 7분 21초 |  |
+| 16:46 | PC | generate_script | generate_script.py --extras-only --index 448 | ✅ | 1초 |  |
+| 16:46 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 16:46 | PC | redo_videos | redo_videos.py --indexes 448 | ✅ | 0초 |  |
+| 16:46 | PC | promote_ready | promote_ready.py --start 448 | ✅ | 0초 |  |
 | 16:40 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 16:33 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 448 | ✅ | 1초 |  |
 | 16:33 | PC | build_video | build_video.py --index 448 --channel gonmauY --handle @gonmauY | ✅ | 6분 56초 |  |
