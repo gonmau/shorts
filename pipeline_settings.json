@@ -2,7 +2,7 @@
  "voice": "M1",
  "rate": 5,
  "edge": "ko-KR-InJoonNeural",
- "caption": "highlight",
+ "caption": "script",
  "engine": "auto",
  "scenes": 8,
  "target_sec": 40,
