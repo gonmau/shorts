@@ -56541,7 +56541,7 @@
         "start": 47.3,
         "dur": 4.0,
         "x": 66.0,
-        "y": 47.0,
+        "y": 50.0,
         "w": 30.0,
         "h": 6.0,
         "angle": 0.0,
@@ -56566,7 +56566,11 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0496_태국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0496_태국.mp4",
     "status_v6": "video_done",
-    "redo_ts": 1793891054.958282
+    "redo_ts": 1793892088.260271,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
