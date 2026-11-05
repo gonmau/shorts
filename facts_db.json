@@ -51502,7 +51502,7 @@
       "pizza delivery box",
       "medieval watermill",
       "pizza on landlord table",
-      "happy landlord with pizza"
+      "집주인"
     ],
     "scene_count": 8,
     "image_queries_done": [
@@ -51513,7 +51513,7 @@
       "pizza delivery box",
       "medieval watermill",
       "pizza on landlord table",
-      "happy landlord with pizza"
+      "집주인"
     ],
     "image_credits": [
       {
@@ -51574,11 +51574,12 @@
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "igorovsyannykov",
-        "page": "https://pixabay.com/photos/pizza-italian-homemade-cheese-3007395/",
-        "id": 3007395,
-        "type": "photo"
+        "source": "commons",
+        "user": "Petar Milošević",
+        "license": "CC BY-SA 4.0",
+        "title": "Vegetarian Pizza.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg",
+        "id": "c:106092414"
       }
     ],
     "image_source": "pixabay",
@@ -51681,17 +51682,22 @@
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.2201,
+        "verdict": "bad",
+        "clip": 0.201,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6ff51db003ca",
-        "at": "2026-11-05 16:08",
+        "sig": "01ae4b067b83",
+        "at": "2026-11-05 16:14",
         "scene": 8,
         "rejected_ids": [
           3007395,
-          "c:154481598"
+          3337032,
+          5242150,
+          "c:106092414",
+          "c:108799064",
+          "c:154481598",
+          "c:372337"
         ]
       }
     ],
