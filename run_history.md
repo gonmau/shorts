@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 22:25:41 (KST) · 기록 1040건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 22:25:55 (KST) · 기록 1043건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,16 +10,16 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 59 | 0 | 10초 |
-| approve | 14 | 0 | 2초 |
+| approve | 15 | 0 | 3초 |
 | build_video | 44 | 0 | 7시간 51분 |
 | check_uploads | 23 | 0 | 2분 19초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 20 | 0 | 3초 |
+| export_review | 21 | 0 | 3초 |
 | fetch_images | 116 | 3 | 1시간 55분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
-| generate_script | 121 | 0 | 1시간 7분 |
+| generate_script | 122 | 0 | 1시간 7분 |
 | generate_tts | 51 | 0 | 22분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 13 | 0 | 31초 |
@@ -38,7 +38,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:25 | PC | generate_script | generate_script.py --limit 1 --start 496 | ✅ | 6초 |  |
+| 22:25 | PC | export_review | export_review.py --limit 1 --start 496 | ✅ | 0초 |  |
 | 22:25 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 22:25 | PC | approve | approve.py --limit 1 --start 496 | ✅ | 0초 |  |
 | 22:25 | PC | promote_ready | promote_ready.py --start 496 | ✅ | 0초 |  |
 | 22:25 | PC | resync_meta | resync_meta.py --indexes 496 | ✅ | 8초 |  |
 | 21:57 | PC | upload_to_youtube | upload_to_youtube.py --indexes 491 --daily-max 20 | ✅ | 23초 |  |
