@@ -51695,7 +51695,11 @@
           "c:154481598"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0448_아르헨티나_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
