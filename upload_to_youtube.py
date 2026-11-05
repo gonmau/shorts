@@ -108,12 +108,23 @@ def main():
         item["youtube_id"] = res["id"]
         if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true"):   # 썸네일 자동 설정 (토큰에 youtube.force-ssl 권한이 있어야 함)
             th = Path("thumbnails") / (Path(path).stem + ".png")
-            if th.exists():
+            if not th.exists():
+                print(f"  썸네일 파일 없음(건너뜀): {th}  ← 먼저 make_thumbnail.py 실행 필요")
+            else:
                 try:
-                    yt.thumbnails().set(videoId=res["id"], media_body=MediaFileUpload(str(th), mimetype="image/png")).execute()
-                    print(f"  썸네일 설정: {th.name}")
+                    import io
+                    from PIL import Image
+                    im = Image.open(th).convert("RGB")
+                    buf = io.BytesIO(); q = 92
+                    while True:                       # YouTube 한도 2MB 이하 JPEG로 변환
+                        buf.seek(0); buf.truncate(); im.save(buf, "JPEG", quality=q)
+                        if buf.tell() < 1_900_000 or q <= 50: break
+                        q -= 10
+                    tj = th.with_suffix(".jpg"); tj.write_bytes(buf.getvalue())
+                    yt.thumbnails().set(videoId=res["id"], media_body=MediaFileUpload(str(tj), mimetype="image/jpeg")).execute()
+                    print(f"  썸네일 설정: {tj.name} ({tj.stat().st_size//1024}KB)")
                 except Exception as e:
-                    print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:200]}")
+                    print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:300]}")
         item["uploaded_at"] = datetime.now(kst).isoformat()
         if slot:
             item["publish_at"] = slot
