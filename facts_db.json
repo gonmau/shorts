@@ -56415,10 +56415,6 @@
         "rejected_ids": []
       }
     ],
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "overlays": [
       {
         "text": "태국 고추의 매운맛?",
@@ -56503,20 +56499,6 @@
         "bold": true,
         "effect": "팝",
         "bg": "#FFFFFF"
-      },
-      {
-        "text": "2017년 세계 50대 음식에 7개 선정!",
-        "start": 0.0,
-        "dur": 2.5,
-        "pos": "직접",
-        "x": 50.0,
-        "y": 50.0,
-        "size": 80,
-        "color": "#FF3B30",
-        "stroke": "#000000",
-        "bold": true,
-        "effect": "깜빡임",
-        "bg": "#FFFFFF"
       }
     ],
     "image_overlays": [
@@ -56524,9 +56506,9 @@
         "image": "overlay_images/496_1.png",
         "start": 35.4,
         "dur": 20.0,
-        "x": 70.0,
-        "y": 52.0,
-        "width": 50.0,
+        "x": 65.7,
+        "y": 45.1,
+        "width": 34.8,
         "opacity": 0.9,
         "rotate": 0.0,
         "border": "#FFFFFF",
@@ -56545,10 +56527,10 @@
         "type": "사각형",
         "start": 42.9,
         "dur": 4.0,
-        "x": 67.0,
-        "y": 48.0,
-        "w": 40.0,
-        "h": 12.0,
+        "x": 66.0,
+        "y": 43.0,
+        "w": 30.0,
+        "h": 9.0,
         "angle": 0.0,
         "color": "#2F80FF",
         "thick": 4,
@@ -56558,9 +56540,9 @@
         "type": "사각형",
         "start": 47.3,
         "dur": 4.0,
-        "x": 67.0,
-        "y": 58.0,
-        "w": 40.0,
+        "x": 66.0,
+        "y": 47.0,
+        "w": 30.0,
         "h": 6.0,
         "angle": 0.0,
         "color": "#2F80FF",
@@ -56571,9 +56553,9 @@
         "type": "사각형",
         "start": 51.5,
         "dur": 4.0,
-        "x": 67.0,
-        "y": 66.0,
-        "w": 40.0,
+        "x": 66.0,
+        "y": 55.0,
+        "w": 30.0,
         "h": 6.0,
         "angle": 0.0,
         "color": "#2F80FF",
@@ -56583,7 +56565,8 @@
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0496_태국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0496_태국.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "redo_ts": 1793891054.958282
   },
   {
     "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
