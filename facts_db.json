@@ -56251,7 +56251,174 @@
       "Thai fried rice ranking",
       "Thai flavor harmony"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "image_queries_done": [
+      "Thai tom soup broth",
+      "Thai spicy yam salad",
+      "Thai som tam preparation",
+      "Thai curry ingredients",
+      "Thai dishes ranking",
+      "Thai Tom Yum ranking",
+      "Thai fried rice ranking",
+      "Thai flavor harmony"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "sharonang",
+        "page": "https://pixabay.com/photos/thai-curry-green-curry-curry-chili-1736806/",
+        "id": 1736806
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "41330",
+        "page": "https://pixabay.com/photos/somtum-dish-thailand-sausage-meal-1549340/",
+        "id": 1549340
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/som-tam-thai-green-papaya-salad-meal-7443259/",
+        "id": 7443259
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Huahom",
+        "page": "https://pixabay.com/photos/green-curry-thai-food-2457236/",
+        "id": 2457236
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Syced",
+        "license": "CC0",
+        "title": "Dishes at tiny Thai restaurant in Shirokane.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dishes_at_tiny_Thai_restaurant_in_Shirokane.jpg",
+        "id": "c:153163299"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "41330",
+        "page": "https://pixabay.com/photos/food-thai-soup-with-shrim-1549252/",
+        "id": 1549252
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ducken99",
+        "page": "https://pixabay.com/photos/fried-rice-thai-food-thai-cuisine-3023040/",
+        "id": 3023040
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Nacho Pintos from Barcelona",
+        "license": "CC BY 2.0",
+        "title": "Japon - thai (6026081451).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Japon_-_thai_(6026081451).jpg",
+        "id": "c:87547932"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3048,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "94e6cad25899",
+        "at": "2026-11-05 22:27",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2785,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "da5409ac0735",
+        "at": "2026-11-05 22:27",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2818,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7a3bb268bf83",
+        "at": "2026-11-05 22:27",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2436,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d387ec2b93e4",
+        "at": "2026-11-05 22:27",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.274,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "82b2332959f2",
+        "at": "2026-11-05 22:27",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3393,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "456c9ec7bc4a",
+        "at": "2026-11-05 22:27",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3476,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fe55fe634514",
+        "at": "2026-11-05 22:27",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2563,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8d7d334ae0a3",
+        "at": "2026-11-05 22:27",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
