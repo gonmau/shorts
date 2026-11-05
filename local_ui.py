@@ -1881,10 +1881,67 @@ with T5c:
                     sc_img = sc_img.resize((int(sc_img.width * r), int(sc_img.height * r)))
                     l, tp_ = (sc_img.width - bw) // 2, (sc_img.height - bh) // 2
                     bgi.paste(sc_img.crop((l, tp_, l + bw, tp_ + bh)), (IMG_BOX[0], IMG_BOX[1]))
-                shown = OV.preview(OV.clean_list(rows_o), float(t_prev), bgi, show_grid=show_gr)
+                shown = OV.preview(OV.clean_list(rows_o), float(t_prev), bgi, show_grid=show_gr, images=it_o.get("image_overlays"))
                 st.image(shown, caption=f"{t_prev}초 시점 (효과는 최종 모습으로 표시, 자막은 안 보임)", width=480)
             except Exception as e:
                 st.error(f"미리보기 실패: {type(e).__name__}: {e}")
+
+        # ---------------- 이미지 얹기 ----------------
+        with st.expander("🖼 이미지 얹기 (근거 사진·캡처를 배경 장면 위에 추가, 배경은 그대로)", expanded=bool(it_o.get("image_overlays"))):
+            st.caption("배경 이미지를 바꾸지 않고 그 위에 사진/캡처를 추가로 올립니다. 시작·지속(초), 위치(x,y %), 크기(화면 가로 대비 %), 효과를 정합니다. "
+                       "이미지는 이 PC의 overlay_images 폴더에 저장되며, 이 기능으로 만든 영상은 PC에서 제작해야 합니다(GitHub 서버에는 이미지가 없음). 위 '미리보기'에도 같이 나옵니다.")
+            os.makedirs("overlay_images", exist_ok=True)
+            up_f = st.file_uploader("이미지 올리기 (png/jpg/webp, 여러 장 가능)", type=["png", "jpg", "jpeg", "webp"], accept_multiple_files=True, key=f"ovi_up_{sel_o}")
+            if up_f and st.button("업로드한 이미지를 목록에 추가", key=f"ovi_add_{sel_o}"):
+                from PIL import Image as _Ii
+                db_o = _ld()
+                cur = list(db_o[sel_o].get("image_overlays") or [])
+                for k_, f_ in enumerate(up_f):
+                    n_ = len([x for x in os.listdir("overlay_images") if x.startswith(f"{sel_o}_")]) + 1
+                    pth = f"overlay_images/{sel_o}_{n_}.png"
+                    _Ii.open(f_).convert("RGBA").save(pth)
+                    cur.append({"image": pth, "start": round(1.0 + 3.0 * len(cur), 1), "dur": 3.0, "x": 50, "y": 45, "width": 60, "opacity": 1.0,
+                                "rotate": 0, "border": "#FFFFFF", "bw": 6, "radius": 24, "shadow": True, "effect": "팝"})
+                db_o[sel_o]["image_overlays"] = OV.clean_images(cur)
+                _sd(db_o)
+                st.rerun()
+            _io = OV.clean_images(it_o.get("image_overlays") or [])
+            icols = ["image", "start", "dur", "x", "y", "width", "opacity", "rotate", "border", "bw", "radius", "shadow", "effect"]
+            idf = pd.DataFrame(_io, columns=icols)
+            if idf.empty:
+                st.info("올린 이미지가 없습니다. 위에서 이미지를 올리고 '목록에 추가'를 누르세요.")
+            else:
+                idf["border"] = idf["border"].map(lambda v: _to_name(v) or "없음")
+                ied = st.data_editor(
+                    idf, num_rows="dynamic", key=f"ovi_ed_{sel_o}_{len(_io)}", use_container_width=True, hide_index=True,
+                    column_config={
+                        "image": st.column_config.TextColumn("이미지 파일", disabled=True),
+                        "start": st.column_config.NumberColumn("시작(초)", min_value=0.0, step=0.1),
+                        "dur": st.column_config.NumberColumn("지속(초)", min_value=0.2, step=0.1),
+                        "x": st.column_config.NumberColumn("x(%)", min_value=0, max_value=100, step=1, help="이미지 중심의 가로 위치"),
+                        "y": st.column_config.NumberColumn("y(%)", min_value=0, max_value=100, step=1, help="이미지 중심의 세로 위치 (이미지 영역은 약 23~76%)"),
+                        "width": st.column_config.NumberColumn("크기(가로 %)", min_value=5, max_value=100, step=5, help="화면 가로 대비 이미지 너비. 60이면 화면의 60%"),
+                        "opacity": st.column_config.NumberColumn("투명도", min_value=0.1, max_value=1.0, step=0.1, help="1.0=불투명"),
+                        "rotate": st.column_config.NumberColumn("기울기(도)", min_value=-45, max_value=45, step=1),
+                        "border": st.column_config.SelectboxColumn("테두리색", options=_opts_o),
+                        "bw": st.column_config.NumberColumn("테두리 굵기", min_value=0, max_value=30, step=1),
+                        "radius": st.column_config.NumberColumn("모서리 둥글기", min_value=0, max_value=200, step=4),
+                        "shadow": st.column_config.CheckboxColumn("그림자"),
+                        "effect": st.column_config.SelectboxColumn("효과", options=OV.IMG_EFFECTS, help="팝/줌인(천천히 커짐)/흔들림/슬라이드/페이드/깜빡임"),
+                    })
+                irows = [{k: (None if (isinstance(v, float) and v != v) else v) for k, v in r.items()} for r in ied.to_dict("records")]
+                for _r in irows:
+                    _r["border"] = _to_hex(_r.get("border"))
+                if st.button("이미지 설정 저장", key=f"ovi_save_{sel_o}", type="primary"):
+                    db_o = _ld()
+                    clean_i = OV.clean_images(irows)
+                    if clean_i:
+                        db_o[sel_o]["image_overlays"] = clean_i
+                    else:
+                        db_o[sel_o].pop("image_overlays", None)
+                    _sd(db_o)
+                    st.success(f"이미지 {len(clean_i)}개 저장. " + ("이미 만든 영상이면 redo에 번호를 넣고 5단계를 하세요." if it_o.get("video_path_v6") else "다음 렌더링에 반영됩니다."))
+                    st.rerun()
 
 with TL:
     _ext_panel('xl_', 1)

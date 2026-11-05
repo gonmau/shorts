@@ -740,6 +740,10 @@ def build_one(idx, item):
 
     # 직접 넣은 문구(overlays): UI '문구 넣기' 탭에서 입력한 시점/위치/효과대로 자막 위에 합성
     overlay_clips = overlays.make_clips(item.get("overlays"), audio_duration)
+    _img_clips = overlays.make_image_clips(item.get("image_overlays"), audio_duration)   # 이미지 얹기: 문구보다 아래층
+    if _img_clips:
+        print(f"이미지 얹기 {len(_img_clips)}개 적용")
+    overlay_clips = _img_clips + overlay_clips
     if overlay_clips:
         print(f"문구 오버레이 {len(item.get('overlays') or [])}개 적용")
 
