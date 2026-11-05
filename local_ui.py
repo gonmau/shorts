@@ -2049,6 +2049,7 @@ with T5c:
                     pk_t = g2.number_input("확인할 시점(초)", 0.0, 600.0, float(cur["start"]) + 0.5, 0.5, key=f"pk_time_{sel_o}_{tgt[0]}{tgt[1]}",
                                            help="이 시점에 보이는 화면 위에서 위치를 잡습니다. 다른 이미지 위에 도형을 얹을 땐 둘 다 보이는 시점으로")
                     pk_sc = g3.number_input("배경 장면", 1, 6, 1, key=f"pk_sc_{sel_o}")
+                    pk_w = st.slider("화면 크기(px)", 300, 900, 560, 20, key="pk_width", help="크게 하면 더 정확하게 잡을 수 있습니다")
                     try:
                         import build_video as BV
                         from PIL import Image as _I, ImageDraw as _ID
@@ -2083,7 +2084,7 @@ with T5c:
                             cd_, cx_, cy_ = rr_ if rr_ else (None, 0, 0)
                         if cd_ is not None:
                             _ID.Draw(base_img).rectangle((cx_ - cd_.width / 2, cy_ - cd_.height / 2, cx_ + cd_.width / 2, cy_ + cd_.height / 2), outline=(0, 160, 255), width=6)
-                        val = _sic(base_img, width=480, click_and_drag=True, key=f"pk_img_{sel_o}_{tgt[0]}{tgt[1]}_{int(pk_sc)}")
+                        val = _sic(base_img, width=int(pk_w), click_and_drag=True, key=f"pk_img_{sel_o}_{tgt[0]}{tgt[1]}_{int(pk_sc)}")
                     except Exception as e:
                         val = None
                         st.error(f"화면 만들기 실패: {type(e).__name__}: {e}")
@@ -2104,6 +2105,13 @@ with T5c:
                             else:
                                 new["width"] = round(abs(x2 - x1) / 1080 * 100, 1)
                         st.write("선택한 값: " + ", ".join(f"{k}={v}" for k, v in new.items()) + ("  (드래그: 크기 포함)" if drag else "  (클릭: 위치만)"))
+                        try:   # 적용 후 모습 미리보기 (저장 전)
+                            _pv_s, _pv_i = [dict(x) for x in shp_l], [dict(x) for x in img_l]
+                            (_pv_s if tgt[0] == "도형" else _pv_i)[tgt[1]].update(new)
+                            _after = OV.preview(OV.clean_list(it_o.get("overlays") or []), float(pk_t), bgp, show_grid=False, images=_pv_i, shapes=_pv_s)
+                            st.image(_after, caption="적용 후 모습 (아직 저장 전)", width=int(pk_w))
+                        except Exception as e:
+                            st.caption(f"미리보기 실패: {e}")
                         if st.button("이 값으로 적용·저장", key=f"pk_apply_{sel_o}", type="primary"):
                             db_o = _ld()
                             key_ = "shape_overlays" if tgt[0] == "도형" else "image_overlays"
