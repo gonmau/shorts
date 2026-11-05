@@ -57140,7 +57140,186 @@
       "Hawaii annexation 1898",
       "Alaska ice fields"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "image_queries_done": [
+      "Alaska Russia purchase",
+      "720 million dollars transaction",
+      "old US currency",
+      "Korean won bills",
+      "Alaska resource wealth",
+      "Hawaii islands",
+      "Hawaii annexation 1898",
+      "Alaska ice fields"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "chrisstenger",
+        "page": "https://pixabay.com/photos/autumn-mountain-meadow-nature-7201026/",
+        "id": 7201026,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/dollars-currency-money-us-dollars-499481/",
+        "id": 499481,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Treasury, Bureau Engraving and Printing",
+        "license": "Public domain",
+        "title": "1874 US Currency Fractional 10 Cent Note.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1874_US_Currency_Fractional_10_Cent_Note.jpg",
+        "id": "c:10971679"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "manseok_Kim",
+        "page": "https://pixabay.com/photos/money-don-10000-won-1308823/",
+        "id": 1308823
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "tfrdic",
+        "page": "https://pixabay.com/photos/denali-alaska-mountains-pic-summit-9635666/",
+        "id": 9635666,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/hawaii-islands-island-chain-63111/",
+        "id": 63111
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "US Marines at Annexation of Hawaii (PP-35-8-024).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:US_Marines_at_Annexation_of_Hawaii_(PP-35-8-024).jpg",
+        "id": "c:40458321"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "susscrofa",
+        "page": "https://pixabay.com/photos/alaska-glacier-ice-cream-4754949/",
+        "id": 4754949
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2422,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "eb890aaa666b",
+        "at": "2026-11-06 08:52",
+        "scene": 1,
+        "rejected_ids": [
+          4424657,
+          7201026,
+          "c:3815513",
+          "c:4246381"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2894,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "63c6aa8d3c07",
+        "at": "2026-11-06 08:52",
+        "scene": 2,
+        "rejected_ids": [
+          499481,
+          "c:15795309"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3311,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d218227b1b7d",
+        "at": "2026-11-06 08:52",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3832,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "86f90bccf8df",
+        "at": "2026-11-06 08:52",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2269,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "778bf985450a",
+        "at": "2026-11-06 08:52",
+        "scene": 5,
+        "rejected_ids": [
+          4424657,
+          9635666,
+          "c:15795309",
+          "c:621811"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3481,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ef3e86e3804c",
+        "at": "2026-11-06 08:52",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2292,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dfa0b3165739",
+        "at": "2026-11-06 08:52",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3163,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4dc45d6f4b29",
+        "at": "2026-11-06 08:52",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "덴마크의 사탕받기 전통",
