@@ -106,7 +106,7 @@ def main():
         if not vp or not Path(vp).exists():
             continue
         out = OUT_DIR / f"{Path(vp).stem}.png"
-        if out.exists() and not args.force:
+        if out.exists() and not args.force and not only:   # --only 로 지정한 소재는 제목을 고쳤을 수 있어 항상 다시 만듦
             continue
         if args.style == "classic":
             im = make(idx, item, args.channel, args.handle, args.avatar)
