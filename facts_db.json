@@ -15467,7 +15467,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -15562,7 +15562,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "태국 삼색 천 신앙(Three-color fabric belief)의 나무 장식",
@@ -22919,7 +22920,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -23040,7 +23041,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "Slightly Stoopid, 고등학생 시절에 이미 레코드사와 계약",
@@ -50870,7 +50872,7 @@
     "verify_note": "Chan Buddhism",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:59.110261+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "젠, 찬, 선. 다른 말처럼 들리지만 같은 글자를 읽는 방식입니다. 일본에서는 젠, 중국에서는 찬, 한국에서는 선이라고 하죠. 중국에서 발전한 불교 전통이 퍼지며 이름도 달라진 겁니다. 더 거슬러 가면 명상과 관련된 산스크리트어 디야나와 연결됩니다. 그렇다고 모든 명상이 선에서 시작된 건 아닙니다. 명상 수행은 그전에도 있었어요. 선은 그 위에서 발전한 하나의 흐름입니다. 짧은 이름 하나에 인도와 중국, 동아시아를 건넌 과정이 들어 있는 거죠. 저는 명상법보다 이 이름의 이동이 먼저 궁금해집니다.",
     "fact_verifiability": "user",
@@ -50914,7 +50916,8 @@
       "Name journey across Asia",
       "Name migration curiosity"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(크로아티아 / JP,CN,IN)"
   },
   {
     "topic": "나바라트리(Navaratri) – 캐나다에서의 9밤 축제",
@@ -51466,7 +51469,7 @@
     "verify_note": "Pizza",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "천 년 전 문서에도 피자가 등장한다면 믿어지시나요? 이탈리아 가에타의 라틴어 문서에 이름이 남아 있습니다. 시기는 997년입니다. 요리책이 아니라 무엇을 바쳐야 하는지 적은 기록이죠. 성탄절과 부활절에 피자 열두 개씩을 내도록 했습니다. 오래된 음식 이름이 납부 목록에서 발견된 겁니다. 다만 지금의 치즈 피자를 떠올리면 너무 앞서갑니다. 그 기록만으로 당시의 모양과 재료를 알 수는 없습니다. 이름이 같다고 요리법까지 같았다는 뜻은 아니죠. 또 기록이 남은 날이 음식이 처음 생긴 날도 아닙니다. 그전에 사람들이 먹고 불렀을 가능성은 남습니다. 이름의 기록과 음식의 탄생을 따로 봐야 하는 이유입니다. 저는 요리법보다 납부 문서에 남았다는 점이 재미있습니다. 누군가에게 피자는 추억보다 내야 하는 몫이었던 거죠. 오늘은 배달을 기다리지만 그때는 받아야 할 피자를 셌을지도 모릅니다.",
     "fact_verifiability": "user",
@@ -51508,7 +51511,8 @@
       "pizza as debt",
       "old pizza delivery"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(아르헨티나 / IT)"
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
@@ -51704,7 +51708,7 @@
     "verify_note": "Igue festival",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "축제인데 왕을 만나러 가면 안 되는 시간이 있습니다. 나이지리아 베닌 왕국의 이구 의식 이야기입니다. 베닌 왕국은 오늘날의 베냉공화국과 구별해야 하죠. 이곳의 전통 통치자는 오바라고 불립니다. 이구에는 왕과 공동체의 안녕을 비는 의식이 있습니다. 조상에게 감사하고 새해를 준비하는 의미도 담기죠. 그런데 왕의 의식에는 만남을 제한하는 규칙이 있습니다. 외부인은 왕과 대면할 수 없다고 설명됩니다. 여기서 외부인을 외국 여권 소지자만으로 보면 곤란합니다. 현지 공동체에 속하지 않은 사람이라는 맥락이거든요. 축제를 즐기는 일과 왕의 의식에 참여하는 일은 다릅니다. 실제로 축제에는 외부 방문객도 찾아옵니다. 모두를 내쫓는 행사라고 이해하면 정반대가 되는 거죠. 공개적인 잔치와 제한된 의식이 한 축제 안에 있는 겁니다. 어디까지 볼 수 있느냐도 행사마다 달라지는 셈이죠. 축제에 초대받았다고 모든 문이 열리는 건 아닙니다.",
     "fact_verifiability": "user",
@@ -51746,7 +51750,8 @@
       "Public feast contrast",
       "Invitation limited access"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(남아프리카공화국 / NG,BJ)"
   },
   {
     "topic": "탄생 순간에만 존재한 보이지 않는 네덜란드 영토",
@@ -52439,7 +52444,7 @@
     "verify_note": "Onam",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:18.523211+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration_original": "",
     "narration": "해마다 돌아오는 왕을 맞으려고 꽃을 깐다면요? 인도 케랄라의 수확 축제 오남 이야기입니다. 전설 속 왕 마하발리가 백성을 찾아온다고 믿죠. 사람들이 만드는 꽃 장식은 그 귀환을 환영합니다. 푸칼람이라는 꽃무늬를 바닥에 펼쳐놓는 겁니다. 꽃을 모아 색과 모양을 맞추는 손길이 분주해집니다. 그리고 기다려지는 또 하나는 사디아입니다. 바나나 잎 위에 여러 음식을 차려 먹는 잔치죠. 쌀밥과 채소 요리, 달콤한 후식까지 이어집니다. 지역에 따라 음식의 종류와 조합도 달라집니다. 축제 준비와 식사에 가족들이 함께 참여하기도 합니다. 왕을 맞는 전설이 사람들을 모으는 명절이 된 거예요. 저는 왕의 보물보다 꽃과 밥상이 먼저 보인다는 점이 좋습니다. 반가운 손님을 맞을 때의 마음과 닮아 있으니까요. 왕의 귀환은 전설이지만 함께 준비하는 식탁은 현실입니다. 돌아온다는 이야기가 남아 있는 사람들을 다시 만나게 합니다.",
     "fact_verifiability": "user",
@@ -52489,7 +52494,8 @@
       "realistic feast",
       "reunion through story"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "reject_reason": "나라와 주제 불일치(스위스 / IN)"
   },
   {
     "topic": "탄자니아( Tanzania )에서의 기도 전 청결 규칙",
@@ -52871,7 +52877,7 @@
     "verify_note": "Etiquette in Japan",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "일본의 고개 숙이는 인사는 처음부터 모두의 예절이었을까요? 오늘날에는 만남과 감사, 사과에 두루 쓰입니다. 하지만 지금의 모습이 그대로 이어진 건 아닙니다. 귀족과 무사 계층의 예절을 거쳐 널리 퍼졌죠. 시대에 따라 쓰임과 형식도 달라졌습니다. 그래서 수천 년 동안 똑같았다고 말하면 곤란합니다. 재미있는 건 같은 동작으로 다른 말을 한다는 점입니다. 가볍게 숙이면 일상의 인사가 될 수 있습니다. 더 정중한 자리에서는 몸을 깊이 숙이기도 하죠. 누구에게 어떤 마음을 전하는지가 동작에 드러납니다. 고맙다는 말과 미안하다는 말이 자세를 공유하는 겁니다. 회사에서 인사법을 따로 배우는 경우도 있습니다. 익숙한 문화라고 세부 동작까지 저절로 같아지진 않죠. 인사 장면을 볼 때 각도만 재면 놓치는 부분입니다. 말없이도 상황을 설명해야 하는 순간이 있으니까요. 같은 몸짓인데 그 앞에 무슨 일이 있었는지가 뜻을 바꿉니다.",
     "fact_verifiability": "user",
@@ -52917,7 +52923,107 @@
       "angle perspective importance",
       "context behind bowing"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0458_일본_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0458_일본_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "bowing Japanese greeting",
+      "modern polite bowing",
+      "Japanese aristocratic bowing",
+      "historical samurai etiquette",
+      "same gesture different meaning",
+      "light casual bow",
+      "deep respectful bow",
+      "bowing for thanks and apology",
+      "business greeting practice",
+      "automatic cultural gestures",
+      "angle perspective importance",
+      "context behind bowing"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Circa 1880 Two women bowing, \"ojigi\" (hand-colored albumen print, Japan).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Circa_1880_Two_women_bowing,_%22ojigi%22_(hand-colored_albumen_print,_Japan).jpg",
+        "id": "c:115481627"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "brixiv",
+        "page": "https://pixabay.com/photos/border-collie-dog-canine-pet-8104878/",
+        "id": 8104878
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/samurai-suit-helmet-breast-plate-89372/",
+        "id": 89372
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/dictionary-reference-book-learning-1619740/",
+        "id": 1619740
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "title": "DSC 8108 A martial artist in a white gi and blue belt bows respectfully palms together dur",
+        "page": "https://commons.wikimedia.org/wiki/File:DSC_8108_A_martial_artist_in_a_white_gi_and_blue_belt_bows_respectfully_palms_together_during_a_quiet_moment_of_practice.jpg",
+        "id": "c:202816248"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "RyanMcGuire",
+        "page": "https://pixabay.com/photos/thank-you-neon-lights-neon-362164/",
+        "id": 362164
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/",
+        "id": 1979261
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "rolfvandewal",
+        "page": "https://pixabay.com/photos/gearstick-car-vehicle-auto-fast-7740670/",
+        "id": 7740670
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/architecture-skyscraper-2256489/",
+        "id": 2256489
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "teegers0",
+        "page": "https://pixabay.com/photos/mirror-retrospective-auto-4992200/",
+        "id": 4992200
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0458_일본.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0458_일본.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "GNJ49pG5pbY",
+    "uploaded_at": "2026-11-05T10:49:05.158089+09:00"
   },
   {
     "topic": "덴마크(Denmark) 전통 요리 Stegt flæsk",
@@ -52932,7 +53038,7 @@
     "verify_note": "Stegt flæsk",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "덴마크의 대표 음식은 의외로 바삭한 돼지고기입니다. 이름은 스테그트 플레스크입니다. 돼지고기를 조각내 바삭하게 익혀 내는 요리죠. 그런데 고기만 먹으면 이 접시의 절반을 놓칩니다. 삶은 감자와 파슬리소스가 함께 나오거든요. 고기는 바삭하고 감자는 부드럽습니다. 여기에 소스가 더해지면서 서로 다른 식감이 만납니다. 이름은 낯설어도 접시 구성은 꽤 친숙하게 느껴집니다. 특별한 장식보다 고기와 감자가 중심을 차지하죠. 덴마크 공식 소개에서도 국민 음식으로 다룹니다. 그만큼 일상의 음식이 나라를 대표하게 된 사례예요. 저는 화려하지 않은 접시가 대표가 됐다는 점이 좋습니다. 한 나라의 맛이 꼭 희귀한 재료에만 있는 건 아니니까요. 감자에 소스를 묻히고 고기를 한 조각 곁들여봅니다. 이 음식은 재료를 따로 볼 때보다 함께 먹을 때 이해됩니다. 바삭한 고기가 눈길을 끌지만 접시를 완성하는 건 그 옆입니다.",
     "fact_verifiability": "user",
@@ -52978,7 +53084,119 @@
       "together on plate",
       "pork beside potatoes"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0459_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0459_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "crispy pork belly",
+      "crispy fried pork",
+      "pork slices on plate",
+      "boiled potatoes with parsley sauce",
+      "potatoes served together",
+      "sauce added to dish",
+      "familiar plate layout",
+      "national dish depiction",
+      "simple rustic plate",
+      "potato sauce and pork",
+      "together on plate",
+      "pork beside potatoes"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/roast-pork-grill-rind-crispy-fat-7517549/",
+        "id": 7517549
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "takedahrs",
+        "page": "https://pixabay.com/photos/pork-tonkatsu-japanese-meal-1690696/",
+        "id": 1690696
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pork-roast-meat-roasted-pork-6175779/",
+        "id": 6175779
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "MariaGutebring",
+        "page": "https://pixabay.com/photos/beef-brisket-horseradish-sauce-meal-7379582/",
+        "id": 7379582
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "kampfmonchichi",
+        "page": "https://pixabay.com/photos/fries-ketchup-plate-shell-meal-8329935/",
+        "id": 8329935
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "sergiovisor_ph",
+        "page": "https://pixabay.com/photos/wine-food-sauce-plate-dish-8279459/",
+        "id": 8279459
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Original uploader was ChildofMidnight at en.wikipedia",
+        "license": "CC BY 2.0",
+        "title": "Stegt flæsk.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Stegt_fl%C3%A6sk.jpg",
+        "id": "c:9433414"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "52600603",
+        "page": "https://pixabay.com/photos/jamaican-food-caribbean-cuisine-10478914/",
+        "id": 10478914
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "tehzeebkazmii",
+        "page": "https://pixabay.com/photos/toast-bread-butter-breakfast-10370580/",
+        "id": 10370580
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Alexandra_Koch",
+        "page": "https://pixabay.com/photos/roast-pork-meal-food-flesh-protein-7977061/",
+        "id": 7977061
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "Surprising_Media",
+        "page": "https://pixabay.com/photos/couple-casual-fancy-eccentric-9082949/",
+        "id": 9082949
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "RitaE",
+        "page": "https://pixabay.com/photos/pork-fillet-food-dish-7070717/",
+        "id": 7070717
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0459_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0459_덴마크.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "s5pArhCSGhE",
+    "uploaded_at": "2026-11-05T10:49:10.818226+09:00"
   },
   {
     "topic": "인도네시아(Indonesia) 사회적 지위에 따른 예절",
@@ -52993,7 +53211,7 @@
     "verify_note": "Etiquette in Indonesia",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration_original": "",
     "narration": "처음 만난 사람을 아버지, 어머니라고 부른다면요? 인도네시아에서는 낯설지 않은 호칭입니다. 바팍과 이부가 원래 그런 뜻을 갖고 있거든요. 하지만 실제 부모에게만 쓰는 말은 아닙니다. 나이가 많거나 지위가 높은 사람을 존중할 때도 씁니다. 이름 앞에 붙이면 예의를 갖춘 부름이 되죠. 짧게 팍이나 부라고 부르기도 합니다. 같은 이름도 앞에 붙는 말에 따라 관계가 달라집니다. 친한 동료에게 하듯 이름만 부르면 어색할 수 있어요. 존중은 물건을 건네는 동작에도 나타납니다. 오른손이나 두 손으로 주고받는 방식이 쓰이죠. 다만 지역과 공동체에 따라 세부 예절은 다릅니다. 저는 직함 대신 가족을 뜻하는 말을 쓴다는 점이 흥미롭습니다. 가까워 보이는 표현이 오히려 예의를 세우는 거니까요. 인도네시아의 첫인사는 이름을 아는 것만으로 끝나지 않습니다. 어떻게 부를지 정하는 순간부터 관계가 시작됩니다.",
     "fact_verifiability": "user",
@@ -53043,7 +53261,135 @@
       "name greeting",
       "relationship begins"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0460_인도네시아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0460_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "meeting new person greeting",
+      "bapak ibu greeting",
+      "not only parents",
+      "respecting elders",
+      "calling bap short",
+      "name with title",
+      "hand giving etiquette",
+      "right hand gift",
+      "regional etiquette differences",
+      "close expression respect",
+      "name greeting",
+      "relationship begins"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/",
+        "id": 1979261
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "SonofAfrica",
+        "license": "CC BY-SA 4.0",
+        "title": "Etiquette training.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Etiquette_training.jpg",
+        "id": "c:64044303"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "VillageHero from Ulm, Germany",
+        "license": "CC BY-SA 2.0",
+        "title": "For adults only - but parents are responsible (15417808977).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:For_adults_only_-_but_parents_are_responsible_(15417808977).jpg",
+        "id": "c:75566732"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "U.S. Space Force photo by Airman 1st Class Jonathan Whitely",
+        "license": "Public domain",
+        "title": "Practice respect, etiquette, military bearing (6384707).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Practice_respect,_etiquette,_military_bearing_(6384707).jpg",
+        "id": "c:172850666"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "U.S. Navy photo by Photographer's Mate 2nd Class Damon J. Moritz.",
+        "license": "Public domain",
+        "title": "US Navy 030701-N-9693M-004 Midshipman 1st Class Kyle Opel, center foreground from Fairfax,",
+        "page": "https://commons.wikimedia.org/wiki/File:US_Navy_030701-N-9693M-004_Midshipman_1st_Class_Kyle_Opel,_center_foreground_from_Fairfax,_Va.,_instructs_a_group_of_officer_candidates_on_military_etiquette_during_Induction_Day_at_the_U.S._Naval_Academy_(USNA).jpg",
+        "id": "c:8196793"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Rosette, Titles of Shah Jahan.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rosette,_Titles_of_Shah_Jahan.jpg",
+        "id": "c:19291718"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Army photo by Monique Freemon",
+        "license": "Public domain",
+        "title": "PPS and USFK Acquisition Partners host Joint Industry Day in South Korea (8974067).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:PPS_and_USFK_Acquisition_Partners_host_Joint_Industry_Day_in_South_Korea_(8974067).jpg",
+        "id": "c:169034481"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Alexas_Fotos",
+        "page": "https://pixabay.com/photos/nissan-figaro-car-interior-vehicle-4368962/",
+        "id": 4368962
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Graetz, F. (Friedrich), approximately 1840-approximately 1913, artist",
+        "license": "Public domain",
+        "title": "Old-school etiquette - F. Graetz. LCCN2012645481.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Old-school_etiquette_-_F._Graetz._LCCN2012645481.jpg",
+        "id": "c:67926029"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Bunchiochi",
+        "page": "https://pixabay.com/photos/close-up-portrait-black-male-model-9759768/",
+        "id": 9759768
+      },
+      {
+        "scene": 11,
+        "source": "commons",
+        "user": "Riouwa",
+        "license": "CC BY 4.0",
+        "title": "Season Greeting Aceh.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Season_Greeting_Aceh.jpg",
+        "id": "c:45823398"
+      },
+      {
+        "scene": 12,
+        "source": "commons",
+        "user": "U.S. Department of State",
+        "license": "Public domain",
+        "title": "University of Texas at Austin President Fenves Begins the Introductions about the Past and",
+        "page": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_President_Fenves_Begins_the_Introductions_about_the_Past_and_Future_of_the_U.S.-Vietnam_Relationship_at_the_Vietnam_War_Summit_at_the_LBJ_Presidential_Library_on_April_27,_2016.jpg",
+        "id": "c:150797431"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0460_인도네시아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0460_인도네시아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "WXlBt1Qzizw",
+    "uploaded_at": "2026-11-05T10:49:15.263585+09:00"
   },
   {
     "topic": "불교 음식, 축제때만 채식",
@@ -53333,7 +53679,7 @@
     "verify_note": "New Year's Eve",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "verified",
+    "status": "rejected",
     "narration": "31일 밤, 세계 최초로 새해를 맞는 섬! 새해 첫 불꽃놀이를 가장 먼저 보는 곳은 키리바시 라인 제도입니다. 이 섬들은 국제 날짜 변경선 동쪽에 위치해 있어, 새해가 울리자마자 바로 불꽃놀이가 시작됩니다. 그런데 뉴질랜드 같은 대국은 그 뒤를 이어 자정에 축하합니다. 새해 맞이 시간은 각 지역의 현지 시계에 따라 달라지므로, 같은 날이라도 언제 불꽃이 터지는지 차이가 납니다. 따라서 새해 첫 불꽃을 보고 싶다면, 먼저 키리바시 라인 제도에 가 보세요. 그곳에서 새해가 울리면 바로 불꽃이 피어오릅니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -53376,7 +53722,8 @@
       "Line Islands fireworks",
       "New Year's Eve fireworks"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "나라와 주제 불일치(뉴질랜드 / WS,TO)"
   },
   {
     "topic": "두 사람 이상이 동시에 안아주는 ‘그룹 허그’?",
@@ -53617,7 +53964,7 @@
     "verify_note": "Ottoman Empire",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "한 부족이 3대 대륙을 장악했다니, 상상할 수 있으신가요? 14세기 서북아나톨리아에서 오스만 1세가 만든 작은 베일리크, 바로 오스만 제국의 시작이었습니다. 그 베일리크는 곧 동남유럽, 서아시아, 북아프리카까지 뻗어나가며 20세기 초까지 이어졌습니다. 그런데 16세기 초부터 18세기 초까지는 중부 유럽 남동부까지 영역을 확장하며, 유럽 대륙의 심장부까지 손을 뻗었습니다. 이렇게 광대한 영토를 차지한 시기는 오스만 제국이 전성기를 맞이한 시기로, 그 범위는 발췌문에 명시된 기간에 한정됩니다. 작은 부족이 만든 베일리크가 결국 세 대륙을 아우르는 제국으로 성장했다는 사실, 생각보다 놀랍지 않나요?",
     "cross_checked": true,
     "cross_sources": 2,
@@ -53653,7 +54000,8 @@
       "Ottoman empire at peak",
       "Ottoman empire expansion"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "성/민감 소재 자동 제외(성기)"
   },
   {
     "topic": "남극 바로 옆, 세계 최남단 나라 칠레",
@@ -54209,9 +54557,9 @@
   },
   {
     "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
-    "hook": "반전! 영국 귀족 자녀도 ‘공작 부인’이라고 부른다!",
-    "body": "영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 호칭을 사용합니다. 이러한 호칭은 법적으로 실제 권한을 갖고 있지는 않지만, 예의상 사용됩니다.",
-    "twist": "예를 들어, 피어의 자녀도 ‘공작 부인’ 같은 호칭을 받을 수 있습니다.",
+    "hook": "반전! 영국 귀족 자녀에게도 특별한 호칭이 있다!",
+    "body": "영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 다양한 호칭을 사용합니다. 이 호칭은 법적으로 권한을 주는 것은 아니지만, 예의상 꼭 지켜지는 관습이죠.",
+    "twist": "예를 들어, 공작의 아들은 ‘로드’ 혹은 ‘레이디’라는 호칭을 쓰고, 그의 아내는 ‘공작 부인’이라 불립니다.",
     "caveat": "이러한 관습은 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용됩니다.",
     "country": "영국",
     "theme": "관습/예절",
@@ -54220,13 +54568,52 @@
     "verify_note": "Courtesy titles in the United Kingdom",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "반전! 영국 귀족 자녀에게도 특별한 호칭이 있다! 영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 다양한 호칭을 사용합니다. 이 호칭은 법적으로 권한을 주는 것은 아니지만, 예의상 꼭 지켜지는 관습이죠. 예를 들어, 공작의 아들은 ‘로드’ 혹은 ‘레이디’라는 호칭을 쓰고, 그의 아내는 ‘공작 부인’이라 불립니다. 이러한 관습은 주로 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용되며, 공식적인 권한과는 별개로 전통적인 예절을 유지하는 역할을 합니다. 결국, 이름 뒤에 붙는 작은 칭호가 그들의 사회적 위치와 역사를 조용히 드러내는 셈이죠.",
+    "cross_checked": true,
+    "cross_sources": 2,
+    "cross_model": "openai/gpt-oss-20b",
+    "cross_flags": [],
+    "narration_original": "반전! 영국 귀족 자녀도 ‘공작 부인’이라고 부른다! 영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 다양한 호칭을 사용합니다. 이 호칭은 법적으로 권한을 주는 것은 아니지만, 예의상 꼭 지켜지는 관습이죠. 그런데 피어의 자녀까지도 같은 호칭을 받을 수 있습니다. 예를 들어, 공작의 아들이 결혼하면 그의 아내는 ‘공작 부인’이라 불리며, 그들의 자녀 역시 같은 호칭을 이어받게 됩니다. 이러한 관습은 주로 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용되며, 공식적인 권한과는 별개로 전통적인 예절을 유지하는 역할을 합니다. 결국, 이름 뒤에 붙는 작은 칭호가 그들의 사회적 위치와 역사를 조용히 드러내는 셈이죠.",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "귀족도 *공작부인*"
+      },
+      {
+        "s": 5,
+        "text": "자녀도 *같은* 호"
+      },
+      {
+        "s": 6,
+        "text": "아내는 *공작부인*"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: Children of dukes are not styled 'duchess' in British peerage.",
+      "[수정됨] [contradicted] 5번 문장: Peers' children receive courtesy titles like Lord/Lady, not the same peer title.",
+      "[수정됨] [contradicted] 6번 문장: Wife of a duke is a duchess, but their children do not inherit the duchess title."
+    ],
+    "title_line1": "영국 귀족 자녀도",
+    "title_line2": "공작 부인이라?",
+    "image_queries": [
+      "surprise reaction",
+      "duchess portrait",
+      "British aristocratic family gathering",
+      "formal etiquette ceremony",
+      "duchess children",
+      "duchess wife",
+      "Scottish noble estate",
+      "historic title insignia"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "헝가리식 스파에츨레 조리법",
-    "hook": "끓는 물에 반죽을 바로 뿌려버린다면?",
-    "body": "Spätzle(German)는 달걀 반죽을 물에 직접 넣어 익히는 독특한 면 요리다. 헝가리에서는 이를 nokedli(Hungarian)라고 부른다.",
-    "twist": "반죽이 물에 바로 닿아 거친 표면과 구멍이 생겨 소스가 잘 스며든다.",
+    "hook": "끓는 물에 반죽을 바로 뿌려버린다면 어떤 식감이 될까요?",
+    "body": "독일에서 ‘Spätzle’이라 불리는 달걀 반죽을 물에 직접 넣어 익히는 요리가 있습니다. 헝가리에서는 이 요리를 ‘nokedli’라고 부릅니다. 반죽을 끓는 물에 떨어뜨리면 물과 바로 맞닿아 거친 표면과 작은 구멍이 생깁니다. 소스가 어느 정도 스며들어 풍미가 더해질 수 있어요. 이 조리법은 남부 독일, 오스트리아, 헝가리뿐 아니라 스위스와 체코 등 여러 지역에서도 사용됩니다. 물에 바로 닿는 순간 만들어지는 특유의 질감, 바로 그 이유가 헝가리식 스파에츨레의 매력인 셈이죠.",
+    "twist": "결국 물에 바로 뿌린 반죽이 만든 독특한 식감이, 지역마다 다른 전통 요리의 차이를 보여줍니다.",
     "caveat": "이 조리법은 남부 독일·오스트리아·헝가리 등 일부 지역에서 주로 사용된다.",
     "country": "헝가리",
     "theme": "음식문화",
@@ -54235,13 +54622,44 @@
     "verify_note": "Spätzle",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "끓는 물에 반죽을 바로 뿌려버린다면 어떤 식감이 될까요? 독일에서 ‘Spätzle’이라 불리는 달걀 반죽을 물에 직접 넣어 익히는 요리가 있습니다. 헝가리에서는 이 요리를 ‘nokedli’라고 부릅니다. 반죽을 끓는 물에 떨어뜨리면 물과 바로 맞닿아 거친 표면과 작은 구멍이 생깁니다. 소스가 어느 정도 스며들어 풍미가 더해질 수 있어요. 이 조리법은 남부 독일, 오스트리아, 헝가리뿐 아니라 스위스와 체코 등 여러 지역에서도 사용됩니다. 물에 바로 닿는 순간 만들어지는 특유의 질감, 바로 그 이유가 헝가리식 스파에츨레의 매력인 셈이죠. 결국 물에 바로 뿌린 반죽이 만든 독특한 식감이, 지역마다 다른 전통 요리의 차이를 보여줍니다.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "끓는 물에 반죽을 바로 뿌려버린다면 어떤 식감이 될까요? 독일에서 ‘Spätzle’이라 불리는 달걀 반죽을 물에 직접 넣어 익히는 요리가 있습니다. 헝가리에서는 이 요리를 ‘nokedli’라고 부릅니다. 반죽을 끓는 물에 떨어뜨리면 물과 바로 맞닿아 거친 표면과 작은 구멍이 생깁니다. 그 덕분에 소스가 골고루 스며들어 풍미가 살아납니다. 그런데 이 조리법은 남부 독일, 오스트리아, 헝가리 등 일부 지역에서만 흔히 사용됩니다. 물에 바로 닿는 순간 만들어지는 특유의 질감, 바로 그 이유가 헝가리식 스파에츨레의 매력인 셈이죠. 결국 물에 바로 뿌린 반죽이 만든 독특한 식감이, 지역마다 다른 전통 요리의 차이를 보여줍니다.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "끓는 물에 *반죽* 뿌리면?"
+      },
+      {
+        "s": 4,
+        "text": "거친 *표면*과 구멍"
+      },
+      {
+        "s": 5,
+        "text": "소스가 *스며들어* 풍미!"
+      },
+      {
+        "s": 7,
+        "text": "헝가리식 *스파에츨레* 매력"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [unsupported] 5번 문장: Claim about sauce absorption and flavor is evaluative, not verifiable as fact.",
+      "[수정됨] [contradicted] 6번 문장: The method is also common in other regions (e.g., Switzerland, Czech Republic); saying \"only\" is inaccurate."
+    ],
+    "title_line1": "헝가리식 스파에츨레",
+    "title_line2": "끓는 물에 바로?"
   },
   {
     "topic": "검은눈완두의 색다른 변종",
-    "hook": "검은 눈 콩이 보라색 껍질을 가졌다면?",
-    "body": "black-eyed pea(English)는 아프리카에서 재배된 콩의 한 종류이며, 미국 남부에서는 다양한 크기와 색상의 변종이 있다. 일반적인 품종은 연한 색에 검은 점이 있다.",
-    "twist": "보라색 껍질을 가진 ‘mud-in-your-eye pea’도 있다.",
+    "hook": "검은 눈 콩이 보라색 껍질을 가졌다면, 어떤 콩일까요?",
+    "body": "black‑eyed pea는 서아프리카가 원산지이며, 이후 미국 남부로 전파돼 다양한 크기와 색상의 변종이 생겼습니다. 일반적인 품종은 연한 색 바탕에 검은 점이 있지만, 일부 지역에서는 색다른 변종도 재배됩니다. 그 중에는 껍질이 보라색인 변종도 보고된 바 있습니다. 이 변종은 미국 남부 농가에서도 가끔 발견됩니다.",
+    "twist": "평범해 보이는 검은 눈 콩, 한 번쯤은 보라색을 떠올려 보세요.",
     "caveat": "이 변종은 주로 미국 남부에서 재배된다.",
     "country": "남아프리카공화국",
     "theme": "음식문화",
@@ -54250,7 +54668,45 @@
     "verify_note": "Black-eyed pea",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "검은 눈 콩이 보라색 껍질을 가졌다면, 어떤 콩일까요? black‑eyed pea는 서아프리카가 원산지이며, 이후 미국 남부로 전파돼 다양한 크기와 색상의 변종이 생겼습니다. 일반적인 품종은 연한 색 바탕에 검은 점이 있지만, 일부 지역에서는 색다른 변종도 재배됩니다. 그 중에는 껍질이 보라색인 변종도 보고된 바 있습니다. 이 변종은 미국 남부 농가에서도 가끔 발견됩니다. 평범해 보이는 검은 눈 콩, 한 번쯤은 보라색을 떠올려 보세요.",
+    "cross_checked": true,
+    "cross_sources": 0,
+    "cross_model": "openai/gpt-oss-120b",
+    "cross_flags": [],
+    "narration_original": "검은 눈 콩이 보라색 껍질을 가졌다면, 어떤 콩일까요? 남아프리카공화국에서 시작된 black‑eyed pea는 미국 남부에 전파돼 다양한 크기와 색상의 변종을 만들었습니다. 일반적인 품종은 연한 색 바탕에 검은 점이 들어가지만, 그곳에서는 색다른 변종도 재배됩니다. 그런데 그 중엔 ‘mud‑in‑your‑eye pea’라 불리는 보라색 껍질을 가진 콩이 있습니다. 이 변종은 주로 미국 남부 농가에서만 찾아볼 수 있습니다. 평범해 보이는 검은 눈 콩, 한 번쯤은 보라색을 떠올려 보세요.",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "보라 껍질 *콩*은?"
+      },
+      {
+        "s": 4,
+        "text": "보라 *콩* 이름은?"
+      },
+      {
+        "s": 6,
+        "text": "검은 눈 콩, *보라* 생각?"
+      }
+    ],
+    "cross_verdict": "fixed",
+    "cross_notes": [
+      "[수정됨] [contradicted] 2번 문장: Black-eyed peas originated in West Africa, not South Africa",
+      "[수정됨] [unsupported] 3번 문장: No evidence of distinct South African variants",
+      "[수정됨] [unsupported] 4번 문장: No known 'mud‑in‑your‑eye pea' with purple shell",
+      "[수정됨] [unsupported] 5번 문장: No evidence that such a variant is only in US Southern farms"
+    ],
+    "title_line1": "남아프리카 검은눈완두",
+    "title_line2": "보라 껍질은 뭘까",
+    "image_queries": [
+      "purple bean pod",
+      "South Africa black-eyed pea",
+      "black-eyed pea plant",
+      "purple pea plant",
+      "southern US pea field",
+      "black-eyed pea with purple"
+    ],
+    "scene_count": 8
   },
   {
     "topic": "나바라트리(Navaratri) – 9밤·9여신 축제",
