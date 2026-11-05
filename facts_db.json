@@ -51500,7 +51500,7 @@
       "historic rent ledger paper",
       "twelve pizza slices",
       "pizza delivery box",
-      "medieval watermill Gaeta",
+      "medieval watermill",
       "pizza on landlord table",
       "happy landlord with pizza"
     ],
@@ -51511,7 +51511,7 @@
       "historic rent ledger paper",
       "twelve pizza slices",
       "pizza delivery box",
-      "medieval watermill Gaeta",
+      "medieval watermill",
       "pizza on landlord table",
       "happy landlord with pizza"
     ],
@@ -51557,11 +51557,11 @@
       {
         "scene": 6,
         "source": "commons",
-        "user": "Valerio Capello at English Wikipedia",
-        "license": "CC BY-SA 3.0",
-        "title": "Eq it-na pizza-margherita sep2005 sml.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg",
-        "id": "c:372337"
+        "user": "Massingbird",
+        "license": "CC BY-SA 4.0",
+        "title": "Medieval bridge and watermill of Ardfinnan.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Medieval_bridge_and_watermill_of_Ardfinnan.png",
+        "id": "c:182854249"
       },
       {
         "scene": 7,
@@ -51653,13 +51653,13 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1482,
+        "verdict": "ok",
+        "clip": 0.2383,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "2bc14088efe7",
-        "at": "2026-11-05 16:08",
+        "sig": "df5a6a7aab99",
+        "at": "2026-11-05 16:12",
         "scene": 6,
         "rejected_ids": [
           9171049,
