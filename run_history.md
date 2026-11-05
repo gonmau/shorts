@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 17:03:36 (KST) · 기록 974건 · 소재 532개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 17:06:17 (KST) · 기록 979건 · 소재 532개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 38 | 0 | 17분 8초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 46 | 0 | 7초 |
+| apply_review | 47 | 0 | 7초 |
 | approve | 10 | 0 | 1초 |
 | build_video | 42 | 0 | 7시간 33분 |
 | check_uploads | 23 | 0 | 2분 19초 |
@@ -20,17 +20,17 @@
 | fetch_images | 114 | 3 | 1시간 53분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
 | generate_script | 113 | 0 | 1시간 6분 |
-| generate_tts | 47 | 0 | 20분 21초 |
+| generate_tts | 48 | 0 | 20분 39초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 9 | 0 | 28초 |
-| promote_ready | 46 | 0 | 6초 |
-| redo_videos | 12 | 0 | 2초 |
+| promote_ready | 47 | 0 | 7초 |
+| redo_videos | 13 | 0 | 3초 |
 | resync_meta | 3 | 0 | 38분 5초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 10 | 0 | 8분 8초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 112 | 6 | 12시간 17분 |
-| 코드업데이트 | 46 | 0 | 0초 |
+| 코드업데이트 | 47 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -38,6 +38,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:06 | PC | generate_tts | generate_tts.py --index 448 | ✅ | 17초 |  |
+| 17:05 | PC | redo_videos | redo_videos.py --indexes 448 | ✅ | 0초 |  |
+| 17:05 | PC | promote_ready | promote_ready.py --start 448 | ✅ | 0초 |  |
+| 17:05 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 17:05 | PC | 코드업데이트 | gonmau/shorts: 1개 (tts_fallback.py) | ✅ |  |  |
 | 17:03 | PC | generate_tts | generate_tts.py --index 448 | ✅ | 17초 |  |
 | 17:03 | PC | promote_ready | promote_ready.py --start 448 | ✅ | 0초 |  |
 | 17:03 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
