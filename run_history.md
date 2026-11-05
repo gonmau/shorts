@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-05 20:35:36 (KST) · 기록 1012건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-05 20:37:14 (KST) · 기록 1014건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -25,12 +25,12 @@
 | make_thumbnail | 11 | 0 | 29초 |
 | promote_ready | 52 | 0 | 8초 |
 | redo_videos | 15 | 0 | 3초 |
-| resync_meta | 3 | 0 | 38분 5초 |
+| resync_meta | 4 | 0 | 38분 13초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 11 | 0 | 8분 28초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 49 | 0 | 0초 |
+| 코드업데이트 | 50 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -38,6 +38,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:37 | PC | resync_meta | resync_meta.py --indexes 491 | ✅ | 7초 |  |
+| 20:35 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_video.py, local_ui.py, overlays.py) | ✅ |  |  |
 | 20:28 | PC | generate_script | generate_script.py --limit 1 --start 491 | ✅ | 10초 |  |
 | 20:28 | PC | export_review | export_review.py --limit 1 --start 491 | ✅ | 0초 |  |
 | 20:28 | PC | redo_videos | redo_videos.py --script --indexes 491! | ✅ | 0초 |  |
