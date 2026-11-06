@@ -57154,12 +57154,11 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "title": "Amboy (California, USA), Hist. Route 66 -- 2012 -- 1.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Amboy_(California,_USA),_Hist._Route_66_--_2012_--_1.jpg",
-        "id": "c:30517858"
+        "source": "pixabay",
+        "user": "Clker-Free-Vector-Images",
+        "page": "https://pixabay.com/vectors/usa-map-united-states-of-america-35713/",
+        "id": 35713,
+        "type": "illustration"
       },
       {
         "scene": 2,
