@@ -57131,7 +57131,7 @@
     "title_line1": "미국 영토는 두 조각",
     "title_line2": "얼음과 섬, 비밀은?",
     "image_queries": [
-      "united states of america global map",
+      "USA",
       "720 million dollars transaction",
       "old US currency",
       "Korean won bills",
@@ -57142,7 +57142,7 @@
     ],
     "scene_count": 8,
     "image_queries_done": [
-      "usa map",
+      "USA",
       "720 million dollars transaction",
       "old US currency",
       "Korean won bills",
@@ -57154,12 +57154,10 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Constitutional Convention",
-        "license": "Public domain",
-        "title": "Constitution of the United States, page 3.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_3.jpg",
-        "id": "c:15795306"
+        "source": "pixabay",
+        "user": "Ronile",
+        "page": "https://pixabay.com/photos/statue-of-liberty-new-york-statue-267948/",
+        "id": 267948
       },
       {
         "scene": 2,
@@ -57221,12 +57219,12 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2732,
+        "clip": 0.2563,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8c617ce2642a",
-        "at": "2026-11-06 09:01",
+        "sig": "3266b058db2a",
+        "at": "2026-11-06 09:09",
         "scene": 1,
         "rejected_ids": [
           2870745,
