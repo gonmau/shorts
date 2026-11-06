@@ -57131,7 +57131,7 @@
     "title_line1": "미국 영토는 두 조각",
     "title_line2": "얼음과 섬, 비밀은?",
     "image_queries": [
-      "Alaska Russia purchase",
+      "usa map",
       "720 million dollars transaction",
       "old US currency",
       "Korean won bills",
@@ -57142,7 +57142,7 @@
     ],
     "scene_count": 8,
     "image_queries_done": [
-      "Alaska Russia purchase",
+      "usa map",
       "720 million dollars transaction",
       "old US currency",
       "Korean won bills",
@@ -57155,9 +57155,9 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "chrisstenger",
-        "page": "https://pixabay.com/photos/autumn-mountain-meadow-nature-7201026/",
-        "id": 7201026,
+        "user": "652234",
+        "page": "https://pixabay.com/photos/map-globe-countries-3476638/",
+        "id": 3476638,
         "type": "photo"
       },
       {
@@ -57220,16 +57220,19 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2422,
+        "clip": 0.2732,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "eb890aaa666b",
-        "at": "2026-11-06 08:52",
+        "sig": "8c617ce2642a",
+        "at": "2026-11-06 09:01",
         "scene": 1,
         "rejected_ids": [
+          2870745,
+          3476638,
           4424657,
           7201026,
+          "c:30517858",
           "c:3815513",
           "c:4246381"
         ]
