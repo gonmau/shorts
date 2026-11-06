@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-06 09:29:58 (KST) · 기록 1086건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-06 09:30:40 (KST) · 기록 1089건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 41 | 0 | 18분 25초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 65 | 0 | 12초 |
+| apply_review | 66 | 0 | 12초 |
 | approve | 16 | 0 | 3초 |
 | build_video | 47 | 0 | 8시간 34분 |
 | check_uploads | 24 | 0 | 2분 26초 |
@@ -20,10 +20,10 @@
 | fetch_images | 121 | 3 | 1시간 57분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
 | generate_script | 127 | 0 | 1시간 7분 |
-| generate_tts | 53 | 0 | 23분 42초 |
+| generate_tts | 54 | 0 | 24분 13초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 17 | 0 | 36초 |
-| promote_ready | 65 | 0 | 11초 |
+| promote_ready | 66 | 0 | 11초 |
 | redo_videos | 17 | 0 | 4초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -38,6 +38,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 09:30 | PC | generate_tts | generate_tts.py --index 513 | ✅ | 30초 |  |
+| 09:30 | PC | promote_ready | promote_ready.py --start 513 | ✅ | 0초 |  |
+| 09:30 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 09:09 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 11초 |  |
 | 09:08 | PC | fetch_images | fetch_images.py --index 513 --scene 1 --source commons --type photo | ✅ | 11초 |  |
 | 09:07 | PC | fetch_images | fetch_images.py --index 513 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
