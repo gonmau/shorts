@@ -57154,11 +57154,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "652234",
-        "page": "https://pixabay.com/photos/map-globe-countries-3476638/",
-        "id": 3476638,
-        "type": "photo"
+        "source": "commons",
+        "user": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "title": "Amboy (California, USA), Hist. Route 66 -- 2012 -- 1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Amboy_(California,_USA),_Hist._Route_66_--_2012_--_1.jpg",
+        "id": "c:30517858"
       },
       {
         "scene": 2,
