@@ -937,10 +937,12 @@ def generate_script(client, models, fact, retries):
 # 처리 대상
 # ============================================================
 
-def find_targets(db, limit):
+def find_targets(db, limit, start=0):
     targets = []
 
     for index, fact in enumerate(db):
+        if index < start:          # start_index 이상만 (예전엔 무시되어 항상 가장 작은 번호부터 만들었음)
+            continue
         if fact.get("status") != "verified":
             continue
 
@@ -1071,7 +1073,7 @@ def main():
         run_extras(client, models, db, args.limit, args.start, args.delay, args.retries)
         return
 
-    targets = find_targets(db, args.limit)
+    targets = find_targets(db, args.limit, args.start)
 
     print("=" * 70)
     print("문화 상식 Shorts 대본 생성기")
