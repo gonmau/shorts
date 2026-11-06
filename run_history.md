@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-06 11:26:50 (KST) · 기록 1097건 · 소재 534개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-06 11:54:07 (KST) · 기록 1103건 · 소재 534개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,9 +9,9 @@
 | -c | 41 | 0 | 18분 25초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 68 | 0 | 12초 |
+| apply_review | 69 | 0 | 12초 |
 | approve | 16 | 0 | 3초 |
-| build_video | 48 | 0 | 8시간 46분 |
+| build_video | 49 | 0 | 9시간 4분 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -19,12 +19,12 @@
 | export_review | 22 | 0 | 3초 |
 | fetch_images | 121 | 3 | 1시간 57분 |
 | generate_culture_facts | 11 | 0 | 20분 21초 |
-| generate_script | 128 | 0 | 1시간 7분 |
+| generate_script | 129 | 0 | 1시간 7분 |
 | generate_tts | 55 | 0 | 24분 40초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 18 | 0 | 37초 |
-| promote_ready | 68 | 0 | 12초 |
-| redo_videos | 17 | 0 | 4초 |
+| make_thumbnail | 19 | 0 | 38초 |
+| promote_ready | 69 | 0 | 12초 |
+| redo_videos | 18 | 0 | 4초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 13 | 0 | 9분 13초 |
@@ -38,6 +38,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 11:53 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 513 | ✅ | 1초 |  |
+| 11:53 | PC | build_video | build_video.py --index 513 --channel gonmauY --handle @gonmauY | ✅ | 17분 36초 |  |
+| 11:36 | PC | generate_script | generate_script.py --extras-only --index 513 | ✅ | 1초 |  |
+| 11:36 | PC | redo_videos | redo_videos.py --indexes 513 | ✅ | 0초 |  |
+| 11:36 | PC | promote_ready | promote_ready.py --start 513 | ✅ | 0초 |  |
+| 11:36 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 11:26 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 513 | ✅ | 0초 |  |
 | 11:26 | PC | build_video | build_video.py --index 513 --channel gonmauY --handle @gonmauY | ✅ | 12분 21초 |  |
 | 11:14 | PC | generate_script | generate_script.py --extras-only --index 513 | ✅ | 2초 |  |
