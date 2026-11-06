@@ -44,8 +44,18 @@ THEMES = [
     ("언어/이름", "naming language greeting custom"),
     ("축제/의례", "festival ritual tradition celebration"),
     ("생활문화", "everyday life tradition practice"),
+    # 조회수 분석(2026-11): 전쟁·영토·분쟁 소재 중앙값이 7배 높고 시청층이 30~50대 남성 -> 아래 세 분야 추가 (잔혹·학살·테러는 sensitive.py가 계속 거름)
+    ("영토/국경", "territorial dispute border boundary island sovereignty"),
+    ("군사/전쟁사", "historic battle military fortress empire conquest weapon navy"),
+    ("정치/체제", "unusual political system monarchy constitution capital city history"),
 ]
+HIST_THEMES = {"영토/국경", "군사/전쟁사", "정치/체제"}
+# 분야별 선택 가중치 (조회수 분석 기반: 음식·영토·군사 ↑, 축제/의례 ↓). 끄려면 환경변수 THEME_WEIGHTS=0
+THEME_W = {"영토/국경": 1.5, "군사/전쟁사": 1.5, "정치/체제": 1.0, "음식문화": 1.3, "축제/의례": 0.4}
 
+SKIP_TITLE_HIST = re.compile(
+    r"^(list|history|outline|index|culture|cuisine|religion|education|languages?|public holidays|human rights|tourism|media|sport) (of|in|by)\b"
+    r"|\b(massacre|genocide|terror\w*|crime|sexual\w*|slavery|holocaust|disambiguation)\b", re.I)
 SKIP_TITLE = re.compile(
     r"^(list|history|politics|economy|demographics|geography|outline|index|culture|cuisine|religion|education|languages?|"
     r"public holidays|human rights|foreign relations|military|transport|tourism|media|sport) (of|in|by)\b"
@@ -84,6 +94,8 @@ def pick_targets(db, n, rng=random):
             w = 1.0 / (1 + by_country.get(ko, 0)) / (1 + 2 * by_pair.get((ko, theme), 0))
             if os.environ.get("COUNTRY_INTEREST", "1") != "0":
                 w *= INTEREST.get(ko, 1.0)
+            if os.environ.get("THEME_WEIGHTS", "1") != "0":
+                w *= THEME_W.get(theme, 1.0)
             pairs.append((w, ko, theme, terms))
     out, seen = [], set()
     tries = 0
@@ -103,7 +115,7 @@ def pick_targets(db, n, rng=random):
     return out
 
 
-def search(session, country_en, terms, skip_titles, limit=10):
+def search(session, country_en, terms, skip_titles, limit=10, hist=False):
     """위키백과에서 country+분야 검색 -> 소개문 발췌가 있는 문서 후보 목록(검색 순위순)."""
     params = {
         "action": "query", "format": "json", "generator": "search", "gsrsearch": f"{country_en} {terms}",
@@ -117,7 +129,7 @@ def search(session, country_en, terms, skip_titles, limit=10):
     for p in sorted(pages.values(), key=lambda x: x.get("index", 999)):
         title = p.get("title", "")
         ext = " ".join(str(p.get("extract", "")).split())
-        if not title or len(ext) < 250 or SKIP_TITLE.search(title) or _norm(title) in skip_titles:
+        if not title or len(ext) < 250 or (SKIP_TITLE_HIST if hist else SKIP_TITLE).search(title) or _norm(title) in skip_titles:
             continue
         if "may refer to" in ext[:200] or "disambiguation" in ext[:200].lower():
             continue
@@ -133,7 +145,7 @@ def gather(session, db, count, rng=random, sleep=0.6):
         if len(cands) >= count * 2:
             break
         try:
-            hits = search(session, en, terms, skip)
+            hits = search(session, en, terms, skip, hist=theme in HIST_THEMES)
         except Exception as e:
             errors += 1
             print(f"  위키 검색 실패 ({ko}/{theme}): {type(e).__name__}")
