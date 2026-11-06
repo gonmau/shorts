@@ -57154,11 +57154,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Leonhard_Niederwimmer",
-        "page": "https://pixabay.com/photos/nyc-new-york-city-america-usa-city-4854718/",
-        "id": 4854718,
-        "type": "photo"
+        "source": "commons",
+        "user": "Constitutional Convention",
+        "license": "Public domain",
+        "title": "Constitution of the United States, page 3.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_3.jpg",
+        "id": "c:15795306"
       },
       {
         "scene": 2,
