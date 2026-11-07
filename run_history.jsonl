@@ -1216,3 +1216,4 @@
 {"id": "1794050019405-322285", "time": "2026-11-07 20:13:39", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (make_thumbnail.py, thumb_hook.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794050194901-89e10f", "time": "2026-11-07 20:16:34", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794052494584-77593b", "time": "2026-11-07 20:54:54", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (local_ui.py, thumb_hook.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1794070917138-dc98dc", "time": "2026-11-08 02:01:57", "channel": "KO", "source": "Actions", "kind": "롱폼", "title": "culture-longform #14", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/42392980263"}
