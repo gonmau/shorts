@@ -58803,9 +58803,9 @@
   },
   {
     "topic": "하니시 제도(Hanish Islands) 분쟁의 짧은 전투와 국제 판결",
-    "hook": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 이게 1995년 레드씨(Red Sea)에서 일어난 일이다!",
-    "body": "예멘(Yemen)과 에리트레아(Eritrea)는 그레이터 하니시(Greater Hanish) 섬을 두고 1995년 12월 15일부터 17일까지 3일간 전투를 벌였다. 이후 1998년 영구중재재판소(Permanent Court of Arbitration)가 섬의 소유권을 예멘에게 인정했다.",
-    "twist": "그 섬은 거의 무인 상태였으며, 실제 전략적 가치는 제한적이었지만 국제법적 의미는 크게 부각되었다.",
+    "hook": "3일간 섬을 차지하기 위해 전쟁을 벌였는데, 3년 뒤 국제중재에서 영토 주인이 바뀌었다면 믿으시겠습니까?",
+    "body": "1995년 예멘과 에리트레아는 홍해의 하니시 제도를 둘러싸고 무력 충돌을 벌였습니다.",
+    "twist": "전투에서는 에리트레아가 섬을 점령했지만, 국제중재 결과 주요 섬들의 영유권은 예멘에 돌아갔습니다.",
     "caveat": "이 사건은 1995년 전투와 1998년 판결에 한정된 사례이며, 이후 상황은 변동될 수 있다.",
     "country": "예멘",
     "theme": "영토/국경",
@@ -58815,42 +58815,235 @@
     "confidence": "source",
     "created_at": "2026-11-07T00:18:16.837749+00:00",
     "status": "scripted",
-    "narration": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 1995년 레드 씨에서 일어난 일입니다. 12월 15일 새벽, 예멘과 에리트레아는 그레이터 하니시 섬을 두고 총격을 시작했습니다. 양측은 17일 새벽까지 3일간 교전했으며, 결국 예멘이 섬을 점령했습니다. 전투가 끝난 뒤, 1998년 영구중재재판소는 이 섬의 주권을 예멘에게 인정했습니다. 그런데 이 섬은 거의 무인 상태였고, 군사적·경제적 가치는 제한적이었습니다. 그럼에도 불구하고, 국제법상 영유권을 확정받는 사례가 되면서 작은 섬 하나가 법적 의미를 크게 부각시킨 셈입니다. 전투와 판결이 단 3년 차이로 이어진 점은, 국제 분쟁이 짧은 시간 안에 법정으로 넘어갈 수 있음을 보여줍니다. 결국, 하니시 제도는 전략적 가치보다 법적 원칙이 더 큰 역할을 했던 사례라고 할 수 있습니다.",
-    "title_line1": "하니시 섬 3일 전투",
-    "title_line2": "바로 국제 재판까지",
+    "narration": "3일간 섬을 차지하기 위해 전쟁을 벌였는데, 3년 뒤 국제중재에서 영토 주인이 바뀌었다면 믿으시겠습니까? 1995년 12월, 예멘과 에리트레아는 홍해의 하니시 제도를 둘러싸고 무력 충돌을 벌였습니다. 15일부터 17일까지 이어진 전투에서 에리트레아군은 그레이터 하니시섬을 점령했고, 예멘군은 주카르섬을 차지했습니다. 이후 양국은 영토 분쟁을 국제중재에 맡겼고, 1998년 10월 판정이 내려졌습니다. 중재판정부는 그레이터 하니시를 포함한 주요 하니시 제도의 섬들을 예멘 영토로 인정했습니다. 반면 모하바카와 헤이콕 제도 등 일부 섬과 암초는 에리트레아 영토로 판정했습니다. 흥미로운 점은 전투에서 섬을 점령한 결과와 국제법에 따른 영유권 판정이 서로 달랐다는 것입니다. 그렇다면 총을 들고 차지한 땅과 국제법이 인정하는 영토는 무엇이 달랐던 걸까요?",
+    "title_line1": "하니시 제도 3일 전쟁",
+    "title_line2": "전투 승리와 영토 판정은 달랐다",
     "highlights": [
       {
         "s": 1,
-        "text": "3일만에 섬 *점령*"
+        "text": "단 *3일간의 전투*"
+      },
+      {
+        "s": 2,
+        "text": "홍해의 *하니시 제도*"
       },
       {
         "s": 3,
-        "text": "예멘이 섬 *점령*"
+        "text": "에리트레아군 *섬 점령*"
       },
       {
         "s": 4,
-        "text": "1998 *재판* 승"
+        "text": "1998년 *국제중재*"
       },
       {
-        "s": 7,
-        "text": "3년 차이 *법정*"
+        "s": 5,
+        "text": "주요 섬은 *예멘 영토*"
+      },
+      {
+        "s": 6,
+        "text": "전투와 판정은 *달랐다*"
       },
       {
         "s": 8,
-        "text": "법적 원칙이 *우선*"
+        "text": "영토의 주인은 *누가 결정할까?*"
       }
     ],
     "image_queries": [
-      "Hanish Islands occupied three days",
-      "Yemen Eritrea gunfire Hanish Islands",
-      "Yemen occupies Hanish Islands",
-      "1998 arbitration Hanish Islands",
-      "deserted Hanish Islands shore",
-      "legal sovereignty Hanish Islands",
-      "three year court case",
-      "legal principle island"
+      "Greater Hanish Island Red Sea aerial view",
+      "Eritrea Yemen Hanish Islands 1995 military conflict historical",
+      "Eritrean troops Hanish Island 1995 archival photo",
+      "Permanent Court of Arbitration Hague building",
+      "Greater Hanish Island deserted coastline",
+      "Eritrea Yemen territorial dispute Red Sea map",
+      "international arbitration judges courtroom",
+      "Hanish Islands Yemen Eritrea sovereignty map"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 1995년 레드 씨에서 일어난 일입니다. 12월 15일 새벽, 예멘과 에리트레아는 그레이터 하니시 섬을 두고 총격을 시작했습니다. 양측은 17일 새벽까지 3일간 교전했으며, 결국 예멘이 섬을 점령했습니다. 전투가 끝난 뒤, 1998년 영구중재재판소는 이 섬의 주권을 예멘에게 인정했습니다. 그런데 이 섬은 거의 무인 상태였고, 군사적·경제적 가치는 제한적이었습니다. 그럼에도 불구하고, 국제법상 영유권을 확정받는 사례가 되면서 작은 섬 하나가 법적 의미를 크게 부각시킨 셈입니다. 전투와 판결이 단 3년 차이로 이어진 점은, 국제 분쟁이 짧은 시간 안에 법정으로 넘어갈 수 있음을 보여줍니다. 결국, 하니시 제도는 전략적 가치보다 법적 원칙이 더 큰 역할을 했던 사례라고 할 수 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Greater Hanish Island Red Sea aerial view",
+      "Eritrea Yemen Hanish Islands 1995 military conflict historical",
+      "Eritrean troops Hanish Island 1995 archival photo",
+      "Permanent Court of Arbitration Hague building",
+      "Greater Hanish Island deserted coastline",
+      "Eritrea Yemen territorial dispute Red Sea map",
+      "international arbitration judges courtroom",
+      "Hanish Islands Yemen Eritrea sovereignty map"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/new-zealand-volcano-crater-3018634/",
+        "id": 3018634,
+        "type": "photo"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ThePixelman",
+        "page": "https://pixabay.com/photos/war-soldiers-parachutes-469503/",
+        "id": 469503,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "fotoblend",
+        "page": "https://pixabay.com/photos/photos-nostalgia-retro-photography-7666143/",
+        "id": 7666143
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "MarcusFriedrich",
+        "page": "https://pixabay.com/photos/leipzig-building-saxony-germany-6367607/",
+        "id": 6367607
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Walkerssk",
+        "page": "https://pixabay.com/photos/beach-sea-panorama-panoramic-1824855/",
+        "id": 1824855
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "danielshimmin0",
+        "page": "https://pixabay.com/photos/beach-socotra-yemen-sea-sand-547526/",
+        "id": 547526,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/courtroom-benches-seats-law-898931/",
+        "id": 898931
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "milivigerova",
+        "page": "https://pixabay.com/photos/map-sail-sailor-hand-finger-950353/",
+        "id": 950353,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2426,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "00196428146a",
+        "at": "2026-11-07 15:08",
+        "scene": 1,
+        "rejected_ids": [
+          3018634,
+          4408573
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1126,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b4e633da3763",
+        "at": "2026-11-07 15:08",
+        "scene": 2,
+        "rejected_ids": [
+          4499000,
+          469503,
+          9764984
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1461,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "006ce62da81d",
+        "at": "2026-11-07 15:08",
+        "scene": 3,
+        "rejected_ids": [
+          256889,
+          3018634,
+          7666143
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2458,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1e4f2061f87c",
+        "at": "2026-11-07 15:08",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.238,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d0e922c4e58f",
+        "at": "2026-11-07 15:08",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1731,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "35d2081b435e",
+        "at": "2026-11-07 15:08",
+        "scene": 6,
+        "rejected_ids": [
+          230012,
+          547526,
+          8526430
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3514,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e39621905a66",
+        "at": "2026-11-07 15:08",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2732,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3c0e5cdf2833",
+        "at": "2026-11-07 15:08",
+        "scene": 8,
+        "rejected_ids": [
+          62823,
+          950353
+        ]
+      }
+    ]
   },
   {
     "topic": "스프라틀리 제도, 한 섬에 최소 6개의 이름",
