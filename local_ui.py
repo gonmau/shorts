@@ -758,8 +758,31 @@ with T6a:
             _tst = _tc1.selectbox("스타일", ["hook", "pop", "classic"], 0, key="thm_style",
                                   format_func=lambda x: {"hook": "hook (제목·후크 중심)", "pop": "pop (국기+나라 띠)", "classic": "classic"}[x])
             _tsc = _tc2.number_input("배경 장면 번호 (0=자동)", 0, 30, int(_td[_ts].get("thumb_scene") or 0), key=f"thm_sc_{_ts}")
+            _to = dict(_td[_ts].get("thumb_opts") or {})
+            _o1, _o2, _o3 = st.columns(3)
+            _sc1 = _o1.slider("제목 1줄 크기 배율", 0.5, 1.8, float(_to.get("scale1", 1.0)), 0.05, key=f"thm_s1_{_ts}")
+            _sc2 = _o2.slider("제목 2줄 크기 배율", 0.5, 1.8, float(_to.get("scale2", 1.0)), 0.05, key=f"thm_s2_{_ts}")
+            _ang = _o3.slider("기울기(도)", -20.0, 20.0, float(_to.get("angle", 0.0)), 0.5, key=f"thm_an_{_ts}")
+            _o4, _o5 = st.columns(2)
+            _dy = _o4.slider("글자 위치 (위↑ / 아래↓ px)", -500, 500, int(_to.get("dy", 0)), 10, key=f"thm_dy_{_ts}")
+            _tg = _o5.checkbox("빨간 후크 태그 넣기", bool(_to.get("tag", True)), key=f"thm_tg_{_ts}")
+            _cols = {}
+            for _ln, (_key, _dflt) in enumerate((("title_line1", "#ffffff"), ("title_line2", "#000000")), 1):
+                _wd = str(_td[_ts].get(_key) or (_td[_ts].get("topic") if _ln == 1 else "") or "").split()
+                if not _wd:
+                    continue
+                st.caption(f"{_ln}줄 단어별 색 (기본색과 다르게 고른 단어만 적용)")
+                _prev = _to.get(f"colors{_ln}") or {}
+                _cc = st.columns(min(len(_wd), 6))
+                _pick = {}
+                for _k, _w in enumerate(_wd):
+                    _c = _cc[_k % len(_cc)].color_picker(_w, _prev.get(str(_k), _dflt), key=f"thm_c{_ln}_{_ts}_{_k}")
+                    if _c.lower() != _dflt:
+                        _pick[str(_k)] = _c
+                _cols[f"colors{_ln}"] = _pick
             if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
                 _dm = _ld()
+                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, **_cols}
                 if int(_tsc):
                     _dm[_ts]["thumb_scene"] = int(_tsc)
                 else:

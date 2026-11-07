@@ -87,7 +87,34 @@ def hook_tag(item):
     return first if 4 <= len(first) <= lim else ""
 
 
+def _hex(c, default):
+    try:
+        c = str(c).lstrip("#")
+        return tuple(int(c[k:k + 2], 16) for k in (0, 2, 4))
+    except Exception:
+        return default
+
+
+def _words_width(d, words, font):
+    sp = d.textlength(" ", font=font)
+    return sum(d.textlength(w, font=font) for w in words) + sp * max(0, len(words) - 1), sp
+
+
+def draw_words(d, text, font, cx, y, colors, default, stroke=0, stroke_fill=(0, 0, 0)):
+    """단어별 색상으로 가운데 정렬해 그림. colors = {단어 순번(문자열): '#rrggbb'}"""
+    words = text.split()
+    tw, sp = _words_width(d, words, font)
+    x = cx - tw / 2
+    for k, w in enumerate(words):
+        col = _hex(colors.get(str(k)), default) if colors.get(str(k)) else default
+        d.text((x, y), w, font=font, fill=col, stroke_width=stroke, stroke_fill=stroke_fill)
+        x += d.textlength(w, font=font) + sp
+
+
 def make(idx, item, channel, handle, avatar, fallback_background):
+    """item['thumb_opts'] = {scale1, scale2 (글씨 크기 배율), angle (기울기°), dy (세로 이동 px),
+    colors1, colors2 ({단어 순번: 색}), tag (후크 태그 on/off)}"""
+    o = item.get("thumb_opts") or {}
     im = shade(background(idx, item, fallback_background))
     d = ImageDraw.Draw(im)
 
@@ -99,31 +126,38 @@ def make(idx, item, channel, handle, avatar, fallback_background):
 
     t1 = str(item.get("title_line1") or item.get("topic") or "").strip()
     t2 = str(item.get("title_line2") or "").strip()
-    f1 = _fit_font(d, t1, W - 90, 190, 80)
-    f2 = _fit_font(d, t2, W - 150, 170, 76) if t2 else None
+    s1, s2 = float(o.get("scale1", 1.0) or 1.0), float(o.get("scale2", 1.0) or 1.0)
+    f1 = _font(max(20, int(_fit_font(d, t1, W - 60, 240, 80).size * s1)))
+    f2 = _font(max(20, int(_fit_font(d, t2, W - 110, 220, 76).size * s2))) if t2 else None
     gap = 26
     h1 = int(f1.size * 1.18)
     h2 = int(f2.size * 1.5) if f2 else 0
-    tag = hook_tag(item)
+    tag = hook_tag(item) if o.get("tag", True) else ""
     tag_h = 100 if tag else 0
     block = tag_h + (30 if tag else 0) + h1 + (gap + h2 if f2 else 0)
-    y0 = int(H * 0.60) - block // 2 + 120      # 가운데보다 약간 아래 (피드에서 글자가 잘 보이는 위치)
+    y0 = int(H * 0.60) - block // 2 + 120 + int(o.get("dy", 0))
 
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))     # 글자 덩어리를 따로 그려 한꺼번에 기울임
+    ld = ImageDraw.Draw(lay)
     y = y0
     if tag:
-        ft = _fit_font(d, tag, W - 260, 56, 34)
-        tw = d.textlength(tag, font=ft)
+        ft = _fit_font(ld, tag, W - 260, 56, 34)
+        tw = ld.textlength(tag, font=ft)
         x0 = (W - tw) / 2 - 36
-        d.rounded_rectangle((x0, y, x0 + tw + 72, y + tag_h), radius=tag_h // 2, fill=RED, outline=(255, 255, 255), width=5)
-        d.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=(255, 255, 255))
+        ld.rounded_rectangle((x0, y, x0 + tw + 72, y + tag_h), radius=tag_h // 2, fill=RED, outline=(255, 255, 255), width=5)
+        ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=(255, 255, 255))
         y += tag_h + 30
 
-    TP.stroke_text(d, t1, W // 2, y, f1, (255, 255, 255), stroke=13)
+    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, (255, 255, 255), stroke=13)
     y += h1 + gap
     if f2:
-        w2 = d.textlength(t2, font=f2)
+        w2 = _words_width(ld, t2.split(), f2)[0]
         bs = TP.brush(int(w2) + 90, int(f2.size * 1.25), seed=idx * 11 + len(t2))
-        im.alpha_composite(bs, (int((W - bs.width) / 2), y - 22))
-        d = ImageDraw.Draw(im)
-        d.text(((W - w2) / 2, y + (f2.size * 1.25 - f2.size) / 2 - 18), t2, font=f2, fill=(0, 0, 0))
+        lay.alpha_composite(bs, (int((W - bs.width) / 2), y - 22))
+        ld = ImageDraw.Draw(lay)
+        draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {}, (0, 0, 0))
+    ang = float(o.get("angle", 0) or 0)
+    if ang:
+        lay = lay.rotate(ang, resample=Image.BICUBIC, center=(W // 2, y0 + block // 2))
+    im.alpha_composite(lay)
     return im.convert("RGB")
