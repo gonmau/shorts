@@ -58807,7 +58807,7 @@
     "body": "예멘(Yemen)과 에리트레아(Eritrea)는 그레이터 하니시(Greater Hanish) 섬을 두고 1995년 12월 15일부터 17일까지 3일간 전투를 벌였다. 이후 1998년 영구중재재판소(Permanent Court of Arbitration)가 섬의 소유권을 예멘에게 인정했다.",
     "twist": "그 섬은 거의 무인 상태였으며, 실제 전략적 가치는 제한적이었지만 국제법적 의미는 크게 부각되었다.",
     "caveat": "이 사건은 1995년 전투와 1998년 판결에 한정된 사례이며, 이후 상황은 변동될 수 있다.",
-    "country": "이집트",
+    "country": "예멘",
     "theme": "영토/국경",
     "wiki_title": "Hanish Islands conflict",
     "source_url": "https://en.wikipedia.org/wiki/Hanish_Islands_conflict",
@@ -59797,5 +59797,56 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
     "status_v6": "video_done"
+  },
+  {
+    "topic": "하니시 제도(Hanish Islands) 분쟁의 짧은 전투와 국제 판결",
+    "hook": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 이게 1995년 레드씨(Red Sea)에서 일어난 일이다!",
+    "body": "예멘(Yemen)과 에리트레아(Eritrea)는 그레이터 하니시(Greater Hanish) 섬을 두고 1995년 12월 15일부터 17일까지 3일간 전투를 벌였다. 이후 1998년 영구중재재판소(Permanent Court of Arbitration)가 섬의 소유권을 예멘에게 인정했다.",
+    "twist": "그 섬은 거의 무인 상태였으며, 실제 전략적 가치는 제한적이었지만 국제법적 의미는 크게 부각되었다.",
+    "caveat": "이 사건은 1995년 전투와 1998년 판결에 한정된 사례이며, 이후 상황은 변동될 수 있다.",
+    "country": "이집트",
+    "theme": "영토/국경",
+    "wiki_title": "Hanish Islands conflict",
+    "source_url": "https://en.wikipedia.org/wiki/Hanish_Islands_conflict",
+    "verify_note": "Hanish Islands conflict",
+    "confidence": "source",
+    "created_at": "2026-11-07T00:18:16.837749+00:00",
+    "status": "scripted",
+    "narration": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 1995년 레드 씨에서 일어난 일입니다. 12월 15일 새벽, 예멘과 에리트레아는 그레이터 하니시 섬을 두고 총격을 시작했습니다. 양측은 17일 새벽까지 3일간 교전했으며, 결국 예멘이 섬을 점령했습니다. 전투가 끝난 뒤, 1998년 영구중재재판소는 이 섬의 주권을 예멘에게 인정했습니다. 그런데 이 섬은 거의 무인 상태였고, 군사적·경제적 가치는 제한적이었습니다. 그럼에도 불구하고, 국제법상 영유권을 확정받는 사례가 되면서 작은 섬 하나가 법적 의미를 크게 부각시킨 셈입니다. 전투와 판결이 단 3년 차이로 이어진 점은, 국제 분쟁이 짧은 시간 안에 법정으로 넘어갈 수 있음을 보여줍니다. 결국, 하니시 제도는 전략적 가치보다 법적 원칙이 더 큰 역할을 했던 사례라고 할 수 있습니다.",
+    "title_line1": "하니시 섬 3일 전투",
+    "title_line2": "바로 국제 재판까지",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "3일만에 섬 *점령*"
+      },
+      {
+        "s": 3,
+        "text": "예멘이 섬 *점령*"
+      },
+      {
+        "s": 4,
+        "text": "1998 *재판* 승"
+      },
+      {
+        "s": 7,
+        "text": "3년 차이 *법정*"
+      },
+      {
+        "s": 8,
+        "text": "법적 원칙이 *우선*"
+      }
+    ],
+    "image_queries": [
+      "Hanish Islands occupied three days",
+      "Yemen Eritrea gunfire Hanish Islands",
+      "Yemen occupies Hanish Islands",
+      "1998 arbitration Hanish Islands",
+      "deserted Hanish Islands shore",
+      "legal sovereignty Hanish Islands",
+      "three year court case",
+      "legal principle island"
+    ],
+    "scene_count": 10
   }
 ]
