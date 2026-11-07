@@ -80,6 +80,27 @@ def score_pair(a, b):
     return best, why
 
 
+
+DUP_THR_DEFAULT = 0.45
+
+
+def dup_reason(f, pool, thr=None):
+    """새 소재 f가 pool(기존 소재들, 폐기 포함)과 중복이면 이유(문자열), 아니면 None. 중복 찾기 도구와 같은 기준(score_pair)."""
+    import os
+    thr = float(thr if thr is not None else os.environ.get("DUP_THR", DUP_THR_DEFAULT))
+    wt = re.sub(r"[^0-9a-z가-힣]", "", str(f.get("wiki_title", "")).lower())
+    ck = _country_key(f)
+    for i, o in enumerate(pool):
+        if wt and wt == re.sub(r"[^0-9a-z가-힣]", "", str(o.get("wiki_title", "")).lower()):
+            return f"같은 위키 문서 ({f.get('wiki_title')})"
+        if _country_key(o) != ck:
+            continue
+        s, why = score_pair(f, o)
+        if s >= thr:
+            return f"[{i}] {why}"
+    return None
+
+
 def _views():
     try:
         d = json.loads(Path("yt_stats.json").read_text(encoding="utf-8"))

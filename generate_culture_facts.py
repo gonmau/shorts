@@ -153,17 +153,12 @@ def _sim(a: str, b: str) -> float:
 
 
 def is_duplicate(f: dict, pool: list) -> bool:
-    """같은 위키 문서이거나, 같은 나라에서 주제/훅이 비슷하면 중복. (같은 나라라도 주제가 다르면 허용)"""
-    wt = wiki_source._norm(f.get("wiki_title", ""))
-    c = str(f.get("country", "")).strip().lower()
-    for o in pool:
-        if wt and wt == wiki_source._norm(o.get("wiki_title", "")):
-            return True
-        if str(o.get("country", "")).strip().lower() != c:
-            continue
-        if max(_sim(f.get("topic"), o.get("topic")), _sim(f.get("hook"), o.get("hook"))) >= 0.5:
-            return True
-    return False
+    """중복 소재 찾기 도구(find_dup_topics)와 같은 기준: 같은 위키 문서이거나, 같은 나라(표기 달라도 통합)에서 주제·훅·제목·대본이 비슷하면 중복."""
+    import find_dup_topics as FD
+    why = FD.dup_reason(f, pool)
+    if why:
+        print(f"    (중복 근거: {why})")
+    return bool(why)
 
 
 def filter_new(batch: list, db: list) -> list:
