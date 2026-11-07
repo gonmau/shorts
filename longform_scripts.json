@@ -3661,5 +3661,345 @@
     "check": "ok"
    }
   ]
+ },
+ "21": {
+  "narration": "프랑스에서 사망한 연인과도 결혼이 가능하다는 사실, 알고 계셨나요? 이 제도는 1995년 대통령 특별령을 근거로 민법 제171조에 명시되었습니다. 살아 있는 배우자는 먼저 대통령에게 허가를 받아야 합니다. 허가가 떨어지면 지방 법원에 결혼 신고를 제출합니다. 법원은 고인의 가족 동의를 확인한 뒤 최종 승인을 내립니다. 공식적으로 결혼이 인정되면 유산 상속세 등 세금 혜택을 받을 수 있습니다. 그러나 사후 결혼으로는 자녀를 가질 수 없다는 제한이 있습니다. 제도가 생긴 배경은 전쟁이나 사고로 갑작스레 사망한 연인을 기억하고 싶어 하는 가족들의 요청이었습니다. 특히 제1차 세계대전 이후 많은 사례가 있었으며, 당시 사회는 전쟁으로 잃은 사랑을 법적으로 보호하고자 했습니다. 실제 사례로는 전쟁 중 사망한 남성을 사랑한 여성의 결혼 신청이 대통령 승인을 받아 이루어진 경우가 있습니다. 이때 신부는 남편의 이름으로 은행 계좌를 개설하고, 연금 수령권을 확보했습니다. 프랑스 외에도 몇몇 국가에서 비슷한 제도가 존재하지만, 절차와 혜택은 크게 다릅니다. 예를 들어, 일부 아프리카 국가에서는 전통적인 ‘유령 결혼’이 존재하지만 법적 효력은 없습니다. 사후 결혼은 드물지만, 프랑스에서는 실제 행정 절차를 거쳐 실현되고 있습니다. 이제 다음 이야기는 볼리비아에서의 독특한 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "프랑스에서 사망한 연인과도 결"
+   },
+   {
+    "sentence": 5,
+    "text": "세금 혜택을 받을 수 있음"
+   },
+   {
+    "sentence": 9,
+    "text": "전쟁 이후 가족 요청이 배경"
+   }
+  ],
+  "compare": {
+   "title": "프랑스 vs 볼리비아",
+   "left": "프랑스",
+   "right": "볼리비아",
+   "rows": [
+    {
+     "label": "법적 효력",
+     "left": "공식 인정",
+     "right": "전통 관습"
+    },
+    {
+     "label": "절차 복잡도",
+     "left": "엄격",
+     "right": "느슨"
+    },
+    {
+     "label": "세금 혜택",
+     "left": "있음",
+     "right": "없음"
+    }
+   ]
+  },
+  "recap": "프랑스는 사후 결혼을 법적으로 인정합니다.",
+  "broll": [
+   "French civil ceremony",
+   "historic war memorial",
+   "legal documents signing"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "3b672553da29",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:47",
+  "bridge_to": "Bolivia",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0021_France.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0021_France_timing.json",
+  "tts_hash": "2e35ed34f584"
+ },
+ "24": {
+  "narration": "볼리비아에서 아침마다 코카잎을 씹는 모습을 보셨나요? 안데스 고지대 주민들은 한 줌의 잎을 입에 물고 천천히 씹으며 하루를 시작합니다. 코카잎은 고산병 완화와 피로 회복에 효과가 있어 전통 의학으로 오랫동안 활용돼 왔습니다. 정부는 코카잎을 공식 식품으로 인정하고, 생산자 협동조합을 통해 합법적인 유통망을 관리합니다. 이 제도는 농가 소득을 안정시키고 지역 경제에 기여합니다. 코카차도 일상적인 음료로, 잎을 뜨거운 물에 우려 마시면 부드러운 자극을 느낄 수 있습니다. 그러나 국경을 넘으면 상황이 달라집니다. 코카잎을 해외로 반출하거나 공항에 가지고 가면 마약으로 간주돼 강력히 처벌받습니다. 그래서 현지에서는 자유롭지만, 국제 여행 시엔 반드시 현지 규정을 확인해야 합니다. 이처럼 볼리비아는 전통과 현대 제도를 조화시켜 코카잎을 문화유산으로 보호합니다. 다음에는 필리핀의 독특한 문화 이야기를 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "볼리비아에서 아침마다 코카잎을"
+   },
+   {
+    "sentence": 5,
+    "text": "정부는 코카잎을 공식 식품으로"
+   }
+  ],
+  "compare": {
+   "title": "볼리비아 vs 필리핀",
+   "left": "볼리비아",
+   "right": "필리핀",
+   "rows": [
+    {
+     "label": "법적 지위",
+     "left": "코카잎 합법",
+     "right": "마리화나 금지"
+    },
+    {
+     "label": "전통 음료",
+     "left": "코카차 일상",
+     "right": "카라멜 커피 인기"
+    },
+    {
+     "label": "국제 제한",
+     "left": "수출 엄격",
+     "right": "수출 자유"
+    }
+   ]
+  },
+  "recap": "볼리비아, 코카잎은 일상과 법으로 보호받는다.",
+  "broll": [
+   "Andean market stalls",
+   "people chewing coca leaves",
+   "mountain village sunrise"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "e2bd7f6e68e1",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:48",
+  "bridge_to": "Philippines",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia_timing.json",
+  "tts_hash": "cad4bea7db4e"
+ },
+ "25": {
+  "narration": "필리핀 마을에선 집을 직접 옮기는 전통이 살아 있습니다. 나무와 대나무로 만든 전통 가옥을 통나무 위에 올려 놓습니다. 마을 사람들이 힘을 모아 한 번에 들어 올려 새로운 자리로 이동합니다. 이 방식은 공동체의 결속을 상징하며, 서로 돕는 문화가 뿌리깊게 자리 잡았기 때문입니다. 옛날엔 남녀노소가 줄을 서서 힘을 모았습니다. 오늘날 도시에서도 이 전통을 이어가며 전동 지게차를 활용합니다. 트럭 대신 전동 지게차가 무게를 고르게 분산시켜 안전성을 높입니다. 기술이 들어왔지만 이웃의 손길이 핵심이라는 점은 변하지 않았습니다. 집을 옮길 때는 먼저 가옥을 철거하지 않고 전체를 들어 올립니다. 이는 재료 손실을 최소화하고, 이사 비용을 절감하는 실용적인 이유도 있습니다. 일부 지역에서는 축제로도 이 장면을 재현합니다. 관객들은 옛날 방식과 현대 장비가 조화를 이루는 모습을 감상합니다. 필리핀의 바야니한 정신은 오늘날에도 공동체 의식을 고취시킵니다. 이 전통은 다른 나라와는 다른 독특한 이사 문화라 할 수 있습니다. 다음 이야기는 우루과이의 전통을 살펴보세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "바야니한"
+   },
+   {
+    "sentence": 5,
+    "text": "전동 지게차"
+   }
+  ],
+  "compare": {
+   "title": "필리핀 vs 우루과이",
+   "left": "필리핀",
+   "right": "우루과이",
+   "rows": [
+    {
+     "label": "이사 방식",
+     "left": "공동체 힘으로 이동",
+     "right": "전문 이사업체 이용"
+    },
+    {
+     "label": "전통 보전",
+     "left": "활발히 실천 중",
+     "right": "일부 지역에 국한"
+    },
+    {
+     "label": "기술 적용",
+     "left": "전동 지게차 활용",
+     "right": "전통 방식 유지"
+    }
+   ]
+  },
+  "recap": "필리핀의 바야니한, 공동체가 만든 이사 문화",
+  "broll": [
+   "traditional Filipino house",
+   "community members lifting house",
+   "electric forklift moving house"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "50f37bbc3088",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:49",
+  "bridge_to": "Uruguay",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines_timing.json",
+  "tts_hash": "9431a0727266"
+ },
+ "22": {
+  "narration": "우루과이에서는 집에서 대마초를 키울 수 있다는 사실, 알고 계셨나요? 2013년, 국가 차원에서 대마초를 규제 체계에 포함시키며 세계 최초로 재배를 합법화했습니다. 자격을 갖춘 시민은 최대 6주 동안 6그루까지 식물을 키울 수 있고, 연간 수확량은 480그램으로 제한됩니다. 신청 절차는 주민등록과 신분 확인을 거쳐 정부에 등록하는 방식이며, 18세 이상이어야 합니다. 재배 외에도 회원제 클럽과 허가된 약국에서 구매할 수 있는데, 각각 별도의 규제가 적용됩니다. 예를 들어, 클럽은 회원 수에 따라 연간 재배 한도를 정하고, 약국은 처방전 없이도 일정량을 판매합니다. 이러한 제도는 단순한 합법화를 넘어, 생산부터 유통까지 국가가 직접 관리한다는 점에서 독특합니다. 다른 나라에서는 대마초가 전면 금지되거나 제한된 의료용만 허용되는 경우가 많아, 우루과이의 접근 방식이 눈에 띕니다. 실제로 수도 몬테비데오의 아파트 창가에서 식물을 키우는 주민들을 볼 수 있는데, 이들은 정부가 제공하는 재배 가이드라인을 따릅니다. 이렇게 체계적인 관리가 가능하도록 만든 배경에는 마약 문제를 억제하고, 검은 시장을 축소하려는 정책적 목표가 있습니다. 이제 여러분은 왜 우루과이가 이런 길을 선택했는지 이해하셨을 겁니다. 다음 이야기는 폴란드에서의 마리화나 정책을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "우루과이에서는 집에서 대마초를"
+   },
+   {
+    "sentence": 3,
+    "text": "연간 수확량은 480그램으로 "
+   },
+   {
+    "sentence": 9,
+    "text": "정부가 재배 가이드라인을 제공"
+   }
+  ],
+  "compare": {
+   "title": "우루과이 vs 폴란드",
+   "left": "우루과이",
+   "right": "폴란드",
+   "rows": [
+    {
+     "label": "재배 허용",
+     "left": "가능",
+     "right": "불가"
+    },
+    {
+     "label": "법적 제한",
+     "left": "연간 480g",
+     "right": "엄격"
+    },
+    {
+     "label": "구매 경로",
+     "left": "클럽·약국·직접 재배",
+     "right": "제한적"
+    }
+   ]
+  },
+  "recap": "우루과이, 집에서 대마초 재배가 합법인 나라입니다.",
+  "broll": [
+   "urban balcony garden",
+   "government office interior",
+   "pharmacy cannabis display"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "edf173232a38",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:50",
+  "bridge_to": "Poland",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay_timing.json",
+  "tts_hash": "b1f854135ea6"
+ },
+ "26": {
+  "narration": "폴란드에서는 이름 날이 생일보다 더 큰 축하를 받는다는 사실, 알고 계셨나요? 이름 날은 성인의 축일을 기준으로 만든 달력에 미리 적혀 있어, 매일 누군가의 이름을 기억하게 됩니다. 이름이 적힌 날이면 가족과 친구가 집으로 모여 케이크와 간단한 선물을 주고, 직장에서는 작은 파티와 함께 동료에게 꽃이나 사탕을 건넵니다. 아이들은 학교에서 같은 이름을 가진 친구에게 사탕을 나눠 주며, 이때마다 ‘오늘은 내 이름 날이야’라고 외칩니다. 이런 전통은 중세 교회에서 성인의 날을 기념하던 관습이 일상으로 스며든 결과이며, 특히 가톨릭이 주류였던 지역에서 강하게 유지됩니다. 폴란드 북부와 남부 일부 지역을 제외하고는 거의 모든 이름에 해당하는 날이 존재합니다. 이름 날을 기억하고 챙기는 문화는 사람들 사이에 작은 의무감을 만들고, 하루만큼은 모두가 주인공이 되는 느낌을 줍니다. 그래서 직장 동료가 ‘오늘은 마리아의 이름 날이야’라고 말하면, 사무실 전체가 축하 분위기로 바뀝니다. 이처럼 이름 날은 일상의 작은 축제로, 사람들을 더 가깝게 만들죠. 다음엔 에스토니아의 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "이름 날이 생일보다 큰 축하"
+   },
+   {
+    "sentence": 4,
+    "text": "성인 축일을 기준"
+   },
+   {
+    "sentence": 7,
+    "text": "직장 파티와 선물"
+   }
+  ],
+  "compare": {
+   "title": "폴란드 vs 에스토니아",
+   "left": "폴란드",
+   "right": "에스토니아",
+   "rows": [
+    {
+     "label": "축하 규모",
+     "left": "크게",
+     "right": "작게"
+    },
+    {
+     "label": "전통 기원",
+     "left": "성인 축일",
+     "right": "민속 행사"
+    },
+    {
+     "label": "일상 적용",
+     "left": "광범위",
+     "right": "제한적"
+    }
+   ]
+  },
+  "recap": "이름 날은 폴란드 일상에 스며든 작은 축제입니다.",
+  "broll": [
+   "Polish family gathering",
+   "office birthday celebration",
+   "calendar with name days"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "ec6435caeb09",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:50",
+  "bridge_to": "Estonia",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland_timing.json",
+  "tts_hash": "ca0d286c7231"
+ },
+ "23": {
+  "narration": "스마트폰 하나로 대통령을 뽑을 수 있다면 믿으시겠어요? 에스토니아는 2005년부터 전자 주민등록증과 모바일 ID를 이용해 온라인 투표를 시행합니다. 이 카드에는 개인 인증용 칩과 QR코드가 내장돼 있어 스마트폰에 연결하면 바로 신원 확인이 가능합니다. 인증 절차를 마치면 투표 화면이 열리고, 손가락 하나로 후보를 선택해 투표를 마칩니다. 2023년 대통령 선거에서는 전체 투표의 절반에 가까운 44%가 전자 방식으로 집계되었습니다. 온라인 투표는 국내에 거주하는 시민뿐 아니라 해외에 있는 에스토니아인에게도 동일하게 제공됩니다. 해외에서 거주하는 시민은 현지에서 스마트폰만 있으면 에스토니아 대사관을 방문할 필요 없이 투표에 참여할 수 있습니다. 이 시스템은 투표 접근성을 크게 높여 주었고, 특히 장거리 이동이 어려운 고령층에게 큰 호응을 얻었습니다. 에스토니아는 디지털 신분증을 기반으로 세계 최초의 온라인 투표 인프라를 구축한 국가로 평가받고 있습니다. 디지털 시대에 맞춰 민주주의가 어떻게 변하고 있는지 직접 체험해 보는 사례라 할 수 있죠. 다음에도 흥미로운 디지털 혁신 이야기를 전해드리겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "스마트폰 하나로 대통령을 뽑을"
+   },
+   {
+    "sentence": 2,
+    "text": "전자 주민등록증과 모바일 ID"
+   },
+   {
+    "sentence": 5,
+    "text": "2023년 대통령 선거 44%"
+   }
+  ],
+  "compare": {
+   "title": "에스토니아 vs 한국",
+   "left": "에스토니아",
+   "right": "한국",
+   "rows": [
+    {
+     "label": "투표 방식",
+     "left": "온라인 투표 다수",
+     "right": "오프라인 중심"
+    },
+    {
+     "label": "신분 인증",
+     "left": "디지털 ID 칩",
+     "right": "주민등록증·휴대폰"
+    },
+    {
+     "label": "해외 투표",
+     "left": "동일 절차 적용",
+     "right": "제한적 참여"
+    }
+   ]
+  },
+  "recap": "에스토니아는 스마트폰으로 손쉽게 투표하는 디지털 민주주의 국가입니다.",
+  "broll": [
+   "Estonia e‑government office",
+   "mobile voting app screen",
+   "citizens using smartphones for voting"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "2264e62ec3f0",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-07 16:51",
+  "bridge_to": "",
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia_timing.json",
+  "tts_hash": "67e38f2cbde7"
  }
 }
