@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """파이프라인 공통 함수 (DB 입출력, 문장 분리, 폴더 이름 등)."""
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
@@ -88,10 +89,20 @@ def load_db():
 
 
 def save_db(db):
-    tmp = DB_PATH.with_suffix(".tmp")
-    with tmp.open("w", encoding="utf-8") as f:
-        json.dump(db, f, ensure_ascii=False, indent=2)
-    tmp.replace(DB_PATH)
+    import tempfile
+    fd, tmp = tempfile.mkstemp(prefix=".facts_", suffix=".tmp", dir=str(DB_PATH.resolve().parent))   # 프로세스마다 다른 임시 파일 (동시 저장 시 섞임 방지)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, DB_PATH)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 
 def split_sentences(text):

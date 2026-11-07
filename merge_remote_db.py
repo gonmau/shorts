@@ -18,7 +18,8 @@ def main():
         print("⚠️ " + w)
     n_conf = sum(len(c) for *_, c in report)
     print(f"병합: 원격 {len(G)}개 + 이번 실행 {len(L)}개 → {len(merged)}개 소재 (차이 {len(report)}개, 충돌 {n_conf}칸은 원격 값 사용)")
-    json.dump(merged, open("facts_db.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    import sync_db as _SD
+    _SD._atomic_write_json("facts_db.json", merged)
 
 
 if __name__ == "__main__":

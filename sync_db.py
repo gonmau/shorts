@@ -32,6 +32,26 @@ KEEP_NONEMPTY = {"youtube_id", "youtube_privacy", "uploaded_at"}
 REJECT_WINS = True    # 폐기와 영상완료가 갈리면 폐기를 따른다 (PC에서 폐기한 소재가 되살아나지 않게). --video-wins 로 예전 방식
 
 
+def _atomic_write_json(path, obj):
+    """임시 파일(프로세스마다 다른 이름)에 쓴 뒤 교체한다: 동시에 두 곳에서 저장해도 파일이 섞여 깨지지 않는다."""
+    import tempfile
+    d = os.path.dirname(os.path.abspath(path))
+    fd, tmp = tempfile.mkstemp(prefix=".facts_", suffix=".tmp", dir=d)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, path)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
+
+
+
 def key(f):
     return (str(f.get("country", "")), str(f.get("topic", "")))
 
@@ -260,7 +280,7 @@ def main():
         print("미리보기입니다. 적용하려면 --apply (GitHub에도 올리려면 --apply --push)")
         return
     shutil.copy(a.local, a.local + ".bak") if os.path.exists(a.local) else None
-    json.dump(merged, open(a.local, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    _atomic_write_json(a.local, merged)
     print(f"✔ {a.local} 갱신 (백업: {a.local}.bak)")
     if a.push:
         if not token:
