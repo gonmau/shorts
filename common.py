@@ -36,9 +36,55 @@ def _fix_media_paths(db):
     return db
 
 
+def _repair_db_text(text):
+    """깨진 facts_db.json을 고쳐 본다: 끝에 남은 쉼표 제거 → 잘린 파일은 마지막 완전한 소재까지만 살림. 실패하면 None."""
+    t = re.sub(r",(\s*[}\]])", r"\1", text)
+    try:
+        return json.loads(t)
+    except Exception:
+        pass
+    # 잘렸거나 뒤에 쓰레기가 붙은 경우: 최상위 배열의 완전한 원소까지만
+    try:
+        dec = json.JSONDecoder()
+        i = t.index("[") + 1
+        out = []
+        while True:
+            while i < len(t) and t[i] in " \r\n\t,":
+                i += 1
+            if i >= len(t) or t[i] == "]":
+                break
+            try:
+                obj, i = dec.raw_decode(t, i)
+            except Exception:
+                break
+            out.append(obj)
+        return out or None
+    except Exception:
+        return None
+
+
 def load_db():
-    with DB_PATH.open("r", encoding="utf-8") as f:
-        return _fix_media_paths(json.load(f))
+    try:
+        with DB_PATH.open("r", encoding="utf-8") as f:
+            return _fix_media_paths(json.load(f))
+    except json.JSONDecodeError as e:
+        # 파일이 깨졌을 때(동시 저장·수동 편집 실수 등): 자동 복구 시도 (깨진 원본은 .broken 으로 보관)
+        raw = DB_PATH.read_text(encoding="utf-8", errors="replace")
+        fixed = _repair_db_text(raw)
+        if fixed is None:
+            bak = Path(str(DB_PATH) + ".bak")
+            if bak.exists():
+                try:
+                    fixed = json.loads(bak.read_text(encoding="utf-8"))
+                    print(f"[경고] {DB_PATH} 복구 실패 → 백업(.bak)으로 대체")
+                except Exception:
+                    fixed = None
+        if fixed is None:
+            raise RuntimeError(f"{DB_PATH} 가 깨져서 읽을 수 없습니다 ({e}). GitHub의 facts_db.json 을 받아 덮어쓰거나, update_code 후 파일을 지우고 다시 실행하세요.") from e
+        DB_PATH.with_suffix(".broken.json").write_text(raw, encoding="utf-8")
+        save_db(fixed)
+        print(f"[경고] {DB_PATH} 가 깨져 있어 자동 복구했습니다 (원본: {DB_PATH.with_suffix('.broken.json')}, 소재 {len(fixed)}개)")
+        return _fix_media_paths(fixed)
 
 
 def save_db(db):
