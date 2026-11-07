@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 10:10:15 (KST) · 기록 1116건 · 소재 568개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 10:10:33 (KST) · 기록 1117건 · 소재 569개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,7 +12,7 @@
 | apply_review | 69 | 0 | 12초 |
 | approve | 16 | 0 | 3초 |
 | build_video | 49 | 0 | 9시간 4분 |
-| check_country | 5 | 0 | 1초 |
+| check_country | 6 | 0 | 1초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:10 | PC | check_country | check_country.py --apply | ✅ | 0초 |  |
 | 10:10 | PC | check_country | check_country.py | ✅ | 0초 |  |
 | 10:07 | PC | 코드업데이트 | gonmau/shorts: 2개 (find_dup_topics.py, generate_culture_facts.py) | ✅ |  |  |
 | 09:48 | PC | 코드업데이트 | gonmau/shorts: 3개 (common.py, merge_remote_db.py, sync_db.py) | ✅ |  |  |
