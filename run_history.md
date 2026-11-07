@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 15:00:19 (KST) · 기록 1150건 · 소재 572개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 15:03:44 (KST) · 기록 1152건 · 소재 572개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,7 +12,7 @@
 | apply_review | 76 | 0 | 14초 |
 | approve | 18 | 0 | 3초 |
 | build_video | 50 | 0 | 9시간 12분 |
-| check_country | 7 | 0 | 2초 |
+| check_country | 8 | 0 | 2초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -31,7 +31,7 @@
 | upload_to_youtube | 15 | 0 | 10분 31초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 59 | 0 | 0초 |
+| 코드업데이트 | 60 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:03 | PC | check_country | check_country.py | ✅ | 0초 |  |
+| 15:02 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 14:59 | PC | 코드업데이트 | gonmau/shorts: 3개 (clean_hedges.py, generate_script.py, local_ui.py) | ✅ |  |  |
 | 14:58 | PC | check_country | check_country.py | ✅ | 0초 |  |
 | 14:55 | PC | generate_script | generate_script.py --limit 1 --start 556 | ✅ | 8초 |  |
