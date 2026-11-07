@@ -24,9 +24,14 @@ MAX_OVERLAYS = 30
 _FONTS = {}
 
 
-def _font(size, bold):
-    key = (size, bool(bold))
+def _font(size, bold, fid=""):
+    import fonts as _F
+    fp = _F.path(fid) if fid else _F.role_path("ovl")
+    key = (size, bool(bold), fp)
     if key in _FONTS:
+        return _FONTS[key]
+    if fp:
+        _FONTS[key] = ImageFont.truetype(fp, size)
         return _FONTS[key]
     if bold:
         cands = [r"C:\Windows\Fonts\malgunbd.ttf", r"C:\Windows\Fonts\NanumGothicBold.ttf",
@@ -81,7 +86,7 @@ def normalize(o):
         "pos": pos, "x": _num(o.get("x"), 50, 0, 100), "y": _num(y, 50, 0, 100),
         "size": int(_num(o.get("size"), 80, 20, 220)), "color": str(o.get("color") or "#FFFFFF"),
         "stroke": str(o.get("stroke") if o.get("stroke") is not None else "#000000"),
-        "bold": bool(o.get("bold", True)), "effect": eff, "bg": str(o.get("bg") or ""),
+        "bold": bool(o.get("bold", True)), "font": str(o.get("font") or ""), "effect": eff, "bg": str(o.get("bg") or ""),
     }
 
 
@@ -117,7 +122,7 @@ def _wrap(draw, text, font, max_w):
 
 def render_text(o, reveal=None):
     """문구 이미지(RGBA)와 중심 좌표(px)를 돌려준다. reveal=글자 수면 앞에서 그만큼만 보이게(레이아웃은 전체 기준)."""
-    font = _font(o["size"], o["bold"])
+    font = _font(o["size"], o["bold"], o.get("font", ""))
     tmp = ImageDraw.Draw(Image.new("RGB", (4, 4)))
     lines = _wrap(tmp, o["text"], font, MAX_W)
     asc, desc = font.getmetrics()

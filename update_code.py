@@ -65,6 +65,8 @@ def blob_sha(path):
 
 
 def wanted(path):
+    if path.startswith("fonts/"):
+        return path.endswith((".ttf", ".otf"))
     return "/" not in path and (path.endswith(".py") or path == "requirements.txt")
 
 
@@ -73,7 +75,14 @@ def fetch_tree(repo, branch, h):
     if r.status_code == 404:
         raise SystemExit(f"저장소/브랜치를 찾을 수 없습니다 ({repo}@{branch}). 비공개면 GITHUB_TOKEN 환경변수를 설정하세요.")
     r.raise_for_status()
-    return {t["path"]: t["sha"] for t in r.json().get("tree", []) if t.get("type") == "blob"}
+    items = r.json().get("tree", [])
+    out = {t["path"]: t["sha"] for t in items if t.get("type") == "blob"}
+    for t in items:      # fonts/ 폴더 (글씨체 파일)도 같이 받는다
+        if t.get("type") == "tree" and t["path"] == "fonts":
+            rf = requests.get(f"https://api.github.com/repos/{repo}/git/trees/{t['sha']}", headers=h, timeout=60)
+            if rf.ok:
+                out.update({"fonts/" + x["path"]: x["sha"] for x in rf.json().get("tree", []) if x.get("type") == "blob"})
+    return out
 
 
 def main():
@@ -141,9 +150,10 @@ def main():
         r.raise_for_status()
         data = base64.b64decode(r.json()["content"])
         f = BASE / p
-        if f.exists():
+        if f.exists() and not p.startswith("fonts/"):
             bk.mkdir(parents=True, exist_ok=True)
             shutil.copy2(f, bk / p)
+        f.parent.mkdir(parents=True, exist_ok=True)
         tmp = f.with_name(f.name + ".new")
         tmp.write_bytes(data)
         os.replace(tmp, f)

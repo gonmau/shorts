@@ -126,9 +126,11 @@ def make(idx, item, channel, handle, avatar, fallback_background):
 
     t1 = str(item.get("title_line1") or item.get("topic") or "").strip()
     t2 = str(item.get("title_line2") or "").strip()
+    import fonts as _F
+    fp = _F.path(o.get("font")) or _F.role_path("thumb")
     s1, s2 = float(o.get("scale1", 1.0) or 1.0), float(o.get("scale2", 1.0) or 1.0)
-    f1 = _font(max(20, int(_fit_font(d, t1, W - 60, 240, 80).size * s1)))
-    f2 = _font(max(20, int(_fit_font(d, t2, W - 110, 220, 76).size * s2))) if t2 else None
+    f1 = _font(max(20, int(_fit_font(d, t1, W - 60, 240, 80, font_path=fp).size * s1)), True, fp)
+    f2 = _font(max(20, int(_fit_font(d, t2, W - 110, 220, 76, font_path=fp).size * s2)), True, fp) if t2 else None
     gap = 26
     h1 = int(f1.size * 1.18)
     h2 = int(f2.size * 1.5) if f2 else 0

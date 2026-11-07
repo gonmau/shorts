@@ -90,6 +90,9 @@ def make_template(title1, title2, credit, out_path=None, *, channel_name="채널
                   handle="@handle", avatar_path=None,
                   title_color_2=TITLE_COLOR_2, font_path=None):
     """이미지 자리가 비어 있는 배경 템플릿 (RGB) 생성."""
+    if font_path is None:
+        import fonts as _F
+        font_path = _F.role_path("title")
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 

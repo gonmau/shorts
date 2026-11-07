@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 FILE = Path("pipeline_settings.json")
-KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec", "yt_thumb", "tv_fx")
+KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec", "yt_thumb", "tv_fx", "font_sub", "font_title", "font_ovl")
 ENGINE_ORDER = {"auto": "supertonic,edge,google,gtts", "edge": "edge,supertonic,google,gtts", "supertonic": "supertonic", "edge_only": "edge"}
 IS_EN = Path("generate_topics.py").exists()
 
@@ -51,6 +51,9 @@ def env_from(s, is_en=IS_EN):
         e["YT_THUMBNAIL"] = "on"
     if s.get("tv_fx"):
         e["TV_FX"] = "on"
+    for k, ev in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")):
+        if s.get(k):
+            e[ev] = str(s[k])
     return e
 
 

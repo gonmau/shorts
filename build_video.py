@@ -287,7 +287,12 @@ def short_caption(text, max_chars=25):
     return text[:max_chars].rstrip() + "…"
 
 
-def find_font(size, bold=False):
+def find_font(size, bold=False, role=None):
+    if role:
+        import fonts as _F
+        _p = _F.role_path(role)
+        if _p:
+            return _p
     candidates = []
 
     if bold:
@@ -367,7 +372,7 @@ def make_highlight_image(text):
 
     font, size, lines, space = None, 0, [], 0
     for size in range(124, 55, -4):
-        fp = find_font(size, bold=True)
+        fp = find_font(size, bold=True, role="sub")
         font = ImageFont.truetype(fp, size) if fp else ImageFont.load_default()
         space = draw.textlength(" ", font=font)
         lines = wrap(font, words, space)

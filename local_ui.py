@@ -82,6 +82,7 @@ TTS_CFG.setdefault("caption", "script")
 TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
 TTS_CFG.setdefault("tv_fx", False)         # 영상 처음/끝에 옛날 TV 켜짐·꺼짐 효과
+TTS_CFG.setdefault("font_sub", ""); TTS_CFG.setdefault("font_title", ""); TTS_CFG.setdefault("font_ovl", "")   # 글씨체 id (fonts.py), 빈 값=기본
 TTS_CFG.setdefault("yt_thumb", False)   # 업로드할 때 썸네일도 같이 올림 (토큰에 youtube.force-ssl 권한 필요)
 TTS_CFG.setdefault("scenes", 10)
 if not TTS_CFG.get("_verify_off_v1"):      # 한 번만: 교차검증/이미지 자동검증을 기본 꺼짐으로 (직접 검증한 대본을 붙여 쓰는 방식 기본)
@@ -198,7 +199,8 @@ def tts_env():
             "IMG_RETRY": str(int(TTS_CFG.get("imgchk_retry") if TTS_CFG.get("imgchk_retry") is not None else 2)),
             **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {}),
             **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {}),
-            **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {})}
+            **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {}),
+            **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")) if TTS_CFG.get(k_)}}
 
 def run(*args):
     t0 = time.time()
@@ -381,6 +383,26 @@ with T4a:
                                   help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다")
     TTS_CFG["tv_fx"] = st.checkbox("📺 영상 처음·끝에 옛날 TV 켜짐/꺼짐 효과", bool(TTS_CFG.get("tv_fx")), key="tv_fx_cb",
                                    help="시작: 가운데 빛줄이 위아래로 열리며 켜짐(0.5초) / 끝: 줄로 닫혔다 점으로 꺼짐(0.55초). 음성은 그대로. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
+    import fonts as _FN0
+    _fa0 = _FN0.available()
+    _fo = ["", *_fa0]
+    _fc1, _fc2, _fc3 = st.columns(3)
+    for _col, _k, _lb, _hp in ((_fc1, "font_sub", "자막 글씨체", "영상 아래 자막(대본·핵심 문구 모두)"),
+                               (_fc2, "font_title", "영상 상단 제목 글씨체", "영상 맨 위 제목·채널명 영역"),
+                               (_fc3, "font_ovl", "화면 문구 기본 글씨체", "편집 탭 '문구'의 기본값 (문구마다 따로 바꿀 수도 있음)")):
+        TTS_CFG[_k] = _col.selectbox(_lb, _fo, _fo.index(TTS_CFG.get(_k) or "") if (TTS_CFG.get(_k) or "") in _fo else 0, key=_k + "_sel",
+                                     format_func=lambda x: "기본 (맑은 고딕/Noto)" if not x else _fa0[x], help=_hp + ". 바꾼 뒤엔 이미 만든 영상은 redo 후 5단계 렌더링으로 적용")
+    with st.expander("🔤 글씨체 미리보기"):
+        from PIL import Image as _PI, ImageDraw as _PD, ImageFont as _PF
+        _smp = "세계 문화 상식 1g에 금보다 비쌌다" if not EN else "World Facts 1g costs more than gold"
+        _im = _PI.new("RGB", (900, 64 * len(_fa0)), "white"); _d = _PD.Draw(_im)
+        for _i, (_k, _lb) in enumerate(_fa0.items()):
+            try:
+                _d.text((10, _i * 64 + 6), _smp, font=_PF.truetype(_FN0.path(_k), 40), fill="black")
+                _d.text((690, _i * 64 + 20), _lb.split(" — ")[0], font=_PF.truetype(_FN0.path("dohyeon") or _FN0.path(_k), 24), fill=(140, 140, 140))
+            except Exception:
+                pass
+        st.image(_im)
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     st.caption("☁️ 목소리·속도·음성 엔진·자막 방식은 바뀔 때마다 GitHub에도 자동으로 올라가 자동 실행(Actions)에도 똑같이 적용됩니다 (GitHub 자동동기화가 켜져 있을 때). 워크플로를 수동 실행하며 입력한 값이 있으면 그 값이 우선입니다.")
     sample = st.text_input("미리듣기 문장", "프랑스에서는 빵을 거꾸로 놓으면 불길하다고 여겼습니다." if not EN else "In Korea, you never stick chopsticks upright in a bowl of rice.")
@@ -763,6 +785,11 @@ with T6a:
             _sc1 = _o1.slider("제목 1줄 크기 배율", 0.5, 1.8, float(_to.get("scale1", 1.0)), 0.05, key=f"thm_s1_{_ts}")
             _sc2 = _o2.slider("제목 2줄 크기 배율", 0.5, 1.8, float(_to.get("scale2", 1.0)), 0.05, key=f"thm_s2_{_ts}")
             _ang = _o3.slider("기울기(도)", -20.0, 20.0, float(_to.get("angle", 0.0)), 0.5, key=f"thm_an_{_ts}")
+            import fonts as _FN1
+            _fa1 = _FN1.available()
+            _fl = ["", *_fa1]
+            _tfo = st.selectbox("썸네일 글씨체", _fl, _fl.index(_to.get("font") or "") if (_to.get("font") or "") in _fl else 0,
+                                key=f"thm_ft_{_ts}", format_func=lambda x: "기본 (맑은 고딕/Noto)" if not x else _fa1[x])
             _o4, _o5 = st.columns(2)
             _dy = _o4.slider("글자 위치 (위↑ / 아래↓ px)", -500, 500, int(_to.get("dy", 0)), 10, key=f"thm_dy_{_ts}")
             _tg = _o5.checkbox("빨간 후크 태그 넣기", bool(_to.get("tag", True)), key=f"thm_tg_{_ts}")
@@ -782,7 +809,7 @@ with T6a:
                 _cols[f"colors{_ln}"] = _pick
             if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
                 _dm = _ld()
-                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, **_cols}
+                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "font": _tfo, **_cols}
                 if int(_tsc):
                     _dm[_ts]["thumb_scene"] = int(_tsc)
                 else:
@@ -1852,7 +1879,7 @@ with T5c:
                              use_container_width=True, hide_index=True)
         else:
             st.caption("아직 음성이 없어 문장별 시간을 보여줄 수 없습니다. (음성을 만든 뒤 보입니다. 쇼츠는 보통 30~50초)")
-        cols = ["text", "start", "dur", "x", "y", "size", "color", "stroke", "bold", "effect", "bg"]
+        cols = ["text", "start", "dur", "x", "y", "size", "color", "stroke", "bold", "font", "effect", "bg"]
         # 색은 코드(#RRGGBB) 대신 이름으로 고른다. 목록에 없는 색은 아래 '색 직접 고르기'로 추가 (이미 쓴 코드는 자동으로 목록에 들어감)
         _PRESET = [("흰색", "#FFFFFF"), ("노랑", "#FFE200"), ("주황", "#FF8A00"), ("빨강", "#FF3B30"), ("분홍", "#FF5FA2"), ("보라", "#8A5CFF"),
                    ("파랑", "#2F80FF"), ("하늘", "#5CD6FF"), ("초록", "#2ECC71"), ("연두", "#B6F23A"), ("검정", "#000000"), ("회색", "#808080")]
@@ -1875,14 +1902,20 @@ with T5c:
             return "" if v in ("", "없음") else _n2h.get(v, v)
         _opts_c = [n_ for n_, _ in _PRESET] + _custom
         _opts_o = ["없음"] + _opts_c
+        import fonts as _FN
+        _fa = _FN.available()
+        _f2l = {k_: v_ for k_, v_ in _fa.items()}
+        _l2f = {v_: k_ for k_, v_ in _fa.items()}
+        _FDEF = "기본(전체 설정)"
         df0 = pd.DataFrame(_ov0, columns=cols)
+        df0["font"] = df0["font"].map(lambda v: _f2l.get(str(v or ""), _FDEF)) if len(df0) else df0["font"].astype(object)
         for _c, _dflt in (("color", "흰색"), ("stroke", "없음"), ("bg", "없음")):
             df0[_c] = df0[_c].map(lambda v, _d=_dflt: _to_name(v) or _d) if len(df0) else df0[_c]
         for c_ in ("text", "color", "stroke", "effect", "bg"):
             df0[c_] = df0[c_].astype(str) if len(df0) else df0[c_].astype(object)
         if df0.empty:
             df0 = pd.DataFrame([{"text": "", "start": 0.0, "dur": 2.0, "x": 50, "y": 50, "size": 80, "color": "흰색",
-                                 "stroke": "검정", "bold": True, "effect": "팝", "bg": "없음"}], columns=cols)
+                                 "stroke": "검정", "bold": True, "font": _FDEF, "effect": "팝", "bg": "없음"}], columns=cols)
         df0["bold"] = df0["bold"].astype(bool)
         ed = st.data_editor(
             df0, num_rows="dynamic", key=f"ov_ed_{sel_o}", use_container_width=True, hide_index=True,
@@ -1896,6 +1929,7 @@ with T5c:
                 "color": st.column_config.SelectboxColumn("글자색", options=_opts_c, help="목록에서 고르세요. 없는 색은 아래 '색 직접 고르기'로 추가"),
                 "stroke": st.column_config.SelectboxColumn("외곽선색", options=_opts_o, help="'없음'이면 외곽선 없음"),
                 "bold": st.column_config.CheckboxColumn("굵게"),
+                "font": st.column_config.SelectboxColumn("글씨체", options=[_FDEF] + list(_fa.values()), help="이 문구만 다른 글씨체로. '기본(전체 설정)'은 설정 탭에서 고른 문구 글씨체. 굵게 칸은 기본 글꼴에서만 적용됩니다"),
                 "effect": st.column_config.SelectboxColumn("효과", options=OV.EFFECTS),
                 "bg": st.column_config.SelectboxColumn("배경박스색", options=_opts_o, help="'없음'이면 배경 박스 없음"),
             })
@@ -1903,6 +1937,7 @@ with T5c:
         for _r in rows_o:
             for _c in ("color", "stroke", "bg"):
                 _r[_c] = _to_hex(_r.get(_c))
+            _r["font"] = _l2f.get(str(_r.get("font") or ""), "")
         _pk1, _pk2 = st.columns([1, 3])
         _pick = _pk1.color_picker("색 직접 고르기", "#FFFFFF", key="ov_pick")
         if _pk2.button("이 색을 위 목록에 추가", key="ov_pick_add", help="추가한 색은 글자색/외곽선색/배경박스색 칸에서 고를 수 있습니다 (코드가 #RRGGBB로 자동 입력됨)"):

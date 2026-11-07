@@ -23,9 +23,12 @@ _FONT_CACHE = {}
 
 
 def _font(size=FONT_SIZE):
-    if size in _FONT_CACHE:
-        return _FONT_CACHE[size]
-    cands = [
+    import fonts as _F
+    _rp = _F.role_path("sub")
+    key = (size, _rp)
+    if key in _FONT_CACHE:
+        return _FONT_CACHE[key]
+    cands = ([_rp] if _rp else []) + [
         r"C:\Windows\Fonts\malgunbd.ttf", r"C:\Windows\Fonts\NanumGothicBold.ttf",
         "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc",
     ]
@@ -34,8 +37,8 @@ def _font(size=FONT_SIZE):
         if os.path.exists(p):
             f = ImageFont.truetype(p, size)
             break
-    _FONT_CACHE[size] = f or ImageFont.load_default()
-    return _FONT_CACHE[size]
+    _FONT_CACHE[key] = f or ImageFont.load_default()
+    return _FONT_CACHE[key]
 
 
 _DRAW = ImageDraw.Draw(Image.new("RGB", (4, 4)))
