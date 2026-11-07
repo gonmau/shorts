@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 14:51:07 (KST) · 기록 1142건 · 소재 571개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 14:55:16 (KST) · 기록 1148건 · 소재 571개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,29 +9,29 @@
 | -c | 41 | 0 | 18분 25초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 75 | 0 | 14초 |
-| approve | 17 | 0 | 3초 |
+| apply_review | 76 | 0 | 14초 |
+| approve | 18 | 0 | 3초 |
 | build_video | 50 | 0 | 9시간 12분 |
 | check_country | 6 | 0 | 1초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 23 | 0 | 3초 |
+| export_review | 24 | 0 | 3초 |
 | fetch_images | 122 | 3 | 1시간 58분 |
 | generate_culture_facts | 12 | 0 | 23분 12초 |
-| generate_script | 132 | 0 | 1시간 7분 |
+| generate_script | 133 | 0 | 1시간 8분 |
 | generate_tts | 58 | 0 | 25분 35초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 22 | 0 | 41초 |
-| promote_ready | 75 | 0 | 13초 |
+| promote_ready | 76 | 0 | 13초 |
 | redo_videos | 18 | 0 | 4초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 15 | 0 | 10분 31초 |
 | 롱폼 | 65 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 57 | 0 | 0초 |
+| 코드업데이트 | 58 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:55 | PC | generate_script | generate_script.py --limit 1 --start 556 | ✅ | 8초 |  |
+| 14:55 | PC | export_review | export_review.py --limit 1 --start 556 | ✅ | 0초 |  |
+| 14:55 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 14:55 | PC | approve | approve.py --limit 1 --start 556 | ✅ | 0초 |  |
+| 14:54 | PC | promote_ready | promote_ready.py --start 556 | ✅ | 0초 |  |
+| 14:51 | PC | 코드업데이트 | gonmau/shorts: 1개 (generate_script.py) | ✅ |  |  |
 | 11:02 | PC | upload_to_youtube | upload_to_youtube.py --indexes 563 --daily-max 20 | ✅ | 53초 |  |
 | 11:01 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 563 | ✅ | 0초 |  |
 | 10:56 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 563 | ✅ | 1초 |  |
