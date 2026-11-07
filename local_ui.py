@@ -744,6 +744,37 @@ with T6a:
             run("upload_to_youtube.py", "--limit", str(count), "--daily-max", str(int(_dmax)))
         else:
             st.error("YT_REFRESH_TOKEN 환경변수가 없습니다.")
+    with st.expander("🖼 썸네일 만들기 (한 편씩 미리보기·장면 고르기)"):
+        import subprocess as _sp_t, sys as _sys_t
+        from pathlib import Path as _P_t
+        _tb = _P_t(__file__).resolve().parent
+        _td = _ld()
+        _tn = [i for i, it in enumerate(_td) if it.get("video_path_v6") and _P_t(it["video_path_v6"]).exists()]
+        st.caption("영상이 만들어진 소재의 썸네일을 새로 만들어 바로 확인합니다. 제목은 위 '제목 수정'에서 고친 값이 쓰입니다. 배경 장면은 자동(선명한 것)이거나 직접 고릅니다.")
+        _ts = st.selectbox("소재 번호", sorted(_tn, reverse=True), key="thm_sel",
+                           format_func=lambda i: f"{i} {_td[i].get('country', '')} - {str(_td[i].get('title_line1', '') or _td[i].get('topic', ''))[:30]}")
+        if _ts is not None:
+            _tc1, _tc2 = st.columns(2)
+            _tst = _tc1.selectbox("스타일", ["hook", "pop", "classic"], 0, key="thm_style",
+                                  format_func=lambda x: {"hook": "hook (제목·후크 중심)", "pop": "pop (국기+나라 띠)", "classic": "classic"}[x])
+            _tsc = _tc2.number_input("배경 장면 번호 (0=자동)", 0, 30, int(_td[_ts].get("thumb_scene") or 0), key=f"thm_sc_{_ts}")
+            if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
+                _dm = _ld()
+                if int(_tsc):
+                    _dm[_ts]["thumb_scene"] = int(_tsc)
+                else:
+                    _dm[_ts].pop("thumb_scene", None)
+                _sd(_dm)
+                st.session_state["gh_dirty"] = True
+                _r = _sp_t.run([_sys_t.executable, str(_tb / "make_thumbnail.py"), "--channel", CH, "--handle", HD,
+                                "--style", _tst, "--only", str(_ts)], cwd=str(_tb), capture_output=True, text=True)
+                if _r.returncode:
+                    st.error((_r.stderr or _r.stdout)[-600:])
+                st.session_state["thm_done"] = _ts
+            _vp = _td[_ts].get("video_path_v6")
+            _tf = _tb / "thumbnails" / f"{_P_t(_vp).stem}.png"
+            if _tf.exists():
+                st.image(str(_tf), width=300, caption=f"[{_ts}] {_tf.name} (현재 썸네일)")
     with st.expander("✏️ 제목 수정 (이미 만든 영상의 유튜브 제목·설명)"):
         st.caption("review.txt에는 아직 영상을 안 만든 소재만 나옵니다. 이미 만든 영상의 제목은 여기서 고치세요. 유튜브 제목과 썸네일 제목이 바뀝니다. "
                    "영상 화면 위에 이미 들어간 제목은 그대로입니다(바꾸려면 5단계 redo로 다시 만들어야 함).")
