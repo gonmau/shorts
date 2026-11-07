@@ -59312,7 +59312,7 @@
       "Royal Navy historic white ensign naval emblem",
       "Royal Navy modern warship at sea",
       "Henry VIII Tudor navy historical warships",
-      "Charles II restoration Royal Navy 1660 historical painting",
+      "Charles II restoration Royal Navy",
       "Royal Navy Senior Service historical plaque",
       "Royal Navy White Ensign flag waving",
       "historic Royal Navy warship wooden hull",
@@ -59361,11 +59361,12 @@
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "ChiemSeherin",
-        "page": "https://pixabay.com/photos/chapel-castle-chapel-versailles-9057999/",
-        "id": 9057999,
-        "type": "photo"
+        "source": "commons",
+        "user": "Attributed to Cornelis van de Velde",
+        "license": "Public domain",
+        "title": "The flagship Royal Sovereign firing a salute at the Nore with other warships and Admiralty",
+        "page": "https://commons.wikimedia.org/wiki/File:The_flagship_Royal_Sovereign_firing_a_salute_at_the_Nore_with_other_warships_and_Admiralty_yachts_in_attendance_(Attributed_to_Cornelis_van_de_Velde).jpg",
+        "id": "c:145981934"
       },
       {
         "scene": 5,
