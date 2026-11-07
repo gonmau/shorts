@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 17:24:13 (KST) · 기록 1198건 · 소재 573개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 17:25:42 (KST) · 기록 1201건 · 소재 573개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 41 | 0 | 18분 25초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 83 | 0 | 16초 |
+| apply_review | 84 | 0 | 16초 |
 | approve | 20 | 0 | 4초 |
 | build_video | 51 | 0 | 9시간 21분 |
 | check_country | 9 | 0 | 2초 |
@@ -21,10 +21,10 @@
 | fetch_images | 138 | 3 | 2시간 2분 |
 | generate_culture_facts | 12 | 0 | 23분 12초 |
 | generate_script | 139 | 0 | 1시간 8분 |
-| generate_tts | 59 | 0 | 25분 43초 |
+| generate_tts | 60 | 0 | 25분 57초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 24 | 0 | 44초 |
-| promote_ready | 83 | 0 | 15초 |
+| promote_ready | 84 | 0 | 15초 |
 | redo_videos | 18 | 0 | 4초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -39,6 +39,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:25 | PC | generate_tts | generate_tts.py --index 562 | ✅ | 14초 |  |
+| 17:25 | PC | promote_ready | promote_ready.py --start 562 | ✅ | 0초 |  |
+| 17:25 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 17:24 | PC | fetch_images | fetch_images.py --index 562 --scene 9 --source commons --type photo | ✅ | 5초 |  |
 | 17:23 | PC | fetch_images | fetch_images.py --index 562 --scene 9 --source pixabay --type photo | ✅ | 2초 |  |
 | 17:23 | PC | fetch_images | fetch_images.py --index 562 --scene 9 --source commons --type photo | ✅ | 4초 |  |
