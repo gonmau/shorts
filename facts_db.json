@@ -59314,7 +59314,7 @@
       "Henry VIII Tudor navy historical warships",
       "Charles II restoration Royal Navy",
       "Royal Navy",
-      "Royal Navy White Ensign flag waving",
+      "Royal Navy White Ensign flag",
       "historic Royal Navy warship wooden hull",
       "Royal Navy centuries of naval history Portsmouth dockyard",
       "Royal Navy historic naval seal maritime heritage"
@@ -59378,11 +59378,12 @@
       },
       {
         "scene": 6,
-        "source": "pixabay",
-        "user": "Ralphs_Fotos",
-        "page": "https://pixabay.com/photos/flag-banner-bavaria-bavarian-3561417/",
-        "id": 3561417,
-        "type": "photo"
+        "source": "commons",
+        "user": "Hayden Soloviev",
+        "license": "CC BY 4.0",
+        "title": "Royal Navy White Ensign flown on MV Medway Queen, Dunkirk 1940.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Royal_Navy_White_Ensign_flown_on_MV_Medway_Queen,_Dunkirk_1940.png",
+        "id": "c:185127080"
       },
       {
         "scene": 7,
