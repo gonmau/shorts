@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 17:02:50 (KST) · 기록 1180건 · 소재 572개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 17:03:59 (KST) · 기록 1181건 · 소재 572개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,7 +12,7 @@
 | apply_review | 82 | 0 | 16초 |
 | approve | 20 | 0 | 4초 |
 | build_video | 51 | 0 | 9시간 21분 |
-| check_country | 8 | 0 | 2초 |
+| check_country | 9 | 0 | 2초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:03 | PC | check_country | check_country.py | ✅ | 0초 |  |
 | 17:02 | PC | generate_script | generate_script.py --limit 1 --start 562 | ✅ | 6초 |  |
 | 17:02 | PC | export_review | export_review.py --limit 1 --start 562 | ✅ | 0초 |  |
 | 17:02 | PC | promote_ready | promote_ready.py --start 562 | ✅ | 0초 |  |
