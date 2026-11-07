@@ -1196,3 +1196,6 @@
 {"id": "1794039788704-9b8df1", "time": "2026-11-07 17:23:08", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 562 --scene 9 --source commons --type photo", "status": "success", "secs": 4.9, "detail": ""}
 {"id": "1794039826218-53e226", "time": "2026-11-07 17:23:46", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 562 --scene 9 --source pixabay --type photo", "status": "success", "secs": 2.0, "detail": ""}
 {"id": "1794039843579-d03a4e", "time": "2026-11-07 17:24:03", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 562 --scene 9 --source commons --type photo", "status": "success", "secs": 5.7, "detail": ""}
+{"id": "1794039918428-a21e42", "time": "2026-11-07 17:25:18", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 562", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794039918793-5e36e8", "time": "2026-11-07 17:25:18", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.4, "detail": ""}
+{"id": "1794039933347-52f618", "time": "2026-11-07 17:25:33", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 562", "status": "success", "secs": 14.6, "detail": ""}
