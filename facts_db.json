@@ -59309,16 +59309,16 @@
       }
     ],
     "image_queries": [
-      "British navy flag",
-      "Royal Navy ships",
-      "Henry VIII warships",
-      "1660 Royal Navy dock",
-      "Senior Service badge",
-      "Old Royal Navy vessel",
-      "Historic British warship",
+      "British naval ship silhouette",
+      "Royal Navy historic fleet",
+      "16th century English warships",
+      "1660 English navy flag",
+      "Senior Service nickname emblem",
+      "Oldest British warship",
+      "Naval tradition wooden vessel",
       "500 year navy tradition",
-      "Naval fleet at sea",
-      "Senior Service emblem"
+      "Royal Navy ships at sea",
+      "Senior Service naval badge"
     ],
     "scene_count": 10,
     "narration_original": "100년 전쟁이 끝난 뒤, 영국 해군이 ‘시니어 서비스’라고 불린 이유, 궁금하시죠? 영국의 해양 방위군, 즉 왕립 해군은 왕실과 해외 영토를 지키는 임무를 맡고 있습니다. 이 조직은 16세기 초 영국 해군을 전신으로 삼아 현재까지 이어지는 가장 오래된 군사 조직이라 할 수 있습니다.  \n\n그런데 ‘시니어 서비스’라는 별명은 단순히 오래됐다는 의미를 넘어섭니다. 다른 영국 군대보다 먼저 설립됐다는 사실을 강조하기 위해 붙여진 별명인데요, 즉 ‘선임된(시니어) 서비스’라는 뜻으로, 해군이 가장 먼저 조직된 군사 기관이라는 자부심을 담고 있습니다.  \n\n이 별명은 영국 내에서만 통용되는 공식 별명이며, 해외에서는 잘 알려져 있지 않습니다. 그래서 우리는 종종 해군을 그냥 ‘Royal Navy’라고만 부르지만, 영국에서는 여전히 ‘시니어 서비스’라는 호칭이 살아 숨 쉬고 있습니다.  \n\n역사를 뒤돌아보면, 400년 넘는 세월 동안 꾸준히 해양 방위를 책임져 온 이 조직이 바로 그 이유 때문이라는 점, 기억해 주세요. 100년 전쟁 이후에도 여전히 ‘시니어 서비스’라는 이름으로 우리에게 남아 있는, 그 오래된 전통의 무게가 느껴지지 않나요?",
@@ -59410,15 +59410,6 @@
         "title": "SJØFORSVARET (Royal Norwegian Navy) HERALDISKE VÅPEN 2010 (coats of arms) Embetsvåpen embl",
         "page": "https://commons.wikimedia.org/wiki/File:SJ%C3%98FORSVARET_(Royal_Norwegian_Navy)_HERALDISKE_V%C3%85PEN_2010_(coats_of_arms)_Embetsv%C3%A5pen_emblem_MARINEMUSEET_Museum_Horten,_Norway_(2021)_No_known_copyright_1535.jpg",
         "id": "c:110042780"
-      },
-      {
-        "scene": 10,
-        "source": "commons",
-        "user": "Anonymouscap421",
-        "license": "CC BY-SA 4.0",
-        "title": "Civil Air Patrol Senior Awards and Decs.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Civil_Air_Patrol_Senior_Awards_and_Decs.jpg",
-        "id": "c:143385217"
       }
     ],
     "image_source": "pixabay",
@@ -59557,10 +59548,6 @@
         ]
       }
     ],
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0562_영국_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0562_영국_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "overlays": [
       {
         "text": "영국의 왕립 해군(Royal Navy)",
@@ -59569,7 +59556,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#F3D313",
         "stroke": "#000000",
         "bold": true,
@@ -59583,7 +59570,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#F3D313",
         "stroke": "#000000",
         "bold": true,
@@ -59597,7 +59584,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#F3D313",
         "stroke": "#000000",
         "bold": true,
@@ -59625,7 +59612,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#E613F3",
         "stroke": "#000000",
         "bold": true,
@@ -59639,7 +59626,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#FFFFFF",
         "stroke": "#000000",
         "bold": true,
@@ -59653,7 +59640,7 @@
         "pos": "직접",
         "x": 50.0,
         "y": 50.0,
-        "size": 80,
+        "size": 60,
         "color": "#FFFFFF",
         "stroke": "#000000",
         "bold": true,
@@ -59663,7 +59650,8 @@
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0562_영국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0562_영국.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "redo_ts": 1794043820.2892182
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
