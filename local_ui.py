@@ -2129,6 +2129,35 @@ with T5c:
                                 st.success("저장했습니다. 위 표가 새 값으로 바뀝니다.")
                                 st.rerun()
 
+with T1c:
+    with st.expander("🌍 나라 수정 · 나라와 주제가 안 맞는 소재 점검"):
+        st.caption("나라 칸과 제목·주제·훅이 가리키는 나라가 다른 소재를 찾아 고칩니다. 목록 보기는 아무것도 안 바꿉니다. "
+                   "자동 고치기: 영상이 아직 없는 소재는 나라가 하나로 분명하면 나라를 고치고 애매하면 폐기, 이미 영상이 있는 소재는 나라 칸만 고치고(애매하면 표시만) 폐기하지 않습니다.")
+        cc1, cc2 = st.columns(2)
+        if cc1.button("🔍 불일치 목록 보기", key="cc_list"):
+            run("check_country.py")
+        if cc2.button("🛠 자동 고치기 적용", key="cc_apply"):
+            run("check_country.py", "--apply")
+        st.markdown("**한 소재만 직접 고치기**")
+        m1, m2 = st.columns([1, 2])
+        cc_i = m1.number_input("소재 번호", 0, 9999, 0, key="cc_i")
+        _dbc = _ld()
+        _cur = str(_dbc[int(cc_i)].get("country", "")) if 0 <= int(cc_i) < len(_dbc) else ""
+        cc_new = m2.text_input("새 나라 이름", _cur, key=f"cc_new_{int(cc_i)}", help="나라 칸에 들어가는 이름 (한국어 채널은 한국어 이름)")
+        if 0 <= int(cc_i) < len(_dbc):
+            st.caption(f"현재: {_cur} / 주제: {str(_dbc[int(cc_i)].get('topic', ''))[:60]} / 영상 {'있음' if _dbc[int(cc_i)].get('video_path_v6') else '없음'}")
+        if st.button("나라 바꾸기", key="cc_set") and 0 <= int(cc_i) < len(_dbc) and cc_new.strip() and cc_new.strip() != _cur:
+            from common import visual_dir as _vdir
+            _old_it = dict(_dbc[int(cc_i)])
+            _dbc[int(cc_i)]["country"] = cc_new.strip()
+            _od, _nd = _vdir(HERE, int(cc_i), _old_it), _vdir(HERE, int(cc_i), _dbc[int(cc_i)])
+            if _od.exists() and not _nd.exists() and _od != _nd:     # 장면 이미지 폴더 이름도 새 나라로 맞춤
+                _od.rename(_nd)
+                st.write(f"이미지 폴더 이름 변경: {_od.name} → {_nd.name}")
+            _sd(_dbc)
+            st.session_state["gh_dirty"] = True
+            st.success(f"[{int(cc_i)}] 나라: {_cur} → {cc_new.strip()}" + (" (이미 만든 영상·썸네일은 redo 후 다시 렌더링해야 새 나라로 바뀝니다)" if _old_it.get("video_path_v6") else ""))
+
 with TL:
     _ext_panel('xl_', 1)
     st.caption("영상이 끝난 쇼츠를 묶어 가로 롱폼 1개로 만듭니다. 소재마다 음성/이미지를 다시 만들어서 시간이 걸립니다. 개수는 3~30개, 예상 40분 이하. facts_db.json과 별도로 longform_db.json에 기록됩니다.")
