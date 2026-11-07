@@ -59403,11 +59403,12 @@
       },
       {
         "scene": 9,
-        "source": "pixabay",
-        "user": "Canadian-Nature-Visions",
-        "page": "https://pixabay.com/photos/hmcs-charlottetown-frigate-warship-7082999/",
-        "id": 7082999,
-        "type": "photo"
+        "source": "commons",
+        "user": "Wolfmann",
+        "license": "CC BY-SA 4.0",
+        "title": "SJØFORSVARET (Royal Norwegian Navy) HERALDISKE VÅPEN 2010 (coats of arms) Embetsvåpen embl",
+        "page": "https://commons.wikimedia.org/wiki/File:SJ%C3%98FORSVARET_(Royal_Norwegian_Navy)_HERALDISKE_V%C3%85PEN_2010_(coats_of_arms)_Embetsv%C3%A5pen_emblem_MARINEMUSEET_Museum_Horten,_Norway_(2021)_No_known_copyright_1535.jpg",
+        "id": "c:110042780"
       }
     ],
     "image_source": "pixabay",
@@ -59545,7 +59546,11 @@
           "c:148455206"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0562_영국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0562_영국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
