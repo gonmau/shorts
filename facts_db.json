@@ -56786,7 +56786,39 @@
     "verify_note": "Morocco",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "모로코 안에 스페인 영토가 존재한다니? 북아프리카에 자리한 모로코는 북쪽으로 지중해, 서쪽으로 대서양과 맞닿아 있습니다. 그런데 그 영토 안에 스페인령 세우타와 멜릴라, 그리고 페뇽 데 벨레즈 데 라 고메라 같은 작은 섬·도시가 자리하고 있습니다. 이곳들은 스페인 행정구역으로 관리되며, 모로코와는 별개의 법적 지위를 가지고 있습니다.  \n\n그런데 모로코는 이 지역을 자국 영토로 주장합니다. 서부 사하라를 통해 모리타니와도 경계를 맞대고 있는 상황에서, 스페인 영토에 대한 영유권 분쟁이 국제적으로 논란이 되고 있습니다.  \n\n이처럼 지도에 보이는 국경선 뒤에는 복잡한 역사와 현재의 갈등이 얽혀 있습니다. 결국, 모로코 안에 스페인 영토가 있다는 사실은 단순히 지리적 이색이 아니라, 국제정치의 살아있는 현장을 보여주는 한 조각이라고 할 수 있겠습니다.",
+    "title_line1": "모로코 안에 스페인 영토",
+    "title_line2": "정말 독립된 땅?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "모로코 안 *스페인*?"
+      },
+      {
+        "s": 3,
+        "text": "세우타·멜릴라 *섬*"
+      },
+      {
+        "s": 4,
+        "text": "스페인 행정 *구역*"
+      },
+      {
+        "s": 5,
+        "text": "모로코, 영토 *주장*"
+      }
+    ],
+    "image_queries": [
+      "Spanish enclave Morocco",
+      "Morocco coastline Mediterranean Atlantic",
+      "Ceuta Melilla islands",
+      "Spanish administered territory",
+      "Morocco territorial claim",
+      "Western Sahara border region",
+      "Map showing borders",
+      "International political dispute"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "몰디브는 적도를 가로지른다",
@@ -59242,7 +59274,7 @@
     "verify_note": "Royal Navy",
     "confidence": "source",
     "created_at": "2026-11-07T00:19:47.050579+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
