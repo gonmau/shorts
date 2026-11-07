@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-07 17:13:04 (KST) · 기록 1190건 · 소재 573개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-07 17:16:25 (KST) · 기록 1191건 · 소재 573개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,7 +18,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 26 | 0 | 4초 |
-| fetch_images | 130 | 3 | 2시간 2분 |
+| fetch_images | 131 | 3 | 2시간 2분 |
 | generate_culture_facts | 12 | 0 | 23분 12초 |
 | generate_script | 139 | 0 | 1시간 8분 |
 | generate_tts | 59 | 0 | 25분 43초 |
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:16 | PC | fetch_images | fetch_images.py --index 562 --scene 6 --source commons --type photo | ✅ | 4초 |  |
 | 17:12 | PC | fetch_images | fetch_images.py --index 562 --scene 5 --source pixabay --type photo | ✅ | 1초 |  |
 | 17:12 | PC | fetch_images | fetch_images.py --index 562 --scene 5 --source pixabay --type photo | ✅ | 1초 |  |
 | 17:11 | PC | fetch_images | fetch_images.py --index 562 --scene 4 --source commons --type photo | ✅ | 5초 |  |
