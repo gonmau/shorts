@@ -59403,12 +59403,11 @@
       },
       {
         "scene": 9,
-        "source": "commons",
-        "user": "Charles Dixon",
-        "license": "Public domain",
-        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
-        "id": "c:116521313"
+        "source": "pixabay",
+        "user": "Canadian-Nature-Visions",
+        "page": "https://pixabay.com/photos/hmcs-charlottetown-frigate-warship-7082999/",
+        "id": 7082999,
+        "type": "photo"
       }
     ],
     "image_source": "pixabay",
