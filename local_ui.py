@@ -81,6 +81,7 @@ TTS_CFG.setdefault("edge", EDGE_VOICES[0])
 TTS_CFG.setdefault("caption", "script")
 TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
+TTS_CFG.setdefault("tv_fx", False)         # 영상 처음/끝에 옛날 TV 켜짐·꺼짐 효과
 TTS_CFG.setdefault("yt_thumb", False)   # 업로드할 때 썸네일도 같이 올림 (토큰에 youtube.force-ssl 권한 필요)
 TTS_CFG.setdefault("scenes", 10)
 if not TTS_CFG.get("_verify_off_v1"):      # 한 번만: 교차검증/이미지 자동검증을 기본 꺼짐으로 (직접 검증한 대본을 붙여 쓰는 방식 기본)
@@ -196,7 +197,8 @@ def tts_env():
             "IMG_CLIP_THR": str(TTS_CFG.get("imgchk_thr") or 0.22),
             "IMG_RETRY": str(int(TTS_CFG.get("imgchk_retry") if TTS_CFG.get("imgchk_retry") is not None else 2)),
             **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {}),
-            **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {})}
+            **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {}),
+            **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {})}
 
 def run(*args):
     t0 = time.time()
@@ -377,6 +379,8 @@ with T4a:
     TTS_CFG["caption"] = st.radio("자막 방식", _ck, _ck.index(TTS_CFG["caption"]) if TTS_CFG["caption"] in _ck else 0, horizontal=True,
                                   format_func=lambda k: CAP_LABELS[k],
                                   help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다")
+    TTS_CFG["tv_fx"] = st.checkbox("📺 영상 처음·끝에 옛날 TV 켜짐/꺼짐 효과", bool(TTS_CFG.get("tv_fx")), key="tv_fx_cb",
+                                   help="시작: 가운데 빛줄이 위아래로 열리며 켜짐(0.5초) / 끝: 줄로 닫혔다 점으로 꺼짐(0.55초). 음성은 그대로. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     st.caption("☁️ 목소리·속도·음성 엔진·자막 방식은 바뀔 때마다 GitHub에도 자동으로 올라가 자동 실행(Actions)에도 똑같이 적용됩니다 (GitHub 자동동기화가 켜져 있을 때). 워크플로를 수동 실행하며 입력한 값이 있으면 그 값이 우선입니다.")
     sample = st.text_input("미리듣기 문장", "프랑스에서는 빵을 거꾸로 놓으면 불길하다고 여겼습니다." if not EN else "In Korea, you never stick chopsticks upright in a bowl of rice.")

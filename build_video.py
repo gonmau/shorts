@@ -52,6 +52,50 @@ LAYOUT_CFG = {
 }
 
 
+
+def tv_effect(clip, dur, on_t=0.5, off_t=0.55):
+    """옛날 TV처럼: 시작은 가운데 가는 빛줄이 위아래로 열리며 켜지고, 끝은 위아래로 닫혀 줄이 되었다가 점으로 사라지며 꺼진다."""
+    H_, W_ = H, W
+    ease = lambda x: 1 - (1 - min(1.0, max(0.0, x))) ** 3
+
+    def apply(gf, t):
+        fr = gf(t)
+        if t >= on_t and t <= dur - off_t:
+            return fr
+        out = np.zeros_like(fr)
+        cy = H_ // 2
+        if t < on_t:                                   # 켜짐
+            p = t / on_t
+            if p < 0.25:                               # 가는 줄이 가로로 펴짐
+                half_w = int(W_ / 2 * ease(p / 0.25))
+                out[cy - 3:cy + 3, W_ // 2 - half_w:W_ // 2 + half_w] = 255
+                return out
+            q = ease((p - 0.25) / 0.75)                # 위아래로 열림
+            half_h = max(3, int(H_ / 2 * q))
+            out[cy - half_h:cy + half_h] = fr[cy - half_h:cy + half_h]
+            glow = (1 - q) * 0.8                       # 처음엔 밝게 번쩍
+            if glow > 0.01:
+                seg = out[cy - half_h:cy + half_h].astype(np.float32)
+                out[cy - half_h:cy + half_h] = np.clip(seg + (255 - seg) * glow, 0, 255).astype(np.uint8)
+            return out
+        p = (t - (dur - off_t)) / off_t                # 꺼짐
+        if p < 0.6:                                    # 위아래로 닫힘
+            q = ease(p / 0.6)
+            half_h = max(3, int(H_ / 2 * (1 - q)))
+            out[cy - half_h:cy + half_h] = fr[cy - half_h:cy + half_h]
+            glow = q * 0.8
+            seg = out[cy - half_h:cy + half_h].astype(np.float32)
+            out[cy - half_h:cy + half_h] = np.clip(seg + (255 - seg) * glow, 0, 255).astype(np.uint8)
+            return out
+        q = ease((p - 0.6) / 0.4)                      # 줄이 가운데 점으로 줄어듦
+        half_w = int(W_ / 2 * (1 - q))
+        if half_w > 2:
+            out[cy - 3:cy + 3, W_ // 2 - half_w:W_ // 2 + half_w] = int(255 * (1 - q * 0.5))
+        return out
+
+    return clip.fl(apply)
+
+
 def split_title(item):
     """제목을 2줄로 나눈다. item에 title_line1/title_line2가 있으면 그대로 사용."""
     l1, l2 = item.get("title_line1"), item.get("title_line2")
@@ -754,6 +798,10 @@ def build_one(idx, item):
         [base] + caption_clips + overlay_clips,
         size=(W, H),
     ).set_duration(audio_duration)
+
+    if os.environ.get("TV_FX", "").lower() in ("on", "1", "true"):
+        final = tv_effect(final, audio_duration)          # 옛날 TV 켜짐/꺼짐 효과 (오디오는 그대로)
+        print("TV 켜짐/꺼짐 효과 적용")
 
     try:
         import sfx
