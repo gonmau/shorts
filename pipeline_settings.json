@@ -6,5 +6,6 @@
  "engine": "auto",
  "scenes": 10,
  "target_sec": 60,
- "yt_thumb": true
+ "yt_thumb": true,
+ "tv_fx": true
 }
