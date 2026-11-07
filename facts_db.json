@@ -58912,7 +58912,7 @@
     "body": "대영제국은 19세기와 20세기 초에 가장 큰 제국으로, 1913년에는 전 세계 인구의 23%인 4억 1천2백만 명을 지배했습니다. 1920년에는 지구 면적의 24%에 해당하는 35.5백만 km²를 차지했습니다.",
     "twist": "그 규모는 당시 다른 어느 제국보다도 넓었으며, ‘세계 최고의 강대국’이라고 불렸습니다.",
     "caveat": "수치는 1913년과 1920년 각각의 기록에 기반합니다.",
-    "country": "미국",
+    "country": "영국",
     "theme": "군사/전쟁사",
     "wiki_title": "British Empire",
     "source_url": "https://en.wikipedia.org/wiki/British_Empire",
@@ -59182,5 +59182,20 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
     "status_v6": "video_done"
+  },
+  {
+    "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
+    "hook": "1913년, 거리 한복판에 4억 1천2백만 명이 동시에 서 있다면?",
+    "body": "대영제국은 19세기와 20세기 초에 가장 큰 제국으로, 1913년에는 전 세계 인구의 23%인 4억 1천2백만 명을 지배했습니다. 1920년에는 지구 면적의 24%에 해당하는 35.5백만 km²를 차지했습니다.",
+    "twist": "그 규모는 당시 다른 어느 제국보다도 넓었으며, ‘세계 최고의 강대국’이라고 불렸습니다.",
+    "caveat": "수치는 1913년과 1920년 각각의 기록에 기반합니다.",
+    "country": "미국",
+    "theme": "군사/전쟁사",
+    "wiki_title": "British Empire",
+    "source_url": "https://en.wikipedia.org/wiki/British_Empire",
+    "verify_note": "British Empire",
+    "confidence": "source",
+    "created_at": "2026-11-07T00:19:52.870909+00:00",
+    "status": "unverified"
   }
 ]
