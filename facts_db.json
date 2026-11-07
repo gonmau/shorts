@@ -58908,9 +58908,9 @@
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
-    "hook": "1913년, 거리 한복판에 4억 1천2백만 명이 동시에 서 있다면?",
-    "body": "대영제국은 19세기와 20세기 초에 가장 큰 제국으로, 1913년에는 전 세계 인구의 23%인 4억 1천2백만 명을 지배했습니다. 1920년에는 지구 면적의 24%에 해당하는 35.5백만 km²를 차지했습니다.",
-    "twist": "그 규모는 당시 다른 어느 제국보다도 넓었으며, ‘세계 최고의 강대국’이라고 불렸습니다.",
+    "hook": "1913년, 영국의 지배 아래 살던 사람이 무려 4억 1천2백만 명이었다면?",
+    "body": "대영제국은 19세기와 20세기 초 세계 최강의 제국으로 성장했습니다.",
+    "twist": "하지만 그 거대한 제국에도 이미 몰락의 시작을 알리는 균열이 생기고 있었습니다.",
     "caveat": "수치는 1913년과 1920년 각각의 기록에 기반합니다.",
     "country": "영국",
     "theme": "군사/전쟁사",
@@ -58920,29 +58920,33 @@
     "confidence": "source",
     "created_at": "2026-11-07T00:19:52.870909+00:00",
     "status": "scripted",
-    "narration": "1913년, 거리 한복판에 4억 1천 2백만 명이 동시에 서 있다면 어떨까요? 바로 그 숫자는 대영제국이 지배하던 전 세계 인구의 23%에 해당합니다. 19세기와 20세기 초, 영국은 해가 지는 곳마다 식민지를 두고 있었고, 1913년엔 약 4억 1천 2백만 명이 영국 왕실의 통치 아래 살고 있었습니다.  \n\n그런데 1920년이 되면 상황은 또 달라집니다. 제국은 지구 전체 면적의 24%에 해당하는 35.5 백만 km²를 차지했는데, 이는 오늘날 어느 국가보다도 넓은 영역이었습니다. 그때의 대영제국은 ‘세계 최고의 강대국’이라고 불릴 정도로 광대한 영토와 인구를 동시에 장악하고 있었습니다.  \n\n하지만 이 수치는 각각 1913년과 1920년의 기록을 바탕으로 한 것이며, 다른 시기의 비교와는 차이가 있을 수 있습니다. 이렇게 거대한 제국이 한때 전 세계 인구와 면적의 1 / 4을 차지했다는 사실은, 당시 국제 질서가 얼마나 영국 중심으로 돌아갔는지를 보여줍니다. 결국, 그때의 영국은 세계 무대에서 어느 한 구석도 빠뜨리지 않은, 거의 전 지구를 품은 존재였다고 할 수 있겠습니다.",
-    "title_line1": "대영제국 인구·면적 ¼",
-    "title_line2": "거리엔 4억이?",
+    "narration": "1913년, 영국의 지배 아래 살던 사람이 무려 4억 1천2백만 명이었다면 믿으시겠습니까? 당시 전 세계 인구의 약 23%가 대영제국의 통치 아래 있었습니다. 19세기와 20세기 초, 영국은 세계 곳곳에 식민지와 영토를 거느리며 역사상 가장 거대한 제국으로 성장했습니다. 그런데 제국의 영토는 1920년 무렵 절정에 이릅니다. 그 면적은 약 3천550만 제곱킬로미터로, 지구 육지 면적의 약 24%에 달했습니다. 말 그대로 전 세계 육지의 약 4분의 1을 차지한 거대한 제국이었던 것입니다. 하지만 이 절정의 순간에도 제국의 힘은 조금씩 약해지고 있었습니다. 그리고 그 균열은 제1차 세계대전을 거치며 뚜렷해지기 시작합니다. 세계의 4분의 1을 차지했던 대영제국, 대체 언제부터 무너지기 시작했을까요?",
+    "title_line1": "대영제국, 세계의 ¼",
+    "title_line2": "4억 명을 지배한 영국",
     "highlights": [
       {
         "s": 1,
-        "text": "4억*인구*동시"
+        "text": "4억*1천2백만 명*"
+      },
+      {
+        "s": 2,
+        "text": "세계 인구의 *23%*"
       },
       {
         "s": 3,
-        "text": "전 세계*지배*영국"
+        "text": "*대영제국*의 전성기"
       },
       {
         "s": 5,
-        "text": "24%면적장악"
+        "text": "육지 면적의 *24%*"
       },
       {
         "s": 6,
-        "text": "세계*최강*제국"
+        "text": "역사상 가장 거대한 제국"
       },
       {
         "s": 8,
-        "text": "1/4세계점령"
+        "text": "몰락은 *언제부터*?"
       }
     ],
     "image_queries": [
@@ -58952,11 +58956,218 @@
       "1920s world map",
       "British Empire territory map",
       "British Empire flag",
-      "historical atlas page",
-      "British Empire world share",
-      "global British influence"
+      "British Empire decline after World War I",
+      "British Empire decolonization historical map",
+      "British Empire decline 20th century"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "1913년, 거리 한복판에 4억 1천 2백만 명이 동시에 서 있다면 어떨까요? 바로 그 숫자는 대영제국이 지배하던 전 세계 인구의 23%에 해당합니다. 19세기와 20세기 초, 영국은 해가 지는 곳마다 식민지를 두고 있었고, 1913년엔 약 4억 1천 2백만 명이 영국 왕실의 통치 아래 살고 있었습니다.  \n\n그런데 1920년이 되면 상황은 또 달라집니다. 제국은 지구 전체 면적의 24%에 해당하는 35.5 백만 km²를 차지했는데, 이는 오늘날 어느 국가보다도 넓은 영역이었습니다. 그때의 대영제국은 ‘세계 최고의 강대국’이라고 불릴 정도로 광대한 영토와 인구를 동시에 장악하고 있었습니다.  \n\n하지만 이 수치는 각각 1913년과 1920년의 기록을 바탕으로 한 것이며, 다른 시기의 비교와는 차이가 있을 수 있습니다. 이렇게 거대한 제국이 한때 전 세계 인구와 면적의 1 / 4을 차지했다는 사실은, 당시 국제 질서가 얼마나 영국 중심으로 돌아갔는지를 보여줍니다. 결국, 그때의 영국은 세계 무대에서 어느 한 구석도 빠뜨리지 않은, 거의 전 지구를 품은 존재였다고 할 수 있겠습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "crowded city street",
+      "British Empire map",
+      "British Empire global colonies",
+      "1920s world map",
+      "British Empire territory map",
+      "British Empire flag",
+      "British Empire decline after World War I",
+      "British Empire decolonization historical map",
+      "British Empire decline 20th century"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "InstagramFOTOGRAFIN",
+        "page": "https://pixabay.com/photos/city-shopping-street-shopping-center-3577655/",
+        "id": 3577655
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "The Red Hat of Pat Ferrick",
+        "license": "Public domain",
+        "title": "The British Empire.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_British_Empire.png",
+        "id": "c:5544648"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "The Red Hat of Pat Ferrick",
+        "license": "Public domain",
+        "title": "The British Empire.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_British_Empire.png",
+        "id": "c:5544648"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "14398",
+        "page": "https://pixabay.com/photos/world-map-satellite-image-140304/",
+        "id": 140304
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "RedStorm1368",
+        "license": "CC BY-SA 4.0",
+        "title": "The British Empire 3.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_British_Empire_3.png",
+        "id": "c:135837040"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Oskar-Młodziński",
+        "page": "https://pixabay.com/photos/london-england-city-architecture-9319051/",
+        "id": 9319051
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Internet Archive Book Images",
+        "license": "Public domain",
+        "title": "British WWI motorcycle troops.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:British_WWI_motorcycle_troops.jpg",
+        "id": "c:43503094"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "The Red Hat of Pat Ferrick t ( log )",
+        "license": "Public domain",
+        "title": "British Decolonisation in Africa.png",
+        "page": "https://commons.wikimedia.org/wiki/File:British_Decolonisation_in_Africa.png",
+        "id": "c:7803095"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "The Red Hat of Pat Ferrick",
+        "license": "Public domain",
+        "title": "The British Empire.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_British_Empire.png",
+        "id": "c:5544648"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3188,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0ec1f81d2fe3",
+        "at": "2026-11-07 10:22",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3068,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9294ac3bbbec",
+        "at": "2026-11-07 10:22",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3266,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "07bc341f170e",
+        "at": "2026-11-07 10:22",
+        "scene": 3,
+        "rejected_ids": [
+          3875817,
+          4854718,
+          "c:194178694",
+          "c:194225555",
+          "c:5544648"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2504,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "080da3008770",
+        "at": "2026-11-07 10:22",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3118,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "301b9f8a324b",
+        "at": "2026-11-07 10:22",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2791,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8cac956ae439",
+        "at": "2026-11-07 10:22",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3065,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d45832e7932d",
+        "at": "2026-11-07 10:22",
+        "scene": 7,
+        "rejected_ids": [
+          10297421,
+          "c:43503094"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2743,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "667afa2d4212",
+        "at": "2026-11-07 10:22",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2693,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9698ec733a50",
+        "at": "2026-11-07 10:22",
+        "scene": 9,
+        "rejected_ids": [
+          4854718,
+          "c:5544648",
+          "c:56338190"
+        ]
+      }
+    ]
   },
   {
     "topic": "세부(Cebu)에서 열리는 신루궁(Sinulog) 축제",
