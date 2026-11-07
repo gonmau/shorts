@@ -55078,7 +55078,7 @@
     "verify_note": "Courtesy titles in the United Kingdom",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "반전! 영국 귀족 자녀에게도 특별한 호칭이 있다! 영국 귀족 제도에서는 피어와 그 친척, 전 배우자, 그리고 특정 관료에게 예우를 표시하기 위해 다양한 호칭을 사용합니다. 이 호칭은 법적으로 권한을 주는 것은 아니지만, 예의상 꼭 지켜지는 관습이죠. 예를 들어, 공작의 아들은 ‘로드’ 혹은 ‘레이디’라는 호칭을 쓰고, 그의 아내는 ‘공작 부인’이라 불립니다. 이러한 관습은 주로 영국 귀족 사회와 일부 스코틀랜드 귀족에게 적용되며, 공식적인 권한과는 별개로 전통적인 예절을 유지하는 역할을 합니다. 결국, 이름 뒤에 붙는 작은 칭호가 그들의 사회적 위치와 역사를 조용히 드러내는 셈이죠.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -55117,7 +55117,8 @@
       "Scottish noble estate",
       "historic title insignia"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "헝가리식 스파에츨레 조리법",
@@ -55132,7 +55133,7 @@
     "verify_note": "Spätzle",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "끓는 물에 반죽을 바로 뿌려버린다면 어떤 식감이 될까요? 독일에서 ‘Spätzle’이라 불리는 달걀 반죽을 물에 직접 넣어 익히는 요리가 있습니다. 헝가리에서는 이 요리를 ‘nokedli’라고 부릅니다. 반죽을 끓는 물에 떨어뜨리면 물과 바로 맞닿아 거친 표면과 작은 구멍이 생깁니다. 소스가 어느 정도 스며들어 풍미가 더해질 수 있어요. 이 조리법은 남부 독일, 오스트리아, 헝가리뿐 아니라 스위스와 체코 등 여러 지역에서도 사용됩니다. 물에 바로 닿는 순간 만들어지는 특유의 질감, 바로 그 이유가 헝가리식 스파에츨레의 매력인 셈이죠. 결국 물에 바로 뿌린 반죽이 만든 독특한 식감이, 지역마다 다른 전통 요리의 차이를 보여줍니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -55163,7 +55164,8 @@
       "[수정됨] [contradicted] 6번 문장: The method is also common in other regions (e.g., Switzerland, Czech Republic); saying \"only\" is inaccurate."
     ],
     "title_line1": "헝가리식 스파에츨레",
-    "title_line2": "끓는 물에 바로?"
+    "title_line2": "끓는 물에 바로?",
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "검은눈완두의 색다른 변종",
@@ -55178,7 +55180,7 @@
     "verify_note": "Black-eyed pea",
     "confidence": "source",
     "created_at": "2026-11-01T07:55:53.420186+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "검은 눈 콩이 보라색 껍질을 가졌다면, 어떤 콩일까요? black‑eyed pea는 서아프리카가 원산지이며, 이후 미국 남부로 전파돼 다양한 크기와 색상의 변종이 생겼습니다. 일반적인 품종은 연한 색 바탕에 검은 점이 있지만, 일부 지역에서는 색다른 변종도 재배됩니다. 그 중에는 껍질이 보라색인 변종도 보고된 바 있습니다. 이 변종은 미국 남부 농가에서도 가끔 발견됩니다. 평범해 보이는 검은 눈 콩, 한 번쯤은 보라색을 떠올려 보세요.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -55216,7 +55218,8 @@
       "southern US pea field",
       "black-eyed pea with purple"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "나바라트리(Navaratri) – 9밤·9여신 축제",
@@ -55231,7 +55234,7 @@
     "verify_note": "Navaratri",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "9밤 연속, 9개의 여신을 모시는 장면! 인도 전역에서 힌두교 신자들이 지키는 나바라트리는 샤크티, 즉 여신의 힘을 기리는 축제입니다. 매 밤마다 두르가 여신의 서로 다른 형태를 모시며, 9가지 모습을 차례로 찬양합니다. 그런데 이 축제는 이론적으로는 Magha·Chaitra·Ashadha·Ashvin 네 차례에 열리지만, 실제로는 가을인 Ashvin에 열리는 샤라다 나바라트리만이 널리 지켜집니다. 지역마다 의식과 춤, 음악이 다르지만, 모두 여신에게 감사와 보호를 기원한다는 점은 같습니다. 결국 9밤 동안 이어지는 이 연속적인 예배가, 우리에게는 한 달에 한 번씩 찾아오는 작은 기적처럼 느껴지지 않나요?",
     "cross_checked": true,
     "cross_sources": 0,
@@ -55263,7 +55266,8 @@
       "Navaratri regional dance performance",
       "monthly ritual candle arrangement"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "몽골 고기 중심 식단",
@@ -55278,7 +55282,7 @@
     "verify_note": "Mongolian cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:18.667357+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "인구 밀도 2.2명/km², 그런데 식탁엔 고기만! 몽골 사람들은 주로 유제품, 고기, 동물성 지방으로 식사를 구성합니다. 광활한 초원과 대륙성 기후 때문에 식량 확보가 어려워 양고기를 삶아 먹는 경우도 있지만, 전통적으로는 양고기를 구워 먹거나 양고기 소를 넣은 부우즈 같은 만두를 즐깁니다. 그런데 아시아 국가 중 드물게 쌀이 주식이 아니라 고기가 주식이라는 점이 놀랍습니다. 도시에서는 최근 중국·러시아 요리의 영향을 받아 약간의 채소와 향신료가 들어가기도 합니다. 이렇게 고기가 중심이 된 식단은 넓은 땅과 혹한 날씨가 만든 자연스러운 결과이며, 결국 “고기 없는 몽골은 상상하기 어렵다”는 느낌을 남깁니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -55317,7 +55321,8 @@
       "Mongolian street food vegetables",
       "Mongolia meat landscape"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "우즈베키스탄, 세계에서 가장 오래된 꾸란 보관",
@@ -55332,7 +55337,7 @@
     "verify_note": "Islam in Uzbekistan",
     "confidence": "source",
     "created_at": "2026-11-01T07:56:22.456601+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "우즈베키스탄에서 하루에 한 번, 가장 오래된 꾸란을 직접 볼 수 있다? 우즈베키스탄에 보관된 사마르칸트 꾸란은 현존하는 가장 오래된 꾸란 사본 중 하나로 알려져 있습니다. 이 사본은 8~9세기경에 제작된 것으로, 초기 아라비아 문자와 장식이 일부 보존되어 있습니다. 일반인은 특별 허가 없이는 열람하기 어려우며, 관리와 보존은 국가 문화유산 담당 부서가 맡고 있습니다. 제한된 접근 속에서도 해당 기관은 학술 연구와 문화 보존을 위해 엄격히 관리하고 있습니다. 그래서 오늘도 그 귀중한 페이지는 조용히 보관된 채, 우리에게 역사의 숨결을 전하고 있습니다.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -55370,7 +55375,8 @@
       "Uzbekistan scholars manuscript",
       "Uzbekistan historic pages"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "에티오피아 고산에서 파는 차 대신 씹는 카트 잎",
@@ -55431,7 +55437,7 @@
     "verify_note": "Hygiene in Christianity",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:23.439144+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "기도 전에 손을 씻지 않으면 교회 입구가 닫힌다고 들으셨나요? 탄자니아에 있는 코프틱 정교회·에티오피아 정교회·에리트레아 정교회 같은 일부 교파는 예배 전 청결을 의무화합니다. 신도들은 입구에 놓인 공동 세면대에서 손과 얼굴을 씻고, 남성은 전통적으로 포경을 마친 뒤에야 들어갑니다. 그런데 외국인 신도가 처음 들어오려 할 때, 모두가 동시에 물을 틀어 손을 씻으며 웃음이 터지는 모습을 볼 수 있습니다. 이 규칙은 해당 교파들의 전통적인 예배 방식에만 적용되는 것이니, 전 세계 모든 교회에 같은 규정이 있는 것은 아닙니다. 결국, 청결을 위한 작은 의식이 예배의 문을 여는 열쇠가 됩니다.",
     "title_line1": "탄자니아 교회 입구",
     "title_line2": "손 안 씻으면 문 닫힌다?",
@@ -55461,7 +55467,8 @@
       "traditional church ritual Tanzania",
       "clean hands open church"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "중국( China )의 얇은 죽(Congee) 경험",
@@ -55476,7 +55483,7 @@
     "verify_note": "Congee",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:23.439144+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "물처럼 얇은 죽을 한 숟갈에? 중국에서는 쌀을 물에 푹 끓여 만든 짭짤한 죽을 ‘컨지’라 부릅니다. 물과 쌀의 비율을 조절하면 걸쭉함이 달라지는데, 물을 많이 넣어 끓이면 거의 물그릇 같은 투명함이 남습니다. 이런 얇은 죽은 전쟁이나 기근 시기에 주식으로 먹었다는 기록이 전해집니다.  \n\n그런데 오늘 아침, 고급 레스토랑에 들어가 얇은 죽을 주문했더니, 눈앞에 펼쳐진 것은 투명한 물그릇처럼 맑은 한 그릇이었습니다. 전통적인 비상식량이 이제는 미식가들의 새로운 경험으로 변한 것이죠.  \n\n역사 속에서 생존을 위한 식사였던 얇은 죽, 이제는 그 투명함이 주는 신선함을 즐기는 순간이 되었습니다. 물처럼 얇은 죽, 그 이야기가 다시 떠오르는 이유가 바로 여기 있습니다.",
     "title_line1": "중국 얇은 죽",
     "title_line2": "한 숟갈에 물처럼",
@@ -55508,7 +55515,8 @@
       "survival congee history",
       "thin water-like congee"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "수천 년 전부터 이어진 일본(Japan) 예절",
@@ -55523,7 +55531,7 @@
     "verify_note": "Etiquette in Japan",
     "confidence": "source",
     "created_at": "2026-11-01T08:27:52.624145+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "수천 년에 걸쳐 바뀐 일본 예절, 오늘도 전통이 살아있다고? 고대부터 중국과 서양 문화가 스며들었지만, 일본은 기본적인 인사·절, 신발 벗기·음식 앞에 놓는 젓가락 등 고유한 예절을 유지합니다. 이런 전통은 세대와 지역에 따라 조금씩 다르게 전해지죠. 그런데 같은 나라 안에서도 교토와 오키나와처럼 지역마다 인사 방식이나 선물 포장법이 달라서, 거리마다 전혀 다른 예절 풍경을 볼 수 있습니다. 물론 이런 차이는 지역·세대에 따라 다를 수 있다는 점을 기억해 주세요. 결국, 일본 예절은 오래된 뿌리를 바탕으로 끊임없이 흡수와 변화를 겪으며 오늘까지 이어지고 있습니다.",
     "title_line1": "일본의 오래된 예절",
     "title_line2": "오늘도 그대로일까?",
@@ -55553,7 +55561,8 @@
       "Japanese gift wrapping",
       "Japanese etiquette evolution"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -57646,7 +57655,8 @@
     "verify_note": "Holy Week in the Philippines",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:44.305181+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "reject_reason": "중복 소재"
   },
   {
     "topic": "이집트 무슬림형제단의 비밀 모임 규모",
