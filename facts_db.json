@@ -59361,12 +59361,11 @@
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Charles Dixon",
-        "license": "Public domain",
-        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
-        "id": "c:116521313"
+        "source": "pixabay",
+        "user": "ChiemSeherin",
+        "page": "https://pixabay.com/photos/chapel-castle-chapel-versailles-9057999/",
+        "id": 9057999,
+        "type": "photo"
       },
       {
         "scene": 5,
