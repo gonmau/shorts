@@ -58919,7 +58919,44 @@
     "verify_note": "British Empire",
     "confidence": "source",
     "created_at": "2026-11-07T00:19:52.870909+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "1913년, 거리 한복판에 4억 1천 2백만 명이 동시에 서 있다면 어떨까요? 바로 그 숫자는 대영제국이 지배하던 전 세계 인구의 23%에 해당합니다. 19세기와 20세기 초, 영국은 해가 지는 곳마다 식민지를 두고 있었고, 1913년엔 약 4억 1천 2백만 명이 영국 왕실의 통치 아래 살고 있었습니다.  \n\n그런데 1920년이 되면 상황은 또 달라집니다. 제국은 지구 전체 면적의 24%에 해당하는 35.5 백만 km²를 차지했는데, 이는 오늘날 어느 국가보다도 넓은 영역이었습니다. 그때의 대영제국은 ‘세계 최고의 강대국’이라고 불릴 정도로 광대한 영토와 인구를 동시에 장악하고 있었습니다.  \n\n하지만 이 수치는 각각 1913년과 1920년의 기록을 바탕으로 한 것이며, 다른 시기의 비교와는 차이가 있을 수 있습니다. 이렇게 거대한 제국이 한때 전 세계 인구와 면적의 1 / 4을 차지했다는 사실은, 당시 국제 질서가 얼마나 영국 중심으로 돌아갔는지를 보여줍니다. 결국, 그때의 영국은 세계 무대에서 어느 한 구석도 빠뜨리지 않은, 거의 전 지구를 품은 존재였다고 할 수 있겠습니다.",
+    "title_line1": "대영제국 인구·면적 ¼",
+    "title_line2": "거리엔 4억이?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "4억*인구*동시"
+      },
+      {
+        "s": 3,
+        "text": "전 세계*지배*영국"
+      },
+      {
+        "s": 5,
+        "text": "24%면적장악"
+      },
+      {
+        "s": 6,
+        "text": "세계*최강*제국"
+      },
+      {
+        "s": 8,
+        "text": "1/4세계점령"
+      }
+    ],
+    "image_queries": [
+      "crowded city street",
+      "British Empire map",
+      "British Empire global colonies",
+      "1920s world map",
+      "British Empire territory map",
+      "British Empire flag",
+      "historical atlas page",
+      "British Empire world share",
+      "global British influence"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "세부(Cebu)에서 열리는 신루궁(Sinulog) 축제",
