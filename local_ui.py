@@ -2133,11 +2133,14 @@ with T1c:
     with st.expander("🌍 나라 수정 · 나라와 주제가 안 맞는 소재 점검"):
         st.caption("나라 칸과 제목·주제·훅이 가리키는 나라가 다른 소재를 찾아 고칩니다. 목록 보기는 아무것도 안 바꿉니다. "
                    "자동 고치기: 영상이 아직 없는 소재는 나라가 하나로 분명하면 나라를 고치고 애매하면 폐기, 이미 영상이 있는 소재는 나라 칸만 고치고(애매하면 표시만) 폐기하지 않습니다.")
-        cc1, cc2 = st.columns(2)
-        if cc1.button("🔍 불일치 목록 보기", key="cc_list"):
-            run("check_country.py")
-        if cc2.button("🛠 자동 고치기 적용", key="cc_apply"):
-            run("check_country.py", "--apply")
+        if os.path.exists("check_country.py"):
+            cc1, cc2 = st.columns(2)
+            if cc1.button("🔍 불일치 목록 보기", key="cc_list"):
+                run("check_country.py")
+            if cc2.button("🛠 자동 고치기 적용", key="cc_apply"):
+                run("check_country.py", "--apply")
+        else:
+            st.caption("이 채널에는 자동 점검 도구가 없어 아래에서 직접 고칩니다.")
         st.markdown("**한 소재만 직접 고치기**")
         m1, m2 = st.columns([1, 2])
         cc_i = m1.number_input("소재 번호", 0, 9999, 0, key="cc_i")
