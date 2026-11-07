@@ -2161,6 +2161,17 @@ with T1c:
             st.session_state["gh_dirty"] = True
             st.success(f"[{int(cc_i)}] 나라: {_cur} → {cc_new.strip()}" + (" (이미 만든 영상·썸네일은 redo 후 다시 렌더링해야 새 나라로 바뀝니다)" if _old_it.get("video_path_v6") else ""))
 
+with T2a:
+    if os.path.exists("clean_hedges.py"):
+        with st.expander("🧹 대본의 물러서는·회피하는 문장 지우기 (\"~는 다를 수 있습니다\" 등)"):
+            st.caption("만든 대본에서 면책·단서 문장을 찾습니다. 목록 보기는 아무것도 안 바꿉니다. 지우기는 영상이 아직 없는 소재만 적용하고, 지운 소재는 음성을 다시 만들어야 합니다. "
+                       "영상이 있는 소재는 목록에만 표시됩니다 (redo 후 지우고 음성부터 다시).")
+            h1, h2 = st.columns(2)
+            if h1.button("🔍 목록 보기", key="hd_list"):
+                run("clean_hedges.py")
+            if h2.button("🧹 영상 없는 대본에서 지우기", key="hd_apply"):
+                run("clean_hedges.py", "--apply")
+
 with TL:
     _ext_panel('xl_', 1)
     st.caption("영상이 끝난 쇼츠를 묶어 가로 롱폼 1개로 만듭니다. 소재마다 음성/이미지를 다시 만들어서 시간이 걸립니다. 개수는 3~30개, 예상 40분 이하. facts_db.json과 별도로 longform_db.json에 기록됩니다.")
