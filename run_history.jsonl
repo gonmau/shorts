@@ -1109,3 +1109,5 @@
 {"id": "1794011195275-49da57", "time": "2026-11-07 09:26:35", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794011250098-f0d09a", "time": "2026-11-07 09:27:30", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.3, "detail": ""}
 {"id": "1794011326453-d85716", "time": "2026-11-07 09:28:46", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794011343573-bbc3b4", "time": "2026-11-07 09:29:03", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py --apply", "status": "success", "secs": 0.4, "detail": ""}
+{"id": "1794011405333-0112a2", "time": "2026-11-07 09:30:05", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.2, "detail": ""}
