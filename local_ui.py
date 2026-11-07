@@ -2157,6 +2157,20 @@ with T1c:
             if _od.exists() and not _nd.exists() and _od != _nd:     # 장면 이미지 폴더 이름도 새 나라로 맞춤
                 _od.rename(_nd)
                 st.write(f"이미지 폴더 이름 변경: {_od.name} → {_nd.name}")
+            # 음성·타이밍 파일 이름에도 나라가 들어가므로 같이 바꾸고 DB의 경로 기록도 맞춘다
+            from common import safe_country as _sc
+            _ao, _an = f"{int(cc_i):04d}_{_sc(_old_it)}", f"{int(cc_i):04d}_{_sc(_dbc[int(cc_i)])}"
+            _adir = Path(HERE) / "audio"
+            if _adir.exists() and _ao != _an:
+                for _fp in _adir.glob(_ao + "*"):
+                    _np = _fp.with_name(_an + _fp.name[len(_ao):])
+                    if not _np.exists():
+                        _fp.rename(_np)
+                        st.write(f"음성 파일 이름 변경: {_fp.name} → {_np.name}")
+                for _k in ("audio_path_v2", "timing_path_v2"):
+                    _v = _dbc[int(cc_i)].get(_k)
+                    if _v and _ao in str(_v):
+                        _dbc[int(cc_i)][_k] = str(_v).replace(_ao, _an)
             _sd(_dbc)
             st.session_state["gh_dirty"] = True
             st.success(f"[{int(cc_i)}] 나라: {_cur} → {cc_new.strip()}" + (" (이미 만든 영상·썸네일은 redo 후 다시 렌더링해야 새 나라로 바뀝니다)" if _old_it.get("video_path_v6") else ""))
