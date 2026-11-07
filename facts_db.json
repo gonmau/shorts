@@ -59263,9 +59263,9 @@
   },
   {
     "topic": "왕립 해군(Royal Navy)의 ‘시니어 서비스’ 별명",
-    "hook": "100년 전쟁을 치른 뒤, 왕립 해군은 왜 ‘시니어 서비스’라고 불릴까?",
-    "body": "왕립 해군(Royal Navy)은 영국의 해양 방위군으로, 왕실과 해외 영토를 보호한다. 16세기 초 영국 해군을 전신으로 삼아 현재까지 이어지는 가장 오래된 군사 조직이다.",
-    "twist": "‘시니어 서비스’라는 별명은 다른 영국 군대보다 먼저 설립됐다는 뜻에서 온 것이다.",
+    "hook": "영국군에서 가장 먼저 자리 잡은 군대가 육군이 아니라 해군이었다는 사실, 알고 계셨나요?",
+    "body": "영국 왕립 해군은 영국의 바다와 해상 이익을 지키는 군사 조직으로, 영국군에서 가장 오래된 군종입니다.",
+    "twist": "그래서 왕립 해군에는 다른 군종보다 역사가 앞선다는 의미의 '시니어 서비스'라는 별명이 붙었습니다.",
     "caveat": "‘시니어 서비스’라는 명칭은 영국 내에서만 통용되는 공식 별명이다.",
     "country": "영국",
     "theme": "군사/전쟁사",
@@ -59275,39 +59275,276 @@
     "confidence": "source",
     "created_at": "2026-11-07T00:19:47.050579+00:00",
     "status": "scripted",
-    "narration": "100년 전쟁이 끝난 뒤, 영국 해군이 ‘시니어 서비스’라고 불린 이유, 궁금하시죠? 영국의 해양 방위군, 즉 왕립 해군은 왕실과 해외 영토를 지키는 임무를 맡고 있습니다. 이 조직은 16세기 초 영국 해군을 전신으로 삼아 현재까지 이어지는 가장 오래된 군사 조직이라 할 수 있습니다.  \n\n그런데 ‘시니어 서비스’라는 별명은 단순히 오래됐다는 의미를 넘어섭니다. 다른 영국 군대보다 먼저 설립됐다는 사실을 강조하기 위해 붙여진 별명인데요, 즉 ‘선임된(시니어) 서비스’라는 뜻으로, 해군이 가장 먼저 조직된 군사 기관이라는 자부심을 담고 있습니다.  \n\n이 별명은 영국 내에서만 통용되는 공식 별명이며, 해외에서는 잘 알려져 있지 않습니다. 그래서 우리는 종종 해군을 그냥 ‘Royal Navy’라고만 부르지만, 영국에서는 여전히 ‘시니어 서비스’라는 호칭이 살아 숨 쉬고 있습니다.  \n\n역사를 뒤돌아보면, 400년 넘는 세월 동안 꾸준히 해양 방위를 책임져 온 이 조직이 바로 그 이유 때문이라는 점, 기억해 주세요. 100년 전쟁 이후에도 여전히 ‘시니어 서비스’라는 이름으로 우리에게 남아 있는, 그 오래된 전통의 무게가 느껴지지 않나요?",
-    "title_line1": "멕시코, 왕립 해군 별명",
+    "narration": "영국군에서 가장 먼저 자리 잡은 군대가 육군이 아니라 해군이었다는 사실, 알고 계셨나요? 영국의 왕립 해군, 즉 로열 네이비는 바다와 해상 교통로를 지키는 영국의 핵심 군사 조직입니다. 그 역사는 16세기 헨리 8세 시대로 거슬러 올라가는데, 당시 영국은 전함을 대규모로 늘리고 해군 조직을 체계화했습니다. 이후 1660년 찰스 2세의 왕정복고를 거치며 영국 해군은 공식적으로 로열 네이비라는 이름을 갖게 됩니다. 그런데 이 해군에는 조금 특별한 별명이 있습니다. 바로 '시니어 서비스'입니다. 이는 영국 육군과 공군보다 먼저 국가의 상설 군사 조직으로 자리 잡았다는 역사적 선임성을 뜻합니다. 단순히 나이가 많다는 의미가 아니라, 영국군 안에서 가장 오래된 군종이라는 상징적인 표현인 셈입니다. 바다를 지키며 수백 년의 역사를 이어온 영국 왕립 해군. 그래서 지금도 '시니어 서비스'라는 이름으로 불리고 있습니다.",
+    "title_line1": "영국 해군의 특별한 별명",
     "title_line2": "왜 시니어 서비스?",
     "highlights": [
       {
         "s": 1,
-        "text": "왜 *시니어* 서비스?"
+        "text": "영국군 최초의 *군종*"
+      },
+      {
+        "s": 2,
+        "text": "*왕립 해군*의 역사"
       },
       {
         "s": 3,
-        "text": "가장 *오래된* 군사조직"
+        "text": "헨리 8세 시대 *해군 확장*"
+      },
+      {
+        "s": 4,
+        "text": "1660년 *Royal Navy*"
       },
       {
         "s": 5,
-        "text": "*선임* 서비스 뜻"
+        "text": "별명은 *Senior Service*"
+      },
+      {
+        "s": 6,
+        "text": "영국군 중 *가장 오래된 군종*"
       },
       {
         "s": 8,
-        "text": "400년 *방위* 책임"
+        "text": "500년 가까운 *해군 전통*"
       }
     ],
     "image_queries": [
-      "Senior Service emblem",
-      "Royal Navy warship",
-      "oldest military organization monument",
-      "British naval dockyard",
-      "senior service plaque",
-      "Royal Navy flag",
-      "Royal Navy ship hull",
-      "400 years defense monument",
-      "senior service historic seal"
+      "Royal Navy historic white ensign naval emblem",
+      "Royal Navy modern warship at sea",
+      "Henry VIII Tudor navy historical warships",
+      "Charles II restoration Royal Navy 1660 historical painting",
+      "Royal Navy Senior Service historical plaque",
+      "Royal Navy White Ensign flag waving",
+      "historic Royal Navy warship wooden hull",
+      "Royal Navy centuries of naval history Portsmouth dockyard",
+      "Royal Navy historic naval seal maritime heritage"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "100년 전쟁이 끝난 뒤, 영국 해군이 ‘시니어 서비스’라고 불린 이유, 궁금하시죠? 영국의 해양 방위군, 즉 왕립 해군은 왕실과 해외 영토를 지키는 임무를 맡고 있습니다. 이 조직은 16세기 초 영국 해군을 전신으로 삼아 현재까지 이어지는 가장 오래된 군사 조직이라 할 수 있습니다.  \n\n그런데 ‘시니어 서비스’라는 별명은 단순히 오래됐다는 의미를 넘어섭니다. 다른 영국 군대보다 먼저 설립됐다는 사실을 강조하기 위해 붙여진 별명인데요, 즉 ‘선임된(시니어) 서비스’라는 뜻으로, 해군이 가장 먼저 조직된 군사 기관이라는 자부심을 담고 있습니다.  \n\n이 별명은 영국 내에서만 통용되는 공식 별명이며, 해외에서는 잘 알려져 있지 않습니다. 그래서 우리는 종종 해군을 그냥 ‘Royal Navy’라고만 부르지만, 영국에서는 여전히 ‘시니어 서비스’라는 호칭이 살아 숨 쉬고 있습니다.  \n\n역사를 뒤돌아보면, 400년 넘는 세월 동안 꾸준히 해양 방위를 책임져 온 이 조직이 바로 그 이유 때문이라는 점, 기억해 주세요. 100년 전쟁 이후에도 여전히 ‘시니어 서비스’라는 이름으로 우리에게 남아 있는, 그 오래된 전통의 무게가 느껴지지 않나요?",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Royal Navy historic white ensign naval emblem",
+      "Royal Navy modern warship at sea",
+      "Henry VIII Tudor navy historical warships",
+      "Charles II restoration Royal Navy 1660 historical painting",
+      "Royal Navy Senior Service historical plaque",
+      "Royal Navy White Ensign flag waving",
+      "historic Royal Navy warship wooden hull",
+      "Royal Navy centuries of naval history Portsmouth dockyard",
+      "Royal Navy historic naval seal maritime heritage"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Charles Dixon",
+        "license": "Public domain",
+        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
+        "id": "c:116521313"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/submarine-sea-silhouette-sub-168884/",
+        "id": 168884
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/u-s-navy-battleships-navy-sky-69208/",
+        "id": 69208
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Charles Dixon",
+        "license": "Public domain",
+        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
+        "id": "c:116521313"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Charles Dixon",
+        "license": "Public domain",
+        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
+        "id": "c:116521313"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Ralphs_Fotos",
+        "page": "https://pixabay.com/photos/flag-banner-bavaria-bavarian-3561417/",
+        "id": 3561417,
+        "type": "photo"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "buzukis",
+        "page": "https://pixabay.com/photos/warship-ship-port-navy-nato-sea-6346481/",
+        "id": 6346481
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "nuernbaer",
+        "page": "https://pixabay.com/photos/portsmouth-dockyard-hms-warrior-4044348/",
+        "id": 4044348
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Charles Dixon",
+        "license": "Public domain",
+        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
+        "id": "c:116521313"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "bad",
+        "clip": 0.1995,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c18515a904a8",
+        "at": "2026-11-07 17:09",
+        "scene": 1,
+        "rejected_ids": [
+          2530097,
+          389274,
+          7082999,
+          "c:113765104",
+          "c:116521313",
+          "c:148455206"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2723,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bdc52034316a",
+        "at": "2026-11-07 17:09",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.224,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "095bdfc498b5",
+        "at": "2026-11-07 17:09",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1912,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6fb697f9460a",
+        "at": "2026-11-07 17:09",
+        "scene": 4,
+        "rejected_ids": [
+          6978102,
+          8594719,
+          9057999,
+          "c:113765104",
+          "c:116521313",
+          "c:148455206"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.217,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a5517ba47922",
+        "at": "2026-11-07 17:10",
+        "scene": 5,
+        "rejected_ids": [
+          10184897,
+          7082999,
+          8594719,
+          "c:113765104",
+          "c:116521313",
+          "c:148455206"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2332,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ec7fa03948d5",
+        "at": "2026-11-07 17:10",
+        "scene": 6,
+        "rejected_ids": [
+          2629856,
+          3561417,
+          8863338,
+          "c:113765104",
+          "c:148455206"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2709,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7b707ad114fe",
+        "at": "2026-11-07 17:09",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2576,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "53fb9b5fafd3",
+        "at": "2026-11-07 17:09",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2371,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6a345f73a436",
+        "at": "2026-11-07 17:10",
+        "scene": 9,
+        "rejected_ids": [
+          389274,
+          5412870,
+          7082999,
+          "c:113765104",
+          "c:116521313",
+          "c:148455206"
+        ]
+      }
+    ]
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
