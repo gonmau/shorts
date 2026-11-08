@@ -59049,7 +59049,7 @@
     "thumb_opts": {
       "scale1": 1.0,
       "scale2": 0.95,
-      "angle": 0.0,
+      "angle": 15.0,
       "dy": -500,
       "tag": false,
       "font": "blackhan",
