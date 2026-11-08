@@ -61827,12 +61827,12 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.mp4",
     "status_v6": "video_done",
     "thumb_opts": {
-      "scale1": 1.0,
+      "scale1": 1.3,
       "scale2": 1.05,
       "angle": -7.5,
       "dy": 130,
       "tag": true,
-      "font": "",
+      "font": "dokdo",
       "colors1": {
         "0": "#f015e1"
       },
