@@ -59252,7 +59252,7 @@
     "body": "라틴어 ‘docēre’에서 온 ‘Doctor’는 원래 교사를 의미했으며, 13세기 볼로냐와 파리 대학에서 최초로 박사학위가 수여되었다. 이제 전 세계에서 박사 학위 소지자를 가리키는 약칭으로 쓰인다.",
     "twist": "과거엔 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었었다.",
     "caveat": "이 명칭은 유럽 대학을 중심으로 전파된 것이며, 지역마다 사용 방식에 차이가 있다.",
-    "country": "가나",
+    "country": "유럽",
     "theme": "관습/예절",
     "wiki_title": "Doctor (title)",
     "source_url": "https://en.wikipedia.org/wiki/Doctor_(title)",
@@ -60905,5 +60905,54 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
     "status_v6": "video_done"
+  },
+  {
+    "topic": "박사(Doctor) 칭호의 기원과 현대 사용",
+    "hook": "13세기 유럽에서 시작된 박사(Doctor) 칭호, 오늘날엔 ‘Dr.’ 하나면 충분할까?",
+    "body": "라틴어 ‘docēre’에서 온 ‘Doctor’는 원래 교사를 의미했으며, 13세기 볼로냐와 파리 대학에서 최초로 박사학위가 수여되었다. 이제 전 세계에서 박사 학위 소지자를 가리키는 약칭으로 쓰인다.",
+    "twist": "과거엔 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었었다.",
+    "caveat": "이 명칭은 유럽 대학을 중심으로 전파된 것이며, 지역마다 사용 방식에 차이가 있다.",
+    "country": "가나",
+    "theme": "관습/예절",
+    "wiki_title": "Doctor (title)",
+    "source_url": "https://en.wikipedia.org/wiki/Doctor_(title)",
+    "verify_note": "Doctor (title)",
+    "confidence": "source",
+    "created_at": "2026-11-07T00:19:47.050579+00:00",
+    "status": "scripted",
+    "narration": "13세기 유럽에서 시작된 박사(Doctor) 칭호, 오늘날엔 ‘Dr.’ 하나면 충분할까요? 라틴어 docēre, 즉 “가르치다”에서 파생된 Doctor는 원래 교사를 뜻했습니다. 중세에 이르러 볼로냐와 파리 대학이 최초로 박사학위를 수여하면서, 학문을 체계적으로 가르치는 사람에게 공식적인 명칭으로 쓰이기 시작했죠. 그런데 과거에는 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었습니다. 즉, 오늘날처럼 박사 학위 소지자만을 가리키는 것이 아니라, 교사 자체를 존중하는 의미였던 겁니다. 시간이 흐르면서 이 칭호는 유럽 대학을 중심으로 전파되었습니다. 현재는 전 세계 대부분의 대학에서 박사 학위를 받은 사람을 간단히 ‘Dr.’이라고 부릅니다. 그럼 이제 ‘Doctor’라는 한 글자가 얼마나 많은 역사를 품고 있는지, 생각해 보세요. 처음의 질문처럼, 오늘날에도 충분히 ‘Dr.’ 하나면 될까요? 답은, 그 한 글자에 담긴 긴 학문의 여정에 달려 있습니다.",
+    "title_line1": "박사 칭호의 기원",
+    "title_line2": "한 글자로 충분할까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*박사*는 13세기"
+      },
+      {
+        "s": 2,
+        "text": "라틴어 *가르치다* 의미"
+      },
+      {
+        "s": 3,
+        "text": "볼로냐·파리, *첫* 박사"
+      },
+      {
+        "s": 7,
+        "text": "오늘날 *박사* 하나면?"
+      }
+    ],
+    "image_queries": [
+      "13th century Doctor illustration",
+      "Latin teaching manuscript",
+      "Bologna historic lecture hall",
+      "medieval Doctor teaching scene",
+      "old classroom honoring Doctor",
+      "European university spreading knowledge",
+      "modern Doctor graduation ceremony",
+      "ancient Latin scroll",
+      "contemporary Doctor office sign",
+      "academic degree timeline chart"
+    ],
+    "scene_count": 10
   }
 ]
