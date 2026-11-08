@@ -61815,7 +61815,19 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": -7.5,
+      "dy": 130,
+      "tag": true,
+      "font": "",
+      "colors1": {
+        "0": "#f01515"
+      },
+      "colors2": {}
+    }
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
