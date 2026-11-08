@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 18:02:11 (KST) · 기록 1299건 · 소재 591개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 18:04:21 (KST) · 기록 1300건 · 소재 591개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | upload_to_youtube | 18 | 0 | 11분 33초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 70 | 0 | 0초 |
+| 코드업데이트 | 71 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 18:04 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_video.py, local_ui.py, scenes.py) | ✅ |  |  |
 | 17:59 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 1분 1초 |  |
 | 17:58 | PC | generate_script | generate_script.py --extras-only --index 583 | ✅ | 9초 |  |
 | 17:57 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
