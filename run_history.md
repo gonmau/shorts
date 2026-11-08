@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 12:42:16 (KST) · 기록 1247건 · 소재 576개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 12:47:36 (KST) · 기록 1249건 · 소재 576개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 41 | 0 | 18분 25초 |
+| -c | 42 | 0 | 19분 18초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 91 | 0 | 19초 |
@@ -20,7 +20,7 @@
 | export_review | 28 | 0 | 4초 |
 | fetch_images | 140 | 3 | 2시간 3분 |
 | generate_culture_facts | 12 | 0 | 23분 12초 |
-| generate_script | 144 | 0 | 1시간 8분 |
+| generate_script | 145 | 0 | 1시간 8분 |
 | generate_tts | 62 | 0 | 26분 19초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 27 | 0 | 46초 |
@@ -39,6 +39,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:47 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 52초 |  |
+| 12:46 | PC | generate_script | generate_script.py --extras-only --index 551 | ✅ | 3초 |  |
 | 12:39 | PC | generate_tts | generate_tts.py --index 551 | ✅ | 12초 |  |
 | 12:39 | PC | promote_ready | promote_ready.py --start 551 | ✅ | 0초 |  |
 | 12:39 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
