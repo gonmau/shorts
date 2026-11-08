@@ -61522,7 +61522,38 @@
     "verify_note": "Aegean dispute",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "1987년과 1996년에 전쟁 한 걸음만 남겨두고 멈췄다는 사실, 알고 계셨나요? 그리스와 터키는 에게해에서 영해·공역·배타적 경제수역·대륙붕·비행정보구역·비무장지대까지 여러 영역을 두고 끊임없이 마찰을 빚어 왔습니다. 양국은 각각 해상 경계선을 다르게 주장하고, 항공권한을 서로 침범한다는 이유로 군용기를 격돌시키기도 했죠.  \n\n그런데 1970년대 이후 이 갈등이 지속되면서, 두 나라 사이의 신뢰는 크게 흔들렸습니다. 에게해의 섬들에 대한 주권 문제와 해저 자원 탐사권이 얽히면서, 매번 외교적 협상으로 위기를 모면했지만 전쟁 직전까지 치닫는 순간도 몇 차례 있었습니다.  \n\n이러한 긴장은 국제 관계 연구와 양국 정부 발표를 토대로 정리된 것이며, 실제 상황은 여전히 복잡합니다. 결국, 에게해는 오늘도 평화와 전쟁 사이의 얇은 선 위에 서 있습니다.",
+    "title_line1": "그리스·터키 에게해",
+    "title_line2": "전쟁 한 걸음 전",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전쟁한걸음*남음*"
+      },
+      {
+        "s": 2,
+        "text": "해역·공역·경계*충돌*"
+      },
+      {
+        "s": 5,
+        "text": "섬·자원*위기*"
+      },
+      {
+        "s": 7,
+        "text": "평화와*전쟁* 사이"
+      }
+    ],
+    "image_queries": [
+      "military standoff coast",
+      "Greek Turkish naval vessels",
+      "fighter jets over sea",
+      "Turkish Greek diplomatic table",
+      "Aegean island oil rig",
+      "diplomatic maps and papers",
+      "border fence island"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "인도 승려 프레마난드 마하라지(Premanand Maharaj)의 영적 일상",
