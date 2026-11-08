@@ -60013,7 +60013,17 @@
     "status_v6": "video_done",
     "youtube_id": "diqQaHqHRVE",
     "uploaded_at": "2026-11-07T11:02:48.519450+09:00",
-    "thumb_scene": 6
+    "thumb_scene": 6,
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "font": "dokdo",
+      "colors1": {},
+      "colors2": {}
+    }
   },
   {
     "topic": "세부(Cebu)에서 열리는 신루궁(Sinulog) 축제",
