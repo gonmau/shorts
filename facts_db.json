@@ -59045,7 +59045,19 @@
       "historic cricket achievement"
     ],
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0551_스리랑카.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 0.95,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": false,
+      "font": "blackhan",
+      "colors1": {
+        "0": "#dfe218"
+      },
+      "colors2": {}
+    }
   },
   {
     "topic": "서키야 전통 규칙, 아침 인사 의무화",
