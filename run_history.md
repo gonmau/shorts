@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 12:01:02 (KST) · 기록 1223건 · 소재 573개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 12:01:10 (KST) · 기록 1224건 · 소재 573개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -12,7 +12,7 @@
 | apply_review | 86 | 0 | 17초 |
 | approve | 20 | 0 | 4초 |
 | build_video | 53 | 0 | 9시간 41분 |
-| check_country | 10 | 0 | 2초 |
+| check_country | 11 | 0 | 3초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:01 | PC | check_country | check_country.py --apply | ✅ | 0초 |  |
 | 12:00 | PC | check_country | check_country.py | ✅ | 0초 |  |
 | 11:29 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_video.py, layout.py, local_ui.py) | ✅ |  |  |
 | 11:10 | PC | 코드업데이트 | gonmau/shorts: 12개 (fonts/BM-HANNA.ttf, fonts/BlackHanSans-Regular.ttf, fonts/DoHyeon-Regular.ttf, fonts/EastSeaDokdo-Regular.ttf, fonts/Gaegu-Bold.ttf, fonts/Gugi-Regular.ttf) | ✅ |  |  |
