@@ -112,9 +112,8 @@ def make_template(title1, title2, credit, out_path=None, *, channel_name="채널
                   handle="@handle", avatar_path=None,
                   title_color_2=TITLE_COLOR_2, font_path=None, title_opts=None):
     """이미지 자리가 비어 있는 배경 템플릿 (RGB) 생성."""
-    if font_path is None:
-        import fonts as _F
-        font_path = _F.role_path("title")
+    import fonts as _F
+    title_font = font_path or _F.role_path("title")     # 고른 글씨체는 제목 두 줄에만 (채널명·핸들·출처는 기본 글꼴)
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
@@ -126,8 +125,8 @@ def make_template(title1, title2, credit, out_path=None, *, channel_name="채널
 
     # --- 제목 2줄 ---
     max_w = W - 100
-    f1 = _fit_font(d, title1, max_w, 88, font_path=font_path)
-    f2 = _fit_font(d, title2, max_w, 88, font_path=font_path)
+    f1 = _fit_font(d, title1, max_w, 88, font_path=title_font)
+    f2 = _fit_font(d, title2, max_w, 88, font_path=title_font)
     to = title_opts or {}
     c1 = _hex_rgb(to.get("color1"), TITLE_COLOR_1) if to.get("color1") else TITLE_COLOR_1
     c2 = _hex_rgb(to.get("color2"), title_color_2) if to.get("color2") else title_color_2

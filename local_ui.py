@@ -1500,6 +1500,7 @@ with T2b:
         if sel in ids_rev:
             st.markdown("**핵심 문구** (자막 방식이 '핵심 문구' 또는 '대본 자막 + 핵심 문구 둘 다'일 때만 화면에 나옵니다)")
             h_txt = st.text_area("핵심", "\n".join(hls), height=100, key=f"h_{sel}", label_visibility="collapsed")
+            st.caption("핵심[번호]의 번호는 대본 문장 번호입니다. 대본에서 문장을 빼거나 넣고 저장하면 핵심 문구 번호가 자동으로 새 대본에 맞춰집니다 (빠진 문장의 핵심 문구는 같이 빠짐) — 번호를 직접 바꾸지 마세요.")
             with st.expander("🎛 핵심 문구 모양·효과 (기본값 그대로 써도 됩니다)"):
                 import fonts as _FH
                 import overlays as OV

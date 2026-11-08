@@ -16,6 +16,17 @@ SKIP = re.compile(r"^(제외|건너뛰기)\s*[:：]\s*(.*)$")
 HL = re.compile(r"^핵심\s*\[\s*(\d+)\s*\]\s*[:：]\s*(.*)$")
 
 
+def remap_sentence_numbers(old, new):
+    """대본 문장이 지워지거나 끼어들면 문장 번호가 밀린다. 예전 번호(1부터) -> 새 번호 표. 지워진 문장은 표에 없다."""
+    import difflib
+    mp = {}
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, old, new, autojunk=False).get_opcodes():
+        if tag in ("equal", "replace"):
+            for k in range(min(i2 - i1, j2 - j1)):
+                mp[i1 + k + 1] = j1 + k + 1
+    return mp
+
+
 def parse(text):
     blocks, cur = {}, None
     for raw in text.splitlines():
@@ -68,6 +79,7 @@ def main():
     db = load_db()
     changed = 0
     strip_img = set()
+    hl_rewrite = {}   # idx -> 번호를 새 대본에 맞게 바꾼 핵심 문구 (review 파일 줄도 같이 고친다)
     for idx, b in blocks.items():
         if not (0 <= idx < len(db)):
             continue
@@ -83,9 +95,24 @@ def main():
             item["title_line1"] = b["t1"]
         if b["t2"]:
             item["title_line2"] = b["t2"]
-        hl = sorted(b["hl"], key=lambda h: h["s"])  # 문장 번호 순
-        if hl or item.get("highlights") is not None:
-            item["highlights"] = hl  # 빈 리스트 = 핵심 문구 표시 안 함
+        hl = sorted(b["hl"], key=lambda h: h["s"])  # 문장 번호 순 (대본을 고치기 전 번호 기준)
+        # 대본에서 문장을 빼거나 넣었으면 핵심 문구의 문장 번호를 새 대본에 맞게 옮긴다 (지워진 문장의 핵심 문구는 같이 빠짐)
+        if b["narr"]:
+            _old = split_sentences(item.get("narration", ""))
+            _new = [t for _, t in sorted(b["narr"].items()) if t]
+            if _new and _new != _old and len(_new) != len(_old):
+                _mp = remap_sentence_numbers(_old, _new)
+                _src = hl if hl else ([] if path.name == "review.txt" else [h for h in (item.get("highlights") or []) if isinstance(h, dict)])
+                _moved = [{"s": _mp[h["s"]], "text": h["text"]} for h in _src if h.get("s") in _mp]
+                if _src and (len(_moved) != len(_src) or any(a["s"] != c["s"] for a, c in zip(_moved, _src))):
+                    print(f"  [{idx}] {item.get('country', '')}: 대본 문장 수가 바뀌어 핵심 문구 번호를 새 대본에 맞춤 ({len(_src)}개 중 {len(_moved)}개 유지)")
+                    hl = _moved
+                    hl_rewrite[idx] = hl
+                    if not b["hl"]:
+                        item["highlights"] = hl
+        if b["hl"] or path.name == "review.txt":
+            if hl or item.get("highlights") is not None:
+                item["highlights"] = hl  # 빈 리스트 = 핵심 문구 표시 안 함
         edited = False
         narr_changed = False
         if b["narr"]:
@@ -132,6 +159,24 @@ def main():
             if cur_idx in strip_img and IMG.match(raw.strip()):
                 continue
             out.append(raw)
+        path.write_text("\n".join(out) + "\n", encoding="utf-8")
+    if hl_rewrite and path.exists():
+        out, cur_idx, done = [], None, set()
+        for raw in path.read_text(encoding="utf-8").splitlines():
+            m = HEAD.match(raw.strip())
+            if m:
+                if cur_idx in hl_rewrite and cur_idx not in done:      # 핵심 줄이 없던 블록은 블록 끝에 넣는다
+                    out.extend(f"핵심[{h['s']}]: {h['text']}" for h in hl_rewrite[cur_idx])
+                    done.add(cur_idx)
+                cur_idx = int(m.group(1))
+            if cur_idx in hl_rewrite and HL.match(raw.strip()):
+                if cur_idx not in done:
+                    out.extend(f"핵심[{h['s']}]: {h['text']}" for h in hl_rewrite[cur_idx])
+                    done.add(cur_idx)
+                continue
+            out.append(raw)
+        if cur_idx in hl_rewrite and cur_idx not in done:
+            out.extend(f"핵심[{h['s']}]: {h['text']}" for h in hl_rewrite[cur_idx])
         path.write_text("\n".join(out) + "\n", encoding="utf-8")
     if changed:
         save_db(db)
