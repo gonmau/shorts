@@ -94,6 +94,88 @@ def download(session, url, dest, headers=None):
     im.save(dest, "PNG")
 
 
+def _dhash(path):
+    """사진이 같은지 비교하는 간단한 지문(dHash 64비트). 크기·압축이 달라도 같은 사진이면 거의 같은 값."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            g = im.convert("L").resize((9, 8), Image.Resampling.LANCZOS)
+        px = list(g.getdata())
+        bits = 0
+        for r in range(8):
+            for c in range(8):
+                bits = (bits << 1) | (1 if px[r * 9 + c] > px[r * 9 + c + 1] else 0)
+        return bits
+    except Exception:
+        return None
+
+
+def _dup_of(h, hashes, thr=6):
+    """h 와 비슷한(해밍 거리 thr 이하) 지문을 가진 장면 번호 (없으면 None)."""
+    if h is None:
+        return None
+    for k, v in hashes.items():
+        if v is not None and bin(h ^ v).count("1") <= thr:
+            return k
+    return None
+
+
+def _fetch_scene(session, key, n, query, dest, used, anchor):
+    """한 장면의 사진을 받아 저장하고 credit dict 를 돌려준다. 결과가 없으면 None."""
+    hit, relevant = pick(session, key, query, used)
+    credit = None
+    if hit and relevant:  # 1순위: Pixabay에서 주제와 맞는 사진
+        used.add(hit["id"])
+        download(session, hit["largeImageURL"], dest)
+        credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
+    else:  # 2순위: Wikimedia Commons (CC0/퍼블릭도메인/CC BY만)
+        c = None
+        for q in (query, anchor):
+            if not q:
+                continue
+            try:
+                c = commons.search(session, q, used)
+            except Exception as e:
+                print(f"    scene_{n:02d}: Commons 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
+                c = None
+            if c:
+                break
+            time.sleep(1.0)
+        o = None
+        if not c:      # 3순위: Openverse (CC0/퍼블릭도메인/CC BY만)
+            try:
+                import openverse
+                for q in (query, anchor):
+                    if not q:
+                        continue
+                    r_ = openverse.search(session, q, used, 1)
+                    if r_:
+                        o = r_[0]
+                        break
+                    time.sleep(0.5)
+            except Exception as e:
+                print(f"    scene_{n:02d}: Openverse 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
+                o = None
+        if c:
+            used.add(c["id"])
+            download(session, c["url"], dest, {"User-Agent": commons.UA})
+            credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
+                      "title": c["title"], "page": c["page"], "id": c["id"]}
+        elif o:
+            used.add(o["id"])
+            download(session, o["url"], dest, {"User-Agent": "culture-shorts-bot/1.0"})
+            credit = {"scene": n, "source": "openverse", "user": o["artist"], "license": o["license"],
+                      "title": o["title"], "page": o["page"], "id": o["id"]}
+        elif hit:  # 3순위: 주제와 덜 맞아도 Pixabay에서 가장 비슷한 사진
+            used.add(hit["id"])
+            download(session, hit["largeImageURL"], dest)
+            credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
+        else:
+            print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
+            return None
+    return credit
+
+
 def fetch_item(session, key, idx, item, force):
     folder = visual_dir(BASE_DIR, idx, item)
     queries = item.get("image_queries") or []
@@ -116,6 +198,14 @@ def fetch_item(session, key, idx, item, force):
     anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
     old = {} if force else {c.get("scene"): c for c in (item.get("image_credits") or [])}
     new_credits, used, got = {}, set(), 0
+    hashes = {}       # 이미 정해진 장면의 사진 지문 (같은 사진이 두 장면에 들어가는 것 방지)
+    for n_k in range(1, len(queries) + 1):
+        d_k = folder / f"scene_{n_k:02d}.png"
+        if d_k.exists() and not (force or n_k in changed_scenes):
+            hashes[n_k] = _dhash(d_k)
+            c_k = old.get(n_k) or {}
+            if c_k.get("id") is not None:
+                used.add(c_k["id"])
     for n, query in enumerate(queries, start=1):
         dest = folder / f"scene_{n:02d}.png"
         redo_scene = force or n in changed_scenes
@@ -124,58 +214,25 @@ def fetch_item(session, key, idx, item, force):
             continue
         if dest.exists():
             dest.unlink()  # 검색어가 바뀐 경우 예전 사진이 남지 않게 한다
+        credit = None
         try:
-            hit, relevant = pick(session, key, query, used)
-            credit = None
-            if hit and relevant:  # 1순위: Pixabay에서 주제와 맞는 사진
-                used.add(hit["id"])
-                download(session, hit["largeImageURL"], dest)
-                credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
-            else:  # 2순위: Wikimedia Commons (CC0/퍼블릭도메인/CC BY만)
-                c = None
-                for q in (query, anchor):
-                    if not q:
-                        continue
-                    try:
-                        c = commons.search(session, q, used)
-                    except Exception as e:
-                        print(f"    scene_{n:02d}: Commons 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
-                        c = None
-                    if c:
-                        break
-                    time.sleep(1.0)
-                o = None
-                if not c:      # 3순위: Openverse (CC0/퍼블릭도메인/CC BY만)
-                    try:
-                        import openverse
-                        for q in (query, anchor):
-                            if not q:
-                                continue
-                            r_ = openverse.search(session, q, used, 1)
-                            if r_:
-                                o = r_[0]
-                                break
-                            time.sleep(0.5)
-                    except Exception as e:
-                        print(f"    scene_{n:02d}: Openverse 검색 실패 ({type(e).__name__}) -> Pixabay로 대체")
-                        o = None
-                if c:
-                    used.add(c["id"])
-                    download(session, c["url"], dest, {"User-Agent": commons.UA})
-                    credit = {"scene": n, "source": "commons", "user": c["artist"], "license": c["license"],
-                              "title": c["title"], "page": c["page"], "id": c["id"]}
-                elif o:
-                    used.add(o["id"])
-                    download(session, o["url"], dest, {"User-Agent": "culture-shorts-bot/1.0"})
-                    credit = {"scene": n, "source": "openverse", "user": o["artist"], "license": o["license"],
-                              "title": o["title"], "page": o["page"], "id": o["id"]}
-                elif hit:  # 3순위: 주제와 덜 맞아도 Pixabay에서 가장 비슷한 사진
-                    used.add(hit["id"])
-                    download(session, hit["largeImageURL"], dest)
-                    credit = {"scene": n, "source": "pixabay", "user": hit.get("user", ""), "page": hit.get("pageURL", ""), "id": hit["id"]}
-                else:
-                    print(f"    scene_{n:02d}: 결과 없음 ({query}) -> 대체 카드")
-                    continue
+            for attempt in range(4):      # 이미 쓴 사진과 같은 사진이면 버리고 다른 후보를 다시 찾는다
+                credit = _fetch_scene(session, key, n, query, dest, used, anchor)
+                if credit is None:
+                    break
+                h = _dhash(dest)
+                dup = _dup_of(h, hashes)
+                if dup is None:
+                    hashes[n] = h
+                    break
+                print(f"    scene_{n:02d}: 장면 {dup}번과 같은 사진 -> 버리고 다른 사진을 찾습니다 ({attempt + 1}/4)")
+                dest.unlink(missing_ok=True)
+                credit = None
+            if credit is None:
+                if dest.exists():
+                    dest.unlink()
+                print(f"    scene_{n:02d}: 중복 아닌 사진을 못 찾음 ({query}) -> 대체 카드")
+                continue
             new_credits[n] = credit
             got += 1
             print(f"    scene_{n:02d}: {query} -> {credit['source']}" + (f" ({credit['license']})" if credit.get("license") else ""))
