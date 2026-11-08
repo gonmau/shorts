@@ -343,9 +343,30 @@ def parse_marked(text):
     return words
 
 
-def make_highlight_image(text):
+HL_DEFAULT_STYLE = {"effect": "페이드", "scale": 1.0, "x": 50, "y": None, "color_hl": "#FFE200", "color_base": "#FFFFFF",
+                    "stroke": "#000000", "font": ""}
+
+
+def hl_style(item, mode=None):
+    """핵심 문구 모양: item['highlight_style'] 이 기본값 위에 덮어씀. y 가 없으면 방식에 따라 기본 위치(아래쪽 / 둘 다일 땐 이미지 위쪽)."""
+    st = dict(HL_DEFAULT_STYLE)
+    st.update({k: v for k, v in (item.get("highlight_style") or {}).items() if v not in (None, "")})
+    if st.get("y") is None:
+        mode = mode or subtitles.caption_mode()
+        st["y"] = round((IMG_BOX[1] + 110) / H * 100, 1) if mode == "script_hl" else round((IMG_BOX[3] - 105) / H * 100, 1)
+    return st
+
+
+def make_highlight_image(text, style=None, crop=False):
     """핵심 문구를 크게 (최대 2줄, 글자 수가 달라도 자동으로 크기 조절) 그린 RGBA 배열.
     *별표* 단어는 노랑, 나머지는 흰색 (별표가 없으면 전부 노랑). 굵은 검정 테두리."""
+    stl = style or {}
+    import fonts as _F
+    from overlays import _rgb
+    c_hl, c_base = _rgb(stl.get("color_hl"), HL_COLOR), _rgb(stl.get("color_base"), HL_BASE)
+    c_stroke = _rgb(stl.get("stroke") or "#000000", (0, 0, 0))
+    sc = float(stl.get("scale") or 1.0)
+    fpath = _F.path(stl.get("font")) if stl.get("font") else None
     img = Image.new("RGBA", (CAP_W, CAP_H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     words = parse_marked(text)
@@ -371,8 +392,8 @@ def make_highlight_image(text):
         return lines
 
     font, size, lines, space = None, 0, [], 0
-    for size in range(124, 55, -4):
-        fp = find_font(size, bold=True, role="sub")
+    for size in range(max(24, int(124 * sc)), max(20, int(56 * sc)) - 1, -4):
+        fp = fpath or find_font(size, bold=True, role="sub")
         font = ImageFont.truetype(fp, size) if fp else ImageFont.load_default()
         space = draw.textlength(" ", font=font)
         lines = wrap(font, words, space)
@@ -392,12 +413,16 @@ def make_highlight_image(text):
         total = sum(draw.textlength(w, font=font) for w, _ in line) + space * (len(line) - 1)
         x = (CAP_W - total) / 2
         for w, hl in line:
-            color = HL_COLOR if (hl or not any_hl) else HL_BASE
+            color = c_hl if (hl or not any_hl) else c_base
             draw.text((x, y), w, font=font, fill=color + (255,),
-                      stroke_width=stroke, stroke_fill=(0, 0, 0, 255))
+                      stroke_width=stroke, stroke_fill=c_stroke + (255,))
             x += draw.textlength(w, font=font) + space
         y += lh
-    return np.array(img)
+    if crop:
+        bb = img.getbbox()
+        if bb:
+            img = img.crop((max(0, bb[0] - 6), max(0, bb[1] - 6), min(CAP_W, bb[2] + 6), min(CAP_H, bb[3] + 6)))
+    return np.array(img) if not crop else img
 
 
 def make_scrim(h=470, max_alpha=165):
@@ -759,18 +784,17 @@ def build_one(idx, item):
     srt_text = subtitles.to_srt(all_cues)
     if caption_mode in ("highlight", "script_hl"):
         # 핵심 문구 (예전 방식). script_hl 이면 대본 자막과 겹치지 않게 이미지 위쪽에 표시
-        _hl_y = IMG_BOX[1] + 28 if caption_mode == "script_hl" else IMG_BOX[3] - CAP_H - 20
         cues = highlight_cues(item, timings, audio_duration, script)
+        _st = hl_style(item, caption_mode)
+        _rows = []
         for start, end, text in cues:
             print(f"  문구 {start:5.1f}s~{end:5.1f}s: {strip_marks(text)}")
-            cc = (
-                ImageClip(make_highlight_image(text))
-                .set_start(start)
-                .set_duration(end - start)
-                .set_position((IMG_BOX[0], _hl_y))
-                .crossfadein(0.1)
-            )
-            caption_clips.append(cc)
+            _rows.append({"text": text, "start": start, "dur": max(0.2, end - start), "effect": _st["effect"], "x": _st["x"], "y": _st["y"]})
+
+        def _hl_render(o, reveal=None, _st=_st):
+            im_ = make_highlight_image(o["text"], _st, crop=True)
+            return im_, min(max(W * o["x"] / 100.0, im_.width / 2), W - im_.width / 2), min(max(H * o["y"] / 100.0, im_.height / 2), H - im_.height / 2), 1
+        caption_clips.extend(overlays.make_clips(_rows, audio_duration, renderer=_hl_render))
     if caption_mode != "highlight":
         # 대본 자막: 음성 속도에 맞춰 2줄 이내 조각으로 나눠 보여주고, 사진 밝기에 따라 패널 진하기를 조절
         stats = [subtitles.region_stats(im) for im in srcs]

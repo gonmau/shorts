@@ -179,14 +179,15 @@ def _ease(p):
     return 1 - (1 - p) ** 3
 
 
-def make_clips(items, audio_duration):
-    """moviepy 클립 목록. 음성 길이를 넘는 부분은 잘라낸다."""
+def make_clips(items, audio_duration, renderer=None):
+    """moviepy 클립 목록. 음성 길이를 넘는 부분은 잘라낸다. renderer(o, reveal=None) 를 주면 문구 이미지를 그 함수로 그린다(핵심 문구용)."""
+    render_text_ = renderer or render_text
     clips = []
     for o in clean_list(items):
         start = min(o["start"], max(0.0, audio_duration - 0.3))
         dur = max(0.2, min(o["dur"], audio_duration - start))
         eff = o["effect"]
-        img, cx, cy, n_chars = render_text(o)
+        img, cx, cy, n_chars = render_text_(o)
         fade = min(0.35, dur / 3)
         if eff == "없음":
             clips.append(_clip(img, cx, cy, start, dur))
@@ -213,7 +214,7 @@ def make_clips(items, audio_duration):
             t = 0.0
             k = step_chars
             while k < n_chars and t < dur - 0.2:
-                im_k, _, _, _ = render_text(o, reveal=k)
+                im_k, _, _, _ = render_text_(o, reveal=k)
                 clips.append(_clip(im_k, cx, cy, start + t, per * step_chars))
                 t += per * step_chars
                 k += step_chars

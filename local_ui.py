@@ -1500,6 +1500,37 @@ with T2b:
         if sel in ids_rev:
             st.markdown("**핵심 문구** (자막 방식이 '핵심 문구' 또는 '대본 자막 + 핵심 문구 둘 다'일 때만 화면에 나옵니다)")
             h_txt = st.text_area("핵심", "\n".join(hls), height=100, key=f"h_{sel}", label_visibility="collapsed")
+            with st.expander("🎛 핵심 문구 모양·효과 (기본값 그대로 써도 됩니다)"):
+                import fonts as _FH
+                import overlays as OV
+                _fh = _FH.available()
+                _hs0 = dict((_ld()[sel].get("highlight_style") or {})) if sel < len(_ld()) else {}
+                _he1, _he2, _he3 = st.columns(3)
+                _hef = _he1.selectbox("효과", OV.EFFECTS, OV.EFFECTS.index(_hs0.get("effect") or "페이드") if (_hs0.get("effect") or "페이드") in OV.EFFECTS else 0, key=f"hs_ef_{sel}",
+                                      help="타자기는 핵심 문구에선 '나타남'으로 처리됩니다")
+                _hsc = _he2.slider("크기 배율", 0.5, 1.5, float(_hs0.get("scale") or 1.0), 0.05, key=f"hs_sc_{sel}")
+                _hfo = ["", *_fh]
+                _hft = _he3.selectbox("글씨체", _hfo, _hfo.index(_hs0.get("font") or "") if (_hs0.get("font") or "") in _hfo else 0, key=f"hs_ft_{sel}",
+                                      format_func=lambda x: "기본 (설정 탭 자막 글씨체)" if not x else _fh[x])
+                _hp1, _hp2 = st.columns(2)
+                _hx = _hp1.slider("가로 위치 x(%)", 0, 100, int(_hs0.get("x") or 50), key=f"hs_x_{sel}")
+                _hy_auto = _hp2.checkbox("세로 위치 자동 (아래쪽, '둘 다'일 땐 이미지 위쪽)", _hs0.get("y") in (None, ""), key=f"hs_ya_{sel}")
+                _hy = None
+                if not _hy_auto:
+                    _hy = st.slider("세로 위치 y(%) (이미지 영역은 약 23~76%)", 0, 100, int(_hs0.get("y") or 70), key=f"hs_y_{sel}")
+                _hc1, _hc2, _hc3 = st.columns(3)
+                _hch = _hc1.color_picker("강조(*별표*) 글자색", _hs0.get("color_hl") or "#FFE200", key=f"hs_ch_{sel}")
+                _hcb = _hc2.color_picker("나머지 글자색", _hs0.get("color_base") or "#FFFFFF", key=f"hs_cb_{sel}")
+                _hcs = _hc3.color_picker("외곽선색", _hs0.get("stroke") or "#000000", key=f"hs_cs_{sel}")
+                _hb1, _hb2 = st.columns(2)
+                if _hb1.button("모양 저장", key=f"hs_save_{sel}", type="primary"):
+                    _dm = _ld()
+                    _dm[sel]["highlight_style"] = {"effect": _hef, "scale": _hsc, "font": _hft, "x": _hx, "y": _hy,
+                                                   "color_hl": _hch, "color_base": _hcb, "stroke": _hcs}
+                    _sd(_dm)
+                    st.success("저장했습니다. 이미 만든 영상이면 redo에 번호를 넣고 5단계 렌더링을 해야 반영됩니다.")
+                if _hb2.button("기본 모양으로 되돌리기", key=f"hs_reset_{sel}"):
+                    _dm = _ld(); _dm[sel].pop("highlight_style", None); _sd(_dm); st.rerun()
         st.caption("대본을 고치면 음성이 다시 만들어지고, 이미지 검색어는 새 대본 기준으로 다시 만들어집니다(이미지 탭에서 확인). "
                    "이미 영상이 만들어진 소재는 수정 후 redo에 번호를 넣고 5단계를 해야 영상에 반영됩니다.")
         if st.button("대본 저장", key=f"save_s_{sel}"):
