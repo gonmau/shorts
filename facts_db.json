@@ -59050,7 +59050,7 @@
       "scale1": 1.0,
       "scale2": 0.95,
       "angle": 0.0,
-      "dy": 0,
+      "dy": -500,
       "tag": false,
       "font": "blackhan",
       "colors1": {
