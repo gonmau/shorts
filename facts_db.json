@@ -59051,13 +59051,13 @@
       "scale2": 1.15,
       "angle": 15.0,
       "dy": -500,
-      "tag": false,
+      "tag": true,
       "font": "blackhan",
       "colors1": {
         "0": "#dfe218"
       },
       "colors2": {
-        "0": "#e81f1f"
+        "0": "#ac1de6"
       }
     }
   },
