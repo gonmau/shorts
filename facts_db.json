@@ -61823,10 +61823,6 @@
         ]
       }
     ],
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.mp4",
     "status_v6": "video_done",
@@ -61845,7 +61841,115 @@
         "2": "#dd2121"
       }
     },
-    "thumb_scene": 2
+    "thumb_scene": 2,
+    "redo_ts": 1794129620.8772047,
+    "overlays": [
+      {
+        "text": "세계 해상 물류 핵심",
+        "start": 6.8,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#8A5CFF",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "페이드",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "말라카 해협, 대만 해협",
+        "start": 12.3,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#5CD6FF",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "슬라이드업",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "중동, 유럽의 동아시아 바닷길",
+        "start": 20.0,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#5CD6FF",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "슬라이드업",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "대만해협, 한국 무역 22%",
+        "start": 25.5,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FFE200",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "타자기",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "말라카해협, 한국 무역 13%",
+        "start": 32.9,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FFE200",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "타자기",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "에너지 수입 통로",
+        "start": 38.6,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#5CD6FF",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "우리 일상의 생명선",
+        "start": 44.2,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "깜빡임",
+        "bg": "#FFFFFF"
+      }
+    ]
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
