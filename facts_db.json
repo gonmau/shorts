@@ -61523,7 +61523,7 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
     "status": "scripted",
-    "narration": "1987년과 1996년, 그리스와 터키는 두 차례나 전쟁 직전까지 갔습니다. 두 나라는 에게해에서 해상 경계와 영공, 해저 자원, 섬의 영유권 등을 놓고 오랫동안 대립해 왔습니다. 1987년에는 해저 석유 탐사권을 둘러싸고 양국이 군사적으로 맞섰고, 1996년에는 이미아라는 작은 암초의 영유권을 놓고 군함과 병력이 대치했습니다. 특히 1996년에는 양국 군대가 암초에 상륙하고 서로 국기까지 내걸면서 무력 충돌 가능성이 커졌습니다. 두 차례 모두 미국 등의 외교적 중재로 전쟁을 피할 수 있었지만, 근본적인 분쟁까지 해결된 것은 아니었습니다. 실제로 2026년에도 양국 정상은 대화를 이어가고 있지만, 해양 경계와 관할권을 둘러싼 갈등은 계속되고 있습니다. 결국 에게해는 지금도 대화와 긴장이 공존하는 바다로 남아 있습니다.",
+    "narration": "1987년과 1996년, 그리스와 터키는 두 차례나 전쟁 직전까지 갔습니다. 두 나라는 에게해에서 해상 경계와 영공, 해저 자원, 섬의 영유권 등을 놓고 오랫동안 대립해 왔습니다. 1987년에는 해저 석유 탐사권을 둘러싸고 양국이 군사적으로 맞섰고, 1996년에는 이미아라는 작은 암초의 영유권을 놓고 군함과 병력이 대치했습니다. 특히 1996년에는 양국 군대가 암초에 상륙하고 서로 국기까지 내걸면서 무력 충돌 가능성이 커졌습니다. 두 차례 모두 미국 등의 외교적 중재로 전쟁을 피할 수 있었지만, 근본적인 분쟁까지 해결된 것은 아니었습니다. 실제로 2026년에도 양국 정상은 대화를 이어가고 있지만, 해양 경계와 관할권을 둘러싼 갈등은 계속되고 있습니다. 우리나라 역시 독도와 주변 해역을 둘러싼 문제를 안고 있다는 점에서 남의 나라 이야기만은 아닙니다.",
     "title_line1": "그리스·터키, 전쟁 직전",
     "title_line2": "작은 암초가 부른 전쟁 위기",
     "highlights": [
@@ -61557,13 +61557,13 @@
       }
     ],
     "image_queries": [
-      "Aegean Sea Greece Turkey political map",
-      "1987 Greece Turkey Aegean crisis oil exploration ship",
-      "Greek Turkish naval vessels Aegean Sea",
-      "Imia Kardak islets 1996 aerial photograph",
-      "Greek Turkish military standoff Imia Kardak 1996",
-      "Greece Turkey diplomatic leaders meeting 2026",
-      "Aegean Sea Greece Turkey maritime dispute map 2026"
+      "Aegean war crisis ships",
+      "offshore oil rig dispute",
+      "rocky islet sovereignty",
+      "naval vessels confrontation",
+      "diplomatic mediation meeting",
+      "modern naval patrol Aegean",
+      "handshake over map"
     ],
     "scene_count": 10,
     "narration_original": "1987년과 1996년에 전쟁 한 걸음만 남겨두고 멈췄다는 사실, 알고 계셨나요? 그리스와 터키는 에게해에서 영해·공역·배타적 경제수역·대륙붕·비행정보구역·비무장지대까지 여러 영역을 두고 끊임없이 마찰을 빚어 왔습니다. 양국은 각각 해상 경계선을 다르게 주장하고, 항공권한을 서로 침범한다는 이유로 군용기를 격돌시키기도 했죠.  \n\n그런데 1970년대 이후 이 갈등이 지속되면서, 두 나라 사이의 신뢰는 크게 흔들렸습니다. 에게해의 섬들에 대한 주권 문제와 해저 자원 탐사권이 얽히면서, 매번 외교적 협상으로 위기를 모면했지만 전쟁 직전까지 치닫는 순간도 몇 차례 있었습니다.  \n\n이러한 긴장은 국제 관계 연구와 양국 정부 발표를 토대로 정리된 것이며, 실제 상황은 여전히 복잡합니다. 결국, 에게해는 오늘도 평화와 전쟁 사이의 얇은 선 위에 서 있습니다.",
@@ -61571,96 +61571,95 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "Aegean Sea Greece Turkey political map",
-      "1987 Greece Turkey Aegean crisis oil exploration ship",
-      "Greek Turkish naval vessels Aegean Sea",
-      "Imia Kardak islets 1996 aerial photograph",
-      "Greek Turkish military standoff Imia Kardak 1996",
-      "Greece Turkey diplomatic leaders meeting 2026",
-      "Aegean Sea Greece Turkey maritime dispute map 2026"
+      "Aegean war crisis ships",
+      "offshore oil rig dispute",
+      "rocky islet sovereignty",
+      "naval vessels confrontation",
+      "diplomatic mediation meeting",
+      "modern naval patrol Aegean",
+      "handshake over map"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Clker-Free-Vector-Images",
-        "page": "https://pixabay.com/photos/geography-map-mediterranean-sea-42292/",
-        "id": 42292
-      },
-      {
-        "scene": 2,
         "source": "commons",
         "user": "Public domain / CC0",
         "license": "Public domain",
         "title": "Aegeansea.jpg",
         "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
         "id": "c:37379"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/oil-rig-oil-platform-oil-rig-2205542/",
+        "id": 2205542
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Military_Material",
-        "page": "https://pixabay.com/photos/rescue-ship-submarine-rescue-ship-2777739/",
-        "id": 2777739
+        "user": "Sonyuser",
+        "page": "https://pixabay.com/photos/lake-mountains-banff-national-park-5961239/",
+        "id": 5961239
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Public domain / CC0",
-        "license": "Public domain",
-        "title": "Aegeansea.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
-        "id": "c:37379"
+        "source": "pixabay",
+        "user": "sunu_dhadho",
+        "page": "https://pixabay.com/photos/warship-navy-battleship-submarine-5412870/",
+        "id": 5412870,
+        "type": "photo"
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "Public domain / CC0",
-        "license": "Public domain",
-        "title": "Aegeansea.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
-        "id": "c:37379"
+        "source": "pixabay",
+        "user": "089photoshootings",
+        "page": "https://pixabay.com/photos/people-business-meeting-1979261/",
+        "id": 1979261,
+        "type": "photo"
       },
       {
         "scene": 6,
-        "source": "commons",
-        "user": "Public domain / CC0",
-        "license": "Public domain",
-        "title": "Aegeansea.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
-        "id": "c:37379"
+        "source": "pixabay",
+        "user": "sunu_dhadho",
+        "page": "https://pixabay.com/photos/warship-navy-battleship-submarine-5412870/",
+        "id": 5412870,
+        "type": "photo"
       },
       {
         "scene": 7,
-        "source": "commons",
-        "user": "Public domain / CC0",
-        "license": "Public domain",
-        "title": "Aegeansea.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
-        "id": "c:37379"
+        "source": "pixabay",
+        "user": "MasterTux",
+        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
+        "id": 2528477,
+        "type": "photo"
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2954,
+        "clip": 0.273,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "4c0400c22e9d",
-        "at": "2026-11-08 19:10",
+        "sig": "bc9be34ff524",
+        "at": "2026-11-08 19:23",
         "scene": 1,
-        "rejected_ids": []
+        "rejected_ids": [
+          7862274,
+          "c:37379"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.255,
+        "clip": 0.3002,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "829426b27edf",
-        "at": "2026-11-08 19:10",
+        "sig": "cf339259a608",
+        "at": "2026-11-08 19:23",
         "scene": 2,
         "rejected_ids": [
           7498910,
@@ -61669,66 +61668,77 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3124,
+        "clip": 0.2235,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "fedb916e5040",
-        "at": "2026-11-08 19:10",
+        "sig": "6ed39af3ee25",
+        "at": "2026-11-08 19:23",
         "scene": 3,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2566,
+        "clip": 0.2921,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d7c92c169a7c",
-        "at": "2026-11-08 19:10",
+        "sig": "5ccb664dcc69",
+        "at": "2026-11-08 19:23",
         "scene": 4,
-        "rejected_ids": []
+        "rejected_ids": [
+          5412870,
+          "c:37379"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2465,
+        "clip": 0.2237,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8422538b1ff8",
-        "at": "2026-11-08 19:10",
+        "sig": "7e7723e1d1c7",
+        "at": "2026-11-08 19:24",
         "scene": 5,
         "rejected_ids": [
+          1979261,
           4704071,
+          5382501,
+          "c:104288379",
+          "c:3484241",
           "c:37379"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2258,
+        "clip": 0.2971,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6f56cc47ae78",
-        "at": "2026-11-08 19:10",
+        "sig": "d6bb77110a74",
+        "at": "2026-11-08 19:24",
         "scene": 6,
         "rejected_ids": [
+          5412870,
           6310723,
+          "c:104288379",
           "c:37379"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.3213,
+        "clip": 0.2542,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "3590b77adb83",
-        "at": "2026-11-08 19:10",
+        "sig": "cb1a31dc569c",
+        "at": "2026-11-08 19:24",
         "scene": 7,
         "rejected_ids": [
+          2528477,
           527728,
-          "c:37379"
+          "c:37379",
+          "c:81499996"
         ]
       }
     ]
