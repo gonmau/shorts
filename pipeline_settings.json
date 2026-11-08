@@ -7,5 +7,8 @@
  "scenes": 10,
  "target_sec": 60,
  "yt_thumb": true,
- "tv_fx": true
+ "tv_fx": true,
+ "font_sub": "",
+ "font_title": "blackhan",
+ "font_ovl": "dohyeon"
 }
