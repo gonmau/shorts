@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 11:20:44 (KST) · 기록 1221건 · 소재 573개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 11:32:11 (KST) · 기록 1222건 · 소재 573개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | upload_to_youtube | 17 | 0 | 11분 14초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 65 | 0 | 0초 |
+| 코드업데이트 | 66 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 11:29 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_video.py, layout.py, local_ui.py) | ✅ |  |  |
 | 11:10 | PC | 코드업데이트 | gonmau/shorts: 12개 (fonts/BM-HANNA.ttf, fonts/BlackHanSans-Regular.ttf, fonts/DoHyeon-Regular.ttf, fonts/EastSeaDokdo-Regular.ttf, fonts/Gaegu-Bold.ttf, fonts/Gugi-Regular.ttf) | ✅ |  |  |
 | 11:05 | PC | 코드업데이트 | gonmau/shorts: 9개 (build_video.py, fonts.py, layout.py, local_ui.py, overlays.py, pipeline_settings.py) | ✅ |  |  |
 | 02:01 | Actions | 롱폼 | culture-longform #14 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/42392980263 |
