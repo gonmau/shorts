@@ -59654,7 +59654,21 @@
     "redo_ts": 1794043820.2892182,
     "youtube_id": "lnC8jMFDK7c",
     "uploaded_at": "2026-11-07T18:43:16.751023+09:00",
-    "thumb_scene": 4
+    "thumb_scene": 4,
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.05,
+      "angle": -6.0,
+      "dy": -430,
+      "tag": true,
+      "colors1": {
+        "3": "#dc278c"
+      },
+      "colors2": {
+        "1": "#2ee860",
+        "2": "#9ee853"
+      }
+    }
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
