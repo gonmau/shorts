@@ -61621,11 +61621,12 @@
       },
       {
         "scene": 6,
-        "source": "pixabay",
-        "user": "geralt",
-        "page": "https://pixabay.com/photos/erdogan-turkey-president-politician-2537864/",
-        "id": 2537864,
-        "type": "photo"
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
       },
       {
         "scene": 7,
