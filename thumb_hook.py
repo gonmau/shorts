@@ -111,6 +111,37 @@ def draw_words(d, text, font, cx, y, colors, default, stroke=0, stroke_fill=(0, 
         x += d.textlength(w, font=font) + sp
 
 
+def band_image(kind, w, h, color, seed, opacity=100, angle=-2.0):
+    """2줄 뒤 띠. kind: brush(붓터치) / rect(사각) / round(둥근 알약) / skew(비스듬한 평행사변형)"""
+    if kind == "brush":
+        b = TP.brush(w, h, seed)
+        a = b.getchannel("A")
+        out = Image.new("RGBA", b.size, color + (255,))
+        out.putalpha(a)
+        out = out.rotate(angle + 2, resample=Image.BICUBIC, expand=True) if angle + 2 else out   # brush() 안에서 이미 -2° 회전
+    else:
+        pad = 40
+        sc = 3                                                     # 가장자리를 매끈하게 3배로 그려 줄임
+        im = Image.new("L", ((w + pad * 2) * sc, (h + pad * 2) * sc), 0)
+        d = ImageDraw.Draw(im)
+        x0, y0, x1, y1 = pad * sc, pad * sc, (pad + w) * sc, (pad + h) * sc
+        if kind == "round":
+            d.rounded_rectangle((x0, y0, x1, y1), radius=(y1 - y0) // 2, fill=255)
+        elif kind == "skew":
+            k = int(h * 0.28) * sc
+            d.polygon([(x0 + k, y0), (x1 + k, y0), (x1 - k, y1), (x0 - k, y1)], fill=255)
+        else:
+            d.rectangle((x0, y0, x1, y1), fill=255)
+        im = im.resize((w + pad * 2, h + pad * 2), Image.LANCZOS)
+        out = Image.new("RGBA", im.size, color + (255,))
+        out.putalpha(im)
+        if angle:
+            out = out.rotate(angle, resample=Image.BICUBIC, expand=True)
+    if opacity < 100:
+        out.putalpha(out.getchannel("A").point(lambda v: int(v * opacity / 100)))
+    return out
+
+
 def make(idx, item, channel, handle, avatar, fallback_background):
     """item['thumb_opts'] = {scale1, scale2 (글씨 크기 배율), angle (기울기°), dy (세로 이동 px),
     colors1, colors2 ({단어 순번: 색}), tag (후크 태그 on/off)}"""
@@ -150,14 +181,21 @@ def make(idx, item, channel, handle, avatar, fallback_background):
         ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=(255, 255, 255))
         y += tag_h + 30
 
-    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, (255, 255, 255), stroke=13)
+    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13)
     y += h1 + gap
     if f2:
         w2 = _words_width(ld, t2.split(), f2)[0]
-        bs = TP.brush(int(w2) + 90, int(f2.size * 1.25), seed=idx * 11 + len(t2))
-        lay.alpha_composite(bs, (int((W - bs.width) / 2), y - 22))
+        kind = o.get("band", "brush")
+        if kind != "none":
+            bw = max(60, int(w2) + int(o.get("band_w", 90)))
+            bh = max(30, int(f2.size * 1.25 * float(o.get("band_h", 1.0))))
+            bs = band_image(kind, bw, bh, _hex(o.get("band_color"), YELLOW) if o.get("band_color") else YELLOW,
+                            idx * 11 + len(t2), int(o.get("band_opacity", 100)), float(o.get("band_angle", -2.0)))
+            cy = y + 0.625 * f2.size + 18 + int(o.get("band_dy", 0))     # 띠 중심 (높이·기울기를 바꿔도 글자 중심은 그대로)
+            lay.alpha_composite(bs, (int((W - bs.width) / 2), int(cy - bs.height / 2)))
         ld = ImageDraw.Draw(lay)
-        draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {}, (0, 0, 0))
+        draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {},
+                   _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else (0, 0, 0))
     ang = float(o.get("angle", 0) or 0)
     if ang:
         lay = lay.rotate(ang, resample=Image.BICUBIC, center=(W // 2, y0 + block // 2))

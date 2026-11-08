@@ -797,8 +797,22 @@ with T6a:
             _o4, _o5 = st.columns(2)
             _dy = _o4.slider("글자 위치 (위↑ / 아래↓ px)", -500, 500, int(_to.get("dy", 0)), 10, key=f"thm_dy_{_ts}")
             _tg = _o5.checkbox("빨간 후크 태그 넣기", bool(_to.get("tag", True)), key=f"thm_tg_{_ts}")
+            st.markdown("**2줄 뒤 띠** (기본: 노란 붓터치)")
+            _b1, _b2, _b3 = st.columns(3)
+            _bk = _b1.selectbox("모양", ["brush", "rect", "round", "skew", "none"], ["brush", "rect", "round", "skew", "none"].index(_to.get("band", "brush")), key=f"thm_bk_{_ts}",
+                                format_func=lambda x: {"brush": "붓터치", "rect": "사각", "round": "둥근 알약", "skew": "비스듬한 사각", "none": "띠 없음"}[x])
+            _bc = _b2.color_picker("띠 색", _to.get("band_color") or "#FFE200", key=f"thm_bc_{_ts}")
+            _bo = _b3.slider("투명도(%)", 20, 100, int(_to.get("band_opacity", 100)), 5, key=f"thm_bo_{_ts}")
+            _b4, _b5, _b6, _b7 = st.columns(4)
+            _bw = _b4.slider("폭 (글자보다 +px)", -100, 500, int(_to.get("band_w", 90)), 10, key=f"thm_bw_{_ts}")
+            _bh = _b5.slider("높이 배율", 0.5, 2.0, float(_to.get("band_h", 1.0)), 0.05, key=f"thm_bh_{_ts}")
+            _ba = _b6.slider("띠 기울기(도)", -15.0, 15.0, float(_to.get("band_angle", -2.0)), 0.5, key=f"thm_ba_{_ts}")
+            _bd = _b7.slider("띠 위/아래(px)", -100, 100, int(_to.get("band_dy", 0)), 5, key=f"thm_bd_{_ts}")
+            _k1, _k2 = st.columns(2)
+            _tc1 = _k1.color_picker("1줄 기본 글자색", _to.get("color1") or "#ffffff", key=f"thm_k1_{_ts}")
+            _tc2 = _k2.color_picker("2줄 기본 글자색", _to.get("color2") or "#000000", key=f"thm_k2_{_ts}")
             _cols = {}
-            for _ln, (_key, _dflt) in enumerate((("title_line1", "#ffffff"), ("title_line2", "#000000")), 1):
+            for _ln, (_key, _dflt) in enumerate((("title_line1", _tc1), ("title_line2", _tc2)), 1):
                 _wd = str(_td[_ts].get(_key) or (_td[_ts].get("topic") if _ln == 1 else "") or "").split()
                 if not _wd:
                     continue
@@ -813,7 +827,8 @@ with T6a:
                 _cols[f"colors{_ln}"] = _pick
             if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
                 _dm = _ld()
-                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "font": _tfo, **_cols}
+                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "font": _tfo, "band": _bk, "band_color": _bc, "band_opacity": _bo,
+                                                 "band_w": _bw, "band_h": _bh, "band_angle": _ba, "band_dy": _bd, "color1": _tc1, "color2": _tc2, **_cols}
                 if int(_tsc):
                     _dm[_ts]["thumb_scene"] = int(_tsc)
                 else:
