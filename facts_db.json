@@ -61511,9 +61511,9 @@
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
-    "hook": "1987년과 1996년에 전쟁 한 걸음만 남겨두고 멈췄다!",
-    "body": "그리스와 터키는 에게해(Aegean)에서 영해·공역·배타적 경제수역·대륙붕·비행정보구역·비무장지대 등 여러 영역을 두고 갈등을 이어오고 있다.",
-    "twist": "분쟁은 1970년대 이후 지속돼 두 나라 관계를 뒤흔들었다.",
+    "hook": "1987년과 1996년, 그리스와 터키는 두 차례나 전쟁 직전까지 갔습니다!",
+    "body": "그리스와 터키는 에게해에서 영해와 공역, 해저 자원, 섬의 영유권 등을 놓고 오랫동안 갈등해 왔다. 1987년에는 해저 석유 탐사권을 둘러싸고 군사적 긴장이 고조됐고, 1996년에는 이미아라는 작은 암초의 영유권을 놓고 양국 군대와 군함이 대치했다.",
+    "twist": "그런데 2026년 현재도 갈등은 끝나지 않았다. 양국 정상은 대화를 이어가고 있지만, 해양 경계와 관할권을 둘러싼 대립은 여전히 진행 중이다.",
     "caveat": "정보는 국제 관계 연구와 양국 정부 발표를 토대로 정리했다.",
     "country": "터키",
     "theme": "영토/국경",
@@ -61523,37 +61523,215 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
     "status": "scripted",
-    "narration": "1987년과 1996년에 전쟁 한 걸음만 남겨두고 멈췄다는 사실, 알고 계셨나요? 그리스와 터키는 에게해에서 영해·공역·배타적 경제수역·대륙붕·비행정보구역·비무장지대까지 여러 영역을 두고 끊임없이 마찰을 빚어 왔습니다. 양국은 각각 해상 경계선을 다르게 주장하고, 항공권한을 서로 침범한다는 이유로 군용기를 격돌시키기도 했죠.  \n\n그런데 1970년대 이후 이 갈등이 지속되면서, 두 나라 사이의 신뢰는 크게 흔들렸습니다. 에게해의 섬들에 대한 주권 문제와 해저 자원 탐사권이 얽히면서, 매번 외교적 협상으로 위기를 모면했지만 전쟁 직전까지 치닫는 순간도 몇 차례 있었습니다.  \n\n이러한 긴장은 국제 관계 연구와 양국 정부 발표를 토대로 정리된 것이며, 실제 상황은 여전히 복잡합니다. 결국, 에게해는 오늘도 평화와 전쟁 사이의 얇은 선 위에 서 있습니다.",
-    "title_line1": "그리스·터키 에게해",
-    "title_line2": "전쟁 한 걸음 전",
+    "narration": "1987년과 1996년, 그리스와 터키는 두 차례나 전쟁 직전까지 갔습니다. 두 나라는 에게해에서 해상 경계와 영공, 해저 자원, 섬의 영유권 등을 놓고 오랫동안 대립해 왔습니다. 1987년에는 해저 석유 탐사권을 둘러싸고 양국이 군사적으로 맞섰고, 1996년에는 이미아라는 작은 암초의 영유권을 놓고 군함과 병력이 대치했습니다. 특히 1996년에는 양국 군대가 암초에 상륙하고 서로 국기까지 내걸면서 무력 충돌 가능성이 커졌습니다. 두 차례 모두 미국 등의 외교적 중재로 전쟁을 피할 수 있었지만, 근본적인 분쟁까지 해결된 것은 아니었습니다. 실제로 2026년에도 양국 정상은 대화를 이어가고 있지만, 해양 경계와 관할권을 둘러싼 갈등은 계속되고 있습니다. 결국 에게해는 지금도 대화와 긴장이 공존하는 바다로 남아 있습니다.",
+    "title_line1": "그리스·터키, 전쟁 직전",
+    "title_line2": "작은 암초가 부른 전쟁 위기",
     "highlights": [
       {
         "s": 1,
-        "text": "전쟁한걸음*남음*"
+        "text": "두 차례 *전쟁 위기*"
       },
       {
         "s": 2,
-        "text": "해역·공역·경계*충돌*"
+        "text": "해저 석유 *탐사권* 충돌"
+      },
+      {
+        "s": 3,
+        "text": "작은 암초 *영유권*"
+      },
+      {
+        "s": 4,
+        "text": "군함과 병력 *대치*"
       },
       {
         "s": 5,
-        "text": "섬·자원*위기*"
+        "text": "외교적 *중재*"
+      },
+      {
+        "s": 6,
+        "text": "2026년에도 *갈등 지속*"
       },
       {
         "s": 7,
-        "text": "평화와*전쟁* 사이"
+        "text": "대화와 *긴장* 사이"
       }
     ],
     "image_queries": [
-      "military standoff coast",
-      "Greek Turkish naval vessels",
-      "fighter jets over sea",
-      "Turkish Greek diplomatic table",
-      "Aegean island oil rig",
-      "diplomatic maps and papers",
-      "border fence island"
+      "Aegean Sea Greece Turkey political map",
+      "1987 Greece Turkey Aegean crisis oil exploration ship",
+      "Greek Turkish naval vessels Aegean Sea",
+      "Imia Kardak islets 1996 aerial photograph",
+      "Greek Turkish military standoff Imia Kardak 1996",
+      "Greece Turkey diplomatic leaders meeting 2026",
+      "Aegean Sea Greece Turkey maritime dispute map 2026"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "1987년과 1996년에 전쟁 한 걸음만 남겨두고 멈췄다는 사실, 알고 계셨나요? 그리스와 터키는 에게해에서 영해·공역·배타적 경제수역·대륙붕·비행정보구역·비무장지대까지 여러 영역을 두고 끊임없이 마찰을 빚어 왔습니다. 양국은 각각 해상 경계선을 다르게 주장하고, 항공권한을 서로 침범한다는 이유로 군용기를 격돌시키기도 했죠.  \n\n그런데 1970년대 이후 이 갈등이 지속되면서, 두 나라 사이의 신뢰는 크게 흔들렸습니다. 에게해의 섬들에 대한 주권 문제와 해저 자원 탐사권이 얽히면서, 매번 외교적 협상으로 위기를 모면했지만 전쟁 직전까지 치닫는 순간도 몇 차례 있었습니다.  \n\n이러한 긴장은 국제 관계 연구와 양국 정부 발표를 토대로 정리된 것이며, 실제 상황은 여전히 복잡합니다. 결국, 에게해는 오늘도 평화와 전쟁 사이의 얇은 선 위에 서 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Aegean Sea Greece Turkey political map",
+      "1987 Greece Turkey Aegean crisis oil exploration ship",
+      "Greek Turkish naval vessels Aegean Sea",
+      "Imia Kardak islets 1996 aerial photograph",
+      "Greek Turkish military standoff Imia Kardak 1996",
+      "Greece Turkey diplomatic leaders meeting 2026",
+      "Aegean Sea Greece Turkey maritime dispute map 2026"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Clker-Free-Vector-Images",
+        "page": "https://pixabay.com/photos/geography-map-mediterranean-sea-42292/",
+        "id": 42292
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Military_Material",
+        "page": "https://pixabay.com/photos/rescue-ship-submarine-rescue-ship-2777739/",
+        "id": 2777739
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Aegeansea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
+        "id": "c:37379"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2954,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4c0400c22e9d",
+        "at": "2026-11-08 19:10",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.255,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "829426b27edf",
+        "at": "2026-11-08 19:10",
+        "scene": 2,
+        "rejected_ids": [
+          7498910,
+          "c:37379"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3124,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fedb916e5040",
+        "at": "2026-11-08 19:10",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2566,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d7c92c169a7c",
+        "at": "2026-11-08 19:10",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2465,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8422538b1ff8",
+        "at": "2026-11-08 19:10",
+        "scene": 5,
+        "rejected_ids": [
+          4704071,
+          "c:37379"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2258,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "6f56cc47ae78",
+        "at": "2026-11-08 19:10",
+        "scene": 6,
+        "rejected_ids": [
+          6310723,
+          "c:37379"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3213,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3590b77adb83",
+        "at": "2026-11-08 19:10",
+        "scene": 7,
+        "rejected_ids": [
+          527728,
+          "c:37379"
+        ]
+      }
+    ]
   },
   {
     "topic": "인도 승려 프레마난드 마하라지(Premanand Maharaj)의 영적 일상",
