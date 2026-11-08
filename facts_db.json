@@ -58773,8 +58773,8 @@
     "created_at": "2026-11-06T01:12:14.224886+00:00",
     "status": "video_done",
     "narration": "크리켓에서 타자를 800번이나 아웃시킨 투수가 있습니다. 그런데 그의 투구 동작은 오랫동안 반칙이라는 의심을 받았습니다. 스리랑카의 무티아 무라리타란은 테스트 경기에서 800위켓을 기록한 역대 최다 기록 보유자입니다. 위켓은 야구의 아웃과 비슷한 개념으로, 타자를 아웃시킨 기록입니다. 다만 삼진뿐 아니라 다양한 아웃 방식이 포함됩니다. 역대 2위인 호주의 셰인 워른도 708개에 그쳤습니다. 무려 92개나 차이 나는 기록이죠. 그런데 무라리타란은 독특한 투구 동작 때문에 공을 던지는 것이 아니냐는 의혹을 여러 차례 받았습니다. 과학적 검사까지 진행됐고, 국제 크리켓 기구 ICC는 팔꿈치가 펴지는 각도에 대한 15도 허용 기준을 정립했습니다. 그리고 2010년 인도와의 마지막 테스트 경기에서 마지막 투구로 자신의 800번째 위켓을 잡았습니다. 끊임없는 논란 속에서도 역사적인 기록을 완성한 선수, 바로 무라리타란이었습니다.",
-    "title_line1": "800위켓의 전설, 의심받은 투수",
-    "title_line2": "야구의 삼진과 비교되는 크리켓의 전설",
+    "title_line1": "800위켓의 전설",
+    "title_line2": "투구동작으로 의심받던 선수",
     "highlights": [
       {
         "s": 1,
@@ -58782,36 +58782,36 @@
       },
       {
         "s": 2,
-        "text": "야구의 *삼진*과 비교"
+        "text": "*투구동작*으로 '반칙'의심"
       },
       {
         "s": 3,
-        "text": "역대 2위보다 *+92개*"
+        "text": "*무티아 무라리타란* 800위켓 기록보유"
       },
       {
         "s": 4,
-        "text": "독특한 *투구 동작*"
+        "text": "위켓은 야구의 *아웃*"
       },
       {
         "s": 5,
-        "text": "팔꿈치 *15도* 기준"
+        "text": "역대 2위와 *92개* 차이"
       },
       {
         "s": 6,
-        "text": "마지막 공으로 *800위켓*"
+        "text": "2010년, 800위켓 달성"
       }
     ],
     "image_queries": [
-      "cricket bowler 800 wickets",
+      "cricket bowler delivering ball",
       "cricket bowling action controversy",
-      "Sri Lanka record 800 wickets",
-      "cricket bowling arm angle",
-      "final delivery 800th wicket",
-      "cricket scoreboard 800 wickets",
-      "bowling controversy illustration",
-      "ICC bowling regulation 15 degrees",
-      "2010 India Sri Lanka test",
-      "historic cricket achievement"
+      "Sri Lanka cricket stadium",
+      "cricket wicket scoreboard",
+      "cricket record 800 wickets",
+      "cricket wickets difference chart",
+      "cricket bowling arm controversy",
+      "scientific cricket bowling test",
+      "cricket match India 2010",
+      "historic cricket bowler achievement"
     ],
     "scene_count": 10,
     "narration_original": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법입니다. 스리랑카 출신의 무티아 무라리타란은 테스트 경기에서 800위켓, ODI에서는 530위켓 이상을 기록하며 국제 크리켓 최다 위켓 보유자로 알려져 있습니다. 그의 오른손 손목을 중심으로 한 독특한 회전 구동은 일반 투구와는 확연히 달라서, 공이 회전하면서 급격히 떨어지는 효과를 만들어 냈습니다. 그런데 그의 투구 동작은 오랫동안 논란의 대상이었습니다. 회전 각도가 비정상적이라는 이유로 심판과 전문가들 사이에서 규정 위반 여부가 계속 제기됐고, 결국 ICC는 특별 규정을 마련해 그의 스타일을 인정하게 되었습니다. 이렇게 논란을 딛고 남긴 기록은 2026년까지의 국제 경기 데이터에 한정된 수치이지만, 손목 하나로 이룬 위업은 여전히 많은 사람들에게 깊은 인상을 남깁니다. 결국 800위켓은 단순한 숫자가 아니라, 한 손목이 만든 크리켓 역사의 작은 기적이었습니다.",
@@ -58819,34 +58819,59 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "cricket scoreboard 800 wickets",
-      "cricket bowler vs baseball strikeout",
-      "Sri Lanka cricket 800 wickets",
-      "cricket bowler unusual arm action",
-      "cricket bowler final delivery",
-      "cricket wicket count difference",
+      "cricket bowler delivering ball",
       "cricket bowling action controversy",
-      "ICC bowling action 15 degrees",
-      "India 2010 test final wicket",
-      "Muttiah Muralitharan historic record"
+      "Sri Lanka cricket stadium",
+      "cricket wicket scoreboard",
+      "cricket record 800 wickets",
+      "cricket wickets difference chart",
+      "cricket bowling arm controversy",
+      "scientific cricket bowling test",
+      "cricket match India 2010",
+      "historic cricket bowler achievement"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
         "user": "shents",
-        "page": "https://pixabay.com/photos/cricket-batter-sport-bat-game-724617/",
-        "id": 724617
-      },
-      {
-        "scene": 2,
-        "source": "pixabay",
-        "user": "shents",
         "page": "https://pixabay.com/photos/cricket-bowling-cricketer-wicket-724614/",
         "id": 724614
       },
       {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "kathsug",
+        "page": "https://pixabay.com/photos/cricket-bowling-sport-people-team-5513477/",
+        "id": 5513477
+      },
+      {
         "scene": 3,
+        "source": "commons",
+        "user": "Mtaylor848",
+        "license": "CC BY-SA 3.0",
+        "title": "Pavilion Stand, Headingley Stadium, Leeds during the second day of the England- Sri Lanka ",
+        "page": "https://commons.wikimedia.org/wiki/File:Pavilion_Stand,_Headingley_Stadium,_Leeds_during_the_second_day_of_the_England-_Sri_Lanka_test_(21st_April_2014)_001.jpg",
+        "id": "c:33529668"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Sudzie",
+        "license": "CC BY-SA 4.0",
+        "title": "Saltaire village cricket match.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Saltaire_village_cricket_match.jpg",
+        "id": "c:115125210"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "shents",
+        "page": "https://pixabay.com/photos/cricket-batter-sport-bat-game-724617/",
+        "id": 724617
+      },
+      {
+        "scene": 6,
         "source": "commons",
         "user": "Andy Todd",
         "license": "CC BY-SA 2.0",
@@ -58855,32 +58880,11 @@
         "id": "c:10944006"
       },
       {
-        "scene": 4,
-        "source": "pixabay",
-        "user": "shents",
-        "page": "https://pixabay.com/photos/cricket-bowling-girl-junior-player-724620/",
-        "id": 724620
-      },
-      {
-        "scene": 5,
-        "source": "pixabay",
-        "user": "shents",
-        "page": "https://pixabay.com/photos/cricket-bowler-howzat-out-724619/",
-        "id": 724619
-      },
-      {
-        "scene": 6,
-        "source": "pixabay",
-        "user": "yogendras31",
-        "page": "https://pixabay.com/photos/cricket-sports-player-cricketer-5348882/",
-        "id": 5348882
-      },
-      {
         "scene": 7,
         "source": "pixabay",
-        "user": "kathsug",
-        "page": "https://pixabay.com/photos/cricket-bowling-sport-people-team-5513477/",
-        "id": 5513477
+        "user": "RisingStudio07",
+        "page": "https://pixabay.com/photos/cricket-cricketer-field-sport-game-9982535/",
+        "id": 9982535
       },
       {
         "scene": 8,
@@ -58893,33 +58897,29 @@
       },
       {
         "scene": 9,
-        "source": "commons",
-        "user": "Rae Allen from Brisbane, Australia",
-        "license": "CC BY 2.0",
-        "title": "Muttiah Muralitharan.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Muttiah_Muralitharan.jpg",
-        "id": "c:1471581"
+        "source": "pixabay",
+        "user": "PDPics",
+        "page": "https://pixabay.com/photos/cricket-cricketer-batting-defensive-166906/",
+        "id": 166906
       },
       {
         "scene": 10,
-        "source": "commons",
-        "user": "Dave Morton",
-        "license": "Public domain",
-        "title": "Alastair Cook and Muttiah Muralitharan, December 2007.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Alastair_Cook_and_Muttiah_Muralitharan,_December_2007.jpg",
-        "id": "c:194056405"
+        "source": "pixabay",
+        "user": "shents",
+        "page": "https://pixabay.com/photos/cricket-bowling-girl-junior-player-724620/",
+        "id": 724620
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.237,
+        "clip": 0.3345,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "4c87dee5e84f",
-        "at": "2026-11-08 12:47",
+        "sig": "6ce6a2b68b46",
+        "at": "2026-11-08 13:20",
         "scene": 1,
         "rejected_ids": [
           5375835,
@@ -58928,103 +58928,110 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3082,
+        "clip": 0.323,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "c980c49e5be2",
-        "at": "2026-11-08 12:47",
+        "sig": "458d6b19cb8d",
+        "at": "2026-11-08 13:20",
         "scene": 2,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3073,
+        "clip": 0.2773,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ed132f341a1a",
-        "at": "2026-11-08 12:47",
+        "sig": "bba66b405bf7",
+        "at": "2026-11-08 13:20",
         "scene": 3,
         "rejected_ids": [
           5375835,
-          "c:10944006"
+          "c:10944006",
+          "c:33529668"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.3283,
+        "clip": 0.3044,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "70eb119ed876",
-        "at": "2026-11-08 12:47",
+        "sig": "1b4c56995998",
+        "at": "2026-11-08 13:20",
         "scene": 4,
-        "rejected_ids": []
+        "rejected_ids": [
+          5348882,
+          "c:115125210"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.303,
+        "clip": 0.2575,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f8e1ac143520",
-        "at": "2026-11-08 12:47",
+        "sig": "36c9998e28ea",
+        "at": "2026-11-08 13:20",
         "scene": 5,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2339,
+        "clip": 0.2819,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "e3a66a0af8f6",
-        "at": "2026-11-08 12:47",
+        "sig": "da5269e90c1d",
+        "at": "2026-11-08 13:20",
         "scene": 6,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.323,
+        "clip": 0.2883,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ce2055ffef95",
-        "at": "2026-11-08 12:47",
+        "sig": "812078a0b9d8",
+        "at": "2026-11-08 13:20",
         "scene": 7,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3113,
+        "clip": 0.3196,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "aa05bfa5f038",
-        "at": "2026-11-08 12:47",
+        "sig": "e8d365d63b25",
+        "at": "2026-11-08 13:20",
         "scene": 8,
-        "rejected_ids": []
+        "rejected_ids": [
+          7768168,
+          "c:10944006"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2446,
+        "clip": 0.3402,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "fe21ab642fad",
-        "at": "2026-11-08 12:47",
+        "sig": "1cf7f9355680",
+        "at": "2026-11-08 13:20",
         "scene": 9,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3746,
+        "clip": 0.2823,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b55dcb0110b6",
-        "at": "2026-11-08 12:47",
+        "sig": "6aeece7711a3",
+        "at": "2026-11-08 13:20",
         "scene": 10,
         "rejected_ids": []
       }
@@ -59035,7 +59042,7 @@
     "status_tts_v2": "done",
     "highlight_style": {
       "effect": "타자기",
-      "scale": 1.0,
+      "scale": 0.9,
       "font": "",
       "x": 50,
       "y": null,
