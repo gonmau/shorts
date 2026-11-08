@@ -395,14 +395,18 @@ with T4a:
     with st.expander("🔤 글씨체 미리보기"):
         from PIL import Image as _PI, ImageDraw as _PD, ImageFont as _PF
         _smp = "세계 문화 상식 1g에 금보다 비쌌다" if not EN else "World Facts 1g costs more than gold"
-        _im = _PI.new("RGB", (900, 64 * len(_fa0)), "white"); _d = _PD.Draw(_im)
+        if not _fa0:
+            st.warning("글씨체 파일(fonts 폴더)이 아직 없습니다. 코드 업데이트(update_code)를 한 번 더 실행하면 받아집니다.")
+            _fa0 = {}
+        _im = _PI.new("RGB", (900, max(1, 64 * len(_fa0))), "white"); _d = _PD.Draw(_im)
         for _i, (_k, _lb) in enumerate(_fa0.items()):
             try:
                 _d.text((10, _i * 64 + 6), _smp, font=_PF.truetype(_FN0.path(_k), 40), fill="black")
                 _d.text((690, _i * 64 + 20), _lb.split(" — ")[0], font=_PF.truetype(_FN0.path("dohyeon") or _FN0.path(_k), 24), fill=(140, 140, 140))
             except Exception:
                 pass
-        st.image(_im)
+        if _fa0:
+            st.image(_im)
     json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     st.caption("☁️ 목소리·속도·음성 엔진·자막 방식은 바뀔 때마다 GitHub에도 자동으로 올라가 자동 실행(Actions)에도 똑같이 적용됩니다 (GitHub 자동동기화가 켜져 있을 때). 워크플로를 수동 실행하며 입력한 값이 있으면 그 값이 우선입니다.")
     sample = st.text_input("미리듣기 문장", "프랑스에서는 빵을 거꾸로 놓으면 불길하다고 여겼습니다." if not EN else "In Korea, you never stick chopsticks upright in a bowl of rice.")
