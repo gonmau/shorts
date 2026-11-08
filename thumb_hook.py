@@ -165,7 +165,9 @@ def make(idx, item, channel, handle, avatar, fallback_background):
     gap = 26
     h1 = int(f1.size * 1.18)
     h2 = int(f2.size * 1.5) if f2 else 0
-    tag = hook_tag(item) if o.get("tag", True) else ""
+    tag = (str(o.get("tag_text") or "").strip() or hook_tag(item)) if o.get("tag", True) else ""
+    tag_bg = _hex(o.get("tag_color"), RED) if o.get("tag_color") else RED
+    tag_fg = _hex(o.get("tag_fg"), (255, 255, 255)) if o.get("tag_fg") else (255, 255, 255)
     tag_h = 100 if tag else 0
     block = tag_h + (30 if tag else 0) + h1 + (gap + h2 if f2 else 0)
     y0 = int(H * 0.60) - block // 2 + 120 + int(o.get("dy", 0))
@@ -177,8 +179,8 @@ def make(idx, item, channel, handle, avatar, fallback_background):
         ft = _fit_font(ld, tag, W - 260, 56, 34)
         tw = ld.textlength(tag, font=ft)
         x0 = (W - tw) / 2 - 36
-        ld.rounded_rectangle((x0, y, x0 + tw + 72, y + tag_h), radius=tag_h // 2, fill=RED, outline=(255, 255, 255), width=5)
-        ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=(255, 255, 255))
+        ld.rounded_rectangle((x0, y, x0 + tw + 72, y + tag_h), radius=tag_h // 2, fill=tag_bg, outline=_hex(o.get("tag_line"), (255, 255, 255)) if o.get("tag_line") else (255, 255, 255), width=5)
+        ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=tag_fg)
         y += tag_h + 30
 
     draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13)
@@ -195,7 +197,8 @@ def make(idx, item, channel, handle, avatar, fallback_background):
             lay.alpha_composite(bs, (int((W - bs.width) / 2), int(cy - bs.height / 2)))
         ld = ImageDraw.Draw(lay)
         draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {},
-                   _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else (0, 0, 0))
+                   _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else (0, 0, 0),
+                   stroke=13 if kind == "none" else 0)      # 띠가 없으면 1줄처럼 검정 외곽선으로 글자를 살린다
     ang = float(o.get("angle", 0) or 0)
     if ang:
         lay = lay.rotate(ang, resample=Image.BICUBIC, center=(W // 2, y0 + block // 2))

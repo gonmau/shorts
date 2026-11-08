@@ -796,7 +796,22 @@ with T6a:
                                 key=f"thm_ft_{_ts}", format_func=lambda x: "기본 (맑은 고딕/Noto)" if not x else _fa1[x])
             _o4, _o5 = st.columns(2)
             _dy = _o4.slider("글자 위치 (위↑ / 아래↓ px)", -500, 500, int(_to.get("dy", 0)), 10, key=f"thm_dy_{_ts}")
-            _tg = _o5.checkbox("빨간 후크 태그 넣기", bool(_to.get("tag", True)), key=f"thm_tg_{_ts}")
+            _tg = _o5.checkbox("제목 위 태그(알약) 넣기", bool(_to.get("tag", True)), key=f"thm_tg_{_ts}")
+            _g1, _g2, _g3 = st.columns([2, 1, 1])
+            _tgt = _g1.text_input("태그 글자 (비우면 후크 첫 문장 자동, 나라 이름은 쓰지 않음)", _to.get("tag_text") or "", key=f"thm_tt_{_ts}")
+            _tgc = _g2.color_picker("태그 배경색", _to.get("tag_color") or "#EB1414", key=f"thm_tgc_{_ts}")
+            _tgf = _g3.color_picker("태그 글자색", _to.get("tag_fg") or "#FFFFFF", key=f"thm_tgf_{_ts}")
+            if st.button("🟡 노란 태그 + 노란 2줄 글자 (띠 없음) 모양으로", key=f"thm_pre_{_ts}", help="1줄 흰색 / 2줄 노란 글자 / 노란 태그에 검정 글자 모양으로 한 번에 맞춰 다시 만듭니다"):
+                import subprocess as _sp_p, sys as _sys_p
+                _dm = _ld()
+                _dm[_ts]["thumb_opts"] = {"band": "none", "color2": "#FFE200", "tag_color": "#FFE200", "tag_fg": "#000000", "tag": True}
+                _sd(_dm)
+                for _k_ in list(st.session_state.keys()):
+                    if str(_k_).startswith("thm_") and (str(_k_).endswith(f"_{_ts}") or f"_{_ts}_" in str(_k_)) and not str(_k_).startswith("thm_sel"):
+                        del st.session_state[_k_]
+                _sp_p.run([_sys_p.executable, str(_tb / "make_thumbnail.py"), "--channel", CH, "--handle", HD, "--style", "hook", "--only", str(_ts)],
+                          cwd=str(_tb), capture_output=True, text=True)
+                st.rerun()
             st.markdown("**2줄 뒤 띠** (기본: 노란 붓터치)")
             _b1, _b2, _b3 = st.columns(3)
             _bk = _b1.selectbox("모양", ["brush", "rect", "round", "skew", "none"], ["brush", "rect", "round", "skew", "none"].index(_to.get("band", "brush")), key=f"thm_bk_{_ts}",
@@ -838,7 +853,7 @@ with T6a:
                 st.rerun()
             if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
                 _dm = _ld()
-                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "font": _tfo, "band": _bk, "band_color": _bc, "band_opacity": _bo,
+                _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "tag_text": _tgt, "tag_color": _tgc, "tag_fg": _tgf, "font": _tfo, "band": _bk, "band_color": _bc, "band_opacity": _bo,
                                                  "band_w": _bw, "band_h": _bh, "band_angle": _ba, "band_dy": _bd, "color1": _tc1, "color2": _tc2, **_cols}
                 if int(_tsc):
                     _dm[_ts]["thumb_scene"] = int(_tsc)
