@@ -58771,7 +58771,7 @@
     "verify_note": "Muttiah Muralitharan",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "크리켓에서 타자를 800번이나 아웃시킨 투수가 있습니다. 그런데 그의 투구 동작은 오랫동안 반칙이라는 의심을 받았습니다. 스리랑카의 무티아 무라리타란은 테스트 경기에서 800위켓을 기록한 역대 최다 기록 보유자입니다. 위켓은 야구의 아웃과 비슷한 개념으로, 타자를 아웃시킨 기록입니다. 다만 삼진뿐 아니라 다양한 아웃 방식이 포함됩니다. 역대 2위인 호주의 셰인 워른도 708개에 그쳤습니다. 무려 92개나 차이 나는 기록이죠. 그런데 무라리타란은 독특한 투구 동작 때문에 공을 던지는 것이 아니냐는 의혹을 여러 차례 받았습니다. 과학적 검사까지 진행됐고, 국제 크리켓 기구 ICC는 팔꿈치가 펴지는 각도에 대한 15도 허용 기준을 정립했습니다. 그리고 2010년 인도와의 마지막 테스트 경기에서 마지막 투구로 자신의 800번째 위켓을 잡았습니다. 끊임없는 논란 속에서도 역사적인 기록을 완성한 선수, 바로 무라리타란이었습니다.",
     "title_line1": "800위켓의 전설, 의심받은 투수",
     "title_line2": "야구의 삼진과 비교되는 크리켓의 전설",
@@ -58802,16 +58802,16 @@
       }
     ],
     "image_queries": [
-      "cricket scoreboard 800 wickets",
-      "cricket bowler vs baseball strikeout",
-      "Sri Lanka cricket 800 wickets",
-      "cricket bowler unusual arm action",
-      "cricket bowler final delivery",
-      "cricket wicket count difference",
+      "cricket bowler 800 wickets",
       "cricket bowling action controversy",
-      "ICC bowling action 15 degrees",
-      "India 2010 test final wicket",
-      "Muttiah Muralitharan historic record"
+      "Sri Lanka record 800 wickets",
+      "cricket bowling arm angle",
+      "final delivery 800th wicket",
+      "cricket scoreboard 800 wickets",
+      "bowling controversy illustration",
+      "ICC bowling regulation 15 degrees",
+      "2010 India Sri Lanka test",
+      "historic cricket achievement"
     ],
     "scene_count": 10,
     "narration_original": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법입니다. 스리랑카 출신의 무티아 무라리타란은 테스트 경기에서 800위켓, ODI에서는 530위켓 이상을 기록하며 국제 크리켓 최다 위켓 보유자로 알려져 있습니다. 그의 오른손 손목을 중심으로 한 독특한 회전 구동은 일반 투구와는 확연히 달라서, 공이 회전하면서 급격히 떨어지는 효과를 만들어 냈습니다. 그런데 그의 투구 동작은 오랫동안 논란의 대상이었습니다. 회전 각도가 비정상적이라는 이유로 심판과 전문가들 사이에서 규정 위반 여부가 계속 제기됐고, 결국 ICC는 특별 규정을 마련해 그의 스타일을 인정하게 되었습니다. 이렇게 논란을 딛고 남긴 기록은 2026년까지의 국제 경기 데이터에 한정된 수치이지만, 손목 하나로 이룬 위업은 여전히 많은 사람들에게 깊은 인상을 남깁니다. 결국 800위켓은 단순한 숫자가 아니라, 한 손목이 만든 크리켓 역사의 작은 기적이었습니다.",
@@ -59042,7 +59042,10 @@
       "color_hl": "#FFE200",
       "color_base": "#FFFFFF",
       "stroke": "#000000"
-    }
+    },
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0551_스리랑카.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0551_스리랑카.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "서키야 전통 규칙, 아침 인사 의무화",
