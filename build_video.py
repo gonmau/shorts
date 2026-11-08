@@ -733,6 +733,7 @@ def build_one(idx, item):
         channel_name=LAYOUT_CFG["channel"],
         handle=LAYOUT_CFG["handle"],
         avatar_path=LAYOUT_CFG["avatar"],
+        title_opts=item.get("title_opts"),
     )
     bg_clip = ImageClip(np.array(template)).set_duration(audio_duration)
     corner = (

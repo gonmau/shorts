@@ -829,6 +829,41 @@ with T6a:
             _tf = _tb / "thumbnails" / f"{_P_t(_vp).stem}.png"
             if _tf.exists():
                 st.image(str(_tf), width=300, caption=f"[{_ts}] {_tf.name} (현재 썸네일)")
+    with st.expander("🎨 영상 상단 제목 색 (영상 맨 위 두 줄)"):
+        _vd0 = _ld()
+        _vn = sorted([i for i, it in enumerate(_vd0) if it.get("video_path_v6") or it.get("script")], reverse=True)
+        _vs = st.selectbox("소재 번호", _vn, key="vt_sel", format_func=lambda i: f"{i} {_vd0[i].get('country', '')} - {str(_vd0[i].get('title_line1', '') or _vd0[i].get('topic', ''))[:30]}")
+        if _vs is not None:
+            _vo = dict(_vd0[_vs].get("title_opts") or {})
+            _vc1, _vc2 = st.columns(2)
+            _d1 = _vc1.color_picker("1줄 기본색", _vo.get("color1") or "#000000", key=f"vt_c1_{_vs}")
+            _d2 = _vc2.color_picker("2줄 기본색", _vo.get("color2") or "#C800FF", key=f"vt_c2_{_vs}")
+            _vres = {}
+            for _ln, (_key, _dc) in enumerate((("title_line1", _d1), ("title_line2", _d2)), 1):
+                _wd = str(_vd0[_vs].get(_key) or (_vd0[_vs].get("topic") if _ln == 1 else "") or "").split()
+                if not _wd:
+                    continue
+                st.caption(f"{_ln}줄 단어별 색 (기본색과 다르게 고른 단어만 적용)")
+                _pv = _vo.get(f"colors{_ln}") or {}
+                _cc = st.columns(min(len(_wd), 6))
+                _pk = {}
+                for _k, _w in enumerate(_wd):
+                    _c = _cc[_k % len(_cc)].color_picker(_w, _pv.get(str(_k), _dc), key=f"vt_w{_ln}_{_vs}_{_k}")
+                    if _c.lower() != _dc.lower():
+                        _pk[str(_k)] = _c
+                _vres[f"colors{_ln}"] = _pk
+            _vb1, _vb2 = st.columns(2)
+            if _vb1.button("저장", key=f"vt_save_{_vs}", type="primary"):
+                _dm = _ld()
+                _no = {"color1": _d1, "color2": _d2, **_vres}
+                if _d1.lower() == "#000000" and _d2.lower() == "#c800ff" and not any(_vres.values()):
+                    _dm[_vs].pop("title_opts", None)
+                else:
+                    _dm[_vs]["title_opts"] = _no
+                _sd(_dm)
+                st.success("저장했습니다. 이미 만든 영상이면 redo에 번호를 넣고 5단계 렌더링을 해야 영상에 반영됩니다.")
+            if _vb2.button("기본색으로 되돌리기", key=f"vt_reset_{_vs}"):
+                _dm = _ld(); _dm[_vs].pop("title_opts", None); _sd(_dm); st.rerun()
     with st.expander("✏️ 제목 수정 (이미 만든 영상의 유튜브 제목·설명)"):
         st.caption("review.txt에는 아직 영상을 안 만든 소재만 나옵니다. 이미 만든 영상의 제목은 여기서 고치세요. 유튜브 제목과 썸네일 제목이 바뀝니다. "
                    "영상 화면 위에 이미 들어간 제목은 그대로입니다(바꾸려면 5단계 redo로 다시 만들어야 함).")
@@ -1968,7 +2003,7 @@ with T5c:
                 import build_video as BV
                 from PIL import Image as _I
                 t1, t2 = BV.split_title(it_o)
-                bgi = BV.make_template(t1, t2, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png").convert("RGB")
+                bgi = BV.make_template(t1, t2, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png", title_opts=it_o.get("title_opts")).convert("RGB")
                 sp = _vd(HERE, sel_o, it_o) / f"scene_{int(sc_prev):02d}.png"
                 if sp.exists():
                     from layout import IMG_BOX
@@ -2098,7 +2133,7 @@ with T5c:
                     from PIL import Image as _I
                     from layout import IMG_BOX
                     t1_, t2_ = BV.split_title(it_o)
-                    bgv = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png").convert("RGB")
+                    bgv = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png", title_opts=it_o.get("title_opts")).convert("RGB")
                     spv = _vd(HERE, sel_o, it_o) / f"scene_{int(v_sc):02d}.png"
                     if spv.exists():
                         sci = _I.open(spv).convert("RGB")
@@ -2152,7 +2187,7 @@ with T5c:
                         from PIL import Image as _I, ImageDraw as _ID
                         from layout import IMG_BOX
                         t1_, t2_ = BV.split_title(it_o)
-                        bgp = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png").convert("RGB")
+                        bgp = BV.make_template(t1_, t2_, BV.safe_country(it_o), None, channel_name=CH, handle=HD, avatar_path="avatar.png", title_opts=it_o.get("title_opts")).convert("RGB")
                         spp = _vd(HERE, sel_o, it_o) / f"scene_{int(pk_sc):02d}.png"
                         if spp.exists():
                             sci = _I.open(spp).convert("RGB")

@@ -68,6 +68,28 @@ def _centered(draw, text, y, font, fill, cx=W // 2):
     draw.text((cx - w / 2, y), text, font=font, fill=fill)
 
 
+def _hex_rgb(c, default):
+    try:
+        c = str(c).lstrip("#")
+        return tuple(int(c[k:k + 2], 16) for k in (0, 2, 4)) if len(c) == 6 else default
+    except Exception:
+        return default
+
+
+def _centered_words(draw, text, y, font, default, colors=None, cx=W // 2):
+    """단어별 색으로 가운데 정렬. colors = {단어 순번(문자열): '#rrggbb'}"""
+    colors = colors or {}
+    words = text.split()
+    if not colors or not words:
+        return _centered(draw, text, y, font, default, cx)
+    sp = draw.textlength(" ", font=font)
+    tw = sum(draw.textlength(w, font=font) for w in words) + sp * (len(words) - 1)
+    x = cx - tw / 2
+    for k, w in enumerate(words):
+        draw.text((x, y), w, font=font, fill=_hex_rgb(colors.get(str(k)), default) if colors.get(str(k)) else default)
+        x += draw.textlength(w, font=font) + sp
+
+
 def _circle_avatar(size, avatar_path=None, fallback_text="C"):
     if avatar_path and os.path.exists(avatar_path):
         im = ImageOps.fit(Image.open(avatar_path).convert("RGB"), (size, size))
@@ -88,7 +110,7 @@ def _circle_avatar(size, avatar_path=None, fallback_text="C"):
 
 def make_template(title1, title2, credit, out_path=None, *, channel_name="채널명",
                   handle="@handle", avatar_path=None,
-                  title_color_2=TITLE_COLOR_2, font_path=None):
+                  title_color_2=TITLE_COLOR_2, font_path=None, title_opts=None):
     """이미지 자리가 비어 있는 배경 템플릿 (RGB) 생성."""
     if font_path is None:
         import fonts as _F
@@ -106,8 +128,11 @@ def make_template(title1, title2, credit, out_path=None, *, channel_name="채널
     max_w = W - 100
     f1 = _fit_font(d, title1, max_w, 88, font_path=font_path)
     f2 = _fit_font(d, title2, max_w, 88, font_path=font_path)
-    _centered(d, title1, 215, f1, TITLE_COLOR_1)
-    _centered(d, title2, 315, f2, title_color_2)
+    to = title_opts or {}
+    c1 = _hex_rgb(to.get("color1"), TITLE_COLOR_1) if to.get("color1") else TITLE_COLOR_1
+    c2 = _hex_rgb(to.get("color2"), title_color_2) if to.get("color2") else title_color_2
+    _centered_words(d, title1, 215, f1, c1, to.get("colors1"))
+    _centered_words(d, title2, 315, f2, c2, to.get("colors2"))
 
     # --- 이미지 영역(자리표시) ---
     x0, y0, x1, y1 = IMG_BOX
