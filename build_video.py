@@ -27,7 +27,7 @@ from moviepy.editor import (
 
 from layout import IMG_BOX, SUBTITLE_Y, make_template, make_corner_overlay
 from common import split_sentences, strip_marks, visual_dir, credit_label
-from scenes import scene_groups, item_scene_count
+from scenes import scene_groups, item_scene_count, used_scene_count
 import subtitles
 import overlays
 
@@ -627,6 +627,8 @@ def make_image_box_clip(srcs, audio_duration, zoom=None, xfade=None, starts=None
     xfade = XFADE if xfade is None else xfade
 
     n = len(srcs)
+    if starts and len(starts) < n:       # 대본 문장이 적어 장면 묶음이 이미지 수보다 적으면 쓰이는 장면만 대본 시각에 맞춰 사용
+        srcs, n = srcs[:len(starts)], len(starts)
     if not starts or len(starts) < n:
         starts = [i * audio_duration / n for i in range(n)]
     starts = list(starts[:n])
@@ -673,8 +675,9 @@ def build_one(idx, item):
         visual_paths, country, str(item.get("topic") or "")
     )
     print(f"이미지: {real_images}/{item_scene_count(item)}장 사용 (나머지는 대체 카드)")
-    if real_images < len(visual_paths) and os.environ.get("ALLOW_PLACEHOLDER", "") != "1":
-        _miss = [n for n, p in enumerate(visual_paths, 1) if not p.exists()]
+    _used = used_scene_count(item)           # 대본 문장이 적어 안 쓰이는 뒤쪽 장면은 없어도 됨
+    _miss = [n for n, p in enumerate(visual_paths[:_used], 1) if not p.exists()]
+    if _miss and os.environ.get("ALLOW_PLACEHOLDER", "") != "1":
         raise RuntimeError(f"이미지 누락: 장면 {_miss or '읽기 실패'} -> 영상을 만들지 않습니다. 이미지 탭에서 '빠진 이미지 받기' 또는 사진 올리기 후 다시 하세요 "
                            "(색 카드로라도 만들려면 환경변수 ALLOW_PLACEHOLDER=1)")
 

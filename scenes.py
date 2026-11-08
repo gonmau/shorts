@@ -40,6 +40,17 @@ def scene_groups(sentences, n=6):
     return groups
 
 
+def used_scene_count(item):
+    """실제 영상에 쓰이는 장면 수 = min(장면 수, 대본 문장 묶음 수). 대본 문장이 적으면 뒤쪽 이미지는 안 쓰인다."""
+    n = item_scene_count(item)
+    try:
+        from common import split_sentences
+        g = len(scene_groups(split_sentences((item or {}).get("narration") or ""), n))
+    except Exception:
+        g = 0
+    return min(n, g) if g else n
+
+
 def default_scene_count():
     """새로 만드는 소재의 장면(이미지) 수. 환경변수 SCENE_COUNT, 기본 10, 6~20의 짝수로 맞춤."""
     try:
