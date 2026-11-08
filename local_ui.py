@@ -825,6 +825,17 @@ with T6a:
                     if _c.lower() != _dflt:
                         _pick[str(_k)] = _c
                 _cols[f"colors{_ln}"] = _pick
+            if st.button("↩ 썸네일 설정 기본값으로 되돌리기", key=f"thm_reset_{_ts}", help="크기·기울기·색·띠·글씨체 설정을 지우고 기본 디자인으로 다시 만듭니다 (배경 장면 번호는 위 입력값 그대로)"):
+                import subprocess as _sp_r, sys as _sys_r
+                _dm = _ld()
+                _dm[_ts].pop("thumb_opts", None)
+                _sd(_dm)
+                for _k_ in list(st.session_state.keys()):      # 이 소재의 슬라이더·색 선택 상태도 초기화
+                    if str(_k_).startswith("thm_") and str(_k_).endswith(f"_{_ts}") or str(_k_).startswith(("thm_c1_" + str(_ts) + "_", "thm_c2_" + str(_ts) + "_")):
+                        del st.session_state[_k_]
+                _sp_r.run([_sys_r.executable, str(_tb / "make_thumbnail.py"), "--channel", CH, "--handle", HD, "--style", "hook", "--only", str(_ts)],
+                          cwd=str(_tb), capture_output=True, text=True)
+                st.rerun()
             if st.button("썸네일 만들기", key=f"thm_go_{_ts}"):
                 _dm = _ld()
                 _dm[_ts]["thumb_opts"] = {"scale1": _sc1, "scale2": _sc2, "angle": _ang, "dy": _dy, "tag": _tg, "font": _tfo, "band": _bk, "band_color": _bc, "band_opacity": _bo,
