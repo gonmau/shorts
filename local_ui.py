@@ -115,7 +115,7 @@ TTS_CFG.setdefault("drive_auto", False)    # 작업 후 구글 드라이브에 �
 TTS_CFG.setdefault("drive_cats", ["thumbs", "subs", "audio", "images", "videos", "longform", "db"])
 ENGINE_LABELS = {"auto": "Supertonic 우선, 실패하면 Edge 등 (기본)", "edge": "Edge 우선, 실패하면 Supertonic 등", "supertonic": "Supertonic만 (실패하면 중단)", "edge_only": "Edge만 (실패하면 중단)"}
 ENGINE_ORDER = {"auto": "supertonic,edge,google,gtts", "edge": "edge,supertonic,google,gtts", "supertonic": "supertonic", "edge_only": "edge"}
-CAP_LABELS = {"script": "대본 자막 (기본)", "highlight": "핵심 문구 표시 (예전 방식)", "srt": "SRT 파일만 (영상엔 자막 없음)", "both": "대본 자막 + SRT"}
+CAP_LABELS = {"script": "대본 자막 (기본)", "highlight": "핵심 문구 표시 (예전 방식)", "srt": "SRT 파일만 (영상엔 자막 없음)", "both": "대본 자막 + SRT", "script_hl": "대본 자막 + 핵심 문구 둘 다 (핵심 문구는 이미지 위쪽)"}
 
 def _gh_token():
     return os.environ.get("GITHUB_TOKEN", "").strip()
@@ -380,7 +380,7 @@ with T4a:
     _ck = list(CAP_LABELS)
     TTS_CFG["caption"] = st.radio("자막 방식", _ck, _ck.index(TTS_CFG["caption"]) if TTS_CFG["caption"] in _ck else 0, horizontal=True,
                                   format_func=lambda k: CAP_LABELS[k],
-                                  help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다")
+                                  help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다. 둘 다: 아래엔 대본 자막, 이미지 위쪽엔 핵심 문구(쇼츠만)")
     TTS_CFG["tv_fx"] = st.checkbox("📺 영상 처음·끝에 옛날 TV 켜짐/꺼짐 효과", bool(TTS_CFG.get("tv_fx")), key="tv_fx_cb",
                                    help="시작: 가운데 빛줄이 위아래로 열리며 켜짐(0.5초) / 끝: 줄로 닫혔다 점으로 꺼짐(0.55초). 음성은 그대로. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     import fonts as _FN0
@@ -1498,7 +1498,7 @@ with T2b:
         n_txt = st.text_area("대본", "\n".join(narr), height=260, key=f"n_{sel}", label_visibility="collapsed")
         h_txt = ""
         if sel in ids_rev:
-            st.markdown("**핵심 문구** (`CAPTION_MODE=highlight`일 때만 쓰임. 기본 자막 방식에서는 화면에 안 나옵니다)")
+            st.markdown("**핵심 문구** (자막 방식이 '핵심 문구' 또는 '대본 자막 + 핵심 문구 둘 다'일 때만 화면에 나옵니다)")
             h_txt = st.text_area("핵심", "\n".join(hls), height=100, key=f"h_{sel}", label_visibility="collapsed")
         st.caption("대본을 고치면 음성이 다시 만들어지고, 이미지 검색어는 새 대본 기준으로 다시 만들어집니다(이미지 탭에서 확인). "
                    "이미 영상이 만들어진 소재는 수정 후 redo에 번호를 넣고 5단계를 해야 영상에 반영됩니다.")

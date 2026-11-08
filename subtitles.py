@@ -197,14 +197,14 @@ def render_caption(text, luma=90.0, std=30.0):
 
 # ------------------------------------------------------------------ SRT / 자막 모드
 def caption_mode():
-    """CAPTION_MODE: script(영상에 자막 입힘, 기본) / srt(.srt 파일만, 영상엔 자막 없음) / both(둘 다) / highlight(예전 핵심 문구)"""
+    """CAPTION_MODE: script(영상에 자막 입힘, 기본) / srt(.srt 파일만, 영상엔 자막 없음) / both(둘 다) / highlight(예전 핵심 문구) / script_hl(대본 자막 + 핵심 문구 둘 다: 핵심 문구는 이미지 위쪽)"""
     import os
     m = (os.environ.get("CAPTION_MODE") or "script").strip().lower()
-    return m if m in ("script", "srt", "both", "highlight") else "script"
+    return m if m in ("script", "srt", "both", "highlight", "script_hl") else "script"
 
 
 def burn_in(mode):
-    return mode in ("script", "both")
+    return mode in ("script", "both", "script_hl")
 
 
 def _srt_time(t):

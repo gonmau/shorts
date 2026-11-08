@@ -93,9 +93,9 @@ on:
         description: "말 속도 (예: -5% / +10% / 비우면 기본)"
         default: ""
       caption_mode:
-        description: "자막 방식 (script=대본 자막 입힘, highlight=핵심 문구 표시(롱폼은 대본 자막), srt=SRT 파일만(영상엔 자막 없음), both=대본 자막+SRT)"
+        description: "자막 방식 (script=대본 자막 입힘, highlight=핵심 문구 표시(롱폼은 대본 자막), srt=SRT 파일만(영상엔 자막 없음), both=대본 자막+SRT, script_hl=대본 자막+핵심 문구 둘 다(쇼츠만))"
         type: choice
-        options: [script, highlight, srt, both]
+        options: [script, highlight, srt, both, script_hl]
         default: script
 
 # 같은 작업이 겹쳐 돌면 중복 생성·업로드될 수 있어 한 번에 하나만 실행 (겹치면 앞 실행이 끝날 때까지 대기)

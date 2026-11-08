@@ -757,8 +757,9 @@ def build_one(idx, item):
     caption_clips = []
     all_cues = subtitles.make_cues(timings, audio_duration)   # 대본 자막 조각 (SRT는 어떤 방식이든 같이 만든다)
     srt_text = subtitles.to_srt(all_cues)
-    if caption_mode == "highlight":
-        # 핵심 문구 (예전 방식)
+    if caption_mode in ("highlight", "script_hl"):
+        # 핵심 문구 (예전 방식). script_hl 이면 대본 자막과 겹치지 않게 이미지 위쪽에 표시
+        _hl_y = IMG_BOX[1] + 28 if caption_mode == "script_hl" else IMG_BOX[3] - CAP_H - 20
         cues = highlight_cues(item, timings, audio_duration, script)
         for start, end, text in cues:
             print(f"  문구 {start:5.1f}s~{end:5.1f}s: {strip_marks(text)}")
@@ -766,11 +767,11 @@ def build_one(idx, item):
                 ImageClip(make_highlight_image(text))
                 .set_start(start)
                 .set_duration(end - start)
-                .set_position((IMG_BOX[0], IMG_BOX[3] - CAP_H - 20))
+                .set_position((IMG_BOX[0], _hl_y))
                 .crossfadein(0.1)
             )
             caption_clips.append(cc)
-    else:
+    if caption_mode != "highlight":
         # 대본 자막: 음성 속도에 맞춰 2줄 이내 조각으로 나눠 보여주고, 사진 밝기에 따라 패널 진하기를 조절
         stats = [subtitles.region_stats(im) for im in srcs]
         cap_y = IMG_BOX[3] - subtitles.CAP_H - 18
