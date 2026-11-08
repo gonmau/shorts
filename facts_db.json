@@ -62051,13 +62051,16 @@
       "angle": -7.5,
       "dy": 130,
       "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
       "font": "dokdo",
-      "band": "brush",
+      "band": "none",
       "band_color": "#f3ea0b",
       "band_opacity": 75,
       "band_w": 150,
       "band_h": 1.0,
-      "band_angle": 2.0,
+      "band_angle": 0.0,
       "band_dy": 0,
       "color1": "#ffffff",
       "color2": "#000000",
@@ -62065,7 +62068,8 @@
         "0": "#f015e1"
       },
       "colors2": {
-        "0": "#0a0a0a",
+        "0": "#fffafa",
+        "1": "#efecec",
         "2": "#dd2121"
       }
     },
