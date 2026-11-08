@@ -62047,8 +62047,8 @@
     "status_v6": "video_done",
     "thumb_opts": {
       "scale1": 1.3,
-      "scale2": 1.05,
-      "angle": -7.5,
+      "scale2": 1.1,
+      "angle": 0.0,
       "dy": 130,
       "tag": true,
       "tag_text": "",
