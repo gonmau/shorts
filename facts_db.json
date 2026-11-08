@@ -61583,7 +61583,7 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
     "status": "video_done",
-    "narration": "남중국해 주변 주요 해협 8곳을 통과한 무역, 2024년 약 6조 4천억 달러! 이곳은 인도양과 태평양을 연결하며 세계 해상 물류의 핵심 통로 역할을 합니다. 특히 말라카 해협과 대만 해협은 각각 2조 4천억 달러가 넘는 상품이 오가는 세계적인 물류 요충지입니다. 중동의 에너지와 유럽의 상품도 이 바닷길을 거쳐 동아시아로 이동합니다. 우리나라도 예외가 아닙니다. 2024년 한국 무역의 약 22%가 대만 해협을 통과했습니다. 말라카 해협을 통과한 무역도 한국 전체 무역의 약 13%에 달했습니다. 특히 이 해협들은 석유와 천연가스 같은 에너지 수입에도 중요한 역할을 합니다. 결국 남중국해의 바닷길은 단순한 항로가 아니라 세계 경제와 우리 일상을 연결하는 생명선인 셈입니다.",
+    "narration": "남중국해 주변 주요 해협 8곳을 통과한 무역, 2024년 약 6조 4천억 달러! 이곳은 인도양과 태평양을 연결하며 세계 해상 물류의 핵심 통로 역할을 합니다. 특히 말라카 해협과 대만 해협은 각각 2조 4천억 달러가 넘는 상품이 오가는 세계적인 물류 요충지입니다. 중동의 에너지와 유럽의 상품도 이 바닷길을 거쳐 동아시아로 이동합니다. 우리나라도 예외가 아닙니다.2024년 한국 무역의 약 22%가 대만 해협을 통과했습니다. 말라카 해협을 통과한 무역도 한국 전체 무역의 약 13%에 달했습니다. 특히 이 해협들은 석유와 천연가스 같은 에너지 수입에도 중요한 역할을 합니다. 결국 남중국해의 바닷길은 단순한 항로가 아니라 세계 경제와 우리 일상을 연결하는 생명선인 셈입니다.",
     "title_line1": "남중국해",
     "title_line2": "세계 무역의 생명선",
     "highlights": [
@@ -61601,26 +61601,22 @@
       },
       {
         "s": 6,
-        "text": "한국 무역의 22%"
+        "text": "말라카 해협 13%"
       },
       {
         "s": 7,
-        "text": "말라카 해협 13%"
-      },
-      {
-        "s": 9,
-        "text": "말라카 해협 13%"
+        "text": "일상의 생명선"
       }
     ],
     "image_queries": [
-      "South China Sea massive container ships aerial view",
-      "South China Sea global maritime trade routes map",
-      "Malacca Strait cargo ship traffic aerial view",
-      "Taiwan Strait commercial shipping vessels",
-      "South Korea international maritime trade port Busan",
-      "South Korea oil tanker LNG carrier maritime imports",
-      "Global container shipping ocean trade aerial",
-      "Busy international shipping port container vessels"
+      "South China Sea cargo ships",
+      "Indian Ocean Pacific connection map",
+      "Malacca Strait shipping lane",
+      "Energy tankers crossing South China Sea",
+      "South China Sea Korean cargo ships",
+      "Malacca Strait container ships",
+      "Oil tanker at sea",
+      "South China Sea global trade route"
     ],
     "scene_count": 10,
     "highlight_style": {
@@ -61638,41 +61634,32 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "South China Sea massive container ships aerial view",
-      "South China Sea global maritime trade routes map",
-      "Malacca Strait cargo ship traffic aerial view",
-      "Taiwan Strait commercial shipping vessels",
-      "South Korea international maritime trade port Busan",
-      "South Korea oil tanker LNG carrier maritime imports",
-      "Global container shipping ocean trade aerial",
-      "Busy international shipping port container vessels"
+      "South China Sea cargo ships",
+      "Indian Ocean Pacific connection map",
+      "Malacca Strait shipping lane",
+      "Energy tankers crossing South China Sea",
+      "South China Sea Korean cargo ships",
+      "Malacca Strait container ships",
+      "Oil tanker at sea",
+      "South China Sea global trade route"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "dendoktoor",
-        "page": "https://pixabay.com/photos/container-ship-container-transport-6631117/",
-        "id": 6631117
-      },
-      {
-        "scene": 2,
-        "source": "commons",
-        "user": "Golbez",
-        "license": "CC BY-SA 4.0",
-        "title": "Soviet Union disputes 1948-04-07 to 1952-04-28.png",
-        "page": "https://commons.wikimedia.org/wiki/File:Soviet_Union_disputes_1948-04-07_to_1952-04-28.png",
-        "id": "c:50112731"
-      },
-      {
-        "scene": 3,
         "source": "pixabay",
         "user": "Bergadder",
         "page": "https://pixabay.com/photos/ship-sea-water-sight-transport-10038606/",
         "id": 10038606
       },
       {
-        "scene": 4,
+        "scene": 2,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/australia-continent-geography-map-62823/",
+        "id": 62823
+      },
+      {
+        "scene": 3,
         "source": "pixabay",
         "user": "Bergadder",
         "page": "https://pixabay.com/photos/ship-sea-water-sight-transport-10038606/",
@@ -61680,55 +61667,66 @@
         "type": "photo"
       },
       {
+        "scene": 4,
+        "source": "commons",
+        "user": "Donald Trung",
+        "license": "CC BY-SA 4.0",
+        "title": "Hoàng Sa and Trường Sa territorial dispute exhibition, Ecopark (2018) 02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ho%C3%A0ng_Sa_and_Tr%C6%B0%E1%BB%9Dng_Sa_territorial_dispute_exhibition,_Ecopark_(2018)_02.jpg",
+        "id": "c:67207070"
+      },
+      {
         "scene": 5,
         "source": "pixabay",
-        "user": "ah64dka52",
-        "page": "https://pixabay.com/photos/night-view-night-bridge-busan-7943221/",
-        "id": 7943221
+        "user": "MAILAI",
+        "page": "https://pixabay.com/photos/sky-clouds-ships-sea-cumulus-7993656/",
+        "id": 7993656
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Gaz_Chapp",
-        "page": "https://pixabay.com/photos/gas-tanker-ship-sea-gas-carrier-6367981/",
-        "id": 6367981
+        "user": "dendoktoor",
+        "page": "https://pixabay.com/photos/ship-container-ship-7210281/",
+        "id": 7210281
       },
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "Shihab93",
-        "page": "https://pixabay.com/photos/ship-vessel-sea-waves-transport-8263464/",
-        "id": 8263464
+        "user": "Marcos-Photographer",
+        "page": "https://pixabay.com/photos/ships-the-transport-of-the-fuel-oil-4426675/",
+        "id": 4426675
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "LoboStudioHamburg",
-        "page": "https://pixabay.com/photos/port-container-ship-night-7418239/",
-        "id": 7418239
+        "source": "commons",
+        "user": "Van Ewyk, Nicolaas",
+        "license": "Public domain",
+        "title": "Nouvelle Carte de la Moitie Meridionale du Globe Terrestre montrant la Variation du Compas",
+        "page": "https://commons.wikimedia.org/wiki/File:Nouvelle_Carte_de_la_Moitie_Meridionale_du_Globe_Terrestre_montrant_la_Variation_du_Compas,_ou_le_Merveileux_accord_(IA_dr_nouvelle-carte-de-la-moitie-meridionale-du-globe-terrestre-montrant-la-vari-10997000).jpg",
+        "id": "c:194218375"
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2341,
+        "clip": 0.2355,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "057af6c51a0a",
-        "at": "2026-11-08 17:08",
+        "sig": "97427bbff71e",
+        "at": "2026-11-08 17:59",
         "scene": 1,
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.208,
+        "verdict": "ok",
+        "clip": 0.2347,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b6224e7d57cc",
-        "at": "2026-11-08 17:09",
+        "sig": "8e802762e772",
+        "at": "2026-11-08 17:59",
         "scene": 2,
         "rejected_ids": [
           600497,
@@ -61741,72 +61739,88 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2592,
+        "clip": 0.2569,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "941b3ebf9e5d",
-        "at": "2026-11-08 17:08",
+        "sig": "c6c32fdc279f",
+        "at": "2026-11-08 17:59",
         "scene": 3,
-        "rejected_ids": []
-      },
-      {
-        "verdict": "ok",
-        "clip": 0.282,
-        "ollama": null,
-        "seen": "",
-        "tools": "clip",
-        "sig": "5bb033f39eda",
-        "at": "2026-11-08 17:09",
-        "scene": 4,
         "rejected_ids": [
           10038606,
           "c:202535323"
         ]
       },
       {
-        "verdict": "ok",
-        "clip": 0.2445,
+        "verdict": "bad",
+        "clip": 0.2033,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b992931b7fe8",
-        "at": "2026-11-08 17:08",
+        "sig": "34fc2f017e37",
+        "at": "2026-11-08 17:59",
+        "scene": 4,
+        "rejected_ids": [
+          10038606,
+          9762992,
+          9983074,
+          9985148,
+          "c:202535323",
+          "c:50112731",
+          "c:67207068",
+          "c:67207070"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2299,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "28c1cf92b466",
+        "at": "2026-11-08 17:59",
         "scene": 5,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3039,
+        "clip": 0.3119,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "5feaffc4cd47",
-        "at": "2026-11-08 17:08",
+        "sig": "3436d62c7ed4",
+        "at": "2026-11-08 17:59",
         "scene": 6,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3413,
+        "clip": 0.29,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "321a1d53b3b6",
-        "at": "2026-11-08 17:08",
+        "sig": "b9dcdc21eed8",
+        "at": "2026-11-08 17:59",
         "scene": 7,
         "rejected_ids": []
       },
       {
-        "verdict": "ok",
-        "clip": 0.3302,
+        "verdict": "bad",
+        "clip": 0.1976,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "0c2b504bf3ae",
-        "at": "2026-11-08 17:08",
+        "sig": "ee2d95670178",
+        "at": "2026-11-08 17:59",
         "scene": 8,
-        "rejected_ids": []
+        "rejected_ids": [
+          241665,
+          9983074,
+          9985148,
+          "c:194218375",
+          "c:194218383",
+          "c:51008393"
+        ]
       }
     ],
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2.mp3",
