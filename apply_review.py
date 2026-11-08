@@ -99,7 +99,7 @@ def main():
         # 대본에서 문장을 빼거나 넣었으면 핵심 문구의 문장 번호를 새 대본에 맞게 옮긴다 (지워진 문장의 핵심 문구는 같이 빠짐)
         if b["narr"]:
             _old = split_sentences(item.get("narration", ""))
-            _new = [t for _, t in sorted(b["narr"].items()) if t]
+            _new = split_sentences(" ".join(t for _, t in sorted(b["narr"].items()) if t))   # 한 줄에 두 문장이면 두 문장으로 센다
             if _new and _new != _old and len(_new) != len(_old):
                 _mp = remap_sentence_numbers(_old, _new)
                 _src = hl if hl else ([] if path.name == "review.txt" else [h for h in (item.get("highlights") or []) if isinstance(h, dict)])
