@@ -61582,7 +61582,7 @@
     "verify_note": "Territorial disputes in the South China Sea",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "남중국해 주변 주요 해협 8곳을 통과한 무역, 2024년 약 6조 4천억 달러! 이곳은 인도양과 태평양을 연결하며 세계 해상 물류의 핵심 통로 역할을 합니다. 특히 말라카 해협과 대만 해협은 각각 2조 4천억 달러가 넘는 상품이 오가는 세계적인 물류 요충지입니다. 중동의 에너지와 유럽의 상품도 이 바닷길을 거쳐 동아시아로 이동합니다. 우리나라도 예외가 아닙니다. 2024년 한국 무역의 약 22%가 대만 해협을 통과했습니다. 말라카 해협을 통과한 무역도 한국 전체 무역의 약 13%에 달했습니다. 특히 이 해협들은 석유와 천연가스 같은 에너지 수입에도 중요한 역할을 합니다. 결국 남중국해의 바닷길은 단순한 항로가 아니라 세계 경제와 우리 일상을 연결하는 생명선인 셈입니다.",
     "title_line1": "남중국해",
     "title_line2": "세계 무역의 생명선",
@@ -61812,7 +61812,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0583_싱가포르.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
