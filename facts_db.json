@@ -62052,6 +62052,15 @@
       "dy": 130,
       "tag": true,
       "font": "dokdo",
+      "band": "brush",
+      "band_color": "#f1efe5",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
       "colors1": {
         "0": "#f015e1"
       },
