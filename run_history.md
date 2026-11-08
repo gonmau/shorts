@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 13:21:08 (KST) · 기록 1260건 · 소재 576개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 13:23:17 (KST) · 기록 1264건 · 소재 576개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 43 | 0 | 20분 7초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 93 | 0 | 19초 |
+| apply_review | 94 | 0 | 20초 |
 | approve | 22 | 0 | 4초 |
 | build_video | 54 | 0 | 9시간 51분 |
 | check_country | 13 | 0 | 3초 |
@@ -21,11 +21,11 @@
 | fetch_images | 140 | 3 | 2시간 3분 |
 | generate_culture_facts | 12 | 0 | 23분 12초 |
 | generate_script | 147 | 0 | 1시간 9분 |
-| generate_tts | 63 | 0 | 26분 22초 |
+| generate_tts | 64 | 0 | 26분 25초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 28 | 0 | 48초 |
-| promote_ready | 93 | 0 | 17초 |
-| redo_videos | 19 | 0 | 5초 |
+| promote_ready | 94 | 0 | 17초 |
+| redo_videos | 20 | 0 | 5초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 17 | 0 | 11분 14초 |
@@ -39,6 +39,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 13:23 | PC | generate_tts | generate_tts.py --index 551 | ✅ | 2초 |  |
+| 13:23 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 13:23 | PC | redo_videos | redo_videos.py --indexes 551 | ✅ | 0초 |  |
+| 13:23 | PC | promote_ready | promote_ready.py --start 551 | ✅ | 0초 |  |
 | 13:20 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 48초 |  |
 | 13:20 | PC | generate_script | generate_script.py --extras-only --index 551 | ✅ | 3초 |  |
 | 13:05 | PC | 코드업데이트 | gonmau/shorts: 3개 (apply_review.py, layout.py, local_ui.py) | ✅ |  |  |
