@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-08 17:48:34 (KST) · 기록 1293건 · 소재 591개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-08 17:55:02 (KST) · 기록 1295건 · 소재 591개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 43 | 0 | 20분 7초 |
+| -c | 44 | 0 | 20분 7초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 99 | 0 | 21초 |
@@ -31,7 +31,7 @@
 | upload_to_youtube | 18 | 0 | 11분 33초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 69 | 0 | 0초 |
+| 코드업데이트 | 70 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:54 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
+| 17:53 | PC | 코드업데이트 | gonmau/shorts: 2개 (build_video.py, local_ui.py) | ✅ |  |  |
 | 17:43 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 583 | ✅ | 1초 |  |
 | 17:43 | PC | build_video | build_video.py --index 583 --channel gonmauY --handle @gonmauY | ✅ | 10분 33초 |  |
 | 17:32 | PC | generate_script | generate_script.py --extras-only --index 583 | ✅ | 2초 |  |
