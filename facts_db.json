@@ -61582,7 +61582,35 @@
     "verify_note": "Territorial disputes in the South China Sea",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "남중국해를 통과하는 무역, 연간 3조 3천 6백억 달러! 이 거대한 수치는 세계 해상 물류의 핵심이 되는 남중국해가 얼마나 중요한지를 단번에 보여줍니다. 이 해역에는 브루나이, 인도네시아, 말레이시아, 필리핀, 중국, 대만, 베트남 등 일곱 나라가 섬·암초·해역을 두고 영유권을 다투고 있습니다. 스프라틀리 제도, 파라셀 제도, 스카버러 쇼얼, 톤킨만 경계선 등이 주요 분쟁 지역으로 꼽히죠.  \n\n그런데 인도네시아도 나투나 섬 주변 해역을 남중국해의 일부로 간주해 분쟁 구역에 포함시키고 있다는 점이 흥미롭습니다. 이렇게 다양한 국가가 겹쳐 주장하면서도, 연간 3.36 trillion 달러에 달하는 무역 규모는 변함없이 흐르고 있습니다.  \n\n수많은 선박이 이 물길을 지나가면서 각국의 이해관계가 얽히지만, 결국 물류 흐름 자체는 멈추지 않습니다. 남중국해가 세계 무역의 동맥이라는 사실은, 그 어느 때보다도 명확해 보이네요.",
+    "title_line1": "남중국해 무역 규모",
+    "title_line2": "연간3조3천6백억?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*3조* 무역"
+      },
+      {
+        "s": 3,
+        "text": "*7개* 국가"
+      },
+      {
+        "s": 6,
+        "text": "*3.36*조"
+      }
+    ],
+    "image_queries": [
+      "South China Sea cargo ships",
+      "South China Sea shipping lanes",
+      "Seven nations South China Sea",
+      "Spratly Islands dispute area",
+      "Natuna Islands maritime zone",
+      "South China Sea trade flow",
+      "Ships navigating South China Sea",
+      "South China Sea trade artery"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
