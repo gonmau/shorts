@@ -61621,12 +61621,11 @@
       },
       {
         "scene": 6,
-        "source": "commons",
-        "user": "Public domain / CC0",
-        "license": "Public domain",
-        "title": "Aegeansea.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Aegeansea.jpg",
-        "id": "c:37379"
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/illustrations/erdogan-turkey-democracy-politician-2155938/",
+        "id": 2155938,
+        "type": "illustration"
       },
       {
         "scene": 7,
