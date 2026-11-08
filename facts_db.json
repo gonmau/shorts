@@ -58771,7 +58771,43 @@
     "verify_note": "Muttiah Muralitharan",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법입니다. 스리랑카 출신의 무티아 무라리타란은 테스트 경기에서 800위켓, ODI에서는 530위켓 이상을 기록하며 국제 크리켓 최다 위켓 보유자로 알려져 있습니다. 그의 오른손 손목을 중심으로 한 독특한 회전 구동은 일반 투구와는 확연히 달라서, 공이 회전하면서 급격히 떨어지는 효과를 만들어 냈습니다. 그런데 그의 투구 동작은 오랫동안 논란의 대상이었습니다. 회전 각도가 비정상적이라는 이유로 심판과 전문가들 사이에서 규정 위반 여부가 계속 제기됐고, 결국 ICC는 특별 규정을 마련해 그의 스타일을 인정하게 되었습니다. 이렇게 논란을 딛고 남긴 기록은 2026년까지의 국제 경기 데이터에 한정된 수치이지만, 손목 하나로 이룬 위업은 여전히 많은 사람들에게 깊은 인상을 남깁니다. 결국 800위켓은 단순한 숫자가 아니라, 한 손목이 만든 크리켓 역사의 작은 기적이었습니다.",
+    "title_line1": "스리랑카 800위켓",
+    "title_line2": "손목 마법이 만든 기적",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*800*번 위켓?"
+      },
+      {
+        "s": 2,
+        "text": "손목 *마법*"
+      },
+      {
+        "s": 4,
+        "text": "손목 회전 *비밀*"
+      },
+      {
+        "s": 6,
+        "text": "규정 *특별* 인정"
+      },
+      {
+        "s": 8,
+        "text": "한 손목 *기적*"
+      }
+    ],
+    "image_queries": [
+      "cricket scoreboard showing 800 wickets",
+      "close-up wrist spin action",
+      "Sri Lanka cricket stadium",
+      "bowler wrist rotation",
+      "controversial cricket bowling",
+      "cricket umpire reviewing bowling",
+      "cricket statistics chart 2026",
+      "cricket ball landing in wicket"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "서키야 전통 규칙, 아침 인사 의무화",
@@ -59248,9 +59284,9 @@
   },
   {
     "topic": "박사(Doctor) 칭호의 기원과 현대 사용",
-    "hook": "13세기 유럽에서 시작된 박사(Doctor) 칭호, 오늘날엔 ‘Dr.’ 하나면 충분할까?",
-    "body": "라틴어 ‘docēre’에서 온 ‘Doctor’는 원래 교사를 의미했으며, 13세기 볼로냐와 파리 대학에서 최초로 박사학위가 수여되었다. 이제 전 세계에서 박사 학위 소지자를 가리키는 약칭으로 쓰인다.",
-    "twist": "과거엔 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었었다.",
+    "hook": "의사를 부를 때도, 교수를 부를 때도 사용하는 ‘Dr.’ 그런데 이 호칭은 원래 의사가 아닌 선생님을 뜻했습니다.",
+    "body": "라틴어 ‘docēre’, 즉 ‘가르치다’에서 유래한 Doctor는 원래 학문과 지식을 가르치는 사람을 뜻했습니다. 12세기 유럽에서는 볼로냐와 파리 같은 대학이 성장하면서 학문적 권위를 인정받은 교사에게 Doctor라는 칭호가 사용되기 시작했죠.",
+    "twist": "당시 박사학위의 중요한 의미는 단순히 공부를 많이 했다는 증명이 아니라, 대학에서 가르칠 수 있는 공식적인 자격을 인정받는 것이었습니다.",
     "caveat": "이 명칭은 유럽 대학을 중심으로 전파된 것이며, 지역마다 사용 방식에 차이가 있다.",
     "country": "유럽",
     "theme": "관습/예절",
@@ -59260,40 +59296,52 @@
     "confidence": "source",
     "created_at": "2026-11-07T00:19:47.050579+00:00",
     "status": "scripted",
-    "narration": "13세기 유럽에서 시작된 박사(Doctor) 칭호, 오늘날엔 ‘Dr.’ 하나면 충분할까요? 라틴어 docēre, 즉 “가르치다”에서 파생된 Doctor는 원래 교사를 뜻했습니다. 중세에 이르러 볼로냐와 파리 대학이 최초로 박사학위를 수여하면서, 학문을 체계적으로 가르치는 사람에게 공식적인 명칭으로 쓰이기 시작했죠. 그런데 과거에는 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었습니다. 즉, 오늘날처럼 박사 학위 소지자만을 가리키는 것이 아니라, 교사 자체를 존중하는 의미였던 겁니다. 시간이 흐르면서 이 칭호는 유럽 대학을 중심으로 전파되었습니다. 현재는 전 세계 대부분의 대학에서 박사 학위를 받은 사람을 간단히 ‘Dr.’이라고 부릅니다. 그럼 이제 ‘Doctor’라는 한 글자가 얼마나 많은 역사를 품고 있는지, 생각해 보세요. 처음의 질문처럼, 오늘날에도 충분히 ‘Dr.’ 하나면 될까요? 답은, 그 한 글자에 담긴 긴 학문의 여정에 달려 있습니다.",
-    "title_line1": "박사 칭호의 기원",
-    "title_line2": "한 글자로 충분할까",
+    "narration": "의사를 부를 때도, 교수를 부를 때도 사용하는 ‘Dr.’ 그런데 이 호칭은 원래 의사가 아닌 선생님을 뜻했습니다. 라틴어 ‘docēre’, 즉 ‘가르치다’에서 유래한 Doctor는 원래 학문과 지식을 가르치는 사람을 뜻했습니다. 12세기 유럽에서는 볼로냐와 파리 같은 대학이 성장하면서 학문적 권위를 인정받은 교사에게 Doctor라는 칭호가 사용되기 시작했죠. 당시 박사학위의 중요한 의미는 단순히 공부를 많이 했다는 증명이 아니었습니다. 대학에서 가르칠 수 있는 공식적인 자격을 인정받는 것이었죠. 이러한 자격은 시간이 흐르면서 유럽 대학을 중심으로 확산됐습니다. 오늘날에는 의사뿐 아니라 연구자와 학자도 Doctor라는 호칭을 사용합니다. 수백 년 전에는 가르치는 사람을 뜻했던 말이 이제는 학문과 의료를 대표하는 호칭이 된 것입니다. 여러분이 알고 있던 Doctor의 시작은 의사가 아닌 선생님이었습니다.",
+    "title_line1": "의사가 아닌 선생님이었다",
+    "title_line2": "Doctor의 놀라운 기원",
     "highlights": [
       {
         "s": 1,
-        "text": "*박사*는 13세기"
+        "text": "*Dr.*는 의사만?"
       },
       {
         "s": 2,
-        "text": "라틴어 *가르치다* 의미"
+        "text": "라틴어 가르치다"
       },
       {
         "s": 3,
-        "text": "볼로냐·파리, *첫* 박사"
+        "text": "중세 유럽 대학"
+      },
+      {
+        "s": 4,
+        "text": "볼로냐·파리 학문"
+      },
+      {
+        "s": 5,
+        "text": "가르칠 수 있는 자격"
       },
       {
         "s": 7,
-        "text": "오늘날 *박사* 하나면?"
+        "text": "오늘날 의사와 박사"
       }
     ],
     "image_queries": [
-      "13th century Doctor illustration",
-      "Latin teaching manuscript",
-      "Bologna historic lecture hall",
-      "medieval Doctor teaching scene",
-      "old classroom honoring Doctor",
-      "European university spreading knowledge",
-      "modern Doctor graduation ceremony",
-      "ancient Latin scroll",
-      "contemporary Doctor office sign",
-      "academic degree timeline chart"
+      "medieval scholar Doctor teaching students",
+      "Latin manuscript docere teaching",
+      "University of Bologna medieval historic building",
+      "medieval University of Paris lecture",
+      "medieval professor teaching university students",
+      "medieval licentia docendi academic manuscript",
+      "modern university doctoral graduation ceremony",
+      "doctor academic hood medieval origins",
+      "modern physician doctor office",
+      "historical evolution of Doctor academic title"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "13세기 유럽에서 시작된 박사(Doctor) 칭호, 오늘날엔 ‘Dr.’ 하나면 충분할까요? 라틴어 docēre, 즉 “가르치다”에서 파생된 Doctor는 원래 교사를 뜻했습니다. 중세에 이르러 볼로냐와 파리 대학이 최초로 박사학위를 수여하면서, 학문을 체계적으로 가르치는 사람에게 공식적인 명칭으로 쓰이기 시작했죠. 그런데 과거에는 학문을 가르치는 모든 사람에게도 ‘Doctor’라는 호칭이 붙었습니다. 즉, 오늘날처럼 박사 학위 소지자만을 가리키는 것이 아니라, 교사 자체를 존중하는 의미였던 겁니다. 시간이 흐르면서 이 칭호는 유럽 대학을 중심으로 전파되었습니다. 현재는 전 세계 대부분의 대학에서 박사 학위를 받은 사람을 간단히 ‘Dr.’이라고 부릅니다. 그럼 이제 ‘Doctor’라는 한 글자가 얼마나 많은 역사를 품고 있는지, 생각해 보세요. 처음의 질문처럼, 오늘날에도 충분히 ‘Dr.’ 하나면 될까요? 답은, 그 한 글자에 담긴 긴 학문의 여정에 달려 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true
   },
   {
     "topic": "왕립 해군(Royal Navy)의 ‘시니어 서비스’ 별명",
