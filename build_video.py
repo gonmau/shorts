@@ -673,6 +673,10 @@ def build_one(idx, item):
         visual_paths, country, str(item.get("topic") or "")
     )
     print(f"이미지: {real_images}/{item_scene_count(item)}장 사용 (나머지는 대체 카드)")
+    if real_images < len(visual_paths) and os.environ.get("ALLOW_PLACEHOLDER", "") != "1":
+        _miss = [n for n, p in enumerate(visual_paths, 1) if not p.exists()]
+        raise RuntimeError(f"이미지 누락: 장면 {_miss or '읽기 실패'} -> 영상을 만들지 않습니다. 이미지 탭에서 '빠진 이미지 받기' 또는 사진 올리기 후 다시 하세요 "
+                           "(색 카드로라도 만들려면 환경변수 ALLOW_PLACEHOLDER=1)")
 
     audio = AudioFileClip(str(audio_path))
     audio_duration = float(audio.duration)

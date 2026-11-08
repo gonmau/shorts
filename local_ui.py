@@ -1640,6 +1640,21 @@ with T3b:
                     help="영상 파일 자체는 유튜브에서 못 바꾸고 설명란만 바뀝니다. 영상에 새 사진을 넣으려면 새로 렌더링해 다시 올려야 합니다. 토큰에 영상 수정 권한이 없으면 실패하고 붙여넣을 설명을 보여줍니다.")
         qs = list(item.get("image_queries") or [])
         credits = {c.get("scene"): c for c in (item.get("image_credits") or [])}
+        from scenes import item_scene_count as _isc, scene_groups as _sg
+        from common import split_sentences as _ss
+        _n_sc = _isc(item)
+        _have = [n_ for n_ in range(1, _n_sc + 1) if (folder / f"scene_{n_:02d}.png").exists()]
+        _miss = [n_ for n_ in range(1, _n_sc + 1) if n_ not in _have]
+        _grp = len(_sg(_ss(item.get("narration") or ""), _n_sc))
+        if _miss:
+            st.error(f"⚠️ 이미지 누락 {len(_miss)}장: 장면 {', '.join(map(str, _miss))} (전체 {_n_sc}장 중 {len(_have)}장). "
+                     "이대로 5단계를 하면 영상 제작이 이 소재를 건너뜁니다. 아래 '빠진 이미지 받기' 또는 사진 올리기로 채우세요.")
+        else:
+            st.success(f"이미지 {_n_sc}/{_n_sc}장 모두 있음")
+        if qs and len(qs) != _n_sc:
+            st.warning(f"이미지 검색어 {len(qs)}개 ≠ 장면 {_n_sc}개 (대본을 고친 뒤 번호가 어긋난 경우). '검색어도 새로 만들기'를 체크하고 이미지를 다시 받으세요.")
+        if _grp and _grp < _n_sc:
+            st.warning(f"대본 문장이 적어 장면이 {_grp}개로 묶입니다 (이미지 {_n_sc}장 중 {_n_sc - _grp}장은 영상에 안 쓰임).")
         pix = os.environ.get("PIXABAY_API_KEY", "").strip()
         st.caption("검색어를 고치고 [이 장면 다시 받기]를 누르면 그 장면만 새로 받습니다. 직접 가진 사진은 [사진 올리기]로 바꿀 수 있습니다. "
                    "이미지 검색어가 비어 있으면 5단계 때(또는 아래 버튼으로) 대본 기준으로 만들어집니다.")
@@ -1667,6 +1682,16 @@ with T3b:
                 run("fetch_images.py", "--index", str(idx), "--force")
                 if sync_desc([idx]):
                     st.rerun()
+        _lack = []
+        for _i, _f in enumerate(db_):
+            if _f.get("status") in ("scripted", "tts_done") and _i >= start:
+                _fd = visual_dir(HERE, _i, _f)
+                _ms = [n_ for n_ in range(1, _isc(_f) + 1) if not (_fd / f"scene_{n_:02d}.png").exists()]
+                if _ms:
+                    _lack.append(f"{_i} {_f.get('country', '')}: {len(_ms)}장 누락 ({', '.join(map(str, _ms))})")
+        if _lack:
+            with st.expander(f"⚠️ 이미지가 빠진 소재 {len(_lack)}개 (영상 제작 전 채워야 함)"):
+                st.code("\n".join(_lack))
         done_idx = [i for i, f in enumerate(db_) if f.get("status") == "video_done"]
         with st.expander("🔁 여러 소재 이미지 일괄 새로 받기 (영상 있는 소재 포함)"):
             st.caption("선택한 소재의 사진을 전부 다시 받아 덮어씁니다(소재당 보통 10~20초). 영상은 안 바뀌므로 반영하려면 redo에 번호를 넣고 5단계를 하세요. "
