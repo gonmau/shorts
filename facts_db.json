@@ -59054,10 +59054,12 @@
       "tag": true,
       "font": "blackhan",
       "colors1": {
-        "0": "#dfe218"
+        "0": "#dced09"
       },
       "colors2": {
-        "0": "#ac1de6"
+        "0": "#f4eff6",
+        "1": "#f03f3f",
+        "2": "#eee0e0"
       }
     }
   },
