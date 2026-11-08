@@ -61966,7 +61966,34 @@
     "verify_note": "Drinking culture of Korea",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "936년, 외국 물 한 방울이 한국 술을 만들게 했습니다. 고려왕조가 936년부터 943년까지 다스리던 시기에 이슬람 세계와 교류하면서 증류된 물이 전해졌고, 그때부터 우리 땅에서 최초의 증류주가 탄생했습니다. 이 술은 단순히 마시는 음료를 넘어, 가족·친구 간의 유대를 굳게 만들고 조상에게 경의를 표하는 의식에서도 중요한 역할을 했습니다.  \n\n그런데 오늘날에도 술은 사람 사이의 관계를 이어주는 핵심 매개체로 남아 있습니다. 회식 자리에서 동료와 이야기를 나누고, 명절엔 제사와 함께 술을 올리며, 작은 모임에서도 한 잔을 나누는 순간이 사람들을 가까이 이어줍니다.  \n\n고려 시대에 시작된 이 전통이 수백 년을 거쳐 현재까지 이어지는 이유는, 술이 단순히 알코올이 아니라 사람과 사람을 연결하는 문화적 다리 역할을 해왔기 때문입니다. 그때의 한 방울 물이 만든 이야기가 오늘도 우리 일상 속에 살아 숨 쉬고 있음을 기억해 주세요.",
+    "title_line1": "고려 시대, 이란 물",
+    "title_line2": "한 방울이 술을?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*물* 한 방울, 술"
+      },
+      {
+        "s": 2,
+        "text": "*증류주* 최초 탄생"
+      },
+      {
+        "s": 4,
+        "text": "술, *관계* 연결"
+      }
+    ],
+    "image_queries": [
+      "water droplet with Korean liquor",
+      "ancient Korean distilled spirit",
+      "family sharing traditional Korean alcohol",
+      "Korean alcohol connecting people",
+      "colleagues drinking soju at meeting",
+      "historic Korean drinking ceremony",
+      "single water drop creating Korean liquor"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "노바스코샤가 한때 두 나라까지 포함한 광대한 영토",
