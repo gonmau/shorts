@@ -61818,16 +61818,19 @@
     "status_v6": "video_done",
     "thumb_opts": {
       "scale1": 1.0,
-      "scale2": 1.0,
+      "scale2": 1.05,
       "angle": -7.5,
       "dy": 130,
       "tag": true,
       "font": "",
       "colors1": {
-        "0": "#f01515"
+        "0": "#15f038"
       },
-      "colors2": {}
-    }
+      "colors2": {
+        "2": "#dd2121"
+      }
+    },
+    "thumb_scene": 1
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
