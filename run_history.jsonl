@@ -1241,3 +1241,4 @@
 {"id": "1794108500526-af05f0", "time": "2026-11-08 12:28:20", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 551", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1794108500846-e3de67", "time": "2026-11-08 12:28:20", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.3, "detail": ""}
 {"id": "1794108510159-774019", "time": "2026-11-08 12:28:30", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 551", "status": "success", "secs": 9.3, "detail": ""}
+{"id": "1794109108300-8a83a0", "time": "2026-11-08 12:38:28", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 4개 (build_video.py, local_ui.py, overlays.py, subtitles.py)", "status": "success", "secs": null, "detail": ""}
