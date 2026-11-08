@@ -1640,7 +1640,12 @@ with T3b:
                     help="영상 파일 자체는 유튜브에서 못 바꾸고 설명란만 바뀝니다. 영상에 새 사진을 넣으려면 새로 렌더링해 다시 올려야 합니다. 토큰에 영상 수정 권한이 없으면 실패하고 붙여넣을 설명을 보여줍니다.")
         qs = list(item.get("image_queries") or [])
         credits = {c.get("scene"): c for c in (item.get("image_credits") or [])}
-        from scenes import item_scene_count as _isc, used_scene_count as _usc
+        from scenes import item_scene_count as _isc
+        try:
+            from scenes import used_scene_count as _usc
+        except ImportError:      # scenes.py 가 아직 예전 버전(코드 업데이트를 한 번 더 하면 해결)
+            _usc = _isc
+            st.warning("scenes.py 가 예전 버전입니다. 관리·동기화 탭에서 코드 업데이트를 한 번 더 하세요.")
         _n_sc = _isc(item)
         _grp = _usc(item)          # 영상에 실제 쓰이는 장면 수 (대본 문장이 적으면 뒤쪽 이미지는 안 씀)
         _have = [n_ for n_ in range(1, _grp + 1) if (folder / f"scene_{n_:02d}.png").exists()]
