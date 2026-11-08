@@ -58760,9 +58760,9 @@
   },
   {
     "topic": "800 위켓을 잡은 유일한 투수",
-    "hook": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법!",
-    "body": "스리랑카의 무티아(Muttiah Muralitharan) 선수는 테스트 경기에서 800위켓, ODI에서 530위켓 이상을 기록해 국제 크리켓 최다 위켓 보유자다.",
-    "twist": "그의 독특한 투구 동작 때문에 경기 내내 논란이 끊이질 않았다.",
+    "hook": "크리켓에서 타자를 800번이나 아웃시킨 투수가 있습니다. 그런데 그의 투구 동작은 오랫동안 반칙이라는 의심을 받았습니다.",
+    "body": "스리랑카의 무티아 무라리타란은 테스트 경기에서 800위켓이라는 역대 최다 기록을 세웠습니다.",
+    "twist": "그의 독특한 투구 동작은 공을 던지는 것이 아니냐는 논란을 일으켰고, 결국 국제 크리켓의 투구 규정에도 영향을 주었습니다.",
     "caveat": "위 기록은 2026년까지의 국제 경기 기록에 한정된다.",
     "country": "스리랑카",
     "theme": "법/제도",
@@ -58772,42 +58772,226 @@
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
     "status": "scripted",
-    "narration": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법입니다. 스리랑카 출신의 무티아 무라리타란은 테스트 경기에서 800위켓, ODI에서는 530위켓 이상을 기록하며 국제 크리켓 최다 위켓 보유자로 알려져 있습니다. 그의 오른손 손목을 중심으로 한 독특한 회전 구동은 일반 투구와는 확연히 달라서, 공이 회전하면서 급격히 떨어지는 효과를 만들어 냈습니다. 그런데 그의 투구 동작은 오랫동안 논란의 대상이었습니다. 회전 각도가 비정상적이라는 이유로 심판과 전문가들 사이에서 규정 위반 여부가 계속 제기됐고, 결국 ICC는 특별 규정을 마련해 그의 스타일을 인정하게 되었습니다. 이렇게 논란을 딛고 남긴 기록은 2026년까지의 국제 경기 데이터에 한정된 수치이지만, 손목 하나로 이룬 위업은 여전히 많은 사람들에게 깊은 인상을 남깁니다. 결국 800위켓은 단순한 숫자가 아니라, 한 손목이 만든 크리켓 역사의 작은 기적이었습니다.",
-    "title_line1": "스리랑카 800위켓",
-    "title_line2": "손목 마법이 만든 기적",
+    "narration": "크리켓에서 타자를 800번이나 아웃시킨 투수가 있습니다. 그런데 그의 투구 동작은 오랫동안 반칙이라는 의심을 받았습니다. 스리랑카의 무티아 무라리타란은 테스트 경기에서 800위켓을 기록한 역대 최다 기록 보유자입니다. 위켓은 야구의 아웃과 비슷한 개념으로, 타자를 아웃시킨 기록입니다. 다만 삼진뿐 아니라 다양한 아웃 방식이 포함됩니다. 역대 2위인 호주의 셰인 워른도 708개에 그쳤습니다. 무려 92개나 차이 나는 기록이죠. 야구와 비교하면 어떨까요? 메이저리그 통산 최다 삼진은 놀런 라이언의 5,714개입니다. 그런데 무라리타란은 독특한 투구 동작 때문에 공을 던지는 것이 아니냐는 의혹을 여러 차례 받았습니다. 과학적 검사까지 진행됐고, 국제 크리켓 기구 ICC는 팔꿈치가 펴지는 각도에 대한 15도 허용 기준을 정립했습니다. 그리고 2010년 인도와의 마지막 테스트 경기에서 마지막 투구로 자신의 800번째 위켓을 잡았습니다. 끊임없는 논란 속에서도 역사적인 기록을 완성한 선수, 바로 무라리타란이었습니다.",
+    "title_line1": "800위켓의 전설, 의심받은 투수",
+    "title_line2": "야구의 삼진과 비교되는 크리켓의 전설",
     "highlights": [
       {
         "s": 1,
-        "text": "*800*번 위켓?"
+        "text": "*800번* 타자 아웃"
       },
       {
         "s": 2,
-        "text": "손목 *마법*"
+        "text": "야구의 *삼진*과 비교"
+      },
+      {
+        "s": 3,
+        "text": "역대 2위보다 *92개*"
       },
       {
         "s": 4,
-        "text": "손목 회전 *비밀*"
+        "text": "놀런 라이언 *5,714삼진*"
+      },
+      {
+        "s": 5,
+        "text": "독특한 *투구 동작*"
       },
       {
         "s": 6,
-        "text": "규정 *특별* 인정"
+        "text": "팔꿈치 *15도* 기준"
       },
       {
-        "s": 8,
-        "text": "한 손목 *기적*"
+        "s": 7,
+        "text": "마지막 공으로 *800위켓*"
       }
     ],
     "image_queries": [
-      "cricket scoreboard showing 800 wickets",
-      "close-up wrist spin action",
-      "Sri Lanka cricket stadium",
-      "bowler wrist rotation",
-      "controversial cricket bowling",
-      "cricket umpire reviewing bowling",
-      "cricket statistics chart 2026",
-      "cricket ball landing in wicket"
+      "Muttiah Muralitharan bowling action Sri Lanka",
+      "cricket wicket stumps and bails close up",
+      "Shane Warne Muttiah Muralitharan cricket legends",
+      "Nolan Ryan pitching baseball strikeout",
+      "Muralitharan unusual bowling action side view",
+      "cricket bowling elbow 15 degree rule illustration",
+      "Muralitharan 800th Test wicket India 2010",
+      "Muralitharan celebrating 800 Test wickets"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "‘800번이나 공을 쓰러뜨렸다’? 그 비밀은 손목의 마법입니다. 스리랑카 출신의 무티아 무라리타란은 테스트 경기에서 800위켓, ODI에서는 530위켓 이상을 기록하며 국제 크리켓 최다 위켓 보유자로 알려져 있습니다. 그의 오른손 손목을 중심으로 한 독특한 회전 구동은 일반 투구와는 확연히 달라서, 공이 회전하면서 급격히 떨어지는 효과를 만들어 냈습니다. 그런데 그의 투구 동작은 오랫동안 논란의 대상이었습니다. 회전 각도가 비정상적이라는 이유로 심판과 전문가들 사이에서 규정 위반 여부가 계속 제기됐고, 결국 ICC는 특별 규정을 마련해 그의 스타일을 인정하게 되었습니다. 이렇게 논란을 딛고 남긴 기록은 2026년까지의 국제 경기 데이터에 한정된 수치이지만, 손목 하나로 이룬 위업은 여전히 많은 사람들에게 깊은 인상을 남깁니다. 결국 800위켓은 단순한 숫자가 아니라, 한 손목이 만든 크리켓 역사의 작은 기적이었습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Muttiah Muralitharan bowling action Sri Lanka",
+      "cricket wicket stumps and bails close up",
+      "Shane Warne Muttiah Muralitharan cricket legends",
+      "Nolan Ryan pitching baseball strikeout",
+      "Muralitharan unusual bowling action side view",
+      "cricket bowling elbow 15 degree rule illustration",
+      "Muralitharan 800th Test wicket India 2010",
+      "Muralitharan celebrating 800 Test wickets"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Dave Morton",
+        "license": "Public domain",
+        "title": "Alastair Cook and Muttiah Muralitharan, December 2007.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Alastair_Cook_and_Muttiah_Muralitharan,_December_2007.jpg",
+        "id": "c:194056405"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "shents",
+        "page": "https://pixabay.com/photos/cricket-stumps-ball-sport-match-724616/",
+        "id": 724616
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Andy Todd",
+        "license": "CC BY-SA 2.0",
+        "title": "Muttiah Muralitharan in SCG 2005.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Muttiah_Muralitharan_in_SCG_2005.jpg",
+        "id": "c:10944006"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "KeithJJ",
+        "page": "https://pixabay.com/photos/baseball-player-pitcher-ball-1505036/",
+        "id": 1505036
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Rae Allen from Brisbane, Australia",
+        "license": "CC BY 2.0",
+        "title": "Muttiah Muralitharan.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Muttiah_Muralitharan.jpg",
+        "id": "c:1471581"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "kathsug",
+        "page": "https://pixabay.com/photos/cricket-bowling-sport-people-team-5513477/",
+        "id": 5513477
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Dave Morton",
+        "license": "Public domain",
+        "title": "Alastair Cook and Muttiah Muralitharan, December 2007.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Alastair_Cook_and_Muttiah_Muralitharan,_December_2007.jpg",
+        "id": "c:194056405"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "NAPARAZZI",
+        "license": "CC BY-SA 2.0",
+        "title": "MUTTIAH MURALITHARAN (5155788120).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:MUTTIAH_MURALITHARAN_(5155788120).jpg",
+        "id": "c:114827979"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3664,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e13649101797",
+        "at": "2026-11-08 12:25",
+        "scene": 1,
+        "rejected_ids": [
+          5375835,
+          "c:194056405"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2834,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9f5b526c22de",
+        "at": "2026-11-08 12:25",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2633,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3f5e1ebb18d7",
+        "at": "2026-11-08 12:25",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2562,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "531fb9fa1f09",
+        "at": "2026-11-08 12:25",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3464,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "02c1f7b4c557",
+        "at": "2026-11-08 12:25",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2627,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7a60bbcc9e53",
+        "at": "2026-11-08 12:25",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3912,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "173656687e69",
+        "at": "2026-11-08 12:25",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3081,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3acbe2d055da",
+        "at": "2026-11-08 12:25",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "서키야 전통 규칙, 아침 인사 의무화",
