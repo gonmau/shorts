@@ -61808,7 +61808,11 @@
         "scene": 8,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0583_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
