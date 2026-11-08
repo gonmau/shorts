@@ -61571,9 +61571,9 @@
   },
   {
     "topic": "남중국해 해상 무역 규모",
-    "hook": "남중국해를 통과하는 무역, 연간 3조 3천6백억 달러!",
-    "body": "브루나이(Brunei), 인도네시아(Indonesia), 말레이시아(Malaysia), 필리핀(Philippines), 중국(People's Republic of China), 대만(Republic of China), 베트남(Vietnam) 등 7개 국가가 남중국해의 섬·암초·해역을 두고 갈등 중이다. 스프라틀리 제도·파라셀 제도·스카버러 쇼얼·톤킨만 경계 등이 분쟁 대상이다.",
-    "twist": "인도네시아도 나투나 섬 주변 해역을 남중국해의 일부로 보고 분쟁 구역에 포함한다.",
+    "hook": "남중국해 주변 주요 해협 8곳을 통과한 무역, 2024년 약 6조 4천억 달러!",
+    "body": "남중국해는 인도양과 태평양을 연결하며 중국, 일본, 한국을 비롯한 동아시아 경제권의 핵심 해상 물류 통로다. 말라카 해협과 대만 해협을 포함한 8개 주요 해협은 세계 무역의 중요한 길목이다.",
+    "twist": "한국 역시 이 바닷길에 크게 의존한다. 2024년 한국 무역의 22%가 대만 해협, 13%가 말라카 해협을 통과했다.",
     "caveat": "연간 무역액 $3.36 trillion은 위키피디아 발췌문에 근거했으며, 구체 연도는 명시되지 않았다.",
     "country": "싱가포르",
     "theme": "영토/국경",
@@ -61583,34 +61583,232 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
     "status": "scripted",
-    "narration": "남중국해를 통과하는 무역, 연간 3조 3천 6백억 달러! 이 거대한 수치는 세계 해상 물류의 핵심이 되는 남중국해가 얼마나 중요한지를 단번에 보여줍니다. 이 해역에는 브루나이, 인도네시아, 말레이시아, 필리핀, 중국, 대만, 베트남 등 일곱 나라가 섬·암초·해역을 두고 영유권을 다투고 있습니다. 스프라틀리 제도, 파라셀 제도, 스카버러 쇼얼, 톤킨만 경계선 등이 주요 분쟁 지역으로 꼽히죠.  \n\n그런데 인도네시아도 나투나 섬 주변 해역을 남중국해의 일부로 간주해 분쟁 구역에 포함시키고 있다는 점이 흥미롭습니다. 이렇게 다양한 국가가 겹쳐 주장하면서도, 연간 3.36 trillion 달러에 달하는 무역 규모는 변함없이 흐르고 있습니다.  \n\n수많은 선박이 이 물길을 지나가면서 각국의 이해관계가 얽히지만, 결국 물류 흐름 자체는 멈추지 않습니다. 남중국해가 세계 무역의 동맥이라는 사실은, 그 어느 때보다도 명확해 보이네요.",
-    "title_line1": "남중국해 무역 규모",
-    "title_line2": "연간3조3천6백억?",
+    "narration": "남중국해 주변 주요 해협 8곳을 통과한 무역, 2024년 약 6조 4천억 달러! 이곳은 인도양과 태평양을 연결하며 세계 해상 물류의 핵심 통로 역할을 합니다. 특히 말라카 해협과 대만 해협은 각각 2조 4천억 달러가 넘는 상품이 오가는 세계적인 물류 요충지입니다. 중동의 에너지와 유럽의 상품도 이 바닷길을 거쳐 동아시아로 이동합니다. 우리나라도 예외가 아닙니다. 2024년 한국 무역의 약 22%가 대만 해협을 통과했습니다. 말라카 해협을 통과한 무역도 한국 전체 무역의 약 13%에 달했습니다. 특히 이 해협들은 석유와 천연가스 같은 에너지 수입에도 중요한 역할을 합니다. 결국 남중국해의 바닷길은 단순한 항로가 아니라 세계 경제와 우리 일상을 연결하는 생명선인 셈입니다.",
+    "title_line1": "남중국해",
+    "title_line2": "세계 무역의 생명선",
     "highlights": [
       {
         "s": 1,
-        "text": "*3조* 무역"
+        "text": "6조 4천억 달러"
+      },
+      {
+        "s": 2,
+        "text": "인도양과 태평양 연결"
       },
       {
         "s": 3,
-        "text": "*7개* 국가"
+        "text": "8개 주요 해협"
       },
       {
         "s": 6,
-        "text": "*3.36*조"
+        "text": "한국 무역의 22%"
+      },
+      {
+        "s": 7,
+        "text": "말라카 해협 13%"
+      },
+      {
+        "s": 9,
+        "text": "말라카 해협 13%"
       }
     ],
     "image_queries": [
-      "South China Sea cargo ships",
-      "South China Sea shipping lanes",
-      "Seven nations South China Sea",
-      "Spratly Islands dispute area",
-      "Natuna Islands maritime zone",
-      "South China Sea trade flow",
-      "Ships navigating South China Sea",
-      "South China Sea trade artery"
+      "South China Sea massive container ships aerial view",
+      "South China Sea global maritime trade routes map",
+      "Malacca Strait cargo ship traffic aerial view",
+      "Taiwan Strait commercial shipping vessels",
+      "South Korea international maritime trade port Busan",
+      "South Korea oil tanker LNG carrier maritime imports",
+      "Global container shipping ocean trade aerial",
+      "Busy international shipping port container vessels"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "highlight_style": {
+      "effect": "타자기",
+      "scale": 0.9,
+      "font": "",
+      "x": 50,
+      "y": null,
+      "color_hl": "#FFE200",
+      "color_base": "#FFFFFF",
+      "stroke": "#000000"
+    },
+    "narration_original": "남중국해를 통과하는 무역, 연간 3조 3천 6백억 달러! 이 거대한 수치는 세계 해상 물류의 핵심이 되는 남중국해가 얼마나 중요한지를 단번에 보여줍니다. 이 해역에는 브루나이, 인도네시아, 말레이시아, 필리핀, 중국, 대만, 베트남 등 일곱 나라가 섬·암초·해역을 두고 영유권을 다투고 있습니다. 스프라틀리 제도, 파라셀 제도, 스카버러 쇼얼, 톤킨만 경계선 등이 주요 분쟁 지역으로 꼽히죠.  \n\n그런데 인도네시아도 나투나 섬 주변 해역을 남중국해의 일부로 간주해 분쟁 구역에 포함시키고 있다는 점이 흥미롭습니다. 이렇게 다양한 국가가 겹쳐 주장하면서도, 연간 3.36 trillion 달러에 달하는 무역 규모는 변함없이 흐르고 있습니다.  \n\n수많은 선박이 이 물길을 지나가면서 각국의 이해관계가 얽히지만, 결국 물류 흐름 자체는 멈추지 않습니다. 남중국해가 세계 무역의 동맥이라는 사실은, 그 어느 때보다도 명확해 보이네요.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "South China Sea massive container ships aerial view",
+      "South China Sea global maritime trade routes map",
+      "Malacca Strait cargo ship traffic aerial view",
+      "Taiwan Strait commercial shipping vessels",
+      "South Korea international maritime trade port Busan",
+      "South Korea oil tanker LNG carrier maritime imports",
+      "Global container shipping ocean trade aerial",
+      "Busy international shipping port container vessels"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "dendoktoor",
+        "page": "https://pixabay.com/photos/container-ship-container-transport-6631117/",
+        "id": 6631117
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Golbez",
+        "license": "CC BY-SA 4.0",
+        "title": "Soviet Union disputes 1948-04-07 to 1952-04-28.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Soviet_Union_disputes_1948-04-07_to_1952-04-28.png",
+        "id": "c:50112731"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Bergadder",
+        "page": "https://pixabay.com/photos/ship-sea-water-sight-transport-10038606/",
+        "id": 10038606
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Bergadder",
+        "page": "https://pixabay.com/photos/ship-sea-water-sight-transport-10038606/",
+        "id": 10038606,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ah64dka52",
+        "page": "https://pixabay.com/photos/night-view-night-bridge-busan-7943221/",
+        "id": 7943221
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Gaz_Chapp",
+        "page": "https://pixabay.com/photos/gas-tanker-ship-sea-gas-carrier-6367981/",
+        "id": 6367981
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Shihab93",
+        "page": "https://pixabay.com/photos/ship-vessel-sea-waves-transport-8263464/",
+        "id": 8263464
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "LoboStudioHamburg",
+        "page": "https://pixabay.com/photos/port-container-ship-night-7418239/",
+        "id": 7418239
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2341,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "057af6c51a0a",
+        "at": "2026-11-08 17:08",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.208,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b6224e7d57cc",
+        "at": "2026-11-08 17:09",
+        "scene": 2,
+        "rejected_ids": [
+          600497,
+          695164,
+          9755525,
+          "c:202535323",
+          "c:50112731",
+          "c:67207070"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2592,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "941b3ebf9e5d",
+        "at": "2026-11-08 17:08",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.282,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5bb033f39eda",
+        "at": "2026-11-08 17:09",
+        "scene": 4,
+        "rejected_ids": [
+          10038606,
+          "c:202535323"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2445,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b992931b7fe8",
+        "at": "2026-11-08 17:08",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3039,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5feaffc4cd47",
+        "at": "2026-11-08 17:08",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3413,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "321a1d53b3b6",
+        "at": "2026-11-08 17:08",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3302,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0c2b504bf3ae",
+        "at": "2026-11-08 17:08",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "고려왕조(Koryo Dynasty) 때 시작된 한국 술 문화",
