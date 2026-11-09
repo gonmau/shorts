@@ -62664,7 +62664,11 @@
         "scene": 9,
         "rejected_ids": []
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0593_이슬람제국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0593_이슬람제국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "호주는 세계에서 가장 평평하고 건조한 대륙",
