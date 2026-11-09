@@ -62420,7 +62420,7 @@
     "verify_note": "Rashidun conquests under Umar",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "불과 10년 사이, 당시 세계를 대표하던 두 제국의 영토가 급격히 무너졌다면 어떨까요? 그 중심에는 634년부터 644년까지 통치한 우마르 이븐 알카타브가 있었습니다. 그는 이슬람 공동체의 두 번째 지도자인 칼리프로, 이슬람 군대의 대규모 정복을 이끌었습니다. 시리아와 이집트, 이라크와 페르시아 서부까지 진출하며 비잔틴과 사산 두 제국에 큰 타격을 입혔습니다. 그런데 이 정복의 진짜 역사적 영향은 영토 확장에서 끝나지 않았습니다. 이후 수세기에 걸쳐 아랍어와 이슬람교가 확산되면서 오늘날 이라크와 시리아, 이집트 등 아랍권의 문화적 기반이 형성됐습니다. 흥미롭게도 이란은 이슬람을 받아들였지만 페르시아어와 고유 문화를 유지했고, 훗날 시아파 중심 국가로 발전했습니다. 물론 오늘날 중동의 국경은 훨씬 뒤인 오스만 제국의 지배와 유럽 열강의 개입 등을 거쳐 형성됐습니다. 결국 1,400년 전 시작된 정복은 오늘날 중동의 언어와 종교, 문화적 정체성을 이해하는 중요한 역사적 출발점이 된 것입니다.",
     "title_line1": "중동의 지도를 바꾼 10년",
     "title_line2": "현대 중동의 출발점",
@@ -62668,7 +62668,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0593_이슬람제국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0593_이슬람제국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0593_이슬람제국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0593_이슬람제국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "호주는 세계에서 가장 평평하고 건조한 대륙",
