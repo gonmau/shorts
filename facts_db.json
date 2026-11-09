@@ -62409,9 +62409,9 @@
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
-    "hook": "한 왕이 4,050개 도시를 한 번에 정복했다면?",
-    "body": "우마 이븐 알카타브(Umar ibn al‑Khatṭāb) (634–644) 통치 시기에 뛰어난 장군들의 도움으로 오늘날 이라크·이란·시리아·이집트 등 광대한 지역을 정복했어요.",
-    "twist": "그 기간 동안 비잔틴 제국은 영토의 3/4 이상을, 사산 제국은 거의 전부를 잃었어요.",
+    "hook": "불과 10년 사이, 당시 세계를 대표하던 두 제국의 영토가 급격히 무너졌다면?",
+    "body": "그 중심에는 634년부터 644년까지 통치한 우마르 이븐 알카타브가 있었습니다. 그는 이슬람 공동체의 두 번째 지도자인 칼리프였죠.",
+    "twist": "그의 통치 기간 이슬람 군대는 시리아와 이집트, 이라크와 페르시아 서부까지 진출했습니다. 비잔틴과 사산 두 제국은 회복하기 어려운 타격을 입었습니다.",
     "caveat": "도시 수와 영토 손실은 역사가 추정한 것이며, 정확한 기록은 남아프리카공화국 외부 자료에 기반합니다.",
     "country": "이슬람제국",
     "theme": "군사/전쟁사",
@@ -62421,39 +62421,250 @@
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
     "status": "scripted",
-    "narration": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
-    "title_line1": "라시둔 제국 급속 확장",
-    "title_line2": "4,050도시 한 번에?",
+    "narration": "불과 10년 사이, 당시 세계를 대표하던 두 제국의 영토가 급격히 무너졌다면 어떨까요? 그 중심에는 634년부터 644년까지 통치한 우마르 이븐 알카타브가 있었습니다. 그는 이슬람 공동체의 두 번째 지도자인 칼리프로, 이슬람 군대의 대규모 정복을 이끌었습니다. 시리아와 이집트, 이라크와 페르시아 서부까지 진출하며 비잔틴과 사산 두 제국에 큰 타격을 입혔습니다. 그런데 이 정복의 진짜 역사적 영향은 영토 확장에서 끝나지 않았습니다. 이후 수세기에 걸쳐 아랍어와 이슬람교가 확산되면서 오늘날 이라크와 시리아, 이집트 등 아랍권의 문화적 기반이 형성됐습니다. 흥미롭게도 이란은 이슬람을 받아들였지만 페르시아어와 고유 문화를 유지했고, 훗날 시아파 중심 국가로 발전했습니다. 물론 오늘날 중동의 국경은 훨씬 뒤인 오스만 제국의 지배와 유럽 열강의 개입 등을 거쳐 형성됐습니다. 결국 1,400년 전 시작된 정복은 오늘날 중동의 언어와 종교, 문화적 정체성을 이해하는 중요한 역사적 출발점이 된 것입니다.",
+    "title_line1": "중동의 지도를 바꾼 10년",
+    "title_line2": "현대 중동의 출발점",
     "highlights": [
       {
         "s": 1,
-        "text": "한 왕이 *4,050*도시"
+        "text": "불과 *10년* 사이"
       },
       {
         "s": 3,
-        "text": "라시둔 제국 *광대* 정복"
+        "text": "두 제국의 *영토* 변화"
       },
       {
         "s": 5,
-        "text": "비잔틴 영토 *3·4* 상실"
+        "text": "아랍어와 *이슬람* 확산"
       },
       {
         "s": 8,
-        "text": "10년 만에 *거대한* 변동"
+        "text": "현대 중동의 *역사적 뿌리*"
       }
     ],
     "image_queries": [
-      "ancient city skyline",
-      "Rashidun empire map",
-      "Rashidun conquest territory",
-      "expansive desert landscape",
-      "Byzantine empire map",
-      "ancient empire borders",
-      "old manuscript page",
-      "historical timeline illustration",
-      "compass rose over map"
+      "ancient Byzantine city skyline",
+      "Rashidun Caliphate expansion map 634 644",
+      "early Islamic conquest historical illustration",
+      "ancient Damascus Umayyad mosque",
+      "historic Arabic manuscript calligraphy",
+      "ancient Baghdad Abbasid city illustration",
+      "Persian Safavid architecture Isfahan",
+      "Ottoman Empire Middle East historical map",
+      "modern Middle East political map"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "ancient Byzantine city skyline",
+      "Rashidun Caliphate expansion map 634 644",
+      "early Islamic conquest historical illustration",
+      "ancient Damascus Umayyad mosque",
+      "historic Arabic manuscript calligraphy",
+      "ancient Baghdad Abbasid city illustration",
+      "Persian Safavid architecture Isfahan",
+      "Ottoman Empire Middle East historical map",
+      "modern Middle East political map"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Lance Anthony",
+        "license": "CC BY-SA 4.0",
+        "title": "L-Imdina The Most Beautiful City.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:L-Imdina_The_Most_Beautiful_City.jpg",
+        "id": "c:109863768"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "carloslorite",
+        "page": "https://pixabay.com/photos/map-written-book-old-traveling-5631698/",
+        "id": 5631698
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "A Contemporary Nomad",
+        "license": "CC BY-SA 4.0",
+        "title": "Distribution of the Arabic language before the Rashidun islamic conquests.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Distribution_of_the_Arabic_language_before_the_Rashidun_islamic_conquests.png",
+        "id": "c:103240854"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "title": "Syria, Damascus, Ancient souq near the Umayyad Mosque inside the old city of Damascus.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Syria,_Damascus,_Ancient_souq_near_the_Umayyad_Mosque_inside_the_old_city_of_Damascus.jpg",
+        "id": "c:83423574"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "sonofara",
+        "page": "https://pixabay.com/photos/ayat-al-kursi-islam-muslims-1207509/",
+        "id": 1207509
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Ahmed.Mhdv",
+        "license": "CC BY-SA 4.0",
+        "title": "Islamic Campaign to Sindh (English).png",
+        "page": "https://commons.wikimedia.org/wiki/File:Islamic_Campaign_to_Sindh_(English).png",
+        "id": "c:194723787"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "mostafa_meraji",
+        "page": "https://pixabay.com/photos/ali-qapu-palace-palace-night-6732253/",
+        "id": 6732253
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Ottoman Empire",
+        "license": "Public domain",
+        "title": "Cedid Atlas (Middle East) 1803.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cedid_Atlas_(Middle_East)_1803.jpg",
+        "id": "c:40089206"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "ErikaWittlieb",
+        "page": "https://pixabay.com/photos/syria-middle-east-map-globe-iraq-1034467/",
+        "id": 1034467
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2412,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f720685dcf93",
+        "at": "2026-11-09 17:18",
+        "scene": 1,
+        "rejected_ids": [
+          5501210,
+          "c:109863768"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2353,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c7ce568134ab",
+        "at": "2026-11-09 17:18",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2545,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d650866a343e",
+        "at": "2026-11-09 17:18",
+        "scene": 3,
+        "rejected_ids": [
+          9939687,
+          "c:103240854"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3128,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "56be2ad8d2c2",
+        "at": "2026-11-09 17:18",
+        "scene": 4,
+        "rejected_ids": [
+          4793144,
+          "c:83423574"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3099,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1dd3f2ec31fc",
+        "at": "2026-11-09 17:18",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2266,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9d82ba109971",
+        "at": "2026-11-09 17:18",
+        "scene": 6,
+        "rejected_ids": [
+          1158208,
+          677105,
+          7402123,
+          "c:103240854",
+          "c:194723787",
+          "c:89111638"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3082,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "753d91faab85",
+        "at": "2026-11-09 17:18",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3189,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e9184a7b7b29",
+        "at": "2026-11-09 17:18",
+        "scene": 8,
+        "rejected_ids": [
+          4971956,
+          "c:40089206"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3384,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "917dd6a5c0af",
+        "at": "2026-11-09 17:18",
+        "scene": 9,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "호주는 세계에서 가장 평평하고 건조한 대륙",
