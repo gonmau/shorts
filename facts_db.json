@@ -62805,7 +62805,35 @@
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "narration": "상륙 직후, 미군이 18km 길이의 비밀 터널에 바로 들어갔다면 어떤 일이 벌어졌을까요? 1945년, 미국 해병대·해군·육군이 이오지마 섬에 상륙해 남부 비행장과 중부 비행장을 장악하려 했습니다. 하지만 섬 안에는 18km에 달하는 복잡한 터널망과 은폐된 포대가 얽혀 있었죠.  \n\n그때 미군은 바로 그 터널 안으로 진입했습니다.  \n\n그런데 터널 안에서는 일본군이 미리 설치한 함정과 마주치게 되면서 전투는 예상보다 오래 끌었습니다. 미군 기록에 따르면, 터널 속에서의 교전은 지형의 복잡성 때문에 보병과 포병이 동시에 작전을 펼쳐야 했고, 전투 속도는 크게 저하되었습니다.  \n\n결국 목표였던 비행장 확보는 터널 전투가 끝난 뒤에야 가능했으며, 이 비밀 네트워크는 전투의 흐름을 크게 바꾸는 요인으로 작용했습니다. 전쟁의 한 순간, 18km 길이의 어두운 뱀굴 속에서 벌어진 이 이야기가 남긴 여운은, 전장이 언제든지 예상치 못한 지형에 의해 뒤바뀔 수 있다는 점입니다.",
+    "title_line1": "이오지마 상륙·비밀터널",
+    "title_line2": "비행장 확보는 늦어졌다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "비밀 *터널* 진입?"
+      },
+      {
+        "s": 5,
+        "text": "*함정* 마주한 전투"
+      },
+      {
+        "s": 8,
+        "text": "*지형*이 바꾼다"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "군사 엔지니어의 전기·기계 기술 활용",
