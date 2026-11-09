@@ -62798,7 +62798,7 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
@@ -63028,8 +63028,8 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_일본_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_일본_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done"
   },
@@ -63350,5 +63350,246 @@
       "compass rose over map"
     ],
     "scene_count": 10
+  },
+  {
+    "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
+    "hook": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면?",
+    "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
+    "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
+    "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
+    "country": "싱가포르",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Battle of Iwo Jima",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+    "verify_note": "Battle of Iwo Jima",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:01:27.510096+00:00",
+    "status": "scripted",
+    "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
+    "title_line1": "18km 지하 요새의 비밀",
+    "title_line2": "이오지마에서 미군이 고전한 이유",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "18km *지하 방어망*"
+      },
+      {
+        "s": 3,
+        "text": "일본군의 *은폐 작전*"
+      },
+      {
+        "s": 5,
+        "text": "해변에 쏟아진 *집중 사격*"
+      },
+      {
+        "s": 8,
+        "text": "예상보다 길어진 *전투*"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
+        "id": 5438620
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JCDCreative",
+        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
+        "id": 2252203
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Edmond Morin",
+        "license": "Public domain",
+        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
+        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
+        "id": "c:164313974"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
+        "license": "Public domain",
+        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
+        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
+        "id": "c:154351779"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Pink Flojd",
+        "license": "CC BY-SA 4.0",
+        "title": "Battle of Mišar terrain model.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
+        "id": "c:71694541"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "narration_original": "상륙 직후, 미군이 18km 길이의 비밀 터널에 바로 들어갔다면 어떤 일이 벌어졌을까요? 1945년, 미국 해병대·해군·육군이 이오지마 섬에 상륙해 남부 비행장과 중부 비행장을 장악하려 했습니다. 하지만 섬 안에는 18km에 달하는 복잡한 터널망과 은폐된 포대가 얽혀 있었죠.  \n\n그때 미군은 바로 그 터널 안으로 진입했습니다.  \n\n그런데 터널 안에서는 일본군이 미리 설치한 함정과 마주치게 되면서 전투는 예상보다 오래 끌었습니다. 미군 기록에 따르면, 터널 속에서의 교전은 지형의 복잡성 때문에 보병과 포병이 동시에 작전을 펼쳐야 했고, 전투 속도는 크게 저하되었습니다.  \n\n결국 목표였던 비행장 확보는 터널 전투가 끝난 뒤에야 가능했으며, 이 비밀 네트워크는 전투의 흐름을 크게 바꾸는 요인으로 작용했습니다. 전쟁의 한 순간, 18km 길이의 어두운 뱀굴 속에서 벌어진 이 이야기가 남긴 여운은, 전장이 언제든지 예상치 못한 지형에 의해 뒤바뀔 수 있다는 점입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   }
 ]
