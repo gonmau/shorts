@@ -62413,7 +62413,7 @@
     "body": "우마 이븐 알카타브(Umar ibn al‑Khatṭāb) (634–644) 통치 시기에 뛰어난 장군들의 도움으로 오늘날 이라크·이란·시리아·이집트 등 광대한 지역을 정복했어요.",
     "twist": "그 기간 동안 비잔틴 제국은 영토의 3/4 이상을, 사산 제국은 거의 전부를 잃었어요.",
     "caveat": "도시 수와 영토 손실은 역사가 추정한 것이며, 정확한 기록은 남아프리카공화국 외부 자료에 기반합니다.",
-    "country": "남아프리카공화국",
+    "country": "이슬람제국",
     "theme": "군사/전쟁사",
     "wiki_title": "Rashidun conquests under Umar",
     "source_url": "https://en.wikipedia.org/wiki/Rashidun_conquests_under_Umar",
@@ -62859,5 +62859,53 @@
     "confidence": "source",
     "created_at": "2026-11-09T08:06:29.076568+00:00",
     "status": "unverified"
+  },
+  {
+    "topic": "우마 이븐 알카타브의 대규모 정복",
+    "hook": "한 왕이 4,050개 도시를 한 번에 정복했다면?",
+    "body": "우마 이븐 알카타브(Umar ibn al‑Khatṭāb) (634–644) 통치 시기에 뛰어난 장군들의 도움으로 오늘날 이라크·이란·시리아·이집트 등 광대한 지역을 정복했어요.",
+    "twist": "그 기간 동안 비잔틴 제국은 영토의 3/4 이상을, 사산 제국은 거의 전부를 잃었어요.",
+    "caveat": "도시 수와 영토 손실은 역사가 추정한 것이며, 정확한 기록은 남아프리카공화국 외부 자료에 기반합니다.",
+    "country": "남아프리카공화국",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Rashidun conquests under Umar",
+    "source_url": "https://en.wikipedia.org/wiki/Rashidun_conquests_under_Umar",
+    "verify_note": "Rashidun conquests under Umar",
+    "confidence": "source",
+    "created_at": "2026-11-09T07:57:58.099516+00:00",
+    "status": "scripted",
+    "narration": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
+    "title_line1": "라시둔 제국 급속 확장",
+    "title_line2": "4,050도시 한 번에?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "한 왕이 *4,050*도시"
+      },
+      {
+        "s": 3,
+        "text": "라시둔 제국 *광대* 정복"
+      },
+      {
+        "s": 5,
+        "text": "비잔틴 영토 *3·4* 상실"
+      },
+      {
+        "s": 8,
+        "text": "10년 만에 *거대한* 변동"
+      }
+    ],
+    "image_queries": [
+      "ancient city skyline",
+      "Rashidun empire map",
+      "Rashidun conquest territory",
+      "expansive desert landscape",
+      "Byzantine empire map",
+      "ancient empire borders",
+      "old manuscript page",
+      "historical timeline illustration",
+      "compass rose over map"
+    ],
+    "scene_count": 10
   }
 ]
