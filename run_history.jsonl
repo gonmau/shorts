@@ -1354,3 +1354,7 @@
 {"id": "1794211782546-79e241", "time": "2026-11-09 17:09:42", "channel": "KO", "source": "PC", "kind": "approve", "title": "approve.py --limit 1 --start 593", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1794211789522-7a0aba", "time": "2026-11-09 17:09:49", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 1 --start 593", "status": "success", "secs": 7.0, "detail": ""}
 {"id": "1794211789774-d4cba7", "time": "2026-11-09 17:09:49", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 1 --start 593", "status": "success", "secs": 0.2, "detail": ""}
+{"id": "1794212260484-0315a1", "time": "2026-11-09 17:17:40", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 593", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794212260871-11f2ad", "time": "2026-11-09 17:17:40", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.4, "detail": ""}
+{"id": "1794212262891-364345", "time": "2026-11-09 17:17:42", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 593", "status": "success", "secs": 2.0, "detail": ""}
+{"id": "1794212325933-e20247", "time": "2026-11-09 17:18:45", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 593 --any", "status": "success", "secs": 63.0, "detail": ""}
