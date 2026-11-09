@@ -62443,7 +62443,7 @@
       }
     ],
     "image_queries": [
-      "ancient Byzantine city skyline",
+      "ancient city skyline",
       "Rashidun Caliphate expansion map 634 644",
       "early Islamic conquest historical illustration",
       "ancient Damascus Umayyad mosque",
@@ -62459,7 +62459,7 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "ancient Byzantine city skyline",
+      "ancient city skyline",
       "Rashidun Caliphate expansion map 634 644",
       "early Islamic conquest historical illustration",
       "ancient Damascus Umayyad mosque",
@@ -62472,12 +62472,10 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Lance Anthony",
-        "license": "CC BY-SA 4.0",
-        "title": "L-Imdina The Most Beautiful City.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:L-Imdina_The_Most_Beautiful_City.jpg",
-        "id": "c:109863768"
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/forbidden-city-panorama-view-5534843/",
+        "id": 5534843
       },
       {
         "scene": 2,
@@ -62548,12 +62546,12 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2412,
+        "clip": 0.3089,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f720685dcf93",
-        "at": "2026-11-09 17:18",
+        "sig": "d050464e678b",
+        "at": "2026-11-09 17:45",
         "scene": 1,
         "rejected_ids": [
           5501210,
