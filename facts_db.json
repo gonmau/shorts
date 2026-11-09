@@ -62833,7 +62833,193 @@
       "Iwo Jima airfield after tunnel",
       "terrain changing battle"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
+        "id": 5438620
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JCDCreative",
+        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
+        "id": 2252203
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Edmond Morin",
+        "license": "Public domain",
+        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
+        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
+        "id": "c:164313974"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
+        "license": "Public domain",
+        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
+        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
+        "id": "c:154351779"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Pink Flojd",
+        "license": "CC BY-SA 4.0",
+        "title": "Battle of Mišar terrain model.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
+        "id": "c:71694541"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "군사 엔지니어의 전기·기계 기술 활용",
