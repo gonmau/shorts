@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-09 17:45:11 (KST) · 기록 1364건 · 소재 622개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-09 17:45:37 (KST) · 기록 1365건 · 소재 622개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,7 +18,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 33 | 0 | 5초 |
-| fetch_images | 154 | 3 | 2시간 7분 |
+| fetch_images | 155 | 3 | 2시간 7분 |
 | generate_culture_facts | 14 | 0 | 28분 40초 |
 | generate_script | 160 | 0 | 1시간 10분 |
 | generate_tts | 67 | 0 | 27분 12초 |
@@ -39,6 +39,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:45 | PC | fetch_images | fetch_images.py --index 593 --scene 1 --source commons --type photo | ✅ | 4초 |  |
 | 17:45 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 12초 |  |
 | 17:21 | PC | generate_tts | generate_tts.py --index 593 | ✅ | 18초 |  |
 | 17:20 | PC | promote_ready | promote_ready.py --start 593 | ✅ | 0초 |  |
