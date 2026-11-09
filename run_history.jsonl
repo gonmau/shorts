@@ -1387,3 +1387,4 @@
 {"id": "1794219473641-28ae24", "time": "2026-11-09 19:17:53", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 602", "status": "success", "secs": 0.3, "detail": ""}
 {"id": "1794219474052-24ca66", "time": "2026-11-09 19:17:54", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.4, "detail": ""}
 {"id": "1794219489349-f08355", "time": "2026-11-09 19:18:09", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 602", "status": "success", "secs": 15.3, "detail": ""}
+{"id": "1794219630946-d83247", "time": "2026-11-09 19:20:30", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.3, "detail": ""}
