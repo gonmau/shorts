@@ -62472,10 +62472,12 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "viarami",
-        "page": "https://pixabay.com/photos/forbidden-city-panorama-view-5534843/",
-        "id": 5534843
+        "source": "commons",
+        "user": "Angelo Foglietta",
+        "license": "CC0",
+        "title": "Ancient Skyline (211692571).jpeg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ancient_Skyline_(211692571).jpeg",
+        "id": "c:83561560"
       },
       {
         "scene": 2,
