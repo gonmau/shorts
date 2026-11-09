@@ -56833,7 +56833,39 @@
     "verify_note": "Maldives",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "몰디브 전체가 적도 위에 놓여 있다? 라는 생각, 실제로는 대부분의 섬이 적도 근처에 자리한다는 뜻입니다. 몰디브는 인도양에 흩어진 26개의 환초로 이루어진 섬나라인데, 북쪽의 이하반드히폴루 환초부터 남쪽의 아두 환초까지 남북으로 길게 뻗어 있어 적도를 가로지릅니다. 수도 말레는 전통적으로 ‘왕의 섬’이라 불리며, 이곳을 중심으로 고대 왕조가 중앙에 자리 잡고 통치했던 역사가 남아 있습니다. 그런데 이 왕조가 섬들을 직접 통치한 것이 아니라, 각 환초마다 지방 관리가 왕에게 보고하며 행정을 운영했다는 점이 흥미롭습니다. 이렇게 적도 근처에 퍼진 섬들은 따뜻한 기후와 풍부한 해양 생태계 덕분에 독특한 문화와 생활 양식을 유지하고 있습니다. 결국 몰디브가 적도 위에 있다는 말은, 주요 섬들이 적도와 가깝게 위치해 있다는 사실을 강조하는 것이며, 그 배경엔 오래된 왕조의 중앙집권적 통치가 깔려 있었습니다. 이처럼 작은 섬들 사이에도 깊은 역사가 흐르고 있다는 점, 생각보다 놀랍지 않나요?",
+    "title_line1": "몰디브는 적도 위",
+    "title_line2": "전체가 적도에?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "몰디브는 *적도*"
+      },
+      {
+        "s": 3,
+        "text": "섬이 *가로지른다*"
+      },
+      {
+        "s": 6,
+        "text": "*따뜻한* 섬"
+      },
+      {
+        "s": 8,
+        "text": "역사 *깊게*"
+      }
+    ],
+    "image_queries": [
+      "Maldives map equator",
+      "Maldives islands near equator",
+      "Maldives island chain crossing",
+      "Male capital historic palace",
+      "Maldives atoll administrative building",
+      "Warm tropical island beach",
+      "Maldives central royal history",
+      "Ancient ruins on small island"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
