@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-09 16:56:22 (KST) · 기록 1344건 · 소재 591개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-09 17:06:39 (KST) · 기록 1345건 · 소재 621개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 31 | 0 | 5초 |
 | fetch_images | 153 | 3 | 2시간 6분 |
-| generate_culture_facts | 13 | 0 | 25분 58초 |
+| generate_culture_facts | 14 | 0 | 28분 40초 |
 | generate_script | 157 | 0 | 1시간 10분 |
 | generate_tts | 66 | 0 | 26분 53초 |
 | image_check | 53 | 4 | 9분 38초 |
@@ -34,6 +34,12 @@
 | 코드업데이트 | 76 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-09
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 17:06 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 41초 |  |
 
 ### 2026-11-08
 
