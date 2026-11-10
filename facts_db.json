@@ -62689,9 +62689,9 @@
   },
   {
     "topic": "영국은 단일 문서가 없는 ‘비코딩된 헌법’ 체제",
-    "hook": "법정에서 ‘헌법’이라 외치면 서류함을 뒤지는 이유가?",
-    "body": "영국(United Kingdom)의 헌법은 서면과 구전이 뒤섞인 형태로, 단일 문서로 정리된 적이 없으며, 이는 공식적인 문서화 시도가 없었기 때문입니다.",
-    "twist": "그 덕분에 헌법 조항을 빠르게 바꿀 수 있는 유연함이 있습니다.",
+    "hook": "영국에는 헌법이 없다는 말, 정말 괜찮은 걸까요?",
+    "body": "영국에는 하나의 문서로 정리된 헌법이 없습니다. 대신 여러 법률과 판례, 관습이 헌법 역할을 합니다.",
+    "twist": "이 때문에 의회가 법률을 바꾸는 것만으로도 헌정 체계를 상당 부분 바꿀 수 있습니다. 하지만 국민의 권리 보호라는 측면에서는 다른 고민이 생깁니다.",
     "caveat": "이 체제는 영국 본토와 그 영토에만 적용됩니다.",
     "country": "영국",
     "theme": "정치/체제",
@@ -62701,36 +62701,40 @@
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
     "status": "rejected",
-    "narration": "법정에서 “헌법”이라고 외치면 서류함을 뒤지는 이유가 궁금하시죠? 영국은 단일 문서로 된 헌법이 없습니다. 대신 서면 법령, 판례, 관습, 왕실 선언 등 여러 자료가 뒤섞여 하나의 책으로 정리된 적이 없어요. 이는 역사가 공식적으로 헌법을 한 장에 적어 놓는 시도를 하지 않았기 때문입니다.  \n\n그런데 이런 비코딩된 헌법 덕분에 영국은 조항을 빠르게 바꿀 수 있는 유연함을 갖추게 됩니다. 의회가 새로운 법안을 통과시키면 기존 관습을 수정하거나 새 규칙을 추가하는 식으로 즉시 적용이 가능하죠.  \n\n하지만 이 체제는 영국 본토와 그 영토에만 적용됩니다. 한 장의 헌법이 없다는 점이 오히려 영국 정치의 독특한 움직임을 만들고, 변화에 민첩하게 대응할 수 있게 하는 비밀스러운 힘이 됩니다. 결국 “헌법”이 서류함에 없다는 사실이, 영국이 법을 바꾸는 방식을 설명해 주는 열쇠였던 셈이죠.",
-    "title_line1": "영국은 헌법이 없어",
-    "title_line2": "서류함을 뒤지는 비밀?",
+    "narration": "영국에는 헌법이 없다는 말, 정말 괜찮은 걸까요? 사실 영국에도 헌법은 있습니다. 다만 우리처럼 하나의 문서로 정리되어 있지 않죠. 여러 법률과 판례, 오랜 정치적 관습이 모여 헌법을 구성합니다. 마그나 카르타와 권리장전도 여기에 포함됩니다. 핵심은 의회주권입니다. 의회는 일반 법률을 제정하거나 폐지할 수 있습니다. 그래서 별도의 복잡한 헌법 개정 절차 없이도 국가 운영 체계를 비교적 쉽게 바꿀 수 있죠. 우리나라는 다릅니다. 헌법을 바꾸려면 국회 의결뿐 아니라 국민투표도 거쳐야 합니다. 헌법재판소가 국회의 법률도 헌법에 어긋나는지 심사할 수 있습니다. 국민의 기본권을 지키기 위한 장치죠. 영국은 법원이 의회가 만든 법률을 위헌이라는 이유만으로 무효화할 수 없습니다. 유연한 제도인 만큼 권력 통제 방식도 우리와 다릅니다. 헌법은 국가 운영 규칙이면서 국민의 권리를 지키는 약속이기도 합니다. 그런 관점에서 보면 헌법을 한곳에 명시하지 않은 영국의 방식, 과연 괜찮은 걸까요?",
+    "title_line1": "영국에는 헌법이 없는데 괜찮을까?",
+    "title_line2": "한국과 너무 다른 영국의 헌법",
     "highlights": [
       {
         "s": 2,
         "text": "단일 헌법 *없음*"
       },
       {
-        "s": 5,
-        "text": "비코딩 헌법 *유연*"
+        "s": 4,
+        "text": "의회주권 *핵심*"
       },
       {
-        "s": 9,
-        "text": "헌법 부재가 *열쇠*"
+        "s": 7,
+        "text": "국민의 권리 *보호*"
       }
     ],
     "image_queries": [
-      "courtroom file cabinet",
-      "no single constitution",
-      "British legal documents stack",
-      "historic British law books",
-      "flexible uncodified constitution",
-      "parliament passing bill",
-      "British overseas territories map",
-      "British political maneuvering",
-      "absence of constitution key"
+      "UK Supreme Court courtroom interior",
+      "British constitutional documents on desk",
+      "Magna Carta 1215 original parchment",
+      "UK Parliament House of Commons",
+      "British parliamentary legislation voting",
+      "South Korean Constitution book",
+      "Constitutional Court of Korea courtroom",
+      "UK Parliament Westminster exterior",
+      "British and South Korean constitutional law books"
     ],
     "scene_count": 10,
-    "reject_reason": "영국에는 헌법이 전혀 없다는 표현"
+    "reject_reason": "영국에는 헌법이 전혀 없다는 표현",
+    "narration_original": "법정에서 “헌법”이라고 외치면 서류함을 뒤지는 이유가 궁금하시죠? 영국은 단일 문서로 된 헌법이 없습니다. 대신 서면 법령, 판례, 관습, 왕실 선언 등 여러 자료가 뒤섞여 하나의 책으로 정리된 적이 없어요. 이는 역사가 공식적으로 헌법을 한 장에 적어 놓는 시도를 하지 않았기 때문입니다.  \n\n그런데 이런 비코딩된 헌법 덕분에 영국은 조항을 빠르게 바꿀 수 있는 유연함을 갖추게 됩니다. 의회가 새로운 법안을 통과시키면 기존 관습을 수정하거나 새 규칙을 추가하는 식으로 즉시 적용이 가능하죠.  \n\n하지만 이 체제는 영국 본토와 그 영토에만 적용됩니다. 한 장의 헌법이 없다는 점이 오히려 영국 정치의 독특한 움직임을 만들고, 변화에 민첩하게 대응할 수 있게 하는 비밀스러운 힘이 됩니다. 결국 “헌법”이 서류함에 없다는 사실이, 영국이 법을 바꾸는 방식을 설명해 주는 열쇠였던 셈이죠.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true
   },
   {
     "topic": "아케메네스 제국은 당시 최대 규모의 제국",
