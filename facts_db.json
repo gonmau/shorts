@@ -59566,7 +59566,43 @@
     "verify_note": "Second Italian War of Independence",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:38.449401+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "오스트리아가 ‘전쟁 중단’ 명령을 보냈지만, 사르디니아는 무시하고 바로 전쟁을 시작! 1859년, 제2프랑스제국과 사르디니아 왕국은 오스트리아 제국에 맞설 준비를 서두릅니다. 사르디니아는 3월 9일, 군대를 급히 동원했고, 오스트리아는 한 달 뒤인 4월 9일에야 동원에 나섰습니다. 양측이 전력을 끌어모은 뒤, 4월 23일 오스트리아는 사르디니아에게 전쟁 중단을 요구했지만 사르디니아는 이를 거부합니다.  \n\n그런데, 그 요구가 내려진 불과 3일 뒤, 4월 26일 전쟁이 바로 발발합니다. 전쟁이 시작된 순간, 프랑스와 사르디니아는 오스트리아를 향해 동시에 공격을 감행했고, 이는 이탈리아 통일 과정의 중요한 전환점이 됩니다. 전쟁이 일어난 정확한 시점과 날짜는 1859년에 한정된 사건이며, 그때의 움직임이 오늘날 이탈리아의 국경을 형성하는 데 큰 역할을 했습니다. 결국, 오스트리아의 중단 요구는 무시당했고, 전쟁은 바로 시작돼 역사의 흐름을 바꾸었습니다.",
+    "title_line1": "오스트리아 전쟁 중단",
+    "title_line2": "사르디니아 즉시 전쟁",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*중단* 무시"
+      },
+      {
+        "s": 3,
+        "text": "사르디니아 *급동원*"
+      },
+      {
+        "s": 4,
+        "text": "오스트리아 *요구*"
+      },
+      {
+        "s": 5,
+        "text": "3일 뒤 *전쟁* 발발"
+      },
+      {
+        "s": 6,
+        "text": "프랑스·사르 *공격*"
+      }
+    ],
+    "image_queries": [
+      "Sardinia ignoring ceasefire",
+      "French Empire and Sardinia troops",
+      "Sardinia rapid mobilization",
+      "Austria demand ceasefire",
+      "War outbreak three days",
+      "France Sardinia attack",
+      "1859 Italian battlefield map",
+      "Austrian army marching"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "유네스코 무형문화유산 리스트, 실제 보호는 어떻게?",
