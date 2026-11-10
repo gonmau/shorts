@@ -62700,7 +62700,7 @@
     "verify_note": "Constitution of the United Kingdom",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "영국에는 헌법이 없다는 말, 우리나라 사람에게는 좀 불안하게 들리지 않나요? 사실 영국에도 헌법은 있습니다. 다만 우리처럼 한 권의 문서로 정리되어 있지 않죠. 여러 법률과 판례, 오랜 관습이 모여 헌법을 구성합니다. 마그나 카르타 같은 역사적 문서도 포함되죠. 더 놀라운 건 의회의 권한입니다. 법률을 바꾸는 것만으로 국가 운영의 중요한 원칙도 바꿀 수 있습니다. 우리나라는 다릅니다. 헌법을 바꾸려면 국민투표를 거쳐야 하고, 헌법재판소가 법률의 위헌 여부도 심사합니다. 국민의 권리를 지키기 위한 별도의 안전장치가 있는 셈이죠. 반면 영국 법원은 의회가 만든 법률을 위헌이라는 이유만으로 무효화할 수 없습니다. 유연한 제도에는 그만큼 다른 권력 통제 방식이 따르는 겁니다. 헌법은 국민의 권리를 지키는 약속이기도 합니다. 그런 점에서 영국의 방식, 정말 괜찮다고 생각하시나요?",
     "title_line1": "영국에는 헌법이 없는데 괜찮을까?",
     "title_line2": "한국과 너무 다른 영국의 헌법",
@@ -62715,16 +62715,16 @@
       }
     ],
     "image_queries": [
-      "British Parliament exterior",
-      "British legal documents pile",
-      "Ancient British law manuscripts",
-      "Magna Carta parchment",
+      "British Parliament building exterior",
+      "British law books stacked",
+      "Ancient legal manuscripts UK",
+      "Magna Carta parchment document",
       "British government building interior",
-      "British voting booth",
-      "British lock and key",
-      "British courtroom interior",
+      "British voting ballot box",
+      "British parliamentary chamber interior",
+      "British courthouse interior",
       "British scales of justice",
-      "British flag waving"
+      "British constitutional debate illustration"
     ],
     "scene_count": 10,
     "narration_original": "법정에서 “헌법”이라고 외치면 서류함을 뒤지는 이유가 궁금하시죠? 영국은 단일 문서로 된 헌법이 없습니다. 대신 서면 법령, 판례, 관습, 왕실 선언 등 여러 자료가 뒤섞여 하나의 책으로 정리된 적이 없어요. 이는 역사가 공식적으로 헌법을 한 장에 적어 놓는 시도를 하지 않았기 때문입니다.  \n\n그런데 이런 비코딩된 헌법 덕분에 영국은 조항을 빠르게 바꿀 수 있는 유연함을 갖추게 됩니다. 의회가 새로운 법안을 통과시키면 기존 관습을 수정하거나 새 규칙을 추가하는 식으로 즉시 적용이 가능하죠.  \n\n하지만 이 체제는 영국 본토와 그 영토에만 적용됩니다. 한 장의 헌법이 없다는 점이 오히려 영국 정치의 독특한 움직임을 만들고, 변화에 민첩하게 대응할 수 있게 하는 비밀스러운 힘이 됩니다. 결국 “헌법”이 서류함에 없다는 사실이, 영국이 법을 바꾸는 방식을 설명해 주는 열쇠였던 셈이죠.",
@@ -62975,7 +62975,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0595_영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0595_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0595_영국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0595_영국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "아케메네스 제국은 당시 최대 규모의 제국",
