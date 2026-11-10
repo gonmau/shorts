@@ -1727,7 +1727,7 @@ with T3b:
         else:
             st.success(f"영상에 쓰이는 이미지 {_grp}/{_grp}장 모두 있음")
         if _grp < _n_sc:
-            st.info(f"대본 문장이 적어 장면이 {_grp}개로 묶입니다. 장면 {_grp + 1}~{_n_sc}번 이미지는 영상에 안 쓰이니 없어도 됩니다 (대본 문장을 늘리면 쓰입니다).")
+            st.info(f"대본 문장이 적어 장면이 {_grp}개로 묶입니다. 장면 {_grp + 1}번 이미지는 영상에 안 쓰이니 없어도 됩니다 (대본 문장을 늘리면 쓰입니다)." if _grp + 1 == _n_sc else f"대본 문장이 적어 장면이 {_grp}개로 묶입니다. 장면 {_grp + 1}~{_n_sc}번 이미지는 영상에 안 쓰이니 없어도 됩니다 (대본 문장을 늘리면 쓰입니다).")
         elif qs and len(qs) != _n_sc:
             st.warning(f"이미지 검색어 {len(qs)}개 ≠ 장면 {_n_sc}개. '검색어도 새로 만들기'를 체크하고 이미지를 다시 받으세요.")
         pix = os.environ.get("PIXABAY_API_KEY", "").strip()
