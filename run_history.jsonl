@@ -1402,3 +1402,8 @@
 {"id": "1794288911132-0fec21", "time": "2026-11-10 14:35:11", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.3, "detail": ""}
 {"id": "1794288912689-b3af8f", "time": "2026-11-10 14:35:12", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 595", "status": "success", "secs": 1.6, "detail": ""}
 {"id": "1794288972716-16fb97", "time": "2026-11-10 14:36:12", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 595 --any", "status": "success", "secs": 60.0, "detail": ""}
+{"id": "1794289290426-978582", "time": "2026-11-10 14:41:30", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1794289365964-eee55b", "time": "2026-11-10 14:42:45", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 595", "status": "success", "secs": 0.2, "detail": ""}
+{"id": "1794289366277-60726b", "time": "2026-11-10 14:42:46", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794289367950-e508fb", "time": "2026-11-10 14:42:47", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --limit 1 --start 595", "status": "success", "secs": 1.7, "detail": ""}
+{"id": "1794289370473-9317e0", "time": "2026-11-10 14:42:50", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --limit 1 --start 595 --any", "status": "success", "secs": 2.5, "detail": ""}
