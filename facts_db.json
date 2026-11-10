@@ -62700,7 +62700,7 @@
     "verify_note": "Constitution of the United Kingdom",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "법정에서 “헌법”이라고 외치면 서류함을 뒤지는 이유가 궁금하시죠? 영국은 단일 문서로 된 헌법이 없습니다. 대신 서면 법령, 판례, 관습, 왕실 선언 등 여러 자료가 뒤섞여 하나의 책으로 정리된 적이 없어요. 이는 역사가 공식적으로 헌법을 한 장에 적어 놓는 시도를 하지 않았기 때문입니다.  \n\n그런데 이런 비코딩된 헌법 덕분에 영국은 조항을 빠르게 바꿀 수 있는 유연함을 갖추게 됩니다. 의회가 새로운 법안을 통과시키면 기존 관습을 수정하거나 새 규칙을 추가하는 식으로 즉시 적용이 가능하죠.  \n\n하지만 이 체제는 영국 본토와 그 영토에만 적용됩니다. 한 장의 헌법이 없다는 점이 오히려 영국 정치의 독특한 움직임을 만들고, 변화에 민첩하게 대응할 수 있게 하는 비밀스러운 힘이 됩니다. 결국 “헌법”이 서류함에 없다는 사실이, 영국이 법을 바꾸는 방식을 설명해 주는 열쇠였던 셈이죠.",
     "title_line1": "영국은 헌법이 없어",
     "title_line2": "서류함을 뒤지는 비밀?",
@@ -62729,7 +62729,8 @@
       "British political maneuvering",
       "absence of constitution key"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "reject_reason": "영국에는 헌법이 전혀 없다는 표현"
   },
   {
     "topic": "아케메네스 제국은 당시 최대 규모의 제국",
@@ -63381,7 +63382,179 @@
       "historical timeline illustration",
       "compass rose over map"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "image_queries_done": [
+      "ancient city skyline",
+      "Rashidun empire map",
+      "Rashidun conquest territory",
+      "expansive desert landscape",
+      "Byzantine empire map",
+      "ancient empire borders",
+      "old manuscript page",
+      "historical timeline illustration",
+      "compass rose over map"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/forbidden-city-panorama-view-5534843/",
+        "id": 5534843
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Mohammad adil at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "title": "Mohammad adil rais-rashidun empire-at-its peak.PNG",
+        "page": "https://commons.wikimedia.org/wiki/File:Mohammad_adil_rais-rashidun_empire-at-its_peak.PNG",
+        "id": "c:17974679"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Dr.Sami Salamah",
+        "license": "CC BY-SA 4.0",
+        "title": "Islamic Expansion per caliph.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Islamic_Expansion_per_caliph.png",
+        "id": "c:157808277"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Wolfgang_Hasselmann",
+        "page": "https://pixabay.com/photos/desert-sand-dunes-sahara-10463843/",
+        "id": 10463843
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Frislr",
+        "license": "CC BY-SA 4.0",
+        "title": "Byzantine Empire 1350.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Byzantine_Empire_1350.png",
+        "id": "c:118479197"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "FreeCreativeStuff",
+        "page": "https://pixabay.com/photos/vintage-paper-retro-antique-2721100/",
+        "id": 2721100
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "United States. National Park Service",
+        "license": "Public domain",
+        "title": "Martin Luther King, Jr. National Historic Site, Georgia LOC 2013587703.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Martin_Luther_King,_Jr._National_Historic_Site,_Georgia_LOC_2013587703.jpg",
+        "id": "c:72013450"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "MasterTux",
+        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
+        "id": 2528477
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3089,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c18d1213d22d",
+        "at": "2026-11-10 14:36",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3107,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8d3b4847a929",
+        "at": "2026-11-10 14:36",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2608,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e0742ddccb1f",
+        "at": "2026-11-10 14:36",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2978,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "45d6c442c429",
+        "at": "2026-11-10 14:36",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3221,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "793eb50d5122",
+        "at": "2026-11-10 14:36",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2624,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d7d6bf2f5f67",
+        "at": "2026-11-10 14:36",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2962,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4462bc3b0931",
+        "at": "2026-11-10 14:36",
+        "scene": 8,
+        "rejected_ids": [
+          7320125,
+          "c:31970069",
+          "c:72013450"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2951,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b3249e7a045c",
+        "at": "2026-11-10 14:36",
+        "scene": 9,
+        "rejected_ids": []
+      }
+    ]
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
