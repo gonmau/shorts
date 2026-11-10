@@ -57116,7 +57116,35 @@
     "verify_note": "Juan Perón",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "한 번도 쓰러지지 않은 대통령? 세 번이나 당선된 비밀!  \n후안 페론은 1946년부터 1955년까지, 그리고 1973년부터 1974년까지 두 차례, 총 세 번에 걸쳐 아르헨티나 대통령을 역임했습니다. 그는 당시 청정 선거라고 평가되는 선거에서 가장 높은 득표율을 기록했으며, 그 결과는 공식 선거 기록에 남아 있습니다.  \n\n그런데 이 기록이 특별한 이유는 바로, 아르헨티나 대통령 중에서 유일하게 세 번 선출된 인물이라는 점입니다. 다른 어느 대통령도 같은 횟수로 재선되지 않았습니다.  \n\n페론의 정치적 영향력은 그가 차지한 기간 동안 사회 복지와 노동 정책에 큰 변화를 가져왔고, 그의 이름은 오늘까지도 아르헨티나 사회에 깊게 남아 있습니다. 결국 “세 번 당선된 대통령”이라는 질문은, 바로 후안 페론이 답이라는 사실로 마무리됩니다.",
+    "title_line1": "아르헨티나 대통령",
+    "title_line2": "세 번 당선 비밀?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*대통령*는 쓰러지지"
+      },
+      {
+        "s": 3,
+        "text": "*세 번* 대통령"
+      },
+      {
+        "s": 5,
+        "text": "*유일* 세 번"
+      }
+    ],
+    "image_queries": [
+      "presidential podium",
+      "ballot box",
+      "presidential palace Argentina",
+      "election results chart",
+      "historic election poster Argentina",
+      "vintage campaign rally",
+      "social welfare building Argentina",
+      "Argentina flag with podium"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "유월절, 피로 문을 표시하면 죽음이 스쳐 지나간다",
@@ -61803,7 +61831,7 @@
     "verify_note": "Habsburg Spain",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:51.640307+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
