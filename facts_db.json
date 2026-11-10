@@ -62201,8 +62201,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0581_스페인.mp4",
     "status_v6": "video_done",
     "thumb_opts": {
-      "scale1": 1.0,
-      "scale2": 1.0,
+      "scale1": 1.45,
+      "scale2": 1.1,
       "angle": 0.0,
       "dy": 0,
       "tag": true,
@@ -62223,7 +62223,7 @@
       "text2": "언제부터 시작되었나?",
       "colors1": {
         "0": "#ec1212",
-        "1": "#e45728"
+        "1": "#ea3437"
       },
       "sizes1": {},
       "colors2": {},
