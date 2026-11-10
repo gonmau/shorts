@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-10 17:54:47 (KST) · 기록 1462건 · 소재 623개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-10 17:58:19 (KST) · 기록 1466건 · 소재 623개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 56 | 0 | 24분 15초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 127 | 0 | 29초 |
+| apply_review | 128 | 0 | 29초 |
 | approve | 32 | 0 | 6초 |
 | build_video | 61 | 0 | 11시간 13분 |
 | check_country | 17 | 0 | 5초 |
@@ -18,13 +18,13 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 38 | 0 | 6초 |
-| fetch_images | 162 | 3 | 2시간 11분 |
+| fetch_images | 163 | 3 | 2시간 11분 |
 | generate_culture_facts | 14 | 0 | 28분 40초 |
-| generate_script | 174 | 0 | 1시간 11분 |
+| generate_script | 175 | 0 | 1시간 11분 |
 | generate_tts | 72 | 0 | 28분 25초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 39 | 0 | 1분 3초 |
-| promote_ready | 127 | 0 | 26초 |
+| promote_ready | 128 | 0 | 26초 |
 | redo_videos | 24 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -39,6 +39,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:58 | PC | fetch_images | fetch_images.py --limit 1 --start 581 --any | ✅ | 14초 |  |
+| 17:57 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 581 | ✅ | 2초 |  |
+| 17:57 | PC | promote_ready | promote_ready.py --start 581 | ✅ | 0초 |  |
+| 17:57 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 17:54 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 1초 |  |
 | 17:52 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 1초 |  |
 | 17:50 | PC | generate_tts | generate_tts.py --index 581 | ✅ | 9초 |  |
