@@ -62066,7 +62066,11 @@
           "c:84620324"
         ]
       }
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0581_스페인_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0581_스페인_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
