@@ -61856,9 +61856,9 @@
   },
   {
     "topic": "스페인(Habsburg Spain)의 제국, 한 왕이 두 대륙을 동시에 통치",
-    "hook": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?!",
-    "body": "1516년부터 1700년까지 스페인(Habsburg Spain)은 유럽과 아메리카, 그리고 동남아시아까지 광범위한 영토를 보유했어요. 그때 스페인은 필리핀과 같은 동남아 섬들뿐 아니라 남미 대륙까지 장악했죠.",
-    "twist": "그때 왕은 유럽의 전쟁터와 필리핀의 열대 정글을 동시에 관리했답니다.",
+    "hook": "남미와 필리핀을 지배하고, 영국까지 정복하려 했던 스페인의 왕이 있었습니다!",
+    "body": "16세기 스페인은 유럽과 아메리카에 걸친 거대한 제국을 형성했습니다. 그 중심에는 펠리페 2세가 있었죠. 그의 아버지는 신성로마제국 황제이자 스페인 왕이었던 카를 5세였습니다.",
+    "twist": "펠리페 2세는 1580년 포르투갈 왕위까지 차지하면서 해외 영토를 더욱 확장했습니다. 그리고 1588년, 영국 정복을 위해 약 130척의 대규모 함대를 출동시켰죠. 이 함대가 바로 스페인 무적함대입니다. 그런데 '무적함대'라는 이름은 스페인이 붙인 것이 아니라, 영국 측에서 사용한 표현이었습니다. 거대한 스페인 함대의 위세를 비꼬는 의미도 담겨 있었죠.",
     "caveat": "이 내용은 1516~1700년 하스부르크 왕가 통치 시기의 기록에 기반합니다.",
     "country": "스페인",
     "theme": "군사/전쟁사",
@@ -61868,33 +61868,205 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:51.640307+00:00",
     "status": "scripted",
-    "narration": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?! 1516년부터 1700년까지 하스부르크 왕가가 이끌던 스페인 제국은 유럽 본토와 함께 남미 전체, 그리고 필리핀을 포함한 동남아 섬들을 장악했습니다. 이때 스페인 왕은 유럽 전쟁터에서 전술을 짜고, 동시에 필리핀 열대 정글에서 현지 관리와 무역을 조율했죠. 그런데 그 넓은 영토를 유지하기 위해서는 대서양과 태평양을 가로지르는 해상 루트를 끊임없이 보호해야 했습니다. 그래서 스페인은 무역선과 군함을 대규모로 운용했고, 각 대륙의 식민지에는 현지 총독이 파견돼 왕의 명령을 전달했습니다. 한 사람의 왕이 두 대륙을 동시에 통치한다는 사실은, 그 시대의 복잡한 정치와 물류 체계가 얼마나 정교했는지를 보여주는 살아있는 증거입니다. 이제 그 왕이 어떻게 양쪽 대륙을 동시에 다스렸는지, 상상해 보세요.",
-    "title_line1": "스페인 제국, 두 대륙",
-    "title_line2": "한 왕이 동시에?",
+    "narration": "남미와 필리핀을 지배하고, 영국까지 정복하려 했던 스페인의 왕이 있었습니다! 16세기 스페인은 유럽과 아메리카에 걸친 거대한 제국을 형성했습니다. 그 중심에는 펠리페 2세가 있었죠. 그의 아버지는 신성로마제국 황제이자 스페인 왕이었던 카를 5세였습니다. 펠리페 2세는 1580년 포르투갈 왕위까지 차지하면서 해외 영토를 더욱 확장했습니다. 그리고 1588년, 영국 정복을 위해 약 130척의 대규모 함대를 출동시켰죠. 이 함대가 바로 스페인 무적함대입니다. 그런데 '무적함대'라는 이름은 스페인이 붙인 것이 아니라, 영국 측에서 사용한 표현이었습니다. 거대한 스페인 함대의 위세를 비꼬는 의미도 담겨 있었죠.",
+    "title_line1": "스페인 무적함대의 진짜 이름",
+    "title_line2": "세계를 지배한 왕의 함대",
     "highlights": [
       {
         "s": 1,
-        "text": "한왕이*두대륙*통치!"
+        "text": "*펠리페 2세*"
       },
       {
         "s": 2,
-        "text": "*남미와필리핀* 장악"
+        "text": "*포르투갈 왕위*까지 차지"
+      },
+      {
+        "s": 3,
+        "text": "약 *130척*의 대함대"
       },
       {
         "s": 4,
-        "text": "*해상루트* 방어"
+        "text": "영국이 붙인 *무적함대*"
       }
     ],
     "image_queries": [
-      "royal portrait with world map",
-      "Spanish empire map South America Philippines",
-      "Spanish king planning naval strategy",
-      "Atlantic Pacific trade route map",
-      "Spanish galleon sailing colonial seas",
-      "imperial Spanish administration documents",
-      "imaginary dual continent governance illustration"
+      "Philip II of Spain royal portrait",
+      "Charles V Holy Roman Emperor portrait",
+      "Spanish Empire 1580 historical world map",
+      "Spanish Portugal union 1580 historical map",
+      "Spanish Armada 1588 fleet historical painting",
+      "Spanish Armada English Channel 1588 naval battle painting",
+      "Spanish Armada 1588 historical engraving"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "narration_original": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?! 1516년부터 1700년까지 하스부르크 왕가가 이끌던 스페인 제국은 유럽 본토와 함께 남미 전체, 그리고 필리핀을 포함한 동남아 섬들을 장악했습니다. 이때 스페인 왕은 유럽 전쟁터에서 전술을 짜고, 동시에 필리핀 열대 정글에서 현지 관리와 무역을 조율했죠. 그런데 그 넓은 영토를 유지하기 위해서는 대서양과 태평양을 가로지르는 해상 루트를 끊임없이 보호해야 했습니다. 그래서 스페인은 무역선과 군함을 대규모로 운용했고, 각 대륙의 식민지에는 현지 총독이 파견돼 왕의 명령을 전달했습니다. 한 사람의 왕이 두 대륙을 동시에 통치한다는 사실은, 그 시대의 복잡한 정치와 물류 체계가 얼마나 정교했는지를 보여주는 살아있는 증거입니다. 이제 그 왕이 어떻게 양쪽 대륙을 동시에 다스렸는지, 상상해 보세요.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Philip II of Spain royal portrait",
+      "Charles V Holy Roman Emperor portrait",
+      "Spanish Empire 1580 historical world map",
+      "Spanish Portugal union 1580 historical map",
+      "Spanish Armada 1588 fleet historical painting",
+      "Spanish Armada English Channel 1588 naval battle painting",
+      "Spanish Armada 1588 historical engraving"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Sofonisba Anguissola",
+        "license": "Public domain",
+        "title": "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
+        "id": "c:5249539"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "GoldenArtists",
+        "license": "CC BY 4.0",
+        "title": "Charles V, Holy Roman Emperor - Titian.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Charles_V,_Holy_Roman_Emperor_-_Titian.jpg",
+        "id": "c:148062899"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "MasterTux",
+        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
+        "id": 2528477
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "carloslorite",
+        "page": "https://pixabay.com/photos/map-world-europe-earth-geography-5631690/",
+        "id": 5631690
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "Senyeres-Invencible-Plymouth.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Senyeres-Invencible-Plymouth.jpg",
+        "id": "c:16885931"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Papafox",
+        "page": "https://pixabay.com/photos/naval-battle-ship-sailing-ship-old-3195409/",
+        "id": 3195409
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Rijksmuseum",
+        "license": "CC0",
+        "title": "Titelpagina voor The Tapestry Hangings of the House of Lords, 1739 The Tapestry Hangings o",
+        "page": "https://commons.wikimedia.org/wiki/File:Titelpagina_voor_The_Tapestry_Hangings_of_the_House_of_Lords,_1739_The_Tapestry_Hangings_of_the_House_of_Lords_representing_the_several_engagements_between_the_English_and_Spanish_Fleets_in_the_ever_memorable_Year_MDLXX,_RP-P-1987-34-A.jpg",
+        "id": "c:84620324"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3563,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9215fa52c452",
+        "at": "2026-11-10 17:17",
+        "scene": 1,
+        "rejected_ids": [
+          1876479,
+          "c:5249539"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3096,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8351fcca9b45",
+        "at": "2026-11-10 17:17",
+        "scene": 2,
+        "rejected_ids": [
+          3357150,
+          "c:148062899"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2445,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "401e77069ca8",
+        "at": "2026-11-10 17:17",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3109,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f0a41ef18d81",
+        "at": "2026-11-10 17:17",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3798,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9c6255ca589b",
+        "at": "2026-11-10 17:17",
+        "scene": 5,
+        "rejected_ids": [
+          8589487,
+          "c:16885931"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2496,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9095023df141",
+        "at": "2026-11-10 17:17",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.1687,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e476117eafb0",
+        "at": "2026-11-10 17:17",
+        "scene": 7,
+        "rejected_ids": [
+          60526,
+          7244828,
+          8173525,
+          "c:1003110",
+          "c:31534131",
+          "c:84620324"
+        ]
+      }
+    ]
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
