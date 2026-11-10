@@ -61904,66 +61904,70 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel",
-      "스페인 travel"
+      "Philip II of Spain royal portrait",
+      "Charles V Holy Roman Emperor portrait",
+      "Spanish Empire 1580 historical world map",
+      "Spanish Portugal union 1580 historical map",
+      "Spanish Armada 1588 fleet historical painting",
+      "Spanish Armada English Channel 1588 naval battle painting",
+      "Spanish Armada 1588 historical engraving"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "JoshuaWoroniecki",
-        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
-        "id": 5219496
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "'Philippus byder gratien Gods Prince van Castilien etc...' Portrait of Philip II of Spain ",
+        "page": "https://commons.wikimedia.org/wiki/File:%27Philippus_byder_gratien_Gods_Prince_van_Castilien_etc...%27_Portrait_of_Philip_II_of_Spain_in_armour,_standing_1564_print_published_by_Jan_Mollyns,_S.II_86011,_Prints_Department,_Royal_Library_of_Belgium.jpg",
+        "id": "c:93071089"
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "822640",
-        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/",
-        "id": 1828079
+        "source": "commons",
+        "user": "Attributed to Titian",
+        "license": "Public domain",
+        "title": "Portrait of Charles V, Holy Roman Emperor, seated (1500–1558), formerly attributed to Titi",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500%E2%80%931558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg",
+        "id": "c:108115194"
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "DariuszSankowski",
-        "page": "https://pixabay.com/photos/camera-photographs-souvenir-1130731/",
-        "id": 1130731
+        "user": "MasterTux",
+        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
+        "id": 2528477
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "ClickerHappy",
-        "page": "https://pixabay.com/photos/airport-terminal-man-travel-1822133/",
-        "id": 1822133
+        "user": "carloslorite",
+        "page": "https://pixabay.com/photos/map-world-europe-earth-geography-5631690/",
+        "id": 5631690
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "ClickerHappy",
-        "page": "https://pixabay.com/photos/airport-walking-waiting-gate-walk-4120835/",
-        "id": 4120835
+        "source": "commons",
+        "user": "Unknown author Unknown author",
+        "license": "Public domain",
+        "title": "La batalla de Gravelinas, por Nicholas Hilliard.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:La_batalla_de_Gravelinas,_por_Nicholas_Hilliard.jpg",
+        "id": "c:88989671"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "makabera",
-        "page": "https://pixabay.com/photos/boat-water-lake-alone-blue-calm-10467229/",
-        "id": 10467229
+        "user": "Papafox",
+        "page": "https://pixabay.com/photos/naval-battle-ship-sailing-ship-old-3195409/",
+        "id": 3195409
       },
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "stux",
-        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
-        "id": 1149289
+        "user": "u_qqco3bha6l",
+        "page": "https://pixabay.com/photos/crown-sword-knight-vintage-10496342/",
+        "id": 10496342,
+        "type": "photo"
       },
       {
         "scene": 8,
@@ -61991,29 +61995,31 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.3563,
+        "clip": 0.2378,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9215fa52c452",
-        "at": "2026-11-10 17:17",
+        "sig": "d1287172850c",
+        "at": "2026-11-10 18:00",
         "scene": 1,
         "rejected_ids": [
           1876479,
-          "c:5249539"
+          "c:5249539",
+          "c:93071089"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.3096,
+        "clip": 0.3128,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8351fcca9b45",
-        "at": "2026-11-10 17:17",
+        "sig": "ed0342190dae",
+        "at": "2026-11-10 18:00",
         "scene": 2,
         "rejected_ids": [
           3357150,
+          "c:108115194",
           "c:148062899"
         ]
       },
@@ -62023,8 +62029,8 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "401e77069ca8",
-        "at": "2026-11-10 17:17",
+        "sig": "8909efd5c27b",
+        "at": "2026-11-10 18:00",
         "scene": 3,
         "rejected_ids": []
       },
@@ -62034,23 +62040,24 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "f0a41ef18d81",
-        "at": "2026-11-10 17:17",
+        "sig": "b467e8506d47",
+        "at": "2026-11-10 18:00",
         "scene": 4,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3798,
+        "clip": 0.3688,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9c6255ca589b",
-        "at": "2026-11-10 17:17",
+        "sig": "3a8460610334",
+        "at": "2026-11-10 18:00",
         "scene": 5,
         "rejected_ids": [
           8589487,
-          "c:16885931"
+          "c:16885931",
+          "c:88989671"
         ]
       },
       {
@@ -62059,21 +62066,22 @@
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "9095023df141",
-        "at": "2026-11-10 17:17",
+        "sig": "3bf9d4cce88c",
+        "at": "2026-11-10 18:00",
         "scene": 6,
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.1687,
+        "verdict": "ok",
+        "clip": 0.2583,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "e476117eafb0",
-        "at": "2026-11-10 17:17",
+        "sig": "a7f5e11bad3d",
+        "at": "2026-11-10 18:00",
         "scene": 7,
         "rejected_ids": [
+          10496342,
           60526,
           7244828,
           8173525,
