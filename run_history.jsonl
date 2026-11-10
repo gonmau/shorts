@@ -1468,3 +1468,9 @@
 {"id": "1794301284824-81c2e7", "time": "2026-11-10 18:01:24", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 581", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1794301285192-29708b", "time": "2026-11-10 18:01:25", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.4, "detail": ""}
 {"id": "1794301288161-b1894d", "time": "2026-11-10 18:01:28", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 581", "status": "success", "secs": 3.0, "detail": ""}
+{"id": "1794305085570-906441", "time": "2026-11-10 19:04:45", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1794305251402-a7baa1", "time": "2026-11-10 19:07:31", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 581", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794305251698-b6e7e5", "time": "2026-11-10 19:07:31", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794305255276-d5b88c", "time": "2026-11-10 19:07:35", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --extras-only --index 581", "status": "success", "secs": 3.6, "detail": ""}
+{"id": "1794305694754-9abc88", "time": "2026-11-10 19:14:54", "channel": "KO", "source": "PC", "kind": "build_video", "title": "build_video.py --index 581 --channel gonmauY --handle @gonmauY", "status": "success", "secs": 439.5, "detail": ""}
+{"id": "1794305696670-6ea982", "time": "2026-11-10 19:14:56", "channel": "KO", "source": "PC", "kind": "make_thumbnail", "title": "make_thumbnail.py --channel gonmauY --handle @gonmauY --only 581", "status": "success", "secs": 1.4, "detail": ""}
