@@ -827,19 +827,31 @@ with T6a:
             _tc1 = _k1.color_picker("1줄 기본 글자색", _to.get("color1") or "#ffffff", key=f"thm_k1_{_ts}")
             _tc2 = _k2.color_picker("2줄 기본 글자색", _to.get("color2") or "#000000", key=f"thm_k2_{_ts}")
             _cols = {}
-            for _ln, (_key, _dflt) in enumerate((("title_line1", _tc1), ("title_line2", _tc2)), 1):
-                _wd = str(_td[_ts].get(_key) or (_td[_ts].get("topic") if _ln == 1 else "") or "").split()
+            st.markdown("**썸네일 문구** (영상 제목과 따로 적을 수 있음 — 비우면 영상 제목 그대로)")
+            _x1, _x2 = st.columns(2)
+            _tx1 = _x1.text_input("1줄", _to.get("text1") or "", placeholder=str(_td[_ts].get("title_line1") or _td[_ts].get("topic") or ""), key=f"thm_x1_{_ts}")
+            _tx2 = _x2.text_input("2줄", _to.get("text2") or "", placeholder=str(_td[_ts].get("title_line2") or ""), key=f"thm_x2_{_ts}")
+            _cols["text1"], _cols["text2"] = _tx1.strip(), _tx2.strip()
+            for _ln, (_key, _dflt, _txt) in enumerate((("title_line1", _tc1, _tx1), ("title_line2", _tc2, _tx2)), 1):
+                _wd = str(_txt.strip() or _td[_ts].get(_key) or (_td[_ts].get("topic") if _ln == 1 else "") or "").split()
                 if not _wd:
                     continue
-                st.caption(f"{_ln}줄 단어별 색 (기본색과 다르게 고른 단어만 적용)")
+                st.caption(f"{_ln}줄 단어별 색·크기 (기본색·1.0배와 다르게 고른 단어만 적용)")
                 _prev = _to.get(f"colors{_ln}") or {}
+                _prevz = _to.get(f"sizes{_ln}") or {}
                 _cc = st.columns(min(len(_wd), 6))
-                _pick = {}
+                _pick, _pz = {}, {}
                 for _k, _w in enumerate(_wd):
-                    _c = _cc[_k % len(_cc)].color_picker(_w, _prev.get(str(_k), _dflt), key=f"thm_c{_ln}_{_ts}_{_k}")
+                    with _cc[_k % len(_cc)]:
+                        _c = st.color_picker(_w, _prev.get(str(_k), _dflt), key=f"thm_c{_ln}_{_ts}_{_k}")
+                        _z = st.number_input("크기 배율", 0.4, 2.5, float(_prevz.get(str(_k), 1.0)), 0.1, key=f"thm_z{_ln}_{_ts}_{_k}", label_visibility="collapsed",
+                                             help=f"'{_w}' 크기 배율 (1.0=기본)")
                     if _c.lower() != _dflt:
                         _pick[str(_k)] = _c
+                    if abs(_z - 1.0) > 1e-6:
+                        _pz[str(_k)] = round(_z, 2)
                 _cols[f"colors{_ln}"] = _pick
+                _cols[f"sizes{_ln}"] = _pz
             if st.button("↩ 썸네일 설정 기본값으로 되돌리기", key=f"thm_reset_{_ts}", help="크기·기울기·색·띠·글씨체 설정을 지우고 기본 디자인으로 다시 만듭니다 (배경 장면 번호는 위 입력값 그대로)"):
                 import subprocess as _sp_r, sys as _sys_r
                 _dm = _ld()

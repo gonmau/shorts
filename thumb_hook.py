@@ -100,15 +100,30 @@ def _words_width(d, words, font):
     return sum(d.textlength(w, font=font) for w in words) + sp * max(0, len(words) - 1), sp
 
 
-def draw_words(d, text, font, cx, y, colors, default, stroke=0, stroke_fill=(0, 0, 0)):
-    """단어별 색상으로 가운데 정렬해 그림. colors = {단어 순번(문자열): '#rrggbb'}"""
-    words = text.split()
-    tw, sp = _words_width(d, words, font)
+def _word_fonts(text, font, sizes, fp):
+    """단어별 글꼴. sizes = {단어 순번(문자열): 크기 배율}. 배율이 없으면 기본 글꼴."""
+    out = []
+    for k, w in enumerate(text.split()):
+        sc = float((sizes or {}).get(str(k), 1.0) or 1.0)
+        out.append((w, font if abs(sc - 1.0) < 1e-6 else _font(max(16, int(font.size * sc)), True, fp)))
+    return out
+
+
+def line_width(d, wf):
+    sp = d.textlength(" ", font=wf[0][1]) if wf else 0
+    return sum(d.textlength(w, font=f) for w, f in wf) + sp * max(0, len(wf) - 1), sp
+
+
+def draw_words(d, text, font, cx, y, colors, default, stroke=0, stroke_fill=(0, 0, 0), sizes=None, fp=None):
+    """단어별 색·크기로 가운데 정렬해 그림 (큰 단어도 글줄 아래쪽 기준선에 맞춤). colors/sizes = {단어 순번(문자열): 값}"""
+    wf = _word_fonts(text, font, sizes, fp)
+    tw, sp = line_width(d, wf)
+    top = max((f.size for _, f in wf), default=font.size)
     x = cx - tw / 2
-    for k, w in enumerate(words):
+    for k, (w, f) in enumerate(wf):
         col = _hex(colors.get(str(k)), default) if colors.get(str(k)) else default
-        d.text((x, y), w, font=font, fill=col, stroke_width=stroke, stroke_fill=stroke_fill)
-        x += d.textlength(w, font=font) + sp
+        d.text((x, y + (top - f.size) * 0.84), w, font=f, fill=col, stroke_width=stroke, stroke_fill=stroke_fill)
+        x += d.textlength(w, font=f) + sp
 
 
 def band_image(kind, w, h, color, seed, opacity=100, angle=-2.0):
@@ -155,16 +170,24 @@ def make(idx, item, channel, handle, avatar, fallback_background):
     d.text((165, 62), channel, font=_font(42), fill=(255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0))
     d.text((165, 114), handle, font=_font(32, bold=False), fill=(230, 230, 230), stroke_width=3, stroke_fill=(0, 0, 0))
 
-    t1 = str(item.get("title_line1") or item.get("topic") or "").strip()
-    t2 = str(item.get("title_line2") or "").strip()
+    t1 = str(o.get("text1") or item.get("title_line1") or item.get("topic") or "").strip()    # 썸네일 전용 문구 (영상 제목과 따로)
+    t2 = str(o.get("text2") if o.get("text2") is not None and str(o.get("text2")).strip() else (item.get("title_line2") or "")).strip()
+    z1, z2 = o.get("sizes1") or {}, o.get("sizes2") or {}
     import fonts as _F
     fp = _F.path(o.get("font")) or _F.role_path("thumb")
     s1, s2 = float(o.get("scale1", 1.0) or 1.0), float(o.get("scale2", 1.0) or 1.0)
     f1 = _font(max(20, int(_fit_font(d, t1, W - 60, 240, 80, font_path=fp).size * s1)), True, fp)
     f2 = _font(max(20, int(_fit_font(d, t2, W - 110, 220, 76, font_path=fp).size * s2)), True, fp) if t2 else None
     gap = 26
-    h1 = int(f1.size * 1.18)
-    h2 = int(f2.size * 1.5) if f2 else 0
+    _tmp = ImageDraw.Draw(Image.new("RGB", (4, 4)))
+    while f1.size > 30 and line_width(_tmp, _word_fonts(t1, f1, z1, fp))[0] > W - 50:    # 큰 단어가 들어가 화면을 넘으면 줄 전체를 줄임
+        f1 = _font(int(f1.size * 0.95), True, fp)
+    while f2 and f2.size > 30 and line_width(_tmp, _word_fonts(t2, f2, z2, fp))[0] > W - 100:
+        f2 = _font(int(f2.size * 0.95), True, fp)
+    _m1 = max([f1.size] + [int(f1.size * float(v or 1)) for v in z1.values()])
+    _m2 = max([f2.size] + [int(f2.size * float(v or 1)) for v in z2.values()]) if f2 else 0
+    h1 = int(_m1 * 1.18)
+    h2 = int(_m2 * 1.5) if f2 else 0
     tag = (str(o.get("tag_text") or "").strip() or hook_tag(item)) if o.get("tag", True) else ""
     tag_bg = _hex(o.get("tag_color"), RED) if o.get("tag_color") else RED
     tag_fg = _hex(o.get("tag_fg"), (255, 255, 255)) if o.get("tag_fg") else (255, 255, 255)
@@ -183,10 +206,10 @@ def make(idx, item, channel, handle, avatar, fallback_background):
         ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=tag_fg)
         y += tag_h + 30
 
-    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13)
+    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13, sizes=z1, fp=fp)
     y += h1 + gap
     if f2:
-        w2 = _words_width(ld, t2.split(), f2)[0]
+        w2 = line_width(ld, _word_fonts(t2, f2, z2, fp))[0]
         kind = o.get("band", "brush")
         if kind != "none":
             bw = max(60, int(w2) + int(o.get("band_w", 90)))
@@ -198,7 +221,7 @@ def make(idx, item, channel, handle, avatar, fallback_background):
         ld = ImageDraw.Draw(lay)
         draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {},
                    _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else (0, 0, 0),
-                   stroke=13 if kind == "none" else 0)      # 띠가 없으면 1줄처럼 검정 외곽선으로 글자를 살린다
+                   stroke=13 if kind == "none" else 0, sizes=z2, fp=fp)      # 띠가 없으면 1줄처럼 검정 외곽선으로 글자를 살린다
     ang = float(o.get("angle", 0) or 0)
     if ang:
         lay = lay.rotate(ang, resample=Image.BICUBIC, center=(W // 2, y0 + block // 2))
