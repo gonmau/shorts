@@ -61867,7 +61867,7 @@
     "verify_note": "Habsburg Spain",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:51.640307+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "남미와 필리핀을 지배하고, 영국까지 정복하려 했던 스페인의 왕이 있었습니다! 16세기 스페인은 유럽과 아메리카에 걸친 거대한 제국을 형성했습니다. 그 중심에는 펠리페 2세가 있었죠. 그의 아버지는 신성로마제국 황제이자 스페인 왕이었던 카를 5세였습니다. 펠리페 2세는 1580년 포르투갈 왕위까지 차지하면서 해외 영토를 더욱 확장했습니다. 그리고 1588년, 영국 정복을 위해 약 130척의 대규모 함대를 출동시켰죠. 이 함대가 바로 스페인 무적함대입니다. 그런데 '무적함대'라는 이름은 스페인이 붙인 것이 아니라, 영국 측에서 사용한 표현이었습니다. 거대한 스페인 함대의 위세를 비꼬는 의미도 담겨 있었죠.",
     "title_line1": "스페인 무적함대의 진짜 이름",
     "title_line2": "세계를 지배한 왕의 함대",
@@ -61890,13 +61890,15 @@
       }
     ],
     "image_queries": [
-      "Philip II of Spain royal portrait",
-      "Charles V Holy Roman Emperor portrait",
-      "Spanish Empire 1580 historical world map",
-      "Spanish Portugal union 1580 historical map",
-      "Spanish Armada 1588 fleet historical painting",
-      "Spanish Armada English Channel 1588 naval battle painting",
-      "Spanish Armada 1588 historical engraving"
+      "Philip II portrait",
+      "Portuguese crown",
+      "130 ship fleet",
+      "Invincible Armada",
+      "Habsburg Spain map",
+      "Spanish galleon 1588",
+      "Spanish Armada ships",
+      "British ship vs fleet",
+      "Satirical Spanish fleet"
     ],
     "scene_count": 10,
     "narration_original": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?! 1516년부터 1700년까지 하스부르크 왕가가 이끌던 스페인 제국은 유럽 본토와 함께 남미 전체, 그리고 필리핀을 포함한 동남아 섬들을 장악했습니다. 이때 스페인 왕은 유럽 전쟁터에서 전술을 짜고, 동시에 필리핀 열대 정글에서 현지 관리와 무역을 조율했죠. 그런데 그 넓은 영토를 유지하기 위해서는 대서양과 태평양을 가로지르는 해상 루트를 끊임없이 보호해야 했습니다. 그래서 스페인은 무역선과 군함을 대규모로 운용했고, 각 대륙의 식민지에는 현지 총독이 파견돼 왕의 명령을 전달했습니다. 한 사람의 왕이 두 대륙을 동시에 통치한다는 사실은, 그 시대의 복잡한 정치와 물류 체계가 얼마나 정교했는지를 보여주는 살아있는 증거입니다. 이제 그 왕이 어떻게 양쪽 대륙을 동시에 다스렸는지, 상상해 보세요.",
@@ -62094,7 +62096,110 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0581_스페인_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0581_스페인_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "overlays": [
+      {
+        "text": "16세기 스페인",
+        "start": 5.8,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "펠리페 2세",
+        "start": 10.9,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "아버지는 카를 5세",
+        "start": 14.1,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "영토 확장",
+        "start": 19.5,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "대규모 함대 (130척) 출현",
+        "start": 25.9,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "스페인 무적함대",
+        "start": 32.7,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "타자기",
+        "bg": "#FFFFFF"
+      }
+    ],
+    "title_opts": {
+      "color1": "#000000",
+      "color2": "#C800FF",
+      "colors1": {
+        "1": "#f61616"
+      },
+      "colors2": {}
+    },
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0581_스페인.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0581_스페인.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
