@@ -61867,7 +61867,34 @@
     "verify_note": "Habsburg Spain",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:51.640307+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?! 1516년부터 1700년까지 하스부르크 왕가가 이끌던 스페인 제국은 유럽 본토와 함께 남미 전체, 그리고 필리핀을 포함한 동남아 섬들을 장악했습니다. 이때 스페인 왕은 유럽 전쟁터에서 전술을 짜고, 동시에 필리핀 열대 정글에서 현지 관리와 무역을 조율했죠. 그런데 그 넓은 영토를 유지하기 위해서는 대서양과 태평양을 가로지르는 해상 루트를 끊임없이 보호해야 했습니다. 그래서 스페인은 무역선과 군함을 대규모로 운용했고, 각 대륙의 식민지에는 현지 총독이 파견돼 왕의 명령을 전달했습니다. 한 사람의 왕이 두 대륙을 동시에 통치한다는 사실은, 그 시대의 복잡한 정치와 물류 체계가 얼마나 정교했는지를 보여주는 살아있는 증거입니다. 이제 그 왕이 어떻게 양쪽 대륙을 동시에 다스렸는지, 상상해 보세요.",
+    "title_line1": "스페인 제국, 두 대륙",
+    "title_line2": "한 왕이 동시에?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "한왕이*두대륙*통치!"
+      },
+      {
+        "s": 2,
+        "text": "*남미와필리핀* 장악"
+      },
+      {
+        "s": 4,
+        "text": "*해상루트* 방어"
+      }
+    ],
+    "image_queries": [
+      "royal portrait with world map",
+      "Spanish empire map South America Philippines",
+      "Spanish king planning naval strategy",
+      "Atlantic Pacific trade route map",
+      "Spanish galleon sailing colonial seas",
+      "imperial Spanish administration documents",
+      "imaginary dual continent governance illustration"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
