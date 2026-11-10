@@ -431,6 +431,51 @@ with T4a:
 
 # ================= 작업 순서: 1 소재 -> 2 대본 -> 3 이미지 -> 4 렌더링 -> 5 업로드 =================
 from common import load_db as _ld, save_db as _sd, pending_render as _pr, visual_dir as _vd, upload_state
+
+
+def _title_editor(_kp):
+    """영상 맨 위 두 줄 제목(글자)과 색을 고친다. 영상 만들기 전에도, 만든 뒤에도 쓸 수 있다 (만든 뒤엔 redo + 5단계 렌더링 필요)."""
+    _vd0 = _ld()
+    _vn = sorted([i for i, it in enumerate(_vd0) if (it.get("video_path_v6") or it.get("narration")) and it.get("status") != "rejected"], reverse=True)
+    if not _vn:
+        st.info("대본이 있는 소재가 없습니다.")
+        return
+    _vs = st.selectbox("소재 번호", _vn, key=f"{_kp}vt_sel", format_func=lambda i: f"{i} {_vd0[i].get('country', '')} - {str(_vd0[i].get('title_line1', '') or _vd0[i].get('topic', ''))[:30]}")
+    it = _vd0[_vs]
+    _vo = dict(it.get("title_opts") or {})
+    _tt1 = st.text_input("1줄 제목", str(it.get("title_line1") or it.get("topic") or ""), key=f"{_kp}vt_t1_{_vs}")
+    _tt2 = st.text_input("2줄 제목", str(it.get("title_line2") or ""), key=f"{_kp}vt_t2_{_vs}")
+    _vc1, _vc2 = st.columns(2)
+    _d1 = _vc1.color_picker("1줄 기본색", _vo.get("color1") or "#000000", key=f"{_kp}vt_c1_{_vs}")
+    _d2 = _vc2.color_picker("2줄 기본색", _vo.get("color2") or "#C800FF", key=f"{_kp}vt_c2_{_vs}")
+    _vres = {}
+    for _ln, (_txt, _dc) in enumerate(((_tt1, _d1), (_tt2, _d2)), 1):
+        _wd = str(_txt).split()
+        if not _wd:
+            continue
+        st.caption(f"{_ln}줄 단어별 색 (기본색과 다르게 고른 단어만 적용)")
+        _pv = _vo.get(f"colors{_ln}") or {}
+        _cc = st.columns(min(len(_wd), 6))
+        _pk = {}
+        for _k, _w in enumerate(_wd):
+            _c = _cc[_k % len(_cc)].color_picker(_w, _pv.get(str(_k), _dc), key=f"{_kp}vt_w{_ln}_{_vs}_{_k}")
+            if _c.lower() != _dc.lower():
+                _pk[str(_k)] = _c
+        _vres[f"colors{_ln}"] = _pk
+    _vb1, _vb2 = st.columns(2)
+    if _vb1.button("저장", key=f"{_kp}vt_save_{_vs}", type="primary"):
+        _dm = _ld()
+        _dm[_vs]["title_line1"], _dm[_vs]["title_line2"] = _tt1.strip(), _tt2.strip()
+        if _d1.lower() == "#000000" and _d2.lower() == "#c800ff" and not any(_vres.values()):
+            _dm[_vs].pop("title_opts", None)
+        else:
+            _dm[_vs]["title_opts"] = {"color1": _d1, "color2": _d2, **_vres}
+        _sd(_dm)
+        st.success("저장했습니다. " + ("이미 만든 영상이라 redo에 번호를 넣고 5단계 렌더링을 해야 영상에 반영됩니다." if it.get("video_path_v6") else "아직 영상 전이라 다음 렌더링에 그대로 반영됩니다."))
+    if _vb2.button("제목 색만 기본으로 되돌리기", key=f"{_kp}vt_reset_{_vs}"):
+        _dm = _ld(); _dm[_vs].pop("title_opts", None); _sd(_dm); st.rerun()
+
+
 GEN = "generate_culture_facts.py" if not EN else "generate_topics.py"
 def script_steps(auto):
     return pre + ([S("approve.py", "--limit", str(count), "--start", str(start))] if auto else []) + [S("generate_script.py", *a), S("export_review.py", *a)]
@@ -882,41 +927,8 @@ with T6a:
             _tf = _tb / "thumbnails" / f"{_P_t(_vp).stem}.png"
             if _tf.exists():
                 st.image(str(_tf), width=300, caption=f"[{_ts}] {_tf.name} (현재 썸네일)")
-    with st.expander("🎨 영상 상단 제목 색 (영상 맨 위 두 줄)"):
-        _vd0 = _ld()
-        _vn = sorted([i for i, it in enumerate(_vd0) if it.get("video_path_v6") or it.get("script")], reverse=True)
-        _vs = st.selectbox("소재 번호", _vn, key="vt_sel", format_func=lambda i: f"{i} {_vd0[i].get('country', '')} - {str(_vd0[i].get('title_line1', '') or _vd0[i].get('topic', ''))[:30]}")
-        if _vs is not None:
-            _vo = dict(_vd0[_vs].get("title_opts") or {})
-            _vc1, _vc2 = st.columns(2)
-            _d1 = _vc1.color_picker("1줄 기본색", _vo.get("color1") or "#000000", key=f"vt_c1_{_vs}")
-            _d2 = _vc2.color_picker("2줄 기본색", _vo.get("color2") or "#C800FF", key=f"vt_c2_{_vs}")
-            _vres = {}
-            for _ln, (_key, _dc) in enumerate((("title_line1", _d1), ("title_line2", _d2)), 1):
-                _wd = str(_vd0[_vs].get(_key) or (_vd0[_vs].get("topic") if _ln == 1 else "") or "").split()
-                if not _wd:
-                    continue
-                st.caption(f"{_ln}줄 단어별 색 (기본색과 다르게 고른 단어만 적용)")
-                _pv = _vo.get(f"colors{_ln}") or {}
-                _cc = st.columns(min(len(_wd), 6))
-                _pk = {}
-                for _k, _w in enumerate(_wd):
-                    _c = _cc[_k % len(_cc)].color_picker(_w, _pv.get(str(_k), _dc), key=f"vt_w{_ln}_{_vs}_{_k}")
-                    if _c.lower() != _dc.lower():
-                        _pk[str(_k)] = _c
-                _vres[f"colors{_ln}"] = _pk
-            _vb1, _vb2 = st.columns(2)
-            if _vb1.button("저장", key=f"vt_save_{_vs}", type="primary"):
-                _dm = _ld()
-                _no = {"color1": _d1, "color2": _d2, **_vres}
-                if _d1.lower() == "#000000" and _d2.lower() == "#c800ff" and not any(_vres.values()):
-                    _dm[_vs].pop("title_opts", None)
-                else:
-                    _dm[_vs]["title_opts"] = _no
-                _sd(_dm)
-                st.success("저장했습니다. 이미 만든 영상이면 redo에 번호를 넣고 5단계 렌더링을 해야 영상에 반영됩니다.")
-            if _vb2.button("기본색으로 되돌리기", key=f"vt_reset_{_vs}"):
-                _dm = _ld(); _dm[_vs].pop("title_opts", None); _sd(_dm); st.rerun()
+    with st.expander("🎨 영상 상단 제목·색 (영상 맨 위 두 줄)"):
+        _title_editor("u_")
     with st.expander("✏️ 제목 수정 (이미 만든 영상의 유튜브 제목·설명)"):
         st.caption("review.txt에는 아직 영상을 안 만든 소재만 나옵니다. 이미 만든 영상의 제목은 여기서 고치세요. 유튜브 제목과 썸네일 제목이 바뀝니다. "
                    "영상 화면 위에 이미 들어간 제목은 그대로입니다(바꾸려면 5단계 redo로 다시 만들어야 함).")
@@ -1496,6 +1508,8 @@ with T2c:
 
 
 with T2b:
+    with st.expander("🎬 영상 맨 위 제목·색 수정 (영상 만들기 전에 미리 고치기)"):
+        _title_editor("s_")
     with st.expander("🔄 대본에 맞게 주제·훅·제목·핵심 문구 다시 만들기 (대본을 직접 고친 소재)", expanded=False):
         st.caption("대본을 직접 바꿨는데 제목·핵심 문구·유튜브 설명(훅/본문/반전)·주제가 옛 내용이면 영상과 어긋납니다. 번호를 넣으면 새 대본 기준으로 다시 만듭니다 (대본·나라·영상·업로드 기록은 그대로). 영상에 반영하려면 그 뒤 redo + 렌더링을 하세요. GROQ_API_KEY 필요, 소재당 AI 호출 3~4회.")
         _rsn = st.text_input("소재 번호 (예: 286,304)", key="rsm_idx")
