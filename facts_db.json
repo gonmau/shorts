@@ -62780,6 +62780,22 @@
         "id": "c:78606"
       },
       {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Thibaud",
+        "page": "https://pixabay.com/photos/building-architecture-modern-279769/",
+        "id": 279769,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "TeeFarm",
+        "page": "https://pixabay.com/photos/london-phone-booth-red-england-2254104/",
+        "id": 2254104,
+        "type": "photo"
+      },
+      {
         "scene": 7,
         "source": "pixabay",
         "user": "stevepb",
@@ -62874,25 +62890,35 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2267,
+        "clip": 0.2465,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "e12f1c2a15db",
-        "at": "2026-11-10 14:46",
+        "sig": "f8ae1ed108ed",
+        "at": "2026-11-10 15:02",
         "scene": 5,
-        "rejected_ids": []
+        "rejected_ids": [
+          2463236,
+          279769,
+          637999,
+          "c:17392051",
+          "c:24250730"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2211,
+        "clip": 0.2261,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "77280b7f2f3f",
-        "at": "2026-11-10 14:46",
+        "sig": "f9d1c9f4d20b",
+        "at": "2026-11-10 15:02",
         "scene": 6,
-        "rejected_ids": []
+        "rejected_ids": [
+          1768768,
+          2254104,
+          "c:150569500"
+        ]
       },
       {
         "verdict": "ok",
