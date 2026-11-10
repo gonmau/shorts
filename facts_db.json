@@ -61904,71 +61904,87 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "Philip II of Spain royal portrait",
-      "Charles V Holy Roman Emperor portrait",
-      "Spanish Empire 1580 historical world map",
-      "Spanish Portugal union 1580 historical map",
-      "Spanish Armada 1588 fleet historical painting",
-      "Spanish Armada English Channel 1588 naval battle painting",
-      "Spanish Armada 1588 historical engraving"
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel",
+      "스페인 travel"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Sofonisba Anguissola",
-        "license": "Public domain",
-        "title": "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
-        "id": "c:5249539"
+        "source": "pixabay",
+        "user": "JoshuaWoroniecki",
+        "page": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
+        "id": 5219496
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "GoldenArtists",
-        "license": "CC BY 4.0",
-        "title": "Charles V, Holy Roman Emperor - Titian.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Charles_V,_Holy_Roman_Emperor_-_Titian.jpg",
-        "id": "c:148062899"
+        "source": "pixabay",
+        "user": "822640",
+        "page": "https://pixabay.com/photos/globe-trotter-traveller-globe-map-1828079/",
+        "id": 1828079
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "MasterTux",
-        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
-        "id": 2528477
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/camera-photographs-souvenir-1130731/",
+        "id": 1130731
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "carloslorite",
-        "page": "https://pixabay.com/photos/map-world-europe-earth-geography-5631690/",
-        "id": 5631690
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-terminal-man-travel-1822133/",
+        "id": 1822133
       },
       {
         "scene": 5,
-        "source": "commons",
-        "user": "Unknown author Unknown author",
-        "license": "Public domain",
-        "title": "Senyeres-Invencible-Plymouth.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Senyeres-Invencible-Plymouth.jpg",
-        "id": "c:16885931"
+        "source": "pixabay",
+        "user": "ClickerHappy",
+        "page": "https://pixabay.com/photos/airport-walking-waiting-gate-walk-4120835/",
+        "id": 4120835
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Papafox",
-        "page": "https://pixabay.com/photos/naval-battle-ship-sailing-ship-old-3195409/",
-        "id": 3195409
+        "user": "makabera",
+        "page": "https://pixabay.com/photos/boat-water-lake-alone-blue-calm-10467229/",
+        "id": 10467229
       },
       {
         "scene": 7,
-        "source": "commons",
-        "user": "Rijksmuseum",
-        "license": "CC0",
-        "title": "Titelpagina voor The Tapestry Hangings of the House of Lords, 1739 The Tapestry Hangings o",
-        "page": "https://commons.wikimedia.org/wiki/File:Titelpagina_voor_The_Tapestry_Hangings_of_the_House_of_Lords,_1739_The_Tapestry_Hangings_of_the_House_of_Lords_representing_the_several_engagements_between_the_English_and_Spanish_Fleets_in_the_ever_memorable_Year_MDLXX,_RP-P-1987-34-A.jpg",
-        "id": "c:84620324"
+        "source": "pixabay",
+        "user": "stux",
+        "page": "https://pixabay.com/photos/luggage-travel-sunlight-vacations-1149289/",
+        "id": 1149289
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "SplitShire",
+        "page": "https://pixabay.com/photos/photographer-tourist-snapshot-407068/",
+        "id": 407068
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "DariuszSankowski",
+        "page": "https://pixabay.com/photos/journey-adventure-photo-map-old-1130732/",
+        "id": 1130732
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "SOFCOR",
+        "page": "https://pixabay.com/photos/nature-outdoors-travel-exploration-2990060/",
+        "id": 2990060
       }
     ],
     "image_source": "pixabay",
