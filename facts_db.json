@@ -62199,7 +62199,36 @@
     },
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0581_스페인.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0581_스페인.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "brush",
+      "band_color": "#f7f6ed",
+      "band_opacity": 100,
+      "band_w": 130,
+      "band_h": 1.25,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#f51313",
+      "color2": "#000000",
+      "text1": "스페인 무적함대",
+      "text2": "언제부터 시작되었나?",
+      "colors1": {
+        "0": "#ec1212",
+        "1": "#e45728"
+      },
+      "sizes1": {},
+      "colors2": {},
+      "sizes2": {}
+    }
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
