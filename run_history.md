@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-10 18:01:36 (KST) · 기록 1470건 · 소재 623개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-10 19:15:05 (KST) · 기록 1476건 · 소재 623개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,9 +9,9 @@
 | -c | 57 | 0 | 24분 56초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 129 | 0 | 30초 |
+| apply_review | 130 | 0 | 30초 |
 | approve | 32 | 0 | 6초 |
-| build_video | 61 | 0 | 11시간 13분 |
+| build_video | 62 | 0 | 11시간 20분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
@@ -20,18 +20,18 @@
 | export_review | 38 | 0 | 6초 |
 | fetch_images | 163 | 3 | 2시간 11분 |
 | generate_culture_facts | 14 | 0 | 28분 40초 |
-| generate_script | 175 | 0 | 1시간 11분 |
+| generate_script | 176 | 0 | 1시간 12분 |
 | generate_tts | 73 | 0 | 28분 28초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 39 | 0 | 1분 3초 |
-| promote_ready | 129 | 0 | 26초 |
+| make_thumbnail | 40 | 0 | 1분 5초 |
+| promote_ready | 130 | 0 | 26초 |
 | redo_videos | 24 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | upload_to_youtube | 21 | 0 | 12분 40초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
-| 코드업데이트 | 78 | 0 | 0초 |
+| 코드업데이트 | 79 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -39,6 +39,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 19:14 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 581 | ✅ | 1초 |  |
+| 19:14 | PC | build_video | build_video.py --index 581 --channel gonmauY --handle @gonmauY | ✅ | 7분 19초 |  |
+| 19:07 | PC | generate_script | generate_script.py --extras-only --index 581 | ✅ | 3초 |  |
+| 19:07 | PC | promote_ready | promote_ready.py --start 581 | ✅ | 0초 |  |
+| 19:07 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 19:04 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 18:01 | PC | generate_tts | generate_tts.py --index 581 | ✅ | 3초 |  |
 | 18:01 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 18:01 | PC | promote_ready | promote_ready.py --start 581 | ✅ | 0초 |  |
