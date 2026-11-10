@@ -1671,10 +1671,28 @@ with T3b:
     from common import load_db, save_db, visual_dir
     db_ = load_db()
     cand = [i for i, f in enumerate(db_) if f.get("status") in ("scripted", "tts_done", "video_done") and i >= start]
+    _direct = st.text_input("번호로 바로 열기 (목록에 없는 소재, 예: 595)", "", key="img_direct",
+                            help="목록은 '대본 완료 이상' 상태이고 시작 번호(start_index) 이상인 소재만 보입니다. 상태가 다르거나 시작 번호보다 앞이어도 번호를 넣으면 열립니다.")
+    _dn = int(_direct) if _direct.strip().isdigit() and int(_direct) < len(db_) else None
+    if _dn is not None and _dn not in cand:
+        _f_ = db_[_dn]
+        st.caption(f"[{_dn}] {_f_.get('country', '')} 상태: {_f_.get('status')} — 목록 조건(상태 scripted/tts_done/video_done, 번호 ≥ start_index {start})에 맞지 않아 직접 열었습니다.")
+        cand = sorted(cand + [_dn])
+        if _f_.get("status") == "rejected" and _f_.get("narration"):
+            st.warning(f"폐기(rejected) 상태입니다. 사유: {_f_.get('reject_reason', '')} — review.txt의 `제외:` 줄에 글자가 남아 있으면 저장할 때마다 다시 폐기됩니다. "
+                       "대본·이미지를 계속 쓰려면 아래 버튼으로 되살리고, review.txt의 `제외:` 뒤 글자를 지우세요.")
+            if st.button("폐기 해제 (대본 완료 상태로 되돌리기)", key=f"unrej_{_dn}"):
+                _dm = load_db()
+                _dm[_dn]["status"] = "scripted"
+                _dm[_dn].pop("reject_reason", None)
+                save_db(_dm)
+                st.session_state["gh_dirty"] = True
+                st.rerun()
     if not cand:
         st.info("대상 소재가 없습니다.")
     else:
-        idx = st.selectbox("소재 번호", cand, key="img_sel", format_func=lambda i: f"{i} {db_[i].get('country', '')} ({db_[i].get('status')})")
+        _def = cand.index(_dn) if _dn in cand else 0
+        idx = st.selectbox("소재 번호", cand, _def, key=f"img_sel_{_dn}", format_func=lambda i: f"{i} {db_[i].get('country', '')} ({db_[i].get('status')})")
         item = db_[idx]
         folder = visual_dir(HERE, idx, item)
         st.checkbox("이미 업로드된 영상은 이미지를 다시 받을 때 유튜브 설명(사진 출처)도 같이 수정", True, key="desc_sync",
