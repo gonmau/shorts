@@ -54322,7 +54322,7 @@
     "verify_note": "Ritual",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:41.979938+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "코끼리는 친구가 죽으면 종종 장례식 같은 행동을 보입니다. 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다. 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다. 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다. 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다. 코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.",
     "cross_checked": true,
     "cross_sources": 3,
@@ -54403,7 +54403,150 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0465_페루_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0465_페루_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "elephant funeral",
+      "elephant mourning leaves",
+      "elephant ritual pattern",
+      "crow funeral behavior",
+      "elephant memory display",
+      "animal consciousness"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Heck, Johann Georg, -1857 Henry Winkles",
+        "license": "Public domain",
+        "title": "View) Plate 5. (Greek Funeral; War Elephant and Chariot. (IA dr view-plate-5-greek-funeral",
+        "page": "https://commons.wikimedia.org/wiki/File:View)_Plate_5._(Greek_Funeral;_War_Elephant_and_Chariot._(IA_dr_view-plate-5-greek-funeral-war-elephant-and-chariot-12190377).jpg",
+        "id": "c:194593405"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Amandad",
+        "page": "https://pixabay.com/photos/elephant-tusk-ivory-animal-trunk-419613/",
+        "id": 419613,
+        "type": "photo"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/elephant-skin-elephant-245071/",
+        "id": 245071
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "GAIMARD",
+        "page": "https://pixabay.com/photos/raven-crow-corvid-birds-animals-7561469/",
+        "id": 7561469,
+        "type": "photo"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "James St. John",
+        "license": "CC BY 2.0",
+        "title": "Mammut americanum - Burning Tree Mastodon (Upper Pleistocene, 11.39 ka; Burning Tree Golf ",
+        "page": "https://commons.wikimedia.org/wiki/File:Mammut_americanum_-_Burning_Tree_Mastodon_(Upper_Pleistocene,_11.39_ka;_Burning_Tree_Golf_Course,_south_of_Heath,_southern_Licking_County,_central_Ohio,_USA)_2_(15276133490).jpg",
+        "id": "c:40022477"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Mostafameraji",
+        "license": "CC0",
+        "title": "پوزه و بینی یک سگ باکسر ماده - حیوانات در ایران 06.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%D9%BE%D9%88%D8%B2%D9%87_%D9%88_%D8%A8%DB%8C%D9%86%DB%8C_%DB%8C%DA%A9_%D8%B3%DA%AF_%D8%A8%D8%A7%DA%A9%D8%B3%D8%B1_%D9%85%D8%A7%D8%AF%D9%87_-_%D8%AD%DB%8C%D9%88%D8%A7%D9%86%D8%A7%D8%AA_%D8%AF%D8%B1_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_06.jpg",
+        "id": "c:120649596"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2608,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5a52b40cae7f",
+        "at": "2026-11-11 19:45",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3419,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "facbe75d956f",
+        "at": "2026-11-11 19:45",
+        "scene": 2,
+        "rejected_ids": [
+          419613,
+          "c:5246384"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2839,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "14160aabaa15",
+        "at": "2026-11-11 19:45",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3508,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "938f7af0378c",
+        "at": "2026-11-11 19:46",
+        "scene": 4,
+        "rejected_ids": [
+          5996089,
+          7561469,
+          "c:5246384"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2764,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "29e417f81b5e",
+        "at": "2026-11-11 19:45",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2465,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c15c97c2e43b",
+        "at": "2026-11-11 19:46",
+        "scene": 6,
+        "rejected_ids": [
+          3391908,
+          "c:120649596",
+          "c:131565998"
+        ]
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0465_페루.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0465_페루.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
@@ -54529,7 +54672,11 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0467_브라질_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0467_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -56513,7 +56660,7 @@
     "verify_note": "Swiss cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:28.523449+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -56525,7 +56672,38 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "narration": "알프스로 둘러싸인 작은 마을, 여기서만 풍기는 진한 치즈 향! 스위스 요리는 국가 전체의 전통과 지역·지방의 특색이 뒤섞인 복합적인 맛을 자랑합니다. 알프스 산맥이 만든 자연적 고립 때문에 각 마을은 서로 다른 기후와 토양을 품게 되고, 그 결과 치즈와 와인이 각각의 환경에 맞게 자랍니다. 예를 들어, 고도가 높은 고지대에서는 강한 풍미의 에멘탈이, 저지대에서는 부드러운 그루예르가 주로 생산됩니다. 그런데 이 다양성은 알프스로 인해 접근이 어려운 지역에서 특히 두드러집니다. 같은 나라 안에서도 전혀 다른 풍미의 치즈를 맛볼 수 있다는 점이 바로 스위스 요리의 매력입니다. 알프스가 만든 자연의 장벽이, 결국 한 나라 안에 여러 미식 세계를 만들어낸 셈이죠. 그래서 여러분이 스위스를 여행할 때, 산길을 따라 내려가며 서로 다른 치즈를 한 입씩 맛보는 순간, 그 차이를 직접 체험하게 될 겁니다. 이처럼 알프스가 만든 고립은 스위스 요리를 더욱 풍부하고 독특하게 만들고, 그 풍미는 언제나 새로운 놀라움을 안겨줍니다.",
+    "title_line1": "스위스지역치즈향",
+    "title_line2": "알프스고립비밀",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*치즈* 향 가득"
+      },
+      {
+        "s": 4,
+        "text": "고지대 *에멘탈* 강풍미"
+      },
+      {
+        "s": 6,
+        "text": "다른 *치즈* 매력"
+      }
+    ],
+    "image_queries": [
+      "Alpine village cheese aroma",
+      "Swiss cuisine regional flavors",
+      "Swiss Alpine cheese vineyards",
+      "Emmental cheese high altitude",
+      "Remote Swiss alpine cheese farms",
+      "Assorted Swiss cheeses",
+      "Swiss Alpine food barrier",
+      "Swiss cheese tasting trail",
+      "Alpine cheese flavor surprise"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "전 세계 22개 사무소를 둔 변호사 사무실",
