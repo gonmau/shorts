@@ -11,7 +11,7 @@
  "intro_logo": true,
  "intro_name": false,
  "cta": "구독 & 좋아요",
- "recap": false,
+ "recap": true,
  "recap_cards": false,
  "compare": false
 }
