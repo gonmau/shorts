@@ -110,11 +110,12 @@ def ensure_tags(client, models, fact):
               'Answer with JSON only: {"need":"id","emotion":"id"}')
     for m in models:
         try:
-            r = client.chat.completions.create(model=m, messages=[{"role": "user", "content": prompt}], max_completion_tokens=60, temperature=0.1)
+            kw = {"max_completion_tokens": 1200, "extra_body": {"reasoning_effort": "low"}} if "gpt-oss" in str(m) else {"max_completion_tokens": 80}
+            r = client.chat.completions.create(model=m, messages=[{"role": "user", "content": prompt}], temperature=0.1, **kw)
             d = _parse(r.choices[0].message.content or "") or {}
             n, e = norm("need", d.get("need")), norm("emotion", d.get("emotion"))
             if n:
-                fact["need"] = n
+                fact["need"] = n  # 추론 모델은 토큰이 부족하면 빈 응답이 오므로 위에서 한도를 늘림
                 if e:
                     fact["emotion"] = e
                 return True
