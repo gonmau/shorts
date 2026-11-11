@@ -57690,39 +57690,41 @@
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
     "status": "scripted",
-    "narration": "포도 한 덩어리를 짜서 바로 와인 한 잔, 상상해 보셨나요? 페루의 작은 마을에서는 포도 수확이 끝난 뒤, 광장 한가운데서 바로 그 장면이 펼쳐집니다. 주민들은 전통적인 압착 기구로 포도를 짜고, 바로 만든 와인을 한 모금씩 마시며 축제를 시작합니다. 와인만 마시는 것이 아니라, 현지 음식과 활기찬 음악도 함께 흘러나와 분위기를 한층 풍성하게 만들죠.  \n\n그런데 이 축제엔 고대 그리스의 디오니소스 의식과 닮은 종교적 요소가 섞여 있습니다. 포도를 짜는 순간을 신성한 의식으로 여기고, 와인을 신에게 바치는 듯한 퍼포먼스를 선보이기 때문입니다. 이런 형태는 세계 여러 지역에서도 비슷하게 나타나지만, 페루에서는 특히 마을 공동체가 모여 전통과 현대가 어우러지는 독특한 풍경을 보여줍니다.  \n\n끝없이 이어지는 포도 향과 음악 사이, 그 순간 여러분은 마치 시간 여행을 하는 듯한 여운을 느끼게 됩니다. 포도를 짜자마자 와인 한 잔, 그 짜릿함이 바로 여기, 페루의 광장에서 살아 숨 쉬고 있습니다.",
+    "scene_count": 10,
+    "redo_ts": 1794379345.1194937,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "포도 한 덩어리를 짜서 바로 와인 한 잔?! 페루의 작은 마을에서는 포도 수확이 끝난 뒤, 광장 한가운데서 와인 시음과 동시에 포도 압착 시연이 열립니다. 주민들은 직접 손으로 포도를 으깨며, 막 나온 즙으로 만든 와인을 마시고, 전통 음식과 현지 음악을 즐깁니다.  \n\n그런데 이 축제엔 고대 그리스 디오니소스 의식을 떠올리게 하는 종교적 요소도 포함돼 있습니다. 축제 참가자들은 포도즙을 신성하게 여기며, 의식적인 춤과 노래로 풍요를 기원합니다.  \n\n전 세계 여러 지역에서도 비슷한 와인 축제가 열리지만, 페루의 경우 마을 공동체가 직접 손으로 압착하고 즉석에서 마시는 모습이 특히 인상적입니다. 포도 한 알이 바로 와인 한 잔이 되는 순간, 전통과 현대가 만나 작은 광장을 축제의 무대로 바꾸는 순간이죠. 결국, 포도즙이 와인으로 변하는 순간이 바로 이곳 페루에서 가장 살아있는 문화 체험이 됩니다.",
     "title_line1": "페루 와인 축제",
-    "title_line2": "포도즉시와인?",
+    "title_line2": "포도즙 바로 와인?",
     "highlights": [
       {
         "s": 1,
-        "text": "포도즙 바로 *와인*"
+        "text": "포도즙 바로 *와인*!"
       },
       {
-        "s": 3,
-        "text": "전통 *압착* 축제"
+        "s": 2,
+        "text": "마을 광장 *압착* 쇼"
       },
       {
         "s": 5,
-        "text": "*디오니소스* 흔적"
+        "text": "신성한 *포도즙* 춤"
       },
       {
-        "s": 9,
-        "text": "즉시 *와인* 한잔"
+        "s": 7,
+        "text": "전통·현대 *만남*"
       }
     ],
     "image_queries": [
-      "fresh grape juice wine",
-      "Peruvian village square grape harvest",
-      "traditional grape press festival Peru",
-      "Peruvian food and music festival",
-      "Dionysus ritual Peru wine",
-      "sacred wine offering ceremony",
-      "Peruvian community wine tradition",
-      "grape vines music evening",
-      "immediate wine glass Peru square"
-    ],
-    "scene_count": 10
+      "grape juice to wine",
+      "village square wine press",
+      "Peru people crushing grapes",
+      "ancient wine ceremony",
+      "sacred grape juice dance",
+      "Peru community hand wine press",
+      "traditional modern wine festival",
+      "Peru grape to wine"
+    ]
   },
   {
     "topic": "태국(Thailand) 파타니 말레이인(Patani Malays) 공동체",
