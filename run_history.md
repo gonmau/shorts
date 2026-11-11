@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 21:30:24 (KST) · 기록 1597건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 21:32:09 (KST) · 기록 1598건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -30,7 +30,7 @@
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 2 | 0 | 53초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
-| 롱폼 | 66 | 6 | 5시간 34분 |
+| 롱폼 | 66 | 7 | 5시간 34분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
 | 코드업데이트 | 86 | 0 | 0초 |
 
@@ -40,6 +40,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:31 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 나라:미국,나라:영국,나라:중국,분야:군사/전쟁사,분야:영토/국경 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style  | ❌ failed | 0초 | 조건에 맞는 소재가 2개뿐입니다 (최소 3개 필요). 영상이 끝나고 롱폼에 안 쓴 소재가 더 필요하거나 theme/start_index를 바꿔 주세요. |
 | 21:29 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_longform.py, local_ui.py, longform_pick.py) | ✅ |  |  |
 | 21:18 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 21:13 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 1초 |  |
