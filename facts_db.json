@@ -64230,6 +64230,15 @@
         "id": "c:59443607"
       },
       {
+        "scene": 8,
+        "source": "commons",
+        "user": "Anonymous Unknown author",
+        "license": "Public domain",
+        "title": "RMS Cedric at Sea.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:RMS_Cedric_at_Sea.jpg",
+        "id": "c:98862933"
+      },
+      {
         "scene": 9,
         "source": "commons",
         "user": "Print made by: James Gillray Published by: Hannah Humphrey",
@@ -64649,11 +64658,11 @@
       {
         "scene": 8,
         "source": "commons",
-        "user": "Van Ewyk, Nicolaas",
+        "user": "Astronaut photograph ISS047-E-99713 was acquired on May 6, 2016, with a Nikon D4",
         "license": "Public domain",
-        "title": "Nouvelle Carte de la Moitie Meridionale du Globe Terrestre montrant la Variation du Compas",
-        "page": "https://commons.wikimedia.org/wiki/File:Nouvelle_Carte_de_la_Moitie_Meridionale_du_Globe_Terrestre_montrant_la_Variation_du_Compas,_ou_le_Merveileux_accord_(IA_dr_nouvelle-carte-de-la-moitie-meridionale-du-globe-terrestre-montrant-la-vari-10997000).jpg",
-        "id": "c:194218375"
+        "title": "Iss047e099713 lrg Manila.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Iss047e099713_lrg_Manila.jpg",
+        "id": "c:51008393"
       }
     ],
     "image_source": "pixabay",
