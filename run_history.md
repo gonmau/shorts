@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 22:30:15 (KST) · 기록 1622건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 22:35:02 (KST) · 기록 1623건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | trend_research | 2 | 0 | 53초 |
 | update_description | 4 | 0 | 12초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
-| 롱폼 | 68 | 10 | 5시간 48분 |
+| 롱폼 | 68 | 11 | 5시간 50분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
 | 코드업데이트 | 88 | 0 | 0초 |
 
@@ -41,6 +41,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:34 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-ima | ❌ failed | 2분 0초 |    593 이슬람제국: 10장 중 10번 없음    583 싱가포르: 10장 중 9, 10번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요.  |
 | 22:30 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-ima | ❌ failed | 1분 58초 |    593 이슬람제국: 10장 중 10번 없음    583 싱가포르: 10장 중 9, 10번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요.  |
 | 22:26 | PC | update_description | update_description.py --indexes 593 | ✅ | 2초 |  |
 | 22:26 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
