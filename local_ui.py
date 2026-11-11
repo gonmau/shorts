@@ -2954,12 +2954,19 @@ with TL:
 
         _recs_all = {i_: LS.get_rec(i_) for i_ in plan["members"]}
         _cn = [str(_dbl[i_].get("country", "")).strip() for i_ in plan["members"] if 0 <= i_ < len(_dbl)]
-        _auto_in = LS.intro_text(_cn, len(plan["members"]), [str((_recs_all[i_].get("compare") or {}).get("right") or "") for i_ in plan["members"]])
+        try:   # 채널 표시에서 '챕터별 비교 카드'를 껐으면 자동 오프닝에도 비교 언급을 넣지 않는다 (영상 만들 때와 같은 기준)
+            _cmp_on = LS.compare_on() and bool(json.load(open("longform_brand.json", encoding="utf-8")).get("compare", True))
+        except Exception:
+            _cmp_on = LS.compare_on()
+        _auto_in = LS.intro_text(_cn, len(plan["members"]), [str((_recs_all[i_].get("compare") or {}).get("right") or "") if _cmp_on else "" for i_ in plan["members"]])
         _auto_out = LS.outro_text([(_recs_all[i_].get("recap") or str(_dbl[i_].get("topic", ""))) for i_ in plan["members"] if 0 <= i_ < len(_dbl)])
         with st.expander("🎤 오프닝 · 엔딩 멘트 (수정 가능)", expanded=False):
             st.caption("오프닝은 영상 맨 앞 소개, 엔딩은 '오늘의 요약' 화면에서 읽는 멘트입니다. 고치면 ③에서 이 문구로 음성을 새로 만듭니다. 비우거나 '자동 문구로 되돌리기'를 누르면 자동 문구를 씁니다.")
-            _in_t = st.text_area("오프닝 멘트", plan.get("intro_text") or _auto_in, height=110, key=f"lf_intro_txt_{abs(hash(str(plan.get('intro_text'))))}")
-            _out_t = st.text_area("엔딩 멘트 (요약 + 인사)", plan.get("outro_text") or _auto_out, height=170, key=f"lf_outro_txt_{abs(hash(str(plan.get('outro_text'))))}")
+            _tv = st.session_state.get("lf_txt_ver", 0)      # 저장/되돌리기 때마다 올려서, 칸에 남아 있던 이전 입력이 다시 보이지 않게 함
+            st.caption(f"기준: ①에서 만든 계획의 소재 {len(plan['members'])}개 ({', '.join(map(str, plan['members'][:12]))}{' …' if len(plan['members']) > 12 else ''}) · 지금 문구: "
+                       + ("**직접 고친 문구**" if (plan.get("intro_text") or plan.get("outro_text")) else "자동 문구") + " · 새로 고른 소재면 ①을 다시 실행하세요")
+            _in_t = st.text_area("오프닝 멘트", plan.get("intro_text") or _auto_in, height=110, key=f"lf_intro_txt_{_tv}_{abs(hash(str(plan.get('intro_text'))))}")
+            _out_t = st.text_area("엔딩 멘트 (요약 + 인사)", plan.get("outro_text") or _auto_out, height=170, key=f"lf_outro_txt_{_tv}_{abs(hash(str(plan.get('outro_text'))))}")
             _cps = 13.0 if EN else 6.0
             st.caption(f"예상 길이: 오프닝 약 {int(len(re.sub(chr(32), '', _in_t)) / _cps)}초 · 엔딩 약 {int(len(re.sub(chr(32), '', _out_t)) / _cps)}초. 마지막에 인사까지 끝나도록 문장을 마침표로 끝내세요.")
             m1, m2 = st.columns(2)
@@ -2971,11 +2978,13 @@ with TL:
                     else:
                         _pl.pop(_k, None)
                 json.dump(_pl, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.session_state["lf_txt_ver"] = _tv + 1
                 st.success("저장했습니다."); st.rerun()
             if m2.button("↩ 자동 문구로 되돌리기", key="lf_txt_reset"):
                 _pl = _lf_plan() or {}
                 _pl.pop("intro_text", None); _pl.pop("outro_text", None)
                 json.dump(_pl, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.session_state["lf_txt_ver"] = _tv + 1
                 st.rerun()
         try:
             import build_video as _BV0
