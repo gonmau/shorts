@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 16:12:59 (KST) · 기록 1508건 · 소재 639개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 16:41:07 (KST) · 기록 1518건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,22 +9,22 @@
 | -c | 58 | 0 | 25분 54초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 132 | 0 | 31초 |
-| approve | 33 | 0 | 7초 |
-| build_video | 62 | 0 | 11시간 20분 |
+| apply_review | 133 | 0 | 31초 |
+| approve | 34 | 0 | 7초 |
+| build_video | 63 | 0 | 11시간 34분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 39 | 0 | 7초 |
-| fetch_images | 171 | 4 | 2시간 13분 |
+| export_review | 40 | 0 | 7초 |
+| fetch_images | 172 | 4 | 2시간 14분 |
 | generate_culture_facts | 15 | 0 | 31분 36초 |
-| generate_script | 178 | 0 | 1시간 12분 |
-| generate_tts | 73 | 0 | 28분 28초 |
+| generate_script | 180 | 0 | 1시간 12분 |
+| generate_tts | 74 | 0 | 28분 39초 |
 | image_check | 53 | 4 | 9분 38초 |
-| make_thumbnail | 41 | 0 | 1분 6초 |
-| promote_ready | 132 | 0 | 27초 |
+| make_thumbnail | 42 | 0 | 1분 19초 |
+| promote_ready | 133 | 0 | 27초 |
 | redo_videos | 24 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -40,6 +40,16 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 16:40 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 12초 |  |
+| 16:40 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 14분 11초 |  |
+| 16:26 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 10초 |  |
+| 16:26 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 1분 23초 |  |
+| 16:25 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 1초 |  |
+| 16:24 | PC | generate_script | generate_script.py --limit 1 --start 0 | ✅ | 12초 |  |
+| 16:24 | PC | export_review | export_review.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 16:24 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 16:24 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 16:24 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 16:12 | PC | trend_research | trend_research.py --yt 전쟁, 돈, ai, 재태크 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ✅ | 29초 |  |
 | 16:08 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 56초 |  |
 | 16:04 | PC | 코드업데이트 | gonmau/shorts: 3개 (generate_culture_facts.py, grounding.py, local_ui.py) | ✅ |  |  |
