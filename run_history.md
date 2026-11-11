@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 10:12:28 (KST) · 기록 1479건 · 소재 623개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 10:20:26 (KST) · 기록 1480건 · 소재 623개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -28,6 +28,7 @@
 | redo_videos | 24 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
+| trend_research | 1 | 0 | 24초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
 | 쇼츠 | 113 | 6 | 12시간 17분 |
@@ -39,6 +40,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:20 | PC | trend_research | trend_research.py --yt 세계문화 상식, 영토, 전쟁 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ✅ | 24초 |  |
 | 10:12 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, trend_research.py) | ✅ |  |  |
 
 ### 2026-11-10
