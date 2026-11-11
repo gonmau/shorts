@@ -120,6 +120,54 @@ def _dup_of(h, hashes, thr=6):
     return None
 
 
+def _country_en(item):
+    try:
+        from country_codes import english_name
+        return english_name(str(item.get("country", "")).strip())
+    except Exception:
+        return str(item.get("country", "")).strip()
+
+
+_GENERIC = ("landmark", "culture", "street", "people", "skyline", "nature", "tradition", "travel")
+
+
+def _pad_queries(queries, n_slots, item):
+    """장면 수보다 검색어가 모자라면(AI가 덜 만든 경우) 빠진 장면용 검색어를 채운다: 근거 문서 제목 -> 나라 + 일반 단어. 이미 있는 검색어와는 겹치지 않게."""
+    queries = list(queries)
+    if len(queries) >= n_slots:
+        return queries
+    cn = _country_en(item)
+    anchor = " ".join(str(item.get("verify_note") or "").split()[:4])
+    pool = ([anchor] if anchor else []) + [f"{cn} {g}".strip() for g in _GENERIC]
+    have = {q.lower() for q in queries}
+    for q in pool:
+        if len(queries) >= n_slots:
+            break
+        if q and q.lower() not in have:
+            queries.append(q)
+            have.add(q.lower())
+    while len(queries) < n_slots:          # 그래도 모자라면(희귀한 경우) 나라 이름만이라도
+        queries.append(f"{cn} {len(queries) + 1}".strip())
+    return queries
+
+
+def _candidates(query, n, item, anchor):
+    """한 장면에서 차례로 시도할 검색어: 원래 검색어 -> 단어를 줄인 것 -> 근거 문서 제목 -> 나라 + 일반 단어 (최대 5개)"""
+    toks = str(query).split()
+    cand = [query]
+    if len(toks) > 2:
+        cand += [" ".join(toks[:2]), " ".join(toks[-2:])]
+    cn = _country_en(item)
+    if anchor:
+        cand.append(anchor)
+    cand.append(f"{cn} {_GENERIC[n % len(_GENERIC)]}".strip())
+    out = []
+    for q in cand:
+        if q and q.lower() not in {x.lower() for x in out}:
+            out.append(q)
+    return out[:5]
+
+
 def _fetch_scene(session, key, n, query, dest, used, anchor):
     """한 장면의 사진을 받아 저장하고 credit dict 를 돌려준다. 결과가 없으면 None."""
     hit, relevant = pick(session, key, query, used)
@@ -183,6 +231,10 @@ def fetch_item(session, key, idx, item, force):
     if not queries:
         country = str(item.get("country", "")).strip()
         queries = [f"{country} travel"] * n_slots
+    if queries and len(queries) < n_slots:
+        print(f"    검색어 {len(queries)}개 < 장면 {n_slots}개: 빠진 장면의 검색어를 채웁니다")
+        queries = _pad_queries(queries, n_slots, item)
+        item["image_queries"] = list(queries)
 
     try:    # 내가 올리거나 고른 사진(my_images/<번호>_<컷>.jpg)은 자동 검색보다 먼저 쓴다
         import cuts as _cuts
@@ -216,18 +268,24 @@ def fetch_item(session, key, idx, item, force):
             dest.unlink()  # 검색어가 바뀐 경우 예전 사진이 남지 않게 한다
         credit = None
         try:
-            for attempt in range(4):      # 이미 쓴 사진과 같은 사진이면 버리고 다른 후보를 다시 찾는다
-                credit = _fetch_scene(session, key, n, query, dest, used, anchor)
-                if credit is None:
+            for q_try in _candidates(query, n, item, anchor):      # 결과가 없으면 검색어를 줄이거나 나라·주제 단어로 바꿔 다시 찾는다
+                for attempt in range(4):      # 이미 쓴 사진과 같은 사진이면 버리고 다른 후보를 다시 찾는다
+                    credit = _fetch_scene(session, key, n, q_try, dest, used, anchor)
+                    if credit is None:
+                        break
+                    h = _dhash(dest)
+                    dup = _dup_of(h, hashes)
+                    if dup is None:
+                        hashes[n] = h
+                        break
+                    print(f"    scene_{n:02d}: 장면 {dup}번과 같은 사진 -> 버리고 다른 사진을 찾습니다 ({attempt + 1}/4)")
+                    dest.unlink(missing_ok=True)
+                    credit = None
+                if credit is not None:
+                    if q_try != query:
+                        print(f"    scene_{n:02d}: 원래 검색어 '{query}'는 결과가 없어 '{q_try}'로 받았습니다")
+                        query = q_try
                     break
-                h = _dhash(dest)
-                dup = _dup_of(h, hashes)
-                if dup is None:
-                    hashes[n] = h
-                    break
-                print(f"    scene_{n:02d}: 장면 {dup}번과 같은 사진 -> 버리고 다른 사진을 찾습니다 ({attempt + 1}/4)")
-                dest.unlink(missing_ok=True)
-                credit = None
             if credit is None:
                 if dest.exists():
                     dest.unlink()
