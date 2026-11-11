@@ -2631,7 +2631,7 @@ with TL:
     lcount = l1.number_input("auto 개수", 3, 30, 6, key="lf_count")
     lstart = l2.number_input("auto 시작 번호", 0, 9999, 0 if EN else 0, key="lf_start", help="이 번호 이상인 소재만 후보")
     ltheme_free = l3.text_input("직접 입력 키워드 (쉼표로 여러 개)", key="lf_theme",
-                                help="나라·분야·주제에 이 글자가 하나라도 들어 있으면 후보. 예: 음식, 일본. 비우면 조건 없이 번호순")
+                                help="나라 이름이면 그 나라 소재만, 분야 이름이면 그 분야(여러 나라 섞임), 그 외 글자는 나라·분야·주제·제목에 들어 있으면 후보. 직접 지정은 '나라:일본', '분야:음식'. 비우면 번호순")
     ltheme = ltheme_free
     if lm.startswith("auto"):
         # 지금 롱폼 후보(영상 완료 + 아직 롱폼에 안 쓴 소재)에서 고를 수 있는 키워드를 보여줌
@@ -2654,12 +2654,16 @@ with TL:
         _pc = k1.multiselect("나라/대상", [c_ for c_, _ in _cc.most_common()], key="lf_kw_c", format_func=lambda c_: f"{c_} ({_cc[c_]})")
         _pt = k2.multiselect("분야", [t_ for t_, _ in _tc.most_common()], key="lf_kw_t", format_func=lambda t_: f"{t_} ({_tc[t_]})")
         _pw = k3.multiselect("자주 나온 주제 단어", [w_ for w_, n_ in _wc.most_common(40) if n_ >= 2], key="lf_kw_w", format_func=lambda w_: f"{w_} ({_wc[w_]})")
-        _kws = [x.strip() for x in _pc + _pt + _pw + ltheme_free.split(",") if x.strip()]
+        import longform_pick as _LP
+        _kws = ["나라:" + c_ for c_ in _pc] + ["분야:" + t_ for t_ in _pt] + list(_pw) + [x.strip() for x in ltheme_free.split(",") if x.strip()]
         ltheme = ",".join(dict.fromkeys(_kws))
         if _kws:
-            _lw = [x.lower() for x in _kws]
-            _hit = [i_ for i_ in _pool if any(t_ in " ".join(str(_fdb[i_].get(k_, "")) for k_ in ("theme", "topic", "country", "title_line1", "title_line2")).lower() for t_ in _lw)]
-            st.caption(f"선택한 키워드({', '.join(_kws)})에 맞는 후보: **{len(_hit)}개** " + ("→ " + ", ".join(f"{i_} {str(_fdb[i_].get('country', ''))[:10]}" for i_ in _hit[:12]) + (" …" if len(_hit) > 12 else "") if _hit else "(없음: 키워드를 바꾸세요)"))
+            _hit = _LP.select(_pool, _fdb, ltheme)
+            _g = _LP.parse(ltheme, _fdb)
+            st.caption("해석: " + " · ".join(f"{n_} {', '.join(v_)}" for n_, v_ in (("나라", _g["countries"]), ("분야", _g["fields"]), ("자유 키워드", _g["free"])) if v_)
+                       + (" → 나라끼리만" if _g["countries"] and not (_g["fields"] or _g["free"]) else "") + (" (여러 종류를 고르면 모두 맞는 소재)" if sum(bool(v_) for v_ in _g.values()) > 1 else "")
+                       + ("" if _g["countries"] else " · 나라가 골고루 섞이게 뽑습니다"))
+            st.caption(f"선택한 키워드({_LP.label(ltheme)})에 맞는 후보: **{len(_hit)}개** " + ("→ " + ", ".join(f"{i_} {str(_fdb[i_].get('country', ''))[:10]}" for i_ in _hit[:12]) + (" …" if len(_hit) > 12 else "") if _hit else "(없음: 키워드를 바꾸세요)"))
     lidx = st.text_input("manual 번호 (예: 109,110,115-118)", key="lf_idx")
     ltitle = st.text_input("제목 (비우면 자동)", key="lf_title")
     lx1, lx2 = st.columns(2)

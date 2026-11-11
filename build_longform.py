@@ -140,13 +140,8 @@ def select_members(db, lf_db, mode, indexes, theme, count, start, lo, hi, exclud
             if i >= start and f.get("status") == "video_done" and str(f.get("narration", "")).strip() and i not in used
             and i not in exclude and i not in add]
     if theme and theme.strip():
-        ts = [x.strip().lower() for x in re.split(r"[,;/|]", theme) if x.strip()]   # 쉼표로 여러 키워드: 하나라도 들어 있으면 후보
-
-        def _hit(i):
-            f_ = db[i]
-            hay = " ".join(str(f_.get(k, "")) for k in ("theme", "topic", "country", "title_line1", "title_line2")).lower()
-            return any(t in hay for t in ts)
-        pool = [i for i in pool if _hit(i)]
+        import longform_pick as LP          # 나라/분야/자유 키워드를 구분해서 거르고, 나라 없이 분야만이면 나라가 골고루 섞이게 정렬
+        pool = LP.select(pool, db, theme)
     chosen, total = [], 0.0
     for i in pool:
         s = est_seconds(db[i])
@@ -447,10 +442,16 @@ def make_title(db, members, theme, custom):
         return custom.strip()[:95]
     n = len(members)
     first = DISP(db[members[0]].get("country", ""))
+    import longform_pick as LP
+    tl = [t for t in LP.label(theme).split(", ") if t]
     if IS_EN:
-        base = f"{n} {' & '.join(x.strip().title() for x in re.split(r'[,;/|]', theme) if x.strip()) + ' ' if theme else ''}Korean Culture Facts That Surprise Foreigners"
-    elif theme:
-        base = f"세계의 {' · '.join(x.strip() for x in re.split(r'[,;/|]', theme) if x.strip())} {n}가지 | {first} 외"
+        base = f"{n} {' & '.join(x.strip().title() for x in tl) + ' ' if tl else ''}Korean Culture Facts That Surprise Foreigners"
+    elif tl:
+        g = LP.parse(theme, db)
+        if g["countries"] and not g["fields"] and not g["free"]:
+            base = f"{' · '.join(g['countries'])} 문화 상식 {n}가지"          # 나라만 고른 롱폼: 그 나라 이야기
+        else:
+            base = f"세계의 {' · '.join(tl)} {n}가지 | {first} 외"
     else:
         base = f"세계 문화 상식 {n}가지 | {first}부터 {DISP(db[members[-1]].get('country', ''))}까지"
     return base[:95]
