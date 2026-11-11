@@ -2507,6 +2507,19 @@ with T1d:
         _q = _TD.get("quota") or {}
         st.caption(f"마지막 조사: {_TD.get('updated', '-')} · 오늘 YouTube 사용량 {_q.get('used', 0) if _q.get('date') == __import__('datetime').date.today().isoformat() else 0}유닛")
         _an = _TD.get("analysis") or {}
+        import style_profile as _SPt
+        _Pt = _SPt.load(); _tr = dict(_Pt.get("trend") or {}); _tx = _an.get("texts") or {}
+        _on = st.checkbox("🔗 이 트렌드(패턴·후크·니즈)를 새 소재·대본 만들 때 AI에게 전달", bool(_tr.get("on")), key="tr_on",
+                          help="켜면 style_profile.json에 저장되어 GitHub 자동 실행에도 같이 적용됩니다. 다른 영상의 제목·문장은 전달하지 않고 패턴·후크·니즈만 전달하며, 그대로 따라 쓰지 말라고 지시합니다")
+        if _tx and (_tr.get("topic") != _tx.get("topic") or _tr.get("script") != _tx.get("script")) or _on != bool(_tr.get("on")):
+            _Pt["trend"] = {"on": _on, "topic": _tx.get("topic", _tr.get("topic", "")), "script": _tx.get("script", _tr.get("script", "")), "at": _an.get("at", "")}
+            _SPt.save(_Pt); st.session_state["gh_dirty"] = True
+        if _on and not (_tx.get("topic") or _tr.get("topic")):
+            st.warning("전달할 분석 결과가 아직 없습니다. 'AI 분석'을 켜고 조사하세요.")
+        elif _on:
+            st.caption(f"전달 중인 트렌드 기준일: {_an.get('at', _tr.get('at', '-'))} (오래되면 다시 조사하세요)")
+            with st.expander("AI에게 실제로 전달되는 문장"):
+                st.text(_Pt["trend"].get("topic", "") + "\n\n" + _Pt["trend"].get("script", ""))
         R1, R2, R3, R4 = st.tabs(["💡 추천 소재", "🎬 터진 영상", "📺 채널", "🌐 위키·레딧"])
         with R1:
             if not _an:
@@ -2516,8 +2529,13 @@ with T1d:
                     st.markdown(f"**{_t.get('title', '')}**  \n🎯 {_t.get('need', '')} · 💗 {_t.get('emotion', '')}  \n_근거: {_t.get('why', '')} ({_t.get('source', '')})_")
                     if _t.get("dup"):
                         st.warning("⚠ 이미 만든 소재와 겹칠 수 있음: " + str(_t["dup"]))
-                    if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}", disabled=bool(_t.get("dup")), help="중복 의심 소재는 막아 둡니다 (만든 뒤에도 같은 기준으로 한 번 더 검사)"):
-                        _ids = run_cap("add_topic.py", "keyword", "--keyword", _t.get("title", ""), "--wiki")
+                    if _t.get("copy"):
+                        st.warning("⚠ " + str(_t["copy"]) + " — 다른 제목으로 바꿔 '직접 추가'에서 만드세요")
+                    if _t.get("inspired"):
+                        st.caption("영감 영상: " + " · ".join(f"[{_k + 1}]({_u})" for _k, _u in enumerate(_t["inspired"])))
+                    if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}", disabled=bool(_t.get("dup") or _t.get("copy")), help="중복·제목 유사 소재는 막아 둡니다 (만든 뒤에도 같은 기준으로 한 번 더 검사). 영감이 된 영상 링크는 소재에 기록됩니다"):
+                        _ids = run_cap("add_topic.py", "keyword", "--keyword", _t.get("title", ""), "--wiki",
+                                       *(["--inspired", ",".join(_t["inspired"])] if _t.get("inspired") else []))
                         after_create(_ids, False)
             if _an.get("patterns"):
                 with st.expander("잘 터지는 제목 패턴 · 후크 · 니즈"):

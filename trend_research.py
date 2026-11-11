@@ -249,7 +249,7 @@ def do_analyze(data, top):
     vids = vids[:top]
     if not vids and not data["wiki"] and not data["reddit"]:
         raise SystemExit("분석할 데이터가 없습니다. 먼저 조사를 실행하세요")
-    vt = "\n".join(f"- {v['title']} (조회 {v['views']:,}, 구독자 {v['subs'] if v['subs'] is not None else '?'}, {v['secs']}초)" for v in vids)
+    vt = "\n".join(f"[{n}] {v['title']} (조회 {v['views']:,}, 구독자 {v['subs'] if v['subs'] is not None else '?'}, {v['secs']}초)" for n, v in enumerate(vids))
     wt = ", ".join(r["title"] for r in data["wiki"][:25])
     rt = "\n".join(f"- {r['title'][:100]} ({r['score']})" for r in data["reddit"][:15])
     ch = ("한국의 문화·일상·음식·예절·언어를 외국인에게 알려주는 영어 쇼츠 채널 'KoreaAtoZ'" if EN else "세계 각국의 문화·관습·금기·생활 규칙을 알려주는 한국어 쇼츠 채널 '세계 문화 상식'")
@@ -273,12 +273,14 @@ def do_analyze(data, top):
 형식: {{"patterns":[{{"name":"제목 패턴 이름","desc":"어떤 구조인지 한 줄","example":"예시 제목"}}],
 "hooks":["첫 문장 후크 유형 3~6개 (예: 금지/반전/숫자/공감 질문)"],
 "needs":[{{"need":"시청자 니즈 (호기심/공감/놀람/정보/웃음/자랑스러움 등)","evidence":"어떤 영상/글에서 보이는지"}}],
-"topic_ideas":[{{"title":"우리 채널에 맞는 소재 제목","why":"왜 지금 먹힐지(근거)","need":"충족하는 니즈","emotion":"유발 감정","source":"근거가 된 영상/문서/글"}}]}}
-topic_ideas는 8개. 근거 없이 지어내지 말고, 위 자료에 있는 신호만 근거로 써라. 정치·종교 논쟁·연예 가십·선정적 소재는 제외."""
+"topic_ideas":[{{"title":"우리 채널에 맞는 소재 제목","why":"왜 지금 먹힐지(근거)","need":"충족하는 니즈","emotion":"유발 감정","source":"근거가 된 영상/문서/글", "src_idx":[근거가 된 [터진 쇼츠] 번호들, 없으면 빈 배열]}}]}}
+topic_ideas는 8개. 터진 영상의 제목·문장을 그대로 따라 쓰지 말고, 같은 주제라도 우리 채널의 새로운 각도로 제목을 지어라. 근거 없이 지어내지 말고, 위 자료에 있는 신호만 근거로 써라. 정치·종교 논쟁·연예 가십·선정적 소재는 제외."""
     c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], max_completion_tokens=3500, temperature=0.4)
     t = c.choices[0].message.content or ""
     data["analysis"] = json.loads(t[t.find("{"):t.rfind("}") + 1])
     mark_dups(data["analysis"].get("topic_ideas", []), db)
+    mark_copies(data["analysis"].get("topic_ideas", []), vids)
+    data["analysis"]["texts"] = build_texts(data["analysis"])
     data["analysis"]["at"] = dt.date.today().isoformat()
     print(f"  분석 완료: 패턴 {len(data['analysis'].get('patterns', []))}, 소재 추천 {len(data['analysis'].get('topic_ideas', []))}")
 
@@ -299,6 +301,56 @@ def mark_dups(ideas, db):
                 best, why, idx = s, w, i
         if best >= 0.4:
             t["dup"] = f"[{idx}] {why}"
+
+
+def _norm(s):
+    return re.sub(r"[^0-9a-z가-힣]", "", str(s or "").lower())
+
+
+def mark_copies(ideas, vids, thr=0.5):
+    """추천 소재 제목이 조사한 영상 제목과 너무 비슷하면 copy 에 적고, 영감이 된 영상 링크를 inspired 에 기록한다"""
+    import difflib
+    for t in ideas:
+        t.pop("copy", None)
+        a = _norm(t.get("title"))
+        best, bt = 0.0, None
+        for v in vids:
+            b = _norm(v.get("title"))
+            if not a or not b:
+                continue
+            r = difflib.SequenceMatcher(None, a, b).ratio()
+            if r > best:
+                best, bt = r, v
+        if bt is not None and best >= thr:
+            t["copy"] = f"조사한 영상 제목과 {best:.2f} 유사: {bt['title'][:50]}"
+        urls = []
+        for i in t.get("src_idx") or []:
+            try:
+                urls.append(vids[int(i)]["url"])
+            except Exception:
+                pass
+        t["inspired"] = urls[:3]
+
+
+def build_texts(a):
+    """소재/대본 프롬프트에 붙일 트렌드 문단. 제목·문장은 전달하지 않고 패턴·후크·니즈만 전달한다"""
+    pat = "; ".join(f"{p.get('name')}({p.get('desc')})" for p in (a.get("patterns") or [])[:4])
+    hk = ", ".join(map(str, (a.get("hooks") or [])[:5]))
+    nd = ", ".join(str(n.get("need")) for n in (a.get("needs") or [])[:4])
+    if EN:
+        head = "[Recent trend signals - reference only; the notes below are in Korean, write your output in English]"
+        top = [f"Title patterns that work lately: {pat}", f"Hook types: {hk}", f"Viewer needs: {nd}",
+               "Use these only as direction. Never copy another video's title or wording; facts must come from the given material."]
+        sc = [f"Open with a hook of a fitting type: {hk}", f"Serve the viewer's need: {nd}",
+              "Do not add facts that are not in the material, and do not copy phrasing from other videos."]
+    else:
+        head = "[최근 트렌드 신호 - 참고용]"
+        top = [f"최근 잘 터진 제목 패턴: {pat}", f"효과적인 후크 유형: {hk}", f"시청자 니즈: {nd}",
+               "방향 참고용일 뿐입니다. 다른 영상의 제목·문장을 그대로 따라 쓰지 말고, 사실은 주어진 자료에서만 가져오세요."]
+        sc = [f"첫 문장은 소재에 맞는 후크 유형으로 시작: {hk}", f"시청자 니즈를 충족하는 방향으로 구성: {nd}",
+              "자료에 없는 사실을 추가하지 말고, 다른 영상의 표현을 그대로 쓰지 마세요."]
+    f = lambda L: head + "\n" + "\n".join("- " + x for x in L if x.split(": ", 1)[-1].strip()) if (pat or hk or nd) else ""
+    return {"topic": f(top), "script": f(sc)}
 
 
 def trend_hints(max_chars=900):

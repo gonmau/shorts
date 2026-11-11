@@ -54,7 +54,7 @@ TOPIC_AREAS = {
 
 
 def load():
-    d = {"rules": list(DEFAULT_ON), "custom": "", "avoid": "", "topic_areas": [], "topic_custom": ""}
+    d = {"rules": list(DEFAULT_ON), "custom": "", "avoid": "", "topic_areas": [], "topic_custom": "", "trend": {}}
     try:
         d.update({k: v for k, v in json.loads(FILE.read_text(encoding="utf-8")).items() if k in d})
     except Exception:
@@ -79,7 +79,9 @@ def block(kind="script", d=None):
         if d.get("avoid", "").strip():
             lines.append(("Do NOT pick: " if IS_EN else "다음은 소재로 쓰지 않기: ") + d["avoid"].strip())
         head = "[Editor's topic preferences]" if IS_EN else "[편집자 소재 선호]"
-        return head + "\n" + "\n".join("- " + x for x in lines) if lines else ""
+        out = head + "\n" + "\n".join("- " + x for x in lines) if lines else ""
+        tr = _trend(d, "topic")
+        return (out + "\n\n" + tr) if (out and tr) else (out or tr)
     lines = [RULES[k][2 if IS_EN else 1] for k in d.get("rules", []) if k in RULES]
     if kind == "longform" and "no_cliche_end" in d.get("rules", []):   # 롱폼 챕터 끝은 '다음 소재로 이어주는 말'이라 따로 표현
         lines = [(("The closing line of a chapter must not be a cliché sign-off ('stay tuned', 'see you next'); make it one natural sentence that leads into the next subject." if IS_EN
@@ -88,11 +90,20 @@ def block(kind="script", d=None):
         lines.append(d["custom"].strip())
     if d.get("avoid", "").strip():
         lines.append(("Never use these words/phrases: " if IS_EN else "다음 표현은 쓰지 않기: ") + d["avoid"].strip())
+    tr = _trend(d, "script")
     if not lines:
-        return ""
+        return tr
     head = ("[Editor's style guide - applies to HOW you write; factual accuracy and the rules above always come first]" if IS_EN
             else "[편집자 스타일 지침 - '어떻게 말할지'에만 적용. 사실 정확성과 위의 규칙이 항상 우선]")
-    return head + "\n" + "\n".join("- " + x for x in lines)
+    return head + "\n" + "\n".join("- " + x for x in lines) + ("\n\n" + tr if tr else "")
+
+
+def _trend(d, kind):
+    """트렌드 조사 결과(trend_research)를 요약한 문단. 켜져 있고 내용이 있을 때만."""
+    t = d.get("trend") or {}
+    if not t.get("on"):
+        return ""
+    return str(t.get("topic" if kind == "topic" else "script", "") or "").strip()
 
 
 def apply(prompt, kind="script"):

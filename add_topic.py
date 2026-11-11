@@ -169,6 +169,7 @@ def main():
     ap.add_argument("--url", default="")
     ap.add_argument("--wiki", action="store_true")
     ap.add_argument("--approve", action="store_true")
+    ap.add_argument("--inspired", default="", help="영감이 된 영상 링크(쉼표) - 기록만 함")
     ap.add_argument("--allow-dup", action="store_true", help="중복 의심이어도 그대로 추가")
     a = ap.parse_args()
 
@@ -196,6 +197,9 @@ def main():
         items = add_seeded(a, t, note, grounded=True, extra={"source_url": a.url, "seed_text": t[:600],
                                                              "verify_note": a.url or "SNS 글 기반 - 사실 확인 필요", "confidence": "low"})
 
+    if a.inspired.strip():
+        for it in items:
+            it["inspired_by"] = [x.strip() for x in a.inspired.split(",") if x.strip()]
     db = load_db()
     if a.mode != "manual" and not a.allow_dup:
         import find_dup_topics as FD
