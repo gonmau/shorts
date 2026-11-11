@@ -54838,7 +54838,7 @@
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
     "status": "video_done",
-    "narration": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면? 바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 **Samhain**입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다. 일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다. Samhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서 관찰되는 전통이지만, 비슷한 형태의 수확 축제는 다른 지역에서도 찾아볼 수 있습니다. 해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
+    "narration": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면? 바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 Samhain입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다. 일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다. Samhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서 관찰되는 전통이지만, 비슷한 형태의 수확 축제는 다른 지역에서도 찾아볼 수 있습니다. 해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-20b",
@@ -54881,14 +54881,14 @@
     "title_line1": "해가 지는 순간",
     "title_line2": "새로운 축제 시작",
     "image_queries": [
-      "sunset over horizon",
-      "celtic pumpkin lantern Samhain",
-      "harvest field autumn",
-      "sunrise over landscape",
+      "October sunset horizon",
+      "Samhain festival Ireland",
+      "autumn harvest field",
+      "sunrise over meadow",
       "ancient stone tomb sunset",
-      "stone circle night sky",
-      "celtic stone circle Ireland",
-      "dark forest twilight"
+      "stone circle sunrise",
+      "Celtic village festival",
+      "dark twilight forest"
     ],
     "scene_count": 10,
     "grounding": {
@@ -55068,7 +55068,11 @@
     ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0468_아일랜드.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0468_아일랜드.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "redo_ts": 1794396869.3595858
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
