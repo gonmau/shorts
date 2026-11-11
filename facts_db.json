@@ -53650,7 +53650,7 @@
     "verify_note": "Buddhist cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요? 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다. 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.  \n\n그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요. 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다. 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.  \n\n이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요. 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?",
     "title_line1": "몰디브 축제, 채식만",
     "title_line2": "왜 비건인가?",
@@ -53698,7 +53698,20 @@
       "[contradicted] 6번 문장: Claim that food becomes a path to enlightenment for Maldives Buddhists is unsupported and contradicted by the absence of such a tradition.",
       "[contradicted] 7번 문장: The tradition described does not exist in Maldives, which is not a Buddhist culture."
     ],
-    "cross_verdict": "contradicted"
+    "cross_verdict": "contradicted",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 2,
+      "reason": "몰디브의 불교 식문화는 일부 승려·신자에게만 해당돼 일반적이지 않으며, 구체적 수치·제도는 없고, ‘축제때만 채식’이라는 주장도 문서화된 근거가 부족함.",
+      "avg": 3.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 2 (평균 3.0) 몰디브의 불교 식문화는 일부 승려·신자에게만 해당돼 일반적이지 않으며, 구체적 수치·제도는 없고, ‘축제때만 채식’이라는 주장도 문서화된 근거가 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -54161,7 +54174,20 @@
       "elephant memory display",
       "animal consciousness"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "코끼리의 장례 행동은 특정 연구 사례가 존재하지만, ‘동물도 의식’이라는 일반화는 과학적 논쟁이 있으며, 구체적 사례와 연구명을 제시하면 점수가 올라감.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
   },
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
@@ -54235,7 +54261,7 @@
     "verify_note": "Hug",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "두 명이 넘게 안아도 되는 이유, 궁금하지? 허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 전 세계 대부분의 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다. 이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 1,
@@ -54274,7 +54300,21 @@
       "cultural hugging traditions Brazil",
       "intimate group hug moment"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 2,
+      "concrete": 2,
+      "supported": 1,
+      "reason": "‘그룹 허그’는 전 세계적으로 흔한 현상이라 특수성·구체성이 낮고, 고유명사·수치·절차 등 실질적 정보가 거의 없어 검증 근거도 부족함.",
+      "avg": 1.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 1 (평균 1.7) ‘그룹 허그’는 전 세계적으로 흔한 현상이라 특수성·구체성이 낮고, 고유명사·수치·절차 등 실질적 정보가 거의 없어 검증 근거도 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -54342,7 +54382,19 @@
       "celtic stone circle Ireland",
       "dark forest twilight"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "Samhain이 해가 지는 순간 시작된다는 점은 켈트 전통에 명확히 기록돼 있으며, 날짜·지역·의식 등 구체적 정보가 풍부해 신뢰도가 높음.",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
@@ -54357,7 +54409,7 @@
     "verify_note": "Taoism",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "‘도(道)’를 따라 움직이면 몸도 바뀐다고?  \n도교는 중국에서 시작된 사상으로, ‘도’는 상황에 따라 길, 방법, 기술 등으로 해석됩니다. 이는 의도에 따라 달라지며, 도와의 조화를 강조합니다.  \n그런데 도교는 단순히 철학에 그치지 않습니다. 전통 의학, 명상, 점성술, 기공, 풍수, 내연금술 등 일상 생활 전반에 스며들어 있습니다.  \n‘도’에 대한 해석은 시대와 지역에 따라 다양하게 변해 왔지만, 그 중심에는 여전히 삶의 흐름과 조화가 자리합니다.  \n도와 함께 걸으면, 몸과 마음이 한층 더 유연해지는 듯한 느낌을 받을 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -54390,7 +54442,20 @@
       "flowing river landscape China",
       "person walking mountain path China"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 5,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "도교의 ‘도’ 개념은 광범위하지만, 생활 실천 예시(의학·풍수·기공 등)는 구체적이지만 문서화된 사례가 다소 일반적이라 점수가 중간 수준.",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 도교의 ‘도’ 개념은 광범위하지만, 생활 실천 예시(의학·풍수·기공 등)는 구체적이지만 문서화된 사례가 다소 일반적이라 점수가 중간 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
@@ -54446,7 +54511,17 @@
       "Iceland embassy Copenhagen",
       "Diplomatic cooperation ceremony"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "덴마크와 아이슬란드의 대사관 배치 사실은 외교 문서에 명시돼 있으며, 양국 관계라는 구체적 배경이 있어 독특하고 검증 가능함.",
+      "avg": 7.3,
+      "flags": []
+    }
   },
   {
     "topic": "오스만 1세의 작은 영토가 3대 대륙을 지배",
@@ -54550,7 +54625,17 @@
       "Easter Island and Juan Fernandez",
       "complex geography of Chile"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "칠레가 남극과 가장 가깝다는 구체적 지리·인구·면적 수치와 섬 관리 내용이 명확히 제시돼 있어 신뢰성이 높다.",
+      "avg": 7.7,
+      "flags": []
+    }
   },
   {
     "topic": "메뉴 한 장으로 역사를 읽다",
@@ -54654,7 +54739,19 @@
       "Canadian food history",
       "old menu whispering"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "캐나다의 특정 교수와 메뉴를 통한 역사 연구는 흥미롭지만 구체적 사례·수치가 부족하고 출처 확인이 어려워 점수가 중간이다.",
+      "avg": 5.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "레베(Levee) 전통",
@@ -54669,7 +54766,7 @@
     "verify_note": "Levee (ceremony)",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "왕이 아침에 일어나면 바로 국민을 맞이한다? 옛 프랑스 왕실에서는 바로 그 순간을 “레베(Levee)”라고 불렀습니다. 레베는 프랑스어 ‘lever’(일어나다)에서 유래했으며, 왕이 침대에서 일어나 궁전에서 신하들을 맞이하던 의식이었습니다. 전해지는 이야기에 따르면, 왕이 옷을 갈아입고 짧게 말하며 정책을 전하고, 신하들이 궁전 문을 열어 인사하는 모습이 묘사되곤 합니다. 그런데 오늘날 레베는 매일 열리지 않습니다. 특별한 행사나 기념일에 레베가 재현되기도 하고, 캐나다에서도 비슷한 형태의 모임이 새해에 열리는 경우가 있습니다. 이렇게 과거 왕의 아침 인사는 이제 특별한 순간에만 찾아볼 수 있는 문화적 흔적이 되었습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -54707,7 +54804,20 @@
       "Levee reenactment celebration",
       "historic royal greeting display"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 4,
+      "concrete": 4,
+      "supported": 3,
+      "reason": "레베 의식은 프랑스 특유라기보다 여러 나라에 퍼진 형태이며, 현대 캐나다·미국 연결 고지는 근거가 약해 평가가 낮다.",
+      "avg": 3.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 4/supported 3 (평균 3.7) 레베 의식은 프랑스 특유라기보다 여러 나라에 퍼진 형태이며, 현대 캐나다·미국 연결 고지는 근거가 약해 평가가 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "이드 알-아드하, 모로코에서 4일간 이어지는 양희생 축제",
@@ -54763,7 +54873,19 @@
       "Moroccan religious custom",
       "Street roasting lamb"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 6,
+      "supported": 5,
+      "reason": "모로코에서 이드 알-아드하가 4일간 이어진다는 점은 지역적 특성이지만, 동일 관습이 다른 이슬람 국가에도 존재해 구분이 다소 모호하다.",
+      "avg": 5.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -55050,7 +55172,19 @@
       "night sky lantern wishes",
       "Chiang Mai traditional lantern ceremony"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 8,
+      "supported": 8,
+      "reason": "치앙마이의 이이 펭 등불 축제는 구체적인 일정·명칭·전통이 명확히 기록돼 있어 높은 점수를 받는다.",
+      "avg": 8.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
@@ -55409,7 +55543,19 @@
       "High altitude khat region",
       "Mountain village Ethiopia"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 7,
+      "supported": 5,
+      "reason": "에티오피아 고산에서 카트를 씹는 문화와 고도 범위는 구체적이지만 ‘부시맨 차’ 명칭 등 일부 내용은 확인이 어려워 지원 점수가 낮다.",
+      "avg": 6.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "탄자니아( Tanzania ) 교회에서의 기도 전 청결 규칙",
@@ -56154,7 +56300,19 @@
     "verify_note": "Swiss cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:28.523449+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "스위스 요리의 지역별 차이는 구체적이지만 고유명사·수치가 부족하고 근거 문서가 명시되지 않아 신뢰도가 다소 낮음.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "전 세계 22개 사무소를 둔 변호사 사무실",
@@ -56169,7 +56327,20 @@
     "verify_note": "Holman Fenwick Willan",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "전 세계 사무소 수와 인원 등 구체적 수치는 좋지만 주제가 특정 국가·지역에 한정되지 않아 독특성은 낮음.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 6/supported 7 (평균 5.3) 전 세계 사무소 수와 인원 등 구체적 수치는 좋지만 주제가 특정 국가·지역에 한정되지 않아 독특성은 낮음. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "코로나·틱톡이 만든 집밥 열풍",
@@ -56184,7 +56355,7 @@
     "verify_note": "TikTok food trends",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "2020년, 집에서 3분 요리하고 몸무게가 급등한다면 어떨까요? 코로나 팬데믹이 시작되면서 사람들은 집에 머무는 시간이 늘었고, 그때부터 TikTok에 #TikTokFood·#FoodTok 해시태그가 폭발했습니다. 수백만 개의 짧은 영상이 올라오면서, 단계별 레시피를 눈앞에서 바로 확인하고 따라 할 수 있게 되었죠. 간단한 재료와 3분 안에 완성되는 요리들이 특히 인기를 끌었습니다.  \n\n그런데 이 흐름이 젊은 세대에게 큰 변화를 일으켰습니다. 평소 요리에 관심이 적던 사람들도 영상 하나만 보면 직접 도전하게 되었고, 요리 콘텐츠 소비가 급증했습니다. 동시에 “집밥 열풍”이 몸매 논쟁을 불러일으켰습니다. 빠르게 만들다 보니 고칼로리 재료가 자주 사용됐고, 체중 증가와 식품 마케팅에 대한 의견이 엇갈렸죠.  \n\n결국 이 현상은 2020년 코로나 시기에 급격히 나타난 현상이며, 이후에도 온라인 요리 문화가 지속될지는 아직 확실치 않습니다. 하지만 짧은 영상 하나가 우리 식탁을 바꾸고, 몸무게까지 영향을 미칠 수 있다는 점은 분명히 기억해 둘 만합니다.",
     "title_line1": "핀란드 집밥 열풍",
     "title_line2": "3분 요리 살찔까?",
@@ -56218,7 +56389,20 @@
       "2020 pandemic kitchen scene",
       "smartphone video on dining table"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "TikTok 트렌드 자체는 전 세계 현상이라 독특성이 낮고, 해시태그와 현상 설명 정도만 제공돼 구체성·근거가 보통 수준.",
+      "avg": 4.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 5 (평균 4.3) TikTok 트렌드 자체는 전 세계 현상이라 독특성이 낮고, 해시태그와 현상 설명 정도만 제공돼 구체성·근거가 보통 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "태어날 때부터 정해지는 인도 카스트",
@@ -56233,7 +56417,19 @@
     "verify_note": "Brahminism",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "인도 카스트 제도는 국가·문화 특수성이 높지만 고유명사·통계가 부족하고, 학술적 정의에 의존해 근거가 중간 정도.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
@@ -56653,7 +56849,17 @@
       "Budapest street view with signs",
       "Hungarian street sign close-up"
     ],
-    "scene_count": 8
+    "scene_count": 8,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "헝가리어가 인도유럽어가 아니라는 점은 매우 특수하고, 인구·민족 등 구체적 수치가 있어 구체성·근거가 높음.",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "Thali, 한 판에 온갖 음식이 담긴 남아시아식 대접",
@@ -56668,7 +56874,20 @@
     "verify_note": "Thali",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 2,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "Thali는 남아시아·동남아 전반에 쓰이는 개념이라 캄보디아에 특화되지 않아 독특성이 낮고, 설명은 평균 수준.",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 5 (평균 4.0) Thali는 남아시아·동남아 전반에 쓰이는 개념이라 캄보디아에 특화되지 않아 독특성이 낮고, 설명은 평균 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "이탈리아(Italy) 부활절(Easter)의 특이한 양 요리 ‘앱바키오(abbacchio)’",
@@ -56683,7 +56902,17 @@
     "verify_note": "Easter in Italy",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:15.988350+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "로마 지역만의 전통 요리라 구체적이지만, 수치·제도 등 상세 정보가 부족하고 근거 문서 확인이 어려워 중간 점수",
+      "avg": 6.0,
+      "flags": []
+    }
   },
   {
     "topic": "중국 북부 농촌의 새해 축제 ‘Shehuo(社火)’",
@@ -56698,7 +56927,19 @@
     "verify_note": "Shehuo",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:28.395870+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "북부 농촌만의 축제로 특성이 뚜렷하고 상세 요소가 많지만, 불뿜기 등 일부 내용은 검증이 필요함",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "라오스에서도 페이스(face)는 생존 규칙",
@@ -56713,7 +56954,20 @@
     "verify_note": "Face (sociological concept)",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:57.745097+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 5,
+      "reason": "‘페이스’ 개념은 라오스에만 국한되지 않으며 구체적 사례가 부족하고, 근거가 일반적인 사회학 개념에 머무름",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 5 (평균 4.0) ‘페이스’ 개념은 라오스에만 국한되지 않으며 구체적 사례가 부족하고, 근거가 일반적인 사회학 개념에 머무름 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "라오스의 다문화 문학 전통",
@@ -56728,7 +56982,17 @@
     "verify_note": "Literature of Laos",
     "confidence": "source",
     "created_at": "2026-11-03T05:44:32.466183+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 6,
+      "reason": "라오스 다문화 문학 전통은 독특하지만, 언어·민족 수치 등은 일부 추정에 의존, 문서화 정도가 중간 수준",
+      "avg": 6.3,
+      "flags": []
+    }
   },
   {
     "topic": "멕시코 거리에서 살아 숨쉬는 옛날 옥수수 처리법",
@@ -56743,7 +57007,19 @@
     "verify_note": "Mexican cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:44:32.466183+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 4,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "니크스마리제이션은 멕시코 전역에 퍼진 전통이라 일반적이지만, 과정과 고대 문화 연결은 구체적이고 문서화됨",
+      "avg": 6.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "러시아 음식 이름은 소련 이전부터 그대로",
@@ -56758,7 +57034,18 @@
     "verify_note": "Russian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 4,
+      "reason": "소련 이전부터 음식 이름이 변하지 않았다는 주장은 일반화가 강하고 구체적 사례·근거가 부족함",
+      "avg": 3.7,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 4 (평균 3.7) 소련 이전부터 음식 이름이 변하지 않았다는 주장은 일반화가 강하고 구체적 사례·근거가 부족함"
   },
   {
     "topic": "모로코에 스페인 영토가 있다",
@@ -56805,7 +57092,17 @@
       "Map showing borders",
       "International political dispute"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 6,
+      "reason": "세우타·멜릴라·페뇽 등 스페인령이 모로코 영토 안에 존재한다는 사실은 구체적이고 지역 특수하지만, 국제적 영유권 논란이 있어 근거 문서 확인이 필요함.",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "몰디브는 적도를 가로지른다",
@@ -56852,7 +57149,17 @@
       "Maldives central royal history",
       "Ancient ruins on small island"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 7,
+      "supported": 5,
+      "reason": "몰디브가 적도 근처에 걸쳐 있다는 지리적 사실은 구체적이지만, ‘전체가 적도 위에 있다’는 표현은 과장되고 정확한 위도 데이터가 필요함.",
+      "avg": 6.0,
+      "flags": []
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -57131,7 +57438,19 @@
       "social welfare building Argentina",
       "Argentina flag with podium"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 5,
+      "concrete": 7,
+      "supported": 6,
+      "reason": "후안 페론이 세 번 대통령에 오른 것은 사실이지만, ‘유일한’이라는 주장과 ‘청정 선거 최고 득표율’은 추가 검증이 필요해 점수를 낮춤.",
+      "avg": 6.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "유월절, 피로 문을 표시하면 죽음이 스쳐 지나간다",
@@ -57146,7 +57465,20 @@
     "verify_note": "Passover",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "유월절의 피로 문틀 표시 이야기는 성경에 기반하지만, ‘탄자니아’와 연결된 근거가 없으며 일반적인 종교 전통이라 지역 특수성이 낮음.",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 유월절의 피로 문틀 표시 이야기는 성경에 기반하지만, ‘탄자니아’와 연결된 근거가 없으며 일반적인 종교 전통이라 지역 특수성이 낮음. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "아랍에미리트 라마단 시작 의식",
@@ -57161,7 +57493,17 @@
     "verify_note": "Ramadan in the United Arab Emirates",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 6,
+      "supported": 5,
+      "reason": "‘Haq al‑Laila’ 행사 존재는 일부 자료에 언급되지만, 공식적인 라마단 관습으로 널리 알려진 것은 아니며 확인된 근거가 부족함.",
+      "avg": 5.7,
+      "flags": []
+    }
   },
   {
     "topic": "영장류의 무릎 꿇기 행동",
@@ -57176,7 +57518,19 @@
     "verify_note": "Kneeling",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 5,
+      "concrete": 6,
+      "supported": 5,
+      "reason": "영장류의 무릎 꿇기(겐유플렉션) 설명은 일반적인 행동학 내용이지만, 에콰도르와 직접 연결된 근거가 없고, 구체적 사례가 부족함.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "미국 영토는 두 조각으로 나뉜다",
@@ -57644,7 +57998,19 @@
     "verify_note": "Fastelavn",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:06.416057+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 8,
+      "reason": "덴마크·북유럽 특유의 Fastelavn 전통은 구체적이지만 수치·절차는 제한적이며 위키피디아 내용과 일치함",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "이집트 거리의 주식, eish baladi 피타",
@@ -57659,7 +58025,17 @@
     "verify_note": "Egyptian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 8,
+      "reason": "이집트 eish baladi와 Domiati 치즈는 지역 특색이 뚜렷하고 사실에 기반하지만 구체적 수치는 부족함",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "벨기에에서 시작되는 All Saints' Day 의식",
@@ -57674,7 +58050,20 @@
     "verify_note": "All Saints' Day",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 3,
+      "reason": "All Saints' Day 의식은 서구 전반에 해당해 특수성이 낮고, 제시된 일정·절차는 근거가 불분명함",
+      "avg": 3.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 3 (평균 3.3) All Saints' Day 의식은 서구 전반에 해당해 특수성이 낮고, 제시된 일정·절차는 근거가 불분명함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "페루(Peru) 와인 축제",
@@ -57689,7 +58078,7 @@
     "verify_note": "Wine festival",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "scene_count": 10,
     "redo_ts": 1794379345.1194937,
     "need": "curiosity",
@@ -57724,7 +58113,21 @@
       "Peru community hand wine press",
       "traditional modern wine festival",
       "Peru grape to wine"
-    ]
+    ],
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "와인 축제는 전 세계적으로 흔하고, 페루만의 고유 명칭·통계가 없어 구체성과 신뢰성이 낮음",
+      "avg": 2.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "한계 문장이 '다른 곳에도 비슷하게 있다'는 일반론"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) 와인 축제는 전 세계적으로 흔하고, 페루만의 고유 명칭·통계가 없어 구체성과 신뢰성이 낮음 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 한계 문장이 '다른 곳에도 비슷하게 있다'는 일반론"
   },
   {
     "topic": "태국(Thailand) 파타니 말레이인(Patani Malays) 공동체",
@@ -57739,7 +58142,19 @@
     "verify_note": "Patani Malays",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "태국 파타니 말레이인 공동체는 지역·역사적으로 명확히 구분되며, 제시된 지명·시대는 검증 가능함",
+      "avg": 7.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "라오스(Laos) 사람들의 연간 171kg 찹쌀밥 소비",
@@ -57754,7 +58169,19 @@
     "verify_note": "Lao cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:44.305181+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 8,
+      "supported": 7,
+      "reason": "라오스 1인당 연간 171kg 찹쌀밥 소비라는 구체적 수치는 강점이지만 출처 확인이 필요함",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "아시아에서 78.8%가 천주교인 필리핀(Philippines) 성주간",
@@ -57785,7 +58212,17 @@
     "verify_note": "Muslim Brotherhood in Egypt",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 4,
+      "reason": "무슬림형제단 규모는 이집트 특수지만 정확한 인원수는 추정에 불과하고 근거 문서가 구체적 수치를 제시하지 않음",
+      "avg": 5.7,
+      "flags": []
+    }
   },
   {
     "topic": "일본식 인사의 기원과 의미 변화",
@@ -57840,7 +58277,17 @@
       "people bowing at Shinto shrine",
       "samurai bowing deep respect"
     ],
-    "scene_count": 10
+    "scene_count": 10,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "일본식 인사는 일본 고유 문화이지만 ‘오지기’ 변천 등 구체적 용어는 있지만 문서 근거가 제한적",
+      "avg": 6.0,
+      "flags": []
+    }
   },
   {
     "topic": "이란 마지막 샤의 다중 칭호",
@@ -57855,7 +58302,19 @@
     "verify_note": "Mohammad Reza Pahlavi",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 9,
+      "concrete": 7,
+      "supported": 6,
+      "reason": "샤의 다중 칭호는 이란 고유이며 고유명사와 번역이 명확하지만 일부 칭호 사용 시기의 공식 문서 확인이 필요",
+      "avg": 7.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "인형 전시로 전해지는 남인도 신화",
@@ -57870,7 +58329,19 @@
     "verify_note": "Golu (festival)",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "Golu 전시는 남인도 지역 특수하지만 호주와 연결된 근거가 없고, 전시 단계 규칙은 제한된 사례에 불과",
+      "avg": 5.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "죽음 기념일, 생일의 반대",
@@ -57885,7 +58356,21 @@
     "verify_note": "Death anniversary",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 5,
+      "concrete": 4,
+      "supported": 3,
+      "reason": "죽음 기념일 관습은 일부 아시아 문화에 존재하지만 스리랑카만의 독특한 형태는 명확히 입증되지 않음",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 3 (평균 4.0) 죽음 기념일 관습은 일부 아시아 문화에 존재하지만 스리랑카만의 독특한 형태는 명확히 입증되지 않음 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "부활절 아침 일출 예배와 여성의 모자",
@@ -57900,7 +58385,19 @@
     "verify_note": "Easter traditions",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "에티오피아 부활절 일출 예배와 여성용 보닛은 실제 전통이지만 여러 나라에 공통적이라 구체적 차별성이 약함",
+      "avg": 5.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "미국 국기의 별과 줄 배치 비밀",
@@ -57915,7 +58412,52 @@
     "verify_note": "Flag of the United States",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:26.671403+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "미국 국기의 별·줄 배치는 미국 고유의 상세 규격이며, 별 수·배열·13줄 의미 등 구체적 수치와 제도가 위키피디아에 명확히 기록돼 있음.",
+      "avg": 8.7,
+      "flags": []
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "narration": "13줄짜리 줄무늬 위에 9줄로 배열된 50개의 별, 직접 셀 수 있다면?  \n미국 국기는 빨간색과 흰색이 교차하는 13줄의 가로줄로 이루어집니다. 그 위에 파란 사각형이 자리 잡고, 그 안에 흰색 별이 9개의 가로줄에 교차하면서 총 50개가 놓여 있죠. 별은 6개가 한 줄에, 그 다음 줄엔 5개가 배치되는 식으로 번갈아 늘어서며, 각각은 현재의 50주, 즉 50개 주를 상징합니다.  \n\n그런데 이 깃발이 처음 만들어진 목적은 오늘과는 달랐습니다. 원래는 군함과 요새를 구분하기 위한 군용 신호용 장비로 설계된 것이었어요. 전쟁 중에 같은 색상의 깃발이 섞여 혼동을 일으키지 않도록, 색과 별, 줄무늬의 조합을 이용해 식별성을 높인 것이죠.  \n\n이렇게 군사적 필요에서 시작된 디자인이 오늘은 전 세계적으로 미국을 대표하는 상징이 되었습니다. 13줄과 50개의 별이 전하는 이야기를 떠올리면, 단순한 색채가 아니라 역사의 한 조각임을 느낄 수 있습니다.",
+    "title_line1": "미국 국기 별·줄 비밀",
+    "title_line2": "9줄에 50별, 셀 수?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*별* 50개, 13줄"
+      },
+      {
+        "s": 3,
+        "text": "파란 사각형 안 *별*"
+      },
+      {
+        "s": 4,
+        "text": "*별* 6·5 교차 배치"
+      },
+      {
+        "s": 6,
+        "text": "군용 *신호* 깃발"
+      }
+    ],
+    "image_queries": [
+      "United States flag 13 stripes",
+      "United States flag red white stripes",
+      "United States flag blue canton stars",
+      "United States flag stars alternating 6 5",
+      "Historic American flag original purpose",
+      "Military signal flag navy ship",
+      "Naval signal flag color star stripes",
+      "American flag symbol worldwide",
+      "US flag 13 stripes stars"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -58638,7 +59180,21 @@
     "verify_note": "Mourning",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 4,
+      "concrete": 3,
+      "supported": 5,
+      "reason": "애도 문화는 체코에만 국한된다고 보기 어려우며, 구체적 제도·수치가 부족하고 위키피디아 ‘Mourning’ 항목은 일반적인 애도 관습을 다루어 근거가 약함.",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 3/supported 5 (평균 4.0) 애도 문화는 체코에만 국한된다고 보기 어려우며, 구체적 제도·수치가 부족하고 위키피디아 ‘Mourning’ 항목은 일반적인 애도 관습을 다루어 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "네팔 뉴아르족의 도시 문명",
@@ -58653,7 +59209,20 @@
     "verify_note": "Newar people",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "뉴아르족의 도시 내 다중 직업 분업은 체코계 고유 현상으로 구체적 사례가 존재하지만, 상세 통계·명칭이 제한적이라 점수를 약간 낮춤.",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
   },
   {
     "topic": "폴란드 유대인 딸 이름 짓기 의식",
@@ -58668,7 +59237,19 @@
     "verify_note": "Zeved habat",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 6,
+      "reason": "‘Zeved habat’ 의식은 유대인 전통이며 폴란드 내 특정 공동체에 적용돼 독특하지만, 의식 내용은 일반적인 유대인 관습과 겹쳐 구체적 지역 차별성이 다소 제한적.",
+      "avg": 6.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "홀리(Holi) 색 축제",
@@ -58683,7 +59264,20 @@
     "verify_note": "Holi",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "홀리는 인도·네팔 중심 축제로 라오스와는 직접적인 연관성이 적고, 라오스에서의 실천 여부가 명확히 문서화되지 않아 근거가 약함.",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 4 (평균 4.0) 홀리는 인도·네팔 중심 축제로 라오스와는 직접적인 연관성이 적고, 라오스에서의 실천 여부가 명확히 문서화되지 않아 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "네덜란드 카니발(Carnival) 역할 전환 축제",
@@ -58698,7 +59292,17 @@
     "verify_note": "Carnival in the Netherlands",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "네덜란드 카니발은 특정 지역·시기에만 열리는 독특한 행사이며, 역할 전환·역전 의식 등 구체적 내용이 위키피디아에 기록돼 있어 충분히 검증 가능.",
+      "avg": 6.7,
+      "flags": []
+    }
   },
   {
     "topic": "동방 정교회 의식 음식 콜리바(Koliva)",
@@ -58713,7 +59317,19 @@
     "verify_note": "Koliva",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:05.510734+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 8,
+      "reason": "루마니아·동방 정교회 전통인 콜리바는 지역·종교적 특성이 뚜렷하고, 음식·행사 내용이 구체적이며 위키피디아 ‘Koliva’ 항목과 일치한다.",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "스페인·포르투갈 유대인(Spanish and Portuguese Jews)의 독특한 혈통",
@@ -58728,7 +59344,19 @@
     "verify_note": "Spanish and Portuguese Jews",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 7,
+      "reason": "스페인·포르투갈 유대인 혈통은 특정 diaspora이지만 전 세계에 퍼져 있어 다소 일반적이며, 주요 사실은 문서에 기록돼 있다.",
+      "avg": 6.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "마스터 한단 폭격 축제(Bombing of Master Handan Festival)의 독특한 의식",
@@ -58743,7 +59371,20 @@
     "verify_note": "Bombing of Master Handan Festival",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 2,
+      "supported": 1,
+      "reason": "‘마스터 한단 폭격 축제’는 확인된 자료가 없으며, 내용이 허구에 가까워 근거가 부족하다.",
+      "avg": 2.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 2/supported 1 (평균 2.0) ‘마스터 한단 폭격 축제’는 확인된 자료가 없으며, 내용이 허구에 가까워 근거가 부족하다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "유대교 새해 라삐가 부는 양뿔 나팔",
@@ -58758,7 +59399,20 @@
     "verify_note": "Rosh Hashanah",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 2,
+      "concrete": 4,
+      "supported": 6,
+      "reason": "유대교 새해에 나팔을 부는 전통은 전 세계적 관습이라 지역성은 낮고, 기본적인 의식은 문서에 있지만 헝가리와의 연결은 약하다.",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 6 (평균 4.0) 유대교 새해에 나팔을 부는 전통은 전 세계적 관습이라 지역성은 낮고, 기본적인 의식은 문서에 있지만 헝가리와의 연결은 약하다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "툼부카의 치유 춤 Vimbuza",
@@ -58773,7 +59427,19 @@
     "verify_note": "Traditional dances and festivals of the Tumbuka people",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "툼부카의 Vimbuza는 특정 민족·지역 문화이며, 유네스코 등재 연도 등 구체적 수치가 있어 신뢰성이 높다.",
+      "avg": 7.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "전쟁 반대 승려가 만든 청소년 사회봉사 학교",
@@ -58788,7 +59454,19 @@
     "verify_note": "Thích Nhất Hạnh",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "틱 낫 한이 설립한 ‘청년 사회봉사 학교’는 실제 역사적 사실이며, 관련 문서와 일치해 구체성과 신뢰도가 높다.",
+      "avg": 7.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "이탈리아 요리에 토마토가 없었다?",
@@ -58803,7 +59481,19 @@
     "verify_note": "Italian cuisine",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 8,
+      "supported": 8,
+      "reason": "이탈리아 요리에서 토마토가 신대륙 식재료라는 점은 구체적인 역사적 사실이며, 이탈리아에만 해당하는 내용이라 점수가 높음.",
+      "avg": 8.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "필리핀(Philippines) 이라코스(Ilocos) 지역의 인아벨(Inabel) 직물 – 열대 기후에 최적화된 천",
@@ -58818,7 +59508,19 @@
     "verify_note": "Inabel",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 6,
+      "reason": "인아벨 직물은 필리핀 이라코스 지역 고유의 전통이며, 장인 이름 등 구체적 정보가 있지만 출처가 명시되지 않아 약간 감점.",
+      "avg": 6.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "쿠바(Cuba) 전통 의식인 리베이션(libation) – 식사 전 액체 제물",
@@ -58833,7 +59535,20 @@
     "verify_note": "Libation",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "리베이션은 쿠바에만 국한된 의식이 아니며, 구체적인 사례나 통계가 없고 근거 문서와 연결이 약함.",
+      "avg": 2.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 3/supported 2 (평균 2.7) 리베이션은 쿠바에만 국한된 의식이 아니며, 구체적인 사례나 통계가 없고 근거 문서와 연결이 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "사모아 CCCS 교인의 비중",
@@ -58848,7 +59563,17 @@
     "verify_note": "Congregational Christian Church of Samoa",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "CCCS가 사모아 인구의 57%를 차지한다는 수치는 구체적이지만 출처가 없고, 전체 인구 비율에 대한 검증이 필요함.",
+      "avg": 5.0,
+      "flags": []
+    }
   },
   {
     "topic": "펠멘이의 기원과 국가적 위상",
@@ -58863,7 +59588,20 @@
     "verify_note": "Pelmeni",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 3,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "펠멘이는 러시아 음식이며 몽골에서 파는 사례는 구체적이지만, ‘국가적 위상’이라는 표현이 과장되고 근거가 제한적.",
+      "avg": 4.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 5 (평균 4.3) 펠멘이는 러시아 음식이며 몽골에서 파는 사례는 구체적이지만, ‘국가적 위상’이라는 표현이 과장되고 근거가 제한적. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "핀란드 대통령은 태어나자마자 후보가 될 수 있다?",
@@ -58878,7 +59616,18 @@
     "verify_note": "President of Finland",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 4,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "핀란드 대통령 후보 자격에 대한 내용이 사실과 다르고, 구체적인 법조문이나 통계가 없어 신뢰성이 낮음.",
+      "avg": 3.0,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 3/supported 2 (평균 3.0) 핀란드 대통령 후보 자격에 대한 내용이 사실과 다르고, 구체적인 법조문이나 통계가 없어 신뢰성이 낮음."
   },
   {
     "topic": "800 위켓을 잡은 유일한 투수",

@@ -11,38 +11,41 @@
 #   제외한 소재는 폐기(rejected)로 바뀌어 render에서 건너뛰고, 나중에 'redo_script=번호!'로 되살릴 수 있습니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 
-=== [461] 몰디브 ===
-(교차검증) contradicted
-(교차검증 메모 1) [contradicted] 2번 문장: Maldives is a majority Sunni Muslim nation; there is no significant Mahayana Buddhist population practicing such dietary customs.
-(교차검증 메모 2) [contradicted] 3번 문장: The principle of ahimsa is not a recognized basis for Maldives Buddhist practice, as Buddhism is not prevalent there.
-(교차검증 메모 3) [contradicted] 5번 문장: No evidence that Maldives Buddhists treat cooking as meditation; Maldives lacks a Buddhist tradition.
-(교차검증 메모 4) [contradicted] 6번 문장: Claim that food becomes a path to enlightenment for Maldives Buddhists is unsupported and contradicted by the absence of such a tradition.
-(교차검증 메모 5) [contradicted] 7번 문장: The tradition described does not exist in Maldives, which is not a Buddhist culture.
-(사실 확인용 검색어) Buddhist cuisine
-후크: 축제날만 고기 없이 식탁을 차린다면?
-본문: 대승불교(Mahayana Buddhism) 영향을 받은 지역의 승려와 신자들은 평소는 고기를 먹지만, 축하 행사에서는 비건 식단을 지켜요. 채식은 아힘사(ahimsa)라는 비폭력 원칙에서 온 것이죠.
-반전: 요리 자체를 명상으로 여기며, 음식이 몸과 마음을 깨우는 도구가 된답니다.
+=== [465] 페루 ===
+(교차검증) unsupported
+(교차검증 메모 1) [수정됨] [unsupported] 1번 문장: No evidence of elephants holding immediate funerals
+(교차검증 메모 2) [수정됨] [unsupported] 2번 문장: No documented Peru safari study of elephant mourning
+(교차검증 메모 3) [수정됨] [unsupported] 3번 문장: No evidence that scientists label it a ritual
+(교차검증 메모 4) [수정됨] [unsupported] 4번 문장: No evidence of similar funerals in crows
+(교차검증 메모 5) [수정됨] [unsupported] 5번 문장: No evidence that animals remember and express as humans
+(교차검증 메모 6) [수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No verifiable evidence of a specific Peru safari study observing such behavior.
+(교차검증 메모 7) [수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: The term ‘ritual’ applied to elephant behavior is not universally accepted; it is a hypothesis rather than confirmed fact.
+(교차검증 메모 8) [수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claims of similar behaviors in crows lack definitive, widely accepted scientific confirmation.
+(교차검증 메모 9) [수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: The assertion that animals remember and express emotions like humans is speculative and not conclusively proven.
+(직접 확인할 문장 2번) 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다.
+(직접 확인할 문장 3번) 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다.
+(직접 확인할 문장 4번) 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다.
+(직접 확인할 문장 5번) 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다.
+(사실 확인용 검색어) Ritual
+후크: 코끼리, 친구가 죽으면 바로 장례식을 연다!
+본문: 의식은 인간뿐 아니라 코끼리와 까마귀 같은 동물에서도 반복적인 행동으로 나타난다. 코끼리는 죽은 동료를 둘러싸고 잎을 놓으며 애도한다.
+반전: 이러한 행동은 과학자들이 ‘의식’이라고 부를 만큼 구조화된 패턴을 보여준다.
 제외:
-제목1: 몰디브 축제, 채식만
-제목2: 왜 비건인가?
-핵심[1]: 축제날*고기*없이?
-핵심[3]: 아힘사*비폭력*실천
-핵심[5]: 요리=*명상*훈련
-핵심[6]: 식사,*깨달음*길
-핵심[8]: 축제비건이유*이해*?
-이미지[1]: Maldives Buddhist feast
-이미지[2]: Maldives monks vegetarian meal
-이미지[3]: Ahimsa nonviolence principle
-이미지[4]: Maldives ceremonial food
-이미지[5]: Meditative cooking practice
-이미지[6]: Mindful meal enlightenment
-이미지[7]: Monk vegetarian tradition
-이미지[8]: Festival vegan practice
-대본[1]: 축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요?
-대본[2]: 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다.
-대본[3]: 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.
-대본[4]: 그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요.
-대본[5]: 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다.
-대본[6]: 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.
-대본[7]: 이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요.
-대본[8]: 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?
+제목1: 코끼리 장례식
+제목2: 동물도 의식이?
+핵심[1]: 코끼리의 *장례*
+핵심[2]: *잎*으로 애도
+핵심[3]: 의식이란 *패턴*
+핵심[6]: 동물의 *의식*?
+이미지[1]: elephant funeral
+이미지[2]: elephant mourning leaves
+이미지[3]: elephant ritual pattern
+이미지[4]: crow funeral behavior
+이미지[5]: elephant memory display
+이미지[6]: animal consciousness
+대본[1]: 코끼리는 친구가 죽으면 종종 장례식 같은 행동을 보입니다.
+대본[2]: 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다.
+대본[3]: 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다.
+대본[4]: 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다.
+대본[5]: 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다.
+대본[6]: 코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.
