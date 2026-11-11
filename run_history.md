@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 15:42:33 (KST) · 기록 1502건 · 소재 624개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 15:52:10 (KST) · 기록 1503건 · 소재 624개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | trend_research | 1 | 0 | 24초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
 | 롱폼 | 66 | 6 | 5시간 34분 |
-| 쇼츠 | 115 | 6 | 12시간 17분 |
+| 쇼츠 | 116 | 6 | 12시간 17분 |
 | 코드업데이트 | 82 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
@@ -40,6 +40,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:52 | Actions | 쇼츠 | culture-shorts-pipeline #122 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/42975025163 |
 | 15:42 | Actions | 쇼츠 | culture-shorts-pipeline #121 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/42974207766 |
 | 15:40 | Actions | 쇼츠 | culture-shorts-pipeline #120 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/42973985747 |
 | 15:40 | PC | 코드업데이트 | gonmau/shorts: 5개 (add_topic.py, audience.py, generate_script.py, local_ui.py, trend_research.py) | ✅ |  |  |
