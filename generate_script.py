@@ -179,7 +179,8 @@ def is_bad_narration(text):
 
 def build_prompt(fact):
     import style_profile as _sp
-    return _sp.apply(_build_prompt_base(fact), "script")
+    import audience as _aud
+    return _sp.apply(_build_prompt_base(fact), "script") + _aud.script_block(fact)
 
 
 def _build_prompt_base(fact):
@@ -619,11 +620,19 @@ def parse_queries(text, n=6):
     return out[:n] if len(out) >= n else None
 
 
+def _query_mood(fact):
+    try:
+        import audience as _aud
+        return _aud.image_block(fact)
+    except Exception:
+        return ""
+
+
 def generate_queries(client, models, fact, narration, retries=3):
     return ask_models(
         client, models,
         "You are a careful photo editor. Output JSON only.",
-        build_query_prompt(fact, narration), 600, retries,
+        build_query_prompt(fact, narration) + _query_mood(fact), 600, retries,
         lambda t: parse_queries(t, len(scene_groups(split_sentences(narration), default_scene_count())) or 6),
     )
 
@@ -951,6 +960,13 @@ def generate_script(client, models, fact, retries):
     한 모델에서 계속 빈 응답/불량 응답이 나오면
     다음 모델로 전환합니다.
     """
+
+    try:
+        import audience as _aud
+        if _aud.ensure_tags(client, models, fact):
+            print(f"  [니즈] {_aud.label('need', fact.get('need'))} / {_aud.label('emotion', fact.get('emotion'))}")
+    except Exception:
+        pass
 
     for model_index, model in enumerate(models):
         print(f"  모델: {model}")

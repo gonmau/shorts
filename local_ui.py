@@ -2499,6 +2499,27 @@ with T1d:
         if not _yk:
             st.warning("API 키가 없어 유튜브 조사는 건너뜁니다 (위키·레딧만 실행)")
         run("trend_research.py", *_a, "--max-units", str(int(t_units)))
+    with st.expander("📊 내 채널 니즈별 성과 · 니즈 태그", expanded=False):
+        import audience as _AU2
+        st.caption("소재마다 '충족하는 니즈'와 '일으킬 감정'을 붙이고, 업로드된 영상의 조회수(yt_stats.json)와 이어서 어떤 니즈가 잘 되는지 봅니다. 새 소재는 대본을 만들 때 자동으로 태그되고, 대본 프롬프트에 그 니즈의 구성 틀이, 이미지 검색어에는 분위기가 반영됩니다. 표본이 적으면 평균 쪽으로 당겨 계산하니 영상이 적을 땐 참고만 하세요.")
+        try:
+            _dbA = json.load(open("facts_db.json", encoding="utf-8"))
+        except Exception:
+            _dbA = []
+        _tg = sum(1 for f_ in _dbA if _AU2.norm("need", f_.get("need")))
+        _tgu = sum(1 for f_ in _dbA if f_.get("youtube_id") and _AU2.norm("need", f_.get("need")))
+        _alu = sum(1 for f_ in _dbA if f_.get("youtube_id"))
+        st.caption(f"태그된 소재 {_tg}/{len(_dbA)}개 · 업로드된 영상 {_tgu}/{_alu}개")
+        _pf = _AU2.performance(_dbA)
+        if _pf:
+            st.dataframe([{"니즈": _AU2.label("need", n_), "영상 수": s_["n"], "평균 조회수": s_["avg"], "중앙값": s_["median"], "상대 성과": s_["rel"]}
+                          for n_, s_ in sorted(_pf.items(), key=lambda x: -x[1]["rel"])], use_container_width=True, hide_index=True)
+        else:
+            st.info("성과를 계산할 데이터가 없습니다. 업로드된 영상에 태그를 붙이고 조회수 리포트(yt_stats.json)가 있어야 합니다.")
+        _lim = st.number_input("한 번에 태그할 개수 (업로드된 영상 먼저)", 10, 300, 60, 10, key="au_lim")
+        if st.button("🏷 니즈 태그 붙이기 (Groq)", key="au_tag", help="니즈·감정이 없는 소재를 분류합니다. 소재당 1회 호출"):
+            run("audience.py", "--tag-new", "--limit", str(int(_lim)))
+            st.rerun()
     try:
         _TD = json.load(open("trend_data.json", encoding="utf-8"))
     except Exception:
@@ -2526,7 +2547,9 @@ with T1d:
                 st.info("아직 분석 결과가 없습니다. 조사 후 'AI 분석'을 켜서 실행하세요.")
             for _i, _t in enumerate(_an.get("topic_ideas", [])):
                 with st.container(border=True):
-                    st.markdown(f"**{_t.get('title', '')}**  \n🎯 {_t.get('need', '')} · 💗 {_t.get('emotion', '')}  \n_근거: {_t.get('why', '')} ({_t.get('source', '')})_")
+                    import audience as _AU
+                    _rel = f" · 내 채널 성과 x{_t['rel']} (영상 {_t.get('rel_n', 0)}개 기준)" if _t.get("rel") else ""
+                    st.markdown(f"**{_t.get('title', '')}**  \n🎯 {_AU.label('need', _t.get('need', ''))} · 💗 {_AU.label('emotion', _t.get('emotion', ''))}{_rel}  \n_근거: {_t.get('why', '')} ({_t.get('source', '')})_")
                     if _t.get("dup"):
                         st.warning("⚠ 이미 만든 소재와 겹칠 수 있음: " + str(_t["dup"]))
                     if _t.get("copy"):
@@ -2535,7 +2558,8 @@ with T1d:
                         st.caption("영감 영상: " + " · ".join(f"[{_k + 1}]({_u})" for _k, _u in enumerate(_t["inspired"])))
                     if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}", disabled=bool(_t.get("dup") or _t.get("copy")), help="중복·제목 유사 소재는 막아 둡니다 (만든 뒤에도 같은 기준으로 한 번 더 검사). 영감이 된 영상 링크는 소재에 기록됩니다"):
                         _ids = run_cap("add_topic.py", "keyword", "--keyword", _t.get("title", ""), "--wiki",
-                                       *(["--inspired", ",".join(_t["inspired"])] if _t.get("inspired") else []))
+                                       *(["--inspired", ",".join(_t["inspired"])] if _t.get("inspired") else []),
+                                       *(["--need", _t["need"]] if _t.get("need") else []), *(["--emotion", _t["emotion"]] if _t.get("emotion") else []))
                         after_create(_ids, False)
             if _an.get("patterns"):
                 with st.expander("잘 터지는 제목 패턴 · 후크 · 니즈"):

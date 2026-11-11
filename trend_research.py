@@ -258,6 +258,12 @@ def do_analyze(data, top):
         db = load_db()
     except Exception:
         db = []
+    try:
+        import audience as AU
+        perf = AU.perf_text(db)
+        legend = ", ".join(f"{k}({v[0]})" for k, v in AU.NEEDS.items()) + " / 감정: " + ", ".join(f"{k}({v[0]})" for k, v in AU.EMOTIONS.items())
+    except Exception:
+        AU, perf, legend = None, "", ""
     done = "\n".join(f"- {str(o.get('country', ''))[:20]} {str(o.get('topic', ''))[:40]}" for o in db[-200:] if o.get("topic"))
     prompt = f"""너는 유튜브 쇼츠 기획자다. 우리 채널: {ch}.
 아래는 최근 잘 터진 쇼츠, 위키 급상승 문서, 레딧 화제글이다. 이를 분석해 JSON만 응답해라 (한국어로).
@@ -269,15 +275,20 @@ def do_analyze(data, top):
 {rt or '(없음)'}
 [이미 만든 소재 — 이것과 같거나 비슷한 주제는 추천하지 마라]
 {done or '(없음)'}
+[내 채널의 니즈별 성과 — 참고만 하고, 표본이 적은 항목은 단정하지 마라]
+{perf or '(데이터 없음)'}
 
 형식: {{"patterns":[{{"name":"제목 패턴 이름","desc":"어떤 구조인지 한 줄","example":"예시 제목"}}],
 "hooks":["첫 문장 후크 유형 3~6개 (예: 금지/반전/숫자/공감 질문)"],
 "needs":[{{"need":"시청자 니즈 (호기심/공감/놀람/정보/웃음/자랑스러움 등)","evidence":"어떤 영상/글에서 보이는지"}}],
-"topic_ideas":[{{"title":"우리 채널에 맞는 소재 제목","why":"왜 지금 먹힐지(근거)","need":"충족하는 니즈","emotion":"유발 감정","source":"근거가 된 영상/문서/글", "src_idx":[근거가 된 [터진 쇼츠] 번호들, 없으면 빈 배열]}}]}}
+"topic_ideas":[{{"title":"우리 채널에 맞는 소재 제목","why":"왜 지금 먹힐지(근거)","need":"충족하는 니즈 id","emotion":"유발 감정 id","source":"근거가 된 영상/문서/글", "src_idx":[근거가 된 [터진 쇼츠] 번호들, 없으면 빈 배열]}}]}}
+need 는 다음 id 중 하나, emotion 도 id 로: {legend}
 topic_ideas는 8개. 터진 영상의 제목·문장을 그대로 따라 쓰지 말고, 같은 주제라도 우리 채널의 새로운 각도로 제목을 지어라. 근거 없이 지어내지 말고, 위 자료에 있는 신호만 근거로 써라. 정치·종교 논쟁·연예 가십·선정적 소재는 제외."""
     c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], max_completion_tokens=3500, temperature=0.4)
     t = c.choices[0].message.content or ""
     data["analysis"] = json.loads(t[t.find("{"):t.rfind("}") + 1])
+    if AU:
+        weigh(data["analysis"].get("topic_ideas", []), db, AU)
     mark_dups(data["analysis"].get("topic_ideas", []), db)
     mark_copies(data["analysis"].get("topic_ideas", []), vids)
     data["analysis"]["texts"] = build_texts(data["analysis"])
@@ -301,6 +312,17 @@ def mark_dups(ideas, db):
                 best, why, idx = s, w, i
         if best >= 0.4:
             t["dup"] = f"[{idx}] {why}"
+
+
+def weigh(ideas, db, AU):
+    """니즈/감정을 id 로 정리하고, 내 채널 성과(rel)를 붙여 성과가 좋은 니즈 순으로 정렬한다 (같으면 원래 순서). 표본이 적으면 rel 이 1.0 근처라 순서가 거의 안 바뀐다"""
+    perf = AU.performance(db)
+    for t in ideas:
+        t["need"], t["emotion"] = AU.norm("need", t.get("need")), AU.norm("emotion", t.get("emotion"))
+        s = perf.get(t["need"])
+        t["rel"] = s["rel"] if s else None
+        t["rel_n"] = s["n"] if s else 0
+    ideas.sort(key=lambda t: -(t["rel"] or 1.0))
 
 
 def _norm(s):
