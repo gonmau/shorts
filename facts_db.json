@@ -64571,7 +64571,7 @@
       "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
-      "personal emergency medication supplies",
+      "통조림 오프너",
       "emergency blanket raincoat face mask",
       "complete disaster preparedness survival backpack"
     ],
@@ -64649,9 +64649,10 @@
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "ds_30",
-        "page": "https://pixabay.com/photos/medical-white-isolated-medicine-5029289/",
-        "id": 5029289
+        "user": "OpenClipart-Vectors",
+        "page": "https://pixabay.com/vectors/can-cooking-kitchen-tin-tool-1300207/",
+        "id": 1300207,
+        "type": "illustration"
       },
       {
         "scene": 9,
