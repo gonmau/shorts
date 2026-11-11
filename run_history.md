@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 22:10:13 (KST) · 기록 1607건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 22:13:46 (KST) · 기록 1608건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,7 +18,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 47 | 0 | 8초 |
-| fetch_images | 184 | 4 | 2시간 19분 |
+| fetch_images | 185 | 4 | 2시간 19분 |
 | generate_culture_facts | 15 | 0 | 31분 36초 |
 | generate_script | 195 | 0 | 1시간 13분 |
 | generate_tts | 82 | 0 | 31분 39초 |
@@ -40,6 +40,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:13 | PC | fetch_images | fetch_images.py --index 583 | ✅ | 0초 |  |
 | 22:10 | PC | fetch_images | fetch_images.py --index 556 | ✅ | 0초 |  |
 | 22:08 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-ima | ❌ failed | 8분 29초 |    583 싱가포르: 10장 중 9, 10번 없음    581 스페인: 10장 중 8번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요. (-- |
 | 21:56 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
