@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 22:20:22 (KST) · 기록 1618건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 22:23:31 (KST) · 기록 1619건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | trend_research | 2 | 0 | 53초 |
 | update_description | 3 | 0 | 9초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
-| 롱폼 | 68 | 8 | 5시간 44분 |
+| 롱폼 | 68 | 9 | 5시간 46분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
 | 코드업데이트 | 88 | 0 | 0초 |
 
@@ -41,6 +41,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:23 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-ima | ❌ failed | 2분 22초 |    593 이슬람제국: 10장 중 10번 없음    583 싱가포르: 10장 중 9, 10번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요.  |
 | 22:20 | PC | update_description | update_description.py --indexes 583 | ✅ | 2초 |  |
 | 22:20 | PC | fetch_images | fetch_images.py --index 583 --scene 8 --source commons --type photo | ✅ | 5초 |  |
 | 22:19 | PC | update_description | update_description.py --indexes 581 | ✅ | 3초 |  |
