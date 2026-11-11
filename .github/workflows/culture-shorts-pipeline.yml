@@ -61,7 +61,7 @@ on:
         description: "소재 단계 근거 점검 (apply=근거 부실 소재를 폐기, dry=점검 결과만 로그에 표시, off=안 함)"
         type: choice
         options: [apply, dry, off]
-        default: dry
+        default: apply
 
       cross_check:
         description: "대본 교차검증 (위키 근거 + 다른 모델 검증, 토큰 많이 씀. 기본 끔 - 직접 검증한 대본을 쓰는 방식)"
@@ -103,7 +103,7 @@ jobs:
       COUNT: ${{ github.event.inputs.count || '3' }}
       START: ${{ github.event.inputs.start_index || '0' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
-      GROUNDING: ${{ github.event.inputs.grounding || 'dry' }}
+      GROUNDING: ${{ github.event.inputs.grounding || 'apply' }}
       SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || '' }}
       CAPTION_MODE: ${{ github.event.inputs.caption_mode || '' }}
       TTS_RATE: ${{ github.event.inputs.speed || '' }}
