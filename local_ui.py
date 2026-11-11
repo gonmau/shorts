@@ -108,7 +108,7 @@ except Exception:
 TTS_CFG.pop("discord_webhook", None)
 if _SEC.get("discord_webhook") and not os.environ.get("DISCORD_WEBHOOK_URL"):
     os.environ["DISCORD_WEBHOOK_URL"] = _SEC["discord_webhook"]
-for _sk, _ek in (("yt_refresh_token", "YT_REFRESH_TOKEN"), ("yt_client_id", "YT_CLIENT_ID"), ("yt_client_secret", "YT_CLIENT_SECRET")):
+for _sk, _ek in (("youtube_api_key", "YOUTUBE_API_KEY"), ("yt_refresh_token", "YT_REFRESH_TOKEN"), ("yt_client_id", "YT_CLIENT_ID"), ("yt_client_secret", "YT_CLIENT_SECRET")):
     if _SEC.get(_sk) and not os.environ.get(_ek):    # get_token.bat 이 저장한 값 (환경변수가 없을 때만)
         os.environ[_ek] = _SEC[_sk]
 TTS_CFG.setdefault("drive_auto", False)    # 작업 후 구글 드라이브에 자동 업로드 (바뀐 파일만)
@@ -336,7 +336,7 @@ st.caption(_sync_line())
 TD, TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["📊 현황", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
 with T1:
     st.caption("새 소재를 만들고 승인/제외합니다. 직접 소재를 넣거나, 상태·폐기·업로드 기록도 여기서 봅니다.")
-    T1a, T1b, T1c = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록"])
+    T1a, T1b, T1c, T1d = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록", "📈 트렌드·벤치마크"])
 with T2:
     st.caption("대본을 만들고 읽어 보며 고칩니다. 제목·핵심 문구·이미지 검색어는 review.txt에서도 고칠 수 있습니다.")
     T2a, T2b, T2c = st.tabs(["⚙ 대본 만들기", "📝 대본 보기·수정", "📄 review.txt"])
@@ -2459,6 +2459,103 @@ with T2a:
                 run("clean_hedges.py")
             if h2.button("🧹 영상 없는 대본에서 지우기", key="hd_apply"):
                 run("clean_hedges.py", "--apply")
+
+with T1d:
+    st.caption("잘 터진 쇼츠·채널, 위키 급상승, 레딧 화제를 모아 소재 아이디어를 얻습니다. 결과는 trend_data.json에 캐시되고(오늘 조회한 검색어는 다시 호출 안 함), 추천은 판단 보조입니다.")
+    _yk = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    k1, k2 = st.columns([3, 1])
+    k1.markdown("**YOUTUBE_API_KEY**: " + (f"✅ 설정됨 (…{_yk[-4:]})" if _yk else "❌ 없음 — 아래에 입력하세요"))
+    if k2.button("🔑 키 테스트", key="tr_keytest", disabled=not _yk, help="유튜브에 1유닛짜리 요청을 보내 키가 작동하는지 확인합니다"):
+        run("trend_research.py", "--test-key")
+    with st.expander("API 키 입력·저장 (이 PC의 .local_secrets.json에만 저장, GitHub에 안 올라감)"):
+        _nk = st.text_input("YouTube Data API v3 키", type="password", key="tr_newkey")
+        if st.button("저장", key="tr_savekey", disabled=not _nk.strip()):
+            _SEC["youtube_api_key"] = _nk.strip(); os.environ["YOUTUBE_API_KEY"] = _nk.strip()
+            json.dump(_SEC, open(SECRET_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+            st.success("저장했습니다"); st.rerun()
+        st.caption("발급: console.cloud.google.com → 프로젝트 선택 → API 및 서비스 → 라이브러리에서 'YouTube Data API v3' 사용 설정 → 사용자 인증 정보 → API 키 만들기. 무료 한도는 하루 10,000유닛(키워드 1개 조회 ≈ 100유닛).")
+    t_kw = st.text_input("조사 키워드 (쉼표) — 유튜브 검색 100유닛/개", "e.g. korean culture, korea travel tips" if EN else "세계 문화 상식, 나라별 금기, 해외 풍습", key="tr_kw")
+    t1, t2, t3 = st.columns(3)
+    t_days = t1.selectbox("기간(일)", [7, 14, 30, 90], 2, key="tr_days")
+    t_units = t2.number_input("하루 사용 제한(유닛)", 500, 10000, 3000, 500, key="tr_units")
+    t_mult = t3.number_input("터진 영상 기준(채널 중앙값의 N배)", 1.5, 10.0, 2.0, 0.5, key="tr_mult")
+    t_ch = st.text_input("경쟁·참고 채널 (쉼표, @핸들·채널ID·주소)", "", key="tr_ch")
+    t_rd = st.text_input("레딧 서브레딧 (쉼표)", "korea,Living_in_Korea,seoul" if EN else "todayilearned,travel,Damnthatsinteresting", key="tr_rd")
+    w1, w2 = st.columns(2)
+    t_wiki = w1.checkbox("위키 급상승 문서 (무료)", True, key="tr_wiki")
+    t_an = w2.checkbox("끝나면 AI 분석·소재 추천 (Groq)", True, key="tr_an")
+    if st.button("📈 조사 시작", key="tr_go", type="primary"):
+        _a = []
+        if t_kw.strip() and _yk and not t_kw.startswith("e.g."):
+            _a += ["--yt", t_kw, "--days", str(t_days)]
+        if t_ch.strip() and _yk:
+            _a += ["--channels", t_ch, "--mult", str(t_mult)]
+        if t_rd.strip():
+            _a += ["--reddit", t_rd]
+        if t_wiki:
+            _a += ["--wiki"]
+        if t_an:
+            _a += ["--analyze"]
+        if not _yk:
+            st.warning("API 키가 없어 유튜브 조사는 건너뜁니다 (위키·레딧만 실행)")
+        run("trend_research.py", *_a, "--max-units", str(int(t_units)))
+    try:
+        _TD = json.load(open("trend_data.json", encoding="utf-8"))
+    except Exception:
+        _TD = {}
+    if _TD:
+        _q = _TD.get("quota") or {}
+        st.caption(f"마지막 조사: {_TD.get('updated', '-')} · 오늘 YouTube 사용량 {_q.get('used', 0) if _q.get('date') == __import__('datetime').date.today().isoformat() else 0}유닛")
+        _an = _TD.get("analysis") or {}
+        R1, R2, R3, R4 = st.tabs(["💡 추천 소재", "🎬 터진 영상", "📺 채널", "🌐 위키·레딧"])
+        with R1:
+            if not _an:
+                st.info("아직 분석 결과가 없습니다. 조사 후 'AI 분석'을 켜서 실행하세요.")
+            for _i, _t in enumerate(_an.get("topic_ideas", [])):
+                with st.container(border=True):
+                    st.markdown(f"**{_t.get('title', '')}**  \n🎯 {_t.get('need', '')} · 💗 {_t.get('emotion', '')}  \n_근거: {_t.get('why', '')} ({_t.get('source', '')})_")
+                    if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}"):
+                        _ids = run_cap("add_topic.py", "keyword", "--keyword", _t.get("title", ""), "--wiki")
+                        after_create(_ids, False)
+            if _an.get("patterns"):
+                with st.expander("잘 터지는 제목 패턴 · 후크 · 니즈"):
+                    for _p in _an["patterns"]:
+                        st.markdown(f"- **{_p.get('name')}**: {_p.get('desc')} — 예) {_p.get('example')}")
+                    st.markdown("**후크 유형**: " + ", ".join(map(str, _an.get("hooks", []))))
+                    for _n in _an.get("needs", []):
+                        st.markdown(f"- 니즈 **{_n.get('need')}**: {_n.get('evidence')}")
+        with R2:
+            _vs = _TD.get("videos") or []
+            _sort = st.radio("정렬", ["조회수", "구독자 대비 조회수(작은 채널 대박)"], horizontal=True, key="tr_sort")
+            _vs = sorted(_vs, key=(lambda v: -(v.get("views") or 0)) if _sort == "조회수" else (lambda v: -(v.get("ratio") or 0)))
+            if _vs:
+                st.dataframe([{"제목": v["title"], "조회수": v["views"], "구독자": v.get("subs"), "배율": v.get("ratio"), "길이(초)": v.get("secs"),
+                               "게시일": v.get("published"), "채널": v.get("channel"), "검색어": v.get("kw"), "링크": v["url"]} for v in _vs[:150]],
+                             use_container_width=True, hide_index=True, column_config={"링크": st.column_config.LinkColumn("링크", display_text="열기")})
+            else:
+                st.caption("영상 데이터가 없습니다 (API 키 필요)")
+        with R3:
+            _cs = _TD.get("channels") or []
+            _vm = {v["id"]: v for v in _TD.get("videos", [])}
+            for _c in _cs:
+                st.markdown(f"**{_c.get('title')}** {_c.get('handle', '')} · 구독자 {_c.get('subs') if _c.get('subs') is not None else '비공개'} · 영상 중앙값 {_c.get('median_views', 0):,}회")
+                for _h in _c.get("hits", []):
+                    _v = _vm.get(_h)
+                    if _v:
+                        st.markdown(f"  - [{_v['title']}]({_v['url']}) · {_v['views']:,}회 (평균의 {_v.get('x_median')}배)")
+            if not _cs:
+                st.caption("채널 데이터가 없습니다. 위 '경쟁·참고 채널'에 입력하세요.")
+        with R4:
+            _w = _TD.get("wiki") or []
+            if _w:
+                st.markdown("**위키 급상승** (1주 전보다 순위가 오른 문서)")
+                st.dataframe([{"문서": w["title"], "조회수": w["views"], "순위": w["rank"], "1주 전": w.get("prev_rank") or "-", "링크": w["url"]} for w in _w],
+                             use_container_width=True, hide_index=True, column_config={"링크": st.column_config.LinkColumn("링크", display_text="열기")})
+            _r = _TD.get("reddit") or []
+            if _r:
+                st.markdown("**레딧 화제글**")
+                st.dataframe([{"출처": r["source"], "제목": r["title"][:110], "점수": r.get("score"), "링크": r["url"]} for r in _r],
+                             use_container_width=True, hide_index=True, column_config={"링크": st.column_config.LinkColumn("링크", display_text="열기")})
 
 with TL:
     _ext_panel('xl_', 1)
