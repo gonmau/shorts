@@ -54620,7 +54620,7 @@
     "verify_note": "Hug",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "두 명이 넘게 안아도 되는 이유, 궁금하지? 허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 전 세계 대부분의 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다. 이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 1,
@@ -54676,7 +54676,153 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0467_브라질_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0467_브라질_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "two people hugging",
+      "close embrace around neck and back",
+      "group hug together",
+      "people hugging worldwide",
+      "cultural hugging traditions Brazil",
+      "intimate group hug moment"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Photocapy",
+        "license": "CC BY-SA 2.0",
+        "title": "Couple hugging.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Couple_hugging.jpg",
+        "id": "c:146057677"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "46173",
+        "page": "https://pixabay.com/photos/couple-embrace-portrait-back-347220/",
+        "id": 347220
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Sammmie",
+        "page": "https://pixabay.com/photos/friends-together-hugs-back-view-1262152/",
+        "id": 1262152,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/people-group-world-worldwide-358067/",
+        "id": 358067
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Photocapy",
+        "license": "CC BY-SA 2.0",
+        "title": "Couple hugging.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Couple_hugging.jpg",
+        "id": "c:146057677"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Chuotanhls",
+        "page": "https://pixabay.com/photos/vietnam-couple-love-lovers-8560197/",
+        "id": 8560197,
+        "type": "photo"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2859,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3d80630b58b0",
+        "at": "2026-11-11 20:04",
+        "scene": 1,
+        "rejected_ids": [
+          10430189,
+          "c:146057677"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "708b570bfada",
+        "at": "2026-11-11 20:04",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.321,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "75f1bdb2519c",
+        "at": "2026-11-11 20:04",
+        "scene": 3,
+        "rejected_ids": [
+          1262152,
+          4256533,
+          "c:77012037"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.252,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1b45d05b1400",
+        "at": "2026-11-11 20:04",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2409,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "801741f60e67",
+        "at": "2026-11-11 20:04",
+        "scene": 5,
+        "rejected_ids": [
+          10068726,
+          6963458,
+          "c:146057677",
+          "c:26844221",
+          "c:7920320"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2623,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d14d49852811",
+        "at": "2026-11-11 20:04",
+        "scene": 6,
+        "rejected_ids": [
+          8560197,
+          "c:7920320"
+        ]
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0467_브라질.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0467_브라질.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -54756,7 +54902,11 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0468_아일랜드_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0468_아일랜드_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
@@ -56718,7 +56868,7 @@
     "verify_note": "Holman Fenwick Willan",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -56730,7 +56880,44 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "narration": "전 세계 22개 사무소를 가진 로펌 사무실에 들어가면, 마치 작은 박물관에 온 듯한 느낌을 받게 됩니다. HFW는 항공·선박·에너지 등 다양한 산업을 담당하는 글로벌 로펌으로, 현재 700명 이상의 변호사와 190명의 파트너가 22개의 사무소에서 일하고 있습니다. 각각의 사무소는 해당 산업을 상징하는 모형을 배치해 두었는데, 런던에서는 대형 항공기 모델이, 싱가포르에서는 선박 모형이 눈에 띕니다. 그런데 이 모형들은 단순 장식이 아니라, 각 사무소가 전문성을 시각적으로 보여주는 역할을 합니다. 변호사들은 고객과의 상담 중에도 모델을 가리키며 사례를 설명하고, 방문객들은 산업 현장을 직접 보는 듯한 인상을 받습니다. 이렇게 전 세계에 흩어져 있는 사무소마다 고유의 상징물을 두고 있다는 점은, HFW가 단순 법률 서비스를 넘어 산업 전반을 이해하고 있다는 메시지를 전달합니다. 결국, 로펌을 찾을 때마다 새로운 산업의 역사를 한눈에 볼 수 있는 공간이 된다는 사실, 생각보다 흥미롭지 않나요?",
+    "title_line1": "브라질 로펌 사무실",
+    "title_line2": "산업 모형이 살아있다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "박물관 같은*로펌*"
+      },
+      {
+        "s": 2,
+        "text": "*전세계* 700명"
+      },
+      {
+        "s": 4,
+        "text": "모형은 *전문성* 표시"
+      },
+      {
+        "s": 5,
+        "text": "상담에 *모형* 활용"
+      },
+      {
+        "s": 7,
+        "text": "*산업* 역사를 한눈"
+      }
+    ],
+    "image_queries": [
+      "Holman Fenwick Willan museum interior",
+      "Holman Fenwick Willan 700 lawyers",
+      "Holman Fenwick Willan London aircraft",
+      "Holman Fenwick Willan model display",
+      "lawyer pointing to model",
+      "Holman Fenwick Willan office symbol",
+      "industrial history exhibit"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "코로나·틱톡이 만든 집밥 열풍",
