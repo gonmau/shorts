@@ -3715,7 +3715,30 @@
   "sig": "74f364c36fa4",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:35",
-  "bridge_to": "일본"
+  "bridge_to": "일본",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0556_예멘.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0556_예멘_timing.json",
+  "tts_hash": "5437e84af51d",
+  "clips": [
+   {
+    "query": "Red Sea islands aerial view",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0556_예멘\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "bellergy",
+    "page": "https://pixabay.com/videos/id-1890/",
+    "id": "pixabay1890",
+    "check": "ok"
+   },
+   {
+    "query": "military naval clash",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0556_예멘\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "Matthias_Groeneveld",
+    "page": "https://pixabay.com/videos/id-170300/",
+    "id": "pixabay170300",
+    "check": "ok"
+   }
+  ]
  },
  "602": {
   "narration": "1945년 2월 19일, 미 해병대가 이오지마 해변에 발을 디뎠을 때 일본군은 이미 18km가 넘는 복잡한 지하 방어망을 완성하고 있었습니다. 이 터널은 섬 전역에 걸쳐 굴착된 벙커와 은폐 포대로 연결돼, 해변에 내려온 병사들을 기다리는 매복지 역할을 했죠. 일본은 전쟁 말기에 물자와 인력이 부족했지만, 지형을 활용해 최소 인원으로도 강력한 방어를 구현하려는 전략을 선택했습니다. 해변에 상륙한 미군은 처음에는 저항이 적어 보였지만, 곧 지하에서 쏟아지는 총탄과 대포 사격에 휘청거렸어요. 미군은 화염방사기와 폭약을 이용해 하나씩 동굴을 폭파하고, 포병 지원으로 벙커를 무너뜨렸습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하려면 거의 한 달이 걸렸죠. 초기 작전이 몇 일 안에 끝날 것이라는 예상은, 지하 네트워크가 만든 소모전으로 완전히 뒤바뀌었습니다. 이오지마 전투는 전통적인 해변 상륙 작전과 달리, 지하 전투라는 새로운 양상을 보여주며 태평양 전쟁의 가장 치열한 전장 중 하나로 기록됩니다. 다음 이야기는 이슬람제국의 방어 전략을 살펴보며 이어집니다.",
@@ -3770,7 +3793,30 @@
   "sig": "004cc4646ec1",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:35",
-  "bridge_to": "이슬람제국"
+  "bridge_to": "이슬람제국",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0602_일본.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0602_일본_timing.json",
+  "tts_hash": "0e714217423e",
+  "clips": [
+   {
+    "query": "World War II tunnel network",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0602_일본\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "tommyvideo",
+    "page": "https://pixabay.com/videos/id-5361/",
+    "id": "pixabay5361",
+    "check": "ok"
+   },
+   {
+    "query": "Explosive demolition of bunker",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0602_일본\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "LadislavBur",
+    "page": "https://pixabay.com/videos/id-213487/",
+    "id": "pixabay213487",
+    "check": "ok"
+   }
+  ]
  },
  "593": {
   "narration": "10년 사이에 두 거대 제국이 무너진다면 상상해 보셨나요? 634년부터 644년까지 우마르 이븐 알카타브가 이끈 이슬람 제국의 정복은 그 질문에 답을 줍니다. 그는 두 번째 칼리프로, 시리아와 이집트를 차례로 정복하고, 이라크와 서부 페르시아까지 진군했습니다. 이 과정에서 비잔틴과 사산 제국은 연이어 패배했고, 전쟁터에서는 기병이 사슬 갑옷을 입고 사자와 같은 전투 말을 타는 모습이 흔했습니다. 정복이 끝난 뒤 아랍어와 이슬람교는 현지인들의 일상에 스며들어, 시장에서는 코란 구절이 새겨진 도자기가 팔렸고, 학교에서는 아라비아어가 교육 언어가 되었습니다. 반면 이란은 이슬람을 받아들였지만 페르시아어와 고유 문화는 유지했으며, 후에 시아파 중심 국가로 변모했습니다. 이러한 언어·종교의 확산은 중동 지역의 정체성을 오늘날까지 형성했으며, 오스만 제국과 유럽 열강이 나중에 그 경계를 다시 그리게 만들었습니다. 결국 우마르의 10년 정복은 단순한 영토 확장이 아니라, 문화와 종교가 뒤섞인 새로운 사회 기반을 만든 사건이었습니다. 다음엔 동남아시아의 작은 도시 국가, 싱가포르의 성장 이야기를 살펴보겠습니다.",
@@ -3825,7 +3871,30 @@
   "sig": "efd05dab2db9",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:35",
-  "bridge_to": "싱가포르"
+  "bridge_to": "싱가포르",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0593_이슬람제국.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0593_이슬람제국_timing.json",
+  "tts_hash": "9080d70020bf",
+  "clips": [
+   {
+    "query": "medieval market arabic script",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0593_이슬람제국\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "MingMedia",
+    "page": "https://pixabay.com/videos/id-42089/",
+    "id": "pixabay42089",
+    "check": "ok"
+   },
+   {
+    "query": "desert caravan caravanserai",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0593_이슬람제국\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "antonlukin",
+    "page": "https://pixabay.com/videos/id-284566/",
+    "id": "pixabay284566",
+    "check": "ok"
+   }
+  ]
  },
  "583": {
   "narration": "남중국해를 지나면 세계 무역 규모가 얼마나 되는지 궁금하지 않으세요? 2024년 기준, 이 해역을 통과한 물동량은 약 6조 4천억 달러에 달합니다. 말라카 해협과 대만 해협만 해도 각각 2조 4천억 달러가 넘는 상품이 오가며, 인도양과 태평양을 연결하는 핵심 물류 축을 형성합니다. 중동의 석유와 유럽의 제조품이 이 길을 거쳐 동아시아로 흘러들어가고, 우리나라 역시 큰 비중을 차지합니다. 한국 무역의 약 22%가 대만 해협을, 13%가 말라카 해협을 통과한다는 사실은 이 지역이 에너지와 원자재 수입에 얼마나 중요한지 보여줍니다. 싱가포르는 말라카 해협과 싱가포르 해협을 끼고 있어, 세계 선박이 정박하고 물류를 전환하는 허브 역할을 합니다. 항구 인프라와 자유무역 정책 덕분에 선박이 빠르게 통과하고, 물류 비용을 낮출 수 있죠. 이처럼 남중국해는 단순한 항로가 아니라, 글로벌 경제와 우리 일상을 이어주는 생명선입니다. 다음에는 스페인의 해양 역사를 살펴보겠습니다.",
@@ -3880,7 +3949,30 @@
   "sig": "8d8d4737d61d",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:35",
-  "bridge_to": "스페인"
+  "bridge_to": "스페인",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0583_싱가포르.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0583_싱가포르_timing.json",
+  "tts_hash": "9361cd9cb15f",
+  "clips": [
+   {
+    "query": "South China Sea shipping lanes",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0583_싱가포르\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "bellergy",
+    "page": "https://pixabay.com/videos/id-23544/",
+    "id": "pixabay23544",
+    "check": "ok"
+   },
+   {
+    "query": "Cargo ships at sea",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0583_싱가포르\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "History11",
+    "page": "https://pixabay.com/videos/id-275891/",
+    "id": "pixabay275891",
+    "check": "ok"
+   }
+  ]
  },
  "581": {
   "narration": "스페인 왕이 두 대륙을 동시에 다스렸다는 사실, 알고 계셨나요? 16세기 스페인은 유럽과 아메리카를 아우르는 거대한 제국을 건설했습니다. 그 중심에는 펠리페 2세가 있었으며, 그는 카를 5세의 아들로 황제와 왕의 혈통을 이어받았습니다. 펠리페 2세는 1580년 포르투갈 왕위까지 차지해 대서양을 가로지르는 해상 통치를 완성했습니다. 남미의 풍부한 은광과 필리핀의 향신료는 스페인 재정을 크게 늘렸습니다. 이때 스페인 군함은 무역선과 군함을 동시에 겸비한 대형 선단으로 성장했습니다. 1588년, 영국을 정복하려는 목표 아래 130척 규모의 함대를 출동시켰습니다. 이 함대는 영국 측이 ‘무적함대’라 부른 것이며, 실제로는 스페인 자체가 붙인 이름이 아닙니다. 영국은 함대의 규모를 비꼬며 ‘무적’이라는 반어적 표현을 사용했습니다. 그러나 악천후와 영국 해군의 기동성에 밀려 스페인 함대는 큰 피해를 입었습니다. 이 패배는 스페인 제국의 해양 팽창에 큰 제동을 걸었습니다. 그럼에도 스페인은 남미와 필리핀에서 오랜 식민 통치를 이어갔습니다. 오늘날 남미의 스페인어와 필리핀의 문화적 흔적은 그때의 영향력의 증거입니다. 이제 영국이 어떻게 스페인에 맞섰는지 살펴보겠습니다.",
@@ -3935,7 +4027,30 @@
   "sig": "7df7c66b1b90",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:35",
-  "bridge_to": "영국"
+  "bridge_to": "영국",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0581_스페인.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0581_스페인_timing.json",
+  "tts_hash": "a2675fb7fb1b",
+  "clips": [
+   {
+    "query": "Spanish Armada ships",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0581_스페인\\clip_01.mp4",
+    "source": "pixabay",
+    "user": "Airvideopl",
+    "page": "https://pixabay.com/videos/id-33014/",
+    "id": "pixabay33014",
+    "check": "ok"
+   },
+   {
+    "query": "Philippine spice trade",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0581_스페인\\clip_03.mp4",
+    "source": "pixabay",
+    "user": "753tomas753",
+    "page": "https://pixabay.com/videos/id-21198/",
+    "id": "pixabay21198",
+    "check": "ok"
+   }
+  ]
  },
  "562": {
   "narration": "영국 해군이 육군보다 먼저 설립됐다는 사실, 알고 계셨나요? 16세기 헨리 8세 시절, 왕실은 대형 전함을 늘리고 조직적인 해군을 만들었습니다. 그 뒤 1660년 찰스 2세가 왕정복고를 하면서 공식 명칭을 ‘Royal Navy’로 확정했죠. 해군이 국가 방위의 최전선에 있었기 때문에 영국 군대 안에서 가장 오래된 군종이라는 의미로 ‘시니어 서비스’라는 별명이 붙었습니다. 이는 단순히 연령이 많다는 뜻이 아니라, 해군이 국가 안보의 근간을 이루었다는 상징입니다. 오늘날에도 함선에 탑승한 선원들은 ‘시니어 서비스’라는 표어를 배너로 달고, 전통적인 복장과 의식을 유지합니다. 예를 들어, 함선 출항식에서 가장 먼저 나오는 행진은 해군이 군대 전체보다 먼저 시작한다는 의미를 담고 있습니다. 다른 나라와 비교하면, 일본 해군은 메이지 유신 이후에 설립돼 해군이 군대 내에서 비교적 늦게 자리 잡았습니다. 영국의 ‘시니어 서비스’는 해양 강국으로서의 오랜 전통과 자부심을 보여주는 대표적인 사례라 할 수 있습니다. 이렇게 해군이 먼저였던 역사가 오늘까지 이어져 영국을 바다의 수호자로 만들었습니다.",
@@ -3986,6 +4101,20 @@
   "sig": "322e14226a09",
   "model": "openai/gpt-oss-120b",
   "created": "2026-11-11 21:36",
-  "bridge_to": ""
+  "bridge_to": "",
+  "audio": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0562_영국.mp3",
+  "timing": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\lf_0562_영국_timing.json",
+  "tts_hash": "a5c71014d8ea",
+  "clips": [
+   {
+    "query": "navy ceremonial parade",
+    "path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\clips\\0562_영국\\clip_02.mp4",
+    "source": "pixabay",
+    "user": "DavidClode",
+    "page": "https://pixabay.com/videos/id-210317/",
+    "id": "pixabay210317",
+    "check": "ok"
+   }
+  ]
  }
 }
