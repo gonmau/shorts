@@ -61969,107 +61969,115 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "Royal Navy historic white ensign naval emblem",
-      "Royal Navy modern warship at sea",
-      "Henry VIII Tudor navy historical warships",
-      "Charles II restoration Royal Navy 1660 historical painting",
-      "Royal Navy Senior Service historical plaque",
-      "Royal Navy White Ensign flag waving",
-      "historic Royal Navy warship wooden hull",
-      "Royal Navy centuries of naval history Portsmouth dockyard",
-      "Royal Navy historic naval seal maritime heritage"
+      "British naval ship silhouette",
+      "Royal Navy historic fleet",
+      "16th century English warships",
+      "1660 English navy flag",
+      "Senior Service nickname emblem",
+      "Oldest British warship",
+      "Naval tradition wooden vessel",
+      "500 year navy tradition",
+      "Royal Navy ships at sea",
+      "Senior Service naval badge"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "commons",
-        "user": "Charles Dixon",
-        "license": "Public domain",
-        "title": "Charles Edward Dixon Royal Navy torpedo boats naval manoeuvres.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Charles_Edward_Dixon_Royal_Navy_torpedo_boats_naval_manoeuvres.jpg",
-        "id": "c:116521313"
+        "user": "Eric Jones",
+        "license": "CC BY-SA 2.0",
+        "title": "The L.É. Eithne (P31) silhouetted against the sunlit Kirkpatrick House and Convention Cent",
+        "page": "https://commons.wikimedia.org/wiki/File:The_L.%C3%89._Eithne_(P31)_silhouetted_against_the_sunlit_Kirkpatrick_House_and_Convention_Centre_-_geograph.org.uk_-_2169275.jpg",
+        "id": "c:106589337"
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "12019",
-        "page": "https://pixabay.com/photos/submarine-sea-silhouette-sub-168884/",
-        "id": 168884
+        "user": "Canadian-Nature-Visions",
+        "page": "https://pixabay.com/photos/hmcs-charlottetown-frigate-warship-7082999/",
+        "id": 7082999
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "12019",
-        "page": "https://pixabay.com/photos/u-s-navy-battleships-navy-sky-69208/",
-        "id": 69208
+        "source": "commons",
+        "user": "Aec1383",
+        "license": "CC BY 4.0",
+        "title": "Future of the Royal Navy 2025.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Future_of_the_Royal_Navy_2025.png",
+        "id": "c:148455206"
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Attributed to Cornelis van de Velde",
-        "license": "Public domain",
-        "title": "The flagship Royal Sovereign firing a salute at the Nore with other warships and Admiralty",
-        "page": "https://commons.wikimedia.org/wiki/File:The_flagship_Royal_Sovereign_firing_a_salute_at_the_Nore_with_other_warships_and_Admiralty_yachts_in_attendance_(Attributed_to_Cornelis_van_de_Velde).jpg",
-        "id": "c:145981934"
+        "source": "pixabay",
+        "user": "ernie114",
+        "page": "https://pixabay.com/photos/us-flag-navy-burial-ceremony-4804257/",
+        "id": 4804257
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Canadian-Nature-Visions",
-        "page": "https://pixabay.com/photos/hmcs-charlottetown-frigate-warship-7082999/",
-        "id": 7082999,
-        "type": "photo"
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/elderly-care-nursing-senior-smile-10184897/",
+        "id": 10184897
       },
       {
         "scene": 6,
         "source": "commons",
-        "user": "Hayden Soloviev",
-        "license": "CC BY 4.0",
-        "title": "Royal Navy White Ensign flown on MV Medway Queen, Dunkirk 1940.png",
-        "page": "https://commons.wikimedia.org/wiki/File:Royal_Navy_White_Ensign_flown_on_MV_Medway_Queen,_Dunkirk_1940.png",
-        "id": "c:185127080"
+        "user": "Dennis Jarvis from Halifax, Canada",
+        "license": "CC BY-SA 2.0",
+        "title": "Mass-01833 - USS Constitution (52955478918).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mass-01833_-_USS_Constitution_(52955478918).jpg",
+        "id": "c:171842558"
       },
       {
         "scene": 7,
-        "source": "commons",
-        "user": "Rab Lawrence from Aberdeen/Scotland",
-        "license": "CC BY 2.0",
-        "title": "HMS Warrior (29432679447).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:HMS_Warrior_(29432679447).jpg",
-        "id": "c:105430276"
+        "source": "pixabay",
+        "user": "Falkenpost",
+        "page": "https://pixabay.com/photos/fishing-boat-abandoned-fields-grass-1654446/",
+        "id": 1654446
       },
       {
         "scene": 8,
-        "source": "pixabay",
-        "user": "nuernbaer",
-        "page": "https://pixabay.com/photos/portsmouth-dockyard-hms-warrior-4044348/",
-        "id": 4044348
+        "source": "commons",
+        "user": "Aec1383",
+        "license": "CC BY 4.0",
+        "title": "Future of the Royal Navy 2025.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Future_of_the_Royal_Navy_2025.png",
+        "id": "c:148455206"
       },
       {
         "scene": 9,
+        "source": "pixabay",
+        "user": "Military_Material",
+        "page": "https://pixabay.com/photos/hmas-canberra-iii-l02-2530097/",
+        "id": 2530097
+      },
+      {
+        "scene": 10,
         "source": "commons",
-        "user": "Wolfmann",
+        "user": "Unknown author (name of designer not provided; illustrator not credited); The Mi",
         "license": "CC BY-SA 4.0",
-        "title": "SJØFORSVARET (Royal Norwegian Navy) HERALDISKE VÅPEN 2010 (coats of arms) Embetsvåpen embl",
-        "page": "https://commons.wikimedia.org/wiki/File:SJ%C3%98FORSVARET_(Royal_Norwegian_Navy)_HERALDISKE_V%C3%85PEN_2010_(coats_of_arms)_Embetsv%C3%A5pen_emblem_MARINEMUSEET_Museum_Horten,_Norway_(2021)_No_known_copyright_1535.jpg",
-        "id": "c:110042780"
+        "title": "IDENTIFICATION The World's Military, Naval And Air Uniforms, Insignia And Flags 1943 POLAN",
+        "page": "https://commons.wikimedia.org/wiki/File:IDENTIFICATION_The_World%27s_Military,_Naval_And_Air_Uniforms,_Insignia_And_Flags_1943_POLAND_ENLISTED_MEN_NCOs_Rank_shoulder_straps_Service_dress_cap_Fatigue_cap_Branch_insignia_collar_tabs_Khaki_battle_dress_etc_WW2_Google-digitized_Pu.jpg",
+        "id": "c:133146555"
       }
     ],
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "bad",
-        "clip": 0.1995,
+        "verdict": "ok",
+        "clip": 0.3089,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "c18515a904a8",
-        "at": "2026-11-07 17:09",
+        "sig": "63552d60918f",
+        "at": "2026-11-11 22:06",
         "scene": 1,
         "rejected_ids": [
           2530097,
           389274,
           7082999,
+          "c:106589337",
           "c:113765104",
           "c:116521313",
           "c:148455206"
@@ -62077,34 +62085,38 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2723,
+        "clip": 0.224,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "bdc52034316a",
-        "at": "2026-11-07 17:09",
+        "sig": "9d32e9ba9557",
+        "at": "2026-11-11 22:05",
         "scene": 2,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.224,
+        "clip": 0.249,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "095bdfc498b5",
-        "at": "2026-11-07 17:09",
+        "sig": "6e0d2034f925",
+        "at": "2026-11-11 22:06",
         "scene": 3,
-        "rejected_ids": []
+        "rejected_ids": [
+          2771936,
+          "c:148455206",
+          "c:43979621"
+        ]
       },
       {
-        "verdict": "bad",
-        "clip": 0.1912,
+        "verdict": "ok",
+        "clip": 0.2356,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6fb697f9460a",
-        "at": "2026-11-07 17:09",
+        "sig": "4a57ecf5355c",
+        "at": "2026-11-11 22:05",
         "scene": 4,
         "rejected_ids": [
           6978102,
@@ -62117,30 +62129,35 @@
       },
       {
         "verdict": "bad",
-        "clip": 0.217,
+        "clip": 0.1705,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a5517ba47922",
-        "at": "2026-11-07 17:10",
+        "sig": "cb8e131b4fd3",
+        "at": "2026-11-11 22:05",
         "scene": 5,
         "rejected_ids": [
           10184897,
+          3336451,
+          4723737,
           7082999,
           8594719,
           "c:113765104",
           "c:116521313",
-          "c:148455206"
+          "c:148455206",
+          "c:203005961",
+          "c:203005972",
+          "c:203041958"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2332,
+        "clip": 0.2885,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ec7fa03948d5",
-        "at": "2026-11-07 17:10",
+        "sig": "45d9868947c1",
+        "at": "2026-11-11 22:05",
         "scene": 6,
         "rejected_ids": [
           2629856,
@@ -62152,34 +62169,41 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2709,
+        "clip": 0.2235,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "7b707ad114fe",
-        "at": "2026-11-07 17:09",
+        "sig": "5103e7f22779",
+        "at": "2026-11-11 22:05",
         "scene": 7,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2576,
+        "clip": 0.26,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "53fb9b5fafd3",
-        "at": "2026-11-07 17:09",
+        "sig": "c202636f1214",
+        "at": "2026-11-11 22:06",
         "scene": 8,
-        "rejected_ids": []
+        "rejected_ids": [
+          10015835,
+          3206530,
+          8262467,
+          "c:148455206",
+          "c:160161382",
+          "c:17376031"
+        ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2371,
+        "clip": 0.3054,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "6a345f73a436",
-        "at": "2026-11-07 17:10",
+        "sig": "4000df418bda",
+        "at": "2026-11-11 22:05",
         "scene": 9,
         "rejected_ids": [
           389274,
@@ -62188,6 +62212,24 @@
           "c:113765104",
           "c:116521313",
           "c:148455206"
+        ]
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2066,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bf18b55046e0",
+        "at": "2026-11-11 22:06",
+        "scene": 10,
+        "rejected_ids": [
+          10184897,
+          389274,
+          63015,
+          "c:133146555",
+          "c:157257124",
+          "c:157257127"
         ]
       }
     ],
@@ -64115,84 +64157,86 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "Philip II of Spain royal portrait",
-      "Charles V Holy Roman Emperor portrait",
-      "Spanish Empire 1580 historical world map",
-      "Spanish Portugal union 1580 historical map",
-      "Spanish Armada 1588 fleet historical painting",
-      "Spanish Armada English Channel 1588 naval battle painting",
-      "Spanish Armada 1588 historical engraving"
+      "Philip II portrait",
+      "Portuguese crown",
+      "130 ship fleet",
+      "Invincible Armada",
+      "Habsburg Spain map",
+      "Spanish galleon 1588",
+      "Spanish Armada ships",
+      "British ship vs fleet",
+      "Satirical Spanish fleet"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "commons",
-        "user": "Public domain / CC0",
+        "user": "Sofonisba Anguissola",
         "license": "Public domain",
-        "title": "'Philippus byder gratien Gods Prince van Castilien etc...' Portrait of Philip II of Spain ",
-        "page": "https://commons.wikimedia.org/wiki/File:%27Philippus_byder_gratien_Gods_Prince_van_Castilien_etc...%27_Portrait_of_Philip_II_of_Spain_in_armour,_standing_1564_print_published_by_Jan_Mollyns,_S.II_86011,_Prints_Department,_Royal_Library_of_Belgium.jpg",
-        "id": "c:93071089"
+        "title": "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
+        "id": "c:5249539"
       },
       {
         "scene": 2,
         "source": "commons",
-        "user": "Attributed to Titian",
-        "license": "Public domain",
-        "title": "Portrait of Charles V, Holy Roman Emperor, seated (1500–1558), formerly attributed to Titi",
-        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500%E2%80%931558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg",
-        "id": "c:108115194"
+        "user": "Jules Verne Times Two",
+        "license": "CC BY-SA 4.0",
+        "title": "Royal Crown made in Brazil by António Gomes da Silva in 1817, Royal Treasure Museum, Lisbo",
+        "page": "https://commons.wikimedia.org/wiki/File:Royal_Crown_made_in_Brazil_by_Ant%C3%B3nio_Gomes_da_Silva_in_1817,_Royal_Treasure_Museum,_Lisbon,_Portugal_julesvernex2.jpg",
+        "id": "c:150242991"
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "MasterTux",
-        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
-        "id": 2528477
+        "source": "commons",
+        "user": "George Chernilevsky",
+        "license": "Public domain",
+        "title": "Project 130 SR-541 ship 2008 G1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Project_130_SR-541_ship_2008_G1.jpg",
+        "id": "c:7329694"
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "carloslorite",
-        "page": "https://pixabay.com/photos/map-world-europe-earth-geography-5631690/",
-        "id": 5631690
+        "source": "commons",
+        "user": "anonymous",
+        "license": "Public domain",
+        "title": "Invincible Armada.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Invincible_Armada.jpg",
+        "id": "c:284027"
       },
       {
         "scene": 5,
         "source": "commons",
-        "user": "Unknown author Unknown author",
-        "license": "Public domain",
-        "title": "La batalla de Gravelinas, por Nicholas Hilliard.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:La_batalla_de_Gravelinas,_por_Nicholas_Hilliard.jpg",
-        "id": "c:88989671"
+        "user": "Barjimoa",
+        "license": "CC BY-SA 4.0",
+        "title": "Habsburg Empire of Charles V.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Habsburg_Empire_of_Charles_V.png",
+        "id": "c:78077272"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "Papafox",
-        "page": "https://pixabay.com/photos/naval-battle-ship-sailing-ship-old-3195409/",
-        "id": 3195409
+        "user": "Michelangelo_2021",
+        "page": "https://pixabay.com/photos/neptune-vessel-spanish-galleon-ship-6316028/",
+        "id": 6316028
       },
       {
         "scene": 7,
-        "source": "pixabay",
-        "user": "u_qqco3bha6l",
-        "page": "https://pixabay.com/photos/crown-sword-knight-vintage-10496342/",
-        "id": 10496342,
-        "type": "photo"
-      },
-      {
-        "scene": 8,
-        "source": "pixabay",
-        "user": "SplitShire",
-        "page": "https://pixabay.com/photos/photographer-tourist-snapshot-407068/",
-        "id": 407068
+        "source": "commons",
+        "user": "anonymous",
+        "license": "Public domain",
+        "title": "Spanish Armada fireships.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Spanish_Armada_fireships.jpg",
+        "id": "c:59443607"
       },
       {
         "scene": 9,
-        "source": "pixabay",
-        "user": "DariuszSankowski",
-        "page": "https://pixabay.com/photos/journey-adventure-photo-map-old-1130732/",
-        "id": 1130732
+        "source": "commons",
+        "user": "Print made by: James Gillray Published by: Hannah Humphrey",
+        "license": "Public domain",
+        "title": "A French hail storm,-or-Neptune loosing sight of the Brest fleet- (BM 1868,0808.6318).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:A_French_hail_storm,-or-Neptune_loosing_sight_of_the_Brest_fleet-_(BM_1868,0808.6318).jpg",
+        "id": "c:90038737"
       },
       {
         "scene": 10,
@@ -64206,12 +64250,12 @@
     "image_check": [
       {
         "verdict": "ok",
-        "clip": 0.2378,
+        "clip": 0.3422,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d1287172850c",
-        "at": "2026-11-10 18:00",
+        "sig": "695f9e6d63d3",
+        "at": "2026-11-11 22:04",
         "scene": 1,
         "rejected_ids": [
           1876479,
@@ -64221,49 +64265,52 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.3128,
+        "clip": 0.3468,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "ed0342190dae",
-        "at": "2026-11-10 18:00",
+        "sig": "44c00797c764",
+        "at": "2026-11-11 22:04",
         "scene": 2,
         "rejected_ids": [
           3357150,
+          7576019,
           "c:108115194",
-          "c:148062899"
+          "c:130379903",
+          "c:148062899",
+          "c:150242991"
         ]
       },
       {
         "verdict": "ok",
-        "clip": 0.2445,
+        "clip": 0.2689,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "8909efd5c27b",
-        "at": "2026-11-10 18:00",
+        "sig": "e9f285bb169d",
+        "at": "2026-11-11 22:04",
         "scene": 3,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3109,
+        "clip": 0.3208,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "b467e8506d47",
-        "at": "2026-11-10 18:00",
+        "sig": "b2e690513e04",
+        "at": "2026-11-11 22:04",
         "scene": 4,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.3688,
+        "clip": 0.3281,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "3a8460610334",
-        "at": "2026-11-10 18:00",
+        "sig": "31b65257e401",
+        "at": "2026-11-11 22:04",
         "scene": 5,
         "rejected_ids": [
           8589487,
@@ -64273,23 +64320,23 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2496,
+        "clip": 0.3212,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "3bf9d4cce88c",
-        "at": "2026-11-10 18:00",
+        "sig": "15f4de4d1abb",
+        "at": "2026-11-11 22:04",
         "scene": 6,
         "rejected_ids": []
       },
       {
         "verdict": "ok",
-        "clip": 0.2583,
+        "clip": 0.3456,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "a7f5e11bad3d",
-        "at": "2026-11-10 18:00",
+        "sig": "83f025bdfd1e",
+        "at": "2026-11-11 22:04",
         "scene": 7,
         "rejected_ids": [
           10496342,
@@ -64299,6 +64346,21 @@
           "c:1003110",
           "c:31534131",
           "c:84620324"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2803,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1605bb4d6f79",
+        "at": "2026-11-11 22:04",
+        "scene": 9,
+        "rejected_ids": [
+          8589487,
+          "c:90038737",
+          "c:90063954"
         ]
       }
     ],
