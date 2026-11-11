@@ -55087,7 +55087,7 @@
     "verify_note": "Taoism",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "‘도(道)’를 따라 움직이면 몸도 바뀐다고?  \n도교는 중국에서 시작된 사상으로, ‘도’는 상황에 따라 길, 방법, 기술 등으로 해석됩니다. 이는 의도에 따라 달라지며, 도와의 조화를 강조합니다.  \n그런데 도교는 단순히 철학에 그치지 않습니다. 전통 의학, 명상, 점성술, 기공, 풍수, 내연금술 등 일상 생활 전반에 스며들어 있습니다.  \n‘도’에 대한 해석은 시대와 지역에 따라 다양하게 변해 왔지만, 그 중심에는 여전히 삶의 흐름과 조화가 자리합니다.  \n도와 함께 걸으면, 몸과 마음이 한층 더 유연해지는 듯한 느낌을 받을 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -55136,7 +55136,168 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0469_중국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0469_중국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "person practicing tai chi",
+      "traditional Chinese Taoist altar",
+      "balanced stone garden",
+      "interior of Taoist temple",
+      "feng shui interior design",
+      "flowing river landscape China",
+      "person walking mountain path China"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Anna Frodesiak",
+        "license": "CC0",
+        "title": "Haikou People's Park - people practicing t'ai chi ch'uan (tai chi) - 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Haikou_People%27s_Park_-_people_practicing_t%27ai_chi_ch%27uan_(tai_chi)_-_01.jpg",
+        "id": "c:19129763"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "簡賜郎",
+        "license": "CC BY-SA 4.0",
+        "title": "聚福-祭天.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%81%9A%E7%A6%8F-%E7%A5%AD%E5%A4%A9.jpg",
+        "id": "c:146483550"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Schäferle",
+        "page": "https://pixabay.com/photos/stones-rocks-stack-pebbles-2040340/",
+        "id": 2040340
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/taipei-shrine-temple-religion-5468792/",
+        "id": 5468792
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PIRO4D",
+        "page": "https://pixabay.com/photos/feng-shui-zen-stones-texture-1927590/",
+        "id": 1927590
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "jameswheeler",
+        "page": "https://pixabay.com/photos/beauty-in-nature-blurred-motion-3760249/",
+        "id": 3760249
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "YangGuangWu",
+        "page": "https://pixabay.com/photos/china-meadow-guizhou-path-scenery-6796350/",
+        "id": 6796350
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3015,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "64c710dd3472",
+        "at": "2026-11-11 20:46",
+        "scene": 1,
+        "rejected_ids": [
+          4949595,
+          "c:19129763"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3274,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f0eb25176a64",
+        "at": "2026-11-11 20:46",
+        "scene": 2,
+        "rejected_ids": [
+          7596495,
+          "c:146483550",
+          "c:31619441"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3015,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "44e881e6f839",
+        "at": "2026-11-11 20:46",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.305,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8a24d41176bc",
+        "at": "2026-11-11 20:46",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "bad",
+        "clip": 0.2,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c07fb3496441",
+        "at": "2026-11-11 20:46",
+        "scene": 5,
+        "rejected_ids": [
+          185387,
+          1927590,
+          7535529,
+          "c:146483545",
+          "c:146483550",
+          "c:31619441"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3189,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "99db31527a2d",
+        "at": "2026-11-11 20:46",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2525,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9fd75544d723",
+        "at": "2026-11-11 20:46",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0469_중국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0469_중국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
@@ -55202,7 +55363,11 @@
       "reason": "덴마크와 아이슬란드의 대사관 배치 사실은 외교 문서에 명시돼 있으며, 양국 관계라는 구체적 배경이 있어 독특하고 검증 가능함.",
       "avg": 7.3,
       "flags": []
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0470_덴마크_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0470_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "오스만 1세의 작은 영토가 3대 대륙을 지배",
@@ -57655,7 +57820,7 @@
     "verify_note": "Thali",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -57667,7 +57832,40 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "narration": "동남아 시장에서 원형 큰 접시 ‘Thali(थाली)’를 받아 한 번에 온갖 요리를 먹는 모습을 보셨나요? Thali는 남아시아와 동남아, 카리브해 지역에서 흔히 볼 수 있는 원형 플래터입니다. 한 접시에 여러 가지 반찬과 메인 요리가 조화롭게 놓여, 한 입에 다양한 맛을 경험하게 해줍니다. 그런데 이 이름은 힌디어 ‘थाली’에서 왔으며, 단순히 ‘접시’ 혹은 ‘트레이’를 뜻한다는 점이 흥미롭습니다. Thali는 주로 인도식 식사에 활용되지만, 각 지역마다 구성은 다르게 나타납니다. 한 번에 여러 음식을 즐길 수 있는 이 전통적인 식사 방식은, 한 그릇에 균형 잡힌 영양을 담아내려는 실용적인 이유에서 시작됐다고 전해집니다. 여러 가지 맛이 한데 어우러지는 순간, 그 풍성함이 바로 Thali가 전해주는 매력이라는 것을 기억해 주세요.",
+    "title_line1": "캄보디아 대형 대접",
+    "title_line2": "한 판에 온갖 요리?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "한 판에 *온갖* 요리"
+      },
+      {
+        "s": 3,
+        "text": "다양한 맛 *조화*"
+      },
+      {
+        "s": 6,
+        "text": "균형 잡힌 *영양*"
+      },
+      {
+        "s": 7,
+        "text": "풍성함 *전달*"
+      }
+    ],
+    "image_queries": [
+      "Thali assorted dishes",
+      "South Asian thali platter",
+      "Thali colorful variety",
+      "Hindi word thali plate",
+      "Regional thali variations",
+      "Thali balanced meal",
+      "Thali abundant platter"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "이탈리아(Italy) 부활절(Easter)의 특이한 양 요리 ‘앱바키오(abbacchio)’",
