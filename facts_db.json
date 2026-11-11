@@ -32535,7 +32535,10 @@
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0339_영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
-    "reject_reason": "UI에서 폐기 이미지 찾기 실패"
+    "reject_reason": "UI에서 폐기 이미지 찾기 실패",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0339_영국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0339_영국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "티베트식 소금·버터 차 문화",
@@ -53710,7 +53713,198 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "image_queries_done": [
+      "Maldives Buddhist feast",
+      "Maldives monks vegetarian meal",
+      "Ahimsa nonviolence principle",
+      "Maldives ceremonial food",
+      "Meditative cooking practice",
+      "Mindful meal enlightenment",
+      "Monk vegetarian tradition",
+      "Festival vegan practice"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Allervous",
+        "license": "CC BY-SA 4.0",
+        "title": "Buddhist cuisine of Tzu Chi (20250120).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Buddhist_cuisine_of_Tzu_Chi_(20250120).jpg",
+        "id": "c:159542320"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Allervous",
+        "license": "CC BY-SA 4.0",
+        "title": "Buddhist cuisine of Tzu Chi (20250121).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Buddhist_cuisine_of_Tzu_Chi_(20250121).jpg",
+        "id": "c:159542316"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/pacifist-mahatma-gandhi-71445/",
+        "id": 71445,
+        "type": "photo"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Shi Annan",
+        "license": "CC BY-SA 3.0",
+        "title": "Buddhist dishes.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Buddhist_dishes.JPG",
+        "id": "c:31854069"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Shenzybaby",
+        "license": "CC BY-SA 4.0",
+        "title": "Miao Ji Xiang Buddhist vegan buffet in Shaibu, Shenzhen.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Miao_Ji_Xiang_Buddhist_vegan_buffet_in_Shaibu,_Shenzhen.jpg",
+        "id": "c:82617596"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Andrea Schaffer from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "title": "Vegetarian meal at Buddhist temple (3810298969).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_meal_at_Buddhist_temple_(3810298969).jpg",
+        "id": "c:75235527"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boy-monk-umbrella-child-kid-1807525/",
+        "id": 1807525,
+        "type": "photo"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Szabolcs Arany",
+        "license": "CC BY 2.0",
+        "title": "Buddhist vegetarian food, Shukubo of Kongosanmaiin - May 3, 2011.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Buddhist_vegetarian_food,_Shukubo_of_Kongosanmaiin_-_May_3,_2011.jpg",
+        "id": "c:134032224"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2252,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c6917c2bd20d",
+        "at": "2026-11-11 16:26",
+        "scene": 1,
+        "rejected_ids": [
+          10152966,
+          "c:159542316",
+          "c:159542320"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2863,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "03a42af77122",
+        "at": "2026-11-11 16:26",
+        "scene": 2,
+        "rejected_ids": [
+          2931846,
+          "c:159542316"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2362,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4d37ccfce99c",
+        "at": "2026-11-11 16:26",
+        "scene": 3,
+        "rejected_ids": [
+          71445,
+          "c:159542320"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2515,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1007b9c15707",
+        "at": "2026-11-11 16:26",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2739,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b784245cebfb",
+        "at": "2026-11-11 16:26",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.244,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "20d6b506c45d",
+        "at": "2026-11-11 16:26",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2295,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "dd29ba3a021e",
+        "at": "2026-11-11 16:26",
+        "scene": 7,
+        "rejected_ids": [
+          1807513,
+          1807525,
+          "c:62756298"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2412,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ab0ea0db3872",
+        "at": "2026-11-11 16:26",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0461_몰디브_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0461_몰디브_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -59991,7 +60185,41 @@
     "verify_note": "Kazakhstan",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:16.837749+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "‘내륙 나라라서 바다가 없다고?’ 라고 생각한 당신, 오늘은 카자흐스탄이 카스피해까지 손을 뻗었다는 걸 알려드릴게요. 카자흐스탄은 세계에서 아홉 번째로 큰 나라이면서, 가장 큰 내륙 국가로 알려져 있습니다. 그런데 이 거대한 땅이 바로 카스피해에 해안선을 가지고 있다는 사실, 알고 계셨나요? 카스피해는 세계에서 가장 큰 내륙해인데, 바다와 호수의 경계가 모호한 독특한 지형을 가지고 있습니다. 그래서 카자흐스탄은 내륙에 있으면서도 실질적인 해안을 누릴 수 있는 것이죠. 다만, 해안선 길이는 전체 영토를 기준으로 할 때 제한적이라는 점을 기억해 주세요. 이렇게 내륙 국가이면서도 바다와 맞닿은 카자흐스탄, 생각보다 더 복잡한 지리적 매력을 품고 있습니다. 결국, ‘내륙 나라’라는 고정관념을 다시 한 번 되돌아보게 만드는 사례가 아닐까요?",
+    "title_line1": "내륙 국가 카자흐스탄",
+    "title_line2": "바다까지 손을 뻗다",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "내륙에 *바다*?"
+      },
+      {
+        "s": 2,
+        "text": "9번째 *대국*"
+      },
+      {
+        "s": 3,
+        "text": "*카스피해* 해안"
+      },
+      {
+        "s": 5,
+        "text": "내륙이지만 *해안*"
+      }
+    ],
+    "image_queries": [
+      "Kazakhstan inland sea map",
+      "Kazakhstan world size map",
+      "Kazakhstan Caspian Sea coast",
+      "Caspian Sea inland sea",
+      "Kazakhstan shoreline view",
+      "Kazakhstan coastline aerial",
+      "Kazakhstan landscape sea horizon",
+      "Caspian Sea border Kazakhstan"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "하니시 제도(Hanish Islands) 분쟁의 짧은 전투와 국제 판결",
@@ -66280,5 +66508,37 @@
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
     "status": "unverified"
+  },
+  {
+    "country": "말레이시아",
+    "topic": "9왕가 중 왕은 회의에서 비밀투표로 선출됩니다",
+    "hook": "말레이시아 왕, 어떻게 뽑히는지 궁금하신가요?",
+    "body": "말레이시아는 9개의 왕가(주라, 페낭 등)의 군주가 모인 ‘왕실 회의’에서 5년 임기의 왕(양디페르투안 아공)을 비밀투표로 선출합니다. 후보는 현직 군주 중에서만 가능하며, 선출 후에는 연방의 국가원수 겸 군주가 됩니다.",
+    "twist": "선출 순서는 공식적인 규칙이 없지만, 과거에는 회전식 순서가 비공식적으로 적용된 적이 있습니다.",
+    "caveat": "이 절차는 말레이시아 연방의 9개 주군주에게만 적용됩니다.",
+    "confidence": "high",
+    "verify_note": "말레이시아 양디페르투안 아공 선출 절차, 왕실 회의 비밀투표",
+    "status": "unverified",
+    "created_at": "2026-11-11T07:22:21.449526+00:00",
+    "theme": "키워드",
+    "seed_keyword": "말레이시아 9왕가, 왕은 어떻게 뽑히나요? – 왕위 선택 규칙 대공개",
+    "need": "curiosity",
+    "emotion": "surprise"
+  },
+  {
+    "country": "일본",
+    "topic": "외국인이 꼭 알아야 할 사무라이 식탁 매너 5가지",
+    "hook": "‘사무라이가 식탁에서 절대 어긴 적 없는 규칙, 지금 바로 알려드릴게요!’",
+    "body": "사무라이는 식사 전 ‘이타다키마스(いただきます)’라고 인사하고, 바닥에 무릎을 꿇은 자세(세이자)로 앉았다. 식사 중에는 젓가락을 가로로 놓지 않고, 밥그릇을 들고 먹지 않으며, 술을 따를 때는 먼저 동료에게 따르는 것이 예의였다. 마지막으로 식사 후에는 그릇을 정리하고 ‘고치소마시타(ごちそうさまでした)’라며 감사를 표한다.",
+    "twist": "하지만 현대 일본에서는 사무라이식 자세 대신 일반적인 의자에 앉아도 같은 매너가 적용됩니다.",
+    "caveat": "이 규칙들은 에도 시대(1603‑1868) 사무라이 기록에 기반하며, 현재 모든 일본인에게 동일하게 적용되는 것은 아닙니다.",
+    "confidence": "high",
+    "verify_note": "에도 시대 사무라이 식탁 매너 기록, 일본 전통 예절 서적",
+    "status": "unverified",
+    "created_at": "2026-11-11T07:22:34.600600+00:00",
+    "theme": "키워드",
+    "seed_keyword": "일본 사무라이 식탁 매너, 외국인이 절대 놓치면 안 되는 5가지",
+    "need": "practical",
+    "emotion": "curiosity"
   }
 ]
