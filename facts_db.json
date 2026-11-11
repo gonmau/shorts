@@ -53835,8 +53835,8 @@
   {
     "topic": "스웨덴 전통 음악, 라디오에서 바이올린만 24시간?",
     "hook": "라디오가 바이올린만 틀면?",
-    "body": "스웨덴(Sweden)에서는 1960년대 청년들이 스펠만슬라그(Spelmanslag)라는 포크 클럽을 만들고, 전통 폴스카(pol​ska) 연주를 라디오와 TV에 송출했어요. 그때부터 악기 연주가 가장 큰 장르가 되었죠.",
-    "twist": "1990년대부터는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 줬어요.",
+    "body": "1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다.",
+    "twist": "결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
     "caveat": "이 현상은 주로 전통 음악 애호가와 라디오 청취자를 중심으로 합니다.",
     "country": "스웨덴",
     "theme": "생활문화",
@@ -53846,34 +53846,22 @@
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
     "status": "video_done",
-    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 만든 스펠만슬라그 포크 클럽이 그 비밀을 밝혀냈습니다. 그들은 전통 폴스카를 라디오와 TV에 송출했고, 그 순간부터 악기 연주가 가장 큰 장르가 되었습니다. 그런데 1990년대에는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 주었어요. 이 현상은 주로 전통 음악 애호가와 라디오 청취자 중심이지만, 스웨덴의 음악 문화에 깊은 흔적을 남겼습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
     "title_line1": "스웨덴 라디오 바이올린",
     "title_line2": "전통이 현대를 잇다",
     "highlights": [
       {
         "s": 1,
-        "text": "라디오에*바이올린*?"
+        "text": "라디오가 *바이올린*만?"
       },
       {
         "s": 2,
-        "text": "스펠만슬라그*클럽*발견!"
+        "text": "스펠만슬라그 *클럽* 비밀"
       },
       {
         "s": 3,
-        "text": "전통*폴스카*라디오!"
-      },
-      {
-        "s": 6,
-        "text": "바이올린*다리*역할?"
+        "text": "전통 *폴스카* 라디오"
       }
-    ],
-    "image_queries": [
-      "radio with violin",
-      "young Swedish folk club",
-      "Swedish folk radio broadcast",
-      "1990s Swedish music fusion",
-      "Swedish radio listeners",
-      "violin bridge music"
     ],
     "scene_count": 10,
     "cross_checked": true,
@@ -53914,10 +53902,6 @@
       "[수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: The claim about lasting traces in Swedish music culture lacks concrete evidence.",
       "[수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: The statement is a broad interpretive claim without verifiable factual support."
     ],
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "image_queries_done": [
       "radio with violin",
       "young Swedish folk club",
@@ -53977,7 +53961,10 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0463_스웨덴.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0463_스웨덴.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true
   },
   {
     "topic": "Yhyakh(Ыһыах): 6월에 열리는 사하공화국 새해 축제",
@@ -57702,7 +57689,40 @@
     "verify_note": "Wine festival",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "narration": "포도 한 덩어리를 짜서 바로 와인 한 잔, 상상해 보셨나요? 페루의 작은 마을에서는 포도 수확이 끝난 뒤, 광장 한가운데서 바로 그 장면이 펼쳐집니다. 주민들은 전통적인 압착 기구로 포도를 짜고, 바로 만든 와인을 한 모금씩 마시며 축제를 시작합니다. 와인만 마시는 것이 아니라, 현지 음식과 활기찬 음악도 함께 흘러나와 분위기를 한층 풍성하게 만들죠.  \n\n그런데 이 축제엔 고대 그리스의 디오니소스 의식과 닮은 종교적 요소가 섞여 있습니다. 포도를 짜는 순간을 신성한 의식으로 여기고, 와인을 신에게 바치는 듯한 퍼포먼스를 선보이기 때문입니다. 이런 형태는 세계 여러 지역에서도 비슷하게 나타나지만, 페루에서는 특히 마을 공동체가 모여 전통과 현대가 어우러지는 독특한 풍경을 보여줍니다.  \n\n끝없이 이어지는 포도 향과 음악 사이, 그 순간 여러분은 마치 시간 여행을 하는 듯한 여운을 느끼게 됩니다. 포도를 짜자마자 와인 한 잔, 그 짜릿함이 바로 여기, 페루의 광장에서 살아 숨 쉬고 있습니다.",
+    "title_line1": "페루 와인 축제",
+    "title_line2": "포도즉시와인?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "포도즙 바로 *와인*"
+      },
+      {
+        "s": 3,
+        "text": "전통 *압착* 축제"
+      },
+      {
+        "s": 5,
+        "text": "*디오니소스* 흔적"
+      },
+      {
+        "s": 9,
+        "text": "즉시 *와인* 한잔"
+      }
+    ],
+    "image_queries": [
+      "fresh grape juice wine",
+      "Peruvian village square grape harvest",
+      "traditional grape press festival Peru",
+      "Peruvian food and music festival",
+      "Dionysus ritual Peru wine",
+      "sacred wine offering ceremony",
+      "Peruvian community wine tradition",
+      "grape vines music evening",
+      "immediate wine glass Peru square"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "태국(Thailand) 파타니 말레이인(Patani Malays) 공동체",
@@ -61364,7 +61384,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -61459,7 +61479,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -61467,7 +61488,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -61588,7 +61609,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -64286,7 +64308,7 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
@@ -64519,7 +64541,8 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르"
   },
   {
     "country": "한국",
