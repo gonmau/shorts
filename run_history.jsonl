@@ -1599,3 +1599,4 @@
 {"id": "1794400574643-20c9bd", "time": "2026-11-11 21:36:14", "channel": "KO", "source": "PC", "kind": "롱폼", "title": "build_longform.py --mode auto --indexes  --theme 분야:군사/전쟁사,분야:영토/국경 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fil", "status": "success", "secs": 76.6, "detail": ""}
 {"id": "1794400895193-009fe4", "time": "2026-11-11 21:41:35", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 556", "status": "success", "secs": 0.9, "detail": ""}
 {"id": "1794400939376-299913", "time": "2026-11-11 21:42:19", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 602", "status": "success", "secs": 0.9, "detail": ""}
+{"id": "1794400983499-66df92", "time": "2026-11-11 21:43:03", "channel": "KO", "source": "PC", "kind": "fetch_images", "title": "fetch_images.py --index 593", "status": "success", "secs": 0.9, "detail": ""}
