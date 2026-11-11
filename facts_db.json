@@ -55564,7 +55564,7 @@
     "verify_note": "Chile",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "남극과 가장 가까운 나라가 여기 있다니, 믿기 힘들지? 칠레는 남아메리카 남서쪽에 자리한 남반구 최남단 국가예요. 안데스 산맥과 태평양 사이, 좁지만 긴 땅을 차지하고 있죠. 인구는 약 1850만 명이고, 전체 면적은 756,102 km²입니다.  \n\n그런데 칠레는 본토만이 아니라 남태평양에 흩어진 여러 섬도 관리합니다. 후안 페르난데스 섬과 이스터 섬, 그리고 그 외 작은 섬들까지 포함해 광대한 해양 영토를 가지고 있답니다.  \n\n이렇게 남극에 가까운 위치와 광대한 해양 영역을 동시에 가진 칠레, 생각보다 훨씬 복잡한 나라라는 점, 기억해 주세요.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -55615,7 +55615,165 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0472_칠레_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0472_칠레_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Chile near Antarctica",
+      "southern tip of South America",
+      "Andes mountains Pacific coast Chile",
+      "Chile map showing area",
+      "Chile oceanic islands",
+      "Easter Island and Juan Fernandez",
+      "complex geography of Chile"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Liam Quinn from Canada",
+        "license": "CC BY-SA 2.0",
+        "title": "Iceberg near Chiles González Videla Station in Antarctica (6087936318).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Iceberg_near_Chiles_Gonz%C3%A1lez_Videla_Station_in_Antarctica_(6087936318).jpg",
+        "id": "c:24443501"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "User:Createaccount",
+        "license": "CC BY-SA 3.0",
+        "title": "South America southern tip pol.png",
+        "page": "https://commons.wikimedia.org/wiki/File:South_America_southern_tip_pol.png",
+        "id": "c:6691633"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "chrisstenger",
+        "page": "https://pixabay.com/photos/beach-rocks-sea-sand-coast-ocean-6115569/",
+        "id": 6115569
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Tomas Lopez compuesto por el mapa manuscrito de Poncho Chileno, Madrid 1777",
+        "license": "Public domain",
+        "title": "Mapa Chile Españoles y Araucanos.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mapa_Chile_Espa%C3%B1oles_y_Araucanos.jpg",
+        "id": "c:9563256"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "LuisValiente",
+        "page": "https://pixabay.com/photos/easter-island-statues-silhouettes-1477188/",
+        "id": 1477188,
+        "type": "photo"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "LuisValiente",
+        "page": "https://pixabay.com/photos/easter-island-statues-silhouettes-1477188/",
+        "id": 1477188
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Earth Science and Remote Sensing Unit , Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "title": "ISS024-E-12716 - View of Chile.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISS024-E-12716_-_View_of_Chile.jpg",
+        "id": "c:111444448"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3103,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "cbd15dd517fc",
+        "at": "2026-11-11 21:06",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2558,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2837eda4bed7",
+        "at": "2026-11-11 21:06",
+        "scene": 2,
+        "rejected_ids": [
+          1030565,
+          "c:6691633"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2671,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d2e96903124f",
+        "at": "2026-11-11 21:06",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2797,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8851b805fd9b",
+        "at": "2026-11-11 21:06",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2238,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0809a72a649c",
+        "at": "2026-11-11 21:06",
+        "scene": 5,
+        "rejected_ids": [
+          1477188,
+          "c:91184560"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.308,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e28611a5b9d6",
+        "at": "2026-11-11 21:06",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2548,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "34a246827a27",
+        "at": "2026-11-11 21:06",
+        "scene": 7,
+        "rejected_ids": []
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0472_칠레.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0472_칠레.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "메뉴 한 장으로 역사를 읽다",
@@ -55731,7 +55889,11 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0473_캐나다_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0473_캐나다_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "레베(Levee) 전통",
@@ -58075,7 +58237,7 @@
     "verify_note": "Shehuo",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:28.395870+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58087,7 +58249,42 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "need": "awe",
+    "emotion": "wonder",
+    "narration": "새해에 마을 사람들이 입으로 불을 뿜는다?!  \n중국 북부 농촌에서 열리는 ‘Shehuo(社火)’는 새해를 맞아 펼쳐지는 대규모 민속 축제입니다. 용춤, 사자춤, 양코춤 같은 전통 무용과 오페라, 곡예, 드럼 연주가 한데 어우러져 거리 전체를 무대로 바꿉니다.  \n\n그런데 이 축제의 가장 눈길 끄는 순간은 수백 명의 주민이 신·불멸자·불교 스승·현자·영웅·신화 속 생물 등 다양한 인물을 연기하며 거리 전체를 살아 움직이는 무대로 만든다는 점입니다. 각 인물은 화려한 복장과 소품을 착용하고, 불을 뿜는 퍼포먼스까지 선보여 관객에게 강렬한 시각적 충격을 줍니다.  \n\nShehuo는 주로 북중국의 농촌 지역에서 전통적으로 이어져 온 행사라, 그 규모와 풍경은 도시에서는 찾아볼 수 없습니다. 마을 사람들에게는 새해의 풍요와 안녕을 기원하는 의미가 담겨 있어, 한 해의 시작을 공동체가 함께 축하하는 중요한 의식이 됩니다.  \n\n불꽃이 하늘을 가르고, 사람들의 함성이 울려 퍼지는 순간, 새해의 희망이 마을 전체에 퍼지는 모습을 눈앞에서 체험하게 됩니다. 이런 풍경을 보며, 새해를 맞이하는 우리도 한 번쯤은 그 뜨거운 열기를 느껴보고 싶지 않나요?",
+    "title_line1": "북중국 새해 축제",
+    "title_line2": "입으로 불을 뿜는다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*불* 뿜는 마을"
+      },
+      {
+        "s": 3,
+        "text": "용·사자·양코 *춤* 퍼포먼스"
+      },
+      {
+        "s": 5,
+        "text": "화려한 복장에 *불* 쇼"
+      },
+      {
+        "s": 8,
+        "text": "*불꽃*이 하늘을 가른다"
+      }
+    ],
+    "image_queries": [
+      "Chinese village fire breathing",
+      "northern China rural festival",
+      "dragon lion yangko dance China",
+      "crowd dressed as mythic characters",
+      "colorful costumes fire show",
+      "rural Chinese countryside celebration",
+      "villagers celebrating Chinese new year",
+      "fireworks lighting night sky",
+      "spectators feeling festival heat"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "라오스에서도 페이스(face)는 생존 규칙",
