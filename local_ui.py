@@ -2856,7 +2856,8 @@ with TL:
             st.caption(f"미리보기 실패: {type(_e).__name__}: {_e}")
         if st.button("💾 채널 표시 저장", key="br_save", type="primary"):
             json.dump(_B, open(_bf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-            st.success("저장했습니다. 다음 롱폼부터 적용됩니다. (GitHub Actions에서도 쓰려면 동기화 탭에서 올리세요)")
+            st.session_state["gh_dirty"] = True      # 자동 동기화가 켜져 있으면 GitHub에도 바로 올라가게
+            st.success("저장했습니다. 다음 롱폼부터 적용됩니다. (GitHub 자동 동기화가 꺼져 있으면 동기화 탭에서 올려야 GitHub 실행에 적용됩니다)")
     lf_fill = st.checkbox("🖼 빠진 사진은 합성 전에 자동으로 받아 채우기 (Pixabay/Commons)", True, key="lf_fill",
                           help="사진이 비어 있으면 색 카드로 대신 들어가므로, 먼저 받아서 채웁니다. PIXABAY_API_KEY 필요. 끄면 빠진 채로(또는 아래 설정에 따라 멈춤)")
     try:
@@ -3106,7 +3107,13 @@ with TL:
                 kdf = st.data_editor(kdf, num_rows="dynamic", key=f"lfk_{k_}", use_container_width=True, hide_index=True)
                 st.markdown("**비교 카드**")
                 cmp0 = rec_.get("compare") or {}
-                use_cmp = st.checkbox("비교 카드 사용", bool(cmp0.get("rows")), key=f"lfcu_{k_}")
+                try:
+                    _cmp_all = bool(json.load(open("longform_brand.json", encoding="utf-8")).get("compare", True))
+                except Exception:
+                    _cmp_all = True
+                if not _cmp_all:
+                    st.info("🎨 채널 표시에서 '챕터별 비교 카드'가 꺼져 있어 **이 카드는 영상에 나오지 않습니다** (아래 내용은 보관만 됨). 여기서 따로 끌 필요 없습니다.")
+                use_cmp = st.checkbox("비교 카드 사용" + ("" if _cmp_all else " (전체 꺼짐: 영상엔 안 나옴)"), bool(cmp0.get("rows")), key=f"lfcu_{k_}")
                 cc1, cc2, cc3, cc4 = st.columns([2, 1, 1, 1])
                 cmp_title = cc1.text_input("카드 제목", cmp0.get("title", ""), key=f"lfct_{k_}", disabled=not use_cmp)
                 cmp_left = cc2.text_input("왼쪽", cmp0.get("left", "Korea" if EN else it_.get("country", "")), key=f"lfcl_{k_}", disabled=not use_cmp)
