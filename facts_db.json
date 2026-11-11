@@ -55312,7 +55312,7 @@
     "verify_note": "Denmark–Iceland relations",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:12.534738+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "덴마크가 아이슬란드 수도에 대사관을 두고 있다니, 믿겠어요? 실제로 덴마크는 레이캬비크에 대사관을 운영하고, 아이슬란드는 코펜하겐에 대사관을 두고 있습니다. 두 나라는 발트해 국가 협의회, 북유럽 의회, NATO 등 다수 국제기구의 정회원이기도 합니다. 아이슬란드가 누크와 투르샤반에 영사관을 운영한다는 소식은 일부 자료에서 언급되지만, 확실한 증거는 없습니다. 이처럼 서로의 수도에 대사관을 두고, 동시에 다른 도시에도 영사관을 두는 구조는 양국의 외교 관계가 얼마나 다층적인지를 보여줍니다. 대사관이 뒤바뀐 이유는 지리적 편의, 국제 기구 참여, 지역 협력의 필요성 등 여러 요인이 복합적으로 작용했을 가능성이 있습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -55367,7 +55367,137 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0470_덴마크_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0470_덴마크_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Iceland office building",
+      "Denmark embassy Reykjavik",
+      "Denmark NATO meeting room",
+      "Consulate building Nuuk",
+      "Iceland embassy Copenhagen",
+      "Diplomatic cooperation ceremony"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ludo-Photos",
+        "page": "https://pixabay.com/photos/church-iceland-black-church-chapel-4964183/",
+        "id": 4964183
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Guðmundur D. Haraldsson",
+        "license": "CC BY-SA 3.0",
+        "title": "Iceland-Reykjavik-Danish-Embassy-1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Iceland-Reykjavik-Danish-Embassy-1.jpg",
+        "id": "c:627774"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/chairs-table-contemporary-furniture-2181960/",
+        "id": 2181960
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Kenny McFly",
+        "license": "CC BY-SA 4.0",
+        "title": "Old Icelandic consulate in Nuuk (Kenny McFly).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Old_Icelandic_consulate_in_Nuuk_(Kenny_McFly).jpg",
+        "id": "c:120374075"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "pasja1000",
+        "page": "https://pixabay.com/photos/tenement-helsinki-embassy-iceland-4695651/",
+        "id": 4695651
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "World Intellectual Property Organization",
+        "license": "CC BY 2.0",
+        "title": "WIPO and Dominican Republic Diplomatic Academy Sign Cooperation Agreement (51954973082).jp",
+        "page": "https://commons.wikimedia.org/wiki/File:WIPO_and_Dominican_Republic_Diplomatic_Academy_Sign_Cooperation_Agreement_(51954973082).jpg",
+        "id": "c:116387123"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2806,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "39524b6f054b",
+        "at": "2026-11-11 20:56",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.341,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2edeb3954316",
+        "at": "2026-11-11 20:56",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2381,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ae3e5b38c41c",
+        "at": "2026-11-11 20:56",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3283,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "ec5dfad659e5",
+        "at": "2026-11-11 20:56",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3855,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "fb5e88a00a7e",
+        "at": "2026-11-11 20:56",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2686,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "27f1d0dc64ea",
+        "at": "2026-11-11 20:56",
+        "scene": 6,
+        "rejected_ids": []
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0470_덴마크.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0470_덴마크.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "오스만 1세의 작은 영토가 3대 대륙을 지배",
@@ -55481,7 +55611,11 @@
       "reason": "칠레가 남극과 가장 가깝다는 구체적 지리·인구·면적 수치와 섬 관리 내용이 명확히 제시돼 있어 신뢰성이 높다.",
       "avg": 7.7,
       "flags": []
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0472_칠레_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0472_칠레_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "메뉴 한 장으로 역사를 읽다",
@@ -57880,7 +58014,7 @@
     "verify_note": "Easter in Italy",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:15.988350+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -57890,7 +58024,43 @@
       "reason": "로마 지역만의 전통 요리라 구체적이지만, 수치·제도 등 상세 정보가 부족하고 근거 문서 확인이 어려워 중간 점수",
       "avg": 6.0,
       "flags": []
-    }
+    },
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "narration": "부활절에 고기 대신 이걸 먹는다? 바로 이탈리아 로마 주변에서 전통으로 지켜지는 ‘앱바키오’ 양고기 요리입니다.  \n\n부활절이 다가오면 로마와 그 인근 마을에서는 양고기 뒷다리를 통째로 구워 ‘앱바키오’를 준비합니다. 신선한 허브와 올리브유를 발라 천천히 로스팅하면 부드러운 육즙과 은은한 향이 살아나요.  \n\n그런데 이 요리는 그냥 만들 수 있는 음식이 아닙니다. ‘앱바키오’는 지역 보호 제품으로 지정돼 있어, 허가받은 생산자만이 공식적으로 만들 수 있습니다. 인증을 받은 농가와 레스토랑만이 정통 레시피와 품질을 보장하죠.  \n\n따라서 로마와 그 주변에서만 이 특별한 양고기 요리를 만나볼 수 있습니다. 부활절에 달라진 식탁 위, 고기 대신 양고기와 전통 인증이 어우러진 이유가 바로 여기에 있습니다.  \n\n그렇다면 다음 부활절, 당신은 어떤 전통을 선택하실 건가요?",
+    "title_line1": "이탈리아 부활절 양요리",
+    "title_line2": "고기 대신 뭘 먹을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "부활절에 *양고기*?"
+      },
+      {
+        "s": 3,
+        "text": "양다리 *통구이* 전통"
+      },
+      {
+        "s": 6,
+        "text": "*보호*받은 양고기"
+      },
+      {
+        "s": 9,
+        "text": "부활절 *전통*은?"
+      }
+    ],
+    "image_queries": [
+      "Easter lamb Italy",
+      "Roman countryside abbacchio dish",
+      "Whole lamb leg roast Italy",
+      "Herb coated lamb roast",
+      "Traditional lamb preparation",
+      "Protected lamb product Italy",
+      "Certified farm restaurant kitchen",
+      "Rome regional lamb specialty",
+      "Easter table lamb tradition",
+      "Easter dinner choice"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "중국 북부 농촌의 새해 축제 ‘Shehuo(社火)’",
