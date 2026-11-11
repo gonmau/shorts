@@ -12,5 +12,6 @@
  "intro_name": false,
  "cta": "구독 & 좋아요",
  "recap": false,
- "recap_cards": false
+ "recap_cards": false,
+ "compare": false
 }
