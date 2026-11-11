@@ -2404,6 +2404,14 @@ with T5c:
                                 st.rerun()
 
 with T1c:
+    with st.expander("🧪 근거 점검 (일반론·근거 부실 소재 걸러내기)"):
+        st.caption("아직 영상이 없는 소재(승인 대기·승인됨·대본 완료)가 '그 나라만의 구체적 내용인가 / 구체 정보가 있는가 / 근거와 맞는가'를 AI가 0~10점으로 평가합니다. 기준 미달이면 폐기하고 사유를 남기며, 폐기된 소재는 위 '상태·폐기'에서 되살릴 수 있습니다. GitHub 자동 실행에서도 같은 점검이 돕니다(실행 입력 grounding).")
+        _gt = st.number_input("기준 점수 (평균이 이보다 낮으면 폐기)", 1.0, 9.0, 5.0, 0.5, key="gr_thr")
+        _g1, _g2 = st.columns(2)
+        if _g1.button("🔍 점검만 (바꾸지 않음)", key="gr_dry"):
+            run("grounding.py", "--llm", "--recheck", "--thr", str(_gt))
+        if _g2.button("🗑 기준 미달 폐기 적용", key="gr_apply", type="primary"):
+            run("grounding.py", "--llm", "--apply", "--thr", str(_gt)); st.rerun()
     with st.expander("🌍 나라 수정 · 나라와 주제가 안 맞는 소재 점검"):
         st.caption("나라 칸과 제목·주제·훅이 가리키는 나라가 다른 소재를 찾아 고칩니다. 목록 보기는 아무것도 안 바꿉니다. "
                    "자동 고치기: 영상이 아직 없는 소재는 나라가 하나로 분명하면 나라를 고치고 애매하면 폐기, 이미 영상이 있는 소재는 나라 칸만 고치고(애매하면 표시만) 폐기하지 않습니다.")

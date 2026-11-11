@@ -249,6 +249,7 @@ def generate_wiki_batch(client: Groq, model: str, cands: list) -> list:
         f.pop("src", None)
         f.update({
             "country": c["country"], "theme": c["theme"], "wiki_title": c["title"], "source_url": c["url"],
+            "source_excerpt": str(c.get("extract", ""))[:900],   # 근거 점검(grounding.py)용 위키 발췌문
             "verify_note": c["title"],            # 영어 위키 제목: 사람이 검수/이미지 검색할 때 쓰는 키워드
             "confidence": "source",               # 위키백과 발췌문 기반 (LLM 기억 기반 아님)
         })
