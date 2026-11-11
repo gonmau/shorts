@@ -64564,10 +64564,10 @@
       }
     ],
     "image_queries": [
-      "emergency survival backpack water bottles",
+      "생수",
       "bottled drinking water emergency supplies",
       "emergency food canned food survival supplies",
-      "high calorie canned food",
+      "통조림",
       "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
@@ -64581,11 +64581,11 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "emergency survival backpack water bottles",
+      "생수 생존키트",
       "bottled drinking water emergency supplies",
       "emergency food canned food survival supplies",
-      "ready to eat emergency food rations",
-      "portable emergency radio with batteries",
+      "high calorie canned food",
+      "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
       "personal emergency medication supplies",
@@ -64596,9 +64596,10 @@
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "mrganso",
-        "page": "https://pixabay.com/photos/water-glass-bottles-bottles-2001912/",
-        "id": 2001912
+        "user": "StarShopping",
+        "page": "https://pixabay.com/vectors/bottledwater-water-bottle-mineral-4127009/",
+        "id": 4127009,
+        "type": "illustration"
       },
       {
         "scene": 2,
@@ -64617,9 +64618,9 @@
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "GodsFavoriteArts",
-        "page": "https://pixabay.com/vectors/can-food-cartoon-tin-canned-food-9655517/",
-        "id": 9655517,
+        "user": "OpenClipart-Vectors",
+        "page": "https://pixabay.com/vectors/ham-tin-pork-canned-meat-food-575930/",
+        "id": 575930,
         "type": "illustration"
       },
       {
@@ -64670,15 +64671,19 @@
     "image_source": "pixabay",
     "image_check": [
       {
-        "verdict": "ok",
-        "clip": 0.2547,
+        "verdict": "bad",
+        "clip": 0.2008,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "1cd4100579e9",
-        "at": "2026-11-11 10:52",
+        "sig": "f8ec0162e8d2",
+        "at": "2026-11-11 10:56",
         "scene": 1,
-        "rejected_ids": []
+        "rejected_ids": [
+          2105211,
+          60475,
+          82690
+        ]
       },
       {
         "verdict": "ok",
@@ -64703,13 +64708,13 @@
         "rejected_ids": []
       },
       {
-        "verdict": "bad",
-        "clip": 0.2167,
+        "verdict": "ok",
+        "clip": 0.2209,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "37ce625ce36d",
-        "at": "2026-11-11 10:52",
+        "sig": "1bef0e301a69",
+        "at": "2026-11-11 10:56",
         "scene": 4,
         "rejected_ids": [
           4238323,
@@ -64720,14 +64725,20 @@
       },
       {
         "verdict": "ok",
-        "clip": 0.2797,
+        "clip": 0.287,
         "ollama": null,
         "seen": "",
         "tools": "clip",
-        "sig": "d60036b6fd10",
-        "at": "2026-11-11 10:52",
+        "sig": "0ea00b387bac",
+        "at": "2026-11-11 10:56",
         "scene": 5,
-        "rejected_ids": []
+        "rejected_ids": [
+          4333412,
+          5693145,
+          "c:30169038",
+          "c:45860335",
+          "c:50382320"
+        ]
       },
       {
         "verdict": "ok",
