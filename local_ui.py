@@ -284,6 +284,19 @@ with st.sidebar:
     _vdone = [f_ for i_, f_ in enumerate(_d) if i_ >= int(start) and not f_.get("youtube_id") and (f_.get("video_path_v6") or f_.get("status_v6") == "video_done")]
     st.write(f"업로드됨: **{len(_up)}** · 영상완료/미업로드: **{len(_vdone)}**")
     st.caption("렌더링 대기(대본 있고 영상 없음)는 5단계 목록 기준")
+    _nx = []
+    if _vdone:
+        _nx.append(f"📤 영상 완료·미업로드 **{len(_vdone)}**개 → 업로드 탭에서 제목·썸네일 확인 후 업로드")
+    if _c.get("tts_done", 0):
+        _nx.append(f"🎬 음성 완료 **{_c['tts_done']}**개 → 영상 만들기(render) 실행")
+    if _c.get("scripted", 0):
+        _nx.append(f"📝 대본 완료 **{_c['scripted']}**개 → review.txt(대본·핵심 문구·이미지)·이미지 검수 후 영상 만들기(render)")
+    if _c.get("verified", 0):
+        _nx.append(f"✍️ 승인됨 **{_c['verified']}**개 → 대본 만들기(prepare) 실행")
+    if _c.get("unverified", 0):
+        _nx.append(f"✅ 승인 대기 **{_c['unverified']}**개 → 소재 탭에서 훑어보고 승인(또는 자동 승인)")
+    st.markdown("**👉 다음 할 일** (앞쪽일수록 완성에 가까움)")
+    st.markdown("\n".join("- " + x for x in _nx) if _nx else "- 대기 중인 작업이 없습니다. 소재를 보충하세요.")
 
 
 pre = [S("promote_ready.py", "--start", str(start)), S("apply_review.py")]
