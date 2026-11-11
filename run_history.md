@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 22:16:19 (KST) · 기록 1612건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 22:18:54 (KST) · 기록 1614건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 58 | 0 | 25분 54초 |
+| -c | 59 | 0 | 25분 57초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 141 | 0 | 33초 |
@@ -29,6 +29,7 @@
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 2 | 0 | 53초 |
+| update_description | 1 | 0 | 3초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
 | 롱폼 | 68 | 8 | 5시간 44분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
@@ -40,6 +41,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:18 | PC | update_description | update_description.py --indexes 581 | ✅ | 3초 |  |
+| 22:18 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 2초 |  |
 | 22:16 | PC | fetch_images | fetch_images.py --index 581 | ✅ | 3초 |  |
 | 22:15 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only - | ✅ | 5초 |  |
 | 22:14 | PC | fetch_images | fetch_images.py --index 581 | ✅ | 3초 |  |
