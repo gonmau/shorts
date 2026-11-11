@@ -53650,7 +53650,7 @@
     "verify_note": "Buddhist cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요? 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다. 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.  \n\n그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요. 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다. 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.  \n\n이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요. 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?",
     "title_line1": "몰디브 축제, 채식만",
     "title_line2": "왜 비건인가?",
@@ -53710,8 +53710,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 2 (평균 3.0) 몰디브의 불교 식문화는 일부 승려·신자에게만 해당돼 일반적이지 않으며, 구체적 수치·제도는 없고, ‘축제때만 채식’이라는 주장도 문서화된 근거가 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -53848,8 +53847,8 @@
   {
     "topic": "스웨덴 전통 음악, 라디오에서 바이올린만 24시간?",
     "hook": "라디오가 바이올린만 틀면?",
-    "body": "1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다.",
-    "twist": "결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "body": "스웨덴(Sweden)에서는 1960년대 청년들이 스펠만슬라그(Spelmanslag)라는 포크 클럽을 만들고, 전통 폴스카(pol​ska) 연주를 라디오와 TV에 송출했어요. 그때부터 악기 연주가 가장 큰 장르가 되었죠.",
+    "twist": "1990년대부터는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 줬어요.",
     "caveat": "이 현상은 주로 전통 음악 애호가와 라디오 청취자를 중심으로 합니다.",
     "country": "스웨덴",
     "theme": "생활문화",
@@ -53859,21 +53858,25 @@
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
     "status": "video_done",
-    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 포크 모임을 조직했다는 기록은 있지만, ‘스펠만슬라그 포크 클럽’이라는 정확한 이름은 확인되지 않습니다. 그들은 전통 폴스카를 라디오와 TV에 소개했지만, 악기 연주만으로 가장 큰 장르가 되었다는 증거는 없습니다. 1990년대에 폴스카가 보컬과 다른 장르와 섞여 현대 음악에 영향을 주었다는 의견이 있지만, 구체적인 사례는 많지 않습니다. 이 현상은 전통 음악 애호가와 라디오 청취자에게 관심을 끌었으며, 스웨덴 음악 문화에 일부 흔적을 남겼을 가능성이 있습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
+    "narration": "라디오가 바이올린만 틀면? 1960년대 스웨덴 청년들이 만든 스펠만슬라그 포크 클럽이 그 비밀을 밝혀냈습니다. 그들은 전통 폴스카를 라디오와 TV에 송출했고, 그 순간부터 악기 연주가 가장 큰 장르가 되었습니다. 그런데 1990년대에는 보컬과 다른 장르와 섞이면서 현대 음악에도 큰 영향을 주었어요. 이 현상은 주로 전통 음악 애호가와 라디오 청취자 중심이지만, 스웨덴의 음악 문화에 깊은 흔적을 남겼습니다. 결국 라디오에 울려 퍼진 바이올린 소리는 한때는 전통을, 지금은 현대를 연결하는 다리였다는 사실을 말해줍니다.",
     "title_line1": "스웨덴 라디오 바이올린",
     "title_line2": "전통이 현대를 잇다",
     "highlights": [
       {
         "s": 1,
-        "text": "라디오가 *바이올린*만?"
+        "text": "라디오에*바이올린*?"
       },
       {
         "s": 2,
-        "text": "스펠만슬라그 *클럽* 비밀"
+        "text": "스펠만슬라그*클럽*발견!"
       },
       {
         "s": 3,
-        "text": "전통 *폴스카* 라디오"
+        "text": "전통*폴스카*라디오!"
+      },
+      {
+        "s": 6,
+        "text": "바이올린*다리*역할?"
       }
     ],
     "scene_count": 10,
@@ -53977,7 +53980,19 @@
     "status_v6": "video_done",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "image_queries": [
+      "radio with violin",
+      "young Swedish folk club",
+      "Swedish folk radio broadcast",
+      "1990s Swedish music fusion",
+      "Swedish radio listeners",
+      "violin bridge music"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0463_스웨덴_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "Yhyakh(Ыһыах): 6월에 열리는 사하공화국 새해 축제",
@@ -54261,7 +54276,7 @@
     "verify_note": "Hug",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:45.703197+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "두 명이 넘게 안아도 되는 이유, 궁금하지? 허그는 목, 등, 겨드랑이, 허리 등 다양한 부위에 팔을 두르고 끈끈하게 안는 행위입니다. 두 사람 이상이 동시에 안을 때는 이를 ‘그룹 허그’라고 부릅니다. 전 세계 대부분의 문화에서 허그는 친밀감 표현으로 쓰입니다. 허그 방식은 문화마다 약간씩 차이가 있지만, 기본적으로 서로를 포옹으로 연결하는 공통된 감정이 자리 잡고 있습니다. 이렇게 서로를 한 번에 감싸는 그 순간, 우리는 단순한 몸짓을 넘어 서로의 존재를 확인하는 작은 예술을 경험하는 것이라 할 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 1,
@@ -54313,8 +54328,7 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 1 (평균 1.7) ‘그룹 허그’는 전 세계적으로 흔한 현상이라 특수성·구체성이 낮고, 고유명사·수치·절차 등 실질적 정보가 거의 없어 검증 근거도 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "Samhain, 해가 지자 바로 시작되는 고대 수확 축제",
@@ -54409,7 +54423,7 @@
     "verify_note": "Taoism",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "‘도(道)’를 따라 움직이면 몸도 바뀐다고?  \n도교는 중국에서 시작된 사상으로, ‘도’는 상황에 따라 길, 방법, 기술 등으로 해석됩니다. 이는 의도에 따라 달라지며, 도와의 조화를 강조합니다.  \n그런데 도교는 단순히 철학에 그치지 않습니다. 전통 의학, 명상, 점성술, 기공, 풍수, 내연금술 등 일상 생활 전반에 스며들어 있습니다.  \n‘도’에 대한 해석은 시대와 지역에 따라 다양하게 변해 왔지만, 그 중심에는 여전히 삶의 흐름과 조화가 자리합니다.  \n도와 함께 걸으면, 몸과 마음이 한층 더 유연해지는 듯한 느낌을 받을 수 있겠죠.",
     "cross_checked": true,
     "cross_sources": 4,
@@ -54454,8 +54468,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 도교의 ‘도’ 개념은 광범위하지만, 생활 실천 예시(의학·풍수·기공 등)는 구체적이지만 문서화된 사례가 다소 일반적이라 점수가 중간 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
@@ -54766,7 +54779,7 @@
     "verify_note": "Levee (ceremony)",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "왕이 아침에 일어나면 바로 국민을 맞이한다? 옛 프랑스 왕실에서는 바로 그 순간을 “레베(Levee)”라고 불렀습니다. 레베는 프랑스어 ‘lever’(일어나다)에서 유래했으며, 왕이 침대에서 일어나 궁전에서 신하들을 맞이하던 의식이었습니다. 전해지는 이야기에 따르면, 왕이 옷을 갈아입고 짧게 말하며 정책을 전하고, 신하들이 궁전 문을 열어 인사하는 모습이 묘사되곤 합니다. 그런데 오늘날 레베는 매일 열리지 않습니다. 특별한 행사나 기념일에 레베가 재현되기도 하고, 캐나다에서도 비슷한 형태의 모임이 새해에 열리는 경우가 있습니다. 이렇게 과거 왕의 아침 인사는 이제 특별한 순간에만 찾아볼 수 있는 문화적 흔적이 되었습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -54816,8 +54829,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 4/supported 3 (평균 3.7) 레베 의식은 프랑스 특유라기보다 여러 나라에 퍼진 형태이며, 현대 캐나다·미국 연결 고지는 근거가 약해 평가가 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "이드 알-아드하, 모로코에서 4일간 이어지는 양희생 축제",
@@ -56327,7 +56339,7 @@
     "verify_note": "Holman Fenwick Willan",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -56339,8 +56351,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 6/supported 7 (평균 5.3) 전 세계 사무소 수와 인원 등 구체적 수치는 좋지만 주제가 특정 국가·지역에 한정되지 않아 독특성은 낮음. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "코로나·틱톡이 만든 집밥 열풍",
@@ -56355,7 +56366,7 @@
     "verify_note": "TikTok food trends",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "2020년, 집에서 3분 요리하고 몸무게가 급등한다면 어떨까요? 코로나 팬데믹이 시작되면서 사람들은 집에 머무는 시간이 늘었고, 그때부터 TikTok에 #TikTokFood·#FoodTok 해시태그가 폭발했습니다. 수백만 개의 짧은 영상이 올라오면서, 단계별 레시피를 눈앞에서 바로 확인하고 따라 할 수 있게 되었죠. 간단한 재료와 3분 안에 완성되는 요리들이 특히 인기를 끌었습니다.  \n\n그런데 이 흐름이 젊은 세대에게 큰 변화를 일으켰습니다. 평소 요리에 관심이 적던 사람들도 영상 하나만 보면 직접 도전하게 되었고, 요리 콘텐츠 소비가 급증했습니다. 동시에 “집밥 열풍”이 몸매 논쟁을 불러일으켰습니다. 빠르게 만들다 보니 고칼로리 재료가 자주 사용됐고, 체중 증가와 식품 마케팅에 대한 의견이 엇갈렸죠.  \n\n결국 이 현상은 2020년 코로나 시기에 급격히 나타난 현상이며, 이후에도 온라인 요리 문화가 지속될지는 아직 확실치 않습니다. 하지만 짧은 영상 하나가 우리 식탁을 바꾸고, 몸무게까지 영향을 미칠 수 있다는 점은 분명히 기억해 둘 만합니다.",
     "title_line1": "핀란드 집밥 열풍",
     "title_line2": "3분 요리 살찔까?",
@@ -56401,8 +56412,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 5 (평균 4.3) TikTok 트렌드 자체는 전 세계 현상이라 독특성이 낮고, 해시태그와 현상 설명 정도만 제공돼 구체성·근거가 보통 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "태어날 때부터 정해지는 인도 카스트",
@@ -56874,7 +56884,7 @@
     "verify_note": "Thali",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -56886,8 +56896,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 5 (평균 4.0) Thali는 남아시아·동남아 전반에 쓰이는 개념이라 캄보디아에 특화되지 않아 독특성이 낮고, 설명은 평균 수준. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "이탈리아(Italy) 부활절(Easter)의 특이한 양 요리 ‘앱바키오(abbacchio)’",
@@ -56954,7 +56963,7 @@
     "verify_note": "Face (sociological concept)",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:57.745097+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -56966,8 +56975,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 5 (평균 4.0) ‘페이스’ 개념은 라오스에만 국한되지 않으며 구체적 사례가 부족하고, 근거가 일반적인 사회학 개념에 머무름 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "라오스의 다문화 문학 전통",
@@ -57034,7 +57042,7 @@
     "verify_note": "Russian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -57044,8 +57052,7 @@
       "reason": "소련 이전부터 음식 이름이 변하지 않았다는 주장은 일반화가 강하고 구체적 사례·근거가 부족함",
       "avg": 3.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 4 (평균 3.7) 소련 이전부터 음식 이름이 변하지 않았다는 주장은 일반화가 강하고 구체적 사례·근거가 부족함"
+    }
   },
   {
     "topic": "모로코에 스페인 영토가 있다",
@@ -57465,7 +57472,7 @@
     "verify_note": "Passover",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -57477,8 +57484,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 유월절의 피로 문틀 표시 이야기는 성경에 기반하지만, ‘탄자니아’와 연결된 근거가 없으며 일반적인 종교 전통이라 지역 특수성이 낮음. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "아랍에미리트 라마단 시작 의식",
@@ -58050,7 +58056,7 @@
     "verify_note": "All Saints' Day",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58062,8 +58068,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 3 (평균 3.3) All Saints' Day 의식은 서구 전반에 해당해 특수성이 낮고, 제시된 일정·절차는 근거가 불분명함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "페루(Peru) 와인 축제",
@@ -58356,7 +58361,7 @@
     "verify_note": "Death anniversary",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58369,8 +58374,7 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 3 (평균 4.0) 죽음 기념일 관습은 일부 아시아 문화에 존재하지만 스리랑카만의 독특한 형태는 명확히 입증되지 않음 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "부활절 아침 일출 예배와 여성의 모자",
@@ -59180,7 +59184,7 @@
     "verify_note": "Mourning",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59193,8 +59197,7 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 3/supported 5 (평균 4.0) 애도 문화는 체코에만 국한된다고 보기 어려우며, 구체적 제도·수치가 부족하고 위키피디아 ‘Mourning’ 항목은 일반적인 애도 관습을 다루어 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "네팔 뉴아르족의 도시 문명",
@@ -59264,7 +59267,7 @@
     "verify_note": "Holi",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59276,8 +59279,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 4 (평균 4.0) 홀리는 인도·네팔 중심 축제로 라오스와는 직접적인 연관성이 적고, 라오스에서의 실천 여부가 명확히 문서화되지 않아 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "네덜란드 카니발(Carnival) 역할 전환 축제",
@@ -59371,7 +59373,7 @@
     "verify_note": "Bombing of Master Handan Festival",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59383,8 +59385,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 2/supported 1 (평균 2.0) ‘마스터 한단 폭격 축제’는 확인된 자료가 없으며, 내용이 허구에 가까워 근거가 부족하다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "유대교 새해 라삐가 부는 양뿔 나팔",
@@ -59399,7 +59400,7 @@
     "verify_note": "Rosh Hashanah",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59411,8 +59412,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 6 (평균 4.0) 유대교 새해에 나팔을 부는 전통은 전 세계적 관습이라 지역성은 낮고, 기본적인 의식은 문서에 있지만 헝가리와의 연결은 약하다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "툼부카의 치유 춤 Vimbuza",
@@ -59535,7 +59535,7 @@
     "verify_note": "Libation",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59547,8 +59547,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 3/supported 2 (평균 2.7) 리베이션은 쿠바에만 국한된 의식이 아니며, 구체적인 사례나 통계가 없고 근거 문서와 연결이 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "사모아 CCCS 교인의 비중",
@@ -59588,7 +59587,7 @@
     "verify_note": "Pelmeni",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59600,8 +59599,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 5 (평균 4.3) 펠멘이는 러시아 음식이며 몽골에서 파는 사례는 구체적이지만, ‘국가적 위상’이라는 표현이 과장되고 근거가 제한적. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "핀란드 대통령은 태어나자마자 후보가 될 수 있다?",
@@ -59616,7 +59614,7 @@
     "verify_note": "President of Finland",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59626,8 +59624,7 @@
       "reason": "핀란드 대통령 후보 자격에 대한 내용이 사실과 다르고, 구체적인 법조문이나 통계가 없어 신뢰성이 낮음.",
       "avg": 3.0,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 3/supported 2 (평균 3.0) 핀란드 대통령 후보 자격에 대한 내용이 사실과 다르고, 구체적인 법조문이나 통계가 없어 신뢰성이 낮음."
+    }
   },
   {
     "topic": "800 위켓을 잡은 유일한 투수",
@@ -62175,7 +62172,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -62270,8 +62267,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -62279,7 +62275,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -62400,8 +62396,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -65099,7 +65094,7 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "일본",
+    "country": "싱가포르",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
@@ -65332,8 +65327,7 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
-    "country_before_fix": "싱가포르"
+    "status_tts_v2": "done"
   },
   {
     "country": "한국",
@@ -65618,5 +65612,481 @@
         ]
       }
     ]
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "video_done",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
+  },
+  {
+    "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
+    "hook": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면?",
+    "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
+    "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
+    "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
+    "country": "일본",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Battle of Iwo Jima",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+    "verify_note": "Battle of Iwo Jima",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:01:27.510096+00:00",
+    "status": "scripted",
+    "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
+    "title_line1": "18km 지하 요새의 비밀",
+    "title_line2": "이오지마에서 미군이 고전한 이유",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "18km *지하 방어망*"
+      },
+      {
+        "s": 3,
+        "text": "일본군의 *은폐 작전*"
+      },
+      {
+        "s": 5,
+        "text": "해변에 쏟아진 *집중 사격*"
+      },
+      {
+        "s": 8,
+        "text": "예상보다 길어진 *전투*"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
+        "id": 5438620
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JCDCreative",
+        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
+        "id": 2252203
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Edmond Morin",
+        "license": "Public domain",
+        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
+        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
+        "id": "c:164313974"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
+        "license": "Public domain",
+        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
+        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
+        "id": "c:154351779"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Pink Flojd",
+        "license": "CC BY-SA 4.0",
+        "title": "Battle of Mišar terrain model.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
+        "id": "c:71694541"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "narration_original": "상륙 직후, 미군이 18km 길이의 비밀 터널에 바로 들어갔다면 어떤 일이 벌어졌을까요? 1945년, 미국 해병대·해군·육군이 이오지마 섬에 상륙해 남부 비행장과 중부 비행장을 장악하려 했습니다. 하지만 섬 안에는 18km에 달하는 복잡한 터널망과 은폐된 포대가 얽혀 있었죠.  \n\n그때 미군은 바로 그 터널 안으로 진입했습니다.  \n\n그런데 터널 안에서는 일본군이 미리 설치한 함정과 마주치게 되면서 전투는 예상보다 오래 끌었습니다. 미군 기록에 따르면, 터널 속에서의 교전은 지형의 복잡성 때문에 보병과 포병이 동시에 작전을 펼쳐야 했고, 전투 속도는 크게 저하되었습니다.  \n\n결국 목표였던 비행장 확보는 터널 전투가 끝난 뒤에야 가능했으며, 이 비밀 네트워크는 전투의 흐름을 크게 바꾸는 요인으로 작용했습니다. 전쟁의 한 순간, 18km 길이의 어두운 뱀굴 속에서 벌어진 이 이야기가 남긴 여운은, 전장이 언제든지 예상치 못한 지형에 의해 뒤바뀔 수 있다는 점입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르"
   }
 ]
