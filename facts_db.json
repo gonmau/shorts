@@ -64568,7 +64568,7 @@
       "bottled drinking water emergency supplies",
       "emergency food canned food survival supplies",
       "high calorie canned food",
-      "portable emergency radio with batteries",
+      "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
       "personal emergency medication supplies",
@@ -64625,9 +64625,10 @@
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Michael_Kastelic",
-        "page": "https://pixabay.com/photos/radio-portable-battery-powered-4695874/",
-        "id": 4695874
+        "user": "vectronom",
+        "page": "https://pixabay.com/vectors/radio-cassette-speaker-sound-audio-3634616/",
+        "id": 3634616,
+        "type": "illustration"
       },
       {
         "scene": 6,
