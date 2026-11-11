@@ -2514,7 +2514,9 @@ with T1d:
             for _i, _t in enumerate(_an.get("topic_ideas", [])):
                 with st.container(border=True):
                     st.markdown(f"**{_t.get('title', '')}**  \n🎯 {_t.get('need', '')} · 💗 {_t.get('emotion', '')}  \n_근거: {_t.get('why', '')} ({_t.get('source', '')})_")
-                    if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}"):
+                    if _t.get("dup"):
+                        st.warning("⚠ 이미 만든 소재와 겹칠 수 있음: " + str(_t["dup"]))
+                    if st.button("이걸로 소재 만들기 (승인 대기)", key=f"tr_mk_{_i}", disabled=bool(_t.get("dup")), help="중복 의심 소재는 막아 둡니다 (만든 뒤에도 같은 기준으로 한 번 더 검사)"):
                         _ids = run_cap("add_topic.py", "keyword", "--keyword", _t.get("title", ""), "--wiki")
                         after_create(_ids, False)
             if _an.get("patterns"):

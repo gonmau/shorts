@@ -253,6 +253,12 @@ def do_analyze(data, top):
     wt = ", ".join(r["title"] for r in data["wiki"][:25])
     rt = "\n".join(f"- {r['title'][:100]} ({r['score']})" for r in data["reddit"][:15])
     ch = ("한국의 문화·일상·음식·예절·언어를 외국인에게 알려주는 영어 쇼츠 채널 'KoreaAtoZ'" if EN else "세계 각국의 문화·관습·금기·생활 규칙을 알려주는 한국어 쇼츠 채널 '세계 문화 상식'")
+    try:
+        from common import load_db
+        db = load_db()
+    except Exception:
+        db = []
+    done = "\n".join(f"- {str(o.get('country', ''))[:20]} {str(o.get('topic', ''))[:40]}" for o in db[-200:] if o.get("topic"))
     prompt = f"""너는 유튜브 쇼츠 기획자다. 우리 채널: {ch}.
 아래는 최근 잘 터진 쇼츠, 위키 급상승 문서, 레딧 화제글이다. 이를 분석해 JSON만 응답해라 (한국어로).
 [터진 쇼츠]
@@ -261,6 +267,8 @@ def do_analyze(data, top):
 {wt or '(없음)'}
 [레딧 화제]
 {rt or '(없음)'}
+[이미 만든 소재 — 이것과 같거나 비슷한 주제는 추천하지 마라]
+{done or '(없음)'}
 
 형식: {{"patterns":[{{"name":"제목 패턴 이름","desc":"어떤 구조인지 한 줄","example":"예시 제목"}}],
 "hooks":["첫 문장 후크 유형 3~6개 (예: 금지/반전/숫자/공감 질문)"],
@@ -270,8 +278,27 @@ topic_ideas는 8개. 근거 없이 지어내지 말고, 위 자료에 있는 신
     c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], max_completion_tokens=3500, temperature=0.4)
     t = c.choices[0].message.content or ""
     data["analysis"] = json.loads(t[t.find("{"):t.rfind("}") + 1])
+    mark_dups(data["analysis"].get("topic_ideas", []), db)
     data["analysis"]["at"] = dt.date.today().isoformat()
     print(f"  분석 완료: 패턴 {len(data['analysis'].get('patterns', []))}, 소재 추천 {len(data['analysis'].get('topic_ideas', []))}")
+
+
+def mark_dups(ideas, db):
+    """추천 소재가 이미 만든 소재(폐기 포함)와 겹치면 dup 에 이유를 적는다 (나라 구분 없이 전체 비교)"""
+    try:
+        import find_dup_topics as FD
+    except Exception:
+        return
+    for t in ideas:
+        t.pop("dup", None)
+        f = {"topic": t.get("title", ""), "hook": t.get("title", ""), "label": t.get("title", "")}
+        best, why, idx = 0.0, "", -1
+        for i, o in enumerate(db):
+            s, w = FD.score_pair(f, o)
+            if s > best:
+                best, why, idx = s, w, i
+        if best >= 0.4:
+            t["dup"] = f"[{idx}] {why}"
 
 
 def trend_hints(max_chars=900):

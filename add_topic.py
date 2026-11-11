@@ -169,6 +169,7 @@ def main():
     ap.add_argument("--url", default="")
     ap.add_argument("--wiki", action="store_true")
     ap.add_argument("--approve", action="store_true")
+    ap.add_argument("--allow-dup", action="store_true", help="중복 의심이어도 그대로 추가")
     a = ap.parse_args()
 
     if a.mode == "manual":
@@ -196,6 +197,12 @@ def main():
                                                              "verify_note": a.url or "SNS 글 기반 - 사실 확인 필요", "confidence": "low"})
 
     db = load_db()
+    if a.mode != "manual" and not a.allow_dup:
+        import find_dup_topics as FD
+        for it in items:
+            why = FD.dup_reason(it, db)
+            if why:
+                raise SystemExit(f"중복 소재로 보여 추가하지 않았습니다: {why} (새로 만든 주제: {it.get('country')} - {it.get('topic')}). 그래도 추가하려면 --allow-dup")
     start = len(db)
     db.extend(items)
     save_db(db)
