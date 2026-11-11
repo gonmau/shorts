@@ -54837,7 +54837,7 @@
     "verify_note": "Samhain",
     "confidence": "source",
     "created_at": "2026-11-01T10:12:49.185275+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "31일 저녁, 해가 지는 순간 바로 시작되는 축제라면? 바로 아일랜드와 스코틀랜드, 맨 섬에서 맞이하는 **Samhain**입니다. 11월 1일을 앞두고 10월 31일 해가 저물자마자 열리는 이 고대 수확 축제는, 수확이 끝나고 겨울, 즉 ‘어두운 절반’이 시작됨을 알리는 날이죠. 켈트 달력에서는 해가 지는 순간이 새로운 하루의 시작이기 때문에, 사람들은 그 순간부터 축제를 시작했습니다. 일부 신석기 시대 무덤은 해가 지는 방향과 맞닿아 있어, 태양이 무덤을 통과할 때 하늘의 움직임을 축제와 연결시켰다고 전해집니다. 이러한 천문학적 정렬은 자연과 인간이 시간을 함께 인식하는 방식을 보여준다고 전해집니다. Samhain은 주로 켈트 문화권, 즉 아일랜드·스코틀랜드·맨 섬에서 관찰되는 전통이지만, 비슷한 형태의 수확 축제는 다른 지역에서도 찾아볼 수 있습니다. 해가 사라지는 그 순간, 어둠이 시작되는 순간을 기념한다는 점, 기억해 두세요.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -54906,7 +54906,169 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0468_아일랜드_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0468_아일랜드_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "sunset over horizon",
+      "celtic pumpkin lantern Samhain",
+      "harvest field autumn",
+      "sunrise over landscape",
+      "ancient stone tomb sunset",
+      "stone circle night sky",
+      "celtic stone circle Ireland",
+      "dark forest twilight"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Cleverpix",
+        "page": "https://pixabay.com/photos/sunset-tree-water-silhouette-1373171/",
+        "id": 1373171
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "SzaboJanos",
+        "page": "https://pixabay.com/photos/halloween-jack-o-lantern-pumpkin-4585684/",
+        "id": 4585684
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "picjumbo_com",
+        "page": "https://pixabay.com/photos/wheat-ear-dry-harvest-autumn-865152/",
+        "id": 865152
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Zaimful",
+        "page": "https://pixabay.com/photos/pond-water-nature-steam-sunrise-10534213/",
+        "id": 10534213
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "TheDigitalArtist",
+        "page": "https://pixabay.com/photos/pyramids-egypt-egyptian-ancient-2371501/",
+        "id": 2371501
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "MemoryCatcher",
+        "page": "https://pixabay.com/photos/standing-stones-night-sky-milky-way-6941189/",
+        "id": 6941189
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Meredin",
+        "page": "https://pixabay.com/photos/ireland-stone-circle-821007/",
+        "id": 821007
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Darkmoon_Art",
+        "page": "https://pixabay.com/photos/forest-fog-woods-trees-mystical-3394066/",
+        "id": 3394066
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2639,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e0f3935c97cb",
+        "at": "2026-11-11 20:21",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3037,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a65bc3652824",
+        "at": "2026-11-11 20:21",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2784,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04c37a4a2887",
+        "at": "2026-11-11 20:21",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2704,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "2634c0aecddc",
+        "at": "2026-11-11 20:21",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2661,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8b12a8adec39",
+        "at": "2026-11-11 20:21",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3612,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "bf3a719a9565",
+        "at": "2026-11-11 20:21",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.314,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b9a4cdcdad86",
+        "at": "2026-11-11 20:21",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.325,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d0d6afcda2e9",
+        "at": "2026-11-11 20:21",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0468_아일랜드.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0468_아일랜드.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "도교, ‘도(道)’ 하나로 연결되는 생활 실천",
@@ -54966,7 +55128,11 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0469_중국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0469_중국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "덴마크와 아이슬란드, 대사관이 뒤바뀐 이유",
@@ -56993,7 +57159,7 @@
     "verify_note": "Brahminism",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -57005,7 +57171,42 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "need": "curiosity",
+    "emotion": "empathy",
+    "narration": "태어날 때부터 ‘계급’이 정해진다면 당신은 어떻게 살까요? 인도에서는 출생·이름·표식으로 카스트가 고정됩니다. 이 체계를 ‘Brahminism’이라고 하는데, 전世대에 걸쳐 브라만 계층이 권력을 유지하도록 하는 배제적 관습을 의미합니다. 어린 시절부터 특정 직업과 사회적 지위를 물려받으며, 같은 카스트 내에서만 결혼이 허용되는 경우가 많습니다.  \n\n그런데 이런 구조에 맞서는 움직임도 존재합니다. ‘반Brahminism’이라 불리는 운동은 비가시계층인 Dalit·Bahujan 공동체의 권리를 주장하며, 차별 철폐와 교육·경제 기회의 평등을 목표로 합니다. 이들은 전통적인 카스트 규범을 비판하고, 사회적 배제를 깨뜨리려 노력합니다.  \n\n역사와 제도가 만든 이 복잡한 관계는 오늘도 변화의 물결을 맞이하고 있습니다. 결국, 태어날 때 정해진 계급이 과연 우리 삶을 얼마나 좌우할지, 그 물음은 여전히 남아 있습니다.",
+    "title_line1": "인도 카스트 운명",
+    "title_line2": "당신은 어떻게 살까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*계급*은 운명?"
+      },
+      {
+        "s": 2,
+        "text": "*카스트* 고정"
+      },
+      {
+        "s": 6,
+        "text": "*반브라민* 운동"
+      },
+      {
+        "s": 9,
+        "text": "정해진 *계급*이 삶?"
+      }
+    ],
+    "image_queries": [
+      "class ladder illustration",
+      "caste birth marker",
+      "Brahminism ritual symbols",
+      "traditional Indian occupation tools",
+      "Indian protest crowd",
+      "anti-Brahmin movement rally",
+      "caste criticism artwork",
+      "Indian village street",
+      "class divided road"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
