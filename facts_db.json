@@ -57800,7 +57800,47 @@
     "verify_note": "Bowing in Japan",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "narration": "사무라이는 절대 무릎을 꿇지 않는다! 대신 이렇게 인사한다? 일본식 인사, 즉 お辞儀는 머리와 상체를 숙이는 동작으로, 인사·사과·감사의 의미를 동시에 담고 있습니다. 이 자세는 원래 무사 계급이 전쟁 시절에 체계화한 예절 매뉴얼에 포함돼 있었으며, 상대에게 존경과 겸손을 표하는 실용적인 방법으로 자리 잡았습니다.  \n\n그런데 ‘오지기(お時宜)’라는 말은 처음엔 ‘적절한 시기’를 뜻했습니다. 시간이 흐르면서 ‘시기에 맞는 행동’이라는 의미가 확대돼, 결국 오늘날 우리가 알고 있는 ‘인사’라는 뜻으로 변했습니다.  \n\n현대 일본에서도 상황에 따라 깊게 숙이는 정도가 달라지고, 서구식 악수와 병행되기도 합니다. 하지만 기본적인 원리는 여전히 ‘머리를 숙여 상대를 존중한다’는 점에 있습니다. 그래서 오늘도 거리에서, 사무실에서, 신사 앞에서 우리는 같은 몸짓으로 서로에게 예의를 전하고 있는 것이죠.  \n\n그럼, 사무라이가 무릎을 꿇지 않고도 깊은 존경을 표현할 수 있었던 비밀, 바로 お辞儀 에 있었다는 사실, 기억해 주세요.",
+    "title_line1": "일본식 인사의 비밀",
+    "title_line2": "사무라이는 무릎 없이?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*무릎* 안 꿇어!"
+      },
+      {
+        "s": 3,
+        "text": "인사·감사 *오지*"
+      },
+      {
+        "s": 5,
+        "text": "*오시기* 원래 시기"
+      },
+      {
+        "s": 8,
+        "text": "머리 숙여 *존중*"
+      },
+      {
+        "s": 10,
+        "text": "깊은 존경 *비밀*"
+      }
+    ],
+    "image_queries": [
+      "samurai standing upright",
+      "traditional Japanese bow",
+      "Japanese bow greeting gratitude",
+      "samurai etiquette manual illustration",
+      "ancient Japanese timing device",
+      "evolution of Japanese greeting",
+      "modern Japanese handshake and bow",
+      "person bowing head respect",
+      "people bowing at Shinto shrine",
+      "samurai bowing deep respect"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "이란 마지막 샤의 다중 칭호",
