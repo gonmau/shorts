@@ -53653,7 +53653,7 @@
     "verify_note": "Buddhist cuisine",
     "confidence": "source",
     "created_at": "2026-11-01T08:28:14.231881+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "축제날만 고기 없이 식탁을 차린다면, 어떤 의미일까요? 몰디브의 대승불교 신자들과 승려들은 일상에서는 고기를 먹지만, 축하 행사에서는 비건 식단을 지킵니다. 이는 비폭력의 원칙인 아힘사에서 비롯된 것으로, 생명을 해치지 않겠다는 마음을 실천하는 방법이죠.  \n\n그런데 이때 음식은 단순한 영양 공급을 넘어선다는데요. 요리를 하나하나 명상처럼 여기며, 재료를 다듬고 끓이는 과정 자체가 마음을 고요하게 하는 훈련이 됩니다. 음식이 몸과 마음을 깨우는 도구가 되는 순간, 식사는 곧 깨달음의 길이 됩니다.  \n\n이 전통은 주로 승려와 일부 신자에게 적용된다는 점을 기억해 주세요. 축제에만 비건을 실천하는 이유, 이제 이해가 되시나요?",
     "title_line1": "몰디브 축제, 채식만",
     "title_line2": "왜 비건인가?",
@@ -53904,7 +53904,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0461_몰디브_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0461_몰디브_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0461_몰디브.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0461_몰디브.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "노르웨이, 남극까지 영유권 주장",
@@ -54396,7 +54399,11 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0465_페루_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0465_페루_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "새해 첫 불꽃놀이를 가장 먼저 보는 섬은?",
@@ -60587,7 +60594,38 @@
     "verify_note": "Spratly Islands dispute",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:29.834299+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "하나의 섬에 무려 6개의 이름이 있다니, 믿기 어려우시죠? 바로 남중국해에 흩어져 있는 스프라틀리 제도입니다. 이곳은 섬·암초·연안 등으로 이루어졌으며, 브루나이를 제외한 모든 국가가 일부를 점령하고 있습니다. 그래서 국제적으로 통용되는 이름 외에도 현지명, 중국명, 그리고 각국이 주장하는 다른 이름까지 최소 여섯 가지가 존재합니다.  \n\n그런데 이 이름들은 단순히 다른 언어라서가 아니라, 각각이 서로 다른 국가의 영유권 주장을 반영하고 있기 때문입니다. 한 섬을 두고 여러 나라가 각각의 이름을 붙이는 것은, 그 섬이 실제로 누가 통제하고 있는지를 표시하려는 의도와도 연결됩니다.  \n\n현재도 외교적 교착 상태와 군사 점령 상황이 지속되고 있어, 이 섬들의 명칭은 언제든 변동될 가능성이 있습니다. 하지만 지금 이 순간, 스프라틀리 제도는 최소 6개의 이름으로 불리며, 그 자체가 복잡한 영유권 싸움의 현장을 그대로 보여주고 있습니다. 결국, 한 섬에 이름이 이렇게 많이 붙어 있는 이유는 바로 ‘누가 그 섬을 차지했는가’를 끊임없이 말하고 싶어 하기 때문이죠.",
+    "title_line1": "스위스 스프라틀리",
+    "title_line2": "한 섬에 6개 이름",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "섬에 *6개* 이름?"
+      },
+      {
+        "s": 4,
+        "text": "이름마다 *영유권*"
+      },
+      {
+        "s": 8,
+        "text": "*복잡한* 영유권 현장"
+      }
+    ],
+    "image_queries": [
+      "island map multiple names",
+      "Spratly Islands South China Sea",
+      "rocky island chain aerial",
+      "territorial claim flags island",
+      "national flags on reef",
+      "military outpost disputed island",
+      "patrol boats near island",
+      "aerial view contested Spratly",
+      "sovereignty signs island"
+    ],
+    "scene_count": 10
   },
   {
     "topic": "프랑스·사르디니아·오스트리아, 1859 전쟁 발발 비밀",
