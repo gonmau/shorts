@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 22:19:25 (KST) · 기록 1616건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 22:20:22 (KST) · 기록 1618건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,7 +18,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 47 | 0 | 8초 |
-| fetch_images | 189 | 4 | 2시간 20분 |
+| fetch_images | 190 | 4 | 2시간 20분 |
 | generate_culture_facts | 15 | 0 | 31분 36초 |
 | generate_script | 195 | 0 | 1시간 13분 |
 | generate_tts | 82 | 0 | 31분 39초 |
@@ -29,7 +29,7 @@
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 2 | 0 | 53초 |
-| update_description | 2 | 0 | 6초 |
+| update_description | 3 | 0 | 9초 |
 | upload_to_youtube | 22 | 0 | 13분 5초 |
 | 롱폼 | 68 | 8 | 5시간 44분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
@@ -41,6 +41,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:20 | PC | update_description | update_description.py --indexes 583 | ✅ | 2초 |  |
+| 22:20 | PC | fetch_images | fetch_images.py --index 583 --scene 8 --source commons --type photo | ✅ | 5초 |  |
 | 22:19 | PC | update_description | update_description.py --indexes 581 | ✅ | 3초 |  |
 | 22:19 | PC | fetch_images | fetch_images.py --index 581 --scene 8 --source commons --type photo | ✅ | 4초 |  |
 | 22:18 | PC | update_description | update_description.py --indexes 581 | ✅ | 3초 |  |
