@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 10:41:02 (KST) · 기록 1481건 · 소재 623개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 10:44:22 (KST) · 기록 1486건 · 소재 624개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,22 +9,22 @@
 | -c | 57 | 0 | 24분 56초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 130 | 0 | 30초 |
-| approve | 32 | 0 | 6초 |
+| apply_review | 131 | 0 | 30초 |
+| approve | 33 | 0 | 7초 |
 | build_video | 62 | 0 | 11시간 20분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 38 | 0 | 6초 |
+| export_review | 39 | 0 | 7초 |
 | fetch_images | 163 | 3 | 2시간 11분 |
 | generate_culture_facts | 14 | 0 | 28분 40초 |
-| generate_script | 176 | 0 | 1시간 12분 |
+| generate_script | 177 | 0 | 1시간 12분 |
 | generate_tts | 73 | 0 | 28분 28초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 41 | 0 | 1분 6초 |
-| promote_ready | 130 | 0 | 26초 |
+| promote_ready | 131 | 0 | 27초 |
 | redo_videos | 24 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -40,6 +40,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:44 | PC | export_review | export_review.py --limit 1 --start 623 | ✅ | 0초 |  |
+| 10:44 | PC | generate_script | generate_script.py --limit 1 --start 623 | ✅ | 5초 |  |
+| 10:44 | PC | promote_ready | promote_ready.py --start 623 | ✅ | 0초 |  |
+| 10:44 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 10:44 | PC | approve | approve.py --limit 1 --start 623 | ✅ | 0초 |  |
 | 10:40 | PC | 코드업데이트 | gonmau/shorts: 4개 (add_topic.py, local_ui.py, style_profile.py, trend_research.py) | ✅ |  |  |
 | 10:20 | PC | trend_research | trend_research.py --yt 세계문화 상식, 영토, 전쟁 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ✅ | 24초 |  |
 | 10:12 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, trend_research.py) | ✅ |  |  |
