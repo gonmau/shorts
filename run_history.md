@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-11 21:36:29 (KST) · 기록 1599건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-11 21:41:45 (KST) · 기록 1600건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,7 +18,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 47 | 0 | 8초 |
-| fetch_images | 179 | 4 | 2시간 19분 |
+| fetch_images | 180 | 4 | 2시간 19분 |
 | generate_culture_facts | 15 | 0 | 31분 36초 |
 | generate_script | 195 | 0 | 1시간 13분 |
 | generate_tts | 82 | 0 | 31분 39초 |
@@ -40,6 +40,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:41 | PC | fetch_images | fetch_images.py --index 556 | ✅ | 0초 |  |
 | 21:36 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 분야:군사/전쟁사,분야:영토/국경 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fil | ✅ | 1분 16초 |  |
 | 21:31 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 나라:미국,나라:영국,나라:중국,분야:군사/전쟁사,분야:영토/국경 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style  | ❌ failed | 0초 | 조건에 맞는 소재가 2개뿐입니다 (최소 3개 필요). 영상이 끝나고 롱폼에 안 쓴 소재가 더 필요하거나 theme/start_index를 바꿔 주세요. |
 | 21:29 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_longform.py, local_ui.py, longform_pick.py) | ✅ |  |  |
