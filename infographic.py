@@ -161,7 +161,7 @@ def render(spec, w=960, h=560):
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     R = max(18, h // 14)
-    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=R, fill=BG + (238,), outline=SKY + (255,), width=4)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=R, fill=BG + (255,), outline=SKY + (255,), width=5)
     pad = int(w * 0.045)
     kind, rows = spec.get("kind"), spec.get("rows") or []
     y = pad * 0.6

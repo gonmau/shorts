@@ -685,7 +685,7 @@ def infographic_overlay(idx, item, script, timings, audio_duration):
         IG.render(g, 960, 560).save(path)
         yc = (IMG_BOX[1] + IMG_BOX[3]) / 2 / 1920 * 100
         print(f"인포그래픽 적용: {IG.KINDS.get(g.get('kind'), g.get('kind'))} '{g.get('title', '')}' ({st:.1f}초부터 {dur:.1f}초)")
-        return {"image": str(path), "start": st, "dur": dur, "x": 50, "y": yc, "width": 89, "effect": "팝", "radius": 30, "shadow": True, "border": ""}
+        return {"image": str(path), "start": st, "dur": dur, "x": 50, "y": yc, "width": 89, "effect": "팝", "radius": 30, "shadow": True, "border": "#FFFFFF", "bw": 5}
     except Exception as e:
         print(f"  인포그래픽 건너뜀 ({type(e).__name__}: {e})")
         return None
