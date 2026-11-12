@@ -1634,3 +1634,4 @@
 {"id": "1794453772884-a48b3f", "time": "2026-11-12 12:22:52", "channel": "KO", "source": "PC", "kind": "approve", "title": "approve.py --limit 1 --start 603", "status": "success", "secs": 0.2, "detail": ""}
 {"id": "1794453781408-97c279", "time": "2026-11-12 12:23:01", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 1 --start 603", "status": "success", "secs": 8.5, "detail": ""}
 {"id": "1794453781634-727720", "time": "2026-11-12 12:23:01", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 1 --start 603", "status": "success", "secs": 0.2, "detail": ""}
+{"id": "1794453882839-9e87f5", "time": "2026-11-12 12:24:42", "channel": "KO", "source": "PC", "kind": "infographic", "title": "infographic.py --index 603 --force", "status": "success", "secs": 3.0, "detail": ""}
