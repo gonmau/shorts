@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-12 12:20:05 (KST) · 기록 1631건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-12 12:23:15 (KST) · 기록 1636건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,22 +9,22 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 141 | 0 | 33초 |
-| approve | 41 | 0 | 9초 |
+| apply_review | 142 | 0 | 33초 |
+| approve | 42 | 0 | 9초 |
 | build_video | 71 | 0 | 12시간 38분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 24 | 0 | 2분 26초 |
 | cleanup_media | 2 | 0 | 4초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 47 | 0 | 8초 |
+| export_review | 48 | 0 | 8초 |
 | fetch_images | 190 | 4 | 2시간 20분 |
 | generate_culture_facts | 15 | 0 | 31분 36초 |
-| generate_script | 195 | 0 | 1시간 13분 |
+| generate_script | 196 | 0 | 1시간 13분 |
 | generate_tts | 82 | 0 | 31분 39초 |
 | image_check | 53 | 4 | 9분 38초 |
 | make_thumbnail | 50 | 0 | 1분 30초 |
-| promote_ready | 141 | 0 | 29초 |
+| promote_ready | 142 | 0 | 29초 |
 | redo_videos | 25 | 0 | 7초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -41,6 +41,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:23 | PC | generate_script | generate_script.py --limit 1 --start 603 | ✅ | 8초 |  |
+| 12:23 | PC | export_review | export_review.py --limit 1 --start 603 | ✅ | 0초 |  |
+| 12:22 | PC | promote_ready | promote_ready.py --start 603 | ✅ | 0초 |  |
+| 12:22 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 12:22 | PC | approve | approve.py --limit 1 --start 603 | ✅ | 0초 |  |
 | 12:19 | PC | 코드업데이트 | gonmau/shorts: 7개 (build_video.py, generate_script.py, infographic.py, local_ui.py, longform_render.py, longform_script.py) | ✅ |  |  |
 | 11:15 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-ima | ✅ | 37분 8초 |  |
 | 10:31 | PC | 롱폼 | build_longform.py --mode manual --indexes 556,602,593,583,581,562 --channel gonmauY --handle @gonmauY --style rich --fill-images --require-images --ti | ✅ | 31분 7초 |  |
