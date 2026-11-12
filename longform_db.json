@@ -265,5 +265,27 @@
     "video": "longform_012.mp4",
     "status": "video_done",
     "created_at": "2026-11-11T14:27:16.009455+00:00"
+  },
+  {
+    "id": 13,
+    "mode": "manual",
+    "theme": "",
+    "members": [
+      556,
+      602,
+      593,
+      583,
+      581,
+      562
+    ],
+    "title": "전쟁과 바다가 바꾼 세계의 역사 6가지",
+    "style": "rich",
+    "expanded": true,
+    "clips": false,
+    "description": "00:00 오프닝\n00:22 1. 예멘 - 하니시 제도 3일 전쟁 전투 승리와 영토 판정은 달랐다\n01:40 2. 일본 - 이오지마 지하 방어망 미군은 숨은 적?\n02:52 3. 이슬람제국 - 중동의 지도를 바꾼 10년 현대 중동의 출발점\n04:06 4. 싱가포르 - 남중국해 세계 무역의 생명선\n05:12 5. 스페인 - 스페인 무적함대의 진짜 이름 세계를 지배한 왕의 함대\n06:34 6. 영국 - 영국 해군의 특별한 별명 왜 시니어 서비스?\n07:45 요약\n\n사진 출처 (자르기/확대 사용). 원본 링크 전체는 고정 댓글에 있습니다:\n[1] 예멘: Bernard Gagnon (CC BY-SA 3.0), Pixabay\n[2] 일본: U.S. Navy graphic by Petty Officer 2nd Class Justin Stack (Public domain), Edmond Morin (Public domain), U.S. Army 107MPAD by Spc. Alejandro Carrasquel (Public domain), Pink Flojd (CC BY-SA 4.0), Pixabay\n[3] 이슬람제국: Angelo Foglietta (CC0), A Contemporary Nomad (CC BY-SA 4.0), Vyacheslav Argenberg (CC BY 4.0), Ahmed.Mhdv (CC BY-SA 4.0), Ottoman Empire (Public domain), Al Ameer son (CC BY-SA 4.0), Pixabay\n[4] 싱가포르: Donald Trung (CC BY-SA 4.0), Astronaut photograph ISS047-E-99713 was acquired on May 6, 2016, with a Nikon D4 (Public domain), IloopMapping (CC BY-SA 4.0), Pixabay\n[5] 스페인: Sofonisba Anguissola (Public domain), Jules Verne Times Two (CC BY-SA 4.0), George Chernilevsky (Public domain), anonymous (Public domain), Barjimoa (CC BY-SA 4.0), Anonymous Unknown author (Public domain), Print made by: James Gillray Published by: Hannah Humphrey (Public domain), Public domain / CC0 (Public domain), Pixabay\n[6] 영국: Eric Jones (CC BY-SA 2.0), Aec1383 (CC BY 4.0), Dennis Jarvis from Halifax, Canada (CC BY-SA 2.0), Unknown author (name of designer not provided; illustrator not credited); The Mi (CC BY-SA 4.0), Pixabay\n\n🌍 세계 각국의 놀라운 문화와 이색 정보를 짧고 재미있게 만나보세요!\n\n#예멘 #하니시 #일본 #이오지마 #이슬람제국 #우마 #싱가포르 #남중국해 #스페인 #스페인Habsburg #세계문화 #해외여행 #이색상식",
+    "duration_sec": 514.1,
+    "video": "longform_013.mp4",
+    "status": "video_done",
+    "created_at": "2026-11-12T00:32:53.838405+00:00"
   }
 ]
