@@ -66193,9 +66193,35 @@
     ],
     "scene_count": 10,
     "infographic": {
-      "on": false,
-      "none": true,
-      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+      "on": true,
+      "kind": "steps",
+      "title": "군사공학 전력 공급 절차",
+      "s": 4,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "설치",
+          "value": null,
+          "text": "임시 전력 설비 설치"
+        },
+        {
+          "label": "연결",
+          "value": null,
+          "text": "전선망 연결"
+        },
+        {
+          "label": "공급",
+          "value": null,
+          "text": "안정적 전력 전달"
+        },
+        {
+          "label": "방호",
+          "value": null,
+          "text": "CBRN 방호 구축"
+        }
+      ],
+      "none": false
     }
   },
   {
