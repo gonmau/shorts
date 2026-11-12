@@ -66189,7 +66189,8 @@
       "CBRN defense equipment",
       "engineered protective gear",
       "military engineering technology",
-      "battlefield core infrastructure"
+      "battlefield core infrastructure",
+      "Military engineering"
     ],
     "scene_count": 10,
     "infographic": {
@@ -66330,7 +66331,7 @@
         "2": "#0061ff"
       }
     },
-    "redo_ts": 1794455287.598964,
+    "redo_ts": 1794456827.6041508,
     "thumb_opts": {
       "scale1": 1.0,
       "scale2": 1.0,
@@ -66366,7 +66367,11 @@
     },
     "thumb_scene": 5,
     "youtube_id": "s6p3c4RO04M",
-    "uploaded_at": "2026-11-12T13:04:20.624854+09:00"
+    "uploaded_at": "2026-11-12T13:04:20.624854+09:00",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "스위스와 영국의 저녁 식사 용어 차이",
@@ -68062,7 +68067,76 @@
     "verify_note": "Territorial claims in the Arctic",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "북극점에 발을 디뎠는데, 관세도 세금도 안 붙는다! 사실 북극점과 그 주변 해역은 국제법상 무주지로 지정돼 있어 어느 나라의 영해에도 속하지 않아요. 하지만 주변 8개 연안국—캐나다, 덴마크(그린란드 포함), 핀란드, 아이슬란드, 노르웨이, 러시아, 스웨덴, 미국—은 각각 육지와 해역을 관리하고 있죠.  \n\n그런데 이들 국가가 관리하는 구역과는 별개로, 북극점 자체는 어느 국가의 영토가 아니기 때문에 관세나 영해 규제가 적용되지 않습니다. 그래서 여기서는 자유롭게 탐험할 수 있는 듯 보이지만, 실제로는 해저 자원 탐사를 두고 8개국이 치열하게 경쟁하고 있다는 점이 흥미롭습니다.  \n\n이 규정은 현재 국제해양법(UNCLOS) 하에서 적용되고 있으며, 향후 조약이 바뀌면 상황이 달라질 수도 있습니다. 결국 북극점은 법적으로는 ‘무주지’이지만, 그 주변을 둘러싼 국가들의 이해관계는 결코 공허하지 않다는 점, 기억해 주세요.",
+    "title_line1": "북극점은 무주지",
+    "title_line2": "관세·세금 전혀 안돼?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "관세·세금 *없는* 북극"
+      },
+      {
+        "s": 3,
+        "text": "8개국이 *경쟁*하는 해저"
+      },
+      {
+        "s": 4,
+        "text": "북극점은 *무주지*"
+      },
+      {
+        "s": 7,
+        "text": "주변 이해관계 *중요*"
+      }
+    ],
+    "image_queries": [
+      "tax free Arctic",
+      "unclaimed Arctic territory",
+      "Arctic seafloor",
+      "unclaimed Arctic pole",
+      "Arctic resource exploration",
+      "UNCLOS Arctic law",
+      "Arctic surrounding interests"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "ranking",
+      "title": "북극점 연안국",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "캐나다",
+          "value": null,
+          "text": "연안국"
+        },
+        {
+          "label": "덴마크",
+          "value": null,
+          "text": "연안국"
+        },
+        {
+          "label": "핀란드",
+          "value": null,
+          "text": "연안국"
+        },
+        {
+          "label": "아이슬란드",
+          "value": null,
+          "text": "연안국"
+        },
+        {
+          "label": "노르웨이",
+          "value": null,
+          "text": "연안국"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
