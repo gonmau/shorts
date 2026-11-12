@@ -61418,7 +61418,9 @@
       "Greater Hanish Island deserted coastline",
       "Eritrea Yemen territorial dispute Red Sea map",
       "international arbitration judges courtroom",
-      "Hanish Islands Yemen Eritrea sovereignty map"
+      "Hanish Islands Yemen Eritrea sovereignty map",
+      "Hanish Islands conflict",
+      "Yemen landmark"
     ],
     "scene_count": 10,
     "narration_original": "‘3일만에 섬을 차지하고, 바로 국제 재판까지?’ 라는 이야기가 믿기 힘들겠지만, 바로 1995년 레드 씨에서 일어난 일입니다. 12월 15일 새벽, 예멘과 에리트레아는 그레이터 하니시 섬을 두고 총격을 시작했습니다. 양측은 17일 새벽까지 3일간 교전했으며, 결국 예멘이 섬을 점령했습니다. 전투가 끝난 뒤, 1998년 영구중재재판소는 이 섬의 주권을 예멘에게 인정했습니다. 그런데 이 섬은 거의 무인 상태였고, 군사적·경제적 가치는 제한적이었습니다. 그럼에도 불구하고, 국제법상 영유권을 확정받는 사례가 되면서 작은 섬 하나가 법적 의미를 크게 부각시킨 셈입니다. 전투와 판결이 단 3년 차이로 이어진 점은, 국제 분쟁이 짧은 시간 안에 법정으로 넘어갈 수 있음을 보여줍니다. 결국, 하니시 제도는 전략적 가치보다 법적 원칙이 더 큰 역할을 했던 사례라고 할 수 있습니다.",
@@ -61433,7 +61435,9 @@
       "Greater Hanish Island deserted coastline",
       "Eritrea Yemen territorial dispute Red Sea map",
       "international arbitration judges courtroom",
-      "Hanish Islands Yemen Eritrea sovereignty map"
+      "Hanish Islands Yemen Eritrea sovereignty map",
+      "Hanish Islands conflict",
+      "Yemen landmark"
     ],
     "image_credits": [
       {
@@ -61495,6 +61499,22 @@
         "page": "https://pixabay.com/photos/map-sail-sailor-hand-finger-950353/",
         "id": 950353,
         "type": "photo"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/egg-hammer-hit-beat-fragile-583163/",
+        "id": 583163
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "title": "Ancient Ma'rib 01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ancient_Ma%27rib_01.jpg",
+        "id": "c:18341048"
       }
     ],
     "image_source": "pixabay",
@@ -64149,7 +64169,8 @@
       "Spanish galleon 1588",
       "Spanish Armada ships",
       "British ship",
-      "Satirical Spanish fleet"
+      "Satirical Spanish fleet",
+      "Habsburg Spain"
     ],
     "scene_count": 10,
     "narration_original": "한 왕이 아메리카와 동남아까지 한 번에 다스렸다?! 1516년부터 1700년까지 하스부르크 왕가가 이끌던 스페인 제국은 유럽 본토와 함께 남미 전체, 그리고 필리핀을 포함한 동남아 섬들을 장악했습니다. 이때 스페인 왕은 유럽 전쟁터에서 전술을 짜고, 동시에 필리핀 열대 정글에서 현지 관리와 무역을 조율했죠. 그런데 그 넓은 영토를 유지하기 위해서는 대서양과 태평양을 가로지르는 해상 루트를 끊임없이 보호해야 했습니다. 그래서 스페인은 무역선과 군함을 대규모로 운용했고, 각 대륙의 식민지에는 현지 총독이 파견돼 왕의 명령을 전달했습니다. 한 사람의 왕이 두 대륙을 동시에 통치한다는 사실은, 그 시대의 복잡한 정치와 물류 체계가 얼마나 정교했는지를 보여주는 살아있는 증거입니다. 이제 그 왕이 어떻게 양쪽 대륙을 동시에 다스렸는지, 상상해 보세요.",
@@ -64165,7 +64186,8 @@
       "Spanish galleon 1588",
       "Spanish Armada ships",
       "British ship",
-      "Satirical Spanish fleet"
+      "Satirical Spanish fleet",
+      "Habsburg Spain"
     ],
     "image_credits": [
       {
@@ -64249,10 +64271,12 @@
       },
       {
         "scene": 10,
-        "source": "pixabay",
-        "user": "SOFCOR",
-        "page": "https://pixabay.com/photos/nature-outdoors-travel-exploration-2990060/",
-        "id": 2990060
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Spanish Habsburgs.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Spanish_Habsburgs.jpg",
+        "id": "c:1003110"
       }
     ],
     "image_source": "pixabay",
@@ -64575,7 +64599,9 @@
       "South China Sea Korean cargo ships",
       "Malacca Strait container ships",
       "Oil tanker at sea",
-      "South China Sea global trade route"
+      "South China Sea global trade route",
+      "Territorial disputes in the",
+      "Singapore landmark"
     ],
     "scene_count": 10,
     "highlight_style": {
@@ -64600,7 +64626,9 @@
       "South China Sea Korean cargo ships",
       "Malacca Strait container ships",
       "Oil tanker at sea",
-      "South China Sea global trade route"
+      "South China Sea global trade route",
+      "Territorial disputes in the",
+      "Singapore landmark"
     ],
     "image_credits": [
       {
@@ -64663,6 +64691,22 @@
         "title": "Iss047e099713 lrg Manila.jpg",
         "page": "https://commons.wikimedia.org/wiki/File:Iss047e099713_lrg_Manila.jpg",
         "id": "c:51008393"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "IloopMapping",
+        "license": "CC BY-SA 4.0",
+        "title": "Border disputes and discrepancies between France and Spain (Bay of Txingudi-Larrako Errese",
+        "page": "https://commons.wikimedia.org/wiki/File:Border_disputes_and_discrepancies_between_France_and_Spain_(Bay_of_Txingudi-Larrako_Erreserba_Naturala_portion).png",
+        "id": "c:202535323"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Time1337",
+        "page": "https://pixabay.com/photos/architecture-airport-changi-6482060/",
+        "id": 6482060
       }
     ],
     "image_source": "pixabay",
@@ -65159,7 +65203,8 @@
       "ancient Baghdad Abbasid city illustration",
       "Persian Safavid architecture Isfahan",
       "Ottoman Empire Middle East historical map",
-      "modern Middle East political map"
+      "modern Middle East political map",
+      "Rashidun conquests under Umar"
     ],
     "scene_count": 10,
     "narration_original": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
@@ -65175,7 +65220,8 @@
       "ancient Baghdad Abbasid city illustration",
       "Persian Safavid architecture Isfahan",
       "Ottoman Empire Middle East historical map",
-      "modern Middle East political map"
+      "modern Middle East political map",
+      "Rashidun conquests under Umar"
     ],
     "image_credits": [
       {
@@ -65250,6 +65296,15 @@
         "user": "ErikaWittlieb",
         "page": "https://pixabay.com/photos/syria-middle-east-map-globe-iraq-1034467/",
         "id": 1034467
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Al Ameer son",
+        "license": "CC BY-SA 4.0",
+        "title": "Early Islamic Syria, ca. 640s.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Early_Islamic_Syria,_ca._640s.png",
+        "id": "c:81544683"
       }
     ],
     "image_source": "pixabay",
@@ -65869,7 +65924,9 @@
       "battle with trap",
       "infantry artillery tunnel combat",
       "Iwo Jima airfield after tunnel",
-      "terrain changing battle"
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
     ],
     "scene_count": 10,
     "image_queries_done": [
@@ -65880,7 +65937,9 @@
       "battle with trap",
       "infantry artillery tunnel combat",
       "Iwo Jima airfield after tunnel",
-      "terrain changing battle"
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
     ],
     "image_credits": [
       {
@@ -65948,6 +66007,20 @@
         "title": "Battle of Mišar terrain model.jpg",
         "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
         "id": "c:71694541"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "27707",
+        "page": "https://pixabay.com/photos/iwo-to-iwo-jima-island-battlefield-595463/",
+        "id": 595463
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "MasashiWakui",
+        "page": "https://pixabay.com/photos/japan-osaka-pedestrians-crossing-2014616/",
+        "id": 2014616
       }
     ],
     "image_source": "pixabay",
