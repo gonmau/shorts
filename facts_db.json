@@ -66189,8 +66189,7 @@
       "CBRN defense equipment",
       "engineered protective gear",
       "military engineering technology",
-      "battlefield core infrastructure",
-      "Military engineering"
+      "battlefield core infrastructure"
     ],
     "scene_count": 10,
     "infographic": {
@@ -66317,13 +66316,21 @@
       }
     ],
     "image_source": "pixabay",
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0603_캐나다.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0603_캐나다.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "title_opts": {
+      "color1": "#000000",
+      "color2": "#C800FF",
+      "colors1": {
+        "1": "#1b62f5"
+      },
+      "colors2": {
+        "0": "#ff3e00",
+        "2": "#0061ff"
+      }
+    },
+    "redo_ts": 1794455287.598964
   },
   {
     "topic": "스위스와 영국의 저녁 식사 용어 차이",
