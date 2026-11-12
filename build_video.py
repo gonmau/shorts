@@ -657,6 +657,40 @@ def make_image_box_clip(srcs, audio_duration, zoom=None, xfade=None, starts=None
     )
 
 
+def infographic_overlay(idx, item, script, timings, audio_duration):
+    """대본에서 뽑아 둔 인포그래픽(item["infographic"])을 이미지 얹기 항목으로 바꾼다. 없거나 꺼져 있으면 None.
+    이미지 영역 가운데에 카드로 띄우고(위·아래 핵심 문구 자리는 비움), 정한 문장이 읽히는 시점에 나온다."""
+    try:
+        import infographic as IG
+        g = IG.active(item)
+        if not g:
+            return None
+        g_ok = IG.verify(g, script)      # 대본을 고쳐서 수치가 안 맞게 됐으면 넣지 않는다
+        if not g_ok:
+            print("  인포그래픽 건너뜀: 현재 대본과 맞지 않는 내용입니다 (UI에서 다시 만드세요)")
+            return None
+        g = dict(g, **{k: g_ok[k] for k in ("rows", "title", "kind")})
+        import tempfile
+        sents = split_sentences(script)
+        total = sum(_nospace(x) for x in sents) or 1
+        n = min(max(1, int(g.get("s") or 1)), max(1, len(sents)))
+        before = sum(_nospace(x) for x in sents[:n - 1])
+        st = time_at_fraction(before / total, timings) + 0.15
+        dur = float(g.get("dur") or 5.0)
+        dur = max(2.0, min(dur, audio_duration - 0.5))
+        st = max(0.0, min(st, audio_duration - 0.4 - dur))
+        out = Path(tempfile.gettempdir()) / "shorts_infographics"
+        out.mkdir(exist_ok=True)
+        path = out / f"{idx}.png"
+        IG.render(g, 960, 560).save(path)
+        yc = (IMG_BOX[1] + IMG_BOX[3]) / 2 / 1920 * 100
+        print(f"인포그래픽 적용: {IG.KINDS.get(g.get('kind'), g.get('kind'))} '{g.get('title', '')}' ({st:.1f}초부터 {dur:.1f}초)")
+        return {"image": str(path), "start": st, "dur": dur, "x": 50, "y": yc, "width": 89, "effect": "팝", "radius": 30, "shadow": True, "border": ""}
+    except Exception as e:
+        print(f"  인포그래픽 건너뜀 ({type(e).__name__}: {e})")
+        return None
+
+
 def build_one(idx, item):
     country = safe_country(item)
 
@@ -822,7 +856,8 @@ def build_one(idx, item):
 
     # 직접 넣은 문구(overlays): UI '문구 넣기' 탭에서 입력한 시점/위치/효과대로 자막 위에 합성
     overlay_clips = overlays.make_clips(item.get("overlays"), audio_duration)
-    _img_clips = overlays.make_image_clips(item.get("image_overlays"), audio_duration)   # 이미지 얹기: 문구보다 아래층
+    _ig_ov = infographic_overlay(idx, item, script, timings, audio_duration)
+    _img_clips = overlays.make_image_clips(list(item.get("image_overlays") or []) + ([_ig_ov] if _ig_ov else []), audio_duration)   # 이미지 얹기(+인포그래픽): 문구보다 아래층
     if _img_clips:
         print(f"이미지 얹기 {len(_img_clips)}개 적용")
     _shape_clips = overlays.make_shape_clips(item.get("shape_overlays"), audio_duration)   # 도형 강조(원·사각형·화살표)

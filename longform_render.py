@@ -774,6 +774,25 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
             e_ = times[k + 1] if k + 1 < len(stages) else t0 + cd
             ovs.append(Ov(st_, times[k], e_, fi=0.4 if k == 0 else 0.0, fo=0.4 if k == len(stages) - 1 else 0.0))
 
+    ig_win = None
+    try:   # 인포그래픽 카드: 해당 문장 시점에 화면 전체로 (현재 대본과 대조해 안 맞으면 생략)
+        import infographic as IG
+        g_ = IG.active(rec)
+        g_ok = IG.verify(g_, rec.get("narration", "")) if g_ else None
+        if g_ok and dur > 20:
+            n_ = max(1, min(int(g_.get("s") or 1), len(sents)))
+            t0 = B.time_at_fraction(cum[n_ - 1] / total_chars, timings) + 0.2
+            gd = max(4.0, min(float(g_.get("dur") or 6), 9.0))
+            t0 = max(4.0, min(t0, dur - gd - 2.0))
+            if cmp_win and t0 < cmp_win[1] + 0.5 and t0 + gd > cmp_win[0] - 0.5:
+                t0 = cmp_win[1] + 0.8 if cmp_win[1] + 0.8 + gd < dur - 1.5 else None
+            if t0 is not None:
+                spec_ = dict(g_, rows=g_ok["rows"], title=g_ok["title"], kind=g_ok["kind"])
+                ovs.append(Ov(IG.screen_layer(spec_), t0, t0 + gd, fi=0.4, fo=0.4))
+                ig_win = (t0, t0 + gd)
+    except Exception as e_:
+        print(f"    [인포그래픽 건너뜀] {type(e_).__name__}: {e_}", flush=True)
+
     kws_ = sorted(rec.get("keywords") or [], key=lambda k: int(k["sentence"]))
     max_kw = max(2, int(round(dur / 35.0)))          # 약 35초에 1개 (110초 챕터면 3개): 필요한 만큼만
     if len(kws_) > max_kw:                           # 많으면 처음·끝을 포함해 고르게 솎아냄
@@ -788,6 +807,8 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
         if t0 < last_end + 3.0 or t0 > dur - 2.0:
             continue
         if cmp_win and cmp_win[0] - 1.0 < t0 < cmp_win[1] + 0.3:
+            continue
+        if ig_win and ig_win[0] - 1.0 < t0 < ig_win[1] + 0.3:
             continue
         layer, _pos = keyword_img(kw["text"])
         kd = min(2.8, dur - t0 - 0.2)

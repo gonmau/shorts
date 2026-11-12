@@ -200,6 +200,7 @@ def tts_env():
             **({"SCRIPT_TARGET_SEC": str(int(TTS_CFG["target_sec"]))} if int(TTS_CFG.get("target_sec") or 0) > 0 else {}),
             **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {}),
             **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {}),
+            **({"INFOGRAPHIC": "0"} if TTS_CFG.get("info_off") else {}),
             **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")) if TTS_CFG.get(k_)}}
 
 def run(*args):
@@ -396,6 +397,8 @@ with T4a:
                                   help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다. 둘 다: 아래엔 대본 자막, 이미지 위쪽엔 핵심 문구(쇼츠만)")
     TTS_CFG["tv_fx"] = st.checkbox("📺 영상 처음·끝에 옛날 TV 켜짐/꺼짐 효과", bool(TTS_CFG.get("tv_fx")), key="tv_fx_cb",
                                    help="시작: 가운데 빛줄이 위아래로 열리며 켜짐(0.5초) / 끝: 줄로 닫혔다 점으로 꺼짐(0.55초). 음성은 그대로. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
+    TTS_CFG["info_off"] = not st.checkbox("📊 대본에 맞는 인포그래픽 자동 넣기 (수치·순서·비교가 있는 대본만)", not TTS_CFG.get("info_off"), key="info_cb",
+                                          help="대본을 만들 때 AI가 대본 속 수치·순서·비교를 뽑아 인포그래픽 1개를 만들고, 영상 이미지 위에 해당 문장 시점에 띄웁니다. 대본에 없는 숫자는 쓰지 않고(검증), 구조가 없으면 만들지 않습니다. 소재별로 '대본 보기·수정'에서 보고 끄거나 고칠 수 있습니다. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     import fonts as _FN0
     _fa0 = _FN0.available()
     _fo = ["", *_fa0]
@@ -1521,6 +1524,27 @@ with T2c:
 
 
 with T2b:
+    with st.expander("📊 인포그래픽 보기·끄기·다시 만들기 (소재별)"):
+        _ig_i = st.number_input("소재 번호", 0, 99999, 0, key="ig_i")
+        try:
+            _dbi = load_db()
+            _gi = (_dbi[int(_ig_i)].get("infographic") or {}) if 0 <= int(_ig_i) < len(_dbi) else {}
+        except Exception:
+            _dbi, _gi = [], {}
+        if _gi.get("rows") and not _gi.get("none"):
+            import infographic as _IGU
+            st.image(_IGU.render(_gi), caption=f"{_IGU.KINDS.get(_gi.get('kind'), '')} · 문장 {_gi.get('s', 1)} · {_gi.get('dur', 6)}초")
+            _ion = st.checkbox("영상에 넣기", bool(_gi.get("on")), key=f"ig_on_{_ig_i}")
+            if _ion != bool(_gi.get("on")):
+                _dbi[int(_ig_i)]["infographic"] = {**_gi, "on": _ion}
+                save_db(_dbi)
+                st.rerun()
+        elif _gi.get("none"):
+            st.caption("이 대본엔 인포그래픽으로 만들 만한 수치·순서·비교가 없다고 판단했습니다.")
+        else:
+            st.caption("아직 만들지 않았습니다. 대본을 만들 때 자동으로 생성되거나 아래 버튼으로 만듭니다.")
+        if st.button("🔁 AI로 (다시) 만들기", key="ig_regen"):
+            run("infographic.py", "--index", str(int(_ig_i)), "--force")
     with st.expander("🎬 영상 맨 위 제목·색 수정 (영상 만들기 전에 미리 고치기)"):
         _title_editor("s_")
     with st.expander("🔄 대본에 맞게 주제·훅·제목·핵심 문구 다시 만들기 (대본을 직접 고친 소재)", expanded=False):
@@ -3185,6 +3209,13 @@ with TL:
                         cues_.append({"sentence": n_, "scene": sc_})
                 tmp_ = {**rec_, "narration": narr_, "keywords": kws_, "compare": compare_, "compare_at": int(cmp_at) if compare_ else 0,
                         "recap": recap_.strip(), "images": cues_, "title1": title1_.strip(), "title2": title2_.strip()}
+                _ig0 = rec_.get("infographic") or {}
+                if _ig0.get("rows") and not _ig0.get("none"):
+                    _ig_on = st.checkbox(f"📊 인포그래픽 사용 — {_ig0.get('title', '')} ({len(_ig0['rows'])}행, 문장 {_ig0.get('s', 1)})", bool(_ig0.get("on")), key=f"lfig_{k_}",
+                                         help="대본에서 뽑은 수치·순서·비교 카드. 영상 중간에 화면 전체로 잠깐 나옵니다. 끄면 이 챕터만 안 나옵니다")
+                    if _ig_on != bool(_ig0.get("on")):
+                        LS.update_rec(idx_, {"infographic": {**_ig0, "on": _ig_on, "edited": True}})
+                        st.rerun()
                 sv1, sv2, sv3 = st.columns(3)
                 if sv1.button("💾 저장 (이 대본으로 잠금)", key=f"lfsave_{k_}", type="primary"):
                     LS.update_rec(idx_, {"narration": narr_.strip(), "keywords": kws_, "compare": compare_, "compare_at": tmp_["compare_at"],

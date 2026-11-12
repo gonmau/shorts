@@ -772,6 +772,16 @@ def ensure_extras(client, models, fact, retries=3):
             print("  [이미지 검색어] " + " | ".join(qs))
         else:
             print("  [이미지 검색어 생성 실패] 국가명으로 대체 검색합니다.")
+    if "infographic" not in fact and narration.strip() and os.environ.get("INFOGRAPHIC", "1") != "0":
+        try:   # 대본에 수치·순서·비교 같은 구조가 있으면 인포그래픽 1개를 뽑아 둔다 (대본과 대조해 검증, 없으면 none)
+            import infographic as _IG
+            g_ = _IG.generate(client, models, narration)
+            if g_ is not None:
+                fact["infographic"] = _IG.info_json(g_)
+                changed = True
+                print("  [인포그래픽] " + (f"{_IG.KINDS[g_['kind']]} '{g_['title']}' {len(g_['rows'])}행 (문장 {g_['s']})" if not g_.get("none") else "만들 만한 구조 없음"))
+        except Exception as e_:
+            print(f"  [인포그래픽 건너뜀] {type(e_).__name__}: {e_}")
     return changed
 
 

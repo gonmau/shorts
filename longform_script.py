@@ -446,6 +446,22 @@ def prepare_item(client, models, idx, item, next_info, candidates, force=False, 
         print(f"    [확장대본] {idx} {item.get('country', '')}: {len(rec['narration'])}자, 키워드 {len(rec['keywords'])}, 비교 {'O' if rec.get('compare') else 'X'}, 검증 {rec['verify']['status']}", flush=True)
     else:
         print(f"    [확장대본] {idx}: 저장된 대본 재사용", flush=True)
+    # 인포그래픽: 대본에서 수치·순서·비교를 뽑아 챕터마다 1개 (대본이 바뀌면 다시, 사람이 고친 건 그대로)
+    if rec.get("narration") and client is not None and os.environ.get("INFOGRAPHIC", "1") != "0":
+        try:
+            import infographic as _IG
+            _nh = _hash(rec["narration"])
+            _g = rec.get("infographic") or {}
+            if (not _g) or (_g.get("nh") != _nh and not _g.get("edited")):
+                _g2 = _IG.generate(client, models, rec["narration"])
+                if _g2 is not None:
+                    rec = {**rec, "infographic": {**_IG.info_json(_g2), "nh": _nh}}
+                    store = load_scripts()
+                    store[key] = rec
+                    save_scripts(store)
+                    print(f"    [인포그래픽] {idx}: " + (f"{_IG.KINDS[_g2['kind']]} '{_g2['title']}'" if not _g2.get("none") else "만들 만한 구조 없음"), flush=True)
+        except Exception as e_:
+            print(f"    [인포그래픽 건너뜀] {idx}: {type(e_).__name__}: {e_}", flush=True)
     # 챕터 순서가 바뀌었으면(저장된 연결 대상과 다르면) 마지막 연결 문장만 다시 쓴다. relink=True 면 연결 대상 기록이 없는 예전 대본도 한 번 맞춘다
     if rec.get("narration") and client is not None:
         _cur = next_info or ""
