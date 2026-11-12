@@ -66330,7 +66330,37 @@
         "2": "#0061ff"
       }
     },
-    "redo_ts": 1794455287.598964
+    "redo_ts": 1794455287.598964,
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "brush",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#1f18e7",
+      "color2": "#000000",
+      "text1": "",
+      "text2": "",
+      "colors1": {
+        "0": "#ffffff",
+        "1": "#ffffff",
+        "2": "#ffffff"
+      },
+      "sizes1": {},
+      "colors2": {},
+      "sizes2": {}
+    }
   },
   {
     "topic": "스위스와 영국의 저녁 식사 용어 차이",
