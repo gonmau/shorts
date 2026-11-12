@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-12 12:23:15 (KST) · 기록 1636건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-12 12:24:52 (KST) · 기록 1637건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -23,6 +23,7 @@
 | generate_script | 196 | 0 | 1시간 13분 |
 | generate_tts | 82 | 0 | 31분 39초 |
 | image_check | 53 | 4 | 9분 38초 |
+| infographic | 1 | 0 | 3초 |
 | make_thumbnail | 50 | 0 | 1분 30초 |
 | promote_ready | 142 | 0 | 29초 |
 | redo_videos | 25 | 0 | 7초 |
@@ -41,6 +42,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:24 | PC | infographic | infographic.py --index 603 --force | ✅ | 3초 |  |
 | 12:23 | PC | generate_script | generate_script.py --limit 1 --start 603 | ✅ | 8초 |  |
 | 12:23 | PC | export_review | export_review.py --limit 1 --start 603 | ✅ | 0초 |  |
 | 12:22 | PC | promote_ready | promote_ready.py --start 603 | ✅ | 0초 |  |
