@@ -66156,7 +66156,7 @@
     "verify_note": "Military engineering",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:31.018918+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "전쟁터에 갑자기 전기 발전기? 군사 엔지니어가 1분 만에 전력을 공급합니다. 전투 현장에서 부대는 통신 장비와 이동 수단을 계속 가동해야 하는데, 바로 여기서 군사공학이 빛을 발합니다. 엔지니어들은 전기·기계 공학 지식을 활용해 현장에 임시 전력 설비를 설치하고, 전선망을 연결해 전투 부대에 안정적인 전력을 전달합니다. 이렇게 공급된 전력은 라디오, 위성 통신, 전투 차량의 전자 시스템을 움직이며 작전 지속성을 확보합니다.  \n\n그런데 현대 군사공학은 전력 공급을 넘어 CBRN(화학·생물·방사능·핵) 방어까지 담당합니다. 엔지니어들은 오염된 지역에서도 안전하게 작동할 수 있는 전기 설비와 기계 장비를 설계하고, 방호 장치를 구축해 부대가 위험에 노출되지 않도록 합니다.  \n\nNATO 정의에 근거한 설명이지만, 전장을 밝히는 전기와 방호 기술이 결합된 군사 엔지니어의 역할은 전투 효율을 크게 높이며, 전쟁의 판도를 바꾸는 숨은 힘이라는 점을 기억해 주세요. 결국 전쟁터에 갑자기 나타난 발전기는 단순한 장비가 아니라, 전투를 이어가는 핵심 인프라였습니다.",
@@ -66189,7 +66189,8 @@
       "CBRN defense equipment",
       "engineered protective gear",
       "military engineering technology",
-      "battlefield core infrastructure"
+      "battlefield core infrastructure",
+      "Military engineering"
     ],
     "scene_count": 10,
     "infographic": {
@@ -66222,7 +66223,107 @@
         }
       ],
       "none": false
-    }
+    },
+    "image_queries_done": [
+      "Canadian warzone generator",
+      "quick power supply",
+      "military engineering communications",
+      "temporary power installation",
+      "military radio equipment",
+      "CBRN defense equipment",
+      "engineered protective gear",
+      "military engineering technology",
+      "battlefield core infrastructure",
+      "Military engineering"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "David Howard",
+        "license": "CC BY-SA 2.0",
+        "title": "Royal School of Military Engineering, Wainscott - geograph.org.uk - 6300148.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Royal_School_of_Military_Engineering,_Wainscott_-_geograph.org.uk_-_6300148.jpg",
+        "id": "c:148122069"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Terranaut",
+        "page": "https://pixabay.com/photos/power-pole-power-line-high-voltage-6903947/",
+        "id": 6903947
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Army CERDEC",
+        "license": "Public domain",
+        "title": "Communications-Electronics Research, Development and Engineering Center 7193 (27626454284)",
+        "page": "https://commons.wikimedia.org/wiki/File:Communications-Electronics_Research,_Development_and_Engineering_Center_7193_(27626454284).jpg",
+        "id": "c:72214558"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "anncapictures",
+        "page": "https://pixabay.com/photos/electrics-power-outlet-electricity-3536769/",
+        "id": 3536769
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "MatteoBaronti",
+        "page": "https://pixabay.com/photos/soldiers-radio-communication-7417508/",
+        "id": 7417508
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "DZackCulver",
+        "page": "https://pixabay.com/photos/jeep-military-army-war-car-1475769/",
+        "id": 1475769
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ArtisticOperations",
+        "page": "https://pixabay.com/photos/construction-scaffolding-site-6475766/",
+        "id": 6475766
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "dayamay",
+        "page": "https://pixabay.com/photos/warthog-a-10-m-aircraft-aviation-4706629/",
+        "id": 4706629
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "George N. Barnard, American, 1819–1902",
+        "license": "Public domain",
+        "title": "1864 USMRR Whiteside trestle bridge by Barnard.png",
+        "page": "https://commons.wikimedia.org/wiki/File:1864_USMRR_Whiteside_trestle_bridge_by_Barnard.png",
+        "id": "c:93599748"
+      },
+      {
+        "scene": 10,
+        "source": "openverse",
+        "user": "U.S. National Archives",
+        "license": "CC0",
+        "title": "U.S. Military Engine. 'Lincoln's Coach'",
+        "page": "https://www.rawpixel.com/image/8765485/photo-image-vintage-train",
+        "id": "o:b861d63d-e8b9-43f1-8a1a-97819999096c"
+      }
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0603_캐나다.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0603_캐나다.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "스위스와 영국의 저녁 식사 용어 차이",
@@ -66237,7 +66338,51 @@
     "verify_note": "Supper",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "저녁 식사 없이 ‘스퍼’만? 영국에서 이렇게 먹는다!  \n\n영국에서는 ‘스퍼(Supper)’가 보통 저녁에 먹는 주된 식사를 의미하지만, 정식 저녁식사인 ‘디너(dinner)’와는 구분돼요. 디너가 공식적인 메인 코스라면, 스퍼는 좀 더 비공식적이고 가벼운 식사로 여겨집니다. 그래서 저녁에 간단히 빵이나 과자를 먹더라도 “스퍼”라고 부르면 공식적인 저녁 식사로 인정받을 수 있죠.  \n\n그런데 스위스에서는 같은 단어가 조금 다르게 쓰입니다. 스위스에서는 스퍼가 가벼운 야식까지 포함하는 포괄적인 용어로 쓰여요. 즉, 밤늦게 라면 한 그릇을 먹어도 스퍼라고 부를 수 있는 겁니다.  \n\n이 차이는 영국 전통에 뿌리를 두고 있지만, 모든 영국 가정에 동일하게 적용되는 건 아니라는 점을 기억해 주세요. 같은 단어가 두 나라에서 이렇게 다른 의미로 쓰인다는 사실, 생각보다 흥미롭지 않나요?",
+    "title_line1": "스위스와 영국 저녁식사",
+    "title_line2": "스퍼 의미가 다르다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "스퍼만? *저녁* 없이"
+      },
+      {
+        "s": 3,
+        "text": "영국 *스퍼* 저녁식사"
+      },
+      {
+        "s": 5,
+        "text": "간단히 *스퍼* 공식식"
+      },
+      {
+        "s": 7,
+        "text": "스위스 *스퍼* 포괄적"
+      },
+      {
+        "s": 10,
+        "text": "*스퍼* 차이 놀라워"
+      }
+    ],
+    "image_queries": [
+      "supper only dinner",
+      "British dinner table",
+      "British supper dinner",
+      "informal light meal",
+      "simple supper official",
+      "Swiss supper usage",
+      "Swiss supper inclusive",
+      "late night ramen",
+      "UK tradition variation",
+      "supper difference surprising"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true
+    }
   },
   {
     "topic": "법률에서 ‘유사 사건’으로 판결을 구하는 방법",
