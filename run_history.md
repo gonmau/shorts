@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-13 23:48:14 (KST) · 기록 1689건 · 소재 666개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-13 23:50:13 (KST) · 기록 1690건 · 소재 678개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -20,7 +20,7 @@
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 52 | 0 | 9초 |
 | fetch_images | 192 | 4 | 2시간 21분 |
-| generate_culture_facts | 17 | 0 | 37분 8초 |
+| generate_culture_facts | 18 | 0 | 38분 50초 |
 | generate_script | 203 | 0 | 1시간 16분 |
 | generate_tts | 84 | 0 | 31분 54초 |
 | image_check | 53 | 4 | 9분 38초 |
@@ -43,6 +43,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:50 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 1분 41초 |  |
 | 23:47 | PC | audience | audience.py --tag-new --limit 60 | ✅ | 2분 28초 |  |
 | 23:44 | PC | trend_research | trend_research.py --yt 돈 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ❌ failed | 22초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
 | 23:36 | PC | generate_script | generate_script.py --limit 1 --start 578 | ✅ | 6초 |  |
