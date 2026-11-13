@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-13 23:26:49 (KST) · 기록 1676건 · 소재 665개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-13 23:27:13 (KST) · 기록 1681건 · 소재 665개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,23 +9,23 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 145 | 0 | 34초 |
-| approve | 44 | 0 | 10초 |
+| apply_review | 146 | 0 | 34초 |
+| approve | 45 | 0 | 10초 |
 | build_video | 74 | 0 | 13시간 10분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 27 | 0 | 2분 46초 |
 | cleanup_media | 5 | 0 | 7초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 50 | 0 | 9초 |
+| export_review | 51 | 0 | 9초 |
 | fetch_images | 192 | 4 | 2시간 21분 |
 | generate_culture_facts | 17 | 0 | 37분 8초 |
-| generate_script | 201 | 0 | 1시간 16분 |
+| generate_script | 202 | 0 | 1시간 16분 |
 | generate_tts | 84 | 0 | 31분 54초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 54 | 0 | 1분 34초 |
-| promote_ready | 145 | 0 | 30초 |
+| promote_ready | 146 | 0 | 30초 |
 | redo_videos | 27 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -42,6 +42,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:27 | PC | generate_script | generate_script.py --limit 1 --start 578 | ✅ | 12초 |  |
+| 23:27 | PC | export_review | export_review.py --limit 1 --start 578 | ✅ | 0초 |  |
+| 23:26 | PC | approve | approve.py --limit 1 --start 578 | ✅ | 0초 |  |
+| 23:26 | PC | promote_ready | promote_ready.py --start 578 | ✅ | 0초 |  |
+| 23:26 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 23:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 3분 5초 |  |
 | 23:14 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 27초 |  |
 | 23:09 | PC | trend_research | trend_research.py --yt 세계 문화 상식, 나라별 금기, 해외 풍습 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ❌ failed | 27초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
