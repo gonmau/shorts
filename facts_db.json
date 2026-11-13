@@ -612,7 +612,9 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0005_일본.mp4",
-    "upload_cleared_ts": 1794578338.402197
+    "upload_cleared_ts": 1794578338.402197,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "대한민국",
@@ -1134,7 +1136,9 @@
         "page": "https://pixabay.com/photos/thumbs-up-positive-gesture-thumb-4589867/"
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Ethiopia",
@@ -1956,7 +1960,9 @@
           "c:80623588"
         ]
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "surprise"
   },
   {
     "country": "Australia (Queensland)",
@@ -2733,7 +2739,9 @@
           "c:174050086"
         ]
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Vietnam",
@@ -2992,7 +3000,9 @@
         "scene": 9,
         "rejected_ids": []
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Bhutan",
@@ -3364,7 +3374,9 @@
     ],
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Estonia",
@@ -3462,7 +3474,8 @@
       }
     ],
     "image_source": "pixabay",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0023_Estonia.mp4"
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0023_Estonia.mp4",
+    "need": "curiosity"
   },
   {
     "country": "Bolivia",
@@ -3506,7 +3519,9 @@
       "coca leaf export ban",
       "Bolivia border coca leaf",
       "travel regulations Bolivia"
-    ]
+    ],
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Philippines",
@@ -3546,7 +3561,9 @@
     "timing_path_v2": "audio\\0026_Poland_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "country": "Thailand",
@@ -3583,7 +3600,9 @@
     "timing_path_v2": "audio\\0028_Norway_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Mexico",
@@ -3666,7 +3685,9 @@
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\audio\\0032_Denmark_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Greece",
@@ -3752,7 +3773,9 @@
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0036_Costa Rica_v5.mp4",
     "status_v5": "video_done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0036_Costa Rica_v6.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Sri Lanka",
@@ -3768,7 +3791,9 @@
     "timing_path_v2": "audio\\0037_Sri Lanka_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Russia",
@@ -3784,7 +3809,9 @@
     "timing_path_v2": "audio\\0038_Russia_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Brazil",
@@ -3800,7 +3827,9 @@
     "timing_path_v2": "audio\\0039_Brazil_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "practical",
+    "emotion": "empathy"
   },
   {
     "country": "United Kingdom",
@@ -4076,7 +4105,9 @@
     "narration_original": "칠레에서는 수술 없이도 성별을 바꿀 수 있다는 사실, 알고 계셨나요? 2019년에 통과된 칠레의 성 정체성 법은 의료 절차 없이도 주민등록증이나 여권 같은 공식 문서에 성별을 수정할 수 있게 했습니다. 라틴아메리카에서 가장 진보적인 정책 중 하나로 평가받는 이 법은, 개인의 자기 정체성을 존중한다는 큰 의미를 담고 있죠. 실제로 법이 시행된 첫 해에만 2,000명 이상이 성별을 변경했으며, 이는 사회 전반에 큰 변화를 일으켰습니다. 하지만 모든 변화가 순조로운 것은 아닙니다. 일부 보수 단체는 여전히 이 법에 반발하고 있어 논란도 계속되고 있습니다. 여러분도 이 이야기가 흥미롭다면, 좋아요와 구독 잊지 마세요!",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "practical",
+    "emotion": "surprise"
   },
   {
     "country": "Peru",
@@ -4336,7 +4367,9 @@
       "wine bottle locked cabinet",
       "licensed wine tavern exterior Austria",
       "Austrian wine tavern outdoor patio"
-    ]
+    ],
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Tanzania",
@@ -4352,7 +4385,9 @@
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\audio\\0046_Tanzania_v2_timing.json",
     "tts_voice_v2": "ko-KR-SunHiNeural",
     "status_tts_v2": "done",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Slovenia",
@@ -4509,7 +4544,9 @@
       "Slovenian villagers celebration"
     ],
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0047_Slovenia.mp4",
-    "scene_count": 12
+    "scene_count": 12,
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "China",
@@ -4552,7 +4589,9 @@
     "status_tts_v2": "done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0049_Turkey_v6.mp4",
     "status_v6": "video_done",
-    "upload_cleared_ts": 1794578338.402197
+    "upload_cleared_ts": 1794578338.402197,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Nigeria",
@@ -4956,7 +4995,9 @@
     "narration_original": "두바이에서는 코끼리를 집에 들이고 싶다면, 먼저 면허를 받아야 합니다! 아랍에미리트에서는 사자, 호랑이, 코끼리 같은 대형 야생동물을 개인이 키우려면 환경부와 동물복지부의 허가를 꼭 받아야 해요. 허가 없이 이런 동물을 기르면 높은 벌금은 물론, 동물까지 압류당할 수 있습니다. 그리고 작은 원숭이 한 마리라도 허가 없이 키우면 최대 500,000디르함, 즉 약 140,000 달러에 달하는 벌금을 부과받게 됩니다. 이렇게 엄격한 규제는 동물 복지와 공공 안전을 동시에 지키기 위한 것이죠. 여러분도 혹시 특이한 애완동물을 생각하고 있다면, 먼저 해당 국가의 허가 절차를 꼭 확인하세요! 구독과 좋아요, 알림 설정까지 잊지 마세요.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "India",
@@ -6015,7 +6056,9 @@
     "narration_original": "나미비아에서는 사파리 중에 사자를 20미터 이상 떨어져야 해요! 나미비아 국립공원 관리법에 따르면, 사자·코끼리·표범 같은 대형 야생동물과는 최소 20 m 거리를 유지해야 합니다. 이는 동물에게 스트레스를 주지 않고, 예기치 않은 사고를 막기 위한 조치죠. 공원 입구에서 안내 직원이 직접 설명하고, 곳곳에 ‘20 m 거리 유지’ 표지판도 설치돼 있어요. 만약 이 규칙을 어기면 10,000 나미비아 달러, 즉 약 700 달러 이상의 벌금을 물게 됩니다. 이렇게 엄격하게 관리하는 덕분에 관광객도 안전하고, 야생동물도 평온하게 살아갈 수 있습니다. 나미비아 사파리를 계획 중이라면, 꼭 거리 규칙을 기억해주세요!  \n좋아요와 구독, 알림 설정도 잊지 마세요!",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Switzerland",
@@ -6209,7 +6252,8 @@
     "cross_verdict": "partial",
     "cross_notes": [
       "[unsupported] 4번 문장: Specific claim of flash‑mob dances and live music on the streets is not documented in general sources."
-    ]
+    ],
+    "need": "curiosity"
   },
   {
     "country": "Ecuador",
@@ -6306,7 +6350,9 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "upload_cleared_ts": 1794578338.402197
+    "upload_cleared_ts": 1794578338.402197,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Malta",
@@ -6661,7 +6707,9 @@
     "narration_original": "루와다에서는 비닐봉투가 전혀 없어! 2008년부터 루와드 정부는 일회용 플라스틱 백을 완전히 금지하고, 위반하면 높은 벌금을 부과했어요. 그래서 전국 모든 상점은 이제 재사용 가능한 가방만 제공하고, 플라스틱 봉투는 찾아볼 수 없죠. 이 정책 덕분에 루와드의 야생동물 사망률이 무려 30% 이상 감소했습니다. 플라스틱 없는 거리에서 동물들이 더 안전하게 살아갈 수 있게 된 거죠. 여러분도 일회용 플라스틱을 줄이는 작은 실천을 해보세요! 구독과 좋아요 잊지 마시고, 다음에도 흥미로운 이야기로 찾아뵙겠습니다.",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "practical",
+    "emotion": "pride"
   },
   {
     "country": "Qatar",
@@ -6856,7 +6904,9 @@
     "narration_original": "사우디, 2018년부터 여성 운전이 허용됐어요! 오랫동안 금지됐던 운전 면허가 마침내 풀리면서, 2018년 6월 사우디아라비아는 여성에게 운전 면허를 발급하기 시작했습니다. 그때까지 세계에서 마지막으로 여성 운전이 금지된 나라였던 것이죠. 이 변화는 단순한 정책 개정이 아니라 사회 전반에 큰 파장을 일으켰습니다. 특히 첫 달에만 20만 명이 넘는 여성들이 면허를 신청했다는 사실은, 억눌렸던 수요가 얼마나 컸는지를 단번에 보여줍니다. 길 위에 처음으로 등장한 여성 운전자의 모습은 많은 사람들에게 새로운 가능성을 제시했고, 사우디 사회가 점차 열린 방향으로 나아가고 있다는 기대감을 심어주었습니다. 이제는 그때의 첫 발걸음이 어떻게 일상의 풍경을 바꾸었는지, 또 어떤 이야기가 이어질지 궁금하지 않으신가요?",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Estonia",
@@ -9850,7 +9900,8 @@
       "[unsupported] 2번 문장: Exact location and timing (third weekend of January in Selçuk) cannot be confirmed; typical dates differ.",
       "[unsupported] 3번 문장: Historical length plausible, but specific practice of placing ropes or muzzles in camels' mouths lacks verification."
     ],
-    "need": "curiosity"
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "뉴질랜드",
@@ -13348,7 +13399,9 @@
       "[contradicted] 4번 문장: Parents typically do not plunge into cold water immediately after a baby sauna; this is not a recognized practice.",
       "[unsupported] 5번 문장: Geographic prevalence (Lapland and southern regions) and apartment practice are not substantiated."
     ],
-    "cross_verdict": "contradicted"
+    "cross_verdict": "contradicted",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Belgium",
@@ -13651,7 +13704,9 @@
     "status_v6": "video_done",
     "youtube_id": "Z8zQm9d48ns",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Ghana",
@@ -14676,7 +14731,9 @@
     "status_v6": "video_done",
     "youtube_id": "Amr8s7pzStE",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-15"
+    "uploaded_at": "2026-10-15",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "이슬람 국가의 성별 분리, 상황에 따라 달라져",
@@ -15962,7 +16019,8 @@
     "cross_verdict": "partial",
     "cross_notes": [
       "[unsupported] 5번 문장: While taro is a staple in some Pacific and African regions, it is not widely considered a staple in the Caribbean or all of South Asia; the claim is too broad."
-    ]
+    ],
+    "need": "curiosity"
   },
   {
     "topic": "Coldplay(콜드플레이)의 8번째 정규 앨범 'Everyday Life'",
@@ -16066,7 +16124,8 @@
     "status_v6": "video_done",
     "youtube_id": "B4SMYWY8OqU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-18"
+    "uploaded_at": "2026-10-18",
+    "need": "curiosity"
   },
   {
     "topic": "친구에게 행운을 주는 입맞춤 문화",
@@ -16372,7 +16431,9 @@
     "status_v6": "video_done",
     "youtube_id": "X7VyZJ9LQr4",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "uploaded_at": "2026-10-22",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "크리스마스 카프(Christmas carp) 목욕탕 보관 비밀",
@@ -18436,7 +18497,9 @@
     "status_v6": "video_done",
     "youtube_id": "m8Y9rTH5AMg",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-18"
+    "uploaded_at": "2026-10-18",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "스코틀랜드 고원, 영국 사회 시즌의 숨은 무대",
@@ -19706,7 +19769,9 @@
       "[unsupported] 5번 문장: specific pickles mentioned are not documented as standard",
       "[unsupported] 6번 문장: use of lime in Nepali meals is not widely documented; claim about everyday consumption is true but lime addition is uncertain"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "topic": "기계식 기능이 달린 특수 모자",
@@ -20202,7 +20267,9 @@
     "status_v6": "video_done",
     "youtube_id": "eWE93TGiWmQ",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-20"
+    "uploaded_at": "2026-10-20",
+    "need": "awe",
+    "emotion": "wonder"
   },
   {
     "country": "덴마크",
@@ -21365,7 +21432,9 @@
     "status_v6": "video_done",
     "youtube_id": "jxL6v47VxhQ",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-24"
+    "uploaded_at": "2026-10-24",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "이스라엘 동쪽에 지구 최저점이 있다?",
@@ -21490,7 +21559,9 @@
     ],
     "youtube_id": "GanKJEjLIZY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "가나(Ghana) 가 사람들의 Homowo(홈오워) 축제",
@@ -22158,7 +22229,9 @@
     "status_v6": "video_done",
     "youtube_id": "S6F4YyI-QMY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "uploaded_at": "2026-10-22",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "해병대는 1834년부터 해군 소속",
@@ -22275,7 +22348,9 @@
     "status_v6": "video_done",
     "youtube_id": "5hRpBbG39z8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "uploaded_at": "2026-10-22",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "요루바 부족 문신은 신분·미용·생명 보호",
@@ -23470,7 +23545,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0286_아일랜드.mp4",
     "youtube_id": "UvG_afb8fqI",
     "uploaded_at": "2026-10-30T17:53:55.098368+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "문화마다 다른 악수 동작",
@@ -23747,7 +23824,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0288_대만.mp4",
     "youtube_id": "JBhiSDdRDjM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "베이비 샤워 (Baby shower) 파티",
@@ -23978,7 +24057,9 @@
     "status_v6": "video_done",
     "youtube_id": "mKa-PtkN9UI",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-24"
+    "uploaded_at": "2026-10-24",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "베트남 (Vietnam) 개고기 소비 현황",
@@ -24455,7 +24536,9 @@
     "status_v6": "video_done",
     "youtube_id": "69UfZp0y-Fo",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "페루 요리, 세계 각국의 이민자 레시피가 섞인 퓨전",
@@ -24610,7 +24693,9 @@
     "status_v6": "video_done",
     "youtube_id": "Anfoo8vb1Ao",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-24"
+    "uploaded_at": "2026-10-24",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "절(굽히기)의 다양한 문화적 형태",
@@ -24885,7 +24970,9 @@
     "status_v6": "video_done",
     "youtube_id": "TXyVQx46fzM",
     "uploaded_at": "2026-10-30T20:06:49.873213+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "과일박쥐, 괜찮은 별미?",
@@ -25448,7 +25535,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0304_인도.mp4",
     "youtube_id": "eqvYOwja0Nc",
     "uploaded_at": "2026-10-30T20:08:46.181704+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "surprise",
+    "emotion": "surprise"
   },
   {
     "topic": "전쟁 중에도 보호된 영국 대표 음식 피시앤칩스",
@@ -25707,7 +25796,9 @@
     "status_v6": "video_done",
     "youtube_id": "yIpudp8DRho",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "핀란드 헌법(Constitution of Finland)의 역사와 현황",
@@ -25832,7 +25923,9 @@
     "status_v6": "video_done",
     "youtube_id": "sPnl4kbhQZI",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "교황 자동차(Popemobile)의 디자인 변천",
@@ -26097,7 +26190,9 @@
     "youtube_id": "WBXE2DnG8kQ",
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-28",
-    "uploaded_manually": true
+    "uploaded_manually": true,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "에스토니아(Estonia)의 LGBTQ 권리 변화",
@@ -26463,7 +26558,9 @@
     "status_v6": "video_done",
     "youtube_id": "LjBOevXZMxg",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "법적 허구, 거짓을 진실처럼 쓰는 장치",
@@ -26728,7 +26825,9 @@
     "status_v6": "video_done",
     "youtube_id": "pJuiZVd2wzc",
     "uploaded_at": "2026-10-30T20:09:03.317046+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "비영리형 대마동호회, 일반 카페와는 달라",
@@ -28074,7 +28173,9 @@
     "status_v6": "video_done",
     "youtube_id": "gC5R0074-bg",
     "uploaded_at": "2026-10-30T20:09:26.366405+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "배심원제( Jury trial)의 정의와 범위",
@@ -28710,7 +28811,9 @@
     "status_v6": "video_done",
     "youtube_id": "EzVUkioK-TE",
     "uploaded_at": "2026-10-30T20:09:35.506023+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "노루즈는 봄의 시작을 알리는 새해 축제",
@@ -29389,7 +29492,9 @@
     "status_v6": "video_done",
     "youtube_id": "_AmxFO6sRAg",
     "uploaded_at": "2026-10-30T20:10:04.053007+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "선례가 법정 판결을 좌우한다? 하지만…",
@@ -29683,7 +29788,9 @@
     "status_v6": "video_done",
     "youtube_id": "Zvc7nml5qhQ",
     "uploaded_at": "2026-10-30T20:10:15.192975+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "다사라(Vijayadashami)의 10번째 날",
@@ -29928,7 +30035,9 @@
     "status_v6": "video_done",
     "youtube_id": "msBhJRNK7w4",
     "uploaded_at": "2026-10-30T20:10:27.414768+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "퀸세아네라(Quinceañera)의 15번째 생일",
@@ -30041,7 +30150,9 @@
     "status_v6": "video_done",
     "youtube_id": "5UBt3dzkyd0",
     "uploaded_at": "2026-10-30T20:10:37.956306+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "나치 경례(Nazi salute)의 손동작",
@@ -35524,7 +35635,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0348_마다가스카르.mp4",
     "status_v6": "video_done",
     "youtube_id": "uJVHptxcJbs",
-    "uploaded_at": "2026-11-01T00:38:49.308514+09:00"
+    "uploaded_at": "2026-11-01T00:38:49.308514+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "트로츠키, 멕시코에서 여성 해방을 글로 외치다",
@@ -35882,7 +35995,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0351_프랑스.mp4",
     "status_v6": "video_done",
     "youtube_id": "YYaPX-sTQSI",
-    "uploaded_at": "2026-11-01T00:38:51.148203+09:00"
+    "uploaded_at": "2026-11-01T00:38:51.148203+09:00",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "태국 숲속 승려 전통",
@@ -36262,7 +36377,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0355_캄보디아.mp4",
     "status_v6": "video_done",
     "youtube_id": "E2Tfeq0tZvI",
-    "uploaded_at": "2026-11-01T00:38:52.982901+09:00"
+    "uploaded_at": "2026-11-01T00:38:52.982901+09:00",
+    "need": "awe",
+    "emotion": "wonder"
   },
   {
     "topic": "다양한 언어와 방언이 섞인 크로아티아 문학(Hrvatska književnost)",
@@ -36883,7 +37000,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0357_스페인.mp4",
     "status_v6": "video_done",
     "youtube_id": "5JP6vAtm0EQ",
-    "uploaded_at": "2026-11-01T13:18:45.454513+09:00"
+    "uploaded_at": "2026-11-01T13:18:45.454513+09:00",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "미얀마의 지위·지역별 예절 차이",
@@ -37410,7 +37529,9 @@
     "youtube_id": "4ysuccV7ne0",
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-27",
-    "country_before_fix": "네덜란드"
+    "country_before_fix": "네덜란드",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -38625,7 +38746,9 @@
     "status_v6": "video_done",
     "youtube_id": "gyRQd4n1z0c",
     "uploaded_at": "2026-10-31T15:06:16.911681+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "부활절(Easter) 빨간 달걀, 예수(Jesus)님의 피를 상징",
@@ -38949,7 +39072,9 @@
     "status_v6": "video_done",
     "youtube_id": "p3HJ0_2EE5s",
     "uploaded_at": "2026-10-31T15:06:27.510591+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "일본의 중원절 (Zhongyuan Festival), 조상 귀신이 거리로 나오는 날",
@@ -41741,7 +41866,9 @@
     "status_v6": "video_done",
     "youtube_id": "VLzpDX__oeA",
     "uploaded_at": "2026-10-31T15:07:57.662406+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "노로드옴 시하누크(Norodom Sihanouk)의 별명 ‘핑크 프린스(Pink Prince)’",
@@ -42087,7 +42214,9 @@
     "status_v6": "video_done",
     "youtube_id": "4wwKzMEhmt4",
     "uploaded_at": "2026-10-31T15:08:12.642257+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "마야(Maya)라는 이름의 기원",
@@ -42408,7 +42537,9 @@
     "status_v6": "video_done",
     "youtube_id": "bKCrusuf33s",
     "uploaded_at": "2026-10-31T15:08:29.062842+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "필리핀(Philippines)의 세계 최장 크리스마스 시즌",
@@ -42758,7 +42889,9 @@
     "status_v6": "video_done",
     "youtube_id": "1oidASU4tSE",
     "uploaded_at": "2026-10-31T15:08:44.576258+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "인도 금융 규제의 세 가지 법적 구분",
@@ -43097,7 +43230,9 @@
     "status_v6": "video_done",
     "youtube_id": "t7C6o9V9Q2U",
     "uploaded_at": "2026-10-31T15:08:59.359657+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "topic": "예술 음악(클래식)과 일상 음악의 구분",
@@ -43439,7 +43574,9 @@
     "status_v6": "video_done",
     "youtube_id": "mKVRVuSQoDk",
     "uploaded_at": "2026-10-31T15:09:11.747202+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "밤에 눈이 큰 마다가스카르 고유 원숭이",
@@ -43811,7 +43948,9 @@
     "status_v6": "video_done",
     "youtube_id": "zoNHLlJDV8g",
     "uploaded_at": "2026-10-31T15:09:22.405560+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "손에 쥐고 바로 먹는 핑거 뷔페",
@@ -44172,7 +44311,9 @@
     "status_v6": "video_done",
     "youtube_id": "8GxO-HQHxvQ",
     "uploaded_at": "2026-10-31T15:09:33.363325+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "amusement"
   },
   {
     "topic": "끓는 물에 떠다니는 피에로기(Pierogi)",
@@ -44491,7 +44632,9 @@
     "status_v6": "video_done",
     "youtube_id": "PcY6g0nQwi8",
     "uploaded_at": "2026-10-31T15:09:45.394260+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "surprise",
+    "emotion": "surprise"
   },
   {
     "topic": "부탄의 공식 복장·예절 규정",
@@ -44818,7 +44961,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0399_부탄.mp4",
     "status_v6": "video_done",
     "youtube_id": "WymwodyYZlE",
-    "uploaded_at": "2026-11-05T06:16:46.760695+09:00"
+    "uploaded_at": "2026-11-05T06:16:46.760695+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "싱가포르 전자 팝 스타의 독특한 악기",
@@ -45157,7 +45302,9 @@
     "status_v6": "video_done",
     "youtube_id": "P8Ge234rqJY",
     "uploaded_at": "2026-10-31T15:09:55.083398+09:00",
-    "youtube_privacy": "public"
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "보로로(Bororo) 부족의 8개 마을 생활",
@@ -45326,7 +45473,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0401_브라질.mp4",
     "status_v6": "video_done",
     "youtube_id": "UKLseVBl050",
-    "uploaded_at": "2026-11-01T13:18:47.009740+09:00"
+    "uploaded_at": "2026-11-01T13:18:47.009740+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "스웨덴의 이동식 에스프레소 바 문화",
@@ -45493,7 +45642,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0402_스웨덴.mp4",
     "status_v6": "video_done",
     "youtube_id": "ciP1v3FDsY8",
-    "uploaded_at": "2026-11-01T13:18:48.475467+09:00"
+    "uploaded_at": "2026-11-01T13:18:48.475467+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "고대 그리스 남성 동반자 제도",
@@ -46241,7 +46392,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0407_우즈베키스탄.mp4",
     "status_v6": "video_done",
     "youtube_id": "KRGCGrjctgY",
-    "uploaded_at": "2026-11-01T16:48:14.668453+09:00"
+    "uploaded_at": "2026-11-01T16:48:14.668453+09:00",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "춘절(Chinese New Year)의 등불 15일 연속",
@@ -46606,7 +46759,8 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0409_콜롬비아.mp4",
     "status_v6": "video_done",
     "youtube_id": "VlLLiiIRA4o",
-    "uploaded_at": "2026-11-01T16:48:26.550864+09:00"
+    "uploaded_at": "2026-11-01T16:48:26.550864+09:00",
+    "need": "curiosity"
   },
   {
     "topic": "조나스 브라더스 새 앨범, 마시멜로가 프로듀서?",
@@ -46713,7 +46867,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0410_스페인.mp4",
     "status_v6": "video_done",
     "youtube_id": "eh_NeT-Uk84",
-    "uploaded_at": "2026-11-02T07:28:56.246471+09:00"
+    "uploaded_at": "2026-11-02T07:28:56.246471+09:00",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "스웨덴의 한밤중 불꽃 축제, 여름 최장일에 열린다",
@@ -46838,7 +46994,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0411_스웨덴.mp4",
     "status_v6": "video_done",
     "youtube_id": "lAvqyKgV0Zg",
-    "uploaded_at": "2026-11-02T07:28:58.581775+09:00"
+    "uploaded_at": "2026-11-02T07:28:58.581775+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "패스오버에 먹는 무교병(마짜)",
@@ -46979,7 +47137,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0412_이스라엘.mp4",
     "status_v6": "video_done",
     "youtube_id": "-tqc9TDgchU",
-    "uploaded_at": "2026-11-02T07:29:00.945819+09:00"
+    "uploaded_at": "2026-11-02T07:29:00.945819+09:00",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "topic": "아부다비를 지배하는 단 한 가문의 비밀",
@@ -47105,7 +47265,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0413_아랍에미리트.mp4",
     "status_v6": "video_done",
     "youtube_id": "0u_CqfuTuIA",
-    "uploaded_at": "2026-11-02T09:48:37.478736+09:00"
+    "uploaded_at": "2026-11-02T09:48:37.478736+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "등불에 숨은 퀴즈, 아이들은 밤에 뭐하고?",
@@ -47235,7 +47397,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0414_중국.mp4",
     "status_v6": "video_done",
     "youtube_id": "qsXkxSkYf3Q",
-    "uploaded_at": "2026-11-02T09:48:39.147379+09:00"
+    "uploaded_at": "2026-11-02T09:48:39.147379+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "독일 법, 나치·공산 상징은 ‘예술’이면 OK?",
@@ -47397,7 +47561,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0417_캐나다.mp4",
     "status_v6": "video_done",
     "youtube_id": "rwj8NGhcsRs",
-    "uploaded_at": "2026-11-02T09:48:40.877330+09:00"
+    "uploaded_at": "2026-11-02T09:48:40.877330+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "핀란드(Finland), 언어 기준 인구 통계",
@@ -47748,7 +47914,9 @@
     "uploaded_at": "2026-11-02T18:17:49.254544+09:00",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "topic": "남부 비전불교(Southern Esoteric Buddhism)의 비밀 의식",
@@ -49289,7 +49457,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0428_일본.mp4",
     "status_v6": "video_done",
     "youtube_id": "xo5CPR7ZyJ8",
-    "uploaded_at": "2026-10-31T22:35:24.251182+09:00"
+    "uploaded_at": "2026-10-31T22:35:24.251182+09:00",
+    "need": "practical",
+    "emotion": "surprise"
   },
   {
     "topic": "치앙마이 이펭 축제, 하늘 등불과 지상 등불 이야기",
@@ -49653,7 +49823,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0431_영국.mp4",
     "status_v6": "video_done",
     "youtube_id": "ltBZLqBqjqo",
-    "uploaded_at": "2026-11-03T18:55:21.034082+09:00"
+    "uploaded_at": "2026-11-03T18:55:21.034082+09:00",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "topic": "불가리아(Bulgaria)의 공공음주(public intoxication) 법규",
@@ -50304,7 +50476,9 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0439_이스라엘.mp4",
     "status_v6": "video_done",
     "youtube_id": "_BUD2Ai0Yl8",
-    "uploaded_at": "2026-11-02T18:17:53.613468+09:00"
+    "uploaded_at": "2026-11-02T18:17:53.613468+09:00",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "헝가리식 노케들리 조리법",
@@ -51779,7 +51953,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0448_아르헨티나.mp4",
     "status_v6": "video_done",
     "youtube_id": "t9Bgs_nQwU0",
-    "uploaded_at": "2026-11-05T17:27:26.973115+09:00"
+    "uploaded_at": "2026-11-05T17:27:26.973115+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "에티오피아 시장의 잎 다발이 차 재료가 아닐 수 있습니다.",
@@ -59331,7 +59507,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0513_미국.mp4",
     "status_v6": "video_done",
     "youtube_id": "PwnlzPrQGYc",
-    "uploaded_at": "2026-11-06T11:57:39.061375+09:00"
+    "uploaded_at": "2026-11-06T11:57:39.061375+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "덴마크의 사탕받기 전통",
@@ -61273,7 +61451,9 @@
       }
     },
     "youtube_id": "F9yFNm7LNgc",
-    "uploaded_at": "2026-11-08T13:45:37.571068+09:00"
+    "uploaded_at": "2026-11-08T13:45:37.571068+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "서키야 전통 규칙, 아침 인사 의무화",
@@ -61740,7 +61920,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0556_예멘.mp4",
     "status_v6": "video_done",
     "youtube_id": "gCJfH6dGFNQ",
-    "uploaded_at": "2026-11-07T15:54:18.601085+09:00"
+    "uploaded_at": "2026-11-07T15:54:18.601085+09:00",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "topic": "스프라틀리 제도, 한 섬에 최소 6개의 이름",
@@ -62379,7 +62561,9 @@
         "1": "#2ee860",
         "2": "#9ee853"
       }
-    }
+    },
+    "need": "curiosity",
+    "emotion": "pride"
   },
   {
     "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
@@ -62734,7 +62918,8 @@
       "font": "dokdo",
       "colors1": {},
       "colors2": {}
-    }
+    },
+    "need": "curiosity"
   },
   {
     "topic": "세부(Cebu)에서 열리는 신루궁(Sinulog) 축제",
@@ -64607,7 +64792,9 @@
     },
     "youtube_id": "OLUiASTjabc",
     "uploaded_at": "2026-11-10T19:21:55.328872+09:00",
-    "thumb_scene": 6
+    "thumb_scene": 6,
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "topic": "싱가포르(Singapore)의 숨은 60여 섬",
@@ -65505,7 +65692,8 @@
     "status_v6": "video_done",
     "redo_ts": 1794215674.2021718,
     "youtube_id": "mOjDD7dhjTA",
-    "uploaded_at": "2026-11-09T18:31:25.303376+09:00"
+    "uploaded_at": "2026-11-09T18:31:25.303376+09:00",
+    "need": "curiosity"
   },
   {
     "topic": "호주는 세계에서 가장 평평하고 건조한 대륙",
