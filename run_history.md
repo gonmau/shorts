@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 08:00:06 (KST) · 기록 1693건 · 소재 678개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 08:04:47 (KST) · 기록 1694건 · 소재 678개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,7 +11,7 @@
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 147 | 0 | 35초 |
 | approve | 46 | 0 | 10초 |
-| audience | 1 | 0 | 2분 28초 |
+| audience | 2 | 0 | 6분 47초 |
 | build_video | 74 | 0 | 13시간 10분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 27 | 0 | 2분 46초 |
@@ -43,6 +43,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 08:04 | PC | audience | audience.py --tag-new --limit 100 | ✅ | 4분 19초 |  |
 | 07:59 | PC | trend_research | trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000 | ✅ | 19초 |  |
 | 07:58 | PC | 코드업데이트 | gonmau/shorts: 1개 (trend_research.py) | ✅ |  |  |
 | 07:56 | PC | trend_research | trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000 | ❌ failed | 32초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
