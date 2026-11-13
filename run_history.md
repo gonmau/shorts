@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-13 23:09:20 (KST) · 기록 1674건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-13 23:14:56 (KST) · 기록 1675건 · 소재 653개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 50 | 0 | 9초 |
 | fetch_images | 192 | 4 | 2시간 21분 |
-| generate_culture_facts | 15 | 0 | 31분 36초 |
+| generate_culture_facts | 16 | 0 | 34분 3초 |
 | generate_script | 201 | 0 | 1시간 16분 |
 | generate_tts | 84 | 0 | 31분 54초 |
 | image_check | 53 | 4 | 9분 38초 |
@@ -42,6 +42,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:14 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 27초 |  |
 | 23:09 | PC | trend_research | trend_research.py --yt 세계 문화 상식, 나라별 금기, 해외 풍습 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ❌ failed | 27초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
 | 22:58 | PC | check_uploads | check_uploads.py --clear-missing | ✅ | 6초 |  |
 | 22:58 | PC | check_uploads | check_uploads.py | ✅ | 6초 |  |
