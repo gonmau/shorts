@@ -1670,3 +1670,4 @@
 {"id": "1794578245920-af8e2e", "time": "2026-11-13 22:57:25", "channel": "KO", "source": "PC", "kind": "cleanup_media", "title": "cleanup_media.py --clips --rejected", "status": "success", "secs": 0.9, "detail": ""}
 {"id": "1794578268185-311366", "time": "2026-11-13 22:57:48", "channel": "KO", "source": "PC", "kind": "cleanup_media", "title": "cleanup_media.py --delete --clips --rejected", "status": "success", "secs": 1.5, "detail": ""}
 {"id": "1794578303214-0137a6", "time": "2026-11-13 22:58:23", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py", "status": "success", "secs": 6.2, "detail": ""}
+{"id": "1794578338546-e3bc8f", "time": "2026-11-13 22:58:58", "channel": "KO", "source": "PC", "kind": "check_uploads", "title": "check_uploads.py --clear-missing", "status": "success", "secs": 6.3, "detail": ""}
