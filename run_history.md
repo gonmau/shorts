@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-13 23:44:58 (KST) · 기록 1688건 · 소재 666개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-13 23:47:59 (KST) · 기록 1689건 · 소재 666개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -11,6 +11,7 @@
 | ai_prompts | 1 | 0 | 2초 |
 | apply_review | 147 | 0 | 35초 |
 | approve | 46 | 0 | 10초 |
+| audience | 1 | 0 | 2분 28초 |
 | build_video | 74 | 0 | 13시간 10분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 27 | 0 | 2분 46초 |
@@ -42,6 +43,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:47 | PC | audience | audience.py --tag-new --limit 60 | ✅ | 2분 28초 |  |
 | 23:44 | PC | trend_research | trend_research.py --yt 돈 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ❌ failed | 22초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
 | 23:36 | PC | generate_script | generate_script.py --limit 1 --start 578 | ✅ | 6초 |  |
 | 23:36 | PC | export_review | export_review.py --limit 1 --start 578 | ✅ | 0초 |  |
