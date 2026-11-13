@@ -101,7 +101,9 @@
     "status_v6": "video_done",
     "youtube_id": "cD_h8nRRCrc",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-14"
+    "uploaded_at": "2026-09-14",
+    "need": "surprise",
+    "emotion": "surprise"
   },
   {
     "country": "Finland",
@@ -200,7 +202,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0001_Finland.mp4",
     "youtube_id": "geHa-AChWQM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-20"
+    "uploaded_at": "2026-09-20",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Singapore",
@@ -297,7 +301,9 @@
     "image_source": "pixabay",
     "youtube_id": "ykweUN0jFdA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-20"
+    "uploaded_at": "2026-09-20",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Iceland",
@@ -406,7 +412,9 @@
     "fact_applied": true,
     "youtube_id": "orFLzFoQKPU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-14"
+    "uploaded_at": "2026-09-14",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "스웨덴",
@@ -503,7 +511,9 @@
     "image_source": "pixabay",
     "youtube_id": "EFT6JIiIeRs",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-14"
+    "uploaded_at": "2026-09-14",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "일본",
@@ -804,7 +814,9 @@
     ],
     "youtube_id": "PBuCLp-sPkE",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "uploaded_at": "2026-10-27",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Italy",
@@ -1032,7 +1044,9 @@
           "c:53583320"
         ]
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "New Zealand",
@@ -1215,7 +1229,9 @@
     "status_v6": "video_done",
     "youtube_id": "ypAOrRsONcA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-19"
+    "uploaded_at": "2026-09-19",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Portugal",
@@ -1373,7 +1389,9 @@
         "scene": 7,
         "rejected_ids": []
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "surprise"
   },
   {
     "country": "Germany",
@@ -1468,7 +1486,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0012_Germany.mp4",
     "youtube_id": "2i2onjQLjU0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-16"
+    "uploaded_at": "2026-10-16",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Canada (Quebec)",
@@ -1685,7 +1705,9 @@
         "scene": 7,
         "rejected_ids": []
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Argentina",
@@ -2169,7 +2191,9 @@
         "scene": 8,
         "rejected_ids": []
       }
-    ]
+    ],
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Mongolia",
@@ -2376,7 +2400,9 @@
           "c:90606145"
         ]
       }
-    ]
+    ],
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Spain",
@@ -3231,7 +3257,9 @@
     "status_v6": "video_done",
     "youtube_id": "cL2o7eBsgTQ",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-24"
+    "uploaded_at": "2026-09-24",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Uruguay",
@@ -3500,7 +3528,9 @@
     "status_v6": "video_done",
     "youtube_id": "CxSjUpOfUFA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-09"
+    "uploaded_at": "2026-10-09",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Poland",
@@ -3616,7 +3646,9 @@
     "status_v6": "video_done",
     "youtube_id": "9dgKRUHejBg",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-28"
+    "uploaded_at": "2026-09-28",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Denmark",
@@ -3699,7 +3731,9 @@
     "status_v6": "video_done",
     "youtube_id": "XfJVCtOjquc",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-09-24"
+    "uploaded_at": "2026-09-24",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "country": "Costa Rica",
@@ -3926,7 +3960,9 @@
       "cheese rolling challenge",
       "cheese rolling audience applause"
     ],
-    "scene_count": 12
+    "scene_count": 12,
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Luxembourg",
@@ -3945,7 +3981,9 @@
     "status_v6": "video_done",
     "youtube_id": "bNjW8jm5YaA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Chile",
@@ -4141,7 +4179,9 @@
     ],
     "youtube_id": "FSHgmPpisd8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-16"
+    "uploaded_at": "2026-10-16",
+    "need": "curiosity",
+    "emotion": "caution"
   },
   {
     "country": "Latvia",
@@ -4254,7 +4294,9 @@
     "cross_model": "openai/gpt-oss-120b",
     "cross_flags": [],
     "cross_verdict": "ok",
-    "cross_notes": []
+    "cross_notes": [],
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Austria",
@@ -4488,7 +4530,9 @@
     "status_v6": "video_done",
     "youtube_id": "p64QcKhRBAI",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "caution"
   },
   {
     "country": "Turkey",
@@ -4594,7 +4638,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0050_Nigeria.mp4",
     "youtube_id": "E_oQT0tYQu0",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-17"
+    "uploaded_at": "2026-10-17",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "country": "Laos",
@@ -4697,7 +4743,9 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0051_Laos.mp4",
     "youtube_id": "mGk2gXxNpWU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-17"
+    "uploaded_at": "2026-10-17",
+    "need": "curiosity",
+    "emotion": "caution"
   },
   {
     "country": "Belgium",
@@ -4723,7 +4771,9 @@
     "fact_applied": true,
     "youtube_id": "SP26GmVAYt4",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-09"
+    "uploaded_at": "2026-10-09",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Indonesia (Bali)",
@@ -4746,7 +4796,9 @@
     "fact_applied": true,
     "youtube_id": "tbh1ei8YxjA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Scotland",
@@ -4772,7 +4824,9 @@
     "fact_applied": true,
     "youtube_id": "AOjoT8sAYVY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-08"
+    "uploaded_at": "2026-10-08",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Paraguay",
@@ -4798,7 +4852,9 @@
     "fact_applied": true,
     "youtube_id": "k9r0_PGXUAs",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-08"
+    "uploaded_at": "2026-10-08",
+    "need": "curiosity",
+    "emotion": "pride"
   },
   {
     "country": "United Arab Emirates",
@@ -4995,7 +5051,9 @@
     "fact_applied": true,
     "youtube_id": "VEFl_p-HbZU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Romania",
@@ -5094,7 +5152,9 @@
     "fact_applied": true,
     "youtube_id": "dom6EAX2ej8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "United States",
@@ -5191,7 +5251,9 @@
     "fact_applied": true,
     "youtube_id": "fLYCYI4YFW8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Croatia",
@@ -5288,7 +5350,9 @@
     "fact_applied": true,
     "youtube_id": "NZPZp4x9CjM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Malaysia",
@@ -5483,7 +5547,9 @@
     "fact_applied": true,
     "youtube_id": "jPcGcY4bpnY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-10"
+    "uploaded_at": "2026-10-10",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Madagascar",
@@ -6396,7 +6462,9 @@
     "youtube_id": "trQJ9EXDFLE",
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-11",
-    "scene_count": 12
+    "scene_count": 12,
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Papua New Guinea",
@@ -6491,7 +6559,9 @@
     "fact_applied": true,
     "youtube_id": "uK-mCKmYTdM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Rwanda",
@@ -6690,7 +6760,9 @@
     "fact_applied": true,
     "youtube_id": "r6itOULo9hM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Saudi Arabia",
@@ -6879,7 +6951,9 @@
     "fact_applied": true,
     "youtube_id": "dVmB5rleKhk",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Philippines",
@@ -6978,7 +7052,9 @@
     "fact_applied": true,
     "youtube_id": "4PMFnaAsaJ8",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Netherlands",
@@ -7179,7 +7255,9 @@
     ],
     "youtube_id": "atIa5M2MX6I",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Wales",
@@ -7276,7 +7354,9 @@
     "fact_applied": true,
     "youtube_id": "Oo4S5LCv8uE",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "Japan",
@@ -7561,7 +7641,9 @@
     "fact_applied": true,
     "youtube_id": "0NU8Nd5Oofo",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "uploaded_at": "2026-10-11",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Iceland",
@@ -8296,7 +8378,9 @@
     ],
     "youtube_id": "2mhM0nuyHo4",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-12"
+    "uploaded_at": "2026-10-12",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Japan",
@@ -8643,7 +8727,9 @@
     "fact_applied": true,
     "youtube_id": "jvPVLHRqp8w",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-12"
+    "uploaded_at": "2026-10-12",
+    "need": "awe",
+    "emotion": "wonder"
   },
   {
     "country": "Argentina",
@@ -8832,7 +8918,9 @@
     ],
     "youtube_id": "xRrwufPqNRg",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-12"
+    "uploaded_at": "2026-10-12",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Japan",
@@ -9269,7 +9357,9 @@
     "uploaded_at": "2026-10-12",
     "scene_count": 12,
     "title_line1": "5살 아이 말경주",
-    "title_line2": "꿀로 감사 전해요"
+    "title_line2": "꿀로 감사 전해요",
+    "need": "awe",
+    "emotion": "wonder"
   },
   {
     "country": "Germany",
@@ -9375,7 +9465,9 @@
     ],
     "youtube_id": "XlmCXR5NBXY",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Ethiopia",
@@ -9632,7 +9724,9 @@
     ],
     "youtube_id": "QpQ_m_JSNFw",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "터키",
@@ -9755,7 +9849,8 @@
     "cross_notes": [
       "[unsupported] 2번 문장: Exact location and timing (third weekend of January in Selçuk) cannot be confirmed; typical dates differ.",
       "[unsupported] 3번 문장: Historical length plausible, but specific practice of placing ropes or muzzles in camels' mouths lacks verification."
-    ]
+    ],
+    "need": "curiosity"
   },
   {
     "country": "뉴질랜드",
@@ -10140,7 +10235,8 @@
     "status_v6": "video_done",
     "youtube_id": "11fVh5tQnhc",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity"
   },
   {
     "country": "Cambodia",
@@ -10244,7 +10340,9 @@
     "status_v6": "video_done",
     "youtube_id": "d6QA0eql4SM",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Germany",
@@ -10346,7 +10444,9 @@
     "status_v6": "video_done",
     "youtube_id": "U9NZrA6WYpU",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Madagascar",
@@ -10457,7 +10557,9 @@
     "cross_model": "openai/gpt-oss-120b",
     "cross_flags": [],
     "cross_verdict": "ok",
-    "cross_notes": []
+    "cross_notes": [],
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Bhutan",
@@ -10561,7 +10663,9 @@
     "status_v6": "video_done",
     "youtube_id": "TgVxm-5nmyc",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "practical",
+    "emotion": "pride"
   },
   {
     "country": "Mongolia",
@@ -10664,7 +10768,9 @@
     "status_v6": "video_done",
     "youtube_id": "OHxt6BsP0RQ",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "uploaded_at": "2026-10-13",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Thailand",
@@ -10829,7 +10935,9 @@
     "youtube_id": "DMAmgaLsOqM",
     "youtube_privacy": "public",
     "uploaded_at": "2026-10-13",
-    "scene_count": 12
+    "scene_count": 12,
+    "need": "curiosity",
+    "emotion": "amusement"
   },
   {
     "country": "Mexico",
@@ -11160,7 +11268,9 @@
     "status_v6": "video_done",
     "youtube_id": "lczRcqSD0Tk",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "curiosity",
+    "emotion": "wonder"
   },
   {
     "country": "Canada",
@@ -11870,7 +11980,9 @@
     "status_v6": "video_done",
     "youtube_id": "RAYEZ2e06TA",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "practical",
+    "emotion": "curiosity"
   },
   {
     "country": "Ireland",
@@ -12156,7 +12268,9 @@
     "status_v6": "video_done",
     "youtube_id": "pXQzwu1ceus",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "practical",
+    "emotion": "caution"
   },
   {
     "country": "South Korea",
@@ -12359,7 +12473,9 @@
     "status_v6": "video_done",
     "youtube_id": "fflo0N5pIuQ",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "curiosity",
+    "emotion": "curiosity"
   },
   {
     "country": "Bhutan",
@@ -12545,7 +12661,9 @@
     "status_v6": "video_done",
     "youtube_id": "lWGoT1iMXwI",
     "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "uploaded_at": "2026-10-14",
+    "need": "curiosity",
+    "emotion": "surprise"
   },
   {
     "country": "Norway",
