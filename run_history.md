@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-13 22:59:10 (KST) · 기록 1673건 · 소재 641개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-13 23:09:20 (KST) · 기록 1674건 · 소재 641개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -29,7 +29,7 @@
 | redo_videos | 27 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
-| trend_research | 2 | 0 | 53초 |
+| trend_research | 2 | 1 | 1분 20초 |
 | update_description | 4 | 0 | 12초 |
 | upload_to_youtube | 23 | 0 | 13분 26초 |
 | 롱폼 | 72 | 13 | 7시간 52분 |
@@ -42,6 +42,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:09 | PC | trend_research | trend_research.py --yt 세계 문화 상식, 나라별 금기, 해외 풍습 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ❌ failed | 27초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
 | 22:58 | PC | check_uploads | check_uploads.py --clear-missing | ✅ | 6초 |  |
 | 22:58 | PC | check_uploads | check_uploads.py | ✅ | 6초 |  |
 | 22:57 | PC | cleanup_media | cleanup_media.py --delete --clips --rejected | ✅ | 1초 |  |
