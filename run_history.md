@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 07:56:19 (KST) · 기록 1691건 · 소재 678개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 08:00:06 (KST) · 기록 1693건 · 소재 678개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -30,12 +30,12 @@
 | redo_videos | 28 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
-| trend_research | 2 | 3 | 2분 15초 |
+| trend_research | 3 | 3 | 2분 34초 |
 | update_description | 4 | 0 | 12초 |
 | upload_to_youtube | 23 | 0 | 13분 26초 |
 | 롱폼 | 72 | 13 | 7시간 52분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 91 | 0 | 0초 |
+| 코드업데이트 | 92 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -43,6 +43,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 07:59 | PC | trend_research | trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000 | ✅ | 19초 |  |
+| 07:58 | PC | 코드업데이트 | gonmau/shorts: 1개 (trend_research.py) | ✅ |  |  |
 | 07:56 | PC | trend_research | trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000 | ❌ failed | 32초 |     obj, end = self.scan_once(s, idx)                ^^^^^^^^^^^^^^^^^^^^^^ json.decoder.JSONDecodeError: Expecting ','  |
 
 ### 2026-11-13
