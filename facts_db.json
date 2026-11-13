@@ -63765,29 +63765,34 @@
     "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
-    "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼이며, 모바일 앱은 물론 웹사이트에서도 이용 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인이라는 서비스가 제공됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계를 바탕으로 한 내용이며, 다양한 길이의 영상을 자유롭게 만들 수 있다는 점이 핵심입니다. 결국, 화면을 넘기면 사라지는 순간이 짧든 길든, 언제든지 같은 틱톡 안에 담겨 있다는 것이죠.",
-    "title_line1": "틱톡 영상 최대 60분",
-    "title_line2": "중국에는 틱톡이 없다?",
+    "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼입니다. 모바일 앱은 물론 웹사이트에서도 같은 길이 제한을 적용해 언제든지 제작·시청이 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인(Douyin)이라는 이름으로 서비스됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계에 근거한 내용이며, 플랫폼이 제공하는 다양한 영상 길이와 지역별 서비스 차이를 보여줍니다. 결국 짧은 순간부터 긴 스토리까지, 어디서든 같은 방식으로 즐길 수 있다는 점이 흥미롭지 않나요?",
+    "title_line1": "틱톡 영상 길이 다양해",
+    "title_line2": "3초부터 60분까지!",
     "highlights": [
       {
         "s": 1,
-        "text": "*전부* 사라진다"
+        "text": "3초부터 *스와이프*"
       },
       {
         "s": 2,
-        "text": "*다양* 영상 가능"
+        "text": "3초~60분 *다양* 영상"
       },
       {
         "s": 4,
-        "text": "*틱톡* 안에 모두"
+        "text": "중국·홍콩 *두이인*"
+      },
+      {
+        "s": 6,
+        "text": "*짧은*·긴 스토리"
       }
     ],
     "image_queries": [
-      "TikTok disappearing timer",
-      "TikTok video timeline",
-      "Smartphone app icons",
-      "TikTok app interface",
-      "TikTok feed scroll"
+      "hand swiping phone screen",
+      "TikTok video thumbnails collage",
+      "smartphone and laptop video timeline",
+      "Chinese smartphone app interface",
+      "TikTok analytics chart graph",
+      "TikTok short and long story timeline"
     ],
     "scene_count": 8,
     "infographic": {
@@ -63822,7 +63827,8 @@
         "0": "#f4550c",
         "2": "#e5dde7"
       }
-    }
+    },
+    "redo_ts": 1794580573.290373
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
