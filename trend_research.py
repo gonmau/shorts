@@ -235,6 +235,49 @@ def do_reddit(data, subs, period, limit):
     print(f"  레딧 {len(data['reddit'])}개")
 
 
+def _loose_json(t):
+    """AI가 낸 JSON 이 조금 깨져도(쉼표 누락·끝 잘림·후행 쉼표) 읽을 수 있는 만큼 복구한다. 실패하면 None"""
+    import re
+    t = t[t.find("{"):] if "{" in t else ""
+    if not t:
+        return None
+    t = re.sub(r",\s*([}\]])", r"\1", t[:t.rfind("}") + 1] if t.rfind("}") >= 0 else t)
+    for cand in (t,):
+        try:
+            return json.loads(cand)
+        except Exception:
+            pass
+    # 잘렸거나 중간이 깨진 경우: 뒤에서부터 '}' 위치를 줄여가며 열린 괄호를 닫아 본다
+    pos = len(t)
+    for _ in range(400):
+        pos = t.rfind("}", 0, pos)
+        if pos < 0:
+            return None
+        head = t[:pos + 1]
+        stack, ins, esc = [], False, False
+        for ch in head:
+            if ins:
+                esc = (ch == "\\") and not esc
+                if ch == '"' and not esc:
+                    ins = False
+                if ch != "\\":
+                    esc = False
+                continue
+            if ch == '"':
+                ins = True
+            elif ch in "{[":
+                stack.append("}" if ch == "{" else "]")
+            elif ch in "}]" and stack:
+                stack.pop()
+        if ins:
+            continue
+        try:
+            return json.loads(re.sub(r",\s*([}\]])", r"\1", head) + "".join(reversed(stack)))
+        except Exception:
+            continue
+    return None
+
+
 # ---------------- 분석 ----------------
 def do_analyze(data, top):
     from groq import Groq
@@ -284,9 +327,22 @@ def do_analyze(data, top):
 "topic_ideas":[{{"title":"우리 채널에 맞는 소재 제목","why":"왜 지금 먹힐지(근거)","need":"충족하는 니즈 id","emotion":"유발 감정 id","source":"근거가 된 영상/문서/글", "src_idx":[근거가 된 [터진 쇼츠] 번호들, 없으면 빈 배열]}}]}}
 need 는 다음 id 중 하나, emotion 도 id 로: {legend}
 topic_ideas는 8개. 터진 영상의 제목·문장을 그대로 따라 쓰지 말고, 같은 주제라도 우리 채널의 새로운 각도로 제목을 지어라. 근거 없이 지어내지 말고, 위 자료에 있는 신호만 근거로 써라. 정치·종교 논쟁·연예 가십·선정적 소재는 제외."""
-    c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], max_completion_tokens=3500, temperature=0.4)
-    t = c.choices[0].message.content or ""
-    data["analysis"] = json.loads(t[t.find("{"):t.rfind("}") + 1])
+    prompt += "\n반드시 유효한 JSON 하나만 출력해라: 모든 문자열의 큰따옴표는 \\\" 로 이스케이프, 마지막 항목 뒤에 쉼표 금지, 설명 문장 금지."
+    an = None
+    for attempt in range(3):
+        kw = {"max_completion_tokens": 7000, "extra_body": {"reasoning_effort": "low"}} if "gpt-oss" in str(model) else {"max_completion_tokens": 4500}
+        try:
+            c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], temperature=0.3 if attempt else 0.4,
+                                               response_format={"type": "json_object"}, **kw)
+        except Exception:
+            c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], temperature=0.3 if attempt else 0.4, **kw)
+        an = _loose_json(c.choices[0].message.content or "")
+        if an and an.get("topic_ideas"):
+            break
+        print(f"  분석 응답을 읽지 못해 다시 시도합니다 ({attempt + 1}/3)")
+    if not an:
+        raise SystemExit("AI 응답을 JSON으로 읽지 못했습니다. 잠시 뒤 '분석'만 다시 실행하세요 (조사 데이터는 저장되어 있습니다)")
+    data["analysis"] = an
     if AU:
         weigh(data["analysis"].get("topic_ideas", []), db, AU)
     mark_dups(data["analysis"].get("topic_ideas", []), db)
