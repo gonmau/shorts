@@ -63762,7 +63762,55 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼이며, 모바일 앱은 물론 웹사이트에서도 이용 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인이라는 서비스가 제공됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계를 바탕으로 한 내용이며, 다양한 길이의 영상을 자유롭게 만들 수 있다는 점이 핵심입니다. 결국, 화면을 넘기면 사라지는 순간이 짧든 길든, 언제든지 같은 틱톡 안에 담겨 있다는 것이죠.",
+    "title_line1": "케냐 틱톡 영상길이",
+    "title_line2": "3초~60분 스와이프",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*전부* 사라진다"
+      },
+      {
+        "s": 2,
+        "text": "*다양* 영상 가능"
+      },
+      {
+        "s": 4,
+        "text": "*틱톡* 안에 모두"
+      }
+    ],
+    "image_queries": [
+      "TikTok disappearing timer",
+      "TikTok video timeline",
+      "Smartphone app icons",
+      "TikTok app interface",
+      "TikTok feed scroll"
+    ],
+    "scene_count": 8,
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "영상 길이",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "최소",
+          "value": 3.0,
+          "text": "3초"
+        },
+        {
+          "label": "최대",
+          "value": 60.0,
+          "text": "60분"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
@@ -66076,8 +66124,7 @@
       "CBRN defense equipment",
       "engineered protective gear",
       "military engineering technology",
-      "battlefield core infrastructure",
-      "Military engineering"
+      "battlefield core infrastructure"
     ],
     "scene_count": 10,
     "infographic": {
