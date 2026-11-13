@@ -602,9 +602,7 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0005_일본.mp4",
-    "youtube_id": "kb32ZVGgQ2U",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-16"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "대한민국",
@@ -4510,9 +4508,7 @@
     "status_tts_v2": "done",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0049_Turkey_v6.mp4",
     "status_v6": "video_done",
-    "youtube_id": "K9QE1er4jYE",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-09"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Nigeria",
@@ -6244,9 +6240,7 @@
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
     "fact_applied": true,
-    "youtube_id": "StJRyhg4kWk",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-11"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Malta",
@@ -10940,9 +10934,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0116_Mexico.mp4",
     "status_v6": "video_done",
-    "youtube_id": "RgEKdL2SNR4",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Spain",
@@ -11044,9 +11036,6 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0117_Spain.mp4",
     "status_v6": "video_done",
-    "youtube_id": "Hdj-jPynh04",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13",
     "cross_checked": true,
     "cross_sources": 4,
     "cross_model": "openai/gpt-oss-120b",
@@ -11064,7 +11053,8 @@
     "cross_notes": [
       "[unsupported] 6번 문장: Specific judging criteria not documented in evidence",
       "[unsupported] 7번 문장: No source confirming 2026 dates"
-    ]
+    ],
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Japan",
@@ -11278,9 +11268,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0119_Canada.mp4",
     "status_v6": "video_done",
-    "youtube_id": "tUUYsQDYlmw",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Rwanda",
@@ -11383,9 +11371,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0120_Rwanda.mp4",
     "status_v6": "video_done",
-    "youtube_id": "jrfWH2JaPrM",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Japan",
@@ -11490,9 +11476,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0121_Japan.mp4",
     "status_v6": "video_done",
-    "youtube_id": "gEKlp5APi_g",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Japan",
@@ -11598,10 +11582,8 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0122_Japan.mp4",
     "status_v6": "video_done",
-    "youtube_id": "SN4xNfiKeC0",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Switzerland",
@@ -11696,9 +11678,7 @@
     ],
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0123_Switzerland.mp4",
     "status_v6": "video_done",
-    "youtube_id": "nLShbMKnUF8",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-13"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Brazil",
@@ -12083,9 +12063,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0127_Russia.mp4",
     "status_v6": "video_done",
-    "youtube_id": "9Ur404_tQdI",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Norway",
@@ -12472,9 +12450,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0131_Bhutan.mp4",
     "status_v6": "video_done",
-    "youtube_id": "5_8MhDCJbM0",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Italy",
@@ -13347,9 +13323,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0144_Belgium.mp4",
     "status_v6": "video_done",
-    "youtube_id": "c_f7HZrlfNw",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Singapore",
@@ -13462,9 +13436,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0146_Romania.mp4",
     "status_v6": "video_done",
-    "youtube_id": "eD4cjxloHAU",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "United Arab Emirates",
@@ -13656,9 +13628,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0148_Ghana.mp4",
     "status_v6": "video_done",
-    "youtube_id": "aYv0FBNq-lU",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Mali",
@@ -13757,9 +13727,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0149_Mali.mp4",
     "status_v6": "video_done",
-    "youtube_id": "5RzJxHPXW6w",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "country": "Turkey",
@@ -14290,9 +14258,7 @@
     "image_source": "pixabay",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0170_헝가리.mp4",
     "status_v6": "video_done",
-    "youtube_id": "xtDSVi0b0ME",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-14"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "아이슬란드 집 안에서 신발을 벗는 이유는?",
@@ -15197,9 +15163,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0179_노르웨이.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0179_노르웨이.mp4",
     "status_v6": "video_done",
-    "youtube_id": "rSnDKimPIVc",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-21"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "영국(United Kingdom) 수확 축제(Harvest Festival)",
@@ -15308,9 +15272,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0180_영국.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0180_영국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "E_8MGrQkqM4",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-21"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "몽골(Mongolia) 새해 첫날 축제 Tsagaan Sar(Цагаан сар)",
@@ -15415,9 +15377,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0181_몽골.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0181_몽골.mp4",
     "status_v6": "video_done",
-    "youtube_id": "_Yx7-PRDnPc",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-21"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "아르헨티나(Argentina) 시민을 위한 별도 총기 면허 종류",
@@ -16603,9 +16563,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0193_콜롬비아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0193_콜롬비아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "69E-e9E1wyU",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "베이비 샤워(baby shower)와 베트남의 파티 문화",
@@ -18842,9 +18800,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0233_덴마크.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0233_덴마크.mp4",
     "status_v6": "video_done",
-    "youtube_id": "HNCnm80_p0M",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-19"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "친구의 날 – 세계 우정 축하일",
@@ -21128,9 +21084,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0264_이란.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0264_이란.mp4",
     "status_v6": "video_done",
-    "youtube_id": "1YR-OI7Ye70",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-27"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "하셈족 왕가의 왕자, 갑작스런 감금과 퇴위",
@@ -21535,9 +21489,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0194_가나.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0194_가나.mp4",
     "status_v6": "video_done",
-    "youtube_id": "WbYpSiwLlrk",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "피지(Fiji)의 330여 섬 중 2개 섬에 인구 집중",
@@ -21658,9 +21610,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0195_피지.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0195_피지.mp4",
     "status_v6": "video_done",
-    "youtube_id": "nG2oHfjz9nk",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "인도네시아의 유일한 내륙 지방, 하이랜드 파푸아(Highland Papua)",
@@ -22336,9 +22286,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0201_나이지리아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0201_나이지리아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "q-eyBsy79nM",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-22"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "가상·가짜 아동 포르노의 법적 금지",
@@ -27069,9 +27017,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0313_과테말라.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0313_과테말라.mp4",
     "status_v6": "video_done",
-    "youtube_id": "RLF3Fvzv7Ws",
-    "uploaded_at": "2026-10-29T01:04:35.767581+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "스위스(Switzerland) 인구는 알프스(Swiss Alps)가 아닌 고원(Swiss Plateau)에 집중",
@@ -27196,9 +27142,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0314_스위스.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0314_스위스.mp4",
     "status_v6": "video_done",
-    "youtube_id": "38rEAebh02w",
-    "uploaded_at": "2026-10-29T01:04:37.098309+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "스페인(Spain) 충성 토스트(loyal toast)의 유리 파쇄 전통",
@@ -27489,9 +27433,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0316_브라질.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0316_브라질.mp4",
     "status_v6": "video_done",
-    "youtube_id": "ABjAt3sCnU0",
-    "uploaded_at": "2026-10-30T01:19:18.863206+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "아레파, 남미 평평빵의 놀라운 활용법",
@@ -27659,10 +27601,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0317_에콰도르.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0317_에콰도르.mp4",
     "status_v6": "video_done",
-    "youtube_id": "9CzdkdN7LIs",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-29",
-    "uploaded_manually": true
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "슬라브 수확 축제 Dożynki",
@@ -28337,10 +28276,8 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0321_라오스 (Laos).srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0321_라오스 (Laos).mp4",
     "status_v6": "video_done",
-    "youtube_id": "9eWvd2LiSnw",
-    "uploaded_at": "2026-10-30T01:19:22.292681+09:00",
-    "youtube_privacy": "public",
-    "reject_reason": "UI에서 폐기"
+    "reject_reason": "UI에서 폐기",
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "일본 전통 식사의 핵심은 밥과 된장국",
@@ -30858,10 +30795,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0332_포르투갈.mp4",
     "status_v6": "video_done",
-    "youtube_id": "DaIdt_LDHjE",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-30",
-    "uploaded_manually": true
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "뺨에 입맞춤, 인사 방식이 나라별로 다르다",
@@ -32204,10 +32138,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0338_조지아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "T-EwR7HJMVo",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-30",
-    "uploaded_manually": true
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "로지 왕국은 라운다 제국에서 이주해 설립",
@@ -32765,10 +32696,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0340_칠레.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0340_칠레.mp4",
     "status_v6": "video_done",
-    "youtube_id": "rePjemJVx44",
-    "youtube_privacy": "public",
-    "uploaded_at": "2026-10-28",
-    "uploaded_manually": true
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "불꽃 춤 ‘차하르샨베 수리’",
@@ -33748,9 +33676,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0343_멕시코.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0343_멕시코.mp4",
     "status_v6": "video_done",
-    "youtube_id": "VLfiTnmJ7_8",
-    "uploaded_at": "2026-10-31T01:25:03.225743+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "마테 차, 금속 빨대로 마시는 남미 전통 음료",
@@ -39276,9 +39202,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0382_사모아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0382_사모아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "LX6Oag_fbLM",
-    "uploaded_at": "2026-10-31T15:06:41.192647+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "핀란드 사우나는 유네스코 무형문화유산",
@@ -39967,9 +39891,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0384_아랍에미리트.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0384_아랍에미리트.mp4",
     "status_v6": "video_done",
-    "youtube_id": "yX30PFFwzb4",
-    "uploaded_at": "2026-10-31T15:06:52.516361+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "새해 맞이 물축제의 물뿌리기 풍경",
@@ -40302,9 +40224,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0385_캄보디아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0385_캄보디아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "d6t8hmmf7mA",
-    "uploaded_at": "2026-10-31T15:07:10.938311+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "페루의 마법사 호칭과 성별 유연성",
@@ -40664,9 +40584,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0387_캐나다.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0387_캐나다.mp4",
     "status_v6": "video_done",
-    "youtube_id": "J-jyQl4yk5w",
-    "uploaded_at": "2026-10-31T15:07:22.612939+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "학생 연합의 전통 사브르 결투",
@@ -41024,9 +40942,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0388_오스트리아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0388_오스트리아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "wbPrtWS2Ni8",
-    "uploaded_at": "2026-10-31T15:07:35.499572+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "중추절, 달이 가장 밝은 날의 비밀",
@@ -41351,9 +41267,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0389_라오스.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0389_라오스.mp4",
     "status_v6": "video_done",
-    "youtube_id": "0DCUHWfNFwI",
-    "uploaded_at": "2026-10-31T15:07:44.916209+09:00",
-    "youtube_privacy": "public"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "로사르, 지역마다 다른 새해 시작",
@@ -47593,8 +47507,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0418_핀란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0418_핀란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "CUdNRQt67CI",
-    "uploaded_at": "2026-11-03T10:36:04.548629+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "볼가 강 오른쪽 은빛 물가에 사는 메도우 마리 사람들",
@@ -47864,11 +47777,10 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0420_스리랑카.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0420_스리랑카.mp4",
     "status_v6": "video_done",
-    "youtube_id": "iBGjlsWpbz4",
-    "uploaded_at": "2026-11-02T18:17:51.485397+09:00",
     "fact_verifiability": "user",
     "fact_risk": "user-reviewed",
-    "fact_applied": true
+    "fact_applied": true,
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "포르투갈어 어휘의 20%는 라틴어가 아니다",
@@ -48026,8 +47938,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0421_포르투갈.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0421_포르투갈.mp4",
     "status_v6": "video_done",
-    "youtube_id": "tWTEYzFtzis",
-    "uploaded_at": "2026-11-03T10:36:06.799617+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "핀란드 로마인(Kàlo)의 인구와 언어",
@@ -48163,8 +48074,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0422_핀란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0422_핀란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "0XX-3-SCKsk",
-    "uploaded_at": "2026-11-03T10:36:08.907443+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "미국 각 주의 교통법과 통일 차량법(UVC)",
@@ -48317,8 +48227,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0423_미국.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0423_미국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "udATRoiEmvQ",
-    "uploaded_at": "2026-11-03T15:41:14.104687+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "아이슬란드 겨울빛 축제의 변천",
@@ -48469,8 +48378,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0424_아이슬란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0424_아이슬란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "P8PprjR03uo",
-    "uploaded_at": "2026-11-03T15:41:15.330477+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -49425,8 +49333,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0429_태국.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0429_태국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "DegTMuPBX20",
-    "uploaded_at": "2026-11-03T15:41:16.660652+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "올림픽 기간 스위스 팀 전용 숙소, 일반인도 입장 가능",
@@ -50390,8 +50297,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0440_헝가리.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0440_헝가리.mp4",
     "status_v6": "video_done",
-    "youtube_id": "o8QpbgFpm_w",
-    "uploaded_at": "2026-11-03T18:55:22.972019+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "크로아티아 겨울 Koliada 전통",
@@ -50549,8 +50455,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0441_크로아티아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0441_크로아티아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "_w8spmrDGbs",
-    "uploaded_at": "2026-11-03T18:55:24.868687+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "검은눈완두의 다양한 변형",
@@ -50702,8 +50607,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0442_남아프리카공화국.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0442_남아프리카공화국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "27eWFJoJR20",
-    "uploaded_at": "2026-11-04T03:26:57.304445+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "할로윈(Halloween), 죽은 이를 기리는 날",
@@ -50861,8 +50765,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0443_폴란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0443_폴란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "WodO1hdwSds",
-    "uploaded_at": "2026-11-04T03:26:59.420410+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "선(Chan), 명상의 뿌리",
@@ -51086,8 +50989,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0445_캐나다.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0445_캐나다.mp4",
     "status_v6": "video_done",
-    "youtube_id": "qJ0_AaoLtyU",
-    "uploaded_at": "2026-11-04T03:27:01.640966+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "몽골 계절별 식단",
@@ -51267,8 +51169,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0446_몽골.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0446_몽골.mp4",
     "status_v6": "video_done",
-    "youtube_id": "ktEdJgdVKVk",
-    "uploaded_at": "2026-11-04T11:10:10.968395+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "우즈베키스탄의 오래된 꾸란은 정말 세계에서 가장 오래됐을까요?",
@@ -51458,8 +51359,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0447_우즈베키스탄.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0447_우즈베키스탄.mp4",
     "status_v6": "video_done",
-    "youtube_id": "j6dzVKTRleY",
-    "uploaded_at": "2026-11-04T11:10:12.665525+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "피자 이름, 1000년 전 라틴어 문서에 숨겨져 있다",
@@ -51941,8 +51841,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0449_에티오피아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0449_에티오피아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "hCtt8f6mug8",
-    "uploaded_at": "2026-11-04T11:10:14.291600+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "이구 축제 기간에 왕이 외국인과 마주치면 안 된다",
@@ -52172,8 +52071,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0451_네덜란드.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0451_네덜란드.mp4",
     "status_v6": "video_done",
-    "youtube_id": "A7vpp7j97k0",
-    "uploaded_at": "2026-11-04T18:34:09.834013+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "프랑스 왕자 손자도 ‘프랑스의 아들’ 칭호",
@@ -52367,8 +52265,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0452_프랑스.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0452_프랑스.mp4",
     "status_v6": "video_done",
-    "youtube_id": "S4JGWBAjVVI",
-    "uploaded_at": "2026-11-04T18:34:11.773072+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "불교 무상(Anicca) 교리",
@@ -52538,8 +52435,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0453_몰디브.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0453_몰디브.mp4",
     "status_v6": "video_done",
-    "youtube_id": "nWLpkPXGcp0",
-    "uploaded_at": "2026-11-04T18:34:14.225348+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "오스트리아 전통 ‘브뤼더샤프트’ 술자리 의식",
@@ -52677,8 +52573,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0454_오스트리아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0454_오스트리아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "ERXcYuiTfoE",
-    "uploaded_at": "2026-11-05T03:25:11.654399+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "케랄라 주 수확 축제 오남(Onam)",
@@ -52928,8 +52823,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0456_탄자니아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0456_탄자니아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "NVCkeW59iD0",
-    "uploaded_at": "2026-11-05T03:25:15.095455+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "중국(China)의 얇은 죽(Congee) 경험",
@@ -53110,8 +53004,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0457_중국.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0457_중국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "A5Ad7PoiByk",
-    "uploaded_at": "2026-11-05T03:25:17.487271+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "수천 년 전부터 이어진 일본 예절",
@@ -53271,8 +53164,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0458_일본.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0458_일본.mp4",
     "status_v6": "video_done",
-    "youtube_id": "GNJ49pG5pbY",
-    "uploaded_at": "2026-11-05T10:49:05.158089+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "덴마크(Denmark) 전통 요리 Stegt flæsk",
@@ -53444,8 +53336,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0459_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0459_덴마크.mp4",
     "status_v6": "video_done",
-    "youtube_id": "s5pArhCSGhE",
-    "uploaded_at": "2026-11-05T10:49:10.818226+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "인도네시아(Indonesia) 사회적 지위에 따른 예절",
@@ -53637,8 +53528,7 @@
     "srt_path": "/home/runner/work/shorts/shorts/videos/0460_인도네시아.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0460_인도네시아.mp4",
     "status_v6": "video_done",
-    "youtube_id": "WXlBt1Qzizw",
-    "uploaded_at": "2026-11-05T10:49:15.263585+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "불교 음식, 축제때만 채식",
@@ -57425,8 +57315,7 @@
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0491_미국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0491_미국.mp4",
     "status_v6": "video_done",
-    "youtube_id": "hn6sdlpE3qs",
-    "uploaded_at": "2026-11-05T21:57:55.946647+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "스위스(스위스) 요리의 지역별 독특함",
@@ -58048,8 +57937,7 @@
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0496_태국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
-    "youtube_id": "d9hpoICxcEU",
-    "uploaded_at": "2026-11-06T00:44:15.993327+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "헝가리어, 유럽에서 드물게 인도유럽계가 아니다",
@@ -65788,8 +65676,7 @@
       }
     },
     "thumb_scene": 9,
-    "youtube_id": "UiRIJp_Q6Ws",
-    "uploaded_at": "2026-11-10T15:47:10.247305+09:00"
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "아케메네스 제국은 당시 최대 규모의 제국",
@@ -66366,12 +66253,11 @@
       "sizes2": {}
     },
     "thumb_scene": 5,
-    "youtube_id": "s6p3c4RO04M",
-    "uploaded_at": "2026-11-12T13:04:20.624854+09:00",
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0603_캐나다_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "upload_cleared_ts": 1794578338.402197
   },
   {
     "topic": "스위스와 영국의 저녁 식사 용어 차이",
