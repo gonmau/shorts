@@ -1234,14 +1234,22 @@ with T1b:
 
     if add_mode.startswith("✍"):
         st.caption("직접 쓴 대본으로 소재를 만듭니다 (대본 완료 상태로 바로 들어감). 제목·핵심 문구·이미지 검색어는 AI가 채웁니다.")
-        m_narr = st.text_area("대본 (60자 이상, 전체 내용)", height=220, key="add_narr")
+        m_narr = st.text_area("대본 (전체 내용, 또는 짧은 메모)", height=220, key="add_narr",
+                              help="60자 이상이면 그대로 대본으로 씁니다. 60자 미만이면 메모로 보고 AI가 내용을 보충해 소재(훅/본문/반전)와 대본을 만듭니다 (입력한 내용에 없는 사실은 넣지 않게 요청하지만 사실 확인은 필요)")
+        _short = len((m_narr or "").strip()) < 60
         m1, m2 = st.columns(2)
         m_country = m1.text_input("라벨 (선택)" if not EN else "짧은 제목 (영어, 2~5단어)", key="add_country",
                                   help="나라 이름이거나 '세계', '세계의 팁 문화' 같은 짧은 라벨. 비우면 대본에서 나라 이름을 찾고, 없으면 주제 앞부분을 씁니다" if not EN else "예: Korean Delivery Culture")
         m_topic = m2.text_input("주제 한 줄 (선택)", key="add_topic")
-        if st.button("소재 만들기", key="add_manual_go", disabled=len(m_narr.strip()) < 60):
-            ids_ = run_cap("add_topic.py", "manual", "--narration", m_narr, *(["--country", m_country] if m_country.strip() else []),
-                           *(["--topic", m_topic] if m_topic.strip() else []))
+        if _short and (m_narr or "").strip():
+            st.info("60자 미만이라 메모로 처리합니다: AI가 이 내용을 바탕으로 소재와 대본을 보충합니다 (Groq 사용, 승인 대기 없이 바로 대본까지).")
+        if st.button("소재 만들기" if not _short else "메모로 소재 만들기 (AI 보충)", key="add_manual_go", disabled=len((m_narr or "").strip()) < 5):
+            if _short:
+                _mm = m_narr.strip()
+                ids_ = run_cap("add_topic.py", "keyword", "--keyword", _mm, "--approve") if len(_mm) < 30 else run_cap("add_topic.py", "text", "--text", _mm, "--approve")
+            else:
+                ids_ = run_cap("add_topic.py", "manual", "--narration", m_narr, *(["--country", m_country] if m_country.strip() else []),
+                               *(["--topic", m_topic] if m_topic.strip() else []))
             after_create(ids_, go_script)
     elif add_mode.startswith("🔑"):
         st.caption("키워드로 소재(훅/본문/반전)를 만들고 대본까지 이어갑니다. 위키백과 근거를 쓰면 사실 확인이 쉬워집니다. 모델 지식만 쓴 경우 사실 확인이 꼭 필요합니다.")
