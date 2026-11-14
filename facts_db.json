@@ -58663,7 +58663,7 @@
     "verify_note": "Face (sociological concept)",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:57.745097+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58690,7 +58690,7 @@
     "verify_note": "Literature of Laos",
     "confidence": "source",
     "created_at": "2026-11-03T05:44:32.466183+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58715,7 +58715,7 @@
     "verify_note": "Mexican cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:44:32.466183+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58742,7 +58742,7 @@
     "verify_note": "Russian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59172,7 +59172,7 @@
     "verify_note": "Passover",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59199,7 +59199,7 @@
     "verify_note": "Ramadan in the United Arab Emirates",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59224,7 +59224,7 @@
     "verify_note": "Kneeling",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59706,7 +59706,7 @@
     "verify_note": "Fastelavn",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:06.416057+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59733,7 +59733,7 @@
     "verify_note": "Egyptian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59758,7 +59758,7 @@
     "verify_note": "All Saints' Day",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59849,7 +59849,7 @@
     "verify_note": "Patani Malays",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59876,7 +59876,7 @@
     "verify_note": "Lao cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:44.305181+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59919,7 +59919,7 @@
     "verify_note": "Muslim Brotherhood in Egypt",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60009,7 +60009,7 @@
     "verify_note": "Mohammad Reza Pahlavi",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60036,7 +60036,7 @@
     "verify_note": "Golu (festival)",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60063,7 +60063,7 @@
     "verify_note": "Death anniversary",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60091,7 +60091,7 @@
     "verify_note": "Easter traditions",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60886,7 +60886,7 @@
     "verify_note": "Mourning",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60914,7 +60914,7 @@
     "verify_note": "Newar people",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60942,7 +60942,7 @@
     "verify_note": "Zeved habat",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60969,7 +60969,7 @@
     "verify_note": "Holi",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60996,7 +60996,7 @@
     "verify_note": "Carnival in the Netherlands",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61021,7 +61021,7 @@
     "verify_note": "Koliva",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:05.510734+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61048,7 +61048,7 @@
     "verify_note": "Spanish and Portuguese Jews",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61075,7 +61075,7 @@
     "verify_note": "Bombing of Master Handan Festival",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61102,7 +61102,7 @@
     "verify_note": "Rosh Hashanah",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61129,7 +61129,7 @@
     "verify_note": "Traditional dances and festivals of the Tumbuka people",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61156,7 +61156,7 @@
     "verify_note": "Thích Nhất Hạnh",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61183,7 +61183,7 @@
     "verify_note": "Italian cuisine",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61210,7 +61210,7 @@
     "verify_note": "Inabel",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61237,7 +61237,7 @@
     "verify_note": "Libation",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61264,7 +61264,7 @@
     "verify_note": "Congregational Christian Church of Samoa",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61289,7 +61289,7 @@
     "verify_note": "Pelmeni",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61316,7 +61316,7 @@
     "verify_note": "President of Finland",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61650,7 +61650,7 @@
     "verify_note": "Adyghe Khabze",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "오스트리아의 메이폴(Maypole) 전통",
@@ -61665,7 +61665,7 @@
     "verify_note": "Maypole",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:20.577904+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "직접 민주주의, 시민이 직접 법을 만든다",
@@ -61680,7 +61680,7 @@
     "verify_note": "Democracy",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:13.002806+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "카자흐스탄(Kazakhstan)의 내륙 국가이면서도 바다를 가진 사실",
@@ -62216,7 +62216,7 @@
     "verify_note": "Lists of Intangible Cultural Heritage elements",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:38.449401+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "겨울 최장 밤, 야르다 밤(Yalda Night)",
@@ -62231,7 +62231,7 @@
     "verify_note": "Yalda Night",
     "confidence": "source",
     "created_at": "2026-11-07T00:19:00.255171+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "박사(Doctor) 칭호의 기원과 현대 사용",
@@ -63116,7 +63116,7 @@
     "verify_note": "Sinulog",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "베트남(Vietnam) 반부패 캠페인으로 드러난 반천발(Vạn Thịnh Phát) 사기 사건",
@@ -63131,7 +63131,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -64562,7 +64562,7 @@
     "verify_note": "Premanand Maharaj",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스페인(Habsburg Spain)의 제국, 한 왕이 두 대륙을 동시에 통치",
@@ -64991,7 +64991,7 @@
     "verify_note": "Singapore",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:51.640307+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "남중국해 해상 무역 규모",
@@ -65467,7 +65467,7 @@
     "verify_note": "Military history of Nova Scotia",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:15.945206+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "샤를 드골, 3주간 32,000km 라틴아메리카 순방",
@@ -65482,7 +65482,7 @@
     "verify_note": "State visits by Charles de Gaulle to South America",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "남파푸아, 펜실베니아와 비슷한 면적에 50만 명 인구",
@@ -65497,7 +65497,7 @@
     "verify_note": "South Papua",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "부에노스아이레스, 세계 최고 피자 소비 도시",
@@ -65512,7 +65512,7 @@
     "verify_note": "Argentine pizza",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "마다가스카르(Madagascar) 메리나(Merina) 사람들의 새해 축제 ‘판드로아나(Fandroana)’",
@@ -65527,7 +65527,7 @@
     "verify_note": "Fandroana",
     "confidence": "source",
     "created_at": "2026-11-08T07:45:19.961989+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "남중국해 해상 무역 규모",
@@ -65585,7 +65585,7 @@
     "verify_note": "Territorial waters",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "페루의 미지급 농지 채권",
@@ -65600,7 +65600,7 @@
     "verify_note": "Agrarian bonds in Peru",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -65892,7 +65892,7 @@
     "verify_note": "Australia",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "영국은 단일 문서가 없는 ‘비코딩된 헌법’ 체제",
@@ -66247,7 +66247,7 @@
     "verify_note": "Achaemenid Empire",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "쿠르드인들의 새해 불축제 뉴로즈",
@@ -66262,7 +66262,7 @@
     "verify_note": "Newroz as celebrated by Kurds",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:30.149538+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "수백 년 전 조상과 연결된 전통, 오늘도 살아있다",
@@ -66277,7 +66277,7 @@
     "verify_note": "Traditions of Italy",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:22.383558+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "아르메니아 문자로 쓰인 오스만 터키어",
@@ -66292,7 +66292,7 @@
     "verify_note": "Armeno-Turkish alphabet",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:22.383558+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "필리핀 전역에 확대된 샤리아(Shari'ah) 법원",
@@ -66307,7 +66307,7 @@
     "verify_note": "Sharia in the Philippines",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "622년 메디나에서 시작된 초기 이슬람 정복",
@@ -66322,7 +66322,7 @@
     "verify_note": "Early Muslim conquests",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -66886,7 +66886,7 @@
     "verify_note": "Analogy (law)",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스페인 제국 붕괴와 페루의 독립 전쟁",
@@ -66901,7 +66901,7 @@
     "verify_note": "Spanish American wars of independence",
     "confidence": "source",
     "created_at": "2026-11-09T08:02:15.972062+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "시암인의 앙코르 몰락",
@@ -66916,7 +66916,7 @@
     "verify_note": "Military history of Thailand",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "플럼 푸딩의 이름 속 진실",
@@ -66931,7 +66931,7 @@
     "verify_note": "Christmas pudding",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "메대가 산악 지형을 이용해 신아시리아를 무너뜨린 비결",
@@ -66946,7 +66946,7 @@
     "verify_note": "Median kingdom",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:31.104495+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "루마니아 형법, 446조가 한 번에 개정된 순간",
@@ -66961,7 +66961,7 @@
     "verify_note": "Penal Code of Romania",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:31.104495+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스웨덴(Sweden) 북극 지방의 겨울 동지",
@@ -66976,7 +66976,7 @@
     "verify_note": "Winter solstice",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:36.565585+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "마사추세트어(Massachusett) 부활 프로젝트",
@@ -66991,7 +66991,7 @@
     "verify_note": "Massachusett language",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:36.565585+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "윤석열 대통령의 자기 쿠데타 선언",
@@ -67006,7 +67006,7 @@
     "verify_note": "2024 South Korean martial law crisis",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "드라구트, 해적이자 지방 총독",
@@ -67021,7 +67021,7 @@
     "verify_note": "Dragut",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "매튜 섬·헌터 섬, 물도 없는데 왜?",
@@ -67036,7 +67036,7 @@
     "verify_note": "Matthew Island and Hunter Island",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "우즈베키스탄 위구르인, 손으로 밥을 먹는다",
@@ -67051,7 +67051,7 @@
     "verify_note": "Uyghur cuisine",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:04.004949+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "스페인(Spain) 영적 수련, 길을 걷는 순례자",
@@ -67066,7 +67066,7 @@
     "verify_note": "Spiritual practice",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:42.720777+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "벨기에(Belgium), 독일(Germany)의 통과 요구를 거절한 순간",
@@ -67081,7 +67081,7 @@
     "verify_note": "German invasion of Belgium (1914)",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:42.720777+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "에스토니아 반란군이 폴란드‑스웨덴 전쟁에 끼친 역할",
@@ -67096,7 +67096,7 @@
     "verify_note": "Polish–Swedish War (1563–1568)",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:10.364504+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "고대 이집트 신앙, 파라오와 1,500신",
@@ -67111,7 +67111,7 @@
     "verify_note": "Ancient Egyptian religion",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:29.076568+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -68348,7 +68348,7 @@
     "verify_note": "Fugu",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:41.887091+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "포르투갈 왕 존 6세, 브라질 명목 황제",
@@ -68364,7 +68364,7 @@
     "verify_note": "John VI of Portugal",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "인간주의 불교, 살아있는 사람에게 초점",
@@ -68380,7 +68380,7 @@
     "verify_note": "Humanistic Buddhism",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "크로아티아 해군, 아드리아해 방어",
@@ -68396,7 +68396,7 @@
     "verify_note": "Military history of Croatia",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "산 호세 광산 붕괴와 69일 뒤 구조",
@@ -68412,7 +68412,7 @@
     "verify_note": "2010 Copiapó mining accident",
     "confidence": "source",
     "created_at": "2026-11-11T07:07:22.491403+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "키스가 인사·의례가 되는 순간",
@@ -68428,7 +68428,7 @@
     "verify_note": "Kiss",
     "confidence": "source",
     "created_at": "2026-11-11T07:07:22.491403+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "1184년 시작된 크리스마스 통나무 전통",
@@ -68444,7 +68444,7 @@
     "verify_note": "Yule log",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:05.396589+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "법인 주소가 사업 생존에 필수인 이유",
@@ -68460,7 +68460,7 @@
     "verify_note": "Registered office",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:10.562336+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "빅 브라더(Big Brother) 2025 시즌, 거의 가구 없는 집",
@@ -68476,7 +68476,7 @@
     "verify_note": "Big Brother 2025 (Dutch and Belgian TV series)",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "미셸 드 세르토(Michel de Certeau)의 일상 철학",
@@ -68492,7 +68492,7 @@
     "verify_note": "Michel de Certeau",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "북극점은 어느 나라에도 속하지 않는다",
@@ -68593,7 +68593,7 @@
     "verify_note": "Naming law",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "country": "말레이시아",
@@ -68604,7 +68604,7 @@
     "caveat": "이 절차는 말레이시아 연방의 9개 주군주에게만 적용됩니다.",
     "confidence": "high",
     "verify_note": "말레이시아 양디페르투안 아공 선출 절차, 왕실 회의 비밀투표",
-    "status": "unverified",
+    "status": "verified",
     "created_at": "2026-11-11T07:22:21.449526+00:00",
     "theme": "키워드",
     "seed_keyword": "말레이시아 9왕가, 왕은 어떻게 뽑히나요? – 왕위 선택 규칙 대공개",
@@ -68620,7 +68620,7 @@
     "caveat": "이 규칙들은 에도 시대(1603‑1868) 사무라이 기록에 기반하며, 현재 모든 일본인에게 동일하게 적용되는 것은 아닙니다.",
     "confidence": "high",
     "verify_note": "에도 시대 사무라이 식탁 매너 기록, 일본 전통 예절 서적",
-    "status": "unverified",
+    "status": "verified",
     "created_at": "2026-11-11T07:22:34.600600+00:00",
     "theme": "키워드",
     "seed_keyword": "일본 사무라이 식탁 매너, 외국인이 절대 놓치면 안 되는 5가지",
@@ -68641,7 +68641,7 @@
     "verify_note": "Greek cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "쉥겐 지역의 무검문소 국경",
@@ -68657,7 +68657,7 @@
     "verify_note": "Border",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "아일랜드의 양당제(Two-party system) 구조",
@@ -68673,7 +68673,7 @@
     "verify_note": "Two-party system",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:20.042895+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "연방( federation )의 권력 분배는 헌법으로 고정",
@@ -68689,7 +68689,7 @@
     "verify_note": "Federation",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "기독교 소수 국가에서도 크리스마스 트리 설치",
@@ -68705,7 +68705,7 @@
     "verify_note": "Observance of Christmas by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "중화인민공화국(People's Republic of China)의 영해 주장, 1949년 이전부터",
@@ -68721,7 +68721,7 @@
     "verify_note": "Territorial disputes of China",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:01.903236+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "일본(Japan)의 영토, 75%가 산악지대",
@@ -68737,7 +68737,7 @@
     "verify_note": "Japan",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:01.903236+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "멕시코시티 16세기 건물 안에 있는 복합 매장",
@@ -68753,7 +68753,7 @@
     "verify_note": "Sanborns",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
@@ -68769,7 +68769,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "왕실 나이저 회사가 다스리던 식민지 나이지리아",
@@ -68785,7 +68785,7 @@
     "verify_note": "Colonial Nigeria",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "이탈리아 공화국 헌법, 453표만으로 통과",
@@ -68801,7 +68801,7 @@
     "verify_note": "Constitution of Italy",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "캐롤라이나식 홉핀 존, 베이컨 기름에 밥을 투명해질 때까지 끓인다",
@@ -68817,7 +68817,7 @@
     "verify_note": "Hoppin' John",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "보르네오 섬을 가로지르는 1,881km 국경선",
@@ -68833,7 +68833,7 @@
     "verify_note": "Indonesia–Malaysia border",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "19세기 세계 3위 규모의 제국 러시아 해군",
@@ -68849,7 +68849,7 @@
     "verify_note": "Imperial Russian Navy",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "인도와 스리랑카 사이의 영토 분쟁",
@@ -68865,7 +68865,7 @@
     "verify_note": "Territorial disputes of India",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "우즈베키스탄(Uzbekistan)의 히잡 착용 규정",
@@ -68881,7 +68881,7 @@
     "verify_note": "Islamic veiling practices by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:18:25.878379+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "언어마다 ‘너’와 ‘당신’ 구분 존재",
@@ -68897,7 +68897,7 @@
     "verify_note": "T–V distinction in the world's languages",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "한스 섬(Hans Ø)에서 양국 깃발 격돌",
@@ -68913,7 +68913,7 @@
     "verify_note": "Hans Island",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
@@ -68929,7 +68929,7 @@
     "verify_note": "Kuril Islands dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "사바이 섬, 유일한 마을을 통한 입출입",
@@ -68945,7 +68945,7 @@
     "verify_note": "Savaiʻi",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:06.023629+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "법원 보조원의 판결 영향력",
@@ -68961,7 +68961,7 @@
     "verify_note": "Law clerk",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:06.023629+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "리투아니아·라트비아·에스토니아 3국이 함께하는 대규모 노래·춤 축제",
@@ -68977,7 +68977,7 @@
     "verify_note": "Lithuanian Song and Dance Festival",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "역대 가장 빠른 미국 건조 초대형 여객선 SS United States",
@@ -68993,7 +68993,7 @@
     "verify_note": "SS United States",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
@@ -69009,7 +69009,7 @@
     "verify_note": "Sed Festival",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:53.227437+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -69088,7 +69088,7 @@
     "verify_note": "Boundary Treaty of 1881 between Chile and Argentina",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "전 세계 의회의 절반이 두 회의실을 사용",
@@ -69104,7 +69104,7 @@
     "verify_note": "Bicameralism",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "1618년 ‘일곱 가지 불만’이 청나라의 서막을 열다",
@@ -69120,7 +69120,7 @@
     "verify_note": "Transition from Ming to Qing",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "마다가스카르 불법 벌목의 충격적인 현실",
@@ -69136,7 +69136,7 @@
     "verify_note": "Illegal logging",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "캐나다 퀘벡, 이민자 선택권을 독점하다",
@@ -69152,7 +69152,7 @@
     "verify_note": "Canadian immigration and refugee law",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "폴란드 요리, 고기와 버터가 폭발한다",
@@ -69168,7 +69168,7 @@
     "verify_note": "Polish cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "오픈소스 게임 엔진 Godot( Godot )",
@@ -69184,7 +69184,7 @@
     "verify_note": "Godot (game engine)",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "다이아몬드 차량 Vajrayāna( Vajrayāna )",
@@ -69200,7 +69200,7 @@
     "verify_note": "Vajrayana",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "알래스카 국경 분쟁",
@@ -69216,7 +69216,7 @@
     "verify_note": "Alaska boundary dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "에세키보 지역 영토 분쟁",
@@ -69232,7 +69232,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -69248,7 +69248,7 @@
     "verify_note": "Regional variations of barbecue",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "나이지리아 길거리 바베큐와 열대과일을 한 입에",
@@ -69264,6 +69264,60 @@
     "verify_note": "Nigerian cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "unverified"
+    "status": "verified"
+  },
+  {
+    "country": "여행, 크루즈, 세계문화, 관광심리",
+    "topic": "자유를 찾아 떠나는 여행에서 사람들은 왜 스스로 이동의 자유를 제한하는 크루즈를 선택할까?",
+    "theme": "직접 입력",
+    "hook": "여행은 자유로워지려고 떠나는 것인데, 왜 사람들은 돈까지 내면서 바다 한가운데 갇히는 여행을 즐길까요?",
+    "body": "바로 크루즈 여행입니다. 수천 명이 탄 거대한 배 안에서 며칠씩 생활하고, 정해진 항로와 일정에 따라 움직입니다. 마음에 드는 곳이 있어도 마음대로 머물 수 없죠. 그런데 사람들은 왜 이런 제약을 오히려 즐기는 걸까요? 일반적인 여행에서는 숙소와 식당을 찾고, 다음 목적지를 정하느라 끊임없이 선택해야 합니다. 하지만 크루즈에서는 배에 오르는 순간 이런 고민이 크게 줄어듭니다. 바다를 바라보며 쉬고, 수영하고, 공연을 즐기는 것 자체가 여행이 되기 때문이죠. 타이타닉 같은 과거의 대형 여객선도 이동뿐 아니라 선내의 호화로운 생활을 중요한 경험으로 내세웠습니다. 하지만 오늘날 크루즈는 한 걸음 더 나아갔습니다. 목적지에 도착하기 위해 배를 타는 것이 아니라, 배 자체를 즐기기 위해 여행을 떠나는 것이죠. 결국 사람들은 더 자유롭게 움직이기 위해서가 아니라, 아무것도 결정하지 않아도 되는 자유를 얻기 위해 스스로 공간을 제한하는 것입니다.",
+    "twist": "어쩌면 여행의 자유란 어디든 갈 수 있는 것이 아니라, 아무것도 하지 않아도 되는 것인지도 모릅니다.",
+    "caveat": "",
+    "narration": "여행은 자유로워지려고 떠나는 것인데, 왜 사람들은 돈까지 내면서 바다 한가운데 갇히는 여행을 즐길까요? 바로 크루즈 여행입니다. 수천 명이 탄 거대한 배 안에서 며칠씩 생활하고, 정해진 항로와 일정에 따라 움직입니다. 마음에 드는 곳이 있어도 마음대로 머물 수 없죠. 그런데 사람들은 왜 이런 제약을 오히려 즐기는 걸까요? 일반적인 여행에서는 숙소와 식당을 찾고, 다음 목적지를 정하느라 끊임없이 선택해야 합니다. 하지만 크루즈에서는 배에 오르는 순간 이런 고민이 크게 줄어듭니다. 바다를 바라보며 쉬고, 수영하고, 공연을 즐기는 것 자체가 여행이 되기 때문이죠. 타이타닉 같은 과거의 대형 여객선도 이동뿐 아니라 선내의 호화로운 생활을 중요한 경험으로 내세웠습니다. 하지만 오늘날 크루즈는 한 걸음 더 나아갔습니다. 목적지에 도착하기 위해 배를 타는 것이 아니라, 배 자체를 즐기기 위해 여행을 떠나는 것이죠. 결국 사람들은 더 자유롭게 움직이기 위해서가 아니라, 아무것도 결정하지 않아도 되는 자유를 얻기 위해 스스로 공간을 제한하는 것입니다. 어쩌면 여행의 자유란 어디든 갈 수 있는 것이 아니라, 아무것도 하지 않아도 되는 것인지도 모릅니다.",
+    "status": "scripted",
+    "confidence": "user",
+    "verify_note": "직접 입력한 대본",
+    "fact_verifiability": "user",
+    "fact_risk": "user-pending",
+    "narration_user_edited": true,
+    "created_at": "2026-11-14T01:29:39.995606+00:00",
+    "edit_points_text": "초반에는 크루즈 여행의 역설적인 모순을 강하게 제시해 궁금증을 유발해주세요. 단순한 장점 나열보다 여행자가 스스로 공간의 제약을 선택하는 심리적 이유를 중심으로 전개해주세요. 타이타닉은 과거 여객선과 현대 크루즈의 차이를 설명하는 역사적 사례로 활용하고, 마지막에는 여행의 자유에 대한 생각할 거리를 남겨주세요. 자연스러운 존댓말 구어체로 작성해주세요.",
+    "title_line1": "크루즈 여행의 자유",
+    "title_line2": "왜 제한을 즐길까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "자유? *배*에 갇힘"
+      },
+      {
+        "s": 3,
+        "text": "수천명 *거대* 배"
+      },
+      {
+        "s": 11,
+        "text": "*배* 자체가 여행"
+      },
+      {
+        "s": 12,
+        "text": "결정 안 하는 *자유*"
+      }
+    ],
+    "image_queries": [
+      "cruise ship cabin interior",
+      "large cruise ship deck",
+      "travel itinerary notebook",
+      "cruise ship boarding lounge",
+      "cruise ship pool deck",
+      "cruise ship sailing at sunset",
+      "cruise ship lounge area",
+      "empty beach horizon"
+    ],
+    "scene_count": 8,
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    }
   }
 ]
