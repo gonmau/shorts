@@ -69654,9 +69654,10 @@
       {
         "scene": 10,
         "source": "pixabay",
-        "user": "PublicDomainPictures",
-        "page": "https://pixabay.com/photos/index-finger-pointing-you-hand-me-315754/",
-        "id": 315754
+        "user": "Elf-Moondance",
+        "page": "https://pixabay.com/illustrations/actor-theater-stage-acting-6733460/",
+        "id": 6733460,
+        "type": "illustration"
       }
     ],
     "image_source": "pixabay"
