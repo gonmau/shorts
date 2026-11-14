@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 09:12:56 (KST) · 기록 1695건 · 소재 678개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 09:20:46 (KST) · 기록 1696건 · 소재 678개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -23,6 +23,7 @@
 | generate_culture_facts | 18 | 0 | 38분 50초 |
 | generate_script | 203 | 0 | 1시간 16분 |
 | generate_tts | 84 | 0 | 31분 54초 |
+| grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 54 | 0 | 1분 34초 |
@@ -43,6 +44,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 09:20 | PC | grounding | grounding.py --llm --recheck --thr 5.0 | ✅ | 1분 44초 |  |
 | 09:12 | PC | audience | audience.py --tag-new --limit 100 | ✅ | 3분 59초 |  |
 | 08:04 | PC | audience | audience.py --tag-new --limit 100 | ✅ | 4분 19초 |  |
 | 07:59 | PC | trend_research | trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000 | ✅ | 19초 |  |
