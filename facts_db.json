@@ -69387,6 +69387,10 @@
         "id": 1617335
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0678_여행, 크루즈, 세계문화, 관광심리_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0678_여행, 크루즈, 세계문화, 관광심리_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   }
 ]
