@@ -69660,6 +69660,10 @@
         "type": "illustration"
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   }
 ]
