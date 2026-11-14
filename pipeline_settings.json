@@ -3,7 +3,7 @@
  "rate": 20,
  "edge": "ko-KR-InJoonNeural",
  "caption": "script",
- "engine": "edge",
+ "engine": "auto",
  "scenes": 10,
  "target_sec": 60,
  "yt_thumb": true,
