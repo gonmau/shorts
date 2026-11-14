@@ -69318,6 +69318,75 @@
       "on": false,
       "none": true,
       "why": "대본과 대조해 쓸 수 있는 행이 부족"
-    }
+    },
+    "image_queries_done": [
+      "cruise ship cabin interior",
+      "large cruise ship deck",
+      "travel itinerary notebook",
+      "cruise ship boarding lounge",
+      "cruise ship pool deck",
+      "cruise ship sailing at sunset",
+      "cruise ship lounge area",
+      "empty beach horizon"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Ronile",
+        "page": "https://pixabay.com/photos/cruise-cabin-porthole-outlook-830875/",
+        "id": 830875
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "22612",
+        "page": "https://pixabay.com/photos/human-steward-ship-cruise-740325/",
+        "id": 740325
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Ylanite",
+        "page": "https://pixabay.com/photos/travel-holiday-leisure-sunglasses-7539916/",
+        "id": 7539916
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "susannp4",
+        "page": "https://pixabay.com/photos/cruise-ship-ocean-cruise-ship-1578528/",
+        "id": 1578528
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/cruise-ship-infinity-pool-vacation-9080017/",
+        "id": 9080017
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "851878",
+        "page": "https://pixabay.com/photos/sunset-ship-sails-boat-sea-ocean-675847/",
+        "id": 675847
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "hpgruesen",
+        "page": "https://pixabay.com/photos/cruise-ship-cruise-vacation-vessel-4460493/",
+        "id": 4460493
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "paulbr75",
+        "page": "https://pixabay.com/photos/bench-chair-overlook-beach-ocean-1617335/",
+        "id": 1617335
+      }
+    ],
+    "image_source": "pixabay"
   }
 ]
