@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:27:28 (KST) · 기록 1740건 · 소재 681개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:28:50 (KST) · 기록 1741건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 55 | 0 | 10초 |
-| fetch_images | 195 | 4 | 2시간 22분 |
+| fetch_images | 195 | 5 | 2시간 22분 |
 | generate_culture_facts | 18 | 0 | 38분 50초 |
 | generate_script | 211 | 0 | 1시간 16분 |
 | generate_tts | 86 | 0 | 32분 57초 |
@@ -44,6 +44,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:28 | PC | fetch_images | fetch_images.py --index 680 --scene 5 --source commons --type photo | ❌ failed | 3초 | 장면 5: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (effort justification concept). 기존 사진 유지 |
 | 12:27 | PC | fetch_images | fetch_images.py --limit 1 --start 680 --any | ✅ | 1초 |  |
 | 12:27 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 680 | ✅ | 2초 |  |
 | 12:27 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
