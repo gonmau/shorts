@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:20:52 (KST) · 기록 1730건 · 소재 681개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:24:54 (KST) · 기록 1731건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
-| ai_prompts | 1 | 0 | 2초 |
+| ai_prompts | 2 | 0 | 3초 |
 | apply_review | 154 | 0 | 37초 |
 | approve | 46 | 0 | 10초 |
 | audience | 3 | 0 | 10분 47초 |
@@ -44,6 +44,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:24 | PC | ai_prompts | ai_prompts.py --cuts 1 --style A breathtaking Korean autumn mountain covered in vivid red and golden maple trees, beautiful foliage visible from a nea | ✅ | 0초 |  |
 | 12:20 | PC | fetch_images | fetch_images.py --limit 1 --start 680 --any | ✅ | 57초 |  |
 | 12:19 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 680 | ✅ | 2초 |  |
 | 12:19 | PC | promote_ready | promote_ready.py --start 680 | ✅ | 0초 |  |
