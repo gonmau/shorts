@@ -4127,5 +4127,499 @@
     "check": "ok"
    }
   ]
+ },
+ "21": {
+  "narration": "프랑스에서는 사망한 연인과도 결혼식을 올릴 수 있다는 사실, 알고 계셨나요? 이 제도는 1995년 대통령이 내린 특별령을 근거로 민법 제171조에 명시되었습니다. 먼저 살아 있는 배우자는 대통령에게 허가를 신청하고, 이어 지방 법원의 승인을 받아야 합니다. 허가가 내려지면 사망한 사람의 가족도 동의해야 하며, 공식적인 혼인 신고가 이루어집니다. 결혼이 인정되면 배우자는 세금 감면 등 재정적 혜택을 받을 수 있습니다. 하지만 법적으로는 사후 결혼 후 자녀를 가질 수 없다는 제한이 있습니다. 실제 사례로는 전쟁이나 사고로 갑작스레 사망한 연인을 기억하기 위해 결혼을 선택한 사람들이 있습니다. 이들은 사망한 배우자의 이름이 살아 있는 배우자의 성에 남게 되고, 장례식장이나 교회에서 결혼식 절차를 진행합니다. 프랑스 외에도 몇몇 국가에서 비슷한 제도가 존재하지만, 절차와 혜택 면에서 프랑스만큼 체계적인 경우는 드뭅니다. 사후 결혼은 로맨스와 법률이 교차하는 독특한 현상이며, 오늘 이야기가 궁금하셨다면 다음 볼리비아 이야기도 기대해 주세요.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "프랑스 사망 연인 결혼"
+   },
+   {
+    "sentence": 5,
+    "text": "세금 감면"
+   }
+  ],
+  "compare": {
+   "title": "프랑스 vs 볼리비아",
+   "left": "프랑스",
+   "right": "볼리비아",
+   "rows": [
+    {
+     "label": "제도 존재",
+     "left": "법적 허용",
+     "right": "없음"
+    },
+    {
+     "label": "절차 복잡성",
+     "left": "대통령·법원 승인",
+     "right": "간단"
+    },
+    {
+     "label": "재정 혜택",
+     "left": "세금 감면",
+     "right": "없음"
+    }
+   ]
+  },
+  "recap": "프랑스는 사후 결혼을 법적으로 인정하고 세제 혜택까지 제공한다.",
+  "broll": [
+   "French civil ceremony",
+   "historic cemetery France",
+   "government building interior"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "3b672553da29",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:55",
+  "bridge_to": "Bolivia",
+  "infographic": {
+   "on": true,
+   "kind": "steps",
+   "title": "사후 결혼 절차",
+   "s": 3,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "신청",
+     "value": null,
+     "text": "대통령에 허가 신청"
+    },
+    {
+     "label": "승인",
+     "value": null,
+     "text": "지방 법원 승인"
+    },
+    {
+     "label": "동의",
+     "value": null,
+     "text": "가족 동의 필요"
+    },
+    {
+     "label": "신고",
+     "value": null,
+     "text": "공식 혼인 신고"
+    }
+   ],
+   "none": false,
+   "nh": "1573d976c6d4"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0021_France.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0021_France_timing.json",
+  "tts_hash": "17329d5e74dc"
+ },
+ "24": {
+  "narration": "볼리비아에서는 아침마다 코카잎을 한 줌 씹는 풍경을 흔히 볼 수 있습니다. 고산지대에서 일하는 사람들은 잎의 알칼로이드가 피로를 완화하고 고산병을 예방해 준다고 믿습니다. 전통적으로는 잎을 물에 우려 차로 마시기도 하는데, 이때는 부드러운 향과 함께 온몸에 활력을 불어넣는 느낌을 줍니다. 정부는 코카잎을 문화재와 약용 자원으로 공식 인정하고, 생산자 협동조합을 통해 유통을 관리합니다. 이를 통해 농가는 안정적인 수입을 얻고, 지역사회는 경제적 혜택을 누립니다. 그러나 이 합법성은 국경 안에서만 적용됩니다. 코카잎을 해외로 반출하거나 국제공항에 가지고 들어가면 마약으로 분류돼 강력히 처벌받습니다. 그래서 여행객들은 현지에서만 즐기고, 귀국 시에는 반드시 버려야 합니다. 코카잎이 일상에 스며든 이유는 수천 년 전부터 안데스 주민들이 노동과 의식에 사용해 온 전통이 현대까지 이어졌기 때문입니다. 이처럼 볼리비아의 코카 문화는 과거와 현재가 조화된 독특한 사례라 할 수 있습니다. 다음에는 필리핀의 독특한 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "코카잎을 한 줌 씹는 풍경"
+   },
+   {
+    "sentence": 4,
+    "text": "정부는 코카잎을 문화재와 약용"
+   },
+   {
+    "sentence": 7,
+    "text": "해외 반출 시 마약으로 처벌"
+   }
+  ],
+  "compare": {
+   "title": "볼리비아 vs 필리핀",
+   "left": "볼리비아",
+   "right": "필리핀",
+   "rows": [
+    {
+     "label": "법적 지위",
+     "left": "국내 합법",
+     "right": "일부 금지"
+    },
+    {
+     "label": "주요 용도",
+     "left": "피로·고산병 완화",
+     "right": "사회·의식 행사"
+    },
+    {
+     "label": "수출 제한",
+     "left": "엄격함",
+     "right": "느슨함"
+    }
+   ]
+  },
+  "recap": "코카잎은 볼리비아 일상의 합법적 전통입니다.",
+  "broll": [
+   "Andean market stalls",
+   "people chewing coca leaves",
+   "high altitude landscape"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "e2bd7f6e68e1",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:55",
+  "bridge_to": "Philippines",
+  "infographic": {
+   "on": true,
+   "kind": "steps",
+   "title": "코카잎 활용 흐름",
+   "s": 1,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "차우려",
+     "value": null,
+     "text": "물에 우려 차"
+    },
+    {
+     "label": "정부인정",
+     "value": null,
+     "text": "문화재·약용"
+    },
+    {
+     "label": "수입안정",
+     "value": null,
+     "text": "농가 수입"
+    }
+   ],
+   "none": false,
+   "nh": "3a8ed87a9301"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0024_Bolivia_timing.json",
+  "tts_hash": "269a2f8bfc0b"
+ },
+ "25": {
+  "narration": "필리핀에서는 이웃이 직접 집을 옮기는 모습을 보신 적 있나요? 전통적인 나무와 대나무로 만든 집을 통나무 위에 올려 놓고, 마을 사람들이 힘을 모아 한 번에 들어 올리는 ‘바야니한’ 문화가 오래전부터 이어져 왔습니다. 이 관습은 자연재해로 인해 거주지를 옮겨야 할 때, 공동체가 서로 돕는 실용적인 해결책으로 탄생했습니다. 집을 들어 올리는 순간, 마을 전체가 하나의 큰 손길이 되는 모습을 볼 수 있어 공동체 의식이 시각화됩니다. 현대에 들어서는 트럭 대신 전동 지게차를 이용해 같은 방식을 적용하고 있어, 전통과 기술이 조화를 이룹니다. 도시 지역에서도 이 전통을 재현해 이사 비용을 절감하고 이웃 간 유대를 강화합니다. 전통 방식은 집 전체를 들어 올리는 것이었지만, 오늘날엔 일부 구조만 들어 올려 이동하는 경우도 있습니다. 바야니한은 필리핀 전역에서 동일하게 행해지는 것은 아니며, 특히 농촌 마을에서 더 흔합니다. 이 과정은 소리와 진동, 그리고 사람들의 웃음소리까지 함께 어우러져 독특한 풍경을 만들어냅니다. 다른 나라에서는 이와 같은 집 전체 이동 전통이 거의 없으며, 대부분은 전문 이사업체가 기계를 사용합니다. 필리핀의 바야니한은 물리적 힘보다 사람 간 신뢰와 협력이 핵심이라는 점이 인상적입니다. 다음 이야기는 우루과이의 전통 축제와 연결됩니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "이웃이 직접 집을 옮기는"
+   },
+   {
+    "sentence": 4,
+    "text": "공동체 의식 시각화"
+   },
+   {
+    "sentence": 7,
+    "text": "전통과 기술 조화"
+   }
+  ],
+  "compare": {
+   "title": "필리핀 vs 우루과이",
+   "left": "필리핀",
+   "right": "우루과이",
+   "rows": [
+    {
+     "label": "전통 방식",
+     "left": "집 전체 이동",
+     "right": "축제 퍼레이드"
+    },
+    {
+     "label": "주요 참여자",
+     "left": "이웃 전체",
+     "right": "지역 주민"
+    },
+    {
+     "label": "현대 적용",
+     "left": "전동 지게차 사용",
+     "right": "전통 음악 보존"
+    }
+   ]
+  },
+  "recap": "바야니한은 이웃의 힘으로 집을 옮기는 공동체 문화입니다.",
+  "broll": [
+   "traditional Filipino house moving",
+   "community members lifting house",
+   "modern forklift assisting relocation"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "50f37bbc3088",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:56",
+  "bridge_to": "Uruguay",
+  "infographic": {
+   "on": true,
+   "kind": "steps",
+   "title": "바야니한 절차",
+   "s": 2,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "전통 올림",
+     "value": null,
+     "text": "나무·대나무 집을 통나무 위에 올림"
+    },
+    {
+     "label": "힘 모음",
+     "value": null,
+     "text": "마을 사람들이 한 번에 들어 올림"
+    },
+    {
+     "label": "전동 지게차",
+     "value": null,
+     "text": "트럭 대신 전동 지게차 사용"
+    },
+    {
+     "label": "부분 이동",
+     "value": null,
+     "text": "일부 구조만 들어 올림"
+    }
+   ],
+   "none": false,
+   "nh": "b27ebe29e9d1"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0025_Philippines_timing.json",
+  "tts_hash": "e73a09a6f988"
+ },
+ "22": {
+  "narration": "우루과이에서는 집에서 대마초를 직접 재배할 수 있다는 사실, 알고 계셨나요? 2013년, 국가 차원에서 대마초를 규제 체계에 포함시키면서 개인 재배 허가 제도를 도입했습니다. 허가를 받은 시민은 최대 6주 동안 5그루 이하의 식물을 키울 수 있고, 연간 수확량은 약 480그램으로 제한됩니다. 이때 반드시 만 18세 이상이어야 하며, 우루과이 시민권이나 영주권을 보유해야 합니다. 재배 외에도 대마초를 구입할 수 있는 방법은 세 가지가 있습니다. 첫째, 직접 재배한 제품을 사용하는 것이고, 둘째는 정부가 인증한 회원제 클럽에 가입해 구입하는 방식이며, 셋째는 허가된 약국에서 구매하는 방법입니다. 각각의 경로마다 구매량과 보관 방법에 대한 세부 규정이 존재합니다. 예를 들어, 약국에서 구입할 경우 한 번에 최대 40그램까지 구매할 수 있고, 클럽 회원은 월 30그램 정도를 제한받습니다. 이러한 제도는 대마초를 완전히 금지하기보다는 국가가 생산부터 유통까지 관리함으로써 범죄를 억제하고, 의료·산업적 활용을 촉진하려는 목적이 있습니다. 실제로 마당에서 작은 텃밭을 가꾸듯, 우루과이 가정에서는 대마초 재배가 일상의 한 부분이 되고 있습니다. 이처럼 규제와 허용이 공존하는 정책은 다른 나라와 큰 차이를 보이며, 특히 엄격한 마약 법률을 유지하는 국가들과는 대조적입니다. 다음에는 폴란드의 마리화나 정책을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "우루과이에서는 집에서 대마초를"
+   },
+   {
+    "sentence": 2,
+    "text": "2013년 국가 차원에서 규제"
+   },
+   {
+    "sentence": 4,
+    "text": "연간 수확량 약 480그램 제"
+   }
+  ],
+  "compare": {
+   "title": "우루과이 vs 폴란드",
+   "left": "우루과이",
+   "right": "폴란드",
+   "rows": [
+    {
+     "label": "재배 허가",
+     "left": "가능(조건부)",
+     "right": "불가"
+    },
+    {
+     "label": "구매 경로",
+     "left": "클럽·약국·직접재배",
+     "right": "주로 약국"
+    },
+    {
+     "label": "법적 엄격성",
+     "left": "느슨한 관리",
+     "right": "엄격한 규제"
+    }
+   ]
+  },
+  "recap": "우루과이는 집에서 대마초 재배를 허용하는 독특한 정책을 운영합니다.",
+  "broll": [
+   "urban rooftop garden",
+   "government office interior",
+   "family planting seedlings"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "edf173232a38",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:57",
+  "bridge_to": "Poland",
+  "infographic": {
+   "on": false,
+   "none": true,
+   "nh": "befc60872f33"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0022_Uruguay_timing.json",
+  "tts_hash": "22ee1ea7d5dd"
+ },
+ "26": {
+  "narration": "폴란드에서는 이름 날이 생일보다 더 큰 축하를 받는다는 사실, 알고 계셨나요? 이름 날은 성인의 축일을 기준으로 달력에 미리 적혀 있어, 매일 누군가의 이름이 떠오릅니다. 이름이 적힌 날이 오면 가족은 집에 모여 간단한 케이크와 차를 준비하고, 친구들은 작은 선물이나 꽃을 들고 찾아갑니다. 직장에서는 동료의 책상에 꽃다발을 놓고 짧은 축하 인사를 건네는 것이 일상적인 예절입니다. 아이들은 학교에서 사탕을 나눠 주며 즐거운 분위기를 만들고, 이때마다 ‘오늘은 누구의 이름 날인가요?’ 하는 작은 퀴즈가 이어집니다. 이런 전통은 중세 교회에서 성인들의 축일을 기념하던 관습에서 시작됐으며, 종교적 의미가 사라진 지금도 사람들 사이의 유대를 강화하는 역할을 합니다. 특히 남부 지역을 제외한 대부분의 폴란드에서는 이름 날을 기억하는 것이 일종의 사회적 의무처럼 여겨집니다. 이름 날을 놓치면 사과와 함께 작은 선물을 다시 전해야 하는 경우도 있어, 자연스럽게 서로를 챙기는 문화가 형성됩니다. 이렇게 하루만큼은 모두가 주인공이 되는 느낌을 주는 이름 날은 폴란드 사람들에게 친밀함과 공동체 의식을 심어줍니다. 이제 에스토니아의 전통도 살펴볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "이름 날이 생일보다 큰 축하"
+   },
+   {
+    "sentence": 3,
+    "text": "직장 동료에게 꽃다발"
+   },
+   {
+    "sentence": 7,
+    "text": "중세 교회 성인 축일"
+   }
+  ],
+  "compare": {
+   "title": "폴란드 vs 에스토니아",
+   "left": "폴란드",
+   "right": "에스토니아",
+   "rows": [
+    {
+     "label": "축하 규모",
+     "left": "큰 축하",
+     "right": "작은 축하"
+    },
+    {
+     "label": "공식 달력",
+     "left": "이름 날 포함",
+     "right": "이름 날 미포함"
+    },
+    {
+     "label": "직장 문화",
+     "left": "선물·꽃 일반",
+     "right": "주로 생일 중심"
+    }
+   ]
+  },
+  "recap": "이름 날은 폴란드의 일상 속 친밀함을 만든다.",
+  "broll": [
+   "Polish family gathering",
+   "office birthday celebration",
+   "traditional calendar page"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "ec6435caeb09",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:58",
+  "bridge_to": "Estonia",
+  "infographic": {
+   "on": true,
+   "kind": "steps",
+   "title": "이름 날 절차",
+   "s": 1,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "직장인사",
+     "value": null,
+     "text": "꽃다발"
+    },
+    {
+     "label": "학교퀴즈",
+     "value": null,
+     "text": "사탕·퀴즈"
+    },
+    {
+     "label": "전통기원",
+     "value": null,
+     "text": "중세 교회"
+    },
+    {
+     "label": "놓치면",
+     "value": null,
+     "text": "사과·선물"
+    }
+   ],
+   "none": false,
+   "nh": "6578b5a7f35a"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0026_Poland_timing.json",
+  "tts_hash": "88835a1ddadc"
+ },
+ "23": {
+  "narration": "스마트폰 하나로 투표한다면 믿으시겠어요? 에스토니아는 2005년부터 전자 주민등록증과 모바일 ID를 활용해 전국 선거를 온라인으로 진행하고 있습니다. 시민은 스마트폰에 내장된 인증 앱으로 신분을 확인하고, 몇 번의 터치만으로 표를 던집니다. 이 시스템은 해외에 거주하는 에스토니아인에게도 동일하게 적용돼, 현지 사무실을 찾지 않아도 국가 결정에 참여할 수 있습니다. 2023년 대통령 선거에서는 전체 투표의 절반에 가까운 비율이 전자 방식으로 집계됐으며, 이는 전통적인 투표소 이용을 크게 줄였습니다. 전자 신분증은 단순 신분 확인을 넘어 디지털 서명과 온라인 서비스 접근을 가능하게 하는 eID 기반이며, 칩에 저장된 인증 정보가 투표 과정의 보안을 담당합니다. 다른 나라에서는 여전히 종이 투표용지를 사용하거나, 모바일 인증이 제한적인 경우가 많아 에스토니아의 사례는 디지털 민주주의의 선구자로 평가됩니다. 이런 혁신 덕분에 국민은 긴 대기줄 없이도 손쉽게 의견을 표출할 수 있습니다. 앞으로도 디지털 기술이 일상에 스며들며 민주주의를 새롭게 정의할 것입니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "스마트폰 하나로 투표"
+   },
+   {
+    "sentence": 2,
+    "text": "전자 주민등록증"
+   },
+   {
+    "sentence": 3,
+    "text": "해외 거주 시민"
+   }
+  ],
+  "compare": {
+   "title": "에스토니아 vs 한국",
+   "left": "에스토니아",
+   "right": "한국",
+   "rows": [
+    {
+     "label": "투표 방식",
+     "left": "온라인 주류",
+     "right": "오프라인 주류"
+    },
+    {
+     "label": "신분 인증",
+     "left": "eID 기반",
+     "right": "주민등록증"
+    },
+    {
+     "label": "해외 투표",
+     "left": "동일 절차",
+     "right": "제한적"
+    }
+   ]
+  },
+  "recap": "에스토니아는 스마트폰으로 전자 투표를 실현했습니다.",
+  "broll": [
+   "digital voting app",
+   "citizen using smartphone",
+   "election polling station"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "2264e62ec3f0",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-14 16:58",
+  "bridge_to": "",
+  "infographic": {
+   "on": true,
+   "kind": "steps",
+   "title": "스마트폰 투표 절차",
+   "s": 1,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "인증",
+     "value": null,
+     "text": "앱으로 신분확인"
+    },
+    {
+     "label": "해외투표",
+     "value": null,
+     "text": "해외에서도 동일"
+    }
+   ],
+   "none": false,
+   "nh": "79b848a8faa0"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0023_Estonia_timing.json",
+  "tts_hash": "e90d74274772"
  }
 }
