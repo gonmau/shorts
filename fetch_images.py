@@ -230,7 +230,12 @@ def fetch_item(session, key, idx, item, force):
     n_slots = item_scene_count(item)
     if not queries:
         country = str(item.get("country", "")).strip()
-        queries = [f"{country} travel"] * n_slots
+        try:
+            from country_codes import country_code as _cc
+            _isc = bool(_cc(country))
+        except Exception:
+            _isc = True
+        queries = [f"{country} travel" if _isc else (str(item.get("verify_note") or item.get("topic") or country))] * n_slots
     if queries and len(queries) < n_slots:
         print(f"    검색어 {len(queries)}개 < 장면 {n_slots}개: 빠진 장면의 검색어를 채웁니다")
         queries = _pad_queries(queries, n_slots, item)

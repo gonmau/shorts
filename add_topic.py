@@ -51,9 +51,11 @@ def add_manual(a):
         raise SystemExit("대본이 너무 짧습니다 (60자 이상).")
     sents = split_sentences(text)
     country = (a.country or ("" if EN else guess_country(text))).strip()
-    if not country:
-        raise SystemExit("나라(또는 영어 채널은 짧은 제목)를 입력하세요. 대본에서 자동으로 찾지 못했습니다.")
     topic = (a.topic or sents[0])[:60].strip()
+    if not country:
+        if EN:
+            raise SystemExit("짧은 제목(영어)을 입력하세요.")
+        country = topic[:14].strip() or "세계"       # 나라가 없는 소재는 주제 앞부분을 라벨로
     item = {
         "country": country, "topic": topic, "theme": "직접 입력" if not EN else "manual",
         "hook": sents[0], "body": " ".join(sents[1:-1]) if len(sents) > 2 else "", "twist": sents[-1] if len(sents) > 1 else "",

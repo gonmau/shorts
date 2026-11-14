@@ -59,6 +59,8 @@ def analyze(f):
     """(상태, 제안코드, 언급목록). 상태: ok / fix(하나로 분명) / unsure(여러 나라 또는 불분명)"""
     label = str(f.get("country") or f.get("label") or "")
     own = country_code(label) or _NAME_CODE.get(label.strip().lower(), "")
+    if not own:
+        return "ok", "", []        # '세계', '세계의 팁 문화'처럼 나라가 아닌 라벨은 나라 일치 점검 대상이 아님
     text = " ".join(str(f.get(k) or "") for k in ("title_line1", "title_line2", "topic", "hook"))
     ms = [c for c in mentions(text) if c != "KR" or own == "KR"]     # 한국 언급은 비교용으로 보고 무시
     if ms and own not in ms:

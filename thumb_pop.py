@@ -138,34 +138,13 @@ def make(idx, item, channel, handle, avatar, background):
     d.text((185, 70), channel, font=_font(46), fill=(255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0))
     d.text((185, 128), handle, font=_font(34, bold=False), fill=(230, 230, 230), stroke_width=3, stroke_fill=(0, 0, 0))
 
-    flag = get_flag(country_codes.country_code(country))
-    if flag is not None:
-        fb = flag_badge(flag)
-        im.alpha_composite(fb, (W - fb.width - 20, 36))
-
-    # 노란 붓터치 + 영어 나라 이름 + 빨간 밑줄
-    label = country_codes.english_name(country)
-    f = _fit_font(d, label, 520, 130, 60)
-    txt = italic_text(label, f, (0, 0, 0))
-    bw, bh = txt.width + 150, int(txt.height + 90)
-    bw = max(bw, 360)
-    bs = brush(bw, bh, seed=idx * 7 + len(label))
-    bx, by = (W - bs.width) // 2, 1100
-    im.alpha_composite(bs, (bx, by))
-    tx, ty = (W - txt.width) // 2, by + (bs.height - txt.height) // 2 - 12
-    im.alpha_composite(txt, (tx, ty))
-    ul = Image.new("RGBA", im.size, (0, 0, 0, 0))
-    ud = ImageDraw.Draw(ul)
-    uy = ty + txt.height + 14
-    ud.line([(tx + 6, uy + 4), (tx + txt.width * 0.5, uy + 9), (tx + txt.width - 6, uy)], fill=RED, width=11, joint="curve")
-    im.alpha_composite(ul)
-    d = ImageDraw.Draw(im)
+    by = 1100
 
     # 큰 제목 2줄 + 반짝 선
     t1 = str(item.get("title_line1") or item.get("topic") or country).strip()
     t2 = str(item.get("title_line2") or "").strip()
     f1 = _fit_font(d, t1, W - 100, 160, 70)
-    y1 = by + bs.height + 20
+    y1 = by + 40
     stroke_text(d, t1, W // 2, y1, f1, (255, 255, 255))
     if t2:
         f2 = _fit_font(d, t2, W - 100, 160, 70)

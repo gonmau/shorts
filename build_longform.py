@@ -661,7 +661,7 @@ def run_rich(args, db, lf_db, members):
     only = set(parse_indexes(args.only)) if args.only else set()
     clips_on = bool(args.clips or os.environ.get("LF_CLIPS", "0") == "1")
     # 1) 이미지 + 확장 대본 + 음성
-    recs, countries_all = {}, [DISP(db[i].get("country", "")) for i in members]
+    recs, countries_all = {}, [DISP(db[i].get("country", "")) for i in members if LS._known_country(db[i])]
     for k, idx in enumerate(members):
         print(f"\n== {'대본 준비' if args.plan_only else '재료 준비'} {idx} {db[idx].get('country', '')} ({k + 1}/{len(members)})", flush=True)
         if not args.plan_only and args.preview not in ("script", "cuts"):

@@ -843,7 +843,7 @@ with T6a:
         if _ts is not None:
             _tc1, _tc2 = st.columns(2)
             _tst = _tc1.selectbox("스타일", ["hook", "pop", "classic"], 0, key="thm_style",
-                                  format_func=lambda x: {"hook": "hook (제목·후크 중심)", "pop": "pop (국기+나라 띠)", "classic": "classic"}[x])
+                                  format_func=lambda x: {"hook": "hook (제목·후크 중심)", "pop": ("pop (국기+나라 띠)" if EN else "pop (굵은 제목)"), "classic": "classic"}[x])
             _tsc = _tc2.number_input("배경 장면 번호 (0=자동)", 0, 30, int(_td[_ts].get("thumb_scene") or 0), key=f"thm_sc_{_ts}")
             _to = dict(_td[_ts].get("thumb_opts") or {})
             _o1, _o2, _o3 = st.columns(3)
@@ -1234,8 +1234,8 @@ with T1b:
         st.caption("직접 쓴 대본으로 소재를 만듭니다 (대본 완료 상태로 바로 들어감). 제목·핵심 문구·이미지 검색어는 AI가 채웁니다.")
         m_narr = st.text_area("대본 (60자 이상, 전체 내용)", height=220, key="add_narr")
         m1, m2 = st.columns(2)
-        m_country = m1.text_input("나라" if not EN else "짧은 제목 (영어, 2~5단어)", key="add_country",
-                                  help="비워 두면 대본에서 나라 이름을 찾습니다" if not EN else "예: Korean Delivery Culture")
+        m_country = m1.text_input("라벨 (선택)" if not EN else "짧은 제목 (영어, 2~5단어)", key="add_country",
+                                  help="나라 이름이거나 '세계', '세계의 팁 문화' 같은 짧은 라벨. 비우면 대본에서 나라 이름을 찾고, 없으면 주제 앞부분을 씁니다" if not EN else "예: Korean Delivery Culture")
         m_topic = m2.text_input("주제 한 줄 (선택)", key="add_topic")
         if st.button("소재 만들기", key="add_manual_go", disabled=len(m_narr.strip()) < 60):
             ids_ = run_cap("add_topic.py", "manual", "--narration", m_narr, *(["--country", m_country] if m_country.strip() else []),
@@ -2666,7 +2666,8 @@ with TL:
             _used = set()
         _pool = [i_ for i_, f_ in enumerate(_fdb) if i_ >= int(lstart) and f_.get("status") == "video_done" and str(f_.get("narration", "")).strip() and i_ not in _used]
         from collections import Counter
-        _cc = Counter(str(_fdb[i_].get("country", "")).strip() for i_ in _pool)
+        import country_codes as _CCd
+        _cc = Counter(str(_fdb[i_].get("country", "")).strip() for i_ in _pool if EN or _CCd.country_code(str(_fdb[i_].get("country", "")).strip()))   # 나라 목록엔 실제 나라만 (세계·주제 라벨 제외)
         _tc = Counter(str(_fdb[i_].get("theme", "")).strip() for i_ in _pool)
         _wc = Counter()
         for i_ in _pool:

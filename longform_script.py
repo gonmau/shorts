@@ -113,9 +113,29 @@ def save_scripts(d):
 
 
 # ---------------------------------------------------------------- 프롬프트
+def _known_country(item):
+    """소재 칸이 알려진 나라인지 (세계·'세계의 팁 문화' 같은 라벨이면 False). 영어 채널은 항상 True"""
+    if IS_EN:
+        return True
+    try:
+        from country_codes import country_code
+        return bool(country_code(str(item.get("country", "")).strip()))
+    except Exception:
+        return True
+
+
+def _nocmp(item, text):
+    """나라 소재가 아닌 챕터(한국어 채널)는 비교 카드를 만들지 않도록 프롬프트의 compare 지시를 바꾼다"""
+    if _known_country(item):
+        return text
+    text = re.sub(r"- compare\(비교 카드\):[^\n]*", "- compare: 이 챕터는 특정 나라 소재가 아니므로 반드시 null 로 쓰세요.", text)
+    text = re.sub(r'"compare":\{.*?\}\]\},', '"compare":null,', text, flags=re.S)
+    return text
+
+
 def _prompt(item, ev, next_info, candidates, instruction=""):
     import style_profile as _sp
-    return _sp.apply(__prompt_base(item, ev, next_info, candidates, instruction), "longform")
+    return _nocmp(item, _sp.apply(__prompt_base(item, ev, next_info, candidates, instruction), "longform"))
 
 
 def __prompt_base(item, ev, next_info, candidates, instruction=""):
@@ -218,6 +238,10 @@ def _normalize(d, n_sent_min=6):
 
 
 def _resync_prompt(item, narr, candidates, next_info):
+    return _nocmp(item, _resync_prompt0(item, narr, candidates, next_info))
+
+
+def _resync_prompt0(item, narr, candidates, next_info):
     """고쳐 쓴 나레이션은 그대로 두고, 그에 맞는 키워드/비교 카드/요약/영상 검색어만 새로 만든다"""
     country = str(item.get("country", "")).strip()
     sents = split_sentences(narr)

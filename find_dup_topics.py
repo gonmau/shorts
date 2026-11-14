@@ -84,6 +84,16 @@ def score_pair(a, b):
 DUP_THR_DEFAULT = 0.45
 
 
+def _is_country(f):
+    if IS_EN:
+        return True
+    try:
+        from country_codes import country_code
+        return bool(country_code(f.get("country", "")))
+    except Exception:
+        return True
+
+
 def dup_reason(f, pool, thr=None):
     """새 소재 f가 pool(기존 소재들, 폐기 포함)과 중복이면 이유(문자열), 아니면 None. 중복 찾기 도구와 같은 기준(score_pair)."""
     import os
@@ -93,8 +103,8 @@ def dup_reason(f, pool, thr=None):
     for i, o in enumerate(pool):
         if wt and wt == re.sub(r"[^0-9a-z가-힣]", "", str(o.get("wiki_title", "")).lower()):
             return f"같은 위키 문서 ({f.get('wiki_title')})"
-        if _country_key(o) != ck:
-            continue
+        if _country_key(o) != ck and _is_country(f) and _is_country(o):
+            continue          # 둘 다 알려진 나라이고 서로 다른 나라일 때만 건너뜀 (라벨 소재는 전체와 비교)
         s, why = score_pair(f, o)
         if s >= thr:
             return f"[{i}] {why}"

@@ -65,14 +65,6 @@ def make(idx, item, channel, handle, avatar):
     d.text((185, 70), channel, font=_font(46), fill=(255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0))
     d.text((185, 128), handle, font=_font(34, bold=False), fill=(230, 230, 230), stroke_width=3, stroke_fill=(0, 0, 0))
 
-    # 나라 이름 띠
-    country = safe_country(item)
-    f = _fit_font(d, country, W - 260, 70, 36)
-    tw = d.textlength(country, font=f)
-    x0, y0 = (W - tw) / 2 - 40, 1130
-    d.rounded_rectangle((x0, y0, x0 + tw + 80, y0 + 120), radius=60, fill=YELLOW)
-    d.text(((W - tw) / 2, y0 + 16), country, font=f, fill=(0, 0, 0))
-
     # 큰 제목 2줄
     t1 = str(item.get("title_line1") or item.get("topic") or country).strip()
     t2 = str(item.get("title_line2") or "").strip()
