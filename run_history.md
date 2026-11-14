@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:32:58 (KST) · 기록 1752건 · 소재 681개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:44:36 (KST) · 기록 1757건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,10 +9,10 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 156 | 0 | 37초 |
+| apply_review | 157 | 0 | 38초 |
 | approve | 46 | 0 | 10초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 75 | 0 | 13시간 27분 |
+| build_video | 76 | 0 | 13시간 37분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 27 | 0 | 2분 46초 |
 | cleanup_media | 5 | 0 | 7초 |
@@ -21,13 +21,13 @@
 | export_review | 55 | 0 | 10초 |
 | fetch_images | 200 | 8 | 2시간 23분 |
 | generate_culture_facts | 18 | 0 | 38분 50초 |
-| generate_script | 211 | 0 | 1시간 16분 |
+| generate_script | 212 | 0 | 1시간 16분 |
 | generate_tts | 87 | 0 | 33분 8초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
-| make_thumbnail | 56 | 0 | 1분 36초 |
-| promote_ready | 156 | 0 | 33초 |
+| make_thumbnail | 57 | 0 | 1분 38초 |
+| promote_ready | 157 | 0 | 33초 |
 | redo_videos | 28 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -44,6 +44,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:44 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 680 | ✅ | 1초 |  |
+| 12:44 | PC | build_video | build_video.py --index 680 --channel gonmauY --handle @gonmauY | ✅ | 9분 44초 |  |
+| 12:34 | PC | generate_script | generate_script.py --extras-only --index 680 | ✅ | 1초 |  |
+| 12:34 | PC | promote_ready | promote_ready.py --start 680 | ✅ | 0초 |  |
+| 12:34 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 12:32 | PC | generate_tts | generate_tts.py --index 680 | ✅ | 11초 |  |
 | 12:32 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 12:32 | PC | promote_ready | promote_ready.py --start 680 | ✅ | 0초 |  |
