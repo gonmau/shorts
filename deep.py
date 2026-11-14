@@ -55,8 +55,30 @@ ANGLES_EN = [("Background and origin", "how it started and why it exists"),
              ("Wrap-up", "a warm wrap-up of the whole story (no subscribe/like requests)")]
 
 
-def plan(n, en=False):
-    A = ANGLES_EN if en else ANGLES_KO
+# 서사형: 한 줄기 이야기(궁금증 -> 배경 -> 갈등 -> 반전 -> 지금 -> 여운). 섹션이 개수에 맞춰 앞에서부터 쓰이고 마지막은 항상 '여운'
+ARC_KO = [("장면과 궁금증", "가장 인상적인 한 장면이나 의문으로 시작해, 끝까지 봐야 풀리는 궁금증을 던진다 (설명 나열 금지)"),
+          ("그 시작", "이 일이 어떻게 시작됐는지, 당시 사람들이 처한 상황과 이유를 이야기로 풀기"),
+          ("엇갈림과 긴장", "갈등·어려움·논란처럼 이야기가 팽팽해지는 부분을 구체적인 장면으로"),
+          ("뜻밖의 전환", "사람들이 흔히 모르는 반전이나 오해가 풀리는 지점"),
+          ("지금의 모습", "그 결과가 오늘날 사람들의 삶에 어떻게 남아 있는지 구체적인 장면으로"),
+          ("다른 시선", "다른 나라 사람들의 눈에는 어떻게 보이는지, 비슷한 사례와의 대비"),
+          ("남는 질문", "이 이야기가 우리에게 던지는 질문"),
+          ("여운", "처음의 궁금증에 답하며 여운 있게 마무리 (구독/좋아요 요청 금지)")]
+ARC_EN = [("Scene and question", "open on one striking scene or question that only pays off at the end (no list of facts)"),
+          ("How it began", "tell how it started, who was involved, and why, as a story"),
+          ("Tension", "the conflict, difficulty or controversy, in concrete scenes"),
+          ("The turn", "the surprising twist or misunderstanding that gets cleared up"),
+          ("Today", "how that story still lives in people's daily lives, in concrete scenes"),
+          ("Another view", "how it looks to outsiders, contrasted with similar cases"),
+          ("The open question", "the question this story leaves us with"),
+          ("Afterglow", "answer the opening question and close with feeling (no subscribe/like requests)")]
+
+
+def plan(n, en=False, style="topic"):
+    if style == "story":
+        A = ARC_EN if en else ARC_KO
+    else:
+        A = ANGLES_EN if en else ANGLES_KO
     n = max(3, min(8, int(n)))
     return A[:n - 1] + [A[-1]]
 
@@ -71,7 +93,7 @@ def scenes_per_section(minutes, n):
     return max(6, min(16, s + (s % 2)))
 
 
-def _prompt(item, ev, angle, k, n, prev, minutes, instruction, en):
+def _prompt(item, ev, angle, k, n, prev, minutes, instruction, en, style="topic"):
     country = str(item.get("country", "")).strip()
     topic = str(item.get("topic") or item.get("title_line1") or "").strip()
     short = str(item.get("narration", "")).strip()
@@ -81,6 +103,8 @@ def _prompt(item, ev, angle, k, n, prev, minutes, instruction, en):
     evidence = "\n".join(ev)[:2400] if ev else "(none)"
     prev_txt = "\n".join(f"- {p}" for p in prev) or "(none yet)"
     ins = (f"\n- Editor's extra instruction (follow it): {instruction}" if en else f"\n- 편집자 추가 지시 (반드시 반영): {instruction}") if instruction else ""
+    story_en = ("\n- STORY MODE: this is ONE continuous story, not a fact list. Keep a single thread, name a concrete scene, person-less but vivid detail, and leave one open question that the next section answers. Avoid 'first/second/third' listing." if style == "story" else "")
+    story_ko = ("\n- 서사 모드: 사실 나열이 아니라 하나의 이야기 줄기로 씁니다. 구체적인 장면과 감각적 디테일을 넣고, 첫 섹션에서 던진 궁금증을 마지막에 풀며, 각 섹션 끝은 다음이 궁금해지는 한 줄로 끝내세요. '첫째, 둘째' 식 나열 금지." if style == "story" else "")
     if en:
         return f"""You write section {k} of {n} of ONE long YouTube video (a deep dive on a single subject) for the channel "Korea A to Z".
 Subject: {topic} (country/place: {country})
@@ -98,7 +122,7 @@ Rules:
 - title: a short on-screen section title (<=24 characters).
 - keywords: only the core, usually 2-3 (at most 4) short on-screen phrases (<=24 chars), each tied to the sentence number (1-based) where it is spoken.
 - image_queries: exactly {nq} different English stock-photo search queries (2-5 words each) that match the scenes in order, concrete and varied. No brands, no specific people.
-- recap: ONE short line (<=60 chars) summarising this section.{ins}
+- recap: ONE short line (<=60 chars) summarising this section.{story_en}{ins}
 Return pure JSON only:
 {{"title":"...","narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"image_queries":["..."],"recap":"..."}}"""
     return f"""당신은 '세계 문화 상식' 유튜브의 심층편(소재 하나를 깊이 다루는 긴 영상) {n}개 섹션 중 {k}번째 섹션 나레이션 작가입니다.
@@ -117,12 +141,12 @@ Return pure JSON only:
 - title: 화면에 띄울 섹션 소제목 (12자 이내).
 - keywords: 핵심만 2~3개(최대 4개), 화면에 띄울 짧은 문구(14자 이내)와, 그 말이 나오는 문장 번호(1부터).
 - image_queries: 장면 순서에 맞는 서로 다른 영어 스톡사진 검색어 정확히 {nq}개 (2~5단어, 구체적이고 다양하게). 브랜드/특정 인물 금지.
-- recap: 이 섹션 한 줄 요약 (30자 이내).{ins}
+- recap: 이 섹션 한 줄 요약 (30자 이내).{story_ko}{ins}
 순수 JSON만 출력:
 {{"title":"...","narration":"...","keywords":[{{"sentence":1,"text":"..."}}],"image_queries":["..."],"recap":"..."}}"""
 
 
-def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=None):
+def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=None, style="topic"):
     """섹션 대본 생성 -> deep_db.json 저장 (이미 잠긴 섹션은 only 가 아니면 유지). -> dict"""
     import crosscheck as C
     import longform_script as LS
@@ -130,7 +154,9 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
     d = load()
     cur = d.get(str(idx)) or {}
     secs_old = cur.get("sections") or []
-    pl = plan(n, en)
+    pl = plan(n, en, style)
+    if cur.get("style", "topic") != style:
+        secs_old = []   # 방식이 바뀌면 처음부터
     topic = f"{item.get('country', '')} {item.get('topic', '')}".strip()
     ev = C._wiki(topic, "en" if en else "ko") or ([] if en else C._wiki(topic, "en"))
     secs, prev = [], []
@@ -140,7 +166,7 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
             secs.append(old)
             prev.append(f"{old.get('title', '')}: " + " ".join(LS.split_sentences(old.get("narration", ""))[:2]))
             continue
-        if old and not only and cur.get("n") == n and old.get("narration") and not instruction:
+        if old and not only and cur.get("n") == n and cur.get("style", "topic") == style and old.get("narration") and not instruction:
             secs.append(old)
             prev.append(f"{old.get('title', '')}: " + " ".join(LS.split_sentences(old.get("narration", ""))[:2]))
             continue
@@ -151,7 +177,7 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
         res = best = None
         for attempt in range(2):
             raw, used = LS._chat(client, models, "You write accurate, engaging voice-over scripts. Output JSON only.",
-                                 _prompt(item, ev, ang, k, n, prev, minutes, instruction, en), tokens=3500)
+                                 _prompt(item, ev, ang, k, n, prev, minutes, instruction, en, style), tokens=3500)
             res = LS._normalize({**(raw or {}), "compare": None}, n_sent_min=3) if raw else None
             if res:
                 L = len(res["narration"]); cps = chars_per_section(minutes, n, en)
@@ -179,7 +205,7 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
         secs.append(sec)
         prev.append(f"{sec['title']}: " + " ".join(LS.split_sentences(sec["narration"])[:2]))
         print(f"    [심층편] 섹션 {k}/{n} '{sec['title']}': {len(sec['narration'])}자, 키워드 {len(sec['keywords'])}, 검색어 {len(qs)}개", flush=True)
-    d[str(idx)] = {"n": n, "minutes": minutes, "created": time.strftime("%Y-%m-%d %H:%M"), "instruction": instruction, "sections": secs}
+    d[str(idx)] = {"style": style, "n": n, "minutes": minutes, "created": time.strftime("%Y-%m-%d %H:%M"), "instruction": instruction, "sections": secs}
     save(d)
     return d[str(idx)]
 
@@ -191,7 +217,10 @@ def script_text(idx, item, data):
     return "\n".join(L)
 
 
-def title(item, minutes, en=False):
+def title(item, minutes, en=False, style="topic"):
+    if style == "story":
+        t_ = str(item.get("topic", "")).strip()
+        return (f"{t_}: The Story Behind It" if en else f"{t_} | 그 뒤에 숨은 이야기")[:95]
     c = str(item.get("country", "")).strip()
     t = str(item.get("topic", "")).strip()
     if en:
@@ -199,7 +228,10 @@ def title(item, minutes, en=False):
     return f"{c} {t} 완전 정리 | 깊이 있게 보기"[:95]
 
 
-def intro_text(item, n, en=False):
+def intro_text(item, n, en=False, style="topic"):
+    if style == "story":
+        t_ = str(item.get("topic", "")).strip()   # 서사형: 첫 섹션이 후크라서 인트로는 한 줄만
+        return f"{t_}. Let's begin." if en else f"{t_}. 이 이야기를 시작합니다."
     c = str(item.get("country", "")).strip()
     t = str(item.get("topic", "")).strip()
     if en:
@@ -207,7 +239,9 @@ def intro_text(item, n, en=False):
     return f"오늘은 {c}의 {t}, 이 이야기 하나만 깊이 있게 살펴보겠습니다. 총 {n}가지 이야기로 풀어 볼게요. 끝까지 보시면 이 문화가 조금 다르게 보일 거예요. 지금 시작합니다."
 
 
-def outro_text(recaps, en=False):
+def outro_text(recaps, en=False, style="topic"):
+    if style == "story":
+        return "끝까지 봐 주셔서 감사합니다. 다음 이야기에서 또 만나요." if not en else "Thanks for watching. See you in the next story."
     if en:
         return "Quick recap. " + " ".join(f"Part {i}: {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r) + " Thanks for watching, and see you in the next video."
     return "오늘 이야기를 한 번에 정리해 볼게요. " + " ".join(f"{i}부, {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r) + " 끝까지 봐 주셔서 감사합니다. 다음 영상에서 만나요."

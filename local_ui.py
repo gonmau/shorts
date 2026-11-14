@@ -2903,6 +2903,29 @@ with TL:
     with st.expander("🔭 심층편 (소재 1개 → 소주제 여러 개로 나눠 긴 영상 1편)", expanded=False):
         st.caption("소재 번호 1개를 넣으면 소주제(배경·생활·비교·디테일·여행자 팁…)로 나눠 한 편으로 만듭니다. 소주제 개수와 목표 길이로 섹션당 글자 수가 정해져서 "
                    "AI가 그 분량에 맞춰 씁니다. ① 대본 만들기 → 아래에서 확인/수정(잠금) → ② 심층편 만들기.")
+        _dstyle = st.radio("방식", ["서사형 (한 줄기 이야기)", "소주제형 (배경·생활·비교…)"], horizontal=True, key="deep_style_r",
+                           help="서사형: 궁금증 → 배경 → 갈등 → 반전 → 지금 → 여운으로 이어지는 이야기. 소주제형: 예전 방식") .startswith("서사")
+        if os.path.exists("deep_topics.py"):
+            with st.expander("🎯 주제 고르기 (잘 된 쇼츠 / AI 제안)", expanded=False):
+                import deep_topics as _DT
+                _tc1, _tc2 = st.columns(2)
+                with _tc1:
+                    st.markdown("**① 잘 된 쇼츠** (조회수×시청률+구독)")
+                    for _r in _DT.from_stats(10):
+                        if st.button(f"[{_r['idx']}] {_r['country']} {_r['topic'][:22]} · {_r['views']}회 {_r['pct']}%", key=f"dt_s_{_r['idx']}"):
+                            st.session_state["deep_src"] = int(_r["idx"]); st.rerun()
+                with _tc2:
+                    st.markdown("**② AI 제안**")
+                    _hint = st.text_input("제안 요청 (선택, 예: 음식 문화 위주)", key="dt_hint")
+                    if st.button("새 주제 8개 제안받기", key="dt_prop"):
+                        run("deep_topics.py", "--propose", "8", *(["--hint", _hint] if _hint else [])); st.rerun()
+                    for _k, _p in enumerate(reversed(_DT.load_proposals()[-10:])):
+                        if st.button(f"[{_p['label']}] {_p['topic']}", key=f"dt_p_{_k}", help=f"{_p.get('hook', '')}\n{_p.get('why', '')}"):
+                            import subprocess as _sp
+                            _o = _sp.run([sys.executable, "deep_topics.py", "--seed", f"{_p['label']}|{_p['topic']}|{_p.get('hook', '')}"], capture_output=True, text=True)
+                            _m = re.search(r"SEED (\d+)", _o.stdout or "")
+                            if _m:
+                                st.session_state["deep_src"] = int(_m.group(1)); st.rerun()
         d1, d2, d3 = st.columns(3)
         _dsrc = d1.number_input("소재 번호", min_value=0, value=0, step=1, key="deep_src")
         _dsec = d2.slider("소주제 개수", 3, 8, 5, key="deep_sec")
@@ -2911,7 +2934,7 @@ with TL:
         _dcards = st.checkbox("└ 챕터별 요약 카드 표시 (끄면 엔딩 멘트 음성만)", True, key="deep_cards", disabled=not _drecap)
         _dcmp = st.checkbox("소주제별 비교 카드 넣기", bool(R_BRAND_COMPARE), key="deep_compare", help="끄면 이번 실행에만 비교 카드를 쓰지 않습니다 (채널 표시 설정과 별개)")
         _dins = st.text_input("AI 추가 지시 (선택, 예: 한국과 비교를 더 자세히)", key="deep_ins")
-        _dargs = ["build_longform.py", "--deep", "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
+        _dargs = ["build_longform.py", "--deep", *(["--deep-style", "story" if _dstyle else "topic"] if os.path.exists("deep_topics.py") else []), "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
         e1, e2 = st.columns(2)
         if e1.button("① 심층편 대본 만들기", key="deep_plan_go", help="음성/영상 없이 섹션 대본만 AI로 씁니다. 이미 있는 대본(잠금 포함)은 재사용"):
             run(*_dargs, "--plan-only", *(["--instruction", _dins] if _dins else []))

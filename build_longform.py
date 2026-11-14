@@ -930,7 +930,8 @@ def run_deep(args, db, lf_db):
     client, models = LS.client_models()
     only = set(parse_indexes(args.only)) if args.only else set()   # 섹션 번호(1부터)
     force = set(range(1, n + 1)) if (args.regen and not only) else (only or None)
-    data = D.generate(client, models, src, item, n=n, minutes=minutes, instruction=args.instruction, only=force)
+    dstyle = getattr(args, "deep_style", "story")
+    data = D.generate(client, models, src, item, n=n, minutes=minutes, instruction=args.instruction, only=force, style=dstyle)
     OUT.mkdir(exist_ok=True)
     (BASE / "longform_plan.txt").write_text(D.script_text(src, item, data), encoding="utf-8")
     if args.plan_only or args.preview == "script":
@@ -943,9 +944,9 @@ def run_deep(args, db, lf_db):
     try:
         db = load_json(BASE / "facts_db.json", db)
         args.deep_src = src
-        args.deep_plan = {"intro_text": D.intro_text(item, len(new), IS_EN),
-                          "outro_text": D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN)}
-        args.title = args.title or D.title(item, minutes, IS_EN)
+        args.deep_plan = {"intro_text": D.intro_text(item, len(new), IS_EN, dstyle),
+                          "outro_text": D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN, dstyle)}
+        args.title = args.title or D.title(item, minutes, IS_EN, dstyle)
         args.min = 1
         args.mode = "manual"
         args.theme = ""
@@ -988,6 +989,7 @@ def main():
     ap.add_argument("--no-compare", action="store_true", help="비교 카드를 쓰지 않는다 (저장된 비교 카드가 있어도 화면·오프닝 멘트에 넣지 않음)")
     ap.add_argument("--no-recap-cards", action="store_true", help="요약 화면은 두되 챕터별 요약 카드는 표시하지 않고 엔딩 멘트 음성만 낸다")
     ap.add_argument("--no-recap", action="store_true", help="마지막 요약 화면(+엔딩 멘트)을 만들지 않는다")
+    ap.add_argument("--deep-style", choices=["topic", "story"], default="story", help="심층편 방식: story(서사형, 기본) / topic(소주제 나열)")
     ap.add_argument("--deep", action="store_true", help="심층편: --indexes 의 소재 1개를 소주제 여러 개로 나눠 긴 영상 1편으로 만든다")
     ap.add_argument("--sections", type=int, default=5, help="심층편 소주제 개수 (3~8)")
     ap.add_argument("--minutes", type=float, default=8.0, help="심층편 목표 길이(분, 5~12)")
