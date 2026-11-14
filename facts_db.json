@@ -69667,6 +69667,37 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "dokdo",
+      "band": "brush",
+      "band_color": "#ff2c00",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "왜 굳이",
+      "text2": "힘들게 산에 갈까?",
+      "colors1": {},
+      "sizes1": {},
+      "colors2": {
+        "0": "#dda731",
+        "1": "#dda731",
+        "2": "#dda731"
+      },
+      "sizes2": {}
+    },
+    "thumb_scene": 6
   }
 ]
