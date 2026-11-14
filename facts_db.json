@@ -69414,11 +69414,15 @@
       "band_dy": 0,
       "color1": "#ffffff",
       "color2": "#000000",
-      "text1": "",
-      "text2": "",
-      "colors1": {},
+      "text1": "왜 사람들은",
+      "text2": "바다에 갇힐까?",
+      "colors1": {
+        "0": "#e3420d"
+      },
       "sizes1": {},
-      "colors2": {},
+      "colors2": {
+        "0": "#1d5ffb"
+      },
       "sizes2": {}
     },
     "thumb_scene": 4
