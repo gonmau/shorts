@@ -1692,3 +1692,4 @@
 {"id": "1794610690437-696a88", "time": "2026-11-14 07:58:10", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (trend_research.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794610796753-ce3412", "time": "2026-11-14 07:59:56", "channel": "KO", "source": "PC", "kind": "trend_research", "title": "trend_research.py --yt 세계는 지금, 핫 이슈, 금융,전쟁 --days 30 --reddit issue, money, war, ai --wiki --analyze --max-units 3000", "status": "success", "secs": 19.5, "detail": ""}
 {"id": "1794611076289-37ec35", "time": "2026-11-14 08:04:36", "channel": "KO", "source": "PC", "kind": "audience", "title": "audience.py --tag-new --limit 100", "status": "success", "secs": 259.8, "detail": ""}
+{"id": "1794615163021-d0891e", "time": "2026-11-14 09:12:43", "channel": "KO", "source": "PC", "kind": "audience", "title": "audience.py --tag-new --limit 100", "status": "success", "secs": 239.5, "detail": ""}
