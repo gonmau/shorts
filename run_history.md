@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:15:22 (KST) · 기록 1724건 · 소재 680개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:19:29 (KST) · 기록 1726건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,10 +18,10 @@
 | cleanup_media | 5 | 0 | 7초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 54 | 0 | 10초 |
+| export_review | 55 | 0 | 10초 |
 | fetch_images | 193 | 4 | 2시간 21분 |
 | generate_culture_facts | 18 | 0 | 38분 50초 |
-| generate_script | 208 | 0 | 1시간 16분 |
+| generate_script | 209 | 0 | 1시간 16분 |
 | generate_tts | 86 | 0 | 32분 57초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
@@ -44,6 +44,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:19 | PC | generate_script | generate_script.py --extras-only --index 680 | ✅ | 5초 |  |
+| 12:19 | PC | export_review | export_review.py --limit 1 --start 680 | ✅ | 0초 |  |
 | 12:15 | PC | generate_script | generate_script.py --extras-only --index 679 | ✅ | 7초 |  |
 | 12:15 | PC | export_review | export_review.py --limit 1 --start 679 | ✅ | 0초 |  |
 | 11:31 | PC | upload_to_youtube | upload_to_youtube.py --indexes 678 --daily-max 20 | ✅ | 21초 |  |
