@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 10:31:27 (KST) · 기록 1700건 · 소재 679개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 10:32:21 (KST) · 기록 1702건 · 소재 679개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 1 | 0 | 2초 |
-| apply_review | 147 | 0 | 35초 |
+| apply_review | 148 | 0 | 35초 |
 | approve | 46 | 0 | 10초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 74 | 0 | 13시간 10분 |
@@ -27,7 +27,7 @@
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 54 | 0 | 1분 34초 |
-| promote_ready | 147 | 0 | 30초 |
+| promote_ready | 148 | 0 | 30초 |
 | redo_videos | 28 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -44,6 +44,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:31 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 10:31 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 10:29 | PC | export_review | export_review.py --limit 1 --start 678 | ✅ | 0초 |  |
 | 10:29 | PC | generate_script | generate_script.py --extras-only --index 678 | ✅ | 6초 |  |
 | 10:27 | PC | 코드업데이트 | gonmau/shorts: 3개 (generate_culture_facts.py, local_ui.py, wiki_source.py) | ✅ |  |  |
