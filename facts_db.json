@@ -69739,7 +69739,45 @@
     "verify_note": "Japanese tea utensils",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:29.709346+00:00",
-    "status": "unverified"
+    "status": "scripted",
+    "need": "practical",
+    "emotion": "curiosity",
+    "narration": "차 도구 5가지, 직접 잡으면 금지!  \n일본 차도에서는 차를 내릴 때 쓰는 도구를 다섯 부류로 나눕니다. 장식·다도·카이세키·물자·정원용으로 구분되며, 각각이 차 회에 꼭 필요한 역할을 맡고 있죠. 차를 마시는 순간에도 찻잔, 차침, 차바늘, 차그릇, 차받침 등 모든 도구가 제자리에 있어야 합니다.  \n\n그런데 손님이 스스로 준비한 물건은 차 도구로 인정되지 않습니다. 손님이 직접 잡거나 가져온 물건은 의식에 포함되지 않아, 정해진 도구 외에 사용하면 예의에 어긋난다고 여겨집니다.  \n\n이 규칙은 전통 차도 의식에만 적용되는 것이니, 차를 대접받을 때는 주인장이 준비한 다섯 가지 도구만을 사용해야 합니다. 직접 손을 대는 순간, 그 자리의 분위기가 달라진다는 점, 기억해 두세요.",
+    "title_line1": "일본 차도 도구5가지",
+    "title_line2": "손님이 잡으면 금지!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "차 도구 *5가지* 금지!"
+      },
+      {
+        "s": 3,
+        "text": "다섯 *부류* 구분"
+      },
+      {
+        "s": 5,
+        "text": "손님 물건 *비인정*"
+      },
+      {
+        "s": 8,
+        "text": "직접 손*잡으면* 분위기 변해"
+      }
+    ],
+    "image_queries": [
+      "Forbidden tea utensils",
+      "Japanese tea ceremony tools",
+      "Five categories tea utensils",
+      "Tea cup and saucer set",
+      "Guest's personal items",
+      "Improper hand-held tea tool",
+      "Host prepared tea utensils",
+      "Hand touching tea set"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true
+    }
   },
   {
     "topic": "퀴노아는 안데스 고원에서 재배된 단백질·미네랄이 풍부한 의사식물",
