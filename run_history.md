@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:31:43 (KST) · 기록 1748건 · 소재 681개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:32:13 (KST) · 기록 1749건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -19,7 +19,7 @@
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 55 | 0 | 10초 |
-| fetch_images | 199 | 8 | 2시간 23분 |
+| fetch_images | 200 | 8 | 2시간 23분 |
 | generate_culture_facts | 18 | 0 | 38분 50초 |
 | generate_script | 211 | 0 | 1시간 16분 |
 | generate_tts | 86 | 0 | 32분 57초 |
@@ -44,6 +44,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:32 | PC | fetch_images | fetch_images.py --index 680 --scene 10 --source pixabay --type illustration | ✅ | 5초 |  |
 | 12:31 | PC | fetch_images | fetch_images.py --index 680 --scene 10 --source commons --type photo | ❌ failed | 3초 | 장면 10: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (직접 입력한 대본). 기존 사진 유지 |
 | 12:30 | PC | fetch_images | fetch_images.py --index 680 --scene 7 --source pixabay --type illustration | ✅ | 2초 |  |
 | 12:30 | PC | fetch_images | fetch_images.py --index 680 --scene 7 --source commons --type photo | ❌ failed | 4초 | 장면 7: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (crowded mountain autumn foliage). 기존 사진 유지 |
