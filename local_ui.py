@@ -492,6 +492,7 @@ def _title_editor(_kp):
         _dm = _ld(); _dm[_vs].pop("title_opts", None); _sd(_dm); st.rerun()
 
 
+NARR_MIN = 10   # 이 글자 수 이상이면 '대본 있음'으로 본다 (짧은 쇼츠 대본도 허용)
 GEN = "generate_culture_facts.py" if not EN else "generate_topics.py"
 def script_steps(auto):
     return pre + ([S("approve.py", "--limit", str(count), "--start", str(start))] if auto else []) + [S("generate_script.py", *a), S("export_review.py", *a)]
@@ -505,7 +506,7 @@ def _ready_all():
         if i < int(start) or f.get("video_path_v6") or f.get("status_v6") == "video_done":
             continue
         if f.get("status") in ("scripted", "tts_done") or (
-                f.get("status") in ("unverified", "verified") and len(str(f.get("narration") or "").strip()) >= 60):
+                f.get("status") in ("unverified", "verified") and len(str(f.get("narration") or "").strip()) >= NARR_MIN):
             out.append(i)
     if redo.strip() and not redo_script:            # redo 칸에 넣은 번호(이미 영상이 있는 소재)도 음성·렌더링 목록에 포함
         _dbr = _ld()
@@ -643,7 +644,7 @@ with T1a:
         run(GEN, "--count", str(int(n_topics)), *(["--keywords", tk_kw.strip()] if (tk_kw or "").strip() else []))
     _db1 = _ld()
     cand1 = [i for i, f in enumerate(_db1) if i >= int(start) and f.get("status") == "unverified"
-             and len(str(f.get("narration") or "").strip()) < 60]
+             and len(str(f.get("narration") or "").strip()) < NARR_MIN]
     st.caption(f"승인 대기(unverified) 소재 {len(cand1)}개 (start_index {int(start)} 이상). 내용을 보고 승인하거나 제외하세요.")
     if cand1:
         st.dataframe([{"번호": i, "나라": _db1[i].get("country", ""), "주제": _db1[i].get("topic", ""), "분야": _db1[i].get("theme", ""),
@@ -1234,22 +1235,15 @@ with T1b:
 
     if add_mode.startswith("✍"):
         st.caption("직접 쓴 대본으로 소재를 만듭니다 (대본 완료 상태로 바로 들어감). 제목·핵심 문구·이미지 검색어는 AI가 채웁니다.")
-        m_narr = st.text_area("대본 (전체 내용, 또는 짧은 메모)", height=220, key="add_narr",
-                              help="60자 이상이면 그대로 대본으로 씁니다. 60자 미만이면 메모로 보고 AI가 내용을 보충해 소재(훅/본문/반전)와 대본을 만듭니다 (입력한 내용에 없는 사실은 넣지 않게 요청하지만 사실 확인은 필요)")
-        _short = len((m_narr or "").strip()) < 60
+        m_narr = st.text_area("대본 (전체 내용, 짧아도 됩니다)", height=220, key="add_narr",
+                              help=f"{NARR_MIN}자 이상이면 쓴 그대로 대본이 됩니다. AI가 내용을 늘리거나 보충하지 않습니다")
         m1, m2 = st.columns(2)
         m_country = m1.text_input("라벨 (선택)" if not EN else "짧은 제목 (영어, 2~5단어)", key="add_country",
                                   help="나라 이름이거나 '세계', '세계의 팁 문화' 같은 짧은 라벨. 비우면 대본에서 나라 이름을 찾고, 없으면 주제 앞부분을 씁니다" if not EN else "예: Korean Delivery Culture")
         m_topic = m2.text_input("주제 한 줄 (선택)", key="add_topic")
-        if _short and (m_narr or "").strip():
-            st.info("60자 미만이라 메모로 처리합니다: AI가 이 내용을 바탕으로 소재와 대본을 보충합니다 (Groq 사용, 승인 대기 없이 바로 대본까지).")
-        if st.button("소재 만들기" if not _short else "메모로 소재 만들기 (AI 보충)", key="add_manual_go", disabled=len((m_narr or "").strip()) < 5):
-            if _short:
-                _mm = m_narr.strip()
-                ids_ = run_cap("add_topic.py", "keyword", "--keyword", _mm, "--approve") if len(_mm) < 30 else run_cap("add_topic.py", "text", "--text", _mm, "--approve")
-            else:
-                ids_ = run_cap("add_topic.py", "manual", "--narration", m_narr, *(["--country", m_country] if m_country.strip() else []),
-                               *(["--topic", m_topic] if m_topic.strip() else []))
+        if st.button("소재 만들기", key="add_manual_go", disabled=len((m_narr or "").strip()) < NARR_MIN):
+            ids_ = run_cap("add_topic.py", "manual", "--narration", m_narr, *(["--country", m_country] if m_country.strip() else []),
+                           *(["--topic", m_topic] if m_topic.strip() else []))
             after_create(ids_, go_script)
     elif add_mode.startswith("🔑"):
         st.caption("키워드로 소재(훅/본문/반전)를 만들고 대본까지 이어갑니다. 위키백과 근거를 쓰면 사실 확인이 쉬워집니다. 모델 지식만 쓴 경우 사실 확인이 꼭 필요합니다.")
@@ -1371,7 +1365,7 @@ with T1c:
     if rows_t:
         st.dataframe([{"번호": i, "나라": db_t[i].get("country", ""), "주제": str(db_t[i].get("topic", ""))[:40],
                        "상태": ST_LABEL.get(db_t[i].get("status"), db_t[i].get("status")),
-                       "대본": "O" if len(str(db_t[i].get("narration") or "").strip()) >= 60 else "X",
+                       "대본": "O" if len(str(db_t[i].get("narration") or "").strip()) >= NARR_MIN else "X",
                        "유튜브": upload_state(db_t[i]), "사유": str(db_t[i].get("reject_reason", ""))[:30]} for i in rows_t],
                      use_container_width=True, hide_index=True, height=300)
     pick_t = st.multiselect("바꿀 소재", rows_t, key="stt_pick",
@@ -1390,13 +1384,13 @@ with T1c:
                 if a_t == "reject":
                     f["status"] = "rejected"; f["reject_reason"] = reason_t or "UI에서 폐기"
                 elif a_t == "scripted":
-                    if len(str(f.get("narration") or "").strip()) < 60:
+                    if len(str(f.get("narration") or "").strip()) < NARR_MIN:
                         msgs.append(f"{i}: 대본이 없어 건너뜀"); continue
                     for k in RV.CLEAR + ("reject_reason",):
                         f.pop(k, None)
                     f["status"] = "scripted"
                 elif a_t == "video_done":
-                    if len(str(f.get("narration") or "").strip()) < 60:
+                    if len(str(f.get("narration") or "").strip()) < NARR_MIN:
                         msgs.append(f"{i}: 대본이 없어 건너뜀"); continue
                     f.pop("reject_reason", None); f["status"] = "video_done"; f["status_v6"] = "video_done"
                 else:
