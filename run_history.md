@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 22:00:51 (KST) · 기록 1765건 · 소재 693개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 22:18:05 (KST) · 기록 1768건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -18,10 +18,10 @@
 | cleanup_media | 5 | 0 | 7초 |
 | cuts | 2 | 0 | 10초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 56 | 0 | 10초 |
+| export_review | 57 | 0 | 10초 |
 | fetch_images | 200 | 8 | 2시간 23분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 213 | 0 | 1시간 17분 |
+| generate_script | 214 | 0 | 1시간 17분 |
 | generate_tts | 87 | 0 | 33분 8초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
@@ -36,7 +36,7 @@
 | upload_to_youtube | 25 | 0 | 14분 10초 |
 | 롱폼 | 72 | 13 | 7시간 52분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 94 | 0 | 0초 |
+| 코드업데이트 | 95 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -44,6 +44,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:17 | PC | export_review | export_review.py --limit 1 --start 693 | ✅ | 0초 |  |
+| 22:17 | PC | generate_script | generate_script.py --start 693 --limit 1 | ✅ | 8초 |  |
+| 22:16 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 22:00 | PC | generate_script | generate_script.py --limit 1 --start 682 | ✅ | 8초 |  |
 | 22:00 | PC | export_review | export_review.py --limit 1 --start 682 | ✅ | 0초 |  |
 | 22:00 | PC | promote_ready | promote_ready.py --start 682 | ✅ | 0초 |  |
