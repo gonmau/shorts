@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-14 12:32:13 (KST) · 기록 1749건 · 소재 681개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-14 12:32:58 (KST) · 기록 1752건 · 소재 681개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 155 | 0 | 37초 |
+| apply_review | 156 | 0 | 37초 |
 | approve | 46 | 0 | 10초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 75 | 0 | 13시간 27분 |
@@ -22,12 +22,12 @@
 | fetch_images | 200 | 8 | 2시간 23분 |
 | generate_culture_facts | 18 | 0 | 38분 50초 |
 | generate_script | 211 | 0 | 1시간 16분 |
-| generate_tts | 86 | 0 | 32분 57초 |
+| generate_tts | 87 | 0 | 33분 8초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 56 | 0 | 1분 36초 |
-| promote_ready | 155 | 0 | 32초 |
+| promote_ready | 156 | 0 | 33초 |
 | redo_videos | 28 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -44,6 +44,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 12:32 | PC | generate_tts | generate_tts.py --index 680 | ✅ | 11초 |  |
+| 12:32 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 12:32 | PC | promote_ready | promote_ready.py --start 680 | ✅ | 0초 |  |
 | 12:32 | PC | fetch_images | fetch_images.py --index 680 --scene 10 --source pixabay --type illustration | ✅ | 5초 |  |
 | 12:31 | PC | fetch_images | fetch_images.py --index 680 --scene 10 --source commons --type photo | ❌ failed | 3초 | 장면 10: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (직접 입력한 대본). 기존 사진 유지 |
 | 12:30 | PC | fetch_images | fetch_images.py --index 680 --scene 7 --source pixabay --type illustration | ✅ | 2초 |  |
