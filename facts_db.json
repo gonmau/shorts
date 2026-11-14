@@ -69520,7 +69520,7 @@
     "twist": "그 풍경을 힘들게 얻어낸 나 자신이기도 하니까요.",
     "caveat": "",
     "narration": "단풍은 가까운 공원에서도 볼 수 있는데, 사람들은 왜 몇 시간씩 힘들게 산을 올라갈까요? 재미있는 건 산에 오른 사람들이 정작 단풍보다 등산 과정과 정상에서 찍은 사진을 더 오래 기억한다는 겁니다. 여기에는 심리학적으로 흥미로운 이유가 있습니다. 사람은 무언가를 얻기 위해 많은 노력을 들이면, 그 결과에도 더 큰 가치를 부여하는 경향이 있습니다. 이를 '노력 정당화'라고 합니다. 쉽게 말해 편하게 본 단풍보다 땀 흘려 올라가서 만난 단풍이 더 특별하게 느껴지는 것이죠. 그래서 사람들은 단풍이 절정이라는 소식에 서둘러 산을 찾고, 힘든 등산길도 기꺼이 감수합니다. 결국 우리가 산에서 얻고 싶은 건 단풍만이 아닙니다. 그 풍경을 힘들게 얻어낸 나 자신이기도 하니까요.",
-    "status": "scripted",
+    "status": "video_done",
     "confidence": "user",
     "verify_note": "직접 입력한 대본",
     "fact_verifiability": "user",
@@ -69664,6 +69664,9 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0680_단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화.mp4",
+    "status_v6": "video_done"
   }
 ]
