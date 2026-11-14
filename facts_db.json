@@ -69605,33 +69605,35 @@
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "USAID Pakistan",
-        "license": "Public domain",
-        "title": "Honey Value Chain Development Initiative under the USAID's Entrepreneurs Project (81121514",
-        "page": "https://commons.wikimedia.org/wiki/File:Honey_Value_Chain_Development_Initiative_under_the_USAID%27s_Entrepreneurs_Project_(8112151420).jpg",
-        "id": "c:70768771"
+        "source": "pixabay",
+        "user": "Mohamed_hassan",
+        "page": "https://pixabay.com/vectors/chart-effort-success-business-man-5746589/",
+        "id": 5746589,
+        "type": "illustration"
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "Pexels",
-        "page": "https://pixabay.com/photos/man-person-power-strength-strong-1282232/",
-        "id": 1282232
+        "user": "Mohamed_hassan",
+        "page": "https://pixabay.com/illustrations/rock-ball-struggle-push-man-hill-3650793/",
+        "id": 3650793,
+        "type": "illustration"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "neelam279",
-        "page": "https://pixabay.com/photos/cotoneaster-red-berries-leaves-10487344/",
-        "id": 10487344
+        "user": "Haninabz",
+        "page": "https://pixabay.com/illustrations/school-kid-school-kid-walking-9786936/",
+        "id": 9786936,
+        "type": "illustration"
       },
       {
         "scene": 7,
         "source": "pixabay",
-        "user": "Kanenori",
-        "page": "https://pixabay.com/photos/mountain-peak-clouds-sea-of-clouds-5678172/",
-        "id": 5678172
+        "user": "u_1h4vbcdkpq",
+        "page": "https://pixabay.com/illustrations/autumn-leaves-fall-nature-foliage-9503881/",
+        "id": 9503881,
+        "type": "illustration"
       },
       {
         "scene": 8,
