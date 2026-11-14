@@ -69510,5 +69510,153 @@
       ],
       "none": false
     }
+  },
+  {
+    "country": "단풍놀이, 등산, 가을여행, 인간심리, 노력정당화, 자연, 여행의역설, 세계문화",
+    "topic": "사람들은 왜 아름다운 풍경을 편하게 보는 대신 힘들게 산에 올라가서 경험하려 할까?",
+    "theme": "직접 입력",
+    "hook": "단풍은 가까운 공원에서도 볼 수 있는데, 사람들은 왜 몇 시간씩 힘들게 산을 올라갈까요?",
+    "body": "재미있는 건 산에 오른 사람들이 정작 단풍보다 등산 과정과 정상에서 찍은 사진을 더 오래 기억한다는 겁니다. 여기에는 심리학적으로 흥미로운 이유가 있습니다. 사람은 무언가를 얻기 위해 많은 노력을 들이면, 그 결과에도 더 큰 가치를 부여하는 경향이 있습니다. 이를 '노력 정당화'라고 합니다. 쉽게 말해 편하게 본 단풍보다 땀 흘려 올라가서 만난 단풍이 더 특별하게 느껴지는 것이죠. 그래서 사람들은 단풍이 절정이라는 소식에 서둘러 산을 찾고, 힘든 등산길도 기꺼이 감수합니다. 결국 우리가 산에서 얻고 싶은 건 단풍만이 아닙니다.",
+    "twist": "그 풍경을 힘들게 얻어낸 나 자신이기도 하니까요.",
+    "caveat": "",
+    "narration": "단풍은 가까운 공원에서도 볼 수 있는데, 사람들은 왜 몇 시간씩 힘들게 산을 올라갈까요? 재미있는 건 산에 오른 사람들이 정작 단풍보다 등산 과정과 정상에서 찍은 사진을 더 오래 기억한다는 겁니다. 여기에는 심리학적으로 흥미로운 이유가 있습니다. 사람은 무언가를 얻기 위해 많은 노력을 들이면, 그 결과에도 더 큰 가치를 부여하는 경향이 있습니다. 이를 '노력 정당화'라고 합니다. 쉽게 말해 편하게 본 단풍보다 땀 흘려 올라가서 만난 단풍이 더 특별하게 느껴지는 것이죠. 그래서 사람들은 단풍이 절정이라는 소식에 서둘러 산을 찾고, 힘든 등산길도 기꺼이 감수합니다. 결국 우리가 산에서 얻고 싶은 건 단풍만이 아닙니다. 그 풍경을 힘들게 얻어낸 나 자신이기도 하니까요.",
+    "status": "scripted",
+    "confidence": "user",
+    "verify_note": "직접 입력한 대본",
+    "fact_verifiability": "user",
+    "fact_risk": "user-pending",
+    "narration_user_edited": true,
+    "created_at": "2026-11-14T03:19:15.584786+00:00",
+    "edit_points_text": "단풍놀이를 소재로 사람들이 힘든 과정을 감수하면서까지 산에 오르는 심리를 흥미롭게 풀어주세요. 단순히 운동이나 건강, 자연을 즐기기 위해서라는 평범한 설명은 피해주세요. 짧은 계절의 아름다움을 놓치고 싶지 않은 마음, 직접 노력해서 도착한 풍경에 더 큰 가치를 부여하는 심리, 고생 끝에 얻는 성취감 등을 중심으로 전개해주세요. 심리학적 개념이 등장한다면 일반 시청자도 이해할 수 있도록 자연스럽게 설명해주세요. 과장된 심리 진단은 피하고, 마지막에는 시청자가 자신의 경험을 떠올릴 수 있는 여운 있는 문장으로 마무리해주세요. 존댓말 구어체로 작성해주세요.",
+    "title_line1": "공원에도 단풍",
+    "title_line2": "왜 산을 오를까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "왜 *산*을 오른다?"
+      },
+      {
+        "s": 4,
+        "text": "*노력*이 가치를 높인다"
+      },
+      {
+        "s": 5,
+        "text": "*노력정당화*란?"
+      },
+      {
+        "s": 6,
+        "text": "땀 흘린 *단풍*가 특별"
+      },
+      {
+        "s": 9,
+        "text": "힘든 길, *나*가 만든"
+      }
+    ],
+    "image_queries": [
+      "mountain trail autumn",
+      "hiker taking photo summit",
+      "forest path psychology",
+      "effort increases value",
+      "effort justification concept",
+      "sweaty climb autumn leaves",
+      "crowded mountain autumn foliage",
+      "mountain view beyond leaves",
+      "hard trail personal achievement",
+      "직접 입력한 대본"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true
+    },
+    "image_queries_done": [
+      "mountain trail autumn",
+      "hiker taking photo summit",
+      "forest path psychology",
+      "effort increases value",
+      "effort justification concept",
+      "sweaty climb autumn leaves",
+      "crowded mountain autumn foliage",
+      "mountain view beyond leaves",
+      "hard trail personal achievement",
+      "직접 입력한 대본"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/natural-autumn-yellow-leaves-6693234/",
+        "id": 6693234
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "asmuSe",
+        "page": "https://pixabay.com/photos/travel-lake-feet-resting-hiking-1749508/",
+        "id": 1749508
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/forest-trees-woods-nature-outdoors-1868028/",
+        "id": 1868028
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "USAID Pakistan",
+        "license": "Public domain",
+        "title": "Honey Value Chain Development Initiative under the USAID's Entrepreneurs Project (81121514",
+        "page": "https://commons.wikimedia.org/wiki/File:Honey_Value_Chain_Development_Initiative_under_the_USAID%27s_Entrepreneurs_Project_(8112151420).jpg",
+        "id": "c:70768771"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/man-person-power-strength-strong-1282232/",
+        "id": 1282232
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "neelam279",
+        "page": "https://pixabay.com/photos/cotoneaster-red-berries-leaves-10487344/",
+        "id": 10487344
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/mountain-peak-clouds-sea-of-clouds-5678172/",
+        "id": 5678172
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "lumoplank",
+        "license": "CC0",
+        "title": "Matsumoto Castle - Matsumoto6549.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_-_Matsumoto6549.jpg",
+        "id": "c:196015857"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "TrekGoat",
+        "page": "https://pixabay.com/photos/mountain-hikers-hiking-adventure-1210900/",
+        "id": 1210900
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "PublicDomainPictures",
+        "page": "https://pixabay.com/photos/index-finger-pointing-you-hand-me-315754/",
+        "id": 315754
+      }
+    ],
+    "image_source": "pixabay"
   }
 ]
