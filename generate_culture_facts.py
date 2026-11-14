@@ -192,9 +192,13 @@ def filter_new(batch: list, db: list) -> list:
 # ---------- 위키백과 근거 기반 생성 ----------
 def build_wiki_prompt(cands: list) -> str:
     blocks = "\n\n".join(
-        f"[{i}] 나라: {c['country']} / 분야: {c['theme']} / 위키 문서: {c['title']}\n발췌: {c['extract'][:700]}"
+        (f"[{i}] 나라: {c['country']} / 분야: {c['theme']} / 위키 문서: {c['title']}\n발췌: {c['extract'][:700]}" if c.get("country")
+         else f"[{i}] 주제어: {c.get('keyword', '')} / 위키 문서: {c['title']}\n발췌: {c['extract'][:700]}")
         for i, c in enumerate(cands, start=1)
     )
+    free = any(not c.get("country") for c in cands)
+    free_rule = ("\n- '주제어' 후보는 특정 나라에 묶이지 않아도 됨: 발췌문에 나온 나라·사례만으로 풀되, 발췌문에 없는 나라 사례를 덧붙이지 말 것. "
+                 "label 에는 한 나라 소재면 나라 이름(한국어), 여러 나라·세계 공통이면 '세계' 또는 소재를 가리키는 2~4단어, field 에는 음식/관습/법·제도/언어/축제/생활/역사 중 하나를 쓸 것" if free else "")
     return f"""아래는 위키백과 발췌문 {len(cands)}개야. 각 발췌문에서 유튜브 쇼츠 소재를 최대 1개씩 만들어줘.
 
 규칙:
@@ -203,7 +207,7 @@ def build_wiki_prompt(cands: list) -> str:
 - 시청자가 "어?" 하고 멈출 의외의 장면/상황/규칙 하나를 골라 사람이 곤란하거나 놀라는 장면으로 풀 것
 - 개요 설명, 단순 정의, 지루하거나 너무 일반적인 내용, 종교 갈등이거나 (분야가 '영토/국경','군사/전쟁사','정치/체제'인 발췌문은 예외: 지난 역사나 제도·지리 사실로만, 잔혹한 묘사 없이, 특정 진영을 편들지 말고 중립적으로 쓰고, 한국이 당사자인 영유권·역사 분쟁은 제외), 성(性)·성매매·노출, 마약, 자살/자해, 학대/폭력/고문, 사형, 학살·테러, 인종·성소수자 갈등처럼 민감하거나 불편한 내용이면 그 번호는 건너뛸 것 (가족이 함께 봐도 괜찮은 소재만)
 - "모든", "항상", "세계 최초" 같은 단정은 발췌문이 분명히 말할 때만. 일부 지역/일부 사람의 관습이면 범위를 한정할 것
-- 한 소재는 한 가지 사실에 집중할 것
+- 한 소재는 한 가지 사실에 집중할 것{free_rule}
 - 한국 사람 기준으로 정말 낯선 소재만 고를 것: 한국에도 비슷한 관습·제도가 있거나 한국인이 이미 아는 이야기(예: 이미 유명한 문화, 한국에서도 흔한 규칙)는 제외하고, 한국의 상식과 반대이거나 한국에서는 상상하기 어려운 것을 우선할 것. 자연스러우면 훅에서 한국과의 대비를 살려도 좋음
 - 한국 사람이 가보고 싶어 하는 나라이거나, 직접 가기 어려워도 "거기선 도대체 어떻게 사는지" 궁금증이 풀리는 소재를 우선할 것 (현지에서 실제로 보고 겪을 법한 장면: 시장, 거리, 교통, 식당, 명절, 일상 규칙). 가본 듯한 간접 체험이 되게 쓸 것
 - 훅(hook)은 첫 3초에 승부가 납니다: 금액·숫자·벌금·금지·반전 중 하나가 들어간 구체적 장면으로 쓰고, "~에서는 ~합니다!" 식의 밋밋한 설명문형은 피할 것 (좋은 예: "하루 차값보다 더 번다?", "도시 전체가 장미 따기 위해 쉬는 날이 있다면?", "조용히 안 타면 30분 정차")
@@ -212,7 +216,7 @@ def build_wiki_prompt(cands: list) -> str:
 
 JSON 배열로만 응답 (설명/마크다운 금지). src는 위 번호:
 [
-  {{"src": 1, "topic": "주제 한 줄 요약", "hook": "영상 시작 3초용 후킹 문장", "body": "본문 2~3문장 (배경 포함)",
+  {{"src": 1, "label": "나라 또는 짧은 라벨(주제어 후보만)", "field": "분야 한 단어(주제어 후보만)", "topic": "주제 한 줄 요약", "hook": "영상 시작 3초용 후킹 문장", "body": "본문 2~3문장 (배경 포함)",
     "twist": "반전이나 추가 정보 1문장", "caveat": "이 사실의 한계 한 문장 (어디서/누구에게/언제)"}}
 ]"""
 
@@ -249,8 +253,9 @@ def generate_wiki_batch(client: Groq, model: str, cands: list) -> list:
         except (TypeError, ValueError, IndexError):
             continue
         f.pop("src", None)
+        _label, _field = str(f.pop("label", "") or "").strip(), str(f.pop("field", "") or "").strip()
         f.update({
-            "country": c["country"], "theme": c["theme"], "wiki_title": c["title"], "source_url": c["url"],
+            "country": c["country"] or _label or str(f.get("topic", ""))[:14].strip() or "세계", "theme": c["theme"] or _field or "생활문화", "wiki_title": c["title"], "source_url": c["url"],
             "source_excerpt": str(c.get("extract", ""))[:900],   # 근거 점검(grounding.py)용 위키 발췌문
             "verify_note": c["title"],            # 영어 위키 제목: 사람이 검수/이미지 검색할 때 쓰는 키워드
             "confidence": "source",               # 위키백과 발췌문 기반 (LLM 기억 기반 아님)
@@ -259,9 +264,72 @@ def generate_wiki_batch(client: Groq, model: str, cands: list) -> list:
     return out
 
 
-def generate_wiki_facts(client: Groq, model: str, count: int, db: list) -> list:
+def _json_list(text):
+    try:
+        a = json.loads(text[text.find("["):text.rfind("]") + 1])
+        return [str(x).strip() for x in a if str(x).strip()]
+    except Exception:
+        return []
+
+
+def _ask(client, model, prompt, tokens=1500):
+    kw = {"max_completion_tokens": max(tokens, 3000), "extra_body": {"reasoning_effort": "low"}} if "gpt-oss" in str(model) else {"max_completion_tokens": tokens}
+    c = client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], temperature=0.7, **kw)
+    return c.choices[0].message.content or ""
+
+
+def translate_keywords(client, model, kws):
+    """한국어 주제어를 영어 위키백과 검색어로 바꾼다 (영어면 그대로). 실패하면 원문."""
+    if not any(re.search(r"[가-힣]", k) for k in kws):
+        return list(kws)
+    try:
+        out = _json_list(_ask(client, model, "다음 주제어를 영어 위키백과 검색어(2~5단어)로 바꿔라. 같은 순서, 같은 개수의 JSON 문자열 배열만 출력:\n" + json.dumps(list(kws), ensure_ascii=False)))
+        if len(out) == len(kws):
+            return out
+    except Exception as e:
+        print(f"  주제어 번역 실패, 원문으로 검색합니다: {type(e).__name__}")
+    return list(kws)
+
+
+def auto_keywords(client, model, n, db):
+    """이미 쓴 소재와 겹치지 않는, 세계 문화·생활 상식 영어 위키 검색어 n개를 AI가 제안한다. 실패하면 []"""
+    used = "\n".join(f"- {str(f.get('topic', ''))[:40]}" for f in db[-80:] if f.get("topic"))
+    p = (f"유튜브 쇼츠 '세계 문화 상식' 채널용으로, 영어 위키백과에서 검색할 주제어 {n}개를 제안해라.\n"
+         "- 나라에 묶이지 않아도 된다: 세계 여러 나라에서 다르게 나타나는 관습·제도·음식·언어·생활 규칙, 사물·풍습의 유래, 독특한 직업·시설·행사 등\n"
+         "- 위키백과에 문서가 있을 만한 구체적인 2~5단어 영어 검색어 (너무 일반적인 'culture', 'food' 같은 단어 금지)\n"
+         "- 서로 다른 분야·각도로. 종교 논쟁·정치·성·폭력·참사 관련은 제외\n"
+         f"- 아래 이미 만든 소재와 겹치지 않게:\n{used or '(없음)'}\n"
+         "JSON 문자열 배열만 출력 (설명 금지).")
+    try:
+        out = _json_list(_ask(client, model, p, 1200))
+        return out[:n]
+    except Exception as e:
+        print(f"  주제어 자동 제안 실패: {type(e).__name__}: {str(e)[:80]}")
+        return []
+
+
+def generate_wiki_facts(client: Groq, model: str, count: int, db: list, keywords=None, mode: str = "topic") -> list:
+    """mode: topic=주제어(나라 무관) 위주, 모자라면 나라×분야로 보충 / country=기존 방식 / mixed=반반. keywords 를 주면 그것부터 쓴다."""
     session = requests.Session()
-    cands = wiki_source.gather(session, db, count)
+    cands = []
+    kws = []
+    if keywords:
+        kws = translate_keywords(client, model, [k for k in keywords if str(k).strip()])
+    if mode in ("topic", "mixed") or kws:
+        want = len(kws) or (count * 2 if mode == "topic" else count)
+        if not kws:
+            kws = auto_keywords(client, model, want, db)
+        print(f"주제어 {len(kws)}개: {', '.join(kws)[:200]}")
+        try:
+            cands = wiki_source.gather_keywords(session, db, kws, per_kw=2 if keywords else 1)
+        except Exception as e:
+            print(f"  주제어 위키 검색 실패: {type(e).__name__}")
+    if mode in ("country", "mixed") or len(cands) < count:
+        need = count if mode == "country" else (count // 2 if mode == "mixed" else max(0, count - len(cands)))
+        if need > 0:
+            if mode == "topic" and not keywords:
+                print(f"  주제어 후보 {len(cands)}개 < {count}개: 부족분 {need}개는 나라×분야 방식으로 보충")
+            cands += wiki_source.gather(session, db, need)
     print(f"위키백과 후보 {len(cands)}개 수집")
     all_new: list = []
     BATCH = 3
@@ -415,6 +483,9 @@ def main():
     parser.add_argument("--count", type=int, default=20, help="생성할 소재 개수 (기본 20)")
     parser.add_argument("--source", choices=["wiki", "llm"], default="wiki",
                         help="wiki=위키백과 발췌문 기반(기본), llm=모델 기억 기반(위키 접속 실패 시 자동 대체)")
+    parser.add_argument("--keywords", default="", help="주제어(쉼표 구분, 한국어 가능). 주면 이 주제어로 위키 문서를 찾아 소재를 만든다 (나라 무관)")
+    parser.add_argument("--wiki-mode", choices=["topic", "country", "mixed"], default=os.environ.get("WIKI_MODE", "topic"),
+                        help="topic=주제어(나라 무관) 위주(기본), country=나라×분야, mixed=반반")
     args = parser.parse_args()
 
     api_key = os.environ.get("GROQ_API_KEY")
@@ -432,7 +503,7 @@ def main():
     new_facts = []
     if args.source == "wiki":
         try:
-            new_facts = generate_wiki_facts(client, model, args.count, db)
+            new_facts = generate_wiki_facts(client, model, args.count, db, [k for k in re.split(r"[,;\n]", args.keywords) if k.strip()], args.wiki_mode)
         except Exception as e:
             print(f"위키백과 방식 실패 ({type(e).__name__}: {str(e)[:120]}) -> 모델 기억 방식으로 대체")
         if len(new_facts) < args.count:

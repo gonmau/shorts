@@ -637,8 +637,10 @@ def _ext_panel(pfx, default_idx):
 with T1a:
     st.caption("🎯 새 소재의 선호 분야는 '2 대본 › 대본 만들기'의 '내 스타일'에서 정합니다.")
     n_topics = st.number_input("새 소재 개수", 1, 30, 12, help="위키백과 기반으로 새 소재(unverified)를 만듭니다. 한 번에 12개 이하 권장 (Groq 한도)")
+    tk_kw = st.text_input("주제어 (선택, 쉼표로 여러 개)", key="topic_kw", placeholder="예: 팁 문화, 줄서기 예절, 길거리 음식" if not EN else "e.g. street food, tipping",
+                          help="비우면 AI가 세계 문화·생활 상식 주제어를 알아서 제안해 위키백과에서 근거 문서를 찾습니다 (나라 무관). 적으면 그 주제어로 문서를 찾습니다. 한국어로 적어도 됩니다") if not EN else ""
     if st.button("소재 만들기", key="st1_make"):
-        run(GEN, "--count", str(int(n_topics)))
+        run(GEN, "--count", str(int(n_topics)), *(["--keywords", tk_kw.strip()] if (tk_kw or "").strip() else []))
     _db1 = _ld()
     cand1 = [i for i, f in enumerate(_db1) if i >= int(start) and f.get("status") == "unverified"
              and len(str(f.get("narration") or "").strip()) < 60]

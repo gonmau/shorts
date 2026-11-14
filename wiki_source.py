@@ -159,3 +159,27 @@ def gather(session, db, count, rng=random, sleep=0.6):
             cands.append({**h, "country": ko, "theme": theme})
         time.sleep(sleep)
     return cands
+
+
+def gather_keywords(session, db, keywords, sleep=0.6, per_kw=1):
+    """나라와 무관하게 '주제어'(영어 위키 검색어)로 후보를 모은다. 키워드마다 per_kw개, 서로 다른 문서만. 검색이 계속 실패하면 예외."""
+    skip = used_titles(db)
+    cands, errors = [], 0
+    for kw in keywords:
+        kw = str(kw).strip()
+        if not kw:
+            continue
+        try:
+            hits = search(session, "", kw, skip, limit=8)
+        except Exception as e:
+            errors += 1
+            print(f"  위키 검색 실패 ({kw}): {type(e).__name__}")
+            if errors >= 3 and not cands:
+                raise
+            time.sleep(sleep)
+            continue
+        for h in hits[:per_kw]:
+            skip.add(_norm(h["title"]))
+            cands.append({**h, "country": "", "theme": "", "keyword": kw})
+        time.sleep(sleep)
+    return cands
