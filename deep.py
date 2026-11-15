@@ -259,6 +259,70 @@ def _save_db(db):
     DB_FILE.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+# ---------------------------------------------------------------- 사진·음성 캐시 (다시 만들 때 재사용)
+CACHE = BASE / "deep_cache"
+
+
+def cache_dir(src, part):
+    return CACHE / str(src) / str(part)
+
+
+def _stash(i, f, rec, LS):
+    """가상 소재 i 의 사진 폴더와 음성을 deep_cache/<원본>/<섹션>/ 로 복사해 둔다"""
+    from common import visual_dir
+    src, part = f.get("deep_of"), f.get("deep_part")
+    if src is None or part is None:
+        return
+    dst = cache_dir(src, part)
+    shutil.rmtree(dst, ignore_errors=True)
+    dst.mkdir(parents=True, exist_ok=True)
+    vd = visual_dir(BASE, i, f)
+    if vd.exists():
+        shutil.copytree(vd, dst / "visuals")
+    meta = {"queries": list(f.get("image_queries") or []), "tts_hash": rec.get("tts_hash", ""), "audio": "", "timing": ""}
+    if LS is not None:
+        for name, fld in (("audio", "audio"), ("timing", "timing")):
+            pth = rec.get(fld)
+            if pth and Path(pth).exists():
+                (dst / "audio").mkdir(exist_ok=True)
+                shutil.copy2(pth, dst / "audio" / Path(pth).name.replace(f"lf_{i:04d}_", "lf_PFX_", 1))
+                meta[name] = Path(pth).name.replace(f"lf_{i:04d}_", "lf_PFX_", 1)
+    (dst / "meta.json").write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
+
+
+def _restore(src, part, i, f, LS):
+    """캐시된 사진·음성을 새 가상 소재 i 로 되돌린다. 검색어가 바뀐 장면 사진은 지워 그 장면만 다시 받게 한다. -> rec 에 넣을 필드"""
+    from common import visual_dir
+    dst = cache_dir(src, part)
+    try:
+        meta = json.loads((dst / "meta.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    vd = visual_dir(BASE, i, f)
+    if (dst / "visuals").exists():
+        shutil.rmtree(vd, ignore_errors=True)
+        shutil.copytree(dst / "visuals", vd)
+        oldq, newq = list(meta.get("queries") or []), list(f.get("image_queries") or [])
+        for n in range(1, max(len(oldq), len(newq)) + 1):
+            if n > len(newq) or n > len(oldq) or oldq[n - 1] != newq[n - 1]:
+                for ext in ("png", "jpg"):
+                    (vd / f"scene_{n:02d}.{ext}").unlink(missing_ok=True)
+    out = {}
+    if meta.get("audio") and (dst / "audio" / meta["audio"]).exists():
+        Path(LS.AUDIO_DIR).mkdir(exist_ok=True)
+        pref = f"lf_{i:04d}_"
+        for fn in (dst / "audio").iterdir():
+            shutil.copy2(fn, Path(LS.AUDIO_DIR) / fn.name.replace("lf_PFX_", pref, 1))
+        out = {"audio": str(Path(LS.AUDIO_DIR) / meta["audio"].replace("lf_PFX_", pref, 1)), "tts_hash": meta.get("tts_hash", "")}
+        if meta.get("timing"):
+            out["timing"] = str(Path(LS.AUDIO_DIR) / meta["timing"].replace("lf_PFX_", pref, 1))
+    return out
+
+
+def clear_cache(src=None):
+    shutil.rmtree(CACHE / str(src) if src is not None else CACHE, ignore_errors=True)
+
+
 def cleanup():
     """facts_db.json 에서 가상 소재(deep_of)와 그 대본 캐시·사진·음성 폴더를 지운다. -> 지운 개수"""
     try:
@@ -269,13 +333,22 @@ def cleanup():
     if not vidx:
         return 0
     try:
+        import longform_script as LS
+        st0 = LS.load_scripts()
+    except Exception:
+        LS, st0 = None, {}
+    for i in vidx:   # 지우기 전에 사진·음성을 deep_cache 로 옮겨 둔다 (다시 만들 때 재사용)
+        try:
+            _stash(i, db[i], (st0.get(str(i)) or {}), LS)
+        except Exception as e:
+            print(f"    [심층편] 캐시 보관 실패 {i}: {type(e).__name__}: {e}", flush=True)
+    try:
         from common import visual_dir
         for i in vidx:
             shutil.rmtree(visual_dir(BASE, i, db[i]), ignore_errors=True)
     except Exception:
         pass
     try:
-        import longform_script as LS
         st = LS.load_scripts()
         for i in vidx:
             st.pop(str(i), None)
@@ -313,8 +386,13 @@ def materialize(src, data):
     for k, (i, s) in enumerate(zip(new, data["sections"]), 1):
         ns_ = len(LS.split_sentences(s["narration"]))
         kw_ = [k_ for k_ in (s.get("keywords") or []) if isinstance(k_, dict) and 1 <= int(k_.get("sentence", 0)) <= ns_]
-        LS.update_rec(i, {"narration": s["narration"], "keywords": kw_, "compare": None, "recap": s.get("recap", ""),
-                          "broll": [], "clip_queries": list(s.get("clip_queries") or [q for q in qs if q][:3]), "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
+        _rs = {}
+        try:
+            _rs = _restore(src, k, i, db[i], LS)
+        except Exception as e:
+            print(f"    [심층편] 캐시 복원 실패 {k}: {type(e).__name__}: {e}", flush=True)
+        LS.update_rec(i, {**_rs, "narration": s["narration"], "keywords": kw_, "compare": None, "recap": s.get("recap", ""),
+                          "broll": [], "clip_queries": list(s.get("clip_queries") or [q for q in (db[i].get("image_queries") or []) if q][:3]), "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
                           "title2": str(item.get("country", ""))})
     return new
 
@@ -324,11 +402,12 @@ def save_manual(idx, sections, style="story", minutes=8, extra=None):
     """UI 에서 직접 입력·수정·삭제·순서 변경한 섹션 목록을 저장 (모두 잠금). extra: intro_text/outro_text/recap/recap_cards/thumb"""
     d = load()
     cur = d.get(str(idx)) or {}
-    secs = []
+    secs, order = [], []
     for s in sections:
         narr = str(s.get("narration", "")).strip()
         if not narr:
             continue
+        order.append(s.get("_from"))
         secs.append({"title": str(s.get("title", "")).strip()[:28] or narr[:12], "narration": narr, "keywords": s.get("keywords") or [],
                      "recap": str(s.get("recap", "")).strip() or str(s.get("title", "")).strip(), "image_queries": [q for q in (s.get("image_queries") or []) if q],
                      "angle": s.get("angle", "직접 입력"), "locked": True})
@@ -341,4 +420,18 @@ def save_manual(idx, sections, style="story", minutes=8, extra=None):
             new[k] = v
     d[str(idx)] = new
     save(d)
+    try:   # 섹션을 지우거나 순서를 바꿨으면 사진·음성 캐시도 같은 자리로 옮긴다
+        if any(o is not None for o in order) and order != list(range(1, len(order) + 1)):
+            root = CACHE / str(idx)
+            if root.exists():
+                tmp = CACHE / f"_tmp_{idx}"
+                shutil.rmtree(tmp, ignore_errors=True)
+                tmp.mkdir(parents=True)
+                for k, o in enumerate(order, 1):
+                    if o is not None and (root / str(o)).exists():
+                        shutil.copytree(root / str(o), tmp / str(k))
+                shutil.rmtree(root, ignore_errors=True)
+                shutil.move(str(tmp), str(root))
+    except Exception as e:
+        print(f"    [심층편] 캐시 정리 실패: {e}", flush=True)
     return new

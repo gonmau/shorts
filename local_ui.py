@@ -3023,6 +3023,7 @@ with TL:
                     _qq = [q.strip() for q in re.split(r"[,\n]", str(r_.get("사진 검색어(영어, 쉼표)") or "")) if q.strip() and q.strip() != "nan"]
                     _ordv = r_.get("순서")
                     _rows.append((float(_ordv) if _ordv == _ordv and _ordv is not None else 999.0, {
+                        "_from": (int(_oid) + 1) if (_old is not None) else None,
                         "title": "" if _tt == "nan" else _tt, "narration": _nar, "recap": str(r_.get("요약") or "").replace("nan", "").strip(),
                         "image_queries": _qq or (_old or {}).get("image_queries") or [],
                         "keywords": ((_old or {}).get("keywords") or []) if _old and _old.get("narration") == _nar else [],
@@ -3047,6 +3048,32 @@ with TL:
                                             "키워드": ", ".join(k.get("text", "") for k in (x.get("keywords") or []) if isinstance(k, dict)),
                                             "사진 검색어": len(x.get("image_queries") or [])} for k_, x in enumerate(_ds)]),
                              use_container_width=True, hide_index=True)
+                with st.expander("🖼 섹션 사진 (다시 만들 때 재사용 · 일부만 교체)", expanded=False):
+                    st.caption("영상을 한 번 만들면 섹션별 사진·음성이 보관됩니다. 다시 만들 때 그대로 쓰고, 사진 검색어를 고친 장면만 새로 받습니다. 여기서 마음에 안 드는 사진을 지우거나 내 사진으로 바꿀 수 있습니다.")
+                    for _k, _x in enumerate(_ds, 1):
+                        _cd = _DP.cache_dir(int(_dsrc), _k) / "visuals"
+                        _fs = sorted(_cd.glob("scene_*.png")) if _cd.exists() else []
+                        if not _fs:
+                            st.caption(f"섹션 {_k} {_x.get('title', '')}: 보관된 사진 없음 (영상을 한 번 만들면 생깁니다)")
+                            continue
+                        st.markdown(f"**섹션 {_k}. {_x.get('title', '')}** — 사진 {len(_fs)}장")
+                        _gc = st.columns(min(6, len(_fs)))
+                        for _j, _f in enumerate(_fs):
+                            _gc[_j % len(_gc)].image(str(_f), caption=_f.stem.replace("scene_", ""), use_container_width=True)
+                        _z1, _z2, _z3 = st.columns([2, 1, 2])
+                        _dn = _z1.multiselect("지울 사진 번호 (다음 합성 때 다시 받음)", [int(f_.stem.split("_")[1]) for f_ in _fs], key=f"dp_del_{int(_dsrc)}_{_k}")
+                        if _z2.button("🗑 삭제", key=f"dp_delb_{int(_dsrc)}_{_k}", disabled=not _dn):
+                            for _n in _dn:
+                                (_cd / f"scene_{_n:02d}.png").unlink(missing_ok=True)
+                            st.rerun()
+                        _rn = _z3.number_input("바꿀 사진 번호", 1, max(1, len(_fs)), 1, key=f"dp_rn_{int(_dsrc)}_{_k}")
+                        _ru = _z3.file_uploader("내 사진으로 교체", type=["jpg", "jpeg", "png"], key=f"dp_ru_{int(_dsrc)}_{_k}_{int(_rn)}")
+                        if _ru is not None and _z3.button("교체 저장", key=f"dp_rub_{int(_dsrc)}_{_k}"):
+                            from PIL import Image as _PI2
+                            _PI2.open(_ru).convert("RGB").save(_cd / f"scene_{int(_rn):02d}.png")
+                            st.rerun()
+                    if st.button("🧹 보관된 사진·음성 모두 지우기 (처음부터 다시 받기)", key=f"dp_cc_{int(_dsrc)}"):
+                        _DP.clear_cache(int(_dsrc)); st.rerun()
 
     def _lf_plan():
         try:

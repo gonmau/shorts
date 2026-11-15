@@ -4,3 +4,4 @@ client_secret*.json
 _backup/
 __pycache__/
 overlay_images/
+deep_cache/
