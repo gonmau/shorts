@@ -79,6 +79,21 @@ def _chat(client, models, system, prompt, tokens=3500):
                 return d, m
         except Exception as e:
             print(f"    [확장대본] {m} 실패: {type(e).__name__}: {str(e)[:100]}", flush=True)
+            if "RateLimit" in type(e).__name__ or "429" in str(e):
+                # 한도 초과: 약한 모델로 바로 넘어가지 않고 안내된 시간만큼 기다렸다가 같은 모델로 한 번 더
+                mw = re.search(r"try again in (?:(\d+)m)?(?:(\d+(?:\.\d+)?)s)?", str(e))
+                w = (int(mw.group(1) or 0) * 60 + float(mw.group(2) or 0)) if mw else 20
+                w = min(max(w, 5), 90) + 1
+                print(f"    [확장대본] 한도 초과 - {w:.0f}초 기다린 뒤 {m} 다시 시도", flush=True)
+                time.sleep(w)
+                try:
+                    r = client.chat.completions.create(model=m, temperature=0.5, messages=[
+                        {"role": "system", "content": system}, {"role": "user", "content": prompt}], **kw)
+                    d = _json(r.choices[0].message.content if r.choices else "")
+                    if d and str(d.get("narration", "")).strip():
+                        return d, m
+                except Exception as e2:
+                    print(f"    [확장대본] {m} 재시도 실패: {type(e2).__name__}: {str(e2)[:100]}", flush=True)
     return None, None
 
 
