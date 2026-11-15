@@ -2912,7 +2912,7 @@ with TL:
                 with _tc1:
                     st.markdown("**① 잘 된 쇼츠** (조회수×시청률+구독)")
                     for _r in _DT.from_stats(10):
-                        if st.button(f"[{_r['idx']}] {_r['country']} {_r['topic'][:22]} · {_r['views']}회 {_r['pct']}%", key=f"dt_s_{_r['idx']}"):
+                        if st.button((f"✅({_r['done']}) " if _r.get("done") else "") + f"[{_r['idx']}] {_r['country']} {_r['topic'][:22]} · {_r['views']}회 {_r['pct']}%", key=f"dt_s_{_r['idx']}"):
                             st.session_state["deep_src"] = int(_r["idx"]); st.rerun()
                 with _tc2:
                     st.markdown("**② AI 제안**")

@@ -37,8 +37,13 @@ def from_stats(limit=15):
         done = set(D.load().keys())
     except Exception:
         done = set()
-    rows = [r for r in best.values() if str(r["idx"]) not in done]
-    return sorted(rows, key=lambda r: -r["score"])[:limit]
+    try:
+        lf = _load(BASE / "longform_db.json", [])
+        built = {int(r["deep_of"]) for r in lf if isinstance(r, dict) and r.get("deep_of") is not None}
+    except Exception:
+        built = set()
+    rows = [{**r, "done": ("영상 완료" if r["idx"] in built else "대본만" if str(r["idx"]) in done else "")} for r in best.values()]
+    return sorted(rows, key=lambda r: (bool(r["done"]), -r["score"]))[:limit]
 
 
 def load_proposals():
