@@ -2980,9 +2980,10 @@ with TL:
                 _auto_out = D_.outro_text([x.get("recap", "") for x in _ds], False, _sty) if _itm else ""
                 _in_t = st.text_area("인트로 멘트 (영상 맨 앞, 비우면 자동)", (_dd or {}).get("intro_text") or _auto_in, height=90, key=f"dp_in_{int(_dsrc)}")
                 _out_t = st.text_area("엔딩 멘트 (요약 화면에서 읽음, 비우면 자동)", (_dd or {}).get("outro_text") or _auto_out, height=110, key=f"dp_out_{int(_dsrc)}")
+                st.caption("맨 끝 화면 1개입니다. 목록 카드를 켜면 '오늘의 요약' 제목 아래에 챕터별 한 줄 요약이 차례로 뜨면서 엔딩 멘트를 읽고, 끄면 흐린 배경 + 채널 이름만 두고 엔딩 멘트만 읽습니다. 엔딩 화면 자체를 끄면 마지막 챕터에서 바로 끝납니다.")
                 _q1, _q2 = st.columns(2)
-                _rc_on = _q1.checkbox("요약 화면 + 엔딩 넣기", (_dd or {}).get("recap", True) is not False, key=f"dp_rc_{int(_dsrc)}")
-                _rc_cd = _q2.checkbox("챕터별 요약 카드 표시", (_dd or {}).get("recap_cards", True) is not False, key=f"dp_rcc_{int(_dsrc)}", disabled=not _rc_on)
+                _rc_on = _q1.checkbox("엔딩 화면 + 멘트 넣기 (맨 끝)", (_dd or {}).get("recap", True) is not False, key=f"dp_rc_{int(_dsrc)}")
+                _rc_cd = _q2.checkbox("└ 챕터 요약 목록 카드 표시 (끄면 엔딩 멘트만)", (_dd or {}).get("recap_cards", True) is not False, key=f"dp_rcc_{int(_dsrc)}", disabled=not _rc_on)
                 st.markdown("**썸네일**")
                 _th = (_dd or {}).get("thumb") or {}
                 import lf_thumb as _LT
@@ -3084,8 +3085,8 @@ with TL:
         else:
             st.caption("챕터 순서·추가·삭제는 아래 ②의 '챕터 순서 바꾸기', 인트로·엔딩 문구는 ②의 '오프닝 · 엔딩 멘트'에서 고칩니다. 여기서는 요약 화면을 켜고 끕니다.")
             _r1, _r2 = st.columns(2)
-            _rc_on = _r1.checkbox("요약 화면 + 엔딩 멘트 넣기", _pl_.get("recap", True) is not False, key="lfs_recap")
-            _rc_cd = _r2.checkbox("챕터별 요약 카드 표시", _pl_.get("recap_cards", True) is not False, key="lfs_cards", disabled=not _rc_on)
+            _rc_on = _r1.checkbox("엔딩 화면 + 멘트 넣기 (맨 끝)", _pl_.get("recap", True) is not False, key="lfs_recap")
+            _rc_cd = _r2.checkbox("└ 챕터 요약 목록 카드 표시 (끄면 엔딩 멘트만)", _pl_.get("recap_cards", True) is not False, key="lfs_cards", disabled=not _rc_on)
             if st.button("💾 구성 저장", key="lfs_save"):
                 _pl_["recap"] = bool(_rc_on); _pl_["recap_cards"] = bool(_rc_cd)
                 json.dump(_pl_, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
