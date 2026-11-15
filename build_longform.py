@@ -961,7 +961,7 @@ def run_deep(args, db, lf_db):
         db = load_json(BASE / "facts_db.json", db)
         args.deep_src = src
         args.deep_plan = {"intro_text": data.get("intro_text") or D.intro_text(item, len(new), IS_EN, dstyle),
-                          "outro_text": data.get("outro_text") or D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN, dstyle),
+                          "outro_text": data.get("outro_text") or D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN, dstyle, cards=(data.get("recap_cards", True) is not False and getattr(args, "no_recap_cards", False) is False)),
                           **{k: data[k] for k in ("recap", "recap_cards", "thumb") if k in data}}
         args.title = args.title or D.title(item, minutes, IS_EN, dstyle)
         args.min = 1

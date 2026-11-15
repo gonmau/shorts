@@ -2945,12 +2945,12 @@ with TL:
         _dins = st.text_input("AI 추가 지시 (선택, 예: 한국과 비교를 더 자세히)", key="deep_ins")
         _dargs = ["build_longform.py", "--deep", *(["--deep-style", "story" if _dstyle else "topic"] if os.path.exists("deep_topics.py") else []), "--indexes", str(int(_dsrc)), "--sections", str(_dsec), "--minutes", str(_dmin)] + common_args
         e1, e2 = st.columns(2)
+        _pend = None
+        _deep_save_fn = None
         if e1.button("① 심층편 대본 만들기", key="deep_plan_go", help="음성/영상 없이 섹션 대본만 AI로 씁니다. 이미 있는 대본(잠금 포함)은 재사용"):
-            run(*_dargs, "--plan-only", *(["--instruction", _dins] if _dins else []))
-            st.rerun()
-        if e2.button("② 심층편 만들기 (음성 + 영상 합성)", key="deep_run", type="primary"):
-            TIMES.clear()
-            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if _dcmp else ["--no-compare"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
+            _pend = "plan"
+        if e2.button("② 심층편 만들기 (음성 + 영상 합성)", key="deep_run", type="primary", help="아래 표·인트로·엔딩·썸네일에 입력한 내용을 자동으로 저장한 뒤 만듭니다"):
+            _pend = "run"
         try:
             import deep as _DP
             D_ = _DP
@@ -2977,7 +2977,7 @@ with TL:
                 except Exception:
                     pass
                 _auto_in = D_.intro_text(_itm, max(1, len(_ds)), False, _sty) if _itm else ""
-                _auto_out = D_.outro_text([x.get("recap", "") for x in _ds], False, _sty) if _itm else ""
+                _auto_out = D_.outro_text([x.get("recap", "") for x in _ds], False, _sty, cards=bool(_dcards and _drecap)) if _itm else ""
                 _in_t = st.text_area("인트로 멘트 (영상 맨 앞, 비우면 자동)", (_dd or {}).get("intro_text") or _auto_in, height=90, key=f"dp_in_{int(_dsrc)}")
                 _out_t = st.text_area("엔딩 멘트 (요약 화면에서 읽음, 비우면 자동)", (_dd or {}).get("outro_text") or _auto_out, height=110, key=f"dp_out_{int(_dsrc)}")
                 st.caption("맨 끝 화면 1개입니다. 목록 카드를 켜면 '오늘의 요약' 제목 아래에 챕터별 한 줄 요약이 차례로 뜨면서 엔딩 멘트를 읽고, 끄면 흐린 배경 + 채널 이름만 두고 엔딩 멘트만 읽습니다. 엔딩 화면 자체를 끄면 마지막 챕터에서 바로 끝납니다.")
@@ -3009,8 +3009,7 @@ with TL:
                             st.image(_pv, caption="미리보기", use_container_width=True)
                         except Exception as _e:
                             st.error(f"미리보기 실패: {_e}")
-            _sv1, _sv2 = st.columns(2)
-            if _sv1.button("💾 구성 저장 · 잠금", key="deep_save", type="primary"):
+            def _deep_save():
                 _rows = []
                 _oldm = {k_: x for k_, x in enumerate(_ds)}
                 for _, r_ in _ed.iterrows():
@@ -3027,6 +3026,8 @@ with TL:
                         "title": "" if _tt == "nan" else _tt, "narration": _nar, "recap": str(r_.get("요약") or "").replace("nan", "").strip(),
                         "image_queries": _qq or (_old or {}).get("image_queries") or [],
                         "keywords": ((_old or {}).get("keywords") or []) if _old and _old.get("narration") == _nar else [],
+                        "kw_manual": bool((_old or {}).get("kw_manual")) and bool(_old and _old.get("narration") == _nar),
+                        "clip_queries": (_old or {}).get("clip_queries") or [], "clips": (_old or {}).get("clips") or [],
                         "angle": (_old or {}).get("angle", "직접 입력")}))
                 _rows.sort(key=lambda z: z[0])
                 _extra = {"intro_text": _in_t.strip() if _in_t.strip() != _auto_in.strip() else "", "outro_text": _out_t.strip() if _out_t.strip() != _auto_out.strip() else "",
@@ -3035,9 +3036,15 @@ with TL:
                                     if (_tm.startswith("섹션") is False or _tb.strip() != _b0 or _tg.strip() != _g0 or _tc.strip() != _c0) else None)}
                 if len(_rows) < 3:
                     st.error("섹션이 3개 이상 있어야 합니다 (대본이 비어 있는 행은 빠집니다).")
+                    return False
                 else:
                     _DP.save_manual(int(_dsrc), [r for _, r in _rows], "story" if _dstyle else "topic", _dmin, _extra)
-                    st.success(f"저장했습니다 (섹션 {len(_rows)}개, 모두 잠금)."); st.rerun()
+                    return True
+            _deep_save_fn = _deep_save
+            _sv1, _sv2 = st.columns(2)
+            if _sv1.button("💾 구성 저장 · 잠금", key="deep_save", type="primary"):
+                if _deep_save():
+                    st.success("저장했습니다 (모두 잠금)."); st.rerun()
             if _sv2.button("🗑 구성 지우기 (AI로 다시)", key="deep_clear", disabled=not _dd, help="이 소재의 저장된 심층편 대본·인트로·썸네일 설정을 지웁니다"):
                 _all = _DP.load(); _all.pop(str(int(_dsrc)), None); _DP.save(_all); st.rerun()
             if _ds:
@@ -3074,6 +3081,68 @@ with TL:
                             st.rerun()
                     if st.button("🧹 보관된 사진·음성 모두 지우기 (처음부터 다시 받기)", key=f"dp_cc_{int(_dsrc)}"):
                         _DP.clear_cache(int(_dsrc)); st.rerun()
+
+                with st.expander("🔑 핵심 문구 · 시나리오 · 스톡 영상 (섹션별 사전 확인/수정)", expanded=False):
+                    st.caption("문장별 예상 시각(글자 수 비율 추정)과 그때 뜨는 핵심 문구를 보고, 문구·문장 번호를 고칠 수 있습니다. 영상엔 약 35초에 1개만 표시되며, 인포그래픽·비교 카드와 겹치면 건너뜁니다. 저장하면 AI가 정한 문구보다 내가 고친 문구를 씁니다.")
+                    for _k, _x in enumerate(_ds, 1):
+                        with st.expander(f"섹션 {_k}. {_x.get('title', '')}", expanded=False):
+                            _rows_, _tot_ = _DP.scenario_rows(_x)
+                            _mx = max(2, int(round(_tot_ / 35.0)))
+                            st.caption(f"예상 길이 약 {int(_tot_)}초 · 이 길이에선 핵심 문구가 최대 {_mx}개 표시됩니다 · 키워드가 붙은 문장은 ◀ 표시")
+                            st.dataframe(pd.DataFrame([{"문장": r_["n"], "시작(초)": r_["t"], "핵심 문구": ("◀ " + r_["kw"]) if r_["kw"] else "", "대사": r_["text"]} for r_ in _rows_]),
+                                         use_container_width=True, hide_index=True)
+                            _kdf = pd.DataFrame([{"문장번호": r_["n"], "문구": r_["kw"]} for r_ in _rows_ if r_["kw"]] or [{"문장번호": 1, "문구": ""}])
+                            _kdf = st.data_editor(_kdf, num_rows="dynamic", key=f"dpk_{int(_dsrc)}_{_k}_{len(_ds)}", use_container_width=True, hide_index=True)
+                            if st.button("💾 핵심 문구 저장", key=f"dpks_{int(_dsrc)}_{_k}"):
+                                _new = []
+                                for r_ in _kdf.to_dict("records"):
+                                    try:
+                                        _n = int(float(r_.get("문장번호")))
+                                    except (TypeError, ValueError):
+                                        continue
+                                    _tx = str(r_.get("문구") or "").strip()
+                                    if _tx and _tx != "nan" and 1 <= _n <= len(_rows_):
+                                        _new.append({"sentence": _n, "text": _tx[:28]})
+                                _all = _DP.load(); _all[str(int(_dsrc))]["sections"][_k - 1].update({"keywords": _new, "kw_manual": True}); _DP.save(_all)
+                                st.success("저장했습니다."); st.rerun()
+                            st.markdown("**스톡 영상** — 검색어(영어)를 바꿔 받고, 미리 본 뒤 쓸지 정합니다 (위쪽 '스톡 영상' 체크박스가 켜져 있어야 영상에 들어갑니다)")
+                            _cq0 = list(_x.get("clip_queries") or (_x.get("image_queries") or [])[:3])
+                            _qc = st.columns(3)
+                            _cq = [_qc[i_].text_input(f"검색어 {i_ + 1}", _cq0[i_] if i_ < len(_cq0) else "", key=f"dpq{i_}_{int(_dsrc)}_{_k}") for i_ in range(3)]
+                            if st.button("🎞 이 검색어로 영상 받기", key=f"dpf_{int(_dsrc)}_{_k}"):
+                                try:
+                                    _got = _DP.fetch_clips(int(_dsrc), _k, _cq, old=_x.get("clips"))
+                                    _all = _DP.load(); _all[str(int(_dsrc))]["sections"][_k - 1].update({"clip_queries": [q for q in _cq if q.strip()], "clips": _got}); _DP.save(_all)
+                                    if not _got:
+                                        st.warning("쓸 만한 영상을 찾지 못했습니다. 검색어를 바꿔 보세요.")
+                                    else:
+                                        st.rerun()
+                                except Exception as _e:
+                                    st.error(f"영상 받기 실패: {_e}")
+                            _cl = [c_ for c_ in (_x.get("clips") or []) if c_.get("path") and os.path.exists(c_["path"])]
+                            if _cl:
+                                _vc = st.columns(min(3, len(_cl)))
+                                _use = []
+                                for _j, _c in enumerate(_cl):
+                                    with _vc[_j % len(_vc)]:
+                                        st.video(_c["path"])
+                                        _use.append(st.checkbox(f"사용 — {_c.get('query', '')[:22]}", bool(_c.get("use", True)), key=f"dpu_{int(_dsrc)}_{_k}_{_j}"))
+                                if st.button("💾 사용 여부 저장", key=f"dpus_{int(_dsrc)}_{_k}"):
+                                    _all = _DP.load(); _all[str(int(_dsrc))]["sections"][_k - 1]["clips"] = [{**c_, "use": bool(u_)} for c_, u_ in zip(_cl, _use)]; _DP.save(_all)
+                                    st.success("저장했습니다."); st.rerun()
+                            else:
+                                st.caption("받은 영상이 없습니다. 위 버튼으로 받으면 여기서 미리 볼 수 있습니다.")
+
+    if _pend:
+        if _pend == "run" and _deep_save_fn is not None and (_dd or {}).get("sections") is not None and _dd:
+            if not _deep_save_fn():
+                _pend = None
+        if _pend == "plan":
+            run(*_dargs, "--plan-only", *(["--instruction", _dins] if _dins else []))
+            st.rerun()
+        elif _pend == "run":
+            TIMES.clear()
+            run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if _dcmp else ["--no-compare"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
 
     def _lf_plan():
         try:

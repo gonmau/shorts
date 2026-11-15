@@ -598,9 +598,12 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path, 
     """items = [(번호, 나라, 한 줄 요약)]"""
     from moviepy.editor import AudioFileClip, CompositeVideoClip, ImageClip
     audio = AudioFileClip(exact_audio(audio_path)) if audio_path and Path(audio_path).exists() else None
-    dur = max(10.0, (audio.duration if audio else 0) + 4.0)
-    bg = ImageClip(arr(blurred(bg_img, 0.62))).set_duration(dur)
     n = len(items)
+    A_ = audio.duration if audio else 0.0
+    # 카드는 엔딩 멘트가 흐르는 동안 차례로 모두 나오고, 영상은 멘트가 다 끝난 뒤(3.5초 여유)에 끝난다
+    t_line = max(1.6, min(3.5, (A_ - 1.0) / max(1, n))) if cards else 0.0
+    dur = max(10.0, A_ + 3.5, (0.8 + n * t_line + 2.5) if cards else 0.0)
+    bg = ImageClip(arr(blurred(bg_img, 0.62))).set_duration(dur)
     two = n > 6
     per = max(1, (n + 1) // 2) if two else n
     colw = 840 if two else 1500
@@ -614,7 +617,6 @@ def recap_screen(items, bg_img, audio_path, channel, handle, av_path, out_path, 
         if handle:
             text_c(ImageDraw.Draw(head), W // 2, H // 2 + 50, str(handle), font(52), "white", 2)
     clips.append(ImageClip(arr(head)).set_duration(dur).crossfadein(0.4))
-    t_line = max(1.2, (dur - 6.0) / max(1, n))
     for i, (no, country, line) in enumerate(items if cards else []):
         col, row = (i // per, i % per) if two else (0, i)
         x0 = (W - 2 * colw - 60) // 2 + col * (colw + 60) if two else (W - colw) // 2
@@ -782,7 +784,8 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
         if g_ok and dur > 20:
             n_ = max(1, min(int(g_.get("s") or 1), len(sents)))
             t0 = B.time_at_fraction(cum[n_ - 1] / total_chars, timings) + 0.2
-            gd = max(4.0, min(float(g_.get("dur") or 6), 9.0))
+            gd = max(IG.read_seconds({**g_, "rows": g_ok["rows"], "title": g_ok["title"]}), min(float(g_.get("dur") or 6), 9.0))
+            gd = min(gd, max(4.0, dur - 6.0))
             t0 = max(4.0, min(t0, dur - gd - 2.0))
             if cmp_win and t0 < cmp_win[1] + 0.5 and t0 + gd > cmp_win[0] - 0.5:
                 t0 = cmp_win[1] + 0.8 if cmp_win[1] + 0.8 + gd < dur - 1.5 else None

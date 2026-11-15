@@ -130,6 +130,53 @@ def generate(client, models, narration):
 
 
 # ---------------- 그리기 ----------------
+_DOTS = "·ㆍ・•∙⋅‧●○▪▫"
+_CMAP = {}
+
+
+def _cmap(font):
+    """글꼴이 가진 글자 집합 (없으면 None = 검사 불가)"""
+    path = getattr(font, "path", None)
+    if not path:
+        return None
+    if path in _CMAP:
+        return _CMAP[path]
+    cm = None
+    try:
+        from fontTools.ttLib import TTFont
+        tt = TTFont(path, fontNumber=0, lazy=True)
+        cm = set(tt.getBestCmap().keys())
+    except Exception:
+        cm = None
+    _CMAP[path] = cm
+    return cm
+
+
+def _safe(text, font=None):
+    """글꼴에 없는 글자가 네모(□)로 나오지 않게: 가운뎃점류는 쉼표로, 나머지 없는 글자는 뺀다"""
+    s = str(text)
+    for ch in _DOTS:
+        s = s.replace(ch, ", ")
+    cm = _cmap(font) if font is not None else None
+    if cm:
+        s = "".join(c for c in s if c.isspace() or ord(c) in cm or ord(c) < 0x20)
+    return re.sub(r"\s{2,}", " ", re.sub(r",\s*,", ",", s)).strip()
+
+
+def _sanitize(spec):
+    f = _font(40, True)
+    out = dict(spec)
+    for k in ("title", "unit"):
+        if isinstance(out.get(k), str):
+            out[k] = _safe(out[k], f)
+    rows = []
+    for r in spec.get("rows") or []:
+        rows.append({k: (_safe(v, f) if isinstance(v, str) and k in ("label", "text", "sub", "detail", "name", "desc", "left", "right") else v) for k, v in r.items()}
+                    if isinstance(r, dict) else r)
+    out["rows"] = rows
+    return out
+
+
 def _font(size, bold=True):
     import overlays
     return overlays._font(int(size), bold)
@@ -158,6 +205,7 @@ def _num_text(r):
 
 def render(spec, w=960, h=560):
     """인포그래픽 카드 이미지(RGBA, w x h)"""
+    spec = _sanitize(spec)
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     R = max(18, h // 14)
@@ -247,6 +295,15 @@ def screen_layer(spec, W=1920, H=1080):
 
 
 # ---------------- 영상에 넣을 때 쓰는 도우미 ----------------
+def read_seconds(spec):
+    """카드에 글이 많을수록 오래 보이게: 기본 4초 + 글자당 약 0.18초 (6~14초)"""
+    n = len(str(spec.get("title") or ""))
+    for r in spec.get("rows") or []:
+        if isinstance(r, dict):
+            n += sum(len(str(v)) for k, v in r.items() if isinstance(v, str))
+    return max(6.0, min(14.0, 4.0 + 0.18 * n))
+
+
 def active(item):
     g = (item or {}).get("infographic") or {}
     return g if (g.get("on") and not g.get("none") and g.get("rows") and os.environ.get("INFOGRAPHIC", "1") != "0") else None

@@ -242,7 +242,9 @@ def intro_text(item, n, en=False, style="topic"):
     return f"오늘은 {c}의 {t}, 이 이야기 하나만 깊이 있게 살펴보겠습니다. 총 {n}가지 이야기로 풀어 볼게요. 끝까지 보시면 이 문화가 조금 다르게 보일 거예요. 지금 시작합니다."
 
 
-def outro_text(recaps, en=False, style="topic"):
+def outro_text(recaps, en=False, style="topic", cards=False):
+    if style == "story" and cards and not en and any(recaps):   # 요약 목록 카드를 띄우면 카드 내용을 같이 읽어 준다
+        return "이야기를 한 번 더 정리해 볼게요. " + " ".join(f"{i}. {r.rstrip('.')}." for i, r in enumerate(recaps, 1) if r) + " 끝까지 봐 주셔서 감사합니다. 다음 이야기에서 또 만나요."
     if style == "story":
         return "끝까지 봐 주셔서 감사합니다. 다음 이야기에서 또 만나요." if not en else "Thanks for watching. See you in the next story."
     if en:
@@ -391,8 +393,13 @@ def materialize(src, data):
             _rs = _restore(src, k, i, db[i], LS)
         except Exception as e:
             print(f"    [심층편] 캐시 복원 실패 {k}: {type(e).__name__}: {e}", flush=True)
+        if not s.get("kw_manual"):
+            kw_ = align_keywords(s["narration"], kw_)
+        _allc = [c for c in (s.get("clips") or []) if isinstance(c, dict) and c.get("path") and Path(c["path"]).exists()]
+        _clips = [c for c in _allc if c.get("use", True)]
+        _noclip = bool(s.get("clips")) and not _clips   # 받은 영상을 전부 '사용 안 함'으로 했으면 다시 검색하지 않는다
         LS.update_rec(i, {**_rs, "narration": s["narration"], "keywords": kw_, "compare": None, "recap": s.get("recap", ""),
-                          "broll": [], "clip_queries": list(s.get("clip_queries") or [q for q in (db[i].get("image_queries") or []) if q][:3]), "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
+                          "broll": [], "clip_queries": ([] if _noclip else list(s.get("clip_queries") or [q for q in (db[i].get("image_queries") or []) if q][:3])), "clips": _clips, "images": [], "compare_at": 0, "title1": s.get("title", ""),
                           "title2": str(item.get("country", ""))})
     return new
 
@@ -410,7 +417,9 @@ def save_manual(idx, sections, style="story", minutes=8, extra=None):
         order.append(s.get("_from"))
         secs.append({"title": str(s.get("title", "")).strip()[:28] or narr[:12], "narration": narr, "keywords": s.get("keywords") or [],
                      "recap": str(s.get("recap", "")).strip() or str(s.get("title", "")).strip(), "image_queries": [q for q in (s.get("image_queries") or []) if q],
-                     "angle": s.get("angle", "직접 입력"), "locked": True})
+                     "angle": s.get("angle", "직접 입력"), "locked": True,
+                     **({"kw_manual": True} if s.get("kw_manual") else {}), **({"clip_queries": s["clip_queries"]} if s.get("clip_queries") else {}),
+                     **({"clips": s["clips"]} if s.get("clips") else {})})
     new = {**cur, "style": style, "n": len(secs), "minutes": minutes, "manual": True, "created": cur.get("created") or time.strftime("%Y-%m-%d %H:%M"),
            "sections": secs}
     for k, v in (extra or {}).items():
@@ -435,3 +444,69 @@ def save_manual(idx, sections, style="story", minutes=8, extra=None):
     except Exception as e:
         print(f"    [심층편] 캐시 정리 실패: {e}", flush=True)
     return new
+
+
+# ---------------------------------------------------------------- 핵심 문구 맞추기 · 시나리오 미리보기 · 스톡 영상
+def _bg(s):
+    s = re.sub(r"[^0-9A-Za-z가-힣]", "", str(s or "").lower())
+    return {s[i:i + 2] for i in range(len(s) - 1)} if len(s) >= 2 else ({s} if s else set())
+
+
+def align_keywords(narration, kws):
+    """핵심 문구가 실제로 그 말이 나오는 문장에 붙게 한다: 지정한 문장에 문구와 겹치는 글자가 없고 다른 문장에 있으면 그쪽으로 옮긴다.
+    (추상적인 문구처럼 어느 문장에도 겹침이 없으면 그대로 둔다)"""
+    import longform_script as LS
+    sents = LS.split_sentences(narration)
+    out = []
+    for k in kws or []:
+        if not isinstance(k, dict):
+            continue
+        try:
+            n = int(k.get("sentence", 1))
+        except (TypeError, ValueError):
+            continue
+        txt = str(k.get("text", "")).strip()
+        if not txt or not sents:
+            continue
+        n = max(1, min(n, len(sents)))
+        kb = _bg(txt)
+        sc = [len(kb & _bg(s)) for s in sents]
+        if kb and sc[n - 1] == 0 and max(sc) > 0:
+            n = sc.index(max(sc)) + 1
+        out.append({"sentence": n, "text": txt})
+    return out
+
+
+def scenario_rows(sec, cps=6.0):
+    """섹션 대본 -> 문장별 [번호, 시작(초), 문장, 핵심문구]. 시간은 글자 수 비율 추정(음성을 만들면 실제와 조금 다를 수 있음)"""
+    import longform_script as LS
+    sents = LS.split_sentences(sec.get("narration", ""))
+    kws = sec.get("keywords") or []
+    if not sec.get("kw_manual"):
+        kws = align_keywords(sec.get("narration", ""), kws)
+    by = {}
+    for k in kws:
+        by.setdefault(k["sentence"], []).append(k["text"])
+    rows, acc = [], 0.0
+    for i, s in enumerate(sents, 1):
+        rows.append({"n": i, "t": round(acc, 1), "text": s, "kw": " / ".join(by.get(i, []))})
+        acc += len(re.sub(r"\s+", "", s)) / cps
+    return rows, acc
+
+
+def fetch_clips(src, k, queries, old=None, max_clips=3):
+    """섹션 k 의 스톡 영상을 검색어마다 받아 deep_clips/ 에 둔다 -> [{query,path,source,...,use}]"""
+    import longform_clips as LC
+    if not LC.available():
+        raise RuntimeError("PEXELS_API_KEY 또는 PIXABAY_API_KEY 가 없습니다")
+    folder = BASE / "deep_clips" / str(src) / str(k)
+    folder.mkdir(parents=True, exist_ok=True)
+    old_by = {c.get("query"): c for c in (old or []) if c.get("path") and Path(c["path"]).exists()}
+    res, used = [], set()
+    for n, q in enumerate([x.strip() for x in queries if x and x.strip()][:max_clips], 1):
+        if q in old_by:
+            res.append(old_by[q]); used.add(old_by[q].get("id")); continue
+        got = LC.fetch_query(q, folder / f"clip_{n}_{abs(hash(q)) % 10000}.mp4", used)
+        if got:
+            res.append({**got, "use": True})
+    return res

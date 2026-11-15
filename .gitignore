@@ -5,3 +5,4 @@ _backup/
 __pycache__/
 overlay_images/
 deep_cache/
+deep_clips/
