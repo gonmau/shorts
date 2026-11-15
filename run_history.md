@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-15 16:31:04 (KST) · 기록 1807건 · 소재 694개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-15 18:12:06 (KST) · 기록 1809건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -35,9 +35,9 @@
 | trend_research | 3 | 3 | 2분 34초 |
 | update_description | 4 | 0 | 12초 |
 | upload_to_youtube | 25 | 0 | 14분 10초 |
-| 롱폼 | 77 | 13 | 9시간 13분 |
+| 롱폼 | 78 | 13 | 9시간 39분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 103 | 0 | 0초 |
+| 코드업데이트 | 104 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -45,6 +45,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 18:11 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 296 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --clips --fill-ima | ✅ | 26분 17초 |  |
+| 16:38 | PC | 코드업데이트 | gonmau/shorts: 2개 (deep.py, local_ui.py) | ✅ |  |  |
 | 16:30 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 296 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --clips --fill-ima | ✅ | 28분 19초 |  |
 | 16:01 | PC | 코드업데이트 | gonmau/shorts: 1개 (deep.py) | ✅ |  |  |
 | 15:54 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
