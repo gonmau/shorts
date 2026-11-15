@@ -934,6 +934,9 @@ def run_deep(args, db, lf_db):
     if not str(item.get("narration", "")).strip():
         raise SystemExit(f"소재 {src} 에 쇼츠 대본이 없습니다. 먼저 대본을 만드세요.")
     n = max(3, min(8, int(args.sections)))
+    _cur = D.load().get(str(src)) or {}
+    if _cur.get("manual") and not args.regen:   # 직접 구성한 섹션은 개수·내용을 그대로 쓴다
+        n = max(3, min(12, len(_cur.get("sections") or [])))
     minutes = max(5.0, min(12.0, float(args.minutes)))
     print(f"심층편: [{src}] {DISP(item.get('country', ''))} - {item.get('topic', '')} / 소주제 {n}개 · 목표 약 {minutes:g}분", flush=True)
     if args.dry_run:
@@ -957,8 +960,9 @@ def run_deep(args, db, lf_db):
     try:
         db = load_json(BASE / "facts_db.json", db)
         args.deep_src = src
-        args.deep_plan = {"intro_text": D.intro_text(item, len(new), IS_EN, dstyle),
-                          "outro_text": D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN, dstyle)}
+        args.deep_plan = {"intro_text": data.get("intro_text") or D.intro_text(item, len(new), IS_EN, dstyle),
+                          "outro_text": data.get("outro_text") or D.outro_text([s.get("recap", "") for s in data["sections"]], IS_EN, dstyle),
+                          **{k: data[k] for k in ("recap", "recap_cards", "thumb") if k in data}}
         args.title = args.title or D.title(item, minutes, IS_EN, dstyle)
         args.min = 1
         args.mode = "manual"

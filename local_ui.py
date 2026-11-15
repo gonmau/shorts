@@ -2926,6 +2926,15 @@ with TL:
                             _m = re.search(r"SEED (\d+)", _o.stdout or "")
                             if _m:
                                 st.session_state["deep_src"] = int(_m.group(1)); st.rerun()
+        if os.path.exists("deep_topics.py"):
+            with st.expander("✍️ 새 주제 직접 입력 (쇼츠 소재 없이 시작)", expanded=False):
+                _nc1, _nc2 = st.columns([1, 3])
+                _nlab = _nc1.text_input("라벨 (나라/세계/짧은 말)", key="dn_lab")
+                _ntop = _nc2.text_input("주제 (한 줄)", key="dn_top")
+                _nhook = st.text_input("한 줄 요약·훅 (선택, AI가 참고)", key="dn_hook")
+                if st.button("이 주제로 시작 (소재 번호가 채워집니다)", key="dn_go", disabled=not _ntop.strip()):
+                    import deep_topics as _DT2
+                    st.session_state["deep_src"] = int(_DT2.seed(_nlab.strip(), _ntop.strip(), _nhook.strip())); st.rerun()
         d1, d2, d3 = st.columns(3)
         _dsrc = d1.number_input("소재 번호", min_value=0, value=0, step=1, key="deep_src")
         _dsec = d2.slider("소주제 개수", 3, 8, 5, key="deep_sec")
@@ -2944,27 +2953,99 @@ with TL:
             run(*_dargs, "--require-images" if not lf_nomiss_deep else "--fill-images", *([] if _drecap else ["--no-recap"]), *([] if _dcmp else ["--no-compare"]), *([] if (_dcards or not _drecap) else ["--no-recap-cards"]), "--title", ltitle)
         try:
             import deep as _DP
+            D_ = _DP
             _dd = _DP.load().get(str(int(_dsrc)))
         except Exception:
             _dd = None
-        if _dd:
+        _dd0 = _dd
+        if _dd or os.path.exists("deep_topics.py"):
             import pandas as pd
-            st.caption(f"저장된 심층편 대본: 소주제 {len(_dd['sections'])}개 · 만든 때 {_dd.get('created', '')}  (개수/길이를 바꾸면 ①이 새로 씁니다. 잠금된 섹션은 유지)")
-            _df = pd.DataFrame([{"잠금": bool(x.get("locked")), "소제목": x.get("title", ""), "요약": x.get("recap", ""), "나레이션": x.get("narration", ""),
-                                 "글자수": len(x.get("narration", ""))} for x in _dd["sections"]])
-            _ed = st.data_editor(_df, key=f"deep_ed_{int(_dsrc)}", use_container_width=True, hide_index=True, disabled=["글자수"],
-                                 column_config={"나레이션": st.column_config.TextColumn(width="large")})
-            if st.button("수정한 대본 저장 · 잠금", key="deep_save"):
-                for k_, r_ in _ed.iterrows():
-                    x_ = _dd["sections"][k_]
-                    if r_["나레이션"] != x_.get("narration"):
-                        x_["narration"] = str(r_["나레이션"]).strip(); x_["keywords"] = [kw for kw in x_.get("keywords", []) if True]; x_["locked"] = True
-                    else:
-                        x_["locked"] = bool(r_["잠금"])
-                    x_["title"] = str(r_["소제목"]).strip() or x_.get("title", "")
-                    x_["recap"] = str(r_["요약"]).strip()
-                _all = _DP.load(); _all[str(int(_dsrc))] = _dd; _DP.save(_all)
-                st.success("저장했습니다 (수정한 섹션은 잠금)."); st.rerun()
+            _ds = (_dd or {}).get("sections", [])
+            st.caption(f"심층편 구성: 섹션 {len(_ds)}개" + (f" · 만든 때 {_dd.get('created', '')}" if _dd else " · 아직 없음 (아래 표에 직접 쓰거나 ①로 AI가 쓰게 하세요)")
+                       + "  — 표에서 직접 쓰고, 행 추가/삭제, '순서' 숫자로 순서를 바꿀 수 있습니다. 저장하면 모두 잠금되고 AI가 덮어쓰지 않습니다.")
+            _df = pd.DataFrame([{"순서": k_ + 1, "id": k_, "잠금": bool(x.get("locked")), "소제목": x.get("title", ""), "요약": x.get("recap", ""),
+                                 "나레이션": x.get("narration", ""), "사진 검색어(영어, 쉼표)": ", ".join(x.get("image_queries") or []),
+                                 "글자수": len(x.get("narration", ""))} for k_, x in enumerate(_ds)]
+                               or [{"순서": 1, "id": None, "잠금": False, "소제목": "", "요약": "", "나레이션": "", "사진 검색어(영어, 쉼표)": "", "글자수": 0}])
+            _ed = st.data_editor(_df, key=f"deep_ed_{int(_dsrc)}_{len(_ds)}", use_container_width=True, hide_index=True, num_rows="dynamic",
+                                 disabled=["글자수", "id"], column_config={"나레이션": st.column_config.TextColumn(width="large"), "id": None})
+            with st.expander("🎤 인트로 · 요약 · 엔딩 · 썸네일", expanded=False):
+                _sty = "story" if _dstyle else "topic"
+                _itm = {}
+                try:
+                    _itm = _ld()[int(_dsrc)]
+                except Exception:
+                    pass
+                _auto_in = D_.intro_text(_itm, max(1, len(_ds)), False, _sty) if _itm else ""
+                _auto_out = D_.outro_text([x.get("recap", "") for x in _ds], False, _sty) if _itm else ""
+                _in_t = st.text_area("인트로 멘트 (영상 맨 앞, 비우면 자동)", (_dd or {}).get("intro_text") or _auto_in, height=90, key=f"dp_in_{int(_dsrc)}")
+                _out_t = st.text_area("엔딩 멘트 (요약 화면에서 읽음, 비우면 자동)", (_dd or {}).get("outro_text") or _auto_out, height=110, key=f"dp_out_{int(_dsrc)}")
+                _q1, _q2 = st.columns(2)
+                _rc_on = _q1.checkbox("요약 화면 + 엔딩 넣기", (_dd or {}).get("recap", True) is not False, key=f"dp_rc_{int(_dsrc)}")
+                _rc_cd = _q2.checkbox("챕터별 요약 카드 표시", (_dd or {}).get("recap_cards", True) is not False, key=f"dp_rcc_{int(_dsrc)}", disabled=not _rc_on)
+                st.markdown("**썸네일**")
+                _th = (_dd or {}).get("thumb") or {}
+                import lf_thumb as _LT
+                _b0, _g0, _c0 = _LT.split_title(_th.get("title") or ltitle or (D_.title(_itm, 8, False, _sty) if _itm else "세계 문화 이야기"), False)
+                _t1, _t2, _t3 = st.columns(3)
+                _tb = _t1.text_input("붉은 띠 글자", _th.get("banner") if _th.get("banner") is not None else _b0, key=f"dp_tb_{int(_dsrc)}")
+                _tg = _t2.text_input("큰 흰 글자", _th.get("big") if _th.get("big") is not None else _g0, key=f"dp_tg_{int(_dsrc)}")
+                _tc = _t3.text_input("노란 글자 (비워도 됨)", _th.get("count") if _th.get("count") is not None else _c0, key=f"dp_tc_{int(_dsrc)}")
+                _tm = st.radio("배경", ["섹션 사진 콜라주 (자동, 영상 만들 때 확인)", "내 이미지 1장"], index=1 if _th.get("mode") == "image" else 0, horizontal=True, key=f"dp_tm_{int(_dsrc)}")
+                _tpath = _th.get("image", "")
+                if not _tm.startswith("섹션"):
+                    _up = st.file_uploader("썸네일 배경 이미지", type=["jpg", "jpeg", "png"], key=f"dp_up_{int(_dsrc)}")
+                    if _up is not None:
+                        Path("my_thumb").mkdir(exist_ok=True)
+                        _tpath = str(Path("my_thumb") / f"deep_{int(_dsrc)}.jpg")
+                        from PIL import Image as _PI
+                        _PI.open(_up).convert("RGB").save(_tpath, quality=92)
+                    if _tpath and os.path.exists(_tpath):
+                        _pv = f"longform_out/deep_thumb_{int(_dsrc)}.png"
+                        os.makedirs("longform_out", exist_ok=True)
+                        try:
+                            _LT.make_custom(_tpath, ltitle or "세계 문화 이야기", _pv, en=False, parts=dict(banner=_tb.strip(), big=_tg.strip(), count=_tc.strip()))
+                            st.image(_pv, caption="미리보기", use_container_width=True)
+                        except Exception as _e:
+                            st.error(f"미리보기 실패: {_e}")
+            _sv1, _sv2 = st.columns(2)
+            if _sv1.button("💾 구성 저장 · 잠금", key="deep_save", type="primary"):
+                _rows = []
+                _oldm = {k_: x for k_, x in enumerate(_ds)}
+                for _, r_ in _ed.iterrows():
+                    _nar = str(r_.get("나레이션") or "").strip()
+                    if not _nar or _nar == "nan":
+                        continue
+                    _oid = r_.get("id")
+                    _old = _oldm.get(int(_oid)) if _oid is not None and _oid == _oid else None
+                    _tt = str(r_.get("소제목") or "").strip()
+                    _qq = [q.strip() for q in re.split(r"[,\n]", str(r_.get("사진 검색어(영어, 쉼표)") or "")) if q.strip() and q.strip() != "nan"]
+                    _ordv = r_.get("순서")
+                    _rows.append((float(_ordv) if _ordv == _ordv and _ordv is not None else 999.0, {
+                        "title": "" if _tt == "nan" else _tt, "narration": _nar, "recap": str(r_.get("요약") or "").replace("nan", "").strip(),
+                        "image_queries": _qq or (_old or {}).get("image_queries") or [],
+                        "keywords": ((_old or {}).get("keywords") or []) if _old and _old.get("narration") == _nar else [],
+                        "angle": (_old or {}).get("angle", "직접 입력")}))
+                _rows.sort(key=lambda z: z[0])
+                _extra = {"intro_text": _in_t.strip() if _in_t.strip() != _auto_in.strip() else "", "outro_text": _out_t.strip() if _out_t.strip() != _auto_out.strip() else "",
+                          "recap": None if _rc_on else False, "recap_cards": None if _rc_cd else False,
+                          "thumb": ({"banner": _tb.strip(), "big": _tg.strip(), "count": _tc.strip(), "mode": "image" if not _tm.startswith("섹션") else "collage", "image": _tpath, "title": ltitle}
+                                    if (_tm.startswith("섹션") is False or _tb.strip() != _b0 or _tg.strip() != _g0 or _tc.strip() != _c0) else None)}
+                if len(_rows) < 3:
+                    st.error("섹션이 3개 이상 있어야 합니다 (대본이 비어 있는 행은 빠집니다).")
+                else:
+                    _DP.save_manual(int(_dsrc), [r for _, r in _rows], "story" if _dstyle else "topic", _dmin, _extra)
+                    st.success(f"저장했습니다 (섹션 {len(_rows)}개, 모두 잠금)."); st.rerun()
+            if _sv2.button("🗑 구성 지우기 (AI로 다시)", key="deep_clear", disabled=not _dd, help="이 소재의 저장된 심층편 대본·인트로·썸네일 설정을 지웁니다"):
+                _all = _DP.load(); _all.pop(str(int(_dsrc)), None); _DP.save(_all); st.rerun()
+            if _ds:
+                st.markdown("**시나리오 (저장된 대본 기준: 섹션별 문장 수 · 예상 시간)**")
+                import longform_script as _LS3
+                st.dataframe(pd.DataFrame([{"섹션": k_ + 1, "소제목": x.get("title", ""), "문장": len(_LS3.split_sentences(x.get("narration", ""))),
+                                            "글자": len(x.get("narration", "")), "예상(초)": int(len(re.sub(r"\s+", "", x.get("narration", ""))) / 6.0),
+                                            "키워드": ", ".join(k.get("text", "") for k in (x.get("keywords") or []) if isinstance(k, dict)),
+                                            "사진 검색어": len(x.get("image_queries") or [])} for k_, x in enumerate(_ds)]),
+                             use_container_width=True, hide_index=True)
 
     def _lf_plan():
         try:

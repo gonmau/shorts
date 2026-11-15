@@ -79,8 +79,11 @@ def plan(n, en=False, style="topic"):
         A = ARC_EN if en else ARC_KO
     else:
         A = ANGLES_EN if en else ANGLES_KO
-    n = max(3, min(8, int(n)))
-    return A[:n - 1] + [A[-1]]
+    n = max(3, min(12, int(n)))
+    mid = list(A[:-1])
+    while len(mid) < n - 1:   # 직접 구성으로 섹션이 8개를 넘을 때 (잠긴 섹션은 관점을 쓰지 않음)
+        mid.append(("이어지는 이야기", "앞 이야기를 이어 새로운 장면을 하나 더 풀기" if not en else "continue with one more scene"))
+    return mid[:n - 1] + [A[-1]]
 
 
 def chars_per_section(minutes, n, en=False):
@@ -155,7 +158,7 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
     cur = d.get(str(idx)) or {}
     secs_old = cur.get("sections") or []
     pl = plan(n, en, style)
-    if cur.get("style", "topic") != style:
+    if cur.get("style", "topic") != style and not cur.get("manual"):
         secs_old = []   # 방식이 바뀌면 처음부터
     topic = f"{item.get('country', '')} {item.get('topic', '')}".strip()
     ev = C._wiki(topic, "en" if en else "ko") or ([] if en else C._wiki(topic, "en"))
@@ -205,7 +208,7 @@ def generate(client, models, idx, item, n=5, minutes=8, instruction="", only=Non
         secs.append(sec)
         prev.append(f"{sec['title']}: " + " ".join(LS.split_sentences(sec["narration"])[:2]))
         print(f"    [심층편] 섹션 {k}/{n} '{sec['title']}': {len(sec['narration'])}자, 키워드 {len(sec['keywords'])}, 검색어 {len(qs)}개", flush=True)
-    d[str(idx)] = {"style": style, "n": n, "minutes": minutes, "created": time.strftime("%Y-%m-%d %H:%M"), "instruction": instruction, "sections": secs}
+    d[str(idx)] = {**{k_: v_ for k_, v_ in cur.items() if k_ in ("intro_text", "outro_text", "recap", "recap_cards", "thumb", "manual")}, "style": style, "n": n, "minutes": minutes, "created": time.strftime("%Y-%m-%d %H:%M"), "instruction": instruction, "sections": secs}
     save(d)
     return d[str(idx)]
 
@@ -313,4 +316,29 @@ def materialize(src, data):
         LS.update_rec(i, {"narration": s["narration"], "keywords": kw_, "compare": None, "recap": s.get("recap", ""),
                           "broll": [], "clip_queries": [], "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
                           "title2": str(item.get("country", ""))})
+    return new
+
+
+# ---------------------------------------------------------------- 직접 구성
+def save_manual(idx, sections, style="story", minutes=8, extra=None):
+    """UI 에서 직접 입력·수정·삭제·순서 변경한 섹션 목록을 저장 (모두 잠금). extra: intro_text/outro_text/recap/recap_cards/thumb"""
+    d = load()
+    cur = d.get(str(idx)) or {}
+    secs = []
+    for s in sections:
+        narr = str(s.get("narration", "")).strip()
+        if not narr:
+            continue
+        secs.append({"title": str(s.get("title", "")).strip()[:28] or narr[:12], "narration": narr, "keywords": s.get("keywords") or [],
+                     "recap": str(s.get("recap", "")).strip() or str(s.get("title", "")).strip(), "image_queries": [q for q in (s.get("image_queries") or []) if q],
+                     "angle": s.get("angle", "직접 입력"), "locked": True})
+    new = {**cur, "style": style, "n": len(secs), "minutes": minutes, "manual": True, "created": cur.get("created") or time.strftime("%Y-%m-%d %H:%M"),
+           "sections": secs}
+    for k, v in (extra or {}).items():
+        if v in (None, "", {}):
+            new.pop(k, None)
+        else:
+            new[k] = v
+    d[str(idx)] = new
+    save(d)
     return new
