@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-15 15:27:02 (KST) · 기록 1800건 · 소재 694개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-15 15:38:10 (KST) · 기록 1803건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -17,7 +17,7 @@
 | check_uploads | 27 | 0 | 2분 46초 |
 | cleanup_media | 5 | 0 | 7초 |
 | cuts | 2 | 0 | 10초 |
-| deep_topics | 1 | 0 | 3초 |
+| deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 57 | 0 | 10초 |
 | fetch_images | 201 | 8 | 2시간 23분 |
@@ -37,7 +37,7 @@
 | upload_to_youtube | 25 | 0 | 14분 10초 |
 | 롱폼 | 76 | 13 | 8시간 45분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 98 | 0 | 0초 |
+| 코드업데이트 | 100 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -45,6 +45,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 15:37 | PC | deep_topics | deep_topics.py --propose 8 | ✅ | 4초 |  |
+| 15:33 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_longform.py, deep.py, local_ui.py) | ✅ |  |  |
+| 15:28 | PC | 코드업데이트 | gonmau/shorts: 4개 (build_longform.py, lf_manual.py, lf_thumb.py, local_ui.py) | ✅ |  |  |
 | 11:22 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 296 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --fill-images --re | ✅ | 20분 23초 |  |
 | 09:47 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 296 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --fill-images --re | ✅ | 31분 14초 |  |
 | 09:14 | PC | deep_topics | deep_topics.py --propose 8 | ✅ | 3초 |  |
