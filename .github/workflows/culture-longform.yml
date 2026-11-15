@@ -13,8 +13,9 @@
 name: culture-longform
 
 on:
-  schedule:
-    - cron: "0 11 * * 6"   # UTC 기준 (한국 시간 = UTC+9)
+  # [주말 자동 롱폼 중지 2026-11-15] 다시 켜려면 아래 두 줄의 # 를 지우세요
+#  schedule:
+#    - cron: "0 11 * * 6"   # UTC 기준 (한국 시간 = UTC+9)
   workflow_dispatch:
     inputs:
       mode:

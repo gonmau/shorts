@@ -2972,6 +2972,95 @@ with TL:
         except Exception:
             return None
     plan = _lf_plan()
+    if os.path.exists("lf_manual.py") and not EN:
+      with st.expander("✍️ 직접 만들기 · 구성 · 썸네일 (내 대본으로 챕터 추가 / 요약·엔딩 켜기 / 썸네일 꾸미기)", expanded=False):
+        import lf_manual as _LM
+        st.markdown("**1. 챕터 직접 입력** — 쇼츠 소재 없이 내가 쓴 대본으로 챕터를 만듭니다. 추가하면 아래 구성 목록에 들어가고, 사진·키워드·비교 카드·시나리오·대본 수정은 ② 화면에서 다른 챕터와 똑같이 고칩니다.")
+        _mc1, _mc2 = st.columns(2)
+        _m_t1 = _mc1.text_input("챕터 제목 (화면 왼쪽 아래 1줄)", key="lfm_t1")
+        _m_lab = _mc2.text_input("라벨 (2줄·강조색, 비우면 제목 앞부분)", key="lfm_lab")
+        _m_nar = st.text_area("대본 (이 챕터에서 읽을 전체 내용. 문장은 마침표/물음표로 끝내세요)", height=200, key="lfm_nar")
+        _m_q = st.text_input("사진 검색어 (영어, 쉼표로 여러 개 · 비우면 제목으로 자동 검색)", key="lfm_q")
+        _m_n = len(re.sub(r"\s+", "", _m_nar))
+        st.caption(f"{_m_n}자 · 예상 약 {int(_m_n / 6.0 // 60)}분 {int(_m_n / 6.0 % 60)}초")
+        if st.button("➕ 이 챕터를 구성에 추가", key="lfm_add", type="primary", disabled=_m_n < NARR_MIN or not _m_t1.strip()):
+            try:
+                _ni = _LM.add_chapter(_m_lab, _m_t1, _m_nar, [q for q in re.split(r"[,\n]", _m_q) if q.strip()])
+                _LM.plan_add(_ni)
+                st.session_state["lfm_msg"] = f"챕터 [{_ni}] 를 추가했습니다. 사진이 없으면 ② 에서 '빠진 사진 받기'를 누르세요."
+                for _k in ("lfm_t1", "lfm_lab", "lfm_nar", "lfm_q"):
+                    st.session_state.pop(_k, None)
+                st.rerun()
+            except Exception as _e:
+                st.error(f"추가 실패: {_e}")
+        if st.session_state.get("lfm_msg"):
+            st.success(st.session_state.pop("lfm_msg"))
+        st.divider()
+        st.markdown("**2. 구성 — 인트로 · 요약 · 엔딩**")
+        _pl_ = _lf_plan() or {}
+        if not _pl_.get("members"):
+            st.caption("아직 구성(챕터 목록)이 없습니다. 위에서 챕터를 추가하거나 ① 대본·시나리오 만들기를 먼저 누르세요.")
+        else:
+            st.caption("챕터 순서·추가·삭제는 아래 ②의 '챕터 순서 바꾸기', 인트로·엔딩 문구는 ②의 '오프닝 · 엔딩 멘트'에서 고칩니다. 여기서는 요약 화면을 켜고 끕니다.")
+            _r1, _r2 = st.columns(2)
+            _rc_on = _r1.checkbox("요약 화면 + 엔딩 멘트 넣기", _pl_.get("recap", True) is not False, key="lfs_recap")
+            _rc_cd = _r2.checkbox("챕터별 요약 카드 표시", _pl_.get("recap_cards", True) is not False, key="lfs_cards", disabled=not _rc_on)
+            if st.button("💾 구성 저장", key="lfs_save"):
+                _pl_["recap"] = bool(_rc_on); _pl_["recap_cards"] = bool(_rc_cd)
+                json.dump(_pl_, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.success("저장했습니다 (③에서 적용).")
+        st.divider()
+        st.markdown("**3. 썸네일** — 제목 글자와 배경을 직접 정합니다. 저장하면 ③에서 영상과 함께 이 모양으로 만들어집니다.")
+        if not _pl_.get("members"):
+            st.caption("구성이 있어야 썸네일을 꾸밀 수 있습니다.")
+        else:
+            import lf_thumb as _LT
+            _th = _pl_.get("thumb") or {}
+            _ltitle_ = ltitle
+            _dbl_t = _ld()
+            _b0, _g0, _c0 = _LT.split_title(_th.get("title") or _ltitle_ or "세계 문화 이야기", False)
+            _tt1, _tt2, _tt3 = st.columns(3)
+            _tb = _tt1.text_input("붉은 띠 글자", _th.get("banner") if _th.get("banner") is not None else _b0, key="lft_b")
+            _tg = _tt2.text_input("큰 흰 글자", _th.get("big") if _th.get("big") is not None else _g0, key="lft_g")
+            _tc = _tt3.text_input("노란 글자 (개수 등, 비워도 됨)", _th.get("count") if _th.get("count") is not None else _c0, key="lft_c")
+            _mode = st.radio("배경", ["챕터 사진 콜라주 (자동)", "내 이미지 1장"], index=1 if _th.get("mode") == "image" else 0, horizontal=True, key="lft_mode")
+            _img_path = _th.get("image", "")
+            _sel_m = _th.get("members") or list(_pl_["members"])
+            if _mode.startswith("챕터"):
+                _sel_m = st.multiselect("콜라주에 쓸 챕터 (비우면 전체)", list(_pl_["members"]), default=[m_ for m_ in _sel_m if m_ in _pl_["members"]],
+                                        format_func=lambda i_: (f"{i_} " + str(_dbl_t[i_].get("topic", ""))[:20]) if 0 <= i_ < len(_dbl_t) else str(i_),
+                                        key="lft_mem")
+            else:
+                _up = st.file_uploader("썸네일 배경 이미지 (jpg/png, 가로 사진 권장)", type=["jpg", "jpeg", "png"], key="lft_up")
+                if _up is not None:
+                    Path("my_thumb").mkdir(exist_ok=True)
+                    _img_path = str(Path("my_thumb") / "longform_bg.jpg")
+                    from PIL import Image as _PI
+                    _PI.open(_up).convert("RGB").save(_img_path, quality=92)
+                if _img_path and os.path.exists(_img_path):
+                    st.image(_img_path, caption="현재 배경", width=240)
+            _t_args = dict(banner=_tb.strip(), big=_tg.strip(), count=_tc.strip())
+            _tp1, _tp2 = st.columns(2)
+            if _tp1.button("👁 미리보기", key="lft_prev"):
+                try:
+                    os.makedirs("longform_out", exist_ok=True)
+                    _pv = "longform_out/thumb_preview.png"
+                    if _mode.startswith("챕터"):
+                        _LT.make(_ld(), list(_sel_m) or list(_pl_["members"]), _ltitle_ or "세계 문화 이야기", _pv, en=False, parts=_t_args)
+                    else:
+                        _LT.make_custom(_img_path, _ltitle_ or "세계 문화 이야기", _pv, en=False, parts=_t_args)
+                    st.image(_pv, use_container_width=True)
+                except Exception as _e:
+                    st.error(f"미리보기 실패: {type(_e).__name__}: {_e}")
+            if _tp2.button("💾 썸네일 설정 저장", key="lft_save", type="primary"):
+                _pl_["thumb"] = {**_t_args, "mode": "image" if not _mode.startswith("챕터") else "collage", "image": _img_path, "members": list(_sel_m), "title": _ltitle_}
+                json.dump(_pl_, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.success("저장했습니다.")
+            if _th and st.button("↩ 자동 썸네일로 되돌리기", key="lft_reset"):
+                _pl_.pop("thumb", None)
+                json.dump(_pl_, open("longform_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                st.rerun()
+
     st.markdown("##### ① 대본·시나리오 만들기 → ② 확인/수정 → ③ 롱폼 만들기")
     c1, c2, c3 = st.columns(3)
     if c1.button("목록만 보기", key="lf_dry", help="어떤 소재가 묶일지만 보여줌 (영상 안 만듦)"):

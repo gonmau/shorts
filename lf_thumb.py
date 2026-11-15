@@ -129,7 +129,30 @@ def split_title(title, en):
     return banner, big, count
 
 
-def make(db, members, title, out_path, en=False):
+def _draw_title(base, banner, big, count):
+    """제목(붉은 띠 + 큰 흰 글자 + 노란 개수)을 가운데에 그린다"""
+    d = ImageDraw.Draw(base)
+    fb = _fit_font(d, banner, 520, 74, 40)
+    bt = TP.italic_text(banner, fb, (255, 255, 255), stroke=4, stroke_fill=(120, 0, 10), shear=0.18)
+    bs = TP.brush(bt.width + 90, bt.height + 30, seed=len(banner) * 3 + 5)
+    red = Image.new("RGBA", bs.size, RED + (255,))
+    red.putalpha(bs.getchannel("A"))
+    f1 = _fit_font(d, big, 760, 128, 56)
+    f2 = _fit_font(d, count, 600, 150, 60) if count else None
+    h1 = int(f1.size * 1.12)
+    h2 = int(f2.size * 1.12) if f2 else 0
+    total = red.height + 4 + h1 + h2
+    by = max(24, (TH - total) // 2 - 10)
+    base.alpha_composite(red, ((TW - red.width) // 2, by))
+    base.alpha_composite(bt, ((TW - bt.width) // 2, by + (red.height - bt.height) // 2))
+    d = ImageDraw.Draw(base)
+    y1 = by + red.height + 4
+    TP.stroke_text(d, big, TW // 2, y1, f1, (255, 255, 255), stroke=11)
+    if count:
+        TP.stroke_text(d, count, TW // 2, y1 + h1, f2, YELLOW, stroke=11)
+
+
+def make(db, members, title, out_path, en=False, parts=None):
     import build_video as B
     sel = _pick(members)
     base = Image.new("RGBA", (TW, TH), (255, 255, 255, 255))
@@ -166,26 +189,27 @@ def make(db, members, title, out_path, en=False):
     px, py = pts[-1]
     od.polygon([(px - 26, py + 6), (px + 30, py - 10), (px + 4, py + 10), (px - 10, py + 22)], fill=(255, 255, 255, 255))
     base.alpha_composite(ov)
-    # 제목 (세로 가운데 정렬)
     banner, big, count = split_title(title, en)
-    d = ImageDraw.Draw(base)
-    fb = _fit_font(d, banner, 520, 74, 40)
-    bt = TP.italic_text(banner, fb, (255, 255, 255), stroke=4, stroke_fill=(120, 0, 10), shear=0.18)
-    bs = TP.brush(bt.width + 90, bt.height + 30, seed=len(banner) * 3 + 5)
-    red = Image.new("RGBA", bs.size, RED + (255,))
-    red.putalpha(bs.getchannel("A"))
-    f1 = _fit_font(d, big, 760, 128, 56)
-    f2 = _fit_font(d, count, 600, 150, 60) if count else None
-    h1 = int(f1.size * 1.12)
-    h2 = int(f2.size * 1.12) if f2 else 0
-    total = red.height + 4 + h1 + h2
-    by = max(24, (TH - total) // 2 - 10)
-    base.alpha_composite(red, ((TW - red.width) // 2, by))
-    base.alpha_composite(bt, ((TW - bt.width) // 2, by + (red.height - bt.height) // 2))
-    d = ImageDraw.Draw(base)
-    y1 = by + red.height + 4
-    TP.stroke_text(d, big, TW // 2, y1, f1, (255, 255, 255), stroke=11)
-    if count:
-        TP.stroke_text(d, count, TW // 2, y1 + h1, f2, YELLOW, stroke=11)
+    if parts:
+        banner, big, count = (parts.get("banner") or banner), (parts.get("big") or big), parts.get("count", count)
+    _draw_title(base, banner, big, count)
+    base.convert("RGB").save(out_path, quality=92)
+    return out_path
+
+
+def make_custom(image, title, out_path, en=False, parts=None):
+    """내가 고른 이미지 1장을 배경으로 한 썸네일 (가운데를 어둡게 + 제목). image 가 없으면 회색 배경."""
+    base = Image.new("RGBA", (TW, TH), (40, 40, 48, 255))
+    if image and Path(image).exists():
+        im = ImageOps.fit(Image.open(image).convert("RGB"), (TW, TH), Image.LANCZOS).convert("RGBA")
+        base.alpha_composite(im)
+    vg = Image.new("L", (TW, TH), 0)
+    ImageDraw.Draw(vg).ellipse((TW / 2 - 520, TH / 2 - 280, TW / 2 + 520, TH / 2 + 280), fill=150)
+    vg = vg.filter(ImageFilter.GaussianBlur(80))
+    base.alpha_composite(Image.merge("RGBA", (Image.new("L", (TW, TH), 0),) * 3 + (vg,)))
+    banner, big, count = split_title(title, en)
+    if parts:
+        banner, big, count = (parts.get("banner") or banner), (parts.get("big") or big), parts.get("count", count)
+    _draw_title(base, banner, big, count)
     base.convert("RGB").save(out_path, quality=92)
     return out_path

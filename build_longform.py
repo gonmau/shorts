@@ -526,7 +526,20 @@ def make_description(db, members, durations, intro_len, title, extra=None):
     return "\n\n".join([head, note + "\n" + "\n".join(used)] + tail)
 
 
-def make_thumbnail(db, members, title, out_path):
+def make_thumbnail(db, members, title, out_path, thumb=None):
+    thumb = thumb or {}
+    if thumb:   # 직접 꾸민 썸네일 (UI 에서 저장한 longform_plan.json 의 thumb)
+        try:
+            import lf_thumb
+            parts = {k: thumb.get(k) for k in ("banner", "big", "count") if thumb.get(k) is not None}
+            if thumb.get("mode") == "image" and thumb.get("image") and Path(thumb["image"]).exists():
+                lf_thumb.make_custom(thumb["image"], title, out_path, en=IS_EN, parts=parts)
+                return
+            sel = [m for m in (thumb.get("members") or []) if m in members] or members
+            lf_thumb.make(db, sel, title, out_path, en=IS_EN, parts=parts)
+            return
+        except Exception as e:
+            print(f"  직접 꾸민 썸네일 실패 -> 자동 썸네일 ({type(e).__name__}: {e})", flush=True)
     try:   # 사진 콜라주 + 국기 + 지구본 + 큰 제목 (실패하면 아래 예전 방식으로)
         import lf_thumb
         lf_thumb.make(db, members, title, out_path, en=IS_EN)
@@ -826,8 +839,8 @@ def run_rich(args, db, lf_db, members):
         t_acc += card_len + dur
 
     # 4) 요약 + 엔딩 (채널 표시 설정의 '요약 화면' 또는 --no-recap / LF_RECAP=0 으로 끌 수 있음)
-    recap_on = bool(R.BRAND.get("recap", True)) and not args.no_recap and os.environ.get("LF_RECAP", "1") != "0"
-    cards_on = bool(R.BRAND.get("recap_cards", True)) and not args.no_recap_cards and os.environ.get("LF_RECAP_CARDS", "1") != "0"
+    recap_on = bool(R.BRAND.get("recap", True)) and not args.no_recap and os.environ.get("LF_RECAP", "1") != "0" and custom_.get("recap", True) is not False
+    cards_on = bool(R.BRAND.get("recap_cards", True)) and not args.no_recap_cards and os.environ.get("LF_RECAP_CARDS", "1") != "0" and custom_.get("recap_cards", True) is not False
     outro_txt, recap_len, recap_start = "", 0.0, None
     if recap_on:
         items = [(no, countries[no - 1], recs[idx].get("recap") or str(db[idx].get("topic", ""))) for no, idx in enumerate(members, start=1)]
@@ -884,7 +897,7 @@ def run_rich(args, db, lf_db, members):
         (OUT / f"longform_{lf_id:03d}_script.txt").write_text("\n".join(sl_), encoding="utf-8")
     except Exception:
         pass
-    make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png")
+    make_thumbnail(db, members, title, OUT / f"longform_{lf_id:03d}.png", thumb=custom_.get("thumb"))
     chunks, n_no = [], 1
     for no in sorted(seg_cues):
         off, cs = seg_cues[no]
