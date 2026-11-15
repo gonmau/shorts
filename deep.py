@@ -314,7 +314,7 @@ def materialize(src, data):
         ns_ = len(LS.split_sentences(s["narration"]))
         kw_ = [k_ for k_ in (s.get("keywords") or []) if isinstance(k_, dict) and 1 <= int(k_.get("sentence", 0)) <= ns_]
         LS.update_rec(i, {"narration": s["narration"], "keywords": kw_, "compare": None, "recap": s.get("recap", ""),
-                          "broll": [], "clip_queries": [], "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
+                          "broll": [], "clip_queries": list(s.get("clip_queries") or [q for q in qs if q][:3]), "clips": [], "images": [], "compare_at": 0, "title1": s.get("title", ""),
                           "title2": str(item.get("country", ""))})
     return new
 
