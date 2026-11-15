@@ -369,5 +369,189 @@
     "locked": false
    }
   ]
+ },
+ "52": {
+  "style": "story",
+  "n": 5,
+  "minutes": 8.0,
+  "created": "2026-11-15 20:39",
+  "instruction": "",
+  "sections": [
+   {
+    "title": "마넨 피스 의상 비밀",
+    "narration": "브뤼셀 광장 한복판에 작은 청동 소년이 오늘은 무슨 옷을 입었는지 궁금해요. 매일 수백 가지 옷을 갈아입히고, 외국 대사관이 만든 슈퍼히어로 복장도 있어요. 시민들은 정해진 일정에 맞춰 옷장을 열고, 행사 때는 특별히 고른 의상을 걸어 놓아요. 그런데 그 옷들 중 가장 눈길을 끄는 것은 어떤 이야기와 연결돼 있을까요? 그 답은 다음 장면에서 밝혀집니다.",
+    "keywords": [
+     {
+      "sentence": 1,
+      "text": "브뤼셀 광장"
+     },
+     {
+      "sentence": 3,
+      "text": "수백 가지 옷"
+     },
+     {
+      "sentence": 5,
+      "text": "대사관 슈퍼히어로"
+     }
+    ],
+    "recap": "다채로운 의상이 숨긴 이야기가 다음에 풀린다.",
+    "image_queries": [
+     "Brussels Grand Place fountain",
+     "Manneken Pis bronze statue close-up",
+     "colorful historical costumes mannequin",
+     "embassy gift superhero costume",
+     "city officials changing statue clothing",
+     "tourists watching statue dressing ceremony",
+     "vintage wardrobe with dozens of outfits",
+     "Belgian flag beside Manneken Pis",
+     "night illumination of statue with costume",
+     "close-up of superhero cape on statue",
+     "museum display of Manneken Pis costumes",
+     "street view of Rue du Chêne near statue"
+    ],
+    "angle": "장면과 궁금증",
+    "locked": false
+   },
+   {
+    "title": "시작의 비밀",
+    "narration": "그때 브뤼셀 시민들은 축제마다 남다른 웃음을 원했어요. 작은 청동 소년을 단순히 물만 보는 조각으로 두고 싶지 않았죠. 그래서 한 양조장이 소년에게 옷을 입히자는 제안을 했습니다. 당시 사람들은 옷을 갈아입히는 것이 도시의 유머를 보여주는 최고의 방법이라 생각했어요. 첫 번째 옷은 양조장의 맥주병을 닮은 초록색 옷이었고, 마을 사람들은 크게 웃으며 박수를 보냈습니다. 이때부터 소년은 매일 다른 복장을 입는 전통이 시작됐습니다. 옷장은 점점 늘어나며 수백 가지가 쌓였고, 도시 위원회는 관리 체계를 만들었습니다. 특별한 날엔 외교 사절단이 직접 디자인한 복장을 선물하기도 했죠. 그 중 하나는 영국 대사관이 만든 왕관 모양의 옷이었고, 시민들은 이를 ‘왕의 방문’이라 부르며 환호했습니다. 또 한 번은 프랑스 대사관이 만든 베레모와 초콜릿 무늬 옷이 등장해, 소년은 달콤한 향을 풍겼다고 전해집니다. 이런 이야기는 입소문으로 퍼져, 다른 나라에서도 비슷한 전통을 만들게 했어요. 결국 옷을 입히는 행위는 브뤼셀의 정체성을 보여주는 살아있는 퍼포먼스로 자리 잡았습니다. 오늘도 위원회는 일정표에 맞춰 옷을 고르고, 시민들은 그 변신을 기대합니다. 이 전통이 어떻게 오늘날까지 이어졌는지 궁금하지 않으세요? 이제 그 뒤에 숨은 조직과 관리 이야기를 살펴볼 차례입니다.",
+    "keywords": [
+     {
+      "sentence": 3,
+      "text": "양조장 제안"
+     },
+     {
+      "sentence": 7,
+      "text": "옷장 확대"
+     },
+     {
+      "sentence": 12,
+      "text": "외교 사절단 선물"
+     }
+    ],
+    "recap": "양조장 제안으로 시작된 옷 입히기 전통이 오늘까지 이어졌다.",
+    "image_queries": [
+     "Brussels historic square festival crowd",
+     "bronze boy statue close up",
+     "17th century brewer costume illustration",
+     "city officials discussing costume plan",
+     "colorful traditional costumes on mannequin",
+     "British embassy royal crown costume",
+     "French embassy beret chocolate pattern outfit",
+     "museum wardrobe filled with costumes",
+     "schedule board with costume dates",
+     "tourists watching statue change clothes",
+     "Belgian humor street performance",
+     "modern committee members preparing outfits"
+    ],
+    "angle": "그 시작",
+    "locked": false
+   },
+   {
+    "title": "갈등의 옷장",
+    "narration": "하지만 매주 옷을 갈아입히는 일은 늘 순조롭지만은 않아요. 시청은 어떤 복장이 적절한지 매번 논쟁에 휘말리죠. 특히 외교 사절이 보낸 슈퍼히어로 의상은 의견이 갈라집니다. 한쪽은 유머라고 하고, 다른 쪽은 무례함이라고 지적해요. 그해 여름, 미국 대사관이 보낸 캡틴 마네키는 큰 파장을 일으켰습니다. 시민들은 거리에서 플래카드를 들고 항의했어요. 시청 관계자는 ‘전통을 존중하면서도 현대적 감각을’이라며 조율을 시도했습니다. 하지만 옷장 관리인들은 수백 벌 중 어떤 걸 골라야 할지 밤새 고민했죠. 결국 전문가 위원회가 선정한 ‘평화의 옷’이 공개되었습니다. 그 옷은 각국 깃발 색을 조화시킨 심플한 디자인이었어요. 관광객들은 새로운 모습에 환호했고, 논란은 잠시 가라앉았습니다. 그럼에도 여전히 어떤 의상이 다음에 등장할지는 기대와 긴장이 교차하죠. 다음은 마네키가 입은 가장 특별한 복장의 비밀입니다.",
+    "keywords": [
+     {
+      "sentence": 3,
+      "text": "외교 복장 논란"
+     },
+     {
+      "sentence": 6,
+      "text": "시민 항의"
+     },
+     {
+      "sentence": 10,
+      "text": "평화의 옷"
+     }
+    ],
+    "recap": "외교와 시민 사이의 갈등이 옷 선택을 뒤흔든다.",
+    "image_queries": [
+     "Brussels city hall interior",
+     "Manneken Pis costume change ceremony",
+     "diplomatic gifts clothing",
+     "protest crowd with signs Brussels",
+     "fashion designer sketch uniform",
+     "museum costume display",
+     "colorful flags woven fabric",
+     "tourists photographing statue",
+     "close-up bronze statue water",
+     "historic square Grand Place",
+     "nighttime city hall lighting",
+     "handful of vintage costumes"
+    ],
+    "angle": "엇갈림과 긴장",
+    "locked": false
+   },
+   {
+    "title": "뜻밖의 반전",
+    "narration": "그때부터 마네는 매주 새 옷을 입히는 일에 빠졌지만, 사람들은 한 가지를 놓치고 있었어요. 그 옷이 단순히 장식이 아니라 외교적 메시지를 담고 있다는 사실이죠. 어느 날 일본 대사관이 보낸 기모노를 입은 마네는 전통 무늬와 물줄기가 어우러져 관람객에게 놀라운 조화를 보여줬어요. 다른 날 미국 대사관이 만든 슈퍼히어로 복장은 마네를 작은 캡틴 아메리카처럼 보이게 했고, 현지 아이들은 ‘우리도 영웅이야’라며 웃었어요. 이렇게 각국이 선물한 복장은 색다른 옷을 넘어 그 나라 문화와 자부심을 브뤼셀에 전하는 작은 사절단 역할을 해요. 실제로 마네가 입은 몇몇 복장은 국제 행사 공식 사진에 등장해, 세계 무대에서 벨기에 유머 감각을 알리는 매개체가 되었어요. 그럼에도 가장 놀라운 점은 마네가 입은 옷이 언제나 그 나라 최신 트렌드를 반영한다는 거예요. 패션 위크 시즌이면 파리 대사관이 최신 디자이너 컬렉션을 보내고, 그 옷을 입은 마네는 순식간에 패션 아이콘이 돼요. 결국 마네의 옷장은 세계 각국 문화와 최신 흐름을 한눈에 보여주는 살아있는 박물관이에요. 이 작은 청동 소년이 매일 새 옷을 입는 이유는 단순히 재미를 넘어 국제 교류의 작은 다리 역할을 하기 때문이에요. 이제 우리는 마네가 어떤 옷을 입었는지 보는 순간, 그 옷이 전하는 이야기를 함께 읽게 돼요. 다음에는 마네가 입은 옷이 어떻게 보관되고 관리되는지 살펴볼게요.",
+    "keywords": [
+     {
+      "sentence": 2,
+      "text": "외교적 메시지"
+     },
+     {
+      "sentence": 5,
+      "text": "문화 사절단"
+     },
+     {
+      "sentence": 9,
+      "text": "패션 아이콘"
+     }
+    ],
+    "recap": "마네의 옷은 외교와 패션을 잇는 문화 사절단이다.",
+    "image_queries": [
+     "Brussels Grand Place fountain",
+     "Manneken Pis wearing kimono",
+     "Manneken Pis superhero costume",
+     "Japanese traditional pattern closeup",
+     "American flag superhero outfit",
+     "International diplomats presenting gifts",
+     "Fashion week runway models",
+     "Paris designer clothing rack",
+     "Museum display of historic costumes",
+     "Close-up of bronze statue details",
+     "Visitors photographing statue",
+     "Behind the scenes costume change"
+    ],
+    "angle": "뜻밖의 전환",
+    "locked": false
+   },
+   {
+    "title": "옷 갈아입히는 순간",
+    "narration": "그때처럼 오늘도 작은 소년은 새 옷을 기다립니다. 시청 직원들은 조심스레 옷장을 열고 옷을 꺼냅니다. 천 개에 달하는 옷 중 오늘은 전통 복장을 고릅니다. 그 복장은 벨기에 민속을 담은 색채와 자수로 빛납니다. 하지만 특별히 오늘은 외교 사절단이 선물한 복장이 있습니다. 프랑스 대사는 파리의 작은 깃발 무늬 코트를 보냈죠. 스페인 대사는 화려한 투구와 망토를 전해 주었습니다. 옷을 입히는 순간, 작은 청동 몸은 마치 살아 숨 쉬는 듯합니다. 관광객들은 카메라를 들고 웃음과 감탄을 터뜨립니다. 그들의 눈빛엔 호기심이 가득하고, 이야기가 이어집니다. 이 작은 전통은 도시의 역사를 옷감에 담아 보여줍니다. 옷이 바뀔 때마다 브뤈셀은 새로운 이야기를 얻습니다. 그렇기에 우리는 오늘도 마네가 입은 옷을 통해 세계와 대화합니다. 밤이 찾아오면 옷장에는 또 다른 이야기가 숨겨집니다. 다음 주엔 독일 대사가 만든 전통 맥주잔 모양의 코트를 입힐 예정입니다. 그때마다 시민들은 작은 소년에게 축하의 박수를 보냅니다. 옷 한 벌이 바뀔 때마다 브뤈셀 골목은 색으로 물듭니다. 이렇게 작은 조각은 세계와 연결되는 실타래가 됩니다.",
+    "keywords": [
+     {
+      "sentence": 3,
+      "text": "전통 복장"
+     },
+     {
+      "sentence": 5,
+      "text": "외교 선물"
+     },
+     {
+      "sentence": 12,
+      "text": "옷 갈아입히기"
+     }
+    ],
+    "recap": "옷이 바뀔 때마다 새로운 이야기가 피어납니다.",
+    "image_queries": [
+     "Manneken Pis bronze statue closeup",
+     "Brussels city hall interior wardrobe",
+     "Traditional Belgian folk costume details",
+     "French embassy gift clothing item",
+     "Spanish ambassador costume with cape",
+     "Tourists photographing statue",
+     "Nighttime street lights Brussels",
+     "German beer stein costume design",
+     "Crowd applauding public ceremony",
+     "Colorful alleyway Brussels street",
+     "Diplomatic gifts displayed museum",
+     "Historic fountain square Brussels"
+    ],
+    "angle": "여운",
+    "locked": false
+   }
+  ]
  }
 }
