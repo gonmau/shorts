@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-15 20:39:13 (KST) · 기록 1811건 · 소재 694개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-15 21:55:04 (KST) · 기록 1812건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -35,7 +35,7 @@
 | trend_research | 3 | 3 | 2분 34초 |
 | update_description | 4 | 0 | 12초 |
 | upload_to_youtube | 25 | 0 | 14분 10초 |
-| 롱폼 | 79 | 13 | 9시간 41분 |
+| 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
 | 코드업데이트 | 105 | 0 | 0초 |
 
@@ -45,6 +45,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:54 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 52 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --clips --fill-imag | ✅ | 34분 9초 |  |
 | 20:39 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 52 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --clips --fill-imag | ✅ | 1분 19초 |  |
 | 20:34 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, deep.py, infographic.py, local_ui.py, longform_render.py) | ✅ |  |  |
 | 18:11 | PC | 롱폼 | build_longform.py --deep --deep-style story --indexes 296 --sections 5 --minutes 8 --channel gonmauY --handle @gonmauY --style rich --clips --fill-ima | ✅ | 26분 17초 |  |
