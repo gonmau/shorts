@@ -69134,9 +69134,9 @@
   },
   {
     "topic": "한스 섬(Hans Ø)에서 양국 깃발 격돌",
-    "hook": "130헥타르, 사람도 없는 섬에 덴마크와 캐나다가 동시에 깃발을 꽂았다!",
-    "body": "한스 섬은 케네디 해협 한가운데에 자리한 불모의 섬으로, 면적은 130헥타르이며 높이는 168.17미터이다. 캐나다 누나부트와 덴마크령 그린란드가 각각 영유권을 주장한다.",
-    "twist": "섬에 사람이 살지 않음에도 불구하고 양국은 여전히 주권을 주장하고 있다.",
+    "hook": "덴마크가 무인도에 브랜디를 남기자, 캐나다는 위스키로 응수했다!",
+    "body": "캐나다와 그린란드 사이에는 한스섬이라는 작은 무인도가 있습니다. 양국은 이 섬의 영유권을 놓고 오랫동안 대립했죠. 1984년 덴마크 측이 국기와 브랜디를 남기자, 캐나다도 위스키와 자국 국기로 맞대응했습니다. 이후 양국은 상대방의 국기를 내리고 술병을 남기는 기묘한 경쟁을 이어갔습니다.",
+    "twist": "총 한 발 쏘지 않은 이 경쟁은 수십 년간 이어졌습니다. 결국 2022년, 양국과 그린란드는 섬을 약 60대 40으로 나누기로 합의했죠. 술병으로 맞서던 두 나라, 결국 협상으로 국경을 그었습니다.",
     "caveat": "수년간 이어진 국경 분쟁이다.",
     "country": "덴마크",
     "theme": "영토/국경",
@@ -69149,34 +69149,38 @@
     "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
-    "narration": "130헥타르 규모의 무인 섬, 한스 섬에 덴마크와 캐나다가 동시에 깃발을 꽂았습니다. 이 섬은 케네디 해협 한가운데에 자리하고 높이는 168.17미터에 달합니다. 캐나다 누나부트와 덴마크령 그린란드가 각각 영유권을 주장하면서, 두 나라가 번갈아가며 깃발을 꽂는 모습이 이어지고 있습니다. 그런데 사람도 살지 않는 이 섬에까지 주권을 주장한다는 점이 이상하게 느껴집니다. 수년간 이어진 국경 분쟁에도 불구하고, 양국은 여전히 한스 섬을 포기하지 않고 있습니다. 결국, 이 작은 바위 위에서 펼쳐지는 깃발 격돌은 국제적인 영토 논쟁이 얼마나 미세한 땅에서도 지속될 수 있는지를 보여주는 살아있는 사례라 할 수 있습니다.",
-    "title_line1": "한스섬에깃발격돌",
-    "title_line2": "누구가 먼저?",
+    "narration": "덴마크가 무인도에 브랜디를 남기자, 캐나다는 위스키로 응수했습니다! 캐나다와 그린란드 사이에는 한스섬이라는 작은 무인도가 있습니다. 양국은 이 섬의 영유권을 놓고 오랫동안 대립했죠. 1984년 덴마크 측이 국기와 브랜디를 남기자, 캐나다도 위스키와 자국 국기로 맞대응했습니다. 이후 양국은 상대방의 국기를 내리고 술병을 남기는 기묘한 경쟁을 이어갔습니다. 총 한 발 쏘지 않은 이 경쟁은 수십 년간 이어졌습니다. 결국 2022년, 양국과 그린란드는 섬을 약 60대 40으로 나누기로 합의했죠. 술병으로 맞서던 두 나라, 결국 협상으로 국경을 그었습니다.",
+    "title_line1": "술병으로 벌인 50년 전쟁",
+    "title_line2": "브랜디에 위스키로 응수?",
     "highlights": [
       {
         "s": 1,
-        "text": "무인섬에 *깃발* 격돌"
+        "text": "브랜디에 *위스키*로 응수"
       },
       {
         "s": 3,
-        "text": "*영유권* 다툼"
+        "text": "국기와 술병으로 *영토 경쟁*"
       },
       {
         "s": 5,
-        "text": "*한스섬* 포기 안해"
+        "text": "총 한 발 없는 *50년 대치*"
       },
       {
         "s": 6,
-        "text": "미세한 땅에 *분쟁*"
+        "text": "2022년 *평화적 분할*"
       }
     ],
     "image_queries": [
-      "Hans Island flags",
-      "Hans Island aerial view",
-      "Canada Denmark flag dispute",
-      "rocky uninhabited island",
-      "Hans Island claim",
-      "tiny island border dispute"
+      "Hans Island Danish flag whisky bottle",
+      "Hans Island aerial view Arctic",
+      "Hans Island Canada Greenland territorial dispute map",
+      "Danish flag Hans Island 1984 historical",
+      "Canadian flag Hans Island whisky bottle",
+      "Hans Island 2022 Canada Denmark border division map",
+      "Hans Island",
+      "Denmark landmark",
+      "Denmark culture",
+      "Denmark street"
     ],
     "scene_count": 10,
     "infographic": {
@@ -69199,7 +69203,102 @@
         }
       ],
       "none": false
-    }
+    },
+    "narration_original": "130헥타르 규모의 무인 섬, 한스 섬에 덴마크와 캐나다가 동시에 깃발을 꽂았습니다. 이 섬은 케네디 해협 한가운데에 자리하고 높이는 168.17미터에 달합니다. 캐나다 누나부트와 덴마크령 그린란드가 각각 영유권을 주장하면서, 두 나라가 번갈아가며 깃발을 꽂는 모습이 이어지고 있습니다. 그런데 사람도 살지 않는 이 섬에까지 주권을 주장한다는 점이 이상하게 느껴집니다. 수년간 이어진 국경 분쟁에도 불구하고, 양국은 여전히 한스 섬을 포기하지 않고 있습니다. 결국, 이 작은 바위 위에서 펼쳐지는 깃발 격돌은 국제적인 영토 논쟁이 얼마나 미세한 땅에서도 지속될 수 있는지를 보여주는 살아있는 사례라 할 수 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Hans Island Danish flag whisky bottle",
+      "Hans Island aerial view Arctic",
+      "Hans Island Canada Greenland territorial dispute map",
+      "Danish flag Hans Island 1984 historical",
+      "Canadian flag Hans Island whisky bottle",
+      "Hans Island 2022 Canada Denmark border division map",
+      "Hans Island",
+      "Denmark landmark",
+      "Denmark culture",
+      "Denmark street"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/beach-beer-bottle-close-up-bokeh-1869523/",
+        "id": 1869523
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "jplenio",
+        "page": "https://pixabay.com/photos/iceland-aerial-view-mountains-ice-4058262/",
+        "id": 4058262
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Toubletap",
+        "license": "CC BY-SA 3.0",
+        "title": "HansIsland.png",
+        "page": "https://commons.wikimedia.org/wiki/File:HansIsland.png",
+        "id": "c:20695570"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "ASSY",
+        "page": "https://pixabay.com/photos/lighthouse-hirtshals-denmark-danish-1096697/",
+        "id": 1096697
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Vladvictoria",
+        "page": "https://pixabay.com/photos/marching-band-band-parade-school-4223023/",
+        "id": 4223023
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/scandinavia-norway-sweden-finland-60524/",
+        "id": 60524
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Photograph: NASA",
+        "license": "Public domain",
+        "title": "Wfm hans island landsat.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Wfm_hans_island_landsat.jpg",
+        "id": "c:245739"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "varsbergsrolands",
+        "page": "https://pixabay.com/photos/copenhagen-denmark-architecture-4052654/",
+        "id": 4052654
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "title": "Kopenhagen (DK), Nationalmuseum -- 2017 -- 1473-9.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kopenhagen_(DK),_Nationalmuseum_--_2017_--_1473-9.jpg",
+        "id": "c:61200646"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Foundry",
+        "page": "https://pixabay.com/photos/city-europe-france-normandy-869591/",
+        "id": 869591
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
