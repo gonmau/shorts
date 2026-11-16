@@ -1847,31 +1847,45 @@ with T3b:
           with st.expander("🧭 대본 ↔ 이미지 배치 (문장마다 보여줄 이미지를 직접 고르기)", expanded=False):
             _sents = _ss(item.get("narration", ""))
             _have_n = [n_ for n_ in range(1, _n_sc + 1) if (folder / f"scene_{n_:02d}.png").exists()]
-            _cur = [int(x) for x in (item.get("scene_img") or [])]
+            _cur = list(item.get("scene_img") or [])
+            _flat = lambda v_: [int(y_) for y_ in (v_ if isinstance(v_, (list, tuple)) else [v_])]
             if not _have_n:
                 st.caption("받은 이미지가 없습니다. 이미지를 받은 뒤 배치하세요.")
             else:
                 _nimg = max(_have_n)
                 _auto0 = _asm(_sents, len(_have_n))
                 _auto = [max([_have_n[i_] for i_, a_ in enumerate(_auto0) if a_ <= s_] or [_have_n[0]]) for s_ in range(1, len(_sents) + 1)]
-                _base = _cur if len(_cur) == len(_sents) and all(x in _have_n for x in _cur) else _auto
+                _base = _cur if len(_cur) == len(_sents) and all(all(y_ in _have_n for y_ in _flat(x_)) for x_ in _cur) else _auto
                 st.caption(("직접 정한 배치가 저장돼 있습니다. " if (_cur and len(_cur) == len(_sents)) else "지금은 자동 배치입니다. ") + f"이미지 {len(_have_n)}장 · 대본 {len(_sents)}문장. "
-                           "문장마다 그 문장을 읽는 동안 보여줄 이미지 번호를 고르세요. 같은 이미지를 여러 문장에 이어서 줄 수 있고, 순서를 바꾸거나 같은 이미지를 다시 써도 됩니다. "
-                           "이미지가 바뀌는 문장에서 장면이 바뀝니다. 이미 만든 영상은 redo 후 5단계 렌더링으로 적용합니다.")
+                           "문장마다 보여줄 이미지 번호를 적으세요. 한 문장에 여러 장이면 쉼표로 (예: 3,4 → 그 문장 시간을 균등하게 나눠 차례로 보임). 같은 이미지를 여러 문장에 이어서 줄 수 있고, 순서를 바꾸거나 다시 써도 됩니다. "
+                           "이미지가 바뀌는 곳에서 장면이 바뀝니다. 이미 만든 영상은 redo 후 5단계 렌더링으로 적용합니다.")
                 _cols = st.columns(min(6, len(_have_n)))
                 for _k, _n in enumerate(_have_n):
                     with _cols[_k % len(_cols)]:
                         st.image(str(folder / f"scene_{_n:02d}.png"), caption=f"이미지 {_n}", use_container_width=True)
                 import pandas as _pdm
-                _edm = st.data_editor(_pdm.DataFrame({"문장": list(range(1, len(_sents) + 1)), "이미지": _base, "대사": _sents}), key=f"simg_{idx}_{len(_sents)}_{len(_have_n)}",
+                _edm = st.data_editor(_pdm.DataFrame({"문장": list(range(1, len(_sents) + 1)), "이미지": [",".join(str(y_) for y_ in _flat(x_)) for x_ in _base], "대사": _sents}), key=f"simg_{idx}_{len(_sents)}_{len(_have_n)}",
                                       hide_index=True, use_container_width=True, disabled=["문장", "대사"],
-                                      column_config={"이미지": st.column_config.SelectboxColumn("이미지 번호", options=_have_n, required=True, width="small"),
+                                      column_config={"이미지": st.column_config.TextColumn("이미지 번호 (여러 장은 3,4)", width="small"),
                                                      "대사": st.column_config.TextColumn(width="large")})
-                _pick = [int(x) for x in _edm["이미지"].tolist()]
-                _nseg = 1 + sum(1 for a_, b_ in zip(_pick, _pick[1:]) if a_ != b_)
-                st.caption(f"장면 {_nseg}개로 나뉩니다 (이미지 {len(set(_pick))}장 사용). 안 쓰는 이미지: " + (", ".join(str(n_) for n_ in _have_n if n_ not in _pick) or "없음"))
+                _pick, _bad = [], []
+                for _ri, _v in enumerate(_edm["이미지"].tolist(), 1):
+                    _ns = [int(x_) for x_ in re.findall(r"\d+", str(_v))]
+                    if not _ns or any(x_ not in _have_n for x_ in _ns):
+                        _bad.append(_ri); _pick.append(_ns[0] if _ns and _ns[0] in _have_n else _have_n[0])
+                    else:
+                        _pick.append(_ns if len(_ns) > 1 else _ns[0])
+                if _bad:
+                    st.error(f"문장 {', '.join(map(str, _bad))}: 있는 이미지 번호({', '.join(map(str, _have_n))})만 적을 수 있습니다.")
+                _used_ = sorted({y_ for x_ in _pick for y_ in _flat(x_)})
+                _segn = 0; _last = None
+                for x_ in _pick:
+                    for y_ in _flat(x_):
+                        if y_ != _last:
+                            _segn += 1; _last = y_
+                st.caption(f"장면 {_segn}개로 나뉩니다 (이미지 {len(_used_)}장 사용). 안 쓰는 이미지: " + (", ".join(str(n_) for n_ in _have_n if n_ not in _used_) or "없음"))
                 _m1, _m2 = st.columns(2)
-                if _m1.button("💾 배치 저장", key=f"simg_save_{idx}", type="primary"):
+                if _m1.button("💾 배치 저장", key=f"simg_save_{idx}", type="primary", disabled=bool(_bad)):
                     _dbm = load_db(); _dbm[idx]["scene_img"] = _pick; _dbm[idx].pop("scene_map", None); save_db(_dbm); st.session_state["gh_dirty"] = True
                     st.success("저장했습니다. 영상에 반영하려면 redo 후 5단계 렌더링."); st.rerun()
                 if _m2.button("↩ 자동 배치로 되돌리기", key=f"simg_reset_{idx}", disabled=not _cur):

@@ -608,24 +608,29 @@ def lead_images(paths):
 
 
 def _img_segments(img_map, nsent):
-    """문장별 이미지 번호(1부터) -> [(첫 문장 번호, 이미지 번호)] 같은 이미지가 이어지면 한 구간"""
-    try:
-        mp = [int(x) for x in (img_map or [])]
-    except (TypeError, ValueError):
-        return None
-    if not mp or len(mp) != nsent or any(x < 1 for x in mp):
+    """문장별 이미지 배치 -> [(문장 번호, 문장 안 위치 0~1, 이미지 번호)]
+    배치 항목은 이미지 번호 하나(3) 또는 여러 장([3, 4], 그 문장을 시간순으로 균등하게 나눠 차례로 보여 줌). 같은 이미지가 이어지면 한 구간."""
+    if not isinstance(img_map, (list, tuple)) or len(img_map) != nsent or not nsent:
         return None
     segs = []
-    for i, v in enumerate(mp, 1):
-        if not segs or segs[-1][1] != v:
-            segs.append((i, v))
+    try:
+        for i, v in enumerate(img_map, 1):
+            lst = [int(x) for x in (v if isinstance(v, (list, tuple)) else [v])]
+            if not lst or any(x < 1 for x in lst):
+                return None
+            for k, im in enumerate(lst):
+                if segs and segs[-1][2] == im:
+                    continue
+                segs.append((i, k / len(lst), im))
+    except (TypeError, ValueError):
+        return None
     return segs
 
 
 def scene_order(item, narration):
     """직접 정한 문장별 이미지 배치가 있으면 장면 순서(이미지 번호-1 목록), 없으면 None"""
     segs = _img_segments((item or {}).get("scene_img"), len(split_sentences(narration)))
-    return [v - 1 for _a, v in segs] if segs else None
+    return [v - 1 for _a, _f, v in segs] if segs else None
 
 
 def apply_scene_order(srcs, item, narration):
@@ -647,7 +652,7 @@ def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6, n_img=Non
         cm_ = [0]
         for x in sents:
             cm_.append(cm_[-1] + _nospace(x))
-        st_ = [0.0] + [time_at_fraction(cm_[a - 1] / tot_, timings) for a, _v in segs_[1:]]
+        st_ = [0.0] + [time_at_fraction((cm_[a - 1] + f_ * (cm_[a] - cm_[a - 1])) / tot_, timings) for a, f_, _v in segs_[1:]]
         for i in range(1, len(st_)):
             st_[i] = max(st_[i], st_[i - 1] + min_len)
         lim_ = audio_duration - min_len
