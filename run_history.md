@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 19:56:03 (KST) · 기록 1872건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 20:19:36 (KST) · 기록 1876건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 176 | 0 | 43초 |
+| apply_review | 177 | 0 | 43초 |
 | approve | 51 | 0 | 11초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 80 | 0 | 13시간 54분 |
@@ -28,7 +28,7 @@
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 63 | 0 | 1분 45초 |
-| promote_ready | 176 | 0 | 38초 |
+| promote_ready | 177 | 0 | 39초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -37,7 +37,7 @@
 | upload_to_youtube | 26 | 0 | 14분 30초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 108 | 0 | 0초 |
+| 코드업데이트 | 110 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -45,6 +45,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:19 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 20:19 | PC | promote_ready | promote_ready.py --start 658 | ✅ | 0초 |  |
+| 20:15 | PC | 코드업데이트 | gonmau/shorts: 2개 (build_video.py, local_ui.py) | ✅ |  |  |
+| 20:08 | PC | 코드업데이트 | gonmau/shorts: 4개 (build_longform.py, build_video.py, local_ui.py, longform_render.py) | ✅ |  |  |
 | 19:39 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, build_video.py, local_ui.py, longform_render.py, scenes.py) | ✅ |  |  |
 | 15:56 | PC | fetch_images | fetch_images.py --limit 1 --start 658 --any | ✅ | 0초 |  |
 | 15:56 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 658 | ✅ | 2초 |  |
