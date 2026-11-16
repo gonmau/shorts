@@ -23,6 +23,14 @@ GRADS = [((30, 60, 120), (10, 20, 50)), ((120, 30, 90), (40, 10, 40)),
 
 
 def background(idx, item):
+    p_ = (item or {}).get("thumb_image")      # 직접 올린 배경 이미지가 있으면 그것을 우선
+    if p_:
+        pp_ = Path(p_) if Path(p_).is_absolute() else BASE_DIR / p_
+        if pp_.exists():
+            try:
+                return ImageOps.fit(Image.open(pp_).convert("RGB"), (W, H), Image.LANCZOS, centering=(0.5, 0.4))
+            except Exception:
+                pass
     folder = visual_dir(BASE_DIR, idx, item)
     for p in sorted(folder.glob("scene_*.png")):
         try:

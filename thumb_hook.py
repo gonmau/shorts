@@ -41,7 +41,20 @@ def _score(path):
     return s
 
 
+def custom_image(item):
+    """직접 올린 썸네일 배경 이미지 경로 (없거나 파일이 없으면 None)"""
+    p = (item or {}).get("thumb_image")
+    if p:
+        pp = Path(p) if Path(p).is_absolute() else BASE_DIR / p
+        if pp.exists():
+            return pp
+    return None
+
+
 def pick_scene(idx, item):
+    c = custom_image(item)
+    if c is not None:
+        return c
     folder = visual_dir(BASE_DIR, idx, item)
     files = sorted(folder.glob("scene_*.png"))
     want = item.get("thumb_scene")

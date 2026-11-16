@@ -851,6 +851,12 @@ with T6a:
             _tst = _tc1.selectbox("스타일", ["hook", "pop", "classic"], 0, key="thm_style",
                                   format_func=lambda x: {"hook": "hook (제목·후크 중심)", "pop": ("pop (국기+나라 띠)" if EN else "pop (굵은 제목)"), "classic": "classic"}[x])
             _tsc = _tc2.number_input("배경 장면 번호 (0=자동)", 0, 30, int(_td[_ts].get("thumb_scene") or 0), key=f"thm_sc_{_ts}")
+            _tup_cur = _td[_ts].get("thumb_image")
+            _tu1, _tu2 = st.columns([3, 2])
+            _tup = _tu1.file_uploader("또는 내 이미지를 배경으로 업로드 (jpg/png, 있으면 장면 번호보다 우선)", type=["jpg", "jpeg", "png"], key=f"thm_up_{_ts}")
+            _tup_off = _tu2.checkbox("올린 배경 이미지 쓰지 않기", False, key=f"thm_upoff_{_ts}", disabled=not _tup_cur) if _tup_cur else False
+            if _tup_cur:
+                _tu2.caption(f"현재 올린 이미지: {Path(_tup_cur).name}" + ("" if os.path.exists(_tup_cur if os.path.isabs(_tup_cur) else str(_tb / _tup_cur)) else " (파일 없음 → 장면 이미지 사용)"))
             _to = dict(_td[_ts].get("thumb_opts") or {})
             _o1, _o2, _o3 = st.columns(3)
             _sc1 = _o1.slider("제목 1줄 크기 배율", 0.5, 1.8, float(_to.get("scale1", 1.0)), 0.05, key=f"thm_s1_{_ts}")
@@ -938,6 +944,14 @@ with T6a:
                     _dm[_ts]["thumb_scene"] = int(_tsc)
                 else:
                     _dm[_ts].pop("thumb_scene", None)
+                if _tup is not None:       # 업로드한 배경 이미지 저장
+                    from PIL import Image as _PIu
+                    (_tb / "my_thumb").mkdir(exist_ok=True)
+                    _up_rel = f"my_thumb/thumb_{_ts}.jpg"
+                    _PIu.open(_tup).convert("RGB").save(str(_tb / _up_rel), quality=93)
+                    _dm[_ts]["thumb_image"] = _up_rel
+                elif _tup_off:
+                    _dm[_ts].pop("thumb_image", None)
                 _sd(_dm)
                 st.session_state["gh_dirty"] = True
                 _r = _sp_t.run([_sys_t.executable, str(_tb / "make_thumbnail.py"), "--channel", CH, "--handle", HD,
