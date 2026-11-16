@@ -69762,7 +69762,40 @@
     "verify_note": "Architecture of Mongolia",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:29.709346+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "narration": "6각·12각 지붕, 텐트가 사원으로 변신한다! 몽골 건축은 전통 거와 텐트를 기반으로 발전했습니다. 16·17세기에 세워진 라마사원들은 텐트 형태를 본떠, 6각·12각의 피라미드형 지붕을 설계했죠. 이 독특한 지붕은 초기에 나무와 펠트로 만들었습니다. 그런데 시간이 흐르면서 돌과 벽돌, 목재로 완전히 교체되었습니다. 그래서 오늘 우리는 목재와 펠트 대신 견고한 석재가 얹힌 사원을 보게 됩니다. 이 디자인은 16·17세기 몽골 라마사원에만 적용된 사례라는 점, 기억해 주세요. 텐트의 실용성과 상징성이 건축에 녹아든 순간, 전통과 영원이 만나 새로운 형태를 만든다는 여운을 남깁니다.",
+    "title_line1": "몽골 사원 텐트지붕",
+    "title_line2": "6·12각, 이유는?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*지붕* 변신!"
+      },
+      {
+        "s": 3,
+        "text": "*라마사원* 텐트"
+      },
+      {
+        "s": 4,
+        "text": "*펠트* 초창기"
+      }
+    ],
+    "image_queries": [
+      "Mongolian temple roof",
+      "Mongolian ger tent",
+      "Mongolia lama temple tent",
+      "traditional felt roof",
+      "Mongolian stone temple",
+      "Mongolia stone temple interior",
+      "16th century Mongolian temple",
+      "Mongolian yurt silhouette"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true
+    }
   },
   {
     "topic": "차 도구는 다섯 가지 카테고리로 구분돼 손님이 직접 준비한 물건은 포함되지 않는다",
