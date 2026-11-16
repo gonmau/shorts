@@ -607,12 +607,53 @@ def lead_images(paths):
     return k
 
 
-def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6, n_img=None, sent_map=None):
+def _img_segments(img_map, nsent):
+    """문장별 이미지 번호(1부터) -> [(첫 문장 번호, 이미지 번호)] 같은 이미지가 이어지면 한 구간"""
+    try:
+        mp = [int(x) for x in (img_map or [])]
+    except (TypeError, ValueError):
+        return None
+    if not mp or len(mp) != nsent or any(x < 1 for x in mp):
+        return None
+    segs = []
+    for i, v in enumerate(mp, 1):
+        if not segs or segs[-1][1] != v:
+            segs.append((i, v))
+    return segs
+
+
+def scene_order(item, narration):
+    """직접 정한 문장별 이미지 배치가 있으면 장면 순서(이미지 번호-1 목록), 없으면 None"""
+    segs = _img_segments((item or {}).get("scene_img"), len(split_sentences(narration)))
+    return [v - 1 for _a, v in segs] if segs else None
+
+
+def apply_scene_order(srcs, item, narration):
+    order = scene_order(item, narration)
+    if not order or not srcs:
+        return srcs
+    return [srcs[min(i, len(srcs) - 1)] for i in order]
+
+
+def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6, n_img=None, sent_map=None, img_map=None):
     """장면 시작 시각 목록. 장면 k는 대본의 k번째 문장 묶음을 읽는 동안 보인다.
     (핵심 문구와 같은 방식으로 글자 수 비율 -> 실제 음성 시간으로 환산)
     n_img: 실제로 있는 이미지 수. 문장 묶음 수보다 이미지가 많으면(직접 넣은 사진 등) 남는 이미지도 쓰도록 글자 수 비율로 균등하게 나눈다."""
     sents = split_sentences(narration)
     groups = scene_groups(sents, n)
+    segs_ = _img_segments(img_map, len(sents)) if sents and timings else None
+    if segs_:   # 문장마다 직접 고른 이미지: 이미지가 바뀌는 문장에서 장면이 바뀐다 (같은 이미지가 이어지면 한 장면)
+        tot_ = sum(_nospace(x) for x in sents) or 1
+        cm_ = [0]
+        for x in sents:
+            cm_.append(cm_[-1] + _nospace(x))
+        st_ = [0.0] + [time_at_fraction(cm_[a - 1] / tot_, timings) for a, _v in segs_[1:]]
+        for i in range(1, len(st_)):
+            st_[i] = max(st_[i], st_[i - 1] + min_len)
+        lim_ = audio_duration - min_len
+        if st_[-1] > lim_ and st_[-1] > 0:   # 넘치면 비율로 줄여서라도 정한 장면 수는 유지
+            st_ = [x * lim_ / st_[-1] for x in st_]
+        return st_
     if sent_map and sents and timings:   # 직접 정한 배치: 이미지 i 는 sent_map[i] 번째 문장부터. 같은 문장에 여러 장이면 그 구간을 균등 분할
         try:
             mp = [int(x) for x in sent_map]
@@ -773,7 +814,8 @@ def build_one(idx, item):
     timings = load_timings(timing_path, audio_duration, script)
 
     # 장면(이미지)은 대본 문장 묶음에 맞춰 바뀐다 (그 문장을 읽는 동안 그 장면 이미지)
-    starts = scene_starts(script, timings, audio_duration, item_scene_count(item), n_img=lead_images(visual_paths), sent_map=item.get("scene_map"))
+    starts = scene_starts(script, timings, audio_duration, item_scene_count(item), n_img=lead_images(visual_paths), sent_map=item.get("scene_map"), img_map=item.get("scene_img"))
+    srcs = apply_scene_order(srcs, item, script)
     n_scenes = len(starts)
     srcs = srcs[:n_scenes]
     scene_duration = audio_duration / max(n_scenes, 1)
