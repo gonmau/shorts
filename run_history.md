@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 14:46:40 (KST) · 기록 1848건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 14:47:05 (KST) · 기록 1851건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,7 +9,7 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 171 | 0 | 41초 |
+| apply_review | 172 | 0 | 41초 |
 | approve | 50 | 0 | 11초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 79 | 0 | 13시간 47분 |
@@ -23,12 +23,12 @@
 | fetch_images | 205 | 9 | 2시간 24분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 223 | 0 | 1시간 17분 |
-| generate_tts | 91 | 0 | 34분 9초 |
+| generate_tts | 92 | 0 | 34분 16초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 61 | 0 | 1분 43초 |
-| promote_ready | 171 | 0 | 37초 |
+| promote_ready | 172 | 0 | 37초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -45,6 +45,9 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:46 | PC | generate_tts | generate_tts.py --index 649 | ✅ | 6초 |  |
+| 14:46 | PC | promote_ready | promote_ready.py --start 649 | ✅ | 0초 |  |
+| 14:46 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 14:43 | PC | fetch_images | fetch_images.py --index 649 --scene 8 --source pixabay --type illustration | ✅ | 4초 |  |
 | 14:43 | PC | fetch_images | fetch_images.py --index 649 --scene 8 --source commons --type photo | ❌ failed | 3초 | 장면 8: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Pig War (1859)). 기존 사진 유지 |
 | 14:41 | PC | 코드업데이트 | gonmau/shorts: 4개 (build_video.py, common.py, local_ui.py, pipeline_settings.py) | ✅ |  |  |
