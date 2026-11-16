@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 13:22:54 (KST) · 기록 1812건 · 소재 694개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 13:23:12 (KST) · 기록 1817건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,8 +9,8 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 164 | 0 | 39초 |
-| approve | 47 | 0 | 10초 |
+| apply_review | 165 | 0 | 40초 |
+| approve | 48 | 0 | 11초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 78 | 0 | 13시간 41분 |
 | check_country | 17 | 0 | 5초 |
@@ -19,16 +19,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 57 | 0 | 10초 |
+| export_review | 58 | 0 | 11초 |
 | fetch_images | 201 | 8 | 2시간 23분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 217 | 0 | 1시간 17분 |
+| generate_script | 218 | 0 | 1시간 17분 |
 | generate_tts | 90 | 0 | 33분 55초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 60 | 0 | 1분 41초 |
-| promote_ready | 164 | 0 | 35초 |
+| promote_ready | 165 | 0 | 35초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -40,6 +40,16 @@
 | 코드업데이트 | 105 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-16
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 13:23 | PC | generate_script | generate_script.py --limit 1 --start 0 | ✅ | 9초 |  |
+| 13:23 | PC | export_review | export_review.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 13:22 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 13:22 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 13:22 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
 
 ### 2026-11-15
 
@@ -1902,44 +1912,3 @@
 | 12:43 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #50 (workflow_dispatch) | ✅ | 3분 36초 | https://github.com/gonmau/shorts/actions/runs/38507743171 |
 | 10:19 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/b11e1edfe0bbd4653d1cc00ba68a6d94caf4c2c3 |
 | 10:05 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #49 (workflow_dispatch) | ✅ | 14분 33초 | https://github.com/gonmau/shorts/actions/runs/38493771677 |
-
-### 2026-10-13
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 22:55 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/14540e75c94ecf3bcbedbca3d2ad1348f0354949 |
-| 22:17 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #48 (workflow_dispatch) | ✅ | 37분 59초 | https://github.com/gonmau/shorts/actions/runs/38403775900 |
-| 21:39 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/b78f09047e0cd916ff9df1e6412032b8d42316fd |
-| 21:32 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #47 (workflow_dispatch) | ✅ | 7분 32초 | https://github.com/gonmau/shorts/actions/runs/38398018260 |
-| 21:31 | PC(과거) | DB커밋 | facts_db.json: Update facts_db.json | ✅ |  | https://github.com/gonmau/shorts/commit/a2d4bd145cbf27bf612cc5f40199eb498bce6d58 |
-| 20:58 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/f01da5597e9f265652c68da62e86d99045b9ef05 |
-| 20:51 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #46 (workflow_dispatch) | ✅ | 6분 51초 | https://github.com/gonmau/shorts/actions/runs/38393165630 |
-| 20:50 | PC(과거) | DB커밋 | facts_db.json: Clear image_queries for Namahage entries | ✅ |  | https://github.com/gonmau/shorts/commit/74a5650c098d37da7dff7797c307d207763b7d39 |
-| 20:07 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/f8adc59b34e0e68c9ab5543d38a852f4e13bdc0a |
-| 19:59 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #45 (workflow_dispatch) | ✅ | 8분 40초 | https://github.com/gonmau/shorts/actions/runs/38387085622 |
-| 19:33 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #44 (workflow_dispatch) | ❌ cancelled | 15분 23초 | https://github.com/gonmau/shorts/actions/runs/38384163445 |
-| 19:01 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #43 (workflow_dispatch) | ❌ failure | 2분 33초 | https://github.com/gonmau/shorts/actions/runs/38380528545 |
-| 16:39 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/aeab9aed6ef9def13b6b128875db8a2b99c57c75 |
-| 16:27 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #42 (workflow_dispatch) | ✅ | 11분 35초 | https://github.com/gonmau/shorts/actions/runs/38362805797 |
-| 15:57 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/70af559d51c3f1cf7afb52ae166541fab16c8c2c |
-| 15:47 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #41 (workflow_dispatch) | ✅ | 10분 0초 | https://github.com/gonmau/shorts/actions/runs/38358710731 |
-| 13:10 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/a95ee193973ac56d8f3162327cb7ba868dfdcb94 |
-| 12:54 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #40 (workflow_dispatch) | ✅ | 16분 4초 | https://github.com/gonmau/shorts/actions/runs/38343905709 |
-| 12:01 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #39 (workflow_dispatch) | ✅ | 48초 | https://github.com/gonmau/shorts/actions/runs/38339731669 |
-| 11:55 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #38 (workflow_dispatch) | ✅ | 47초 | https://github.com/gonmau/shorts/actions/runs/38339183988 |
-| 11:49 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/be248f4d8b84b6f0e10daba30efe63e6a4ba965d |
-| 11:48 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #37 (workflow_dispatch) | ✅ | 57초 | https://github.com/gonmau/shorts/actions/runs/38338678227 |
-| 11:48 | PC(과거) | DB커밋 | facts_db.json: Fix JSON structure in facts_db.json | ✅ |  | https://github.com/gonmau/shorts/commit/4b2057a15e94817b12c0636dbdd5132b3f96096e |
-| 11:43 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #36 (workflow_dispatch) | ❌ failure | 58초 | https://github.com/gonmau/shorts/actions/runs/38338275304 |
-| 11:41 | PC(과거) | DB커밋 | facts_db.json: Update facts_db.json | ✅ |  | https://github.com/gonmau/shorts/commit/0ab4abe560c99c113c23262e94f7316147acd7fa |
-| 09:58 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/1292d017e86d054d00c6ddb98ae13b05d43f42f1 |
-| 09:48 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #35 (workflow_dispatch) | ✅ | 9분 33초 | https://github.com/gonmau/shorts/actions/runs/38329084561 |
-| 09:21 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/6303d67103e858c6c25e6334e3738d90966912b3 |
-| 09:21 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #34 (workflow_dispatch) | ✅ | 58초 | https://github.com/gonmau/shorts/actions/runs/38326801596 |
-| 09:13 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/7f945819f342db406ed14ff0d422faafffc1df9f |
-| 09:09 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #33 (workflow_dispatch) | ✅ | 3분 44초 | https://github.com/gonmau/shorts/actions/runs/38325860694 |
-| 08:38 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/0fe270e799069aedb2a913dc6e4cbb8fc08d42fd |
-| 08:37 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #32 (workflow_dispatch) | ✅ | 1분 2초 | https://github.com/gonmau/shorts/actions/runs/38323143371 |
-| 08:28 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #31 (workflow_dispatch) | ❌ failure | 1분 13초 | https://github.com/gonmau/shorts/actions/runs/38322319928 |
-| 08:05 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/14995a89c4138f187e65608351863dd5157e7b87 |
-| 08:04 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #30 (workflow_dispatch) | ✅ | 48초 | https://github.com/gonmau/shorts/actions/runs/38320196802 |
