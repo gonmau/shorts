@@ -68967,7 +68967,37 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0649_미국,영국.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0649_미국,영국.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "brush",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.05,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "돼지 한 마리가",
+      "text2": "전쟁을??",
+      "colors1": {
+        "0": "#2c51eb"
+      },
+      "sizes1": {},
+      "colors2": {
+        "0": "#f03636"
+      },
+      "sizes2": {}
+    }
   },
   {
     "topic": "왕실 나이저 회사가 다스리던 식민지 나이지리아",
