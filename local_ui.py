@@ -1838,6 +1838,46 @@ with T3b:
             st.info(f"대본 문장이 적어 장면이 {_grp}개로 묶입니다. 장면 {_grp + 1}번 이미지는 영상에 안 쓰이니 없어도 됩니다 (대본 문장을 늘리면 쓰입니다)." if _grp + 1 == _n_sc else f"대본 문장이 적어 장면이 {_grp}개로 묶입니다. 장면 {_grp + 1}~{_n_sc}번 이미지는 영상에 안 쓰이니 없어도 됩니다 (대본 문장을 늘리면 쓰입니다).")
         elif qs and len(qs) != _n_sc:
             st.warning(f"이미지 검색어 {len(qs)}개 ≠ 장면 {_n_sc}개. '검색어도 새로 만들기'를 체크하고 이미지를 다시 받으세요.")
+        try:
+            from scenes import auto_scene_map as _asm
+            from common import split_sentences as _ss
+        except ImportError:
+            _asm = None
+        if _asm and item.get("narration"):
+          with st.expander("🧭 대본 ↔ 이미지 배치 (어느 문장부터 어느 이미지를 보여줄지)", expanded=False):
+            _sents = _ss(item.get("narration", ""))
+            _nimg = len([n_ for n_ in range(1, _n_sc + 1) if (folder / f"scene_{n_:02d}.png").exists()])
+            _cur = [int(x) for x in (item.get("scene_map") or [])]
+            if not _nimg:
+                st.caption("받은 이미지가 없습니다. 이미지를 받은 뒤 배치하세요.")
+            else:
+                _auto = _asm(_sents, _nimg)
+                _base = _cur[:_nimg] if len(_cur) >= 1 and all(1 <= x <= len(_sents) for x in _cur) else _auto
+                _base = (_base + _auto[len(_base):])[:_nimg]
+                st.caption(("직접 정한 배치가 저장돼 있습니다. " if _cur else "지금은 자동 배치입니다. ") + f"이미지 {_nimg}장 · 대본 {len(_sents)}문장. 이미지마다 '시작 문장'을 정하면 그 문장부터 다음 이미지가 나올 때까지 보입니다. "
+                           "같은 문장을 여러 이미지에 주면 그 구간을 균등하게 나눕니다. 이미지 순서대로 문장 번호가 커지거나 같아야 합니다. 이미 만든 영상은 redo 후 5단계 렌더링으로 적용합니다.")
+                _cols = st.columns(min(5, _nimg))
+                _pick = []
+                for _n in range(1, _nimg + 1):
+                    with _cols[(_n - 1) % len(_cols)]:
+                        st.image(str(folder / f"scene_{_n:02d}.png"), caption=f"이미지 {_n}", use_container_width=True)
+                        _pick.append(int(st.number_input("시작 문장", 1, len(_sents), int(_base[_n - 1]), key=f"smap_{idx}_{_n}_{len(_sents)}_{_nimg}", label_visibility="visible")))
+                _rows_m = []
+                for _si, _sx in enumerate(_sents, 1):
+                    _on = [i_ + 1 for i_, v_ in enumerate(_pick) if v_ == _si]
+                    _cover = max([i_ + 1 for i_, v_ in enumerate(_pick) if v_ <= _si] or [1])
+                    _rows_m.append({"문장": _si, "이미지": (" → ".join(f"{x}" for x in ([_cover] + _on if _on and _on[0] != _cover else _on)) if _on else f"{_cover} (계속)"), "대사": _sx})
+                import pandas as _pdm
+                st.dataframe(_pdm.DataFrame(_rows_m), use_container_width=True, hide_index=True)
+                _ok = _pick == sorted(_pick) and _pick[0] == 1
+                if not _ok:
+                    st.warning("첫 이미지는 1번 문장부터, 이후는 문장 번호가 줄어들면 안 됩니다.")
+                _m1, _m2 = st.columns(2)
+                if _m1.button("💾 배치 저장", key=f"smap_save_{idx}", type="primary", disabled=not _ok):
+                    _dbm = load_db(); _dbm[idx]["scene_map"] = _pick; save_db(_dbm); st.session_state["gh_dirty"] = True
+                    st.success("저장했습니다. 영상에 반영하려면 redo 후 5단계 렌더링."); st.rerun()
+                if _m2.button("↩ 자동 배치로 되돌리기", key=f"smap_reset_{idx}", disabled=not _cur):
+                    _dbm = load_db(); _dbm[idx].pop("scene_map", None); save_db(_dbm); st.session_state["gh_dirty"] = True; st.rerun()
         pix = os.environ.get("PIXABAY_API_KEY", "").strip()
         st.caption("검색어를 고치고 [이 장면 다시 받기]를 누르면 그 장면만 새로 받습니다. 직접 가진 사진은 [사진 올리기]로 바꿀 수 있습니다. "
                    "이미지 검색어가 비어 있으면 5단계 때(또는 아래 버튼으로) 대본 기준으로 만들어집니다.")

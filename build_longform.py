@@ -350,7 +350,7 @@ def build_segment(idx, item, no, total, out_path, channel, handle, avatar):
     dur = float(audio.duration)
     script = item.get("narration") or ""
     timings = B.load_timings(B.get_timing_path(item, idx), dur, script)
-    starts = B.scene_starts(script, timings, dur, item_scene_count(item), n_img=B.lead_images(B.get_visual_paths(idx, item)))
+    starts = B.scene_starts(script, timings, dur, item_scene_count(item), n_img=B.lead_images(B.get_visual_paths(idx, item)), sent_map=item.get("scene_map"))
     n_scenes = len(starts)
     srcs = srcs[:n_scenes]
     print(f"  [{no}/{total}] {idx} {country}: {dur:.1f}초, 이미지 {real}/{item_scene_count(item)}장", flush=True)

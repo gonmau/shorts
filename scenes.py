@@ -68,3 +68,24 @@ def item_scene_count(item):
     except (TypeError, ValueError):
         n = 0
     return n if 1 <= n <= 30 else 6
+
+
+def auto_scene_map(sentences, k):
+    """이미지 k장을 대본에 자동 배치할 때 각 이미지가 시작하는 문장 번호(1부터, 같은 문장에 여러 장 가능)"""
+    m = len(sentences)
+    if m == 0 or k <= 0:
+        return []
+    if k <= m:
+        return [a for a, _b in scene_groups(sentences, k)]
+    lens = [_len(s) for s in sentences]
+    total = sum(lens)
+    out, cum = [], [0]
+    for x in lens:
+        cum.append(cum[-1] + x)
+    for i in range(k):
+        f = total * i / k
+        s = 1
+        while s < m and cum[s] <= f:
+            s += 1
+        out.append(s)
+    return out
