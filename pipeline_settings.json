@@ -1,11 +1,11 @@
 {
  "voice": "F1",
- "rate": 20,
+ "rate": 12,
  "edge": "ko-KR-InJoonNeural",
  "caption": "script",
  "engine": "auto",
  "scenes": 10,
- "target_sec": 60,
+ "target_sec": 50,
  "yt_thumb": true,
  "tv_fx": true,
  "font_sub": "",
