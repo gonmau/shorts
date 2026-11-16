@@ -1872,3 +1872,6 @@
 {"id": "1794825583776-e3d79b", "time": "2026-11-16 19:39:43", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 5개 (build_longform.py, build_video.py, local_ui.py, longform_render.py, scenes.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794827305937-04ef25", "time": "2026-11-16 20:08:25", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 4개 (build_longform.py, build_video.py, local_ui.py, longform_render.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1794827721566-fba507", "time": "2026-11-16 20:15:21", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 2개 (build_video.py, local_ui.py)", "status": "success", "secs": null, "detail": ""}
+{"id": "1794827975650-cfc630", "time": "2026-11-16 20:19:35", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 658", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1794827976037-fd11be", "time": "2026-11-16 20:19:36", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.4, "detail": ""}
+{"id": "1794827982389-9cdbe6", "time": "2026-11-16 20:19:42", "channel": "KO", "source": "PC", "kind": "generate_tts", "title": "generate_tts.py --index 658", "status": "success", "secs": 6.4, "detail": ""}
