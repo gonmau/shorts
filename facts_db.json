@@ -69750,9 +69750,9 @@
   },
   {
     "topic": "몽골 사원은 전통 텐트 형태를 모방해 6·12각의 피라미드형 지붕을 가졌다",
-    "hook": "6각·12각 지붕, 텐트가 사원으로 변신한다!",
-    "body": "몽골 건축은 전통 거와 텐트를 기반으로 한다. 16·17세기에 지어진 라마사원들은 텐트 모양을 닮은 6각·12각의 피라미드형 지붕을 설계했으며, 이후 돌·벽돌·목재로 바뀌었다.",
-    "twist": "처음엔 나무와 펠트였지만, 나중엔 완전히 돌과 벽돌로 교체되었다.",
+    "hook": "몽골의 수도 울란바토르, 사실은 300년 전 떠돌이 수도원이었습니다!",
+    "body": "1639년, 다섯 살 자나바자르를 위해 세워진 작은 거처가 훗날 거대한 불교 수도원으로 발전했습니다. 그런데 이 수도원에는 특별한 특징이 있었습니다. 한곳에 정착하지 않고 초원을 따라 계속 이동했다는 겁니다.",
+    "twist": "1719년부터 1779년까지 무려 20번이나 자리를 옮긴 수도원. 마침내 1779년 지금의 울란바토르 인근에 정착했고, 훗날 몽골의 수도로 발전했습니다.",
     "caveat": "이 설계는 16·17세기 몽골 라마사원에 국한된 사례이다.",
     "country": "몽골",
     "theme": "건축",
@@ -69764,38 +69764,130 @@
     "created_at": "2026-11-14T12:56:29.709346+00:00",
     "status": "scripted",
     "need": "curiosity",
-    "narration": "6각·12각 지붕, 텐트가 사원으로 변신한다! 몽골 건축은 전통 거와 텐트를 기반으로 발전했습니다. 16·17세기에 세워진 라마사원들은 텐트 형태를 본떠, 6각·12각의 피라미드형 지붕을 설계했죠. 이 독특한 지붕은 초기에 나무와 펠트로 만들었습니다. 그런데 시간이 흐르면서 돌과 벽돌, 목재로 완전히 교체되었습니다. 그래서 오늘 우리는 목재와 펠트 대신 견고한 석재가 얹힌 사원을 보게 됩니다. 이 디자인은 16·17세기 몽골 라마사원에만 적용된 사례라는 점, 기억해 주세요. 텐트의 실용성과 상징성이 건축에 녹아든 순간, 전통과 영원이 만나 새로운 형태를 만든다는 여운을 남깁니다.",
-    "title_line1": "몽골 사원 텐트지붕",
-    "title_line2": "6·12각, 이유는?",
+    "narration": "몽골의 수도 울란바토르, 사실은 300년 전 떠돌이 수도원이었습니다! 1639년, 다섯 살 자나바자르를 위해 세워진 작은 거처가 훗날 거대한 불교 수도원으로 발전했습니다. 그런데 이 수도원에는 특별한 특징이 있었습니다. 한곳에 정착하지 않고 유목민처럼 초원을 따라 계속 이동했다는 겁니다. 1719년부터 1779년까지 무려 20번이나 자리를 옮겼습니다. 그러다 1779년 지금의 울란바토르 인근에 정착했고, 훗날 몽골의 수도로 발전했습니다.",
+    "title_line1": "떠돌이 수도원이 수도가 됐다",
+    "title_line2": "울란바토르의 놀라운 탄생",
     "highlights": [
       {
         "s": 1,
-        "text": "*지붕* 변신!"
+        "text": "*떠돌이 수도원*"
+      },
+      {
+        "s": 2,
+        "text": "*1639년* 시작"
       },
       {
         "s": 3,
-        "text": "*라마사원* 텐트"
+        "text": "*다섯 살* 자나바자르"
       },
       {
-        "s": 4,
-        "text": "*펠트* 초창기"
+        "s": 5,
+        "text": "*20번* 이동"
+      },
+      {
+        "s": 6,
+        "text": "*울란바토르*의 시작"
       }
     ],
     "image_queries": [
-      "Mongolian temple roof",
-      "Mongolian ger tent",
-      "Mongolia lama temple tent",
-      "traditional felt roof",
-      "Mongolian stone temple",
-      "Mongolia stone temple interior",
-      "16th century Mongolian temple",
-      "Mongolian yurt silhouette"
+      "Ulaanbaatar Mongolia city skyline aerial view",
+      "Zanabazar young Mongolian Buddhist leader historical painting",
+      "Mongolian traditional ger Buddhist monastery historical illustration",
+      "Mongolian nomadic Buddhist monastery wooden temple reconstruction",
+      "Ikh Khuree Urga historical monastery illustration",
+      "Old Ulaanbaatar Urga historical photograph",
+      "Architecture of Mongolia",
+      "Mongolia landmark",
+      "Mongolia culture",
+      "Mongolia street"
     ],
     "scene_count": 10,
     "infographic": {
       "on": false,
       "none": true
-    }
+    },
+    "narration_original": "6각·12각 지붕, 텐트가 사원으로 변신한다! 몽골 건축은 전통 거와 텐트를 기반으로 발전했습니다. 16·17세기에 세워진 라마사원들은 텐트 형태를 본떠, 6각·12각의 피라미드형 지붕을 설계했죠. 이 독특한 지붕은 초기에 나무와 펠트로 만들었습니다. 그런데 시간이 흐르면서 돌과 벽돌, 목재로 완전히 교체되었습니다. 그래서 오늘 우리는 목재와 펠트 대신 견고한 석재가 얹힌 사원을 보게 됩니다. 이 디자인은 16·17세기 몽골 라마사원에만 적용된 사례라는 점, 기억해 주세요. 텐트의 실용성과 상징성이 건축에 녹아든 순간, 전통과 영원이 만나 새로운 형태를 만든다는 여운을 남깁니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "Ulaanbaatar Mongolia city skyline aerial view",
+      "Zanabazar young Mongolian Buddhist leader historical painting",
+      "Mongolian traditional ger Buddhist monastery historical illustration",
+      "Mongolian nomadic Buddhist monastery wooden temple reconstruction",
+      "Ikh Khuree Urga historical monastery illustration",
+      "Old Ulaanbaatar Urga historical photograph",
+      "Architecture of Mongolia",
+      "Mongolia landmark",
+      "Mongolia culture",
+      "Mongolia street"
+    ],
+    "image_credits": [
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tonywuphotography",
+        "page": "https://pixabay.com/photos/kuthodaw-pagoda-temple-city-pagoda-5632067/",
+        "id": 5632067
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/umbrella-buddhism-monk-monastery-1807513/",
+        "id": 1807513
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "sasint",
+        "page": "https://pixabay.com/photos/boy-monk-umbrella-child-kid-1807525/",
+        "id": 1807525
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/gate-portal-door-entrance-old-door-3144351/",
+        "id": 3144351
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/photo-camera-camera-agfa-isolette-1241441/",
+        "id": 1241441
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Ma_Frank",
+        "page": "https://pixabay.com/photos/ulaanbaatar-bells-temple-buddhism-2360887/",
+        "id": 2360887
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "peteranta",
+        "page": "https://pixabay.com/photos/statue-sculpture-heaven-travel-3312570/",
+        "id": 3312570
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "CaiHuuThanh",
+        "page": "https://pixabay.com/photos/mongolian-girl-traditional-clothes-7336271/",
+        "id": 7336271
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Erdenebayar",
+        "page": "https://pixabay.com/photos/street-road-stop-sign-ulaanbaatar-729619/",
+        "id": 729619
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "차 도구는 다섯 가지 카테고리로 구분돼 손님이 직접 준비한 물건은 포함되지 않는다",
