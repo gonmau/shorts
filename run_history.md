@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 20:19:53 (KST) · 기록 1877건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 20:34:48 (KST) · 기록 1883건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,10 +9,10 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 177 | 0 | 43초 |
+| apply_review | 178 | 0 | 44초 |
 | approve | 51 | 0 | 11초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 80 | 0 | 13시간 54분 |
+| build_video | 81 | 0 | 14시간 1분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 27 | 0 | 2분 46초 |
 | cleanup_media | 5 | 0 | 7초 |
@@ -22,13 +22,13 @@
 | export_review | 61 | 0 | 11초 |
 | fetch_images | 207 | 9 | 2시간 25분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 227 | 0 | 1시간 18분 |
+| generate_script | 228 | 0 | 1시간 18분 |
 | generate_tts | 93 | 0 | 34분 22초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
-| make_thumbnail | 63 | 0 | 1분 45초 |
-| promote_ready | 177 | 0 | 39초 |
+| make_thumbnail | 64 | 0 | 1분 46초 |
+| promote_ready | 178 | 0 | 39초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -37,7 +37,7 @@
 | upload_to_youtube | 26 | 0 | 14분 30초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 110 | 0 | 0초 |
+| 코드업데이트 | 111 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -45,6 +45,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:34 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 658 | ✅ | 1초 |  |
+| 20:34 | PC | build_video | build_video.py --index 658 --channel gonmauY --handle @gonmauY | ✅ | 7분 10초 |  |
+| 20:27 | PC | generate_script | generate_script.py --extras-only --index 658 | ✅ | 3초 |  |
+| 20:27 | PC | promote_ready | promote_ready.py --start 658 | ✅ | 0초 |  |
+| 20:27 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 20:25 | PC | 코드업데이트 | gonmau/shorts: 3개 (local_ui.py, make_thumbnail.py, thumb_hook.py) | ✅ |  |  |
 | 20:19 | PC | generate_tts | generate_tts.py --index 658 | ✅ | 6초 |  |
 | 20:19 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 20:19 | PC | promote_ready | promote_ready.py --start 658 | ✅ | 0초 |  |
