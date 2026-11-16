@@ -69319,7 +69319,38 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0658_덴마크.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0658_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.2,
+      "scale2": 1.2,
+      "angle": 0.0,
+      "dy": -420,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "none",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 150,
+      "band_h": 1.25,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "40년간 이어진",
+      "text2": "술병전쟁",
+      "colors1": {
+        "0": "#f9e52a"
+      },
+      "sizes1": {},
+      "colors2": {
+        "0": "#c98b1f"
+      },
+      "sizes2": {}
+    },
+    "thumb_image": "my_thumb/thumb_658.jpg"
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
