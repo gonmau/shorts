@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 13:57:06 (KST) · 기록 1835건 · 소재 694개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 14:30:11 (KST) · 기록 1841건 · 소재 694개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,8 +9,8 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 169 | 0 | 40초 |
-| approve | 49 | 0 | 11초 |
+| apply_review | 170 | 0 | 41초 |
+| approve | 50 | 0 | 11초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 79 | 0 | 13시간 47분 |
 | check_country | 17 | 0 | 5초 |
@@ -19,16 +19,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 59 | 0 | 11초 |
+| export_review | 60 | 0 | 11초 |
 | fetch_images | 203 | 8 | 2시간 24분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 221 | 0 | 1시간 17분 |
+| generate_script | 222 | 0 | 1시간 17분 |
 | generate_tts | 91 | 0 | 34분 9초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 61 | 0 | 1분 43초 |
-| promote_ready | 169 | 0 | 36초 |
+| promote_ready | 170 | 0 | 36초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -37,7 +37,7 @@
 | upload_to_youtube | 25 | 0 | 14분 10초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 105 | 0 | 0초 |
+| 코드업데이트 | 106 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -45,6 +45,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:30 | PC | export_review | export_review.py --limit 1 --start 649 | ✅ | 0초 |  |
+| 14:30 | PC | generate_script | generate_script.py --limit 1 --start 649 | ✅ | 8초 |  |
+| 14:29 | PC | approve | approve.py --limit 1 --start 649 | ✅ | 0초 |  |
+| 14:29 | PC | promote_ready | promote_ready.py --start 649 | ✅ | 0초 |  |
+| 14:29 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 14:24 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 13:56 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 681 | ✅ | 1초 |  |
 | 13:56 | PC | build_video | build_video.py --index 681 --channel gonmauY --handle @gonmauY | ✅ | 5분 44초 |  |
 | 13:51 | PC | generate_script | generate_script.py --extras-only --index 681 | ✅ | 1초 |  |
