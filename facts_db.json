@@ -58663,7 +58663,7 @@
     "verify_note": "Face (sociological concept)",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:57.745097+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58675,6 +58675,45 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
+    },
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "얼굴을 잃으면 진짜 사라진다? 라오스 거리에서 보는 페이스(face)의 충격적인 규칙! 라오스에서는 ‘페이스’가 개인과 집단의 도덕·명예·권위를 나타내는 행동·관습으로, 사회적 관계의 핵심으로 작용합니다. 사람들은 타인에게 얼굴을 주고받으며 신뢰를 쌓고, 갈등을 예방합니다. 그런데 한 번 실수하면 주변 사람들에게서 얼굴을 잃은 것으로 여겨, 반드시 사과와 보상이 뒤따릅니다. 이 과정은 관계를 회복하고 공동체의 조화를 유지하려는 목적이죠. 라오스 전역에 동일하게 적용되는 것은 아니지만, 많은 경우에 ‘페이스’를 지키는 것이 생존 규칙처럼 느껴집니다. 결국 얼굴을 잃는다는 것은 단순히 체면을 잃는 것이 아니라, 사회적 존재 자체가 위태로워지는 상황을 의미합니다.",
+    "title_line1": "라오스 페이스 생존법",
+    "title_line2": "얼굴 잃으면 사라진다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*얼굴* 사라진다?"
+      },
+      {
+        "s": 3,
+        "text": "*페이스* 생존 규칙"
+      },
+      {
+        "s": 5,
+        "text": "*사과*와 보상"
+      },
+      {
+        "s": 8,
+        "text": "*사회* 위태로움"
+      }
+    ],
+    "image_queries": [
+      "blurred face portrait",
+      "street faces Laos",
+      "Lao village face ceremony",
+      "people exchanging gifts Laos",
+      "apology gesture face Laos",
+      "community meeting Lao village",
+      "Lao market interaction",
+      "isolated lone figure Laos"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
     }
   },
   {
@@ -69723,7 +69762,7 @@
     "verify_note": "Architecture of Mongolia",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:29.709346+00:00",
-    "status": "unverified"
+    "status": "verified"
   },
   {
     "topic": "차 도구는 다섯 가지 카테고리로 구분돼 손님이 직접 준비한 물건은 포함되지 않는다",
