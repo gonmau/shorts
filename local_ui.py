@@ -1313,6 +1313,56 @@ with T1c:
         "영상 완료로 (video_done) - 이미 영상을 만들었거나 다른 곳에서 올린 소재를 렌더링 대상에서 뺌": "video_done",
         "대본부터 다시 - 대본/제목/검색어/음성/영상 지움": "redo_script",
     }
+    with st.expander("📤 전체 소재 리스트 내보내기 (Excel / CSV)", expanded=False):
+        st.caption("facts_db 의 소재를 표로 내려받습니다. 보기·검색용이며 가져오기(되돌리기) 기능은 아닙니다.")
+        _x1, _x2, _x3 = st.columns(3)
+        _x_rej = _x1.checkbox("폐기된 소재 포함", True, key="exp_rej")
+        _x_nar = _x2.checkbox("대본 전문 포함", True, key="exp_nar")
+        _x_det = _x3.checkbox("훅·본문·반전·출처 포함", False, key="exp_det")
+        import io as _io
+        import pandas as _pdx
+        _dbx = _ld()
+        _xr = []
+        for _i, _f in enumerate(_dbx):
+            if not isinstance(_f, dict) or (not _x_rej and _f.get("status") == "rejected"):
+                continue
+            _r = {"번호": _i, "라벨/나라": _f.get("country", ""), "주제": _f.get("topic", ""), "상태": ST_LABEL.get(_f.get("status"), _f.get("status", "")),
+                  "유튜브": upload_state(_f), "공개": {"public": "공개", "private": "비공개", "unlisted": "일부공개"}.get(_f.get("youtube_privacy"), ""),
+                  "유튜브 링크": (f"https://youtu.be/{_f['youtube_id']}" if _f.get("youtube_id") else ""), "업로드일": str(_f.get("uploaded_at", ""))[:16],
+                  "테마": _f.get("theme", ""), "제목 1줄": _f.get("title_line1", ""), "제목 2줄": _f.get("title_line2", ""),
+                  "만든 날": str(_f.get("created_at", ""))[:16], "대본 글자수": len(str(_f.get("narration", ""))), "폐기 사유": _f.get("reject_reason", "")}
+            if _x_nar:
+                _r["대본"] = _f.get("narration", "")
+            if _x_det:
+                _r.update({"훅": _f.get("hook", ""), "본문": _f.get("body", ""), "반전": _f.get("twist", ""), "출처": _f.get("source_url", ""),
+                           "이미지 검색어": ", ".join(_f.get("image_queries") or [])})
+            _xr.append(_r)
+        _xdf = _pdx.DataFrame(_xr)
+        st.caption(f"내보낼 소재 {len(_xdf)}개 / 전체 {len(_dbx)}개")
+        _xs = time.strftime("%Y%m%d")
+        _b1, _b2 = st.columns(2)
+        _b1.download_button("⬇ CSV (엑셀 한글 안 깨짐)", _xdf.to_csv(index=False).encode("utf-8-sig"), file_name=f"소재리스트_{_xs}.csv", mime="text/csv", key="exp_csv")
+        try:
+            _bio = _io.BytesIO()
+            with _pdx.ExcelWriter(_bio, engine="openpyxl") as _w:
+                _xdf.to_excel(_w, index=False, sheet_name="소재")
+                _ws = _w.sheets["소재"]
+                from openpyxl.styles import Alignment, Font
+                _ws.freeze_panes = "D2"
+                _ws.auto_filter.ref = _ws.dimensions
+                for _c in _ws[1]:
+                    _c.font = Font(bold=True)
+                _wid = {"번호": 7, "라벨/나라": 14, "주제": 34, "상태": 18, "유튜브": 16, "공개": 9, "유튜브 링크": 26, "업로드일": 17, "테마": 12, "제목 1줄": 16,
+                        "제목 2줄": 16, "만든 날": 17, "대본 글자수": 10, "폐기 사유": 24, "대본": 80, "훅": 40, "본문": 50, "반전": 40, "출처": 30, "이미지 검색어": 40}
+                for _ci, _col in enumerate(_xdf.columns, 1):
+                    _ws.column_dimensions[_ws.cell(1, _ci).column_letter].width = _wid.get(_col, 14)
+                    if _col in ("대본", "훅", "본문", "반전", "주제"):
+                        for _rw in _ws.iter_rows(min_row=2, min_col=_ci, max_col=_ci):
+                            _rw[0].alignment = Alignment(wrap_text=True, vertical="top")
+            _b2.download_button("⬇ Excel (.xlsx)", _bio.getvalue(), file_name=f"소재리스트_{_xs}.xlsx",
+                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key="exp_xlsx")
+        except Exception as _e:
+            _b2.caption(f"Excel 만들기 실패 ({type(_e).__name__}) - CSV 를 쓰세요")
     with st.expander("🧩 중복 소재 찾기 (같은 나라에서 주제·훅이 비슷한 소재 쌍)", expanded=False):
         st.caption("폐기된 소재는 제외하고, 같은 나라(표기가 달라도 같은 나라로 묶음) 안에서 주제·훅·제목·대본 앞부분이 비슷한 쌍을 찾습니다. 후보일 뿐이라 다른 소재가 잡히거나 표현이 다른 같은 내용은 놓칠 수 있습니다. 남길 쪽은 업로드 > 영상 완료 > 조회수 > 앞 번호 순으로 제안합니다.")
         _dthr = st.slider("유사도 기준 (낮을수록 더 많이 잡음)", 0.3, 0.9, 0.45, 0.05, key="dup_thr")
