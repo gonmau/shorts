@@ -69146,7 +69146,60 @@
     "verify_note": "Hans Island",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "130헥타르 규모의 무인 섬, 한스 섬에 덴마크와 캐나다가 동시에 깃발을 꽂았습니다. 이 섬은 케네디 해협 한가운데에 자리하고 높이는 168.17미터에 달합니다. 캐나다 누나부트와 덴마크령 그린란드가 각각 영유권을 주장하면서, 두 나라가 번갈아가며 깃발을 꽂는 모습이 이어지고 있습니다. 그런데 사람도 살지 않는 이 섬에까지 주권을 주장한다는 점이 이상하게 느껴집니다. 수년간 이어진 국경 분쟁에도 불구하고, 양국은 여전히 한스 섬을 포기하지 않고 있습니다. 결국, 이 작은 바위 위에서 펼쳐지는 깃발 격돌은 국제적인 영토 논쟁이 얼마나 미세한 땅에서도 지속될 수 있는지를 보여주는 살아있는 사례라 할 수 있습니다.",
+    "title_line1": "한스섬에깃발격돌",
+    "title_line2": "누구가 먼저?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "무인섬에 *깃발* 격돌"
+      },
+      {
+        "s": 3,
+        "text": "*영유권* 다툼"
+      },
+      {
+        "s": 5,
+        "text": "*한스섬* 포기 안해"
+      },
+      {
+        "s": 6,
+        "text": "미세한 땅에 *분쟁*"
+      }
+    ],
+    "image_queries": [
+      "Hans Island flags",
+      "Hans Island aerial view",
+      "Canada Denmark flag dispute",
+      "rocky uninhabited island",
+      "Hans Island claim",
+      "tiny island border dispute"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "한스 섬 규모",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "면적",
+          "value": 130.0,
+          "text": "130헥타르"
+        },
+        {
+          "label": "높이",
+          "value": 168.17,
+          "text": "168.17미터"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
