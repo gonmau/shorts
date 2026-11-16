@@ -69176,11 +69176,7 @@
       "Hans Island Canada Greenland territorial dispute map",
       "Danish flag Hans Island 1984 historical",
       "Canadian flag Hans Island whisky bottle",
-      "Hans Island 2022 Canada Denmark border division map",
-      "Hans Island",
-      "Denmark landmark",
-      "Denmark culture",
-      "Denmark street"
+      "Hans Island 2022 Canada Denmark border division map"
     ],
     "scene_count": 10,
     "infographic": {
@@ -69298,7 +69294,27 @@
         "id": 869591
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "scene_img": [
+      1,
+      3,
+      2,
+      [
+        5,
+        6
+      ],
+      7,
+      4,
+      8,
+      [
+        10,
+        9
+      ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0658_덴마크_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0658_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
