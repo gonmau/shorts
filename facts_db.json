@@ -69762,7 +69762,7 @@
     "verify_note": "Architecture of Mongolia",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:29.709346+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "narration": "몽골의 수도 울란바토르, 사실은 300년 전 떠돌이 수도원이었습니다! 1639년, 다섯 살 자나바자르를 위해 세워진 작은 거처가 훗날 거대한 불교 수도원으로 발전했습니다. 그런데 이 수도원에는 특별한 특징이 있었습니다. 한곳에 정착하지 않고 유목민처럼 초원을 따라 계속 이동했다는 겁니다. 1719년부터 1779년까지 무려 20번이나 자리를 옮겼습니다. 그러다 1779년 지금의 울란바토르 인근에 정착했고, 훗날 몽골의 수도로 발전했습니다.",
     "title_line1": "떠돌이 수도원이 수도가 됐다",
@@ -69900,7 +69900,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0681_몽골_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0681_몽골_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0681_몽골.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0681_몽골.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "차 도구는 다섯 가지 카테고리로 구분돼 손님이 직접 준비한 물건은 포함되지 않는다",
