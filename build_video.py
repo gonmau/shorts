@@ -794,7 +794,7 @@ def build_one(idx, item):
     template = make_template(
         title1, title2,
         LAYOUT_CFG["credit"]
-        or ((credit_label(item) or "Photos: Pixabay") if (item.get("image_source") in ("pixabay", "commons") and real_images) else country),
+        or ((credit_label(item) or ("" if os.environ.get("SCREEN_CREDIT", "1") == "0" else "Photos: Pixabay")) if (item.get("image_source") in ("pixabay", "commons") and real_images) else country),
         None,
         channel_name=LAYOUT_CFG["channel"],
         handle=LAYOUT_CFG["handle"],

@@ -195,7 +195,9 @@ def image_credit_lines(item):
 
 
 def credit_label(item):
-    """영상 화면(이미지 아래)에 쓸 짧은 출처 문구. 사진 출처가 없으면 빈 문자열."""
+    """영상 화면(이미지 아래)에 쓸 짧은 출처 문구. 사진 출처가 없으면 빈 문자열. SCREEN_CREDIT=0 이면 화면에는 표시하지 않는다(설명란 출처는 별개)."""
+    if os.environ.get("SCREEN_CREDIT", "1") == "0":
+        return ""
     cr = (item.get("image_credits") or []) + (item.get("edit_credits") or [])
     names = []
     if any(c.get("source", "pixabay") == "pixabay" for c in cr) or (not cr and item.get("image_source") == "pixabay"):

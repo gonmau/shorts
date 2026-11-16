@@ -201,6 +201,7 @@ def tts_env():
             **({"YT_THUMBNAIL": "on"} if TTS_CFG.get("yt_thumb") else {}),
             **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {}),
             **({"INFOGRAPHIC": "0"} if TTS_CFG.get("info_off") else {}),
+            **({"SCREEN_CREDIT": "0"} if TTS_CFG.get("credit_off") else {}),
             **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")) if TTS_CFG.get(k_)}}
 
 def run(*args):
@@ -399,6 +400,8 @@ with T4a:
                                    help="시작: 가운데 빛줄이 위아래로 열리며 켜짐(0.5초) / 끝: 줄로 닫혔다 점으로 꺼짐(0.55초). 음성은 그대로. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     TTS_CFG["info_off"] = not st.checkbox("📊 대본에 맞는 인포그래픽 자동 넣기 (수치·순서·비교가 있는 대본만)", not TTS_CFG.get("info_off"), key="info_cb",
                                           help="대본을 만들 때 AI가 대본 속 수치·순서·비교를 뽑아 인포그래픽 1개를 만들고, 영상 이미지 위에 해당 문장 시점에 띄웁니다. 대본에 없는 숫자는 쓰지 않고(검증), 구조가 없으면 만들지 않습니다. 소재별로 '대본 보기·수정'에서 보고 끄거나 고칠 수 있습니다. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
+    TTS_CFG["credit_off"] = not st.checkbox("🏷 영상 화면에 사진 출처 표시 (예: Photos: Pixabay · Wikimedia Commons)", not TTS_CFG.get("credit_off"), key="credit_cb",
+                                            help="끄면 영상 화면(쇼츠 이미지 아래·롱폼 화면 구석)에 출처 문구를 넣지 않습니다. 내 사진만 쓴다면 끄세요. 설명란의 출처 목록은 그대로 들어갑니다. 인터넷에서 받은 사진(특히 Wikimedia Commons 등 CC 라이선스)을 쓸 때는 출처 표시가 라이선스 조건일 수 있으니 설명란 출처는 지우지 마세요. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     import fonts as _FN0
     _fa0 = _FN0.available()
     _fo = ["", *_fa0]
