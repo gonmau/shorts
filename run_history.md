@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-16 14:43:44 (KST) · 기록 1847건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-16 14:44:10 (KST) · 기록 1848건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -20,7 +20,7 @@
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 60 | 0 | 11초 |
-| fetch_images | 204 | 9 | 2시간 24분 |
+| fetch_images | 205 | 9 | 2시간 24분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 223 | 0 | 1시간 17분 |
 | generate_tts | 91 | 0 | 34분 9초 |
@@ -45,6 +45,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:43 | PC | fetch_images | fetch_images.py --index 649 --scene 8 --source pixabay --type illustration | ✅ | 4초 |  |
 | 14:43 | PC | fetch_images | fetch_images.py --index 649 --scene 8 --source commons --type photo | ❌ failed | 3초 | 장면 8: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Pig War (1859)). 기존 사진 유지 |
 | 14:41 | PC | 코드업데이트 | gonmau/shorts: 4개 (build_video.py, common.py, local_ui.py, pipeline_settings.py) | ✅ |  |  |
 | 14:35 | PC | fetch_images | fetch_images.py --limit 1 --start 649 --any | ✅ | 30초 |  |
