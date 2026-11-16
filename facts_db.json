@@ -69146,7 +69146,7 @@
     "verify_note": "Hans Island",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "덴마크가 무인도에 브랜디를 남기자, 캐나다는 위스키로 응수했습니다! 캐나다와 그린란드 사이에는 한스섬이라는 작은 무인도가 있습니다. 양국은 이 섬의 영유권을 놓고 오랫동안 대립했죠. 1984년 덴마크 측이 국기와 브랜디를 남기자, 캐나다도 위스키와 자국 국기로 맞대응했습니다. 이후 양국은 상대방의 국기를 내리고 술병을 남기는 기묘한 경쟁을 이어갔습니다. 총 한 발 쏘지 않은 이 경쟁은 수십 년간 이어졌습니다. 결국 2022년, 양국과 그린란드는 섬을 약 60대 40으로 나누기로 합의했죠. 술병으로 맞서던 두 나라, 결국 협상으로 국경을 그었습니다.",
@@ -69171,14 +69171,16 @@
       }
     ],
     "image_queries": [
-      "Hans Island Danish flag whisky bottle",
-      "Hans Island aerial view Arctic",
-      "Hans Island Canada Greenland territorial dispute map",
-      "Danish flag Hans Island 1984 historical",
-      "Canadian flag Hans Island whisky bottle",
-      "Hans Island 2022 Canada Denmark border division map"
+      "brandy bottle and whiskey bottle",
+      "Hans Island Arctic landscape",
+      "flags and liquor bottles on island",
+      "Danish flag with brandy bottle",
+      "Canadian flag with whiskey bottle",
+      "peaceful Arctic island sunrise",
+      "map showing Hans Island division",
+      "border line drawn on island"
     ],
-    "scene_count": 10,
+    "scene_count": 12,
     "infographic": {
       "on": true,
       "kind": "bars",
@@ -69314,7 +69316,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0658_덴마크_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0658_덴마크_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0658_덴마크.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0658_덴마크.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
