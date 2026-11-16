@@ -693,7 +693,7 @@ def segment(idx, item, rec, no, total, out_path, channel, handle, av_path, burn=
     paths = B.get_visual_paths(idx, item)
     srcs, real = load_sources(paths, country)
     timings = B.load_timings(tp, dur, narr)
-    starts = B.scene_starts(narr, timings, dur, len(srcs))
+    starts = B.scene_starts(narr, timings, dur, len(srcs), n_img=B.lead_images(paths))
     print(f"  [{no}/{total}] {idx} {country}: {dur:.1f}초, 이미지 {real}/{len(srcs)}장, 키워드 {len(rec.get('keywords') or [])}, 비교 {'O' if rec.get('compare') else 'X'}", flush=True)
     t1, t2 = B.split_title(item)
     if str(rec.get("title1") or "").strip() or str(rec.get("title2") or "").strip():

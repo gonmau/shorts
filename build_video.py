@@ -597,11 +597,30 @@ def load_scene_sources(visual_paths, country, topic):
     return srcs, real
 
 
-def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6):
+def lead_images(paths):
+    """앞에서부터 연속으로 있는 장면 이미지 개수"""
+    k = 0
+    for p in paths:
+        if not Path(p).exists():
+            break
+        k += 1
+    return k
+
+
+def scene_starts(narration, timings, audio_duration, n=6, min_len=1.6, n_img=None):
     """장면 시작 시각 목록. 장면 k는 대본의 k번째 문장 묶음을 읽는 동안 보인다.
-    (핵심 문구와 같은 방식으로 글자 수 비율 -> 실제 음성 시간으로 환산)"""
+    (핵심 문구와 같은 방식으로 글자 수 비율 -> 실제 음성 시간으로 환산)
+    n_img: 실제로 있는 이미지 수. 문장 묶음 수보다 이미지가 많으면(직접 넣은 사진 등) 남는 이미지도 쓰도록 글자 수 비율로 균등하게 나눈다."""
     sents = split_sentences(narration)
     groups = scene_groups(sents, n)
+    if n_img and groups and timings and len(groups) < min(n_img, n):
+        k = max(len(groups), min(n_img, n, int(audio_duration / 2.5)))
+        tot_ = sum(_nospace(x) for x in sents) or 1
+        st_ = [0.0] + [time_at_fraction(i / k, timings) for i in range(1, k)]
+        for i in range(1, len(st_)):
+            st_[i] = max(st_[i], st_[i - 1] + min_len)
+        if st_[-1] <= audio_duration - min_len:
+            return st_
     if not groups or not timings:
         return [i * audio_duration / n for i in range(n)]
     total = sum(_nospace(x) for x in sents) or 1
@@ -729,7 +748,7 @@ def build_one(idx, item):
     timings = load_timings(timing_path, audio_duration, script)
 
     # 장면(이미지)은 대본 문장 묶음에 맞춰 바뀐다 (그 문장을 읽는 동안 그 장면 이미지)
-    starts = scene_starts(script, timings, audio_duration, item_scene_count(item))
+    starts = scene_starts(script, timings, audio_duration, item_scene_count(item), n_img=lead_images(visual_paths))
     n_scenes = len(starts)
     srcs = srcs[:n_scenes]
     scene_duration = audio_duration / max(n_scenes, 1)
