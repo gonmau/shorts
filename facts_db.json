@@ -68800,7 +68800,7 @@
     "body": "돼지 전쟁(Pig War)은 1859년에 미국과 영국이 샌후안 제도(San Juan Islands) 경계 문제로 맞섰던 사건이야. 사건은 영국 소유 돼지를 미국 군인이 쏘면서 시작됐고, 인간 사상자는 없었어.",
     "twist": "전쟁이라고 불리지만 실제 사망자는 돼지 한 마리뿐이었어.",
     "caveat": "1859년 사건이라 실제 전투는 없었고, 이후 평화롭게 해결됐어.",
-    "country": "그리스",
+    "country": "미국,영국",
     "theme": "영토/국경",
     "wiki_title": "Pig War (1859)",
     "source_url": "https://en.wikipedia.org/wiki/Pig_War_(1859)",
@@ -70308,5 +70308,70 @@
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0693_프랑스.mp4",
     "status_v6": "video_done",
     "redo_ts": 1794663152.2191904
+  },
+  {
+    "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
+    "hook": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고?",
+    "body": "돼지 전쟁(Pig War)은 1859년에 미국과 영국이 샌후안 제도(San Juan Islands) 경계 문제로 맞섰던 사건이야. 사건은 영국 소유 돼지를 미국 군인이 쏘면서 시작됐고, 인간 사상자는 없었어.",
+    "twist": "전쟁이라고 불리지만 실제 사망자는 돼지 한 마리뿐이었어.",
+    "caveat": "1859년 사건이라 실제 전투는 없었고, 이후 평화롭게 해결됐어.",
+    "country": "그리스",
+    "theme": "영토/국경",
+    "wiki_title": "Pig War (1859)",
+    "source_url": "https://en.wikipedia.org/wiki/Pig_War_(1859)",
+    "source_excerpt": "The Pig War was a confrontation in 1859 between the United States and the United Kingdom over the British–U.S. border in the San Juan Islands, between Vancouver Island (present-day Canada) and the Washington Territory (present-day State of Washington). The Pig War, so called because it was triggered by the shooting of a pig, is also called the Pig Episode, the Pig and Potato War, the San Juan Boundary Dispute, and the Northwestern Boundary Dispute. Despite being referred to as a \"war\", there were no human casualties on either side, only a pig.",
+    "verify_note": "Pig War (1859)",
+    "confidence": "source",
+    "created_at": "2026-11-13T14:14:29.244030+00:00",
+    "status": "scripted",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고 들어보셨나요? 실제 사건은 미국과 영국이 샌후안 제도 경계 문제로 마주하면서 시작됐습니다. 영국 영토에 있던 돼지를 미국 군인이 총으로 쏘자, 양측이 무력 충돌을 준비하게 된 것이죠. 그런데 인간 사상자는 전혀 없었습니다. 양국은 군대를 동원하고 진지를 구축했지만, 전투는 일어나지 않았습니다. 결국 ‘돼지 전쟁’이라 불리지만, 사망자는 돼지 한 마리뿐이었고, 이후 외교적 협상을 통해 평화롭게 해결되었습니다. 이렇게 작은 사건이 국제적 긴장을 불러일으켰다는 점이, 역사의 우연함을 다시 한 번 떠올리게 합니다.",
+    "title_line1": "돼지 하나로 전쟁 위기",
+    "title_line2": "사망자는 돼지뿐?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*돼지* 전쟁?"
+      },
+      {
+        "s": 3,
+        "text": "*총*에 맞은 돼지"
+      },
+      {
+        "s": 4,
+        "text": "*인간* 사상자 0"
+      },
+      {
+        "s": 6,
+        "text": "*평화*로 마무리"
+      }
+    ],
+    "image_queries": [
+      "pig on battlefield",
+      "San Juan Islands map",
+      "pig shot by gun",
+      "empty battlefield",
+      "pig with army helmets",
+      "pig plush peace dove",
+      "pig statue diplomatic building"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "돼지 전쟁 숫자",
+      "s": 6,
+      "dur": 5.0,
+      "unit": "마리",
+      "rows": [
+        {
+          "label": "사망자",
+          "value": null,
+          "text": "1마리"
+        }
+      ],
+      "none": false
+    }
   }
 ]
