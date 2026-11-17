@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-17 20:57:15 (KST) · 기록 1886건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-17 20:57:36 (KST) · 기록 1891건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -9,8 +9,8 @@
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 178 | 0 | 44초 |
-| approve | 51 | 0 | 11초 |
+| apply_review | 179 | 0 | 44초 |
+| approve | 52 | 0 | 12초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 81 | 0 | 14시간 1분 |
 | check_country | 17 | 0 | 5초 |
@@ -19,16 +19,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 61 | 0 | 11초 |
+| export_review | 62 | 0 | 11초 |
 | fetch_images | 207 | 9 | 2시간 25분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 228 | 0 | 1시간 18분 |
+| generate_script | 229 | 0 | 1시간 18분 |
 | generate_tts | 93 | 0 | 34분 22초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 65 | 0 | 1분 47초 |
-| promote_ready | 178 | 0 | 39초 |
+| promote_ready | 179 | 0 | 39초 |
 | redo_videos | 29 | 0 | 8초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -45,6 +45,11 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:57 | PC | generate_script | generate_script.py --limit 1 --start 663 | ✅ | 8초 |  |
+| 20:57 | PC | export_review | export_review.py --limit 1 --start 663 | ✅ | 0초 |  |
+| 20:57 | PC | approve | approve.py --limit 1 --start 663 | ✅ | 0초 |  |
+| 20:57 | PC | promote_ready | promote_ready.py --start 663 | ✅ | 0초 |  |
+| 20:57 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 19:55 | PC | 코드업데이트 | gonmau/shorts: 5개 (ai_images.py, common.py, fetch_images.py, local_ui.py, pipeline_settings.py) | ✅ |  |  |
 
 ### 2026-11-16
