@@ -101,7 +101,7 @@ def make_prompts(item, force=False):
 def _gen_cloudflare(prompt, session):
     acc, tok = os.environ["CF_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"].strip()
     r = session.post(f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/{CF_MODEL}",
-                     headers={"Authorization": f"Bearer {tok}"}, json={"prompt": prompt, "steps": 6}, timeout=120)
+                     headers={"Authorization": f"Bearer {tok}"}, json={"prompt": prompt, "steps": 4}, timeout=120)
     if r.status_code == 429:
         raise RuntimeError("Cloudflare 한도 초과(429): " + r.text[:150])
     r.raise_for_status()
@@ -147,6 +147,8 @@ def generate_one(prompt, dest, prov=None, session=None):
             return True
         except Exception as e:
             last = e
+            if "429" in str(e):      # 한도 문제는 재시도해도 안 풀리고 한도만 더 쓴다
+                break
             time.sleep(6 * (attempt + 1))
     raise RuntimeError(f"{type(last).__name__}: {last}")
 
