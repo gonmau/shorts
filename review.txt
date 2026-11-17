@@ -11,41 +11,58 @@
 #   제외한 소재는 폐기(rejected)로 바뀌어 render에서 건너뛰고, 나중에 'redo_script=번호!'로 되살릴 수 있습니다.
 # - '('로 시작하는 줄은 참고용이라 무시됩니다. '=== [번호] ===' 줄은 바꾸지 마세요.
 
-=== [465] 페루 ===
+=== [473] 캐나다 ===
 (교차검증) unsupported
-(교차검증 메모 1) [수정됨] [unsupported] 1번 문장: No evidence of elephants holding immediate funerals
-(교차검증 메모 2) [수정됨] [unsupported] 2번 문장: No documented Peru safari study of elephant mourning
-(교차검증 메모 3) [수정됨] [unsupported] 3번 문장: No evidence that scientists label it a ritual
-(교차검증 메모 4) [수정됨] [unsupported] 4번 문장: No evidence of similar funerals in crows
-(교차검증 메모 5) [수정됨] [unsupported] 5번 문장: No evidence that animals remember and express as humans
-(교차검증 메모 6) [수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: No verifiable evidence of a specific Peru safari study observing such behavior.
-(교차검증 메모 7) [수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: The term ‘ritual’ applied to elephant behavior is not universally accepted; it is a hypothesis rather than confirmed fact.
-(교차검증 메모 8) [수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: Claims of similar behaviors in crows lack definitive, widely accepted scientific confirmation.
-(교차검증 메모 9) [수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: The assertion that animals remember and express emotions like humans is speculative and not conclusively proven.
-(직접 확인할 문장 2번) 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다.
-(직접 확인할 문장 3번) 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다.
-(직접 확인할 문장 4번) 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다.
-(직접 확인할 문장 5번) 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다.
-(사실 확인용 검색어) Ritual
-후크: 코끼리, 친구가 죽으면 바로 장례식을 연다!
-본문: 의식은 인간뿐 아니라 코끼리와 까마귀 같은 동물에서도 반복적인 행동으로 나타난다. 코끼리는 죽은 동료를 둘러싸고 잎을 놓으며 애도한다.
-반전: 이러한 행동은 과학자들이 ‘의식’이라고 부를 만큼 구조화된 패턴을 보여준다.
+(교차검증 메모 1) [수정됨] [unsupported] 2번 문장: No evidence found for a professor named Natalie Cook at McGill studying menus.
+(교차검증 메모 2) [수정됨] [unsupported] 3번 문장: Specific claim about her methodology cannot be verified.
+(교차검증 메모 3) [수정됨] [unsupported] 4번 문장: General claim about reading social values from menu details lacks supporting evidence.
+(교차검증 메모 4) [수정됨] [unsupported] 6번 문장: No documented research showing menus reveal women's economic activity as described.
+(교차검증 메모 5) [수정됨] [unsupported] 7번 문장: Broad historical assertion about women's lives lacking specific evidence.
+(교차검증 메모 6) [수정됨] [unsupported] 9번 문장: Generalization about Canadian food culture cannot be confirmed.
+(교차검증 메모 7) [수정 시도 후에도 근거 없음 남음] [unsupported] 2번 문장: no evidence of scholars reviewing materials
+(교차검증 메모 8) [수정 시도 후에도 근거 없음 남음] [unsupported] 3번 문장: no evidence of such review practices
+(교차검증 메모 9) [수정 시도 후에도 근거 없음 남음] [unsupported] 4번 문장: no evidence that menus allow estimation of values
+(교차검증 메모 10) [수정 시도 후에도 근거 없음 남음] [unsupported] 5번 문장: no evidence of Professor Cook's deeper exploration
+(교차검증 메모 11) [수정 시도 후에도 근거 없음 남음] [unsupported] 6번 문장: no evidence linking menus to women's economic activity
+(교차검증 메모 12) [수정 시도 후에도 근거 없음 남음] [unsupported] 7번 문장: no evidence that table records show women's daily life
+(교차검증 메모 13) [수정 시도 후에도 근거 없음 남음] [unsupported] 8번 문장: no evidence of focus on specific materials
+(교차검증 메모 14) [수정 시도 후에도 근거 없음 남음] [unsupported] 9번 문장: general claim lacking evidence
+(직접 확인할 문장 2번) 몇몇 학자들이 관련 자료를 검토하고 있는 것으로 알려져 있습니다.
+(직접 확인할 문장 3번) 그들은 오래된 메뉴와 요리책, 주방 유물을 하나의 기록처럼 살펴보는 경우가 있습니다.
+(직접 확인할 문장 4번) 음식 이름·가격·재료 표기에서 당시의 가치와 문화 교류를 추정해 볼 수 있습니다.
+(직접 확인할 문장 5번) 그런데 쿠크 교수는 여기서 더 깊이 탐구하려는 시도를 보였습니다.
+(직접 확인할 문장 6번) 메뉴를 보면 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 반영하는 경우도 있습니다.
+(직접 확인할 문장 7번) 공식 기록이 부족한 시기에도 식탁 위 기록이 여성들의 일상을 조용히 보여줄 때가 있습니다.
+(직접 확인할 문장 8번) 다만 이 연구는 쿠크 교수가 조사한 특정 자료에 초점을 맞추고 있습니다.
+(직접 확인할 문장 9번) 모든 캐나다 식문화가 같은 패턴은 아니지만, 한 장의 메뉴가 풍부한 역사를 담고 있다는 점은 주목할 만합니다.
+(사실 확인용 검색어) Nathalie Cooke
+후크: 레스토랑 메뉴가 과거를 고발한다?
+본문: 캐나다 맥길 대학교(McGill University)의 나탈리 쿠크(Nathalie Cooke) 교수는 메뉴·요리책·요리 유물을 역사 문서로 분석해 사회적 가치와 문화 교류를 밝혀낸다.
+반전: 특히 여성 삶의 기록까지 메뉴 속에서 찾아낸다.
 제외:
-제목1: 코끼리 장례식
-제목2: 동물도 의식이?
-핵심[1]: 코끼리의 *장례*
-핵심[2]: *잎*으로 애도
-핵심[3]: 의식이란 *패턴*
-핵심[6]: 동물의 *의식*?
-이미지[1]: elephant funeral
-이미지[2]: elephant mourning leaves
-이미지[3]: elephant ritual pattern
-이미지[4]: crow funeral behavior
-이미지[5]: elephant memory display
-이미지[6]: animal consciousness
-대본[1]: 코끼리는 친구가 죽으면 종종 장례식 같은 행동을 보입니다.
-대본[2]: 페루 사파리 연구에서 일부 코끼리가 죽은 동료를 둘러싸고 잎을 놓으며 애도하는 모습이 관찰되었습니다.
-대본[3]: 이 행동은 반복적이며 구조화된 패턴을 보여, 과학자들은 이를 ‘의식’이라고 부르기도 합니다.
-대본[4]: 이런 장례식은 인간뿐 아니라 까마귀 같은 다른 동물에서도 비슷한 형태로 나타난다고 일부 연구가 보고합니다.
-대본[5]: 관찰은 특정 연구 현장에 한정되지만, 동물도 인간과 비슷하게 기억하고 표현할 수 있다는 가능성을 시사합니다.
-대본[6]: 코끼리의 장례식이 우리에게 남기는 마지막 질문은, “동물도 인간처럼 ‘의식’이 있을까?” 입니다.
+제목1: 캐나다 메뉴로 역사읽기
+제목2: 숨은 여성 이야기?
+핵심[1]: 메뉴가 과거를 *고발*
+핵심[4]: 가격·재료, 사회 *가치*
+핵심[6]: 여성 삶, 식탁이 *증언*
+핵심[10]: 한 장 메뉴, 과거를 *속삭*
+이미지[1]: old restaurant menu
+이미지[2]: McGill University library
+이미지[3]: historical cookbook analysis
+이미지[4]: menu price ingredients
+이미지[5]: research notes desk
+이미지[6]: women kitchen table
+이미지[7]: vintage dining table
+이미지[8]: archival research documents
+이미지[9]: Canadian food history
+이미지[10]: old menu whispering
+대본[1]: 레스토랑 메뉴가 과거를 고발한다?
+대본[2]: 몇몇 학자들이 관련 자료를 검토하고 있는 것으로 알려져 있습니다.
+대본[3]: 그들은 오래된 메뉴와 요리책, 주방 유물을 하나의 기록처럼 살펴보는 경우가 있습니다.
+대본[4]: 음식 이름·가격·재료 표기에서 당시의 가치와 문화 교류를 추정해 볼 수 있습니다.
+대본[5]: 그런데 쿠크 교수는 여기서 더 깊이 탐구하려는 시도를 보였습니다.
+대본[6]: 메뉴를 보면 가정 요리와 특별 행사 메뉴가 여성들의 경제 활동과 사회적 위치를 반영하는 경우도 있습니다.
+대본[7]: 공식 기록이 부족한 시기에도 식탁 위 기록이 여성들의 일상을 조용히 보여줄 때가 있습니다.
+대본[8]: 다만 이 연구는 쿠크 교수가 조사한 특정 자료에 초점을 맞추고 있습니다.
+대본[9]: 모든 캐나다 식문화가 같은 패턴은 아니지만, 한 장의 메뉴가 풍부한 역사를 담고 있다는 점은 주목할 만합니다.
+대본[10]: 메뉴 한 장이 전하는 이야기가, 오늘도 우리에게 과거를 속삭이고 있습니다.
