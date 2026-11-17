@@ -69432,7 +69432,7 @@
     "verify_note": "SS United States",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "narration": "대서양을 가장 빨리 가로지른 배가 전쟁용 군함으로 변신할 수 있다니! SS United States는 1950·1951년에 완전 건조된 미국 최대 규모의 여객선입니다. 1952년 첫 항해부터 양방향 대서양 횡단에서 평균 속도 최고 기록을 세우며 블루리본을 차지했죠. 설계자 윌리엄 프랜시스 깁스는 전시 상황에 대비해 선체와 엔진을 군함으로 전환할 수 있게 설계했습니다. 그런데 실제 전쟁에 투입된 적은 한 번도 없습니다. 그럼에도 불구하고 이 기록은 2026년까지 확인된 공식 자료에 기반한 것이며, 당시 기술과 전략적 목적을 보여주는 흥미로운 사례로 남아 있습니다. 결국 가장 빠른 여객선이면서도 전쟁에 쓰이지 않은 역사는, 설계 의도와 실제 운용 사이의 차이를 잘 드러내는 하나의 이야기입니다.",
     "title_line1": "대서양 최速 여객선",
@@ -69490,7 +69490,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "엔진 세부 구조, 유명 승객, 내부 시설, 소유권 분쟁은 제외."
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
@@ -69546,7 +69547,10 @@
       "TikTok video timeline",
       "Smartphone app icons",
       "TikTok app interface",
-      "TikTok feed scroll"
+      "TikTok feed scroll",
+      "TikTok",
+      "Kenya landmark",
+      "Kenya culture"
     ],
     "scene_count": 8,
     "infographic": {
@@ -69569,7 +69573,82 @@
         }
       ],
       "none": false
-    }
+    },
+    "image_queries_done": [
+      "TikTok disappearing timer",
+      "TikTok video timeline",
+      "Smartphone app icons",
+      "TikTok app interface",
+      "TikTok feed scroll",
+      "TikTok",
+      "Kenya landmark",
+      "Kenya culture"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Nik Kranjec",
+        "license": "CC BY-SA 4.0",
+        "title": "TikTok Short Film Competition Venue.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:TikTok_Short_Film_Competition_Venue.jpg",
+        "id": "c:126010967"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "terydanphiri",
+        "page": "https://pixabay.com/photos/editing-video-computer-7320125/",
+        "id": 7320125
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "geralt",
+        "page": "https://pixabay.com/photos/mobile-phone-smartphone-keyboard-1917737/",
+        "id": 1917737
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "8268513",
+        "page": "https://pixabay.com/photos/tiktok-social-media-app-tik-tok-5323005/",
+        "id": 5323005
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Coolcaesar",
+        "license": "CC BY 4.0",
+        "title": "TikTok Headquarters.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:TikTok_Headquarters.jpg",
+        "id": "c:150608046"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/tiktok-social-network-social-media-5277728/",
+        "id": 5277728
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Unknown photographer",
+        "license": "Public domain",
+        "title": "Photograph of Kenyan Sikh pioneers in-front of Gurdwara Sahib Railway Landhies in Nairobi,",
+        "page": "https://commons.wikimedia.org/wiki/File:Photograph_of_Kenyan_Sikh_pioneers_in-front_of_Gurdwara_Sahib_Railway_Landhies_in_Nairobi,_Kenya,_1903.jpg",
+        "id": "c:153929481"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "7523944",
+        "page": "https://pixabay.com/photos/samburu-traditional-ceremony-kenya-4434184/",
+        "id": 4434184
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "1881년 남미 국경을 정한 조약",
