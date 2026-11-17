@@ -213,9 +213,13 @@ def main():
         make_prompts(item, force=True)
         save_db(db)
         return
+    if not provider():
+        raise SystemExit("AI 이미지 키가 없습니다: CF_ACCOUNT_ID + CF_API_TOKEN 또는 GEMINI_API_KEY 환경변수를 설정하고 UI를 다시 실행하세요")
     ok = fill(item, visual_dir(base, a.index, item), force=a.force or a.scene is not None,
               scenes={a.scene} if a.scene else None)
     save_db(db)
+    if not provider():
+        raise SystemExit("AI 이미지 키가 없습니다: CF_ACCOUNT_ID + CF_API_TOKEN 또는 GEMINI_API_KEY 환경변수를 설정하고 UI를 다시 실행하세요")
     raise SystemExit(0 if ok else 1)
 
 
