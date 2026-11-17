@@ -69432,11 +69432,11 @@
     "verify_note": "SS United States",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "narration": "시속 66km로 대서양을 질주한 여객선! 하지만 이 배를 무릎 꿇린 경쟁자가 등장합니다. 1952년,  첫 항해에서 SS United States는 대서양을 3일 10시간 40분 만에 횡단했습니다. 평균 35.59노트! 도대체 왜 이렇게 빨랐을까요? 그 이유는 전쟁시 군용 수송선으로 바꿔 대규모 병력을 빠르게 실어 나르도록 설계된 것이었습니다. 실제 전쟁에는 투입되지 않았지만, 대서양 횡단 정기 여객선 최고 속도 기록은 지금까지도 유지되고 있습니다. 군용으로 설계되어 기술력이 엄청나서 일까요? 아닙니다. 기록이 깨지지 않는 이유는 1958년 제트 여객기가 등장하면서 승객들이 비행기로 이동했고, 빠른 여객선을 만들 이유 자체가 사라졌기 때문입니다. 결국 1969년 운항을 중단한 이 배는 2026년 11월 11일 플로리다 앞바다에서 인공 암초가 됐습니다. 대서양 횡단 최고 기록을 간직한 채 말이죠.",
-    "title_line1": "시속 66km 여객선의 숨겨진 비밀",
-    "title_line2": "전쟁이 나면 14,000명을 태운다?",
+    "title_line1": "초대형 여객선 질주",
+    "title_line2": "기록 깨지 못한 이유?",
     "highlights": [
       {
         "s": 1,
@@ -69585,10 +69585,6 @@
       }
     ],
     "image_source": "pixabay",
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "ai_prompts": [
       "A sleek 1950s ocean liner cutting through a stormy Atlantic sea at dawn, viewed from a low, forward angle, with a rival ship's silhouette looming in the distance.",
       "The SS United States gliding across a calm Atlantic sunrise, captured from a high aerial perspective, showing its streamlined hull completing a record crossing in three days.",
@@ -69603,7 +69599,21 @@
     ],
     "ai_prompts_done": [],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0663_미국.srt",
-    "redo_ts": 1794921713.5093794
+    "redo_ts": 1794921745.1582727,
+    "image_queries": [
+      "SS United States crossing Atlantic",
+      "SS United States 1952 maiden voyage",
+      "SS United States passenger deck",
+      "SS United States military transport design",
+      "SS United States artificial reef 2026",
+      "SS United States engineering details",
+      "SS United States hull exterior",
+      "1958 jet airliner",
+      "1969 ship decommission",
+      "Atlantic ocean horizon"
+    ],
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0663_미국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
