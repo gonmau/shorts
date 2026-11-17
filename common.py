@@ -182,6 +182,8 @@ def image_credit_lines(item):
             lic_url = license_url(lic)
             lines.append(f'- "{c.get("title", "")}" by {c.get("user", "")}, {lic}' + (f" ({lic_url})" if lic_url else "")
                          + f' - {c.get("page", "")}')
+    if any(c.get("source") == "ai" for c in cr):
+        lines.append("Some illustrations were generated with AI (altered/synthetic content).")
     usr = [c for c in cr if c.get("source") == "user" and str(c.get("license") or "").strip()
            and not str(c.get("license")).lower().startswith("cc0") and (c.get("user") or c.get("page"))]
     if usr:

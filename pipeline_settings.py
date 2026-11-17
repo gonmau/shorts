@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 FILE = Path("pipeline_settings.json")
-KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec", "yt_thumb", "tv_fx", "font_sub", "font_title", "font_ovl", "info_off", "credit_off")
+KEYS = ("voice", "rate", "edge", "caption", "engine", "scenes", "target_sec", "yt_thumb", "tv_fx", "font_sub", "font_title", "font_ovl", "info_off", "credit_off", "ai_img")
 ENGINE_ORDER = {"auto": "supertonic,edge,google,gtts", "edge": "edge,supertonic,google,gtts", "supertonic": "supertonic", "edge_only": "edge"}
 IS_EN = Path("generate_topics.py").exists()
 
@@ -53,6 +53,8 @@ def env_from(s, is_en=IS_EN):
         e["TV_FX"] = "on"
     if s.get("info_off"):
         e["INFOGRAPHIC"] = "0"
+    if s.get("ai_img"):
+        e["AI_IMAGES"] = "1"
     if s.get("credit_off"):
         e["SCREEN_CREDIT"] = "0"
     for k, ev in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")):

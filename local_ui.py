@@ -202,6 +202,7 @@ def tts_env():
             **({"TV_FX": "on"} if TTS_CFG.get("tv_fx") else {}),
             **({"INFOGRAPHIC": "0"} if TTS_CFG.get("info_off") else {}),
             **({"SCREEN_CREDIT": "0"} if TTS_CFG.get("credit_off") else {}),
+            **({"AI_IMAGES": "1"} if TTS_CFG.get("ai_img") else {}),
             **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")) if TTS_CFG.get(k_)}}
 
 def run(*args):
@@ -402,6 +403,8 @@ with T4a:
                                           help="대본을 만들 때 AI가 대본 속 수치·순서·비교를 뽑아 인포그래픽 1개를 만들고, 영상 이미지 위에 해당 문장 시점에 띄웁니다. 대본에 없는 숫자는 쓰지 않고(검증), 구조가 없으면 만들지 않습니다. 소재별로 '대본 보기·수정'에서 보고 끄거나 고칠 수 있습니다. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     TTS_CFG["credit_off"] = not st.checkbox("🏷 영상 화면에 사진 출처 표시 (예: Photos: Pixabay · Wikimedia Commons)", not TTS_CFG.get("credit_off"), key="credit_cb",
                                             help="끄면 영상 화면(쇼츠 이미지 아래·롱폼 화면 구석)에 출처 문구를 넣지 않습니다. 내 사진만 쓴다면 끄세요. 설명란의 출처 목록은 그대로 들어갑니다. 인터넷에서 받은 사진(특히 Wikimedia Commons 등 CC 라이선스)을 쓸 때는 출처 표시가 라이선스 조건일 수 있으니 설명란 출처는 지우지 마세요. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
+    TTS_CFG["ai_img"] = st.checkbox("🎨 이미지를 AI로 생성 (대본 장면에 맞춰, 무료)", bool(TTS_CFG.get("ai_img")), key="ai_img_cb",
+                                    help="켜면 이미지 받기 단계에서 사진 검색 대신, 각 장면이 덮는 대본 문장을 그림으로 만드는 프롬프트를 AI가 쓰고 그 프롬프트로 이미지를 생성합니다. 필요: Cloudflare 무료 계정의 CF_ACCOUNT_ID + CF_API_TOKEN(하루 약 170장 무료) 또는 GEMINI_API_KEY. 생성에 실패한 장면만 기존 사진 검색으로 채웁니다. 글자는 그리지 못하고 인물 얼굴·로고는 불안정합니다. 실제 사건처럼 보이는 AI 이미지는 유튜브 업로드 때 'altered or synthetic content' 공개 항목 확인이 필요할 수 있습니다. 이미 만든 영상엔 redo 후 5단계 렌더링으로 적용")
     import fonts as _FN0
     _fa0 = _FN0.available()
     _fo = ["", *_fa0]
@@ -1999,6 +2002,20 @@ with T3b:
                 if run("image_check.py", "--index", str(idx), "--fix", "--force"):
                     sync_desc([idx])
                 st.rerun()
+            ai1, ai2 = st.columns(2)
+            if ai1.button("🎨 이 소재 이미지 전부 AI로 (다시) 만들기", key=f"aiall_{idx}",
+                          help="대본 장면별 프롬프트를 새로 쓰고 모든 장면(직접 올린 사진 제외)을 AI로 생성합니다"):
+                run("ai_images.py", "--index", str(idx), "--prompts")
+                if run("ai_images.py", "--index", str(idx), "--force"):
+                    sync_desc([idx])
+                st.rerun()
+            try:
+                import ai_images as _AIx
+                ai2.download_button("📝 AI 프롬프트 내보내기 (Gemini·ChatGPT 앱용)", _AIx.export_prompts(load_db()[idx]).encode("utf-8"),
+                                    file_name=f"prompts_{idx}.md", key=f"aiexp_{idx}",
+                                    help="앱에서 직접 만든 그림은 장면별 '사진 올리기'로 넣으면 됩니다")
+            except Exception:
+                pass
             bulk_ic = st.text_input("여러 소재 일괄 검증 (예: 109-115,120)", key="ic_bulk")
             bfix = st.checkbox("불일치는 자동 교체까지", True, key="ic_bulk_fix")
             if st.button("일괄 검증 시작", key="ic_bulk_go", disabled=not bulk_ic.strip()):
@@ -2052,8 +2069,27 @@ with T3b:
                     else:
                         st.warning(f"장면 {n}: 이미지 없음 (색 카드로 대체)")
                     c_ = credits.get(n)
-                    if c_:
+                    if c_ and c_.get("source") == "ai":
+                        st.caption("출처: 🎨 AI 생성")
+                    elif c_:
                         st.caption(f"출처: {'Wikimedia Commons' if c_.get('source') == 'commons' else 'Pixabay' + (' ' + {'illustration': '일러스트', 'vector': '벡터'}.get(c_.get('type'), '') if c_.get('type') in ('illustration', 'vector') else '')} · {c_.get('user', '')} {c_.get('license', '')}")
+                    _aip = list(item.get("ai_prompts") or [])
+                    ai_new = st.text_area("🎨 AI 프롬프트 (영어, 비우면 자동)", _aip[n - 1] if n - 1 < len(_aip) else "", key=f"aip_{idx}_{n}", height=80)
+                    if st.button("🎨 AI로 이 장면 만들기", key=f"aigen_{idx}_{n}", help="위 프롬프트로 이 장면 이미지를 새로 만듭니다 (CF_ACCOUNT_ID+CF_API_TOKEN 또는 GEMINI_API_KEY 필요)"):
+                        d2 = load_db()
+                        try:
+                            import ai_images as _AI
+                            _p = _AI.make_prompts(d2[idx])
+                            while len(_p) < n:
+                                _p.append("")
+                            if ai_new.strip():
+                                _p[n - 1] = ai_new.strip()
+                            d2[idx]["ai_prompts"] = _p
+                        except Exception as _e:
+                            st.warning(f"프롬프트 준비 실패: {_e}")
+                        save_db(d2)
+                        if run("ai_images.py", "--index", str(idx), "--scene", str(n)) and sync_desc([idx]):
+                            st.rerun()
                     q_new = st.text_input("검색어", qs[n - 1] if n - 1 < len(qs) else "", key=f"q_{idx}_{n}")
                     if st.button("이 장면 다시 받기", key=f"re_{idx}_{n}"):
                         qq = list(qs); qq[n - 1] = q_new.strip()

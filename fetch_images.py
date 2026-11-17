@@ -253,6 +253,13 @@ def fetch_item(session, key, idx, item, force):
         changed_scenes = {n for n, q in enumerate(queries, start=1) if n > len(done) or done[n - 1] != q}
         print(f"    이미지 검색어가 바뀐 장면만 새로 받습니다: {sorted(changed_scenes)}")
     anchor = " ".join(str(item.get("verify_note") or "").split()[:3])
+    try:    # AI 이미지 모드: 대본 장면별 프롬프트로 먼저 생성하고, 못 만든 장면만 아래 검색으로 채운다
+        import ai_images as _ai
+        if _ai.enabled(item):
+            _ai.fill(item, folder, force=force)
+            force = False
+    except Exception as e:
+        print(f"    [AI이미지] 건너뜀 ({type(e).__name__}: {e})")
     old = {} if force else {c.get("scene"): c for c in (item.get("image_credits") or [])}
     new_credits, used, got = {}, set(), 0
     hashes = {}       # 이미 정해진 장면의 사진 지문 (같은 사진이 두 장면에 들어가는 것 방지)
