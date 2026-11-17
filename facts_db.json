@@ -69509,17 +69509,15 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "ed2456",
-        "page": "https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123059/",
-        "id": 123059
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sleek 1950s ocean liner cutting through a stormy Atlantic sea at dawn, viewed "
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "Michael_Kastelic",
-        "page": "https://pixabay.com/photos/entrace-rotating-door-building-4614731/",
-        "id": 4614731
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "The SS United States gliding across a calm Atlantic sunrise, captured from a hig"
       },
       {
         "scene": 3,
@@ -69597,7 +69595,10 @@
       "The rusted hull of the SS United States grounded on an artificial reef off Florida, seen from a dramatic low underwater perspective with marine life surrounding it.",
       "A serene underwater tableau of the sunken SS United States, illuminated by shafts of light, with a lone dolphin swimming past, preserving its transatlantic record legacy."
     ],
-    "ai_prompts_done": [],
+    "ai_prompts_done": [
+      "A sleek 1950s ocean liner cutting through a stormy Atlantic sea at dawn, viewed from a low, forward angle, with a rival ship's silhouette looming in the distance.",
+      "The SS United States gliding across a calm Atlantic sunrise, captured from a high aerial perspective, showing its streamlined hull completing a record crossing in three days."
+    ],
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0663_미국.srt",
     "redo_ts": 1794921745.1582727,
     "image_queries": [
@@ -69737,12 +69738,9 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "Nik Kranjec",
-        "license": "CC BY-SA 4.0",
-        "title": "TikTok Short Film Competition Venue.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:TikTok_Short_Film_Competition_Venue.jpg",
-        "id": "c:126010967"
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sleek smartphone screen showing a timeline where a finger swipe instantly eras"
       },
       {
         "scene": 2,
@@ -69798,7 +69796,20 @@
         "id": 4434184
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "ai_prompts": [
+      "A sleek smartphone screen showing a timeline where a finger swipe instantly erases a series of video thumbnails ranging from 3 seconds to 60 minutes, captured from a top-down angle.",
+      "A modern living room with a large TV displaying the TikTok app interface, showing both short 3‑second clips and a long hour‑long video thumbnail, viewed from a wide-angle side perspective.",
+      "A close‑up of a laptop browser window open to TikTok's website, showcasing a scrollable feed of varied‑length videos, shot from an over‑the‑shoulder angle.",
+      "A stylized cityscape of Beijing with a glowing red barrier overlay, while a separate screen displays the Douyin logo and interface, captured from a low-angle street view.",
+      "An interior of a bustling Shanghai café where patrons use phones showing the Douyin app, with a subtle map of China in the background, filmed from a diagonal angle.",
+      "A data dashboard on a glass table presenting animated charts of TikTok's 2020 April download numbers and video length distribution, rendered in a futuristic neon style, seen from a high-angle perspective.",
+      "A minimalist office desk with a tablet displaying TikTok's analytics page, highlighting diverse video durations, photographed from a side‑on close‑up view.",
+      "An abstract collage of disappearing video frames floating away from a hand swipe, merging short and long clips into a single TikTok logo swirl, captured from a dynamic rotating camera angle."
+    ],
+    "ai_prompts_done": [
+      "A sleek smartphone screen showing a timeline where a finger swipe instantly erases a series of video thumbnails ranging from 3 seconds to 60 minutes, captured from a top-down angle."
+    ]
   },
   {
     "topic": "1881년 남미 국경을 정한 조약",
