@@ -58,7 +58,7 @@ def _rate_mult():
     return 1.0 + (int(m.group(1)) / 100.0 if m else 0.0)
 
 
-_SEC = os.environ.get("SCRIPT_TARGET_SEC", "").strip()
+_SEC = os.environ.get("SCRIPT_TARGET_SEC", "").strip() or "45"   # 기본 목표 45초 (UI 설정이 있으면 그 값)
 if _SEC.replace(".", "", 1).isdigit() and float(_SEC) > 0:
     _c = float(_SEC) * 8.0 * _rate_mult()  # 한국어 약 8자/초 (속도 설정 반영)
     TARGET_MIN_CHARS = max(60, int(round(_c * 0.88, -1)))
@@ -224,7 +224,7 @@ def _build_prompt_base(fact):
 1. 반드시 한국어로 작성합니다.
 2. 실제 유튜브 쇼츠에서 사람이 말하는 것처럼 자연스럽게 작성합니다.
 3. 존댓말을 사용합니다.
-4. 첫 문장은 [훅]을 살려 강하게 시작합니다. 설명문처럼 밋밋하면 금액·숫자·반전·질문이 드러나게 다듬되, 자료에 없는 사실은 만들지 않습니다.
+4. 첫 문장(3초 안에 끝나는 한 문장)이 영상의 전부입니다. 구체적인 숫자·대비(A인데 B)·잃을 것/걸린 것(금지·처벌·돈·목숨·영토) 중 하나가 첫 문장에 드러나야 합니다. "~에서는 ~합니다" 식의 장면 설명으로 시작하지 말고, "궁금하지 않으세요?", "알고 계셨나요?", "오늘은 ~를 알아보겠습니다" 같은 빈 질문·인사도 쓰지 않습니다. 자료에 없는 사실은 만들지 않습니다.
 5. [핵심 내용]에 있는 사실을 설명합니다.
 6. [반전/흥미로운 포인트]를 자연스럽게 포함합니다. 영상 중반(약 1/3 지점)에서 시청자가 떠나기 쉬우니, 그 지점에 "그런데"로 시작하는 두 번째 전환이나 새 정보를 한 번 넣어 계속 보게 만듭니다.
 7. 제공된 자료에 없는 새로운 사실이나 숫자를 만들지 않습니다.
@@ -960,6 +960,101 @@ def generate_with_model(client, model, fact, retries):
 
 
 # ============================================================
+# 훅·유지력 점검 (생성 직후)
+# ============================================================
+
+_WEAK_OPEN = re.compile(r"^(오늘은|안녕|여러분|혹시|궁금|알고\s*계셨|아시나요|여러분은)|(궁금하지\s*않|알고\s*계셨나요|알아보겠습니다|알아볼까요|소개합니다)")
+_HOOK_SIGNAL = re.compile(r"\d|[가-힣]인데|하지만|그런데|그러나|반면|금지|처벌|벌금|징역|사형|전쟁|전투|영토|목숨|죽|잃|빼앗|막대|수십|수백|수천|수만|단\s*한|유일|최초|최대|아무도|누구도|왜")
+
+
+def _split_sents(text):
+    return [x.strip() for x in re.split(r"(?<=[.!?。])\s+", (text or "").strip()) if x.strip()]
+
+
+def check_hook(narration):
+    """규칙 기반 점검. (문제 목록, 문장수, 첫 문장) 반환. 문제가 없으면 빈 리스트"""
+    sents = _split_sents(narration)
+    issues = []
+    if not sents:
+        return ["빈 대본"], 0, ""
+    first = sents[0]
+    if _WEAK_OPEN.search(first):
+        issues.append("첫 문장이 인사·빈 질문으로 시작")
+    if not _HOOK_SIGNAL.search(first):
+        issues.append("첫 문장에 숫자·대비·걸린 것(금지·처벌·돈·목숨·영토)이 없음")
+    if len(re.sub(r"\s+", "", first)) > 55:
+        issues.append("첫 문장이 너무 김 (3초 안에 읽히지 않음)")
+    if len(sents) < 7:
+        issues.append(f"문장이 {len(sents)}개뿐 (컷 전환이 적어 지루함)")
+    n = len(re.sub(r"\s+", "", narration))
+    if n > TARGET_MAX_CHARS:
+        issues.append(f"너무 김 ({n}자)")
+    if len(sents) >= 6:   # 중반(약 40%) 재훅: 그 근처 문장에 전환어가 있어야 한다
+        mid = sents[max(1, int(len(sents) * 0.3)):int(len(sents) * 0.6) + 1]
+        if not any(re.match(r"^(그런데|하지만|그런데도|문제는|더 놀라운|놀랍게도|반전은|그러나|그 이유|여기서)", x) for x in mid):
+            issues.append("중반(약 40% 지점)에 전환·재훅 문장이 없음")
+    last = sents[-1]
+    if re.search(r"구독|좋아요|알림|댓글", last):
+        issues.append("마지막이 구독·좋아요 요청")
+    return issues, len(sents), first
+
+
+def _rewrite_prompt(fact, narration, issues):
+    return f"""아래 쇼츠 대본을 시청 지속률이 높게 고쳐 쓰세요. 대본만 출력합니다.
+
+[발견된 문제]
+- """ + "\n- ".join(issues) + f"""
+
+[고치는 규칙]
+- 사실과 숫자는 아래 [원래 대본]과 [자료] 안에서만 씁니다. 새 사실을 만들지 않습니다.
+- 첫 문장은 한 문장, 40자 안팎. 구체적 숫자·대비·걸린 것(금지/처벌/돈/목숨/영토) 중 하나로 시작하고, 인사·빈 질문·장면 설명으로 시작하지 않습니다.
+- 8~11문장, 전체 {TARGET_MIN_CHARS}~{TARGET_MAX_CHARS}자. 문장은 짧게, 존댓말.
+- 3~4번째 문장 근처에 "그런데/문제는/하지만"으로 시작하는 전환 문장을 넣어 새 정보를 준다.
+- 마지막 문장은 첫 문장의 궁금증에 답하거나 여운을 남기며, 구독·좋아요 요청은 쓰지 않는다.
+- 면책·되돌리기 문장("다를 수 있습니다", "~는 아닙니다")은 쓰지 않는다.
+
+[자료]
+{fact.get('hook', '')} / {fact.get('body', '')} / {fact.get('twist', '')}
+
+[원래 대본]
+{narration}
+""".strip()
+
+
+def refine_script(client, models, fact, narration, max_rounds=2):
+    """훅·유지력 점검 후 문제가 있으면 다시 쓰게 한다. 두 번 고쳐도 안 되면 fact['review_needed']=True (수동 검수 대기).
+    반환: 최종 대본. 점검 결과는 fact['hook_check'] 에 저장."""
+    if os.environ.get("HOOK_CHECK", "1") == "0":
+        return narration
+    cur = narration
+    issues, n_s, first = check_hook(cur)
+    rounds = 0
+    while issues and rounds < max_rounds:
+        rounds += 1
+        print(f"  [훅점검] 문제 {len(issues)}건 → 다시 쓰기 {rounds}/{max_rounds}: " + " / ".join(issues))
+        cand = ask_models(client, models, "당신은 사실에 충실한 한국어 유튜브 쇼츠 대본 작가입니다.",
+                          _rewrite_prompt(fact, cur, issues), MAX_COMPLETION_TOKENS, 2,
+                          lambda t: clean_narration(t) or None)
+        if not cand:
+            break
+        ok, reason = validate_narration(cand)
+        if not ok:
+            print(f"  [훅점검] 다시 쓴 대본 탈락: {reason}")
+            continue
+        new_issues, n_s2, first2 = check_hook(cand)
+        if len(new_issues) <= len(issues):   # 나빠지지 않을 때만 교체
+            cur, issues, n_s, first = cand, new_issues, n_s2, first2
+    fact["hook_check"] = {"ok": not issues, "issues": issues, "rounds": rounds, "first": first, "sentences": n_s}
+    if issues:
+        fact["review_needed"] = True
+        print(f"  [훅점검] 수동 검수 필요: " + " / ".join(issues))
+    else:
+        fact.pop("review_needed", None)
+        print(f"  [훅점검] 통과 (첫 문장: {first})")
+    return cur
+
+
+# ============================================================
 # 항목별 생성
 # ============================================================
 
@@ -1186,6 +1281,10 @@ def main():
         )
 
         if narration:
+            try:
+                narration = refine_script(client, models, fact, narration)
+            except Exception as e:
+                print(f"  [훅점검] 건너뜀 ({type(e).__name__}: {e})")
             fact["narration"] = narration
             fact["status"] = "scripted"  # TTS 단계(generate_tts_v2.py)가 이 상태를 찾습니다.
 
