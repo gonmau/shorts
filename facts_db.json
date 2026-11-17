@@ -69744,10 +69744,9 @@
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "terydanphiri",
-        "page": "https://pixabay.com/photos/editing-video-computer-7320125/",
-        "id": 7320125
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A modern living room with a large TV displaying the TikTok app interface, showin"
       },
       {
         "scene": 3,
@@ -69808,7 +69807,8 @@
       "An abstract collage of disappearing video frames floating away from a hand swipe, merging short and long clips into a single TikTok logo swirl, captured from a dynamic rotating camera angle."
     ],
     "ai_prompts_done": [
-      "A sleek smartphone screen showing a timeline where a finger swipe instantly erases a series of video thumbnails ranging from 3 seconds to 60 minutes, captured from a top-down angle."
+      "A sleek smartphone screen showing a timeline where a finger swipe instantly erases a series of video thumbnails ranging from 3 seconds to 60 minutes, captured from a top-down angle.",
+      "A modern living room with a large TV displaying the TikTok app interface, showing both short 3‑second clips and a long hour‑long video thumbnail, viewed from a wide-angle side perspective."
     ]
   },
   {
