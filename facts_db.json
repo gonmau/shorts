@@ -56376,7 +56376,7 @@
     "verify_note": "Levee (ceremony)",
     "confidence": "source",
     "created_at": "2026-11-01T10:13:50.623726+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "왕이 아침에 일어나면 바로 국민을 맞이한다? 옛 프랑스 왕실에서는 바로 그 순간을 “레베(Levee)”라고 불렀습니다. 레베는 프랑스어 ‘lever’(일어나다)에서 유래했으며, 왕이 침대에서 일어나 궁전에서 신하들을 맞이하던 의식이었습니다. 전해지는 이야기에 따르면, 왕이 옷을 갈아입고 짧게 말하며 정책을 전하고, 신하들이 궁전 문을 열어 인사하는 모습이 묘사되곤 합니다. 그런데 오늘날 레베는 매일 열리지 않습니다. 특별한 행사나 기념일에 레베가 재현되기도 하고, 캐나다에서도 비슷한 형태의 모임이 새해에 열리는 경우가 있습니다. 이렇게 과거 왕의 아침 인사는 이제 특별한 순간에만 찾아볼 수 있는 문화적 흔적이 되었습니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -56412,7 +56412,8 @@
       "royal attire speech balcony",
       "empty palace hallway",
       "Levee reenactment celebration",
-      "historic royal greeting display"
+      "historic royal greeting display",
+      "Levee (ceremony)"
     ],
     "scene_count": 8,
     "grounding": {
@@ -56426,7 +56427,97 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0474_프랑스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0474_프랑스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A grand early‑morning bedroom in a 17th‑century French palace, king rising from an ornate canopy bed, servants awaiting, low angle view from foot of the bed, soft candlelight.",
+      "A lavish palace hallway, courtiers lined up as the king steps out, the scene titled \"Levee\", wide shot from the doorway showing gilded walls and tapestries.",
+      "Close‑up side view of the king pulling back curtains, sun streaming in, his silhouette rising from the bed, emphasizing the act of \"lever\" in an opulent 1600s chamber.",
+      "Overhead perspective of the king standing beside his bed, surrounded by attendants holding ceremonial robes, the palace interior richly decorated with baroque details.",
+      "Mid‑shot of the king changing into ceremonial attire, speaking briefly to advisors, while palace doors open and courtiers bow, captured from a slight diagonal angle.",
+      "A quiet, empty palace corridor at dawn, sunlight filtering through stained glass, indicating the Levee no longer takes place, viewed from a long, vanishing‑point perspective.",
+      "Reenactment of a Levee ceremony on a modern stage, actors in period costume, flags fluttering, audience in a historic hall in Canada, shot from a front‑center angle.",
+      "A reflective museum exhibit showing a painted tableau of the king's morning greeting, visitors observing, soft spotlight on the scene, taken from a low angle focusing on the artwork."
+    ],
+    "ai_prompts_done": [
+      "A grand early‑morning bedroom in a 17th‑century French palace, king rising from an ornate canopy bed, servants awaiting, low angle view from foot of the bed, soft candlelight.",
+      "A lavish palace hallway, courtiers lined up as the king steps out, the scene titled \"Levee\", wide shot from the doorway showing gilded walls and tapestries.",
+      "Close‑up side view of the king pulling back curtains, sun streaming in, his silhouette rising from the bed, emphasizing the act of \"lever\" in an opulent 1600s chamber.",
+      "Overhead perspective of the king standing beside his bed, surrounded by attendants holding ceremonial robes, the palace interior richly decorated with baroque details.",
+      "Mid‑shot of the king changing into ceremonial attire, speaking briefly to advisors, while palace doors open and courtiers bow, captured from a slight diagonal angle.",
+      "A quiet, empty palace corridor at dawn, sunlight filtering through stained glass, indicating the Levee no longer takes place, viewed from a long, vanishing‑point perspective.",
+      "Reenactment of a Levee ceremony on a modern stage, actors in period costume, flags fluttering, audience in a historic hall in Canada, shot from a front‑center angle.",
+      "A reflective museum exhibit showing a painted tableau of the king's morning greeting, visitors observing, soft spotlight on the scene, taken from a low angle focusing on the artwork."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A grand early‑morning bedroom in a 17th‑century French palace, king rising from "
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A lavish palace hallway, courtiers lined up as the king steps out, the scene tit"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Close‑up side view of the king pulling back curtains, sun streaming in, his silh"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Overhead perspective of the king standing beside his bed, surrounded by attendan"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mid‑shot of the king changing into ceremonial attire, speaking briefly to adviso"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A quiet, empty palace corridor at dawn, sunlight filtering through stained glass"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Reenactment of a Levee ceremony on a modern stage, actors in period costume, fla"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A reflective museum exhibit showing a painted tableau of the king's morning gree"
+      }
+    ],
+    "image_queries_done": [
+      "crowd greeting monarch",
+      "Levee morning ceremony",
+      "king rising from bed palace",
+      "royal attire speech balcony",
+      "empty palace hallway",
+      "Levee reenactment celebration",
+      "historic royal greeting display",
+      "Levee (ceremony)"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0474_프랑스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0474_프랑스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "6Dd20__9r8Y",
+    "uploaded_at": "2026-11-18T08:23:46.148793+09:00"
   },
   {
     "topic": "이드 알-아드하, 모로코에서 4일간 이어지는 양희생 축제",
@@ -58922,7 +59013,7 @@
     "verify_note": "Mexican cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:44:32.466183+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58934,6 +59025,67 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "rounds": 0,
+      "first": "3분만에 물에 담가 끓이는 전통 옥수수 처리법이 거리 노점에 살아 있습니다.",
+      "sentences": 7
+    },
+    "narration": "3분만에 물에 담가 끓이는 전통 옥수수 처리법이 거리 노점에 살아 있습니다. 고대 올멕과 마야 문명은 옥수수를 알칼리성 물에 담가 껍질을 부드럽게 하고 영양소를 끌어내는 니크스마리제이션을 만들었는데, 이는 오늘날 토르티야와 옥수수 가루의 기본이 됩니다. 테오티우아칸과 톨텍도 이 방법을 이어받아 다양한 요리에 적용했죠. 그런데 현대 멕시코의 일부 거리 음식점에서는 그 과정을 눈앞에서 직접 볼 수 있습니다. 물에 옥수수를 넣고 끓이는 모습을 손님에게 보여주며, 전통을 그대로 재현하는 것이죠. 이런 현장은 전통을 보존하는 특정 지역에 한정된 사례이지만, 거리 한복판에서 고대 문명의 맛을 체험한다는 점은 여전히 신기합니다. 옛 방식이 오늘날에도 살아 숨쉬는 이유, 바로 그 손끝에서 확인할 수 있습니다.",
+    "title_line1": "멕시코 거리 옥수수",
+    "title_line2": "고대 방식 그대로 끓인다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전통 *옥수수* 끓임"
+      },
+      {
+        "s": 2,
+        "text": "고대 *니크스마리제*"
+      },
+      {
+        "s": 5,
+        "text": "현장 *끓는* 옥수수"
+      },
+      {
+        "s": 7,
+        "text": "손끝에서 *전통* 살아"
+      }
+    ],
+    "image_queries": [
+      "Mexican traditional corn boiling",
+      "ancient nixtamalization stone",
+      "Teotihuacan cooking pottery",
+      "Mexican street food stall",
+      "boiling corn on site",
+      "Mexican street ancient taste",
+      "hands holding traditional corn"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "전통 옥수수 조리",
+      "s": 5,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "시연보여주기",
+          "value": null,
+          "text": "손님에게 시연"
+        },
+        {
+          "label": "전통재현",
+          "value": null,
+          "text": "고대 방식"
+        }
+      ],
+      "none": false
     }
   },
   {
@@ -66893,7 +67045,20 @@
     "verify_note": "Early Muslim conquests",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 4,
+      "supported": 3,
+      "reason": "인도·메디나 사건은 지역적이지만 ‘622년 메디나에서 시작된 초기 이슬람 정복’이라는 구체적 연도·장소는 있지만, 정복 범위와 속도에 대한 수치·절차가 부족하고 근거 문서와 일치 여부가 불분명함.",
+      "avg": 3.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 3 (평균 3.0) 인도·메디나 사건은 지역적이지만 ‘622년 메디나에서 시작된 초기 이슬람 정복’이라는 구체적 연도·장소는 있지만, 정복 범위와 속도에 대한 수치·절차가 부족하고 근거 문서와 일치 여부가 불분명함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -67398,7 +67563,7 @@
     "verify_note": "Supper",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "저녁 식사 없이 ‘스퍼’만? 영국에서 이렇게 먹는다!  \n\n영국에서는 ‘스퍼(Supper)’가 보통 저녁에 먹는 주된 식사를 의미하지만, 정식 저녁식사인 ‘디너(dinner)’와는 구분돼요. 디너가 공식적인 메인 코스라면, 스퍼는 좀 더 비공식적이고 가벼운 식사로 여겨집니다. 그래서 저녁에 간단히 빵이나 과자를 먹더라도 “스퍼”라고 부르면 공식적인 저녁 식사로 인정받을 수 있죠.  \n\n그런데 스위스에서는 같은 단어가 조금 다르게 쓰입니다. 스위스에서는 스퍼가 가벼운 야식까지 포함하는 포괄적인 용어로 쓰여요. 즉, 밤늦게 라면 한 그릇을 먹어도 스퍼라고 부를 수 있는 겁니다.  \n\n이 차이는 영국 전통에 뿌리를 두고 있지만, 모든 영국 가정에 동일하게 적용되는 건 아니라는 점을 기억해 주세요. 같은 단어가 두 나라에서 이렇게 다른 의미로 쓰인다는 사실, 생각보다 흥미롭지 않나요?",
@@ -67442,7 +67607,20 @@
     "infographic": {
       "on": false,
       "none": true
-    }
+    },
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "‘스퍼’ 용어 차이는 영국과 스위스(실제로는 스위스가 아니라 영국 내 지역 차이) 사이의 문화적 차이로서 어느 정도 구체적이지만, 스위스에서의 사용 사례가 명확히 제시되지 않아 근거가 약함.",
+      "avg": 3.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 3/supported 2 (평균 3.3) ‘스퍼’ 용어 차이는 영국과 스위스(실제로는 스위스가 아니라 영국 내 지역 차이) 사이의 문화적 차이로서 어느 정도 구체적이지만, 스위스에서의 사용 사례가 명확히 제시되지 않아 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "법률에서 ‘유사 사건’으로 판결을 구하는 방법",
@@ -67457,7 +67635,20 @@
     "verify_note": "Analogy (law)",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 3,
+      "reason": "법률에서 ‘유사 사건(Analogy)’을 이용하는 절차와 용어는 구체적이지만, 에티오피아에 한정된 사례가 제시되지 않아 일반법 이론에 머무르고, 근거 문서와의 직접 연계가 부족함.",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 3 (평균 4.0) 법률에서 ‘유사 사건(Analogy)’을 이용하는 절차와 용어는 구체적이지만, 에티오피아에 한정된 사례가 제시되지 않아 일반법 이론에 머무르고, 근거 문서와의 직접 연계가 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "스페인 제국 붕괴와 페루의 독립 전쟁",
@@ -67472,7 +67663,19 @@
     "verify_note": "Spanish American wars of independence",
     "confidence": "source",
     "created_at": "2026-11-09T08:02:15.972062+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "페루 독립 전쟁은 지역적 사건이며, 나폴레옹 침공·왕위 공백 등 구체적 배경이 제시돼 있지만 ‘마을 광장에서 갑자기 선언’ 등 과장된 표현이 있어 약간 감점.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "시암인의 앙코르 몰락",
@@ -67487,7 +67690,20 @@
     "verify_note": "Military history of Thailand",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 4,
+      "supported": 2,
+      "reason": "시암인의 앙코르 몰락은 특정 지역·시대에 한정돼 있으나, 전쟁 시기·기후변화 연결 고리가 학계에서 논쟁 중이며, 근거 문서와 직접적인 일치가 부족해 점수를 낮춤.",
+      "avg": 4.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 7/concrete 4/supported 2 (평균 4.3) 시암인의 앙코르 몰락은 특정 지역·시대에 한정돼 있으나, 전쟁 시기·기후변화 연결 고리가 학계에서 논쟁 중이며, 근거 문서와 직접적인 일치가 부족해 점수를 낮춤. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "플럼 푸딩의 이름 속 진실",
@@ -67502,7 +67718,19 @@
     "verify_note": "Christmas pudding",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "‘플럼 푸딩’ 이름의 어원과 실제 재료 차이는 구체적 사실이며, 문헌(Christmas pudding)과도 일치하지만 호주와 직접적인 연관성이 약해 약간 감점.",
+      "avg": 6.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    }
   },
   {
     "topic": "메대가 산악 지형을 이용해 신아시리아를 무너뜨린 비결",
@@ -69337,7 +69565,17 @@
     "verify_note": "Big Brother 2025 (Dutch and Belgian TV series)",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 6,
+      "reason": "벨기에·네덜란드 공동 제작이라는 지역적 특성이 있으나, ‘가구 거의 없음’이라는 내용은 발표 단계이므로 근거가 다소 약함.",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "미셸 드 세르토(Michel de Certeau)의 일상 철학",
@@ -69353,7 +69591,20 @@
     "verify_note": "Michel de Certeau",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 3,
+      "concrete": 5,
+      "supported": 7,
+      "reason": "미셸 드 세르토는 프랑스 인물이라 브라질과 직접 연관성이 없고, 구체적 수치·제도는 부족함.",
+      "avg": 5.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 7 (평균 5.0) 미셸 드 세르토는 프랑스 인물이라 브라질과 직접 연관성이 없고, 구체적 수치·제도는 부족함. · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "북극점은 어느 나라에도 속하지 않는다",
@@ -69455,7 +69706,19 @@
     "verify_note": "Naming law",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 6,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "헝가리 이름 제한법은 존재하지만, 발췌문은 일반적인 설명에 머물러 구체적 사례·절차가 부족함.",
+      "avg": 5.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
   },
   {
     "country": "말레이시아",
@@ -69466,12 +69729,23 @@
     "caveat": "이 절차는 말레이시아 연방의 9개 주군주에게만 적용됩니다.",
     "confidence": "high",
     "verify_note": "말레이시아 양디페르투안 아공 선출 절차, 왕실 회의 비밀투표",
-    "status": "verified",
+    "status": "rejected",
     "created_at": "2026-11-11T07:22:21.449526+00:00",
     "theme": "키워드",
     "seed_keyword": "말레이시아 9왕가, 왕은 어떻게 뽑히나요? – 왕위 선택 규칙 대공개",
     "need": "curiosity",
-    "emotion": "surprise"
+    "emotion": "surprise",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 6,
+      "supported": 2,
+      "reason": "말레이시아 왕 선출 방식은 특수하지만, 근거 문서가 없어 사실 확인이 어려워 신뢰도가 낮음.",
+      "avg": 5.3,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 8/concrete 6/supported 2 (평균 5.3) 말레이시아 왕 선출 방식은 특수하지만, 근거 문서가 없어 사실 확인이 어려워 신뢰도가 낮음."
   },
   {
     "country": "일본",
@@ -69482,12 +69756,23 @@
     "caveat": "이 규칙들은 에도 시대(1603‑1868) 사무라이 기록에 기반하며, 현재 모든 일본인에게 동일하게 적용되는 것은 아닙니다.",
     "confidence": "high",
     "verify_note": "에도 시대 사무라이 식탁 매너 기록, 일본 전통 예절 서적",
-    "status": "verified",
+    "status": "rejected",
     "created_at": "2026-11-11T07:22:34.600600+00:00",
     "theme": "키워드",
     "seed_keyword": "일본 사무라이 식탁 매너, 외국인이 절대 놓치면 안 되는 5가지",
     "need": "practical",
-    "emotion": "curiosity"
+    "emotion": "curiosity",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 4,
+      "supported": 2,
+      "reason": "사무라이 식탁 매너는 문화적 흥미가 있지만, 구체적 근거가 없고 현대 적용 여부가 애매함.",
+      "avg": 3.7,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 2 (평균 3.7) 사무라이 식탁 매너는 문화적 흥미가 있지만, 구체적 근거가 없고 현대 적용 여부가 애매함."
   },
   {
     "topic": "그리스 전통 디저트 재료",
@@ -69503,7 +69788,17 @@
     "verify_note": "Greek cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 7,
+      "reason": "그리스 디저트 재료는 전통적이지만 전 세계적으로 공통적인 재료라 지역적 독특성은 낮고, 구체적 예시가 제한적임.",
+      "avg": 5.3,
+      "flags": []
+    }
   },
   {
     "topic": "쉥겐 지역의 무검문소 국경",
@@ -69519,7 +69814,21 @@
     "verify_note": "Border",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 4,
+      "reason": "쉥겐 지역은 유럽에만 해당돼 케냐와 직접 연관성이 낮고, 구체적 수치·절차가 부족해 영상 소재로는 약함",
+      "avg": 3.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 4 (평균 3.0) 쉥겐 지역은 유럽에만 해당돼 케냐와 직접 연관성이 낮고, 구체적 수치·절차가 부족해 영상 소재로는 약함 · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "아일랜드의 양당제(Two-party system) 구조",
@@ -69535,7 +69844,20 @@
     "verify_note": "Two-party system",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:20.042895+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 5,
+      "reason": "아일랜드의 양당제는 실제 존재하지만, 듀베르제 법 적용·선거제 상세가 빠져 있어 구체성·근거가 다소 약함",
+      "avg": 4.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 5 (평균 4.0) 아일랜드의 양당제는 실제 존재하지만, 듀베르제 법 적용·선거제 상세가 빠져 있어 구체성·근거가 다소 약함 · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "연방( federation )의 권력 분배는 헌법으로 고정",
@@ -69551,7 +69873,20 @@
     "verify_note": "Federation",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "연방제 권력 분배는 일반적인 원리이며 볼리비아에 특화된 사례가 없어 구체성은 낮지만, 헌법적 고정이라는 점은 문서와 일치",
+      "avg": 4.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 6 (평균 4.3) 연방제 권력 분배는 일반적인 원리이며 볼리비아에 특화된 사례가 없어 구체성은 낮지만, 헌법적 고정이라는 점은 문서와 일치 · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "기독교 소수 국가에서도 크리스마스 트리 설치",
@@ -69567,7 +69902,20 @@
     "verify_note": "Observance of Christmas by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 4,
+      "reason": "부탄에서 크리스마스 트리 설치는 드물지만 위키피디아 일반 서술에 의존, 구체적 사례·수치가 없어 점수가 낮음",
+      "avg": 3.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 4 (평균 3.0) 부탄에서 크리스마스 트리 설치는 드물지만 위키피디아 일반 서술에 의존, 구체적 사례·수치가 없어 점수가 낮음 · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "중화인민공화국(People's Republic of China)의 영해 주장, 1949년 이전부터",
@@ -69583,7 +69931,17 @@
     "verify_note": "Territorial disputes of China",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:01.903236+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "중국의 영해 주장 역사는 사실이며 1949년 이전부터라는 구체적 시점이 제시돼 영상 소재로 활용 가능하지만, 구체적 영해 명시가 없어 중간 점수",
+      "avg": 5.0,
+      "flags": []
+    }
   },
   {
     "topic": "일본(Japan)의 영토, 75%가 산악지대",
@@ -69599,7 +69957,17 @@
     "verify_note": "Japan",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:01.903236+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "일본 영토 75%가 산악이라는 구체적 수치와 농업·인구 집중 설명이 명확히 제시돼 시청자에게 새로운 정보를 제공, 근거도 위키피디아와 일치",
+      "avg": 6.7,
+      "flags": []
+    }
   },
   {
     "topic": "멕시코시티 16세기 건물 안에 있는 복합 매장",
@@ -69615,7 +69983,17 @@
     "verify_note": "Sanborns",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 9,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "멕시코시티 16세기 건물 안에 있는 샌버른스는 지역·역사적 특수성이 강하고, 설립 연도·창업자·매장 수·소유구조 등 구체적 수치와 고유명사가 풍부하며, 발췌문 내용과 일치한다.",
+      "avg": 8.7,
+      "flags": []
+    }
   },
   {
     "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
@@ -69841,7 +70219,17 @@
     "verify_note": "Colonial Nigeria",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "왕실 나이저 컴퍼니가 식민지 나이지리아를 통치했다는 내용은 해당 지역·시기의 특수성을 보여주고, 연도·조약·회사명 등 구체적 정보가 있으나 세부 절차는 다소 부족하다.",
+      "avg": 7.7,
+      "flags": []
+    }
   },
   {
     "topic": "이탈리아 공화국 헌법, 453표만으로 통과",
@@ -69857,7 +70245,17 @@
     "verify_note": "Constitution of Italy",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 9,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "이탈리아 헌법 제정 과정은 453표라는 정확한 수치와 날짜·기관명 등 구체적이며, 발췌문과 완전히 일치한다.",
+      "avg": 9.0,
+      "flags": []
+    }
   },
   {
     "topic": "캐롤라이나식 홉핀 존, 베이컨 기름에 밥을 투명해질 때까지 끓인다",
@@ -69873,7 +70271,20 @@
     "verify_note": "Hoppin' John",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 6,
+      "supported": 3,
+      "reason": "홉핀 존은 미국 남부 요리이며 쿠바와는 무관해 지역 특수성이 낮고, 조리법은 일부 구체적이지만 발췌문은 미국 요리와 관련돼 있어 근거가 약하다.",
+      "avg": 3.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 6/supported 3 (평균 3.7) 홉핀 존은 미국 남부 요리이며 쿠바와는 무관해 지역 특수성이 낮고, 조리법은 일부 구체적이지만 발췌문은 미국 요리와 관련돼 있어 근거가 약하다. · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "보르네오 섬을 가로지르는 1,881km 국경선",
@@ -69889,7 +70300,17 @@
     "verify_note": "Indonesia–Malaysia border",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 9,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "보르네오 섬을 가로지르는 1,881 km 국경선은 명확한 수치와 지명, 구역 구분이 포함돼 매우 구체적이며, 발췌문과 정확히 일치한다.",
+      "avg": 9.0,
+      "flags": []
+    }
   },
   {
     "topic": "19세기 세계 3위 규모의 제국 러시아 해군",
@@ -69905,7 +70326,17 @@
     "verify_note": "Imperial Russian Navy",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 5,
+      "supported": 8,
+      "reason": "제국 러시아 해군은 특정 국가·시기의 특수 사례이고, 설립 연도·소멸 시기 등 구체적이지만 ‘세계 3위 규모’라는 순위 외에 함선 수 등 정량적 근거가 부족하고, 발췌문에 해당 순위가 명시돼 있다.",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "인도와 스리랑카 사이의 영토 분쟁",
@@ -69921,7 +70352,18 @@
     "verify_note": "Territorial disputes of India",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "스리랑카와 인도 사이 해상 영유권 갈등은 실제 사례가 거의 없으며, 발췌문에 구체적 시기·사건이 없어 구체성·지원성이 낮다.",
+      "avg": 2.3,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) 스리랑카와 인도 사이 해상 영유권 갈등은 실제 사례가 거의 없으며, 발췌문에 구체적 시기·사건이 없어 구체성·지원성이 낮다."
   },
   {
     "topic": "우즈베키스탄(Uzbekistan)의 히잡 착용 규정",
@@ -69937,7 +70379,20 @@
     "verify_note": "Islamic veiling practices by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:18:25.878379+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "우즈베키스탄의 히잡 규정은 국가별 차이로 알려져 있어 구체적 사실이 있으나, 발췌문은 일반적인 전 세계 현황만 제시해 직접적인 근거가 약하다.",
+      "avg": 4.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 4 (평균 4.3) 우즈베키스탄의 히잡 규정은 국가별 차이로 알려져 있어 구체적 사실이 있으나, 발췌문은 일반적인 전 세계 현황만 제시해 직접적인 근거가 약하다. · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "언어마다 ‘너’와 ‘당신’ 구분 존재",
@@ -69953,7 +70408,21 @@
     "verify_note": "T–V distinction in the world's languages",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 4,
+      "supported": 5,
+      "reason": "T‑V 구분은 언어학적으로 널리 문서화된 사실이며, 콜롬비아에 특화된 사례는 없지만 구체적 정의와 예시가 있어 중간 수준 점수를 준다.",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 5 (평균 4.7) T‑V 구분은 언어학적으로 널리 문서화된 사실이며, 콜롬비아에 특화된 사례는 없지만 구체적 정의와 예시가 있어 중간 수준 점수를 준다. · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "한스 섬(Hans Ø)에서 양국 깃발 격돌",
@@ -70191,7 +70660,17 @@
     "verify_note": "Kuril Islands dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "러시아·일본의 쿠릴 제도 영유권 분쟁은 구체적인 섬명·역사·현황이 명확히 문서화돼 있어 매우 구체적이고 지원된 내용이다.",
+      "avg": 8.0,
+      "flags": []
+    }
   },
   {
     "topic": "사바이 섬, 유일한 마을을 통한 입출입",
@@ -70207,7 +70686,17 @@
     "verify_note": "Savaiʻi",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:06.023629+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "사바이 섬의 인구·유일 항구 마을·페리 터미널 등 구체적 수치와 지리적 특성이 명확히 제시돼 있어 높은 점수를 부여한다.",
+      "avg": 7.7,
+      "flags": []
+    }
   },
   {
     "topic": "법원 보조원의 판결 영향력",
@@ -70223,7 +70712,19 @@
     "verify_note": "Law clerk",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:06.023629+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 6,
+      "concrete": 7,
+      "supported": 7,
+      "reason": "법원 보조원의 역할과 판결에 미치는 영향은 법학 문헌에 잘 기록돼 있으나, ‘판사가 메모를 그대로 인용한다’는 과장된 표현 때문에 약간 감점한다.",
+      "avg": 6.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
   },
   {
     "topic": "리투아니아·라트비아·에스토니아 3국이 함께하는 대규모 노래·춤 축제",
@@ -70696,7 +71197,20 @@
     "verify_note": "Illegal logging",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 5,
+      "reason": "마다가스카르의 특정 보호구역 사례는 지역적이지만, 발췌문은 전 세계적 불법 벌목 정의만 제공해 구체적 현황 증거가 부족함.",
+      "avg": 6.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
   },
   {
     "topic": "캐나다 퀘벡, 이민자 선택권을 독점하다",
@@ -70712,7 +71226,17 @@
     "verify_note": "Canadian immigration and refugee law",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 7,
+      "reason": "퀘벡이 이민자를 독점한다는 내용은 1991년 협정과 2023년 비율이라는 구체적 수치·제도가 명시돼 지역 특성이 뚜렷하고 근거 문서와 일치.",
+      "avg": 7.3,
+      "flags": []
+    }
   },
   {
     "topic": "폴란드 요리, 고기와 버터가 폭발한다",
@@ -70728,7 +71252,18 @@
     "verify_note": "Polish cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "폴란드 요리의 고기·버터 사용은 일반적인 국가 요리 특징이라 세계적이며, 발췌문에 구체적 요리명만 있어 충격적·새로운 정보는 제한적.",
+      "avg": 4.7,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 폴란드 요리의 고기·버터 사용은 일반적인 국가 요리 특징이라 세계적이며, 발췌문에 구체적 요리명만 있어 충격적·새로운 정보는 제한적."
   },
   {
     "topic": "오픈소스 게임 엔진 Godot( Godot )",
@@ -70744,7 +71279,20 @@
     "verify_note": "Godot (game engine)",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 3,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "Godot 엔진은 노르웨이와 무관한 아르헨티나 개발 배경이므로 지역 특성이 낮지만, 라이선스·출시 연도·지원 플랫폼 등 구체적 정보는 충분.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 6/supported 7 (평균 5.3) Godot 엔진은 노르웨이와 무관한 아르헨티나 개발 배경이므로 지역 특성이 낮지만, 라이선스·출시 연도·지원 플랫폼 등 구체적 정보는 충분. · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "다이아몬드 차량 Vajrayāna( Vajrayāna )",
@@ -70760,7 +71308,20 @@
     "verify_note": "Vajrayana",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 4,
+      "supported": 5,
+      "reason": "Vajrayāna는 몰디브와 직접 연관이 없으며, 불교 전통 설명은 일반적이고 ‘다이아몬드 차량’이라는 표현만으로는 몰디브 특성을 제시하지 않음.",
+      "avg": 3.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 5 (평균 3.7) Vajrayāna는 몰디브와 직접 연관이 없으며, 불교 전통 설명은 일반적이고 ‘다이아몬드 차량’이라는 표현만으로는 몰디브 특성을 제시하지 않음. · 규칙: 근거 문서에 나라 언급 없음"
   },
   {
     "topic": "알래스카 국경 분쟁",
@@ -70776,7 +71337,17 @@
     "verify_note": "Alaska boundary dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "verified"
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 6,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "알래스카 경계 분쟁은 미국-영국-캐나다 간의 구체적 연도·사건(클론다이크 금광, 1903년 중재)으로 잘 문서화돼 지역적이며 사실에 기반함.",
+      "avg": 7.0,
+      "flags": []
+    }
   },
   {
     "topic": "에세키보 지역 영토 분쟁",
@@ -70792,7 +71363,18 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 5,
+      "supported": 4,
+      "reason": "스페인과는 무관한 가이아나·베네수엘라 분쟁이라 주제와 국가가 맞지 않아 독특성 낮음, 면적·파리 중재 판정 등 구체적 수치는 있지만 근거 문서가 남미 지역이라 신뢰도 낮음",
+      "avg": 3.7,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 4 (평균 3.7) 스페인과는 무관한 가이아나·베네수엘라 분쟁이라 주제와 국가가 맞지 않아 독특성 낮음, 면적·파리 중재 판정 등 구체적 수치는 있지만 근거 문서가 남미 지역이라 신뢰도 낮음"
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -70808,7 +71390,21 @@
     "verify_note": "Regional variations of barbecue",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 1,
+      "concrete": 2,
+      "supported": 2,
+      "reason": "‘볼리비아 바베큐는 소스와 오일을 두 번 바른다’는 구체적 관행을 문서에서 찾을 수 없으며 일반적인 바베큐 변형 설명에 불과해 구체성·지원 부족",
+      "avg": 1.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 1/concrete 2/supported 2 (평균 1.7) ‘볼리비아 바베큐는 소스와 오일을 두 번 바른다’는 구체적 관행을 문서에서 찾을 수 없으며 일반적인 바베큐 변형 설명에 불과해 구체성·지원 부족 · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "topic": "나이지리아 길거리 바베큐와 열대과일을 한 입에",
@@ -70824,7 +71420,20 @@
     "verify_note": "Nigerian cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "verified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 3,
+      "reason": "나이지리아 길거리 바베큐와 열대과일 조합은 일반적인 식문화 설명에 기반하지만, 특정 조합이 흔하다는 근거가 부족해 점수 낮음",
+      "avg": 2.7,
+      "flags": [
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 3 (평균 2.7) 나이지리아 길거리 바베큐와 열대과일 조합은 일반적인 식문화 설명에 기반하지만, 특정 조합이 흔하다는 근거가 부족해 점수 낮음 · 규칙: 수치·원어 표기 같은 구체 정보 없음"
   },
   {
     "country": "여행, 크루즈, 세계문화, 관광심리",
@@ -71478,6 +72087,16 @@
     "infographic": {
       "on": false,
       "none": true
+    },
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "일본 차 도구 5대 카테고리와 손님이 직접 준비한 물건은 포함되지 않는 규칙은 문서에 명시돼 있어 구체·지원 모두 강함, 주제도 일본 고유",
+      "avg": 5.0,
+      "flags": []
     }
   },
   {
@@ -71494,7 +72113,18 @@
     "verify_note": "Quinoa",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "unverified"
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "퀴노아의 영양 성분·안데스 기원·역사적 사용 등 고유명사·수치가 풍부하고 문서와 일치, 남미 특수 주제로 독특함 높음",
+      "avg": 4.7,
+      "flags": []
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 퀴노아의 영양 성분·안데스 기원·역사적 사용 등 고유명사·수치가 풍부하고 문서와 일치, 남미 특수 주제로 독특함 높음"
   },
   {
     "topic": "파타야 수상 시장은 세계 최대 인공 수상 시장",
@@ -71510,7 +72140,17 @@
     "verify_note": "Pattaya Floating Market",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 5,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "파타야 수상 시장이 세계 최대 인공 수상 시장이라는 구체적 면적·비용·연도 등 사실이 문서와 일치, 태국 고유 주제로 매우 적합",
+      "avg": 5.0,
+      "flags": []
+    }
   },
   {
     "topic": "에티오피아와 에리트레아에서 매일 열리는 커피 의식",
@@ -71526,7 +72166,17 @@
     "verify_note": "Coffee ceremony of Ethiopia and Eritrea",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 9,
+      "concrete": 8,
+      "supported": 8,
+      "reason": "에티오피아·에리트레아만의 일상 커피 의식·꽃·차 제공 등 구체적 요소가 많고, 발췌문과 일치함",
+      "avg": 8.3,
+      "flags": []
+    }
   },
   {
     "topic": "아라비아 커피는 쓴맛과 향신료가 특징인 손님 맞이 문화",
@@ -71542,7 +72192,19 @@
     "verify_note": "Arabic coffee",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 7,
+      "supported": 7,
+      "reason": "아라비아 전역에 퍼진 커피 문화라 일반적이지만 카다멈·달라·핀잔 등 구체적 설명이 있음",
+      "avg": 7.0,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
   },
   {
     "topic": "바틱은 왁스로 색을 막아 독특한 무늬를 만드는 전통 염색법",
@@ -71558,7 +72220,17 @@
     "verify_note": "Batik",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "바틱의 왁스 저항 염색 과정·다중 사이클·패턴 의미 등 상세하고 문서와 일치",
+      "avg": 8.3,
+      "flags": []
+    }
   },
   {
     "topic": "스코틀랜드 고지대에서 열리는 전통 체력 경기, 배그파이프(bagpipes)와 킬트(kilt)와 무거운 돌 던지기가 함께한다.",
@@ -71574,7 +72246,19 @@
     "verify_note": "Highland games",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 6,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "하이랜드 게임은 스코틀랜드 고유지만 ‘배그파이프와 킬트와 돌 던지기’는 일반적 설명이며, 반전 내용은 근거 부족",
+      "avg": 6.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
   },
   {
     "topic": "멕시코 전통 무용에 쓰이는 마스크는 식민지 시대 금지 시도에도 살아남았다.",
@@ -71590,7 +72274,19 @@
     "verify_note": "Mexican mask-folk art",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "멕시코 마스크의 선사시대 기원·식민지 금지 시도 등 구체적이며 문서와 일치",
+      "avg": 7.7,
+      "flags": [
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
   },
   {
     "topic": "브루스 챗윈(Bruce Chatwin)이 1987년 쓴 『The Songlines』는 호주 원주민의 노래길을 소개한다.",
@@ -71606,7 +72302,17 @@
     "verify_note": "The Songlines",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "책 자체는 호주 원주민 노래길을 다루지만 저자 경험에 기반한 서술이라 구체성·지원이 다소 제한적",
+      "avg": 6.7,
+      "flags": []
+    }
   },
   {
     "topic": "미국 크리스마스 마켓, 독일어 ‘Markt’를 ‘market’으로 바꾼다",
