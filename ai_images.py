@@ -28,14 +28,17 @@ def enabled(item=None):
     return os.environ.get("AI_IMAGES", "0") == "1" or bool(item and item.get("ai_images"))
 
 
+def cf_missing():
+    return [k for k in ("CF_ACCOUNT_ID", "CF_API_TOKEN") if not os.environ.get(k, "").strip()]
+
+
 def provider():
+    """기본은 Cloudflare만. Gemini 는 무료 키로 이미지 생성이 막히는 경우가 많아 AI_IMAGE_PROVIDER=gemini 로 명시했을 때만 쓴다"""
     p = os.environ.get("AI_IMAGE_PROVIDER", "").strip().lower()
-    if p in ("cloudflare", "gemini"):
-        return p
-    if os.environ.get("CF_ACCOUNT_ID", "").strip() and os.environ.get("CF_API_TOKEN", "").strip():
-        return "cloudflare"
-    if os.environ.get("GEMINI_API_KEY", "").strip():
+    if p == "gemini" and os.environ.get("GEMINI_API_KEY", "").strip():
         return "gemini"
+    if not cf_missing():
+        return "cloudflare"
     return ""
 
 
@@ -131,7 +134,7 @@ def _gen_gemini(prompt, session):
 def generate_one(prompt, dest, prov=None, session=None):
     prov = prov or provider()
     if not prov:
-        raise RuntimeError("CF_ACCOUNT_ID+CF_API_TOKEN 또는 GEMINI_API_KEY 가 없습니다")
+        raise RuntimeError("Cloudflare 키가 없습니다: " + ", ".join(cf_missing()))
     session = session or requests.Session()
     full = f"{prompt}. {STYLE}"
     last = None
@@ -157,8 +160,9 @@ def fill(item, folder, force=False, scenes=None):
     """장면 이미지를 AI로 만든다. 이미 있는 장면은 force 가 아니면 건드리지 않는다. 성공한 장면 번호 집합을 돌려줌"""
     prov = provider()
     if not prov:
-        print("    [AI이미지] 키가 없어 건너뜁니다 (CF_ACCOUNT_ID/CF_API_TOKEN 또는 GEMINI_API_KEY)")
+        print(f"    [AI이미지] Cloudflare 키가 없어 건너뜁니다. 빠진 환경변수: {', '.join(cf_missing())}")
         return set()
+    print(f"    [AI이미지] 공급자: {prov}")
     prompts = make_prompts(item)
     session = requests.Session()
     done_p = list(item.get("ai_prompts_done") or [])
@@ -216,12 +220,12 @@ def main():
         save_db(db)
         return
     if not provider():
-        raise SystemExit("AI 이미지 키가 없습니다: CF_ACCOUNT_ID + CF_API_TOKEN 또는 GEMINI_API_KEY 환경변수를 설정하고 UI를 다시 실행하세요")
+        raise SystemExit(f"Cloudflare 키가 없습니다. UI를 실행한 환경에 빠진 환경변수: {', '.join(cf_missing())} (설정 후 UI를 완전히 껐다 켜세요)")
     ok = fill(item, visual_dir(base, a.index, item), force=a.force or a.scene is not None,
               scenes={a.scene} if a.scene else None)
     save_db(db)
     if not provider():
-        raise SystemExit("AI 이미지 키가 없습니다: CF_ACCOUNT_ID + CF_API_TOKEN 또는 GEMINI_API_KEY 환경변수를 설정하고 UI를 다시 실행하세요")
+        raise SystemExit(f"Cloudflare 키가 없습니다. UI를 실행한 환경에 빠진 환경변수: {', '.join(cf_missing())} (설정 후 UI를 완전히 껐다 켜세요)")
     raise SystemExit(0 if ok else 1)
 
 
