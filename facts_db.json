@@ -69420,9 +69420,9 @@
   },
   {
     "topic": "역대 가장 빠른 미국 건조 초대형 여객선 SS United States",
-    "hook": "대서양을 가장 빨리 가로지른 배가 전쟁용 군함으로 변신할 수 있다니!",
-    "body": "SS United States(SS United States)는 1950·1951년에 미국에서 완전 건조된 가장 큰 여객선이며, 1952년 첫 항해 이후 양방향 대서양 횡단 최고 평균 속도로 블루리본을 차지했다. 설계자 윌리엄 프랜시스 깁스(William Francis Gibbs)는 전시 시 군함으로 전환될 수 있도록 설계했다.",
-    "twist": "그럼에도 실제 전쟁에 투입된 적은 한 번도 없다.",
+    "hook": "시속 66km로 대서양을 질주한 여객선! 하지만 이 배를 무릎 꿇린 경쟁자가 등장합니다.",
+    "body": "1952년 첫 항해에서 대서양 횡단 기록을 세운 SS United States. 놀라운 속도 뒤에는 당시 사람들이 몰랐던 또 하나의 비밀이 있었습니다.",
+    "twist": "이 배는 단순한 여객선이 아니었습니다. 전쟁이 나면 최대 14,000명의 병력을 실어 나르는 군용 수송선으로 바뀌도록 설계됐습니다. 실제 전쟁에는 투입되지 않았지만, 대서양 횡단 정기 여객선 최고 속도 기록은 지금까지도 유지되고 있습니다. 그런데 이 기록을 깨뜨리지 못한 건 경쟁자가 사라졌기 때문입니다. 제트 여객기가 등장하면서 승객들이 비행기로 이동했고, 빠른 여객선을 만들 경쟁 자체가 사라진 것이죠. 결국 1969년 운항을 중단한 이 배는 2026년 11월 11일 플로리다 앞바다에서 인공 암초가 됐습니다. 기록을 간직한 채 말이죠.",
     "caveat": "이 기록은 2026년까지 확인된 공식 자료에 기반한다.",
     "country": "미국",
     "theme": "언어/이름",
@@ -69434,35 +69434,50 @@
     "created_at": "2026-11-13T14:19:23.841580+00:00",
     "status": "scripted",
     "need": "curiosity",
-    "narration": "대서양을 가장 빨리 가로지른 배가 전쟁용 군함으로 변신할 수 있다니! SS United States는 1950·1951년에 완전 건조된 미국 최대 규모의 여객선입니다. 1952년 첫 항해부터 양방향 대서양 횡단에서 평균 속도 최고 기록을 세우며 블루리본을 차지했죠. 설계자 윌리엄 프랜시스 깁스는 전시 상황에 대비해 선체와 엔진을 군함으로 전환할 수 있게 설계했습니다. 그런데 실제 전쟁에 투입된 적은 한 번도 없습니다. 그럼에도 불구하고 이 기록은 2026년까지 확인된 공식 자료에 기반한 것이며, 당시 기술과 전략적 목적을 보여주는 흥미로운 사례로 남아 있습니다. 결국 가장 빠른 여객선이면서도 전쟁에 쓰이지 않은 역사는, 설계 의도와 실제 운용 사이의 차이를 잘 드러내는 하나의 이야기입니다.",
-    "title_line1": "대서양 최速 여객선",
-    "title_line2": "전쟁함으로 변신?",
+    "narration": "시속 66km로 대서양을 질주한 여객선! 하지만 이 배를 무릎 꿇린 경쟁자가 등장합니다. 1952년,  첫 항해에서 SS United States는 대서양을 3일 10시간 40분 만에 횡단했습니다. 평균 35.59노트! 당시 기록 보유자 퀸 메리보다 빨랐습니다. 도대체 왜 이렇게 빨랐을까요? 그 숨겨진 비밀은 전쟁이 나면 군용 수송선으로 바꿔 최대 14,000명의 병력을 실어 빠르게 나르도록 설계된 것이었습니다. 실제 전쟁에는 투입되지 않았지만, 대서양 횡단 정기 여객선 최고 속도 기록은 지금까지도 유지되고 있습니다. 군용으로 설계되어 기술력이 엄청나서 일까요? 아닙니다. 기록이 깨지지 않는 이유는 1958년 제트 여객기가 등장하면서 승객들이 비행기로 이동했고, 빠른 여객선을 만들 이유 자체가 사라졌기 때문입니다. 결국 1969년 운항을 중단한 이 배는 2026년 11월 11일 플로리다 앞바다에서 인공 암초가 됐습니다. 대서양 횡단 최고 기록을 간직한 채 말이죠.",
+    "title_line1": "미국 초대형 여객선",
+    "title_line2": "전쟁용 설계였을까?",
     "highlights": [
       {
         "s": 1,
-        "text": "전쟁용 *군함* 변신!"
+        "text": "시속 66km"
+      },
+      {
+        "s": 2,
+        "text": "대서양 횡단 3일 10시간"
       },
       {
         "s": 3,
-        "text": "대서양 최고 *속도*"
+        "text": "숨겨진 군사적 목적"
       },
       {
         "s": 4,
-        "text": "전시 대비 *설계*"
+        "text": "최대 14,000명 수송"
       },
       {
         "s": 5,
-        "text": "전쟁 투입 *없음*"
+        "text": "제트기 등장으로 경쟁 종료"
+      },
+      {
+        "s": 6,
+        "text": "1969년 운항 중단"
+      },
+      {
+        "s": 7,
+        "text": "2026년 인공 암초"
       }
     ],
     "image_queries": [
-      "warship conversion ship",
-      "SS United States ocean liner",
-      "Atlantic ocean ship speed",
-      "SS United States military design",
-      "SS United States idle dock",
-      "SS United States historic vessel",
-      "SS United States passenger ship"
+      "SS United States ocean liner sailing Atlantic",
+      "SS United States 1952 maiden voyage",
+      "SS United States powerful engines and ship design",
+      "SS United States military troop transport conversion design",
+      "Boeing 707 transatlantic passenger service 1958",
+      "SS United States abandoned Philadelphia pier",
+      "SS United States artificial reef sinking Florida November 2026",
+      "SS United States",
+      "United States landmark",
+      "United States culture"
     ],
     "scene_count": 10,
     "infographic": {
@@ -69490,7 +69505,96 @@
         }
       ],
       "none": false
-    }
+    },
+    "narration_original": "대서양을 가장 빨리 가로지른 배가 전쟁용 군함으로 변신할 수 있다니! SS United States는 1950·1951년에 완전 건조된 미국 최대 규모의 여객선입니다. 1952년 첫 항해부터 양방향 대서양 횡단에서 평균 속도 최고 기록을 세우며 블루리본을 차지했죠. 설계자 윌리엄 프랜시스 깁스는 전시 상황에 대비해 선체와 엔진을 군함으로 전환할 수 있게 설계했습니다. 그런데 실제 전쟁에 투입된 적은 한 번도 없습니다. 그럼에도 불구하고 이 기록은 2026년까지 확인된 공식 자료에 기반한 것이며, 당시 기술과 전략적 목적을 보여주는 흥미로운 사례로 남아 있습니다. 결국 가장 빠른 여객선이면서도 전쟁에 쓰이지 않은 역사는, 설계 의도와 실제 운용 사이의 차이를 잘 드러내는 하나의 이야기입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_queries_done": [
+      "SS United States ocean liner sailing Atlantic",
+      "SS United States 1952 maiden voyage",
+      "SS United States powerful engines and ship design",
+      "SS United States military troop transport conversion design",
+      "Boeing 707 transatlantic passenger service 1958",
+      "SS United States abandoned Philadelphia pier",
+      "SS United States artificial reef sinking Florida November 2026",
+      "SS United States",
+      "United States landmark",
+      "United States culture"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tho-Ge",
+        "page": "https://pixabay.com/photos/sailboat-sea-waves-atlantic-ocean-8582847/",
+        "id": 8582847
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Michael_Kastelic",
+        "page": "https://pixabay.com/photos/entrace-rotating-door-building-4614731/",
+        "id": 4614731
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "k_r_craft",
+        "page": "https://pixabay.com/photos/bridge-silhouette-sunset-dusk-402943/",
+        "id": 402943
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/men-honor-guard-soldiers-67636/",
+        "id": 67636
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "b1-foto",
+        "page": "https://pixabay.com/photos/plane-klm-boeing-737-jet-2160450/",
+        "id": 2160450
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/dock-fog-lake-jetty-mist-1835410/",
+        "id": 1835410
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "pixexid",
+        "page": "https://pixabay.com/photos/panorama-miami-city-skyline-2117310/",
+        "id": 2117310
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Leonhard_Niederwimmer",
+        "page": "https://pixabay.com/photos/nyc-new-york-city-america-usa-city-4854718/",
+        "id": 4854718
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/des-moines-iowa-state-capitol-1731557/",
+        "id": 1731557
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "hurk",
+        "page": "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
+        "id": 458321
+      }
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
