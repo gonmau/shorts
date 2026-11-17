@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-17 23:12:37 (KST) · 기록 1945건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-17 23:13:00 (KST) · 기록 1947건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
-| ai_images | 2 | 5 | 2분 8초 |
+| ai_images | 3 | 5 | 2분 13초 |
 | ai_prompts | 7 | 0 | 6초 |
 | apply_review | 190 | 0 | 49초 |
 | approve | 52 | 0 | 12초 |
@@ -34,7 +34,7 @@
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
-| update_description | 5 | 0 | 15초 |
+| update_description | 6 | 0 | 17초 |
 | upload_to_youtube | 28 | 0 | 15분 9초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
@@ -46,6 +46,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 23:12 | PC | update_description | update_description.py --indexes 663 | ✅ | 2초 |  |
+| 23:12 | PC | ai_images | ai_images.py --index 663 --scene 1 | ✅ | 4초 |  |
 | 23:12 | PC | update_description | update_description.py --indexes 663 | ✅ | 3초 |  |
 | 23:12 | PC | ai_images | ai_images.py --index 663 --scene 2 | ✅ | 5초 |  |
 | 22:57 | PC | ai_images | ai_images.py --index 663 --scene 2 | ❌ failed | 0초 | Cloudflare 키가 없습니다. UI를 실행한 환경에 빠진 환경변수: CF_ACCOUNT_ID, CF_API_TOKEN (설정 후 UI를 완전히 껐다 켜세요) |
