@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-17 22:51:20 (KST) · 기록 1939건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-17 22:54:17 (KST) · 기록 1941건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
-| ai_images | 1 | 3 | 2분 0초 |
+| ai_images | 1 | 4 | 2분 2초 |
 | ai_prompts | 7 | 0 | 6초 |
 | apply_review | 190 | 0 | 49초 |
 | approve | 52 | 0 | 12초 |
@@ -38,7 +38,7 @@
 | upload_to_youtube | 28 | 0 | 15분 9초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 117 | 6 | 12시간 17분 |
-| 코드업데이트 | 112 | 0 | 0초 |
+| 코드업데이트 | 113 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -46,6 +46,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:54 | PC | ai_images | ai_images.py --index 663 --scene 2 | ❌ failed | 2초 |   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing detail |
+| 22:52 | PC | 코드업데이트 | gonmau/shorts: 2개 (ai_images.py, generate_script.py) | ✅ |  |  |
 | 22:51 | PC | ai_images | ai_images.py --index 663 --scene 2 | ❌ failed | 39초 |     scene_02: AI 생성 실패 (RuntimeError: 한도 초과(429)) -> 검색 사진으로 대체 |
 | 22:46 | PC | upload_to_youtube | upload_to_youtube.py --indexes 663 --daily-max 20 | ✅ | 19초 |  |
 | 22:46 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 663 | ✅ | 1초 |  |
