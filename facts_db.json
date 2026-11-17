@@ -69432,7 +69432,65 @@
     "verify_note": "SS United States",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "verified"
+    "status": "scripted",
+    "need": "curiosity",
+    "narration": "대서양을 가장 빨리 가로지른 배가 전쟁용 군함으로 변신할 수 있다니! SS United States는 1950·1951년에 완전 건조된 미국 최대 규모의 여객선입니다. 1952년 첫 항해부터 양방향 대서양 횡단에서 평균 속도 최고 기록을 세우며 블루리본을 차지했죠. 설계자 윌리엄 프랜시스 깁스는 전시 상황에 대비해 선체와 엔진을 군함으로 전환할 수 있게 설계했습니다. 그런데 실제 전쟁에 투입된 적은 한 번도 없습니다. 그럼에도 불구하고 이 기록은 2026년까지 확인된 공식 자료에 기반한 것이며, 당시 기술과 전략적 목적을 보여주는 흥미로운 사례로 남아 있습니다. 결국 가장 빠른 여객선이면서도 전쟁에 쓰이지 않은 역사는, 설계 의도와 실제 운용 사이의 차이를 잘 드러내는 하나의 이야기입니다.",
+    "title_line1": "대서양 최速 여객선",
+    "title_line2": "전쟁함으로 변신?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전쟁용 *군함* 변신!"
+      },
+      {
+        "s": 3,
+        "text": "대서양 최고 *속도*"
+      },
+      {
+        "s": 4,
+        "text": "전시 대비 *설계*"
+      },
+      {
+        "s": 5,
+        "text": "전쟁 투입 *없음*"
+      }
+    ],
+    "image_queries": [
+      "warship conversion ship",
+      "SS United States ocean liner",
+      "Atlantic ocean ship speed",
+      "SS United States military design",
+      "SS United States idle dock",
+      "SS United States historic vessel",
+      "SS United States passenger ship"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "SS United States 연혁",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1950-51",
+          "value": null,
+          "text": "완전 건조"
+        },
+        {
+          "label": "1952",
+          "value": null,
+          "text": "첫 항해·블루리본"
+        },
+        {
+          "label": "2026",
+          "value": null,
+          "text": "기록 확인"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
