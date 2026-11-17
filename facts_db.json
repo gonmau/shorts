@@ -69435,8 +69435,8 @@
     "status": "scripted",
     "need": "curiosity",
     "narration": "시속 66km로 대서양을 질주한 여객선! 하지만 이 배를 무릎 꿇린 경쟁자가 등장합니다. 1952년,  첫 항해에서 SS United States는 대서양을 3일 10시간 40분 만에 횡단했습니다. 평균 35.59노트! 당시 기록 보유자 퀸 메리보다 빨랐습니다. 도대체 왜 이렇게 빨랐을까요? 그 숨겨진 비밀은 전쟁이 나면 군용 수송선으로 바꿔 최대 14,000명의 병력을 실어 빠르게 나르도록 설계된 것이었습니다. 실제 전쟁에는 투입되지 않았지만, 대서양 횡단 정기 여객선 최고 속도 기록은 지금까지도 유지되고 있습니다. 군용으로 설계되어 기술력이 엄청나서 일까요? 아닙니다. 기록이 깨지지 않는 이유는 1958년 제트 여객기가 등장하면서 승객들이 비행기로 이동했고, 빠른 여객선을 만들 이유 자체가 사라졌기 때문입니다. 결국 1969년 운항을 중단한 이 배는 2026년 11월 11일 플로리다 앞바다에서 인공 암초가 됐습니다. 대서양 횡단 최고 기록을 간직한 채 말이죠.",
-    "title_line1": "미국 초대형 여객선",
-    "title_line2": "전쟁용 설계였을까?",
+    "title_line1": "시속 66km 여객선의 숨겨진 비밀",
+    "title_line2": "전쟁이 나면 14,000명을 태운다?",
     "highlights": [
       {
         "s": 1,
@@ -69474,10 +69474,7 @@
       "SS United States military troop transport conversion design",
       "Boeing 707 transatlantic passenger service 1958",
       "SS United States abandoned Philadelphia pier",
-      "SS United States artificial reef sinking Florida November 2026",
-      "SS United States",
-      "United States landmark",
-      "United States culture"
+      "SS United States artificial reef sinking Florida November 2026"
     ],
     "scene_count": 10,
     "infographic": {
@@ -69594,7 +69591,11 @@
         "id": 458321
       }
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
