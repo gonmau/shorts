@@ -1943,3 +1943,5 @@
 {"id": "1794923864945-454032", "time": "2026-11-17 22:57:44", "channel": "KO", "source": "PC", "kind": "ai_images", "title": "ai_images.py --index 663 --scene 2", "status": "failed", "secs": 0.6, "detail": "Cloudflare 키가 없습니다. UI를 실행한 환경에 빠진 환경변수: CF_ACCOUNT_ID, CF_API_TOKEN (설정 후 UI를 완전히 껐다 켜세요)"}
 {"id": "1794924741459-38d68c", "time": "2026-11-17 23:12:21", "channel": "KO", "source": "PC", "kind": "ai_images", "title": "ai_images.py --index 663 --scene 2", "status": "success", "secs": 5.6, "detail": ""}
 {"id": "1794924744835-f51500", "time": "2026-11-17 23:12:24", "channel": "KO", "source": "PC", "kind": "update_description", "title": "update_description.py --indexes 663", "status": "success", "secs": 3.2, "detail": ""}
+{"id": "1794924763134-be8cc3", "time": "2026-11-17 23:12:43", "channel": "KO", "source": "PC", "kind": "ai_images", "title": "ai_images.py --index 663 --scene 1", "status": "success", "secs": 4.1, "detail": ""}
+{"id": "1794924765661-70ea2b", "time": "2026-11-17 23:12:45", "channel": "KO", "source": "PC", "kind": "update_description", "title": "update_description.py --indexes 663", "status": "success", "secs": 2.4, "detail": ""}
