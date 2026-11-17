@@ -1950,3 +1950,4 @@
 {"id": "1794925384400-d9a34f", "time": "2026-11-17 23:23:04", "channel": "KO", "source": "PC", "kind": "ai_images", "title": "ai_images.py --index 665 --scene 3", "status": "success", "secs": 4.2, "detail": ""}
 {"id": "1794925486956-a56535", "time": "2026-11-17 23:24:46", "channel": "KO", "source": "PC", "kind": "ai_images", "title": "ai_images.py --index 665 --scene 4", "status": "success", "secs": 8.3, "detail": ""}
 {"id": "1794952759079-487d7c", "time": "2026-11-18 06:59:19", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #124", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/44181808863"}
+{"id": "1794957832212-f0c799", "time": "2026-11-18 08:23:52", "channel": "KO", "source": "Actions", "kind": "쇼츠", "title": "culture-shorts-pipeline #125", "status": "success", "secs": null, "detail": "https://github.com/gonmau/shorts/actions/runs/44197724753"}
