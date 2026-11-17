@@ -69591,7 +69591,19 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0663_미국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A sleek 1950s ocean liner cutting through a stormy Atlantic sea at dawn, viewed from a low, forward angle, with a rival ship's silhouette looming in the distance.",
+      "The SS United States gliding across a calm Atlantic sunrise, captured from a high aerial perspective, showing its streamlined hull completing a record crossing in three days.",
+      "Close-up side view of the SS United States' massive propellers turning rapidly, water splashing, emphasizing its average speed of 35.59 knots against a clear blue sky.",
+      "Interior of the ship's deck showing military-style troop berths and cargo ramps, photographed from a diagonal angle to highlight its wartime transport design.",
+      "The SS United States sailing alone on a tranquil ocean at sunset, viewed from a wide horizon shot, symbolizing its unbeaten transatlantic passenger speed record.",
+      "Detailed view of the ship's advanced turbine engines and sleek superstructure, taken from a low rear angle, showcasing cutting‑edge 1950s engineering.",
+      "A stark contrast scene of a quiet, empty passenger lounge with modern jet aircraft silhouettes in the distant sky, shot from a wide angle to illustrate shifting travel preferences.",
+      "A vintage newspaper headline about jet airliners hovering over a bustling 1958 airport, captured from a high angle, while the SS United States rests idle in harbor.",
+      "The rusted hull of the SS United States grounded on an artificial reef off Florida, seen from a dramatic low underwater perspective with marine life surrounding it.",
+      "A serene underwater tableau of the sunken SS United States, illuminated by shafts of light, with a lone dolphin swimming past, preserving its transatlantic record legacy."
+    ]
   },
   {
     "topic": "파라오가 꼬리를 달고 행진?",
