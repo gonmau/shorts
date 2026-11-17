@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-17 22:00:51 (KST) · 기록 1920건 · 소재 695개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-17 22:02:20 (KST) · 기록 1921건 · 소재 695개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | -c | 60 | 0 | 25분 58초 |
 | DB커밋 | 129 | 0 | 0초 |
-| ai_images | 1 | 1 | 41초 |
+| ai_images | 1 | 2 | 1분 20초 |
 | ai_prompts | 7 | 0 | 6초 |
 | apply_review | 187 | 0 | 48초 |
 | approve | 52 | 0 | 12초 |
@@ -46,6 +46,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:02 | PC | ai_images | ai_images.py --index 663 --scene 2 | ❌ failed | 39초 |     scene_02: AI 생성 실패 (RuntimeError: 한도 초과(429)) -> 검색 사진으로 대체 |
 | 22:00 | PC | fetch_images | fetch_images.py --limit 1 --start 663 --any | ✅ | 37초 |  |
 | 22:00 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 663 | ✅ | 7초 |  |
 | 21:59 | PC | apply_review | apply_review.py | ✅ | 1초 |  |
