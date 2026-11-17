@@ -103,7 +103,7 @@ def _gen_cloudflare(prompt, session):
     r = session.post(f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/{CF_MODEL}",
                      headers={"Authorization": f"Bearer {tok}"}, json={"prompt": prompt, "steps": 6}, timeout=120)
     if r.status_code == 429:
-        raise RuntimeError("한도 초과(429)")
+        raise RuntimeError("Cloudflare 한도 초과(429): " + r.text[:150])
     r.raise_for_status()
     b64 = (r.json().get("result") or {}).get("image")
     if not b64:
@@ -118,7 +118,7 @@ def _gen_gemini(prompt, session):
                      json={"contents": [{"parts": [{"text": prompt}]}],
                            "generationConfig": {"responseModalities": ["IMAGE"]}}, timeout=120)
     if r.status_code == 429:
-        raise RuntimeError("한도 초과(429)")
+        raise RuntimeError("Gemini 429 (이미지 생성은 무료 키로는 한도 0일 수 있음): " + r.text[:200])
     r.raise_for_status()
     for cand in r.json().get("candidates", []):
         for p in (cand.get("content") or {}).get("parts", []):
