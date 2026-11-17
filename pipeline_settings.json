@@ -13,5 +13,5 @@
  "font_ovl": "dohyeon",
  "info_off": false,
  "credit_off": false,
- "ai_img": false
+ "ai_img": true
 }
