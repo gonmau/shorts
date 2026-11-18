@@ -56929,7 +56929,7 @@
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
     "status": "scripted",
-    "narration": "천 개가 넘는 등불이 하늘을 가득 메우면, 당신의 소원은 어디까지 날아갈까요?  \n이 빛은 매년 라나 달력 두 번째 달 보름달에 맞춰 3일간 열리는 Yi Peng 축제에서 시작됩니다.  \n북부 태국 치앙마이 거리엔 수천 개의 khom loi, 즉 하늘 등불이 한꺼번에 올라갑니다.  \n사람들은 등불을 띄우며 불운을 씻고, 조용히 소원을 속삭입니다.  \n그 빛이 사라지는 순간, 일상의 무게가 잠시 가벼워지는 느낌을 받죠.  \n하지만 등불이 바람에 휘날리면, 소원도 함께 흩어질까 하는 고민이 듭니다.  \n현장에서 직접 등불을 잡아보면, 그 무게와 따뜻함을 느낄 수 있습니다.  \n여러분은 어떤 소원을 담아 하늘에 띄우고 싶으신가요?  \n보름달 밤, 수천 개의 등불이 하늘을 물들일 때, 소원은 빛과 함께 멀리 날아갑니다.",
+    "narration": "천 개의 등불이 하늘을 가득 메우면, 소원이 날아간다고 믿는 사람들, 바로 여기 치앙마이입니다. 매년 라나 달력 열두 번째 달 보름달에 맞춰 3일간 열리는 Yi Peng 축제는 북부 태국의 전통 행사로, 수천 개의 khom loi, 즉 하늘 등불을 날려 불운을 씻고 소원을 전합니다. 이 축제는 라나 달력의 보름달 시기에 진행된다는 점이 특징이에요. 등불이 밝히는 밤하늘을 보며 사람들은 각자의 소원을 속삭이고, 그 빛이 사라질 때까지 잠시나마 일상의 무게를 내려놓습니다. 치앙마이와 주변에서도 전통이 이어지지만, 수코타이 등 다른 지역에서도 등불을 띄우는 행사가 열리곤 합니다.",
     "cross_checked": true,
     "cross_sources": 0,
     "cross_model": "openai/gpt-oss-120b",
@@ -59274,7 +59274,7 @@
     "verify_note": "Russian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59287,8 +59287,7 @@
     },
     "curate_score": 3,
     "curate_why": "음식 이름 변천, 흥미 약함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 음식 이름 변천, 흥미 약함"
+    "prev_status": "verified"
   },
   {
     "topic": "모로코에 스페인 영토가 있다",
@@ -59796,7 +59795,7 @@
     "verify_note": "Ramadan in the United Arab Emirates",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59809,8 +59808,7 @@
     },
     "curate_score": 4,
     "curate_why": "라마단 파티, 문화적이지만 논쟁 약함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 라마단 파티, 문화적이지만 논쟁 약함"
+    "prev_status": "verified"
   },
   {
     "topic": "영장류의 무릎 꿇기 행동",
@@ -59825,7 +59823,7 @@
     "verify_note": "Kneeling",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:59.552099+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59840,8 +59838,7 @@
     },
     "curate_score": 5,
     "curate_why": "침팬지 무릎꿇기, 동물 행동·흥미",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 침팬지 무릎꿇기, 동물 행동·흥미"
+    "prev_status": "verified"
   },
   {
     "topic": "미국 영토는 두 조각으로 나뉜다",
@@ -60311,7 +60308,7 @@
     "verify_note": "Fastelavn",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:06.416057+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60326,8 +60323,7 @@
     },
     "curate_score": 3,
     "curate_why": "사탕 전통, 가벼운 문화",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 사탕 전통, 가벼운 문화"
+    "prev_status": "verified"
   },
   {
     "topic": "이집트 거리의 주식, eish baladi 피타",
@@ -60342,7 +60338,7 @@
     "verify_note": "Egyptian cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60355,8 +60351,7 @@
     },
     "curate_score": 2,
     "curate_why": "피타 빵, 일반 음식 소개",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 2점: 피타 빵, 일반 음식 소개"
+    "prev_status": "verified"
   },
   {
     "topic": "벨기에에서 시작되는 All Saints' Day 의식",
@@ -60371,7 +60366,7 @@
     "verify_note": "All Saints' Day",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:33.533207+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60386,8 +60381,7 @@
     },
     "curate_score": 2,
     "curate_why": "All Saints' Day 의식, 일반 종교",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 2점: All Saints' Day 의식, 일반 종교"
+    "prev_status": "verified"
   },
   {
     "topic": "페루(Peru) 와인 축제",
@@ -60466,7 +60460,7 @@
     "verify_note": "Patani Malays",
     "confidence": "source",
     "created_at": "2026-11-03T17:54:58.863093+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60481,8 +60475,7 @@
     },
     "curate_score": 3,
     "curate_why": "Patani 말레이인, 문화적이지만 충격 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: Patani 말레이인, 문화적이지만 충격 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "라오스(Laos) 사람들의 연간 171kg 찹쌀밥 소비",
@@ -60669,7 +60662,7 @@
     "verify_note": "Golu (festival)",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60684,8 +60677,7 @@
     },
     "curate_score": 4,
     "curate_why": "인형 전시와 저주, 구체성 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 인형 전시와 저주, 구체성 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "죽음 기념일, 생일의 반대",
@@ -60700,7 +60692,7 @@
     "verify_note": "Death anniversary",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60716,8 +60708,7 @@
     },
     "curate_score": 5,
     "curate_why": "죽음 기념일이라는 이색적 반전",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 죽음 기념일이라는 이색적 반전"
+    "prev_status": "verified"
   },
   {
     "topic": "부활절 아침 일출 예배와 여성의 모자",
@@ -60732,7 +60723,7 @@
     "verify_note": "Easter traditions",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:19.868149+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60747,8 +60738,7 @@
     },
     "curate_score": 4,
     "curate_why": "부활절 의식, 시각은 있으나 충격 약함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 부활절 의식, 시각은 있으나 충격 약함"
+    "prev_status": "verified"
   },
   {
     "topic": "미국 국기의 별과 줄 배치 비밀",
@@ -61534,7 +61524,7 @@
     "verify_note": "Mourning",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61550,8 +61540,7 @@
     },
     "curate_score": 4,
     "curate_why": "장례식 금기지만 일반화 느낌",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 장례식 금기지만 일반화 느낌"
+    "prev_status": "verified"
   },
   {
     "topic": "네팔 뉴아르족의 도시 문명",
@@ -61566,7 +61555,7 @@
     "verify_note": "Newar people",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61582,8 +61571,7 @@
     },
     "curate_score": 4,
     "curate_why": "전통 직업 동시 운영, 강도 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 전통 직업 동시 운영, 강도 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "폴란드 유대인 딸 이름 짓기 의식",
@@ -61598,7 +61586,7 @@
     "verify_note": "Zeved habat",
     "confidence": "source",
     "created_at": "2026-11-06T01:09:57.035458+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61613,8 +61601,7 @@
     },
     "curate_score": 5,
     "curate_why": "이름 짓기 의식, 종교적 긴장감",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 이름 짓기 의식, 종교적 긴장감"
+    "prev_status": "verified"
   },
   {
     "topic": "홀리(Holi) 색 축제",
@@ -61629,7 +61616,7 @@
     "verify_note": "Holi",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61644,8 +61631,7 @@
     },
     "curate_score": 5,
     "curate_why": "홀리 색 물감, 시각적이지만 흔함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 홀리 색 물감, 시각적이지만 흔함"
+    "prev_status": "verified"
   },
   {
     "topic": "네덜란드 카니발(Carnival) 역할 전환 축제",
@@ -61688,7 +61674,7 @@
     "verify_note": "Koliva",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:05.510734+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61703,8 +61689,7 @@
     },
     "curate_score": 5,
     "curate_why": "죽은 이를 위한 음식, 문화적 충격",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 죽은 이를 위한 음식, 문화적 충격"
+    "prev_status": "verified"
   },
   {
     "topic": "스페인·포르투갈 유대인(Spanish and Portuguese Jews)의 독특한 혈통",
@@ -61779,7 +61764,7 @@
     "verify_note": "Rosh Hashanah",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61794,8 +61779,7 @@
     },
     "curate_score": 5,
     "curate_why": "양뿔 나팔, 독특하지만 제한적",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 양뿔 나팔, 독특하지만 제한적"
+    "prev_status": "verified"
   },
   {
     "topic": "툼부카의 치유 춤 Vimbuza",
@@ -61810,7 +61794,7 @@
     "verify_note": "Traditional dances and festivals of the Tumbuka people",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:48.216137+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61825,8 +61809,7 @@
     },
     "curate_score": 5,
     "curate_why": "치유 춤, 시각적이지만 충격 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 치유 춤, 시각적이지만 충격 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "전쟁 반대 승려가 만든 청소년 사회봉사 학교",
@@ -61871,7 +61854,7 @@
     "verify_note": "Italian cuisine",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61886,8 +61869,7 @@
     },
     "curate_score": 4,
     "curate_why": "토마토 없는 파스타, 흥미는 적음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 토마토 없는 파스타, 흥미는 적음"
+    "prev_status": "verified"
   },
   {
     "topic": "필리핀(Philippines) 이라코스(Ilocos) 지역의 인아벨(Inabel) 직물 – 열대 기후에 최적화된 천",
@@ -61902,7 +61884,7 @@
     "verify_note": "Inabel",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61917,8 +61899,7 @@
     },
     "curate_score": 5,
     "curate_why": "열대 기후 최적 천, 시각적 호기심",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 열대 기후 최적 천, 시각적 호기심"
+    "prev_status": "verified"
   },
   {
     "topic": "쿠바(Cuba) 전통 의식인 리베이션(libation) – 식사 전 액체 제물",
@@ -61933,7 +61914,7 @@
     "verify_note": "Libation",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:36.492450+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61948,8 +61929,7 @@
     },
     "curate_score": 4,
     "curate_why": "식전 액체 제물, 일반 의식 수준",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 식전 액체 제물, 일반 의식 수준"
+    "prev_status": "verified"
   },
   {
     "topic": "사모아 CCCS 교인의 비중",
@@ -61964,7 +61944,7 @@
     "verify_note": "Congregational Christian Church of Samoa",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61977,8 +61957,7 @@
     },
     "curate_score": 4,
     "curate_why": "높은 교회 출석률, 충격 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 높은 교회 출석률, 충격 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "펠멘이의 기원과 국가적 위상",
@@ -61993,7 +61972,7 @@
     "verify_note": "Pelmeni",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:58.627875+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -62008,8 +61987,7 @@
     },
     "curate_score": 4,
     "curate_why": "펠멘이 기원, 문화적 이야기",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 펠멘이 기원, 문화적 이야기"
+    "prev_status": "verified"
   },
   {
     "topic": "핀란드 대통령은 태어나자마자 후보가 될 수 있다?",
@@ -62361,7 +62339,7 @@
     "verify_note": "Adyghe Khabze",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -62373,8 +62351,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 7/concrete 6/supported 3 (평균 5.3) 서키야의 ‘아침 인사 의무화’는 지역 특수성이 강하지만, 근거 문서가 없고 구체적 수치·절차가 부족해 신뢰도가 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "오스트리아의 메이폴(Maypole) 전통",
@@ -62389,7 +62366,7 @@
     "verify_note": "Maypole",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:20.577904+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -62404,8 +62381,7 @@
     },
     "curate_score": 4,
     "curate_why": "숫자·대비 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 숫자·대비 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "직접 민주주의, 시민이 직접 법을 만든다",
@@ -62420,7 +62396,7 @@
     "verify_note": "Democracy",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:13.002806+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -62432,8 +62408,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 2 (평균 2.0) ‘뉴질랜드에서 직접 민주주의가 전면 적용된다’는 일반적 정의에 불과하고, 구체적 제도·사례가 없으므로 근거가 약하다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "카자흐스탄(Kazakhstan)의 내륙 국가이면서도 바다를 가진 사실",
@@ -62888,7 +62863,7 @@
     "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
-    "narration": "남중국해 스프라틀리 제도, 한 섬에 6개의 이름이 붙어 있다면 왜일까요? 이곳은 섬·암초·연안으로 이루어졌으며, 브루나이를 제외한 모든 인접국이 일부를 점령하고 있습니다. 국제명 외에도 현지명·중국명·각국이 주장하는 이름까지 최소 여섯 가지가 존재합니다.  \n\n그 이름들은 단순 번역이 아니라 각국의 영유권 주장을 상징합니다. 한 섬을 두고 여러 나라가 서로 다른 이름을 붙이는 것은, “누가 실제로 통제하고 있느냐”를 알리려는 의도와 직결됩니다.  \n\n현재도 외교적 교착과 군사 점령이 이어지면서, 섬들의 명칭은 언제든 바뀔 가능성이 있습니다. 결국 6개의 이름은 이 지역이 얼마나 복잡한 영유권 싸움의 현장인지를 단번에 보여줍니다.  \n\n이처럼 이름 하나에 담긴 국제 갈등, 여러분은 어떻게 생각하시나요?",
+    "narration": "하나의 섬에 무려 6개의 이름이 있다니, 믿기 어려우시죠? 바로 남중국해에 흩어져 있는 스프라틀리 제도입니다. 이곳은 섬·암초·연안 등으로 이루어졌으며, 브루나이를 제외한 모든 국가가 일부를 점령하고 있습니다. 그래서 국제적으로 통용되는 이름 외에도 현지명, 중국명, 그리고 각국이 주장하는 다른 이름까지 최소 여섯 가지가 존재합니다.  \n\n그런데 이 이름들은 단순히 다른 언어라서가 아니라, 각각이 서로 다른 국가의 영유권 주장을 반영하고 있기 때문입니다. 한 섬을 두고 여러 나라가 각각의 이름을 붙이는 것은, 그 섬이 실제로 누가 통제하고 있는지를 표시하려는 의도와도 연결됩니다.  \n\n현재도 외교적 교착 상태와 군사 점령 상황이 지속되고 있어, 이 섬들의 명칭은 언제든 변동될 가능성이 있습니다. 하지만 지금 이 순간, 스프라틀리 제도는 최소 6개의 이름으로 불리며, 그 자체가 복잡한 영유권 싸움의 현장을 그대로 보여주고 있습니다. 결국, 한 섬에 이름이 이렇게 많이 붙어 있는 이유는 바로 ‘누가 그 섬을 차지했는가’를 끊임없이 말하고 싶어 하기 때문이죠.",
     "title_line1": "스위스 스프라틀리",
     "title_line2": "한 섬에 6개 이름",
     "highlights": [
@@ -63053,7 +63028,7 @@
     "verify_note": "Yalda Night",
     "confidence": "source",
     "created_at": "2026-11-07T00:19:00.255171+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -63068,8 +63043,7 @@
     },
     "curate_score": 5,
     "curate_why": "겨울밤·수박 대비",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 겨울밤·수박 대비"
+    "prev_status": "verified"
   },
   {
     "topic": "박사(Doctor) 칭호의 기원과 현대 사용",
@@ -64891,7 +64865,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -64986,8 +64960,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -64995,7 +64968,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -65116,8 +65089,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -65132,7 +65104,7 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼입니다. 모바일 앱은 물론 웹사이트에서도 같은 길이 제한을 적용해 언제든지 제작·시청이 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인(Douyin)이라는 이름으로 서비스됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계에 근거한 내용이며, 플랫폼이 제공하는 다양한 영상 길이와 지역별 서비스 차이를 보여줍니다. 결국 짧은 순간부터 긴 스토리까지, 어디서든 같은 방식으로 즐길 수 있다는 점이 흥미롭지 않나요?",
@@ -65210,8 +65182,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 7/supported 6 (평균 5.3) 틱톡 영상 길이 제한은 전 세계 플랫폼에 적용되는 일반적 사실이라 구별성은 낮지만, 길이 범위·중국·홍콩 차별 서비스 등 구체적 정보가 있어 구체성과 지원은 중간 수준이다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
@@ -65472,7 +65443,7 @@
     "verify_note": "Premanand Maharaj",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -65484,8 +65455,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 3 (평균 4.0) 인도 승려 개인의 일상은 특정 인물에 국한되지만, 구체적 수치·절차가 부족하고 위키피디아 외 확인 가능한 자료가 제한적임. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "스페인(Habsburg Spain)의 제국, 한 왕이 두 대륙을 동시에 통치",
@@ -66358,7 +66328,7 @@
     "verify_note": "Drinking culture of Korea",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "936년, 외국 물 한 방울이 한국 술을 만들게 했습니다. 고려왕조가 936년부터 943년까지 다스리던 시기에 이슬람 세계와 교류하면서 증류된 물이 전해졌고, 그때부터 우리 땅에서 최초의 증류주가 탄생했습니다. 이 술은 단순히 마시는 음료를 넘어, 가족·친구 간의 유대를 굳게 만들고 조상에게 경의를 표하는 의식에서도 중요한 역할을 했습니다.  \n\n그런데 오늘날에도 술은 사람 사이의 관계를 이어주는 핵심 매개체로 남아 있습니다. 회식 자리에서 동료와 이야기를 나누고, 명절엔 제사와 함께 술을 올리며, 작은 모임에서도 한 잔을 나누는 순간이 사람들을 가까이 이어줍니다.  \n\n고려 시대에 시작된 이 전통이 수백 년을 거쳐 현재까지 이어지는 이유는, 술이 단순히 알코올이 아니라 사람과 사람을 연결하는 문화적 다리 역할을 해왔기 때문입니다. 그때의 한 방울 물이 만든 이야기가 오늘도 우리 일상 속에 살아 숨 쉬고 있음을 기억해 주세요.",
     "title_line1": "고려 시대, 이란 물",
     "title_line2": "한 방울이 술을?",
@@ -66397,8 +66367,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 3/supported 2 (평균 2.7) 고려시대 한국 술 문화는 한국 전체에 해당하는 일반적 주제로, 구체적 연도·제도·수치가 부족하고 근거가 위키피디아 요약에 불과함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "노바스코샤가 한때 두 나라까지 포함한 광대한 영토",
@@ -66500,7 +66469,7 @@
     "verify_note": "Argentine pizza",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -66515,8 +66484,7 @@
     },
     "curate_score": 5,
     "curate_why": "피자 소비량",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 피자 소비량"
+    "prev_status": "verified"
   },
   {
     "topic": "마다가스카르(Madagascar) 메리나(Merina) 사람들의 새해 축제 ‘판드로아나(Fandroana)’",
@@ -66619,7 +66587,7 @@
     "verify_note": "Territorial waters",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -66634,8 +66602,7 @@
     },
     "curate_score": 4,
     "curate_why": "규칙·시각성 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 규칙·시각성 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "페루의 미지급 농지 채권",
@@ -66650,7 +66617,7 @@
     "verify_note": "Agrarian bonds in Peru",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -66663,8 +66630,7 @@
     },
     "curate_score": 5,
     "curate_why": "채권·금액",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 채권·금액"
+    "prev_status": "verified"
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -66956,7 +66922,7 @@
     "verify_note": "Australia",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -66968,8 +66934,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) ‘가장 평평하고 건조한 대륙’이라는 주장은 일반적이며, 구체적인 기후·지형 데이터가 부족하고 근거 문서와 일치 여부가 불분명함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "영국은 단일 문서가 없는 ‘비코딩된 헌법’ 체제",
@@ -67324,7 +67289,7 @@
     "verify_note": "Achaemenid Empire",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67336,8 +67301,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 아케메네스 제국의 영토 규모와 시기 등 구체적 수치가 제시돼 있으나, ‘최대 규모’라는 비교는 다른 제국과의 상대적 근거가 필요함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "쿠르드인들의 새해 불축제 뉴로즈",
@@ -67382,7 +67346,7 @@
     "verify_note": "Traditions of Italy",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:22.383558+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67394,8 +67358,7 @@
       "flags": [
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 1 (평균 1.7) ‘수백 년 전 조상과 연결된 전통’이라는 서술은 매우 일반적이며, 구체적 사례·명칭·절차가 없어 근거가 약함. · 규칙: 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "아르메니아 문자로 쓰인 오스만 터키어",
@@ -67410,7 +67373,7 @@
     "verify_note": "Armeno-Turkish alphabet",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:22.383558+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67422,8 +67385,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 아르메니아 문자로 오스만 터키어를 기록했다는 구체적 사실이 존재하지만, 사용 범위와 시기가 제한적이라 일반화는 조심해야 함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "필리핀 전역에 확대된 샤리아(Shari'ah) 법원",
@@ -67438,7 +67400,7 @@
     "verify_note": "Sharia in the Philippines",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67451,8 +67413,7 @@
     },
     "curate_score": 5,
     "curate_why": "샤리아 법원·숫자",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 샤리아 법원·숫자"
+    "prev_status": "verified"
   },
   {
     "topic": "622년 메디나에서 시작된 초기 이슬람 정복",
@@ -67467,7 +67428,7 @@
     "verify_note": "Early Muslim conquests",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67479,8 +67440,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 3 (평균 3.0) 인도·메디나 사건은 지역적이지만 ‘622년 메디나에서 시작된 초기 이슬람 정복’이라는 구체적 연도·장소는 있지만, 정복 범위와 속도에 대한 수치·절차가 부족하고 근거 문서와 일치 여부가 불분명함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -67985,7 +67945,7 @@
     "verify_note": "Supper",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "저녁 식사 없이 ‘스퍼’만? 영국에서 이렇게 먹는다!  \n\n영국에서는 ‘스퍼(Supper)’가 보통 저녁에 먹는 주된 식사를 의미하지만, 정식 저녁식사인 ‘디너(dinner)’와는 구분돼요. 디너가 공식적인 메인 코스라면, 스퍼는 좀 더 비공식적이고 가벼운 식사로 여겨집니다. 그래서 저녁에 간단히 빵이나 과자를 먹더라도 “스퍼”라고 부르면 공식적인 저녁 식사로 인정받을 수 있죠.  \n\n그런데 스위스에서는 같은 단어가 조금 다르게 쓰입니다. 스위스에서는 스퍼가 가벼운 야식까지 포함하는 포괄적인 용어로 쓰여요. 즉, 밤늦게 라면 한 그릇을 먹어도 스퍼라고 부를 수 있는 겁니다.  \n\n이 차이는 영국 전통에 뿌리를 두고 있지만, 모든 영국 가정에 동일하게 적용되는 건 아니라는 점을 기억해 주세요. 같은 단어가 두 나라에서 이렇게 다른 의미로 쓰인다는 사실, 생각보다 흥미롭지 않나요?",
@@ -68041,8 +68001,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 3/supported 2 (평균 3.3) ‘스퍼’ 용어 차이는 영국과 스위스(실제로는 스위스가 아니라 영국 내 지역 차이) 사이의 문화적 차이로서 어느 정도 구체적이지만, 스위스에서의 사용 사례가 명확히 제시되지 않아 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "법률에서 ‘유사 사건’으로 판결을 구하는 방법",
@@ -68057,7 +68016,7 @@
     "verify_note": "Analogy (law)",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:49.862149+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68069,8 +68028,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 3 (평균 4.0) 법률에서 ‘유사 사건(Analogy)’을 이용하는 절차와 용어는 구체적이지만, 에티오피아에 한정된 사례가 제시되지 않아 일반법 이론에 머무르고, 근거 문서와의 직접 연계가 부족함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "스페인 제국 붕괴와 페루의 독립 전쟁",
@@ -68085,7 +68043,7 @@
     "verify_note": "Spanish American wars of independence",
     "confidence": "source",
     "created_at": "2026-11-09T08:02:15.972062+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68100,8 +68058,7 @@
     },
     "curate_score": 4,
     "curate_why": "역사·일반적",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 역사·일반적"
+    "prev_status": "verified"
   },
   {
     "topic": "시암인의 앙코르 몰락",
@@ -68116,7 +68073,7 @@
     "verify_note": "Military history of Thailand",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68128,8 +68085,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 7/concrete 4/supported 2 (평균 4.3) 시암인의 앙코르 몰락은 특정 지역·시대에 한정돼 있으나, 전쟁 시기·기후변화 연결 고리가 학계에서 논쟁 중이며, 근거 문서와 직접적인 일치가 부족해 점수를 낮춤. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "플럼 푸딩의 이름 속 진실",
@@ -68144,7 +68100,7 @@
     "verify_note": "Christmas pudding",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68159,8 +68115,7 @@
     },
     "curate_score": 3,
     "curate_why": "음식·관심 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 음식·관심 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "메대가 산악 지형을 이용해 신아시리아를 무너뜨린 비결",
@@ -68175,7 +68130,7 @@
     "verify_note": "Median kingdom",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:31.104495+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68187,8 +68142,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 2 (평균 3.0) 메대와 신아시리아의 전쟁은 고대 전 세계적 사건이라 특정 지역·문화만의 내용이라 보기 어렵고, 산악 지형 활용에 대한 구체적 증거가 부족해 근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "루마니아 형법, 446조가 한 번에 개정된 순간",
@@ -68203,7 +68157,7 @@
     "verify_note": "Penal Code of Romania",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:31.104495+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68216,8 +68170,7 @@
     },
     "curate_score": 5,
     "curate_why": "법조항·숫자",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 법조항·숫자"
+    "prev_status": "verified"
   },
   {
     "topic": "스웨덴(Sweden) 북극 지방의 겨울 동지",
@@ -68232,7 +68185,7 @@
     "verify_note": "Winter solstice",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:36.565585+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68244,8 +68197,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 4 (평균 3.0) 겨울 동지는 전 세계적 현상이므로 독특성 낮고, 구체적 수치·지명 등이 부족해 구체성·근거가 약함. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "마사추세트어(Massachusett) 부활 프로젝트",
@@ -68260,7 +68212,7 @@
     "verify_note": "Massachusett language",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:36.565585+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68275,8 +68227,7 @@
     },
     "curate_score": 3,
     "curate_why": "언어·관심 적음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 언어·관심 적음"
+    "prev_status": "verified"
   },
   {
     "topic": "윤석열 대통령의 자기 쿠데타 선언",
@@ -68291,7 +68242,7 @@
     "verify_note": "2024 South Korean martial law crisis",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68303,8 +68254,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 1/concrete 2/supported 0 (평균 1.0) 2024년 12월 3일 윤석열 대통령의 ‘자기 쿠데타’는 실제 사건이 아니며 허구이므로 근거·구체성이 전혀 없음. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "드라구트, 해적이자 지방 총독",
@@ -68379,7 +68329,7 @@
     "verify_note": "Uyghur cuisine",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:04.004949+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68392,8 +68342,7 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 2 (평균 2.0) 우즈베키스탄과 위구르인 관계가 부정확하고 손으로 먹는 관습은 증거가 부족함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음), 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "스페인(Spain) 영적 수련, 길을 걷는 순례자",
@@ -68408,7 +68357,7 @@
     "verify_note": "Spiritual practice",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:42.720777+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68420,8 +68369,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 1/supported 1 (평균 1.3) 스페인 영적 순례에 대한 내용이 일반적이고 구체적 근거가 없음 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "벨기에(Belgium), 독일(Germany)의 통과 요구를 거절한 순간",
@@ -68436,7 +68384,7 @@
     "verify_note": "German invasion of Belgium (1914)",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:42.720777+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68446,8 +68394,7 @@
       "reason": "벨기에 거부 사건은 실제지만 날짜와 세부 내용이 잘못돼 신뢰도 낮음",
       "avg": 4.0,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 3 (평균 4.0) 벨기에 거부 사건은 실제지만 날짜와 세부 내용이 잘못돼 신뢰도 낮음"
+    }
   },
   {
     "topic": "에스토니아 반란군이 폴란드‑스웨덴 전쟁에 끼친 역할",
@@ -68462,7 +68409,7 @@
     "verify_note": "Polish–Swedish War (1563–1568)",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:10.364504+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68474,8 +68421,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 2/supported 2 (평균 2.0) 에스토니아 반란군이 폴란드‑스웨덴 전쟁에 참여했다는 근거가 거의 없으며 구체성 부족 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "고대 이집트 신앙, 파라오와 1,500신",
@@ -68490,7 +68436,7 @@
     "verify_note": "Ancient Egyptian religion",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:29.076568+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -68500,8 +68446,7 @@
       "reason": "고대 이집트 신들의 수와 파라오 역할은 일반적으로 알려진 사실이지만 전 세계적 내용이라 독특성은 낮음",
       "avg": 4.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 고대 이집트 신들의 수와 파라오 역할은 일반적으로 알려진 사실이지만 전 세계적 내용이라 독특성은 낮음"
+    }
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -68516,7 +68461,7 @@
     "verify_note": "Rashidun conquests under Umar",
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
     "title_line1": "라시둔 제국 급속 확장",
     "title_line2": "4,050도시 한 번에?",
@@ -68733,8 +68678,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) 우마 이븐 알카타브의 정복은 중동·북아프리카 역사이며 남아프리카와는 무관해 구체성·근거가 약함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -68742,14 +68686,14 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "일본",
+    "country": "싱가포르",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
     "title_line1": "18km 지하 요새의 비밀",
     "title_line2": "이오지마에서 미군이 고전한 이유",
@@ -68975,21 +68919,7 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
-    "country_before_fix": "싱가포르",
-    "grounding": {
-      "v": 1,
-      "at": "2026-11-17",
-      "distinct": 4,
-      "concrete": 5,
-      "supported": 5,
-      "reason": "이오지마 전투와 18km 터널은 실제 기록이 있으나 일본 전역이 아니라 해당 섬에 한정돼 구체적·지원됨",
-      "avg": 4.7,
-      "flags": [
-        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
-      ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 이오지마 전투와 18km 터널은 실제 기록이 있으나 일본 전역이 아니라 해당 섬에 한정돼 구체적·지원됨 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    "status_tts_v2": "done"
   },
   {
     "country": "한국",
@@ -69000,7 +68930,7 @@
     "caveat": "이 내용은 한국 민방위 지침(2023년 기준)을 기반으로 하며, 다른 국가나 지역의 지침과는 차이가 있을 수 있습니다.",
     "confidence": "high",
     "verify_note": "한국 전쟁 대비 생존배낭 아이템, 민방위 생존키트 권고사항",
-    "status": "rejected",
+    "status": "scripted",
     "created_at": "2026-11-11T01:42:19.318170+00:00",
     "theme": "키워드",
     "seed_keyword": "전쟁 대비 생존배낭, 꼭 챙겨야 할 5가지 아이템",
@@ -69283,8 +69213,7 @@
       "reason": "한국 민방위 지침 기반이라 구체적 아이템은 있지만 출처가 명시되지 않아 신뢰도 낮음",
       "avg": 4.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 6/concrete 5/supported 3 (평균 4.7) 한국 민방위 지침 기반이라 구체적 아이템은 있지만 출처가 명시되지 않아 신뢰도 낮음"
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -69533,7 +69462,7 @@
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
     "title_line1": "18km 지하 요새의 비밀",
     "title_line2": "이오지마에서 미군이 고전한 이유",
@@ -69767,13 +69696,12 @@
       "distinct": 4,
       "concrete": 5,
       "supported": 5,
-      "reason": "2번과 동일 내용, 중복이지만 근거는 충분히 존재함",
+      "reason": "이오지마 전투와 18km 터널은 실제 기록이 있으나 일본 전역이 아니라 해당 섬에 한정돼 구체적·지원됨",
       "avg": 4.7,
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 2번과 동일 내용, 중복이지만 근거는 충분히 존재함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "복어, 3년 훈련 없이 절대 만들 수 없는 이유",
@@ -69849,7 +69777,7 @@
     "verify_note": "Humanistic Buddhism",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69864,8 +69792,7 @@
     },
     "curate_score": 5,
     "curate_why": "불교·인간주의 추상적, 구체적 숫자·시각 미흡",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 불교·인간주의 추상적, 구체적 숫자·시각 미흡"
+    "prev_status": "verified"
   },
   {
     "topic": "크로아티아 해군, 아드리아해 방어",
@@ -69881,7 +69808,7 @@
     "verify_note": "Military history of Croatia",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69891,8 +69818,7 @@
       "reason": "크로아티아 해군이 아드리아해를 방어했다는 주장은 오스트리아‑헝가리 시기의 군사 조직에 국한돼 있어 지역적 특성이 있지만, 해군 전력·전투 사례가 구체적으로 제시되지 않아 낮은 점수.",
       "avg": 4.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 크로아티아 해군이 아드리아해를 방어했다는 주장은 오스트리아‑헝가리 시기의 군사 조직에 국한돼 있어 지역적 특성이 있지만, 해군 전력·전투 사례가 구체적으로 제시되지 않아 낮은 점수."
+    }
   },
   {
     "topic": "산 호세 광산 붕괴와 69일 뒤 구조",
@@ -70135,7 +70061,7 @@
     "verify_note": "Kiss",
     "confidence": "source",
     "created_at": "2026-11-11T07:07:22.491403+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70147,8 +70073,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 3/supported 3 (평균 3.3) 키스가 쿠바에서 인사·의례로 쓰인다는 일반적인 문화 설명이며, 쿠바만의 특수 사례·통계·구체적 관습이 없어 낮은 점수. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "1184년 시작된 크리스마스 통나무 전통",
@@ -70164,7 +70089,7 @@
     "verify_note": "Yule log",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:05.396589+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70179,8 +70104,7 @@
     },
     "curate_score": 4,
     "curate_why": "전통·통나무 추상, 숫자·충격 요소 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 전통·통나무 추상, 숫자·충격 요소 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "법인 주소가 사업 생존에 필수인 이유",
@@ -70196,7 +70120,7 @@
     "verify_note": "Registered office",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:10.562336+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70211,8 +70135,7 @@
     },
     "curate_score": 5,
     "curate_why": "법인 주소·사업 생존, 구체적 숫자·시각 약함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 법인 주소·사업 생존, 구체적 숫자·시각 약함"
+    "prev_status": "verified"
   },
   {
     "topic": "빅 브라더(Big Brother) 2025 시즌, 거의 가구 없는 집",
@@ -70228,7 +70151,7 @@
     "verify_note": "Big Brother 2025 (Dutch and Belgian TV series)",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70241,8 +70164,7 @@
     },
     "curate_score": 5,
     "curate_why": "가구 없는 집·신기하지만 숫자·긴장감 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 가구 없는 집·신기하지만 숫자·긴장감 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "미셸 드 세르토(Michel de Certeau)의 일상 철학",
@@ -70258,7 +70180,7 @@
     "verify_note": "Michel de Certeau",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:22.188899+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70270,8 +70192,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 7 (평균 5.0) 미셸 드 세르토는 프랑스 인물이라 브라질과 직접 연관성이 없고, 구체적 수치·제도는 부족함. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "북극점은 어느 나라에도 속하지 않는다",
@@ -70287,7 +70208,7 @@
     "verify_note": "Territorial claims in the Arctic",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "북극점에 발을 디뎠는데, 관세도 세금도 안 붙는다! 사실 북극점과 그 주변 해역은 국제법상 무주지로 지정돼 있어 어느 나라의 영해에도 속하지 않아요. 하지만 주변 8개 연안국—캐나다, 덴마크(그린란드 포함), 핀란드, 아이슬란드, 노르웨이, 러시아, 스웨덴, 미국—은 각각 육지와 해역을 관리하고 있죠.  \n\n그런데 이들 국가가 관리하는 구역과는 별개로, 북극점 자체는 어느 국가의 영토가 아니기 때문에 관세나 영해 규제가 적용되지 않습니다. 그래서 여기서는 자유롭게 탐험할 수 있는 듯 보이지만, 실제로는 해저 자원 탐사를 두고 8개국이 치열하게 경쟁하고 있다는 점이 흥미롭습니다.  \n\n이 규정은 현재 국제해양법(UNCLOS) 하에서 적용되고 있으며, 향후 조약이 바뀌면 상황이 달라질 수도 있습니다. 결국 북극점은 법적으로는 ‘무주지’이지만, 그 주변을 둘러싼 국가들의 이해관계는 결코 공허하지 않다는 점, 기억해 주세요.",
@@ -70356,8 +70277,7 @@
         }
       ],
       "none": false
-    },
-    "reject_reason": "나라와 주제 불일치(이스라엘 / CA,DK,GL,FI,IS,NO,RU,SE,US)"
+    }
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
@@ -70399,7 +70319,7 @@
     "caveat": "이 절차는 말레이시아 연방의 9개 주군주에게만 적용됩니다.",
     "confidence": "high",
     "verify_note": "말레이시아 양디페르투안 아공 선출 절차, 왕실 회의 비밀투표",
-    "status": "rejected",
+    "status": "verified",
     "created_at": "2026-11-11T07:22:21.449526+00:00",
     "theme": "키워드",
     "seed_keyword": "말레이시아 9왕가, 왕은 어떻게 뽑히나요? – 왕위 선택 규칙 대공개",
@@ -70414,8 +70334,7 @@
       "reason": "말레이시아 왕 선출 방식은 특수하지만, 근거 문서가 없어 사실 확인이 어려워 신뢰도가 낮음.",
       "avg": 5.3,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 8/concrete 6/supported 2 (평균 5.3) 말레이시아 왕 선출 방식은 특수하지만, 근거 문서가 없어 사실 확인이 어려워 신뢰도가 낮음."
+    }
   },
   {
     "country": "일본",
@@ -70426,7 +70345,7 @@
     "caveat": "이 규칙들은 에도 시대(1603‑1868) 사무라이 기록에 기반하며, 현재 모든 일본인에게 동일하게 적용되는 것은 아닙니다.",
     "confidence": "high",
     "verify_note": "에도 시대 사무라이 식탁 매너 기록, 일본 전통 예절 서적",
-    "status": "rejected",
+    "status": "verified",
     "created_at": "2026-11-11T07:22:34.600600+00:00",
     "theme": "키워드",
     "seed_keyword": "일본 사무라이 식탁 매너, 외국인이 절대 놓치면 안 되는 5가지",
@@ -70441,8 +70360,7 @@
       "reason": "사무라이 식탁 매너는 문화적 흥미가 있지만, 구체적 근거가 없고 현대 적용 여부가 애매함.",
       "avg": 3.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 2 (평균 3.7) 사무라이 식탁 매너는 문화적 흥미가 있지만, 구체적 근거가 없고 현대 적용 여부가 애매함."
+    }
   },
   {
     "topic": "그리스 전통 디저트 재료",
@@ -70458,7 +70376,7 @@
     "verify_note": "Greek cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70471,8 +70389,7 @@
     },
     "curate_score": 3,
     "curate_why": "디저트 재료 일반적, 금기·전쟁 요소 없음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 디저트 재료 일반적, 금기·전쟁 요소 없음"
+    "prev_status": "verified"
   },
   {
     "topic": "쉥겐 지역의 무검문소 국경",
@@ -70488,7 +70405,7 @@
     "verify_note": "Border",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:14.542801+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70501,8 +70418,7 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 4 (평균 3.0) 쉥겐 지역은 유럽에만 해당돼 케냐와 직접 연관성이 낮고, 구체적 수치·절차가 부족해 영상 소재로는 약함 · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "아일랜드의 양당제(Two-party system) 구조",
@@ -70518,7 +70434,7 @@
     "verify_note": "Two-party system",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:20.042895+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70530,8 +70446,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 5 (평균 4.0) 아일랜드의 양당제는 실제 존재하지만, 듀베르제 법 적용·선거제 상세가 빠져 있어 구체성·근거가 다소 약함 · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "연방( federation )의 권력 분배는 헌법으로 고정",
@@ -70547,7 +70462,7 @@
     "verify_note": "Federation",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70559,8 +70474,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 6 (평균 4.3) 연방제 권력 분배는 일반적인 원리이며 볼리비아에 특화된 사례가 없어 구체성은 낮지만, 헌법적 고정이라는 점은 문서와 일치 · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "기독교 소수 국가에서도 크리스마스 트리 설치",
@@ -70576,7 +70490,7 @@
     "verify_note": "Observance of Christmas by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:13:43.570245+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70588,8 +70502,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 4 (평균 3.0) 부탄에서 크리스마스 트리 설치는 드물지만 위키피디아 일반 서술에 의존, 구체적 사례·수치가 없어 점수가 낮음 · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "중화인민공화국(People's Republic of China)의 영해 주장, 1949년 이전부터",
@@ -70663,7 +70576,7 @@
     "verify_note": "Sanborns",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70676,8 +70589,7 @@
     },
     "curate_score": 5,
     "curate_why": "16세기 건물·복합 매장, 숫자·긴장감 약함",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 16세기 건물·복합 매장, 숫자·긴장감 약함"
+    "prev_status": "verified"
   },
   {
     "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
@@ -70932,7 +70844,7 @@
     "verify_note": "Constitution of Italy",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70945,8 +70857,7 @@
     },
     "curate_score": 5,
     "curate_why": "헌법 453표 통과, 숫자·흥미는 있으나 충격↓",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 헌법 453표 통과, 숫자·흥미는 있으나 충격↓"
+    "prev_status": "verified"
   },
   {
     "topic": "캐롤라이나식 홉핀 존, 베이컨 기름에 밥을 투명해질 때까지 끓인다",
@@ -70962,7 +70873,7 @@
     "verify_note": "Hoppin' John",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:46.752236+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70974,8 +70885,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 6/supported 3 (평균 3.7) 홉핀 존은 미국 남부 요리이며 쿠바와는 무관해 지역 특수성이 낮고, 조리법은 일부 구체적이지만 발췌문은 미국 요리와 관련돼 있어 근거가 약하다. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "보르네오 섬을 가로지르는 1,881km 국경선",
@@ -71049,7 +70959,7 @@
     "verify_note": "Territorial disputes of India",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71059,8 +70969,7 @@
       "reason": "스리랑카와 인도 사이 해상 영유권 갈등은 실제 사례가 거의 없으며, 발췌문에 구체적 시기·사건이 없어 구체성·지원성이 낮다.",
       "avg": 2.3,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) 스리랑카와 인도 사이 해상 영유권 갈등은 실제 사례가 거의 없으며, 발췌문에 구체적 시기·사건이 없어 구체성·지원성이 낮다."
+    }
   },
   {
     "topic": "우즈베키스탄(Uzbekistan)의 히잡 착용 규정",
@@ -71076,7 +70985,7 @@
     "verify_note": "Islamic veiling practices by country",
     "confidence": "source",
     "created_at": "2026-11-13T14:18:25.878379+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71088,8 +70997,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 4 (평균 4.3) 우즈베키스탄의 히잡 규정은 국가별 차이로 알려져 있어 구체적 사실이 있으나, 발췌문은 일반적인 전 세계 현황만 제시해 직접적인 근거가 약하다. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "언어마다 ‘너’와 ‘당신’ 구분 존재",
@@ -71105,7 +71013,7 @@
     "verify_note": "T–V distinction in the world's languages",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71118,8 +71026,7 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 4/supported 5 (평균 4.7) T‑V 구분은 언어학적으로 널리 문서화된 사실이며, 콜롬비아에 특화된 사례는 없지만 구체적 정의와 예시가 있어 중간 수준 점수를 준다. · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "한스 섬(Hans Ø)에서 양국 깃발 격돌",
@@ -71415,7 +71322,7 @@
     "verify_note": "Law clerk",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:06.023629+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71430,8 +71337,7 @@
     },
     "curate_score": 4,
     "curate_why": "법원 보조원 영향·구체적 사례·숫자·시각 부족",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 법원 보조원 영향·구체적 사례·숫자·시각 부족"
+    "prev_status": "verified"
   },
   {
     "topic": "리투아니아·라트비아·에스토니아 3국이 함께하는 대규모 노래·춤 축제",
@@ -71447,11 +71353,10 @@
     "verify_note": "Lithuanian Song and Dance Festival",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:23.841580+00:00",
-    "status": "rejected",
+    "status": "verified",
     "curate_score": 5,
     "curate_why": "3국 동시 축제·문화·규모 강조, 숫자·긴장감 낮음",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 3국 동시 축제·문화·규모 강조, 숫자·긴장감 낮음"
+    "prev_status": "verified"
   },
   {
     "topic": "역대 가장 빠른 미국 건조 초대형 여객선 SS United States",
@@ -71693,11 +71598,10 @@
     "verify_note": "Sed Festival",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:53.227437+00:00",
-    "status": "rejected",
+    "status": "verified",
     "curate_score": 5,
     "curate_why": "파라오 꼬리 퍼레이드·시각적이지만 역사·전쟁 부재",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 파라오 꼬리 퍼레이드·시각적이지만 역사·전쟁 부재"
+    "prev_status": "verified"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -71712,10 +71616,10 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
-    "narration": "3초에서 60분까지, 당신은 어느 길이를 고를까요?  \n틱톡은 짧은 3초 클립부터 한 시간 영상까지 올릴 수 있는 플랫폼입니다.  \n모바일 앱은 물론 웹사이트에서도 동일하게 이용할 수 있어요.  \n다양한 길이 덕분에 사용자는 순간을 짧게, 이야기를 길게 자유롭게 선택합니다.  \n하지만 중국 본토와 홍콩에서는 틱톡이 차단돼 있습니다.  \n그곳에서는 대신 두이인(Douyin)이라는 서비스가 제공됩니다.  \n두 서비스는 영상 길이 제한은 같지만, 운영 주체와 정책이 다릅니다.  \n스와이프만 하면 어떤 길이든 화면에서 사라지는 경험, 직접 해보셨나요?  \n결국, 길이에 관계없이 틱톡 안에서 모든 순간을 만들 수 있다는 것이 답입니다.",
+    "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼이며, 모바일 앱은 물론 웹사이트에서도 이용 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인이라는 서비스가 제공됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계를 바탕으로 한 내용이며, 다양한 길이의 영상을 자유롭게 만들 수 있다는 점이 핵심입니다. 결국, 화면을 넘기면 사라지는 순간이 짧든 길든, 언제든지 같은 틱톡 안에 담겨 있다는 것이죠.",
     "title_line1": "케냐 틱톡 영상길이",
     "title_line2": "3초~60분 스와이프",
     "highlights": [
@@ -71871,8 +71775,7 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 3 (평균 3.3) 틱톡 영상 길이 제한은 전 세계 공통 사항이며, 케냐와 직접 연결되는 고유 정보가 부족해 구체성과 차별성이 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+    }
   },
   {
     "topic": "1881년 남미 국경을 정한 조약",
@@ -71917,11 +71820,10 @@
     "verify_note": "Bicameralism",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "rejected",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "숫자·비교는 있지만 전쟁·군사와 무관",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 3점: 숫자·비교는 있지만 전쟁·군사와 무관"
+    "prev_status": "verified"
   },
   {
     "topic": "1618년 ‘일곱 가지 불만’이 청나라의 서막을 열다",
@@ -71968,7 +71870,7 @@
     "verify_note": "Illegal logging",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71984,8 +71886,7 @@
     },
     "curate_score": 5,
     "curate_why": "숲 파괴 장면 상상·숫자·환경·충격",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 5점: 숲 파괴 장면 상상·숫자·환경·충격"
+    "prev_status": "verified"
   },
   {
     "topic": "캐나다 퀘벡, 이민자 선택권을 독점하다",
@@ -72001,7 +71902,7 @@
     "verify_note": "Canadian immigration and refugee law",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72014,8 +71915,7 @@
     },
     "curate_score": 4,
     "curate_why": "이민 비율 제시·정치적이지만 전쟁·군사 부재",
-    "prev_status": "verified",
-    "reject_reason": "자동 선별 4점: 이민 비율 제시·정치적이지만 전쟁·군사 부재"
+    "prev_status": "verified"
   },
   {
     "topic": "폴란드 요리, 고기와 버터가 폭발한다",
@@ -72031,7 +71931,7 @@
     "verify_note": "Polish cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:13.973228+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72041,8 +71941,7 @@
       "reason": "폴란드 요리의 고기·버터 사용은 일반적인 국가 요리 특징이라 세계적이며, 발췌문에 구체적 요리명만 있어 충격적·새로운 정보는 제한적.",
       "avg": 4.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 5/concrete 5/supported 4 (평균 4.7) 폴란드 요리의 고기·버터 사용은 일반적인 국가 요리 특징이라 세계적이며, 발췌문에 구체적 요리명만 있어 충격적·새로운 정보는 제한적."
+    }
   },
   {
     "topic": "오픈소스 게임 엔진 Godot( Godot )",
@@ -72058,7 +71957,7 @@
     "verify_note": "Godot (game engine)",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72070,8 +71969,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 6/supported 7 (평균 5.3) Godot 엔진은 노르웨이와 무관한 아르헨티나 개발 배경이므로 지역 특성이 낮지만, 라이선스·출시 연도·지원 플랫폼 등 구체적 정보는 충분. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "다이아몬드 차량 Vajrayāna( Vajrayāna )",
@@ -72087,7 +71985,7 @@
     "verify_note": "Vajrayana",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72099,8 +71997,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 5 (평균 3.7) Vajrayāna는 몰디브와 직접 연관이 없으며, 불교 전통 설명은 일반적이고 ‘다이아몬드 차량’이라는 표현만으로는 몰디브 특성을 제시하지 않음. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "알래스카 국경 분쟁",
@@ -72145,7 +72042,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72155,8 +72052,7 @@
       "reason": "스페인과는 무관한 가이아나·베네수엘라 분쟁이라 주제와 국가가 맞지 않아 독특성 낮음, 면적·파리 중재 판정 등 구체적 수치는 있지만 근거 문서가 남미 지역이라 신뢰도 낮음",
       "avg": 3.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 5/supported 4 (평균 3.7) 스페인과는 무관한 가이아나·베네수엘라 분쟁이라 주제와 국가가 맞지 않아 독특성 낮음, 면적·파리 중재 판정 등 구체적 수치는 있지만 근거 문서가 남미 지역이라 신뢰도 낮음"
+    }
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -72172,7 +72068,7 @@
     "verify_note": "Regional variations of barbecue",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72185,8 +72081,7 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 1/concrete 2/supported 2 (평균 1.7) ‘볼리비아 바베큐는 소스와 오일을 두 번 바른다’는 구체적 관행을 문서에서 찾을 수 없으며 일반적인 바베큐 변형 설명에 불과해 구체성·지원 부족 · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "topic": "나이지리아 길거리 바베큐와 열대과일을 한 입에",
@@ -72202,7 +72097,7 @@
     "verify_note": "Nigerian cuisine",
     "confidence": "source",
     "created_at": "2026-11-13T14:50:05.061009+00:00",
-    "status": "rejected",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72214,8 +72109,7 @@
       "flags": [
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 3 (평균 2.7) 나이지리아 길거리 바베큐와 열대과일 조합은 일반적인 식문화 설명에 기반하지만, 특정 조합이 흔하다는 근거가 부족해 점수 낮음 · 규칙: 수치·원어 표기 같은 구체 정보 없음"
+    }
   },
   {
     "country": "여행, 크루즈, 세계문화, 관광심리",
@@ -72901,7 +72795,7 @@
     "verify_note": "Quinoa",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72911,8 +72805,7 @@
       "reason": "퀴노아의 영양 성분·안데스 기원·역사적 사용 등 고유명사·수치가 풍부하고 문서와 일치, 남미 특수 주제로 독특함 높음",
       "avg": 4.7,
       "flags": []
-    },
-    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 퀴노아의 영양 성분·안데스 기원·역사적 사용 등 고유명사·수치가 풍부하고 문서와 일치, 남미 특수 주제로 독특함 높음"
+    }
   },
   {
     "topic": "파타야 수상 시장은 세계 최대 인공 수상 시장",
@@ -72928,7 +72821,7 @@
     "verify_note": "Pattaya Floating Market",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72941,8 +72834,7 @@
     },
     "curate_score": 4,
     "curate_why": "거대한 인공 시장·숫자·시각적이지만 군사·금지 부재",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 4점: 거대한 인공 시장·숫자·시각적이지만 군사·금지 부재"
+    "prev_status": "unverified"
   },
   {
     "topic": "에티오피아와 에리트레아에서 매일 열리는 커피 의식",
@@ -72958,7 +72850,7 @@
     "verify_note": "Coffee ceremony of Ethiopia and Eritrea",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72971,8 +72863,7 @@
     },
     "curate_score": 3,
     "curate_why": "커피 의식·문화·숫자·전쟁·군사 요소 부족",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 3점: 커피 의식·문화·숫자·전쟁·군사 요소 부족"
+    "prev_status": "unverified"
   },
   {
     "topic": "아라비아 커피는 쓴맛과 향신료가 특징인 손님 맞이 문화",
@@ -72988,7 +72879,7 @@
     "verify_note": "Arabic coffee",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -73003,8 +72894,7 @@
     },
     "curate_score": 2,
     "curate_why": "커피 문화 소개, 충격·전쟁 요소 없음",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 2점: 커피 문화 소개, 충격·전쟁 요소 없음"
+    "prev_status": "unverified"
   },
   {
     "topic": "바틱은 왁스로 색을 막아 독특한 무늬를 만드는 전통 염색법",
@@ -73020,7 +72910,7 @@
     "verify_note": "Batik",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -73033,8 +72923,7 @@
     },
     "curate_score": 2,
     "curate_why": "전통 염색법, 전쟁·군사·금지와 무관",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 2점: 전통 염색법, 전쟁·군사·금지와 무관"
+    "prev_status": "unverified"
   },
   {
     "topic": "스코틀랜드 고지대에서 열리는 전통 체력 경기, 배그파이프(bagpipes)와 킬트(kilt)와 무거운 돌 던지기가 함께한다.",
@@ -73050,7 +72939,7 @@
     "verify_note": "Highland games",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -73065,8 +72954,7 @@
     },
     "curate_score": 3,
     "curate_why": "전통 체력 경기, 전쟁·군사 직접 언급 없음",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 3점: 전통 체력 경기, 전쟁·군사 직접 언급 없음"
+    "prev_status": "unverified"
   },
   {
     "topic": "멕시코 전통 무용에 쓰이는 마스크는 식민지 시대 금지 시도에도 살아남았다.",
@@ -73082,7 +72970,7 @@
     "verify_note": "Mexican mask-folk art",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -73097,8 +72985,7 @@
     },
     "curate_score": 5,
     "curate_why": "식민지 금지와 저항, 역사·정치·시각적 갈등",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 5점: 식민지 금지와 저항, 역사·정치·시각적 갈등"
+    "prev_status": "unverified"
   },
   {
     "topic": "브루스 챗윈(Bruce Chatwin)이 1987년 쓴 『The Songlines』는 호주 원주민의 노래길을 소개한다.",
@@ -73114,7 +73001,7 @@
     "verify_note": "The Songlines",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -73127,8 +73014,7 @@
     },
     "curate_score": 2,
     "curate_why": "노래길 책 소개, 전쟁·금지 요소 부재",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 2점: 노래길 책 소개, 전쟁·금지 요소 부재"
+    "prev_status": "unverified"
   },
   {
     "topic": "미국 크리스마스 마켓, 독일어 ‘Markt’를 ‘market’으로 바꾼다",
@@ -73144,11 +73030,10 @@
     "verify_note": "Christmas market",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:29.021689+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "curate_score": 1,
     "curate_why": "언어 변화 소개, 흥미·충격 요소 거의 없음",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 1점: 언어 변화 소개, 흥미·충격 요소 거의 없음"
+    "prev_status": "unverified"
   },
   {
     "topic": "아프리카 직물, 다양한 제작 방식과 문화적 의미",
@@ -73164,11 +73049,10 @@
     "verify_note": "African textiles",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:29.021689+00:00",
-    "status": "rejected",
+    "status": "unverified",
     "curate_score": 1,
     "curate_why": "직물 문화, 전쟁·군사·금지와 무관",
-    "prev_status": "unverified",
-    "reject_reason": "자동 선별 1점: 직물 문화, 전쟁·군사·금지와 무관"
+    "prev_status": "unverified"
   },
   {
     "country": "프랑스",
@@ -73325,7 +73209,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고 들어보셨나요? 실제 사건은 미국과 영국이 샌후안 제도 경계 문제로 마주하면서 시작됐습니다. 영국 영토에 있던 돼지를 미국 군인이 총으로 쏘자, 양측이 무력 충돌을 준비하게 된 것이죠. 그런데 인간 사상자는 전혀 없었습니다. 양국은 군대를 동원하고 진지를 구축했지만, 전투는 일어나지 않았습니다. 결국 ‘돼지 전쟁’이라 불리지만, 사망자는 돼지 한 마리뿐이었고, 이후 외교적 협상을 통해 평화롭게 해결되었습니다. 이렇게 작은 사건이 국제적 긴장을 불러일으켰다는 점이, 역사의 우연함을 다시 한 번 떠올리게 합니다.",
@@ -73374,8 +73258,496 @@
         }
       ],
       "none": false
+    }
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "video_done",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
+  },
+  {
+    "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
+    "hook": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면?",
+    "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
+    "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
+    "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
+    "country": "일본",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Battle of Iwo Jima",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+    "verify_note": "Battle of Iwo Jima",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:01:27.510096+00:00",
+    "status": "rejected",
+    "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
+    "title_line1": "18km 지하 요새의 비밀",
+    "title_line2": "이오지마에서 미군이 고전한 이유",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "18km *지하 방어망*"
+      },
+      {
+        "s": 3,
+        "text": "일본군의 *은폐 작전*"
+      },
+      {
+        "s": 5,
+        "text": "해변에 쏟아진 *집중 사격*"
+      },
+      {
+        "s": 8,
+        "text": "예상보다 길어진 *전투*"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
+        "id": 5438620
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JCDCreative",
+        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
+        "id": 2252203
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Edmond Morin",
+        "license": "Public domain",
+        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
+        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
+        "id": "c:164313974"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
+        "license": "Public domain",
+        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
+        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
+        "id": "c:154351779"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Pink Flojd",
+        "license": "CC BY-SA 4.0",
+        "title": "Battle of Mišar terrain model.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
+        "id": "c:71694541"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "narration_original": "상륙 직후, 미군이 18km 길이의 비밀 터널에 바로 들어갔다면 어떤 일이 벌어졌을까요? 1945년, 미국 해병대·해군·육군이 이오지마 섬에 상륙해 남부 비행장과 중부 비행장을 장악하려 했습니다. 하지만 섬 안에는 18km에 달하는 복잡한 터널망과 은폐된 포대가 얽혀 있었죠.  \n\n그때 미군은 바로 그 터널 안으로 진입했습니다.  \n\n그런데 터널 안에서는 일본군이 미리 설치한 함정과 마주치게 되면서 전투는 예상보다 오래 끌었습니다. 미군 기록에 따르면, 터널 속에서의 교전은 지형의 복잡성 때문에 보병과 포병이 동시에 작전을 펼쳐야 했고, 전투 속도는 크게 저하되었습니다.  \n\n결국 목표였던 비행장 확보는 터널 전투가 끝난 뒤에야 가능했으며, 이 비밀 네트워크는 전투의 흐름을 크게 바꾸는 요인으로 작용했습니다. 전쟁의 한 순간, 18km 길이의 어두운 뱀굴 속에서 벌어진 이 이야기가 남긴 여운은, 전장이 언제든지 예상치 못한 지형에 의해 뒤바뀔 수 있다는 점입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "2번과 동일 내용, 중복이지만 근거는 충분히 존재함",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
     },
-    "reject_reason": "나라와 주제 불일치(그리스 / US,GB)"
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 2번과 동일 내용, 중복이지만 근거는 충분히 존재함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "몽골은 내륙 국가이면서도 1,564,116 km²의 광활한 영토를 가지고 있다",
