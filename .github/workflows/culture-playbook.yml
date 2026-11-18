@@ -1,0 +1,46 @@
+name: culture-playbook
+
+# 매주 월요일 10:15(KST): 최신 성과(yt_stats.json)로 잘된/저조 영상 대본을 비교해 script_playbook.json 갱신
+# (대본 생성·재작성 프롬프트에 자동 반영됨). 소재 폐기·대본 수정은 하지 않음.
+on:
+  schedule:
+    - cron: "15 1 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: culture-playbook
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  playbook:
+    if: ${{ github.event_name != 'schedule' || vars.AUTO_RUN != 'off' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUNBUFFERED: "1"
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python curate.py --playbook
+      - name: 커밋
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add script_playbook.json
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "chore: 플레이북 주간 갱신 [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME:-main}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "push 실패"; exit 1
