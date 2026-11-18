@@ -58476,7 +58476,41 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0495_인도.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0495_인도.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "brush",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "",
+      "text2": "",
+      "colors1": {
+        "1": "#f64021"
+      },
+      "sizes1": {
+        "1": 1.4
+      },
+      "colors2": {
+        "1": "#1328e5"
+      },
+      "sizes2": {
+        "1": 1.6
+      }
+    }
   },
   {
     "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
