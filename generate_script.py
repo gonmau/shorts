@@ -1119,7 +1119,7 @@ def _rewrite_prompt(fact, narration, issues):
     return f"""아래 쇼츠 대본을 시청 지속률이 높게 고쳐 쓰세요. 대본만 출력합니다.
 
 [발견된 문제]
-- """ + "\n- ".join(issues) + f"""
+- """ + "\n- ".join(issues) + "\n\n" + f"""
 
 [고치는 규칙]
 - 사실과 숫자는 아래 [원래 대본]과 [자료] 안에서만 씁니다. 새 사실을 만들지 않습니다.
