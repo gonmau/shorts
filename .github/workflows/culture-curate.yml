@@ -39,6 +39,8 @@ jobs:
     env:
       PYTHONUNBUFFERED: "1"
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      WEB_UI_URL: ${{ vars.WEB_UI_URL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

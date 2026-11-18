@@ -22,6 +22,8 @@ import generate_script as gs
 
 PLAYBOOK = Path("script_playbook.json")
 BATCH = 25
+REJ = []      # 이번 실행에서 폐기한 소재 번호
+REV = {"rewritten": [], "manual": [], "ok": 0}
 
 
 def load_playbook():
@@ -170,6 +172,7 @@ JSON 배열만 출력: [{{"i": 번호, "s": 1~10 정수, "why": "20자 이내 �
             f["status"] = "rejected"
             f["reject_reason"] = f"자동 선별 {f['curate_score']}점: {f.get('curate_why', '')}"
             rejected += 1
+            REJ.append(i)
     alive = sorted([i for i, f in enumerate(db) if f.get("status") in ("unverified", "verified", "scripted")
                     and f.get("curate_score") is not None], key=lambda i: -db[i]["curate_score"])
     for rank, i in enumerate(alive):
@@ -196,16 +199,58 @@ def review_scripts(client, models, db, review_max, dry):
         if done >= review_max or dry or client is None:
             f["hook_check"] = {"ok": False, "issues": issues, "rounds": 0, "first": (gs._split_sents(f["narration"]) or [""])[0]}
             f["review_needed"] = True
+            REV["manual"].append(i)
             continue
         done += 1
         print(f"  {i} {f.get('country', '')}: " + " / ".join(issues))
         try:
             f["narration"] = gs.refine_script(client, models, f, f["narration"])
             f["status"] = "scripted"
+            (REV["rewritten"] if not f.get("review_needed") else REV["manual"]).append(i)
         except Exception as e:
             print("   재작성 실패:", type(e).__name__, e)
     ok = sum(1 for i in ids if not db[i].get("review_needed"))
+    REV["ok"] = ok
     print(f"[대본점검] 통과 {ok}개 · 수동 검수 필요 {len(ids) - ok}개")
+
+
+def notify(db, a):
+    """결과 요약을 디스코드로 (DISCORD_WEBHOOK_URL 이 있을 때)"""
+    url = os.environ.get("DISCORD_WEBHOOK_URL", "")
+    if not url:
+        print("DISCORD_WEBHOOK_URL 없음 → 알림 생략")
+        return
+    from notify_discord import post_long
+    def t(i):
+        return f"`{i}` {db[i].get('country', '')} — {' '.join(str(db[i].get('topic') or '').split())[:50]}"
+    L = [f"🧹 **소재 선별·대본 점검 결과**{' (미리보기, 변경 없음)' if a.dry_run else ''}"]
+    pb = load_playbook()
+    if pb and a.playbook:
+        L.append("📈 **잘된 영상 플롯 규칙**")
+        for k, lab in (("hook", "훅"), ("flow", "흐름"), ("avoid", "피할 것")):
+            for x in (pb.get(k) or [])[:3]:
+                L.append(f"· {lab}: {x}")
+    if a.score:
+        alive = sorted([i for i, f in enumerate(db) if f.get("curate_top")], key=lambda i: -(db[i].get("curate_score") or 0))
+        L.append(f"⭐ **상위 {len(alive)}개 소재** (기준 {a.cutoff}점, 폐기 {len(REJ)}개)")
+        for i in alive[:15]:
+            L.append(f"{db[i]['curate_score']}점 {t(i)} · {db[i].get('curate_why', '')}")
+        if REJ:
+            L.append("🗑 **폐기 예시**")
+            for i in REJ[:8]:
+                L.append(f"{db[i].get('curate_score')}점 {t(i)} · {db[i].get('curate_why', '')}")
+            if len(REJ) > 8:
+                L.append(f"… 외 {len(REJ) - 8}개 (사유는 DB reject_reason, 되살리기: prev_status)")
+    if a.review:
+        L.append(f"📝 **대본 점검**: 통과 {REV['ok']}개 · 다시 쓴 것 {len(REV['rewritten'])}개 · 수동 검수 필요 {len(REV['manual'])}개")
+        for i in REV["manual"][:10]:
+            iss = (db[i].get("hook_check") or {}).get("issues") or []
+            L.append(f"검수 {t(i)} — {'; '.join(iss)[:80]}")
+    web = os.environ.get("WEB_UI_URL", "").strip()
+    if web:
+        L.append(f"👉 {web.rstrip('/')}/?ch=ko")
+    post_long(url, "\n".join(L))
+    print("디스코드 알림 전송")
 
 
 def main():
@@ -238,6 +283,10 @@ def main():
     finally:
         if not a.dry_run:
             gs.save_db(db)
+    try:
+        notify(db, a)
+    except Exception as e:
+        print("알림 실패:", type(e).__name__, e)
 
 
 if __name__ == "__main__":
