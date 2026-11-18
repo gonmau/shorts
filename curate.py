@@ -26,6 +26,18 @@ REJ = []      # 이번 실행에서 폐기한 소재 번호
 REV = {"rewritten": [], "manual": [], "ok": 0}
 
 
+# 직접 검수·수정한 대본 142건(narration_original → narration) 비교에서 나온 규칙 (2026-11)
+EDIT_RULES = [
+    "자료·위키 본문에 없는 숫자·시각·장소·범위를 쓰지 않는다. '~도 금지', '체포' 같은 과장 대신 정확한 표현(예: 밤 12시 이후 클럽 춤 금지)",
+    "짧게 쓴다. 8~10문장, 330~360자 안팎. 같은 말을 되풀이하는 문장과 장식 문장을 뺀다",
+    "첫 문장은 '~알고 계셨나요?' 같은 빈 질문보다 구체적인 사실·숫자·대비를 단정형으로 시작한다 (질문은 구체적 상황을 물을 때만)",
+    "'전해지는 이야기에 따르면', '묘사되곤 합니다', '~하는 경우가 있습니다' 같은 전언·모호체를 쓰지 않는다",
+    "소재와 무관한 나라·사례를 끼워 넣지 않는다 (예: 프랑스 레베 소재에 캐나다 새해 행사)",
+    "귀족·신하·특정 집단을 '국민'·'모두'로 일반화하지 않는다. 일부를 전체로 말하지 않는다",
+    "마지막 문장은 첫 문장의 궁금증에 답하거나 구체적 여운으로 끝낸다 (감상문 같은 마무리 금지)",
+]
+
+
 def load_playbook():
     try:
         return json.loads(PLAYBOOK.read_text(encoding="utf-8"))
@@ -36,15 +48,13 @@ def load_playbook():
 def playbook_text(kind="script"):
     """대본/재작성 프롬프트에 붙일 문장. 없으면 빈 문자열"""
     pb = load_playbook()
-    if not pb:
-        return ""
-    lines = []
+    lines = [f"- 직접 수정 패턴: {x}" for x in EDIT_RULES]
     for key, label in (("hook", "첫 문장(훅) 패턴"), ("flow", "전개 흐름"), ("avoid", "피할 것")):
-        for x in (pb.get(key) or [])[:4]:
+        for x in (pb.get(key) or [])[:3]:
             lines.append(f"- {label}: {x}")
     if not lines:
         return ""
-    return ("\n\n[우리 채널에서 실제로 시청 지속률·조회수가 높았던 영상에서 뽑은 대본 흐름 — 참고용입니다. "
+    return ("\n\n[직접 검수·수정한 대본 142건과 조회수·시청률이 높았던 영상에서 뽑은 규칙 — 참고용입니다. "
             "다른 영상의 문장을 그대로 쓰지 말고 사실은 주어진 자료에서만 가져오세요]\n" + "\n".join(lines))
 
 
@@ -193,10 +203,16 @@ def review_scripts(client, models, db, review_max, dry):
             flagged.append((i, issues))
     print(f"[대본점검] 대상 {len(ids)}개 · 규칙 검사에서 문제 {len(flagged)}개 · 재작성은 최대 {review_max}개")
     flagged.sort(key=lambda x: -(db[x[0]].get("curate_score") or 0))
+    fl = {i for i, _ in flagged}
+    rest = sorted([i for i in ids if i not in fl and not (db[i].get("hook_check") or {}).get("ground_done")],
+                  key=lambda i: -(db[i].get("curate_score") or 0))
+    flagged += [(i, []) for i in rest]          # 규칙 검사를 통과한 대본도 위키 본문과 대조(근거 점검)
     done = 0
     for i, issues in flagged:
         f = db[i]
         if done >= review_max or dry or client is None:
+            if not issues:
+                continue
             f["hook_check"] = {"ok": False, "issues": issues, "rounds": 0, "first": (gs._split_sents(f["narration"]) or [""])[0]}
             f["review_needed"] = True
             REV["manual"].append(i)
@@ -205,6 +221,7 @@ def review_scripts(client, models, db, review_max, dry):
         print(f"  {i} {f.get('country', '')}: " + " / ".join(issues))
         try:
             f["narration"] = gs.refine_script(client, models, f, f["narration"])
+            f.setdefault("hook_check", {})["ground_done"] = True
             f["status"] = "scripted"
             (REV["rewritten"] if not f.get("review_needed") else REV["manual"]).append(i)
         except Exception as e:

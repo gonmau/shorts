@@ -1019,6 +1019,64 @@ def advise_hook(narration):
     return adv
 
 
+def fetch_source(fact, limit=3800):
+    """위키백과 본문(앞부분)을 가져와 fact['source_text'] 에 캐시. 실패하면 빈 문자열"""
+    if fact.get("source_text"):
+        return fact["source_text"]
+    title = fact.get("wiki_title")
+    if not title:
+        return ""
+    try:
+        import requests
+        r = requests.get("https://en.wikipedia.org/w/api.php",
+                         params={"action": "query", "prop": "extracts", "explaintext": 1, "titles": title,
+                                 "format": "json", "redirects": 1},
+                         headers={"User-Agent": "shorts-bot/1.0"}, timeout=20)
+        pages = r.json().get("query", {}).get("pages", {})
+        txt = (list(pages.values())[0].get("extract") or "").strip()
+        txt = re.sub(r"\n{2,}", "\n", txt)[:limit]
+        if txt:
+            fact["source_text"] = txt
+        return txt
+    except Exception as e:
+        print(f"  [근거점검] 위키 본문 가져오기 실패: {type(e).__name__}")
+        return ""
+
+
+def ground_check(client, models, fact, narration):
+    """대본의 각 문장이 위키 본문·자료로 뒷받침되는지 AI가 대조. 근거 없거나 틀린/과장된 문장 목록을 돌려준다(없으면 [])"""
+    if os.environ.get("GROUND_CHECK", "1") == "0":
+        return []
+    src = fetch_source(fact)
+    mat = f"{fact.get('hook', '')} / {fact.get('body', '')} / {fact.get('twist', '')} / {fact.get('caveat', '')}"
+    ref = (src + "\n[요약 자료] " + mat) if src else "[요약 자료] " + mat
+    sents = _split_sents(narration)
+    numbered = "\n".join(f"{i + 1}. {x}" for i, x in enumerate(sents))
+    prompt = f"""아래 [본문]은 이 소재의 근거 자료입니다. 한국어 대본의 각 문장이 [본문]으로 뒷받침되는지 검사하세요.
+문제로 분류할 것: (1) 본문에 없는 숫자·날짜·장소·범위·주장, (2) 본문과 모순되거나 과장된 표현(예: 귀족을 '국민'으로, 일부를 '전체'로), (3) 소재와 무관한 나라·사례 끼워넣기.
+면책·감탄·연결 문장은 문제로 보지 않습니다. 확실한 문제만 고르세요.
+
+[본문]
+{ref}
+
+[대본]
+{numbered}
+
+JSON만 출력: {{"problems": [{{"n": 문장번호, "why": "30자 이내 이유"}}]}}  (문제가 없으면 빈 배열)"""
+    out = ask_models(client, models, "당신은 사실 대조 검수자입니다. JSON만 출력합니다.", prompt, 1200, 2,
+                     lambda t: (lambda m: json.loads(m.group(0)) if m else None)(re.search(r"\{.*\}", t or "", re.S)))
+    if not isinstance(out, dict):
+        return []
+    res = []
+    for p in out.get("problems") or []:
+        try:
+            n = int(p.get("n"))
+            res.append(f"{n}번 문장 '{sents[n - 1][:30]}…' — {str(p.get('why', ''))[:40]}")
+        except Exception:
+            continue
+    return res
+
+
 def _playbook():
     try:
         import curate as _cur
@@ -1043,6 +1101,7 @@ def _rewrite_prompt(fact, narration, issues):
 
 [자료]
 {fact.get('hook', '')} / {fact.get('body', '')} / {fact.get('twist', '')}
+{('[위키 본문 — 사실은 여기서만 가져오세요]' + chr(10) + fact.get('source_text', '')) if fact.get('source_text') else ''}
 
 [원래 대본]
 {narration}
@@ -1056,6 +1115,9 @@ def refine_script(client, models, fact, narration, max_rounds=2):
         return narration
     cur = narration
     issues, n_s, first = check_hook(cur)
+    gp = ground_check(client, models, fact, cur)
+    if gp:
+        issues = issues + ["근거 없음/틀림: " + g for g in gp]
     rounds = 0
     while issues and rounds < max_rounds:
         rounds += 1
@@ -1070,6 +1132,9 @@ def refine_script(client, models, fact, narration, max_rounds=2):
             print(f"  [훅점검] 다시 쓴 대본 탈락: {reason}")
             continue
         new_issues, n_s2, first2 = check_hook(cand)
+        gp2 = ground_check(client, models, fact, cand)
+        if gp2:
+            new_issues = new_issues + ["근거 없음/틀림: " + g for g in gp2]
         if len(new_issues) <= len(issues):   # 나빠지지 않을 때만 교체
             cur, issues, n_s, first = cand, new_issues, n_s2, first2
     fact["hook_check"] = {"ok": not issues, "issues": issues, "advice": advise_hook(cur), "rounds": rounds, "first": first, "sentences": n_s}
