@@ -648,6 +648,17 @@ with T1a:
                           help="비우면 AI가 세계 문화·생활 상식 주제어를 알아서 제안해 위키백과에서 근거 문서를 찾습니다 (나라 무관). 적으면 그 주제어로 문서를 찾습니다. 한국어로 적어도 됩니다") if not EN else ""
     if st.button("소재 만들기", key="st1_make"):
         run(GEN, "--count", str(int(n_topics)), *(["--keywords", tk_kw.strip()] if (tk_kw or "").strip() else []))
+    if os.path.exists("curate.py") and not EN:
+        with st.expander("🧹 소재 자동 선별 · 대본 점검 (조회수 높은 영상 기준)"):
+            st.caption("① 잘된/저조 영상 대본을 비교해 훅·전개 규칙(script_playbook.json)을 만들어 이후 대본 생성에 반영 ② 대기 소재를 1~10점으로 채점해 기준 미만은 폐기(되살리기 가능) ③ 대본 완료·영상 미제작 소재의 대본 점검. Groq 토큰은 소재를 묶어 채점해 아끼고, 한도에 걸리면 거기까지 저장합니다.")
+            cu1, cu2, cu3 = st.columns(3)
+            cu_cut = cu1.number_input("폐기 기준 점수(미만 폐기)", 1, 10, 7, key="cu_cut")
+            cu_top = cu2.number_input("상위 우선 소재 수", 1, 50, 10, key="cu_top")
+            cu_rv = cu3.number_input("대본 재작성 최대 개수", 0, 50, 10, key="cu_rv")
+            cu_dry = st.checkbox("미리보기만 (폐기·수정 안 함)", True, key="cu_dry")
+            if st.button("🧹 선별·점검 실행", key="cu_run"):
+                if run("curate.py", "--cutoff", str(int(cu_cut)), "--top", str(int(cu_top)), "--review-max", str(int(cu_rv)), *(["--dry-run"] if cu_dry else [])):
+                    st.session_state["gh_dirty"] = True
     _db1 = _ld()
     cand1 = [i for i, f in enumerate(_db1) if i >= int(start) and f.get("status") == "unverified"
              and len(str(f.get("narration") or "").strip()) < NARR_MIN]

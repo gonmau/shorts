@@ -180,7 +180,12 @@ def is_bad_narration(text):
 def build_prompt(fact):
     import style_profile as _sp
     import audience as _aud
-    return _sp.apply(_build_prompt_base(fact), "script") + _aud.script_block(fact)
+    try:
+        import curate as _cur
+        _pb = _cur.playbook_text()
+    except Exception:
+        _pb = ""
+    return _sp.apply(_build_prompt_base(fact), "script") + _aud.script_block(fact) + _pb
 
 
 def _build_prompt_base(fact):
@@ -993,10 +998,21 @@ def check_hook(narration):
         mid = sents[max(1, int(len(sents) * 0.3)):int(len(sents) * 0.6) + 1]
         if not any(re.match(r"^(그런데|하지만|그런데도|문제는|더 놀라운|놀랍게도|반전은|그러나|그 이유|여기서)", x) for x in mid):
             issues.append("중반(약 40% 지점)에 전환·재훅 문장이 없음")
+    hedges = len(re.findall(r"전해지는|전해집니다|알려져 있|알려져 있습니다|것으로 보|묘사되|곤 합니다|추정|여겨집니다|경우가 있습니다", narration))
+    if hedges >= 2:
+        issues.append(f"모호한 서술 {hedges}회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것")
     last = sents[-1]
     if re.search(r"구독|좋아요|알림|댓글", last):
         issues.append("마지막이 구독·좋아요 요청")
     return issues, len(sents), first
+
+
+def _playbook():
+    try:
+        import curate as _cur
+        return _cur.playbook_text()
+    except Exception:
+        return ""
 
 
 def _rewrite_prompt(fact, narration, issues):
@@ -1018,7 +1034,7 @@ def _rewrite_prompt(fact, narration, issues):
 
 [원래 대본]
 {narration}
-""".strip()
+""".strip() + _playbook()
 
 
 def refine_script(client, models, fact, narration, max_rounds=2):

@@ -1,0 +1,81 @@
+name: culture-curate
+
+# 소재 자동 선별 + 대본 점검 + 잘된 영상 플롯 분석 (수동 실행 전용, 영상 제작·업로드는 안 함)
+#  1) script_playbook.json : 조회수·시청률 높은 영상 vs 저조한 영상 대본을 비교해 훅·전개 규칙 추출 (대본 생성·재작성 프롬프트에 자동 반영)
+#  2) 대기 소재(미검증·승인) 1~10점 채점 → 기준 미만 폐기(prev_status 보존), 상위 N개 표시
+#  3) 대본 완료·영상 미제작 소재 대본 점검 (규칙 검사는 토큰 0, 재작성은 최대 N개)
+on:
+  workflow_dispatch:
+    inputs:
+      cutoff:
+        description: "이 점수 미만 소재는 폐기 (1~10)"
+        default: "7"
+      top:
+        description: "상위 몇 개를 우선 소재로 표시"
+        default: "10"
+      review_max:
+        description: "대본 재작성 최대 개수 (그록 토큰 절약)"
+        default: "10"
+      dry_run:
+        description: "폐기·수정 없이 결과만 보기"
+        type: boolean
+        default: false
+      force:
+        description: "이미 채점한 소재도 다시 채점"
+        type: boolean
+        default: false
+
+concurrency:
+  group: culture-shorts-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      PYTHONUNBUFFERED: "1"
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: 선별·점검
+        run: |
+          ARGS="--cutoff ${{ github.event.inputs.cutoff || '7' }} --top ${{ github.event.inputs.top || '10' }} --review-max ${{ github.event.inputs.review_max || '10' }}"
+          [ "${{ github.event.inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          [ "${{ github.event.inputs.force }}" = "true" ] && ARGS="$ARGS --force"
+          python curate.py $ARGS
+
+      - name: facts_db.json 커밋
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add facts_db.json script_playbook.json 2>/dev/null || git add facts_db.json
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "chore: 소재 선별·대본 점검 [skip ci]"
+          B="${GITHUB_REF_NAME:-main}"
+          cp facts_db.json /tmp/mine_db.json
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$B" || { sleep 3; continue; }
+            if git merge-base --is-ancestor "origin/$B" HEAD; then git push && exit 0; fi
+            DB_CHANGED=1
+            git diff --quiet "$(git merge-base HEAD "origin/$B")" "origin/$B" -- facts_db.json && DB_CHANGED=0
+            git show "origin/$B:facts_db.json" > /tmp/theirs_db.json 2>/dev/null || DB_CHANGED=0
+            git pull --rebase -X theirs origin "$B" || { git rebase --abort 2>/dev/null || true; sleep 3; continue; }
+            if [ "$DB_CHANGED" = 1 ]; then
+              python merge_remote_db.py /tmp/theirs_db.json /tmp/mine_db.json || true
+              git add facts_db.json script_playbook.json 2>/dev/null || git add facts_db.json
+              git diff --cached --quiet || git commit -q -m "chore: merge facts_db.json [skip ci]"
+            fi
+            git push && exit 0
+            sleep 3
+          done
+          echo "push 실패"; exit 1
