@@ -349,7 +349,7 @@ def _style_panel():
         st.text_area("AI에게 실제로 전달되는 문장 (대본)", _SP.block("script", _P) or "(없음)", height=170, disabled=True, key="sp_prev")
 
 st.caption(_sync_line())
-TD, TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["📊 현황", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
+TD, TB, TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["📊 현황", "⚙ 기본 설정", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
 with T1:
     st.caption("새 소재를 만들고 승인/제외합니다. 직접 소재를 넣거나, 상태·폐기·업로드 기록도 여기서 봅니다.")
     T1a, T1b, T1c, T1d = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록", "📈 트렌드·벤치마크"])
@@ -3833,6 +3833,116 @@ with TS:
     """)
 
 # ---- 작업 후 자동 동기화 (화면을 다 그린 뒤 한 번)
+# ================= ⚙ 기본 설정: 제작 전에 정할 것을 한곳에서 (값은 각 단계 탭의 설정과 같은 값을 공유) =================
+def _gh_api(method, path, body=None):
+    import urllib.request, urllib.error
+    req = urllib.request.Request("https://api.github.com/repos/" + TTS_CFG["gh_repo"] + path, method=method,
+                                 data=(json.dumps(body).encode() if body is not None else None),
+                                 headers={"Authorization": "Bearer " + _gh_token(), "Accept": "application/vnd.github+json", "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r_:
+            t_ = r_.read().decode("utf-8")
+            return True, (json.loads(t_) if t_ else {})
+    except urllib.error.HTTPError as e_:
+        return False, f"HTTP {e_.code}: {e_.read().decode('utf-8', 'replace')[:160]}"
+    except Exception as e_:
+        return False, f"{type(e_).__name__}: {e_}"
+
+_BS_VARS = [("AUTO_RUN", "예약 자동 실행 (off면 모든 예약 실행 중지)", "on"), ("AUTO_UPLOAD", "GitHub 자동 제작 후 유튜브 비공개 업로드 (on일 때만)", "(꺼짐)"),
+            ("PUBLISH_SLOTS", "예약 공개 시각, 한국시간 쉼표 (예: 19:30,21:00 / 비우면 예약 없이 비공개)", "off"),
+            ("YT_THUMBNAIL", "자동 업로드 때 썸네일도 설정 (on)", "(꺼짐)"), ("AUTO_TOPICS", "소재가 부족하면 자동으로 새 소재 만들기", "(기본)"),
+            ("SFX", "효과음", "(기본)"), ("SFX_VOL", "효과음 크기", "(기본)")]
+
+with TB:
+    st.caption("제작 전에 정해둘 기본 설정을 한곳에 모았습니다. 아래 값은 각 단계 탭의 같은 설정과 **같은 값**입니다(어느 쪽에서 바꿔도 반영).")
+    # 1) 한 줄 요약
+    _t = int(TTS_CFG.get("target_sec") or 0)
+    _sm = [f"목소리 {TTS_CFG.get('voice')} · 속도 {int(TTS_CFG.get('rate') or 0):+d}%", f"자막 {CAP_LABELS.get(TTS_CFG.get('caption'), TTS_CFG.get('caption'))}",
+           f"장면 {int(TTS_CFG.get('scenes') or 10)}장", f"대본 길이 {'목표 ' + str(_t) + '초 고정' if _t else '자유(내용에 맞춰 짧게~길게)'}",
+           "AI 이미지 " + ("켬" if TTS_CFG.get("ai_img") else "끔(검색 사진)"), "업로드 때 썸네일 " + ("켬" if TTS_CFG.get("yt_thumb") else "끔")]
+    st.info("**지금 이 설정으로 만들면** → " + " · ".join(_sm))
+    # 2) 바로 바꾸기 (각 탭 위젯과 같은 값)
+    st.markdown("**제작 설정** (GitHub 자동 실행에도 똑같이 적용되는 값)")
+    def _mirror(orig, bs):
+        st.session_state[orig] = st.session_state[bs]
+    def _bs_init(orig, bs, val):
+        st.session_state[bs] = st.session_state.get(orig, val)
+    b1, b2 = st.columns(2)
+    _bs_init("target_sec", "bs_target", int(TTS_CFG.get("target_sec") or 0))
+    b1.slider("목표 대본 길이 (초, 0 = 자유 길이)", 0, 170, key="bs_target", on_change=_mirror, args=("target_sec", "bs_target"),
+              help="0이면 소재에 맞춰 짧게~길게 자유롭게 씁니다. 숫자를 넣으면 그 길이로 고정")
+    _bs_init("scene_n", "bs_scenes", int(TTS_CFG.get("scenes") or 10))
+    b2.select_slider("장면(이미지) 수", options=list(range(6, 31, 2)), key="bs_scenes", on_change=_mirror, args=("scene_n", "bs_scenes"))
+    c1, c2, c3 = st.columns(3)
+    _bs_init("ai_img_cb", "bs_ai", bool(TTS_CFG.get("ai_img")))
+    c1.checkbox("🎨 AI 이미지 생성", key="bs_ai", on_change=_mirror, args=("ai_img_cb", "bs_ai"))
+    _bs_init("up_thumb", "bs_thumb", bool(TTS_CFG.get("yt_thumb")))
+    c2.checkbox("📤 업로드 때 썸네일도", key="bs_thumb", on_change=_mirror, args=("up_thumb", "bs_thumb"))
+    _bs_init("tv_fx_cb", "bs_tv", bool(TTS_CFG.get("tv_fx")))
+    c3.checkbox("📺 TV 켜짐 효과", key="bs_tv", on_change=_mirror, args=("tv_fx_cb", "bs_tv"))
+    st.caption("목소리·속도·자막 방식·음성 엔진·글씨체는 '4 음성' 탭에서 바꿉니다 (값은 이 요약에 표시됨). 이미 만든 대본·음성은 설정을 바꿔도 안 바뀌니 필요하면 '다시 만들기'를 하세요.")
+    # 3) GitHub 반영 상태
+    st.markdown("**GitHub 자동 실행에 반영된 값**")
+    if not _gh_token():
+        st.warning("GITHUB_TOKEN이 없어 GitHub 상태를 확인할 수 없습니다. UI 실행 환경에 GITHUB_TOKEN을 넣으세요.")
+    else:
+        if st.button("🔄 GitHub 상태 불러오기", key="bs_load"):
+            _o1, _d1 = _gh_api("GET", "/contents/pipeline_settings.json")
+            _remote = None
+            if _o1:
+                import base64
+                try:
+                    _remote = json.loads(base64.b64decode(_d1.get("content", "")).decode("utf-8"))
+                except Exception:
+                    _remote = None
+            _o2, _d2 = _gh_api("GET", "/actions/variables?per_page=100")
+            st.session_state["bs_gh"] = {"settings": _remote, "settings_err": None if _o1 else _d1,
+                                         "vars": {v["name"]: v["value"] for v in _d2.get("variables", [])} if _o2 else None, "vars_err": None if _o2 else _d2}
+        _g = st.session_state.get("bs_gh")
+        if _g:
+            try:
+                import pipeline_settings as _ps2
+                _loc = _ps2.shared(TTS_CFG)
+            except Exception:
+                _loc = {}
+            if _g["settings"] is None:
+                st.warning("공유 설정 파일을 GitHub에서 읽지 못했습니다: " + str(_g["settings_err"] or "파일 없음 → 기본값으로 실행됨"))
+            else:
+                _diff = {k: (_loc.get(k), _g["settings"].get(k)) for k in set(_loc) | set(_g["settings"]) if _loc.get(k) != _g["settings"].get(k)}
+                if _diff:
+                    st.warning("PC 설정과 GitHub 값이 다릅니다 (자동 실행은 GitHub 값으로 돌아갑니다): " + ", ".join(f"{k}: PC {a} / GitHub {b}" for k, (a, b) in _diff.items()))
+                    if st.button("⬆ PC 설정을 GitHub에 올리기", key="bs_push"):
+                        st.session_state["ps_push"] = True; st.session_state["gh_dirty"] = True; st.rerun()
+                else:
+                    st.success("공유 설정이 PC와 GitHub에서 같습니다.")
+            if _g["vars"] is None:
+                st.warning("GitHub 변수를 읽지 못했습니다 (토큰에 Actions 변수 읽기 권한 필요): " + str(_g["vars_err"]))
+            else:
+                st.markdown("**GitHub 저장소 변수** (예약·자동 업로드 조건. 여기서 바로 바꿀 수 있고, 안 되면 GitHub Settings → Variables에서)")
+                for _n, _lab, _dflt in _BS_VARS:
+                    v1, v2, v3 = st.columns([3, 2, 1])
+                    v1.write(f"`{_n}` — {_lab}")
+                    _cur = _g["vars"].get(_n)
+                    _nv = v2.text_input(_n, _cur if _cur is not None else "", key="bs_v_" + _n, label_visibility="collapsed", placeholder=f"미설정 → {_dflt}")
+                    if v3.button("저장", key="bs_vs_" + _n) and _nv.strip() != (_cur or ""):
+                        if _cur is None:
+                            _okv, _rv = _gh_api("POST", "/actions/variables", {"name": _n, "value": _nv.strip()})
+                        else:
+                            _okv, _rv = _gh_api("PATCH", "/actions/variables/" + _n, {"name": _n, "value": _nv.strip()})
+                        if _okv:
+                            _g["vars"][_n] = _nv.strip(); st.success(f"{_n} 저장")
+                        else:
+                            st.error(f"저장 실패 (토큰에 Variables 쓰기 권한 필요): {_rv}")
+                _au = _g["vars"].get("AUTO_UPLOAD") == "on"
+                _ps_ = _g["vars"].get("PUBLISH_SLOTS", "off")
+                st.info("**GitHub 자동 제작 조건** → " + ("제작 후 유튜브 비공개 업로드 " + ("(예약 공개 " + _ps_ + ")" if _ps_ not in ("", "off") else "(예약 없음, 비공개로만)") if _au else "업로드 안 함 (AUTO_UPLOAD가 on이 아님: 영상까지만 만들고 업로드 탭에서 직접 올림)")
+                        + " · 예약 자동 실행 " + ("꺼짐" if _g["vars"].get("AUTO_RUN") == "off" else "켜짐") + " · UI '자동 진행'은 영상 렌더링까지만 하고 업로드는 하지 않음")
+    # 4) PC 전용
+    st.markdown("**PC에서만 적용되는 설정** (GitHub 자동 실행에는 반영 안 됨)")
+    st.caption(" · ".join(f"{lab} {'켬' if TTS_CFG.get(k) else '끔'}" for k, lab in (("cross", "대본 교차검증"), ("imgchk", "이미지 자동검증"), ("gh_auto", "GitHub 자동동기화"),
+                                                                                  ("drive_auto", "드라이브 자동 업로드"), ("discord_notify", "디스코드 알림"))) + " — 바꾸는 곳: 각 단계 탭 / '⚙ 관리·동기화'")
+
+
 _shared_settings_sync()
 if st.session_state.get("gh_dirty"):
     st.session_state["gh_dirty"] = False
