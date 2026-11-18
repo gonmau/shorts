@@ -69922,58 +69922,22 @@
     "curate_score": 9,
     "curate_why": "69일·33명·소리 등 구체적 수치·극적 상황",
     "curate_top": true,
-    "redo_ts": 1794974011.4339628,
+    "redo_ts": 1794991799.5615478,
     "need": "curiosity",
     "emotion": "empathy",
     "source_text": "A mining accident began on 5 August 2010 with a cave-in at the San José copper–gold mine in the Atacama Desert, 45 kilometers (28 mi) north of the regional capital of Copiapó, in northern Chile. Thirty-three men were trapped 700 meters (2,300 ft) underground and 5 kilometers (3 mi) from the mine's entrance. They were all rescued 69 days later.\nAlthough Chile is the world's top copper producer, its mines had a history of fatal accidents, with as many as 43 deaths in 2008. The San José mine was owned by the San Esteban Mining Company, which had ignored warnings from the Chilean Safety Administration. This negligence contributed to the collapse and the subsequent rescue operation.\nThe collapse occurred at 14:00 CLT on 5 August 2010 while 34 people were present. One miner escaped, but the remaining 33 were trapped. The group was forced to retreat to an emergency refuge after discovering a safety ladder, required by code, was missing. After the state-owned mining company Codelco took over the rescue efforts from the mine's owners, exploratory boreholes were drilled. Seventeen days after the accident, a note was found taped to a drill bit retrieved to the surface: \"Estamos bien en el Refugio los 33\" (\"We are well in the Refuge – the 33\").\nThe rescue was a multinational effort involving three separate drilling rig teams, nearly every Chilean government ministry, the United States space agency NASA, and numerous international corporations. On 13 October 2010, the men were winched to the surface one at a time in a specially built capsule, as an estimated 5.3 million people watched via live video stream. With few exceptions, the miners were in good medical condition, and no long-term physical effects were anticipated. Private donations covered one-third of the US$20 million rescue cost, with the remainder funded by the mine owners and the government.\nThe San José mine had a history of geological instability, and its owner, the San Esteban Mining Company, had a long record of safety violations. Over the previous dozen years, the company had been fined repeatedly and was responsible for accidents that killed eight people. Lawsuits and investigations into the collapse concluded in August 2013 after three years, with no charges filed.\n== Background ==\nChile's long tradition in mining has made the country the world's top producer of copper. In the 2000–2010 period an average of 34 people per year died in mining accidents in Chile, with a high of 43 in 2008, according to figures from the state regulatory agency \"National Geology and Mining Service\" (Spanish: Servicio Nacional de Geología y Minería de Chile abbreviated to SERNAGEOMIN).\nThe mine is owned by the San Esteban Mining Company, (Spanish: Compañía Minera San Esteban abbreviated to CMSE), a company notorious for operating unsafe mines. According to an official with the non-profit Chilean Safety Association, (Spanish: Asociación Chilena de Seguridad, also known as ACHS) eight workers died at the San José site between 1998 and 2010 while CMSE was fined 42 times between 2004 and 2010 for breaching safety regulations. The mine was shut down temporarily in 2007 when relatives of a miner killed in an accident sued the company; but the mine reopened in 2008 despite non-compliance with regulations. Due to budget constraints, there were only three inspectors for the Atacama Region's 884 mines during the period leading up to the most recent collapse.\nPrior to the accident, CMSE had ignored warnings over unsafe working conditions in its mines. According to Javier Castillo, secretary of the trade union that represents San José's miners, the company's management operates \"without listening to the voice of the workers when they say that there is danger or risk\". \"Nobody listens to us. Then they say we'r",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 5번 문장 '69일째인 10월 13일, 특수 캡슐에 하나씩 끌어올린…' — 마지막 외침 언급은 본문에 없음",
-        "근거 없음/틀림: 7번 문장 '결국, 그들의 마지막 외침은 살아 있음을 증명하는 가장…' — 주장 과장, 근거 없음"
+        "근거 없음/틀림: 4번 문장 '구조팀은 드릴과 펌프를 이용해 작은 구멍을 뚫고, 광부…' — 펌프 사용·통신선 연결은 본문에 없음",
+        "근거 없음/틀림: 7번 문장 '결국 69일 동안 지하에서 외친 그들의 목소리는 “우린…' — 광부가 외친 구체적 내용은 본문에 언급되지 않음"
       ],
-      "advice": [
-        "중반 전환·재훅 문장 없음"
-      ],
+      "advice": [],
       "rounds": 2,
-      "first": "700 미터 아래, 5 km 떨어진 산 호세 광산에 33 명의 광부가 69일째 갇혔습니다.",
+      "first": "33명의 광부가 69일째 지하에서 구조될 때, 그들은 어떤 소리를 냈을까요?",
       "sentences": 7
     },
     "review_needed": true,
-    "narration": "700 미터 아래, 5 km 떨어진 산 호세 광산에 33 명의 광부가 69일째 갇혔습니다.  \n\n2010년 8월 5일, 붕괴 직후 한 명만 탈출하고 나머지는 비상 피난처로 이동했으며, 안전 사다리가 없던 점이 큰 원인이었습니다. 구조팀은 국제적인 드릴링 작전을 시작해 17일째에 “Estamos bien en el Refugio los 33”(우리는 피난처에서 괜찮습니다)라는 메모를 발견했습니다.  \n\n미국 NASA와 칠레 정부, 여러 기업이 협력해 3개의 드릴링 장비로 구멍을 뚫고, 물·식량·통신 장치를 전달했습니다. 69일째인 10월 13일, 특수 캡슐에 하나씩 끌어올린 33 명은 모두 무사히 지상에 나왔고, 마지막으로 외친 말은 바로 그 메모와 동일한 “Estamos bien”.  \n\n이 사건은 안전 규정을 무시한 산 에스테반 광산 회사의 책임을 드러내며, 2008년에만 43 명의 사망자를 낸 칠레 광산 사고의 어두운 연속성을 보여줍니다. 결국, 그들의 마지막 외침은 살아 있음을 증명하는 가장 강력한 증언이었습니다.",
-    "title_line1": "산 호세 광산 붕괴",
-    "title_line2": "69일 뒤 외친 우리는 괜찮아",
-    "highlights": [
-      {
-        "s": 1,
-        "text": "*갇힌* 33명"
-      },
-      {
-        "s": 3,
-        "text": "*메모* 발견"
-      },
-      {
-        "s": 5,
-        "text": "10월 13일 *구조*"
-      },
-      {
-        "s": 7,
-        "text": "마지막 외침 *생존*"
-      }
-    ],
-    "image_queries": [
-      "trapped miners Chile",
-      "collapsed mine shaft",
-      "found mine rescue note",
-      "NASA drilling rig Chile",
-      "October mine rescue capsule",
-      "unsafe mine tunnel",
-      "survivors final shout",
-      "2010 Copiapó mining accident",
-      "Chile landmark",
-      "Chile culture"
-    ],
     "scene_count": 10,
     "infographic": {
       "on": true,
@@ -70006,10 +69970,6 @@
       ],
       "none": false
     },
-    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0631_칠레_v2.mp3",
-    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0631_칠레_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "ai_prompts": [
       "A dim underground tunnel 700 meters below the surface, showing a cramped refuge chamber with 33 silhouetted figures huddled together, illuminated by a single hanging lamp, viewed from a low angle.",
       "A chaotic mine collapse scene on August 5, 2010, with dust clouds and a lone miner emerging from a broken shaft while others scramble toward a makeshift shelter, captured from a wide aerial perspective.",
@@ -70037,45 +69997,58 @@
     "image_credits": [
       {
         "scene": 1,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A dim underground tunnel 700 meters below the surface, showing a cramped refuge "
+        "source": "pixabay",
+        "user": "hangela",
+        "page": "https://pixabay.com/photos/coal-black-black-and-white-1626401/",
+        "id": 1626401
       },
       {
         "scene": 2,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A chaotic mine collapse scene on August 5, 2010, with dust clouds and a lone min"
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/san-jose-california-university-92464/",
+        "id": 92464
       },
       {
         "scene": 3,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A chaotic mine collapse scene on August 5, 2010, with dust clouds and a lone min"
+        "source": "pixabay",
+        "user": "hangela",
+        "page": "https://pixabay.com/photos/coal-black-mineral-underground-1626368/",
+        "id": 1626368
       },
       {
         "scene": 4,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A drilling rig perched on the mountain surface, its drill pipe extending down in"
+        "source": "pixabay",
+        "user": "CJ",
+        "page": "https://pixabay.com/photos/auger-dig-dirt-excavation-digging-804349/",
+        "id": 804349
       },
       {
         "scene": 5,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A drilling rig perched on the mountain surface, its drill pipe extending down in"
+        "source": "commons",
+        "user": "The White House from Washington, DC",
+        "license": "Public domain",
+        "title": "Phil Schiliro, Kevin Stricklin, Joe Main, Greg Wagner, Barack Obama, and Hilda L. Solis, 2",
+        "page": "https://commons.wikimedia.org/wiki/File:Phil_Schiliro,_Kevin_Stricklin,_Joe_Main,_Greg_Wagner,_Barack_Obama,_and_Hilda_L._Solis,_2010.jpg",
+        "id": "c:51870972"
       },
       {
         "scene": 6,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "Three massive drilling machines operating side by side on a barren hillside, eac"
+        "source": "commons",
+        "user": "desierto_atacama",
+        "license": "CC BY-SA 2.0",
+        "title": "Mina San José de Copiapó en 2010.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mina_San_Jos%C3%A9_de_Copiap%C3%B3_en_2010.jpg",
+        "id": "c:11152133"
       },
       {
         "scene": 7,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "A sunrise over the mine entrance as a special rescue capsule lifts a miner out, "
+        "source": "commons",
+        "user": "Secretaria de Comunicaciones from Chile",
+        "license": "CC BY 2.0",
+        "title": "Osman Araya (5078000302).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Osman_Araya_(5078000302).jpg",
+        "id": "c:26312893"
       },
       {
         "scene": 8,
@@ -70097,23 +70070,56 @@
       }
     ],
     "image_queries_done": [
-      "trapped miners Chile",
-      "collapsed mine shaft",
-      "found mine rescue note",
-      "NASA drilling rig Chile",
-      "October mine rescue capsule",
-      "unsafe mine tunnel",
-      "survivors final shout",
+      "miners shouting underground",
+      "San Jose mine collapse Chile",
+      "deep underground mine shaft",
+      "drill hole communication line",
+      "mining company safety negligence",
+      "mining accident statistics Chile",
+      "miners emerging after rescue",
       "2010 Copiapó mining accident",
       "Chile landmark",
       "Chile culture"
     ],
-    "image_source": "commons",
+    "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0631_칠레.srt",
-    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0631_칠레.mp4",
-    "status_v6": "video_done",
     "youtube_id": "KOtdZ7_dbNU",
-    "uploaded_at": "2026-11-18T13:00:13.636889+09:00"
+    "uploaded_at": "2026-11-18T13:00:13.636889+09:00",
+    "narration": "33명의 광부가 69일째 지하에서 구조될 때, 그들은 어떤 소리를 냈을까요?  \n\n2010년 8월 5일, 칠레 아타카마 사막에 위치한 산 호세 구리·금 광산이 붕괴했습니다. 붕괴된 채굴 현장은 깊이 700미터, 입구에서 5 km 떨어진 곳까지 이어졌고, 그 안에 33명이 갇혔습니다. 구조팀은 드릴과 펌프를 이용해 작은 구멍을 뚫고, 광부들의 위치를 파악해 서서히 통신선을 연결했습니다.  \n\n그런데 구조가 성공하기 전, 같은 광산을 운영하던 산 에스테반 회사는 안전 당국의 경고를 무시했으며, 이는 사고의 직접적인 원인으로 지적됩니다.  \n\n구조가 마무리된 뒤에도, 2008년 한 해에만 43명의 사망자를 낸 채굴 사고가 이어지고 있었다는 사실은, 안전 관리가 여전히 미흡했음을 보여줍니다.  \n\n결국 69일 동안 지하에서 외친 그들의 목소리는 “우린 살아 있다”는 간단한 외침이었고, 그 소리는 전 세계에 광산 안전의 중요성을 다시 일깨워 주었습니다.",
+    "title_line1": "칠레 산 호세 69일",
+    "title_line2": "그들이 외친 마지막 소리?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "33명, *생존* 외침"
+      },
+      {
+        "s": 4,
+        "text": "드릴로 *연결*된 통신"
+      },
+      {
+        "s": 7,
+        "text": "69일 뒤 *구조* 성공"
+      }
+    ],
+    "image_queries": [
+      "miners shouting underground",
+      "San Jose mine collapse Chile",
+      "deep underground mine shaft",
+      "drill hole communication line",
+      "mining company safety negligence",
+      "mining accident statistics Chile",
+      "miners emerging after rescue",
+      "2010 Copiapó mining accident",
+      "Chile landmark",
+      "Chile culture"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0631_칠레_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0631_칠레_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0631_칠레.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "키스가 인사·의례가 되는 순간",
