@@ -809,6 +809,8 @@ with T6a:
         json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
     _dmax = st.number_input("하루 업로드 상한 (오늘 올린 개수 포함, 한국시간 기준)", 1, 50, int(os.environ.get("DAILY_MAX", "20") or 20), key="up_dmax",
                             help="오늘 이미 올린 개수가 이 값에 닿으면 더 안 올립니다. 늘리면 그만큼 더 올라갑니다 (유튜브 API 일일 할당량도 고려하세요)")
+    if st.button("🔄 목록 새로고침", key="up_refresh", help="방금 영상을 만들었는데 목록에 안 보이면 눌러 주세요 (탭을 옮겨도 화면은 자동으로 다시 계산되지 않습니다)"):
+        st.rerun()
     _ud = _ld()
     _upl = []
     for _i, _f in enumerate(_ud):
