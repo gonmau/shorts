@@ -90,6 +90,8 @@ def main():
             changed += 1
             print(f"  [{idx}] {item.get('country', '')}: 제외 처리 ({item['reject_reason']})")
             continue
+        if item.get("video_path_v6") or item.get("status_v6") == "video_done" or item.get("status") == "video_done":
+            continue    # 영상이 이미 끝난 소재는 review.txt 의 옛 내용으로 덮어쓰지 않는다
         before = (item.get("title_line1"), item.get("title_line2"), item.get("highlights"))
         if b["t1"]:
             item["title_line1"] = b["t1"]
