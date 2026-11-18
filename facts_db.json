@@ -58319,7 +58319,7 @@
     "verify_note": "Brahminism",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:32.159091+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58364,12 +58364,119 @@
       "anti-Brahmin movement rally",
       "caste criticism artwork",
       "Indian village street",
-      "class divided road"
+      "class divided road",
+      "Brahminism"
     ],
     "scene_count": 10,
     "curate_score": 8,
     "curate_why": "카스트 고정, 강렬·사회적 논쟁",
-    "curate_top": true
+    "curate_top": true,
+    "ai_prompts": [
+      "A newborn baby swaddled in a simple cloth lies on a wooden floor of an ancient Indian household, viewed from a low angle, emphasizing the surrounding caste symbols on the walls.",
+      "A family ceremony where a child receives a caste marker—colored thread and sacred ash—captured from a side profile, showing elders in traditional attire within a courtyard.",
+      "An elderly Brahmin scholar seated on a raised platform, surrounded by ancient manuscripts, shot from a high angle to highlight the hierarchical architecture of a temple library.",
+      "A generational portrait of a Brahmin lineage: three men in successive traditional robes standing in a temple corridor, photographed from a diagonal angle to convey continuity of power.",
+      "A young boy in a modest village home wearing a carpenter's apron, with a distant temple silhouette, captured from a front‑wide angle showing limited occupational options.",
+      "A peaceful protest of Dalit and Bahujan activists holding candles, filmed from a low, ground‑level perspective to emphasize their determination against caste oppression.",
+      "A group of Dalit students studying together under a lantern in a modest classroom, viewed from an overhead angle that highlights equality in education.",
+      "A dynamic street mural depicting broken caste chains, painted on a brick wall, captured from a tilted angle to convey rebellion against traditional norms.",
+      "A modern Indian cityscape at dusk with diverse crowds crossing a bridge, photographed from a wide aerial view to illustrate ongoing societal transformation.",
+      "A contemplative silhouette of a person standing at a crossroads between two ancient stone pillars, shot from a side angle, symbolizing the lingering question of birth‑determined destiny."
+    ],
+    "ai_prompts_done": [
+      "A newborn baby swaddled in a simple cloth lies on a wooden floor of an ancient Indian household, viewed from a low angle, emphasizing the surrounding caste symbols on the walls.",
+      "A family ceremony where a child receives a caste marker—colored thread and sacred ash—captured from a side profile, showing elders in traditional attire within a courtyard.",
+      "An elderly Brahmin scholar seated on a raised platform, surrounded by ancient manuscripts, shot from a high angle to highlight the hierarchical architecture of a temple library.",
+      "A generational portrait of a Brahmin lineage: three men in successive traditional robes standing in a temple corridor, photographed from a diagonal angle to convey continuity of power.",
+      "A young boy in a modest village home wearing a carpenter's apron, with a distant temple silhouette, captured from a front‑wide angle showing limited occupational options.",
+      "A peaceful protest of Dalit and Bahujan activists holding candles, filmed from a low, ground‑level perspective to emphasize their determination against caste oppression.",
+      "A group of Dalit students studying together under a lantern in a modest classroom, viewed from an overhead angle that highlights equality in education.",
+      "A dynamic street mural depicting broken caste chains, painted on a brick wall, captured from a tilted angle to convey rebellion against traditional norms.",
+      "A modern Indian cityscape at dusk with diverse crowds crossing a bridge, photographed from a wide aerial view to illustrate ongoing societal transformation.",
+      "A contemplative silhouette of a person standing at a crossroads between two ancient stone pillars, shot from a side angle, symbolizing the lingering question of birth‑determined destiny."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A newborn baby swaddled in a simple cloth lies on a wooden floor of an ancient I"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A family ceremony where a child receives a caste marker—colored thread and sacre"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An elderly Brahmin scholar seated on a raised platform, surrounded by ancient ma"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A generational portrait of a Brahmin lineage: three men in successive traditiona"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A young boy in a modest village home wearing a carpenter's apron, with a distant"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A peaceful protest of Dalit and Bahujan activists holding candles, filmed from a"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A group of Dalit students studying together under a lantern in a modest classroo"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dynamic street mural depicting broken caste chains, painted on a brick wall, c"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A modern Indian cityscape at dusk with diverse crowds crossing a bridge, photogr"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A contemplative silhouette of a person standing at a crossroads between two anci"
+      }
+    ],
+    "image_queries_done": [
+      "class ladder illustration",
+      "caste birth marker",
+      "Brahminism ritual symbols",
+      "traditional Indian occupation tools",
+      "Indian protest crowd",
+      "anti-Brahmin movement rally",
+      "caste criticism artwork",
+      "Indian village street",
+      "class divided road",
+      "Brahminism"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0495_인도_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0495_인도_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0495_인도.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0495_인도.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "태국 요리 4가지 분류와 세계 최고 음식 7개",
@@ -60536,7 +60643,7 @@
     "verify_note": "Muslim Brotherhood in Egypt",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60549,7 +60656,85 @@
     },
     "curate_score": 8,
     "curate_why": "대규모 비밀 모임과 탄압",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The Muslim Brotherhood in Egypt (Arabic: جماعة الإخوان المسلمين Jamāʿat al-Ikhwān al-Muslimūn/al-Ikhwan/el-ekhwan al-muslimīn, IPA: [elʔexˈwæːn]) is the Egyptian branch of the Muslim Brotherhood, with adherents estimated to number between 2 and 2.5 million. Founded by Hassan al-Banna in 1928, the group spread to other Muslim countries but has its largest organization in Egypt, despite government crackdowns in 1948, 1954, 1965, 1979, 1981 and 2013, after plots, or alleged plots, of assassination and overthrow were uncovered.\nFollowing the 2011 Egyptian revolution, it launched a political party—the Freedom and Justice Party—to contest elections, which it described as having \"the same mission and goals, but different roles\" than the Brotherhood, and agreeing to honor all Egypt's international agreements. The party won 42% of the seats in the 2011–12 parliamentary elections, and its candidate, Mohamed Morsi, the June 2012 presidential election. Morsi was overthrown by the army within a year, and a crackdown ensued that some have called more damaging to the movement than any \"in eight decades\". Hundreds of members were killed and imprisoned, including Morsi and most of the Brotherhood's leadership. In September 2013, an Egyptian court banned the Brotherhood and its associations, and ordered that its assets be seized; and in December the military-backed interim government declared the movement a terrorist group following the bombing of security directorate building in Mansoura. The Brotherhood denied being responsible for the attack and Ansar Bait al-Maqdis, an al-Qaeda-linked group, claimed responsibility. They also issued a statement condemning violence.\n== History ==\n=== Under the monarchy ===\nThe Muslim Brotherhood was founded in 1928 by Hassan al-Banna, an Egyptian schoolteacher, who preached implementing traditional Islamic Sharia law in all aspects of life, from everyday problems to the organization of the government. Inspired by Islamic reformers Muhammad Abduh and Rashid Rida, he believed that Islam had lost its social dominance to corrupt Western influences and British imperial rule.\nThe organization initially focused on educational and charitable work, but quickly grew to become a major political force as well. (Sources disagree as to whether the Brotherhood was hostile to independent working-class and popular organisations, or supported efforts to create trades unions and unemployment benefits.) It championed the cause of poor Muslims, and played a prominent role in the Egyptian nationalist movement, fighting the British, Egypt's occupier/dominator. It engaged in espionage and sabotage, as well as support for activities orchestrated by Haj Amin al-Husseini in British Mandate Palestine, and up to and during World War II some association with Britain's enemy, the German Nazis, dissemination of anti-Jewish and anti-Western propaganda.\nOver the years, the Brotherhood spread to other Muslim countries, including Syria Jordan, Tunisia, etc. as well as countries where Muslims are in the minority. These groups are sometimes described as \"very loosely affiliated\" with the Egyptian branch and each other.\nIn November 1948, following several bombings and assassination attempts, the government arrested 32 leaders of the Brotherhood's \"secret apparatus\" and banned the Brotherhood. At this time the Brotherhood was estimated to have 2000 branches and 500,000 members or sympathizers. In succeeding months Egypt's prime minister was assassinated by Brotherhood member Abdel Meguid Ahmed Hassan, and following that Al-Banna himself was assassinated in what is thought to be a cycle of retaliation.\nIn 1952, members of the Muslim Brotherhood were accused of taking part in an event that marked the end of Egypt's \"liberal, progressive, cosmopolitan\" er",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "정부가 6번이나 탄압했는데도 2~2.5백만 명이 몰래 모인다면, 그 비밀은 어디에 있을까요?",
+      "sentences": 7
+    },
+    "narration": "정부가 6번이나 탄압했는데도 2~2.5백만 명이 몰래 모인다면, 그 비밀은 어디에 있을까요?  \n\n무슬림형제단은 1928년 하산 알‑바나에 의해 설립돼 이집트에서 가장 큰 종교·정치 조직으로 자리 잡았습니다. 1948·1954·1965·1979·1981·2013년에 각각 정부의 강력한 탄압을 받았지만, 추정치이긴 해도 여전히 수백만 명이 신조를 따르고 있습니다.  \n\n그런데 이들은 단순한 비밀 결사에 머물지 않았습니다. 자유와 정의당이라는 정치당을 조직해 선거에 직접 도전했고, 공식적인 정치 무대에서도 영향력을 행사했습니다.  \n\n정확한 회원 수는 확인되지 않지만, 반복된 탄압에도 불구하고 그 규모가 사라지지 않는 이유는 바로 이 정치적 참여와 조직의 지속적인 네트워크에 있습니다.  \n\n결국, “왜 정부가 6번이나 탄압했는데도 이렇게 큰 규모를 유지할 수 있나요?”라는 질문은, 그들이 비밀 모임을 넘어 공개적인 정치 활동까지 확장했기 때문이라는 답으로 이어집니다.",
+    "title_line1": "이집트 무슬림형제단",
+    "title_line2": "6번 탄압, 수백만 모임?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "6번에도 *수백만*"
+      },
+      {
+        "s": 3,
+        "text": "여전한 *수백만* 신도"
+      },
+      {
+        "s": 5,
+        "text": "정당 *자유와정의당*"
+      },
+      {
+        "s": 7,
+        "text": "비밀→*공개* 정치"
+      }
+    ],
+    "image_queries": [
+      "underground meeting crowd Egypt",
+      "historic Egyptian organization building",
+      "large gathering of worshippers Egypt",
+      "closed door meeting Egypt",
+      "Egypt political rally",
+      "network of activists Egypt",
+      "public political protest Egypt"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "탄압 연도와 사건",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1948",
+          "value": null,
+          "text": "정부 탄압"
+        },
+        {
+          "label": "1954",
+          "value": null,
+          "text": "정부 탄압"
+        },
+        {
+          "label": "1965",
+          "value": null,
+          "text": "정부 탄압"
+        },
+        {
+          "label": "1979",
+          "value": null,
+          "text": "정부 탄압"
+        },
+        {
+          "label": "1981",
+          "value": null,
+          "text": "정부 탄압"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "일본식 인사의 기원과 의미 변화",
@@ -71375,8 +71560,8 @@
     "status": "video_done",
     "need": "curiosity",
     "narration": "시속 66km로 대서양을 질주한 여객선! 하지만 이 배를 무릎 꿇린 경쟁자가 등장합니다. 1952년,  첫 항해에서 SS United States는 대서양을 3일 10시간 40분 만에 횡단했습니다. 평균 35.59노트! 도대체 왜 이렇게 빨랐을까요? 그 이유는 전쟁시 군용 수송선으로 바꿔 대규모 병력을 빠르게 실어 나르도록 설계된 것이었습니다. 실제 전쟁에는 투입되지 않았지만, 대서양 횡단 정기 여객선 최고 속도 기록은 지금까지도 유지되고 있습니다. 군용으로 설계되어 기술력이 엄청나서 일까요? 아닙니다. 기록이 깨지지 않는 이유는 1958년 제트 여객기가 등장하면서 승객들이 비행기로 이동했고, 빠른 여객선을 만들 이유 자체가 사라졌기 때문입니다. 결국 1969년 운항을 중단한 이 배는 2026년 11월 11일 플로리다 앞바다에서 인공 암초가 됐습니다. 대서양 횡단 최고 기록을 간직한 채 말이죠.",
-    "title_line1": "초대형 여객선 질주",
-    "title_line2": "기록 깨지 못한 이유?",
+    "title_line1": "시속 66km 여객선의 숨겨진 비밀",
+    "title_line2": "전쟁이 나면 14,000명을 태운다?",
     "highlights": [
       {
         "s": 1,
