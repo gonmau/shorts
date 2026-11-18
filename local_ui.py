@@ -382,19 +382,19 @@ with TH:
 
 with T4a:
     t1, t2, t3 = st.columns(3)
-    TTS_CFG["voice"] = t1.selectbox("Supertonic 목소리 (F=여성, M=남성)", ST_VOICES, ST_VOICES.index(TTS_CFG["voice"]) if TTS_CFG["voice"] in ST_VOICES else 0,
+    TTS_CFG["voice"] = t1.selectbox("Supertonic 목소리 (F=여성, M=남성)", ST_VOICES, ST_VOICES.index(TTS_CFG["voice"]) if TTS_CFG["voice"] in ST_VOICES else 0, key="v_voice",
                                     help="기본 음성 엔진. 아래 '미리듣기'로 들어보고 고르세요")
-    TTS_CFG["rate"] = t2.slider("속도 (%)", -20, 30, int(TTS_CFG["rate"]), 1,
+    TTS_CFG["rate"] = t2.slider("속도 (%)", -20, 30, int(TTS_CFG["rate"]), 1, key="v_rate",
                                 help="0=기본. 느리게는 -, 빠르게는 +. 빠를수록 영상이 짧아집니다")
     if int(TTS_CFG["rate"]) > 10:
         st.caption("⚠️ 속도를 +10% 넘게 올리면 Supertonic 음성의 문장 끝이 잘리거나 덜 발음될 수 있습니다 (내부적으로 1.2배 상한을 둡니다). 0~+5% 권장.")
-    TTS_CFG["edge"] = t3.selectbox("Edge 음성", EDGE_VOICES, EDGE_VOICES.index(TTS_CFG["edge"]) if TTS_CFG["edge"] in EDGE_VOICES else 0)
+    TTS_CFG["edge"] = t3.selectbox("Edge 음성", EDGE_VOICES, EDGE_VOICES.index(TTS_CFG["edge"]) if TTS_CFG["edge"] in EDGE_VOICES else 0, key="v_edge")
     _ek = list(ENGINE_LABELS)
-    TTS_CFG["engine"] = st.radio("음성 엔진", _ek, _ek.index(TTS_CFG["engine"]) if TTS_CFG["engine"] in _ek else 0, horizontal=True,
+    TTS_CFG["engine"] = st.radio("음성 엔진", _ek, _ek.index(TTS_CFG["engine"]) if TTS_CFG["engine"] in _ek else 0, horizontal=True, key="v_engine",
                                  format_func=lambda k: ENGINE_LABELS[k],
                                  help="Edge는 마이크로소프트 서버를 쓰므로 인터넷이 필요하고, 막히면(403 등) 실패합니다. 안 되면 pip install -U edge-tts 후 다시 시도하세요")
     _ck = list(CAP_LABELS)
-    TTS_CFG["caption"] = st.radio("자막 방식", _ck, _ck.index(TTS_CFG["caption"]) if TTS_CFG["caption"] in _ck else 0, horizontal=True,
+    TTS_CFG["caption"] = st.radio("자막 방식", _ck, _ck.index(TTS_CFG["caption"]) if TTS_CFG["caption"] in _ck else 0, horizontal=True, key="v_caption",
                                   format_func=lambda k: CAP_LABELS[k],
                                   help="대본 자막: 음성 속도에 맞춰 대본을 보여줌 / 핵심 문구: 대본 중 강조 문구만 (review.txt의 핵심 줄 사용) / SRT만: 영상엔 자막 없이 .srt 파일만 (유튜브 스튜디오에서 올리면 시청자가 켜고 끌 수 있음). .srt 파일은 어떤 방식이든 같이 만들어집니다. 롱폼은 핵심 문구 방식이 없어 대본 자막으로 나옵니다. 둘 다: 아래엔 대본 자막, 이미지 위쪽엔 핵심 문구(쇼츠만)")
     TTS_CFG["tv_fx"] = st.checkbox("📺 영상 처음·끝에 옛날 TV 켜짐/꺼짐 효과", bool(TTS_CFG.get("tv_fx")), key="tv_fx_cb",
@@ -3867,6 +3867,17 @@ with TB:
         st.session_state[orig] = st.session_state[bs]
     def _bs_init(orig, bs, val):
         st.session_state[bs] = st.session_state.get(orig, val)
+    v1_, v2_, v3_ = st.columns(3)
+    _bs_init("v_voice", "bs_voice", TTS_CFG.get("voice"))
+    v1_.selectbox("Supertonic 목소리", ST_VOICES, key="bs_voice", on_change=_mirror, args=("v_voice", "bs_voice"))
+    _bs_init("v_rate", "bs_rate", int(TTS_CFG.get("rate") or 0))
+    v2_.slider("속도 (%)", -20, 30, key="bs_rate", on_change=_mirror, args=("v_rate", "bs_rate"), help="0~+5% 권장")
+    _bs_init("v_edge", "bs_edge", TTS_CFG.get("edge"))
+    v3_.selectbox("Edge 음성", EDGE_VOICES, key="bs_edge", on_change=_mirror, args=("v_edge", "bs_edge"))
+    _bs_init("v_engine", "bs_engine", TTS_CFG.get("engine"))
+    st.radio("음성 엔진", list(ENGINE_LABELS), key="bs_engine", horizontal=True, format_func=lambda k: ENGINE_LABELS[k], on_change=_mirror, args=("v_engine", "bs_engine"))
+    _bs_init("v_caption", "bs_caption", TTS_CFG.get("caption"))
+    st.radio("자막 방식", list(CAP_LABELS), key="bs_caption", horizontal=True, format_func=lambda k: CAP_LABELS[k], on_change=_mirror, args=("v_caption", "bs_caption"))
     b1, b2 = st.columns(2)
     _bs_init("target_sec", "bs_target", int(TTS_CFG.get("target_sec") or 0))
     b1.slider("목표 대본 길이 (초, 0 = 자유 길이)", 0, 170, key="bs_target", on_change=_mirror, args=("target_sec", "bs_target"),
@@ -3880,7 +3891,7 @@ with TB:
     c2.checkbox("📤 업로드 때 썸네일도", key="bs_thumb", on_change=_mirror, args=("up_thumb", "bs_thumb"))
     _bs_init("tv_fx_cb", "bs_tv", bool(TTS_CFG.get("tv_fx")))
     c3.checkbox("📺 TV 켜짐 효과", key="bs_tv", on_change=_mirror, args=("tv_fx_cb", "bs_tv"))
-    st.caption("목소리·속도·자막 방식·음성 엔진·글씨체는 '4 음성' 탭에서 바꿉니다 (값은 이 요약에 표시됨). 이미 만든 대본·음성은 설정을 바꿔도 안 바뀌니 필요하면 '다시 만들기'를 하세요.")
+    st.caption("글씨체는 '4 음성' 탭에서 바꿉니다. 이미 만든 대본·음성은 설정을 바꿔도 안 바뀌니 필요하면 '다시 만들기'를 하세요.")
     # 3) GitHub 반영 상태
     st.markdown("**GitHub 자동 실행에 반영된 값**")
     if not _gh_token():
