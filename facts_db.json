@@ -56412,8 +56412,7 @@
       "royal attire speech balcony",
       "empty palace hallway",
       "Levee reenactment celebration",
-      "historic royal greeting display",
-      "Levee (ceremony)"
+      "historic royal greeting display"
     ],
     "scene_count": 8,
     "grounding": {
@@ -56532,7 +56531,7 @@
     "verify_note": "Eid al-Adha",
     "confidence": "source",
     "created_at": "2026-11-01T10:14:25.849204+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "축제 하루만? 모로코에서는 4일 연속 양을 잡는다! 이슬람의 두 번째 큰 명절, 이드 알‑아드하가 시작되면 아침 기도 후 가축을 희생합니다. 그리고 그날을 포함해 뒤이어 3일, 총 4일 동안 축하 행사가 이어지죠. 그런데 이 기간 동안 모로코 거리마다 양이 팔리며, 사람들은 직접 고기를 구입해 가족·친구와 나눠 먹습니다. 가축을 희생하는 이유는 전통적으로 이드 알‑아드하가 아브라함이 자신의 아들을 바치려 했던 이야기를 기념하기 때문이며, 고기를 나누는 행위는 공동체의 연대를 강조합니다. 이 관습은 모로코를 포함한 여러 이슬람 국가에서 적용됩니다. 네 날 연속 이어지는 양고기 향이 거리마다 퍼지는 모습, 바로 그때 이드 알‑아드하의 진정한 의미가 살아 숨 쉬는 순간입니다.",
     "cross_checked": true,
     "cross_sources": 2,
@@ -56588,7 +56587,97 @@
     },
     "curate_score": 7,
     "curate_why": "숫자·4일·양희생, 시각적·충격",
-    "curate_top": true
+    "curate_top": true,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0475_모로코_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0475_모로코_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A bustling Moroccan market square at sunrise, vendors arranging live lambs on wooden stalls, wide-angle view from above, colorful textiles and lanterns surrounding the scene, no people faces visible.",
+      "A group of shepherds in traditional Moroccan attire herding a flock of lambs across a sun‑lit desert plain, low-angle shot from the ground looking up at the moving herd.",
+      "Inside a modest Moroccan mosque courtyard, worshippers in prayer rows facing a sunrise sky, a single sacrificed lamb on an altar, captured from a side perspective, no facial details.",
+      "A festive street parade in Fez with families carrying decorated trays of cooked lamb, overhead drone view showing colorful banners and crowds, emphasizing movement over individual faces.",
+      "A bustling street vendor stall in Marrakech selling roasted lamb on skewers, close-up from a table level showing sizzling meat, smoke curling, hands without identifiable faces serving customers.",
+      "A communal outdoor feast under a large tent in a Moroccan village, long tables laden with lamb dishes, aerial shot highlighting the spread and the sense of unity, no individual faces.",
+      "A panoramic view of multiple Moroccan towns simultaneously celebrating Eid al‑Adha, with smoke from grills rising, distant silhouettes of people sharing meals, captured from a high hilltop perspective.",
+      "A narrow alleyway in Casablanca at dusk, aromatic steam wafts from street grills, lantern light flickers, camera positioned at eye level looking down the lane, evoking the lingering scent of lamb."
+    ],
+    "ai_prompts_done": [
+      "A bustling Moroccan market square at sunrise, vendors arranging live lambs on wooden stalls, wide-angle view from above, colorful textiles and lanterns surrounding the scene, no people faces visible.",
+      "A group of shepherds in traditional Moroccan attire herding a flock of lambs across a sun‑lit desert plain, low-angle shot from the ground looking up at the moving herd.",
+      "Inside a modest Moroccan mosque courtyard, worshippers in prayer rows facing a sunrise sky, a single sacrificed lamb on an altar, captured from a side perspective, no facial details.",
+      "A festive street parade in Fez with families carrying decorated trays of cooked lamb, overhead drone view showing colorful banners and crowds, emphasizing movement over individual faces.",
+      "A bustling street vendor stall in Marrakech selling roasted lamb on skewers, close-up from a table level showing sizzling meat, smoke curling, hands without identifiable faces serving customers.",
+      "A communal outdoor feast under a large tent in a Moroccan village, long tables laden with lamb dishes, aerial shot highlighting the spread and the sense of unity, no individual faces.",
+      "A panoramic view of multiple Moroccan towns simultaneously celebrating Eid al‑Adha, with smoke from grills rising, distant silhouettes of people sharing meals, captured from a high hilltop perspective.",
+      "A narrow alleyway in Casablanca at dusk, aromatic steam wafts from street grills, lantern light flickers, camera positioned at eye level looking down the lane, evoking the lingering scent of lamb."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A bustling Moroccan market square at sunrise, vendors arranging live lambs on wo"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A group of shepherds in traditional Moroccan attire herding a flock of lambs acr"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Inside a modest Moroccan mosque courtyard, worshippers in prayer rows facing a s"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A festive street parade in Fez with families carrying decorated trays of cooked "
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A bustling street vendor stall in Marrakech selling roasted lamb on skewers, clo"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A communal outdoor feast under a large tent in a Moroccan village, long tables l"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A panoramic view of multiple Moroccan towns simultaneously celebrating Eid al‑Ad"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A narrow alleyway in Casablanca at dusk, aromatic steam wafts from street grills"
+      }
+    ],
+    "image_queries_done": [
+      "Morocco festival banner",
+      "Moroccan sheep slaughter",
+      "Eid al-Adha sacrifice",
+      "Moroccan street celebration",
+      "Sheep meat stalls Morocco",
+      "Traditional Eid sacrifice",
+      "Moroccan religious custom",
+      "Street roasting lamb"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0475_모로코.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0475_모로코.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "dMWJ9JFNyj8",
+    "uploaded_at": "2026-11-18T11:14:40.529285+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -59628,7 +59717,7 @@
     "verify_note": "Passover",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59643,7 +59732,56 @@
     },
     "curate_score": 6,
     "curate_why": "피로 문 표시·죽음, 금기·시각적 충격",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "첫째 아이를 살릴 수 있는 비밀, 피 묻은 문은 과연 어떻게 작동했을까요?",
+      "sentences": 8
+    },
+    "narration": "첫째 아이를 살릴 수 있는 비밀, 피 묻은 문은 과연 어떻게 작동했을까요?  \n출애굽기에서 모세는 이스라엘 백성에게 양을 잡아 피를 짜게 하고, 그 피를 문틀에 바르라고 명령했습니다.  \n피가 온전히 묻은 집은 하나님이 보내신 첫째 아이를 죽이는 재앙을 넘어갈 수 있었습니다.  \n피가 없던 집은 재앙을 피하지 못해 모든 첫째 아이가 사망했습니다.  \n그때 피는 단순한 액체가 아니라, 죽음의 사자를 막는 순종의 표식으로 기능했습니다.  \n유월절 밤, 각 가정은 한밤중에 양을 잡아 피를 짜고 조심히 문틀에 발랐습니다.  \n피가 묻은 집은 불꽃과 죽음이 스쳐 지나갔지만 문은 전혀 손상되지 않았다고 전해집니다.  \n결국 피 묻은 문은 순종의 증거가 되어 첫째 아이를 구했으며, 이는 유월절의 핵심 의미로 남아 있습니다.",
+    "title_line1": "탄자니아 유월절 비밀",
+    "title_line2": "피 문에 죽음이 스쳐?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*비밀* 구원"
+      },
+      {
+        "s": 3,
+        "text": "*피* 묻은 집"
+      },
+      {
+        "s": 7,
+        "text": "*문* 손상없음"
+      },
+      {
+        "s": 8,
+        "text": "*순종* 구원"
+      }
+    ],
+    "image_queries": [
+      "Passover bloodied door",
+      "Passover lamb blood on doorframe",
+      "Passover blood splattered house",
+      "unprotected house door",
+      "Passover blood symbol on wooden door",
+      "nighttime lamb slaughter",
+      "intact door after fire",
+      "Passover family celebrating"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    }
   },
   {
     "topic": "아랍에미리트 라마단 시작 의식",
@@ -69783,7 +69921,8 @@
     },
     "curate_score": 9,
     "curate_why": "69일·33명·소리 등 구체적 수치·극적 상황",
-    "curate_top": true
+    "curate_top": true,
+    "redo_ts": 1794967452.6789234
   },
   {
     "topic": "키스가 인사·의례가 되는 순간",
@@ -71376,7 +71515,7 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "3초에서 60분까지, 당신은 어느 길이를 고를까요?  \n틱톡은 짧은 3초 클립부터 한 시간 영상까지 올릴 수 있는 플랫폼입니다.  \n모바일 앱은 물론 웹사이트에서도 동일하게 이용할 수 있어요.  \n다양한 길이 덕분에 사용자는 순간을 짧게, 이야기를 길게 자유롭게 선택합니다.  \n하지만 중국 본토와 홍콩에서는 틱톡이 차단돼 있습니다.  \n그곳에서는 대신 두이인(Douyin)이라는 서비스가 제공됩니다.  \n두 서비스는 영상 길이 제한은 같지만, 운영 주체와 정책이 다릅니다.  \n스와이프만 하면 어떤 길이든 화면에서 사라지는 경험, 직접 해보셨나요?  \n결국, 길이에 관계없이 틱톡 안에서 모든 순간을 만들 수 있다는 것이 답입니다.",
@@ -71523,7 +71662,20 @@
       "rounds": 1,
       "first": "3초에서 60분까지, 당신은 어느 길이를 고를까요?",
       "sentences": 9
-    }
+    },
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 3,
+      "concrete": 4,
+      "supported": 3,
+      "reason": "틱톡 영상 길이 제한은 전 세계 공통 사항이며, 케냐와 직접 연결되는 고유 정보가 부족해 구체성과 차별성이 낮다.",
+      "avg": 3.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 4/supported 3 (평균 3.3) 틱톡 영상 길이 제한은 전 세계 공통 사항이며, 케냐와 직접 연결되는 고유 정보가 부족해 구체성과 차별성이 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "topic": "1881년 남미 국경을 정한 조약",
@@ -71542,7 +71694,17 @@
     "status": "verified",
     "curate_score": 6,
     "curate_why": "1881년 조약·5600km 국경, 구체적 숫자·역사적",
-    "curate_top": false
+    "curate_top": false,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 8,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "1881년 남미 국경 조약은 구체적인 날짜·인물·길이(5600km) 등 고유 정보가 풍부하고, 문서와 일치해 신뢰도가 높다.",
+      "avg": 8.7,
+      "flags": []
+    }
   },
   {
     "topic": "전 세계 의회의 절반이 두 회의실을 사용",
@@ -71581,7 +71743,19 @@
     "status": "verified",
     "curate_score": 7,
     "curate_why": "구체적 연도·전쟁 서막·시각적 상상 가능",
-    "curate_top": false
+    "curate_top": false,
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 7,
+      "concrete": 7,
+      "supported": 6,
+      "reason": "‘일곱 가지 불만’은 청나라 초기 사건으로 구체적이지만, 대만과 직접 연결되는 특수성은 약하고, 일부 내용은 일반적인 중국 역사와 겹친다.",
+      "avg": 6.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
   },
   {
     "topic": "마다가스카르 불법 벌목의 충격적인 현실",
@@ -73005,5 +73179,487 @@
       "none": false
     },
     "reject_reason": "나라와 주제 불일치(그리스 / US,GB)"
+  },
+  {
+    "topic": "몽골은 내륙 국가이면서도 1,564,116 km²의 광활한 영토를 가지고 있다",
+    "hook": "바다 없이도 1,500,000 km²를 가로지르는 나라가 있다?",
+    "body": "몽골은 러시아와 중국에만 접해 있는 내륙 국가다. 초원과 북·서쪽의 산맥, 남쪽의 고비 사막이 어우러진 풍경을 갖고 있으며 수도는 울란바토르다.",
+    "twist": "그럼에도 세계에서 가장 인구 밀도가 낮은 주권 국가다.",
+    "caveat": "이 통계는 전체 영토와 전체 인구를 기준으로 한 최신 자료이다.",
+    "country": "몽골 (Mongolia)",
+    "theme": "생활",
+    "wiki_title": "Mongolia",
+    "source_url": "https://en.wikipedia.org/wiki/Mongolia",
+    "source_excerpt": "Mongolia is a landlocked country in East Asia. It is bordered by Russia to the north and China to the south and covers an area of 1,564,116 square kilometers (603,909 square miles), making it the 18th-largest country in the world and the second largest landlocked nation after Kazakhstan, as well as the largest landlocked country that does not border an inland sea. With a population of 3.5 million, Mongolia is the world's most sparsely populated sovereign state. The country constitutes a significant portion of the Mongolian Plateau, and its natural environment is characterized by grassy steppe, mountains to the north and west, and the Gobi Desert to the south. Ulaanbaatar, the capital and largest city, is home to roughly half of the country's population. The territory of modern-day Mongolia has been ruled by various nomadic empires, including the Xiongnu, the Xianbei, the Rouran Khaganate",
+    "verify_note": "Mongolia",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:10.565467+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 6,
+      "concrete": 8,
+      "supported": 8,
+      "reason": "몽골의 면적·인구밀도 등 수치는 구체적이며 문서와 일치하지만, ‘내륙 국가’라는 점은 세계적으로도 흔한 특성이라 차별성은 중간이다.",
+      "avg": 7.3,
+      "flags": []
+    }
+  },
+  {
+    "topic": "사미 사람들은 전통적으로 양을 포함한 다양한 생활 방식을 유지한다",
+    "hook": "양을 키우는 사미, 실제로는 양이 주인공!",
+    "body": "사미는 노르웨이·스웨덴·핀란드·러시아 코라반도 북부에 사는 원주민으로, 사미어는 우랄어족에 속한다. 전통적인 생계는 해안 어업, 모피 사냥, 양 사육 등이다.",
+    "twist": "많이 알려진 순록 대신 양이 일상에 더 많이 등장한다.",
+    "caveat": "이 내용은 전통적인 생활 양식에 대한 일반적인 설명이다.",
+    "country": "사미 (Sámi)",
+    "theme": "생활",
+    "wiki_title": "Sámi people",
+    "source_url": "https://en.wikipedia.org/wiki/S%C3%A1mi_people",
+    "source_excerpt": "The Sámi (US: SAH-mee, UK: also SAM-ee; also spelled Sami or Saami) are the traditionally Sámi-speaking indigenous people inhabiting the region of Sápmi. Formerly known as Lapland, Sápmi encompasses large northern parts of Norway, Sweden, and Finland, and of the Kola Peninsula in Russia. Historically, the Sámi have been known in English as Lapps or Laplanders; however, these terms are exonyms, regarded as offensive by some Sámi, who prefer their own endonym. Their traditional languages are the Sámi languages, which are classified as a branch of the Uralic language family. Traditionally, the Sámi have pursued a variety of livelihoods, including coastal fishing, fur trapping, and sheep herding. Their best-known means of livelihood is semi-nomadic reindeer herding. As of 2007, about 10% of Sámi were connected to reindeer herding, which provides them with meat, fur, and transportation; aroun",
+    "verify_note": "Sámi people",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:10.565467+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 5,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "사미의 전통 생활 방식은 일반적인 설명에 머물며, ‘양’이 주된 동물이라는 주장은 문서에 명확히 뒷받침되지 않아 구체성과 지원이 약하다.",
+      "avg": 5.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
+  },
+  {
+    "topic": "일본의 달맞이 축제 ‘츠키미’는 8월 15일과 9월 13일에 각각 열린다",
+    "hook": "한 달에 두 번 달을 보며 파티한다?",
+    "body": "‘츠키미’는 가을 달을 기리는 일본 전통 축제로, 8월 15일(十五夜)과 9월 13일(十三夜)에 각각 달을 바라보며 행사가 열린다. 헤이안 시대부터 이어져 온 풍습이며, 사람들은 보름달이 뜨는 날을 포함해 며칠간 연속으로 축하한다.",
+    "twist": "축제는 보름달뿐 아니라 초승달까지 이어지는 여러 날에 걸쳐 진행된다.",
+    "caveat": "이 풍습은 일본 전통 달력 기준으로 계산된다.",
+    "country": "일본 (Japan)",
+    "theme": "축제",
+    "wiki_title": "Tsukimi",
+    "source_url": "https://en.wikipedia.org/wiki/Tsukimi",
+    "source_excerpt": "Tsukimi (月見) or Otsukimi (お月見), meaning, \"moon-viewing\", are Japanese festivals honoring the autumn moon, a variant of the Mid-Autumn Festival. The celebration of the full moon typically takes place on the 15th day of the eighth month of the traditional Japanese calendar, known as Jūgoya (十五夜, fifteenth night); the waxing moon is celebrated on the 13th day of the ninth month, known as Jūsan'ya (十三夜, thirteenth night). These days normally fall in September and October of the modern solar calendar. The tradition dates to the Heian era, and is now so popular in Japan that some people repeat the activities for several evenings following the appearance of the full moon during the eighth lunisolar month. Tsukimi traditions include displaying decorations made from Japanese pampas grass (susuki) and eating rice dumplings called Tsukimi dango in order to celebrate the beauty of the Moon. Seasonal",
+    "verify_note": "Tsukimi",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:10.565467+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "츠키미의 날짜·달력·역사적 배경은 구체적이고 문서와 일치하지만, 일본 전역에 공통된 전통이라 차별성은 다소 낮다.",
+      "avg": 8.0,
+      "flags": []
+    }
+  },
+  {
+    "topic": "핀란드 사우나는 온도와 습도를 실시간으로 측정한다",
+    "hook": "사우나 안에 온도계가 없다고? 여기선 온도와 습도를 바로 확인한다!",
+    "body": "핀란드 사우나는 건조·습식 열을 경험하는 공간이며, 내부에 온도계와 습도계가 설치돼 체온과 땀을 정확히 관리한다.",
+    "twist": "하지만 현지인들은 기계보다 땀방울을 보는 걸 더 신뢰한다.",
+    "caveat": "이 규칙은 전통적인 핀란드 사우나에서 주로 적용된다.",
+    "country": "핀란드",
+    "theme": "관습",
+    "wiki_title": "Sauna",
+    "source_url": "https://en.wikipedia.org/wiki/Sauna",
+    "source_excerpt": "A sauna (, Finnish: [ˈsɑu̯nɑ]) is a room or building designed as a place to experience dry or wet heat sessions or an establishment with one or more of these facilities. The steam and high heat make the bathers perspire. A thermometer in a sauna is used to measure temperature; a hygrometer can be used to measure levels of humidity or steam.",
+    "verify_note": "Sauna",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:15.166557+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 7,
+      "reason": "핀란드 사우나에 온도·습도계가 설치된다는 내용은 구체적이고 고유명사(thermometer, hygrometer)도 포함돼 있지만, 전 세계 사우나에서도 흔히 사용되는 장비라서 완전한 지역 특수성은 낮다.",
+      "avg": 7.3,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
+  },
+  {
+    "topic": "발리의 수밥(Subak) 물 관리 체계는 사원과 연계된 협동식 관개",
+    "hook": "밭에 물을 주는 대신, 물 사원을 먼저 방문한다!",
+    "body": "발리 섬의 수밥( Subak )은 9세기에 시작돼 2만 헥타르 규모의 논밭과 물 사원을 연결해 물을 순환시킨다.",
+    "twist": "물 사원은 물을 주는 의식이 아니라 물을 나누는 회의실 같은 역할을 한다.",
+    "caveat": "이 시스템은 발리 전통 농경 지역에 한정된다.",
+    "country": "인도네시아",
+    "theme": "제도",
+    "wiki_title": "Subak (irrigation)",
+    "source_url": "https://en.wikipedia.org/wiki/Subak_(irrigation)",
+    "source_excerpt": "Subak is the water management (irrigation) system for the paddy fields on Bali island, Indonesia. It was developed in the 9th century. For the Balinese, irrigation is not simply providing water for the plant's roots, but water is used to construct a complex, pulsed artificial ecosystem that is at the same time autonomous and interdependent. The system consists of terraced rice fields and water temples covering nearly 20,000 hectares (49,000 acres). The temples are the main focus of this cooperative water management, known as subak.",
+    "verify_note": "Subak (irrigation)",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:15.166557+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 9,
+      "concrete": 9,
+      "supported": 8,
+      "reason": "발리의 수밥 체계와 물 사원의 연계는 고유명사와 면적·시대 등 구체적 수치가 풍부하고, 문서와 일치해 신뢰성이 높으며 지역 한정적 특성이 강하다.",
+      "avg": 8.7,
+      "flags": []
+    }
+  },
+  {
+    "topic": "아이마라(Aymara)는 7,250년 넘게 고산에 살아온 원주민",
+    "hook": "7,250년 동안 고산에 사는 사람들, 그 비밀은?",
+    "body": "아이마라( Aymara )는 안데스와 알티플라노 지역에 7,250년 넘게 살아온 원주민이며, 현재는 네 개 나라에 걸쳐 약 2.3백만 명이 산다.",
+    "twist": "그들은 고산 생활에 적응해 숨 쉬는 방식까지 달라졌다.",
+    "caveat": "이 내용은 주로 안데스 지역 아이마라 공동체에 해당한다.",
+    "country": "남미",
+    "theme": "역사",
+    "wiki_title": "Aymara people",
+    "source_url": "https://en.wikipedia.org/wiki/Aymara_people",
+    "source_excerpt": "The Aymara or Aimara (Aymara: aymara, ) people are an Indigenous people in the Andes and Altiplano regions of South America. Approximately 2.3 million Aymara live in northwest Argentina, Bolivia, Chile, and Peru. The Aymara have lived in the region for over 7,250 years. In the late 15th century or early 16th century, Aymaras came under the rule of the Inca Empire and later of the Spanish Empire in the 16th century. Following the Spanish American wars of independence (1810–1825), the Aymara became subjects to the new nations of Bolivia and Peru. After the War of the Pacific (1879–1883), Chile annexed territory inhabited by the Aymara population.",
+    "verify_note": "Aymara people",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:15.166557+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "아이마라가 7,250년 이상 고산에 거주했다는 구체적 연대와 인구 수치가 제시돼 있지만, ‘숨 쉬는 방식까지 달라졌다’는 주장은 문서에 근거가 없어 다소 추측적이다.",
+      "avg": 7.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
+  },
+  {
+    "topic": "중세 아이슬란드 신화 속 엘프는 인간에게 도움도 방해도 하는 양면 존재",
+    "hook": "길을 가다 엘프가 막으면 차가 멈춘다? 아이슬란드에서는 진짜!",
+    "body": "엘프는 독일계 민속에서 인간과 비슷한 초자연 존재로, 마법과 아름다움을 가졌다고 전해진다. 중세 아이슬란드 서사시에서는 사람을 돕기도 하고 방해하기도 한다.",
+    "twist": "엘프는 원래 '하얀 존재'라는 뜻으로, 백색의 신비함을 상징한다.",
+    "caveat": "이 믿음은 중세 독일어권 문화와 아이슬란드 전통에 한정된다.",
+    "country": "아이슬란드",
+    "theme": "관습",
+    "wiki_title": "Elf",
+    "source_url": "https://en.wikipedia.org/wiki/Elf",
+    "source_excerpt": "An elf (pl. elves) is a type of humanoid supernatural being in Germanic folklore. Elves appear especially in North Germanic mythology, being mentioned in the Icelandic Poetic Edda and the Prose Edda. In medieval Germanic-speaking cultures, elves were thought of as beings with magical powers and supernatural beauty, ambivalent towards everyday people, and capable of either helping or hindering them. Beliefs varied considerably over time and space and flourished in both pre-Christian and Christian cultures. The word elf is found throughout the Germanic languages. It seems originally to have meant 'white being'. However, reconstructing the early concept depends largely on texts written by Christians, in Old and Middle English, medieval German, and Old Norse. These associate elves variously with the gods of Norse mythology, with causing illness, with magic, and with beauty and seduction. Aft",
+    "verify_note": "Elf",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:19.653129+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 6,
+      "concrete": 6,
+      "supported": 7,
+      "reason": "중세 아이슬란드 서사에 엘프가 인간을 돕고 방해한다는 내용은 문서와 일치하지만, 엘프가 ‘양면 존재’라는 일반적 설명은 독일계 전반에 해당해 지역 특수성이 약하고 구체적 사례가 부족하다.",
+      "avg": 6.3,
+      "flags": [
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    }
+  },
+  {
+    "topic": "물총·양동이 등으로 하는 물 전쟁은 더위를 식히는 놀이 문화",
+    "hook": "양동이로 물 전쟁을 시작한다면? 태국 거리에서 바로 체험!",
+    "body": "물 전쟁은 양동이, 물풍선, 물총 등 다양한 도구로 상대를 적시며 진행한다. 목표는 상대를 적시면서 자신은 가능한 한 마른 상태를 유지하는 것이다.",
+    "twist": "게임 방식은 가벼운 장난부터 목표 지향적인 전쟁까지 다양하게 변한다.",
+    "caveat": "이 전통은 주로 더운 여름철에 나타나는 현상이다.",
+    "country": "태국",
+    "theme": "생활",
+    "wiki_title": "Water fight",
+    "source_url": "https://en.wikipedia.org/wiki/Water_fight",
+    "source_excerpt": "A water fight, water battle or water war is a type of mock combat using various water-dispensing devices to soak opponents. Everything from buckets to water balloons to water guns and even cupped hands cradling water can be applied in a water fight. There are many different levels of game play used by those engaging in water fights, from quick, casual fights to long, objective-oriented-style water warfare campaigns, and tournament-style games. In most but not all cases, the common objective is to soak (spray with water) one's opponents while trying to remain dry. Water fights are most common in hot summer weather in order to cool off.",
+    "verify_note": "Water fight",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:19.653129+00:00",
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "물 전쟁은 전 세계적으로 흔한 놀이이며, 태국만의 독특한 문화적 요소가 명시되지 않아 일반론에 가깝고 구체적인 수치·제도 설명이 부족하다.",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 물 전쟁은 전 세계적으로 흔한 놀이이며, 태국만의 독특한 문화적 요소가 명시되지 않아 일반론에 가깝고 구체적인 수치·제도 설명이 부족하다. · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
+  },
+  {
+    "topic": "공중목욕탕은 사우나·탕 등으로 사회적 만남 장소 역할을 해왔다",
+    "hook": "남녀가 같은 방에서 목욕한다? 세계 곳곳의 공중목욕탕!",
+    "body": "공중목욕은 사우나, 터키식 목욕탕, 증기 목욕 등 다양한 형태로 존재하며, 개인 욕실이 부족했던 시기에 생겨났다. 성별·종교·회원제 등 제한이 있기도 하지만, 사회적 교류의 장으로 활용되었다.",
+    "twist": "일부 시설은 샴푸·마사지 등 스파 서비스까지 제공한다.",
+    "caveat": "현대에는 개인 욕실 보급이 늘어나면서 필요성이 감소한 지역도 있다.",
+    "country": "세계",
+    "theme": "생활",
+    "wiki_title": "Public bathing",
+    "source_url": "https://en.wikipedia.org/wiki/Public_bathing",
+    "source_excerpt": "Public baths originated when most people in population centers did not have access to private bathing facilities. Though termed \"public\", they have often been restricted according to gender, religious affiliation, personal membership, and other criteria. In addition to their hygienic function, public baths have also been social meeting places. They have included hot-air bathing facilities such as hammams, Victorian Turkish baths, and saunas. Some have also provided complementary services such as shampooing, massages, and other relaxation therapies, often also found in contemporary day spas. As the percentage of dwellings containing private bathrooms has increased in some societies, the need for public baths has diminished, and they are now almost exclusively used recreationally.",
+    "verify_note": "Public bathing",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:19.653129+00:00",
+    "status": "rejected",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 3,
+      "concrete": 5,
+      "supported": 6,
+      "reason": "공중목욕탕의 사회적 역할은 전 세계적 현상이므로 지역 특수성이 낮고, 구체적 사례·수치가 제한적이지만 문서와 일치하는 기본 사실은 충분히 뒷받침된다.",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음",
+        "수치·원어 표기 같은 구체 정보 없음"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 3/concrete 5/supported 6 (평균 4.7) 공중목욕탕의 사회적 역할은 전 세계적 현상이므로 지역 특수성이 낮고, 구체적 사례·수치가 제한적이지만 문서와 일치하는 기본 사실은 충분히 뒷받침된다. · 규칙: 근거 문서에 나라 언급 없음, 수치·원어 표기 같은 구체 정보 없음"
+  },
+  {
+    "topic": "커피 체리를 수확해 원두가 되기까지의 과정",
+    "hook": "8개월 뒤, 손으로 딴 체리를 바로 볶는다?",
+    "body": "커피 체리는 나무에 달린 뒤 약 8개월이 지나면 손이나 기계로 수확한다. 수확된 체리는 펄프를 제거하고 건조시킨 뒤, 남은 건조 껍질과 과일 찌꺼기를 벗겨낸다. 그 후 깨끗이 씻고 분류·등급을 매겨 유통 준비가 된다.",
+    "twist": "건조 과정 뒤에 남은 과일 잔여물을 완전히 제거해야만 진짜 커피 원두가 된다.",
+    "caveat": "산업 현장에서 일반적으로 적용되는 절차이며, 모든 농가가 동일하게 진행하는 것은 아니다.",
+    "country": "세계",
+    "theme": "음식",
+    "wiki_title": "Coffee production",
+    "source_url": "https://en.wikipedia.org/wiki/Coffee_production",
+    "source_excerpt": "Coffee production is the industrial process of converting the raw fruit (the coffee cherry) of the coffee plant into finished coffee beans. About eight months after coffee cherries appear on a coffee plant, the cherries are harvested either by hand or by machine. Then they are, depending on the method, pulped and then dried or simply set out to dry. After this, the beans are stripped of their remaining dry skin and fruit residue. Once they are cleaned, sorted, and graded, they are suitable for distribution. While all green coffee, produced from immature coffee beans, is processed, the method that is used to process coffee varies, and significantly affects the flavor of coffee once it is roasted and brewed. Coffee production is a major source of income for 12.5 million households, most in developing countries.",
+    "verify_note": "Coffee production",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:39.886811+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "마사이(Maasai) 전사의 점프 댄스 ‘아두무(Adumu)’",
+    "hook": "결혼식에 점프만 30초? 전사들이 하늘을 찌른다!",
+    "body": "아두무(Adumu)는 케냐와 탄자니아의 마사이(Maasai) 부족이 결혼식·종교 의식·문화 행사 등에서 젊은 전사들이 펼치는 활기찬 점프 댄스다. 힘찬 점프와 몸을 높이 띄우는 동작이 특징이다.",
+    "twist": "이 춤은 단순한 축하가 아니라 전사의 용맹을 검증하고 공동체의 결속을 확인하는 의식이다.",
+    "caveat": "주로 케냐와 탄자니아의 마사이 공동체에서만 행해진다.",
+    "country": "케냐·탄자니아",
+    "theme": "축제",
+    "wiki_title": "Adumu",
+    "source_url": "https://en.wikipedia.org/wiki/Adumu",
+    "source_excerpt": "Adumu or Enkipaata, also known as the Maasai jumping dance, is a type of dance that the Maasai people of Kenya and Tanzania practice. Young Maasai warriors generally perform the energetic and acrobatic dance at ceremonial occasions including weddings, religious rites, and other significant cultural events.",
+    "verify_note": "Adumu",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:39.886811+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "포드스타카닉(podstakannik)으로 뜨거운 차를 안전하게 마시는 법",
+    "hook": "열차 안에서 차가 쏟아질까 두려워? 금속 손잡이 하나면 OK!",
+    "body": "포드스타카닉(podstakannik)은 금속 손잡이가 달린 차 잔 받침으로, 매우 뜨거운 차 잔을 잡아 테이블 위에서 안정성을 크게 높여준다. 러시아·우크라이나·벨라루스·폴란드 등 슬라브 국가에서 전통적으로 차를 제공할 때 사용됐다.",
+    "twist": "21세기에 대부분 기념품이 되었지만, 러시아 열차에서는 아직도 필수 아이템으로 쓰인다.",
+    "caveat": "일부 슬라브 국가에서는 여전히 사용하지만, 일반 가정에서는 거의 쓰이지 않는다.",
+    "country": "러시아",
+    "theme": "생활",
+    "wiki_title": "Podstakannik",
+    "source_url": "https://en.wikipedia.org/wiki/Podstakannik",
+    "source_excerpt": "The podstakannik (Russian: подстака́нник [pət͡sstɐˈkanʲːɪk], literally \"thing under the glass\"), or tea glass holder, is a holder with a handle, most commonly made of metal that holds a drinking glass (stakan). Their primary purpose is to be able to hold a very hot glass of tea, which is usually consumed right after it is brewed. The stability of the glass on the table is also significantly improved. It is a traditional way of serving and drinking tea in Russia, Ukraine, Belarus, Poland, and some other Slavic states. In the 21st century, the podstakannik mostly lost its utilitarian functions and became a souvenir or gift item. The only exception is represented by Russian railroads, where the podstakannik is still used due to the stability it adds to the glass.",
+    "verify_note": "Podstakannik",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:05:39.886811+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "거리 싸움이 춤과 음악으로 변한 카포에이라",
+    "hook": "1789년, 거리에서 금지된 싸움이 춤으로 변한다!",
+    "body": "카포에이라는 아프리카와 브라질이 뒤섞인 무술·게임으로, 춤, 곡예, 음악, 영성을 모두 품고 있다. 19세기엔 ‘카포에이라 카리오카’라는 거리 격투 스타일이 등장해 또다시 범죄로 규정되었다.",
+    "twist": "1930년대 초, 마에스트레 빔바가 전통을 개혁해 오늘날 세계 무대에서 공연 예술로 자리 잡았다.",
+    "caveat": "이 내용은 브라질의 공식 문서에 처음 언급된 1789년을 기준으로 한다.",
+    "country": "브라질",
+    "theme": "역사",
+    "wiki_title": "Capoeira",
+    "source_url": "https://en.wikipedia.org/wiki/Capoeira",
+    "source_excerpt": "Capoeira (Portuguese pronunciation: [kapuˈe(j)ɾɐ]) is an Afro-Brazilian martial art and game that includes elements of dance, acrobatics, music, and spirituality. Capoeira has been practiced among Black Brazilians for centuries; scholars have identified roots in engolo, a traditional Bantu martial art practiced in Angola. Capoeira is first mentioned in an official document in 1789, as a criminal activity. In the 19th century, a street fighting style called capoeira carioca appeared; it was also criminalized. In the early 1930s, Mestre Bimba reformed traditional capoeira and developed the capoeira regional style, which established standardized teaching sequences. The government came to see capoeira as a socially acceptable sport, legalizing it in 1937 and promoting it as part of national culture. In 1941, Mestre Pastinha founded his school where he cultivated the traditional capoeira Ango",
+    "verify_note": "Capoeira",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:06:35.362418+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "전통 농촌 옷, 부나드가 현대 패션으로 재탄생",
+    "hook": "20세기 초, 옛 농촌 옷이 갑자기 파티 복으로 변신!",
+    "body": "부나드는 18·19세기 전통 의복을 20세기 초에 디자인한 현대식 민속 의상이다. 노르웨이 전역에서 지역별 색·무늬·장식이 달라 독특한 ‘지역 정체성’으로 활용된다.",
+    "twist": "같은 부나드라도 오늘날엔 같은 지역 사람이라도 전혀 다른 모습으로 입는다.",
+    "caveat": "이 현상은 19세기 민족 로맨스 운동에서 시작된 것이다.",
+    "country": "노르웨이",
+    "theme": "관습",
+    "wiki_title": "Bunad",
+    "source_url": "https://en.wikipedia.org/wiki/Bunad",
+    "source_excerpt": "Bunad (Norwegian: [ˈbʉ̂ːnɑd], plural: bunader/bunadar) is a Norwegian umbrella term. In a broader sense, the term encompasses household, householding equipment, and livestock as well as both traditional rural clothes (mostly dating to the 18th and 19th centuries) and modern 20th-century folk costumes. In its narrowest sense, the word bunad refers only to clothes designed in the early 20th century that are loosely based on traditional costumes. The bunad movement has its root in 19th-century national romanticism, which included an interest for traditional folk costumes not only in Norway, but also in neighbouring countries such as Denmark and notably Germany. However, in Norway, national romanticist ideas had a more lasting impact, as seen in the use of folk-inspired costumes.",
+    "verify_note": "Bunad",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:06:35.362418+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "플로마리, 레스보스 남쪽 해안에 단 하나인 큰 마을",
+    "hook": "남쪽 해안에 큰 마을이 딱 하나라면?",
+    "body": "플로마리(Πλωμάρι)는 레스보스 섬 남쪽에서 유일하게 규모가 큰 해안 마을이며, 섬에서 두 번째로 큰 도시다. 2021년 인구는 4,852명이고, 면적은 122.452km²이다.",
+    "twist": "넓은 면적에 비해 인구는 적어, 한가롭게 바다를 즐길 수 있다.",
+    "caveat": "2021년 인구 조사 기준이며, 행정 구역 개편 이후 마이틀레네 시에 속한다.",
+    "country": "그리스",
+    "theme": "생활",
+    "wiki_title": "Plomari",
+    "source_url": "https://en.wikipedia.org/wiki/Plomari",
+    "source_excerpt": "Plomari (Greek: Πλωμάρι) is a town and a former municipality on the island of Lesbos, North Aegean, Greece. Since the 2019 local government reform it is part of the municipality Mytilene, of which it is a municipal unit. It is the only sizable coastal settlement in the south, and the second largest town on Lesbos. The municipal unit of Plomari is the southernmost on Lesbos Island and has a land area of 122.452 km2 and a 2021 census population of 4,852. Its largest towns or villages are Plomári, the former municipal seat, Plagiá, Palaiochóri, Megalochóri, and Akrási.",
+    "verify_note": "Plomari",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:06:53.916080+00:00",
+    "status": "unverified"
+  },
+  {
+    "topic": "폴란드, 면적은 6위·인구는 5위인 역설적인 순위",
+    "hook": "면적은 6위, 인구는 5위!?",
+    "body": "폴란드(Poland)는 유럽 연합에서 면적이 여섯 번째로 크지만, 인구는 다섯 번째로 많다. 북쪽은 발트해, 남쪽은 수데테스와 카르파티아 산맥이 있다.",
+    "twist": "그럼에도 불구하고, 중앙 유럽의 관문 역할을 하며 다양한 기후와 풍경을 품고 있다.",
+    "caveat": "EU 회원국 기준이며, 최신 인구·면적 통계에 기반한다.",
+    "country": "폴란드",
+    "theme": "생활",
+    "wiki_title": "Poland",
+    "source_url": "https://en.wikipedia.org/wiki/Poland",
+    "source_excerpt": "Poland, officially the Republic of Poland, is a country in Central Europe. It extends from the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south, and borders Lithuania and Russia to the northeast; Belarus and Ukraine to the east; Slovakia and the Czech Republic to the south; and Germany to the west. The territory has a varied landscape, diverse ecosystems, and a temperate climate. Poland is composed of sixteen voivodeships and is the fifth most populous member state of the European Union (EU), with over 37 million people, and the sixth largest EU country by land area, covering 312,696 km2 (120,733 sq mi). The capital and largest city is Warsaw; other major cities include Kraków, Wrocław, Łódź, Poznań, Gdańsk, and Szczecin. Prehistoric human activity on Polish soil dates to the Lower Paleolithic, with continuous settlement since the end of the Last Glacial Perio",
+    "verify_note": "Poland",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:06:53.916080+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "EU 기준 면적·인구 순위라는 구체적 수치와 비교가 명확히 제시돼 있어 영상 소재로 충분히 구체하고 검증 가능하지만, ‘역설적’이라는 표현은 다소 일반적일 수 있음.",
+      "avg": 8.0,
+      "flags": []
+    }
+  },
+  {
+    "topic": "오프렌다, 고인을 맞이하는 집 안 제단",
+    "hook": "고인을 직접 초대하는 집 안 제단, 믿어?",
+    "body": "오프렌다(오프렌다)는 멕시코 Día de los Muertos(죽은 자의 날) 때 가정에서 만드는 제단으로, 고인이 돌아오길 환영한다. 가족이 고인과 관련된 음식·꽃·사진 등을 올린다.",
+    "twist": "제단은 고인이 평생 좋아했던 물건까지 모두 진열해, 마치 집에 다시 온 듯한 분위기를 만든다.",
+    "caveat": "전통적인 멕시코 가정에서 행해지는 관습이며, 지역마다 약간씩 차이가 있다.",
+    "country": "멕시코",
+    "theme": "관습",
+    "wiki_title": "Ofrenda",
+    "source_url": "https://en.wikipedia.org/wiki/Ofrenda",
+    "source_excerpt": "An ofrenda (Spanish: \"offering\") is the offering placed in a home altar during the annual and traditionally Mexican Día de los Muertos celebration. An ofrenda, which may be quite large and elaborate, is usually created by the family members of the person who has died and is intended to welcome the deceased to the altar setting.",
+    "verify_note": "Ofrenda",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:06:53.916080+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 9,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "멕시코 고유의 Día de los Muertos 의식인 오프렌다는 고유명사·절차가 명확히 제시돼 있어 독특하고 구체적이며, 발췌문과 일치함.",
+      "avg": 8.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
+  },
+  {
+    "topic": "점 그림만이 전부가 아니라 다양한 매체와 부족 고유의 시각 기호를 사용한다",
+    "hook": "점만 그린다고 생각했나요? 호주 원주민 예술(Indigenous Australian art)은 나뭇잎에 물감까지 바른다!",
+    "body": "Indigenous Australian art(Indigenous Australian art)에는 나뭇잎, 나무껍질, 모래 등 다양한 매체가 쓰인다. 전통적인 시각 기호는 부족마다 크게 달라 점 그림(dot painting)만이 전부가 아니다.",
+    "twist": "점 그림은 실제로는 일부 부족만의 특징이다.",
+    "caveat": "이 내용은 호주 원주민 전체가 아니라 일부 부족에 해당한다.",
+    "country": "호주",
+    "theme": "예술",
+    "wiki_title": "Indigenous Australian art",
+    "source_url": "https://en.wikipedia.org/wiki/Indigenous_Australian_art",
+    "source_excerpt": "Indigenous Australian art includes art made by Aboriginal Australians and Torres Strait Islanders, including collaborations with others. It includes works in a wide range of media including painting on leaves, bark painting, wood carving, rock carving, watercolour painting, sculpting, ceremonial clothing and sandpainting. The traditional visual symbols vary widely among the differing peoples' traditions, despite the common mistaken perception that dot painting is representative of all Aboriginal art.",
+    "verify_note": "Indigenous Australian art",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:07:11.300800+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 8,
+      "reason": "호주 원주민 예술이 점 그림에 국한되지 않는다는 점은 지역별 차이를 강조해 독특하고, 매체와 기호에 대한 구체적 예시가 포함돼 검증 가능함.",
+      "avg": 7.7,
+      "flags": [
+        "근거 문서에 나라 언급 없음"
+      ]
+    }
+  },
+  {
+    "topic": "Samburu는 자신들을 ‘땅의 주인’이라고 부른다",
+    "hook": "땅을 소유한다? 그들이 스스로 부르는 이름은 바로 Loikop!",
+    "body": "Samburu는 반유목 목축민으로 소, 양, 낙타까지 기른다. 자신들을 Lokop(Loikop)이라 부르며 ‘땅의 소유자’라는 뜻으로 해석되기도 한다.",
+    "twist": "하지만 해석은 부족마다 달라 논란이 있다.",
+    "caveat": "이 의미는 Samburu 내부에서도 의견이 갈린다.",
+    "country": "케냐",
+    "theme": "문화",
+    "wiki_title": "Samburu people",
+    "source_url": "https://en.wikipedia.org/wiki/Samburu_people",
+    "source_excerpt": "The Samburu are a Nilotic people of north-central Kenya. Traditionally, they are semi-nomadic pastoralists who primarily herd cattle but also keep sheep, goats and camels. They refer to themselves as Lokop or Loikop, a term with varied interpretations among the Samburu. Some believe it means \"owners of the land\" (\"lo\" meaning ownership and \"nkop\" meaning land) while others have different interpretations. The Samburu speak the Samburu dialect of the Maa language, a Nilotic language which is also spoken by 22 other sub tribes of the Maa community commonly known as the Maasai. Some suggest that the Samburu are a distinct tribe separate from the Maasai, but this is not accepted by most Samburu as many refer to themselves and the Maasai collectively as Maa and celebrate their general shared culture and achievements. Samburu National Reserve is one of the well known wildlife conservation areas",
+    "verify_note": "Samburu people",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:07:11.300800+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 8,
+      "concrete": 7,
+      "supported": 7,
+      "reason": "Samburu가 스스로를 ‘땅의 주인’이라 부른다는 해석은 독특하고 구체적인 용어(Lokop/Loikop)를 제공하지만, 의미 해석이 내부에서 논란이 있어 완전한 지원은 다소 약함.",
+      "avg": 7.3,
+      "flags": []
+    }
+  },
+  {
+    "topic": "프랑크푸르트 크리스마스 마켓은 1393년부터 이어진 연례 야외 시장이다",
+    "hook": "추운 겨울에 3백만 명이 모인다면? 독일 프랑크푸르트 크리스마스 마켓!",
+    "body": "Frankfurter Weihnachtsmarkt(Frankfurt Christmas Market)는 1393년부터 시작돼 매년 늦은 11월부터 12월 22일까지 열린다. 구시가지 전역에 걸쳐 약 3백만 명이 찾는다.",
+    "twist": "하지만 실제로는 실내 부스도 함께 운영된다.",
+    "caveat": "방문객 수는 매년 변동될 수 있다.",
+    "country": "독일",
+    "theme": "축제",
+    "wiki_title": "Frankfurt Christmas Market",
+    "source_url": "https://en.wikipedia.org/wiki/Frankfurt_Christmas_Market",
+    "source_excerpt": "The Frankfurt Christmas Market (German: Frankfurter Weihnachtsmarkt) is one of the oldest Christmas markets (also known as \"Weihnachtsmärkte\") in Germany with origins that date back to 1393. It is an annual outdoor Christmas market held in central Frankfurt, Hesse, Germany. The market is open during the period of Advent (from late November and continues until just before Christmas on 22 December). It is visited by approximately three million visitors each year. The market occupies a large area of the old town in central Frankfurt, including Friedrich-Stoltze-Platz, Hauptwache (to the north), Mainkai, Paulsplatz, and Römerberg (to the south). There are a number of affiliated markets, including in Birmingham, England.",
+    "verify_note": "Frankfurt Christmas Market",
+    "confidence": "source",
+    "created_at": "2026-11-18T02:07:11.300800+00:00",
+    "status": "unverified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-18",
+      "distinct": 6,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "프랑크푸르트 크리스마스 마켓의 설립 연도·방문객 수 등 구체적 수치가 풍부하고 문서와 일치하지만, 독일 전역에 퍼진 크리스마스 마켓과 겹치는 일반적 요소가 있어 독특성 점수가 낮음.",
+      "avg": 8.0,
+      "flags": []
+    }
   }
 ]
