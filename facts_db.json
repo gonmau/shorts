@@ -59445,7 +59445,7 @@
     "verify_note": "Morocco",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "모로코 안에 스페인 영토가 존재한다니? 북아프리카에 자리한 모로코는 북쪽으로 지중해, 서쪽으로 대서양과 맞닿아 있습니다. 그런데 그 영토 안에 스페인령 세우타와 멜릴라, 그리고 페뇽 데 벨레즈 데 라 고메라 같은 작은 섬·도시가 자리하고 있습니다. 이곳들은 스페인 행정구역으로 관리되며, 모로코와는 별개의 법적 지위를 가지고 있습니다.  \n\n그런데 모로코는 이 지역을 자국 영토로 주장합니다. 서부 사하라를 통해 모리타니와도 경계를 맞대고 있는 상황에서, 스페인 영토에 대한 영유권 분쟁이 국제적으로 논란이 되고 있습니다.  \n\n이처럼 지도에 보이는 국경선 뒤에는 복잡한 역사와 현재의 갈등이 얽혀 있습니다. 결국, 모로코 안에 스페인 영토가 있다는 사실은 단순히 지리적 이색이 아니라, 국제정치의 살아있는 현장을 보여주는 한 조각이라고 할 수 있겠습니다.",
     "title_line1": "모로코 안에 스페인 영토",
     "title_line2": "정말 독립된 땅?",
@@ -59475,7 +59475,9 @@
       "Morocco territorial claim",
       "Western Sahara border region",
       "Map showing borders",
-      "International political dispute"
+      "International political dispute",
+      "Morocco",
+      "Morocco landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -59490,7 +59492,122 @@
     },
     "curate_score": 8,
     "curate_why": "스페인 영토·모로코, 영토·정치 충격",
-    "curate_top": true
+    "curate_top": true,
+    "ai_prompts": [
+      "Aerial view of the Moroccan coastline revealing the tiny Spanish enclave of Ceuta perched on the mainland, with turquoise sea surrounding it, early morning light.",
+      "Wide panoramic shot of Morocco's northern Mediterranean shore meeting the vast Atlantic horizon, dunes and cliffs under a clear sky.",
+      "Drone perspective over the bustling port of Melilla, showing red Spanish flaged buildings amidst Moroccan desert backdrop, small fishing boats docked.",
+      "Low-angle view from a cliff overlooking the small island of Peñón de Vélez de la Gomera, jagged rocks rising from the sea with waves crashing.",
+      "Overhead map-like illustration of Spanish administrative zones within Morocco, highlighted borders without any lettering, showing distinct legal zones.",
+      "Close-up of a Moroccan protest banner near the border fence, hands holding signs, with the distant silhouette of a Spanish outpost.",
+      "Satellite-style view of Western Sahara stretching to Mauritania, with highlighted disputed borders between Morocco and Spanish territories, clouds casting shadows.",
+      "Tilted shot of an old parchment-style map on a wooden table, inked borders and symbols indicating complex historical claims, candles flickering.",
+      "Side view of a diplomatic conference room with empty chairs around a round table, flags of Morocco and Spain blurred in the background, tension implied.",
+      "Sunset silhouette of a lone lighthouse on a Spanish enclave within Morocco, waves crashing, symbolizing the living geopolitical tension."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Tonkie",
+        "license": "CC BY-SA 3.0",
+        "title": "NadorPort2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:NadorPort2.jpg",
+        "id": "c:11054426"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "IdaT",
+        "page": "https://pixabay.com/photos/diamond-beach-iceland-atlantic-sea-7492946/",
+        "id": 7492946
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Vista de la Plaza de Aluzemar - Copié sur un manuscrit Espagnol, l'an 4 - btv1b5966397h (1",
+        "page": "https://commons.wikimedia.org/wiki/File:Vista_de_la_Plaza_de_Aluzemar_-_Copi%C3%A9_sur_un_manuscrit_Espagnol,_l%27an_4_-_btv1b5966397h_(1_of_2).jpg",
+        "id": "c:121802248"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Rosa Cabecinhas and Alcino Cunha",
+        "license": "CC BY-SA 2.0",
+        "title": "Morocco Africa Flickr Rosino December 2005 84514010 edited by Buchling.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Morocco_Africa_Flickr_Rosino_December_2005_84514010_edited_by_Buchling.jpg",
+        "id": "c:588858"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Alinor Author of the blank map: Frank Bennett Author of derived work: BegbertBig",
+        "license": "CC BY-SA 4.0",
+        "title": "Western Sahara Positions.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Western_Sahara_Positions.png",
+        "id": "c:116697042"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "title": "Western Desert, Sahara Desert, Egypt.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Western_Desert,_Sahara_Desert,_Egypt.jpg",
+        "id": "c:108843309"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "652234",
+        "page": "https://pixabay.com/photos/globe-map-countries-borders-old-3383088/",
+        "id": 3383088
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "wpaczocha",
+        "page": "https://pixabay.com/photos/falling-star-brexit-4087070/",
+        "id": 4087070
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "GregMontani",
+        "page": "https://pixabay.com/photos/morocco-mosque-architecture-gallery-2435391/",
+        "id": 2435391
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "danyloz2002",
+        "page": "https://pixabay.com/photos/casablanca-morocco-mosque-islam-1091462/",
+        "id": 1091462
+      }
+    ],
+    "image_queries_done": [
+      "Spanish enclave Morocco",
+      "Morocco coastline Mediterranean Atlantic",
+      "Ceuta Melilla islands",
+      "Spanish administered territory",
+      "Morocco territorial claim",
+      "Western Sahara border region",
+      "Map showing borders",
+      "International political dispute",
+      "Morocco",
+      "Morocco landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0505_모로코_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0505_모로코_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0505_모로코.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0505_모로코.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "몰디브는 적도를 가로지른다",
@@ -62045,7 +62162,7 @@
     "verify_note": "Thích Nhất Hạnh",
     "confidence": "source",
     "created_at": "2026-11-06T01:11:10.747549+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -62060,7 +62177,60 @@
     },
     "curate_score": 8,
     "curate_why": "전쟁 중 학교 설립, 강한 대립",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "empathy",
+    "source_text": "Thích Nhất Hạnh ( TIK NAHT HAHN; Vietnamese: [tʰǐk̟ ɲə̌t hâjŋ̟ˀ] , Huế dialect: [tʰɨt̚˦˧˥ ɲək̚˦˧˥ hɛɲ˨˩ʔ]; born Nguyễn Xuân Bảo; 11 October 1926 – 22 January 2022) was a Vietnamese Thiền Buddhist monk, peace activist, prolific author, poet, and teacher, who founded the Plum Village Tradition, historically recognized as the main inspiration for engaged Buddhism. Known as the \"father of mindfulness\", Nhất Hạnh was a major influence on Western practices of Buddhism.\nIn the mid-1960s, Nhất Hạnh co-founded the School of Youth for Social Services and created the Order of Interbeing. He was exiled from South Vietnam in 1966 after expressing opposition to the war and refusing to take sides. In 1967, Martin Luther King, Jr. nominated him for a Nobel Peace Prize. Nhất Hạnh established dozens of monasteries and practice centers and spent many years living at the Plum Village Monastery, which he founded in 1982 in southwest France near Thénac, traveling internationally to give retreats and talks. Nhất Hạnh promoted deep listening as a nonviolent solution to conflict and sought to raise awareness of the interconnectedness of environments that sustain and promote peace. He coined the term \"engaged Buddhism\" in his book Vietnam: Lotus in a Sea of Fire.\nAfter a 39-year exile, Nhất Hạnh was permitted to visit Vietnam in 2005. In 2018, he returned to Vietnam to his \"root temple\", Từ Hiếu Temple, near Huế, where he lived until his death in 2022, at the age of 95.\n== Early life ==\nNhất Hạnh was born Nguyễn Xuân Bảo on 11 October 1926, in the ancient capital of Huế in central Vietnam. He is 15th generation Nguyễn Đình; the poet Nguyễn Đình Chiểu, author of Lục Vân Tiên, was his ancestor. His father, Nguyễn Đình Phúc, from Thành Trung village in Thừa Thiên, Huế, was an official with the French administration. His mother, Trần Thị Dĩ, was a homemaker from Gio Linh district. Nhất Hạnh was the fifth of their six children. Until he was five, he lived with his large extended family at his grandmother's home. He recalled feeling joy at age seven or eight after he saw a drawing of a peaceful Buddha, sitting on the grass. On a school trip, he visited a mountain where a hermit lived who was said to sit quietly day and night to become peaceful like the Buddha. They explored the area, and he found a natural well, which he drank from and felt completely satisfied. It was this experience that led him to want to become a Buddhist monk. At age 12, he expressed an interest in training to become a monk, which his parents, cautious at first, eventually let him pursue at age 16.\n== Names applied to him ==\nNhất Hạnh had many names in his lifetime. As a boy, he received a formal family name (Nguyễn Đình Lang) to register for school, but was known by his nickname (Bé Em). He received a spiritual name (Điệu Sung) as an aspirant for the monkhood; a lineage name (Trừng Quang) when he formally became a lay Buddhist; and a Dharma name (Phùng Xuân) when he was ordained as a monk. He took the Dharma title Nhất Hạnh when he moved to Saigon in 1949.\nThe Vietnamese name Thích (釋) is from \"Thích Ca\" or \"Thích Già\" (釋迦, \"of the Shakya clan\"). All Buddhist monastics in East Asian Buddhism adopt this name as their surname, implying that their first family is the Buddhist community. In many Buddhist traditions, a person can receive a progression of names. The lineage name is given first when a person takes refuge in the Three Jewels. Nhất Hạnh's lineage name is Trừng Quang (澄光, \"Clear, Reflective Light\"). The second is a dharma name, given when a person takes vows or is ordained as a monastic. Nhất Hạnh's dharma name is Phùng Xuân (逢春, \"Meeting Spring\") and his dharma title is Nhất Hạnh.\nNeither Nhất (一) nor Hạnh (行), which approximate the roles of middle name and given name, was part of ",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 1번 문장 '전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이…' — 12명 청년 수는 본문에 없음",
+        "근거 없음/틀림: 3번 문장 '학교 운영 2년 만에 1천 명 이상이 참여했으며, 그 …' — 1천명 참여 수치는 본문에 없음"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이 12명의 청년과 함께 ‘청년 사회봉사 학교’를 설립했습니다.",
+      "sentences": 7
+    },
+    "review_needed": true,
+    "narration": "전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이 12명의 청년과 함께 ‘청년 사회봉사 학교’를 설립했습니다. 이 학교는 전쟁 현장에서 마을을 정비하고 아이들을 돌보며, 직접적인 지역 봉사를 가르쳤습니다.  \n\n학교 운영 2년 만에 1천 명 이상이 참여했으며, 그 경험을 바탕으로 틱 낫 한은 ‘인터비잉 서열(Order of Interbeing)’이라는 공동체를 만들었습니다. 이 공동체는 스님의 ‘깊은 경청’과 ‘연결된 존재’ 가르침을 실천하며, 전 세계에 퍼진 30여 개의 수행 센터와 수천 명의 회원을 이어줍니다.  \n\n그렇다면 전쟁 속에서 시작된 작은 봉사 교육이 어떻게 오늘날 수십 년째 이어지는 평화 실천 네트워크가 되었을까요? 바로 스님의 행동이 ‘참여하는 불교’를 탄생시켰기 때문입니다. 전쟁의 폐허 속에서 시작된 한 학교가, 지금도 수많은 사람들에게 평화와 봉사의 의미를 전하고 있습니다.",
+    "title_line1": "전쟁 속 청년 봉사 학교",
+    "title_line2": "스님이 만든 평화망?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*스님*·청년학교"
+      },
+      {
+        "s": 2,
+        "text": "전쟁 현장 *마을* 정비"
+      },
+      {
+        "s": 4,
+        "text": "전 세계 *수행* 센터"
+      },
+      {
+        "s": 6,
+        "text": "전쟁 속 *불교* 탄생"
+      }
+    ],
+    "image_queries": [
+      "Vietnam monk youth school",
+      "Vietnam warzone village renovation",
+      "Thich Nhat Hanh community",
+      "global meditation center",
+      "Vietnam rural school building",
+      "Vietnam war Buddhism practice",
+      "peace volunteer school Vietnam"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    }
   },
   {
     "topic": "이탈리아 요리에 토마토가 없었다?",
