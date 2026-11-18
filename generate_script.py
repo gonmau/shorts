@@ -762,6 +762,33 @@ def title_ok(fact):
     return bool(l1 and l2 and is_korean_title(l1) and is_korean_title(l2))
 
 
+_TAG_BAD_END = ("날", "지", "터", "때", "게", "서", "면", "데", "는", "은", "을", "를", "의", "에", "로", "도", "다", "요", "까", "고")
+
+
+def make_hashtags(client, models, fact):
+    """대본의 핵심 명사(인물·사건·장소·개념) 해시태그 4~5개. 실패하면 None"""
+    narr = (fact.get("narration") or "")[:900]
+    prompt = f"""유튜브 쇼츠 설명란에 붙일 해시태그를 만드세요.
+소재: {fact.get('country', '')} / {fact.get('topic', '')}
+대본: {narr}
+
+규칙:
+- 검색에 걸리는 명사·고유명사만 4~5개 (예: 카스트제도, 힌두교, 인도역사). 조사·어미·동사·형용사가 붙은 말("태어날", "정해지는") 금지.
+- 각 태그는 띄어쓰기 없는 한 단어, 2~10자. 나라 이름과 "세계문화"·"쇼츠" 같은 일반어는 제외(따로 붙음).
+- 대본에 실제로 나오는 인물·사건·장소·제도·개념 위주.
+JSON만 출력: {{"tags": ["태그1", "태그2", ...]}}"""
+    out = ask_models(client, models, "당신은 유튜브 SEO 담당입니다. JSON만 출력합니다.", prompt, 600, 2,
+                     lambda t: (lambda m: json.loads(m.group(0)) if m else None)(re.search(r"\{.*\}", t or "", re.S)))
+    if not isinstance(out, dict):
+        return None
+    res = []
+    for t in out.get("tags") or []:
+        t = re.sub(r"[^0-9A-Za-z가-힣]", "", str(t))
+        if 2 <= len(t) <= 12 and not t.endswith(_TAG_BAD_END) and t not in res and t != str(fact.get("country", "")):
+            res.append(t)
+    return res[:5] or None
+
+
 def ensure_extras(client, models, fact, retries=3):
     """제목 2줄 / 핵심 문구 / 이미지 검색어 중 없는 것만 만든다. 바뀐 게 있으면 True."""
     changed = False
@@ -796,6 +823,15 @@ def ensure_extras(client, models, fact, retries=3):
             print("  [이미지 검색어] " + " | ".join(qs))
         else:
             print("  [이미지 검색어 생성 실패] 국가명으로 대체 검색합니다.")
+    if not fact.get("hashtags") and narration.strip():
+        try:
+            ht = make_hashtags(client, models, fact)
+            if ht:
+                fact["hashtags"] = ht
+                changed = True
+                print("  [해시태그] " + " ".join("#" + x for x in ht))
+        except Exception as e_:
+            print(f"  [해시태그 건너뜀] {type(e_).__name__}: {e_}")
     if "infographic" not in fact and narration.strip() and os.environ.get("INFOGRAPHIC", "1") != "0":
         try:   # 대본에 수치·순서·비교 같은 구조가 있으면 인포그래픽 1개를 뽑아 둔다 (대본과 대조해 검증, 없으면 none)
             import infographic as _IG
@@ -821,7 +857,7 @@ def run_extras(client, models, db, limit, start, delay, retries):
 
     todo = [
         (i, f) for i, f in targets
-        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries"))
+        if not (title_ok(f) and f.get("highlights") is not None and f.get("image_queries") and f.get("hashtags"))
         or (crosscheck.enabled() and not f.get("cross_checked"))
     ]
     print(f"제목/핵심 문구/이미지 검색어 보충 대상: {len(todo)}개")

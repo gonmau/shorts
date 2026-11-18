@@ -236,7 +236,7 @@ def _tagify(text):
 
 
 _JOSA = ("들의", "들은", "들이", "들을", "들에", "들과", "에서", "으로", "에게", "까지", "부터", "처럼", "보다", "의", "은", "는", "이", "가", "을", "를", "에", "로", "와", "과", "도", "만")
-_NOT_NOUN_END = ("까", "까요", "다", "한", "인", "하는", "되는", "있는", "없는", "같은", "된", "던", "고", "며", "서")
+_NOT_NOUN_END = ("까", "까요", "다", "한", "인", "하는", "되는", "있는", "없는", "같은", "된", "던", "고", "며", "서", "날", "지", "터", "때", "게", "면", "데", "해지")
 _STOP = {"왜", "어떻게", "무엇", "어떤", "이상한", "특이한", "사람", "사람들", "나라", "이유", "것", "때", "수", "가장", "정말", "진짜"}
 
 
@@ -249,19 +249,27 @@ def _noun_tag(w):
         if w.endswith(j) and len(w) - len(j) >= 2:
             w = w[: -len(j)]
             break
+    if re.search(r"(부터|까지|에서|으로|처럼|보다)$", w):     # 조사를 떼면 한 글자만 남는 말("때부터")은 명사가 아니다
+        return ""
     if w in _STOP or len(w) < 2 or w.endswith(_NOT_NOUN_END):
         return ""
     return w
 
 
 def youtube_tags(item):
-    """해시태그 목록(# 없이): 나라 + 주제 키워드 + 고정 태그, 중복 제거."""
+    """해시태그 목록(# 없이): 나라 + 핵심 명사 + 고정 태그, 중복 제거. 대본에서 뽑은 명사(item['hashtags'])가 있으면 그것을 쓴다."""
     tags = [_tagify(item.get("country"))]
-    for w in str(item.get("topic", "")).replace("/", " ").replace(",", " ").split():
-        w = _noun_tag(w)
-        if w:
-            tags.append(w)
-    tags += FIXED_TAGS
+    given = [_tagify(x) for x in (item.get("hashtags") or []) if _tagify(x)]
+    if given:
+        tags += given[:5]
+        tags += FIXED_TAGS[:3]
+    else:
+        for w in str(item.get("topic", "")).replace("/", " ").replace(",", " ").split():
+            w = _noun_tag(w)
+            if w:
+                tags.append(w)
+        tags = tags[:4]    # 주제 단어에서 뽑은 말은 어설픈 것이 많아 적게만 쓴다
+        tags += FIXED_TAGS
     out, seen = [], set()
     for t in tags:
         if t and t.lower() not in seen and len(t) <= 30:
