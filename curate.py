@@ -284,7 +284,18 @@ def main():
     ap.add_argument("--review-max", type=int, default=10)
     ap.add_argument("--force", action="store_true", help="이미 채점한 소재도 다시")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--ok", default="", help="검수 끝난 소재 번호(쉼표). 검수 필요 표시를 풀어 영상 제작 대상으로 돌린다 (예: 631,640)")
     a = ap.parse_args()
+    if a.ok.strip():
+        db = gs.load_db()
+        for x in re.findall(r"\d+", a.ok):
+            i = int(x)
+            if 0 <= i < len(db):
+                db[i]["review_ok"] = True
+                db[i].pop("review_needed", None)
+                print(f"검수 완료 처리: {i} {db[i].get('country', '')}")
+        gs.save_db(db)
+        return
     if not (a.playbook or a.score or a.review):
         a.playbook = a.score = a.review = True
     db = gs.load_db()

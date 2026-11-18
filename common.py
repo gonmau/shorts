@@ -165,6 +165,8 @@ def pending_render(db, start=0):
             continue
         if f.get("status") not in ("scripted", "tts_done"):
             continue
+        if f.get("review_needed") and not f.get("review_ok") and os.environ.get("HOLD_REVIEW", "1") != "0":
+            continue    # 점검(근거·구조)에서 두 번 고쳐도 통과 못 한 대본은 사람이 검수하기 전엔 영상으로 만들지 않는다
         out.append((i, f))
     return out
 

@@ -236,6 +236,8 @@ def main():
                 continue  # video_done 등 이미 영상까지 끝난 항목은 건너뜀
             if f.get("status_v6") == "video_done":
                 continue  # PC에서 이미 영상을 만든 기존 소재도 건너뜀
+            if f.get("review_needed") and not f.get("review_ok") and os.environ.get("HOLD_REVIEW", "1") != "0":
+                continue  # 대본 점검 미통과 → 검수 전 제작 보류
             already = (
                 f.get("status_tts_v2") == "done"
                 and f.get("audio_path_v2")

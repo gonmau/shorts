@@ -20,6 +20,9 @@ on:
         description: "폐기·수정 없이 결과만 보기"
         type: boolean
         default: false
+      ok_items:
+        description: "검수 끝난 소재 번호 (쉼표, 예: 631,640). 넣으면 선별은 안 하고 '검수 필요' 표시만 풀어 영상 제작 대상으로 돌림"
+        default: ""
       force:
         description: "이미 채점한 소재도 다시 채점"
         type: boolean
@@ -54,7 +57,11 @@ jobs:
           ARGS="--cutoff ${{ github.event.inputs.cutoff || '7' }} --top ${{ github.event.inputs.top || '10' }} --review-max ${{ github.event.inputs.review_max || '10' }}"
           [ "${{ github.event.inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
           [ "${{ github.event.inputs.force }}" = "true" ] && ARGS="$ARGS --force"
-          python curate.py $ARGS
+          if [ -n "${{ github.event.inputs.ok_items }}" ]; then
+            python curate.py --ok "${{ github.event.inputs.ok_items }}"
+          else
+            python curate.py $ARGS
+          fi
 
       - name: facts_db.json 커밋
         run: |
