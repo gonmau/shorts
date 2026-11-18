@@ -141,10 +141,24 @@ def upload_state(item):
     return ""
 
 
+def priority_order(db, indices):
+    """culture-curate 가 매긴 점수 순서로 소재를 먼저 처리: 상위(curate_top) → 점수 높은 순 → 점수 없음은 번호 순.
+    점수가 없는 DB면 번호 순 그대로. PRIORITY_TOP=0 이면 사용 안 함"""
+    idx = list(indices)
+    if os.environ.get("PRIORITY_TOP", "1") == "0":
+        return idx
+    def key(i):
+        f = db[i]
+        sc = f.get("curate_score")
+        return (0 if f.get("curate_top") else 1, -(sc if isinstance(sc, (int, float)) else 0), i)
+    return sorted(idx, key=key)
+
+
 def pending_render(db, start=0):
     """영상이 아직 안 만들어진, 대본이 끝난 소재의 (index, item) 목록 (DB 순서)."""
     out = []
-    for i, f in enumerate(db):
+    for i in priority_order(db, range(len(db))):
+        f = db[i]
         if i < start:
             continue
         if f.get("video_path_v6") or f.get("status_v6") == "video_done":

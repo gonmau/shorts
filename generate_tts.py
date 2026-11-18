@@ -225,7 +225,9 @@ def main():
         targets = [(args.index, db[args.index])]
     else:
         targets = []
-        for i, f in enumerate(db):
+        from common import priority_order
+        for i in priority_order(db, range(len(db))):
+            f = db[i]
             if i < args.start:
                 continue
             if f.get("video_path_v6"):

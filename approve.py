@@ -23,7 +23,9 @@ def main():
     waiting = sum(1 for i, f in enumerate(db) if i >= args.start and f.get("status") == "verified"
                   and len(str(f.get("narration") or "").strip()) < MIN_CHARS)
     room = max(0, args.limit - waiting)
-    for i, f in enumerate(db):
+    from common import priority_order
+    for i in priority_order(db, range(len(db))):
+        f = db[i]
         if k >= room:
             break
         if i < args.start or f.get("status") != "unverified":

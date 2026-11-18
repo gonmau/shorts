@@ -186,6 +186,9 @@ JSON 배열만 출력: [{{"i": 번호, "s": 1~10 정수, "why": "20자 이내 �
             REJ.append(i)
     alive = sorted([i for i, f in enumerate(db) if f.get("status") in ("unverified", "verified", "scripted")
                     and f.get("curate_score") is not None], key=lambda i: -db[i]["curate_score"])
+    for f in db:                      # 이미 영상이 끝났거나 폐기된 소재의 상위 표시는 지운다
+        if f.get("curate_top") and f.get("status") not in ("unverified", "verified", "scripted"):
+            f["curate_top"] = False
     for rank, i in enumerate(alive):
         db[i]["curate_top"] = rank < top_n
     print(f"[선별] 폐기 {rejected}개 · 남은 소재 {len(alive)}개 · 상위 {min(top_n, len(alive))}개 표시")

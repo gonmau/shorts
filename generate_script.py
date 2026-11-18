@@ -1225,7 +1225,9 @@ def generate_script(client, models, fact, retries):
 def find_targets(db, limit, start=0):
     targets = []
 
-    for index, fact in enumerate(db):
+    from common import priority_order
+    for index in priority_order(db, range(len(db))):
+        fact = db[index]
         if index < start:          # start_index 이상만 (예전엔 무시되어 항상 가장 작은 번호부터 만들었음)
             continue
         if fact.get("status") != "verified":

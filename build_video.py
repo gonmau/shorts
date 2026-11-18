@@ -1065,7 +1065,9 @@ def main():
             raise IndexError(f"index 범위 오류: {args.index}")
         targets = [(args.index, items[args.index])]
     else:
-        for idx, item in enumerate(items):
+        from common import priority_order
+        for idx in priority_order(items, range(len(items))):
+            item = items[idx]
             if idx < args.start:
                 continue
             if (
