@@ -659,6 +659,9 @@ with T1a:
             if st.button("🧹 선별·점검 실행", key="cu_run"):
                 if run("curate.py", "--cutoff", str(int(cu_cut)), "--top", str(int(cu_top)), "--review-max", str(int(cu_rv)), *(["--dry-run"] if cu_dry else [])):
                     st.session_state["gh_dirty"] = True
+    if os.path.exists("yt_report.md") and not EN:
+        with st.expander("📈 유튜브 성과 리포트 (GitHub이 매일 갱신 · update_code로 최신 받기)"):
+            st.markdown(open("yt_report.md", encoding="utf-8").read())
     _db1 = _ld()
     cand1 = [i for i, f in enumerate(_db1) if i >= int(start) and f.get("status") == "unverified"
              and len(str(f.get("narration") or "").strip()) < NARR_MIN]
