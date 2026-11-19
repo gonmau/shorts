@@ -60877,10 +60877,7 @@
       "closed door meeting Egypt",
       "Egypt political rally",
       "network of activists Egypt",
-      "public political protest Egypt",
-      "Muslim Brotherhood in Egypt",
-      "Egypt landmark",
-      "Egypt culture"
+      "public political protest Egypt"
     ],
     "scene_count": 10,
     "infographic": {
@@ -63502,9 +63499,7 @@
       "War outbreak three days",
       "France Sardinia attack",
       "1859 Italian battlefield map",
-      "Austrian army marching",
-      "Second Italian War of",
-      "Italy landmark"
+      "Austrian army marching"
     ],
     "scene_count": 10,
     "grounding": {
@@ -64658,7 +64653,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -64673,7 +64668,66 @@
     },
     "curate_score": 7,
     "curate_why": "광대한 영토·숫자",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The Vạn Thịnh Phát case, officially referred to by the People's Court of Ho Chi Minh City, Vietnam as the Trương Mỹ Lan and Accomplices case, was a major economic corruption scandal involving the Vạn Thịnh Phát Group joint-stock company. Under the leadership of billionaire Trương Mỹ Lan for over a decade, Vạn Thịnh Phát orchestrated a large-scale fraud scheme targeting the Sai Gon Joint Stock Commercial Bank (SCB).\nThe Vạn Thịnh Phát scandal was exposed during the anti-corruption Blazing Furnace campaign initiated by General Secretary Nguyễn Phú Trọng. The total damage from the case was estimated at ₫677 trillion (approximately US$27 billion), with fraudulent disbursements reaching ₫1 quadrillion (approximately US$44 billion) through SCB loan documents. This made it one of the largest economic scandals in Vietnam's history, surpassing the 1 Malaysia Development Berhad scandal in Malaysia and making it the largest corruption case in Southeast Asia. Many senior officials, including high-ranking leaders, were implicated, and a total of 86 individuals were charged.\nAccording to the People's Court of Ho Chi Minh City, the trial of the Vạn Thịnh Phát case was to be conducted in two phases: the first focused on investigation, prosecution, and asset recovery; the second phase addressed issues related to fraudulent corporate bonds. \nThe first-phase trial took place from March 5 to April 11, 2024, with the participation of 200 lawyers and 86 defendants, seven of whom were absent. Trương Mỹ Lan was sentenced to death; four accomplices received life sentences, while the remaining defendants were sentenced to prison terms ranging from three years of suspended sentence to 20 years. Trương Mỹ Lan's husband and niece were respectively sentenced to 9 and 17 years in prison.\n== Background ==\nTrương Mỹ Lan, born on October 13, 1956, is a Vietnamese businesswoman of Chinese descent. She was born in Saigon, Republic of Vietnam (now Ho Chi Minh City, Vietnam). Before becoming the owner of a major corporation in Vietnam, she sold cosmetics at Bến Thành Market, Ho Chi Minh City, with financial support from her mother. In 1992, she married Hong Kong businessman Eric Chu Nap-kee (Chu Lập Cơ). Together, they founded Vạn Thịnh Phát Group, initially focusing on trade, business, restaurants, and hotels in the aftermath of the Đổi Mới reforms.\nIn 2007, Vạn Thịnh Phát established two subsidiaries: Vạn Thịnh Phát Investment Group and An Đông Investment. After gaining control of Saigon Commercial Bank (SCB) through shareholdings, SCB became one of the largest commercial banks in Vietnam by asset size. Simultaneously, Vạn Thịnh Phát grew into one of Vietnam’s wealthiest real estate companies, developing a range of high-end projects, including luxury residential buildings, office towers, hotels, and shopping centers.\nTimes Square Investment JSC, a subsidiary of Vạn Thịnh Phát, owns a prime property with frontages on Nguyễn Huệ Walking Street and the Union Square Saigon (formerly named as Vincom Center A), a complex of shopping and Mandarin Oriental hotel, which was the place of the former Eden Passage Mall that features four frontages. The Times Square Investment building (located at 22–36 Nguyễn Huệ, District 1) is chaired by Eric Chu. This building was used as collateral for loans at Saigon Commercial Bank (SCB), while the SCB headquarters is located at Bitexco Office Building, 19–25 Nguyễn Huệ. Despite controlling significant assets, little information is publicly available about Trương Mỹ Lan or her family.\n=== Burning Furnace campaign ===\nCorruption in Vietnam expanded during the tenure of Prime Minister Nguyễn Tấn Dũng. In 2016, the Communist Party of Vietnam launched the anti-corruption campaign known as the Blazing Furnace, initiated by General Secretary Ngu",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 1,
+      "first": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠?",
+      "sentences": 5
+    },
+    "narration": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠? 베트남 호치민시 인민법원은 반천발 그룹과 트루옹 미 란이 사이공 공동주식상업은행(SC Bank)을 통해 1 쿼드릴리언 원(≈ 44 억 달러) 규모의 허위 대출을 진행했다고 밝혔습니다. 가짜 계약서와 위조 서류로 은행 자금을 가상 투자자금으로 위장해 끌어들인 뒤, ‘불꽃 화로’ 반부패 작전이 2024년 3월 5일부터 4월 11일까지 급습해 86명에게 기소장을 발부했습니다. 트루옹 미 란은 사형을 선고받았고, 공범 4명은 무기징역, 나머지는 3년 ~ 20년 사이의 징역형을 받았습니다. 이처럼 거대한 금융 사기가 법의 망을 뚫고 무너진 뒤, 베트남 사법 체계가 얼마나 강력하게 대응했는지 확인할 수 있습니다.",
+    "title_line1": "베트남 대규모 사기",
+    "title_line2": "누가 27억을 벌였나",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "677조 *사기* 궁금?"
+      },
+      {
+        "s": 2,
+        "text": "*허위 대출* 1쿼드"
+      },
+      {
+        "s": 3,
+        "text": "불꽃 화로 *작전*"
+      }
+    ],
+    "image_queries": [
+      "677 trillion fraud paperwork",
+      "1 quadrillion false loan documents",
+      "flame furnace operation raid",
+      "Vietnam prison cell",
+      "Vietnam courtroom interior"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "반천발사기",
+      "트루옹미란",
+      "SCBank",
+      "호치민인민법원",
+      "베트남반부패"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "최대 사기액",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "사기액",
+          "value": null,
+          "text": "1 쿼드릴리언 원"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -65550,7 +65604,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -65645,8 +65699,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -65654,7 +65707,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -65775,8 +65828,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -67216,7 +67268,7 @@
     "verify_note": "Territorial disputes in the South China Sea",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:57.133758+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "남중국해를 통과하는 무역, 연간 3조 3천 6백억 달러! 이 거대한 수치는 세계 해상 물류의 핵심이 되는 남중국해가 얼마나 중요한지를 단번에 보여줍니다. 이 해역에는 브루나이, 인도네시아, 말레이시아, 필리핀, 중국, 대만, 베트남 등 일곱 나라가 섬·암초·해역을 두고 영유권을 다투고 있습니다. 스프라틀리 제도, 파라셀 제도, 스카버러 쇼얼, 톤킨만 경계선 등이 주요 분쟁 지역으로 꼽히죠.  \n\n그런데 인도네시아도 나투나 섬 주변 해역을 남중국해의 일부로 간주해 분쟁 구역에 포함시키고 있다는 점이 흥미롭습니다. 이렇게 다양한 국가가 겹쳐 주장하면서도, 연간 3.36 trillion 달러에 달하는 무역 규모는 변함없이 흐르고 있습니다.  \n\n수많은 선박이 이 물길을 지나가면서 각국의 이해관계가 얽히지만, 결국 물류 흐름 자체는 멈추지 않습니다. 남중국해가 세계 무역의 동맥이라는 사실은, 그 어느 때보다도 명확해 보이네요.",
     "title_line1": "남중국해 무역 규모",
     "title_line2": "연간3조3천6백억?",
@@ -67242,7 +67294,9 @@
       "Natuna Islands maritime zone",
       "South China Sea trade flow",
       "Ships navigating South China Sea",
-      "South China Sea trade artery"
+      "South China Sea trade artery",
+      "Territorial disputes in the",
+      "호주 landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -67259,7 +67313,140 @@
     },
     "curate_score": 8,
     "curate_why": "무역 규모·숫자",
-    "curate_top": true
+    "curate_top": true,
+    "hashtags": [
+      "남중국해",
+      "무역규모",
+      "인도네시아",
+      "나투나섬"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "남중국해 무역 규모",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "달러",
+      "rows": [
+        {
+          "label": "연간무역",
+          "value": null,
+          "text": "3조 3천 6백억 달러"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A massive cargo ship fleet crossing a turquoise sea under a bright sky, viewed from a high aerial perspective, illustrating trillions of dollars in trade flowing through the South China Sea.",
+      "A bustling maritime crossroads with dozens of container vessels converging near a reef, captured from a wide-angle side view, emphasizing the sea's role as global logistics hub.",
+      "A map-like illustration of seven nation flags hovering over scattered islands and reefs, seen from an overhead drone angle, representing overlapping territorial claims in the South China Sea.",
+      "A satellite-style night view of illuminated coastlines and disputed islands, with faint glow of ship lights, showing the contested region among Brunei, Indonesia, Malaysia, Philippines, China, Taiwan, and Vietnam.",
+      "A close-up of jagged reefs and disputed shoals like Spratly and Paracel, shot from a low waterline perspective, highlighting the tense boundaries of the conflict zones.",
+      "An Indonesian fishing boat navigating near a small island, captured from a side profile at sunrise, indicating Indonesia's claim over the Natuna waters within the broader dispute.",
+      "A diplomatic meeting table with empty chairs around a round table on a ship deck, viewed from a top-down angle, symbolizing Indonesia's inclusion of Natuna in the contested area.",
+      "A steady stream of massive container ships moving along a straight sea lane, photographed from a forward-facing angle, underscoring uninterrupted $3.36 trillion trade flow.",
+      "A dynamic aerial shot of diverse vessels weaving through narrow passages between reefs, illustrating complex national interests yet continuous logistics movement.",
+      "A panoramic sunset scene over the South China Sea with endless horizon and countless ships, taken from a high horizon line, conveying the sea as the unmistakable artery of world trade."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Bergadder",
+        "page": "https://pixabay.com/photos/ship-sea-water-sight-transport-10038606/",
+        "id": 10038606
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Wolfgang_Hasselmann",
+        "page": "https://pixabay.com/photos/nature-feather-africa-bird-9985148/",
+        "id": 9985148
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "diego_torres",
+        "page": "https://pixabay.com/photos/seven-sisters-ocean-cliffs-sea-1462388/",
+        "id": 1462388
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Delirium333",
+        "license": "CC BY 4.0",
+        "title": "Kalayaan Island Group 2026 de facto control.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Kalayaan_Island_Group_2026_de_facto_control.png",
+        "id": "c:196558323"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "IloopMapping",
+        "license": "CC BY-SA 4.0",
+        "title": "Border disputes and discrepancies between France and Spain (Bay of Txingudi-Larrako Errese",
+        "page": "https://commons.wikimedia.org/wiki/File:Border_disputes_and_discrepancies_between_France_and_Spain_(Bay_of_Txingudi-Larrako_Erreserba_Naturala_portion).png",
+        "id": "c:202535323"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "r-q",
+        "page": "https://pixabay.com/photos/sea-the-sea-beach-china-natural-9983074/",
+        "id": 9983074
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "mslclicks",
+        "page": "https://pixabay.com/photos/ships-ocean-sea-vessels-6291071/",
+        "id": 6291071
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "cocoparisienne",
+        "page": "https://pixabay.com/photos/ocean-sea-waves-sea-foam-coast-241665/",
+        "id": 241665
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Golbez",
+        "license": "CC BY-SA 4.0",
+        "title": "Soviet Union disputes 1948-04-07 to 1952-04-28.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Soviet_Union_disputes_1948-04-07_to_1952-04-28.png",
+        "id": "c:50112731"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "harrypham2000",
+        "page": "https://pixabay.com/photos/building-landmark-landscape-6043641/",
+        "id": 6043641
+      }
+    ],
+    "image_queries_done": [
+      "South China Sea cargo ships",
+      "South China Sea shipping lanes",
+      "Seven nations South China Sea",
+      "Spratly Islands dispute area",
+      "Natuna Islands maritime zone",
+      "South China Sea trade flow",
+      "Ships navigating South China Sea",
+      "South China Sea trade artery",
+      "Territorial disputes in the",
+      "호주 landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0590_호주_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0590_호주_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0590_호주.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0590_호주.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "피지 해역에서 배가 따라야 하는 복잡한 규칙",
@@ -69373,7 +69560,7 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "일본",
+    "country": "싱가포르",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
@@ -69606,20 +69793,7 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
-    "country_before_fix": "싱가포르",
-    "grounding": {
-      "v": 1,
-      "at": "2026-11-18",
-      "distinct": 7,
-      "concrete": 6,
-      "supported": 5,
-      "reason": "이오지마의 18km 터널망은 실제 기록에 언급되지만, 구체적인 길이와 배치에 대한 근거가 미약하고 대부분 미군 보고에 의존해 신뢰도가 낮다.",
-      "avg": 6.0,
-      "flags": [
-        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
-      ]
-    }
+    "status_tts_v2": "done"
   },
   {
     "country": "한국",
@@ -70417,7 +70591,7 @@
     "verify_note": "Fugu",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:41.887091+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70508,8 +70682,7 @@
         }
       ],
       "none": false
-    },
-    "reject_reason": "나라와 주제 불일치(브라질 / JP)"
+    }
   },
   {
     "topic": "포르투갈 왕 존 6세, 브라질 명목 황제",
@@ -70985,7 +71158,7 @@
     "verify_note": "Territorial claims in the Arctic",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "북극점에 발을 디뎠는데, 관세도 세금도 안 붙는다! 사실 북극점과 그 주변 해역은 국제법상 무주지로 지정돼 있어 어느 나라의 영해에도 속하지 않아요. 하지만 주변 8개 연안국—캐나다, 덴마크(그린란드 포함), 핀란드, 아이슬란드, 노르웨이, 러시아, 스웨덴, 미국—은 각각 육지와 해역을 관리하고 있죠.  \n\n그런데 이들 국가가 관리하는 구역과는 별개로, 북극점 자체는 어느 국가의 영토가 아니기 때문에 관세나 영해 규제가 적용되지 않습니다. 그래서 여기서는 자유롭게 탐험할 수 있는 듯 보이지만, 실제로는 해저 자원 탐사를 두고 8개국이 치열하게 경쟁하고 있다는 점이 흥미롭습니다.  \n\n이 규정은 현재 국제해양법(UNCLOS) 하에서 적용되고 있으며, 향후 조약이 바뀌면 상황이 달라질 수도 있습니다. 결국 북극점은 법적으로는 ‘무주지’이지만, 그 주변을 둘러싼 국가들의 이해관계는 결코 공허하지 않다는 점, 기억해 주세요.",
@@ -71054,8 +71227,7 @@
         }
       ],
       "none": false
-    },
-    "reject_reason": "나라와 주제 불일치(이스라엘 / CA,DK,GL,FI,IS,NO,RU,SE,US)"
+    }
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
@@ -72698,7 +72870,7 @@
     "verify_note": "Bicameralism",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "rejected",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "숫자·비교는 있지만 전쟁·군사와 무관",
     "prev_status": "verified",
@@ -72713,8 +72885,7 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    },
-    "reject_reason": "근거 부실(자동): distinct 3/concrete 6/supported 7 (평균 5.3) 양원제 비율은 전 세계 통계이지만 ‘부탄’과 직접 연결된 내용이 없어 지역 특수성은 낮다; 수치와 근거는 충분히 구체적이다. · 규칙: 근거 문서에 나라 언급 없음"
+    }
   },
   {
     "topic": "1618년 ‘일곱 가지 불만’이 청나라의 서막을 열다",
@@ -74125,7 +74296,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고 들어보셨나요? 실제 사건은 미국과 영국이 샌후안 제도 경계 문제로 마주하면서 시작됐습니다. 영국 영토에 있던 돼지를 미국 군인이 총으로 쏘자, 양측이 무력 충돌을 준비하게 된 것이죠. 그런데 인간 사상자는 전혀 없었습니다. 양국은 군대를 동원하고 진지를 구축했지만, 전투는 일어나지 않았습니다. 결국 ‘돼지 전쟁’이라 불리지만, 사망자는 돼지 한 마리뿐이었고, 이후 외교적 협상을 통해 평화롭게 해결되었습니다. 이렇게 작은 사건이 국제적 긴장을 불러일으켰다는 점이, 역사의 우연함을 다시 한 번 떠올리게 합니다.",
@@ -74174,8 +74345,7 @@
         }
       ],
       "none": false
-    },
-    "reject_reason": "나라와 주제 불일치(그리스 / US,GB)"
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -75209,5 +75379,494 @@
       "avg": 8.0,
       "flags": []
     }
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "video_done",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
+  },
+  {
+    "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
+    "hook": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면?",
+    "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
+    "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
+    "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
+    "country": "일본",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Battle of Iwo Jima",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+    "verify_note": "Battle of Iwo Jima",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:01:27.510096+00:00",
+    "status": "rejected",
+    "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
+    "title_line1": "18km 지하 요새의 비밀",
+    "title_line2": "이오지마에서 미군이 고전한 이유",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "18km *지하 방어망*"
+      },
+      {
+        "s": 3,
+        "text": "일본군의 *은폐 작전*"
+      },
+      {
+        "s": 5,
+        "text": "해변에 쏟아진 *집중 사격*"
+      },
+      {
+        "s": 8,
+        "text": "예상보다 길어진 *전투*"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Tama66",
+        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
+        "id": 5438620
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "JCDCreative",
+        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
+        "id": 2252203
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Edmond Morin",
+        "license": "Public domain",
+        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
+        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
+        "id": "c:164313974"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
+        "license": "Public domain",
+        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
+        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
+        "id": "c:154351779"
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
+        "license": "Public domain",
+        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
+        "id": "c:186250053"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Pink Flojd",
+        "license": "CC BY-SA 4.0",
+        "title": "Battle of Mišar terrain model.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
+        "id": "c:71694541"
+      }
+    ],
+    "image_source": "pixabay",
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "narration_original": "상륙 직후, 미군이 18km 길이의 비밀 터널에 바로 들어갔다면 어떤 일이 벌어졌을까요? 1945년, 미국 해병대·해군·육군이 이오지마 섬에 상륙해 남부 비행장과 중부 비행장을 장악하려 했습니다. 하지만 섬 안에는 18km에 달하는 복잡한 터널망과 은폐된 포대가 얽혀 있었죠.  \n\n그때 미군은 바로 그 터널 안으로 진입했습니다.  \n\n그런데 터널 안에서는 일본군이 미리 설치한 함정과 마주치게 되면서 전투는 예상보다 오래 끌었습니다. 미군 기록에 따르면, 터널 속에서의 교전은 지형의 복잡성 때문에 보병과 포병이 동시에 작전을 펼쳐야 했고, 전투 속도는 크게 저하되었습니다.  \n\n결국 목표였던 비행장 확보는 터널 전투가 끝난 뒤에야 가능했으며, 이 비밀 네트워크는 전투의 흐름을 크게 바꾸는 요인으로 작용했습니다. 전쟁의 한 순간, 18km 길이의 어두운 뱀굴 속에서 벌어진 이 이야기가 남긴 여운은, 전장이 언제든지 예상치 못한 지형에 의해 뒤바뀔 수 있다는 점입니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "2번과 동일 내용, 중복이지만 근거는 충분히 존재함",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 2번과 동일 내용, 중복이지만 근거는 충분히 존재함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   }
 ]
