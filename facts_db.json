@@ -62957,7 +62957,7 @@
     "verify_note": "Kazakhstan",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:16.837749+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "‘내륙 나라라서 바다가 없다고?’ 라고 생각한 당신, 오늘은 카자흐스탄이 카스피해까지 손을 뻗었다는 걸 알려드릴게요. 카자흐스탄은 세계에서 아홉 번째로 큰 나라이면서, 가장 큰 내륙 국가로 알려져 있습니다. 그런데 이 거대한 땅이 바로 카스피해에 해안선을 가지고 있다는 사실, 알고 계셨나요? 카스피해는 세계에서 가장 큰 내륙해인데, 바다와 호수의 경계가 모호한 독특한 지형을 가지고 있습니다. 그래서 카자흐스탄은 내륙에 있으면서도 실질적인 해안을 누릴 수 있는 것이죠. 다만, 해안선 길이는 전체 영토를 기준으로 할 때 제한적이라는 점을 기억해 주세요. 이렇게 내륙 국가이면서도 바다와 맞닿은 카자흐스탄, 생각보다 더 복잡한 지리적 매력을 품고 있습니다. 결국, ‘내륙 나라’라는 고정관념을 다시 한 번 되돌아보게 만드는 사례가 아닐까요?",
@@ -62989,7 +62989,9 @@
       "Kazakhstan shoreline view",
       "Kazakhstan coastline aerial",
       "Kazakhstan landscape sea horizon",
-      "Caspian Sea border Kazakhstan"
+      "Caspian Sea border Kazakhstan",
+      "Kazakhstan",
+      "Kazakhstan landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -63004,7 +63006,126 @@
     },
     "curate_score": 7,
     "curate_why": "내륙·바다 대비",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "카스피해",
+      "내륙국가",
+      "카자흐스탄지리",
+      "세계9위",
+      "해안선"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    },
+    "ai_prompts": [
+      "A wide aerial view of Kazakhstan's western border meeting the Caspian Sea, showing the shoreline stretching into the steppe under a bright sky.",
+      "A low-angle shot of a lone yurt near the Caspian coastline, with gentle waves lapping the shore and endless steppe beyond.",
+      "A bird's-eye map-style illustration of Kazakhstan highlighting its massive land area as the ninth-largest country, with a subtle overlay of its inland borders.",
+      "A panoramic vista from a cliff overlooking the Caspian Sea coast of Kazakhstan, emphasizing the unexpected shoreline against the vast desert landscape.",
+      "A serene sunrise over the Caspian Sea, its calm waters blending into the horizon, illustrating the ambiguous boundary between sea and lake.",
+      "A close-up of rippling water at the Caspian shore with distant dunes, capturing the unique blend of marine and lake characteristics.",
+      "A side view from a boat on the Caspian Sea showing Kazakhstan's coastline on one side and open water on the other, highlighting the inland nation's access to the sea.",
+      "A top-down satellite perspective of Kazakhstan's coastline, showing the relatively short stretch of shore compared to the country's total area.",
+      "A wide-angle shot of a Kazakh steppe transitioning into the Caspian shoreline, depicting the complex geography of an inland country with a sea border.",
+      "A reflective sunset scene over the Caspian Sea with the Kazakh steppe in silhouette, prompting viewers to reconsider the 'landlocked' notion."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Kanenori",
+        "page": "https://pixabay.com/photos/the-akashi-kaikyo-bridge-sea-5542079/",
+        "id": 5542079
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "MasterTux",
+        "page": "https://pixabay.com/photos/adventure-treasure-map-old-world-map-2528477/",
+        "id": 2528477
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "dimitrisvetsikas1969",
+        "page": "https://pixabay.com/photos/sea-waves-sunset-dusk-coast-5975484/",
+        "id": 5975484
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "WikiImages",
+        "page": "https://pixabay.com/photos/caspian-sea-satellite-image-62905/",
+        "id": 62905
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "IvarT",
+        "license": "CC0",
+        "title": "Young boys diving into the Caspian Sea from the rocky shoreline in Aktau, Kazakhstan.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Young_boys_diving_into_the_Caspian_Sea_from_the_rocky_shoreline_in_Aktau,_Kazakhstan.jpg",
+        "id": "c:192110382"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Foundry",
+        "page": "https://pixabay.com/photos/beach-shoreline-aerial-view-832346/",
+        "id": 832346
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Buzurnyuk",
+        "page": "https://pixabay.com/photos/travel-nature-landscape-kazakhstan-8785493/",
+        "id": 8785493
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "faiknagiyev",
+        "page": "https://pixabay.com/photos/baku-azerbaijan-panorama-sunset-4626962/",
+        "id": 4626962
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Andy_Bay",
+        "page": "https://pixabay.com/photos/canyon-mountains-river-kazakhstan-1740973/",
+        "id": 1740973
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/almaty-kazakhstan-ascension-91219/",
+        "id": 91219
+      }
+    ],
+    "image_queries_done": [
+      "Kazakhstan inland sea map",
+      "Kazakhstan world size map",
+      "Kazakhstan Caspian Sea coast",
+      "Caspian Sea inland sea",
+      "Kazakhstan shoreline view",
+      "Kazakhstan coastline aerial",
+      "Kazakhstan landscape sea horizon",
+      "Caspian Sea border Kazakhstan",
+      "Kazakhstan",
+      "Kazakhstan landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0555_카자흐스탄_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0555_카자흐스탄_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0555_카자흐스탄.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0555_카자흐스탄.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "하니시 제도(Hanish Islands) 분쟁의 짧은 전투와 국제 판결",
@@ -67178,7 +67299,7 @@
     "verify_note": "South Papua",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -67193,7 +67314,85 @@
     },
     "curate_score": 7,
     "curate_why": "면적·인구 대비",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "South Papua, officially the South Papua Province (Indonesian: Provinsi Papua Selatan), is an Indonesian province located in the southern portion of Papua, following the borders of the Papuan customary region of Anim Ha. Formally established on 25 July 2022 and including the four most southern regencies that were previously part of the province of Papua and before 11 December 2002 had been a single larger Merauke Regency, it covers a land area of 117,849.16 km2, about the same area as Pennsylvania or Kirov Oblast (or 90% of that of England). This area had a population of 513,617 at the 2020 Census, while the official estimate as at mid 2025 was 549,650 (285,040 males and 264,610 females), making it the least populous province in Indonesia.\nIt shares land borders with the separate nation of Papua New Guinea to the east, as well as the Indonesian provinces of Highland Papua and Central Papua to the north and northwest, respectively. South Papua also faces the Arafura Sea in the west and south, which is a maritime border with Australia. Merauke is the economic centre of South Papua, while its administrative centre is the town of Salor located in Kurik District of Merauke Regency, around 60 km northwest of Merauke town.\nSouth Papua's landscape predominantly consists of lowland areas characterized by extensive swamps and massive rivers such as the Digul and Maro. Indigenous ethnic groups inhabit this region, such as the Asmat, Marind, Muyu, and Korowai. They rely on sago and fish as staple dietary sources. Certain tribes like the Asmat were recognized for their wood carving and boating culture. There is also a massive amount of migrants such as Javanese people because of the transmigration program sponsored by the government to convert vast amounts of swamps into rice paddies and increase this region's population. South Papua is also home to the renowned Wasur National Park, an expansive wetland area with rich biodiversity including the agile wallaby, mound-building termites or musamus, and the bird of paradise.\n== History ==\nThe wetland region of South Papua, before the arrival of Europeans, was home to several indigenous tribes. These tribes included the Asmat, Marind and Wambon, who still maintain their ancestral traditions in the area. The Marind tribe, also known as the Malind, lived in groups along the rivers in the Merauke region, and their way of life centered around hunting, gathering, and farming. However, the Marind tribe was also notorious for their practice of headhunting. They would travel in boats along the rivers and coasts to distant settlements, where they would behead the inhabitants. The heads of their victims would then be taken back to their villages to be preserved and celebrated.\nIn the 19th century, European powers began to colonize the island of New Guinea. The island was divided along a straight line, with the western portion falling under the jurisdiction of the Dutch New Guinea region and the eastern portion becoming British New Guinea. Marind people often crossed the border to engage in headhunting activities. In 1902, the Dutch established a military base at the eastern tip of South Papua, near the Maro River, to strengthen the border and eliminate this tradition. This base was named Merauke, after its location. The Dutch also established a Catholic mission in Merauke to spread their religion and to further discourage the practice of headhunting. During the Dutch colonial period, the Javanese people were brought to Merauke to cultivate rice fields. This influx of laborers further contributed to the growth of the town and the development of the surrounding region. Eventually, it became the capital of Afdeeling Zuid Nieuw Guinea or the South New Guinea Province.\nIn addition to the Maro River, the Dutch also ",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 2번 문장 '이렇게 넓은 땅에 사람 수가 적어 인구 밀도는 세계 최…' — 세계 최저 밀도는 본문에 없음"
+      ],
+      "advice": [
+        "궁금증 전환 0번 (알찬 소재라면 새 궁금증을 더 열 수 있음)",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "펜실베니아와 비슷한 117,849 km² 규모의 남파푸아 주, 인구는 2020년 513,617명에 불과합니다.",
+      "sentences": 8
+    },
+    "review_needed": true,
+    "narration": "펜실베니아와 비슷한 117,849 km² 규모의 남파푸아 주, 인구는 2020년 513,617명에 불과합니다. 이렇게 넓은 땅에 사람 수가 적어 인구 밀도는 세계 최저 수준에 근접하죠. 주의 동쪽은 파푸아 뉴기니와, 서쪽·남쪽은 아라푸라 해를 사이에 두고 호주와 맞닿아 있습니다. 행정 중심은 살로, 경제 중심은 메라우케에 자리 잡고 있어, 두 도시는 약 60 km 정도 떨어져 있습니다. 지역은 저지대 습지와 디굴·마로 강 등 거대한 강망으로 이루어져, 와수르 국립공원 같은 원시 습지가 잘 보존됩니다. 현지 원주민은 아스맛·마린드·무유·코로와이 등으로, 사고와 어류를 주식으로 살아갑니다. 최근 정부는 자와인 이주민을 유치해 논을 개간하려 했지만, 여전히 넓은 습지와 강이 주를 지배하고 있습니다. 결국 남파푸아는 “광활한 대지에 발자국이 거의 남지 않은” 드문 풍경을 간직한 지역이라고 할 수 있습니다.",
+    "title_line1": "남파푸아 면적은 펜실",
+    "title_line2": "인구는 겨우 50만",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "남파푸아 *광활*"
+      },
+      {
+        "s": 2,
+        "text": "인구 *최저*"
+      },
+      {
+        "s": 8,
+        "text": "발자국 *남지*"
+      }
+    ],
+    "image_queries": [
+      "South Papua vast landscape",
+      "low population density",
+      "Arafura Sea coastline",
+      "Salo town Papua",
+      "Wassur National Park wetlands",
+      "Indigenous fishing community",
+      "South Papua wetland fields",
+      "empty mudflat South Papua"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "남파푸아",
+      "와수르국립공원",
+      "아스맛",
+      "자와인"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "남파푸아 주요 수치",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "면적",
+          "value": 117849.0,
+          "text": "117,849 km²"
+        },
+        {
+          "label": "인구",
+          "value": 513617.0,
+          "text": "513,617명"
+        },
+        {
+          "label": "거리",
+          "value": 60.0,
+          "text": "60 km"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "부에노스아이레스, 세계 최고 피자 소비 도시",
