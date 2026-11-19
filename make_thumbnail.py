@@ -31,6 +31,12 @@ def background(idx, item):
                 return ImageOps.fit(Image.open(pp_).convert("RGB"), (W, H), Image.LANCZOS, centering=(0.5, 0.4))
             except Exception:
                 pass
+    bg_ = BASE_DIR / "thumb_bg" / f"{idx:03d}.jpg"      # 영상 제작 때 저장해 둔 배경 (이미지 폴더가 없는 GitHub 실행에서도 다시 만들 수 있게)
+    if bg_.exists():
+        try:
+            return ImageOps.fit(Image.open(bg_).convert("RGB"), (W, H), Image.LANCZOS, centering=(0.5, 0.4))
+        except Exception:
+            pass
     folder = visual_dir(BASE_DIR, idx, item)
     for p in sorted(folder.glob("scene_*.png")):
         try:
@@ -94,6 +100,7 @@ def main():
     ap.add_argument("--style", choices=["hook", "pop", "classic"], default=os.environ.get("THUMB_STYLE", "hook"),
                     help="hook: 나라·국기 없이 제목+후크 중심(기본) / pop: 국기+노란 붓터치 나라 이름 / classic: 예전 노란 띠")
     ap.add_argument("--only", default="", help="이 번호들(쉼표)의 썸네일만 만듦. 예: 183,184")
+    ap.add_argument("--allow-missing", action="store_true", help="영상 파일이 없어도 만듦 (썸네일만 다시 만들 때)")
     args = ap.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
@@ -103,7 +110,7 @@ def main():
         if idx < args.start or (only and idx not in only):
             continue
         vp = item.get("video_path_v6")
-        if not vp or not Path(vp).exists():
+        if not vp or (not Path(vp).exists() and not args.allow_missing):
             continue
         out = OUT_DIR / f"{Path(vp).stem}.png"
         if out.exists() and not args.force and not only:   # --only 로 지정한 소재는 제목을 고쳤을 수 있어 항상 다시 만듦
@@ -117,6 +124,13 @@ def main():
             import thumb_pop
             im = thumb_pop.make(idx, item, args.channel, args.handle, args.avatar, background)
         im.save(out)
+        try:   # 다시 만들 때 쓸 배경 보관 (작은 JPEG, 실제 장면 이미지가 있을 때만)
+            _sc = sorted(visual_dir(BASE_DIR, idx, item).glob("scene_*.png"))
+            if _sc and not (BASE_DIR / "thumb_bg" / f"{idx:03d}.jpg").exists():
+                (BASE_DIR / "thumb_bg").mkdir(exist_ok=True)
+                ImageOps.fit(Image.open(_sc[0]).convert("RGB"), (W, H), Image.LANCZOS, centering=(0.5, 0.4)).save(BASE_DIR / "thumb_bg" / f"{idx:03d}.jpg", quality=85)
+        except Exception:
+            pass
         print("썸네일:", out.name)
         n += 1
     print(f"완료: {n}개")

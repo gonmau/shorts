@@ -83,6 +83,7 @@ TTS_CFG.setdefault("engine", "auto")
 TTS_CFG.setdefault("target_sec", 0)
 TTS_CFG.setdefault("tv_fx", False)         # 영상 처음/끝에 옛날 TV 켜짐·꺼짐 효과
 TTS_CFG.setdefault("font_sub", ""); TTS_CFG.setdefault("font_title", ""); TTS_CFG.setdefault("font_ovl", "")   # 글씨체 id (fonts.py), 빈 값=기본
+TTS_CFG.setdefault("font_thumb", "")   # 썸네일 글씨체 id (영상별 지정이 없을 때 기본)
 TTS_CFG.setdefault("yt_thumb", False)   # 업로드할 때 썸네일도 같이 올림 (토큰에 youtube.force-ssl 권한 필요)
 TTS_CFG.setdefault("scenes", 10)
 if not TTS_CFG.get("_verify_off_v1"):      # 한 번만: 교차검증/이미지 자동검증을 기본 꺼짐으로 (직접 검증한 대본을 붙여 쓰는 방식 기본)
@@ -203,7 +204,7 @@ def tts_env():
             **({"INFOGRAPHIC": "0"} if TTS_CFG.get("info_off") else {}),
             **({"SCREEN_CREDIT": "0"} if TTS_CFG.get("credit_off") else {}),
             **({"AI_IMAGES": "1"} if TTS_CFG.get("ai_img") else {}),
-            **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL")) if TTS_CFG.get(k_)}}
+            **{ev_: str(TTS_CFG[k_]) for k_, ev_ in (("font_sub", "FONT_SUB"), ("font_title", "FONT_TITLE"), ("font_ovl", "FONT_OVL"), ("font_thumb", "FONT_THUMB")) if TTS_CFG.get(k_)}}
 
 def run(*args):
     t0 = time.time()
@@ -3891,7 +3892,14 @@ with TB:
     c2.checkbox("📤 업로드 때 썸네일도", key="bs_thumb", on_change=_mirror, args=("up_thumb", "bs_thumb"))
     _bs_init("tv_fx_cb", "bs_tv", bool(TTS_CFG.get("tv_fx")))
     c3.checkbox("📺 TV 켜짐 효과", key="bs_tv", on_change=_mirror, args=("tv_fx_cb", "bs_tv"))
-    st.caption("글씨체는 '4 음성' 탭에서 바꿉니다. 이미 만든 대본·음성은 설정을 바꿔도 안 바뀌니 필요하면 '다시 만들기'를 하세요.")
+    import fonts as _FN2
+    _fa2 = _FN2.available(); _fl2 = ["", *_fa2]
+    _ftv = st.selectbox("🖼 썸네일 글씨체 (영상별 지정이 없을 때 기본)", _fl2, _fl2.index(TTS_CFG.get("font_thumb") or "") if (TTS_CFG.get("font_thumb") or "") in _fl2 else 0,
+                        key="bs_font_thumb", format_func=lambda x: "기본 (맑은 고딕/Noto)" if not x else _fa2[x])
+    if _ftv != (TTS_CFG.get("font_thumb") or ""):
+        TTS_CFG["font_thumb"] = _ftv
+        json.dump(TTS_CFG, open(TTS_FILE, "w", encoding="utf-8"), ensure_ascii=False)
+    st.caption("영상 제목·자막 글씨체는 '4 음성' 탭에서 바꿉니다. 이미 만든 대본·음성은 설정을 바꿔도 안 바뀌니 필요하면 '다시 만들기'를 하세요.")
     # 3) GitHub 반영 상태
     st.markdown("**GitHub 자동 실행에 반영된 값**")
     if not _gh_token():
