@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-19 07:44:15 (KST) · 기록 1982건 · 소재 718개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-19 09:00:50 (KST) · 기록 1983건 · 소재 718개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -37,10 +37,16 @@
 | update_description | 6 | 0 | 17초 |
 | upload_to_youtube | 30 | 0 | 15분 50초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
-| 쇼츠 | 122 | 6 | 12시간 17분 |
+| 쇼츠 | 123 | 6 | 12시간 17분 |
 | 코드업데이트 | 116 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-19
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 09:00 | Actions | 쇼츠 | culture-shorts-pipeline #129 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/44424204472 |
 
 ### 2026-11-18
 
@@ -2006,9 +2012,3 @@
 | 13:10 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #78 (workflow_dispatch) | ✅ | 12분 1초 | https://github.com/gonmau/shorts/actions/runs/39542589492 |
 | 09:30 | Actions(과거) | DB커밋 | facts_db.json: chore: update facts_db.json [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/4f42feaf9cd326cfbeb545e9c10426b390796367 |
 | 09:22 | Actions(과거) | 쇼츠 | culture-shorts-pipeline #77 (workflow_dispatch) | ✅ | 7분 50초 | https://github.com/gonmau/shorts/actions/runs/39520949463 |
-
-### 2026-10-16
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 13:11 | PC(과거) | DB커밋 | facts_db.json: Add files via upload | ✅ |  | https://github.com/gonmau/shorts/commit/ee78a340e30bb00eb0b189a9d1c9cf75d08400c2 |
