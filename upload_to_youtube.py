@@ -128,8 +128,13 @@ def main():
                         if buf.tell() < 1_900_000 or q <= 50: break
                         q -= 10
                     tj = th.with_suffix(".jpg"); tj.write_bytes(buf.getvalue())
-                    yt.thumbnails().set(videoId=res["id"], media_body=MediaFileUpload(str(tj), mimetype="image/jpeg")).execute()
-                    print(f"  썸네일 설정: {tj.name} ({tj.stat().st_size//1024}KB)")
+                    import time as _t
+                    for _try in range(3):      # 업로드 직후엔 유튜브가 처리 중 자동 썸네일로 덮어쓰는 일이 있어, 시간을 두고 다시 설정한다
+                        if _try:
+                            _t.sleep(60)
+                        r_ = yt.thumbnails().set(videoId=res["id"], media_body=MediaFileUpload(str(tj), mimetype="image/jpeg")).execute()
+                        _u = ((r_.get("items") or [{}])[0].get("default") or {}).get("url", "")
+                        print(f"  썸네일 설정 {_try + 1}/3: {tj.name} ({tj.stat().st_size//1024}KB) {_u[-40:]}")
                 except Exception as e:
                     print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:300]}")
         item["uploaded_at"] = datetime.now(kst).isoformat()
