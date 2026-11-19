@@ -63468,7 +63468,7 @@
     "verify_note": "Second Italian War of Independence",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:38.449401+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "오스트리아가 ‘전쟁 중단’ 명령을 보냈지만, 사르디니아는 무시하고 바로 전쟁을 시작! 1859년, 제2프랑스제국과 사르디니아 왕국은 오스트리아 제국에 맞설 준비를 서두릅니다. 사르디니아는 3월 9일, 군대를 급히 동원했고, 오스트리아는 한 달 뒤인 4월 9일에야 동원에 나섰습니다. 양측이 전력을 끌어모은 뒤, 4월 23일 오스트리아는 사르디니아에게 전쟁 중단을 요구했지만 사르디니아는 이를 거부합니다.  \n\n그런데, 그 요구가 내려진 불과 3일 뒤, 4월 26일 전쟁이 바로 발발합니다. 전쟁이 시작된 순간, 프랑스와 사르디니아는 오스트리아를 향해 동시에 공격을 감행했고, 이는 이탈리아 통일 과정의 중요한 전환점이 됩니다. 전쟁이 일어난 정확한 시점과 날짜는 1859년에 한정된 사건이며, 그때의 움직임이 오늘날 이탈리아의 국경을 형성하는 데 큰 역할을 했습니다. 결국, 오스트리아의 중단 요구는 무시당했고, 전쟁은 바로 시작돼 역사의 흐름을 바꾸었습니다.",
     "title_line1": "오스트리아 전쟁 중단",
     "title_line2": "사르디니아 즉시 전쟁",
@@ -63502,7 +63502,9 @@
       "War outbreak three days",
       "France Sardinia attack",
       "1859 Italian battlefield map",
-      "Austrian army marching"
+      "Austrian army marching",
+      "Second Italian War of",
+      "Italy landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -63519,7 +63521,153 @@
     },
     "curate_score": 8,
     "curate_why": "전쟁 비밀·숫자",
-    "curate_top": true
+    "curate_top": true,
+    "hashtags": [
+      "사르디니아",
+      "오스트리아제국",
+      "제2프랑스제국",
+      "이탈리아통일",
+      "1859전쟁"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "1859년 전쟁 전개",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "3월 9일",
+          "value": null,
+          "text": "사르디니아 군대 급동원"
+        },
+        {
+          "label": "4월 9일",
+          "value": null,
+          "text": "오스트리아 군대 동원"
+        },
+        {
+          "label": "4월 23일",
+          "value": null,
+          "text": "오스트리아 전쟁 중단 요구"
+        },
+        {
+          "label": "4월 26일",
+          "value": null,
+          "text": "전쟁 발발"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0558_이탈리아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0558_이탈리아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A dramatic low-angle view of Sardinian troops marching out of a mountain pass, ignoring a distant Austrian messenger's flag, early 1859, misty Alpine scenery.",
+      "A bird's-eye view of Sardinian artillery positioned on a ridge, while an Austrian courier's empty scroll flutters on the ground below, 1859 war tension.",
+      "A wide panoramic scene of French imperial troops and Sardinian soldiers assembling in a sunlit field, banners fluttering, preparing for battle against Austria, mid‑1859.",
+      "An overhead map‑style illustration of Sardinian forces rapidly gathering on March 9, contrasted with a sparse Austrian camp delayed until April 9, 1859.",
+      "A close-up side shot of Austrian envoys delivering a cease‑fire demand to a Sardinian camp, with Sardinian officers turning away, April 23, 1859.",
+      "A dynamic three‑quarter view of cannon smoke rising as Sardinian and French forces launch an attack three days after the cease‑fire demand, April 26, 1859.",
+      "A sweeping battlefield vista showing French cavalry and Sardinian infantry charging simultaneously toward Austrian lines, dawn light highlighting the turning point of Italian unification.",
+      "A dramatic tilt‑up perspective of French and Sardinian flags soaring above a chaotic clash with Austrian troops, emphasizing the pivotal moment of the 1859 conflict.",
+      "A stylized timeline illustration with moving silhouettes of armies across the Italian peninsula, marking 1859 as the decisive year shaping modern Italy's borders.",
+      "A powerful low-angle shot of shattered Austrian banners on a battlefield, with Sardinian and French soldiers advancing, symbolizing the ignored cease‑fire and the war that reshaped history."
+    ],
+    "ai_prompts_done": [
+      "A dramatic low-angle view of Sardinian troops marching out of a mountain pass, ignoring a distant Austrian messenger's flag, early 1859, misty Alpine scenery.",
+      "A bird's-eye view of Sardinian artillery positioned on a ridge, while an Austrian courier's empty scroll flutters on the ground below, 1859 war tension.",
+      "A wide panoramic scene of French imperial troops and Sardinian soldiers assembling in a sunlit field, banners fluttering, preparing for battle against Austria, mid‑1859.",
+      "An overhead map‑style illustration of Sardinian forces rapidly gathering on March 9, contrasted with a sparse Austrian camp delayed until April 9, 1859.",
+      "A close-up side shot of Austrian envoys delivering a cease‑fire demand to a Sardinian camp, with Sardinian officers turning away, April 23, 1859.",
+      "A dynamic three‑quarter view of cannon smoke rising as Sardinian and French forces launch an attack three days after the cease‑fire demand, April 26, 1859.",
+      "A sweeping battlefield vista showing French cavalry and Sardinian infantry charging simultaneously toward Austrian lines, dawn light highlighting the turning point of Italian unification.",
+      "A dramatic tilt‑up perspective of French and Sardinian flags soaring above a chaotic clash with Austrian troops, emphasizing the pivotal moment of the 1859 conflict.",
+      "A stylized timeline illustration with moving silhouettes of armies across the Italian peninsula, marking 1859 as the decisive year shaping modern Italy's borders.",
+      "A powerful low-angle shot of shattered Austrian banners on a battlefield, with Sardinian and French soldiers advancing, symbolizing the ignored cease‑fire and the war that reshaped history."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dramatic low-angle view of Sardinian troops marching out of a mountain pass, i"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A bird's-eye view of Sardinian artillery positioned on a ridge, while an Austria"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide panoramic scene of French imperial troops and Sardinian soldiers assembli"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An overhead map‑style illustration of Sardinian forces rapidly gathering on Marc"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up side shot of Austrian envoys delivering a cease‑fire demand to a Sard"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dynamic three‑quarter view of cannon smoke rising as Sardinian and French forc"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sweeping battlefield vista showing French cavalry and Sardinian infantry charg"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dramatic tilt‑up perspective of French and Sardinian flags soaring above a cha"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A stylized timeline illustration with moving silhouettes of armies across the It"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A powerful low-angle shot of shattered Austrian banners on a battlefield, with S"
+      }
+    ],
+    "image_queries_done": [
+      "Sardinia ignoring ceasefire",
+      "French Empire and Sardinia troops",
+      "Sardinia rapid mobilization",
+      "Austria demand ceasefire",
+      "War outbreak three days",
+      "France Sardinia attack",
+      "1859 Italian battlefield map",
+      "Austrian army marching",
+      "Second Italian War of",
+      "Italy landmark"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0558_이탈리아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0558_이탈리아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "fJyURbeNKsA",
+    "uploaded_at": "2026-11-19T09:24:36.281940+09:00"
   },
   {
     "topic": "유네스코 무형문화유산 리스트, 실제 보호는 어떻게?",
@@ -70269,7 +70417,7 @@
     "verify_note": "Fugu",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:41.887091+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70360,7 +70508,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(브라질 / JP)"
   },
   {
     "topic": "포르투갈 왕 존 6세, 브라질 명목 황제",
@@ -71893,7 +72042,7 @@
     "verify_note": "Kuril Islands dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:19:00.910044+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71906,7 +72055,87 @@
     },
     "curate_score": 8,
     "curate_why": "네 섬 영유권·러·일 대립, 구체적 섬·숫자",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "caution",
+    "source_text": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast). They are claimed by Japan, which refers to them as its Northern Territories or Southern Chishima, and considers them part of the Nemuro Subprefecture of Hokkaido Prefecture.\nThe San Francisco Peace Treaty, signed between the Allies and Japan in 1951, states that Japan renounces \"all right, title and claim to the Kuril Islands\", but does not explicitly recognize the Soviet Union's sovereignty over them. Japan claims that at least some of the disputed islands are not a part of the Kuril Islands, and thus are not covered by the treaty. Russia maintains that the Soviet Union's sovereignty over the islands was recognized in post-war agreements. Japan and the Soviet Union ended their formal state of war with the Soviet–Japanese Joint Declaration of 1956 but did not sign a peace treaty. During talks leading to the joint declaration, the Soviet Union offered Japan the two smaller islands of Shikotan and the Habomai Islands in exchange for Japan renouncing all claims to the two larger islands of Iturup and Kunashir, but Japan declined the offer. This disagreement between the two-island offer made by the Soviet Union and Japan's demand of regaining two larger islands as well became the cornerstone for continuation of the dispute into the present day.\n== Background ==\nThe first Russo-Japanese agreement to deal with the status of Sakhalin and the Kuril Islands was the 1855 Treaty of Shimoda, which first established official relations between the Russian Empire and Tokugawa Japan. Article 2 of the Treaty of Shimoda, which provided for an agreement on borders, states \"Henceforth the borders between Russia and Japan will pass between the islands Iturup (Etorofu) and Urup (Uruppu). The whole island of Iturup belongs to Japan and the whole island Urup and the other Kuril Islands to the north constitute possessions of Russia\". The islands of Kunashiri, Shikotan and the Habomai Islands, all lying to the south of Iturup, are not explicitly mentioned in the treaty and were understood at the time to be a non-disputed part of Japan. The treaty also specified that the island of Sakhalin/Karafuto was not to be partitioned but was to remain under a joint Russo-Japanese condominium.\nIn the 1875 Treaty of Saint Petersburg, Russia and Japan agreed that Japan would give up all rights to Sakhalin in exchange for Russia giving up all rights to the Kuril Islands in favor of Japan. However, a controversy remains as to what constitutes the Kuril Islands, due to translation discrepancies in the French official text of that treaty.\nThe Russo-Japanese War of 1904–05 was a military disaster for Russia. The 1905 Treaty of Portsmouth, concluded at the end of this war, gave the southern half of Sakhalin Island to Japan.\nDuring the Russian Civil War following the October Revolution, Japan occupied parts of Russia's Far East initially as part of the Allied intervention, but did not formal",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 5번 문장 '그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 …' — 본문에 현지에 일본식 표지판·깃발 존재 언급 없음"
+      ],
+      "advice": [
+        "첫 문장이 김",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다.",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다. 이 섬들은 홋카이도와 캄차카 반도 사이, 오호츠크해와 태평양을 가르는 전략적 요충지이며, 러시아는 사할린 지방의 남부 쿠릴 구역으로, 일본은 홋카이도 네무로 부속 영토로 관리합니다.  \n\n전후 1951년 샌프란시스코 평화조약에서 일본은 “쿠릴 제도에 대한 모든 권리·청구를 포기”했지만, 조약 본문에 소련(현 러시아)의 주권을 명시하지 않아 해석 논란이 지속됩니다. 1956년 소련‑일본 공동 선언으로 전쟁 상태는 종식됐지만 평화조약은 체결되지 않았고, 소련은 시코탄·하보마이를 일본에 제안했으나 일본은 이투룹·쿠나시리 반환을 요구해 거부했습니다.  \n\n그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 표지판이 동시에 존재하고, 두 나라 깃발이 나란히 보이는 모습이 목격됩니다. 즉, 동일한 섬 위에 두 개의 주권이 겹쳐 있는 상황이 지속되고 있는 것입니다.",
+    "title_line1": "러일 네 섬 영유권",
+    "title_line2": "같은 섬에 두 깃발",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "양국 행정 *충돌*"
+      },
+      {
+        "s": 2,
+        "text": "전략 *쿠릴*"
+      },
+      {
+        "s": 4,
+        "text": "*이투룹* 요구"
+      },
+      {
+        "s": 6,
+        "text": "두 주권 *동시*"
+      }
+    ],
+    "image_queries": [
+      "Russian and Japanese government buildings",
+      "strategic Kuril Islands view",
+      "San Francisco peace treaty",
+      "Iturup island coast flags",
+      "dual Russian Japanese flags",
+      "two sovereignty flags together"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "이투룹섬",
+      "시코탄섬",
+      "샌프란시스코조약",
+      "러일분쟁"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "주요 연도",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1945년",
+          "value": null,
+          "text": "소련 합병"
+        },
+        {
+          "label": "1951년",
+          "value": null,
+          "text": "샌프란시스코 조약"
+        },
+        {
+          "label": "1956년",
+          "value": null,
+          "text": "공동 선언"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "사바이 섬, 유일한 마을을 통한 입출입",
