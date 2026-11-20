@@ -76015,7 +76015,7 @@
       "band_angle": -2.0,
       "band_dy": 0,
       "color1": "#ffffff",
-      "color2": "#000000",
+      "color2": "#f9ffc6",
       "text1": "",
       "text2": "",
       "colors1": {
@@ -76023,7 +76023,11 @@
         "2": "#ece314"
       },
       "sizes1": {},
-      "colors2": {},
+      "colors2": {
+        "0": "#ddee6a",
+        "1": "#ddee6a",
+        "2": "#ddee6a"
+      },
       "sizes2": {}
     }
   },
