@@ -59162,7 +59162,7 @@
     "verify_note": "Face (sociological concept)",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:57.745097+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59206,7 +59206,9 @@
       "apology gesture face Laos",
       "community meeting Lao village",
       "Lao market interaction",
-      "isolated lone figure Laos"
+      "isolated lone figure Laos",
+      "Face (sociological concept)",
+      "Laos landmark"
     ],
     "scene_count": 10,
     "infographic": {
@@ -59216,7 +59218,128 @@
     },
     "curate_score": 6,
     "curate_why": "얼굴 규칙·생존, 금기·시각적 호기심",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "페이스",
+      "명예",
+      "사회관계",
+      "갈등예방"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0501_라오스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0501_라오스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A misty sunrise over a quiet Lao village square, empty stone pathways leading to a solitary wooden shrine, shot from a low angle emphasizing the vanished footprints, symbolizing the loss of a face.",
+      "A bustling Vientiane market street at midday, vendors and shoppers in traditional Lao attire moving in a rhythmic flow, captured from a high overhead drone view to reveal the shocking social rules of face.",
+      "An intimate indoor scene of a Lao family gathering in a modest bamboo house, elders performing a respectful bow, viewed from a side angle that highlights the gestures representing moral honor and authority.",
+      "A community ceremony beside the Mekong River at dusk, participants arranging incense on a low altar, filmed from a wide-angle low ground perspective to showcase collective face as the core of relationships.",
+      "Two anonymous Lao figures exchanging a small woven offering in a shaded courtyard, their hands meeting, captured from a close-up over‑the‑shoulder view illustrating trust building through face exchange.",
+      "A lone villager kneeling before a neighbor’s doorway, hands clasped in apology, the scene shot from a frontal low perspective to convey the loss of face and the need for restitution.",
+      "A group of villagers gathering around a communal fire, hands extended in reconciliation, viewed from a circular 360° angle that emphasizes the restoration of harmony and communal balance.",
+      "A rugged mountain trail winding through Lao highlands, a solitary traveler pausing to adjust a worn satchel, captured from a distant wide shot to suggest the survival rule of protecting face across regions.",
+      "A quiet riverside tea house at twilight, empty chairs arranged in a respectful pattern, filmed from a side‑profile angle to imply the uneven application of face norms throughout Laos.",
+      "A stark silhouette of a lone figure standing on a cliff overlooking misty valleys, the camera positioned from a dramatic low angle, symbolizing the peril of losing social existence when face is lost."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "merlinlightpainting",
+        "page": "https://pixabay.com/photos/woman-face-light-painting-light-6217377/",
+        "id": 6217377
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "anniiikaa",
+        "page": "https://pixabay.com/photos/road-luang-prabang-street-city-4878453/",
+        "id": 4878453
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Nambasi",
+        "page": "https://pixabay.com/photos/africa-children-village-uganda-1994846/",
+        "id": 1994846
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Arian Zwegers from Brussels, Belgium",
+        "license": "CC BY 2.0",
+        "title": "Muang Xai, Hmongs (6172929508).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Muang_Xai,_Hmongs_(6172929508).jpg",
+        "id": "c:27471995"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "User:Ggia",
+        "license": "CC BY-SA 3.0",
+        "title": "20110810 North Face of Everest Tibet China Panoramic.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg",
+        "id": "c:17249505"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Buecherwurm_65",
+        "page": "https://pixabay.com/photos/limb-males-meet-meeting-together-818202/",
+        "id": 818202
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "thangshooter",
+        "page": "https://pixabay.com/photos/bac-ha-children-go-to-market-7862386/",
+        "id": 7862386
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Luca Galuzzi ( Lucag )",
+        "license": "CC BY-SA 2.5",
+        "title": "Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+        "id": "c:1810976"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Claude Mellan",
+        "license": "Public domain",
+        "title": "Claude Mellan - Face of Christ - WGA14764.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Claude_Mellan_-_Face_of_Christ_-_WGA14764.jpg",
+        "id": "c:25342555"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "tumtac",
+        "page": "https://pixabay.com/photos/reclining-buddha-laos-temple-2065653/",
+        "id": 2065653
+      }
+    ],
+    "image_queries_done": [
+      "blurred face portrait",
+      "street faces Laos",
+      "Lao village face ceremony",
+      "people exchanging gifts Laos",
+      "apology gesture face Laos",
+      "community meeting Lao village",
+      "Lao market interaction",
+      "isolated lone figure Laos",
+      "Face (sociological concept)",
+      "Laos landmark"
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0501_라오스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0501_라오스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "8rdQ5X34qVY",
+    "uploaded_at": "2026-11-20T14:10:46.771735+09:00"
   },
   {
     "topic": "라오스의 다문화 문학 전통",
@@ -61282,7 +61405,8 @@
     "scene_count": 10,
     "curate_score": 6,
     "curate_why": "국기 별·줄 배치 숫자와 시각적 호기심",
-    "curate_top": false
+    "curate_top": false,
+    "redo_ts": 1795150902.6019175
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -71124,7 +71248,7 @@
     "verify_note": "John VI of Portugal",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:46.654452+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71137,7 +71261,93 @@
     },
     "curate_score": 7,
     "curate_why": "명목 황제·역사 반전, 숫자·비교 부족",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "Dom John VI (Portuguese: João Maria José Francisco Xavier de Paula Luís António Domingos Rafael; 13 May 1767 – 10 March 1826), known as \"the Clement\" (o Clemente), was King of the United Kingdom of Portugal, Brazil and the Algarves from 1816 to 1825, and after the recognition of Brazil's independence, titular Emperor of Brazil and King of Portugal until his death in 1826.\nJohn VI was born in Lisbon during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the Princess of Brazil and Infante Peter of Portugal, who later became Queen Dona Maria I and King Dom Peter III. In 1785, John married Carlota Joaquina of Spain, with whom he had nine children. He became heir to the throne when his older brother, Prince José, died of smallpox in 1788. Before his accession to the throne, John bore the titles Duke of Braganza, Duke of Beja, and Prince of Brazil. From 1799, he served as prince regent due to his mother's mental illness. In 1816, he succeeded his mother as monarch of the Portuguese Empire, with no real change in his authority, since he already possessed absolute powers as regent.\nOne of the last representatives of absolute monarchy in Europe, John lived during a turbulent period; his reign never saw a lasting peace. Throughout his period of rule, major powers such as Spain, France, and Great Britain continually intervened in Portuguese affairs. Forced to flee across the Atlantic Ocean to Brazil when troops of Emperor Napoleon I invaded Portugal, he found himself faced there with liberal revolts; he was compelled to return to Europe amid new conflicts. His marriage was no less conflictual, as his wife Carlota Joaquina repeatedly conspired against John in favor of personal interests or those of her native Spain.\nJohn lost Brazil when his son Pedro declared independence, and his other son Miguel (later Dom Miguel I of Portugal) led a rebellion that sought to depose him. According to recent scholarly research, his death may well have been caused by arsenic poisoning. Notwithstanding these tribulations, John left a lasting mark, especially in Brazil, where he helped to create numerous institutions and services that laid a foundation for national autonomy, and many historians consider him to be a true mastermind of the modern Brazilian state. John's contemporaries viewed him as a kind and benevolent king, although later generations of Portuguese and Brazilians have made him the subject of frequent caricature. However, in recent decades his reputation has been restored as a clever king who was able to balance many competing interests.\n== Early life ==\nJoão Maria José Francisco Xavier de Paula Luís António Domingos Rafael was born 13 May 1767 during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the King's eldest daughter and heir, Dona Maria, Princess of Brazil (later Queen Dona Maria I) and Infante Peter of Portugal (later King Dom Peter III). Peter was not only Maria's husband, but also her paternal uncle.\nJohn was ten years old when his grandfather died and his mother ascended to the throne. His childhood and youth were lived quietly in the shadow of Queen Maria I's older son and heir apparent, José, Prince of Brazil and Duke of Braganza. Folklore has Infante John as a rather uncultured youth, but according to Jorge Pedreira e Costa, he received as rigorous an education as his brother José did. Still, a French ambassador of the time painted him in unfavorable colors, seeing him as hesitant and dim. The record of this period of his life is too vague for historians to form any definitive picture. Little is known of the substance of his education. He surely received instruction in religion, law, French, and etiquette, and would presumably have learne",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 3번 문장 '실제로도 왕실 의전에서 관용을 강조하는 모습을 보였다고…' — 왕실 의전에서 관용 강조는 본문에 없음"
+      ],
+      "advice": [
+        "첫 문장이 김",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "1822년 브라질이 독립을 선언하고 국제적으로 인정받았음에도, 1825년까지 포르투갈 왕 조앙 6세는 명목상 브라질 황제와 포르투갈 왕이라는 두 칭호를 동시에 유지했습니다.",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "1822년 브라질이 독립을 선언하고 국제적으로 인정받았음에도, 1825년까지 포르투갈 왕 조앙 6세는 명목상 브라질 황제와 포르투갈 왕이라는 두 칭호를 동시에 유지했습니다. 그는 1816년부터 연합왕국을 통치했으며, 1826년 사망할 때까지 ‘관용왕(o Clemente)’이라는 별명으로 불렸습니다. 실제로도 왕실 의전에서 관용을 강조하는 모습을 보였다고 전해지지만, 그의 통치는 전쟁과 반란으로 뒤덮인 불안정한 시기였습니다. 나폴레옹 군대의 침공을 피해 브라질로 피난했다가, 아들 페드로가 독립을 선언하고, 또 다른 아들 미겔이 반란을 일으키는 등 왕권은 계속 위협받았습니다. 결국 조앙 6세는 브라질 황제라는 명칭을 사망 전까지 유지했지만, 실제 통치권은 상실된 채였던 것입니다. 이처럼 독립된 나라에도 명목상의 왕이 남아 있었던 역사는, 당시 유럽 왕권의 복잡성을 여실히 보여줍니다.",
+    "title_line1": "포르투갈왕·브라질황제",
+    "title_line2": "독립했는데도명목황제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "조앙6세, 두 *왕관*"
+      },
+      {
+        "s": 2,
+        "text": "관용왕, *전쟁* 속"
+      },
+      {
+        "s": 3,
+        "text": "브라질 *황제*, 명목"
+      },
+      {
+        "s": 4,
+        "text": "*왕권*, 사라진 현실"
+      }
+    ],
+    "image_queries": [
+      "two royal crowns",
+      "king wearing crown on battlefield",
+      "Brazilian imperial crown",
+      "Portuguese royal palace interior",
+      "portrait of John VI of Portugal",
+      "European royal thrones"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "조앙6세",
+      "브라질독립",
+      "포르투갈왕위",
+      "관용왕",
+      "페드로왕자"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "조앙 6세 통치 연표",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1822년",
+          "value": null,
+          "text": "브라질 독립 선언"
+        },
+        {
+          "label": "1825년",
+          "value": null,
+          "text": "왕조 겸임 지속"
+        },
+        {
+          "label": "1816년",
+          "value": null,
+          "text": "연합왕국 통치 시작"
+        },
+        {
+          "label": "1826년",
+          "value": null,
+          "text": "조앙 6세 사망"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "인간주의 불교, 살아있는 사람에게 초점",
