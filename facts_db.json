@@ -64802,7 +64802,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -64876,7 +64876,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "성/민감 소재 자동 제외(사형)"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -65753,7 +65754,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -65848,7 +65849,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -65856,7 +65858,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -65977,7 +65979,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -69400,7 +69403,7 @@
     "verify_note": "Matthew Island and Hunter Island",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69415,7 +69418,188 @@
     },
     "curate_score": 7,
     "curate_why": "영토 다툼·물 부재 대비 강렬, 구체적 숫자 포함",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "Matthew Island and Hunter Island are two uninhabited volcanic islands in the South Pacific, 300 kilometres (190 mi) east of New Caledonia and south-east of Vanuatu. The pair, which lie 70 km (43 mi) apart, are claimed by Vanuatu as part of Tafea Province, and considered by the people of Aneityum part of their custom ownership, but also claimed by France as part of New Caledonia.\nSmall, arid, without fresh water and not easily accessible, the islands had no interest for Britain or France during their colonisation of the Pacific in the course of the 18th and 19th centuries. France officially annexed both islands in 1929. In 1965, the United Kingdom also claimed the two islands, as part of the New Hebrides. France conducted a symbolic occupation in 1975. In 1980, on its independence, Vanuatu claimed sovereignty, but made no occupation of the islands. In 1979, Météo-France set up an automatic weather station on one of the islands, and the French Navy regularly visits both of them.\n== Hunter Island ==\nHunter Island (French: île Hunter) is also known, as \"Fern or Fearn Island\", or \"Leka\" in the local language of Futuna island in southern Vanuatu. The first recorded European sighting of the island was by Captain Thomas Fearn from his trading ship Hunter in 1798. It lies about 70 km (43 mi) east of Matthew Island. About 0.6 square kilometres (0.23 sq mi) in area, the island has a domed shape, and some sources suggest a height of its highest peak, Mont Favard, of 242 metres (794 ft), but others are higher. It was first surveyed by the British between 1853 and 1856 at 974 ft (297 m) 297 metres (974 ft) high which is still given in a recent English source. There has been volcanic activity since 1856 and before 1982 French aviation photographic studies were interpreted to give an approximate height of 260 m (850 ft). Other French sources are slightly higher. It is composed of andesite – dacitic lavas and numerous explosion craters dot the stratovolcano. A cone makes up the south part of the island, with its central crater filled by a lava dome. A 100 m (330 ft)-deep crater is located on the north-west side of the island.\nHunter Island has been symbolically claimed by a micronation, the Federal Republic of Lostisland.\n=== Volcanic activity ===\nFumarolic and solfataric activity continues in the north of the island, as well as on the northeast and southeast coasts. Two small eruptions took place in the mid-1800s. In 1835, a lava flow erupted and on 15 March 1841, an explosive eruption took place. In 1895, lava was seen flowing from two craters on the east side of the island. A minor fissure eruption took place in 1903, on the northern side of the island, and produced lava.\n=== Important Bird Area ===\nThe island has been designated an Important Bird Area (IBA) by BirdLife International because it supports a breeding population of red-tailed tropicbirds, with some 100–200 pairs estimated in 2007.\n== Matthew Island ==\nMatthew Island (French: île Matthew) is also known as Umaenupne island in the indigenous language of Aneityum island in southern Vanuatu, the closest inhabited island. It is  0.7 square kilometres (0.27 sq mi) in area, 177-metre (581 ft). The volcanic island is composed of two andesitic-to-dactic volcanic cones, East Matthew and West Matthew, separated by a rocky 200-metre-wide isthmus. The island was discovered by Captain Thomas Gilbert, of Charlotte, on 27 May 1788, who named it after the owner of his ship. At the time of the discovery, only East Matthew existed and it was described as having only one peak prior to the Second World War.\nEast Matthew is the older part of the island, formed from basalt with a half-destroyed, 142 m (466 ft) high composite volcanic cone that is thought to be composed of three lava flows. There is still ",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "신선 물 하나 없이도 바누아투와 프랑스가 영토를 두고 다투면 어떤 일이 벌어질까요?",
+      "sentences": 7
+    },
+    "narration": "신선 물 하나 없이도 바누아투와 프랑스가 영토를 두고 다투면 어떤 일이 벌어질까요? 남태평양에 떠 있는 무인 화산섬, 매튜 섬과 헌터 섬은 물이 전혀 없고 접근도 힘든 곳입니다. 프랑스는 1929년에 이 섬들의 영유권을 공식 선언했고, 영국은 1965년에 추가 청구를 했습니다. 바누아투 역시 같은 섬들을 차지한다며 주장했습니다. 그런데 현지에 사람은 없으며, 섬은 완전히 건조한 사막과 같습니다. 이 두 섬은 뉴칼레도니아 동쪽 약 300km, 바누아투 남동쪽에 자리 잡고 있어, 물도 없고 생활 기반도 없는 채로 국제적인 영토 분쟁의 무대가 되었습니다. 결국 물 한 방울도 없는 사막 같은 땅이 국가 간 갈등을 일으킨다는 점이, 바다와 섬이 전부인 이 지역의 아이러니를 보여줍니다.",
+    "title_line1": "매튜·헌터 섬 물도 없어",
+    "title_line2": "왜 영토 싸움일까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "영토 다툼, *물* 없이"
+      },
+      {
+        "s": 2,
+        "text": "*무인* 화산섬, 사막"
+      },
+      {
+        "s": 3,
+        "text": "프랑스·영국, *청구*"
+      },
+      {
+        "s": 7,
+        "text": "물 없는 땅에 *갈등*"
+      }
+    ],
+    "image_queries": [
+      "desert island dispute",
+      "Matthew Island volcanic desert",
+      "French and British flags",
+      "Vanuatu flag island",
+      "Hunter Island barren landscape",
+      "Map of Matthew and Hunter Islands",
+      "waterless land conflict",
+      "Matthew Island and Hunter",
+      "Fiji landmark",
+      "Fiji culture"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "매튜섬",
+      "헌터섬",
+      "무인화산섬",
+      "영유권분쟁",
+      "사막섬"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "영유권 연대기",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1929년",
+          "value": null,
+          "text": "프랑스 영유권 선언"
+        },
+        {
+          "label": "1965년",
+          "value": null,
+          "text": "영국 추가 청구"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0615_피지_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0615_피지_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A dramatic aerial view of a barren volcanic island chain in the South Pacific, with stormy clouds swirling above, emphasizing the contested territory between Vanuatu and France, no people visible.",
+      "A low-angle shot from the shoreline of a desolate volcanic rock, showing cracked dry ground and jagged cliffs, symbolizing the conflict over the island without any fresh water.",
+      "A wide panoramic perspective of the uninhabited Matthew and Hunter Islands, barren volcanic peaks rising from a turquoise horizon, under a bright sun, emphasizing isolation.",
+      "A vintage 1920s style map illustration coming to life as a bird's-eye view of the islands, with French flags subtly overlayed, hinting at the 1929 claim, no text.",
+      "An overhead view of the same islands with faint British and Vanuatuan flag colors faintly tinted in the sky, representing the 1965 British claim and Vanuatu's assertion, no faces.",
+      "A close-up ground-level shot of cracked, sun‑bleached desert sand covering the island surface, wind blowing dust, highlighting the complete lack of inhabitants.",
+      "A satellite‑style perspective showing the islands positioned east of New Caledonia and southeast of Vanuatu, surrounded by endless ocean, underscoring their remote, waterless nature.",
+      "A tilted horizon shot from a distant boat looking toward the tiny, stark islands on the horizon, illustrating their role as a stage for international dispute.",
+      "A dramatic twilight scene with the islands silhouetted against a deep purple sky, emphasizing their barren state and geopolitical tension.",
+      "A sweeping cinematic crane shot pulling back from the dry, rocky terrain to reveal the vast surrounding sea, conveying the irony of a waterless land sparking national conflict."
+    ],
+    "ai_prompts_done": [
+      "A dramatic aerial view of a barren volcanic island chain in the South Pacific, with stormy clouds swirling above, emphasizing the contested territory between Vanuatu and France, no people visible.",
+      "A low-angle shot from the shoreline of a desolate volcanic rock, showing cracked dry ground and jagged cliffs, symbolizing the conflict over the island without any fresh water.",
+      "A wide panoramic perspective of the uninhabited Matthew and Hunter Islands, barren volcanic peaks rising from a turquoise horizon, under a bright sun, emphasizing isolation.",
+      "A vintage 1920s style map illustration coming to life as a bird's-eye view of the islands, with French flags subtly overlayed, hinting at the 1929 claim, no text.",
+      "An overhead view of the same islands with faint British and Vanuatuan flag colors faintly tinted in the sky, representing the 1965 British claim and Vanuatu's assertion, no faces.",
+      "A close-up ground-level shot of cracked, sun‑bleached desert sand covering the island surface, wind blowing dust, highlighting the complete lack of inhabitants.",
+      "A satellite‑style perspective showing the islands positioned east of New Caledonia and southeast of Vanuatu, surrounded by endless ocean, underscoring their remote, waterless nature.",
+      "A tilted horizon shot from a distant boat looking toward the tiny, stark islands on the horizon, illustrating their role as a stage for international dispute.",
+      "A dramatic twilight scene with the islands silhouetted against a deep purple sky, emphasizing their barren state and geopolitical tension.",
+      "A sweeping cinematic crane shot pulling back from the dry, rocky terrain to reveal the vast surrounding sea, conveying the irony of a waterless land sparking national conflict."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dramatic aerial view of a barren volcanic island chain in the South Pacific, w"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A low-angle shot from the shoreline of a desolate volcanic rock, showing cracked"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide panoramic perspective of the uninhabited Matthew and Hunter Islands, barr"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A vintage 1920s style map illustration coming to life as a bird's-eye view of th"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An overhead view of the same islands with faint British and Vanuatuan flag color"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up ground-level shot of cracked, sun‑bleached desert sand covering the i"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A satellite‑style perspective showing the islands positioned east of New Caledon"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A tilted horizon shot from a distant boat looking toward the tiny, stark islands"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dramatic twilight scene with the islands silhouetted against a deep purple sky"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sweeping cinematic crane shot pulling back from the dry, rocky terrain to reve"
+      }
+    ],
+    "image_queries_done": [
+      "desert island dispute",
+      "Matthew Island volcanic desert",
+      "French and British flags",
+      "Vanuatu flag island",
+      "Hunter Island barren landscape",
+      "Map of Matthew and Hunter Islands",
+      "waterless land conflict",
+      "Matthew Island and Hunter",
+      "Fiji landmark",
+      "Fiji culture"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0615_피지.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0615_피지.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "N1BowGmE188",
+    "uploaded_at": "2026-11-20T12:47:21.725091+09:00"
   },
   {
     "topic": "우즈베키스탄 위구르인, 손으로 밥을 먹는다",
@@ -69787,14 +69971,14 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
     "title_line1": "18km 지하 요새의 비밀",
     "title_line2": "이오지마에서 미군이 고전한 이유",
@@ -70020,7 +70204,21 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-20",
+      "distinct": 2,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "이오지마의 지하 방어망은 사실이지만 18km 길이라는 수치는 일반적인 역사 자료와 일치하지 않아 구체성과 근거가 부족합니다.",
+      "avg": 2.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 2/concrete 3/supported 2 (평균 2.3) 이오지마의 지하 방어망은 사실이지만 18km 길이라는 수치는 일반적인 역사 자료와 일치하지 않아 구체성과 근거가 부족합니다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "country": "한국",
@@ -70818,7 +71016,7 @@
     "verify_note": "Fugu",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:41.887091+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70909,7 +71107,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(브라질 / JP)"
   },
   {
     "topic": "포르투갈 왕 존 6세, 브라질 명목 황제",
@@ -71385,7 +71584,7 @@
     "verify_note": "Territorial claims in the Arctic",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "북극점에 발을 디뎠는데, 관세도 세금도 안 붙는다! 사실 북극점과 그 주변 해역은 국제법상 무주지로 지정돼 있어 어느 나라의 영해에도 속하지 않아요. 하지만 주변 8개 연안국—캐나다, 덴마크(그린란드 포함), 핀란드, 아이슬란드, 노르웨이, 러시아, 스웨덴, 미국—은 각각 육지와 해역을 관리하고 있죠.  \n\n그런데 이들 국가가 관리하는 구역과는 별개로, 북극점 자체는 어느 국가의 영토가 아니기 때문에 관세나 영해 규제가 적용되지 않습니다. 그래서 여기서는 자유롭게 탐험할 수 있는 듯 보이지만, 실제로는 해저 자원 탐사를 두고 8개국이 치열하게 경쟁하고 있다는 점이 흥미롭습니다.  \n\n이 규정은 현재 국제해양법(UNCLOS) 하에서 적용되고 있으며, 향후 조약이 바뀌면 상황이 달라질 수도 있습니다. 결국 북극점은 법적으로는 ‘무주지’이지만, 그 주변을 둘러싼 국가들의 이해관계는 결코 공허하지 않다는 점, 기억해 주세요.",
@@ -71454,7 +71653,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(이스라엘 / CA,DK,GL,FI,IS,NO,RU,SE,US)"
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
@@ -74523,7 +74723,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고 들어보셨나요? 실제 사건은 미국과 영국이 샌후안 제도 경계 문제로 마주하면서 시작됐습니다. 영국 영토에 있던 돼지를 미국 군인이 총으로 쏘자, 양측이 무력 충돌을 준비하게 된 것이죠. 그런데 인간 사상자는 전혀 없었습니다. 양국은 군대를 동원하고 진지를 구축했지만, 전투는 일어나지 않았습니다. 결국 ‘돼지 전쟁’이라 불리지만, 사망자는 돼지 한 마리뿐이었고, 이후 외교적 협상을 통해 평화롭게 해결되었습니다. 이렇게 작은 사건이 국제적 긴장을 불러일으켰다는 점이, 역사의 우연함을 다시 한 번 떠올리게 합니다.",
@@ -74572,7 +74772,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(그리스 / US,GB)"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
