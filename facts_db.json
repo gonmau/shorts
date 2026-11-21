@@ -60125,7 +60125,7 @@
     "verify_note": "Passover",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -60182,14 +60182,131 @@
       "Passover blood symbol on wooden door",
       "nighttime lamb slaughter",
       "intact door after fire",
-      "Passover family celebrating"
+      "Passover family celebrating",
+      "Passover",
+      "Tanzania landmark"
     ],
     "scene_count": 10,
     "infographic": {
       "on": false,
       "none": true,
       "why": "대본과 대조해 쓸 수 있는 행이 부족"
-    }
+    },
+    "hashtags": [
+      "출애굽기",
+      "모세",
+      "이스라엘",
+      "유월절",
+      "피문"
+    ],
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0510_탄자니아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0510_탄자니아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A close-up low-angle view of an ancient wooden door stained with dark red blood, set in a dimly lit night-time Egyptian courtyard, the grain of the wood glistening with fresh blood droplets.",
+      "A high-angle aerial shot of a desert encampment at dusk, showing a blood-smeared doorway among tents, with a faint glow of fire in the distance.",
+      "A side view of a rugged shepherd kneeling beside a lamb, squeezing its blood into a clay bowl, the doorframe of a modest stone house visible in the background.",
+      "A wide shot of a modest mud-brick house illuminated by a single lantern, its doorway completely coated in fresh blood, casting a protective aura over the interior.",
+      "A ground-level perspective of a stark, unmarked doorway lacking any blood, shadows looming as a foreboding darkness approaches the doorway.",
+      "A dramatic low-angle view of a glowing red liquid swirling around a doorway, symbolizing a barrier that repels a shadowy, winged death spirit.",
+      "A tilted close-up of a shimmering blood film on a doorframe, the surface reflecting a faint, ethereal light that suggests a protective seal.",
+      "A night-time overhead shot of a quiet village street, families silently dragging a lamb, extracting its blood, and carefully painting it onto their doorframes under a starry sky.",
+      "A dynamic side view of flames and skeletal figures passing by a blood-coated door, the door remaining untouched while surrounding structures crack and burn.",
+      "A serene sunrise panorama over a desert settlement, showing a blood-stained door standing intact, symbolizing obedience and the saved firstborns as the community gathers in reverence."
+    ],
+    "ai_prompts_done": [
+      "A close-up low-angle view of an ancient wooden door stained with dark red blood, set in a dimly lit night-time Egyptian courtyard, the grain of the wood glistening with fresh blood droplets.",
+      "A high-angle aerial shot of a desert encampment at dusk, showing a blood-smeared doorway among tents, with a faint glow of fire in the distance.",
+      "A side view of a rugged shepherd kneeling beside a lamb, squeezing its blood into a clay bowl, the doorframe of a modest stone house visible in the background.",
+      "A wide shot of a modest mud-brick house illuminated by a single lantern, its doorway completely coated in fresh blood, casting a protective aura over the interior.",
+      "A ground-level perspective of a stark, unmarked doorway lacking any blood, shadows looming as a foreboding darkness approaches the doorway.",
+      "A dramatic low-angle view of a glowing red liquid swirling around a doorway, symbolizing a barrier that repels a shadowy, winged death spirit.",
+      "A tilted close-up of a shimmering blood film on a doorframe, the surface reflecting a faint, ethereal light that suggests a protective seal.",
+      "A night-time overhead shot of a quiet village street, families silently dragging a lamb, extracting its blood, and carefully painting it onto their doorframes under a starry sky.",
+      "A dynamic side view of flames and skeletal figures passing by a blood-coated door, the door remaining untouched while surrounding structures crack and burn.",
+      "A serene sunrise panorama over a desert settlement, showing a blood-stained door standing intact, symbolizing obedience and the saved firstborns as the community gathers in reverence."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up low-angle view of an ancient wooden door stained with dark red blood,"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A high-angle aerial shot of a desert encampment at dusk, showing a blood-smeared"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A side view of a rugged shepherd kneeling beside a lamb, squeezing its blood int"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide shot of a modest mud-brick house illuminated by a single lantern, its doo"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A ground-level perspective of a stark, unmarked doorway lacking any blood, shado"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dramatic low-angle view of a glowing red liquid swirling around a doorway, sym"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A tilted close-up of a shimmering blood film on a doorframe, the surface reflect"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A night-time overhead shot of a quiet village street, families silently dragging"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dynamic side view of flames and skeletal figures passing by a blood-coated doo"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A serene sunrise panorama over a desert settlement, showing a blood-stained door"
+      }
+    ],
+    "image_queries_done": [
+      "Passover bloodied door",
+      "Passover lamb blood on doorframe",
+      "Passover blood splattered house",
+      "unprotected house door",
+      "Passover blood symbol on wooden door",
+      "nighttime lamb slaughter",
+      "intact door after fire",
+      "Passover family celebrating",
+      "Passover",
+      "Tanzania landmark"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0510_탄자니아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0510_탄자니아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "YDm407PlBPM",
+    "uploaded_at": "2026-11-21T20:44:53.468481+09:00"
   },
   {
     "topic": "아랍에미리트 라마단 시작 의식",
@@ -61355,7 +61472,7 @@
     "verify_note": "Flag of the United States",
     "confidence": "source",
     "created_at": "2026-11-03T17:56:26.671403+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61398,13 +61515,166 @@
       "Military signal flag navy ship",
       "Naval signal flag color star stripes",
       "American flag symbol worldwide",
-      "US flag 13 stripes stars"
+      "US flag 13 stripes stars",
+      "Flag of the United"
     ],
     "scene_count": 10,
     "curate_score": 6,
     "curate_why": "국기 별·줄 배치 숫자와 시각적 호기심",
     "curate_top": false,
-    "redo_ts": 1795150902.6019175
+    "redo_ts": 1795150902.6019175,
+    "hashtags": [
+      "국기",
+      "별무늬",
+      "군용신호",
+      "13줄",
+      "50주"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "미국 국기 구성",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "가로줄",
+          "value": 13.0,
+          "text": "13줄"
+        },
+        {
+          "label": "별줄",
+          "value": 9.0,
+          "text": "9줄"
+        },
+        {
+          "label": "별수",
+          "value": 50.0,
+          "text": "50개"
+        },
+        {
+          "label": "6개줄",
+          "value": 6.0,
+          "text": "6개"
+        },
+        {
+          "label": "5개줄",
+          "value": 5.0,
+          "text": "5개"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0527_미국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0527_미국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A close-up view of a flag's canton showing a grid of 50 white stars arranged in nine staggered rows over a blue field, with the stars sharp and countable.",
+      "A wide-angle shot of a flag billowing in the wind, displaying thirteen alternating red and white horizontal stripes across the full length.",
+      "An overhead perspective of a flag highlighting the blue rectangle in the upper hoist corner, filled with white stars arranged in nine offset rows.",
+      "A side view of the flag's canton where the top row contains six stars, the next row five, alternating across the blue field, symbolizing fifty states.",
+      "A low-angle view focusing on the alternating six‑star and five‑star rows within the blue canton, emphasizing the pattern representing all fifty states.",
+      "A historical reenactment scene showing a 18th‑century naval yard where a newly designed flag is being hoisted for the first time, with sailors observing.",
+      "A dimly lit workshop interior where craftsmen stitch a flag prototype intended as a naval signal, surrounded by rolled canvas and wooden masts.",
+      "A battlefield camp at dusk with multiple flags of similar colors, a distinct American flag stands out due to its unique star‑stripe combination, preventing confusion.",
+      "A modern city plaza with a towering flagpole flying the American flag, crowds gathering, illustrating its evolution from military signal to global symbol.",
+      "A reflective museum exhibit displaying the flag alongside artifacts, inviting viewers to contemplate the story behind the 13 stripes and 50 stars as pieces of history."
+    ],
+    "ai_prompts_done": [
+      "",
+      "A wide-angle shot of a flag billowing in the wind, displaying thirteen alternating red and white horizontal stripes across the full length.",
+      "An overhead perspective of a flag highlighting the blue rectangle in the upper hoist corner, filled with white stars arranged in nine offset rows.",
+      "A side view of the flag's canton where the top row contains six stars, the next row five, alternating across the blue field, symbolizing fifty states.",
+      "A low-angle view focusing on the alternating six‑star and five‑star rows within the blue canton, emphasizing the pattern representing all fifty states.",
+      "A historical reenactment scene showing a 18th‑century naval yard where a newly designed flag is being hoisted for the first time, with sailors observing.",
+      "A dimly lit workshop interior where craftsmen stitch a flag prototype intended as a naval signal, surrounded by rolled canvas and wooden masts.",
+      "A battlefield camp at dusk with multiple flags of similar colors, a distinct American flag stands out due to its unique star‑stripe combination, preventing confusion.",
+      "A modern city plaza with a towering flagpole flying the American flag, crowds gathering, illustrating its evolution from military signal to global symbol.",
+      "A reflective museum exhibit displaying the flag alongside artifacts, inviting viewers to contemplate the story behind the 13 stripes and 50 stars as pieces of history."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "mat_hias",
+        "page": "https://pixabay.com/photos/usa-flag-america-states-white-red-3808026/",
+        "id": 3808026
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide-angle shot of a flag billowing in the wind, displaying thirteen alternati"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An overhead perspective of a flag highlighting the blue rectangle in the upper h"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A side view of the flag's canton where the top row contains six stars, the next "
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A low-angle view focusing on the alternating six‑star and five‑star rows within "
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A historical reenactment scene showing a 18th‑century naval yard where a newly d"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dimly lit workshop interior where craftsmen stitch a flag prototype intended a"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A battlefield camp at dusk with multiple flags of similar colors, a distinct Ame"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A modern city plaza with a towering flagpole flying the American flag, crowds ga"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A reflective museum exhibit displaying the flag alongside artifacts, inviting vi"
+      }
+    ],
+    "image_queries_done": [
+      "United States flag 13 stripes",
+      "United States flag red white stripes",
+      "United States flag blue canton stars",
+      "United States flag stars alternating 6 5",
+      "Historic American flag original purpose",
+      "Military signal flag navy ship",
+      "Naval signal flag color star stripes",
+      "American flag symbol worldwide",
+      "US flag 13 stripes stars",
+      "Flag of the United"
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0527_미국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0527_미국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "2NuB1bBS32A",
+    "uploaded_at": "2026-11-21T20:47:06.909197+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -64924,7 +65194,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -64998,7 +65268,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "성/민감 소재 자동 제외(사형)"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -65875,7 +66146,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -65970,7 +66241,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -65978,7 +66250,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -66099,7 +66371,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -68636,7 +68909,8 @@
     },
     "curate_score": 5,
     "curate_why": "샤리아 법원·숫자",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "redo_ts": 1795259578.1888223
   },
   {
     "topic": "622년 메디나에서 시작된 초기 이슬람 정복",
@@ -70090,14 +70364,14 @@
     "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
     "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
     "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
-    "country": "싱가포르",
+    "country": "일본",
     "theme": "군사/전쟁사",
     "wiki_title": "Battle of Iwo Jima",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
     "title_line1": "18km 지하 요새의 비밀",
     "title_line2": "이오지마에서 미군이 고전한 이유",
@@ -70323,7 +70597,21 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "country_before_fix": "싱가포르",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-21",
+      "distinct": 5,
+      "concrete": 3,
+      "supported": 2,
+      "reason": "이오지마의 지하 방어망은 실제로 존재하지만, 18km 길이라는 구체적 수치는 일반적인 역사 자료와 맞지 않아 근거가 약하고, 내용이 일본에만 국한된 특수성은 있지만 구체적·신뢰성 면에서 낮은 점수를 줍니다.",
+      "avg": 3.3,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "reject_reason": "근거 부실(자동): distinct 5/concrete 3/supported 2 (평균 3.3) 이오지마의 지하 방어망은 실제로 존재하지만, 18km 길이라는 구체적 수치는 일반적인 역사 자료와 맞지 않아 근거가 약하고, 내용이 일본에만 국한된 특수성은 있지만 구체적·신뢰성 면에서 낮은 점수를 줍니다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
   },
   {
     "country": "한국",
@@ -71121,7 +71409,7 @@
     "verify_note": "Fugu",
     "confidence": "source",
     "created_at": "2026-11-11T07:06:41.887091+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71212,7 +71500,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(브라질 / JP)"
   },
   {
     "topic": "포르투갈 왕 존 6세, 브라질 명목 황제",
@@ -71774,7 +72063,7 @@
     "verify_note": "Territorial claims in the Arctic",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "북극점에 발을 디뎠는데, 관세도 세금도 안 붙는다! 사실 북극점과 그 주변 해역은 국제법상 무주지로 지정돼 있어 어느 나라의 영해에도 속하지 않아요. 하지만 주변 8개 연안국—캐나다, 덴마크(그린란드 포함), 핀란드, 아이슬란드, 노르웨이, 러시아, 스웨덴, 미국—은 각각 육지와 해역을 관리하고 있죠.  \n\n그런데 이들 국가가 관리하는 구역과는 별개로, 북극점 자체는 어느 국가의 영토가 아니기 때문에 관세나 영해 규제가 적용되지 않습니다. 그래서 여기서는 자유롭게 탐험할 수 있는 듯 보이지만, 실제로는 해저 자원 탐사를 두고 8개국이 치열하게 경쟁하고 있다는 점이 흥미롭습니다.  \n\n이 규정은 현재 국제해양법(UNCLOS) 하에서 적용되고 있으며, 향후 조약이 바뀌면 상황이 달라질 수도 있습니다. 결국 북극점은 법적으로는 ‘무주지’이지만, 그 주변을 둘러싼 국가들의 이해관계는 결코 공허하지 않다는 점, 기억해 주세요.",
@@ -71843,7 +72132,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(이스라엘 / CA,DK,GL,FI,IS,NO,RU,SE,US)"
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
@@ -72084,7 +72374,7 @@
     "verify_note": "Territorial disputes of China",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:01.903236+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72097,7 +72387,86 @@
     },
     "curate_score": 7,
     "curate_why": "영해 주장·시기·숫자 제시, 역사·분쟁 강함",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The People's Republic of China (PRC) has a number of territorial disputes. Many of these disputes are almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. Certain Chinese claims to disputed maritime territories date from prior to the 1949 proclamation of the People's Republic of China.\n== Background ==\nThe asserted territory of China largely corresponds to that of the Qing empire. Many of the PRC's disputes are also almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. In its 1914 constitution, the Republic of China had asserted, \"The territory of the Chinese Republic continues the same as that of the former empire.\" The 1931 provisional constitution of the Republic of China stated, \"The territory of the Republic of China includes all the provinces, Mongolia, and Tibet.\" Certain Chinese claims to disputed maritime territories also predate the 1949 proclamation of the People's Republic of China.\n== Current disputes ==\n=== Bhutan ===\nBhutan's border with Tibet has never been officially recognized, much less demarcated. The Republic of China based in Taiwan officially maintains a territorial claim on parts of Bhutan to this day. The territorial claim was maintained by the People's Republic of China after the Chinese Communist Party took control of mainland China in the Chinese Civil War.\nThe 1959 Tibetan Rebellion and the 14th Dalai Lama's arrival in neighboring India made the security of Bhutan's border with China a necessity for Bhutan. An estimated 6,000 Tibetans fled to Bhutan and were granted asylum, although Bhutan subsequently closed its border to China, fearing more refugees to come. In July 1959, along with the occupation of Tibet, the Chinese People's Liberation Army occupied several Bhutanese exclaves in western Tibet which were under Bhutanese administration for more than 300 years and had been given to Bhutan by Ngawang Namgyal in the 17th century. These included Darchen, Labrang Monastery, Gartok and several smaller monasteries and villages near Mount Kailas.\nIn 1983, the Chinese Foreign Minister Wu Xueqian and the Bhutanese Foreign Minister Dawa Tsering held talks on establishing bilateral relations in New York. In 1984, China and Bhutan began annual, direct talks over the border dispute. In 1998, China and Bhutan signed a bilateral agreement for maintaining peace on the border. In the agreement, China affirmed its respect for Bhutan's sovereignty and territorial integrity and both sides sought to build ties based on the Five Principles of Peaceful Co-existence. However, China's building of roads on what Bhutan asserts to be Bhutanese territory, allegedly in violation of the 1998 agreement, has provoked tensions. In 2002, however, China presented what it claimed to be 'evidence', asserting its ownership of disputed tracts of land; after negotiations, an interim agreement was reached.\nOn 11 August 2016, Bhutan Foreign Minister Damcho Dorji visited Beijing, the capital of China, for the 24th round of boundary talks with Chinese Vice President Li Yuanchao. Both sides made comments to show their readiness to strengthen cooperation in various fields and their hope of settling the boundary issues. In 2024, The New York Times reported that, according to satellite imagery, China had constructed villages inside of disputed territory within Bhutan. Chinese individuals, called \"border guardians,\" received annual subsidies to relocate to newly built villages and paid to conduct border patrols.\n=== India ===\nChina and India have various ongoing territorial disputes. The disputes stem from the historical consequences of colonialism in Asia and the lack of clear historical boundary demarcations. T",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 2번 문장 '즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청…' — 해양 영유권을 청나라 영토와 동일시해 과장"
+      ],
+      "advice": [
+        "첫 문장이 김"
+      ],
+      "rounds": 2,
+      "first": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다.",
+      "sentences": 5
+    },
+    "review_needed": true,
+    "narration": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다. 즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청나라 말기의 영토 개념을 그대로 이어받은 것이죠. 흥미롭게도, 이 같은 해역 주장은 1949년 이전에도 이미 중화민국이 동일하게 제기했으며, PRC가 건국된 뒤에도 그대로 이어졌습니다. 따라서 “1949년 이전부터 영해를 주장했다”는 말은 PRC만의 새로운 주장이라기보다, 청조부터 이어진 역사적 선언이 두 차례 반복된 결과임을 알 수 있습니다. 이런 연속성은 오늘날 영해 분쟁을 이해하는 중요한 단서가 됩니다.",
+    "title_line1": "중국, 오래된 영해 주장",
+    "title_line2": "1949년 전부터?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "전제국 *영토*"
+      },
+      {
+        "s": 2,
+        "text": "*청말기* 계승"
+      },
+      {
+        "s": 3,
+        "text": "1949전에도 *주장*"
+      },
+      {
+        "s": 4,
+        "text": "역사적 *연속*"
+      }
+    ],
+    "image_queries": [
+      "historical map of China empire",
+      "Qing dynasty territorial map",
+      "Republic of China 1930s map",
+      "ancient Chinese border marker",
+      "South China Sea dispute map"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "중화민국헌법",
+      "청조영토",
+      "몽골티베트",
+      "해양영유권",
+      "역사적연속성"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "영해 주장 연대기",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1914년",
+          "value": null,
+          "text": "중화민국 헌법 영토 선언"
+        },
+        {
+          "label": "1931년",
+          "value": null,
+          "text": "임시 헌법 영토 포함"
+        },
+        {
+          "label": "1949년",
+          "value": null,
+          "text": "PRC 건국 후 연속"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "일본(Japan)의 영토, 75%가 산악지대",
@@ -72467,7 +72836,7 @@
     "verify_note": "Indonesia–Malaysia border",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72480,7 +72849,185 @@
     },
     "curate_score": 7,
     "curate_why": "1,881km 국경선·시각적 이미지·길이 강조",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The Indonesia–Malaysia border consists of a 1,881 km (1,169 mi) land border that divides the territory of Indonesia and Malaysia on the island of Borneo. It also includes maritime boundaries along the length of the Straits of Malacca, in the South China Sea and in the Celebes Sea.\nThe land boundary stretches from Tanjung Datu at the northwestern corner of Borneo through the highlands of the Borneo hinterland to the Gulf of Sebatik and the Celebes Sea in the eastern side of the island. The boundary separates the Indonesian provinces of North Kalimantan, East Kalimantan and West Kalimantan from the Malaysian states of Sabah and Sarawak.\nThe maritime boundary in the Straits of Malacca generally follows the median line between the baselines of Indonesia and Malaysia, running south from the tripoint with Thailand to the start of the maritime border with Singapore. Only part of this boundary has been delimited through a continental shelf boundary treaty in 1969 and a territorial sea boundary treaty in 1970. The continental shelf boundary between Indonesia and Malaysia in the South China Sea is also drawn along the equidistant line between the baselines of the two countries under the 1969 continental shelf boundary.\nThe border in the Celebes Sea is disputed between the two countries. Part of the dispute was settled by the judgement of the International Court of Justice in the Ligitan and Sipadan Case in 2002 and is now awaiting delimitation between the two countries. However, the two countries still have overlapping claims over the continental shelf, which Indonesia refers to as Ambalat.\nThere are numerous sea transport crossings between Indonesia and Malaysia, mostly between Indonesia's Sumatra island and Peninsular Malaysia but also between the Indonesian province of North Kalimantan and Malaysia's Sabah state. There are only three official land transport crossing points, all between West Kalimantan and Sarawak. Both the land and maritime borders are relatively porous; many undocumented workers have crossed from Indonesia to Malaysia.\n== Land border ==\n \nThe territorial division of Borneo gained scant Dutch attention until the arrival of British soldier James Brooke in Sarawak in 1841, which the Dutch East Indies Government in Batavia (Jakarta) sensed as a threat to their hegemonic position over Bornean coastal trade. This drove the Dutch Governor General, J.J. Rochussen, to issue a decree in February 1846 outlining Dutch terrestrial interests (as opposed to mere coastal control) over Borneo. This document provided a fait-accompli division of Borneo based on the flow of watersheds. This decree was essentially the blueprint that the Dutch subsequently negotiated with the British that resulted in the Anglo-Dutch Treaty of 1891.\nThe principal document determining the land border between Indonesia and Malaysia on the island of Borneo is the Border Convention or London Convention of 1891 which was signed in London between the United Kingdom and the Netherlands, the two relevant colonial powers of that time, on 20 June 1891. Subsequent agreements between the colonial powers in 1915 and 1928 fine-tuned the border further. Much of the fine-tuning of the border concerned the Jagoi - Stass region in western Borneo, which, after negotiations stalled in 1930, was not yet considered definitive. The treaty and various agreements were subsequently adopted by Indonesia and Malaysia as successor states. The unresolved status of the maritime boundary in the Celebes Sea, which has been the source of recent Malaysia-Indonesia boundary disputes over Ligitan, Sipadan and Ambalat, is partly due to the fact that most maritime boundaries were never demarcated by the colonial powers, which focused primarily on land borders.\nThe convention states that the easter",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "보르네오 섬을 가로지르는 국경선은 정확히 1,881 km이며, 차가 멈추는 순간 바로 그 선 위에 서게 됩니다.",
+      "sentences": 6
+    },
+    "narration": "보르네오 섬을 가로지르는 국경선은 정확히 1,881 km이며, 차가 멈추는 순간 바로 그 선 위에 서게 됩니다. 이 경계는 인도네시아와 말레이시아의 영토를 나누는 육지선으로, 북서쪽 탄중다투에서 시작해 고원지를 지나 동쪽 세바틱만을 가로질러 셀레베스해까지 이어집니다.  \n\n섬 안에서는 이 육지 경계와 동시에 해양 경계도 겹쳐, 같은 지점에서 두 나라의 영해와 영토가 동시에 맞닿습니다. 즉, 한 차선 안에 두 종류의 국경이 존재하는 독특한 지형이 형성된 것이죠.  \n\n이러한 이중 경계는 1891년 영국과 네덜란드가 체결한 런던 협약을 토대로 현재까지 이어져 왔으며, 오늘도 보르네오의 산과 바다를 가로지르는 1,881 km 길이의 선으로 남아 있습니다. 차가 멈춘 그 순간, 여러분은 이미 인도네시아와 말레이시아의 땅과 바다를 동시에 마주하고 있는 셈입니다.",
+    "title_line1": "보르네오 1881선",
+    "title_line2": "멈추면 바로 경계 위!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "멈추면 바로 *국경* 위"
+      },
+      {
+        "s": 3,
+        "text": "한 점에 *이중* 경계"
+      },
+      {
+        "s": 5,
+        "text": "1891년 *런던* 협약"
+      },
+      {
+        "s": 6,
+        "text": "멈추면 *동시* 마주"
+      }
+    ],
+    "image_queries": [
+      "border line road",
+      "Indonesia Malaysia border map",
+      "dual border marker",
+      "Borneo border landscape",
+      "historic treaty document",
+      "coastal border view",
+      "Indonesia–Malaysia border",
+      "Indonesia landmark",
+      "Indonesia culture",
+      "Indonesia street"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "보르네오",
+      "탄중다투",
+      "세바틱만",
+      "셀레베스해",
+      "런던협약"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "보르네오 국경선",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "길이",
+          "value": null,
+          "text": "1,881 km"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0653_인도네시아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0653_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A car stops exactly on a thin white line drawn across the dense Bornean rainforest, aerial view looking straight down, the line stretching 1,881 km between Indonesia and Malaysia.",
+      "Side view of the same stopped car on the border line, road flanked by tropical foliage, the line highlighted on the asphalt as the vehicle hovers over it.",
+      "A winding mountain road in northwestern Tanjung Datu transitions into highland terrain, seen from a low angled drone shot, marking the start of the Indonesia‑Malaysia land border.",
+      "From a high angle, the border line snakes through misty highlands toward the eastern Sebatik Sea, ending at the coast of Selimbau, with rivers and cliffs framing the path.",
+      "A coastal cliff where the land border meets the sea, captured from a shoreline perspective, showing overlapping maritime zones of Indonesia and Malaysia in the turquoise water.",
+      "Overhead view of the same coastal point where the terrestrial border and maritime boundary converge, the sea colored differently on each side to illustrate the dual jurisdiction.",
+      "A narrow mountain pass viewed from a dramatic low angle, the road split by two parallel dashed lines representing the unique dual land and sea border within a single lane.",
+      "Historical map parchment overlayed on a modern aerial photograph of Borneo's mountains and seas, illustrating the 1891 London Convention border still visible today.",
+      "Sunset silhouette of the 1,881 km border line cutting across rugged peaks and calm seas, with a faint glow highlighting the enduring line established by the 1891 agreement.",
+      "Close-up of the car's front bumper perched on the border line, rear view showing the sea horizon on one side and dense jungle on the other, emphasizing simultaneous land and water borders."
+    ],
+    "ai_prompts_done": [
+      "A car stops exactly on a thin white line drawn across the dense Bornean rainforest, aerial view looking straight down, the line stretching 1,881 km between Indonesia and Malaysia.",
+      "Side view of the same stopped car on the border line, road flanked by tropical foliage, the line highlighted on the asphalt as the vehicle hovers over it.",
+      "A winding mountain road in northwestern Tanjung Datu transitions into highland terrain, seen from a low angled drone shot, marking the start of the Indonesia‑Malaysia land border.",
+      "From a high angle, the border line snakes through misty highlands toward the eastern Sebatik Sea, ending at the coast of Selimbau, with rivers and cliffs framing the path.",
+      "A coastal cliff where the land border meets the sea, captured from a shoreline perspective, showing overlapping maritime zones of Indonesia and Malaysia in the turquoise water.",
+      "Overhead view of the same coastal point where the terrestrial border and maritime boundary converge, the sea colored differently on each side to illustrate the dual jurisdiction.",
+      "A narrow mountain pass viewed from a dramatic low angle, the road split by two parallel dashed lines representing the unique dual land and sea border within a single lane.",
+      "Historical map parchment overlayed on a modern aerial photograph of Borneo's mountains and seas, illustrating the 1891 London Convention border still visible today.",
+      "Sunset silhouette of the 1,881 km border line cutting across rugged peaks and calm seas, with a faint glow highlighting the enduring line established by the 1891 agreement.",
+      "Close-up of the car's front bumper perched on the border line, rear view showing the sea horizon on one side and dense jungle on the other, emphasizing simultaneous land and water borders."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A car stops exactly on a thin white line drawn across the dense Bornean rainfore"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Side view of the same stopped car on the border line, road flanked by tropical f"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A winding mountain road in northwestern Tanjung Datu transitions into highland t"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "From a high angle, the border line snakes through misty highlands toward the eas"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A coastal cliff where the land border meets the sea, captured from a shoreline p"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Overhead view of the same coastal point where the terrestrial border and maritim"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A narrow mountain pass viewed from a dramatic low angle, the road split by two p"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Historical map parchment overlayed on a modern aerial photograph of Borneo's mou"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Sunset silhouette of the 1,881 km border line cutting across rugged peaks and ca"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Close-up of the car's front bumper perched on the border line, rear view showing"
+      }
+    ],
+    "image_queries_done": [
+      "border line road",
+      "Indonesia Malaysia border map",
+      "dual border marker",
+      "Borneo border landscape",
+      "historic treaty document",
+      "coastal border view",
+      "Indonesia–Malaysia border",
+      "Indonesia landmark",
+      "Indonesia culture",
+      "Indonesia street"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0653_인도네시아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0653_인도네시아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "vjVLN1fkzCw",
+    "uploaded_at": "2026-11-21T20:49:21.826270+09:00"
   },
   {
     "topic": "19세기 세계 3위 규모의 제국 러시아 해군",
@@ -73517,7 +74064,7 @@
     "verify_note": "Transition from Ming to Qing",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:10.532365+00:00",
-    "status": "verified",
+    "status": "scripted",
     "curate_score": 7,
     "curate_why": "구체적 연도·전쟁 서막·시각적 상상 가능",
     "curate_top": false,
@@ -73532,6 +74079,63 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
+    },
+    "need": "curiosity",
+    "source_text": "The transition from Ming to Qing, also known as the Manchu conquest of China or Ming–Qing transition, was a decades-long period of conflict between the Qing dynasty, established by the Manchu Aisin Gioro clan in Manchuria, and the Ming dynasty in China proper and later in South China. Various other regional or temporary powers were also involved in this conflict, such as the short-lived Shun dynasty. In 1618, Nurhaci, the leader of the Aisin Gioro clan, commissioned a document titled the Seven Grievances, in which he listed complaints against the Ming before launching a rebellion. Many of the grievances concerned conflicts with the Yehe, a major Manchu clan, and the Ming's favoritism toward the Yehe at the expense of other Manchu clans. Nurhaci's demand that the Ming pay tribute to address the Seven Grievances was effectively a declaration of war, as the Ming were unwilling to pay money to a former vassal. Shortly thereafter, Nurhaci began to rebel against the Ming in Liaoning, a region in southern Manchuria.\nAt the same time, the Ming dynasty was struggling to survive amid increasing fiscal troubles and peasant rebellions. On April 24, 1644, Beijing fell to a rebel army led by Li Zicheng, a former minor Ming official who became the leader of the peasant revolt. Li then proclaimed the Shun dynasty. At the time of the city's fall, the last Ming emperor, the Chongzhen Emperor, hanged himself on a tree in the imperial garden outside the Forbidden City. As Li Zicheng advanced toward him with his army, the general Wu Sangui, tasked by the Ming with guarding one of the gates of the Great Wall, swore allegiance to the Manchus and allowed them to enter China. Li Zicheng was defeated at the battle of Shanhai Pass by the combined forces of Wu Sangui and the Manchu prince Dorgon. On June 6, the Manchus and Wu entered the capital and proclaimed the young Shunzhi Emperor as the new Emperor of China.\nHowever, the conquest was far from complete, and it took nearly forty more years before all of China was firmly united under Qing rule. The Kangxi Emperor ascended the throne in 1661, and in 1662 his regents initiated the Great Clearance to defeat the resistance of Ming loyalists in South China. He then fought several rebellions, such as the revolt of the Three Feudatories, led by Wu Sangui, which broke out in southern China in 1673. He subsequently launched a series of campaigns that expanded his empire. In 1662, the general Koxinga expelled Dutch colonists and founded the Kingdom of Tungning in Taiwan, a Ming loyalist state, with the aim of reconquering China. However, Tungning was defeated in 1683 at the battle of Penghu by Admiral Shi Lang, who had previously served under Koxinga.\nThe fall of the Ming dynasty resulted from a combination of factors. Kenneth Swope argues that a key factor was the deterioration of relations between the Ming royalty and the military leaders of the Ming Empire. Other factors include repeated military expeditions in the north, inflationary pressures caused by excessive spending by the imperial treasury, natural disasters, and epidemics. A peasant rebellion in Beijing in 1644 and a series of weak emperors contributed to the chaos. The Ming power survived for years in what is now southern China, though it was ultimately defeated by the Manchus.\n== Overview ==\nThe transition from the Ming to Qing was a decades-long period of conflict between:\nthe Qing dynasty, established by the Manchu clan Aisin Gioro in contemporary Northeast China;\nthe Ming dynasty, the incumbent dynasty led by the Zhu clan;\nand various other rebel powers in China, such as the short-lived Xi dynasty led by Zhang Xianzhong and the short-lived Shun dynasty led by Li Zicheng.\nLeading up to the Qing, in 1618, the Later Jin khan Nurhaci commissioned a doc",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 8번 문장 '결국 “일곱 가지 불만”이 만든 파장은 명나라의 종말을…' — ‘일곱 가지 불만’이 명나라 종말을 예고했다는 과장"
+      ],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      ],
+      "rounds": 2,
+      "first": "1618년, 누르하치가 “일곱 가지 불만”을 적고 전쟁을 선언하면 명나라는 어떻게 흔들릴까요?",
+      "sentences": 8
+    },
+    "review_needed": true,
+    "narration": "1618년, 누르하치가 “일곱 가지 불만”을 적고 전쟁을 선언하면 명나라는 어떻게 흔들릴까요?  \n\n누르하치는 만주 아신 기오로 씨족의 지도자로, 명나라에 대한 불만을 일곱 조항으로 정리했습니다. 그 중 대부분은 예허 부족과의 갈등, 그리고 명나라가 예허를 편들어 준 점을 비판하는 내용이었습니다. 이 문서를 근거로 누르하치는 반란을 일으켜 전쟁을 시작했죠.  \n\n그런데 이 전쟁은 단순히 한 번의 충돌에 그치지 않았습니다. 명나라와 새로 일어난 청나라 사이의 전쟁은 수십 년에 걸쳐 이어졌고, 결국 명나라가 무너지며 청나라가 중국을 장악하는 큰 전환점이 되었습니다.  \n\n이처럼 1618년의 작은 불만이 수십 년간 이어진 전쟁의 서막이 되었으며, 그 여파는 오늘날까지도 중국 역사의 흐름을 좌우했습니다. 결국 “일곱 가지 불만”이 만든 파장은 명나라의 종말을 예고한 것이었습니다.",
+    "title_line1": "1618년 일곱 불만",
+    "title_line2": "명나라가 흔들리면",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*일곱* 불만"
+      },
+      {
+        "s": 4,
+        "text": "반란으로 전쟁 *시작*"
+      },
+      {
+        "s": 6,
+        "text": "청나라, *전환점*"
+      },
+      {
+        "s": 8,
+        "text": "*일곱* 불만, 종말"
+      }
+    ],
+    "image_queries": [
+      "seven grievances document",
+      "Manchu tribal banner",
+      "Yehe tribe settlement",
+      "rebellion battle scene",
+      "war devastation landscape",
+      "Qing dynasty flag",
+      "ancient Chinese battlefield",
+      "seven grievances ending"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "누르하치",
+      "예허",
+      "일곱불만",
+      "반란"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true
     }
   },
   {
@@ -74912,7 +75516,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "1859년, 돼지 한 마리 때문에 두 나라가 전쟁 직전까지 갔다고 들어보셨나요? 실제 사건은 미국과 영국이 샌후안 제도 경계 문제로 마주하면서 시작됐습니다. 영국 영토에 있던 돼지를 미국 군인이 총으로 쏘자, 양측이 무력 충돌을 준비하게 된 것이죠. 그런데 인간 사상자는 전혀 없었습니다. 양국은 군대를 동원하고 진지를 구축했지만, 전투는 일어나지 않았습니다. 결국 ‘돼지 전쟁’이라 불리지만, 사망자는 돼지 한 마리뿐이었고, 이후 외교적 협상을 통해 평화롭게 해결되었습니다. 이렇게 작은 사건이 국제적 긴장을 불러일으켰다는 점이, 역사의 우연함을 다시 한 번 떠올리게 합니다.",
@@ -74961,7 +75565,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(그리스 / US,GB)"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
