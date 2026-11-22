@@ -65227,7 +65227,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "video_done",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -65412,9 +65412,7 @@
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0565_베트남.srt",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0565_베트남.mp4",
-    "status_v6": "video_done",
-    "redo_ts": 1795349258.7686539
+    "redo_ts": 1795350454.774479
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
