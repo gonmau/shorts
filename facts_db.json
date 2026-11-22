@@ -65310,7 +65310,7 @@
     },
     "ai_prompts": [
       "677 trillion fraud paperwork, documentary scene",
-      "1 quadrillion false loan documents, documentary scene",
+      "stack of bank loan documents on a desk, no text, documentary scene",
       "flame furnace operation raid, documentary scene",
       "Vietnam prison cell, documentary scene",
       "Vietnam courtroom interior, documentary scene",
@@ -65322,7 +65322,7 @@
     ],
     "ai_prompts_done": [
       "677 trillion fraud paperwork, documentary scene",
-      "1 quadrillion false loan documents, documentary scene",
+      "stack of bank loan documents on a desk, no text, documentary scene",
       "flame furnace operation raid, documentary scene",
       "Vietnam prison cell, documentary scene",
       "Vietnam courtroom interior, documentary scene",
@@ -65343,7 +65343,7 @@
         "scene": 2,
         "source": "ai",
         "license": "AI-generated",
-        "title": "1 quadrillion false loan documents, documentary scene"
+        "title": "stack of bank loan documents on a desk, no text, documentary scene"
       },
       {
         "scene": 3,
