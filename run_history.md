@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-22 19:20:21 (KST) · 기록 2032건 · 소재 727개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-22 19:37:08 (KST) · 기록 2042건 · 소재 727개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,26 +10,26 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 7 | 5 | 2분 49초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 195 | 0 | 50초 |
-| approve | 57 | 0 | 13초 |
+| apply_review | 196 | 0 | 51초 |
+| approve | 58 | 0 | 13초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 88 | 0 | 15시간 7분 |
+| build_video | 89 | 0 | 15시간 7분 |
 | check_country | 17 | 0 | 5초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 67 | 0 | 13초 |
-| fetch_images | 215 | 9 | 2시간 31분 |
+| export_review | 68 | 0 | 13초 |
+| fetch_images | 216 | 9 | 2시간 31분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 244 | 0 | 1시간 24분 |
-| generate_tts | 104 | 0 | 35분 47초 |
+| generate_script | 246 | 0 | 1시간 26분 |
+| generate_tts | 105 | 0 | 35분 48초 |
 | grounding | 1 | 0 | 1분 44초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
-| make_thumbnail | 78 | 0 | 2분 6초 |
-| promote_ready | 195 | 0 | 43초 |
+| make_thumbnail | 79 | 0 | 2분 7초 |
+| promote_ready | 196 | 0 | 44초 |
 | redo_videos | 31 | 0 | 9초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -41,6 +41,21 @@
 | 코드업데이트 | 122 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-22
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 19:36 | PC | build_video | build_video.py --limit 1 --start 704 --channel gonmauY --handle @gonmauY | ✅ | 1초 |  |
+| 19:36 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 704 | ✅ | 0초 |  |
+| 19:36 | PC | generate_tts | generate_tts.py --limit 1 --start 704 | ✅ | 0초 |  |
+| 19:36 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 704 | ✅ | 1초 |  |
+| 19:36 | PC | fetch_images | fetch_images.py --limit 1 --start 704 --any | ✅ | 0초 |  |
+| 19:36 | PC | export_review | export_review.py --limit 1 --start 704 | ✅ | 0초 |  |
+| 19:36 | PC | generate_script | generate_script.py --limit 1 --start 704 | ✅ | 1분 40초 |  |
+| 19:35 | PC | approve | approve.py --limit 1 --start 704 | ✅ | 0초 |  |
+| 19:35 | PC | promote_ready | promote_ready.py --start 704 | ✅ | 0초 |  |
+| 19:35 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 
 ### 2026-11-21
 
@@ -2030,9 +2045,3 @@
 | 13:06 | PC(과거) | DB커밋 | longform_db.json: update longform_db.json from local UI | ✅ |  | https://github.com/gonmau/shorts/commit/b908cc26bf10f5b9cce930576f4aa857772788f2 |
 | 13:06 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/e75cffbf8075b11c60205f820b0b692ab0bc80bb |
 | 12:12 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/ea86c23e535a7715cc60259a85b7f3ccf6afe905 |
-
-### 2026-10-23
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 12:51 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/4771f6c545cf462070a684a8c14c045579d34066 |
