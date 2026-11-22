@@ -2057,3 +2057,4 @@
 {"id": "1795346351983-7ff0e5", "time": "2026-11-22 20:19:11", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.4, "detail": ""}
 {"id": "1795346364353-c9fe68", "time": "2026-11-22 20:19:24", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py --apply", "status": "success", "secs": 0.7, "detail": ""}
 {"id": "1795346484146-0d9327", "time": "2026-11-22 20:21:24", "channel": "KO", "source": "PC", "kind": "grounding", "title": "grounding.py --llm --recheck --thr 5.0", "status": "success", "secs": 105.8, "detail": ""}
+{"id": "1795346521395-42302a", "time": "2026-11-22 20:22:01", "channel": "KO", "source": "PC", "kind": "grounding", "title": "grounding.py --llm --apply --thr 5.0", "status": "success", "secs": 3.2, "detail": ""}
