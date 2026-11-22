@@ -76214,7 +76214,7 @@
     "verify_note": "Elf",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:19.653129+00:00",
-    "status": "unverified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -76226,6 +76226,65 @@
       "flags": [
         "수치·원어 표기 같은 구체 정보 없음"
       ]
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "source_text": "An elf (pl. elves) is a type of humanoid supernatural being in Germanic folklore. Elves appear especially in North Germanic mythology, being mentioned in the Icelandic Poetic Edda and the Prose Edda.\nIn medieval Germanic-speaking cultures, elves were thought of as beings with magical powers and supernatural beauty, ambivalent towards everyday people, and capable of either helping or hindering them. Beliefs varied considerably over time and space and flourished in both pre-Christian and Christian cultures. The word elf is found throughout the Germanic languages. It seems originally to have meant 'white being'. However, reconstructing the early concept depends largely on texts written by Christians, in Old and Middle English, medieval German, and Old Norse. These associate elves variously with the gods of Norse mythology, with causing illness, with magic, and with beauty and seduction.\nAfter the medieval period, the word elf became less common throughout the Germanic languages, losing out to terms like Zwerg ('dwarf') in German and huldra ('hidden being') in North Germanic languages, and to loan-words like fairy (borrowed from French). Still, belief in elves persisted in the early modern period, particularly in Scotland and Scandinavia, where elves were thought of as magically powerful people living, usually invisibly, alongside human communities. They continued to be associated with causing illnesses and with sexual threats. For example, several early modern ballads in the British Isles and Scandinavia, originating in the medieval period, describe elves attempting to seduce or abduct human characters.\nWith modern urbanisation and industrialisation, belief in elves declined rapidly, though Iceland has some claim to continued popular belief. Elves started to be prominent in the literature and art of educated elites from the early modern period onwards. These literary elves were imagined as tiny, playful beings, with William Shakespeare's A Midsummer Night's Dream a key development of this idea. In the eighteenth century, German Romantic writers were influenced by this notion of the elf, and re-imported the English word elf into the German language. From the Romantic notion came the elves of modern popular culture. Christmas elves are a relatively recent creation, popularized during the late 19th century in the United States. Elves entered the twentieth-century high fantasy genre in the wake of J. R. R. Tolkien's works; these re-popularised the idea of elves as human-sized and humanlike beings. Elves remain a prominent feature of fantasy media today.\n== Etymology ==\nThe English word elf is from the Old English word most often attested as ælf (whose plural would have been *ælfe). Although this word took a variety of forms in different Old English dialects, these converged on the form elf during the Middle English period. During the Old English period, separate forms were used for female elves (such as ælfen, putatively from Proto-Germanic **ɑlβ(i)innjō), but during the Middle English period the word elf routinely came to include female beings.\nThe Old English forms are cognates – having a common origin – with medieval Germanic terms such as Old Norse alfr ('elf'; plural alfar), Old High German alp ('evil spirit'; pl. alpî, elpî; feminine elbe), Burgundian *alfs ('elf'), and Middle Low German alf ('evil spirit'). These words must come from Proto-Germanic, the ancestor-language of the attested Germanic languages; the Proto-Germanic forms are reconstructed as *ɑlβi-z and *ɑlβɑ-z.\nGermanic *ɑlβi-z~*ɑlβɑ-z is generally agreed to be a cognate with Latin albus ('(matt) white'), Old Irish ailbhín ('flock'), Ancient Greek ἀλφός (alphós; 'whiteness, white leprosy'), and Albanian elb ('barley'); and the Germanic word for 'swan' reconstructed as *",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "모호한 서술 3회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
+        "근거 없음/틀림: 1번 문장 '길을 가다 엘프가 막으면 차가 멈춘다?…' — 차(자동차) 언급 없음",
+        "근거 없음/틀림: 7번 문장 '백색의 신비함을 상징한다는 의미가 담겨 있어, 그들의 …' — 투명·빛남 묘사 없음",
+        "근거 없음/틀림: 8번 문장 '이러한 믿음은 중세 독일어권 문화와 아이슬란드 전통에 …' — 믿음 범위 과도하게 제한"
+      ],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      ],
+      "rounds": 2,
+      "first": "길을 가다 엘프가 막으면 차가 멈춘다?",
+      "sentences": 9
+    },
+    "review_needed": true,
+    "narration": "길을 가다 엘프가 막으면 차가 멈춘다? 아이슬란드에서는 진짜라고 전해집니다.  \n\n중세 아이슬란드 서사시에는 인간과 비슷하지만 초자연적인 존재, 엘프가 등장합니다. 이들은 독일계 민속에서 온 것으로, 마법과 아름다움을 지녔다고 알려졌습니다. 이야기 속에서 엘프는 길을 가로막아 여행자를 멈추게 하기도 하고, 반대로 길을 안내해 도움을 주기도 합니다.  \n\n그런데 엘프라는 이름 자체는 ‘하얀 존재’라는 뜻을 가지고 있습니다. 백색의 신비함을 상징한다는 의미가 담겨 있어, 그들의 모습이 빛나고 투명하게 묘사되곤 합니다.  \n\n이러한 믿음은 중세 독일어권 문화와 아이슬란드 전통에 한정된 것이지만, 그때 사람들은 엘프가 선과 악을 동시에 품은 양면 존재라고 받아들였습니다. 결국 길을 멈추게 하는 것도, 길을 열어 주는 것도 같은 존재, 엘프의 손길이었을지도 모릅니다.",
+    "title_line1": "아이슬란드 엘프 전설",
+    "title_line2": "길을 막을까, 열까?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "엘프가 *길* 막는다?"
+      },
+      {
+        "s": 5,
+        "text": "엘프가 *안내*한다!"
+      },
+      {
+        "s": 9,
+        "text": "*양면* 엘프의 손길?"
+      }
+    ],
+    "image_queries": [
+      "elf blocking road",
+      "Icelandic landscape",
+      "ancient Icelandic manuscript",
+      "German folklore forest",
+      "elf guiding traveler",
+      "white ethereal figure",
+      "glowing translucent being",
+      "medieval Germanic myth scene",
+      "dual nature elf"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "엘프",
+      "중세신화",
+      "서사시",
+      "독일민속",
+      "마법"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true
     }
   },
   {
