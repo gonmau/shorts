@@ -65227,7 +65227,7 @@
     "verify_note": "Vạn Thịnh Phát fraud case",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -65277,7 +65277,12 @@
       "1 quadrillion false loan documents",
       "flame furnace operation raid",
       "Vietnam prison cell",
-      "Vietnam courtroom interior"
+      "Vietnam courtroom interior",
+      "Vạn Thịnh Phát fraud",
+      "Vietnam landmark",
+      "Vietnam culture",
+      "Vietnam street",
+      "Vietnam people"
     ],
     "scene_count": 10,
     "hashtags": [
@@ -65302,7 +65307,113 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "677 trillion fraud paperwork, documentary scene",
+      "1 quadrillion false loan documents, documentary scene",
+      "flame furnace operation raid, documentary scene",
+      "Vietnam prison cell, documentary scene",
+      "Vietnam courtroom interior, documentary scene",
+      "Vạn Thịnh Phát fraud, documentary scene",
+      "Vietnam landmark, documentary scene",
+      "Vietnam culture, documentary scene",
+      "Vietnam street, documentary scene",
+      "Vietnam people, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "677 trillion fraud paperwork, documentary scene",
+      "1 quadrillion false loan documents, documentary scene",
+      "flame furnace operation raid, documentary scene",
+      "Vietnam prison cell, documentary scene",
+      "Vietnam courtroom interior, documentary scene",
+      "Vạn Thịnh Phát fraud, documentary scene",
+      "Vietnam landmark, documentary scene",
+      "Vietnam culture, documentary scene",
+      "Vietnam street, documentary scene",
+      "Vietnam people, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "677 trillion fraud paperwork, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "1 quadrillion false loan documents, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "flame furnace operation raid, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam prison cell, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam courtroom interior, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vạn Thịnh Phát fraud, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam landmark, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam culture, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam street, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vietnam people, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "677 trillion fraud paperwork",
+      "1 quadrillion false loan documents",
+      "flame furnace operation raid",
+      "Vietnam prison cell",
+      "Vietnam courtroom interior",
+      "Vạn Thịnh Phát fraud",
+      "Vietnam landmark",
+      "Vietnam culture",
+      "Vietnam street",
+      "Vietnam people"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0565_베트남_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0565_베트남_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0565_베트남.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0565_베트남.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -70400,7 +70511,7 @@
     "verify_note": "Ancient Egyptian religion",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:29.076568+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70413,7 +70524,72 @@
     },
     "curate_score": 4,
     "curate_why": "신앙·숫자·전쟁·벌칙 요소 약함",
-    "curate_top": false
+    "curate_top": false,
+    "need": "awe",
+    "emotion": "wonder",
+    "source_text": "Ancient Egyptian religion was a complex system of polytheistic beliefs and rituals that formed an integral part of ancient Egyptian culture. It centered on the Egyptians' interactions with many deities believed to be present and in control of the world. About 1,500 deities are known. Rituals such as prayer and offerings were provided to the gods to gain their favor. Formal religious practice centered on the pharaohs, the rulers of Egypt, believed to possess divine powers by virtue of their positions. They acted as intermediaries between their people and the gods, and were obligated to sustain the gods through rituals and offerings so that they could maintain Ma'at, the order of the cosmos, and repel Isfet, which was chaos. The state dedicated enormous resources to religious rituals and to the construction of temples.\nIndividuals could interact with the gods for their own purposes, appealing for help through prayer or compelling the gods to act through magic. These practices were distinct from, but closely linked with, the formal rituals and institutions. The popular religious tradition grew more prominent over the course of Egyptian history as the status of the pharaoh declined. Egyptian belief in the afterlife and the importance of funerary practices is evident in the great efforts made to ensure the survival of their souls after death – via the provision of tombs, grave goods and offerings to preserve the bodies and spirits of the deceased.\nThe religion had its roots in Egypt's prehistory and lasted for 3,500 years. The details of religious belief changed over time as the importance of particular gods rose and declined, and their intricate relationships shifted. At various times, certain gods became preeminent over the others, including the sun god Ra, the creator god Amun, and the mother goddess Isis. For a brief period, in the theology promulgated by the pharaoh Akhenaten, a single god, the Aten, replaced the traditional pantheon. Ancient Egyptian religion and mythology left behind many writings and monuments, along with significant influences on ancient and modern cultures. The religion decentralized following the Roman conquest of Egypt in 30 BC and was suppressed during the Christian period. Practices such as mummification halted, and the ancient Egyptian religion was considered to have fully died in the 530s. Following the Arab conquest of Egypt under Amr ibn al-As, Egyptians started to convert to Islam.\n== History ==\nThe beginnings of Egyptian religion extend into prehistory, though evidence for them comes only from the sparse and ambiguous archaeological record. Careful burials during the Predynastic period imply that the people of this time believed in some form of an afterlife. At the same time, animals were ritually buried, a practice which may reflect the development of zoomorphic deities like those found in the later religion. The evidence is less clear for gods in human form, and this type of deity may have emerged more slowly than those in animal shape. Each region of Egypt originally had its own patron deity, but it is likely that, as these small communities conquered or absorbed each other, the god of the defeated area was either subsumed into the other god's mythology or entirely replaced by it. This resulted in a complex pantheon in which some deities remained only locally important while others developed more universal significance.\nArchaeological data has suggested that the Egyptian religious system had close, cultural affinities with Eastern African populations and arose from an African substratum rather than deriving from the Mesopotamian or Mediterranean regions. \nA number of scholars have associated the Land of Punt with the homeland of Egyptian deities or ancestors, this has been attributed to the fact ",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "1,500개의 신에게 한 번에 제사를 올린다면, 파라오는 어떻게 그 무게를 감당했을까요?",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "1,500개의 신에게 한 번에 제사를 올린다면, 파라오는 어떻게 그 무게를 감당했을까요? 고대 이집트는 약 1,500명의 신이 존재하는 다신교 사회였으며, 파라오는 신과 백성을 잇는 중재자 역할을 맡았습니다. 그는 신전에서 정기적인 의식과 제물을 통해 신들의 호의를 끌어냈고, 이러한 의식이 끊기면 우주의 질서, 마앗(Ma'at)이 무너지리라 믿었습니다. 파라오가 직접 모든 신에게 동시에 제물을 바쳤다는 기록은 없으며, 대신 각 신을 모시는 사제들이 제사 일정을 나누어 진행했습니다. 국가 차원에서 거대한 자원을 투입해 사원과 제물을 관리했지만, 제사는 한 번에 1,500명을 대상으로 하는 것이 아니라, 신별·시기별로 차례로 이루어졌습니다. 결국 파라오의 책임은 “모든 신에게 꾸준히 제사를 드려 마앗을 유지하는 것”이었으며, 이는 끊임없는 의식과 관리가 필요했음을 보여줍니다.",
+    "title_line1": "고대 이집트 신앙",
+    "title_line2": "파라오가 1,500신에?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "1,500*신*의 무게"
+      },
+      {
+        "s": 2,
+        "text": "*파라오*의 신·백성 다리"
+      },
+      {
+        "s": 3,
+        "text": "*마앗* 유지 끊임의 의식"
+      }
+    ],
+    "image_queries": [
+      "Egyptian statue collection",
+      "Egyptian stone arch",
+      "Egyptian incense ritual",
+      "Egyptian priest procession",
+      "Egyptian temple complex",
+      "Egyptian ritual altar"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "파라오",
+      "마앗",
+      "이집트신",
+      "제사",
+      "사제"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "신 수",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "신 수",
+          "value": null,
+          "text": "1,500"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -70920,7 +71096,30 @@
     },
     "curate_score": 6,
     "curate_why": "구체적 숫자·터널, 전쟁 배경 있지만 장면 애매",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "IwoJima",
+      "Tunnel",
+      "Bunker",
+      "Airfield",
+      "Marines"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "지하 방어망 길이",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "km",
+      "rows": [
+        {
+          "label": "지하 방어망",
+          "value": null,
+          "text": "18km"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "country": "한국",
