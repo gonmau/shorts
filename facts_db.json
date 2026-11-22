@@ -65216,9 +65216,9 @@
   },
   {
     "topic": "베트남(Vietnam) 반부패 캠페인으로 드러난 반천발(Vạn Thịnh Phát) 사기 사건",
-    "hook": "27억 달러 규모 사기, 누가 주도했을까?",
+    "hook": "270억 달러 규모 사기, 누가 주도했을까?",
     "body": "반천발 그룹(Vạn Thịnh Phát Group)과 그 지도자 트루옹 미 란(Trương Mỹ Lan)은 사이공 공동주식상업은행(SC Bank)을 목표로 거대한 사기 조직을 꾸몄다.",
-    "twist": "이 사건은 당국의 ‘불꽃 화로(Blazing Furnace)’ 반부패 작전으로 급습돼 밝혀졌다.",
+    "twist": "이 사건은 베트남 역사상 최대 규모의 금융 사기 재판으로 기록됐다.",
     "caveat": "호치민시 인민법원(Ho Chi Minh City People's Court) 기록에 근거한다.",
     "country": "베트남",
     "theme": "법/제도",
@@ -65255,27 +65255,27 @@
       "sentences": 5,
       "ground_done": true
     },
-    "narration": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠? 베트남 호치민시 인민법원은 반천발 그룹과 트루옹 미 란이 사이공 공동주식상업은행(SC Bank)을 통해 1 쿼드릴리언 원(≈ 44 억 달러) 규모의 허위 대출을 진행했다고 밝혔습니다. 가짜 계약서와 위조 서류로 은행 자금을 가상 투자자금으로 위장해 끌어들인 뒤, ‘불꽃 화로’ 반부패 작전이 2024년 3월 5일부터 4월 11일까지 급습해 86명에게 기소장을 발부했습니다. 트루옹 미 란은 사형을 선고받았고, 공범 4명은 무기징역, 나머지는 3년 ~ 20년 사이의 징역형을 받았습니다. 이처럼 거대한 금융 사기가 법의 망을 뚫고 무너진 뒤, 베트남 사법 체계가 얼마나 강력하게 대응했는지 확인할 수 있습니다.",
+    "narration": "약 270억 달러, 677조 동 규모의 사기가 어떻게 일어났는지 궁금하시죠? 베트남 호치민시 인민법원은 반천발 그룹 회장 트루옹 미 란이 사이공 공동주식상업은행(SC Bank)에서 허위 대출로 거액을 빼돌렸다고 판단했습니다. 보도에 따르면 횡령·사기액은 약 125억 달러, 법원이 본 총 피해 추정액은 약 270억 달러에 이릅니다. 2024년 4월, 법원은 트루옹 미 란에게 사형을 선고했습니다. 하나의 은행을 둘러싼 사기가 베트남 역사상 최대 규모의 금융 사기 재판으로 기록된 것입니다.",
     "title_line1": "베트남 대규모 사기",
-    "title_line2": "누가 677조원 사기를 벌였나?!",
+    "title_line2": "누가 270억 달러 사기를 벌였나?!",
     "highlights": [
       {
         "s": 1,
-        "text": "677조 *사기* 궁금?"
+        "text": "270억 달러 *사기* 궁금?"
       },
       {
         "s": 2,
-        "text": "*허위 대출* 1쿼드"
+        "text": "*허위 대출* 125억 달러"
       },
       {
         "s": 3,
-        "text": "불꽃 화로 *작전*"
+        "text": "법원의 *사형* 선고"
       }
     ],
     "image_queries": [
-      "677 trillion fraud paperwork",
-      "1 quadrillion false loan documents",
-      "flame furnace operation raid",
+      "Vietnam bank building",
+      "Ho Chi Minh City skyline",
+      "Vietnam courthouse",
       "Vietnam prison cell",
       "Vietnam courtroom interior",
       "Vạn Thịnh Phát fraud",
@@ -65412,7 +65412,21 @@
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0565_베트남.srt",
-    "redo_ts": 1795350454.774479
+    "redo_ts": 1795350893.8689172,
+    "narration_original": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠? 베트남 호치민시 인민법원은 반천발 그룹과 트루옹 미 란이 사이공 공동주식상업은행(SC Bank)을 통해 1 쿼드릴리언 원(≈ 44 억 달러) 규모의 허위 대출을 진행했다고 밝혔습니다. 가짜 계약서와 위조 서류로 은행 자금을 가상 투자자금으로 위장해 끌어들인 뒤, ‘불꽃 화로’ 반부패 작전이 2024년 3월 5일부터 4월 11일까지 급습해 86명에게 기소장을 발부했습니다. 트루옹 미 란은 사형을 선고받았고, 공범 4명은 무기징역, 나머지는 3년 ~ 20년 사이의 징역형을 받았습니다. 이처럼 거대한 금융 사기가 법의 망을 뚫고 무너진 뒤, 베트남 사법 체계가 얼마나 강력하게 대응했는지 확인할 수 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "title_opts": {
+      "color1": "#000000",
+      "color2": "#C800FF",
+      "colors1": {
+        "0": "#38e415"
+      },
+      "colors2": {
+        "1": "#ff0038"
+      }
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -79124,7 +79138,7 @@
     "verify_note": "2024 South Korean martial law crisis",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "verified",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -79139,7 +79153,8 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": true
+    "curate_top": true,
+    "reject_reason": "UI에서 폐기"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
