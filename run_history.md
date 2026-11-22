@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-22 20:36:43 (KST) · 기록 2070건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-22 20:47:52 (KST) · 기록 2076건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,8 +10,8 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 7 | 5 | 2분 49초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 198 | 0 | 51초 |
-| approve | 60 | 0 | 14초 |
+| apply_review | 199 | 0 | 52초 |
+| approve | 61 | 0 | 14초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 91 | 0 | 15시간 25분 |
 | check_country | 20 | 0 | 6초 |
@@ -21,17 +21,17 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 70 | 0 | 14초 |
+| export_review | 71 | 0 | 14초 |
 | fetch_images | 218 | 9 | 2시간 32분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 250 | 0 | 1시간 29분 |
+| generate_script | 251 | 0 | 1시간 37분 |
 | generate_tts | 107 | 0 | 36분 4초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 81 | 0 | 2분 10초 |
-| promote_ready | 198 | 0 | 44초 |
-| redo_videos | 31 | 0 | 9초 |
+| promote_ready | 199 | 0 | 45초 |
+| redo_videos | 32 | 0 | 10초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
@@ -47,6 +47,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:47 | PC | export_review | export_review.py --limit 1 --start 620 | ✅ | 0초 |  |
+| 20:47 | PC | generate_script | generate_script.py --limit 1 --start 620 | ✅ | 8분 48초 |  |
+| 20:38 | PC | redo_videos | redo_videos.py --indexes 620 | ✅ | 0초 |  |
+| 20:38 | PC | approve | approve.py --limit 1 --start 620 | ✅ | 0초 |  |
+| 20:38 | PC | promote_ready | promote_ready.py --start 620 | ✅ | 0초 |  |
+| 20:38 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 20:36 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 1초 |  |
 | 20:36 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 11분 12초 |  |
 | 20:25 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 8초 |  |
