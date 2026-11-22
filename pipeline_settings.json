@@ -1,6 +1,6 @@
 {
  "voice": "F1",
- "rate": 30,
+ "rate": 22,
  "edge": "ko-KR-InJoonNeural",
  "caption": "script",
  "engine": "edge",
