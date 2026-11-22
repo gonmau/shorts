@@ -65295,15 +65295,20 @@
     "infographic": {
       "on": true,
       "kind": "bignum",
-      "title": "최대 사기액",
-      "s": 2,
+      "title": "사기 규모",
+      "s": 1,
       "dur": 5.0,
-      "unit": "",
+      "unit": "$",
       "rows": [
         {
-          "label": "사기액",
+          "label": "총액",
           "value": null,
-          "text": "1 쿼드릴리언 원"
+          "text": "270억 달러"
+        },
+        {
+          "label": "동액",
+          "value": null,
+          "text": "677조 동"
         }
       ],
       "none": false
