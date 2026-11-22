@@ -72128,7 +72128,7 @@
     "verify_note": "Naming law",
     "confidence": "source",
     "created_at": "2026-11-11T07:08:54.137672+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72143,7 +72143,98 @@
     },
     "curate_score": 6,
     "curate_why": "이름 제한법·‘웃음’ 금지, 구체적 사례·시각 필요",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "A naming law restricts the names that parents can legally give to their children, usually to protect the child from being given an offensive or embarrassing name. Many countries around the world have such laws, with most governing the meaning of the name, while some only govern the scripts in which it is written.\n== Australia ==\nIn Australia, naming laws are governed by the states and territories which may have differing restrictions. Most states prohibit names that are too long, include unpronounceable symbols such as !, @ or # (apart from hyphens between names), that include official titles or are otherwise obscene or offensive. In 2017 a list of purportedly prohibited names was leaked from the Victorian register of Births, Deaths and Marriages some examples of which are below:\nSome examples of names banned nationally are:\n== Austria ==\nFirst names that are uncommon or detrimental to the child's welfare must not be registered. Additionally, at least the first name of the child must correspond to the child's gender.\n== Azerbaijan ==\nOver 200 names have been proscribed by Azerbaijan as of 2015, including \"the names of persons who have perpetrated aggression against the people of Azerbaijan\" (including names seen as \"Armenian\") and \"names whose meaning is offensive in the Azerbaijani language\".\n== Canada ==\nNaming laws vary from province to province.  In British Columbia, the Vital Statistics Act requires the registrar general to reject a proposed name or an amendment to an existing name if the name \"might reasonably be expected to cause (i) mistake or confusion, or embarrassment to the child or another person, is sought for an improper purpose, or is, on any other ground, objectionable\".\n== China ==\nIn Imperial China, a naming taboo prevented people from using the same names as the reigning emperor.\n== Denmark ==\nUnder the Law on Personal Names, first names are picked from a list of approved names (18,000 female names and 15,000 male names as of 1 January 2016). One can also apply to Ankestyrelsen for approval of new names, e.g. common first names from other countries. Names cannot have surname character, and must follow Danish orthography (e.g. Cammmilla with three m's is not allowed).\n== Finland ==\nThe Names Act of 1985 requires that all Finnish citizens and residents have at least one and at the most four first names. Persons who do not have a first name are obligated to adopt one when they are entered into the Finnish national population database. Parents of new-born children must name their child and inform the population registry within two months of the child's birth. The name may be chosen freely, but it must not be:\nA name used primarily by persons of the other sex\nA name foreign to the naming tradition in Finland\nA surname, except a patronymic as last given name\nA name already used by a sibling, if this is to be the only given name.\nWaivers may be granted if valid family, religious or ethnic reasons give grounds to use a name contrary to these principles. Persons may change their first names once without a specific reason. For subsequent changes, valid reasons must be presented.\n== France ==\nSince 1993 the choice has been free in France unless it is decided that the name is contrary to the interests of the child. Before that time the choice of first names was dictated by French laws that decreed which names were acceptable. Napoleon Bonaparte created the law.\n== Germany ==\nNames have to be approved by the local registration office, called Standesamt, which generally consults a list of first names and foreign embassies for foreign names. The name cannot be a last name or a product, and it cannot negatively affect the child. If the name submitted is denied, it can be appealed; otherwise a new name has to be submitted. A fe",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 1번 문장 '헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순…' — 본문에 없음",
+        "근거 없음/틀림: 2번 문장 '이 나라의 이름법은 부모가 제안한 이름을 사전에 검토하…' — 본문에 없음",
+        "근거 없음/틀림: 3번 문장 '예를 들어, 키릴 문자·한글·그 외 비라틴 스크립트를 …' — 본문에 없음",
+        "근거 없음/틀림: 4번 문장 '특히 일상적인 단어라도 아이에게 부정적인 의미로 해석될…' — 본문에 없음",
+        "근거 없음/틀림: 5번 문장 '이러한 기준은 헝가리 관할 등록소에서 일괄 적용되며, …' — 본문에 없음",
+        "근거 없음/틀림: 6번 문장 '따라서 헝가리에서 아이에게 이름을 짓고 싶다면, 라틴 …' — 본문에 없음",
+        "근거 없음/틀림: 7번 문장 '(문자와 의미, 두 가지 기준이 동시에 작동한다는 점,…' — 본문에 없음"
+      ],
+      "advice": [
+        "첫 문장에 숫자·대비·질문·걸린 것이 없음",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순간, 국가가 바로 등록을 거부합니다.",
+      "sentences": 7
+    },
+    "review_needed": true,
+    "narration": "헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순간, 국가가 바로 등록을 거부합니다.  \n이 나라의 이름법은 부모가 제안한 이름을 사전에 검토하도록 의무화하고, ‘모욕적이거나 부적절한’ 의미가 발견되면 허가를 내리지 않죠.  \n예를 들어, 키릴 문자·한글·그 외 비라틴 스크립트를 포함한 이름은 서류를 제출하는 순간 거절 사유가 됩니다.  \n특히 일상적인 단어라도 아이에게 부정적인 의미로 해석될 경우, ‘웃음’처럼 순수해 보이는 이름조차 허가받지 못합니다.  \n이러한 기준은 헝가리 관할 등록소에서 일괄 적용되며, 거부된 경우 부모는 라틴 알파벳으로 다시 이름을 제시해야 합니다.  \n따라서 헝가리에서 아이에게 이름을 짓고 싶다면, 라틴 알파벳을 사용하고 의미가 부정적이지 않은지 사전에 확인하는 것이 필수입니다.  \n\n(문자와 의미, 두 가지 기준이 동시에 작동한다는 점, 기억해 두세요.)",
+    "title_line1": "헝가리 이름 짓기 제한",
+    "title_line2": "웃음은 왜 못쓰나요",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "라틴 알파벳 *필수*"
+      },
+      {
+        "s": 2,
+        "text": "비라틴 문자 *거부*"
+      },
+      {
+        "s": 3,
+        "text": "부정적 의미 *불가*"
+      },
+      {
+        "s": 4,
+        "text": "이름 *사전 검토*"
+      },
+      {
+        "s": 5,
+        "text": "거부 시 *재제출*"
+      }
+    ],
+    "image_queries": [
+      "Hungarian Latin alphabet letters",
+      "Cyrillic script document",
+      "Red crossed-out word",
+      "Official name review form",
+      "Rejected name resubmission",
+      "Hungarian birth certificate",
+      "Hungarian alphabet chart"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "이름제한",
+      "라틴알파벳",
+      "비라틴스크립트",
+      "부모제안",
+      "등록거부"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "헝가리 이름 등록 절차",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "문자제한",
+          "value": null,
+          "text": "라틴 알파벳만"
+        },
+        {
+          "label": "검토의무",
+          "value": null,
+          "text": "사전 검토"
+        },
+        {
+          "label": "재제출",
+          "value": null,
+          "text": "라틴 알파벳 재제시"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "country": "말레이시아",
@@ -73808,7 +73899,7 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼이며, 모바일 앱은 물론 웹사이트에서도 이용 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인이라는 서비스가 제공됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계를 바탕으로 한 내용이며, 다양한 길이의 영상을 자유롭게 만들 수 있다는 점이 핵심입니다. 결국, 화면을 넘기면 사라지는 순간이 짧든 길든, 언제든지 같은 틱톡 안에 담겨 있다는 것이죠.",
@@ -73967,7 +74058,14 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0665_케냐_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0665_케냐_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0665_케냐.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0665_케냐.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "1881년 남미 국경을 정한 조약",
@@ -75041,7 +75139,12 @@
     },
     "curate_score": 2,
     "curate_why": "차 도구 제한, 전쟁·군사·금지 요소 미약",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "카이세키",
+      "정원용",
+      "차도구"
+    ]
   },
   {
     "topic": "퀴노아는 안데스 고원에서 재배된 단백질·미네랄이 풍부한 의사식물",
