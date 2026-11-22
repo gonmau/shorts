@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-22 20:21:31 (KST) · 기록 2059건 · 소재 728개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-22 20:22:16 (KST) · 기록 2060건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -26,7 +26,7 @@
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 248 | 0 | 1시간 28분 |
 | generate_tts | 106 | 0 | 35분 55초 |
-| grounding | 2 | 0 | 3분 30초 |
+| grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 80 | 0 | 2분 8초 |
@@ -47,6 +47,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 20:22 | PC | grounding | grounding.py --llm --apply --thr 5.0 | ✅ | 3초 |  |
 | 20:21 | PC | grounding | grounding.py --llm --recheck --thr 5.0 | ✅ | 1분 45초 |  |
 | 20:19 | PC | check_country | check_country.py --apply | ✅ | 0초 |  |
 | 20:19 | PC | check_country | check_country.py | ✅ | 0초 |  |
