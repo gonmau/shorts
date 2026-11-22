@@ -69841,7 +69841,7 @@
     "verify_note": "2024 South Korean martial law crisis",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69856,7 +69856,176 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "On 3 December 2024, at 22:27 Korea Standard Time (KST), Yoon Suk Yeol, the then-president of South Korea, attempted a self-coup by declaring martial law during a televised address. In the address, he accused the Democratic Party (DPK), which held a majority in the National Assembly, of engaging in \"anti-state activities\" and collaborating with \"North Korean communists\" to undermine the country, describing their dominance as a \"legislative dictatorship\". The declaration suspended political activities, including sessions of the National Assembly and local legislatures, and imposed restrictions on the press. Yoon ordered the arrest of several political opponents, including leaders of both the DPK and his own People Power Party (PPP). It was the first declaration of martial law in South Korea since the military dictatorship of General Chun Doo-hwan in 1980.\nThe declaration was opposed by both parties and resulted in protests. At 01:02 on 4 December, 190 legislators who had arrived at the National Assembly Proceeding Hall unanimously passed a motion to lift martial law, despite attempts by the Republic of Korea Army Special Warfare Command to prevent the vote. At 04:30, Yoon and his cabinet lifted martial law and soon disbanded the Martial Law Command. The opposition began impeachment proceedings against Yoon and said it would continue to do so if he did not resign. Uproar over the declaration led to the resignation of several officials in Yoon's administration, including Defense Minister Kim Yong-hyun, who had urged Yoon to enact martial law shortly before the declaration and was second-in-command of the martial law order. Yoon, military officers, and other officials of Yoon's administration were investigated for their role in the implementation of the decree.\nOn 7 December, Yoon issued an apology for declaring martial law. The next day, the former Defense Minister Kim was arrested and sent to a detention facility for his role in the martial law order, where he attempted suicide shortly before a warrant could be filed against him. On 12 December, Yoon said that he would \"fight to the end\" and that the martial law declaration was an \"act of governance\" to protect against anti-state forces. It is more widely believed that the declaration was motivated by political issues with the DPK-controlled Assembly over repeated impeachment attempts against officials, opposition to his budget, and various scandals involving him and his wife Kim Keon Hee.\nYoon was impeached on 14 December by the National Assembly and suspended from office pending a final ruling by the Constitutional Court on whether to confirm his removal from the presidency. Prime Minister Han Duck-soo served as acting president until he himself was impeached on 27 December, making Finance Minister and Deputy Prime Minister Choi Sang-mok acting president. However, Han's impeachment was overturned by the Constitutional Court on 24 March 2025, reinstating him as acting president. Yoon was arrested on 15 January 2025. On 26 January, he was indicted for leading an insurrection, becoming the first sitting president to be arrested and indicted in South Korean history. On 4 April, the Constitutional Court unanimously upheld Yoon's impeachment and removal from office over the martial law declaration. On 19 February 2026, Yoon and other figures involved in the incident were found guilty on insurrection charges. Yoon was sentenced to life in prison, while Kim Yong-hyun was sentenced to 30 years in prison.\n== Background ==\nSouth Korea has been governed as a presidential democracy under the 1987 constitution, which provides for a strong executive independent of the legislature. Yoon Suk Yeol, a member of the conservative People Power Party (PPP) and former prosecutor general, took office as Pr",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      ],
+      "rounds": 0,
+      "first": "22시 27분, 대통령이 TV 앞에서 군법을 선언하면 어떻게 될까요?",
+      "sentences": 8
+    },
+    "narration": "22시 27분, 대통령이 TV 앞에서 군법을 선언하면 어떻게 될까요? 2024년 12월 3일, 윤석열 대통령은 전국 텔레비전 생중계로 군사법을 선포했습니다. 그는 민주당을 ‘반국가 활동’과 ‘북한 공산주의자와 결탁’이라고 규정하고, 이에 따라 국회와 지방 의회의 모든 회의를 즉시 중단시켰습니다. 동시에 주요 언론 매체에도 보도 제한을 명령해 정보 흐름을 차단했습니다. 그런데 그 순간, 대통령은 반대 정치인들의 체포 명령까지 내렸습니다. 체포 대상에는 야당 의원과 비판 언론인까지 포함돼, 실질적인 정치 탄압으로 이어졌습니다. 이 사건은 정확히 2024년 12월 3일, 한국 표준시(KST) 22시 27분에 일어난 일이며, 군법 선포와 체포 명령이 동시에 이루어진 순간이 한국 현대사에 남을 충격적인 전환점이 되었습니다. 결국 그날 밤, 국민은 자유와 권리가 어디까지 보호받을 수 있는지 다시 한 번 묻게 되었습니다.",
+    "title_line1": "대통령 군법선언",
+    "title_line2": "의회·언론 전격 중단?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*쿠데타* 선언?"
+      },
+      {
+        "s": 2,
+        "text": "*군법* 선언"
+      },
+      {
+        "s": 3,
+        "text": "*반국가* 규정"
+      },
+      {
+        "s": 5,
+        "text": "반대 정치인 *체포* 명령"
+      },
+      {
+        "s": 8,
+        "text": "자유와 권리, *어디*까지?"
+      }
+    ],
+    "image_queries": [
+      "coup declaration TV",
+      "Korean military law proclamation",
+      "Korean anti-state regulation",
+      "censored Korean flag broadcast",
+      "opposition politician arrest order",
+      "detained opposition lawmaker",
+      "South Korea night crisis",
+      "citizen rights question",
+      "2024 South Korean martial",
+      "Korea landmark"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "윤석열",
+      "군사법",
+      "반국가활동",
+      "언론제한",
+      "정치탄압"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    },
+    "ai_prompts": [
+      "A dimly lit living room at 10:27 PM, a silhouette of a president standing before a vintage television, hand raised as if announcing martial law, low-angle shot.",
+      "A modern broadcast studio on December 3, 2024, with a podium and empty microphone, camera positioned over the shoulder of an unseen announcer, showing a large screen displaying a red alert icon.",
+      "A grand parliamentary chamber emptied of people, seats darkened, a lone gavel suspended in midair, top-down drone view emphasizing the sudden halt of meetings.",
+      "A city hall council chamber in Seoul, chairs overturned, papers scattered, wide-angle perspective from the doorway capturing the abrupt cessation of local sessions.",
+      "A newsroom with rows of monitors turned off, a red tape barrier across the entrance, close-up from behind a glass wall showing the enforced media blackout.",
+      "A stark hallway in a government building, doors flung open, uniformed officers escorting shadowy figures, side view emphasizing the arrest orders being carried out.",
+      "A crowded street outside the National Assembly, masked officers detaining a silhouetted opposition lawmaker and a journalist, low-angle shot highlighting the oppression.",
+      "An aerial night view of Seoul with illuminated skyscrapers, a bright red spotlight over the presidential palace, symbolizing the decisive moment of martial law and arrests.",
+      "A close-up of a ticking digital clock on a wall showing 22:27 KST on December 3, 2024, with a faint reflection of security cameras, emphasizing the historic turning point.",
+      "A quiet residential alley at night, ordinary citizens looking up at a distant, ominous floodlight, wide-angle lens conveying the public’s questioning of their freedoms."
+    ],
+    "ai_prompts_done": [
+      "A dimly lit living room at 10:27 PM, a silhouette of a president standing before a vintage television, hand raised as if announcing martial law, low-angle shot.",
+      "A modern broadcast studio on December 3, 2024, with a podium and empty microphone, camera positioned over the shoulder of an unseen announcer, showing a large screen displaying a red alert icon.",
+      "A grand parliamentary chamber emptied of people, seats darkened, a lone gavel suspended in midair, top-down drone view emphasizing the sudden halt of meetings.",
+      "A city hall council chamber in Seoul, chairs overturned, papers scattered, wide-angle perspective from the doorway capturing the abrupt cessation of local sessions.",
+      "A newsroom with rows of monitors turned off, a red tape barrier across the entrance, close-up from behind a glass wall showing the enforced media blackout.",
+      "A stark hallway in a government building, doors flung open, uniformed officers escorting shadowy figures, side view emphasizing the arrest orders being carried out.",
+      "A crowded street outside the National Assembly, masked officers detaining a silhouetted opposition lawmaker and a journalist, low-angle shot highlighting the oppression.",
+      "An aerial night view of Seoul with illuminated skyscrapers, a bright red spotlight over the presidential palace, symbolizing the decisive moment of martial law and arrests.",
+      "A close-up of a ticking digital clock on a wall showing 22:27 KST on December 3, 2024, with a faint reflection of security cameras, emphasizing the historic turning point.",
+      "A quiet residential alley at night, ordinary citizens looking up at a distant, ominous floodlight, wide-angle lens conveying the public’s questioning of their freedoms."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dimly lit living room at 10:27 PM, a silhouette of a president standing before"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A modern broadcast studio on December 3, 2024, with a podium and empty microphon"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A grand parliamentary chamber emptied of people, seats darkened, a lone gavel su"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A city hall council chamber in Seoul, chairs overturned, papers scattered, wide-"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A newsroom with rows of monitors turned off, a red tape barrier across the entra"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A stark hallway in a government building, doors flung open, uniformed officers e"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A crowded street outside the National Assembly, masked officers detaining a silh"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An aerial night view of Seoul with illuminated skyscrapers, a bright red spotlig"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up of a ticking digital clock on a wall showing 22:27 KST on December 3,"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A quiet residential alley at night, ordinary citizens looking up at a distant, o"
+      }
+    ],
+    "image_queries_done": [
+      "coup declaration TV",
+      "Korean military law proclamation",
+      "Korean anti-state regulation",
+      "censored Korean flag broadcast",
+      "opposition politician arrest order",
+      "detained opposition lawmaker",
+      "South Korea night crisis",
+      "citizen rights question",
+      "2024 South Korean martial",
+      "Korea landmark"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0613_한국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0613_한국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0613_한국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0613_한국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "드라구트, 해적이자 지방 총독",
