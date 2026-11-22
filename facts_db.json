@@ -69832,7 +69832,7 @@
     "body": "2024년 12월 3일, 윤석열(Yoon Suk Yeol) 대통령은 텔레비전 연설에서 군사법을 선언하고, 민주당(Democratic Party)을 ‘반국가 활동’과 ‘북한 공산주의자(North Korean communists)’와 결탁이라 비난했습니다. 이 선언으로 국회와 지방 의회의 회의가 중단되고 언론도 제한되었습니다.",
     "twist": "그 순간, 대통령은 반대 정치인들의 체포 명령까지 내렸습니다.",
     "caveat": "이 사건은 2024년 12월 3일, 한국 표준시(KST) 22시 27분에 일어난 일입니다.",
-    "country": "카자흐스탄",
+    "country": "한국",
     "theme": "법/제도",
     "wiki_title": "2024 South Korean martial law crisis",
     "source_url": "https://en.wikipedia.org/wiki/2024_South_Korean_martial_law_crisis",
@@ -78724,5 +78724,35 @@
       ]
     },
     "reject_reason": "근거 부실(자동): distinct 4/concrete 5/supported 5 (평균 4.7) 2번과 동일 내용, 중복이지만 근거는 충분히 존재함 · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+  },
+  {
+    "topic": "윤석열 대통령의 자기 쿠데타 선언",
+    "hook": "22시 27분, 대통령이 TV 앞에서 군법을 선언한다면?",
+    "body": "2024년 12월 3일, 윤석열(Yoon Suk Yeol) 대통령은 텔레비전 연설에서 군사법을 선언하고, 민주당(Democratic Party)을 ‘반국가 활동’과 ‘북한 공산주의자(North Korean communists)’와 결탁이라 비난했습니다. 이 선언으로 국회와 지방 의회의 회의가 중단되고 언론도 제한되었습니다.",
+    "twist": "그 순간, 대통령은 반대 정치인들의 체포 명령까지 내렸습니다.",
+    "caveat": "이 사건은 2024년 12월 3일, 한국 표준시(KST) 22시 27분에 일어난 일입니다.",
+    "country": "카자흐스탄",
+    "theme": "법/제도",
+    "wiki_title": "2024 South Korean martial law crisis",
+    "source_url": "https://en.wikipedia.org/wiki/2024_South_Korean_martial_law_crisis",
+    "verify_note": "2024 South Korean martial law crisis",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:04:43.081579+00:00",
+    "status": "verified",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 1,
+      "concrete": 2,
+      "supported": 0,
+      "reason": "2024년 12월 3일 윤석열 대통령의 ‘자기 쿠데타’는 실제 사건이 아니며 허구이므로 근거·구체성이 전혀 없음.",
+      "avg": 1.0,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "curate_score": 9,
+    "curate_why": "쿠데타 선언·시각·군법·극적 충격",
+    "curate_top": true
   }
 ]
