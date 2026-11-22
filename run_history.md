@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-22 21:47:36 (KST) · 기록 2117건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-22 21:50:54 (KST) · 기록 2118건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -28,7 +28,7 @@
 | generate_tts | 111 | 0 | 36분 44초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
-| infographic | 1 | 0 | 3초 |
+| infographic | 2 | 0 | 5초 |
 | make_thumbnail | 84 | 0 | 2분 14초 |
 | promote_ready | 205 | 0 | 47초 |
 | redo_videos | 37 | 0 | 12초 |
@@ -47,6 +47,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:50 | PC | infographic | infographic.py --index 565 --force | ✅ | 2초 |  |
 | 21:47 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 565 | ✅ | 1초 |  |
 | 21:47 | PC | build_video | build_video.py --index 565 --channel gonmauY --handle @gonmauY | ✅ | 7분 19초 |  |
 | 21:40 | PC | generate_script | generate_script.py --extras-only --index 565 | ✅ | 1초 |  |
