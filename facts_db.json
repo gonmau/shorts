@@ -65433,7 +65433,39 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0565_베트남_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0565_베트남_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "brush",
+      "band_color": "#bfbeb3",
+      "band_opacity": 100,
+      "band_w": 200,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "",
+      "text2": "",
+      "colors1": {
+        "0": "#55e42f",
+        "2": "#e02e2e"
+      },
+      "sizes1": {},
+      "colors2": {
+        "1": "#ec3a3a",
+        "2": "#e8fa1a"
+      },
+      "sizes2": {}
+    }
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
