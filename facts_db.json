@@ -71292,8 +71292,8 @@
       "tag_color": "#EB1414",
       "tag_fg": "#FFFFFF",
       "font": "dokdo",
-      "band": "skew",
-      "band_color": "#83d468",
+      "band": "none",
+      "band_color": "#dd2bdd",
       "band_opacity": 100,
       "band_w": 90,
       "band_h": 1.0,
@@ -71311,7 +71311,9 @@
       "sizes1": {},
       "colors2": {
         "0": "#ea7184",
-        "2": "#ec1818"
+        "1": "#f1e5e5",
+        "2": "#ec1818",
+        "3": "#ece2e2"
       },
       "sizes2": {}
     },
