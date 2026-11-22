@@ -263,6 +263,8 @@ count = c1.number_input("count", 1, 20, 1, help="이번에 처리할 소재 개�
 start = c2.number_input("start_index", 0, 9999, 0 if EN else 0, help="이 번호 이상인 소재부터 처리. 그보다 작은 번호(옛 소재)는 건너뜀")
 redo = c3.text_input("redo / redo_script (예: 98,99 / 101!)", help="평소엔 비워 두세요. 영상만 다시: 98,99 / 대본부터 다시: 101 (아래 체크) / 폐기 소재 되살리기: 101! (아래 체크). 작업 후엔 꼭 비우기")
 redo_script = st.checkbox("위 입력을 redo_script(대본부터)로 사용", False, help="체크: 대본부터 다시 / 번호 뒤 ! 는 폐기 해제. 해제: 영상만 다시")
+_prio = st.checkbox("점수 높은 소재 먼저 (끄면 start_index부터 번호 순)", True, help="켬: curate 점수가 높은 소재를 먼저 처리하므로 start_index 이후에서 번호가 뒤인 소재가 먼저 뽑힐 수 있음 (점수가 없는 소재는 0점 취급). 끔: start_index부터 번호 순으로 처리. 특정 번호를 만들려면 끄세요")
+os.environ["PRIORITY_TOP"] = "1" if _prio else "0"
 a = f"--limit {count} --start {start}".split()
 S = lambda *x: list(x)
 

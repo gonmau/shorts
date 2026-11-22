@@ -45,6 +45,10 @@ on:
       start_index:
         description: "이 번호 이후 소재만 처리 (PC에서 만든 옛 소재 건너뛰기)"
         default: "0"
+      priority:
+        description: "점수 높은 소재 먼저 (끄면 start_index부터 번호 순)"
+        type: boolean
+        default: true
       auto_verify:
         description: "미검증 소재 자동 승인 (팩트체크 생략)"
         type: boolean
@@ -100,6 +104,7 @@ jobs:
       PYTHONUNBUFFERED: "1"  # 로그가 실시간으로 보이게 함
       REDO: ${{ github.event.inputs.redo || '' }}
       REDO_SCRIPT: ${{ github.event.inputs.redo_script || '' }}
+      PRIORITY_TOP: ${{ github.event.inputs.priority == 'false' && '0' || '1' }}
       COUNT: ${{ github.event.inputs.count || '3' }}
       START: ${{ github.event.inputs.start_index || '0' }}
       CTA_MODE: ${{ github.event.inputs.cta_check || 'off' }}
