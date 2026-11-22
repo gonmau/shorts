@@ -56587,7 +56587,7 @@
     },
     "curate_score": 7,
     "curate_why": "숫자·4일·양희생, 시각적·충격",
-    "curate_top": true,
+    "curate_top": false,
     "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0475_모로코_v2.mp3",
     "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0475_모로코_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
@@ -57365,14 +57365,17 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것"
+        "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
       ],
       "advice": [],
       "rounds": 2,
       "first": "고도 1,100미터 위에서 차 대신 잎을 씹는다고요?",
-      "sentences": 7
+      "sentences": 7,
+      "ground_done": true
     },
-    "review_needed": true
+    "review_needed": true,
+    "source_text": "Khat or qat (Catha edulis), also known as Bushman's tea in South Africa, is a species of flowering plant in the family Celastraceae, and the sole species in the genus Catha. It is a shrub or tree native to eastern and southern Africa, ranging from Ethiopia and South Sudan to Angola and the Cape Provinces of South Africa. It grows in montane riverine and evergreen forests from 1,100 to 2,400 metres (3600 to 7900 feet) elevation.\nIt has a history of cultivation originating in the Harar region of Ethiopia, and it was subsequently introduced at different times to countries nearby in East Africa and South Arabia, notably Somalia and Yemen. Cultivated by farmers, its leaves are sold on the market to be chewed as a recreational stimulant. The world's largest consumers are East Africans, particularly Somalis, and nearby Yemen, with the largest producers/exporters being Ethiopia and Kenya.\nKhat contains the alkaloid cathinone, a stimulant which causes greater sociability, excitement, mild loss of appetite and mild euphoria. Among communities from the areas where the plant is native, khat-chewing has historical relevance (as a social custom, especially among men) dating back thousands of years, analogous—but slightly different—to the use of coca leaves in South America's Andes Mountains or the betel nut preparations in South Asia.\nSince 1980, the World Health Organization (WHO) classifies khat as a \"drug of abuse\" that can produce psychological dependence, although the WHO does not consider khat addiction to be a serious global problem.\nThe legality of khat varies by region and country; in many territories, khat might pass \"under-the-radar\" as a botanical species (thus not be a specifically controlled substance), but its recreational use may, nevertheless, be illegal under more general laws.\nIt is strictly a controlled substance in many regions, often at the highest degree, including in Australia, Canada, the European Union, India, Jordan, New Zealand, Saudi Arabia, the United Arab Emirates and the United Kingdom. In the United States and Turkey, the botanical specimen (plant) Catha edulis is not prohibited, but the consumption and distribution of harvested leaves or possession for recreational use are illegal. In the UAE, the punishment for possession, use, or distribution of khat can include life imprisonment.\nBy contrast, its production, sale, and consumption are all fully legal—or not mentioned in a legal context at all—in the nations where its use is culturally significant, including Djibouti, Ethiopia, Kenya, Somalia, Uganda and Yemen. In Israel, which hosts a population of Yemenite Jews and Ethiopian Jews, only the consumption of the plant's leaves in its natural state is permitted; \"khat extracts\" are illegal, after they became a street drug and were popularly abused in the 2000s.\n== Terminology ==\nThe genus name Catha is a Latinization of the Arabic name قات, which is regularly romanized as qāt.  Other romanizations include kat, quatt, qaad, qhat, ghat, and chat.\nThe khat plant is known by a variety of names, such as qat and gat in Yemeni Arabic, qaat and jaad in Somali, and chat (ጫት) in Harari and Amharic. It is also known as jimaa in the Oromo language, mayirungi in Luganda, and as miraa and muguka in Swahili. In the African Great Lakes region, where Catha edulis is (in some areas) cultivated, it is known as muguka, muhulo, miraa and muirungi. The Swahili words miraa and muguka are also the terms used in English in Kenya, where the former refers to a product including both stems and leaves, while the latter refers to a lower-grade product using only leaves taken from the tip of the stem.\nIt also goes by various descriptive names, such as Abyssinian tea, Arabian tea, kafta, jimaa, and Somali tea in its endemic regions of the Horn "
   },
   {
     "topic": "탄자니아( Tanzania ) 교회에서의 기도 전 청결 규칙",
@@ -58370,7 +58373,7 @@
     "scene_count": 10,
     "curate_score": 8,
     "curate_why": "카스트 고정, 강렬·사회적 논쟁",
-    "curate_top": true,
+    "curate_top": false,
     "ai_prompts": [
       "A newborn baby swaddled in a simple cloth lies on a wooden floor of an ancient Indian household, viewed from a low angle, emphasizing the surrounding caste symbols on the walls.",
       "A family ceremony where a child receives a caste marker—colored thread and sacred ash—captured from a side profile, showing elders in traditional attire within a courtyard.",
@@ -59551,7 +59554,8 @@
     },
     "curate_score": 3,
     "curate_why": "음식 이름 변천, 흥미 약함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "모로코에 스페인 영토가 있다",
@@ -59613,7 +59617,7 @@
     },
     "curate_score": 8,
     "curate_why": "스페인 영토·모로코, 영토·정치 충격",
-    "curate_top": true,
+    "curate_top": false,
     "ai_prompts": [
       "Aerial view of the Moroccan coastline revealing the tiny Spanish enclave of Ceuta perched on the mainland, with turquoise sea surrounding it, early morning light.",
       "Wide panoramic shot of Morocco's northern Mediterranean shore meeting the vast Atlantic horizon, dunes and cliffs under a clear sky.",
@@ -60332,7 +60336,8 @@
     },
     "curate_score": 4,
     "curate_why": "라마단 파티, 문화적이지만 논쟁 약함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "영장류의 무릎 꿇기 행동",
@@ -60362,7 +60367,8 @@
     },
     "curate_score": 5,
     "curate_why": "침팬지 무릎꿇기, 동물 행동·흥미",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "미국 영토는 두 조각으로 나뉜다",
@@ -60847,7 +60853,8 @@
     },
     "curate_score": 3,
     "curate_why": "사탕 전통, 가벼운 문화",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "이집트 거리의 주식, eish baladi 피타",
@@ -60875,7 +60882,8 @@
     },
     "curate_score": 2,
     "curate_why": "피타 빵, 일반 음식 소개",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "벨기에에서 시작되는 All Saints' Day 의식",
@@ -60905,7 +60913,8 @@
     },
     "curate_score": 2,
     "curate_why": "All Saints' Day 의식, 일반 종교",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "페루(Peru) 와인 축제",
@@ -60999,7 +61008,8 @@
     },
     "curate_score": 3,
     "curate_why": "Patani 말레이인, 문화적이지만 충격 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "라오스(Laos) 사람들의 연간 171kg 찹쌀밥 소비",
@@ -61073,7 +61083,7 @@
     },
     "curate_score": 8,
     "curate_why": "대규모 비밀 모임과 탄압",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The Muslim Brotherhood in Egypt (Arabic: جماعة الإخوان المسلمين Jamāʿat al-Ikhwān al-Muslimūn/al-Ikhwan/el-ekhwan al-muslimīn, IPA: [elʔexˈwæːn]) is the Egyptian branch of the Muslim Brotherhood, with adherents estimated to number between 2 and 2.5 million. Founded by Hassan al-Banna in 1928, the group spread to other Muslim countries but has its largest organization in Egypt, despite government crackdowns in 1948, 1954, 1965, 1979, 1981 and 2013, after plots, or alleged plots, of assassination and overthrow were uncovered.\nFollowing the 2011 Egyptian revolution, it launched a political party—the Freedom and Justice Party—to contest elections, which it described as having \"the same mission and goals, but different roles\" than the Brotherhood, and agreeing to honor all Egypt's international agreements. The party won 42% of the seats in the 2011–12 parliamentary elections, and its candidate, Mohamed Morsi, the June 2012 presidential election. Morsi was overthrown by the army within a year, and a crackdown ensued that some have called more damaging to the movement than any \"in eight decades\". Hundreds of members were killed and imprisoned, including Morsi and most of the Brotherhood's leadership. In September 2013, an Egyptian court banned the Brotherhood and its associations, and ordered that its assets be seized; and in December the military-backed interim government declared the movement a terrorist group following the bombing of security directorate building in Mansoura. The Brotherhood denied being responsible for the attack and Ansar Bait al-Maqdis, an al-Qaeda-linked group, claimed responsibility. They also issued a statement condemning violence.\n== History ==\n=== Under the monarchy ===\nThe Muslim Brotherhood was founded in 1928 by Hassan al-Banna, an Egyptian schoolteacher, who preached implementing traditional Islamic Sharia law in all aspects of life, from everyday problems to the organization of the government. Inspired by Islamic reformers Muhammad Abduh and Rashid Rida, he believed that Islam had lost its social dominance to corrupt Western influences and British imperial rule.\nThe organization initially focused on educational and charitable work, but quickly grew to become a major political force as well. (Sources disagree as to whether the Brotherhood was hostile to independent working-class and popular organisations, or supported efforts to create trades unions and unemployment benefits.) It championed the cause of poor Muslims, and played a prominent role in the Egyptian nationalist movement, fighting the British, Egypt's occupier/dominator. It engaged in espionage and sabotage, as well as support for activities orchestrated by Haj Amin al-Husseini in British Mandate Palestine, and up to and during World War II some association with Britain's enemy, the German Nazis, dissemination of anti-Jewish and anti-Western propaganda.\nOver the years, the Brotherhood spread to other Muslim countries, including Syria Jordan, Tunisia, etc. as well as countries where Muslims are in the minority. These groups are sometimes described as \"very loosely affiliated\" with the Egyptian branch and each other.\nIn November 1948, following several bombings and assassination attempts, the government arrested 32 leaders of the Brotherhood's \"secret apparatus\" and banned the Brotherhood. At this time the Brotherhood was estimated to have 2000 branches and 500,000 members or sympathizers. In succeeding months Egypt's prime minister was assassinated by Brotherhood member Abdel Meguid Ahmed Hassan, and following that Al-Banna himself was assassinated in what is thought to be a cycle of retaliation.\nIn 1952, members of the Muslim Brotherhood were accused of taking part in an event that marked the end of Egypt's \"liberal, progressive, cosmopolitan\" er",
@@ -61394,7 +61404,8 @@
     },
     "curate_score": 4,
     "curate_why": "인형 전시와 저주, 구체성 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "죽음 기념일, 생일의 반대",
@@ -61425,7 +61436,8 @@
     },
     "curate_score": 5,
     "curate_why": "죽음 기념일이라는 이색적 반전",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "부활절 아침 일출 예배와 여성의 모자",
@@ -61455,7 +61467,8 @@
     },
     "curate_score": 4,
     "curate_why": "부활절 의식, 시각은 있으나 충격 약함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "미국 국기의 별과 줄 배치 비밀",
@@ -62410,7 +62423,8 @@
     },
     "curate_score": 4,
     "curate_why": "장례식 금기지만 일반화 느낌",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "네팔 뉴아르족의 도시 문명",
@@ -62441,7 +62455,8 @@
     },
     "curate_score": 4,
     "curate_why": "전통 직업 동시 운영, 강도 낮음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "폴란드 유대인 딸 이름 짓기 의식",
@@ -62471,7 +62486,8 @@
     },
     "curate_score": 5,
     "curate_why": "이름 짓기 의식, 종교적 긴장감",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "홀리(Holi) 색 축제",
@@ -62501,7 +62517,8 @@
     },
     "curate_score": 5,
     "curate_why": "홀리 색 물감, 시각적이지만 흔함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "네덜란드 카니발(Carnival) 역할 전환 축제",
@@ -62559,7 +62576,8 @@
     },
     "curate_score": 5,
     "curate_why": "죽은 이를 위한 음식, 문화적 충격",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "스페인·포르투갈 유대인(Spanish and Portuguese Jews)의 독특한 혈통",
@@ -62649,7 +62667,8 @@
     },
     "curate_score": 5,
     "curate_why": "양뿔 나팔, 독특하지만 제한적",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "툼부카의 치유 춤 Vimbuza",
@@ -62679,7 +62698,8 @@
     },
     "curate_score": 5,
     "curate_why": "치유 춤, 시각적이지만 충격 낮음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "전쟁 반대 승려가 만든 청소년 사회봉사 학교",
@@ -62716,18 +62736,21 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 1번 문장 '전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이…' — 12명 청년 수는 본문에 없음",
-        "근거 없음/틀림: 3번 문장 '학교 운영 2년 만에 1천 명 이상이 참여했으며, 그 …' — 1천명 참여 수치는 본문에 없음"
+        "근거 없음/틀림: 2번 문장 '이 학교는 전쟁 지역에서 마을 정비와 아이 돌봄 등 직…' — 깊은 경청 언급 없음",
+        "근거 없음/틀림: 3번 문장 '그는 1966년 전쟁에 반대했다는 이유로 남베트남에서 …' — 노벨 지명 연도 오류",
+        "근거 없음/틀림: 4번 문장 '추방된 뒤에도 그는 ‘인터비잉 서열(Order of I…' — 창설 시기 순서 오류",
+        "근거 없음/틀림: 5번 문장 '오늘날 이 공동체는 수십 개의 수행 센터와 수천 명의 …' — 회원 수 근거 없음"
       ],
       "advice": [
         "중반 전환·재훅 문장 없음"
       ],
       "rounds": 2,
-      "first": "전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이 12명의 청년과 함께 ‘청년 사회봉사 학교’를 설립했습니다.",
-      "sentences": 7
+      "first": "베트남 전쟁 한가운데, 1960년대 중반에 틱 낫 한 스님은 청년들을 모아 ‘청년 사회봉사 학교’를 만들었습니다.",
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "전쟁이 한창이던 1960년대, 베트남 스님 틱 낫 한이 12명의 청년과 함께 ‘청년 사회봉사 학교’를 설립했습니다. 이 학교는 전쟁 현장에서 마을을 정비하고 아이들을 돌보며, 직접적인 지역 봉사를 가르쳤습니다.  \n\n학교 운영 2년 만에 1천 명 이상이 참여했으며, 그 경험을 바탕으로 틱 낫 한은 ‘인터비잉 서열(Order of Interbeing)’이라는 공동체를 만들었습니다. 이 공동체는 스님의 ‘깊은 경청’과 ‘연결된 존재’ 가르침을 실천하며, 전 세계에 퍼진 30여 개의 수행 센터와 수천 명의 회원을 이어줍니다.  \n\n그렇다면 전쟁 속에서 시작된 작은 봉사 교육이 어떻게 오늘날 수십 년째 이어지는 평화 실천 네트워크가 되었을까요? 바로 스님의 행동이 ‘참여하는 불교’를 탄생시켰기 때문입니다. 전쟁의 폐허 속에서 시작된 한 학교가, 지금도 수많은 사람들에게 평화와 봉사의 의미를 전하고 있습니다.",
+    "narration": "베트남 전쟁 한가운데, 1960년대 중반에 틱 낫 한 스님은 청년들을 모아 ‘청년 사회봉사 학교’를 만들었습니다. 이 학교는 전쟁 지역에서 마을 정비와 아이 돌봄 등 직접적인 봉사를 가르쳤으며, 스님의 ‘깊은 경청’과 상호 연결성을 실천하도록 설계되었습니다.  \n\n그는 1966년 전쟁에 반대했다는 이유로 남베트남에서 추방당했지만, 같은 해 마틴 루터 킹 주니어가 노벨 평화상 후보로 지명하면서 국제적 주목을 받았습니다. 추방된 뒤에도 그는 ‘인터비잉 서열(Order of Interbeing)’을 공동 창설해, 봉사와 명상의 결합을 전 세계에 전파했습니다.  \n\n오늘날 이 공동체는 수십 개의 수행 센터와 수천 명의 회원을 이어가며, 전쟁 속 작은 교육이 어떻게 지속 가능한 평화 네트워크로 성장했는지를 보여줍니다. 바로 전쟁의 폐허 속에서 시작된 한 학교가, 오늘도 전 세계에 평화와 봉사의 씨앗을 뿌리고 있기 때문입니다.",
     "title_line1": "전쟁 속 청년 봉사 학교",
     "title_line2": "스님이 만든 평화망?",
     "highlights": [
@@ -62792,7 +62815,8 @@
     },
     "curate_score": 4,
     "curate_why": "토마토 없는 파스타, 흥미는 적음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "필리핀(Philippines) 이라코스(Ilocos) 지역의 인아벨(Inabel) 직물 – 열대 기후에 최적화된 천",
@@ -62822,7 +62846,8 @@
     },
     "curate_score": 5,
     "curate_why": "열대 기후 최적 천, 시각적 호기심",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "쿠바(Cuba) 전통 의식인 리베이션(libation) – 식사 전 액체 제물",
@@ -62852,7 +62877,8 @@
     },
     "curate_score": 4,
     "curate_why": "식전 액체 제물, 일반 의식 수준",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "사모아 CCCS 교인의 비중",
@@ -62880,7 +62906,8 @@
     },
     "curate_score": 4,
     "curate_why": "높은 교회 출석률, 충격 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "펠멘이의 기원과 국가적 위상",
@@ -62910,7 +62937,8 @@
     },
     "curate_score": 4,
     "curate_why": "펠멘이 기원, 문화적 이야기",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "핀란드 대통령은 태어나자마자 후보가 될 수 있다?",
@@ -63274,7 +63302,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "숫자·규칙은 있지만 충격·전쟁 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "오스트리아의 메이폴(Maypole) 전통",
@@ -63304,7 +63335,8 @@
     },
     "curate_score": 4,
     "curate_why": "숫자·대비 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "직접 민주주의, 시민이 직접 법을 만든다",
@@ -63331,7 +63363,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "법 제정은 흥미·하지만 전쟁·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "카자흐스탄(Kazakhstan)의 내륙 국가이면서도 바다를 가진 사실",
@@ -64054,7 +64089,7 @@
     },
     "curate_score": 8,
     "curate_why": "전쟁 비밀·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "hashtags": [
       "사르디니아",
       "오스트리아제국",
@@ -64261,7 +64296,8 @@
     },
     "curate_score": 5,
     "curate_why": "겨울밤·수박 대비",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "박사(Doctor) 칭호의 기원과 현대 사용",
@@ -65206,7 +65242,7 @@
     },
     "curate_score": 7,
     "curate_why": "광대한 영토·숫자",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The Vạn Thịnh Phát case, officially referred to by the People's Court of Ho Chi Minh City, Vietnam as the Trương Mỹ Lan and Accomplices case, was a major economic corruption scandal involving the Vạn Thịnh Phát Group joint-stock company. Under the leadership of billionaire Trương Mỹ Lan for over a decade, Vạn Thịnh Phát orchestrated a large-scale fraud scheme targeting the Sai Gon Joint Stock Commercial Bank (SCB).\nThe Vạn Thịnh Phát scandal was exposed during the anti-corruption Blazing Furnace campaign initiated by General Secretary Nguyễn Phú Trọng. The total damage from the case was estimated at ₫677 trillion (approximately US$27 billion), with fraudulent disbursements reaching ₫1 quadrillion (approximately US$44 billion) through SCB loan documents. This made it one of the largest economic scandals in Vietnam's history, surpassing the 1 Malaysia Development Berhad scandal in Malaysia and making it the largest corruption case in Southeast Asia. Many senior officials, including high-ranking leaders, were implicated, and a total of 86 individuals were charged.\nAccording to the People's Court of Ho Chi Minh City, the trial of the Vạn Thịnh Phát case was to be conducted in two phases: the first focused on investigation, prosecution, and asset recovery; the second phase addressed issues related to fraudulent corporate bonds. \nThe first-phase trial took place from March 5 to April 11, 2024, with the participation of 200 lawyers and 86 defendants, seven of whom were absent. Trương Mỹ Lan was sentenced to death; four accomplices received life sentences, while the remaining defendants were sentenced to prison terms ranging from three years of suspended sentence to 20 years. Trương Mỹ Lan's husband and niece were respectively sentenced to 9 and 17 years in prison.\n== Background ==\nTrương Mỹ Lan, born on October 13, 1956, is a Vietnamese businesswoman of Chinese descent. She was born in Saigon, Republic of Vietnam (now Ho Chi Minh City, Vietnam). Before becoming the owner of a major corporation in Vietnam, she sold cosmetics at Bến Thành Market, Ho Chi Minh City, with financial support from her mother. In 1992, she married Hong Kong businessman Eric Chu Nap-kee (Chu Lập Cơ). Together, they founded Vạn Thịnh Phát Group, initially focusing on trade, business, restaurants, and hotels in the aftermath of the Đổi Mới reforms.\nIn 2007, Vạn Thịnh Phát established two subsidiaries: Vạn Thịnh Phát Investment Group and An Đông Investment. After gaining control of Saigon Commercial Bank (SCB) through shareholdings, SCB became one of the largest commercial banks in Vietnam by asset size. Simultaneously, Vạn Thịnh Phát grew into one of Vietnam’s wealthiest real estate companies, developing a range of high-end projects, including luxury residential buildings, office towers, hotels, and shopping centers.\nTimes Square Investment JSC, a subsidiary of Vạn Thịnh Phát, owns a prime property with frontages on Nguyễn Huệ Walking Street and the Union Square Saigon (formerly named as Vincom Center A), a complex of shopping and Mandarin Oriental hotel, which was the place of the former Eden Passage Mall that features four frontages. The Times Square Investment building (located at 22–36 Nguyễn Huệ, District 1) is chaired by Eric Chu. This building was used as collateral for loans at Saigon Commercial Bank (SCB), while the SCB headquarters is located at Bitexco Office Building, 19–25 Nguyễn Huệ. Despite controlling significant assets, little information is publicly available about Trương Mỹ Lan or her family.\n=== Burning Furnace campaign ===\nCorruption in Vietnam expanded during the tenure of Prime Minister Nguyễn Tấn Dũng. In 2016, the Communist Party of Vietnam launched the anti-corruption campaign known as the Blazing Furnace, initiated by General Secretary Ngu",
@@ -65214,9 +65250,10 @@
       "ok": true,
       "issues": [],
       "advice": [],
-      "rounds": 1,
+      "rounds": 0,
       "first": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠?",
-      "sentences": 5
+      "sentences": 5,
+      "ground_done": true
     },
     "narration": "677조 원(≈ 27 억 달러) 규모의 사기가 어떻게 일어났는지 궁금하시죠? 베트남 호치민시 인민법원은 반천발 그룹과 트루옹 미 란이 사이공 공동주식상업은행(SC Bank)을 통해 1 쿼드릴리언 원(≈ 44 억 달러) 규모의 허위 대출을 진행했다고 밝혔습니다. 가짜 계약서와 위조 서류로 은행 자금을 가상 투자자금으로 위장해 끌어들인 뒤, ‘불꽃 화로’ 반부패 작전이 2024년 3월 5일부터 4월 11일까지 급습해 86명에게 기소장을 발부했습니다. 트루옹 미 란은 사형을 선고받았고, 공범 4명은 무기징역, 나머지는 3년 ~ 20년 사이의 징역형을 받았습니다. 이처럼 거대한 금융 사기가 법의 망을 뚫고 무너진 뒤, 베트남 사법 체계가 얼마나 강력하게 대응했는지 확인할 수 있습니다.",
     "title_line1": "베트남 대규모 사기",
@@ -66459,7 +66496,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "플랫폼 규제는 흥미·하지만 갈등·숫자 약함",
+    "curate_top": false
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
@@ -66475,7 +66515,7 @@
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
     "status": "scripted",
-    "narration": "1987년과 1996년, 그리스와 터키는 두 차례나 전쟁 직전까지 갔습니다. 두 나라는 에게해에서 해상 경계와 영공, 해저 자원, 섬의 영유권 등을 놓고 오랫동안 대립해 왔습니다. 1987년에는 해저 석유 탐사권을 둘러싸고 양국이 군사적으로 맞섰고, 1996년에는 이미아라는 작은 암초의 영유권을 놓고 군함과 병력이 대치했습니다. 특히 1996년에는 양국 군대가 암초에 상륙하고 서로 국기까지 내걸면서 무력 충돌 가능성이 커졌습니다. 두 차례 모두 미국 등의 외교적 중재로 전쟁을 피할 수 있었지만, 근본적인 분쟁까지 해결된 것은 아니었습니다. 실제로 2026년에도 양국 정상은 대화를 이어가고 있지만, 해양 경계와 관할권을 둘러싼 갈등은 계속되고 있습니다. 우리나라 역시 독도와 주변 해역을 둘러싼 문제를 안고 있다는 점에서 남의 나라 이야기만은 아닙니다.",
+    "narration": "에게해 작은 암초 ‘이미아’가 1996년 양국 군함을 맞대고 대치하게 만든 이유, 궁금하지 않으신가요? 그리스와 터키는 1970년대부터 영해·공역·배타적경제수역(EEZ)·섬 영유권을 놓고 갈등해 왔습니다. 1987년에는 에게해 해저 석유 탐사권을 두고 군사적 긴장이 최고조에 달했고, 1996년 초에는 이미아 암초를 두고 양국 함정이 직접 마주했습니다. 터키는 그리스 섬을 기준으로 한 EEZ를 인정하지 않아 해양 경계가 겹쳤고, 양측은 각각 6해리 영해와 그에 따른 공역을 주장했습니다. 국제사회와 외교적 개입으로 전면 충돌은 피했지만, 영해·공역·해저 자원 문제는 해결되지 않은 채 남아 있습니다. 2026년 현재도 양 정상은 대화를 이어가지만, 섬 주변 해역을 둘러싼 대립은 여전히 지속되고 있습니다. 결국 이미아 하나가 두 차례 전쟁 위기의 불씨가 되었던 것이죠.",
     "title_line1": "그리스·터키, 전쟁 직전",
     "title_line2": "작은 암초가 부른 전쟁 위기",
     "highlights": [
@@ -66705,7 +66745,26 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 8,
+    "curate_why": "전쟁 직전·연도·대비 명확, 긴장감 높음",
+    "curate_top": true,
+    "source_text": "The Aegean dispute is a set of interrelated controversies between Greece and Turkey over sovereignty and related rights in the region of the Aegean Sea. This set of conflicts has strongly affected Greek-Turkish relations since the 1970s, and has twice led to crises coming close to the outbreak of military hostilities, in 1987 and in early 1996. The issues in the Aegean fall into several categories:\nThe delimitation of territorial waters\nThe delimitation of national airspace\nThe delimitation of exclusive economic zones (EEZ) and the use of the continental shelf\nThe role of flight information regions (FIR) for the control of military flight activity\nThe issue of the demilitarized status assigned to some of the Greek islands in the region\nTurkish claims of \"grey zones\" of undetermined sovereignty over a number of islets, most notably the islets of Imia\nOne aspect of the dispute is the differing interpretations of the maritime law: Turkey has not signed up to the Convention on the Continental Shelf nor the superseding United Nations Convention on the Law of the Sea, which as of July 2024 has been signed by 170 parties, including Greece; as such, Turkey does not recognize a legal continental shelf and EEZ around the Greek islands.\nBetween 1998 and the early 2010s, the two countries came closer to overcoming the tensions through a series of diplomatic measures, particularly with a view to easing Turkey's accession to the European Union. However, differences over suitable diplomatic paths to a substantial solution remained unresolved, and as of 2026 tensions remain.\n== Maritime and aerial zones of influence ==\nSeveral of the Aegean issues deal with the delimitation of both countries' zones of influence in the air and on the sea around their respective territories. These issues owe their virulence to a geographical peculiarity of the Aegean sea and its territories. While the mainland coasts of Greece and Turkey bordering the Aegean Sea on both sides represent roughly equal shares of its total coastline, the overwhelming number of the many Aegean islands belong to Greece. In particular, there is a chain of Greek islands lined up along the Turkish west coast (Lesbos, Chios, Samos, and the Dodecanese islands), some of them in very close proximity to the mainland. Their existence blocks Turkey from extending any of its zones of influence beyond a few nautical miles off its coastline. As the breadth of maritime and aerial zones of influence, such as the territorial waters and national airspace, are measured from the nearest territory of the state in question, including its islands, any possible extension of such zones would necessarily benefit Greece much more than Turkey proportionally.\nAccording to a popular perception of these issues in the two countries, Turkey is concerned that Greece might be trying to extend its zones of influence to such a degree that it would turn the Aegean effectively into a \"Greek lake\". Conversely, Greece is concerned that Turkey might try to \"occupy half of the Aegean\", i.e. establish Turkish zones of influence towards the middle of the Aegean, beyond the chain of outlying Greek islands, turning these into a kind of exclave surrounded by Turkish waters, and thus cutting them off from their motherland.\n=== Territorial waters ===\nTerritorial waters give the littoral state full control over air navigation in the airspace above, and partial control over shipping, although foreign ships (both civil and military) are normally guaranteed innocent passage through them. The standard width of territorial waters that countries are customarily entitled to has steadily increased in the course of the 20th century: from initially 3 nautical miles (5.6 km) at the beginning of the century, to 6 nautical miles (11 km), and current",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 4번 문장 '터키는 그리스 섬을 기준으로 한 EEZ를 인정하지 않아…' — 양측이 6해리 영해를 주장한다는 내용이 본문에 없음",
+        "근거 없음/틀림: 7번 문장 '결국 이미아 하나가 두 차례 전쟁 위기의 불씨가 되었던…' — 이미아가 두 차례 위기의 원인이라고 과장"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "에게해 작은 암초 ‘이미아’가 1996년 양국 군함을 맞대고 대치하게 만든 이유, 궁금하지 않으신가요?",
+      "sentences": 7,
+      "ground_done": true
+    },
+    "review_needed": true
   },
   {
     "topic": "인도 승려 프레마난드 마하라지(Premanand Maharaj)의 영적 일상",
@@ -66732,7 +66791,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "승려 일상·숫자·전쟁 요소 거의 없음",
+    "curate_top": false
   },
   {
     "topic": "스페인(Habsburg Spain)의 제국, 한 왕이 두 대륙을 동시에 통치",
@@ -67171,7 +67233,10 @@
       "reason": "싱가포르의 섬 개수는 구체적인 수치와 공식 지리 자료에 기반하지만 ‘전쟁터가 아니라 리조트’ 등은 일반적 서술이라 약간 감점.",
       "avg": 6.7,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "섬 수는 구체적·하지만 갈등·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "남중국해 해상 무역 규모",
@@ -67644,7 +67709,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "한국 술 문화·전쟁·벌칙 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "노바스코샤가 한때 두 나라까지 포함한 광대한 영토",
@@ -67671,7 +67739,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "광대한 영토·과거·숫자 있으나 구체성 낮음",
+    "curate_top": false
   },
   {
     "topic": "샤를 드골, 3주간 32,000km 라틴아메리카 순방",
@@ -67731,26 +67802,23 @@
     },
     "curate_score": 7,
     "curate_why": "면적·인구 대비",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "South Papua, officially the South Papua Province (Indonesian: Provinsi Papua Selatan), is an Indonesian province located in the southern portion of Papua, following the borders of the Papuan customary region of Anim Ha. Formally established on 25 July 2022 and including the four most southern regencies that were previously part of the province of Papua and before 11 December 2002 had been a single larger Merauke Regency, it covers a land area of 117,849.16 km2, about the same area as Pennsylvania or Kirov Oblast (or 90% of that of England). This area had a population of 513,617 at the 2020 Census, while the official estimate as at mid 2025 was 549,650 (285,040 males and 264,610 females), making it the least populous province in Indonesia.\nIt shares land borders with the separate nation of Papua New Guinea to the east, as well as the Indonesian provinces of Highland Papua and Central Papua to the north and northwest, respectively. South Papua also faces the Arafura Sea in the west and south, which is a maritime border with Australia. Merauke is the economic centre of South Papua, while its administrative centre is the town of Salor located in Kurik District of Merauke Regency, around 60 km northwest of Merauke town.\nSouth Papua's landscape predominantly consists of lowland areas characterized by extensive swamps and massive rivers such as the Digul and Maro. Indigenous ethnic groups inhabit this region, such as the Asmat, Marind, Muyu, and Korowai. They rely on sago and fish as staple dietary sources. Certain tribes like the Asmat were recognized for their wood carving and boating culture. There is also a massive amount of migrants such as Javanese people because of the transmigration program sponsored by the government to convert vast amounts of swamps into rice paddies and increase this region's population. South Papua is also home to the renowned Wasur National Park, an expansive wetland area with rich biodiversity including the agile wallaby, mound-building termites or musamus, and the bird of paradise.\n== History ==\nThe wetland region of South Papua, before the arrival of Europeans, was home to several indigenous tribes. These tribes included the Asmat, Marind and Wambon, who still maintain their ancestral traditions in the area. The Marind tribe, also known as the Malind, lived in groups along the rivers in the Merauke region, and their way of life centered around hunting, gathering, and farming. However, the Marind tribe was also notorious for their practice of headhunting. They would travel in boats along the rivers and coasts to distant settlements, where they would behead the inhabitants. The heads of their victims would then be taken back to their villages to be preserved and celebrated.\nIn the 19th century, European powers began to colonize the island of New Guinea. The island was divided along a straight line, with the western portion falling under the jurisdiction of the Dutch New Guinea region and the eastern portion becoming British New Guinea. Marind people often crossed the border to engage in headhunting activities. In 1902, the Dutch established a military base at the eastern tip of South Papua, near the Maro River, to strengthen the border and eliminate this tradition. This base was named Merauke, after its location. The Dutch also established a Catholic mission in Merauke to spread their religion and to further discourage the practice of headhunting. During the Dutch colonial period, the Javanese people were brought to Merauke to cultivate rice fields. This influx of laborers further contributed to the growth of the town and the development of the surrounding region. Eventually, it became the capital of Afdeeling Zuid Nieuw Guinea or the South New Guinea Province.\nIn addition to the Maro River, the Dutch also ",
     "hook_check": {
-      "ok": false,
-      "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 2번 문장 '이렇게 넓은 땅에 사람 수가 적어 인구 밀도는 세계 최…' — 세계 최저 밀도는 본문에 없음"
-      ],
+      "ok": true,
+      "issues": [],
       "advice": [
-        "궁금증 전환 0번 (알찬 소재라면 새 궁금증을 더 열 수 있음)",
         "중반 전환·재훅 문장 없음"
       ],
       "rounds": 2,
-      "first": "펜실베니아와 비슷한 117,849 km² 규모의 남파푸아 주, 인구는 2020년 513,617명에 불과합니다.",
-      "sentences": 8
+      "first": "펜실베니아와 비슷한 117,849 km² 땅에 인구가 겨우 513,617명 — 인구 밀도는 세계 최저 수준에 가깝습니다.",
+      "sentences": 7,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "펜실베니아와 비슷한 117,849 km² 규모의 남파푸아 주, 인구는 2020년 513,617명에 불과합니다. 이렇게 넓은 땅에 사람 수가 적어 인구 밀도는 세계 최저 수준에 근접하죠. 주의 동쪽은 파푸아 뉴기니와, 서쪽·남쪽은 아라푸라 해를 사이에 두고 호주와 맞닿아 있습니다. 행정 중심은 살로, 경제 중심은 메라우케에 자리 잡고 있어, 두 도시는 약 60 km 정도 떨어져 있습니다. 지역은 저지대 습지와 디굴·마로 강 등 거대한 강망으로 이루어져, 와수르 국립공원 같은 원시 습지가 잘 보존됩니다. 현지 원주민은 아스맛·마린드·무유·코로와이 등으로, 사고와 어류를 주식으로 살아갑니다. 최근 정부는 자와인 이주민을 유치해 논을 개간하려 했지만, 여전히 넓은 습지와 강이 주를 지배하고 있습니다. 결국 남파푸아는 “광활한 대지에 발자국이 거의 남지 않은” 드문 풍경을 간직한 지역이라고 할 수 있습니다.",
+    "narration": "펜실베니아와 비슷한 117,849 km² 땅에 인구가 겨우 513,617명 — 인구 밀도는 세계 최저 수준에 가깝습니다. 남파푸아 주는 2022년 7월 25일에 공식 설립됐으며, 동쪽은 파푸아 뉴기니와 국경을 맞대고 서·남쪽은 아라푸라 해를 사이에 두고 호주와 인접합니다. 행정 중심은 살로, 경제 중심은 메라우케이며 두 도시는 약 60 km 간격에 자리합니다. 주 전체는 저지대 습지와 디굴·마로 강 등 거대한 강망으로 이루어져, 와수르 국립공원 같은 원시 습지가 잘 보존돼 있습니다. 현지 원주민은 아스맛·마린드·무유·코로와이 등이며, 이들은 사고와 어류를 주식으로 살아갑니다. 최근 정부는 자와인 이주민을 유치해 논을 개간하려 했지만, 광활한 습지와 강이 여전히 주를 지배하고 있어 인구 증가가 쉽지 않습니다. 이렇게 넓은 땅에 발자국이 거의 남지 않은 남파푸아는 “광활한 대지에 사람 손이 거의 닿지 않은” 독특한 풍경을 유지하고 있습니다.",
     "title_line1": "남파푸아 면적은 펜실",
     "title_line2": "인구는 겨우 50만",
     "highlights": [
@@ -67839,7 +67907,8 @@
     },
     "curate_score": 5,
     "curate_why": "피자 소비량",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "마다가스카르(Madagascar) 메리나(Merina) 사람들의 새해 축제 ‘판드로아나(Fandroana)’",
@@ -67929,7 +67998,7 @@
     },
     "curate_score": 8,
     "curate_why": "무역 규모·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "hashtags": [
       "남중국해",
       "무역규모",
@@ -68092,7 +68161,8 @@
     },
     "curate_score": 4,
     "curate_why": "규칙·시각성 낮음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "페루의 미지급 농지 채권",
@@ -68120,7 +68190,8 @@
     },
     "curate_score": 5,
     "curate_why": "채권·금액",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -68424,7 +68495,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "평평·건조·숫자·전쟁·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "영국은 단일 문서가 없는 ‘비코딩된 헌법’ 체제",
@@ -68791,7 +68865,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 6,
+    "curate_why": "대륙 횡단 제국·숫자·역사·규모 강조",
+    "curate_top": false
   },
   {
     "topic": "쿠르드인들의 새해 불축제 뉴로즈",
@@ -68848,7 +68925,10 @@
       "flags": [
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "전통 의식·숫자·전쟁·벌칙 약함",
+    "curate_top": false
   },
   {
     "topic": "아르메니아 문자로 쓰인 오스만 터키어",
@@ -68875,7 +68955,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "특이 문자·역사·숫자·긴장감 약함",
+    "curate_top": false
   },
   {
     "topic": "필리핀 전역에 확대된 샤리아(Shari'ah) 법원",
@@ -68904,7 +68987,8 @@
     "curate_score": 5,
     "curate_why": "샤리아 법원·숫자",
     "prev_status": "verified",
-    "redo_ts": 1795259578.1888223
+    "redo_ts": 1795259578.1888223,
+    "curate_top": false
   },
   {
     "topic": "622년 메디나에서 시작된 초기 이슬람 정복",
@@ -68931,7 +69015,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 7,
+    "curate_why": "한 달 정복·숫자·전쟁·극적 전개",
+    "curate_top": true
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -69492,7 +69579,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "식사 용어·전쟁·벌칙 요소 거의 없음",
+    "curate_top": false
   },
   {
     "topic": "법률에서 ‘유사 사건’으로 판결을 구하는 방법",
@@ -69519,7 +69609,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "법률 트릭·숫자·전쟁·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "스페인 제국 붕괴와 페루의 독립 전쟁",
@@ -69549,7 +69642,8 @@
     },
     "curate_score": 4,
     "curate_why": "역사·일반적",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "시암인의 앙코르 몰락",
@@ -69576,7 +69670,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 7,
+    "curate_why": "",
+    "curate_top": false
   },
   {
     "topic": "플럼 푸딩의 이름 속 진실",
@@ -69606,7 +69703,8 @@
     },
     "curate_score": 3,
     "curate_why": "음식·관심 낮음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "메대가 산악 지형을 이용해 신아시리아를 무너뜨린 비결",
@@ -69633,7 +69731,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 6,
+    "curate_why": "산악 전술·숫자·전쟁·전략적 흥미",
+    "curate_top": false
   },
   {
     "topic": "루마니아 형법, 446조가 한 번에 개정된 순간",
@@ -69661,7 +69762,8 @@
     },
     "curate_score": 5,
     "curate_why": "법조항·숫자",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "스웨덴(Sweden) 북극 지방의 겨울 동지",
@@ -69688,7 +69790,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "겨울 현상·숫자·전쟁·벌칙 없음",
+    "curate_top": false
   },
   {
     "topic": "마사추세트어(Massachusett) 부활 프로젝트",
@@ -69718,7 +69823,8 @@
     },
     "curate_score": 3,
     "curate_why": "언어·관심 적음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "윤석열 대통령의 자기 쿠데타 선언",
@@ -69745,7 +69851,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 9,
+    "curate_why": "쿠데타 선언·시각·군법·극적 충격",
+    "curate_top": true
   },
   {
     "topic": "드라구트, 해적이자 지방 총독",
@@ -70014,7 +70123,10 @@
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "식문화·숫자·전쟁·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "스페인(Spain) 영적 수련, 길을 걷는 순례자",
@@ -70041,7 +70153,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "수련·숫자·전쟁·벌칙 거의 없음",
+    "curate_top": false
   },
   {
     "topic": "벨기에(Belgium), 독일(Germany)의 통과 요구를 거절한 순간",
@@ -70066,7 +70181,10 @@
       "reason": "벨기에 거부 사건은 실제지만 날짜와 세부 내용이 잘못돼 신뢰도 낮음",
       "avg": 4.0,
       "flags": []
-    }
+    },
+    "curate_score": 8,
+    "curate_why": "전쟁 직전 거부·연도·숫자·긴장감",
+    "curate_top": true
   },
   {
     "topic": "에스토니아 반란군이 폴란드‑스웨덴 전쟁에 끼친 역할",
@@ -70093,7 +70211,10 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 7,
+    "curate_why": "반란군·전쟁·연도·전략적 역할",
+    "curate_top": false
   },
   {
     "topic": "고대 이집트 신앙, 파라오와 1,500신",
@@ -70118,7 +70239,10 @@
       "reason": "고대 이집트 신들의 수와 파라오 역할은 일반적으로 알려진 사실이지만 전 세계적 내용이라 독특성은 낮음",
       "avg": 4.7,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "신앙·숫자·전쟁·벌칙 요소 약함",
+    "curate_top": false
   },
   {
     "topic": "우마 이븐 알카타브의 대규모 정복",
@@ -70350,7 +70474,25 @@
       "flags": [
         "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
       ]
-    }
+    },
+    "curate_score": 6,
+    "curate_why": "대규모 정복·숫자·전쟁·압도적",
+    "curate_top": false,
+    "source_text": "Umar ibn al-Khattāb was the second Rashidun caliph during 634–644. His caliphate is notable for its vast conquests. Aided by brilliant field commanders, his reign saw incorporation of present-day Iraq, Iran, Azerbaijan, Armenia, Georgia, Syria, Jordan, Palestine, Lebanon, Egypt, and parts of Afghanistan, Turkmenistan and south-western Pakistan into the Caliphate. During his reign, the Byzantines lost more than three-fourths of their territory and the Sassanid Empire almost all of its territories.\nHistorians estimate that more than 4,050 cities were conquered during the reign of Umar ibn al-Khattāb.\n== Conquest of the Levant and Upper Iraq (634–638) ==\nMuslim forces invaded the neighboring Eastern Roman Empire in 634 soon after the Conquest of Iraq in 633 during the reign of Caliph Abu Bakr.\nDamascus fell in September 634 and Emesa in March 635. In the year 635, Emperor Heraclius allied with Sassanid Persian Emperor Yazdegerd III on the latter's request to crush the Muslim power. A plan was agreed to launch a massive counterattack against Muslims in Iraq and Syria simultaneously to force them to retreat to Arabia where they could be dealt with later, either through invasion or economic blockade.\nThe Rashidun caliphate dealt the Byzantines crushing defeats at the battles of Ajnadayn and Fahl. These significantly reduced the capacity of Byzantine army to operate in southern Syria and, according to historian Ross Burns, the massive losses from these battles practically wiped out the \"southern Damascus shield\", the Imperial forces which protected southern Syria.\nCaliph Umar ibn Al-Khattāb successfully confronted the alliance by putting pressure on the Byzantines, while engaging Yazdegerd III in negotiations. This rendered the alliance weak and a would-be decisive plan was aborted. The Byzantine forces were decisively defeated in Battle of Yarmouk in August 636, while in the Iraqi theater the Persian army was defeated in the Battle of Qadisiyyah three months later in November 636.\n=== Defense of Emesa and Conquest of Upper Mesopotamia ===\nAfter the defeat in the Battle of Yarmouk, Heraclius mounted a counterattack operation in Syria. Heraclius sought help from the Christian Arab tribes of al-Jazira, which came mostly from two cities along the Euphrates river, Circesium and Hīt. The tribes mustered a large army and marched against Emesa where Abu Ubaydah had set up his military headquarters. As the Christian Arabs contingents besieged Emesa, Khalid appealed to Abu Ubaydah to be allowed to lead a sally outside the wall. However, Abu Ubaidah decided it would be better should to wait for reinforcements The sieges of Circessium and Hit by troops under Iyadh occurred simultaneously as the siege of Emesa. At first the Muslims faced difficulty at Hit as the defenders dug a moat around the city, but eventually the Muslim army was able to penetrate it. Meanwhile, Circesium was captured from the Byzantines without resistance by a Muslim army commanded by Habib. Though many Muslim sources state this occurred in 637, Maximillan Streck stated it is more likely to have happened in 640. As response to the siege of Emesa, Iyad was tasked by caliph Umar through his superior, Abu Ubaydah, to invade Al-Jazira.\nWhen Abu Ubayda died in 639, Caliph Umar appointed Iyad in his place as the ʿamal (governor) of Hims, Qinnasrin (Chalcis) and al-Jazira with instructions to conquer the latter territory from its Byzantine commanders because they had refused to pay the tributes promised to the Muslims in 638. By the time Iyad was given his assignment, all of Syria had been conquered by the Muslims, leaving the Byzantine garrisons in al-Jazira isolated from the empire. In August 639, Iyad led a 5,000-strong army toward Raqqa (Kallinikos) in al-Jazira and raided the cit",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 1번 문장 '한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까…' — ‘한 번에’ 정복은 본문에 없음"
+      ],
+      "advice": [],
+      "rounds": 2,
+      "first": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요?",
+      "sentences": 9,
+      "ground_done": true
+    },
+    "review_needed": true
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -70591,7 +70733,10 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0602_싱가포르_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "curate_score": 6,
+    "curate_why": "구체적 숫자·터널, 전쟁 배경 있지만 장면 애매",
+    "curate_top": false
   },
   {
     "country": "한국",
@@ -70885,7 +71030,10 @@
       "reason": "한국 민방위 지침 기반이라 구체적 아이템은 있지만 출처가 명시되지 않아 신뢰도 낮음",
       "avg": 4.7,
       "flags": []
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "생존배낭 아이템은 일반적, 충격 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -71412,18 +71560,18 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 1번 문장 '30분 안에 사망할 수 있는 복어, 안전하게 즐기려면 …' — 본문에 30분 사망 시간 언급 없음"
+        "근거 없음/틀림: 1번 문장 '30분 안에 호흡 마비로 사망할 수 있는 복어, 왜 셰…' — 30분 사망 위험은 본문에 없음"
       ],
       "advice": [
         "중반 전환·재훅 문장 없음"
       ],
       "rounds": 2,
-      "first": "30분 안에 사망할 수 있는 복어, 안전하게 즐기려면 최소 3년 훈련을 마친 셰프가 필요합니다.",
-      "sentences": 7
+      "first": "30분 안에 호흡 마비로 사망할 수 있는 복어, 왜 셰프는 최소 3년 훈련을 받아야 할까요?",
+      "sentences": 7,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "30분 안에 사망할 수 있는 복어, 안전하게 즐기려면 최소 3년 훈련을 마친 셰프가 필요합니다. 복어는 간·알·눈·피부에 테트로도톡신을 다량 함유하고 있어, 소량 섭취만으로도 호흡 마비와 사망을 초래합니다. 이 독은 나트륨 채널을 차단해 근육을 마비시키며, 현재 알려진 해독제는 없습니다. 일본과 한국에서는 법으로 3년 이상 정밀 교육을 이수한 셰프만이 복어를 조리하도록 규정하고 있습니다. 교육 과정에서는 독이 가장 농축된 간과 알, 눈, 피부를 철저히 제거하고, 안전한 부위만을 손질하는 기술을 습득합니다. 따라서 인증받은 셰프가 만든 복어 요리는 독이 거의 없지만, 훈련이 부족한 사람이 직접 손질하면 치명적인 위험에 노출됩니다. 결국 복어를 안전하게 맛보려면 ‘3년 훈련을 마친 셰프’라는 보증이 가장 확실한 방어책이라는 사실, 기억해 두세요.",
+    "narration": "30분 안에 호흡 마비로 사망할 수 있는 복어, 왜 셰프는 최소 3년 훈련을 받아야 할까요? 복어의 간·알·눈·피부에는 테트로도톡신이 농축돼 있어, 아주 적은 양이라도 나트륨 채널을 차단해 근육을 마비시킵니다. 이 독은 현재 해독제가 없으며, 치료는 호흡과 순환을 인공적으로 유지하는 것뿐입니다. 일본과 한국에서는 법으로 3년 이상의 정밀 교육을 마친 셰프만 복어를 조리하도록 규정하고 있습니다. 교육 과정에서는 가장 독성이 강한 간·알·눈·피부를 완전히 제거하고, 안전한 부위만을 손질하는 기술을 습득합니다. 따라서 인증받은 셰프가 만든 복어 요리는 독 위험이 현저히 낮아지지만, 훈련이 부족한 사람이 직접 손질하면 즉시 치명적 상황이 발생할 수 있습니다. 결국 복어를 안전하게 즐기려면, 법이 요구하는 ‘3년 이상 훈련된 셰프’라는 보증이 가장 확실한 방어책이라는 사실을 기억하면 됩니다.",
     "title_line1": "복어 3년 훈련 필요",
     "title_line2": "30분 안에 사망 위험!",
     "highlights": [
@@ -71526,7 +71674,8 @@
       ],
       "rounds": 2,
       "first": "1822년 브라질이 독립을 선언하고 국제적으로 인정받았음에도, 1825년까지 포르투갈 왕 조앙 6세는 명목상 브라질 황제와 포르투갈 왕이라는 두 칭호를 동시에 유지했습니다.",
-      "sentences": 6
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
     "narration": "1822년 브라질이 독립을 선언하고 국제적으로 인정받았음에도, 1825년까지 포르투갈 왕 조앙 6세는 명목상 브라질 황제와 포르투갈 왕이라는 두 칭호를 동시에 유지했습니다. 그는 1816년부터 연합왕국을 통치했으며, 1826년 사망할 때까지 ‘관용왕(o Clemente)’이라는 별명으로 불렸습니다. 실제로도 왕실 의전에서 관용을 강조하는 모습을 보였다고 전해지지만, 그의 통치는 전쟁과 반란으로 뒤덮인 불안정한 시기였습니다. 나폴레옹 군대의 침공을 피해 브라질로 피난했다가, 아들 페드로가 독립을 선언하고, 또 다른 아들 미겔이 반란을 일으키는 등 왕권은 계속 위협받았습니다. 결국 조앙 6세는 브라질 황제라는 명칭을 사망 전까지 유지했지만, 실제 통치권은 상실된 채였던 것입니다. 이처럼 독립된 나라에도 명목상의 왕이 남아 있었던 역사는, 당시 유럽 왕권의 복잡성을 여실히 보여줍니다.",
@@ -71627,7 +71776,8 @@
     },
     "curate_score": 5,
     "curate_why": "불교·인간주의 추상적, 구체적 숫자·시각 미흡",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "크로아티아 해군, 아드리아해 방어",
@@ -71653,7 +71803,10 @@
       "reason": "크로아티아 해군이 아드리아해를 방어했다는 주장은 오스트리아‑헝가리 시기의 군사 조직에 국한돼 있어 지역적 특성이 있지만, 해군 전력·전투 사례가 구체적으로 제시되지 않아 낮은 점수.",
       "avg": 4.7,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "해군 방어는 평범, 구체적 숫자·대비 없어",
+    "curate_top": false
   },
   {
     "topic": "산 호세 광산 붕괴와 69일 뒤 구조",
@@ -71682,7 +71835,7 @@
     },
     "curate_score": 9,
     "curate_why": "69일·33명·소리 등 구체적 수치·극적 상황",
-    "curate_top": true,
+    "curate_top": false,
     "redo_ts": 1794991799.5615478,
     "need": "curiosity",
     "emotion": "empathy",
@@ -71908,7 +72061,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "키스 인사, 문화·관습이라 갈등·전쟁 부재",
+    "curate_top": false
   },
   {
     "topic": "1184년 시작된 크리스마스 통나무 전통",
@@ -71939,7 +72095,8 @@
     },
     "curate_score": 4,
     "curate_why": "전통·통나무 추상, 숫자·충격 요소 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "법인 주소가 사업 생존에 필수인 이유",
@@ -71970,7 +72127,8 @@
     },
     "curate_score": 5,
     "curate_why": "법인 주소·사업 생존, 구체적 숫자·시각 약함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "빅 브라더(Big Brother) 2025 시즌, 거의 가구 없는 집",
@@ -71999,7 +72157,8 @@
     },
     "curate_score": 5,
     "curate_why": "가구 없는 집·신기하지만 숫자·긴장감 낮음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "미셸 드 세르토(Michel de Certeau)의 일상 철학",
@@ -72027,7 +72186,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "철학 서적, 전쟁·경제·벌칙 요소 없음",
+    "curate_top": false
   },
   {
     "topic": "북극점은 어느 나라에도 속하지 않는다",
@@ -72112,7 +72274,10 @@
         }
       ],
       "none": false
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "북극 무관세, 금전·법적 자극 있지만 구체성 부족",
+    "curate_top": false
   },
   {
     "topic": "헝가리 이름 짓기 제한법",
@@ -72260,7 +72425,10 @@
       "reason": "말레이시아 왕 선출 방식은 특수하지만, 근거 문서가 없어 사실 확인이 어려워 신뢰도가 낮음.",
       "avg": 5.3,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "왕 비밀투표, 정치적이지만 충격·숫자 약함",
+    "curate_top": false
   },
   {
     "country": "일본",
@@ -72286,7 +72454,10 @@
       "reason": "사무라이 식탁 매너는 문화적 흥미가 있지만, 구체적 근거가 없고 현대 적용 여부가 애매함.",
       "avg": 3.7,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "사무라이 매너, 문화 소개에 불과",
+    "curate_top": false
   },
   {
     "topic": "그리스 전통 디저트 재료",
@@ -72315,7 +72486,8 @@
     },
     "curate_score": 3,
     "curate_why": "디저트 재료 일반적, 금기·전쟁 요소 없음",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "쉥겐 지역의 무검문소 국경",
@@ -72344,7 +72516,10 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "검문소 없는 국경, 금지·법적 흥미 있으나 구체적 숫자 부족",
+    "curate_top": false
   },
   {
     "topic": "아일랜드의 양당제(Two-party system) 구조",
@@ -72372,7 +72547,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "양당제 구조, 갈등·전쟁 요소 거의 없음",
+    "curate_top": false
   },
   {
     "topic": "연방( federation )의 권력 분배는 헌법으로 고정",
@@ -72400,7 +72578,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "헌법 권력 고정, 정치지만 구체적 대비·숫자 부족",
+    "curate_top": false
   },
   {
     "topic": "기독교 소수 국가에서도 크리스마스 트리 설치",
@@ -72428,7 +72609,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "크리스마스 트리, 문화·종교 일반화",
+    "curate_top": false
   },
   {
     "topic": "중화인민공화국(People's Republic of China)의 영해 주장, 1949년 이전부터",
@@ -72594,7 +72778,8 @@
     },
     "curate_score": 5,
     "curate_why": "16세기 건물·복합 매장, 숫자·긴장감 약함",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
@@ -72862,7 +73047,8 @@
     },
     "curate_score": 5,
     "curate_why": "헌법 453표 통과, 숫자·흥미는 있으나 충격↓",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "캐롤라이나식 홉핀 존, 베이컨 기름에 밥을 투명해질 때까지 끓인다",
@@ -72890,7 +73076,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "베이컨에 밥 투명, 요리 실험이라 전쟁·금전 요소 없음",
+    "curate_top": false
   },
   {
     "topic": "보르네오 섬을 가로지르는 1,881km 국경선",
@@ -73152,7 +73341,10 @@
       "reason": "스리랑카와 인도 사이 해상 영유권 갈등은 실제 사례가 거의 없으며, 발췌문에 구체적 시기·사건이 없어 구체성·지원성이 낮다.",
       "avg": 2.3,
       "flags": []
-    }
+    },
+    "curate_score": 7,
+    "curate_why": "인도·스리랑카 영토 분쟁, 구체적 땅·대비",
+    "curate_top": false
   },
   {
     "topic": "우즈베키스탄(Uzbekistan)의 히잡 착용 규정",
@@ -73180,7 +73372,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "히잡 규정, 법적이지만 충격·숫자 부족",
+    "curate_top": false
   },
   {
     "topic": "언어마다 ‘너’와 ‘당신’ 구분 존재",
@@ -73209,7 +73404,10 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "언어 ‘너·당신’, 문화 차이만",
+    "curate_top": false
   },
   {
     "topic": "한스 섬(Hans Ø)에서 양국 깃발 격돌",
@@ -73468,7 +73666,10 @@
       "ok": false,
       "issues": [
         "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 5번 문장 '그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 …' — 본문에 현지에 일본식 표지판·깃발 존재 언급 없음"
+        "근거 없음/틀림: 1번 문장 '1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬…' — 일본이 행정권을 행사한다는 근거 없음",
+        "근거 없음/틀림: 2번 문장 '이 섬들은 홋카이도와 캄차카 반도 사이, 오호츠크해와 …' — 일본이 실제 관리한다는 과장",
+        "근거 없음/틀림: 5번 문장 '그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 …' — 현장에 두 깃발이 있다는 근거 없음",
+        "근거 없음/틀림: 6번 문장 '즉, 동일한 섬 위에 두 개의 주권이 겹쳐 있는 상황이…' — 두 주권이 겹친다는 주장 근거 부족"
       ],
       "advice": [
         "첫 문장이 김",
@@ -73476,7 +73677,8 @@
       ],
       "rounds": 2,
       "first": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다.",
-      "sentences": 6
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
     "narration": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다. 이 섬들은 홋카이도와 캄차카 반도 사이, 오호츠크해와 태평양을 가르는 전략적 요충지이며, 러시아는 사할린 지방의 남부 쿠릴 구역으로, 일본은 홋카이도 네무로 부속 영토로 관리합니다.  \n\n전후 1951년 샌프란시스코 평화조약에서 일본은 “쿠릴 제도에 대한 모든 권리·청구를 포기”했지만, 조약 본문에 소련(현 러시아)의 주권을 명시하지 않아 해석 논란이 지속됩니다. 1956년 소련‑일본 공동 선언으로 전쟁 상태는 종식됐지만 평화조약은 체결되지 않았고, 소련은 시코탄·하보마이를 일본에 제안했으나 일본은 이투룹·쿠나시리 반환을 요구해 거부했습니다.  \n\n그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 표지판이 동시에 존재하고, 두 나라 깃발이 나란히 보이는 모습이 목격됩니다. 즉, 동일한 섬 위에 두 개의 주권이 겹쳐 있는 상황이 지속되고 있는 것입니다.",
@@ -73600,7 +73802,8 @@
     },
     "curate_score": 4,
     "curate_why": "법원 보조원 영향·구체적 사례·숫자·시각 부족",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "리투아니아·라트비아·에스토니아 3국이 함께하는 대규모 노래·춤 축제",
@@ -73629,7 +73832,8 @@
       "reason": "리투아니아 축제는 사실이지만, 에스토니아·라트비아와 동시에 열리는 사례는 제한적이며, 문서에 명확히 ‘동시 개최’라는 근거가 부족하다.",
       "avg": 5.0,
       "flags": []
-    }
+    },
+    "curate_top": false
   },
   {
     "topic": "역대 가장 빠른 미국 건조 초대형 여객선 SS United States",
@@ -73884,7 +74088,8 @@
       "reason": "세드 축제와 파라오가 꼬리를 달던 사실은 학계에서 인정된 구체적 사례이며, 고유명사와 의식 내용이 명확히 제시된다.",
       "avg": 7.3,
       "flags": []
-    }
+    },
+    "curate_top": false
   },
   {
     "topic": "틱톡(TikTok) 영상 길이 제한의 놀라운 사실",
@@ -74125,7 +74330,8 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_top": false
   },
   {
     "topic": "1618년 ‘일곱 가지 불만’이 청나라의 서막을 열다",
@@ -74245,7 +74451,8 @@
     },
     "curate_score": 5,
     "curate_why": "숲 파괴 장면 상상·숫자·환경·충격",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "캐나다 퀘벡, 이민자 선택권을 독점하다",
@@ -74274,7 +74481,8 @@
     },
     "curate_score": 4,
     "curate_why": "이민 비율 제시·정치적이지만 전쟁·군사 부재",
-    "prev_status": "verified"
+    "prev_status": "verified",
+    "curate_top": false
   },
   {
     "topic": "폴란드 요리, 고기와 버터가 폭발한다",
@@ -74300,7 +74508,10 @@
       "reason": "폴란드 요리의 고기·버터 사용은 일반적인 국가 요리 특징이라 세계적이며, 발췌문에 구체적 요리명만 있어 충격적·새로운 정보는 제한적.",
       "avg": 4.7,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "고기·버터 폭발, 과장된 음식·전쟁 요소 없음",
+    "curate_top": false
   },
   {
     "topic": "오픈소스 게임 엔진 Godot( Godot )",
@@ -74328,7 +74539,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "게임 엔진, 전쟁·경제·벌칙과 무관",
+    "curate_top": false
   },
   {
     "topic": "다이아몬드 차량 Vajrayāna( Vajrayāna )",
@@ -74344,7 +74558,7 @@
     "verify_note": "Vajrayana",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:21.946156+00:00",
-    "status": "verified",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -74356,7 +74570,11 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 1,
+    "curate_why": "다이아몬드 차량, 불교·철학이라 흥미 부족",
+    "prev_status": "verified",
+    "reject_reason": "자동 선별 1점: 다이아몬드 차량, 불교·철학이라 흥미 부족"
   },
   {
     "topic": "알래스카 국경 분쟁",
@@ -74411,7 +74629,10 @@
       "reason": "스페인과는 무관한 가이아나·베네수엘라 분쟁이라 주제와 국가가 맞지 않아 독특성 낮음, 면적·파리 중재 판정 등 구체적 수치는 있지만 근거 문서가 남미 지역이라 신뢰도 낮음",
       "avg": 3.7,
       "flags": []
-    }
+    },
+    "curate_score": 8,
+    "curate_why": "159,500km² 영토 분쟁, 구체적 면적·대립",
+    "curate_top": true
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -74440,7 +74661,10 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "바베큐 소스·오일, 음식 소개",
+    "curate_top": false
   },
   {
     "topic": "나이지리아 길거리 바베큐와 열대과일을 한 입에",
@@ -74468,7 +74692,10 @@
       "flags": [
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "바베큐·파인애플, 식품 조합",
+    "curate_top": false
   },
   {
     "country": "여행, 크루즈, 세계문화, 관광심리",
@@ -75170,7 +75397,10 @@
       "reason": "퀴노아의 영양 성분·안데스 기원·역사적 사용 등 고유명사·수치가 풍부하고 문서와 일치, 남미 특수 주제로 독특함 높음",
       "avg": 4.7,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "퀴노아 영양, 과학적이지만 전쟁·벌칙 부재",
+    "curate_top": false
   },
   {
     "topic": "파타야 수상 시장은 세계 최대 인공 수상 시장",
@@ -75199,7 +75429,8 @@
     },
     "curate_score": 4,
     "curate_why": "거대한 인공 시장·숫자·시각적이지만 군사·금지 부재",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "에티오피아와 에리트레아에서 매일 열리는 커피 의식",
@@ -75228,7 +75459,8 @@
     },
     "curate_score": 3,
     "curate_why": "커피 의식·문화·숫자·전쟁·군사 요소 부족",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "아라비아 커피는 쓴맛과 향신료가 특징인 손님 맞이 문화",
@@ -75259,7 +75491,8 @@
     },
     "curate_score": 2,
     "curate_why": "커피 문화 소개, 충격·전쟁 요소 없음",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "바틱은 왁스로 색을 막아 독특한 무늬를 만드는 전통 염색법",
@@ -75288,7 +75521,8 @@
     },
     "curate_score": 2,
     "curate_why": "전통 염색법, 전쟁·군사·금지와 무관",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "스코틀랜드 고지대에서 열리는 전통 체력 경기, 배그파이프(bagpipes)와 킬트(kilt)와 무거운 돌 던지기가 함께한다.",
@@ -75319,7 +75553,8 @@
     },
     "curate_score": 3,
     "curate_why": "전통 체력 경기, 전쟁·군사 직접 언급 없음",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "멕시코 전통 무용에 쓰이는 마스크는 식민지 시대 금지 시도에도 살아남았다.",
@@ -75350,7 +75585,8 @@
     },
     "curate_score": 5,
     "curate_why": "식민지 금지와 저항, 역사·정치·시각적 갈등",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "브루스 챗윈(Bruce Chatwin)이 1987년 쓴 『The Songlines』는 호주 원주민의 노래길을 소개한다.",
@@ -75379,7 +75615,8 @@
     },
     "curate_score": 2,
     "curate_why": "노래길 책 소개, 전쟁·금지 요소 부재",
-    "prev_status": "unverified"
+    "prev_status": "unverified",
+    "curate_top": false
   },
   {
     "topic": "미국 크리스마스 마켓, 독일어 ‘Markt’를 ‘market’으로 바꾼다",
@@ -75410,7 +75647,8 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_top": false
   },
   {
     "topic": "아프리카 직물, 다양한 제작 방식과 문화적 의미",
@@ -75442,7 +75680,8 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_top": false
   },
   {
     "country": "프랑스",
@@ -75648,7 +75887,10 @@
         }
       ],
       "none": false
-    }
+    },
+    "curate_score": 7,
+    "curate_why": "돼지 한 마리로 국제 갈등, 구체적 사건·위험",
+    "curate_top": false
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -76163,7 +76405,10 @@
       "reason": "몽골의 면적·인구밀도 등 수치는 구체적이며 문서와 일치하지만, ‘내륙 국가’라는 점은 세계적으로도 흔한 특성이라 차별성은 중간이다.",
       "avg": 7.3,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "내륙 대규모 영토, 규모는 흥미롭지만 갈등 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "사미 사람들은 전통적으로 양을 포함한 다양한 생활 방식을 유지한다",
@@ -76192,7 +76437,10 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "양이 주인공? 흥미·숫자 부족",
+    "curate_top": false
   },
   {
     "topic": "일본의 달맞이 축제 ‘츠키미’는 8월 15일과 9월 13일에 각각 열린다",
@@ -76218,7 +76466,10 @@
       "reason": "츠키미의 날짜·달력·역사적 배경은 구체적이고 문서와 일치하지만, 일본 전역에 공통된 전통이라 차별성은 다소 낮다.",
       "avg": 8.0,
       "flags": []
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "축제·날짜 일반적, 갈등 요소 없음",
+    "curate_top": false
   },
   {
     "topic": "핀란드 사우나는 온도와 습도를 실시간으로 측정한다",
@@ -76247,7 +76498,10 @@
         "근거 문서에 나라 언급 없음",
         "수치·원어 표기 같은 구체 정보 없음"
       ]
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "실시간 온도·숫자, 시각적 가능",
+    "curate_top": false
   },
   {
     "topic": "발리의 수밥(Subak) 물 관리 체계는 사원과 연계된 협동식 관개",
@@ -76273,7 +76527,10 @@
       "reason": "발리의 수밥 체계와 물 사원의 연계는 고유명사와 면적·시대 등 구체적 수치가 풍부하고, 문서와 일치해 신뢰성이 높으며 지역 한정적 특성이 강하다.",
       "avg": 8.7,
       "flags": []
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "협동식 관개·특이, 구체적 수치 부족",
+    "curate_top": false
   },
   {
     "topic": "아이마라(Aymara)는 7,250년 넘게 고산에 살아온 원주민",
@@ -76301,7 +76558,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 6,
+    "curate_why": "7,250년·역사·숫자, 상상력 유발",
+    "curate_top": false
   },
   {
     "topic": "중세 아이슬란드 신화 속 엘프는 인간에게 도움도 방해도 하는 양면 존재",
@@ -76336,20 +76596,20 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "모호한 서술 3회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
-        "근거 없음/틀림: 1번 문장 '길을 가다 엘프가 막으면 차가 멈춘다?…' — 차(자동차) 언급 없음",
-        "근거 없음/틀림: 7번 문장 '백색의 신비함을 상징한다는 의미가 담겨 있어, 그들의 …' — 투명·빛남 묘사 없음",
-        "근거 없음/틀림: 8번 문장 '이러한 믿음은 중세 독일어권 문화와 아이슬란드 전통에 …' — 믿음 범위 과도하게 제한"
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 3번 문장 '예를 들어, 여행자가 길을 잃었을 때 엘프가 길을 보여…' — 본문에 없는 구체적 전설"
       ],
       "advice": [
-        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+        "첫 문장이 김",
+        "중반 전환·재훅 문장 없음"
       ],
       "rounds": 2,
-      "first": "길을 가다 엘프가 막으면 차가 멈춘다?",
-      "sentences": 9
+      "first": "아이슬란드의 고대 서사시 《에다》에 따르면, “하얀 존재”라 불리는 엘프는 인간과 비슷하지만 마법과 아름다움을 지닌 초자연적 존재로 등장합니다.",
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "길을 가다 엘프가 막으면 차가 멈춘다? 아이슬란드에서는 진짜라고 전해집니다.  \n\n중세 아이슬란드 서사시에는 인간과 비슷하지만 초자연적인 존재, 엘프가 등장합니다. 이들은 독일계 민속에서 온 것으로, 마법과 아름다움을 지녔다고 알려졌습니다. 이야기 속에서 엘프는 길을 가로막아 여행자를 멈추게 하기도 하고, 반대로 길을 안내해 도움을 주기도 합니다.  \n\n그런데 엘프라는 이름 자체는 ‘하얀 존재’라는 뜻을 가지고 있습니다. 백색의 신비함을 상징한다는 의미가 담겨 있어, 그들의 모습이 빛나고 투명하게 묘사되곤 합니다.  \n\n이러한 믿음은 중세 독일어권 문화와 아이슬란드 전통에 한정된 것이지만, 그때 사람들은 엘프가 선과 악을 동시에 품은 양면 존재라고 받아들였습니다. 결국 길을 멈추게 하는 것도, 길을 열어 주는 것도 같은 존재, 엘프의 손길이었을지도 모릅니다.",
+    "narration": "아이슬란드의 고대 서사시 《에다》에 따르면, “하얀 존재”라 불리는 엘프는 인간과 비슷하지만 마법과 아름다움을 지닌 초자연적 존재로 등장합니다. 중세 북유럽 문화에서는 이들이 길을 안내하기도, 방해하기도 하는 양면성을 가지고 있었다고 기록됩니다. 예를 들어, 여행자가 길을 잃었을 때 엘프가 길을 보여 주었다는 이야기가 전해지지만, 동시에 눈보라를 일으켜 이동을 방해한 전승도 존재합니다. 이러한 모호한 성격은 엘프가 신들의 세계와 인간 세계 사이를 오가며, 질병을 일으키거나 매혹적인 아름다움으로 사람을 유혹하기도 했던 전통과 연결됩니다. 현대 아이슬란드에서도 엘프에 대한 믿음이 완전히 사라진 것은 아니며, 특히 외딴 지역에서는 옛 전설이 여전히 입에 오르곤 합니다. 결국, 아이슬란드에서 “엘프가 길을 막는다”는 이야기는 고대 서사와 중세 민속이 만든 복합적인 이미지에서 비롯된 것이며, 그 신비함은 오늘날까지도 여행자들의 상상력을 자극합니다.",
     "title_line1": "아이슬란드 엘프 전설",
     "title_line2": "길을 막을까, 열까?",
     "highlights": [
@@ -76388,7 +76648,10 @@
     "infographic": {
       "on": false,
       "none": true
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "엘프·전설·시각적, 구체적 숫자 없음",
+    "curate_top": false
   },
   {
     "topic": "물총·양동이 등으로 하는 물 전쟁은 더위를 식히는 놀이 문화",
@@ -76476,7 +76739,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "8개월·과정·시각적 가능",
+    "curate_top": false
   },
   {
     "topic": "마사이(Maasai) 전사의 점프 댄스 ‘아두무(Adumu)’",
@@ -76502,7 +76768,10 @@
       "reason": "마사이 아두무는 케냐·탄자니아에만 존재하는 고유 문화이며, 전사·결혼식·점프 높이 등 구체적 설명이 있지만 수치·절차는 제한적이다.",
       "avg": 7.7,
       "flags": []
-    }
+    },
+    "curate_score": 5,
+    "curate_why": "30초 점프·숫자·동작 강조",
+    "curate_top": false
   },
   {
     "topic": "포드스타카닉(podstakannik)으로 뜨거운 차를 안전하게 마시는 법",
@@ -76528,7 +76797,10 @@
       "reason": "포드스타카닉은 슬라브권 전통 아이템으로 지역적 특성이 뚜렷하고, 금속 손잡이·뜨거운 차·열차 사용 등 구체적 사용법이 제시돼 있지만, 현대 사용 현황은 다소 일반화된다.",
       "avg": 6.7,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "열차 차 안전·특이하지만 갈등 약함",
+    "curate_top": false
   },
   {
     "topic": "거리 싸움이 춤과 음악으로 변한 카포에이라",
@@ -76803,7 +77075,10 @@
       "reason": "부나드는 노르웨이만의 전통 의복이며, 18·19세기 기원·20세기 재디자인·지역별 색·무늬 등 구체적 요소가 풍부하지만 수치·절차는 제한적이다.",
       "avg": 7.3,
       "flags": []
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "패션 변천 일반적, 갈등 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "플로마리, 레스보스 남쪽 해안에 단 하나인 큰 마을",
@@ -76829,7 +77104,10 @@
       "reason": "플로마리는 레스보스 남쪽 해안에 유일한 큰 마을이라는 명확한 지리·인구·면적 수치가 제시돼 매우 구체적이며, 해당 지역에만 해당한다.",
       "avg": 8.3,
       "flags": []
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "한 마을·일반적, 충격 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "폴란드, 면적은 6위·인구는 5위인 역설적인 순위",
@@ -76855,7 +77133,10 @@
       "reason": "EU 기준 면적·인구 순위라는 구체적 수치와 비교가 명확히 제시돼 있어 영상 소재로 충분히 구체하고 검증 가능하지만, ‘역설적’이라는 표현은 다소 일반적일 수 있음.",
       "avg": 8.0,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "면적·인구 역설·숫자 있지만 무관심",
+    "curate_top": false
   },
   {
     "topic": "오프렌다, 고인을 맞이하는 집 안 제단",
@@ -76883,7 +77164,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 2,
+    "curate_why": "제단·문화 소개, 갈등·숫자 없음",
+    "curate_top": false
   },
   {
     "topic": "점 그림만이 전부가 아니라 다양한 매체와 부족 고유의 시각 기호를 사용한다",
@@ -76911,7 +77195,10 @@
       "flags": [
         "근거 문서에 나라 언급 없음"
       ]
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "예술·시각 기호·특이하지만 숫자·갈등 부재",
+    "curate_top": false
   },
   {
     "topic": "Samburu는 자신들을 ‘땅의 주인’이라고 부른다",
@@ -76937,7 +77224,10 @@
       "reason": "Samburu가 스스로를 ‘땅의 주인’이라 부른다는 해석은 독특하고 구체적인 용어(Lokop/Loikop)를 제공하지만, 의미 해석이 내부에서 논란이 있어 완전한 지원은 다소 약함.",
       "avg": 7.3,
       "flags": []
-    }
+    },
+    "curate_score": 3,
+    "curate_why": "‘땅의 주인’·명칭·흥미지만 구체적 수치 부족",
+    "curate_top": false
   },
   {
     "topic": "프랑크푸르트 크리스마스 마켓은 1393년부터 이어진 연례 야외 시장이다",
@@ -76963,7 +77253,10 @@
       "reason": "프랑크푸르트 크리스마스 마켓의 설립 연도·방문객 수 등 구체적 수치가 풍부하고 문서와 일치하지만, 독일 전역에 퍼진 크리스마스 마켓과 겹치는 일반적 요소가 있어 독특성 점수가 낮음.",
       "avg": 8.0,
       "flags": []
-    }
+    },
+    "curate_score": 4,
+    "curate_why": "1393년·역사·인파·시각적 가능",
+    "curate_top": false
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
