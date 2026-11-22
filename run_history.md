@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-22 21:32:20 (KST) · 기록 2105건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-22 21:35:11 (KST) · 기록 2109건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,7 +10,7 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 7 | 5 | 2분 49초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 203 | 0 | 53초 |
+| apply_review | 204 | 0 | 53초 |
 | approve | 64 | 0 | 15초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 93 | 0 | 15시간 43분 |
@@ -25,13 +25,13 @@
 | fetch_images | 220 | 9 | 2시간 32분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 255 | 0 | 1시간 40분 |
-| generate_tts | 110 | 0 | 36분 39초 |
+| generate_tts | 111 | 0 | 36분 44초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 1 | 0 | 3초 |
 | make_thumbnail | 83 | 0 | 2분 12초 |
-| promote_ready | 203 | 0 | 46초 |
-| redo_videos | 35 | 0 | 11초 |
+| promote_ready | 204 | 0 | 46초 |
+| redo_videos | 36 | 0 | 12초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
@@ -47,6 +47,10 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:34 | PC | generate_tts | generate_tts.py --index 565 | ✅ | 5초 |  |
+| 21:34 | PC | redo_videos | redo_videos.py --indexes 565 | ✅ | 0초 |  |
+| 21:34 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 21:34 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 21:31 | PC | redo_videos | redo_videos.py --indexes 565 | ✅ | 0초 |  |
 | 21:31 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
 | 21:31 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
