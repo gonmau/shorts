@@ -65465,7 +65465,9 @@
         "2": "#e8fa1a"
       },
       "sizes2": {}
-    }
+    },
+    "youtube_id": "QodLgTRDHM4",
+    "uploaded_at": "2026-11-22T22:11:47.657366+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -70505,7 +70507,7 @@
     "verify_note": "German invasion of Belgium (1914)",
     "confidence": "source",
     "created_at": "2026-11-09T08:05:42.720777+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70518,7 +70520,88 @@
     },
     "curate_score": 8,
     "curate_why": "전쟁 직전 거부·연도·숫자·긴장감",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The German invasion of Belgium began on 4 August 1914 during the first World War. On 24 July, the Belgian government had announced that if war came it would uphold its neutrality. The Belgian government mobilised its armed forces on 31 July and a state of heightened alert (Kriegsgefahr) was proclaimed in Germany. On 2 August, the German government sent an ultimatum to Belgium, demanding passage through the country and German forces invaded Luxembourg. Two days later, the Belgian government refused the German demands and the British government guaranteed military support to Belgium. The German government declared war on Belgium on 4 August; German troops crossed the border and began the Battle of Liège.\nGerman military operations in Belgium were intended to bring the 1st, 2nd and 3rd Armies into positions in Belgium from which they could invade France, which, after the fall of Liège on 7 August, led to sieges of Belgian fortresses along the river Meuse at Namur and the surrender of the last forts (16–17 August). The government abandoned the capital, Brussels, on 17 August and after fighting on the Gete river, the Belgian field army withdrew westwards to the National Redoubt at Antwerp on 19 August. Brussels was occupied the following day and the siege of Namur began on 21 August.\nAfter the Battle of Mons and the Battle of Charleroi, the bulk of the German armies in Belgium marched south into France, leaving small forces to garrison Brussels and the Belgian railways. The III Reserve Corps advanced to the fortified zone around Antwerp and a division of the IV Reserve Corps took over in Brussels. The Belgian field army made several sorties from Antwerp in late August and September to harass German communications and to assist the French and the British Expeditionary Force (BEF) by keeping German troops in Belgium. German troop withdrawals to reinforce the main armies in France were postponed to repulse a Belgian sortie from 9 to 13 September and a German corps in transit was retained in Belgium for several days. Belgian resistance and German fear of francs-tireurs led the Germans to implement a policy of terror (schrecklichkeit) against Belgian civilians soon after the invasion, in which massacres, executions, hostage-taking and the burning of towns and villages took place and became known as the Rape of Belgium.\nAfter the Battle of the Frontiers ended, the French armies in the north and the BEF began the Great Retreat into France (24 August – 28 September), the Belgian army and small detachments of French and British troops fought in Belgium against German cavalry and Jäger (light infantry). On 27 August, a squadron of the Royal Naval Air Service (RNAS) flew to Ostend, to conduct air reconnaissance between Bruges, Ghent and Ypres. Royal Marines landed in France on 19 to 20 September and began scouting unoccupied Belgium in motor cars; an RNAS Armoured Car Section was created by fitting vehicles with bulletproof steel. On 2 October, the Marine Brigade of the Royal Naval Division was moved to Antwerp, followed by the rest of the division on 6 October. From 6 to 7 October, the 7th Division and the 3rd Cavalry Division landed at Zeebrugge and naval forces collected at Dover were formed into the Dover Patrol, to operate in the Channel and off the French–Belgian coast. Despite minor British reinforcement, the siege of Antwerp ended when its defensive ring of forts was destroyed by German super-heavy artillery. The city was abandoned on 9 October and Allied forces withdrew to West Flanders.\nAt the end of the Great Retreat, the Race to the Sea (17 September – 19 October) began, a period of reciprocal attempts by German and Franco-British forces to outflank each other, extending the front line northwards from the Aisne, into Picardy, Artois, ",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 1번 문장 '1914년 2월 2일, 독일이 “벨기에를 통과하라”는 …' — 날짜가 2월이 아니라 8월",
+        "근거 없음/틀림: 4번 문장 '독일군은 빠르게 루벤을 점령하고, 프랑스로 진격하려는 …' — 루벤이 아니라 룩셈부르크"
+      ],
+      "advice": [
+        "첫 문장이 김"
+      ],
+      "rounds": 2,
+      "first": "1914년 2월 2일, 독일이 “벨기에를 통과하라”는 최후통첩을 보냈을 때, 벨기에 정부는 단호히 “거절합니다”라고 답했습니다.",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "1914년 2월 2일, 독일이 “벨기에를 통과하라”는 최후통첩을 보냈을 때, 벨기에 정부는 단호히 “거절합니다”라고 답했습니다. 독일은 이 거부를 전쟁의 구실로 삼아 영국에게 군사 지원을 요구했으며, 영국은 즉시 벨기에를 돕겠다고 약속했습니다.  \n\n그런데 4일 뒤, 독일은 전쟁을 선포하고 실제로 벨기에 국경을 넘었습니다. 독일군은 빠르게 루벤을 점령하고, 프랑스로 진격하려는 목표를 실행에 옮겼습니다.  \n\n이 일은 제1차 세계대전 초기에 일어난 사건으로, 독일의 침공이 국제적인 연합을 촉발시키는 계기가 되었습니다. 벨기에의 거절이 없었다면, 전쟁의 전개는 어떻게 달라졌을까요?",
+    "title_line1": "벨기에 거절",
+    "title_line2": "전쟁은 달라졌을까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*거절*로 전쟁의 씨앗 뿌리다"
+      },
+      {
+        "s": 2,
+        "text": "영국이 *도움*을 서약"
+      },
+      {
+        "s": 3,
+        "text": "독일, 4일만에 전쟁 선포"
+      },
+      {
+        "s": 5,
+        "text": "*침공*이 연합을 촉발"
+      }
+    ],
+    "image_queries": [
+      "Belgian government building",
+      "British diplomatic meeting",
+      "German war proclamation",
+      "Leuven city street 1914",
+      "World War I alliance map",
+      "Desolate battlefield landscape"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "최후통첩",
+      "거절",
+      "루벤",
+      "프랑스진격",
+      "전쟁초기"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "전쟁 발발 과정",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1914년 2월 2일",
+          "value": null,
+          "text": "독일 최후통첩"
+        },
+        {
+          "label": "4일 뒤",
+          "value": null,
+          "text": "독일 전쟁 선포"
+        },
+        {
+          "label": "제1차 세계대전 초기",
+          "value": null,
+          "text": "독일 침공 촉발"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "에스토니아 반란군이 폴란드‑스웨덴 전쟁에 끼친 역할",
@@ -70906,10 +70989,10 @@
     "verify_note": "Battle of Iwo Jima",
     "confidence": "source",
     "created_at": "2026-11-09T08:01:27.510096+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
-    "title_line1": "18km 지하 요새의 비밀",
-    "title_line2": "이오지마에서 미군이 고전한 이유",
+    "title_line1": "이오지마지하방어망",
+    "title_line2": "미군 상륙해도 적숨",
     "highlights": [
       {
         "s": 1,
@@ -70936,7 +71019,9 @@
       "battle with trap",
       "infantry artillery tunnel combat",
       "Iwo Jima airfield after tunnel",
-      "terrain changing battle"
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
     ],
     "scene_count": 10,
     "image_queries_done": [
@@ -70947,74 +71032,72 @@
       "battle with trap",
       "infantry artillery tunnel combat",
       "Iwo Jima airfield after tunnel",
-      "terrain changing battle"
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "Tama66",
-        "page": "https://pixabay.com/photos/cave-tunnel-light-stone-passage-5438620/",
-        "id": 5438620
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "secret tunnel entrance, documentary scene"
       },
       {
         "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima landing troops, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima tunnel network, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima tunnel entry, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "battle with trap, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "infantry artillery tunnel combat, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima airfield after tunnel, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "terrain changing battle, documentary scene"
+      },
+      {
+        "scene": 9,
         "source": "pixabay",
         "user": "tislas",
         "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
         "id": 3820507
       },
       {
-        "scene": 3,
-        "source": "commons",
-        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
-        "license": "Public domain",
-        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
-        "id": "c:186250053"
-      },
-      {
-        "scene": 4,
+        "scene": 10,
         "source": "pixabay",
-        "user": "JCDCreative",
-        "page": "https://pixabay.com/photos/iwo-jima-washington-dc-night-2252203/",
-        "id": 2252203
-      },
-      {
-        "scene": 5,
-        "source": "commons",
-        "user": "Edmond Morin",
-        "license": "Public domain",
-        "title": "Philip Augustus falling into a trap near bridge of Gisors sur l’Epte in 1198 (E. Morin).pn",
-        "page": "https://commons.wikimedia.org/wiki/File:Philip_Augustus_falling_into_a_trap_near_bridge_of_Gisors_sur_l%E2%80%99Epte_in_1198_(E._Morin).png",
-        "id": "c:164313974"
-      },
-      {
-        "scene": 6,
-        "source": "commons",
-        "user": "U.S. Army 107MPAD by Spc. Alejandro Carrasquel",
-        "license": "Public domain",
-        "title": "Victory Corps’ Elhers Cup participants tackle an obstacle course on their third day (78349",
-        "page": "https://commons.wikimedia.org/wiki/File:Victory_Corps%E2%80%99_Elhers_Cup_participants_tackle_an_obstacle_course_on_their_third_day_(7834913).jpg",
-        "id": "c:154351779"
-      },
-      {
-        "scene": 7,
-        "source": "commons",
-        "user": "U.S. Navy graphic by Petty Officer 2nd Class Justin Stack",
-        "license": "Public domain",
-        "title": "Battle of Iwo Jima Rememberance Day (9526643).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Iwo_Jima_Rememberance_Day_(9526643).jpg",
-        "id": "c:186250053"
-      },
-      {
-        "scene": 8,
-        "source": "commons",
-        "user": "Pink Flojd",
-        "license": "CC BY-SA 4.0",
-        "title": "Battle of Mišar terrain model.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Mi%C5%A1ar_terrain_model.jpg",
-        "id": "c:71694541"
+        "user": "MasashiWakui",
+        "page": "https://pixabay.com/photos/japan-osaka-pedestrians-crossing-2014616/",
+        "id": 2014616
       }
     ],
     "image_source": "pixabay",
@@ -71171,7 +71254,34 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "secret tunnel entrance, documentary scene",
+      "Iwo Jima landing troops, documentary scene",
+      "Iwo Jima tunnel network, documentary scene",
+      "Iwo Jima tunnel entry, documentary scene",
+      "battle with trap, documentary scene",
+      "infantry artillery tunnel combat, documentary scene",
+      "Iwo Jima airfield after tunnel, documentary scene",
+      "terrain changing battle, documentary scene",
+      "Battle of Iwo Jima, documentary scene",
+      "Japan landmark, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "secret tunnel entrance, documentary scene",
+      "Iwo Jima landing troops, documentary scene",
+      "Iwo Jima tunnel network, documentary scene",
+      "Iwo Jima tunnel entry, documentary scene",
+      "battle with trap, documentary scene",
+      "infantry artillery tunnel combat, documentary scene",
+      "Iwo Jima airfield after tunnel, documentary scene",
+      "terrain changing battle, documentary scene",
+      "Battle of Iwo Jima, documentary scene",
+      "Japan landmark, documentary scene"
+    ],
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0622_일본.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0622_일본.mp4",
+    "status_v6": "video_done"
   },
   {
     "country": "한국",
