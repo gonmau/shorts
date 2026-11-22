@@ -2055,3 +2055,4 @@
 {"id": "1795346162140-e0a192", "time": "2026-11-22 20:16:02", "channel": "KO", "source": "PC", "kind": "curate", "title": "curate.py --cutoff 2 --top 10 --review-max 10", "status": "success", "secs": 788.4, "detail": ""}
 {"id": "1795346264158-c2f72c", "time": "2026-11-22 20:17:44", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.5, "detail": ""}
 {"id": "1795346351983-7ff0e5", "time": "2026-11-22 20:19:11", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py", "status": "success", "secs": 0.4, "detail": ""}
+{"id": "1795346364353-c9fe68", "time": "2026-11-22 20:19:24", "channel": "KO", "source": "PC", "kind": "check_country", "title": "check_country.py --apply", "status": "success", "secs": 0.7, "detail": ""}
