@@ -71292,7 +71292,7 @@
       "tag_color": "#EB1414",
       "tag_fg": "#FFFFFF",
       "font": "dokdo",
-      "band": "brush",
+      "band": "skew",
       "band_color": "#83d468",
       "band_opacity": 100,
       "band_w": 90,
@@ -71302,7 +71302,7 @@
       "color1": "#ffffff",
       "color2": "#000000",
       "text1": "이오지마 전투의 비밀",
-      "text2": "미군은 왜 고전했나?",
+      "text2": "미군은 왜 고전 했나?",
       "colors1": {
         "0": "#e8dddd",
         "1": "#e84343",
@@ -71310,7 +71310,8 @@
       },
       "sizes1": {},
       "colors2": {
-        "0": "#ea7184"
+        "0": "#ea7184",
+        "2": "#ec1818"
       },
       "sizes2": {}
     },
