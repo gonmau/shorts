@@ -60217,7 +60217,7 @@
     "verify_note": "Juan Perón",
     "confidence": "source",
     "created_at": "2026-11-03T17:53:55.252996+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "한 번도 쓰러지지 않은 대통령? 세 번이나 당선된 비밀!  \n후안 페론은 1946년부터 1955년까지, 그리고 1973년부터 1974년까지 두 차례, 총 세 번에 걸쳐 아르헨티나 대통령을 역임했습니다. 그는 당시 청정 선거라고 평가되는 선거에서 가장 높은 득표율을 기록했으며, 그 결과는 공식 선거 기록에 남아 있습니다.  \n\n그런데 이 기록이 특별한 이유는 바로, 아르헨티나 대통령 중에서 유일하게 세 번 선출된 인물이라는 점입니다. 다른 어느 대통령도 같은 횟수로 재선되지 않았습니다.  \n\n페론의 정치적 영향력은 그가 차지한 기간 동안 사회 복지와 노동 정책에 큰 변화를 가져왔고, 그의 이름은 오늘까지도 아르헨티나 사회에 깊게 남아 있습니다. 결국 “세 번 당선된 대통령”이라는 질문은, 바로 후안 페론이 답이라는 사실로 마무리됩니다.",
     "title_line1": "아르헨티나 대통령",
     "title_line2": "세 번 당선 비밀?",
@@ -60243,7 +60243,9 @@
       "historic election poster Argentina",
       "vintage campaign rally",
       "social welfare building Argentina",
-      "Argentina flag with podium"
+      "Argentina flag with podium",
+      "Juan Perón",
+      "Argentina landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -60260,7 +60262,147 @@
     },
     "curate_score": 5,
     "curate_why": "페론 3회 대통령, 정치적 흥미",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "후안페론",
+      "아르헨티나대통령",
+      "청정선거",
+      "노동정책"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "페론 대통령 재임",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1946~1955",
+          "value": null,
+          "text": "첫 번째 임기"
+        },
+        {
+          "label": "1973~1974",
+          "value": null,
+          "text": "두 번째 임기"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A dramatic illustration of a towering marble pedestal labeled with three gold laurels, symbolizing an undefeated president, viewed from a low angle with dramatic lighting.",
+      "A 1940s style crowd gathered in Buenos Aires Plaza, cheering as a generic suited male figure raises his hand, seen from a wide aerial perspective.",
+      "An interior of a 1970s presidential office with vintage Argentine flags, a lone silhouette of a leader at a desk, captured from a side angle.",
+      "A historic ballot box overflowing with votes, illuminated by a spotlight, photographed from a top-down angle to emphasize record-breaking turnout.",
+      "A close-up of an official election ledger page showing an unprecedented percentage, shot from a slight tilt to highlight the numbers without text.",
+      "A lone podium with three distinct ribbons draped over it, representing three elections, viewed from a front low angle with soft shadows.",
+      "A timeline wall displaying three empty presidential chairs, each bathed in a different colored light, captured from a diagonal viewpoint.",
+      "A bustling 1950s Argentine factory floor with workers receiving benefits, seen from a high angle showing organized rows and smiling silhouettes.",
+      "A modern Buenos Aires street mural depicting abstract symbols of social welfare and labor, viewed from a street-level angle with vibrant colors.",
+      "A cinematic silhouette of a generic male leader standing before three towering arches labeled with the years 1946, 1955, 1973, shot from a dramatic low angle."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Harrison Keely",
+        "license": "CC BY 4.0",
+        "title": "The presidential podium at the State Dining Room in the White House, Washington, D.C.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_presidential_podium_at_the_State_Dining_Room_in_the_White_House,_Washington,_D.C.jpg",
+        "id": "c:175830162"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "8385",
+        "page": "https://pixabay.com/photos/ballot-box-choice-federal-election-2586565/",
+        "id": 2586565
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "HalloweenHJB",
+        "page": "https://pixabay.com/photos/buenos-aires-argentina-casa-rosada-2433480/",
+        "id": 2433480
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Cal3000000",
+        "license": "CC BY-SA 4.0",
+        "title": "DUSHR Election Results.png",
+        "page": "https://commons.wikimedia.org/wiki/File:DUSHR_Election_Results.png",
+        "id": "c:201168460"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/painted-argentina-advertisement-51630/",
+        "id": 51630
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Webtune",
+        "license": "CC0",
+        "title": "Vintage Indian Political Rally Stage.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Vintage_Indian_Political_Rally_Stage.png",
+        "id": "c:201042228"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "viarami",
+        "page": "https://pixabay.com/photos/social-security-law-money-lifestyle-7217020/",
+        "id": 7217020
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "jorono",
+        "page": "https://pixabay.com/photos/flag-argentina-banner-2690834/",
+        "id": 2690834
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Numa Ayrinhac",
+        "license": "Public domain",
+        "title": "Museo del Bicentenario - \"Retrato de Juan Domingo Perón y Eva Duarte\", Numa Ayrinhac.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Museo_del_Bicentenario_-_%22Retrato_de_Juan_Domingo_Per%C3%B3n_y_Eva_Duarte%22,_Numa_Ayrinhac.jpg",
+        "id": "c:23087583"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "HalloweenHJB",
+        "page": "https://pixabay.com/photos/buenos-aires-argentina-obelisk-2437858/",
+        "id": 2437858
+      }
+    ],
+    "image_queries_done": [
+      "presidential podium",
+      "ballot box",
+      "presidential palace Argentina",
+      "election results chart",
+      "historic election poster Argentina",
+      "vintage campaign rally",
+      "social welfare building Argentina",
+      "Argentina flag with podium",
+      "Juan Perón",
+      "Argentina landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0509_아르헨티나_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0509_아르헨티나_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0509_아르헨티나.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0509_아르헨티나.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "유월절, 피로 문을 표시하면 죽음이 스쳐 지나간다",
@@ -70148,7 +70290,7 @@
     "verify_note": "Military history of Thailand",
     "confidence": "source",
     "created_at": "2026-11-09T08:03:00.574040+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70163,7 +70305,87 @@
     },
     "curate_score": 7,
     "curate_why": "",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "source_text": "The military history of Thailand encompasses over 1300 years of armed struggle. The Tai peoples migrated from South China and fought to settle in Southeast Asia during the 8th-10th centuries. They established city-states such as Suphannabhum in 913. Siamese served as mercenaries in the army of the Khmer King Suryavarman II in the 12th century. They lead wars of independence from the Khmer Empire and subsequently founded the kingdoms of Sukhothai (1238) and Ayutthaya (1351). Siamese conquest of Khmer territory and climate change caused the Fall of Angkor. The Siamese kingdoms had centuries of wars against the regional rival Burma until 1855. The 19th till  mid-20th century had a tense standoff between the Rattanakosin Kingdom and the colonial empires of Britain and France with occasional conflicts.\nThailand's military history is dominated by its centrality in Mainland Southeast Asia, the significance of its far flung and often hostile terrain, and the changing nature of military technology. This had a decisive impact on the evolution of Thailand as a modern nation state. Thailand was involved in both world wars on different sides: a member of the Allies of World War I, but joined the Axis powers under pressure by Japan in World War II. Afterward, Thailand's military partnership with the United States culminated in a crucial role in the Cold War in Asia and as an ally in the war on terror. The Thai military's involvement in domestic politics brought frequent international attention.\n== Siamese under the Khmer Empire ==\nThe Tai peoples mass migrated from South China to Mainland Southeast Asia and Northern Thailand between the 8th-10th century. They gradually gained influence in the western regions of the Khmer Empire. Mercenaries from central and northern Thailand served in the army of the Khmer King Suryavarman II. He reigned from 1113 until his death in 1150. These mercenaries are evident in a bas-relief sculpture of Angkor Wat. They are called the 'Syam Kuk' (ស្យាំកុក៍) in Old Khmer. They are depicted marching eastward to battle the Chams of the Champa Kingdom (central and southern Vietnam) in the 12th century. They came from Lavo (Lopburi in central Thailand) and Syam (north-central Thailand). These were provinces (territory spheres) of the Khmer Empire.\nThe consensus of modern scholars, such as Vittorio Roveda,\nB.P. Groslier, Saveros Pou, and Michael Vickery, is that the 12th century marching “Syam Kuk” depicted on Angkor Wat are not the Tai/Siamese (ethnic Thai). Vickery also rejects the claim that “syām” comes from the Sanskrit śyāma, meaning “dark” (as in “dark complexioned”). He instead documents the usage of Syam, Sien, Siam, and the Chinese Hsien by the Cham, Khmer, and Chinese to explain syām kuk doesn’t refer to an ethnicity but a geographic location, which in the 12th century was populated by the Mon-Khmer.\n== Sukhothai period (1238–1350) ==\n=== Khmer Empire declines ===\nThe Siamese military state emerged from the disintegration of the Khmer Empire and the rise of Sukhothai in the 13th century. The Khmer had a powerful military state centred on what is today Cambodia. The Khmer dominated much of Mainland Southeast Asia through the use of irregular military led by captains owing personal loyalty to the Khmer warrior kings, and leading conscripted peasants levied during the dry seasons. Primarily based around its infantry, the Khmer army was typically reinforced by war elephants and later adopted ballista artillery from China.\nBy the end of the period, indigenous revolts amongst Khmer territories in Siam and Vietnam, and external attack from the independent kingdom of Champa, sapped Khmer strength. After the sack of the Khmer capital Angkor Wat by Champa forces in 1178–79, Khmer's ability to control its wider territories ",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 4번 문장 '그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소…' — 본문에 기후변화 시점 언급 없음"
+      ],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      ],
+      "rounds": 2,
+      "first": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?",
+      "sentences": 8
+    },
+    "review_needed": true,
+    "narration": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?  \n\n시암인들은 8세기에서 10세기 사이 남중국에서 이주해 크메르 제국과 끊임없이 충돌했습니다. 전투는 수세기에 걸쳐 이어졌고, 결국 시암인들이 크메르 영토를 정복하면서 앙코르의 중심부가 손에 잡히게 되었습니다.  \n\n그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소하고 가뭄이 지속되었습니다. 물이 부족해 농경 기반이 무너지자, 방대한 사원 건설을 유지하던 노동력과 자원이 급감했고, 앙코르는 서서히 붕괴의 길을 걸었습니다.  \n\n시암인과 크메르의 전쟁이 1300년이 넘는 기간 동안 이어졌다는 점은, 단순한 정복이 아니라 오랜 세월에 걸친 문화 충돌이었음을 보여줍니다. 이 해석은 일부 학자의 견해이며, 모든 학자가 동의하는 것은 아닙니다.  \n\n그렇다면, 전쟁과 기후가 만든 이 파괴는 결국 인간이 만든 위대한 건축물도 자연 앞에선 한 줌의 모래에 불과하다는 교훈을 남깁니다.",
+    "title_line1": "라오스 앙코르 몰락",
+    "title_line2": "전쟁·가뭄이 사원을을",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "앙코르 *붕괴*?"
+      },
+      {
+        "s": 4,
+        "text": "*가뭄*이 몰아쳐"
+      },
+      {
+        "s": 5,
+        "text": "노동 *감소* 위기"
+      },
+      {
+        "s": 8,
+        "text": "인간 *한 줌* 모래"
+      }
+    ],
+    "image_queries": [
+      "Angkor collapse ruins",
+      "Siamese migrants South China",
+      "Siam army battle site",
+      "Severe drought landscape",
+      "Abandoned labor fields",
+      "Siam Khmer war ruins",
+      "Historical debate books",
+      "Human hand holding sand"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "앙코르",
+      "시암인",
+      "크메르제국",
+      "기후변화",
+      "전쟁역사"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "앙코르 붕괴 흐름",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1300년 전",
+          "value": null,
+          "text": "전쟁·기후변화"
+        },
+        {
+          "label": "8~10세기",
+          "value": null,
+          "text": "시암·크메르 충돌"
+        },
+        {
+          "label": "1300년+",
+          "value": null,
+          "text": "전쟁·기후 지속"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "플럼 푸딩의 이름 속 진실",
