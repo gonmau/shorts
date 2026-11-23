@@ -137,6 +137,18 @@ def main():
                         print(f"  썸네일 설정 {_try + 1}/3: {tj.name} ({tj.stat().st_size//1024}KB) {_u[-40:]}")
                 except Exception as e:
                     print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:300]}")
+        if os.environ.get("YT_CAPTIONS", "on").lower() not in ("off", "0", "false"):   # 수동 자막(한국어) 자동 추가: 영상 옆 .srt 를 올린다 (토큰에 youtube.force-ssl 권한 필요, 쿼터 약 400)
+            _srt = Path(path).with_suffix(".srt")
+            if not _srt.exists():
+                print(f"  자막 파일 없음(건너뜀): {_srt.name}")
+            else:
+                try:
+                    yt.captions().insert(part="snippet",
+                                         body={"snippet": {"videoId": res["id"], "language": "ko", "name": "한국어", "isDraft": False}},
+                                         media_body=MediaFileUpload(str(_srt), mimetype="application/octet-stream")).execute()
+                    print(f"  수동 자막(한국어) 추가: {_srt.name}")
+                except Exception as e:
+                    print(f"  수동 자막 추가 실패(영상은 올라감): {str(e)[:300]}")
         item["uploaded_at"] = datetime.now(kst).isoformat()
         if slot:
             item["publish_at"] = slot
