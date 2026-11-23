@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-23 17:25:23 (KST) · 기록 2173건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-23 17:40:34 (KST) · 기록 2183건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,10 +10,10 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 210 | 0 | 55초 |
-| approve | 68 | 0 | 16초 |
+| apply_review | 211 | 0 | 55초 |
+| approve | 69 | 0 | 16초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 99 | 0 | 16시간 33분 |
+| build_video | 100 | 0 | 16시간 43분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -21,16 +21,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 77 | 0 | 16초 |
-| fetch_images | 224 | 9 | 2시간 36분 |
+| export_review | 78 | 0 | 17초 |
+| fetch_images | 225 | 9 | 2시간 37분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 265 | 0 | 1시간 53분 |
-| generate_tts | 116 | 0 | 37분 28초 |
+| generate_script | 267 | 0 | 1시간 55분 |
+| generate_tts | 117 | 0 | 37분 35초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 93 | 0 | 2분 27초 |
-| promote_ready | 210 | 0 | 48초 |
+| make_thumbnail | 94 | 0 | 2분 29초 |
+| promote_ready | 211 | 0 | 48초 |
 | redo_videos | 38 | 0 | 13초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -47,6 +47,16 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 17:40 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 2초 |  |
+| 17:40 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 10분 24초 |  |
+| 17:29 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 7초 |  |
+| 17:29 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 1분 16초 |  |
+| 17:28 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 2초 |  |
+| 17:28 | PC | export_review | export_review.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 17:28 | PC | generate_script | generate_script.py --limit 1 --start 0 | ✅ | 1분 44초 |  |
+| 17:26 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 17:26 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 17:26 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 17:25 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 2초 |  |
 | 17:25 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 8분 17초 |  |
 | 17:16 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 6초 |  |
