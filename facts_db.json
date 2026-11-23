@@ -71161,7 +71161,7 @@
     "verify_note": "Polish–Swedish War (1563–1568)",
     "confidence": "source",
     "created_at": "2026-11-09T08:06:10.364504+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71176,7 +71176,190 @@
     },
     "curate_score": 7,
     "curate_why": "반란군·전쟁·연도·전략적 역할",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "The Polish–Swedish War (1563–1568), also called the First Polish War (Swedish: Första Polska Kriget) (Polish: Wojna polsko-szwedzka (1563–1568)) was waged primarily in the Baltic during the larger Northern Seven Years' War between Sweden and the Polish–Lithuanian union, the Duchy of Courland, parts of the Livonian nobility, and Estonian rebels from 1563 to 1568. The war ultimately ended when John III became the King of Sweden, resulting in a Swedish victory.\n== Background ==\n=== Division of the Livonian Order ===\nAround 1560, after the collapse of the Livonian Order from their defeat at the Battle of Ērģeme, its old territories were divided between Sweden, Denmark, Russia, and Poland. With these powers also fighting over the farmlands and commerce surrounding the Baltic sea. The Russians managed to conquer large areas of Estonia in 1558, including Narva, which allegedly began the power vacuum that lasted for more than thirty years. \nÖsel and Wiek would fall into Danish rule, and Reval, Harrien, Wierland, and Järven fell under Swedish rule in 1561. Dorpat, Wesenberg, and Fellin would also quickly fall into Russian rule with the rest of the Livonian Order's territory becoming Polish.\n=== Prelude to the Northern Seven Years' War ===\n==== Dano-Swedish coat of arms dispute ====\nDenmark and Sweden have had a long and shared history of fighting and disagreements, but they also shared similar experiences. During the Kalmar Union's existence, the three Nordic nations of Denmark, Sweden, and Norway had been ruled, at least in theory, by one monarch. The Union had been dissolved and reinstated numerous times from 1389 to 1523, when Gustav Vasa's rebellion ended it definitively.\nDenmark had a tough time stopping the Swedish defection, and the end of the Kalmar Union led to strong feelings of mistrust and hate between Swedes and Danes.\nThe adoption of the Three Crowns into the Danish coat of arms and the Danish lions into the Swedish coat of arms was seen as the primary reason for the war by both rulers, Eric and Frederick, with everything else not counting.\n==== Bornholm incident ====\n===== Prelude =====\nIn early 1563, Jakob Bagge was ordered by Eric XIV to provoke the Danes near Gotland or Bornholm, so that if the Danes engaged him Eric could declare war on the pretext of self-defense. Bagge ordered the crew on the Swedish ships not to strike the top sail on their ships which was normally done to show respect.\nBagge hoped this would be insulting enough for the Danes to attack. If Eric's plans unfolded as planned, all of Europe would hear how Danish ships attacked the \"poor Swedish ships who were just on the way to transport a wife for their king\"\nOn 30 May, the Swedes set sail for Bornholm, they could have avoided the island entirely, as they were going to Rostock, but instead, they went as close as possible to Hammershus fortress and the harbor in Rönne. When they came in hearing distance, they fired two shots, which signalled that the ships were Swedish. In Hammershus, the Lübeckian chief Schweder Kettingk and his men were stationed there, however, in Rönne's harbour, there were several Danish warships. The harbor had been created as a temporary base for the Danish navy. King Frederick had previously given out an order saying that the Danish navy was to patrol the Baltic Sea and visit all Swedish ships that were encountered. If they found cargo ships with food or war material the cargo was to be confiscated.\nThe Danes held deep mistrust for the Swedes, and when the Danes first heard the two shots from the Swedish ships, three Danish warships were dispatched to meet the Swedes, one of these being the flagship Herkules with the admiral Jacob Brockenhuus onboard.\nThere was also a Hessian delegation on the Swedish flagship, of which none knew ",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 1,
+      "first": "1563년, 발트해를 장악하려던 스웨덴과 폴란드‑리투아니아 연합 사이에 에스토니아 반란군이 총을 들고 끼어들었습니다.",
+      "sentences": 6
+    },
+    "narration": "1563년, 발트해를 장악하려던 스웨덴과 폴란드‑리투아니아 연합 사이에 에스토니아 반란군이 총을 들고 끼어들었습니다. 그때 에스토니아는 이미 1561년 레발·하리엔·위에르란드 등 주요 지역이 스웨덴 영토가 된 뒤, 러시아와 덴마크의 손아귀에도 놓여 있던 상황이었습니다. 반란군은 리베니아 귀족과 코울란드 공작령과 함께 전쟁에 참여했으며, 전투는 주로 발트해 연안과 리베니아·에스토니아 해안에서 벌어졌습니다. 하지만 전쟁의 승패를 좌우한 것은 전투력이라기보다 정치적 승부였습니다. 1568년 요한 3세가 스웨덴 왕위에 오르면서 전쟁은 스웨덴 승리로 끝났고, 에스토니아 반란군의 존재는 최종 결과에 큰 영향을 미치지 못했습니다. 즉, 총을 든 에스토니아 반란군은 전쟁을 복잡하게 만들었지만, 승부는 왕위 계승이라는 한 사람의 결정에 종속됐던 것입니다.",
+    "title_line1": "발트해 전쟁에 반란군",
+    "title_line2": "결과는 왕위에?",
+    "highlights": [
+      {
+        "s": 3,
+        "text": "발트해 연안에서 *전투* 격돌"
+      },
+      {
+        "s": 4,
+        "text": "승패는 *정치* 승부"
+      },
+      {
+        "s": 5,
+        "text": "*요한 3세*가 스웨덴 승리"
+      }
+    ],
+    "image_queries": [
+      "Estonian rebels with guns",
+      "Swedish controlled Estonian coast",
+      "Baltic Sea battle",
+      "Diplomatic meeting table",
+      "Swedish victory flag",
+      "Armed Estonian rebels battlefield",
+      "Polish–Swedish War (1563–1568)",
+      "Estonia landmark",
+      "Estonia culture",
+      "Estonia street"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "에스토니아반란",
+      "폴란드리투아니아연합",
+      "스웨덴왕위계승",
+      "발트해전쟁",
+      "리베니아귀족"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "발트해 전쟁 흐름",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1561년",
+          "value": null,
+          "text": "레발·하리엔·위에르란드 스웨덴 영토"
+        },
+        {
+          "label": "1563년",
+          "value": null,
+          "text": "에스토니아 반란군 총격 개입"
+        },
+        {
+          "label": "1568년",
+          "value": null,
+          "text": "요한 3세 즉위, 스웨덴 승리"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A low-angle view of Estonian rebels in 1563 brandishing early muzzle‑loading firearms, standing on a misty Baltic shoreline between Swedish warships and Polish‑Lithuanian cavalry.",
+      "A bird's‑eye view of the same 1563 Baltic coast, showing Estonian insurgents in ragged armor firing pistols amid Swedish galleons and Polish‑Lithuanian infantry formations.",
+      "A wide panoramic scene of 1561 Estonia with Swedish flags raised over Tallinn, Russian forts, and Danish ships on the horizon, illustrating the fragmented control of the region.",
+      "A dusk interior of a stone manor in 1561, Swedish banners drape the walls while Russian and Danish envoys converse, highlighting the contested ownership of Estonian lands.",
+      "A dynamic side view of Estonian rebels fighting alongside Livonian nobles and the Duchy of Courland on a rugged coastal cliff, cannon smoke rising over the Baltic Sea.",
+      "A high-angle shot of a naval skirmish off the Estonian coast, showing Livonian galleys, Courland vessels, and rebel infantry exchanging fire with Swedish and Polish‑Lithuanian ships.",
+      "A close‑up of a candlelit war council in a wooden hall, with maps and empty chairs symbolizing political maneuvering that outweighs battlefield might.",
+      "A dramatic portrait of King John III of Sweden ascending a throne in 1568, with distant battlefields fading, indicating his accession ends the war in Sweden's favor.",
+      "A distant landscape of 1568 Swedish banners flying over a quiet Estonian village, while the silhouette of King John III stands on a hill, showing his decisive impact on the conflict.",
+      "An overhead view of scattered muskets and abandoned rebel campfires on a Baltic beach, underscoring how the Estonian uprising complicated the war yet yielded to a single royal succession."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Sunriseforever",
+        "page": "https://pixabay.com/photos/harley-quinn-cosplay-comics-marvel-5391062/",
+        "id": 5391062
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "pixel2013",
+        "page": "https://pixabay.com/photos/sailboat-sailing-yacht-sailing-ship-3399014/",
+        "id": 3399014
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "wal_172619",
+        "page": "https://pixabay.com/photos/pier-sea-to-travel-outdoors-ocean-6635035/",
+        "id": 6635035
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "StartupStockPhotos",
+        "page": "https://pixabay.com/photos/meeting-brainstorming-business-594091/",
+        "id": 594091
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "marsjo",
+        "page": "https://pixabay.com/photos/the-swedish-flag-sweden-3994042/",
+        "id": 3994042
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "RobynsWorld",
+        "page": "https://pixabay.com/photos/veteran-memorial-military-patriotic-2610468/",
+        "id": 2610468
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "pasja1000",
+        "page": "https://pixabay.com/photos/first-aug-warsaw-uprising-polish-3570299/",
+        "id": 3570299
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "Scotch Mist",
+        "license": "CC BY-SA 4.0",
+        "title": "Tallinn Landmarks 105 - Estonian Cross of Liberty.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Landmarks_105_-_Estonian_Cross_of_Liberty.jpg",
+        "id": "c:86307354"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Ypsilon from Finland",
+        "license": "CC0",
+        "title": "Estonian market in Kaapelitehdas.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Estonian_market_in_Kaapelitehdas.jpg",
+        "id": "c:147967827"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Jecqan",
+        "page": "https://pixabay.com/photos/winter-tallinn-houses-snow-nature-7772554/",
+        "id": 7772554
+      }
+    ],
+    "image_queries_done": [
+      "Estonian rebels with guns",
+      "Swedish controlled Estonian coast",
+      "Baltic Sea battle",
+      "Diplomatic meeting table",
+      "Swedish victory flag",
+      "Armed Estonian rebels battlefield",
+      "Polish–Swedish War (1563–1568)",
+      "Estonia landmark",
+      "Estonia culture",
+      "Estonia street"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0619_에스토니아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0619_에스토니아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0619_에스토니아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0619_에스토니아.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "고대 이집트 신앙, 파라오와 1,500신",
