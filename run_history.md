@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-23 16:02:33 (KST) · 기록 2140건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-23 16:37:41 (KST) · 기록 2151건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,10 +10,10 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 207 | 0 | 54초 |
-| approve | 65 | 0 | 15초 |
+| apply_review | 208 | 0 | 54초 |
+| approve | 66 | 0 | 15초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 96 | 0 | 16시간 9분 |
+| build_video | 97 | 0 | 16시간 16분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -21,16 +21,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 74 | 0 | 15초 |
-| fetch_images | 221 | 9 | 2시간 33분 |
+| export_review | 75 | 0 | 15초 |
+| fetch_images | 222 | 9 | 2시간 34분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 259 | 0 | 1시간 48분 |
-| generate_tts | 113 | 0 | 36분 58초 |
+| generate_script | 261 | 0 | 1시간 50분 |
+| generate_tts | 114 | 0 | 37분 6초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 89 | 0 | 2분 20초 |
-| promote_ready | 207 | 0 | 47초 |
+| make_thumbnail | 90 | 0 | 2분 22초 |
+| promote_ready | 208 | 0 | 47초 |
 | redo_videos | 38 | 0 | 13초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -39,9 +39,25 @@
 | upload_to_youtube | 33 | 0 | 23분 9초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
 | 쇼츠 | 127 | 6 | 12시간 17분 |
-| 코드업데이트 | 123 | 0 | 0초 |
+| 코드업데이트 | 124 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-23
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 16:37 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 1초 |  |
+| 16:37 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 6분 47초 |  |
+| 16:30 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 7초 |  |
+| 16:30 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 43초 |  |
+| 16:29 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 2초 |  |
+| 16:29 | PC | export_review | export_review.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 16:29 | PC | generate_script | generate_script.py --limit 1 --start 0 | ✅ | 1분 52초 |  |
+| 16:27 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 16:27 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 16:27 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 16:04 | PC | 코드업데이트 | gonmau/shorts: 4개 (lf_thumb.py, local_ui.py, thumb_hook.py, upload_to_youtube.py) | ✅ |  |  |
 
 ### 2026-11-22
 
@@ -2109,38 +2125,3 @@
 | 12:26 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
 | 11:31 | PC | 롱폼 | build_longform.py --mode manual --indexes 0,1,2,3,4,8,10,56,57,58 --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --cli | ✅ | 4분 18초 |  |
 | 00:35 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/e5dbe10b6e665374debaf826ba90cb52e6384f8a |
-
-### 2026-10-24
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 23:48 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/5060746449aedcdca78c3ff5f418303e0b02afa6 |
-| 23:37 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/63ad294f34c27e6cd4e5270ef7add5d07427edab |
-| 23:37 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/01ea1d6ffd70fed8935d81f8a9176552f96284e1 |
-| 23:36 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/4493d4eaf995d73f738d2f95d9bb7132d4390896 |
-| 23:36 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/b5c5a47ef345910141951852991e8ac7a23f73dc |
-| 23:36 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/d75be6c34c32112c5c7dbe1a7b6bd6ee63a75034 |
-| 23:35 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/daa6c4c13cdf8d1825222c29baab5bdb090c961b |
-| 23:11 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/216cd7b48c0dba8dc932379393ca7d7518b871dc |
-| 23:11 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/be898038f49797228d87d68b726723f1b92b9468 |
-| 22:42 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/bcabab3ca444da074474c18e22d7ced7ac00a3d6 |
-| 22:32 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/4cd59855f5bd090b2c6ed4f56a61acf3fbac9ffb |
-| 22:31 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/11edad0827c32cc043d291bca05da27c409e56b3 |
-| 22:01 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/6f56f7787796627d2da8294350f18aed676bba5a |
-| 22:00 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/330158248b35d7ae9872c1044f136acaf64a0274 |
-| 21:59 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/223d8ff799ccaa4928d73ad92436342bfdd32180 |
-| 21:59 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/33434f8e1c222d9c72242c74e4add2c670fae64d |
-| 21:58 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/8777b1b0ba384792fec69e07e9b7a52d1993efbf |
-| 21:39 | PC(과거) | DB커밋 | longform_db.json: update longform_db.json from local UI | ✅ |  | https://github.com/gonmau/shorts/commit/c9d30c1c67d126215e4d144266ad3b4ab6f2a6d9 |
-| 21:14 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/a328f25c3be95069cf88eb91e1da4f8f9a2347fa |
-| 21:01 | PC(과거) | DB커밋 | longform_db.json: update longform_db.json from local UI | ✅ |  | https://github.com/gonmau/shorts/commit/1969fc567f1d8c76a212082bef70faeb038e2d57 |
-| 21:01 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/5b29899f1b3be9c843790d614ec1d987672258f1 |
-| 15:34 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/0b6e0924ab566b60836c4f29da16e8a418fc5599 |
-| 15:03 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/20aa757b5dfcc012a8f92bb5376de777f2c804e9 |
-| 13:51 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/589f769e8e3bd977a6682b9d4c7ce8e24e76d15b |
-| 13:20 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/3cdc316225464056fb433d7542168cc5c3e29e73 |
-| 13:11 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/8bf97b1d26f09ab533970c827c5e30773913ce62 |
-| 13:08 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/af7cddba034f3f0c27cd7c09458e3972e834212f |
-| 13:06 | PC(과거) | DB커밋 | longform_db.json: update longform_db.json from local UI | ✅ |  | https://github.com/gonmau/shorts/commit/b908cc26bf10f5b9cce930576f4aa857772788f2 |
-| 13:06 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/e75cffbf8075b11c60205f820b0b692ab0bc80bb |
-| 12:12 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/ea86c23e535a7715cc60259a85b7f3ccf6afe905 |
