@@ -56928,7 +56928,7 @@
     "verify_note": "Yi Peng festival",
     "confidence": "source",
     "created_at": "2026-10-31T15:37:15.250655+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "천 개의 등불이 하늘을 가득 메우면, 소원이 날아간다고 믿는 사람들, 바로 여기 치앙마이입니다. 매년 라나 달력 열두 번째 달 보름달에 맞춰 3일간 열리는 Yi Peng 축제는 북부 태국의 전통 행사로, 수천 개의 khom loi, 즉 하늘 등불을 날려 불운을 씻고 소원을 전합니다. 이 축제는 라나 달력의 보름달 시기에 진행된다는 점이 특징이에요. 등불이 밝히는 밤하늘을 보며 사람들은 각자의 소원을 속삭이고, 그 빛이 사라질 때까지 잠시나마 일상의 무게를 내려놓습니다. 치앙마이와 주변에서도 전통이 이어지지만, 수코타이 등 다른 지역에서도 등불을 띄우는 행사가 열리곤 합니다.",
     "cross_checked": true,
     "cross_sources": 0,
@@ -56962,7 +56962,10 @@
       "full moon lantern release Thailand",
       "Chiang Mai lantern festival night",
       "night sky lantern wishes",
-      "Chiang Mai traditional lantern ceremony"
+      "Chiang Mai traditional lantern ceremony",
+      "Yi Peng festival",
+      "Thailand landmark",
+      "Thailand culture"
     ],
     "scene_count": 8,
     "grounding": {
@@ -56987,7 +56990,118 @@
       "rounds": 1,
       "first": "천 개가 넘는 등불이 하늘을 가득 메우면, 당신의 소원은 어디까지 날아갈까요?",
       "sentences": 9
-    }
+    },
+    "hashtags": [
+      "치앙마이",
+      "이펭축제",
+      "라나다달력",
+      "콤로이",
+      "수코타이"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "등불 수",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "등불 수",
+          "value": null,
+          "text": "수천 개"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A wide aerial view of Chiang Mai night sky filled with thousands of glowing lanterns rising, silhouetted temple rooftops below, soft moonlight, serene atmosphere, early 21st century.",
+      "A low angle shot from ground level looking up at a cascade of lanterns illuminating the night sky over Chiang Mai, distant mountains faintly visible, contemporary setting.",
+      "A panoramic twilight scene of the Yi Peng festival with thousands of khom loi lanterns launched from a riverbank, traditional wooden boats and lantern-lit crowds, 2020s Thailand.",
+      "A close-up side view of a hand releasing a single lantern among a sea of glowing lights, lanterns drifting upward against a dark sky, modern festival ambience.",
+      "A moonlit night over a Thai village square during the full moon of the 12th lunar month, lanterns glowing softly, traditional wooden houses, quiet and reverent mood.",
+      "A medium shot of silhouetted people standing on a hilltop, whispering wishes as lanterns illuminate the sky, gentle breeze, contemporary festival scene.",
+      "An intimate over-the-shoulder perspective of a person watching lanterns fade, soft light reflecting on calm water, night sky gradually darkening, modern Thailand.",
+      "A wide landscape view showing Chiang Mai and distant Sukhothai temples, both hosting lantern releases, hills and rice fields under a starry sky, present-day cultural tradition."
+    ],
+    "ai_prompts_done": [
+      "A wide aerial view of Chiang Mai night sky filled with thousands of glowing lanterns rising, silhouetted temple rooftops below, soft moonlight, serene atmosphere, early 21st century.",
+      "A low angle shot from ground level looking up at a cascade of lanterns illuminating the night sky over Chiang Mai, distant mountains faintly visible, contemporary setting.",
+      "A panoramic twilight scene of the Yi Peng festival with thousands of khom loi lanterns launched from a riverbank, traditional wooden boats and lantern-lit crowds, 2020s Thailand.",
+      "A close-up side view of a hand releasing a single lantern among a sea of glowing lights, lanterns drifting upward against a dark sky, modern festival ambience.",
+      "A moonlit night over a Thai village square during the full moon of the 12th lunar month, lanterns glowing softly, traditional wooden houses, quiet and reverent mood.",
+      "A medium shot of silhouetted people standing on a hilltop, whispering wishes as lanterns illuminate the sky, gentle breeze, contemporary festival scene.",
+      "An intimate over-the-shoulder perspective of a person watching lanterns fade, soft light reflecting on calm water, night sky gradually darkening, modern Thailand.",
+      "A wide landscape view showing Chiang Mai and distant Sukhothai temples, both hosting lantern releases, hills and rice fields under a starry sky, present-day cultural tradition."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide aerial view of Chiang Mai night sky filled with thousands of glowing lant"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A low angle shot from ground level looking up at a cascade of lanterns illuminat"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A panoramic twilight scene of the Yi Peng festival with thousands of khom loi la"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up side view of a hand releasing a single lantern among a sea of glowing"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A moonlit night over a Thai village square during the full moon of the 12th luna"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A medium shot of silhouetted people standing on a hilltop, whispering wishes as "
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An intimate over-the-shoulder perspective of a person watching lanterns fade, so"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide landscape view showing Chiang Mai and distant Sukhothai temples, both hos"
+      }
+    ],
+    "image_queries_done": [
+      "Chiang Mai thousand lanterns",
+      "full moon lantern release Thailand",
+      "Chiang Mai lantern festival night",
+      "night sky lantern wishes",
+      "Chiang Mai traditional lantern ceremony",
+      "Yi Peng festival",
+      "Thailand landmark",
+      "Thailand culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0478_태국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0478_태국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0478_태국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0478_태국.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "영국 귀족 자녀에게도 쓰이는 ‘공작 부인’ 호칭",
@@ -75205,7 +75319,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -75218,7 +75332,90 @@
     },
     "curate_score": 8,
     "curate_why": "159,500km² 영토 분쟁, 구체적 면적·대립",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "caution",
+    "source_text": "There is an ongoing territorial dispute between Guyana and Venezuela over the Essequibo region (Spanish: Guayana Esequiba; Spanish pronunciation: [ɡwaˈʝana eseˈkiβa] ), a 159,500 km2 (61,600 sq mi) area west of the Essequibo River and even parts south of it. The territory, excluding the Venezuelan-controlled Ankoko Island, is controlled by Guyana as part of six of its regions, based on the 1899 Paris Arbitral Award. It is also claimed by Venezuela as the Guayana Esequiba State. The boundary dispute, also known as the Essequibo conflict, which began under the colonial powers (Spain in the case of Venezuela, and the Netherlands and the United Kingdom in the case of Guyana) and has persisted following the independence of Gran Colombia and Guyana.\nAs part of the Anglo-Dutch Treaty of 1814, arising from the Napoleonic Wars, the Netherlands ceded Essequibo to Great Britain. In 1835, the UK government commissioned German-born explorer and naturalist Robert Hermann Schomburgk to survey British Guiana's boundaries as the 1814 treaty did not define the western border. This survey resulted in what came to be known as the \"Schomburgk Line\", which was rejected by Venezuelan and British governments, as even the extended Schomburgk Line did not include the entire Cuyuní River basin which was claimed by Britain. After negotiations in the 1850s, the countries were unable to come to a settlement. Tensions worsened after the discovery of gold mines in the region in 1876, culminating with Venezuelan president Antonio Guzmán Blanco severing diplomatic relations with the United Kingdom in 1887. Venezuela then called upon the Monroe Doctrine, asking the USA to intervene on Venezuela's behalf. Under threat of a possible invasion from the United States, the United Kingdom agreed to an international arbitration by means of the 1897 Treaty of Washington. The arbitration resulted in the Paris Arbitral Award in 1899, a ruling largely in favour of Britain. There was little protest from Venezuela, likely due to outstanding loans to international allies and internal political upheaval. \nThe matter was considered settled until 1949, when a posthumous memorandum by Severo Mallet-Prevost was published in the American Journal of International Law. Mallet-Prevost had been part of the US–Venezuela delegation in the arbitration. His letter stated that the Arbitral Award resulted from the pressure by the Tribunal President Friedrich Martens and a political deal between Russia and Britain. In 1961, the UK granted British Guiana internal self-government. In 1962, Venezuela brought the memorandum and territorial dispute to the United Nations, which resulted in the Geneva Agreement, signed by Venezuela, the UK, and British Guiana on February 17, 1966. British Guiana achieved independence from the UK on May 26, 1966. Five months later, Venezuelan troops crossed the international border and seized Ankoko Island.\nThe 1966 Geneva Agreement stipulates that the parties will agree to find a \"practical, peaceful, and satisfactory solution\" to the dispute. Should there be a stalemate, according to the treaty, the decision as to the means of settlement is to be referred to an \"appropriate international organ\" or, failing agreement on this point, to the secretary-general of the United Nations. The secretary-general referred the entire matter to the International Court of Justice (ICJ). On 18 December 2020, the ICJ accepted the case submitted by Guyana to settle the dispute. In December 2023, Venezuela held a referendum asking the Venezuelan electorate whether the region should become a state of Venezuela and its population become citizens, where it declared that the results showed overwhelming support for such action. No vote was held in the disputed region.\nCurrently, Venezuela claim",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 5번 문장 '결국 이 159,500 km² 땅은 120 년 넘게 ‘…' — ‘120 년 넘게’는 본문에 명시되지 않음"
+      ],
+      "advice": [],
+      "rounds": 2,
+      "first": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요?",
+      "sentences": 5
+    },
+    "review_needed": true,
+    "narration": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요? 이 지역은 1899년 파리 중재 판정(Paris Arbitral Award)으로 영국이 통치하던 영국령 가이아나에 속한다는 결론이 내려졌고, 이후 가이아나는 실효 지배를 이어오고 있습니다. 하지만 베네수엘라는 이를 ‘구아야나 에세키바(Guayana Esequiba)’라 부르며 영토 주권을 부인하고, 1966년 제네바 협정까지 분쟁을 국제무대로 확대했습니다. 협정에 따라 해결 방안을 국제기구에 회부했으며, 2020년 국제사법재판소가 가이아나의 청구를 받아들인 뒤에도 양국은 여전히 입장을 고수하고 있습니다. 결국 이 159,500 km² 땅은 120 년 넘게 ‘누구의 땅인가’라는 질문을 남긴 채, 남미에서 가장 오래된 영토 분쟁 중 하나로 남아 있습니다.",
+    "title_line1": "에세키보 영토 분쟁",
+    "title_line2": "159500㎢누가가졌나",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "에세키보 *땅* 겹점령"
+      },
+      {
+        "s": 3,
+        "text": "베네수엘라*주권*부인"
+      },
+      {
+        "s": 4,
+        "text": "2020 *재판* 승리"
+      },
+      {
+        "s": 5,
+        "text": "120년 *누구* 땅?"
+      }
+    ],
+    "image_queries": [
+      "Esequibo overlapping territory map",
+      "British Guiana map 1899",
+      "Venezuela claim map",
+      "Guyana ICJ hearing",
+      "Esequibo disputed land"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "에세키보",
+      "파리중재판정",
+      "제네바협정",
+      "국제사법재판소",
+      "구아야나에세키바"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "에세키보 영토 분쟁 연표",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1899",
+          "value": null,
+          "text": "파리 중재 판정"
+        },
+        {
+          "label": "1966",
+          "value": null,
+          "text": "제네바 협정"
+        },
+        {
+          "label": "2020",
+          "value": null,
+          "text": "국제사법재판소 청구 수용"
+        },
+        {
+          "label": "120년",
+          "value": null,
+          "text": "분쟁 지속"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
