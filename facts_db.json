@@ -69316,7 +69316,7 @@
     "verify_note": "Early Muslim conquests",
     "confidence": "source",
     "created_at": "2026-11-09T07:59:44.429320+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69331,7 +69331,184 @@
     },
     "curate_score": 7,
     "curate_why": "한 달 정복·숫자·전쟁·극적 전개",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "source_text": "The early Muslim conquests, or the early Islamic conquests (Arabic: الْفُتُوحَاتُ الإسْلَامِيَّة, romanized: al-Futūḥāt al-ʾIslāmiyya), also known as the Arab conquests, were a series of wars initiated by the Islamic prophet Muhammad, and continued by the early Muslims. In 622, he established the first Islamic state in Medina, with Muslim armies expanding rapidly out of Arabia under the succeeding Rashidun Caliphate and then the Umayyad Caliphate, culminating in Muslim rule being established throughout most of the Middle East and North Africa, parts of South Asia and Central Asia, and parts of Southern Europe over the following century. According to the Scottish historian James Buchan: \"In speed and extent, the first Arab conquests were matched only by those of Alexander the Great, and they were more lasting.\" At the height of the expansion, Muslim-ruled territory under the Caliphates is estimated to have covered 13,000,000 square kilometres (5,000,000 sq mi), stretching from the Indian subcontinent (at Sind) in the east to the Iberian Peninsula (up to Septimania) in the west.\nAmong other socio-political changes, the early Muslim conquests caused a rupture in the status quo dominated by the Sasanian Empire in the east and the Byzantine Empire in the west; Muslim armies overran the Sasanians and confined the Byzantines, who were left with part of Anatolia and Southeastern Europe. Detailed explanations for the success of the Muslim campaigns have been difficult to discover, largely because only fragmentary sources have survived from the period. American scholar Fred Donner suggests that Muhammad's establishment of the first Islamic state coupled with ideological coherence and mobilization constituted the main factor that propelled his community to successfully establish one of the largest empires in history. Most historians also agree that, as another primary factor that favoured the Muslim war effort, the Sasanians and the Byzantines were rendered militarily and economically exhausted from decades of warfare against each other, with the Sasanian civil war of 628–632 further accelerating political collapse.\nIt is also believed that Jews and some Christians in both Sasanian and Byzantine territory may have been dissatisfied with the state of the two empires and either welcomed or were indifferent to the invading Muslim troops. However, Arab Christian confederations such as the Ghassanids initially allied themselves with the Byzantines. There were also instances of working alliances being established between the Sasanians and the Byzantines in spite of their prior hostilities, such as when they combined forces against the Rashidun army during the Battle of Firaz in 633/634. A significant portion of the lands that the Byzantines lost to Muslim offensives in Syria and in Egypt had been taken back from Sasanian occupation just a few years earlier.\n== Background ==\n=== Pre-Islamic Arabia ===\nArabia was a region that hosted several cultures, some urban and others nomadic Bedouin. Arabian society was divided along tribal and clan lines, with the most important divisions being between the \"southern\" and \"northern\" tribal associations. Both the Byzantine and Sasanian empires competed for influence in Arabia by sponsoring clients; in turn, Arabian tribes sought the patronage of the two rival empires to bolster their own ambitions. The Lakhmid kingdom, which covered parts of what is now southern Iraq and northern Saudi Arabia was a client of Persia, and in 602 the Persians deposed the Lakhmids to take over the defense of the southern frontier. This left the Persians exposed and overextended, helping to set the stage for the collapse of the Persian Empire later that century.\nSouthern Arabia had, for thousands of years, been a wealthy region at t",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "한 달 만에 메디나가 제국의 시작점이라면, 어떻게 그렇게 넓은 영토를 장악했을까요?",
+      "sentences": 7
+    },
+    "narration": "한 달 만에 메디나가 제국의 시작점이라면, 어떻게 그렇게 넓은 영토를 장악했을까요?  \n\n622년, 무함마드는 메디나에서 최초의 이슬람 국가를 세우며 정복의 발판을 마련했습니다. 라시둔 칼리프와 우마이야 칼리프의 지휘 아래 군대는 빠르게 움직였고, 중동을 시작으로 북아프리카, 남아시아, 중앙아시아, 남유럽까지 확장되었습니다.  \n\n그런데 이 모든 정복은 단 1세기 안에 이뤄졌다는 점이 놀랍습니다. 불과 100년 만에 광대한 지역을 장악했다는 사실은 당시 군사 조직과 신앙 전파의 효율성을 보여줍니다.  \n\n결국 메디나에서 시작된 작은 국가가 1세기 내에 대제국으로 성장한 이유는, 그 시기의 정치·사회적 공백을 이슬람이 채워줬기 때문이라고 할 수 있습니다.  \n\n그렇다면, 한 달의 시작이 얼마나 큰 변화를 만들 수 있었는지 다시 생각해 보게 됩니다.",
+    "title_line1": "인도 초기 이슬람 정복",
+    "title_line2": "한 달이 제국을 만들다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "한 달에 *제국* 탄생"
+      },
+      {
+        "s": 2,
+        "text": "622년 *메디나* 출발"
+      },
+      {
+        "s": 4,
+        "text": "단 *1세기* 정복"
+      }
+    ],
+    "image_queries": [
+      "Muslim empire birth map",
+      "Medina historic cityscape",
+      "early Muslim army camp",
+      "ancient conquest map",
+      "Islamic expansion routes",
+      "medieval trade caravan",
+      "desert sunrise over oasis",
+      "Early Muslim conquests",
+      "India landmark",
+      "India culture"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "메디나",
+      "무함마드",
+      "라시둔칼리프",
+      "우마이야칼리프",
+      "이슬람정복"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "이슬람 제국 확장",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "622년",
+          "value": null,
+          "text": "메디나서 국가 설립"
+        },
+        {
+          "label": "1세기",
+          "value": null,
+          "text": "전역 정복"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A sweeping aerial view of early 7th-century Medina at sunrise, with dust trails indicating rapid movement of caravans departing the city toward distant horizons.",
+      "A low-angle shot of a bustling Medina market in 622 CE, showing traders loading supplies onto camel caravans ready for conquest.",
+      "A panoramic scene of the Prophet Muhammad standing beside a modest mosque in Medina, overseeing the first council of the Islamic state under a clear desert sky.",
+      "A dynamic side view of Rashidun and Umayyad cavalry charging across the Syrian desert, dust clouds billowing behind them as they head toward the Mediterranean coast.",
+      "A bird's-eye perspective of a sprawling army camp on the outskirts of Egypt, tents and banners fluttering, illustrating the swift expansion into North Africa.",
+      "A close-up of a weathered map spread on a wooden table, hands pointing to conquered territories across three continents, emphasizing the one‑century timeline.",
+      "A wide-angle view of disciplined infantry marching through a mountain pass in Central Asia, their uniforms reflecting the efficient military organization of the era.",
+      "A twilight scene of a bustling city square in Damascus, now transformed into a thriving capital, symbolizing the political vacuum filled by Islamic governance.",
+      "A high-angle shot of a diverse crowd gathering in a newly built mosque in Iberia, representing the spread of faith across Southern Europe within a century.",
+      "A dramatic sunrise over the desert horizon, with a single camel silhouette against the light, evoking the profound impact of a month‑long beginning."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Al Ameer son",
+        "license": "CC BY-SA 4.0",
+        "title": "Syria toward end of Muslim conquest, c. 638.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Syria_toward_end_of_Muslim_conquest,_c._638.png",
+        "id": "c:89111638"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Konevi",
+        "page": "https://pixabay.com/photos/mosque-masjid-al-nabawi-medina-3724921/",
+        "id": 3724921
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/queensland-australia-barracks-camp-81537/",
+        "id": 81537
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Joa70",
+        "page": "https://pixabay.com/photos/knight-soldier-portugal-rich-6790910/",
+        "id": 6790910
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Adolf Nikolay Boyarsky",
+        "license": "Public domain",
+        "title": "Mosque in Hami’s Muslim District, Showing the Juxtaposition of Chinese Roof and Islamic Do",
+        "page": "https://commons.wikimedia.org/wiki/File:Mosque_in_Hami%E2%80%99s_Muslim_District,_Showing_the_Juxtaposition_of_Chinese_Roof_and_Islamic_Dome._Xinjiang,_China,_1875_WDL2066.png",
+        "id": "c:31390586"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Konevi",
+        "page": "https://pixabay.com/photos/caravan-date-animation-camel-model-4261887/",
+        "id": 4261887
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Yolanda_Jost",
+        "page": "https://pixabay.com/photos/donkey-desert-siwa-egypt-oasis-8575524/",
+        "id": 8575524
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "Couleur",
+        "page": "https://pixabay.com/photos/crocuses-flowers-plants-7837426/",
+        "id": 7837426
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/india-mysore-palace-architecture-10514028/",
+        "id": 10514028
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/fashion-woman-indian-girl-young-5255195/",
+        "id": 5255195
+      }
+    ],
+    "image_queries_done": [
+      "Muslim empire birth map",
+      "Medina historic cityscape",
+      "early Muslim army camp",
+      "ancient conquest map",
+      "Islamic expansion routes",
+      "medieval trade caravan",
+      "desert sunrise over oasis",
+      "Early Muslim conquests",
+      "India landmark",
+      "India culture"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0601_인도_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0601_인도_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0601_인도.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0601_인도.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
