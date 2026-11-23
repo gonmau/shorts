@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-23 17:40:34 (KST) · 기록 2183건 · 소재 731개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-24 08:38:45 (KST) · 기록 2184건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -38,10 +38,16 @@
 | update_description | 6 | 0 | 17초 |
 | upload_to_youtube | 34 | 0 | 25분 31초 |
 | 롱폼 | 80 | 13 | 10시간 15분 |
-| 쇼츠 | 127 | 6 | 12시간 17분 |
+| 쇼츠 | 128 | 6 | 12시간 17분 |
 | 코드업데이트 | 124 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-24
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 08:38 | Actions | 쇼츠 | culture-shorts-pipeline #134 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45283019293 |
 
 ### 2026-11-23
 
@@ -2132,28 +2138,3 @@
 | 11:33 | Actions | 롱폼 | culture-longform #7 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40259610370 |
 | 07:18 | Actions | 롱폼 | culture-longform #6 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40237149243 |
 | 06:38 | Actions | 롱폼 | culture-longform #5 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40236351349 |
-
-### 2026-10-25
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 21:55 | PC | 코드업데이트 | gonmau/shorts: 10개 (build_longform.py, build_video.py, layout.py, local_ui.py, longform_render.py, make_thumbnail.py) | ✅ |  |  |
-| 21:17 | PC | generate_culture_facts | generate_culture_facts.py --count 5 | ✅ | 47초 |  |
-| 21:02 | PC | 코드업데이트 | gonmau/shorts: 7개 (build_longform.py, generate_culture_facts.py, generate_script.py, local_ui.py, longform_render.py, longform_script.py) | ✅ |  |  |
-| 17:16 | Actions | 쇼츠 | culture-shorts-pipeline #89 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40174664322 |
-| 16:54 | Actions | 쇼츠 | culture-shorts-pipeline #88 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40174488793 |
-| 16:50 | Actions | 쇼츠 | culture-shorts-pipeline #87 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40174151743 |
-| 16:21 | PC | 롱폼 | build_longform.py --mode manual --indexes 11,12,13,14,15,16,17,18,19,20 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 1시간 2분 |  |
-| 14:02 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only | ✅ | 4분 0초 |  |
-| 13:57 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
-| 13:57 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
-| 13:56 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
-| 13:32 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 13분 1초 |  |
-| 12:53 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --title  | ✅ | 17분 43초 |  |
-| 12:34 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 8 --instruction 150~500유로라 | ✅ | 11초 |  |
-| 12:33 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 7 --instruction 복잡한 교통 공학적 | ✅ | 9초 |  |
-| 12:32 | PC | 롱폼 | build_longform.py --mode manual --indexes 5,7,8 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only --only 5 --instruction "풍속영업법" 같은 | ✅ | 9초 |  |
-| 12:27 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --plan-only | ✅ | 47초 |  |
-| 12:26 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme  --count 3 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --dry-run | ✅ | 0초 |  |
-| 11:31 | PC | 롱폼 | build_longform.py --mode manual --indexes 0,1,2,3,4,8,10,56,57,58 --theme  --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --cli | ✅ | 4분 18초 |  |
-| 00:35 | PC(과거) | DB커밋 | facts_db.json: chore: sync facts_db.json from PC [skip ci] | ✅ |  | https://github.com/gonmau/shorts/commit/e5dbe10b6e665374debaf826ba90cb52e6384f8a |
