@@ -59053,7 +59053,7 @@
     "verify_note": "Hungary",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "부다페스트 거리 표지판을 읽어 보셨나요? 글자가 전혀 인도유럽어와 닮지 않다면, 바로 헝가리어 때문입니다. 헝가리는 다뉴브 강 유역에 자리한 중앙유럽의 내륙국으로, 인구는 950만 명이 넘으며 대부분 마자르족과 로마니족이 살아갑니다.  \n\n그런데 헝가리어는 유럽에서 인도유럽어족에 속하지 않은 몇 안 되는 언어 중 하나라는 점이 흥미롭습니다. 인도유럽어족이 아닌 언어라는 분류는 순수히 언어학적 기준이며, 실제 사용 인구는 시대에 따라 변동될 수 있다는 점을 기억해 주세요.  \n\n이처럼 헝가리의 거리와 일상 속에 숨겨진 독특한 언어 체계는, 유럽의 대부분이 인도유럽어를 쓰는 상황과는 확연히 다른 색을 보여줍니다. 결국 표지판을 읽을 때 느낀 이질감, 바로 헝가리어가 만든 작은 문화적 퍼즐이었습니다.",
     "title_line1": "헝가리 거리 표지판",
     "title_line2": "인도유럽어 아니야?",
@@ -59078,7 +59078,8 @@
       "Hungarian language text",
       "Hungarian language textbook page",
       "Budapest street view with signs",
-      "Hungarian street sign close-up"
+      "Hungarian street sign close-up",
+      "Hungary"
     ],
     "scene_count": 8,
     "grounding": {
@@ -59093,7 +59094,120 @@
     },
     "curate_score": 4,
     "curate_why": "언어 특이, 시각·충격 약함",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "헝가리어",
+      "부다페스트",
+      "마자르",
+      "로마니",
+      "언어학"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "인구",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "명",
+      "rows": [
+        {
+          "label": "인구",
+          "value": 950.0,
+          "text": "950만 명"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0497_헝가리_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0497_헝가리_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "Budapest street sign, documentary scene",
+      "Hungarian alphabet letters, documentary scene",
+      "Hungarian countryside landscape, documentary scene",
+      "Hungarian language text, documentary scene",
+      "Hungarian language textbook page, documentary scene",
+      "Budapest street view with signs, documentary scene",
+      "Hungarian street sign close-up, documentary scene",
+      "Hungary, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Budapest street sign, documentary scene",
+      "Hungarian alphabet letters, documentary scene",
+      "Hungarian countryside landscape, documentary scene",
+      "Hungarian language text, documentary scene",
+      "Hungarian language textbook page, documentary scene",
+      "Budapest street view with signs, documentary scene",
+      "Hungarian street sign close-up, documentary scene",
+      "Hungary, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Budapest street sign, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungarian alphabet letters, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungarian countryside landscape, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungarian language text, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungarian language textbook page, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Budapest street view with signs, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungarian street sign close-up, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Hungary, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Budapest street sign",
+      "Hungarian alphabet letters",
+      "Hungarian countryside landscape",
+      "Hungarian language text",
+      "Hungarian language textbook page",
+      "Budapest street view with signs",
+      "Hungarian street sign close-up",
+      "Hungary"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0497_헝가리.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0497_헝가리.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "nLismqbayDU",
+    "uploaded_at": "2026-11-24T08:32:06.432682+09:00"
   },
   {
     "topic": "Thali, 한 판에 온갖 음식이 담긴 남아시아식 대접",
@@ -59235,7 +59349,7 @@
     "verify_note": "Shehuo",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:28.395870+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59280,7 +59394,8 @@
       "rural Chinese countryside celebration",
       "villagers celebrating Chinese new year",
       "fireworks lighting night sky",
-      "spectators feeling festival heat"
+      "spectators feeling festival heat",
+      "Shehuo"
     ],
     "scene_count": 10,
     "curate_score": 5,
@@ -59297,7 +59412,126 @@
       "sentences": 9,
       "ground_done": true
     },
-    "source_text": "Shehuo (Chinese: 社火; pinyin: Shèhuǒ; lit. 'community fire'), also known as earth and fire, is a Chinese traditional carnival-like folk celebration prevailing mainly in the countryside of Northern China during the Chinese New Year, featuring dragon dance, lion dance, Yangko dance, traditional Chinese opera, stilt walkers, fire breathing, drumming and other folk arts. The roles in Shehuo encompass hundreds of character figures, including traditional deities and immortals, buddhas, sages, heroes, and various mythical creatures from ancient mythology, historical tales, and folklore.\nWith a long history, these festive affairs are rooted in primitive sacrificial activities in which ancient people prayed for harvest and affluence with their songs and dances from \"She\" (the God of Earth) and \"Huo\" (literally meaning fire). Over time, it gradually evolved into a folk custom staged during the Spring Festival and Lantern Festival, believed to ward off bad luck and usher in a fresh start for the new year. Shehuo has been inscribed on the official intangible cultural heritage lists of Shaanxi, Qinghai, Gansu, and related regions; in 2006, it was inscribed into China's National Intangible Cultural Heritage list.\n== History ==\nShehuo traces its history back to ancient sacrificial ceremonies held to pray for good harvests about 2,000 years ago. Known as Saishe (Chinese: 塞社; lit. 'offering sacrifices in gratitude to deities') in early Chinese texts, it originated from an ancient community ritual known as Chunqi Qiubao (Chinese: 春祈秋報; lit. 'spring prayer and autumn thanksgiving'), which itself developed from the earlier \"Three Big Sacrifices\", meaning the rain-seeking ritual of yu (雩), the year-end thanksgiving ritual of zha/la (蜡/臘) and particularly the exorcism ritual of nuo (儺). The first Shehuo event dates back to the Qin and Han dynasties. Combining \"Hundred Dramas\" with other acrobatics in the ancient sacrifices to the Earth God and the Valley God, it was also known as \"Shooting Tiger\" (射虎) and gradually evolved into an entertainment activity to welcome the Spring Festival. Shehuo traditions further developed in the Tang and Song dynasties and flourished in the Ming and Qing dynasties. Starting from the late Qing and Republican eras, Shehuo increasingly incorporated elements of regional opera, folk dance, and Buddhist ritual gestures, resulting in a rich cultural syncretism. In 2026, a traditional Shehuo performance in Haidong, Qinghai, was recognized by Guinness World Records as the \"largest Shehuo performance\".\n== Practices ==\nThere are two major types of Shehuo, Pose Shehuo and Performance Shehuo. Pose Shehuo includes forms such as Cloth Shehuo, Carrying Shehuo, Horse Shehuo, Car Shehuo, Xinzi Shehuo, Mountain Shehuo, and Masked Shehuo, which are performed in processions and primarily showcase character displays and craftsmanship. Performance Shehuo includes forms such as Floor Shehuo and Stilt-walking Shehuo, which are mainly performed in open spaces and involve martial arts-style combat. Most of the performances are inspired by myths, legends, and historical stories. Ancient Chinese literary classics, such as Romance of the Three Kingdoms, The Investiture of the Gods, and Journey to the West, are often adapted.\n=== Masks ===\nShehuo masks are props worn by performers during Shehuo practice to disguise themselves as gods or righteous figures that are said to have magic powers in folktales or legends. A painted wooden ladle mask, known as Mashao facial makeup, is often used on Shehuo, and people hang them on doors to protect their houses and ward off evil during the festival.\n== Regional variations ==\n=== Shanxi ===\nAccording to local officials, Shanxi is famous for its Shehuo performance because the flourishing of merchants during the Ming"
+    "source_text": "Shehuo (Chinese: 社火; pinyin: Shèhuǒ; lit. 'community fire'), also known as earth and fire, is a Chinese traditional carnival-like folk celebration prevailing mainly in the countryside of Northern China during the Chinese New Year, featuring dragon dance, lion dance, Yangko dance, traditional Chinese opera, stilt walkers, fire breathing, drumming and other folk arts. The roles in Shehuo encompass hundreds of character figures, including traditional deities and immortals, buddhas, sages, heroes, and various mythical creatures from ancient mythology, historical tales, and folklore.\nWith a long history, these festive affairs are rooted in primitive sacrificial activities in which ancient people prayed for harvest and affluence with their songs and dances from \"She\" (the God of Earth) and \"Huo\" (literally meaning fire). Over time, it gradually evolved into a folk custom staged during the Spring Festival and Lantern Festival, believed to ward off bad luck and usher in a fresh start for the new year. Shehuo has been inscribed on the official intangible cultural heritage lists of Shaanxi, Qinghai, Gansu, and related regions; in 2006, it was inscribed into China's National Intangible Cultural Heritage list.\n== History ==\nShehuo traces its history back to ancient sacrificial ceremonies held to pray for good harvests about 2,000 years ago. Known as Saishe (Chinese: 塞社; lit. 'offering sacrifices in gratitude to deities') in early Chinese texts, it originated from an ancient community ritual known as Chunqi Qiubao (Chinese: 春祈秋報; lit. 'spring prayer and autumn thanksgiving'), which itself developed from the earlier \"Three Big Sacrifices\", meaning the rain-seeking ritual of yu (雩), the year-end thanksgiving ritual of zha/la (蜡/臘) and particularly the exorcism ritual of nuo (儺). The first Shehuo event dates back to the Qin and Han dynasties. Combining \"Hundred Dramas\" with other acrobatics in the ancient sacrifices to the Earth God and the Valley God, it was also known as \"Shooting Tiger\" (射虎) and gradually evolved into an entertainment activity to welcome the Spring Festival. Shehuo traditions further developed in the Tang and Song dynasties and flourished in the Ming and Qing dynasties. Starting from the late Qing and Republican eras, Shehuo increasingly incorporated elements of regional opera, folk dance, and Buddhist ritual gestures, resulting in a rich cultural syncretism. In 2026, a traditional Shehuo performance in Haidong, Qinghai, was recognized by Guinness World Records as the \"largest Shehuo performance\".\n== Practices ==\nThere are two major types of Shehuo, Pose Shehuo and Performance Shehuo. Pose Shehuo includes forms such as Cloth Shehuo, Carrying Shehuo, Horse Shehuo, Car Shehuo, Xinzi Shehuo, Mountain Shehuo, and Masked Shehuo, which are performed in processions and primarily showcase character displays and craftsmanship. Performance Shehuo includes forms such as Floor Shehuo and Stilt-walking Shehuo, which are mainly performed in open spaces and involve martial arts-style combat. Most of the performances are inspired by myths, legends, and historical stories. Ancient Chinese literary classics, such as Romance of the Three Kingdoms, The Investiture of the Gods, and Journey to the West, are often adapted.\n=== Masks ===\nShehuo masks are props worn by performers during Shehuo practice to disguise themselves as gods or righteous figures that are said to have magic powers in folktales or legends. A painted wooden ladle mask, known as Mashao facial makeup, is often used on Shehuo, and people hang them on doors to protect their houses and ward off evil during the festival.\n== Regional variations ==\n=== Shanxi ===\nAccording to local officials, Shanxi is famous for its Shehuo performance because the flourishing of merchants during the Ming",
+    "hashtags": [
+      "Shehuo",
+      "용춤",
+      "사자춤",
+      "양코춤",
+      "신화생물"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0500_중국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0500_중국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "Chinese village fire breathing, documentary scene",
+      "northern China rural festival, documentary scene",
+      "dragon lion yangko dance China, documentary scene",
+      "crowd dressed as mythic characters, documentary scene",
+      "colorful costumes fire show, documentary scene",
+      "rural Chinese countryside celebration, documentary scene",
+      "villagers celebrating Chinese new year, documentary scene",
+      "fireworks lighting night sky, documentary scene",
+      "spectators feeling festival heat, documentary scene",
+      "Shehuo, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Chinese village fire breathing, documentary scene",
+      "northern China rural festival, documentary scene",
+      "dragon lion yangko dance China, documentary scene",
+      "crowd dressed as mythic characters, documentary scene",
+      "colorful costumes fire show, documentary scene",
+      "rural Chinese countryside celebration, documentary scene",
+      "villagers celebrating Chinese new year, documentary scene",
+      "fireworks lighting night sky, documentary scene",
+      "spectators feeling festival heat, documentary scene",
+      "Shehuo, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Chinese village fire breathing, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "northern China rural festival, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "dragon lion yangko dance China, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "crowd dressed as mythic characters, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "colorful costumes fire show, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "rural Chinese countryside celebration, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "villagers celebrating Chinese new year, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "fireworks lighting night sky, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "spectators feeling festival heat, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Shehuo, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Chinese village fire breathing",
+      "northern China rural festival",
+      "dragon lion yangko dance China",
+      "crowd dressed as mythic characters",
+      "colorful costumes fire show",
+      "rural Chinese countryside celebration",
+      "villagers celebrating Chinese new year",
+      "fireworks lighting night sky",
+      "spectators feeling festival heat",
+      "Shehuo"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0500_중국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0500_중국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "tA11MX86Ri8",
+    "uploaded_at": "2026-11-24T08:34:14.970406+09:00"
   },
   {
     "topic": "라오스에서도 페이스(face)는 생존 규칙",
@@ -61313,7 +61547,7 @@
     "verify_note": "Lao cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:44.305181+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61328,7 +61562,70 @@
     },
     "curate_score": 6,
     "curate_why": "숫자와 식량량으로 시각적 흥미",
-    "curate_top": false
+    "curate_top": false,
+    "need": "surprise",
+    "emotion": "surprise",
+    "source_text": "Lao cuisine or Laotian cuisine (Lao: ອາຫານລາວ, pronounced [ʔàː.hǎːn láːw], RTGS: ahan lao) is the national cuisine of Laos.\nThe staple food of the Lao is sticky rice (Lao: ເຂົ້າໜຽວ, khao niao, [kʰȁw nǐaw]). Laos has the highest sticky rice consumption per capita in the world with an average of 171 kilograms (377 lb) of sticky rice consumed annually per person. Sticky rice is deeply ingrained in the culture, religious tradition, and national identity of Laos. It is a common belief within the Lao community that no matter where they are in the world, sticky rice will always be the glue that holds the Lao communities together, connecting them to their culture and to Laos. Affinity for sticky rice is considered the essence of what it means to be Lao. Often the Lao will refer to themselves as luk khao niao (Lao: ລູກເຂົ້າໜຽວ, [lùːk kʰȁw nǐaw]), which can be translated as 'children or descendants of sticky rice'.\nThe International Rice Research Institute (IRRI) has described Laos as a \"collector's paradise\". Laos has the highest degrees of biodiversity of sticky rice in the world. As of 2013, approximately 6,530 glutinous rice varieties were collected from five continents (Asia, South America, North America, Europe and Africa) where glutinous rice are grown for preservation at the International Rice Genebank (IRGC). The IRRI gathered more than 13,500 samples and 3,200 varieties of glutinous rice from Laos.\nThe trifecta of Laos' national cuisine are sticky rice, laab, and green papaya salad (Lao: ຕຳໝາກຫຸ່ງ, tam mak hung). The most famous Lao dish is laab (Lao: ລາບ, [lâːp]; sometimes also spelled larb, larp or laap), a spicy mixture of marinated meat or fish that is sometimes raw (prepared like ceviche) with a variable combination of herbs, greens, and spices.\nLao cuisine has many regional variations, corresponding in part to the fresh foods local to each region. A French legacy is still evident in the capital city, Vientiane, where baguettes (Lao: ເຂົ້າຈີ່, [kʰȁw tɕīː]) are sold on the street and French restaurants are common and popular, which were first introduced when Laos was a part of French Indochina.\n== Origins of the Lao cuisine ==\nThe Lao originally came from a northern region that is now part of China. As they moved south they brought their traditions with them. Due to historical Lao migrations from Laos into neighboring regions, Lao cuisine has influenced the mainly Lao-populated region of Northeastern Thailand, and Lao foods were also introduced to Cambodia and  Northern Thailand where the Lao have migrated.\nLike most Southeast Asian nations, Laos has been heavily influenced by Indian and Chinese culture. From time immemorial, Lao people traded directly with ancient China. It was the Indianization of Laos, however, that has had the most impact. The spread of Hinduism, Buddhism, and Islam into Southeast Asia during this period took with it Indian traditions and culture to what are now Indonesia, Malaysia, Singapore, Thailand, Burma, Cambodia and Laos where it took roots and continues to flourish to this day. It is also during this time that Buddhist monks introduced traditional Indian spices, curry, and coconut milk to Laos. However, unlike most of its neighbours, Lao people's affinity for glutinous or sticky rice and Lao cuisine's heavy focus on sticky rice meant that coconut milk and noodles never played a significant role in Lao cuisine. Instead, coconut milk, curry and noodles are limited to a few Laotian soups, noodle dishes and sticky rice-based desserts.\nWith the Columbian exchange, non-native crops—such as tomato, papaya, sweetcorn, pineapple, and chili peppers—were introduced to Southeast Asia probably through the various sea ports of modern-day Thailand, Cambodia, and Vietnam via the Philippines and Malacca. Through tr",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)"
+      ],
+      "advice": [],
+      "rounds": 2,
+      "first": "연간 171 kg, 라오스 사람들은 하루에 얼마나 먹을까요?",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "연간 171 kg, 라오스 사람들은 하루에 얼마나 먹을까요? 라오스의 주식은 찹쌀밥이며, 1인당 연간 171 kg을 소비합니다. 이는 세계에서 가장 높은 수준으로, 찹쌀밥은 라오스인의 일상과 정체성을 이어주는 접착제 역할을 합니다. 그런데 라오스인들은 해외에서 찹쌀밥을 찾지 못하면 고향을 그리워한다는 믿음이 전해집니다. 이렇게 많은 찹쌀밥이 라오스 문화에 얼마나 깊게 뿌리내렸는지 생각해 보면, 한 끼가 단순한 식사가 아니라 고향과의 연결고리라는 점이 새롭게 다가옵니다. 결국 연간 171 kg이라는 숫자는 라오스 사람들에게 찹쌀밥이 얼마나 큰 의미인지 보여주는 살아있는 증거입니다.",
+    "title_line1": "라오스 1인당 171킬로",
+    "title_line2": "하루에 얼마나?",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "라오스 주식 *찹쌀밥*"
+      },
+      {
+        "s": 3,
+        "text": "세계 최고 *소비량*"
+      },
+      {
+        "s": 4,
+        "text": "고향 그리면 *찹쌀밥*"
+      }
+    ],
+    "image_queries": [
+      "Lao rice field sunrise",
+      "Laos sticky rice",
+      "Sticky rice bowl high contrast",
+      "Laos sticky rice nostalgia",
+      "Traditional Lao rice ceremony",
+      "Sticky rice sack Laos"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "찹쌀밥",
+      "라오스식문화",
+      "연간소비량",
+      "전통음식",
+      "식문화"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "라오스 연간 찹쌀밥 소비",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "kg",
+      "rows": [
+        {
+          "label": "연간소비",
+          "value": 171.0,
+          "text": "171 kg"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "아시아에서 78.8%가 천주교인 필리핀(Philippines) 성주간",
@@ -61665,7 +61962,7 @@
     "verify_note": "Mohammad Reza Pahlavi",
     "confidence": "source",
     "created_at": "2026-11-03T17:55:48.949357+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -61680,7 +61977,67 @@
     },
     "curate_score": 6,
     "curate_why": "샤의 과도한 칭호와 권력 과시",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "His Imperial Majesty, The Shahanshah-Aryamehr (26 October 1919 – 27 July 1980) was the last Shah of Iran, reigning from 1941 to 1979 as the second monarch of the Pahlavi dynasty. He succeeded his father, Reza Shah, and ruled the Imperial State of Iran until his overthrow in the Islamic Revolution. During his reign, he assumed the title Shahanshah (lit. 'King of Kings'), and held several other titles, including Aryamehr (lit. 'Light of the Aryans') and Bozorg Arteshtaran (lit. 'Grand Army Commander').\nBorn in Tehran, Pahlavi was named crown prince upon his father's coronation in 1926, and later served as an officer in the Iranian Army. The Anglo-Soviet invasion of Iran in 1941 forced Reza Shah's abdication and Mohammad Reza's accession to the throne. His early reign was marked by political instability, including the Iran crisis of 1946 and a turbulent struggle for power with prime minister Mohammad Mosaddegh, who nationalized the British-owned oil industry with widespread popular support. However, a subsequent decline in oil exports and mounting economic difficulties weakened Mosaddegh's position. Amid efforts to preserve his premiership by expanding his authority, Mosaddegh was removed from office in the 1953 Iranian coup d'état, carried out by pro-monarchy forces with British and American involvement. The coup consolidated the Shah's power, paving the way for increasingly autocratic rule.\nIn 1963, the Shah introduced the White Revolution, a broad program of economic and social modernisation accompanied by heavy investment in infrastructure and domestic industry, aimed at realising his vision of a \"Great Civilization\". Iran subsequently experienced rapid economic growth, with real GDP per capita nearly tripling between 1963 and 1976. Living standards improved substantially, although the economic benefits were unevenly distributed. With American support, the Shah undertook an extensive military buildup, establishing Iran as the preeminent military power in the Persian Gulf, and independently sought to extend the country's influence into the Indian Ocean. The 1973 Sale and Purchase Agreement effectively nationalised Iran's petroleum operations, and surging oil revenues thereafter fuelled an expansion of government investment. However, rapid spending strained the country's absorptive capacity, contributing to inflation, shortages, and persistent economic inequality.\nDiscontent over Iran's socioeconomic conditions and political repression fuelled growing opposition to the monarchy in the late 1970s. In January 1978, a newspaper article attacking dissident cleric Ruhollah Khomeini sparked protests that rapidly developed into nationwide demonstrations. The crisis intensified with the Cinema Rex fire, the Jaleh Square massacre, and widespread strikes beginning in October, leaving the Shah's position increasingly untenable. On 16 January 1979, the Shah left Iran for exile, transferring his duties to a regency council. Within a month, however, the monarchy collapsed, and Khomeini emerged as the supreme leader of the new Islamic republic. After encountering difficulties obtaining asylum in various countries amid the Iran hostage crisis, Pahlavi died in exile on 27 July 1980 in Egypt, where he had been welcomed by President Anwar Sadat. \nPahlavi's legacy remains divisive, reflecting his authoritarian rule, political repression, human rights violations, and close alignment with Western powers, alongside his efforts to modernize Iran's economy and enhance its geopolitical influence. Positive views of his reign have persisted among segments of the Iranian population and diaspora, becoming particularly visible during the 2025–2026 Iranian protests through pro-Pahlavi and monarchist slogans.\n== Early life, family and education ==\nMohammad Reza wa",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 4번 문장 '이 세 칭호는 1941년부터 1979년 혁명 전까지 공…' — 본문에 공식 인정 기간·퇴위 후 서류 보유 언급 없음"
+      ],
+      "advice": [
+        "첫 문장이 김",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "1941년 영국‑소련 침공으로 왕위에 오른 뒤, 모하마드 레자 팔라비는 “샤왕왕·아리아메흐르·보즈르고 아르테시탄”이라는 세 가지 칭호를 동시에 사용했습니다.",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "1941년 영국‑소련 침공으로 왕위에 오른 뒤, 모하마드 레자 팔라비는 “샤왕왕·아리아메흐르·보즈르고 아르테시탄”이라는 세 가지 칭호를 동시에 사용했습니다. 샤왕왕은 ‘왕중의왕’이라는 뜻으로 절대 통치를 강조했고, 아리아메흐르는 ‘아리안의 빛’이라며 자신의 민족적 정체성을 부각했습니다. 보즈르고 아르테시탄은 ‘대군대장’이라는 의미로, 그는 직접 군 장군으로 자처하며 군사력을 과시했습니다. 이 세 칭호는 1941년부터 1979년 혁명 전까지 공식적으로 인정됐으며, 퇴위 후에도 그의 공식 서류에 남아 있었습니다. 결국 그는 다중 칭호를 통해 정치·민족·군사 세 영역을 모두 장악하려 했고, 그 결과 “왕중의왕”이라는 이미지가 완성되었습니다. 이는 그의 권위가 단순한 왕권을 넘어선 복합적인 힘의 상징이었음을 보여줍니다.",
+    "title_line1": "이란 샤, 세 칭호",
+    "title_line2": "왕중의왕’은 왜?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "샤왕왕·*절대*통치"
+      },
+      {
+        "s": 2,
+        "text": "아리아메흐르·*빛*"
+      },
+      {
+        "s": 3,
+        "text": "보즈르고·*대군대장*"
+      },
+      {
+        "s": 5,
+        "text": "다중 칭호·*권력*"
+      }
+    ],
+    "image_queries": [
+      "Iranian royal crown",
+      "Ariamehr sun emblem",
+      "Iranian military uniform",
+      "Iranian royal decree",
+      "Iranian throne room",
+      "Iranian palace interior"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "모하마드레자팔라비",
+      "샤왕왕",
+      "아리아메흐르",
+      "보즈르고아르테시탄",
+      "이란혁명"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    }
   },
   {
     "topic": "인형 전시로 전해지는 남인도 신화",
@@ -62839,7 +63196,7 @@
     "verify_note": "Carnival in the Netherlands",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:01.860866+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -62852,7 +63209,92 @@
     },
     "curate_score": 6,
     "curate_why": "역할 전환 축제, 강렬한 시각 변환",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "Carnival in the Netherlands (Dutch: Carnaval; also called \"vastenavond\" – eve of the fasting or Limburgish: \"vastelaovend\") is a festival held mainly in the Southern and Eastern regions of the Netherlands with an emphasis on role-reversal and the suspension of social norms, as part of celebrations of Carnival. The feast was assimilated by the Catholic Church, taking elements from ancient pagan spring festivals and is celebrated in the three days preceding the Christian holidays of Ash Wednesday and Lent.\nFrom an anthropological point of view, Carnival is a reversal ritual, in which social roles are reversed and norms about desired behavior are suspended. Winter was thought of as the reign of the winter spirits that were to be driven out for summer to return. Carnival can thus be regarded as a rite of passage from darkness to light, from winter to summer: a fertility celebration, the first spring festival of the new year.\nIt precedes the Christian penitential season of Lent. The first day of Carnaval is six weeks before Easter Sunday. Carnival officially begins on Sunday and lasts three days until the start of Lent's first day, Ash Wednesday, at midnight. Nowadays the celebrations often start on Thursday evening though, which makes it in practice a six-day celebration. Many people in modern times do not relate the holiday at all with religion, but its date is still set before the start of the Christian season of Lent.\nIn the southern part of the Netherlands (Limburg and North Brabant) during Carnival, normal daily life comes to a near stop. Roads are temporarily blocked and many local businesses close for the week because many employees take days off during and after Carnival. According to post-Napoleon tradition, the feast lasts from Sunday until Tuesday. In recent years the feast usually starts on Saturday. Also Friday evening (or at schools at Friday afternoon) and in some places Thursday (Ouwe Wijven) are considered the start of Carnival, which makes it a six days' celebration. The festivities last the entire day and well into the nights. Some parades and many balls and bonte avonden or other meetings are held in the weeks before the official Carnival, but never before the first official court meeting on 11 November. 11 is considered the fools' number, so 11-11 (De elfde van de elfde) at 11:11(:11) is a prominent moment. Historically the 40 days of Lent would start on Wednesday at midnight and continue until Easter. Nowadays it is still the official ending of Carnival, though some Carnival activities such as herring eating are traditionally held on Wednesday after Carnival. 20 days into Lent there might be another parade or festivities, called \"Half-Vasten\" (Half-Lent). Lent itself is generally not practiced anymore by the Southern Dutch population as a result of irreligion dominating the area nowadays.\n== Name origin ==\nThe oldest word which points in the direction of the word \"Carnival\" is listed on a certificate from the Italian Subiaco from 965 CE as a timestamp Carnelevare. Also known from the 13th century are the words Carnisprivialis, Carnis Privium and in an old Liège text the term Quarnivalle.\nThe origin can be traced to the Latin expression Carne Levare, or Italian Carne lavare or Carnem levare which with reasonable certainty can be translated into \"farewell to the flesh\" or \"taking away the flesh\", which was a ritual to prelude lent. Two other, less likely, explanations that the term would be a contraction of the Latin Carne (meat) and Paler (rule), literally \"the time that meat reigns\" and the Italian Carnueale or the French Carne Avalis (both mean so much as \"devour flesh\") are given as well.\n== Dates ==\nEaster can fall on 22 March at the earliest and on 25 April at the latest. As a result, the earliest possible Ca",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 1번 문장 '네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사…' — 본문에 사장이 직원, 주민이 왕이 된다는 구체적 예시 없음"
+      ],
+      "advice": [
+        "첫 문장에 숫자·대비·질문·걸린 것이 없음",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사장이 직원이 되고 주민이 ‘왕’이 되는 광경이 펼쳐집니다.",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사장이 직원이 되고 주민이 ‘왕’이 되는 광경이 펼쳐집니다.  \n\n이 축제는 교회가 받아들인 고대 이교도 봄 의식을 섞어 만든, 사회적 역할이 뒤바뀌고 일상 규범이 일시 정지되는 3일간(공식적으로는 일요일부터 화요일까지) 열리는 행사입니다.  \n\n카니발은 부활절 전 6주째 일요일에 시작해 사순절 전야인 재의 수요일 자정까지 이어지며, 현대에는 목요일 저녁부터 시작해 실제로는 6일간 지속되기도 합니다.  \n\n남부 림뷔르크·노르트 브라반트 지역에서는 거리와 도로가 차단되고, 많은 가게가 문을 닫을 정도로 일상이 멈춥니다. 사람들은 권위와 계층을 뒤집으며 ‘역전 의식’ 속에 자유를 만끽하고, 파레이드와 볼, ‘보통 밤’이 이어지는 동안 웃음과 혼란이 뒤섞인 새로운 질서가 살아 숨쉽니다.  \n\n축제가 끝나면 일상이 복귀하지만, 그 짧은 기간에 체험하는 ‘역전된 하루’가 바로 네덜란드 카니발의 정체입니다.",
+    "title_line1": "네덜란드 카니발",
+    "title_line2": "사장↔직원,주민↔왕!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*사장* 직원 변신"
+      },
+      {
+        "s": 2,
+        "text": "역전된 *권위*"
+      },
+      {
+        "s": 4,
+        "text": "일상 *정지* 3일"
+      },
+      {
+        "s": 5,
+        "text": "새로운 *질서* 살아"
+      }
+    ],
+    "image_queries": [
+      "Netherlands boss employee transformation",
+      "Netherlands reversed authority",
+      "Netherlands carnival parade",
+      "Netherlands daily pause",
+      "Netherlands new order",
+      "post carnival quiet street"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "카니발",
+      "역전의식",
+      "림뷔르크",
+      "노르트브라반트",
+      "사순절"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "카니발 기간",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "공식",
+          "value": 3.0,
+          "text": "3일"
+        },
+        {
+          "label": "현대",
+          "value": 6.0,
+          "text": "6일"
+        },
+        {
+          "label": "시작",
+          "value": 6.0,
+          "text": "6주"
+        },
+        {
+          "label": "끝",
+          "value": 0.0,
+          "text": "자정"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "동방 정교회 의식 음식 콜리바(Koliva)",
@@ -63091,7 +63533,8 @@
       "on": false,
       "none": true,
       "why": "대본과 대조해 쓸 수 있는 행이 부족"
-    }
+    },
+    "redo_ts": 1795474750.56907
   },
   {
     "topic": "이탈리아 요리에 토마토가 없었다?",
@@ -67241,7 +67684,8 @@
       "sentences": 7,
       "ground_done": true
     },
-    "review_needed": true
+    "review_needed": true,
+    "redo_ts": 1795474750.5690885
   },
   {
     "topic": "인도 승려 프레마난드 마하라지(Premanand Maharaj)의 영적 일상",
@@ -71169,7 +71613,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "redo_ts": 1795474750.5690923
   },
   {
     "topic": "에스토니아 반란군이 폴란드‑스웨덴 전쟁에 끼친 역할",
@@ -72083,7 +72528,7 @@
     "caveat": "이 내용은 한국 민방위 지침(2023년 기준)을 기반으로 하며, 다른 국가나 지역의 지침과는 차이가 있을 수 있습니다.",
     "confidence": "high",
     "verify_note": "한국 전쟁 대비 생존배낭 아이템, 민방위 생존키트 권고사항",
-    "status": "scripted",
+    "status": "video_done",
     "created_at": "2026-11-11T01:42:19.318170+00:00",
     "theme": "키워드",
     "seed_keyword": "전쟁 대비 생존배낭, 꼭 챙겨야 할 5가지 아이템",
@@ -72134,92 +72579,84 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "생수 생존키트",
+      "생수",
       "bottled drinking water emergency supplies",
       "emergency food canned food survival supplies",
-      "high calorie canned food",
+      "통조림",
       "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
-      "personal emergency medication supplies",
+      "통조림 오프너",
       "emergency blanket raincoat face mask",
       "complete disaster preparedness survival backpack"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "pixabay",
-        "user": "StarShopping",
-        "page": "https://pixabay.com/vectors/bottledwater-water-bottle-mineral-4127009/",
-        "id": 4127009,
-        "type": "illustration"
+        "source": "commons",
+        "user": "FacetsOfNonStickPans",
+        "license": "CC BY-SA 4.0",
+        "title": "Home water filters, water purifiers, and bottled water in India.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Home_water_filters,_water_purifiers,_and_bottled_water_in_India.jpg",
+        "id": "c:127881355"
       },
       {
         "scene": 2,
-        "source": "pixabay",
-        "user": "congerdesign",
-        "page": "https://pixabay.com/photos/bottle-mineral-water-glass-pour-2032980/",
-        "id": 2032980
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "bottled drinking water emergency supplies, documentary scene"
       },
       {
         "scene": 3,
-        "source": "pixabay",
-        "user": "goodlynx",
-        "page": "https://pixabay.com/photos/canned-food-fish-sardines-cans-2694736/",
-        "id": 2694736
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "emergency food canned food survival supplies, documentary scene"
       },
       {
         "scene": 4,
-        "source": "pixabay",
-        "user": "OpenClipart-Vectors",
-        "page": "https://pixabay.com/vectors/ham-tin-pork-canned-meat-food-575930/",
-        "id": 575930,
-        "type": "illustration"
+        "source": "commons",
+        "user": "Ser Amantio di Nicolao",
+        "license": "CC BY-SA 4.0",
+        "title": "Beer canning apparatus used at Attaboy Brewing in Frederick, Maryland.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Beer_canning_apparatus_used_at_Attaboy_Brewing_in_Frederick,_Maryland.jpg",
+        "id": "c:152048909"
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "vectronom",
-        "page": "https://pixabay.com/vectors/radio-cassette-speaker-sound-audio-3634616/",
-        "id": 3634616,
-        "type": "illustration"
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "휴대용 라디오, documentary scene"
       },
       {
         "scene": 6,
-        "source": "pixabay",
-        "user": "WikimediaImages",
-        "page": "https://pixabay.com/photos/led-flashlight-light-torch-2202247/",
-        "id": 2202247,
-        "type": "photo"
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "emergency flashlight survival equipment, documentary scene"
       },
       {
         "scene": 7,
-        "source": "pixabay",
-        "user": "stevepb",
-        "page": "https://pixabay.com/photos/first-aid-kit-first-aid-kit-medical-908591/",
-        "id": 908591
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "first aid kit bandages antiseptic supplies, documentary scene"
       },
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "OpenClipart-Vectors",
-        "page": "https://pixabay.com/vectors/can-cooking-kitchen-tin-tool-1300207/",
-        "id": 1300207,
-        "type": "illustration"
+        "user": "WikimediaImages",
+        "page": "https://pixabay.com/photos/kitchen-classic-can-opener-2202231/",
+        "id": 2202231
       },
       {
         "scene": 9,
-        "source": "pixabay",
-        "user": "coyot",
-        "page": "https://pixabay.com/photos/mask-surgical-mask-virus-protection-4898571/",
-        "id": 4898571
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "emergency blanket raincoat face mask, documentary scene"
       },
       {
         "scene": 10,
-        "source": "pixabay",
-        "user": "Mollyroselee",
-        "page": "https://pixabay.com/photos/man-building-apocalyptic-war-9181534/",
-        "id": 9181534
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "complete disaster preparedness survival backpack, documentary scene"
       }
     ],
     "image_source": "pixabay",
@@ -72369,7 +72806,83 @@
     },
     "curate_score": 5,
     "curate_why": "생존배낭 아이템은 일반적, 충격 요소 부족",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "전쟁",
+      "재난",
+      "생존배낭",
+      "비상식량",
+      "응급처치"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "생존배낭 5가지",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "물",
+          "value": null,
+          "text": "2~3일 분량"
+        },
+        {
+          "label": "식량",
+          "value": null,
+          "text": "간편식·통조림"
+        },
+        {
+          "label": "라디오",
+          "value": null,
+          "text": "통신·정전 대비"
+        },
+        {
+          "label": "응급처치",
+          "value": null,
+          "text": "소독·붕대·약"
+        },
+        {
+          "label": "위생용품",
+          "value": null,
+          "text": "마스크·우의·담요"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0623_한국_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0623_한국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "생수, documentary scene",
+      "bottled drinking water emergency supplies, documentary scene",
+      "emergency food canned food survival supplies, documentary scene",
+      "통조림, documentary scene",
+      "휴대용 라디오, documentary scene",
+      "emergency flashlight survival equipment, documentary scene",
+      "first aid kit bandages antiseptic supplies, documentary scene",
+      "통조림 오프너, documentary scene",
+      "emergency blanket raincoat face mask, documentary scene",
+      "complete disaster preparedness survival backpack, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "생수, documentary scene",
+      "bottled drinking water emergency supplies, documentary scene",
+      "emergency food canned food survival supplies, documentary scene",
+      "통조림, documentary scene",
+      "휴대용 라디오, documentary scene",
+      "emergency flashlight survival equipment, documentary scene",
+      "first aid kit bandages antiseptic supplies, documentary scene",
+      "통조림 오프너, documentary scene",
+      "emergency blanket raincoat face mask, documentary scene",
+      "complete disaster preparedness survival backpack, documentary scene"
+    ],
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0623_한국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0623_한국.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "u-Dhg-WuYzA",
+    "uploaded_at": "2026-11-24T08:36:24.120455+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -74670,7 +75183,7 @@
     "verify_note": "Territorial disputes of India",
     "confidence": "source",
     "created_at": "2026-11-13T14:17:37.797714+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -74683,7 +75196,169 @@
     },
     "curate_score": 7,
     "curate_why": "인도·스리랑카 영토 분쟁, 구체적 땅·대비",
-    "curate_top": true
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "There are several disputed territories of India. A territorial dispute is a disagreement over the possession or control of land between two or more sovereign states or over the possession or control of land by a new state and occupying power after it has conquered the land from a former state no longer currently recognized by the new state.\nIndia faces territorial issues with some of its neighbours – the People's Republic of China, Pakistan and Nepal. The dispute with China also involves the Republic of China based in Taiwan. India has resolved its un-demarcated border with Bhutan, which included multiple irregularities. India also resolved its border disputes with Bangladesh and Sri Lanka.\n== Current disputes ==\n=== China ===\nThe territorial disputes between India and China result from the historical consequences of colonialism in Asia and the lack of clear historical boundary demarcations. There was one historical attempt to set a proposed boundary, the McMahon Line, by Great Britain during the 1913-1914 Simla Convention. The Republic of China rejected the proposed boundary. The unresolved dispute over the boundary became contentious after India gained its independence and the People's Republic of China was established. The disputed borders are complicated by the lack of administrative presence in the disputed areas, which are remote.\n==== Sino-Indian border ====\nTwo governments claim to be the legitimate Chinese government, the People's Republic of China (PRC) and the Republic of China (ROC; commonly called \"Taiwan\"). They do not recognise the legitimacy of each other. The PRC has actual control of its areas on the India-China border, while the ROC currently has no shared land or maritime border with India. Their views are presented below. The Line of Actual Control (LAC) is presently the operational border between India and the PRC.\n==== People's Republic of China's position ====\nThe Depsang Plains are located on the border of the Indian union territory of Ladakh and the disputed zone of Aksai Chin. The Chinese Army controls most of the plains, while India controls the western portion of the plains. The dispute remains unresolved.\nArunachal Pradesh is a state of India created on 20 January 1972, located in the far northeast. It borders the states of Assam and Nagaland to the south, and shares international borders with Burma in the east, Bhutan in the west, and China in the north. The majority of the territory is claimed by China, by whom it South Tibet. The northern border of Arunachal Pradesh reflects the McMahon Line, a line demarcated by the 1914 Simla Convention between the United Kingdom and the Tibetan government. The Simla Convention was never accepted by the Chinese government, and it was also considered invalid by Tibetans due to unmet conditions specified in the treaty. The boundary was not broadly enforced by the Indian government until 1950. Currently, this territory is administered by India.\n==== Republic of China's position ====\nThroughout the Cold War, the Government of the Republic of China had the same understanding of the China-India border dispute as the PRC. In 1962, the ROC's Ministry of Foreign Affairs stated that they did not recognise the legality of the McMahon Line. The same year western countries increased pressure on the ROC leader Chiang Kai-shek to recognise the legality of the McMahon Line in order to isolate Beijing. However, Chiang dismissed the McMahon Line as an \"imperialist imposition on China\". In February 1987, India's move to elevate the status of \"Arunachal centrally administered region\" to the state of Arunachal Pradesh was declared null and void by the ROC's Ministry of Foreign Affairs. The Ministry, in a formal statement, stated that it did not recognise the \"illegal occupation\" of R",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "인도와 섬나라 스리랑카가 바다 위 영토를 두고 다툰 적이 있다는 사실, 알고 계셨나요?",
+      "sentences": 6
+    },
+    "narration": "인도와 섬나라 스리랑카가 바다 위 영토를 두고 다툰 적이 있다는 사실, 알고 계셨나요?  \n인도는 중국·파키스탄·네팔 등과 영토 분쟁을 겪으며 국제적으로 알려졌지만, 실제로는 스리랑카와도 해상 영유권 갈등을 가졌습니다. 두 나라는 육지 경계가 없기에 육상 국경 분쟁은 없었지만, 인도 해역과 스리랑카 주변 해역 사이에서 어느 해역을 어느 나라가 관리할지 두고 마찰이 발생했습니다.  \n그런데 이 분쟁은 현재는 해결된 상태라고 전해집니다. 정확한 시기나 해결 과정은 명시되지 않았지만, 인도와 스리랑카가 해상 영유권 문제를 종결했다는 점만은 확인되었습니다.  \n땅이 없는 두 나라가 바다를 놓고 맞섰다니, 결국 물 위에서도 영토 싸움은 일어날 수 있다는 점이 흥미롭지 않나요?",
+    "title_line1": "인도·스리랑카 해분쟁",
+    "title_line2": "물 위에서도 영토 전쟁",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*스리랑카* 해상 분쟁"
+      },
+      {
+        "s": 2,
+        "text": "*해양* 분쟁 인도"
+      },
+      {
+        "s": 3,
+        "text": "바다 *경계* 논쟁"
+      },
+      {
+        "s": 5,
+        "text": "분쟁 *종결* 확인"
+      }
+    ],
+    "image_queries": [
+      "Sri Lanka maritime dispute",
+      "India ocean dispute",
+      "India Sri Lanka sea border",
+      "India Sri Lanka settled border",
+      "India Sri Lanka dispute resolved",
+      "two island nations at sea",
+      "Territorial disputes of India",
+      "Sri Lanka landmark",
+      "Sri Lanka culture",
+      "Sri Lanka street"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "해양영유권",
+      "영토분쟁",
+      "해상경계"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0655_스리랑카_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0655_스리랑카_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "Sri Lanka maritime dispute, documentary scene",
+      "India ocean dispute, documentary scene",
+      "India Sri Lanka sea border, documentary scene",
+      "India Sri Lanka settled border, documentary scene",
+      "India Sri Lanka dispute resolved, documentary scene",
+      "two island nations at sea, documentary scene",
+      "Territorial disputes of India, documentary scene",
+      "Sri Lanka landmark, documentary scene",
+      "Sri Lanka culture, documentary scene",
+      "Sri Lanka street, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Sri Lanka maritime dispute, documentary scene",
+      "India ocean dispute, documentary scene",
+      "India Sri Lanka sea border, documentary scene",
+      "India Sri Lanka settled border, documentary scene",
+      "India Sri Lanka dispute resolved, documentary scene",
+      "two island nations at sea, documentary scene",
+      "Territorial disputes of India, documentary scene",
+      "Sri Lanka landmark, documentary scene",
+      "Sri Lanka culture, documentary scene",
+      "Sri Lanka street, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Sri Lanka maritime dispute, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "India ocean dispute, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "India Sri Lanka sea border, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "India Sri Lanka settled border, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "India Sri Lanka dispute resolved, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "two island nations at sea, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Territorial disputes of India, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Sri Lanka landmark, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Sri Lanka culture, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Sri Lanka street, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Sri Lanka maritime dispute",
+      "India ocean dispute",
+      "India Sri Lanka sea border",
+      "India Sri Lanka settled border",
+      "India Sri Lanka dispute resolved",
+      "two island nations at sea",
+      "Territorial disputes of India",
+      "Sri Lanka landmark",
+      "Sri Lanka culture",
+      "Sri Lanka street"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0655_스리랑카.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0655_스리랑카.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "WA9NuNAV3Aw",
+    "uploaded_at": "2026-11-24T08:38:34.604066+09:00"
   },
   {
     "topic": "우즈베키스탄(Uzbekistan)의 히잡 착용 규정",
@@ -75081,7 +75756,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "redo_ts": 1795474750.5690944
   },
   {
     "topic": "사바이 섬, 유일한 마을을 통한 입출입",
@@ -75959,7 +76635,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -76056,7 +76732,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(스페인 / GY,VE,FR,GB)"
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -80187,7 +80864,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -80282,7 +80959,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -80290,7 +80968,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -80411,7 +81089,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
