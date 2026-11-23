@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """'후크' 스타일 썸네일: 나라 이름·국기 없이 제목과 후크에 집중.
 
-구성: 위 작은 채널 표시 / 가운데~아래 큰 제목 (1줄 흰색, 2줄 검정 글자+노란 붓터치 띠) / 제목 위 빨간 후크 태그(짧을 때만).
+구성: 위 작은 채널 표시 / 가운데~아래 큰 제목 (1줄 흰색, 1줄 단어별 색(하늘·노랑·분홍), 2줄 흰색 — 띠는 기본 없음(thumb_opts.band로 켬)) / 제목 위 빨간 후크 태그(짧을 때만).
 배경은 장면 이미지 중 가장 선명하고 색이 살아 있는 것을 자동 선택합니다 (소재에 thumb_scene=번호 가 있으면 그 장면).
 """
 import re
@@ -15,6 +15,7 @@ from common import visual_dir
 import thumb_pop as TP
 
 YELLOW = (255, 226, 0)
+WORD_PALETTE = [(86, 222, 255), (255, 214, 10), (255, 92, 214)]   # 배너와 같은 단어 순서 색: 하늘 → 노랑 → 분홍 (1줄에 기본 적용)
 RED = (235, 20, 20)
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -219,11 +220,12 @@ def make(idx, item, channel, handle, avatar, fallback_background):
         ld.text(((W - tw) / 2, y + (tag_h - ft.size) / 2 - 4), tag, font=ft, fill=tag_fg)
         y += tag_h + 30
 
-    draw_words(ld, t1, f1, W // 2, y, o.get("colors1") or {}, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13, sizes=z1, fp=fp)
+    c1 = o.get("colors1") or ({str(k): "%02x%02x%02x" % WORD_PALETTE[k % len(WORD_PALETTE)] for k in range(len(t1.split()))} if o.get("auto_colors", True) else {})
+    draw_words(ld, t1, f1, W // 2, y, c1, _hex(o.get("color1"), (255, 255, 255)) if o.get("color1") else (255, 255, 255), stroke=13, sizes=z1, fp=fp)
     y += h1 + gap
     if f2:
         w2 = line_width(ld, _word_fonts(t2, f2, z2, fp))[0]
-        kind = o.get("band", "brush")
+        kind = o.get("band", "none")   # 기본은 띠 없음
         if kind != "none":
             bw = max(60, int(w2) + int(o.get("band_w", 90)))
             bh = max(30, int(f2.size * 1.25 * float(o.get("band_h", 1.0))))
@@ -233,7 +235,7 @@ def make(idx, item, channel, handle, avatar, fallback_background):
             lay.alpha_composite(bs, (int((W - bs.width) / 2), int(cy - bs.height / 2)))
         ld = ImageDraw.Draw(lay)
         draw_words(ld, t2, f2, W // 2, y + (f2.size * 1.25 - f2.size) / 2 - 18, o.get("colors2") or {},
-                   _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else (0, 0, 0),
+                   _hex(o.get("color2"), (0, 0, 0)) if o.get("color2") else ((255, 255, 255) if kind == "none" else (0, 0, 0)),
                    stroke=13 if kind == "none" else 0, sizes=z2, fp=fp)      # 띠가 없으면 1줄처럼 검정 외곽선으로 글자를 살린다
     ang = float(o.get("angle", 0) or 0)
     if ang:

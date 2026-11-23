@@ -909,7 +909,7 @@ with T6a:
                 st.rerun()
             st.markdown("**2줄 뒤 띠** (기본: 노란 붓터치)")
             _b1, _b2, _b3 = st.columns(3)
-            _bk = _b1.selectbox("모양", ["brush", "rect", "round", "skew", "none"], ["brush", "rect", "round", "skew", "none"].index(_to.get("band", "brush")), key=f"thm_bk_{_ts}",
+            _bk = _b1.selectbox("모양", ["brush", "rect", "round", "skew", "none"], ["brush", "rect", "round", "skew", "none"].index(_to.get("band", "none")), key=f"thm_bk_{_ts}",
                                 format_func=lambda x: {"brush": "붓터치", "rect": "사각", "round": "둥근 알약", "skew": "비스듬한 사각", "none": "띠 없음"}[x])
             _bc = _b2.color_picker("띠 색", _to.get("band_color") or "#FFE200", key=f"thm_bc_{_ts}")
             _bo = _b3.slider("투명도(%)", 20, 100, int(_to.get("band_opacity", 100)), 5, key=f"thm_bo_{_ts}")
