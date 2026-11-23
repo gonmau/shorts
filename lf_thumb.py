@@ -16,6 +16,7 @@ import thumb_pop as TP
 
 TW, TH = 1280, 720
 YELLOW = (255, 226, 0)
+WORD_PALETTE = [(86, 222, 255), (255, 214, 10), (255, 92, 214)]   # 숏츠 썸네일·배너와 같은 단어 순서 색 (하늘 → 노랑 → 분홍)
 RED = (226, 24, 36)
 
 
@@ -147,9 +148,15 @@ def _draw_title(base, banner, big, count):
     base.alpha_composite(bt, ((TW - bt.width) // 2, by + (red.height - bt.height) // 2))
     d = ImageDraw.Draw(base)
     y1 = by + red.height + 4
-    TP.stroke_text(d, big, TW // 2, y1, f1, (255, 255, 255), stroke=11)
+    words = big.split()
+    sp = d.textlength(" ", font=f1)
+    tw = sum(d.textlength(w, font=f1) for w in words) + sp * max(0, len(words) - 1)
+    x = TW / 2 - tw / 2
+    for k, w in enumerate(words):    # 단어마다 색을 바꿔 그림
+        d.text((x, y1), w, font=f1, fill=WORD_PALETTE[k % len(WORD_PALETTE)], stroke_width=11, stroke_fill=(0, 0, 0))
+        x += d.textlength(w, font=f1) + sp
     if count:
-        TP.stroke_text(d, count, TW // 2, y1 + h1, f2, YELLOW, stroke=11)
+        TP.stroke_text(d, count, TW // 2, y1 + h1, f2, (255, 255, 255), stroke=11)
 
 
 def make(db, members, title, out_path, en=False, parts=None):
