@@ -137,7 +137,7 @@ def main():
                         print(f"  썸네일 설정 {_try + 1}/3: {tj.name} ({tj.stat().st_size//1024}KB) {_u[-40:]}")
                 except Exception as e:
                     print(f"  썸네일 설정 실패(영상은 올라감): {str(e)[:300]}")
-        if os.environ.get("YT_CAPTIONS", "on").lower() not in ("off", "0", "false"):   # 수동 자막(한국어) 자동 추가: 영상 옆 .srt 를 올린다 (토큰에 youtube.force-ssl 권한 필요, 쿼터 약 400)
+        if os.environ.get("YT_CAPTIONS", "off").lower() in ("on", "1", "true"):   # 수동 자막(한국어) 추가(YT_CAPTIONS=on 일 때만, 기본 꺼짐): 영상 옆 .srt 를 올린다 (토큰에 youtube.force-ssl 권한 필요, 쿼터 약 400)
             _srt = Path(path).with_suffix(".srt")
             if not _srt.exists():
                 print(f"  자막 파일 없음(건너뜀): {_srt.name}")
