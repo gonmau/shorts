@@ -74,6 +74,57 @@ def _ai_photo(db, idx, item):
         return None
 
 
+def _combined_prompt(db, members):
+    """롱폼에 들어간 소재들을 한 장면(콜라주 느낌)으로 합친 영어 프롬프트"""
+    import os, json as _j
+    parts = []
+    for i in members:
+        it = db[i]
+        ps = list(it.get("ai_prompts") or [])
+        qs = list(it.get("image_queries") or [])
+        t = (qs[0] if qs else (ps[0] if ps else f"{it.get('country', '')} {it.get('topic') or ''}"))
+        parts.append(str(t).split(".")[0][:110])
+    fallback = ("surreal editorial collage poster combining these separate scenes side by side in one image, each in its own region: "
+                + "; ".join(parts))
+    key = os.environ.get("GROQ_API_KEY", "").strip()
+    if not key:
+        return fallback
+    try:
+        from groq import Groq
+        c = Groq(api_key=key, timeout=60.0)
+        lines = "\n".join(f"{n + 1}. {t}" for n, t in enumerate(parts))
+        msg = ("Merge these scene ideas into ONE text-to-image prompt for a YouTube thumbnail: a single bold collage-style composition "
+               "where each idea is a clearly recognizable subject in its own region of the frame. One sentence under 70 words, "
+               "no text, no lettering, no flags with writing, no real faces. Output only the prompt.\n\n" + lines)
+        r = c.chat.completions.create(model="llama-3.3-70b-versatile", temperature=0.5, max_completion_tokens=300,
+                                      messages=[{"role": "user", "content": msg}])
+        out = (r.choices[0].message.content or "").strip().strip('"')
+        return out if len(out) > 30 else fallback
+    except Exception:
+        return fallback
+
+
+def _ai_combined(db, members):
+    """모든 소재를 합친 AI 그림 1장 -> 경로 (실패하면 None). thumb_ai/ 에 저장해 재사용(소재 조합이 같으면)"""
+    import os, hashlib
+    if os.environ.get("LF_THUMB_AI", "1") == "0":
+        return None
+    try:
+        import ai_images as AI
+        if not AI.provider():
+            return None
+        h = hashlib.md5(",".join(str(i) for i in members).encode()).hexdigest()[:8]
+        dest = Path("thumb_ai") / f"combo_{h}.png"
+        if not dest.exists():
+            pr = _combined_prompt(db, members)
+            print("  썸네일 AI 프롬프트: " + pr, flush=True)
+            AI.generate_one(pr + ", bold vivid saturated colors, high contrast, dramatic, wide composition", str(dest))
+        return str(dest)
+    except Exception as e:
+        print(f"  AI 썸네일 그림 실패: {type(e).__name__}: {str(e)[:80]} -> 사진으로 대체", flush=True)
+        return None
+
+
 def _panel(img, box, skew, color):
     """기울어진 칸에 사진을 넣어 RGBA 로"""
     x0, y0, x1, y1 = [int(v) for v in box]
@@ -182,9 +233,10 @@ def _draw_title(base, banner, big, count):
 
 def make(db, members, title, out_path, en=False, parts=None):
     import os
-    if os.environ.get("LF_THUMB_AI", "1") == "1" and members:    # 기본: AI 그림 1장(첫 소재)을 배경으로. 4칸 콜라주는 LF_THUMB_AI=multi
-        if _ai_photo(db, members[0], db[members[0]]) is not None:
-            return make_custom(str(Path("thumb_ai") / f"{members[0]}.png"), title, out_path, en=en, parts=parts)
+    if os.environ.get("LF_THUMB_AI", "1") == "1" and members:    # 기본: 모든 소재를 합친 AI 그림 1장. 4칸 콜라주는 LF_THUMB_AI=multi
+        pth = _ai_combined(db, members)
+        if pth:
+            return make_custom(pth, title, out_path, en=en, parts=parts)
     import build_video as B
     sel = _pick(members)
     base = Image.new("RGBA", (TW, TH), (255, 255, 255, 255))
