@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-24 18:54:05 (KST) · 기록 2186건 · 소재 733개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-24 19:07:12 (KST) · 기록 2187건 · 소재 731개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -37,7 +37,7 @@
 | trend_research | 3 | 3 | 2분 34초 |
 | update_description | 6 | 0 | 17초 |
 | upload_to_youtube | 34 | 0 | 25분 31초 |
-| 롱폼 | 82 | 13 | 10시간 15분 |
+| 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 128 | 6 | 12시간 17분 |
 | 코드업데이트 | 124 | 0 | 0초 |
 
@@ -47,6 +47,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 19:07 | Actions | 롱폼 | culture-longform #18 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45370654722 |
 | 18:26 | Actions | 롱폼 | culture-longform #17 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45364732417 |
 | 18:15 | Actions | 롱폼 | culture-longform #16 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45357742096 |
 | 08:38 | Actions | 쇼츠 | culture-shorts-pipeline #134 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45283019293 |
