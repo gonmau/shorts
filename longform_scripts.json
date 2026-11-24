@@ -4188,5 +4188,716 @@
    "why": "대본과 대조해 쓸 수 있는 행이 부족",
    "nh": "3db64e9972c3"
   }
+ },
+ "649": {
+  "narration": "왜 한 마리 돼지가 미국과 영국을 전쟁 직전까지 몰아넣었을까요? 1859년, 카리브해 샌후안 제도는 두 나라가 영유권을 놓고 팽팽히 맞서는 무대였습니다. 미국인 농부 라이먼 커틀러는 자신의 감자밭에 영국 회사 소유의 돼지가 들어오는 것을 발견하고, 분노에 총을 쏴 죽였습니다. 이 사건을 계기로 미군 64명이 섬에 상륙했고, 영국은 전함 3척을 파견했습니다. 양측은 서로 물러서지 않았지만 실제 전투는 일어나지 않았습니다. 대신 12년 동안 양국 군대가 동시에 주둔하며 긴장 상태가 지속되었습니다. 1872년, 독일 황제 빌헬름 1세가 중재에 나서면서 섬은 최종적으로 미국 영토가 되었고, 이 갈등에서 사망한 유일한 존재는 바로 그 돼지 한 마리였습니다. 오늘도 샌후안 제도는 미국 영토이지만, 그 역사는 작은 사건이 국제 관계를 뒤흔들 수 있음을 보여줍니다. 다음에는 모로코의 독특한 해양 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "돼지 한 마리"
+   },
+   {
+    "sentence": 3,
+    "text": "미군 64명"
+   },
+   {
+    "sentence": 5,
+    "text": "전투 없이 12년"
+   }
+  ],
+  "compare": {
+   "title": "미국,영국 vs 모로코",
+   "left": "미국,영국",
+   "right": "모로코",
+   "rows": [
+    {
+     "label": "분쟁 규모",
+     "left": "대륙 간 긴장",
+     "right": "지역 해양 갈등"
+    },
+    {
+     "label": "주요 원인",
+     "left": "동물 사망",
+     "right": "해양 무역"
+    },
+    {
+     "label": "해결 방식",
+     "left": "외교 중재",
+     "right": "전통 협정"
+    }
+   ]
+  },
+  "recap": "돼지 한 마리 때문에 12년간 양국 군대가 섬에 주둔했다.",
+  "broll": [
+   "Caribbean island map",
+   "19th century soldiers landing",
+   "historic diplomatic meeting"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "082ea08592ad",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:51",
+  "bridge_to": "모로코",
+  "infographic": {
+   "on": true,
+   "kind": "timeline",
+   "title": "샌후안 제도 사건 연표",
+   "s": 2,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "1859년",
+     "value": null,
+     "text": "미·영 영유권 대립"
+    },
+    {
+     "label": "1872년",
+     "value": null,
+     "text": "독일 황제 중재"
+    }
+   ],
+   "none": false,
+   "nh": "e5b0ea09a4c3"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0649_미국_영국.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0649_미국_영국_timing.json",
+  "tts_hash": "ee0f0157be12",
+  "clips": [
+   {
+    "query": "Caribbean island map",
+    "path": "/home/runner/work/shorts/shorts/clips/0649_미국,영국/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Nassau_Yacht_Haven_Marina",
+    "page": "https://pixabay.com/videos/id-23011/",
+    "id": "pixabay23011",
+    "check": "unknown"
+   },
+   {
+    "query": "19th century soldiers landing",
+    "path": "/home/runner/work/shorts/shorts/clips/0649_미국,영국/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Gylfi",
+    "page": "https://pixabay.com/videos/id-276047/",
+    "id": "pixabay276047",
+    "check": "unknown"
+   },
+   {
+    "query": "historic diplomatic meeting",
+    "path": "/home/runner/work/shorts/shorts/clips/0649_미국,영국/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Life-Of-Vids",
+    "page": "https://pixabay.com/videos/id-2340/",
+    "id": "pixabay2340",
+    "check": "unknown"
+   }
+  ]
+ },
+ "505": {
+  "narration": "모로코 안에 스페인 영토가 있다는 사실, 알고 계셨나요? 북아프리카 해안에 자리한 모로코는 지중해와 대서양을 맞대고 있습니다. 그런데 그 해안선 안에 세우타와 멜릴라, 그리고 페뇽·데·벨레즈·데·라·고메라 같은 작은 섬·도시가 스페인 영토로 남아 있습니다. 이곳들은 스페인 행정구역에 속해 있어 현지 법과 세금 체계가 모로코와 다릅니다. 스페인 정부는 이 지역을 ‘플라사스 데 소베라니아’라 부르며, 군사 주둔지와 항구를 운영하고 있습니다. 반면 모로코는 이 섬들을 자국 영토라고 주장하며, 국제법상 영유권 분쟁이 지속되고 있습니다. 특히 서부 사하라와 맞닿은 지역에서 모로코는 영토 보전을 강조하고, 스페인 영토에 대한 입장을 강경히 피력합니다. 일상에서는 현지 어부들이 스페인 영해에서 잡은 어류를 모로코 시장에 판매하거나, 스페인 군인들이 섬을 순찰하는 모습이 교차합니다. 이러한 복잡한 상황은 지도상의 선 하나가 얼마나 많은 역사를 품고 있는지를 보여줍니다. 이제 영국이 어떻게 해양 영토를 관리하고 있는지 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "스페인 영토"
+   },
+   {
+    "sentence": 2,
+    "text": "플라사스 데 소베라니아"
+   },
+   {
+    "sentence": 3,
+    "text": "영유권 분쟁"
+   }
+  ],
+  "compare": {
+   "title": "모로코 vs 영국",
+   "left": "모로코",
+   "right": "영국",
+   "rows": [
+    {
+     "label": "영토 규모",
+     "left": "대륙과 해양 혼합",
+     "right": "섬과 해외 영토 다수"
+    },
+    {
+     "label": "분쟁 현황",
+     "left": "스페인 영토와 지속",
+     "right": "홍콩·령과 논쟁 지속"
+    },
+    {
+     "label": "법적 체계",
+     "left": "이슬람·아랍법 혼합",
+     "right": "영국법·코먼로우 적용"
+    }
+   ]
+  },
+  "recap": "모로코 안에 스페인 영토가 존재한다는 사실은 복잡한 국제 정치의 한 단면입니다.",
+  "broll": [
+   "Spanish enclave Morocco coast",
+   "Moroccan fishermen at sea",
+   "Historic border maps"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "a9950d45a7ce",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:52",
+  "bridge_to": "영국",
+  "infographic": {
+   "on": false,
+   "none": true,
+   "nh": "5c539f68b447"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0505_모로코.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0505_모로코_timing.json",
+  "tts_hash": "cebcf413d8be",
+  "clips": [
+   {
+    "query": "Spanish enclave Morocco coast",
+    "path": "/home/runner/work/shorts/shorts/clips/0505_모로코/clip_01.mp4",
+    "source": "pixabay",
+    "user": "McPix22",
+    "page": "https://pixabay.com/videos/id-213026/",
+    "id": "pixabay213026",
+    "check": "unknown"
+   },
+   {
+    "query": "Moroccan fishermen at sea",
+    "path": "/home/runner/work/shorts/shorts/clips/0505_모로코/clip_02.mp4",
+    "source": "pixabay",
+    "user": "HieuNghiaMini",
+    "page": "https://pixabay.com/videos/id-189393/",
+    "id": "pixabay189393",
+    "check": "unknown"
+   },
+   {
+    "query": "Historic border maps",
+    "path": "/home/runner/work/shorts/shorts/clips/0505_모로코/clip_03.mp4",
+    "source": "pixabay",
+    "user": "dianakuehn30010",
+    "page": "https://pixabay.com/videos/id-6174/",
+    "id": "pixabay6174",
+    "check": "unknown"
+   }
+  ]
+ },
+ "563": {
+  "narration": "1913년, 영국이 다스리던 인구가 4억 1천 2백만 명이라고 하면 믿으시겠어요? 그때 세계 인구의 약 23%가 대영제국 아래 있었습니다. 19세기 말부터 20세기 초까지 영국은 해가 지지 않는 나라라는 별명을 얻을 정도로 식민지를 확장했습니다. 1920년 무렵 제국의 영토는 약 3천 550만 평방킬로미터에 달했으며, 이는 지구 육지 면적의 24%에 해당합니다. 즉, 전 세계 육지의 거의 4분의 1을 차지한 것이죠. 이때 영국은 법과 언어, 교육 제도를 현지에 도입해 현지 사회를 재편했습니다. 예를 들어 인도에서는 영국식 법원이, 아프리카에서는 영국식 철도가 건설되었습니다. 하지만 제1차 세계대전이 시작되면서 식민지에 대한 군사적, 경제적 부담이 급증했습니다. 전쟁 후 미국과 독일이 산업 경쟁자로 떠오르면서 영국의 경제적 우위가 약화되었습니다. 전쟁으로 인한 인명 손실과 전후 부채는 제국 유지에 큰 걸림돌이 되었고, 현지 민족주의 운동도 활기를 띠었습니다. 결국 20세기 중반에 이르러 대영제국은 해체의 길을 걷게 되었습니다. 오늘 우리는 그 거대한 제국이 어떻게 세계의 1/4을 장악했는지, 그리고 왜 무너지기 시작했는지를 살펴보았습니다. 다음에는 그와 대조되는 이야기를 가진 미국을 만나볼까요?",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "1913년 영국 인구 4억 1"
+   },
+   {
+    "sentence": 3,
+    "text": "전 세계 육지의 24% 차지"
+   },
+   {
+    "sentence": 9,
+    "text": "제1차 세계대전이 전환점"
+   }
+  ],
+  "compare": {
+   "title": "영국 vs 미국",
+   "left": "영국",
+   "right": "미국",
+   "rows": [
+    {
+     "label": "제국 규모",
+     "left": "전 세계 1/4 영토",
+     "right": "전 세계 1/5 영향력"
+    },
+    {
+     "label": "인구 비중",
+     "left": "전 세계 23%",
+     "right": "전 세계 4%"
+    },
+    {
+     "label": "경제 위상",
+     "left": "전통적 산업 강국",
+     "right": "현대 기술·금융 강국"
+    }
+   ]
+  },
+  "recap": "대영제국, 세계 인구·면적 1/4을 장악했다.",
+  "broll": [
+   "British Empire map",
+   "colonial railway construction",
+   "World War I trenches"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "2a7346738822",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:53",
+  "bridge_to": "미국",
+  "infographic": {
+   "on": true,
+   "kind": "bignum",
+   "title": "1913 영국 인구",
+   "s": 1,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "인구",
+     "value": null,
+     "text": "4억 1천 2백만 명"
+    }
+   ],
+   "none": false,
+   "nh": "3774ef43c7f9"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0563_영국.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0563_영국_timing.json",
+  "tts_hash": "50ffc8e1e011",
+  "clips": [
+   {
+    "query": "British Empire map",
+    "path": "/home/runner/work/shorts/shorts/clips/0563_영국/clip_01.mp4",
+    "source": "pixabay",
+    "user": "tommyvideo",
+    "page": "https://pixabay.com/videos/id-5194/",
+    "id": "pixabay5194",
+    "check": "unknown"
+   },
+   {
+    "query": "colonial railway construction",
+    "path": "/home/runner/work/shorts/shorts/clips/0563_영국/clip_02.mp4",
+    "source": "pixabay",
+    "user": "bellergy",
+    "page": "https://pixabay.com/videos/id-3741/",
+    "id": "pixabay3741",
+    "check": "unknown"
+   },
+   {
+    "query": "World War I trenches",
+    "path": "/home/runner/work/shorts/shorts/clips/0563_영국/clip_03.mp4",
+    "source": "pixabay",
+    "user": "HazarMan",
+    "page": "https://pixabay.com/videos/id-1754/",
+    "id": "pixabay1754",
+    "check": "unknown"
+   }
+  ]
+ },
+ "274": {
+  "narration": "미 해병대가 해군에 속한다는 사실, 알고 계셨나요? 1834년 6월 30일, 해군에 정식 편입되었습니다. 그때부터 해병대는 바다와 육지를 오가며 원정 작전을 수행했습니다. 해군 소속이지만 독자적인 보병, 포병, 항공, 특전 부대를 보유하고 있습니다. 이런 구조는 해병대가 육군이 아닌 별도 군으로 존재하게 만든 이유입니다. 해군 함선에 탑승해 상륙 작전을 주도하고, 육상에서는 자체 전투 부대로 활동합니다. 미국 외 다른 나라 해병대는 보통 해군에 완전히 종속돼 독립된 부대를 거의 두지 않습니다. 예를 들어 영국 해병대는 해군에 완전 귀속돼 자체 항공 부대가 없습니다. 미국 해병대는 해군과 협력하면서도 자체 전투 조직을 유지한다는 점이 독특합니다. 이런 이중적 역할은 해군의 해상 전력과 육군의 지상 전력을 연결하는 교량 역할을 합니다. 이제 해병대가 왜 이렇게 독립성을 유지했는지 이해가 되셨나요? 다음엔 인도의 해군 전통을 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "해병대 해군 소속"
+   },
+   {
+    "sentence": 4,
+    "text": "독자적 부대 보유"
+   },
+   {
+    "sentence": 9,
+    "text": "인도 전통"
+   }
+  ],
+  "compare": {
+   "title": "미국 vs 인도",
+   "left": "미국",
+   "right": "인도",
+   "rows": [
+    {
+     "label": "조직 구조",
+     "left": "해군 내 독립 부대",
+     "right": "해군에 완전 종속"
+    },
+    {
+     "label": "항공 보유",
+     "left": "자체 항공 부대",
+     "right": "주로 육군 항공"
+    },
+    {
+     "label": "역사적 기원",
+     "left": "1834년 해군 편입",
+     "right": "식민지 시기 해군 설립"
+    }
+   ]
+  },
+  "recap": "미 해병대는 해군에 속하면서도 독립된 전투 조직을 유지합니다.",
+  "broll": [
+   "US Navy ship deck",
+   "Marine Corps training field",
+   "historical naval documents"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "70b2f3998cb8",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:53",
+  "bridge_to": "인도",
+  "infographic": {
+   "on": false,
+   "none": true,
+   "nh": "e32f7d87d7f7"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0274_미국.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0274_미국_timing.json",
+  "tts_hash": "75dc69b3b66b",
+  "clips": [
+   {
+    "query": "US Navy ship deck",
+    "path": "/home/runner/work/shorts/shorts/clips/0274_미국/clip_01.mp4",
+    "source": "pixabay",
+    "user": "ChristianBodhi",
+    "page": "https://pixabay.com/videos/id-32231/",
+    "id": "pixabay32231",
+    "check": "unknown"
+   },
+   {
+    "query": "Marine Corps training field",
+    "path": "/home/runner/work/shorts/shorts/clips/0274_미국/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Coverr-Free-Footage",
+    "page": "https://pixabay.com/videos/id-10783/",
+    "id": "pixabay10783",
+    "check": "unknown"
+   },
+   {
+    "query": "historical naval documents",
+    "path": "/home/runner/work/shorts/shorts/clips/0274_미국/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Amirirani",
+    "page": "https://pixabay.com/videos/id-89833/",
+    "id": "pixabay89833",
+    "check": "unknown"
+   }
+  ]
+ },
+ "394": {
+  "narration": "인도 금융 규제, 한 기관이 전부 담당한다는 생각은 오해입니다. 중앙은행인 RBI는 은행과 통화 정책을 관리합니다. 은행 예금·대출 기준을 정하고, 금리 정책을 수행하죠. 증권 시장은 SEBI가 감독합니다. 주식 거래 질서와 투자자 보호를 책임집니다. 보험 분야는 IRDAI가 별도로 존재합니다. 보험사 운영과 계약자 보호가 주요 과제입니다. 같은 ‘금융’이라도 위험 종류가 달라 규제 기관이 나뉩니다. 예를 들어, 뭄바이의 주식 거래와 첸나이의 보험 계약은 각각 다른 감시 체계 아래 있습니다. 연금이나 펀드 같은 분야는 또 다른 법과 감독이 연결됩니다. 따라서 거래 종류에 따라 어느 기관을 찾아야 할지 아는 것이 중요합니다. 인도는 이렇게 여러 눈으로 금융 안전망을 구축합니다. 다음엔 모로코의 금융 구조를 살펴보겠습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "인도 금융 규제"
+   },
+   {
+    "sentence": 2,
+    "text": "RBI"
+   },
+   {
+    "sentence": 3,
+    "text": "SEBI"
+   },
+   {
+    "sentence": 4,
+    "text": "IRDAI"
+   }
+  ],
+  "compare": {
+   "title": "인도 vs 모로코",
+   "left": "인도",
+   "right": "모로코",
+   "rows": [
+    {
+     "label": "규제 기관 수",
+     "left": "3개 이상",
+     "right": "1개"
+    },
+    {
+     "label": "기관 역할",
+     "left": "전문별 구분",
+     "right": "통합 관리"
+    },
+    {
+     "label": "감독 범위",
+     "left": "은행·증권·보험",
+     "right": "주로 은행"
+    }
+   ]
+  },
+  "recap": "인도는 금융을 분야별로 나눠 감독합니다.",
+  "broll": [
+   "Indian stock exchange trading floor",
+   "RBI building exterior",
+   "Insurance policy documents"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "0dce5c24f6e7",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:54",
+  "bridge_to": "모로코",
+  "infographic": {
+   "on": false,
+   "none": true,
+   "nh": "aa540520ecc5"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0394_인도.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0394_인도_timing.json",
+  "tts_hash": "4ff2908f0ec7",
+  "clips": [
+   {
+    "query": "Indian stock exchange trading floor",
+    "path": "/home/runner/work/shorts/shorts/clips/0394_인도/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Natures_Embrace",
+    "page": "https://pixabay.com/videos/id-204291/",
+    "id": "pixabay204291",
+    "check": "unknown"
+   },
+   {
+    "query": "RBI building exterior",
+    "path": "/home/runner/work/shorts/shorts/clips/0394_인도/clip_02.mp4",
+    "source": "pixabay",
+    "user": "FindingFootage",
+    "page": "https://pixabay.com/videos/id-2143/",
+    "id": "pixabay2143",
+    "check": "unknown"
+   },
+   {
+    "query": "Insurance policy documents",
+    "path": "/home/runner/work/shorts/shorts/clips/0394_인도/clip_03.mp4",
+    "source": "pixabay",
+    "user": "TBIT",
+    "page": "https://pixabay.com/videos/id-2176/",
+    "id": "pixabay2176",
+    "check": "unknown"
+   }
+  ]
+ },
+ "227": {
+  "narration": "모로코에서 차값보다 비싼 걸 팔고 있다는 사실, 알고 계셨나요? 이곳 남동부 사하라 사막 가장자리에서 사람들은 땅을 파서 4억 년 전 삼엽충 화석을 캐냅니다. 삼엽충은 작은 조개껍질 모양의 화석이지만, 국제 수집가 사이에서는 수백만 원에 거래됩니다. 그래서 현지에서는 화석 채굴이 주요 생계가 됩니다. 채굴·가공·수출 단계에 약 5만 명이 종사하고 있습니다. 채굴자는 보통 작은 보수를 받지만, 수출업자는 높은 마진을 챙깁니다. 현지 시장에서는 화석을 원석 그대로 파는 경우도 있고, 세밀하게 다듬어 장식품으로 판매하기도 합니다. 이 과정에서 전통적인 손길과 현대적인 포장이 결합됩니다. 화석이 수출되는 주요 항구는 엘 자우이와 타즈니다트이며, 여기서 유럽과 미국으로 향합니다. 수출된 화석은 박물관 전시품이나 개인 컬렉션에 들어가며, 그 가치는 희귀성에 따라 크게 달라집니다. 현지 주민들은 화석을 ‘땅속 보물’이라 부르며, 세대 전해 내려오는 채굴 기술을 자랑합니다. 하지만 이 산업은 환경 파괴 논란도 동반합니다. 사막 생태계가 손상될 위험이 있기 때문입니다. 여러분이라면 이 화석에 얼마를 지불하시겠습니까? 다음엔 덴마크의 독특한 디자인 문화 이야기를 이어갑니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "모로코에서 차값보다 비싼 걸 "
+   },
+   {
+    "sentence": 5,
+    "text": "약 5만 명이 종사"
+   },
+   {
+    "sentence": 12,
+    "text": "현지 주민들은 ‘땅속 보물’"
+   }
+  ],
+  "compare": {
+   "title": "모로코 vs 덴마크",
+   "left": "모로코",
+   "right": "덴마크",
+   "rows": [
+    {
+     "label": "주요 산업",
+     "left": "화석 채굴·수출",
+     "right": "디자인·가구"
+    },
+    {
+     "label": "고용 규모",
+     "left": "수만 명",
+     "right": "수천 명"
+    },
+    {
+     "label": "수출 대상",
+     "left": "유럽·미국",
+     "right": "전 세계"
+    }
+   ]
+  },
+  "recap": "화석이 모로코 경제의 큰 축을 이룹니다.",
+  "broll": [
+   "Moroccan desert mining",
+   "trading fossils market",
+   "port cargo ships"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "bc2e545f6945",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:54",
+  "bridge_to": "덴마크",
+  "infographic": {
+   "on": true,
+   "kind": "bars",
+   "title": "화석 산업 규모",
+   "s": 5,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "연대",
+     "value": 4.0,
+     "text": "4억 년"
+    },
+    {
+     "label": "인원",
+     "value": 5.0,
+     "text": "5만 명"
+    }
+   ],
+   "none": false,
+   "nh": "a84c30f7edd6"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0227_모로코.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0227_모로코_timing.json",
+  "tts_hash": "76b36c58c0f5",
+  "clips": [
+   {
+    "query": "Moroccan desert mining",
+    "path": "/home/runner/work/shorts/shorts/clips/0227_모로코/clip_01.mp4",
+    "source": "pixabay",
+    "user": "ertugrulgazikul",
+    "page": "https://pixabay.com/videos/id-304330/",
+    "id": "pixabay304330",
+    "check": "unknown"
+   },
+   {
+    "query": "trading fossils market",
+    "path": "/home/runner/work/shorts/shorts/clips/0227_모로코/clip_02.mp4",
+    "source": "pixabay",
+    "user": "Dimitri_K",
+    "page": "https://pixabay.com/videos/id-166285/",
+    "id": "pixabay166285",
+    "check": "unknown"
+   },
+   {
+    "query": "port cargo ships",
+    "path": "/home/runner/work/shorts/shorts/clips/0227_모로코/clip_03.mp4",
+    "source": "pixabay",
+    "user": "bellergy",
+    "page": "https://pixabay.com/videos/id-23544/",
+    "id": "pixabay23544",
+    "check": "unknown"
+   }
+  ]
+ },
+ "658": {
+  "narration": "덴마크가 한스섬에 브랜디와 국기를 남겼다면, 캐나다는 위스키와 자국 깃발로 답했다는 사실, 알고 계셨나요? 한스섬은 그린란드와 캐나다 사이에 위치한 작은 무인도로, 19세기 말부터 두 나라가 영유권을 주장해 왔습니다. 섬 자체는 거친 바다와 바위만으로 이루어져 생활 기반은 전혀 없지만, 상징적인 의미가 커졌습니다. 1984년 덴마크 해군이 섬에 덴마크 국기와 브랜디 병을 두자, 캐나다는 곧바로 위스키와 캐나다 국기를 놓으며 일종의 ‘술병 전쟁’을 시작했습니다. 이후 양국은 서로의 깃발을 조심히 치우고, 다시 술병을 남기는 행위를 수십 년간 반복했으며, 실제 무력 충돌은 없었습니다. 이 독특한 경쟁은 양국의 외교적 긴장을 완화시키는 일종의 의례처럼 작용했으며, 섬을 실제로 관리하거나 개발하려는 시도는 없었습니다. 2022년에는 덴마크, 캐나다, 그리고 그린란드가 모여 섬을 약 60대 40 비율로 나누기로 합의했습니다. 이제는 술병 대신 협상이 국경을 그렸고, 한스섬은 평화로운 공동 관리 지역이 되었습니다. 이렇게 작은 섬 하나가 국제 관계에서 상징적 역할을 할 수 있다는 점이 흥미롭습니다.",
+  "keywords": [
+   {
+    "sentence": 1,
+    "text": "덴마크와 캐나다의 술병 전쟁"
+   },
+   {
+    "sentence": 4,
+    "text": "한스섬 영유권 분쟁"
+   },
+   {
+    "sentence": 9,
+    "text": "2022년 협상 합의"
+   }
+  ],
+  "compare": {
+   "title": "덴마크 vs 인도",
+   "left": "덴마크",
+   "right": "인도",
+   "rows": [
+    {
+     "label": "분쟁 규모",
+     "left": "소규모",
+     "right": "대규모"
+    },
+    {
+     "label": "해결 방식",
+     "left": "상징적 교환",
+     "right": "법적·군사"
+    },
+    {
+     "label": "영토 특성",
+     "left": "무인도",
+     "right": "다양한 지형"
+    }
+   ]
+  },
+  "recap": "한스섬, 술병에서 협상으로 변한 평화의 이야기",
+  "broll": [
+   "remote island flag planting",
+   "whisky bottle on rocks",
+   "diplomatic negotiation table"
+  ],
+  "verify": {
+   "status": "skipped",
+   "notes": [
+    "교차검증 꺼짐(CROSS_CHECK=0) - 직접 검증하거나 확인하세요"
+   ]
+  },
+  "sig": "04000fc927ee",
+  "model": "openai/gpt-oss-120b",
+  "created": "2026-11-24 08:55",
+  "bridge_to": "",
+  "infographic": {
+   "on": true,
+   "kind": "timeline",
+   "title": "한스섬 사건 연표",
+   "s": 4,
+   "dur": 5.0,
+   "unit": "",
+   "rows": [
+    {
+     "label": "1984년",
+     "value": null,
+     "text": "덴마크가 국기·브랜디 남김"
+    },
+    {
+     "label": "2022년",
+     "value": null,
+     "text": "섬 60:40 분할 합의"
+    }
+   ],
+   "none": false,
+   "nh": "260c8f5f5f23"
+  },
+  "audio": "/home/runner/work/shorts/shorts/audio/lf_0658_덴마크.mp3",
+  "timing": "/home/runner/work/shorts/shorts/audio/lf_0658_덴마크_timing.json",
+  "tts_hash": "2c31dc8f6d8e",
+  "clips": [
+   {
+    "query": "remote island flag planting",
+    "path": "/home/runner/work/shorts/shorts/clips/0658_덴마크/clip_01.mp4",
+    "source": "pixabay",
+    "user": "Mario_Krimer",
+    "page": "https://pixabay.com/videos/id-348904/",
+    "id": "pixabay348904",
+    "check": "unknown"
+   },
+   {
+    "query": "whisky bottle on rocks",
+    "path": "/home/runner/work/shorts/shorts/clips/0658_덴마크/clip_02.mp4",
+    "source": "pixabay",
+    "user": "TPMotion",
+    "page": "https://pixabay.com/videos/id-82598/",
+    "id": "pixabay82598",
+    "check": "unknown"
+   },
+   {
+    "query": "diplomatic negotiation table",
+    "path": "/home/runner/work/shorts/shorts/clips/0658_덴마크/clip_03.mp4",
+    "source": "pixabay",
+    "user": "Life-Of-Vids",
+    "page": "https://pixabay.com/videos/id-2339/",
+    "id": "pixabay2339",
+    "check": "unknown"
+   }
+  ]
  }
 }
