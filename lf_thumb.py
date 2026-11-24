@@ -181,6 +181,10 @@ def _draw_title(base, banner, big, count):
 
 
 def make(db, members, title, out_path, en=False, parts=None):
+    import os
+    if os.environ.get("LF_THUMB_AI", "1") == "1" and members:    # 기본: AI 그림 1장(첫 소재)을 배경으로. 4칸 콜라주는 LF_THUMB_AI=multi
+        if _ai_photo(db, members[0], db[members[0]]) is not None:
+            return make_custom(str(Path("thumb_ai") / f"{members[0]}.png"), title, out_path, en=en, parts=parts)
     import build_video as B
     sel = _pick(members)
     base = Image.new("RGBA", (TW, TH), (255, 255, 255, 255))
