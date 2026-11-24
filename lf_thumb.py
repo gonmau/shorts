@@ -37,7 +37,7 @@ def _slots(n):
     return out
 
 
-def _pick(members, cap=10):
+def _pick(members, cap=4):
     if len(members) <= cap:
         return list(members)
     step = len(members) / cap
@@ -106,6 +106,7 @@ def _globe(r):
 def split_title(title, en):
     """제목 -> (붉은 띠 문구, 큰 흰 글자, 노란 개수)"""
     main = title.split("|")[0].strip()
+    sub = title.split("|", 1)[1].strip() if "|" in title else ""
     m = re.search(r"(\d+)\s*(가지|개)?", main)
     n = m.group(1) if m else ""
     unit = (m.group(2) or "가지") if m else ""
@@ -120,7 +121,7 @@ def split_title(title, en):
         if big == banner:
             banner = "KOREA A TO Z"
         return banner, big, count
-    count = f"{n}{unit}" if n else ""
+    count = sub or (f"{n}{unit}" if n else "")
     if len(words) >= 3:
         banner, big = " ".join(words[:2]), " ".join(words[2:])
     elif len(words) == 2:
@@ -173,7 +174,7 @@ def make(db, members, title, out_path, en=False, parts=None):
         base.alpha_composite(panel, (max(0, pos[0]) if pos[0] >= 0 else 0, pos[1]))
     # 가운데 어둡게 (글자 잘 보이게)
     vg = Image.new("L", (TW, TH), 0)
-    ImageDraw.Draw(vg).ellipse((TW / 2 - 470, TH / 2 - 250, TW / 2 + 470, TH / 2 + 250), fill=140)
+    ImageDraw.Draw(vg).ellipse((TW / 2 - 470, TH / 2 - 250, TW / 2 + 470, TH / 2 + 250), fill=185)
     vg = vg.filter(ImageFilter.GaussianBlur(70))
     base.alpha_composite(Image.merge("RGBA", (Image.new("L", (TW, TH), 0),) * 3 + (vg,)))
     # 국기
@@ -183,19 +184,8 @@ def make(db, members, title, out_path, en=False, parts=None):
         code = country_codes.country_code(country)
         fl = TP.get_flag(code) if (code and not en) else None
         if fl is not None:
-            fb = TP.flag_badge(fl, width=86, angle=-5)
+            fb = TP.flag_badge(fl, width=120, angle=-5)
             base.alpha_composite(fb, (int(box[0]) + 2, int(box[1]) - 4))
-    # 지구본 + 비행기 점선
-    gl = _globe(190)
-    base.alpha_composite(gl, (TW // 2 - gl.width // 2, TH // 2 - gl.height // 2 + 6))
-    ov = Image.new("RGBA", (TW, TH), (0, 0, 0, 0))
-    od = ImageDraw.Draw(ov)
-    pts = [(TW // 2 + 140 + t * 4.4, TH // 2 + 170 - math.sin(t / 100 * math.pi) * 70 - t * 1.1) for t in range(0, 101, 4)]
-    for i in range(0, len(pts) - 1, 2):
-        od.line([pts[i], pts[i + 1]], fill=(255, 255, 255, 235), width=4)
-    px, py = pts[-1]
-    od.polygon([(px - 26, py + 6), (px + 30, py - 10), (px + 4, py + 10), (px - 10, py + 22)], fill=(255, 255, 255, 255))
-    base.alpha_composite(ov)
     banner, big, count = split_title(title, en)
     if parts:
         banner, big, count = (parts.get("banner") or banner), (parts.get("big") or big), parts.get("count", count)
