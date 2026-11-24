@@ -41,6 +41,12 @@ def main():
                 post_image(url, f_, f_.stem.rsplit("_", 1)[1] + "번 소재")
             if art:
                 post(url, f"원본 사진 받기: {art}")
+        elif pvw == "thumb":
+            f_ = out / "preview_thumb.png"
+            if f_.exists():
+                post_image(url, f_, "썸네일")
+            else:
+                post(url, "썸네일을 만들지 못했습니다. Actions 로그를 확인하세요.")
         elif pvw == "cuts":
             post(url, "✂️ 이미지 컷 시트 (컷 이름 = 소재번호_컷번호)")
             f_ = out / "preview_cutsheet.txt"

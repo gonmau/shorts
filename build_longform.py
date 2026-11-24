@@ -1012,7 +1012,7 @@ def main():
     ap.add_argument("--sections", type=int, default=5, help="심층편 소주제 개수 (3~8)")
     ap.add_argument("--minutes", type=float, default=8.0, help="심층편 목표 길이(분, 5~12)")
     ap.add_argument("--dry-run", action="store_true", help="고른 소재만 보여주고 끝")
-    ap.add_argument("--preview", choices=["script", "images", "voice", "cuts"], default="",
+    ap.add_argument("--preview", choices=["script", "images", "voice", "cuts", "thumb"], default="",
                     help="영상은 안 만들고 한 단계만 미리 보기: script=대본·시나리오, images=장면 사진(빠진 건 받아 채움), voice=대본+음성 mp3, cuts=컷 시트+후보 사진 시트")
     args = ap.parse_args()
     try:        # 비교 카드 전체 끄기: --no-compare, 채널 표시 설정, 또는 환경변수 LF_COMPARE=0
@@ -1048,6 +1048,18 @@ def main():
     if args.dry_run:
         (OUT / "longform_preview.txt").parent.mkdir(exist_ok=True)
         (OUT / "longform_preview.txt").write_text("\n".join(prev_lines), encoding="utf-8")
+        return
+    if args.preview == "thumb":     # 썸네일만 다시 만들기 (사진은 빠진 것만 받아 채움)
+        OUT.mkdir(exist_ok=True)
+        for idx in members:
+            _mine(db, idx)
+            run_py("fetch_images.py", "--index", str(idx))
+        db = load_json(BASE / "facts_db.json", db)
+        for idx in members:
+            _mine(db, idx)
+        title_ = make_title(db, members, args.theme, args.title)
+        make_thumbnail(db, members, title_, OUT / "preview_thumb.png")
+        print(f"썸네일 다시 만들기 완료: {title_}", flush=True)
         return
     if args.style == "rich":
         return run_rich(args, db, lf_db, members)
