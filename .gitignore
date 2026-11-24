@@ -7,3 +7,4 @@ overlay_images/
 deep_cache/
 deep_clips/
 my_thumb/
+*.bak
