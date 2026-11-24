@@ -54,6 +54,26 @@ def _first_photo(B, idx, item):
     return None
 
 
+def _ai_photo(db, idx, item):
+    """Cloudflare(FLUX)로 소재 그림 1장 (글자 없는 그림만). 한 번 만든 건 thumb_ai/ 에 저장해 재사용. 키가 없거나 실패하면 None"""
+    import os
+    if os.environ.get("LF_THUMB_AI", "1") == "0":
+        return None
+    try:
+        import ai_images as AI
+        if not AI.provider():
+            return None
+        dest = Path("thumb_ai") / f"{idx}.png"
+        if not dest.exists():
+            ps = list(item.get("ai_prompts") or [])
+            base = ps[0] if ps else f"{item.get('country', 'world')}, {item.get('topic') or ''}"
+            AI.generate_one(base + ", single strong focal subject, bold vivid saturated colors, high contrast, dramatic", str(dest))
+        return Image.open(dest).convert("RGB")
+    except Exception as e:
+        print(f"  AI 썸네일 그림 실패({idx}): {type(e).__name__}: {str(e)[:80]} -> 사진으로 대체", flush=True)
+        return None
+
+
 def _panel(img, box, skew, color):
     """기울어진 칸에 사진을 넣어 RGBA 로"""
     x0, y0, x1, y1 = [int(v) for v in box]
@@ -169,7 +189,7 @@ def make(db, members, title, out_path, en=False, parts=None):
     palette = [(60, 90, 200), (200, 80, 90), (60, 160, 120), (230, 160, 40), (140, 90, 200)]
     for k, (idx, box) in enumerate(zip(sel, slots)):
         item = db[idx]
-        img = _first_photo(B, idx, item)
+        img = _ai_photo(db, idx, item) or _first_photo(B, idx, item)
         panel, pos = _panel(img, box, skew, palette[k % len(palette)])
         base.alpha_composite(panel, (max(0, pos[0]) if pos[0] >= 0 else 0, pos[1]))
     # 가운데 어둡게 (글자 잘 보이게)
