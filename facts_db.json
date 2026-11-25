@@ -63760,7 +63760,41 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0541_대만.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0541_대만.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "dokdo",
+      "band": "none",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "대만 한단 축제",
+      "text2": "빨간 반반지는 왜?",
+      "colors1": {
+        "0": "#36b0e3",
+        "1": "#d25656",
+        "2": "#c4ca1a"
+      },
+      "sizes1": {},
+      "colors2": {
+        "0": "#db1717",
+        "1": "#26e38b",
+        "2": "#debd2e"
+      },
+      "sizes2": {}
+    }
   },
   {
     "topic": "유대교 새해 라삐가 부는 양뿔 나팔",
