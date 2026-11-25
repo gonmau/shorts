@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-25 20:23:54 (KST) · 기록 2188건 · 소재 733개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-25 20:37:53 (KST) · 기록 2196건 · 소재 733개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,8 +10,8 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 211 | 0 | 55초 |
-| approve | 69 | 0 | 16초 |
+| apply_review | 212 | 0 | 56초 |
+| approve | 70 | 0 | 16초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 100 | 0 | 16시간 43분 |
 | check_country | 20 | 0 | 6초 |
@@ -21,16 +21,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 78 | 0 | 17초 |
-| fetch_images | 225 | 9 | 2시간 37분 |
+| export_review | 79 | 0 | 17초 |
+| fetch_images | 226 | 9 | 2시간 39분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 267 | 0 | 1시간 55분 |
-| generate_tts | 117 | 0 | 37분 35초 |
+| generate_script | 269 | 0 | 1시간 57분 |
+| generate_tts | 118 | 0 | 37분 49초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
 | make_thumbnail | 94 | 0 | 2분 29초 |
-| promote_ready | 211 | 0 | 48초 |
+| promote_ready | 212 | 0 | 49초 |
 | redo_videos | 38 | 0 | 13초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -42,6 +42,19 @@
 | 코드업데이트 | 125 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-25
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 20:28 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 13초 |  |
+| 20:27 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 1분 29초 |  |
+| 20:26 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 1초 |  |
+| 20:26 | PC | export_review | export_review.py --limit 1 --start 0 | ✅ | 0초 |  |
+| 20:26 | PC | generate_script | generate_script.py --limit 1 --start 0 | ✅ | 1분 57초 |  |
+| 20:24 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 20:24 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 20:24 | PC | approve | approve.py --limit 1 --start 0 | ✅ | 0초 |  |
 
 ### 2026-11-24
 
@@ -2058,87 +2071,3 @@
 | 07:40 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 07:25 | PC | 코드업데이트 | gonmau/shorts: 3개 (ext_script.py, local_ui.py, longform_script.py) | ✅ |  |  |
 | 07:02 | PC | 코드업데이트 | gonmau/shorts: 4개 (crosscheck.py, export_review.py, notify_cuts.py, notify_discord.py) | ✅ |  |  |
-
-### 2026-10-26
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 23:01 | PC | fetch_images | fetch_images.py --limit 1 --start 317 --any | ✅ | 47초 |  |
-| 23:00 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 317 | ✅ | 1초 |  |
-| 23:00 | PC | promote_ready | promote_ready.py --start 317 | ✅ | 0초 |  |
-| 23:00 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 3초 |  |
-| 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 4초 |  |
-| 22:59 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 1초 |  |
-| 22:58 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type vector | ✅ | 1초 |  |
-| 22:58 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type illustration | ✅ | 2초 |  |
-| 22:58 | PC | fetch_images | fetch_images.py --index 308 --scene 2 --source pixabay --type photo | ✅ | 5초 |  |
-| 22:58 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
-| 22:58 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
-| 22:56 | PC | fetch_images | fetch_images.py --index 186 --scene 1 --source commons --type photo | ✅ | 4초 |  |
-| 22:51 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --ti | ❌ failed | 4분 46초 |    247 네팔: 12장 중 8, 9, 10, 11, 12번 없음    261 뉴질랜드: 12장 중 7, 8, 9, 10, 11, 12번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 |
-| 22:44 | PC | fetch_images | fetch_images.py --index 261 --force | ✅ | 17초 |  |
-| 22:43 | PC | generate_script | generate_script.py --extras-only --index 261 --regen-queries | ✅ | 2분 4초 |  |
-| 22:41 | PC | fetch_images | fetch_images.py --index 247 --force | ✅ | 41초 |  |
-| 22:41 | PC | generate_script | generate_script.py --extras-only --index 247 --regen-queries | ✅ | 3분 9초 |  |
-| 22:37 | PC | fetch_images | fetch_images.py --index 186 --force | ✅ | 33초 |  |
-| 22:37 | PC | generate_script | generate_script.py --extras-only --index 186 --regen-queries | ✅ | 7초 |  |
-| 22:37 | PC | fetch_images | fetch_images.py --index 175 --force | ✅ | 24초 |  |
-| 22:36 | PC | generate_script | generate_script.py --extras-only --index 175 --regen-queries | ✅ | 8초 |  |
-| 22:32 | PC | fetch_images | fetch_images.py --index 261 | ✅ | 0초 |  |
-| 22:29 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,261 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --clips --fi | ✅ | 13초 |  |
-| 22:24 | PC | fetch_images | fetch_images.py --index 277 | ✅ | 30초 |  |
-| 22:20 | PC | fetch_images | fetch_images.py --index 270 | ✅ | 25초 |  |
-| 21:43 | PC | 롱폼 | build_longform.py --preview cuts --mode manual --indexes 175,186,247,261,270,277,297,300,301 --min 1 --start 0 | ✅ | 22분 25초 |  |
-| 21:18 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 175 | ✅ | 1초 |  |
-| 21:18 | PC | fetch_images | fetch_images.py --limit 1 --start 175 --any | ✅ | 0초 |  |
-| 21:18 | PC | promote_ready | promote_ready.py --start 175 | ✅ | 0초 |  |
-| 21:18 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 21:17 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
-| 21:14 | PC | fetch_images | fetch_images.py --index 186 | ✅ | 0초 |  |
-| 20:52 | PC | 롱폼 | build_longform.py --mode manual --indexes 175,186,247,270,277,279,297,300,301 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images - | ✅ | 3분 34초 |  |
-| 20:42 | PC | 롱폼 | build_longform.py --mode auto --indexes 175,186,247,261,270,277,297,300,301 --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --st | ✅ | 4분 41초 |  |
-| 20:36 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dr | ✅ | 0초 |  |
-| 20:30 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 10 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dr | ✅ | 0초 |  |
-| 20:29 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 8 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 20:27 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 8초 |  |
-| 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
-| 20:26 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 3초 |  |
-| 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
-| 20:26 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 3초 |  |
-| 20:26 | PC | image_check | image_check.py --index 308 --scene 1 --force | ✅ | 9초 |  |
-| 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 4초 |  |
-| 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 4초 |  |
-| 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 3초 |  |
-| 20:25 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
-| 20:24 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
-| 20:24 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 0초 |  |
-| 20:24 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 24초 |  |
-| 20:21 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 29초 |  |
-| 20:20 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 18초 |  |
-| 20:19 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source commons --type photo | ✅ | 3초 |  |
-| 20:19 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 22초 |  |
-| 20:18 | PC | fetch_images | fetch_images.py --index 308 --scene 1 --source pixabay --type photo | ✅ | 1초 |  |
-| 20:06 | PC | fetch_images | fetch_images.py --limit 1 --start 308 --any | ✅ | 1분 41초 |  |
-| 20:04 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 308 | ✅ | 1초 |  |
-| 20:04 | PC | promote_ready | promote_ready.py --start 308 | ✅ | 0초 |  |
-| 20:04 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 20:02 | PC | export_review | export_review.py --limit 3 --start 106 | ✅ | 0초 |  |
-| 20:02 | PC | generate_script | generate_script.py --limit 3 --start 106 | ✅ | 10분 45초 |  |
-| 19:51 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
-| 19:51 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:51 | PC | approve | approve.py --limit 3 --start 106 | ✅ | 0초 |  |
-| 19:34 | PC | 코드업데이트 | gonmau/shorts: 15개 (build_longform.py, common.py, cuts.py, fetch_images.py, fix_tone.py, generate_script.py) | ✅ |  |  |
-| 19:20 | Actions | 쇼츠 | culture-shorts-pipeline #97 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40298462444 |
-| 18:03 | Actions | 쇼츠 | culture-shorts-pipeline #96 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40295951516 |
-| 17:48 | Actions | 쇼츠 | culture-shorts-pipeline #95 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40294708797 |
-| 17:45 | Actions | 쇼츠 | culture-shorts-pipeline #94 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40294408541 |
-| 17:38 | Actions | 쇼츠 | culture-shorts-pipeline #93 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40293600206 |
-| 17:31 | Actions | 쇼츠 | culture-shorts-pipeline #92 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40292397862 |
-| 17:25 | Actions | 쇼츠 | culture-shorts-pipeline #91 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40292084656 |
-| 17:22 | Actions | 쇼츠 | culture-shorts-pipeline #90 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40291767150 |
-| 12:38 | Actions | 롱폼 | culture-longform #9 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40261299041 |
-| 11:44 | Actions | 롱폼 | culture-longform #8 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40260553222 |
-| 11:33 | Actions | 롱폼 | culture-longform #7 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40259610370 |
-| 07:18 | Actions | 롱폼 | culture-longform #6 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40237149243 |
-| 06:38 | Actions | 롱폼 | culture-longform #5 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40236351349 |
