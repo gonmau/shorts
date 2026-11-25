@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-25 21:03:50 (KST) · 기록 2206건 · 소재 733개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-25 21:06:43 (KST) · 기록 2208건 · 소재 733개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -29,14 +29,14 @@
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 95 | 0 | 2분 30초 |
+| make_thumbnail | 96 | 0 | 2분 32초 |
 | promote_ready | 213 | 0 | 49초 |
 | redo_videos | 38 | 0 | 13초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
 | update_description | 6 | 0 | 17초 |
-| upload_to_youtube | 34 | 0 | 25분 31초 |
+| upload_to_youtube | 35 | 0 | 27분 57초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 128 | 6 | 12시간 17분 |
 | 코드업데이트 | 125 | 0 | 0초 |
@@ -47,6 +47,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 21:06 | PC | upload_to_youtube | upload_to_youtube.py --indexes 541 --daily-max 20 | ✅ | 2분 26초 |  |
+| 21:04 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 541 | ✅ | 1초 |  |
 | 20:49 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 0 | ✅ | 1초 |  |
 | 20:49 | PC | build_video | build_video.py --limit 1 --start 0 --channel gonmauY --handle @gonmauY | ✅ | 9분 29초 |  |
 | 20:39 | PC | generate_tts | generate_tts.py --limit 1 --start 0 | ✅ | 6초 |  |
