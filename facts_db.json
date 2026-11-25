@@ -59078,8 +59078,7 @@
       "Hungarian language text",
       "Hungarian language textbook page",
       "Budapest street view with signs",
-      "Hungarian street sign close-up",
-      "Hungary"
+      "Hungarian street sign close-up"
     ],
     "scene_count": 8,
     "grounding": {
@@ -59394,23 +59393,21 @@
       "rural Chinese countryside celebration",
       "villagers celebrating Chinese new year",
       "fireworks lighting night sky",
-      "spectators feeling festival heat",
-      "Shehuo"
+      "spectators feeling festival heat"
     ],
     "scene_count": 10,
     "curate_score": 5,
     "curate_why": "입으로 불 뿜기, 시각·충격 있지만 사실성 의문",
     "curate_top": false,
     "hook_check": {
-      "ok": true,
-      "issues": [],
-      "advice": [
-        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      "ok": false,
+      "issues": [
+        "너무 김 (439자)"
       ],
-      "rounds": 0,
+      "advice": [],
+      "rounds": 2,
       "first": "새해에 마을 사람들이 입으로 불을 뿜는다?!",
-      "sentences": 9,
-      "ground_done": true
+      "sentences": 9
     },
     "source_text": "Shehuo (Chinese: 社火; pinyin: Shèhuǒ; lit. 'community fire'), also known as earth and fire, is a Chinese traditional carnival-like folk celebration prevailing mainly in the countryside of Northern China during the Chinese New Year, featuring dragon dance, lion dance, Yangko dance, traditional Chinese opera, stilt walkers, fire breathing, drumming and other folk arts. The roles in Shehuo encompass hundreds of character figures, including traditional deities and immortals, buddhas, sages, heroes, and various mythical creatures from ancient mythology, historical tales, and folklore.\nWith a long history, these festive affairs are rooted in primitive sacrificial activities in which ancient people prayed for harvest and affluence with their songs and dances from \"She\" (the God of Earth) and \"Huo\" (literally meaning fire). Over time, it gradually evolved into a folk custom staged during the Spring Festival and Lantern Festival, believed to ward off bad luck and usher in a fresh start for the new year. Shehuo has been inscribed on the official intangible cultural heritage lists of Shaanxi, Qinghai, Gansu, and related regions; in 2006, it was inscribed into China's National Intangible Cultural Heritage list.\n== History ==\nShehuo traces its history back to ancient sacrificial ceremonies held to pray for good harvests about 2,000 years ago. Known as Saishe (Chinese: 塞社; lit. 'offering sacrifices in gratitude to deities') in early Chinese texts, it originated from an ancient community ritual known as Chunqi Qiubao (Chinese: 春祈秋報; lit. 'spring prayer and autumn thanksgiving'), which itself developed from the earlier \"Three Big Sacrifices\", meaning the rain-seeking ritual of yu (雩), the year-end thanksgiving ritual of zha/la (蜡/臘) and particularly the exorcism ritual of nuo (儺). The first Shehuo event dates back to the Qin and Han dynasties. Combining \"Hundred Dramas\" with other acrobatics in the ancient sacrifices to the Earth God and the Valley God, it was also known as \"Shooting Tiger\" (射虎) and gradually evolved into an entertainment activity to welcome the Spring Festival. Shehuo traditions further developed in the Tang and Song dynasties and flourished in the Ming and Qing dynasties. Starting from the late Qing and Republican eras, Shehuo increasingly incorporated elements of regional opera, folk dance, and Buddhist ritual gestures, resulting in a rich cultural syncretism. In 2026, a traditional Shehuo performance in Haidong, Qinghai, was recognized by Guinness World Records as the \"largest Shehuo performance\".\n== Practices ==\nThere are two major types of Shehuo, Pose Shehuo and Performance Shehuo. Pose Shehuo includes forms such as Cloth Shehuo, Carrying Shehuo, Horse Shehuo, Car Shehuo, Xinzi Shehuo, Mountain Shehuo, and Masked Shehuo, which are performed in processions and primarily showcase character displays and craftsmanship. Performance Shehuo includes forms such as Floor Shehuo and Stilt-walking Shehuo, which are mainly performed in open spaces and involve martial arts-style combat. Most of the performances are inspired by myths, legends, and historical stories. Ancient Chinese literary classics, such as Romance of the Three Kingdoms, The Investiture of the Gods, and Journey to the West, are often adapted.\n=== Masks ===\nShehuo masks are props worn by performers during Shehuo practice to disguise themselves as gods or righteous figures that are said to have magic powers in folktales or legends. A painted wooden ladle mask, known as Mashao facial makeup, is often used on Shehuo, and people hang them on doors to protect their houses and ward off evil during the festival.\n== Regional variations ==\n=== Shanxi ===\nAccording to local officials, Shanxi is famous for its Shehuo performance because the flourishing of merchants during the Ming",
     "hashtags": [
@@ -59531,7 +59528,8 @@
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0500_중국.mp4",
     "status_v6": "video_done",
     "youtube_id": "tA11MX86Ri8",
-    "uploaded_at": "2026-11-24T08:34:14.970406+09:00"
+    "uploaded_at": "2026-11-24T08:34:14.970406+09:00",
+    "review_needed": true
   },
   {
     "topic": "라오스에서도 페이스(face)는 생존 규칙",
@@ -60201,7 +60199,134 @@
     },
     "curate_score": 4,
     "curate_why": "적도 위 몰디브, 지리적 특이지만 논쟁 부족",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "환초",
+      "말레",
+      "왕조"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "몰디브 개요",
+      "s": 3,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "환초 수",
+          "value": null,
+          "text": "26"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A satellite view of the Maldives archipelago straddling the equator, turquoise waters and scattered coral islands forming a thin north‑south chain, seen from directly above.",
+      "A close‑up aerial shot of several Maldivian islands clustered near the equator, with white sand beaches and palm trees, captured at a low angle to emphasize proximity to the equatorial line.",
+      "A panoramic landscape of the Maldives showing the northern Ihavandhippolhu at one end and the southern Addu Atoll at the other, the chain stretching across the Indian Ocean under a bright sky.",
+      "A side view of the elongated Maldivian atolls from north to south, with gentle waves lapping the reefs, filmed from a low boat perspective moving along the chain.",
+      "An ancient royal palace ruins on the island of Malé, bathed in golden sunset light, with traditional Maldivian architecture hinting at a historic king's domain.",
+      "A bustling colonial‑style administrative hall on a remote atoll, where a local governor presents reports to a distant monarch, viewed from a high angle inside the wooden building.",
+      "Villagers in traditional dhoni boats navigating warm, crystal‑clear waters near the equator, surrounded by vibrant coral reefs, captured from a low waterline perspective.",
+      "A cultural festival on a beach island with dancers in bright Maldivian attire, palm fronds swaying, filmed from a tilted side angle to showcase the lively atmosphere.",
+      "A map‑like illustration of the Maldives with highlighted equatorial proximity, overlaid with faint silhouettes of historic royal symbols, seen from a top‑down angled view.",
+      "A serene sunrise over a tiny Maldivian island, ancient stone foundations visible, evoking deep history amidst the modern sea, captured from a distant shoreline perspective."
+    ],
+    "ai_prompts_done": [
+      "A satellite view of the Maldives archipelago straddling the equator, turquoise waters and scattered coral islands forming a thin north‑south chain, seen from directly above.",
+      "",
+      "A panoramic landscape of the Maldives showing the northern Ihavandhippolhu at one end and the southern Addu Atoll at the other, the chain stretching across the Indian Ocean under a bright sky.",
+      "A side view of the elongated Maldivian atolls from north to south, with gentle waves lapping the reefs, filmed from a low boat perspective moving along the chain.",
+      "An ancient royal palace ruins on the island of Malé, bathed in golden sunset light, with traditional Maldivian architecture hinting at a historic king's domain.",
+      "A bustling colonial‑style administrative hall on a remote atoll, where a local governor presents reports to a distant monarch, viewed from a high angle inside the wooden building.",
+      "Villagers in traditional dhoni boats navigating warm, crystal‑clear waters near the equator, surrounded by vibrant coral reefs, captured from a low waterline perspective.",
+      "A cultural festival on a beach island with dancers in bright Maldivian attire, palm fronds swaying, filmed from a tilted side angle to showcase the lively atmosphere.",
+      "A map‑like illustration of the Maldives with highlighted equatorial proximity, overlaid with faint silhouettes of historic royal symbols, seen from a top‑down angled view.",
+      "A serene sunrise over a tiny Maldivian island, ancient stone foundations visible, evoking deep history amidst the modern sea, captured from a distant shoreline perspective."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A satellite view of the Maldives archipelago straddling the equator, turquoise w"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Gzzz",
+        "license": "CC BY-SA 4.0",
+        "title": "Floatplane at Bathala (Maldives).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Floatplane_at_Bathala_(Maldives).jpg",
+        "id": "c:47805079"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A panoramic landscape of the Maldives showing the northern Ihavandhippolhu at on"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A side view of the elongated Maldivian atolls from north to south, with gentle w"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An ancient royal palace ruins on the island of Malé, bathed in golden sunset lig"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A bustling colonial‑style administrative hall on a remote atoll, where a local g"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Villagers in traditional dhoni boats navigating warm, crystal‑clear waters near "
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A cultural festival on a beach island with dancers in bright Maldivian attire, p"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A map‑like illustration of the Maldives with highlighted equatorial proximity, o"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A serene sunrise over a tiny Maldivian island, ancient stone foundations visible"
+      }
+    ],
+    "image_queries_done": [
+      "Maldives map equator",
+      "Maldives islands near equator",
+      "Maldives island chain crossing",
+      "Male capital historic palace",
+      "Maldives atoll administrative building",
+      "Warm tropical island beach",
+      "Maldives central royal history",
+      "Ancient ruins on small island",
+      "Maldives",
+      "Maldives landmark"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0506_몰디브_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0506_몰디브_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -63340,7 +63465,7 @@
     "verify_note": "Spanish and Portuguese Jews",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -63355,7 +63480,79 @@
     },
     "curate_score": 6,
     "curate_why": "1492년 유대인 후예, 역사적 논쟁",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "Spanish and Portuguese Jews, also called Western Sephardim, Iberian Jews, or Peninsular Jews, are a distinctive sub-group of Sephardic Jews who are largely descended from Jews who lived as New Christians in the Iberian Peninsula during the few centuries following the forced expulsion of unconverted Jews from Spain in 1492 and from Portugal in 1497. They should therefore be distinguished both from the descendants of those expelled in 1492 and from the present-day Jewish communities of Spain and Portugal.\nThe main present-day communities of Spanish and Portuguese Jews exist in the Netherlands, the United Kingdom, the United States and Canada, and several other Jewish communities in the Americas have Spanish and Portuguese Jewish roots though they no longer follow the distinctive customs of the Spanish and Portuguese Jews.\n== Historical background ==\nAlthough the 1492 and 1497 expulsions of unconverted Jews from Spain and Portugal were separate events from the Spanish and Portuguese Inquisitions (which were established over a decade earlier in 1478), they were ultimately linked, as the Inquisition eventually also led to the fleeing out of Iberia of many descendants of Jewish converts to Catholicism in subsequent generations.\nDespite the fact that the original Edicts of Expulsion did not apply to Jewish-origin New Christian conversos —as these were now legally Christians— the discriminatory practices that the Inquisition nevertheless placed upon them, which were often lethal, put immense pressure on many of the Jewish-origin Christians to also emigrate out of Spain and Portugal in the immediate generations following the expulsion of their unconverted Jewish brethren.\nThe Alhambra Decree (also known as the Edict of Expulsion) was an edict issued on 31 March 1492, by the joint Catholic Monarchs of Spain (Isabella I of Castile and Ferdinand II of Aragon) ordering the expulsion of all unconverted practicing Jews from the Kingdoms of Castile and Aragon, including from all its territories and possessions, by 31 July of that year. The primary purpose of the expulsion was to eliminate the influence of unconverted Jews on Spain's by then large Jewish-origin New Christian converso population, to ensure that the prior did not encourage the latter to relapse and revert to Judaism.\nOver half of Spain's Jewish origin population had converted to Catholicism as a result of the religious anti-Jewish persecution and pogroms which occurred in 1391. As a result of the Alhambra decree and persecution in prior years, it is estimated that of Spain's total Jewish origin population at the time, over 200,000 Jews converted to Catholicism, and initially remained in Spain. Between 40,000 and 80,000 did not convert to Catholicism, and by their steadfast commitment to remain Jewish were thus expelled. Of those who were expelled as unconverted Jews, an indeterminate number nonetheless converted to Catholicism once outside Spain and eventually returned to Spain in the years following the expulsion due to the hardships many experienced in their resettlement. Many of Spain's Jews who left Spain as Jews also initially moved to Portugal, where they were subsequently forcibly converted to the Catholic Church in 1497.\nMost of the Jews who left Spain as Jews accepted the hospitality of Sultan Bayezid II and, after the Alhambra Decree, moved to the Ottoman Empire, where they founded communities openly practising the Jewish religion; they and their descendants are known as Eastern Sephardim.\nDuring the centuries following the Spanish and Portuguese decrees, some of the Jewish-origin New Christian conversos started emigrating from Portugal and Spain, settling until the 1700s throughout areas of Western Europe and non-Iberian realms of the colonial Americas (mostly Dutch realm",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+      ],
+      "advice": [],
+      "rounds": 2,
+      "first": "네덜란드 거리에서 눈에 띈 그 사람, 실제로는 1492년 추방된 유대인의 후예일까?",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "네덜란드 거리에서 눈에 띈 그 사람, 실제로는 1492년 추방된 유대인의 후예일까?  \n\n스페인과 포르투갈에서 강제로 추방된 뒤 ‘신기독교인’이라는 이름으로 살아남은 유대인들의 후손이 바로 오늘날 네덜란드, 영국, 미국, 캐나다 등에 모여 있는 공동체입니다. 이들은 이베리아 반도에서 강제로 떠난 뒤 가톨릭 신앙을 겉으로 받아들이면서도 전통과 혈통을 비밀스럽게 보존해 왔죠.  \n\n그런데 현재 스페인·포르투갈에 남아 있는 유대인 공동체와는 전혀 다른 역사를 가지고 있습니다. 이들은 원래 이 지역에서 직접 살아남은 유대인과는 별개의 혈통이며, 그들의 정체성은 이주와 은밀한 종교 생활을 통해 형성되었습니다.  \n\n그렇다면 오늘도 네덜란드 거리에서 보이는 그 모습은, 500년 전 이베리아에서 시작된 숨겨진 이야기가 현대에 살아 숨 쉬는 증거라 할 수 있겠네요.",
+    "title_line1": "포스 유대인 혈통",
+    "title_line2": "네덜란드 거리, 그 후예?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "네덜란드 *후예*"
+      },
+      {
+        "s": 2,
+        "text": "강제추방 *신기독교인*"
+      },
+      {
+        "s": 5,
+        "text": "별도 *혈통* 형성"
+      },
+      {
+        "s": 6,
+        "text": "500년 *숨은*"
+      }
+    ],
+    "image_queries": [
+      "Dutch street Spanish Jewish",
+      "converso portrait",
+      "Spanish Jewish prayer book",
+      "Sephardic synagogue Spain",
+      "Portuguese Jewish family tree",
+      "500-year-old Dutch building"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "유대인",
+      "신기독교인",
+      "이베리아",
+      "추방",
+      "혈통"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "역사 타임라인",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1492년",
+          "value": null,
+          "text": "추방"
+        },
+        {
+          "label": "500년 전",
+          "value": null,
+          "text": "시작"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "마스터 한단 폭격 축제(Bombing of Master Handan Festival)의 독특한 의식",
@@ -63370,7 +63567,7 @@
     "verify_note": "Bombing of Master Handan Festival",
     "confidence": "source",
     "created_at": "2026-11-06T01:10:19.515341+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -63385,7 +63582,185 @@
     },
     "curate_score": 6,
     "curate_why": "폭격 축제와 빨간 반바지, 강렬 이미지",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The Bombing of Master Handan Festival (Chinese: 炸邯鄲) is a folk ritual that is usually held annually on the 15th and 16th days of the first lunisolar month after the Lantern Festival in Taitung County, Taiwan.\nIt has been recorded that the residents of Taitung have voluntarily acted as targets for firecrackers since the Japanese colonial era, although the stories behind the ritual's origins remain uncertain.\nAccording to some cultural historians, \"Lord Handan\" is the Martial God of Wealth who intensely disliked the cold. During the festival, a chosen individual recruited by Taitung's Hsuanwu Temple would portray Lord Handan by wearing only red shorts, a gold headband, earplugs in his ears, and a wet yellow cloth covering his face and mouth to prevent him from choking in the smoke. The individual would hold a banyan tree branch in his right hand and stand to have firecrackers thrown at him by the crowd as the procession moves through Taitung's streets to drive the cold away from his body. The festival is said to be able to expel malevolent spirits and bring prosperity. It was believed that the more firecrackers were set off, the greater the success and wealth that would be bestowed upon the devotees.\nAccording to another tradition, Lord Handan was worshipped as a deity by gangster members and outlaws, who used firecrackers to demonstrate their strength. In the 1970s and 1980s, local gang bosses often took on the role of Handan, where the custom of bombarding Handan with firecrackers evolved into a rivalry between leaders of warring factions, intended to determine the true boss. The person who could withstand the barrage of firecrackers the longest was expected to assume the position of the organization's new leader. However, due to these practices, the ritual was banned by the Taitung police in 1984, and local gang leaders were arrested and imprisoned as part of a crackdown on organized crime groups. The festival was only revived in 1989.\nDuring the COVID-19 pandemic in Taiwan in 2021 and 2022, the festival was canceled as a preventive measure against the spread of the coronavirus.\n== Gallery ==\n== See also ==\nList of festivals in Taiwan\n== References ==",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "왜 불꽃 속에 빨간 반바지만 입고 서 있는 사람을 ‘부자신’이라 부를까요?",
+      "sentences": 7
+    },
+    "narration": "왜 불꽃 속에 빨간 반바지만 입고 서 있는 사람을 ‘부자신’이라 부를까요?  \n\n대만 타이퉁 현에서는 매년 음력 1월 15·16일, 마스터 한단 폭격 축제가 열립니다. 사원에서 선정된 한 명이 금 머리띠와 귀마개, 그리고 빨간 반바지만 착용하고 ‘한단 군’을 연기합니다. 그 사람은 주민들의 자발적인 표적이 되어 불꽃이 휘날리는 가운데 서게 됩니다.  \n\n그런데 ‘한단 군’은 추위를 극도로 싫어한다는 전설 때문에 이 의식을 행한다는 점이 흥미롭습니다. 전통은 일본 식민지 시대부터 이어져 왔지만, 정확한 기원은 밝혀지지 않은 채 전해지고 있습니다.  \n\n결국 불꽃에 둘러싸인 빨간 반바지의 인물은, 추위에 대한 두려움을 달래기 위한 상징적 희생이라고 할 수 있겠습니다.",
+    "title_line1": "대만한단축제",
+    "title_line2": "빨간반바지는왜",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*빨간반바지* 불꽃"
+      },
+      {
+        "s": 3,
+        "text": "금 머리띠 *한단군*"
+      },
+      {
+        "s": 4,
+        "text": "불꽃 속 *표적* 서다"
+      },
+      {
+        "s": 5,
+        "text": "*한단군* 추위 싫어"
+      }
+    ],
+    "image_queries": [
+      "red shorts fireworks",
+      "Taichung fireworks festival",
+      "gold headband traditional costume",
+      "person standing fireworks",
+      "Han Dan gun costume",
+      "Japanese colonial architecture Taiwan",
+      "red shorts sacrifice",
+      "Bombing of Master Handan",
+      "Taiwan landmark",
+      "Taiwan culture"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "마스터한단폭격축제",
+      "타이퉁현",
+      "한단군",
+      "금머리띠"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "한단 군 의식",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "선정",
+          "value": null,
+          "text": "한 명 선정"
+        },
+        {
+          "label": "착용",
+          "value": null,
+          "text": "금 머리띠·귀마개·빨반"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A lone figure wearing bright red shorts stands amid swirling fireworks at night, viewed from a low angle looking up, emphasizing the glowing sparks surrounding the person.",
+      "A lone figure in red shorts surrounded by fireworks, captured from a high aerial perspective showing the burst patterns radiating around the standing person.",
+      "Nighttime scene of a Taiwanese mountain village square lit by fireworks, with a crowd watching as the Master Handan bombing festival begins, seen from a wide-angle ground view.",
+      "A temple interior where a selected participant dons a golden headband, ear protectors, and red shorts, posed dramatically on a raised platform, shot from a side profile angle.",
+      "Close-up side view of the temple performer in gold headband, ear muffs, and red shorts, illuminated by candlelight, with the background blurred to focus on the ceremonial attire.",
+      "The performer stands as a voluntary target among floating fireworks, captured from a dynamic low-angle that highlights the sparks raining down around the figure.",
+      "A mythic scene showing the red‑shorts figure shivering in the cold while fireworks blaze, filmed from a tilted Dutch angle to convey the legend of extreme cold intolerance.",
+      "Historical reenactment of the tradition during the Japanese colonial era, with period‑accurate wooden buildings and lanterns, viewed from a distant panoramic perspective.",
+      "A faded sepia‑toned illustration of the same colonial‑era festival, focusing on the ritual without faces, captured from a bird’s‑eye view over the village square.",
+      "The red‑shorts figure encircled by fireworks, portrayed as a symbolic sacrifice against the cold, shown from a close frontal shot with the firelight reflecting off the gold headband."
+    ],
+    "ai_prompts_done": [
+      "A lone figure wearing bright red shorts stands amid swirling fireworks at night, viewed from a low angle looking up, emphasizing the glowing sparks surrounding the person.",
+      "A lone figure in red shorts surrounded by fireworks, captured from a high aerial perspective showing the burst patterns radiating around the standing person.",
+      "Nighttime scene of a Taiwanese mountain village square lit by fireworks, with a crowd watching as the Master Handan bombing festival begins, seen from a wide-angle ground view.",
+      "A temple interior where a selected participant dons a golden headband, ear protectors, and red shorts, posed dramatically on a raised platform, shot from a side profile angle.",
+      "Close-up side view of the temple performer in gold headband, ear muffs, and red shorts, illuminated by candlelight, with the background blurred to focus on the ceremonial attire.",
+      "The performer stands as a voluntary target among floating fireworks, captured from a dynamic low-angle that highlights the sparks raining down around the figure.",
+      "A mythic scene showing the red‑shorts figure shivering in the cold while fireworks blaze, filmed from a tilted Dutch angle to convey the legend of extreme cold intolerance.",
+      "Historical reenactment of the tradition during the Japanese colonial era, with period‑accurate wooden buildings and lanterns, viewed from a distant panoramic perspective.",
+      "A faded sepia‑toned illustration of the same colonial‑era festival, focusing on the ritual without faces, captured from a bird’s‑eye view over the village square.",
+      "The red‑shorts figure encircled by fireworks, portrayed as a symbolic sacrifice against the cold, shown from a close frontal shot with the firelight reflecting off the gold headband."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A lone figure wearing bright red shorts stands amid swirling fireworks at night,"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A lone figure in red shorts surrounded by fireworks, captured from a high aerial"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Nighttime scene of a Taiwanese mountain village square lit by fireworks, with a "
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A temple interior where a selected participant dons a golden headband, ear prote"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Close-up side view of the temple performer in gold headband, ear muffs, and red "
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "The performer stands as a voluntary target among floating fireworks, captured fr"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A mythic scene showing the red‑shorts figure shivering in the cold while firewor"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Historical reenactment of the tradition during the Japanese colonial era, with p"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A faded sepia‑toned illustration of the same colonial‑era festival, focusing on "
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "The red‑shorts figure encircled by fireworks, portrayed as a symbolic sacrifice "
+      }
+    ],
+    "image_queries_done": [
+      "red shorts fireworks",
+      "Taichung fireworks festival",
+      "gold headband traditional costume",
+      "person standing fireworks",
+      "Han Dan gun costume",
+      "Japanese colonial architecture Taiwan",
+      "red shorts sacrifice",
+      "Bombing of Master Handan",
+      "Taiwan landmark",
+      "Taiwan culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0541_대만_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0541_대만_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0541_대만.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0541_대만.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "유대교 새해 라삐가 부는 양뿔 나팔",
@@ -64764,16 +65139,14 @@
     "curate_why": "특이하지만 숫자 미약",
     "curate_top": false,
     "hook_check": {
-      "ok": false,
-      "issues": [
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
       ],
-      "advice": [],
-      "rounds": 2,
-      "first": "하나의 섬에 무려 6개의 이름이 있다니, 믿기 어려우시죠?",
-      "sentences": 9,
-      "ground_done": true
+      "rounds": 1,
+      "first": "남중국해 스프라틀리 제도, 한 섬에 6개의 이름이 붙어 있다면 왜일까요?",
+      "sentences": 8
     },
     "source_text": "The Spratly Islands dispute is an ongoing territorial dispute among Brunei, China (PRC), Malaysia, the Philippines, Taiwan (ROC), and Vietnam concerning \"ownership\" of the Spratly Islands, a group of islands and associated \"maritime features\" (reefs, banks, and cays etc.) located in the South China Sea. The dispute is characterized by diplomatic stalemate and the employment of military pressure techniques (such as military occupation of disputed territory) in the advancement of national territorial claims. All except Brunei occupy some of the maritime features.\nMost of the \"maritime features\" in this area have at least six names: The \"international name\", usually in English; the \"Chinese name\", sometimes different for PRC and ROC (and also in different character-sets); the Philippine, Vietnamese and Malaysian names, and also, there are alternate names (e.g. Spratly Island is also known as Storm Island), and sometimes names with European origins (French, Portuguese, Spanish, British, etc.).\nAlthough not large, reserves of oil and natural gas have been found in the area. It is a commercial fishing ground and close to global shipping routes. Its strategic position allows countries to monitor maritime activities in the area and project military power. The United Nations Convention on the Law of the Sea (UNCLOS) does not decide on the sovereignty of disputed territories, as that requires separate legal and diplomatic efforts beyond the scope of UNCLOS.  Additionally, China (PRC), Taiwan (ROC), and Vietnam are the only ones to have made claims based on historical sovereignty of the islands.\n== Background information ==\n=== Hydrocarbons ===\nHydrocarbon exploration connected with the wider Spratly Islands dispute has included activity at Recto Bank (Reed Bank), a submerged bank west of Palawan that is geographically separate from the Spratly Islands proper and is subject to overlapping maritime claims.\nPetroleum exploration in the Recto Bank area began during the 1970s. Natural gas was discovered in the Sampaguita structure in 1976 following the drilling of an exploratory well. Three wells were subsequently drilled at the southwestern end of the structure, two of which tested gas at rates of 3.6 million and 3.2 million standard cubic feet per day, respectively.\nIn 1992, the PRC and Vietnam granted oil exploration contracts to United States oil companies covering overlapping areas in the Spratlys. In May 1992, the China National Offshore Oil Corporation (CNOOC) and Crestone Energy, a United States company based in Denver, Colorado, signed a cooperation contract for the joint exploration of the Wan'an Bei-21 block, a 25,155 square kilometres (9,710 mi2) section of the southwestern South China Sea that includes areas claimed as part of the Spratlys.\nIn 2012–2013, the United States Energy Information Administration estimated that contested areas such as the Paracel Islands and the Spratly Islands contained very little oil and natural gas. Most of the estimated 11 billion barrels of proved or probable oil reserves and 190 trillion cubic feet of proved or probable natural-gas reserves in the South China Sea were situated near undisputed shorelines.\n=== Commercial fishing ===\nIn 2010, the Western Central Pacific (excluding the northernmost reaches of the South China Sea closest to the PRC coast) accounted for 14% of the total world catch at 11.7 million tonnes. This was up from less than 4 million tonnes in 1970. In 1984, Brunei established an exclusive fishing zone encompassing Louisa Reef in the southeastern Spratly Islands.\n=== Global shipping ===\nThe area is close to some of the busiest shipping lanes in the world, accounting for $3.4 trillion of the $16 trillion global trade in 2016.\n== Presence by country ==\n== Claims and their basis ==\nCh",
     "review_needed": true
@@ -65995,7 +66368,7 @@
     },
     "curate_score": 7,
     "curate_why": "광대한 영토·숫자",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The Vạn Thịnh Phát case, officially referred to by the People's Court of Ho Chi Minh City, Vietnam as the Trương Mỹ Lan and Accomplices case, was a major economic corruption scandal involving the Vạn Thịnh Phát Group joint-stock company. Under the leadership of billionaire Trương Mỹ Lan for over a decade, Vạn Thịnh Phát orchestrated a large-scale fraud scheme targeting the Sai Gon Joint Stock Commercial Bank (SCB).\nThe Vạn Thịnh Phát scandal was exposed during the anti-corruption Blazing Furnace campaign initiated by General Secretary Nguyễn Phú Trọng. The total damage from the case was estimated at ₫677 trillion (approximately US$27 billion), with fraudulent disbursements reaching ₫1 quadrillion (approximately US$44 billion) through SCB loan documents. This made it one of the largest economic scandals in Vietnam's history, surpassing the 1 Malaysia Development Berhad scandal in Malaysia and making it the largest corruption case in Southeast Asia. Many senior officials, including high-ranking leaders, were implicated, and a total of 86 individuals were charged.\nAccording to the People's Court of Ho Chi Minh City, the trial of the Vạn Thịnh Phát case was to be conducted in two phases: the first focused on investigation, prosecution, and asset recovery; the second phase addressed issues related to fraudulent corporate bonds. \nThe first-phase trial took place from March 5 to April 11, 2024, with the participation of 200 lawyers and 86 defendants, seven of whom were absent. Trương Mỹ Lan was sentenced to death; four accomplices received life sentences, while the remaining defendants were sentenced to prison terms ranging from three years of suspended sentence to 20 years. Trương Mỹ Lan's husband and niece were respectively sentenced to 9 and 17 years in prison.\n== Background ==\nTrương Mỹ Lan, born on October 13, 1956, is a Vietnamese businesswoman of Chinese descent. She was born in Saigon, Republic of Vietnam (now Ho Chi Minh City, Vietnam). Before becoming the owner of a major corporation in Vietnam, she sold cosmetics at Bến Thành Market, Ho Chi Minh City, with financial support from her mother. In 1992, she married Hong Kong businessman Eric Chu Nap-kee (Chu Lập Cơ). Together, they founded Vạn Thịnh Phát Group, initially focusing on trade, business, restaurants, and hotels in the aftermath of the Đổi Mới reforms.\nIn 2007, Vạn Thịnh Phát established two subsidiaries: Vạn Thịnh Phát Investment Group and An Đông Investment. After gaining control of Saigon Commercial Bank (SCB) through shareholdings, SCB became one of the largest commercial banks in Vietnam by asset size. Simultaneously, Vạn Thịnh Phát grew into one of Vietnam’s wealthiest real estate companies, developing a range of high-end projects, including luxury residential buildings, office towers, hotels, and shopping centers.\nTimes Square Investment JSC, a subsidiary of Vạn Thịnh Phát, owns a prime property with frontages on Nguyễn Huệ Walking Street and the Union Square Saigon (formerly named as Vincom Center A), a complex of shopping and Mandarin Oriental hotel, which was the place of the former Eden Passage Mall that features four frontages. The Times Square Investment building (located at 22–36 Nguyễn Huệ, District 1) is chaired by Eric Chu. This building was used as collateral for loans at Saigon Commercial Bank (SCB), while the SCB headquarters is located at Bitexco Office Building, 19–25 Nguyễn Huệ. Despite controlling significant assets, little information is publicly available about Trương Mỹ Lan or her family.\n=== Burning Furnace campaign ===\nCorruption in Vietnam expanded during the tenure of Prime Minister Nguyễn Tấn Dũng. In 2016, the Communist Party of Vietnam launched the anti-corruption campaign known as the Blazing Furnace, initiated by General Secretary Ngu",
@@ -69939,7 +70312,7 @@
     },
     "curate_score": 7,
     "curate_why": "한 달 정복·숫자·전쟁·극적 전개",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "source_text": "The early Muslim conquests, or the early Islamic conquests (Arabic: الْفُتُوحَاتُ الإسْلَامِيَّة, romanized: al-Futūḥāt al-ʾIslāmiyya), also known as the Arab conquests, were a series of wars initiated by the Islamic prophet Muhammad, and continued by the early Muslims. In 622, he established the first Islamic state in Medina, with Muslim armies expanding rapidly out of Arabia under the succeeding Rashidun Caliphate and then the Umayyad Caliphate, culminating in Muslim rule being established throughout most of the Middle East and North Africa, parts of South Asia and Central Asia, and parts of Southern Europe over the following century. According to the Scottish historian James Buchan: \"In speed and extent, the first Arab conquests were matched only by those of Alexander the Great, and they were more lasting.\" At the height of the expansion, Muslim-ruled territory under the Caliphates is estimated to have covered 13,000,000 square kilometres (5,000,000 sq mi), stretching from the Indian subcontinent (at Sind) in the east to the Iberian Peninsula (up to Septimania) in the west.\nAmong other socio-political changes, the early Muslim conquests caused a rupture in the status quo dominated by the Sasanian Empire in the east and the Byzantine Empire in the west; Muslim armies overran the Sasanians and confined the Byzantines, who were left with part of Anatolia and Southeastern Europe. Detailed explanations for the success of the Muslim campaigns have been difficult to discover, largely because only fragmentary sources have survived from the period. American scholar Fred Donner suggests that Muhammad's establishment of the first Islamic state coupled with ideological coherence and mobilization constituted the main factor that propelled his community to successfully establish one of the largest empires in history. Most historians also agree that, as another primary factor that favoured the Muslim war effort, the Sasanians and the Byzantines were rendered militarily and economically exhausted from decades of warfare against each other, with the Sasanian civil war of 628–632 further accelerating political collapse.\nIt is also believed that Jews and some Christians in both Sasanian and Byzantine territory may have been dissatisfied with the state of the two empires and either welcomed or were indifferent to the invading Muslim troops. However, Arab Christian confederations such as the Ghassanids initially allied themselves with the Byzantines. There were also instances of working alliances being established between the Sasanians and the Byzantines in spite of their prior hostilities, such as when they combined forces against the Rashidun army during the Battle of Firaz in 633/634. A significant portion of the lands that the Byzantines lost to Muslim offensives in Syria and in Egypt had been taken back from Sasanian occupation just a few years earlier.\n== Background ==\n=== Pre-Islamic Arabia ===\nArabia was a region that hosted several cultures, some urban and others nomadic Bedouin. Arabian society was divided along tribal and clan lines, with the most important divisions being between the \"southern\" and \"northern\" tribal associations. Both the Byzantine and Sasanian empires competed for influence in Arabia by sponsoring clients; in turn, Arabian tribes sought the patronage of the two rival empires to bolster their own ambitions. The Lakhmid kingdom, which covered parts of what is now southern Iraq and northern Saudi Arabia was a client of Persia, and in 602 the Persians deposed the Lakhmids to take over the defense of the southern frontier. This left the Persians exposed and overextended, helping to set the stage for the collapse of the Persian Empire later that century.\nSouthern Arabia had, for thousands of years, been a wealthy region at t",
     "hook_check": {
@@ -70771,23 +71144,20 @@
     },
     "curate_score": 7,
     "curate_why": "",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "source_text": "The military history of Thailand encompasses over 1300 years of armed struggle. The Tai peoples migrated from South China and fought to settle in Southeast Asia during the 8th-10th centuries. They established city-states such as Suphannabhum in 913. Siamese served as mercenaries in the army of the Khmer King Suryavarman II in the 12th century. They lead wars of independence from the Khmer Empire and subsequently founded the kingdoms of Sukhothai (1238) and Ayutthaya (1351). Siamese conquest of Khmer territory and climate change caused the Fall of Angkor. The Siamese kingdoms had centuries of wars against the regional rival Burma until 1855. The 19th till  mid-20th century had a tense standoff between the Rattanakosin Kingdom and the colonial empires of Britain and France with occasional conflicts.\nThailand's military history is dominated by its centrality in Mainland Southeast Asia, the significance of its far flung and often hostile terrain, and the changing nature of military technology. This had a decisive impact on the evolution of Thailand as a modern nation state. Thailand was involved in both world wars on different sides: a member of the Allies of World War I, but joined the Axis powers under pressure by Japan in World War II. Afterward, Thailand's military partnership with the United States culminated in a crucial role in the Cold War in Asia and as an ally in the war on terror. The Thai military's involvement in domestic politics brought frequent international attention.\n== Siamese under the Khmer Empire ==\nThe Tai peoples mass migrated from South China to Mainland Southeast Asia and Northern Thailand between the 8th-10th century. They gradually gained influence in the western regions of the Khmer Empire. Mercenaries from central and northern Thailand served in the army of the Khmer King Suryavarman II. He reigned from 1113 until his death in 1150. These mercenaries are evident in a bas-relief sculpture of Angkor Wat. They are called the 'Syam Kuk' (ស្យាំកុក៍) in Old Khmer. They are depicted marching eastward to battle the Chams of the Champa Kingdom (central and southern Vietnam) in the 12th century. They came from Lavo (Lopburi in central Thailand) and Syam (north-central Thailand). These were provinces (territory spheres) of the Khmer Empire.\nThe consensus of modern scholars, such as Vittorio Roveda,\nB.P. Groslier, Saveros Pou, and Michael Vickery, is that the 12th century marching “Syam Kuk” depicted on Angkor Wat are not the Tai/Siamese (ethnic Thai). Vickery also rejects the claim that “syām” comes from the Sanskrit śyāma, meaning “dark” (as in “dark complexioned”). He instead documents the usage of Syam, Sien, Siam, and the Chinese Hsien by the Cham, Khmer, and Chinese to explain syām kuk doesn’t refer to an ethnicity but a geographic location, which in the 12th century was populated by the Mon-Khmer.\n== Sukhothai period (1238–1350) ==\n=== Khmer Empire declines ===\nThe Siamese military state emerged from the disintegration of the Khmer Empire and the rise of Sukhothai in the 13th century. The Khmer had a powerful military state centred on what is today Cambodia. The Khmer dominated much of Mainland Southeast Asia through the use of irregular military led by captains owing personal loyalty to the Khmer warrior kings, and leading conscripted peasants levied during the dry seasons. Primarily based around its infantry, the Khmer army was typically reinforced by war elephants and later adopted ballista artillery from China.\nBy the end of the period, indigenous revolts amongst Khmer territories in Siam and Vietnam, and external attack from the independent kingdom of Champa, sapped Khmer strength. After the sack of the Khmer capital Angkor Wat by Champa forces in 1178–79, Khmer's ability to control its wider territories ",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 1번 문장 '1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을…' — ‘1300년 전’이라는 구체적 시기가 본문에 없음"
+        "근거 없음/틀림: 4번 문장 '그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소…' — 본문에 기후변화 시점 언급 없음"
       ],
       "advice": [
         "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
       ],
       "rounds": 2,
       "first": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?",
-      "sentences": 8,
-      "ground_done": true
+      "sentences": 8
     },
     "review_needed": true,
     "narration": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?  \n\n시암인들은 8세기에서 10세기 사이 남중국에서 이주해 크메르 제국과 끊임없이 충돌했습니다. 전투는 수세기에 걸쳐 이어졌고, 결국 시암인들이 크메르 영토를 정복하면서 앙코르의 중심부가 손에 잡히게 되었습니다.  \n\n그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소하고 가뭄이 지속되었습니다. 물이 부족해 농경 기반이 무너지자, 방대한 사원 건설을 유지하던 노동력과 자원이 급감했고, 앙코르는 서서히 붕괴의 길을 걸었습니다.  \n\n시암인과 크메르의 전쟁이 1300년이 넘는 기간 동안 이어졌다는 점은, 단순한 정복이 아니라 오랜 세월에 걸친 문화 충돌이었음을 보여줍니다. 이 해석은 일부 학자의 견해이며, 모든 학자가 동의하는 것은 아닙니다.  \n\n그렇다면, 전쟁과 기후가 만든 이 파괴는 결국 인간이 만든 위대한 건축물도 자연 앞에선 한 줌의 모래에 불과하다는 교훈을 남깁니다.",
@@ -71035,7 +71405,7 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "On 3 December 2024, at 22:27 Korea Standard Time (KST), Yoon Suk Yeol, the then-president of South Korea, attempted a self-coup by declaring martial law during a televised address. In the address, he accused the Democratic Party (DPK), which held a majority in the National Assembly, of engaging in \"anti-state activities\" and collaborating with \"North Korean communists\" to undermine the country, describing their dominance as a \"legislative dictatorship\". The declaration suspended political activities, including sessions of the National Assembly and local legislatures, and imposed restrictions on the press. Yoon ordered the arrest of several political opponents, including leaders of both the DPK and his own People Power Party (PPP). It was the first declaration of martial law in South Korea since the military dictatorship of General Chun Doo-hwan in 1980.\nThe declaration was opposed by both parties and resulted in protests. At 01:02 on 4 December, 190 legislators who had arrived at the National Assembly Proceeding Hall unanimously passed a motion to lift martial law, despite attempts by the Republic of Korea Army Special Warfare Command to prevent the vote. At 04:30, Yoon and his cabinet lifted martial law and soon disbanded the Martial Law Command. The opposition began impeachment proceedings against Yoon and said it would continue to do so if he did not resign. Uproar over the declaration led to the resignation of several officials in Yoon's administration, including Defense Minister Kim Yong-hyun, who had urged Yoon to enact martial law shortly before the declaration and was second-in-command of the martial law order. Yoon, military officers, and other officials of Yoon's administration were investigated for their role in the implementation of the decree.\nOn 7 December, Yoon issued an apology for declaring martial law. The next day, the former Defense Minister Kim was arrested and sent to a detention facility for his role in the martial law order, where he attempted suicide shortly before a warrant could be filed against him. On 12 December, Yoon said that he would \"fight to the end\" and that the martial law declaration was an \"act of governance\" to protect against anti-state forces. It is more widely believed that the declaration was motivated by political issues with the DPK-controlled Assembly over repeated impeachment attempts against officials, opposition to his budget, and various scandals involving him and his wife Kim Keon Hee.\nYoon was impeached on 14 December by the National Assembly and suspended from office pending a final ruling by the Constitutional Court on whether to confirm his removal from the presidency. Prime Minister Han Duck-soo served as acting president until he himself was impeached on 27 December, making Finance Minister and Deputy Prime Minister Choi Sang-mok acting president. However, Han's impeachment was overturned by the Constitutional Court on 24 March 2025, reinstating him as acting president. Yoon was arrested on 15 January 2025. On 26 January, he was indicted for leading an insurrection, becoming the first sitting president to be arrested and indicted in South Korean history. On 4 April, the Constitutional Court unanimously upheld Yoon's impeachment and removal from office over the martial law declaration. On 19 February 2026, Yoon and other figures involved in the incident were found guilty on insurrection charges. Yoon was sentenced to life in prison, while Kim Yong-hyun was sentenced to 30 years in prison.\n== Background ==\nSouth Korea has been governed as a presidential democracy under the 1987 constitution, which provides for a strong executive independent of the legislature. Yoon Suk Yeol, a member of the conservative People Power Party (PPP) and former prosecutor general, took office as Pr",
@@ -71541,14 +71911,16 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 3번 문장 '벨기에군은 7일 만에 함락된 리에주 요새를 방어하며 3…' — 31일째까지 나뉘르 요새 저지 주장은 본문에 없음"
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 1번 문장 '1914년 2월 2일, 독일이 “벨기에를 통과하라”는 …' — 날짜가 2월이 아니라 8월",
+        "근거 없음/틀림: 4번 문장 '독일군은 빠르게 루벤을 점령하고, 프랑스로 진격하려는 …' — 루벤이 아니라 룩셈부르크"
       ],
-      "advice": [],
+      "advice": [
+        "첫 문장이 김"
+      ],
       "rounds": 2,
-      "first": "독일이 8월 2일 “벨기를 통과하라”는 최후통첩을 보냈지만, 벨기 정부는 단호히 거부했습니다.",
-      "sentences": 5,
-      "ground_done": true
+      "first": "1914년 2월 2일, 독일이 “벨기에를 통과하라”는 최후통첩을 보냈을 때, 벨기에 정부는 단호히 “거절합니다”라고 답했습니다.",
+      "sentences": 6
     },
     "review_needed": true,
     "narration": "독일이 8월 2일 “벨기를 통과하라”는 최후통첩을 보냈지만, 벨기 정부는 단호히 거부했습니다. 그날 영국은 즉시 벨기에에 군사 지원을 약속했고, 2일 뒤인 8월 4일 독일은 전쟁을 선언하고 국경을 넘어 리에주 전투를 시작했습니다.  \n\n벨기에군은 7일 만에 함락된 리에주 요새를 방어하며 31 일째까지 메즈 강 일대 나뉘르 요새들을 저지했으며, 수도 브뤼셀은 8월 17일에 버려졌습니다. 독일은 벨기에 영토에 남은 소수 부대를 유지하면서 프랑스로 진격했지만, 벨기에 저항과 영국·프랑스 군대의 지원으로 전선이 급격히 확대되었습니다.  \n\n결국 독일이 벨기에를 통과하려는 시도는, 중립을 지키려는 벨기에의 선택과 영국의 즉각적인 지원 때문에 서부 전선 전체를 뒤흔든 전환점이 되었습니다.",
@@ -72162,9 +72534,7 @@
       "issues": [
         "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
         "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 1번 문장 '한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까…' — ‘한 번에’는 본문에 없음",
-        "근거 없음/틀림: 7번 문장 '우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추…' — 외부 자료 근거는 본문에 없음",
-        "근거 없음/틀림: 9번 문장 '그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역…' — 남아프리카와 연결은 근거 부족"
+        "근거 없음/틀림: 1번 문장 '한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까…' — ‘한 번에’ 정복은 본문에 없음"
       ],
       "advice": [],
       "rounds": 2,
@@ -72579,84 +72949,92 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "생수",
+      "생수 생존키트",
       "bottled drinking water emergency supplies",
       "emergency food canned food survival supplies",
-      "통조림",
+      "high calorie canned food",
       "휴대용 라디오",
       "emergency flashlight survival equipment",
       "first aid kit bandages antiseptic supplies",
-      "통조림 오프너",
+      "personal emergency medication supplies",
       "emergency blanket raincoat face mask",
       "complete disaster preparedness survival backpack"
     ],
     "image_credits": [
       {
         "scene": 1,
-        "source": "commons",
-        "user": "FacetsOfNonStickPans",
-        "license": "CC BY-SA 4.0",
-        "title": "Home water filters, water purifiers, and bottled water in India.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Home_water_filters,_water_purifiers,_and_bottled_water_in_India.jpg",
-        "id": "c:127881355"
+        "source": "pixabay",
+        "user": "StarShopping",
+        "page": "https://pixabay.com/vectors/bottledwater-water-bottle-mineral-4127009/",
+        "id": 4127009,
+        "type": "illustration"
       },
       {
         "scene": 2,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "bottled drinking water emergency supplies, documentary scene"
+        "source": "pixabay",
+        "user": "congerdesign",
+        "page": "https://pixabay.com/photos/bottle-mineral-water-glass-pour-2032980/",
+        "id": 2032980
       },
       {
         "scene": 3,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "emergency food canned food survival supplies, documentary scene"
+        "source": "pixabay",
+        "user": "goodlynx",
+        "page": "https://pixabay.com/photos/canned-food-fish-sardines-cans-2694736/",
+        "id": 2694736
       },
       {
         "scene": 4,
-        "source": "commons",
-        "user": "Ser Amantio di Nicolao",
-        "license": "CC BY-SA 4.0",
-        "title": "Beer canning apparatus used at Attaboy Brewing in Frederick, Maryland.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Beer_canning_apparatus_used_at_Attaboy_Brewing_in_Frederick,_Maryland.jpg",
-        "id": "c:152048909"
+        "source": "pixabay",
+        "user": "OpenClipart-Vectors",
+        "page": "https://pixabay.com/vectors/ham-tin-pork-canned-meat-food-575930/",
+        "id": 575930,
+        "type": "illustration"
       },
       {
         "scene": 5,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "휴대용 라디오, documentary scene"
+        "source": "pixabay",
+        "user": "vectronom",
+        "page": "https://pixabay.com/vectors/radio-cassette-speaker-sound-audio-3634616/",
+        "id": 3634616,
+        "type": "illustration"
       },
       {
         "scene": 6,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "emergency flashlight survival equipment, documentary scene"
+        "source": "pixabay",
+        "user": "WikimediaImages",
+        "page": "https://pixabay.com/photos/led-flashlight-light-torch-2202247/",
+        "id": 2202247,
+        "type": "photo"
       },
       {
         "scene": 7,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "first aid kit bandages antiseptic supplies, documentary scene"
+        "source": "pixabay",
+        "user": "stevepb",
+        "page": "https://pixabay.com/photos/first-aid-kit-first-aid-kit-medical-908591/",
+        "id": 908591
       },
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "WikimediaImages",
-        "page": "https://pixabay.com/photos/kitchen-classic-can-opener-2202231/",
-        "id": 2202231
+        "user": "OpenClipart-Vectors",
+        "page": "https://pixabay.com/vectors/can-cooking-kitchen-tin-tool-1300207/",
+        "id": 1300207,
+        "type": "illustration"
       },
       {
         "scene": 9,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "emergency blanket raincoat face mask, documentary scene"
+        "source": "pixabay",
+        "user": "coyot",
+        "page": "https://pixabay.com/photos/mask-surgical-mask-virus-protection-4898571/",
+        "id": 4898571
       },
       {
         "scene": 10,
-        "source": "ai",
-        "license": "AI-generated",
-        "title": "complete disaster preparedness survival backpack, documentary scene"
+        "source": "pixabay",
+        "user": "Mollyroselee",
+        "page": "https://pixabay.com/photos/man-building-apocalyptic-war-9181534/",
+        "id": 9181534
       }
     ],
     "image_source": "pixabay",
@@ -73402,7 +73780,7 @@
     },
     "curate_score": 8,
     "curate_why": "30분·3년·죽음 등 숫자로 긴장감↑",
-    "curate_top": false,
+    "curate_top": true,
     "need": "practical",
     "emotion": "caution",
     "source_text": "Fugu (河豚; 鰒; フグ, pronounced [ɸɯ̟ꜜɡɯ̟]) in Japanese, bogeo (복어; 鰒魚, pronounced [po̞ɡʌ̹]) or bok (복, pronounced [po̞k̚]) in Korean, and hétún (河豚; 河魨, pronounced [xɤ˧˥ tʰu̯ən˧˥]) in Standard Modern Chinese refers to pufferfish, normally of the genus Takifugu, Lagocephalus, or Sphoeroides, or a porcupinefish of the genus Diodon, or a dish prepared from these fish.\nFugu possesses a potentially lethal poison known as tetrodotoxin, therefore necessitating meticulous preparation to prevent the fish from being contaminated. Restaurant preparation of fugu is strictly controlled by law in Japan, Korea and several other countries, and only chefs who have qualified after three or more years of rigorous training are allowed to prepare the fish. Domestic preparation occasionally leads to accidental death.\nThroughout Japan, fugu is served as sashimi and nabemono. The liver, widely thought to be the most flavorful part, was traditionally served as a dish named fugu-kimo, but it is also the most poisonous, and serving this organ in restaurants was banned in Japan in 1984. \nIn East Asian cuisine, fugu has emerged as a delicacy, establishing itself as one of the most celebrated dishes in Japanese and Korean cuisine. Fugu has also been gradually emerging as a prized seafood delicacy in Chinese cuisine.\n== Diversity ==\nThere are close to 200 species in the family Tetraodontidae (pufferfish), a family of primarily marine and estuarine fish of the order Tetraodontiformes. Nonetheless, only some of them are eaten and traded as \"fugu\".\n== Toxicity ==\nFugu contains lethal amounts of the poison tetrodotoxin in its organs, especially the liver, ovaries, eyes, and skin. The poison, a sodium channel blocker, paralyzes the muscles while the victim stays fully conscious; the poisoned victim is unable to breathe and eventually dies from asphyxiation. There is no known antidote for fugu poison. The standard treatment is to support the respiratory and circulatory systems until the poison is metabolized and excreted by the victim's body.\nResearchers have determined that a fugu's tetrodotoxin comes from eating other animals infested with tetrodotoxin-laden bacteria, to which the fish develops insensitivity over time. Whether tetrodotoxin is sequestered from or produced by symbiotic bacteria is still debated. As such, efforts have been made in research and aquaculture to allow farmers to produce safe fugu. Farmers now produce poison-free fugu by keeping the fish away from the bacteria – see § Aquaculture below.\n=== Tetrodotoxin ===\nTetrodotoxin (TTX) is a natural product that has been isolated not only from pufferfish, but also octopuses, crabs, shellfish, frogs, newts, and other aquatic animals (see below). It is a potent neurotoxin that shuts down electrical signaling in nerves; it acts via interaction with components of the sodium channels in the cell membranes of those cells. Its ability to cross the blood–brain barrier is uncertain. In the case of the pufferfish host, at least (see below), their insusceptibility to the poison is thought to result from cysteine asperagine amino acid substitutions in the sequence of their specific types of sodium channel proteins.\nTTX is not produced by pufferfish and the other aquatic animals from which it has been isolated. Rather, bacteria such as Alteromonas, Shewanella, and Vibrio species infect or cohabit with the animal species from which TTX is isolated, and a bacterial biosynthetic pathway for its production has been rationalized.\nIn animal studies with mice, the median lethal dose of TTX was found to be 232 μg per kg body weight. Tetrodotoxin levels are affected by preparation (removal of most toxic materials, treatments such as curing and pickling, see below); it is, however, reportedly not significantly affected by cook",
@@ -73508,7 +73886,7 @@
     },
     "curate_score": 7,
     "curate_why": "명목 황제·역사 반전, 숫자·비교 부족",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "Dom John VI (Portuguese: João Maria José Francisco Xavier de Paula Luís António Domingos Rafael; 13 May 1767 – 10 March 1826), known as \"the Clement\" (o Clemente), was King of the United Kingdom of Portugal, Brazil and the Algarves from 1816 to 1825, and after the recognition of Brazil's independence, titular Emperor of Brazil and King of Portugal until his death in 1826.\nJohn VI was born in Lisbon during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the Princess of Brazil and Infante Peter of Portugal, who later became Queen Dona Maria I and King Dom Peter III. In 1785, John married Carlota Joaquina of Spain, with whom he had nine children. He became heir to the throne when his older brother, Prince José, died of smallpox in 1788. Before his accession to the throne, John bore the titles Duke of Braganza, Duke of Beja, and Prince of Brazil. From 1799, he served as prince regent due to his mother's mental illness. In 1816, he succeeded his mother as monarch of the Portuguese Empire, with no real change in his authority, since he already possessed absolute powers as regent.\nOne of the last representatives of absolute monarchy in Europe, John lived during a turbulent period; his reign never saw a lasting peace. Throughout his period of rule, major powers such as Spain, France, and Great Britain continually intervened in Portuguese affairs. Forced to flee across the Atlantic Ocean to Brazil when troops of Emperor Napoleon I invaded Portugal, he found himself faced there with liberal revolts; he was compelled to return to Europe amid new conflicts. His marriage was no less conflictual, as his wife Carlota Joaquina repeatedly conspired against John in favor of personal interests or those of her native Spain.\nJohn lost Brazil when his son Pedro declared independence, and his other son Miguel (later Dom Miguel I of Portugal) led a rebellion that sought to depose him. According to recent scholarly research, his death may well have been caused by arsenic poisoning. Notwithstanding these tribulations, John left a lasting mark, especially in Brazil, where he helped to create numerous institutions and services that laid a foundation for national autonomy, and many historians consider him to be a true mastermind of the modern Brazilian state. John's contemporaries viewed him as a kind and benevolent king, although later generations of Portuguese and Brazilians have made him the subject of frequent caricature. However, in recent decades his reputation has been restored as a clever king who was able to balance many competing interests.\n== Early life ==\nJoão Maria José Francisco Xavier de Paula Luís António Domingos Rafael was born 13 May 1767 during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the King's eldest daughter and heir, Dona Maria, Princess of Brazil (later Queen Dona Maria I) and Infante Peter of Portugal (later King Dom Peter III). Peter was not only Maria's husband, but also her paternal uncle.\nJohn was ten years old when his grandfather died and his mother ascended to the throne. His childhood and youth were lived quietly in the shadow of Queen Maria I's older son and heir apparent, José, Prince of Brazil and Duke of Braganza. Folklore has Infante John as a rather uncultured youth, but according to Jorge Pedreira e Costa, he received as rigorous an education as his brother José did. Still, a French ambassador of the time painted him in unfavorable colors, seeing him as hesitant and dim. The record of this period of his life is too vague for historians to form any definitive picture. Little is known of the substance of his education. He surely received instruction in religion, law, French, and etiquette, and would presumably have learne",
@@ -74166,13 +74544,13 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 1번 문장 '헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순…' — 본문에 헝가리 언급 없음",
-        "근거 없음/틀림: 2번 문장 '이 나라의 이름법은 부모가 제안한 이름을 사전에 검토하…' — 본문에 해당 내용 없음",
-        "근거 없음/틀림: 3번 문장 '예를 들어, 키릴 문자·한글·그 외 비라틴 스크립트를 …' — 본문에 헝가리 사례 없음",
-        "근거 없음/틀림: 4번 문장 '특히 일상적인 단어라도 아이에게 부정적인 의미로 해석될…' — 본문에 ‘웃음’ 사례 없음",
-        "근거 없음/틀림: 5번 문장 '이러한 기준은 헝가리 관할 등록소에서 일괄 적용되며, …' — 본문에 헝가리 적용 설명 없음",
-        "근거 없음/틀림: 6번 문장 '따라서 헝가리에서 아이에게 이름을 짓고 싶다면, 라틴 …' — 본문에 해당 조언 없음",
-        "근거 없음/틀림: 7번 문장 '(문자와 의미, 두 가지 기준이 동시에 작동한다는 점,…' — 본문에 해당 내용 없음"
+        "근거 없음/틀림: 1번 문장 '헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순…' — 본문에 없음",
+        "근거 없음/틀림: 2번 문장 '이 나라의 이름법은 부모가 제안한 이름을 사전에 검토하…' — 본문에 없음",
+        "근거 없음/틀림: 3번 문장 '예를 들어, 키릴 문자·한글·그 외 비라틴 스크립트를 …' — 본문에 없음",
+        "근거 없음/틀림: 4번 문장 '특히 일상적인 단어라도 아이에게 부정적인 의미로 해석될…' — 본문에 없음",
+        "근거 없음/틀림: 5번 문장 '이러한 기준은 헝가리 관할 등록소에서 일괄 적용되며, …' — 본문에 없음",
+        "근거 없음/틀림: 6번 문장 '따라서 헝가리에서 아이에게 이름을 짓고 싶다면, 라틴 …' — 본문에 없음",
+        "근거 없음/틀림: 7번 문장 '(문자와 의미, 두 가지 기준이 동시에 작동한다는 점,…' — 본문에 없음"
       ],
       "advice": [
         "첫 문장에 숫자·대비·질문·걸린 것이 없음",
@@ -74180,8 +74558,7 @@
       ],
       "rounds": 2,
       "first": "헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순간, 국가가 바로 등록을 거부합니다.",
-      "sentences": 7,
-      "ground_done": true
+      "sentences": 7
     },
     "review_needed": true,
     "narration": "헝가리에서는 라틴 알파벳이 아닌 문자로 이름을 짓는 순간, 국가가 바로 등록을 거부합니다.  \n이 나라의 이름법은 부모가 제안한 이름을 사전에 검토하도록 의무화하고, ‘모욕적이거나 부적절한’ 의미가 발견되면 허가를 내리지 않죠.  \n예를 들어, 키릴 문자·한글·그 외 비라틴 스크립트를 포함한 이름은 서류를 제출하는 순간 거절 사유가 됩니다.  \n특히 일상적인 단어라도 아이에게 부정적인 의미로 해석될 경우, ‘웃음’처럼 순수해 보이는 이름조차 허가받지 못합니다.  \n이러한 기준은 헝가리 관할 등록소에서 일괄 적용되며, 거부된 경우 부모는 라틴 알파벳으로 다시 이름을 제시해야 합니다.  \n따라서 헝가리에서 아이에게 이름을 짓고 싶다면, 라틴 알파벳을 사용하고 의미가 부정적이지 않은지 사전에 확인하는 것이 필수입니다.  \n\n(문자와 의미, 두 가지 기준이 동시에 작동한다는 점, 기억해 두세요.)",
@@ -74493,25 +74870,25 @@
     },
     "curate_score": 7,
     "curate_why": "영해 주장·시기·숫자 제시, 역사·분쟁 강함",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The People's Republic of China (PRC) has a number of territorial disputes. Many of these disputes are almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. Certain Chinese claims to disputed maritime territories date from prior to the 1949 proclamation of the People's Republic of China.\n== Background ==\nThe asserted territory of China largely corresponds to that of the Qing empire. Many of the PRC's disputes are also almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. In its 1914 constitution, the Republic of China had asserted, \"The territory of the Chinese Republic continues the same as that of the former empire.\" The 1931 provisional constitution of the Republic of China stated, \"The territory of the Republic of China includes all the provinces, Mongolia, and Tibet.\" Certain Chinese claims to disputed maritime territories also predate the 1949 proclamation of the People's Republic of China.\n== Current disputes ==\n=== Bhutan ===\nBhutan's border with Tibet has never been officially recognized, much less demarcated. The Republic of China based in Taiwan officially maintains a territorial claim on parts of Bhutan to this day. The territorial claim was maintained by the People's Republic of China after the Chinese Communist Party took control of mainland China in the Chinese Civil War.\nThe 1959 Tibetan Rebellion and the 14th Dalai Lama's arrival in neighboring India made the security of Bhutan's border with China a necessity for Bhutan. An estimated 6,000 Tibetans fled to Bhutan and were granted asylum, although Bhutan subsequently closed its border to China, fearing more refugees to come. In July 1959, along with the occupation of Tibet, the Chinese People's Liberation Army occupied several Bhutanese exclaves in western Tibet which were under Bhutanese administration for more than 300 years and had been given to Bhutan by Ngawang Namgyal in the 17th century. These included Darchen, Labrang Monastery, Gartok and several smaller monasteries and villages near Mount Kailas.\nIn 1983, the Chinese Foreign Minister Wu Xueqian and the Bhutanese Foreign Minister Dawa Tsering held talks on establishing bilateral relations in New York. In 1984, China and Bhutan began annual, direct talks over the border dispute. In 1998, China and Bhutan signed a bilateral agreement for maintaining peace on the border. In the agreement, China affirmed its respect for Bhutan's sovereignty and territorial integrity and both sides sought to build ties based on the Five Principles of Peaceful Co-existence. However, China's building of roads on what Bhutan asserts to be Bhutanese territory, allegedly in violation of the 1998 agreement, has provoked tensions. In 2002, however, China presented what it claimed to be 'evidence', asserting its ownership of disputed tracts of land; after negotiations, an interim agreement was reached.\nOn 11 August 2016, Bhutan Foreign Minister Damcho Dorji visited Beijing, the capital of China, for the 24th round of boundary talks with Chinese Vice President Li Yuanchao. Both sides made comments to show their readiness to strengthen cooperation in various fields and their hope of settling the boundary issues. In 2024, The New York Times reported that, according to satellite imagery, China had constructed villages inside of disputed territory within Bhutan. Chinese individuals, called \"border guardians,\" received annual subsidies to relocate to newly built villages and paid to conduct border patrols.\n=== India ===\nChina and India have various ongoing territorial disputes. The disputes stem from the historical consequences of colonialism in Asia and the lack of clear historical boundary demarcations. T",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 2번 문장 '즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청…' — 해양 영유권을 청나라 영토와 동일시해 과장"
       ],
       "advice": [
-        "중반 전환·재훅 문장 없음"
+        "첫 문장이 김"
       ],
       "rounds": 2,
-      "first": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언했습니다.",
-      "sentences": 6,
-      "ground_done": true
+      "first": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다.",
+      "sentences": 5
     },
     "review_needed": true,
-    "narration": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언했습니다. 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 추가돼, 청나라 말기의 영토 개념을 그대로 이어받은 것이죠.  \n\n이 같은 해양 영유권 주장은 1949년 중화인민공화국이 수립되기 전에도 이미 중화민국이 제기했으며, 건국 이후에도 변함없이 이어졌습니다. 즉, 오늘날 PRC가 주장하는 영해는 새로운 주장이라기보다, 청조부터 두 차례에 걸쳐 재확인된 역사적 선언의 연속입니다.  \n\n이 연속성은 현재 진행 중인 해양 영유권 분쟁을 이해하는 핵심 단서가 됩니다. 결국 “1949년 이전부터 영해를 주장했다”는 말은, 청나라 시절부터 이어져 온 일관된 국가 정책의 결과라는 점을 기억해야 합니다.",
+    "narration": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다. 즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청나라 말기의 영토 개념을 그대로 이어받은 것이죠. 흥미롭게도, 이 같은 해역 주장은 1949년 이전에도 이미 중화민국이 동일하게 제기했으며, PRC가 건국된 뒤에도 그대로 이어졌습니다. 따라서 “1949년 이전부터 영해를 주장했다”는 말은 PRC만의 새로운 주장이라기보다, 청조부터 이어진 역사적 선언이 두 차례 반복된 결과임을 알 수 있습니다. 이런 연속성은 오늘날 영해 분쟁을 이해하는 중요한 단서가 됩니다.",
     "title_line1": "중국, 오래된 영해 주장",
     "title_line2": "1949년 전부터?",
     "highlights": [
@@ -75196,7 +75573,7 @@
     },
     "curate_score": 7,
     "curate_why": "인도·스리랑카 영토 분쟁, 구체적 땅·대비",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "curiosity",
     "source_text": "There are several disputed territories of India. A territorial dispute is a disagreement over the possession or control of land between two or more sovereign states or over the possession or control of land by a new state and occupying power after it has conquered the land from a former state no longer currently recognized by the new state.\nIndia faces territorial issues with some of its neighbours – the People's Republic of China, Pakistan and Nepal. The dispute with China also involves the Republic of China based in Taiwan. India has resolved its un-demarcated border with Bhutan, which included multiple irregularities. India also resolved its border disputes with Bangladesh and Sri Lanka.\n== Current disputes ==\n=== China ===\nThe territorial disputes between India and China result from the historical consequences of colonialism in Asia and the lack of clear historical boundary demarcations. There was one historical attempt to set a proposed boundary, the McMahon Line, by Great Britain during the 1913-1914 Simla Convention. The Republic of China rejected the proposed boundary. The unresolved dispute over the boundary became contentious after India gained its independence and the People's Republic of China was established. The disputed borders are complicated by the lack of administrative presence in the disputed areas, which are remote.\n==== Sino-Indian border ====\nTwo governments claim to be the legitimate Chinese government, the People's Republic of China (PRC) and the Republic of China (ROC; commonly called \"Taiwan\"). They do not recognise the legitimacy of each other. The PRC has actual control of its areas on the India-China border, while the ROC currently has no shared land or maritime border with India. Their views are presented below. The Line of Actual Control (LAC) is presently the operational border between India and the PRC.\n==== People's Republic of China's position ====\nThe Depsang Plains are located on the border of the Indian union territory of Ladakh and the disputed zone of Aksai Chin. The Chinese Army controls most of the plains, while India controls the western portion of the plains. The dispute remains unresolved.\nArunachal Pradesh is a state of India created on 20 January 1972, located in the far northeast. It borders the states of Assam and Nagaland to the south, and shares international borders with Burma in the east, Bhutan in the west, and China in the north. The majority of the territory is claimed by China, by whom it South Tibet. The northern border of Arunachal Pradesh reflects the McMahon Line, a line demarcated by the 1914 Simla Convention between the United Kingdom and the Tibetan government. The Simla Convention was never accepted by the Chinese government, and it was also considered invalid by Tibetans due to unmet conditions specified in the treaty. The boundary was not broadly enforced by the Indian government until 1950. Currently, this territory is administered by India.\n==== Republic of China's position ====\nThroughout the Cold War, the Government of the Republic of China had the same understanding of the China-India border dispute as the PRC. In 1962, the ROC's Ministry of Foreign Affairs stated that they did not recognise the legality of the McMahon Line. The same year western countries increased pressure on the ROC leader Chiang Kai-shek to recognise the legality of the McMahon Line in order to isolate Beijing. However, Chiang dismissed the McMahon Line as an \"imperialist imposition on China\". In February 1987, India's move to elevate the status of \"Arunachal centrally administered region\" to the state of Arunachal Pradesh was declared null and void by the ROC's Ministry of Foreign Affairs. The Ministry, in a formal statement, stated that it did not recognise the \"illegal occupation\" of R",
@@ -76635,7 +77012,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "rejected",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -76656,14 +77033,13 @@
       "ok": false,
       "issues": [
         "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 1번 문장 '159,500 km² 규모의 에세키보 서쪽 영토, 가이…' — ‘매일 국경을 뛰어다닌다’는 본문에 없음",
-        "근거 없음/틀림: 1번 문장 '159,500 km² 규모의 에세키보 서쪽 영토, 가이…' — 양국이 동시에 차지한다는 표현은 본문과 불일치"
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 5번 문장 '결국 이 159,500 km² 땅은 120 년 넘게 ‘…' — ‘120 년 넘게’는 본문에 명시되지 않음"
       ],
       "advice": [],
       "rounds": 2,
       "first": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요?",
-      "sentences": 5,
-      "ground_done": true
+      "sentences": 5
     },
     "review_needed": true,
     "narration": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요? 이 지역은 1899년 파리 중재 판정(Paris Arbitral Award)으로 영국이 통치하던 영국령 가이아나에 속한다는 결론이 내려졌고, 이후 가이아나는 실효 지배를 이어오고 있습니다. 하지만 베네수엘라는 이를 ‘구아야나 에세키바(Guayana Esequiba)’라 부르며 영토 주권을 부인하고, 1966년 제네바 협정까지 분쟁을 국제무대로 확대했습니다. 협정에 따라 해결 방안을 국제기구에 회부했으며, 2020년 국제사법재판소가 가이아나의 청구를 받아들인 뒤에도 양국은 여전히 입장을 고수하고 있습니다. 결국 이 159,500 km² 땅은 120 년 넘게 ‘누구의 땅인가’라는 질문을 남긴 채, 남미에서 가장 오래된 영토 분쟁 중 하나로 남아 있습니다.",
@@ -76732,8 +77108,7 @@
         }
       ],
       "none": false
-    },
-    "reject_reason": "나라와 주제 불일치(스페인 / GY,VE,FR,GB)"
+    }
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -80855,7 +81230,7 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": false,
+    "curate_top": true,
     "reject_reason": "UI에서 폐기"
   },
   {
@@ -80864,7 +81239,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "태국",
+    "country": "인도네시아",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -80959,8 +81334,7 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "인도네시아"
+    "status_v6": "video_done"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -80968,7 +81342,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "파키스탄",
+    "country": "덴마크",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -81089,8 +81463,7 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done",
-    "country_before_fix": "덴마크"
+    "status_v6": "video_done"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
@@ -81348,5 +81721,239 @@
       ]
     },
     "reject_reason": "근거 부실(자동): distinct 2/concrete 4/supported 3 (평균 3.0) 싱가포르와 연관성이 없고, 이오지마 전투는 일반적인 역사 사실이며 18km 터널 규모는 정확히 입증된 자료가 부족해 구체성과 신뢰성이 낮다. · 규칙: 근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+  },
+  {
+    "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
+    "hook": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다?",
+    "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
+    "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
+    "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
+    "country": "태국",
+    "theme": "축제/의례",
+    "wiki_title": "Nine Emperor Gods Festival",
+    "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
+    "verify_note": "Nine Emperor Gods Festival",
+    "confidence": "source",
+    "created_at": "2026-10-15T04:20:18.069832+00:00",
+    "status": "video_done",
+    "narration": "푸껫 인구의 절반 이상이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다. 바로 구황제신축제, ‘나인 엠퍼러 갓즈 페스티벌’입니다. 태국에서는 ‘테사칸 킨체’, 채식 축제라고도 불리죠. 이 도교 행사는 아홉 날 동안 이어지며, 퍼라낙인 공동체가 많은 말레이시아·싱가포르·인도네시아·태국 남부에서도 열립니다. 하지만 푸껫은 특히 유명합니다. 거리마다 제단이 세워지고, 사원 앞에는 긴 행렬이 이어지며, 북소리와 향, 전통 의식이 도시를 가득 채웁니다. 퍼라낙인 문화가 오래 이어진 푸껫만이 보여주는, 가장 뜨거운 축제의 풍경입니다.",
+    "title_line1": "푸껫 구황제신축제",
+    "title_line2": "도시가 온통 축제?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "푸껫을 *뒤덮는* 축제"
+      },
+      {
+        "s": 3,
+        "text": "9일간 *도교* 행진"
+      },
+      {
+        "s": 4,
+        "text": "거리마다 *제단* 설치"
+      }
+    ],
+    "image_queries": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "scene_count": 10,
+    "image_queries_done": [
+      "Phuket festival streets",
+      "Nine Emperor Gods procession",
+      "street altars Phuket",
+      "Phuket city celebration",
+      "temple parade Phuket",
+      "Phuket night festival"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Phuket@photographer.net from Phuket, Thailand",
+        "license": "CC BY 2.0",
+        "title": "Night streets at Phuket Vegetarian Festival. October, 2016. Phuket, Thailand (30177427206)",
+        "page": "https://commons.wikimedia.org/wiki/File:Night_streets_at_Phuket_Vegetarian_Festival._October,_2016._Phuket,_Thailand_(30177427206).jpg"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "LEE 003",
+        "license": "CC BY 4.0",
+        "title": "Nine Emperor Gods Festival (Ipoh) 5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nine_Emperor_Gods_Festival_(Ipoh)_5.jpg"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Michelle-Maria",
+        "page": "https://pixabay.com/photos/phuket-thailand-people-downtown-3255483/"
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "chriswanders",
+        "page": "https://pixabay.com/photos/christmas-market-christmas-frankfurt-4705877/"
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "hans-juergenp",
+        "page": "https://pixabay.com/photos/thailand-phuket-big-buddha-religion-4696468/"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Feeligood",
+        "page": "https://pixabay.com/photos/fireworks-night-sky-colorful-9220290/"
+      }
+    ],
+    "image_source": "pixabay",
+    "narration_original": "푸껫 인구의 절반이 퍼라낙인이라면, 이 축제는 도시 전체를 뒤덮는다? 바로 구황제신축제, 즉 Nine Emperor Gods Festival입니다. 이 도교 행사는 9일간 이어지며, 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 주관합니다. 특히 푸껫은 인구 절반이 퍼라낙인이라, 거리마다 제단이 설치되고, 사원 앞에 긴 줄이 서며, 전통 의식과 연주가 끊임없이 이어집니다. 태국에서는 ‘테사칸 킨체’라고도 불리죠. 그런데 흥미로운 점은, 푸껫을 제외한 다른 지역에서는 이 축제가 거의 알려지지 않는다는 사실입니다. 축제 소식이 퍼라낙인 공동체가 밀집한 곳에만 국한되는 만큼, 푸껫만큼 활기찬 모습을 다른 나라에서는 보기 어렵습니다. 그래서 푸껫의 거리마다 울려 퍼지는 북소리와 향연은, 이곳만의 특별한 문화가 얼마나 깊게 자리 잡았는지를 다시금 생각하게 합니다. 결국, 퍼라낙인의 절반이 사는 이 도시는 세계 어느 곳보다도 이 축제의 진면목을 보여주고 있습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0183_인도네시아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
+  },
+  {
+    "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
+    "hook": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?",
+    "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
+    "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
+    "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
+    "country": "파키스탄",
+    "theme": "축제/의례",
+    "wiki_title": "Punjabi festivals",
+    "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
+    "verify_note": "Punjabi festivals",
+    "confidence": "source",
+    "created_at": "2026-10-22T00:41:34.345706+00:00",
+    "status": "video_done",
+    "narration": "같은 펀자브, 파키스탄에서는 이슬람 축제만 공식 휴일?  \n\n펀자브인들은 종교가 다양합니다. 이슬람, 시크교, 힌두교 각각의 전통을 가지고 있어 각 종교의 명절을 따로 기념하죠. 그런데 파키스탄에서는 국가 차원에서 인정되는 공휴일이 이슬람 축제에만 한정돼 있습니다. 반면 인도에 사는 펀자브인들은 힌두교와 시크교의 중요한 날을 주로 기념하고, 그날마다 가족·마을이 모여 전통 음식을 나눕니다.  \n\n흥미로운 점은 2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다는 사실입니다. 다만 이 수치는 2007년 기준 추정치이므로 현재는 변동 가능하다는 점을 기억해 주세요.  \n\n같은 뿌리를 가진 펀자브인들이지만, 나라에 따라 축제 인식이 이렇게 다를 수 있다는 점, 생각해 보셨나요?",
+    "title_line1": "펀자브 축제 차이",
+    "title_line2": "파키스탄엔 이슬람만?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펀자브* 파키스탄?"
+      },
+      {
+        "s": 5,
+        "text": "인도 *시크교* 축제"
+      },
+      {
+        "s": 6,
+        "text": "*75%* 이슬람 믿어"
+      },
+      {
+        "s": 8,
+        "text": "나라별 *축제* 인식"
+      }
+    ],
+    "image_queries": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "scene_count": 10,
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0207_덴마크_v2_timing.json",
+    "tts_voice_v2": "ko-KR-SunHiNeural",
+    "status_tts_v2": "done",
+    "image_queries_done": [
+      "Punjab region Pakistan",
+      "Diverse Punjabi religions",
+      "Islam Sikh Hindu festival",
+      "Pakistan Islamic public holiday",
+      "Indian Sikh festival celebration",
+      "Muslim worshippers Punjab",
+      "Punjab demographic chart",
+      "Punjabi festival decorations"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357268/",
+        "id": 7357268
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(1).jpg",
+        "id": "c:163783089"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "yogendras31",
+        "page": "https://pixabay.com/photos/old-man-pagri-indian-turban-smile-5900410/",
+        "id": 5900410
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "qkcreativity92",
+        "page": "https://pixabay.com/photos/lahore-pakistan-arabesque-4793144/",
+        "id": 4793144
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "PavanPrasad_IND",
+        "page": "https://pixabay.com/photos/kids-festival-colour-contest-7426792/",
+        "id": 7426792
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Adnan_Raza",
+        "page": "https://pixabay.com/photos/pakistan-mosque-islam-multan-7357267/",
+        "id": 7357267
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(7).jpg",
+        "id": "c:163783096"
+      },
+      {
+        "scene": 8,
+        "source": "commons",
+        "user": "A. H. Bingley",
+        "license": "Public domain",
+        "title": "Table of Punjabi Sikh and Hindu festivals, fairs, and places of pilgrimage, taken from 'Si",
+        "page": "https://commons.wikimedia.org/wiki/File:Table_of_Punjabi_Sikh_and_Hindu_festivals,_fairs,_and_places_of_pilgrimage,_taken_from_%27Sikhs%27_(1899)_by_A._H._Bingley_(8).jpg",
+        "id": "c:163783098"
+      }
+    ],
+    "image_source": "pixabay",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   }
 ]
