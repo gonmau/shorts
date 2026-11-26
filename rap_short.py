@@ -240,13 +240,14 @@ def flow(a):
     def word_audio(w):
         if w in cache: return cache[w]
         raw = work / f"w{len(cache):03d}.wav"; synth_word(w, raw)
-        pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(raw), "-af", "silenceremove=start_periods=1:start_threshold=-42dB:stop_periods=1:stop_threshold=-42dB:stop_duration=0.05,aresample=%d" % sr,
+        pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(raw), "-af", "silenceremove=start_periods=1:start_threshold=-48dB,areverse,silenceremove=start_periods=1:start_threshold=-55dB,areverse,apad=pad_dur=0.04,aresample=%d" % sr,
                               "-ac", "1", "-f", "f32le", "-"], capture_output=True, check=True).stdout
         x = np.frombuffer(pcm, dtype=np.float32).copy(); cache[w] = x; return x
     for line in lines:
         words = [re.sub(r"[,!?.…~\"'“”]+", "", w) for w in line.split()]; words = [("요" if w.lower() == "yo" else ("예" if w.lower() == "yeah" else w)) for w in words if w]
         xs = [word_audio(w) for w in words]; d = [max(0.12, len(x) / sr) for x in xs]; nat = sum(d)
         k = min((1, 2, 3), key=lambda k: abs(np.log(max(nat, 0.5) / (k * bar * 0.9))))        # 한 줄이 몇 마디(bar)를 쓸지: 말 속도가 가장 덜 변하는 쪽
+        while k < 4 and nat / (k * bar * 0.93) > 1.25: k += 1                                 # 평균 25% 넘게 빨라져야 하면 한 마디 더 줘서 음절이 뭉개지지 않게
         span = k * bar * 0.93; f = span / nat; cum, ons = 0.0, []
         for di in d: ons.append(cum); cum += di * f
         sn = []                                                                              # 16분음표 격자에 붙이되 순서와 최소 간격 유지
@@ -255,10 +256,13 @@ def flow(a):
         ends = [sn[i + 1] if i + 1 < len(sn) else int(round(span / S)) for i in range(len(sn))]
         buf = np.zeros(int(k * bar * sr) + sr, dtype=np.float32)
         for x, g0, g1, w in zip(xs, sn, ends, words):
-            slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.8), 2.6)
-            y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", _atempo(r) + f",afade=t=out:st={max(0.0, dn / r - 0.02):.3f}:d=0.02",
-                                              "-f", "f32le", "-"], input=x.tobytes(), capture_output=True, check=True).stdout, dtype=np.float32).copy()
-            y = y[:int(slot * sr) + int(0.03 * sr)] * (1.25 if g0 % 4 == 0 else 1.0)           # 박(1,2,3,4박) 머리의 단어는 조금 세게
+            slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.85), 1.7)     # 최대 1.7배속: 그 이상 줄이면 끝음절이 뭉개지므로 다음 칸에 살짝 걸치게 둔다
+            y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", _atempo(r), "-f", "f32le", "-"],
+                                             input=x.tobytes(), capture_output=True, check=True).stdout, dtype=np.float32).copy()
+            keep = int((slot + 0.45 * S) * sr)                                                     # 다음 단어 시작 직전까지만 (칸의 45% 정도는 걸쳐도 됨)
+            if len(y) > keep:                                                                       # 잘라야 할 때는 뚝 끊지 않고 짧게 페이드
+                y = y[:keep]; nf = int(0.03 * sr); y[-nf:] *= np.linspace(1, 0, nf, dtype=np.float32)
+            y = y * (1.25 if g0 % 4 == 0 else 1.0)                                                 # 박(1,2,3,4박) 머리의 단어는 조금 세게
             i0 = int(g0 * S * sr); buf[i0:i0 + len(y)] += y[:len(buf) - i0]
         out_lines.append(buf[:int(k * bar * sr)]); timing.append({"start": round(pos, 3), "end": round(pos + span, 3), "text": line}); pos += k * bar
     y = np.concatenate(out_lines); y = y / max(1.0, float(np.abs(y).max()) / 0.92)
