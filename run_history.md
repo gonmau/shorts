@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 07:47:05 (KST) · 기록 2209건 · 소재 740개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 07:49:23 (KST) · 기록 2210건 · 소재 740개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -39,9 +39,15 @@
 | upload_to_youtube | 35 | 0 | 27분 57초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
-| 코드업데이트 | 125 | 0 | 0초 |
+| 코드업데이트 | 126 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-27
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 07:49 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_video.py, rap_short.py, subtitles.py) | ✅ |  |  |
 
 ### 2026-11-26
 
@@ -1925,115 +1931,3 @@
 | 07:31 | Actions | 쇼츠 | culture-shorts-pipeline #101 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40779946051 |
 | 07:18 | Actions | 쇼츠 | culture-shorts-pipeline #100 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40778151687 |
 | 01:06 | Actions | 쇼츠 | culture-shorts-pipeline #99 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40719308325 |
-
-### 2026-10-28
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 23:07 | PC | generate_script | generate_script.py --limit 1 --start 357 | ✅ | 3분 12초 |  |
-| 23:07 | PC | export_review | export_review.py --limit 1 --start 357 | ✅ | 0초 |  |
-| 23:04 | PC | promote_ready | promote_ready.py --start 357 | ✅ | 0초 |  |
-| 23:04 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:58 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 1분 52초 |  |
-| 22:39 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 340 | ✅ | 1초 |  |
-| 22:39 | PC | build_video | build_video.py --index 340 --channel gonmauY --handle @gonmauY | ✅ | 9분 35초 |  |
-| 22:29 | PC | generate_tts | generate_tts.py --index 340 | ✅ | 22초 |  |
-| 22:29 | PC | generate_script | generate_script.py --extras-only --index 340 | ✅ | 1초 |  |
-| 22:29 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:29 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
-| 22:27 | PC | fetch_images | fetch_images.py --limit 1 --start 340 --any | ✅ | 54초 |  |
-| 22:26 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 340 | ✅ | 1초 |  |
-| 22:26 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
-| 22:26 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:25 | PC | export_review | export_review.py --limit 1 --start 340 | ✅ | 0초 |  |
-| 22:25 | PC | generate_script | generate_script.py --limit 1 --start 340 | ✅ | 1분 8초 |  |
-| 22:24 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
-| 22:24 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:24 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
-| 22:23 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
-| 22:23 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:23 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
-| 22:23 | PC | export_review | export_review.py --limit 1 --start 340 | ✅ | 0초 |  |
-| 22:23 | PC | generate_script | generate_script.py --limit 1 --start 340 | ✅ | 9초 |  |
-| 22:23 | PC | promote_ready | promote_ready.py --start 340 | ✅ | 0초 |  |
-| 22:23 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:23 | PC | approve | approve.py --limit 1 --start 340 | ✅ | 0초 |  |
-| 22:22 | PC | 코드업데이트 | gonmau/shorts: 3개 (generate_culture_facts.py, generate_script.py, wiki_source.py) | ✅ |  |  |
-| 22:19 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 2초 |  |
-| 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source commons --type illustration | ❌ failed | 4초 | 장면 1: Commons에서 쓸 수 있는 사진(CC0/퍼블릭도메인/CC BY)을 못 찾았습니다 (Laos baby wrist string). 기존 사진 유지 |
-| 22:14 | PC | fetch_images | fetch_images.py --index 321 --scene 1 --source pixabay --type illustration | ✅ | 4초 |  |
-| 22:14 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 3분 3초 |  |
-| 22:08 | PC | generate_script | generate_script.py --limit 1 --start 321 | ✅ | 17초 |  |
-| 22:08 | PC | export_review | export_review.py --limit 1 --start 321 | ✅ | 0초 |  |
-| 22:08 | PC | redo_videos | redo_videos.py --script --indexes 321 | ✅ | 0초 |  |
-| 22:08 | PC | approve | approve.py --limit 1 --start 321 | ✅ | 0초 |  |
-| 22:08 | PC | promote_ready | promote_ready.py --start 321 | ✅ | 0초 |  |
-| 22:08 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:03 | PC | generate_script | generate_script.py --limit 1 --start 315 | ✅ | 3분 0초 |  |
-| 22:03 | PC | export_review | export_review.py --limit 1 --start 315 | ✅ | 0초 |  |
-| 22:00 | PC | promote_ready | promote_ready.py --start 315 | ✅ | 0초 |  |
-| 22:00 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 22:00 | PC | redo_videos | redo_videos.py --script --indexes 315 | ✅ | 0초 |  |
-| 22:00 | PC | approve | approve.py --limit 1 --start 315 | ✅ | 0초 |  |
-| 21:54 | PC | export_review | export_review.py --limit 1 --start 106 | ✅ | 0초 |  |
-| 21:54 | PC | generate_script | generate_script.py --limit 1 --start 106 | ✅ | 2분 47초 |  |
-| 21:52 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
-| 21:52 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 21:52 | PC | approve | approve.py --limit 1 --start 106 | ✅ | 0초 |  |
-| 21:50 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
-| 21:50 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 21:50 | PC | approve | approve.py --limit 1 --start 106 | ✅ | 0초 |  |
-| 20:06 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 11초 |  |
-| 20:06 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 20:06 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 20:06 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 20:06 | PC | redo_videos | redo_videos.py --script --indexes 320 | ✅ | 0초 |  |
-| 20:06 | PC | approve | approve.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:57 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 12초 |  |
-| 19:57 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:57 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:57 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:57 | PC | redo_videos | redo_videos.py --script --indexes 320 | ✅ | 0초 |  |
-| 19:53 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 30초 |  |
-| 19:53 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:53 | PC | redo_videos | redo_videos.py --script --indexes 320 | ✅ | 0초 |  |
-| 19:53 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:53 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:46 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 14초 |  |
-| 19:46 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:46 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:46 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:46 | PC | redo_videos | redo_videos.py --script --indexes 320 | ✅ | 0초 |  |
-| 19:41 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 15초 |  |
-| 19:41 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:41 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:41 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:40 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 1초 |  |
-| 19:40 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:40 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:40 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:39 | PC | generate_script | generate_script.py --limit 1 --start 320 | ✅ | 1초 |  |
-| 19:39 | PC | export_review | export_review.py --limit 1 --start 320 | ✅ | 0초 |  |
-| 19:39 | PC | promote_ready | promote_ready.py --start 320 | ✅ | 0초 |  |
-| 19:39 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 19:36 | PC | generate_culture_facts | generate_culture_facts.py --count 3 | ✅ | 15초 |  |
-| 19:16 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 106 | ✅ | 3초 |  |
-| 19:16 | PC | build_video | build_video.py --limit 3 --start 106 --channel gonmauY --handle @gonmauY | ✅ | 24분 28초 |  |
-| 18:51 | PC | generate_tts | generate_tts.py --limit 3 --start 106 | ✅ | 55초 |  |
-| 18:50 | PC | fetch_images | fetch_images.py --limit 3 --start 106 --any | ✅ | 3분 36초 |  |
-| 18:47 | PC | generate_script | generate_script.py --extras-only --limit 3 --start 106 | ✅ | 1초 |  |
-| 18:47 | PC | export_review | export_review.py --limit 3 --start 106 | ✅ | 0초 |  |
-| 18:47 | PC | generate_script | generate_script.py --limit 3 --start 106 | ✅ | 4분 34초 |  |
-| 18:42 | PC | promote_ready | promote_ready.py --start 106 | ✅ | 0초 |  |
-| 18:42 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
-| 18:42 | PC | approve | approve.py --limit 3 --start 106 | ✅ | 0초 |  |
-| 17:29 | PC | 코드업데이트 | gonmau/shorts: 1개 (yt_report.py) | ✅ |  |  |
-| 16:59 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, get_refresh_token.py, lf_thumb.py, notify_longform.py, yt_report.py) | ✅ |  |  |
-| 08:42 | Actions | 쇼츠 | culture-shorts-pipeline #98 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40603324880 |
-| 08:10 | Actions | 롱폼 | culture-longform #12 | ❌ failure |  | https://github.com/gonmau/shorts/actions/runs/40599946338 |
-| 07:37 | Actions | 롱폼 | culture-longform #11 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40589469657 |
-| 06:39 | Actions | 롱폼 | culture-longform #10 | ❌ failure |  | https://github.com/gonmau/shorts/actions/runs/40588262670 |
-| 06:12 | PC | cuts | cuts.py --freeze 40,47,71,93,100,115 | ✅ | 0초 |  |
-| 06:10 | PC | 코드업데이트 | gonmau/shorts: 5개 (cuts.py, ext_script.py, local_ui.py, longform_script.py, tts_fallback.py) | ✅ |  |  |
-| 00:11 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --min 1 --start 0 --plan-only --only 40,47,71,93,100,115 --resync | ✅ | 21초 |  |
-| 00:00 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --fill-images --require-images --title  | ✅ | 36분 44초 |  |
