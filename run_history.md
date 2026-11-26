@@ -1,12 +1,12 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 08:11:06 (KST) · 기록 2231건 · 소재 740개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 08:12:38 (KST) · 기록 2233건 · 소재 740개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
 | 종류 | 성공 | 실패 | 누적 시간 |
 |---|---|---|---|
-| -c | 60 | 0 | 25분 58초 |
+| -c | 61 | 0 | 26분 59초 |
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
@@ -35,7 +35,7 @@
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
-| update_description | 6 | 1 | 19초 |
+| update_description | 7 | 1 | 22초 |
 | upload_to_youtube | 35 | 0 | 27분 57초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
@@ -47,6 +47,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 08:12 | PC | update_description | update_description.py --indexes 649 | ✅ | 3초 |  |
+| 08:12 | PC | -c | -c import os,requests;import fetch_images as F;from common import load_db,save_db;db=load_db();F.fetch_item(requests.Session(),os.environ['PIXABAY_API | ✅ | 1분 0초 |  |
 | 08:10 | PC | update_description | update_description.py --indexes 0 | ❌ failed | 2초 | 0: 유튜브에서 영상을 찾지 못함 (cD_h8nRRCrc) |
 | 08:10 | PC | fetch_images | fetch_images.py --index 0 --force | ✅ | 19초 |  |
 | 08:08 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 649 | ✅ | 0초 |  |
