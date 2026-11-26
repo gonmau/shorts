@@ -20,6 +20,14 @@ on:
       bpm:
         description: "비트 BPM (80~100 권장)"
         default: "92"
+      flow:
+        description: "랩 방식 (word=단어별로 16분음표에 얹는 끊어 읽기, line=문장 단위 박자 맞춤)"
+        type: choice
+        options: [word, line]
+        default: word
+      voice:
+        description: "목소리 (Supertonic: M1~M5 남성 / F1~F5 여성, 비우면 설정 기본값). 랩은 남성 M2~M4를 추천"
+        default: ""
       upload:
         description: "유튜브 비공개 업로드"
         type: boolean
@@ -73,10 +81,18 @@ jobs:
           echo "TTS_RATE=$SPEED" >> "$GITHUB_ENV"
       - name: 장면 이미지
         run: python fetch_images.py --index "$NEW"
-      - name: 음성(TTS)
-        run: python generate_tts.py --index "$NEW"
-      - name: 박자 맞춤 (가사 줄을 비트 격자에 맞게 늘이고 줄임)
-        run: python rap_short.py align --index "$NEW" --bpm "$BPM"
+      - name: 음성 - 단어별 랩 플로우 (16분음표 격자)
+        if: ${{ github.event.inputs.flow != 'line' }}
+        env:
+          SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || vars.RAP_VOICE || 'M3' }}
+        run: python rap_short.py flow --index "$NEW" --bpm "$BPM"
+      - name: 음성(TTS) - 문장 단위
+        if: ${{ github.event.inputs.flow == 'line' }}
+        env:
+          SUPERTONIC_VOICE_KO: ${{ github.event.inputs.voice || vars.RAP_VOICE || 'M3' }}
+        run: |
+          python generate_tts.py --index "$NEW"
+          python rap_short.py align --index "$NEW" --bpm "$BPM"
       - name: 영상 합성
         run: python build_video.py --index "$NEW" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
       - name: 썸네일 만들기

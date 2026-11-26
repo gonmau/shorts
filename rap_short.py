@@ -2,6 +2,7 @@
 """랩 버전 쇼츠: 기존 소재의 대본을 '문장 1:1'로 랩 가사로 바꾼 복제 소재를 DB 끝에 만들고, 영상이 완성되면 비트를 깔아 준다.
  1) python rap_short.py make --index 649             -> 새 소재 번호 N 출력 (대본=랩 가사, 사실·숫자 유지, 이미지·핵심 문구 자리는 원본과 같음)
  2) 평소 파이프라인 그대로: fetch_images / generate_tts (TTS_RATE=+8% 권장) / build_video / make_thumbnail --index N
+ 2.4) python rap_short.py flow --index N [--bpm 92]  (권장: 단어별로 읽어 16분음표에 얹는 끊어 읽기 랩. generate_tts 대신/뒤에 실행하면 음성·타이밍을 덮어씀)
  2.5) python rap_short.py align --index N [--bpm 92]  (음성 만든 직후, 영상 합성 전: 줄을 비트 격자에 맞춰 늘이고/여백 줄 - 이게 있어야 랩 박자가 남)
  3) python rap_short.py beat --index N [--bpm 92]    -> 영상 음성 밑에 합성 비트(킥·스네어·하이햇·베이스)를 깔고 video_path_v6 를 새 파일로 교체
 원본 소재는 건드리지 않는다. 복제 소재는 제목 2줄째가 '랩으로 듣는 이야기', rap_of 에 원본 번호가 남는다."""
@@ -155,6 +156,69 @@ def align(a):
     data["sentences"] = new; data["rap_bpm"] = a.bpm; json.dump(data, open(tp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"박자 맞춤({a.bpm}bpm, 2박={U:.2f}초 단위): {len(new)}줄, 총 {pos:.1f}초)")
 
+
+def synth_word(word, out_wav):
+    """단어 하나를 음성으로. Supertonic(키 불필요) 우선, 안 되면 Edge."""
+    import os
+    try:
+        from tts_fallback import supertonic_sentence
+        supertonic_sentence(word, out_wav, "ko", 1.0); return
+    except Exception as e1:
+        try:
+            import asyncio, edge_tts
+            mp3 = str(out_wav) + ".mp3"
+            asyncio.run(edge_tts.Communicate(word, os.environ.get("TTS_EDGE_VOICE") or "ko-KR-InJoonNeural", rate="+0%").save(mp3))
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, str(out_wav)], check=True); os.unlink(mp3); return
+        except Exception as e2:
+            raise RuntimeError(f"단어 음성 실패: {word} / {str(e1)[:60]} / {str(e2)[:60]}")
+
+def _atempo(r):
+    f = []
+    while r > 2.0: f.append("atempo=2.0"); r /= 2.0
+    while r < 0.5: f.append("atempo=0.5"); r /= 0.5
+    f.append(f"atempo={r:.4f}"); return ",".join(f)
+
+def flow(a):
+    """단어(어절)별로 따로 읽은 음성을 16분음표 격자 위에 하나씩 얹어 끊어 읽는 랩 플로우를 만든다. 음성 파일과 timing json 을 덮어쓴다."""
+    import numpy as np, shutil
+    import generate_script as G
+    db = G.load_db(); it = db[a.index]; sr = 44100; bt = 60.0 / a.bpm; S = bt / 4; bar = 4 * bt
+    lines = split_sentences(it.get("narration", ""))
+    ap = Path(it.get("audio_path_v2") or (Path("audio") / f"{a.index:04d}_rap_v2.mp3")); tp = Path(it.get("timing_path_v2") or ap.with_name(ap.stem + "_timing.json"))
+    ap.parent.mkdir(parents=True, exist_ok=True); work = ap.parent / f"_rapflow_{a.index}"; shutil.rmtree(work, ignore_errors=True); work.mkdir()
+    cache, out_lines, timing, pos = {}, [], [], 0.0
+    def word_audio(w):
+        if w in cache: return cache[w]
+        raw = work / f"w{len(cache):03d}.wav"; synth_word(w, raw)
+        pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(raw), "-af", "silenceremove=start_periods=1:start_threshold=-42dB:stop_periods=1:stop_threshold=-42dB:stop_duration=0.05,aresample=%d" % sr,
+                              "-ac", "1", "-f", "f32le", "-"], capture_output=True, check=True).stdout
+        x = np.frombuffer(pcm, dtype=np.float32).copy(); cache[w] = x; return x
+    for line in lines:
+        words = [re.sub(r"[,!?.…~\"'“”]+", "", w) for w in line.split()]; words = [("요" if w.lower() == "yo" else ("예" if w.lower() == "yeah" else w)) for w in words if w]
+        xs = [word_audio(w) for w in words]; d = [max(0.12, len(x) / sr) for x in xs]; nat = sum(d)
+        k = min((1, 2, 3), key=lambda k: abs(np.log(max(nat, 0.5) / (k * bar * 0.9))))        # 한 줄이 몇 마디(bar)를 쓸지: 말 속도가 가장 덜 변하는 쪽
+        span = k * bar * 0.93; f = span / nat; cum, ons = 0.0, []
+        for di in d: ons.append(cum); cum += di * f
+        sn = []                                                                              # 16분음표 격자에 붙이되 순서와 최소 간격 유지
+        for o in ons:
+            g = int(round(o / S)); g = max(g, (sn[-1] + 1) if sn else 0); sn.append(g)
+        ends = [sn[i + 1] if i + 1 < len(sn) else int(round(span / S)) for i in range(len(sn))]
+        buf = np.zeros(int(k * bar * sr) + sr, dtype=np.float32)
+        for x, g0, g1, w in zip(xs, sn, ends, words):
+            slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.8), 2.6)
+            y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", _atempo(r) + f",afade=t=out:st={max(0.0, dn / r - 0.02):.3f}:d=0.02",
+                                              "-f", "f32le", "-"], input=x.tobytes(), capture_output=True, check=True).stdout, dtype=np.float32).copy()
+            y = y[:int(slot * sr) + int(0.03 * sr)] * (1.25 if g0 % 4 == 0 else 1.0)           # 박(1,2,3,4박) 머리의 단어는 조금 세게
+            i0 = int(g0 * S * sr); buf[i0:i0 + len(y)] += y[:len(buf) - i0]
+        out_lines.append(buf[:int(k * bar * sr)]); timing.append({"start": round(pos, 3), "end": round(pos + span, 3), "text": line}); pos += k * bar
+    y = np.concatenate(out_lines); y = y / max(1.0, float(np.abs(y).max()) / 0.92)
+    y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", "acompressor=threshold=-20dB:ratio=3:attack=4:release=50,aecho=0.8:0.5:80:0.15", "-f", "f32le", "-"],
+                                     input=y.astype(np.float32).tobytes(), capture_output=True, check=True).stdout, dtype=np.float32)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-b:a", "192k", str(ap)], input=y.tobytes(), check=True)
+    json.dump({"voice": "supertonic-rapflow", "rate": "+0%", "volume": "+0%", "pitch": "+0Hz", "sentences": timing, "rap_bpm": a.bpm}, open(tp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    it["audio_path_v2"] = str(ap); it["timing_path_v2"] = str(tp); it["status_tts_v2"] = "done"; it["tts_voice_v2"] = "supertonic-rapflow"; G.save_db(db)
+    shutil.rmtree(work, ignore_errors=True); print(f"랩 플로우 음성 완료({a.bpm}bpm): {len(lines)}줄, 총 {pos:.1f}초, 단어 {len(cache)}종")
+
 def beat(a):
     import numpy as np
     import generate_script as G
@@ -172,8 +236,9 @@ def beat(a):
 def main():
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
     m = sp.add_parser("make"); m.add_argument("--index", type=int, required=True)
+    fl = sp.add_parser("flow"); fl.add_argument("--index", type=int, required=True); fl.add_argument("--bpm", type=int, default=92)
     al = sp.add_parser("align"); al.add_argument("--index", type=int, required=True); al.add_argument("--bpm", type=int, default=92)
     b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92)
-    a = ap.parse_args(); {"make": make, "align": align, "beat": beat}[a.cmd](a)
+    a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat}[a.cmd](a)
 if __name__ == "__main__":
     main()
