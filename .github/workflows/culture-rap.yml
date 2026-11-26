@@ -1,0 +1,134 @@
+# 랩 버전 쇼츠 - 기존 소재의 대본을 랩 가사로 바꿔 복제 소재를 만들고, 음성·이미지·영상·썸네일·비트까지 한 번에 (아이폰에서 실행)
+#
+# 아이폰: GitHub 앱 > Actions > culture-rap > Run workflow
+#   source : 랩으로 만들 원본 소재 번호 (예: 649)
+#   speed  : 말 속도 (기본 +8%)
+#   bpm    : 비트 빠르기 (기본 92)
+#   upload : true 면 유튜브에 비공개로 업로드 (YT 토큰 필요)
+# 원본 소재는 건드리지 않고, DB 끝에 복제 소재(rap_of=원본 번호)가 추가됩니다.
+name: culture-rap
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "랩으로 만들 원본 소재 번호 (예: 649)"
+        required: true
+      speed:
+        description: "말 속도 (예: +8% / 비우면 +8%)"
+        default: "+8%"
+      bpm:
+        description: "비트 BPM (80~100 권장)"
+        default: "92"
+      upload:
+        description: "유튜브 비공개 업로드"
+        type: boolean
+        default: false
+
+concurrency:
+  group: culture-shorts-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PYTHONUNBUFFERED: "1"
+      SRC: ${{ github.event.inputs.source }}
+      BPM: ${{ github.event.inputs.bpm || '92' }}
+      SPEED: ${{ github.event.inputs.speed || '+8%' }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      SFX: ${{ vars.SFX || 'off' }}
+      SFX_VOL: ${{ vars.SFX_VOL || '1.0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: 시스템 의존성 (ffmpeg, 한글 폰트)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - run: pip install -r requirements.txt
+      - name: 공유 설정 적용 (PC UI의 목소리·자막 설정)
+        run: python pipeline_settings.py --github-env >> "$GITHUB_ENV"
+
+      - name: 랩 가사 + 복제 소재 만들기
+        run: |
+          python rap_short.py make --index "$SRC" | tee rap_make.log
+          NEW=$(grep -oP '랩 소재 생성: \K\d+' rap_make.log | head -1)
+          [ -n "$NEW" ] || { echo "랩 소재 번호를 찾지 못했습니다"; exit 1; }
+          echo "NEW=$NEW" >> "$GITHUB_ENV"
+          echo "TTS_RATE=$SPEED" >> "$GITHUB_ENV"
+      - name: 장면 이미지
+        run: python fetch_images.py --index "$NEW"
+      - name: 음성(TTS)
+        run: python generate_tts.py --index "$NEW"
+      - name: 영상 합성
+        run: python build_video.py --index "$NEW" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
+      - name: 썸네일 만들기
+        run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY" --start "$NEW"
+      - name: 비트 입히기
+        run: python rap_short.py beat --index "$NEW" --bpm "$BPM"
+      - name: 유튜브 비공개 업로드
+        if: ${{ github.event.inputs.upload == 'true' && env.YT_REFRESH_TOKEN != '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          PUBLISH_SLOTS: off
+          YT_THUMBNAIL: ${{ vars.YT_THUMBNAIL || '' }}
+        run: python upload_to_youtube.py --indexes "$NEW"
+
+      - name: facts_db.json 커밋 (랩 소재 추가분)
+        run: |
+          git config user.name "culture-shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add facts_db.json
+          [ -d my_images ] && git add my_images || true
+          [ -d thumb_bg ] && git add thumb_bg || true
+          [ -f review.txt ] && git add review.txt || true
+          git diff --cached --quiet || git commit -m "chore: update facts_db.json [skip ci]"
+          B="${GITHUB_REF_NAME:-main}"
+          cp facts_db.json /tmp/mine_db.json
+          # 실행 중에 PC에서 올린 DB(폐기·대본 수정 등)를 덮어쓰지 않게 소재 단위로 병합한 뒤 올림
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$B" || { sleep 3; continue; }
+            if git merge-base --is-ancestor "origin/$B" HEAD; then git push && exit 0; fi
+            DB_CHANGED=1
+            git diff --quiet "$(git merge-base HEAD "origin/$B")" "origin/$B" -- facts_db.json && DB_CHANGED=0
+            git show "origin/$B:facts_db.json" > /tmp/theirs_db.json 2>/dev/null || DB_CHANGED=0
+            git pull --rebase -X theirs origin "$B" || { git rebase --abort 2>/dev/null || true; sleep 3; continue; }
+            if [ "$DB_CHANGED" = 1 ]; then
+              python merge_remote_db.py /tmp/theirs_db.json /tmp/mine_db.json || true
+              git add facts_db.json
+              git diff --cached --quiet || git commit -q -m "chore: merge facts_db.json [skip ci]"
+            fi
+            git push && exit 0
+            sleep 3
+          done
+          echo "push 실패"; exit 1
+
+      - name: mp4 아티팩트 보관
+        uses: actions/upload-artifact@v4
+        with:
+          name: culture-rap-video
+          path: |
+            videos/*_rap.mp4
+            thumbnails/*.png
+          retention-days: 14
+          if-no-files-found: warn
+      - name: 디스코드 알림
+        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
+        run: |
+          curl -sS -H "Content-Type: application/json" -d "{\"content\":\"🎤 culture-rap (원본 ${SRC} -> 랩 소재 ${NEW:-?}): ${{ job.status }} — ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"}" "$DISCORD_WEBHOOK_URL" >/dev/null || true
