@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 08:06:16 (KST) · 기록 2222건 · 소재 740개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 08:08:33 (KST) · 기록 2229건 · 소재 740개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,10 +10,10 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 215 | 0 | 56초 |
+| apply_review | 216 | 0 | 57초 |
 | approve | 71 | 0 | 17초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 102 | 0 | 16시간 52분 |
+| build_video | 103 | 0 | 16시간 52분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -24,14 +24,14 @@
 | export_review | 80 | 0 | 17초 |
 | fetch_images | 228 | 9 | 2시간 41분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
-| generate_script | 273 | 0 | 1시간 57분 |
-| generate_tts | 120 | 0 | 38분 6초 |
+| generate_script | 274 | 0 | 1시간 57분 |
+| generate_tts | 121 | 0 | 38분 9초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 97 | 0 | 2분 32초 |
-| promote_ready | 215 | 0 | 49초 |
-| redo_videos | 40 | 0 | 13초 |
+| make_thumbnail | 98 | 0 | 2분 32초 |
+| promote_ready | 216 | 0 | 50초 |
+| redo_videos | 41 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 3 | 3 | 2분 34초 |
@@ -47,6 +47,13 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 08:08 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 649 | ✅ | 0초 |  |
+| 08:08 | PC | build_video | build_video.py --index 649 --channel gonmauY --handle @gonmauY | ✅ | 1초 |  |
+| 08:08 | PC | generate_tts | generate_tts.py --index 649 | ✅ | 2초 |  |
+| 08:08 | PC | generate_script | generate_script.py --extras-only --index 649 | ✅ | 1초 |  |
+| 08:08 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 08:08 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
+| 08:08 | PC | redo_videos | redo_videos.py --indexes 649 | ✅ | 0초 |  |
 | 08:06 | PC | fetch_images | fetch_images.py --limit 1 --start 0 --any | ✅ | 1분 2초 |  |
 | 08:05 | PC | generate_script | generate_script.py --extras-only --limit 1 --start 0 | ✅ | 3초 |  |
 | 08:04 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
