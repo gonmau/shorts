@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-25 21:06:43 (KST) · 기록 2208건 · 소재 733개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-26 17:38:35 (KST) · 기록 2209건 · 소재 733개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -38,10 +38,16 @@
 | update_description | 6 | 0 | 17초 |
 | upload_to_youtube | 35 | 0 | 27분 57초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
-| 쇼츠 | 128 | 6 | 12시간 17분 |
+| 쇼츠 | 129 | 6 | 12시간 17분 |
 | 코드업데이트 | 125 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-26
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 17:38 | Actions | 쇼츠 | culture-shorts-pipeline #135 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/45780747016 |
 
 ### 2026-11-25
 
@@ -2031,55 +2037,3 @@
 | 06:10 | PC | 코드업데이트 | gonmau/shorts: 5개 (cuts.py, ext_script.py, local_ui.py, longform_script.py, tts_fallback.py) | ✅ |  |  |
 | 00:11 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --min 1 --start 0 --plan-only --only 40,47,71,93,100,115 --resync | ✅ | 21초 |  |
 | 00:00 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --fill-images --require-images --title  | ✅ | 36분 44초 |  |
-
-### 2026-10-27
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 23:16 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --fill-images --plan-only --only 40 --r | ✅ | 7초 |  |
-| 23:12 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --fill-ima | ✅ | 2초 |  |
-| 23:12 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --fill-ima | ✅ | 0초 |  |
-| 23:11 | PC | 롱폼 | build_longform.py --mode auto --indexes 40,47,71,93,100,115 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --fill-ima | ✅ | 29초 |  |
-| 23:09 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --min 1 --start 0 --plan-only --only 40,47,71,93,100,115 --resync | ✅ | 20초 |  |
-| 22:47 | PC | 코드업데이트 | gonmau/shorts: 2개 (commons.py, openverse.py) | ✅ |  |  |
-| 22:33 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images  | ✅ | 45분 33초 |  |
-| 20:53 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images  | ❌ failed | 8분 23초 | ⚠️ 사진이 빠진 소재:    47 Slovenia: 12장 중 12번 없음 사진이 빠진 소재가 있어 멈춥니다. '3 이미지' 탭에서 받거나, 롱폼 화면의 '이미지가 없어도 진행'을 켜세요. (--require-im |
-| 20:42 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips -- | ✅ | 3초 |  |
-| 20:39 | PC | 롱폼 | build_longform.py --mode manual --indexes  --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --title  | ❌ failed | 0초 | manual 모드는 번호(indexes)가 필요합니다. 예: 109,110,115-118 |
-| 20:39 | PC | cuts | cuts.py --pick 47_12=8, 93_3=1, 93_4=3, 93_9=1, 93_10=2, 115_1=1, 115_4=1, 115_5=3, 115_6=2, 115_7=1, 115_8=5, 115_9=3, 115_10=3, 115_11=4, 115_12=1 | ✅ | 9초 |  |
-| 20:36 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
-| 20:35 | PC | 롱폼 | build_longform.py --mode manual --indexes  --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --require-images --title  | ❌ failed | 0초 | manual 모드는 번호(indexes)가 필요합니다. 예: 109,110,115-118 |
-| 20:28 | PC | 코드업데이트 | gonmau/shorts: 3개 (build_longform.py, local_ui.py, longform_render.py) | ✅ |  |  |
-| 20:09 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
-| 20:07 | PC | 코드업데이트 | gonmau/shorts: 1개 (cuts.py) | ✅ |  |  |
-| 19:46 | PC | 코드업데이트 | gonmau/shorts: 6개 (build_longform.py, cuts.py, deep.py, generate_script.py, local_ui.py, longform_render.py) | ✅ |  |  |
-| 13:03 | PC | 롱폼 | build_longform.py --preview cuts --mode manual --indexes 40,47,71,93,100,115 --min 1 --start 0 | ✅ | 15분 31초 |  |
-| 12:47 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --no-expand --clips --fill-images --pla | ✅ | 1초 |  |
-| 12:46 | PC | fetch_images | fetch_images.py --index 40 | ✅ | 0초 |  |
-| 12:46 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync | ✅ | 56초 |  |
-| 12:36 | PC | fetch_images | fetch_images.py --index 115 --force | ✅ | 1분 0초 |  |
-| 12:35 | PC | generate_script | generate_script.py --extras-only --index 115 --regen-queries | ✅ | 2초 |  |
-| 12:35 | PC | fetch_images | fetch_images.py --index 100 --force | ✅ | 12초 |  |
-| 12:34 | PC | generate_script | generate_script.py --extras-only --index 100 --regen-queries | ✅ | 11초 |  |
-| 12:34 | PC | fetch_images | fetch_images.py --index 93 --force | ✅ | 28초 |  |
-| 12:34 | PC | generate_script | generate_script.py --extras-only --index 93 --regen-queries | ✅ | 2초 |  |
-| 12:34 | PC | fetch_images | fetch_images.py --index 71 --force | ✅ | 57초 |  |
-| 12:33 | PC | generate_script | generate_script.py --extras-only --index 71 --regen-queries | ✅ | 2초 |  |
-| 12:33 | PC | fetch_images | fetch_images.py --index 47 --force | ✅ | 32초 |  |
-| 12:32 | PC | generate_script | generate_script.py --extras-only --index 47 --regen-queries | ✅ | 2초 |  |
-| 12:32 | PC | fetch_images | fetch_images.py --index 40 --force | ✅ | 1분 5초 |  |
-| 12:31 | PC | generate_script | generate_script.py --extras-only --index 40 --regen-queries | ✅ | 3초 |  |
-| 12:28 | PC | fetch_images | fetch_images.py --index 40 | ✅ | 9초 |  |
-| 12:28 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
-| 12:27 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --onl | ✅ | 4초 |  |
-| 12:27 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync | ✅ | 15초 |  |
-| 11:54 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --no-expand --clips --fill-images --pla | ✅ | 1초 |  |
-| 11:52 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync | ✅ | 17초 |  |
-| 11:45 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --channel gonmauY --handle @gonmauY --style rich --no-expand --clips --fill-images --pla | ✅ | 1초 |  |
-| 11:35 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,48,93,100,115 --min 1 --start 0 --plan-only --only 40,47,48,93,100,115 --resync | ✅ | 16초 |  |
-| 11:34 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 106 --channel gonmauY --handle @gonmauY --style rich --no-exp | ✅ | 0초 |  |
-| 11:12 | PC | 코드업데이트 | gonmau/shorts: 4개 (common.py, cuts.py, fetch_images.py, local_ui.py) | ✅ |  |  |
-| 10:57 | PC | 롱폼 | build_longform.py --mode manual --indexes 40,47,71,93,100,115 --theme  --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips -- | ✅ | 0초 |  |
-| 07:40 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
-| 07:25 | PC | 코드업데이트 | gonmau/shorts: 3개 (ext_script.py, local_ui.py, longform_script.py) | ✅ |  |  |
-| 07:02 | PC | 코드업데이트 | gonmau/shorts: 4개 (crosscheck.py, export_review.py, notify_cuts.py, notify_discord.py) | ✅ |  |  |
