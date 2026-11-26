@@ -31,6 +31,31 @@ def tail_vowels(line, k=2):
     return tuple(v) if len(v) == k else None
 
 def rhyme_report(rap):
+    """2줄씩 짝(1-2, 3-4 ...) 점수: 끝 두 글자 모음 일치 1점, 끝 한 글자 모음만 일치 0.5점. (평균 점수, 점수 낮은(1점 아닌) 쌍 목록)"""
+    bad, tot, sc = [], 0, 0.0
+    for i in range(0, len(rap) - 1, 2):
+        tot += 1; x, y = tail_vowels(rap[i]), tail_vowels(rap[i + 1])
+        if x is not None and x == y: sc += 1
+        else:
+            if x is not None and y is not None and x[-1] == y[-1]: sc += 0.5
+            bad.append((i + 1, i + 2))
+    return (sc / tot if tot else 1.0), bad
+
+KO1 = {"1": "한일하나첫", "2": "두이둘", "3": "세삼셋", "4": "네사넷", "5": "다섯오", "6": "여섯육", "7": "일곱칠", "8": "여덟팔", "9": "아홉구", "0": "영공제로"}
+
+
+def _vow(ch):
+    c = ord(ch) - 0xAC00
+    if not 0 <= c < 11172: return None
+    j = (c % 588) // 28                                              # 중성(모음) 번호
+    return {1: 5, 3: 7, 10: 5, 11: 5, 15: 5}.get(j, j)               # ㅐ·ㅔ·ㅙ·ㅚ·ㅞ 는 같은 소리로 취급
+
+def tail_vowels(line, k=2):
+    syl = [c for c in re.sub(r"[^가-힣]", "", line)]
+    v = [_vow(c) for c in syl[-k:]]
+    return tuple(v) if len(v) == k else None
+
+def rhyme_report(rap):
     """2줄씩 짝(1-2, 3-4 ...)의 끝 두 글자 모음이 같은지. 맞는 쌍 비율과 틀린 쌍 목록"""
     bad, tot = [], 0
     for i in range(0, len(rap) - 1, 2):
@@ -38,20 +63,28 @@ def rhyme_report(rap):
         if tail_vowels(rap[i]) is None or tail_vowels(rap[i]) != tail_vowels(rap[i + 1]): bad.append((i + 1, i + 2))
     return (1 - len(bad) / tot if tot else 1.0), bad
 
-def valid(orig, rap):
-    if len(orig) != len(rap): return f"줄 수 불일치(원문 {len(orig)}줄, 가사 {len(rap)}줄)"
+def check(orig, rap):
+    """(hard, soft, 라임점수, 안 맞는 쌍). hard=줄 수·큰 숫자·지시어 문제(못 씀), soft=한 자리 숫자 누락."""
+    if len(orig) != len(rap): return f"줄 수 불일치(원문 {len(orig)}줄, 가사 {len(rap)}줄)", "", 0.0, []
+    soft = ""
     for o, r in zip(orig, rap):
-        if not r.strip() or len(r) > max(50, len(o) * 1.5): return f"너무 긺: {r[:30]}"
+        if not r.strip() or len(r) > max(50, len(o) * 1.5): return f"너무 긺: {r[:30]}", "", 0.0, []
         bad = [w for w in ("라임", "운율", "박자", "4박", "가사", "비트", "리듬", "랩으로", "rhyme") if w in r and w not in o]
-        if bad: return f"작성 지시어({bad[0]})가 가사에 섞임: {r[:30]} -> 이야기 내용만 쓰고 '라임/박자' 같은 말은 쓰지 마세요"
+        if bad: return f"작성 지시어({bad[0]})가 가사에 섞임: {r[:30]} -> 이야기 내용만 쓰세요", "", 0.0, []
         for n in numbers(o):
             nn = n.replace(",", "").rstrip(".")
             if nn in r.replace(",", ""): continue
-            if len(nn) == 1 and any(w in r for w in KO1.get(nn, "")): continue      # 한 자리 숫자는 '세/두/한' 같은 우리말 수사도 인정
-            return f"숫자 누락 {n}: {r[:30]}"
-    ratio, bad = rhyme_report(rap)
+            if len(nn) == 1 and any(w in r for w in KO1.get(nn, "")): continue
+            if len(nn) == 1: soft = soft or f"숫자 {n} 누락: {r[:30]}"; continue
+            return f"숫자 누락 {n}: {r[:30]}", "", 0.0, []
+    ratio, badp = rhyme_report(rap)
+    return "", soft, ratio, badp
+
+def valid(orig, rap):
+    hard, soft, ratio, bad = check(orig, rap)
+    if hard: return hard
     if ratio < 0.7: return "라임 부족: 줄 " + ", ".join(f"{a}-{b}" for a, b in bad[:5]) + " 쌍의 끝 두 글자 모음이 서로 달라요. 각 쌍이 같은 소리로 끝나게(예: ~했네/~됐네, ~섬에/~점에) 끝말을 고쳐 다시 쓰세요"
-    return ""
+    return soft
 
 PROMPT = """아래는 한국어 쇼츠 대본입니다(문장 {n}개). 사실은 그대로 두고 **한국어 랩 가사**로 바꿔 주세요.
 규칙:
@@ -75,20 +108,37 @@ def make(a):
     sents = split_sentences(it.get("narration", ""))
     if not sents: sys.exit("narration 이 없습니다")
     client = Groq(api_key=os.environ["GROQ_API_KEY"], timeout=90.0); models = G.pick_models(client)
-    src = "\n".join(f"{i + 1}. {s}" for i, s in enumerate(sents)); err = {"e": ""}
+    src = "\n".join(f"{i + 1}. {s}" for i, s in enumerate(sents)); cands = []
     def parse(t):
         arr = G.extract_json(t)
         if not isinstance(arr, list): return None
         arr = [re.sub(r"^\d+[\.\)]\s*", "", str(x)).strip() for x in arr]
-        err["e"] = valid(sents, arr)
-        return arr if not err["e"] else None
-    rap, fb = None, ""
-    for tries in range(3):       # 실패 사유를 알려 주며 다시 요청
-        prompt = PROMPT.format(n=len(sents), src=src) + (f"\n\n[이전 시도의 문제] {fb}\n위 문제를 고쳐서 다시 작성하세요. 원문의 연도·숫자는 그대로 쓰고, 줄 수는 정확히 {len(sents)}줄입니다." if fb else "")
-        rap = G.ask_models(client, models, "당신은 사실에 충실한 한국어 랩 작사가입니다.", prompt, 1800, 2, parse)
-        if rap: break
-        fb = err["e"] or "JSON 배열 형식이 아님"; print(f"  가사 검증 실패({tries + 1}/3): {fb}")
-    if not rap: sys.exit(f"랩 가사 생성 실패 ({fb})")
+        hard, soft, ratio, badp = check(sents, arr); cands.append((hard, soft, ratio, badp, arr))
+        return arr          # 일단 받아 두고 아래에서 판단
+    def best():
+        ok = [c for c in cands if not c[0]]
+        return max(ok, key=lambda c: (c[2], not c[1])) if ok else None
+    fb = ""
+    for tries in range(4):
+        prompt = PROMPT.format(n=len(sents), src=src) + (f"\n\n[이전 시도의 문제] {fb}\n위 문제를 고쳐 다시 작성하세요. 줄 수는 정확히 {len(sents)}줄이고 연도·숫자는 원문 그대로입니다." if fb else "")
+        G.ask_models(client, models, "당신은 사실에 충실한 한국어 랩 작사가입니다.", prompt, 1800, 2, parse)
+        c = cands[-1] if cands else None
+        if c and not c[0] and c[2] >= 0.8 and not c[1]: break
+        fb = (c[0] or (f"라임 점수 {c[2]:.2f}: 줄 " + ", ".join(f"{a}-{b}" for a, b in c[3][:6]) + " 쌍의 끝 두 글자 모음을 같게 고치세요 (예: 쐈네/죽였네, 섬에서/점령해서)" + (f" / {c[1]}" if c[1] else ""))) if c else "JSON 배열 형식이 아님"
+        print(f"  가사 시도 {tries + 1}/4: {fb[:90]}")
+    pick = best()
+    if pick and pick[2] < 0.8 and pick[3]:     # 마지막 수선: 안 맞는 쌍만 끝말을 고치게 한다
+        rap0 = pick[4]
+        for _ in range(2):
+            lines = "\n".join(f"{i + 1}. {l}" for i, l in enumerate(rap0)); pairs = ", ".join(f"{a}-{b}" for a, b in pick[3])
+            rp = (f"아래 랩 가사에서 {pairs}번 줄 쌍은 끝소리가 맞지 않습니다. 각 쌍의 두 줄이 같은 소리로 끝나도록(끝 두 글자의 모음 일치) 그 줄들의 끝말만 바꾸세요. "
+                  f"사실·연도·숫자·줄 수({len(rap0)}줄)는 그대로. JSON 문자열 배열 하나만 출력.\n\n{lines}")
+            G.ask_models(client, models, "당신은 한국어 랩 작사가입니다.", rp, 1800, 2, parse)
+            nb = best()
+            if nb and nb[2] > pick[2]: pick = nb; rap0 = nb[4]
+            if pick[2] >= 0.8: break
+    if not pick: sys.exit(f"랩 가사 생성 실패 ({fb})")
+    rap = pick[4]; print(f"  가사 확정: 라임 점수 {pick[2]:.2f}" + (f" / 참고: {pick[1]}" if pick[1] else ""))
     new = {k: v for k, v in it.items() if k not in DROP}
     new.update(narration="\n".join(l if re.search(r"[.!?]$", l) else l + "." for l in rap), narration_original=it.get("narration", ""), status="scripted",
                rap=True, rap_of=a.index, title_line2="랩으로 듣는 이야기", review_ok=True)
