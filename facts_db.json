@@ -75868,13 +75868,17 @@
     "thumb_scene": 1,
     "youtube_id": "iXFuBoQEfQU",
     "uploaded_at": "2026-11-16T15:04:11.521011+09:00",
-    "redo_ts": 1795734297.5839517,
+    "redo_ts": 1795734496.827192,
     "hashtags": [
       "라이먼커틀러",
       "돼지전쟁",
       "빌헬름1세",
       "독일황제"
-    ]
+    ],
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "왕실 나이저 회사가 다스리던 식민지 나이지리아",
