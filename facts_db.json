@@ -83184,5 +83184,231 @@
     "video_path_beatless": "/home/runner/work/shorts/shorts/videos/0735_미국,영국.mp4",
     "youtube_id": "tpubyxXuDgk",
     "uploaded_at": "2026-11-27T07:07:36.951614+09:00"
+  },
+  {
+    "topic": "돼지 한 마리 때문에 일어난 국제 갈등",
+    "hook": "돼지 한 마리를 쏜 뒤, 미국과 영국의 군대가 맞붙었습니다!",
+    "body": "1859년, 미국과 영국은 샌후안 제도의 영유권을 놓고 팽팽하게 대립하고 있었습니다. 그러던 중 미국인 농부 라이먼 커틀러의 감자밭에 영국 회사 소유의 돼지가 들어왔습니다.",
+    "twist": "돼지 한 마리의 죽음으로 미군 64명과 영국 군함 3척이 대치했습니다. 무려 12년간 군대를 주둔시킨 끝에 독일 황제의 중재로 미국 영토가 됐습니다. 놀랍게도 이른바 돼지 전쟁의 유일한 사망자는 돼지 한 마리였습니다.",
+    "caveat": "1859년 사건이라 실제 전투는 없었고, 이후 평화롭게 해결됐어.",
+    "country": "미국,영국",
+    "theme": "영토/국경",
+    "wiki_title": "Pig War (1859)",
+    "source_url": "https://en.wikipedia.org/wiki/Pig_War_(1859)",
+    "source_excerpt": "The Pig War was a confrontation in 1859 between the United States and the United Kingdom over the British–U.S. border in the San Juan Islands, between Vancouver Island (present-day Canada) and the Washington Territory (present-day State of Washington). The Pig War, so called because it was triggered by the shooting of a pig, is also called the Pig Episode, the Pig and Potato War, the San Juan Boundary Dispute, and the Northwestern Boundary Dispute. Despite being referred to as a \"war\", there were no human casualties on either side, only a pig.",
+    "verify_note": "Pig War (1859)",
+    "confidence": "source",
+    "created_at": "2026-11-13T14:14:29.244030+00:00",
+    "status": "video_done",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "narration": "Yo, 돼지 한 마리 쏜 뒤 미국·영국 군대 맞붙었어다.\n1859년 샌후안 섬 영유권 두고 팽팽히 대립했어다.\n미국인 농부 라이먼 커틀러 감자밭에 영국 돼지 들어왔어리.\n화난 농부 총으로 돼지 잡아 미군 64명 상륙, 영국 함선 3척 파견했어리.\n양측은 물러서지 않았지만 전투는 일어나지 않았고 포기했네.\n그 뒤 12년간 양국 군대가 섬에 함께 주둔했네.\n1872년 독일 빌헬름 1세 중재로 섬은 미국 영토가 되었어로.\n놀랍게도 사망자는 돼지 한 마리뿐, 그게 전부였어로.",
+    "title_line1": "돼지 한 마리가 전쟁을 일으켰다",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*돼지 한 마리*의 총격"
+      },
+      {
+        "s": 2,
+        "text": "*영토 분쟁* 중이었다"
+      },
+      {
+        "s": 3,
+        "text": "*감자밭*에 들어온 돼지"
+      },
+      {
+        "s": 4,
+        "text": "*미군 64명* vs *영국 군함 3척*"
+      },
+      {
+        "s": 5,
+        "text": "*12년간* 군사 대치"
+      },
+      {
+        "s": 6,
+        "text": "*독일 황제*의 중재"
+      },
+      {
+        "s": 7,
+        "text": "사망자는 *돼지 한 마리*"
+      }
+    ],
+    "image_queries": [
+      "pig being shot",
+      "San Juan Islands",
+      "pig in potato field",
+      "American soldiers landing",
+      "military standoff",
+      "19th century diplomatic meeting",
+      "dead pig",
+      "pig war monument",
+      "Pig War (1859)",
+      "United Kingdom landmark"
+    ],
+    "scene_count": 10,
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "돼지 전쟁 숫자",
+      "s": 6,
+      "dur": 5.0,
+      "unit": "마리",
+      "rows": [
+        {
+          "label": "사망자",
+          "value": null,
+          "text": "1마리"
+        }
+      ],
+      "none": false
+    },
+    "narration_original": "돼지 한 마리를 쏜 뒤, 미국과 영국의 군대가 맞붙었습니다! 1859년, 미국과 영국은 샌후안 제도의 영유권을 놓고 팽팽하게 대립하고 있었습니다. 그러던 중 미국인 농부 라이먼 커틀러의 감자밭에 영국 회사 소유의 돼지가 들어왔습니다. 화가 난 농부가 돼지를 총으로 쏴 죽이자, 미군 64명이 섬에 상륙했고 영국은 군함 3척을 보냈습니다. 양측은 서로 물러서지 않았지만, 다행히 전투는 벌어지지 않았습니다. 이후 무려 12년간 양국 군대가 섬에 함께 주둔했죠. 결국 1872년, 독일 황제 빌헬름 1세의 중재로 섬은 미국 영토가 됐습니다. 놀랍게도 돼지 전쟁의 유일한 사망자는 돼지 한 마리였습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": -370,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "",
+      "band": "none",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.05,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "돼지 한 마리가",
+      "text2": "전쟁을??",
+      "colors1": {
+        "0": "#2c51eb"
+      },
+      "sizes1": {
+        "0": 1.8
+      },
+      "colors2": {
+        "0": "#f03636"
+      },
+      "sizes2": {}
+    },
+    "rap": true,
+    "rap_of": 649,
+    "review_ok": true,
+    "ai_prompts": [
+      "A 19th‑century battlefield on San Juan Island with American and British soldiers facing each other, a single pig lying in the foreground, viewed from a low angle.",
+      "A tense standoff on a foggy island shore, British redcoats and American uniforms shoulder‑to‑shoulder, a lone pig standing between them, captured from a high aerial perspective.",
+      "A dramatic panoramic view of San Juan Island in 1859, cliffs and dense forest, two flags (US and UK) planted on opposite ridges, under a stormy sky.",
+      "An American farmer in period clothing crouches in a potato field, a British pig trotting among the rows, seen from eye level beside the crops.",
+      "A furious farmer aiming a muzzle‑loading rifle at a pig near a wooden fence, while distant silhouettes of 64 American troops land on a beach and three British warships approach, shot from a side‑view angle.",
+      "The same farmer firing his rifle at the pig, with a close‑up of the muzzle flash, while the landing troops and ships are visible in the background, captured from a low ground perspective.",
+      "Both American and British forces standing rigidly on the island’s shore, weapons lowered, no combat, under a calm sunrise, viewed from a wide angle over the water.",
+      "American and British soldiers sharing a makeshift camp on the island, tents side by side, a quiet harbor with boats, depicted from a bird’s‑eye view.",
+      "A diplomatic meeting in a 19th‑century tent with German flags, representing Wilhelm I’s mediation, the island’s map on a table, seen from a frontal mid‑shot angle.",
+      "A solitary pig lying peacefully on a grassy hill, the only casualty, with the island’s coastline in the background, captured from a gentle low angle."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Nicxon.Piaso",
+        "license": "CC BY-SA 4.0",
+        "title": "Kids chasing Pigs.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kids_chasing_Pigs.jpg",
+        "id": "c:101301153"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Nature-Pix",
+        "page": "https://pixabay.com/photos/bald-eagle-bird-animal-nature-4313491/",
+        "id": 4313491
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "MrGajowy3",
+        "page": "https://pixabay.com/photos/flowers-potatoes-white-flowers-8064007/",
+        "id": 8064007
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "Hreisho",
+        "page": "https://pixabay.com/photos/cemetery-cross-war-normandy-2595875/",
+        "id": 2595875
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "euranet_plus",
+        "license": "CC BY-SA 2.0",
+        "title": "English part - Citizens’ Corner debate on Europe’s icy standoff with Russia (30321386151).",
+        "page": "https://commons.wikimedia.org/wiki/File:English_part_-_Citizens%E2%80%99_Corner_debate_on_Europe%E2%80%99s_icy_standoff_with_Russia_(30321386151).jpg",
+        "id": "c:52400042"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "2211438",
+        "page": "https://pixabay.com/photos/old-paper-german-writing-vintage-1347332/",
+        "id": 1347332
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "Anna Frodesiak",
+        "license": "CC0",
+        "title": "Dead pig floating in water.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dead_pig_floating_in_water.jpg",
+        "id": "c:26385254"
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "12019",
+        "page": "https://pixabay.com/photos/washington-monument-sunset-twilight-1628558/",
+        "id": 1628558
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/london-landmark-tower-bridge-3078109/",
+        "id": 3078109
+      }
+    ],
+    "image_queries_done": [
+      "pig being shot",
+      "San Juan Islands",
+      "pig in potato field",
+      "American soldiers landing",
+      "military standoff",
+      "19th century diplomatic meeting",
+      "dead pig",
+      "pig war monument",
+      "Pig War (1859)",
+      "United Kingdom landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio/0736_rap_v2.mp3",
+    "timing_path_v2": "audio/0736_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0736_미국,영국.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0736_미국,영국_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "/home/runner/work/shorts/shorts/videos/0736_미국,영국.mp4",
+    "youtube_id": "Q-22G-C0nXQ",
+    "uploaded_at": "2026-11-27T07:21:43.316880+09:00"
   }
 ]
