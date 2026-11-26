@@ -58265,7 +58265,7 @@
     "verify_note": "Swiss cuisine",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:28.523449+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -58306,12 +58306,149 @@
       "Assorted Swiss cheeses",
       "Swiss Alpine food barrier",
       "Swiss cheese tasting trail",
-      "Alpine cheese flavor surprise"
+      "Alpine cheese flavor surprise",
+      "Swiss cuisine"
     ],
     "scene_count": 10,
     "curate_score": 3,
     "curate_why": "치즈 냄새, 일반적 문화 소개",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "알프스",
+      "에멘탈",
+      "그루예르",
+      "치즈",
+      "와인"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "ranking",
+      "title": "치즈 고도별",
+      "s": 4,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "에멘탈",
+          "value": null,
+          "text": "고지대"
+        },
+        {
+          "label": "그루예르",
+          "value": null,
+          "text": "저지대"
+        }
+      ],
+      "none": false
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0492_스위스_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0492_스위스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A panoramic view from a low angle of a tiny Alpine village nestled among snow‑capped peaks, with wooden chalets and a visible plume of cheese aroma illustrated as fragrant swirls rising from a cheese cellar.",
+      "A wide‑shot aerial perspective over rolling Swiss countryside showing patchwork farms, vineyards, and cheese wheels stacked on stone tables, representing the blend of national and regional culinary traditions.",
+      "A close‑up side view of two contrasting Alpine villages: one on a sunny, rocky high‑altitude slope with grazing cows, the other in a lush valley with vineyards, highlighting distinct microclimates for cheese and wine.",
+      "A drone‑style overhead shot of the same two villages, emphasizing the natural isolation created by the mountain ridges and the divergent terrain that shapes their dairy and viticulture.",
+      "A medium‑angle shot of a high‑altitude cheese cellar where large wheels of Emmental with characteristic holes sit on wooden racks, while a lower‑altitude dairy displays soft, creamy Gruyère blocks.",
+      "A low‑ground perspective of a narrow mountain pass with steep cliffs, a solitary cheese market stall perched on a ledge, illustrating how isolation intensifies culinary diversity.",
+      "A side‑view close‑up of a tasting table set on a rustic wooden bench, featuring an assortment of Swiss cheeses ranging from sharp to mild, captured without any human faces.",
+      "A sweeping crane shot over the Alpine barrier, revealing multiple distinct culinary zones like islands, each with its own cheese and wine specialties, symbolizing the creation of many gastronomic worlds within one nation.",
+      "A tracking shot following a winding mountain trail descending into a valley, with a traveler’s hand reaching for a cheese slice on a rock, emphasizing the sensory experience of tasting different cheeses along the way.",
+      "A high‑angle view of a vibrant Alpine market at sunset, stalls laden with varied cheese wheels and bottles of wine, conveying the rich, unique flavors forged by the Alps' natural isolation."
+    ],
+    "ai_prompts_done": [
+      "A panoramic view from a low angle of a tiny Alpine village nestled among snow‑capped peaks, with wooden chalets and a visible plume of cheese aroma illustrated as fragrant swirls rising from a cheese cellar.",
+      "A wide‑shot aerial perspective over rolling Swiss countryside showing patchwork farms, vineyards, and cheese wheels stacked on stone tables, representing the blend of national and regional culinary traditions.",
+      "A close‑up side view of two contrasting Alpine villages: one on a sunny, rocky high‑altitude slope with grazing cows, the other in a lush valley with vineyards, highlighting distinct microclimates for cheese and wine.",
+      "A drone‑style overhead shot of the same two villages, emphasizing the natural isolation created by the mountain ridges and the divergent terrain that shapes their dairy and viticulture.",
+      "A medium‑angle shot of a high‑altitude cheese cellar where large wheels of Emmental with characteristic holes sit on wooden racks, while a lower‑altitude dairy displays soft, creamy Gruyère blocks.",
+      "A low‑ground perspective of a narrow mountain pass with steep cliffs, a solitary cheese market stall perched on a ledge, illustrating how isolation intensifies culinary diversity.",
+      "A side‑view close‑up of a tasting table set on a rustic wooden bench, featuring an assortment of Swiss cheeses ranging from sharp to mild, captured without any human faces.",
+      "A sweeping crane shot over the Alpine barrier, revealing multiple distinct culinary zones like islands, each with its own cheese and wine specialties, symbolizing the creation of many gastronomic worlds within one nation.",
+      "A tracking shot following a winding mountain trail descending into a valley, with a traveler’s hand reaching for a cheese slice on a rock, emphasizing the sensory experience of tasting different cheeses along the way.",
+      "A high‑angle view of a vibrant Alpine market at sunset, stalls laden with varied cheese wheels and bottles of wine, conveying the rich, unique flavors forged by the Alps' natural isolation."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A panoramic view from a low angle of a tiny Alpine village nestled among snow‑ca"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide‑shot aerial perspective over rolling Swiss countryside showing patchwork "
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close‑up side view of two contrasting Alpine villages: one on a sunny, rocky h"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A drone‑style overhead shot of the same two villages, emphasizing the natural is"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A medium‑angle shot of a high‑altitude cheese cellar where large wheels of Emmen"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A low‑ground perspective of a narrow mountain pass with steep cliffs, a solitary"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A side‑view close‑up of a tasting table set on a rustic wooden bench, featuring "
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sweeping crane shot over the Alpine barrier, revealing multiple distinct culin"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A tracking shot following a winding mountain trail descending into a valley, wit"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A high‑angle view of a vibrant Alpine market at sunset, stalls laden with varied"
+      }
+    ],
+    "image_queries_done": [
+      "Alpine village cheese aroma",
+      "Swiss cuisine regional flavors",
+      "Swiss Alpine cheese vineyards",
+      "Emmental cheese high altitude",
+      "Remote Swiss alpine cheese farms",
+      "Assorted Swiss cheeses",
+      "Swiss Alpine food barrier",
+      "Swiss cheese tasting trail",
+      "Alpine cheese flavor surprise",
+      "Swiss cuisine"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0492_스위스.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0492_스위스.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "rBKyyR6sIGI",
+    "uploaded_at": "2026-11-26T17:33:59.221734+09:00"
   },
   {
     "topic": "전 세계 22개 사무소를 둔 변호사 사무실",
@@ -59221,7 +59358,7 @@
     "verify_note": "Thali",
     "confidence": "source",
     "created_at": "2026-11-03T05:33:39.023221+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59264,12 +59401,134 @@
       "Hindi word thali plate",
       "Regional thali variations",
       "Thali balanced meal",
-      "Thali abundant platter"
+      "Thali abundant platter",
+      "Thali",
+      "Cambodia landmark",
+      "Cambodia culture"
     ],
     "scene_count": 10,
     "curate_score": 3,
     "curate_why": "Thali 대접, 음식 소개에 그침",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "Thali",
+      "힌디어",
+      "남아시아",
+      "카리브해",
+      "인도식"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true
+    },
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0498_캄보디아_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0498_캄보디아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A bustling Southeast Asian market stall, low angle view, a large circular metal Thali filled with assorted curries, grilled meats, rice, and vegetables, steam rising, vibrant colors, early morning light.",
+      "Overhead drone shot of a crowded market aisle, focusing on a round brass Thali on a wooden table surrounded by shoppers, assorted dishes spilling over the rim, tropical foliage in the background.",
+      "Wide shot of a historic street in Cambodia, midday sun, a polished copper Thali displayed on a vendor's cart, surrounded by other regional platters, hint of colonial architecture.",
+      "Close-up side view of a single Thali on a woven mat, multiple colorful side dishes neatly arranged around a central mound of rice, golden light highlighting textures.",
+      "Soft focus macro of a hand placing a traditional Hindi inscription on a wooden tray, the word 'थाली' blurred, emphasizing the cultural origin without showing faces.",
+      "Tilted perspective of a rustic kitchen interior, a wooden table holding a simple earthenware Thali, steam curling from a bowl of lentil soup, warm ambient lighting.",
+      "Medium shot from a corner of a modern Indian restaurant, a sleek stainless-steel Thali with regional variations: coconut chutney, fried fish, pickles, and naan, contemporary decor.",
+      "Dynamic low-angle view of a family gathering around a low table, multiple Thalis arranged symmetrically, each filled with balanced portions of protein, carbs, and vegetables, emphasizing nutrition.",
+      "Top-down view of a single Thali on a patterned cloth, the dishes forming a harmonious color wheel, highlighting the practical design of a balanced meal.",
+      "Wide-angle sunrise scene over a riverside market, dozens of Thalis displayed on stalls, the golden light merging the dishes into a tapestry of flavors, evoking the richness of the cuisine."
+    ],
+    "ai_prompts_done": [
+      "A bustling Southeast Asian market stall, low angle view, a large circular metal Thali filled with assorted curries, grilled meats, rice, and vegetables, steam rising, vibrant colors, early morning light.",
+      "Overhead drone shot of a crowded market aisle, focusing on a round brass Thali on a wooden table surrounded by shoppers, assorted dishes spilling over the rim, tropical foliage in the background.",
+      "Wide shot of a historic street in Cambodia, midday sun, a polished copper Thali displayed on a vendor's cart, surrounded by other regional platters, hint of colonial architecture.",
+      "Close-up side view of a single Thali on a woven mat, multiple colorful side dishes neatly arranged around a central mound of rice, golden light highlighting textures.",
+      "Soft focus macro of a hand placing a traditional Hindi inscription on a wooden tray, the word 'थाली' blurred, emphasizing the cultural origin without showing faces.",
+      "Tilted perspective of a rustic kitchen interior, a wooden table holding a simple earthenware Thali, steam curling from a bowl of lentil soup, warm ambient lighting.",
+      "Medium shot from a corner of a modern Indian restaurant, a sleek stainless-steel Thali with regional variations: coconut chutney, fried fish, pickles, and naan, contemporary decor.",
+      "Dynamic low-angle view of a family gathering around a low table, multiple Thalis arranged symmetrically, each filled with balanced portions of protein, carbs, and vegetables, emphasizing nutrition.",
+      "Top-down view of a single Thali on a patterned cloth, the dishes forming a harmonious color wheel, highlighting the practical design of a balanced meal.",
+      "Wide-angle sunrise scene over a riverside market, dozens of Thalis displayed on stalls, the golden light merging the dishes into a tapestry of flavors, evoking the richness of the cuisine."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A bustling Southeast Asian market stall, low angle view, a large circular metal "
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Overhead drone shot of a crowded market aisle, focusing on a round brass Thali o"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Wide shot of a historic street in Cambodia, midday sun, a polished copper Thali "
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Close-up side view of a single Thali on a woven mat, multiple colorful side dish"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Soft focus macro of a hand placing a traditional Hindi inscription on a wooden t"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Tilted perspective of a rustic kitchen interior, a wooden table holding a simple"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Medium shot from a corner of a modern Indian restaurant, a sleek stainless-steel"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Dynamic low-angle view of a family gathering around a low table, multiple Thalis"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Top-down view of a single Thali on a patterned cloth, the dishes forming a harmo"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Wide-angle sunrise scene over a riverside market, dozens of Thalis displayed on "
+      }
+    ],
+    "image_queries_done": [
+      "Thali assorted dishes",
+      "South Asian thali platter",
+      "Thali colorful variety",
+      "Hindi word thali plate",
+      "Regional thali variations",
+      "Thali balanced meal",
+      "Thali abundant platter",
+      "Thali",
+      "Cambodia landmark",
+      "Cambodia culture"
+    ],
+    "image_source": "commons",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0498_캄보디아.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0498_캄보디아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "nlMw1Smm4pQ",
+    "uploaded_at": "2026-11-26T17:36:09.997073+09:00"
   },
   {
     "topic": "이탈리아(Italy) 부활절(Easter)의 특이한 양 요리 ‘앱바키오(abbacchio)’",
@@ -60154,7 +60413,7 @@
     "verify_note": "Maldives",
     "confidence": "source",
     "created_at": "2026-11-03T06:03:10.267706+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "몰디브 전체가 적도 위에 놓여 있다? 라는 생각, 실제로는 대부분의 섬이 적도 근처에 자리한다는 뜻입니다. 몰디브는 인도양에 흩어진 26개의 환초로 이루어진 섬나라인데, 북쪽의 이하반드히폴루 환초부터 남쪽의 아두 환초까지 남북으로 길게 뻗어 있어 적도를 가로지릅니다. 수도 말레는 전통적으로 ‘왕의 섬’이라 불리며, 이곳을 중심으로 고대 왕조가 중앙에 자리 잡고 통치했던 역사가 남아 있습니다. 그런데 이 왕조가 섬들을 직접 통치한 것이 아니라, 각 환초마다 지방 관리가 왕에게 보고하며 행정을 운영했다는 점이 흥미롭습니다. 이렇게 적도 근처에 퍼진 섬들은 따뜻한 기후와 풍부한 해양 생태계 덕분에 독특한 문화와 생활 양식을 유지하고 있습니다. 결국 몰디브가 적도 위에 있다는 말은, 주요 섬들이 적도와 가깝게 위치해 있다는 사실을 강조하는 것이며, 그 배경엔 오래된 왕조의 중앙집권적 통치가 깔려 있었습니다. 이처럼 작은 섬들 사이에도 깊은 역사가 흐르고 있다는 점, 생각보다 놀랍지 않나요?",
     "title_line1": "몰디브는 적도 위",
     "title_line2": "전체가 적도에?",
@@ -60184,7 +60443,9 @@
       "Maldives atoll administrative building",
       "Warm tropical island beach",
       "Maldives central royal history",
-      "Ancient ruins on small island"
+      "Ancient ruins on small island",
+      "Maldives",
+      "Maldives landmark"
     ],
     "scene_count": 10,
     "grounding": {
@@ -60235,7 +60496,7 @@
     ],
     "ai_prompts_done": [
       "A satellite view of the Maldives archipelago straddling the equator, turquoise waters and scattered coral islands forming a thin north‑south chain, seen from directly above.",
-      "",
+      "A close‑up aerial shot of several Maldivian islands clustered near the equator, with white sand beaches and palm trees, captured at a low angle to emphasize proximity to the equatorial line.",
       "A panoramic landscape of the Maldives showing the northern Ihavandhippolhu at one end and the southern Addu Atoll at the other, the chain stretching across the Indian Ocean under a bright sky.",
       "A side view of the elongated Maldivian atolls from north to south, with gentle waves lapping the reefs, filmed from a low boat perspective moving along the chain.",
       "An ancient royal palace ruins on the island of Malé, bathed in golden sunset light, with traditional Maldivian architecture hinting at a historic king's domain.",
@@ -60254,12 +60515,9 @@
       },
       {
         "scene": 2,
-        "source": "commons",
-        "user": "Gzzz",
-        "license": "CC BY-SA 4.0",
-        "title": "Floatplane at Bathala (Maldives).jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Floatplane_at_Bathala_(Maldives).jpg",
-        "id": "c:47805079"
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close‑up aerial shot of several Maldivian islands clustered near the equator, "
       },
       {
         "scene": 3,
@@ -60323,10 +60581,15 @@
       "Maldives landmark"
     ],
     "image_source": "commons",
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0506_몰디브_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0506_몰디브_v2_timing.json",
+    "audio_path_v2": "/home/runner/work/shorts/shorts/audio/0506_몰디브_v2.mp3",
+    "timing_path_v2": "/home/runner/work/shorts/shorts/audio/0506_몰디브_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0506_몰디브.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0506_몰디브.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "BoKSEbOewfg",
+    "uploaded_at": "2026-11-26T17:38:21.269659+09:00"
   },
   {
     "topic": "푸껫에서 열리는 구황제신축제(Nine Emperor Gods Festival)",
@@ -64113,7 +64376,7 @@
     "verify_note": "President of Finland",
     "confidence": "source",
     "created_at": "2026-11-06T01:12:14.224886+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -64126,7 +64389,84 @@
     },
     "curate_score": 6,
     "curate_why": "출생 즉 대통령 후보, 이색 법규",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "surprise",
+    "source_text": "The president of the Republic of Finland (Finnish: Suomen tasavallan presidentti; Swedish: republiken Finlands president) is the head of state of Finland. The incumbent president is Alexander Stubb, since 1 March 2024. He was elected president for the first time in 2024.\nThe president is directly elected by universal suffrage for a term of six years. Since 1994, no president may be elected for more than two consecutive terms. The president must be a natural-born Finnish citizen. The presidential office was established in the Constitution Act of 1919. Under the Constitution of Finland, executive power is vested in the Finnish Government and the president, with the latter possessing only residual powers. Only formally, the president ranks first in the protocol, before the speaker of the parliament and the prime minister of Finland.\nFinland has for most of its independence had a semi-presidential system in which the president had much authority and power over both foreign and domestic policy, but constitutional amendments adopted in 1991, 2000 and 2012 reduced the president's powers and moved the country towards a more parliamentary system. The president still leads the nation's foreign policy in conjunction with the Government, and is the commander-in-chief of the Finnish Defence Forces.\n== Election and term ==\n=== Election ===\nThe president is elected by direct popular vote. Candidates can be nominated by registered political parties that won at least one seat in the previous parliamentary elections. Alternatively, a candidate may also be nominated by 20,000 enfranchised citizens. It is common practice for each political party to set its own, distinct candidate.\nIf only one candidate is nominated, that candidate becomes president without an election. Otherwise, the first round of balloting takes place on the fourth Sunday of January in the election year. The elections are two-staged. If one of the candidates receives more than half of the votes cast, that candidate is elected president. If no candidate wins a majority in the first stage, the top two candidates compete in a second round two weeks later. The candidate who then receives more votes is elected. In the event of a tie, the outcome is determined by lot. The Government confirms the outcome and, if necessary, conducts the drawing of lots. The president assumes office on the first day of the month following the election.\n=== History ===\nBetween 1925 and 1988, the president was elected indirectly by an electoral college made up of electors chosen by voters in the presidential election. In the 1988 presidential election, a direct and an indirect election were conducted in parallel: if no candidate could gain a majority, the president was elected by an electoral college formed in the same elections. Since 1994, the president has been elected by a direct popular vote.\nSeveral exceptional presidential elections have been held:\n1919, the first president, K. J. Ståhlberg, was elected by the Finnish Parliament under the transitional provision of the constitution that had just come into force.\n1940, President Kyösti Kallio announced his resignation and the electors, who were voted for the 1937 presidential election, also elected Prime Minister Risto Ryti as president for Kallio's unused term (a little over two years until 1943), because electoral college elections could not be held during the martial law that began with the Winter War.\n1943, the president (Ryti again) was also elected by the 1937 electors, exceptionally for a term of only two years, because of the Continuation War.\n1944, Ryti announced his resignation and as the Continuation War continued, the Parliament, by an emergency law, appointed the Commander-in-Chief of the Finnish Armed Forces, Marshal of Finland Gustaf Manne",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+      ],
+      "advice": [
+        "첫 문장이 김"
+      ],
+      "rounds": 2,
+      "first": "‘태어나자마자 대통령 후보가 될 수 있다면, 그게 가능한 나라가 어디일까요?’ 핀란드에서는 자연 출생인 핀란드 시민이면 대통령 후보 자격을 바로 갖출 수 있습니다.",
+      "sentences": 5
+    },
+    "review_needed": true,
+    "narration": "‘태어나자마자 대통령 후보가 될 수 있다면, 그게 가능한 나라가 어디일까요?’ 핀란드에서는 자연 출생인 핀란드 시민이면 대통령 후보 자격을 바로 갖출 수 있습니다. 대통령은 보통선거로 선출돼 6년 동안 국가를 이끌고, 현재 알렉산더 스투브 대통령은 2024년 3월 1일에 취임했죠. 그런데 1994년부터는 연속 두 번만 재선이 허용돼, 세 번째 도전은 절대 불가능합니다. 이 규정은 오직 핀란드 헌법에만 적용되는 것이니, 다른 나라에서는 찾아볼 수 없는 독특한 제도입니다. 결국 “태어나자마자 후보”는 가능하지만, 두 번만 연임할 수 있다는 제약이 함께 따라온다는 점, 기억해 두세요.",
+    "title_line1": "핀란드 대통령 후보",
+    "title_line2": "태어나자마자 도전 가능!",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "태어나자마자 *후보* 가능"
+      },
+      {
+        "s": 2,
+        "text": "6년 *집권* 대통령"
+      },
+      {
+        "s": 3,
+        "text": "두 번만 *재선* 가능"
+      },
+      {
+        "s": 4,
+        "text": "*핀란드*만의 제도"
+      }
+    ],
+    "image_queries": [
+      "Finnish newborn baby",
+      "Finnish presidential palace",
+      "Finnish election ballot",
+      "Finnish constitution book",
+      "Finnish flag"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "대통령",
+      "알렉산더스투브",
+      "헌법",
+      "연임"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "핀란드 대통령 연임",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1994년",
+          "value": null,
+          "text": "연속 2번 재선 허용"
+        },
+        {
+          "label": "2024년 3월 1일",
+          "value": null,
+          "text": "알렉산더 스투브 취임"
+        },
+        {
+          "label": "6년",
+          "value": null,
+          "text": "한 번 임기"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "800 위켓을 잡은 유일한 투수",
@@ -65412,7 +65752,7 @@
     "verify_note": "Lists of Intangible Cultural Heritage elements",
     "confidence": "source",
     "created_at": "2026-11-07T00:18:38.449401+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -65428,7 +65768,92 @@
     },
     "curate_score": 6,
     "curate_why": "보호·사실 확인",
-    "curate_top": false
+    "curate_top": false,
+    "need": "practical",
+    "emotion": "caution",
+    "source_text": "UNESCO established its Lists of Intangible Cultural Heritage with the aim of ensuring better protection of important intangible cultural heritages worldwide and the awareness of their significance. This list is published by the Intergovernmental Committee for the Safeguarding of Intangible Cultural Heritage, the members of which are elected by State Parties meeting in a General Assembly. Through a compendium of the different oral and intangible treasures of humankind worldwide, the programme aims to draw attention to the importance of safeguarding intangible heritage, which UNESCO has identified as an essential component and as a repository of cultural diversity and of creative expression.\nThe list was established in 2008 when the 2003 Convention for the Safeguarding of the Intangible Cultural Heritage took effect.\nAs of 2010, the programme compiles three lists. The longer Representative List of the Intangible Cultural Heritage of Humanity comprises cultural \"practices and expressions [that] help demonstrate the diversity of this heritage and raise awareness about its importance.\" The shorter List of Intangible Cultural Heritage in Need of Urgent Safeguarding is composed of those cultural elements that concerned communities and countries consider to require urgent measures to keep them alive. The third list is the Register of Good Safeguarding Practices.\nIn 2013, four elements were inscribed on the List of Intangible Cultural Heritage in Need of Urgent Safeguarding, which helps States Parties mobilize international cooperation and assistance to ensure the transmission of this heritage with the participation of the concerned communities. The Urgent Safeguarding List now numbers 35 elements. The Intergovernmental Committee also inscribed 25 elements on the Representative List of the Intangible Cultural Heritage of Humanity, which serves to raise awareness of intangible heritage and provide recognition to communities' traditions and know-how that reflect their cultural diversity. The list does not attribute or recognize any standard of excellence or exclusivity. All lists combined totalled 676 elements, corresponding to 140 countries as of April 2023.\nElements inscribed in the lists are deemed significant manifestations of humanity's intangible heritage, the highest honour for intangible heritage on a global level.\n== Representative List of the Intangible Cultural Heritage of Humanity ==\nThe Representative List of the Intangible Cultural Heritage of Humanity contains intangible cultural heritage elements that \"help demonstrate the diversity of cultural heritage and raise awareness about its importance\".\n== List of Intangible Cultural Heritage in Need of Urgent Safeguarding ==\nThe List of Intangible Cultural Heritage in Need of Urgent Safeguarding contains intangible cultural heritage elements \"that concerned communities and States Parties consider require urgent measures to keep them alive\".\n== Register of Good Safeguarding Practices ==\nThe Register for Good Safeguarding Practices allows States Parties, communities and other stakeholders to \"share successful safeguarding experiences and examples of how they surmounted challenges faced in the transmission of their living heritage, its practice and knowledge to the future generation.\"\n== Proclaimed masterpieces ==\nThe Lists of Intangible Cultural Heritage were established in 2008, when the Convention for the Safeguarding of Intangible Cultural Heritage took effect. Prior to this, a project known as the Masterpieces of the Oral and Intangible Heritage of Humanity has already been active in recognizing the value of intangibles such as tradition, custom, and cultural spaces and the local actors who sustain these forms of cultural expressions through a Proclamation. Identification of the M",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "2008년, 유네스코가 무형문화유산 리스트를 만든 뒤 전 세계 676개의 문화 요소가 140개국에 등재되었습니다.",
+      "sentences": 7
+    },
+    "review_needed": true,
+    "narration": "2008년, 유네스코가 무형문화유산 리스트를 만든 뒤 전 세계 676개의 문화 요소가 140개국에 등재되었습니다. 하지만 리스트에 오른다고 자동으로 보호받는 것은 아닙니다. 리스트는 ‘무형문화유산 보호를 위한 정부간위원회’가 발행하고, 위원회 구성원은 총회에 참석한 국가 당사자들이 선출합니다. 대표 리스트와 긴급보호 리스트, 그리고 모범보호 실천 등록부 세 가지로 구성돼 각각 다른 목적을 가지고 있지만, 실제 보호 수준은 각 국가의 정책·예산에 달려 있습니다. 예를 들어 긴급보호 리스트는 현재 35개의 요소가 포함돼 국가와 지역사회가 ‘긴급히 보존 조치를 필요로 한다’고 판단한 경우에만 등재됩니다. 즉, 리스트는 ‘인정’이라는 명예를 주지만 ‘보호’를 보장하지는 않으며, 지속적인 국내 지원이 뒤따라야 비로소 문화유산이 살아남습니다. 따라서 리스트 등재가 곧 보호를 의미한다는 착각은 버려야 합니다.",
+    "title_line1": "마다가스카르 리스트",
+    "title_line2": "등재는 보호 아냐",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*리스트* 탄생"
+      },
+      {
+        "s": 4,
+        "text": "*보호*는 정책에"
+      },
+      {
+        "s": 6,
+        "text": "*지속* 지원 필요"
+      }
+    ],
+    "image_queries": [
+      "UNESCO intangible heritage list document",
+      "Madagascar cultural artifact",
+      "government committee meeting room",
+      "policy document on desk",
+      "heritage site warning plaque",
+      "grant funding paperwork",
+      "unused heritage archive shelf"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "유네스코",
+      "무형문화유산",
+      "정부간위원회",
+      "긴급보호"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "무형문화유산 보호 절차",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "리스트생성",
+          "value": null,
+          "text": "2008년 UNESCO 리스트"
+        },
+        {
+          "label": "위원회발행",
+          "value": null,
+          "text": "정부간위원회 발행"
+        },
+        {
+          "label": "리스트구분",
+          "value": null,
+          "text": "대표·긴급·모범 3종"
+        },
+        {
+          "label": "긴급보호",
+          "value": null,
+          "text": "35개 요소 등재"
+        },
+        {
+          "label": "국내지원",
+          "value": null,
+          "text": "지속적 정책·예산 필요"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "겨울 최장 밤, 야르다 밤(Yalda Night)",
@@ -66359,7 +66784,7 @@
     "verify_note": "Sinulog",
     "confidence": "source",
     "created_at": "2026-11-07T00:20:19.401700+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -66374,7 +66799,88 @@
     },
     "curate_score": 6,
     "curate_why": "인구·시각적",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "source_text": "The Sinulog Festival (also known as Sinug and Sulog) is an annual Filipino cultural and religious festival held on the third Sunday of January in Cebu province, with the center of the activities being in Cebu City; and is the core of Santo Niño Christian celebrations in the country.\nThe festival is widely regarded as one of the largest cultural and religious celebrations in the Philippines, with the 2026 event attracting over 5.2 million attendees. Aside from the religious aspect of the festival, Sinulog is also famous for its street parties, usually happening the night before and on the night of the main festival. The event is sometimes referred to as the \"Grandest Festival in the Philippines\" by participants and locals.\nOther places in the Philippines also celebrate their own version of the festival in honor of the Santo Niño, both within the province of Cebu, such as Carmen, and outside, including Tondo, Kabankalan, General Santos, Maasin, Cagayan de Oro, Butuan, Pagadian, Balingasag, and Don Carlos.\n== Etymology and background ==\nThe word Sinulog comes from the Cebuano adverb sulog, roughly meaning water current, an analogy to the forward–backward dance movements, performed to the sound of drums. This is a ritual prayer dance honoring the Señor Santo Niño, or Child Jesus.\nAccording to historical accounts, Cebuanos performed similar dances in honor of animist idols long before the introduction of Christianity to the Philippines, which reached Cebu with the arrival of Ferdinand Magellan at the head of a Spanish expedition on April 7, 1521. The original image of the Santo Niño was reportedly left by the Magellan expedition and rediscovered when the Spanish returned in 1565, during an expedition led by Miguel López de Legazpi, which played a significant role in the subsequent Spanish colonial period in the Philippines.\nSinulog is observed as a celebration of the Filipino people's embrace of Christianity, marking a significant moment in the country's religious and cultural history, particularly in Cebu province. The first Christian conversion happened in 1521 on the island of Cebu, when the Indianized-Sanskritized ruler Rajah Humabon and his queen Amihan (Humamay) were baptized along with their subjects, becoming Carlos and Juana of Cebu.\n== History ==\nOn March 16, 1521, Ferdinand Magellan arrived and planted the Christian cross on the shores of Cebu, claiming the territory for Spain. He presented the image of the Child Jesus to the Rajah Humabon. Hara Humamay (or Amihan, in some versions) was later named Queen Juana, after Juana, mother of Charles I of Spain, and she, along with the rulers of the island and some 800 natives, were converted to the Christian faith.\nSome Sinulog dances interpret the historical events surrounding the arrival of the Spaniards and the presentation of the Santo Niño to Queen Juana, though other performances may emphasize different aspects of the festival's history and significance. A popular theme among Sinulog dances is Queen Juana holding the Santo Niño in her arms and using it to bless her people, who were often afflicted with sickness believed to be caused by demons and other evil spirits.\n=== Arrival of López de Legazpi ===\nThe expedition led by Miguel Lopez de Legazpi bombarded the native settlement when it arrived on April 28, 1565. Inside a burning hut, one of Legazpi's men, Juan Camus, discovered the image of the Santo Niño inside a wooden pine box. When Legazpi arrived, he found that the natives performed dances, which were later associated with the honoring of the Santo Niño. The Augustinian friars who accompanied López de Legazpi on his expedition built a church on the site where the image of the Santo Niño was found, which later became the Basilica Minore del Santo Niño.\n=== Recent ===\nSince",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 5번 문장 '축제 전날 밤, 교회 대신 거리 한복판에서 수십만 명이…' — 수십만 명이라는 숫자는 본문에 없음"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "5.2 백만 명이 거리로 몰린다면, 바로 세부의 신루궁 축제입니다.",
+      "sentences": 7
+    },
+    "review_needed": true,
+    "narration": "5.2 백만 명이 거리로 몰린다면, 바로 세부의 신루궁 축제입니다. 매년 1월 셋째 주 일요일, 필리핀 최대 규모 문화·종교 행사로 세부 전역이 거대한 파티장으로 변합니다. ‘Sinulog’이라는 이름은 물살을 뜻하는 세부어에서 유래했으며, 드럼 소리에 맞춰 앞뒤로 움직이는 의식 무용이 핵심입니다. 이 춤은 원래 토착 신을 찬양하던 의식이었지만, 1521년 마젤란이 가져온 성니뇨 이미지와 결합해 기독교적 의미를 갖게 되었습니다. 축제 전날 밤, 교회 대신 거리 한복판에서 수십만 명이 모여 성니뇨를 찬양하며 밤새 춤을 춥니다. 2026년에는 5.2 백만 명이 넘는 인파가 몰려들어 ‘필리핀 최고의 축제’라 불릴 정도로 규모와 열기가 커졌습니다. 이렇게 거리와 신앙이 뒤섞인 순간이 바로 신루궁의 매력입니다.",
+    "title_line1": "세부 신루궁 축제",
+    "title_line2": "2백만 명?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "5.2백만*인파*"
+      },
+      {
+        "s": 5,
+        "text": "거리서 밤새*춤*"
+      },
+      {
+        "s": 6,
+        "text": "필리핀*최고*축제"
+      }
+    ],
+    "image_queries": [
+      "large crowd street",
+      "Cebu Sinulog parade",
+      "Sinulog drum dancers",
+      "Sinulog religious ceremony",
+      "street night dance",
+      "Philippines festival crowd",
+      "Cebu streets celebration"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "신루궁",
+      "세부",
+      "성니뇨",
+      "마젤란",
+      "드럼"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "신루궁 축제 연표",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1521년",
+          "value": null,
+          "text": "마젤란 도래"
+        },
+        {
+          "label": "1월 셋째 주 일요일",
+          "value": null,
+          "text": "신루궁 축제"
+        },
+        {
+          "label": "전날 밤",
+          "value": null,
+          "text": "거리 찬양"
+        },
+        {
+          "label": "2026년",
+          "value": null,
+          "text": "5.2백만 명"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "베트남(Vietnam) 반부패 캠페인으로 드러난 반천발(Vạn Thịnh Phát) 사기 사건",
@@ -77048,7 +77554,7 @@
     "verify_note": "Guyana–Venezuela territorial dispute",
     "confidence": "source",
     "created_at": "2026-11-13T14:49:59.126889+00:00",
-    "status": "scripted",
+    "status": "rejected",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -77144,7 +77650,8 @@
         }
       ],
       "none": false
-    }
+    },
+    "reject_reason": "나라와 주제 불일치(스페인 / GY,VE,FR,GB)"
   },
   {
     "topic": "볼리비아 바베큐는 소스와 오일을 두 번 바른다",
@@ -81275,7 +81782,7 @@
     "body": "구황제신축제는 9일간 이어지는 도교 축제로, 말레이시아·싱가포르·인도네시아·남부 태국 등에서 퍼라낙인 공동체가 주관한다. 태국에서는 '테사칸 킨체'라 불리며, 푸껫에서는 인구 절반이 퍼라낙인이라 축제가 가장 활발히 열린다.",
     "twist": "그럼에도 불구하고 푸껫 외 지역에서는 이 축제가 거의 알려지지 않는다.",
     "caveat": "축제 관련 내용은 주로 말레이시아·싱가포르·인도네시아·남부 태국 등 퍼라낙인 공동체가 있는 지역에 국한된다.",
-    "country": "인도네시아",
+    "country": "태국",
     "theme": "축제/의례",
     "wiki_title": "Nine Emperor Gods Festival",
     "source_url": "https://en.wikipedia.org/wiki/Nine_Emperor_Gods_Festival",
@@ -81370,7 +81877,8 @@
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.srt",
     "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0183_인도네시아.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "인도네시아"
   },
   {
     "topic": "펀자브인들은 같은 문화지만 나라별로 축제 인식이 달라",
@@ -81378,7 +81886,7 @@
     "body": "펀자브인(Punjabi)은 종교가 다양해 이슬람, 시크교, 힌두교 축제를 각각 지킨다. 파키스탄(Pakistan)에서는 공식 휴일이 이슬람 축제만 인정되고, 인도(India)에 사는 펀자브인들은 힌두·시크 축제를 주로 기념한다.",
     "twist": "2007년 추정에 따르면 펀자브 인구의 약 75%가 이슬람을 믿는다.",
     "caveat": "이 수치는 2007년 추정치이며, 실제 비율은 변동 가능하다.",
-    "country": "덴마크",
+    "country": "파키스탄",
     "theme": "축제/의례",
     "wiki_title": "Punjabi festivals",
     "source_url": "https://en.wikipedia.org/wiki/Punjabi_festivals",
@@ -81499,7 +82007,8 @@
     "image_source": "pixabay",
     "srt_path": "/home/runner/work/shorts/shorts/videos/0207_덴마크.srt",
     "video_path_v6": "/home/runner/work/shorts/shorts/videos/0207_덴마크.mp4",
-    "status_v6": "video_done"
+    "status_v6": "video_done",
+    "country_before_fix": "덴마크"
   },
   {
     "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
