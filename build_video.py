@@ -227,11 +227,14 @@ def load_timings(path, audio_duration, script_text):
                 text = str(s.get("text", "")).strip()
 
                 if end > start and text:
-                    result.append({
+                    row = {
                         "start": max(0.0, start),
                         "end": min(audio_duration, end),
                         "text": text,
-                    })
+                    }
+                    if s.get("words"):      # 랩 소재: 단어별 시작 시각 (한 단어씩 박히는 자막용)
+                        row["words"] = s["words"]
+                    result.append(row)
 
             if result:
                 return result
@@ -914,6 +917,8 @@ def build_one(idx, item):
     caption_clips = []
     all_cues = subtitles.make_cues(timings, audio_duration)   # 대본 자막 조각 (SRT는 어떤 방식이든 같이 만든다)
     srt_text = subtitles.to_srt(all_cues)
+    if item.get("rap"):                # 랩 소재: 단어가 나올 때마다 한 단어씩 박히는 자막 (SRT 는 위의 일반 문장 자막 그대로)
+        all_cues = subtitles.make_cues(timings, audio_duration, reveal=True)
     if caption_mode in ("highlight", "script_hl"):
         # 핵심 문구 (예전 방식). script_hl 이면 대본 자막과 겹치지 않게 이미지 위쪽에 표시
         cues = highlight_cues(item, timings, audio_duration, script)
@@ -938,7 +943,7 @@ def build_one(idx, item):
             std = max(stats[k][1] for k in idxs)
             print(f"  자막 {start:5.1f}s~{end:5.1f}s (밝기 {luma:3.0f}): {text}")
             cc = (
-                ImageClip(subtitles.render_caption(text, luma, std))
+                ImageClip(subtitles.render_caption(text, luma, std, full=subtitles.FULL.get((round(start, 3), text))))
                 .set_start(start)
                 .set_duration(end - start)
                 .set_position((IMG_BOX[0], cap_y))

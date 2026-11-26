@@ -280,7 +280,7 @@ def flow(a):
         for o in ons:
             g = int(round(o / S)); g = max(g, (sn[-1] + 1) if sn else 0); sn.append(g)
         ends = [sn[i + 1] if i + 1 < len(sn) else int(round(span / S)) for i in range(len(sn))]
-        buf = np.zeros(int(k * bar * sr) + sr, dtype=np.float32)
+        buf = np.zeros(int(k * bar * sr) + sr, dtype=np.float32); wstarts = [round(pos + g * S, 3) for g in sn]
         for x, g0, g1, w, isn in zip(xs, sn, ends, words, isnum):
             slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.85), 1.25 if isn else 1.7)     # 최대 1.7배속: 그 이상 줄이면 끝음절이 뭉개지므로 다음 칸에 살짝 걸치게 둔다
             y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", _atempo(r), "-f", "f32le", "-"],
@@ -290,7 +290,7 @@ def flow(a):
                 y = y[:keep]; nf = int(0.03 * sr); y[-nf:] *= np.linspace(1, 0, nf, dtype=np.float32)
             y = y * (1.25 if g0 % 4 == 0 else 1.0) * (1.3 if isn else 1.0)                                                 # 박(1,2,3,4박) 머리의 단어는 조금 세게
             i0 = int(g0 * S * sr); buf[i0:i0 + len(y)] += y[:len(buf) - i0]
-        out_lines.append(buf[:int(k * bar * sr)]); timing.append({"start": round(pos, 3), "end": round(pos + span, 3), "text": line}); pos += k * bar
+        out_lines.append(buf[:int(k * bar * sr)]); toks = line.split(); timing.append({"start": round(pos, 3), "end": round(pos + span, 3), "text": line, **({"words": [{"start": t0} for t0 in wstarts]} if len(toks) == len(wstarts) else {})}); pos += k * bar
     y = np.concatenate(out_lines); y = y / max(1.0, float(np.abs(y).max()) / 0.92)
     y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", "acompressor=threshold=-20dB:ratio=3:attack=4:release=50,aecho=0.8:0.5:80:0.15", "-f", "f32le", "-"],
                                      input=y.astype(np.float32).tobytes(), capture_output=True, check=True).stdout, dtype=np.float32)

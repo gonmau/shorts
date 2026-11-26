@@ -110,13 +110,25 @@ def split_chunks(sentence, max_lines=MAX_LINES):
     return out
 
 
-def make_cues(timings, audio_duration):
-    """[(시작, 끝, 텍스트)]. timings = [{start,end,text}] (TTS 문장 시간)."""
+FULL = {}      # (시작시각, 부분 텍스트) -> 전체 줄 텍스트. 랩 자막 '한 단어씩 박기' 때 자리를 고정하려고 쓴다
+
+
+def make_cues(timings, audio_duration, reveal=False):
+    """[(시작, 끝, 텍스트)]. timings = [{start,end,text}] (TTS 문장 시간).
+    reveal=True 이고 문장에 words(단어별 시작 시각)가 있으면 단어가 나올 때마다 한 단어씩 늘어나는 조각으로 만든다(랩 자막)."""
     cues = []
     for t in timings:
         st, en = float(t["start"]), float(t["end"])
         if en <= st or not str(t["text"]).strip():
             continue
+        ws = t.get("words") or []
+        if reveal and ws and len(wrap(t["text"])) <= MAX_LINES:
+            toks = str(t["text"]).split()
+            if len(toks) == len(ws):
+                for k, w in enumerate(ws):
+                    a = float(w["start"]); b = float(ws[k + 1]["start"]) if k + 1 < len(ws) else en
+                    cues.append([a, b, " ".join(toks[:k + 1]), st, en, "R", str(t["text"]).strip(), k + 1 == len(ws)])
+                continue
         chunks = split_chunks(t["text"])
         weights = [max(1, _nospace(c)) for c in chunks]
         total, acc = float(sum(weights)), 0.0
@@ -130,7 +142,7 @@ def make_cues(timings, audio_duration):
     i = 0
     while i < len(cues):
         c = cues[i]
-        while (c[1] - c[0] < MIN_SHOW and i + 1 < len(cues) and cues[i + 1][3] == c[3]
+        while (len(c) == 5 and c[1] - c[0] < MIN_SHOW and i + 1 < len(cues) and len(cues[i + 1]) == 5 and cues[i + 1][3] == c[3]
                and len(wrap(c[2] + " " + cues[i + 1][2])) <= MAX_LINES):
             n = cues[i + 1]
             c = [c[0], n[1], c[2] + " " + n[2], c[3], c[4]]
@@ -142,11 +154,17 @@ def make_cues(timings, audio_duration):
     for k, c in enumerate(merged):
         nxt = merged[k + 1][0] if k + 1 < len(merged) else audio_duration
         end = c[1]
+        if len(c) > 5 and not c[7]:                       # 랩 자막의 중간 단어: 다음 단어가 나올 때까지 그대로
+            end = min(end, audio_duration)
+            if end > c[0]:
+                out.append((c[0], end, c[2])); FULL[(round(c[0], 3), c[2])] = c[6]
+            continue
         end = nxt if nxt - end < 0.6 else min(nxt, end + 0.4)
-        end = max(end, min(c[0] + MIN_SHOW, nxt))
+        if len(c) == 5: end = max(end, min(c[0] + MIN_SHOW, nxt))
         end = min(end, audio_duration)
         if end > c[0]:
             out.append((c[0], end, c[2]))
+            if len(c) > 5: FULL[(round(c[0], 3), c[2])] = c[6]
     return out
 
 
@@ -167,10 +185,11 @@ def panel_alpha(luma, std):
     return max(0.5, min(0.86, a))
 
 
-def render_caption(text, luma=90.0, std=30.0):
-    """BOX_W x CAP_H RGBA 배열. 패널은 아래쪽 기준으로 놓여 1줄/2줄 모두 바닥선이 같다."""
+def render_caption(text, luma=90.0, std=30.0, full=None):
+    """BOX_W x CAP_H RGBA 배열. 패널은 아래쪽 기준으로 놓여 1줄/2줄 모두 바닥선이 같다.
+    full 이 있으면(랩 자막) 전체 줄의 자리를 기준으로 패널/줄바꿈을 잡고 text(앞부분)의 단어만 보여준다. 가장 나중에 나온 단어는 노란색."""
     font = _font()
-    lines = wrap(text)[:MAX_LINES] or [""]
+    lines = wrap(full or text)[:MAX_LINES] or [""]
     asc, desc = font.getmetrics()
     lh = asc + desc + LINE_GAP
     tw = max(_w(l, font) for l in lines)
@@ -188,6 +207,17 @@ def render_caption(text, luma=90.0, std=30.0):
     img.alpha_composite(shade, (x0, y0))
     d = ImageDraw.Draw(img)
     y = y0 + PAD_Y
+    if full:
+        shown = len(str(text).split()); n = 0
+        for l in lines:
+            x = (BOX_W - _w(l, font)) / 2
+            for wd in l.split():
+                n += 1
+                if n <= shown:
+                    d.text((x, y), wd, font=font, fill=(255, 214, 10, 255) if n == shown else (255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
+                x += _w(wd + " ", font)
+            y += lh
+        return np.asarray(img, dtype=np.uint8).copy()
     for l in lines:
         x = (BOX_W - _w(l, font)) / 2
         d.text((x, y), l, font=font, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
