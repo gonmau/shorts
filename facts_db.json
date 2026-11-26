@@ -75563,7 +75563,7 @@
     "verify_note": "Pig War (1859)",
     "confidence": "source",
     "created_at": "2026-11-13T14:14:29.244030+00:00",
-    "status": "video_done",
+    "status": "scripted",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "돼지 한 마리를 쏜 뒤, 미국과 영국의 군대가 맞붙었습니다! 1859년, 미국과 영국은 샌후안 제도의 영유권을 놓고 팽팽하게 대립하고 있었습니다. 그러던 중 미국인 농부 라이먼 커틀러의 감자밭에 영국 회사 소유의 돼지가 들어왔습니다. 화가 난 농부가 돼지를 총으로 쏴 죽이자, 미군 64명이 섬에 상륙했고 영국은 군함 3척을 보냈습니다. 양측은 서로 물러서지 않았지만, 다행히 전투는 벌어지지 않았습니다. 이후 무려 12년간 양국 군대가 섬에 함께 주둔했죠. 결국 1872년, 독일 황제 빌헬름 1세의 중재로 섬은 미국 영토가 됐습니다. 놀랍게도 돼지 전쟁의 유일한 사망자는 돼지 한 마리였습니다.",
@@ -75721,8 +75721,6 @@
     "tts_voice_v2": "ko-KR-InJoonNeural",
     "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0649_미국,영국.srt",
-    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0649_미국,영국.mp4",
-    "status_v6": "video_done",
     "thumb_opts": {
       "scale1": 1.0,
       "scale2": 1.0,
@@ -75757,7 +75755,14 @@
     },
     "thumb_scene": 1,
     "youtube_id": "iXFuBoQEfQU",
-    "uploaded_at": "2026-11-16T15:04:11.521011+09:00"
+    "uploaded_at": "2026-11-16T15:04:11.521011+09:00",
+    "redo_ts": 1795734065.831769,
+    "hashtags": [
+      "라이먼커틀러",
+      "돼지전쟁",
+      "빌헬름1세",
+      "독일황제"
+    ]
   },
   {
     "topic": "왕실 나이저 회사가 다스리던 식민지 나이지리아",
