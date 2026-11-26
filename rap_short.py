@@ -21,6 +21,8 @@ def valid(orig, rap):
     if len(orig) != len(rap): return f"줄 수 불일치(원문 {len(orig)}줄, 가사 {len(rap)}줄)"
     for o, r in zip(orig, rap):
         if not r.strip() or len(r) > max(50, len(o) * 1.5): return f"너무 긺: {r[:30]}"
+        bad = [w for w in ("라임", "운율", "박자", "4박", "가사", "비트", "리듬", "랩으로", "rhyme") if w in r and w not in o]
+        if bad: return f"작성 지시어({bad[0]})가 가사에 섞임: {r[:30]} -> 이야기 내용만 쓰고 '라임/박자' 같은 말은 쓰지 마세요"
         for n in numbers(o):
             nn = n.replace(",", "").rstrip(".")
             if nn in r.replace(",", ""): continue
