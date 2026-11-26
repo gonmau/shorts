@@ -207,6 +207,31 @@ def align(a):
     print(f"박자 맞춤({a.bpm}bpm, 2박={U:.2f}초 단위): {len(new)}줄, 총 {pos:.1f}초)")
 
 
+
+_D = "영일이삼사오육칠팔구"; _U = ["", "십", "백", "천"]; _BIG = ["", "만", "억", "조"]
+def _sino4(n):
+    out = ""
+    for i, d in enumerate(reversed(str(n))):
+        d = int(d)
+        if d: out = ("" if (d == 1 and i > 0) else _D[d]) + _U[i] + out
+    return out
+def sino(n):
+    if n == 0: return "영"
+    parts, i = [], 0
+    while n: n, r = divmod(n, 10000); parts.append((_sino4(r) + _BIG[i]) if r else ""); i += 1
+    return "".join(reversed(parts))
+NATIVE = {1: "한", 2: "두", 3: "세", 4: "네"}
+def spell_nums(w):
+    """'64명' -> '육십사명', '3마리' -> '세마리', '1859년' -> '천팔백오십구년', '12.5%' -> '십이점오퍼센트'. 숫자를 또박또박 읽게 한글로 풀어 쓴다."""
+    def rep(m):
+        txt, unit = m.group(1).replace(",", ""), m.group(2)
+        if "." in txt:
+            a, b = txt.split("."); return sino(int(a or 0)) + "점" + "".join(_D[int(c)] for c in b) + unit
+        n = int(txt)
+        if unit.startswith(("마리", "개", "잔", "병", "그루")) and n in NATIVE: return NATIVE[n] + unit
+        return sino(n) + unit
+    return re.sub(r"(\d[\d,]*\.?\d*)([가-힣%]*)", lambda m: rep(m).replace("%", "퍼센트"), w)
+
 def synth_word(word, out_wav):
     """단어 하나를 음성으로. Supertonic(키 불필요) 우선, 안 되면 Edge."""
     import os
@@ -245,7 +270,8 @@ def flow(a):
         x = np.frombuffer(pcm, dtype=np.float32).copy(); cache[w] = x; return x
     for line in lines:
         words = [re.sub(r"[,!?.…~\"'“”]+", "", w) for w in line.split()]; words = [("요" if w.lower() == "yo" else ("예" if w.lower() == "yeah" else w)) for w in words if w]
-        xs = [word_audio(w) for w in words]; d = [max(0.12, len(x) / sr) for x in xs]; nat = sum(d)
+        isnum = [bool(re.search(r"\d", w)) for w in words]
+        xs = [word_audio(spell_nums(w)) for w in words]; d = [max(0.12, len(x) / sr) * (1.35 if n else 1.0) for x, n in zip(xs, isnum)]; nat = sum(d)      # 숫자는 칸을 더 넓게
         k = min((1, 2, 3), key=lambda k: abs(np.log(max(nat, 0.5) / (k * bar * 0.9))))        # 한 줄이 몇 마디(bar)를 쓸지: 말 속도가 가장 덜 변하는 쪽
         while k < 4 and nat / (k * bar * 0.93) > 1.25: k += 1                                 # 평균 25% 넘게 빨라져야 하면 한 마디 더 줘서 음절이 뭉개지지 않게
         span = k * bar * 0.93; f = span / nat; cum, ons = 0.0, []
@@ -255,14 +281,14 @@ def flow(a):
             g = int(round(o / S)); g = max(g, (sn[-1] + 1) if sn else 0); sn.append(g)
         ends = [sn[i + 1] if i + 1 < len(sn) else int(round(span / S)) for i in range(len(sn))]
         buf = np.zeros(int(k * bar * sr) + sr, dtype=np.float32)
-        for x, g0, g1, w in zip(xs, sn, ends, words):
-            slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.85), 1.7)     # 최대 1.7배속: 그 이상 줄이면 끝음절이 뭉개지므로 다음 칸에 살짝 걸치게 둔다
+        for x, g0, g1, w, isn in zip(xs, sn, ends, words, isnum):
+            slot = max(S, (g1 - g0) * S - 0.012); dn = len(x) / sr; r = min(max(dn / slot, 0.85), 1.25 if isn else 1.7)     # 최대 1.7배속: 그 이상 줄이면 끝음절이 뭉개지므로 다음 칸에 살짝 걸치게 둔다
             y = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-af", _atempo(r), "-f", "f32le", "-"],
                                              input=x.tobytes(), capture_output=True, check=True).stdout, dtype=np.float32).copy()
             keep = int((slot + 0.45 * S) * sr)                                                     # 다음 단어 시작 직전까지만 (칸의 45% 정도는 걸쳐도 됨)
             if len(y) > keep:                                                                       # 잘라야 할 때는 뚝 끊지 않고 짧게 페이드
                 y = y[:keep]; nf = int(0.03 * sr); y[-nf:] *= np.linspace(1, 0, nf, dtype=np.float32)
-            y = y * (1.25 if g0 % 4 == 0 else 1.0)                                                 # 박(1,2,3,4박) 머리의 단어는 조금 세게
+            y = y * (1.25 if g0 % 4 == 0 else 1.0) * (1.3 if isn else 1.0)                                                 # 박(1,2,3,4박) 머리의 단어는 조금 세게
             i0 = int(g0 * S * sr); buf[i0:i0 + len(y)] += y[:len(buf) - i0]
         out_lines.append(buf[:int(k * bar * sr)]); timing.append({"start": round(pos, 3), "end": round(pos + span, 3), "text": line}); pos += k * bar
     y = np.concatenate(out_lines); y = y / max(1.0, float(np.abs(y).max()) / 0.92)
