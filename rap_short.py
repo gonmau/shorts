@@ -17,6 +17,26 @@ def numbers(s):
 
 KO1 = {"1": "한일하나첫", "2": "두이둘", "3": "세삼셋", "4": "네사넷", "5": "다섯오", "6": "여섯육", "7": "일곱칠", "8": "여덟팔", "9": "아홉구", "0": "영공제로"}
 
+
+def _vow(ch):
+    c = ord(ch) - 0xAC00
+    if not 0 <= c < 11172: return None
+    j = (c % 588) // 28                                              # 중성(모음) 번호
+    return {1: 5, 3: 7, 10: 5, 11: 5, 15: 5}.get(j, j)               # ㅐ·ㅔ·ㅙ·ㅚ·ㅞ 는 같은 소리로 취급
+
+def tail_vowels(line, k=2):
+    syl = [c for c in re.sub(r"[^가-힣]", "", line)]
+    v = [_vow(c) for c in syl[-k:]]
+    return tuple(v) if len(v) == k else None
+
+def rhyme_report(rap):
+    """2줄씩 짝(1-2, 3-4 ...)의 끝 두 글자 모음이 같은지. 맞는 쌍 비율과 틀린 쌍 목록"""
+    bad, tot = [], 0
+    for i in range(0, len(rap) - 1, 2):
+        tot += 1
+        if tail_vowels(rap[i]) is None or tail_vowels(rap[i]) != tail_vowels(rap[i + 1]): bad.append((i + 1, i + 2))
+    return (1 - len(bad) / tot if tot else 1.0), bad
+
 def valid(orig, rap):
     if len(orig) != len(rap): return f"줄 수 불일치(원문 {len(orig)}줄, 가사 {len(rap)}줄)"
     for o, r in zip(orig, rap):
@@ -28,13 +48,18 @@ def valid(orig, rap):
             if nn in r.replace(",", ""): continue
             if len(nn) == 1 and any(w in r for w in KO1.get(nn, "")): continue      # 한 자리 숫자는 '세/두/한' 같은 우리말 수사도 인정
             return f"숫자 누락 {n}: {r[:30]}"
+    ratio, bad = rhyme_report(rap)
+    if ratio < 0.7: return "라임 부족: 줄 " + ", ".join(f"{a}-{b}" for a, b in bad[:5]) + " 쌍의 끝 두 글자 모음이 서로 달라요. 각 쌍이 같은 소리로 끝나게(예: ~했네/~됐네, ~섬에/~점에) 끝말을 고쳐 다시 쓰세요"
     return ""
 
 PROMPT = """아래는 한국어 쇼츠 대본입니다(문장 {n}개). 사실은 그대로 두고 **한국어 랩 가사**로 바꿔 주세요.
 규칙:
 - 반드시 정확히 {n}줄. 원문 i번째 문장 -> 가사 i번째 줄 (1:1 대응).
 - 원문의 연도, 숫자, 고유명사, 사실 관계는 빠뜨리거나 바꾸지 말 것. 새 사실·과장 금지.
-- 줄마다 4박자 리듬으로 읽히게(대략 12~26자), 두세 줄마다 끝소리(라임)를 맞출 것. 첫 줄은 "Yo,"로 시작해도 좋고 마지막 줄은 짧은 마무리 한 마디.
+- 줄마다 4박자로 읽히게(대략 12~26자).
+- **진짜 압운**: 2줄씩 짝(1-2줄, 3-4줄, 5-6줄 ...)으로 묶고, 짝을 이루는 두 줄은 **끝 두 글자의 모음이 같아야** 합니다. 먼저 짝마다 끝말을 정하세요. 예) '쐈네 / 죽였네'(ㅐ네), '섬에서 / 점령해서'(ㅓ에서), '1859년 / 한 방에 전쟁 직전'. 어색하면 문장 순서는 두고 말만 바꿔서라도 맞춥니다.
+- 첫 줄은 "Yo,"로 시작해도 좋고 마지막 줄은 짧은 마무리 한 마디.
+- 가사에 '라임', '박자', '가사', '비트' 같은 작성 지시어를 쓰지 말 것(이야기 내용만).
 - 욕설, 비속어 금지. 영어 추임새는 Yo, Yeah 정도만.
 - 출력은 JSON 문자열 배열 하나만. 설명 금지.
 
@@ -90,8 +115,18 @@ def beat_track(dur, sr, bpm, voice_rms):
         f = bass[bar % 4]; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0
         env = 0.55 + 0.45 * np.exp(-(tt % (2 * bt)) * 2.5)
         out[m] += (np.sin(2 * np.pi * f * tt) * 0.55 * env).astype(np.float32)
+    # 로파이 코드 패드(전자피아노 느낌의 FM) + 약한 바이닐 노이즈
+    chords = [(220.0, 261.63, 329.63), (220.0, 261.63, 329.63), (261.63, 329.63, 392.0), (196.0, 246.94, 293.66)]   # Am Am C G
+    pad = np.zeros(n, dtype=np.float32)
+    for bar in range(bars):
+        b0 = bar * 4 * bt; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0; env = np.exp(-tt * 1.1) * 0.6 + 0.4
+        for f in chords[bar % 4]:
+            pad[m] += (np.sin(2 * np.pi * f * tt + 1.5 * np.sin(2 * np.pi * f * 2 * tt) * np.exp(-tt * 3)) * env * 0.18).astype(np.float32)
+    k = np.ones(int(sr * 0.0004) + 1) / (int(sr * 0.0004) + 1); pad = np.convolve(pad, k, "same").astype(np.float32)
+    vinyl = (rnd.randn(n) * 0.02 * (rnd.rand(n) > 0.995)).astype(np.float32)
     rms = float(np.sqrt((out ** 2).mean())) or 1.0
-    return out * (voice_rms * 0.55 / rms)                   # 목소리 크기의 55% 수준
+    out = out * (voice_rms * 0.55 / rms); prms = float(np.sqrt((pad ** 2).mean())) or 1.0
+    return out + pad * (voice_rms * 0.22 / prms) + vinyl * voice_rms
 
 def align(a):
     """각 가사 줄을 비트 격자(2박 단위)에 맞게 늘이고/줄이고 줄 사이에 비트용 여백을 둬서 박자에 올라타게 한다. 음성 파일과 timing json 을 덮어쓴다(원본은 _orig 로 보관)."""
