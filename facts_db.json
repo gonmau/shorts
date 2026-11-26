@@ -18,49 +18,55 @@
     "video_path_v5": "C:\\Users\\seokg\\Downloads\\세계문화 상식 쇼츠\\code\\videos\\0000_Switzerland_v5.mp4",
     "status_v5": "video_done",
     "image_queries_done": [
-      "two guinea pigs Switzerland",
-      "Switzerland guinea pig fine",
-      "Switzerland guinea pig habitat",
-      "Swiss animal protection law",
-      "Switzerland guinea pigs playing",
-      "Switzerland guinea pig companionship"
+      "guinea pig alone Switzerland",
+      "two guinea pigs together",
+      "guinea pig fine notice",
+      "guinea pig cage improvement",
+      "two guinea pigs care responsibility",
+      "guinea pig solitary not allowed"
     ],
     "image_credits": [
       {
         "scene": 1,
         "source": "pixabay",
-        "user": "Bad_Bear_Pictures",
-        "page": "https://pixabay.com/photos/mammal-cute-portrait-animal-3223359/"
+        "user": "Ilona721",
+        "page": "https://pixabay.com/photos/cavia-caviidae-guinea-pig-7318119/",
+        "id": 7318119
       },
       {
         "scene": 2,
         "source": "pixabay",
-        "user": "furbymama",
-        "page": "https://pixabay.com/photos/guinea-pig-animal-pet-rodent-6839832/"
+        "user": "carlosftw",
+        "page": "https://pixabay.com/photos/dog-guinea-pig-love-cute-funny-3491286/",
+        "id": 3491286
       },
       {
         "scene": 3,
         "source": "pixabay",
-        "user": "Myagi",
-        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287749/"
+        "user": "vantagepointfl",
+        "page": "https://pixabay.com/photos/guinea-pig-cavy-pet-guinea-rodent-242520/",
+        "id": 242520
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "adege",
-        "page": "https://pixabay.com/photos/jura-hike-equestrian-law-swiss-jura-5181990/"
+        "user": "Myagi",
+        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287749/",
+        "id": 5287749
       },
       {
         "scene": 5,
         "source": "pixabay",
-        "user": "BiancaVanDijk",
-        "page": "https://pixabay.com/photos/guinea-pigs-pets-basket-animals-6018472/"
+        "user": "furbymama",
+        "page": "https://pixabay.com/photos/guinea-pig-cute-animal-rodent-4461209/",
+        "id": 4461209
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "vantagepointfl",
-        "page": "https://pixabay.com/photos/guinea-pig-cavy-pet-guinea-rodent-242520/"
+        "user": "Myagi",
+        "page": "https://pixabay.com/photos/guinea-pig-rodent-mammal-5287747/",
+        "id": 5287747
       }
     ],
     "image_source": "pixabay",
@@ -103,7 +109,16 @@
     "youtube_privacy": "public",
     "uploaded_at": "2026-09-14",
     "need": "surprise",
-    "emotion": "surprise"
+    "emotion": "surprise",
+    "ai_prompts": [
+      "A Swiss Alpine village street in daylight, a small wooden sign with a paw print and a fine symbol, while a lone guinea pig sits sadly in a fenced garden, camera low to the ground.",
+      "Inside a modern Swiss apartment, two guinea pigs play together on a spacious multi-level cage with hay and tunnels, captured from a side angle showing their interaction.",
+      "A courtroom scene with a judge's bench, a legal document titled 'Animal Protection Act' on the desk, and a single guinea pig in a cage looking out, shot from a high angle.",
+      "A Swiss farmyard, an official in a uniform points to a newly built enriched guinea pig enclosure, while a solitary guinea pig watches from a distance, filmed from a wide-angle perspective.",
+      "A cozy Swiss living room, two guinea pigs cuddle in a soft bedding area under a lamp, with a caretaker gently feeding them, captured from a close-up over-the-shoulder view.",
+      "A panoramic view of the Swiss mountains at sunset, a solitary guinea pig silhouette on a lone rock, emphasizing isolation, photographed from a dramatic low-angle silhouette shot."
+    ],
+    "ai_prompts_done": []
   },
   {
     "country": "Finland",
@@ -75723,7 +75738,9 @@
       "military standoff",
       "19th century diplomatic meeting",
       "dead pig",
-      "pig war monument"
+      "pig war monument",
+      "Pig War (1859)",
+      "United Kingdom landmark"
     ],
     "scene_count": 10,
     "infographic": {
@@ -75747,88 +75764,86 @@
     "fact_risk": "user-reviewed",
     "fact_applied": true,
     "image_queries_done": [
-      "1859 historical illustration American British military confrontation San Juan Island",
-      "San Juan Islands disputed territory historical map 1859",
-      "Berkshire pig eating potatoes in 19th century farm garden",
-      "19th century American soldiers facing British Royal Navy warships",
-      "American Camp British English Camp San Juan Island historical photograph",
-      "Kaiser Wilhelm I German emperor historical portrait 1870s",
-      "San Juan Island Pig War commemorative pig statue potato",
+      "pig being shot",
+      "San Juan Islands",
+      "pig in potato field",
+      "American soldiers landing",
+      "military standoff",
+      "19th century diplomatic meeting",
+      "dead pig",
+      "pig war monument",
       "Pig War (1859)",
-      "United Kingdom landmark",
-      "United Kingdom culture"
+      "United Kingdom landmark"
     ],
     "image_credits": [
       {
         "scene": 1,
+        "source": "commons",
+        "user": "Nicxon.Piaso",
+        "license": "CC BY-SA 4.0",
+        "title": "Kids chasing Pigs.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kids_chasing_Pigs.jpg",
+        "id": "c:101301153"
+      },
+      {
+        "scene": 2,
         "source": "pixabay",
         "user": "Nature-Pix",
         "page": "https://pixabay.com/photos/bald-eagle-bird-animal-nature-4313491/",
         "id": 4313491
       },
       {
-        "scene": 2,
-        "source": "pixabay",
-        "user": "grebmot",
-        "page": "https://pixabay.com/photos/beach-san-blas-islands-panama-4388225/",
-        "id": 4388225
-      },
-      {
         "scene": 3,
         "source": "pixabay",
-        "user": "RoyBuri",
-        "page": "https://pixabay.com/photos/piglet-mammal-species-fauna-3386356/",
-        "id": 3386356
+        "user": "MrGajowy3",
+        "page": "https://pixabay.com/photos/flowers-potatoes-white-flowers-8064007/",
+        "id": 8064007
       },
       {
         "scene": 4,
         "source": "pixabay",
-        "user": "Canadian-Nature-Visions",
-        "page": "https://pixabay.com/photos/hmcs-charlottetown-frigate-warship-7082999/",
-        "id": 7082999
+        "user": "Hreisho",
+        "page": "https://pixabay.com/photos/cemetery-cross-war-normandy-2595875/",
+        "id": 2595875
       },
       {
         "scene": 5,
-        "source": "pixabay",
-        "user": "bhossfeld",
-        "page": "https://pixabay.com/photos/tent-camp-night-camping-stars-548022/",
-        "id": 548022
+        "source": "commons",
+        "user": "euranet_plus",
+        "license": "CC BY-SA 2.0",
+        "title": "English part - Citizens’ Corner debate on Europe’s icy standoff with Russia (30321386151).",
+        "page": "https://commons.wikimedia.org/wiki/File:English_part_-_Citizens%E2%80%99_Corner_debate_on_Europe%E2%80%99s_icy_standoff_with_Russia_(30321386151).jpg",
+        "id": "c:52400042"
       },
       {
         "scene": 6,
         "source": "pixabay",
-        "user": "pixel2013",
-        "page": "https://pixabay.com/photos/emperor-wilhelm-i-2299284/",
-        "id": 2299284
+        "user": "2211438",
+        "page": "https://pixabay.com/photos/old-paper-german-writing-vintage-1347332/",
+        "id": 1347332
       },
       {
         "scene": 7,
-        "source": "pixabay",
-        "user": "larsen9236",
-        "page": "https://pixabay.com/photos/staniel-cay-swimming-pig-seagull-171908/",
-        "id": 171908
+        "source": "commons",
+        "user": "Anna Frodesiak",
+        "license": "CC0",
+        "title": "Dead pig floating in water.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dead_pig_floating_in_water.jpg",
+        "id": "c:26385254"
       },
       {
         "scene": 8,
         "source": "pixabay",
-        "user": "ColiN00B",
-        "page": "https://pixabay.com/illustrations/piggy-bank-pig-figure-lucky-pig-1132518/",
-        "id": 1132518,
-        "type": "illustration"
-      },
-      {
-        "scene": 9,
-        "source": "pixabay",
-        "user": "Julius_Silver",
-        "page": "https://pixabay.com/photos/london-landmark-tower-bridge-3078109/",
-        "id": 3078109
+        "user": "12019",
+        "page": "https://pixabay.com/photos/washington-monument-sunset-twilight-1628558/",
+        "id": 1628558
       },
       {
         "scene": 10,
         "source": "pixabay",
-        "user": "hurk",
-        "page": "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
-        "id": 458321
+        "user": "Julius_Silver",
+        "page": "https://pixabay.com/photos/london-landmark-tower-bridge-3078109/",
+        "id": 3078109
       }
     ],
     "image_source": "pixabay",
@@ -75878,7 +75893,20 @@
     "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2.mp3",
     "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2_timing.json",
     "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done"
+    "status_tts_v2": "done",
+    "ai_prompts": [
+      "A 19th‑century battlefield on a foggy island, American and British soldiers in period uniforms facing each other, a smoking rifle barrel aimed at a lone pig on the ground, low angle view.",
+      "A panoramic view of San Juan Island in 1859, misty shoreline with American and British flags on opposite cliffs, tense clouds overhead, wide aerial perspective.",
+      "Close‑up of a rugged 1850s coastline, American and British naval officers in period dress standing on opposite rocks, stormy sea behind them, side‑profile shot.",
+      "A humble 1850s potato field on the island, a British‑owned pig wandering among rows, a weary American farmer in period clothing watching, seen from a high angle over the crops.",
+      "An angry farmer in 1850s attire firing a muzzle‑loading rifle at a pig, smoke rising, 64 American troops landing on a beach in the background, three British warships on the horizon, dynamic low‑angle shot.",
+      "A dramatic scene of the same farmer’s shot, the pig collapsing, American soldiers disembarking onto sand, British frigates with billowing sails approaching, captured from a worm’s‑eye perspective.",
+      "Two groups of 1850s soldiers—American and British—standing rigidly on opposite sides of a narrow beach, neither advancing, tense standoff under overcast sky, shot from a mid‑height frontal angle.",
+      "A quiet island camp in the late 1860s, American tents and British red‑coated barracks side by side, soldiers from both nations sharing a fire, viewed from a distant hilltop.",
+      "A formal 1872 diplomatic scene on the island shore, a German emperor’s emblem on a flagpole, American and British officers shaking hands, the island’s silhouette in the background, captured from a side‑view perspective.",
+      "A solitary pig lying dead on a grassy patch of the island, surrounded by fallen leaves, sunrise casting soft light, no humans visible, close‑up ground‑level shot."
+    ],
+    "ai_prompts_done": []
   },
   {
     "topic": "왕실 나이저 회사가 다스리던 식민지 나이지리아",
