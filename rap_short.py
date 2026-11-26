@@ -2,6 +2,7 @@
 """랩 버전 쇼츠: 기존 소재의 대본을 '문장 1:1'로 랩 가사로 바꾼 복제 소재를 DB 끝에 만들고, 영상이 완성되면 비트를 깔아 준다.
  1) python rap_short.py make --index 649             -> 새 소재 번호 N 출력 (대본=랩 가사, 사실·숫자 유지, 이미지·핵심 문구 자리는 원본과 같음)
  2) 평소 파이프라인 그대로: fetch_images / generate_tts (TTS_RATE=+8% 권장) / build_video / make_thumbnail --index N
+ 2.5) python rap_short.py align --index N [--bpm 92]  (음성 만든 직후, 영상 합성 전: 줄을 비트 격자에 맞춰 늘이고/여백 줄 - 이게 있어야 랩 박자가 남)
  3) python rap_short.py beat --index N [--bpm 92]    -> 영상 음성 밑에 합성 비트(킥·스네어·하이햇·베이스)를 깔고 video_path_v6 를 새 파일로 교체
 원본 소재는 건드리지 않는다. 복제 소재는 제목 2줄째가 '랩으로 듣는 이야기', rap_of 에 원본 번호가 남는다."""
 import argparse, json, os, re, subprocess, sys, tempfile
@@ -60,25 +61,52 @@ def make(a):
 
 def beat_track(dur, sr, bpm, voice_rms):
     import numpy as np
-    n = int(dur * sr); t = np.arange(n) / sr; out = np.zeros(n, dtype=np.float32); step = 60.0 / bpm; rnd = np.random.RandomState(7)
-    def add(at, wave):
+    n = int(dur * sr); t = np.arange(n) / sr; out = np.zeros(n, dtype=np.float32); bt = 60.0 / bpm; rnd = np.random.RandomState(7)
+    def add(at, wave, g=1.0):
         i = int(at * sr)
-        if i < n: out[i:i + len(wave)] += wave[:n - i]
-    tk = np.arange(int(.25 * sr)) / sr; kick = (np.sin(2 * np.pi * (50 + 110 * np.exp(-tk * 28)) * tk) * np.exp(-tk * 9)).astype(np.float32)
-    ts = np.arange(int(.18 * sr)) / sr; snare = ((rnd.randn(len(ts)) * 0.7 + np.sin(2 * np.pi * 190 * ts) * 0.4) * np.exp(-ts * 22)).astype(np.float32)
-    th = np.arange(int(.05 * sr)) / sr; hat = (rnd.randn(len(th)) * np.exp(-th * 90) * 0.35).astype(np.float32)
-    bass_notes = [55.0, 55.0, 65.41, 49.0]                 # A1 A1 C2 G1 — 단순한 마이너 진행
-    bar = 0
-    while bar * 4 * step < dur:
-        b0 = bar * 4 * step
-        for k in (0, 2.5): add(b0 + k * step, kick)         # 1박, 3박 반
-        for k in (1, 3): add(b0 + k * step, snare)          # 2박, 4박
-        for k in range(8): add(b0 + k * step / 2, hat * (1.0 if k % 2 == 0 else 0.6))
-        f = bass_notes[bar % 4]; m = (t >= b0) & (t < b0 + 4 * step); tt = t[m] - b0
-        out[m] += (np.sin(2 * np.pi * f * tt) * 0.5 * (0.6 + 0.4 * np.exp(-(tt % step) * 3))).astype(np.float32)
-        bar += 1
+        if i < n: out[i:i + len(wave)] += wave[:n - i] * g
+    tk = np.arange(int(.30 * sr)) / sr; kick = (np.sin(2 * np.pi * (45 + 130 * np.exp(-tk * 30)) * tk) * np.exp(-tk * 8) * 1.3).astype(np.float32)
+    ts = np.arange(int(.22 * sr)) / sr; snare = ((rnd.randn(len(ts)) * 0.8 + np.sin(2 * np.pi * 185 * ts) * 0.5) * np.exp(-ts * 20)).astype(np.float32)
+    th = np.arange(int(.045 * sr)) / sr; hat = (rnd.randn(len(th)) * np.exp(-th * 100) * 0.4).astype(np.float32)
+    bass = [55.0, 55.0, 65.41, 49.0]                       # A1 A1 C2 G1 (마이너)
+    bars = int(dur / (4 * bt)) + 2
+    for bar in range(bars):
+        b0 = bar * 4 * bt
+        for k in (0, 1.5, 2.5): add(b0 + k * bt, kick)      # 붐뱁 킥: 1, 2.5, 3.5박
+        for k in (1, 3): add(b0 + k * bt, snare)            # 2, 4박 스네어
+        for k in range(16): add(b0 + k * bt / 4 + (0.012 if k % 2 else 0), hat, 1.0 if k % 4 == 0 else (0.7 if k % 2 == 0 else 0.45))   # 16분 하이햇 + 스윙
+        f = bass[bar % 4]; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0
+        env = 0.55 + 0.45 * np.exp(-(tt % (2 * bt)) * 2.5)
+        out[m] += (np.sin(2 * np.pi * f * tt) * 0.55 * env).astype(np.float32)
     rms = float(np.sqrt((out ** 2).mean())) or 1.0
-    return out * (voice_rms * 0.30 / rms)                   # 목소리 크기의 30% 수준으로 깔림
+    return out * (voice_rms * 0.55 / rms)                   # 목소리 크기의 55% 수준
+
+def align(a):
+    """각 가사 줄을 비트 격자(2박 단위)에 맞게 늘이고/줄이고 줄 사이에 비트용 여백을 둬서 박자에 올라타게 한다. 음성 파일과 timing json 을 덮어쓴다(원본은 _orig 로 보관)."""
+    import numpy as np, shutil
+    import generate_script as G
+    db = G.load_db(); it = db[a.index]; ap = Path(it["audio_path_v2"]); tp = Path(it["timing_path_v2"]); sr = 44100; U = 2 * 60.0 / a.bpm
+    if not ap.exists(): sys.exit(f"음성 파일 없음: {ap}")
+    bk = ap.with_name(ap.stem + "_orig" + ap.suffix); tbk = tp.with_name(tp.stem + "_orig.json")
+    src = bk if bk.exists() else ap; tsrc = tbk if tbk.exists() else tp      # 다시 돌려도 원본 기준
+    if not bk.exists(): shutil.copy(ap, bk)
+    if not tbk.exists(): shutil.copy(tp, tbk)
+    data = json.load(open(tsrc, encoding="utf-8")); chunks = []; new = []; pos = 0.0
+    for s_ in data["sentences"]:
+        st, en = float(s_["start"]), float(s_["end"]); d = max(0.3, en - st)
+        u = max(1, round(d / U)); r = d / (u * U * 0.94)
+        while r > 1.45: u += 1; r = d / (u * U * 0.94)
+        while r < 0.80 and u > 1: u -= 1; r = d / (u * U * 0.94)
+        r = min(max(r, 0.75), 1.6); T = u * U
+        af = f"atempo={r:.4f},acompressor=threshold=-18dB:ratio=3:attack=5:release=60,aecho=0.8:0.5:90:0.18,apad=whole_dur={T:.4f}"
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{st:.3f}", "-t", f"{d:.3f}", "-i", str(src), "-af", af, "-t", f"{T:.4f}", "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"],
+                             capture_output=True, check=True).stdout
+        x = np.frombuffer(raw, dtype=np.float32); need = int(round(T * sr)); x = np.pad(x, (0, max(0, need - len(x))))[:need]; chunks.append(x)
+        new.append({"start": round(pos, 3), "end": round(pos + min(T, d / r), 3), "text": s_["text"]}); pos += T
+    y = np.concatenate(chunks); y = y / max(1.0, float(np.abs(y).max()) / 0.95)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", "-", "-b:a", "192k", str(ap)], input=y.astype(np.float32).tobytes(), check=True)
+    data["sentences"] = new; data["rap_bpm"] = a.bpm; json.dump(data, open(tp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"박자 맞춤({a.bpm}bpm, 2박={U:.2f}초 단위): {len(new)}줄, 총 {pos:.1f}초)")
 
 def beat(a):
     import numpy as np
@@ -97,7 +125,8 @@ def beat(a):
 def main():
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
     m = sp.add_parser("make"); m.add_argument("--index", type=int, required=True)
+    al = sp.add_parser("align"); al.add_argument("--index", type=int, required=True); al.add_argument("--bpm", type=int, default=92)
     b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92)
-    a = ap.parse_args(); {"make": make, "beat": beat}[a.cmd](a)
+    a = ap.parse_args(); {"make": make, "align": align, "beat": beat}[a.cmd](a)
 if __name__ == "__main__":
     main()

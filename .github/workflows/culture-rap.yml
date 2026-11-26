@@ -75,6 +75,8 @@ jobs:
         run: python fetch_images.py --index "$NEW"
       - name: 음성(TTS)
         run: python generate_tts.py --index "$NEW"
+      - name: 박자 맞춤 (가사 줄을 비트 격자에 맞게 늘이고 줄임)
+        run: python rap_short.py align --index "$NEW" --bpm "$BPM"
       - name: 영상 합성
         run: python build_video.py --index "$NEW" --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY"
       - name: 썸네일 만들기
