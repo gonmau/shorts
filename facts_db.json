@@ -59588,7 +59588,123 @@
     "scene_count": 10,
     "curate_score": 3,
     "curate_why": "특이 양 요리, 문화 일반화",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "로마",
+      "부활절",
+      "앱바키오",
+      "양고기",
+      "허브"
+    ],
+    "infographic": {
+      "on": false,
+      "none": true,
+      "why": "대본과 대조해 쓸 수 있는 행이 부족"
+    },
+    "ai_prompts": [
+      "A close-up of a rustic wooden platter holding a golden-brown roasted lamb leg, garnished with rosemary sprigs, set on a linen tablecloth, shot from a low angle.",
+      "A sunlit Italian countryside kitchen scene showing a copper pot of simmering lamb stew beside fresh herbs, captured from a side view.",
+      "A panoramic view of a Roman hillside village square at dusk, with a large open fire roasting a whole lamb leg on a spit, seen from an elevated perspective.",
+      "A slow-motion style shot of a chef's hands brushing olive oil and chopped herbs onto a lamb leg, captured from a top-down angle on a marble countertop.",
+      "A dramatic close-up of a sealed wooden crate stamped with a regional seal, containing a whole lamb, illuminated by a single spotlight, viewed from a low angle.",
+      "An atmospheric interior of a certified farm cellar, rows of hanging lamb cuts with protective labels, photographed from a diagonal angle.",
+      "A refined restaurant dining room in Rome, with a plated lamb dish beside a certificate plaque, captured from a three-quarter view.",
+      "A winding cobblestone street in Rome lined with small eateries, each displaying a small sign of a lamb silhouette, shot from a street-level perspective.",
+      "A festive Easter table outdoors, featuring a roasted lamb centerpiece, fresh spring greens, and a subtle glow of candlelight, viewed from a wide-angle overhead shot.",
+      "A contemplative scene of a traveler standing at a Roman balcony overlooking the city at sunrise, holding a fork, pondering a traditional Easter feast, captured from a distant side angle."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ulleo",
+        "page": "https://pixabay.com/photos/lamb-sheep-young-white-barn-3854470/",
+        "id": 3854470
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "SWT666",
+        "license": "CC BY-SA 4.0",
+        "title": "Half colored Easter tablecloth.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Half_colored_Easter_tablecloth.jpg",
+        "id": "c:133927698"
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Tjena",
+        "page": "https://pixabay.com/photos/leg-of-lamb-calf-beef-roasted-2728709/",
+        "id": 2728709
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "pacoruiz64",
+        "page": "https://pixabay.com/photos/lamb-cook-meat-food-cuisine-roast-2314811/",
+        "id": 2314811
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "sherpa7",
+        "page": "https://pixabay.com/photos/meat-ingredients-food-lamb-raw-5868514/",
+        "id": 5868514
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "EvelinaRibarova",
+        "license": "CC BY-SA 4.0",
+        "title": "Easter table in Italian Bulgarian mixed style 2015 (1).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Easter_table_in_Italian_Bulgarian_mixed_style_2015_(1).jpg",
+        "id": "c:100223811"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Pexels",
+        "page": "https://pixabay.com/photos/restaurant-cooking-chef-kitchen-1284351/",
+        "id": 1284351
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "4666192",
+        "page": "https://pixabay.com/photos/transport-system-automobile-vehicle-3128152/",
+        "id": 3128152
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "Luk_Wro",
+        "page": "https://pixabay.com/photos/easter-ornaments-the-tradition-of-5039215/",
+        "id": 5039215
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Carrellk",
+        "license": "CC BY-SA 3.0",
+        "title": "LTC Floyd J. Thompson Easter Saturday 1975.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:LTC_Floyd_J._Thompson_Easter_Saturday_1975.jpg",
+        "id": "c:41501937"
+      }
+    ],
+    "image_queries_done": [
+      "Easter lamb Italy",
+      "Roman countryside abbacchio dish",
+      "Whole lamb leg roast Italy",
+      "Herb coated lamb roast",
+      "Traditional lamb preparation",
+      "Protected lamb product Italy",
+      "Certified farm restaurant kitchen",
+      "Rome regional lamb specialty",
+      "Easter table lamb tradition",
+      "Easter dinner choice"
+    ],
+    "image_source": "pixabay"
   },
   {
     "topic": "중국 북부 농촌의 새해 축제 ‘Shehuo(社火)’",
@@ -75716,10 +75832,6 @@
       }
     ],
     "image_source": "pixabay",
-    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2.mp3",
-    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0649_미국,영국_v2_timing.json",
-    "tts_voice_v2": "ko-KR-InJoonNeural",
-    "status_tts_v2": "done",
     "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0649_미국,영국.srt",
     "thumb_opts": {
       "scale1": 1.0,
@@ -75756,7 +75868,7 @@
     "thumb_scene": 1,
     "youtube_id": "iXFuBoQEfQU",
     "uploaded_at": "2026-11-16T15:04:11.521011+09:00",
-    "redo_ts": 1795734065.831769,
+    "redo_ts": 1795734297.5839517,
     "hashtags": [
       "라이먼커틀러",
       "돼지전쟁",
