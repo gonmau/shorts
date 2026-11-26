@@ -75857,7 +75857,7 @@
       "tag_text": "",
       "tag_color": "#EB1414",
       "tag_fg": "#FFFFFF",
-      "font": "",
+      "font": "gugi",
       "band": "none",
       "band_color": "#FFE200",
       "band_opacity": 100,
