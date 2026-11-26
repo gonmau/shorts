@@ -15,12 +15,17 @@ DROP = ["audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "srt
 def numbers(s):
     return re.findall(r"\d[\d,\.]*", str(s))
 
+KO1 = {"1": "한일하나첫", "2": "두이둘", "3": "세삼셋", "4": "네사넷", "5": "다섯오", "6": "여섯육", "7": "일곱칠", "8": "여덟팔", "9": "아홉구", "0": "영공제로"}
+
 def valid(orig, rap):
-    if len(orig) != len(rap): return "줄 수 불일치"
+    if len(orig) != len(rap): return f"줄 수 불일치(원문 {len(orig)}줄, 가사 {len(rap)}줄)"
     for o, r in zip(orig, rap):
         if not r.strip() or len(r) > max(50, len(o) * 1.5): return f"너무 긺: {r[:30]}"
         for n in numbers(o):
-            if n.replace(",", "") not in r.replace(",", ""): return f"숫자 누락 {n}: {r[:30]}"
+            nn = n.replace(",", "").rstrip(".")
+            if nn in r.replace(",", ""): continue
+            if len(nn) == 1 and any(w in r for w in KO1.get(nn, "")): continue      # 한 자리 숫자는 '세/두/한' 같은 우리말 수사도 인정
+            return f"숫자 누락 {n}: {r[:30]}"
     return ""
 
 PROMPT = """아래는 한국어 쇼츠 대본입니다(문장 {n}개). 사실은 그대로 두고 **한국어 랩 가사**로 바꿔 주세요.
@@ -49,8 +54,13 @@ def make(a):
         arr = [re.sub(r"^\d+[\.\)]\s*", "", str(x)).strip() for x in arr]
         err["e"] = valid(sents, arr)
         return arr if not err["e"] else None
-    rap = G.ask_models(client, models, "당신은 사실에 충실한 한국어 랩 작사가입니다.", PROMPT.format(n=len(sents), src=src), 1800, 4, parse)
-    if not rap: sys.exit(f"랩 가사 생성 실패 ({err['e'] or '응답 없음'})")
+    rap, fb = None, ""
+    for tries in range(3):       # 실패 사유를 알려 주며 다시 요청
+        prompt = PROMPT.format(n=len(sents), src=src) + (f"\n\n[이전 시도의 문제] {fb}\n위 문제를 고쳐서 다시 작성하세요. 원문의 연도·숫자는 그대로 쓰고, 줄 수는 정확히 {len(sents)}줄입니다." if fb else "")
+        rap = G.ask_models(client, models, "당신은 사실에 충실한 한국어 랩 작사가입니다.", prompt, 1800, 2, parse)
+        if rap: break
+        fb = err["e"] or "JSON 배열 형식이 아님"; print(f"  가사 검증 실패({tries + 1}/3): {fb}")
+    if not rap: sys.exit(f"랩 가사 생성 실패 ({fb})")
     new = {k: v for k, v in it.items() if k not in DROP}
     new.update(narration="\n".join(l if re.search(r"[.!?]$", l) else l + "." for l in rap), narration_original=it.get("narration", ""), status="scripted",
                rap=True, rap_of=a.index, title_line2="랩으로 듣는 이야기", review_ok=True)
