@@ -64,12 +64,12 @@ jobs:
       SFX_VOL: ${{ vars.SFX_VOL || '1.0' }}
     steps:
       - uses: actions/checkout@v4
-      - name: 이전 랩 실행의 장면 이미지 복원 (같은 원본을 다시 만들 때 Cloudflare 한도 절약)
+      - name: 장면 이미지 캐시 복원 (같은 소재 재제작·랩 버전에서 이미지를 다시 받지 않기 위해)
         uses: actions/cache@v4
         with:
-          path: rap_cache
-          key: rap-images-${{ github.event.inputs.source }}-${{ github.run_id }}
-          restore-keys: rap-images-${{ github.event.inputs.source }}-
+          path: img_cache
+          key: shorts-images-${{ github.run_id }}
+          restore-keys: shorts-images-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -92,7 +92,7 @@ jobs:
       - name: 장면 이미지 (원본/이전 실행 이미지가 있으면 재사용, 없을 때만 새로 받음)
         run: |
           python fetch_images.py --index "$NEW"
-          python rap_short.py cache --index "$NEW"
+          python img_cache.py save
       - name: 음성 - 단어별 랩 플로우 (16분음표 격자)
         if: ${{ github.event.inputs.flow != 'line' }}
         env:

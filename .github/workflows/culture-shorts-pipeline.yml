@@ -124,6 +124,12 @@ jobs:
       WEB_UI_URL: ${{ vars.WEB_UI_URL }}
     steps:
       - uses: actions/checkout@v4
+      - name: 장면 이미지 캐시 복원 (같은 소재 재제작·랩 버전에서 이미지를 다시 받지 않기 위해)
+        uses: actions/cache@v4
+        with:
+          path: img_cache
+          key: shorts-images-${{ github.run_id }}
+          restore-keys: shorts-images-
 
       - uses: actions/setup-python@v5
         with:
@@ -219,7 +225,10 @@ jobs:
 
       - name: 장면 이미지 6장 (Pixabay)
         if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
-        run: python fetch_images.py --limit "$COUNT" --start "$START"
+        run: |
+          python img_cache.py restore
+          python fetch_images.py --limit "$COUNT" --start "$START"
+          python img_cache.py save
 
       - name: 영상 합성
         if: ${{ env.STAGE != 'prepare' && env.STAGE != 'cuts' }}
