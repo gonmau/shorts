@@ -352,7 +352,7 @@ def _style_panel():
         st.text_area("AI에게 실제로 전달되는 문장 (대본)", _SP.block("script", _P) or "(없음)", height=170, disabled=True, key="sp_prev")
 
 st.caption(_sync_line())
-TD, TB, TH, T1, T2, T3, T4, T5, T6, TL, TS = st.tabs(["📊 현황", "⚙ 기본 설정", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화"])
+TD, TB, TH, T1, T2, T3, T4, T5, T6, TL, TS, TR = st.tabs(["📊 현황", "⚙ 기본 설정", "🏠 시작·가이드", "1 소재", "2 대본", "3 이미지", "4 음성", "5 영상", "6 업로드", "🎞 롱폼", "⚙ 관리·동기화", "🎤 랩 버전"])
 with T1:
     st.caption("새 소재를 만들고 승인/제외합니다. 직접 소재를 넣거나, 상태·폐기·업로드 기록도 여기서 봅니다.")
     T1a, T1b, T1c, T1d = st.tabs(["⚙ 만들기·승인", "➕ 직접 추가", "🗂 상태·폐기·업로드 기록", "📈 트렌드·벤치마크"])
@@ -3990,3 +3990,35 @@ if st.session_state.get("gh_dirty"):
                 st.code(_o1[-1500:])
     if TTS_CFG.get("drive_auto") and os.path.exists("token_drive.json"):
         run("drive_sync.py", "push", "--only", ",".join(TTS_CFG.get("drive_cats") or ["thumbs"]))
+
+
+# ------------------------------------------------------------------ 🎤 랩 버전
+with TR:
+    st.markdown("기존 소재의 대본을 **랩 가사**로 바꾼 복제 소재를 만들고, 단어별 랩 음성(16분음표 박자) + 한 단어씩 박히는 자막 + 비트까지 한 번에 만듭니다. 원본 소재는 그대로이고 DB 끝에 새 소재가 추가됩니다. (GROQ_API_KEY 필요)")
+    r1, r2, r3 = st.columns(3)
+    rap_src = r1.number_input("원본 소재 번호", 0, 9999, 649, key="rap_src")
+    rap_bpm = r2.number_input("비트 BPM", 70, 120, 92, key="rap_bpm", help="80~100 권장. 가사가 잘리면 낮추고, 늘어지면 올려 보세요")
+    rap_voice = r3.selectbox("목소리 (Supertonic)", ["M3", "M2", "M4", "M1", "M5", "F1", "F2", "F3", "F4", "F5"], key="rap_voice", help="랩은 남성 목소리(M2~M4) 추천")
+    rap_flow = st.radio("랩 방식", ["word (단어별 끊어 읽기, 추천)", "line (문장 단위 박자 맞춤)"], horizontal=True, key="rap_flow")
+    rap_upload = st.checkbox("끝나면 유튜브에 비공개 업로드", False, key="rap_up")
+    if st.button("🎤 랩 버전 만들기", type="primary", key="rap_go"):
+        TTS_CFG["voice"] = rap_voice  # 랩 목소리 (이 세션 설정에 반영)
+        TTS_CFG["rate"] = 8
+        TIMES.clear()
+        if run("rap_short.py", "make", "--index", str(int(rap_src))):
+            from common import load_db as _ld
+            _d = _ld(); _n = len(_d) - 1
+            if _d[_n].get("rap_of") == int(rap_src):
+                st.info(f"랩 소재 번호: **{_n}**")
+                steps = [("fetch_images.py", "--index", str(_n))]
+                if rap_flow.startswith("word"):
+                    steps.append(("rap_short.py", "flow", "--index", str(_n), "--bpm", str(int(rap_bpm))))
+                else:
+                    steps += [("generate_tts.py", "--index", str(_n)), ("rap_short.py", "align", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
+                steps += [("build_video.py", "--index", str(_n), "--channel", CH, "--handle", HD), ("make_thumbnail.py", "--channel", CH, "--handle", HD, "--start", str(_n)),
+                          ("rap_short.py", "beat", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
+                if rap_upload:
+                    steps.append(("upload_to_youtube.py", "--indexes", str(_n)))
+                chain(steps)
+            else:
+                st.error("랩 소재를 DB에서 찾지 못했습니다. 위 로그를 확인하세요.")
