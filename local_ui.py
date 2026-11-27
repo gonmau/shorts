@@ -4010,7 +4010,21 @@ with TR:
     rap_style = st.selectbox("🥁 비트 스타일", _styles, key="rap_style", help="auto = 소재마다 다른 비트(같은 소재는 항상 같음). bgm/ 폴더에 mp3·wav를 넣으면 file:이름 으로 고를 수 있어요")
     rap_flow = st.radio("랩 방식", ["word (단어별 끊어 읽기, 추천)", "line (문장 단위 박자 맞춤)"], horizontal=True, key="rap_flow")
     rap_upload = st.checkbox("끝나면 유튜브에 비공개 업로드", False, key="rap_up")
-    if st.button("🎤 랩 버전 만들기", type="primary", key="rap_go"):
+    rap_once = st.checkbox("가사 확인 없이 한 번에 끝까지 진행", False, key="rap_once", help="끄면(기본) ①가사만 만들고 멈춰서 가사를 보고 고친 뒤 ②영상 만들기를 누릅니다")
+
+    def _rap_steps(_n):
+        steps = [("fetch_images.py", "--index", str(_n))]
+        if rap_flow.startswith("word"):
+            steps.append(("rap_short.py", "flow", "--index", str(_n), "--bpm", str(int(rap_bpm))))
+        else:
+            steps += [("generate_tts.py", "--index", str(_n)), ("rap_short.py", "align", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
+        steps += [("build_video.py", "--index", str(_n), "--channel", CH, "--handle", HD), ("make_thumbnail.py", "--channel", CH, "--handle", HD, "--start", str(_n)),
+                  ("rap_short.py", "beat", "--index", str(_n), "--bpm", str(int(rap_bpm)), "--style", rap_style)]
+        if rap_upload:
+            steps.append(("upload_to_youtube.py", "--indexes", str(_n)))
+        return steps
+
+    if st.button("🎤 ① 가사 만들기" if not rap_once else "🎤 랩 버전 한 번에 만들기", type="primary", key="rap_go"):
         TTS_CFG["voice"] = rap_voice  # 랩 목소리 (이 세션 설정에 반영)
         TTS_CFG["rate"] = 8
         TIMES.clear()
@@ -4018,16 +4032,34 @@ with TR:
             from common import load_db as _ld
             _d = _ld(); _n = len(_d) - 1
             if _d[_n].get("rap_of") == int(rap_src):
+                st.session_state["rap_n"] = _n
                 st.info(f"랩 소재 번호: **{_n}**")
-                steps = [("fetch_images.py", "--index", str(_n))]
-                if rap_flow.startswith("word"):
-                    steps.append(("rap_short.py", "flow", "--index", str(_n), "--bpm", str(int(rap_bpm))))
-                else:
-                    steps += [("generate_tts.py", "--index", str(_n)), ("rap_short.py", "align", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
-                steps += [("build_video.py", "--index", str(_n), "--channel", CH, "--handle", HD), ("make_thumbnail.py", "--channel", CH, "--handle", HD, "--start", str(_n)),
-                          ("rap_short.py", "beat", "--index", str(_n), "--bpm", str(int(rap_bpm)), "--style", rap_style)]
-                if rap_upload:
-                    steps.append(("upload_to_youtube.py", "--indexes", str(_n)))
-                chain(steps)
+                if rap_once:
+                    chain(_rap_steps(_n))
             else:
                 st.error("랩 소재를 DB에서 찾지 못했습니다. 위 로그를 확인하세요.")
+
+    # ② 가사 확인/수정 -> 영상 만들기 (이미 만든 랩 소재 번호를 직접 넣어 이어서 해도 됨)
+    if not rap_once:
+        st.divider()
+        _rn = st.number_input("가사를 확인할 랩 소재 번호", 0, 99999, int(st.session_state.get("rap_n", 0)), key="rap_n_in", help="① 가사 만들기를 하면 자동으로 들어갑니다. 이전에 만든 랩 소재를 이어서 하려면 번호를 직접 넣으세요")
+        from common import load_db as _ld2, save_db as _sd2
+        _db2 = _ld2()
+        if 0 <= int(_rn) < len(_db2) and _db2[int(_rn)].get("rap"):
+            _it = _db2[int(_rn)]
+            st.caption(f"원본 소재 {_it.get('rap_of')} → 랩 소재 {int(_rn)}  ·  줄마다 한 줄씩. 고쳤다면 아래 '가사 저장'을 먼저 누르세요 (줄 수는 그대로 유지: 줄마다 장면·핵심 문구가 대응됩니다)")
+            _cur = str(_it.get("narration", ""))
+            _txt = st.text_area("🎤 가사", _cur, height=300, key=f"rap_txt_{int(_rn)}")
+            c1, c2 = st.columns(2)
+            if c1.button("💾 가사 저장", key="rap_save"):
+                _lines = [l.strip() for l in _txt.splitlines() if l.strip()]
+                if len(_lines) != len([l for l in _cur.splitlines() if l.strip()]):
+                    st.error("줄 수가 달라졌습니다. 줄 수는 그대로 두고 고쳐 주세요 (장면·핵심 문구와 1:1 대응).")
+                else:
+                    _it["narration"] = "\n".join(l if l[-1] in ".!?" else l + "." for l in _lines)
+                    _sd2(_db2); st.success("가사를 저장했습니다. 이제 ② 영상 만들기를 누르세요.")
+            if c2.button("🎬 ② 이 가사로 영상 만들기", type="primary", key="rap_build"):
+                TTS_CFG["voice"] = rap_voice; TTS_CFG["rate"] = 8
+                chain(_rap_steps(int(_rn)))
+        elif int(_rn):
+            st.warning("그 번호는 랩 소재가 아닙니다.")
