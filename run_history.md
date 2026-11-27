@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 22:17:32 (KST) · 기록 2288건 · 소재 746개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 22:19:25 (KST) · 기록 2289건 · 소재 747개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -31,7 +31,7 @@
 | infographic | 3 | 0 | 8초 |
 | make_thumbnail | 105 | 0 | 2분 40초 |
 | promote_ready | 217 | 0 | 50초 |
-| rap_short | 18 | 0 | 6분 57초 |
+| rap_short | 19 | 0 | 7분 9초 |
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -48,6 +48,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:18 | PC | rap_short | rap_short.py make --index 659 | ✅ | 12초 |  |
 | 22:17 | PC | curate | curate.py --cutoff 7 --top 10 --review-max 10 --dry-run | ✅ | 3초 |  |
 | 22:14 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, rap_short.py) | ✅ |  |  |
 | 22:12 | PC | rap_short | rap_short.py beat --index 745 --bpm 92 --style trap | ✅ | 5초 |  |
