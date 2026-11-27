@@ -2295,3 +2295,4 @@
 {"id": "1795786294193-f94bb0", "time": "2026-11-27 22:31:34", "channel": "KO", "source": "PC", "kind": "rap_short", "title": "rap_short.py beat --index 747 --bpm 92 --style auto", "status": "success", "secs": 5.6, "detail": ""}
 {"id": "1795786486582-9015c5", "time": "2026-11-27 22:34:46", "channel": "KO", "source": "PC", "kind": "make_thumbnail", "title": "make_thumbnail.py --channel gonmauY --handle @gonmauY --only 747", "status": "success", "secs": 1.5, "detail": ""}
 {"id": "1795786630130-d94b49", "time": "2026-11-27 22:37:10", "channel": "KO", "source": "PC", "kind": "upload_to_youtube", "title": "upload_to_youtube.py --indexes 747 --daily-max 20", "status": "success", "secs": 143.5, "detail": ""}
+{"id": "1795787366314-1df552", "time": "2026-11-27 22:49:26", "channel": "KO", "source": "PC", "kind": "curate", "title": "curate.py --cutoff 7 --top 10 --review-max 10 --dry-run", "status": "success", "secs": 5.0, "detail": ""}
