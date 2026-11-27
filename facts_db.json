@@ -84286,5 +84286,269 @@
     "youtube_id": "MWLUbhg8LWE",
     "uploaded_at": "2026-11-27T11:27:58.176718+09:00",
     "thumb_scene": 3
+  },
+  {
+    "topic": "미국 국기의 별과 줄 배치 비밀",
+    "hook": "13줄짜리 줄무늬 위에 9줄로 배열된 50개의 별, 직접 셀 수 있다면?",
+    "body": "미국(United States of America)의 국기는 빨간색과 흰색이 번갈아 13줄로 이어지고, 파란 사각형 안에 50개의 흰색 별이 9개의 겹친 가로줄에 배치돼. 별은 6개 줄과 5개 줄이 교차하며 총 50개가 50주(州)를 상징한다.",
+    "twist": "사실 이 국기는 원래 군함과 요새를 구분하기 위한 군용 장비로 만들어졌다는 점!",
+    "caveat": "위 내용은 해당 위키백과 발췌문에 근거한 설명이다.",
+    "country": "미국",
+    "theme": "관습/예절",
+    "wiki_title": "Flag of the United States",
+    "source_url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States",
+    "verify_note": "Flag of the United States",
+    "confidence": "source",
+    "created_at": "2026-11-03T17:56:26.671403+00:00",
+    "status": "video_done",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-11",
+      "distinct": 8,
+      "concrete": 9,
+      "supported": 9,
+      "reason": "미국 국기의 별·줄 배치는 미국 고유의 상세 규격이며, 별 수·배열·13줄 의미 등 구체적 수치와 제도가 위키피디아에 명확히 기록돼 있음.",
+      "avg": 8.7,
+      "flags": []
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "narration": "Yo, 13줄 줄무늬 위에 9줄 별 50개, 셀 수 있네.\n빨강 흰색 교차 13줄 가로줄, 미국 깃발이네.\n파란 사각형 안에 흰 별 9줄 교차, 총 50개네.\n별은 6개 한 줄, 다음엔 5개씩 번갈아, 50개네.\n처음 목적은 오늘과 달라, 전쟁 신호했래.\n군함 요새 구분용 장비, 군용 신호 설계했래.\n색·별·줄무늬 조합으로 혼동 방지, 식별 높였었다.\n그 디자인, 이제 전 세계 미국 상징이 되었다.\n13줄과 50별, 역사의 조각임을 느껴라.",
+    "title_line1": "미국 국기 별·줄 비밀",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*별* 50개, 13줄"
+      },
+      {
+        "s": 3,
+        "text": "파란 사각형 안 *별*"
+      },
+      {
+        "s": 4,
+        "text": "*별* 6·5 교차 배치"
+      },
+      {
+        "s": 6,
+        "text": "군용 *신호* 깃발"
+      }
+    ],
+    "image_queries": [
+      "United States flag 13 stripes",
+      "United States flag red white stripes",
+      "United States flag blue canton stars",
+      "United States flag stars alternating 6 5",
+      "Historic American flag original purpose",
+      "Military signal flag navy ship",
+      "Naval signal flag color star stripes",
+      "American flag symbol worldwide",
+      "US flag 13 stripes stars",
+      "Flag of the United"
+    ],
+    "scene_count": 10,
+    "curate_why": "국기 별·줄 배치 숫자와 시각적 호기심",
+    "curate_top": false,
+    "redo_ts": 1795150902.6019175,
+    "hashtags": [
+      "국기",
+      "별무늬",
+      "군용신호",
+      "13줄",
+      "50주"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "미국 국기 구성",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "가로줄",
+          "value": 13.0,
+          "text": "13줄"
+        },
+        {
+          "label": "별줄",
+          "value": 9.0,
+          "text": "9줄"
+        },
+        {
+          "label": "별수",
+          "value": 50.0,
+          "text": "50개"
+        },
+        {
+          "label": "6개줄",
+          "value": 6.0,
+          "text": "6개"
+        },
+        {
+          "label": "5개줄",
+          "value": 5.0,
+          "text": "5개"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "A close-up view of a flag's canton showing a grid of 50 white stars arranged in nine staggered rows over a blue field, with the stars sharp and countable.",
+      "A wide-angle shot of a flag billowing in the wind, displaying thirteen alternating red and white horizontal stripes across the full length.",
+      "An overhead perspective of a flag highlighting the blue rectangle in the upper hoist corner, filled with white stars arranged in nine offset rows.",
+      "A side view of the flag's canton where the top row contains six stars, the next row five, alternating across the blue field, symbolizing fifty states.",
+      "A low-angle view focusing on the alternating six‑star and five‑star rows within the blue canton, emphasizing the pattern representing all fifty states.",
+      "A historical reenactment scene showing a 18th‑century naval yard where a newly designed flag is being hoisted for the first time, with sailors observing.",
+      "A dimly lit workshop interior where craftsmen stitch a flag prototype intended as a naval signal, surrounded by rolled canvas and wooden masts.",
+      "A battlefield camp at dusk with multiple flags of similar colors, a distinct American flag stands out due to its unique star‑stripe combination, preventing confusion.",
+      "A modern city plaza with a towering flagpole flying the American flag, crowds gathering, illustrating its evolution from military signal to global symbol.",
+      "A reflective museum exhibit displaying the flag alongside artifacts, inviting viewers to contemplate the story behind the 13 stripes and 50 stars as pieces of history."
+    ],
+    "ai_prompts_done": [
+      "",
+      "A wide-angle shot of a flag billowing in the wind, displaying thirteen alternating red and white horizontal stripes across the full length.",
+      "An overhead perspective of a flag highlighting the blue rectangle in the upper hoist corner, filled with white stars arranged in nine offset rows.",
+      "A side view of the flag's canton where the top row contains six stars, the next row five, alternating across the blue field, symbolizing fifty states.",
+      "A low-angle view focusing on the alternating six‑star and five‑star rows within the blue canton, emphasizing the pattern representing all fifty states.",
+      "A historical reenactment scene showing a 18th‑century naval yard where a newly designed flag is being hoisted for the first time, with sailors observing.",
+      "A dimly lit workshop interior where craftsmen stitch a flag prototype intended as a naval signal, surrounded by rolled canvas and wooden masts.",
+      "A battlefield camp at dusk with multiple flags of similar colors, a distinct American flag stands out due to its unique star‑stripe combination, preventing confusion.",
+      "A modern city plaza with a towering flagpole flying the American flag, crowds gathering, illustrating its evolution from military signal to global symbol.",
+      "A reflective museum exhibit displaying the flag alongside artifacts, inviting viewers to contemplate the story behind the 13 stripes and 50 stars as pieces of history."
+    ],
+    "narration_original": "13줄짜리 줄무늬 위에 9줄로 배열된 50개의 별, 직접 셀 수 있다면?  \n미국 국기는 빨간색과 흰색이 교차하는 13줄의 가로줄로 이루어집니다. 그 위에 파란 사각형이 자리 잡고, 그 안에 흰색 별이 9개의 가로줄에 교차하면서 총 50개가 놓여 있죠. 별은 6개가 한 줄에, 그 다음 줄엔 5개가 배치되는 식으로 번갈아 늘어서며, 각각은 현재의 50주, 즉 50개 주를 상징합니다.  \n\n그런데 이 깃발이 처음 만들어진 목적은 오늘과는 달랐습니다. 원래는 군함과 요새를 구분하기 위한 군용 신호용 장비로 설계된 것이었어요. 전쟁 중에 같은 색상의 깃발이 섞여 혼동을 일으키지 않도록, 색과 별, 줄무늬의 조합을 이용해 식별성을 높인 것이죠.  \n\n이렇게 군사적 필요에서 시작된 디자인이 오늘은 전 세계적으로 미국을 대표하는 상징이 되었습니다. 13줄과 50개의 별이 전하는 이야기를 떠올리면, 단순한 색채가 아니라 역사의 한 조각임을 느낄 수 있습니다.",
+    "rap": true,
+    "rap_of": 527,
+    "review_ok": true,
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "mat_hias",
+        "page": "https://pixabay.com/photos/usa-flag-america-states-white-red-3808026/",
+        "id": 3808026
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "JillWellington",
+        "page": "https://pixabay.com/photos/cookies-fourth-of-july-6354333/",
+        "id": 6354333
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "DreiKubik",
+        "page": "https://pixabay.com/photos/flag-california-4619425/",
+        "id": 4619425
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "janetrr",
+        "page": "https://pixabay.com/photos/flag-texas-flag-texas-star-state-1544223/",
+        "id": 1544223
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "dariasophia",
+        "page": "https://pixabay.com/photos/seattle-america-usa-ferris-wheel-3429902/",
+        "id": 3429902
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Squirrel_photos",
+        "page": "https://pixabay.com/photos/navy-battleship-gun-sailors-ship-7023854/",
+        "id": 7023854
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "Michael_Luenen",
+        "page": "https://pixabay.com/photos/usa-flag-american-flag-banner-1561757/",
+        "id": 1561757
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "oohhsnapp",
+        "page": "https://pixabay.com/photos/flag-america-usa-states-1291945/",
+        "id": 1291945
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "TechPhotoGal",
+        "page": "https://pixabay.com/photos/american-flag-flag-american-stars-2355872/",
+        "id": 2355872
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "u_w8tud0lp24",
+        "page": "https://pixabay.com/photos/woman-american-flag-flag-10577913/",
+        "id": 10577913
+      }
+    ],
+    "image_queries_done": [
+      "United States flag 13 stripes",
+      "United States flag red white stripes",
+      "United States flag blue canton stars",
+      "United States flag stars alternating 6 5",
+      "Historic American flag original purpose",
+      "Military signal flag navy ship",
+      "Naval signal flag color star stripes",
+      "American flag symbol worldwide",
+      "US flag 13 stripes stars",
+      "Flag of the United"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio\\0741_rap_v2.mp3",
+    "timing_path_v2": "audio\\0741_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0741_미국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0741_미국_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0741_미국.mp4",
+    "youtube_id": "RMme10VyVIw",
+    "uploaded_at": "2026-11-27T12:15:56.504249+09:00",
+    "thumb_opts": {
+      "scale1": 1.0,
+      "scale2": 1.0,
+      "angle": 0.0,
+      "dy": 0,
+      "tag": true,
+      "tag_text": "",
+      "tag_color": "#EB1414",
+      "tag_fg": "#FFFFFF",
+      "font": "gugi",
+      "band": "none",
+      "band_color": "#FFE200",
+      "band_opacity": 100,
+      "band_w": 90,
+      "band_h": 1.0,
+      "band_angle": -2.0,
+      "band_dy": 0,
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "text1": "",
+      "text2": "",
+      "colors1": {
+        "0": "#2bc7ec",
+        "1": "#ecca1c"
+      },
+      "sizes1": {},
+      "colors2": {
+        "0": "#e124a4",
+        "1": "#e124a4",
+        "2": "#e124a4"
+      },
+      "sizes2": {}
+    },
+    "thumb_scene": 10
   }
 ]
