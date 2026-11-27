@@ -10,7 +10,7 @@ import argparse, json, os, re, subprocess, sys, tempfile
 from pathlib import Path
 from common import split_sentences
 
-DROP = ["audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "srt_path", "video_path_v6", "status_v6", "youtube_id", "uploaded_at", "image_credits",
+DROP = ["thumb_opts", "audio_path_v2", "timing_path_v2", "tts_voice_v2", "status_tts_v2", "srt_path", "video_path_v6", "status_v6", "youtube_id", "uploaded_at", "image_credits",
         "image_queries_done", "image_source", "thumb_scene", "review_needed", "review_ok", "curate_score", "curate_note", "history", "jp_title", "en_title"]
 
 def numbers(s):

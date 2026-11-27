@@ -10,6 +10,7 @@ from pathlib import Path
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps, ImageStat
 import textfix  # noqa: F401
 
+import os
 from layout import W, H, _font, _fit_font, _circle_avatar
 from common import visual_dir
 import thumb_pop as TP
@@ -188,7 +189,11 @@ def make(idx, item, channel, handle, avatar, fallback_background):
     t2 = str(o.get("text2") if o.get("text2") is not None and str(o.get("text2")).strip() else (item.get("title_line2") or "")).strip()
     z1, z2 = o.get("sizes1") or {}, o.get("sizes2") or {}
     import fonts as _F
-    fp = _F.path(o.get("font")) or _F.role_path("thumb")
+    # 글씨체 우선순위: 영상별 지정 > 기본 설정(랩은 FONT_THUMB_RAP, 일반은 FONT_THUMB) > 기본값(랩=구기 각진체, 일반=동해독도)
+    if item.get("rap"):
+        fp = _F.path(o.get("font")) or _F.path(os.environ.get("FONT_THUMB_RAP", "").strip()) or _F.path("gugi")
+    else:
+        fp = _F.path(o.get("font")) or _F.role_path("thumb") or _F.path("dokdo")
     s1, s2 = float(o.get("scale1", 1.0) or 1.0), float(o.get("scale2", 1.0) or 1.0)
     f1 = _font(max(20, int(_fit_font(d, t1, W - 60, 240, 80, font_path=fp).size * s1)), True, fp)
     f2 = _font(max(20, int(_fit_font(d, t2, W - 110, 220, 76, font_path=fp).size * s2)), True, fp) if t2 else None
