@@ -113,6 +113,13 @@ def main():
             media = MediaFileUpload(path, mimetype="video/mp4", resumable=True)
             res = yt.videos().insert(part="snippet,status", body=body, media_body=media).execute()
         item["youtube_id"] = res["id"]
+        _pl = os.environ.get("YT_PLAYLIST")
+        if _pl is None:
+            try: _pl = json.loads(Path("playlists.json").read_text(encoding="utf-8")).get("shorts", "")
+            except Exception: _pl = ""
+        if _pl:
+            import playlist as _pls
+            _pls.add_to_named(yt, _pl, res["id"])
         if os.environ.get("YT_THUMBNAIL", "").lower() in ("on", "1", "true"):   # 썸네일 자동 설정 (토큰에 youtube.force-ssl 권한이 있어야 함)
             th = Path("thumbnails") / (Path(path).stem + ".png")
             if not th.exists():
