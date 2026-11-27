@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 22:19:25 (KST) · 기록 2289건 · 소재 747개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 22:33:16 (KST) · 기록 2295건 · 소재 748개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -13,7 +13,7 @@
 | apply_review | 217 | 0 | 57초 |
 | approve | 71 | 0 | 17초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 110 | 0 | 17시간 40분 |
+| build_video | 111 | 0 | 17시간 49분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -22,16 +22,16 @@
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 80 | 0 | 17초 |
-| fetch_images | 235 | 9 | 2시간 46분 |
+| fetch_images | 236 | 9 | 2시간 46분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 275 | 0 | 1시간 57분 |
 | generate_tts | 122 | 0 | 38분 12초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 105 | 0 | 2분 40초 |
+| make_thumbnail | 106 | 0 | 2분 42초 |
 | promote_ready | 217 | 0 | 50초 |
-| rap_short | 19 | 0 | 7분 9초 |
+| rap_short | 22 | 0 | 8분 45초 |
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -48,6 +48,12 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:31 | PC | rap_short | rap_short.py beat --index 747 --bpm 92 --style auto | ✅ | 5초 |  |
+| 22:31 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 747 | ✅ | 1초 |  |
+| 22:31 | PC | build_video | build_video.py --index 747 --channel gonmauY --handle @gonmauY | ✅ | 9분 5초 |  |
+| 22:22 | PC | rap_short | rap_short.py flow --index 747 --bpm 92 | ✅ | 1분 24초 |  |
+| 22:20 | PC | fetch_images | fetch_images.py --index 747 | ✅ | 43초 |  |
+| 22:20 | PC | rap_short | rap_short.py make --index 659 | ✅ | 6초 |  |
 | 22:18 | PC | rap_short | rap_short.py make --index 659 | ✅ | 12초 |  |
 | 22:17 | PC | curate | curate.py --cutoff 7 --top 10 --review-max 10 --dry-run | ✅ | 3초 |  |
 | 22:14 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, rap_short.py) | ✅ |  |  |
