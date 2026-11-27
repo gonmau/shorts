@@ -85553,5 +85553,232 @@
     "rap": true,
     "rap_of": 659,
     "review_ok": true
+  },
+  {
+    "topic": "러시아·일본, 네 개 섬을 두고 영유권 다툼",
+    "hook": "러시아와 일본이 같은 섬을 동시에 점령하고 있다!",
+    "body": "남부 쿠릴 열도(러시아: Southern Kurils, 일본: Northern Territories)에는 이투룹(Etorofu), 쿠나시리(Kunashiri), 시코탄(Shikotan), 하보마이(Habomai) 네 섬이 있다. 이 섬들은 홋카이도와 캄차카 반도 사이에 위치해 오호츠크해와 태평양을 가른다.",
+    "twist": "소련이 일방적으로 합병했지만 일본은 아직도 영유권을 포기하지 않는다.",
+    "caveat": "이 영유권 분쟁은 현재도 지속되고 있다.",
+    "country": "일본",
+    "theme": "영토/국경",
+    "wiki_title": "Kuril Islands dispute",
+    "source_url": "https://en.wikipedia.org/wiki/Kuril_Islands_dispute",
+    "source_excerpt": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast",
+    "verify_note": "Kuril Islands dispute",
+    "confidence": "source",
+    "created_at": "2026-11-13T14:19:00.910044+00:00",
+    "status": "video_done",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 7,
+      "concrete": 8,
+      "supported": 9,
+      "reason": "러시아·일본의 쿠릴 제도 영유권 분쟁은 구체적인 섬명·역사·현황이 명확히 문서화돼 있어 매우 구체적이고 지원된 내용이다.",
+      "avg": 8.0,
+      "flags": []
+    },
+    "curate_why": "네 섬 영유권·러·일 대립, 구체적 섬·숫자",
+    "curate_top": true,
+    "need": "curiosity",
+    "emotion": "caution",
+    "source_text": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast). They are claimed by Japan, which refers to them as its Northern Territories or Southern Chishima, and considers them part of the Nemuro Subprefecture of Hokkaido Prefecture.\nThe San Francisco Peace Treaty, signed between the Allies and Japan in 1951, states that Japan renounces \"all right, title and claim to the Kuril Islands\", but does not explicitly recognize the Soviet Union's sovereignty over them. Japan claims that at least some of the disputed islands are not a part of the Kuril Islands, and thus are not covered by the treaty. Russia maintains that the Soviet Union's sovereignty over the islands was recognized in post-war agreements. Japan and the Soviet Union ended their formal state of war with the Soviet–Japanese Joint Declaration of 1956 but did not sign a peace treaty. During talks leading to the joint declaration, the Soviet Union offered Japan the two smaller islands of Shikotan and the Habomai Islands in exchange for Japan renouncing all claims to the two larger islands of Iturup and Kunashir, but Japan declined the offer. This disagreement between the two-island offer made by the Soviet Union and Japan's demand of regaining two larger islands as well became the cornerstone for continuation of the dispute into the present day.\n== Background ==\nThe first Russo-Japanese agreement to deal with the status of Sakhalin and the Kuril Islands was the 1855 Treaty of Shimoda, which first established official relations between the Russian Empire and Tokugawa Japan. Article 2 of the Treaty of Shimoda, which provided for an agreement on borders, states \"Henceforth the borders between Russia and Japan will pass between the islands Iturup (Etorofu) and Urup (Uruppu). The whole island of Iturup belongs to Japan and the whole island Urup and the other Kuril Islands to the north constitute possessions of Russia\". The islands of Kunashiri, Shikotan and the Habomai Islands, all lying to the south of Iturup, are not explicitly mentioned in the treaty and were understood at the time to be a non-disputed part of Japan. The treaty also specified that the island of Sakhalin/Karafuto was not to be partitioned but was to remain under a joint Russo-Japanese condominium.\nIn the 1875 Treaty of Saint Petersburg, Russia and Japan agreed that Japan would give up all rights to Sakhalin in exchange for Russia giving up all rights to the Kuril Islands in favor of Japan. However, a controversy remains as to what constitutes the Kuril Islands, due to translation discrepancies in the French official text of that treaty.\nThe Russo-Japanese War of 1904–05 was a military disaster for Russia. The 1905 Treaty of Portsmouth, concluded at the end of this war, gave the southern half of Sakhalin Island to Japan.\nDuring the Russian Civil War following the October Revolution, Japan occupied parts of Russia's Far East initially as part of the Allied intervention, but did not formal",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 1번 문장 '1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬…' — 일본이 행정권을 행사한다는 근거 없음",
+        "근거 없음/틀림: 2번 문장 '이 섬들은 홋카이도와 캄차카 반도 사이, 오호츠크해와 …' — 일본이 실제 관리한다는 과장",
+        "근거 없음/틀림: 5번 문장 '그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 …' — 현장에 두 깃발이 있다는 근거 없음",
+        "근거 없음/틀림: 6번 문장 '즉, 동일한 섬 위에 두 개의 주권이 겹쳐 있는 상황이…' — 두 주권이 겹친다는 주장 근거 부족"
+      ],
+      "advice": [
+        "첫 문장이 김",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다.",
+      "sentences": 6,
+      "ground_done": true
+    },
+    "narration": "Yo, 1945년 전쟁 말기 소련이 일방 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이, 지금도 러일 행정권 겹쳐 있네.\n그 섬들 홋카이도와 캄차카 사이, 오호츠크해·태평양 가르는 요충지라네, 두 나라가 동시에 다스려, 이게 현실이 있네.\n1951년 샌프란시스코 조약서, 일본은 쿠릴 권리 포기했지만 주권 명시 없어 논란은 계속라게.\n1956년 소련‑일본 선언, 전쟁은 끝났지만 평화조약 못 맺고, 시코탄·하보마이 제안했지만 일본은 반환 요구, 거절했라게.\n오늘 현장에 러시아 행정 건물, 일본식 표지판 동시에 서고, 두 깃발 나란히 보이는 걸 목격했어, 이게 현실이야 다.\n같은 섬 위에 두 주권 겹쳐, 아직도 계속되는 상황, 말이야 다.",
+    "title_line1": "러일 네 섬 영유권",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "양국 행정 *충돌*"
+      },
+      {
+        "s": 2,
+        "text": "전략 *쿠릴*"
+      },
+      {
+        "s": 4,
+        "text": "*이투룹* 요구"
+      },
+      {
+        "s": 6,
+        "text": "두 주권 *동시*"
+      }
+    ],
+    "image_queries": [
+      "Russian and Japanese government buildings",
+      "strategic Kuril Islands view",
+      "San Francisco peace treaty",
+      "Iturup island coast flags",
+      "dual Russian Japanese flags",
+      "two sovereignty flags together",
+      "Kuril Islands dispute",
+      "Japan landmark",
+      "Japan culture",
+      "Japan street"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "이투룹섬",
+      "시코탄섬",
+      "샌프란시스코조약",
+      "러일분쟁"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "주요 연도",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1945년",
+          "value": null,
+          "text": "소련 합병"
+        },
+        {
+          "label": "1951년",
+          "value": null,
+          "text": "샌프란시스코 조약"
+        },
+        {
+          "label": "1956년",
+          "value": null,
+          "text": "공동 선언"
+        }
+      ],
+      "none": false
+    },
+    "redo_ts": 1795474750.5690944,
+    "narration_original": "1945년 전쟁 말기에 소련이 일방적으로 합병한 네 섬, 이투룹·쿠나시리·시코탄·하보마이는 현재도 러시아와 일본이 각각 행정권을 행사하고 있습니다. 이 섬들은 홋카이도와 캄차카 반도 사이, 오호츠크해와 태평양을 가르는 전략적 요충지이며, 러시아는 사할린 지방의 남부 쿠릴 구역으로, 일본은 홋카이도 네무로 부속 영토로 관리합니다.  \n\n전후 1951년 샌프란시스코 평화조약에서 일본은 “쿠릴 제도에 대한 모든 권리·청구를 포기”했지만, 조약 본문에 소련(현 러시아)의 주권을 명시하지 않아 해석 논란이 지속됩니다. 1956년 소련‑일본 공동 선언으로 전쟁 상태는 종식됐지만 평화조약은 체결되지 않았고, 소련은 시코탄·하보마이를 일본에 제안했으나 일본은 이투룹·쿠나시리 반환을 요구해 거부했습니다.  \n\n그 결과 오늘날 현장에서는 러시아 행정 건물과 일본식 표지판이 동시에 존재하고, 두 나라 깃발이 나란히 보이는 모습이 목격됩니다. 즉, 동일한 섬 위에 두 개의 주권이 겹쳐 있는 상황이 지속되고 있는 것입니다.",
+    "rap": true,
+    "rap_of": 659,
+    "review_ok": true,
+    "ai_prompts": [
+      "Aerial view of four barren islands with rugged cliffs and sparse pine trees, misty sea surrounding them, early morning light, shot from a high drone perspective, no people visible.",
+      "Low-angle shot from the shoreline of one island, waves crashing against rocky coast, Soviet-era concrete bunker partially hidden behind tundra vegetation, clouds looming overhead.",
+      "Wide panoramic scene showing the strait between Hokkaido and Kamchatka, icy waters of the Sea of Okhotsk merging with the Pacific, two naval fleets on opposite horizons, viewed from a distant hill.",
+      "Bird's-eye view of the strategic sea corridor, dotted with small islands and military radar domes, contrasting Russian and Japanese patrol boats navigating the same waters, under a clear sky.",
+      "Vintage style illustration of a 1951 diplomatic conference room, empty wooden table with scattered treaty documents, dim chandelier lighting, shadows suggesting unresolved debate, no faces shown.",
+      "Close-up of a weathered parchment on a desk, inked signatures blurred, the San Francisco Treaty text partially visible, candlelight flickering, emphasizing the ambiguous sovereignty clause.",
+      "Mid-century Soviet-Japanese diplomatic meeting recreated, two chairs opposite an empty podium, Soviet flag and Japanese flag on opposite walls, a map of the islands on a stand, captured from a side angle.",
+      "Overhead view of a negotiation table with empty seats, a single Soviet military officer's hat and a Japanese diplomatic briefcase placed opposite each other, stark lighting highlighting tension.",
+      "Modern-day island scene with a Russian administrative building beside a Japanese-style signpost, both national flags flying side by side, shot from a street-level perspective with clouds overhead.",
+      "Ground-level perspective of the same island square, Russian and Japanese flags fluttering on adjacent poles, a lone empty bench between them, distant mountains framing the backdrop, no people present."
+    ],
+    "ai_prompts_done": [
+      "Aerial view of four barren islands with rugged cliffs and sparse pine trees, misty sea surrounding them, early morning light, shot from a high drone perspective, no people visible.",
+      "Low-angle shot from the shoreline of one island, waves crashing against rocky coast, Soviet-era concrete bunker partially hidden behind tundra vegetation, clouds looming overhead.",
+      "Wide panoramic scene showing the strait between Hokkaido and Kamchatka, icy waters of the Sea of Okhotsk merging with the Pacific, two naval fleets on opposite horizons, viewed from a distant hill.",
+      "Bird's-eye view of the strategic sea corridor, dotted with small islands and military radar domes, contrasting Russian and Japanese patrol boats navigating the same waters, under a clear sky.",
+      "Vintage style illustration of a 1951 diplomatic conference room, empty wooden table with scattered treaty documents, dim chandelier lighting, shadows suggesting unresolved debate, no faces shown.",
+      "Close-up of a weathered parchment on a desk, inked signatures blurred, the San Francisco Treaty text partially visible, candlelight flickering, emphasizing the ambiguous sovereignty clause.",
+      "Mid-century Soviet-Japanese diplomatic meeting recreated, two chairs opposite an empty podium, Soviet flag and Japanese flag on opposite walls, a map of the islands on a stand, captured from a side angle.",
+      "Overhead view of a negotiation table with empty seats, a single Soviet military officer's hat and a Japanese diplomatic briefcase placed opposite each other, stark lighting highlighting tension.",
+      "Modern-day island scene with a Russian administrative building beside a Japanese-style signpost, both national flags flying side by side, shot from a street-level perspective with clouds overhead.",
+      "Ground-level perspective of the same island square, Russian and Japanese flags fluttering on adjacent poles, a lone empty bench between them, distant mountains framing the backdrop, no people present."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Aerial view of four barren islands with rugged cliffs and sparse pine trees, mis"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Low-angle shot from the shoreline of one island, waves crashing against rocky co"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Wide panoramic scene showing the strait between Hokkaido and Kamchatka, icy wate"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Bird's-eye view of the strategic sea corridor, dotted with small islands and mil"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Vintage style illustration of a 1951 diplomatic conference room, empty wooden ta"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Close-up of a weathered parchment on a desk, inked signatures blurred, the San F"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mid-century Soviet-Japanese diplomatic meeting recreated, two chairs opposite an"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Overhead view of a negotiation table with empty seats, a single Soviet military "
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Modern-day island scene with a Russian administrative building beside a Japanese"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ground-level perspective of the same island square, Russian and Japanese flags f"
+      }
+    ],
+    "image_queries_done": [
+      "Russian and Japanese government buildings",
+      "strategic Kuril Islands view",
+      "San Francisco peace treaty",
+      "Iturup island coast flags",
+      "dual Russian Japanese flags",
+      "two sovereignty flags together",
+      "Kuril Islands dispute",
+      "Japan landmark",
+      "Japan culture",
+      "Japan street"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "audio\\0747_rap_v2.mp3",
+    "timing_path_v2": "audio\\0747_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0747_일본.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0747_일본_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0747_일본.mp4"
   }
 ]
