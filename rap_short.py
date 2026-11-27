@@ -148,9 +148,41 @@ def make(a):
     new.update(narration="\n".join(l if re.search(r"[.!?]$", l) else l + "." for l in rap), narration_original=it.get("narration", ""), status="scripted",
                rap=True, rap_of=a.index, title_line2="랩으로 듣는 이야기", review_ok=True)
     db.append(new); G.save_db(db); n = len(db) - 1
+    reuse_images(db, a.index, n)
     print(f"랩 소재 생성: {n} (원본 {a.index})\n")
     for o, r in zip(sents, rap): print(f"  {o[:40]}\n  🎤 {r}\n")
     print(f"다음: fetch_images.py --index {n} / generate_tts.py --index {n} (TTS_RATE=+8%) / build_video.py --index {n} / make_thumbnail --start {n} ... 영상 후 rap_short.py beat --index {n}")
+
+CACHE_DIR = Path(__file__).resolve().parent / "rap_cache"
+def reuse_images(db, src, n):
+    """원본의 장면 이미지(Cloudflare 한도를 쓴 것)를 복제 소재 폴더에 복사해 다시 받지 않게 한다. 원본 폴더가 없으면 이전 랩 실행이 남긴 rap_cache/<원본번호> 를 쓴다."""
+    import shutil
+    from common import visual_dir
+    base = Path(__file__).resolve().parent
+    for cand in (visual_dir(base, src, db[src]), CACHE_DIR / str(src)):
+        files = sorted(Path(cand).glob("scene_*.png")) if Path(cand).exists() else []
+        if files:
+            dst = visual_dir(base, n, db[n]); dst.mkdir(parents=True, exist_ok=True)
+            for f in files: shutil.copy2(f, dst / f.name)
+            cr = Path(cand) / "credits.json"
+            if cr.exists(): shutil.copy2(cr, dst / cr.name)
+            if db[src].get("image_credits"): db[n]["image_credits"] = db[src]["image_credits"]
+            from generate_script import save_db; save_db(db)
+            print(f"  장면 이미지 {len(files)}장 재사용 ({cand})"); return True
+    print("  재사용할 장면 이미지가 없어 새로 받습니다"); return False
+
+def cache_images(a):
+    """장면 이미지를 rap_cache/<원본번호> 에 보관 (다음 랩 실행에서 재사용)."""
+    import shutil
+    import generate_script as G
+    from common import visual_dir
+    db = G.load_db(); it = db[a.index]; base = Path(__file__).resolve().parent
+    src = it.get("rap_of"); fol = visual_dir(base, a.index, it)
+    files = sorted(fol.glob("scene_*.png")) if fol.exists() else []
+    if src is None or not files: print("보관할 이미지 없음"); return
+    d = CACHE_DIR / str(src); d.mkdir(parents=True, exist_ok=True)
+    for f in files: shutil.copy2(f, d / f.name)
+    print(f"장면 이미지 {len(files)}장 보관: {d}")
 
 def _hz(m): return 440.0 * 2 ** ((m - 69) / 12.0)
 
@@ -351,6 +383,7 @@ def main():
     fl = sp.add_parser("flow"); fl.add_argument("--index", type=int, required=True); fl.add_argument("--bpm", type=int, default=92)
     al = sp.add_parser("align"); al.add_argument("--index", type=int, required=True); al.add_argument("--bpm", type=int, default=92)
     b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92); b.add_argument("--style", default="auto", help="auto|boombap|trap|lofi|dark|file:<bgm폴더 파일명>")
-    a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat}[a.cmd](a)
+    c = sp.add_parser("cache"); c.add_argument("--index", type=int, required=True)
+    a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat, "cache": cache_images}[a.cmd](a)
 if __name__ == "__main__":
     main()
