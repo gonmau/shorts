@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 21:58:08 (KST) · 기록 2278건 · 소재 745개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 22:13:57 (KST) · 기록 2286건 · 소재 746개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -13,7 +13,7 @@
 | apply_review | 217 | 0 | 57초 |
 | approve | 71 | 0 | 17초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 109 | 0 | 17시간 33분 |
+| build_video | 110 | 0 | 17시간 40분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -22,16 +22,16 @@
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 80 | 0 | 17초 |
-| fetch_images | 234 | 9 | 2시간 45분 |
+| fetch_images | 235 | 9 | 2시간 46분 |
 | generate_culture_facts | 19 | 0 | 40분 33초 |
 | generate_script | 275 | 0 | 1시간 57분 |
 | generate_tts | 122 | 0 | 38분 12초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 104 | 0 | 2분 39초 |
+| make_thumbnail | 105 | 0 | 2분 40초 |
 | promote_ready | 217 | 0 | 50초 |
-| rap_short | 15 | 0 | 5분 53초 |
+| rap_short | 18 | 0 | 6분 57초 |
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
@@ -40,7 +40,7 @@
 | upload_to_youtube | 39 | 0 | 28분 50초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
-| 코드업데이트 | 130 | 0 | 0초 |
+| 코드업데이트 | 132 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -48,6 +48,14 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:12 | PC | rap_short | rap_short.py beat --index 745 --bpm 92 --style trap | ✅ | 5초 |  |
+| 22:11 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 745 | ✅ | 1초 |  |
+| 22:11 | PC | build_video | build_video.py --index 745 --channel gonmauY --handle @gonmauY | ✅ | 6분 21초 |  |
+| 22:05 | PC | rap_short | rap_short.py flow --index 745 --bpm 92 | ✅ | 51초 |  |
+| 22:04 | PC | fetch_images | fetch_images.py --index 745 | ✅ | 51초 |  |
+| 22:03 | PC | rap_short | rap_short.py make --index 658 | ✅ | 6초 |  |
+| 22:02 | PC | 코드업데이트 | gonmau/shorts: 2개 (img_cache.py, rap_short.py) | ✅ |  |  |
+| 21:58 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, rap_short.py) | ✅ |  |  |
 | 21:55 | PC | rap_short | rap_short.py beat --index 744 --bpm 92 | ✅ | 3초 |  |
 | 21:55 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 744 | ✅ | 1초 |  |
 | 21:55 | PC | build_video | build_video.py --index 744 --channel gonmauY --handle @gonmauY | ✅ | 4분 46초 |  |
