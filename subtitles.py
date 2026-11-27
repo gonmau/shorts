@@ -185,7 +185,7 @@ def panel_alpha(luma, std):
     return max(0.5, min(0.86, a))
 
 
-def render_caption(text, luma=90.0, std=30.0, full=None):
+def render_caption(text, luma=90.0, std=30.0, full=None, pop=1.0):
     """BOX_W x CAP_H RGBA 배열. 패널은 아래쪽 기준으로 놓여 1줄/2줄 모두 바닥선이 같다.
     full 이 있으면(랩 자막) 전체 줄의 자리를 기준으로 패널/줄바꿈을 잡고 text(앞부분)의 단어만 보여준다. 가장 나중에 나온 단어는 노란색."""
     font = _font()
@@ -209,14 +209,27 @@ def render_caption(text, luma=90.0, std=30.0, full=None):
     y = y0 + PAD_Y
     if full:
         shown = len(str(text).split()); n = 0
+        pop_item = None
         for l in lines:
             x = (BOX_W - _w(l, font)) / 2
             for wd in l.split():
                 n += 1
                 if n <= shown:
-                    d.text((x, y), wd, font=font, fill=(255, 214, 10, 255) if n == shown else (255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
+                    if n == shown and pop > 1.001:       # 방금 나온 단어: 크게 튀었다가 제자리로 (팡!)
+                        pop_item = (x, y, wd)
+                    else:
+                        d.text((x, y), wd, font=font, fill=(255, 214, 10, 255) if n == shown else (255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
                 x += _w(wd + " ", font)
             y += lh
+        if pop_item:
+            px, py, wd = pop_item
+            ww = int(_w(wd, font)) + 24; hh = int(lh) + 24
+            lay = Image.new("RGBA", (ww, hh), (0, 0, 0, 0))
+            ImageDraw.Draw(lay).text((12, 12), wd, font=font, fill=(255, 214, 10, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
+            nw, nh = int(ww * pop), int(hh * pop)
+            lay = lay.resize((nw, nh), Image.Resampling.BICUBIC)
+            cx, cy = px - 12 + ww / 2, py - 12 + hh / 2
+            img.alpha_composite(lay, (max(0, int(px - 12)), max(0, int(cy - nh / 2))))   # 왼쪽 끝 기준: 앞 단어를 가리지 않고 오른쪽(빈 자리)으로 커짐
         return np.asarray(img, dtype=np.uint8).copy()
     for l in lines:
         x = (BOX_W - _w(l, font)) / 2

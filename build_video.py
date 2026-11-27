@@ -942,10 +942,18 @@ def build_one(idx, item):
             luma = max(stats[k][0] for k in idxs)
             std = max(stats[k][1] for k in idxs)
             print(f"  자막 {start:5.1f}s~{end:5.1f}s (밝기 {luma:3.0f}): {text}")
+            _full = subtitles.FULL.get((round(start, 3), text))
+            _t = start
+            if _full and os.environ.get("RAP_POP", "1") != "0" and end - start > 0.25:
+                for _sc in (1.5, 1.25, 1.1):         # 단어가 나올 때 3프레임 동안 크게→작게 (팡!)
+                    _d = min(1 / 24.0, end - _t)
+                    caption_clips.append(ImageClip(subtitles.render_caption(text, luma, std, full=_full, pop=_sc))
+                                         .set_start(_t).set_duration(_d).set_position((IMG_BOX[0], cap_y)))
+                    _t += _d
             cc = (
-                ImageClip(subtitles.render_caption(text, luma, std, full=subtitles.FULL.get((round(start, 3), text))))
-                .set_start(start)
-                .set_duration(end - start)
+                ImageClip(subtitles.render_caption(text, luma, std, full=_full))
+                .set_start(_t)
+                .set_duration(max(0.02, end - _t))
                 .set_position((IMG_BOX[0], cap_y))
             )
             caption_clips.append(cc)
