@@ -1,0 +1,39 @@
+# 재생목록 새로 만들기 (선택: 영상 ID 바로 추가)
+name: culture-playlist
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "재생목록 제목"
+        required: true
+      desc:
+        description: "설명 (선택)"
+        default: ""
+      privacy:
+        description: "공개 상태"
+        type: choice
+        options: [public, unlisted, private]
+        default: public
+      videos:
+        description: "넣을 영상 ID (쉼표로 구분, 선택)"
+        default: ""
+jobs:
+  playlist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install google-api-python-client google-auth google-auth-oauthlib
+      - name: 재생목록 생성
+        env:
+          T: ${{ inputs.title }}
+          D: ${{ inputs.desc }}
+          P: ${{ inputs.privacy }}
+          V: ${{ inputs.videos }}
+        run: python playlist.py create --title "$T" --desc "$D" --privacy "$P" --videos "$V"
