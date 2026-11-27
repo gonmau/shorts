@@ -170,6 +170,13 @@ def reuse_images(db, src, n):
         got = img_cache.restore_item(CACHE_DIR / str(src), dst) if (CACHE_DIR / str(src)).exists() else 0; where = CACHE_DIR / str(src)
     if got:
         if db[src].get("image_credits"): db[n]["image_credits"] = db[src]["image_credits"]
+        try:    # 랩 가사로 장면 프롬프트가 달라져 'AI 이미지가 바뀐 장면'으로 보이면 복사한 이미지를 지우고 다시 만든다 -> 복사본의 기준 프롬프트를 지금 것으로 맞춰 둔다
+            import ai_images
+            cur = ai_images.make_prompts(db[n])
+            db[n]["ai_prompts_done"] = list(cur)
+            if db[src].get("image_queries_done") is not None: db[n]["image_queries_done"] = list(db[src]["image_queries_done"])
+        except Exception as e:
+            print(f"  (프롬프트 기준 맞춤 건너뜀: {type(e).__name__}: {e})")
         from generate_script import save_db; save_db(db)
         print(f"  장면 이미지 {got}장 재사용 ({where})"); return True
     print("  재사용할 장면 이미지가 없어 새로 받습니다"); return False
