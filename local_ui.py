@@ -4005,6 +4005,9 @@ with TR:
     rap_src = r1.number_input("원본 소재 번호", 0, 9999, 649, key="rap_src")
     rap_bpm = r2.number_input("비트 BPM", 70, 120, 92, key="rap_bpm", help="80~100 권장. 가사가 잘리면 낮추고, 늘어지면 올려 보세요")
     rap_voice = r3.selectbox("목소리 (Supertonic)", ["M3", "M2", "M4", "M1", "M5", "F1", "F2", "F3", "F4", "F5"], key="rap_voice", help="랩은 남성 목소리(M2~M4) 추천")
+    import rap_short as _RS
+    _styles = ["auto", *_RS.STYLES, *[f"file:{p.name}" for p in _RS.bgm_files()]]
+    rap_style = st.selectbox("🥁 비트 스타일", _styles, key="rap_style", help="auto = 소재마다 다른 비트(같은 소재는 항상 같음). bgm/ 폴더에 mp3·wav를 넣으면 file:이름 으로 고를 수 있어요")
     rap_flow = st.radio("랩 방식", ["word (단어별 끊어 읽기, 추천)", "line (문장 단위 박자 맞춤)"], horizontal=True, key="rap_flow")
     rap_upload = st.checkbox("끝나면 유튜브에 비공개 업로드", False, key="rap_up")
     if st.button("🎤 랩 버전 만들기", type="primary", key="rap_go"):
@@ -4022,7 +4025,7 @@ with TR:
                 else:
                     steps += [("generate_tts.py", "--index", str(_n)), ("rap_short.py", "align", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
                 steps += [("build_video.py", "--index", str(_n), "--channel", CH, "--handle", HD), ("make_thumbnail.py", "--channel", CH, "--handle", HD, "--start", str(_n)),
-                          ("rap_short.py", "beat", "--index", str(_n), "--bpm", str(int(rap_bpm)))]
+                          ("rap_short.py", "beat", "--index", str(_n), "--bpm", str(int(rap_bpm)), "--style", rap_style)]
                 if rap_upload:
                     steps.append(("upload_to_youtube.py", "--indexes", str(_n)))
                 chain(steps)

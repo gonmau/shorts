@@ -20,6 +20,9 @@ on:
       bpm:
         description: "비트 BPM (80~100 권장)"
         default: "92"
+      style:
+        description: "비트 스타일 (auto=소재마다 다르게 / boombap / trap / lofi / dark / file:파일명 = bgm/ 폴더 음원)"
+        default: "auto"
       flow:
         description: "랩 방식 (word=단어별로 16분음표에 얹는 끊어 읽기, line=문장 단위 박자 맞춤)"
         type: choice
@@ -48,6 +51,7 @@ jobs:
       PYTHONUNBUFFERED: "1"
       SRC: ${{ github.event.inputs.source }}
       BPM: ${{ github.event.inputs.bpm || '92' }}
+      BEAT_STYLE: ${{ github.event.inputs.style || 'auto' }}
       SPEED: ${{ github.event.inputs.speed || '+8%' }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -98,7 +102,7 @@ jobs:
       - name: 썸네일 만들기
         run: python make_thumbnail.py --channel "${{ vars.CHANNEL_NAME || 'gonmauY' }}" --handle "@gonmauY" --start "$NEW"
       - name: 비트 입히기
-        run: python rap_short.py beat --index "$NEW" --bpm "$BPM"
+        run: python rap_short.py beat --index "$NEW" --bpm "$BPM" --style "$BEAT_STYLE"
       - name: 유튜브 비공개 업로드
         if: ${{ github.event.inputs.upload == 'true' && env.YT_REFRESH_TOKEN != '' }}
         env:

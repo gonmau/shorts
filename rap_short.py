@@ -152,8 +152,36 @@ def make(a):
     for o, r in zip(sents, rap): print(f"  {o[:40]}\n  🎤 {r}\n")
     print(f"다음: fetch_images.py --index {n} / generate_tts.py --index {n} (TTS_RATE=+8%) / build_video.py --index {n} / make_thumbnail --start {n} ... 영상 후 rap_short.py beat --index {n}")
 
-def beat_track(dur, sr, bpm, voice_rms):
+def _hz(m): return 440.0 * 2 ** ((m - 69) / 12.0)
+
+# 스타일별 비트: kick/snare 위치(박 단위), hat(한 마디 16칸 중 칠 칸 → 세기), bass 근음(MIDI), chords(MIDI 3화음), 믹스 비율
+STYLES = {
+    "boombap": dict(kick=(0, 1.5, 2.5), snare=(1, 3), hat={k: (1.0 if k % 4 == 0 else (0.7 if k % 2 == 0 else 0.45)) for k in range(16)}, swing=0.012,
+                    bass=[33, 33, 36, 31], chords=[(57, 60, 64), (57, 60, 64), (60, 64, 67), (55, 59, 62)], drum=1.0, pad=0.22, vinyl=1.0, bass_len=2.0),
+    "trap":    dict(kick=(0, 1.75, 2.5, 3.25), snare=(2,), hat={**{k: (0.9 if k % 2 == 0 else 0.4) for k in range(16)}, 13: 0.7, 14: 0.8, 15: 0.9}, swing=0.0,
+                    bass=[29, 29, 32, 27], chords=[(53, 56, 60), (53, 56, 60), (56, 60, 63), (51, 55, 58)], drum=1.0, pad=0.16, vinyl=0.2, bass_len=1.0),
+    "lofi":    dict(kick=(0, 2.5), snare=(1, 3), hat={k: 0.5 for k in range(0, 16, 2)}, swing=0.02,
+                    bass=[36, 33, 38, 31], chords=[(60, 64, 67, 71), (57, 60, 64, 67), (62, 65, 69, 72), (55, 59, 62, 65)], drum=0.6, pad=0.42, vinyl=2.0, bass_len=2.0),
+    "dark":    dict(kick=(0, 0.75, 2, 2.5), snare=(1, 3), hat={k: (0.9 if k % 4 == 0 else 0.35) for k in range(16)}, swing=0.0,
+                    bass=[38, 34, 29, 36], chords=[(50, 53, 57), (46, 50, 53), (53, 57, 60), (48, 52, 55)], drum=1.0, pad=0.3, vinyl=0.5, bass_len=2.0),
+}
+BGM_DIR = Path(__file__).resolve().parent / "bgm"
+def bgm_files():
+    return sorted(p for p in BGM_DIR.glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a", ".ogg", ".flac")) if BGM_DIR.exists() else []
+def pick_style(style, index):
+    """'auto' 는 소재 번호로 고정해 고른다(같은 소재는 다시 만들어도 같은 비트). bgm/ 폴더에 음원이 있으면 후보에 포함."""
+    names = list(STYLES) + [f"file:{p.name}" for p in bgm_files()]
+    if style in (None, "", "auto"): return names[index % len(names)]
+    return style
+
+def beat_track(dur, sr, bpm, voice_rms, style="boombap"):
     import numpy as np
+    if style.startswith("file:"):
+        fp = BGM_DIR / style[5:]
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-stream_loop", "-1", "-i", str(fp), "-t", f"{dur:.3f}", "-af", f"afade=t=in:d=0.5,afade=t=out:st={max(0, dur - 1.2):.2f}:d=1.2", "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+        x = np.frombuffer(raw, dtype=np.float32); x = np.pad(x, (0, max(0, int(dur * sr) - len(x))))[:int(dur * sr)]
+        return x * (voice_rms * 0.35 / (float(np.sqrt((x ** 2).mean())) or 1.0))
+    P = STYLES.get(style) or STYLES["boombap"]
     n = int(dur * sr); t = np.arange(n) / sr; out = np.zeros(n, dtype=np.float32); bt = 60.0 / bpm; rnd = np.random.RandomState(7)
     def add(at, wave, g=1.0):
         i = int(at * sr)
@@ -161,28 +189,26 @@ def beat_track(dur, sr, bpm, voice_rms):
     tk = np.arange(int(.30 * sr)) / sr; kick = (np.sin(2 * np.pi * (45 + 130 * np.exp(-tk * 30)) * tk) * np.exp(-tk * 8) * 1.3).astype(np.float32)
     ts = np.arange(int(.22 * sr)) / sr; snare = ((rnd.randn(len(ts)) * 0.8 + np.sin(2 * np.pi * 185 * ts) * 0.5) * np.exp(-ts * 20)).astype(np.float32)
     th = np.arange(int(.045 * sr)) / sr; hat = (rnd.randn(len(th)) * np.exp(-th * 100) * 0.4).astype(np.float32)
-    bass = [55.0, 55.0, 65.41, 49.0]                       # A1 A1 C2 G1 (마이너)
     bars = int(dur / (4 * bt)) + 2
     for bar in range(bars):
         b0 = bar * 4 * bt
-        for k in (0, 1.5, 2.5): add(b0 + k * bt, kick)      # 붐뱁 킥: 1, 2.5, 3.5박
-        for k in (1, 3): add(b0 + k * bt, snare)            # 2, 4박 스네어
-        for k in range(16): add(b0 + k * bt / 4 + (0.012 if k % 2 else 0), hat, 1.0 if k % 4 == 0 else (0.7 if k % 2 == 0 else 0.45))   # 16분 하이햇 + 스윙
-        f = bass[bar % 4]; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0
-        env = 0.55 + 0.45 * np.exp(-(tt % (2 * bt)) * 2.5)
+        for k in P["kick"]: add(b0 + k * bt, kick, P["drum"])
+        for k in P["snare"]: add(b0 + k * bt, snare, P["drum"])
+        for k, g in P["hat"].items(): add(b0 + k * bt / 4 + (P["swing"] if k % 2 else 0), hat, g * P["drum"])
+        f = _hz(P["bass"][bar % 4]); m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0
+        env = 0.55 + 0.45 * np.exp(-(tt % (P["bass_len"] * bt)) * 2.5)
         out[m] += (np.sin(2 * np.pi * f * tt) * 0.55 * env).astype(np.float32)
-    # 로파이 코드 패드(전자피아노 느낌의 FM) + 약한 바이닐 노이즈
-    chords = [(220.0, 261.63, 329.63), (220.0, 261.63, 329.63), (261.63, 329.63, 392.0), (196.0, 246.94, 293.66)]   # Am Am C G
-    pad = np.zeros(n, dtype=np.float32)
+    pad = np.zeros(n, dtype=np.float32)       # 전자피아노 느낌의 FM 코드 패드
     for bar in range(bars):
         b0 = bar * 4 * bt; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0; env = np.exp(-tt * 1.1) * 0.6 + 0.4
-        for f in chords[bar % 4]:
+        for mn in P["chords"][bar % 4]:
+            f = _hz(mn)
             pad[m] += (np.sin(2 * np.pi * f * tt + 1.5 * np.sin(2 * np.pi * f * 2 * tt) * np.exp(-tt * 3)) * env * 0.18).astype(np.float32)
     k = np.ones(int(sr * 0.0004) + 1) / (int(sr * 0.0004) + 1); pad = np.convolve(pad, k, "same").astype(np.float32)
-    vinyl = (rnd.randn(n) * 0.02 * (rnd.rand(n) > 0.995)).astype(np.float32)
+    vinyl = (rnd.randn(n) * 0.02 * (rnd.rand(n) > 0.995)).astype(np.float32) * P["vinyl"]
     rms = float(np.sqrt((out ** 2).mean())) or 1.0
     out = out * (voice_rms * 0.55 / rms); prms = float(np.sqrt((pad ** 2).mean())) or 1.0
-    return out + pad * (voice_rms * 0.22 / prms) + vinyl * voice_rms
+    return out + pad * (voice_rms * P["pad"] / prms) + vinyl * voice_rms
 
 def align(a):
     """각 가사 줄을 비트 격자(2박 단위)에 맞게 늘이고/줄이고 줄 사이에 비트용 여백을 둬서 박자에 올라타게 한다. 음성 파일과 timing json 을 덮어쓴다(원본은 _orig 로 보관)."""
@@ -312,18 +338,19 @@ def beat(a):
     sr = 44100
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", vp, "-vn", "-ac", "2", "-ar", str(sr), "-f", "f32le", "-"], capture_output=True, check=True).stdout
     v = np.frombuffer(raw, dtype=np.float32).reshape(-1, 2); dur = len(v) / sr; rms = float(np.sqrt((v ** 2).mean())) or 0.1
-    b = beat_track(dur, sr, a.bpm, rms)[:, None]; mix = np.clip(v + b, -1, 1).astype(np.float32)
+    sty = pick_style(getattr(a, "style", "auto"), a.index); print(f"비트 스타일: {sty}")
+    b = beat_track(dur, sr, a.bpm, rms, sty)[:, None]; mix = np.clip(v + b, -1, 1).astype(np.float32)
     out = str(Path(vp).with_name(Path(vp).stem + "_rap.mp4"))
     with tempfile.NamedTemporaryFile(suffix=".raw", delete=False) as f: f.write(mix.tobytes()); tmp = f.name
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", vp, "-f", "f32le", "-ar", str(sr), "-ac", "2", "-i", tmp, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", out], check=True)
-    os.unlink(tmp); it["video_path_beatless"] = vp; it["video_path_v6"] = out; G.save_db(db); print(f"비트 입힘({a.bpm}bpm): {out}")
+    os.unlink(tmp); it["video_path_beatless"] = vp; it["video_path_v6"] = out; G.save_db(db); print(f"비트 입힘({sty}, {a.bpm}bpm): {out}")
 
 def main():
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
     m = sp.add_parser("make"); m.add_argument("--index", type=int, required=True)
     fl = sp.add_parser("flow"); fl.add_argument("--index", type=int, required=True); fl.add_argument("--bpm", type=int, default=92)
     al = sp.add_parser("align"); al.add_argument("--index", type=int, required=True); al.add_argument("--bpm", type=int, default=92)
-    b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92)
+    b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92); b.add_argument("--style", default="auto", help="auto|boombap|trap|lofi|dark|file:<bgm폴더 파일명>")
     a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat}[a.cmd](a)
 if __name__ == "__main__":
     main()
