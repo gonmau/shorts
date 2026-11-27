@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-27 22:13:57 (KST) · 기록 2286건 · 소재 746개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-27 22:17:32 (KST) · 기록 2288건 · 소재 746개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -17,7 +17,7 @@
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
-| curate | 2 | 0 | 13분 35초 |
+| curate | 3 | 0 | 13분 38초 |
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
@@ -40,7 +40,7 @@
 | upload_to_youtube | 39 | 0 | 28분 50초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
-| 코드업데이트 | 132 | 0 | 0초 |
+| 코드업데이트 | 133 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -48,6 +48,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 22:17 | PC | curate | curate.py --cutoff 7 --top 10 --review-max 10 --dry-run | ✅ | 3초 |  |
+| 22:14 | PC | 코드업데이트 | gonmau/shorts: 2개 (local_ui.py, rap_short.py) | ✅ |  |  |
 | 22:12 | PC | rap_short | rap_short.py beat --index 745 --bpm 92 --style trap | ✅ | 5초 |  |
 | 22:11 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 745 | ✅ | 1초 |  |
 | 22:11 | PC | build_video | build_video.py --index 745 --channel gonmauY --handle @gonmauY | ✅ | 6분 21초 |  |
