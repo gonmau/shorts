@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-28 14:25:25 (KST) · 기록 2328건 · 소재 762개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-28 15:08:33 (KST) · 기록 2335건 · 소재 763개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -13,7 +13,7 @@
 | apply_review | 219 | 0 | 58초 |
 | approve | 73 | 0 | 17초 |
 | audience | 3 | 0 | 10분 47초 |
-| build_video | 112 | 0 | 17시간 58분 |
+| build_video | 113 | 0 | 18시간 11분 |
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
@@ -22,22 +22,22 @@
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
 | export_review | 82 | 0 | 18초 |
-| fetch_images | 238 | 9 | 2시간 52분 |
+| fetch_images | 239 | 9 | 2시간 53분 |
 | generate_culture_facts | 20 | 0 | 42분 56초 |
 | generate_script | 278 | 0 | 2시간 39분 |
 | generate_tts | 123 | 0 | 39분 59초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
-| make_thumbnail | 110 | 0 | 2분 51초 |
+| make_thumbnail | 111 | 0 | 2분 53초 |
 | promote_ready | 219 | 0 | 51초 |
-| rap_short | 25 | 0 | 9분 53초 |
+| rap_short | 28 | 0 | 11분 54초 |
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
 | trend_research | 4 | 3 | 2분 58초 |
 | update_description | 7 | 1 | 22초 |
-| upload_to_youtube | 42 | 0 | 45분 15초 |
+| upload_to_youtube | 43 | 0 | 45분 31초 |
 | yt_report | 1 | 0 | 11초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
@@ -49,6 +49,13 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 14:43 | PC | upload_to_youtube | upload_to_youtube.py --indexes 762 | ✅ | 15초 |  |
+| 14:42 | PC | rap_short | rap_short.py beat --index 762 --bpm 92 --style lofi | ✅ | 8초 |  |
+| 14:42 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --start 762 | ✅ | 1초 |  |
+| 14:42 | PC | build_video | build_video.py --index 762 --channel gonmauY --handle @gonmauY | ✅ | 13분 35초 |  |
+| 14:29 | PC | rap_short | rap_short.py flow --index 762 --bpm 92 | ✅ | 1분 39초 |  |
+| 14:27 | PC | fetch_images | fetch_images.py --index 762 | ✅ | 46초 |  |
+| 14:26 | PC | rap_short | rap_short.py make --index 319 | ✅ | 13초 |  |
 | 14:23 | PC | upload_to_youtube | upload_to_youtube.py --indexes 761 --daily-max 20 | ✅ | 2분 26초 |  |
 | 14:20 | PC | make_thumbnail | make_thumbnail.py --channel gonmauY --handle @gonmauY --only 761 | ✅ | 1초 |  |
 | 14:11 | PC | rap_short | rap_short.py beat --index 761 --bpm 92 --style auto | ✅ | 6초 |  |
