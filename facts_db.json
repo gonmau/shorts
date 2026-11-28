@@ -88278,5 +88278,376 @@
     "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0762_파푸아뉴기니.mp4",
     "youtube_id": "OwGfP8tvYoc",
     "uploaded_at": "2026-11-28T14:43:09.979998+09:00"
+  },
+  {
+    "topic": "대영제국, 세계 인구와 면적의 1/4을 장악",
+    "hook": "1913년, 영국의 지배 아래 살던 사람이 무려 4억 1천2백만 명이었다면?",
+    "body": "대영제국은 19세기와 20세기 초 세계 최강의 제국으로 성장했습니다.",
+    "twist": "하지만 그 거대한 제국에도 이미 몰락의 시작을 알리는 균열이 생기고 있었습니다.",
+    "caveat": "수치는 1913년과 1920년 각각의 기록에 기반합니다.",
+    "country": "영국",
+    "theme": "군사/전쟁사",
+    "wiki_title": "British Empire",
+    "source_url": "https://en.wikipedia.org/wiki/British_Empire",
+    "verify_note": "British Empire",
+    "confidence": "source",
+    "created_at": "2026-11-07T00:19:52.870909+00:00",
+    "status": "video_done",
+    "narration": "1913년 영국 지배, 4억 1천 2백만 명이 살아 있었네.\n전 세계 인구 23%가 대영제국 깃발 아래 있었네.\n19세기·20년 초, 식민지 늘려 제일 큰 제국이 돼게.\n그때 제국 영토, 1920년 무렵 정점에 달했게.\n땅 넓이 3천 550만 km², 지구 육지 24% 차지했어.\n사실 전 세계 육지 4분의 1, 거대한 제국이었어.\n절정에도 힘은 서서히 빠져, 흔들리기 시작했어.\n제1차 세계대전 겪으며 균열 뚜렷해져, 무너지했어.\n그때 세계 4분의 1 차지했던 영국, 왜 무너졌을까요?",
+    "title_line1": "대영제국, 세계의 ¼",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "4억*1천2백만 명*"
+      },
+      {
+        "s": 2,
+        "text": "세계 인구의 *23%*"
+      },
+      {
+        "s": 3,
+        "text": "*대영제국*의 전성기"
+      },
+      {
+        "s": 5,
+        "text": "육지 면적의 *24%*"
+      },
+      {
+        "s": 6,
+        "text": "역사상 가장 거대한 제국"
+      },
+      {
+        "s": 8,
+        "text": "몰락은 *언제부터*?"
+      }
+    ],
+    "image_queries": [
+      "population chart 400 million",
+      "world map 23 percent",
+      "British Empire flag",
+      "British colonial territories 1920",
+      "world land area 24 percent",
+      "large empire map",
+      "abandoned colonial building",
+      "World War I trenches",
+      "British Empire decline",
+      "British Empire"
+    ],
+    "scene_count": 10,
+    "narration_original": "1913년, 영국의 지배 아래 살던 사람이 무려 4억 1천 2백만 명이었다면 믿으시겠습니까? 당시 전 세계 인구의 약 23%가 대영제국의 통치 아래 있었습니다. 19세기와 20세기 초, 영국은 세계 곳곳에 식민지와 영토를 거느리며 역사상 가장 거대한 제국으로 성장했습니다. 그런데 제국의 영토는 1920년 무렵 절정에 이릅니다. 그 면적은 약 3천 550만 제곱킬로미터로, 지구 육지 면적의 약 24%에 달했습니다. 말 그대로 전 세계 육지의 약 4분의 1을 차지한 거대한 제국이었던 것입니다. 하지만 이 절정의 순간에도 제국의 힘은 조금씩 약해지고 있었습니다. 그리고 그 균열은 제1차 세계대전을 거치며 뚜렷해지기 시작합니다. 세계의 4분의 1을 차지했던 대영제국, 대체 왜 무너지기 시작했을까요?",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3188,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0ec1f81d2fe3",
+        "at": "2026-11-07 10:22",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3068,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9294ac3bbbec",
+        "at": "2026-11-07 10:22",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3266,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "07bc341f170e",
+        "at": "2026-11-07 10:22",
+        "scene": 3,
+        "rejected_ids": [
+          3875817,
+          4854718,
+          "c:194178694",
+          "c:194225555",
+          "c:5544648"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2504,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "080da3008770",
+        "at": "2026-11-07 10:22",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3118,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "301b9f8a324b",
+        "at": "2026-11-07 10:22",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2791,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8cac956ae439",
+        "at": "2026-11-07 10:22",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3065,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d45832e7932d",
+        "at": "2026-11-07 10:22",
+        "scene": 7,
+        "rejected_ids": [
+          10297421,
+          "c:43503094"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2743,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "667afa2d4212",
+        "at": "2026-11-07 10:22",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2693,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "9698ec733a50",
+        "at": "2026-11-07 10:22",
+        "scene": 9,
+        "rejected_ids": [
+          4854718,
+          "c:5544648",
+          "c:56338190"
+        ]
+      }
+    ],
+    "overlays": [
+      {
+        "text": "4억1200만명!",
+        "start": 0,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#FFE200",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "타자기",
+        "bg": ""
+      },
+      {
+        "text": "23% 식민지",
+        "start": 6.7,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#FFE200",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "타자기",
+        "bg": ""
+      },
+      {
+        "text": "1920년 절정",
+        "start": 20.6,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "타자기",
+        "bg": ""
+      },
+      {
+        "text": "지구 면적 24%가 식민지!",
+        "start": 25.2,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "팝",
+        "bg": ""
+      },
+      {
+        "text": "1차 세계대전, 변화의 시작",
+        "start": 43.0,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 100,
+        "color": "#FF5FA2",
+        "stroke": "#000000",
+        "bold": true,
+        "effect": "페이드",
+        "bg": ""
+      }
+    ],
+    "need": "curiosity",
+    "rap": true,
+    "rap_of": 563,
+    "review_ok": true,
+    "ai_prompts": [
+      "A panoramic aerial view of 1913 British-ruled Indian countryside with bustling villages and railway lines under a grey sky, showing colonial architecture and crowds of diverse subjects.",
+      "Close-up low-angle shot of a 1913 London street crowded with workers, horse-drawn carriages, and early automobiles, illustrating the empire's vast population.",
+      "Wide-angle world map illustration rendered as a globe, with the British Empire flag overlay covering 23% of the land, no lettering, seen from a tilted perspective.",
+      "Mid-century 19th‑early 20th century collage of colonial outposts—African forts, Asian ports, Caribbean plantations—arranged in a sweeping crane shot to convey the empire's expansion.",
+      "Bird's‑eye view of the globe in 1920, highlighting the peak British territorial holdings spanning continents, with vibrant colors indicating dominions, no text.",
+      "Dramatic low-angle shot of a massive world map table in a dim library, hands measuring 35.5 million km² area, emphasizing 24% of Earth's landmass.",
+      "Sweeping satellite‑style perspective over a stylized Earth showing one quarter of land shaded in imperial colors, conveying the empire's size without any faces.",
+      "Tilted close-up of a crumbling marble column in a ruined colonial courthouse, shadows suggesting waning power, captured from a slightly upward angle.",
+      "Dynamic battlefield panorama of World War I trenches with British soldiers retreating, smoke and mud, captured from a high angle to show growing fractures in the empire.",
+      "Thoughtful overhead shot of a deserted British parliamentary chamber, empty chairs and dust motes in sunlight, evoking the question of why the empire that covered a quarter of the world fell."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "The Red Hat of Pat Ferrick",
+        "license": "Public domain",
+        "title": "The British Empire.png",
+        "page": "https://commons.wikimedia.org/wiki/File:The_British_Empire.png",
+        "id": "c:5544648"
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "14398",
+        "page": "https://pixabay.com/photos/world-map-satellite-image-140304/",
+        "id": 140304
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Picudio",
+        "page": "https://pixabay.com/photos/flag-union-flag-union-european-1645248/",
+        "id": 1645248
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "Vadac .",
+        "license": "Public domain",
+        "title": "British and French empires 1920.png",
+        "page": "https://commons.wikimedia.org/wiki/File:British_and_French_empires_1920.png",
+        "id": "c:3869107"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Columbus (Ohio) Department of Development; Division of Planning",
+        "license": "Public domain",
+        "title": "Northern Triple R Area Plan - DPLA - ab2e46d9b2a4d8fb15a23e8076274612 (page 24).jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Northern_Triple_R_Area_Plan_-_DPLA_-_ab2e46d9b2a4d8fb15a23e8076274612_(page_24).jpg",
+        "id": "c:135216101"
+      },
+      {
+        "scene": 6,
+        "source": "commons",
+        "user": "Axel Tschentscher",
+        "license": "Public domain",
+        "title": "Rockefeller Center British Empire Building Cartouche 2021-05-13 17-36.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rockefeller_Center_British_Empire_Building_Cartouche_2021-05-13_17-36.jpg",
+        "id": "c:106776039"
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "LionMountain",
+        "page": "https://pixabay.com/photos/ghost-town-namibia-africa-abandoned-4683338/",
+        "id": 4683338
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "dodo71",
+        "page": "https://pixabay.com/photos/stained-glass-window-church-holy-5037389/",
+        "id": 5037389
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "J. M. W. Turner",
+        "license": "Public domain",
+        "title": "Joseph Mallord William Turner - The Decline of the Carthaginian Empire - WGA23169.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_The_Decline_of_the_Carthaginian_Empire_-_WGA23169.jpg",
+        "id": "c:15398610"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Axel Tschentscher",
+        "license": "Public domain",
+        "title": "Rockefeller Center British Empire Building Gold-Leaf-Figures 2021-05-13 17-37.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rockefeller_Center_British_Empire_Building_Gold-Leaf-Figures_2021-05-13_17-37.jpg",
+        "id": "c:106775905"
+      }
+    ],
+    "image_queries_done": [
+      "population chart 400 million",
+      "world map 23 percent",
+      "British Empire flag",
+      "British colonial territories 1920",
+      "world land area 24 percent",
+      "large empire map",
+      "abandoned colonial building",
+      "World War I trenches",
+      "British Empire decline",
+      "British Empire"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio\\0763_rap_v2.mp3",
+    "timing_path_v2": "audio\\0763_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0763_영국.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0763_영국_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0763_영국.mp4",
+    "youtube_id": "jDTJO4K9WAY",
+    "uploaded_at": "2026-11-28T15:19:07.268480+09:00"
   }
 ]
