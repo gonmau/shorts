@@ -58531,7 +58531,39 @@
     "scene_count": 10,
     "curate_score": 2,
     "curate_why": "사무소 수, 흥미·충격 부족",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "HFW",
+      "항공",
+      "선박",
+      "변호사"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bars",
+      "title": "HFW 핵심 수치",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "사무소",
+          "value": 22.0,
+          "text": "22개"
+        },
+        {
+          "label": "변호사",
+          "value": 700.0,
+          "text": "700명 이상"
+        },
+        {
+          "label": "파트너",
+          "value": 190.0,
+          "text": "190명"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "코로나·틱톡이 만든 집밥 열풍",
@@ -60202,7 +60234,14 @@
     },
     "curate_score": 2,
     "curate_why": "다문화 문학, 논쟁·시각성 부족",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "라오스다문화",
+      "구전전설",
+      "다언어이야기",
+      "민족문학",
+      "문화교차"
+    ]
   },
   {
     "topic": "멕시코 거리에서 살아 숨쉬는 옛날 옥수수 처리법",
@@ -60293,7 +60332,13 @@
     },
     "curate_score": 2,
     "curate_why": "옛 옥수수법, 평범한 음식 소개",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "Olmec",
+      "Maya",
+      "Teotihuacan",
+      "Toltec"
+    ]
   },
   {
     "topic": "러시아 음식 이름은 소련 이전부터 그대로",
@@ -66034,8 +66079,8 @@
     "created_at": "2026-11-07T00:19:47.050579+00:00",
     "status": "scripted",
     "narration": "의사를 부를 때도, 교수를 부를 때도 사용하는 ‘Dr.’ 그런데 이 호칭은 원래 의사가 아닌 선생님을 뜻했습니다. 라틴어 ‘docēre’, 즉 ‘가르치다’에서 유래한 Doctor는 원래 학문과 지식을 가르치는 사람을 뜻했습니다. 12세기 유럽에서는 볼로냐와 파리 같은 대학이 성장하면서 학문적 권위를 인정받은 교사에게 Doctor라는 칭호가 사용되기 시작했죠. 당시 박사학위의 중요한 의미는 단순히 공부를 많이 했다는 증명이 아니었습니다. 대학에서 가르칠 수 있는 공식적인 자격을 인정받는 것이었죠. 이러한 자격은 시간이 흐르면서 유럽 대학을 중심으로 확산됐습니다. 오늘날에는 의사뿐 아니라 연구자와 학자도 Doctor라는 호칭을 사용합니다. 수백 년 전에는 가르치는 사람을 뜻했던 말이 이제는 학문과 의료를 대표하는 호칭이 된 것입니다. 여러분이 알고 있던 Doctor의 시작은 의사가 아닌 선생님이었습니다.",
-    "title_line1": "의사가 아닌 선생님이었다",
-    "title_line2": "Doctor의 놀라운 기원",
+    "title_line1": "박사 칭호의 역사",
+    "title_line2": "의사가 아닌 선생님?",
     "highlights": [
       {
         "s": 1,
@@ -66093,7 +66138,35 @@
     },
     "curate_score": 3,
     "curate_why": "일반적 호칭",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "Doctor",
+      "Latin",
+      "Bologna",
+      "Paris",
+      "Academia"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "Doctor의 역사",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "12세기",
+          "value": null,
+          "text": "볼로냐·파리 대학 성장"
+        },
+        {
+          "label": "오늘날",
+          "value": null,
+          "text": "의사·연구자·학자 사용"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "왕립 해군(Royal Navy)의 ‘시니어 서비스’ 별명",
@@ -68467,7 +68540,14 @@
     },
     "curate_score": 3,
     "curate_why": "플랫폼 규제는 흥미·하지만 갈등·숫자 약함",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "틱톡",
+      "두이인",
+      "영상길이",
+      "플랫폼",
+      "다운로드통계"
+    ]
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
@@ -69681,7 +69761,39 @@
     },
     "curate_score": 2,
     "curate_why": "한국 술 문화·전쟁·벌칙 요소 부족",
-    "curate_top": false
+    "curate_top": false,
+    "hashtags": [
+      "고려왕조",
+      "증류주",
+      "한국술",
+      "문화다리"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "고려시대 증류주 탄생",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "936년",
+          "value": null,
+          "text": "외국 물 한 방울이 한국 술을 만들게 함"
+        },
+        {
+          "label": "936-943년",
+          "value": null,
+          "text": "고려왕조가 이슬람 세계와 교류"
+        },
+        {
+          "label": "943년",
+          "value": null,
+          "text": "최초의 증류주 탄생"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "노바스코샤가 한때 두 나라까지 포함한 광대한 영토",
@@ -69726,7 +69838,7 @@
     "verify_note": "State visits by Charles de Gaulle to South America",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69741,7 +69853,76 @@
     },
     "curate_score": 6,
     "curate_why": "거리·숫자 강함",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "curiosity",
+    "source_text": "The French president Charles de Gaulle made a series of state visits to South American countries between September 21 and October 16, 1964. During this trip of three weeks and 32,000 km, the longest made by Charles de Gaulle, he visited Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, Argentina, Paraguay, Uruguay and Brazil.\nThis trip was motivated by the French president's desire to turn the page on decolonization after the end of the Algerian War in 1962 and to continue his \"policy of grandeur\" by emphasizing cooperation, in particular by strengthening ties between France and Latin America. The operation was the subject of meticulous preparation by the Quai d'Orsay and the French embassies of the countries concerned. The trip was preceded by a visit to Mexico, from March 16 to 19, 1964, during which de Gaulle launched his famous \"Marchemos la mano en la mano\". De Gaulle, accompanied by a French delegation, transited from one country to another in a Caravelle. On two occasions, he also traveled aboard the cruiser Colbert.\nThe visit of the French head of state aroused real enthusiasm in the countries he passed through. The \"man of June 18\" was preceded by his aura as leader of Free France. He knew how to win the favor of crowds, particularly through his speeches in Spanish. However, several of the themes he developed in his speeches were not well received by certain powers in place, notably his criticism of the United States hyperpower. The results of the trip were ultimately mixed. In terms of communication, it was a great success but not followed by many concrete translations. Indeed, France remained a minor economic player in South America and the position of the United States in the region has not been shaken.\n== Context ==\nFrance historically enjoys significant prestige in South America. The great figures of the Spanish-American wars of independence, Bolívar (who attended the coronation of Napoleon at Notre-Dame de Paris in 1804), Sucre, Miranda, Artigas and San Martín were greatly influenced by the Lumières and the French Revolution. When World War II broke out, the South American elites experienced the French defeat as a real tragedy. Nearly 300 of the 400 support committees for Free France existing in the world were created in Latin America, under the leadership of Jacques Soustelle. Several intellectuals, Georges Bernanos, Roger Caillois and Jules Supervielle found refuge in this region of the world. In the post-war period, the Latin Union, founded in 1954 and based in Paris, served to strengthen cultural ties, as did the Institute of Advanced Latin American Studies (IHEAL) created in 1956. South American elites frequently come to complete their education in France; this is the case of Oscar Niemeyer, the architect of Brasília, or even of Belaunde Terry and Castelo Branco, respectively heads of state of Peru and Brazil, whom de Gaulle met during his diplomatic tour.\nBy 1964, France had essentially completed its decolonization, which improved its diplomatic position in Latin America where anticolonial sentiment was powerful. De Gaulle therefore intended to open a new era of cooperation, not only with the former French colonies, but throughout the world. It was with this in mind that he established, on January 27, 1964, the diplomatic relations with the People's Republic of China. He said in a press conference, on January 31, 1964, its objectives in South America:\n\"The enterprise goes beyond the African framework and constitutes in truth a world policy. By this means, France can move towards other countries which, in other continents, are more or less largely in the process of development, which attract us instinctively and naturally and which, wishing for their development a support which is lent to them according to ou",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
+      ],
+      "rounds": 0,
+      "first": "32,000 km를 비행한 뒤, 샤를 드골은 라틴아메리카에서 무엇을 했을까요?",
+      "sentences": 8
+    },
+    "narration": "32,000 km를 비행한 뒤, 샤를 드골은 라틴아메리카에서 무엇을 했을까요?  \n\n1964년 9월 21일부터 10월 16일까지, 프랑스 대통령은 3주간 무려 32,000 km를 달리며 베네수엘라, 콜롬비아 등 10개국을 순방했습니다. 알제리 전쟁 이후 프랑스는 탈식민지 정책을 정리하고, 라틴아메리카와의 협력을 강화하려는 전략적 목표를 가지고 있었죠.  \n\n그런데 이 대규모 일정은 프랑스 외교부와 각 주재 대사관의 철저한 사전 준비 없이는 불가능했습니다. 방문 국가별 일정 조율, 항공편 확보, 현지 안전 대책 등 모든 디테일을 미리 계획해 두었기 때문입니다.  \n\n드골 대통령의 이 공식 외교 일정은 1964년 기록된 일정표에 근거하고 있습니다. 결국 그는 32,000 km를 날아다닌 뒤, 프랑스와 라틴아메리카 사이의 새로운 외교 지평을 열어 놓은 셈이죠.  \n\n그때 그가 남긴 발자국, 오늘도 여전히 그 의미를 되새기게 됩니다.",
+    "highlights": [
+      {
+        "s": 2,
+        "text": "3주간 10개국 *순방*"
+      },
+      {
+        "s": 3,
+        "text": "탈식민지 정책 *전환*"
+      },
+      {
+        "s": 7,
+        "text": "새 외교 *지평* 열다"
+      }
+    ],
+    "image_queries": [
+      "South America landscape",
+      "South America ten country tour",
+      "South America colonial architecture",
+      "South America embassy office",
+      "Airplane cockpit view",
+      "Old itinerary document",
+      "Diplomatic horizon",
+      "Footprints on sand"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "샤를드골",
+      "라틴아메리카",
+      "베네수엘라",
+      "콜롬비아",
+      "알제리전쟁"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "드골 라틴아메리카 순방",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "9월 21일",
+          "value": null,
+          "text": "베네수엘라 등 출발"
+        },
+        {
+          "label": "10월 16일",
+          "value": null,
+          "text": "순방 종료"
+        }
+      ],
+      "none": false
+    },
+    "title_line1": "샤를 드골 라틴순방",
+    "title_line2": "비행 뒤 무슨 일?"
   },
   {
     "topic": "남파푸아, 펜실베니아와 비슷한 면적에 50만 명 인구",
@@ -69892,7 +70073,7 @@
     "verify_note": "Fandroana",
     "confidence": "source",
     "created_at": "2026-11-08T07:45:19.961989+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69907,7 +70088,84 @@
     },
     "curate_score": 6,
     "curate_why": "축제·시각적",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "wonder",
+    "source_text": "The Fandroana, termed the Royal Bath by 19th century European historians, is the annual New Year's festival of the Merina people inhabiting the highlands of central Madagascar.  The origins of the festival are preserved through oral history. According to folk legend, the wild zebu cattle that roamed the Highlands were first domesticated for food in Imerina under the reign of Ralambo. Different legends attribute the discovery that zebu were edible to the king's servant or to Ralambo himself.  Ralambo is credited with founding the traditional ceremony of the fandroana to celebrate this discovery, although others have suggested he merely added certain practices to the celebration of a long-standing ritual. \n== History ==\nAccording to one version of the story, while traversing the countryside Ralambo and his men came across a wild zebu so exceptionally fat that the king decided to make a burnt offering of it. As the zebu flesh cooked, the enticing smell led Ralambo to taste the meat. He declared zebu meat to be fit for human consumption. In honor of the discovery, he decided to establish a holiday called fandroana that would be distinguished by the consumption of well-fattened zebu meat.  The holiday was to be celebrated on the day of his birth, which coincided with the first day of the year. To this end, the holiday symbolically represented a community-wide renewal that would take place over a period of several days before and after the first of the year.\n== Practices ==\nAlthough the precise form of the original holiday cannot be known with certainty and has evolved over time, 18th- and 19th-century accounts suggest what the event may have been like. Accounts from these centuries indicate that all family members were required to reunite in their home villages during the festival period. Estranged family members were expected to attempt to reconcile. Homes were cleaned and repaired and new housewares and clothing were purchased. The symbolism of renewal was particularly embodied in the traditional sexual permissiveness encouraged on the eve of the fandroana (characterized by early 19th-century British missionaries as an \"orgy\") and the following morning's return to rigid social order with the sovereign firmly at the helm of the kingdom. \nOn this morning, the first day of the year, a red rooster was traditionally sacrificed and its blood used to anoint the sovereign and others present at the ceremony. Afterward the sovereign would bathe in sanctified water, then sprinkle it upon attendees to purify and bless them and ensure an auspicious start to the year. Children would celebrate the fandroana by carrying lighted torches and lanterns in a nighttime processional through their villages. The zebu meat eaten over the course of the festival was primarily grilled or consumed as jaka, a preparation reserved uniquely for this holiday. Jaka was prepared during the festival by sealing shredded zebu meat with suet in a decorative clay jar; this confit would then be conserved in an underground pit for twelve months to be served at the next year's fandroana.\nIn November 1943, a fandroana was held in Toulouse by the authorities of Vichy France. The Chef d'état Philippe Pétain was dressed as a Merina king and received a wooden zebu sculpture from the tirailleurs malgaches (Malagasy soldiers) stranded in France after the British invasion of Madagascar.\n== References ==",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 2번 문장 '이는 16세기 말 랄라보 왕이 야생 지브를 잡아 구워 …' — 본문에 연도 언급 없음",
+        "근거 없음/틀림: 6번 문장 '이렇게 고기를 구워 먹는 전통은 오늘까지 이어져, 판드…' — ‘가장 중요한 의식’ 과장"
+      ],
+      "advice": [
+        "첫 문장에 숫자·대비·질문·걸린 것이 없음",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "마다가스카르 고원에서 새해 첫날, 사람들은 불에 지브 고기를 직접 굽습니다.",
+      "sentences": 7
+    },
+    "review_needed": true,
+    "narration": "마다가스카르 고원에서 새해 첫날, 사람들은 불에 지브 고기를 직접 굽습니다. 이는 16세기 말 랄라보 왕이 야생 지브를 잡아 구워 먹은 뒤 “이 고기는 사람에게 맞는다”고 선언한 전설에서 시작됐기 때문입니다. 전설에 따르면, 왕은 비만한 지브를 발견하고 제물로 바친 뒤 그 향기에 이끌려 고기를 맛보았고, 이를 기념해 ‘판드로아나’라는 축제를 만들었습니다. 축제는 왕의 생일과 겹쳐 새해 첫날에 열리며, 가족들은 고향 마을에 모여 지브 고기를 구워 나눕니다. 이때 고기는 주로 숯불에 구워 먹으며, 특별히 ‘자카’라는 방식으로 뚝딱 만든 지브 고기와 지방을 땅속에 묻어 다음 해까지 보관하기도 합니다. 이렇게 고기를 구워 먹는 전통은 오늘까지 이어져, 판드로아나는 메리나 고원의 새해를 알리는 가장 중요한 의식이 되었습니다. 즉, 새해에 물 대신 지브 고기가 튀어오르는 이유는 랄라보 왕이 발견한 ‘지브는 식용 가능’이라는 선언을 기념하기 위해서입니다.",
+    "title_line1": "마다가스카르 새해 축제",
+    "title_line2": "물 대신 지브 고기?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "고원에서 *불*에 지브"
+      },
+      {
+        "s": 2,
+        "text": "왕이 선언한 *지브* 고기"
+      },
+      {
+        "s": 3,
+        "text": "새해 첫날 *판드로아나*"
+      },
+      {
+        "s": 4,
+        "text": "가족 모여 *지브* 구워"
+      }
+    ],
+    "image_queries": [
+      "Madagascar plateau fire goat",
+      "Madagascar king goat meat",
+      "Fandroana New Year celebration",
+      "Madagascar family goat roast",
+      "traditional charcoal goat cooking",
+      "Fandroana festival ceremony",
+      "goat meat water substitute"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "메리나",
+      "판드로아나",
+      "랄라보왕",
+      "지브",
+      "새해축제"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "steps",
+      "title": "판드로아나 고기 구이",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "불에굽기",
+          "value": null,
+          "text": "불에 지브 고기 굽음"
+        },
+        {
+          "label": "자카보관",
+          "value": null,
+          "text": "지브와 지방을 땅속에 묻음"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "남중국해 해상 무역 규모",
@@ -70822,7 +71080,7 @@
     "verify_note": "Achaemenid Empire",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70837,7 +71095,66 @@
     },
     "curate_score": 6,
     "curate_why": "대륙 횡단 제국·숫자·역사·규모 강조",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "source_text": "The Achaemenid Empire (, ə-KEE-mə-nid; Old Persian: 𐎧𐏁𐏂, Xšāça, lit. 'The Empire' or 'The Kingdom') was an ancient Iranian empire founded by Cyrus the Great of the Achaemenid dynasty in 550 BC. At peak, its territorial extent was roughly 5.5 million square kilometres (2.1 million square miles), making it the largest empire of its time. Based in the Iranian plateau, it stretched from the Balkans and Cyrenaica in the west to the Indus Valley in the east, including Anatolia, Cyprus, Mesopotamia, the Levant, the South Caucasus, parts of Eastern Arabia, and large parts of Central Asia.\nBy the 7th century BC, the region of Persis, located in the southwestern part of the Iranian plateau, had been settled by Persian people. From Persis, Cyrus rose and defeated Media, Lydia, and the Neo-Babylonian Empire, thus marking the establishment of a new imperial polity in the ancient Near East. The empire expanded rapidly, but was repulsed from Scythia in 513 BC and from Greece in 492–490 BC and 480–479 BC.\nIn 330 BC, amidst a Greek military campaign that began in 336 BC, the Achaemenid Empire was conquered in its entirety by Alexander the Great, who annexed it to his Macedonian Empire. Upon Alexander's death, which sparked the beginning of the Hellenistic period in 323 BC, the majority of the former Achaemenid Empire's territories came under the rule of the Seleucid Empire and the Ptolemaic Kingdom. Almost a century later, Iranian elites in the central plateau successfully reclaimed power from the Seleucids and established the Parthian Empire, which existed for nearly half a millennium before being succeeded by the Iranian Sasanian Empire.\nIn the modern era, the Achaemenid Empire has been recognized for its centralized bureaucracy and administration; its multicultural policy and religious tolerance, especially under Cyrus; its complex infrastructure projects, such as the Royal Road and an organized postal system; the use of official languages (Persian and Aramaic) across its territories; and the development of a civil service and a large, professional army and navy. Many of these systems were adopted and expanded upon by later empires in the Greco-Roman world and beyond.\n== Etymology ==\nThe Achaemenid Empire is named after Achaemenes, who is credited as the progenitor of the Achaemenid dynasty. The term Achaemenid means \"of the family of the Achaemenis/Achaemenes\" (Old Persian: 𐏃𐎧𐎠𐎶𐎴𐎡𐏁, romanized: Haxāmaniš or Haxūmanišiya a bahuvrihi compound translating to \"having a friend's mind\"). Achaemenes was himself a minor seventh-century ruler of the Anshan in southwestern Iran, and a vassal of Assyria.\nAround 850 BC the original nomadic people who began the empire called themselves the Parsa and their constantly shifting territory Parsua, for the most part localized around Persis. The name \"Persia\" is a Greek and Latin pronunciation of the native word referring to the country of the people originating from Persis (Old Persian: 𐎱𐎠𐎼𐎿, romanized: Pārsa). The Persian term 𐎧𐏁𐏂 Xšāça, literally meaning \"The Kingdom\", was used to refer to the Empire formed by their multinational state.\n== History ==\n=== Timeline ===\n=== Origin of the Achaemenid dynasty ===\nThe Persian nation contains a number of tribes as listed here. ... : the Pasargadae, Maraphii, and Maspii, upon which all the other tribes are dependent. Of these, the Pasargadae are the most distinguished; they contain the clan of the Achaemenids from which spring the Perseid kings. Other tribes are the Panthialaei, Derusiaei, Germanii, all of which are attached to the soil, the remainder—the Dai, Mardi, Dropici, Sagarti, being nomadic.\nThe Achaemenid Empire was founded by nomadic Persians. The Persians were an Iranic people who arrived in what is today Iran c. 1000 BC and settled a region including north-w",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "한 나라가 두 대륙을 동시에 차지한다면, 그 규모는 얼마나 클까요?",
+      "sentences": 7
+    },
+    "narration": "한 나라가 두 대륙을 동시에 차지한다면, 그 규모는 얼마나 클까요?  \n\n기원전 550년에 설립된 아케메네스 제국은 약 5.5백만 km²에 달하는 영토를 지배했습니다. 서쪽으로는 발칸 반도와 키레니아까지, 동쪽으로는 인더스 계곡까지 뻗어 있었죠.  \n\n그런데 제국의 실질적인 통치는 중앙 왕이 직접 관리한 것이 아니라, 각 지방에 파견된 현지 관리들이 담당했습니다. 이들은 현지 풍습과 행정 체계를 활용해 효율적으로 다스렸습니다.  \n\n전성기 시기의 데이터이지만, 그때의 아케메네스 제국은 두 대륙을 아우르는 거대한 제국이었으며, 현지 관리들의 역할이 없었다면 유지되기 어려웠을 겁니다.  \n\n두 대륙을 동시에 차지한 그 규모, 결국 현지 관리들의 손길이 없었다면 사라졌을지도 모른다는 점, 생각해 보셨나요?",
+    "title_line1": "두 대륙을 품은 제국",
+    "title_line2": "현지 관리 없으면 사라질까",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*두* 대륙, 한 나라?"
+      },
+      {
+        "s": 3,
+        "text": "*발칸*~인더스까지"
+      },
+      {
+        "s": 4,
+        "text": "*현지* 관리 핵심"
+      }
+    ],
+    "image_queries": [
+      "World map showing continents",
+      "Ancient Persian empire map",
+      "Map Balkans to Indus",
+      "Persian provincial governor",
+      "Persian local administration office",
+      "Persian empire administrative hierarchy",
+      "Two continents Persian empire"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "아케메네스제국",
+      "키레니아",
+      "인더스계곡",
+      "현지관리"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "아케메네스 제국 영토",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "km²",
+      "rows": [
+        {
+          "label": "영토",
+          "value": null,
+          "text": "5.5백만 km²"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "쿠르드인들의 새해 불축제 뉴로즈",
@@ -70852,7 +71169,7 @@
     "verify_note": "Newroz as celebrated by Kurds",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:30.149538+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -70867,7 +71184,82 @@
     },
     "curate_score": 6,
     "curate_why": "불축제·시각적",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "wonder",
+    "source_text": "Newroz (Kurdish: نەورۆز) is the Kurdish celebration of Nowruz; the arrival of spring and new year in Kurdish culture. The lighting of the fires at the beginning of the evening of March 20 is the main symbol of Newroz among the Kurds.\nNewroz is celebrated on or around the March equinox. In Turkey in particular, it became closely associated with Kurdish political mobilisation from the 1990s, and it is presented in Kurdish nationalist discourse as a national day. The festival draws on older Iranian new-year traditions, and its modern Kurdish form developed in the 20th century. In Kurdish legend, the holiday celebrates the deliverance of the Kurds from tyranny, with a blacksmith leading an uprising of villagers against a tyrannical king. It is seen as another way of demonstrating support for the Kurdish cause. The celebration usually falls on 21 March and is usually held between 18 and 24 March. The festival has an important place in terms of Kurdish identity for the majority of Kurds. Though celebrations vary, people generally gather together to welcome the coming of spring; they wear traditional coloured Kurdish clothes, dance together, light fires to dance around and jump over the bonfire, play Kurdish games.\n== History ==\nNewroz belongs to a wider group of new-year festivals held around the March equinox in the Iranian world, with earlier forms tracing from the Babylonian Akitu to the Achaemenid-era Nowruz. In antiquity and the medieval period, the festival was linked to displays of royal power and to the timing of tax collection, as well as to Zoroastrian ritual. March remained the start of the fiscal year under the Seljuks and Ottomans, and most Ottoman almanacs began the year in March. Ottoman court practice probably included gifts, special dishes and poems called nevruziye at \"Sultan nevruz\".\nIn her 2015 study on Newroz, Caroline Wallis treats Newroz as an \"invented tradition\" within the Kurdish national movement and traces how its meanings and practices changed over the 20th century. Wallis argues that the first Kurdish nationalists' choice of the equinox as a \"national day\" did not rest only on its presence at the Ottoman court. She points also to Kurdish court literature, developed in the Kurdish principalities from the 16th century and heavily influenced by the rich local oral tradition and by Arabic and Persian literature, which conveyed associations of Newroz with love, fertility and fire. This written literature in turn influenced regional oral literature through itinerant bards and minstrels. She gives two examples. The poet Melayê Cizîrî (c. 1570–1640), who was inspired by classical Persian poetry, wrote verse mentioning Newroz and the new year. In Mem û Zîn (1692), Ahmad Khani places the lovers' meeting on Newroz and describes people leaving their homes for the countryside, where young unmarried people dressed up and were free to flirt, with marriage as the intended end. Wallis observes that the festival was \"present in the horizon\" of the region's literate people and populations, and so was not invented from nothing by nationalists.\n=== Rural spring festivals ===\nIn the 20th century the equinox period was marked in agrarian and pastoral communities of southeastern Turkey mainly by communal outdoor meals, and was not a marker of group identity. The name varied by region. One informant from Dersim told Wallis that her village's spring festival was called Garant and was not political, while another, from Gaziantep, described a festival that marked the departure for summer pasture and took place after the snow melted. Journals describing Newroz as a national Kurdish holiday circulated at the start of 20th century among a small circle of intellectuals, mostly from the middle of upper classes. The ideas of these elites ev",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [],
+      "rounds": 0,
+      "first": "터키 거리에서 밤 8시, 갑자기 거대한 불이 타오른다면?",
+      "sentences": 7
+    },
+    "narration": "터키 거리에서 밤 8시, 갑자기 거대한 불이 타오른다면? 그 불은 쿠르드인들의 새해 불축제 뉴로즈의 핵심입니다. 3월 20일 저녁, 쿠르드인들은 전통적으로 불을 밝히며 봄과 새해를 맞이합니다. 이 관습은 이란의 옛 새해 풍습을 바탕으로 20세기에 현대 형태를 갖춘 것입니다. 그런데 1990년대부터 이 축제는 쿠르드 정치 움직임과 연결돼 터키에서 국가적 의미를 띠게 되었습니다. 뉴로즈가 불을 통해 새로운 시작을 알리는 이유는, 불이 과거를 태우고 미래를 비추는 상징이기 때문입니다. 결국 그 불꽃이 터키의 밤을 밝히는 순간, 쿠르드인들의 역사와 정체성이 한 번에 드러나는 순간이죠.",
+    "title_line1": "터키 거리 불꽃 터지다",
+    "title_line2": "새해 불이 의미를 보여",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "거대한 *불* 갑자기?"
+      },
+      {
+        "s": 3,
+        "text": "새해 맞이 *불* 밝히다"
+      },
+      {
+        "s": 6,
+        "text": "*불*로 새 시작"
+      },
+      {
+        "s": 7,
+        "text": "역사·정체성 *불* 순간"
+      }
+    ],
+    "image_queries": [
+      "Kurdish Newroz fire blaze",
+      "Kurdish Newroz fire core",
+      "Newroz fire celebration",
+      "Newroz tradition ceremony",
+      "Newroz political significance",
+      "Fire new beginning",
+      "Fire identity moment"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "쿠르드",
+      "뉴로즈",
+      "불축제",
+      "새해",
+      "전통"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "뉴로즈 축제 역사",
+      "s": 4,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "3월 20일",
+          "value": null,
+          "text": "전통 불 축제"
+        },
+        {
+          "label": "20세기",
+          "value": null,
+          "text": "현대 형태 형성"
+        },
+        {
+          "label": "1990년대부터",
+          "value": null,
+          "text": "정치적 의미 부여"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "수백 년 전 조상과 연결된 전통, 오늘도 살아있다",
@@ -85791,7 +86183,7 @@
     "caveat": "이 내용은 영국 중세 의회 기록에 근거한 것이며, 일부 해석은 학자마다 차이가 있을 수 있습니다.",
     "confidence": "source",
     "verify_note": "1327년 의회",
-    "status": "verified",
+    "status": "scripted",
     "created_at": "2026-11-28T01:08:47.884369+00:00",
     "theme": "키워드",
     "source_url": "https://ko.wikipedia.org/wiki/1327%EB%85%84_%EC%9D%98%ED%9A%8C",
@@ -85800,7 +86192,87 @@
     "emotion": "wonder",
     "curate_score": 7,
     "curate_why": "1327년 숫자·왕 없는 회의, 권력 갈등",
-    "curate_top": true
+    "curate_top": true,
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 3번 문장 '같은 날 의회는 2개월간 진행된 회의 끝에 새 군주, …' — ‘같은 날’·‘2개월 후’ 내용이 본문과 상충"
+      ],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "왕이 사라진 1327년, 웨스트민스터 의회는 과연 어떤 결정을 내렸을까요?",
+      "sentences": 6
+    },
+    "review_needed": true,
+    "narration": "왕이 사라진 1327년, 웨스트민스터 의회는 과연 어떤 결정을 내렸을까요? 1월 7일 에드워드 2세가 폐위된 뒤, 14세 에드워드 왕자는 “왕국 수호자”로 임명됐지만 아직 왕위에 오르지 않았습니다. 같은 날 의회는 2개월간 진행된 회의 끝에 새 군주, 에드워드 3세를 공식 선포했습니다. 이때 의회는 왕이 직접 참석하지 않은 중세 영국 의회로는 드물었으며, 왕위 계승 절차와 함께 즉각적인 왕권 교체를 확정했습니다. 국왕이 부재한 상황에서도 귀족과 신하들은 회의장을 채우고, 새로운 왕을 선포함으로써 권력 공백을 메웠습니다. 결국 왕이 없었음에도 의회는 단순 보조를 넘어 실제 정치 무대로서 역할을 완수했으며, 그 순간 영국 왕권 체제는 의회의 힘으로 유지되었습니다.",
+    "title_line1": "왕 없는 1327 의회",
+    "title_line2": "새 왕을 바로 선포?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "왕 사라진 *1327*년"
+      },
+      {
+        "s": 2,
+        "text": "에드워드 *왕자* 임명"
+      },
+      {
+        "s": 3,
+        "text": "의회, *새왕* 선포"
+      },
+      {
+        "s": 5,
+        "text": "왕 없이 *의회* 지배"
+      }
+    ],
+    "image_queries": [
+      "1327 empty parliament",
+      "prince appointment ceremony",
+      "parliament new king proclamation",
+      "medieval parliament chamber",
+      "parliament ruling without king",
+      "medieval council decision"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "에드워드2세",
+      "에드워드3세",
+      "왕위계승",
+      "중세영국"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "왕위 계승 과정",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1327년",
+          "value": null,
+          "text": "왕 사라짐"
+        },
+        {
+          "label": "1월 7일",
+          "value": null,
+          "text": "에드워드 2세 폐위"
+        },
+        {
+          "label": "1월 7일",
+          "value": null,
+          "text": "에드워드 3세 선포"
+        },
+        {
+          "label": "2개월 후",
+          "value": null,
+          "text": "새 군주 확정"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "선사시대 석조 예술의 발견",
