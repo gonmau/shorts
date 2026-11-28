@@ -88649,5 +88649,397 @@
     "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0763_영국.mp4",
     "youtube_id": "jDTJO4K9WAY",
     "uploaded_at": "2026-11-28T15:19:07.268480+09:00"
+  },
+  {
+    "topic": "스페인(Habsburg Spain)의 제국, 한 왕이 두 대륙을 동시에 통치",
+    "hook": "남미와 필리핀을 지배하고, 영국까지 정복하려 했던 스페인의 왕이 있었습니다!",
+    "body": "16세기 스페인은 유럽과 아메리카에 걸친 거대한 제국을 형성했습니다. 그 중심에는 펠리페 2세가 있었죠. 그의 아버지는 신성로마제국 황제이자 스페인 왕이었던 카를 5세였습니다.",
+    "twist": "펠리페 2세는 1580년 포르투갈 왕위까지 차지하면서 해외 영토를 더욱 확장했습니다. 그리고 1588년, 영국 정복을 위해 약 130척의 대규모 함대를 출동시켰죠. 이 함대가 바로 스페인 무적함대입니다. 그런데 '무적함대'라는 이름은 스페인이 붙인 것이 아니라, 영국 측에서 사용한 표현이었습니다. 거대한 스페인 함대의 위세를 비꼬는 의미도 담겨 있었죠.",
+    "caveat": "이 내용은 1516~1700년 하스부르크 왕가 통치 시기의 기록에 기반합니다.",
+    "country": "스페인",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Habsburg Spain",
+    "source_url": "https://en.wikipedia.org/wiki/Habsburg_Spain",
+    "verify_note": "Habsburg Spain",
+    "confidence": "source",
+    "created_at": "2026-11-08T07:43:51.640307+00:00",
+    "status": "video_done",
+    "narration": "Yo, 남미 필리핀 장악하고 영국까지 노렸던 스페인 왕 있었네.\n16세기 유럽·아메리카 휘감은 거대한 제국 만들었네.\n그 중심엔 펠리페 2세, 왕좌 차지했네.\n아버지는 카를 5세, 신성로마 황제 겸 스페인 왕, 그도 차지했네.\n1580년 포르투갈 왕위 차지하고 해외 영토 확장했네.\n1588년 130척 함대 출동, 영국 정복을 위해 함대 출동했네.\n그 함대가 바로 스페인 무적함대, 바다를 휘감은 거였네.\n그 이름은 영국이 비웃으며 붙인 거였네.\n역사는 웃음으로 남았네.",
+    "title_line1": "스페인 무적함대의 진짜 이름",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "*펠리페 2세*"
+      },
+      {
+        "s": 2,
+        "text": "*포르투갈 왕위*까지 차지"
+      },
+      {
+        "s": 3,
+        "text": "약 *130척*의 대함대"
+      },
+      {
+        "s": 4,
+        "text": "영국이 붙인 *무적함대*"
+      }
+    ],
+    "image_queries": [
+      "Philip II portrait",
+      "Portuguese crown",
+      "130 ship fleet",
+      "Invincible Armada",
+      "Habsburg Spain map",
+      "Spanish galleon 1588",
+      "Spanish Armada ships",
+      "British ship",
+      "Satirical Spanish fleet",
+      "Habsburg Spain"
+    ],
+    "scene_count": 10,
+    "narration_original": "남미와 필리핀을 지배하고, 영국까지 정복하려 했던 스페인의 왕이 있었습니다! 16세기 스페인은 유럽과 아메리카에 걸친 거대한 제국을 형성했습니다. 그 중심에는 펠리페 2세가 있었죠. 그의 아버지는 신성로마제국 황제이자 스페인 왕이었던 카를 5세였습니다. 펠리페 2세는 1580년 포르투갈 왕위까지 차지하면서 해외 영토를 더욱 확장했습니다. 그리고 1588년, 영국 정복을 위해 약 130척의 대규모 함대를 출동시켰죠. 이 함대가 바로 스페인 무적함대입니다. 그런데 '무적함대'라는 이름은 스페인이 붙인 것이 아니라, 영국 측에서 사용한 표현이었습니다. 거대한 스페인 함대의 위세를 비꼬는 의미도 담겨 있었죠.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3422,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "695f9e6d63d3",
+        "at": "2026-11-11 22:04",
+        "scene": 1,
+        "rejected_ids": [
+          1876479,
+          "c:5249539",
+          "c:93071089"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3468,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "44c00797c764",
+        "at": "2026-11-11 22:04",
+        "scene": 2,
+        "rejected_ids": [
+          3357150,
+          7576019,
+          "c:108115194",
+          "c:130379903",
+          "c:148062899",
+          "c:150242991"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2689,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "e9f285bb169d",
+        "at": "2026-11-11 22:04",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3208,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "b2e690513e04",
+        "at": "2026-11-11 22:04",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3281,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "31b65257e401",
+        "at": "2026-11-11 22:04",
+        "scene": 5,
+        "rejected_ids": [
+          8589487,
+          "c:16885931",
+          "c:88989671"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3212,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "15f4de4d1abb",
+        "at": "2026-11-11 22:04",
+        "scene": 6,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3456,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "83f025bdfd1e",
+        "at": "2026-11-11 22:04",
+        "scene": 7,
+        "rejected_ids": [
+          10496342,
+          60526,
+          7244828,
+          8173525,
+          "c:1003110",
+          "c:31534131",
+          "c:84620324"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2803,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1605bb4d6f79",
+        "at": "2026-11-11 22:04",
+        "scene": 9,
+        "rejected_ids": [
+          8589487,
+          "c:90038737",
+          "c:90063954"
+        ]
+      }
+    ],
+    "overlays": [
+      {
+        "text": "16세기 스페인",
+        "start": 5.8,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "펠리페 2세",
+        "start": 10.9,
+        "dur": 3.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "아버지는 카를 5세",
+        "start": 14.1,
+        "dur": 4.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "영토 확장",
+        "start": 19.5,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "대규모 함대 (130척) 출현",
+        "start": 25.9,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "팝",
+        "bg": "#FFFFFF"
+      },
+      {
+        "text": "스페인 무적함대",
+        "start": 32.7,
+        "dur": 5.0,
+        "pos": "직접",
+        "x": 50.0,
+        "y": 50.0,
+        "size": 80,
+        "color": "#FF3B30",
+        "stroke": "#000000",
+        "bold": true,
+        "font": "",
+        "effect": "타자기",
+        "bg": "#FFFFFF"
+      }
+    ],
+    "title_opts": {
+      "color1": "#000000",
+      "color2": "#C800FF",
+      "colors1": {
+        "1": "#f61616"
+      },
+      "colors2": {}
+    },
+    "need": "curiosity",
+    "emotion": "wonder",
+    "rap": true,
+    "rap_of": 581,
+    "review_ok": true,
+    "ai_prompts": [
+      "A regal 16th‑century Spanish monarch on a grand balcony overlooking a map of South America and the Philippines, painted in warm oil tones, low angle view.",
+      "The same monarch standing before a massive globe, hand pointing toward the British Isles, dramatic side lighting, eye‑level perspective.",
+      "A sprawling 16th‑century empire illustrated on a parchment table, with miniature ships and caravans crossing oceans, top‑down view.",
+      "Portrait of Philip II in ornate armor seated on a throne, candlelight flickering, close‑up frontal shot, no facial details.",
+      "Charles V in imperial robes holding a scepter, background of a cathedral interior, slightly tilted camera from below.",
+      "A royal coronation ceremony in Lisbon 1580, with a golden crown placed on a throne, wide shot from the gallery.",
+      "A massive Spanish armada of 130 galleons anchored in a misty harbor, sunrise, aerial view looking down the rows of ships.",
+      "The same armada setting sail, sails full, turbulent sea, dynamic low‑angle from the water’s surface.",
+      "The Spanish Armada battling stormy waves, cannon smoke rising, dramatic wide angle from the ship’s deck.",
+      "A whimsical illustration of English sailors laughing at a distant Spanish flag on the horizon, soft pastel palette, distant perspective."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "commons",
+        "user": "Sofonisba Anguissola",
+        "license": "Public domain",
+        "title": "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
+        "id": "c:5249539"
+      },
+      {
+        "scene": 2,
+        "source": "commons",
+        "user": "Anonymous Unknown author",
+        "license": "Public domain",
+        "title": "Portugal Crown Cortes.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Portugal_Crown_Cortes.jpg",
+        "id": "c:130379903"
+      },
+      {
+        "scene": 3,
+        "source": "commons",
+        "user": "George Chernilevsky",
+        "license": "Public domain",
+        "title": "Project 130 SR-541 ship 2008 G1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Project_130_SR-541_ship_2008_G1.jpg",
+        "id": "c:7329694"
+      },
+      {
+        "scene": 4,
+        "source": "commons",
+        "user": "anonymous",
+        "license": "Public domain",
+        "title": "Invincible Armada.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Invincible_Armada.jpg",
+        "id": "c:284027"
+      },
+      {
+        "scene": 5,
+        "source": "commons",
+        "user": "Barjimoa",
+        "license": "CC BY-SA 4.0",
+        "title": "Habsburg Empire of Charles V.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Habsburg_Empire_of_Charles_V.png",
+        "id": "c:78077272"
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "Michelangelo_2021",
+        "page": "https://pixabay.com/photos/neptune-vessel-spanish-galleon-ship-6316028/",
+        "id": 6316028
+      },
+      {
+        "scene": 7,
+        "source": "commons",
+        "user": "anonymous",
+        "license": "Public domain",
+        "title": "Spanish Armada fireships.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Spanish_Armada_fireships.jpg",
+        "id": "c:59443607"
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Poor Dick, the Holiday Admiral returned to Port, after searching in vain for the Spanish F",
+        "page": "https://commons.wikimedia.org/wiki/File:Poor_Dick,_the_Holiday_Admiral_returned_to_Port,_after_searching_in_vain_for_the_Spanish_Fleet_(BM_1868,0808.5989).jpg",
+        "id": "c:90063954"
+      },
+      {
+        "scene": 10,
+        "source": "commons",
+        "user": "Public domain / CC0",
+        "license": "Public domain",
+        "title": "Spanish Habsburgs.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Spanish_Habsburgs.jpg",
+        "id": "c:1003110"
+      }
+    ],
+    "image_queries_done": [
+      "Philip II portrait",
+      "Portuguese crown",
+      "130 ship fleet",
+      "Invincible Armada",
+      "Habsburg Spain map",
+      "Spanish galleon 1588",
+      "Spanish Armada ships",
+      "British ship",
+      "Satirical Spanish fleet",
+      "Habsburg Spain"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio/0764_rap_v2.mp3",
+    "timing_path_v2": "audio/0764_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "/home/runner/work/shorts/shorts/videos/0764_스페인.srt",
+    "video_path_v6": "/home/runner/work/shorts/shorts/videos/0764_스페인_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "/home/runner/work/shorts/shorts/videos/0764_스페인.mp4",
+    "youtube_id": "4gFZDCz69V4",
+    "uploaded_at": "2026-11-28T18:45:28.426648+09:00"
   }
 ]
