@@ -87620,5 +87620,317 @@
     "curate_score": 3,
     "curate_why": "인구 540만, 일반적 소개·충돌 없음",
     "curate_top": false
+  },
+  {
+    "topic": "이오지마 상륙 작전, 18km 터널 네트워크",
+    "hook": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면?",
+    "body": "1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 목표는 일본 본토 공격을 위한 비행장 확보와 미군 폭격기의 비상 착륙 기지 마련이었죠.",
+    "twist": "하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다.",
+    "caveat": "전투 세부 내용은 주로 미군 기록에 근거합니다.",
+    "country": "일본",
+    "theme": "군사/전쟁사",
+    "wiki_title": "Battle of Iwo Jima",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+    "verify_note": "Battle of Iwo Jima",
+    "confidence": "source",
+    "created_at": "2026-11-09T08:01:27.510096+00:00",
+    "status": "video_done",
+    "narration": "일본군 18km 지하 방어망에 숨어 있었네.\n미 해병대 1945년 2월 19일 이오지마 상륙했었네.\n목표는 일본 본토 비행장 확보하고 폭격기 착륙지 만들었네.\n근데 일본 이미 18km 넘는 터널·벙커 다 세웠었네.\n해변서 바로 안 뛰고, 지하서 미군 모이면 총쏘았**했네**.\n미군 화염방사·폭약·포병 동원해 동굴 박살**했네**.\n남부 비행장 다음날 장악했네.\n짧은 작전 악몽이 돼, 이오지마 전장은 기억했네.",
+    "title_line1": "이오지마지하방어망",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "18km *지하 방어망*"
+      },
+      {
+        "s": 3,
+        "text": "일본군의 *은폐 작전*"
+      },
+      {
+        "s": 5,
+        "text": "해변에 쏟아진 *집중 사격*"
+      },
+      {
+        "s": 8,
+        "text": "예상보다 길어진 *전투*"
+      }
+    ],
+    "image_queries": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
+    ],
+    "scene_count": 10,
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.3397,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3a5aa3a65117",
+        "at": "2026-11-09 19:15",
+        "scene": 1,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3291,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "04a56fc00ac8",
+        "at": "2026-11-09 19:15",
+        "scene": 2,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2524,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "3b1898ca21de",
+        "at": "2026-11-09 19:15",
+        "scene": 3,
+        "rejected_ids": [
+          595463,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2937,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "670b7060c03a",
+        "at": "2026-11-09 19:15",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2838,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "5e171cdb0e84",
+        "at": "2026-11-09 19:15",
+        "scene": 5,
+        "rejected_ids": [
+          2565957,
+          9765068,
+          "c:164313974",
+          "c:202083507",
+          "c:34909850"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3363,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "d733e52b77af",
+        "at": "2026-11-09 19:15",
+        "scene": 6,
+        "rejected_ids": [
+          2991940,
+          5125073,
+          "c:154351779",
+          "c:57479940"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2434,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "1c509e3b7d8a",
+        "at": "2026-11-09 19:15",
+        "scene": 7,
+        "rejected_ids": [
+          1092326,
+          "c:186250053"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.243,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "a89626838c17",
+        "at": "2026-11-09 19:15",
+        "scene": 8,
+        "rejected_ids": []
+      }
+    ],
+    "narration_original": "일본군이 18km의 지하 방어망 속에 숨어 미군을 기다리고 있었다면 어떨까요? 1945년 2월 19일, 미국 해병대가 태평양의 이오지마 섬에 상륙했습니다. 미군의 목표는 일본 본토 공격을 위한 비행장 확보와 폭격기의 비상 착륙 기지 마련이었습니다. 하지만 일본군은 이미 섬 곳곳에 18km가 넘는 지하 터널과 벙커, 은폐 포대를 구축해 놓았습니다. 일본군은 해변에서 즉시 공격하지 않고 지하에 숨어 있다가 미군이 상륙해 모여들자 일제히 사격을 퍼부었습니다. 미군은 화염방사기와 폭약, 포병 지원까지 동원해 동굴과 벙커를 하나씩 제거해야 했습니다. 남부 비행장은 상륙 다음 날 확보했지만, 섬 전체를 장악하기까지는 약 한 달의 치열한 전투가 이어졌습니다. 당초 예상했던 단기간의 작전은 악몽 같은 소모전으로 바뀌었고, 이오지마는 태평양 전쟁에서 가장 치열했던 전장 중 하나로 남았습니다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "country_before_fix": "싱가포르",
+    "grounding": {
+      "v": 1,
+      "at": "2026-11-17",
+      "distinct": 4,
+      "concrete": 5,
+      "supported": 5,
+      "reason": "이오지마 전투와 18km 터널은 실제 기록이 있으나 일본 전역이 아니라 해당 섬에 한정돼 구체적·지원됨",
+      "avg": 4.7,
+      "flags": [
+        "근거 문서 제목에 나라 없음(일반 문서일 수 있음)"
+      ]
+    },
+    "curate_why": "구체적 숫자·터널, 전쟁 배경 있지만 장면 애매",
+    "curate_top": false,
+    "hashtags": [
+      "IwoJima",
+      "Tunnel",
+      "Bunker",
+      "Airfield",
+      "Marines"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "bignum",
+      "title": "지하 방어망 길이",
+      "s": 1,
+      "dur": 5.0,
+      "unit": "km",
+      "rows": [
+        {
+          "label": "지하 방어망",
+          "value": null,
+          "text": "18km"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "secret tunnel entrance, documentary scene",
+      "Iwo Jima landing troops, documentary scene",
+      "Iwo Jima tunnel network, documentary scene",
+      "Iwo Jima tunnel entry, documentary scene",
+      "battle with trap, documentary scene",
+      "infantry artillery tunnel combat, documentary scene",
+      "Iwo Jima airfield after tunnel, documentary scene",
+      "terrain changing battle, documentary scene",
+      "Battle of Iwo Jima, documentary scene",
+      "Japan landmark, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "secret tunnel entrance, documentary scene",
+      "Iwo Jima landing troops, documentary scene",
+      "Iwo Jima tunnel network, documentary scene",
+      "Iwo Jima tunnel entry, documentary scene",
+      "battle with trap, documentary scene",
+      "infantry artillery tunnel combat, documentary scene",
+      "Iwo Jima airfield after tunnel, documentary scene",
+      "terrain changing battle, documentary scene",
+      "Battle of Iwo Jima, documentary scene",
+      "Japan landmark, documentary scene"
+    ],
+    "rap": true,
+    "rap_of": 622,
+    "review_ok": true,
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "secret tunnel entrance, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima landing troops, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima tunnel network, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima tunnel entry, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "battle with trap, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "infantry artillery tunnel combat, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Iwo Jima airfield after tunnel, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "terrain changing battle, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "pixabay",
+        "user": "tislas",
+        "page": "https://pixabay.com/photos/iwo-jima-military-flag-monument-3820507/",
+        "id": 3820507
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "MasashiWakui",
+        "page": "https://pixabay.com/photos/japan-osaka-pedestrians-crossing-2014616/",
+        "id": 2014616
+      }
+    ],
+    "image_queries_done": [
+      "secret tunnel entrance",
+      "Iwo Jima landing troops",
+      "Iwo Jima tunnel network",
+      "Iwo Jima tunnel entry",
+      "battle with trap",
+      "infantry artillery tunnel combat",
+      "Iwo Jima airfield after tunnel",
+      "terrain changing battle",
+      "Battle of Iwo Jima",
+      "Japan landmark"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio\\0761_rap_v2.mp3",
+    "timing_path_v2": "audio\\0761_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0761_일본.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0761_일본_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0761_일본.mp4",
+    "youtube_id": "xbd_Rm9uGKM",
+    "uploaded_at": "2026-11-28T14:23:24.898380+09:00"
   }
 ]
