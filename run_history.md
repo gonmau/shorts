@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-28 10:15:33 (KST) · 기록 2300건 · 소재 761개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-28 10:16:28 (KST) · 기록 2301건 · 소재 761개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -17,7 +17,7 @@
 | check_country | 20 | 0 | 6초 |
 | check_uploads | 28 | 0 | 2분 52초 |
 | cleanup_media | 8 | 0 | 9초 |
-| curate | 4 | 0 | 13분 43초 |
+| curate | 5 | 0 | 13분 50초 |
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
@@ -48,6 +48,7 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:16 | PC | curate | curate.py --cutoff 7 --top 10 --review-max 10 --dry-run | ✅ | 6초 |  |
 | 10:15 | PC | generate_culture_facts | generate_culture_facts.py --count 12 | ✅ | 2분 23초 |  |
 | 10:04 | PC | trend_research | trend_research.py --yt 세계 역사, 이색 기록, 핫 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ✅ | 24초 |  |
 
