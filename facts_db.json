@@ -78557,7 +78557,7 @@
     "verify_note": "Quinoa",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78586,7 +78586,7 @@
     "verify_note": "Pattaya Floating Market",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:33.765131+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78616,7 +78616,7 @@
     "verify_note": "Coffee ceremony of Ethiopia and Eritrea",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78646,7 +78646,7 @@
     "verify_note": "Arabic coffee",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78678,7 +78678,7 @@
     "verify_note": "Batik",
     "confidence": "source",
     "created_at": "2026-11-14T12:56:39.845563+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78708,7 +78708,7 @@
     "verify_note": "Highland games",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78740,7 +78740,7 @@
     "verify_note": "Mexican mask-folk art",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78772,7 +78772,7 @@
     "verify_note": "The Songlines",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:01.154376+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -78802,7 +78802,7 @@
     "verify_note": "Christmas market",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:29.021689+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 1,
     "curate_why": "언어 변화 소개, 흥미·충격 요소 거의 없음",
     "prev_status": "unverified",
@@ -78834,7 +78834,7 @@
     "verify_note": "African textiles",
     "confidence": "source",
     "created_at": "2026-11-14T12:57:29.021689+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 1,
     "curate_why": "직물 문화, 전쟁·군사·금지와 무관",
     "prev_status": "unverified",
@@ -79566,7 +79566,7 @@
     "verify_note": "Mongolia",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:10.565467+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79595,7 +79595,7 @@
     "verify_note": "Sámi people",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:10.565467+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79627,7 +79627,7 @@
     "verify_note": "Tsukimi",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:10.565467+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79656,7 +79656,7 @@
     "verify_note": "Sauna",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:15.166557+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79688,7 +79688,7 @@
     "verify_note": "Subak (irrigation)",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:15.166557+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79717,7 +79717,7 @@
     "verify_note": "Aymara people",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:15.166557+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79898,7 +79898,7 @@
     "verify_note": "Coffee production",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:39.886811+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79929,7 +79929,7 @@
     "verify_note": "Adumu",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:39.886811+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -79958,7 +79958,7 @@
     "verify_note": "Podstakannik",
     "confidence": "source",
     "created_at": "2026-11-18T02:05:39.886811+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80236,7 +80236,7 @@
     "verify_note": "Bunad",
     "confidence": "source",
     "created_at": "2026-11-18T02:06:35.362418+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80265,7 +80265,7 @@
     "verify_note": "Plomari",
     "confidence": "source",
     "created_at": "2026-11-18T02:06:53.916080+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80294,7 +80294,7 @@
     "verify_note": "Poland",
     "confidence": "source",
     "created_at": "2026-11-18T02:06:53.916080+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80323,7 +80323,7 @@
     "verify_note": "Ofrenda",
     "confidence": "source",
     "created_at": "2026-11-18T02:06:53.916080+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80354,7 +80354,7 @@
     "verify_note": "Indigenous Australian art",
     "confidence": "source",
     "created_at": "2026-11-18T02:07:11.300800+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80385,7 +80385,7 @@
     "verify_note": "Samburu people",
     "confidence": "source",
     "created_at": "2026-11-18T02:07:11.300800+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -80414,7 +80414,7 @@
     "verify_note": "Frankfurt Christmas Market",
     "confidence": "source",
     "created_at": "2026-11-18T02:07:11.300800+00:00",
-    "status": "unverified",
+    "status": "verified",
     "grounding": {
       "v": 1,
       "at": "2026-11-18",
@@ -85791,7 +85791,7 @@
     "caveat": "이 내용은 영국 중세 의회 기록에 근거한 것이며, 일부 해석은 학자마다 차이가 있을 수 있습니다.",
     "confidence": "source",
     "verify_note": "1327년 의회",
-    "status": "unverified",
+    "status": "verified",
     "created_at": "2026-11-28T01:08:47.884369+00:00",
     "theme": "키워드",
     "source_url": "https://ko.wikipedia.org/wiki/1327%EB%85%84_%EC%9D%98%ED%9A%8C",
@@ -85816,7 +85816,7 @@
     "verify_note": "Korean art",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:53.873807+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 5,
     "curate_why": "3000년 전 돌 그림, 사실성·시각화 약함",
     "curate_top": false
@@ -85835,7 +85835,7 @@
     "verify_note": "Balinese people",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:53.873807+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 5,
     "curate_why": "99%·힌두교 대비, 충돌 요소 부족",
     "curate_top": false
@@ -85854,7 +85854,7 @@
     "verify_note": "Peru",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 4,
     "curate_why": "사막·산·정글 동시, 전쟁·권력 부재",
     "curate_top": false
@@ -85873,7 +85873,7 @@
     "verify_note": "Icelandic Elf School",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "보이지 않는 8cm 엘프, 사실성 낮음",
     "curate_top": false
@@ -85892,7 +85892,7 @@
     "verify_note": "Hanami",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 4,
     "curate_why": "벚꽃·날씨 연결, 구체적 숫자 없음",
     "curate_top": false
@@ -85911,7 +85911,7 @@
     "verify_note": "Finland",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "두 언어 표지판, 충돌·숫자 부재",
     "curate_top": false
@@ -85930,7 +85930,7 @@
     "verify_note": "Ulaanbaatar",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "최냉각 수도, 숫자·권력 요소 부족",
     "curate_top": false
@@ -85949,7 +85949,7 @@
     "verify_note": "Maasai people",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 4,
     "curate_why": "30년·인구 3배, 숫자·충돌 약함",
     "curate_top": false
@@ -85968,7 +85968,7 @@
     "verify_note": "Reindeer herding",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:53.401874+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 4,
     "curate_why": "100,000명 순록 몰기, 규모는 있으나 전쟁·권력 부재",
     "curate_top": false
@@ -85987,7 +85987,7 @@
     "verify_note": "Khlong Lat Mayom Floating Market",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:53.401874+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 4,
     "curate_why": "2004년·물 위 음식, 금지·처벌 요소 없음",
     "curate_top": false
@@ -86006,7 +86006,7 @@
     "verify_note": "Resist dyeing",
     "confidence": "source",
     "created_at": "2026-11-28T01:15:19.018592+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 5,
     "curate_why": "왁스 금지 구역, 법·제재 암시",
     "curate_top": false
@@ -86025,7 +86025,7 @@
     "verify_note": "Scotland",
     "confidence": "source",
     "created_at": "2026-11-28T01:15:19.018592+00:00",
-    "status": "unverified",
+    "status": "verified",
     "curate_score": 3,
     "curate_why": "인구 540만, 일반적 소개·충돌 없음",
     "curate_top": false
