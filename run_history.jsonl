@@ -2303,3 +2303,8 @@
 {"id": "1795829658892-c2313b", "time": "2026-11-28 10:34:18", "channel": "KO", "source": "PC", "kind": "curate", "title": "curate.py --cutoff 3 --top 10 --review-max 10", "status": "success", "secs": 749.9, "detail": ""}
 {"id": "1795830045116-4a3676", "time": "2026-11-28 10:40:45", "channel": "KO", "source": "PC", "kind": "코드업데이트", "title": "gonmau/shorts: 1개 (local_ui.py)", "status": "success", "secs": null, "detail": ""}
 {"id": "1795830211044-e8f7fe", "time": "2026-11-28 10:43:31", "channel": "KO", "source": "PC", "kind": "yt_report", "title": "yt_report.py --days 28 --no-discord", "status": "success", "secs": 11.6, "detail": ""}
+{"id": "1795830299711-68aff2", "time": "2026-11-28 10:44:59", "channel": "KO", "source": "PC", "kind": "promote_ready", "title": "promote_ready.py --start 0", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1795830300022-1efc6b", "time": "2026-11-28 10:45:00", "channel": "KO", "source": "PC", "kind": "apply_review", "title": "apply_review.py", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1795830300349-19290d", "time": "2026-11-28 10:45:00", "channel": "KO", "source": "PC", "kind": "approve", "title": "approve.py --limit 10 --start 0", "status": "success", "secs": 0.3, "detail": ""}
+{"id": "1795831855869-ceb27e", "time": "2026-11-28 11:10:55", "channel": "KO", "source": "PC", "kind": "generate_script", "title": "generate_script.py --limit 10 --start 0", "status": "success", "secs": 1555.5, "detail": ""}
+{"id": "1795831857061-ed8cc6", "time": "2026-11-28 11:10:57", "channel": "KO", "source": "PC", "kind": "export_review", "title": "export_review.py --limit 10 --start 0", "status": "success", "secs": 0.4, "detail": ""}
