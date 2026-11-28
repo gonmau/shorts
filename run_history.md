@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-28 10:34:34 (KST) · 기록 2303건 · 소재 761개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-28 10:43:44 (KST) · 기록 2305건 · 소재 761개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -38,9 +38,10 @@
 | trend_research | 4 | 3 | 2분 58초 |
 | update_description | 7 | 1 | 22초 |
 | upload_to_youtube | 40 | 0 | 31분 13초 |
+| yt_report | 1 | 0 | 11초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
 | 쇼츠 | 129 | 6 | 12시간 17분 |
-| 코드업데이트 | 134 | 0 | 0초 |
+| 코드업데이트 | 135 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
 
@@ -48,6 +49,8 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 10:43 | PC | yt_report | yt_report.py --days 28 --no-discord | ✅ | 11초 |  |
+| 10:40 | PC | 코드업데이트 | gonmau/shorts: 1개 (local_ui.py) | ✅ |  |  |
 | 10:34 | PC | curate | curate.py --cutoff 3 --top 10 --review-max 10 | ✅ | 12분 29초 |  |
 | 10:21 | PC | 코드업데이트 | gonmau/shorts: 2개 (common.py, curate.py) | ✅ |  |  |
 | 10:16 | PC | curate | curate.py --cutoff 7 --top 10 --review-max 10 --dry-run | ✅ | 6초 |  |
