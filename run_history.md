@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-28 11:11:11 (KST) · 기록 2310건 · 소재 761개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-28 13:05:12 (KST) · 기록 2318건 · 소재 761개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -10,8 +10,8 @@
 | DB커밋 | 129 | 0 | 0초 |
 | ai_images | 9 | 5 | 3분 0초 |
 | ai_prompts | 7 | 0 | 6초 |
-| apply_review | 218 | 0 | 57초 |
-| approve | 72 | 0 | 17초 |
+| apply_review | 219 | 0 | 58초 |
+| approve | 73 | 0 | 17초 |
 | audience | 3 | 0 | 10분 47초 |
 | build_video | 111 | 0 | 17시간 49분 |
 | check_country | 20 | 0 | 6초 |
@@ -21,16 +21,16 @@
 | cuts | 2 | 0 | 10초 |
 | deep_topics | 2 | 0 | 7초 |
 | discover_sns | 1 | 0 | 1분 22초 |
-| export_review | 81 | 0 | 17초 |
-| fetch_images | 236 | 9 | 2시간 46분 |
+| export_review | 82 | 0 | 18초 |
+| fetch_images | 237 | 9 | 2시간 52분 |
 | generate_culture_facts | 20 | 0 | 42분 56초 |
-| generate_script | 276 | 0 | 2시간 23분 |
-| generate_tts | 122 | 0 | 38분 12초 |
+| generate_script | 278 | 0 | 2시간 39분 |
+| generate_tts | 123 | 0 | 39분 59초 |
 | grounding | 3 | 0 | 3분 33초 |
 | image_check | 53 | 4 | 9분 38초 |
 | infographic | 3 | 0 | 8초 |
 | make_thumbnail | 107 | 0 | 2분 43초 |
-| promote_ready | 218 | 0 | 50초 |
+| promote_ready | 219 | 0 | 51초 |
 | rap_short | 22 | 0 | 8분 45초 |
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
@@ -49,6 +49,14 @@
 
 | 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
 |---|---|---|---|---|---|---|
+| 11:37 | PC | generate_tts | generate_tts.py --limit 10 --start 0 | ✅ | 1분 47초 |  |
+| 11:35 | PC | fetch_images | fetch_images.py --limit 10 --start 0 --any | ✅ | 5분 57초 |  |
+| 11:29 | PC | generate_script | generate_script.py --extras-only --limit 10 --start 0 | ✅ | 2초 |  |
+| 11:29 | PC | export_review | export_review.py --limit 10 --start 0 | ✅ | 0초 |  |
+| 11:29 | PC | generate_script | generate_script.py --limit 10 --start 0 | ✅ | 15분 28초 |  |
+| 11:14 | PC | approve | approve.py --limit 10 --start 0 | ✅ | 0초 |  |
+| 11:14 | PC | promote_ready | promote_ready.py --start 0 | ✅ | 0초 |  |
+| 11:14 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
 | 11:10 | PC | export_review | export_review.py --limit 10 --start 0 | ✅ | 0초 |  |
 | 11:10 | PC | generate_script | generate_script.py --limit 10 --start 0 | ✅ | 25분 55초 |  |
 | 10:45 | PC | apply_review | apply_review.py | ✅ | 0초 |  |
