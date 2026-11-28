@@ -4021,7 +4021,7 @@ with TR:
     rap_once = st.checkbox("가사 확인 없이 한 번에 끝까지 진행", False, key="rap_once", help="끄면(기본) ①가사만 만들고 멈춰서 가사를 보고 고친 뒤 ②영상 만들기를 누릅니다")
 
     def _rap_steps(_n):
-        steps = [("fetch_images.py", "--index", str(_n))]
+        steps = [("fetch_images.py", "--index", str(_n)), ("rap_short.py", "fill-gaps", "--index", str(_n))]
         if rap_flow.startswith("word"):
             steps.append(("rap_short.py", "flow", "--index", str(_n), "--bpm", str(int(rap_bpm))))
         else:

@@ -92,6 +92,7 @@ jobs:
       - name: 장면 이미지 (원본/이전 실행 이미지가 있으면 재사용, 없을 때만 새로 받음)
         run: |
           python fetch_images.py --index "$NEW"
+          python rap_short.py fill-gaps --index "$NEW"
           python img_cache.py save
       - name: 음성 - 단어별 랩 플로우 (16분음표 격자)
         if: ${{ github.event.inputs.flow != 'line' }}

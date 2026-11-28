@@ -359,6 +359,24 @@ def flow(a):
     it["audio_path_v2"] = str(ap); it["timing_path_v2"] = str(tp); it["status_tts_v2"] = "done"; it["tts_voice_v2"] = "supertonic-rapflow"; G.save_db(db)
     shutil.rmtree(work, ignore_errors=True); print(f"랩 플로우 음성 완료({a.bpm}bpm): {len(lines)}줄, 총 {pos:.1f}초, 단어 {len(cache)}종")
 
+def fill_gaps(a):
+    """이미지를 못 받은 장면(한도 초과·너무 작은 사진 등)을 가장 가까운 장면 이미지로 채운다. 색 카드로 영상을 만들지 않으면서 build_video의 '이미지 누락' 중단을 막는다."""
+    import shutil
+    import generate_script as G
+    from common import visual_dir
+    from scenes import used_scene_count
+    db = G.load_db(); it = db[a.index]; base = Path(__file__).resolve().parent
+    fol = visual_dir(base, a.index, it); n = used_scene_count(it)
+    have = [k for k in range(1, n + 1) if (fol / f"scene_{k:02d}.png").exists()]
+    if not have: sys.exit("받은 이미지가 하나도 없습니다")
+    fixed = []
+    for k in range(1, n + 1):
+        p = fol / f"scene_{k:02d}.png"
+        if p.exists(): continue
+        near = min(have, key=lambda h: (abs(h - k), h > k))      # 가까운 장면, 같은 거리면 앞 장면
+        shutil.copy2(fol / f"scene_{near:02d}.png", p); fixed.append((k, near))
+    print("빈 장면 채움: " + (", ".join(f"{k}번<-{n_}번" for k, n_ in fixed) if fixed else "없음"))
+
 def beat(a):
     import numpy as np
     import generate_script as G
@@ -380,6 +398,7 @@ def main():
     fl = sp.add_parser("flow"); fl.add_argument("--index", type=int, required=True); fl.add_argument("--bpm", type=int, default=92)
     al = sp.add_parser("align"); al.add_argument("--index", type=int, required=True); al.add_argument("--bpm", type=int, default=92)
     b = sp.add_parser("beat"); b.add_argument("--index", type=int, required=True); b.add_argument("--bpm", type=int, default=92); b.add_argument("--style", default="auto", help="auto|boombap|trap|lofi|dark|file:<bgm폴더 파일명>")
-    a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat}[a.cmd](a)
+    g = sp.add_parser("fill-gaps"); g.add_argument("--index", type=int, required=True)
+    a = ap.parse_args(); {"make": make, "flow": flow, "align": align, "beat": beat, "fill-gaps": fill_gaps}[a.cmd](a)
 if __name__ == "__main__":
     main()
