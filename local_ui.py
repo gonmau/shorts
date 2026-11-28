@@ -663,9 +663,17 @@ with T1a:
             if st.button("🧹 선별·점검 실행", key="cu_run"):
                 if run("curate.py", "--cutoff", str(int(cu_cut)), "--top", str(int(cu_top)), "--review-max", str(int(cu_rv)), *(["--dry-run"] if cu_dry else [])):
                     st.session_state["gh_dirty"] = True
-    if os.path.exists("yt_report.md") and not EN:
-        with st.expander("📈 유튜브 성과 리포트 (GitHub이 매일 갱신 · update_code로 최신 받기)"):
-            st.markdown(open("yt_report.md", encoding="utf-8").read())
+    if not EN:
+        with st.expander("📈 유튜브 성과 리포트 (GitHub이 매일 갱신 · 여기서 지금 갱신도 가능)"):
+            _yc1, _yc2 = st.columns([1, 1])
+            _yd = _yc1.number_input("분석 기간(일)", 7, 365, 28, key="yt_days")
+            if _yc2.button("🔄 지금 갱신 (PC에서 실행)", key="yt_run", help="YouTube Analytics에서 영상별 조회수·시청률을 받아 yt_stats.json / yt_report.md 를 갱신합니다. 토큰에 분석 권한(yt-analytics.readonly)이 필요합니다"):
+                if run("yt_report.py", "--days", str(int(_yd)), "--no-discord"):
+                    st.session_state["gh_dirty"] = True
+            if os.path.exists("yt_report.md"):
+                st.markdown(open("yt_report.md", encoding="utf-8").read())
+            else:
+                st.caption("아직 리포트가 없습니다. 위 버튼으로 만들거나 GitHub에서 받아 오세요.")
     _db1 = _ld()
     cand1 = [i for i, f in enumerate(_db1) if i >= int(start) and f.get("status") == "unverified"
              and len(str(f.get("narration") or "").strip()) < NARR_MIN]
