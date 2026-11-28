@@ -58526,7 +58526,10 @@
       "Holman Fenwick Willan model display",
       "lawyer pointing to model",
       "Holman Fenwick Willan office symbol",
-      "industrial history exhibit"
+      "industrial history exhibit",
+      "Holman Fenwick Willan",
+      "Brazil landmark",
+      "Brazil culture"
     ],
     "scene_count": 10,
     "curate_score": 2,
@@ -58563,7 +58566,110 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "Holman Fenwick Willan museum interior, documentary scene",
+      "Holman Fenwick Willan 700 lawyers, documentary scene",
+      "Holman Fenwick Willan London aircraft, documentary scene",
+      "Holman Fenwick Willan model display, documentary scene",
+      "lawyer pointing to model, documentary scene",
+      "Holman Fenwick Willan office symbol, documentary scene",
+      "industrial history exhibit, documentary scene",
+      "Holman Fenwick Willan, documentary scene",
+      "Brazil landmark, documentary scene",
+      "Brazil culture, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Holman Fenwick Willan museum interior, documentary scene",
+      "Holman Fenwick Willan 700 lawyers, documentary scene",
+      "Holman Fenwick Willan London aircraft, documentary scene",
+      "Holman Fenwick Willan model display, documentary scene",
+      "lawyer pointing to model, documentary scene",
+      "Holman Fenwick Willan office symbol, documentary scene",
+      "industrial history exhibit, documentary scene",
+      "Holman Fenwick Willan, documentary scene",
+      "Brazil landmark, documentary scene",
+      "Brazil culture, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan museum interior, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan 700 lawyers, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan London aircraft, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan model display, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "lawyer pointing to model, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan office symbol, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "industrial history exhibit, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Holman Fenwick Willan, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Brazil landmark, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Brazil culture, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Holman Fenwick Willan museum interior",
+      "Holman Fenwick Willan 700 lawyers",
+      "Holman Fenwick Willan London aircraft",
+      "Holman Fenwick Willan model display",
+      "lawyer pointing to model",
+      "Holman Fenwick Willan office symbol",
+      "industrial history exhibit",
+      "Holman Fenwick Willan",
+      "Brazil landmark",
+      "Brazil culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0493_브라질_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0493_브라질_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "코로나·틱톡이 만든 집밥 열풍",
@@ -59588,7 +59694,7 @@
     "verify_note": "Easter in Italy",
     "confidence": "source",
     "created_at": "2026-11-03T05:34:15.988350+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-11",
@@ -59753,7 +59859,16 @@
       "Easter table lamb tradition",
       "Easter dinner choice"
     ],
-    "image_source": "pixabay"
+    "image_source": "pixabay",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0499_이탈리아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0499_이탈리아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0499_이탈리아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0499_이탈리아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "6OgUotgC4_Y",
+    "uploaded_at": "2026-11-28T13:18:28.847320+09:00"
   },
   {
     "topic": "중국 북부 농촌의 새해 축제 ‘Shehuo(社火)’",
@@ -60203,7 +60318,10 @@
       "remote Lao ethnic village",
       "colorful Lao traditional textiles",
       "four language storytelling Laos",
-      "living multicultural literature Laos"
+      "living multicultural literature Laos",
+      "Literature of Laos",
+      "Laos landmark",
+      "Laos culture"
     ],
     "scene_count": 10,
     "infographic": {
@@ -60241,7 +60359,110 @@
       "다언어이야기",
       "민족문학",
       "문화교차"
-    ]
+    ],
+    "ai_prompts": [
+      "Laos village storytelling gathering, documentary scene",
+      "Laos traditional oral storytelling, documentary scene",
+      "multicultural village Laos, documentary scene",
+      "remote Lao ethnic village, documentary scene",
+      "colorful Lao traditional textiles, documentary scene",
+      "four language storytelling Laos, documentary scene",
+      "living multicultural literature Laos, documentary scene",
+      "Literature of Laos, documentary scene",
+      "Laos landmark, documentary scene",
+      "Laos culture, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Laos village storytelling gathering, documentary scene",
+      "Laos traditional oral storytelling, documentary scene",
+      "multicultural village Laos, documentary scene",
+      "remote Lao ethnic village, documentary scene",
+      "colorful Lao traditional textiles, documentary scene",
+      "four language storytelling Laos, documentary scene",
+      "living multicultural literature Laos, documentary scene",
+      "Literature of Laos, documentary scene",
+      "Laos landmark, documentary scene",
+      "Laos culture, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Laos village storytelling gathering, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Laos traditional oral storytelling, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "multicultural village Laos, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "remote Lao ethnic village, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "colorful Lao traditional textiles, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "four language storytelling Laos, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "living multicultural literature Laos, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Literature of Laos, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Laos landmark, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Laos culture, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Laos village storytelling gathering",
+      "Laos traditional oral storytelling",
+      "multicultural village Laos",
+      "remote Lao ethnic village",
+      "colorful Lao traditional textiles",
+      "four language storytelling Laos",
+      "living multicultural literature Laos",
+      "Literature of Laos",
+      "Laos landmark",
+      "Laos culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0502_라오스_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0502_라오스_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "멕시코 거리에서 살아 숨쉬는 옛날 옥수수 처리법",
@@ -60306,7 +60527,10 @@
       "Mexican street food stall",
       "boiling corn on site",
       "Mexican street ancient taste",
-      "hands holding traditional corn"
+      "hands holding traditional corn",
+      "Mexican cuisine",
+      "Mexico landmark",
+      "Mexico culture"
     ],
     "scene_count": 10,
     "infographic": {
@@ -60338,7 +60562,110 @@
       "Maya",
       "Teotihuacan",
       "Toltec"
-    ]
+    ],
+    "ai_prompts": [
+      "Mexican traditional corn boiling, documentary scene",
+      "ancient nixtamalization stone, documentary scene",
+      "Teotihuacan cooking pottery, documentary scene",
+      "Mexican street food stall, documentary scene",
+      "boiling corn on site, documentary scene",
+      "Mexican street ancient taste, documentary scene",
+      "hands holding traditional corn, documentary scene",
+      "Mexican cuisine, documentary scene",
+      "Mexico landmark, documentary scene",
+      "Mexico culture, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Mexican traditional corn boiling, documentary scene",
+      "ancient nixtamalization stone, documentary scene",
+      "Teotihuacan cooking pottery, documentary scene",
+      "Mexican street food stall, documentary scene",
+      "boiling corn on site, documentary scene",
+      "Mexican street ancient taste, documentary scene",
+      "hands holding traditional corn, documentary scene",
+      "Mexican cuisine, documentary scene",
+      "Mexico landmark, documentary scene",
+      "Mexico culture, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexican traditional corn boiling, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "ancient nixtamalization stone, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Teotihuacan cooking pottery, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexican street food stall, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "boiling corn on site, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexican street ancient taste, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "hands holding traditional corn, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexican cuisine, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexico landmark, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Mexico culture, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Mexican traditional corn boiling",
+      "ancient nixtamalization stone",
+      "Teotihuacan cooking pottery",
+      "Mexican street food stall",
+      "boiling corn on site",
+      "Mexican street ancient taste",
+      "hands holding traditional corn",
+      "Mexican cuisine",
+      "Mexico landmark",
+      "Mexico culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0503_멕시코_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0503_멕시코_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done"
   },
   {
     "topic": "러시아 음식 이름은 소련 이전부터 그대로",
@@ -66077,7 +66404,7 @@
     "verify_note": "Doctor (title)",
     "confidence": "source",
     "created_at": "2026-11-07T00:19:47.050579+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "narration": "의사를 부를 때도, 교수를 부를 때도 사용하는 ‘Dr.’ 그런데 이 호칭은 원래 의사가 아닌 선생님을 뜻했습니다. 라틴어 ‘docēre’, 즉 ‘가르치다’에서 유래한 Doctor는 원래 학문과 지식을 가르치는 사람을 뜻했습니다. 12세기 유럽에서는 볼로냐와 파리 같은 대학이 성장하면서 학문적 권위를 인정받은 교사에게 Doctor라는 칭호가 사용되기 시작했죠. 당시 박사학위의 중요한 의미는 단순히 공부를 많이 했다는 증명이 아니었습니다. 대학에서 가르칠 수 있는 공식적인 자격을 인정받는 것이었죠. 이러한 자격은 시간이 흐르면서 유럽 대학을 중심으로 확산됐습니다. 오늘날에는 의사뿐 아니라 연구자와 학자도 Doctor라는 호칭을 사용합니다. 수백 년 전에는 가르치는 사람을 뜻했던 말이 이제는 학문과 의료를 대표하는 호칭이 된 것입니다. 여러분이 알고 있던 Doctor의 시작은 의사가 아닌 선생님이었습니다.",
     "title_line1": "박사 칭호의 역사",
     "title_line2": "의사가 아닌 선생님?",
@@ -66166,7 +66493,113 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "medieval scholar Doctor teaching students, documentary scene",
+      "Latin manuscript docere teaching, documentary scene",
+      "University of Bologna medieval historic building, documentary scene",
+      "medieval University of Paris lecture, documentary scene",
+      "medieval professor teaching university students, documentary scene",
+      "medieval licentia docendi academic manuscript, documentary scene",
+      "modern university doctoral graduation ceremony, documentary scene",
+      "doctor academic hood medieval origins, documentary scene",
+      "modern physician doctor office, documentary scene",
+      "historical evolution of Doctor academic title, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "medieval scholar Doctor teaching students, documentary scene",
+      "Latin manuscript docere teaching, documentary scene",
+      "University of Bologna medieval historic building, documentary scene",
+      "medieval University of Paris lecture, documentary scene",
+      "medieval professor teaching university students, documentary scene",
+      "medieval licentia docendi academic manuscript, documentary scene",
+      "modern university doctoral graduation ceremony, documentary scene",
+      "doctor academic hood medieval origins, documentary scene",
+      "modern physician doctor office, documentary scene",
+      "historical evolution of Doctor academic title, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "medieval scholar Doctor teaching students, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Latin manuscript docere teaching, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "University of Bologna medieval historic building, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "medieval University of Paris lecture, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "medieval professor teaching university students, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "medieval licentia docendi academic manuscript, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "modern university doctoral graduation ceremony, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "doctor academic hood medieval origins, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "modern physician doctor office, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "historical evolution of Doctor academic title, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "medieval scholar Doctor teaching students",
+      "Latin manuscript docere teaching",
+      "University of Bologna medieval historic building",
+      "medieval University of Paris lecture",
+      "medieval professor teaching university students",
+      "medieval licentia docendi academic manuscript",
+      "modern university doctoral graduation ceremony",
+      "doctor academic hood medieval origins",
+      "modern physician doctor office",
+      "historical evolution of Doctor academic title"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0561_유럽_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0561_유럽_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0561_유럽.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0561_유럽.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "왕립 해군(Royal Navy)의 ‘시니어 서비스’ 별명",
@@ -68459,7 +68892,7 @@
     "verify_note": "TikTok",
     "confidence": "source",
     "created_at": "2026-11-08T07:43:46.508145+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "need": "curiosity",
     "emotion": "surprise",
     "narration": "3초부터 60분까지, 한 번에 스와이프하면 모두 사라진다! 틱톡은 짧은 3초 클립부터 한 시간짜리 긴 영상까지 올릴 수 있는 플랫폼입니다. 모바일 앱은 물론 웹사이트에서도 같은 길이 제한을 적용해 언제든지 제작·시청이 가능합니다. 그런데 중국 본토와 홍콩에서는 틱톡이 차단돼 대신 두이인(Douyin)이라는 이름으로 서비스됩니다. 이 사실은 틱톡 공식 소개와 2020년 4월 다운로드 통계에 근거한 내용이며, 플랫폼이 제공하는 다양한 영상 길이와 지역별 서비스 차이를 보여줍니다. 결국 짧은 순간부터 긴 스토리까지, 어디서든 같은 방식으로 즐길 수 있다는 점이 흥미롭지 않나요?",
@@ -68489,7 +68922,9 @@
       "smartphone and laptop video timeline",
       "Chinese smartphone app interface",
       "TikTok analytics chart graph",
-      "TikTok short and long story timeline"
+      "TikTok short and long story timeline",
+      "TikTok",
+      "글로벌 landmark"
     ],
     "scene_count": 8,
     "infographic": {
@@ -68547,7 +68982,95 @@
       "영상길이",
       "플랫폼",
       "다운로드통계"
-    ]
+    ],
+    "ai_prompts": [
+      "hand swiping phone screen, documentary scene",
+      "TikTok video thumbnails collage, documentary scene",
+      "smartphone and laptop video timeline, documentary scene",
+      "Chinese smartphone app interface, documentary scene",
+      "TikTok analytics chart graph, documentary scene",
+      "TikTok short and long story timeline, documentary scene",
+      "TikTok, documentary scene",
+      "글로벌 landmark, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "hand swiping phone screen, documentary scene",
+      "TikTok video thumbnails collage, documentary scene",
+      "smartphone and laptop video timeline, documentary scene",
+      "Chinese smartphone app interface, documentary scene",
+      "TikTok analytics chart graph, documentary scene",
+      "TikTok short and long story timeline, documentary scene",
+      "TikTok, documentary scene",
+      "글로벌 landmark, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "hand swiping phone screen, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "TikTok video thumbnails collage, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "smartphone and laptop video timeline, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Chinese smartphone app interface, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "TikTok analytics chart graph, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "TikTok short and long story timeline, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "TikTok, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "글로벌 landmark, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "hand swiping phone screen",
+      "TikTok video thumbnails collage",
+      "smartphone and laptop video timeline",
+      "Chinese smartphone app interface",
+      "TikTok analytics chart graph",
+      "TikTok short and long story timeline",
+      "TikTok",
+      "글로벌 landmark"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0578_글로벌_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0578_글로벌_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0578_글로벌.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0578_글로벌.mp4",
+    "status_v6": "video_done"
   },
   {
     "topic": "그리스와 터키의 에게해(Aegean) 분쟁, 전쟁 직전까지",
@@ -69838,7 +70361,7 @@
     "verify_note": "State visits by Charles de Gaulle to South America",
     "confidence": "source",
     "created_at": "2026-11-08T07:44:50.213964+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -69890,7 +70413,9 @@
       "Airplane cockpit view",
       "Old itinerary document",
       "Diplomatic horizon",
-      "Footprints on sand"
+      "Footprints on sand",
+      "State visits by Charles",
+      "Bolivia landmark"
     ],
     "scene_count": 10,
     "hashtags": [
@@ -69922,7 +70447,115 @@
       "none": false
     },
     "title_line1": "샤를 드골 라틴순방",
-    "title_line2": "비행 뒤 무슨 일?"
+    "title_line2": "비행 뒤 무슨 일?",
+    "ai_prompts": [
+      "South America landscape, documentary scene",
+      "South America ten country tour, documentary scene",
+      "South America colonial architecture, documentary scene",
+      "South America embassy office, documentary scene",
+      "Airplane cockpit view, documentary scene",
+      "Old itinerary document, documentary scene",
+      "Diplomatic horizon, documentary scene",
+      "Footprints on sand, documentary scene",
+      "State visits by Charles, documentary scene",
+      "Bolivia landmark, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "South America landscape, documentary scene",
+      "South America ten country tour, documentary scene",
+      "South America colonial architecture, documentary scene",
+      "South America embassy office, documentary scene",
+      "Airplane cockpit view, documentary scene",
+      "Old itinerary document, documentary scene",
+      "Diplomatic horizon, documentary scene",
+      "Footprints on sand, documentary scene",
+      "State visits by Charles, documentary scene",
+      "Bolivia landmark, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "South America landscape, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "South America ten country tour, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "South America colonial architecture, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "South America embassy office, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Airplane cockpit view, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Old itinerary document, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Diplomatic horizon, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Footprints on sand, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "State visits by Charles, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Bolivia landmark, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "South America landscape",
+      "South America ten country tour",
+      "South America colonial architecture",
+      "South America embassy office",
+      "Airplane cockpit view",
+      "Old itinerary document",
+      "Diplomatic horizon",
+      "Footprints on sand",
+      "State visits by Charles",
+      "Bolivia landmark"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0586_볼리비아_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0586_볼리비아_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0586_볼리비아.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0586_볼리비아.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "yBsz3EdeBi4",
+    "uploaded_at": "2026-11-28T13:20:45.816767+09:00"
   },
   {
     "topic": "남파푸아, 펜실베니아와 비슷한 면적에 50만 명 인구",
@@ -71080,7 +71713,7 @@
     "verify_note": "Achaemenid Empire",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:05.309177+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71130,7 +71763,10 @@
       "Persian provincial governor",
       "Persian local administration office",
       "Persian empire administrative hierarchy",
-      "Two continents Persian empire"
+      "Two continents Persian empire",
+      "Achaemenid Empire",
+      "Iran landmark",
+      "Iran culture"
     ],
     "scene_count": 10,
     "hashtags": [
@@ -71154,7 +71790,115 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "A sweeping aerial view of a vast ancient empire spanning two continents, with mountains, deserts, and rivers merging under a golden sunrise.",
+      "A detailed ground-level illustration of a massive Achaemenid map scroll unfurled on a stone table, showing 5.5 million km² of territories.",
+      "A close-up of a bronze relief depicting the Achaemenid king overseeing a council of regional governors, set in a grand palace hall.",
+      "A panoramic vista from a high cliff showing the empire's western edge reaching the Balkans and Cilicia, and the eastern edge extending to the Indus Valley.",
+      "A mid‑shot of a caravan of imperial officials traveling through rugged terrain, delivering royal decrees to distant provinces.",
+      "A low-angle perspective of a provincial governor's ornate office, filled with local artifacts and administrative tablets, highlighting delegated authority.",
+      "An overhead view of diverse local customs being performed in a bustling market town under Achaemenid oversight, illustrating cultural integration.",
+      "A wide-angle scene of the empire at its zenith, with towering palaces, fortified cities, and a network of roads linking continents.",
+      "A dynamic side view of a military parade marching across a bridge that spans two continents, symbolizing imperial unity and strength.",
+      "A reflective twilight scene of a lone governor overlooking a vast horizon, contemplating the empire’s fate without his guiding hand."
+    ],
+    "ai_prompts_done": [
+      "A sweeping aerial view of a vast ancient empire spanning two continents, with mountains, deserts, and rivers merging under a golden sunrise.",
+      "A detailed ground-level illustration of a massive Achaemenid map scroll unfurled on a stone table, showing 5.5 million km² of territories.",
+      "A close-up of a bronze relief depicting the Achaemenid king overseeing a council of regional governors, set in a grand palace hall.",
+      "A panoramic vista from a high cliff showing the empire's western edge reaching the Balkans and Cilicia, and the eastern edge extending to the Indus Valley.",
+      "A mid‑shot of a caravan of imperial officials traveling through rugged terrain, delivering royal decrees to distant provinces.",
+      "A low-angle perspective of a provincial governor's ornate office, filled with local artifacts and administrative tablets, highlighting delegated authority.",
+      "An overhead view of diverse local customs being performed in a bustling market town under Achaemenid oversight, illustrating cultural integration.",
+      "A wide-angle scene of the empire at its zenith, with towering palaces, fortified cities, and a network of roads linking continents.",
+      "A dynamic side view of a military parade marching across a bridge that spans two continents, symbolizing imperial unity and strength.",
+      "A reflective twilight scene of a lone governor overlooking a vast horizon, contemplating the empire’s fate without his guiding hand."
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A sweeping aerial view of a vast ancient empire spanning two continents, with mo"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A detailed ground-level illustration of a massive Achaemenid map scroll unfurled"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A close-up of a bronze relief depicting the Achaemenid king overseeing a council"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A panoramic vista from a high cliff showing the empire's western edge reaching t"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A mid‑shot of a caravan of imperial officials traveling through rugged terrain, "
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A low-angle perspective of a provincial governor's ornate office, filled with lo"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "An overhead view of diverse local customs being performed in a bustling market t"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A wide-angle scene of the empire at its zenith, with towering palaces, fortified"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A dynamic side view of a military parade marching across a bridge that spans two"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "A reflective twilight scene of a lone governor overlooking a vast horizon, conte"
+      }
+    ],
+    "image_queries_done": [
+      "World map showing continents",
+      "Ancient Persian empire map",
+      "Map Balkans to Indus",
+      "Persian provincial governor",
+      "Persian local administration office",
+      "Persian empire administrative hierarchy",
+      "Two continents Persian empire",
+      "Achaemenid Empire",
+      "Iran landmark",
+      "Iran culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0596_이란_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0596_이란_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0596_이란.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0596_이란.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "STjiBl5u_tw",
+    "uploaded_at": "2026-11-28T13:23:07.473293+09:00"
   },
   {
     "topic": "쿠르드인들의 새해 불축제 뉴로즈",
@@ -71169,7 +71913,7 @@
     "verify_note": "Newroz as celebrated by Kurds",
     "confidence": "source",
     "created_at": "2026-11-09T07:58:30.149538+00:00",
-    "status": "scripted",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -71224,7 +71968,10 @@
       "Newroz tradition ceremony",
       "Newroz political significance",
       "Fire new beginning",
-      "Fire identity moment"
+      "Fire identity moment",
+      "Newroz as celebrated by",
+      "Turkey landmark",
+      "Turkey culture"
     ],
     "scene_count": 10,
     "hashtags": [
@@ -71259,7 +72006,115 @@
         }
       ],
       "none": false
-    }
+    },
+    "ai_prompts": [
+      "Kurdish Newroz fire blaze, documentary scene",
+      "Kurdish Newroz fire core, documentary scene",
+      "Newroz fire celebration, documentary scene",
+      "Newroz tradition ceremony, documentary scene",
+      "Newroz political significance, documentary scene",
+      "Fire new beginning, documentary scene",
+      "Fire identity moment, documentary scene",
+      "Newroz as celebrated by, documentary scene",
+      "Turkey landmark, documentary scene",
+      "Turkey culture, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Kurdish Newroz fire blaze, documentary scene",
+      "Kurdish Newroz fire core, documentary scene",
+      "Newroz fire celebration, documentary scene",
+      "Newroz tradition ceremony, documentary scene",
+      "Newroz political significance, documentary scene",
+      "Fire new beginning, documentary scene",
+      "Fire identity moment, documentary scene",
+      "Newroz as celebrated by, documentary scene",
+      "Turkey landmark, documentary scene",
+      "Turkey culture, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Kurdish Newroz fire blaze, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Kurdish Newroz fire core, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Newroz fire celebration, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Newroz tradition ceremony, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Newroz political significance, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Fire new beginning, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Fire identity moment, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Newroz as celebrated by, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Turkey landmark, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Turkey culture, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Kurdish Newroz fire blaze",
+      "Kurdish Newroz fire core",
+      "Newroz fire celebration",
+      "Newroz tradition ceremony",
+      "Newroz political significance",
+      "Fire new beginning",
+      "Fire identity moment",
+      "Newroz as celebrated by",
+      "Turkey landmark",
+      "Turkey culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0597_터키_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0597_터키_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0597_터키.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0597_터키.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "O8KDeDCp_Uw",
+    "uploaded_at": "2026-11-28T13:25:23.461105+09:00"
   },
   {
     "topic": "수백 년 전 조상과 연결된 전통, 오늘도 살아있다",
@@ -72339,7 +73194,7 @@
     "verify_note": "Median kingdom",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:31.104495+00:00",
-    "status": "verified",
+    "status": "scripted",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72354,7 +73209,88 @@
     },
     "curate_score": 6,
     "curate_why": "산악 전술·숫자·전쟁·전략적 흥미",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "wonder",
+    "source_text": "Media (Old Persian: 𐎶𐎠𐎭, romanized: Māda; Ancient Greek: Μηδία, romanized: Mēdía; Late Babylonian Akkadian: 𒈠𒁕𒀀𒀀, romanized: Madāya⁠) was a polity centered in Ecbatana that existed from the 7th century BCE until the mid-6th century BCE, and is believed to have dominated a significant portion of the Iranian plateau, preceding the powerful Achaemenid Empire. The frequent interference in the Zagros Mountains by the Neo-Assyrian Empire, located in Upper Mesopotamia, led to the unification of the Median tribes. By 612 BCE, the Medes, in alliance with Babylonia in Lower Mesopotamia, became strong enough to overthrow the declining Neo-Assyrian Empire.\nAccording to classical historiography, Media emerged as one major power of the ancient Near East after the collapse of Assyria. Under Cyaxares (r. 625–585 BCE), the kingdom's borders were expanded to the east and west through the subjugation of neighboring peoples, such as the Persians and Armenians. Media's territorial expansion led to the formation of the first Iranian empire, which at its height would have exercised authority over more than two million square kilometers, stretching from the eastern banks of the Kızılırmak River in Anatolia to Central Asia. In this period, the Median Empire was one of the great powers in the ancient Near East, alongside the Neo-Babylonian Empire, Lydia, and the late period of Egypt. During his reign, Astyages (r. 585–550 BCE) worked to strengthen and centralize the Median state, going against the will of tribal nobility, which may have contributed to the kingdom's downfall. In 550 BCE, the Median capital, Ecbatana, was conquered by the Persian leader Cyrus the Great, marking the beginning of the Achaemenid Empire.\nHowever, most historians increasingly view the Median Empire as having been made up by Herodotus and that the Medes were a loose confederacy instead, only uniting under one leader when external powers were attacking Media.\n== Historical sources ==\n=== Textual sources ===\nNot only during the Neo-Assyrian period of the 9th through 7th centuries BCE, but also in the subsequent Neo-Babylonian and early Persian periods, the sources exhibit an external view of the Medes. There is not a single Median source that represents a Median perspective on their own history. The available textual sources on Media primarily consist of contemporary Assyrian and Babylonian texts; the Behistun Inscription in Old Persian; works by later Greek authors such as Herodotus and Ctesias; and some biblical texts. Before the archaeological discoveries of Assyrian and Babylonian ruins and cuneiform archives in the mid-19th century, the history of civilizations in the Near East prior to the Achaemenid Empire relied solely on classical and biblical sources. Information about the Medes, as well as about the Assyrians and Babylonians, was derived from the works of classical authors such as Herodotus and their successors. They gathered information from scholarly circles within the Achaemenid Empire, but it was neither direct nor contemporary, and it was not based on solid archives or historical materials. Although no contemporary textual source has been discovered in Media, the information available in Assyrian and Babylonian sources is quite relevant.\nDue to the absence of written records from pre-Achaemenid Media and, until recently, the lack of archaeological evidence, the 'Median logos' of the Greek historian Herodotus (1. 95–106) was for a long time the primary and generally accepted historical account of the ancient Medes. In his account in the first book of his Histories, Herodotus traces the development of a unified Median state or empire with a major capital at Ecbatana and a geographical reach as far west as the Halys River in central Turkey. Although what he describes ha",
+    "hook_check": {
+      "ok": false,
+      "issues": [
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 1번 문장 '산을 넘으며 전쟁을 준비한다면, 메대인들은 어떻게 승리…' — 문장 1은 본문에 없음",
+        "근거 없음/틀림: 5번 문장 '이때 산의 절벽과 협곡은 전투의 방패 역할을 했습니다.…' — 문장 5는 본문에 없음",
+        "근거 없음/틀림: 8번 문장 '산을 넘어 승리한 메대의 비밀, 그들은 결국 역사에 묻…' — 문장 8은 본문에 없음"
+      ],
+      "advice": [
+        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)",
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 2,
+      "first": "산을 넘으며 전쟁을 준비한다면, 메대인들은 어떻게 승리했을까요?",
+      "sentences": 8
+    },
+    "review_needed": true,
+    "narration": "산을 넘으며 전쟁을 준비한다면, 메대인들은 어떻게 승리했을까요?  \n\n메대는 7세기~6세기 BCE, 에카바타나를 중심으로 자그로스 산맥에 거주했습니다. 그들은 산악 지형을 이용해 신아시리아의 간섭을 견뎌내며 부족들을 통합했죠.  \n\n612 BCE, 바빌로니아와 동맹을 맺어 신아시리아 제국을 전복했습니다. 이때 산의 절벽과 협곡은 전투의 방패 역할을 했습니다.  \n\n그런데 그 뒤, 메대는 아케메네스 제국에 흡수돼 역사 속으로 사라졌습니다. 이 사실은 고대 사료와 고고학적 추정에 근거한 것입니다.  \n\n산을 넘어 승리한 메대의 비밀, 그들은 결국 역사에 묻힌 무대가 되었습니다.",
+    "title_line1": "산악으로 신아시리아 무너",
+    "title_line2": "메대의 비밀 훈련은?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "산을 넘는 *전쟁*"
+      },
+      {
+        "s": 3,
+        "text": "산악 지형이 *방패* 역할"
+      },
+      {
+        "s": 5,
+        "text": "절벽·협곡 전투 *방패*"
+      }
+    ],
+    "image_queries": [
+      "War across mountains",
+      "Median kingdom mountains",
+      "Median mountain shield",
+      "Median alliance defeat",
+      "Cliff canyon battle shield",
+      "Median absorbed empire",
+      "Archaeology ancient records",
+      "Median mountain victory secret"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "메대",
+      "산악지형",
+      "신아시리아",
+      "바빌로니아",
+      "자그로스산맥"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "메대의 역사",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "7세기~6세기 BCE",
+          "value": null,
+          "text": "에카바타나 중심"
+        },
+        {
+          "label": "612 BCE",
+          "value": null,
+          "text": "신아시리아 전복"
+        },
+        {
+          "label": "아케메네스",
+          "value": null,
+          "text": "역사 속 사라짐"
+        }
+      ],
+      "none": false
+    }
   },
   {
     "topic": "루마니아 형법, 446조가 한 번에 개정된 순간",
@@ -72658,7 +73594,7 @@
     "verify_note": "Dragut",
     "confidence": "source",
     "created_at": "2026-11-09T08:04:43.081579+00:00",
-    "status": "verified",
+    "status": "video_done",
     "grounding": {
       "v": 1,
       "at": "2026-11-17",
@@ -72673,7 +73609,190 @@
     },
     "curate_score": 6,
     "curate_why": "해적·총독 대비 흥미하지만 구체적 숫자·시각 부족",
-    "curate_top": false
+    "curate_top": false,
+    "need": "curiosity",
+    "emotion": "wonder",
+    "source_text": "Dragut (Turkish: Turgut Reis; 1485 – 23 June 1565) was an Ottoman corsair, naval commander, governor, and noble. Under his command, the Ottoman Empire's maritime power was extended across North Africa. Recognized for his military genius, and as being among \"the most dangerous\" of corsairs, Dragut has been referred to as \"the greatest pirate warrior of all time\", \"undoubtedly the most able of all the Turkish leaders\", and \"the uncrowned king of the Mediterranean\". He was nicknamed \"the Drawn Sword of Islam\". He was described by a French admiral as \"a living chart of the Mediterranean, skillful enough on land to be compared to the finest generals of the time\" and that \"no one was more worthy than he to bear the name of king\". Hayreddin Barbarossa, who was his mentor, stated that Dragut was ahead of him \"both in fishing and bravery\".\nIn addition to serving as Admiral and Corsair in the Ottoman Empire's Navy under Suleiman the Magnificent, Dragut was also appointed Bey of Algiers and Djerba, Beylerbey of the Mediterranean, as well as Bey, and subsequently Pasha, of Tripoli. While serving as Pasha of Tripoli, Dragut built up and adorned the city, making it one of the most impressive to behold along the entire North African coast.\n== Origin and early career ==\nDragut was born around 1487 in Karatoprak (known today as Turgutreis in his honour) near Bodrum, on the Aegean coast of Asia Minor, in the sub-district called Saravalos in the western tip of Bodrum peninsula; or probably in the Karabağ village on the Aegean coast of Asia Minor. His father was a farmer named Velî. His family were either Greek Christians or Turkish Muslims.\nAt the age of 12 he was noticed by an Ottoman army commander for his extraordinary talent in using spears and arrows and was recruited by him. Under his support, the young Turgut became a skilled sailor, an outstanding gunner, and was trained as a cannoneer and master of siege artillery, a skill which would play an important role in Turgut's future success and reputation as a superb naval tactician. The Ottoman Turkish governor eventually carried Turgut off to Egypt in 1517, where he participated in the Ottoman conquest of Egypt as a cannoneer. He further improved his skills in this field during his presence in Cairo. Following the death of his master, Turgut went to Alexandria and began his career as a sailor after joining the fleet of Sinan Pasha. He immediately became one of the favourite crewmen of the famous corsair due to his success in hitting enemy vessels with cannons. Turgut soon mastered the skills of seamanship and became the captain of a brigantine, while given 1/4 of its ownership. After several successful campaigns, he became the sole owner of the brigantine. Turgut later became the captain and owner of a galiot, and arming it with the most advanced cannons of that period, he started to operate in the Eastern Mediterranean, especially targeting the shipping routes between Venice and the Aegean islands belonging to the Republica Serenissima.\nIn 1520, he joined the fleet of Hayreddin Barbarossa, who would become his protector and best friend. Turgut was soon promoted to the rank of Chief Lieutenant, by Barbarossa, and was given command of 12 galiot-class naval vessels. In 1526, Turgut Reis captured the fortress of Capo Passero in Sicily. Between 1526 and 1533 he landed several times at the ports of the Kingdom of Sicily and the Kingdom of Naples, while intercepting the ships which sailed between Spain and Italy, capturing many of them.\nIn May 1533, commanding four fustas and 18 barques, Turgut Reis captured two Venetian galleys near the island of Aegina. In June and July 1538 he accompanied Barbarossa on his pursuit of Andrea Doria in the Adriatic Sea, while capturing several fortresses on the coasts",
+    "hook_check": {
+      "ok": true,
+      "issues": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
+      "rounds": 0,
+      "first": "해적이 섬을 직접 다스린다면?",
+      "sentences": 7
+    },
+    "narration": "해적이 섬을 직접 다스린다면?  \n드라구트는 1485년 태어나 1565년 사망한 오스만 제국의 해적이자 해군 사령관이었습니다. 그는 북아프리카 전역에서 해양 세력을 확장했고, ‘이슬람의 그려진 검’이라는 별명으로 지중해를 장악한 가장 위험한 해적 중 하나로 평가받았습니다.  \n그의 해적 활동은 단순한 약탈이 아니었습니다. 그는 해적이면서 동시에 현지 지방의 총독으로 임명되어, 해적단을 조직하고 정치적 권력을 동시에 쥐었습니다.  \n그렇다면 해적이란 단순히 해상 약탈자만이 아니라, 한때는 지방 행정과 군사 지휘까지 맡았던 복합적 존재였음을 알 수 있습니다.  \n드라구트의 삶은 해적과 통치자의 경계를 흐리게 했으며, 그가 남긴 기록은 오늘날에도 해양 전쟁과 정치의 교차점을 탐구하는 데 귀중한 자료가 됩니다.",
+    "title_line1": "해적이 섬을 다스리다",
+    "title_line2": "총독까지 맡았다?",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "해적이 섬을 직접 다스리다?"
+      },
+      {
+        "s": 3,
+        "text": "지중해를 장악한 검"
+      },
+      {
+        "s": 5,
+        "text": "해적·총독, 한 몸에 권력"
+      },
+      {
+        "s": 6,
+        "text": "해적과 통치, 경계 흐리다"
+      }
+    ],
+    "image_queries": [
+      "Ottoman pirate island",
+      "Ottoman pirate ship",
+      "black sword Mediterranean",
+      "Ottoman raiding ship",
+      "Ottoman pirate governor",
+      "pirate ruler authority",
+      "Ottoman pirate legacy",
+      "Dragut",
+      "Turkey landmark",
+      "Turkey culture"
+    ],
+    "scene_count": 10,
+    "hashtags": [
+      "드라구트",
+      "오스만제국",
+      "해군사령관",
+      "이슬람검",
+      "지중해"
+    ],
+    "infographic": {
+      "on": true,
+      "kind": "timeline",
+      "title": "드라구트의 생애",
+      "s": 2,
+      "dur": 5.0,
+      "unit": "",
+      "rows": [
+        {
+          "label": "1485",
+          "value": null,
+          "text": "생년"
+        },
+        {
+          "label": "1565",
+          "value": null,
+          "text": "사망"
+        }
+      ],
+      "none": false
+    },
+    "ai_prompts": [
+      "Ottoman pirate island, documentary scene",
+      "Ottoman pirate ship, documentary scene",
+      "black sword Mediterranean, documentary scene",
+      "Ottoman raiding ship, documentary scene",
+      "Ottoman pirate governor, documentary scene",
+      "pirate ruler authority, documentary scene",
+      "Ottoman pirate legacy, documentary scene",
+      "Dragut, documentary scene",
+      "Turkey landmark, documentary scene",
+      "Turkey culture, documentary scene"
+    ],
+    "ai_prompts_done": [
+      "Ottoman pirate island, documentary scene",
+      "Ottoman pirate ship, documentary scene",
+      "black sword Mediterranean, documentary scene",
+      "Ottoman raiding ship, documentary scene",
+      "Ottoman pirate governor, documentary scene",
+      "pirate ruler authority, documentary scene",
+      "Ottoman pirate legacy, documentary scene",
+      "Dragut, documentary scene",
+      "Turkey landmark, documentary scene",
+      "Turkey culture, documentary scene"
+    ],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ottoman pirate island, documentary scene"
+      },
+      {
+        "scene": 2,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ottoman pirate ship, documentary scene"
+      },
+      {
+        "scene": 3,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "black sword Mediterranean, documentary scene"
+      },
+      {
+        "scene": 4,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ottoman raiding ship, documentary scene"
+      },
+      {
+        "scene": 5,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ottoman pirate governor, documentary scene"
+      },
+      {
+        "scene": 6,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "pirate ruler authority, documentary scene"
+      },
+      {
+        "scene": 7,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Ottoman pirate legacy, documentary scene"
+      },
+      {
+        "scene": 8,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Dragut, documentary scene"
+      },
+      {
+        "scene": 9,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Turkey landmark, documentary scene"
+      },
+      {
+        "scene": 10,
+        "source": "ai",
+        "license": "AI-generated",
+        "title": "Turkey culture, documentary scene"
+      }
+    ],
+    "image_queries_done": [
+      "Ottoman pirate island",
+      "Ottoman pirate ship",
+      "black sword Mediterranean",
+      "Ottoman raiding ship",
+      "Ottoman pirate governor",
+      "pirate ruler authority",
+      "Ottoman pirate legacy",
+      "Dragut",
+      "Turkey landmark",
+      "Turkey culture"
+    ],
+    "image_source": "commons",
+    "audio_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0614_터키_v2.mp3",
+    "timing_path_v2": "C:\\Users\\seokg\\Downloads\\latest-cloud\\audio\\0614_터키_v2_timing.json",
+    "tts_voice_v2": "ko-KR-InJoonNeural",
+    "status_tts_v2": "done",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0614_터키.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0614_터키.mp4",
+    "status_v6": "video_done",
+    "youtube_id": "8Ufq07yNdgI",
+    "uploaded_at": "2026-11-28T13:27:40.107556+09:00"
   },
   {
     "topic": "매튜 섬·헌터 섬, 물도 없는데 왜?",
