@@ -87932,5 +87932,351 @@
     "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0761_일본.mp4",
     "youtube_id": "xbd_Rm9uGKM",
     "uploaded_at": "2026-11-28T14:23:24.898380+09:00"
+  },
+  {
+    "topic": "태국(Thailand)의 놀라운 해상 경계",
+    "hook": "태국이 인도와 바다를 맞댄다니?",
+    "body": "동남아시아에 위치한 태국(Thailand)은 해상 경계로 베트남, 인도네시아, 그리고 인도와 맞닿아 있어요.",
+    "twist": "인도는 대륙이 멀리 떨어져 있지만, 해상 경계만으로도 연결돼 있다는 점이 의외죠.",
+    "caveat": "해상 경계에 관한 내용은 위키피디아 발췌문에 한정됩니다.",
+    "country": "파푸아뉴기니",
+    "theme": "언어/이름",
+    "wiki_title": "Thailand",
+    "source_url": "https://en.wikipedia.org/wiki/Thailand",
+    "verify_note": "Thailand",
+    "confidence": "source",
+    "created_at": "2026-10-25T12:17:24.633182+00:00",
+    "status": "video_done",
+    "narration_original": "태국과 파푸아뉴기니는 바다를 사이에 두고 어떤 관계일까요? 두 나라는 모두 아시아와 태평양 지역에서 중요한 해양 국가입니다. 태국은 인도양과 연결되는 안다만해와 타이만을 접하고 있습니다. 파푸아뉴기니는 남태평양과 산호해에 면해 있습니다. 두 나라 모두 바다를 통한 무역과 어업이 중요한 역할을 합니다. 해상 경계는 단순히 지도에 그어진 선이 아닙니다. 어업권과 해저 자원, 선박의 이동과도 밀접하게 연결됩니다. 국가마다 바다를 이용하는 권리와 책임이 정해져 있기 때문입니다. 특히 배타적 경제수역은 영해와 다른 개념입니다. 해양 자원을 탐사하고 이용할 수 있는 권리를 정하는 제도입니다. 바다에서는 육지의 국경과는 다른 국제법이 작동합니다. 그런데 바다 위의 선 하나가 국가의 경제와 미래까지 바꿀 수 있다는 사실, 알고 계셨나요?",
+    "narration": "Yo, 태국이랑 파푸아뉴기니, 바다 사이에 무슨 관계가 뭔데, 게?\n그 관계는 뭐냐면, 두 나라 다 해양 국가라네, 게?\n태국은 안다만해와 타이만, 인도양까지 손 잡고 있어, 해요.\n파푸아뉴기니는 남태평양·산호해, 파도 위에 자리 잡고 있네, 해요.\n두 나라 무역·어업, 바다로 돈 벌어 가는 거다.\n해상 경계, 지도에 그린 선만이 아니란 거다.\n어업권·해저자원, 선박 이동까지 얽힌 얘기라.\n국가마다 바다 쓰는 권리·책임, 정해진 법이라.\n배타적 경제수역, 영해와는 다른 구역이다.\n해양 자원 탐사·이용 권한, 제도가 정해진이다.\n바다엔 육지 국경과 달리 국제법이 작동한다.\n바다 위 한 줄 선이 국가 경제·미래까지 바꿀 수 있다, 다.",
+    "fact_verifiability": "user",
+    "fact_risk": "user-reviewed",
+    "fact_applied": true,
+    "cross_checked": true,
+    "cross_verdict": "manual",
+    "cross_notes": [
+      "직접 검증한 대본 (외부 AI)"
+    ],
+    "cross_flags": [],
+    "title_line1": "태국·파푸아뉴기니 해상",
+    "title_line2": "랩으로 듣는 이야기",
+    "highlights": [
+      {
+        "s": 1,
+        "text": "바다 *관계*?"
+      },
+      {
+        "s": 3,
+        "text": "*안다만*·타이만"
+      },
+      {
+        "s": 6,
+        "text": "*경계*는 선이 아니다"
+      },
+      {
+        "s": 9,
+        "text": "*배타적* 수역"
+      },
+      {
+        "s": 12,
+        "text": "*선* 하나가 미래"
+      }
+    ],
+    "image_queries": [
+      "Thailand Papua New Guinea sea",
+      "Thailand Papua New Guinea coast",
+      "Andaman Sea Thailand",
+      "Coral Sea coastline",
+      "Thai cargo ship at sea",
+      "maritime boundary line",
+      "offshore oil platform",
+      "coast guard patrol boat",
+      "exclusive economic zone",
+      "fishing trawler at sea",
+      "ship sailing under flag",
+      "border line on map"
+    ],
+    "scene_count": 12,
+    "image_check": [
+      {
+        "verdict": "ok",
+        "clip": 0.2425,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "c131bec6e977",
+        "at": "2026-10-30 15:22",
+        "scene": 1,
+        "rejected_ids": [
+          6751167,
+          "c:129394643"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2659,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "4babbcbe7e05",
+        "at": "2026-10-30 15:22",
+        "scene": 2,
+        "rejected_ids": [
+          10357239,
+          "c:144171148"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3197,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8827861178ca",
+        "at": "2026-10-30 15:22",
+        "scene": 3,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2942,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "abd68fb61692",
+        "at": "2026-10-30 15:22",
+        "scene": 4,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2856,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "682b7610f5fc",
+        "at": "2026-10-30 15:22",
+        "scene": 5,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.304,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8ee9c4937784",
+        "at": "2026-10-30 15:22",
+        "scene": 6,
+        "rejected_ids": [
+          443267,
+          "c:158981921"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2859,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0c09eb134cb7",
+        "at": "2026-10-30 15:22",
+        "scene": 7,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3018,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "7716b052d6c8",
+        "at": "2026-10-30 15:22",
+        "scene": 8,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.2457,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "f3b4c52903d6",
+        "at": "2026-10-30 15:22",
+        "scene": 9,
+        "rejected_ids": [
+          7924559,
+          "c:85675277",
+          "c:93667920"
+        ]
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3443,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "386a8f254862",
+        "at": "2026-10-30 15:22",
+        "scene": 10,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3177,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "0736dceb3188",
+        "at": "2026-10-30 15:22",
+        "scene": 11,
+        "rejected_ids": []
+      },
+      {
+        "verdict": "ok",
+        "clip": 0.3047,
+        "ollama": null,
+        "seen": "",
+        "tools": "clip",
+        "sig": "8d17c8f0c862",
+        "at": "2026-10-30 15:22",
+        "scene": 12,
+        "rejected_ids": []
+      }
+    ],
+    "youtube_privacy": "public",
+    "need": "curiosity",
+    "emotion": "surprise",
+    "rap": true,
+    "rap_of": 319,
+    "review_ok": true,
+    "ai_prompts": [
+      "Aerial view of the turquoise waters between Thailand and Papua New Guinea, showing the vast ocean expanse connecting the two nations, with gentle waves and distant islands, captured from a high drone perspective.",
+      "Wide-angle shot of a stylized map overlay on the sea, highlighting Thailand and Papua New Guinea as maritime nations, with glowing outlines of their coastlines and a subtle ripple effect indicating their shared oceanic nature.",
+      "Low-angle view of Thailand's coastline along the Andaman Sea and the Gulf of Thailand, with fishing boats and a distant horizon merging into the Indian Ocean, under a bright midday sky.",
+      "Panoramic perspective of Papua New Guinea's rugged shoreline on the South Pacific and Coral Sea, featuring towering cliffs, coral reefs, and surf breaking against the shore, captured from a shoreline cliff lookout.",
+      "Dynamic scene of cargo ships and fishing vessels exchanging goods on open water, with a bustling sea lane between Thailand and Papua New Guinea, seen from a side view at sea level.",
+      "Top-down illustration of maritime boundaries drawn on a blue ocean canvas, with intricate lines separating exclusive zones, rendered as glowing borders without any lettering, viewed from directly above.",
+      "Mid-air shot of a research vessel deploying underwater drones near a coral reef, illustrating fishing rights and seabed resource exploration, with bubbles and marine life surrounding the equipment.",
+      "Close-up of a legal document floating on water, symbolizing national rights and responsibilities over marine use, with waves gently moving the paper, captured from a low, side angle.",
+      "Wide shot of a marked exclusive economic zone boundary line extending from a coastline into the ocean, contrasted with the adjacent territorial sea, seen from a satellite perspective.",
+      "Perspective from inside a submersible exploring deep-sea mineral deposits, showing regulated extraction equipment and illuminated resource sites within a defined maritime area.",
+      "Bird's-eye view of an international maritime law conference held on a floating platform, with delegates silhouetted against the sea, emphasizing the application of global law over oceanic spaces.",
+      "Dramatic sunrise over the ocean with a single glowing line on the water's surface representing a national border, symbolizing its impact on economies and future prospects, captured from a low horizon angle."
+    ],
+    "ai_prompts_done": [],
+    "image_credits": [
+      {
+        "scene": 1,
+        "source": "pixabay",
+        "user": "ignartonosbg",
+        "page": "https://pixabay.com/photos/crowned-pigeon-bird-goura-victoria-10357239/",
+        "id": 10357239
+      },
+      {
+        "scene": 2,
+        "source": "pixabay",
+        "user": "Yarramalong",
+        "page": "https://pixabay.com/photos/barracuda-fish-dive-sea-creatures-779382/",
+        "id": 779382
+      },
+      {
+        "scene": 3,
+        "source": "pixabay",
+        "user": "Engin_Akyurt",
+        "page": "https://pixabay.com/photos/phang-nga-bay-phuket-province-2076834/",
+        "id": 2076834
+      },
+      {
+        "scene": 4,
+        "source": "pixabay",
+        "user": "xiSerge",
+        "page": "https://pixabay.com/photos/lagoon-ocean-sea-coastline-atoll-7882110/",
+        "id": 7882110
+      },
+      {
+        "scene": 5,
+        "source": "pixabay",
+        "user": "dendoktoor",
+        "page": "https://pixabay.com/photos/container-ship-container-transport-6631117/",
+        "id": 6631117
+      },
+      {
+        "scene": 6,
+        "source": "pixabay",
+        "user": "dietmaha",
+        "page": "https://pixabay.com/photos/tennis-court-tennis-yellow-443267/",
+        "id": 443267
+      },
+      {
+        "scene": 7,
+        "source": "pixabay",
+        "user": "ambquinn",
+        "page": "https://pixabay.com/photos/oil-rig-oil-platform-oil-rig-2205542/",
+        "id": 2205542
+      },
+      {
+        "scene": 8,
+        "source": "pixabay",
+        "user": "dimitrisvetsikas1969",
+        "page": "https://pixabay.com/photos/coast-guard-sea-maritime-rescue-6718306/",
+        "id": 6718306
+      },
+      {
+        "scene": 9,
+        "source": "commons",
+        "user": "NordNordWest",
+        "license": "CC BY 3.0",
+        "title": "Greece-Exclusive-Economic-Zone.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Greece-Exclusive-Economic-Zone.png",
+        "id": "c:93667920"
+      },
+      {
+        "scene": 10,
+        "source": "pixabay",
+        "user": "suju-foto",
+        "page": "https://pixabay.com/photos/boat-ocean-nature-sea-fishing-boat-10467526/",
+        "id": 10467526
+      },
+      {
+        "scene": 11,
+        "source": "pixabay",
+        "user": "ArtTower",
+        "page": "https://pixabay.com/photos/sailing-ship-vessel-boat-sea-659758/",
+        "id": 659758
+      },
+      {
+        "scene": 12,
+        "source": "pixabay",
+        "user": "Hans",
+        "page": "https://pixabay.com/photos/landmark-stone-border-demarcation-1464744/",
+        "id": 1464744
+      }
+    ],
+    "image_queries_done": [
+      "Thailand Papua New Guinea sea",
+      "Thailand Papua New Guinea coast",
+      "Andaman Sea Thailand",
+      "Coral Sea coastline",
+      "Thai cargo ship at sea",
+      "maritime boundary line",
+      "offshore oil platform",
+      "coast guard patrol boat",
+      "exclusive economic zone",
+      "fishing trawler at sea",
+      "ship sailing under flag",
+      "border line on map"
+    ],
+    "image_source": "pixabay",
+    "audio_path_v2": "audio\\0762_rap_v2.mp3",
+    "timing_path_v2": "audio\\0762_rap_v2_timing.json",
+    "status_tts_v2": "done",
+    "tts_voice_v2": "supertonic-rapflow",
+    "srt_path": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0762_파푸아뉴기니.srt",
+    "video_path_v6": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0762_파푸아뉴기니_rap.mp4",
+    "status_v6": "video_done",
+    "video_path_beatless": "C:\\Users\\seokg\\Downloads\\latest-cloud\\videos\\0762_파푸아뉴기니.mp4",
+    "youtube_id": "OwGfP8tvYoc",
+    "uploaded_at": "2026-11-28T14:43:09.979998+09:00"
   }
 ]
