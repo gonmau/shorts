@@ -1,6 +1,6 @@
 # 작업 이력 (KO 채널)
 
-- 갱신: 2026-11-28 09:51:38 (KST) · 기록 2298건 · 소재 748개 (소재별 상태는 history_items.csv)
+- 갱신: 2026-11-28 10:04:20 (KST) · 기록 2299건 · 소재 748개 (소재별 상태는 history_items.csv)
 
 ## 종류별 요약
 
@@ -35,7 +35,7 @@
 | redo_videos | 42 | 0 | 14초 |
 | resync_meta | 6 | 0 | 38분 28초 |
 | sync_uploads | 4 | 0 | 18초 |
-| trend_research | 3 | 3 | 2분 34초 |
+| trend_research | 4 | 3 | 2분 58초 |
 | update_description | 7 | 1 | 22초 |
 | upload_to_youtube | 40 | 0 | 31분 13초 |
 | 롱폼 | 83 | 13 | 10시간 15분 |
@@ -43,6 +43,12 @@
 | 코드업데이트 | 133 | 0 | 0초 |
 
 ## 날짜별 작업 (최근 30일)
+
+### 2026-11-28
+
+| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
+|---|---|---|---|---|---|---|
+| 10:04 | PC | trend_research | trend_research.py --yt 세계 역사, 이색 기록, 핫 --days 30 --reddit todayilearned,travel,Damnthatsinteresting --wiki --analyze --max-units 3000 | ✅ | 24초 |  |
 
 ### 2026-11-27
 
@@ -1995,28 +2001,3 @@
 | 14:12 | PC | 코드업데이트 | gonmau/shorts: 2개 (build_longform.py, local_ui.py) | ✅ |  |  |
 | 11:36 | PC | 코드업데이트 | gonmau/shorts: 5개 (build_longform.py, deep.py, local_ui.py, longform_render.py, longform_script.py) | ✅ |  |  |
 | 01:21 | Actions | 쇼츠 | culture-shorts-pipeline #104 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40906342614 |
-
-### 2026-10-29
-
-| 시각 | 곳 | 종류 | 작업 | 결과 | 소요 | 비고 |
-|---|---|---|---|---|---|---|
-| 22:31 | PC | 코드업데이트 | gonmau/shorts: 4개 (build_longform.py, local_ui.py, longform_render.py, longform_script.py) | ✅ |  |  |
-| 20:08 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화,축제/의례,생활문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-i | ✅ | 40분 43초 |  |
-| 19:26 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화,축제/의례,생활문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-i | ✅ | 2초 |  |
-| 19:25 | PC | 롱폼 | build_longform.py --mode manual --indexes 44,69,87,106,112,117 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --on | ✅ | 4초 |  |
-| 19:23 | PC | 롱폼 | build_longform.py --mode manual --indexes 44,69,87,106,112,117 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --on | ✅ | 5초 |  |
-| 19:21 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화,축제/의례,생활문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-i | ✅ | 2초 |  |
-| 19:18 | PC | 롱폼 | build_longform.py --mode manual --indexes 44,69,87,106,112,117 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --plan-only --on | ✅ | 5초 |  |
-| 19:16 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화,축제/의례,생활문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-i | ✅ | 1분 43초 |  |
-| 19:14 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화,축제/의례,생활문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-i | ✅ | 0초 |  |
-| 19:13 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 음식문화 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 19:13 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 법/제도 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 19:11 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 법/제도 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 19:10 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 법/제도 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 19:05 | PC | 롱폼 | build_longform.py --mode auto --indexes  --theme 법/제도 --count 6 --start 0 --channel gonmauY --handle @gonmauY --style rich --clips --fill-images --dry | ✅ | 0초 |  |
-| 18:52 | PC | 코드업데이트 | gonmau/shorts: 12개 (build_video.py, check_country.py, exclude_sensitive.py, generate_culture_facts.py, get_refresh_token.py, notify_discord.py) | ✅ |  |  |
-| 15:51 | Actions | 쇼츠 | culture-shorts-pipeline #103 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40830579110 |
-| 10:42 | Actions | 쇼츠 | culture-shorts-pipeline #102 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40801619645 |
-| 07:31 | Actions | 쇼츠 | culture-shorts-pipeline #101 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40779946051 |
-| 07:18 | Actions | 쇼츠 | culture-shorts-pipeline #100 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40778151687 |
-| 01:06 | Actions | 쇼츠 | culture-shorts-pipeline #99 | ✅ |  | https://github.com/gonmau/shorts/actions/runs/40719308325 |
