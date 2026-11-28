@@ -186,13 +186,13 @@ def _hz(m): return 440.0 * 2 ** ((m - 69) / 12.0)
 # 스타일별 비트: kick/snare 위치(박 단위), hat(한 마디 16칸 중 칠 칸 → 세기), bass 근음(MIDI), chords(MIDI 3화음), 믹스 비율
 STYLES = {
     "boombap": dict(kick=(0, 1.5, 2.5), snare=(1, 3), hat={k: (1.0 if k % 4 == 0 else (0.7 if k % 2 == 0 else 0.45)) for k in range(16)}, swing=0.012,
-                    bass=[33, 33, 36, 31], chords=[(57, 60, 64), (57, 60, 64), (60, 64, 67), (55, 59, 62)], drum=1.0, pad=0.22, vinyl=1.0, bass_len=2.0),
+                    bass=[33, 33, 36, 31], chords=[(57, 60, 64), (57, 60, 64), (60, 64, 67), (55, 59, 62)], drum=1.0, pad=0.22, vinyl=1.0, bass_len=2.0, snd=dict(kick=(48,150,9,0.30),snare="snare",hat=(0.045,100,1.0),bass="sine",sat=1.0,lp=0,padw="fm",vib=0.0,verb=0.0)),
     "trap":    dict(kick=(0, 1.75, 2.5, 3.25), snare=(2,), hat={**{k: (0.9 if k % 2 == 0 else 0.4) for k in range(16)}, 13: 0.7, 14: 0.8, 15: 0.9}, swing=0.0,
-                    bass=[29, 29, 32, 27], chords=[(53, 56, 60), (53, 56, 60), (56, 60, 63), (51, 55, 58)], drum=1.0, pad=0.16, vinyl=0.2, bass_len=1.0),
+                    bass=[29, 29, 32, 27], chords=[(53, 56, 60), (53, 56, 60), (56, 60, 63), (51, 55, 58)], drum=1.0, pad=0.16, vinyl=0.2, bass_len=1.0, snd=dict(kick=(42,90,14,0.18),snare="clap",hat=(0.03,160,1.6),bass="808",sat=2.5,lp=0,padw="soft",vib=0.0,verb=0.15)),
     "lofi":    dict(kick=(0, 2.5), snare=(1, 3), hat={k: 0.5 for k in range(0, 16, 2)}, swing=0.02,
-                    bass=[36, 33, 38, 31], chords=[(60, 64, 67, 71), (57, 60, 64, 67), (62, 65, 69, 72), (55, 59, 62, 65)], drum=0.6, pad=0.42, vinyl=2.0, bass_len=2.0),
+                    bass=[36, 33, 38, 31], chords=[(60, 64, 67, 71), (57, 60, 64, 67), (62, 65, 69, 72), (55, 59, 62, 65)], drum=0.6, pad=0.42, vinyl=2.0, bass_len=2.0, snd=dict(kick=(52,60,10,0.32),snare="rim",hat=(0.06,70,0.5),bass="sine",sat=1.0,lp=2600,padw="fm",vib=0.004,verb=0.0)),
     "dark":    dict(kick=(0, 0.75, 2, 2.5), snare=(1, 3), hat={k: (0.9 if k % 4 == 0 else 0.35) for k in range(16)}, swing=0.0,
-                    bass=[38, 34, 29, 36], chords=[(50, 53, 57), (46, 50, 53), (53, 57, 60), (48, 52, 55)], drum=1.0, pad=0.3, vinyl=0.5, bass_len=2.0),
+                    bass=[38, 34, 29, 36], chords=[(50, 53, 57), (46, 50, 53), (53, 57, 60), (48, 52, 55)], drum=1.0, pad=0.3, vinyl=0.5, bass_len=2.0, snd=dict(kick=(40,130,7,0.40),snare="snare",hat=(0.05,90,0.8),bass="saw",sat=3.0,lp=0,padw="saw",vib=0.0,verb=0.35)),
 }
 BGM_DIR = Path(__file__).resolve().parent / "bgm"
 def bgm_files():
@@ -210,14 +210,37 @@ def beat_track(dur, sr, bpm, voice_rms, style="boombap"):
         raw = subprocess.run(["ffmpeg", "-v", "error", "-stream_loop", "-1", "-i", str(fp), "-t", f"{dur:.3f}", "-af", f"afade=t=in:d=0.5,afade=t=out:st={max(0, dur - 1.2):.2f}:d=1.2", "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"], capture_output=True, check=True).stdout
         x = np.frombuffer(raw, dtype=np.float32); x = np.pad(x, (0, max(0, int(dur * sr) - len(x))))[:int(dur * sr)]
         return x * (voice_rms * 0.35 / (float(np.sqrt((x ** 2).mean())) or 1.0))
-    P = STYLES.get(style) or STYLES["boombap"]
+    P = STYLES.get(style) or STYLES["boombap"]; Z = P["snd"]
     n = int(dur * sr); t = np.arange(n) / sr; out = np.zeros(n, dtype=np.float32); bt = 60.0 / bpm; rnd = np.random.RandomState(7)
+
+    def lowpass(x, fc):                       # 간단한 주파수 영역 저역통과 (scipy 없이)
+        X = np.fft.rfft(x); f = np.fft.rfftfreq(len(x), 1.0 / sr)
+        return np.fft.irfft(X / (1 + (f / fc) ** 2), len(x)).astype(np.float32)
+
     def add(at, wave, g=1.0):
         i = int(at * sr)
         if i < n: out[i:i + len(wave)] += wave[:n - i] * g
-    tk = np.arange(int(.30 * sr)) / sr; kick = (np.sin(2 * np.pi * (45 + 130 * np.exp(-tk * 30)) * tk) * np.exp(-tk * 8) * 1.3).astype(np.float32)
-    ts = np.arange(int(.22 * sr)) / sr; snare = ((rnd.randn(len(ts)) * 0.8 + np.sin(2 * np.pi * 185 * ts) * 0.5) * np.exp(-ts * 20)).astype(np.float32)
-    th = np.arange(int(.045 * sr)) / sr; hat = (rnd.randn(len(th)) * np.exp(-th * 100) * 0.4).astype(np.float32)
+    f0, drop, dec, ln = Z["kick"]
+    tk = np.arange(int(ln * sr)) / sr
+    kick = (np.sin(2 * np.pi * (f0 + drop * np.exp(-tk * 30)) * tk) * np.exp(-tk * dec) * 1.3).astype(np.float32)
+    if Z["snare"] == "clap":                  # 트랩: 짧은 노이즈 3번 겹친 클랩
+        tc = np.arange(int(.18 * sr)) / sr; nz = rnd.randn(len(tc)); snare = np.zeros(len(tc), dtype=np.float32)
+        for d0 in (0, .011, .022): i0 = int(d0 * sr); snare[i0:] += (nz[:len(tc) - i0] * np.exp(-tc[:len(tc) - i0] * 38)).astype(np.float32)
+        snare = (np.diff(snare, prepend=0) * 1.6).astype(np.float32)
+    elif Z["snare"] == "rim":                 # 로파이: 둔탁한 림샷
+        tr = np.arange(int(.12 * sr)) / sr
+        snare = lowpass((np.sin(2 * np.pi * 330 * tr) * 0.6 + rnd.randn(len(tr)) * 0.3) * np.exp(-tr * 45), 3500)
+    else:
+        ts = np.arange(int(.22 * sr)) / sr
+        snare = ((rnd.randn(len(ts)) * 0.8 + np.sin(2 * np.pi * 185 * ts) * 0.5) * np.exp(-ts * 20)).astype(np.float32)
+    hl, hd, hb = Z["hat"]
+    th = np.arange(int(hl * sr)) / sr
+    nz_ = rnd.randn(len(th)); nz_ = np.diff(nz_, prepend=0) * 0.6 if hb >= 1.5 else nz_      # 트랩은 차분으로 고역 강조(밝고 얇은 하이햇)
+    hat = (nz_ * np.exp(-th * hd) * 0.4 * (1.0 if hb >= 1.5 else hb)).astype(np.float32)
+    if Z["verb"]:                             # 스네어 뒤에 짧은 잔향
+        pad_ = np.zeros(len(snare) + int(.25 * sr), dtype=np.float32); pad_[:len(snare)] = snare
+        for dl, gn in ((.045, .6), (.09, .4), (.15, .25)): pad_[int(dl * sr):int(dl * sr) + len(snare)] += snare * gn * Z["verb"] * 2
+        snare = pad_
     bars = int(dur / (4 * bt)) + 2
     for bar in range(bars):
         b0 = bar * 4 * bt
@@ -225,15 +248,34 @@ def beat_track(dur, sr, bpm, voice_rms, style="boombap"):
         for k in P["snare"]: add(b0 + k * bt, snare, P["drum"])
         for k, g in P["hat"].items(): add(b0 + k * bt / 4 + (P["swing"] if k % 2 else 0), hat, g * P["drum"])
         f = _hz(P["bass"][bar % 4]); m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0
-        env = 0.55 + 0.45 * np.exp(-(tt % (P["bass_len"] * bt)) * 2.5)
-        out[m] += (np.sin(2 * np.pi * f * tt) * 0.55 * env).astype(np.float32)
-    pad = np.zeros(n, dtype=np.float32)       # 전자피아노 느낌의 FM 코드 패드
+        if not m.any(): continue
+        if Z["bass"] == "808":                # 길게 끄는 서브 + 시작에 피치 하강 + 포화
+            ph = 2 * np.pi * (f * tt + 12 * (1 - np.exp(-tt * 18)) / 18 * 0 + 0.0)
+            w = np.sin(2 * np.pi * f * tt + 6 * (1 - np.exp(-tt * 14))) * np.exp(-tt * 0.55)
+        elif Z["bass"] == "saw":              # 다크: 거친 톱니파 베이스
+            env0 = 0.6 + 0.4 * np.exp(-(tt % (P["bass_len"] * bt)) * 2.0)
+            w = (2 * ((f * tt) % 1.0) - 1) * 0.7 * env0
+            w = lowpass(w.astype(np.float32), 420)
+        else:
+            env0 = 0.55 + 0.45 * np.exp(-(tt % (P["bass_len"] * bt)) * 2.5)
+            w = np.sin(2 * np.pi * f * tt) * env0
+        out[m] += (np.tanh(w * Z["sat"]) / np.tanh(Z["sat"]) * 0.55).astype(np.float32)
+    pad = np.zeros(n, dtype=np.float32)
+    vib = 1 + Z["vib"] * np.sin(2 * np.pi * 0.6 * t)          # 로파이: 테이프 흔들림
     for bar in range(bars):
         b0 = bar * 4 * bt; m = (t >= b0) & (t < b0 + 4 * bt); tt = t[m] - b0; env = np.exp(-tt * 1.1) * 0.6 + 0.4
+        if not m.any(): continue
         for mn in P["chords"][bar % 4]:
-            f = _hz(mn)
-            pad[m] += (np.sin(2 * np.pi * f * tt + 1.5 * np.sin(2 * np.pi * f * 2 * tt) * np.exp(-tt * 3)) * env * 0.18).astype(np.float32)
+            f = _hz(mn) * vib[m]
+            if Z["padw"] == "saw":
+                w = ((2 * ((f * tt) % 1.0) - 1) + (2 * ((f * 1.007 * tt) % 1.0) - 1)) * 0.5
+            elif Z["padw"] == "soft":
+                w = np.sin(2 * np.pi * f * tt) * 0.8 + np.sin(2 * np.pi * f * 2 * tt) * 0.15
+            else:
+                w = np.sin(2 * np.pi * f * tt + 1.5 * np.sin(2 * np.pi * f * 2 * tt) * np.exp(-tt * 3))
+            pad[m] += (w * env * 0.18).astype(np.float32)
     k = np.ones(int(sr * 0.0004) + 1) / (int(sr * 0.0004) + 1); pad = np.convolve(pad, k, "same").astype(np.float32)
+    if Z["lp"]: pad = lowpass(pad, Z["lp"]); out = lowpass(out, Z["lp"] * 1.5)
     vinyl = (rnd.randn(n) * 0.02 * (rnd.rand(n) > 0.995)).astype(np.float32) * P["vinyl"]
     rms = float(np.sqrt((out ** 2).mean())) or 1.0
     out = out * (voice_rms * 0.55 / rms); prms = float(np.sqrt((pad ** 2).mean())) or 1.0
