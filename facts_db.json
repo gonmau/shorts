@@ -57477,7 +57477,7 @@
     "confidence": "source",
     "created_at": "2026-11-01T07:56:56.867872+00:00",
     "status": "scripted",
-    "narration": "고도 1,100미터 위에서 차 대신 잎을 씹는다고요? 에티오피아와 남부 아프리카 고산지대에서 자라는 카트(Khat)는 차처럼 끓여 마시지 않고, 신선한 잎을 그대로 씹어 섭취합니다. 현지 농부가 직접 재배한 잎을 시장에 내다 팔면, 사람들은 한 줌씩 꺼내어 입에 물고 약간의 쌉쌀함을 느낍니다.  \n\n그런데 이 카트는 남아프리카에서는 ‘부시맨 차’라는 별명으로도 알려져 있습니다. 이름은 다르지만, 사용 방식은 동일합니다.  \n\n이 습관은 주로 해발 1,100 ~ 2,400 미터 사이의 고지대에서만 나타나며, 낮은 평야에서는 거의 찾아볼 수 없습니다. 높은 산악 지역에서만 전해지는 독특한 문화, 생각보다 제한된 환경에서만 피어나는 풍경이죠.",
+    "narration": "고도 1,100 미터에서 차 대신 카트(Khat) 잎을 씹는 이유, 궁금하지 않으세요? 이 식물은 에티오피아와 남부 아프리카의 산림에서 1,100~2,400 미터 사이에 자라며, 현지 농부가 직접 재배해 시장에 내다 팝니다. 잎을 씹으면 카티논(cathinone) 이라는 알칼로이드가 뇌를 자극해 사회적 교류를 활발하게 하고 식욕을 약간 감소시키며, 약 30분 정도 지속되는 각성감과 가벼운 흥분을 줍니다. 전통적인 사용은 수천 년 전 에티오피아 하라르 지역에서 시작돼, 남아프리카에서는 ‘부시맨 차’라는 별명까지 얻었습니다. 소말리아와 예멘이 세계 최대 소비국이지만, 가장 많은 생산량을 내는 나라는 에티오피아와 케냐이며, 이들 국가에서는 법적으로 전면 허용됩니다. 반면 아랍에미리트에서는 소지·유통 시 종신형까지 선고될 수 있을 정도로 강력히 금지됩니다. 즉, 고산지대에서 잎을 씹는 문화는 지리와 법에 따라 전혀 다른 모습을 보입니다.",
     "title_line1": "에티오피아 고산 카트",
     "title_line2": "차 대신 잎을 씹는다?",
     "highlights": [
@@ -57526,12 +57526,14 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
+        "근거 없음/틀림: 1번 문장 '고도 1,100 미터에서 차 대신 카트(Khat) 잎을…' — 근거에 이유 언급 없음",
+        "근거 없음/틀림: 3번 문장 '잎을 씹으면 카티논(cathinone) 이라는 알칼로이…' — 30분 지속시간 근거 없음"
       ],
-      "advice": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
       "rounds": 2,
-      "first": "고도 1,100미터 위에서 차 대신 잎을 씹는다고요?",
+      "first": "고도 1,100 미터에서 차 대신 카트(Khat) 잎을 씹는 이유, 궁금하지 않으세요?",
       "sentences": 7,
       "ground_done": true
     },
@@ -62078,22 +62080,25 @@
     },
     "curate_score": 6,
     "curate_why": "숫자와 식량량으로 시각적 흥미",
-    "curate_top": false,
+    "curate_top": true,
     "need": "surprise",
     "emotion": "surprise",
     "source_text": "Lao cuisine or Laotian cuisine (Lao: ອາຫານລາວ, pronounced [ʔàː.hǎːn láːw], RTGS: ahan lao) is the national cuisine of Laos.\nThe staple food of the Lao is sticky rice (Lao: ເຂົ້າໜຽວ, khao niao, [kʰȁw nǐaw]). Laos has the highest sticky rice consumption per capita in the world with an average of 171 kilograms (377 lb) of sticky rice consumed annually per person. Sticky rice is deeply ingrained in the culture, religious tradition, and national identity of Laos. It is a common belief within the Lao community that no matter where they are in the world, sticky rice will always be the glue that holds the Lao communities together, connecting them to their culture and to Laos. Affinity for sticky rice is considered the essence of what it means to be Lao. Often the Lao will refer to themselves as luk khao niao (Lao: ລູກເຂົ້າໜຽວ, [lùːk kʰȁw nǐaw]), which can be translated as 'children or descendants of sticky rice'.\nThe International Rice Research Institute (IRRI) has described Laos as a \"collector's paradise\". Laos has the highest degrees of biodiversity of sticky rice in the world. As of 2013, approximately 6,530 glutinous rice varieties were collected from five continents (Asia, South America, North America, Europe and Africa) where glutinous rice are grown for preservation at the International Rice Genebank (IRGC). The IRRI gathered more than 13,500 samples and 3,200 varieties of glutinous rice from Laos.\nThe trifecta of Laos' national cuisine are sticky rice, laab, and green papaya salad (Lao: ຕຳໝາກຫຸ່ງ, tam mak hung). The most famous Lao dish is laab (Lao: ລາບ, [lâːp]; sometimes also spelled larb, larp or laap), a spicy mixture of marinated meat or fish that is sometimes raw (prepared like ceviche) with a variable combination of herbs, greens, and spices.\nLao cuisine has many regional variations, corresponding in part to the fresh foods local to each region. A French legacy is still evident in the capital city, Vientiane, where baguettes (Lao: ເຂົ້າຈີ່, [kʰȁw tɕīː]) are sold on the street and French restaurants are common and popular, which were first introduced when Laos was a part of French Indochina.\n== Origins of the Lao cuisine ==\nThe Lao originally came from a northern region that is now part of China. As they moved south they brought their traditions with them. Due to historical Lao migrations from Laos into neighboring regions, Lao cuisine has influenced the mainly Lao-populated region of Northeastern Thailand, and Lao foods were also introduced to Cambodia and  Northern Thailand where the Lao have migrated.\nLike most Southeast Asian nations, Laos has been heavily influenced by Indian and Chinese culture. From time immemorial, Lao people traded directly with ancient China. It was the Indianization of Laos, however, that has had the most impact. The spread of Hinduism, Buddhism, and Islam into Southeast Asia during this period took with it Indian traditions and culture to what are now Indonesia, Malaysia, Singapore, Thailand, Burma, Cambodia and Laos where it took roots and continues to flourish to this day. It is also during this time that Buddhist monks introduced traditional Indian spices, curry, and coconut milk to Laos. However, unlike most of its neighbours, Lao people's affinity for glutinous or sticky rice and Lao cuisine's heavy focus on sticky rice meant that coconut milk and noodles never played a significant role in Lao cuisine. Instead, coconut milk, curry and noodles are limited to a few Laotian soups, noodle dishes and sticky rice-based desserts.\nWith the Columbian exchange, non-native crops—such as tomato, papaya, sweetcorn, pineapple, and chili peppers—were introduced to Southeast Asia probably through the various sea ports of modern-day Thailand, Cambodia, and Vietnam via the Philippines and Malacca. Through tr",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)"
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)"
       ],
-      "advice": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
       "rounds": 2,
-      "first": "연간 171 kg, 라오스 사람들은 하루에 얼마나 먹을까요?",
-      "sentences": 6
+      "first": "라오스인 1인당 연간 171 kg의 찹쌀밥, 하루에 얼마나 먹을까요?",
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "연간 171 kg, 라오스 사람들은 하루에 얼마나 먹을까요? 라오스의 주식은 찹쌀밥이며, 1인당 연간 171 kg을 소비합니다. 이는 세계에서 가장 높은 수준으로, 찹쌀밥은 라오스인의 일상과 정체성을 이어주는 접착제 역할을 합니다. 그런데 라오스인들은 해외에서 찹쌀밥을 찾지 못하면 고향을 그리워한다는 믿음이 전해집니다. 이렇게 많은 찹쌀밥이 라오스 문화에 얼마나 깊게 뿌리내렸는지 생각해 보면, 한 끼가 단순한 식사가 아니라 고향과의 연결고리라는 점이 새롭게 다가옵니다. 결국 연간 171 kg이라는 숫자는 라오스 사람들에게 찹쌀밥이 얼마나 큰 의미인지 보여주는 살아있는 증거입니다.",
+    "narration": "라오스인 1인당 연간 171 kg의 찹쌀밥, 하루에 얼마나 먹을까요? 연간 171 kg을 365일로 나누면 하루 평균 약 470 g, 즉 한 끼에 한 공기 반 정도에 해당합니다. 이 숫자는 세계 최고 수준이며, 라오스의 주식인 찹쌀밥이 일상에 깊게 뿌리내린 증거입니다. 찹쌀밥은 단순한 식사가 아니라 라오스인의 정체성을 이어주는 ‘접착제’ 역할을 합니다. 라오스인들은 해외에서 찹쌀밥을 찾지 못하면 고향을 그리워한다는 믿음까지 가지고 있어, 한 그릇이 문화와 역사를 품은 연결고리로 여겨집니다. 따라서 라오스인의 하루 식사는 약 470 g, 즉 찹쌀밥 한 그릇 반 정도가 평균이라는 사실이, 그들의 삶과 문화가 얼마나 찹쌀밥에 의존하고 있는지를 보여줍니다.",
     "title_line1": "라오스 1인당 171킬로",
     "title_line2": "하루에 얼마나?",
     "highlights": [
@@ -62500,19 +62505,19 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 4번 문장 '이 세 칭호는 1941년부터 1979년 혁명 전까지 공…' — 본문에 공식 인정 기간·퇴위 후 서류 보유 언급 없음"
+        "근거 없음/틀림: 3번 문장 '이 세 칭호는 1941년부터 1979년 혁명 직전까지 …' — 본문에 모든 공식 문서에 등재됐다는 근거 없음",
+        "근거 없음/틀림: 4번 문장 '결국 그는 단순 왕권을 넘어, 자신을 “왕중의왕·빛·군…' — ‘다층적 권위’ 주장은 본문에 없음"
       ],
       "advice": [
-        "첫 문장이 김",
-        "중반 전환·재훅 문장 없음"
+        "첫 문장이 김"
       ],
       "rounds": 2,
-      "first": "1941년 영국‑소련 침공으로 왕위에 오른 뒤, 모하마드 레자 팔라비는 “샤왕왕·아리아메흐르·보즈르고 아르테시탄”이라는 세 가지 칭호를 동시에 사용했습니다.",
-      "sentences": 6
+      "first": "1941년 영국·소련이 이란을 점령하고 모하마드 레자 팔라비가 왕위에 오르면, 그는 “샤왕왕(Shahanshah)·아리아메흐르(Aryamehr)·보즈르고 아르테시탄(Bozorg Arteshtaran)”이라는 세 칭호를 동시에 내걸었습니다.",
+      "sentences": 4,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "1941년 영국‑소련 침공으로 왕위에 오른 뒤, 모하마드 레자 팔라비는 “샤왕왕·아리아메흐르·보즈르고 아르테시탄”이라는 세 가지 칭호를 동시에 사용했습니다. 샤왕왕은 ‘왕중의왕’이라는 뜻으로 절대 통치를 강조했고, 아리아메흐르는 ‘아리안의 빛’이라며 자신의 민족적 정체성을 부각했습니다. 보즈르고 아르테시탄은 ‘대군대장’이라는 의미로, 그는 직접 군 장군으로 자처하며 군사력을 과시했습니다. 이 세 칭호는 1941년부터 1979년 혁명 전까지 공식적으로 인정됐으며, 퇴위 후에도 그의 공식 서류에 남아 있었습니다. 결국 그는 다중 칭호를 통해 정치·민족·군사 세 영역을 모두 장악하려 했고, 그 결과 “왕중의왕”이라는 이미지가 완성되었습니다. 이는 그의 권위가 단순한 왕권을 넘어선 복합적인 힘의 상징이었음을 보여줍니다.",
+    "narration": "1941년 영국·소련이 이란을 점령하고 모하마드 레자 팔라비가 왕위에 오르면, 그는 “샤왕왕(Shahanshah)·아리아메흐르(Aryamehr)·보즈르고 아르테시탄(Bozorg Arteshtaran)”이라는 세 칭호를 동시에 내걸었습니다. ‘샤왕왕’은 “왕중의왕”이라는 절대적 위엄을, ‘아리아메흐르’는 아리안 민족을 비추는 빛이라는 민족주의적 이미지를, ‘보즈르고 아르테시탄’은 “대군대장”이라는 뜻으로 군사적 주도권을 강조합니다. 이 세 칭호는 1941년부터 1979년 혁명 직전까지 모든 공식 문서에 등재돼, 샤가 정치·민족·군사 세 영역을 동시에 장악하려는 의도를 명확히 드러냅니다. 결국 그는 단순 왕권을 넘어, 자신을 “왕중의왕·빛·군대장”이라는 다층적 권위의 상징으로 만든 것이었습니다.",
     "title_line1": "이란 샤, 세 칭호",
     "title_line2": "왕중의왕’은 왜?",
     "highlights": [
@@ -63730,17 +63735,16 @@
     "emotion": "surprise",
     "source_text": "Carnival in the Netherlands (Dutch: Carnaval; also called \"vastenavond\" – eve of the fasting or Limburgish: \"vastelaovend\") is a festival held mainly in the Southern and Eastern regions of the Netherlands with an emphasis on role-reversal and the suspension of social norms, as part of celebrations of Carnival. The feast was assimilated by the Catholic Church, taking elements from ancient pagan spring festivals and is celebrated in the three days preceding the Christian holidays of Ash Wednesday and Lent.\nFrom an anthropological point of view, Carnival is a reversal ritual, in which social roles are reversed and norms about desired behavior are suspended. Winter was thought of as the reign of the winter spirits that were to be driven out for summer to return. Carnival can thus be regarded as a rite of passage from darkness to light, from winter to summer: a fertility celebration, the first spring festival of the new year.\nIt precedes the Christian penitential season of Lent. The first day of Carnaval is six weeks before Easter Sunday. Carnival officially begins on Sunday and lasts three days until the start of Lent's first day, Ash Wednesday, at midnight. Nowadays the celebrations often start on Thursday evening though, which makes it in practice a six-day celebration. Many people in modern times do not relate the holiday at all with religion, but its date is still set before the start of the Christian season of Lent.\nIn the southern part of the Netherlands (Limburg and North Brabant) during Carnival, normal daily life comes to a near stop. Roads are temporarily blocked and many local businesses close for the week because many employees take days off during and after Carnival. According to post-Napoleon tradition, the feast lasts from Sunday until Tuesday. In recent years the feast usually starts on Saturday. Also Friday evening (or at schools at Friday afternoon) and in some places Thursday (Ouwe Wijven) are considered the start of Carnival, which makes it a six days' celebration. The festivities last the entire day and well into the nights. Some parades and many balls and bonte avonden or other meetings are held in the weeks before the official Carnival, but never before the first official court meeting on 11 November. 11 is considered the fools' number, so 11-11 (De elfde van de elfde) at 11:11(:11) is a prominent moment. Historically the 40 days of Lent would start on Wednesday at midnight and continue until Easter. Nowadays it is still the official ending of Carnival, though some Carnival activities such as herring eating are traditionally held on Wednesday after Carnival. 20 days into Lent there might be another parade or festivities, called \"Half-Vasten\" (Half-Lent). Lent itself is generally not practiced anymore by the Southern Dutch population as a result of irreligion dominating the area nowadays.\n== Name origin ==\nThe oldest word which points in the direction of the word \"Carnival\" is listed on a certificate from the Italian Subiaco from 965 CE as a timestamp Carnelevare. Also known from the 13th century are the words Carnisprivialis, Carnis Privium and in an old Liège text the term Quarnivalle.\nThe origin can be traced to the Latin expression Carne Levare, or Italian Carne lavare or Carnem levare which with reasonable certainty can be translated into \"farewell to the flesh\" or \"taking away the flesh\", which was a ritual to prelude lent. Two other, less likely, explanations that the term would be a contraction of the Latin Carne (meat) and Paler (rule), literally \"the time that meat reigns\" and the Italian Carnueale or the French Carne Avalis (both mean so much as \"devour flesh\") are given as well.\n== Dates ==\nEaster can fall on 22 March at the earliest and on 25 April at the latest. As a result, the earliest possible Ca",
     "hook_check": {
-      "ok": false,
-      "issues": [
-        "근거 없음/틀림: 1번 문장 '네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사…' — 본문에 사장이 직원, 주민이 왕이 된다는 구체적 예시 없음"
-      ],
+      "ok": true,
+      "issues": [],
       "advice": [
         "첫 문장에 숫자·대비·질문·걸린 것이 없음",
         "중반 전환·재훅 문장 없음"
       ],
-      "rounds": 2,
+      "rounds": 0,
       "first": "네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사장이 직원이 되고 주민이 ‘왕’이 되는 광경이 펼쳐집니다.",
-      "sentences": 6
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
     "narration": "네덜란드 남·동부에서 카니발이 시작되는 날, 거리엔 사장이 직원이 되고 주민이 ‘왕’이 되는 광경이 펼쳐집니다.  \n\n이 축제는 교회가 받아들인 고대 이교도 봄 의식을 섞어 만든, 사회적 역할이 뒤바뀌고 일상 규범이 일시 정지되는 3일간(공식적으로는 일요일부터 화요일까지) 열리는 행사입니다.  \n\n카니발은 부활절 전 6주째 일요일에 시작해 사순절 전야인 재의 수요일 자정까지 이어지며, 현대에는 목요일 저녁부터 시작해 실제로는 6일간 지속되기도 합니다.  \n\n남부 림뷔르크·노르트 브라반트 지역에서는 거리와 도로가 차단되고, 많은 가게가 문을 닫을 정도로 일상이 멈춥니다. 사람들은 권위와 계층을 뒤집으며 ‘역전 의식’ 속에 자유를 만끽하고, 파레이드와 볼, ‘보통 밤’이 이어지는 동안 웃음과 혼란이 뒤섞인 새로운 질서가 살아 숨쉽니다.  \n\n축제가 끝나면 일상이 복귀하지만, 그 짧은 기간에 체험하는 ‘역전된 하루’가 바로 네덜란드 카니발의 정체입니다.",
@@ -63883,7 +63887,8 @@
       "advice": [],
       "rounds": 2,
       "first": "네덜란드 거리에서 눈에 띈 그 사람, 실제로는 1492년 추방된 유대인의 후예일까?",
-      "sentences": 6
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
     "narration": "네덜란드 거리에서 눈에 띈 그 사람, 실제로는 1492년 추방된 유대인의 후예일까?  \n\n스페인과 포르투갈에서 강제로 추방된 뒤 ‘신기독교인’이라는 이름으로 살아남은 유대인들의 후손이 바로 오늘날 네덜란드, 영국, 미국, 캐나다 등에 모여 있는 공동체입니다. 이들은 이베리아 반도에서 강제로 떠난 뒤 가톨릭 신앙을 겉으로 받아들이면서도 전통과 혈통을 비밀스럽게 보존해 왔죠.  \n\n그런데 현재 스페인·포르투갈에 남아 있는 유대인 공동체와는 전혀 다른 역사를 가지고 있습니다. 이들은 원래 이 지역에서 직접 살아남은 유대인과는 별개의 혈통이며, 그들의 정체성은 이주와 은밀한 종교 생활을 통해 형성되었습니다.  \n\n그렇다면 오늘도 네덜란드 거리에서 보이는 그 모습은, 500년 전 이베리아에서 시작된 숨겨진 이야기가 현대에 살아 숨 쉬는 증거라 할 수 있겠네요.",
@@ -67038,7 +67043,7 @@
     },
     "curate_score": 7,
     "curate_why": "광대한 영토·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The Vạn Thịnh Phát case, officially referred to by the People's Court of Ho Chi Minh City, Vietnam as the Trương Mỹ Lan and Accomplices case, was a major economic corruption scandal involving the Vạn Thịnh Phát Group joint-stock company. Under the leadership of billionaire Trương Mỹ Lan for over a decade, Vạn Thịnh Phát orchestrated a large-scale fraud scheme targeting the Sai Gon Joint Stock Commercial Bank (SCB).\nThe Vạn Thịnh Phát scandal was exposed during the anti-corruption Blazing Furnace campaign initiated by General Secretary Nguyễn Phú Trọng. The total damage from the case was estimated at ₫677 trillion (approximately US$27 billion), with fraudulent disbursements reaching ₫1 quadrillion (approximately US$44 billion) through SCB loan documents. This made it one of the largest economic scandals in Vietnam's history, surpassing the 1 Malaysia Development Berhad scandal in Malaysia and making it the largest corruption case in Southeast Asia. Many senior officials, including high-ranking leaders, were implicated, and a total of 86 individuals were charged.\nAccording to the People's Court of Ho Chi Minh City, the trial of the Vạn Thịnh Phát case was to be conducted in two phases: the first focused on investigation, prosecution, and asset recovery; the second phase addressed issues related to fraudulent corporate bonds. \nThe first-phase trial took place from March 5 to April 11, 2024, with the participation of 200 lawyers and 86 defendants, seven of whom were absent. Trương Mỹ Lan was sentenced to death; four accomplices received life sentences, while the remaining defendants were sentenced to prison terms ranging from three years of suspended sentence to 20 years. Trương Mỹ Lan's husband and niece were respectively sentenced to 9 and 17 years in prison.\n== Background ==\nTrương Mỹ Lan, born on October 13, 1956, is a Vietnamese businesswoman of Chinese descent. She was born in Saigon, Republic of Vietnam (now Ho Chi Minh City, Vietnam). Before becoming the owner of a major corporation in Vietnam, she sold cosmetics at Bến Thành Market, Ho Chi Minh City, with financial support from her mother. In 1992, she married Hong Kong businessman Eric Chu Nap-kee (Chu Lập Cơ). Together, they founded Vạn Thịnh Phát Group, initially focusing on trade, business, restaurants, and hotels in the aftermath of the Đổi Mới reforms.\nIn 2007, Vạn Thịnh Phát established two subsidiaries: Vạn Thịnh Phát Investment Group and An Đông Investment. After gaining control of Saigon Commercial Bank (SCB) through shareholdings, SCB became one of the largest commercial banks in Vietnam by asset size. Simultaneously, Vạn Thịnh Phát grew into one of Vietnam’s wealthiest real estate companies, developing a range of high-end projects, including luxury residential buildings, office towers, hotels, and shopping centers.\nTimes Square Investment JSC, a subsidiary of Vạn Thịnh Phát, owns a prime property with frontages on Nguyễn Huệ Walking Street and the Union Square Saigon (formerly named as Vincom Center A), a complex of shopping and Mandarin Oriental hotel, which was the place of the former Eden Passage Mall that features four frontages. The Times Square Investment building (located at 22–36 Nguyễn Huệ, District 1) is chaired by Eric Chu. This building was used as collateral for loans at Saigon Commercial Bank (SCB), while the SCB headquarters is located at Bitexco Office Building, 19–25 Nguyễn Huệ. Despite controlling significant assets, little information is publicly available about Trương Mỹ Lan or her family.\n=== Burning Furnace campaign ===\nCorruption in Vietnam expanded during the tenure of Prime Minister Nguyễn Tấn Dũng. In 2016, the Communist Party of Vietnam launched the anti-corruption campaign known as the Blazing Furnace, initiated by General Secretary Ngu",
@@ -70982,7 +70987,7 @@
     },
     "curate_score": 7,
     "curate_why": "한 달 정복·숫자·전쟁·극적 전개",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "source_text": "The early Muslim conquests, or the early Islamic conquests (Arabic: الْفُتُوحَاتُ الإسْلَامِيَّة, romanized: al-Futūḥāt al-ʾIslāmiyya), also known as the Arab conquests, were a series of wars initiated by the Islamic prophet Muhammad, and continued by the early Muslims. In 622, he established the first Islamic state in Medina, with Muslim armies expanding rapidly out of Arabia under the succeeding Rashidun Caliphate and then the Umayyad Caliphate, culminating in Muslim rule being established throughout most of the Middle East and North Africa, parts of South Asia and Central Asia, and parts of Southern Europe over the following century. According to the Scottish historian James Buchan: \"In speed and extent, the first Arab conquests were matched only by those of Alexander the Great, and they were more lasting.\" At the height of the expansion, Muslim-ruled territory under the Caliphates is estimated to have covered 13,000,000 square kilometres (5,000,000 sq mi), stretching from the Indian subcontinent (at Sind) in the east to the Iberian Peninsula (up to Septimania) in the west.\nAmong other socio-political changes, the early Muslim conquests caused a rupture in the status quo dominated by the Sasanian Empire in the east and the Byzantine Empire in the west; Muslim armies overran the Sasanians and confined the Byzantines, who were left with part of Anatolia and Southeastern Europe. Detailed explanations for the success of the Muslim campaigns have been difficult to discover, largely because only fragmentary sources have survived from the period. American scholar Fred Donner suggests that Muhammad's establishment of the first Islamic state coupled with ideological coherence and mobilization constituted the main factor that propelled his community to successfully establish one of the largest empires in history. Most historians also agree that, as another primary factor that favoured the Muslim war effort, the Sasanians and the Byzantines were rendered militarily and economically exhausted from decades of warfare against each other, with the Sasanian civil war of 628–632 further accelerating political collapse.\nIt is also believed that Jews and some Christians in both Sasanian and Byzantine territory may have been dissatisfied with the state of the two empires and either welcomed or were indifferent to the invading Muslim troops. However, Arab Christian confederations such as the Ghassanids initially allied themselves with the Byzantines. There were also instances of working alliances being established between the Sasanians and the Byzantines in spite of their prior hostilities, such as when they combined forces against the Rashidun army during the Battle of Firaz in 633/634. A significant portion of the lands that the Byzantines lost to Muslim offensives in Syria and in Egypt had been taken back from Sasanian occupation just a few years earlier.\n== Background ==\n=== Pre-Islamic Arabia ===\nArabia was a region that hosted several cultures, some urban and others nomadic Bedouin. Arabian society was divided along tribal and clan lines, with the most important divisions being between the \"southern\" and \"northern\" tribal associations. Both the Byzantine and Sasanian empires competed for influence in Arabia by sponsoring clients; in turn, Arabian tribes sought the patronage of the two rival empires to bolster their own ambitions. The Lakhmid kingdom, which covered parts of what is now southern Iraq and northern Saudi Arabia was a client of Persia, and in 602 the Persians deposed the Lakhmids to take over the defense of the southern frontier. This left the Persians exposed and overextended, helping to set the stage for the collapse of the Persian Empire later that century.\nSouthern Arabia had, for thousands of years, been a wealthy region at t",
     "hook_check": {
@@ -71814,23 +71819,25 @@
     },
     "curate_score": 7,
     "curate_why": "",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "source_text": "The military history of Thailand encompasses over 1300 years of armed struggle. The Tai peoples migrated from South China and fought to settle in Southeast Asia during the 8th-10th centuries. They established city-states such as Suphannabhum in 913. Siamese served as mercenaries in the army of the Khmer King Suryavarman II in the 12th century. They lead wars of independence from the Khmer Empire and subsequently founded the kingdoms of Sukhothai (1238) and Ayutthaya (1351). Siamese conquest of Khmer territory and climate change caused the Fall of Angkor. The Siamese kingdoms had centuries of wars against the regional rival Burma until 1855. The 19th till  mid-20th century had a tense standoff between the Rattanakosin Kingdom and the colonial empires of Britain and France with occasional conflicts.\nThailand's military history is dominated by its centrality in Mainland Southeast Asia, the significance of its far flung and often hostile terrain, and the changing nature of military technology. This had a decisive impact on the evolution of Thailand as a modern nation state. Thailand was involved in both world wars on different sides: a member of the Allies of World War I, but joined the Axis powers under pressure by Japan in World War II. Afterward, Thailand's military partnership with the United States culminated in a crucial role in the Cold War in Asia and as an ally in the war on terror. The Thai military's involvement in domestic politics brought frequent international attention.\n== Siamese under the Khmer Empire ==\nThe Tai peoples mass migrated from South China to Mainland Southeast Asia and Northern Thailand between the 8th-10th century. They gradually gained influence in the western regions of the Khmer Empire. Mercenaries from central and northern Thailand served in the army of the Khmer King Suryavarman II. He reigned from 1113 until his death in 1150. These mercenaries are evident in a bas-relief sculpture of Angkor Wat. They are called the 'Syam Kuk' (ស្យាំកុក៍) in Old Khmer. They are depicted marching eastward to battle the Chams of the Champa Kingdom (central and southern Vietnam) in the 12th century. They came from Lavo (Lopburi in central Thailand) and Syam (north-central Thailand). These were provinces (territory spheres) of the Khmer Empire.\nThe consensus of modern scholars, such as Vittorio Roveda,\nB.P. Groslier, Saveros Pou, and Michael Vickery, is that the 12th century marching “Syam Kuk” depicted on Angkor Wat are not the Tai/Siamese (ethnic Thai). Vickery also rejects the claim that “syām” comes from the Sanskrit śyāma, meaning “dark” (as in “dark complexioned”). He instead documents the usage of Syam, Sien, Siam, and the Chinese Hsien by the Cham, Khmer, and Chinese to explain syām kuk doesn’t refer to an ethnicity but a geographic location, which in the 12th century was populated by the Mon-Khmer.\n== Sukhothai period (1238–1350) ==\n=== Khmer Empire declines ===\nThe Siamese military state emerged from the disintegration of the Khmer Empire and the rise of Sukhothai in the 13th century. The Khmer had a powerful military state centred on what is today Cambodia. The Khmer dominated much of Mainland Southeast Asia through the use of irregular military led by captains owing personal loyalty to the Khmer warrior kings, and leading conscripted peasants levied during the dry seasons. Primarily based around its infantry, the Khmer army was typically reinforced by war elephants and later adopted ballista artillery from China.\nBy the end of the period, indigenous revolts amongst Khmer territories in Siam and Vietnam, and external attack from the independent kingdom of Champa, sapped Khmer strength. After the sack of the Khmer capital Angkor Wat by Champa forces in 1178–79, Khmer's ability to control its wider territories ",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 4번 문장 '그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소…' — 본문에 기후변화 시점 언급 없음"
+        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
+        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
+        "근거 없음/틀림: 1번 문장 '1300년 넘게 이어진 시암‑크메르 전쟁이 끝난 직후,…' — 30% 강우량 감소는 본문에 없음",
+        "근거 없음/틀림: 4번 문장 '하지만 14세기 초, 동남아 전역에 퍼진 가뭄으로 농업…' — 14세기 전역 가뭄은 근거 없음"
       ],
-      "advice": [
-        "궁금증 전환 1번 (알찬 소재라면 새 궁금증을 더 열 수 있음)"
-      ],
+      "advice": [],
       "rounds": 2,
-      "first": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?",
-      "sentences": 8
+      "first": "1300년 넘게 이어진 시암‑크메르 전쟁이 끝난 직후, 강우량이 30% 급감하며 대규모 가뭄이 발생했습니다.",
+      "sentences": 6,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "1300년 전, 전쟁과 기후변화가 거대한 앙코르 사원을 무너뜨렸다는 사실, 궁금하지 않으세요?  \n\n시암인들은 8세기에서 10세기 사이 남중국에서 이주해 크메르 제국과 끊임없이 충돌했습니다. 전투는 수세기에 걸쳐 이어졌고, 결국 시암인들이 크메르 영토를 정복하면서 앙코르의 중심부가 손에 잡히게 되었습니다.  \n\n그런데 정복 직후 기후가 급격히 변하면서 강우량이 감소하고 가뭄이 지속되었습니다. 물이 부족해 농경 기반이 무너지자, 방대한 사원 건설을 유지하던 노동력과 자원이 급감했고, 앙코르는 서서히 붕괴의 길을 걸었습니다.  \n\n시암인과 크메르의 전쟁이 1300년이 넘는 기간 동안 이어졌다는 점은, 단순한 정복이 아니라 오랜 세월에 걸친 문화 충돌이었음을 보여줍니다. 이 해석은 일부 학자의 견해이며, 모든 학자가 동의하는 것은 아닙니다.  \n\n그렇다면, 전쟁과 기후가 만든 이 파괴는 결국 인간이 만든 위대한 건축물도 자연 앞에선 한 줌의 모래에 불과하다는 교훈을 남깁니다.",
+    "narration": "1300년 넘게 이어진 시암‑크메르 전쟁이 끝난 직후, 강우량이 30% 급감하며 대규모 가뭄이 발생했습니다.  \n\n8~10세기 남중국을 떠난 타이족은 12세기 수리야바르만 2세 군대에 용병으로 투입돼, 크메르 제국 내부에 영향력을 확대했습니다.  \n\n그 후 13세기에는 스코타이(1238)와 아유타야(1351) 왕국을 차례로 세우며, 점진적으로 크메르 영토를 빼앗았습니다.  \n\n하지만 14세기 초, 동남아 전역에 퍼진 가뭄으로 농업 생산이 급락하고, 방대한 사원 건설에 필요한 인력과 자원이 급감했습니다.  \n\n이러한 인적·물적 약화와 지속된 전쟁이 결합돼, 세계적인 건축물 앙코르가 서서히 붕괴하게 된 것입니다.  \n\n즉, 전쟁이 약화시킨 왕국의 힘에 기후 변화가 가해져, 거대한 사원이 무너진 것이죠.",
     "title_line1": "라오스 앙코르 몰락",
     "title_line2": "전쟁·가뭄이 사원을을",
     "highlights": [
@@ -72075,7 +72082,7 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "On 3 December 2024, at 22:27 Korea Standard Time (KST), Yoon Suk Yeol, the then-president of South Korea, attempted a self-coup by declaring martial law during a televised address. In the address, he accused the Democratic Party (DPK), which held a majority in the National Assembly, of engaging in \"anti-state activities\" and collaborating with \"North Korean communists\" to undermine the country, describing their dominance as a \"legislative dictatorship\". The declaration suspended political activities, including sessions of the National Assembly and local legislatures, and imposed restrictions on the press. Yoon ordered the arrest of several political opponents, including leaders of both the DPK and his own People Power Party (PPP). It was the first declaration of martial law in South Korea since the military dictatorship of General Chun Doo-hwan in 1980.\nThe declaration was opposed by both parties and resulted in protests. At 01:02 on 4 December, 190 legislators who had arrived at the National Assembly Proceeding Hall unanimously passed a motion to lift martial law, despite attempts by the Republic of Korea Army Special Warfare Command to prevent the vote. At 04:30, Yoon and his cabinet lifted martial law and soon disbanded the Martial Law Command. The opposition began impeachment proceedings against Yoon and said it would continue to do so if he did not resign. Uproar over the declaration led to the resignation of several officials in Yoon's administration, including Defense Minister Kim Yong-hyun, who had urged Yoon to enact martial law shortly before the declaration and was second-in-command of the martial law order. Yoon, military officers, and other officials of Yoon's administration were investigated for their role in the implementation of the decree.\nOn 7 December, Yoon issued an apology for declaring martial law. The next day, the former Defense Minister Kim was arrested and sent to a detention facility for his role in the martial law order, where he attempted suicide shortly before a warrant could be filed against him. On 12 December, Yoon said that he would \"fight to the end\" and that the martial law declaration was an \"act of governance\" to protect against anti-state forces. It is more widely believed that the declaration was motivated by political issues with the DPK-controlled Assembly over repeated impeachment attempts against officials, opposition to his budget, and various scandals involving him and his wife Kim Keon Hee.\nYoon was impeached on 14 December by the National Assembly and suspended from office pending a final ruling by the Constitutional Court on whether to confirm his removal from the presidency. Prime Minister Han Duck-soo served as acting president until he himself was impeached on 27 December, making Finance Minister and Deputy Prime Minister Choi Sang-mok acting president. However, Han's impeachment was overturned by the Constitutional Court on 24 March 2025, reinstating him as acting president. Yoon was arrested on 15 January 2025. On 26 January, he was indicted for leading an insurrection, becoming the first sitting president to be arrested and indicted in South Korean history. On 4 April, the Constitutional Court unanimously upheld Yoon's impeachment and removal from office over the martial law declaration. On 19 February 2026, Yoon and other figures involved in the incident were found guilty on insurrection charges. Yoon was sentenced to life in prison, while Kim Yong-hyun was sentenced to 30 years in prison.\n== Background ==\nSouth Korea has been governed as a presidential democracy under the 1987 constitution, which provides for a strong executive independent of the legislature. Yoon Suk Yeol, a member of the conservative People Power Party (PPP) and former prosecutor general, took office as Pr",
@@ -72581,19 +72588,16 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 1번 문장 '1914년 2월 2일, 독일이 “벨기에를 통과하라”는 …' — 날짜가 2월이 아니라 8월",
-        "근거 없음/틀림: 4번 문장 '독일군은 빠르게 루벤을 점령하고, 프랑스로 진격하려는 …' — 루벤이 아니라 룩셈부르크"
+        "근거 없음/틀림: 3번 문장 '벨기에군은 31일째까지 메즈 강 일대 나뉘르 요새들을 …' — 날짜·사실 오류"
       ],
-      "advice": [
-        "첫 문장이 김"
-      ],
+      "advice": [],
       "rounds": 2,
-      "first": "1914년 2월 2일, 독일이 “벨기에를 통과하라”는 최후통첩을 보냈을 때, 벨기에 정부는 단호히 “거절합니다”라고 답했습니다.",
-      "sentences": 6
+      "first": "벨기에가 독일의 “8월 2일 통과 요구”를 거부하고 영국의 즉각적인 군사 지원을 받았다면, 서부 전선은 어떻게 뒤틀렸을까요?",
+      "sentences": 5,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "독일이 8월 2일 “벨기를 통과하라”는 최후통첩을 보냈지만, 벨기 정부는 단호히 거부했습니다. 그날 영국은 즉시 벨기에에 군사 지원을 약속했고, 2일 뒤인 8월 4일 독일은 전쟁을 선언하고 국경을 넘어 리에주 전투를 시작했습니다.  \n\n벨기에군은 7일 만에 함락된 리에주 요새를 방어하며 31 일째까지 메즈 강 일대 나뉘르 요새들을 저지했으며, 수도 브뤼셀은 8월 17일에 버려졌습니다. 독일은 벨기에 영토에 남은 소수 부대를 유지하면서 프랑스로 진격했지만, 벨기에 저항과 영국·프랑스 군대의 지원으로 전선이 급격히 확대되었습니다.  \n\n결국 독일이 벨기에를 통과하려는 시도는, 중립을 지키려는 벨기에의 선택과 영국의 즉각적인 지원 때문에 서부 전선 전체를 뒤흔든 전환점이 되었습니다.",
+    "narration": "벨기에가 독일의 “8월 2일 통과 요구”를 거부하고 영국의 즉각적인 군사 지원을 받았다면, 서부 전선은 어떻게 뒤틀렸을까요?  \n\n독일은 8월 4일 벨기에에 선전포고하고 국경을 넘어 리에주 전투를 시작했으며, 7일 만에 리에주 요새를 함락했습니다. 벨기에군은 31일째까지 메즈 강 일대 나뉘르 요새들을 저지했고, 수도 브뤼셀은 8월 17일에 버려졌습니다.  \n\n독일은 남은 소수 부대로 브뤼셀과 철도망을 방어하면서 프랑스로 진격했지만, 벨기에 저항과 영국·프랑스 연합군의 지원으로 전선은 급격히 확대되었습니다.  \n\n결과적으로 벨기에의 중립 방어와 영국의 즉각적인 약속이 독일의 서부 전선 전개를 뒤흔들어, 전쟁 초기의 전략적 균형을 무너뜨린 결정적 전환점이 되었습니다.",
     "title_line1": "벨기에 거절",
     "title_line2": "전쟁은 달라졌을까",
     "highlights": [
@@ -72978,7 +72982,7 @@
     "confidence": "source",
     "created_at": "2026-11-09T07:57:58.099516+00:00",
     "status": "scripted",
-    "narration": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요? 바로 634년부터 644년까지 우마 이븐 알카타브가 이끄는 라시둔 제국입니다. 그의 통치 기간 동안 뛰어난 장군들의 협력으로 오늘날 이라크·이란·시리아·이집트를 포함한 광대한 지역을 차례로 장악했습니다.  \n\n그런데 이 정복이 이룬 규모는 단순히 땅만 넓어진 것이 아닙니다. 비잔틴 제국은 영토의 3·4 이상을, 사산 제국은 거의 전부를 잃었습니다. 즉, 한 왕의 힘으로 당시 세계 주요 제국들의 땅이 급격히 줄어든 셈이죠.  \n\n우마의 정복은 기록이 남아 있는 외부 자료를 토대로 추정된 것이며, 정확한 도시 수와 손실 규모는 역사학자들의 추정에 불과합니다. 하지만 그가 남긴 흔적은, 짧은 10년 만에 거대한 영토 변동을 일으킨 사례로 남아 있습니다.  \n\n그때의 정복이 남아프리카와 직접 연결되지는 않지만, 역사의 흐름을 보면 한 사람의 리더십이 얼마나 큰 변화를 만들 수 있는지 다시금 생각하게 됩니다.",
+    "narration": "우마 이븐 알카타브가 10년 만에 4,050여 도시를 정복했다면, 그 규모는 얼마나 어마어마했을까요? 634년부터 644년까지 그는 비잔틴·사산 제국의 방어선을 무너뜨리며 오늘날 이라크·이란·시리아·이집트를 포함한 광활한 영토를 차례로 장악했습니다. 특히 636년 야르무크 전투와 같은 대승리로 비잔틴은 영토의 ¾ 이상을, 사산은 거의 전부를 상실했죠. 이 모든 정복은 뛰어난 장군들의 협력과 체계적인 전략 덕분이었습니다. 역사가들은 당시 기록을 토대로 약 4,050개의 도시가 정복됐다고 추정합니다. 결국, “한 왕이 한 번에 4,050도시를 정복했다”는 말은 10년이라는 짧은 시간에 차례로 이룬 결과이며, 우마의 리더십이 만든 역사적 기적이라 할 수 있습니다.",
     "title_line1": "라시둔 제국 급속 확장",
     "title_line2": "4,050도시 한 번에?",
     "highlights": [
@@ -73202,14 +73206,14 @@
     "hook_check": {
       "ok": false,
       "issues": [
-        "모호한 서술 2회(전해지는·묘사되곤·경우가 있습니다 등) — 구체적 사실로 바꿀 것",
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 1번 문장 '한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까…' — ‘한 번에’ 정복은 본문에 없음"
+        "근거 없음/틀림: 6번 문장 '결국, “한 왕이 한 번에 4,050도시를 정복했다”는…' — ‘한 번에’는 본문에 없는 과장 표현"
       ],
-      "advice": [],
+      "advice": [
+        "중반 전환·재훅 문장 없음"
+      ],
       "rounds": 2,
-      "first": "한 왕이 4,050개 도시를 한 번에 정복했다면 어떨까요?",
-      "sentences": 9,
+      "first": "우마 이븐 알카타브가 10년 만에 4,050여 도시를 정복했다면, 그 규모는 얼마나 어마어마했을까요?",
+      "sentences": 6,
       "ground_done": true
     },
     "review_needed": true
@@ -74450,7 +74454,7 @@
     },
     "curate_score": 8,
     "curate_why": "30분·3년·죽음 등 숫자로 긴장감↑",
-    "curate_top": true,
+    "curate_top": false,
     "need": "practical",
     "emotion": "caution",
     "source_text": "Fugu (河豚; 鰒; フグ, pronounced [ɸɯ̟ꜜɡɯ̟]) in Japanese, bogeo (복어; 鰒魚, pronounced [po̞ɡʌ̹]) or bok (복, pronounced [po̞k̚]) in Korean, and hétún (河豚; 河魨, pronounced [xɤ˧˥ tʰu̯ən˧˥]) in Standard Modern Chinese refers to pufferfish, normally of the genus Takifugu, Lagocephalus, or Sphoeroides, or a porcupinefish of the genus Diodon, or a dish prepared from these fish.\nFugu possesses a potentially lethal poison known as tetrodotoxin, therefore necessitating meticulous preparation to prevent the fish from being contaminated. Restaurant preparation of fugu is strictly controlled by law in Japan, Korea and several other countries, and only chefs who have qualified after three or more years of rigorous training are allowed to prepare the fish. Domestic preparation occasionally leads to accidental death.\nThroughout Japan, fugu is served as sashimi and nabemono. The liver, widely thought to be the most flavorful part, was traditionally served as a dish named fugu-kimo, but it is also the most poisonous, and serving this organ in restaurants was banned in Japan in 1984. \nIn East Asian cuisine, fugu has emerged as a delicacy, establishing itself as one of the most celebrated dishes in Japanese and Korean cuisine. Fugu has also been gradually emerging as a prized seafood delicacy in Chinese cuisine.\n== Diversity ==\nThere are close to 200 species in the family Tetraodontidae (pufferfish), a family of primarily marine and estuarine fish of the order Tetraodontiformes. Nonetheless, only some of them are eaten and traded as \"fugu\".\n== Toxicity ==\nFugu contains lethal amounts of the poison tetrodotoxin in its organs, especially the liver, ovaries, eyes, and skin. The poison, a sodium channel blocker, paralyzes the muscles while the victim stays fully conscious; the poisoned victim is unable to breathe and eventually dies from asphyxiation. There is no known antidote for fugu poison. The standard treatment is to support the respiratory and circulatory systems until the poison is metabolized and excreted by the victim's body.\nResearchers have determined that a fugu's tetrodotoxin comes from eating other animals infested with tetrodotoxin-laden bacteria, to which the fish develops insensitivity over time. Whether tetrodotoxin is sequestered from or produced by symbiotic bacteria is still debated. As such, efforts have been made in research and aquaculture to allow farmers to produce safe fugu. Farmers now produce poison-free fugu by keeping the fish away from the bacteria – see § Aquaculture below.\n=== Tetrodotoxin ===\nTetrodotoxin (TTX) is a natural product that has been isolated not only from pufferfish, but also octopuses, crabs, shellfish, frogs, newts, and other aquatic animals (see below). It is a potent neurotoxin that shuts down electrical signaling in nerves; it acts via interaction with components of the sodium channels in the cell membranes of those cells. Its ability to cross the blood–brain barrier is uncertain. In the case of the pufferfish host, at least (see below), their insusceptibility to the poison is thought to result from cysteine asperagine amino acid substitutions in the sequence of their specific types of sodium channel proteins.\nTTX is not produced by pufferfish and the other aquatic animals from which it has been isolated. Rather, bacteria such as Alteromonas, Shewanella, and Vibrio species infect or cohabit with the animal species from which TTX is isolated, and a bacterial biosynthetic pathway for its production has been rationalized.\nIn animal studies with mice, the median lethal dose of TTX was found to be 232 μg per kg body weight. Tetrodotoxin levels are affected by preparation (removal of most toxic materials, treatments such as curing and pickling, see below); it is, however, reportedly not significantly affected by cook",
@@ -74556,7 +74560,7 @@
     },
     "curate_score": 7,
     "curate_why": "명목 황제·역사 반전, 숫자·비교 부족",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "Dom John VI (Portuguese: João Maria José Francisco Xavier de Paula Luís António Domingos Rafael; 13 May 1767 – 10 March 1826), known as \"the Clement\" (o Clemente), was King of the United Kingdom of Portugal, Brazil and the Algarves from 1816 to 1825, and after the recognition of Brazil's independence, titular Emperor of Brazil and King of Portugal until his death in 1826.\nJohn VI was born in Lisbon during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the Princess of Brazil and Infante Peter of Portugal, who later became Queen Dona Maria I and King Dom Peter III. In 1785, John married Carlota Joaquina of Spain, with whom he had nine children. He became heir to the throne when his older brother, Prince José, died of smallpox in 1788. Before his accession to the throne, John bore the titles Duke of Braganza, Duke of Beja, and Prince of Brazil. From 1799, he served as prince regent due to his mother's mental illness. In 1816, he succeeded his mother as monarch of the Portuguese Empire, with no real change in his authority, since he already possessed absolute powers as regent.\nOne of the last representatives of absolute monarchy in Europe, John lived during a turbulent period; his reign never saw a lasting peace. Throughout his period of rule, major powers such as Spain, France, and Great Britain continually intervened in Portuguese affairs. Forced to flee across the Atlantic Ocean to Brazil when troops of Emperor Napoleon I invaded Portugal, he found himself faced there with liberal revolts; he was compelled to return to Europe amid new conflicts. His marriage was no less conflictual, as his wife Carlota Joaquina repeatedly conspired against John in favor of personal interests or those of her native Spain.\nJohn lost Brazil when his son Pedro declared independence, and his other son Miguel (later Dom Miguel I of Portugal) led a rebellion that sought to depose him. According to recent scholarly research, his death may well have been caused by arsenic poisoning. Notwithstanding these tribulations, John left a lasting mark, especially in Brazil, where he helped to create numerous institutions and services that laid a foundation for national autonomy, and many historians consider him to be a true mastermind of the modern Brazilian state. John's contemporaries viewed him as a kind and benevolent king, although later generations of Portuguese and Brazilians have made him the subject of frequent caricature. However, in recent decades his reputation has been restored as a clever king who was able to balance many competing interests.\n== Early life ==\nJoão Maria José Francisco Xavier de Paula Luís António Domingos Rafael was born 13 May 1767 during the reign of his maternal grandfather, King Dom Joseph I of Portugal. He was the second son of the King's eldest daughter and heir, Dona Maria, Princess of Brazil (later Queen Dona Maria I) and Infante Peter of Portugal (later King Dom Peter III). Peter was not only Maria's husband, but also her paternal uncle.\nJohn was ten years old when his grandfather died and his mother ascended to the throne. His childhood and youth were lived quietly in the shadow of Queen Maria I's older son and heir apparent, José, Prince of Brazil and Duke of Braganza. Folklore has Infante John as a rather uncultured youth, but according to Jorge Pedreira e Costa, he received as rigorous an education as his brother José did. Still, a French ambassador of the time painted him in unfavorable colors, seeing him as hesitant and dim. The record of this period of his life is too vague for historians to form any definitive picture. Little is known of the substance of his education. He surely received instruction in religion, law, French, and etiquette, and would presumably have learne",
@@ -75540,25 +75544,23 @@
     },
     "curate_score": 7,
     "curate_why": "영해 주장·시기·숫자 제시, 역사·분쟁 강함",
-    "curate_top": false,
+    "curate_top": true,
     "need": "curiosity",
     "emotion": "surprise",
     "source_text": "The People's Republic of China (PRC) has a number of territorial disputes. Many of these disputes are almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. Certain Chinese claims to disputed maritime territories date from prior to the 1949 proclamation of the People's Republic of China.\n== Background ==\nThe asserted territory of China largely corresponds to that of the Qing empire. Many of the PRC's disputes are also almost identical to those that the Republic of China historically had with other countries prior to its retreat to Taiwan. In its 1914 constitution, the Republic of China had asserted, \"The territory of the Chinese Republic continues the same as that of the former empire.\" The 1931 provisional constitution of the Republic of China stated, \"The territory of the Republic of China includes all the provinces, Mongolia, and Tibet.\" Certain Chinese claims to disputed maritime territories also predate the 1949 proclamation of the People's Republic of China.\n== Current disputes ==\n=== Bhutan ===\nBhutan's border with Tibet has never been officially recognized, much less demarcated. The Republic of China based in Taiwan officially maintains a territorial claim on parts of Bhutan to this day. The territorial claim was maintained by the People's Republic of China after the Chinese Communist Party took control of mainland China in the Chinese Civil War.\nThe 1959 Tibetan Rebellion and the 14th Dalai Lama's arrival in neighboring India made the security of Bhutan's border with China a necessity for Bhutan. An estimated 6,000 Tibetans fled to Bhutan and were granted asylum, although Bhutan subsequently closed its border to China, fearing more refugees to come. In July 1959, along with the occupation of Tibet, the Chinese People's Liberation Army occupied several Bhutanese exclaves in western Tibet which were under Bhutanese administration for more than 300 years and had been given to Bhutan by Ngawang Namgyal in the 17th century. These included Darchen, Labrang Monastery, Gartok and several smaller monasteries and villages near Mount Kailas.\nIn 1983, the Chinese Foreign Minister Wu Xueqian and the Bhutanese Foreign Minister Dawa Tsering held talks on establishing bilateral relations in New York. In 1984, China and Bhutan began annual, direct talks over the border dispute. In 1998, China and Bhutan signed a bilateral agreement for maintaining peace on the border. In the agreement, China affirmed its respect for Bhutan's sovereignty and territorial integrity and both sides sought to build ties based on the Five Principles of Peaceful Co-existence. However, China's building of roads on what Bhutan asserts to be Bhutanese territory, allegedly in violation of the 1998 agreement, has provoked tensions. In 2002, however, China presented what it claimed to be 'evidence', asserting its ownership of disputed tracts of land; after negotiations, an interim agreement was reached.\nOn 11 August 2016, Bhutan Foreign Minister Damcho Dorji visited Beijing, the capital of China, for the 24th round of boundary talks with Chinese Vice President Li Yuanchao. Both sides made comments to show their readiness to strengthen cooperation in various fields and their hope of settling the boundary issues. In 2024, The New York Times reported that, according to satellite imagery, China had constructed villages inside of disputed territory within Bhutan. Chinese individuals, called \"border guardians,\" received annual subsidies to relocate to newly built villages and paid to conduct border patrols.\n=== India ===\nChina and India have various ongoing territorial disputes. The disputes stem from the historical consequences of colonialism in Asia and the lack of clear historical boundary demarcations. T",
     "hook_check": {
       "ok": false,
       "issues": [
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 2번 문장 '즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청…' — 해양 영유권을 청나라 영토와 동일시해 과장"
+        "근거 없음/틀림: 1번 문장 '청나라 영토를 근거로, 중국은 1914년 ‘전제국과 동…' — 해양 영유권 언급은 본문에 없음"
       ],
-      "advice": [
-        "첫 문장이 김"
-      ],
+      "advice": [],
       "rounds": 2,
-      "first": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다.",
-      "sentences": 5
+      "first": "청나라 영토를 근거로, 중국은 1914년 ‘전제국과 동일’이라는 헌법 조항부터 해양 영유권을 주장해 왔습니다.",
+      "sentences": 5,
+      "ground_done": true
     },
     "review_needed": true,
-    "narration": "1914년 중화민국 헌법이 “중국 공화국의 영토는 전제국과 같다”고 선언한 뒤, 1931년 임시 헌법에서도 “전 지방·몽골·티베트까지 포함한다”는 문구가 들어갔습니다. 즉, 오늘날 중화인민공화국이 주장하는 해양 영유권은 청나라 말기의 영토 개념을 그대로 이어받은 것이죠. 흥미롭게도, 이 같은 해역 주장은 1949년 이전에도 이미 중화민국이 동일하게 제기했으며, PRC가 건국된 뒤에도 그대로 이어졌습니다. 따라서 “1949년 이전부터 영해를 주장했다”는 말은 PRC만의 새로운 주장이라기보다, 청조부터 이어진 역사적 선언이 두 차례 반복된 결과임을 알 수 있습니다. 이런 연속성은 오늘날 영해 분쟁을 이해하는 중요한 단서가 됩니다.",
+    "narration": "청나라 영토를 근거로, 중국은 1914년 ‘전제국과 동일’이라는 헌법 조항부터 해양 영유권을 주장해 왔습니다. 1931년 임시 헌법에서도 ‘전 지방·몽골·티베트 포함’이라고 명시돼, 청조 영토 개념이 공식화됐습니다. 이 선언은 1949년 중화인민공화국이 수립되기 전, 이미 중화민국이 동일하게 제기했으며, 건국 후에도 그대로 이어졌습니다. 따라서 “1949년 이전부터 영해를 주장했다”는 사실은 PRC만의 새로운 주장이라기보다, 청나라 시대부터 두 차례 반복된 역사적 선언의 연속임을 알 수 있습니다. 이 연속성이 오늘날 남중국해·동중국해 분쟁을 이해하는 핵심 단서가 됩니다.",
     "title_line1": "중국, 오래된 영해 주장",
     "title_line2": "1949년 전부터?",
     "highlights": [
@@ -76744,7 +76746,7 @@
     },
     "curate_score": 8,
     "curate_why": "네 섬 영유권·러·일 대립, 구체적 섬·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "caution",
     "source_text": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast). They are claimed by Japan, which refers to them as its Northern Territories or Southern Chishima, and considers them part of the Nemuro Subprefecture of Hokkaido Prefecture.\nThe San Francisco Peace Treaty, signed between the Allies and Japan in 1951, states that Japan renounces \"all right, title and claim to the Kuril Islands\", but does not explicitly recognize the Soviet Union's sovereignty over them. Japan claims that at least some of the disputed islands are not a part of the Kuril Islands, and thus are not covered by the treaty. Russia maintains that the Soviet Union's sovereignty over the islands was recognized in post-war agreements. Japan and the Soviet Union ended their formal state of war with the Soviet–Japanese Joint Declaration of 1956 but did not sign a peace treaty. During talks leading to the joint declaration, the Soviet Union offered Japan the two smaller islands of Shikotan and the Habomai Islands in exchange for Japan renouncing all claims to the two larger islands of Iturup and Kunashir, but Japan declined the offer. This disagreement between the two-island offer made by the Soviet Union and Japan's demand of regaining two larger islands as well became the cornerstone for continuation of the dispute into the present day.\n== Background ==\nThe first Russo-Japanese agreement to deal with the status of Sakhalin and the Kuril Islands was the 1855 Treaty of Shimoda, which first established official relations between the Russian Empire and Tokugawa Japan. Article 2 of the Treaty of Shimoda, which provided for an agreement on borders, states \"Henceforth the borders between Russia and Japan will pass between the islands Iturup (Etorofu) and Urup (Uruppu). The whole island of Iturup belongs to Japan and the whole island Urup and the other Kuril Islands to the north constitute possessions of Russia\". The islands of Kunashiri, Shikotan and the Habomai Islands, all lying to the south of Iturup, are not explicitly mentioned in the treaty and were understood at the time to be a non-disputed part of Japan. The treaty also specified that the island of Sakhalin/Karafuto was not to be partitioned but was to remain under a joint Russo-Japanese condominium.\nIn the 1875 Treaty of Saint Petersburg, Russia and Japan agreed that Japan would give up all rights to Sakhalin in exchange for Russia giving up all rights to the Kuril Islands in favor of Japan. However, a controversy remains as to what constitutes the Kuril Islands, due to translation discrepancies in the French official text of that treaty.\nThe Russo-Japanese War of 1904–05 was a military disaster for Russia. The 1905 Treaty of Portsmouth, concluded at the end of this war, gave the southern half of Sakhalin Island to Japan.\nDuring the Russian Civil War following the October Revolution, Japan occupied parts of Russia's Far East initially as part of the Allied intervention, but did not formal",
@@ -77725,16 +77727,13 @@
     "emotion": "caution",
     "source_text": "There is an ongoing territorial dispute between Guyana and Venezuela over the Essequibo region (Spanish: Guayana Esequiba; Spanish pronunciation: [ɡwaˈʝana eseˈkiβa] ), a 159,500 km2 (61,600 sq mi) area west of the Essequibo River and even parts south of it. The territory, excluding the Venezuelan-controlled Ankoko Island, is controlled by Guyana as part of six of its regions, based on the 1899 Paris Arbitral Award. It is also claimed by Venezuela as the Guayana Esequiba State. The boundary dispute, also known as the Essequibo conflict, which began under the colonial powers (Spain in the case of Venezuela, and the Netherlands and the United Kingdom in the case of Guyana) and has persisted following the independence of Gran Colombia and Guyana.\nAs part of the Anglo-Dutch Treaty of 1814, arising from the Napoleonic Wars, the Netherlands ceded Essequibo to Great Britain. In 1835, the UK government commissioned German-born explorer and naturalist Robert Hermann Schomburgk to survey British Guiana's boundaries as the 1814 treaty did not define the western border. This survey resulted in what came to be known as the \"Schomburgk Line\", which was rejected by Venezuelan and British governments, as even the extended Schomburgk Line did not include the entire Cuyuní River basin which was claimed by Britain. After negotiations in the 1850s, the countries were unable to come to a settlement. Tensions worsened after the discovery of gold mines in the region in 1876, culminating with Venezuelan president Antonio Guzmán Blanco severing diplomatic relations with the United Kingdom in 1887. Venezuela then called upon the Monroe Doctrine, asking the USA to intervene on Venezuela's behalf. Under threat of a possible invasion from the United States, the United Kingdom agreed to an international arbitration by means of the 1897 Treaty of Washington. The arbitration resulted in the Paris Arbitral Award in 1899, a ruling largely in favour of Britain. There was little protest from Venezuela, likely due to outstanding loans to international allies and internal political upheaval. \nThe matter was considered settled until 1949, when a posthumous memorandum by Severo Mallet-Prevost was published in the American Journal of International Law. Mallet-Prevost had been part of the US–Venezuela delegation in the arbitration. His letter stated that the Arbitral Award resulted from the pressure by the Tribunal President Friedrich Martens and a political deal between Russia and Britain. In 1961, the UK granted British Guiana internal self-government. In 1962, Venezuela brought the memorandum and territorial dispute to the United Nations, which resulted in the Geneva Agreement, signed by Venezuela, the UK, and British Guiana on February 17, 1966. British Guiana achieved independence from the UK on May 26, 1966. Five months later, Venezuelan troops crossed the international border and seized Ankoko Island.\nThe 1966 Geneva Agreement stipulates that the parties will agree to find a \"practical, peaceful, and satisfactory solution\" to the dispute. Should there be a stalemate, according to the treaty, the decision as to the means of settlement is to be referred to an \"appropriate international organ\" or, failing agreement on this point, to the secretary-general of the United Nations. The secretary-general referred the entire matter to the International Court of Justice (ICJ). On 18 December 2020, the ICJ accepted the case submitted by Guyana to settle the dispute. In December 2023, Venezuela held a referendum asking the Venezuelan electorate whether the region should become a state of Venezuela and its population become citizens, where it declared that the results showed overwhelming support for such action. No vote was held in the disputed region.\nCurrently, Venezuela claim",
     "hook_check": {
-      "ok": false,
-      "issues": [
-        "근거 없음/틀림: 제목·썸네일이 약속한 내용을 대본이 지키지 않음(다른 이야기로 샘)",
-        "근거 없음/틀림: 구조 — 핵심 답을 앞부분에서 다 설명해 뒤가 늘어짐(궁금증 유지 실패)",
-        "근거 없음/틀림: 5번 문장 '결국 이 159,500 km² 땅은 120 년 넘게 ‘…' — ‘120 년 넘게’는 본문에 명시되지 않음"
-      ],
+      "ok": true,
+      "issues": [],
       "advice": [],
-      "rounds": 2,
+      "rounds": 0,
       "first": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요?",
-      "sentences": 5
+      "sentences": 5,
+      "ground_done": true
     },
     "review_needed": true,
     "narration": "159,500 km² 규모의 에세키보 서쪽 영토, 가이아나와 베네수엘라가 동시에 차지한다는 사실, 알고 계셨나요? 이 지역은 1899년 파리 중재 판정(Paris Arbitral Award)으로 영국이 통치하던 영국령 가이아나에 속한다는 결론이 내려졌고, 이후 가이아나는 실효 지배를 이어오고 있습니다. 하지만 베네수엘라는 이를 ‘구아야나 에세키바(Guayana Esequiba)’라 부르며 영토 주권을 부인하고, 1966년 제네바 협정까지 분쟁을 국제무대로 확대했습니다. 협정에 따라 해결 방안을 국제기구에 회부했으며, 2020년 국제사법재판소가 가이아나의 청구를 받아들인 뒤에도 양국은 여전히 입장을 고수하고 있습니다. 결국 이 159,500 km² 땅은 120 년 넘게 ‘누구의 땅인가’라는 질문을 남긴 채, 남미에서 가장 오래된 영토 분쟁 중 하나로 남아 있습니다.",
@@ -81925,7 +81924,7 @@
     },
     "curate_score": 9,
     "curate_why": "쿠데타 선언·시각·군법·극적 충격",
-    "curate_top": true,
+    "curate_top": false,
     "reject_reason": "UI에서 폐기"
   },
   {
@@ -85464,7 +85463,7 @@
       "flags": []
     },
     "curate_why": "네 섬 영유권·러·일 대립, 구체적 섬·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "caution",
     "source_text": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast). They are claimed by Japan, which refers to them as its Northern Territories or Southern Chishima, and considers them part of the Nemuro Subprefecture of Hokkaido Prefecture.\nThe San Francisco Peace Treaty, signed between the Allies and Japan in 1951, states that Japan renounces \"all right, title and claim to the Kuril Islands\", but does not explicitly recognize the Soviet Union's sovereignty over them. Japan claims that at least some of the disputed islands are not a part of the Kuril Islands, and thus are not covered by the treaty. Russia maintains that the Soviet Union's sovereignty over the islands was recognized in post-war agreements. Japan and the Soviet Union ended their formal state of war with the Soviet–Japanese Joint Declaration of 1956 but did not sign a peace treaty. During talks leading to the joint declaration, the Soviet Union offered Japan the two smaller islands of Shikotan and the Habomai Islands in exchange for Japan renouncing all claims to the two larger islands of Iturup and Kunashir, but Japan declined the offer. This disagreement between the two-island offer made by the Soviet Union and Japan's demand of regaining two larger islands as well became the cornerstone for continuation of the dispute into the present day.\n== Background ==\nThe first Russo-Japanese agreement to deal with the status of Sakhalin and the Kuril Islands was the 1855 Treaty of Shimoda, which first established official relations between the Russian Empire and Tokugawa Japan. Article 2 of the Treaty of Shimoda, which provided for an agreement on borders, states \"Henceforth the borders between Russia and Japan will pass between the islands Iturup (Etorofu) and Urup (Uruppu). The whole island of Iturup belongs to Japan and the whole island Urup and the other Kuril Islands to the north constitute possessions of Russia\". The islands of Kunashiri, Shikotan and the Habomai Islands, all lying to the south of Iturup, are not explicitly mentioned in the treaty and were understood at the time to be a non-disputed part of Japan. The treaty also specified that the island of Sakhalin/Karafuto was not to be partitioned but was to remain under a joint Russo-Japanese condominium.\nIn the 1875 Treaty of Saint Petersburg, Russia and Japan agreed that Japan would give up all rights to Sakhalin in exchange for Russia giving up all rights to the Kuril Islands in favor of Japan. However, a controversy remains as to what constitutes the Kuril Islands, due to translation discrepancies in the French official text of that treaty.\nThe Russo-Japanese War of 1904–05 was a military disaster for Russia. The 1905 Treaty of Portsmouth, concluded at the end of this war, gave the southern half of Sakhalin Island to Japan.\nDuring the Russian Civil War following the October Revolution, Japan occupied parts of Russia's Far East initially as part of the Allied intervention, but did not formal",
@@ -85580,7 +85579,7 @@
       "flags": []
     },
     "curate_why": "네 섬 영유권·러·일 대립, 구체적 섬·숫자",
-    "curate_top": true,
+    "curate_top": false,
     "need": "curiosity",
     "emotion": "caution",
     "source_text": "Russia and Japan have a territorial dispute over the four southernmost Kuril Islands, known in Russia as the Southern Kurils and in Japan as the Northern Territories. They are, from largest to smallest: Iturup/Etorofu, Kunashir/Kunashiri, Shikotan, and the Habomai Islands. The Kuril Islands are a chain of islands that stretch between the Japanese island of Hokkaido at their southern end and the Russian Kamchatka Peninsula at their northern end. The islands separate the Sea of Okhotsk from the Pacific Ocean. The four disputed islands, like other islands in the Kuril chain which are not in dispute, were unilaterally annexed by the Soviet Union following the Invasion of the Kuril Islands at the end of World War II. The disputed islands are under Russian administration as the South Kuril District and part of the Kuril District of the Sakhalin Oblast (Сахалинская область, Sakhalinskaya oblast). They are claimed by Japan, which refers to them as its Northern Territories or Southern Chishima, and considers them part of the Nemuro Subprefecture of Hokkaido Prefecture.\nThe San Francisco Peace Treaty, signed between the Allies and Japan in 1951, states that Japan renounces \"all right, title and claim to the Kuril Islands\", but does not explicitly recognize the Soviet Union's sovereignty over them. Japan claims that at least some of the disputed islands are not a part of the Kuril Islands, and thus are not covered by the treaty. Russia maintains that the Soviet Union's sovereignty over the islands was recognized in post-war agreements. Japan and the Soviet Union ended their formal state of war with the Soviet–Japanese Joint Declaration of 1956 but did not sign a peace treaty. During talks leading to the joint declaration, the Soviet Union offered Japan the two smaller islands of Shikotan and the Habomai Islands in exchange for Japan renouncing all claims to the two larger islands of Iturup and Kunashir, but Japan declined the offer. This disagreement between the two-island offer made by the Soviet Union and Japan's demand of regaining two larger islands as well became the cornerstone for continuation of the dispute into the present day.\n== Background ==\nThe first Russo-Japanese agreement to deal with the status of Sakhalin and the Kuril Islands was the 1855 Treaty of Shimoda, which first established official relations between the Russian Empire and Tokugawa Japan. Article 2 of the Treaty of Shimoda, which provided for an agreement on borders, states \"Henceforth the borders between Russia and Japan will pass between the islands Iturup (Etorofu) and Urup (Uruppu). The whole island of Iturup belongs to Japan and the whole island Urup and the other Kuril Islands to the north constitute possessions of Russia\". The islands of Kunashiri, Shikotan and the Habomai Islands, all lying to the south of Iturup, are not explicitly mentioned in the treaty and were understood at the time to be a non-disputed part of Japan. The treaty also specified that the island of Sakhalin/Karafuto was not to be partitioned but was to remain under a joint Russo-Japanese condominium.\nIn the 1875 Treaty of Saint Petersburg, Russia and Japan agreed that Japan would give up all rights to Sakhalin in exchange for Russia giving up all rights to the Kuril Islands in favor of Japan. However, a controversy remains as to what constitutes the Kuril Islands, due to translation discrepancies in the French official text of that treaty.\nThe Russo-Japanese War of 1904–05 was a military disaster for Russia. The 1905 Treaty of Portsmouth, concluded at the end of this war, gave the southern half of Sakhalin Island to Japan.\nDuring the Russian Civil War following the October Revolution, Japan occupied parts of Russia's Far East initially as part of the Allied intervention, but did not formal",
@@ -85798,7 +85797,10 @@
     "source_url": "https://ko.wikipedia.org/wiki/1327%EB%85%84_%EC%9D%98%ED%9A%8C",
     "wiki_title": "1327년 의회",
     "need": "surprise",
-    "emotion": "wonder"
+    "emotion": "wonder",
+    "curate_score": 7,
+    "curate_why": "1327년 숫자·왕 없는 회의, 권력 갈등",
+    "curate_top": true
   },
   {
     "topic": "선사시대 석조 예술의 발견",
@@ -85814,7 +85816,10 @@
     "verify_note": "Korean art",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:53.873807+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 5,
+    "curate_why": "3000년 전 돌 그림, 사실성·시각화 약함",
+    "curate_top": false
   },
   {
     "topic": "발리 섬의 힌두교 신앙",
@@ -85830,7 +85835,10 @@
     "verify_note": "Balinese people",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:53.873807+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 5,
+    "curate_why": "99%·힌두교 대비, 충돌 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "페루에서는 사막·산·정글을 한 나라 안에서 모두 만날 수 있다",
@@ -85846,7 +85854,10 @@
     "verify_note": "Peru",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 4,
+    "curate_why": "사막·산·정글 동시, 전쟁·권력 부재",
+    "curate_top": false
   },
   {
     "topic": "아이슬란드 엘프 학교에서는 눈에 보이지 않는 8cm 엘프를 가르친다",
@@ -85862,7 +85873,10 @@
     "verify_note": "Icelandic Elf School",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 3,
+    "curate_why": "보이지 않는 8cm 엘프, 사실성 낮음",
+    "curate_top": false
   },
   {
     "topic": "일본의 벚꽃 구경, 한나미는 꽃이 일정에 영향을 준다",
@@ -85878,7 +85892,10 @@
     "verify_note": "Hanami",
     "confidence": "source",
     "created_at": "2026-11-28T01:13:59.307806+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 4,
+    "curate_why": "벚꽃·날씨 연결, 구체적 숫자 없음",
+    "curate_top": false
   },
   {
     "topic": "핀란드에서는 공식 표지판이 핀란드어와 스웨덴어 두 언어로 동시에 표시됩니다.",
@@ -85894,7 +85911,10 @@
     "verify_note": "Finland",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 3,
+    "curate_why": "두 언어 표지판, 충돌·숫자 부재",
+    "curate_top": false
   },
   {
     "topic": "울란바토르는 평균 연간 기온이 가장 낮은 세계 최냉각 수도입니다.",
@@ -85910,7 +85930,10 @@
     "verify_note": "Ulaanbaatar",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 3,
+    "curate_why": "최냉각 수도, 숫자·권력 요소 부족",
+    "curate_top": false
   },
   {
     "topic": "마사이 인구가 30년 사이에 3배 이상 급증했습니다.",
@@ -85926,7 +85949,10 @@
     "verify_note": "Maasai people",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:29.462669+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 4,
+    "curate_why": "30년·인구 3배, 숫자·충돌 약함",
+    "curate_top": false
   },
   {
     "topic": "사람이 직접 순록을 몰아 목축하는 전통",
@@ -85942,7 +85968,10 @@
     "verify_note": "Reindeer herding",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:53.401874+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 4,
+    "curate_why": "100,000명 순록 몰기, 규모는 있으나 전쟁·권력 부재",
+    "curate_top": false
   },
   {
     "topic": "물 위에서 파는 다양한 태국 전통 음식",
@@ -85958,7 +85987,10 @@
     "verify_note": "Khlong Lat Mayom Floating Market",
     "confidence": "source",
     "created_at": "2026-11-28T01:14:53.401874+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 4,
+    "curate_why": "2004년·물 위 음식, 금지·처벌 요소 없음",
+    "curate_top": false
   },
   {
     "topic": "왁스를 이용해 천에 색이 스며들지 못하게 하는 전통 염색법, 배틱.",
@@ -85974,7 +86006,10 @@
     "verify_note": "Resist dyeing",
     "confidence": "source",
     "created_at": "2026-11-28T01:15:19.018592+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 5,
+    "curate_why": "왁스 금지 구역, 법·제재 암시",
+    "curate_top": false
   },
   {
     "topic": "스코틀랜드는 영국의 일부이며, 인구는 약 540만 명이다.",
@@ -85990,6 +86025,9 @@
     "verify_note": "Scotland",
     "confidence": "source",
     "created_at": "2026-11-28T01:15:19.018592+00:00",
-    "status": "unverified"
+    "status": "unverified",
+    "curate_score": 3,
+    "curate_why": "인구 540만, 일반적 소개·충돌 없음",
+    "curate_top": false
   }
 ]
