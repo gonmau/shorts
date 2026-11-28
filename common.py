@@ -154,15 +154,23 @@ def priority_order(db, indices):
     return sorted(idx, key=key)
 
 
+def rap_covered(db):
+    """랩 버전이 이미 업로드된 원본 소재 번호 집합 (같은 주제를 일반 버전으로 또 만들어 올리지 않게 선별/자동 제작에서 뺀다)."""
+    return {f.get("rap_of") for f in db if f.get("rap") and f.get("youtube_id") and f.get("rap_of") is not None}
+
+
 def pending_render(db, start=0):
     """영상이 아직 안 만들어진, 대본이 끝난 소재의 (index, item) 목록 (DB 순서)."""
     out = []
+    _cov = rap_covered(db)
     for i in priority_order(db, range(len(db))):
         f = db[i]
-        if i < start:
+        if i < start or i in _cov:      # 랩 버전이 이미 올라간 원본은 일반 버전으로 또 만들지 않는다 (필요하면 번호를 직접 지정)
             continue
         if f.get("video_path_v6") or f.get("status_v6") == "video_done":
             continue
+        if f.get("rap"):
+            continue    # 랩 복제 소재는 랩 전용 흐름(rap_short.py / 🎤 랩 탭)에서만 만든다. 일반 자동 제작에 섞이면 일반 영상으로 올라간다
         if f.get("status") not in ("scripted", "tts_done"):
             continue
         if f.get("review_needed") and not f.get("review_ok") and os.environ.get("HOLD_REVIEW", "1") != "0":

@@ -138,7 +138,10 @@ def _examples(db):
 def score_topics(client, models, db, cutoff, top_n, force, dry):
     pb = load_playbook()
     good, bad = _examples(db)
+    from common import rap_covered
+    _cov = rap_covered(db)
     cand = [i for i, f in enumerate(db) if f.get("status") in ("unverified", "verified", "scripted")
+            and not f.get("rap") and i not in _cov
             and not f.get("curate_keep") and (force or f.get("curate_score") is None)]
     print(f"[선별] 채점 대상 {len(cand)}개 (기준 {cutoff}점 미만 폐기)")
     traits = "\n".join("- " + x for x in (pb.get("topic") or []))
@@ -185,9 +188,10 @@ JSON 배열만 출력: [{{"i": 번호, "s": 1~10 정수, "why": "20자 이내 �
             rejected += 1
             REJ.append(i)
     alive = sorted([i for i, f in enumerate(db) if f.get("status") in ("unverified", "verified", "scripted")
+                    and not f.get("rap") and i not in _cov
                     and f.get("curate_score") is not None], key=lambda i: -db[i]["curate_score"])
-    for f in db:                      # 이미 영상이 끝났거나 폐기된 소재의 상위 표시는 지운다
-        if f.get("curate_top") and f.get("status") not in ("unverified", "verified", "scripted"):
+    for i_, f in enumerate(db):       # 이미 영상이 끝났거나 폐기된 소재(랩 버전이 올라간 원본 포함)의 상위 표시는 지운다
+        if f.get("curate_top") and (f.get("status") not in ("unverified", "verified", "scripted") or f.get("rap") or i_ in _cov):
             f["curate_top"] = False
     for rank, i in enumerate(alive):
         db[i]["curate_top"] = rank < top_n
